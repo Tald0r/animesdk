@@ -4,29 +4,29 @@
 
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define UNITYENGINE_TIMELINE_TIMEUTILITY___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1819E690)
-#define UNITYENGINE_TIMELINE_TIMEUTILITY___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1819E6D0)
-#define UNITYENGINE_TIMELINE_TIMEUTILITY___C__PARSETIMECODE_B__15_0_OFFSET UNITYSDK_OFFSET(0x1819E6E0)
-#define UNITYENGINE_TIMELINE_TIMEUTILITY___C__PARSETIMECODE_B__15_1_OFFSET UNITYSDK_OFFSET(0x1819E6F0)
+#define UNITYENGINE_TIMELINE_TIMEUTILITY___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A74A8E0)
+#define UNITYENGINE_TIMELINE_TIMEUTILITY___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A74A920)
+#define UNITYENGINE_TIMELINE_TIMEUTILITY___C__PARSETIMECODE_B__14_0_OFFSET UNITYSDK_OFFSET(0x1A74A930)
+#define UNITYENGINE_TIMELINE_TIMEUTILITY___C__PARSETIMECODE_B__14_1_OFFSET UNITYSDK_OFFSET(0x1A74A940)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TimeUtility___c_TypeDefinitionIndex = 29046;
+	inline static constexpr unsigned int TimeUtility___c_TypeDefinitionIndex = 29405;
 
 	class TimeUtility___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::System::Char, ::System::Boolean>** StaticGet___9__15_0()
+		static ::System::Func_2<::System::Char, ::System::Boolean>** StaticGet___9__14_0()
 		{
-			return (::System::Func_2<::System::Char, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(TimeUtility___c_TypeDefinitionIndex)->GetStaticField(0x3E110);
+			return (::System::Func_2<::System::Char, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(TimeUtility___c_TypeDefinitionIndex)->GetStaticField(0x22B50);
+		}
+		static ::System::Func_2<::System::Char, ::System::Boolean>** StaticGet___9__14_1()
+		{
+			return (::System::Func_2<::System::Char, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(TimeUtility___c_TypeDefinitionIndex)->GetStaticField(0x22B58);
 		}
 		static ::UnityEngine::Timeline::TimeUtility___c** StaticGet___9()
 		{
-			return (::UnityEngine::Timeline::TimeUtility___c**)Il2CppClass::FromTypeDefinitionIndex(TimeUtility___c_TypeDefinitionIndex)->GetStaticField(0x3E118);
-		}
-		static ::System::Func_2<::System::Char, ::System::Boolean>** StaticGet___9__15_1()
-		{
-			return (::System::Func_2<::System::Char, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(TimeUtility___c_TypeDefinitionIndex)->GetStaticField(0x3E120);
+			return (::UnityEngine::Timeline::TimeUtility___c**)Il2CppClass::FromTypeDefinitionIndex(TimeUtility___c_TypeDefinitionIndex)->GetStaticField(0x22B60);
 		}
 
 		static ::System::Void _cctor()
@@ -39,14 +39,14 @@ namespace UnityEngine::Timeline
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMEUTILITY___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Boolean _ParseTimeCode_b__15_0(::System::Char c)
+		::System::Boolean _ParseTimeCode_b__14_0(::System::Char c)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Char))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMEUTILITY___C__PARSETIMECODE_B__15_0_OFFSET))(this, c);
+			return ((::System::Boolean(*)(::PVOID, ::System::Char))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMEUTILITY___C__PARSETIMECODE_B__14_0_OFFSET))(this, c);
 		}
 
-		::System::Boolean _ParseTimeCode_b__15_1(::System::Char c)
+		::System::Boolean _ParseTimeCode_b__14_1(::System::Char c)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Char))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMEUTILITY___C__PARSETIMECODE_B__15_1_OFFSET))(this, c);
+			return ((::System::Boolean(*)(::PVOID, ::System::Char))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMEUTILITY___C__PARSETIMECODE_B__14_1_OFFSET))(this, c);
 		}
 	};
 }

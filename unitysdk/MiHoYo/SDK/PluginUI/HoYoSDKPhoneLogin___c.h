@@ -5,24 +5,24 @@
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_PLUGINUI_HOYOSDKPHONELOGIN___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x821EB70)
-#define MIHOYO_SDK_PLUGINUI_HOYOSDKPHONELOGIN___C__CTOR_OFFSET UNITYSDK_OFFSET(0x821EBB0)
-#define MIHOYO_SDK_PLUGINUI_HOYOSDKPHONELOGIN___C__SHOW_B__4_1_OFFSET UNITYSDK_OFFSET(0x821EBC0)
+#define MIHOYO_SDK_PLUGINUI_HOYOSDKPHONELOGIN___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x18DB5980)
+#define MIHOYO_SDK_PLUGINUI_HOYOSDKPHONELOGIN___C__CTOR_OFFSET UNITYSDK_OFFSET(0x18DB59C0)
+#define MIHOYO_SDK_PLUGINUI_HOYOSDKPHONELOGIN___C__SHOW_B__4_1_OFFSET UNITYSDK_OFFSET(0x18DB59D0)
 
 namespace MiHoYo::SDK::PluginUI
 {
-	inline static constexpr unsigned int HoYoSDKPhoneLogin___c_TypeDefinitionIndex = 36499;
+	inline static constexpr unsigned int HoYoSDKPhoneLogin___c_TypeDefinitionIndex = 33982;
 
 	class HoYoSDKPhoneLogin___c : public ::System::Object
 	{
 	public:
-		static ::MiHoYo::SDK::PluginUI::HoYoSDKPhoneLogin___c** StaticGet___9()
-		{
-			return (::MiHoYo::SDK::PluginUI::HoYoSDKPhoneLogin___c**)Il2CppClass::FromTypeDefinitionIndex(HoYoSDKPhoneLogin___c_TypeDefinitionIndex)->GetStaticField(0x7B70);
-		}
 		static ::System::Action_1<::System::String*>** StaticGet___9__4_1()
 		{
-			return (::System::Action_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(HoYoSDKPhoneLogin___c_TypeDefinitionIndex)->GetStaticField(0x7B78);
+			return (::System::Action_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(HoYoSDKPhoneLogin___c_TypeDefinitionIndex)->GetStaticField(0x243E0);
+		}
+		static ::MiHoYo::SDK::PluginUI::HoYoSDKPhoneLogin___c** StaticGet___9()
+		{
+			return (::MiHoYo::SDK::PluginUI::HoYoSDKPhoneLogin___c**)Il2CppClass::FromTypeDefinitionIndex(HoYoSDKPhoneLogin___c_TypeDefinitionIndex)->GetStaticField(0x243E8);
 		}
 
 		static ::System::Void _cctor()

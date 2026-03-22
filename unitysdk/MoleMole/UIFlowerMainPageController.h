@@ -1,0 +1,308 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/UI/FlowerShop/EFinishJudge.h"
+#include "unitysdk/MoleMole/UI/FlowerShop/ESlotType.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_0_16E4307DCC419505_645;
+class Class_1_48D56DACBE4271BC;
+class Class_2_5AF5BBC74A0747E6;
+class Class_2_7C14488DAEE516C3;
+class Class_2_C3EE32D79E4AC77A;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIFlowerMainPageController_Context; }
+namespace MoleMole { class UIFlowerMain_LeftWidgetController; }
+namespace MoleMole { class UIFlowerMain_RightWidgetController; }
+namespace MoleMole { class UIFlowerMain_TopWidgetController; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BIND3DMODELCONTROLLER_OFFSET UNITYSDK_OFFSET(0xA8F8FB0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BINDBUTTON_OFFSET UNITYSDK_OFFSET(0xA8F7AC0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BINDGAMEPLAYDATA_OFFSET UNITYSDK_OFFSET(0xA8F9530)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BUILDDATABINDING_NETWORK_OFFSET UNITYSDK_OFFSET(0xA8F9B50)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BUILDDATABINDING_OFFSET UNITYSDK_OFFSET(0xA8F8A40)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BUILDVIEWMODELDATABINDING_FLOWERSTATEEXT_OFFSET UNITYSDK_OFFSET(0xA8F83A0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET UNITYSDK_OFFSET(0xA8F7E90)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_CALJUDGE_OFFSET UNITYSDK_OFFSET(0xA8FC660)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_CREATESUBWIDGET_OFFSET UNITYSDK_OFFSET(0xA8F7D40)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_FINISHFLOWER_OFFSET UNITYSDK_OFFSET(0xA8FCC80)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xA8F7460)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA8FD3D0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xA8F7510)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_MASKCLOSE_OFFSET UNITYSDK_OFFSET(0xA8FAA70)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_MUTEROTATEAUDIO_OFFSET UNITYSDK_OFFSET(0xA8FB940)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONCLICKFINISHBUTTON_OFFSET UNITYSDK_OFFSET(0xA8FBD20)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONCLICKTIPSBUTTON_OFFSET UNITYSDK_OFFSET(0xA8FBB70)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA8F7470)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA8FA750)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA8FA6C0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA8F7870)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA8F87A0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_PREBINDVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA8F79E0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_SHOWSUBWIDGET_OFFSET UNITYSDK_OFFSET(0xA8FA230)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xA8FABB0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BINDBUTTON_B__18_0_OFFSET UNITYSDK_OFFSET(0xA8FFC10)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDDATABINDING_B__13_0_OFFSET UNITYSDK_OFFSET(0xA8FD4C0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDDATABINDING_NETWORK_B__15_0_OFFSET UNITYSDK_OFFSET(0xA8FE8F0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDDATABINDING_NETWORK_B__15_1_OFFSET UNITYSDK_OFFSET(0xA8FEDB0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDDATABINDING_NETWORK_B__15_2_OFFSET UNITYSDK_OFFSET(0xA8FF0C0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDDATABINDING_NETWORK_B__15_3_OFFSET UNITYSDK_OFFSET(0xA8FF880)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDVIEWMODELDATABINDING_B__14_0_OFFSET UNITYSDK_OFFSET(0xA8FD6A0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDVIEWMODELDATABINDING_B__14_1_OFFSET UNITYSDK_OFFSET(0xA8FDBD0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDVIEWMODELDATABINDING_B__14_2_OFFSET UNITYSDK_OFFSET(0xA8FDF80)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDVIEWMODELDATABINDING_B__14_3_OFFSET UNITYSDK_OFFSET(0xA8FE8E0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA8FD3E0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xA8FFC80)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_MASKCLOSE_OFFSET UNITYSDK_OFFSET(0xA8FFCE0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA8FFD50)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA8FFDC0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA8FFDD0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA8FFDE0)
+#define MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA8FFDF0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFlowerMainPageController_TypeDefinitionIndex = 66253;
+
+	class UIFlowerMainPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_C3EE32D79E4AC77A* _view; // 0x2F8
+		::MoleMole::UIFlowerMainPageController_Context* _context; // 0x300
+		::Class_2_5AF5BBC74A0747E6* __viewModel; // 0x308
+		::Class_1_48D56DACBE4271BC* _propertySyncHelper; // 0x310
+		::Class_1_48D56DACBE4271BC* _propertySyncHelper_ViewModel; // 0x318
+		::Class_1_48D56DACBE4271BC* _ps_gameplay2ViewModel; // 0x320
+		::Class_1_48D56DACBE4271BC* _ps_network; // 0x328
+		::System::Collections::Generic::Dictionary_2<::MoleMole::UI::FlowerShop::ESlotType, ::Class_1_48D56DACBE4271BC*>* _ps_CurrentSelectData; // 0x330
+		::Class_2_7C14488DAEE516C3* _customFlowerGamePlayViewModel; // 0x338
+		::MoleMole::UIFlowerMain_TopWidgetController* _top; // 0x340
+		::MoleMole::UIFlowerMain_LeftWidgetController* _left; // 0x348
+		::MoleMole::UIFlowerMain_RightWidgetController* _right; // 0x350
+		::MoleMole::UIWindowController* _popWindow; // 0x358
+		::System::Boolean _audioDirty; // 0x360
+		::System::Single _audioPlayLastTime; // 0x364
+		::Foundation::Coroutine::CoroutineHandle _finishEffectCoroutine; // 0x368
+		::System::Boolean _blockingInputWhenEffect; // 0x36C
+		::System::Boolean _flowerStateDirty; // 0x36D
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void MaskClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_MASKCLOSE_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void PreBindViewModel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_PREBINDVIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void BuildDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BUILDDATABINDING_OFFSET))(this);
+		}
+
+		::System::Void BuildViewModelDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET))(this);
+		}
+
+		::System::Void BuildDataBinding_Network()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BUILDDATABINDING_NETWORK_OFFSET))(this);
+		}
+
+		::System::Void CreateSubWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_CREATESUBWIDGET_OFFSET))(this);
+		}
+
+		::System::Void ShowSubWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_SHOWSUBWIDGET_OFFSET))(this);
+		}
+
+		::System::Void BindButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BINDBUTTON_OFFSET))(this);
+		}
+
+		::System::Void Bind3DModelController()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BIND3DMODELCONTROLLER_OFFSET))(this);
+		}
+
+		::System::Void BindGamePlayData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BINDGAMEPLAYDATA_OFFSET))(this);
+		}
+
+		::System::Void BuildViewModelDataBinding_FlowerStateExt()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_BUILDVIEWMODELDATABINDING_FLOWERSTATEEXT_OFFSET))(this);
+		}
+
+		::System::Void OnClickTipsButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONCLICKTIPSBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnClickFinishButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_ONCLICKFINISHBUTTON_OFFSET))(this);
+		}
+
+		::System::Void FinishFlower(::MoleMole::UI::FlowerShop::EFinishJudge judge)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UI::FlowerShop::EFinishJudge))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_FINISHFLOWER_OFFSET))(this, judge);
+		}
+
+		::MoleMole::UI::FlowerShop::EFinishJudge CalJudge()
+		{
+			return ((::MoleMole::UI::FlowerShop::EFinishJudge(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_CALJUDGE_OFFSET))(this);
+		}
+
+		::System::Void MuteRotateAudio(::System::Boolean mute)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_MUTEROTATEAUDIO_OFFSET))(this, mute);
+		}
+
+		::Class_0_16E4307DCC419505_645* get__viewModel()
+		{
+			return ((::Class_0_16E4307DCC419505_645*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void _BuildDataBinding_b__13_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDDATABINDING_B__13_0_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__14_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDVIEWMODELDATABINDING_B__14_0_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__14_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDVIEWMODELDATABINDING_B__14_1_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__14_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDVIEWMODELDATABINDING_B__14_2_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__14_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDVIEWMODELDATABINDING_B__14_3_OFFSET))(this);
+		}
+
+		::System::Void _BuildDataBinding_Network_b__15_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDDATABINDING_NETWORK_B__15_0_OFFSET))(this);
+		}
+
+		::System::Void _BuildDataBinding_Network_b__15_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDDATABINDING_NETWORK_B__15_1_OFFSET))(this);
+		}
+
+		::System::Void _BuildDataBinding_Network_b__15_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDDATABINDING_NETWORK_B__15_2_OFFSET))(this);
+		}
+
+		::System::Void _BuildDataBinding_Network_b__15_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BUILDDATABINDING_NETWORK_B__15_3_OFFSET))(this);
+		}
+
+		::UnityEngine::GameObject* _BindButton_b__18_0()
+		{
+			return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER__BINDBUTTON_B__18_0_OFFSET))(this);
+		}
+
+		::System::Void __base_InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void __base_MaskClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_MASKCLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

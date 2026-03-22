@@ -9,7 +9,7 @@ namespace System { class String; }
 
 namespace System::Numerics
 {
-	inline static constexpr unsigned int Vector_1_TypeDefinitionIndex = 4774;
+	inline static constexpr unsigned int Vector_1_TypeDefinitionIndex = 6509;
 
 	template <typename T>
 	struct Vector_1
@@ -19,15 +19,15 @@ namespace System::Numerics
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Vector_1_TypeDefinitionIndex)->GetStaticField(0x0);
 		}
-		static ::System::Numerics::Vector_1<T>* StaticGet_s_zero()
+		static ::System::Numerics::Vector_1<T>* StaticGet_zero()
 		{
 			return (::System::Numerics::Vector_1<T>*)Il2CppClass::FromTypeDefinitionIndex(Vector_1_TypeDefinitionIndex)->GetStaticField(0x0);
 		}
-		static ::System::Numerics::Vector_1<T>* StaticGet_s_one()
+		static ::System::Numerics::Vector_1<T>* StaticGet_one()
 		{
 			return (::System::Numerics::Vector_1<T>*)Il2CppClass::FromTypeDefinitionIndex(Vector_1_TypeDefinitionIndex)->GetStaticField(0x0);
 		}
-		static ::System::Numerics::Vector_1<T>* StaticGet_s_allOnes()
+		static ::System::Numerics::Vector_1<T>* StaticGet_allOnes()
 		{
 			return (::System::Numerics::Vector_1<T>*)Il2CppClass::FromTypeDefinitionIndex(Vector_1_TypeDefinitionIndex)->GetStaticField(0x0);
 		}

@@ -1,0 +1,160 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_87D98DA5C1AD6384_Enum_3_3DCE6AAF7E47B319.h"
+#include "unitysdk/Class_1_87D98DA5C1AD6384_Enum_3_A188519F532ACB95.h"
+#include "unitysdk/MoleMole/Level/RatingType.h"
+#include "unitysdk/MoleMole/UILevelResultV2_PageController.h"
+#include "unitysdk/Share/EQuestStatisticsType.h"
+#include "unitysdk/System/ValueTuple_2.h"
+
+class Class_2_60638234271CCDB8_3;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralExpProgressWidgetController; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_CALCULATEEXPMAP_OFFSET UNITYSDK_OFFSET(0xB9125B0)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_GETBUTTONCOMBINESTATE_OFFSET UNITYSDK_OFFSET(0xB912910)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_GETCHALLENGETIME_OFFSET UNITYSDK_OFFSET(0xB911C70)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_GETPANELSTATE_OFFSET UNITYSDK_OFFSET(0xB912970)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_GETRANKINGSCORE_OFFSET UNITYSDK_OFFSET(0xB9129D0)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_GETRATINGTYPE_OFFSET UNITYSDK_OFFSET(0xB9119F0)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB912010)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_ONFADEINANIMEVENT_OFFSET UNITYSDK_OFFSET(0xB9121C0)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_ONPOPSHOWED_OFFSET UNITYSDK_OFFSET(0xB912BC0)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_ONPREPARESHOW_OFFSET UNITYSDK_OFFSET(0xB912A70)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB912150)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_REFRESHCARD_OFFSET UNITYSDK_OFFSET(0xB912C50)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_REFRESHDAMAGE_OFFSET UNITYSDK_OFFSET(0xB9122F0)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB913900)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER__REFRESHABYSSPOINT2_OFFSET UNITYSDK_OFFSET(0xB9130B0)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_GETCHALLENGETIME_OFFSET UNITYSDK_OFFSET(0xB913920)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_GETRANKINGSCORE_OFFSET UNITYSDK_OFFSET(0xB913930)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_GETRATINGTYPE_OFFSET UNITYSDK_OFFSET(0xB913990)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB9139A0)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_ONPREPARESHOW_OFFSET UNITYSDK_OFFSET(0xB913A40)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB913AB0)
+#define MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE__REFRESHABYSSPOINT2_OFFSET UNITYSDK_OFFSET(0xB913910)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBangBooDreamResultPageController_TypeDefinitionIndex = 37018;
+
+	class UIBangBooDreamResultPageController : public ::MoleMole::UILevelResultV2_PageController
+	{
+	public:
+		::Class_2_60638234271CCDB8_3* _view; // 0x3A8
+		::MoleMole::UIGeneralExpProgressWidgetController* _expCtroller; // 0x3B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::Level::RatingType GetRatingType()
+		{
+			return ((::MoleMole::Level::RatingType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_GETRATINGTYPE_OFFSET))(this);
+		}
+
+		::System::ValueTuple_2<::Share::EQuestStatisticsType, ::System::Single> GetChallengeTime()
+		{
+			return ((::System::ValueTuple_2<::Share::EQuestStatisticsType, ::System::Single>(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_GETCHALLENGETIME_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnFadeInAnimEvent(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_ONFADEINANIMEVENT_OFFSET))(this, args);
+		}
+
+		::System::Void RefreshDamage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_REFRESHDAMAGE_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* CalculateExpMap()
+		{
+			return ((::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_CALCULATEEXPMAP_OFFSET))(this);
+		}
+
+		::Class_1_87D98DA5C1AD6384_Enum_3_3DCE6AAF7E47B319 GetButtonCombineState()
+		{
+			return ((::Class_1_87D98DA5C1AD6384_Enum_3_3DCE6AAF7E47B319(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_GETBUTTONCOMBINESTATE_OFFSET))(this);
+		}
+
+		::Class_1_87D98DA5C1AD6384_Enum_3_A188519F532ACB95 GetPanelState()
+		{
+			return ((::Class_1_87D98DA5C1AD6384_Enum_3_A188519F532ACB95(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_GETPANELSTATE_OFFSET))(this);
+		}
+
+		::System::Int32 GetRankingScore()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_GETRANKINGSCORE_OFFSET))(this);
+		}
+
+		::System::Void OnPrepareShow()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_ONPREPARESHOW_OFFSET))(this);
+		}
+
+		::System::Void OnPopShowed()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_ONPOPSHOWED_OFFSET))(this);
+		}
+
+		::System::Void _RefreshAbyssPoint2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER__REFRESHABYSSPOINT2_OFFSET))(this);
+		}
+
+		::System::Void RefreshCard()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER_REFRESHCARD_OFFSET))(this);
+		}
+
+		::System::Void __base__RefreshAbyssPoint2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE__REFRESHABYSSPOINT2_OFFSET))(this);
+		}
+
+		::System::ValueTuple_2<::Share::EQuestStatisticsType, ::System::Single> __base_GetChallengeTime()
+		{
+			return ((::System::ValueTuple_2<::Share::EQuestStatisticsType, ::System::Single>(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_GETCHALLENGETIME_OFFSET))(this);
+		}
+
+		::System::Int32 __base_GetRankingScore()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_GETRANKINGSCORE_OFFSET))(this);
+		}
+
+		::MoleMole::Level::RatingType __base_GetRatingType()
+		{
+			return ((::MoleMole::Level::RatingType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_GETRATINGTYPE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnPrepareShow()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_ONPREPARESHOW_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMRESULTPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

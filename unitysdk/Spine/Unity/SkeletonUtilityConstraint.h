@@ -5,13 +5,13 @@
 namespace Spine::Unity { class SkeletonUtility; }
 namespace Spine::Unity { class SkeletonUtilityBone; }
 
-#define SPINE_UNITY_SKELETONUTILITYCONSTRAINT_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x17C299F0)
-#define SPINE_UNITY_SKELETONUTILITYCONSTRAINT_ONENABLE_OFFSET UNITYSDK_OFFSET(0x17C298A0)
-#define SPINE_UNITY_SKELETONUTILITYCONSTRAINT__CTOR_OFFSET UNITYSDK_OFFSET(0x17C29A50)
+#define SPINE_UNITY_SKELETONUTILITYCONSTRAINT_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x17BDB240)
+#define SPINE_UNITY_SKELETONUTILITYCONSTRAINT_ONENABLE_OFFSET UNITYSDK_OFFSET(0x17BDB0F0)
+#define SPINE_UNITY_SKELETONUTILITYCONSTRAINT__CTOR_OFFSET UNITYSDK_OFFSET(0x17BDB2A0)
 
 namespace Spine::Unity
 {
-	inline static constexpr unsigned int SkeletonUtilityConstraint_TypeDefinitionIndex = 33812;
+	inline static constexpr unsigned int SkeletonUtilityConstraint_TypeDefinitionIndex = 36298;
 
 	class SkeletonUtilityConstraint : public ::UnityEngine::MonoBehaviour
 	{

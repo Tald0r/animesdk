@@ -4,28 +4,64 @@
 #include "unitysdk/UnityEngine/Quaternion.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define ROOTMOTION_QUATOOLS_CLAMPANGLE_OFFSET UNITYSDK_OFFSET(0x82AFFC0)
-#define ROOTMOTION_QUATOOLS_CLAMPROTATION_OFFSET UNITYSDK_OFFSET(0x82AFD90)
-#define ROOTMOTION_QUATOOLS_FROMTOAROUNDAXIS_OFFSET UNITYSDK_OFFSET(0x82AFA40)
-#define ROOTMOTION_QUATOOLS_FROMTOROTATION_OFFSET UNITYSDK_OFFSET(0x82AFB70)
-#define ROOTMOTION_QUATOOLS_GETAXIS_OFFSET UNITYSDK_OFFSET(0x82AFC90)
-#define ROOTMOTION_QUATOOLS_LERP_OFFSET UNITYSDK_OFFSET(0x82AF860)
-#define ROOTMOTION_QUATOOLS_LINEARBLEND_OFFSET UNITYSDK_OFFSET(0x82AF940)
-#define ROOTMOTION_QUATOOLS_ROTATIONTOLOCALSPACE_OFFSET UNITYSDK_OFFSET(0x8297690)
-#define ROOTMOTION_QUATOOLS_SLERP_OFFSET UNITYSDK_OFFSET(0x82AF8D0)
-#define ROOTMOTION_QUATOOLS_SPHERICALBLEND_OFFSET UNITYSDK_OFFSET(0x82AF9C0)
-#define ROOTMOTION_QUATOOLS_TOX0Z_OFFSET UNITYSDK_OFFSET(0x829C190)
+#define ROOTMOTION_QUATOOLS_CLAMPANGLE_OFFSET UNITYSDK_OFFSET(0x1ADDA6A0)
+#define ROOTMOTION_QUATOOLS_CLAMPROTATION_OFFSET UNITYSDK_OFFSET(0x1ADDA470)
+#define ROOTMOTION_QUATOOLS_FROMTOAROUNDAXIS_OFFSET UNITYSDK_OFFSET(0x1ADD9E40)
+#define ROOTMOTION_QUATOOLS_FROMTOROTATIONDELTA_OFFSET UNITYSDK_OFFSET(0x1ADDA1A0)
+#define ROOTMOTION_QUATOOLS_FROMTOROTATION_OFFSET UNITYSDK_OFFSET(0x1ADDA080)
+#define ROOTMOTION_QUATOOLS_GETAXIS_OFFSET UNITYSDK_OFFSET(0x1ADDA370)
+#define ROOTMOTION_QUATOOLS_GETBANK_1_OFFSET UNITYSDK_OFFSET(0x1ADD9670)
+#define ROOTMOTION_QUATOOLS_GETBANK_OFFSET UNITYSDK_OFFSET(0x1ADD8D30)
+#define ROOTMOTION_QUATOOLS_GETPITCH_1_OFFSET UNITYSDK_OFFSET(0x1ADD9420)
+#define ROOTMOTION_QUATOOLS_GETPITCH_OFFSET UNITYSDK_OFFSET(0x1ADD8C00)
+#define ROOTMOTION_QUATOOLS_GETYAW_1_OFFSET UNITYSDK_OFFSET(0x1ADD9180)
+#define ROOTMOTION_QUATOOLS_GETYAW_OFFSET UNITYSDK_OFFSET(0x1ADD8AB0)
+#define ROOTMOTION_QUATOOLS_LERP_OFFSET UNITYSDK_OFFSET(0x1ADD9C60)
+#define ROOTMOTION_QUATOOLS_LINEARBLEND_OFFSET UNITYSDK_OFFSET(0x1ADD9D40)
+#define ROOTMOTION_QUATOOLS_MATCHROTATION_OFFSET UNITYSDK_OFFSET(0x1ADDA840)
+#define ROOTMOTION_QUATOOLS_MIRRORYZ_1_OFFSET UNITYSDK_OFFSET(0x1ADDAF80)
+#define ROOTMOTION_QUATOOLS_MIRRORYZ_OFFSET UNITYSDK_OFFSET(0x1ADDAC10)
+#define ROOTMOTION_QUATOOLS_ROTATIONTOLOCALSPACE_OFFSET UNITYSDK_OFFSET(0x1ADD9F70)
+#define ROOTMOTION_QUATOOLS_SLERP_OFFSET UNITYSDK_OFFSET(0x1ADD9CD0)
+#define ROOTMOTION_QUATOOLS_SPHERICALBLEND_OFFSET UNITYSDK_OFFSET(0x1ADD9DC0)
+#define ROOTMOTION_QUATOOLS_TOBIPOLAR_1_OFFSET UNITYSDK_OFFSET(0x1ADDABC0)
+#define ROOTMOTION_QUATOOLS_TOBIPOLAR_OFFSET UNITYSDK_OFFSET(0x1ADDAAD0)
 
 namespace RootMotion
 {
-	inline static constexpr unsigned int QuaTools_TypeDefinitionIndex = 34233;
+	inline static constexpr unsigned int QuaTools_TypeDefinitionIndex = 34995;
 
 	class QuaTools : public ::System::Object
 	{
 	public:
-		static ::UnityEngine::Vector3 ToX0Z(::UnityEngine::Vector3 vector3)
+		static ::System::Single GetYaw(::UnityEngine::Quaternion space, ::UnityEngine::Vector3 forward)
 		{
-			return ((::UnityEngine::Vector3(*)(::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_TOX0Z_OFFSET))(vector3);
+			return ((::System::Single(*)(::UnityEngine::Quaternion, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_GETYAW_OFFSET))(space, forward);
+		}
+
+		static ::System::Single GetPitch(::UnityEngine::Quaternion space, ::UnityEngine::Vector3 forward)
+		{
+			return ((::System::Single(*)(::UnityEngine::Quaternion, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_GETPITCH_OFFSET))(space, forward);
+		}
+
+		static ::System::Single GetBank(::UnityEngine::Quaternion space, ::UnityEngine::Vector3 forward, ::UnityEngine::Vector3 up)
+		{
+			return ((::System::Single(*)(::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_GETBANK_OFFSET))(space, forward, up);
+		}
+
+		static ::System::Single GetYaw_1(::UnityEngine::Quaternion space, ::UnityEngine::Quaternion rotation)
+		{
+			return ((::System::Single(*)(::UnityEngine::Quaternion, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_GETYAW_1_OFFSET))(space, rotation);
+		}
+
+		static ::System::Single GetPitch_1(::UnityEngine::Quaternion space, ::UnityEngine::Quaternion rotation)
+		{
+			return ((::System::Single(*)(::UnityEngine::Quaternion, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_GETPITCH_1_OFFSET))(space, rotation);
+		}
+
+		static ::System::Single GetBank_1(::UnityEngine::Quaternion space, ::UnityEngine::Quaternion rotation)
+		{
+			return ((::System::Single(*)(::UnityEngine::Quaternion, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_GETBANK_1_OFFSET))(space, rotation);
 		}
 
 		static ::UnityEngine::Quaternion Lerp(::UnityEngine::Quaternion fromRotation, ::UnityEngine::Quaternion toRotation, ::System::Single weight)
@@ -63,6 +99,11 @@ namespace RootMotion
 			return ((::UnityEngine::Quaternion(*)(::UnityEngine::Quaternion, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_FROMTOROTATION_OFFSET))(from, to);
 		}
 
+		static ::UnityEngine::Quaternion FromToRotationDelta(::UnityEngine::Quaternion from, ::UnityEngine::Quaternion to)
+		{
+			return ((::UnityEngine::Quaternion(*)(::UnityEngine::Quaternion, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_FROMTOROTATIONDELTA_OFFSET))(from, to);
+		}
+
 		static ::UnityEngine::Vector3 GetAxis(::UnityEngine::Vector3 v)
 		{
 			return ((::UnityEngine::Vector3(*)(::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_GETAXIS_OFFSET))(v);
@@ -76,6 +117,31 @@ namespace RootMotion
 		static ::System::Single ClampAngle(::System::Single angle, ::System::Single clampWeight, ::System::Int32 clampSmoothing)
 		{
 			return ((::System::Single(*)(::System::Single, ::System::Single, ::System::Int32))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_CLAMPANGLE_OFFSET))(angle, clampWeight, clampSmoothing);
+		}
+
+		static ::UnityEngine::Quaternion MatchRotation(::UnityEngine::Quaternion targetRotation, ::UnityEngine::Vector3 targetAxis1, ::UnityEngine::Vector3 targetAxis2, ::UnityEngine::Vector3 axis1, ::UnityEngine::Vector3 axis2)
+		{
+			return ((::UnityEngine::Quaternion(*)(::UnityEngine::Quaternion, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_MATCHROTATION_OFFSET))(targetRotation, targetAxis1, targetAxis2, axis1, axis2);
+		}
+
+		static ::UnityEngine::Vector3 ToBiPolar(::UnityEngine::Vector3 euler)
+		{
+			return ((::UnityEngine::Vector3(*)(::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_TOBIPOLAR_OFFSET))(euler);
+		}
+
+		static ::System::Single ToBiPolar_1(::System::Single angle)
+		{
+			return ((::System::Single(*)(::System::Single))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_TOBIPOLAR_1_OFFSET))(angle);
+		}
+
+		static ::UnityEngine::Quaternion MirrorYZ(::UnityEngine::Quaternion r, ::UnityEngine::Quaternion space)
+		{
+			return ((::UnityEngine::Quaternion(*)(::UnityEngine::Quaternion, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_MIRRORYZ_OFFSET))(r, space);
+		}
+
+		static ::UnityEngine::Quaternion MirrorYZ_1(::UnityEngine::Quaternion r)
+		{
+			return ((::UnityEngine::Quaternion(*)(::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + ROOTMOTION_QUATOOLS_MIRRORYZ_1_OFFSET))(r);
 		}
 	};
 }

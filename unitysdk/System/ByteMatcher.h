@@ -5,21 +5,20 @@
 
 namespace System::Collections { class Hashtable; }
 
-#define SYSTEM_BYTEMATCHER_ADDMAPPING_OFFSET UNITYSDK_OFFSET(0x15B06F10)
-#define SYSTEM_BYTEMATCHER_MATCH_OFFSET UNITYSDK_OFFSET(0x15B07080)
-#define SYSTEM_BYTEMATCHER_SORT_OFFSET UNITYSDK_OFFSET(0x15B07020)
-#define SYSTEM_BYTEMATCHER_STARTSWITH_OFFSET UNITYSDK_OFFSET(0x15B07030)
-#define SYSTEM_BYTEMATCHER__CTOR_OFFSET UNITYSDK_OFFSET(0x15B075F0)
+#define SYSTEM_BYTEMATCHER_ADDMAPPING_OFFSET UNITYSDK_OFFSET(0x19508110)
+#define SYSTEM_BYTEMATCHER_MATCH_OFFSET UNITYSDK_OFFSET(0x19508270)
+#define SYSTEM_BYTEMATCHER_STARTSWITH_OFFSET UNITYSDK_OFFSET(0x19508220)
+#define SYSTEM_BYTEMATCHER__CTOR_OFFSET UNITYSDK_OFFSET(0x195087E0)
 
 namespace System
 {
-	inline static constexpr unsigned int ByteMatcher_TypeDefinitionIndex = 428;
+	inline static constexpr unsigned int ByteMatcher_TypeDefinitionIndex = 415;
 
 	class ByteMatcher : public ::System::Object
 	{
 	public:
-		::System::Collections::Hashtable* starts; // 0x10
-		::System::Collections::Hashtable* map; // 0x18
+		::System::Collections::Hashtable* map; // 0x10
+		::System::Collections::Hashtable* starts; // 0x18
 
 		::System::Void _ctor()
 		{
@@ -29,11 +28,6 @@ namespace System
 		::System::Void AddMapping(::System::TermInfoStrings key, ::Il2CppArray<::System::Byte>* val)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::TermInfoStrings, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + SYSTEM_BYTEMATCHER_ADDMAPPING_OFFSET))(this, key, val);
-		}
-
-		::System::Void Sort()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_BYTEMATCHER_SORT_OFFSET))(this);
 		}
 
 		::System::Boolean StartsWith(::System::Int32 c)

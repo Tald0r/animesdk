@@ -1,0 +1,42 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_3_9F3861B3B9CC6874.h"
+#include "unitysdk/Enum_3_972C37F6321EBB18.h"
+
+class Class_1_FA07E4B3B7875ABF;
+class Class_2_4D61A7A49E7F7878;
+class Class_3_9C01E0E9283C74CB;
+
+#define CLASS_4_CA9AE594C4D8922A_METHOD_4_04C4A53AE07C311F_OFFSET UNITYSDK_OFFSET(0x63CE9E0)
+#define CLASS_4_CA9AE594C4D8922A_METHOD_4_B67678B8F2BE0F21_OFFSET UNITYSDK_OFFSET(0x63CEAE0)
+#define CLASS_4_CA9AE594C4D8922A_METHOD_4_C74CF020AA42ED85_OFFSET UNITYSDK_OFFSET(0x63CEB60)
+#define CLASS_4_CA9AE594C4D8922A__CTOR_OFFSET UNITYSDK_OFFSET(0x63CE9A0)
+
+inline static constexpr unsigned int Class_4_CA9AE594C4D8922A_TypeDefinitionIndex = 38830;
+
+class Class_4_CA9AE594C4D8922A : public ::Class_3_9F3861B3B9CC6874
+{
+public:
+	::System::Int32 Field_4_1; // 0x50
+	::System::Int32 Field_4_0; // 0x54
+
+	::System::Void _ctor(::Class_1_FA07E4B3B7875ABF* a1, ::Class_3_9C01E0E9283C74CB* a2, ::Class_2_4D61A7A49E7F7878* a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_FA07E4B3B7875ABF*, ::Class_3_9C01E0E9283C74CB*, ::Class_2_4D61A7A49E7F7878*))((::PBYTE)hIl2Cpp + CLASS_4_CA9AE594C4D8922A__CTOR_OFFSET))(this, a1, a2, a3);
+	}
+
+	::System::Void Method_4_04C4A53AE07C311F(::System::Boolean a1, ::Class_2_4D61A7A49E7F7878* a2, ::Enum_3_972C37F6321EBB18 a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Class_2_4D61A7A49E7F7878*, ::Enum_3_972C37F6321EBB18))((::PBYTE)hIl2Cpp + CLASS_4_CA9AE594C4D8922A_METHOD_4_04C4A53AE07C311F_OFFSET))(this, a1, a2, a3);
+	}
+
+	::System::Void Method_4_B67678B8F2BE0F21(::System::Boolean a1, ::Class_2_4D61A7A49E7F7878* a2, ::Enum_3_972C37F6321EBB18 a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Class_2_4D61A7A49E7F7878*, ::Enum_3_972C37F6321EBB18))((::PBYTE)hIl2Cpp + CLASS_4_CA9AE594C4D8922A_METHOD_4_B67678B8F2BE0F21_OFFSET))(this, a1, a2, a3);
+	}
+
+	::System::Int32 Method_4_C74CF020AA42ED85()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_CA9AE594C4D8922A_METHOD_4_C74CF020AA42ED85_OFFSET))(this);
+	}
+};

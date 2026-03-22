@@ -1,0 +1,58 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace MoleMole { class UIResourceLoadWidgetController; }
+namespace System { class Action; }
+
+#define MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40_MOVENEXT_OFFSET UNITYSDK_OFFSET(0xD6B7F90)
+#define MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0xD6B8A10)
+#define MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0xD6B8A70)
+#define MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0xD6B8A20)
+#define MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0xD6B7F80)
+#define MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40__CTOR_OFFSET UNITYSDK_OFFSET(0xD6B7F70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIResourceLoadWidgetController__OnStartLoadGameConfigAssets_d__40_TypeDefinitionIndex = 47575;
+
+	class UIResourceLoadWidgetController__OnStartLoadGameConfigAssets_d__40 : public ::System::Object
+	{
+	public:
+		::MoleMole::UIResourceLoadWidgetController* __4__this; // 0x10
+		::System::Object* __2__current; // 0x18
+		::System::Action* callback; // 0x20
+		::System::Int32 __1__state; // 0x28
+		::System::Boolean afterUpdate; // 0x2C
+
+		::System::Void _ctor(::System::Int32 __1__state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40__CTOR_OFFSET))(this, __1__state);
+		}
+
+		::System::Void System_IDisposable_Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET))(this);
+		}
+
+		::System::Boolean MoveNext()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40_MOVENEXT_OFFSET))(this);
+		}
+
+		::System::Object* System_Collections_Generic_IEnumerator_System_Object__get_Current()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET))(this);
+		}
+
+		::System::Void System_Collections_IEnumerator_Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET))(this);
+		}
+
+		::System::Object* System_Collections_IEnumerator_get_Current()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRESOURCELOADWIDGETCONTROLLER__ONSTARTLOADGAMECONFIGASSETS_D__40_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET))(this);
+		}
+	};
+}

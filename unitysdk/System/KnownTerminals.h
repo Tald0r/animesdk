@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_KNOWNTERMINALS_GET_ANSI_OFFSET UNITYSDK_OFFSET(0x15C9C2C0)
-#define SYSTEM_KNOWNTERMINALS_GET_LINUX_OFFSET UNITYSDK_OFFSET(0x15C9C1C0)
-#define SYSTEM_KNOWNTERMINALS_GET_XTERM_OFFSET UNITYSDK_OFFSET(0x15C9C240)
+#define SYSTEM_KNOWNTERMINALS_GET_ANSI_OFFSET UNITYSDK_OFFSET(0x17F590B0)
+#define SYSTEM_KNOWNTERMINALS_GET_LINUX_OFFSET UNITYSDK_OFFSET(0x17F58FB0)
+#define SYSTEM_KNOWNTERMINALS_GET_XTERM_OFFSET UNITYSDK_OFFSET(0x17F59030)
 
 namespace System
 {
-	inline static constexpr unsigned int KnownTerminals_TypeDefinitionIndex = 401;
+	inline static constexpr unsigned int KnownTerminals_TypeDefinitionIndex = 388;
 
 	class KnownTerminals : public ::System::Object
 	{

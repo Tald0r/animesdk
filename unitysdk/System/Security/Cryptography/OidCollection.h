@@ -3,22 +3,27 @@
 #include "unitysdk/System/Object.h"
 
 namespace System { class Array; }
+namespace System { class String; }
 namespace System::Collections { class ArrayList; }
 namespace System::Collections { class IEnumerator; }
 namespace System::Security::Cryptography { class Oid; }
+namespace System::Security::Cryptography { class OidEnumerator; }
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_ADD_OFFSET UNITYSDK_OFFSET(0x17F1C510)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x17F1C5B0)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x17F1C960)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x17F1C540)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x17F1C970)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_SYSTEM_COLLECTIONS_ICOLLECTION_COPYTO_OFFSET UNITYSDK_OFFSET(0x17F1C640)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_SYSTEM_COLLECTIONS_IENUMERABLE_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x17F1C5E0)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x17F1C4C0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_ADD_OFFSET UNITYSDK_OFFSET(0x191E1670)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_COPYTO_OFFSET UNITYSDK_OFFSET(0x191E1EE0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x191E1B20)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x191E1AF0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x191E1F90)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_ITEM_1_OFFSET UNITYSDK_OFFSET(0x191E1710)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x191E16A0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x191E1FA0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_SYSTEM_COLLECTIONS_ICOLLECTION_COPYTO_OFFSET UNITYSDK_OFFSET(0x191E1BC0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_SYSTEM_COLLECTIONS_IENUMERABLE_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x191E1B70)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x191E1620)
 
 namespace System::Security::Cryptography
 {
-	inline static constexpr unsigned int OidCollection_TypeDefinitionIndex = 2659;
+	inline static constexpr unsigned int OidCollection_TypeDefinitionIndex = 3162;
 
 	class OidCollection : public ::System::Object
 	{
@@ -40,9 +45,19 @@ namespace System::Security::Cryptography
 			return ((::System::Security::Cryptography::Oid*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_ITEM_OFFSET))(this, index);
 		}
 
+		::System::Security::Cryptography::Oid* get_Item_1(::System::String* oid)
+		{
+			return ((::System::Security::Cryptography::Oid*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_ITEM_1_OFFSET))(this, oid);
+		}
+
 		::System::Int32 get_Count()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GET_COUNT_OFFSET))(this);
+		}
+
+		::System::Security::Cryptography::OidEnumerator* GetEnumerator()
+		{
+			return ((::System::Security::Cryptography::OidEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_GETENUMERATOR_OFFSET))(this);
 		}
 
 		::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator()
@@ -53,6 +68,11 @@ namespace System::Security::Cryptography
 		::System::Void System_Collections_ICollection_CopyTo(::System::Array* array, ::System::Int32 index)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Array*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_SYSTEM_COLLECTIONS_ICOLLECTION_COPYTO_OFFSET))(this, array, index);
+		}
+
+		::System::Void CopyTo(::Il2CppArray<::System::Security::Cryptography::Oid*>* array, ::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Security::Cryptography::Oid*>*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OIDCOLLECTION_COPYTO_OFFSET))(this, array, index);
 		}
 
 		::System::Boolean get_IsSynchronized()

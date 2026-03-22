@@ -1,0 +1,169 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_0A55B5A82A61DAFA_1;
+class Class_2_208CC9941471731A_646;
+class Class_2_4050202702C5AF24;
+class Class_2_79AE422BA06F6D26_184;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralHeadRowWidgetController; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_GOTOBEGINBATTLE_OFFSET UNITYSDK_OFFSET(0xD39F260)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONAVATARCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xD39F1F0)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONBLESSGROUPCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xD39DDA0)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONBOSSBTNCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xD39DF50)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD39D030)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONGOBTNCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xD39F6C0)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD39D0D0)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD39F900)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD39C410)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD39CF80)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_PLAYABYSSTOSELECTROLE_OFFSET UNITYSDK_OFFSET(0xD39F730)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_PLAYBLESSGROUPCHANGE_OFFSET UNITYSDK_OFFSET(0xD39F160)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_PLAYSELECTROLEFADEIN_OFFSET UNITYSDK_OFFSET(0xD39F870)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_REFRESHAVATAR_OFFSET UNITYSDK_OFFSET(0xD39D260)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_REFRESHBLESSGROUP_OFFSET UNITYSDK_OFFSET(0xD39D900)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_REFRESHBOSSVIEW_OFFSET UNITYSDK_OFFSET(0xD39E110)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xD39DB40)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD39F9E0)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD39FAC0)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD39FB30)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD39FBA0)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD39FC20)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD39FC80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAbyssApreggioTeamWidgetController_TypeDefinitionIndex = 56516;
+
+	class UIAbyssApreggioTeamWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_184* _view; // 0x2A0
+		::Class_2_208CC9941471731A_646* _levelCfg; // 0x2A8
+		::Class_2_0A55B5A82A61DAFA_1* _hollowQuestCfg; // 0x2B0
+		::Class_2_4050202702C5AF24* _arpeggioModel; // 0x2B8
+		::System::Int32 _selectBlessGroupID; // 0x2C0
+		::System::Collections::Generic::List_1<::MoleMole::UIGeneralHeadRowWidgetController*>* _avatarTeam; // 0x2C8
+		::System::Collections::Generic::List_1<::System::Int32>* tempElementList; // 0x2D0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnBlessGroupClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONBLESSGROUPCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnBossBtnClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONBOSSBTNCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshBossView(::System::Collections::Generic::List_1<::System::String*>* elementList)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::System::String*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_REFRESHBOSSVIEW_OFFSET))(this, elementList);
+		}
+
+		::System::Void RefreshBlessGroup()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_REFRESHBLESSGROUP_OFFSET))(this);
+		}
+
+		::System::Void PlayBlessGroupChange()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_PLAYBLESSGROUPCHANGE_OFFSET))(this);
+		}
+
+		::System::Void RefreshAvatar()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_REFRESHAVATAR_OFFSET))(this);
+		}
+
+		::System::Void OnAvatarClickHandle(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONAVATARCLICKHANDLE_OFFSET))(this, index);
+		}
+
+		::System::Void OnGoBtnClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONGOBTNCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void GotoBeginBattle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_GOTOBEGINBATTLE_OFFSET))(this);
+		}
+
+		::System::Single PlayAbyssToSelectRole()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_PLAYABYSSTOSELECTROLE_OFFSET))(this);
+		}
+
+		::System::Void PlaySelectRoleFadeIn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_PLAYSELECTROLEFADEIN_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

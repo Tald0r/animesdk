@@ -1,16 +1,15 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MessagePack/Unity/Extension/ReverseEndianessHelperSimpleSingle.h"
-#include "unitysdk/MessagePack/Unity/Extension/UnsafeBlitFormatterBase_2.h"
+#include "unitysdk/MessagePack/Unity/Extension/UnsafeBlitFormatterBase_1.h"
 
-#define MESSAGEPACK_UNITY_EXTENSION_DOUBLEARRAYBLITFORMATTER_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x1561A560)
-#define MESSAGEPACK_UNITY_EXTENSION_DOUBLEARRAYBLITFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1561A570)
+#define MESSAGEPACK_UNITY_EXTENSION_DOUBLEARRAYBLITFORMATTER_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x1A1AD430)
+#define MESSAGEPACK_UNITY_EXTENSION_DOUBLEARRAYBLITFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1AD440)
 
 namespace MessagePack::Unity::Extension
 {
-	inline static constexpr unsigned int DoubleArrayBlitFormatter_TypeDefinitionIndex = 33966;
+	inline static constexpr unsigned int DoubleArrayBlitFormatter_TypeDefinitionIndex = 25557;
 
-	class DoubleArrayBlitFormatter : public ::MessagePack::Unity::Extension::UnsafeBlitFormatterBase_2<::System::Double, ::MessagePack::Unity::Extension::ReverseEndianessHelperSimpleSingle>
+	class DoubleArrayBlitFormatter : public ::MessagePack::Unity::Extension::UnsafeBlitFormatterBase_1<::System::Double>
 	{
 	public:
 		::System::Void _ctor()

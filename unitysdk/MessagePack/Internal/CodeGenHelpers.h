@@ -8,14 +8,15 @@
 
 namespace System { class String; }
 
-#define MESSAGEPACK_INTERNAL_CODEGENHELPERS_GETARRAYFROMNULLABLESEQUENCE_OFFSET UNITYSDK_OFFSET(0x1564C5A0)
-#define MESSAGEPACK_INTERNAL_CODEGENHELPERS_GETENCODEDSTRINGBYTES_OFFSET UNITYSDK_OFFSET(0x1564BF80)
-#define MESSAGEPACK_INTERNAL_CODEGENHELPERS_GETSPANFROMSEQUENCE_OFFSET UNITYSDK_OFFSET(0x1564B190)
-#define MESSAGEPACK_INTERNAL_CODEGENHELPERS_READSTRINGSPAN_OFFSET UNITYSDK_OFFSET(0x1564C420)
+#define MESSAGEPACK_INTERNAL_CODEGENHELPERS_GETARRAYFROMNULLABLESEQUENCE_OFFSET UNITYSDK_OFFSET(0x19DB2C10)
+#define MESSAGEPACK_INTERNAL_CODEGENHELPERS_GETENCODEDSTRINGBYTES_OFFSET UNITYSDK_OFFSET(0x19DB24A0)
+#define MESSAGEPACK_INTERNAL_CODEGENHELPERS_GETSPANFROMSEQUENCE_1_OFFSET UNITYSDK_OFFSET(0x19DB2A80)
+#define MESSAGEPACK_INTERNAL_CODEGENHELPERS_GETSPANFROMSEQUENCE_OFFSET UNITYSDK_OFFSET(0x19DB28F0)
+#define MESSAGEPACK_INTERNAL_CODEGENHELPERS_READSTRINGSPAN_OFFSET UNITYSDK_OFFSET(0x19DB29E0)
 
 namespace MessagePack::Internal
 {
-	inline static constexpr unsigned int CodeGenHelpers_TypeDefinitionIndex = 9585;
+	inline static constexpr unsigned int CodeGenHelpers_TypeDefinitionIndex = 26542;
 
 	class CodeGenHelpers : public ::System::Object
 	{
@@ -38,6 +39,11 @@ namespace MessagePack::Internal
 		static ::Il2CppArray<::System::Byte>* GetArrayFromNullableSequence(::System::Nullable_1<::System::Buffers::ReadOnlySequence_1<::System::Byte>>& sequence)
 		{
 			return ((::Il2CppArray<::System::Byte>*(*)(::System::Nullable_1<::System::Buffers::ReadOnlySequence_1<::System::Byte>>&))((::PBYTE)hIl2Cpp + MESSAGEPACK_INTERNAL_CODEGENHELPERS_GETARRAYFROMNULLABLESEQUENCE_OFFSET))(sequence);
+		}
+
+		static ::System::ReadOnlySpan_1<::System::Byte> GetSpanFromSequence_1(::System::Nullable_1<::System::Buffers::ReadOnlySequence_1<::System::Byte>>& sequence)
+		{
+			return ((::System::ReadOnlySpan_1<::System::Byte>(*)(::System::Nullable_1<::System::Buffers::ReadOnlySequence_1<::System::Byte>>&))((::PBYTE)hIl2Cpp + MESSAGEPACK_INTERNAL_CODEGENHELPERS_GETSPANFROMSEQUENCE_1_OFFSET))(sequence);
 		}
 	};
 }

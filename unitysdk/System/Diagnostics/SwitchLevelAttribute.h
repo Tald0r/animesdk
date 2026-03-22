@@ -4,12 +4,13 @@
 
 namespace System { class Type; }
 
-#define SYSTEM_DIAGNOSTICS_SWITCHLEVELATTRIBUTE_SET_SWITCHLEVELTYPE_OFFSET UNITYSDK_OFFSET(0x17E90D30)
-#define SYSTEM_DIAGNOSTICS_SWITCHLEVELATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x17E90CC0)
+#define SYSTEM_DIAGNOSTICS_SWITCHLEVELATTRIBUTE_GET_SWITCHLEVELTYPE_OFFSET UNITYSDK_OFFSET(0x19D76290)
+#define SYSTEM_DIAGNOSTICS_SWITCHLEVELATTRIBUTE_SET_SWITCHLEVELTYPE_OFFSET UNITYSDK_OFFSET(0x19D76220)
+#define SYSTEM_DIAGNOSTICS_SWITCHLEVELATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19D761B0)
 
 namespace System::Diagnostics
 {
-	inline static constexpr unsigned int SwitchLevelAttribute_TypeDefinitionIndex = 2518;
+	inline static constexpr unsigned int SwitchLevelAttribute_TypeDefinitionIndex = 2763;
 
 	class SwitchLevelAttribute : public ::System::Attribute
 	{
@@ -19,6 +20,11 @@ namespace System::Diagnostics
 		::System::Void _ctor(::System::Type* switchLevelType)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_SWITCHLEVELATTRIBUTE__CTOR_OFFSET))(this, switchLevelType);
+		}
+
+		::System::Type* get_SwitchLevelType()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_SWITCHLEVELATTRIBUTE_GET_SWITCHLEVELTYPE_OFFSET))(this);
 		}
 
 		::System::Void set_SwitchLevelType(::System::Type* value)

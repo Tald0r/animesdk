@@ -1,0 +1,133 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MiHoYo/SDK/PluginUI/MiHoYoSDKUIContainer.h"
+
+class Class_2_79F6D62CE30E3F8E_121;
+namespace MoleMole { class UIGeneralMobileLoginPopWindowController; }
+namespace System { class String; }
+
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_36F46336ADA62D13_OFFSET UNITYSDK_OFFSET(0x748F880)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_37F16DA5DF8EC523_OFFSET UNITYSDK_OFFSET(0x748FB20)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_51839C9EAB1ED067_OFFSET UNITYSDK_OFFSET(0x748FB10)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_596D9113D22B8335_1_OFFSET UNITYSDK_OFFSET(0x748FA70)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_596D9113D22B8335_2_OFFSET UNITYSDK_OFFSET(0x748FDE0)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_596D9113D22B8335_3_OFFSET UNITYSDK_OFFSET(0x748FE80)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_596D9113D22B8335_OFFSET UNITYSDK_OFFSET(0x748F550)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_66F42CE2EDA79734_OFFSET UNITYSDK_OFFSET(0x748E200)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_80A9DB3F285E392F_OFFSET UNITYSDK_OFFSET(0x7490110)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_CD28994AFE636FFF_OFFSET UNITYSDK_OFFSET(0x748F040)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_DDA8A2337932DF10_OFFSET UNITYSDK_OFFSET(0x748F5F0)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_E7EF6BC52B28648C_1_OFFSET UNITYSDK_OFFSET(0x748EE50)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_E7EF6BC52B28648C_2_OFFSET UNITYSDK_OFFSET(0x748FF20)
+#define CLASS_2_264672ED64AC4599_1_METHOD_2_E7EF6BC52B28648C_OFFSET UNITYSDK_OFFSET(0x748EC60)
+#define CLASS_2_264672ED64AC4599_1_ONCLOSE_OFFSET UNITYSDK_OFFSET(0x748E900)
+#define CLASS_2_264672ED64AC4599_1_ONELEMENTSTATUSCHANGED_OFFSET UNITYSDK_OFFSET(0x748EA30)
+#define CLASS_2_264672ED64AC4599_1_ONSHOW_OFFSET UNITYSDK_OFFSET(0x748DC20)
+#define CLASS_2_264672ED64AC4599_1__CTOR_OFFSET UNITYSDK_OFFSET(0x748EBE0)
+
+inline static constexpr unsigned int Class_2_264672ED64AC4599_1_TypeDefinitionIndex = 59066;
+
+class Class_2_264672ED64AC4599_1 : public ::MiHoYo::SDK::PluginUI::MiHoYoSDKUIContainer
+{
+public:
+	static ::Class_2_264672ED64AC4599_1** StaticGet_Field_2_6()
+	{
+		return (::Class_2_264672ED64AC4599_1**)Il2CppClass::FromTypeDefinitionIndex(Class_2_264672ED64AC4599_1_TypeDefinitionIndex)->GetStaticField(0x445E0);
+	}
+	// static const ::System::String* Field_2_2; // 0x0
+	// static const ::System::String* Field_2_3; // 0x0
+	// static const ::System::String* Field_2_4; // 0x0
+	::MoleMole::UIGeneralMobileLoginPopWindowController* Field_2_0; // 0x18
+	::Class_2_79F6D62CE30E3F8E_121* Field_2_1; // 0x20
+	::System::Boolean Field_2_5; // 0x28
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1__CTOR_OFFSET))(this);
+	}
+
+	::System::Void OnShow()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_ONSHOW_OFFSET))(this);
+	}
+
+	::System::Void OnClose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_ONCLOSE_OFFSET))(this);
+	}
+
+	::System::Void OnElementStatusChanged(::System::String* a1, ::System::String* a2, ::System::String* a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_ONELEMENTSTATUSCHANGED_OFFSET))(this, a1, a2, a3);
+	}
+
+	::System::Void Method_2_E7EF6BC52B28648C()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_E7EF6BC52B28648C_OFFSET))(this);
+	}
+
+	::System::Void Method_2_E7EF6BC52B28648C_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_E7EF6BC52B28648C_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_66F42CE2EDA79734()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_66F42CE2EDA79734_OFFSET))(this);
+	}
+
+	::System::Void Method_2_596D9113D22B8335()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_596D9113D22B8335_OFFSET))(this);
+	}
+
+	::System::Void Method_2_DDA8A2337932DF10()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_DDA8A2337932DF10_OFFSET))(this);
+	}
+
+	::System::Void Method_2_36F46336ADA62D13()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_36F46336ADA62D13_OFFSET))(this);
+	}
+
+	::System::Void Method_2_596D9113D22B8335_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_596D9113D22B8335_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_51839C9EAB1ED067(::System::String* a1, ::System::String* a2, ::System::String* a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_51839C9EAB1ED067_OFFSET))(this, a1, a2, a3);
+	}
+
+	::System::Void Method_2_37F16DA5DF8EC523(::System::String* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_37F16DA5DF8EC523_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_E7EF6BC52B28648C_2()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_E7EF6BC52B28648C_2_OFFSET))(this);
+	}
+
+	::System::Void Method_2_596D9113D22B8335_2()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_596D9113D22B8335_2_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CD28994AFE636FFF()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_CD28994AFE636FFF_OFFSET))(this);
+	}
+
+	static ::Class_2_264672ED64AC4599_1* Method_2_80A9DB3F285E392F()
+	{
+		return ((::Class_2_264672ED64AC4599_1*(*)())((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_80A9DB3F285E392F_OFFSET))();
+	}
+
+	::System::Void Method_2_596D9113D22B8335_3()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_264672ED64AC4599_1_METHOD_2_596D9113D22B8335_3_OFFSET))(this);
+	}
+};

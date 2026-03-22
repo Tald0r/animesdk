@@ -1,0 +1,29 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace System { class Action; }
+
+#define MOLEMOLE_UIMAINSTORYTASKONDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7D50090)
+#define MOLEMOLE_UIMAINSTORYTASKONDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__PLAYCLOSE_B__0_OFFSET UNITYSDK_OFFSET(0x7D500A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMainStoryTaskOnDialogPopWindowController___c__DisplayClass9_0_TypeDefinitionIndex = 68055;
+
+	class UIMainStoryTaskOnDialogPopWindowController___c__DisplayClass9_0 : public ::System::Object
+	{
+	public:
+		::System::Action* callback; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYTASKONDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _PlayClose_b__0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYTASKONDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__PLAYCLOSE_B__0_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,159 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_029003AFE5A42E47.h"
+
+class Class_2_6D7677793BF052C1;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIKeyBindingContext; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_BTNCONFIRM_OFFSET UNITYSDK_OFFSET(0x7D2F0E0)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0x7D2E1A0)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x7D2E190)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0x7D2EAF0)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_MASKCLOSEINNER_OFFSET UNITYSDK_OFFSET(0x7D2E630)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_MASKCLOSE_OFFSET UNITYSDK_OFFSET(0x7D2E5C0)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D2E490)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x7D2EA40)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D2E530)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7D2E1B0)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7D2E3E0)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x7D2ED70)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7D2F1D0)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER__ONUIINIT_B__5_0_OFFSET UNITYSDK_OFFSET(0x7D2F1E0)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER__ONUIINIT_B__5_1_OFFSET UNITYSDK_OFFSET(0x7D2F1F0)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_MASKCLOSE_OFFSET UNITYSDK_OFFSET(0x7D2F200)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D2F270)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x7D2F2E0)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D2F310)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7D2F320)
+#define MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7D2F330)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIKeyBindingConflictTipsPopWindowController_TypeDefinitionIndex = 38841;
+
+	class UIKeyBindingConflictTipsPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_6D7677793BF052C1* _view; // 0x2F8
+		::System::String* _strMsg; // 0x300
+		::System::String* _strTitle; // 0x308
+		::System::Action* _okBtnCb; // 0x310
+		::System::Action* _cancelBtnCb; // 0x318
+		::System::Collections::Generic::List_1<::Struct_2_029003AFE5A42E47>* _keyBindingInfos; // 0x320
+		::MoleMole::UIKeyBindingContext* _context; // 0x328
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void MaskClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_MASKCLOSE_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void InitView(::MoleMole::UIKeyBindingContext* context, ::System::Collections::Generic::List_1<::Struct_2_029003AFE5A42E47>* keyBindingInfos, ::System::String* detail, ::System::String* title, ::System::Action* okBtnCb, ::System::Action* cancelBtnCb)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIKeyBindingContext*, ::System::Collections::Generic::List_1<::Struct_2_029003AFE5A42E47>*, ::System::String*, ::System::String*, ::System::Action*, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_INITVIEW_OFFSET))(this, context, keyBindingInfos, detail, title, okBtnCb, cancelBtnCb);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void MaskCloseInner(::System::Boolean triggerByInputAction)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_MASKCLOSEINNER_OFFSET))(this, triggerByInputAction);
+		}
+
+		::System::Void BtnConfirm(::System::Int32 cbType)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER_BTNCONFIRM_OFFSET))(this, cbType);
+		}
+
+		::System::Void _OnUIInit_b__5_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER__ONUIINIT_B__5_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__5_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER__ONUIINIT_B__5_1_OFFSET))(this);
+		}
+
+		::System::Void __base_MaskClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_MASKCLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIKEYBINDINGCONFLICTTIPSPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

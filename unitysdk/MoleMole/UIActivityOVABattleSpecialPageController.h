@@ -1,0 +1,131 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_79AE422BA06F6D26_245;
+namespace MoleMole { class ActivityOVABattleSpecialContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralNewHintWidgetController; }
+namespace System { class EventArgs; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xB8F5BA0)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONCLICKTAB_OFFSET UNITYSDK_OFFSET(0xB8F5D30)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB8F5BB0)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONSELECTITEM_OFFSET UNITYSDK_OFFSET(0xB8F6A70)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xB8F5C50)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB8F69E0)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB8F6180)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_REFRESHTABNEW_OFFSET UNITYSDK_OFFSET(0xB8F65E0)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xB8F5E50)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB8F6BD0)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER__ONUIINIT_B__10_0_OFFSET UNITYSDK_OFFSET(0xB8F6BE0)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER__ONUIINIT_B__10_1_OFFSET UNITYSDK_OFFSET(0xB8F6CE0)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER__ONUIINIT_B__10_2_OFFSET UNITYSDK_OFFSET(0xB8F6CF0)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB8F6D00)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xB8F6D70)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB8F6D80)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB8F6D90)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityOVABattleSpecialPageController_TypeDefinitionIndex = 76296;
+
+	class UIActivityOVABattleSpecialPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_245* _view; // 0x2F8
+		::MoleMole::ActivityOVABattleSpecialContext* _context; // 0x300
+		::System::Int32 SelectQuest; // 0x308
+		::UnityEngine::GameObject* _bgObj; // 0x310
+		::MoleMole::UIGeneralNewHintWidgetController* _newHintCtrlNormal; // 0x318
+		::MoleMole::UIGeneralNewHintWidgetController* _newHintCtrlHard; // 0x320
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnClickTab(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONCLICKTAB_OFFSET))(this, index);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshTabNew()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_REFRESHTABNEW_OFFSET))(this);
+		}
+
+		::System::Void OnSelectItem(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER_ONSELECTITEM_OFFSET))(this, index);
+		}
+
+		::System::Void _OnUIInit_b__10_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER__ONUIINIT_B__10_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__10_1(::System::Int32 idx)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER__ONUIINIT_B__10_1_OFFSET))(this, idx);
+		}
+
+		::System::Void _OnUIInit_b__10_2(::System::EventArgs* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER__ONUIINIT_B__10_2_OFFSET))(this, arg);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,104 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_2_60638234271CCDB8_100;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIFlowerMainTargetLineRowWidgetController_Data; }
+namespace MoleMole { class UIFlowerMainTargetLineRowWidgetController_ViewModel; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_BUILDDATABINDING_OFFSET UNITYSDK_OFFSET(0xA901240)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET UNITYSDK_OFFSET(0xA901300)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xA900F80)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA900EE0)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA901140)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA901060)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA900E40)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA901390)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xA901440)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA9014A0)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA901510)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA901590)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA901610)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFlowerMainTargetLineRowWidgetController_TypeDefinitionIndex = 72500;
+
+	class UIFlowerMainTargetLineRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_60638234271CCDB8_100* _view; // 0x2D0
+		::MoleMole::UIFlowerMainTargetLineRowWidgetController_Data* _data; // 0x2D8
+		::MoleMole::UIFlowerMainTargetLineRowWidgetController_ViewModel* _viewModel; // 0x2E0
+		::Class_1_48D56DACBE4271BC* _propertySyncHelper; // 0x2E8
+		::Class_1_48D56DACBE4271BC* _propertySyncHelper_ViewModel; // 0x2F0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void BuildDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_BUILDDATABINDING_OFFSET))(this);
+		}
+
+		::System::Void BuildViewModelDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET))(this);
+		}
+
+		::System::Void __base_InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

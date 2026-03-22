@@ -1,0 +1,103 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_0_16E4307DCC419505_7;
+class Class_1_C3D1BF0CA1987B11;
+class Class_2_79F6D62CE30E3F8E_94;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace System { class Object; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_CLEARREWARDS_OFFSET UNITYSDK_OFFSET(0xC9D5630)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_ONCLICKTAKEREWARD_OFFSET UNITYSDK_OFFSET(0xC9D57D0)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC9D47A0)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xC9D4840)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_ONTAKEREWARDSUCCESS_OFFSET UNITYSDK_OFFSET(0xC9D5B80)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC9D4640)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_REFRESHREWARD_OFFSET UNITYSDK_OFFSET(0xC9D50E0)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xC9D4BC0)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_SETROWSTATE_OFFSET UNITYSDK_OFFSET(0xC9D49B0)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC9D5BF0)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC9D5C80)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xC9D5CF0)
+#define MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC9D5D70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int InterKnowCourseRewardListRowWidgetController_TypeDefinitionIndex = 73262;
+
+	class InterKnowCourseRewardListRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_94* _view; // 0x2D0
+		::Class_1_C3D1BF0CA1987B11* rewardTreeNode; // 0x2D8
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnWidgetController*>* _rewardIconList; // 0x2E0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void SetRowState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_SETROWSTATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_REFRESHREWARD_OFFSET))(this);
+		}
+
+		::System::Void ClearRewards()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_CLEARREWARDS_OFFSET))(this);
+		}
+
+		::System::Void OnClickTakeReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_ONCLICKTAKEREWARD_OFFSET))(this);
+		}
+
+		::System::Void OnTakeRewardSuccess(::Class_0_16E4307DCC419505_7* rcvMessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER_ONTAKEREWARDSUCCESS_OFFSET))(this, rcvMessage);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INTERKNOWCOURSEREWARDLISTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

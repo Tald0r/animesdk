@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_THREADING_TIMER_TIMERCOMPARER_COMPARE_OFFSET UNITYSDK_OFFSET(0x15B9DD40)
-#define SYSTEM_THREADING_TIMER_TIMERCOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x15B9C550)
+#define SYSTEM_THREADING_TIMER_TIMERCOMPARER_COMPARE_OFFSET UNITYSDK_OFFSET(0x17FEE9A0)
+#define SYSTEM_THREADING_TIMER_TIMERCOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x17FED4F0)
 
 namespace System::Threading
 {
-	inline static constexpr unsigned int Timer_TimerComparer_TypeDefinitionIndex = 874;
+	inline static constexpr unsigned int Timer_TimerComparer_TypeDefinitionIndex = 866;
 
 	class Timer_TimerComparer : public ::System::Object
 	{

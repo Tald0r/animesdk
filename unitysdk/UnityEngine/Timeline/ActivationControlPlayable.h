@@ -11,28 +11,38 @@
 namespace System { class Object; }
 namespace UnityEngine { class GameObject; }
 
-#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x181852F0)
-#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_ONBEHAVIOURPAUSE_OFFSET UNITYSDK_OFFSET(0x18185430)
-#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x18185410)
-#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_ONGRAPHSTART_OFFSET UNITYSDK_OFFSET(0x18185480)
-#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0x181854C0)
-#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x18185460)
-#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x18185520)
+#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x1AC93A10)
+#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_ONBEHAVIOURPAUSE_OFFSET UNITYSDK_OFFSET(0x1AC93C70)
+#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x1AC93BE0)
+#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_ONGRAPHSTART_OFFSET UNITYSDK_OFFSET(0x1AC93DA0)
+#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0x1AC93E40)
+#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x1AC93D10)
+#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AC93F50)
+#define UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC93F40)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int ActivationControlPlayable_TypeDefinitionIndex = 29008;
+	inline static constexpr unsigned int ActivationControlPlayable_TypeDefinitionIndex = 29357;
 
 	class ActivationControlPlayable : public ::UnityEngine::Playables::PlayableBehaviour
 	{
 	public:
+		static ::System::Boolean* StaticGet_SkipActivationControl()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ActivationControlPlayable_TypeDefinitionIndex)->GetStaticField(0x11D30);
+		}
 		::UnityEngine::GameObject* gameObject; // 0x10
-		::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState postPlayback; // 0x18
-		::UnityEngine::Timeline::ActivationControlPlayable_InitialState m_InitialState; // 0x1C
+		::UnityEngine::Timeline::ActivationControlPlayable_InitialState m_InitialState; // 0x18
+		::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState postPlayback; // 0x1C
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_ACTIVATIONCONTROLPLAYABLE__CCTOR_OFFSET))();
 		}
 
 		static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::ActivationControlPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* gameObject, ::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState postPlaybackState)

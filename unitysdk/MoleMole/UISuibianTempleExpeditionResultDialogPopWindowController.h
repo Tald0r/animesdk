@@ -1,0 +1,145 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_1_1685EC66FBD28897;
+class Class_2_79AE422BA06F6D26_94;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xACC3B30)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_GOACCESS_OFFSET UNITYSDK_OFFSET(0xACC53D0)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_ONCLICKITEMBTN_OFFSET UNITYSDK_OFFSET(0xACC3D90)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xACC4100)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xACC41A0)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xACC3B40)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xACC3F20)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_PLAYSCORECHANGE_OFFSET UNITYSDK_OFFSET(0xACC5070)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_SETACCESS_OFFSET UNITYSDK_OFFSET(0xACC52C0)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_SETAREA_OFFSET UNITYSDK_OFFSET(0xACC5360)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_SETREAWRDLIST_OFFSET UNITYSDK_OFFSET(0xACC4230)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xACC54B0)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__8_0_OFFSET UNITYSDK_OFFSET(0xACC55F0)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER__ONUIOPEN_B__10_0_OFFSET UNITYSDK_OFFSET(0xACC5710)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER__ONUIOPEN_B__10_1_OFFSET UNITYSDK_OFFSET(0xACC5770)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xACC5830)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xACC58A0)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xACC58B0)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xACC58C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISuibianTempleExpeditionResultDialogPopWindowController_TypeDefinitionIndex = 56336;
+
+	class UISuibianTempleExpeditionResultDialogPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_94* _view; // 0x2F8
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* _curShowItems; // 0x300
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* _curSortShowItem; // 0x308
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* _gamePadGameObjects; // 0x310
+		::System::Int32 accessID; // 0x318
+		::System::Int32 area; // 0x31C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnClickItemBtn(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_ONCLICKITEMBTN_OFFSET))(this, index);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetReawrdList(::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* materialItemDatas, ::System::Collections::Generic::List_1<::System::Int32>* additionalIndexs, ::System::Int32 lastServerProgress, ::System::Int32 finalProgress, ::System::Int32 expeditonValue, ::System::Int32 lastExpeditionValue, ::System::Int32 lastRewardCount, ::System::Int32 finalRewardCount, ::System::Int32 maxRewardCount, ::System::Collections::Generic::List_1<::System::Int32>* importantItems)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>*, ::System::Collections::Generic::List_1<::System::Int32>*, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Collections::Generic::List_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_SETREAWRDLIST_OFFSET))(this, materialItemDatas, additionalIndexs, lastServerProgress, finalProgress, expeditonValue, lastExpeditionValue, lastRewardCount, finalRewardCount, maxRewardCount, importantItems);
+		}
+
+		::System::Void PlayScoreChange(::System::Boolean isScoreAdded, ::System::Int32 oldProgress, ::System::Int32 newProgress)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_PLAYSCORECHANGE_OFFSET))(this, isScoreAdded, oldProgress, newProgress);
+		}
+
+		::System::Void SetAccess(::System::Int32 access)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_SETACCESS_OFFSET))(this, access);
+		}
+
+		::System::Void SetArea(::System::Int32 area)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_SETAREA_OFFSET))(this, area);
+		}
+
+		::System::Void GoAccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER_GOACCESS_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _OnUIInit_b__8_0(::Struct_2_575273D27F02957E binderInfo)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::Struct_2_575273D27F02957E))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__8_0_OFFSET))(this, binderInfo);
+		}
+
+		::System::Void _OnUIOpen_b__10_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER__ONUIOPEN_B__10_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIOpen_b__10_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER__ONUIOPEN_B__10_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONRESULTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

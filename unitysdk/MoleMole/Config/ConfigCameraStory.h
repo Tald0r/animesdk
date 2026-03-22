@@ -1,0 +1,63 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlexBuffers/FlxMap.h"
+#include "unitysdk/FlexBuffers/FlxValue.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_236FD73ABC492E3F;
+namespace System { class String; }
+
+#define MOLEMOLE_CONFIG_CONFIGCAMERASTORY_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xCC8DEC0)
+#define MOLEMOLE_CONFIG_CONFIGCAMERASTORY_FROMFLX_OFFSET UNITYSDK_OFFSET(0xCC8C8A0)
+#define MOLEMOLE_CONFIG_CONFIGCAMERASTORY_INTERNALFROMBINARY_OFFSET UNITYSDK_OFFSET(0xCC8DF90)
+#define MOLEMOLE_CONFIG_CONFIGCAMERASTORY_INTERNALFROMFLX_OFFSET UNITYSDK_OFFSET(0xCC8C990)
+#define MOLEMOLE_CONFIG_CONFIGCAMERASTORY__CTOR_OFFSET UNITYSDK_OFFSET(0xCC8E450)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int ConfigCameraStory_TypeDefinitionIndex = 40958;
+
+	class ConfigCameraStory : public ::System::Object
+	{
+	public:
+		::System::String* EnterCurveKey; // 0x10
+		::System::String* ExitCurveKey; // 0x18
+		::System::Single TargetElevationRatio; // 0x20
+		::System::Single CameraFov; // 0x24
+		::System::Single MinElevationRatio; // 0x28
+		::System::Single AvaiableFanAngle; // 0x2C
+		::System::Single AvatarBackRotateAngle; // 0x30
+		::System::Single TargetBackRotateAngle; // 0x34
+		::System::Single EnterTime; // 0x38
+		::System::Single CameraYOffset; // 0x3C
+		::System::Single ViewDistance; // 0x40
+		::System::Single FollowPositionRatio; // 0x44
+		::System::Single MaxElevationRatio; // 0x48
+		::System::Single ExitTime; // 0x4C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGCAMERASTORY__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean FromFlx(::FlexBuffers::FlxValue node)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::FlexBuffers::FlxValue))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGCAMERASTORY_FROMFLX_OFFSET))(this, node);
+		}
+
+		::System::Boolean InternalFromFlx(::FlexBuffers::FlxMap node)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::FlexBuffers::FlxMap))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGCAMERASTORY_INTERNALFROMFLX_OFFSET))(this, node);
+		}
+
+		::System::Boolean FromBinary(::Class_1_236FD73ABC492E3F* byteArray, ::System::Int32 threadFlag)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGCAMERASTORY_FROMBINARY_OFFSET))(this, byteArray, threadFlag);
+		}
+
+		::System::Boolean InternalFromBinary(::Class_1_236FD73ABC492E3F* byteArray, ::System::Int32 threadFlag)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGCAMERASTORY_INTERNALFROMBINARY_OFFSET))(this, byteArray, threadFlag);
+		}
+	};
+}

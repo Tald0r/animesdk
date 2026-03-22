@@ -2,33 +2,75 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_466;
-class Class_0_16E4307DCC419505_471;
+class Class_0_16E4307DCC419505_367;
+class Class_0_16E4307DCC419505_488;
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class HashSet_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace System::Threading::Tasks { class Task; }
+namespace System::Threading::Tasks { template <typename T> class Task_1; }
 
-#define CLASS_1_642419429F509B0B_METHOD_1_B9F9F2016C1F4133_OFFSET UNITYSDK_OFFSET(0x9465920)
-#define CLASS_1_642419429F509B0B_METHOD_1_ED86792ABBF1C656_OFFSET UNITYSDK_OFFSET(0x9465E30)
-#define CLASS_1_642419429F509B0B__CTOR_OFFSET UNITYSDK_OFFSET(0x9465910)
+#define CLASS_1_642419429F509B0B_METHOD_1_0DA2FC17B2029CB3_OFFSET UNITYSDK_OFFSET(0x95532D0)
+#define CLASS_1_642419429F509B0B_METHOD_1_4EB141F196301833_OFFSET UNITYSDK_OFFSET(0x95531C0)
+#define CLASS_1_642419429F509B0B_METHOD_1_4FF52A67DA7128F8_OFFSET UNITYSDK_OFFSET(0x95529B0)
+#define CLASS_1_642419429F509B0B_METHOD_1_55B67978FC895086_OFFSET UNITYSDK_OFFSET(0x9552C10)
+#define CLASS_1_642419429F509B0B_METHOD_1_9CE3056B66B7573D_OFFSET UNITYSDK_OFFSET(0x95530B0)
+#define CLASS_1_642419429F509B0B_METHOD_1_D8ACA568D1D1A8FC_OFFSET UNITYSDK_OFFSET(0x95528B0)
+#define CLASS_1_642419429F509B0B_METHOD_1_E66ECF116ED8527B_OFFSET UNITYSDK_OFFSET(0x9552EE0)
+#define CLASS_1_642419429F509B0B_METHOD_1_F5FA400DB67E9A9B_OFFSET UNITYSDK_OFFSET(0x9552DC0)
+#define CLASS_1_642419429F509B0B__CTOR_OFFSET UNITYSDK_OFFSET(0x95528A0)
 
-inline static constexpr unsigned int Class_1_642419429F509B0B_TypeDefinitionIndex = 50935;
+inline static constexpr unsigned int Class_1_642419429F509B0B_TypeDefinitionIndex = 51750;
 
 class Class_1_642419429F509B0B : public ::System::Object
 {
 public:
-	::Class_0_16E4307DCC419505_471* Field_1_1; // 0x10
-	::Class_0_16E4307DCC419505_471* Field_1_0; // 0x18
+	::Class_0_16E4307DCC419505_488* Field_1_0; // 0x10
+	::Class_0_16E4307DCC419505_367* Field_1_1; // 0x18
 
-	::System::Void _ctor(::Class_0_16E4307DCC419505_471* a1, ::Class_0_16E4307DCC419505_471* a2)
+	::System::Void _ctor(::Class_0_16E4307DCC419505_488* a1, ::Class_0_16E4307DCC419505_367* a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_471*, ::Class_0_16E4307DCC419505_471*))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B__CTOR_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_488*, ::Class_0_16E4307DCC419505_367*))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B__CTOR_OFFSET))(this, a1, a2);
 	}
 
-	::System::Object* Method_1_B9F9F2016C1F4133()
+	::System::Threading::Tasks::Task_1<::System::Collections::Generic::List_1<::System::String*>*>* Method_1_D8ACA568D1D1A8FC()
 	{
-		return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B_METHOD_1_B9F9F2016C1F4133_OFFSET))(this);
+		return ((::System::Threading::Tasks::Task_1<::System::Collections::Generic::List_1<::System::String*>*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B_METHOD_1_D8ACA568D1D1A8FC_OFFSET))(this);
 	}
 
-	::System::Void Method_1_ED86792ABBF1C656(::Class_0_16E4307DCC419505_466* a1)
+	::System::Collections::Generic::List_1<::System::String*>* Method_1_4FF52A67DA7128F8()
 	{
-		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_466*))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B_METHOD_1_ED86792ABBF1C656_OFFSET))(this, a1);
+		return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B_METHOD_1_4FF52A67DA7128F8_OFFSET))(this);
+	}
+
+	::System::Threading::Tasks::Task* Method_1_55B67978FC895086(::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Object*>* a1)
+	{
+		return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Object*>*))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B_METHOD_1_55B67978FC895086_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_F5FA400DB67E9A9B(::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Object*>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Object*>*))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B_METHOD_1_F5FA400DB67E9A9B_OFFSET))(this, a1);
+	}
+
+	::System::Threading::Tasks::Task* Method_1_E66ECF116ED8527B(::System::String* a1)
+	{
+		return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B_METHOD_1_E66ECF116ED8527B_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_9CE3056B66B7573D(::System::String* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B_METHOD_1_9CE3056B66B7573D_OFFSET))(this, a1);
+	}
+
+	::System::Threading::Tasks::Task_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>*>* Method_1_4EB141F196301833(::System::Collections::Generic::HashSet_1<::System::String*>* a1)
+	{
+		return ((::System::Threading::Tasks::Task_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>*>*(*)(::PVOID, ::System::Collections::Generic::HashSet_1<::System::String*>*))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B_METHOD_1_4EB141F196301833_OFFSET))(this, a1);
+	}
+
+	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* Method_1_0DA2FC17B2029CB3(::System::Collections::Generic::HashSet_1<::System::String*>* a1)
+	{
+		return ((::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>*(*)(::PVOID, ::System::Collections::Generic::HashSet_1<::System::String*>*))((::PBYTE)hIl2Cpp + CLASS_1_642419429F509B0B_METHOD_1_0DA2FC17B2029CB3_OFFSET))(this, a1);
 	}
 };

@@ -1,0 +1,29 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace SQLite { class SQLiteConnectionWithLock; }
+
+#define SQLITE_SQLITEASYNCCONNECTION___C__DISPLAYCLASS50_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A067C40)
+#define SQLITE_SQLITEASYNCCONNECTION___C__DISPLAYCLASS50_0__INSERTASYNC_B__0_OFFSET UNITYSDK_OFFSET(0x1A06ADA0)
+
+namespace SQLite
+{
+	inline static constexpr unsigned int SQLiteAsyncConnection___c__DisplayClass50_0_TypeDefinitionIndex = 35285;
+
+	class SQLiteAsyncConnection___c__DisplayClass50_0 : public ::System::Object
+	{
+	public:
+		::System::Object* obj; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SQLITE_SQLITEASYNCCONNECTION___C__DISPLAYCLASS50_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Int32 _InsertAsync_b__0(::SQLite::SQLiteConnectionWithLock* conn)
+		{
+			return ((::System::Int32(*)(::PVOID, ::SQLite::SQLiteConnectionWithLock*))((::PBYTE)hIl2Cpp + SQLITE_SQLITEASYNCCONNECTION___C__DISPLAYCLASS50_0__INSERTASYNC_B__0_OFFSET))(this, conn);
+		}
+	};
+}

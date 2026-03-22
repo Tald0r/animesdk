@@ -1,0 +1,31 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Sirenix/OdinInspector/ButtonSizes.h"
+#include "unitysdk/Sirenix/OdinInspector/PropertyGroupAttribute.h"
+
+namespace System { class String; }
+
+#define SIRENIX_ODININSPECTOR_RESPONSIVEBUTTONGROUPATTRIBUTE_COMBINEVALUESWITH_OFFSET UNITYSDK_OFFSET(0x1AB09930)
+#define SIRENIX_ODININSPECTOR_RESPONSIVEBUTTONGROUPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB098B0)
+
+namespace Sirenix::OdinInspector
+{
+	inline static constexpr unsigned int ResponsiveButtonGroupAttribute_TypeDefinitionIndex = 7212;
+
+	class ResponsiveButtonGroupAttribute : public ::Sirenix::OdinInspector::PropertyGroupAttribute
+	{
+	public:
+		::Sirenix::OdinInspector::ButtonSizes DefaultButtonSize; // 0x30
+		::System::Boolean UniformLayout; // 0x34
+
+		::System::Void _ctor(::System::String* group)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_RESPONSIVEBUTTONGROUPATTRIBUTE__CTOR_OFFSET))(this, group);
+		}
+
+		::System::Void CombineValuesWith(::Sirenix::OdinInspector::PropertyGroupAttribute* other)
+		{
+			return ((::System::Void(*)(::PVOID, ::Sirenix::OdinInspector::PropertyGroupAttribute*))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_RESPONSIVEBUTTONGROUPATTRIBUTE_COMBINEVALUESWITH_OFFSET))(this, other);
+		}
+	};
+}

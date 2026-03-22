@@ -1,10 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/TeamType.h"
 
-namespace RPG::GameCore { class GameEntity; }
+namespace PipelineCamera { class TimeBasedAlphaGenerator; }
+namespace System { template <typename T> class Func_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_397_TypeDefinitionIndex = 44205;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_397_TypeDefinitionIndex = 45366;
 
 class Class_0_16E4307DCC419505_397
 {

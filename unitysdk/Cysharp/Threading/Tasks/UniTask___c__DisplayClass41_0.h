@@ -1,0 +1,30 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTaskVoid.h"
+#include "unitysdk/System/Object.h"
+
+namespace System { template <typename T> class Func_1; }
+
+#define CYSHARP_THREADING_TASKS_UNITASK___C__DISPLAYCLASS41_0__ACTION_B__0_OFFSET UNITYSDK_OFFSET(0x1AFA3880)
+#define CYSHARP_THREADING_TASKS_UNITASK___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFA3870)
+
+namespace Cysharp::Threading::Tasks
+{
+	inline static constexpr unsigned int UniTask___c__DisplayClass41_0_TypeDefinitionIndex = 27153;
+
+	class UniTask___c__DisplayClass41_0 : public ::System::Object
+	{
+	public:
+		::System::Func_1<::Cysharp::Threading::Tasks::UniTaskVoid>* asyncAction; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASK___C__DISPLAYCLASS41_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _Action_b__0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASK___C__DISPLAYCLASS41_0__ACTION_B__0_OFFSET))(this);
+		}
+	};
+}

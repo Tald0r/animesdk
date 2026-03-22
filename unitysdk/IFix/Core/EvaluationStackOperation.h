@@ -4,22 +4,21 @@
 #include "unitysdk/System/Object.h"
 
 namespace IFix::Core { class NewFieldInfo; }
-namespace IFix::Core { class TypeInfo; }
 namespace IFix::Core { class VirtualMachine; }
 namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Reflection { class FieldInfo; }
 
-#define IFIX_CORE_EVALUATIONSTACKOPERATION_MGET_OFFSET UNITYSDK_OFFSET(0x1543A9F0)
-#define IFIX_CORE_EVALUATIONSTACKOPERATION_MSET_OFFSET UNITYSDK_OFFSET(0x1543AE80)
-#define IFIX_CORE_EVALUATIONSTACKOPERATION_PUSHOBJECT_OFFSET UNITYSDK_OFFSET(0x15438520)
-#define IFIX_CORE_EVALUATIONSTACKOPERATION_TOOBJECT_OFFSET UNITYSDK_OFFSET(0x15437A70)
-#define IFIX_CORE_EVALUATIONSTACKOPERATION_UNBOXPRIMITIVE_OFFSET UNITYSDK_OFFSET(0x1543A3E0)
-#define IFIX_CORE_EVALUATIONSTACKOPERATION_UPDATEREFERENCE_OFFSET UNITYSDK_OFFSET(0x15439A10)
+#define IFIX_CORE_EVALUATIONSTACKOPERATION_MGET_OFFSET UNITYSDK_OFFSET(0x19912910)
+#define IFIX_CORE_EVALUATIONSTACKOPERATION_MSET_OFFSET UNITYSDK_OFFSET(0x19912DA0)
+#define IFIX_CORE_EVALUATIONSTACKOPERATION_PUSHOBJECT_OFFSET UNITYSDK_OFFSET(0x19910530)
+#define IFIX_CORE_EVALUATIONSTACKOPERATION_TOOBJECT_OFFSET UNITYSDK_OFFSET(0x1990FA80)
+#define IFIX_CORE_EVALUATIONSTACKOPERATION_UNBOXPRIMITIVE_OFFSET UNITYSDK_OFFSET(0x19912330)
+#define IFIX_CORE_EVALUATIONSTACKOPERATION_UPDATEREFERENCE_OFFSET UNITYSDK_OFFSET(0x19911AB0)
 
 namespace IFix::Core
 {
-	inline static constexpr unsigned int EvaluationStackOperation_TypeDefinitionIndex = 9343;
+	inline static constexpr unsigned int EvaluationStackOperation_TypeDefinitionIndex = 6807;
 
 	class EvaluationStackOperation : public ::System::Object
 	{
@@ -44,9 +43,9 @@ namespace IFix::Core
 			return ((::System::Object*(*)(::IFix::Core::Value*, ::IFix::Core::Value*, ::Il2CppArray<::System::Object*>*, ::System::Type*, ::IFix::Core::VirtualMachine*, ::System::Boolean))((::PBYTE)hIl2Cpp + IFIX_CORE_EVALUATIONSTACKOPERATION_TOOBJECT_OFFSET))(evaluationStackBase, evaluationStackPointer, managedStack, type, virtualMachine, valueTypeClone);
 		}
 
-		static ::System::Void PushObject(::IFix::Core::Value* evaluationStackBase, ::IFix::Core::Value* evaluationStackPointer, ::Il2CppArray<::System::Object*>* managedStack, ::System::Object* obj, ::System::Type* type, ::IFix::Core::TypeInfo* info)
+		static ::System::Void PushObject(::IFix::Core::Value* evaluationStackBase, ::IFix::Core::Value* evaluationStackPointer, ::Il2CppArray<::System::Object*>* managedStack, ::System::Object* obj, ::System::Type* type)
 		{
-			return ((::System::Void(*)(::IFix::Core::Value*, ::IFix::Core::Value*, ::Il2CppArray<::System::Object*>*, ::System::Object*, ::System::Type*, ::IFix::Core::TypeInfo*))((::PBYTE)hIl2Cpp + IFIX_CORE_EVALUATIONSTACKOPERATION_PUSHOBJECT_OFFSET))(evaluationStackBase, evaluationStackPointer, managedStack, obj, type, info);
+			return ((::System::Void(*)(::IFix::Core::Value*, ::IFix::Core::Value*, ::Il2CppArray<::System::Object*>*, ::System::Object*, ::System::Type*))((::PBYTE)hIl2Cpp + IFIX_CORE_EVALUATIONSTACKOPERATION_PUSHOBJECT_OFFSET))(evaluationStackBase, evaluationStackPointer, managedStack, obj, type);
 		}
 
 		static ::System::Void UpdateReference(::IFix::Core::Value* evaluationStackBase, ::IFix::Core::Value* evaluationStackPointer, ::Il2CppArray<::System::Object*>* managedStack, ::System::Object* obj, ::IFix::Core::VirtualMachine* virtualMachine, ::System::Type* type)

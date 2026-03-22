@@ -1,0 +1,14 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace Share
+{
+	inline static constexpr unsigned int EBattleEventType_TypeDefinitionIndex = 12142;
+
+	enum class EBattleEventType : ::System::Int16
+	{
+		Elite = 1,
+		Boss = 2,
+		Normal = 0,
+	};
+}

@@ -1,0 +1,41 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_F57C3EEEB03201AF.h"
+
+template <typename T> class Class_0_16E4307DCC419505_103;
+
+#define MOLEMOLE_UIFLOWERMAINLISTTAGWIDGETCONTROLLER_VIEWMODEL_GET_VALUE_OFFSET UNITYSDK_OFFSET(0xD544570)
+#define MOLEMOLE_UIFLOWERMAINLISTTAGWIDGETCONTROLLER_VIEWMODEL_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0xD544590)
+#define MOLEMOLE_UIFLOWERMAINLISTTAGWIDGETCONTROLLER_VIEWMODEL_SET_VALUE_OFFSET UNITYSDK_OFFSET(0xD544580)
+#define MOLEMOLE_UIFLOWERMAINLISTTAGWIDGETCONTROLLER_VIEWMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0xD544610)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFlowerMainListTagWidgetController_ViewModel_TypeDefinitionIndex = 48541;
+
+	class UIFlowerMainListTagWidgetController_ViewModel : public ::Class_1_F57C3EEEB03201AF
+	{
+	public:
+		::Class_0_16E4307DCC419505_103<::System::Int32>* _Value_k__BackingField; // 0x60
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINLISTTAGWIDGETCONTROLLER_VIEWMODEL__CTOR_OFFSET))(this);
+		}
+
+		::Class_0_16E4307DCC419505_103<::System::Int32>* get_Value()
+		{
+			return ((::Class_0_16E4307DCC419505_103<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINLISTTAGWIDGETCONTROLLER_VIEWMODEL_GET_VALUE_OFFSET))(this);
+		}
+
+		::System::Void set_Value(::Class_0_16E4307DCC419505_103<::System::Int32>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_103<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINLISTTAGWIDGETCONTROLLER_VIEWMODEL_SET_VALUE_OFFSET))(this, value);
+		}
+
+		::System::Void OnCreateProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINLISTTAGWIDGETCONTROLLER_VIEWMODEL_ONCREATEPROPERTY_OFFSET))(this);
+		}
+	};
+}

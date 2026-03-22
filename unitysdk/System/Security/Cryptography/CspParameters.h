@@ -5,16 +5,15 @@
 
 namespace System { class String; }
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS_GET_FLAGS_OFFSET UNITYSDK_OFFSET(0x15D5C6D0)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS_SET_FLAGS_OFFSET UNITYSDK_OFFSET(0x15D5C6E0)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15D5C850)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15D5C800)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15D5C8A0)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS__CTOR_OFFSET UNITYSDK_OFFSET(0x15D5C7B0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS_SET_FLAGS_OFFSET UNITYSDK_OFFSET(0x19890260)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19890350)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS__CTOR_2_OFFSET UNITYSDK_OFFSET(0x19890330)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS__CTOR_3_OFFSET UNITYSDK_OFFSET(0x19890370)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS__CTOR_OFFSET UNITYSDK_OFFSET(0x19890310)
 
 namespace System::Security::Cryptography
 {
-	inline static constexpr unsigned int CspParameters_TypeDefinitionIndex = 997;
+	inline static constexpr unsigned int CspParameters_TypeDefinitionIndex = 1050;
 
 	class CspParameters : public ::System::Object
 	{
@@ -43,11 +42,6 @@ namespace System::Security::Cryptography
 		::System::Void _ctor_3(::System::Int32 providerType, ::System::String* providerName, ::System::String* keyContainerName, ::System::Security::Cryptography::CspProviderFlags flags)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::String*, ::System::String*, ::System::Security::Cryptography::CspProviderFlags))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS__CTOR_3_OFFSET))(this, providerType, providerName, keyContainerName, flags);
-		}
-
-		::System::Security::Cryptography::CspProviderFlags get_Flags()
-		{
-			return ((::System::Security::Cryptography::CspProviderFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_CSPPARAMETERS_GET_FLAGS_OFFSET))(this);
 		}
 
 		::System::Void set_Flags(::System::Security::Cryptography::CspProviderFlags value)

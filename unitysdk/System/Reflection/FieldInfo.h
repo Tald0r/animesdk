@@ -13,138 +13,144 @@ namespace System::Globalization { class CultureInfo; }
 namespace System::Reflection { class Binder; }
 namespace System::Runtime::InteropServices { class MarshalAsAttribute; }
 
-#define SYSTEM_REFLECTION_FIELDINFO_EQUALS_OFFSET UNITYSDK_OFFSET(0x15CC02C0)
-#define SYSTEM_REFLECTION_FIELDINFO_GETFIELDFROMHANDLE_1_OFFSET UNITYSDK_OFFSET(0x15CBFE90)
-#define SYSTEM_REFLECTION_FIELDINFO_GETFIELDFROMHANDLE_OFFSET UNITYSDK_OFFSET(0x15CBFE10)
-#define SYSTEM_REFLECTION_FIELDINFO_GETFIELDOFFSET_OFFSET UNITYSDK_OFFSET(0x15CBFFC0)
-#define SYSTEM_REFLECTION_FIELDINFO_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x15CC02D0)
-#define SYSTEM_REFLECTION_FIELDINFO_GETPSEUDOCUSTOMATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x15CC0080)
-#define SYSTEM_REFLECTION_FIELDINFO_GETRAWCONSTANTVALUE_OFFSET UNITYSDK_OFFSET(0x15CC0270)
-#define SYSTEM_REFLECTION_FIELDINFO_GET_ISINITONLY_OFFSET UNITYSDK_OFFSET(0x15CBFCE0)
-#define SYSTEM_REFLECTION_FIELDINFO_GET_ISLITERAL_OFFSET UNITYSDK_OFFSET(0x15CBFCA0)
-#define SYSTEM_REFLECTION_FIELDINFO_GET_ISNOTSERIALIZED_OFFSET UNITYSDK_OFFSET(0x15CBFD40)
-#define SYSTEM_REFLECTION_FIELDINFO_GET_ISPRIVATE_OFFSET UNITYSDK_OFFSET(0x15CBFD20)
-#define SYSTEM_REFLECTION_FIELDINFO_GET_ISPUBLIC_OFFSET UNITYSDK_OFFSET(0x15CBFD00)
-#define SYSTEM_REFLECTION_FIELDINFO_GET_ISSTATIC_OFFSET UNITYSDK_OFFSET(0x15CBFCC0)
-#define SYSTEM_REFLECTION_FIELDINFO_GET_MARSHAL_INFO_OFFSET UNITYSDK_OFFSET(0x15CC0070)
-#define SYSTEM_REFLECTION_FIELDINFO_GET_MEMBERTYPE_OFFSET UNITYSDK_OFFSET(0x15CBFC90)
-#define SYSTEM_REFLECTION_FIELDINFO_INTERNAL_FROM_HANDLE_TYPE_OFFSET UNITYSDK_OFFSET(0x15CBFD90)
-#define SYSTEM_REFLECTION_FIELDINFO_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x15CBFF90)
-#define SYSTEM_REFLECTION_FIELDINFO_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x15CC02E0)
-#define SYSTEM_REFLECTION_FIELDINFO_SETVALUEDIRECT_OFFSET UNITYSDK_OFFSET(0x15CC0010)
-#define SYSTEM_REFLECTION_FIELDINFO_SETVALUE_OFFSET UNITYSDK_OFFSET(0x15CBFD60)
-#define SYSTEM_REFLECTION_FIELDINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x15CBFC80)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_083577508CCFDAF3_OFFSET UNITYSDK_OFFSET(0x188B1A90)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_112470CB691FDA03_OFFSET UNITYSDK_OFFSET(0x188B1840)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_174799846CA15A4F_OFFSET UNITYSDK_OFFSET(0x188B1530)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_2F6219C4A95C40F8_1_OFFSET UNITYSDK_OFFSET(0x188B1AB0)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_2F6219C4A95C40F8_OFFSET UNITYSDK_OFFSET(0x188B1760)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_33E1CA6DAAD71527_OFFSET UNITYSDK_OFFSET(0x188B1A40)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_49E3FA61F17A6A16_OFFSET UNITYSDK_OFFSET(0x188B1440)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_4AF4168DFA35476A_OFFSET UNITYSDK_OFFSET(0x188B1790)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_683AB4C0BF80802E_OFFSET UNITYSDK_OFFSET(0x188B15E0)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_832295EC279E5994_OFFSET UNITYSDK_OFFSET(0x188B1430)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_A285420CEEE763C4_OFFSET UNITYSDK_OFFSET(0x188B1850)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_BDBBE7F5A62DA389_OFFSET UNITYSDK_OFFSET(0x188B1560)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_C74CF020AA42ED85_OFFSET UNITYSDK_OFFSET(0x188B1AA0)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_D1930F218259A7F2_OFFSET UNITYSDK_OFFSET(0x188B1660)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_E291BBBD9ADF338F_OFFSET UNITYSDK_OFFSET(0x188B17E0)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_1_OFFSET UNITYSDK_OFFSET(0x188B1470)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_2_OFFSET UNITYSDK_OFFSET(0x188B1490)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_3_OFFSET UNITYSDK_OFFSET(0x188B14B0)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_4_OFFSET UNITYSDK_OFFSET(0x188B14D0)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_5_OFFSET UNITYSDK_OFFSET(0x188B14F0)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_6_OFFSET UNITYSDK_OFFSET(0x188B1510)
+#define SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x188B1450)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int FieldInfo_TypeDefinitionIndex = 605;
+	inline static constexpr unsigned int FieldInfo_TypeDefinitionIndex = 579;
 
 	class FieldInfo : public ::System::Reflection::MemberInfo
 	{
 	public:
-		::System::Void _ctor()
+		::System::Void Method_2_832295EC279E5994()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_832295EC279E5994_OFFSET))(this);
 		}
 
-		::System::Reflection::MemberTypes get_MemberType()
+		::System::Reflection::MemberTypes Method_2_49E3FA61F17A6A16()
 		{
-			return ((::System::Reflection::MemberTypes(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GET_MEMBERTYPE_OFFSET))(this);
+			return ((::System::Reflection::MemberTypes(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_49E3FA61F17A6A16_OFFSET))(this);
 		}
 
-		::System::Boolean get_IsLiteral()
+		::System::Boolean Method_2_F0088C88851A7DFB()
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GET_ISLITERAL_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_OFFSET))(this);
 		}
 
-		::System::Boolean get_IsStatic()
+		::System::Boolean Method_2_F0088C88851A7DFB_1()
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GET_ISSTATIC_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_1_OFFSET))(this);
 		}
 
-		::System::Boolean get_IsInitOnly()
+		::System::Boolean Method_2_F0088C88851A7DFB_2()
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GET_ISINITONLY_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_2_OFFSET))(this);
 		}
 
-		::System::Boolean get_IsPublic()
+		::System::Boolean Method_2_F0088C88851A7DFB_3()
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GET_ISPUBLIC_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_3_OFFSET))(this);
 		}
 
-		::System::Boolean get_IsPrivate()
+		::System::Boolean Method_2_F0088C88851A7DFB_4()
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GET_ISPRIVATE_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_4_OFFSET))(this);
 		}
 
-		::System::Boolean get_IsNotSerialized()
+		::System::Boolean Method_2_F0088C88851A7DFB_5()
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GET_ISNOTSERIALIZED_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_5_OFFSET))(this);
 		}
 
-		::System::Void SetValue(::System::Object* obj, ::System::Object* value)
+		::System::Boolean Method_2_F0088C88851A7DFB_6()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_SETVALUE_OFFSET))(this, obj, value);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_F0088C88851A7DFB_6_OFFSET))(this);
 		}
 
-		static ::System::Reflection::FieldInfo* internal_from_handle_type(::System::IntPtr field_handle, ::System::IntPtr type_handle)
+		::System::Void Method_2_174799846CA15A4F(::System::Object* obj, ::System::Object* value)
 		{
-			return ((::System::Reflection::FieldInfo*(*)(::System::IntPtr, ::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_INTERNAL_FROM_HANDLE_TYPE_OFFSET))(field_handle, type_handle);
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_174799846CA15A4F_OFFSET))(this, obj, value);
 		}
 
-		static ::System::Reflection::FieldInfo* GetFieldFromHandle(::System::RuntimeFieldHandle handle)
+		static ::System::Reflection::FieldInfo* Method_2_BDBBE7F5A62DA389(::System::IntPtr field_handle, ::System::IntPtr type_handle)
 		{
-			return ((::System::Reflection::FieldInfo*(*)(::System::RuntimeFieldHandle))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GETFIELDFROMHANDLE_OFFSET))(handle);
+			return ((::System::Reflection::FieldInfo*(*)(::System::IntPtr, ::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_BDBBE7F5A62DA389_OFFSET))(field_handle, type_handle);
 		}
 
-		static ::System::Reflection::FieldInfo* GetFieldFromHandle_1(::System::RuntimeFieldHandle handle, ::System::RuntimeTypeHandle declaringType)
+		static ::System::Reflection::FieldInfo* Method_2_683AB4C0BF80802E(::System::RuntimeFieldHandle handle)
 		{
-			return ((::System::Reflection::FieldInfo*(*)(::System::RuntimeFieldHandle, ::System::RuntimeTypeHandle))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GETFIELDFROMHANDLE_1_OFFSET))(handle, declaringType);
+			return ((::System::Reflection::FieldInfo*(*)(::System::RuntimeFieldHandle))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_683AB4C0BF80802E_OFFSET))(handle);
 		}
 
-		::System::Int32 GetFieldOffset()
+		static ::System::Reflection::FieldInfo* Method_2_D1930F218259A7F2(::System::RuntimeFieldHandle handle, ::System::RuntimeTypeHandle declaringType)
 		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GETFIELDOFFSET_OFFSET))(this);
+			return ((::System::Reflection::FieldInfo*(*)(::System::RuntimeFieldHandle, ::System::RuntimeTypeHandle))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_D1930F218259A7F2_OFFSET))(handle, declaringType);
 		}
 
-		::System::Void SetValueDirect(::System::TypedReference obj, ::System::Object* value)
+		::System::Int32 Method_2_4AF4168DFA35476A()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::TypedReference, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_SETVALUEDIRECT_OFFSET))(this, obj, value);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_4AF4168DFA35476A_OFFSET))(this);
 		}
 
-		::System::Runtime::InteropServices::MarshalAsAttribute* get_marshal_info()
+		::System::Void Method_2_E291BBBD9ADF338F(::System::TypedReference obj, ::System::Object* value)
 		{
-			return ((::System::Runtime::InteropServices::MarshalAsAttribute*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GET_MARSHAL_INFO_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::TypedReference, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_E291BBBD9ADF338F_OFFSET))(this, obj, value);
 		}
 
-		::Il2CppArray<::System::Object*>* GetPseudoCustomAttributes()
+		::System::Runtime::InteropServices::MarshalAsAttribute* Method_2_112470CB691FDA03()
 		{
-			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GETPSEUDOCUSTOMATTRIBUTES_OFFSET))(this);
+			return ((::System::Runtime::InteropServices::MarshalAsAttribute*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_112470CB691FDA03_OFFSET))(this);
 		}
 
-		::System::Object* GetRawConstantValue()
+		::Il2CppArray<::System::Object*>* Method_2_A285420CEEE763C4()
 		{
-			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GETRAWCONSTANTVALUE_OFFSET))(this);
+			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_A285420CEEE763C4_OFFSET))(this);
 		}
 
-		::System::Boolean Equals(::System::Object* obj)
+		::System::Object* Method_2_33E1CA6DAAD71527()
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_EQUALS_OFFSET))(this, obj);
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_33E1CA6DAAD71527_OFFSET))(this);
 		}
 
-		::System::Int32 GetHashCode()
+		::System::Boolean Method_2_083577508CCFDAF3(::System::Object* obj)
 		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_GETHASHCODE_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_083577508CCFDAF3_OFFSET))(this, obj);
 		}
 
-		static ::System::Boolean op_Equality(::System::Reflection::FieldInfo* left, ::System::Reflection::FieldInfo* right)
+		::System::Int32 Method_2_C74CF020AA42ED85()
 		{
-			return ((::System::Boolean(*)(::System::Reflection::FieldInfo*, ::System::Reflection::FieldInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_OP_EQUALITY_OFFSET))(left, right);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_C74CF020AA42ED85_OFFSET))(this);
 		}
 
-		static ::System::Boolean op_Inequality(::System::Reflection::FieldInfo* left, ::System::Reflection::FieldInfo* right)
+		static ::System::Boolean Method_2_2F6219C4A95C40F8(::System::Reflection::FieldInfo* left, ::System::Reflection::FieldInfo* right)
 		{
-			return ((::System::Boolean(*)(::System::Reflection::FieldInfo*, ::System::Reflection::FieldInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_OP_INEQUALITY_OFFSET))(left, right);
+			return ((::System::Boolean(*)(::System::Reflection::FieldInfo*, ::System::Reflection::FieldInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_2F6219C4A95C40F8_OFFSET))(left, right);
+		}
+
+		static ::System::Boolean Method_2_2F6219C4A95C40F8_1(::System::Reflection::FieldInfo* left, ::System::Reflection::FieldInfo* right)
+		{
+			return ((::System::Boolean(*)(::System::Reflection::FieldInfo*, ::System::Reflection::FieldInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_FIELDINFO_METHOD_2_2F6219C4A95C40F8_1_OFFSET))(left, right);
 		}
 	};
 }

@@ -1,0 +1,136 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_1DE31F486C9C83AD;
+class Class_2_60638234271CCDB8_106;
+class Class_2_C2B4B123B5A9B78A;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIBangbooInfoBasicAttributeRowWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace System { template <typename T> class Func_1; }
+
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_CLICKPROPERTY_OFFSET UNITYSDK_OFFSET(0xD6E1010)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xD6E0160)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_ONCLICKBANGBOO_OFFSET UNITYSDK_OFFSET(0xD6E11E0)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD6E0170)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xD6E0B40)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD6E0E50)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD6E0210)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_REFRESHBUDDYPROPERTYVIEW_OFFSET UNITYSDK_OFFSET(0xD6E1A10)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_REFRESHBUDDYRT_OFFSET UNITYSDK_OFFSET(0xD6E1E90)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xD6E0550)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_RELEASEUIMODELS_OFFSET UNITYSDK_OFFSET(0xD6E0F80)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD6E2220)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER__ONUIINIT_B__4_0_OFFSET UNITYSDK_OFFSET(0xD6E2230)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER__REFRESHBUDDYRT_B__11_0_OFFSET UNITYSDK_OFFSET(0xD6E22B0)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD6E2340)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xD6E23B0)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD6E2410)
+#define MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD6E2420)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UITowerDefenseBangbooPageController_TypeDefinitionIndex = 56131;
+
+	class UITowerDefenseBangbooPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_60638234271CCDB8_106* _view; // 0x2F8
+		::System::Int32 towerDefenseBuddyID; // 0x300
+		::Class_2_1DE31F486C9C83AD* towerModel; // 0x308
+		::Il2CppArray<::MoleMole::UIBangbooInfoBasicAttributeRowWidgetController*>* _propertyViewItems; // 0x310
+		::Class_2_C2B4B123B5A9B78A* _buddyUnit; // 0x318
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void ClickProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_CLICKPROPERTY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshBuddyPropertyView(::System::Int32 towerDefenseBuddyID, ::System::Int32 buddyid)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_REFRESHBUDDYPROPERTYVIEW_OFFSET))(this, towerDefenseBuddyID, buddyid);
+		}
+
+		::System::Void OnClickBangboo(::System::Int32 towerDefenseID, ::System::Int32 bangbooid, ::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_ONCLICKBANGBOO_OFFSET))(this, towerDefenseID, bangbooid, index);
+		}
+
+		::System::Void RefreshBuddyRT(::System::Int32 buddyID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_REFRESHBUDDYRT_OFFSET))(this, buddyID);
+		}
+
+		::System::Void ReleaseUIModels()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER_RELEASEUIMODELS_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _OnUIInit_b__4_0(::System::Func_1<::MoleMole::UIControlReference*>* reference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER__ONUIINIT_B__4_0_OFFSET))(this, reference);
+		}
+
+		::System::Void _RefreshBuddyRT_b__11_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER__REFRESHBUDDYRT_B__11_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEBANGBOOPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

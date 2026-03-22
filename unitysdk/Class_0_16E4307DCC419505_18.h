@@ -1,11 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace RPG::GameCore { class AttachPointEffectAdaptionConfig; }
-namespace RPG::GameCore { class EffectAdaptionConfig; }
 namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_18_TypeDefinitionIndex = 22098;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_18_TypeDefinitionIndex = 10988;
 
 class Class_0_16E4307DCC419505_18
 {

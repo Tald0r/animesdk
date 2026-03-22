@@ -1,0 +1,143 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_A2F24078995C103E;
+class Class_2_BE69379A14124A86_2;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x1A467890)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ISCURUNLOCK_OFFSET UNITYSDK_OFFSET(0x1A4688E0)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x1A467B20)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x1A467C20)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONPLAYERREADY_OFFSET UNITYSDK_OFFSET(0x1A468810)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x1A467BB0)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x1A4678A0)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x1A4678F0)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_REFRESHDETAIL_OFFSET UNITYSDK_OFFSET(0x1A468610)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_SWITCHINFO_OFFSET UNITYSDK_OFFSET(0x1A4682E0)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_TRYSTARTCOUNTDOWN_OFFSET UNITYSDK_OFFSET(0x1A4681E0)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0x1A468420)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A468A50)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER__TRYSTARTCOUNTDOWN_B__20_0_OFFSET UNITYSDK_OFFSET(0x1A468A60)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x1A468A70)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x1A468AE0)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x1A468B10)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x1A468B20)
+#define MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x1A468B30)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBrRoleSelectChildWindowController_TypeDefinitionIndex = 80191;
+
+	class UIBrRoleSelectChildWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_BE69379A14124A86_2* _view; // 0x2F8
+		::Class_2_A2F24078995C103E* gameLogic; // 0x300
+		::System::Single changeCD; // 0x308
+		::System::Single curChangeCD; // 0x30C
+		::System::Single startingCD; // 0x310
+		::System::Boolean isReady; // 0x314
+		::System::Int32 nxtBallId; // 0x318
+		::System::Boolean inited; // 0x31C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void SwitchInfo(::System::Boolean fromLeft)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_SWITCHINFO_OFFSET))(this, fromLeft);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshDetail(::System::Int32 ballId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_REFRESHDETAIL_OFFSET))(this, ballId);
+		}
+
+		::System::Void OnPlayerReady()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ONPLAYERREADY_OFFSET))(this);
+		}
+
+		::System::Boolean IsCurUnlock()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_ISCURUNLOCK_OFFSET))(this);
+		}
+
+		::System::Boolean TryStartCountDown()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER_TRYSTARTCOUNTDOWN_OFFSET))(this);
+		}
+
+		::System::Void _TryStartCountDown_b__20_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER__TRYSTARTCOUNTDOWN_B__20_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBRROLESELECTCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

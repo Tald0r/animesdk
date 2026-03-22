@@ -1,0 +1,126 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+#include "unitysdk/UnityEngine/Quaternion.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+namespace System { class Object; }
+namespace System { class String; }
+namespace UnityEngine { class Transform; }
+
+#define STRUCT_2_FC595D1A561D8C6F_1_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x37C170)
+#define STRUCT_2_FC595D1A561D8C6F_1_EQUALS_OFFSET UNITYSDK_OFFSET(0x37BFC0)
+#define STRUCT_2_FC595D1A561D8C6F_1_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x37C180)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_06CC5EC577A78E36_OFFSET UNITYSDK_OFFSET(0x37C280)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_35EA095E1AFDD9C8_OFFSET UNITYSDK_OFFSET(0x37C7F0)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_413F493333BF3391_OFFSET UNITYSDK_OFFSET(0x37BFB0)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_6D0360BD23602584_OFFSET UNITYSDK_OFFSET(0x37CA20)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_70482F4FFB864C6A_OFFSET UNITYSDK_OFFSET(0x37C350)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_95780ED94B90ED36_OFFSET UNITYSDK_OFFSET(0x37C580)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_A4A4A05F8AF9A944_OFFSET UNITYSDK_OFFSET(0xA131E70)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_B1B19EDBCEB96C7F_1_OFFSET UNITYSDK_OFFSET(0xA132760)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_B1B19EDBCEB96C7F_OFFSET UNITYSDK_OFFSET(0xA1324A0)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_B8DDB8B6AA8ACDA5_OFFSET UNITYSDK_OFFSET(0x37C410)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_CD3C4CC78D03EE24_1_OFFSET UNITYSDK_OFFSET(0x37C870)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_CD3C4CC78D03EE24_OFFSET UNITYSDK_OFFSET(0x37C5F0)
+#define STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_D37FAD0A6AA04B25_OFFSET UNITYSDK_OFFSET(0x31DD30)
+#define STRUCT_2_FC595D1A561D8C6F_1_TOSTRING_OFFSET UNITYSDK_OFFSET(0x37C270)
+#define STRUCT_2_FC595D1A561D8C6F_1__CTOR_OFFSET UNITYSDK_OFFSET(0x362600)
+
+inline static constexpr unsigned int Struct_2_FC595D1A561D8C6F_1_TypeDefinitionIndex = 75656;
+
+struct alignas(4) Struct_2_FC595D1A561D8C6F_1
+{
+	::UnityEngine::Vector3 Field_2_0; // 0x10
+	::UnityEngine::Quaternion Field_2_1; // 0x1C
+
+	::System::Void _ctor(::UnityEngine::Vector3 a1, ::UnityEngine::Quaternion a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1__CTOR_OFFSET))(this, a1, a2);
+	}
+
+	::UnityEngine::Vector3 Method_2_D37FAD0A6AA04B25()
+	{
+		return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_D37FAD0A6AA04B25_OFFSET))(this);
+	}
+
+	::UnityEngine::Quaternion Method_2_413F493333BF3391()
+	{
+		return ((::UnityEngine::Quaternion(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_413F493333BF3391_OFFSET))(this);
+	}
+
+	::System::Boolean Equals(::Struct_2_FC595D1A561D8C6F_1 a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Struct_2_FC595D1A561D8C6F_1))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_EQUALS_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Equals_1(::System::Object* a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_EQUALS_1_OFFSET))(this, a1);
+	}
+
+	::System::Int32 GetHashCode()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_GETHASHCODE_OFFSET))(this);
+	}
+
+	::System::String* ToString()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_TOSTRING_OFFSET))(this);
+	}
+
+	::Struct_2_FC595D1A561D8C6F_1 Method_2_06CC5EC577A78E36(::UnityEngine::Vector3 a1)
+	{
+		return ((::Struct_2_FC595D1A561D8C6F_1(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_06CC5EC577A78E36_OFFSET))(this, a1);
+	}
+
+	::Struct_2_FC595D1A561D8C6F_1 Method_2_70482F4FFB864C6A(::UnityEngine::Quaternion a1)
+	{
+		return ((::Struct_2_FC595D1A561D8C6F_1(*)(::PVOID, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_70482F4FFB864C6A_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_B8DDB8B6AA8ACDA5(::UnityEngine::Transform* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_B8DDB8B6AA8ACDA5_OFFSET))(this, a1);
+	}
+
+	static ::Struct_2_FC595D1A561D8C6F_1 Method_2_A4A4A05F8AF9A944(::UnityEngine::Transform* a1)
+	{
+		return ((::Struct_2_FC595D1A561D8C6F_1(*)(::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_A4A4A05F8AF9A944_OFFSET))(a1);
+	}
+
+	::System::Int32 Method_2_95780ED94B90ED36()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_95780ED94B90ED36_OFFSET))(this);
+	}
+
+	::UnityEngine::Vector3 Method_2_CD3C4CC78D03EE24(::UnityEngine::Vector3& a1)
+	{
+		return ((::UnityEngine::Vector3(*)(::PVOID, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_CD3C4CC78D03EE24_OFFSET))(this, a1);
+	}
+
+	::System::String* Method_2_35EA095E1AFDD9C8()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_35EA095E1AFDD9C8_OFFSET))(this);
+	}
+
+	::UnityEngine::Vector3 Method_2_CD3C4CC78D03EE24_1(::UnityEngine::Vector3& a1)
+	{
+		return ((::UnityEngine::Vector3(*)(::PVOID, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_CD3C4CC78D03EE24_1_OFFSET))(this, a1);
+	}
+
+	static ::System::Boolean Method_2_B1B19EDBCEB96C7F(::Struct_2_FC595D1A561D8C6F_1 a1, ::Struct_2_FC595D1A561D8C6F_1 a2)
+	{
+		return ((::System::Boolean(*)(::Struct_2_FC595D1A561D8C6F_1, ::Struct_2_FC595D1A561D8C6F_1))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_B1B19EDBCEB96C7F_OFFSET))(a1, a2);
+	}
+
+	::System::Boolean Method_2_6D0360BD23602584(::System::Object* a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_6D0360BD23602584_OFFSET))(this, a1);
+	}
+
+	static ::System::Boolean Method_2_B1B19EDBCEB96C7F_1(::Struct_2_FC595D1A561D8C6F_1 a1, ::Struct_2_FC595D1A561D8C6F_1 a2)
+	{
+		return ((::System::Boolean(*)(::Struct_2_FC595D1A561D8C6F_1, ::Struct_2_FC595D1A561D8C6F_1))((::PBYTE)hIl2Cpp + STRUCT_2_FC595D1A561D8C6F_1_METHOD_2_B1B19EDBCEB96C7F_1_OFFSET))(a1, a2);
+	}
+};

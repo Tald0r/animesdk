@@ -1,0 +1,78 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ChessEntity.h"
+
+namespace MoleMole { class ConfigChessEntity; }
+namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
+
+#define MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY_ONADDINTERNAL_OFFSET UNITYSDK_OFFSET(0xE8339C0)
+#define MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY_ONINITINTERNAL_OFFSET UNITYSDK_OFFSET(0xE833900)
+#define MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY_ONREMOVEINTERNAL_OFFSET UNITYSDK_OFFSET(0xE833A20)
+#define MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY_ONUPDATEINTERNAL_OFFSET UNITYSDK_OFFSET(0xE833A80)
+#define MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY_SENDTIMEROUTEVENT_OFFSET UNITYSDK_OFFSET(0xE833C10)
+#define MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0xE833CB0)
+#define MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY___BASE_ONADDINTERNAL_OFFSET UNITYSDK_OFFSET(0xE833CC0)
+#define MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY___BASE_ONINITINTERNAL_OFFSET UNITYSDK_OFFSET(0xE833D20)
+#define MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY___BASE_ONREMOVEINTERNAL_OFFSET UNITYSDK_OFFSET(0xE833D90)
+#define MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY___BASE_ONUPDATEINTERNAL_OFFSET UNITYSDK_OFFSET(0xE833DF0)
+
+namespace MoleMole::DefenseScene
+{
+	inline static constexpr unsigned int DefenseSceneTrapChessEntity_TypeDefinitionIndex = 58758;
+
+	class DefenseSceneTrapChessEntity : public ::MoleMole::ChessEntity
+	{
+	public:
+		::System::Single LifeTime; // 0x40
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnInitInternal(::MoleMole::ConfigChessEntity* configChessEntity)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigChessEntity*))((::PBYTE)hIl2Cpp + MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY_ONINITINTERNAL_OFFSET))(this, configChessEntity);
+		}
+
+		::System::Void OnAddInternal()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY_ONADDINTERNAL_OFFSET))(this);
+		}
+
+		::System::Void OnRemoveInternal()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY_ONREMOVEINTERNAL_OFFSET))(this);
+		}
+
+		::System::Void OnUpdateInternal()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY_ONUPDATEINTERNAL_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IEnumerator_1<::System::Single>* SendTimerOutEvent()
+		{
+			return ((::System::Collections::Generic::IEnumerator_1<::System::Single>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY_SENDTIMEROUTEVENT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnAddInternal()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY___BASE_ONADDINTERNAL_OFFSET))(this);
+		}
+
+		::System::Void __base_OnInitInternal(::MoleMole::ConfigChessEntity* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigChessEntity*))((::PBYTE)hIl2Cpp + MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY___BASE_ONINITINTERNAL_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnRemoveInternal()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY___BASE_ONREMOVEINTERNAL_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUpdateInternal()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_DEFENSESCENE_DEFENSESCENETRAPCHESSENTITY___BASE_ONUPDATEINTERNAL_OFFSET))(this);
+		}
+	};
+}

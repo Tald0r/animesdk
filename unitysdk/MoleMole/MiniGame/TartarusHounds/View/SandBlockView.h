@@ -1,0 +1,133 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_4608E37A1B3D374A_31.h"
+#include "unitysdk/UnityEngine/MonoBehaviour.h"
+
+class Class_1_0C791B68CB2A5BF5;
+class Class_2_791E28CCD05148E6;
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class MaterialPropertyBlock; }
+namespace UnityEngine { class SpriteRenderer; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_AWAKE_OFFSET UNITYSDK_OFFSET(0x99219A0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_GET_CANBERECYCLE_OFFSET UNITYSDK_OFFSET(0x99225F0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_GET_SELFGAMEOBJECT_OFFSET UNITYSDK_OFFSET(0x99224C0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_GET_SELFTRANSFORM_OFFSET UNITYSDK_OFFSET(0x99223F0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_INITSHEETANIM_OFFSET UNITYSDK_OFFSET(0x9921A40)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_METHOD_5_0581090195E9C81F_OFFSET UNITYSDK_OFFSET(0x9922620)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_METHOD_5_602B796CAD5DBEDB_OFFSET UNITYSDK_OFFSET(0x9921E10)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x9921C90)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_PLAYDESTROYINGANIMATION_OFFSET UNITYSDK_OFFSET(0x9922050)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_PLAYIDLEANIMATION_OFFSET UNITYSDK_OFFSET(0x9921FB0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_REFRESHSANVIEWANIMATION_OFFSET UNITYSDK_OFFSET(0x9922260)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_RESET_OFFSET UNITYSDK_OFFSET(0x9922590)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_SETSANDSTYLE_OFFSET UNITYSDK_OFFSET(0x99221F0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_SETSORTINGORDERINDEX_OFFSET UNITYSDK_OFFSET(0x9922370)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_SETSTATUS_OFFSET UNITYSDK_OFFSET(0x9922180)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW__CTOR_OFFSET UNITYSDK_OFFSET(0x9922600)
+
+namespace MoleMole::MiniGame::TartarusHounds::View
+{
+	inline static constexpr unsigned int SandBlockView_TypeDefinitionIndex = 67998;
+
+	class SandBlockView : public ::UnityEngine::MonoBehaviour
+	{
+	public:
+		// static const ::System::Single Field_5_6; // 0x0
+		// static const ::System::Single Field_5_8; // 0x0
+		// static const ::System::Single Field_5_9; // 0x0
+		// static const ::System::Int32 Field_5_10 = 0x0; // 0x0
+		::UnityEngine::SpriteRenderer* spriteRenderer; // 0x18
+		::Class_2_791E28CCD05148E6* Field_5_1; // 0x20
+		::UnityEngine::Transform* Field_5_2; // 0x28
+		::UnityEngine::GameObject* Field_5_3; // 0x30
+		::System::Int32 Field_5_4; // 0x38
+		::Enum_3_4608E37A1B3D374A_31 Field_5_5; // 0x3C
+		::System::Single Field_5_7; // 0x40
+		::System::Single destroyDelayTime; // 0x44
+		::System::Boolean Field_5_12; // 0x48
+		::System::Boolean Field_5_13; // 0x49
+		::UnityEngine::MaterialPropertyBlock* Field_5_14; // 0x50
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Awake()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_AWAKE_OFFSET))(this);
+		}
+
+		::System::Void InitSheetAnim(::Class_1_0C791B68CB2A5BF5* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0C791B68CB2A5BF5*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_INITSHEETANIM_OFFSET))(this, a1);
+		}
+
+		::System::Void OnUpdate(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_ONUPDATE_OFFSET))(this, a1);
+		}
+
+		::System::Void PlayIdleAnimation(::System::Int32 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_PLAYIDLEANIMATION_OFFSET))(this, a1);
+		}
+
+		::System::Void PlayDestroyingAnimation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_PLAYDESTROYINGANIMATION_OFFSET))(this);
+		}
+
+		::System::Void SetStatus(::Enum_3_4608E37A1B3D374A_31 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_4608E37A1B3D374A_31))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_SETSTATUS_OFFSET))(this, a1);
+		}
+
+		::System::Void SetSandStyle(::System::Int32 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_SETSANDSTYLE_OFFSET))(this, a1);
+		}
+
+		::System::Void RefreshSanViewAnimation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_REFRESHSANVIEWANIMATION_OFFSET))(this);
+		}
+
+		::System::Void SetSortingOrderIndex(::System::Int32 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_SETSORTINGORDERINDEX_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Transform* get_SelfTransform()
+		{
+			return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_GET_SELFTRANSFORM_OFFSET))(this);
+		}
+
+		::UnityEngine::GameObject* get_SelfGameObject()
+		{
+			return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_GET_SELFGAMEOBJECT_OFFSET))(this);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_RESET_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanBeRecycle()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_GET_CANBERECYCLE_OFFSET))(this);
+		}
+
+		::System::Void Method_5_0581090195E9C81F()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_METHOD_5_0581090195E9C81F_OFFSET))(this);
+		}
+
+		::System::Void Method_5_602B796CAD5DBEDB(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_SANDBLOCKVIEW_METHOD_5_602B796CAD5DBEDB_OFFSET))(this, a1);
+		}
+	};
+}

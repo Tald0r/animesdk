@@ -1,14 +1,18 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Nullable_1.h"
 #include "unitysdk/System/Object.h"
 
-#define NEWTONSOFT_JSON_UTILITIES_MATHUTILS_APPROXEQUALS_OFFSET UNITYSDK_OFFSET(0x15DB8440)
-#define NEWTONSOFT_JSON_UTILITIES_MATHUTILS_INTLENGTH_OFFSET UNITYSDK_OFFSET(0x15DEE960)
-#define NEWTONSOFT_JSON_UTILITIES_MATHUTILS_INTTOHEX_OFFSET UNITYSDK_OFFSET(0x15DEEAD0)
+#define NEWTONSOFT_JSON_UTILITIES_MATHUTILS_APPROXEQUALS_OFFSET UNITYSDK_OFFSET(0x1A417B10)
+#define NEWTONSOFT_JSON_UTILITIES_MATHUTILS_INTLENGTH_OFFSET UNITYSDK_OFFSET(0x1A417840)
+#define NEWTONSOFT_JSON_UTILITIES_MATHUTILS_INTTOHEX_OFFSET UNITYSDK_OFFSET(0x1A4179B0)
+#define NEWTONSOFT_JSON_UTILITIES_MATHUTILS_MAX_1_OFFSET UNITYSDK_OFFSET(0x1A417A80)
+#define NEWTONSOFT_JSON_UTILITIES_MATHUTILS_MAX_OFFSET UNITYSDK_OFFSET(0x1A417A20)
+#define NEWTONSOFT_JSON_UTILITIES_MATHUTILS_MIN_OFFSET UNITYSDK_OFFSET(0x1A4179C0)
 
 namespace Newtonsoft::Json::Utilities
 {
-	inline static constexpr unsigned int MathUtils_TypeDefinitionIndex = 8149;
+	inline static constexpr unsigned int MathUtils_TypeDefinitionIndex = 6932;
 
 	class MathUtils : public ::System::Object
 	{
@@ -21,6 +25,21 @@ namespace Newtonsoft::Json::Utilities
 		static ::System::Char IntToHex(::System::Int32 n)
 		{
 			return ((::System::Char(*)(::System::Int32))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_MATHUTILS_INTTOHEX_OFFSET))(n);
+		}
+
+		static ::System::Nullable_1<::System::Int32> Min(::System::Nullable_1<::System::Int32> val1, ::System::Nullable_1<::System::Int32> val2)
+		{
+			return ((::System::Nullable_1<::System::Int32>(*)(::System::Nullable_1<::System::Int32>, ::System::Nullable_1<::System::Int32>))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_MATHUTILS_MIN_OFFSET))(val1, val2);
+		}
+
+		static ::System::Nullable_1<::System::Int32> Max(::System::Nullable_1<::System::Int32> val1, ::System::Nullable_1<::System::Int32> val2)
+		{
+			return ((::System::Nullable_1<::System::Int32>(*)(::System::Nullable_1<::System::Int32>, ::System::Nullable_1<::System::Int32>))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_MATHUTILS_MAX_OFFSET))(val1, val2);
+		}
+
+		static ::System::Nullable_1<::System::Double> Max_1(::System::Nullable_1<::System::Double> val1, ::System::Nullable_1<::System::Double> val2)
+		{
+			return ((::System::Nullable_1<::System::Double>(*)(::System::Nullable_1<::System::Double>, ::System::Nullable_1<::System::Double>))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_MATHUTILS_MAX_1_OFFSET))(val1, val2);
 		}
 
 		static ::System::Boolean ApproxEquals(::System::Double d1, ::System::Double d2)

@@ -11,42 +11,53 @@ namespace System::Net { class FtpStatus; }
 namespace System::Net { class FtpWebRequest; }
 namespace System::Net { class WebHeaderCollection; }
 
-#define SYSTEM_NET_FTPWEBRESPONSE_CHECKDISPOSED_OFFSET UNITYSDK_OFFSET(0x17EC6E70)
-#define SYSTEM_NET_FTPWEBRESPONSE_CLOSE_OFFSET UNITYSDK_OFFSET(0x17EC6C60)
-#define SYSTEM_NET_FTPWEBRESPONSE_GETRESPONSESTREAM_OFFSET UNITYSDK_OFFSET(0x17EC6DA0)
-#define SYSTEM_NET_FTPWEBRESPONSE_GET_CONTENTLENGTH_OFFSET UNITYSDK_OFFSET(0x17EC6BA0)
-#define SYSTEM_NET_FTPWEBRESPONSE_GET_HEADERS_OFFSET UNITYSDK_OFFSET(0x17EC6BB0)
-#define SYSTEM_NET_FTPWEBRESPONSE_GET_RESPONSEURI_OFFSET UNITYSDK_OFFSET(0x17EC6C10)
-#define SYSTEM_NET_FTPWEBRESPONSE_ISFINAL_OFFSET UNITYSDK_OFFSET(0x17EC3080)
-#define SYSTEM_NET_FTPWEBRESPONSE_SET_BANNERMESSAGE_OFFSET UNITYSDK_OFFSET(0x17EC6C30)
-#define SYSTEM_NET_FTPWEBRESPONSE_SET_LASTMODIFIED_OFFSET UNITYSDK_OFFSET(0x17EC6C20)
-#define SYSTEM_NET_FTPWEBRESPONSE_SET_STATUSCODE_OFFSET UNITYSDK_OFFSET(0x17EC6C50)
-#define SYSTEM_NET_FTPWEBRESPONSE_SET_STREAM_OFFSET UNITYSDK_OFFSET(0x17EC6F00)
-#define SYSTEM_NET_FTPWEBRESPONSE_SET_WELCOMEMESSAGE_OFFSET UNITYSDK_OFFSET(0x17EC6C40)
-#define SYSTEM_NET_FTPWEBRESPONSE_UPDATESTATUS_OFFSET UNITYSDK_OFFSET(0x17EC21E0)
-#define SYSTEM_NET_FTPWEBRESPONSE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17EC14E0)
-#define SYSTEM_NET_FTPWEBRESPONSE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17EC6240)
-#define SYSTEM_NET_FTPWEBRESPONSE__CTOR_OFFSET UNITYSDK_OFFSET(0x17EC2530)
+#define SYSTEM_NET_FTPWEBRESPONSE_CHECKDISPOSED_OFFSET UNITYSDK_OFFSET(0x1823AC80)
+#define SYSTEM_NET_FTPWEBRESPONSE_CLOSE_OFFSET UNITYSDK_OFFSET(0x1823AA70)
+#define SYSTEM_NET_FTPWEBRESPONSE_GETRESPONSESTREAM_OFFSET UNITYSDK_OFFSET(0x1823ABB0)
+#define SYSTEM_NET_FTPWEBRESPONSE_GET_BANNERMESSAGE_OFFSET UNITYSDK_OFFSET(0x1823A9C0)
+#define SYSTEM_NET_FTPWEBRESPONSE_GET_CONTENTLENGTH_OFFSET UNITYSDK_OFFSET(0x1823A920)
+#define SYSTEM_NET_FTPWEBRESPONSE_GET_EXITMESSAGE_OFFSET UNITYSDK_OFFSET(0x1823AA00)
+#define SYSTEM_NET_FTPWEBRESPONSE_GET_HEADERS_OFFSET UNITYSDK_OFFSET(0x1823A930)
+#define SYSTEM_NET_FTPWEBRESPONSE_GET_LASTMODIFIED_OFFSET UNITYSDK_OFFSET(0x1823A9A0)
+#define SYSTEM_NET_FTPWEBRESPONSE_GET_RESPONSEURI_OFFSET UNITYSDK_OFFSET(0x1823A990)
+#define SYSTEM_NET_FTPWEBRESPONSE_GET_STATUSCODE_OFFSET UNITYSDK_OFFSET(0x1823AA20)
+#define SYSTEM_NET_FTPWEBRESPONSE_GET_STATUSDESCRIPTION_OFFSET UNITYSDK_OFFSET(0x1823AA50)
+#define SYSTEM_NET_FTPWEBRESPONSE_GET_STREAM_OFFSET UNITYSDK_OFFSET(0x1823AD20)
+#define SYSTEM_NET_FTPWEBRESPONSE_GET_SUPPORTSHEADERS_OFFSET UNITYSDK_OFFSET(0x1823AA40)
+#define SYSTEM_NET_FTPWEBRESPONSE_GET_WELCOMEMESSAGE_OFFSET UNITYSDK_OFFSET(0x1823A9E0)
+#define SYSTEM_NET_FTPWEBRESPONSE_ISFINAL_OFFSET UNITYSDK_OFFSET(0x1823AD60)
+#define SYSTEM_NET_FTPWEBRESPONSE_SET_BANNERMESSAGE_OFFSET UNITYSDK_OFFSET(0x1823A9D0)
+#define SYSTEM_NET_FTPWEBRESPONSE_SET_EXITMESSAGE_OFFSET UNITYSDK_OFFSET(0x1823AA10)
+#define SYSTEM_NET_FTPWEBRESPONSE_SET_LASTMODIFIED_OFFSET UNITYSDK_OFFSET(0x1823A9B0)
+#define SYSTEM_NET_FTPWEBRESPONSE_SET_STATUSCODE_OFFSET UNITYSDK_OFFSET(0x1823AA30)
+#define SYSTEM_NET_FTPWEBRESPONSE_SET_STATUSDESCRIPTION_OFFSET UNITYSDK_OFFSET(0x1823AA60)
+#define SYSTEM_NET_FTPWEBRESPONSE_SET_STREAM_OFFSET UNITYSDK_OFFSET(0x1823AD10)
+#define SYSTEM_NET_FTPWEBRESPONSE_SET_WELCOMEMESSAGE_OFFSET UNITYSDK_OFFSET(0x1823A9F0)
+#define SYSTEM_NET_FTPWEBRESPONSE_UPDATESTATUS_OFFSET UNITYSDK_OFFSET(0x1823AD30)
+#define SYSTEM_NET_FTPWEBRESPONSE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1823A860)
+#define SYSTEM_NET_FTPWEBRESPONSE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1823A8B0)
+#define SYSTEM_NET_FTPWEBRESPONSE__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1823AD70)
+#define SYSTEM_NET_FTPWEBRESPONSE__CTOR_OFFSET UNITYSDK_OFFSET(0x1823A820)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int FtpWebResponse_TypeDefinitionIndex = 2825;
+	inline static constexpr unsigned int FtpWebResponse_TypeDefinitionIndex = 3519;
 
 	class FtpWebResponse : public ::System::Net::WebResponse
 	{
 	public:
-		::System::IO::Stream* stream; // 0x20
-		::System::String* welcomeMessage; // 0x28
-		::System::Net::FtpWebRequest* request; // 0x30
-		::System::String* bannerMessage; // 0x38
-		::System::String* method; // 0x40
-		::System::String* statusDescription; // 0x48
-		::System::Uri* uri; // 0x50
-		::System::String* exitMessage; // 0x58
-		::System::Boolean disposed; // 0x60
-		::System::Net::FtpStatusCode statusCode; // 0x64
+		::System::String* exitMessage; // 0x20
+		::System::Uri* uri; // 0x28
+		::System::String* statusDescription; // 0x30
+		::System::String* method; // 0x38
+		::System::IO::Stream* stream; // 0x40
+		::System::Net::FtpWebRequest* request; // 0x48
+		::System::String* bannerMessage; // 0x50
+		::System::String* welcomeMessage; // 0x58
+		::System::Int64 contentLength; // 0x60
 		::System::DateTime lastModified; // 0x68
-		::System::Int64 contentLength; // 0x70
+		::System::Boolean disposed; // 0x70
+		::System::Net::FtpStatusCode statusCode; // 0x74
 
 		::System::Void _ctor(::System::Net::FtpWebRequest* request, ::System::Uri* uri, ::System::String* method, ::System::Boolean keepAlive)
 		{
@@ -61,6 +72,11 @@ namespace System::Net
 		::System::Void _ctor_2(::System::Net::FtpWebRequest* request, ::System::Uri* uri, ::System::String* method, ::System::Net::FtpStatus* status)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Net::FtpWebRequest*, ::System::Uri*, ::System::String*, ::System::Net::FtpStatus*))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE__CTOR_2_OFFSET))(this, request, uri, method, status);
+		}
+
+		::System::Void _ctor_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE__CTOR_3_OFFSET))(this);
 		}
 
 		::System::Int64 get_ContentLength()
@@ -78,9 +94,19 @@ namespace System::Net
 			return ((::System::Uri*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_GET_RESPONSEURI_OFFSET))(this);
 		}
 
+		::System::DateTime get_LastModified()
+		{
+			return ((::System::DateTime(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_GET_LASTMODIFIED_OFFSET))(this);
+		}
+
 		::System::Void set_LastModified(::System::DateTime value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_SET_LASTMODIFIED_OFFSET))(this, value);
+		}
+
+		::System::String* get_BannerMessage()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_GET_BANNERMESSAGE_OFFSET))(this);
 		}
 
 		::System::Void set_BannerMessage(::System::String* value)
@@ -88,14 +114,49 @@ namespace System::Net
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_SET_BANNERMESSAGE_OFFSET))(this, value);
 		}
 
+		::System::String* get_WelcomeMessage()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_GET_WELCOMEMESSAGE_OFFSET))(this);
+		}
+
 		::System::Void set_WelcomeMessage(::System::String* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_SET_WELCOMEMESSAGE_OFFSET))(this, value);
 		}
 
+		::System::String* get_ExitMessage()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_GET_EXITMESSAGE_OFFSET))(this);
+		}
+
+		::System::Void set_ExitMessage(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_SET_EXITMESSAGE_OFFSET))(this, value);
+		}
+
+		::System::Net::FtpStatusCode get_StatusCode()
+		{
+			return ((::System::Net::FtpStatusCode(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_GET_STATUSCODE_OFFSET))(this);
+		}
+
 		::System::Void set_StatusCode(::System::Net::FtpStatusCode value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Net::FtpStatusCode))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_SET_STATUSCODE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_SupportsHeaders()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_GET_SUPPORTSHEADERS_OFFSET))(this);
+		}
+
+		::System::String* get_StatusDescription()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_GET_STATUSDESCRIPTION_OFFSET))(this);
+		}
+
+		::System::Void set_StatusDescription(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_SET_STATUSDESCRIPTION_OFFSET))(this, value);
 		}
 
 		::System::Void Close()
@@ -111,6 +172,11 @@ namespace System::Net
 		::System::Void set_Stream(::System::IO::Stream* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_SET_STREAM_OFFSET))(this, value);
+		}
+
+		::System::IO::Stream* get_Stream()
+		{
+			return ((::System::IO::Stream*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPWEBRESPONSE_GET_STREAM_OFFSET))(this);
 		}
 
 		::System::Void UpdateStatus(::System::Net::FtpStatus* status)

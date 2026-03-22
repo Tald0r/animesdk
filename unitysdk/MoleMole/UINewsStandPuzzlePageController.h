@@ -1,0 +1,251 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIMainCityStorePageController.h"
+#include "unitysdk/MoleMole/UINewsStandPuzzlePageController_EPuzzlePhase.h"
+
+class Class_1_5002A338EA6818A8_1;
+class Class_1_D375C91CCE5D3999;
+class Class_2_208CC9941471731A_609;
+class Class_2_BA30EE5D91DB6889;
+namespace MoleMole { class UIActivityCompWeekRewardBtnWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UINewsStandPuzzleGameWidgetController; }
+namespace System::Collections::Generic { template <typename T> class HashSet_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_CLEAN_OFFSET UNITYSDK_OFFSET(0x6CE7950)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_DOBACK_OFFSET UNITYSDK_OFFSET(0x6CE77A0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_GETPERFORMID_OFFSET UNITYSDK_OFFSET(0x6CE6FC0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_GET_PHASE_OFFSET UNITYSDK_OFFSET(0x6CE6390)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x6CE6380)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_INITACTIVITY_OFFSET UNITYSDK_OFFSET(0x6CE67A0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_INITGAMES_OFFSET UNITYSDK_OFFSET(0x6CE7CC0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_INITLEVELDATA_OFFSET UNITYSDK_OFFSET(0x6CE7F70)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_INITLEVELS_OFFSET UNITYSDK_OFFSET(0x6CE7BA0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0x6CE64A0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ISCHAPTERCOMPLETED_OFFSET UNITYSDK_OFFSET(0x6CE7640)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ISCHAPTERUNANIMATED_OFFSET UNITYSDK_OFFSET(0x6CE7540)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ISCHAPTERUNFINISHED_OFFSET UNITYSDK_OFFSET(0x6CE6090)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONACTIVITYCHANGEINFO_OFFSET UNITYSDK_OFFSET(0x6CE8910)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONCLICKSTAGE_OFFSET UNITYSDK_OFFSET(0x6CE5FE0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x6CE6530)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONSTAGEEND_OFFSET UNITYSDK_OFFSET(0x6CE74A0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x6CE6BB0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x6CE7320)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x6CE6640)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x6CE65D0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0x6CE73B0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_SET_PHASE_OFFSET UNITYSDK_OFFSET(0x6CE63A0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_UPDATECHAPTERSTATUS_OFFSET UNITYSDK_OFFSET(0x6CE76C0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__CLEAN_B__27_0_OFFSET UNITYSDK_OFFSET(0x6CE8C30)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x6CE89E0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__DOBACK_B__26_0_OFFSET UNITYSDK_OFFSET(0x6CE8B90)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__DOBACK_B__26_1_OFFSET UNITYSDK_OFFSET(0x6CE8BC0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__INITGAMES_B__30_0_OFFSET UNITYSDK_OFFSET(0x6CE8C60)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__INITLEVELDATA_B__32_1_OFFSET UNITYSDK_OFFSET(0x6CE8C90)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x6CE8CC0)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x6CE8D30)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x6CE8D40)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x6CE8D50)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x6CE8D60)
+#define MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0x6CE8D70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UINewsStandPuzzlePageController_TypeDefinitionIndex = 69476;
+
+	class UINewsStandPuzzlePageController : public ::MoleMole::UIMainCityStorePageController
+	{
+	public:
+		::Class_2_BA30EE5D91DB6889* _view; // 0x308
+		::MoleMole::UINewsStandPuzzleGameWidgetController* gameWidget; // 0x310
+		::MoleMole::UIActivityCompWeekRewardBtnWidgetController* _rewardBtn; // 0x318
+		::MoleMole::UINewsStandPuzzlePageController_EPuzzlePhase _phase; // 0x320
+		::System::Int32 curStage; // 0x324
+		::System::Collections::Generic::HashSet_1<::System::Int32>* completedChapters; // 0x328
+		::System::Collections::Generic::HashSet_1<::System::Int32>* unanimatedChapters; // 0x330
+		::System::Collections::Generic::List_1<::Class_1_5002A338EA6818A8_1*>* allStages; // 0x338
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::MoleMole::UINewsStandPuzzlePageController_EPuzzlePhase get_Phase()
+		{
+			return ((::MoleMole::UINewsStandPuzzlePageController_EPuzzlePhase(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_GET_PHASE_OFFSET))(this);
+		}
+
+		::System::Void set_Phase(::MoleMole::UINewsStandPuzzlePageController_EPuzzlePhase value)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UINewsStandPuzzlePageController_EPuzzlePhase))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_SET_PHASE_OFFSET))(this, value);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void OnClickStage(::Class_1_5002A338EA6818A8_1* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_5002A338EA6818A8_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONCLICKSTAGE_OFFSET))(this, data);
+		}
+
+		::System::Void OnStageEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONSTAGEEND_OFFSET))(this);
+		}
+
+		::System::Boolean IsChapterUnAnimated(::System::Int32 chapterID)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ISCHAPTERUNANIMATED_OFFSET))(this, chapterID);
+		}
+
+		::System::Boolean IsChapterCompleted(::System::Int32 chapterID)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ISCHAPTERCOMPLETED_OFFSET))(this, chapterID);
+		}
+
+		::System::Boolean IsChapterUnFinished(::System::Int32 chapterID)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ISCHAPTERUNFINISHED_OFFSET))(this, chapterID);
+		}
+
+		::System::Void UpdateChapterStatus(::System::Int32 chapterID, ::System::Boolean isComplete, ::System::Boolean isUnAnimated)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_UPDATECHAPTERSTATUS_OFFSET))(this, chapterID, isComplete, isUnAnimated);
+		}
+
+		::System::Void DoBack()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_DOBACK_OFFSET))(this);
+		}
+
+		::System::Void Clean()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_CLEAN_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void InitLevels()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_INITLEVELS_OFFSET))(this);
+		}
+
+		::System::Void InitGames()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_INITGAMES_OFFSET))(this);
+		}
+
+		::System::Void InitActivity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_INITACTIVITY_OFFSET))(this);
+		}
+
+		::System::Void InitLevelData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_INITLEVELDATA_OFFSET))(this);
+		}
+
+		::System::Void OnActivityChangeInfo(::Class_1_D375C91CCE5D3999* activityBaseData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_ONACTIVITYCHANGEINFO_OFFSET))(this, activityBaseData);
+		}
+
+		::System::Int32 GetPerformId()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER_GETPERFORMID_OFFSET))(this);
+		}
+
+		::System::Boolean _DoBack_b__26_0(::Class_2_208CC9941471731A_609* c)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_609*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__DOBACK_B__26_0_OFFSET))(this, c);
+		}
+
+		::System::Void _DoBack_b__26_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__DOBACK_B__26_1_OFFSET))(this);
+		}
+
+		::System::Void _Clean_b__27_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__CLEAN_B__27_0_OFFSET))(this);
+		}
+
+		::System::Void _InitGames_b__30_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__INITGAMES_B__30_0_OFFSET))(this);
+		}
+
+		::System::Boolean _InitLevelData_b__32_1(::Class_2_208CC9941471731A_609* c)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_609*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER__INITLEVELDATA_B__32_1_OFFSET))(this, c);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWSSTANDPUZZLEPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

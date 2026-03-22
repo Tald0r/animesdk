@@ -10,19 +10,21 @@ namespace System::Reflection { class FieldInfo; }
 namespace System::Reflection { class MemberInfo; }
 namespace System::Reflection { class PropertyInfo; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x17CFF7F0)
-#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_GETMEMBER_OFFSET UNITYSDK_OFFSET(0x17CFF7A0)
-#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_GET_EXPRESSION_OFFSET UNITYSDK_OFFSET(0x17CFF5B0)
-#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_GET_MEMBER_OFFSET UNITYSDK_OFFSET(0x17CFF5A0)
-#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x17CFF790)
-#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_MAKE_1_OFFSET UNITYSDK_OFFSET(0x17CFF700)
-#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_MAKE_OFFSET UNITYSDK_OFFSET(0x17CFF620)
-#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_UPDATE_OFFSET UNITYSDK_OFFSET(0x17CFF820)
-#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17CFF5C0)
+#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x1AA76F80)
+#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_GETMEMBER_OFFSET UNITYSDK_OFFSET(0x1AA76F30)
+#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_GET_EXPRESSION_OFFSET UNITYSDK_OFFSET(0x1AA76C60)
+#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_GET_MEMBER_OFFSET UNITYSDK_OFFSET(0x1AA716E0)
+#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x1AA76F20)
+#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_MAKE_1_OFFSET UNITYSDK_OFFSET(0x1AA76D60)
+#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_MAKE_2_OFFSET UNITYSDK_OFFSET(0x1AA76DF0)
+#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_MAKE_OFFSET UNITYSDK_OFFSET(0x1AA76CD0)
+#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_UPDATE_OFFSET UNITYSDK_OFFSET(0x1AA76FB0)
+#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AA77030)
+#define SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA76C70)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int MemberExpression_TypeDefinitionIndex = 3219;
+	inline static constexpr unsigned int MemberExpression_TypeDefinitionIndex = 4506;
 
 	class MemberExpression : public ::System::Linq::Expressions::Expression
 	{
@@ -32,6 +34,11 @@ namespace System::Linq::Expressions
 		::System::Void _ctor(::System::Linq::Expressions::Expression* expression)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Linq::Expressions::Expression*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION__CTOR_OFFSET))(this, expression);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION__CTOR_1_OFFSET))(this);
 		}
 
 		::System::Reflection::MemberInfo* get_Member()
@@ -52,6 +59,11 @@ namespace System::Linq::Expressions
 		static ::System::Linq::Expressions::FieldExpression* Make_1(::System::Linq::Expressions::Expression* expression, ::System::Reflection::FieldInfo* field)
 		{
 			return ((::System::Linq::Expressions::FieldExpression*(*)(::System::Linq::Expressions::Expression*, ::System::Reflection::FieldInfo*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_MAKE_1_OFFSET))(expression, field);
+		}
+
+		static ::System::Linq::Expressions::MemberExpression* Make_2(::System::Linq::Expressions::Expression* expression, ::System::Reflection::MemberInfo* member)
+		{
+			return ((::System::Linq::Expressions::MemberExpression*(*)(::System::Linq::Expressions::Expression*, ::System::Reflection::MemberInfo*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_MEMBEREXPRESSION_MAKE_2_OFFSET))(expression, member);
 		}
 
 		::System::Linq::Expressions::ExpressionType get_NodeType()

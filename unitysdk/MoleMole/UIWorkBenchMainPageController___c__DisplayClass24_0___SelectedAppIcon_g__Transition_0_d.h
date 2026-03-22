@@ -1,0 +1,57 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace MoleMole { class UIWorkBenchMainPageController___c__DisplayClass24_0; }
+namespace MoleMole { class UIWorkBenchMainPageController___c__DisplayClass24_1; }
+
+#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D_MOVENEXT_OFFSET UNITYSDK_OFFSET(0xAAB83C0)
+#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_SINGLE__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0xAAB8E10)
+#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0xAAB8E70)
+#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0xAAB8E20)
+#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0xAAB83B0)
+#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D__CTOR_OFFSET UNITYSDK_OFFSET(0xAAB83A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIWorkBenchMainPageController___c__DisplayClass24_0___SelectedAppIcon_g__Transition_0_d_TypeDefinitionIndex = 39758;
+
+	class UIWorkBenchMainPageController___c__DisplayClass24_0___SelectedAppIcon_g__Transition_0_d : public ::System::Object
+	{
+	public:
+		::MoleMole::UIWorkBenchMainPageController___c__DisplayClass24_1* __8__1; // 0x10
+		::MoleMole::UIWorkBenchMainPageController___c__DisplayClass24_0* __4__this; // 0x18
+		::System::Single __2__current; // 0x20
+		::System::Int32 __1__state; // 0x24
+
+		::System::Void _ctor(::System::Int32 __1__state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D__CTOR_OFFSET))(this, __1__state);
+		}
+
+		::System::Void System_IDisposable_Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET))(this);
+		}
+
+		::System::Boolean MoveNext()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D_MOVENEXT_OFFSET))(this);
+		}
+
+		::System::Single System_Collections_Generic_IEnumerator_System_Single__get_Current()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_SINGLE__GET_CURRENT_OFFSET))(this);
+		}
+
+		::System::Void System_Collections_IEnumerator_Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET))(this);
+		}
+
+		::System::Object* System_Collections_IEnumerator_get_Current()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__DISPLAYCLASS24_0___SELECTEDAPPICON_G__TRANSITION_0_D_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET))(this);
+		}
+	};
+}

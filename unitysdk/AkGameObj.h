@@ -8,34 +8,31 @@ class AkAudioListener;
 class AkGameObjEnvironmentData;
 class AkGameObjListenerList;
 class AkGameObjPosOffsetData;
+class AkGameObjPositionData;
 class AkGameObjPositionOffsetData;
-class TransformVersionTracker;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Collider; }
-namespace UnityEngine { class Transform; }
 
-#define AKGAMEOBJ_ADDLISTENER_OFFSET UNITYSDK_OFFSET(0x1837E120)
-#define AKGAMEOBJ_AWAKE_OFFSET UNITYSDK_OFFSET(0x1839CC90)
-#define AKGAMEOBJ_CHECKSTATICSTATUS_OFFSET UNITYSDK_OFFSET(0x1839DBB0)
-#define AKGAMEOBJ_GETFORWARD_OFFSET UNITYSDK_OFFSET(0x1839EB40)
-#define AKGAMEOBJ_GETPOSITION_OFFSET UNITYSDK_OFFSET(0x1839E850)
-#define AKGAMEOBJ_GETUPWARD_OFFSET UNITYSDK_OFFSET(0x1839ED00)
-#define AKGAMEOBJ_GET_ISAUTOSTOP_OFFSET UNITYSDK_OFFSET(0x1839C800)
-#define AKGAMEOBJ_GET_ISUSINGDEFAULTLISTENERS_OFFSET UNITYSDK_OFFSET(0x18397610)
-#define AKGAMEOBJ_GET_LISTENERLIST_OFFSET UNITYSDK_OFFSET(0x18397630)
-#define AKGAMEOBJ_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1839DDC0)
-#define AKGAMEOBJ_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1839DBF0)
-#define AKGAMEOBJ_ONTRIGGERENTER_OFFSET UNITYSDK_OFFSET(0x1839EEC0)
-#define AKGAMEOBJ_ONTRIGGEREXIT_OFFSET UNITYSDK_OFFSET(0x1839EF30)
-#define AKGAMEOBJ_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x1839DAA0)
-#define AKGAMEOBJ_REGISTER_OFFSET UNITYSDK_OFFSET(0x1837DD60)
-#define AKGAMEOBJ_REMOVELISTENER_OFFSET UNITYSDK_OFFSET(0x1837E180)
-#define AKGAMEOBJ_SETPOSITION_OFFSET UNITYSDK_OFFSET(0x1839CB40)
-#define AKGAMEOBJ_SET_ISAUTOSTOP_OFFSET UNITYSDK_OFFSET(0x1839C810)
-#define AKGAMEOBJ_TICK_OFFSET UNITYSDK_OFFSET(0x1839E100)
-#define AKGAMEOBJ__CTOR_OFFSET UNITYSDK_OFFSET(0x1839F3C0)
+#define AKGAMEOBJ_ADDLISTENER_OFFSET UNITYSDK_OFFSET(0x1A5333B0)
+#define AKGAMEOBJ_AWAKE_OFFSET UNITYSDK_OFFSET(0x1A533DC0)
+#define AKGAMEOBJ_CHECKSTATICSTATUS_OFFSET UNITYSDK_OFFSET(0x1A534160)
+#define AKGAMEOBJ_GETFORWARD_OFFSET UNITYSDK_OFFSET(0x1A5349D0)
+#define AKGAMEOBJ_GETPOSITION_OFFSET UNITYSDK_OFFSET(0x1A534720)
+#define AKGAMEOBJ_GETUPWARD_OFFSET UNITYSDK_OFFSET(0x1A534B40)
+#define AKGAMEOBJ_GET_ISUSINGDEFAULTLISTENERS_OFFSET UNITYSDK_OFFSET(0x1A533370)
+#define AKGAMEOBJ_GET_LISTENERLIST_OFFSET UNITYSDK_OFFSET(0x1A533390)
+#define AKGAMEOBJ_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1A5341A0)
+#define AKGAMEOBJ_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1A534190)
+#define AKGAMEOBJ_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1A534170)
+#define AKGAMEOBJ_ONTRIGGERENTER_OFFSET UNITYSDK_OFFSET(0x1A534CB0)
+#define AKGAMEOBJ_ONTRIGGEREXIT_OFFSET UNITYSDK_OFFSET(0x1A534CD0)
+#define AKGAMEOBJ_REGISTER_OFFSET UNITYSDK_OFFSET(0x1A533610)
+#define AKGAMEOBJ_REMOVELISTENER_OFFSET UNITYSDK_OFFSET(0x1A5334E0)
+#define AKGAMEOBJ_SETPOSITION_OFFSET UNITYSDK_OFFSET(0x1A5338F0)
+#define AKGAMEOBJ_UPDATE_OFFSET UNITYSDK_OFFSET(0x1A534690)
+#define AKGAMEOBJ__CTOR_OFFSET UNITYSDK_OFFSET(0x1A534CF0)
 
-inline static constexpr unsigned int AkGameObj_TypeDefinitionIndex = 33676;
+inline static constexpr unsigned int AkGameObj_TypeDefinitionIndex = 30118;
 
 class AkGameObj : public ::UnityEngine::MonoBehaviour
 {
@@ -45,15 +42,12 @@ public:
 	::System::Boolean isEnvironmentAware; // 0x20
 	::System::Boolean isStaticObject; // 0x21
 	::UnityEngine::Collider* m_Collider; // 0x28
-	::UnityEngine::Transform* m_Trans; // 0x30
-	::TransformVersionTracker* m_TransformTracker; // 0x38
-	::System::UInt32 m_TransformVersion; // 0x40
-	::AkGameObjEnvironmentData* m_envData; // 0x48
-	::AkGameObjPositionOffsetData* m_positionOffsetData; // 0x50
-	::System::Boolean isRegistered; // 0x58
-	::System::Boolean _IsAutoStop_k__BackingField; // 0x59
-	::AkGameObjPosOffsetData* m_posOffsetData; // 0x60
-	::System::Int32 listenerMask; // 0x68
+	::AkGameObjEnvironmentData* m_envData; // 0x30
+	::AkGameObjPositionData* m_posData; // 0x38
+	::AkGameObjPositionOffsetData* m_positionOffsetData; // 0x40
+	::System::Boolean isRegistered; // 0x48
+	::AkGameObjPosOffsetData* m_posOffsetData; // 0x50
+	::System::Int32 listenerMask; // 0x58
 
 	::System::Void _ctor()
 	{
@@ -68,16 +62,6 @@ public:
 	::System::Collections::Generic::List_1<::AkAudioListener*>* get_ListenerList()
 	{
 		return ((::System::Collections::Generic::List_1<::AkAudioListener*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + AKGAMEOBJ_GET_LISTENERLIST_OFFSET))(this);
-	}
-
-	::System::Boolean get_IsAutoStop()
-	{
-		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + AKGAMEOBJ_GET_ISAUTOSTOP_OFFSET))(this);
-	}
-
-	::System::Void set_IsAutoStop(::System::Boolean value)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + AKGAMEOBJ_SET_ISAUTOSTOP_OFFSET))(this, value);
 	}
 
 	::System::Void AddListener(::AkAudioListener* listener)
@@ -105,11 +89,6 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKGAMEOBJ_AWAKE_OFFSET))(this);
 	}
 
-	::System::Void OnValidate()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKGAMEOBJ_ONVALIDATE_OFFSET))(this);
-	}
-
 	::System::Void CheckStaticStatus()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKGAMEOBJ_CHECKSTATICSTATUS_OFFSET))(this);
@@ -120,14 +99,19 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKGAMEOBJ_ONENABLE_OFFSET))(this);
 	}
 
+	::System::Void OnDisable()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKGAMEOBJ_ONDISABLE_OFFSET))(this);
+	}
+
 	::System::Void OnDestroy()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKGAMEOBJ_ONDESTROY_OFFSET))(this);
 	}
 
-	::System::Void Tick()
+	::System::Void Update()
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKGAMEOBJ_TICK_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKGAMEOBJ_UPDATE_OFFSET))(this);
 	}
 
 	::UnityEngine::Vector3 GetPosition()

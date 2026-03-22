@@ -1,0 +1,270 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_1_1685EC66FBD28897;
+class Class_2_208CC9941471731A_834;
+class Class_2_79F6D62CE30E3F8E_3;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_GETOPTIONITEMICONBTNCONTROLLER_OFFSET UNITYSDK_OFFSET(0xA3E06F0)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0xA3DFE10)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xA3DFE00)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_INITITEMLIST_OFFSET UNITYSDK_OFFSET(0xA3E18A0)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xA3E1130)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_MASKCLOSE_OFFSET UNITYSDK_OFFSET(0xA3E0270)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONAUTORECOVERYITEMGETHANDLE_OFFSET UNITYSDK_OFFSET(0xA3E36C0)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONCANCLECLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xA3E3C70)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONCLICKITEMBTN_OFFSET UNITYSDK_OFFSET(0xA3E3E20)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3DFE20)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0xA3E0A60)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0xA3E0CB0)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA3E0640)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xA3E07E0)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONOKCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xA3E3CE0)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA3E3E90)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3E3F00)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3DFEC0)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3E0F00)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_RECALCULATESELECTIDX_OFFSET UNITYSDK_OFFSET(0xA3E3990)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_SETSELECTINDEX_OFFSET UNITYSDK_OFFSET(0xA3E2200)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_UPDATEBACKUPENERGY_OFFSET UNITYSDK_OFFSET(0xA3E3820)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_UPDATEENERGY_OFFSET UNITYSDK_OFFSET(0xA3E2980)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER__CREATITEM_OFFSET UNITYSDK_OFFSET(0xA3E1630)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA3E3F70)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER__ONOKCLICKHANDLE_B__21_0_OFFSET UNITYSDK_OFFSET(0xA3E40A0)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER__ONOKCLICKHANDLE_B__21_1_OFFSET UNITYSDK_OFFSET(0xA3E4400)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER__ONOKCLICKHANDLE_B__21_2_OFFSET UNITYSDK_OFFSET(0xA3E4470)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_MASKCLOSE_OFFSET UNITYSDK_OFFSET(0xA3E4510)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3E4580)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0xA3E45F0)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0xA3E4660)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA3E46D0)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xA3E4700)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA3E4760)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3E4770)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3E4780)
+#define MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3E4790)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPowerTipsPopWindowController_TypeDefinitionIndex = 36493;
+
+	class UIPowerTipsPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Int32 EXPECT_BACKUP_ENERGY_USE_COUNT = 0x3C; // 0x0
+		// static const ::System::Int32 ETHER_BATTERY_EXCHANGE_COUNT = 0x3C; // 0x0
+		::Class_2_79F6D62CE30E3F8E_3* _view; // 0x2F8
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* _itemList; // 0x300
+		::Class_1_0D6706375CDAAE8C* _selectItem; // 0x308
+		::System::Int32 _curSelectedOptionItemIndex; // 0x310
+		::Class_2_208CC9941471731A_834* _recoverytemplate; // 0x318
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* _exchangeLimitDir; // 0x320
+		::System::Collections::Generic::List_1<::System::Int32>* costList; // 0x328
+		::System::Int32 buyTimes; // 0x330
+		::System::Int32 _lackEnergyAmount; // 0x334
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void MaskClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_MASKCLOSE_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::MoleMole::UIItemIconBtnWidgetController* GetOptionItemIconBtnController(::System::Int32 index)
+		{
+			return ((::MoleMole::UIItemIconBtnWidgetController*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_GETOPTIONITEMICONBTNCONTROLLER_OFFSET))(this, index);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _CreatItem(::Struct_2_575273D27F02957E binderInfo)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::Struct_2_575273D27F02957E))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER__CREATITEM_OFFSET))(this, binderInfo);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* InitItemList()
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_INITITEMLIST_OFFSET))(this);
+		}
+
+		::System::Void OnAutoRecoveryItemGetHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONAUTORECOVERYITEMGETHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void UpdateBackUpEnergy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_UPDATEBACKUPENERGY_OFFSET))(this);
+		}
+
+		::System::Void UpdateEnergy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_UPDATEENERGY_OFFSET))(this);
+		}
+
+		::System::Void OnCancleClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONCANCLECLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnOkClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONOKCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnClickItemBtn(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONCLICKITEMBTN_OFFSET))(this, obj);
+		}
+
+		::System::Int32 RecalculateSelectIdx(::System::Int32 lastSelectItemId)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_RECALCULATESELECTIDX_OFFSET))(this, lastSelectItemId);
+		}
+
+		::System::Void SetSelectIndex(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_SETSELECTINDEX_OFFSET))(this, index);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void _OnOkClickHandle_b__21_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER__ONOKCLICKHANDLE_B__21_0_OFFSET))(this);
+		}
+
+		::System::Void _OnOkClickHandle_b__21_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER__ONOKCLICKHANDLE_B__21_1_OFFSET))(this);
+		}
+
+		::System::Void _OnOkClickHandle_b__21_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER__ONOKCLICKHANDLE_B__21_2_OFFSET))(this);
+		}
+
+		::System::Void __base_MaskClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_MASKCLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPOWERTIPSPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

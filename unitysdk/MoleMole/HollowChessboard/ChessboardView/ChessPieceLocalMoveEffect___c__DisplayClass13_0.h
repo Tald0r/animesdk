@@ -1,0 +1,63 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_5_2169ABC757988FED;
+namespace MoleMole::Config { class ConfigHollowChessboard_ChessEffectBase; }
+namespace MoleMole::HollowChessboard::ChessboardView { class ChessPieceLocalMoveEffect; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC224620)
+#define MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_B__3_OFFSET UNITYSDK_OFFSET(0xC224930)
+#define MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_B__4_OFFSET UNITYSDK_OFFSET(0xC2249A0)
+#define MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_B__5_OFFSET UNITYSDK_OFFSET(0xC224A10)
+#define MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_G__CHECKANDMOVEPIECE_0_OFFSET UNITYSDK_OFFSET(0xC224630)
+#define MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_G__DORISEPIECE_1_OFFSET UNITYSDK_OFFSET(0xC2246B0)
+#define MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_G__DOSINKPIECE_2_OFFSET UNITYSDK_OFFSET(0xC224800)
+
+namespace MoleMole::HollowChessboard::ChessboardView
+{
+	inline static constexpr unsigned int ChessPieceLocalMoveEffect___c__DisplayClass13_0_TypeDefinitionIndex = 59032;
+
+	class ChessPieceLocalMoveEffect___c__DisplayClass13_0 : public ::System::Object
+	{
+	public:
+		::System::Action_1<::MoleMole::Config::ConfigHollowChessboard_ChessEffectBase*>* endCallback; // 0x10
+		::MoleMole::HollowChessboard::ChessboardView::ChessPieceLocalMoveEffect* __4__this; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _Run_g__CheckAndMovePiece_0(::Class_5_2169ABC757988FED* piece, ::System::Boolean rise)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_5_2169ABC757988FED*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_G__CHECKANDMOVEPIECE_0_OFFSET))(this, piece, rise);
+		}
+
+		::System::Void _Run_g__DoRisePiece_1(::Class_5_2169ABC757988FED* piece)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_5_2169ABC757988FED*))((::PBYTE)hIl2Cpp + MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_G__DORISEPIECE_1_OFFSET))(this, piece);
+		}
+
+		::System::Void _Run_g__DoSinkPiece_2(::Class_5_2169ABC757988FED* piece)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_5_2169ABC757988FED*))((::PBYTE)hIl2Cpp + MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_G__DOSINKPIECE_2_OFFSET))(this, piece);
+		}
+
+		::System::Void _Run_b__3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_B__3_OFFSET))(this);
+		}
+
+		::System::Void _Run_b__4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_B__4_OFFSET))(this);
+		}
+
+		::System::Void _Run_b__5()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_HOLLOWCHESSBOARD_CHESSBOARDVIEW_CHESSPIECELOCALMOVEEFFECT___C__DISPLAYCLASS13_0__RUN_B__5_OFFSET))(this);
+		}
+	};
+}

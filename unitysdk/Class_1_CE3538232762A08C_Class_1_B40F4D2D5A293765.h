@@ -1,0 +1,66 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace System { class String; }
+namespace System::Collections { class IEnumerator; }
+namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
+
+#define CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1AF64600)
+#define CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_COLLECTIONS_GENERIC_IENUMERABLE_SYSTEM_STRING__GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1AF64690)
+#define CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_STRING__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1AF64620)
+#define CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_COLLECTIONS_IENUMERABLE_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1AF64700)
+#define CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1AF64680)
+#define CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x1AF64630)
+#define CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1AF645F0)
+#define CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF645D0)
+
+inline static constexpr unsigned int Class_1_CE3538232762A08C_Class_1_B40F4D2D5A293765_TypeDefinitionIndex = 24840;
+
+class Class_1_CE3538232762A08C_Class_1_B40F4D2D5A293765 : public ::System::Object
+{
+public:
+	::System::String* Field_1_1; // 0x10
+	::System::Int32 Field_1_2; // 0x18
+	::System::Int32 Field_1_0; // 0x1C
+
+	::System::Void _ctor(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765__CTOR_OFFSET))(this, a1);
+	}
+
+	::System::Void System_IDisposable_Dispose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET))(this);
+	}
+
+	::System::Boolean MoveNext()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_MOVENEXT_OFFSET))(this);
+	}
+
+	::System::String* System_Collections_Generic_IEnumerator_System_String__get_Current()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_STRING__GET_CURRENT_OFFSET))(this);
+	}
+
+	::System::Void System_Collections_IEnumerator_Reset()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET))(this);
+	}
+
+	::System::Object* System_Collections_IEnumerator_get_Current()
+	{
+		return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET))(this);
+	}
+
+	::System::Collections::Generic::IEnumerator_1<::System::String*>* System_Collections_Generic_IEnumerable_System_String__GetEnumerator()
+	{
+		return ((::System::Collections::Generic::IEnumerator_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_COLLECTIONS_GENERIC_IENUMERABLE_SYSTEM_STRING__GETENUMERATOR_OFFSET))(this);
+	}
+
+	::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator()
+	{
+		return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CE3538232762A08C_CLASS_1_B40F4D2D5A293765_SYSTEM_COLLECTIONS_IENUMERABLE_GETENUMERATOR_OFFSET))(this);
+	}
+};

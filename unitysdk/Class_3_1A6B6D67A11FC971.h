@@ -1,0 +1,50 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_5560EE9F1F33A604.h"
+
+class Class_5_1C775D1A5A638660;
+class Class_5_F638703ACD0FA08E;
+namespace Nap::NapECS { class EcsWorld; }
+
+#define CLASS_3_1A6B6D67A11FC971_CREATEFILTERS_OFFSET UNITYSDK_OFFSET(0x9FBDA50)
+#define CLASS_3_1A6B6D67A11FC971_METHOD_3_2685B6183E614529_OFFSET UNITYSDK_OFFSET(0x9FBDE40)
+#define CLASS_3_1A6B6D67A11FC971_METHOD_3_BADC81CF9C936EDA_OFFSET UNITYSDK_OFFSET(0x9FBDEB0)
+#define CLASS_3_1A6B6D67A11FC971_METHOD_3_F7B575C3052FB3DA_OFFSET UNITYSDK_OFFSET(0x9FBDC50)
+#define CLASS_3_1A6B6D67A11FC971_METHOD_3_FBDCB793FA6CAE84_OFFSET UNITYSDK_OFFSET(0x9FBDF20)
+#define CLASS_3_1A6B6D67A11FC971__CTOR_OFFSET UNITYSDK_OFFSET(0x9FBDDF0)
+
+inline static constexpr unsigned int Class_3_1A6B6D67A11FC971_TypeDefinitionIndex = 43970;
+
+class Class_3_1A6B6D67A11FC971 : public ::Class_2_5560EE9F1F33A604
+{
+public:
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_1A6B6D67A11FC971__CTOR_OFFSET))(this);
+	}
+
+	::System::Void CreateFilters(::Nap::NapECS::EcsWorld* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Nap::NapECS::EcsWorld*))((::PBYTE)hIl2Cpp + CLASS_3_1A6B6D67A11FC971_CREATEFILTERS_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_F7B575C3052FB3DA(::System::Single a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_3_1A6B6D67A11FC971_METHOD_3_F7B575C3052FB3DA_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_2685B6183E614529(::System::Single a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_3_1A6B6D67A11FC971_METHOD_3_2685B6183E614529_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_BADC81CF9C936EDA(::Nap::NapECS::EcsWorld* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Nap::NapECS::EcsWorld*))((::PBYTE)hIl2Cpp + CLASS_3_1A6B6D67A11FC971_METHOD_3_BADC81CF9C936EDA_OFFSET))(this, a1);
+	}
+
+	static ::System::Void Method_3_FBDCB793FA6CAE84(::Class_5_F638703ACD0FA08E* a1, ::Class_5_1C775D1A5A638660* a2)
+	{
+		return ((::System::Void(*)(::Class_5_F638703ACD0FA08E*, ::Class_5_1C775D1A5A638660*))((::PBYTE)hIl2Cpp + CLASS_3_1A6B6D67A11FC971_METHOD_3_FBDCB793FA6CAE84_OFFSET))(a1, a2);
+	}
+};

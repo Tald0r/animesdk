@@ -1,0 +1,176 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_861B86FE388CC0DA;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralAchievementTipsContext; }
+namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
+namespace UnityEngine { class RectTransform; }
+
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_AFTERFADEOUT_OFFSET UNITYSDK_OFFSET(0xBFA5250)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_CLOSETIP_OFFSET UNITYSDK_OFFSET(0xBFA55D0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_DOANIMATION_OFFSET UNITYSDK_OFFSET(0xBFA4850)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_EXPANDBG_OFFSET UNITYSDK_OFFSET(0xBFA52C0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_GET_NEEDCACHE_OFFSET UNITYSDK_OFFSET(0xBFA56F0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBFA4520)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xBFA45C0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBFA4770)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBFA4230)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBFA42D0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_PLAYEND_OFFSET UNITYSDK_OFFSET(0xBFA4FE0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xBFA4C90)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_RESETSIZE_OFFSET UNITYSDK_OFFSET(0xBFA53C0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_SET_NEEDCACHE_OFFSET UNITYSDK_OFFSET(0xBFA5700)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_STARTSHOWACHIEVEMENT_OFFSET UNITYSDK_OFFSET(0xBFA44A0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_STOPAUTOCLOSE_OFFSET UNITYSDK_OFFSET(0xBFA5690)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_WAITFORPLAYEND_OFFSET UNITYSDK_OFFSET(0xBFA4EE0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER__CACHECLEAN_OFFSET UNITYSDK_OFFSET(0xBFA46D0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBFA5710)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBFA58B0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xBFA5750)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBFA5760)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBFA57E0)
+#define MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBFA5840)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralAchievementTipsRowWidgetController_TypeDefinitionIndex = 56174;
+
+	class UIGeneralAchievementTipsRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::Single MIN_WIDTH; // 0x0
+		::Class_2_861B86FE388CC0DA* _view; // 0x2A0
+		::System::Boolean _playEnd; // 0x2A8
+		::MoleMole::UIGeneralAchievementTipsContext* _context; // 0x2B0
+		::UnityEngine::RectTransform* MissionContent; // 0x2B8
+		::Foundation::Coroutine::CoroutineHandle _handle; // 0x2C0
+		::Foundation::Coroutine::CoroutineHandle _tweener; // 0x2C4
+		::Foundation::Coroutine::CoroutineHandle _playEndHandle; // 0x2C8
+		::System::Single _targetWidth; // 0x2CC
+		::System::Boolean _NeedCache_k__BackingField; // 0x2D0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void StartShowAchievement(::System::Int32 id)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_STARTSHOWACHIEVEMENT_OFFSET))(this, id);
+		}
+
+		::System::Void RefreshView(::System::Int32 id)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, id);
+		}
+
+		::System::Void WaitForPlayEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_WAITFORPLAYEND_OFFSET))(this);
+		}
+
+		::System::Void PlayEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_PLAYEND_OFFSET))(this);
+		}
+
+		::System::Void AfterFadeOut()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_AFTERFADEOUT_OFFSET))(this);
+		}
+
+		::System::Void DoAnimation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_DOANIMATION_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IEnumerator_1<::System::Single>* ExpandBg(::System::Single from, ::System::Single to, ::System::Single length, ::System::Boolean isFadeIn)
+		{
+			return ((::System::Collections::Generic::IEnumerator_1<::System::Single>*(*)(::PVOID, ::System::Single, ::System::Single, ::System::Single, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_EXPANDBG_OFFSET))(this, from, to, length, isFadeIn);
+		}
+
+		::System::Void ResetSize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_RESETSIZE_OFFSET))(this);
+		}
+
+		::System::Void CloseTip(::System::Boolean blend)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_CLOSETIP_OFFSET))(this, blend);
+		}
+
+		::System::Void StopAutoClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_STOPAUTOCLOSE_OFFSET))(this);
+		}
+
+		::System::Boolean get_NeedCache()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_GET_NEEDCACHE_OFFSET))(this);
+		}
+
+		::System::Void set_NeedCache(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER_SET_NEEDCACHE_OFFSET))(this, value);
+		}
+
+		::System::Void _CacheClean()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER__CACHECLEAN_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACHIEVEMENTTIPSROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+	};
+}

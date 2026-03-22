@@ -1,0 +1,166 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_CFD911C8A1A30490;
+class Class_2_8A4F9FC7E79D24E8;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace MoleMole { class UINormalSamplePopWindowController_ViewModel; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_BINDBUTTON_OFFSET UNITYSDK_OFFSET(0x7393560)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x7393430)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7393C70)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_ONMODELVALUECHANGE_OFFSET UNITYSDK_OFFSET(0x7393E10)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7393D10)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7393440)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7393B70)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_REFRESHALLVIEW_OFFSET UNITYSDK_OFFSET(0x7393AF0)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_REFRESHITEMICONBTN_OFFSET UNITYSDK_OFFSET(0x7394320)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_REFRESHRESULTTEXT_OFFSET UNITYSDK_OFFSET(0x7394680)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_REFRESHTEXT_OFFSET UNITYSDK_OFFSET(0x7393EB0)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0x7393DA0)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_0_OFFSET UNITYSDK_OFFSET(0x73947F0)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_1_OFFSET UNITYSDK_OFFSET(0x7394820)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_2_OFFSET UNITYSDK_OFFSET(0x7394880)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_3_OFFSET UNITYSDK_OFFSET(0x73948E0)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_4_OFFSET UNITYSDK_OFFSET(0x7394910)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_5_OFFSET UNITYSDK_OFFSET(0x7394940)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x73947A0)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7394960)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x73949D0)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x73949E0)
+#define MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x73949F0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UINormalSamplePopWindowController_TypeDefinitionIndex = 48445;
+
+	class UINormalSamplePopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_8A4F9FC7E79D24E8* _view; // 0x2F8
+		::Class_1_CFD911C8A1A30490* _model; // 0x300
+		::MoleMole::UINormalSamplePopWindowController_ViewModel* _vm; // 0x308
+		::MoleMole::UIItemIconBtnWidgetController* _itemIconBtn; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnModelValueChange(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_ONMODELVALUECHANGE_OFFSET))(this, args);
+		}
+
+		::System::Void RefreshAllView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_REFRESHALLVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_REFRESHTEXT_OFFSET))(this);
+		}
+
+		::System::Void RefreshItemIconBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_REFRESHITEMICONBTN_OFFSET))(this);
+		}
+
+		::System::Void RefreshResultText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_REFRESHRESULTTEXT_OFFSET))(this);
+		}
+
+		::System::Void BindButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER_BINDBUTTON_OFFSET))(this);
+		}
+
+		::System::Void _BindButton_b__13_0(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_0_OFFSET))(this, value);
+		}
+
+		::System::Void _BindButton_b__13_1(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_1_OFFSET))(this, value);
+		}
+
+		::System::Void _BindButton_b__13_2(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_2_OFFSET))(this, value);
+		}
+
+		::System::Void _BindButton_b__13_3(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_3_OFFSET))(this, value);
+		}
+
+		::System::Void _BindButton_b__13_4(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_4_OFFSET))(this, value);
+		}
+
+		::System::Void _BindButton_b__13_5()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER__BINDBUTTON_B__13_5_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINORMALSAMPLEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

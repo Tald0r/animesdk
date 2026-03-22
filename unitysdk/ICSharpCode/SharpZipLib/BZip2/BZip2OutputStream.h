@@ -1,0 +1,347 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/IO/SeekOrigin.h"
+#include "unitysdk/System/IO/Stream.h"
+
+namespace ICSharpCode::SharpZipLib::Checksums { class IChecksum; }
+
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_ALLOCATECOMPRESSSTRUCTURES_OFFSET UNITYSDK_OFFSET(0x1A26D970)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSFINISHEDWITHSTREAM_OFFSET UNITYSDK_OFFSET(0x1A26F880)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSPUTINTVS_OFFSET UNITYSDK_OFFSET(0x1A26F900)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSPUTINT_OFFSET UNITYSDK_OFFSET(0x1A26F530)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSPUTUCHAR_OFFSET UNITYSDK_OFFSET(0x1A26F360)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSSETSTREAM_OFFSET UNITYSDK_OFFSET(0x1A26D950)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSW_OFFSET UNITYSDK_OFFSET(0x1A26F730)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_CLOSE_OFFSET UNITYSDK_OFFSET(0x1A26E8D0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1A26DE20)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_DOREVERSIBLETRANSFORMATION_OFFSET UNITYSDK_OFFSET(0x1A26F400)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_ENDBLOCK_OFFSET UNITYSDK_OFFSET(0x1A26EA20)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_ENDCOMPRESSION_OFFSET UNITYSDK_OFFSET(0x1A26EFC0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_FINALIZE_OFFSET UNITYSDK_OFFSET(0x1A26DDB0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_FLUSH_OFFSET UNITYSDK_OFFSET(0x1A26F330)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_FULLGTU_OFFSET UNITYSDK_OFFSET(0x1A274380)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GENERATEMTFVALUES_OFFSET UNITYSDK_OFFSET(0x1A273810)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_BYTESWRITTEN_OFFSET UNITYSDK_OFFSET(0x1A26EFB0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_CANREAD_OFFSET UNITYSDK_OFFSET(0x1A26DF40)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_CANSEEK_OFFSET UNITYSDK_OFFSET(0x1A26DF50)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_CANWRITE_OFFSET UNITYSDK_OFFSET(0x1A26DF60)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_ISSTREAMOWNER_OFFSET UNITYSDK_OFFSET(0x1A26DF20)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_LENGTH_OFFSET UNITYSDK_OFFSET(0x1A26DF90)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_POSITION_OFFSET UNITYSDK_OFFSET(0x1A26DFC0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_HBASSIGNCODES_OFFSET UNITYSDK_OFFSET(0x1A273730)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_HBMAKECODELENGTHS_OFFSET UNITYSDK_OFFSET(0x1A272AE0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_INITBLOCK_OFFSET UNITYSDK_OFFSET(0x1A26DC30)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1A26DA00)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_MAINSORT_OFFSET UNITYSDK_OFFSET(0x1A2752C0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_MAKEMAPS_OFFSET UNITYSDK_OFFSET(0x1A26E950)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_MED3_OFFSET UNITYSDK_OFFSET(0x1A2752A0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_MOVETOFRONTCODEANDSEND_OFFSET UNITYSDK_OFFSET(0x1A26F7D0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_PANIC_OFFSET UNITYSDK_OFFSET(0x1A272A90)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_QSORT3_OFFSET UNITYSDK_OFFSET(0x1A274940)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_RANDOMISEBLOCK_OFFSET UNITYSDK_OFFSET(0x1A276120)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_READBYTE_OFFSET UNITYSDK_OFFSET(0x1A26E0E0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_READ_OFFSET UNITYSDK_OFFSET(0x1A26E130)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SEEK_OFFSET UNITYSDK_OFFSET(0x1A26E040)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SENDMTFVALUES_OFFSET UNITYSDK_OFFSET(0x1A26F9A0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SETLENGTH_OFFSET UNITYSDK_OFFSET(0x1A26E090)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SET_ISSTREAMOWNER_OFFSET UNITYSDK_OFFSET(0x1A26DF30)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SET_POSITION_OFFSET UNITYSDK_OFFSET(0x1A26DFF0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SIMPLESORT_OFFSET UNITYSDK_OFFSET(0x1A273E90)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_VSWAP_OFFSET UNITYSDK_OFFSET(0x1A2747F0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_WRITEBYTE_OFFSET UNITYSDK_OFFSET(0x1A26E360)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_WRITERUN_OFFSET UNITYSDK_OFFSET(0x1A26E3E0)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_WRITE_OFFSET UNITYSDK_OFFSET(0x1A26E180)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A26D700)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x1A26D930)
+
+namespace ICSharpCode::SharpZipLib::BZip2
+{
+	inline static constexpr unsigned int BZip2OutputStream_TypeDefinitionIndex = 6634;
+
+	class BZip2OutputStream : public ::System::IO::Stream
+	{
+	public:
+		// static const ::System::Int32 SETMASK = 0x200000; // 0x0
+		// static const ::System::Int32 CLEARMASK = 0xFFDFFFFF; // 0x0
+		// static const ::System::Int32 GREATER_ICOST = 0xF; // 0x0
+		// static const ::System::Int32 LESSER_ICOST = 0x0; // 0x0
+		// static const ::System::Int32 SMALL_THRESH = 0x14; // 0x0
+		// static const ::System::Int32 DEPTH_THRESH = 0xA; // 0x0
+		// static const ::System::Int32 QSORT_STACK_SIZE = 0x3E8; // 0x0
+		::Il2CppArray<::System::Char>* seqToUnseq; // 0x28
+		::Il2CppArray<::System::Int16>* szptr; // 0x30
+		::Il2CppArray<::System::Boolean>* inUse; // 0x38
+		::Il2CppArray<::System::Int32>* mtfFreq; // 0x40
+		::Il2CppArray<::System::Int32>* quadrant; // 0x48
+		::Il2CppArray<::System::Char>* selector; // 0x50
+		::Il2CppArray<::System::Int32>* ftab; // 0x58
+		::Il2CppArray<::System::Char>* unseqToSeq; // 0x60
+		::Il2CppArray<::System::Int32>* zptr; // 0x68
+		::Il2CppArray<::System::Int32>* increments; // 0x70
+		::Il2CppArray<::System::Byte>* block; // 0x78
+		::ICSharpCode::SharpZipLib::Checksums::IChecksum* mCrc; // 0x80
+		::System::IO::Stream* baseStream; // 0x88
+		::Il2CppArray<::System::Char>* selectorMtf; // 0x90
+		::System::Int32 workDone; // 0x98
+		::System::Int32 origPtr; // 0x9C
+		::System::Int32 blockSize100k; // 0xA0
+		::System::UInt32 combinedCRC; // 0xA4
+		::System::Int32 nMTF; // 0xA8
+		::System::Int32 bytesOut; // 0xAC
+		::System::Int32 bsLive; // 0xB0
+		::System::Int32 workLimit; // 0xB4
+		::System::Int32 currentChar; // 0xB8
+		::System::Boolean blockRandomised; // 0xBC
+		::System::Boolean isStreamOwner; // 0xBD
+		::System::Boolean firstAttempt; // 0xBE
+		::System::Boolean disposed_; // 0xBF
+		::System::Int32 bsBuff; // 0xC0
+		::System::Int32 allowableBlockSize; // 0xC4
+		::System::Int32 nBlocksRandomised; // 0xC8
+		::System::Int32 workFactor; // 0xCC
+		::System::UInt32 blockCRC; // 0xD0
+		::System::Int32 runLength; // 0xD4
+		::System::Int32 last; // 0xD8
+		::System::Int32 nInUse; // 0xDC
+
+		::System::Void _ctor(::System::IO::Stream* stream)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM__CTOR_OFFSET))(this, stream);
+		}
+
+		::System::Void _ctor_1(::System::IO::Stream* stream, ::System::Int32 blockSize)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM__CTOR_1_OFFSET))(this, stream, blockSize);
+		}
+
+		::System::Void Finalize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_FINALIZE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsStreamOwner()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_ISSTREAMOWNER_OFFSET))(this);
+		}
+
+		::System::Void set_IsStreamOwner(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SET_ISSTREAMOWNER_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_CanRead()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_CANREAD_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanSeek()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_CANSEEK_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanWrite()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_CANWRITE_OFFSET))(this);
+		}
+
+		::System::Int64 get_Length()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_LENGTH_OFFSET))(this);
+		}
+
+		::System::Int64 get_Position()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_POSITION_OFFSET))(this);
+		}
+
+		::System::Void set_Position(::System::Int64 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SET_POSITION_OFFSET))(this, value);
+		}
+
+		::System::Int64 Seek(::System::Int64 offset, ::System::IO::SeekOrigin origin)
+		{
+			return ((::System::Int64(*)(::PVOID, ::System::Int64, ::System::IO::SeekOrigin))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SEEK_OFFSET))(this, offset, origin);
+		}
+
+		::System::Void SetLength(::System::Int64 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SETLENGTH_OFFSET))(this, value);
+		}
+
+		::System::Int32 ReadByte()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_READBYTE_OFFSET))(this);
+		}
+
+		::System::Int32 Read(::Il2CppArray<::System::Byte>* buffer, ::System::Int32 offset, ::System::Int32 count)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_READ_OFFSET))(this, buffer, offset, count);
+		}
+
+		::System::Void Write(::Il2CppArray<::System::Byte>* buffer, ::System::Int32 offset, ::System::Int32 count)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_WRITE_OFFSET))(this, buffer, offset, count);
+		}
+
+		::System::Void WriteByte(::System::Byte value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Byte))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_WRITEBYTE_OFFSET))(this, value);
+		}
+
+		::System::Void Close()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_CLOSE_OFFSET))(this);
+		}
+
+		::System::Void MakeMaps()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_MAKEMAPS_OFFSET))(this);
+		}
+
+		::System::Void WriteRun()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_WRITERUN_OFFSET))(this);
+		}
+
+		::System::Int32 get_BytesWritten()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GET_BYTESWRITTEN_OFFSET))(this);
+		}
+
+		::System::Void Dispose(::System::Boolean disposing)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_DISPOSE_OFFSET))(this, disposing);
+		}
+
+		::System::Void Flush()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_FLUSH_OFFSET))(this);
+		}
+
+		::System::Void Initialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_INITIALIZE_OFFSET))(this);
+		}
+
+		::System::Void InitBlock()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_INITBLOCK_OFFSET))(this);
+		}
+
+		::System::Void EndBlock()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_ENDBLOCK_OFFSET))(this);
+		}
+
+		::System::Void EndCompression()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_ENDCOMPRESSION_OFFSET))(this);
+		}
+
+		::System::Void BsSetStream(::System::IO::Stream* stream)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSSETSTREAM_OFFSET))(this, stream);
+		}
+
+		::System::Void BsFinishedWithStream()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSFINISHEDWITHSTREAM_OFFSET))(this);
+		}
+
+		::System::Void BsW(::System::Int32 n, ::System::Int32 v)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSW_OFFSET))(this, n, v);
+		}
+
+		::System::Void BsPutUChar(::System::Int32 c)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSPUTUCHAR_OFFSET))(this, c);
+		}
+
+		::System::Void BsPutint(::System::Int32 u)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSPUTINT_OFFSET))(this, u);
+		}
+
+		::System::Void BsPutIntVS(::System::Int32 numBits, ::System::Int32 c)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_BSPUTINTVS_OFFSET))(this, numBits, c);
+		}
+
+		::System::Void SendMTFValues()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SENDMTFVALUES_OFFSET))(this);
+		}
+
+		::System::Void MoveToFrontCodeAndSend()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_MOVETOFRONTCODEANDSEND_OFFSET))(this);
+		}
+
+		::System::Void SimpleSort(::System::Int32 lo, ::System::Int32 hi, ::System::Int32 d)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_SIMPLESORT_OFFSET))(this, lo, hi, d);
+		}
+
+		::System::Void Vswap(::System::Int32 p1, ::System::Int32 p2, ::System::Int32 n)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_VSWAP_OFFSET))(this, p1, p2, n);
+		}
+
+		::System::Void QSort3(::System::Int32 loSt, ::System::Int32 hiSt, ::System::Int32 dSt)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_QSORT3_OFFSET))(this, loSt, hiSt, dSt);
+		}
+
+		::System::Void MainSort()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_MAINSORT_OFFSET))(this);
+		}
+
+		::System::Void RandomiseBlock()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_RANDOMISEBLOCK_OFFSET))(this);
+		}
+
+		::System::Void DoReversibleTransformation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_DOREVERSIBLETRANSFORMATION_OFFSET))(this);
+		}
+
+		::System::Boolean FullGtU(::System::Int32 i1, ::System::Int32 i2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_FULLGTU_OFFSET))(this, i1, i2);
+		}
+
+		::System::Void AllocateCompressStructures()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_ALLOCATECOMPRESSSTRUCTURES_OFFSET))(this);
+		}
+
+		::System::Void GenerateMTFValues()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_GENERATEMTFVALUES_OFFSET))(this);
+		}
+
+		static ::System::Void Panic()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_PANIC_OFFSET))();
+		}
+
+		static ::System::Void HbMakeCodeLengths(::Il2CppArray<::System::Char>* len, ::Il2CppArray<::System::Int32>* freq, ::System::Int32 alphaSize, ::System::Int32 maxLen)
+		{
+			return ((::System::Void(*)(::Il2CppArray<::System::Char>*, ::Il2CppArray<::System::Int32>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_HBMAKECODELENGTHS_OFFSET))(len, freq, alphaSize, maxLen);
+		}
+
+		static ::System::Void HbAssignCodes(::Il2CppArray<::System::Int32>* code, ::Il2CppArray<::System::Char>* length, ::System::Int32 minLen, ::System::Int32 maxLen, ::System::Int32 alphaSize)
+		{
+			return ((::System::Void(*)(::Il2CppArray<::System::Int32>*, ::Il2CppArray<::System::Char>*, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_HBASSIGNCODES_OFFSET))(code, length, minLen, maxLen, alphaSize);
+		}
+
+		static ::System::Byte Med3(::System::Byte a, ::System::Byte b, ::System::Byte c)
+		{
+			return ((::System::Byte(*)(::System::Byte, ::System::Byte, ::System::Byte))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2OUTPUTSTREAM_MED3_OFFSET))(a, b, c);
+		}
+	};
+}

@@ -1,0 +1,397 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3A8D4AF679CBDF1E.h"
+#include "unitysdk/MoleMole/MiniGame/MiniGameWorldBase.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_1_782D7B640E2E81AE;
+class Class_1_B61C4EDDF0AF60D0;
+class Class_3_126510A8BEABCBD0_16;
+class Class_3_1A345EAE5F749316_31;
+class Class_3_801F86617B9ECD68;
+class Class_3_9EBB12CA711CD77A;
+class Class_3_CB04F781C589177B;
+class Class_3_CE3642B3ECB61D27_19;
+class Class_3_DEF6B8E2ED2D1FB3_1;
+namespace MoleMole { class UIHoundGame3DModelController; }
+namespace MoleMole { class UIHoundGameEndPageController; }
+namespace MoleMole { class UIHoundGamePageController; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class RenderTexture; }
+
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_DOINITNETCONNET_OFFSET UNITYSDK_OFFSET(0xA479260)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ENTERGAMEEND_OFFSET UNITYSDK_OFFSET(0xA47C0E0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ENTERGAME_OFFSET UNITYSDK_OFFSET(0xA479800)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ENTERSTARTPAGE_OFFSET UNITYSDK_OFFSET(0xA47BD30)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETMULTIPLAYERINFOS_OFFSET UNITYSDK_OFFSET(0xA47ECD0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETNIKENAMEBYREADYINFOBYPLAYERIDX_OFFSET UNITYSDK_OFFSET(0xA47D020)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETNIKENAMEBYREADYINFO_OFFSET UNITYSDK_OFFSET(0xA47CED0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETPLAYERPOSITION_OFFSET UNITYSDK_OFFSET(0xA47C6E0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETPVPREALTIMERANK_OFFSET UNITYSDK_OFFSET(0xA47CCD0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETRANDOMSEED_OFFSET UNITYSDK_OFFSET(0xA47BC20)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETSELFUID_OFFSET UNITYSDK_OFFSET(0xA47BCB0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GET_MINIGAMERT_OFFSET UNITYSDK_OFFSET(0xA47B6D0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_INITGAMETYPEBYARCADEGAMEID_OFFSET UNITYSDK_OFFSET(0xA47AB60)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ISGAMEENDSTATE_OFFSET UNITYSDK_OFFSET(0xA47B6F0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONCREATE_OFFSET UNITYSDK_OFFSET(0xE119620)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONENTER_OFFSET UNITYSDK_OFFSET(0xA47CAE0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONEXIT_OFFSET UNITYSDK_OFFSET(0xA47AEC0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONLOADFINISH_OFFSET UNITYSDK_OFFSET(0xA479080)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVALLPLAYERREADY_OFFSET UNITYSDK_OFFSET(0xA47DCE0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVGAMEEND_OFFSET UNITYSDK_OFFSET(0xA47DD60)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVPLAYEREVENTS_OFFSET UNITYSDK_OFFSET(0xA47E1D0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVPLAYERINFO_OFFSET UNITYSDK_OFFSET(0xA47E040)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVPLAYERREADYINFO_OFFSET UNITYSDK_OFFSET(0xA47D1F0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVPLAYERREADY_OFFSET UNITYSDK_OFFSET(0xA47D820)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONTHREALGAMESTARTSCNOTIFY_OFFSET UNITYSDK_OFFSET(0xA47E3E0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONTITLEVIDEOPLAYSTART_OFFSET UNITYSDK_OFFSET(0xA478DC0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONUFIGHTCONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xA479A10)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONUFIGHTDISCONNECT_OFFSET UNITYSDK_OFFSET(0xA479B20)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONUFIGHTRECONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xA47A590)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONUFIGHTSTARTRECONNECT_OFFSET UNITYSDK_OFFSET(0xA479C30)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONWILLEXIT_OFFSET UNITYSDK_OFFSET(0xA47AC60)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONWORLDINITNOTIFY_OFFSET UNITYSDK_OFFSET(0xA47E800)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_PAUSE_OFFSET UNITYSDK_OFFSET(0xA47A090)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_REALENTERGAME_OFFSET UNITYSDK_OFFSET(0xA47B8E0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_REALSHOWENDPAGE_OFFSET UNITYSDK_OFFSET(0xA47C1B0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_REGISTERLOADFINISHCALLBACK_OFFSET UNITYSDK_OFFSET(0xA47B630)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_RESETPARAM_OFFSET UNITYSDK_OFFSET(0xA478F30)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_SETARCADEGAMEID_OFFSET UNITYSDK_OFFSET(0xA47A970)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_SETPLAYERMULTIPLAYSTATE_OFFSET UNITYSDK_OFFSET(0xA479DD0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_SET_MINIGAMERT_OFFSET UNITYSDK_OFFSET(0xA47B6E0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_SHOWGAMEENDPAGE_OFFSET UNITYSDK_OFFSET(0xA47C3E0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_TRYSTARTGAME_OFFSET UNITYSDK_OFFSET(0xA4794E0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD__CTOR_OFFSET UNITYSDK_OFFSET(0xA47EFD0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ISGAMEENDSTATE_OFFSET UNITYSDK_OFFSET(0xA47F100)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONCREATE_OFFSET UNITYSDK_OFFSET(0xA47F160)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONENTER_OFFSET UNITYSDK_OFFSET(0xA47F170)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONEXIT_OFFSET UNITYSDK_OFFSET(0xA47F180)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONLOADFINISH_OFFSET UNITYSDK_OFFSET(0xA47F190)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONTITLEVIDEOPLAYSTART_OFFSET UNITYSDK_OFFSET(0xA47F1F0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONUFIGHTCONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xA47F250)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONUFIGHTDISCONNECT_OFFSET UNITYSDK_OFFSET(0xA47F2B0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONUFIGHTRECONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xA47F310)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONUFIGHTSTARTRECONNECT_OFFSET UNITYSDK_OFFSET(0xA47F370)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONWILLEXIT_OFFSET UNITYSDK_OFFSET(0xA47F3D0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_PAUSE_OFFSET UNITYSDK_OFFSET(0xA47F430)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_REGISTERLOADFINISHCALLBACK_OFFSET UNITYSDK_OFFSET(0xA47F4A0)
+#define MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_SETARCADEGAMEID_OFFSET UNITYSDK_OFFSET(0xA47F510)
+
+namespace MoleMole::MiniGame
+{
+	inline static constexpr unsigned int HoundMiniGameWorld_TypeDefinitionIndex = 67436;
+
+	class HoundMiniGameWorld : public ::MoleMole::MiniGame::MiniGameWorldBase
+	{
+	public:
+		::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::Int32>* UidToDisplayIndexDict; // 0x88
+		::Class_1_782D7B640E2E81AE* arcadeLogic; // 0x90
+		::MoleMole::UIHoundGameEndPageController* endPageCtrl; // 0x98
+		::MoleMole::UIHoundGamePageController* houndGamePageCtrl; // 0xA0
+		::MoleMole::UIHoundGame3DModelController* houndGame3dCtrl; // 0xA8
+		::System::Action* loadFinishCb; // 0xB0
+		::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_3_CE3642B3ECB61D27_19*>* playerInfoDict; // 0xB8
+		::Class_3_801F86617B9ECD68* EndBattleInfo; // 0xC0
+		::UnityEngine::RenderTexture* gameRt; // 0xC8
+		::System::Int32 serverRandomSeed; // 0xD0
+		::System::Single startSeconds; // 0xD4
+		::System::Int32 historyBestScore; // 0xD8
+		::System::Boolean isActivity; // 0xDC
+		::System::Boolean allPlayherReadySetAfterLoad; // 0xDD
+		::System::Boolean isConncted; // 0xDE
+		::System::Boolean isLoad; // 0xDF
+		::System::Boolean isSendPlayerReady; // 0xE0
+		::System::Boolean allPlayerReady; // 0xE1
+		::System::Int32 selfIndex; // 0xE4
+		::System::Int32 onlinePvpPlayerCount; // 0xE8
+		::Enum_3_3A8D4AF679CBDF1E gameType; // 0xEC
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONCREATE_OFFSET))(this);
+		}
+
+		::System::Void OnTitleVideoPlayStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONTITLEVIDEOPLAYSTART_OFFSET))(this);
+		}
+
+		::System::Void ResetParam()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_RESETPARAM_OFFSET))(this);
+		}
+
+		::System::Void OnLoadFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONLOADFINISH_OFFSET))(this);
+		}
+
+		::System::Void DoInitNetConnet()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_DOINITNETCONNET_OFFSET))(this);
+		}
+
+		::System::Void TryStartGame()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_TRYSTARTGAME_OFFSET))(this);
+		}
+
+		::System::Void OnUFightConnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONUFIGHTCONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void OnUFightDisconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONUFIGHTDISCONNECT_OFFSET))(this);
+		}
+
+		::System::Void OnUFightStartReconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONUFIGHTSTARTRECONNECT_OFFSET))(this);
+		}
+
+		::System::Void OnUFightReconnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONUFIGHTRECONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void SetPlayerMultiPlayState(::System::Boolean isInPlay)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_SETPLAYERMULTIPLAYSTATE_OFFSET))(this, isInPlay);
+		}
+
+		::System::Void SetArcadeGameID(::System::UInt32 arcadeGameID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_SETARCADEGAMEID_OFFSET))(this, arcadeGameID);
+		}
+
+		::System::Void InitGameTypeByArcadeGameID()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_INITGAMETYPEBYARCADEGAMEID_OFFSET))(this);
+		}
+
+		::System::Void OnWillExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONWILLEXIT_OFFSET))(this);
+		}
+
+		::System::Void OnExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONEXIT_OFFSET))(this);
+		}
+
+		::System::Void RegisterLoadFinishCallback(::System::Action* cb)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_REGISTERLOADFINISHCALLBACK_OFFSET))(this, cb);
+		}
+
+		::UnityEngine::RenderTexture* get_MiniGameRT()
+		{
+			return ((::UnityEngine::RenderTexture*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GET_MINIGAMERT_OFFSET))(this);
+		}
+
+		::System::Void set_MiniGameRT(::UnityEngine::RenderTexture* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::RenderTexture*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_SET_MINIGAMERT_OFFSET))(this, value);
+		}
+
+		::System::Boolean IsGameEndState()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ISGAMEENDSTATE_OFFSET))(this);
+		}
+
+		::System::Void EnterGame()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ENTERGAME_OFFSET))(this);
+		}
+
+		::System::Void RealEnterGame(::System::Boolean isShowUI)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_REALENTERGAME_OFFSET))(this, isShowUI);
+		}
+
+		::System::Int32 GetRandomSeed()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETRANDOMSEED_OFFSET))(this);
+		}
+
+		::System::UInt64 GetSelfUID()
+		{
+			return ((::System::UInt64(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETSELFUID_OFFSET))(this);
+		}
+
+		::System::Void EnterStartPage(::System::Boolean isContinue)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ENTERSTARTPAGE_OFFSET))(this, isContinue);
+		}
+
+		::System::Void EnterGameEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ENTERGAMEEND_OFFSET))(this);
+		}
+
+		::System::Void ShowGameEndPage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_SHOWGAMEENDPAGE_OFFSET))(this);
+		}
+
+		::System::Void RealShowEndPage(::System::Boolean isShowUI)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_REALSHOWENDPAGE_OFFSET))(this, isShowUI);
+		}
+
+		::UnityEngine::Vector3 GetPlayerPosition(::System::Boolean usePlayerSpriteNodePos)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETPLAYERPOSITION_OFFSET))(this, usePlayerSpriteNodePos);
+		}
+
+		::System::Void Pause(::System::Boolean pauseState)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_PAUSE_OFFSET))(this, pauseState);
+		}
+
+		::System::Void OnEnter()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONENTER_OFFSET))(this);
+		}
+
+		::System::Int32 GetPVPRealTimeRank()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETPVPREALTIMERANK_OFFSET))(this);
+		}
+
+		::System::String* GetNikeNameByReadyInfo(::System::UInt32 playerId)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETNIKENAMEBYREADYINFO_OFFSET))(this, playerId);
+		}
+
+		::System::String* GetNikeNameByReadyInfoByPlayerIdx(::System::UInt32 playerIdx)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETNIKENAMEBYREADYINFOBYPLAYERIDX_OFFSET))(this, playerIdx);
+		}
+
+		::System::Void OnRsvPlayerReadyInfo(::Class_3_CB04F781C589177B* playersReadyInfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_CB04F781C589177B*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVPLAYERREADYINFO_OFFSET))(this, playersReadyInfo);
+		}
+
+		::System::Void OnRsvPlayerReady(::Class_3_CE3642B3ECB61D27_19* readyInfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_CE3642B3ECB61D27_19*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVPLAYERREADY_OFFSET))(this, readyInfo);
+		}
+
+		::System::Void OnRsvAllPlayerReady()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVALLPLAYERREADY_OFFSET))(this);
+		}
+
+		::System::Void OnRsvGameEnd(::Class_3_DEF6B8E2ED2D1FB3_1* endBattleInfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_DEF6B8E2ED2D1FB3_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVGAMEEND_OFFSET))(this, endBattleInfo);
+		}
+
+		::System::Void OnRsvPlayerInfo(::Class_3_126510A8BEABCBD0_16* info)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_126510A8BEABCBD0_16*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVPLAYERINFO_OFFSET))(this, info);
+		}
+
+		::System::Void OnRsvPlayerEvents(::Class_3_1A345EAE5F749316_31* notify)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_1A345EAE5F749316_31*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONRSVPLAYEREVENTS_OFFSET))(this, notify);
+		}
+
+		::System::Void OnThRealGameStartScNotify()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONTHREALGAMESTARTSCNOTIFY_OFFSET))(this);
+		}
+
+		::System::Void OnWorldInitNotify(::Class_3_9EBB12CA711CD77A* notify)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_9EBB12CA711CD77A*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_ONWORLDINITNOTIFY_OFFSET))(this, notify);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_B61C4EDDF0AF60D0*>* GetMultiPlayerInfos()
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_B61C4EDDF0AF60D0*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD_GETMULTIPLAYERINFOS_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsGameEndState()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ISGAMEENDSTATE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONCREATE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnEnter()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONENTER_OFFSET))(this);
+		}
+
+		::System::Void __base_OnExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONEXIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnLoadFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONLOADFINISH_OFFSET))(this);
+		}
+
+		::System::Void __base_OnTitleVideoPlayStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONTITLEVIDEOPLAYSTART_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightConnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONUFIGHTCONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightDisconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONUFIGHTDISCONNECT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightReconnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONUFIGHTRECONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightStartReconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONUFIGHTSTARTRECONNECT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnWillExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_ONWILLEXIT_OFFSET))(this);
+		}
+
+		::System::Void __base_Pause(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_PAUSE_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_RegisterLoadFinishCallback(::System::Action* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_REGISTERLOADFINISHCALLBACK_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetArcadeGameID(::System::UInt32 P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_HOUNDMINIGAMEWORLD___BASE_SETARCADEGAMEID_OFFSET))(this, P0);
+		}
+	};
+}

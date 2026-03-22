@@ -1,0 +1,48 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_224;
+class Class_1_A8E94BAAEBB55F9A;
+
+#define CLASS_1_4EB754B52129D914_1_METHOD_1_2A6B87C525933554_1_OFFSET UNITYSDK_OFFSET(0x74C4B30)
+#define CLASS_1_4EB754B52129D914_1_METHOD_1_2A6B87C525933554_OFFSET UNITYSDK_OFFSET(0x74C4AC0)
+#define CLASS_1_4EB754B52129D914_1_METHOD_1_E20365345CC9C440_OFFSET UNITYSDK_OFFSET(0x74C4C40)
+#define CLASS_1_4EB754B52129D914_1_METHOD_1_F8C7231308CD2C82_OFFSET UNITYSDK_OFFSET(0x74C4BB0)
+#define CLASS_1_4EB754B52129D914_1__CTOR_OFFSET UNITYSDK_OFFSET(0x74C4BA0)
+
+inline static constexpr unsigned int Class_1_4EB754B52129D914_1_TypeDefinitionIndex = 51106;
+
+class Class_1_4EB754B52129D914_1 : public ::System::Object
+{
+public:
+	static ::Class_1_4EB754B52129D914_1** StaticGet_Field_1_0()
+	{
+		return (::Class_1_4EB754B52129D914_1**)Il2CppClass::FromTypeDefinitionIndex(Class_1_4EB754B52129D914_1_TypeDefinitionIndex)->GetStaticField(0x30890);
+	}
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_4EB754B52129D914_1__CTOR_OFFSET))(this);
+	}
+
+	::System::Boolean Method_1_2A6B87C525933554(::Class_1_A8E94BAAEBB55F9A* a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Class_1_A8E94BAAEBB55F9A*))((::PBYTE)hIl2Cpp + CLASS_1_4EB754B52129D914_1_METHOD_1_2A6B87C525933554_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Method_1_2A6B87C525933554_1(::Class_1_A8E94BAAEBB55F9A* a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Class_1_A8E94BAAEBB55F9A*))((::PBYTE)hIl2Cpp + CLASS_1_4EB754B52129D914_1_METHOD_1_2A6B87C525933554_1_OFFSET))(this, a1);
+	}
+
+	static ::System::Void Method_1_F8C7231308CD2C82()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_4EB754B52129D914_1_METHOD_1_F8C7231308CD2C82_OFFSET))();
+	}
+
+	static ::Class_0_16E4307DCC419505_224* Method_1_E20365345CC9C440()
+	{
+		return ((::Class_0_16E4307DCC419505_224*(*)())((::PBYTE)hIl2Cpp + CLASS_1_4EB754B52129D914_1_METHOD_1_E20365345CC9C440_OFFSET))();
+	}
+};

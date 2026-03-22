@@ -1,0 +1,131 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_79526D80B8F6897C;
+class Class_2_5651F3E03076F757;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ENABLENEW_OFFSET UNITYSDK_OFFSET(0xA91BF70)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_GET_NEEDCACHE_OFFSET UNITYSDK_OFFSET(0xA91BEA0)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ISENABLE_OFFSET UNITYSDK_OFFSET(0xA91C910)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA91C480)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA91C600)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA91C520)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA91BEC0)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA91C3D0)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_SETREFNOTIFICATIONNODE_OFFSET UNITYSDK_OFFSET(0xA91C8A0)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_SET_NEEDCACHE_OFFSET UNITYSDK_OFFSET(0xA91BEB0)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_SHOWREDPOINT_OFFSET UNITYSDK_OFFSET(0xA91C720)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER__CACHECLEAN_OFFSET UNITYSDK_OFFSET(0xA91C6B0)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA91CA10)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA91CA50)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA91CAC0)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA91CAD0)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA91CB50)
+#define MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA91CBB0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralNewHintWidgetController_TypeDefinitionIndex = 41595;
+
+	class UIGeneralNewHintWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_5651F3E03076F757* _view; // 0x2A0
+		::System::Int32 _nowCount; // 0x2A8
+		::System::Boolean _NeedCache_k__BackingField; // 0x2AC
+		::Class_1_79526D80B8F6897C* _notificationNode; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_NeedCache()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_GET_NEEDCACHE_OFFSET))(this);
+		}
+
+		::System::Void set_NeedCache(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_SET_NEEDCACHE_OFFSET))(this, value);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Boolean ShowRedPoint()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_SHOWREDPOINT_OFFSET))(this);
+		}
+
+		::System::Void EnableNew(::System::Boolean isEnable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ENABLENEW_OFFSET))(this, isEnable);
+		}
+
+		::System::Void SetRefNotificationNode(::Class_1_79526D80B8F6897C* node)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_79526D80B8F6897C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_SETREFNOTIFICATIONNODE_OFFSET))(this, node);
+		}
+
+		::System::Boolean IsEnable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER_ISENABLE_OFFSET))(this);
+		}
+
+		::System::Void _CacheClean()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER__CACHECLEAN_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWHINTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,93 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_809B068491AD1EEA_2;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A819C0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A81A60)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A81870)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A81910)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_SETCONTENTTEXTKEY_OFFSET UNITYSDK_OFFSET(0x7A81BD0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_SETTIMER_OFFSET UNITYSDK_OFFSET(0x7A81DB0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_SETTITLETEXTKEY_OFFSET UNITYSDK_OFFSET(0x7A81B40)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A81EB0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A81EE0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A81F50)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A81FD0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A82030)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelPauseBattleInfoDetailRowWidgetController_TypeDefinitionIndex = 39630;
+
+	class UIInLevelPauseBattleInfoDetailRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_809B068491AD1EEA_2* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetTitleTextKey(::System::String* key)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_SETTITLETEXTKEY_OFFSET))(this, key);
+		}
+
+		::System::Void SetContentTextKey(::System::Collections::Generic::List_1<::System::String*>* keyList)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::System::String*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_SETCONTENTTEXTKEY_OFFSET))(this, keyList);
+		}
+
+		::System::Void SetTimer(::System::Single time, ::System::String* titleText)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER_SETTIMER_OFFSET))(this, time, titleText);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFODETAILROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

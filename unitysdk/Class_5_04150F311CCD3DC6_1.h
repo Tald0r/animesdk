@@ -1,0 +1,38 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_4_B8EB3E9191ADE6A5.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_E87F1D15F1D4AC72;
+namespace MoleMole { class UIControllerContextBase; }
+
+#define CLASS_5_04150F311CCD3DC6_1_METHOD_5_076188C050222996_OFFSET UNITYSDK_OFFSET(0xA076280)
+#define CLASS_5_04150F311CCD3DC6_1_METHOD_5_261D4B62BEE14763_OFFSET UNITYSDK_OFFSET(0xA076440)
+#define CLASS_5_04150F311CCD3DC6_1_METHOD_5_68A1B624A5C16E2F_OFFSET UNITYSDK_OFFSET(0xA076450)
+#define CLASS_5_04150F311CCD3DC6_1__CTOR_OFFSET UNITYSDK_OFFSET(0xA076430)
+
+inline static constexpr unsigned int Class_5_04150F311CCD3DC6_1_TypeDefinitionIndex = 66901;
+
+class Class_5_04150F311CCD3DC6_1 : public ::Class_4_B8EB3E9191ADE6A5
+{
+public:
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_04150F311CCD3DC6_1__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_5_076188C050222996(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_5_04150F311CCD3DC6_1_METHOD_5_076188C050222996_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_5_261D4B62BEE14763(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_5_04150F311CCD3DC6_1_METHOD_5_261D4B62BEE14763_OFFSET))(this, a1, a2);
+	}
+
+	::MoleMole::UIControllerContextBase* Method_5_68A1B624A5C16E2F()
+	{
+		return ((::MoleMole::UIControllerContextBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_04150F311CCD3DC6_1_METHOD_5_68A1B624A5C16E2F_OFFSET))(this);
+	}
+};

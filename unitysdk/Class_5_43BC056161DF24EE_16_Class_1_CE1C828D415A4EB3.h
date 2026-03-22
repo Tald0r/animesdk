@@ -1,0 +1,36 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/HollowChessboard/HollowChessboardUID.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_80CEC7B990B4301D;
+class Class_5_43BC056161DF24EE_16;
+
+#define CLASS_5_43BC056161DF24EE_16_CLASS_1_CE1C828D415A4EB3_METHOD_1_5790A55946AA509D_OFFSET UNITYSDK_OFFSET(0xC568870)
+#define CLASS_5_43BC056161DF24EE_16_CLASS_1_CE1C828D415A4EB3_METHOD_1_6E10DBA521A04356_OFFSET UNITYSDK_OFFSET(0xC568890)
+#define CLASS_5_43BC056161DF24EE_16_CLASS_1_CE1C828D415A4EB3__CTOR_OFFSET UNITYSDK_OFFSET(0xC568860)
+
+inline static constexpr unsigned int Class_5_43BC056161DF24EE_16_Class_1_CE1C828D415A4EB3_TypeDefinitionIndex = 61844;
+
+class Class_5_43BC056161DF24EE_16_Class_1_CE1C828D415A4EB3 : public ::System::Object
+{
+public:
+	::Class_5_43BC056161DF24EE_16* Field_1_0; // 0x10
+	::Class_1_80CEC7B990B4301D* Field_1_2; // 0x18
+	::MoleMole::HollowChessboard::HollowChessboardUID Field_1_1; // 0x20
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_43BC056161DF24EE_16_CLASS_1_CE1C828D415A4EB3__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_5790A55946AA509D()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_43BC056161DF24EE_16_CLASS_1_CE1C828D415A4EB3_METHOD_1_5790A55946AA509D_OFFSET))(this);
+	}
+
+	::System::Void Method_1_6E10DBA521A04356()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_43BC056161DF24EE_16_CLASS_1_CE1C828D415A4EB3_METHOD_1_6E10DBA521A04356_OFFSET))(this);
+	}
+};

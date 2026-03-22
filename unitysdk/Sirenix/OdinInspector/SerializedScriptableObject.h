@@ -1,0 +1,62 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Sirenix/Serialization/SerializationData.h"
+#include "unitysdk/UnityEngine/ScriptableObject.h"
+
+#define SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_BRIDGEONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1A186F40)
+#define SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_BRIDGEONBEFORESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1A186EE0)
+#define SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1A186FA0)
+#define SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_ONBEFORESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1A186FB0)
+#define SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1A186EC0)
+#define SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONBEFORESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1A186ED0)
+#define SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A186FC0)
+
+namespace Sirenix::OdinInspector
+{
+	inline static constexpr unsigned int SerializedScriptableObject_TypeDefinitionIndex = 7273;
+
+	class SerializedScriptableObject : public ::UnityEngine::ScriptableObject
+	{
+	public:
+		static ::System::Boolean* StaticGet_ClearOnDeserialization()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(SerializedScriptableObject_TypeDefinitionIndex)->GetStaticField(0x3240);
+		}
+		::Sirenix::Serialization::SerializationData serializationData; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT__CTOR_OFFSET))(this);
+		}
+
+		::System::Void UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONAFTERDESERIALIZE_OFFSET))(this);
+		}
+
+		::System::Void UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONBEFORESERIALIZE_OFFSET))(this);
+		}
+
+		::System::Void BridgeOnBeforeSerialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_BRIDGEONBEFORESERIALIZE_OFFSET))(this);
+		}
+
+		::System::Void BridgeOnAfterDeserialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_BRIDGEONAFTERDESERIALIZE_OFFSET))(this);
+		}
+
+		::System::Void OnAfterDeserialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_ONAFTERDESERIALIZE_OFFSET))(this);
+		}
+
+		::System::Void OnBeforeSerialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_SERIALIZEDSCRIPTABLEOBJECT_ONBEFORESERIALIZE_OFFSET))(this);
+		}
+	};
+}

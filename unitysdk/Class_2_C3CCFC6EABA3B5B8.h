@@ -1,0 +1,65 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_1EB8C469AAE7B7DE.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_E87F1D15F1D4AC72;
+namespace MoleMole { class UILiveHouseInGamePerfectEffectWidgetController_Context; }
+template <typename T> class Class_0_16E4307DCC419505_103;
+
+#define CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_2273B295D8EDA873_OFFSET UNITYSDK_OFFSET(0xD262220)
+#define CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_43D99DDD80B1E30C_OFFSET UNITYSDK_OFFSET(0xD262070)
+#define CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_9D768FB7C06C1DF3_OFFSET UNITYSDK_OFFSET(0xD262000)
+#define CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_C3AD6047C9689518_OFFSET UNITYSDK_OFFSET(0xD262210)
+#define CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xD262230)
+#define CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_CA373AA1C7054598_2_OFFSET UNITYSDK_OFFSET(0xD262290)
+#define CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xD262160)
+#define CLASS_2_C3CCFC6EABA3B5B8__CTOR_OFFSET UNITYSDK_OFFSET(0xD2621C0)
+
+inline static constexpr unsigned int Class_2_C3CCFC6EABA3B5B8_TypeDefinitionIndex = 52199;
+
+class Class_2_C3CCFC6EABA3B5B8 : public ::Class_1_1EB8C469AAE7B7DE
+{
+public:
+	::Class_0_16E4307DCC419505_103<::MoleMole::UILiveHouseInGamePerfectEffectWidgetController_Context*>* Field_2_0; // 0x50
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C3CCFC6EABA3B5B8__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_9D768FB7C06C1DF3(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_9D768FB7C06C1DF3_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_43D99DDD80B1E30C()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_43D99DDD80B1E30C_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_2_C3AD6047C9689518(::Class_0_16E4307DCC419505_103<::MoleMole::UILiveHouseInGamePerfectEffectWidgetController_Context*>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_103<::MoleMole::UILiveHouseInGamePerfectEffectWidgetController_Context*>*))((::PBYTE)hIl2Cpp + CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_C3AD6047C9689518_OFFSET))(this, a1);
+	}
+
+	::Class_0_16E4307DCC419505_103<::MoleMole::UILiveHouseInGamePerfectEffectWidgetController_Context*>* Method_2_2273B295D8EDA873()
+	{
+		return ((::Class_0_16E4307DCC419505_103<::MoleMole::UILiveHouseInGamePerfectEffectWidgetController_Context*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_2273B295D8EDA873_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_2()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C3CCFC6EABA3B5B8_METHOD_2_CA373AA1C7054598_2_OFFSET))(this);
+	}
+};

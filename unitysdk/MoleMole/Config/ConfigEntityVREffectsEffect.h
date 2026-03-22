@@ -1,0 +1,1049 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Config/ConfigEntityScreenEffectBase.h"
+#include "unitysdk/MoleMole/Config/ScreenEffectFieldHandleType.h"
+#include "unitysdk/UnityEngine/Color.h"
+#include "unitysdk/UnityEngine/NAPRenderPipeline0/VREffects_NativeSRP_ColorBlendMethod.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/ChannelMapping.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/DistanceDistortionBlendMode.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/ScanMaskType.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/ScanType.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+namespace MoleMole::Config { class ScreenEffectBool; }
+namespace MoleMole::Config { class ScreenEffectColor; }
+namespace MoleMole::Config { class ScreenEffectFloat; }
+namespace MoleMole::Config { class ScreenEffectVector2; }
+namespace MoleMole::Config { class ScreenEffectVector3; }
+namespace System { class String; }
+namespace UnityEngine { class Texture2D; }
+namespace UnityEngine { class Texture; }
+
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETBRIGHTNESS_OFFSET UNITYSDK_OFFSET(0x62488F0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORB_OFFSET UNITYSDK_OFFSET(0x624B060)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORG_OFFSET UNITYSDK_OFFSET(0x624AF00)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORR_OFFSET UNITYSDK_OFFSET(0x624ADA0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORTINTEND_OFFSET UNITYSDK_OFFSET(0x6248C30)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORTINTFAR_OFFSET UNITYSDK_OFFSET(0x6248CD0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORTINTNEAR_OFFSET UNITYSDK_OFFSET(0x6248B70)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORTINTSTART_OFFSET UNITYSDK_OFFSET(0x6248AD0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCONTRASTMIDDLEPOINT_OFFSET UNITYSDK_OFFSET(0x6248A30)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCONTRAST_OFFSET UNITYSDK_OFFSET(0x6248990)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCUSTOMSCANDIRECTION_OFFSET UNITYSDK_OFFSET(0x6249090)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCECOLORIZATIONEFFECT_OFFSET UNITYSDK_OFFSET(0x624D040)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCECOLORIZATIONOFFSETSPEED_OFFSET UNITYSDK_OFFSET(0x624DC30)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCECOLORIZATIONTILING_OFFSET UNITYSDK_OFFSET(0x624DCF0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCECOLORIZETEXTURE_OFFSET UNITYSDK_OFFSET(0x624D5E0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONBLENDMODE_OFFSET UNITYSDK_OFFSET(0x624DE40)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONCOLOR_OFFSET UNITYSDK_OFFSET(0x624DD90)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONEND_OFFSET UNITYSDK_OFFSET(0x624D710)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONFADERANGE_OFFSET UNITYSDK_OFFSET(0x624D7B0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONHEIGHTEND_OFFSET UNITYSDK_OFFSET(0x624D8F0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONHEIGHTFADERANGE_OFFSET UNITYSDK_OFFSET(0x624D990)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONHEIGHTSTART_OFFSET UNITYSDK_OFFSET(0x624D850)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONINTENSITY_OFFSET UNITYSDK_OFFSET(0x624DB90)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONOFFSETSPEED_OFFSET UNITYSDK_OFFSET(0x624DA30)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONSTART_OFFSET UNITYSDK_OFFSET(0x624D670)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONTEXTURE_OFFSET UNITYSDK_OFFSET(0x624D310)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONTILING_OFFSET UNITYSDK_OFFSET(0x624DAF0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETENABLEDISTANCEDISTORTIONCOLORIZATION_OFFSET UNITYSDK_OFFSET(0x624CFA0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETENABLE_OFFSET UNITYSDK_OFFSET(0x6248720)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETFADESOURCEIMAGE_OFFSET UNITYSDK_OFFSET(0x624B120)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGRIDBLENDSCANLINE_OFFSET UNITYSDK_OFFSET(0x624B810)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGRIDCOLOR_OFFSET UNITYSDK_OFFSET(0x624B8A0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGRIDDISTANCE_OFFSET UNITYSDK_OFFSET(0x624B780)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGRIDON_OFFSET UNITYSDK_OFFSET(0x624B6E0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGRIDPOWER_OFFSET UNITYSDK_OFFSET(0x624B960)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGROUNDYPOS_OFFSET UNITYSDK_OFFSET(0x624B9F0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETHUE_OFFSET UNITYSDK_OFFSET(0x62487B0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETKEEPINFRONTFORUBERPOST_OFFSET UNITYSDK_OFFSET(0x6249840)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETLENSDISTORTIONCENTER_OFFSET UNITYSDK_OFFSET(0x624CE60)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETLENSDISTORTIONINTENSITY_OFFSET UNITYSDK_OFFSET(0x624CC80)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETLENSDISTORTIONSCALE_OFFSET UNITYSDK_OFFSET(0x624CF00)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETLENSDISTORTIONXMULTIPLIER_OFFSET UNITYSDK_OFFSET(0x624CD20)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETLENSDISTORTIONYMULTIPLIER_OFFSET UNITYSDK_OFFSET(0x624CDC0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEBLENDSCANLINE_OFFSET UNITYSDK_OFFSET(0x624BC70)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINECOLOR_OFFSET UNITYSDK_OFFSET(0x624BFE0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDEPTHTHRESHOLD_OFFSET UNITYSDK_OFFSET(0x624BE30)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDIFFOFFSET_OFFSET UNITYSDK_OFFSET(0x624BDA0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONINTENSITY_OFFSET UNITYSDK_OFFSET(0x624C690)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONOFFSET_OFFSET UNITYSDK_OFFSET(0x624C5F0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONTEXOFFSET_OFFSET UNITYSDK_OFFSET(0x624C4B0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONTEXTILING_OFFSET UNITYSDK_OFFSET(0x624C410)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONTEX_OFFSET UNITYSDK_OFFSET(0x624C380)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONUVSPEED_OFFSET UNITYSDK_OFFSET(0x624C550)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTION_OFFSET UNITYSDK_OFFSET(0x624C0A0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINENORMALTHRESHOLDSCALE_OFFSET UNITYSDK_OFFSET(0x624BF50)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINENORMALTHRESHOLD_OFFSET UNITYSDK_OFFSET(0x624BEC0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEON_OFFSET UNITYSDK_OFFSET(0x624BBD0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEOPACITY_OFFSET UNITYSDK_OFFSET(0x624BD00)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETREVERSE_OFFSET UNITYSDK_OFFSET(0x624B300)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSATURATION_OFFSET UNITYSDK_OFFSET(0x6248850)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR0END_OFFSET UNITYSDK_OFFSET(0x6249C00)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR0MODE_OFFSET UNITYSDK_OFFSET(0x6249CC0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR0_OFFSET UNITYSDK_OFFSET(0x6249B40)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR1END_OFFSET UNITYSDK_OFFSET(0x624A100)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR1MODE_OFFSET UNITYSDK_OFFSET(0x624A1C0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR1_OFFSET UNITYSDK_OFFSET(0x624A050)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR2END_OFFSET UNITYSDK_OFFSET(0x624A610)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR2MODE_OFFSET UNITYSDK_OFFSET(0x624A6C0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR2_OFFSET UNITYSDK_OFFSET(0x624A550)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR3END_OFFSET UNITYSDK_OFFSET(0x624AB10)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR3MODE_OFFSET UNITYSDK_OFFSET(0x624ABD0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR3_OFFSET UNITYSDK_OFFSET(0x624AA50)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND0SOFT_OFFSET UNITYSDK_OFFSET(0x6249AB0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND0_OFFSET UNITYSDK_OFFSET(0x6249980)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND1SOFT_OFFSET UNITYSDK_OFFSET(0x6249FC0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND1_OFFSET UNITYSDK_OFFSET(0x6249E90)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND2SOFT_OFFSET UNITYSDK_OFFSET(0x624A4C0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND2_OFFSET UNITYSDK_OFFSET(0x624A390)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND3SOFT_OFFSET UNITYSDK_OFFSET(0x624A9C0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND3_OFFSET UNITYSDK_OFFSET(0x624A890)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANLINECONTRAST_OFFSET UNITYSDK_OFFSET(0x6248E20)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANLINEDISTORTION_OFFSET UNITYSDK_OFFSET(0x6248EC0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANLINEWIDTH_OFFSET UNITYSDK_OFFSET(0x6248D90)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKBASEY_OFFSET UNITYSDK_OFFSET(0x6249700)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKINTENSITY0_OFFSET UNITYSDK_OFFSET(0x6249D50)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKINTENSITY1_OFFSET UNITYSDK_OFFSET(0x624A250)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKINTENSITY2_OFFSET UNITYSDK_OFFSET(0x624A750)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKINTENSITY3_OFFSET UNITYSDK_OFFSET(0x624AC60)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTEXCHANNEL_OFFSET UNITYSDK_OFFSET(0x6249490)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTEXOFFSET_OFFSET UNITYSDK_OFFSET(0x62495C0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTEXTILING_OFFSET UNITYSDK_OFFSET(0x6249520)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTEXUVSPEED_OFFSET UNITYSDK_OFFSET(0x6249660)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTEX_OFFSET UNITYSDK_OFFSET(0x6249400)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTYPE_OFFSET UNITYSDK_OFFSET(0x6249130)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKYRANGE_OFFSET UNITYSDK_OFFSET(0x62497A0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART0SOFT_OFFSET UNITYSDK_OFFSET(0x6249A20)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART0_OFFSET UNITYSDK_OFFSET(0x62498E0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART1SOFT_OFFSET UNITYSDK_OFFSET(0x6249F30)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART1_OFFSET UNITYSDK_OFFSET(0x6249DF0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART2SOFT_OFFSET UNITYSDK_OFFSET(0x624A430)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART2_OFFSET UNITYSDK_OFFSET(0x624A2F0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART3SOFT_OFFSET UNITYSDK_OFFSET(0x624A930)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART3_OFFSET UNITYSDK_OFFSET(0x624A7F0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANTYPE_OFFSET UNITYSDK_OFFSET(0x6248F60)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCREENSPACEGRIDSCALE_OFFSET UNITYSDK_OFFSET(0x624BA90)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCREENSPACEGRIDWIDTH_OFFSET UNITYSDK_OFFSET(0x624BB30)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICEANGLE_OFFSET UNITYSDK_OFFSET(0x624B260)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICECOLORAMODE_OFFSET UNITYSDK_OFFSET(0x624B500)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICECOLORA_OFFSET UNITYSDK_OFFSET(0x624B440)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICECOLORBMODE_OFFSET UNITYSDK_OFFSET(0x624B650)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICECOLORB_OFFSET UNITYSDK_OFFSET(0x624B590)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICEOFFSET_OFFSET UNITYSDK_OFFSET(0x624B3A0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICEWIDTH_OFFSET UNITYSDK_OFFSET(0x624B1C0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETTEXTURESHEETCOLOR_OFFSET UNITYSDK_OFFSET(0x624CBC0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETTEXTURESHEETINDEX_OFFSET UNITYSDK_OFFSET(0x624CB20)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETTEXTURESHEETON_OFFSET UNITYSDK_OFFSET(0x624C730)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETTEXTURESHEETTEX_OFFSET UNITYSDK_OFFSET(0x624CA00)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETTEXTURESHEETXY_OFFSET UNITYSDK_OFFSET(0x624CA90)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETUSECUSTOMSCANDIRECTION_OFFSET UNITYSDK_OFFSET(0x6248FF0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETUVOFFSETB_OFFSET UNITYSDK_OFFSET(0x624AFC0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETUVOFFSETG_OFFSET UNITYSDK_OFFSET(0x624AE60)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETUVOFFSETR_OFFSET UNITYSDK_OFFSET(0x624AD00)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GET_DISTANCECOLORIZETEXTURE_OFFSET UNITYSDK_OFFSET(0x624D3A0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GET_DISTANCEDISTORTIONTEXTURE_OFFSET UNITYSDK_OFFSET(0x624D0E0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GET_OUTLINEDISTORTIONTEX_OFFSET UNITYSDK_OFFSET(0x624C140)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GET_SCANMASKTEX_OFFSET UNITYSDK_OFFSET(0x62491C0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GET_TEXTURESHEETTEX_OFFSET UNITYSDK_OFFSET(0x624C7C0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0x624DED0)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int ConfigEntityVREffectsEffect_TypeDefinitionIndex = 72353;
+
+	class ConfigEntityVREffectsEffect : public ::MoleMole::Config::ConfigEntityScreenEffectBase
+	{
+	public:
+		::MoleMole::Config::ScreenEffectFloat* distanceDistortionEnd; // 0x40
+		::MoleMole::Config::ScreenEffectColor* scanColor1; // 0x48
+		::MoleMole::Config::ScreenEffectColor* scanColor2End; // 0x50
+		::MoleMole::Config::ScreenEffectFloat* saturation; // 0x58
+		::System::String* distanceDistortionTexturePath; // 0x60
+		::MoleMole::Config::ScreenEffectFloat* distanceColorizationTiling; // 0x68
+		::MoleMole::Config::ScreenEffectFloat* distanceDistortionTiling; // 0x70
+		::MoleMole::Config::ScreenEffectColor* distanceDistortionColor; // 0x78
+		::MoleMole::Config::ScreenEffectFloat* scanMaskIntensity2; // 0x80
+		::MoleMole::Config::ScreenEffectFloat* distanceDistortionStart; // 0x88
+		::MoleMole::Config::ScreenEffectColor* colorB; // 0x90
+		::MoleMole::Config::ScreenEffectFloat* fadeSourceImage; // 0x98
+		::MoleMole::Config::ScreenEffectFloat* distanceDistortionHeightStart; // 0xA0
+		::MoleMole::Config::ScreenEffectFloat* outlineOpacity; // 0xA8
+		::MoleMole::Config::ScreenEffectColor* scanColor0End; // 0xB0
+		::MoleMole::Config::ScreenEffectVector2* scanMaskTexTiling; // 0xB8
+		::MoleMole::Config::ScreenEffectColor* colorR; // 0xC0
+		::MoleMole::Config::ScreenEffectFloat* screenSpaceGridScale; // 0xC8
+		::MoleMole::Config::ScreenEffectColor* gridColor; // 0xD0
+		::MoleMole::Config::ScreenEffectBool* outlineDistortion; // 0xD8
+		::MoleMole::Config::ScreenEffectFloat* lensDistortionIntensity; // 0xE0
+		::MoleMole::Config::ScreenEffectColor* colorG; // 0xE8
+		::MoleMole::Config::ScreenEffectFloat* scanEnd1; // 0xF0
+		::System::String* outlineDistortionTexPath; // 0xF8
+		::MoleMole::Config::ScreenEffectFloat* lensDistortionScale; // 0x100
+		::MoleMole::Config::ScreenEffectFloat* distanceDistortionIntensity; // 0x108
+		::MoleMole::Config::ScreenEffectVector2* lensDistortionCenter; // 0x110
+		::MoleMole::Config::ScreenEffectFloat* sliceAngle; // 0x118
+		::MoleMole::Config::ScreenEffectVector2* uvOffsetG; // 0x120
+		::MoleMole::Config::ScreenEffectColor* scanColor1End; // 0x128
+		::UnityEngine::Texture2D* _distanceDistortionTexture; // 0x130
+		::MoleMole::Config::ScreenEffectFloat* scanEnd0; // 0x138
+		::MoleMole::Config::ScreenEffectFloat* screenSpaceGridWidth; // 0x140
+		::MoleMole::Config::ScreenEffectVector2* outlineDistortionTexTiling; // 0x148
+		::MoleMole::Config::ScreenEffectVector3* distanceColorizationOffsetSpeed; // 0x150
+		::MoleMole::Config::ScreenEffectFloat* colorTintStart; // 0x158
+		::MoleMole::Config::ScreenEffectVector2* outlineDistortionTexOffset; // 0x160
+		::MoleMole::Config::ScreenEffectColor* colorTintNear; // 0x168
+		::MoleMole::Config::ScreenEffectBool* keepInFrontForUberPost; // 0x170
+		::MoleMole::Config::ScreenEffectColor* scanColor2; // 0x178
+		::MoleMole::Config::ScreenEffectFloat* contrast; // 0x180
+		::MoleMole::Config::ScreenEffectFloat* scanlineContrast; // 0x188
+		::MoleMole::Config::ScreenEffectFloat* distanceColorizationEffect; // 0x190
+		::MoleMole::Config::ScreenEffectFloat* scanStart1; // 0x198
+		::MoleMole::Config::ScreenEffectColor* scanColor3; // 0x1A0
+		::System::String* textureSheetTexPath; // 0x1A8
+		::MoleMole::Config::ScreenEffectBool* reverse; // 0x1B0
+		::MoleMole::Config::ScreenEffectFloat* lensDistortionYMultiplier; // 0x1B8
+		::MoleMole::Config::ScreenEffectVector2* uvOffsetR; // 0x1C0
+		::MoleMole::Config::ScreenEffectFloat* colorTintEnd; // 0x1C8
+		::MoleMole::Config::ScreenEffectVector3* distanceDistortionOffsetSpeed; // 0x1D0
+		::MoleMole::Config::ScreenEffectBool* outlineOn; // 0x1D8
+		::MoleMole::Config::ScreenEffectVector2* outlineDistortionOffset; // 0x1E0
+		::MoleMole::Config::ScreenEffectFloat* scanlineDistortion; // 0x1E8
+		::MoleMole::Config::ScreenEffectFloat* brightness; // 0x1F0
+		::MoleMole::Config::ScreenEffectColor* sliceColorA; // 0x1F8
+		::MoleMole::Config::ScreenEffectFloat* scanMaskIntensity3; // 0x200
+		::MoleMole::Config::ScreenEffectBool* gridOn; // 0x208
+		::MoleMole::Config::ScreenEffectFloat* distanceDistortionHeightFadeRange; // 0x210
+		::MoleMole::Config::ScreenEffectFloat* contrastMiddlePoint; // 0x218
+		::MoleMole::Config::ScreenEffectFloat* lensDistortionXMultiplier; // 0x220
+		::MoleMole::Config::ScreenEffectFloat* scanStart2; // 0x228
+		::MoleMole::Config::ScreenEffectColor* scanColor0; // 0x230
+		::MoleMole::Config::ScreenEffectFloat* distanceDistortionHeightEnd; // 0x238
+		::MoleMole::Config::ScreenEffectFloat* distanceDistortionFadeRange; // 0x240
+		::MoleMole::Config::ScreenEffectVector2* scanMaskTexUVSpeed; // 0x248
+		::MoleMole::Config::ScreenEffectFloat* sliceWidth; // 0x250
+		::UnityEngine::Texture2D* _distanceColorizeTexture; // 0x258
+		::MoleMole::Config::ScreenEffectFloat* scanStart0; // 0x260
+		::MoleMole::Config::ScreenEffectFloat* customScanDirection; // 0x268
+		::MoleMole::Config::ScreenEffectFloat* sliceOffset; // 0x270
+		::MoleMole::Config::ScreenEffectBool* enableDistanceDistortionColorization; // 0x278
+		::MoleMole::Config::ScreenEffectFloat* scanMaskYRange; // 0x280
+		::MoleMole::Config::ScreenEffectFloat* scanEnd2; // 0x288
+		::MoleMole::Config::ScreenEffectColor* textureSheetColor; // 0x290
+		::MoleMole::Config::ScreenEffectVector2* scanMaskTexOffset; // 0x298
+		::UnityEngine::Texture2D* _textureSheetTex; // 0x2A0
+		::MoleMole::Config::ScreenEffectVector2* outlineDistortionUVSpeed; // 0x2A8
+		::MoleMole::Config::ScreenEffectFloat* groundYPos; // 0x2B0
+		::System::String* distanceColorizeTexturePath; // 0x2B8
+		::MoleMole::Config::ScreenEffectVector2* uvOffsetB; // 0x2C0
+		::MoleMole::Config::ScreenEffectVector2* outlineDistortionIntensity; // 0x2C8
+		::MoleMole::Config::ScreenEffectColor* scanColor3End; // 0x2D0
+		::System::String* scanMaskTexPath; // 0x2D8
+		::MoleMole::Config::ScreenEffectFloat* scanMaskIntensity1; // 0x2E0
+		::MoleMole::Config::ScreenEffectBool* useCustomScanDirection; // 0x2E8
+		::MoleMole::Config::ScreenEffectFloat* scanMaskBaseY; // 0x2F0
+		::MoleMole::Config::ScreenEffectFloat* scanStart3; // 0x2F8
+		::MoleMole::Config::ScreenEffectFloat* scanEnd3; // 0x300
+		::MoleMole::Config::ScreenEffectFloat* textureSheetIndex; // 0x308
+		::MoleMole::Config::ScreenEffectFloat* scanMaskIntensity0; // 0x310
+		::MoleMole::Config::ScreenEffectFloat* hue; // 0x318
+		::UnityEngine::Texture2D* _scanMaskTex; // 0x320
+		::MoleMole::Config::ScreenEffectColor* colorTintFar; // 0x328
+		::MoleMole::Config::ScreenEffectColor* outlineColor; // 0x330
+		::MoleMole::Config::ScreenEffectColor* sliceColorB; // 0x338
+		::UnityEngine::Texture2D* _outlineDistortionTex; // 0x340
+		::MoleMole::Config::ScreenEffectFieldHandleType saturationHandleType; // 0x348
+		::System::Single scanStart2Soft; // 0x34C
+		::MoleMole::Config::ScreenEffectFieldHandleType uvOffsetBHandleType; // 0x350
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskIntensity3HandleType; // 0x354
+		::MoleMole::Config::ScreenEffectFieldHandleType sliceAngleHandleType; // 0x358
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceColorizationEffectHandleType; // 0x35C
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionEndHandleType; // 0x360
+		::MoleMole::Config::ScreenEffectFieldHandleType scanEnd3HandleType; // 0x364
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor0ModeHandleType; // 0x368
+		::MoleMole::Config::ScreenEffectFieldHandleType contrastMiddlePointHandleType; // 0x36C
+		::MoleMole::Config::ScreenEffectFieldHandleType colorBHandleType; // 0x370
+		::MoleMole::Config::ScreenEffectFieldHandleType textureSheetOnHandleType; // 0x374
+		::MoleMole::Config::ScreenEffectFieldHandleType lensDistortionIntensityHandleType; // 0x378
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor2HandleType; // 0x37C
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor0EndHandleType; // 0x380
+		::MoleMole::Config::ScreenEffectFieldHandleType sliceColorBModeHandleType; // 0x384
+		::MoleMole::Config::ScreenEffectFieldHandleType scanEnd0SoftHandleType; // 0x388
+		::MoleMole::Config::ScreenEffectFieldHandleType sliceColorAModeHandleType; // 0x38C
+		::MoleMole::Config::ScreenEffectFieldHandleType scanlineWidthHandleType; // 0x390
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineNormalThresholdHandleType; // 0x394
+		::MoleMole::Config::ScreenEffectFieldHandleType keepInFrontForUberPostHandleType; // 0x398
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionHeightEndHandleType; // 0x39C
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionFadeRangeHandleType; // 0x3A0
+		::MoleMole::Config::ScreenEffectFieldHandleType sliceOffsetHandleType; // 0x3A4
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor3EndHandleType; // 0x3A8
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod sliceColorBMode; // 0x3AC
+		::MoleMole::Config::ScreenEffectFieldHandleType scanEnd1HandleType; // 0x3B0
+		::System::Single scanStart1Soft; // 0x3B4
+		::MoleMole::Config::ScreenEffectFieldHandleType enableHandleType; // 0x3B8
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskTexChannelHandleType; // 0x3BC
+		::MoleMole::Config::ScreenEffectFieldHandleType contrastHandleType; // 0x3C0
+		::UnityEngine::Rendering::Universal::ScanMaskType scanMaskType; // 0x3C4
+		::System::Single scanEnd3Soft; // 0x3C8
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineDistortionTexHandleType; // 0x3CC
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionHeightStartHandleType; // 0x3D0
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor0HandleType; // 0x3D4
+		::MoleMole::Config::ScreenEffectFieldHandleType useCustomScanDirectionHandleType; // 0x3D8
+		::MoleMole::Config::ScreenEffectFieldHandleType brightnessHandleType; // 0x3DC
+		::MoleMole::Config::ScreenEffectFieldHandleType scanlineContrastHandleType; // 0x3E0
+		::MoleMole::Config::ScreenEffectFieldHandleType scanlineDistortionHandleType; // 0x3E4
+		::MoleMole::Config::ScreenEffectFieldHandleType screenSpaceGridScaleHandleType; // 0x3E8
+		::MoleMole::Config::ScreenEffectFieldHandleType lensDistortionCenterHandleType; // 0x3EC
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineDistortionTexTilingHandleType; // 0x3F0
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor1EndHandleType; // 0x3F4
+		::System::Single outlineNormalThreshold; // 0x3F8
+		::MoleMole::Config::ScreenEffectFieldHandleType fadeSourceImageHandleType; // 0x3FC
+		::MoleMole::Config::ScreenEffectFieldHandleType uvOffsetGHandleType; // 0x400
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionTextureHandleType; // 0x404
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod scanColor1Mode; // 0x408
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskBaseYHandleType; // 0x40C
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskTexUVSpeedHandleType; // 0x410
+		::System::Single gridPower; // 0x414
+		::MoleMole::Config::ScreenEffectFieldHandleType uvOffsetRHandleType; // 0x418
+		::System::Single scanStart3Soft; // 0x41C
+		::MoleMole::Config::ScreenEffectFieldHandleType scanStart1HandleType; // 0x420
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineBlendScanLineHandleType; // 0x424
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineNormalThresholdScaleHandleType; // 0x428
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskIntensity1HandleType; // 0x42C
+		::System::Single scanEnd0Soft; // 0x430
+		::MoleMole::Config::ScreenEffectFieldHandleType textureSheetTexHandleType; // 0x434
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor1HandleType; // 0x438
+		::System::Single scanEnd2Soft; // 0x43C
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceColorizationOffsetSpeedHandleType; // 0x440
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineDistortionIntensityHandleType; // 0x444
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskIntensity2HandleType; // 0x448
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionHeightFadeRangeHandleType; // 0x44C
+		::MoleMole::Config::ScreenEffectFieldHandleType lensDistortionYMultiplierHandleType; // 0x450
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskTypeHandleType; // 0x454
+		::MoleMole::Config::ScreenEffectFieldHandleType textureSheetColorHandleType; // 0x458
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineColorHandleType; // 0x45C
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskIntensity0HandleType; // 0x460
+		::MoleMole::Config::ScreenEffectFieldHandleType scanStart3HandleType; // 0x464
+		::MoleMole::Config::ScreenEffectFieldHandleType gridOnHandleType; // 0x468
+		::UnityEngine::Rendering::Universal::ScanType scanType; // 0x46C
+		::MoleMole::Config::ScreenEffectFieldHandleType scanStart2HandleType; // 0x470
+		::MoleMole::Config::ScreenEffectFieldHandleType scanEnd0HandleType; // 0x474
+		::MoleMole::Config::ScreenEffectFieldHandleType scanStart0SoftHandleType; // 0x478
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskTexHandleType; // 0x47C
+		::MoleMole::Config::ScreenEffectFieldHandleType gridBlendScanLineHandleType; // 0x480
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod sliceColorAMode; // 0x484
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionOffsetSpeedHandleType; // 0x488
+		::MoleMole::Config::ScreenEffectFieldHandleType textureSheetIndexHandleType; // 0x48C
+		::MoleMole::Config::ScreenEffectFieldHandleType textureSheetXYHandleType; // 0x490
+		::System::Single scanlineWidth; // 0x494
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceColorizationTilingHandleType; // 0x498
+		::MoleMole::Config::ScreenEffectFieldHandleType scanStart3SoftHandleType; // 0x49C
+		::MoleMole::Config::ScreenEffectFieldHandleType gridPowerHandleType; // 0x4A0
+		::MoleMole::Config::ScreenEffectFieldHandleType sliceWidthHandleType; // 0x4A4
+		::System::Single scanEnd1Soft; // 0x4A8
+		::MoleMole::Config::ScreenEffectFieldHandleType sliceColorBHandleType; // 0x4AC
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionBlendModeHandleType; // 0x4B0
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod scanColor3Mode; // 0x4B4
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor3HandleType; // 0x4B8
+		::MoleMole::Config::ScreenEffectFieldHandleType lensDistortionScaleHandleType; // 0x4BC
+		::MoleMole::Config::ScreenEffectFieldHandleType scanEnd1SoftHandleType; // 0x4C0
+		::MoleMole::Config::ScreenEffectFieldHandleType scanEnd2SoftHandleType; // 0x4C4
+		::MoleMole::Config::ScreenEffectFieldHandleType colorGHandleType; // 0x4C8
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceColorizeTextureHandleType; // 0x4CC
+		::MoleMole::Config::ScreenEffectFieldHandleType colorRHandleType; // 0x4D0
+		::MoleMole::Config::ScreenEffectFieldHandleType scanStart2SoftHandleType; // 0x4D4
+		::MoleMole::Config::ScreenEffectFieldHandleType lensDistortionXMultiplierHandleType; // 0x4D8
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskTexTilingHandleType; // 0x4DC
+		::MoleMole::Config::ScreenEffectFieldHandleType scanEnd3SoftHandleType; // 0x4E0
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineDistortionTexOffsetHandleType; // 0x4E4
+		::MoleMole::Config::ScreenEffectFieldHandleType screenSpaceGridWidthHandleType; // 0x4E8
+		::MoleMole::Config::ScreenEffectFieldHandleType enableDistanceDistortionColorizationHandleType; // 0x4EC
+		::System::Single outlineNormalThresholdScale; // 0x4F0
+		::MoleMole::Config::ScreenEffectFieldHandleType customScanDirectionHandleType; // 0x4F4
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineDistortionUVSpeedHandleType; // 0x4F8
+		::MoleMole::Config::ScreenEffectFieldHandleType gridColorHandleType; // 0x4FC
+		::System::Single outlineDepthThreshold; // 0x500
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor3ModeHandleType; // 0x504
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor2ModeHandleType; // 0x508
+		::UnityEngine::Vector2 textureSheetXY; // 0x50C
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineOpacityHandleType; // 0x514
+		::MoleMole::Config::ScreenEffectFieldHandleType hueHandleType; // 0x518
+		::MoleMole::Config::ScreenEffectFieldHandleType scanStart1SoftHandleType; // 0x51C
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineDistortionHandleType; // 0x520
+		::System::Single gridDistance; // 0x524
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod scanColor0Mode; // 0x528
+		::System::Single outlineDiffOffset; // 0x52C
+		::MoleMole::Config::ScreenEffectFieldHandleType sliceColorAHandleType; // 0x530
+		::MoleMole::Config::ScreenEffectFieldHandleType colorTintFarHandleType; // 0x534
+		::System::Boolean textureSheetOn; // 0x538
+		::System::Boolean outlineBlendScanLine; // 0x539
+		::System::Boolean gridBlendScanLine; // 0x53A
+		::System::Boolean enable; // 0x53B
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineDistortionOffsetHandleType; // 0x53C
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionStartHandleType; // 0x540
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionTilingHandleType; // 0x544
+		::MoleMole::Config::ScreenEffectFieldHandleType reverseHandleType; // 0x548
+		::MoleMole::Config::ScreenEffectFieldHandleType colorTintStartHandleType; // 0x54C
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionIntensityHandleType; // 0x550
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskTexOffsetHandleType; // 0x554
+		::UnityEngine::Rendering::Universal::DistanceDistortionBlendMode distanceDistortionBlendMode; // 0x558
+		::MoleMole::Config::ScreenEffectFieldHandleType scanEnd2HandleType; // 0x55C
+		::MoleMole::Config::ScreenEffectFieldHandleType distanceDistortionColorHandleType; // 0x560
+		::MoleMole::Config::ScreenEffectFieldHandleType gridDistanceHandleType; // 0x564
+		::MoleMole::Config::ScreenEffectFieldHandleType colorTintNearHandleType; // 0x568
+		::MoleMole::Config::ScreenEffectFieldHandleType groundYPosHandleType; // 0x56C
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod scanColor2Mode; // 0x570
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineDiffOffsetHandleType; // 0x574
+		::UnityEngine::Rendering::Universal::ChannelMapping scanMaskTexChannel; // 0x578
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor1ModeHandleType; // 0x57C
+		::MoleMole::Config::ScreenEffectFieldHandleType scanTypeHandleType; // 0x580
+		::MoleMole::Config::ScreenEffectFieldHandleType scanColor2EndHandleType; // 0x584
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineDepthThresholdHandleType; // 0x588
+		::MoleMole::Config::ScreenEffectFieldHandleType scanStart0HandleType; // 0x58C
+		::MoleMole::Config::ScreenEffectFieldHandleType scanMaskYRangeHandleType; // 0x590
+		::MoleMole::Config::ScreenEffectFieldHandleType colorTintEndHandleType; // 0x594
+		::System::Single scanStart0Soft; // 0x598
+		::MoleMole::Config::ScreenEffectFieldHandleType outlineOnHandleType; // 0x59C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean GetEnable(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETENABLE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetHue(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETHUE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetSaturation(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSATURATION_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetBrightness(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETBRIGHTNESS_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetContrast(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCONTRAST_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetContrastMiddlePoint(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCONTRASTMIDDLEPOINT_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetColorTintStart(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORTINTSTART_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetColorTintNear(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORTINTNEAR_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetColorTintEnd(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORTINTEND_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetColorTintFar(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORTINTFAR_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanlineWidth(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANLINEWIDTH_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanlineContrast(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANLINECONTRAST_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanlineDistortion(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANLINEDISTORTION_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Rendering::Universal::ScanType GetScanType(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Rendering::Universal::ScanType(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANTYPE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Boolean GetUseCustomScanDirection(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETUSECUSTOMSCANDIRECTION_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetCustomScanDirection(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCUSTOMSCANDIRECTION_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Rendering::Universal::ScanMaskType GetScanMaskType(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Rendering::Universal::ScanMaskType(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTYPE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Texture2D* get_scanMaskTex()
+		{
+			return ((::UnityEngine::Texture2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GET_SCANMASKTEX_OFFSET))(this);
+		}
+
+		::UnityEngine::Texture* GetScanMaskTex(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Texture*(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTEX_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Rendering::Universal::ChannelMapping GetScanMaskTexChannel(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Rendering::Universal::ChannelMapping(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTEXCHANNEL_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetScanMaskTexTiling(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTEXTILING_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetScanMaskTexOffset(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTEXOFFSET_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetScanMaskTexUVSpeed(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKTEXUVSPEED_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanMaskBaseY(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKBASEY_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanMaskYRange(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKYRANGE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Boolean GetKeepInFrontForUberPost(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETKEEPINFRONTFORUBERPOST_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanStart0(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART0_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanEnd0(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND0_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanStart0Soft(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART0SOFT_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanEnd0Soft(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND0SOFT_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetScanColor0(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR0_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetScanColor0End(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR0END_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod GetScanColor0Mode(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR0MODE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanMaskIntensity0(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKINTENSITY0_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanStart1(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART1_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanEnd1(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND1_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanStart1Soft(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART1SOFT_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanEnd1Soft(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND1SOFT_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetScanColor1(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR1_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetScanColor1End(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR1END_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod GetScanColor1Mode(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR1MODE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanMaskIntensity1(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKINTENSITY1_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanStart2(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART2_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanEnd2(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND2_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanStart2Soft(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART2SOFT_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanEnd2Soft(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND2SOFT_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetScanColor2(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR2_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetScanColor2End(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR2END_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod GetScanColor2Mode(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR2MODE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanMaskIntensity2(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKINTENSITY2_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanStart3(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART3_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanEnd3(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND3_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanStart3Soft(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANSTART3SOFT_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanEnd3Soft(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANEND3SOFT_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetScanColor3(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR3_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetScanColor3End(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR3END_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod GetScanColor3Mode(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANCOLOR3MODE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScanMaskIntensity3(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCANMASKINTENSITY3_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetUvOffsetR(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETUVOFFSETR_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetColorR(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORR_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetUvOffsetG(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETUVOFFSETG_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetColorG(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORG_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetUvOffsetB(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETUVOFFSETB_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetColorB(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETCOLORB_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetFadeSourceImage(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETFADESOURCEIMAGE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetSliceWidth(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICEWIDTH_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetSliceAngle(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICEANGLE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Boolean GetReverse(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETREVERSE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetSliceOffset(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICEOFFSET_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetSliceColorA(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICECOLORA_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod GetSliceColorAMode(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICECOLORAMODE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetSliceColorB(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICECOLORB_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod GetSliceColorBMode(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::NAPRenderPipeline0::VREffects_NativeSRP_ColorBlendMethod(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSLICECOLORBMODE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Boolean GetGridOn(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGRIDON_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetGridDistance(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGRIDDISTANCE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Boolean GetGridBlendScanLine(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGRIDBLENDSCANLINE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetGridColor(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGRIDCOLOR_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetGridPower(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGRIDPOWER_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetGroundYPos(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETGROUNDYPOS_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScreenSpaceGridScale(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCREENSPACEGRIDSCALE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetScreenSpaceGridWidth(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETSCREENSPACEGRIDWIDTH_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Boolean GetOutlineOn(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEON_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Boolean GetOutlineBlendScanLine(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEBLENDSCANLINE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetOutlineOpacity(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEOPACITY_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetOutlineDiffOffset(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDIFFOFFSET_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetOutlineDepthThreshold(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDEPTHTHRESHOLD_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetOutlineNormalThreshold(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINENORMALTHRESHOLD_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetOutlineNormalThresholdScale(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINENORMALTHRESHOLDSCALE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetOutlineColor(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINECOLOR_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Boolean GetOutlineDistortion(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTION_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Texture2D* get_outlineDistortionTex()
+		{
+			return ((::UnityEngine::Texture2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GET_OUTLINEDISTORTIONTEX_OFFSET))(this);
+		}
+
+		::UnityEngine::Texture* GetOutlineDistortionTex(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Texture*(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONTEX_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetOutlineDistortionTexTiling(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONTEXTILING_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetOutlineDistortionTexOffset(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONTEXOFFSET_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetOutlineDistortionUVSpeed(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONUVSPEED_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetOutlineDistortionOffset(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONOFFSET_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetOutlineDistortionIntensity(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETOUTLINEDISTORTIONINTENSITY_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Boolean GetTextureSheetOn(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETTEXTURESHEETON_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Texture2D* get_textureSheetTex()
+		{
+			return ((::UnityEngine::Texture2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GET_TEXTURESHEETTEX_OFFSET))(this);
+		}
+
+		::UnityEngine::Texture* GetTextureSheetTex(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Texture*(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETTEXTURESHEETTEX_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetTextureSheetXY(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETTEXTURESHEETXY_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Int32 GetTextureSheetIndex(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETTEXTURESHEETINDEX_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetTextureSheetColor(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETTEXTURESHEETCOLOR_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetLensDistortionIntensity(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETLENSDISTORTIONINTENSITY_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetLensDistortionXMultiplier(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETLENSDISTORTIONXMULTIPLIER_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetLensDistortionYMultiplier(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETLENSDISTORTIONYMULTIPLIER_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector2 GetLensDistortionCenter(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETLENSDISTORTIONCENTER_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetLensDistortionScale(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETLENSDISTORTIONSCALE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Boolean GetEnableDistanceDistortionColorization(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETENABLEDISTANCEDISTORTIONCOLORIZATION_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetDistanceColorizationEffect(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCECOLORIZATIONEFFECT_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Texture2D* get_distanceDistortionTexture()
+		{
+			return ((::UnityEngine::Texture2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GET_DISTANCEDISTORTIONTEXTURE_OFFSET))(this);
+		}
+
+		::UnityEngine::Texture* GetDistanceDistortionTexture(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Texture*(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONTEXTURE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Texture2D* get_distanceColorizeTexture()
+		{
+			return ((::UnityEngine::Texture2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GET_DISTANCECOLORIZETEXTURE_OFFSET))(this);
+		}
+
+		::UnityEngine::Texture* GetDistanceColorizeTexture(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Texture*(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCECOLORIZETEXTURE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetDistanceDistortionStart(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONSTART_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetDistanceDistortionEnd(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONEND_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetDistanceDistortionFadeRange(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONFADERANGE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetDistanceDistortionHeightStart(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONHEIGHTSTART_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetDistanceDistortionHeightEnd(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONHEIGHTEND_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetDistanceDistortionHeightFadeRange(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONHEIGHTFADERANGE_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector3 GetDistanceDistortionOffsetSpeed(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONOFFSETSPEED_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetDistanceDistortionTiling(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONTILING_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetDistanceDistortionIntensity(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONINTENSITY_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Vector3 GetDistanceColorizationOffsetSpeed(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCECOLORIZATIONOFFSETSPEED_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::System::Single GetDistanceColorizationTiling(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCECOLORIZATIONTILING_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Color GetDistanceDistortionColor(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONCOLOR_OFFSET))(this, curTime, realHoldTime);
+		}
+
+		::UnityEngine::Rendering::Universal::DistanceDistortionBlendMode GetDistanceDistortionBlendMode(::System::Single curTime, ::System::Single realHoldTime)
+		{
+			return ((::UnityEngine::Rendering::Universal::DistanceDistortionBlendMode(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYVREFFECTSEFFECT_GETDISTANCEDISTORTIONBLENDMODE_OFFSET))(this, curTime, realHoldTime);
+		}
+	};
+}

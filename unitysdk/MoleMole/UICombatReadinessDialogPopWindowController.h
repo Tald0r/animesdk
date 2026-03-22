@@ -1,0 +1,128 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_208CC9941471731A_569;
+class Class_2_79AE422BA06F6D26_80;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xBB13A40)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBB13A50)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xBB13E30)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xBB13DC0)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBB14030)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBB13AF0)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBB13D10)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_PLAYFADEINANIM_OFFSET UNITYSDK_OFFSET(0xBB15190)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_PLAYFADEOUTANIM_OFFSET UNITYSDK_OFFSET(0xBB15240)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_REFRESHMAINSTORYVIEW_OFFSET UNITYSDK_OFFSET(0xBB140A0)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBB153B0)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBB153F0)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xBB15460)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xBB15490)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBB154A0)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBB154B0)
+#define MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBB154C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICombatReadinessDialogPopWindowController_TypeDefinitionIndex = 43468;
+
+	class UICombatReadinessDialogPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_80* _view; // 0x2F8
+		::System::Collections::Generic::List_1<::System::Int32>* _cacheBattleRankingIDList; // 0x300
+		::System::Int32 _vhsQuestTemplateID; // 0x308
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshMainStoryView(::System::Int32 curTapeIndex, ::System::Int32 vhsQuestTemplateID, ::Class_2_208CC9941471731A_569* archiveFileQuestTemplateExt)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::Class_2_208CC9941471731A_569*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_REFRESHMAINSTORYVIEW_OFFSET))(this, curTapeIndex, vhsQuestTemplateID, archiveFileQuestTemplateExt);
+		}
+
+		::System::Void PlayFadeInAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_PLAYFADEINANIM_OFFSET))(this);
+		}
+
+		::System::Void PlayFadeOutAnim(::System::Action* onFadeOutCb)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_PLAYFADEOUTANIM_OFFSET))(this, onFadeOutCb);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

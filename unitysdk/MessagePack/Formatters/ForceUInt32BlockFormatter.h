@@ -6,21 +6,21 @@
 
 namespace MessagePack { class MessagePackSerializerOptions; }
 
-#define MESSAGEPACK_FORMATTERS_FORCEUINT32BLOCKFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1562D690)
-#define MESSAGEPACK_FORMATTERS_FORCEUINT32BLOCKFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1562D680)
-#define MESSAGEPACK_FORMATTERS_FORCEUINT32BLOCKFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1562D730)
-#define MESSAGEPACK_FORMATTERS_FORCEUINT32BLOCKFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1562D670)
+#define MESSAGEPACK_FORMATTERS_FORCEUINT32BLOCKFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x19FEAF90)
+#define MESSAGEPACK_FORMATTERS_FORCEUINT32BLOCKFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x19FEAF80)
+#define MESSAGEPACK_FORMATTERS_FORCEUINT32BLOCKFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19FEAFA0)
+#define MESSAGEPACK_FORMATTERS_FORCEUINT32BLOCKFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x19FEAF70)
 
 namespace MessagePack::Formatters
 {
-	inline static constexpr unsigned int ForceUInt32BlockFormatter_TypeDefinitionIndex = 9741;
+	inline static constexpr unsigned int ForceUInt32BlockFormatter_TypeDefinitionIndex = 26508;
 
 	class ForceUInt32BlockFormatter : public ::System::Object
 	{
 	public:
 		static ::MessagePack::Formatters::ForceUInt32BlockFormatter** StaticGet_Instance()
 		{
-			return (::MessagePack::Formatters::ForceUInt32BlockFormatter**)Il2CppClass::FromTypeDefinitionIndex(ForceUInt32BlockFormatter_TypeDefinitionIndex)->GetStaticField(0x23C50);
+			return (::MessagePack::Formatters::ForceUInt32BlockFormatter**)Il2CppClass::FromTypeDefinitionIndex(ForceUInt32BlockFormatter_TypeDefinitionIndex)->GetStaticField(0x1F7C0);
 		}
 
 		::System::Void _ctor()

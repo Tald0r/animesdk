@@ -1,0 +1,177 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_1A7C61CACA5AE4C4.h"
+#include "unitysdk/Enum_3_39CBA493DD92466B.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_55CF77FE649EF7CB;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_APPLYHDRPARAM_OFFSET UNITYSDK_OFFSET(0x8C17070)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_CONFIRMSETTING_OFFSET UNITYSDK_OFFSET(0x8C16F90)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x8C161E0)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0x8C16390)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONCLOSEBTNCLICKED_OFFSET UNITYSDK_OFFSET(0x8C175D0)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C16760)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x8C168A0)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONSLIDERVALUECHANGED_OFFSET UNITYSDK_OFFSET(0x8C17860)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C16800)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C161F0)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8C16260)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_REFRESHSLIDER_OFFSET UNITYSDK_OFFSET(0x8C171F0)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_RESETRUNTIMELEVEL_OFFSET UNITYSDK_OFFSET(0x8C16E50)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_TRYENTERSETTINGPHASE_OFFSET UNITYSDK_OFFSET(0x8C16990)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8C17910)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER__ONCLOSEBTNCLICKED_B__11_1_OFFSET UNITYSDK_OFFSET(0x8C17930)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER__ONCLOSEBTNCLICKED_B__11_2_OFFSET UNITYSDK_OFFSET(0x8C17940)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER__ONCLOSEBTNCLICKED_G__DOCLOSE_11_0_OFFSET UNITYSDK_OFFSET(0x8C17830)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER__TRYENTERSETTINGPHASE_B__9_0_OFFSET UNITYSDK_OFFSET(0x8C17920)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C17970)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x8C179E0)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C17A10)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C17A20)
+#define MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8C17A30)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHDRSettingPopWindowController_TypeDefinitionIndex = 47432;
+
+	class UIHDRSettingPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_55CF77FE649EF7CB* _view; // 0x2F8
+		::Enum_3_39CBA493DD92466B _settingSource; // 0x300
+		::System::Action* _finishCB; // 0x308
+		::Enum_3_1A7C61CACA5AE4C4 _settingPhase; // 0x310
+		::System::Int32 _localMaxLuminosityLevel; // 0x314
+		::System::Int32 _localUIPaperWhiteLevel; // 0x318
+		::System::Int32 _runtimeMaxLuminosityLevel; // 0x31C
+		::System::Int32 _runtimeUIPaperWhiteLevel; // 0x320
+		::System::Int32 _maxLuminosityConfigLength; // 0x324
+		::System::Int32 _maxUIPaperWhiteConfigLength; // 0x328
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void TryEnterSettingPhase(::Enum_3_1A7C61CACA5AE4C4 settingPhase, ::System::Boolean playSwitchAnim)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_1A7C61CACA5AE4C4, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_TRYENTERSETTINGPHASE_OFFSET))(this, settingPhase, playSwitchAnim);
+		}
+
+		::System::Void RefreshSlider()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_REFRESHSLIDER_OFFSET))(this);
+		}
+
+		::System::Void OnCloseBtnClicked()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONCLOSEBTNCLICKED_OFFSET))(this);
+		}
+
+		::System::Void ConfirmSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_CONFIRMSETTING_OFFSET))(this);
+		}
+
+		::System::Void ResetRuntimeLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_RESETRUNTIMELEVEL_OFFSET))(this);
+		}
+
+		::System::Void OnSliderValueChanged(::System::Single num)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_ONSLIDERVALUECHANGED_OFFSET))(this, num);
+		}
+
+		::System::Void ApplyHDRParam(::System::Int32 maxLuminosityLevel, ::System::Int32 UIPaperWhiteLevel)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER_APPLYHDRPARAM_OFFSET))(this, maxLuminosityLevel, UIPaperWhiteLevel);
+		}
+
+		::System::Void _TryEnterSettingPhase_b__9_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER__TRYENTERSETTINGPHASE_B__9_0_OFFSET))(this);
+		}
+
+		::System::Void _OnCloseBtnClicked_b__11_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER__ONCLOSEBTNCLICKED_B__11_1_OFFSET))(this);
+		}
+
+		::System::Void _OnCloseBtnClicked_b__11_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER__ONCLOSEBTNCLICKED_B__11_2_OFFSET))(this);
+		}
+
+		::System::Void _OnCloseBtnClicked_g__DoClose_11_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER__ONCLOSEBTNCLICKED_G__DOCLOSE_11_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHDRSETTINGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

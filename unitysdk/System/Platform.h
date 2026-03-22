@@ -2,29 +2,29 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_PLATFORM_CHECKOS_OFFSET UNITYSDK_OFFSET(0x17F19710)
-#define SYSTEM_PLATFORM_GET_ISFREEBSD_OFFSET UNITYSDK_OFFSET(0x17F19A30)
-#define SYSTEM_PLATFORM_GET_ISMACOS_OFFSET UNITYSDK_OFFSET(0x17F19970)
-#define SYSTEM_PLATFORM_UNAME_OFFSET UNITYSDK_OFFSET(0x17F19690)
+#define SYSTEM_PLATFORM_CHECKOS_OFFSET UNITYSDK_OFFSET(0x19D7FA10)
+#define SYSTEM_PLATFORM_GET_ISFREEBSD_OFFSET UNITYSDK_OFFSET(0x19D7FB30)
+#define SYSTEM_PLATFORM_GET_ISMACOS_OFFSET UNITYSDK_OFFSET(0x19D7FA50)
+#define SYSTEM_PLATFORM_UNAME_OFFSET UNITYSDK_OFFSET(0x19D7F990)
 
 namespace System
 {
-	inline static constexpr unsigned int Platform_TypeDefinitionIndex = 2474;
+	inline static constexpr unsigned int Platform_TypeDefinitionIndex = 2703;
 
 	class Platform : public ::System::Object
 	{
 	public:
 		static ::System::Boolean* StaticGet_isMacOS()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Platform_TypeDefinitionIndex)->GetStaticField(0x4F90);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Platform_TypeDefinitionIndex)->GetStaticField(0x11E0);
 		}
 		static ::System::Boolean* StaticGet_checkedOS()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Platform_TypeDefinitionIndex)->GetStaticField(0x4F91);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Platform_TypeDefinitionIndex)->GetStaticField(0x11E1);
 		}
 		static ::System::Boolean* StaticGet_isFreeBSD()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Platform_TypeDefinitionIndex)->GetStaticField(0x4F92);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Platform_TypeDefinitionIndex)->GetStaticField(0x11E2);
 		}
 
 		static ::System::Int32 uname(::System::IntPtr buf)

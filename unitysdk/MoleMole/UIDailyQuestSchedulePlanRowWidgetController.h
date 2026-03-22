@@ -1,0 +1,146 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+#include "unitysdk/MoleMole/UIDailyQuestSchedulePlanRowWidgetController_State.h"
+
+class Class_1_1685EC66FBD28897;
+class Class_1_7C378C8BB7097B16;
+class Class_2_79F6D62CE30E3F8E_32;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Object; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_GETSHOWREWARDLIST_OFFSET UNITYSDK_OFFSET(0xA270340)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_GETSTATE_OFFSET UNITYSDK_OFFSET(0xA2709D0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA26FDC0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0xA26FF40)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0xA270170)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA26F1F0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA26FE60)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA26EF80)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA26F140)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xA26F330)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA270D70)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER__ONUIINIT_B__2_0_OFFSET UNITYSDK_OFFSET(0xA270D80)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER__REFRESHVIEW_G__SETBTNSTATE_9_0_OFFSET UNITYSDK_OFFSET(0xA2705C0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA270FB0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0xA271020)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0xA271090)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA271100)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA271180)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA271200)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA271260)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIDailyQuestSchedulePlanRowWidgetController_TypeDefinitionIndex = 42031;
+
+	class UIDailyQuestSchedulePlanRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_32* _view; // 0x2D0
+		::Class_1_7C378C8BB7097B16* _quest; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::MoleMole::UIDailyQuestSchedulePlanRowWidgetController_State GetState()
+		{
+			return ((::MoleMole::UIDailyQuestSchedulePlanRowWidgetController_State(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_GETSTATE_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* GetShowRewardList(::System::Int32 rewardID)
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER_GETSHOWREWARDLIST_OFFSET))(this, rewardID);
+		}
+
+		::System::Void _OnUIInit_b__2_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER__ONUIINIT_B__2_0_OFFSET))(this);
+		}
+
+		::System::Void _RefreshView_g__SetBtnState_9_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER__REFRESHVIEW_G__SETBTNSTATE_9_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,56 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_F3CFF1AFF7EE7DCD.h"
+
+#define CLASS_3_8EA96E4FE9971ED0_GETCLASSID_OFFSET UNITYSDK_OFFSET(0x6A5F620)
+#define CLASS_3_8EA96E4FE9971ED0_METHOD_3_A1D8CD775DEC3C21_OFFSET UNITYSDK_OFFSET(0x6A5F780)
+#define CLASS_3_8EA96E4FE9971ED0_METHOD_3_ADF4AD3331B4D7AD_OFFSET UNITYSDK_OFFSET(0x6A5F710)
+#define CLASS_3_8EA96E4FE9971ED0_METHOD_3_CCBE730AF445BBD4_OFFSET UNITYSDK_OFFSET(0x6A5F7E0)
+#define CLASS_3_8EA96E4FE9971ED0_ONCLEAN_OFFSET UNITYSDK_OFFSET(0x6A5F5B0)
+#define CLASS_3_8EA96E4FE9971ED0__CCTOR_OFFSET UNITYSDK_OFFSET(0x6A5F680)
+#define CLASS_3_8EA96E4FE9971ED0__CTOR_OFFSET UNITYSDK_OFFSET(0x6A5F700)
+
+inline static constexpr unsigned int Class_3_8EA96E4FE9971ED0_TypeDefinitionIndex = 37253;
+
+class Class_3_8EA96E4FE9971ED0 : public ::Class_2_F3CFF1AFF7EE7DCD
+{
+public:
+	// static const ::System::Int32 Field_3_2 = 0x4C; // 0x0
+	::System::Boolean Field_3_1; // 0x48
+	::System::Int32 Field_3_0; // 0x4C
+
+	static ::System::Void _cctor()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_3_8EA96E4FE9971ED0__CCTOR_OFFSET))();
+	}
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_8EA96E4FE9971ED0__CTOR_OFFSET))(this);
+	}
+
+	::System::Void OnClean()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_8EA96E4FE9971ED0_ONCLEAN_OFFSET))(this);
+	}
+
+	::System::Int32 GetClassID()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_8EA96E4FE9971ED0_GETCLASSID_OFFSET))(this);
+	}
+
+	::System::Void Method_3_ADF4AD3331B4D7AD(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_3_8EA96E4FE9971ED0_METHOD_3_ADF4AD3331B4D7AD_OFFSET))(this, a1);
+	}
+
+	::System::Int32 Method_3_A1D8CD775DEC3C21()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_8EA96E4FE9971ED0_METHOD_3_A1D8CD775DEC3C21_OFFSET))(this);
+	}
+
+	static ::Class_3_8EA96E4FE9971ED0* Method_3_CCBE730AF445BBD4()
+	{
+		return ((::Class_3_8EA96E4FE9971ED0*(*)())((::PBYTE)hIl2Cpp + CLASS_3_8EA96E4FE9971ED0_METHOD_3_CCBE730AF445BBD4_OFFSET))();
+	}
+};

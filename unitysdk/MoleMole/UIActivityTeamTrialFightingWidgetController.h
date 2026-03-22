@@ -1,0 +1,287 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_545C436C5B39D527.h"
+
+class Class_2_79AE422BA06F6D26_128;
+class Class_2_D89CCC627A66D0AD;
+namespace MoleMole { class UIActivePropsWindowContext; }
+namespace MoleMole { class UIActivityTeamTrialBuffRowWidgetController; }
+namespace MoleMole { class UIActivityTeamTrialBuffRowWidgetController_RowData; }
+namespace MoleMole { class UIActivityTeamTrialConditionRowWidgetController; }
+namespace MoleMole { class UIActivityTeamTrialFightingWidgetController_Context; }
+namespace MoleMole { class UIActivityTeamTrialMissionRowWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIRoleSelectPageContext; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_CHECKABILITYENOUGH_OFFSET UNITYSDK_OFFSET(0x8AC2B20)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_CHECKCONDITIONENOUGH_OFFSET UNITYSDK_OFFSET(0x8AC1EC0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_CHECKEFFECTENOUGH_OFFSET UNITYSDK_OFFSET(0x8AC29F0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_GETCONDITIONITEM_OFFSET UNITYSDK_OFFSET(0x8AC11E0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_GETMISSIONITEM_OFFSET UNITYSDK_OFFSET(0x8AC1090)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_GETSELECTCONDITIONS_OFFSET UNITYSDK_OFFSET(0x8AC17D0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_GETSELECTEFFECTS_OFFSET UNITYSDK_OFFSET(0x8AC24C0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONCLICKBOSSINFOBTN_OFFSET UNITYSDK_OFFSET(0x8ABFF10)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONCLICKCONDITION_OFFSET UNITYSDK_OFFSET(0x8AC1FA0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONCLICKEFFECT_OFFSET UNITYSDK_OFFSET(0x8AC2530)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8ABF3D0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONEFFECTSELECTCHANGE_OFFSET UNITYSDK_OFFSET(0x8AC2670)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONGETSELECTROLECONTEXT_OFFSET UNITYSDK_OFFSET(0x8AC34B0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONINPUTACTIONCUSTOM_OFFSET UNITYSDK_OFFSET(0x8ABFE30)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONPOSTGETBUDDYSELECTCONTEXT_OFFSET UNITYSDK_OFFSET(0x8AC3880)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONSHOWDETAILINFO_OFFSET UNITYSDK_OFFSET(0x8AC3AD0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8ABFBA0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8ABF470)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8ABF550)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8ABF780)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_OPENTEAMPAGE_OFFSET UNITYSDK_OFFSET(0x8AC2E80)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHBOOSINFO_OFFSET UNITYSDK_OFFSET(0x8AC0100)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHCONDITIONCOUNT_OFFSET UNITYSDK_OFFSET(0x8AC1590)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHCONDITIONENABLE_OFFSET UNITYSDK_OFFSET(0x8AC1840)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHCONDITIONS_OFFSET UNITYSDK_OFFSET(0x8AC04F0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHEFFECTCOUNT_OFFSET UNITYSDK_OFFSET(0x8AC2250)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHEFFECTENABLE_OFFSET UNITYSDK_OFFSET(0x8AC2710)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHEFFECTLIST_OFFSET UNITYSDK_OFFSET(0x8AC19F0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHMISSION_OFFSET UNITYSDK_OFFSET(0x8AC0390)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHTEAMBUDDY_OFFSET UNITYSDK_OFFSET(0x8AC2DA0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHTEAMROLE_OFFSET UNITYSDK_OFFSET(0x8AC2BA0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHTEAM_OFFSET UNITYSDK_OFFSET(0x8AC0E10)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHWIDGET_OFFSET UNITYSDK_OFFSET(0x8ABF8B0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_SELECTCONDITION_OFFSET UNITYSDK_OFFSET(0x8AC1340)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_SELECTEFFECT_OFFSET UNITYSDK_OFFSET(0x8AC20F0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8AC3D50)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8AC3F90)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8AC4000)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8AC4010)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8AC4090)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8AC40F0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityTeamTrialFightingWidgetController_TypeDefinitionIndex = 49113;
+
+	class UIActivityTeamTrialFightingWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_128* _view; // 0x2A0
+		::MoleMole::UIActivityTeamTrialFightingWidgetController_Context* _context; // 0x2A8
+		::System::Int32 _activityID; // 0x2B0
+		::System::Int32 _questID; // 0x2B4
+		::System::Collections::Generic::List_1<::MoleMole::UIActivityTeamTrialMissionRowWidgetController*>* _missionItems; // 0x2B8
+		::System::Collections::Generic::List_1<::MoleMole::UIActivityTeamTrialConditionRowWidgetController*>* _conditionItems; // 0x2C0
+		::System::Collections::Generic::List_1<::MoleMole::UIActivityTeamTrialBuffRowWidgetController_RowData*>* _effectDataList; // 0x2C8
+		::System::Collections::Generic::List_1<::System::Int32>* _selectedConditionIDList; // 0x2D0
+		::System::Collections::Generic::List_1<::System::Int32>* _selectedEffectIDList; // 0x2D8
+		::Struct_2_545C436C5B39D527 _lineupBattleTypeData; // 0x2E0
+		::System::Collections::Generic::List_1<::Class_2_D89CCC627A66D0AD*>* _selectedRoleIDList; // 0x2F8
+		::System::Int32 _selectedBuddyID; // 0x300
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputActionCustom(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONINPUTACTIONCUSTOM_OFFSET))(this, inputAction);
+		}
+
+		::System::Void RefreshWidget(::System::Int32 questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHWIDGET_OFFSET))(this, questID);
+		}
+
+		::System::Void RefreshBoosInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHBOOSINFO_OFFSET))(this);
+		}
+
+		::System::Void OnClickBossInfoBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONCLICKBOSSINFOBTN_OFFSET))(this);
+		}
+
+		::System::Void RefreshMission()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHMISSION_OFFSET))(this);
+		}
+
+		::MoleMole::UIActivityTeamTrialMissionRowWidgetController* GetMissionItem(::System::Int32 index)
+		{
+			return ((::MoleMole::UIActivityTeamTrialMissionRowWidgetController*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_GETMISSIONITEM_OFFSET))(this, index);
+		}
+
+		::System::Void RefreshConditions()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHCONDITIONS_OFFSET))(this);
+		}
+
+		::System::Void RefreshConditionCount()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHCONDITIONCOUNT_OFFSET))(this);
+		}
+
+		::MoleMole::UIActivityTeamTrialConditionRowWidgetController* GetConditionItem(::System::Int32 index)
+		{
+			return ((::MoleMole::UIActivityTeamTrialConditionRowWidgetController*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_GETCONDITIONITEM_OFFSET))(this, index);
+		}
+
+		::System::Void SelectCondition(::System::Int32 activityAbilityID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_SELECTCONDITION_OFFSET))(this, activityAbilityID);
+		}
+
+		::System::Void RefreshConditionEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHCONDITIONENABLE_OFFSET))(this);
+		}
+
+		::System::Boolean OnClickCondition(::MoleMole::UIActivityTeamTrialConditionRowWidgetController* item)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::UIActivityTeamTrialConditionRowWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONCLICKCONDITION_OFFSET))(this, item);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* GetSelectConditions()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_GETSELECTCONDITIONS_OFFSET))(this);
+		}
+
+		::System::Void RefreshEffectList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHEFFECTLIST_OFFSET))(this);
+		}
+
+		::System::Void RefreshEffectCount()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHEFFECTCOUNT_OFFSET))(this);
+		}
+
+		::System::Void SelectEffect(::MoleMole::UIActivityTeamTrialBuffRowWidgetController* item)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityTeamTrialBuffRowWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_SELECTEFFECT_OFFSET))(this, item);
+		}
+
+		::System::Void OnClickEffect(::MoleMole::UIActivityTeamTrialBuffRowWidgetController* item)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityTeamTrialBuffRowWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONCLICKEFFECT_OFFSET))(this, item);
+		}
+
+		::System::Void OnEffectSelectChange(::System::Boolean isSelect, ::MoleMole::UIActivityTeamTrialBuffRowWidgetController_RowData* rowData)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::MoleMole::UIActivityTeamTrialBuffRowWidgetController_RowData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONEFFECTSELECTCHANGE_OFFSET))(this, isSelect, rowData);
+		}
+
+		::System::Void RefreshEffectEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHEFFECTENABLE_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* GetSelectEffects()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_GETSELECTEFFECTS_OFFSET))(this);
+		}
+
+		::System::Boolean CheckConditionEnough(::System::Collections::Generic::List_1<::System::Int32>* conditions)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Collections::Generic::List_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_CHECKCONDITIONENOUGH_OFFSET))(this, conditions);
+		}
+
+		::System::Boolean CheckEffectEnough(::System::Collections::Generic::List_1<::System::Int32>* effects)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Collections::Generic::List_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_CHECKEFFECTENOUGH_OFFSET))(this, effects);
+		}
+
+		::System::Boolean CheckAbilityEnough()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_CHECKABILITYENOUGH_OFFSET))(this);
+		}
+
+		::System::Void RefreshTeam()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHTEAM_OFFSET))(this);
+		}
+
+		::System::Void RefreshTeamRole(::System::Int32 avatarID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHTEAMROLE_OFFSET))(this, avatarID);
+		}
+
+		::System::Void RefreshTeamBuddy(::System::Int32 buddyID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_REFRESHTEAMBUDDY_OFFSET))(this, buddyID);
+		}
+
+		::System::Void OpenTeamPage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_OPENTEAMPAGE_OFFSET))(this);
+		}
+
+		::MoleMole::UIRoleSelectPageContext* OnGetSelectRoleContext(::System::Int32 selectIndex, ::Il2CppArray<::Class_2_D89CCC627A66D0AD*>* currentSelected)
+		{
+			return ((::MoleMole::UIRoleSelectPageContext*(*)(::PVOID, ::System::Int32, ::Il2CppArray<::Class_2_D89CCC627A66D0AD*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONGETSELECTROLECONTEXT_OFFSET))(this, selectIndex, currentSelected);
+		}
+
+		::MoleMole::UIActivePropsWindowContext* OnPostGetBuddySelectContext(::MoleMole::UIActivePropsWindowContext* context)
+		{
+			return ((::MoleMole::UIActivePropsWindowContext*(*)(::PVOID, ::MoleMole::UIActivePropsWindowContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONPOSTGETBUDDYSELECTCONTEXT_OFFSET))(this, context);
+		}
+
+		::System::Void OnShowDetailInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER_ONSHOWDETAILINFO_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINGWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

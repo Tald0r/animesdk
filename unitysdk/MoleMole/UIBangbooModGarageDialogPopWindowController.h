@@ -1,0 +1,122 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_C8489A0F22314D2F;
+class Class_1_F57D00757009D1EB;
+class Class_2_6DBC0913FC389AFB;
+class Class_2_8FC1A7735F246865;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace System { class EventArgs; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_DOBUY_OFFSET UNITYSDK_OFFSET(0xB2A7560)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xB2A6810)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB2A7130)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB2A81A0)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB2A6820)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_SELECTEDGOODS_OFFSET UNITYSDK_OFFSET(0xB2A74D0)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_SETCURRENCY_OFFSET UNITYSDK_OFFSET(0xB2A7820)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_SHOWCURRENCYTIP_OFFSET UNITYSDK_OFFSET(0xB2A7E60)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_SHOWGOODSLOCKTIPS_OFFSET UNITYSDK_OFFSET(0xB2A71D0)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_UPDATETOKEN_OFFSET UNITYSDK_OFFSET(0xB2A6DD0)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB2A8230)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__5_0_OFFSET UNITYSDK_OFFSET(0xB2A8240)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB2A82D0)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB2A8340)
+#define MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB2A8350)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBangbooModGarageDialogPopWindowController_TypeDefinitionIndex = 78715;
+
+	class UIBangbooModGarageDialogPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Int32 ShopId = 0x2; // 0x0
+		::Class_2_6DBC0913FC389AFB* _view; // 0x2F8
+		::Class_1_C8489A0F22314D2F* _shopEntity; // 0x300
+		::System::Collections::Generic::List_1<::Class_1_F57D00757009D1EB*>* _curGoodsList; // 0x308
+		::System::Int32 _curSelectGoodsIndex; // 0x310
+		::Class_2_8FC1A7735F246865* _shopModel; // 0x318
+		::System::Int32 _curGoodsCount; // 0x320
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void ShowGoodsLockTips(::Class_1_F57D00757009D1EB* goods)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_F57D00757009D1EB*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_SHOWGOODSLOCKTIPS_OFFSET))(this, goods);
+		}
+
+		::System::Void SelectedGoods(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_SELECTEDGOODS_OFFSET))(this, index);
+		}
+
+		::System::Void SetCurrency(::System::Int32 index, ::System::Int32 currencyID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_SETCURRENCY_OFFSET))(this, index, currencyID);
+		}
+
+		::System::Void UpdateToken(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_UPDATETOKEN_OFFSET))(this, args);
+		}
+
+		::System::Void ShowCurrencyTip(::System::Int32 itemID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_SHOWCURRENCYTIP_OFFSET))(this, itemID);
+		}
+
+		::System::Void DoBuy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_DOBUY_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _OnUIInit_b__5_0(::System::Func_1<::MoleMole::UIControlReference*>* reference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__5_0_OFFSET))(this, reference);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOMODGARAGEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

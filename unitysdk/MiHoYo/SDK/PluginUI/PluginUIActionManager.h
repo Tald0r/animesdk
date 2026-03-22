@@ -7,24 +7,24 @@ namespace System { template <typename T1, typename T2> class Action_2; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER_DOACTION_OFFSET UNITYSDK_OFFSET(0x158D2B20)
-#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER_GETACTION_OFFSET UNITYSDK_OFFSET(0x158D2E30)
-#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER_GETINSTANCE_OFFSET UNITYSDK_OFFSET(0x158D2700)
-#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER_REGISTERACTION_OFFSET UNITYSDK_OFFSET(0x158D2920)
-#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER_UNREGISTERACTION_OFFSET UNITYSDK_OFFSET(0x158D2A60)
-#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x158D2FA0)
-#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x158D2880)
+#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER_DOACTION_OFFSET UNITYSDK_OFFSET(0x18790A40)
+#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER_GETACTION_OFFSET UNITYSDK_OFFSET(0x18790C80)
+#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER_GETINSTANCE_OFFSET UNITYSDK_OFFSET(0x18790620)
+#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER_REGISTERACTION_OFFSET UNITYSDK_OFFSET(0x18790840)
+#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER_UNREGISTERACTION_OFFSET UNITYSDK_OFFSET(0x18790980)
+#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x18790E00)
+#define MIHOYO_SDK_PLUGINUI_PLUGINUIACTIONMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x187907A0)
 
 namespace MiHoYo::SDK::PluginUI
 {
-	inline static constexpr unsigned int PluginUIActionManager_TypeDefinitionIndex = 7643;
+	inline static constexpr unsigned int PluginUIActionManager_TypeDefinitionIndex = 18784;
 
 	class PluginUIActionManager : public ::System::Object
 	{
 	public:
 		static ::MiHoYo::SDK::PluginUI::PluginUIActionManager** StaticGet_sm_instance()
 		{
-			return (::MiHoYo::SDK::PluginUI::PluginUIActionManager**)Il2CppClass::FromTypeDefinitionIndex(PluginUIActionManager_TypeDefinitionIndex)->GetStaticField(0x164F0);
+			return (::MiHoYo::SDK::PluginUI::PluginUIActionManager**)Il2CppClass::FromTypeDefinitionIndex(PluginUIActionManager_TypeDefinitionIndex)->GetStaticField(0xA7B0);
 		}
 		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Action_2<::System::String*, ::System::Action_1<::System::String*>*>*>* m_dicAction; // 0x10
 		::System::Int32 m_nActionIndex; // 0x18

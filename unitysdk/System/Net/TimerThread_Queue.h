@@ -2,11 +2,16 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_NET_TIMERTHREAD_QUEUE__CTOR_OFFSET UNITYSDK_OFFSET(0x17F059C0)
+namespace System::Net { class TimerThread_Callback; }
+namespace System::Net { class TimerThread_Timer; }
+
+#define SYSTEM_NET_TIMERTHREAD_QUEUE_CREATETIMER_OFFSET UNITYSDK_OFFSET(0x185A5970)
+#define SYSTEM_NET_TIMERTHREAD_QUEUE_GET_DURATION_OFFSET UNITYSDK_OFFSET(0x185A5960)
+#define SYSTEM_NET_TIMERTHREAD_QUEUE__CTOR_OFFSET UNITYSDK_OFFSET(0x185A5950)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int TimerThread_Queue_TypeDefinitionIndex = 2765;
+	inline static constexpr unsigned int TimerThread_Queue_TypeDefinitionIndex = 3396;
 
 	class TimerThread_Queue : public ::System::Object
 	{
@@ -16,6 +21,16 @@ namespace System::Net
 		::System::Void _ctor(::System::Int32 durationMilliseconds)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_QUEUE__CTOR_OFFSET))(this, durationMilliseconds);
+		}
+
+		::System::Int32 get_Duration()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_QUEUE_GET_DURATION_OFFSET))(this);
+		}
+
+		::System::Net::TimerThread_Timer* CreateTimer()
+		{
+			return ((::System::Net::TimerThread_Timer*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_QUEUE_CREATETIMER_OFFSET))(this);
 		}
 	};
 }

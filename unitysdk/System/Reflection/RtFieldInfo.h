@@ -7,42 +7,42 @@ namespace System { class Object; }
 namespace System::Globalization { class CultureInfo; }
 namespace System::Reflection { class Binder; }
 
-#define SYSTEM_REFLECTION_RTFIELDINFO_CHECKCONSISTENCY_OFFSET UNITYSDK_OFFSET(0x15CCAAD0)
-#define SYSTEM_REFLECTION_RTFIELDINFO_SETVALUEDIRECT_OFFSET UNITYSDK_OFFSET(0x15CCACA0)
-#define SYSTEM_REFLECTION_RTFIELDINFO_UNSAFEGETVALUE_OFFSET UNITYSDK_OFFSET(0x15CCAA90)
-#define SYSTEM_REFLECTION_RTFIELDINFO_UNSAFESETVALUE_OFFSET UNITYSDK_OFFSET(0x15CCAC70)
-#define SYSTEM_REFLECTION_RTFIELDINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x15CCADD0)
+#define SYSTEM_REFLECTION_RTFIELDINFO_METHOD_4_1CC04E1996B27318_OFFSET UNITYSDK_OFFSET(0x17F5BD10)
+#define SYSTEM_REFLECTION_RTFIELDINFO_METHOD_4_535B1BA754ABCE30_OFFSET UNITYSDK_OFFSET(0x17F5BE60)
+#define SYSTEM_REFLECTION_RTFIELDINFO_METHOD_4_832295EC279E5994_OFFSET UNITYSDK_OFFSET(0x17F5BFA0)
+#define SYSTEM_REFLECTION_RTFIELDINFO_METHOD_4_A15597706D84059A_OFFSET UNITYSDK_OFFSET(0x17F5BE90)
+#define SYSTEM_REFLECTION_RTFIELDINFO_METHOD_4_D702C669788B2208_OFFSET UNITYSDK_OFFSET(0x17F5BCD0)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int RtFieldInfo_TypeDefinitionIndex = 616;
+	inline static constexpr unsigned int RtFieldInfo_TypeDefinitionIndex = 589;
 
 	class RtFieldInfo : public ::System::Reflection::RuntimeFieldInfo
 	{
 	public:
-		::System::Void _ctor()
+		::System::Void Method_4_832295EC279E5994()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RTFIELDINFO__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RTFIELDINFO_METHOD_4_832295EC279E5994_OFFSET))(this);
 		}
 
-		::System::Object* UnsafeGetValue(::System::Object* obj)
+		::System::Object* Method_4_D702C669788B2208(::System::Object* obj)
 		{
-			return ((::System::Object*(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RTFIELDINFO_UNSAFEGETVALUE_OFFSET))(this, obj);
+			return ((::System::Object*(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RTFIELDINFO_METHOD_4_D702C669788B2208_OFFSET))(this, obj);
 		}
 
-		::System::Void CheckConsistency(::System::Object* target)
+		::System::Void Method_4_1CC04E1996B27318(::System::Object* target)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RTFIELDINFO_CHECKCONSISTENCY_OFFSET))(this, target);
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RTFIELDINFO_METHOD_4_1CC04E1996B27318_OFFSET))(this, target);
 		}
 
-		::System::Void UnsafeSetValue(::System::Object* obj, ::System::Object* value, ::System::Reflection::BindingFlags invokeAttr, ::System::Reflection::Binder* binder, ::System::Globalization::CultureInfo* culture)
+		::System::Void Method_4_535B1BA754ABCE30(::System::Object* obj, ::System::Object* value, ::System::Reflection::BindingFlags invokeAttr, ::System::Reflection::Binder* binder, ::System::Globalization::CultureInfo* culture)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*, ::System::Reflection::BindingFlags, ::System::Reflection::Binder*, ::System::Globalization::CultureInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RTFIELDINFO_UNSAFESETVALUE_OFFSET))(this, obj, value, invokeAttr, binder, culture);
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*, ::System::Reflection::BindingFlags, ::System::Reflection::Binder*, ::System::Globalization::CultureInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RTFIELDINFO_METHOD_4_535B1BA754ABCE30_OFFSET))(this, obj, value, invokeAttr, binder, culture);
 		}
 
-		::System::Void SetValueDirect(::System::TypedReference obj, ::System::Object* value)
+		::System::Void Method_4_A15597706D84059A(::System::TypedReference obj, ::System::Object* value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::TypedReference, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RTFIELDINFO_SETVALUEDIRECT_OFFSET))(this, obj, value);
+			return ((::System::Void(*)(::PVOID, ::System::TypedReference, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RTFIELDINFO_METHOD_4_A15597706D84059A_OFFSET))(this, obj, value);
 		}
 	};
 }

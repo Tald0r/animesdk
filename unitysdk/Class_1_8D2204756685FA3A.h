@@ -1,0 +1,140 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/MoleMole/UI/FlowerShop/ESlotType.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_100;
+class Class_1_48D56DACBE4271BC;
+class Class_2_777A5D016ADC7368;
+class Class_2_AB9601BC4707463D;
+class Class_2_AD95DD998F7AF291;
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class Transform; }
+
+#define CLASS_1_8D2204756685FA3A_METHOD_1_01F3CEA00EA918C8_OFFSET UNITYSDK_OFFSET(0xB991E50)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_1AE5EFE9823400F4_OFFSET UNITYSDK_OFFSET(0xB9929A0)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_21886A8411E71157_OFFSET UNITYSDK_OFFSET(0xB991700)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_43A46E5F9FAC62B8_OFFSET UNITYSDK_OFFSET(0xB992990)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_4D71BCFB74C16073_1_OFFSET UNITYSDK_OFFSET(0xB992CB0)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_4D71BCFB74C16073_OFFSET UNITYSDK_OFFSET(0xB992CA0)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_58BA0C8308C8127F_OFFSET UNITYSDK_OFFSET(0xB992980)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_5C00C2EE4FCF347E_OFFSET UNITYSDK_OFFSET(0xB992CC0)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_5C0BDCAA1FC45B61_OFFSET UNITYSDK_OFFSET(0xB992670)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_89EF21CA0414B145_OFFSET UNITYSDK_OFFSET(0xB991D80)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_9E5C42D7144B028A_OFFSET UNITYSDK_OFFSET(0xB9928A0)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_AC7CD4175E0A3EF8_OFFSET UNITYSDK_OFFSET(0xB991A20)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_B0ECEFBCA9FBC759_OFFSET UNITYSDK_OFFSET(0xB991680)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xB992840)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xB991DF0)
+#define CLASS_1_8D2204756685FA3A_METHOD_1_DAEB67F34AF80609_OFFSET UNITYSDK_OFFSET(0xB9919B0)
+#define CLASS_1_8D2204756685FA3A_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0xB992730)
+#define CLASS_1_8D2204756685FA3A__CTOR_OFFSET UNITYSDK_OFFSET(0xB991440)
+
+inline static constexpr unsigned int Class_1_8D2204756685FA3A_TypeDefinitionIndex = 68521;
+
+class Class_1_8D2204756685FA3A : public ::System::Object
+{
+public:
+	::UnityEngine::Transform* Field_1_5; // 0x10
+	::UnityEngine::Transform* Field_1_4; // 0x18
+	::System::Collections::Generic::Dictionary_2<::MoleMole::UI::FlowerShop::ESlotType, ::UnityEngine::GameObject*>* Field_1_6; // 0x20
+	::Class_2_777A5D016ADC7368* Field_1_1; // 0x28
+	::Class_1_48D56DACBE4271BC* Field_1_2; // 0x30
+	::Class_2_AD95DD998F7AF291* Field_1_0; // 0x38
+	::System::Collections::Generic::Dictionary_2<::MoleMole::UI::FlowerShop::ESlotType, ::Class_1_48D56DACBE4271BC*>* Field_1_3; // 0x40
+	::Class_0_16E4307DCC419505_100* Field_1_7; // 0x48
+
+	::System::Void _ctor(::Class_0_16E4307DCC419505_100* a1, ::Class_2_777A5D016ADC7368* a2, ::UnityEngine::Transform* a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_100*, ::Class_2_777A5D016ADC7368*, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A__CTOR_OFFSET))(this, a1, a2, a3);
+	}
+
+	::System::Void Method_1_DAEB67F34AF80609()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_DAEB67F34AF80609_OFFSET))(this);
+	}
+
+	::System::Void Method_1_89EF21CA0414B145()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_89EF21CA0414B145_OFFSET))(this);
+	}
+
+	::System::Void Method_1_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_1_01F3CEA00EA918C8(::MoleMole::UI::FlowerShop::ESlotType a1, ::Class_2_AB9601BC4707463D* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UI::FlowerShop::ESlotType, ::Class_2_AB9601BC4707463D*))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_01F3CEA00EA918C8_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void System_IDisposable_Dispose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET))(this);
+	}
+
+	::System::Void Method_1_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::System::Void Method_1_B0ECEFBCA9FBC759(::Class_0_16E4307DCC419505_100* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_100*))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_B0ECEFBCA9FBC759_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_AC7CD4175E0A3EF8()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_AC7CD4175E0A3EF8_OFFSET))(this);
+	}
+
+	::System::Void Method_1_58BA0C8308C8127F(::Class_2_AD95DD998F7AF291* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_AD95DD998F7AF291*))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_58BA0C8308C8127F_OFFSET))(this, a1);
+	}
+
+	::Class_2_AD95DD998F7AF291* Method_1_43A46E5F9FAC62B8()
+	{
+		return ((::Class_2_AD95DD998F7AF291*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_43A46E5F9FAC62B8_OFFSET))(this);
+	}
+
+	::System::Void Method_1_1AE5EFE9823400F4(::UnityEngine::Transform* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_1AE5EFE9823400F4_OFFSET))(this, a1);
+	}
+
+	::UnityEngine::Transform* Method_1_4D71BCFB74C16073()
+	{
+		return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_4D71BCFB74C16073_OFFSET))(this);
+	}
+
+	::UnityEngine::Transform* Method_1_4D71BCFB74C16073_1()
+	{
+		return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_4D71BCFB74C16073_1_OFFSET))(this);
+	}
+
+	::Class_0_16E4307DCC419505_100* Method_1_5C00C2EE4FCF347E()
+	{
+		return ((::Class_0_16E4307DCC419505_100*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_5C00C2EE4FCF347E_OFFSET))(this);
+	}
+
+	::System::Void Method_1_21886A8411E71157()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_21886A8411E71157_OFFSET))(this);
+	}
+
+	::UnityEngine::Transform* Method_1_5C0BDCAA1FC45B61()
+	{
+		return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_5C0BDCAA1FC45B61_OFFSET))(this);
+	}
+
+	::Class_2_AB9601BC4707463D* Method_1_9E5C42D7144B028A(::MoleMole::UI::FlowerShop::ESlotType a1)
+	{
+		return ((::Class_2_AB9601BC4707463D*(*)(::PVOID, ::MoleMole::UI::FlowerShop::ESlotType))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_METHOD_1_9E5C42D7144B028A_OFFSET))(this, a1);
+	}
+};

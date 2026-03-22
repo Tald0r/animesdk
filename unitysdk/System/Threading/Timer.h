@@ -7,34 +7,34 @@ namespace System { class Object; }
 namespace System::Threading { class TimerCallback; }
 namespace System::Threading { class Timer_Scheduler; }
 
-#define SYSTEM_THREADING_TIMER_CHANGE_1_OFFSET UNITYSDK_OFFSET(0x15B9BF80)
-#define SYSTEM_THREADING_TIMER_CHANGE_2_OFFSET UNITYSDK_OFFSET(0x15B9BD40)
-#define SYSTEM_THREADING_TIMER_CHANGE_OFFSET UNITYSDK_OFFSET(0x15B9BF60)
-#define SYSTEM_THREADING_TIMER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x15B93D00)
-#define SYSTEM_THREADING_TIMER_GETTIMEMONOTONIC_OFFSET UNITYSDK_OFFSET(0x15B9C130)
-#define SYSTEM_THREADING_TIMER_INIT_OFFSET UNITYSDK_OFFSET(0x15B9BC10)
-#define SYSTEM_THREADING_TIMER_KEEPROOTEDWHILESCHEDULED_OFFSET UNITYSDK_OFFSET(0x15B92C20)
-#define SYSTEM_THREADING_TIMER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15B9C3C0)
-#define SYSTEM_THREADING_TIMER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15B9BC70)
-#define SYSTEM_THREADING_TIMER__CTOR_OFFSET UNITYSDK_OFFSET(0x15B92BC0)
+#define SYSTEM_THREADING_TIMER_CHANGE_1_OFFSET UNITYSDK_OFFSET(0x1944F0D0)
+#define SYSTEM_THREADING_TIMER_CHANGE_2_OFFSET UNITYSDK_OFFSET(0x1944EE90)
+#define SYSTEM_THREADING_TIMER_CHANGE_OFFSET UNITYSDK_OFFSET(0x1944F0B0)
+#define SYSTEM_THREADING_TIMER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1944F160)
+#define SYSTEM_THREADING_TIMER_GETTIMEMONOTONIC_OFFSET UNITYSDK_OFFSET(0x1944F1D0)
+#define SYSTEM_THREADING_TIMER_INIT_OFFSET UNITYSDK_OFFSET(0x1944ECC0)
+#define SYSTEM_THREADING_TIMER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1944F210)
+#define SYSTEM_THREADING_TIMER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1944ED20)
+#define SYSTEM_THREADING_TIMER__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1944EDF0)
+#define SYSTEM_THREADING_TIMER__CTOR_OFFSET UNITYSDK_OFFSET(0x1944EC60)
 
 namespace System::Threading
 {
-	inline static constexpr unsigned int Timer_TypeDefinitionIndex = 873;
+	inline static constexpr unsigned int Timer_TypeDefinitionIndex = 865;
 
 	class Timer : public ::System::MarshalByRefObject
 	{
 	public:
 		static ::System::Threading::Timer_Scheduler** StaticGet_scheduler()
 		{
-			return (::System::Threading::Timer_Scheduler**)Il2CppClass::FromTypeDefinitionIndex(Timer_TypeDefinitionIndex)->GetStaticField(0x13220);
+			return (::System::Threading::Timer_Scheduler**)Il2CppClass::FromTypeDefinitionIndex(Timer_TypeDefinitionIndex)->GetStaticField(0x3D0);
 		}
 		::System::Object* state; // 0x18
 		::System::Threading::TimerCallback* callback; // 0x20
 		::System::Boolean disposed; // 0x28
 		::System::Int64 due_time_ms; // 0x30
-		::System::Int64 period_ms; // 0x38
-		::System::Int64 next_run; // 0x40
+		::System::Int64 next_run; // 0x38
+		::System::Int64 period_ms; // 0x40
 
 		::System::Void _ctor(::System::Threading::TimerCallback* callback, ::System::Object* state, ::System::Int32 dueTime, ::System::Int32 period)
 		{
@@ -44,6 +44,11 @@ namespace System::Threading
 		::System::Void _ctor_1(::System::Threading::TimerCallback* callback, ::System::Object* state, ::System::TimeSpan dueTime, ::System::TimeSpan period)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Threading::TimerCallback*, ::System::Object*, ::System::TimeSpan, ::System::TimeSpan))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_TIMER__CTOR_1_OFFSET))(this, callback, state, dueTime, period);
+		}
+
+		::System::Void _ctor_2(::System::Threading::TimerCallback* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Threading::TimerCallback*))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_TIMER__CTOR_2_OFFSET))(this, callback);
 		}
 
 		static ::System::Void _cctor()
@@ -74,11 +79,6 @@ namespace System::Threading
 		::System::Boolean Change_2(::System::Int64 dueTime, ::System::Int64 period, ::System::Boolean first)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::System::Int64, ::System::Int64, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_TIMER_CHANGE_2_OFFSET))(this, dueTime, period, first);
-		}
-
-		::System::Void KeepRootedWhileScheduled()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_TIMER_KEEPROOTEDWHILESCHEDULED_OFFSET))(this);
 		}
 
 		static ::System::Int64 GetTimeMonotonic()

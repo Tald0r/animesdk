@@ -5,27 +5,23 @@
 namespace System { class String; }
 namespace UnityEngine { class Sprite; }
 
-#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA_GET_IMAGE_OFFSET UNITYSDK_OFFSET(0x182FBEB0)
-#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA_GET_INDEX_OFFSET UNITYSDK_OFFSET(0x182FBED0)
-#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA_GET_TEXT_OFFSET UNITYSDK_OFFSET(0x182FBE90)
-#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA_SET_IMAGE_OFFSET UNITYSDK_OFFSET(0x182FBEC0)
-#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA_SET_INDEX_OFFSET UNITYSDK_OFFSET(0x182FBEE0)
-#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA_SET_TEXT_OFFSET UNITYSDK_OFFSET(0x182FBEA0)
-#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x182F8B70)
-#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA__CTOR_2_OFFSET UNITYSDK_OFFSET(0x182F8C30)
-#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA__CTOR_3_OFFSET UNITYSDK_OFFSET(0x182FBEF0)
-#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x182F7100)
+#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA_GET_IMAGE_OFFSET UNITYSDK_OFFSET(0x1A41E8C0)
+#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA_GET_TEXT_OFFSET UNITYSDK_OFFSET(0x1A41E8A0)
+#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA_SET_IMAGE_OFFSET UNITYSDK_OFFSET(0x1A41E8D0)
+#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA_SET_TEXT_OFFSET UNITYSDK_OFFSET(0x1A41E8B0)
+#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A41E8F0)
+#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1A41E900)
+#define UNITYENGINE_UI_DROPDOWN_OPTIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A41E8E0)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int Dropdown_OptionData_TypeDefinitionIndex = 5476;
+	inline static constexpr unsigned int Dropdown_OptionData_TypeDefinitionIndex = 8335;
 
 	class Dropdown_OptionData : public ::System::Object
 	{
 	public:
 		::System::String* m_Text; // 0x10
 		::UnityEngine::Sprite* m_Image; // 0x18
-		::System::Int32 _Index_k__BackingField; // 0x20
 
 		::System::Void _ctor()
 		{
@@ -40,11 +36,6 @@ namespace UnityEngine::UI
 		::System::Void _ctor_2(::UnityEngine::Sprite* image)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Sprite*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_DROPDOWN_OPTIONDATA__CTOR_2_OFFSET))(this, image);
-		}
-
-		::System::Void _ctor_3(::System::String* text, ::UnityEngine::Sprite* image)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::UnityEngine::Sprite*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_DROPDOWN_OPTIONDATA__CTOR_3_OFFSET))(this, text, image);
 		}
 
 		::System::String* get_text()
@@ -65,16 +56,6 @@ namespace UnityEngine::UI
 		::System::Void set_image(::UnityEngine::Sprite* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Sprite*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_DROPDOWN_OPTIONDATA_SET_IMAGE_OFFSET))(this, value);
-		}
-
-		::System::Int32 get_Index()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_DROPDOWN_OPTIONDATA_GET_INDEX_OFFSET))(this);
-		}
-
-		::System::Void set_Index(::System::Int32 value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_DROPDOWN_OPTIONDATA_SET_INDEX_OFFSET))(this, value);
 		}
 	};
 }

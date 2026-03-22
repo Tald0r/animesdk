@@ -1,0 +1,13 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int FuncSwitchType_TypeDefinitionIndex = 40798;
+
+	enum class FuncSwitchType : ::System::Int32
+	{
+		GalgameSoundVO = 2,
+		GalgameSoundFX = 1,
+	};
+}

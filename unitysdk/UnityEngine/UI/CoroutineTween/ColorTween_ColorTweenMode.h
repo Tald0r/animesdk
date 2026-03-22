@@ -3,7 +3,7 @@
 
 namespace UnityEngine::UI::CoroutineTween
 {
-	inline static constexpr unsigned int ColorTween_ColorTweenMode_TypeDefinitionIndex = 5664;
+	inline static constexpr unsigned int ColorTween_ColorTweenMode_TypeDefinitionIndex = 8477;
 
 	enum class ColorTween_ColorTweenMode : ::System::Int32
 	{

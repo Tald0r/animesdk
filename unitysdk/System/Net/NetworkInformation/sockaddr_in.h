@@ -4,7 +4,7 @@
 
 namespace System::Net::NetworkInformation
 {
-	inline static constexpr unsigned int sockaddr_in_TypeDefinitionIndex = 2926;
+	inline static constexpr unsigned int sockaddr_in_TypeDefinitionIndex = 3792;
 
 	struct alignas(4) sockaddr_in
 	{

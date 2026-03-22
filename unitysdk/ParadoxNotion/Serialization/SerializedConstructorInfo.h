@@ -1,0 +1,107 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace System { class String; }
+namespace System::Reflection { class ConstructorInfo; }
+namespace System::Reflection { class MemberInfo; }
+namespace System::Reflection { class MethodBase; }
+
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_ASMEMBERINFO_OFFSET UNITYSDK_OFFSET(0x19FF7570)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_ASSTRING_OFFSET UNITYSDK_OFFSET(0x19FF75A0)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_GETMETHODBASE_OFFSET UNITYSDK_OFFSET(0x19FF7580)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_GET_TBASEINFO_OFFSET UNITYSDK_OFFSET(0x19FF6F50)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_GET_TPARAMSINFO_OFFSET UNITYSDK_OFFSET(0x19FF6F70)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_HASCHANGED_OFFSET UNITYSDK_OFFSET(0x19FF7590)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x19FF76C0)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_SET_TBASEINFO_OFFSET UNITYSDK_OFFSET(0x19FF6F60)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_SET_TPARAMSINFO_OFFSET UNITYSDK_OFFSET(0x19FF6F80)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_TOSTRING_OFFSET UNITYSDK_OFFSET(0x19FF7630)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0x19FF7180)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONBEFORESERIALIZE_OFFSET UNITYSDK_OFFSET(0x19FF6F90)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19FF7560)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x19FF7550)
+
+namespace ParadoxNotion::Serialization
+{
+	inline static constexpr unsigned int SerializedConstructorInfo_TypeDefinitionIndex = 26802;
+
+	class SerializedConstructorInfo : public ::System::Object
+	{
+	public:
+		::System::String* _baseInfo; // 0x10
+		::System::String* _paramsInfo; // 0x18
+		::System::Reflection::ConstructorInfo* _constructor; // 0x20
+		::System::Boolean _hasChanged; // 0x28
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::Reflection::ConstructorInfo* constructor)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Reflection::ConstructorInfo*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO__CTOR_1_OFFSET))(this, constructor);
+		}
+
+		::System::String* get_TBaseInfo()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_GET_TBASEINFO_OFFSET))(this);
+		}
+
+		::System::Void set_TBaseInfo(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_SET_TBASEINFO_OFFSET))(this, value);
+		}
+
+		::System::String* get_TParamsInfo()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_GET_TPARAMSINFO_OFFSET))(this);
+		}
+
+		::System::Void set_TParamsInfo(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_SET_TPARAMSINFO_OFFSET))(this, value);
+		}
+
+		::System::Void UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONBEFORESERIALIZE_OFFSET))(this);
+		}
+
+		::System::Void UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONAFTERDESERIALIZE_OFFSET))(this);
+		}
+
+		::System::Reflection::MemberInfo* AsMemberInfo()
+		{
+			return ((::System::Reflection::MemberInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_ASMEMBERINFO_OFFSET))(this);
+		}
+
+		::System::Reflection::MethodBase* GetMethodBase()
+		{
+			return ((::System::Reflection::MethodBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_GETMETHODBASE_OFFSET))(this);
+		}
+
+		::System::Boolean HasChanged()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_HASCHANGED_OFFSET))(this);
+		}
+
+		::System::String* AsString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_ASSTRING_OFFSET))(this);
+		}
+
+		::System::String* ToString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_TOSTRING_OFFSET))(this);
+		}
+
+		static ::System::Reflection::ConstructorInfo* op_Implicit(::ParadoxNotion::Serialization::SerializedConstructorInfo* value)
+		{
+			return ((::System::Reflection::ConstructorInfo*(*)(::ParadoxNotion::Serialization::SerializedConstructorInfo*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDCONSTRUCTORINFO_OP_IMPLICIT_OFFSET))(value);
+		}
+	};
+}

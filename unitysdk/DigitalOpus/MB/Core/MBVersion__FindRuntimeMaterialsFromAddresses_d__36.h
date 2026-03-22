@@ -1,0 +1,57 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class MB2_TextureBakeResults;
+class MB2_TextureBakeResults_CoroutineResult;
+
+#define DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1A350DD0)
+#define DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1A350EA0)
+#define DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1A350F00)
+#define DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x1A350EB0)
+#define DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1A350DC0)
+#define DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36__CTOR_OFFSET UNITYSDK_OFFSET(0x1A350DB0)
+
+namespace DigitalOpus::MB::Core
+{
+	inline static constexpr unsigned int MBVersion__FindRuntimeMaterialsFromAddresses_d__36_TypeDefinitionIndex = 81270;
+
+	class MBVersion__FindRuntimeMaterialsFromAddresses_d__36 : public ::System::Object
+	{
+	public:
+		::System::Object* __2__current; // 0x10
+		::MB2_TextureBakeResults_CoroutineResult* isComplete; // 0x18
+		::MB2_TextureBakeResults* textureBakeResult; // 0x20
+		::System::Int32 __1__state; // 0x28
+
+		::System::Void _ctor(::System::Int32 __1__state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36__CTOR_OFFSET))(this, __1__state);
+		}
+
+		::System::Void System_IDisposable_Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET))(this);
+		}
+
+		::System::Boolean MoveNext()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36_MOVENEXT_OFFSET))(this);
+		}
+
+		::System::Object* System_Collections_Generic_IEnumerator_System_Object__get_Current()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET))(this);
+		}
+
+		::System::Void System_Collections_IEnumerator_Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET))(this);
+		}
+
+		::System::Object* System_Collections_IEnumerator_get_Current()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + DIGITALOPUS_MB_CORE_MBVERSION__FINDRUNTIMEMATERIALSFROMADDRESSES_D__36_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET))(this);
+		}
+	};
+}

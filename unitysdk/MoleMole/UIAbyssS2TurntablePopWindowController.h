@@ -1,0 +1,160 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_BD4EDEA5C328C6C3;
+class Class_2_DA8BF519212BAE65_1;
+class Class_3_6EF456A21AE85EEC_124;
+class Struct_2_E5BC85F0C91E6618_Class_1_B40F7553DE9CCE3D;
+class UIToWorldRTOutput;
+namespace MoleMole { class UIAbyssS2InfoBtnWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0xA4B2440)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xA4B2450)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONCLICKCLOSEBTN_OFFSET UNITYSDK_OFFSET(0xA4B3D20)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONCLICKPAYBTN_OFFSET UNITYSDK_OFFSET(0xA4B4AA0)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONCLICKPREVIEWBTN_OFFSET UNITYSDK_OFFSET(0xA4B3FF0)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA4B3840)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA4B3A60)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA4B3C90)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA4B38E0)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA4B2460)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA4B2CF0)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_TESTRESULT_OFFSET UNITYSDK_OFFSET(0xA4B4180)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_WAITFORROLL_OFFSET UNITYSDK_OFFSET(0xA4B3410)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA4B4DC0)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA4B4E40)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA4B4EB0)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA4B4EE0)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA4B4EF0)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA4B4F00)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA4B4F10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAbyssS2TurntablePopWindowController_TypeDefinitionIndex = 78399;
+
+	class UIAbyssS2TurntablePopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_BD4EDEA5C328C6C3* _view; // 0x2F8
+		::System::String* DefaultScrollSpeed; // 0x300
+		::System::Single DefaultSelectAlignTime; // 0x308
+		::System::String* RollSelectAlignTime; // 0x310
+		::System::String* RollLoopCount; // 0x318
+		::System::String* RollCurveKey; // 0x320
+		::MoleMole::UIAbyssS2InfoBtnWidgetController* _abyssS2InfoBtn; // 0x328
+		::System::UInt32 _turntableUID; // 0x330
+		::Class_2_DA8BF519212BAE65_1* _abyssS2model; // 0x338
+		::System::Collections::Generic::List_1<::Class_3_6EF456A21AE85EEC_124*>* _rollList; // 0x340
+		::UIToWorldRTOutput* _uiToWorldRoot; // 0x348
+		::Struct_2_E5BC85F0C91E6618_Class_1_B40F7553DE9CCE3D* _cachedGamePlayShowPerformQueueHelper; // 0x350
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnClickCloseBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONCLICKCLOSEBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickPreviewBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONCLICKPREVIEWBTN_OFFSET))(this);
+		}
+
+		::System::Void WaitForRoll()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_WAITFORROLL_OFFSET))(this);
+		}
+
+		::System::Void TestResult()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_TESTRESULT_OFFSET))(this);
+		}
+
+		::System::Void OnClickPayBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER_ONCLICKPAYBTN_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

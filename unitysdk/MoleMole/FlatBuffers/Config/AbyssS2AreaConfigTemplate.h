@@ -1,0 +1,205 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_58DF5669875F2C66_211.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_13;
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_CLEAR_OFFSET UNITYSDK_OFFSET(0x15878770)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_AREACONFIGID_OFFSET UNITYSDK_OFFSET(0x158767D0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_AREALEVELABILITYLIST_OFFSET UNITYSDK_OFFSET(0x15876940)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_AREAMAPREFRESHIDLIST_OFFSET UNITYSDK_OFFSET(0x15876C40)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_AREATYPEID_OFFSET UNITYSDK_OFFSET(0x15876F40)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_BANNEDSCENETAGLIST_OFFSET UNITYSDK_OFFSET(0x158770B0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_BATTLERANKINGID_OFFSET UNITYSDK_OFFSET(0x15877310)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_INDEX_OFFSET UNITYSDK_OFFSET(0x15876660)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_ISLOADALL_OFFSET UNITYSDK_OFFSET(0x15876630)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_NONBATTLEAREAIDINFO_OFFSET UNITYSDK_OFFSET(0x15877480)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_OVERRIDEAREANAME_OFFSET UNITYSDK_OFFSET(0x158775A0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_OVERRIDECHALLENGEID_OFFSET UNITYSDK_OFFSET(0x158776C0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_OVERRIDEFCPATH_OFFSET UNITYSDK_OFFSET(0x15877830)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_OVERRIDERESULTIDLIST_OFFSET UNITYSDK_OFFSET(0x15877950)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_OVERRIDEREWARDIDLIST_OFFSET UNITYSDK_OFFSET(0x15877A70)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_SPECIFIEDSCENEINDEX_OFFSET UNITYSDK_OFFSET(0x15877B90)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_SPECIFIEDSCENETAGLIST_OFFSET UNITYSDK_OFFSET(0x15877D00)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WAVE1_OFFSET UNITYSDK_OFFSET(0x15877F60)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WAVE2_OFFSET UNITYSDK_OFFSET(0x15878080)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WAVE3_OFFSET UNITYSDK_OFFSET(0x158781A0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WAVE4_OFFSET UNITYSDK_OFFSET(0x158782C0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WAVE5_OFFSET UNITYSDK_OFFSET(0x158783E0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WEIGHT_OFFSET UNITYSDK_OFFSET(0x15878500)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_LOADANDCHECK_OFFSET UNITYSDK_OFFSET(0x15878670)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_SET_ISLOADALL_OFFSET UNITYSDK_OFFSET(0x15876640)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE__CTOR_OFFSET UNITYSDK_OFFSET(0x15876650)
+
+namespace MoleMole::FlatBuffers::Config
+{
+	inline static constexpr unsigned int AbyssS2AreaConfigTemplate_TypeDefinitionIndex = 11990;
+
+	class AbyssS2AreaConfigTemplate : public ::System::Object
+	{
+	public:
+		// static const ::System::String* Hash; // 0x0
+		// static const ::System::Byte VAR_MAX_COUNT = 0x15; // 0x0
+		::System::Collections::Generic::List_1<::System::Int32>* m_AreaLevelAbilityList; // 0x10
+		::Class_0_16E4307DCC419505_13* m_Notify; // 0x18
+		::System::String* m_OverrideRewardIDList; // 0x20
+		::System::String* m_Wave4; // 0x28
+		::System::Collections::Generic::List_1<::System::Int32>* m_AreaMapRefreshIDList; // 0x30
+		::System::String* m_Wave1; // 0x38
+		::System::String* m_Wave2; // 0x40
+		::System::String* m_Wave5; // 0x48
+		::Struct_2_58DF5669875F2C66_211 m_Data; // 0x50
+		::System::String* m_OverrideAreaName; // 0x60
+		::System::Collections::Generic::List_1<::System::String*>* m_SpecifiedSceneTagList; // 0x68
+		::System::String* m_OverrideFCPath; // 0x70
+		::System::String* m_OverrideResultIDList; // 0x78
+		::System::Collections::Generic::List_1<::System::String*>* m_BannedSceneTagList; // 0x80
+		::System::String* m_NonbattleAreaIDInfo; // 0x88
+		::System::String* m_Wave3; // 0x90
+		::System::Int32 m_SpecifiedSceneIndex; // 0x98
+		::System::Int32 m_AreaConfigID; // 0x9C
+		::System::Int32 m_OverrideChallengeID; // 0xA0
+		::System::Byte m_VarLoadedCount; // 0xA4
+		::System::Byte m_Mask2; // 0xA5
+		::System::Boolean _IsLoadAll_k__BackingField; // 0xA6
+		::System::Int32 m_BattleRankingID; // 0xA8
+		::System::Byte m_Mask1; // 0xAC
+		::System::Byte m_Mask0; // 0xAD
+		::System::Int32 m_AreaTypeID; // 0xB0
+		::System::Int32 m_Weight; // 0xB4
+		::System::Int32 m_Index; // 0xB8
+
+		::System::Void _ctor(::Struct_2_58DF5669875F2C66_211 data, ::Class_0_16E4307DCC419505_13* notify)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_58DF5669875F2C66_211, ::Class_0_16E4307DCC419505_13*))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE__CTOR_OFFSET))(this, data, notify);
+		}
+
+		::System::Boolean get_IsLoadAll()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_ISLOADALL_OFFSET))(this);
+		}
+
+		::System::Void set_IsLoadAll(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_SET_ISLOADALL_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_Index()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_INDEX_OFFSET))(this);
+		}
+
+		::System::Int32 get_AreaConfigID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_AREACONFIGID_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* get_AreaLevelAbilityList()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_AREALEVELABILITYLIST_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* get_AreaMapRefreshIDList()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_AREAMAPREFRESHIDLIST_OFFSET))(this);
+		}
+
+		::System::Int32 get_AreaTypeID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_AREATYPEID_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* get_BannedSceneTagList()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_BANNEDSCENETAGLIST_OFFSET))(this);
+		}
+
+		::System::Int32 get_BattleRankingID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_BATTLERANKINGID_OFFSET))(this);
+		}
+
+		::System::String* get_NonbattleAreaIDInfo()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_NONBATTLEAREAIDINFO_OFFSET))(this);
+		}
+
+		::System::String* get_OverrideAreaName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_OVERRIDEAREANAME_OFFSET))(this);
+		}
+
+		::System::Int32 get_OverrideChallengeID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_OVERRIDECHALLENGEID_OFFSET))(this);
+		}
+
+		::System::String* get_OverrideFCPath()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_OVERRIDEFCPATH_OFFSET))(this);
+		}
+
+		::System::String* get_OverrideResultIDList()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_OVERRIDERESULTIDLIST_OFFSET))(this);
+		}
+
+		::System::String* get_OverrideRewardIDList()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_OVERRIDEREWARDIDLIST_OFFSET))(this);
+		}
+
+		::System::Int32 get_SpecifiedSceneIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_SPECIFIEDSCENEINDEX_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* get_SpecifiedSceneTagList()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_SPECIFIEDSCENETAGLIST_OFFSET))(this);
+		}
+
+		::System::String* get_Wave1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WAVE1_OFFSET))(this);
+		}
+
+		::System::String* get_Wave2()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WAVE2_OFFSET))(this);
+		}
+
+		::System::String* get_Wave3()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WAVE3_OFFSET))(this);
+		}
+
+		::System::String* get_Wave4()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WAVE4_OFFSET))(this);
+		}
+
+		::System::String* get_Wave5()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WAVE5_OFFSET))(this);
+		}
+
+		::System::Int32 get_Weight()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_GET_WEIGHT_OFFSET))(this);
+		}
+
+		::System::Void LoadAndCheck()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_LOADANDCHECK_OFFSET))(this);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2AREACONFIGTEMPLATE_CLEAR_OFFSET))(this);
+		}
+	};
+}

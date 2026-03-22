@@ -9,13 +9,21 @@
 
 namespace System { class Object; }
 
-#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x204A1D0)
-#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_EQUALS_OFFSET UNITYSDK_OFFSET(0x204A170)
-#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x204A280)
+#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x8F38B0)
+#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_EQUALS_OFFSET UNITYSDK_OFFSET(0x8F36D0)
+#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x8F38C0)
+#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_GET_BLENDSTATE_OFFSET UNITYSDK_OFFSET(0x746620)
+#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_GET_MASK_OFFSET UNITYSDK_OFFSET(0x8F36C0)
+#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_SET_BLENDSTATE_OFFSET UNITYSDK_OFFSET(0x8F3660)
+#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_SET_DEPTHSTATE_OFFSET UNITYSDK_OFFSET(0x8F3690)
+#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_SET_MASK_OFFSET UNITYSDK_OFFSET(0x7A6460)
+#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_SET_STENCILREFERENCE_OFFSET UNITYSDK_OFFSET(0x8F36B0)
+#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK_SET_STENCILSTATE_OFFSET UNITYSDK_OFFSET(0x8F36A0)
+#define UNITYENGINE_RENDERING_RENDERSTATEBLOCK__CTOR_OFFSET UNITYSDK_OFFSET(0x8F35E0)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int RenderStateBlock_TypeDefinitionIndex = 4548;
+	inline static constexpr unsigned int RenderStateBlock_TypeDefinitionIndex = 6223;
 
 	struct alignas(4) RenderStateBlock
 	{
@@ -25,6 +33,46 @@ namespace UnityEngine::Rendering
 		::UnityEngine::Rendering::StencilState m_StencilState; // 0x66
 		::System::Int32 m_StencilReference; // 0x74
 		::UnityEngine::Rendering::RenderStateMask m_Mask; // 0x78
+
+		::System::Void _ctor(::UnityEngine::Rendering::RenderStateMask mask)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::RenderStateMask))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_RENDERSTATEBLOCK__CTOR_OFFSET))(this, mask);
+		}
+
+		::UnityEngine::Rendering::BlendState get_blendState()
+		{
+			return ((::UnityEngine::Rendering::BlendState(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_RENDERSTATEBLOCK_GET_BLENDSTATE_OFFSET))(this);
+		}
+
+		::System::Void set_blendState(::UnityEngine::Rendering::BlendState value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::BlendState))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_RENDERSTATEBLOCK_SET_BLENDSTATE_OFFSET))(this, value);
+		}
+
+		::System::Void set_depthState(::UnityEngine::Rendering::DepthState value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::DepthState))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_RENDERSTATEBLOCK_SET_DEPTHSTATE_OFFSET))(this, value);
+		}
+
+		::System::Void set_stencilState(::UnityEngine::Rendering::StencilState value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::StencilState))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_RENDERSTATEBLOCK_SET_STENCILSTATE_OFFSET))(this, value);
+		}
+
+		::System::Void set_stencilReference(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_RENDERSTATEBLOCK_SET_STENCILREFERENCE_OFFSET))(this, value);
+		}
+
+		::UnityEngine::Rendering::RenderStateMask get_mask()
+		{
+			return ((::UnityEngine::Rendering::RenderStateMask(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_RENDERSTATEBLOCK_GET_MASK_OFFSET))(this);
+		}
+
+		::System::Void set_mask(::UnityEngine::Rendering::RenderStateMask value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::RenderStateMask))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_RENDERSTATEBLOCK_SET_MASK_OFFSET))(this, value);
+		}
 
 		::System::Boolean Equals(::UnityEngine::Rendering::RenderStateBlock other)
 		{

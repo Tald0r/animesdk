@@ -1,0 +1,48 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_72493A19B112705C.h"
+#include "unitysdk/Enum_3_CF6069113B9F5B89.h"
+#include "unitysdk/Struct_2_A47ACAABA9AAFE92.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_266;
+class Class_0_16E4307DCC419505_361;
+namespace System { class String; }
+
+#define MOLEMOLE_REFEXPRESSIONVALUE_ONEPARAM_METHOD_1_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0xA60E720)
+#define MOLEMOLE_REFEXPRESSIONVALUE_ONEPARAM_METHOD_1_49AC00594530B714_OFFSET UNITYSDK_OFFSET(0xA60E490)
+#define MOLEMOLE_REFEXPRESSIONVALUE_ONEPARAM_METHOD_1_745E992C6E269C58_OFFSET UNITYSDK_OFFSET(0xA60E4F0)
+#define MOLEMOLE_REFEXPRESSIONVALUE_ONEPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0xA60E480)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int RefExpressionValue_OneParam_TypeDefinitionIndex = 52395;
+
+	class RefExpressionValue_OneParam : public ::System::Object
+	{
+	public:
+		::System::String* RefName; // 0x10
+		::Class_0_16E4307DCC419505_361* Param; // 0x18
+		::Enum_3_72493A19B112705C ExpressionRetValType; // 0x20
+
+		::System::Void _ctor(::System::String* a1, ::Class_0_16E4307DCC419505_361* a2, ::Enum_3_72493A19B112705C a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::Class_0_16E4307DCC419505_361*, ::Enum_3_72493A19B112705C))((::PBYTE)hIl2Cpp + MOLEMOLE_REFEXPRESSIONVALUE_ONEPARAM__CTOR_OFFSET))(this, a1, a2, a3);
+		}
+
+		::Enum_3_CF6069113B9F5B89 Method_1_49AC00594530B714()
+		{
+			return ((::Enum_3_CF6069113B9F5B89(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_REFEXPRESSIONVALUE_ONEPARAM_METHOD_1_49AC00594530B714_OFFSET))(this);
+		}
+
+		::Struct_2_A47ACAABA9AAFE92 Method_1_745E992C6E269C58(::Class_0_16E4307DCC419505_266* a1)
+		{
+			return ((::Struct_2_A47ACAABA9AAFE92(*)(::PVOID, ::Class_0_16E4307DCC419505_266*))((::PBYTE)hIl2Cpp + MOLEMOLE_REFEXPRESSIONVALUE_ONEPARAM_METHOD_1_745E992C6E269C58_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_391A84BCD9F51317()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_REFEXPRESSIONVALUE_ONEPARAM_METHOD_1_391A84BCD9F51317_OFFSET))(this);
+		}
+	};
+}

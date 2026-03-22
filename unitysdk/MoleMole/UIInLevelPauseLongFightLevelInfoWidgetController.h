@@ -1,0 +1,89 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_EEE2810345E4FBCA;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIInLevelPauseLongFightCardRowWidgetController; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3BA3E0)
+#define MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3BA480)
+#define MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3B9D10)
+#define MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3B9DB0)
+#define MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xA3B9E70)
+#define MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA3BA7D0)
+#define MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER__GET_LEVELINFOTITLE_OFFSET UNITYSDK_OFFSET(0xA3BA560)
+#define MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3BA880)
+#define MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3BA8F0)
+#define MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3BA970)
+#define MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3BA9D0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelPauseLongFightLevelInfoWidgetController_TypeDefinitionIndex = 74332;
+
+	class UIInLevelPauseLongFightLevelInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_EEE2810345E4FBCA* _view; // 0x2A0
+		::System::Collections::Generic::List_1<::MoleMole::UIInLevelPauseLongFightCardRowWidgetController*>* _cardWidgets; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::String* _Get_LevelInfoTitle()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER__GET_LEVELINFOTITLE_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSELONGFIGHTLEVELINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

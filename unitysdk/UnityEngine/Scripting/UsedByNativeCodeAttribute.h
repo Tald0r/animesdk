@@ -4,12 +4,13 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_SCRIPTING_USEDBYNATIVECODEATTRIBUTE_SET_NAME_OFFSET UNITYSDK_OFFSET(0x182A3410)
-#define UNITYENGINE_SCRIPTING_USEDBYNATIVECODEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x182A3400)
+#define UNITYENGINE_SCRIPTING_USEDBYNATIVECODEATTRIBUTE_SET_NAME_OFFSET UNITYSDK_OFFSET(0x1B156800)
+#define UNITYENGINE_SCRIPTING_USEDBYNATIVECODEATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B1567F0)
+#define UNITYENGINE_SCRIPTING_USEDBYNATIVECODEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1567E0)
 
 namespace UnityEngine::Scripting
 {
-	inline static constexpr unsigned int UsedByNativeCodeAttribute_TypeDefinitionIndex = 3707;
+	inline static constexpr unsigned int UsedByNativeCodeAttribute_TypeDefinitionIndex = 5040;
 
 	class UsedByNativeCodeAttribute : public ::System::Attribute
 	{
@@ -19,6 +20,11 @@ namespace UnityEngine::Scripting
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SCRIPTING_USEDBYNATIVECODEATTRIBUTE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::String* name)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_SCRIPTING_USEDBYNATIVECODEATTRIBUTE__CTOR_1_OFFSET))(this, name);
 		}
 
 		::System::Void set_Name(::System::String* value)

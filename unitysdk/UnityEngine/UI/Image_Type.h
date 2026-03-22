@@ -3,7 +3,7 @@
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int Image_Type_TypeDefinitionIndex = 5496;
+	inline static constexpr unsigned int Image_Type_TypeDefinitionIndex = 8350;
 
 	enum class Image_Type : ::System::Int32
 	{

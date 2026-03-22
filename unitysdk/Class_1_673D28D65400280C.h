@@ -1,0 +1,42 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace UnityEngine { class AnimageComponent; }
+namespace UnityEngine { class CapsuleCollider; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class MdbComponent; }
+namespace UnityEngine { class Rigidbody; }
+namespace UnityEngine::Rendering::Universal { class OceanFloatObject; }
+
+#define CLASS_1_673D28D65400280C_METHOD_1_B1A792760945BF1F_OFFSET UNITYSDK_OFFSET(0x6DE65E0)
+#define CLASS_1_673D28D65400280C_METHOD_1_BF5E2DCAE0BF038A_OFFSET UNITYSDK_OFFSET(0x6DE6D50)
+#define CLASS_1_673D28D65400280C__CTOR_OFFSET UNITYSDK_OFFSET(0x6DE6370)
+
+inline static constexpr unsigned int Class_1_673D28D65400280C_TypeDefinitionIndex = 77068;
+
+class Class_1_673D28D65400280C : public ::System::Object
+{
+public:
+	::System::Collections::Generic::Dictionary_2<::UnityEngine::MdbComponent*, ::System::Boolean>* Field_1_0; // 0x10
+	::System::Collections::Generic::Dictionary_2<::UnityEngine::AnimageComponent*, ::System::Boolean>* Field_1_4; // 0x18
+	::System::Collections::Generic::Dictionary_2<::UnityEngine::Rigidbody*, ::System::Boolean>* Field_1_3; // 0x20
+	::System::Collections::Generic::Dictionary_2<::UnityEngine::Rendering::Universal::OceanFloatObject*, ::System::Boolean>* Field_1_2; // 0x28
+	::System::Collections::Generic::Dictionary_2<::UnityEngine::CapsuleCollider*, ::System::Boolean>* Field_1_1; // 0x30
+
+	::System::Void _ctor(::UnityEngine::GameObject* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + CLASS_1_673D28D65400280C__CTOR_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_B1A792760945BF1F(::UnityEngine::GameObject* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + CLASS_1_673D28D65400280C_METHOD_1_B1A792760945BF1F_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_BF5E2DCAE0BF038A()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_673D28D65400280C_METHOD_1_BF5E2DCAE0BF038A_OFFSET))(this);
+	}
+};

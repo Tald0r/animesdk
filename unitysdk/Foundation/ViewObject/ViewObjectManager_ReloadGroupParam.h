@@ -1,0 +1,23 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/ViewObject/ViewObjectManager_ReloadParamBase.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER_RELOADGROUPPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x9659ED0)
+
+namespace Foundation::ViewObject
+{
+	inline static constexpr unsigned int ViewObjectManager_ReloadGroupParam_TypeDefinitionIndex = 49669;
+
+	class ViewObjectManager_ReloadGroupParam : public ::Foundation::ViewObject::ViewObjectManager_ReloadParamBase
+	{
+	public:
+		::UnityEngine::Vector3 TargetRotation; // 0x28
+		::UnityEngine::Vector3 TargetPosition; // 0x34
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER_RELOADGROUPPARAM__CTOR_OFFSET))(this);
+		}
+	};
+}

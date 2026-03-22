@@ -1,9 +1,14 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/Collision2DShapeType.h"
-#include "unitysdk/RPG/GameCore/FixPoint.h"
+#include "unitysdk/Enum_3_91B42685BFC9BFDB.h"
+#include "unitysdk/Struct_2_116A9A94052105E7.h"
+#include "unitysdk/UnityEngine/Vector3.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_399_TypeDefinitionIndex = 44218;
+namespace MoleMole { class MonoInteractionPoint; }
+namespace MoleMole::Battle { class Entity; }
+namespace System { class Action; }
+
+inline static constexpr unsigned int Class_0_16E4307DCC419505_399_TypeDefinitionIndex = 59378;
 
 class Class_0_16E4307DCC419505_399
 {

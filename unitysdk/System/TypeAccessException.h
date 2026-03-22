@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_TYPEACCESSEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15BB93E0)
-#define SYSTEM_TYPEACCESSEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15BB9450)
-#define SYSTEM_TYPEACCESSEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15BB9340)
+#define SYSTEM_TYPEACCESSEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x189A5580)
+#define SYSTEM_TYPEACCESSEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x189A55F0)
+#define SYSTEM_TYPEACCESSEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x189A54E0)
 
 namespace System
 {
-	inline static constexpr unsigned int TypeAccessException_TypeDefinitionIndex = 350;
+	inline static constexpr unsigned int TypeAccessException_TypeDefinitionIndex = 340;
 
 	class TypeAccessException : public ::System::TypeLoadException
 	{

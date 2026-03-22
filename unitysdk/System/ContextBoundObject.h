@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/MarshalByRefObject.h"
 
-#define SYSTEM_CONTEXTBOUNDOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x15BC8830)
+#define SYSTEM_CONTEXTBOUNDOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x188A7AD0)
 
 namespace System
 {
-	inline static constexpr unsigned int ContextBoundObject_TypeDefinitionIndex = 220;
+	inline static constexpr unsigned int ContextBoundObject_TypeDefinitionIndex = 207;
 
 	class ContextBoundObject : public ::System::MarshalByRefObject
 	{

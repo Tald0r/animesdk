@@ -11,60 +11,60 @@ namespace System::Reflection { class Module; }
 namespace System::Reflection { class RuntimeModule; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x15CCB1F0)
-#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_GETRUNTIMEMODULE_OFFSET UNITYSDK_OFFSET(0x15CCB120)
-#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_GET_BINDINGFLAGS_OFFSET UNITYSDK_OFFSET(0x15CCB190)
-#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_GET_MODULE_OFFSET UNITYSDK_OFFSET(0x15CCB0B0)
-#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_GET_REFLECTEDTYPEINTERNAL_OFFSET UNITYSDK_OFFSET(0x15CCB1A0)
-#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_SERIALIZATIONINVOKE_OFFSET UNITYSDK_OFFSET(0x15CCB330)
-#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_SERIALIZATIONTOSTRING_OFFSET UNITYSDK_OFFSET(0x15CCB320)
-#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x15CCB4C0)
+#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_03C552B0B1441536_OFFSET UNITYSDK_OFFSET(0x196639F0)
+#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_1ADF6331E3555071_OFFSET UNITYSDK_OFFSET(0x19663860)
+#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_1EF4E65F6B2A1E1A_OFFSET UNITYSDK_OFFSET(0x19663760)
+#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_22F30986E4857A10_OFFSET UNITYSDK_OFFSET(0x19663A00)
+#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_29BD07D5A434EB62_OFFSET UNITYSDK_OFFSET(0x196638C0)
+#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_832295EC279E5994_OFFSET UNITYSDK_OFFSET(0x19663B60)
+#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_8A994390C9B757B3_OFFSET UNITYSDK_OFFSET(0x19663870)
+#define SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_C1E3936BB7D482DF_OFFSET UNITYSDK_OFFSET(0x196637D0)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int RuntimeConstructorInfo_TypeDefinitionIndex = 621;
+	inline static constexpr unsigned int RuntimeConstructorInfo_TypeDefinitionIndex = 594;
 
 	class RuntimeConstructorInfo : public ::System::Reflection::ConstructorInfo
 	{
 	public:
-		::System::Void _ctor()
+		::System::Void Method_4_832295EC279E5994()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_832295EC279E5994_OFFSET))(this);
 		}
 
-		::System::Reflection::Module* get_Module()
+		::System::Reflection::Module* Method_4_1EF4E65F6B2A1E1A()
 		{
-			return ((::System::Reflection::Module*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_GET_MODULE_OFFSET))(this);
+			return ((::System::Reflection::Module*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_1EF4E65F6B2A1E1A_OFFSET))(this);
 		}
 
-		::System::Reflection::RuntimeModule* GetRuntimeModule()
+		::System::Reflection::RuntimeModule* Method_4_C1E3936BB7D482DF()
 		{
-			return ((::System::Reflection::RuntimeModule*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_GETRUNTIMEMODULE_OFFSET))(this);
+			return ((::System::Reflection::RuntimeModule*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_C1E3936BB7D482DF_OFFSET))(this);
 		}
 
-		::System::Reflection::BindingFlags get_BindingFlags()
+		::System::Reflection::BindingFlags Method_4_1ADF6331E3555071()
 		{
-			return ((::System::Reflection::BindingFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_GET_BINDINGFLAGS_OFFSET))(this);
+			return ((::System::Reflection::BindingFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_1ADF6331E3555071_OFFSET))(this);
 		}
 
-		::System::RuntimeType* get_ReflectedTypeInternal()
+		::System::RuntimeType* Method_4_8A994390C9B757B3()
 		{
-			return ((::System::RuntimeType*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_GET_REFLECTEDTYPEINTERNAL_OFFSET))(this);
+			return ((::System::RuntimeType*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_8A994390C9B757B3_OFFSET))(this);
 		}
 
-		::System::Void GetObjectData(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::Void Method_4_29BD07D5A434EB62(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_GETOBJECTDATA_OFFSET))(this, info, context);
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_29BD07D5A434EB62_OFFSET))(this, info, context);
 		}
 
-		::System::String* SerializationToString()
+		::System::String* Method_4_03C552B0B1441536()
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_SERIALIZATIONTOSTRING_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_03C552B0B1441536_OFFSET))(this);
 		}
 
-		::System::Void SerializationInvoke(::System::Object* target, ::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::Void Method_4_22F30986E4857A10(::System::Object* target, ::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_SERIALIZATIONINVOKE_OFFSET))(this, target, info, context);
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMECONSTRUCTORINFO_METHOD_4_22F30986E4857A10_OFFSET))(this, target, info, context);
 		}
 	};
 }

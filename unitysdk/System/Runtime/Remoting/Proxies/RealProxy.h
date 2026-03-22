@@ -3,7 +3,6 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/Runtime/Serialization/StreamingContext.h"
 
-namespace System { class Exception; }
 namespace System { class MarshalByRefObject; }
 namespace System { class String; }
 namespace System { class Type; }
@@ -11,30 +10,21 @@ namespace System::Runtime::Remoting { class ClientIdentity; }
 namespace System::Runtime::Remoting { class Identity; }
 namespace System::Runtime::Remoting::Contexts { class Context; }
 namespace System::Runtime::Remoting::Messaging { class IMessage; }
-namespace System::Runtime::Remoting::Messaging { class IMethodReturnMessage; }
-namespace System::Runtime::Remoting::Messaging { class MonoMethodMessage; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_ATTACHSERVER_OFFSET UNITYSDK_OFFSET(0x15D0ABC0)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GETAPPDOMAINTARGET_OFFSET UNITYSDK_OFFSET(0x15D0ABE0)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x15D094E0)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GETPROXIEDTYPE_OFFSET UNITYSDK_OFFSET(0x15D09420)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GETTRANSPARENTPROXY_OFFSET UNITYSDK_OFFSET(0x15D08F10)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GET_OBJECTIDENTITY_OFFSET UNITYSDK_OFFSET(0x15D09540)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_INTERNALGETPROXYTYPE_OFFSET UNITYSDK_OFFSET(0x15D09410)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_INTERNALGETTRANSPARENTPROXY_OFFSET UNITYSDK_OFFSET(0x15D0ABB0)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_PRIVATEINVOKE_OFFSET UNITYSDK_OFFSET(0x15D09560)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_PROCESSRESPONSE_OFFSET UNITYSDK_OFFSET(0x15D0A2D0)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_SETTARGETDOMAIN_OFFSET UNITYSDK_OFFSET(0x15D0ABD0)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_SET_OBJECTIDENTITY_OFFSET UNITYSDK_OFFSET(0x15D09550)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15D092B0)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15D093F0)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15D092C0)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x15D092A0)
+#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x196659C0)
+#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GETPROXIEDTYPE_OFFSET UNITYSDK_OFFSET(0x19665900)
+#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GETTRANSPARENTPROXY_OFFSET UNITYSDK_OFFSET(0x19665A50)
+#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_INTERNALGETPROXYTYPE_OFFSET UNITYSDK_OFFSET(0x196658F0)
+#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_INTERNALGETTRANSPARENTPROXY_OFFSET UNITYSDK_OFFSET(0x19665A40)
+#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19665790)
+#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY__CTOR_2_OFFSET UNITYSDK_OFFSET(0x196658D0)
+#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY__CTOR_3_OFFSET UNITYSDK_OFFSET(0x196657A0)
+#define SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x19665780)
 
 namespace System::Runtime::Remoting::Proxies
 {
-	inline static constexpr unsigned int RealProxy_TypeDefinitionIndex = 1221;
+	inline static constexpr unsigned int RealProxy_TypeDefinitionIndex = 1272;
 
 	class RealProxy : public ::System::Object
 	{
@@ -83,21 +73,6 @@ namespace System::Runtime::Remoting::Proxies
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GETOBJECTDATA_OFFSET))(this, info, context);
 		}
 
-		::System::Runtime::Remoting::Identity* get_ObjectIdentity()
-		{
-			return ((::System::Runtime::Remoting::Identity*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GET_OBJECTIDENTITY_OFFSET))(this);
-		}
-
-		::System::Void set_ObjectIdentity(::System::Runtime::Remoting::Identity* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Remoting::Identity*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_SET_OBJECTIDENTITY_OFFSET))(this, value);
-		}
-
-		static ::System::Object* PrivateInvoke(::System::Runtime::Remoting::Proxies::RealProxy* rp, ::System::Runtime::Remoting::Messaging::IMessage* msg, ::System::Exception*& exc, ::Il2CppArray<::System::Object*>*& out_args)
-		{
-			return ((::System::Object*(*)(::System::Runtime::Remoting::Proxies::RealProxy*, ::System::Runtime::Remoting::Messaging::IMessage*, ::System::Exception*&, ::Il2CppArray<::System::Object*>*&))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_PRIVATEINVOKE_OFFSET))(rp, msg, exc, out_args);
-		}
-
 		::System::Object* InternalGetTransparentProxy(::System::String* className)
 		{
 			return ((::System::Object*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_INTERNALGETTRANSPARENTPROXY_OFFSET))(this, className);
@@ -106,26 +81,6 @@ namespace System::Runtime::Remoting::Proxies
 		::System::Object* GetTransparentProxy()
 		{
 			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GETTRANSPARENTPROXY_OFFSET))(this);
-		}
-
-		::System::Void AttachServer(::System::MarshalByRefObject* s)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::MarshalByRefObject*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_ATTACHSERVER_OFFSET))(this, s);
-		}
-
-		::System::Void SetTargetDomain(::System::Int32 domainId)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_SETTARGETDOMAIN_OFFSET))(this, domainId);
-		}
-
-		::System::Object* GetAppDomainTarget()
-		{
-			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_GETAPPDOMAINTARGET_OFFSET))(this);
-		}
-
-		static ::Il2CppArray<::System::Object*>* ProcessResponse(::System::Runtime::Remoting::Messaging::IMethodReturnMessage* mrm, ::System::Runtime::Remoting::Messaging::MonoMethodMessage* call)
-		{
-			return ((::Il2CppArray<::System::Object*>*(*)(::System::Runtime::Remoting::Messaging::IMethodReturnMessage*, ::System::Runtime::Remoting::Messaging::MonoMethodMessage*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_REALPROXY_PROCESSRESPONSE_OFFSET))(mrm, call);
 		}
 	};
 }

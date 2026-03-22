@@ -1,0 +1,137 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/Enum_3_96F6662CA3713095_6.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_B87FDFC0522339DA;
+class Class_2_FF33B5ED14FB44B2;
+class Class_3_3D3D5AB52AC6095A;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_GETBUFFLEVELDESC_OFFSET UNITYSDK_OFFSET(0xCA8DD60)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0xCA8D2D0)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xCA8D2C0)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_INITBUFFDIALOG_OFFSET UNITYSDK_OFFSET(0xCA8DF30)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xCA8D2E0)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xCA8D760)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONSELECTBUFFITEM_OFFSET UNITYSDK_OFFSET(0xCA8E250)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xCA8D620)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCA8D380)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xCA8D6B0)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_SHOWBUFFLEVELPANEL_OFFSET UNITYSDK_OFFSET(0xCA8D800)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xCA8E350)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__8_0_OFFSET UNITYSDK_OFFSET(0xCA8E3E0)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xCA8E3F0)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xCA8E460)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xCA8E4C0)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCA8E4D0)
+#define MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xCA8E4E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVoidFrontBuffDialogPopWindowController_TypeDefinitionIndex = 72341;
+
+	class UIVoidFrontBuffDialogPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_FF33B5ED14FB44B2* _view; // 0x2F8
+		::System::Collections::Generic::List_1<::Class_1_B87FDFC0522339DA*>* _optionItemDatas; // 0x300
+		::System::Action_1<::System::Int32>* _selectCallback; // 0x308
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void ShowBuffLevelPanel(::Class_3_3D3D5AB52AC6095A* battleData, ::System::Action_1<::System::Int32>* selectCallback)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_3D3D5AB52AC6095A*, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_SHOWBUFFLEVELPANEL_OFFSET))(this, battleData, selectCallback);
+		}
+
+		::System::String* GetBuffLevelDesc(::System::Int32 battleId, ::Enum_3_96F6662CA3713095_6 curRankType, ::Enum_3_96F6662CA3713095_6 needType)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::Int32, ::Enum_3_96F6662CA3713095_6, ::Enum_3_96F6662CA3713095_6))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_GETBUFFLEVELDESC_OFFSET))(this, battleId, curRankType, needType);
+		}
+
+		::System::Void InitBuffDialog(::System::Collections::Generic::List_1<::System::Int32>* chooseBuffs, ::System::Int32 curSelectBuff, ::System::Action_1<::System::Int32>* selectCallback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::System::Int32>*, ::System::Int32, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_INITBUFFDIALOG_OFFSET))(this, chooseBuffs, curSelectBuff, selectCallback);
+		}
+
+		::System::Void OnSelectBuffItem(::System::Int32 buffIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER_ONSELECTBUFFITEM_OFFSET))(this, buffIndex);
+		}
+
+		::System::Void _OnUIInit_b__8_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__8_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTBUFFDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

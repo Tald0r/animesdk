@@ -4,20 +4,28 @@
 #include "unitysdk/System/Linq/Expressions/ExpressionType.h"
 
 namespace System { class Type; }
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
+namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 namespace System::Linq::Expressions { class ExpressionVisitor; }
+namespace System::Linq::Expressions { class LambdaExpression; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x17CFECE0)
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x17CFEC40)
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x17CFEC90)
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_EXPRESSION_OFFSET UNITYSDK_OFFSET(0x17CFEC30)
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x17CFEC20)
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x17CFEC10)
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_REWRITE_OFFSET UNITYSDK_OFFSET(0x17CFED10)
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17CFEBA0)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x1AB204C0)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x1AB20420)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GETORMAKEARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1AB203D0)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x1AB20470)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_ARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1AB20320)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_EXPRESSION_OFFSET UNITYSDK_OFFSET(0x1AB20310)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_LAMBDAOPERAND_OFFSET UNITYSDK_OFFSET(0x1AB20540)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x1AB20300)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1AB202F0)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_REWRITE_OFFSET UNITYSDK_OFFSET(0x1AB204F0)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_UPDATE_OFFSET UNITYSDK_OFFSET(0x1AB20330)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AB20640)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB20280)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int InvocationExpression_TypeDefinitionIndex = 3201;
+	inline static constexpr unsigned int InvocationExpression_TypeDefinitionIndex = 4482;
 
 	class InvocationExpression : public ::System::Linq::Expressions::Expression
 	{
@@ -28,6 +36,11 @@ namespace System::Linq::Expressions
 		::System::Void _ctor(::System::Linq::Expressions::Expression* expression, ::System::Type* returnType)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Linq::Expressions::Expression*, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION__CTOR_OFFSET))(this, expression, returnType);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION__CTOR_1_OFFSET))(this);
 		}
 
 		::System::Type* get_Type()
@@ -43,6 +56,21 @@ namespace System::Linq::Expressions
 		::System::Linq::Expressions::Expression* get_Expression()
 		{
 			return ((::System::Linq::Expressions::Expression*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_EXPRESSION_OFFSET))(this);
+		}
+
+		::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>* get_Arguments()
+		{
+			return ((::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_ARGUMENTS_OFFSET))(this);
+		}
+
+		::System::Linq::Expressions::InvocationExpression* Update(::System::Linq::Expressions::Expression* expression, ::System::Collections::Generic::IEnumerable_1<::System::Linq::Expressions::Expression*>* arguments)
+		{
+			return ((::System::Linq::Expressions::InvocationExpression*(*)(::PVOID, ::System::Linq::Expressions::Expression*, ::System::Collections::Generic::IEnumerable_1<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_UPDATE_OFFSET))(this, expression, arguments);
+		}
+
+		::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>* GetOrMakeArguments()
+		{
+			return ((::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GETORMAKEARGUMENTS_OFFSET))(this);
 		}
 
 		::System::Linq::Expressions::Expression* GetArgument(::System::Int32 index)
@@ -63,6 +91,11 @@ namespace System::Linq::Expressions
 		::System::Linq::Expressions::InvocationExpression* Rewrite(::System::Linq::Expressions::Expression* lambda, ::Il2CppArray<::System::Linq::Expressions::Expression*>* arguments)
 		{
 			return ((::System::Linq::Expressions::InvocationExpression*(*)(::PVOID, ::System::Linq::Expressions::Expression*, ::Il2CppArray<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_REWRITE_OFFSET))(this, lambda, arguments);
+		}
+
+		::System::Linq::Expressions::LambdaExpression* get_LambdaOperand()
+		{
+			return ((::System::Linq::Expressions::LambdaExpression*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION_GET_LAMBDAOPERAND_OFFSET))(this);
 		}
 	};
 }

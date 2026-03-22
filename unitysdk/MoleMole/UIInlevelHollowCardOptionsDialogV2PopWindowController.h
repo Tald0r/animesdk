@@ -1,0 +1,71 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIHollowCardOptionsDialogV2PopWindowController.h"
+
+class MonoUITableScrollV2;
+namespace MoleMole { class UIHollowCardOptionItemWidgetController; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER_GETCOMBINECARDCTRL_OFFSET UNITYSDK_OFFSET(0x8C8BDE0)
+#define MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER_ONCOMBINECARDCREATE_OFFSET UNITYSDK_OFFSET(0x8C8BC20)
+#define MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C8BEA0)
+#define MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER_SCROLLWIDGETFUNC_OFFSET UNITYSDK_OFFSET(0x8C8BB60)
+#define MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8C8C2B0)
+#define MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___BASE_GETCOMBINECARDCTRL_OFFSET UNITYSDK_OFFSET(0x8C8C310)
+#define MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___BASE_ONCOMBINECARDCREATE_OFFSET UNITYSDK_OFFSET(0x8C8C320)
+#define MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C8C390)
+#define MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___BASE_SCROLLWIDGETFUNC_OFFSET UNITYSDK_OFFSET(0x8C8C3A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInlevelHollowCardOptionsDialogV2PopWindowController_TypeDefinitionIndex = 67607;
+
+	class UIInlevelHollowCardOptionsDialogV2PopWindowController : public ::MoleMole::UIHollowCardOptionsDialogV2PopWindowController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void ScrollWidgetFunc(::MonoUITableScrollV2* scroll)
+		{
+			return ((::System::Void(*)(::PVOID, ::MonoUITableScrollV2*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER_SCROLLWIDGETFUNC_OFFSET))(this, scroll);
+		}
+
+		::System::Void OnCombineCardCreate(::MoleMole::UIHollowCardOptionItemWidgetController* card)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIHollowCardOptionItemWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER_ONCOMBINECARDCREATE_OFFSET))(this, card);
+		}
+
+		::MoleMole::UIHollowCardOptionItemWidgetController* GetCombineCardCtrl(::UnityEngine::Transform* root)
+		{
+			return ((::MoleMole::UIHollowCardOptionItemWidgetController*(*)(::PVOID, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER_GETCOMBINECARDCTRL_OFFSET))(this, root);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::MoleMole::UIHollowCardOptionItemWidgetController* __base_GetCombineCardCtrl(::UnityEngine::Transform* P0)
+		{
+			return ((::MoleMole::UIHollowCardOptionItemWidgetController*(*)(::PVOID, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___BASE_GETCOMBINECARDCTRL_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnCombineCardCreate(::MoleMole::UIHollowCardOptionItemWidgetController* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIHollowCardOptionItemWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___BASE_ONCOMBINECARDCREATE_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_ScrollWidgetFunc(::MonoUITableScrollV2* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MonoUITableScrollV2*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___BASE_SCROLLWIDGETFUNC_OFFSET))(this, P0);
+		}
+	};
+}

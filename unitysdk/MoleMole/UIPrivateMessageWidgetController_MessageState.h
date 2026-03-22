@@ -1,0 +1,13 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPrivateMessageWidgetController_MessageState_TypeDefinitionIndex = 44636;
+
+	enum class UIPrivateMessageWidgetController_MessageState : ::System::Int32
+	{
+		FadeIn = 1,
+		FadeOut = 0,
+	};
+}

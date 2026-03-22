@@ -2,12 +2,36 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ComponentModel/ReferenceConverter.h"
 
+namespace System { class Attribute; }
+namespace System { class Object; }
+namespace System { class Type; }
+namespace System::ComponentModel { class ITypeDescriptorContext; }
+namespace System::ComponentModel { class PropertyDescriptorCollection; }
+
+#define SYSTEM_COMPONENTMODEL_COMPONENTCONVERTER_GETPROPERTIESSUPPORTED_OFFSET UNITYSDK_OFFSET(0x18E34A00)
+#define SYSTEM_COMPONENTMODEL_COMPONENTCONVERTER_GETPROPERTIES_OFFSET UNITYSDK_OFFSET(0x18E348F0)
+#define SYSTEM_COMPONENTMODEL_COMPONENTCONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x18E34880)
+
 namespace System::ComponentModel
 {
-	inline static constexpr unsigned int ComponentConverter_TypeDefinitionIndex = 2554;
+	inline static constexpr unsigned int ComponentConverter_TypeDefinitionIndex = 2841;
 
 	class ComponentConverter : public ::System::ComponentModel::ReferenceConverter
 	{
 	public:
+		::System::Void _ctor(::System::Type* type)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_COMPONENTCONVERTER__CTOR_OFFSET))(this, type);
+		}
+
+		::System::ComponentModel::PropertyDescriptorCollection* GetProperties(::System::ComponentModel::ITypeDescriptorContext* context, ::System::Object* value, ::Il2CppArray<::System::Attribute*>* attributes)
+		{
+			return ((::System::ComponentModel::PropertyDescriptorCollection*(*)(::PVOID, ::System::ComponentModel::ITypeDescriptorContext*, ::System::Object*, ::Il2CppArray<::System::Attribute*>*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_COMPONENTCONVERTER_GETPROPERTIES_OFFSET))(this, context, value, attributes);
+		}
+
+		::System::Boolean GetPropertiesSupported(::System::ComponentModel::ITypeDescriptorContext* context)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::ComponentModel::ITypeDescriptorContext*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_COMPONENTCONVERTER_GETPROPERTIESSUPPORTED_OFFSET))(this, context);
+		}
 	};
 }

@@ -1,0 +1,175 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_61AC41B6DCFBC671_Enum_3_F7091D5FF381B6D1.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_208CC9941471731A_279;
+class Class_2_61AC41B6DCFBC671;
+class Class_2_79F6D62CE30E3F8E_120;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIItemIconBtnSmallWidgetController; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_BIND_OFFSET UNITYSDK_OFFSET(0x9293940)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_CLEARREWARDS_OFFSET UNITYSDK_OFFSET(0x9295840)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_DOGET_OFFSET UNITYSDK_OFFSET(0x9295110)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_GETCURCOLLECTIONID_OFFSET UNITYSDK_OFFSET(0x9294EF0)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9293C20)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0x9294050)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONMISSIONADD_OFFSET UNITYSDK_OFFSET(0x9294210)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONMISSIONMODIFY_OFFSET UNITYSDK_OFFSET(0x9294CD0)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9293CC0)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x92934D0)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_PLAYANIM_OFFSET UNITYSDK_OFFSET(0x92959E0)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_REFRESHSTATUS_OFFSET UNITYSDK_OFFSET(0x9294290)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x9294D50)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SETEMPTY_OFFSET UNITYSDK_OFFSET(0x9294E40)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SETQUESTTEXT_OFFSET UNITYSDK_OFFSET(0x9295170)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SETREWARDS_OFFSET UNITYSDK_OFFSET(0x92954C0)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SHOWQUESTDETAIL_OFFSET UNITYSDK_OFFSET(0x9294F50)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SHOWREWARDS_OFFSET UNITYSDK_OFFSET(0x92952F0)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SHOWSTATES_OFFSET UNITYSDK_OFFSET(0x9295390)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9295B90)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9295C40)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0x9295CB0)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9295D20)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9295DA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInterKnotQuestRowWidgetController_TypeDefinitionIndex = 51261;
+
+	class UIInterKnotQuestRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::Int32 MIN_ITEMS_COUNT = 0x4; // 0x0
+		::Class_2_79F6D62CE30E3F8E_120* _view; // 0x2A0
+		::Class_2_208CC9941471731A_279* curQuestCfg; // 0x2A8
+		::Class_2_61AC41B6DCFBC671_Enum_3_F7091D5FF381B6D1 curStatus; // 0x2B0
+		::Class_2_61AC41B6DCFBC671* _uiQuestModel; // 0x2B8
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnSmallWidgetController*>* _rewardIconList; // 0x2C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void OnMissionAdd(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONMISSIONADD_OFFSET))(this, args);
+		}
+
+		::System::Void OnMissionModify(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_ONMISSIONMODIFY_OFFSET))(this, args);
+		}
+
+		::System::Void RefreshView(::Class_2_208CC9941471731A_279* questCfg)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_279*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, questCfg);
+		}
+
+		::System::Void SetEmpty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SETEMPTY_OFFSET))(this);
+		}
+
+		::System::Void Bind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_BIND_OFFSET))(this);
+		}
+
+		::System::UInt64 GetCurCollectionID()
+		{
+			return ((::System::UInt64(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_GETCURCOLLECTIONID_OFFSET))(this);
+		}
+
+		::System::Void ShowQuestDetail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SHOWQUESTDETAIL_OFFSET))(this);
+		}
+
+		::System::Void DoGet()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_DOGET_OFFSET))(this);
+		}
+
+		::System::Void RefreshStatus(::Class_2_208CC9941471731A_279* spQuestCfg)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_279*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_REFRESHSTATUS_OFFSET))(this, spQuestCfg);
+		}
+
+		::System::Void ShowStates(::System::Boolean showBtn, ::System::Boolean showLock)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SHOWSTATES_OFFSET))(this, showBtn, showLock);
+		}
+
+		::System::Void SetQuestText(::System::Boolean showNpc, ::Class_2_208CC9941471731A_279* questCfg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Class_2_208CC9941471731A_279*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SETQUESTTEXT_OFFSET))(this, showNpc, questCfg);
+		}
+
+		::System::Void SetRewards()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SETREWARDS_OFFSET))(this);
+		}
+
+		::System::Void ShowRewards(::System::Boolean show, ::Class_2_208CC9941471731A_279* questCfg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Class_2_208CC9941471731A_279*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_SHOWREWARDS_OFFSET))(this, show, questCfg);
+		}
+
+		::System::Void PlayAnim(::System::Boolean isFadeIn, ::System::Single delayPercent, ::System::Action* onAnimEnd)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Single, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_PLAYANIM_OFFSET))(this, isFadeIn, delayPercent, onAnimEnd);
+		}
+
+		::System::Void ClearRewards()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER_CLEARREWARDS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,33 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIControllerContextBase.h"
+#include "unitysdk/Share/ENotificationBadgeType.h"
+
+namespace System { class Action; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIMINISCAPEMAINENTRY02BTNWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6CD48F0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMiniscapeMainEntry02BtnWidgetController_Context_TypeDefinitionIndex = 39156;
+
+	class UIMiniscapeMainEntry02BtnWidgetController_Context : public ::MoleMole::UIControllerContextBase
+	{
+	public:
+		::System::String* Title; // 0x28
+		::System::String* TipsText; // 0x30
+		::System::Action* OnClickBtn; // 0x38
+		::System::Int32 CollectionLeftNum; // 0x40
+		::System::Int32 CollectionRightNum; // 0x44
+		::Share::ENotificationBadgeType NotifyType; // 0x48
+		::System::Int32 ShopItemID; // 0x4C
+		::System::Boolean IsCollection; // 0x50
+		::System::Boolean ShowTips; // 0x51
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMAINENTRY02BTNWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET))(this);
+		}
+	};
+}

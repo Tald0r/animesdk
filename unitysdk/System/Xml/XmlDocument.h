@@ -9,6 +9,7 @@ namespace System { class String; }
 namespace System { class WeakReference; }
 namespace System::Collections { class ArrayList; }
 namespace System::Collections { class Hashtable; }
+namespace System::IO { class TextReader; }
 namespace System::Xml { class DomNameTable; }
 namespace System::Xml { class EmptyEnumerator; }
 namespace System::Xml { class XmlAttribute; }
@@ -27,6 +28,7 @@ namespace System::Xml { class XmlNameTable; }
 namespace System::Xml { class XmlNamedNodeMap; }
 namespace System::Xml { class XmlNodeChangedEventArgs; }
 namespace System::Xml { class XmlNodeChangedEventHandler; }
+namespace System::Xml { class XmlNodeList; }
 namespace System::Xml { class XmlProcessingInstruction; }
 namespace System::Xml { class XmlReader; }
 namespace System::Xml { class XmlResolver; }
@@ -41,156 +43,153 @@ namespace System::Xml::Schema { class SchemaElementDecl; }
 namespace System::Xml::Schema { class SchemaInfo; }
 namespace System::Xml::Schema { class XmlSchemaSet; }
 
-#define SYSTEM_XML_XMLDOCUMENT_ADDATTRXMLNAME_OFFSET UNITYSDK_OFFSET(0x17DDF570)
-#define SYSTEM_XML_XMLDOCUMENT_ADDDEFAULTATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x17DEDEF0)
-#define SYSTEM_XML_XMLDOCUMENT_ADDELEMENTWITHID_OFFSET UNITYSDK_OFFSET(0x17DE13B0)
-#define SYSTEM_XML_XMLDOCUMENT_ADDIDINFO_OFFSET UNITYSDK_OFFSET(0x17DEC900)
-#define SYSTEM_XML_XMLDOCUMENT_ADDXMLNAME_OFFSET UNITYSDK_OFFSET(0x17DEC8C0)
-#define SYSTEM_XML_XMLDOCUMENT_AFTEREVENT_OFFSET UNITYSDK_OFFSET(0x17DF1070)
-#define SYSTEM_XML_XMLDOCUMENT_APPENDCHILDFORLOAD_OFFSET UNITYSDK_OFFSET(0x17DF15E0)
-#define SYSTEM_XML_XMLDOCUMENT_BEFOREEVENT_OFFSET UNITYSDK_OFFSET(0x17DF0800)
-#define SYSTEM_XML_XMLDOCUMENT_CANINSERTAFTER_OFFSET UNITYSDK_OFFSET(0x17DED860)
-#define SYSTEM_XML_XMLDOCUMENT_CHECKNAME_OFFSET UNITYSDK_OFFSET(0x17DDF480)
-#define SYSTEM_XML_XMLDOCUMENT_CLONENODE_OFFSET UNITYSDK_OFFSET(0x17DED140)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEATTRIBUTE_1_OFFSET UNITYSDK_OFFSET(0x17DEE840)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEATTRIBUTE_2_OFFSET UNITYSDK_OFFSET(0x17DEF230)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x17DED9D0)
-#define SYSTEM_XML_XMLDOCUMENT_CREATECDATASECTION_OFFSET UNITYSDK_OFFSET(0x17DEDBF0)
-#define SYSTEM_XML_XMLDOCUMENT_CREATECOMMENT_OFFSET UNITYSDK_OFFSET(0x17DEDC70)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x17DEF2B0)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEDOCUMENTFRAGMENT_OFFSET UNITYSDK_OFFSET(0x17DEDDA0)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEDOCUMENTTYPE_OFFSET UNITYSDK_OFFSET(0x17DEDD20)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEELEMENT_1_OFFSET UNITYSDK_OFFSET(0x17DEE960)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEELEMENT_2_OFFSET UNITYSDK_OFFSET(0x17DEF350)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEELEMENT_OFFSET UNITYSDK_OFFSET(0x17DEDE40)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEENTITYREFERENCE_OFFSET UNITYSDK_OFFSET(0x17DEE540)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEPROCESSINGINSTRUCTION_OFFSET UNITYSDK_OFFSET(0x17DEE5A0)
-#define SYSTEM_XML_XMLDOCUMENT_CREATESIGNIFICANTWHITESPACE_OFFSET UNITYSDK_OFFSET(0x17DEE780)
-#define SYSTEM_XML_XMLDOCUMENT_CREATETEXTNODE_OFFSET UNITYSDK_OFFSET(0x17DEE6D0)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEWHITESPACE_OFFSET UNITYSDK_OFFSET(0x17DEE7E0)
-#define SYSTEM_XML_XMLDOCUMENT_CREATEXMLDECLARATION_OFFSET UNITYSDK_OFFSET(0x17DEE660)
-#define SYSTEM_XML_XMLDOCUMENT_GETDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x17DF10C0)
-#define SYSTEM_XML_XMLDOCUMENT_GETELEMENT_OFFSET UNITYSDK_OFFSET(0x17DECA90)
-#define SYSTEM_XML_XMLDOCUMENT_GETENTITYNODE_OFFSET UNITYSDK_OFFSET(0x17DF1450)
-#define SYSTEM_XML_XMLDOCUMENT_GETEVENTARGS_OFFSET UNITYSDK_OFFSET(0x17DF05C0)
-#define SYSTEM_XML_XMLDOCUMENT_GETIDINFOBYELEMENT_OFFSET UNITYSDK_OFFSET(0x17DE13A0)
-#define SYSTEM_XML_XMLDOCUMENT_GETIDINFOBYELEMENT__OFFSET UNITYSDK_OFFSET(0x17DEC9B0)
-#define SYSTEM_XML_XMLDOCUMENT_GETINSERTEVENTARGSFORLOAD_OFFSET UNITYSDK_OFFSET(0x17DF0730)
-#define SYSTEM_XML_XMLDOCUMENT_GETRESOLVER_OFFSET UNITYSDK_OFFSET(0x17DED3F0)
-#define SYSTEM_XML_XMLDOCUMENT_GETSCHEMAELEMENTDECL_OFFSET UNITYSDK_OFFSET(0x17DEE1D0)
-#define SYSTEM_XML_XMLDOCUMENT_GETXMLNAME_OFFSET UNITYSDK_OFFSET(0x17DEC8E0)
-#define SYSTEM_XML_XMLDOCUMENT_GET_ACTUALLOADINGSTATUS_OFFSET UNITYSDK_OFFSET(0x17DEF620)
-#define SYSTEM_XML_XMLDOCUMENT_GET_BASEURI_OFFSET UNITYSDK_OFFSET(0x17DF15C0)
-#define SYSTEM_XML_XMLDOCUMENT_GET_CANREPORTVALIDITY_OFFSET UNITYSDK_OFFSET(0x17DED3D0)
-#define SYSTEM_XML_XMLDOCUMENT_GET_DECLARATION_OFFSET UNITYSDK_OFFSET(0x17DED2C0)
-#define SYSTEM_XML_XMLDOCUMENT_GET_DOCUMENTELEMENT_OFFSET UNITYSDK_OFFSET(0x17DCB370)
-#define SYSTEM_XML_XMLDOCUMENT_GET_DOCUMENTTYPE_OFFSET UNITYSDK_OFFSET(0x17DED210)
-#define SYSTEM_XML_XMLDOCUMENT_GET_DTDSCHEMAINFO_OFFSET UNITYSDK_OFFSET(0x17DEC8A0)
-#define SYSTEM_XML_XMLDOCUMENT_GET_ENTITIES_OFFSET UNITYSDK_OFFSET(0x17DEF580)
-#define SYSTEM_XML_XMLDOCUMENT_GET_HASSETRESOLVER_OFFSET UNITYSDK_OFFSET(0x17DED3E0)
-#define SYSTEM_XML_XMLDOCUMENT_GET_IMPLEMENTATION_OFFSET UNITYSDK_OFFSET(0x17DED350)
-#define SYSTEM_XML_XMLDOCUMENT_GET_ISCONTAINER_OFFSET UNITYSDK_OFFSET(0x17DED380)
-#define SYSTEM_XML_XMLDOCUMENT_GET_ISLOADING_OFFSET UNITYSDK_OFFSET(0x17DEF600)
-#define SYSTEM_XML_XMLDOCUMENT_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x17DEF570)
-#define SYSTEM_XML_XMLDOCUMENT_GET_LASTNODE_OFFSET UNITYSDK_OFFSET(0x17DED390)
-#define SYSTEM_XML_XMLDOCUMENT_GET_LOCALNAME_OFFSET UNITYSDK_OFFSET(0x17DED370)
-#define SYSTEM_XML_XMLDOCUMENT_GET_NAMETABLE_OFFSET UNITYSDK_OFFSET(0x17DEF210)
-#define SYSTEM_XML_XMLDOCUMENT_GET_NAME_OFFSET UNITYSDK_OFFSET(0x17DED360)
-#define SYSTEM_XML_XMLDOCUMENT_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x17DED1F0)
-#define SYSTEM_XML_XMLDOCUMENT_GET_OWNERDOCUMENT_OFFSET UNITYSDK_OFFSET(0x17DED3B0)
-#define SYSTEM_XML_XMLDOCUMENT_GET_PARENTNODE_OFFSET UNITYSDK_OFFSET(0x17DED200)
-#define SYSTEM_XML_XMLDOCUMENT_HASNODETYPEINNEXTSIBLINGS_OFFSET UNITYSDK_OFFSET(0x17DED800)
-#define SYSTEM_XML_XMLDOCUMENT_HASNODETYPEINPREVSIBLINGS_OFFSET UNITYSDK_OFFSET(0x17DED750)
-#define SYSTEM_XML_XMLDOCUMENT_IMPORTATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x17DEEF90)
-#define SYSTEM_XML_XMLDOCUMENT_IMPORTCHILDREN_OFFSET UNITYSDK_OFFSET(0x17DEF120)
-#define SYSTEM_XML_XMLDOCUMENT_IMPORTNODEINTERNAL_OFFSET UNITYSDK_OFFSET(0x17DEEA00)
-#define SYSTEM_XML_XMLDOCUMENT_ISVALIDCHILDTYPE_OFFSET UNITYSDK_OFFSET(0x17DED550)
-#define SYSTEM_XML_XMLDOCUMENT_LOADXML_OFFSET UNITYSDK_OFFSET(0x17DEFEC0)
-#define SYSTEM_XML_XMLDOCUMENT_LOAD_OFFSET UNITYSDK_OFFSET(0x17DEFAB0)
-#define SYSTEM_XML_XMLDOCUMENT_PREPAREDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x17DEE320)
-#define SYSTEM_XML_XMLDOCUMENT_READNODE_OFFSET UNITYSDK_OFFSET(0x17DEF630)
-#define SYSTEM_XML_XMLDOCUMENT_REMOVEELEMENTWITHID_OFFSET UNITYSDK_OFFSET(0x17DE1620)
-#define SYSTEM_XML_XMLDOCUMENT_SETBASEURI_OFFSET UNITYSDK_OFFSET(0x17DF15D0)
-#define SYSTEM_XML_XMLDOCUMENT_SETDEFAULTNAMESPACE_OFFSET UNITYSDK_OFFSET(0x17DEDB30)
-#define SYSTEM_XML_XMLDOCUMENT_SETUPREADER_OFFSET UNITYSDK_OFFSET(0x17DEF840)
-#define SYSTEM_XML_XMLDOCUMENT_SET_DTDSCHEMAINFO_OFFSET UNITYSDK_OFFSET(0x17DEC8B0)
-#define SYSTEM_XML_XMLDOCUMENT_SET_ENTITIES_OFFSET UNITYSDK_OFFSET(0x17DEF5F0)
-#define SYSTEM_XML_XMLDOCUMENT_SET_INNERTEXT_OFFSET UNITYSDK_OFFSET(0x17DF01B0)
-#define SYSTEM_XML_XMLDOCUMENT_SET_INNERXML_OFFSET UNITYSDK_OFFSET(0x17DF0210)
-#define SYSTEM_XML_XMLDOCUMENT_SET_ISLOADING_OFFSET UNITYSDK_OFFSET(0x17DEF610)
-#define SYSTEM_XML_XMLDOCUMENT_SET_LASTNODE_OFFSET UNITYSDK_OFFSET(0x17DED3A0)
-#define SYSTEM_XML_XMLDOCUMENT_SET_SCHEMAS_OFFSET UNITYSDK_OFFSET(0x17DED3C0)
-#define SYSTEM_XML_XMLDOCUMENT_SET_XMLRESOLVER_OFFSET UNITYSDK_OFFSET(0x17DED400)
-#define SYSTEM_XML_XMLDOCUMENT_WRITECONTENTTO_OFFSET UNITYSDK_OFFSET(0x17DF0230)
-#define SYSTEM_XML_XMLDOCUMENT_WRITETO_OFFSET UNITYSDK_OFFSET(0x17DF0220)
-#define SYSTEM_XML_XMLDOCUMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x17DF1870)
-#define SYSTEM_XML_XMLDOCUMENT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17DBAEB0)
-#define SYSTEM_XML_XMLDOCUMENT__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17DEC630)
-#define SYSTEM_XML_XMLDOCUMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x17DEC530)
+#define SYSTEM_XML_XMLDOCUMENT_ADDATTRXMLNAME_OFFSET UNITYSDK_OFFSET(0x19120490)
+#define SYSTEM_XML_XMLDOCUMENT_ADDDEFAULTATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x19122290)
+#define SYSTEM_XML_XMLDOCUMENT_ADDELEMENTWITHID_OFFSET UNITYSDK_OFFSET(0x19120E20)
+#define SYSTEM_XML_XMLDOCUMENT_ADDIDINFO_OFFSET UNITYSDK_OFFSET(0x191205D0)
+#define SYSTEM_XML_XMLDOCUMENT_ADDXMLNAME_OFFSET UNITYSDK_OFFSET(0x19120450)
+#define SYSTEM_XML_XMLDOCUMENT_ADD_NODEINSERTED_OFFSET UNITYSDK_OFFSET(0x191244E0)
+#define SYSTEM_XML_XMLDOCUMENT_ADD_NODEREMOVED_OFFSET UNITYSDK_OFFSET(0x191245A0)
+#define SYSTEM_XML_XMLDOCUMENT_AFTEREVENT_OFFSET UNITYSDK_OFFSET(0x19124870)
+#define SYSTEM_XML_XMLDOCUMENT_APPENDCHILDFORLOAD_OFFSET UNITYSDK_OFFSET(0x19124FA0)
+#define SYSTEM_XML_XMLDOCUMENT_BEFOREEVENT_OFFSET UNITYSDK_OFFSET(0x19124820)
+#define SYSTEM_XML_XMLDOCUMENT_CANINSERTAFTER_OFFSET UNITYSDK_OFFSET(0x19121B70)
+#define SYSTEM_XML_XMLDOCUMENT_CANINSERTBEFORE_OFFSET UNITYSDK_OFFSET(0x19121980)
+#define SYSTEM_XML_XMLDOCUMENT_CHECKNAME_OFFSET UNITYSDK_OFFSET(0x191203A0)
+#define SYSTEM_XML_XMLDOCUMENT_CLONENODE_OFFSET UNITYSDK_OFFSET(0x19121200)
+#define SYSTEM_XML_XMLDOCUMENT_CREATEATTRIBUTE_1_OFFSET UNITYSDK_OFFSET(0x19123350)
+#define SYSTEM_XML_XMLDOCUMENT_CREATEATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x19121CF0)
+#define SYSTEM_XML_XMLDOCUMENT_CREATECDATASECTION_OFFSET UNITYSDK_OFFSET(0x19121F90)
+#define SYSTEM_XML_XMLDOCUMENT_CREATECOMMENT_OFFSET UNITYSDK_OFFSET(0x19122010)
+#define SYSTEM_XML_XMLDOCUMENT_CREATEDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x191233D0)
+#define SYSTEM_XML_XMLDOCUMENT_CREATEDOCUMENTFRAGMENT_OFFSET UNITYSDK_OFFSET(0x19122140)
+#define SYSTEM_XML_XMLDOCUMENT_CREATEDOCUMENTTYPE_OFFSET UNITYSDK_OFFSET(0x191220C0)
+#define SYSTEM_XML_XMLDOCUMENT_CREATEELEMENT_1_OFFSET UNITYSDK_OFFSET(0x19123470)
+#define SYSTEM_XML_XMLDOCUMENT_CREATEELEMENT_OFFSET UNITYSDK_OFFSET(0x191221E0)
+#define SYSTEM_XML_XMLDOCUMENT_CREATEENTITYREFERENCE_OFFSET UNITYSDK_OFFSET(0x191228D0)
+#define SYSTEM_XML_XMLDOCUMENT_CREATEPROCESSINGINSTRUCTION_OFFSET UNITYSDK_OFFSET(0x19122930)
+#define SYSTEM_XML_XMLDOCUMENT_CREATESIGNIFICANTWHITESPACE_OFFSET UNITYSDK_OFFSET(0x19122B10)
+#define SYSTEM_XML_XMLDOCUMENT_CREATETEXTNODE_OFFSET UNITYSDK_OFFSET(0x19122A60)
+#define SYSTEM_XML_XMLDOCUMENT_CREATEWHITESPACE_OFFSET UNITYSDK_OFFSET(0x19122B70)
+#define SYSTEM_XML_XMLDOCUMENT_CREATEXMLDECLARATION_OFFSET UNITYSDK_OFFSET(0x191229F0)
+#define SYSTEM_XML_XMLDOCUMENT_GETDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x191248C0)
+#define SYSTEM_XML_XMLDOCUMENT_GETELEMENTSBYTAGNAME_OFFSET UNITYSDK_OFFSET(0x19122BD0)
+#define SYSTEM_XML_XMLDOCUMENT_GETELEMENT_OFFSET UNITYSDK_OFFSET(0x19120770)
+#define SYSTEM_XML_XMLDOCUMENT_GETENTITYNODE_OFFSET UNITYSDK_OFFSET(0x19124CB0)
+#define SYSTEM_XML_XMLDOCUMENT_GETEVENTARGS_OFFSET UNITYSDK_OFFSET(0x19124660)
+#define SYSTEM_XML_XMLDOCUMENT_GETIDINFOBYELEMENT_OFFSET UNITYSDK_OFFSET(0x19120760)
+#define SYSTEM_XML_XMLDOCUMENT_GETIDINFOBYELEMENT__OFFSET UNITYSDK_OFFSET(0x19120680)
+#define SYSTEM_XML_XMLDOCUMENT_GETINSERTEVENTARGSFORLOAD_OFFSET UNITYSDK_OFFSET(0x19124760)
+#define SYSTEM_XML_XMLDOCUMENT_GETSCHEMAELEMENTDECL_OFFSET UNITYSDK_OFFSET(0x19122570)
+#define SYSTEM_XML_XMLDOCUMENT_GETXMLNAME_OFFSET UNITYSDK_OFFSET(0x19120470)
+#define SYSTEM_XML_XMLDOCUMENT_GET_BASEURI_OFFSET UNITYSDK_OFFSET(0x19124F90)
+#define SYSTEM_XML_XMLDOCUMENT_GET_DECLARATION_OFFSET UNITYSDK_OFFSET(0x19121480)
+#define SYSTEM_XML_XMLDOCUMENT_GET_DOCUMENTELEMENT_OFFSET UNITYSDK_OFFSET(0x19121580)
+#define SYSTEM_XML_XMLDOCUMENT_GET_DOCUMENTTYPE_OFFSET UNITYSDK_OFFSET(0x19121370)
+#define SYSTEM_XML_XMLDOCUMENT_GET_ENCODING_OFFSET UNITYSDK_OFFSET(0x19124C80)
+#define SYSTEM_XML_XMLDOCUMENT_GET_ENTITIES_OFFSET UNITYSDK_OFFSET(0x19123530)
+#define SYSTEM_XML_XMLDOCUMENT_GET_ISCONTAINER_OFFSET UNITYSDK_OFFSET(0x19121630)
+#define SYSTEM_XML_XMLDOCUMENT_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x19123520)
+#define SYSTEM_XML_XMLDOCUMENT_GET_LASTNODE_OFFSET UNITYSDK_OFFSET(0x19121640)
+#define SYSTEM_XML_XMLDOCUMENT_GET_LOCALNAME_OFFSET UNITYSDK_OFFSET(0x19121570)
+#define SYSTEM_XML_XMLDOCUMENT_GET_NAMETABLE_OFFSET UNITYSDK_OFFSET(0x19120380)
+#define SYSTEM_XML_XMLDOCUMENT_GET_NAME_OFFSET UNITYSDK_OFFSET(0x19121560)
+#define SYSTEM_XML_XMLDOCUMENT_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x19121350)
+#define SYSTEM_XML_XMLDOCUMENT_GET_OWNERDOCUMENT_OFFSET UNITYSDK_OFFSET(0x19121660)
+#define SYSTEM_XML_XMLDOCUMENT_GET_PARENTNODE_OFFSET UNITYSDK_OFFSET(0x19121360)
+#define SYSTEM_XML_XMLDOCUMENT_GET_SCHEMAINFO_OFFSET UNITYSDK_OFFSET(0x19124DC0)
+#define SYSTEM_XML_XMLDOCUMENT_GET_STANDALONE_OFFSET UNITYSDK_OFFSET(0x19124110)
+#define SYSTEM_XML_XMLDOCUMENT_GET_VERSION_OFFSET UNITYSDK_OFFSET(0x19124C50)
+#define SYSTEM_XML_XMLDOCUMENT_HASNODETYPEINNEXTSIBLINGS_OFFSET UNITYSDK_OFFSET(0x19121920)
+#define SYSTEM_XML_XMLDOCUMENT_HASNODETYPEINPREVSIBLINGS_OFFSET UNITYSDK_OFFSET(0x19121870)
+#define SYSTEM_XML_XMLDOCUMENT_IMPORTATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x191231C0)
+#define SYSTEM_XML_XMLDOCUMENT_IMPORTCHILDREN_OFFSET UNITYSDK_OFFSET(0x191212B0)
+#define SYSTEM_XML_XMLDOCUMENT_IMPORTNODEINTERNAL_OFFSET UNITYSDK_OFFSET(0x19122C30)
+#define SYSTEM_XML_XMLDOCUMENT_ISVALIDCHILDTYPE_OFFSET UNITYSDK_OFFSET(0x19121670)
+#define SYSTEM_XML_XMLDOCUMENT_LOADXML_OFFSET UNITYSDK_OFFSET(0x19123BE0)
+#define SYSTEM_XML_XMLDOCUMENT_LOAD_1_OFFSET UNITYSDK_OFFSET(0x19123A30)
+#define SYSTEM_XML_XMLDOCUMENT_LOAD_OFFSET UNITYSDK_OFFSET(0x19123790)
+#define SYSTEM_XML_XMLDOCUMENT_PREPAREDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x191226C0)
+#define SYSTEM_XML_XMLDOCUMENT_READNODE_OFFSET UNITYSDK_OFFSET(0x19123590)
+#define SYSTEM_XML_XMLDOCUMENT_REMOVEELEMENTWITHID_OFFSET UNITYSDK_OFFSET(0x19121090)
+#define SYSTEM_XML_XMLDOCUMENT_REMOVE_NODEINSERTED_OFFSET UNITYSDK_OFFSET(0x19124540)
+#define SYSTEM_XML_XMLDOCUMENT_REMOVE_NODEREMOVED_OFFSET UNITYSDK_OFFSET(0x19124600)
+#define SYSTEM_XML_XMLDOCUMENT_SAVE_OFFSET UNITYSDK_OFFSET(0x19123F60)
+#define SYSTEM_XML_XMLDOCUMENT_SETDEFAULTNAMESPACE_OFFSET UNITYSDK_OFFSET(0x19121ED0)
+#define SYSTEM_XML_XMLDOCUMENT_SETUPREADER_OFFSET UNITYSDK_OFFSET(0x19123660)
+#define SYSTEM_XML_XMLDOCUMENT_SET_INNERTEXT_OFFSET UNITYSDK_OFFSET(0x19123EF0)
+#define SYSTEM_XML_XMLDOCUMENT_SET_INNERXML_OFFSET UNITYSDK_OFFSET(0x19123F50)
+#define SYSTEM_XML_XMLDOCUMENT_SET_LASTNODE_OFFSET UNITYSDK_OFFSET(0x19121650)
+#define SYSTEM_XML_XMLDOCUMENT_WRITECONTENTTO_OFFSET UNITYSDK_OFFSET(0x19124150)
+#define SYSTEM_XML_XMLDOCUMENT_WRITETO_OFFSET UNITYSDK_OFFSET(0x19124140)
+#define SYSTEM_XML_XMLDOCUMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x19125210)
+#define SYSTEM_XML_XMLDOCUMENT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1910FCE0)
+#define SYSTEM_XML_XMLDOCUMENT__CTOR_2_OFFSET UNITYSDK_OFFSET(0x191200F0)
+#define SYSTEM_XML_XMLDOCUMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1911FF30)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int XmlDocument_TypeDefinitionIndex = 1882;
+	inline static constexpr unsigned int XmlDocument_TypeDefinitionIndex = 1759;
 
 	class XmlDocument : public ::System::Xml::XmlNode
 	{
 	public:
 		static ::System::Xml::EmptyEnumerator** StaticGet_EmptyEnumerator()
 		{
-			return (::System::Xml::EmptyEnumerator**)Il2CppClass::FromTypeDefinitionIndex(XmlDocument_TypeDefinitionIndex)->GetStaticField(0x13200);
-		}
-		static ::System::Xml::Schema::IXmlSchemaInfo** StaticGet_ValidSchemaInfo()
-		{
-			return (::System::Xml::Schema::IXmlSchemaInfo**)Il2CppClass::FromTypeDefinitionIndex(XmlDocument_TypeDefinitionIndex)->GetStaticField(0x13208);
-		}
-		static ::System::Xml::Schema::IXmlSchemaInfo** StaticGet_NotKnownSchemaInfo()
-		{
-			return (::System::Xml::Schema::IXmlSchemaInfo**)Il2CppClass::FromTypeDefinitionIndex(XmlDocument_TypeDefinitionIndex)->GetStaticField(0x13210);
+			return (::System::Xml::EmptyEnumerator**)Il2CppClass::FromTypeDefinitionIndex(XmlDocument_TypeDefinitionIndex)->GetStaticField(0x1F10);
 		}
 		static ::System::Xml::Schema::IXmlSchemaInfo** StaticGet_InvalidSchemaInfo()
 		{
-			return (::System::Xml::Schema::IXmlSchemaInfo**)Il2CppClass::FromTypeDefinitionIndex(XmlDocument_TypeDefinitionIndex)->GetStaticField(0x13218);
+			return (::System::Xml::Schema::IXmlSchemaInfo**)Il2CppClass::FromTypeDefinitionIndex(XmlDocument_TypeDefinitionIndex)->GetStaticField(0x1F18);
 		}
-		::System::Xml::XmlNodeChangedEventHandler* onNodeChangingDelegate; // 0x18
-		::System::String* strLang; // 0x20
-		::System::Xml::DomNameTable* domNameTable; // 0x28
-		::System::String* strSignificantWhitespaceName; // 0x30
-		::System::Collections::Hashtable* htElementIDAttrDecl; // 0x38
-		::System::String* strDocumentName; // 0x40
-		::System::Xml::XmlNamedNodeMap* entities; // 0x48
-		::System::Xml::XmlNodeChangedEventHandler* onNodeInsertedDelegate; // 0x50
-		::System::String* strReservedXml; // 0x58
-		::System::String* strXml; // 0x60
-		::System::String* strDocumentFragmentName; // 0x68
-		::System::Xml::Schema::SchemaInfo* schemaInfo; // 0x70
-		::System::String* strSpace; // 0x78
-		::System::String* strXmlns; // 0x80
-		::System::Xml::XmlResolver* resolver; // 0x88
-		::System::Xml::XmlNodeChangedEventHandler* onNodeChangedDelegate; // 0x90
-		::System::String* strReservedXmlns; // 0x98
-		::System::String* strNonSignificantWhitespaceName; // 0xA0
-		::System::Collections::Hashtable* htElementIdMap; // 0xA8
-		::System::Object* objLock; // 0xB0
+		static ::System::Xml::Schema::IXmlSchemaInfo** StaticGet_ValidSchemaInfo()
+		{
+			return (::System::Xml::Schema::IXmlSchemaInfo**)Il2CppClass::FromTypeDefinitionIndex(XmlDocument_TypeDefinitionIndex)->GetStaticField(0x1F20);
+		}
+		static ::System::Xml::Schema::IXmlSchemaInfo** StaticGet_NotKnownSchemaInfo()
+		{
+			return (::System::Xml::Schema::IXmlSchemaInfo**)Il2CppClass::FromTypeDefinitionIndex(XmlDocument_TypeDefinitionIndex)->GetStaticField(0x1F28);
+		}
+		::System::Collections::Hashtable* htElementIDAttrDecl; // 0x18
+		::System::Xml::XmlNodeChangedEventHandler* onNodeInsertedDelegate; // 0x20
+		::System::String* strDocumentName; // 0x28
+		::System::String* strReservedXml; // 0x30
+		::System::String* strSpace; // 0x38
+		::System::String* strReservedXmlns; // 0x40
+		::System::String* strXml; // 0x48
+		::System::String* strNonSignificantWhitespaceName; // 0x50
+		::System::Xml::Schema::SchemaInfo* schemaInfo; // 0x58
+		::System::Xml::XmlNodeChangedEventHandler* onNodeChangedDelegate; // 0x60
+		::System::Xml::XmlResolver* resolver; // 0x68
+		::System::Xml::XmlNodeChangedEventHandler* onNodeInsertingDelegate; // 0x70
+		::System::String* strID; // 0x78
+		::System::Xml::XmlNamedNodeMap* entities; // 0x80
+		::System::Xml::XmlNodeChangedEventHandler* onNodeRemovingDelegate; // 0x88
+		::System::String* strEntityName; // 0x90
+		::System::String* strXmlns; // 0x98
+		::System::String* strEmpty; // 0xA0
+		::System::Xml::XmlLinkedNode* lastChild; // 0xA8
+		::System::String* strLang; // 0xB0
 		::System::String* strTextName; // 0xB8
-		::System::String* strID; // 0xC0
-		::System::String* strCDataSectionName; // 0xC8
-		::System::String* strCommentName; // 0xD0
-		::System::Xml::XmlNodeChangedEventHandler* onNodeRemovedDelegate; // 0xD8
-		::System::String* baseURI; // 0xE0
-		::System::String* strEntityName; // 0xE8
-		::System::Xml::XmlNodeChangedEventHandler* onNodeRemovingDelegate; // 0xF0
-		::System::Xml::XmlNodeChangedEventHandler* onNodeInsertingDelegate; // 0xF8
-		::System::Xml::Schema::XmlSchemaSet* schemas; // 0x100
-		::System::Xml::XmlLinkedNode* lastChild; // 0x108
-		::System::String* strEmpty; // 0x110
+		::System::String* strDocumentFragmentName; // 0xC0
+		::System::Collections::Hashtable* htElementIdMap; // 0xC8
+		::System::Xml::Schema::XmlSchemaSet* schemas; // 0xD0
+		::System::String* strCommentName; // 0xD8
+		::System::Object* objLock; // 0xE0
+		::System::String* strCDataSectionName; // 0xE8
+		::System::String* baseURI; // 0xF0
+		::System::Xml::XmlNodeChangedEventHandler* onNodeChangingDelegate; // 0xF8
+		::System::String* strSignificantWhitespaceName; // 0x100
+		::System::Xml::XmlNodeChangedEventHandler* onNodeRemovedDelegate; // 0x108
+		::System::Xml::DomNameTable* domNameTable; // 0x110
 		::System::Xml::XmlImplementation* implementation; // 0x118
-		::System::Boolean reportValidity; // 0x120
-		::System::Boolean preserveWhitespace; // 0x121
-		::System::Boolean actualLoadingStatus; // 0x122
-		::System::Boolean fCDataNodesPresent; // 0x123
-		::System::Boolean isLoading; // 0x124
-		::System::Boolean fEntRefNodesPresent; // 0x125
-		::System::Boolean bSetResolver; // 0x126
+		::System::Boolean isLoading; // 0x120
+		::System::Boolean bSetResolver; // 0x121
+		::System::Boolean fEntRefNodesPresent; // 0x122
+		::System::Boolean reportValidity; // 0x123
+		::System::Boolean actualLoadingStatus; // 0x124
+		::System::Boolean fCDataNodesPresent; // 0x125
+		::System::Boolean preserveWhitespace; // 0x126
 
 		::System::Void _ctor()
 		{
@@ -210,16 +209,6 @@ namespace System::Xml
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT__CCTOR_OFFSET))();
-		}
-
-		::System::Xml::Schema::SchemaInfo* get_DtdSchemaInfo()
-		{
-			return ((::System::Xml::Schema::SchemaInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_DTDSCHEMAINFO_OFFSET))(this);
-		}
-
-		::System::Void set_DtdSchemaInfo(::System::Xml::Schema::SchemaInfo* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::SchemaInfo*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_SET_DTDSCHEMAINFO_OFFSET))(this, value);
 		}
 
 		static ::System::Void CheckName(::System::String* name)
@@ -297,11 +286,6 @@ namespace System::Xml
 			return ((::System::Xml::XmlDeclaration*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_DECLARATION_OFFSET))(this);
 		}
 
-		::System::Xml::XmlImplementation* get_Implementation()
-		{
-			return ((::System::Xml::XmlImplementation*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_IMPLEMENTATION_OFFSET))(this);
-		}
-
 		::System::String* get_Name()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_NAME_OFFSET))(this);
@@ -337,31 +321,6 @@ namespace System::Xml
 			return ((::System::Xml::XmlDocument*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_OWNERDOCUMENT_OFFSET))(this);
 		}
 
-		::System::Void set_Schemas(::System::Xml::Schema::XmlSchemaSet* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaSet*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_SET_SCHEMAS_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_CanReportValidity()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_CANREPORTVALIDITY_OFFSET))(this);
-		}
-
-		::System::Boolean get_HasSetResolver()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_HASSETRESOLVER_OFFSET))(this);
-		}
-
-		::System::Xml::XmlResolver* GetResolver()
-		{
-			return ((::System::Xml::XmlResolver*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GETRESOLVER_OFFSET))(this);
-		}
-
-		::System::Void set_XmlResolver(::System::Xml::XmlResolver* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlResolver*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_SET_XMLRESOLVER_OFFSET))(this, value);
-		}
-
 		::System::Boolean IsValidChildType(::System::Xml::XmlNodeType type)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::System::Xml::XmlNodeType))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_ISVALIDCHILDTYPE_OFFSET))(this, type);
@@ -375,6 +334,11 @@ namespace System::Xml
 		::System::Boolean HasNodeTypeInNextSiblings(::System::Xml::XmlNodeType nt, ::System::Xml::XmlNode* refNode)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::System::Xml::XmlNodeType, ::System::Xml::XmlNode*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_HASNODETYPEINNEXTSIBLINGS_OFFSET))(this, nt, refNode);
+		}
+
+		::System::Boolean CanInsertBefore(::System::Xml::XmlNode* newChild, ::System::Xml::XmlNode* refChild)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Xml::XmlNode*, ::System::Xml::XmlNode*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_CANINSERTBEFORE_OFFSET))(this, newChild, refChild);
 		}
 
 		::System::Boolean CanInsertAfter(::System::Xml::XmlNode* newChild, ::System::Xml::XmlNode* refChild)
@@ -462,14 +426,9 @@ namespace System::Xml
 			return ((::System::Xml::XmlWhitespace*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_CREATEWHITESPACE_OFFSET))(this, text);
 		}
 
-		::System::Xml::XmlAttribute* CreateAttribute_1(::System::String* qualifiedName, ::System::String* namespaceURI)
+		::System::Xml::XmlNodeList* GetElementsByTagName(::System::String* name)
 		{
-			return ((::System::Xml::XmlAttribute*(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_CREATEATTRIBUTE_1_OFFSET))(this, qualifiedName, namespaceURI);
-		}
-
-		::System::Xml::XmlElement* CreateElement_1(::System::String* qualifiedName, ::System::String* namespaceURI)
-		{
-			return ((::System::Xml::XmlElement*(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_CREATEELEMENT_1_OFFSET))(this, qualifiedName, namespaceURI);
+			return ((::System::Xml::XmlNodeList*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GETELEMENTSBYTAGNAME_OFFSET))(this, name);
 		}
 
 		::System::Xml::XmlNode* ImportNodeInternal(::System::Xml::XmlNode* node, ::System::Boolean deep)
@@ -492,9 +451,9 @@ namespace System::Xml
 			return ((::System::Xml::XmlNameTable*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_NAMETABLE_OFFSET))(this);
 		}
 
-		::System::Xml::XmlAttribute* CreateAttribute_2(::System::String* prefix, ::System::String* localName, ::System::String* namespaceURI)
+		::System::Xml::XmlAttribute* CreateAttribute_1(::System::String* prefix, ::System::String* localName, ::System::String* namespaceURI)
 		{
-			return ((::System::Xml::XmlAttribute*(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_CREATEATTRIBUTE_2_OFFSET))(this, prefix, localName, namespaceURI);
+			return ((::System::Xml::XmlAttribute*(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_CREATEATTRIBUTE_1_OFFSET))(this, prefix, localName, namespaceURI);
 		}
 
 		::System::Xml::XmlAttribute* CreateDefaultAttribute(::System::String* prefix, ::System::String* localName, ::System::String* namespaceURI)
@@ -502,9 +461,9 @@ namespace System::Xml
 			return ((::System::Xml::XmlAttribute*(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_CREATEDEFAULTATTRIBUTE_OFFSET))(this, prefix, localName, namespaceURI);
 		}
 
-		::System::Xml::XmlElement* CreateElement_2(::System::String* prefix, ::System::String* localName, ::System::String* namespaceURI)
+		::System::Xml::XmlElement* CreateElement_1(::System::String* prefix, ::System::String* localName, ::System::String* namespaceURI)
 		{
-			return ((::System::Xml::XmlElement*(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_CREATEELEMENT_2_OFFSET))(this, prefix, localName, namespaceURI);
+			return ((::System::Xml::XmlElement*(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_CREATEELEMENT_1_OFFSET))(this, prefix, localName, namespaceURI);
 		}
 
 		::System::Boolean get_IsReadOnly()
@@ -517,26 +476,6 @@ namespace System::Xml
 			return ((::System::Xml::XmlNamedNodeMap*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_ENTITIES_OFFSET))(this);
 		}
 
-		::System::Void set_Entities(::System::Xml::XmlNamedNodeMap* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlNamedNodeMap*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_SET_ENTITIES_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_IsLoading()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_ISLOADING_OFFSET))(this);
-		}
-
-		::System::Void set_IsLoading(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_SET_ISLOADING_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_ActualLoadingStatus()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_ACTUALLOADINGSTATUS_OFFSET))(this);
-		}
-
 		::System::Xml::XmlNode* ReadNode(::System::Xml::XmlReader* reader)
 		{
 			return ((::System::Xml::XmlNode*(*)(::PVOID, ::System::Xml::XmlReader*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_READNODE_OFFSET))(this, reader);
@@ -547,9 +486,14 @@ namespace System::Xml
 			return ((::System::Xml::XmlTextReader*(*)(::PVOID, ::System::Xml::XmlTextReader*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_SETUPREADER_OFFSET))(this, tr);
 		}
 
-		::System::Void Load(::System::Xml::XmlReader* reader)
+		::System::Void Load(::System::IO::TextReader* txtReader)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlReader*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_LOAD_OFFSET))(this, reader);
+			return ((::System::Void(*)(::PVOID, ::System::IO::TextReader*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_LOAD_OFFSET))(this, txtReader);
+		}
+
+		::System::Void Load_1(::System::Xml::XmlReader* reader)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlReader*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_LOAD_1_OFFSET))(this, reader);
 		}
 
 		::System::Void LoadXml(::System::String* xml)
@@ -567,6 +511,11 @@ namespace System::Xml
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_SET_INNERXML_OFFSET))(this, value);
 		}
 
+		::System::Void Save(::System::Xml::XmlWriter* w)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlWriter*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_SAVE_OFFSET))(this, w);
+		}
+
 		::System::Void WriteTo(::System::Xml::XmlWriter* w)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlWriter*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_WRITETO_OFFSET))(this, w);
@@ -575,6 +524,26 @@ namespace System::Xml
 		::System::Void WriteContentTo(::System::Xml::XmlWriter* xw)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlWriter*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_WRITECONTENTTO_OFFSET))(this, xw);
+		}
+
+		::System::Void add_NodeInserted(::System::Xml::XmlNodeChangedEventHandler* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlNodeChangedEventHandler*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_ADD_NODEINSERTED_OFFSET))(this, value);
+		}
+
+		::System::Void remove_NodeInserted(::System::Xml::XmlNodeChangedEventHandler* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlNodeChangedEventHandler*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_REMOVE_NODEINSERTED_OFFSET))(this, value);
+		}
+
+		::System::Void add_NodeRemoved(::System::Xml::XmlNodeChangedEventHandler* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlNodeChangedEventHandler*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_ADD_NODEREMOVED_OFFSET))(this, value);
+		}
+
+		::System::Void remove_NodeRemoved(::System::Xml::XmlNodeChangedEventHandler* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlNodeChangedEventHandler*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_REMOVE_NODEREMOVED_OFFSET))(this, value);
 		}
 
 		::System::Xml::XmlNodeChangedEventArgs* GetEventArgs(::System::Xml::XmlNode* node, ::System::Xml::XmlNode* oldParent, ::System::Xml::XmlNode* newParent, ::System::String* oldValue, ::System::String* newValue, ::System::Xml::XmlNodeChangedAction action)
@@ -602,19 +571,34 @@ namespace System::Xml
 			return ((::System::Xml::XmlAttribute*(*)(::PVOID, ::System::Xml::XmlElement*, ::System::String*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GETDEFAULTATTRIBUTE_OFFSET))(this, elem, attrPrefix, attrLocalname, attrNamespaceURI);
 		}
 
+		::System::String* get_Version()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_VERSION_OFFSET))(this);
+		}
+
+		::System::String* get_Encoding()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_ENCODING_OFFSET))(this);
+		}
+
+		::System::String* get_Standalone()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_STANDALONE_OFFSET))(this);
+		}
+
 		::System::Xml::XmlEntity* GetEntityNode(::System::String* name)
 		{
 			return ((::System::Xml::XmlEntity*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GETENTITYNODE_OFFSET))(this, name);
 		}
 
+		::System::Xml::Schema::IXmlSchemaInfo* get_SchemaInfo()
+		{
+			return ((::System::Xml::Schema::IXmlSchemaInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_SCHEMAINFO_OFFSET))(this);
+		}
+
 		::System::String* get_BaseURI()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_GET_BASEURI_OFFSET))(this);
-		}
-
-		::System::Void SetBaseURI(::System::String* inBaseURI)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLDOCUMENT_SETBASEURI_OFFSET))(this, inBaseURI);
 		}
 
 		::System::Xml::XmlNode* AppendChildForLoad(::System::Xml::XmlNode* newChild, ::System::Xml::XmlDocument* doc)

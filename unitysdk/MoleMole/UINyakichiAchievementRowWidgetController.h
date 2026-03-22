@@ -1,0 +1,92 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_071490F73A72357F_1;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_ONCLICK_OFFSET UNITYSDK_OFFSET(0x68DCE00)
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x68DCC80)
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x68DCD20)
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x68DC9F0)
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x68DCBD0)
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_UPDATEUI_OFFSET UNITYSDK_OFFSET(0x68DD3C0)
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x68DD790)
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER__ONCLICK_B__5_0_OFFSET UNITYSDK_OFFSET(0x68DD7C0)
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x68DD920)
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x68DD990)
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x68DDA10)
+#define MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x68DDA70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UINyakichiAchievementRowWidgetController_TypeDefinitionIndex = 44731;
+
+	class UINyakichiAchievementRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_071490F73A72357F_1* _view; // 0x2A0
+		::System::Int32 questID; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_ONCLICK_OFFSET))(this);
+		}
+
+		::System::Void UpdateUI(::System::Int32 questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER_UPDATEUI_OFFSET))(this, questID);
+		}
+
+		::System::Void _OnClick_b__5_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER__ONCLICK_B__5_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINYAKICHIACHIEVEMENTROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

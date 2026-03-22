@@ -3,12 +3,13 @@
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int NotificationFlags_TypeDefinitionIndex = 29014;
+	inline static constexpr unsigned int NotificationFlags_TypeDefinitionIndex = 29363;
 
 	enum class NotificationFlags : ::System::Int16
 	{
 		TriggerInEditMode = 1,
 		Retroactive = 2,
 		TriggerOnce = 4,
+		TriggerOnceWithPause = 8,
 	};
 }

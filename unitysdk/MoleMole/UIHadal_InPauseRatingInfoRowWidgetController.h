@@ -1,0 +1,89 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_E17D44E1D4CD83D1_1;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIHadalZone_Common_RatingRowContext; }
+namespace MoleMole { class UIRankingImageConfig; }
+
+#define MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER_GETVIEW_OFFSET UNITYSDK_OFFSET(0x8C22990)
+#define MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C22810)
+#define MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C228B0)
+#define MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C21EA0)
+#define MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8C21F40)
+#define MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8C22A00)
+#define MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER__REFRESHITEMS_OFFSET UNITYSDK_OFFSET(0x8C22070)
+#define MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C22A30)
+#define MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C22AA0)
+#define MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C22B20)
+#define MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8C22B80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHadal_InPauseRatingInfoRowWidgetController_TypeDefinitionIndex = 51983;
+
+	class UIHadal_InPauseRatingInfoRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_E17D44E1D4CD83D1_1* _view; // 0x2A0
+		::MoleMole::UIHadalZone_Common_RatingRowContext* _curCtx; // 0x2A8
+		::MoleMole::UIRankingImageConfig* _config; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::Class_2_E17D44E1D4CD83D1_1* GetView()
+		{
+			return ((::Class_2_E17D44E1D4CD83D1_1*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER_GETVIEW_OFFSET))(this);
+		}
+
+		::System::Void _RefreshItems()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER__REFRESHITEMS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADAL_INPAUSERATINGINFOROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

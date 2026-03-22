@@ -10,169 +10,151 @@ namespace System { class Object; }
 namespace System { class String; }
 namespace System { class Type; }
 
-#define SYSTEM_DECIMAL_ABS_OFFSET UNITYSDK_OFFSET(0x15BF20B0)
-#define SYSTEM_DECIMAL_ADD_OFFSET UNITYSDK_OFFSET(0x15BF2130)
-#define SYSTEM_DECIMAL_CEILING_OFFSET UNITYSDK_OFFSET(0x15BF2190)
-#define SYSTEM_DECIMAL_COMPARETO_1_OFFSET UNITYSDK_OFFSET(0x20064E0)
-#define SYSTEM_DECIMAL_COMPARETO_OFFSET UNITYSDK_OFFSET(0x20064D0)
-#define SYSTEM_DECIMAL_COMPARE_OFFSET UNITYSDK_OFFSET(0x15BF23E0)
-#define SYSTEM_DECIMAL_DIVIDE_OFFSET UNITYSDK_OFFSET(0x15BF2520)
-#define SYSTEM_DECIMAL_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x2006580)
-#define SYSTEM_DECIMAL_EQUALS_2_OFFSET UNITYSDK_OFFSET(0x15BF26C0)
-#define SYSTEM_DECIMAL_EQUALS_OFFSET UNITYSDK_OFFSET(0x2006520)
-#define SYSTEM_DECIMAL_FCALLADDSUB_OFFSET UNITYSDK_OFFSET(0x15BF2180)
-#define SYSTEM_DECIMAL_FCALLCOMPARE_OFFSET UNITYSDK_OFFSET(0x15BF2420)
-#define SYSTEM_DECIMAL_FCALLDIVIDE_OFFSET UNITYSDK_OFFSET(0x15BF2570)
-#define SYSTEM_DECIMAL_FCALLFLOOR_OFFSET UNITYSDK_OFFSET(0x15BF2700)
-#define SYSTEM_DECIMAL_FCALLMULTIPLY_OFFSET UNITYSDK_OFFSET(0x15BF3B50)
-#define SYSTEM_DECIMAL_FCALLROUND_OFFSET UNITYSDK_OFFSET(0x15BF3C50)
-#define SYSTEM_DECIMAL_FCALLTOINT32_OFFSET UNITYSDK_OFFSET(0x15BCF260)
-#define SYSTEM_DECIMAL_FCALLTRUNCATE_OFFSET UNITYSDK_OFFSET(0x15BF40F0)
-#define SYSTEM_DECIMAL_FLOOR_OFFSET UNITYSDK_OFFSET(0x15BF23A0)
-#define SYSTEM_DECIMAL_FROMOACURRENCY_OFFSET UNITYSDK_OFFSET(0x15BF1A30)
-#define SYSTEM_DECIMAL_GETBITS_OFFSET UNITYSDK_OFFSET(0x15BF1E90)
-#define SYSTEM_DECIMAL_GETBYTES_OFFSET UNITYSDK_OFFSET(0x15BF28C0)
-#define SYSTEM_DECIMAL_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x20065D0)
-#define SYSTEM_DECIMAL_GETTYPECODE_OFFSET UNITYSDK_OFFSET(0x2006770)
-#define SYSTEM_DECIMAL_INTERNALADDUINT32RAWUNCHECKED_OFFSET UNITYSDK_OFFSET(0x15BF2DA0)
-#define SYSTEM_DECIMAL_INTERNALDIVREMUINT32_OFFSET UNITYSDK_OFFSET(0x15BF2DC0)
-#define SYSTEM_DECIMAL_INTERNALROUNDFROMZERO_OFFSET UNITYSDK_OFFSET(0x15BF2E50)
-#define SYSTEM_DECIMAL_MAX_OFFSET UNITYSDK_OFFSET(0x15BF2FF0)
-#define SYSTEM_DECIMAL_MIN_OFFSET UNITYSDK_OFFSET(0x15BF3040)
-#define SYSTEM_DECIMAL_MULTIPLY_OFFSET UNITYSDK_OFFSET(0x15BF3B00)
-#define SYSTEM_DECIMAL_NEGATE_OFFSET UNITYSDK_OFFSET(0x15BF3B60)
-#define SYSTEM_DECIMAL_ONSERIALIZING_OFFSET UNITYSDK_OFFSET(0x2006440)
-#define SYSTEM_DECIMAL_OP_ADDITION_OFFSET UNITYSDK_OFFSET(0x15BF3AB0)
-#define SYSTEM_DECIMAL_OP_DECREMENT_OFFSET UNITYSDK_OFFSET(0x15BF4610)
-#define SYSTEM_DECIMAL_OP_DIVISION_OFFSET UNITYSDK_OFFSET(0x15BF1AD0)
-#define SYSTEM_DECIMAL_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x15BF38A0)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_10_OFFSET UNITYSDK_OFFSET(0x15BF4530)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_11_OFFSET UNITYSDK_OFFSET(0x15BD1700)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_12_OFFSET UNITYSDK_OFFSET(0x15BD1E20)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_1_OFFSET UNITYSDK_OFFSET(0x15BD2910)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_2_OFFSET UNITYSDK_OFFSET(0x15BF42B0)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_3_OFFSET UNITYSDK_OFFSET(0x15BF42F0)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_4_OFFSET UNITYSDK_OFFSET(0x15BF4330)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_5_OFFSET UNITYSDK_OFFSET(0x15BF4430)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_6_OFFSET UNITYSDK_OFFSET(0x15BF4470)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_7_OFFSET UNITYSDK_OFFSET(0x15BF44B0)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_8_OFFSET UNITYSDK_OFFSET(0x15BF44F0)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_9_OFFSET UNITYSDK_OFFSET(0x15BF19F0)
-#define SYSTEM_DECIMAL_OP_EXPLICIT_OFFSET UNITYSDK_OFFSET(0x15BD2890)
-#define SYSTEM_DECIMAL_OP_GREATERTHANOREQUAL_OFFSET UNITYSDK_OFFSET(0x15BF4750)
-#define SYSTEM_DECIMAL_OP_GREATERTHAN_OFFSET UNITYSDK_OFFSET(0x15BF4710)
-#define SYSTEM_DECIMAL_OP_IMPLICIT_1_OFFSET UNITYSDK_OFFSET(0x15BD2420)
-#define SYSTEM_DECIMAL_OP_IMPLICIT_2_OFFSET UNITYSDK_OFFSET(0x15BD25B0)
-#define SYSTEM_DECIMAL_OP_IMPLICIT_3_OFFSET UNITYSDK_OFFSET(0x15BD2630)
-#define SYSTEM_DECIMAL_OP_IMPLICIT_4_OFFSET UNITYSDK_OFFSET(0x15BF4290)
-#define SYSTEM_DECIMAL_OP_IMPLICIT_5_OFFSET UNITYSDK_OFFSET(0x15BD26A0)
-#define SYSTEM_DECIMAL_OP_IMPLICIT_6_OFFSET UNITYSDK_OFFSET(0x15BD2720)
-#define SYSTEM_DECIMAL_OP_IMPLICIT_7_OFFSET UNITYSDK_OFFSET(0x15BD27A0)
-#define SYSTEM_DECIMAL_OP_IMPLICIT_8_OFFSET UNITYSDK_OFFSET(0x15BD2820)
-#define SYSTEM_DECIMAL_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x15BD24A0)
-#define SYSTEM_DECIMAL_OP_INCREMENT_OFFSET UNITYSDK_OFFSET(0x15BF4580)
-#define SYSTEM_DECIMAL_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x15BCB2B0)
-#define SYSTEM_DECIMAL_OP_LESSTHANOREQUAL_OFFSET UNITYSDK_OFFSET(0x15BF3A70)
-#define SYSTEM_DECIMAL_OP_LESSTHAN_OFFSET UNITYSDK_OFFSET(0x15BF3810)
-#define SYSTEM_DECIMAL_OP_MODULUS_OFFSET UNITYSDK_OFFSET(0x15BF46A0)
-#define SYSTEM_DECIMAL_OP_MULTIPLY_OFFSET UNITYSDK_OFFSET(0x15BF19A0)
-#define SYSTEM_DECIMAL_OP_SUBTRACTION_OFFSET UNITYSDK_OFFSET(0x15BF3850)
-#define SYSTEM_DECIMAL_OP_UNARYNEGATION_OFFSET UNITYSDK_OFFSET(0x15BF2300)
-#define SYSTEM_DECIMAL_OP_UNARYPLUS_OFFSET UNITYSDK_OFFSET(0x15BF4570)
-#define SYSTEM_DECIMAL_PARSE_1_OFFSET UNITYSDK_OFFSET(0x15BF2800)
-#define SYSTEM_DECIMAL_PARSE_2_OFFSET UNITYSDK_OFFSET(0x15BD2A20)
-#define SYSTEM_DECIMAL_PARSE_3_OFFSET UNITYSDK_OFFSET(0x15BD2AE0)
-#define SYSTEM_DECIMAL_PARSE_OFFSET UNITYSDK_OFFSET(0x15BF27C0)
-#define SYSTEM_DECIMAL_REMAINDER_OFFSET UNITYSDK_OFFSET(0x15BF3090)
-#define SYSTEM_DECIMAL_ROUND_1_OFFSET UNITYSDK_OFFSET(0x15BCC760)
-#define SYSTEM_DECIMAL_ROUND_2_OFFSET UNITYSDK_OFFSET(0x15BF3C60)
-#define SYSTEM_DECIMAL_ROUND_3_OFFSET UNITYSDK_OFFSET(0x15BF3CC0)
-#define SYSTEM_DECIMAL_ROUND_OFFSET UNITYSDK_OFFSET(0x15BF3BE0)
-#define SYSTEM_DECIMAL_SETBITS_OFFSET UNITYSDK_OFFSET(0x20063B0)
-#define SYSTEM_DECIMAL_SUBTRACT_OFFSET UNITYSDK_OFFSET(0x15BF3E40)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOBOOLEAN_OFFSET UNITYSDK_OFFSET(0x2006780)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOBYTE_OFFSET UNITYSDK_OFFSET(0x20068A0)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOCHAR_OFFSET UNITYSDK_OFFSET(0x2006810)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TODATETIME_OFFSET UNITYSDK_OFFSET(0x2006D50)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TODECIMAL_OFFSET UNITYSDK_OFFSET(0x1465FE0)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TODOUBLE_OFFSET UNITYSDK_OFFSET(0x2006CA0)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOINT16_OFFSET UNITYSDK_OFFSET(0x2006920)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOINT32_OFFSET UNITYSDK_OFFSET(0x2006A20)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOINT64_OFFSET UNITYSDK_OFFSET(0x2006AE0)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOSBYTE_OFFSET UNITYSDK_OFFSET(0x2006820)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOSINGLE_OFFSET UNITYSDK_OFFSET(0x2006BE0)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOTYPE_OFFSET UNITYSDK_OFFSET(0x2006D60)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOUINT16_OFFSET UNITYSDK_OFFSET(0x20069A0)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOUINT32_OFFSET UNITYSDK_OFFSET(0x2006A60)
-#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOUINT64_OFFSET UNITYSDK_OFFSET(0x2006B60)
-#define SYSTEM_DECIMAL_SYSTEM_RUNTIME_SERIALIZATION_IDESERIALIZATIONCALLBACK_ONDESERIALIZATION_OFFSET UNITYSDK_OFFSET(0x2006450)
-#define SYSTEM_DECIMAL_TOBYTE_OFFSET UNITYSDK_OFFSET(0x15BCD3B0)
-#define SYSTEM_DECIMAL_TODECIMAL_OFFSET UNITYSDK_OFFSET(0x15BF2AE0)
-#define SYSTEM_DECIMAL_TODOUBLE_OFFSET UNITYSDK_OFFSET(0x15BF4080)
-#define SYSTEM_DECIMAL_TOINT16_OFFSET UNITYSDK_OFFSET(0x15BCDF00)
-#define SYSTEM_DECIMAL_TOINT32_OFFSET UNITYSDK_OFFSET(0x15BF3E90)
-#define SYSTEM_DECIMAL_TOINT64_OFFSET UNITYSDK_OFFSET(0x15BD0470)
-#define SYSTEM_DECIMAL_TOOACURRENCY_OFFSET UNITYSDK_OFFSET(0x15BF1900)
-#define SYSTEM_DECIMAL_TOSBYTE_OFFSET UNITYSDK_OFFSET(0x15BCC7B0)
-#define SYSTEM_DECIMAL_TOSINGLE_OFFSET UNITYSDK_OFFSET(0x15BF4210)
-#define SYSTEM_DECIMAL_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x20066B0)
-#define SYSTEM_DECIMAL_TOSTRING_2_OFFSET UNITYSDK_OFFSET(0x20066F0)
-#define SYSTEM_DECIMAL_TOSTRING_3_OFFSET UNITYSDK_OFFSET(0x2006730)
-#define SYSTEM_DECIMAL_TOSTRING_OFFSET UNITYSDK_OFFSET(0x2006670)
-#define SYSTEM_DECIMAL_TOUINT16_OFFSET UNITYSDK_OFFSET(0x15BCEA50)
-#define SYSTEM_DECIMAL_TOUINT32_OFFSET UNITYSDK_OFFSET(0x15BCFB30)
-#define SYSTEM_DECIMAL_TOUINT64_OFFSET UNITYSDK_OFFSET(0x15BD0EC0)
-#define SYSTEM_DECIMAL_TRUNCATE_OFFSET UNITYSDK_OFFSET(0x15BF38E0)
-#define SYSTEM_DECIMAL_TRYPARSE_1_OFFSET UNITYSDK_OFFSET(0x15BF2880)
-#define SYSTEM_DECIMAL_TRYPARSE_OFFSET UNITYSDK_OFFSET(0x15BF2850)
-#define SYSTEM_DECIMAL__CCTOR_OFFSET UNITYSDK_OFFSET(0x15BF4DA0)
-#define SYSTEM_DECIMAL__CTOR_1_OFFSET UNITYSDK_OFFSET(0x2006330)
-#define SYSTEM_DECIMAL__CTOR_2_OFFSET UNITYSDK_OFFSET(0x2006350)
-#define SYSTEM_DECIMAL__CTOR_3_OFFSET UNITYSDK_OFFSET(0x152D930)
-#define SYSTEM_DECIMAL__CTOR_4_OFFSET UNITYSDK_OFFSET(0x2006380)
-#define SYSTEM_DECIMAL__CTOR_5_OFFSET UNITYSDK_OFFSET(0x2006390)
-#define SYSTEM_DECIMAL__CTOR_6_OFFSET UNITYSDK_OFFSET(0x20063A0)
-#define SYSTEM_DECIMAL__CTOR_7_OFFSET UNITYSDK_OFFSET(0x20063C0)
-#define SYSTEM_DECIMAL__CTOR_8_OFFSET UNITYSDK_OFFSET(0x2006460)
-#define SYSTEM_DECIMAL__CTOR_OFFSET UNITYSDK_OFFSET(0x20062F0)
+#define SYSTEM_DECIMAL_ABS_OFFSET UNITYSDK_OFFSET(0x192B1C80)
+#define SYSTEM_DECIMAL_ADD_OFFSET UNITYSDK_OFFSET(0x192B1D30)
+#define SYSTEM_DECIMAL_COMPARETO_1_OFFSET UNITYSDK_OFFSET(0x87CB80)
+#define SYSTEM_DECIMAL_COMPARETO_OFFSET UNITYSDK_OFFSET(0x87CB70)
+#define SYSTEM_DECIMAL_COMPARE_OFFSET UNITYSDK_OFFSET(0x192B1D90)
+#define SYSTEM_DECIMAL_DIVIDE_OFFSET UNITYSDK_OFFSET(0x192B1ED0)
+#define SYSTEM_DECIMAL_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x87CC20)
+#define SYSTEM_DECIMAL_EQUALS_OFFSET UNITYSDK_OFFSET(0x87CBC0)
+#define SYSTEM_DECIMAL_FCALLADDSUB_OFFSET UNITYSDK_OFFSET(0x192B1D80)
+#define SYSTEM_DECIMAL_FCALLCOMPARE_OFFSET UNITYSDK_OFFSET(0x192B1DD0)
+#define SYSTEM_DECIMAL_FCALLDIVIDE_OFFSET UNITYSDK_OFFSET(0x192B1F20)
+#define SYSTEM_DECIMAL_FCALLMULTIPLY_OFFSET UNITYSDK_OFFSET(0x192B3450)
+#define SYSTEM_DECIMAL_FCALLROUND_OFFSET UNITYSDK_OFFSET(0x192B3560)
+#define SYSTEM_DECIMAL_FCALLTOINT32_OFFSET UNITYSDK_OFFSET(0x192B3EF0)
+#define SYSTEM_DECIMAL_FCALLTRUNCATE_OFFSET UNITYSDK_OFFSET(0x192B3F10)
+#define SYSTEM_DECIMAL_GETBITS_OFFSET UNITYSDK_OFFSET(0x192B1A30)
+#define SYSTEM_DECIMAL_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x87CC70)
+#define SYSTEM_DECIMAL_GETTYPECODE_OFFSET UNITYSDK_OFFSET(0x87CE10)
+#define SYSTEM_DECIMAL_INTERNALADDUINT32RAWUNCHECKED_OFFSET UNITYSDK_OFFSET(0x192B25D0)
+#define SYSTEM_DECIMAL_INTERNALDIVREMUINT32_OFFSET UNITYSDK_OFFSET(0x192B25F0)
+#define SYSTEM_DECIMAL_INTERNALROUNDFROMZERO_OFFSET UNITYSDK_OFFSET(0x192B2680)
+#define SYSTEM_DECIMAL_MAX_OFFSET UNITYSDK_OFFSET(0x192B2820)
+#define SYSTEM_DECIMAL_MIN_OFFSET UNITYSDK_OFFSET(0x192B2870)
+#define SYSTEM_DECIMAL_MULTIPLY_OFFSET UNITYSDK_OFFSET(0x192B3400)
+#define SYSTEM_DECIMAL_NEGATE_OFFSET UNITYSDK_OFFSET(0x192B3460)
+#define SYSTEM_DECIMAL_ONSERIALIZING_OFFSET UNITYSDK_OFFSET(0x87CAB0)
+#define SYSTEM_DECIMAL_OP_ADDITION_OFFSET UNITYSDK_OFFSET(0x192B33B0)
+#define SYSTEM_DECIMAL_OP_DIVISION_OFFSET UNITYSDK_OFFSET(0x192B3140)
+#define SYSTEM_DECIMAL_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x192B3100)
+#define SYSTEM_DECIMAL_OP_EXPLICIT_1_OFFSET UNITYSDK_OFFSET(0x192B4750)
+#define SYSTEM_DECIMAL_OP_EXPLICIT_2_OFFSET UNITYSDK_OFFSET(0x192B4770)
+#define SYSTEM_DECIMAL_OP_EXPLICIT_3_OFFSET UNITYSDK_OFFSET(0x192B47B0)
+#define SYSTEM_DECIMAL_OP_EXPLICIT_4_OFFSET UNITYSDK_OFFSET(0x192B47F0)
+#define SYSTEM_DECIMAL_OP_EXPLICIT_5_OFFSET UNITYSDK_OFFSET(0x192B4830)
+#define SYSTEM_DECIMAL_OP_EXPLICIT_6_OFFSET UNITYSDK_OFFSET(0x192B4870)
+#define SYSTEM_DECIMAL_OP_EXPLICIT_7_OFFSET UNITYSDK_OFFSET(0x192B4920)
+#define SYSTEM_DECIMAL_OP_EXPLICIT_OFFSET UNITYSDK_OFFSET(0x192B4730)
+#define SYSTEM_DECIMAL_OP_GREATERTHANOREQUAL_OFFSET UNITYSDK_OFFSET(0x192B4C10)
+#define SYSTEM_DECIMAL_OP_GREATERTHAN_OFFSET UNITYSDK_OFFSET(0x192B4BD0)
+#define SYSTEM_DECIMAL_OP_IMPLICIT_1_OFFSET UNITYSDK_OFFSET(0x192B45D0)
+#define SYSTEM_DECIMAL_OP_IMPLICIT_2_OFFSET UNITYSDK_OFFSET(0x192B4610)
+#define SYSTEM_DECIMAL_OP_IMPLICIT_3_OFFSET UNITYSDK_OFFSET(0x192B4650)
+#define SYSTEM_DECIMAL_OP_IMPLICIT_4_OFFSET UNITYSDK_OFFSET(0x192B4670)
+#define SYSTEM_DECIMAL_OP_IMPLICIT_5_OFFSET UNITYSDK_OFFSET(0x192B4690)
+#define SYSTEM_DECIMAL_OP_IMPLICIT_6_OFFSET UNITYSDK_OFFSET(0x192B46D0)
+#define SYSTEM_DECIMAL_OP_IMPLICIT_7_OFFSET UNITYSDK_OFFSET(0x192B46F0)
+#define SYSTEM_DECIMAL_OP_IMPLICIT_8_OFFSET UNITYSDK_OFFSET(0x192B4720)
+#define SYSTEM_DECIMAL_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x192B45B0)
+#define SYSTEM_DECIMAL_OP_INCREMENT_OFFSET UNITYSDK_OFFSET(0x192B4A90)
+#define SYSTEM_DECIMAL_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x192B4B90)
+#define SYSTEM_DECIMAL_OP_LESSTHANOREQUAL_OFFSET UNITYSDK_OFFSET(0x192B3370)
+#define SYSTEM_DECIMAL_OP_LESSTHAN_OFFSET UNITYSDK_OFFSET(0x192B3070)
+#define SYSTEM_DECIMAL_OP_MODULUS_OFFSET UNITYSDK_OFFSET(0x192B4B20)
+#define SYSTEM_DECIMAL_OP_MULTIPLY_OFFSET UNITYSDK_OFFSET(0x192B3320)
+#define SYSTEM_DECIMAL_OP_SUBTRACTION_OFFSET UNITYSDK_OFFSET(0x192B30B0)
+#define SYSTEM_DECIMAL_OP_UNARYNEGATION_OFFSET UNITYSDK_OFFSET(0x192B49D0)
+#define SYSTEM_DECIMAL_PARSE_1_OFFSET UNITYSDK_OFFSET(0x192B21B0)
+#define SYSTEM_DECIMAL_PARSE_2_OFFSET UNITYSDK_OFFSET(0x192B21F0)
+#define SYSTEM_DECIMAL_PARSE_OFFSET UNITYSDK_OFFSET(0x192B2160)
+#define SYSTEM_DECIMAL_REMAINDER_OFFSET UNITYSDK_OFFSET(0x192B28C0)
+#define SYSTEM_DECIMAL_ROUND_1_OFFSET UNITYSDK_OFFSET(0x192B3570)
+#define SYSTEM_DECIMAL_ROUND_OFFSET UNITYSDK_OFFSET(0x192B3510)
+#define SYSTEM_DECIMAL_SETBITS_OFFSET UNITYSDK_OFFSET(0x87CA20)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOBOOLEAN_OFFSET UNITYSDK_OFFSET(0x87CE20)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOBYTE_OFFSET UNITYSDK_OFFSET(0x87CF40)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOCHAR_OFFSET UNITYSDK_OFFSET(0x87CEB0)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TODATETIME_OFFSET UNITYSDK_OFFSET(0x87D3F0)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TODECIMAL_OFFSET UNITYSDK_OFFSET(0x2CA610)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TODOUBLE_OFFSET UNITYSDK_OFFSET(0x87D340)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOINT16_OFFSET UNITYSDK_OFFSET(0x87CFC0)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOINT32_OFFSET UNITYSDK_OFFSET(0x87D0C0)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOINT64_OFFSET UNITYSDK_OFFSET(0x87D180)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOSBYTE_OFFSET UNITYSDK_OFFSET(0x87CEC0)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOSINGLE_OFFSET UNITYSDK_OFFSET(0x87D280)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOTYPE_OFFSET UNITYSDK_OFFSET(0x87D400)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOUINT16_OFFSET UNITYSDK_OFFSET(0x87D040)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOUINT32_OFFSET UNITYSDK_OFFSET(0x87D100)
+#define SYSTEM_DECIMAL_SYSTEM_ICONVERTIBLE_TOUINT64_OFFSET UNITYSDK_OFFSET(0x87D200)
+#define SYSTEM_DECIMAL_SYSTEM_RUNTIME_SERIALIZATION_IDESERIALIZATIONCALLBACK_ONDESERIALIZATION_OFFSET UNITYSDK_OFFSET(0x87CAC0)
+#define SYSTEM_DECIMAL_TOBYTE_OFFSET UNITYSDK_OFFSET(0x192B36F0)
+#define SYSTEM_DECIMAL_TODECIMAL_OFFSET UNITYSDK_OFFSET(0x192B22B0)
+#define SYSTEM_DECIMAL_TODOUBLE_OFFSET UNITYSDK_OFFSET(0x192B3E80)
+#define SYSTEM_DECIMAL_TOINT16_OFFSET UNITYSDK_OFFSET(0x192B3D40)
+#define SYSTEM_DECIMAL_TOINT32_OFFSET UNITYSDK_OFFSET(0x192B3B50)
+#define SYSTEM_DECIMAL_TOINT64_OFFSET UNITYSDK_OFFSET(0x192B4030)
+#define SYSTEM_DECIMAL_TOSBYTE_OFFSET UNITYSDK_OFFSET(0x192B3A10)
+#define SYSTEM_DECIMAL_TOSINGLE_OFFSET UNITYSDK_OFFSET(0x192B4530)
+#define SYSTEM_DECIMAL_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x87CD50)
+#define SYSTEM_DECIMAL_TOSTRING_2_OFFSET UNITYSDK_OFFSET(0x87CD90)
+#define SYSTEM_DECIMAL_TOSTRING_3_OFFSET UNITYSDK_OFFSET(0x87CDD0)
+#define SYSTEM_DECIMAL_TOSTRING_OFFSET UNITYSDK_OFFSET(0x87CD10)
+#define SYSTEM_DECIMAL_TOUINT16_OFFSET UNITYSDK_OFFSET(0x192B4210)
+#define SYSTEM_DECIMAL_TOUINT32_OFFSET UNITYSDK_OFFSET(0x192B3830)
+#define SYSTEM_DECIMAL_TOUINT64_OFFSET UNITYSDK_OFFSET(0x192B4350)
+#define SYSTEM_DECIMAL_TRUNCATE_OFFSET UNITYSDK_OFFSET(0x192B3190)
+#define SYSTEM_DECIMAL_TRYPARSE_1_OFFSET UNITYSDK_OFFSET(0x192B2270)
+#define SYSTEM_DECIMAL_TRYPARSE_OFFSET UNITYSDK_OFFSET(0x192B2240)
+#define SYSTEM_DECIMAL__CCTOR_OFFSET UNITYSDK_OFFSET(0x192B5400)
+#define SYSTEM_DECIMAL__CTOR_1_OFFSET UNITYSDK_OFFSET(0x87C990)
+#define SYSTEM_DECIMAL__CTOR_2_OFFSET UNITYSDK_OFFSET(0x87C9B0)
+#define SYSTEM_DECIMAL__CTOR_3_OFFSET UNITYSDK_OFFSET(0x87C9E0)
+#define SYSTEM_DECIMAL__CTOR_4_OFFSET UNITYSDK_OFFSET(0x87C9F0)
+#define SYSTEM_DECIMAL__CTOR_5_OFFSET UNITYSDK_OFFSET(0x87CA00)
+#define SYSTEM_DECIMAL__CTOR_6_OFFSET UNITYSDK_OFFSET(0x87CA10)
+#define SYSTEM_DECIMAL__CTOR_7_OFFSET UNITYSDK_OFFSET(0x87CA30)
+#define SYSTEM_DECIMAL__CTOR_8_OFFSET UNITYSDK_OFFSET(0x87CAD0)
+#define SYSTEM_DECIMAL__CTOR_OFFSET UNITYSDK_OFFSET(0x87C950)
 
 namespace System
 {
-	inline static constexpr unsigned int Decimal_TypeDefinitionIndex = 229;
+	inline static constexpr unsigned int Decimal_TypeDefinitionIndex = 215;
 
 	struct alignas(4) Decimal
 	{
 		static ::Il2CppArray<::System::UInt32>** StaticGet_Powers10()
 		{
-			return (::Il2CppArray<::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x620);
-		}
-		static ::System::Decimal* StaticGet_NearPositiveZero()
-		{
-			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x390);
-		}
-		static ::System::Decimal* StaticGet_NearNegativeZero()
-		{
-			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x3A0);
-		}
-		static ::System::Decimal* StaticGet_One()
-		{
-			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x3B0);
-		}
-		static ::System::Decimal* StaticGet_MinValue()
-		{
-			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x3C0);
-		}
-		static ::System::Decimal* StaticGet_MinusOne()
-		{
-			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x3D0);
-		}
-		static ::System::Decimal* StaticGet_Zero()
-		{
-			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x3E0);
+			return (::Il2CppArray<::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0xC60);
 		}
 		static ::System::Decimal* StaticGet_MaxValue()
 		{
-			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x3F0);
+			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x2D0);
+		}
+		static ::System::Decimal* StaticGet_One()
+		{
+			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x2E0);
+		}
+		static ::System::Decimal* StaticGet_MinusOne()
+		{
+			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x2F0);
+		}
+		static ::System::Decimal* StaticGet_NearNegativeZero()
+		{
+			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x300);
+		}
+		static ::System::Decimal* StaticGet_Zero()
+		{
+			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x310);
+		}
+		static ::System::Decimal* StaticGet_MinValue()
+		{
+			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x320);
+		}
+		static ::System::Decimal* StaticGet_NearPositiveZero()
+		{
+			return (::System::Decimal*)Il2CppClass::FromTypeDefinitionIndex(Decimal_TypeDefinitionIndex)->GetStaticField(0x330);
 		}
 		// static const ::System::Int32 SignMask = 0x80000000; // 0x0
 		// static const ::System::Byte DECIMAL_NEG = 0x80; // 0x0
@@ -235,16 +217,6 @@ namespace System
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL__CCTOR_OFFSET))();
 		}
 
-		static ::System::Int64 ToOACurrency(::System::Decimal value)
-		{
-			return ((::System::Int64(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_TOOACURRENCY_OFFSET))(value);
-		}
-
-		static ::System::Decimal FromOACurrency(::System::Int64 cy)
-		{
-			return ((::System::Decimal(*)(::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_FROMOACURRENCY_OFFSET))(cy);
-		}
-
 		::System::Void SetBits(::Il2CppArray<::System::Int32>* bits)
 		{
 			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_SETBITS_OFFSET))(this, bits);
@@ -275,11 +247,6 @@ namespace System
 		static ::System::Void FCallAddSub(::System::Decimal& d1, ::System::Decimal& d2, ::System::Byte bSign)
 		{
 			return ((::System::Void(*)(::System::Decimal&, ::System::Decimal&, ::System::Byte))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_FCALLADDSUB_OFFSET))(d1, d2, bSign);
-		}
-
-		static ::System::Decimal Ceiling(::System::Decimal d)
-		{
-			return ((::System::Decimal(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_CEILING_OFFSET))(d);
 		}
 
 		static ::System::Int32 Compare(::System::Decimal d1, ::System::Decimal d2)
@@ -327,21 +294,6 @@ namespace System
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_GETHASHCODE_OFFSET))(this);
 		}
 
-		static ::System::Boolean Equals_2(::System::Decimal d1, ::System::Decimal d2)
-		{
-			return ((::System::Boolean(*)(::System::Decimal, ::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_EQUALS_2_OFFSET))(d1, d2);
-		}
-
-		static ::System::Decimal Floor(::System::Decimal d)
-		{
-			return ((::System::Decimal(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_FLOOR_OFFSET))(d);
-		}
-
-		static ::System::Void FCallFloor(::System::Decimal& d)
-		{
-			return ((::System::Void(*)(::System::Decimal&))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_FCALLFLOOR_OFFSET))(d);
-		}
-
 		::System::String* ToString()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_TOSTRING_OFFSET))(this);
@@ -362,24 +314,19 @@ namespace System
 			return ((::System::String*(*)(::PVOID, ::System::String*, ::System::IFormatProvider*))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_TOSTRING_3_OFFSET))(this, format, provider);
 		}
 
-		static ::System::Decimal Parse(::System::String* s)
+		static ::System::Decimal Parse(::System::String* s, ::System::Globalization::NumberStyles style)
 		{
-			return ((::System::Decimal(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_PARSE_OFFSET))(s);
+			return ((::System::Decimal(*)(::System::String*, ::System::Globalization::NumberStyles))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_PARSE_OFFSET))(s, style);
 		}
 
-		static ::System::Decimal Parse_1(::System::String* s, ::System::Globalization::NumberStyles style)
+		static ::System::Decimal Parse_1(::System::String* s, ::System::IFormatProvider* provider)
 		{
-			return ((::System::Decimal(*)(::System::String*, ::System::Globalization::NumberStyles))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_PARSE_1_OFFSET))(s, style);
+			return ((::System::Decimal(*)(::System::String*, ::System::IFormatProvider*))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_PARSE_1_OFFSET))(s, provider);
 		}
 
-		static ::System::Decimal Parse_2(::System::String* s, ::System::IFormatProvider* provider)
+		static ::System::Decimal Parse_2(::System::String* s, ::System::Globalization::NumberStyles style, ::System::IFormatProvider* provider)
 		{
-			return ((::System::Decimal(*)(::System::String*, ::System::IFormatProvider*))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_PARSE_2_OFFSET))(s, provider);
-		}
-
-		static ::System::Decimal Parse_3(::System::String* s, ::System::Globalization::NumberStyles style, ::System::IFormatProvider* provider)
-		{
-			return ((::System::Decimal(*)(::System::String*, ::System::Globalization::NumberStyles, ::System::IFormatProvider*))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_PARSE_3_OFFSET))(s, style, provider);
+			return ((::System::Decimal(*)(::System::String*, ::System::Globalization::NumberStyles, ::System::IFormatProvider*))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_PARSE_2_OFFSET))(s, style, provider);
 		}
 
 		static ::System::Boolean TryParse(::System::String* s, ::System::Decimal& result)
@@ -395,11 +342,6 @@ namespace System
 		static ::Il2CppArray<::System::Int32>* GetBits(::System::Decimal d)
 		{
 			return ((::Il2CppArray<::System::Int32>*(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_GETBITS_OFFSET))(d);
-		}
-
-		static ::System::Void GetBytes(::System::Decimal d, ::Il2CppArray<::System::Byte>* buffer)
-		{
-			return ((::System::Void(*)(::System::Decimal, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_GETBYTES_OFFSET))(d, buffer);
 		}
 
 		static ::System::Decimal ToDecimal(::Il2CppArray<::System::Byte>* buffer)
@@ -452,34 +394,19 @@ namespace System
 			return ((::System::Decimal(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_NEGATE_OFFSET))(d);
 		}
 
-		static ::System::Decimal Round(::System::Decimal d)
+		static ::System::Decimal Round(::System::Decimal d, ::System::Int32 decimals)
 		{
-			return ((::System::Decimal(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_ROUND_OFFSET))(d);
+			return ((::System::Decimal(*)(::System::Decimal, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_ROUND_OFFSET))(d, decimals);
 		}
 
-		static ::System::Decimal Round_1(::System::Decimal d, ::System::Int32 decimals)
+		static ::System::Decimal Round_1(::System::Decimal d, ::System::Int32 decimals, ::System::MidpointRounding mode)
 		{
-			return ((::System::Decimal(*)(::System::Decimal, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_ROUND_1_OFFSET))(d, decimals);
-		}
-
-		static ::System::Decimal Round_2(::System::Decimal d, ::System::MidpointRounding mode)
-		{
-			return ((::System::Decimal(*)(::System::Decimal, ::System::MidpointRounding))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_ROUND_2_OFFSET))(d, mode);
-		}
-
-		static ::System::Decimal Round_3(::System::Decimal d, ::System::Int32 decimals, ::System::MidpointRounding mode)
-		{
-			return ((::System::Decimal(*)(::System::Decimal, ::System::Int32, ::System::MidpointRounding))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_ROUND_3_OFFSET))(d, decimals, mode);
+			return ((::System::Decimal(*)(::System::Decimal, ::System::Int32, ::System::MidpointRounding))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_ROUND_1_OFFSET))(d, decimals, mode);
 		}
 
 		static ::System::Void FCallRound(::System::Decimal& d, ::System::Int32 decimals)
 		{
 			return ((::System::Void(*)(::System::Decimal&, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_FCALLROUND_OFFSET))(d, decimals);
-		}
-
-		static ::System::Decimal Subtract(::System::Decimal d1, ::System::Decimal d2)
-		{
-			return ((::System::Decimal(*)(::System::Decimal, ::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_SUBTRACT_OFFSET))(d1, d2);
 		}
 
 		static ::System::Byte ToByte(::System::Decimal value)
@@ -602,64 +529,34 @@ namespace System
 			return ((::System::Decimal(*)(::System::Double))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_1_OFFSET))(value);
 		}
 
-		static ::System::Byte op_Explicit_2(::System::Decimal value)
+		static ::System::Int32 op_Explicit_2(::System::Decimal value)
 		{
-			return ((::System::Byte(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_2_OFFSET))(value);
+			return ((::System::Int32(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_2_OFFSET))(value);
 		}
 
-		static ::System::SByte op_Explicit_3(::System::Decimal value)
+		static ::System::UInt32 op_Explicit_3(::System::Decimal value)
 		{
-			return ((::System::SByte(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_3_OFFSET))(value);
+			return ((::System::UInt32(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_3_OFFSET))(value);
 		}
 
-		static ::System::Char op_Explicit_4(::System::Decimal value)
+		static ::System::Int64 op_Explicit_4(::System::Decimal value)
 		{
-			return ((::System::Char(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_4_OFFSET))(value);
+			return ((::System::Int64(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_4_OFFSET))(value);
 		}
 
-		static ::System::Int16 op_Explicit_5(::System::Decimal value)
+		static ::System::UInt64 op_Explicit_5(::System::Decimal value)
 		{
-			return ((::System::Int16(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_5_OFFSET))(value);
+			return ((::System::UInt64(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_5_OFFSET))(value);
 		}
 
-		static ::System::UInt16 op_Explicit_6(::System::Decimal value)
+		static ::System::Single op_Explicit_6(::System::Decimal value)
 		{
-			return ((::System::UInt16(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_6_OFFSET))(value);
+			return ((::System::Single(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_6_OFFSET))(value);
 		}
 
-		static ::System::Int32 op_Explicit_7(::System::Decimal value)
+		static ::System::Double op_Explicit_7(::System::Decimal value)
 		{
-			return ((::System::Int32(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_7_OFFSET))(value);
-		}
-
-		static ::System::UInt32 op_Explicit_8(::System::Decimal value)
-		{
-			return ((::System::UInt32(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_8_OFFSET))(value);
-		}
-
-		static ::System::Int64 op_Explicit_9(::System::Decimal value)
-		{
-			return ((::System::Int64(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_9_OFFSET))(value);
-		}
-
-		static ::System::UInt64 op_Explicit_10(::System::Decimal value)
-		{
-			return ((::System::UInt64(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_10_OFFSET))(value);
-		}
-
-		static ::System::Single op_Explicit_11(::System::Decimal value)
-		{
-			return ((::System::Single(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_11_OFFSET))(value);
-		}
-
-		static ::System::Double op_Explicit_12(::System::Decimal value)
-		{
-			return ((::System::Double(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_12_OFFSET))(value);
-		}
-
-		static ::System::Decimal op_UnaryPlus(::System::Decimal d)
-		{
-			return ((::System::Decimal(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_UNARYPLUS_OFFSET))(d);
+			return ((::System::Double(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_EXPLICIT_7_OFFSET))(value);
 		}
 
 		static ::System::Decimal op_UnaryNegation(::System::Decimal d)
@@ -670,11 +567,6 @@ namespace System
 		static ::System::Decimal op_Increment(::System::Decimal d)
 		{
 			return ((::System::Decimal(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_INCREMENT_OFFSET))(d);
-		}
-
-		static ::System::Decimal op_Decrement(::System::Decimal d)
-		{
-			return ((::System::Decimal(*)(::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_DECIMAL_OP_DECREMENT_OFFSET))(d);
 		}
 
 		static ::System::Decimal op_Addition(::System::Decimal d1, ::System::Decimal d2)

@@ -3,17 +3,19 @@
 #include "unitysdk/System/Exception.h"
 #include "unitysdk/System/Runtime/Serialization/StreamingContext.h"
 
+namespace Newtonsoft::Json { class IJsonLineInfo; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define NEWTONSOFT_JSON_JSONEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15D8D570)
-#define NEWTONSOFT_JSON_JSONEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15D8D5D0)
-#define NEWTONSOFT_JSON_JSONEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15D8D640)
-#define NEWTONSOFT_JSON_JSONEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15D8D510)
+#define NEWTONSOFT_JSON_JSONEXCEPTION_CREATE_OFFSET UNITYSDK_OFFSET(0x1A0A8830)
+#define NEWTONSOFT_JSON_JSONEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A0A8710)
+#define NEWTONSOFT_JSON_JSONEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1A0A8770)
+#define NEWTONSOFT_JSON_JSONEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1A0A87E0)
+#define NEWTONSOFT_JSON_JSONEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A0A86B0)
 
 namespace Newtonsoft::Json
 {
-	inline static constexpr unsigned int JsonException_TypeDefinitionIndex = 8061;
+	inline static constexpr unsigned int JsonException_TypeDefinitionIndex = 6861;
 
 	class JsonException : public ::System::Exception
 	{
@@ -36,6 +38,11 @@ namespace Newtonsoft::Json
 		::System::Void _ctor_3(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONEXCEPTION__CTOR_3_OFFSET))(this, info, context);
+		}
+
+		static ::Newtonsoft::Json::JsonException* Create(::Newtonsoft::Json::IJsonLineInfo* lineInfo, ::System::String* path, ::System::String* message)
+		{
+			return ((::Newtonsoft::Json::JsonException*(*)(::Newtonsoft::Json::IJsonLineInfo*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONEXCEPTION_CREATE_OFFSET))(lineInfo, path, message);
 		}
 	};
 }

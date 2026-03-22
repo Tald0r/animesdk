@@ -1,0 +1,28 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+namespace System { class Type; }
+
+#define MOLEMOLE_UIURBANMAPPAGECONTEXT_SDEFAULTFOCUSINFO_EQUALS_OFFSET UNITYSDK_OFFSET(0x361530)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIUrbanMapPageContext_SDefaultFocusInfo_TypeDefinitionIndex = 40011;
+
+	struct alignas(8) UIUrbanMapPageContext_SDefaultFocusInfo
+	{
+		::System::Type* ContextType; // 0x10
+		::System::UInt64 Id; // 0x18
+		::System::Boolean SingleUse; // 0x20
+		::System::Boolean ShowPanel; // 0x21
+		::System::Boolean ShowFogAnim; // 0x22
+		::System::Boolean EnableRadiusOverride; // 0x23
+		::System::Single OverrideRadiusRate; // 0x24
+
+		::System::Boolean Equals(::MoleMole::UIUrbanMapPageContext_SDefaultFocusInfo other)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::UIUrbanMapPageContext_SDefaultFocusInfo))((::PBYTE)hIl2Cpp + MOLEMOLE_UIURBANMAPPAGECONTEXT_SDEFAULTFOCUSINFO_EQUALS_OFFSET))(this, other);
+		}
+	};
+}

@@ -3,7 +3,7 @@
 
 namespace TMPro
 {
-	inline static constexpr unsigned int VertexSortingOrder_TypeDefinitionIndex = 33366;
+	inline static constexpr unsigned int VertexSortingOrder_TypeDefinitionIndex = 35987;
 
 	enum class VertexSortingOrder : ::System::Int32
 	{

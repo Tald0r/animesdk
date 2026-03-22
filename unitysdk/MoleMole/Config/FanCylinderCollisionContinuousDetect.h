@@ -1,0 +1,85 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Config/ContinueAttackDetect.h"
+
+namespace System { class String; }
+namespace System { class Type; }
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
+
+#define MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_APPLYVALUESTOCOLLIDERCFG_OFFSET UNITYSDK_OFFSET(0xCCA48E0)
+#define MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_ATTACHPATTERNMETHODWITHGROUPID_OFFSET UNITYSDK_OFFSET(0xCCA4790)
+#define MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_ATTACHPATTERNMETHOD_OFFSET UNITYSDK_OFFSET(0xCCA46B0)
+#define MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_COLLIDERCFGFILTERGETTER_OFFSET UNITYSDK_OFFSET(0xCCA4AF0)
+#define MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0xCCA4870)
+#define MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_ONBEFORESERIALIZE_OFFSET UNITYSDK_OFFSET(0xCCA4A00)
+#define MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_TOSTRING_OFFSET UNITYSDK_OFFSET(0xCCA4A60)
+#define MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT__CTOR_OFFSET UNITYSDK_OFFSET(0xCCA4630)
+#define MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT___BASE_ATTACHPATTERNMETHOD_OFFSET UNITYSDK_OFFSET(0xCCA4C00)
+#define MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0xCCA4C60)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int FanCylinderCollisionContinuousDetect_TypeDefinitionIndex = 42077;
+
+	class FanCylinderCollisionContinuousDetect : public ::MoleMole::Config::ContinueAttackDetect
+	{
+	public:
+		::System::Single radius; // 0xC0
+		::System::Single height; // 0xC4
+		::System::Single invalidRadius; // 0xC8
+		::System::Single invalidAngle; // 0xCC
+		::System::Int32 angle; // 0xD0
+		::System::Int32 numberOfRays; // 0xD4
+		::System::Int32 vertexNum; // 0xD8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT__CTOR_OFFSET))(this);
+		}
+
+		::System::Void AttachPatternMethod()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_ATTACHPATTERNMETHOD_OFFSET))(this);
+		}
+
+		::System::Void AttachPatternMethodWithGroupId()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_ATTACHPATTERNMETHODWITHGROUPID_OFFSET))(this);
+		}
+
+		::System::Void OnAfterDeserialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_ONAFTERDESERIALIZE_OFFSET))(this);
+		}
+
+		::System::Void ApplyValuesToColliderCfg()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_APPLYVALUESTOCOLLIDERCFG_OFFSET))(this);
+		}
+
+		::System::Void OnBeforeSerialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_ONBEFORESERIALIZE_OFFSET))(this);
+		}
+
+		::System::String* ToString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_TOSTRING_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IEnumerable_1<::System::Type*>* ColliderCfgFilterGetter()
+		{
+			return ((::System::Collections::Generic::IEnumerable_1<::System::Type*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT_COLLIDERCFGFILTERGETTER_OFFSET))(this);
+		}
+
+		::System::Void __base_AttachPatternMethod()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT___BASE_ATTACHPATTERNMETHOD_OFFSET))(this);
+		}
+
+		::System::String* __base_ToString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_FANCYLINDERCOLLISIONCONTINUOUSDETECT___BASE_TOSTRING_OFFSET))(this);
+		}
+	};
+}

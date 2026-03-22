@@ -3,37 +3,64 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/Unity/Jobs/JobHandle.h"
 #include "unitysdk/Unity/Jobs/LowLevel/Unsafe/JobRanges.h"
+#include "unitysdk/Unity/Jobs/LowLevel/Unsafe/JobThreadDelegate.h"
+#include "unitysdk/Unity/Jobs/LowLevel/Unsafe/JobThreadDelegateHandleArray.h"
+#include "unitysdk/Unity/Jobs/LowLevel/Unsafe/JobThreadDelegatePriority.h"
 #include "unitysdk/Unity/Jobs/LowLevel/Unsafe/JobType.h"
 #include "unitysdk/Unity/Jobs/LowLevel/Unsafe/JobsUtility_JobScheduleParameters.h"
 
+namespace System { class Delegate; }
+namespace System { class String; }
 namespace System { class Type; }
 
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_CREATEJOBREFLECTIONDATA_1_OFFSET UNITYSDK_OFFSET(0x181D3180)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_CREATEJOBREFLECTIONDATA_OFFSET UNITYSDK_OFFSET(0x181D3170)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GETBGJOBQUEUEWORKERTHREADCOUNT_OFFSET UNITYSDK_OFFSET(0x181D31E0)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GETJOBQUEUEWORKERTHREADCOUNT_OFFSET UNITYSDK_OFFSET(0x181D31B0)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GETJOBRANGE_OFFSET UNITYSDK_OFFSET(0x181D3050)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GETWORKSTEALINGRANGE_OFFSET UNITYSDK_OFFSET(0x181D3070)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_BGJOBWORKERCOUNT_OFFSET UNITYSDK_OFFSET(0x181D3210)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_BGJOBWORKERMAXIMUMCOUNT_OFFSET UNITYSDK_OFFSET(0x181D3200)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_JOBWORKERCOUNT_OFFSET UNITYSDK_OFFSET(0x181D31D0)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_JOBWORKERMAXIMUMCOUNT_OFFSET UNITYSDK_OFFSET(0x181D31C0)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFORTRANSFORM_INJECTED_OFFSET UNITYSDK_OFFSET(0x181D3160)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFORTRANSFORM_OFFSET UNITYSDK_OFFSET(0x181D3120)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x181D3110)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFOR_OFFSET UNITYSDK_OFFSET(0x181D30D0)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULE_INJECTED_OFFSET UNITYSDK_OFFSET(0x181D30C0)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULE_OFFSET UNITYSDK_OFFSET(0x181D3080)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SETBGJOBQUEUEMAXIMUMACTIVETHREADCOUNT_OFFSET UNITYSDK_OFFSET(0x181D31F0)
-#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SET_BGJOBWORKERCOUNT_OFFSET UNITYSDK_OFFSET(0x181D3220)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_COMBINEJOBSWITHHANDLEINFO_OFFSET UNITYSDK_OFFSET(0x19E373D0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_COMBINEJOBSWITHJOBID_OFFSET UNITYSDK_OFFSET(0x19E373E0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_COMPLETE_OFFSET UNITYSDK_OFFSET(0x19E373F0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_CREATEJOBREFLECTIONDATA_1_OFFSET UNITYSDK_OFFSET(0x19E372D0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_CREATEJOBREFLECTIONDATA_2_OFFSET UNITYSDK_OFFSET(0x19E37300)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_CREATEJOBREFLECTIONDATA_OFFSET UNITYSDK_OFFSET(0x19E372C0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GETJOBQUEUEWORKERTHREADCOUNT_OFFSET UNITYSDK_OFFSET(0x19E37370)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GETJOBRANGE_OFFSET UNITYSDK_OFFSET(0x19E37130)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GETWORKSTEALINGRANGE_OFFSET UNITYSDK_OFFSET(0x19E37150)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_ISEXECUTINGJOB_OFFSET UNITYSDK_OFFSET(0x19E37320)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_JOBCOMPILERENABLED_OFFSET UNITYSDK_OFFSET(0x19E37350)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_JOBDEBUGGERENABLED_OFFSET UNITYSDK_OFFSET(0x19E37330)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_JOBWORKERCOUNT_OFFSET UNITYSDK_OFFSET(0x19E37440)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_JOBWORKERMAXIMUMCOUNT_OFFSET UNITYSDK_OFFSET(0x19E37420)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_ISCOMPLETED_OFFSET UNITYSDK_OFFSET(0x19E37400)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_PATCHBUFFERMINMAXRANGES_OFFSET UNITYSDK_OFFSET(0x19E372B0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_REGISTERFOREACHTHREADDELEGATE_OFFSET UNITYSDK_OFFSET(0x19E373A0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_REGISTERTHREADDELEGATES_OFFSET UNITYSDK_OFFSET(0x19E373B0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_REGISTERTHREADDELEGATE_OFFSET UNITYSDK_OFFSET(0x19E37390)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_REGISTERTHREADFUNCTIONPTR_OFFSET UNITYSDK_OFFSET(0x19E37380)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_RESETJOBWORKERCOUNT_OFFSET UNITYSDK_OFFSET(0x19E37430)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFORDEFERARRAYSIZE_INJECTED_OFFSET UNITYSDK_OFFSET(0x19E37250)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFORDEFERARRAYSIZE_OFFSET UNITYSDK_OFFSET(0x19E37200)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFORTRANSFORM_INJECTED_OFFSET UNITYSDK_OFFSET(0x19E372A0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFORTRANSFORM_OFFSET UNITYSDK_OFFSET(0x19E37260)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x19E371F0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFOR_OFFSET UNITYSDK_OFFSET(0x19E371B0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULE_INJECTED_OFFSET UNITYSDK_OFFSET(0x19E371A0)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULE_OFFSET UNITYSDK_OFFSET(0x19E37160)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SETJOBQUEUEMAXIMUMACTIVETHREADCOUNT_OFFSET UNITYSDK_OFFSET(0x19E37410)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SET_JOBCOMPILERENABLED_OFFSET UNITYSDK_OFFSET(0x19E37360)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SET_JOBDEBUGGERENABLED_OFFSET UNITYSDK_OFFSET(0x19E37340)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SET_JOBWORKERCOUNT_OFFSET UNITYSDK_OFFSET(0x19E37450)
+#define UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_UNREGISTERLOWPRIORITYFUNCPTRS_OFFSET UNITYSDK_OFFSET(0x19E373C0)
 
 namespace Unity::Jobs::LowLevel::Unsafe
 {
-	inline static constexpr unsigned int JobsUtility_TypeDefinitionIndex = 3769;
+	inline static constexpr unsigned int JobsUtility_TypeDefinitionIndex = 5075;
 
 	class JobsUtility : public ::System::Object
 	{
 	public:
+		// static const ::System::Int32 InValidScheduleJobID = 0x0; // 0x0
+		// static const ::System::Int32 InValidScheduleJobDataID = 0xFFFFFFFF; // 0x0
+		// static const ::System::String* DefaultJobProfile; // 0x0
+		// static const ::System::Int32 MaxJobThreadCount = 0x80; // 0x0
+		// static const ::System::Int32 CacheLineSize = 0x40; // 0x0
+
 		static ::System::Void GetJobRange(::Unity::Jobs::LowLevel::Unsafe::JobRanges& ranges, ::System::Int32 jobIndex, ::System::Int32& beginIndex, ::System::Int32& endIndex)
 		{
 			return ((::System::Void(*)(::Unity::Jobs::LowLevel::Unsafe::JobRanges&, ::System::Int32, ::System::Int32&, ::System::Int32&))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GETJOBRANGE_OFFSET))(ranges, jobIndex, beginIndex, endIndex);
@@ -54,9 +81,19 @@ namespace Unity::Jobs::LowLevel::Unsafe
 			return ((::Unity::Jobs::JobHandle(*)(::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters&, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFOR_OFFSET))(parameters, arrayLength, innerloopBatchCount);
 		}
 
+		static ::Unity::Jobs::JobHandle ScheduleParallelForDeferArraySize(::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters& parameters, ::System::Int32 innerloopBatchCount, ::System::Void* listData, ::System::Void* listDataAtomicSafetyHandle)
+		{
+			return ((::Unity::Jobs::JobHandle(*)(::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters&, ::System::Int32, ::System::Void*, ::System::Void*))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFORDEFERARRAYSIZE_OFFSET))(parameters, innerloopBatchCount, listData, listDataAtomicSafetyHandle);
+		}
+
 		static ::Unity::Jobs::JobHandle ScheduleParallelForTransform(::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters& parameters, ::System::IntPtr transfromAccesssArray)
 		{
 			return ((::Unity::Jobs::JobHandle(*)(::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters&, ::System::IntPtr))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFORTRANSFORM_OFFSET))(parameters, transfromAccesssArray);
+		}
+
+		static ::System::Void PatchBufferMinMaxRanges(::System::IntPtr bufferRangePatchData, ::System::Void* jobdata, ::System::Int32 startIndex, ::System::Int32 rangeSize)
+		{
+			return ((::System::Void(*)(::System::IntPtr, ::System::Void*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_PATCHBUFFERMINMAXRANGES_OFFSET))(bufferRangePatchData, jobdata, startIndex, rangeSize);
 		}
 
 		static ::System::IntPtr CreateJobReflectionData(::System::Type* wrapperJobType, ::System::Type* userJobType, ::Unity::Jobs::LowLevel::Unsafe::JobType jobType, ::System::Object* managedJobFunction0, ::System::Object* managedJobFunction1, ::System::Object* managedJobFunction2)
@@ -69,9 +106,89 @@ namespace Unity::Jobs::LowLevel::Unsafe
 			return ((::System::IntPtr(*)(::System::Type*, ::Unity::Jobs::LowLevel::Unsafe::JobType, ::System::Object*, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_CREATEJOBREFLECTIONDATA_1_OFFSET))(type, jobType, managedJobFunction0, managedJobFunction1, managedJobFunction2);
 		}
 
+		static ::System::IntPtr CreateJobReflectionData_2(::System::Type* wrapperJobType, ::System::Type* userJobType, ::Unity::Jobs::LowLevel::Unsafe::JobType jobType, ::System::Object* managedJobFunction0)
+		{
+			return ((::System::IntPtr(*)(::System::Type*, ::System::Type*, ::Unity::Jobs::LowLevel::Unsafe::JobType, ::System::Object*))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_CREATEJOBREFLECTIONDATA_2_OFFSET))(wrapperJobType, userJobType, jobType, managedJobFunction0);
+		}
+
+		static ::System::Boolean get_IsExecutingJob()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_ISEXECUTINGJOB_OFFSET))();
+		}
+
+		static ::System::Boolean get_JobDebuggerEnabled()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_JOBDEBUGGERENABLED_OFFSET))();
+		}
+
+		static ::System::Void set_JobDebuggerEnabled(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SET_JOBDEBUGGERENABLED_OFFSET))(value);
+		}
+
+		static ::System::Boolean get_JobCompilerEnabled()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_JOBCOMPILERENABLED_OFFSET))();
+		}
+
+		static ::System::Void set_JobCompilerEnabled(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SET_JOBCOMPILERENABLED_OFFSET))(value);
+		}
+
 		static ::System::Int32 GetJobQueueWorkerThreadCount()
 		{
 			return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GETJOBQUEUEWORKERTHREADCOUNT_OFFSET))();
+		}
+
+		static ::System::UInt64 RegisterThreadFunctionPtr(::System::IntPtr ptr, ::System::Int32 dataID, ::System::UInt64 depends, ::Unity::Jobs::LowLevel::Unsafe::JobThreadDelegatePriority jobPriority, ::System::String* profileName)
+		{
+			return ((::System::UInt64(*)(::System::IntPtr, ::System::Int32, ::System::UInt64, ::Unity::Jobs::LowLevel::Unsafe::JobThreadDelegatePriority, ::System::String*))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_REGISTERTHREADFUNCTIONPTR_OFFSET))(ptr, dataID, depends, jobPriority, profileName);
+		}
+
+		static ::System::UInt64 RegisterThreadDelegate(::System::Delegate* ptr, ::System::Int32 dataID, ::System::UInt64 depends, ::Unity::Jobs::LowLevel::Unsafe::JobThreadDelegatePriority jobPriority, ::System::String* profileName)
+		{
+			return ((::System::UInt64(*)(::System::Delegate*, ::System::Int32, ::System::UInt64, ::Unity::Jobs::LowLevel::Unsafe::JobThreadDelegatePriority, ::System::String*))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_REGISTERTHREADDELEGATE_OFFSET))(ptr, dataID, depends, jobPriority, profileName);
+		}
+
+		static ::System::UInt64 RegisterForeachThreadDelegate(::System::Delegate* ptr, ::System::Int32 dataID, ::System::UInt32 foreachCount, ::System::UInt32 jobCount, ::System::UInt64 depends, ::Unity::Jobs::LowLevel::Unsafe::JobThreadDelegatePriority jobPriority, ::System::String* profileName)
+		{
+			return ((::System::UInt64(*)(::System::Delegate*, ::System::Int32, ::System::UInt32, ::System::UInt32, ::System::UInt64, ::Unity::Jobs::LowLevel::Unsafe::JobThreadDelegatePriority, ::System::String*))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_REGISTERFOREACHTHREADDELEGATE_OFFSET))(ptr, dataID, foreachCount, jobCount, depends, jobPriority, profileName);
+		}
+
+		static ::System::UInt64 RegisterThreadDelegates(::Unity::Jobs::LowLevel::Unsafe::JobThreadDelegate& jobsData, ::System::String* profileName)
+		{
+			return ((::System::UInt64(*)(::Unity::Jobs::LowLevel::Unsafe::JobThreadDelegate&, ::System::String*))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_REGISTERTHREADDELEGATES_OFFSET))(jobsData, profileName);
+		}
+
+		static ::System::Void UnRegisterLowPriorityFuncPtrs()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_UNREGISTERLOWPRIORITYFUNCPTRS_OFFSET))();
+		}
+
+		static ::System::UInt64 CombineJobsWithHandleInfo(::Unity::Jobs::LowLevel::Unsafe::JobThreadDelegateHandleArray& jobs)
+		{
+			return ((::System::UInt64(*)(::Unity::Jobs::LowLevel::Unsafe::JobThreadDelegateHandleArray&))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_COMBINEJOBSWITHHANDLEINFO_OFFSET))(jobs);
+		}
+
+		static ::System::UInt64 CombineJobsWithJobId(::Il2CppArray<::System::UInt64>* jobHandles)
+		{
+			return ((::System::UInt64(*)(::Il2CppArray<::System::UInt64>*))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_COMBINEJOBSWITHJOBID_OFFSET))(jobHandles);
+		}
+
+		static ::System::Void Complete(::System::UInt64 jobID)
+		{
+			return ((::System::Void(*)(::System::UInt64))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_COMPLETE_OFFSET))(jobID);
+		}
+
+		static ::System::Boolean IsCompleted(::System::UInt64 jobID)
+		{
+			return ((::System::Boolean(*)(::System::UInt64))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_ISCOMPLETED_OFFSET))(jobID);
+		}
+
+		static ::System::Void SetJobQueueMaximumActiveThreadCount(::System::Int32 count)
+		{
+			return ((::System::Void(*)(::System::Int32))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SETJOBQUEUEMAXIMUMACTIVETHREADCOUNT_OFFSET))(count);
 		}
 
 		static ::System::Int32 get_JobWorkerMaximumCount()
@@ -79,34 +196,19 @@ namespace Unity::Jobs::LowLevel::Unsafe
 			return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_JOBWORKERMAXIMUMCOUNT_OFFSET))();
 		}
 
+		static ::System::Void ResetJobWorkerCount()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_RESETJOBWORKERCOUNT_OFFSET))();
+		}
+
 		static ::System::Int32 get_JobWorkerCount()
 		{
 			return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_JOBWORKERCOUNT_OFFSET))();
 		}
 
-		static ::System::Int32 GetBgJobQueueWorkerThreadCount()
+		static ::System::Void set_JobWorkerCount(::System::Int32 value)
 		{
-			return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GETBGJOBQUEUEWORKERTHREADCOUNT_OFFSET))();
-		}
-
-		static ::System::Void SetBgJobQueueMaximumActiveThreadCount(::System::Int32 count)
-		{
-			return ((::System::Void(*)(::System::Int32))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SETBGJOBQUEUEMAXIMUMACTIVETHREADCOUNT_OFFSET))(count);
-		}
-
-		static ::System::Int32 get_BgJobWorkerMaximumCount()
-		{
-			return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_BGJOBWORKERMAXIMUMCOUNT_OFFSET))();
-		}
-
-		static ::System::Int32 get_BgJobWorkerCount()
-		{
-			return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_GET_BGJOBWORKERCOUNT_OFFSET))();
-		}
-
-		static ::System::Void set_BgJobWorkerCount(::System::Int32 value)
-		{
-			return ((::System::Void(*)(::System::Int32))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SET_BGJOBWORKERCOUNT_OFFSET))(value);
+			return ((::System::Void(*)(::System::Int32))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SET_JOBWORKERCOUNT_OFFSET))(value);
 		}
 
 		static ::System::Void Schedule_Injected(::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters& parameters, ::Unity::Jobs::JobHandle& ret)
@@ -117,6 +219,11 @@ namespace Unity::Jobs::LowLevel::Unsafe
 		static ::System::Void ScheduleParallelFor_Injected(::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters& parameters, ::System::Int32 arrayLength, ::System::Int32 innerloopBatchCount, ::Unity::Jobs::JobHandle& ret)
 		{
 			return ((::System::Void(*)(::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters&, ::System::Int32, ::System::Int32, ::Unity::Jobs::JobHandle&))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFOR_INJECTED_OFFSET))(parameters, arrayLength, innerloopBatchCount, ret);
+		}
+
+		static ::System::Void ScheduleParallelForDeferArraySize_Injected(::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters& parameters, ::System::Int32 innerloopBatchCount, ::System::Void* listData, ::System::Void* listDataAtomicSafetyHandle, ::Unity::Jobs::JobHandle& ret)
+		{
+			return ((::System::Void(*)(::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters&, ::System::Int32, ::System::Void*, ::System::Void*, ::Unity::Jobs::JobHandle&))((::PBYTE)hIl2Cpp + UNITY_JOBS_LOWLEVEL_UNSAFE_JOBSUTILITY_SCHEDULEPARALLELFORDEFERARRAYSIZE_INJECTED_OFFSET))(parameters, innerloopBatchCount, listData, listDataAtomicSafetyHandle, ret);
 		}
 
 		static ::System::Void ScheduleParallelForTransform_Injected(::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters& parameters, ::System::IntPtr transfromAccesssArray, ::Unity::Jobs::JobHandle& ret)

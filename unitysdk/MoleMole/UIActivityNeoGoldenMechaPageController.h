@@ -1,0 +1,73 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIMainCityStorePageController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_D64917D1E9139335;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xBD825D0)
+#define MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xBD825E0)
+#define MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xBD82650)
+#define MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBD82750)
+#define MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xBD82900)
+#define MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBD829F0)
+#define MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xBD82A00)
+#define MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBD82A70)
+#define MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xBD82AE0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityNeoGoldenMechaPageController_TypeDefinitionIndex = 51432;
+
+	class UIActivityNeoGoldenMechaPageController : public ::MoleMole::UIMainCityStorePageController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Class_2_D64917D1E9139335* get__viewModel()
+		{
+			return ((::Class_2_D64917D1E9139335*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYNEOGOLDENMECHAPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

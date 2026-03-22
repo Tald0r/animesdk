@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Security/Cryptography/HashAlgorithm.h"
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_SHA256_CREATE_OFFSET UNITYSDK_OFFSET(0x15B27F60)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_SHA256__CTOR_OFFSET UNITYSDK_OFFSET(0x15B27F50)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_SHA256_CREATE_OFFSET UNITYSDK_OFFSET(0x18EED970)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_SHA256__CTOR_OFFSET UNITYSDK_OFFSET(0x18F0FC20)
 
 namespace System::Security::Cryptography
 {
-	inline static constexpr unsigned int SHA256_TypeDefinitionIndex = 1042;
+	inline static constexpr unsigned int SHA256_TypeDefinitionIndex = 1097;
 
 	class SHA256 : public ::System::Security::Cryptography::HashAlgorithm
 	{

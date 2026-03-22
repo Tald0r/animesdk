@@ -1,24 +1,31 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
+#include "unitysdk/Unity/Collections/NativeLeakDetectionMode.h"
 
-#define UNITY_COLLECTIONS_NATIVELEAKDETECTION_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x181D2D60)
+#define UNITY_COLLECTIONS_NATIVELEAKDETECTION_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x19F34C40)
+#define UNITY_COLLECTIONS_NATIVELEAKDETECTION_SET_MODE_OFFSET UNITYSDK_OFFSET(0x19F34C80)
 
 namespace Unity::Collections
 {
-	inline static constexpr unsigned int NativeLeakDetection_TypeDefinitionIndex = 3787;
+	inline static constexpr unsigned int NativeLeakDetection_TypeDefinitionIndex = 5087;
 
 	class NativeLeakDetection : public ::System::Object
 	{
 	public:
 		static ::System::Int32* StaticGet_s_NativeLeakDetectionMode()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NativeLeakDetection_TypeDefinitionIndex)->GetStaticField(0x5FD0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NativeLeakDetection_TypeDefinitionIndex)->GetStaticField(0x2DB0);
 		}
 
 		static ::System::Void Initialize()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITY_COLLECTIONS_NATIVELEAKDETECTION_INITIALIZE_OFFSET))();
+		}
+
+		static ::System::Void set_Mode(::Unity::Collections::NativeLeakDetectionMode value)
+		{
+			return ((::System::Void(*)(::Unity::Collections::NativeLeakDetectionMode))((::PBYTE)hIl2Cpp + UNITY_COLLECTIONS_NATIVELEAKDETECTION_SET_MODE_OFFSET))(value);
 		}
 	};
 }

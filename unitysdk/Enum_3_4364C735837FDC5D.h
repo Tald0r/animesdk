@@ -1,0 +1,10 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+inline static constexpr unsigned int Enum_3_4364C735837FDC5D_TypeDefinitionIndex = 53526;
+
+enum class Enum_3_4364C735837FDC5D : ::System::Int32
+{
+	Raw = 0,
+	WithGender = 1,
+};

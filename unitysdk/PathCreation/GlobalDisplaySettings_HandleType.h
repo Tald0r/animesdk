@@ -1,0 +1,14 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace PathCreation
+{
+	inline static constexpr unsigned int GlobalDisplaySettings_HandleType_TypeDefinitionIndex = 34292;
+
+	enum class GlobalDisplaySettings_HandleType : ::System::Int32
+	{
+		Sphere = 0,
+		Circle = 1,
+		Square = 2,
+	};
+}

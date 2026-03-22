@@ -1,0 +1,87 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MiHoYo/SDK/PluginUI/MiHoYoSDKUIContainer.h"
+
+class Class_2_79AE422BA06F6D26_93;
+namespace MoleMole { class UIGeneralDescriptConfrimDialogPopWindowController; }
+
+#define CLASS_2_29066BC188841C03_METHOD_2_367B9590522079D1_OFFSET UNITYSDK_OFFSET(0x6FF4940)
+#define CLASS_2_29066BC188841C03_METHOD_2_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x6FF4F50)
+#define CLASS_2_29066BC188841C03_METHOD_2_596D9113D22B8335_OFFSET UNITYSDK_OFFSET(0x6FF4EB0)
+#define CLASS_2_29066BC188841C03_METHOD_2_5E0DBF36D6013B7C_OFFSET UNITYSDK_OFFSET(0x6FF4FC0)
+#define CLASS_2_29066BC188841C03_METHOD_2_7F4EBEC55EBE2D81_OFFSET UNITYSDK_OFFSET(0x6FF5720)
+#define CLASS_2_29066BC188841C03_METHOD_2_80A9DB3F285E392F_OFFSET UNITYSDK_OFFSET(0x6FF55F0)
+#define CLASS_2_29066BC188841C03_METHOD_2_ED79705457B92B5C_OFFSET UNITYSDK_OFFSET(0x6FF5360)
+#define CLASS_2_29066BC188841C03_METHOD_2_F978A1D172468895_OFFSET UNITYSDK_OFFSET(0x6FF5080)
+#define CLASS_2_29066BC188841C03_ONCLOSE_OFFSET UNITYSDK_OFFSET(0x6FF4DB0)
+#define CLASS_2_29066BC188841C03_ONSHOW_OFFSET UNITYSDK_OFFSET(0x6FF45B0)
+#define CLASS_2_29066BC188841C03__CTOR_OFFSET UNITYSDK_OFFSET(0x6FF4E30)
+
+inline static constexpr unsigned int Class_2_29066BC188841C03_TypeDefinitionIndex = 55567;
+
+class Class_2_29066BC188841C03 : public ::MiHoYo::SDK::PluginUI::MiHoYoSDKUIContainer
+{
+public:
+	static ::Class_2_29066BC188841C03** StaticGet_Field_2_0()
+	{
+		return (::Class_2_29066BC188841C03**)Il2CppClass::FromTypeDefinitionIndex(Class_2_29066BC188841C03_TypeDefinitionIndex)->GetStaticField(0x41C90);
+	}
+	::MoleMole::UIGeneralDescriptConfrimDialogPopWindowController* Field_2_1; // 0x18
+	::Class_2_79AE422BA06F6D26_93* Field_2_2; // 0x20
+	::System::Boolean Field_2_3; // 0x28
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_29066BC188841C03__CTOR_OFFSET))(this);
+	}
+
+	::System::Void OnShow()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_29066BC188841C03_ONSHOW_OFFSET))(this);
+	}
+
+	::System::Void OnClose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_29066BC188841C03_ONCLOSE_OFFSET))(this);
+	}
+
+	::System::Void Method_2_596D9113D22B8335()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_29066BC188841C03_METHOD_2_596D9113D22B8335_OFFSET))(this);
+	}
+
+	::System::Void Method_2_4343F372F34C05BF()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_29066BC188841C03_METHOD_2_4343F372F34C05BF_OFFSET))(this);
+	}
+
+	::System::Void Method_2_F978A1D172468895()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_29066BC188841C03_METHOD_2_F978A1D172468895_OFFSET))(this);
+	}
+
+	::System::Void Method_2_ED79705457B92B5C()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_29066BC188841C03_METHOD_2_ED79705457B92B5C_OFFSET))(this);
+	}
+
+	static ::Class_2_29066BC188841C03* Method_2_80A9DB3F285E392F()
+	{
+		return ((::Class_2_29066BC188841C03*(*)())((::PBYTE)hIl2Cpp + CLASS_2_29066BC188841C03_METHOD_2_80A9DB3F285E392F_OFFSET))();
+	}
+
+	::System::Void Method_2_5E0DBF36D6013B7C(::System::Boolean a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_29066BC188841C03_METHOD_2_5E0DBF36D6013B7C_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_367B9590522079D1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_29066BC188841C03_METHOD_2_367B9590522079D1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_7F4EBEC55EBE2D81()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_29066BC188841C03_METHOD_2_7F4EBEC55EBE2D81_OFFSET))(this);
+	}
+};

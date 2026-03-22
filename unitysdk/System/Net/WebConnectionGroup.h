@@ -13,29 +13,31 @@ namespace System::Net { class ServicePoint; }
 namespace System::Net { class WebConnection; }
 namespace System::Net { class WebConnectionGroup_ConnectionState; }
 
-#define SYSTEM_NET_WEBCONNECTIONGROUP_ADD_CONNECTIONCLOSED_OFFSET UNITYSDK_OFFSET(0x17EEF880)
-#define SYSTEM_NET_WEBCONNECTIONGROUP_CREATEORREUSECONNECTION_OFFSET UNITYSDK_OFFSET(0x17F0E950)
-#define SYSTEM_NET_WEBCONNECTIONGROUP_FINDIDLECONNECTION_OFFSET UNITYSDK_OFFSET(0x17F0ED50)
-#define SYSTEM_NET_WEBCONNECTIONGROUP_GETCONNECTION_OFFSET UNITYSDK_OFFSET(0x17EF0D90)
-#define SYSTEM_NET_WEBCONNECTIONGROUP_GET_NAME_OFFSET UNITYSDK_OFFSET(0x17F0EF10)
-#define SYSTEM_NET_WEBCONNECTIONGROUP_GET_QUEUE_OFFSET UNITYSDK_OFFSET(0x17F0EF20)
-#define SYSTEM_NET_WEBCONNECTIONGROUP_PREPARESHARINGNTLM_OFFSET UNITYSDK_OFFSET(0x17F0EAD0)
-#define SYSTEM_NET_WEBCONNECTIONGROUP_REMOVE_CONNECTIONCLOSED_OFFSET UNITYSDK_OFFSET(0x17F0E8F0)
-#define SYSTEM_NET_WEBCONNECTIONGROUP_TRYRECYCLE_OFFSET UNITYSDK_OFFSET(0x17EF0000)
-#define SYSTEM_NET_WEBCONNECTIONGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x17EEF810)
+#define SYSTEM_NET_WEBCONNECTIONGROUP_ADD_CONNECTIONCLOSED_OFFSET UNITYSDK_OFFSET(0x197F3300)
+#define SYSTEM_NET_WEBCONNECTIONGROUP_CLOSE_OFFSET UNITYSDK_OFFSET(0x197F33E0)
+#define SYSTEM_NET_WEBCONNECTIONGROUP_CREATEORREUSECONNECTION_OFFSET UNITYSDK_OFFSET(0x197F3790)
+#define SYSTEM_NET_WEBCONNECTIONGROUP_FINDIDLECONNECTION_OFFSET UNITYSDK_OFFSET(0x197F3C70)
+#define SYSTEM_NET_WEBCONNECTIONGROUP_GETCONNECTION_OFFSET UNITYSDK_OFFSET(0x197F36B0)
+#define SYSTEM_NET_WEBCONNECTIONGROUP_GET_NAME_OFFSET UNITYSDK_OFFSET(0x197F3D40)
+#define SYSTEM_NET_WEBCONNECTIONGROUP_GET_QUEUE_OFFSET UNITYSDK_OFFSET(0x197F3D50)
+#define SYSTEM_NET_WEBCONNECTIONGROUP_ONCONNECTIONCLOSED_OFFSET UNITYSDK_OFFSET(0x197F33C0)
+#define SYSTEM_NET_WEBCONNECTIONGROUP_PREPARESHARINGNTLM_OFFSET UNITYSDK_OFFSET(0x197F3920)
+#define SYSTEM_NET_WEBCONNECTIONGROUP_REMOVE_CONNECTIONCLOSED_OFFSET UNITYSDK_OFFSET(0x197F3360)
+#define SYSTEM_NET_WEBCONNECTIONGROUP_TRYRECYCLE_OFFSET UNITYSDK_OFFSET(0x197F3D60)
+#define SYSTEM_NET_WEBCONNECTIONGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x197F3290)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int WebConnectionGroup_TypeDefinitionIndex = 2866;
+	inline static constexpr unsigned int WebConnectionGroup_TypeDefinitionIndex = 3569;
 
 	class WebConnectionGroup : public ::System::Object
 	{
 	public:
-		::System::EventHandler* ConnectionClosed; // 0x10
-		::System::Net::ServicePoint* sPoint; // 0x18
-		::System::Collections::Generic::LinkedList_1<::System::Net::WebConnectionGroup_ConnectionState*>* connections; // 0x20
+		::System::Collections::Queue* queue; // 0x10
+		::System::Collections::Generic::LinkedList_1<::System::Net::WebConnectionGroup_ConnectionState*>* connections; // 0x18
+		::System::EventHandler* ConnectionClosed; // 0x20
 		::System::String* name; // 0x28
-		::System::Collections::Queue* queue; // 0x30
+		::System::Net::ServicePoint* sPoint; // 0x30
 		::System::Boolean closing; // 0x38
 
 		::System::Void _ctor(::System::Net::ServicePoint* sPoint, ::System::String* name)
@@ -51,6 +53,16 @@ namespace System::Net
 		::System::Void remove_ConnectionClosed(::System::EventHandler* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::EventHandler*))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBCONNECTIONGROUP_REMOVE_CONNECTIONCLOSED_OFFSET))(this, value);
+		}
+
+		::System::Void OnConnectionClosed()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBCONNECTIONGROUP_ONCONNECTIONCLOSED_OFFSET))(this);
+		}
+
+		::System::Void Close()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBCONNECTIONGROUP_CLOSE_OFFSET))(this);
 		}
 
 		::System::Net::WebConnection* GetConnection(::System::Net::HttpWebRequest* request, ::System::Boolean& created)

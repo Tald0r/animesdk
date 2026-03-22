@@ -1,0 +1,67 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_E9062E526D09512F;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xA4BCA80)
+#define MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA4BCA90)
+#define MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA4BCB00)
+#define MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER_ONLYPLAYITEMANI_OFFSET UNITYSDK_OFFSET(0xA4BCD00)
+#define MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA4BCC00)
+#define MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA4BCDC0)
+#define MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA4BCDD0)
+#define MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA4BCE40)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityFightUI_RewardGroup_MainPageController_TypeDefinitionIndex = 59840;
+
+	class UIActivityFightUI_RewardGroup_MainPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Class_2_E9062E526D09512F* get__viewModel()
+		{
+			return ((::Class_2_E9062E526D09512F*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnlyPlayItemAni()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER_ONLYPLAYITEMANI_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_MAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,43 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_7D1331C413E60035.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_27B3940A591E3F5A;
+
+#define CLASS_2_27B3940A591E3F5A_CLASS_1_2AB642F59EB0E58C_METHOD_1_AA587310953A5C5C_OFFSET UNITYSDK_OFFSET(0xB460170)
+#define CLASS_2_27B3940A591E3F5A_CLASS_1_2AB642F59EB0E58C_METHOD_1_C4480433DB0A10CD_OFFSET UNITYSDK_OFFSET(0xB460200)
+#define CLASS_2_27B3940A591E3F5A_CLASS_1_2AB642F59EB0E58C_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xB4602F0)
+#define CLASS_2_27B3940A591E3F5A_CLASS_1_2AB642F59EB0E58C__CTOR_OFFSET UNITYSDK_OFFSET(0xB460060)
+
+inline static constexpr unsigned int Class_2_27B3940A591E3F5A_Class_1_2AB642F59EB0E58C_TypeDefinitionIndex = 41803;
+
+class Class_2_27B3940A591E3F5A_Class_1_2AB642F59EB0E58C : public ::System::Object
+{
+public:
+	::System::Boolean Field_1_1; // 0x10
+	::System::Boolean Field_1_0; // 0x11
+	::Enum_3_7D1331C413E60035 Field_1_4; // 0x14
+	::System::UInt32 Field_1_2; // 0x18
+	::System::Int64 Field_1_3; // 0x20
+
+	::System::Void _ctor(::System::Boolean a1, ::System::UInt32 a2, ::System::Boolean a3, ::System::UInt32 a4)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::UInt32, ::System::Boolean, ::System::UInt32))((::PBYTE)hIl2Cpp + CLASS_2_27B3940A591E3F5A_CLASS_1_2AB642F59EB0E58C__CTOR_OFFSET))(this, a1, a2, a3, a4);
+	}
+
+	::System::Void Method_1_AA587310953A5C5C(::Class_2_27B3940A591E3F5A* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_27B3940A591E3F5A*))((::PBYTE)hIl2Cpp + CLASS_2_27B3940A591E3F5A_CLASS_1_2AB642F59EB0E58C_METHOD_1_AA587310953A5C5C_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_C4480433DB0A10CD(::Class_2_27B3940A591E3F5A* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_27B3940A591E3F5A*))((::PBYTE)hIl2Cpp + CLASS_2_27B3940A591E3F5A_CLASS_1_2AB642F59EB0E58C_METHOD_1_C4480433DB0A10CD_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_27B3940A591E3F5A_CLASS_1_2AB642F59EB0E58C_METHOD_1_CA373AA1C7054598_OFFSET))(this);
+	}
+};

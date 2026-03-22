@@ -2,12 +2,15 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Security/Cryptography/HashAlgorithm.h"
 
-#define MONO_SECURITY_CRYPTOGRAPHY_MD4_CREATE_OFFSET UNITYSDK_OFFSET(0x15A873C0)
-#define MONO_SECURITY_CRYPTOGRAPHY_MD4__CTOR_OFFSET UNITYSDK_OFFSET(0x15A873B0)
+namespace System { class String; }
+
+#define MONO_SECURITY_CRYPTOGRAPHY_MD4_CREATE_1_OFFSET UNITYSDK_OFFSET(0x1AAF0A30)
+#define MONO_SECURITY_CRYPTOGRAPHY_MD4_CREATE_OFFSET UNITYSDK_OFFSET(0x1AAF0970)
+#define MONO_SECURITY_CRYPTOGRAPHY_MD4__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAF0960)
 
 namespace Mono::Security::Cryptography
 {
-	inline static constexpr unsigned int MD4_TypeDefinitionIndex = 2287;
+	inline static constexpr unsigned int MD4_TypeDefinitionIndex = 2459;
 
 	class MD4 : public ::System::Security::Cryptography::HashAlgorithm
 	{
@@ -20,6 +23,11 @@ namespace Mono::Security::Cryptography
 		static ::Mono::Security::Cryptography::MD4* Create()
 		{
 			return ((::Mono::Security::Cryptography::MD4*(*)())((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_MD4_CREATE_OFFSET))();
+		}
+
+		static ::Mono::Security::Cryptography::MD4* Create_1(::System::String* hashName)
+		{
+			return ((::Mono::Security::Cryptography::MD4*(*)(::System::String*))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_MD4_CREATE_1_OFFSET))(hashName);
 		}
 	};
 }

@@ -7,16 +7,22 @@ namespace System { class Type; }
 namespace System::Linq::Expressions { class Expression; }
 namespace System::Linq::Expressions { class TypeBinaryExpression; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_CONSTANTCHECK_ANALYZETYPEIS_1_OFFSET UNITYSDK_OFFSET(0x17C8FCC0)
-#define SYSTEM_LINQ_EXPRESSIONS_CONSTANTCHECK_ANALYZETYPEIS_OFFSET UNITYSDK_OFFSET(0x17C8FC90)
+#define SYSTEM_LINQ_EXPRESSIONS_CONSTANTCHECK_ANALYZETYPEIS_1_OFFSET UNITYSDK_OFFSET(0x1AA6F720)
+#define SYSTEM_LINQ_EXPRESSIONS_CONSTANTCHECK_ANALYZETYPEIS_OFFSET UNITYSDK_OFFSET(0x1AA6F6F0)
+#define SYSTEM_LINQ_EXPRESSIONS_CONSTANTCHECK_ISNULL_OFFSET UNITYSDK_OFFSET(0x1AA6F5B0)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int ConstantCheck_TypeDefinitionIndex = 3183;
+	inline static constexpr unsigned int ConstantCheck_TypeDefinitionIndex = 4446;
 
 	class ConstantCheck : public ::System::Object
 	{
 	public:
+		static ::System::Boolean IsNull(::System::Linq::Expressions::Expression* e)
+		{
+			return ((::System::Boolean(*)(::System::Linq::Expressions::Expression*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_CONSTANTCHECK_ISNULL_OFFSET))(e);
+		}
+
 		static ::System::Linq::Expressions::AnalyzeTypeIsResult AnalyzeTypeIs(::System::Linq::Expressions::TypeBinaryExpression* typeIs)
 		{
 			return ((::System::Linq::Expressions::AnalyzeTypeIsResult(*)(::System::Linq::Expressions::TypeBinaryExpression*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_CONSTANTCHECK_ANALYZETYPEIS_OFFSET))(typeIs);

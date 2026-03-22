@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/Datatype_anySimpleType.h"
+#include "unitysdk/System/Xml/Schema/RestrictionFlags.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaWhiteSpace.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 
@@ -14,31 +15,32 @@ namespace System::Xml::Schema { class FacetsChecker; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_COMPARE_OFFSET UNITYSDK_OFFSET(0x17D6BAD0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D6B940)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x17D6BAC0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x17D6B990)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D6BA60)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D6B9F0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D6BA00)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x17D6BC30)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D6BDB0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE__CTOR_OFFSET UNITYSDK_OFFSET(0x17D63580)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_COMPARE_OFFSET UNITYSDK_OFFSET(0x19ED5250)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x19ED50B0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x19ED5230)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x19ED5100)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x19ED51D0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x19ED5160)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_VALIDRESTRICTIONFLAGS_OFFSET UNITYSDK_OFFSET(0x19ED5240)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x19ED5170)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x19ED53B0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x19ED55D0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE__CTOR_OFFSET UNITYSDK_OFFSET(0x19ED5530)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_double_TypeDefinitionIndex = 2082;
+	inline static constexpr unsigned int Datatype_double_TypeDefinitionIndex = 1997;
 
 	class Datatype_double : public ::System::Xml::Schema::Datatype_anySimpleType
 	{
 	public:
-		static ::System::Type** StaticGet_listValueType()
-		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_double_TypeDefinitionIndex)->GetStaticField(0x14160);
-		}
 		static ::System::Type** StaticGet_atomicValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_double_TypeDefinitionIndex)->GetStaticField(0x14168);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_double_TypeDefinitionIndex)->GetStaticField(0x2210);
+		}
+		static ::System::Type** StaticGet_listValueType()
+		{
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_double_TypeDefinitionIndex)->GetStaticField(0x2218);
 		}
 
 		::System::Void _ctor()
@@ -79,6 +81,11 @@ namespace System::Xml::Schema
 		::System::Xml::Schema::XmlSchemaWhiteSpace get_BuiltInWhitespaceFacet()
 		{
 			return ((::System::Xml::Schema::XmlSchemaWhiteSpace(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_BUILTINWHITESPACEFACET_OFFSET))(this);
+		}
+
+		::System::Xml::Schema::RestrictionFlags get_ValidRestrictionFlags()
+		{
+			return ((::System::Xml::Schema::RestrictionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_DOUBLE_GET_VALIDRESTRICTIONFLAGS_OFFSET))(this);
 		}
 
 		::System::Int32 Compare(::System::Object* value1, ::System::Object* value2)

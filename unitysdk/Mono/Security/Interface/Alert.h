@@ -6,25 +6,35 @@
 
 namespace System { class String; }
 
-#define MONO_SECURITY_INTERFACE_ALERT_GET_DESCRIPTION_OFFSET UNITYSDK_OFFSET(0x15A8C640)
-#define MONO_SECURITY_INTERFACE_ALERT_GET_LEVEL_OFFSET UNITYSDK_OFFSET(0x15A8C630)
-#define MONO_SECURITY_INTERFACE_ALERT_INFERALERTLEVEL_OFFSET UNITYSDK_OFFSET(0x15A8C690)
-#define MONO_SECURITY_INTERFACE_ALERT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15A8C6D0)
-#define MONO_SECURITY_INTERFACE_ALERT__CTOR_OFFSET UNITYSDK_OFFSET(0x15A8C650)
+#define MONO_SECURITY_INTERFACE_ALERT_GETALERTMESSAGE_OFFSET UNITYSDK_OFFSET(0x1AA9C070)
+#define MONO_SECURITY_INTERFACE_ALERT_GET_DESCRIPTION_OFFSET UNITYSDK_OFFSET(0x1AA9BEC0)
+#define MONO_SECURITY_INTERFACE_ALERT_GET_ISCLOSENOTIFY_OFFSET UNITYSDK_OFFSET(0x1AA9BF20)
+#define MONO_SECURITY_INTERFACE_ALERT_GET_ISWARNING_OFFSET UNITYSDK_OFFSET(0x1AA9BF10)
+#define MONO_SECURITY_INTERFACE_ALERT_GET_LEVEL_OFFSET UNITYSDK_OFFSET(0x1AA9BEB0)
+#define MONO_SECURITY_INTERFACE_ALERT_GET_MESSAGE_OFFSET UNITYSDK_OFFSET(0x1AA9BED0)
+#define MONO_SECURITY_INTERFACE_ALERT_INFERALERTLEVEL_OFFSET UNITYSDK_OFFSET(0x1AA9BF80)
+#define MONO_SECURITY_INTERFACE_ALERT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1AA9BFD0)
+#define MONO_SECURITY_INTERFACE_ALERT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AA9BFC0)
+#define MONO_SECURITY_INTERFACE_ALERT__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA9BF40)
 
 namespace Mono::Security::Interface
 {
-	inline static constexpr unsigned int Alert_TypeDefinitionIndex = 2266;
+	inline static constexpr unsigned int Alert_TypeDefinitionIndex = 2427;
 
 	class Alert : public ::System::Object
 	{
 	public:
-		::Mono::Security::Interface::AlertDescription description; // 0x10
-		::Mono::Security::Interface::AlertLevel level; // 0x11
+		::Mono::Security::Interface::AlertLevel level; // 0x10
+		::Mono::Security::Interface::AlertDescription description; // 0x11
 
 		::System::Void _ctor(::Mono::Security::Interface::AlertDescription description)
 		{
 			return ((::System::Void(*)(::PVOID, ::Mono::Security::Interface::AlertDescription))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_ALERT__CTOR_OFFSET))(this, description);
+		}
+
+		::System::Void _ctor_1(::Mono::Security::Interface::AlertLevel level, ::Mono::Security::Interface::AlertDescription description)
+		{
+			return ((::System::Void(*)(::PVOID, ::Mono::Security::Interface::AlertLevel, ::Mono::Security::Interface::AlertDescription))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_ALERT__CTOR_1_OFFSET))(this, level, description);
 		}
 
 		::Mono::Security::Interface::AlertLevel get_Level()
@@ -37,6 +47,21 @@ namespace Mono::Security::Interface
 			return ((::Mono::Security::Interface::AlertDescription(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_ALERT_GET_DESCRIPTION_OFFSET))(this);
 		}
 
+		::System::String* get_Message()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_ALERT_GET_MESSAGE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsWarning()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_ALERT_GET_ISWARNING_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsCloseNotify()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_ALERT_GET_ISCLOSENOTIFY_OFFSET))(this);
+		}
+
 		::System::Void inferAlertLevel()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_ALERT_INFERALERTLEVEL_OFFSET))(this);
@@ -45,6 +70,11 @@ namespace Mono::Security::Interface
 		::System::String* ToString()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_ALERT_TOSTRING_OFFSET))(this);
+		}
+
+		static ::System::String* GetAlertMessage(::Mono::Security::Interface::AlertDescription description)
+		{
+			return ((::System::String*(*)(::Mono::Security::Interface::AlertDescription))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_ALERT_GETALERTMESSAGE_OFFSET))(description);
 		}
 	};
 }

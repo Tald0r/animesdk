@@ -10,21 +10,20 @@ namespace System { class ArgumentException; }
 namespace System { class String; }
 namespace System::Globalization { class NumberFormatInfo; }
 
-#define SYSTEM_NUMERICS_BIGNUMBER_ASREADONLYSPAN_OFFSET UNITYSDK_OFFSET(0x17D35F30)
-#define SYSTEM_NUMERICS_BIGNUMBER_FORMATBIGINTEGERTOHEXSTRING_OFFSET UNITYSDK_OFFSET(0x17D36590)
-#define SYSTEM_NUMERICS_BIGNUMBER_FORMATBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x17D2C080)
-#define SYSTEM_NUMERICS_BIGNUMBER_HEXNUMBERTOBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x17D36090)
-#define SYSTEM_NUMERICS_BIGNUMBER_NUMBERTOBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x17D36230)
-#define SYSTEM_NUMERICS_BIGNUMBER_PARSEBIGINTEGER_1_OFFSET UNITYSDK_OFFSET(0x17D27710)
-#define SYSTEM_NUMERICS_BIGNUMBER_PARSEBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x17D27220)
-#define SYSTEM_NUMERICS_BIGNUMBER_PARSEFORMATSPECIFIER_OFFSET UNITYSDK_OFFSET(0x17D364A0)
-#define SYSTEM_NUMERICS_BIGNUMBER_TRYPARSEBIGINTEGER_1_OFFSET UNITYSDK_OFFSET(0x17D27860)
-#define SYSTEM_NUMERICS_BIGNUMBER_TRYPARSEBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x17D275D0)
-#define SYSTEM_NUMERICS_BIGNUMBER_TRYVALIDATEPARSESTYLEINTEGER_OFFSET UNITYSDK_OFFSET(0x17D35E30)
+#define SYSTEM_NUMERICS_BIGNUMBER_ASREADONLYSPAN_OFFSET UNITYSDK_OFFSET(0x1A2C9FB0)
+#define SYSTEM_NUMERICS_BIGNUMBER_FORMATBIGINTEGERTOHEXSTRING_OFFSET UNITYSDK_OFFSET(0x1A2CA270)
+#define SYSTEM_NUMERICS_BIGNUMBER_FORMATBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x1A2C45C0)
+#define SYSTEM_NUMERICS_BIGNUMBER_HEXNUMBERTOBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x1A2C9B80)
+#define SYSTEM_NUMERICS_BIGNUMBER_NUMBERTOBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x1A2C9D20)
+#define SYSTEM_NUMERICS_BIGNUMBER_PARSEBIGINTEGER_1_OFFSET UNITYSDK_OFFSET(0x1A2CA080)
+#define SYSTEM_NUMERICS_BIGNUMBER_PARSEBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x1A2C3700)
+#define SYSTEM_NUMERICS_BIGNUMBER_PARSEFORMATSPECIFIER_OFFSET UNITYSDK_OFFSET(0x1A2CA180)
+#define SYSTEM_NUMERICS_BIGNUMBER_TRYPARSEBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x1A2C98E0)
+#define SYSTEM_NUMERICS_BIGNUMBER_TRYVALIDATEPARSESTYLEINTEGER_OFFSET UNITYSDK_OFFSET(0x1A2C97E0)
 
 namespace System::Numerics
 {
-	inline static constexpr unsigned int BigNumber_TypeDefinitionIndex = 4753;
+	inline static constexpr unsigned int BigNumber_TypeDefinitionIndex = 6479;
 
 	class BigNumber : public ::System::Object
 	{
@@ -34,14 +33,9 @@ namespace System::Numerics
 			return ((::System::Boolean(*)(::System::Globalization::NumberStyles, ::System::ArgumentException*&))((::PBYTE)hIl2Cpp + SYSTEM_NUMERICS_BIGNUMBER_TRYVALIDATEPARSESTYLEINTEGER_OFFSET))(style, e);
 		}
 
-		static ::System::Boolean TryParseBigInteger(::System::String* value, ::System::Globalization::NumberStyles style, ::System::Globalization::NumberFormatInfo* info, ::System::Numerics::BigInteger& result)
+		static ::System::Boolean TryParseBigInteger(::System::ReadOnlySpan_1<::System::Char> value, ::System::Globalization::NumberStyles style, ::System::Globalization::NumberFormatInfo* info, ::System::Numerics::BigInteger& result)
 		{
-			return ((::System::Boolean(*)(::System::String*, ::System::Globalization::NumberStyles, ::System::Globalization::NumberFormatInfo*, ::System::Numerics::BigInteger&))((::PBYTE)hIl2Cpp + SYSTEM_NUMERICS_BIGNUMBER_TRYPARSEBIGINTEGER_OFFSET))(value, style, info, result);
-		}
-
-		static ::System::Boolean TryParseBigInteger_1(::System::ReadOnlySpan_1<::System::Char> value, ::System::Globalization::NumberStyles style, ::System::Globalization::NumberFormatInfo* info, ::System::Numerics::BigInteger& result)
-		{
-			return ((::System::Boolean(*)(::System::ReadOnlySpan_1<::System::Char>, ::System::Globalization::NumberStyles, ::System::Globalization::NumberFormatInfo*, ::System::Numerics::BigInteger&))((::PBYTE)hIl2Cpp + SYSTEM_NUMERICS_BIGNUMBER_TRYPARSEBIGINTEGER_1_OFFSET))(value, style, info, result);
+			return ((::System::Boolean(*)(::System::ReadOnlySpan_1<::System::Char>, ::System::Globalization::NumberStyles, ::System::Globalization::NumberFormatInfo*, ::System::Numerics::BigInteger&))((::PBYTE)hIl2Cpp + SYSTEM_NUMERICS_BIGNUMBER_TRYPARSEBIGINTEGER_OFFSET))(value, style, info, result);
 		}
 
 		static ::System::Numerics::BigInteger ParseBigInteger(::System::String* value, ::System::Globalization::NumberStyles style, ::System::Globalization::NumberFormatInfo* info)

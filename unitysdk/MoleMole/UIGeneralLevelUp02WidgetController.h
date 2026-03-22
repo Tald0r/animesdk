@@ -1,0 +1,154 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_665DC60C570878D1;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralLevelUp02WidgetController_Context; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ALLFINISH_OFFSET UNITYSDK_OFFSET(0x95FD3D0)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_GET_ISIGNOREINPUT_OFFSET UNITYSDK_OFFSET(0x95FB630)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x95FB640)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ONINTERRUPT_OFFSET UNITYSDK_OFFSET(0x95FC070)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x95FBF00)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x95FBE20)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x95FB6E0)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_PLAYSHOWANIM_OFFSET UNITYSDK_OFFSET(0x95FB880)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_REFRESHLEVELTXTVIEW_OFFSET UNITYSDK_OFFSET(0x95FC130)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x95FBA60)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_STARTPLAYLEVELNUMANIM_OFFSET UNITYSDK_OFFSET(0x95FCFE0)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_TRYPLAYCLOSEAFTERANIM_OFFSET UNITYSDK_OFFSET(0x95FCD10)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0x95FD210)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x95FD450)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER__ONINTERRUPT_B__9_0_OFFSET UNITYSDK_OFFSET(0x95FD480)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER__TRYPLAYCLOSEAFTERANIM_B__15_0_OFFSET UNITYSDK_OFFSET(0x95FD4A0)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER__TRYPLAYCLOSEAFTERANIM_B__15_1_OFFSET UNITYSDK_OFFSET(0x95FD500)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x95FD520)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x95FD590)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x95FD5A0)
+#define MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x95FD620)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralLevelUp02WidgetController_TypeDefinitionIndex = 46302;
+
+	class UIGeneralLevelUp02WidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_665DC60C570878D1* _view; // 0x2A0
+		::System::Action* finishHandle; // 0x2A8
+		::MoleMole::UIGeneralLevelUp02WidgetController_Context* _context; // 0x2B0
+		::System::Boolean _currentExpFinish; // 0x2B8
+		::System::Boolean _ringFinish; // 0x2B9
+		::System::Single _lastAnimTIme; // 0x2BC
+		::System::Int32 _curLevel; // 0x2C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsIgnoreInput()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_GET_ISIGNOREINPUT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnInterrupt(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ONINTERRUPT_OFFSET))(this, args);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshLevelTxtView(::System::Int32 curLv, ::System::Int32 prvLv, ::System::Int32 remainExp, ::System::Int32 expNeededForNxtLv, ::System::Int32 prvRemainExp)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_REFRESHLEVELTXTVIEW_OFFSET))(this, curLv, prvLv, remainExp, expNeededForNxtLv, prvRemainExp);
+		}
+
+		::System::Void StartPlayLevelNumAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_STARTPLAYLEVELNUMANIM_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Boolean AllFinish()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_ALLFINISH_OFFSET))(this);
+		}
+
+		::System::Void TryPlayCloseAfterAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_TRYPLAYCLOSEAFTERANIM_OFFSET))(this);
+		}
+
+		::System::Void PlayShowAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER_PLAYSHOWANIM_OFFSET))(this);
+		}
+
+		::System::Void _OnInterrupt_b__9_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER__ONINTERRUPT_B__9_0_OFFSET))(this);
+		}
+
+		::System::Void _TryPlayCloseAfterAnim_b__15_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER__TRYPLAYCLOSEAFTERANIM_B__15_0_OFFSET))(this);
+		}
+
+		::System::Void _TryPlayCloseAfterAnim_b__15_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER__TRYPLAYCLOSEAFTERANIM_B__15_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLEVELUP02WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

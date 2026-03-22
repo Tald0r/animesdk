@@ -1,0 +1,178 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_5DA2E7556103D5A3_159;
+class Class_1_8B664C71B784890D;
+class Class_2_0A55B5A82A61DAFA_1;
+class Class_2_79AE422BA06F6D26_210;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIDungeonBuffIconWidgetController; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GETBANNERPICPATH_OFFSET UNITYSDK_OFFSET(0x9A401F0)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GETISFINISH_OFFSET UNITYSDK_OFFSET(0x9A3D780)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GETQUESTBOXREWARDLIST_OFFSET UNITYSDK_OFFSET(0x9A3D800)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0x9A3BB10)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x9A3BB00)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9A3BB20)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONGETWEEKLYHOLLOWDATAHANDLE_OFFSET UNITYSDK_OFFSET(0x9A407D0)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x9A40E30)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9A3BF10)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9A3BBC0)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_OPENBUFFTIPS_OFFSET UNITYSDK_OFFSET(0x9A3C100)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_PLAYFADEINANIM_OFFSET UNITYSDK_OFFSET(0x9A3BE50)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_PLAYFADEOUTANIM_OFFSET UNITYSDK_OFFSET(0x9A40CC0)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_REFRESHABYSSREWARD_OFFSET UNITYSDK_OFFSET(0x9A3F810)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_REFRESHYOROZUYAVIEW_OFFSET UNITYSDK_OFFSET(0x9A3C2B0)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_SETTASKINFO_OFFSET UNITYSDK_OFFSET(0x9A403A0)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_UPDATEREWARDLIST_OFFSET UNITYSDK_OFFSET(0x9A3E270)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9A41030)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__5_0_OFFSET UNITYSDK_OFFSET(0x9A411A0)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9A41230)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x9A412A0)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9A412D0)
+#define MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9A412E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIYorozuyaCombatReadinessDialogPopWindowController_TypeDefinitionIndex = 60702;
+
+	class UIYorozuyaCombatReadinessDialogPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Int32 kRewardCnt = 0x4; // 0x0
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* lastSelectBannerDir; // 0x2F8
+		::System::Collections::Generic::List_1<::System::Int32>* abilityTags; // 0x300
+		::Class_2_79AE422BA06F6D26_210* _view; // 0x308
+		::Class_1_8B664C71B784890D* _selectQuestInfo; // 0x310
+		::Class_1_5DA2E7556103D5A3_159* weeklyBattleCfg; // 0x318
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnWidgetController*>* _rewardsList; // 0x320
+		::System::Collections::Generic::List_1<::MoleMole::UIDungeonBuffIconWidgetController*>* _elementTypeIconCtrls; // 0x328
+		::Class_2_0A55B5A82A61DAFA_1* hollowQuestTemplateExt; // 0x330
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OpenBuffTips()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_OPENBUFFTIPS_OFFSET))(this);
+		}
+
+		::System::Void RefreshYorozuyaView(::Class_2_0A55B5A82A61DAFA_1* template_, ::System::Boolean showQuestTitle)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_0A55B5A82A61DAFA_1*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_REFRESHYOROZUYAVIEW_OFFSET))(this, template_, showQuestTitle);
+		}
+
+		::System::Collections::Generic::List_1<::Il2CppArray<::System::Object*>*>* GetQuestBoxRewardList(::Class_2_0A55B5A82A61DAFA_1* hollowQuestTemplateExt)
+		{
+			return ((::System::Collections::Generic::List_1<::Il2CppArray<::System::Object*>*>*(*)(::PVOID, ::Class_2_0A55B5A82A61DAFA_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GETQUESTBOXREWARDLIST_OFFSET))(this, hollowQuestTemplateExt);
+		}
+
+		::System::Void RefreshAbyssReward(::System::Int32 _questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_REFRESHABYSSREWARD_OFFSET))(this, _questID);
+		}
+
+		::System::Void SetTaskInfo(::System::Int32 taskID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_SETTASKINFO_OFFSET))(this, taskID);
+		}
+
+		::System::String* GetBannerPicPath(::Class_2_0A55B5A82A61DAFA_1* template_)
+		{
+			return ((::System::String*(*)(::PVOID, ::Class_2_0A55B5A82A61DAFA_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GETBANNERPICPATH_OFFSET))(this, template_);
+		}
+
+		::System::Void UpdateRewardList(::System::Int32 onceRewardID, ::System::Collections::Generic::List_1<::System::Int32>* rewardList, ::System::Collections::Generic::List_1<::Il2CppArray<::System::Object*>*>* boxReward, ::System::Boolean isUp, ::System::Boolean isFirstGot)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Collections::Generic::List_1<::System::Int32>*, ::System::Collections::Generic::List_1<::Il2CppArray<::System::Object*>*>*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_UPDATEREWARDLIST_OFFSET))(this, onceRewardID, rewardList, boxReward, isUp, isFirstGot);
+		}
+
+		::System::Void OnGetWeeklyHollowDataHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONGETWEEKLYHOLLOWDATAHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Boolean GetIsFinish()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_GETISFINISH_OFFSET))(this);
+		}
+
+		::System::Void PlayFadeInAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_PLAYFADEINANIM_OFFSET))(this);
+		}
+
+		::System::Void PlayFadeOutAnim(::System::Action* onFadeOutCb)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_PLAYFADEOUTANIM_OFFSET))(this, onFadeOutCb);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void _OnUIInit_b__5_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__5_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYACOMBATREADINESSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

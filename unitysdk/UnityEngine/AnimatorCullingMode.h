@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int AnimatorCullingMode_TypeDefinitionIndex = 4924;
+	inline static constexpr unsigned int AnimatorCullingMode_TypeDefinitionIndex = 6534;
 
 	enum class AnimatorCullingMode : ::System::Int32
 	{

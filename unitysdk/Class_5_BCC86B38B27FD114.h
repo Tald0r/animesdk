@@ -1,0 +1,66 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_4_86126C0ABC4F0231.h"
+
+class Class_1_F50B5EAC0B6702FB;
+class Class_2_9DCE2FC33F67E8A2;
+class Class_5_AF65C3A968E836D2;
+namespace MoleMole::Config { class ConfigHollowChangeBG; }
+namespace MoleMole::Config { class UISpecialNumGroup; }
+
+#define CLASS_5_BCC86B38B27FD114_METHOD_5_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0xAB18DD0)
+#define CLASS_5_BCC86B38B27FD114_METHOD_5_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0xAB185E0)
+#define CLASS_5_BCC86B38B27FD114_METHOD_5_4F8FB7BD3B58415B_OFFSET UNITYSDK_OFFSET(0xAB18540)
+#define CLASS_5_BCC86B38B27FD114_METHOD_5_9A13DF81D2C57B5C_OFFSET UNITYSDK_OFFSET(0xAB187E0)
+#define CLASS_5_BCC86B38B27FD114_METHOD_5_9A6DA36CCAE7D188_OFFSET UNITYSDK_OFFSET(0xAB18640)
+#define CLASS_5_BCC86B38B27FD114_METHOD_5_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xAB18D70)
+#define CLASS_5_BCC86B38B27FD114_METHOD_5_F2A1D3C2AD5054B1_OFFSET UNITYSDK_OFFSET(0xAB18C50)
+#define CLASS_5_BCC86B38B27FD114__CTOR_OFFSET UNITYSDK_OFFSET(0xAB18D10)
+
+inline static constexpr unsigned int Class_5_BCC86B38B27FD114_TypeDefinitionIndex = 53746;
+
+class Class_5_BCC86B38B27FD114 : public ::Class_4_86126C0ABC4F0231<::MoleMole::Config::ConfigHollowChangeBG*>
+{
+public:
+	::MoleMole::Config::ConfigHollowChangeBG* Field_5_0; // 0x40
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_BCC86B38B27FD114__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_5_4F8FB7BD3B58415B(::MoleMole::Config::ConfigHollowChangeBG* a1, ::Class_2_9DCE2FC33F67E8A2* a2, ::MoleMole::Config::UISpecialNumGroup* a3, ::Class_1_F50B5EAC0B6702FB* a4)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigHollowChangeBG*, ::Class_2_9DCE2FC33F67E8A2*, ::MoleMole::Config::UISpecialNumGroup*, ::Class_1_F50B5EAC0B6702FB*))((::PBYTE)hIl2Cpp + CLASS_5_BCC86B38B27FD114_METHOD_5_4F8FB7BD3B58415B_OFFSET))(this, a1, a2, a3, a4);
+	}
+
+	::System::Boolean Method_5_391A84BCD9F51317()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_BCC86B38B27FD114_METHOD_5_391A84BCD9F51317_OFFSET))(this);
+	}
+
+	::System::Void Method_5_9A6DA36CCAE7D188()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_BCC86B38B27FD114_METHOD_5_9A6DA36CCAE7D188_OFFSET))(this);
+	}
+
+	::System::Boolean Method_5_9A13DF81D2C57B5C(::Class_5_AF65C3A968E836D2* a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Class_5_AF65C3A968E836D2*))((::PBYTE)hIl2Cpp + CLASS_5_BCC86B38B27FD114_METHOD_5_9A13DF81D2C57B5C_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_5_F2A1D3C2AD5054B1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_BCC86B38B27FD114_METHOD_5_F2A1D3C2AD5054B1_OFFSET))(this);
+	}
+
+	::System::Void Method_5_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_BCC86B38B27FD114_METHOD_5_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Boolean Method_5_391A84BCD9F51317_1()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_BCC86B38B27FD114_METHOD_5_391A84BCD9F51317_1_OFFSET))(this);
+	}
+};

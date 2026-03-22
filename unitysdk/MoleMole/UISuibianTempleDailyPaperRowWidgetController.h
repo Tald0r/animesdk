@@ -1,0 +1,88 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/System/DayOfWeek.h"
+
+class Class_1_0F7BD0C64BB0172A;
+class Class_2_8BD0FC90A1FA7CD9;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+
+#define MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_GETDAYTEXT_OFFSET UNITYSDK_OFFSET(0x73D8DC0)
+#define MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x73D8860)
+#define MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x73D8900)
+#define MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x73D8710)
+#define MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x73D87B0)
+#define MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x73D89E0)
+#define MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x73D8EC0)
+#define MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x73D8EF0)
+#define MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x73D8F60)
+#define MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x73D8FE0)
+#define MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x73D9040)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISuibianTempleDailyPaperRowWidgetController_TypeDefinitionIndex = 44011;
+
+	class UISuibianTempleDailyPaperRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_8BD0FC90A1FA7CD9* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::Class_1_0F7BD0C64BB0172A* viewData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0F7BD0C64BB0172A*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, viewData);
+		}
+
+		::System::String* GetDayText(::System::DayOfWeek day)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::DayOfWeek))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER_GETDAYTEXT_OFFSET))(this, day);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEDAILYPAPERROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

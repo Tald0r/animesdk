@@ -1,0 +1,247 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_D2BBBB758B896E04_2.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/InputActionEventType.h"
+#include "unitysdk/MoleMole/InputLogicEventType.h"
+#include "unitysdk/MoleMole/LogicButtonInputType.h"
+#include "unitysdk/MoleMole/UIInLevelGamePlayButtonBaseController.h"
+
+class Class_1_43BD383C98B4C0C5_23;
+class Class_2_A8F5ABF31E066ED4;
+class Class_2_D244C6518E0DA169;
+namespace MoleMole { class RealtimeQTESubSystem; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole::Config { class ButtonQTETaskEntryBase; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class RectTransform; }
+
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_CHECKQTEWRONGINPUT_OFFSET UNITYSDK_OFFSET(0x946EEF0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_CLEARMATERIALCACHE_OFFSET UNITYSDK_OFFSET(0x946E490)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_GET_VIRTUALLOGICBUTTONINPUTTYPE_OFFSET UNITYSDK_OFFSET(0x946DF60)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x946DF50)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_INITINPUTCODEFORWRONGINPUTDETECT_OFFSET UNITYSDK_OFFSET(0x9470830)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_INITMATERIAL_OFFSET UNITYSDK_OFFSET(0x94700C0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_INITQTEBUTTON_OFFSET UNITYSDK_OFFSET(0x946E170)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_INITTASKPROGRESS_OFFSET UNITYSDK_OFFSET(0x9470390)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ISBTNWORKABLE_OFFSET UNITYSDK_OFFSET(0x946EA20)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONBUTTONCLICK_OFFSET UNITYSDK_OFFSET(0x946E6F0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONBUTTONDOWN_OFFSET UNITYSDK_OFFSET(0x946E7C0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONBUTTONUP_OFFSET UNITYSDK_OFFSET(0x946E8F0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONINITQTEBUTTON_OFFSET UNITYSDK_OFFSET(0x946EB50)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x946E5C0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONQTEBUTTONBEFOREWORLDUPDATE_OFFSET UNITYSDK_OFFSET(0x946EC70)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONTRYCLOSEREALTIMEQTE_OFFSET UNITYSDK_OFFSET(0x946EAD0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x946E380)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x946DF70)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x946E070)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_REFRESHTASKPROGRESS_OFFSET UNITYSDK_OFFSET(0x946ED30)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_SET_LOGICBUTTONINPUTTYPE_OFFSET UNITYSDK_OFFSET(0x9470CB0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_SHOULDSKILLBUTTONHANDLEINPUT_OFFSET UNITYSDK_OFFSET(0x946E670)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_TRYCLOSEREALTIMEQTE_OFFSET UNITYSDK_OFFSET(0x946EBB0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9470CC0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ISBTNWORKABLE_OFFSET UNITYSDK_OFFSET(0x9470D70)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONBUTTONCLICK_OFFSET UNITYSDK_OFFSET(0x9470D80)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONBUTTONDOWN_OFFSET UNITYSDK_OFFSET(0x9470DE0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONBUTTONUP_OFFSET UNITYSDK_OFFSET(0x9470E40)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x9470EA0)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9470D40)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9470D50)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9470D60)
+#define MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_SHOULDSKILLBUTTONHANDLEINPUT_OFFSET UNITYSDK_OFFSET(0x9470ED0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIRealtimeQTEButtonBaseController_TypeDefinitionIndex = 57166;
+
+	class UIRealtimeQTEButtonBaseController : public ::MoleMole::UIInLevelGamePlayButtonBaseController
+	{
+	public:
+		::System::String* _taskCustomTag; // 0x348
+		::MoleMole::LogicButtonInputType _logicButtonInputType; // 0x350
+		::MoleMole::InputActionEventType _actionEvent; // 0x354
+		::MoleMole::InputLogicEventType _logicEvent; // 0x358
+		::Class_2_D244C6518E0DA169* _task; // 0x360
+		::Class_1_43BD383C98B4C0C5_23* _buttonStyle; // 0x368
+		::MoleMole::RealtimeQTESubSystem* _realtimeQTESubSystem; // 0x370
+		::System::Int32 _keyboardInputCode; // 0x378
+		::System::Int32 _mouseInputCode; // 0x37C
+		::System::Int32 _gamepadInputCode; // 0x380
+		::System::Action* _finishCB; // 0x388
+		::UnityEngine::Material* _iconMaterial; // 0x390
+		::Class_2_A8F5ABF31E066ED4* _iconImage; // 0x398
+		::UnityEngine::RectTransform* _taskProgressRoot; // 0x3A0
+		::UnityEngine::RectTransform* _taskProgressHighlightTrans; // 0x3A8
+		::Class_2_A8F5ABF31E066ED4* _taskProgressHighlight; // 0x3B0
+		::Class_2_A8F5ABF31E066ED4* _taskProgressFill; // 0x3B8
+		::UnityEngine::RectTransform* _taskProgressArrow; // 0x3C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::MoleMole::LogicButtonInputType get_VirtualLogicButtonInputType()
+		{
+			return ((::MoleMole::LogicButtonInputType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_GET_VIRTUALLOGICBUTTONINPUTTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Boolean ShouldSkillButtonHandleInput(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_SHOULDSKILLBUTTONHANDLEINPUT_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnButtonClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONBUTTONCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnButtonDown()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONBUTTONDOWN_OFFSET))(this);
+		}
+
+		::System::Void OnButtonUp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONBUTTONUP_OFFSET))(this);
+		}
+
+		::System::Boolean IsBtnWorkable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ISBTNWORKABLE_OFFSET))(this);
+		}
+
+		::System::Void OnTryCloseRealtimeQTE(::Enum_3_D2BBBB758B896E04_2 finishType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_D2BBBB758B896E04_2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONTRYCLOSEREALTIMEQTE_OFFSET))(this, finishType);
+		}
+
+		::System::Void OnInitQTEButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONINITQTEBUTTON_OFFSET))(this);
+		}
+
+		::System::Void TryCloseRealtimeQTE(::Enum_3_D2BBBB758B896E04_2 finishType, ::System::Action* finishCB)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_D2BBBB758B896E04_2, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_TRYCLOSEREALTIMEQTE_OFFSET))(this, finishType, finishCB);
+		}
+
+		::System::Void OnQTEButtonBeforeWorldUpdate(::System::Single deltaTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_ONQTEBUTTONBEFOREWORLDUPDATE_OFFSET))(this, deltaTime);
+		}
+
+		::System::Void InitQTEButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_INITQTEBUTTON_OFFSET))(this);
+		}
+
+		::System::Void InitTaskProgress()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_INITTASKPROGRESS_OFFSET))(this);
+		}
+
+		::System::Void RefreshTaskProgress()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_REFRESHTASKPROGRESS_OFFSET))(this);
+		}
+
+		::System::Void InitInputCodeForWrongInputDetect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_INITINPUTCODEFORWRONGINPUTDETECT_OFFSET))(this);
+		}
+
+		::System::Void CheckQTEWrongInput()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_CHECKQTEWRONGINPUT_OFFSET))(this);
+		}
+
+		::System::Void InitMaterial(::MoleMole::Config::ButtonQTETaskEntryBase* entry)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ButtonQTETaskEntryBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_INITMATERIAL_OFFSET))(this, entry);
+		}
+
+		::System::Void ClearMaterialCache()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_CLEARMATERIALCACHE_OFFSET))(this);
+		}
+
+		::System::Void set_LogicButtonInputType(::MoleMole::LogicButtonInputType value)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::LogicButtonInputType))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER_SET_LOGICBUTTONINPUTTYPE_OFFSET))(this, value);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_IsBtnWorkable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ISBTNWORKABLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnButtonClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONBUTTONCLICK_OFFSET))(this);
+		}
+
+		::System::Void __base_OnButtonDown()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONBUTTONDOWN_OFFSET))(this);
+		}
+
+		::System::Void __base_OnButtonUp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONBUTTONUP_OFFSET))(this);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_ShouldSkillButtonHandleInput(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREALTIMEQTEBUTTONBASECONTROLLER___BASE_SHOULDSKILLBUTTONHANDLEINPUT_OFFSET))(this, P0);
+		}
+	};
+}

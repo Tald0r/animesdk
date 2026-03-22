@@ -1,0 +1,97 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_2_5E3D3972C89EB6E7;
+class Class_2_CC6C6812D7C240D5;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UISuibianDirectionIconWidgetController; }
+
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xB284450)
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB2843B0)
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA90610)
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAA903F0)
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAA90560)
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_REFRESHTREND_OFFSET UNITYSDK_OFFSET(0xAA906F0)
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAA90AC0)
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xAA90AF0)
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAA90B50)
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA90BC0)
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAA90C40)
+#define MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAA90CA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISuibianTempleTurnoverRowWidgetController_TypeDefinitionIndex = 62246;
+
+	class UISuibianTempleTurnoverRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_5E3D3972C89EB6E7* _view; // 0x2A0
+		::MoleMole::UISuibianDirectionIconWidgetController* iconWidget; // 0x2A8
+		::MoleMole::UISuibianDirectionIconWidgetController* lockIconWidget; // 0x2B0
+		::Class_1_48D56DACBE4271BC* syncHelper; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshTrend(::Class_2_CC6C6812D7C240D5* slot, ::System::Boolean isCurrent)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_CC6C6812D7C240D5*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER_REFRESHTREND_OFFSET))(this, slot, isCurrent);
+		}
+
+		::System::Void __base_InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLETURNOVERROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,123 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_1EB8C469AAE7B7DE.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_1_81B5F058B515CAFD;
+class Class_1_EDAA6390395047A1;
+class Class_2_1F76884FC39FD584;
+class Class_2_E87F1D15F1D4AC72;
+class MonoUITableScrollV2;
+namespace MoleMole { class UIBossBattleData; }
+namespace MoleMole { class UIBossBattleDataDialogContext; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class RectTransform; }
+namespace UnityEngine::UI::Extension { class UILocalizationText; }
+template <typename T> class Class_0_16E4307DCC419505_103;
+
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_43D99DDD80B1E30C_OFFSET UNITYSDK_OFFSET(0xB45D130)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_4BB370641205724F_OFFSET UNITYSDK_OFFSET(0xB45E020)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_4EA6B1791DACA9CC_OFFSET UNITYSDK_OFFSET(0xB45D220)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_664C062015F0C2D3_OFFSET UNITYSDK_OFFSET(0xB45DF20)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_6E036109306A7BD3_OFFSET UNITYSDK_OFFSET(0xB45DBE0)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_701F5F21E6B57097_OFFSET UNITYSDK_OFFSET(0xB45DD00)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_8A7D3BDBDCD501E7_OFFSET UNITYSDK_OFFSET(0xB45DD10)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_906D0E3CD9626440_OFFSET UNITYSDK_OFFSET(0xB45D6D0)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_9D93784F2D1F2752_OFFSET UNITYSDK_OFFSET(0xB45CD20)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_B109B7EA5134F96E_OFFSET UNITYSDK_OFFSET(0xB45D660)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xB45DB10)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xB45D670)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_F6E7F4E1BEE09F2A_OFFSET UNITYSDK_OFFSET(0xB45DB70)
+#define CLASS_2_B9AC75948A48BD6C_METHOD_2_FFBA317F4D1B70EB_OFFSET UNITYSDK_OFFSET(0xB45DA40)
+#define CLASS_2_B9AC75948A48BD6C__CTOR_OFFSET UNITYSDK_OFFSET(0xB45D610)
+
+inline static constexpr unsigned int Class_2_B9AC75948A48BD6C_TypeDefinitionIndex = 76962;
+
+class Class_2_B9AC75948A48BD6C : public ::Class_1_1EB8C469AAE7B7DE
+{
+public:
+	::Class_2_1F76884FC39FD584* Field_2_1; // 0x50
+	::Class_1_EDAA6390395047A1* Field_2_7; // 0x58
+	::MonoUITableScrollV2* Field_2_3; // 0x60
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x68
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x70
+	::MonoUITableScrollV2* Field_2_0; // 0x78
+	::Class_0_16E4307DCC419505_103<::MoleMole::UIBossBattleDataDialogContext*>* Field_2_8; // 0x80
+	::MoleMole::UIBossBattleData* Field_2_6; // 0x88
+	::UnityEngine::RectTransform* Field_2_4; // 0x90
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_9D93784F2D1F2752(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_9D93784F2D1F2752_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_43D99DDD80B1E30C()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_43D99DDD80B1E30C_OFFSET))(this);
+	}
+
+	::System::Void Method_2_4EA6B1791DACA9CC()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_4EA6B1791DACA9CC_OFFSET))(this);
+	}
+
+	::System::Void Method_2_B109B7EA5134F96E(::Class_0_16E4307DCC419505_103<::MoleMole::UIBossBattleDataDialogContext*>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_103<::MoleMole::UIBossBattleDataDialogContext*>*))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_B109B7EA5134F96E_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_2_906D0E3CD9626440(::Class_1_EDAA6390395047A1* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_EDAA6390395047A1*))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_906D0E3CD9626440_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_F6E7F4E1BEE09F2A(::Class_1_EDAA6390395047A1* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_EDAA6390395047A1*))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_F6E7F4E1BEE09F2A_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_6E036109306A7BD3(::System::Collections::Generic::List_1<::Class_1_EDAA6390395047A1*>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_EDAA6390395047A1*>*))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_6E036109306A7BD3_OFFSET))(this, a1);
+	}
+
+	::Class_0_16E4307DCC419505_103<::MoleMole::UIBossBattleDataDialogContext*>* Method_2_701F5F21E6B57097()
+	{
+		return ((::Class_0_16E4307DCC419505_103<::MoleMole::UIBossBattleDataDialogContext*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_701F5F21E6B57097_OFFSET))(this);
+	}
+
+	::System::Void Method_2_8A7D3BDBDCD501E7(::Class_1_81B5F058B515CAFD* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_81B5F058B515CAFD*))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_8A7D3BDBDCD501E7_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_FFBA317F4D1B70EB(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_FFBA317F4D1B70EB_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_664C062015F0C2D3(::System::Boolean a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_664C062015F0C2D3_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_4BB370641205724F(::MoleMole::UIBossBattleData* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UIBossBattleData*))((::PBYTE)hIl2Cpp + CLASS_2_B9AC75948A48BD6C_METHOD_2_4BB370641205724F_OFFSET))(this, a1);
+	}
+};

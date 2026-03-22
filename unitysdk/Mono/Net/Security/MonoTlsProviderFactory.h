@@ -5,59 +5,73 @@
 
 namespace Mono::Security::Interface { class MonoTlsProvider; }
 namespace System { class String; }
+namespace System { class Type; }
 namespace System { template <typename T1, typename T2> class Tuple_2; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_CREATEDEFAULTPROVIDERIMPL_OFFSET UNITYSDK_OFFSET(0x17E4DF40)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDERINTERNAL_OFFSET UNITYSDK_OFFSET(0x17E4D430)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDER_OFFSET UNITYSDK_OFFSET(0x17E46370)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEINTERNAL_OFFSET UNITYSDK_OFFSET(0x17E4D530)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEPROVIDERREGISTRATION_OFFSET UNITYSDK_OFFSET(0x17E4D9A0)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_LOOKUPPROVIDER_OFFSET UNITYSDK_OFFSET(0x17E4E030)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY__CCTOR_OFFSET UNITYSDK_OFFSET(0x17E4E940)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_CREATEDEFAULTPROVIDERIMPL_OFFSET UNITYSDK_OFFSET(0x18FAA0C0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_DEBUG_OFFSET UNITYSDK_OFFSET(0x18FAB2E0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDERINTERNAL_OFFSET UNITYSDK_OFFSET(0x18FA9450)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDER_1_OFFSET UNITYSDK_OFFSET(0x18FAB5E0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDER_OFFSET UNITYSDK_OFFSET(0x18FAB3B0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GET_ISINITIALIZED_OFFSET UNITYSDK_OFFSET(0x18FAB640)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEDEBUG_OFFSET UNITYSDK_OFFSET(0x18FAB1E0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEINTERNAL_1_OFFSET UNITYSDK_OFFSET(0x18FAA1E0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEINTERNAL_OFFSET UNITYSDK_OFFSET(0x18FA9580)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEPROVIDERREGISTRATION_OFFSET UNITYSDK_OFFSET(0x18FA9A90)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZE_1_OFFSET UNITYSDK_OFFSET(0x18FAB7C0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x18FAB760)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_ISPROVIDERSUPPORTED_OFFSET UNITYSDK_OFFSET(0x18FAB440)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_LOOKUPPROVIDERTYPE_OFFSET UNITYSDK_OFFSET(0x18FAACF0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_LOOKUPPROVIDER_OFFSET UNITYSDK_OFFSET(0x18FAA400)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY__CCTOR_OFFSET UNITYSDK_OFFSET(0x18FAB820)
 
 namespace Mono::Net::Security
 {
-	inline static constexpr unsigned int MonoTlsProviderFactory_TypeDefinitionIndex = 2427;
+	inline static constexpr unsigned int MonoTlsProviderFactory_TypeDefinitionIndex = 2630;
 
 	class MonoTlsProviderFactory : public ::System::Object
 	{
 	public:
-		static ::System::Collections::Generic::Dictionary_2<::System::Guid, ::Mono::Security::Interface::MonoTlsProvider*>** StaticGet_providerCache()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Guid, ::Mono::Security::Interface::MonoTlsProvider*>**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x15690);
-		}
 		static ::Mono::Security::Interface::MonoTlsProvider** StaticGet_defaultProvider()
 		{
-			return (::Mono::Security::Interface::MonoTlsProvider**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x15698);
-		}
-		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Tuple_2<::System::Guid, ::System::String*>*>** StaticGet_providerRegistration()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Tuple_2<::System::Guid, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x156A0);
+			return (::Mono::Security::Interface::MonoTlsProvider**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x28A0);
 		}
 		static ::System::Object** StaticGet_locker()
 		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x156A8);
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x28A8);
 		}
-		static ::System::Guid* StaticGet_BtlsId()
+		static ::System::Collections::Generic::Dictionary_2<::System::Guid, ::Mono::Security::Interface::MonoTlsProvider*>** StaticGet_providerCache()
 		{
-			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x52E0);
+			return (::System::Collections::Generic::Dictionary_2<::System::Guid, ::Mono::Security::Interface::MonoTlsProvider*>**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x28B0);
 		}
-		static ::System::Guid* StaticGet_AppleTlsId()
+		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Tuple_2<::System::Guid, ::System::String*>*>** StaticGet_providerRegistration()
 		{
-			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x52F0);
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Tuple_2<::System::Guid, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x28B8);
 		}
 		static ::System::Guid* StaticGet_UnityTlsId()
 		{
-			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x5300);
+			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10A0);
+		}
+		static ::System::Guid* StaticGet_AppleTlsId()
+		{
+			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10B0);
 		}
 		static ::System::Guid* StaticGet_LegacyId()
 		{
-			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x5310);
+			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10C0);
 		}
 		static ::System::Boolean* StaticGet_initialized()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x5320);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10D0);
+		}
+		static ::System::Boolean* StaticGet_enableDebug()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10D1);
+		}
+		static ::System::Guid* StaticGet_BtlsId()
+		{
+			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10D4);
 		}
 
 		static ::System::Void _cctor()
@@ -75,9 +89,29 @@ namespace Mono::Net::Security
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEINTERNAL_OFFSET))();
 		}
 
+		static ::System::Void InitializeInternal_1(::System::String* provider)
+		{
+			return ((::System::Void(*)(::System::String*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEINTERNAL_1_OFFSET))(provider);
+		}
+
+		static ::System::Type* LookupProviderType(::System::String* name, ::System::Boolean throwOnError)
+		{
+			return ((::System::Type*(*)(::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_LOOKUPPROVIDERTYPE_OFFSET))(name, throwOnError);
+		}
+
 		static ::Mono::Security::Interface::MonoTlsProvider* LookupProvider(::System::String* name, ::System::Boolean throwOnError)
 		{
 			return ((::Mono::Security::Interface::MonoTlsProvider*(*)(::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_LOOKUPPROVIDER_OFFSET))(name, throwOnError);
+		}
+
+		static ::System::Void InitializeDebug()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEDEBUG_OFFSET))();
+		}
+
+		static ::System::Void Debug(::System::String* message, ::Il2CppArray<::System::Object*>* args)
+		{
+			return ((::System::Void(*)(::System::String*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_DEBUG_OFFSET))(message, args);
 		}
 
 		static ::System::Void InitializeProviderRegistration()
@@ -93,6 +127,31 @@ namespace Mono::Net::Security
 		static ::Mono::Security::Interface::MonoTlsProvider* GetProvider()
 		{
 			return ((::Mono::Security::Interface::MonoTlsProvider*(*)())((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDER_OFFSET))();
+		}
+
+		static ::System::Boolean IsProviderSupported(::System::String* name)
+		{
+			return ((::System::Boolean(*)(::System::String*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_ISPROVIDERSUPPORTED_OFFSET))(name);
+		}
+
+		static ::Mono::Security::Interface::MonoTlsProvider* GetProvider_1(::System::String* name)
+		{
+			return ((::Mono::Security::Interface::MonoTlsProvider*(*)(::System::String*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDER_1_OFFSET))(name);
+		}
+
+		static ::System::Boolean get_IsInitialized()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GET_ISINITIALIZED_OFFSET))();
+		}
+
+		static ::System::Void Initialize()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZE_OFFSET))();
+		}
+
+		static ::System::Void Initialize_1(::System::String* provider)
+		{
+			return ((::System::Void(*)(::System::String*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZE_1_OFFSET))(provider);
 		}
 	};
 }

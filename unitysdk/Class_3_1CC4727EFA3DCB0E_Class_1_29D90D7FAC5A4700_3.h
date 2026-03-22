@@ -1,0 +1,34 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_3_1CC4727EFA3DCB0E;
+namespace Nap::NapECS { class EcsEntity; }
+
+#define CLASS_3_1CC4727EFA3DCB0E_CLASS_1_29D90D7FAC5A4700_3_METHOD_1_DAEB67F34AF80609_1_OFFSET UNITYSDK_OFFSET(0xA18D790)
+#define CLASS_3_1CC4727EFA3DCB0E_CLASS_1_29D90D7FAC5A4700_3_METHOD_1_DAEB67F34AF80609_OFFSET UNITYSDK_OFFSET(0xA18D6B0)
+#define CLASS_3_1CC4727EFA3DCB0E_CLASS_1_29D90D7FAC5A4700_3__CTOR_OFFSET UNITYSDK_OFFSET(0xA18D6A0)
+
+inline static constexpr unsigned int Class_3_1CC4727EFA3DCB0E_Class_1_29D90D7FAC5A4700_3_TypeDefinitionIndex = 78291;
+
+class Class_3_1CC4727EFA3DCB0E_Class_1_29D90D7FAC5A4700_3 : public ::System::Object
+{
+public:
+	::Class_3_1CC4727EFA3DCB0E* Field_1_0; // 0x10
+	::Nap::NapECS::EcsEntity* Field_1_1; // 0x18
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_1CC4727EFA3DCB0E_CLASS_1_29D90D7FAC5A4700_3__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_DAEB67F34AF80609()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_1CC4727EFA3DCB0E_CLASS_1_29D90D7FAC5A4700_3_METHOD_1_DAEB67F34AF80609_OFFSET))(this);
+	}
+
+	::System::Void Method_1_DAEB67F34AF80609_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_1CC4727EFA3DCB0E_CLASS_1_29D90D7FAC5A4700_3_METHOD_1_DAEB67F34AF80609_1_OFFSET))(this);
+	}
+};

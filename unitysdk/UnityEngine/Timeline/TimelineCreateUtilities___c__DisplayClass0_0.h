@@ -3,19 +3,21 @@
 #include "unitysdk/System/Object.h"
 
 namespace System { class String; }
+namespace System { class Type; }
 namespace UnityEngine { class ScriptableObject; }
 
-#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x181A5470)
-#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES___C__DISPLAYCLASS0_0__GENERATEUNIQUEACTORNAME_B__0_OFFSET UNITYSDK_OFFSET(0x181A5490)
+#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A6D6BD0)
+#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES___C__DISPLAYCLASS0_0__GENERATEUNIQUEACTORNAME_B__0_OFFSET UNITYSDK_OFFSET(0x1A6D6BE0)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TimelineCreateUtilities___c__DisplayClass0_0_TypeDefinitionIndex = 29048;
+	inline static constexpr unsigned int TimelineCreateUtilities___c__DisplayClass0_0_TypeDefinitionIndex = 29407;
 
 	class TimelineCreateUtilities___c__DisplayClass0_0 : public ::System::Object
 	{
 	public:
 		::System::String* name; // 0x10
+		::System::Type* trackType; // 0x18
 
 		::System::Void _ctor()
 		{

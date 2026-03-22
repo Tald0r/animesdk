@@ -1,0 +1,182 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/Config/ConfigHollowAssetPath_HollowAssetPathKey.h"
+#include "unitysdk/MoleMole/UIHollowLayerResultPageV2PopWindowController.h"
+#include "unitysdk/MoleMole/UIHollowLayerResultPageV2PopWindowController_RankDataItem.h"
+#include "unitysdk/System/ValueTuple_2.h"
+
+namespace MoleMole { class MonsterFantasyResultContext; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_GETMISSIONLIST_OFFSET UNITYSDK_OFFSET(0xAC0EB10)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xAC0C650)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_OKBTNCALLBACK_OFFSET UNITYSDK_OFFSET(0xAC0C740)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_ONUIFADEPLAYFINISH_OFFSET UNITYSDK_OFFSET(0xAC0CDC0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAC0C8F0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAC0D060)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_QUITBTNCALLBACK_OFFSET UNITYSDK_OFFSET(0xAC0C660)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHCHAPTERTITLE_OFFSET UNITYSDK_OFFSET(0xAC0D360)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHCHOICEBTN_OFFSET UNITYSDK_OFFSET(0xAC0E070)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHLOSETIPS_OFFSET UNITYSDK_OFFSET(0xAC0F420)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHMISSIONVIEW_OFFSET UNITYSDK_OFFSET(0xAC0D620)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHREWARDVIEW_OFFSET UNITYSDK_OFFSET(0xAC0D750)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHSAB_OFFSET UNITYSDK_OFFSET(0xAC0EFF0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHWINTIPS_OFFSET UNITYSDK_OFFSET(0xAC0F9E0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xAC0C820)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAC102B0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER__ONUIINIT_B__7_0_OFFSET UNITYSDK_OFFSET(0xAC104A0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER__ONUIINIT_B__7_1_OFFSET UNITYSDK_OFFSET(0xAC10530)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER__REFRESHSAB_B__11_1_OFFSET UNITYSDK_OFFSET(0xAC10550)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER__REFRESHSAB_B__11_2_OFFSET UNITYSDK_OFFSET(0xAC107F0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_GETMISSIONLIST_OFFSET UNITYSDK_OFFSET(0xAC10AA0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAC10AD0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAC10AE0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_REFRESHMISSIONVIEW_OFFSET UNITYSDK_OFFSET(0xAC10AF0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_REFRESHREWARDVIEW_OFFSET UNITYSDK_OFFSET(0xAC10B00)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xAC10B10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMonsterFantasyResultPageController_TypeDefinitionIndex = 42427;
+
+	class UIMonsterFantasyResultPageController : public ::MoleMole::UIHollowLayerResultPageV2PopWindowController
+	{
+	public:
+		::MoleMole::MonsterFantasyResultContext* _context; // 0x378
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ConfigHollowAssetPath_HollowAssetPathKey>* RankDic; // 0x380
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void QuitBtnCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_QUITBTNCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void OKBtnCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_OKBTNCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIFadePlayFinish(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_ONUIFADEPLAYFINISH_OFFSET))(this, args);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::ValueTuple_2<::System::Collections::Generic::List_1<::MoleMole::UIHollowLayerResultPageV2PopWindowController_RankDataItem>*, ::System::Int32> GetMissionList()
+		{
+			return ((::System::ValueTuple_2<::System::Collections::Generic::List_1<::MoleMole::UIHollowLayerResultPageV2PopWindowController_RankDataItem>*, ::System::Int32>(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_GETMISSIONLIST_OFFSET))(this);
+		}
+
+		::System::Void RefreshSAB()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHSAB_OFFSET))(this);
+		}
+
+		::System::Void RefreshLoseTips()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHLOSETIPS_OFFSET))(this);
+		}
+
+		::System::Void RefreshWinTips()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHWINTIPS_OFFSET))(this);
+		}
+
+		::System::Void RefreshMissionView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHMISSIONVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshChapterTitle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHCHAPTERTITLE_OFFSET))(this);
+		}
+
+		::System::Void RefreshRewardView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHREWARDVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshChoiceBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER_REFRESHCHOICEBTN_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__7_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER__ONUIINIT_B__7_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__7_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER__ONUIINIT_B__7_1_OFFSET))(this);
+		}
+
+		::System::Void _RefreshSAB_b__11_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER__REFRESHSAB_B__11_1_OFFSET))(this);
+		}
+
+		::System::Void _RefreshSAB_b__11_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER__REFRESHSAB_B__11_2_OFFSET))(this);
+		}
+
+		::System::ValueTuple_2<::System::Collections::Generic::List_1<::MoleMole::UIHollowLayerResultPageV2PopWindowController_RankDataItem>*, ::System::Int32> __base_GetMissionList()
+		{
+			return ((::System::ValueTuple_2<::System::Collections::Generic::List_1<::MoleMole::UIHollowLayerResultPageV2PopWindowController_RankDataItem>*, ::System::Int32>(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_GETMISSIONLIST_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_RefreshMissionView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_REFRESHMISSIONVIEW_OFFSET))(this);
+		}
+
+		::System::Void __base_RefreshRewardView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_REFRESHREWARDVIEW_OFFSET))(this);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

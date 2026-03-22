@@ -1,0 +1,261 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIActivityTeamTrialPageController_PageState.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_7ECB9691B142D586;
+class Class_2_847BE8FDF454E853;
+class Class_2_CFC1DA8C3898E356;
+namespace MoleMole { class UIActivityCompWeekRewardBtnWidgetController; }
+namespace MoleMole { class UIActivityTeamTrialFightingWidgetController; }
+namespace MoleMole { class UIActivityTeamTrialPageController_Context; }
+namespace MoleMole { class UIActivityTeamTrialWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace UnityEngine::UI::Extension { class UITimeWidget; }
+
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ADDCOMPENTERBTN_OFFSET UNITYSDK_OFFSET(0xA4C72E0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_CLEARCOMPONTNBTNS_OFFSET UNITYSDK_OFFSET(0xA4C6BD0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xA4C66C0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_INITANDPLAYVIDEO_OFFSET UNITYSDK_OFFSET(0xA4C7790)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONABILITYSELECTCHANGE_OFFSET UNITYSDK_OFFSET(0xA4C93B0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONACTIVITYCLOSE_OFFSET UNITYSDK_OFFSET(0xA4C8860)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONACTIVITYEND_OFFSET UNITYSDK_OFFSET(0xA4C89E0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONCLICKBACK_OFFSET UNITYSDK_OFFSET(0xA4C9410)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONCLICKINFO_OFFSET UNITYSDK_OFFSET(0xA4C95E0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONCLICKMAINCITY_OFFSET UNITYSDK_OFFSET(0xA4C9490)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONCLICKOK_OFFSET UNITYSDK_OFFSET(0xA4C9830)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA4C66D0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xA4C85D0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA4C8710)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONSELECTQUEST_OFFSET UNITYSDK_OFFSET(0xA4C91D0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xA4C84C0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA4C7F20)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA4C6B10)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA4C6770)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA4C6CF0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_REFRESHGAMEPADBTN_OFFSET UNITYSDK_OFFSET(0xA4C8FE0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_REFRESHOKBTN_OFFSET UNITYSDK_OFFSET(0xA4C8E40)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_REFRESHREMAINTIMER_OFFSET UNITYSDK_OFFSET(0xA4C7530)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_SETTEAMTRIALSTATE_OFFSET UNITYSDK_OFFSET(0xA4C7A30)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_TRYCREATETEAMTRIALWIDGET_OFFSET UNITYSDK_OFFSET(0xA4C8A80)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA4C9A80)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER__INITANDPLAYVIDEO_B__26_0_OFFSET UNITYSDK_OFFSET(0xA4C9A90)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER__INITANDPLAYVIDEO_B__26_1_OFFSET UNITYSDK_OFFSET(0xA4C9AF0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER__SETTEAMTRIALSTATE_B__27_0_OFFSET UNITYSDK_OFFSET(0xA4C9B30)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA4C9BF0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0xA4C9C60)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA4C9CC0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xA4C9CF0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA4C9D00)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA4C9D10)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA4C9D20)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA4C9D30)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityTeamTrialPageController_TypeDefinitionIndex = 63910;
+
+	class UIActivityTeamTrialPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::String* BgVideoUrl; // 0x0
+		::Class_2_847BE8FDF454E853* _view; // 0x2F8
+		::MoleMole::UIActivityTeamTrialPageController_Context* _context; // 0x300
+		::System::Int32 _activityID; // 0x308
+		::MoleMole::UIActivityTeamTrialPageController_PageState _curState; // 0x30C
+		::MoleMole::UIActivityTeamTrialWidgetController* _teamTrialWidgetController; // 0x310
+		::MoleMole::UIActivityTeamTrialFightingWidgetController* _teamTrialLevelInfoWidgetController; // 0x318
+		::MoleMole::UIActivityCompWeekRewardBtnWidgetController* _compRewardBtn; // 0x320
+		::Class_1_7ECB9691B142D586* _videoPlayerHelper; // 0x328
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnActivityClose(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONACTIVITYCLOSE_OFFSET))(this, obj);
+		}
+
+		::System::Void AddCompEnterBtn(::Class_2_CFC1DA8C3898E356* btnData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_CFC1DA8C3898E356*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ADDCOMPENTERBTN_OFFSET))(this, btnData);
+		}
+
+		::System::Void ClearCompontnBtns()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_CLEARCOMPONTNBTNS_OFFSET))(this);
+		}
+
+		::System::Void RefreshRemainTimer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_REFRESHREMAINTIMER_OFFSET))(this);
+		}
+
+		::System::Void OnActivityEnd(::UnityEngine::UI::Extension::UITimeWidget* timeWidget)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UITimeWidget*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONACTIVITYEND_OFFSET))(this, timeWidget);
+		}
+
+		::System::Void InitAndPlayVideo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_INITANDPLAYVIDEO_OFFSET))(this);
+		}
+
+		::System::Void SetTeamTrialState(::MoleMole::UIActivityTeamTrialPageController_PageState pageState)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityTeamTrialPageController_PageState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_SETTEAMTRIALSTATE_OFFSET))(this, pageState);
+		}
+
+		::System::Void TryCreateTeamTrialWidget(::MoleMole::UIActivityTeamTrialPageController_PageState pageState)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityTeamTrialPageController_PageState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_TRYCREATETEAMTRIALWIDGET_OFFSET))(this, pageState);
+		}
+
+		::System::Void OnSelectQuest(::System::Int32 questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONSELECTQUEST_OFFSET))(this, questID);
+		}
+
+		::System::Void OnAbilitySelectChange()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONABILITYSELECTCHANGE_OFFSET))(this);
+		}
+
+		::System::Void RefreshOkBtn(::MoleMole::UIActivityTeamTrialPageController_PageState pageState)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityTeamTrialPageController_PageState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_REFRESHOKBTN_OFFSET))(this, pageState);
+		}
+
+		::System::Void RefreshGamepadBtn(::MoleMole::UIActivityTeamTrialPageController_PageState pageState)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityTeamTrialPageController_PageState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_REFRESHGAMEPADBTN_OFFSET))(this, pageState);
+		}
+
+		::System::Void OnClickBack()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONCLICKBACK_OFFSET))(this);
+		}
+
+		::System::Void OnClickMainCity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONCLICKMAINCITY_OFFSET))(this);
+		}
+
+		::System::Void OnClickInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONCLICKINFO_OFFSET))(this);
+		}
+
+		::System::Void OnClickOK()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER_ONCLICKOK_OFFSET))(this);
+		}
+
+		::System::Void _InitAndPlayVideo_b__26_0(::Class_1_7ECB9691B142D586* helper)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7ECB9691B142D586*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER__INITANDPLAYVIDEO_B__26_0_OFFSET))(this, helper);
+		}
+
+		::System::Void _InitAndPlayVideo_b__26_1(::Class_1_7ECB9691B142D586* helper)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7ECB9691B142D586*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER__INITANDPLAYVIDEO_B__26_1_OFFSET))(this, helper);
+		}
+
+		::System::Void _SetTeamTrialState_b__27_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER__SETTEAMTRIALSTATE_B__27_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

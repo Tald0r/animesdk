@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define TMPRO_SPRITEASSETUTILITIES_TEXTUREPACKER_JSONARRAY_SPRITESIZE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x203D0C0)
+#define TMPRO_SPRITEASSETUTILITIES_TEXTUREPACKER_JSONARRAY_SPRITESIZE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x96A530)
 
 namespace TMPro::SpriteAssetUtilities
 {
-	inline static constexpr unsigned int TexturePacker_JsonArray_SpriteSize_TypeDefinitionIndex = 33447;
+	inline static constexpr unsigned int TexturePacker_JsonArray_SpriteSize_TypeDefinitionIndex = 36068;
 
 	struct alignas(4) TexturePacker_JsonArray_SpriteSize
 	{

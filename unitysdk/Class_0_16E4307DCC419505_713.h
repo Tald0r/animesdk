@@ -1,10 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/Unreal/FName.h"
 
-class Class_1_2BF31F3092BDFD9E;
-namespace RPG::Client { class WolfBroGunPlayPuzzleBoard; }
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_713_TypeDefinitionIndex = 54578;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_713_TypeDefinitionIndex = 76792;
 
 class Class_0_16E4307DCC419505_713
 {

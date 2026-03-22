@@ -1,0 +1,52 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_091D3562DE6F17FD;
+namespace MoleMole { class UIMainCityChatPlayWidgetController; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS55_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC8B0750)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS55_0__SHOWQUESTRECOMMEND_B__2_OFFSET UNITYSDK_OFFSET(0xC8B12A0)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS55_0__SHOWQUESTRECOMMEND_B__3_OFFSET UNITYSDK_OFFSET(0xC8B1450)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS55_0__SHOWQUESTRECOMMEND_G__OPENQUESTRECOMMEND_0_OFFSET UNITYSDK_OFFSET(0xC8B0760)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS55_0__SHOWQUESTRECOMMEND_G__REFRESHQUESTLIST_1_OFFSET UNITYSDK_OFFSET(0xC8B0A20)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMainCityChatPlayWidgetController___c__DisplayClass55_0_TypeDefinitionIndex = 53842;
+
+	class UIMainCityChatPlayWidgetController___c__DisplayClass55_0 : public ::System::Object
+	{
+	public:
+		::System::Action_1<::System::Boolean>* __9__3; // 0x10
+		::Class_2_091D3562DE6F17FD* node; // 0x18
+		::MoleMole::UIMainCityChatPlayWidgetController* __4__this; // 0x20
+		::System::Int32 selectedQuestId; // 0x28
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS55_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ShowQuestRecommend_g__OpenQuestRecommend_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS55_0__SHOWQUESTRECOMMEND_G__OPENQUESTRECOMMEND_0_OFFSET))(this);
+		}
+
+		::System::Void _ShowQuestRecommend_b__2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS55_0__SHOWQUESTRECOMMEND_B__2_OFFSET))(this);
+		}
+
+		::System::Void _ShowQuestRecommend_b__3(::System::Boolean _)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS55_0__SHOWQUESTRECOMMEND_B__3_OFFSET))(this, _);
+		}
+
+		::System::Void _ShowQuestRecommend_g__RefreshQuestList_1(::System::Int32 animIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS55_0__SHOWQUESTRECOMMEND_G__REFRESHQUESTLIST_1_OFFSET))(this, animIndex);
+		}
+	};
+}

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_UIELEMENTS_STYLESHEETS_STYLEVALUEPROPERTYREADER__CTOR_OFFSET UNITYSDK_OFFSET(0x182CC720)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_STYLEVALUEPROPERTYREADER__CTOR_OFFSET UNITYSDK_OFFSET(0x18932100)
 
 namespace UnityEngine::UIElements::StyleSheets
 {
-	inline static constexpr unsigned int StyleValuePropertyReader_TypeDefinitionIndex = 5876;
+	inline static constexpr unsigned int StyleValuePropertyReader_TypeDefinitionIndex = 23924;
 
 	class StyleValuePropertyReader : public ::System::Object
 	{

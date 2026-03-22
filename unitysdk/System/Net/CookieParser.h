@@ -6,18 +6,20 @@ namespace System { class String; }
 namespace System::Net { class Cookie; }
 namespace System::Net { class CookieTokenizer; }
 
-#define SYSTEM_NET_COOKIEPARSER_CHECKQUOTED_OFFSET UNITYSDK_OFFSET(0x17EAED20)
-#define SYSTEM_NET_COOKIEPARSER_GET_OFFSET UNITYSDK_OFFSET(0x17EAE120)
-#define SYSTEM_NET_COOKIEPARSER__CTOR_OFFSET UNITYSDK_OFFSET(0x17EAE090)
+#define SYSTEM_NET_COOKIEPARSER_CHECKQUOTED_OFFSET UNITYSDK_OFFSET(0x18FB98E0)
+#define SYSTEM_NET_COOKIEPARSER_GETSERVER_OFFSET UNITYSDK_OFFSET(0x18FB9940)
+#define SYSTEM_NET_COOKIEPARSER_GET_OFFSET UNITYSDK_OFFSET(0x18FB8EC0)
+#define SYSTEM_NET_COOKIEPARSER__CTOR_OFFSET UNITYSDK_OFFSET(0x18FB8E50)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int CookieParser_TypeDefinitionIndex = 2778;
+	inline static constexpr unsigned int CookieParser_TypeDefinitionIndex = 3418;
 
 	class CookieParser : public ::System::Object
 	{
 	public:
 		::System::Net::CookieTokenizer* m_tokenizer; // 0x10
+		::System::Net::Cookie* m_savedCookie; // 0x18
 
 		::System::Void _ctor(::System::String* cookieString)
 		{
@@ -27,6 +29,11 @@ namespace System::Net
 		::System::Net::Cookie* Get()
 		{
 			return ((::System::Net::Cookie*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIEPARSER_GET_OFFSET))(this);
+		}
+
+		::System::Net::Cookie* GetServer()
+		{
+			return ((::System::Net::Cookie*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIEPARSER_GETSERVER_OFFSET))(this);
 		}
 
 		static ::System::String* CheckQuoted(::System::String* value)

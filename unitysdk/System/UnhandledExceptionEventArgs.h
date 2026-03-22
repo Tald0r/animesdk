@@ -4,13 +4,12 @@
 
 namespace System { class Object; }
 
-#define SYSTEM_UNHANDLEDEXCEPTIONEVENTARGS_GET_EXCEPTIONOBJECT_OFFSET UNITYSDK_OFFSET(0x15BBE7B0)
-#define SYSTEM_UNHANDLEDEXCEPTIONEVENTARGS_GET_ISTERMINATING_OFFSET UNITYSDK_OFFSET(0x15BBE7C0)
-#define SYSTEM_UNHANDLEDEXCEPTIONEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x15BBE770)
+#define SYSTEM_UNHANDLEDEXCEPTIONEVENTARGS_GET_EXCEPTIONOBJECT_OFFSET UNITYSDK_OFFSET(0x19B81460)
+#define SYSTEM_UNHANDLEDEXCEPTIONEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x19B81420)
 
 namespace System
 {
-	inline static constexpr unsigned int UnhandledExceptionEventArgs_TypeDefinitionIndex = 358;
+	inline static constexpr unsigned int UnhandledExceptionEventArgs_TypeDefinitionIndex = 348;
 
 	class UnhandledExceptionEventArgs : public ::System::EventArgs
 	{
@@ -26,11 +25,6 @@ namespace System
 		::System::Object* get_ExceptionObject()
 		{
 			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_UNHANDLEDEXCEPTIONEVENTARGS_GET_EXCEPTIONOBJECT_OFFSET))(this);
-		}
-
-		::System::Boolean get_IsTerminating()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_UNHANDLEDEXCEPTIONEVENTARGS_GET_ISTERMINATING_OFFSET))(this);
 		}
 	};
 }

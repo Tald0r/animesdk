@@ -1,0 +1,59 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_F0E4E2848B1D52CE;
+class Class_2_C5C4037080416954_Class_2_CF95F81DB4449032_1;
+class Class_2_E71E286B10A21FB0;
+namespace MoleMole { class UIABInLevelGeneralWidgetController; }
+
+#define MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__BINDVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x8AA2FD0)
+#define MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__BINDVIEW_B__1_OFFSET UNITYSDK_OFFSET(0x8AA3110)
+#define MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__BINDVIEW_B__2_OFFSET UNITYSDK_OFFSET(0x8AA3250)
+#define MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__BINDVIEW_B__3_OFFSET UNITYSDK_OFFSET(0x8AA35C0)
+#define MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__BINDVIEW_B__4_OFFSET UNITYSDK_OFFSET(0x8AA3710)
+#define MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8AA2FC0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIABInLevelGeneralWidgetController___c__DisplayClass23_0_TypeDefinitionIndex = 46243;
+
+	class UIABInLevelGeneralWidgetController___c__DisplayClass23_0 : public ::System::Object
+	{
+	public:
+		::MoleMole::UIABInLevelGeneralWidgetController* __4__this; // 0x10
+		::Class_2_E71E286B10A21FB0* inLevelData; // 0x18
+		::Class_2_C5C4037080416954_Class_2_CF95F81DB4449032_1* lpView; // 0x20
+		::Class_1_F0E4E2848B1D52CE* viewModel; // 0x28
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__BINDVIEW_B__0_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__BINDVIEW_B__1_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__BINDVIEW_B__2_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__BINDVIEW_B__3_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELGENERALWIDGETCONTROLLER___C__DISPLAYCLASS23_0__BINDVIEW_B__4_OFFSET))(this);
+		}
+	};
+}

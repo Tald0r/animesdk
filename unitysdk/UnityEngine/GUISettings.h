@@ -3,17 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Color.h"
 
-#define UNITYENGINE_GUISETTINGS_GET_CURSORCOLOR_OFFSET UNITYSDK_OFFSET(0x18265EC0)
-#define UNITYENGINE_GUISETTINGS_GET_CURSORFLASHSPEED_OFFSET UNITYSDK_OFFSET(0x18265ED0)
-#define UNITYENGINE_GUISETTINGS_GET_DOUBLECLICKSELECTSWORD_OFFSET UNITYSDK_OFFSET(0x18257570)
-#define UNITYENGINE_GUISETTINGS_GET_SELECTIONCOLOR_OFFSET UNITYSDK_OFFSET(0x18265EF0)
-#define UNITYENGINE_GUISETTINGS_GET_TRIPLECLICKSELECTSLINE_OFFSET UNITYSDK_OFFSET(0x18257690)
-#define UNITYENGINE_GUISETTINGS_INTERNAL_GETCURSORFLASHSPEED_OFFSET UNITYSDK_OFFSET(0x18265EB0)
-#define UNITYENGINE_GUISETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x18265F00)
+#define UNITYENGINE_GUISETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x19C414C0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int GUISettings_TypeDefinitionIndex = 5018;
+	inline static constexpr unsigned int GUISettings_TypeDefinitionIndex = 6365;
 
 	class GUISettings : public ::System::Object
 	{
@@ -27,36 +21,6 @@ namespace UnityEngine
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISETTINGS__CTOR_OFFSET))(this);
-		}
-
-		static ::System::Single Internal_GetCursorFlashSpeed()
-		{
-			return ((::System::Single(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GUISETTINGS_INTERNAL_GETCURSORFLASHSPEED_OFFSET))();
-		}
-
-		::System::Boolean get_doubleClickSelectsWord()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISETTINGS_GET_DOUBLECLICKSELECTSWORD_OFFSET))(this);
-		}
-
-		::System::Boolean get_tripleClickSelectsLine()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISETTINGS_GET_TRIPLECLICKSELECTSLINE_OFFSET))(this);
-		}
-
-		::UnityEngine::Color get_cursorColor()
-		{
-			return ((::UnityEngine::Color(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISETTINGS_GET_CURSORCOLOR_OFFSET))(this);
-		}
-
-		::System::Single get_cursorFlashSpeed()
-		{
-			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISETTINGS_GET_CURSORFLASHSPEED_OFFSET))(this);
-		}
-
-		::UnityEngine::Color get_selectionColor()
-		{
-			return ((::UnityEngine::Color(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISETTINGS_GET_SELECTIONCOLOR_OFFSET))(this);
 		}
 	};
 }

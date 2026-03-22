@@ -1,0 +1,50 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlowCanvas/Flow.h"
+#include "unitysdk/FlowCanvas/FlowNode.h"
+#include "unitysdk/MoleMole/StatusEffectType.h"
+
+namespace FlowCanvas { class FlowInput; }
+namespace FlowCanvas { class FlowOutput; }
+namespace FlowCanvas { template <typename T> class ValueInput_1; }
+namespace MoleMole { class ChessEntity; }
+
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMEENTITYSETEFFECT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xF1996D0)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMEENTITYSETEFFECT_START_OFFSET UNITYSDK_OFFSET(0xF199830)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMEENTITYSETEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xF199B40)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMEENTITYSETEFFECT__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0xF199B60)
+
+namespace MoleMole::FlowCanvas
+{
+	inline static constexpr unsigned int HackerGameEntitySetEffect_TypeDefinitionIndex = 68763;
+
+	class HackerGameEntitySetEffect : public ::FlowCanvas::FlowNode
+	{
+	public:
+		::FlowCanvas::ValueInput_1<::MoleMole::ChessEntity*>* chessEntity; // 0xA8
+		::FlowCanvas::FlowInput* start; // 0xB0
+		::FlowCanvas::ValueInput_1<::System::Boolean>* value; // 0xB8
+		::FlowCanvas::FlowOutput* output; // 0xC0
+		::FlowCanvas::ValueInput_1<::MoleMole::StatusEffectType>* effectType; // 0xC8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_HACKERGAMEENTITYSETEFFECT__CTOR_OFFSET))(this);
+		}
+
+		::System::Void RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_HACKERGAMEENTITYSETEFFECT_REGISTERPORTS_OFFSET))(this);
+		}
+
+		::System::Void Start(::FlowCanvas::Flow flow)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_HACKERGAMEENTITYSETEFFECT_START_OFFSET))(this, flow);
+		}
+
+		::System::Void _RegisterPorts_b__0_0(::FlowCanvas::Flow f)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_HACKERGAMEENTITYSETEFFECT__REGISTERPORTS_B__0_0_OFFSET))(this, f);
+		}
+	};
+}

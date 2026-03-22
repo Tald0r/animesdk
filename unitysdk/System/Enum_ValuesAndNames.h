@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define SYSTEM_ENUM_VALUESANDNAMES__CTOR_OFFSET UNITYSDK_OFFSET(0x15C2D780)
+#define SYSTEM_ENUM_VALUESANDNAMES__CTOR_OFFSET UNITYSDK_OFFSET(0x1912E3F0)
 
 namespace System
 {
-	inline static constexpr unsigned int Enum_ValuesAndNames_TypeDefinitionIndex = 241;
+	inline static constexpr unsigned int Enum_ValuesAndNames_TypeDefinitionIndex = 227;
 
 	class Enum_ValuesAndNames : public ::System::Object
 	{

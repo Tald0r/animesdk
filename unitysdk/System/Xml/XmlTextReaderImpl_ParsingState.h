@@ -10,14 +10,13 @@ namespace System::Text { class Decoder; }
 namespace System::Text { class Encoding; }
 namespace System::Xml { class IDtdEntityInfo; }
 
-#define SYSTEM_XML_XMLTEXTREADERIMPL_PARSINGSTATE_CLEAR_OFFSET UNITYSDK_OFFSET(0x20312D0)
-#define SYSTEM_XML_XMLTEXTREADERIMPL_PARSINGSTATE_CLOSE_OFFSET UNITYSDK_OFFSET(0x2031330)
-#define SYSTEM_XML_XMLTEXTREADERIMPL_PARSINGSTATE_GET_LINENO_OFFSET UNITYSDK_OFFSET(0x37380)
-#define SYSTEM_XML_XMLTEXTREADERIMPL_PARSINGSTATE_GET_LINEPOS_OFFSET UNITYSDK_OFFSET(0x2031370)
+#define SYSTEM_XML_XMLTEXTREADERIMPL_PARSINGSTATE_CLEAR_OFFSET UNITYSDK_OFFSET(0x8C6790)
+#define SYSTEM_XML_XMLTEXTREADERIMPL_PARSINGSTATE_CLOSE_OFFSET UNITYSDK_OFFSET(0x8C67F0)
+#define SYSTEM_XML_XMLTEXTREADERIMPL_PARSINGSTATE_GET_LINEPOS_OFFSET UNITYSDK_OFFSET(0x8C6830)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int XmlTextReaderImpl_ParsingState_TypeDefinitionIndex = 1837;
+	inline static constexpr unsigned int XmlTextReaderImpl_ParsingState_TypeDefinitionIndex = 1723;
 
 	struct alignas(8) XmlTextReaderImpl_ParsingState
 	{
@@ -51,11 +50,6 @@ namespace System::Xml
 		::System::Void Close(::System::Boolean closeInput)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLTEXTREADERIMPL_PARSINGSTATE_CLOSE_OFFSET))(this, closeInput);
-		}
-
-		::System::Int32 get_LineNo()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLTEXTREADERIMPL_PARSINGSTATE_GET_LINENO_OFFSET))(this);
 		}
 
 		::System::Int32 get_LinePos()

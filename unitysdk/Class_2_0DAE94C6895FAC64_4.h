@@ -4,29 +4,17 @@
 
 namespace System { class String; }
 
-#define CLASS_2_0DAE94C6895FAC64_4_GET_ID_OFFSET UNITYSDK_OFFSET(0x17B85ED0)
-#define CLASS_2_0DAE94C6895FAC64_4__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17B85EC0)
-#define CLASS_2_0DAE94C6895FAC64_4__CTOR_OFFSET UNITYSDK_OFFSET(0x17B85EB0)
+#define CLASS_2_0DAE94C6895FAC64_4__CTOR_OFFSET UNITYSDK_OFFSET(0x19224920)
 
-inline static constexpr unsigned int Class_2_0DAE94C6895FAC64_4_TypeDefinitionIndex = 33025;
+inline static constexpr unsigned int Class_2_0DAE94C6895FAC64_4_TypeDefinitionIndex = 79961;
 
 class Class_2_0DAE94C6895FAC64_4 : public ::System::Attribute
 {
 public:
-	::System::String* _Id_k__BackingField; // 0x10
+	::System::String* Field_2_0; // 0x10
 
-	::System::Void _ctor()
+	::System::Void _ctor(::System::String* a1)
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0DAE94C6895FAC64_4__CTOR_OFFSET))(this);
-	}
-
-	::System::Void _ctor_1(::System::String* a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_2_0DAE94C6895FAC64_4__CTOR_1_OFFSET))(this, a1);
-	}
-
-	::System::String* get_Id()
-	{
-		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0DAE94C6895FAC64_4_GET_ID_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_2_0DAE94C6895FAC64_4__CTOR_OFFSET))(this, a1);
 	}
 };

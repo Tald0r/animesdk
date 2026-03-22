@@ -1,0 +1,182 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_D375C91CCE5D3999;
+class Class_2_055450060950DB07_5;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class UIActivityFishMainPageController_Carousel; }
+namespace MoleMole { class UIActivityFishProgressBarWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralActivityTagWidgetController; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xC8D7460)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC8D7470)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0xC8D8730)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONITEMCHANGEDDELAY_OFFSET UNITYSDK_OFFSET(0xC8D8A30)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC8D8980)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC8D7510)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC8D7B20)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHAVATARREWARD_OFFSET UNITYSDK_OFFSET(0xC8DB4D0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHBIGREWARD_OFFSET UNITYSDK_OFFSET(0xC8DA030)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHFINALREWARD_OFFSET UNITYSDK_OFFSET(0xC8DA0A0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHNORMALREWARD_OFFSET UNITYSDK_OFFSET(0xC8D93B0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHPROGRESS_OFFSET UNITYSDK_OFFSET(0xC8D9190)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHREWARD_OFFSET UNITYSDK_OFFSET(0xC8D8EC0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHTITLE_OFFSET UNITYSDK_OFFSET(0xC8D8AA0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xC8D7D70)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHWEAPONREWARD_OFFSET UNITYSDK_OFFSET(0xC8DAD60)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_STARTCAROUSEL_OFFSET UNITYSDK_OFFSET(0xC8D80C0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC8DBF40)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER__ONUIINIT_B__10_0_OFFSET UNITYSDK_OFFSET(0xC8DC050)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER__REFRESHTITLE_B__17_0_OFFSET UNITYSDK_OFFSET(0xC8DC0D0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC8DC0E0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0xC8DC150)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC8DC1C0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC8DC1D0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC8DC1E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityFishMainPageController_TypeDefinitionIndex = 78551;
+
+	class UIActivityFishMainPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Int32 COIN_ITEM_ID = 0x88; // 0x0
+		::Class_2_055450060950DB07_5* _view; // 0x2F8
+		::MoleMole::UIGeneralActivityTagWidgetController* _activityTag; // 0x300
+		::Class_1_D375C91CCE5D3999* _mainActivity; // 0x308
+		::MoleMole::UIActivityFishProgressBarWidgetController* _progressBarWidget; // 0x310
+		::MoleMole::UIActivityFishMainPageController_Carousel* _weaponCarousel; // 0x318
+		::MoleMole::UIActivityFishMainPageController_Carousel* _roleCarousel; // 0x320
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void StartCarousel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_STARTCAROUSEL_OFFSET))(this);
+		}
+
+		::System::Void OnItemChangedDelay(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_ONITEMCHANGEDDELAY_OFFSET))(this, args);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshTitle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHTITLE_OFFSET))(this);
+		}
+
+		::System::Void RefreshReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHREWARD_OFFSET))(this);
+		}
+
+		::System::Void RefreshProgress()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHPROGRESS_OFFSET))(this);
+		}
+
+		::System::Void RefreshNormalReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHNORMALREWARD_OFFSET))(this);
+		}
+
+		::System::Void RefreshBigReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHBIGREWARD_OFFSET))(this);
+		}
+
+		::System::Void RefreshWeaponReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHWEAPONREWARD_OFFSET))(this);
+		}
+
+		::System::Void RefreshAvatarReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHAVATARREWARD_OFFSET))(this);
+		}
+
+		::System::Void RefreshFinalReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_REFRESHFINALREWARD_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__10_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER__ONUIINIT_B__10_0_OFFSET))(this);
+		}
+
+		::System::Void _RefreshTitle_b__17_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER__REFRESHTITLE_B__17_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

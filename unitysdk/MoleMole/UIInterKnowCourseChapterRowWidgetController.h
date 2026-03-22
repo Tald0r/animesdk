@@ -1,0 +1,87 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_84288157D4F72E4C;
+class Class_2_E7D93FA3DEF63A86;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_ONCLICKCHAPTERITEM_OFFSET UNITYSDK_OFFSET(0x689D0E0)
+#define MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x689CC70)
+#define MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x689CDF0)
+#define MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x689CD10)
+#define MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x689CA90)
+#define MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_SETEMPTY_OFFSET UNITYSDK_OFFSET(0x689CFC0)
+#define MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x689D160)
+#define MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x689D170)
+#define MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x689D1E0)
+#define MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x689D260)
+#define MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x689D2E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInterKnowCourseChapterRowWidgetController_TypeDefinitionIndex = 62556;
+
+	class UIInterKnowCourseChapterRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_E7D93FA3DEF63A86* _view; // 0x2D0
+		::Class_1_84288157D4F72E4C* chapterData; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void SetEmpty(::System::Boolean isEmpty)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_SETEMPTY_OFFSET))(this, isEmpty);
+		}
+
+		::System::Void OnClickChapterItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER_ONCLICKCHAPTERITEM_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSECHAPTERROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

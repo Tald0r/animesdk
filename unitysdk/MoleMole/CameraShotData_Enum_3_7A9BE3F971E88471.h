@@ -1,0 +1,14 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int CameraShotData_Enum_3_7A9BE3F971E88471_TypeDefinitionIndex = 43197;
+
+	enum class CameraShotData_Enum_3_7A9BE3F971E88471 : ::System::Int32
+	{
+		Normal = 0,
+		Hold = 2,
+		Loop = 1,
+	};
+}

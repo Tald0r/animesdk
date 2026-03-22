@@ -1,0 +1,138 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIHollowAchievementDialogWidgetController___c__DisplayClass8_0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_2_36134FF29855BCB0;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIWidgetController; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_DOFADEOUT_OFFSET UNITYSDK_OFFSET(0xBFC9930)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_GETALPHA_OFFSET UNITYSDK_OFFSET(0xBFC9670)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xBFC9020)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_INITACHIEVEMENT_OFFSET UNITYSDK_OFFSET(0xBFCA270)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_INITCURSE_OFFSET UNITYSDK_OFFSET(0xBFC9B60)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_INITTABS_OFFSET UNITYSDK_OFFSET(0xBFC9460)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBFC9260)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBFC95E0)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBFC9030)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBFC9300)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBFCA400)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER__INITTABS_G__INITCURSE_8_0_OFFSET UNITYSDK_OFFSET(0xBFC96F0)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET UNITYSDK_OFFSET(0xBFCA410)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER__ONUIINIT_B__3_1_OFFSET UNITYSDK_OFFSET(0xBFCA500)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBFCA5F0)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBFCA660)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBFCA670)
+#define MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBFCA680)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowAchievementDialogWidgetController_TypeDefinitionIndex = 65160;
+
+	class UIHollowAchievementDialogWidgetController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_36134FF29855BCB0* _view; // 0x2F8
+		::MoleMole::UIWidgetController* lastWidget; // 0x300
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* cardList; // 0x308
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* blessList; // 0x310
+		::System::Boolean isInHollow; // 0x318
+		::System::Boolean isArpeggio; // 0x319
+		::System::Int32 startIndex; // 0x31C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Single GetAlpha()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_GETALPHA_OFFSET))(this);
+		}
+
+		::System::Void InitTabs()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_INITTABS_OFFSET))(this);
+		}
+
+		::System::Void DoFadeOut()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_DOFADEOUT_OFFSET))(this);
+		}
+
+		::System::Void InitCurse()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_INITCURSE_OFFSET))(this);
+		}
+
+		::System::Void InitAchievement()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER_INITACHIEVEMENT_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__3_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__3_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER__ONUIINIT_B__3_1_OFFSET))(this);
+		}
+
+		::System::Void _InitTabs_g__initCurse_8_0(::MoleMole::UIHollowAchievementDialogWidgetController___c__DisplayClass8_0& a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIHollowAchievementDialogWidgetController___c__DisplayClass8_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER__INITTABS_G__INITCURSE_8_0_OFFSET))(this, a1);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWACHIEVEMENTDIALOGWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

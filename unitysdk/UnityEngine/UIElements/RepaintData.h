@@ -2,25 +2,45 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Matrix4x4.h"
+#include "unitysdk/UnityEngine/Rect.h"
 
 namespace UnityEngine { class Event; }
 
-#define UNITYENGINE_UIELEMENTS_REPAINTDATA_GET_CURRENTOFFSET_OFFSET UNITYSDK_OFFSET(0x182C85F0)
-#define UNITYENGINE_UIELEMENTS_REPAINTDATA_SET_REPAINTEVENT_OFFSET UNITYSDK_OFFSET(0x182C8620)
+#define UNITYENGINE_UIELEMENTS_REPAINTDATA_GET_CURRENTOFFSET_OFFSET UNITYSDK_OFFSET(0x1892B2A0)
+#define UNITYENGINE_UIELEMENTS_REPAINTDATA_GET_CURRENTWORLDCLIP_OFFSET UNITYSDK_OFFSET(0x1892B2D0)
+#define UNITYENGINE_UIELEMENTS_REPAINTDATA_GET_REPAINTEVENT_OFFSET UNITYSDK_OFFSET(0x1892B2E0)
+#define UNITYENGINE_UIELEMENTS_REPAINTDATA_SET_REPAINTEVENT_OFFSET UNITYSDK_OFFSET(0x1892B2F0)
+#define UNITYENGINE_UIELEMENTS_REPAINTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1892B300)
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int RepaintData_TypeDefinitionIndex = 5752;
+	inline static constexpr unsigned int RepaintData_TypeDefinitionIndex = 23759;
 
 	class RepaintData : public ::System::Object
 	{
 	public:
 		::UnityEngine::Matrix4x4 _currentOffset_k__BackingField; // 0x10
-		::UnityEngine::Event* _repaintEvent_k__BackingField; // 0x50
+		::UnityEngine::Rect _currentWorldClip_k__BackingField; // 0x50
+		::UnityEngine::Event* _repaintEvent_k__BackingField; // 0x60
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_REPAINTDATA__CTOR_OFFSET))(this);
+		}
 
 		::UnityEngine::Matrix4x4 get_currentOffset()
 		{
 			return ((::UnityEngine::Matrix4x4(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_REPAINTDATA_GET_CURRENTOFFSET_OFFSET))(this);
+		}
+
+		::UnityEngine::Rect get_currentWorldClip()
+		{
+			return ((::UnityEngine::Rect(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_REPAINTDATA_GET_CURRENTWORLDCLIP_OFFSET))(this);
+		}
+
+		::UnityEngine::Event* get_repaintEvent()
+		{
+			return ((::UnityEngine::Event*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_REPAINTDATA_GET_REPAINTEVENT_OFFSET))(this);
 		}
 
 		::System::Void set_repaintEvent(::UnityEngine::Event* value)

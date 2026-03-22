@@ -3,7 +3,7 @@
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int ExceptionHandlingClauseOptions_TypeDefinitionIndex = 576;
+	inline static constexpr unsigned int ExceptionHandlingClauseOptions_TypeDefinitionIndex = 550;
 
 	enum class ExceptionHandlingClauseOptions : ::System::Int32
 	{

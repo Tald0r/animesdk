@@ -1,0 +1,258 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/MoleMole/UIInterKnotPostDialogPopContext_EOpenMode.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_7ECB9691B142D586;
+class Class_2_208CC9941471731A_872;
+class Class_2_60DDD9C206686F44;
+class Class_2_79AE422BA06F6D26_52;
+class Class_2_A8F5ABF31E066ED4;
+class Class_3_854C71C0BEC81CDA;
+class Class_3_E342D954CB576697;
+namespace DG::Tweening { class Tweener; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIInterKnotMessageRowWidgetController; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine::UI { class Text; }
+
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ADDREPLYTOBOTTOM_OFFSET UNITYSDK_OFFSET(0x98B2890)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_BINDREPLY_OFFSET UNITYSDK_OFFSET(0x98B2330)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_BIND_OFFSET UNITYSDK_OFFSET(0x98AFCD0)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_CREATEPOST_OFFSET UNITYSDK_OFFSET(0x98B3AD0)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_GETBTN1_OFFSET UNITYSDK_OFFSET(0x98B2720)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_GETBTN2_OFFSET UNITYSDK_OFFSET(0x98B27A0)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_GETPOSTLASTFLOOR_OFFSET UNITYSDK_OFFSET(0x98B39E0)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_GETUSERCOMMENTFLOOR_OFFSET UNITYSDK_OFFSET(0x98B3290)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x98AF160)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0x98B0350)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONCLICKFAIRYBUTTON_OFFSET UNITYSDK_OFFSET(0x98B4110)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONCLICKFANSBTNCALLBACK_OFFSET UNITYSDK_OFFSET(0x98B2820)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x98B1AF0)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0x98B2240)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONRECEIVEQUESTDIALOGCLOSED_OFFSET UNITYSDK_OFFSET(0x98AF340)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x98B1B90)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x98AF170)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x98AF490)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_REFRESHTEXTSTATE_OFFSET UNITYSDK_OFFSET(0x98B3D10)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_REFRESHTIPSPANEL_OFFSET UNITYSDK_OFFSET(0x98B3370)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_SETPOSITIONTOBOTTOM_OFFSET UNITYSDK_OFFSET(0x98B3750)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0x98AF3C0)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_SHOWCHATANIM_OFFSET UNITYSDK_OFFSET(0x98B35E0)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__BIND_B__12_0_OFFSET UNITYSDK_OFFSET(0x98B4350)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__BIND_B__12_1_OFFSET UNITYSDK_OFFSET(0x98B43E0)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__BIND_B__12_2_OFFSET UNITYSDK_OFFSET(0x98B4550)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x98B4230)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__ONUIOPEN_B__8_0_OFFSET UNITYSDK_OFFSET(0x98B4240)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__ONUIOPEN_B__8_1_OFFSET UNITYSDK_OFFSET(0x98B4270)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x98B4580)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0x98B45F0)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x98B4650)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x98B4660)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x98B4670)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0x98B46E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInterKnotPostDialogPopWindowController_TypeDefinitionIndex = 44214;
+
+	class UIInterKnotPostDialogPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Int32 FairyDialogId = 0xF4C0D; // 0x0
+		::Class_2_79AE422BA06F6D26_52* _view; // 0x2F8
+		::Class_1_7ECB9691B142D586* _playerHelper; // 0x300
+		::System::Action* _onReceiveQuestDialogClosedCallBack; // 0x308
+		::System::Int32 MaxLine; // 0x310
+		::Class_3_E342D954CB576697* PostData; // 0x318
+		::MoleMole::UIInterKnotPostDialogPopContext_EOpenMode OpenMode; // 0x320
+		::Class_3_854C71C0BEC81CDA* FansChangeInfo; // 0x328
+		::Class_2_208CC9941471731A_872* template_; // 0x330
+		::System::Action* OnHideHandler; // 0x338
+		::System::Int64 _timeFlag; // 0x340
+		::DG::Tweening::Tweener* _fansTweener; // 0x348
+		::System::Boolean clientPost; // 0x350
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnReceiveQuestDialogClosed(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONRECEIVEQUESTDIALOGCLOSED_OFFSET))(this, args);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void Bind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_BIND_OFFSET))(this);
+		}
+
+		::Class_2_60DDD9C206686F44* GetBtn1()
+		{
+			return ((::Class_2_60DDD9C206686F44*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_GETBTN1_OFFSET))(this);
+		}
+
+		::Class_2_60DDD9C206686F44* GetBtn2()
+		{
+			return ((::Class_2_60DDD9C206686F44*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_GETBTN2_OFFSET))(this);
+		}
+
+		::System::Void BindReply(::Class_2_60DDD9C206686F44* btn, ::UnityEngine::UI::Text* text, ::Class_2_A8F5ABF31E066ED4* icon, ::System::String* reply, ::Foundation::AssetPath iconPath, ::System::Int32 nextid)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_60DDD9C206686F44*, ::UnityEngine::UI::Text*, ::Class_2_A8F5ABF31E066ED4*, ::System::String*, ::Foundation::AssetPath, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_BINDREPLY_OFFSET))(this, btn, text, icon, reply, iconPath, nextid);
+		}
+
+		::System::Void OnClickFansBtnCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONCLICKFANSBTNCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void AddReplyToBottom(::System::String* reply, ::System::Int32 nextid, ::System::Action* callback, ::System::Action_1<::System::Int32>* onReplyFadeIn)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Int32, ::System::Action*, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ADDREPLYTOBOTTOM_OFFSET))(this, reply, nextid, callback, onReplyFadeIn);
+		}
+
+		::System::Void ShowChatAnim(::System::Collections::Generic::List_1<::MoleMole::UIInterKnotMessageRowWidgetController*>* animCtrl, ::System::Single delayTime, ::System::Action* callback, ::System::Action_1<::System::Int32>* onReplyFadeIn)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::MoleMole::UIInterKnotMessageRowWidgetController*>*, ::System::Single, ::System::Action*, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_SHOWCHATANIM_OFFSET))(this, animCtrl, delayTime, callback, onReplyFadeIn);
+		}
+
+		::System::Single SetPositionToBottom(::System::Action* callback)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_SETPOSITIONTOBOTTOM_OFFSET))(this, callback);
+		}
+
+		::System::Int32 GetUserCommentFloor(::Class_3_E342D954CB576697* post)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_3_E342D954CB576697*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_GETUSERCOMMENTFLOOR_OFFSET))(this, post);
+		}
+
+		::System::Int32 GetPostLastFloor(::System::Int32 postID)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_GETPOSTLASTFLOOR_OFFSET))(this, postID);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshTipsPanel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_REFRESHTIPSPANEL_OFFSET))(this);
+		}
+
+		::System::Void OnClickFairyButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_ONCLICKFAIRYBUTTON_OFFSET))(this);
+		}
+
+		::System::Void CreatePost(::System::Int32 postID, ::System::Int32 customFloorOffset)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_CREATEPOST_OFFSET))(this, postID, customFloorOffset);
+		}
+
+		::System::Void RefreshTextState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER_REFRESHTEXTSTATE_OFFSET))(this);
+		}
+
+		::System::Void _OnUIOpen_b__8_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__ONUIOPEN_B__8_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIOpen_b__8_1(::System::Int32 newState)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__ONUIOPEN_B__8_1_OFFSET))(this, newState);
+		}
+
+		::System::Void _Bind_b__12_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__BIND_B__12_0_OFFSET))(this);
+		}
+
+		::System::Void _Bind_b__12_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__BIND_B__12_1_OFFSET))(this);
+		}
+
+		::System::Void _Bind_b__12_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER__BIND_B__12_2_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

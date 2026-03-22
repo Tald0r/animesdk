@@ -5,16 +5,22 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_PROPERTYNAMEUTILS_PROPERTYNAMEFROMSTRING_INJECTED_OFFSET UNITYSDK_OFFSET(0x182187D0)
-#define UNITYENGINE_PROPERTYNAMEUTILS_PROPERTYNAMEFROMSTRING_OFFSET UNITYSDK_OFFSET(0x18218660)
+#define UNITYENGINE_PROPERTYNAMEUTILS_PROPERTYNAMEFROMSTRING_INJECTED_OFFSET UNITYSDK_OFFSET(0x19BC1D80)
+#define UNITYENGINE_PROPERTYNAMEUTILS_PROPERTYNAMEFROMSTRING_OFFSET UNITYSDK_OFFSET(0x19BC1D60)
+#define UNITYENGINE_PROPERTYNAMEUTILS__CTOR_OFFSET UNITYSDK_OFFSET(0x19BC1D90)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int PropertyNameUtils_TypeDefinitionIndex = 4033;
+	inline static constexpr unsigned int PropertyNameUtils_TypeDefinitionIndex = 5313;
 
 	class PropertyNameUtils : public ::System::Object
 	{
 	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_PROPERTYNAMEUTILS__CTOR_OFFSET))(this);
+		}
+
 		static ::UnityEngine::PropertyName PropertyNameFromString(::System::String* name)
 		{
 			return ((::UnityEngine::PropertyName(*)(::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_PROPERTYNAMEUTILS_PROPERTYNAMEFROMSTRING_OFFSET))(name);

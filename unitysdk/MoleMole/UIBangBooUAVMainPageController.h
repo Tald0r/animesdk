@@ -1,0 +1,168 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_D375C91CCE5D3999;
+class Class_2_604149159BD159AA;
+class Class_2_8EFBFDFF19FA6CA9;
+class Class_2_C7387D40D4120A48_9;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine::UI::Extension { class UITimeWidget; }
+
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ACTIVITYEND_OFFSET UNITYSDK_OFFSET(0xB9161D0)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_CHECKNEWLEVEL_OFFSET UNITYSDK_OFFSET(0xB914CA0)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xB913E40)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONCHANLLENGEBTNCLICK_OFFSET UNITYSDK_OFFSET(0xB916320)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONCOLLECTINFO_OFFSET UNITYSDK_OFFSET(0xB915E50)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB913E50)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONGRADE_OFFSET UNITYSDK_OFFSET(0xB915FD0)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB916470)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB913EF0)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB915BC0)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_OPENINFO_OFFSET UNITYSDK_OFFSET(0xB916380)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_OPENLEVEL_OFFSET UNITYSDK_OFFSET(0xB915CE0)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_REFRESHCOLLECTCOUNT_OFFSET UNITYSDK_OFFSET(0xB914890)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_REFRESHLEVEL_OFFSET UNITYSDK_OFFSET(0xB915080)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_REFRESHLOCK_OFFSET UNITYSDK_OFFSET(0xB915260)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER__ACTIVITYEND_B__13_0_OFFSET UNITYSDK_OFFSET(0xB9168D0)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB916660)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER__ONUIINIT_B__6_0_OFFSET UNITYSDK_OFFSET(0xB916810)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER__ONUIINIT_B__6_1_OFFSET UNITYSDK_OFFSET(0xB9167E0)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB9168E0)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB916950)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB916960)
+#define MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB916970)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBangBooUAVMainPageController_TypeDefinitionIndex = 45439;
+
+	class UIBangBooUAVMainPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_C7387D40D4120A48_9* _view; // 0x2F8
+		::Class_2_604149159BD159AA* activityModel; // 0x300
+		::Class_2_8EFBFDFF19FA6CA9* dreamModel; // 0x308
+		::System::Collections::Generic::List_1<::System::String*>* numPaths; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void CheckNewLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_CHECKNEWLEVEL_OFFSET))(this);
+		}
+
+		::System::Void RefreshCollectCount()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_REFRESHCOLLECTCOUNT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void RefreshLock()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_REFRESHLOCK_OFFSET))(this);
+		}
+
+		::System::Void OnCollectInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONCOLLECTINFO_OFFSET))(this);
+		}
+
+		::System::Void OnGrade()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONGRADE_OFFSET))(this);
+		}
+
+		::System::Void ActivityEnd(::Class_1_D375C91CCE5D3999* activity)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ACTIVITYEND_OFFSET))(this, activity);
+		}
+
+		::System::Void OpenLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_OPENLEVEL_OFFSET))(this);
+		}
+
+		::System::Void RefreshLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_REFRESHLEVEL_OFFSET))(this);
+		}
+
+		::System::Void OnChanllengeBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONCHANLLENGEBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OpenInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_OPENINFO_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__6_1(::UnityEngine::UI::Extension::UITimeWidget* timeWidget)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UITimeWidget*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER__ONUIINIT_B__6_1_OFFSET))(this, timeWidget);
+		}
+
+		::System::Void _OnUIInit_b__6_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER__ONUIINIT_B__6_0_OFFSET))(this, args);
+		}
+
+		::System::Void _ActivityEnd_b__13_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER__ACTIVITYEND_B__13_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVMAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

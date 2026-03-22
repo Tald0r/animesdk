@@ -5,12 +5,12 @@
 namespace MiHoYo::SDK { class AccountModel; }
 namespace MiHoYo::SDK::Win { class OverseaGrantPhone; }
 
-#define MIHOYO_SDK_WIN_OVERSEAGRANTPHONE___C__DISPLAYCLASS39_0__CTOR_OFFSET UNITYSDK_OFFSET(0x15A51ED0)
-#define MIHOYO_SDK_WIN_OVERSEAGRANTPHONE___C__DISPLAYCLASS39_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x15A52460)
+#define MIHOYO_SDK_WIN_OVERSEAGRANTPHONE___C__DISPLAYCLASS39_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1829E9C0)
+#define MIHOYO_SDK_WIN_OVERSEAGRANTPHONE___C__DISPLAYCLASS39_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x1829E9D0)
 
 namespace MiHoYo::SDK::Win
 {
-	inline static constexpr unsigned int OverseaGrantPhone___c__DisplayClass39_0_TypeDefinitionIndex = 8001;
+	inline static constexpr unsigned int OverseaGrantPhone___c__DisplayClass39_0_TypeDefinitionIndex = 19148;
 
 	class OverseaGrantPhone___c__DisplayClass39_0 : public ::System::Object
 	{

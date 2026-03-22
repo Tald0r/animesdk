@@ -1,0 +1,208 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/InputLogicEventType.h"
+#include "unitysdk/MoleMole/MonoGamepadModule.h"
+#include "unitysdk/UnityEngine/RectTransform_Axis.h"
+
+class MonoUITableScrollV2;
+namespace MoleMole { class MonoGamepadSelectable; }
+namespace UnityEngine::UI::Extension { class UITabButton; }
+namespace UnityEngine::UI::Extension { class UITabButtonGroup; }
+
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_ISFUNCTIONENABLED_OFFSET UNITYSDK_OFFSET(0xC235B70)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_ISTEMPWORKABLE_OFFSET UNITYSDK_OFFSET(0xC235A80)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_MANUALCHECKFOCUSSTATE_OFFSET UNITYSDK_OFFSET(0xC2345F0)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_0C97146C76A4CBA8_OFFSET UNITYSDK_OFFSET(0xC236150)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_14014646206E49EF_OFFSET UNITYSDK_OFFSET(0xC234740)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_209EFD130889B83A_OFFSET UNITYSDK_OFFSET(0xC236350)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_3215AC64FF8F0B10_OFFSET UNITYSDK_OFFSET(0xC236BB0)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_543C1BD7BEC7BBEB_OFFSET UNITYSDK_OFFSET(0xC236700)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_6B754E4371E63B47_OFFSET UNITYSDK_OFFSET(0xC2343F0)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_86D9A88811BF5A61_OFFSET UNITYSDK_OFFSET(0xC2352C0)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_88D8A119ADE8170D_OFFSET UNITYSDK_OFFSET(0xC234C10)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_8C748714EA118F16_OFFSET UNITYSDK_OFFSET(0xC235C80)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_944155B538471569_OFFSET UNITYSDK_OFFSET(0xC235410)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_A3FAE12D7B6ACD62_OFFSET UNITYSDK_OFFSET(0xC2359C0)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_C495FC84AA2302E0_OFFSET UNITYSDK_OFFSET(0xC2347D0)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xC236F40)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xC236B40)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_E2F53DB7A99BFA85_OFFSET UNITYSDK_OFFSET(0xC234EC0)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_EBAC71FBE1837205_OFFSET UNITYSDK_OFFSET(0xC235910)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_FBF2CB29FD3B55E6_OFFSET UNITYSDK_OFFSET(0xC236670)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_SETSELECTINDEX_OFFSET UNITYSDK_OFFSET(0xC235510)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0xC2363F0)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ISFUNCTIONENABLED_OFFSET UNITYSDK_OFFSET(0xC236430)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ISTEMPWORKABLE_OFFSET UNITYSDK_OFFSET(0xC2364A0)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ISWORKABLEINNER_OFFSET UNITYSDK_OFFSET(0xC236500)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xC236560)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ONMODULECLEAR_OFFSET UNITYSDK_OFFSET(0xC2365F0)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ONMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0xC236650)
+#define MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ONMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0xC236660)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int MonoGamepadTabButtonGroup_TypeDefinitionIndex = 74451;
+
+	class MonoGamepadTabButtonGroup : public ::MoleMole::MonoGamepadModule
+	{
+	public:
+		::UnityEngine::UI::Extension::UITabButtonGroup* _tabButtonGroup; // 0xE8
+		::MonoUITableScrollV2* _scrollView; // 0xF0
+		::MoleMole::InputLogicEventType _prevTabEvent; // 0xF8
+		::MoleMole::InputLogicEventType _nextTabEvent; // 0xFC
+		::System::Boolean _allowLoop; // 0x100
+		::System::Boolean _ignoreCallbackOnNavigate; // 0x101
+		::MoleMole::InputLogicEventType _clickItemEvent; // 0x104
+		::System::Boolean _selectItemOnFocus; // 0x108
+		::System::Int32 _resetIndexOnFocus; // 0x10C
+		::System::Boolean _cancelSelectOnLostFocus; // 0x110
+		::System::Boolean _getSelectableInChildren; // 0x111
+		::System::Boolean _disableLostFocusItemAnim; // 0x112
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::MonoGamepadSelectable* Method_6_6B754E4371E63B47(::UnityEngine::UI::Extension::UITabButton* a1)
+		{
+			return ((::MoleMole::MonoGamepadSelectable*(*)(::PVOID, ::UnityEngine::UI::Extension::UITabButton*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_6B754E4371E63B47_OFFSET))(this, a1);
+		}
+
+		::System::Void ManualCheckFocusState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_MANUALCHECKFOCUSSTATE_OFFSET))(this);
+		}
+
+		::System::Void Method_6_C495FC84AA2302E0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_C495FC84AA2302E0_OFFSET))(this);
+		}
+
+		::System::Void Method_6_944155B538471569(::System::Boolean a1, ::System::Boolean a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_944155B538471569_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void SetSelectIndex(::System::Int32 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_SETSELECTINDEX_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_6_EBAC71FBE1837205()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_EBAC71FBE1837205_OFFSET))(this);
+		}
+
+		::System::Boolean Method_6_A3FAE12D7B6ACD62()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_A3FAE12D7B6ACD62_OFFSET))(this);
+		}
+
+		::System::Boolean IsTempWorkable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_ISTEMPWORKABLE_OFFSET))(this);
+		}
+
+		::System::Boolean IsFunctionEnabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_ISFUNCTIONENABLED_OFFSET))(this);
+		}
+
+		::System::Boolean Method_6_8C748714EA118F16(::MoleMole::InputActionEvent a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_8C748714EA118F16_OFFSET))(this, a1);
+		}
+
+		::System::Boolean __base_IsFunctionEnabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ISFUNCTIONENABLED_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsTempWorkable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ISTEMPWORKABLE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsWorkableInner()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ISWORKABLEINNER_OFFSET))(this);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ONINPUTACTION_OFFSET))(this, a1);
+		}
+
+		::System::Void __base_OnModuleClear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ONMODULECLEAR_OFFSET))(this);
+		}
+
+		::System::Void __base_OnModuleFocus()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ONMODULEFOCUS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnModuleLostFocus(::System::Boolean a1, ::System::Boolean a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP___BASE_ONMODULELOSTFOCUS_OFFSET))(this, a1, a2);
+		}
+
+		::System::Boolean Method_6_88D8A119ADE8170D(::System::Int32 a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_88D8A119ADE8170D_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_6_FBF2CB29FD3B55E6()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_FBF2CB29FD3B55E6_OFFSET))(this);
+		}
+
+		::System::Boolean Method_6_0C97146C76A4CBA8(::MoleMole::InputActionEvent a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_0C97146C76A4CBA8_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_6_209EFD130889B83A(::MoleMole::InputActionEvent a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_209EFD130889B83A_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::RectTransform_Axis Method_6_543C1BD7BEC7BBEB()
+		{
+			return ((::UnityEngine::RectTransform_Axis(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_543C1BD7BEC7BBEB_OFFSET))(this);
+		}
+
+		::System::Void Method_6_14014646206E49EF()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_14014646206E49EF_OFFSET))(this);
+		}
+
+		::System::Void Method_6_86D9A88811BF5A61(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_86D9A88811BF5A61_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_6_CA373AA1C7054598()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_CA373AA1C7054598_OFFSET))(this);
+		}
+
+		::System::Void Method_6_3215AC64FF8F0B10()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_3215AC64FF8F0B10_OFFSET))(this);
+		}
+
+		::System::Void Method_6_CA373AA1C7054598_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_CA373AA1C7054598_1_OFFSET))(this);
+		}
+
+		::System::Void Method_6_E2F53DB7A99BFA85(::System::Int32 a1, ::System::Boolean a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADTABBUTTONGROUP_METHOD_6_E2F53DB7A99BFA85_OFFSET))(this, a1, a2);
+		}
+	};
+}

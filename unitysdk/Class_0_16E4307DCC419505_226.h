@@ -1,11 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/Client/PacketStatus.h"
 
-namespace RPG::Client { class NetPacket; }
-namespace System::IO { class MemoryStream; }
+class Class_2_208CC9941471731A_723;
+namespace System { class String; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_226_TypeDefinitionIndex = 32886;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_226_TypeDefinitionIndex = 76367;
 
 class Class_0_16E4307DCC419505_226
 {

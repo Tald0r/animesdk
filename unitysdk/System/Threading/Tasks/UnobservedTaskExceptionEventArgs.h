@@ -4,11 +4,12 @@
 
 namespace System { class AggregateException; }
 
-#define SYSTEM_THREADING_TASKS_UNOBSERVEDTASKEXCEPTIONEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x15B948F0)
+#define SYSTEM_THREADING_TASKS_UNOBSERVEDTASKEXCEPTIONEVENTARGS_GET_EXCEPTION_OFFSET UNITYSDK_OFFSET(0x19897790)
+#define SYSTEM_THREADING_TASKS_UNOBSERVEDTASKEXCEPTIONEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x19897760)
 
 namespace System::Threading::Tasks
 {
-	inline static constexpr unsigned int UnobservedTaskExceptionEventArgs_TypeDefinitionIndex = 921;
+	inline static constexpr unsigned int UnobservedTaskExceptionEventArgs_TypeDefinitionIndex = 935;
 
 	class UnobservedTaskExceptionEventArgs : public ::System::EventArgs
 	{
@@ -19,6 +20,11 @@ namespace System::Threading::Tasks
 		::System::Void _ctor(::System::AggregateException* exception)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::AggregateException*))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_TASKS_UNOBSERVEDTASKEXCEPTIONEVENTARGS__CTOR_OFFSET))(this, exception);
+		}
+
+		::System::AggregateException* get_Exception()
+		{
+			return ((::System::AggregateException*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_TASKS_UNOBSERVEDTASKEXCEPTIONEVENTARGS_GET_EXCEPTION_OFFSET))(this);
 		}
 	};
 }

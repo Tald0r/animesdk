@@ -1,0 +1,116 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_2_07730F63355AFF87_4;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIHollowAchievementDialogWidgetController; }
+namespace MoleMole { class UIHollowDamnationWidgetController; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_DOFADEOUT_OFFSET UNITYSDK_OFFSET(0xBFC99F0)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_GETALPHA_OFFSET UNITYSDK_OFFSET(0xBFD2280)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_MOLEMOLE_ISCREENLAYOUT_CALCULATELAYOUT_OFFSET UNITYSDK_OFFSET(0xBFD2460)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_MOLEMOLE_ISCREENLAYOUT_GET_PAUSE_OFFSET UNITYSDK_OFFSET(0xBFD24D0)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_MOLEMOLE_ISCREENLAYOUT_ONAFTERAPPLYLAYOUTBYPLATFORM_OFFSET UNITYSDK_OFFSET(0xBFD2400)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_MOLEMOLE_ISCREENLAYOUT_SET_PAUSE_OFFSET UNITYSDK_OFFSET(0xBFD24E0)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBFD2100)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBFD21A0)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBFD1D80)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_REFRESHSPRITECANVAS_OFFSET UNITYSDK_OFFSET(0xBFD1E30)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xBFC9D10)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBFD24F0)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBFD25A0)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBFD2610)
+#define MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBFD2690)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowDamnationEliminateWidgetController_TypeDefinitionIndex = 57148;
+
+	class UIHollowDamnationEliminateWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_07730F63355AFF87_4* _view; // 0x2A0
+		::MoleMole::UIHollowAchievementDialogWidgetController* parent; // 0x2A8
+		::System::Boolean _MoleMole_IScreenLayout_Pause_k__BackingField; // 0x2B0
+		::System::Collections::Generic::List_1<::MoleMole::UIHollowDamnationWidgetController*>* childCtrls; // 0x2B8
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* blessList; // 0x2C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Single GetAlpha()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_GETALPHA_OFFSET))(this);
+		}
+
+		::System::Void DoFadeOut()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_DOFADEOUT_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* blessList, ::System::Boolean isInHollow, ::System::Boolean isArpeggio)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, blessList, isInHollow, isArpeggio);
+		}
+
+		::System::Void MoleMole_IScreenLayout_OnAfterApplyLayoutByPlatform()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_MOLEMOLE_ISCREENLAYOUT_ONAFTERAPPLYLAYOUTBYPLATFORM_OFFSET))(this);
+		}
+
+		::System::Void MoleMole_IScreenLayout_CalculateLayout()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_MOLEMOLE_ISCREENLAYOUT_CALCULATELAYOUT_OFFSET))(this);
+		}
+
+		::System::Boolean MoleMole_IScreenLayout_get_Pause()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_MOLEMOLE_ISCREENLAYOUT_GET_PAUSE_OFFSET))(this);
+		}
+
+		::System::Void MoleMole_IScreenLayout_set_Pause(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_MOLEMOLE_ISCREENLAYOUT_SET_PAUSE_OFFSET))(this, value);
+		}
+
+		::System::Void RefreshSpriteCanvas()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER_REFRESHSPRITECANVAS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWDAMNATIONELIMINATEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

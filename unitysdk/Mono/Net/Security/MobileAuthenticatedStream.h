@@ -4,6 +4,9 @@
 #include "unitysdk/Mono/Net/Security/MobileAuthenticatedStream_OperationType.h"
 #include "unitysdk/System/IO/SeekOrigin.h"
 #include "unitysdk/System/Net/Security/AuthenticatedStream.h"
+#include "unitysdk/System/Security/Authentication/CipherAlgorithmType.h"
+#include "unitysdk/System/Security/Authentication/ExchangeAlgorithmType.h"
+#include "unitysdk/System/Security/Authentication/HashAlgorithmType.h"
 #include "unitysdk/System/Security/Authentication/SslProtocols.h"
 #include "unitysdk/System/Threading/CancellationToken.h"
 #include "unitysdk/System/ValueTuple_2.h"
@@ -12,6 +15,7 @@ namespace Mono::Net::Security { class AsyncProtocolRequest; }
 namespace Mono::Net::Security { class BufferOffsetSize2; }
 namespace Mono::Net::Security { class BufferOffsetSize; }
 namespace Mono::Net::Security { class MobileTlsContext; }
+namespace Mono::Security::Interface { class MonoTlsConnectionInfo; }
 namespace Mono::Security::Interface { class MonoTlsProvider; }
 namespace Mono::Security::Interface { class MonoTlsSettings; }
 namespace System { class AsyncCallback; }
@@ -20,6 +24,7 @@ namespace System { class IAsyncResult; }
 namespace System { class Object; }
 namespace System { class String; }
 namespace System::IO { class Stream; }
+namespace System::Net { class TransportContext; }
 namespace System::Net::Security { class SslStream; }
 namespace System::Runtime::ExceptionServices { class ExceptionDispatchInfo; }
 namespace System::Security::Cryptography::X509Certificates { class X509Certificate; }
@@ -27,80 +32,116 @@ namespace System::Security::Cryptography::X509Certificates { class X509Certifica
 namespace System::Threading::Tasks { class Task; }
 namespace System::Threading::Tasks { template <typename T> class Task_1; }
 
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASCLIENT_OFFSET UNITYSDK_OFFSET(0x17E48660)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASSERVER_OFFSET UNITYSDK_OFFSET(0x17E48990)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINREAD_OFFSET UNITYSDK_OFFSET(0x17E48B40)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINWRITE_OFFSET UNITYSDK_OFFSET(0x17E48DF0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_CHECKTHROW_OFFSET UNITYSDK_OFFSET(0x17E482D0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17E4A460)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_ENDREAD_OFFSET UNITYSDK_OFFSET(0x17E48DA0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_ENDWRITE_OFFSET UNITYSDK_OFFSET(0x17E48F70)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_FLUSH_OFFSET UNITYSDK_OFFSET(0x17E4A740)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GETIOEXCEPTION_OFFSET UNITYSDK_OFFSET(0x17E48520)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GETSSPIEXCEPTION_OFFSET UNITYSDK_OFFSET(0x17E454C0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_AUTHENTICATEDSTREAM_OFFSET UNITYSDK_OFFSET(0x17E48B30)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CANREAD_OFFSET UNITYSDK_OFFSET(0x17E4A8E0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CANSEEK_OFFSET UNITYSDK_OFFSET(0x17E4AB00)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CANWRITE_OFFSET UNITYSDK_OFFSET(0x17E4A9F0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_INTERNALLOCALCERTIFICATE_OFFSET UNITYSDK_OFFSET(0x17E4A770)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_ISAUTHENTICATED_OFFSET UNITYSDK_OFFSET(0x17E48440)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_LENGTH_OFFSET UNITYSDK_OFFSET(0x17E4AB10)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_POSITION_OFFSET UNITYSDK_OFFSET(0x17E4AB40)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_PROVIDER_OFFSET UNITYSDK_OFFSET(0x17E482C0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_READTIMEOUT_OFFSET UNITYSDK_OFFSET(0x17E4ABC0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_SETTINGS_OFFSET UNITYSDK_OFFSET(0x17E482B0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_WRITETIMEOUT_OFFSET UNITYSDK_OFFSET(0x17E4AC20)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INNERREAD_OFFSET UNITYSDK_OFFSET(0x17E44860)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INNERWRITE_OFFSET UNITYSDK_OFFSET(0x17E44FC0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INTERNALREAD_1_OFFSET UNITYSDK_OFFSET(0x17E49630)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INTERNALREAD_OFFSET UNITYSDK_OFFSET(0x17E49560)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INTERNALWRITE_1_OFFSET UNITYSDK_OFFSET(0x17E49860)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INTERNALWRITE_OFFSET UNITYSDK_OFFSET(0x17E497A0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_PROCESSAUTHENTICATION_OFFSET UNITYSDK_OFFSET(0x17E487F0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_PROCESSHANDSHAKE_OFFSET UNITYSDK_OFFSET(0x17E43E30)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_PROCESSREAD_OFFSET UNITYSDK_OFFSET(0x17E459A0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_PROCESSWRITE_OFFSET UNITYSDK_OFFSET(0x17E45B80)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_READASYNC_OFFSET UNITYSDK_OFFSET(0x17E492C0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_READ_OFFSET UNITYSDK_OFFSET(0x17E48FD0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SEEK_OFFSET UNITYSDK_OFFSET(0x17E4A860)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SETEXCEPTION_OFFSET UNITYSDK_OFFSET(0x17E45600)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SETLENGTH_OFFSET UNITYSDK_OFFSET(0x17E4A8B0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SET_POSITION_OFFSET UNITYSDK_OFFSET(0x17E4AB70)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SET_READTIMEOUT_OFFSET UNITYSDK_OFFSET(0x17E4ABF0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SET_WRITETIMEOUT_OFFSET UNITYSDK_OFFSET(0x17E4AC50)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_STARTOPERATION_OFFSET UNITYSDK_OFFSET(0x17E48CC0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_WRITEASYNC_OFFSET UNITYSDK_OFFSET(0x17E49410)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_WRITE_OFFSET UNITYSDK_OFFSET(0x17E49140)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__CCTOR_OFFSET UNITYSDK_OFFSET(0x17E4AC80)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x17E481A0)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__INNERWRITE_B__67_0_OFFSET UNITYSDK_OFFSET(0x17E4AC90)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASCLIENTASYNC_1_OFFSET UNITYSDK_OFFSET(0x18FD76B0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASCLIENTASYNC_OFFSET UNITYSDK_OFFSET(0x18FD7590)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASCLIENT_1_OFFSET UNITYSDK_OFFSET(0x18FD6CE0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASCLIENT_OFFSET UNITYSDK_OFFSET(0x18FD6C40)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASSERVERASYNC_1_OFFSET UNITYSDK_OFFSET(0x18FD7810)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASSERVERASYNC_OFFSET UNITYSDK_OFFSET(0x18FD77F0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASSERVER_1_OFFSET UNITYSDK_OFFSET(0x18FD7230)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASSERVER_OFFSET UNITYSDK_OFFSET(0x18FD7210)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINAUTHENTICATEASCLIENT_1_OFFSET UNITYSDK_OFFSET(0x18FD7040)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINAUTHENTICATEASCLIENT_OFFSET UNITYSDK_OFFSET(0x18FD6F80)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINAUTHENTICATEASSERVER_1_OFFSET UNITYSDK_OFFSET(0x18FD73B0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINAUTHENTICATEASSERVER_OFFSET UNITYSDK_OFFSET(0x18FD7380)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINREAD_OFFSET UNITYSDK_OFFSET(0x18FD7B70)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINWRITE_OFFSET UNITYSDK_OFFSET(0x18FD7CF0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_CHECKTHROW_OFFSET UNITYSDK_OFFSET(0x18FD66E0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_DEBUG_OFFSET UNITYSDK_OFFSET(0x18FD8240)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18FD9160)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_ENDAUTHENTICATEASCLIENT_OFFSET UNITYSDK_OFFSET(0x18FD7190)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_ENDAUTHENTICATEASSERVER_OFFSET UNITYSDK_OFFSET(0x18FD7510)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_ENDREAD_OFFSET UNITYSDK_OFFSET(0x18FD7C80)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_ENDWRITE_OFFSET UNITYSDK_OFFSET(0x18FD7E00)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_FLUSH_OFFSET UNITYSDK_OFFSET(0x18FD94A0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GETCONNECTIONINFO_OFFSET UNITYSDK_OFFSET(0x18FD9850)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GETIOEXCEPTION_OFFSET UNITYSDK_OFFSET(0x18FD6AC0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GETSSPIEXCEPTION_OFFSET UNITYSDK_OFFSET(0x18FD6980)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_AUTHENTICATEDSTREAM_OFFSET UNITYSDK_OFFSET(0x18FD7B60)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CANREAD_OFFSET UNITYSDK_OFFSET(0x18FD99F0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CANSEEK_OFFSET UNITYSDK_OFFSET(0x18FD9C40)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CANTIMEOUT_OFFSET UNITYSDK_OFFSET(0x18FD9B00)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CANWRITE_OFFSET UNITYSDK_OFFSET(0x18FD9B30)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CHECKCERTREVOCATIONSTATUS_OFFSET UNITYSDK_OFFSET(0x18FDA380)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CIPHERALGORITHM_OFFSET UNITYSDK_OFFSET(0x18FD9F80)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CIPHERSTRENGTH_OFFSET UNITYSDK_OFFSET(0x18FDA290)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_DEFAULTPROTOCOLS_OFFSET UNITYSDK_OFFSET(0x18FD6C30)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_HASCONTEXT_OFFSET UNITYSDK_OFFSET(0x18FD66D0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_HASHALGORITHM_OFFSET UNITYSDK_OFFSET(0x18FDA080)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_HASHSTRENGTH_OFFSET UNITYSDK_OFFSET(0x18FDA2E0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_INTERNALLOCALCERTIFICATE_OFFSET UNITYSDK_OFFSET(0x18FD9740)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_ISAUTHENTICATED_OFFSET UNITYSDK_OFFSET(0x18FD68A0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_ISENCRYPTED_OFFSET UNITYSDK_OFFSET(0x18FD9D00)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_ISMUTUALLYAUTHENTICATED_OFFSET UNITYSDK_OFFSET(0x18FD8FA0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_ISSERVER_OFFSET UNITYSDK_OFFSET(0x18FD8F40)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_ISSIGNED_OFFSET UNITYSDK_OFFSET(0x18FD9DE0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_KEYEXCHANGEALGORITHM_OFFSET UNITYSDK_OFFSET(0x18FDA190)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_KEYEXCHANGESTRENGTH_OFFSET UNITYSDK_OFFSET(0x18FDA330)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_LENGTH_OFFSET UNITYSDK_OFFSET(0x18FD9C50)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_LOCALCERTIFICATE_OFFSET UNITYSDK_OFFSET(0x18FD9680)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_POSITION_OFFSET UNITYSDK_OFFSET(0x18FD9C80)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_PROVIDER_OFFSET UNITYSDK_OFFSET(0x18FD66C0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_READTIMEOUT_OFFSET UNITYSDK_OFFSET(0x18FD9EC0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_REMOTECERTIFICATE_OFFSET UNITYSDK_OFFSET(0x18FD95B0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_SETTINGS_OFFSET UNITYSDK_OFFSET(0x18FD66B0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_SSLPROTOCOL_OFFSET UNITYSDK_OFFSET(0x18FD94D0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_SSLSTREAM_OFFSET UNITYSDK_OFFSET(0x18FD66A0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_TRANSPORTCONTEXT_OFFSET UNITYSDK_OFFSET(0x18FD99A0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_WRITETIMEOUT_OFFSET UNITYSDK_OFFSET(0x18FD9F20)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INNERREAD_OFFSET UNITYSDK_OFFSET(0x18FD87B0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INNERWRITE_OFFSET UNITYSDK_OFFSET(0x18FD8950)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INTERNALREAD_1_OFFSET UNITYSDK_OFFSET(0x18FD8360)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INTERNALREAD_OFFSET UNITYSDK_OFFSET(0x18FD8250)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INTERNALWRITE_1_OFFSET UNITYSDK_OFFSET(0x18FD8610)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_INTERNALWRITE_OFFSET UNITYSDK_OFFSET(0x18FD8510)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_PROCESSAUTHENTICATION_OFFSET UNITYSDK_OFFSET(0x18FD6E20)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_PROCESSHANDSHAKE_OFFSET UNITYSDK_OFFSET(0x18FD8AE0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_PROCESSREAD_OFFSET UNITYSDK_OFFSET(0x18FD8C90)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_PROCESSSHUTDOWN_OFFSET UNITYSDK_OFFSET(0x18FD8E70)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_PROCESSWRITE_OFFSET UNITYSDK_OFFSET(0x18FD8D80)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_READASYNC_OFFSET UNITYSDK_OFFSET(0x18FD80A0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_READ_OFFSET UNITYSDK_OFFSET(0x18FD7E80)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SEEK_OFFSET UNITYSDK_OFFSET(0x18FD9920)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SETEXCEPTION_OFFSET UNITYSDK_OFFSET(0x18FD6C00)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SETLENGTH_OFFSET UNITYSDK_OFFSET(0x18FD9970)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SET_POSITION_OFFSET UNITYSDK_OFFSET(0x18FD9CB0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SET_READTIMEOUT_OFFSET UNITYSDK_OFFSET(0x18FD9EF0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SET_WRITETIMEOUT_OFFSET UNITYSDK_OFFSET(0x18FD9F50)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SHUTDOWNASYNC_OFFSET UNITYSDK_OFFSET(0x18FD7950)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_STARTOPERATION_OFFSET UNITYSDK_OFFSET(0x18FD79D0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_WRITEASYNC_OFFSET UNITYSDK_OFFSET(0x18FD8170)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_WRITE_1_OFFSET UNITYSDK_OFFSET(0x18FD7FA0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_WRITE_OFFSET UNITYSDK_OFFSET(0x18FD7F80)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__CCTOR_OFFSET UNITYSDK_OFFSET(0x18FDA3D0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x18FD63D0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__INNERWRITE_B__67_0_OFFSET UNITYSDK_OFFSET(0x18FDA410)
 
 namespace Mono::Net::Security
 {
-	inline static constexpr unsigned int MobileAuthenticatedStream_TypeDefinitionIndex = 2419;
+	inline static constexpr unsigned int MobileAuthenticatedStream_TypeDefinitionIndex = 2622;
 
 	class MobileAuthenticatedStream : public ::System::Net::Security::AuthenticatedStream
 	{
 	public:
 		static ::System::Int32* StaticGet_uniqueNameInteger()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MobileAuthenticatedStream_TypeDefinitionIndex)->GetStaticField(0x5250);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MobileAuthenticatedStream_TypeDefinitionIndex)->GetStaticField(0x1170);
 		}
 		static ::System::Int32* StaticGet_nextId()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MobileAuthenticatedStream_TypeDefinitionIndex)->GetStaticField(0x5254);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MobileAuthenticatedStream_TypeDefinitionIndex)->GetStaticField(0x1174);
 		}
-		::System::Net::Security::SslStream* _SslStream_k__BackingField; // 0x38
+		::Mono::Security::Interface::MonoTlsSettings* _Settings_k__BackingField; // 0x38
 		::Mono::Net::Security::AsyncProtocolRequest* asyncHandshakeRequest; // 0x40
-		::Mono::Net::Security::BufferOffsetSize2* writeBuffer; // 0x48
-		::System::Object* ioLock; // 0x50
-		::Mono::Security::Interface::MonoTlsProvider* _Provider_k__BackingField; // 0x58
+		::Mono::Net::Security::MobileTlsContext* xobileTlsContext; // 0x48
+		::Mono::Net::Security::AsyncProtocolRequest* asyncReadRequest; // 0x50
+		::System::Net::Security::SslStream* _SslStream_k__BackingField; // 0x58
 		::Mono::Net::Security::AsyncProtocolRequest* asyncWriteRequest; // 0x60
-		::System::Runtime::ExceptionServices::ExceptionDispatchInfo* lastException; // 0x68
-		::Mono::Net::Security::AsyncProtocolRequest* asyncReadRequest; // 0x70
-		::Mono::Security::Interface::MonoTlsSettings* _Settings_k__BackingField; // 0x78
-		::Mono::Net::Security::MobileTlsContext* xobileTlsContext; // 0x80
-		::Mono::Net::Security::BufferOffsetSize2* readBuffer; // 0x88
+		::Mono::Net::Security::BufferOffsetSize2* writeBuffer; // 0x68
+		::Mono::Net::Security::BufferOffsetSize2* readBuffer; // 0x70
+		::System::Object* ioLock; // 0x78
+		::Mono::Security::Interface::MonoTlsProvider* _Provider_k__BackingField; // 0x80
+		::System::Runtime::ExceptionServices::ExceptionDispatchInfo* lastException; // 0x88
 		::System::Int32 closeRequested; // 0x90
 		::System::Boolean shutdown; // 0x94
 		::System::Int32 ID; // 0x98
@@ -115,6 +156,11 @@ namespace Mono::Net::Security
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__CCTOR_OFFSET))();
 		}
 
+		::System::Net::Security::SslStream* get_SslStream()
+		{
+			return ((::System::Net::Security::SslStream*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_SSLSTREAM_OFFSET))(this);
+		}
+
 		::Mono::Security::Interface::MonoTlsSettings* get_Settings()
 		{
 			return ((::Mono::Security::Interface::MonoTlsSettings*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_SETTINGS_OFFSET))(this);
@@ -123,6 +169,11 @@ namespace Mono::Net::Security
 		::Mono::Security::Interface::MonoTlsProvider* get_Provider()
 		{
 			return ((::Mono::Security::Interface::MonoTlsProvider*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_PROVIDER_OFFSET))(this);
+		}
+
+		::System::Boolean get_HasContext()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_HASCONTEXT_OFFSET))(this);
 		}
 
 		::System::Void CheckThrow(::System::Boolean authSuccessCheck, ::System::Boolean shutdownCheck)
@@ -145,14 +196,84 @@ namespace Mono::Net::Security
 			return ((::System::Runtime::ExceptionServices::ExceptionDispatchInfo*(*)(::PVOID, ::System::Exception*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SETEXCEPTION_OFFSET))(this, e);
 		}
 
-		::System::Void AuthenticateAsClient(::System::String* targetHost, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection* clientCertificates, ::System::Security::Authentication::SslProtocols enabledSslProtocols, ::System::Boolean checkCertificateRevocation)
+		::System::Security::Authentication::SslProtocols get_DefaultProtocols()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*, ::System::Security::Authentication::SslProtocols, ::System::Boolean))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASCLIENT_OFFSET))(this, targetHost, clientCertificates, enabledSslProtocols, checkCertificateRevocation);
+			return ((::System::Security::Authentication::SslProtocols(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_DEFAULTPROTOCOLS_OFFSET))(this);
 		}
 
-		::System::Void AuthenticateAsServer(::System::Security::Cryptography::X509Certificates::X509Certificate* serverCertificate, ::System::Boolean clientCertificateRequired, ::System::Security::Authentication::SslProtocols enabledSslProtocols, ::System::Boolean checkCertificateRevocation)
+		::System::Void AuthenticateAsClient(::System::String* targetHost)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::X509Certificates::X509Certificate*, ::System::Boolean, ::System::Security::Authentication::SslProtocols, ::System::Boolean))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASSERVER_OFFSET))(this, serverCertificate, clientCertificateRequired, enabledSslProtocols, checkCertificateRevocation);
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASCLIENT_OFFSET))(this, targetHost);
+		}
+
+		::System::Void AuthenticateAsClient_1(::System::String* targetHost, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection* clientCertificates, ::System::Security::Authentication::SslProtocols enabledSslProtocols, ::System::Boolean checkCertificateRevocation)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*, ::System::Security::Authentication::SslProtocols, ::System::Boolean))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASCLIENT_1_OFFSET))(this, targetHost, clientCertificates, enabledSslProtocols, checkCertificateRevocation);
+		}
+
+		::System::IAsyncResult* BeginAuthenticateAsClient(::System::String* targetHost, ::System::AsyncCallback* asyncCallback, ::System::Object* asyncState)
+		{
+			return ((::System::IAsyncResult*(*)(::PVOID, ::System::String*, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINAUTHENTICATEASCLIENT_OFFSET))(this, targetHost, asyncCallback, asyncState);
+		}
+
+		::System::IAsyncResult* BeginAuthenticateAsClient_1(::System::String* targetHost, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection* clientCertificates, ::System::Security::Authentication::SslProtocols enabledSslProtocols, ::System::Boolean checkCertificateRevocation, ::System::AsyncCallback* asyncCallback, ::System::Object* asyncState)
+		{
+			return ((::System::IAsyncResult*(*)(::PVOID, ::System::String*, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*, ::System::Security::Authentication::SslProtocols, ::System::Boolean, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINAUTHENTICATEASCLIENT_1_OFFSET))(this, targetHost, clientCertificates, enabledSslProtocols, checkCertificateRevocation, asyncCallback, asyncState);
+		}
+
+		::System::Void EndAuthenticateAsClient(::System::IAsyncResult* asyncResult)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::IAsyncResult*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_ENDAUTHENTICATEASCLIENT_OFFSET))(this, asyncResult);
+		}
+
+		::System::Void AuthenticateAsServer(::System::Security::Cryptography::X509Certificates::X509Certificate* serverCertificate)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::X509Certificates::X509Certificate*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASSERVER_OFFSET))(this, serverCertificate);
+		}
+
+		::System::Void AuthenticateAsServer_1(::System::Security::Cryptography::X509Certificates::X509Certificate* serverCertificate, ::System::Boolean clientCertificateRequired, ::System::Security::Authentication::SslProtocols enabledSslProtocols, ::System::Boolean checkCertificateRevocation)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::X509Certificates::X509Certificate*, ::System::Boolean, ::System::Security::Authentication::SslProtocols, ::System::Boolean))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASSERVER_1_OFFSET))(this, serverCertificate, clientCertificateRequired, enabledSslProtocols, checkCertificateRevocation);
+		}
+
+		::System::IAsyncResult* BeginAuthenticateAsServer(::System::Security::Cryptography::X509Certificates::X509Certificate* serverCertificate, ::System::AsyncCallback* asyncCallback, ::System::Object* asyncState)
+		{
+			return ((::System::IAsyncResult*(*)(::PVOID, ::System::Security::Cryptography::X509Certificates::X509Certificate*, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINAUTHENTICATEASSERVER_OFFSET))(this, serverCertificate, asyncCallback, asyncState);
+		}
+
+		::System::IAsyncResult* BeginAuthenticateAsServer_1(::System::Security::Cryptography::X509Certificates::X509Certificate* serverCertificate, ::System::Boolean clientCertificateRequired, ::System::Security::Authentication::SslProtocols enabledSslProtocols, ::System::Boolean checkCertificateRevocation, ::System::AsyncCallback* asyncCallback, ::System::Object* asyncState)
+		{
+			return ((::System::IAsyncResult*(*)(::PVOID, ::System::Security::Cryptography::X509Certificates::X509Certificate*, ::System::Boolean, ::System::Security::Authentication::SslProtocols, ::System::Boolean, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_BEGINAUTHENTICATEASSERVER_1_OFFSET))(this, serverCertificate, clientCertificateRequired, enabledSslProtocols, checkCertificateRevocation, asyncCallback, asyncState);
+		}
+
+		::System::Void EndAuthenticateAsServer(::System::IAsyncResult* asyncResult)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::IAsyncResult*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_ENDAUTHENTICATEASSERVER_OFFSET))(this, asyncResult);
+		}
+
+		::System::Threading::Tasks::Task* AuthenticateAsClientAsync(::System::String* targetHost)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASCLIENTASYNC_OFFSET))(this, targetHost);
+		}
+
+		::System::Threading::Tasks::Task* AuthenticateAsClientAsync_1(::System::String* targetHost, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection* clientCertificates, ::System::Security::Authentication::SslProtocols enabledSslProtocols, ::System::Boolean checkCertificateRevocation)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::String*, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*, ::System::Security::Authentication::SslProtocols, ::System::Boolean))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASCLIENTASYNC_1_OFFSET))(this, targetHost, clientCertificates, enabledSslProtocols, checkCertificateRevocation);
+		}
+
+		::System::Threading::Tasks::Task* AuthenticateAsServerAsync(::System::Security::Cryptography::X509Certificates::X509Certificate* serverCertificate)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::Security::Cryptography::X509Certificates::X509Certificate*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASSERVERASYNC_OFFSET))(this, serverCertificate);
+		}
+
+		::System::Threading::Tasks::Task* AuthenticateAsServerAsync_1(::System::Security::Cryptography::X509Certificates::X509Certificate* serverCertificate, ::System::Boolean clientCertificateRequired, ::System::Security::Authentication::SslProtocols enabledSslProtocols, ::System::Boolean checkCertificateRevocation)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::Security::Cryptography::X509Certificates::X509Certificate*, ::System::Boolean, ::System::Security::Authentication::SslProtocols, ::System::Boolean))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_AUTHENTICATEASSERVERASYNC_1_OFFSET))(this, serverCertificate, clientCertificateRequired, enabledSslProtocols, checkCertificateRevocation);
+		}
+
+		::System::Threading::Tasks::Task* ShutdownAsync()
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SHUTDOWNASYNC_OFFSET))(this);
 		}
 
 		::System::Net::Security::AuthenticatedStream* get_AuthenticatedStream()
@@ -190,9 +311,14 @@ namespace Mono::Net::Security
 			return ((::System::Int32(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_READ_OFFSET))(this, buffer, offset, count);
 		}
 
-		::System::Void Write(::Il2CppArray<::System::Byte>* buffer, ::System::Int32 offset, ::System::Int32 count)
+		::System::Void Write(::Il2CppArray<::System::Byte>* buffer)
 		{
-			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_WRITE_OFFSET))(this, buffer, offset, count);
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_WRITE_OFFSET))(this, buffer);
+		}
+
+		::System::Void Write_1(::Il2CppArray<::System::Byte>* buffer, ::System::Int32 offset, ::System::Int32 count)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_WRITE_1_OFFSET))(this, buffer, offset, count);
 		}
 
 		::System::Threading::Tasks::Task_1<::System::Int32>* ReadAsync(::Il2CppArray<::System::Byte>* buffer, ::System::Int32 offset, ::System::Int32 count, ::System::Threading::CancellationToken cancellationToken)
@@ -208,6 +334,11 @@ namespace Mono::Net::Security
 		::System::Threading::Tasks::Task_1<::System::Int32>* StartOperation(::Mono::Net::Security::MobileAuthenticatedStream_OperationType type, ::Mono::Net::Security::AsyncProtocolRequest* asyncRequest, ::System::Threading::CancellationToken cancellationToken)
 		{
 			return ((::System::Threading::Tasks::Task_1<::System::Int32>*(*)(::PVOID, ::Mono::Net::Security::MobileAuthenticatedStream_OperationType, ::Mono::Net::Security::AsyncProtocolRequest*, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_STARTOPERATION_OFFSET))(this, type, asyncRequest, cancellationToken);
+		}
+
+		::System::Void Debug(::System::String* message, ::Il2CppArray<::System::Object*>* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_DEBUG_OFFSET))(this, message, args);
 		}
 
 		::System::Int32 InternalRead(::Il2CppArray<::System::Byte>* buffer, ::System::Int32 offset, ::System::Int32 size, ::System::Boolean& outWantMore)
@@ -255,9 +386,24 @@ namespace Mono::Net::Security
 			return ((::System::ValueTuple_2<::System::Int32, ::System::Boolean>(*)(::PVOID, ::Mono::Net::Security::BufferOffsetSize*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_PROCESSWRITE_OFFSET))(this, userBuffer);
 		}
 
+		::Mono::Net::Security::AsyncOperationStatus ProcessShutdown(::Mono::Net::Security::AsyncOperationStatus status)
+		{
+			return ((::Mono::Net::Security::AsyncOperationStatus(*)(::PVOID, ::Mono::Net::Security::AsyncOperationStatus))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_PROCESSSHUTDOWN_OFFSET))(this, status);
+		}
+
+		::System::Boolean get_IsServer()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_ISSERVER_OFFSET))(this);
+		}
+
 		::System::Boolean get_IsAuthenticated()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_ISAUTHENTICATED_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsMutuallyAuthenticated()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_ISMUTUALLYAUTHENTICATED_OFFSET))(this);
 		}
 
 		::System::Void Dispose(::System::Boolean disposing)
@@ -270,9 +416,29 @@ namespace Mono::Net::Security
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_FLUSH_OFFSET))(this);
 		}
 
+		::System::Security::Authentication::SslProtocols get_SslProtocol()
+		{
+			return ((::System::Security::Authentication::SslProtocols(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_SSLPROTOCOL_OFFSET))(this);
+		}
+
+		::System::Security::Cryptography::X509Certificates::X509Certificate* get_RemoteCertificate()
+		{
+			return ((::System::Security::Cryptography::X509Certificates::X509Certificate*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_REMOTECERTIFICATE_OFFSET))(this);
+		}
+
+		::System::Security::Cryptography::X509Certificates::X509Certificate* get_LocalCertificate()
+		{
+			return ((::System::Security::Cryptography::X509Certificates::X509Certificate*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_LOCALCERTIFICATE_OFFSET))(this);
+		}
+
 		::System::Security::Cryptography::X509Certificates::X509Certificate* get_InternalLocalCertificate()
 		{
 			return ((::System::Security::Cryptography::X509Certificates::X509Certificate*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_INTERNALLOCALCERTIFICATE_OFFSET))(this);
+		}
+
+		::Mono::Security::Interface::MonoTlsConnectionInfo* GetConnectionInfo()
+		{
+			return ((::Mono::Security::Interface::MonoTlsConnectionInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GETCONNECTIONINFO_OFFSET))(this);
 		}
 
 		::System::Int64 Seek(::System::Int64 offset, ::System::IO::SeekOrigin origin)
@@ -285,9 +451,19 @@ namespace Mono::Net::Security
 			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SETLENGTH_OFFSET))(this, value);
 		}
 
+		::System::Net::TransportContext* get_TransportContext()
+		{
+			return ((::System::Net::TransportContext*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_TRANSPORTCONTEXT_OFFSET))(this);
+		}
+
 		::System::Boolean get_CanRead()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CANREAD_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanTimeout()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CANTIMEOUT_OFFSET))(this);
 		}
 
 		::System::Boolean get_CanWrite()
@@ -315,6 +491,16 @@ namespace Mono::Net::Security
 			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SET_POSITION_OFFSET))(this, value);
 		}
 
+		::System::Boolean get_IsEncrypted()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_ISENCRYPTED_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsSigned()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_ISSIGNED_OFFSET))(this);
+		}
+
 		::System::Int32 get_ReadTimeout()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_READTIMEOUT_OFFSET))(this);
@@ -333,6 +519,41 @@ namespace Mono::Net::Security
 		::System::Void set_WriteTimeout(::System::Int32 value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_SET_WRITETIMEOUT_OFFSET))(this, value);
+		}
+
+		::System::Security::Authentication::CipherAlgorithmType get_CipherAlgorithm()
+		{
+			return ((::System::Security::Authentication::CipherAlgorithmType(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CIPHERALGORITHM_OFFSET))(this);
+		}
+
+		::System::Security::Authentication::HashAlgorithmType get_HashAlgorithm()
+		{
+			return ((::System::Security::Authentication::HashAlgorithmType(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_HASHALGORITHM_OFFSET))(this);
+		}
+
+		::System::Security::Authentication::ExchangeAlgorithmType get_KeyExchangeAlgorithm()
+		{
+			return ((::System::Security::Authentication::ExchangeAlgorithmType(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_KEYEXCHANGEALGORITHM_OFFSET))(this);
+		}
+
+		::System::Int32 get_CipherStrength()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CIPHERSTRENGTH_OFFSET))(this);
+		}
+
+		::System::Int32 get_HashStrength()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_HASHSTRENGTH_OFFSET))(this);
+		}
+
+		::System::Int32 get_KeyExchangeStrength()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_KEYEXCHANGESTRENGTH_OFFSET))(this);
+		}
+
+		::System::Boolean get_CheckCertRevocationStatus()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM_GET_CHECKCERTREVOCATIONSTATUS_OFFSET))(this);
 		}
 
 		::System::Void _InnerWrite_b__67_0()

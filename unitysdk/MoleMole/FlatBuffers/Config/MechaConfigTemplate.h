@@ -1,0 +1,234 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_3E75877A2888D88A_248.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_13;
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_CLEAR_OFFSET UNITYSDK_OFFSET(0x191A25F0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_ADAPTABILITY_OFFSET UNITYSDK_OFFSET(0x13CA2A20)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_BATTLEID_OFFSET UNITYSDK_OFFSET(0x13CA2B80)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_BOSSLEVELID_OFFSET UNITYSDK_OFFSET(0x13CA2E70)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_DEFAULTTAB_OFFSET UNITYSDK_OFFSET(0x13CA2FD0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_INHERITTALENT_OFFSET UNITYSDK_OFFSET(0x13CA3130)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_ISLOADALL_OFFSET UNITYSDK_OFFSET(0x13CA2890)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_PERFORMID_OFFSET UNITYSDK_OFFSET(0x13CA3290)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_QUEST_OFFSET UNITYSDK_OFFSET(0x13CA33F0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_RECOMMENDEDTAB_OFFSET UNITYSDK_OFFSET(0x13CA3550)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_RESTOREHEALTH_OFFSET UNITYSDK_OFFSET(0x13CA3850)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_ROBOTID_OFFSET UNITYSDK_OFFSET(0x13CA39B0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_SCRIPTICON_OFFSET UNITYSDK_OFFSET(0x13CA3B10)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_SCRIPTID_OFFSET UNITYSDK_OFFSET(0x13CA28C0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_SCRIPTMODE_OFFSET UNITYSDK_OFFSET(0x13CA3C30)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_SCRIPTNAME_OFFSET UNITYSDK_OFFSET(0x13CA3D90)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGDEFENSE_OFFSET UNITYSDK_OFFSET(0x13CA3EB0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGENERGY_OFFSET UNITYSDK_OFFSET(0x13CA4020)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGHEALTH_OFFSET UNITYSDK_OFFSET(0x13CA4180)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGMELEE_OFFSET UNITYSDK_OFFSET(0x191A18A0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGRANGED_OFFSET UNITYSDK_OFFSET(0x191A1A00)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGTALENT_OFFSET UNITYSDK_OFFSET(0x191A1B70)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STOREID_OFFSET UNITYSDK_OFFSET(0x191A1CE0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_TALENTS_OFFSET UNITYSDK_OFFSET(0x191A1E50)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_TEXT1_OFFSET UNITYSDK_OFFSET(0x191A1FC0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_TEXT2_OFFSET UNITYSDK_OFFSET(0x191A20E0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_UNLOCKTAB_OFFSET UNITYSDK_OFFSET(0x191A2200)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_LOADANDCHECK_OFFSET UNITYSDK_OFFSET(0x191A24F0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_SET_ISLOADALL_OFFSET UNITYSDK_OFFSET(0x13CA28A0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE__CTOR_OFFSET UNITYSDK_OFFSET(0x13CA28B0)
+
+namespace MoleMole::FlatBuffers::Config
+{
+	inline static constexpr unsigned int MechaConfigTemplate_TypeDefinitionIndex = 10306;
+
+	class MechaConfigTemplate : public ::System::Object
+	{
+	public:
+		// static const ::System::String* Hash; // 0x0
+		// static const ::System::Byte VAR_MAX_COUNT = 0x19; // 0x0
+		::System::Collections::Generic::List_1<::System::Int32>* m_BattleID; // 0x10
+		::System::String* m_Text2; // 0x18
+		::System::Collections::Generic::List_1<::System::Int32>* m_UnlockTab; // 0x20
+		::System::String* m_Text1; // 0x28
+		::System::String* m_ScriptName; // 0x30
+		::System::String* m_ScriptIcon; // 0x38
+		::System::Collections::Generic::List_1<::System::Int32>* m_RecommendedTab; // 0x40
+		::Class_0_16E4307DCC419505_13* m_Notify; // 0x48
+		::Struct_2_3E75877A2888D88A_248 m_Data; // 0x50
+		::System::Int32 m_ScriptMode; // 0x60
+		::System::Int32 m_StartingEnergy; // 0x64
+		::System::Byte m_Mask0; // 0x68
+		::System::Byte m_Mask3; // 0x69
+		::System::Int32 m_Adaptability; // 0x6C
+		::System::Int32 m_InheritTalent; // 0x70
+		::System::Int32 m_RobotID; // 0x74
+		::System::Int32 m_StartingMelee; // 0x78
+		::System::Int32 m_RestoreHealth; // 0x7C
+		::System::Int32 m_ScriptID; // 0x80
+		::System::Int32 m_StartingDefense; // 0x84
+		::System::Int32 m_StartingRanged; // 0x88
+		::System::Int32 m_BossLevelID; // 0x8C
+		::System::Int32 m_StartingTalent; // 0x90
+		::System::Int32 m_PerformID; // 0x94
+		::System::Int32 m_Quest; // 0x98
+		::System::Int32 m_Talents; // 0x9C
+		::System::Int32 m_StartingHealth; // 0xA0
+		::System::Byte m_VarLoadedCount; // 0xA4
+		::System::Boolean _IsLoadAll_k__BackingField; // 0xA5
+		::System::Byte m_Mask1; // 0xA6
+		::System::Byte m_Mask2; // 0xA7
+		::System::Int32 m_StoreID; // 0xA8
+		::System::Int32 m_DefaultTab; // 0xAC
+
+		::System::Void _ctor(::Struct_2_3E75877A2888D88A_248 data, ::Class_0_16E4307DCC419505_13* notify)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_3E75877A2888D88A_248, ::Class_0_16E4307DCC419505_13*))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE__CTOR_OFFSET))(this, data, notify);
+		}
+
+		::System::Boolean get_IsLoadAll()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_ISLOADALL_OFFSET))(this);
+		}
+
+		::System::Void set_IsLoadAll(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_SET_ISLOADALL_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_ScriptID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_SCRIPTID_OFFSET))(this);
+		}
+
+		::System::Int32 get_Adaptability()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_ADAPTABILITY_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* get_BattleID()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_BATTLEID_OFFSET))(this);
+		}
+
+		::System::Int32 get_BossLevelID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_BOSSLEVELID_OFFSET))(this);
+		}
+
+		::System::Int32 get_DefaultTab()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_DEFAULTTAB_OFFSET))(this);
+		}
+
+		::System::Int32 get_InheritTalent()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_INHERITTALENT_OFFSET))(this);
+		}
+
+		::System::Int32 get_PerformID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_PERFORMID_OFFSET))(this);
+		}
+
+		::System::Int32 get_Quest()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_QUEST_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* get_RecommendedTab()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_RECOMMENDEDTAB_OFFSET))(this);
+		}
+
+		::System::Int32 get_RestoreHealth()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_RESTOREHEALTH_OFFSET))(this);
+		}
+
+		::System::Int32 get_RobotID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_ROBOTID_OFFSET))(this);
+		}
+
+		::System::String* get_ScriptIcon()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_SCRIPTICON_OFFSET))(this);
+		}
+
+		::System::Int32 get_ScriptMode()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_SCRIPTMODE_OFFSET))(this);
+		}
+
+		::System::String* get_ScriptName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_SCRIPTNAME_OFFSET))(this);
+		}
+
+		::System::Int32 get_StartingDefense()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGDEFENSE_OFFSET))(this);
+		}
+
+		::System::Int32 get_StartingEnergy()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGENERGY_OFFSET))(this);
+		}
+
+		::System::Int32 get_StartingHealth()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGHEALTH_OFFSET))(this);
+		}
+
+		::System::Int32 get_StartingMelee()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGMELEE_OFFSET))(this);
+		}
+
+		::System::Int32 get_StartingRanged()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGRANGED_OFFSET))(this);
+		}
+
+		::System::Int32 get_StartingTalent()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STARTINGTALENT_OFFSET))(this);
+		}
+
+		::System::Int32 get_StoreID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_STOREID_OFFSET))(this);
+		}
+
+		::System::Int32 get_Talents()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_TALENTS_OFFSET))(this);
+		}
+
+		::System::String* get_Text1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_TEXT1_OFFSET))(this);
+		}
+
+		::System::String* get_Text2()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_TEXT2_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* get_UnlockTab()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_GET_UNLOCKTAB_OFFSET))(this);
+		}
+
+		::System::Void LoadAndCheck()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_LOADANDCHECK_OFFSET))(this);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_MECHACONFIGTEMPLATE_CLEAR_OFFSET))(this);
+		}
+	};
+}

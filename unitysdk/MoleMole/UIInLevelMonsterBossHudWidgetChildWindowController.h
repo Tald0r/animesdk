@@ -1,0 +1,52 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIInLevelMonsterHudWidgetChildWindowController.h"
+
+namespace MoleMole { class UIControlReference; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER_GET_HUDFADEINANIMNAME_OFFSET UNITYSDK_OFFSET(0x7D1ED50)
+#define MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER_GET_HUDFADEOUTANIMNAME_OFFSET UNITYSDK_OFFSET(0x7D1ED90)
+#define MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER_GET_ISBOSS_OFFSET UNITYSDK_OFFSET(0x7D1ECA0)
+#define MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D1ECB0)
+#define MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7D1EDD0)
+#define MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D1EE00)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelMonsterBossHudWidgetChildWindowController_TypeDefinitionIndex = 75428;
+
+	class UIInLevelMonsterBossHudWidgetChildWindowController : public ::MoleMole::UIInLevelMonsterHudWidgetChildWindowController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsBoss()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER_GET_ISBOSS_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::String* get_HudFadeInAnimName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER_GET_HUDFADEINANIMNAME_OFFSET))(this);
+		}
+
+		::System::String* get_HudFadeOutAnimName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER_GET_HUDFADEOUTANIMNAME_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELMONSTERBOSSHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+	};
+}

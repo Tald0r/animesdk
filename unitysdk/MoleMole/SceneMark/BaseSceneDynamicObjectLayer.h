@@ -1,0 +1,27 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/SceneMark/DefaultDynamicObjectLayer.h"
+
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_SCENEMARK_BASESCENEDYNAMICOBJECTLAYER_METHOD_2_70B0452E19C5F215_OFFSET UNITYSDK_OFFSET(0x7F20A90)
+#define MOLEMOLE_SCENEMARK_BASESCENEDYNAMICOBJECTLAYER__CTOR_OFFSET UNITYSDK_OFFSET(0x7F209F0)
+
+namespace MoleMole::SceneMark
+{
+	inline static constexpr unsigned int BaseSceneDynamicObjectLayer_TypeDefinitionIndex = 39266;
+
+	class BaseSceneDynamicObjectLayer : public ::MoleMole::SceneMark::DefaultDynamicObjectLayer
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SCENEMARK_BASESCENEDYNAMICOBJECTLAYER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Method_2_70B0452E19C5F215(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_SCENEMARK_BASESCENEDYNAMICOBJECTLAYER_METHOD_2_70B0452E19C5F215_OFFSET))(this, a1);
+		}
+	};
+}

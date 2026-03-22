@@ -1,17 +1,16 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MessagePack/Unity/Extension/ReverseEndianessHelperSimpleRepeat_1.h"
-#include "unitysdk/MessagePack/Unity/Extension/UnsafeBlitFormatterBase_2.h"
+#include "unitysdk/MessagePack/Unity/Extension/UnsafeBlitFormatterBase_1.h"
 #include "unitysdk/UnityEngine/Bounds.h"
 
-#define MESSAGEPACK_UNITY_EXTENSION_BOUNDSARRAYBLITFORMATTER_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x1561A500)
-#define MESSAGEPACK_UNITY_EXTENSION_BOUNDSARRAYBLITFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1561A510)
+#define MESSAGEPACK_UNITY_EXTENSION_BOUNDSARRAYBLITFORMATTER_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x1A17D0C0)
+#define MESSAGEPACK_UNITY_EXTENSION_BOUNDSARRAYBLITFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A17D0D0)
 
 namespace MessagePack::Unity::Extension
 {
-	inline static constexpr unsigned int BoundsArrayBlitFormatter_TypeDefinitionIndex = 33962;
+	inline static constexpr unsigned int BoundsArrayBlitFormatter_TypeDefinitionIndex = 25410;
 
-	class BoundsArrayBlitFormatter : public ::MessagePack::Unity::Extension::UnsafeBlitFormatterBase_2<::UnityEngine::Bounds, ::MessagePack::Unity::Extension::ReverseEndianessHelperSimpleRepeat_1<::System::Single>>
+	class BoundsArrayBlitFormatter : public ::MessagePack::Unity::Extension::UnsafeBlitFormatterBase_1<::UnityEngine::Bounds>
 	{
 	public:
 		::System::Void _ctor()

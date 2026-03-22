@@ -6,15 +6,12 @@
 namespace System { class String; }
 namespace System { class Type; }
 
-#define SYSTEM_RUNTIME_REMOTING_WELLKNOWNSERVICETYPEENTRY_GET_MODE_OFFSET UNITYSDK_OFFSET(0x15D14AE0)
-#define SYSTEM_RUNTIME_REMOTING_WELLKNOWNSERVICETYPEENTRY_GET_OBJECTTYPE_OFFSET UNITYSDK_OFFSET(0x15D14AF0)
-#define SYSTEM_RUNTIME_REMOTING_WELLKNOWNSERVICETYPEENTRY_GET_OBJECTURI_OFFSET UNITYSDK_OFFSET(0x15D14B00)
-#define SYSTEM_RUNTIME_REMOTING_WELLKNOWNSERVICETYPEENTRY_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15D14B10)
-#define SYSTEM_RUNTIME_REMOTING_WELLKNOWNSERVICETYPEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x15D149B0)
+#define SYSTEM_RUNTIME_REMOTING_WELLKNOWNSERVICETYPEENTRY_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1988CEB0)
+#define SYSTEM_RUNTIME_REMOTING_WELLKNOWNSERVICETYPEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x1988CD80)
 
 namespace System::Runtime::Remoting
 {
-	inline static constexpr unsigned int WellKnownServiceTypeEntry_TypeDefinitionIndex = 1216;
+	inline static constexpr unsigned int WellKnownServiceTypeEntry_TypeDefinitionIndex = 1267;
 
 	class WellKnownServiceTypeEntry : public ::System::Runtime::Remoting::TypeEntry
 	{
@@ -26,21 +23,6 @@ namespace System::Runtime::Remoting
 		::System::Void _ctor(::System::String* typeName, ::System::String* assemblyName, ::System::String* objectUri, ::System::Runtime::Remoting::WellKnownObjectMode mode)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*, ::System::Runtime::Remoting::WellKnownObjectMode))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_WELLKNOWNSERVICETYPEENTRY__CTOR_OFFSET))(this, typeName, assemblyName, objectUri, mode);
-		}
-
-		::System::Runtime::Remoting::WellKnownObjectMode get_Mode()
-		{
-			return ((::System::Runtime::Remoting::WellKnownObjectMode(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_WELLKNOWNSERVICETYPEENTRY_GET_MODE_OFFSET))(this);
-		}
-
-		::System::Type* get_ObjectType()
-		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_WELLKNOWNSERVICETYPEENTRY_GET_OBJECTTYPE_OFFSET))(this);
-		}
-
-		::System::String* get_ObjectUri()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_WELLKNOWNSERVICETYPEENTRY_GET_OBJECTURI_OFFSET))(this);
 		}
 
 		::System::String* ToString()

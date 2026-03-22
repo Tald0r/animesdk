@@ -1,0 +1,305 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_0A3761FE34514D6C_50.h"
+#include "unitysdk/Enum_3_AED255285F38DB91.h"
+#include "unitysdk/MoleMole/UICampIdleNodeWidgetController_NodeAnimation.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_B97D2A325ABD0307;
+class Class_2_1CC0E2699D5FB1A6_8;
+class Class_2_208CC9941471731A_434;
+class Class_2_63F2BA8DCD781A12;
+namespace MoleMole { class UICampIdleExpNodeReference; }
+namespace MoleMole { class UICampIdlePageController; }
+namespace MoleMole { class UICampIdleRewardNodeReference; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Animation; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine::UI::Extension { class UIButtonEx; }
+
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_BINDCLICKEVENTS_OFFSET UNITYSDK_OFFSET(0xC2991F0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_BINDLINES_OFFSET UNITYSDK_OFFSET(0xC297B80)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_BINDSERVEREVENTS_OFFSET UNITYSDK_OFFSET(0xC297D30)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_CHECKNODESTATECHANGE_OFFSET UNITYSDK_OFFSET(0xC299B90)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_DOPLAYCANUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xC29A690)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_DOPLAYDONEANDLINEANIM_OFFSET UNITYSDK_OFFSET(0xC29A490)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_CFG_OFFSET UNITYSDK_OFFSET(0xC2977F0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_CURNODEANIMATION_OFFSET UNITYSDK_OFFSET(0xC29A0B0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_ID_OFFSET UNITYSDK_OFFSET(0xC297710)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_ISSERVERUNLOCKED_OFFSET UNITYSDK_OFFSET(0xC297750)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_MAINBUTTON_OFFSET UNITYSDK_OFFSET(0xC297720)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_MODEL_OFFSET UNITYSDK_OFFSET(0xC297700)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_NODEOVERALL_OFFSET UNITYSDK_OFFSET(0xC2977E0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_PARENTCTRL_OFFSET UNITYSDK_OFFSET(0xC299430)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_INITCAMPID2ARRIDXDICT_OFFSET UNITYSDK_OFFSET(0xC299950)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_INITREFERENCE_OFFSET UNITYSDK_OFFSET(0xC297870)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xC299360)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC29B540)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONSERVERDATAUPDATE_OFFSET UNITYSDK_OFFSET(0xC297F00)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC29B5E0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC297AE0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC2997F0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_PLAYDONEANDLINEANIM_OFFSET UNITYSDK_OFFSET(0xC29A230)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_PLAYLINESUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xC299F40)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_REFRESHEXPNODE_OFFSET UNITYSDK_OFFSET(0xC29A850)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_REFRESHREWARDNODE_OFFSET UNITYSDK_OFFSET(0xC29B160)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_REFRESHSERVERDATA_OFFSET UNITYSDK_OFFSET(0xC297F90)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xC298220)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SETEDITORNAME_OFFSET UNITYSDK_OFFSET(0xC2996C0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SETUPBYEXTENSIONDATA_OFFSET UNITYSDK_OFFSET(0xC2994B0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SHOWDONEANIM_OFFSET UNITYSDK_OFFSET(0xC299E40)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SHOWDONEOBJ_OFFSET UNITYSDK_OFFSET(0xC29A740)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SHOWQUICKDONEANIM_OFFSET UNITYSDK_OFFSET(0xC299DC0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SHOWUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xC299EC0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_TESTQA_OFFSET UNITYSDK_OFFSET(0xC29B410)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_TRYPLAYCANUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xC299090)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_UNBINDSERVEREVENTS_OFFSET UNITYSDK_OFFSET(0xC297DE0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC29B6D0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC29B770)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC29B7E0)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC29B860)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC29B8C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICampIdleNodeWidgetController_TypeDefinitionIndex = 68379;
+
+	class UICampIdleNodeWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Enum_3_0A3761FE34514D6C_50 m_playType; // 0x2A0
+		::Class_2_63F2BA8DCD781A12* m_model; // 0x2A8
+		::Class_2_1CC0E2699D5FB1A6_8* _view; // 0x2B0
+		::System::Int32 m_id; // 0x2B8
+		::Class_1_B97D2A325ABD0307* m_nodeOverAll; // 0x2C0
+		::MoleMole::UICampIdleExpNodeReference* m_expReference; // 0x2C8
+		::MoleMole::UICampIdleRewardNodeReference* m_rewardReference; // 0x2D0
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* m_unlockedLine; // 0x2D8
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* m_lockedLine; // 0x2E0
+		::System::Boolean m_serverDirty; // 0x2E8
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* CampID2ArrIdxDict; // 0x2F0
+		::System::Boolean m_firstTimeRefresh; // 0x2F8
+		::Enum_3_AED255285F38DB91 m_prevNodeState; // 0x2FC
+		::System::String* lineAnimName; // 0x300
+		::System::String* UnlockAnim; // 0x308
+		::System::String* DoneAnim; // 0x310
+		::System::String* QuickDoneAnim; // 0x318
+		::UnityEngine::Animation* m_nodeAnimation; // 0x320
+		::System::String* canUnlockAnimation; // 0x328
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_63F2BA8DCD781A12* get_Model()
+		{
+			return ((::Class_2_63F2BA8DCD781A12*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_MODEL_OFFSET))(this);
+		}
+
+		::System::Int32 get_ID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_ID_OFFSET))(this);
+		}
+
+		::UnityEngine::UI::Extension::UIButtonEx* get_MainButton()
+		{
+			return ((::UnityEngine::UI::Extension::UIButtonEx*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_MAINBUTTON_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsServerUnlocked()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_ISSERVERUNLOCKED_OFFSET))(this);
+		}
+
+		::Class_1_B97D2A325ABD0307* get_NodeOverAll()
+		{
+			return ((::Class_1_B97D2A325ABD0307*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_NODEOVERALL_OFFSET))(this);
+		}
+
+		::Class_2_208CC9941471731A_434* get_Cfg()
+		{
+			return ((::Class_2_208CC9941471731A_434*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_CFG_OFFSET))(this);
+		}
+
+		::System::Void InitReference()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_INITREFERENCE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void BindLines(::UnityEngine::GameObject* locked, ::UnityEngine::GameObject* unlocked)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_BINDLINES_OFFSET))(this, locked, unlocked);
+		}
+
+		::System::Void BindServerEvents()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_BINDSERVEREVENTS_OFFSET))(this);
+		}
+
+		::System::Void UnbindServerEvents()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_UNBINDSERVEREVENTS_OFFSET))(this);
+		}
+
+		::System::Void OnServerDataUpdate(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONSERVERDATAUPDATE_OFFSET))(this, args);
+		}
+
+		::System::Void BindClickEvents()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_BINDCLICKEVENTS_OFFSET))(this);
+		}
+
+		::System::Void OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void SetupByExtensionData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SETUPBYEXTENSIONDATA_OFFSET))(this);
+		}
+
+		::System::Void RefreshServerData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_REFRESHSERVERDATA_OFFSET))(this);
+		}
+
+		::System::Void SetEditorName(::System::String* nodeName)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SETEDITORNAME_OFFSET))(this, nodeName);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::MoleMole::UICampIdlePageController* get_ParentCtrl()
+		{
+			return ((::MoleMole::UICampIdlePageController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_PARENTCTRL_OFFSET))(this);
+		}
+
+		::System::Void InitCampID2ArrIdxDict()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_INITCAMPID2ARRIDXDICT_OFFSET))(this);
+		}
+
+		::MoleMole::UICampIdleNodeWidgetController_NodeAnimation CheckNodeStateChange()
+		{
+			return ((::MoleMole::UICampIdleNodeWidgetController_NodeAnimation(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_CHECKNODESTATECHANGE_OFFSET))(this);
+		}
+
+		::System::Boolean ShowUnlockAnim(::Enum_3_AED255285F38DB91 prevNodeState, ::Enum_3_AED255285F38DB91 curState)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_AED255285F38DB91, ::Enum_3_AED255285F38DB91))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SHOWUNLOCKANIM_OFFSET))(this, prevNodeState, curState);
+		}
+
+		::System::Boolean ShowQuickDoneAnim(::Enum_3_AED255285F38DB91 prevNodeState, ::Enum_3_AED255285F38DB91 curState)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_AED255285F38DB91, ::Enum_3_AED255285F38DB91))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SHOWQUICKDONEANIM_OFFSET))(this, prevNodeState, curState);
+		}
+
+		::System::Boolean ShowDoneAnim(::Enum_3_AED255285F38DB91 prevNodeState, ::Enum_3_AED255285F38DB91 curState)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_AED255285F38DB91, ::Enum_3_AED255285F38DB91))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SHOWDONEANIM_OFFSET))(this, prevNodeState, curState);
+		}
+
+		::System::Void PlayLinesUnlockAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_PLAYLINESUNLOCKANIM_OFFSET))(this);
+		}
+
+		::UnityEngine::Animation* get_CurNodeAnimation()
+		{
+			return ((::UnityEngine::Animation*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_GET_CURNODEANIMATION_OFFSET))(this);
+		}
+
+		::System::Void PlayDoneAndLineAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_PLAYDONEANDLINEANIM_OFFSET))(this);
+		}
+
+		::System::Void DoPlayDoneAndLineAnim(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_DOPLAYDONEANDLINEANIM_OFFSET))(this, args);
+		}
+
+		::System::Void TryPlayCanUnlockAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_TRYPLAYCANUNLOCKANIM_OFFSET))(this);
+		}
+
+		::System::Void DoPlayCanUnlockAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_DOPLAYCANUNLOCKANIM_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void TestQA()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_TESTQA_OFFSET))(this);
+		}
+
+		::System::Void RefreshExpNode()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_REFRESHEXPNODE_OFFSET))(this);
+		}
+
+		::System::Void RefreshRewardNode()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_REFRESHREWARDNODE_OFFSET))(this);
+		}
+
+		::System::Boolean ShowDoneObj()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_SHOWDONEOBJ_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -3,54 +3,83 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/Xml/ReadState.h"
 #include "unitysdk/System/Xml/XmlNodeType.h"
+#include "unitysdk/System/Xml/XmlSpace.h"
 
 namespace System { class String; }
+namespace System { class Type; }
 namespace System::IO { class Stream; }
+namespace System::IO { class StringWriter; }
+namespace System::IO { class TextReader; }
 namespace System::Xml { class IDtdInfo; }
 namespace System::Xml { class XmlNameTable; }
+namespace System::Xml { class XmlNamespaceManager; }
+namespace System::Xml { class XmlParserContext; }
 namespace System::Xml { class XmlReaderSettings; }
+namespace System::Xml { class XmlTextWriter; }
+namespace System::Xml { class XmlWriter; }
 namespace System::Xml::Schema { class IXmlSchemaInfo; }
 
-#define SYSTEM_XML_XMLREADER_CALCBUFFERSIZE_OFFSET UNITYSDK_OFFSET(0x17E0C730)
-#define SYSTEM_XML_XMLREADER_CLOSE_OFFSET UNITYSDK_OFFSET(0x17E0BE10)
-#define SYSTEM_XML_XMLREADER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x17E0C6E0)
-#define SYSTEM_XML_XMLREADER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17E0C6C0)
-#define SYSTEM_XML_XMLREADER_GET_CANRESOLVEENTITY_OFFSET UNITYSDK_OFFSET(0x17E0BF90)
-#define SYSTEM_XML_XMLREADER_GET_DTDINFO_OFFSET UNITYSDK_OFFSET(0x17E0C720)
-#define SYSTEM_XML_XMLREADER_GET_ISDEFAULT_OFFSET UNITYSDK_OFFSET(0x17E0BDC0)
-#define SYSTEM_XML_XMLREADER_GET_NAME_OFFSET UNITYSDK_OFFSET(0x17E0BD20)
-#define SYSTEM_XML_XMLREADER_GET_SCHEMAINFO_OFFSET UNITYSDK_OFFSET(0x17E0BDD0)
-#define SYSTEM_XML_XMLREADER_GET_SETTINGS_OFFSET UNITYSDK_OFFSET(0x17E0BD10)
-#define SYSTEM_XML_XMLREADER_ISSTARTELEMENT_OFFSET UNITYSDK_OFFSET(0x17E0C610)
-#define SYSTEM_XML_XMLREADER_ISTEXTUALNODE_OFFSET UNITYSDK_OFFSET(0x17E0C160)
-#define SYSTEM_XML_XMLREADER_MOVETOCONTENT_OFFSET UNITYSDK_OFFSET(0x17E0C1C0)
-#define SYSTEM_XML_XMLREADER_READELEMENTSTRING_OFFSET UNITYSDK_OFFSET(0x17E0C320)
-#define SYSTEM_XML_XMLREADER_READENDELEMENT_OFFSET UNITYSDK_OFFSET(0x17E0C530)
-#define SYSTEM_XML_XMLREADER_READSTARTELEMENT_OFFSET UNITYSDK_OFFSET(0x17E0C240)
-#define SYSTEM_XML_XMLREADER_READSTRING_OFFSET UNITYSDK_OFFSET(0x17E0BFA0)
-#define SYSTEM_XML_XMLREADER_SKIPSUBTREE_OFFSET UNITYSDK_OFFSET(0x17E0BEE0)
-#define SYSTEM_XML_XMLREADER_SKIP_OFFSET UNITYSDK_OFFSET(0x17E0BE20)
-#define SYSTEM_XML_XMLREADER__CCTOR_OFFSET UNITYSDK_OFFSET(0x17E0C7C0)
-#define SYSTEM_XML_XMLREADER__CTOR_OFFSET UNITYSDK_OFFSET(0x17E0C7B0)
+#define SYSTEM_XML_XMLREADER_CALCBUFFERSIZE_OFFSET UNITYSDK_OFFSET(0x19A34170)
+#define SYSTEM_XML_XMLREADER_CLOSE_OFFSET UNITYSDK_OFFSET(0x19A32400)
+#define SYSTEM_XML_XMLREADER_CREATESQLREADER_OFFSET UNITYSDK_OFFSET(0x19A33DF0)
+#define SYSTEM_XML_XMLREADER_CREATEWRITERFORINNEROUTERXML_OFFSET UNITYSDK_OFFSET(0x19A331C0)
+#define SYSTEM_XML_XMLREADER_CREATE_1_OFFSET UNITYSDK_OFFSET(0x19A33C10)
+#define SYSTEM_XML_XMLREADER_CREATE_2_OFFSET UNITYSDK_OFFSET(0x19A33D30)
+#define SYSTEM_XML_XMLREADER_CREATE_OFFSET UNITYSDK_OFFSET(0x19A33B40)
+#define SYSTEM_XML_XMLREADER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x19A33980)
+#define SYSTEM_XML_XMLREADER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x19A33960)
+#define SYSTEM_XML_XMLREADER_GET_CANREADVALUECHUNK_OFFSET UNITYSDK_OFFSET(0x19A32590)
+#define SYSTEM_XML_XMLREADER_GET_CANRESOLVEENTITY_OFFSET UNITYSDK_OFFSET(0x19A32580)
+#define SYSTEM_XML_XMLREADER_GET_DTDINFO_OFFSET UNITYSDK_OFFSET(0x19A33B30)
+#define SYSTEM_XML_XMLREADER_GET_HASATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x19A33940)
+#define SYSTEM_XML_XMLREADER_GET_ISDEFAULTINTERNAL_OFFSET UNITYSDK_OFFSET(0x19A33A30)
+#define SYSTEM_XML_XMLREADER_GET_ISDEFAULT_OFFSET UNITYSDK_OFFSET(0x19A322A0)
+#define SYSTEM_XML_XMLREADER_GET_NAMESPACEMANAGER_OFFSET UNITYSDK_OFFSET(0x19A339C0)
+#define SYSTEM_XML_XMLREADER_GET_NAME_OFFSET UNITYSDK_OFFSET(0x19A32200)
+#define SYSTEM_XML_XMLREADER_GET_QUOTECHAR_OFFSET UNITYSDK_OFFSET(0x19A322B0)
+#define SYSTEM_XML_XMLREADER_GET_SCHEMAINFO_OFFSET UNITYSDK_OFFSET(0x19A322E0)
+#define SYSTEM_XML_XMLREADER_GET_SETTINGS_OFFSET UNITYSDK_OFFSET(0x19A321F0)
+#define SYSTEM_XML_XMLREADER_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x19A32320)
+#define SYSTEM_XML_XMLREADER_GET_XMLLANG_OFFSET UNITYSDK_OFFSET(0x19A322D0)
+#define SYSTEM_XML_XMLREADER_GET_XMLSPACE_OFFSET UNITYSDK_OFFSET(0x19A322C0)
+#define SYSTEM_XML_XMLREADER_HASVALUEINTERNAL_OFFSET UNITYSDK_OFFSET(0x19A339D0)
+#define SYSTEM_XML_XMLREADER_ISSTARTELEMENT_OFFSET UNITYSDK_OFFSET(0x19A32C70)
+#define SYSTEM_XML_XMLREADER_ISTEXTUALNODE_OFFSET UNITYSDK_OFFSET(0x19A327C0)
+#define SYSTEM_XML_XMLREADER_MOVETOATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x19A32350)
+#define SYSTEM_XML_XMLREADER_MOVETOCONTENT_OFFSET UNITYSDK_OFFSET(0x19A32820)
+#define SYSTEM_XML_XMLREADER_READELEMENTSTRING_OFFSET UNITYSDK_OFFSET(0x19A32980)
+#define SYSTEM_XML_XMLREADER_READENDELEMENT_OFFSET UNITYSDK_OFFSET(0x19A32B90)
+#define SYSTEM_XML_XMLREADER_READINNERXML_OFFSET UNITYSDK_OFFSET(0x19A32E40)
+#define SYSTEM_XML_XMLREADER_READSTARTELEMENT_OFFSET UNITYSDK_OFFSET(0x19A328A0)
+#define SYSTEM_XML_XMLREADER_READSTRING_OFFSET UNITYSDK_OFFSET(0x19A32600)
+#define SYSTEM_XML_XMLREADER_READTOFOLLOWING_OFFSET UNITYSDK_OFFSET(0x19A32D20)
+#define SYSTEM_XML_XMLREADER_READVALUECHUNK_OFFSET UNITYSDK_OFFSET(0x19A325A0)
+#define SYSTEM_XML_XMLREADER_SETNAMESPACESFLAG_OFFSET UNITYSDK_OFFSET(0x19A337F0)
+#define SYSTEM_XML_XMLREADER_SKIPSUBTREE_OFFSET UNITYSDK_OFFSET(0x19A324D0)
+#define SYSTEM_XML_XMLREADER_SKIP_OFFSET UNITYSDK_OFFSET(0x19A32410)
+#define SYSTEM_XML_XMLREADER_WRITEATTRIBUTEVALUE_OFFSET UNITYSDK_OFFSET(0x19A33220)
+#define SYSTEM_XML_XMLREADER_WRITENODE_OFFSET UNITYSDK_OFFSET(0x19A33320)
+#define SYSTEM_XML_XMLREADER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19A34200)
+#define SYSTEM_XML_XMLREADER__CTOR_OFFSET UNITYSDK_OFFSET(0x19A341F0)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int XmlReader_TypeDefinitionIndex = 1824;
+	inline static constexpr unsigned int XmlReader_TypeDefinitionIndex = 1710;
 
 	class XmlReader : public ::System::Object
 	{
 	public:
+		static ::System::UInt32* StaticGet_IsTextualNodeBitmap()
+		{
+			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(XmlReader_TypeDefinitionIndex)->GetStaticField(0xEB0);
+		}
 		static ::System::UInt32* StaticGet_CanReadContentAsBitmap()
 		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(XmlReader_TypeDefinitionIndex)->GetStaticField(0x4A60);
+			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(XmlReader_TypeDefinitionIndex)->GetStaticField(0xEB4);
 		}
 		static ::System::UInt32* StaticGet_HasValueBitmap()
 		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(XmlReader_TypeDefinitionIndex)->GetStaticField(0x4A64);
-		}
-		static ::System::UInt32* StaticGet_IsTextualNodeBitmap()
-		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(XmlReader_TypeDefinitionIndex)->GetStaticField(0x4A68);
+			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(XmlReader_TypeDefinitionIndex)->GetStaticField(0xEB8);
 		}
 
 		::System::Void _ctor()
@@ -78,9 +107,34 @@ namespace System::Xml
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_ISDEFAULT_OFFSET))(this);
 		}
 
+		::System::Char get_QuoteChar()
+		{
+			return ((::System::Char(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_QUOTECHAR_OFFSET))(this);
+		}
+
+		::System::Xml::XmlSpace get_XmlSpace()
+		{
+			return ((::System::Xml::XmlSpace(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_XMLSPACE_OFFSET))(this);
+		}
+
+		::System::String* get_XmlLang()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_XMLLANG_OFFSET))(this);
+		}
+
 		::System::Xml::Schema::IXmlSchemaInfo* get_SchemaInfo()
 		{
 			return ((::System::Xml::Schema::IXmlSchemaInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_SCHEMAINFO_OFFSET))(this);
+		}
+
+		::System::Type* get_ValueType()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_VALUETYPE_OFFSET))(this);
+		}
+
+		::System::Void MoveToAttribute(::System::Int32 i)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_MOVETOATTRIBUTE_OFFSET))(this, i);
 		}
 
 		::System::Void Close()
@@ -96,6 +150,16 @@ namespace System::Xml
 		::System::Boolean get_CanResolveEntity()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_CANRESOLVEENTITY_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanReadValueChunk()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_CANREADVALUECHUNK_OFFSET))(this);
+		}
+
+		::System::Int32 ReadValueChunk(::Il2CppArray<::System::Char>* buffer, ::System::Int32 index, ::System::Int32 count)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Il2CppArray<::System::Char>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_READVALUECHUNK_OFFSET))(this, buffer, index, count);
 		}
 
 		::System::String* ReadString()
@@ -128,6 +192,41 @@ namespace System::Xml
 			return ((::System::Boolean(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_ISSTARTELEMENT_OFFSET))(this, localname, ns);
 		}
 
+		::System::Boolean ReadToFollowing(::System::String* name)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_READTOFOLLOWING_OFFSET))(this, name);
+		}
+
+		::System::String* ReadInnerXml()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_READINNERXML_OFFSET))(this);
+		}
+
+		::System::Void WriteNode(::System::Xml::XmlWriter* xtw, ::System::Boolean defattr)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlWriter*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_WRITENODE_OFFSET))(this, xtw, defattr);
+		}
+
+		::System::Void WriteAttributeValue(::System::Xml::XmlWriter* xtw)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlWriter*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_WRITEATTRIBUTEVALUE_OFFSET))(this, xtw);
+		}
+
+		::System::Xml::XmlWriter* CreateWriterForInnerOuterXml(::System::IO::StringWriter* sw)
+		{
+			return ((::System::Xml::XmlWriter*(*)(::PVOID, ::System::IO::StringWriter*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_CREATEWRITERFORINNEROUTERXML_OFFSET))(this, sw);
+		}
+
+		::System::Void SetNamespacesFlag(::System::Xml::XmlTextWriter* xtw)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlTextWriter*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_SETNAMESPACESFLAG_OFFSET))(this, xtw);
+		}
+
+		::System::Boolean get_HasAttributes()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_HASATTRIBUTES_OFFSET))(this);
+		}
+
 		::System::Void Dispose()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_DISPOSE_OFFSET))(this);
@@ -138,9 +237,19 @@ namespace System::Xml
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_DISPOSE_1_OFFSET))(this, disposing);
 		}
 
+		::System::Xml::XmlNamespaceManager* get_NamespaceManager()
+		{
+			return ((::System::Xml::XmlNamespaceManager*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_NAMESPACEMANAGER_OFFSET))(this);
+		}
+
 		static ::System::Boolean IsTextualNode(::System::Xml::XmlNodeType nodeType)
 		{
 			return ((::System::Boolean(*)(::System::Xml::XmlNodeType))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_ISTEXTUALNODE_OFFSET))(nodeType);
+		}
+
+		static ::System::Boolean HasValueInternal(::System::Xml::XmlNodeType nodeType)
+		{
+			return ((::System::Boolean(*)(::System::Xml::XmlNodeType))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_HASVALUEINTERNAL_OFFSET))(nodeType);
 		}
 
 		::System::Boolean SkipSubtree()
@@ -148,9 +257,34 @@ namespace System::Xml
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_SKIPSUBTREE_OFFSET))(this);
 		}
 
+		::System::Boolean get_IsDefaultInternal()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_ISDEFAULTINTERNAL_OFFSET))(this);
+		}
+
 		::System::Xml::IDtdInfo* get_DtdInfo()
 		{
 			return ((::System::Xml::IDtdInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_GET_DTDINFO_OFFSET))(this);
+		}
+
+		static ::System::Xml::XmlReader* Create(::System::IO::Stream* input, ::System::Xml::XmlReaderSettings* settings, ::System::String* baseUri)
+		{
+			return ((::System::Xml::XmlReader*(*)(::System::IO::Stream*, ::System::Xml::XmlReaderSettings*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_CREATE_OFFSET))(input, settings, baseUri);
+		}
+
+		static ::System::Xml::XmlReader* Create_1(::System::IO::TextReader* input, ::System::Xml::XmlReaderSettings* settings)
+		{
+			return ((::System::Xml::XmlReader*(*)(::System::IO::TextReader*, ::System::Xml::XmlReaderSettings*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_CREATE_1_OFFSET))(input, settings);
+		}
+
+		static ::System::Xml::XmlReader* Create_2(::System::IO::TextReader* input, ::System::Xml::XmlReaderSettings* settings, ::System::String* baseUri)
+		{
+			return ((::System::Xml::XmlReader*(*)(::System::IO::TextReader*, ::System::Xml::XmlReaderSettings*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_CREATE_2_OFFSET))(input, settings, baseUri);
+		}
+
+		static ::System::Xml::XmlReader* CreateSqlReader(::System::IO::Stream* input, ::System::Xml::XmlReaderSettings* settings, ::System::Xml::XmlParserContext* inputContext)
+		{
+			return ((::System::Xml::XmlReader*(*)(::System::IO::Stream*, ::System::Xml::XmlReaderSettings*, ::System::Xml::XmlParserContext*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADER_CREATESQLREADER_OFFSET))(input, settings, inputContext);
 		}
 
 		static ::System::Int32 CalcBufferSize(::System::IO::Stream* input)

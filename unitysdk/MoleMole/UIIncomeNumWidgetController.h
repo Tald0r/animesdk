@@ -1,0 +1,211 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_2_73FD950FD6FF710C;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIIncomeNumWidgetController_Context; }
+namespace MoleMole { class UIIncomeNumWidgetController_ViewModel; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_BINDBUTTON_OFFSET UNITYSDK_OFFSET(0x98A6950)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_BUILDDATABINDING_OFFSET UNITYSDK_OFFSET(0x98A6FB0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET UNITYSDK_OFFSET(0x98A6A10)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_CREATESUBWIDGET_OFFSET UNITYSDK_OFFSET(0x98A69B0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_GET_EMPTY_OFFSET UNITYSDK_OFFSET(0x98A73E0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_GET_NUM_OFFSET UNITYSDK_OFFSET(0x98A7620)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0x98A7110)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x98A7070)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x98A6DA0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x98A71F0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x98A67D0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_PLAYNUMANIM_OFFSET UNITYSDK_OFFSET(0x98A79B0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_PREPARENUMANIM_OFFSET UNITYSDK_OFFSET(0x98A7D40)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_REFRESHNUMBER_OFFSET UNITYSDK_OFFSET(0x98A7380)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_SET_EMPTY_OFFSET UNITYSDK_OFFSET(0x98A74D0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_SET_NUM_OFFSET UNITYSDK_OFFSET(0x98A7710)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_SHOWSUBWIDGET_OFFSET UNITYSDK_OFFSET(0x98A6F50)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0x98A72D0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__17_0_OFFSET UNITYSDK_OFFSET(0x98A8190)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__17_1_OFFSET UNITYSDK_OFFSET(0x98A87D0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__17_2_OFFSET UNITYSDK_OFFSET(0x98A8AB0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__17_3_OFFSET UNITYSDK_OFFSET(0x98A8CF0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x98A7E80)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__PLAYNUMANIM_B__14_0_OFFSET UNITYSDK_OFFSET(0x98A7F50)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__PLAYNUMANIM_B__14_1_OFFSET UNITYSDK_OFFSET(0x98A8090)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0x98A9010)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x98A9070)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x98A90E0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x98A9150)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x98A91D0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIIncomeNumWidgetController_TypeDefinitionIndex = 70263;
+
+	class UIIncomeNumWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* DigitImg; // 0x0
+		// static const ::System::String* SwithInAnimName; // 0x0
+		// static const ::System::String* SwithOutAnimName; // 0x0
+		::Class_2_73FD950FD6FF710C* _view; // 0x2A0
+		::MoleMole::UIIncomeNumWidgetController_Context* _context; // 0x2A8
+		::MoleMole::UIIncomeNumWidgetController_ViewModel* _viewModel; // 0x2B0
+		::Class_1_48D56DACBE4271BC* _propertySyncHelper; // 0x2B8
+		::Class_1_48D56DACBE4271BC* _propertySyncHelper_ViewModel; // 0x2C0
+		::System::Boolean _numberDirty; // 0x2C8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Boolean get_Empty()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_GET_EMPTY_OFFSET))(this);
+		}
+
+		::System::Void set_Empty(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_SET_EMPTY_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_Num()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_GET_NUM_OFFSET))(this);
+		}
+
+		::System::Void set_Num(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_SET_NUM_OFFSET))(this, value);
+		}
+
+		::System::Void PlayNumAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_PLAYNUMANIM_OFFSET))(this);
+		}
+
+		::System::Void PrepareNumAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_PREPARENUMANIM_OFFSET))(this);
+		}
+
+		::System::Void BuildDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_BUILDDATABINDING_OFFSET))(this);
+		}
+
+		::System::Void BuildViewModelDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET))(this);
+		}
+
+		::System::Void CreateSubWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_CREATESUBWIDGET_OFFSET))(this);
+		}
+
+		::System::Void ShowSubWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_SHOWSUBWIDGET_OFFSET))(this);
+		}
+
+		::System::Void BindButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_BINDBUTTON_OFFSET))(this);
+		}
+
+		::System::Void RefreshNumber()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_REFRESHNUMBER_OFFSET))(this);
+		}
+
+		::System::Void _PlayNumAnim_b__14_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__PLAYNUMANIM_B__14_0_OFFSET))(this);
+		}
+
+		::System::Void _PlayNumAnim_b__14_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__PLAYNUMANIM_B__14_1_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__17_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__17_0_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__17_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__17_1_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__17_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__17_2_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__17_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__17_3_OFFSET))(this);
+		}
+
+		::System::Void __base_InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

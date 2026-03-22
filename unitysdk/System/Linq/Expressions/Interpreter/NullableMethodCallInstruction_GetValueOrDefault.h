@@ -6,12 +6,12 @@ namespace System { class Type; }
 namespace System::Linq::Expressions::Interpreter { class InterpretedFrame; }
 namespace System::Reflection { class MethodInfo; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_NULLABLEMETHODCALLINSTRUCTION_GETVALUEORDEFAULT_RUN_OFFSET UNITYSDK_OFFSET(0x17CF4700)
-#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_NULLABLEMETHODCALLINSTRUCTION_GETVALUEORDEFAULT__CTOR_OFFSET UNITYSDK_OFFSET(0x17CF4400)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_NULLABLEMETHODCALLINSTRUCTION_GETVALUEORDEFAULT_RUN_OFFSET UNITYSDK_OFFSET(0x19744A40)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_NULLABLEMETHODCALLINSTRUCTION_GETVALUEORDEFAULT__CTOR_OFFSET UNITYSDK_OFFSET(0x19744A10)
 
 namespace System::Linq::Expressions::Interpreter
 {
-	inline static constexpr unsigned int NullableMethodCallInstruction_GetValueOrDefault_TypeDefinitionIndex = 3622;
+	inline static constexpr unsigned int NullableMethodCallInstruction_GetValueOrDefault_TypeDefinitionIndex = 4918;
 
 	class NullableMethodCallInstruction_GetValueOrDefault : public ::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction
 	{

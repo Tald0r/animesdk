@@ -2,27 +2,34 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
+namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System { template <typename T> class Comparison_1; }
+namespace UnityEngine::Timeline { class Frame; }
 namespace UnityEngine::Timeline { class TimelineClip; }
 
-#define UNITYENGINE_TIMELINE_TRACKASSET___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x181ADFA0)
-#define UNITYENGINE_TIMELINE_TRACKASSET___C__CTOR_OFFSET UNITYSDK_OFFSET(0x181ADFD0)
-#define UNITYENGINE_TIMELINE_TRACKASSET___C__SORTCLIPS_B__164_0_OFFSET UNITYSDK_OFFSET(0x181ADFE0)
+#define UNITYENGINE_TIMELINE_TRACKASSET___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AC97130)
+#define UNITYENGINE_TIMELINE_TRACKASSET___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC97160)
+#define UNITYENGINE_TIMELINE_TRACKASSET___C__GET_END_B__59_0_OFFSET UNITYSDK_OFFSET(0x1AC97170)
+#define UNITYENGINE_TIMELINE_TRACKASSET___C__SORTCLIPS_B__153_0_OFFSET UNITYSDK_OFFSET(0x1AC97190)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TrackAsset___c_TypeDefinitionIndex = 28967;
+	inline static constexpr unsigned int TrackAsset___c_TypeDefinitionIndex = 29248;
 
 	class TrackAsset___c : public ::System::Object
 	{
 	public:
+		static ::System::Comparison_1<::UnityEngine::Timeline::TimelineClip*>** StaticGet___9__153_0()
+		{
+			return (::System::Comparison_1<::UnityEngine::Timeline::TimelineClip*>**)Il2CppClass::FromTypeDefinitionIndex(TrackAsset___c_TypeDefinitionIndex)->GetStaticField(0x22A90);
+		}
 		static ::UnityEngine::Timeline::TrackAsset___c** StaticGet___9()
 		{
-			return (::UnityEngine::Timeline::TrackAsset___c**)Il2CppClass::FromTypeDefinitionIndex(TrackAsset___c_TypeDefinitionIndex)->GetStaticField(0x404E0);
+			return (::UnityEngine::Timeline::TrackAsset___c**)Il2CppClass::FromTypeDefinitionIndex(TrackAsset___c_TypeDefinitionIndex)->GetStaticField(0x22A98);
 		}
-		static ::System::Comparison_1<::UnityEngine::Timeline::TimelineClip*>** StaticGet___9__164_0()
+		static ::System::Func_2<::UnityEngine::Timeline::Frame*, ::System::Single>** StaticGet___9__59_0()
 		{
-			return (::System::Comparison_1<::UnityEngine::Timeline::TimelineClip*>**)Il2CppClass::FromTypeDefinitionIndex(TrackAsset___c_TypeDefinitionIndex)->GetStaticField(0x404E8);
+			return (::System::Func_2<::UnityEngine::Timeline::Frame*, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(TrackAsset___c_TypeDefinitionIndex)->GetStaticField(0x22AA0);
 		}
 
 		static ::System::Void _cctor()
@@ -35,9 +42,14 @@ namespace UnityEngine::Timeline
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TRACKASSET___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Int32 _SortClips_b__164_0(::UnityEngine::Timeline::TimelineClip* clip1, ::UnityEngine::Timeline::TimelineClip* clip2)
+		::System::Single _get_end_b__59_0(::UnityEngine::Timeline::Frame* item)
 		{
-			return ((::System::Int32(*)(::PVOID, ::UnityEngine::Timeline::TimelineClip*, ::UnityEngine::Timeline::TimelineClip*))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TRACKASSET___C__SORTCLIPS_B__164_0_OFFSET))(this, clip1, clip2);
+			return ((::System::Single(*)(::PVOID, ::UnityEngine::Timeline::Frame*))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TRACKASSET___C__GET_END_B__59_0_OFFSET))(this, item);
+		}
+
+		::System::Int32 _SortClips_b__153_0(::UnityEngine::Timeline::TimelineClip* clip1, ::UnityEngine::Timeline::TimelineClip* clip2)
+		{
+			return ((::System::Int32(*)(::PVOID, ::UnityEngine::Timeline::TimelineClip*, ::UnityEngine::Timeline::TimelineClip*))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TRACKASSET___C__SORTCLIPS_B__153_0_OFFSET))(this, clip1, clip2);
 		}
 	};
 }

@@ -1,0 +1,218 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+#include "unitysdk/Struct_2_143B7A497B890286.h"
+
+class Class_1_A59025D696FD25CD;
+class Class_2_56AF18CD74DA940A_9;
+namespace MoleMole { class UIBangbooDIYWidgetWidgetController; }
+namespace MoleMole { class UIBuddyDIYComponentWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_CHECKMASKENABLE_OFFSET UNITYSDK_OFFSET(0xBB06E50)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_CLEARBAGITEMSELECTSTATE_OFFSET UNITYSDK_OFFSET(0xBB08190)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_DUMPDEBUG_OFFSET UNITYSDK_OFFSET(0xBB08C90)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_GETCOMPONENT_OFFSET UNITYSDK_OFFSET(0xBB06CE0)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_GET_BUDDYCOMPONENTID_OFFSET UNITYSDK_OFFSET(0xBB09230)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONBAGITEMSELECT_OFFSET UNITYSDK_OFFSET(0xBB07C10)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONBUDDYCOMPONENTDELETE_OFFSET UNITYSDK_OFFSET(0xBB083A0)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONBUDDYCOMPONENTINSTALL_OFFSET UNITYSDK_OFFSET(0xBB08240)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xBB07B10)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONCOMPONNETEDITOR_OFFSET UNITYSDK_OFFSET(0xBB088A0)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBB064D0)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xBB07B80)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xBB06570)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBB07150)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBB05930)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_RESET_OFFSET UNITYSDK_OFFSET(0xBB08810)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_SETDATA_OFFSET UNITYSDK_OFFSET(0xBB06650)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_SETEMPTY_OFFSET UNITYSDK_OFFSET(0xBB070D0)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_SETITEMMASKSTATE_OFFSET UNITYSDK_OFFSET(0xBB06DD0)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_SETTOGGLE_OFFSET UNITYSDK_OFFSET(0xBB06D50)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_SHOWITEMTIPS_OFFSET UNITYSDK_OFFSET(0xBB09180)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_UPDATEITEM_OFFSET UNITYSDK_OFFSET(0xBB06B50)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBB092F0)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET UNITYSDK_OFFSET(0xBB09300)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER__ONUIINIT_B__1_1_OFFSET UNITYSDK_OFFSET(0xBB093F0)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xBB09460)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBB09470)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xBB094E0)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xBB09550)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBB095D0)
+#define MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBB09650)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBuddyDIYBagItemWidgetController_TypeDefinitionIndex = 52211;
+
+	class UIBuddyDIYBagItemWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_56AF18CD74DA940A_9* _view; // 0x2D0
+		::Class_1_A59025D696FD25CD* _buddyDiyComponent; // 0x2D8
+		::MoleMole::UIItemIconBtnWidgetController* itemBtn; // 0x2E0
+		::MoleMole::UIBuddyDIYComponentWidgetController* dragComponentWidget; // 0x2E8
+		::Struct_2_143B7A497B890286 DragCollider; // 0x2F0
+		::MoleMole::UIBangbooDIYWidgetWidgetController* _widgetController; // 0x308
+		::System::Boolean ShowSelectState; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void SetData(::Class_1_A59025D696FD25CD* component, ::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_A59025D696FD25CD*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_SETDATA_OFFSET))(this, component, index);
+		}
+
+		::System::Void SetEmpty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_SETEMPTY_OFFSET))(this);
+		}
+
+		::System::Void SetItemMaskState(::System::Boolean isMask)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_SETITEMMASKSTATE_OFFSET))(this, isMask);
+		}
+
+		::Class_1_A59025D696FD25CD* GetComponent()
+		{
+			return ((::Class_1_A59025D696FD25CD*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_GETCOMPONENT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnBagItemSelect(::System::EventArgs* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONBAGITEMSELECT_OFFSET))(this, arg);
+		}
+
+		::System::Void ClearBagItemSelectState(::System::EventArgs* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_CLEARBAGITEMSELECTSTATE_OFFSET))(this, arg);
+		}
+
+		::System::Void OnBuddyComponentInstall(::System::EventArgs* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONBUDDYCOMPONENTINSTALL_OFFSET))(this, arg);
+		}
+
+		::System::Void OnBuddyComponentDelete(::System::EventArgs* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONBUDDYCOMPONENTDELETE_OFFSET))(this, arg);
+		}
+
+		::System::Void OnComponnetEditor(::System::EventArgs* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_ONCOMPONNETEDITOR_OFFSET))(this, arg);
+		}
+
+		::System::Void UpdateItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_UPDATEITEM_OFFSET))(this);
+		}
+
+		::System::String* DumpDebug()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_DUMPDEBUG_OFFSET))(this);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_RESET_OFFSET))(this);
+		}
+
+		::System::Void CheckMaskEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_CHECKMASKENABLE_OFFSET))(this);
+		}
+
+		::System::Void SetToggle(::System::Boolean isToggle)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_SETTOGGLE_OFFSET))(this, isToggle);
+		}
+
+		::System::Void ShowItemTips()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_SHOWITEMTIPS_OFFSET))(this);
+		}
+
+		::System::Int32 get_BuddyComponentID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER_GET_BUDDYCOMPONENTID_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__1_0(::System::EventArgs* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET))(this, arg);
+		}
+
+		::System::Void _OnUIInit_b__1_1(::System::Int32 count)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER__ONUIINIT_B__1_1_OFFSET))(this, count);
+		}
+
+		::System::Void __base_OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYBAGITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

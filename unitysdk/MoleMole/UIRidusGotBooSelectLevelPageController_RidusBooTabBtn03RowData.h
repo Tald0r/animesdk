@@ -1,0 +1,68 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_504F298B4B2B1EEF.h"
+#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/Share/ENotificationBadgeType.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/System/ValueTuple_2.h"
+
+class Class_2_208CC9941471731A_689;
+namespace System { class String; }
+
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_CREATETABDATA_OFFSET UNITYSDK_OFFSET(0xA3EECC0)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_GETRARITYICONPATH_OFFSET UNITYSDK_OFFSET(0xA3EF0F0)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_GET_ICONPATH_OFFSET UNITYSDK_OFFSET(0xA3EF2B0)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_GET_ICONTYPE_OFFSET UNITYSDK_OFFSET(0xA3EF2C0)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_GET_REDDOTINFO_OFFSET UNITYSDK_OFFSET(0xA3EF2D0)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_GET_TITLE_OFFSET UNITYSDK_OFFSET(0xA3EF2A0)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xA3EF2E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIRidusGotBooSelectLevelPageController_RidusBooTabBtn03RowData_TypeDefinitionIndex = 43397;
+
+	class UIRidusGotBooSelectLevelPageController_RidusBooTabBtn03RowData : public ::System::Object
+	{
+	public:
+		::Foundation::AssetPath m_iconPath; // 0x10
+		::System::String* m_title; // 0x20
+		::System::Boolean ShowLock; // 0x28
+		::System::Boolean ShowTrackIcon; // 0x29
+		::System::ValueTuple_2<::Share::ENotificationBadgeType, ::System::UInt32> m_redDotInfo; // 0x2C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA__CTOR_OFFSET))(this);
+		}
+
+		::System::Void CreateTabData(::Class_2_208CC9941471731A_689* cfg)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_689*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_CREATETABDATA_OFFSET))(this, cfg);
+		}
+
+		::Foundation::AssetPath GetRarityIconPath(::System::Int32 finishCount)
+		{
+			return ((::Foundation::AssetPath(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_GETRARITYICONPATH_OFFSET))(this, finishCount);
+		}
+
+		::System::String* get_Title()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_GET_TITLE_OFFSET))(this);
+		}
+
+		::Foundation::AssetPath get_IconPath()
+		{
+			return ((::Foundation::AssetPath(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_GET_ICONPATH_OFFSET))(this);
+		}
+
+		::Enum_3_504F298B4B2B1EEF get_IconType()
+		{
+			return ((::Enum_3_504F298B4B2B1EEF(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_GET_ICONTYPE_OFFSET))(this);
+		}
+
+		::System::ValueTuple_2<::Share::ENotificationBadgeType, ::System::UInt32> get_RedDotInfo()
+		{
+			return ((::System::ValueTuple_2<::Share::ENotificationBadgeType, ::System::UInt32>(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER_RIDUSBOOTABBTN03ROWDATA_GET_REDDOTINFO_OFFSET))(this);
+		}
+	};
+}

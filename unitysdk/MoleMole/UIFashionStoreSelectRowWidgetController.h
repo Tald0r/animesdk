@@ -1,0 +1,126 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_208CC9941471731A_480;
+class Class_2_EAB98015292BD75A;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIFashionStoreGameSelectPageController; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_GET_CFG_OFFSET UNITYSDK_OFFSET(0xA27E2D0)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_GET_ISSELECTED_OFFSET UNITYSDK_OFFSET(0xA27DFA0)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_GET_PAGECTRL_OFFSET UNITYSDK_OFFSET(0xA27E0E0)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xA27DC70)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA27E2E0)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA27E460)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA27E380)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA27DA20)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA27DC00)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xA27DCE0)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_TRYINITPAGECTRL_OFFSET UNITYSDK_OFFSET(0xA27E100)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA27E540)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA27E550)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA27E5C0)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA27E640)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA27E6C0)
+#define MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA27E720)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFashionStoreSelectRowWidgetController_TypeDefinitionIndex = 62608;
+
+	class UIFashionStoreSelectRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_EAB98015292BD75A* _view; // 0x2D0
+		::MoleMole::UIFashionStoreGameSelectPageController* m_pageCtrl; // 0x2D8
+		::Class_2_208CC9941471731A_480* m_cfg; // 0x2E0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::MoleMole::UIFashionStoreGameSelectPageController* get_PageCtrl()
+		{
+			return ((::MoleMole::UIFashionStoreGameSelectPageController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_GET_PAGECTRL_OFFSET))(this);
+		}
+
+		::System::Void TryInitPageCtrl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_TRYINITPAGECTRL_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsSelected()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_GET_ISSELECTED_OFFSET))(this);
+		}
+
+		::Class_2_208CC9941471731A_480* get_Cfg()
+		{
+			return ((::Class_2_208CC9941471731A_480*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_GET_CFG_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTORESELECTROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,72 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_1EB8C469AAE7B7DE.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_E87F1D15F1D4AC72;
+namespace MoleMole { class UISocialCircleTabTitleWidgetController_Data; }
+namespace System { class String; }
+template <typename T> class Class_0_16E4307DCC419505_103;
+
+#define CLASS_2_CAA0E80794DC1F1E_METHOD_2_1798FAFF45053267_1_OFFSET UNITYSDK_OFFSET(0xD421DB0)
+#define CLASS_2_CAA0E80794DC1F1E_METHOD_2_1798FAFF45053267_2_OFFSET UNITYSDK_OFFSET(0xD421EB0)
+#define CLASS_2_CAA0E80794DC1F1E_METHOD_2_1798FAFF45053267_OFFSET UNITYSDK_OFFSET(0xD421C60)
+#define CLASS_2_CAA0E80794DC1F1E_METHOD_2_5D769E85CC39E6BA_OFFSET UNITYSDK_OFFSET(0xD421C50)
+#define CLASS_2_CAA0E80794DC1F1E_METHOD_2_9D768FB7C06C1DF3_OFFSET UNITYSDK_OFFSET(0xD421860)
+#define CLASS_2_CAA0E80794DC1F1E_METHOD_2_9DADEEE7020D73ED_OFFSET UNITYSDK_OFFSET(0xD421EA0)
+#define CLASS_2_CAA0E80794DC1F1E_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xD421D50)
+#define CLASS_2_CAA0E80794DC1F1E_METHOD_2_DDA8A2337932DF10_OFFSET UNITYSDK_OFFSET(0xD4218D0)
+#define CLASS_2_CAA0E80794DC1F1E__CTOR_OFFSET UNITYSDK_OFFSET(0xD421C00)
+
+inline static constexpr unsigned int Class_2_CAA0E80794DC1F1E_TypeDefinitionIndex = 60539;
+
+class Class_2_CAA0E80794DC1F1E : public ::Class_1_1EB8C469AAE7B7DE
+{
+public:
+	::Class_0_16E4307DCC419505_103<::MoleMole::UISocialCircleTabTitleWidgetController_Data*>* Field_2_0; // 0x50
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_CAA0E80794DC1F1E__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_9D768FB7C06C1DF3(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_2_CAA0E80794DC1F1E_METHOD_2_9D768FB7C06C1DF3_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_DDA8A2337932DF10()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_CAA0E80794DC1F1E_METHOD_2_DDA8A2337932DF10_OFFSET))(this);
+	}
+
+	::System::Void Method_2_5D769E85CC39E6BA(::Class_0_16E4307DCC419505_103<::MoleMole::UISocialCircleTabTitleWidgetController_Data*>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_103<::MoleMole::UISocialCircleTabTitleWidgetController_Data*>*))((::PBYTE)hIl2Cpp + CLASS_2_CAA0E80794DC1F1E_METHOD_2_5D769E85CC39E6BA_OFFSET))(this, a1);
+	}
+
+	::System::String* Method_2_1798FAFF45053267()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_CAA0E80794DC1F1E_METHOD_2_1798FAFF45053267_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_CAA0E80794DC1F1E_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::String* Method_2_1798FAFF45053267_1()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_CAA0E80794DC1F1E_METHOD_2_1798FAFF45053267_1_OFFSET))(this);
+	}
+
+	::Class_0_16E4307DCC419505_103<::MoleMole::UISocialCircleTabTitleWidgetController_Data*>* Method_2_9DADEEE7020D73ED()
+	{
+		return ((::Class_0_16E4307DCC419505_103<::MoleMole::UISocialCircleTabTitleWidgetController_Data*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_CAA0E80794DC1F1E_METHOD_2_9DADEEE7020D73ED_OFFSET))(this);
+	}
+
+	::System::String* Method_2_1798FAFF45053267_2()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_CAA0E80794DC1F1E_METHOD_2_1798FAFF45053267_2_OFFSET))(this);
+	}
+};

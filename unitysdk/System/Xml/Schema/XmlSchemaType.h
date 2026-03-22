@@ -5,51 +5,67 @@
 #include "unitysdk/System/Xml/Schema/XmlSchemaDerivationMethod.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 
+namespace System { class String; }
 namespace System::Xml { class XmlQualifiedName; }
 namespace System::Xml::Schema { class SchemaElementDecl; }
+namespace System::Xml::Schema { class XmlSchemaComplexType; }
 namespace System::Xml::Schema { class XmlSchemaDatatype; }
 namespace System::Xml::Schema { class XmlSchemaSimpleType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GETBUILTINSIMPLETYPE_OFFSET UNITYSDK_OFFSET(0x17D7DC10)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_BASEXMLSCHEMATYPE_OFFSET UNITYSDK_OFFSET(0x17D95500)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_DATATYPE_OFFSET UNITYSDK_OFFSET(0x17D95510)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_ELEMENTDECL_OFFSET UNITYSDK_OFFSET(0x17D93000)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_QUALIFIEDNAME_OFFSET UNITYSDK_OFFSET(0x17D84240)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D81400)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_VALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D81960)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SETBASESCHEMATYPE_OFFSET UNITYSDK_OFFSET(0x17D95530)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SETCONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x17D95560)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SETDATATYPE_OFFSET UNITYSDK_OFFSET(0x17D95550)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SETDERIVEDBY_OFFSET UNITYSDK_OFFSET(0x17D95540)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SETQUALIFIEDNAME_OFFSET UNITYSDK_OFFSET(0x17D92FD0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SET_ELEMENTDECL_OFFSET UNITYSDK_OFFSET(0x17D92FF0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SET_ISMIXED_OFFSET UNITYSDK_OFFSET(0x17D95520)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE__CTOR_OFFSET UNITYSDK_OFFSET(0x17D93680)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GETBUILTINCOMPLEXTYPE_OFFSET UNITYSDK_OFFSET(0x1A108C40)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GETBUILTINSIMPLETYPE_1_OFFSET UNITYSDK_OFFSET(0x1A108B60)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GETBUILTINSIMPLETYPE_OFFSET UNITYSDK_OFFSET(0x1A108AB0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_ELEMENTDECL_OFFSET UNITYSDK_OFFSET(0x1A108F50)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_ISMIXED_OFFSET UNITYSDK_OFFSET(0x1A108DF0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_NAMEATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x1A1091F0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_QUALIFIEDNAME_OFFSET UNITYSDK_OFFSET(0x1A108DE0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x1A108E10)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_VALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x1A108EB0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_ISDERIVEDFROMDATATYPE_OFFSET UNITYSDK_OFFSET(0x1A109140)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_ISDERIVEDFROM_OFFSET UNITYSDK_OFFSET(0x1A108F70)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SETQUALIFIEDNAME_OFFSET UNITYSDK_OFFSET(0x1A108F40)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SET_ELEMENTDECL_OFFSET UNITYSDK_OFFSET(0x1A108F60)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SET_ISMIXED_OFFSET UNITYSDK_OFFSET(0x1A108E00)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SET_NAMEATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x1A109200)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMATYPE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A109210)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int XmlSchemaType_TypeDefinitionIndex = 2199;
+	inline static constexpr unsigned int XmlSchemaType_TypeDefinitionIndex = 2196;
 
 	class XmlSchemaType : public ::System::Xml::Schema::XmlSchemaAnnotated
 	{
 	public:
-		::System::Xml::XmlQualifiedName* qname; // 0x10
-		::System::Xml::Schema::XmlSchemaType* baseSchemaType; // 0x18
-		::System::Xml::Schema::SchemaElementDecl* elementDecl; // 0x20
-		::System::Xml::Schema::XmlSchemaDatatype* datatype; // 0x28
-		::System::Xml::Schema::XmlSchemaDerivationMethod final; // 0x30
-		::System::Xml::Schema::XmlSchemaDerivationMethod derivedBy; // 0x34
-		::System::Xml::Schema::XmlSchemaContentType contentType; // 0x38
+		::System::Xml::Schema::XmlSchemaType* baseSchemaType; // 0x50
+		::System::Xml::Schema::XmlSchemaType* redefined; // 0x58
+		::System::Xml::Schema::SchemaElementDecl* elementDecl; // 0x60
+		::System::Xml::Schema::XmlSchemaDatatype* datatype; // 0x68
+		::System::String* name; // 0x70
+		::System::Xml::XmlQualifiedName* qname; // 0x78
+		::System::Xml::Schema::XmlSchemaDerivationMethod final; // 0x80
+		::System::Xml::Schema::XmlSchemaDerivationMethod finalResolved; // 0x84
+		::System::Xml::Schema::XmlSchemaContentType contentType; // 0x88
+		::System::Xml::Schema::XmlSchemaDerivationMethod derivedBy; // 0x8C
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE__CTOR_OFFSET))(this);
 		}
 
-		static ::System::Xml::Schema::XmlSchemaSimpleType* GetBuiltInSimpleType(::System::Xml::Schema::XmlTypeCode typeCode)
+		static ::System::Xml::Schema::XmlSchemaSimpleType* GetBuiltInSimpleType(::System::Xml::XmlQualifiedName* qualifiedName)
 		{
-			return ((::System::Xml::Schema::XmlSchemaSimpleType*(*)(::System::Xml::Schema::XmlTypeCode))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GETBUILTINSIMPLETYPE_OFFSET))(typeCode);
+			return ((::System::Xml::Schema::XmlSchemaSimpleType*(*)(::System::Xml::XmlQualifiedName*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GETBUILTINSIMPLETYPE_OFFSET))(qualifiedName);
+		}
+
+		static ::System::Xml::Schema::XmlSchemaSimpleType* GetBuiltInSimpleType_1(::System::Xml::Schema::XmlTypeCode typeCode)
+		{
+			return ((::System::Xml::Schema::XmlSchemaSimpleType*(*)(::System::Xml::Schema::XmlTypeCode))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GETBUILTINSIMPLETYPE_1_OFFSET))(typeCode);
+		}
+
+		static ::System::Xml::Schema::XmlSchemaComplexType* GetBuiltInComplexType(::System::Xml::XmlQualifiedName* qualifiedName)
+		{
+			return ((::System::Xml::Schema::XmlSchemaComplexType*(*)(::System::Xml::XmlQualifiedName*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GETBUILTINCOMPLEXTYPE_OFFSET))(qualifiedName);
 		}
 
 		::System::Xml::XmlQualifiedName* get_QualifiedName()
@@ -57,14 +73,9 @@ namespace System::Xml::Schema
 			return ((::System::Xml::XmlQualifiedName*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_QUALIFIEDNAME_OFFSET))(this);
 		}
 
-		::System::Xml::Schema::XmlSchemaType* get_BaseXmlSchemaType()
+		::System::Boolean get_IsMixed()
 		{
-			return ((::System::Xml::Schema::XmlSchemaType*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_BASEXMLSCHEMATYPE_OFFSET))(this);
-		}
-
-		::System::Xml::Schema::XmlSchemaDatatype* get_Datatype()
-		{
-			return ((::System::Xml::Schema::XmlSchemaDatatype*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_DATATYPE_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_ISMIXED_OFFSET))(this);
 		}
 
 		::System::Void set_IsMixed(::System::Boolean value)
@@ -87,21 +98,6 @@ namespace System::Xml::Schema
 			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlQualifiedName*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SETQUALIFIEDNAME_OFFSET))(this, value);
 		}
 
-		::System::Void SetBaseSchemaType(::System::Xml::Schema::XmlSchemaType* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaType*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SETBASESCHEMATYPE_OFFSET))(this, value);
-		}
-
-		::System::Void SetDerivedBy(::System::Xml::Schema::XmlSchemaDerivationMethod value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaDerivationMethod))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SETDERIVEDBY_OFFSET))(this, value);
-		}
-
-		::System::Void SetDatatype(::System::Xml::Schema::XmlSchemaDatatype* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaDatatype*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SETDATATYPE_OFFSET))(this, value);
-		}
-
 		::System::Xml::Schema::SchemaElementDecl* get_ElementDecl()
 		{
 			return ((::System::Xml::Schema::SchemaElementDecl*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_ELEMENTDECL_OFFSET))(this);
@@ -112,9 +108,24 @@ namespace System::Xml::Schema
 			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::SchemaElementDecl*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SET_ELEMENTDECL_OFFSET))(this, value);
 		}
 
-		::System::Void SetContentType(::System::Xml::Schema::XmlSchemaContentType value)
+		static ::System::Boolean IsDerivedFrom(::System::Xml::Schema::XmlSchemaType* derivedType, ::System::Xml::Schema::XmlSchemaType* baseType, ::System::Xml::Schema::XmlSchemaDerivationMethod except)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaContentType))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SETCONTENTTYPE_OFFSET))(this, value);
+			return ((::System::Boolean(*)(::System::Xml::Schema::XmlSchemaType*, ::System::Xml::Schema::XmlSchemaType*, ::System::Xml::Schema::XmlSchemaDerivationMethod))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_ISDERIVEDFROM_OFFSET))(derivedType, baseType, except);
+		}
+
+		static ::System::Boolean IsDerivedFromDatatype(::System::Xml::Schema::XmlSchemaDatatype* derivedDataType, ::System::Xml::Schema::XmlSchemaDatatype* baseDataType, ::System::Xml::Schema::XmlSchemaDerivationMethod except)
+		{
+			return ((::System::Boolean(*)(::System::Xml::Schema::XmlSchemaDatatype*, ::System::Xml::Schema::XmlSchemaDatatype*, ::System::Xml::Schema::XmlSchemaDerivationMethod))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_ISDERIVEDFROMDATATYPE_OFFSET))(derivedDataType, baseDataType, except);
+		}
+
+		::System::String* get_NameAttribute()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_GET_NAMEATTRIBUTE_OFFSET))(this);
+		}
+
+		::System::Void set_NameAttribute(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMATYPE_SET_NAMEATTRIBUTE_OFFSET))(this, value);
 		}
 	};
 }

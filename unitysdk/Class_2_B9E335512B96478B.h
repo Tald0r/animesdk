@@ -1,0 +1,56 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_C2937544035FD07F.h"
+#include "unitysdk/Enum_3_ED790DAC948A65A9_13.h"
+
+class Class_3_2252AD81E086F3D5_1;
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define CLASS_2_B9E335512B96478B_METHOD_2_81530315E3A84133_OFFSET UNITYSDK_OFFSET(0x89C4C80)
+#define CLASS_2_B9E335512B96478B_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x89C4C10)
+#define CLASS_2_B9E335512B96478B_METHOD_2_CB8A82A3C2454295_OFFSET UNITYSDK_OFFSET(0x89C4EA0)
+#define CLASS_2_B9E335512B96478B_METHOD_2_D1843F4EA7315F7F_OFFSET UNITYSDK_OFFSET(0x89C5010)
+#define CLASS_2_B9E335512B96478B_METHOD_2_E11AC65AA0DC2249_OFFSET UNITYSDK_OFFSET(0x89C5180)
+#define CLASS_2_B9E335512B96478B_ONSTART_OFFSET UNITYSDK_OFFSET(0x89C4BB0)
+#define CLASS_2_B9E335512B96478B__CTOR_OFFSET UNITYSDK_OFFSET(0x89C4C70)
+
+inline static constexpr unsigned int Class_2_B9E335512B96478B_TypeDefinitionIndex = 40450;
+
+class Class_2_B9E335512B96478B : public ::Class_1_C2937544035FD07F
+{
+public:
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B9E335512B96478B__CTOR_OFFSET))(this);
+	}
+
+	::System::Void OnStart()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B9E335512B96478B_ONSTART_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B9E335512B96478B_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_2_81530315E3A84133(::Class_3_2252AD81E086F3D5_1* a1, ::Enum_3_ED790DAC948A65A9_13 a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_3_2252AD81E086F3D5_1*, ::Enum_3_ED790DAC948A65A9_13))((::PBYTE)hIl2Cpp + CLASS_2_B9E335512B96478B_METHOD_2_81530315E3A84133_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_CB8A82A3C2454295(::System::Collections::Generic::List_1<::System::UInt32>* a1, ::Enum_3_ED790DAC948A65A9_13 a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::System::UInt32>*, ::Enum_3_ED790DAC948A65A9_13))((::PBYTE)hIl2Cpp + CLASS_2_B9E335512B96478B_METHOD_2_CB8A82A3C2454295_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_D1843F4EA7315F7F(::System::Int32 a1, ::Enum_3_ED790DAC948A65A9_13 a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32, ::Enum_3_ED790DAC948A65A9_13))((::PBYTE)hIl2Cpp + CLASS_2_B9E335512B96478B_METHOD_2_D1843F4EA7315F7F_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_E11AC65AA0DC2249()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B9E335512B96478B_METHOD_2_E11AC65AA0DC2249_OFFSET))(this);
+	}
+};

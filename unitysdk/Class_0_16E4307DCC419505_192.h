@@ -1,10 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/Client/LittleGame/FiveDim/PhantomPlayerAssetLoadState.h"
+#include "unitysdk/Struct_2_F213AC3D3FBF57B9.h"
 
-namespace RPG::Client::LittleGame::FiveDim { class PhantomPlayerFrameAsset; }
+class Class_0_16E4307DCC419505_193;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_192_TypeDefinitionIndex = 32523;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_192_TypeDefinitionIndex = 37992;
 
 class Class_0_16E4307DCC419505_192
 {

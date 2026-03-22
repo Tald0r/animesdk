@@ -4,29 +4,30 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/TimeSpan.h"
 
-#define SYSTEM_TIMEZONE_GET_CURRENTTIMEZONE_OFFSET UNITYSDK_OFFSET(0x15BA2D10)
-#define SYSTEM_TIMEZONE_TOLOCALTIME_OFFSET UNITYSDK_OFFSET(0x15BA2EF0)
-#define SYSTEM_TIMEZONE__CCTOR_OFFSET UNITYSDK_OFFSET(0x15BA31F0)
-#define SYSTEM_TIMEZONE__CTOR_OFFSET UNITYSDK_OFFSET(0x15BA2D00)
+#define SYSTEM_TIMEZONE_CLEARCACHEDDATA_OFFSET UNITYSDK_OFFSET(0x19673010)
+#define SYSTEM_TIMEZONE_GET_CURRENTTIMEZONE_OFFSET UNITYSDK_OFFSET(0x19672BB0)
+#define SYSTEM_TIMEZONE_TOLOCALTIME_OFFSET UNITYSDK_OFFSET(0x19672D90)
+#define SYSTEM_TIMEZONE__CCTOR_OFFSET UNITYSDK_OFFSET(0x19673070)
+#define SYSTEM_TIMEZONE__CTOR_OFFSET UNITYSDK_OFFSET(0x19672BA0)
 
 namespace System
 {
-	inline static constexpr unsigned int TimeZone_TypeDefinitionIndex = 432;
+	inline static constexpr unsigned int TimeZone_TypeDefinitionIndex = 419;
 
 	class TimeZone : public ::System::Object
 	{
 	public:
-		static ::System::TimeZone** StaticGet_currentTimeZone()
-		{
-			return (::System::TimeZone**)Il2CppClass::FromTypeDefinitionIndex(TimeZone_TypeDefinitionIndex)->GetStaticField(0x13560);
-		}
 		static ::System::Object** StaticGet_tz_lock()
 		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(TimeZone_TypeDefinitionIndex)->GetStaticField(0x13568);
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(TimeZone_TypeDefinitionIndex)->GetStaticField(0xAE0);
+		}
+		static ::System::TimeZone** StaticGet_currentTimeZone()
+		{
+			return (::System::TimeZone**)Il2CppClass::FromTypeDefinitionIndex(TimeZone_TypeDefinitionIndex)->GetStaticField(0xAE8);
 		}
 		static ::System::Int64* StaticGet_timezone_check()
 		{
-			return (::System::Int64*)Il2CppClass::FromTypeDefinitionIndex(TimeZone_TypeDefinitionIndex)->GetStaticField(0x4780);
+			return (::System::Int64*)Il2CppClass::FromTypeDefinitionIndex(TimeZone_TypeDefinitionIndex)->GetStaticField(0x240);
 		}
 
 		::System::Void _ctor()
@@ -47,6 +48,11 @@ namespace System
 		::System::DateTime ToLocalTime(::System::DateTime time)
 		{
 			return ((::System::DateTime(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + SYSTEM_TIMEZONE_TOLOCALTIME_OFFSET))(this, time);
+		}
+
+		static ::System::Void ClearCachedData()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_TIMEZONE_CLEARCACHEDDATA_OFFSET))();
 		}
 	};
 }

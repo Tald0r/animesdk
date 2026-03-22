@@ -1,0 +1,209 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Config/MaterialPropertyType.h"
+#include "unitysdk/MoleMole/EffectSimulate/ESAvatarMatChange.h"
+
+namespace MoleMole { class ConfigAnimationCurveGroup; }
+namespace MoleMole { class ConfigMaterialPropertyModifier; }
+namespace MoleMole::EffectSimulate { class Color01KeyframeCurve; }
+namespace MoleMole::EffectSimulate { class Float01KeyframeCurve; }
+namespace System { class String; }
+namespace System { class Type; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class MaterialPropertyBlock; }
+namespace UnityEngine { class Renderer; }
+
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_1092C5537716905B_OFFSET UNITYSDK_OFFSET(0x139C1310)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_2BC8A7F706CEE47B_OFFSET UNITYSDK_OFFSET(0x139C11A0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0x139C1BB0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0x139C0C10)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x139C1420)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_4FB5F56430673EA6_OFFSET UNITYSDK_OFFSET(0x139C0E00)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_581A5078A2F29034_OFFSET UNITYSDK_OFFSET(0x139C1BA0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_681E224EC188A7D5_OFFSET UNITYSDK_OFFSET(0x139C1920)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_6F54E34F52AB60F6_OFFSET UNITYSDK_OFFSET(0x139C0800)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_88B60F3B95FAA4F1_1_OFFSET UNITYSDK_OFFSET(0x139C0C70)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0x139C0B80)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_9441529D4B4B549D_OFFSET UNITYSDK_OFFSET(0x139C1A10)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_9F8EF6EE79B16064_OFFSET UNITYSDK_OFFSET(0x139C16B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_B8746CF4034D9E80_OFFSET UNITYSDK_OFFSET(0x139C09F0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x139C1AE0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x139C1A80)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_D48E59CCA888A92A_OFFSET UNITYSDK_OFFSET(0x139C0D70)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_DA1BF2C227DC3D86_1_OFFSET UNITYSDK_OFFSET(0x139C1740)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_DA1BF2C227DC3D86_2_OFFSET UNITYSDK_OFFSET(0x139C17C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_DA1BF2C227DC3D86_3_OFFSET UNITYSDK_OFFSET(0x139C19A0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_DA1BF2C227DC3D86_4_OFFSET UNITYSDK_OFFSET(0x139C1C90)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_DA1BF2C227DC3D86_OFFSET UNITYSDK_OFFSET(0x139C0D00)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_EB15466536C39910_OFFSET UNITYSDK_OFFSET(0x139C1820)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_EEA73B6010018ADD_1_OFFSET UNITYSDK_OFFSET(0x139C1B40)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_EEA73B6010018ADD_OFFSET UNITYSDK_OFFSET(0x139C0E80)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_F13758AC2B543CEF_OFFSET UNITYSDK_OFFSET(0x139C0EE0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_F91B8892FC7A8C48_OFFSET UNITYSDK_OFFSET(0x139C1C10)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_FCAE2431182375FA_OFFSET UNITYSDK_OFFSET(0x139C17B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE__CTOR_OFFSET UNITYSDK_OFFSET(0x139C14C0)
+
+namespace MoleMole::EffectSimulate
+{
+	inline static constexpr unsigned int ESAvatarOutline_TypeDefinitionIndex = 54255;
+
+	class ESAvatarOutline : public ::MoleMole::EffectSimulate::ESAvatarMatChange
+	{
+	public:
+		// static const ::System::String* _OUTLINECOLOR_PROP_NAME; // 0x0
+		// static const ::System::String* _OUTLINEWIDTH_PROP_NAME; // 0x0
+		// static const ::System::String* _MAXOUTLINEZOFFSET_PROP_NAME; // 0x0
+		::System::Boolean use_OutlineColor; // 0xB8
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_OutlineColor; // 0xC0
+		::System::Boolean use_OutlineWidth; // 0xC8
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_OutlineWidth; // 0xD0
+		::System::Boolean use_MaxOutlineZOffset; // 0xD8
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_MaxOutlineZOffset; // 0xE0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Method_4_6F54E34F52AB60F6(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_6F54E34F52AB60F6_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_4_B8746CF4034D9E80(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_B8746CF4034D9E80_OFFSET))(this, a1);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_88B60F3B95FAA4F1_OFFSET))(this);
+		}
+
+		::System::Boolean Method_4_391A84BCD9F51317()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_391A84BCD9F51317_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_88B60F3B95FAA4F1_1_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_DA1BF2C227DC3D86_OFFSET))(this);
+		}
+
+		::MoleMole::ConfigMaterialPropertyModifier* Method_4_D48E59CCA888A92A()
+		{
+			return ((::MoleMole::ConfigMaterialPropertyModifier*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_D48E59CCA888A92A_OFFSET))(this);
+		}
+
+		::System::Type* Method_4_4FB5F56430673EA6()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_4FB5F56430673EA6_OFFSET))(this);
+		}
+
+		::MoleMole::Config::MaterialPropertyType Method_4_EEA73B6010018ADD()
+		{
+			return ((::MoleMole::Config::MaterialPropertyType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_EEA73B6010018ADD_OFFSET))(this);
+		}
+
+		::System::Void Method_4_F13758AC2B543CEF(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2, ::System::Single a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_F13758AC2B543CEF_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Void Method_4_2BC8A7F706CEE47B(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_2BC8A7F706CEE47B_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_4_1092C5537716905B()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_1092C5537716905B_OFFSET))(this);
+		}
+
+		::System::Void Method_4_4343F372F34C05BF()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_4343F372F34C05BF_OFFSET))(this);
+		}
+
+		::System::Void Method_4_9F8EF6EE79B16064(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_9F8EF6EE79B16064_OFFSET))(this, a1);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_DA1BF2C227DC3D86_1_OFFSET))(this);
+		}
+
+		::System::Void Method_4_FCAE2431182375FA(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_FCAE2431182375FA_OFFSET))(this, a1);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_2()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_DA1BF2C227DC3D86_2_OFFSET))(this);
+		}
+
+		::System::Void Method_4_EB15466536C39910(::UnityEngine::Renderer* a1, ::UnityEngine::Material* a2, ::UnityEngine::MaterialPropertyBlock* a3, ::UnityEngine::Material* a4)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Renderer*, ::UnityEngine::Material*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Material*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_EB15466536C39910_OFFSET))(this, a1, a2, a3, a4);
+		}
+
+		::System::Type* Method_4_681E224EC188A7D5()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_681E224EC188A7D5_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_3()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_DA1BF2C227DC3D86_3_OFFSET))(this);
+		}
+
+		::System::Void Method_4_9441529D4B4B549D(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_9441529D4B4B549D_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_4_CA373AA1C7054598()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_CA373AA1C7054598_OFFSET))(this);
+		}
+
+		::System::Void Method_4_CA373AA1C7054598_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_CA373AA1C7054598_1_OFFSET))(this);
+		}
+
+		::MoleMole::Config::MaterialPropertyType Method_4_EEA73B6010018ADD_1()
+		{
+			return ((::MoleMole::Config::MaterialPropertyType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_EEA73B6010018ADD_1_OFFSET))(this);
+		}
+
+		::System::String* Method_4_581A5078A2F29034()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_581A5078A2F29034_OFFSET))(this);
+		}
+
+		::System::Boolean Method_4_391A84BCD9F51317_1()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_391A84BCD9F51317_1_OFFSET))(this);
+		}
+
+		::System::Void Method_4_F91B8892FC7A8C48(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2, ::System::Single a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_F91B8892FC7A8C48_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_4()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATAROUTLINE_METHOD_4_DA1BF2C227DC3D86_4_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,182 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/MoleMole/MiniGame/MiniGameWorldBase.h"
+
+class Class_0_16E4307DCC419505_289;
+namespace MoleMole { class UIWindowController; }
+namespace MoleMole::MiniGame { class MiniGameManifest; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ISGAMEENDSTATE_OFFSET UNITYSDK_OFFSET(0xC2DAE30)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONCREATE_OFFSET UNITYSDK_OFFSET(0xC2D9DC0)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONDESTROY_OFFSET UNITYSDK_OFFSET(0xC2DAF60)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONEXIT_OFFSET UNITYSDK_OFFSET(0xC2DAA10)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONLOADFINISH_OFFSET UNITYSDK_OFFSET(0xC2D9FD0)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONUFIGHTCONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xC2DA290)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONUFIGHTDISCONNECT_OFFSET UNITYSDK_OFFSET(0xC2DA410)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONUFIGHTRECONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xC2DA710)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONUFIGHTSTARTRECONNECT_OFFSET UNITYSDK_OFFSET(0xC2DA590)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONWILLEXIT_OFFSET UNITYSDK_OFFSET(0xC2DA890)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_PAUSE_OFFSET UNITYSDK_OFFSET(0xC2DAC90)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_REGISTERLOADFINISHCALLBACK_OFFSET UNITYSDK_OFFSET(0xC2D9F30)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD__CTOR_OFFSET UNITYSDK_OFFSET(0xC2DB0F0)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD__ONCREATE_B__9_0_OFFSET UNITYSDK_OFFSET(0xC2DB140)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ISGAMEENDSTATE_OFFSET UNITYSDK_OFFSET(0xC2DB310)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONCREATE_OFFSET UNITYSDK_OFFSET(0xC2DB240)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0xC2DB250)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONEXIT_OFFSET UNITYSDK_OFFSET(0xC2DB370)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONLOADFINISH_OFFSET UNITYSDK_OFFSET(0xC2DB2B0)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONUFIGHTCONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xC2DB380)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONUFIGHTDISCONNECT_OFFSET UNITYSDK_OFFSET(0xC2DB3E0)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONUFIGHTRECONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xC2DB440)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONUFIGHTSTARTRECONNECT_OFFSET UNITYSDK_OFFSET(0xC2DB4A0)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONWILLEXIT_OFFSET UNITYSDK_OFFSET(0xC2DB500)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_PAUSE_OFFSET UNITYSDK_OFFSET(0xC2DB560)
+#define MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_REGISTERLOADFINISHCALLBACK_OFFSET UNITYSDK_OFFSET(0xC2DB5D0)
+
+namespace MoleMole::MiniGame
+{
+	inline static constexpr unsigned int CommonMiniGameWorld_TypeDefinitionIndex = 78785;
+
+	class CommonMiniGameWorld : public ::MoleMole::MiniGame::MiniGameWorldBase
+	{
+	public:
+		::UnityEngine::GameObject* gameObjectPrefab; // 0x88
+		::MoleMole::MiniGame::MiniGameManifest* miniGameManifest; // 0x90
+		::MoleMole::UIWindowController* rootPageUICtrl; // 0x98
+		::System::Action* loadFinishCb; // 0xA0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONCREATE_OFFSET))(this);
+		}
+
+		::System::Void RegisterLoadFinishCallback(::System::Action* cb)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_REGISTERLOADFINISHCALLBACK_OFFSET))(this, cb);
+		}
+
+		::System::Void OnLoadFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONLOADFINISH_OFFSET))(this);
+		}
+
+		::System::Void OnUFightConnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONUFIGHTCONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void OnUFightDisconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONUFIGHTDISCONNECT_OFFSET))(this);
+		}
+
+		::System::Void OnUFightStartReconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONUFIGHTSTARTRECONNECT_OFFSET))(this);
+		}
+
+		::System::Void OnUFightReconnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONUFIGHTRECONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void OnWillExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONWILLEXIT_OFFSET))(this);
+		}
+
+		::System::Void OnExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONEXIT_OFFSET))(this);
+		}
+
+		::System::Void Pause(::System::Boolean pauseState)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_PAUSE_OFFSET))(this, pauseState);
+		}
+
+		::System::Boolean IsGameEndState()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ISGAMEENDSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD_ONDESTROY_OFFSET))(this);
+		}
+
+		::System::Void _OnCreate_b__9_0(::Foundation::AssetPath __, ::UnityEngine::GameObject* prefab)
+		{
+			return ((::System::Void(*)(::PVOID, ::Foundation::AssetPath, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD__ONCREATE_B__9_0_OFFSET))(this, __, prefab);
+		}
+
+		::System::Void __base_OnCreate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONCREATE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnLoadFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONLOADFINISH_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsGameEndState()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ISGAMEENDSTATE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONEXIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightConnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONUFIGHTCONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightDisconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONUFIGHTDISCONNECT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightReconnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONUFIGHTRECONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightStartReconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONUFIGHTSTARTRECONNECT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnWillExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_ONWILLEXIT_OFFSET))(this);
+		}
+
+		::System::Void __base_Pause(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_PAUSE_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_RegisterLoadFinishCallback(::System::Action* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMMONMINIGAMEWORLD___BASE_REGISTERLOADFINISHCALLBACK_OFFSET))(this, P0);
+		}
+	};
+}

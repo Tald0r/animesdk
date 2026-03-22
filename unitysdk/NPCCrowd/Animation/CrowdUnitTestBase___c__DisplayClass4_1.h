@@ -1,0 +1,30 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_84CEDCEF739506C1_2;
+class Class_2_F346500DFC680A13;
+
+#define NPCCROWD_ANIMATION_CROWDUNITTESTBASE___C__DISPLAYCLASS4_1__CTOR_OFFSET UNITYSDK_OFFSET(0x7446EA0)
+#define NPCCROWD_ANIMATION_CROWDUNITTESTBASE___C__DISPLAYCLASS4_1__INIT_B__1_OFFSET UNITYSDK_OFFSET(0x7446EB0)
+
+namespace NPCCrowd::Animation
+{
+	inline static constexpr unsigned int CrowdUnitTestBase___c__DisplayClass4_1_TypeDefinitionIndex = 78065;
+
+	class CrowdUnitTestBase___c__DisplayClass4_1 : public ::System::Object
+	{
+	public:
+		::Class_2_F346500DFC680A13* p; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ANIMATION_CROWDUNITTESTBASE___C__DISPLAYCLASS4_1__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean _Init_b__1(::Class_2_84CEDCEF739506C1_2* m)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_2_84CEDCEF739506C1_2*))((::PBYTE)hIl2Cpp + NPCCROWD_ANIMATION_CROWDUNITTESTBASE___C__DISPLAYCLASS4_1__INIT_B__1_OFFSET))(this, m);
+		}
+	};
+}

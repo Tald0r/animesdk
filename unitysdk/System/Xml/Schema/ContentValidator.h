@@ -3,34 +3,48 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaContentType.h"
 
-#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_GET_CONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x17D5C8E0)
-#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_GET_ISOPEN_OFFSET UNITYSDK_OFFSET(0x17D5C8F0)
-#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D5C910)
-#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17D5C8D0)
-#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x17D5C8C0)
+namespace System::Collections { class ArrayList; }
+namespace System::Xml { class XmlQualifiedName; }
+namespace System::Xml::Schema { class ValidationState; }
+namespace System::Xml::Schema { class XmlSchemaParticle; }
+namespace System::Xml::Schema { class XmlSchemaSet; }
+
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_ADDPARTICLETOEXPECTED_1_OFFSET UNITYSDK_OFFSET(0x1A36D210)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_ADDPARTICLETOEXPECTED_OFFSET UNITYSDK_OFFSET(0x1A36D1A0)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_COMPLETEVALIDATION_OFFSET UNITYSDK_OFFSET(0x1A36D170)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_EXPECTEDELEMENTS_OFFSET UNITYSDK_OFFSET(0x1A36D180)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_EXPECTEDPARTICLES_OFFSET UNITYSDK_OFFSET(0x1A36D190)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_GET_ISEMPTIABLE_OFFSET UNITYSDK_OFFSET(0x1A36D100)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_GET_ISOPEN_OFFSET UNITYSDK_OFFSET(0x1A36D110)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_GET_PRESERVEWHITESPACE_OFFSET UNITYSDK_OFFSET(0x1A36D0E0)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_INITVALIDATION_OFFSET UNITYSDK_OFFSET(0x1A36D130)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_VALIDATEELEMENT_OFFSET UNITYSDK_OFFSET(0x1A36D140)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A36D4C0)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A36D0D0)
+#define SYSTEM_XML_SCHEMA_CONTENTVALIDATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A36D0C0)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int ContentValidator_TypeDefinitionIndex = 2062;
+	inline static constexpr unsigned int ContentValidator_TypeDefinitionIndex = 1975;
 
 	class ContentValidator : public ::System::Object
 	{
 	public:
 		static ::System::Xml::Schema::ContentValidator** StaticGet_Any()
 		{
-			return (::System::Xml::Schema::ContentValidator**)Il2CppClass::FromTypeDefinitionIndex(ContentValidator_TypeDefinitionIndex)->GetStaticField(0xBDF0);
-		}
-		static ::System::Xml::Schema::ContentValidator** StaticGet_Mixed()
-		{
-			return (::System::Xml::Schema::ContentValidator**)Il2CppClass::FromTypeDefinitionIndex(ContentValidator_TypeDefinitionIndex)->GetStaticField(0xBDF8);
+			return (::System::Xml::Schema::ContentValidator**)Il2CppClass::FromTypeDefinitionIndex(ContentValidator_TypeDefinitionIndex)->GetStaticField(0x1880);
 		}
 		static ::System::Xml::Schema::ContentValidator** StaticGet_Empty()
 		{
-			return (::System::Xml::Schema::ContentValidator**)Il2CppClass::FromTypeDefinitionIndex(ContentValidator_TypeDefinitionIndex)->GetStaticField(0xBE00);
+			return (::System::Xml::Schema::ContentValidator**)Il2CppClass::FromTypeDefinitionIndex(ContentValidator_TypeDefinitionIndex)->GetStaticField(0x1888);
+		}
+		static ::System::Xml::Schema::ContentValidator** StaticGet_Mixed()
+		{
+			return (::System::Xml::Schema::ContentValidator**)Il2CppClass::FromTypeDefinitionIndex(ContentValidator_TypeDefinitionIndex)->GetStaticField(0x1890);
 		}
 		static ::System::Xml::Schema::ContentValidator** StaticGet_TextOnly()
 		{
-			return (::System::Xml::Schema::ContentValidator**)Il2CppClass::FromTypeDefinitionIndex(ContentValidator_TypeDefinitionIndex)->GetStaticField(0xBE08);
+			return (::System::Xml::Schema::ContentValidator**)Il2CppClass::FromTypeDefinitionIndex(ContentValidator_TypeDefinitionIndex)->GetStaticField(0x1898);
 		}
 		::System::Boolean isOpen; // 0x10
 		::System::Boolean isEmptiable; // 0x11
@@ -51,14 +65,54 @@ namespace System::Xml::Schema
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR__CCTOR_OFFSET))();
 		}
 
-		::System::Xml::Schema::XmlSchemaContentType get_ContentType()
+		::System::Boolean get_PreserveWhitespace()
 		{
-			return ((::System::Xml::Schema::XmlSchemaContentType(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_GET_CONTENTTYPE_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_GET_PRESERVEWHITESPACE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsEmptiable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_GET_ISEMPTIABLE_OFFSET))(this);
 		}
 
 		::System::Boolean get_IsOpen()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_GET_ISOPEN_OFFSET))(this);
+		}
+
+		::System::Void InitValidation(::System::Xml::Schema::ValidationState* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::ValidationState*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_INITVALIDATION_OFFSET))(this, context);
+		}
+
+		::System::Object* ValidateElement(::System::Xml::XmlQualifiedName* name, ::System::Xml::Schema::ValidationState* context, ::System::Int32& errorCode)
+		{
+			return ((::System::Object*(*)(::PVOID, ::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::ValidationState*, ::System::Int32&))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_VALIDATEELEMENT_OFFSET))(this, name, context, errorCode);
+		}
+
+		::System::Boolean CompleteValidation(::System::Xml::Schema::ValidationState* context)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Xml::Schema::ValidationState*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_COMPLETEVALIDATION_OFFSET))(this, context);
+		}
+
+		::System::Collections::ArrayList* ExpectedElements(::System::Xml::Schema::ValidationState* context, ::System::Boolean isRequiredOnly)
+		{
+			return ((::System::Collections::ArrayList*(*)(::PVOID, ::System::Xml::Schema::ValidationState*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_EXPECTEDELEMENTS_OFFSET))(this, context, isRequiredOnly);
+		}
+
+		::System::Collections::ArrayList* ExpectedParticles(::System::Xml::Schema::ValidationState* context, ::System::Boolean isRequiredOnly, ::System::Xml::Schema::XmlSchemaSet* schemaSet)
+		{
+			return ((::System::Collections::ArrayList*(*)(::PVOID, ::System::Xml::Schema::ValidationState*, ::System::Boolean, ::System::Xml::Schema::XmlSchemaSet*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_EXPECTEDPARTICLES_OFFSET))(this, context, isRequiredOnly, schemaSet);
+		}
+
+		static ::System::Void AddParticleToExpected(::System::Xml::Schema::XmlSchemaParticle* p, ::System::Xml::Schema::XmlSchemaSet* schemaSet, ::System::Collections::ArrayList* particles)
+		{
+			return ((::System::Void(*)(::System::Xml::Schema::XmlSchemaParticle*, ::System::Xml::Schema::XmlSchemaSet*, ::System::Collections::ArrayList*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_ADDPARTICLETOEXPECTED_OFFSET))(p, schemaSet, particles);
+		}
+
+		static ::System::Void AddParticleToExpected_1(::System::Xml::Schema::XmlSchemaParticle* p, ::System::Xml::Schema::XmlSchemaSet* schemaSet, ::System::Collections::ArrayList* particles, ::System::Boolean global)
+		{
+			return ((::System::Void(*)(::System::Xml::Schema::XmlSchemaParticle*, ::System::Xml::Schema::XmlSchemaSet*, ::System::Collections::ArrayList*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_CONTENTVALIDATOR_ADDPARTICLETOEXPECTED_1_OFFSET))(p, schemaSet, particles, global);
 		}
 	};
 }

@@ -1,10 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/FixPoint.h"
 
-namespace RPG::GameCore { class ItemConfig; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_13_TypeDefinitionIndex = 11550;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_13_TypeDefinitionIndex = 14968;
 
 class Class_0_16E4307DCC419505_13
 {

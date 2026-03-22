@@ -1,0 +1,31 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/EffectSimulate/NESDataCacheBase.h"
+
+namespace MoleMole { class MonoEffectPluginFade; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_EFFECTSIMULATE_NESNORMALFXDATACACHE_METHOD_2_83A2D2FF4410F4BE_OFFSET UNITYSDK_OFFSET(0x6E0C060)
+#define MOLEMOLE_EFFECTSIMULATE_NESNORMALFXDATACACHE__CTOR_OFFSET UNITYSDK_OFFSET(0x6E0C110)
+
+namespace MoleMole::EffectSimulate
+{
+	inline static constexpr unsigned int NESNormalFxDataCache_TypeDefinitionIndex = 62278;
+
+	class NESNormalFxDataCache : public ::MoleMole::EffectSimulate::NESDataCacheBase
+	{
+	public:
+		::MoleMole::MonoEffectPluginFade* monoEffectFadeCache; // 0x10
+		::System::Boolean hasAnyFadeOutControl; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_NESNORMALFXDATACACHE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Method_2_83A2D2FF4410F4BE(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_NESNORMALFXDATACACHE_METHOD_2_83A2D2FF4410F4BE_OFFSET))(this, a1);
+		}
+	};
+}

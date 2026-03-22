@@ -2,18 +2,49 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Security/Cryptography/AsymmetricSignatureDeformatter.h"
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SIGNATUREDEFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x15B1EA60)
+namespace System { class String; }
+namespace System::Security::Cryptography { class AsymmetricAlgorithm; }
+namespace System::Security::Cryptography { class RSA; }
+
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SIGNATUREDEFORMATTER_SETHASHALGORITHM_OFFSET UNITYSDK_OFFSET(0x1966C730)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SIGNATUREDEFORMATTER_SETKEY_OFFSET UNITYSDK_OFFSET(0x1966C6B0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SIGNATUREDEFORMATTER_VERIFYSIGNATURE_OFFSET UNITYSDK_OFFSET(0x1966C780)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SIGNATUREDEFORMATTER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1966C630)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SIGNATUREDEFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1966C620)
 
 namespace System::Security::Cryptography
 {
-	inline static constexpr unsigned int RSAPKCS1SignatureDeformatter_TypeDefinitionIndex = 1065;
+	inline static constexpr unsigned int RSAPKCS1SignatureDeformatter_TypeDefinitionIndex = 1120;
 
 	class RSAPKCS1SignatureDeformatter : public ::System::Security::Cryptography::AsymmetricSignatureDeformatter
 	{
 	public:
+		::System::Security::Cryptography::RSA* rsa; // 0x10
+		::System::String* hashName; // 0x18
+
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SIGNATUREDEFORMATTER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::Security::Cryptography::AsymmetricAlgorithm* key)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::AsymmetricAlgorithm*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SIGNATUREDEFORMATTER__CTOR_1_OFFSET))(this, key);
+		}
+
+		::System::Void SetHashAlgorithm(::System::String* strName)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SIGNATUREDEFORMATTER_SETHASHALGORITHM_OFFSET))(this, strName);
+		}
+
+		::System::Void SetKey(::System::Security::Cryptography::AsymmetricAlgorithm* key)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::AsymmetricAlgorithm*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SIGNATUREDEFORMATTER_SETKEY_OFFSET))(this, key);
+		}
+
+		::System::Boolean VerifySignature(::Il2CppArray<::System::Byte>* rgbHash, ::Il2CppArray<::System::Byte>* rgbSignature)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SIGNATUREDEFORMATTER_VERIFYSIGNATURE_OFFSET))(this, rgbHash, rgbSignature);
 		}
 	};
 }

@@ -1,0 +1,135 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_72D718364F0A8071.h"
+
+class Class_2_0495AF03A29D7705;
+class Class_2_208CC9941471731A_335;
+class Class_2_32332F05EA358716;
+class Class_2_D89CCC627A66D0AD;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0x7D44DB0)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x7D44DA0)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONCREATAVATARITEM_OFFSET UNITYSDK_OFFSET(0x7D46C10)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D44F30)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONTAKEADVANCEREWARDHANDLE_OFFSET UNITYSDK_OFFSET(0x7D46D30)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D46D90)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7D44DC0)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7D44FD0)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_REFRESHAVATAR_OFFSET UNITYSDK_OFFSET(0x7D453C0)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_REFRESHBUDDY_OFFSET UNITYSDK_OFFSET(0x7D46040)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_REFRESHSKILL_OFFSET UNITYSDK_OFFSET(0x7D467B0)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_REFRESHWEAPON_OFFSET UNITYSDK_OFFSET(0x7D459A0)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7D46E20)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D46EB0)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D46F20)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7D46F30)
+#define MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7D46F40)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UILevelUpDetailsPopWindowController_TypeDefinitionIndex = 36537;
+
+	class UILevelUpDetailsPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_32332F05EA358716* _view; // 0x2F8
+		::Class_2_D89CCC627A66D0AD* _avatarItem; // 0x300
+		::System::UInt32 weaponUid; // 0x308
+		::Class_2_0495AF03A29D7705* battleBuddyData; // 0x310
+		::Struct_2_72D718364F0A8071 skillViewMode; // 0x318
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_335*>* showRankList; // 0x328
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* OnCreatAvatarItem(::System::Func_1<::MoleMole::UIControlReference*>* arg)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONCREATAVATARITEM_OFFSET))(this, arg);
+		}
+
+		::System::Void RefreshAvatar()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_REFRESHAVATAR_OFFSET))(this);
+		}
+
+		::System::Void OnTakeAdvanceRewardHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONTAKEADVANCEREWARDHANDLE_OFFSET))(this);
+		}
+
+		::System::Void RefreshWeapon()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_REFRESHWEAPON_OFFSET))(this);
+		}
+
+		::System::Void RefreshBuddy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_REFRESHBUDDY_OFFSET))(this);
+		}
+
+		::System::Void RefreshSkill()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_REFRESHSKILL_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELUPDETAILSPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

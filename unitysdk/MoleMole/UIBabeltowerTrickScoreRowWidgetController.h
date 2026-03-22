@@ -1,0 +1,198 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_5F4100A598973619.h"
+#include "unitysdk/Enum_3_B511486FFFFCE718.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_BE69379A14124A86_1;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_BINDCLICK_OFFSET UNITYSDK_OFFSET(0xC901350)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_GETLANGUAGENUMSTR_OFFSET UNITYSDK_OFFSET(0xC903190)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_ONCLICKINFOICONBTN_OFFSET UNITYSDK_OFFSET(0xC902A20)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC901100)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC901270)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC900FB0)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC901050)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHINFOICONBTN_OFFSET UNITYSDK_OFFSET(0xC9015A0)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHNUM_1_OFFSET UNITYSDK_OFFSET(0xC901E00)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHNUM_OFFSET UNITYSDK_OFFSET(0xC901990)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHRATINGICON_OFFSET UNITYSDK_OFFSET(0xC901B80)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHSTYLISHNOHIT_OFFSET UNITYSDK_OFFSET(0xC902400)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHSTYLISHSKILL_OFFSET UNITYSDK_OFFSET(0xC902080)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHTITLE_OFFSET UNITYSDK_OFFSET(0xC901660)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHVIEW_1_OFFSET UNITYSDK_OFFSET(0xC901CF0)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHVIEW_2_OFFSET UNITYSDK_OFFSET(0xC901FB0)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHVIEW_3_OFFSET UNITYSDK_OFFSET(0xC902DC0)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xC9013F0)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REPLACEINFOCONTENT_OFFSET UNITYSDK_OFFSET(0xC902C40)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_SETEMPTY_OFFSET UNITYSDK_OFFSET(0xC9014F0)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_SETNUMSTRCOLOR_OFFSET UNITYSDK_OFFSET(0xC9030D0)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_SETNUMSTRPREFIX_OFFSET UNITYSDK_OFFSET(0xC902F80)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_SHOULDIGNORE_OFFSET UNITYSDK_OFFSET(0xC8E4970)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC903270)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC903670)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC9036E0)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC903760)
+#define MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC9037C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBabeltowerTrickScoreRowWidgetController_TypeDefinitionIndex = 50218;
+
+	class UIBabeltowerTrickScoreRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* HighlightOrangeColor; // 0x0
+		// static const ::System::String* HighlightRedColor; // 0x0
+		::Class_2_BE69379A14124A86_1* _view; // 0x2A0
+		::Enum_3_B511486FFFFCE718 _scoreType; // 0x2A8
+		::System::Collections::Generic::Dictionary_2<::Enum_3_B511486FFFFCE718, ::System::String*>* _replaceInfoContent; // 0x2B0
+		::System::Collections::Generic::Dictionary_2<::Enum_3_B511486FFFFCE718, ::System::String*>* scoreTextMap; // 0x2B8
+		::System::Action* clickAction; // 0x2C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void BindClick(::System::Action* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_BINDCLICK_OFFSET))(this, callback);
+		}
+
+		::System::Void RefreshView(::Enum_3_B511486FFFFCE718 scoreType, ::System::Int32 number, ::System::Boolean bindDefaultClick)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_B511486FFFFCE718, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, scoreType, number, bindDefaultClick);
+		}
+
+		::System::Void RefreshView_1(::Enum_3_B511486FFFFCE718 scoreType, ::System::Single number, ::System::Boolean bindDefaultClick)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_B511486FFFFCE718, ::System::Single, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHVIEW_1_OFFSET))(this, scoreType, number, bindDefaultClick);
+		}
+
+		::System::Void RefreshView_2(::Enum_3_5F4100A598973619 s3RatingType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_5F4100A598973619))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHVIEW_2_OFFSET))(this, s3RatingType);
+		}
+
+		::System::Void RefreshStylishSkill(::System::Int32 id, ::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHSTYLISHSKILL_OFFSET))(this, id, value);
+		}
+
+		::System::Void RefreshStylishNoHit(::System::UInt32 nohitScore)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHSTYLISHNOHIT_OFFSET))(this, nohitScore);
+		}
+
+		::System::Void SetEmpty(::System::Boolean isEmpty)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_SETEMPTY_OFFSET))(this, isEmpty);
+		}
+
+		::System::Void RefreshInfoIconBtn(::Enum_3_B511486FFFFCE718 scoreType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_B511486FFFFCE718))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHINFOICONBTN_OFFSET))(this, scoreType);
+		}
+
+		::System::Void OnClickInfoIconBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_ONCLICKINFOICONBTN_OFFSET))(this);
+		}
+
+		::System::Boolean ShouldIgnore()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_SHOULDIGNORE_OFFSET))(this);
+		}
+
+		::System::Void ReplaceInfoContent(::Enum_3_B511486FFFFCE718 scoreType, ::System::String* content)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_B511486FFFFCE718, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REPLACEINFOCONTENT_OFFSET))(this, scoreType, content);
+		}
+
+		::System::Void RefreshView_3(::System::String* title, ::System::Single number, ::System::Int32 decimalCount)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Single, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHVIEW_3_OFFSET))(this, title, number, decimalCount);
+		}
+
+		::System::Void RefreshTitle(::Enum_3_B511486FFFFCE718 scoreType, ::Enum_3_5F4100A598973619 s3RatingType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_B511486FFFFCE718, ::Enum_3_5F4100A598973619))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHTITLE_OFFSET))(this, scoreType, s3RatingType);
+		}
+
+		::System::Void RefreshNum(::Enum_3_B511486FFFFCE718 scoreType, ::System::Int32 number)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_B511486FFFFCE718, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHNUM_OFFSET))(this, scoreType, number);
+		}
+
+		::System::Void RefreshNum_1(::Enum_3_B511486FFFFCE718 scoreType, ::System::Single number)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_B511486FFFFCE718, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHNUM_1_OFFSET))(this, scoreType, number);
+		}
+
+		::System::String* GetLanguageNumStr(::Enum_3_B511486FFFFCE718 scoreType, ::System::Single number)
+		{
+			return ((::System::String*(*)(::PVOID, ::Enum_3_B511486FFFFCE718, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_GETLANGUAGENUMSTR_OFFSET))(this, scoreType, number);
+		}
+
+		::System::String* SetNumStrPrefix(::Enum_3_B511486FFFFCE718 scoreType, ::System::String* numStr)
+		{
+			return ((::System::String*(*)(::PVOID, ::Enum_3_B511486FFFFCE718, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_SETNUMSTRPREFIX_OFFSET))(this, scoreType, numStr);
+		}
+
+		::System::String* SetNumStrColor(::Enum_3_B511486FFFFCE718 scoreType, ::System::String* numStr)
+		{
+			return ((::System::String*(*)(::PVOID, ::Enum_3_B511486FFFFCE718, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_SETNUMSTRCOLOR_OFFSET))(this, scoreType, numStr);
+		}
+
+		::System::Void RefreshRatingIcon(::Enum_3_B511486FFFFCE718 scoreType, ::Enum_3_5F4100A598973619 s3RatingType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_B511486FFFFCE718, ::Enum_3_5F4100A598973619))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER_REFRESHRATINGICON_OFFSET))(this, scoreType, s3RatingType);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERTRICKSCOREROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

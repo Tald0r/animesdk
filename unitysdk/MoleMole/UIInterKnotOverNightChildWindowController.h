@@ -1,0 +1,128 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_D15EABFC012D3014;
+class Class_2_44E81328D83FEA12_1;
+class Class_3_E342D954CB576697;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIInterKnotOverNightPostWidgetController; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_GET_INPUTHANDLELAYER_OFFSET UNITYSDK_OFFSET(0x8C8E990)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x8C8E9A0)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_MASKCLOSE_OFFSET UNITYSDK_OFFSET(0x8C8EC40)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C8EFF0)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA7FD7F0)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C8F090)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C8E9B0)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8C8EDB0)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA7FD8B0)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER__MASKCLOSE_B__7_0_OFFSET UNITYSDK_OFFSET(0xA7FD8C0)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_MASKCLOSE_OFFSET UNITYSDK_OFFSET(0xA7FD940)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA7FD9B0)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA7FDA20)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA7FDA50)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA7FDA60)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA7FDA70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInterKnotOverNightChildWindowController_TypeDefinitionIndex = 77567;
+
+	class UIInterKnotOverNightChildWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_44E81328D83FEA12_1* _view; // 0x2F8
+		::MoleMole::UIInterKnotOverNightPostWidgetController* _postWidget; // 0x300
+		::System::Action_1<::System::String*>* _onClose; // 0x308
+		::System::Single FadeOutTime; // 0x310
+		::Class_1_D15EABFC012D3014* _postProxy; // 0x318
+		::Class_3_E342D954CB576697* _post; // 0x320
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Int32 get_InputHandleLayer()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_GET_INPUTHANDLELAYER_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void MaskClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_MASKCLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void _MaskClose_b__7_0(::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF r)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER__MASKCLOSE_B__7_0_OFFSET))(this, r);
+		}
+
+		::System::Void __base_MaskClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_MASKCLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

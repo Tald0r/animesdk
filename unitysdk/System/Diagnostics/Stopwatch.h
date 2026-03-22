@@ -3,36 +3,37 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/TimeSpan.h"
 
-#define SYSTEM_DIAGNOSTICS_STOPWATCH_GETTIMESTAMP_OFFSET UNITYSDK_OFFSET(0x17E90090)
-#define SYSTEM_DIAGNOSTICS_STOPWATCH_GET_ELAPSEDMILLISECONDS_OFFSET UNITYSDK_OFFSET(0x17E902D0)
-#define SYSTEM_DIAGNOSTICS_STOPWATCH_GET_ELAPSEDTICKS_OFFSET UNITYSDK_OFFSET(0x17E90260)
-#define SYSTEM_DIAGNOSTICS_STOPWATCH_GET_ELAPSED_OFFSET UNITYSDK_OFFSET(0x17E900E0)
-#define SYSTEM_DIAGNOSTICS_STOPWATCH_GET_ISRUNNING_OFFSET UNITYSDK_OFFSET(0x17E90450)
-#define SYSTEM_DIAGNOSTICS_STOPWATCH_RESET_OFFSET UNITYSDK_OFFSET(0x17E90460)
-#define SYSTEM_DIAGNOSTICS_STOPWATCH_RESTART_OFFSET UNITYSDK_OFFSET(0x17E90560)
-#define SYSTEM_DIAGNOSTICS_STOPWATCH_START_OFFSET UNITYSDK_OFFSET(0x17E90470)
-#define SYSTEM_DIAGNOSTICS_STOPWATCH_STOP_OFFSET UNITYSDK_OFFSET(0x17E904E0)
-#define SYSTEM_DIAGNOSTICS_STOPWATCH__CCTOR_OFFSET UNITYSDK_OFFSET(0x17E905D0)
-#define SYSTEM_DIAGNOSTICS_STOPWATCH__CTOR_OFFSET UNITYSDK_OFFSET(0x17E900D0)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH_GETTIMESTAMP_OFFSET UNITYSDK_OFFSET(0x19FD9550)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH_GET_ELAPSEDMILLISECONDS_OFFSET UNITYSDK_OFFSET(0x19FD9880)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH_GET_ELAPSEDTICKS_OFFSET UNITYSDK_OFFSET(0x19FD9810)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH_GET_ELAPSED_OFFSET UNITYSDK_OFFSET(0x19FD9690)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH_GET_ISRUNNING_OFFSET UNITYSDK_OFFSET(0x19FD9A00)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH_RESET_OFFSET UNITYSDK_OFFSET(0x19FD9A10)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH_RESTART_OFFSET UNITYSDK_OFFSET(0x19FD9AA0)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH_STARTNEW_OFFSET UNITYSDK_OFFSET(0x19FD9590)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH_START_OFFSET UNITYSDK_OFFSET(0x19FD9620)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH_STOP_OFFSET UNITYSDK_OFFSET(0x19FD9A20)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH__CCTOR_OFFSET UNITYSDK_OFFSET(0x19FD9B10)
+#define SYSTEM_DIAGNOSTICS_STOPWATCH__CTOR_OFFSET UNITYSDK_OFFSET(0x19FD9610)
 
 namespace System::Diagnostics
 {
-	inline static constexpr unsigned int Stopwatch_TypeDefinitionIndex = 2541;
+	inline static constexpr unsigned int Stopwatch_TypeDefinitionIndex = 2801;
 
 	class Stopwatch : public ::System::Object
 	{
 	public:
-		static ::System::Int64* StaticGet_Frequency()
-		{
-			return (::System::Int64*)Il2CppClass::FromTypeDefinitionIndex(Stopwatch_TypeDefinitionIndex)->GetStaticField(0x5860);
-		}
 		static ::System::Boolean* StaticGet_IsHighResolution()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Stopwatch_TypeDefinitionIndex)->GetStaticField(0x5868);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Stopwatch_TypeDefinitionIndex)->GetStaticField(0xF90);
 		}
-		::System::Int64 started; // 0x10
-		::System::Int64 elapsed; // 0x18
-		::System::Boolean is_running; // 0x20
+		static ::System::Int64* StaticGet_Frequency()
+		{
+			return (::System::Int64*)Il2CppClass::FromTypeDefinitionIndex(Stopwatch_TypeDefinitionIndex)->GetStaticField(0xF98);
+		}
+		::System::Boolean is_running; // 0x10
+		::System::Int64 started; // 0x18
+		::System::Int64 elapsed; // 0x20
 
 		::System::Void _ctor()
 		{
@@ -47,6 +48,11 @@ namespace System::Diagnostics
 		static ::System::Int64 GetTimestamp()
 		{
 			return ((::System::Int64(*)())((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_STOPWATCH_GETTIMESTAMP_OFFSET))();
+		}
+
+		static ::System::Diagnostics::Stopwatch* StartNew()
+		{
+			return ((::System::Diagnostics::Stopwatch*(*)())((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_STOPWATCH_STARTNEW_OFFSET))();
 		}
 
 		::System::TimeSpan get_Elapsed()

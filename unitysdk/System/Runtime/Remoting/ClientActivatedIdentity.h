@@ -9,16 +9,14 @@ namespace System::Runtime::Remoting::Messaging { class IMessage; }
 namespace System::Runtime::Remoting::Messaging { class IMessageCtrl; }
 namespace System::Runtime::Remoting::Messaging { class IMessageSink; }
 
-#define SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY_ASYNCOBJECTPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x15CEA020)
-#define SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY_GETSERVEROBJECT_OFFSET UNITYSDK_OFFSET(0x15CE9C70)
-#define SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY_ONLIFETIMEEXPIRED_OFFSET UNITYSDK_OFFSET(0x15CE9C90)
-#define SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY_SETCLIENTPROXY_OFFSET UNITYSDK_OFFSET(0x15CE9C80)
-#define SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY_SYNCOBJECTPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x15CE9D20)
-#define SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0x15CE9C50)
+#define SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY_ASYNCOBJECTPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x197B6500)
+#define SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY_ONLIFETIMEEXPIRED_OFFSET UNITYSDK_OFFSET(0x197B6350)
+#define SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY_SYNCOBJECTPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x197B63E0)
+#define SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0x197B6330)
 
 namespace System::Runtime::Remoting
 {
-	inline static constexpr unsigned int ClientActivatedIdentity_TypeDefinitionIndex = 1206;
+	inline static constexpr unsigned int ClientActivatedIdentity_TypeDefinitionIndex = 1257;
 
 	class ClientActivatedIdentity : public ::System::Runtime::Remoting::ServerIdentity
 	{
@@ -28,16 +26,6 @@ namespace System::Runtime::Remoting
 		::System::Void _ctor(::System::String* objectUri, ::System::Type* objectType)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY__CTOR_OFFSET))(this, objectUri, objectType);
-		}
-
-		::System::MarshalByRefObject* GetServerObject()
-		{
-			return ((::System::MarshalByRefObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY_GETSERVEROBJECT_OFFSET))(this);
-		}
-
-		::System::Void SetClientProxy(::System::MarshalByRefObject* obj)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::MarshalByRefObject*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_CLIENTACTIVATEDIDENTITY_SETCLIENTPROXY_OFFSET))(this, obj);
 		}
 
 		::System::Void OnLifetimeExpired()

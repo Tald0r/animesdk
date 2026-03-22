@@ -1,0 +1,100 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/UnityEngine/Color.h"
+#include "unitysdk/UnityEngine/MonoBehaviour.h"
+
+namespace UnityEngine { class Collision; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class Renderer; }
+
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_AWAKE_OFFSET UNITYSDK_OFFSET(0xA5FB910)
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_DOTRIGGERBYOTHER_OFFSET UNITYSDK_OFFSET(0xA5FC480)
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_METHOD_5_21E23E3ED8A2CCEF_OFFSET UNITYSDK_OFFSET(0xA5FC7C0)
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_METHOD_5_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0xA5FC380)
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_METHOD_5_C8B959BA4F3993AF_OFFSET UNITYSDK_OFFSET(0xA5FC170)
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_ONCHILDCOLLISIONENTER_OFFSET UNITYSDK_OFFSET(0xA5FBBC0)
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_ONCOLLISIONENTER_OFFSET UNITYSDK_OFFSET(0xA5FBC30)
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_ONDESTROY_OFFSET UNITYSDK_OFFSET(0xA5FC700)
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_RESETBLOCK_OFFSET UNITYSDK_OFFSET(0xA5FC400)
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_SETCOLOR_OFFSET UNITYSDK_OFFSET(0xA5FC0C0)
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_UPDATE_OFFSET UNITYSDK_OFFSET(0xA5FC250)
+#define MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK__CTOR_OFFSET UNITYSDK_OFFSET(0xA5FC7A0)
+
+namespace MoleMole::MiniGame::BangbooPartyGame
+{
+	inline static constexpr unsigned int MonoPartyDemoBlock_TypeDefinitionIndex = 49348;
+
+	class MonoPartyDemoBlock : public ::UnityEngine::MonoBehaviour
+	{
+	public:
+		::System::UInt32 Field_5_0; // 0x18
+		::System::UInt32 Field_5_1; // 0x1C
+		::System::Boolean Field_5_2; // 0x20
+		::System::Boolean IsTriggered; // 0x21
+		::System::Single Field_5_4; // 0x24
+		::System::UInt32 uid; // 0x28
+		::System::Int32 layer; // 0x2C
+		::UnityEngine::Renderer* Field_5_7; // 0x30
+		::UnityEngine::Material* Field_5_8; // 0x38
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Awake()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_AWAKE_OFFSET))(this);
+		}
+
+		::System::Void OnChildCollisionEnter(::UnityEngine::Collision* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Collision*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_ONCHILDCOLLISIONENTER_OFFSET))(this, a1);
+		}
+
+		::System::Void SetColor(::UnityEngine::Color a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_SETCOLOR_OFFSET))(this, a1);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void ResetBlock()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_RESETBLOCK_OFFSET))(this);
+		}
+
+		::System::Void OnCollisionEnter(::UnityEngine::Collision* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Collision*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_ONCOLLISIONENTER_OFFSET))(this, a1);
+		}
+
+		::System::Void DoTriggerByOther(::System::UInt32 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_DOTRIGGERBYOTHER_OFFSET))(this, a1);
+		}
+
+		::System::Void OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_ONDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Method_5_4343F372F34C05BF()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_METHOD_5_4343F372F34C05BF_OFFSET))(this);
+		}
+
+		::UnityEngine::Material* Method_5_C8B959BA4F3993AF()
+		{
+			return ((::UnityEngine::Material*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_METHOD_5_C8B959BA4F3993AF_OFFSET))(this);
+		}
+
+		::UnityEngine::Renderer* Method_5_21E23E3ED8A2CCEF()
+		{
+			return ((::UnityEngine::Renderer*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_BANGBOOPARTYGAME_MONOPARTYDEMOBLOCK_METHOD_5_21E23E3ED8A2CCEF_OFFSET))(this);
+		}
+	};
+}

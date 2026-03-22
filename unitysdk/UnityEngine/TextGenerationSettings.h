@@ -10,13 +10,13 @@
 
 namespace UnityEngine { class Font; }
 
-#define UNITYENGINE_TEXTGENERATIONSETTINGS_COMPARECOLORS_OFFSET UNITYSDK_OFFSET(0x2058EE0)
-#define UNITYENGINE_TEXTGENERATIONSETTINGS_COMPAREVECTOR2_OFFSET UNITYSDK_OFFSET(0x2058FC0)
-#define UNITYENGINE_TEXTGENERATIONSETTINGS_EQUALS_OFFSET UNITYSDK_OFFSET(0x2059050)
+#define UNITYENGINE_TEXTGENERATIONSETTINGS_COMPARECOLORS_OFFSET UNITYSDK_OFFSET(0x976A60)
+#define UNITYENGINE_TEXTGENERATIONSETTINGS_COMPAREVECTOR2_OFFSET UNITYSDK_OFFSET(0x976B40)
+#define UNITYENGINE_TEXTGENERATIONSETTINGS_EQUALS_OFFSET UNITYSDK_OFFSET(0x976BD0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int TextGenerationSettings_TypeDefinitionIndex = 4832;
+	inline static constexpr unsigned int TextGenerationSettings_TypeDefinitionIndex = 6331;
 
 	struct alignas(8) TextGenerationSettings
 	{
@@ -25,25 +25,19 @@ namespace UnityEngine
 		::System::Int32 fontSize; // 0x28
 		::System::Single lineSpacing; // 0x2C
 		::System::Boolean richText; // 0x30
-		::System::UInt32 invalidTag; // 0x34
-		::System::Single scaleFactor; // 0x38
-		::System::Single textureScale; // 0x3C
-		::UnityEngine::FontStyle fontStyle; // 0x40
-		::UnityEngine::TextAnchor textAnchor; // 0x44
-		::System::Boolean alignByGeometry; // 0x48
-		::System::Boolean resizeTextForBestFit; // 0x49
-		::System::Boolean fitVertically; // 0x4A
-		::System::Int32 resizeTextMinSize; // 0x4C
-		::System::Int32 resizeTextMaxSize; // 0x50
-		::System::Boolean updateBounds; // 0x54
-		::UnityEngine::VerticalWrapMode verticalOverflow; // 0x58
-		::UnityEngine::HorizontalWrapMode horizontalOverflow; // 0x5C
-		::UnityEngine::Vector2 generationExtents; // 0x60
-		::UnityEngine::Vector2 pivot; // 0x68
-		::System::Boolean generateOutOfBounds; // 0x70
-		::System::Boolean skipUpdateFontTexture; // 0x71
-		::System::Boolean overrideProcessFormat; // 0x72
-		::System::Boolean requireTextFormatFlags; // 0x73
+		::System::Single scaleFactor; // 0x34
+		::UnityEngine::FontStyle fontStyle; // 0x38
+		::UnityEngine::TextAnchor textAnchor; // 0x3C
+		::System::Boolean alignByGeometry; // 0x40
+		::System::Boolean resizeTextForBestFit; // 0x41
+		::System::Int32 resizeTextMinSize; // 0x44
+		::System::Int32 resizeTextMaxSize; // 0x48
+		::System::Boolean updateBounds; // 0x4C
+		::UnityEngine::VerticalWrapMode verticalOverflow; // 0x50
+		::UnityEngine::HorizontalWrapMode horizontalOverflow; // 0x54
+		::UnityEngine::Vector2 generationExtents; // 0x58
+		::UnityEngine::Vector2 pivot; // 0x60
+		::System::Boolean generateOutOfBounds; // 0x68
 
 		::System::Boolean CompareColors(::UnityEngine::Color left, ::UnityEngine::Color right)
 		{

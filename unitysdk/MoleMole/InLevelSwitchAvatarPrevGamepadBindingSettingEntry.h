@@ -1,0 +1,39 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_543B6B88E17BAFE0.h"
+#include "unitysdk/MoleMole/GamepadListKeyBindingSettingEntry.h"
+#include "unitysdk/MoleMole/LogicButtonInputType.h"
+
+#define MOLEMOLE_INLEVELSWITCHAVATARPREVGAMEPADBINDINGSETTINGENTRY_GET_CANBEALLUNBIND_OFFSET UNITYSDK_OFFSET(0x8F17950)
+#define MOLEMOLE_INLEVELSWITCHAVATARPREVGAMEPADBINDINGSETTINGENTRY_GET_SETTINGCONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x8F17960)
+#define MOLEMOLE_INLEVELSWITCHAVATARPREVGAMEPADBINDINGSETTINGENTRY_GET_SETTINGLOGICBUTTONINPUTTYPE_OFFSET UNITYSDK_OFFSET(0x8F17970)
+#define MOLEMOLE_INLEVELSWITCHAVATARPREVGAMEPADBINDINGSETTINGENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x8F17980)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int InLevelSwitchAvatarPrevGamepadBindingSettingEntry_TypeDefinitionIndex = 61828;
+
+	class InLevelSwitchAvatarPrevGamepadBindingSettingEntry : public ::MoleMole::GamepadListKeyBindingSettingEntry
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INLEVELSWITCHAVATARPREVGAMEPADBINDINGSETTINGENTRY__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanBeAllUnbind()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INLEVELSWITCHAVATARPREVGAMEPADBINDINGSETTINGENTRY_GET_CANBEALLUNBIND_OFFSET))(this);
+		}
+
+		::Enum_3_543B6B88E17BAFE0 get_SettingContentType()
+		{
+			return ((::Enum_3_543B6B88E17BAFE0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INLEVELSWITCHAVATARPREVGAMEPADBINDINGSETTINGENTRY_GET_SETTINGCONTENTTYPE_OFFSET))(this);
+		}
+
+		::MoleMole::LogicButtonInputType get_SettingLogicButtonInputType()
+		{
+			return ((::MoleMole::LogicButtonInputType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_INLEVELSWITCHAVATARPREVGAMEPADBINDINGSETTINGENTRY_GET_SETTINGLOGICBUTTONINPUTTYPE_OFFSET))(this);
+		}
+	};
+}

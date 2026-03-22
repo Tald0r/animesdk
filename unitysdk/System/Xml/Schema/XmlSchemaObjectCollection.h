@@ -4,17 +4,25 @@
 
 namespace System { class Object; }
 namespace System::Xml::Schema { class XmlSchemaObject; }
+namespace System::Xml::Schema { class XmlSchemaObjectEnumerator; }
 
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ADD_OFFSET UNITYSDK_OFFSET(0x17D935C0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ONCLEAR_OFFSET UNITYSDK_OFFSET(0x17D94AA0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ONINSERT_OFFSET UNITYSDK_OFFSET(0x17D94A20)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ONREMOVE_OFFSET UNITYSDK_OFFSET(0x17D94AC0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ONSET_OFFSET UNITYSDK_OFFSET(0x17D94A40)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x17D949D0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ADD_1_OFFSET UNITYSDK_OFFSET(0x1910D230)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ADD_OFFSET UNITYSDK_OFFSET(0x1910CF20)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_CLONE_OFFSET UNITYSDK_OFFSET(0x1910D1A0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1910CE70)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x1910CCA0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_INSERT_OFFSET UNITYSDK_OFFSET(0x1910CFE0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ONCLEAR_OFFSET UNITYSDK_OFFSET(0x1910D180)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ONINSERT_OFFSET UNITYSDK_OFFSET(0x1910D160)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ONREMOVE_OFFSET UNITYSDK_OFFSET(0x1910D190)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ONSET_OFFSET UNITYSDK_OFFSET(0x1910D170)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_REMOVE_OFFSET UNITYSDK_OFFSET(0x1910D0A0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_SET_ITEM_OFFSET UNITYSDK_OFFSET(0x1910CDB0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1910CC50)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int XmlSchemaObjectCollection_TypeDefinitionIndex = 2188;
+	inline static constexpr unsigned int XmlSchemaObjectCollection_TypeDefinitionIndex = 2172;
 
 	class XmlSchemaObjectCollection : public ::System::Collections::CollectionBase
 	{
@@ -26,9 +34,34 @@ namespace System::Xml::Schema
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION__CTOR_OFFSET))(this);
 		}
 
+		::System::Xml::Schema::XmlSchemaObject* get_Item(::System::Int32 index)
+		{
+			return ((::System::Xml::Schema::XmlSchemaObject*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_GET_ITEM_OFFSET))(this, index);
+		}
+
+		::System::Void set_Item(::System::Int32 index, ::System::Xml::Schema::XmlSchemaObject* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Xml::Schema::XmlSchemaObject*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_SET_ITEM_OFFSET))(this, index, value);
+		}
+
+		::System::Xml::Schema::XmlSchemaObjectEnumerator* GetEnumerator()
+		{
+			return ((::System::Xml::Schema::XmlSchemaObjectEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_GETENUMERATOR_OFFSET))(this);
+		}
+
 		::System::Int32 Add(::System::Xml::Schema::XmlSchemaObject* item)
 		{
 			return ((::System::Int32(*)(::PVOID, ::System::Xml::Schema::XmlSchemaObject*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ADD_OFFSET))(this, item);
+		}
+
+		::System::Void Insert(::System::Int32 index, ::System::Xml::Schema::XmlSchemaObject* item)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Xml::Schema::XmlSchemaObject*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_INSERT_OFFSET))(this, index, item);
+		}
+
+		::System::Void Remove(::System::Xml::Schema::XmlSchemaObject* item)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaObject*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_REMOVE_OFFSET))(this, item);
 		}
 
 		::System::Void OnInsert(::System::Int32 index, ::System::Object* item)
@@ -49,6 +82,16 @@ namespace System::Xml::Schema
 		::System::Void OnRemove(::System::Int32 index, ::System::Object* item)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ONREMOVE_OFFSET))(this, index, item);
+		}
+
+		::System::Xml::Schema::XmlSchemaObjectCollection* Clone()
+		{
+			return ((::System::Xml::Schema::XmlSchemaObjectCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_CLONE_OFFSET))(this);
+		}
+
+		::System::Void Add_1(::System::Xml::Schema::XmlSchemaObjectCollection* collToAdd)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaObjectCollection*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECTCOLLECTION_ADD_1_OFFSET))(this, collToAdd);
 		}
 	};
 }

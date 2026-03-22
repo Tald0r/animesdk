@@ -5,15 +5,12 @@
 
 namespace System { class Object; }
 
-#define SYSTEM_RESOURCES_RESOURCELOCATOR_CANCACHE_OFFSET UNITYSDK_OFFSET(0x15CD2920)
-#define SYSTEM_RESOURCES_RESOURCELOCATOR_GET_DATAPOSITION_OFFSET UNITYSDK_OFFSET(0xD240)
-#define SYSTEM_RESOURCES_RESOURCELOCATOR_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x5580)
-#define SYSTEM_RESOURCES_RESOURCELOCATOR_SET_VALUE_OFFSET UNITYSDK_OFFSET(0xBDC0)
-#define SYSTEM_RESOURCES_RESOURCELOCATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x150FE40)
+#define SYSTEM_RESOURCES_RESOURCELOCATOR_CANCACHE_OFFSET UNITYSDK_OFFSET(0x17F5BFC0)
+#define SYSTEM_RESOURCES_RESOURCELOCATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x35A280)
 
 namespace System::Resources
 {
-	inline static constexpr unsigned int ResourceLocator_TypeDefinitionIndex = 527;
+	inline static constexpr unsigned int ResourceLocator_TypeDefinitionIndex = 514;
 
 	struct alignas(8) ResourceLocator
 	{
@@ -23,21 +20,6 @@ namespace System::Resources
 		::System::Void _ctor(::System::Int32 dataPos, ::System::Object* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RESOURCES_RESOURCELOCATOR__CTOR_OFFSET))(this, dataPos, value);
-		}
-
-		::System::Int32 get_DataPosition()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RESOURCES_RESOURCELOCATOR_GET_DATAPOSITION_OFFSET))(this);
-		}
-
-		::System::Object* get_Value()
-		{
-			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RESOURCES_RESOURCELOCATOR_GET_VALUE_OFFSET))(this);
-		}
-
-		::System::Void set_Value(::System::Object* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RESOURCES_RESOURCELOCATOR_SET_VALUE_OFFSET))(this, value);
 		}
 
 		static ::System::Boolean CanCache(::System::Resources::ResourceTypeCode value)

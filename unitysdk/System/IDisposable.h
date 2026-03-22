@@ -3,7 +3,7 @@
 
 namespace System
 {
-	inline static constexpr unsigned int IDisposable_TypeDefinitionIndex = 279;
+	inline static constexpr unsigned int IDisposable_TypeDefinitionIndex = 266;
 
 	class IDisposable
 	{

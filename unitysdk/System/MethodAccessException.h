@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_METHODACCESSEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C9E890)
-#define SYSTEM_METHODACCESSEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C9E900)
-#define SYSTEM_METHODACCESSEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C9E7F0)
+#define SYSTEM_METHODACCESSEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x197B4D90)
+#define SYSTEM_METHODACCESSEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x197B4E00)
+#define SYSTEM_METHODACCESSEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x197B4CF0)
 
 namespace System
 {
-	inline static constexpr unsigned int MethodAccessException_TypeDefinitionIndex = 295;
+	inline static constexpr unsigned int MethodAccessException_TypeDefinitionIndex = 285;
 
 	class MethodAccessException : public ::System::MemberAccessException
 	{

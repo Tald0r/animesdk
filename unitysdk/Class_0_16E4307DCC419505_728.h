@@ -1,10 +1,8 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_A0F8BCDE5B3FADFA.h"
 
-namespace RPG::Client::CrowdAnimator { class CrowdInstance; }
-namespace RPG::Client::CrowdAnimator { class CrowdVariant; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_728_TypeDefinitionIndex = 54937;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_728_TypeDefinitionIndex = 78530;
 
 class Class_0_16E4307DCC419505_728
 {

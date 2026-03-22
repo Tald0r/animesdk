@@ -5,14 +5,16 @@
 
 namespace System { class String; }
 
-#define MESSAGEPACK_KEYATTRIBUTE_GET_INTKEY_OFFSET UNITYSDK_OFFSET(0x156185A0)
-#define MESSAGEPACK_KEYATTRIBUTE_GET_STRINGKEY_OFFSET UNITYSDK_OFFSET(0x156185B0)
-#define MESSAGEPACK_KEYATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x156185E0)
-#define MESSAGEPACK_KEYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x156185C0)
+#define MESSAGEPACK_KEYATTRIBUTE_GET_INTKEY_OFFSET UNITYSDK_OFFSET(0x1A266F90)
+#define MESSAGEPACK_KEYATTRIBUTE_GET_STRINGKEY_OFFSET UNITYSDK_OFFSET(0x1A266FB0)
+#define MESSAGEPACK_KEYATTRIBUTE_SET_INTKEY_OFFSET UNITYSDK_OFFSET(0x1A266FA0)
+#define MESSAGEPACK_KEYATTRIBUTE_SET_STRINGKEY_OFFSET UNITYSDK_OFFSET(0x1A266FC0)
+#define MESSAGEPACK_KEYATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A266FF0)
+#define MESSAGEPACK_KEYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A266FD0)
 
 namespace MessagePack
 {
-	inline static constexpr unsigned int KeyAttribute_TypeDefinitionIndex = 8785;
+	inline static constexpr unsigned int KeyAttribute_TypeDefinitionIndex = 26000;
 
 	class KeyAttribute : public ::System::Attribute
 	{
@@ -35,9 +37,19 @@ namespace MessagePack
 			return ((::System::Nullable_1<::System::Int32>(*)(::PVOID))((::PBYTE)hIl2Cpp + MESSAGEPACK_KEYATTRIBUTE_GET_INTKEY_OFFSET))(this);
 		}
 
+		::System::Void set_IntKey(::System::Nullable_1<::System::Int32> value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Nullable_1<::System::Int32>))((::PBYTE)hIl2Cpp + MESSAGEPACK_KEYATTRIBUTE_SET_INTKEY_OFFSET))(this, value);
+		}
+
 		::System::String* get_StringKey()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MESSAGEPACK_KEYATTRIBUTE_GET_STRINGKEY_OFFSET))(this);
+		}
+
+		::System::Void set_StringKey(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MESSAGEPACK_KEYATTRIBUTE_SET_STRINGKEY_OFFSET))(this, value);
 		}
 	};
 }

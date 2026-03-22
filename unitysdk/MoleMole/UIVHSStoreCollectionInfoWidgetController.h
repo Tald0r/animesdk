@@ -1,0 +1,41 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIVHSStoreGeneralInfoWidgetController.h"
+
+class Class_2_208CC9941471731A_457;
+
+#define MOLEMOLE_UIVHSSTORECOLLECTIONINFOWIDGETCONTROLLER_AFTERTEMPLATECHANGE_OFFSET UNITYSDK_OFFSET(0x7539960)
+#define MOLEMOLE_UIVHSSTORECOLLECTIONINFOWIDGETCONTROLLER_GET_TEMPLATE_OFFSET UNITYSDK_OFFSET(0x7539A60)
+#define MOLEMOLE_UIVHSSTORECOLLECTIONINFOWIDGETCONTROLLER_SET_TEMPLATE_OFFSET UNITYSDK_OFFSET(0x7539A70)
+#define MOLEMOLE_UIVHSSTORECOLLECTIONINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7539B00)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVHSStoreCollectionInfoWidgetController_TypeDefinitionIndex = 63444;
+
+	class UIVHSStoreCollectionInfoWidgetController : public ::MoleMole::UIVHSStoreGeneralInfoWidgetController
+	{
+	public:
+		::Class_2_208CC9941471731A_457* _template; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORECOLLECTIONINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void AfterTemplateChange()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORECOLLECTIONINFOWIDGETCONTROLLER_AFTERTEMPLATECHANGE_OFFSET))(this);
+		}
+
+		::Class_2_208CC9941471731A_457* get_template()
+		{
+			return ((::Class_2_208CC9941471731A_457*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORECOLLECTIONINFOWIDGETCONTROLLER_GET_TEMPLATE_OFFSET))(this);
+		}
+
+		::System::Void set_template(::Class_2_208CC9941471731A_457* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_457*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORECOLLECTIONINFOWIDGETCONTROLLER_SET_TEMPLATE_OFFSET))(this, value);
+		}
+	};
+}

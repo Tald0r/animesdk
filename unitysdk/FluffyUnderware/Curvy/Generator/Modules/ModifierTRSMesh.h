@@ -1,0 +1,31 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FluffyUnderware/Curvy/Generator/TRSModuleBase.h"
+
+namespace FluffyUnderware::Curvy::Generator { class CGModuleInputSlot; }
+namespace FluffyUnderware::Curvy::Generator { class CGModuleOutputSlot; }
+
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERTRSMESH_REFRESH_OFFSET UNITYSDK_OFFSET(0x1A774DE0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERTRSMESH__CTOR_OFFSET UNITYSDK_OFFSET(0x1A775190)
+
+namespace FluffyUnderware::Curvy::Generator::Modules
+{
+	inline static constexpr unsigned int ModifierTRSMesh_TypeDefinitionIndex = 35866;
+
+	class ModifierTRSMesh : public ::FluffyUnderware::Curvy::Generator::TRSModuleBase
+	{
+	public:
+		::FluffyUnderware::Curvy::Generator::CGModuleInputSlot* InVMesh; // 0xE0
+		::FluffyUnderware::Curvy::Generator::CGModuleOutputSlot* OutVMesh; // 0xE8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERTRSMESH__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Refresh()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERTRSMESH_REFRESH_OFFSET))(this);
+		}
+	};
+}

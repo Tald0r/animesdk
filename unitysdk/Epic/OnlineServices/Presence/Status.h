@@ -3,7 +3,7 @@
 
 namespace Epic::OnlineServices::Presence
 {
-	inline static constexpr unsigned int Status_TypeDefinitionIndex = 34866;
+	inline static constexpr unsigned int Status_TypeDefinitionIndex = 32355;
 
 	enum class Status : ::System::Int32
 	{

@@ -1,0 +1,107 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_410E84DCFF746137_3;
+class Class_3_2CBAA1B7A86535B9;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UISimpleParkourGameWidgetController; }
+
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAB9D780)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAB9D820)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAB9D220)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAB9D6D0)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER_RESETVIEW_OFFSET UNITYSDK_OFFSET(0xAB9D900)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAB9D960)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET UNITYSDK_OFFSET(0xAB9D990)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER__ONUIINIT_B__3_1_OFFSET UNITYSDK_OFFSET(0xAB9D9C0)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER__ONUIINIT_B__3_2_OFFSET UNITYSDK_OFFSET(0xAB9D9E0)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER__ONUIINIT_B__3_3_OFFSET UNITYSDK_OFFSET(0xAB9DA00)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAB9DA20)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAB9DA90)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAB9DB10)
+#define MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAB9DB70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISimpleParkourOuterWidgetController_TypeDefinitionIndex = 48282;
+
+	class UISimpleParkourOuterWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_410E84DCFF746137_3* _view; // 0x2A0
+		::MoleMole::UISimpleParkourGameWidgetController* _gameWidget; // 0x2A8
+		::Class_3_2CBAA1B7A86535B9* _model; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void ResetView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER_RESETVIEW_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__3_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__3_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER__ONUIINIT_B__3_1_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__3_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER__ONUIINIT_B__3_2_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__3_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER__ONUIINIT_B__3_3_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISIMPLEPARKOUROUTERWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

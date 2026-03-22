@@ -1,0 +1,13 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace Utf8Json::Internal::DoubleConversion
+{
+	inline static constexpr unsigned int DoubleToStringConverter_DtoaMode_TypeDefinitionIndex = 81920;
+
+	enum class DoubleToStringConverter_DtoaMode : ::System::Int32
+	{
+		SHORTEST = 0,
+		SHORTEST_SINGLE = 1,
+	};
+}

@@ -1,0 +1,38 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_208CC9941471731A_1026;
+class Class_3_412776396A6B9A05_1;
+class Class_3_96CE54D1B5F2FEE8_3;
+
+#define CLASS_1_D8F913D725902FF2_METHOD_1_53BDBD50FD284838_OFFSET UNITYSDK_OFFSET(0x19E26A70)
+#define CLASS_1_D8F913D725902FF2_METHOD_1_A919D79F9015EADB_OFFSET UNITYSDK_OFFSET(0x19E26D60)
+#define CLASS_1_D8F913D725902FF2_METHOD_1_D9EAE2CFA3709229_OFFSET UNITYSDK_OFFSET(0x19E27090)
+#define CLASS_1_D8F913D725902FF2_METHOD_1_ED9BD3CA7FE545AF_OFFSET UNITYSDK_OFFSET(0x19E26FD0)
+
+inline static constexpr unsigned int Class_1_D8F913D725902FF2_TypeDefinitionIndex = 80111;
+
+class Class_1_D8F913D725902FF2 : public ::System::Object
+{
+public:
+	static ::System::Void Method_1_53BDBD50FD284838(::Class_3_96CE54D1B5F2FEE8_3* a1, ::System::Int32 a2, ::System::Boolean a3)
+	{
+		return ((::System::Void(*)(::Class_3_96CE54D1B5F2FEE8_3*, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_D8F913D725902FF2_METHOD_1_53BDBD50FD284838_OFFSET))(a1, a2, a3);
+	}
+
+	static ::System::Void Method_1_A919D79F9015EADB(::Class_3_412776396A6B9A05_1* a1, ::Class_2_208CC9941471731A_1026* a2, ::Class_3_96CE54D1B5F2FEE8_3* a3)
+	{
+		return ((::System::Void(*)(::Class_3_412776396A6B9A05_1*, ::Class_2_208CC9941471731A_1026*, ::Class_3_96CE54D1B5F2FEE8_3*))((::PBYTE)hIl2Cpp + CLASS_1_D8F913D725902FF2_METHOD_1_A919D79F9015EADB_OFFSET))(a1, a2, a3);
+	}
+
+	static ::System::Void Method_1_ED9BD3CA7FE545AF(::Class_3_96CE54D1B5F2FEE8_3* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::Boolean a4)
+	{
+		return ((::System::Void(*)(::Class_3_96CE54D1B5F2FEE8_3*, ::System::Int32, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_D8F913D725902FF2_METHOD_1_ED9BD3CA7FE545AF_OFFSET))(a1, a2, a3, a4);
+	}
+
+	static ::System::Void Method_1_D9EAE2CFA3709229(::Class_3_96CE54D1B5F2FEE8_3* a1)
+	{
+		return ((::System::Void(*)(::Class_3_96CE54D1B5F2FEE8_3*))((::PBYTE)hIl2Cpp + CLASS_1_D8F913D725902FF2_METHOD_1_D9EAE2CFA3709229_OFFSET))(a1);
+	}
+};

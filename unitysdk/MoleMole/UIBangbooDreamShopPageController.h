@@ -1,0 +1,270 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_753502B34C42A9A8.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_0_16E4307DCC419505_7;
+class Class_2_3E4194C0118D7749;
+class Class_2_B70D73F10A6E587B;
+class Class_3_9F091E965E210217_30;
+namespace MoleMole { class UIAbyssS2InfoBtnWidgetController; }
+namespace MoleMole { class UIBangbooDreamGoodsAttrItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralTokenRowWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GETGOODS_OFFSET UNITYSDK_OFFSET(0xC0B4900)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GETSELECTGOODSID_OFFSET UNITYSDK_OFFSET(0xC0B4A70)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GETSELECTGOODSITEMID_OFFSET UNITYSDK_OFFSET(0xC0B4AF0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GETSELECTGOODS_OFFSET UNITYSDK_OFFSET(0xC0B4890)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GETSORTEDGOODS_OFFSET UNITYSDK_OFFSET(0xC0B5CB0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GET_NETHANDLER_OFFSET UNITYSDK_OFFSET(0xC0B3AE0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xC0B3AD0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONCLICKBUY_OFFSET UNITYSDK_OFFSET(0xC0B7590)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONCLICKREFRESH_OFFSET UNITYSDK_OFFSET(0xC0B6520)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0B3C70)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONGOODSBOUGHT_OFFSET UNITYSDK_OFFSET(0xC0B78B0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xC0B47D0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONITEMCHANGED_OFFSET UNITYSDK_OFFSET(0xC0B64A0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONSELECTGOODS_OFFSET UNITYSDK_OFFSET(0xC0B6A20)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xC0B4660)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0B42C0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0B4200)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0B4350)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHALL_OFFSET UNITYSDK_OFFSET(0xC0B45A0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHBUY_OFFSET UNITYSDK_OFFSET(0xC0B7020)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHGOODSATTRS_OFFSET UNITYSDK_OFFSET(0xC0B6B00)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHGOODSINFO_OFFSET UNITYSDK_OFFSET(0xC0B5E70)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHGOODSLIST_OFFSET UNITYSDK_OFFSET(0xC0B59B0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHREBATECOST_OFFSET UNITYSDK_OFFSET(0xC0B50D0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHREFRESH_OFFSET UNITYSDK_OFFSET(0xC0B5530)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHSHOPDATA_OFFSET UNITYSDK_OFFSET(0xC0B4C60)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHTOKEN_OFFSET UNITYSDK_OFFSET(0xC0B4DE0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xC0B3BA0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC0B7A40)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER__ONCLICKREFRESH_B__35_0_OFFSET UNITYSDK_OFFSET(0xC0B7AD0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER__ONCLICKREFRESH_B__35_1_OFFSET UNITYSDK_OFFSET(0xC0B7C80)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0B7CD0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xC0B7D40)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xC0B7D70)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0B7D80)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0B7D90)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0B7DA0)
+#define MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xC0B7E10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBangbooDreamShopPageController_TypeDefinitionIndex = 57621;
+
+	class UIBangbooDreamShopPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::String* MuteLogicTimerTag; // 0x0
+		// static const ::System::String* SetupTag; // 0x0
+		// static const ::System::String* BuyAnim; // 0x0
+		::Class_2_3E4194C0118D7749* _view; // 0x2F8
+		::Enum_3_753502B34C42A9A8 _state; // 0x300
+		::System::UInt32 _curShopUid; // 0x304
+		::System::UInt32 _curShopID; // 0x308
+		::System::Collections::Generic::List_1<::Class_3_9F091E965E210217_30*>* _buyGoodsList; // 0x310
+		::MoleMole::UIAbyssS2InfoBtnWidgetController* _abyssS2InfoBtn; // 0x318
+		::System::UInt32 _selectGoodsUid; // 0x320
+		::MoleMole::UIGeneralTokenRowWidgetController* _tokenWidget; // 0x328
+		::System::Collections::Generic::List_1<::MoleMole::UIBangbooDreamGoodsAttrItemWidgetController*>* _goodsAttrs; // 0x330
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Class_2_B70D73F10A6E587B* get_NetHandler()
+		{
+			return ((::Class_2_B70D73F10A6E587B*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GET_NETHANDLER_OFFSET))(this);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::Class_3_9F091E965E210217_30* GetSelectGoods()
+		{
+			return ((::Class_3_9F091E965E210217_30*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GETSELECTGOODS_OFFSET))(this);
+		}
+
+		::System::Int32 GetSelectGoodsID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GETSELECTGOODSID_OFFSET))(this);
+		}
+
+		::Class_3_9F091E965E210217_30* GetGoods(::System::UInt32 uuid)
+		{
+			return ((::Class_3_9F091E965E210217_30*(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GETGOODS_OFFSET))(this, uuid);
+		}
+
+		::System::Int32 GetSelectGoodsItemID(::System::UInt32 goodsID)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GETSELECTGOODSITEMID_OFFSET))(this, goodsID);
+		}
+
+		::System::Void RefreshAll(::System::Boolean goodsListAnim, ::System::Boolean goodsInfoAnim, ::System::Int32 selectIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHALL_OFFSET))(this, goodsListAnim, goodsInfoAnim, selectIndex);
+		}
+
+		::System::Void RefreshShopData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHSHOPDATA_OFFSET))(this);
+		}
+
+		::System::Void RefreshToken()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHTOKEN_OFFSET))(this);
+		}
+
+		::System::Void RefreshRebateCost()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHREBATECOST_OFFSET))(this);
+		}
+
+		::System::Void RefreshRefresh()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHREFRESH_OFFSET))(this);
+		}
+
+		::System::Void RefreshGoodsList(::System::Boolean goodsListAnim, ::System::Boolean goodsInfoAnim, ::System::Int32 selectIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHGOODSLIST_OFFSET))(this, goodsListAnim, goodsInfoAnim, selectIndex);
+		}
+
+		::System::Collections::Generic::List_1<::Class_3_9F091E965E210217_30*>* GetSortedGoods(::System::Collections::Generic::List_1<::Class_3_9F091E965E210217_30*>* goodsIDList)
+		{
+			return ((::System::Collections::Generic::List_1<::Class_3_9F091E965E210217_30*>*(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_3_9F091E965E210217_30*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_GETSORTEDGOODS_OFFSET))(this, goodsIDList);
+		}
+
+		::System::Void OnItemChanged(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONITEMCHANGED_OFFSET))(this, obj);
+		}
+
+		::System::Void OnClickRefresh()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONCLICKREFRESH_OFFSET))(this);
+		}
+
+		::System::Void OnSelectGoods(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONSELECTGOODS_OFFSET))(this, index);
+		}
+
+		::System::Void RefreshGoodsInfo(::System::UInt32 goodsUid, ::System::Boolean playAnim)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHGOODSINFO_OFFSET))(this, goodsUid, playAnim);
+		}
+
+		::System::Void RefreshGoodsAttrs(::System::Int32 itemID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHGOODSATTRS_OFFSET))(this, itemID);
+		}
+
+		::System::Void RefreshBuy(::Class_3_9F091E965E210217_30* goods)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_9F091E965E210217_30*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_REFRESHBUY_OFFSET))(this, goods);
+		}
+
+		::System::Void OnClickBuy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONCLICKBUY_OFFSET))(this);
+		}
+
+		::System::Void OnGoodsBought(::System::Int32 goodsID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER_ONGOODSBOUGHT_OFFSET))(this, goodsID);
+		}
+
+		::System::Void _OnClickRefresh_b__35_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER__ONCLICKREFRESH_B__35_0_OFFSET))(this);
+		}
+
+		::System::Void _OnClickRefresh_b__35_1(::Class_0_16E4307DCC419505_7* _)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER__ONCLICKREFRESH_B__35_1_OFFSET))(this, _);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOODREAMSHOPPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

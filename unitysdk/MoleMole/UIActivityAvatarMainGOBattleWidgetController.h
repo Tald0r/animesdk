@@ -1,0 +1,122 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_0661B18B0C81F7A7;
+namespace MoleMole { class ActivityOVAGOMainBattleContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralBuffSelectRowWidgetController; }
+namespace MoleMole { class UIGeneralToggleWidgetController; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_GOSTORY_OFFSET UNITYSDK_OFFSET(0x8AB6910)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8AB6110)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_ONTOGGLEVALUE_OFFSET UNITYSDK_OFFSET(0x8AB6440)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8AB61B0)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8AB5DE0)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8AB5E80)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_SHOWBATTLE_OFFSET UNITYSDK_OFFSET(0x8AB6050)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_SHOWBUFF_OFFSET UNITYSDK_OFFSET(0x8AB68B0)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_SHOWLEVELTARGET_OFFSET UNITYSDK_OFFSET(0x8AB64B0)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_SHOWMONSTERINFO_OFFSET UNITYSDK_OFFSET(0x8AB66D0)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_SHOWSTORY_OFFSET UNITYSDK_OFFSET(0x8AB60B0)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8AB6990)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8AB6A40)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8AB6AB0)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8AB6B30)
+#define MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8AB6B90)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityAvatarMainGOBattleWidgetController_TypeDefinitionIndex = 73886;
+
+	class UIActivityAvatarMainGOBattleWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_0661B18B0C81F7A7* _view; // 0x2A0
+		::MoleMole::ActivityOVAGOMainBattleContext* context; // 0x2A8
+		::System::Collections::Generic::List_1<::MoleMole::UIGeneralBuffSelectRowWidgetController*>* buffs; // 0x2B0
+		::MoleMole::UIGeneralToggleWidgetController* toggle; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnToggleValue(::System::Boolean value, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_ONTOGGLEVALUE_OFFSET))(this, value, init);
+		}
+
+		::System::Void ShowLevelTarget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_SHOWLEVELTARGET_OFFSET))(this);
+		}
+
+		::System::Void ShowMonsterInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_SHOWMONSTERINFO_OFFSET))(this);
+		}
+
+		::System::Void ShowBuff()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_SHOWBUFF_OFFSET))(this);
+		}
+
+		::System::Void ShowBattle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_SHOWBATTLE_OFFSET))(this);
+		}
+
+		::System::Void GoStory()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_GOSTORY_OFFSET))(this);
+		}
+
+		::System::Void ShowStory()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER_SHOWSTORY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARMAINGOBATTLEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

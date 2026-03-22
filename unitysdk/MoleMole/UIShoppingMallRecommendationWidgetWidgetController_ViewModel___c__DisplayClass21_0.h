@@ -1,0 +1,35 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_2B9D1521AEB6DD72;
+
+#define MOLEMOLE_UISHOPPINGMALLRECOMMENDATIONWIDGETWIDGETCONTROLLER_VIEWMODEL___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0x68F0240)
+#define MOLEMOLE_UISHOPPINGMALLRECOMMENDATIONWIDGETWIDGETCONTROLLER_VIEWMODEL___C__DISPLAYCLASS21_0__CUSTOMCREATEPROPERTY_B__0_OFFSET UNITYSDK_OFFSET(0x68F0250)
+#define MOLEMOLE_UISHOPPINGMALLRECOMMENDATIONWIDGETWIDGETCONTROLLER_VIEWMODEL___C__DISPLAYCLASS21_0__CUSTOMCREATEPROPERTY_B__1_OFFSET UNITYSDK_OFFSET(0x68F0400)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIShoppingMallRecommendationWidgetWidgetController_ViewModel___c__DisplayClass21_0_TypeDefinitionIndex = 39869;
+
+	class UIShoppingMallRecommendationWidgetWidgetController_ViewModel___c__DisplayClass21_0 : public ::System::Object
+	{
+	public:
+		::Class_2_2B9D1521AEB6DD72* goodViewModel; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLRECOMMENDATIONWIDGETWIDGETCONTROLLER_VIEWMODEL___C__DISPLAYCLASS21_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean _CustomCreateProperty_b__0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLRECOMMENDATIONWIDGETWIDGETCONTROLLER_VIEWMODEL___C__DISPLAYCLASS21_0__CUSTOMCREATEPROPERTY_B__0_OFFSET))(this);
+		}
+
+		::System::Int64 _CustomCreateProperty_b__1()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLRECOMMENDATIONWIDGETWIDGETCONTROLLER_VIEWMODEL___C__DISPLAYCLASS21_0__CUSTOMCREATEPROPERTY_B__1_OFFSET))(this);
+		}
+	};
+}

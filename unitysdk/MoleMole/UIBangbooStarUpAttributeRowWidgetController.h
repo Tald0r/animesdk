@@ -1,0 +1,106 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_6D3ECB4C39924DFD;
+class Class_1_BDEEA5009A8A636E;
+class Class_2_0495AF03A29D7705;
+class Class_2_637BE876956F8885;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_CLEARPROPERTIES_OFFSET UNITYSDK_OFFSET(0xC0B8630)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0B7FD0)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0B8070)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0B7E80)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0B7F20)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_SETEMPTY_OFFSET UNITYSDK_OFFSET(0xC0B88D0)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_SETMAX_OFFSET UNITYSDK_OFFSET(0xC0B8870)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_UPDATEUI_OFFSET UNITYSDK_OFFSET(0xC0B8150)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC0B89C0)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0B8A50)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0B8AC0)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0B8B40)
+#define MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0B8BA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBangbooStarUpAttributeRowWidgetController_TypeDefinitionIndex = 59573;
+
+	class UIBangbooStarUpAttributeRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		// static const ::System::String* ProtertyPath; // 0x0
+		::Class_2_637BE876956F8885* _view; // 0x2D0
+		::Class_2_0495AF03A29D7705* _data; // 0x2D8
+		::Class_1_6D3ECB4C39924DFD* skill; // 0x2E0
+		::System::Collections::Generic::List_1<::Class_1_BDEEA5009A8A636E*>* _propertyItems; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void UpdateUI(::Class_2_0495AF03A29D7705* data, ::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_0495AF03A29D7705*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_UPDATEUI_OFFSET))(this, data, index);
+		}
+
+		::System::Void SetEmpty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_SETEMPTY_OFFSET))(this);
+		}
+
+		::System::Void ClearProperties()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_CLEARPROPERTIES_OFFSET))(this);
+		}
+
+		::System::Void SetMax()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER_SETMAX_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOSTARUPATTRIBUTEROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

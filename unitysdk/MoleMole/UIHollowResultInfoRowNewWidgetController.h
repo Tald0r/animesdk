@@ -1,0 +1,95 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIHollowResultInfoRowNewWidgetController_RowData.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Share/ENotificationBadgeType.h"
+
+class Class_1_8B664C71B784890D;
+class Class_2_79AE422BA06F6D26_185;
+namespace MoleMole { class UIControlReference; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_BINDNOTIFICATION_OFFSET UNITYSDK_OFFSET(0xA38A1C0)
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_MARKANIMATIONNOTPLAY_OFFSET UNITYSDK_OFFSET(0xA389890)
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3897A0)
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA389A50)
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA389700)
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_PLAYANIMATIONFADEIN_OFFSET UNITYSDK_OFFSET(0xA389970)
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_REFRESHVIEW_1_OFFSET UNITYSDK_OFFSET(0xA38A250)
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xA389B60)
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA38AB20)
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA38AB50)
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA38ABC0)
+#define MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA38AC40)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowResultInfoRowNewWidgetController_TypeDefinitionIndex = 67838;
+
+	class UIHollowResultInfoRowNewWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* FADE_IN; // 0x0
+		::Class_2_79AE422BA06F6D26_185* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void MarkAnimationNotPlay()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_MARKANIMATIONNOTPLAY_OFFSET))(this);
+		}
+
+		::System::Void PlayAnimationFadeIn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_PLAYANIMATIONFADEIN_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::Class_1_8B664C71B784890D* quest)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_8B664C71B784890D*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, quest);
+		}
+
+		::System::Void BindNotification(::Share::ENotificationBadgeType badgeType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Share::ENotificationBadgeType))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_BINDNOTIFICATION_OFFSET))(this, badgeType);
+		}
+
+		::System::Void RefreshView_1(::MoleMole::UIHollowResultInfoRowNewWidgetController_RowData rowData)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIHollowResultInfoRowNewWidgetController_RowData))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER_REFRESHVIEW_1_OFFSET))(this, rowData);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRESULTINFOROWNEWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

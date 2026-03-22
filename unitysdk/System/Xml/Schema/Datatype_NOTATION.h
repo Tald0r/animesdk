@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/Datatype_anySimpleType.h"
+#include "unitysdk/System/Xml/Schema/RestrictionFlags.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaWhiteSpace.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 #include "unitysdk/System/Xml/XmlTokenizedType.h"
@@ -12,34 +13,38 @@ namespace System { class Type; }
 namespace System::Xml { class IXmlNamespaceResolver; }
 namespace System::Xml { class XmlNameTable; }
 namespace System::Xml::Schema { class FacetsChecker; }
+namespace System::Xml::Schema { class XmlSchemaObject; }
+namespace System::Xml::Schema { class XmlSchemaObjectTable; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D682F0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x17D68480)
-#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x17D68340)
-#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D68420)
-#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_TOKENIZEDTYPE_OFFSET UNITYSDK_OFFSET(0x17D683B0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D683A0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D683C0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x17D68490)
-#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D686F0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION__CTOR_OFFSET UNITYSDK_OFFSET(0x17D64660)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x1960EB00)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x1960ECA0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x1960EB50)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x1960EC40)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_TOKENIZEDTYPE_OFFSET UNITYSDK_OFFSET(0x1960EBC0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x1960EBB0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_VALIDRESTRICTIONFLAGS_OFFSET UNITYSDK_OFFSET(0x1960EBD0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x1960EBE0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x1960ECB0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_VERIFYSCHEMAVALID_OFFSET UNITYSDK_OFFSET(0x1960EF10)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION__CCTOR_OFFSET UNITYSDK_OFFSET(0x1960F2E0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NOTATION__CTOR_OFFSET UNITYSDK_OFFSET(0x1960F240)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_NOTATION_TypeDefinitionIndex = 2115;
+	inline static constexpr unsigned int Datatype_NOTATION_TypeDefinitionIndex = 2030;
 
 	class Datatype_NOTATION : public ::System::Xml::Schema::Datatype_anySimpleType
 	{
 	public:
 		static ::System::Type** StaticGet_listValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_NOTATION_TypeDefinitionIndex)->GetStaticField(0x14070);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_NOTATION_TypeDefinitionIndex)->GetStaticField(0x1F60);
 		}
 		static ::System::Type** StaticGet_atomicValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_NOTATION_TypeDefinitionIndex)->GetStaticField(0x14078);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_NOTATION_TypeDefinitionIndex)->GetStaticField(0x1F68);
 		}
 
 		::System::Void _ctor()
@@ -72,6 +77,11 @@ namespace System::Xml::Schema
 			return ((::System::Xml::XmlTokenizedType(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_TOKENIZEDTYPE_OFFSET))(this);
 		}
 
+		::System::Xml::Schema::RestrictionFlags get_ValidRestrictionFlags()
+		{
+			return ((::System::Xml::Schema::RestrictionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_VALIDRESTRICTIONFLAGS_OFFSET))(this);
+		}
+
 		::System::Type* get_ValueType()
 		{
 			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_GET_VALUETYPE_OFFSET))(this);
@@ -90,6 +100,11 @@ namespace System::Xml::Schema
 		::System::Exception* TryParseValue(::System::String* s, ::System::Xml::XmlNameTable* nameTable, ::System::Xml::IXmlNamespaceResolver* nsmgr, ::System::Object*& typedValue)
 		{
 			return ((::System::Exception*(*)(::PVOID, ::System::String*, ::System::Xml::XmlNameTable*, ::System::Xml::IXmlNamespaceResolver*, ::System::Object*&))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_TRYPARSEVALUE_OFFSET))(this, s, nameTable, nsmgr, typedValue);
+		}
+
+		::System::Void VerifySchemaValid(::System::Xml::Schema::XmlSchemaObjectTable* notations, ::System::Xml::Schema::XmlSchemaObject* caller)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaObjectTable*, ::System::Xml::Schema::XmlSchemaObject*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_NOTATION_VERIFYSCHEMAVALID_OFFSET))(this, notations, caller);
 		}
 	};
 }

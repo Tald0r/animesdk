@@ -1,0 +1,162 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_3E75877A2888D88A_717.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_13;
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_CLEAR_OFFSET UNITYSDK_OFFSET(0x182FED70)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_ACTIVEDYNAMICOBJECT_OFFSET UNITYSDK_OFFSET(0x182FD5B0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_BANGBOOALLOWED_OFFSET UNITYSDK_OFFSET(0x182FD7F0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_BANGBOOCOUNTLIMIT_OFFSET UNITYSDK_OFFSET(0x182FDAC0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_BORNPOS_OFFSET UNITYSDK_OFFSET(0x182FDC10)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_EACHWAVETIME_OFFSET UNITYSDK_OFFSET(0x182FDD20)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_ISLOADALL_OFFSET UNITYSDK_OFFSET(0x182FD430)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELDEFAULTMONEY_OFFSET UNITYSDK_OFFSET(0x182FDFF0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELHP_OFFSET UNITYSDK_OFFSET(0x182FE140)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELID_OFFSET UNITYSDK_OFFSET(0x182FD460)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELMONEYRECOVERINTERVAL_OFFSET UNITYSDK_OFFSET(0x182FE2A0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELMONEYRECOVERY_OFFSET UNITYSDK_OFFSET(0x182FE3F0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELPATHCOUNT_OFFSET UNITYSDK_OFFSET(0x182FE540)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_STAGENAME_OFFSET UNITYSDK_OFFSET(0x182FE690)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_TREASURESCOUNTLIMIT_OFFSET UNITYSDK_OFFSET(0x182FE7A0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_UNACTIVEDYNAMICOBJECT_OFFSET UNITYSDK_OFFSET(0x182FE8F0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_WAVECOUNTLIMIT_OFFSET UNITYSDK_OFFSET(0x182FEB30)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_LOADANDCHECK_OFFSET UNITYSDK_OFFSET(0x182FEC80)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_SET_ISLOADALL_OFFSET UNITYSDK_OFFSET(0x182FD440)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE__CTOR_OFFSET UNITYSDK_OFFSET(0x182FD450)
+
+namespace MoleMole::FlatBuffers::Config
+{
+	inline static constexpr unsigned int BangbooDefenseDataTemplate_TypeDefinitionIndex = 15812;
+
+	class BangbooDefenseDataTemplate : public ::System::Object
+	{
+	public:
+		// static const ::System::String* Hash; // 0x0
+		// static const ::System::Byte VAR_MAX_COUNT = 0xF; // 0x0
+		::System::Collections::Generic::List_1<::System::String*>* m_ActiveDynamicObject; // 0x10
+		::System::String* m_StageName; // 0x18
+		::System::Collections::Generic::List_1<::System::Single>* m_EachWaveTime; // 0x20
+		::System::Collections::Generic::List_1<::System::Int32>* m_BangbooAllowed; // 0x28
+		::Struct_2_3E75877A2888D88A_717 m_Data; // 0x30
+		::System::String* m_BornPos; // 0x40
+		::Class_0_16E4307DCC419505_13* m_Notify; // 0x48
+		::System::Collections::Generic::List_1<::System::String*>* m_UnactiveDynamicObject; // 0x50
+		::System::Single m_LevelHP; // 0x58
+		::System::Int32 m_LevelMoneyRecoverInterval; // 0x5C
+		::System::Int32 m_LevelID; // 0x60
+		::System::Int32 m_BangbooCountLimit; // 0x64
+		::System::Int32 m_LevelDefaultMoney; // 0x68
+		::System::Byte m_VarLoadedCount; // 0x6C
+		::System::Boolean _IsLoadAll_k__BackingField; // 0x6D
+		::System::Byte m_Mask0; // 0x6E
+		::System::Byte m_Mask1; // 0x6F
+		::System::Int32 m_TreasuresCountLimit; // 0x70
+		::System::Int32 m_LevelMoneyRecovery; // 0x74
+		::System::Int32 m_WaveCountLimit; // 0x78
+		::System::Int32 m_LevelPathCount; // 0x7C
+
+		::System::Void _ctor(::Struct_2_3E75877A2888D88A_717 data, ::Class_0_16E4307DCC419505_13* notify)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_3E75877A2888D88A_717, ::Class_0_16E4307DCC419505_13*))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE__CTOR_OFFSET))(this, data, notify);
+		}
+
+		::System::Boolean get_IsLoadAll()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_ISLOADALL_OFFSET))(this);
+		}
+
+		::System::Void set_IsLoadAll(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_SET_ISLOADALL_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_LevelID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELID_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* get_ActiveDynamicObject()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_ACTIVEDYNAMICOBJECT_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* get_BangbooAllowed()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_BANGBOOALLOWED_OFFSET))(this);
+		}
+
+		::System::Int32 get_BangbooCountLimit()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_BANGBOOCOUNTLIMIT_OFFSET))(this);
+		}
+
+		::System::String* get_BornPos()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_BORNPOS_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::Single>* get_EachWaveTime()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Single>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_EACHWAVETIME_OFFSET))(this);
+		}
+
+		::System::Int32 get_LevelDefaultMoney()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELDEFAULTMONEY_OFFSET))(this);
+		}
+
+		::System::Single get_LevelHP()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELHP_OFFSET))(this);
+		}
+
+		::System::Int32 get_LevelMoneyRecoverInterval()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELMONEYRECOVERINTERVAL_OFFSET))(this);
+		}
+
+		::System::Int32 get_LevelMoneyRecovery()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELMONEYRECOVERY_OFFSET))(this);
+		}
+
+		::System::Int32 get_LevelPathCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_LEVELPATHCOUNT_OFFSET))(this);
+		}
+
+		::System::String* get_StageName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_STAGENAME_OFFSET))(this);
+		}
+
+		::System::Int32 get_TreasuresCountLimit()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_TREASURESCOUNTLIMIT_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* get_UnactiveDynamicObject()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_UNACTIVEDYNAMICOBJECT_OFFSET))(this);
+		}
+
+		::System::Int32 get_WaveCountLimit()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_GET_WAVECOUNTLIMIT_OFFSET))(this);
+		}
+
+		::System::Void LoadAndCheck()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_LOADANDCHECK_OFFSET))(this);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_BANGBOODEFENSEDATATEMPLATE_CLEAR_OFFSET))(this);
+		}
+	};
+}

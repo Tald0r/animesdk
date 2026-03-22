@@ -6,89 +6,134 @@
 namespace System { class String; }
 namespace System::Security::Cryptography { class RandomNumberGenerator; }
 
-#define MONO_MATH_BIGINTEGER_BITCOUNT_OFFSET UNITYSDK_OFFSET(0x15A7CBC0)
-#define MONO_MATH_BIGINTEGER_EQUALS_OFFSET UNITYSDK_OFFSET(0x15A7DA10)
-#define MONO_MATH_BIGINTEGER_GENERATEPSEUDOPRIME_OFFSET UNITYSDK_OFFSET(0x15A7E570)
-#define MONO_MATH_BIGINTEGER_GENERATERANDOM_1_OFFSET UNITYSDK_OFFSET(0x15A7CB60)
-#define MONO_MATH_BIGINTEGER_GENERATERANDOM_OFFSET UNITYSDK_OFFSET(0x15A7C9B0)
-#define MONO_MATH_BIGINTEGER_GETBYTES_OFFSET UNITYSDK_OFFSET(0x15A7CEC0)
-#define MONO_MATH_BIGINTEGER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x15A7D860)
-#define MONO_MATH_BIGINTEGER_GET_RNG_OFFSET UNITYSDK_OFFSET(0x15A7C8C0)
-#define MONO_MATH_BIGINTEGER_INCR2_OFFSET UNITYSDK_OFFSET(0x15A7E610)
-#define MONO_MATH_BIGINTEGER_LOWESTSETBIT_OFFSET UNITYSDK_OFFSET(0x15A7CE30)
-#define MONO_MATH_BIGINTEGER_MODINVERSE_OFFSET UNITYSDK_OFFSET(0x15A7DB80)
-#define MONO_MATH_BIGINTEGER_NORMALIZE_OFFSET UNITYSDK_OFFSET(0x15A7A8F0)
-#define MONO_MATH_BIGINTEGER_OP_DIVISION_OFFSET UNITYSDK_OFFSET(0x15A7BE80)
-#define MONO_MATH_BIGINTEGER_OP_EQUALITY_1_OFFSET UNITYSDK_OFFSET(0x15A7D220)
-#define MONO_MATH_BIGINTEGER_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x15A7AD80)
-#define MONO_MATH_BIGINTEGER_OP_GREATERTHANOREQUAL_OFFSET UNITYSDK_OFFSET(0x15A7D3A0)
-#define MONO_MATH_BIGINTEGER_OP_GREATERTHAN_OFFSET UNITYSDK_OFFSET(0x15A7D360)
-#define MONO_MATH_BIGINTEGER_OP_IMPLICIT_1_OFFSET UNITYSDK_OFFSET(0x15A7AA40)
-#define MONO_MATH_BIGINTEGER_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x15A7A9C0)
-#define MONO_MATH_BIGINTEGER_OP_INEQUALITY_1_OFFSET UNITYSDK_OFFSET(0x15A7D2C0)
-#define MONO_MATH_BIGINTEGER_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x15A7D150)
-#define MONO_MATH_BIGINTEGER_OP_LEFTSHIFT_OFFSET UNITYSDK_OFFSET(0x15A7C2B0)
-#define MONO_MATH_BIGINTEGER_OP_LESSTHANOREQUAL_OFFSET UNITYSDK_OFFSET(0x15A7D3C0)
-#define MONO_MATH_BIGINTEGER_OP_LESSTHAN_OFFSET UNITYSDK_OFFSET(0x15A7D380)
-#define MONO_MATH_BIGINTEGER_OP_MODULUS_1_OFFSET UNITYSDK_OFFSET(0x15A7B480)
-#define MONO_MATH_BIGINTEGER_OP_MODULUS_OFFSET UNITYSDK_OFFSET(0x15A7B2C0)
-#define MONO_MATH_BIGINTEGER_OP_MULTIPLY_OFFSET UNITYSDK_OFFSET(0x15A7BEB0)
-#define MONO_MATH_BIGINTEGER_OP_RIGHTSHIFT_OFFSET UNITYSDK_OFFSET(0x15A7C590)
-#define MONO_MATH_BIGINTEGER_OP_SUBTRACTION_OFFSET UNITYSDK_OFFSET(0x15A7AAF0)
-#define MONO_MATH_BIGINTEGER_SETBIT_1_OFFSET UNITYSDK_OFFSET(0x15A7CDB0)
-#define MONO_MATH_BIGINTEGER_SETBIT_OFFSET UNITYSDK_OFFSET(0x15A7CD60)
-#define MONO_MATH_BIGINTEGER_TESTBIT_OFFSET UNITYSDK_OFFSET(0x15A7CCC0)
-#define MONO_MATH_BIGINTEGER_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x15A7D420)
-#define MONO_MATH_BIGINTEGER_TOSTRING_2_OFFSET UNITYSDK_OFFSET(0x15A7D9D0)
-#define MONO_MATH_BIGINTEGER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15A7D3E0)
-#define MONO_MATH_BIGINTEGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15A7E6B0)
-#define MONO_MATH_BIGINTEGER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15A7A3D0)
-#define MONO_MATH_BIGINTEGER__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15A7A4D0)
-#define MONO_MATH_BIGINTEGER__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15A7A5A0)
-#define MONO_MATH_BIGINTEGER__CTOR_4_OFFSET UNITYSDK_OFFSET(0x15A7A960)
-#define MONO_MATH_BIGINTEGER__CTOR_OFFSET UNITYSDK_OFFSET(0x15A7A3A0)
+#define MONO_MATH_BIGINTEGER_ADD_OFFSET UNITYSDK_OFFSET(0x1AAEE520)
+#define MONO_MATH_BIGINTEGER_BITCOUNT_OFFSET UNITYSDK_OFFSET(0x1AAEF140)
+#define MONO_MATH_BIGINTEGER_CLEARBIT_OFFSET UNITYSDK_OFFSET(0x1AAEF450)
+#define MONO_MATH_BIGINTEGER_CLEAR_OFFSET UNITYSDK_OFFSET(0x1AAEFDF0)
+#define MONO_MATH_BIGINTEGER_COMPARE_OFFSET UNITYSDK_OFFSET(0x1AAEFA50)
+#define MONO_MATH_BIGINTEGER_DIVID_1_OFFSET UNITYSDK_OFFSET(0x1AAEEB20)
+#define MONO_MATH_BIGINTEGER_DIVID_OFFSET UNITYSDK_OFFSET(0x1AAEEA60)
+#define MONO_MATH_BIGINTEGER_EQUALS_OFFSET UNITYSDK_OFFSET(0x1AAF0000)
+#define MONO_MATH_BIGINTEGER_GCD_OFFSET UNITYSDK_OFFSET(0x1AAF0170)
+#define MONO_MATH_BIGINTEGER_GENERATEPSEUDOPRIME_OFFSET UNITYSDK_OFFSET(0x1AAF06D0)
+#define MONO_MATH_BIGINTEGER_GENERATERANDOM_1_OFFSET UNITYSDK_OFFSET(0x1AAEEF10)
+#define MONO_MATH_BIGINTEGER_GENERATERANDOM_OFFSET UNITYSDK_OFFSET(0x1AAEED60)
+#define MONO_MATH_BIGINTEGER_GETBYTES_OFFSET UNITYSDK_OFFSET(0x1AAEF530)
+#define MONO_MATH_BIGINTEGER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x1AAEFE50)
+#define MONO_MATH_BIGINTEGER_GET_RNG_OFFSET UNITYSDK_OFFSET(0x1AAEEC70)
+#define MONO_MATH_BIGINTEGER_INCR2_OFFSET UNITYSDK_OFFSET(0x1AAF0740)
+#define MONO_MATH_BIGINTEGER_ISPROBABLEPRIME_OFFSET UNITYSDK_OFFSET(0x1AAF0200)
+#define MONO_MATH_BIGINTEGER_LOWESTSETBIT_OFFSET UNITYSDK_OFFSET(0x1AAEF4A0)
+#define MONO_MATH_BIGINTEGER_MODINVERSE_OFFSET UNITYSDK_OFFSET(0x1AAF0180)
+#define MONO_MATH_BIGINTEGER_MODPOW_OFFSET UNITYSDK_OFFSET(0x1AAF0190)
+#define MONO_MATH_BIGINTEGER_MODULUS_1_OFFSET UNITYSDK_OFFSET(0x1AAEE860)
+#define MONO_MATH_BIGINTEGER_MODULUS_2_OFFSET UNITYSDK_OFFSET(0x1AAEE9D0)
+#define MONO_MATH_BIGINTEGER_MODULUS_OFFSET UNITYSDK_OFFSET(0x1AAEE5E0)
+#define MONO_MATH_BIGINTEGER_MULTIPLY_1_OFFSET UNITYSDK_OFFSET(0x1AAEEC10)
+#define MONO_MATH_BIGINTEGER_MULTIPLY_OFFSET UNITYSDK_OFFSET(0x1AAEEBB0)
+#define MONO_MATH_BIGINTEGER_NEXTHIGHESTPRIME_OFFSET UNITYSDK_OFFSET(0x1AAF0670)
+#define MONO_MATH_BIGINTEGER_NORMALIZE_OFFSET UNITYSDK_OFFSET(0x1AAECDA0)
+#define MONO_MATH_BIGINTEGER_OP_ADDITION_OFFSET UNITYSDK_OFFSET(0x1AAED770)
+#define MONO_MATH_BIGINTEGER_OP_DIVISION_1_OFFSET UNITYSDK_OFFSET(0x1AAEE1B0)
+#define MONO_MATH_BIGINTEGER_OP_DIVISION_OFFSET UNITYSDK_OFFSET(0x1AAEE140)
+#define MONO_MATH_BIGINTEGER_OP_EQUALITY_1_OFFSET UNITYSDK_OFFSET(0x1AAEF890)
+#define MONO_MATH_BIGINTEGER_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x1AAEDA30)
+#define MONO_MATH_BIGINTEGER_OP_GREATERTHANOREQUAL_OFFSET UNITYSDK_OFFSET(0x1AAEFA10)
+#define MONO_MATH_BIGINTEGER_OP_GREATERTHAN_OFFSET UNITYSDK_OFFSET(0x1AAEF9D0)
+#define MONO_MATH_BIGINTEGER_OP_IMPLICIT_1_OFFSET UNITYSDK_OFFSET(0x1AAED180)
+#define MONO_MATH_BIGINTEGER_OP_IMPLICIT_2_OFFSET UNITYSDK_OFFSET(0x1AAED230)
+#define MONO_MATH_BIGINTEGER_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1AAED100)
+#define MONO_MATH_BIGINTEGER_OP_INEQUALITY_1_OFFSET UNITYSDK_OFFSET(0x1AAEF930)
+#define MONO_MATH_BIGINTEGER_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x1AAEF7C0)
+#define MONO_MATH_BIGINTEGER_OP_LEFTSHIFT_OFFSET UNITYSDK_OFFSET(0x1AAEE500)
+#define MONO_MATH_BIGINTEGER_OP_LESSTHANOREQUAL_OFFSET UNITYSDK_OFFSET(0x1AAEFA30)
+#define MONO_MATH_BIGINTEGER_OP_LESSTHAN_OFFSET UNITYSDK_OFFSET(0x1AAEF9F0)
+#define MONO_MATH_BIGINTEGER_OP_MODULUS_1_OFFSET UNITYSDK_OFFSET(0x1AAEDFD0)
+#define MONO_MATH_BIGINTEGER_OP_MODULUS_2_OFFSET UNITYSDK_OFFSET(0x1AAEE100)
+#define MONO_MATH_BIGINTEGER_OP_MODULUS_OFFSET UNITYSDK_OFFSET(0x1AAEDD80)
+#define MONO_MATH_BIGINTEGER_OP_MULTIPLY_1_OFFSET UNITYSDK_OFFSET(0x1AAED5A0)
+#define MONO_MATH_BIGINTEGER_OP_MULTIPLY_OFFSET UNITYSDK_OFFSET(0x1AAEE1F0)
+#define MONO_MATH_BIGINTEGER_OP_RIGHTSHIFT_OFFSET UNITYSDK_OFFSET(0x1AAEE510)
+#define MONO_MATH_BIGINTEGER_OP_SUBTRACTION_OFFSET UNITYSDK_OFFSET(0x1AAEDAF0)
+#define MONO_MATH_BIGINTEGER_PARSE_OFFSET UNITYSDK_OFFSET(0x1AAED280)
+#define MONO_MATH_BIGINTEGER_RANDOMIZE_1_OFFSET UNITYSDK_OFFSET(0x1AAEF240)
+#define MONO_MATH_BIGINTEGER_RANDOMIZE_OFFSET UNITYSDK_OFFSET(0x1AAEEF70)
+#define MONO_MATH_BIGINTEGER_SETBIT_1_OFFSET UNITYSDK_OFFSET(0x1AAEF3D0)
+#define MONO_MATH_BIGINTEGER_SETBIT_OFFSET UNITYSDK_OFFSET(0x1AAEF380)
+#define MONO_MATH_BIGINTEGER_SUBTRACT_OFFSET UNITYSDK_OFFSET(0x1AAEE580)
+#define MONO_MATH_BIGINTEGER_TESTBIT_1_OFFSET UNITYSDK_OFFSET(0x1AAEF2E0)
+#define MONO_MATH_BIGINTEGER_TESTBIT_OFFSET UNITYSDK_OFFSET(0x1AAEF2A0)
+#define MONO_MATH_BIGINTEGER_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x1AAEFAA0)
+#define MONO_MATH_BIGINTEGER_TOSTRING_2_OFFSET UNITYSDK_OFFSET(0x1AAEFFC0)
+#define MONO_MATH_BIGINTEGER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1AAEFA60)
+#define MONO_MATH_BIGINTEGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AAF07E0)
+#define MONO_MATH_BIGINTEGER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AAEC850)
+#define MONO_MATH_BIGINTEGER__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1AAEC880)
+#define MONO_MATH_BIGINTEGER__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1AAEC980)
+#define MONO_MATH_BIGINTEGER__CTOR_4_OFFSET UNITYSDK_OFFSET(0x1AAECA50)
+#define MONO_MATH_BIGINTEGER__CTOR_5_OFFSET UNITYSDK_OFFSET(0x1AAECE10)
+#define MONO_MATH_BIGINTEGER__CTOR_6_OFFSET UNITYSDK_OFFSET(0x1AAED010)
+#define MONO_MATH_BIGINTEGER__CTOR_7_OFFSET UNITYSDK_OFFSET(0x1AAED070)
+#define MONO_MATH_BIGINTEGER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAEC810)
 
 namespace Mono::Math
 {
-	inline static constexpr unsigned int BigInteger_TypeDefinitionIndex = 2297;
+	inline static constexpr unsigned int BigInteger_TypeDefinitionIndex = 2481;
 
 	class BigInteger : public ::System::Object
 	{
 	public:
 		static ::System::Security::Cryptography::RandomNumberGenerator** StaticGet_rng()
 		{
-			return (::System::Security::Cryptography::RandomNumberGenerator**)Il2CppClass::FromTypeDefinitionIndex(BigInteger_TypeDefinitionIndex)->GetStaticField(0x14C10);
+			return (::System::Security::Cryptography::RandomNumberGenerator**)Il2CppClass::FromTypeDefinitionIndex(BigInteger_TypeDefinitionIndex)->GetStaticField(0x2300);
 		}
 		static ::Il2CppArray<::System::UInt32>** StaticGet_smallPrimes()
 		{
-			return (::Il2CppArray<::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(BigInteger_TypeDefinitionIndex)->GetStaticField(0x14C18);
+			return (::Il2CppArray<::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(BigInteger_TypeDefinitionIndex)->GetStaticField(0x2308);
 		}
+		// static const ::System::UInt32 DEFAULT_LEN = 0x14; // 0x0
+		// static const ::System::String* WouldReturnNegVal; // 0x0
 		::Il2CppArray<::System::UInt32>* data; // 0x10
 		::System::UInt32 length; // 0x18
 
-		::System::Void _ctor(::Mono::Math::BigInteger_Sign sign, ::System::UInt32 len)
+		::System::Void _ctor()
 		{
-			return ((::System::Void(*)(::PVOID, ::Mono::Math::BigInteger_Sign, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_OFFSET))(this, sign, len);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _ctor_1(::Mono::Math::BigInteger* bi)
+		::System::Void _ctor_1(::Mono::Math::BigInteger_Sign sign, ::System::UInt32 len)
 		{
-			return ((::System::Void(*)(::PVOID, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_1_OFFSET))(this, bi);
+			return ((::System::Void(*)(::PVOID, ::Mono::Math::BigInteger_Sign, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_1_OFFSET))(this, sign, len);
 		}
 
-		::System::Void _ctor_2(::Mono::Math::BigInteger* bi, ::System::UInt32 len)
+		::System::Void _ctor_2(::Mono::Math::BigInteger* bi)
 		{
-			return ((::System::Void(*)(::PVOID, ::Mono::Math::BigInteger*, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_2_OFFSET))(this, bi, len);
+			return ((::System::Void(*)(::PVOID, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_2_OFFSET))(this, bi);
 		}
 
-		::System::Void _ctor_3(::Il2CppArray<::System::Byte>* inData)
+		::System::Void _ctor_3(::Mono::Math::BigInteger* bi, ::System::UInt32 len)
 		{
-			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_3_OFFSET))(this, inData);
+			return ((::System::Void(*)(::PVOID, ::Mono::Math::BigInteger*, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_3_OFFSET))(this, bi, len);
 		}
 
-		::System::Void _ctor_4(::System::UInt32 ui)
+		::System::Void _ctor_4(::Il2CppArray<::System::Byte>* inData)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_4_OFFSET))(this, ui);
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_4_OFFSET))(this, inData);
+		}
+
+		::System::Void _ctor_5(::Il2CppArray<::System::UInt32>* inData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::UInt32>*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_5_OFFSET))(this, inData);
+		}
+
+		::System::Void _ctor_6(::System::UInt32 ui)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_6_OFFSET))(this, ui);
+		}
+
+		::System::Void _ctor_7(::System::UInt64 ul)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt64))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER__CTOR_7_OFFSET))(this, ul);
 		}
 
 		static ::System::Void _cctor()
@@ -106,29 +151,59 @@ namespace Mono::Math
 			return ((::Mono::Math::BigInteger*(*)(::System::Int32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_IMPLICIT_1_OFFSET))(value);
 		}
 
+		static ::Mono::Math::BigInteger* op_Implicit_2(::System::UInt64 value)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::System::UInt64))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_IMPLICIT_2_OFFSET))(value);
+		}
+
+		static ::Mono::Math::BigInteger* Parse(::System::String* number)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::System::String*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_PARSE_OFFSET))(number);
+		}
+
+		static ::Mono::Math::BigInteger* op_Addition(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_ADDITION_OFFSET))(bi1, bi2);
+		}
+
 		static ::Mono::Math::BigInteger* op_Subtraction(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
 		{
 			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_SUBTRACTION_OFFSET))(bi1, bi2);
 		}
 
-		static ::System::UInt32 op_Modulus(::Mono::Math::BigInteger* bi, ::System::UInt32 ui)
+		static ::System::Int32 op_Modulus(::Mono::Math::BigInteger* bi, ::System::Int32 i)
 		{
-			return ((::System::UInt32(*)(::Mono::Math::BigInteger*, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_MODULUS_OFFSET))(bi, ui);
+			return ((::System::Int32(*)(::Mono::Math::BigInteger*, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_MODULUS_OFFSET))(bi, i);
 		}
 
-		static ::Mono::Math::BigInteger* op_Modulus_1(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
+		static ::System::UInt32 op_Modulus_1(::Mono::Math::BigInteger* bi, ::System::UInt32 ui)
 		{
-			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_MODULUS_1_OFFSET))(bi1, bi2);
+			return ((::System::UInt32(*)(::Mono::Math::BigInteger*, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_MODULUS_1_OFFSET))(bi, ui);
 		}
 
-		static ::Mono::Math::BigInteger* op_Division(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
+		static ::Mono::Math::BigInteger* op_Modulus_2(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
 		{
-			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_DIVISION_OFFSET))(bi1, bi2);
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_MODULUS_2_OFFSET))(bi1, bi2);
+		}
+
+		static ::Mono::Math::BigInteger* op_Division(::Mono::Math::BigInteger* bi, ::System::Int32 i)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_DIVISION_OFFSET))(bi, i);
+		}
+
+		static ::Mono::Math::BigInteger* op_Division_1(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_DIVISION_1_OFFSET))(bi1, bi2);
 		}
 
 		static ::Mono::Math::BigInteger* op_Multiply(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
 		{
 			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_MULTIPLY_OFFSET))(bi1, bi2);
+		}
+
+		static ::Mono::Math::BigInteger* op_Multiply_1(::Mono::Math::BigInteger* bi, ::System::Int32 i)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_MULTIPLY_1_OFFSET))(bi, i);
 		}
 
 		static ::Mono::Math::BigInteger* op_LeftShift(::Mono::Math::BigInteger* bi1, ::System::Int32 shiftVal)
@@ -139,6 +214,51 @@ namespace Mono::Math
 		static ::Mono::Math::BigInteger* op_RightShift(::Mono::Math::BigInteger* bi1, ::System::Int32 shiftVal)
 		{
 			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_RIGHTSHIFT_OFFSET))(bi1, shiftVal);
+		}
+
+		static ::Mono::Math::BigInteger* Add(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_ADD_OFFSET))(bi1, bi2);
+		}
+
+		static ::Mono::Math::BigInteger* Subtract(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_SUBTRACT_OFFSET))(bi1, bi2);
+		}
+
+		static ::System::Int32 Modulus(::Mono::Math::BigInteger* bi, ::System::Int32 i)
+		{
+			return ((::System::Int32(*)(::Mono::Math::BigInteger*, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_MODULUS_OFFSET))(bi, i);
+		}
+
+		static ::System::UInt32 Modulus_1(::Mono::Math::BigInteger* bi, ::System::UInt32 ui)
+		{
+			return ((::System::UInt32(*)(::Mono::Math::BigInteger*, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_MODULUS_1_OFFSET))(bi, ui);
+		}
+
+		static ::Mono::Math::BigInteger* Modulus_2(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_MODULUS_2_OFFSET))(bi1, bi2);
+		}
+
+		static ::Mono::Math::BigInteger* Divid(::Mono::Math::BigInteger* bi, ::System::Int32 i)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_DIVID_OFFSET))(bi, i);
+		}
+
+		static ::Mono::Math::BigInteger* Divid_1(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_DIVID_1_OFFSET))(bi1, bi2);
+		}
+
+		static ::Mono::Math::BigInteger* Multiply(::Mono::Math::BigInteger* bi1, ::Mono::Math::BigInteger* bi2)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_MULTIPLY_OFFSET))(bi1, bi2);
+		}
+
+		static ::Mono::Math::BigInteger* Multiply_1(::Mono::Math::BigInteger* bi, ::System::Int32 i)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_MULTIPLY_1_OFFSET))(bi, i);
 		}
 
 		static ::System::Security::Cryptography::RandomNumberGenerator* get_Rng()
@@ -156,19 +276,39 @@ namespace Mono::Math
 			return ((::Mono::Math::BigInteger*(*)(::System::Int32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_GENERATERANDOM_1_OFFSET))(bits);
 		}
 
+		::System::Void Randomize(::System::Security::Cryptography::RandomNumberGenerator* rng)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::RandomNumberGenerator*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_RANDOMIZE_OFFSET))(this, rng);
+		}
+
+		::System::Void Randomize_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_RANDOMIZE_1_OFFSET))(this);
+		}
+
 		::System::Int32 BitCount()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_BITCOUNT_OFFSET))(this);
 		}
 
-		::System::Boolean TestBit(::System::Int32 bitNum)
+		::System::Boolean TestBit(::System::UInt32 bitNum)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_TESTBIT_OFFSET))(this, bitNum);
+			return ((::System::Boolean(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_TESTBIT_OFFSET))(this, bitNum);
+		}
+
+		::System::Boolean TestBit_1(::System::Int32 bitNum)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_TESTBIT_1_OFFSET))(this, bitNum);
 		}
 
 		::System::Void SetBit(::System::UInt32 bitNum)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_SETBIT_OFFSET))(this, bitNum);
+		}
+
+		::System::Void ClearBit(::System::UInt32 bitNum)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_CLEARBIT_OFFSET))(this, bitNum);
 		}
 
 		::System::Void SetBit_1(::System::UInt32 bitNum, ::System::Boolean value)
@@ -226,6 +366,11 @@ namespace Mono::Math
 			return ((::System::Boolean(*)(::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_OP_LESSTHANOREQUAL_OFFSET))(bi1, bi2);
 		}
 
+		::Mono::Math::BigInteger_Sign Compare(::Mono::Math::BigInteger* bi)
+		{
+			return ((::Mono::Math::BigInteger_Sign(*)(::PVOID, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_COMPARE_OFFSET))(this, bi);
+		}
+
 		::System::String* ToString(::System::UInt32 radix)
 		{
 			return ((::System::String*(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_TOSTRING_OFFSET))(this, radix);
@@ -239,6 +384,11 @@ namespace Mono::Math
 		::System::Void Normalize()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_NORMALIZE_OFFSET))(this);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_CLEAR_OFFSET))(this);
 		}
 
 		::System::Int32 GetHashCode()
@@ -256,9 +406,29 @@ namespace Mono::Math
 			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_EQUALS_OFFSET))(this, o);
 		}
 
+		::Mono::Math::BigInteger* GCD(::Mono::Math::BigInteger* bi)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::PVOID, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_GCD_OFFSET))(this, bi);
+		}
+
 		::Mono::Math::BigInteger* ModInverse(::Mono::Math::BigInteger* modulus)
 		{
 			return ((::Mono::Math::BigInteger*(*)(::PVOID, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_MODINVERSE_OFFSET))(this, modulus);
+		}
+
+		::Mono::Math::BigInteger* ModPow(::Mono::Math::BigInteger* exp, ::Mono::Math::BigInteger* n)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::PVOID, ::Mono::Math::BigInteger*, ::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_MODPOW_OFFSET))(this, exp, n);
+		}
+
+		::System::Boolean IsProbablePrime()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_ISPROBABLEPRIME_OFFSET))(this);
+		}
+
+		static ::Mono::Math::BigInteger* NextHighestPrime(::Mono::Math::BigInteger* bi)
+		{
+			return ((::Mono::Math::BigInteger*(*)(::Mono::Math::BigInteger*))((::PBYTE)hIl2Cpp + MONO_MATH_BIGINTEGER_NEXTHIGHESTPRIME_OFFSET))(bi);
 		}
 
 		static ::Mono::Math::BigInteger* GeneratePseudoPrime(::System::Int32 bits)

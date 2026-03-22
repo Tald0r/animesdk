@@ -1,0 +1,67 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_29C0F9DD2D79B68D.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_2C434B932ED0B61F;
+namespace MoleMole { class CameraShotData; }
+namespace Nap::NapECS { class EcsWorld; }
+
+#define CLASS_1_5761BE02FBFF6647_ISCONTEXTOF_OFFSET UNITYSDK_OFFSET(0xB015800)
+#define CLASS_1_5761BE02FBFF6647_METHOD_1_24748FC20F375725_OFFSET UNITYSDK_OFFSET(0xB0157E0)
+#define CLASS_1_5761BE02FBFF6647_METHOD_1_696EE96594C1A185_OFFSET UNITYSDK_OFFSET(0xB0158A0)
+#define CLASS_1_5761BE02FBFF6647_METHOD_1_7F06BEE5C5549F06_OFFSET UNITYSDK_OFFSET(0xB015880)
+#define CLASS_1_5761BE02FBFF6647_METHOD_1_8ACFEA385784382E_OFFSET UNITYSDK_OFFSET(0xB0157F0)
+#define CLASS_1_5761BE02FBFF6647_METHOD_1_8C8625211DA811AE_OFFSET UNITYSDK_OFFSET(0xB015890)
+#define CLASS_1_5761BE02FBFF6647_METHOD_1_9FA509D5D798098D_OFFSET UNITYSDK_OFFSET(0xB0157D0)
+#define CLASS_1_5761BE02FBFF6647__CTOR_OFFSET UNITYSDK_OFFSET(0xB015870)
+
+inline static constexpr unsigned int Class_1_5761BE02FBFF6647_TypeDefinitionIndex = 36568;
+
+class Class_1_5761BE02FBFF6647 : public ::System::Object
+{
+public:
+	::Nap::NapECS::EcsWorld* Field_1_2; // 0x10
+	::MoleMole::CameraShotData* Field_1_0; // 0x18
+	::Class_1_2C434B932ED0B61F* Field_1_1; // 0x20
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_5761BE02FBFF6647__CTOR_OFFSET))(this);
+	}
+
+	::MoleMole::CameraShotData* Method_1_9FA509D5D798098D()
+	{
+		return ((::MoleMole::CameraShotData*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_5761BE02FBFF6647_METHOD_1_9FA509D5D798098D_OFFSET))(this);
+	}
+
+	::Class_1_2C434B932ED0B61F* Method_1_24748FC20F375725()
+	{
+		return ((::Class_1_2C434B932ED0B61F*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_5761BE02FBFF6647_METHOD_1_24748FC20F375725_OFFSET))(this);
+	}
+
+	::Nap::NapECS::EcsWorld* Method_1_8ACFEA385784382E()
+	{
+		return ((::Nap::NapECS::EcsWorld*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_5761BE02FBFF6647_METHOD_1_8ACFEA385784382E_OFFSET))(this);
+	}
+
+	::System::Boolean IsContextOf(::Enum_3_29C0F9DD2D79B68D a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Enum_3_29C0F9DD2D79B68D))((::PBYTE)hIl2Cpp + CLASS_1_5761BE02FBFF6647_ISCONTEXTOF_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_7F06BEE5C5549F06(::MoleMole::CameraShotData* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::CameraShotData*))((::PBYTE)hIl2Cpp + CLASS_1_5761BE02FBFF6647_METHOD_1_7F06BEE5C5549F06_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_8C8625211DA811AE(::Class_1_2C434B932ED0B61F* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_2C434B932ED0B61F*))((::PBYTE)hIl2Cpp + CLASS_1_5761BE02FBFF6647_METHOD_1_8C8625211DA811AE_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_696EE96594C1A185(::Nap::NapECS::EcsWorld* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Nap::NapECS::EcsWorld*))((::PBYTE)hIl2Cpp + CLASS_1_5761BE02FBFF6647_METHOD_1_696EE96594C1A185_OFFSET))(this, a1);
+	}
+};

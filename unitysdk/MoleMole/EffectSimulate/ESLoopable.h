@@ -1,0 +1,127 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_6D746669983E39EA.h"
+#include "unitysdk/Enum_3_9A479116B4881EB0.h"
+#include "unitysdk/MoleMole/EffectSimulate/IEffectSimulate.h"
+
+namespace MoleMole::EffectSimulate { class IEvaluateCurve_Class_1_3ABCC41A05D06339_1; }
+namespace Sirenix::OdinInspector { template <typename T> class ValueDropdownList_1; }
+namespace System { class String; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0xF193A90)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_391A84BCD9F51317_2_OFFSET UNITYSDK_OFFSET(0xF193C40)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0xF193A30)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_9B4A6433DF73D965_OFFSET UNITYSDK_OFFSET(0xF193EA0)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_A36150C5DCC8409E_1_OFFSET UNITYSDK_OFFSET(0xF193B60)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_A36150C5DCC8409E_2_OFFSET UNITYSDK_OFFSET(0xF193BD0)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_A36150C5DCC8409E_OFFSET UNITYSDK_OFFSET(0xF193AF0)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_ADF45F4E823CC047_OFFSET UNITYSDK_OFFSET(0xF192B00)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_AF82B7322761F5CD_OFFSET UNITYSDK_OFFSET(0xF194330)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_B7F8E0B4AF22DEA3_OFFSET UNITYSDK_OFFSET(0xF193CA0)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_C433AF37CE9D6E5B_OFFSET UNITYSDK_OFFSET(0xF194460)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xF194390)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_CA373AA1C7054598_2_OFFSET UNITYSDK_OFFSET(0xF194400)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xF18D600)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE__CCTOR_OFFSET UNITYSDK_OFFSET(0xF194170)
+#define MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE__CTOR_OFFSET UNITYSDK_OFFSET(0xF193780)
+
+namespace MoleMole::EffectSimulate
+{
+	inline static constexpr unsigned int ESLoopable_TypeDefinitionIndex = 45610;
+
+	class ESLoopable : public ::MoleMole::EffectSimulate::IEffectSimulate
+	{
+	public:
+		static ::Sirenix::OdinInspector::ValueDropdownList_1<::Enum_3_6D746669983E39EA>** StaticGet_OnCurveEditModeValueDropDown()
+		{
+			return (::Sirenix::OdinInspector::ValueDropdownList_1<::Enum_3_6D746669983E39EA>**)Il2CppClass::FromTypeDefinitionIndex(ESLoopable_TypeDefinitionIndex)->GetStaticField(0x423C0);
+		}
+		// static const ::System::Int32 ORDER_LEAP_VAL = 0xA; // 0x0
+		// static const ::System::Int32 COMMON_MAX_DRAW_ORDER = 0xA; // 0x0
+		// static const ::System::String* PHASE_BUTTON_GROUP_NAME; // 0x0
+		::Enum_3_6D746669983E39EA curveEditMode; // 0x48
+		::Enum_3_9A479116B4881EB0 curveShowMode; // 0x4C
+		::MoleMole::EffectSimulate::IEvaluateCurve_Class_1_3ABCC41A05D06339_1* m_stFadeOutCtx; // 0x50
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE__CCTOR_OFFSET))();
+		}
+
+		::System::Boolean Method_2_391A84BCD9F51317()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_391A84BCD9F51317_OFFSET))(this);
+		}
+
+		::System::Void Method_2_CA373AA1C7054598()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+		}
+
+		::System::Boolean Method_2_391A84BCD9F51317_1()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_391A84BCD9F51317_1_OFFSET))(this);
+		}
+
+		::System::Single Method_2_A36150C5DCC8409E()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_A36150C5DCC8409E_OFFSET))(this);
+		}
+
+		::System::Single Method_2_A36150C5DCC8409E_1()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_A36150C5DCC8409E_1_OFFSET))(this);
+		}
+
+		::System::Single Method_2_A36150C5DCC8409E_2()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_A36150C5DCC8409E_2_OFFSET))(this);
+		}
+
+		::System::Boolean Method_2_391A84BCD9F51317_2()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_391A84BCD9F51317_2_OFFSET))(this);
+		}
+
+		::System::Void Method_2_ADF45F4E823CC047(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_ADF45F4E823CC047_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_2_B7F8E0B4AF22DEA3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_B7F8E0B4AF22DEA3_OFFSET))(this);
+		}
+
+		::System::Single Method_2_9B4A6433DF73D965(::System::Single& a1, ::System::Single& a2)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single&, ::System::Single&))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_9B4A6433DF73D965_OFFSET))(this, a1, a2);
+		}
+
+		::MoleMole::EffectSimulate::IEvaluateCurve_Class_1_3ABCC41A05D06339_1* Method_2_AF82B7322761F5CD()
+		{
+			return ((::MoleMole::EffectSimulate::IEvaluateCurve_Class_1_3ABCC41A05D06339_1*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_AF82B7322761F5CD_OFFSET))(this);
+		}
+
+		::System::Void Method_2_CA373AA1C7054598_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_CA373AA1C7054598_1_OFFSET))(this);
+		}
+
+		::System::Void Method_2_CA373AA1C7054598_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_CA373AA1C7054598_2_OFFSET))(this);
+		}
+
+		::System::Void Method_2_C433AF37CE9D6E5B(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLOOPABLE_METHOD_2_C433AF37CE9D6E5B_OFFSET))(this, a1);
+		}
+	};
+}

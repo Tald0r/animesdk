@@ -5,24 +5,25 @@
 namespace MiHoYo::SDK { class ThreadPoolQueue; }
 namespace System { class String; }
 
-#define MIHOYO_SDK_THREADPOOLSERVICE_GETCONCURRENTQUEUE_OFFSET UNITYSDK_OFFSET(0x8251800)
-#define MIHOYO_SDK_THREADPOOLSERVICE_GETQUEUE_OFFSET UNITYSDK_OFFSET(0x8255ED0)
-#define MIHOYO_SDK_THREADPOOLSERVICE_GETREPORTDATAQUEUE_OFFSET UNITYSDK_OFFSET(0x8255C70)
-#define MIHOYO_SDK_THREADPOOLSERVICE_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x8251780)
-#define MIHOYO_SDK_THREADPOOLSERVICE_SET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x8255C30)
-#define MIHOYO_SDK_THREADPOOLSERVICE_STOPREPORTDATAQUEUE_OFFSET UNITYSDK_OFFSET(0x8255D90)
-#define MIHOYO_SDK_THREADPOOLSERVICE__CTOR_OFFSET UNITYSDK_OFFSET(0x8255C10)
+#define MIHOYO_SDK_THREADPOOLSERVICE_GETCONCURRENTQUEUE_OFFSET UNITYSDK_OFFSET(0x190D5730)
+#define MIHOYO_SDK_THREADPOOLSERVICE_GETQUEUE_OFFSET UNITYSDK_OFFSET(0x190D56C0)
+#define MIHOYO_SDK_THREADPOOLSERVICE_GETREPORTDATAQUEUE_OFFSET UNITYSDK_OFFSET(0x190D54E0)
+#define MIHOYO_SDK_THREADPOOLSERVICE_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x190D5400)
+#define MIHOYO_SDK_THREADPOOLSERVICE_SET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x190D54A0)
+#define MIHOYO_SDK_THREADPOOLSERVICE_STOPREPORTDATAQUEUE_OFFSET UNITYSDK_OFFSET(0x190D5600)
+#define MIHOYO_SDK_THREADPOOLSERVICE__CCTOR_OFFSET UNITYSDK_OFFSET(0x190D57B0)
+#define MIHOYO_SDK_THREADPOOLSERVICE__CTOR_OFFSET UNITYSDK_OFFSET(0x190D5480)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int ThreadPoolService_TypeDefinitionIndex = 36308;
+	inline static constexpr unsigned int ThreadPoolService_TypeDefinitionIndex = 33794;
 
 	class ThreadPoolService : public ::System::Object
 	{
 	public:
 		static ::MiHoYo::SDK::ThreadPoolService** StaticGet_sm_instance()
 		{
-			return (::MiHoYo::SDK::ThreadPoolService**)Il2CppClass::FromTypeDefinitionIndex(ThreadPoolService_TypeDefinitionIndex)->GetStaticField(0x9BA0);
+			return (::MiHoYo::SDK::ThreadPoolService**)Il2CppClass::FromTypeDefinitionIndex(ThreadPoolService_TypeDefinitionIndex)->GetStaticField(0x24470);
 		}
 		::MiHoYo::SDK::ThreadPoolQueue* m_reportDataQueue; // 0x10
 		::System::Object* m_lock; // 0x18
@@ -30,6 +31,11 @@ namespace MiHoYo::SDK
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_THREADPOOLSERVICE__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MIHOYO_SDK_THREADPOOLSERVICE__CCTOR_OFFSET))();
 		}
 
 		static ::MiHoYo::SDK::ThreadPoolService* get_Instance()

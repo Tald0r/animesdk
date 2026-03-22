@@ -1,0 +1,76 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/Singleton_1.h"
+#include "unitysdk/NapLodController_NapLODLevel.h"
+
+class NapLodController;
+namespace System::Collections::Generic { template <typename T> class HashSet_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class MdbComponent; }
+
+#define NAPLODMANAGER_APPLYAVATARBODYLEVEL_OFFSET UNITYSDK_OFFSET(0x7FC19F0)
+#define NAPLODMANAGER_APPLYAVATARFACELEVEL_OFFSET UNITYSDK_OFFSET(0x7FC1D30)
+#define NAPLODMANAGER_GET_AVATARBODYLEVEL_OFFSET UNITYSDK_OFFSET(0x7FC1950)
+#define NAPLODMANAGER_GET_AVATARFACELEVEL_OFFSET UNITYSDK_OFFSET(0x7FC1C90)
+#define NAPLODMANAGER_REGISTERAVATARLODCONTROLLER_OFFSET UNITYSDK_OFFSET(0x7FC1F10)
+#define NAPLODMANAGER_SET_AVATARBODYLEVEL_OFFSET UNITYSDK_OFFSET(0x7FC1960)
+#define NAPLODMANAGER_SET_AVATARFACELEVEL_OFFSET UNITYSDK_OFFSET(0x7FC1CA0)
+#define NAPLODMANAGER_UNREGISTERAVATARLODCONTROLLER_OFFSET UNITYSDK_OFFSET(0x7FC20F0)
+#define NAPLODMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x7FC2270)
+
+inline static constexpr unsigned int NapLodManager_TypeDefinitionIndex = 73047;
+
+class NapLodManager : public ::Foundation::Singleton_1<::NapLodManager*>
+{
+public:
+	::System::Collections::Generic::List_1<::NapLodController*>* allAvatarFaceControllers; // 0x10
+	::System::Collections::Generic::List_1<::NapLodController*>* allAvatarBodyControllers; // 0x18
+	::System::Collections::Generic::HashSet_1<::UnityEngine::MdbComponent*>* allMdb; // 0x20
+	::NapLodController_NapLODLevel avatarFaceLevel; // 0x28
+	::NapLodController_NapLODLevel avatarBodyLevel; // 0x2C
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPLODMANAGER__CTOR_OFFSET))(this);
+	}
+
+	::NapLodController_NapLODLevel get_AvatarBodyLevel()
+	{
+		return ((::NapLodController_NapLODLevel(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPLODMANAGER_GET_AVATARBODYLEVEL_OFFSET))(this);
+	}
+
+	::System::Void set_AvatarBodyLevel(::NapLodController_NapLODLevel value)
+	{
+		return ((::System::Void(*)(::PVOID, ::NapLodController_NapLODLevel))((::PBYTE)hIl2Cpp + NAPLODMANAGER_SET_AVATARBODYLEVEL_OFFSET))(this, value);
+	}
+
+	::NapLodController_NapLODLevel get_AvatarFaceLevel()
+	{
+		return ((::NapLodController_NapLODLevel(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPLODMANAGER_GET_AVATARFACELEVEL_OFFSET))(this);
+	}
+
+	::System::Void set_AvatarFaceLevel(::NapLodController_NapLODLevel value)
+	{
+		return ((::System::Void(*)(::PVOID, ::NapLodController_NapLODLevel))((::PBYTE)hIl2Cpp + NAPLODMANAGER_SET_AVATARFACELEVEL_OFFSET))(this, value);
+	}
+
+	::System::Void ApplyAvatarBodyLevel()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPLODMANAGER_APPLYAVATARBODYLEVEL_OFFSET))(this);
+	}
+
+	::System::Void ApplyAvatarFaceLevel()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPLODMANAGER_APPLYAVATARFACELEVEL_OFFSET))(this);
+	}
+
+	::System::Void RegisterAvatarLodController(::NapLodController* controller)
+	{
+		return ((::System::Void(*)(::PVOID, ::NapLodController*))((::PBYTE)hIl2Cpp + NAPLODMANAGER_REGISTERAVATARLODCONTROLLER_OFFSET))(this, controller);
+	}
+
+	::System::Void UnregisterAvatarLodController(::NapLodController* controller)
+	{
+		return ((::System::Void(*)(::PVOID, ::NapLodController*))((::PBYTE)hIl2Cpp + NAPLODMANAGER_UNREGISTERAVATARLODCONTROLLER_OFFSET))(this, controller);
+	}
+};

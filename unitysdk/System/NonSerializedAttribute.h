@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SYSTEM_NONSERIALIZEDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x15CA28C0)
+#define SYSTEM_NONSERIALIZEDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x17FD4250)
 
 namespace System
 {
-	inline static constexpr unsigned int NonSerializedAttribute_TypeDefinitionIndex = 301;
+	inline static constexpr unsigned int NonSerializedAttribute_TypeDefinitionIndex = 291;
 
 	class NonSerializedAttribute : public ::System::Attribute
 	{

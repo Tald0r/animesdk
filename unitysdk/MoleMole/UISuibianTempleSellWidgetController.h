@@ -1,0 +1,530 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTaskVoid.h"
+#include "unitysdk/Enum_3_21ABFF850B7EB4AB.h"
+#include "unitysdk/Enum_3_7287219DC64CD06D.h"
+#include "unitysdk/Enum_3_8252736F97D4CFA3_1.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UISuibianTempleSimWidgetController.h"
+#include "unitysdk/Struct_2_110646609982E7A8.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_1_72108342D7142693_Class_1_D8C08C94211C11A1;
+class Class_2_3060898443690D21;
+class Class_2_79AE422BA06F6D26_37;
+namespace MoleMole { class MonoUIMoverMode; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralHeadRowWidgetController; }
+namespace MoleMole { class UISuibianTempleCoinWidgetController; }
+namespace MoleMole { class UISuibianTempleSellDeskRowWidgetController; }
+namespace MoleMole { class UISuibianTempleSellWidgetController_ViewModel; }
+namespace MoleMole { class UISuibianTempleSimWidgetContext; }
+namespace Spine::Unity { class SkeletonGraphic; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace System::Threading { class CancellationTokenSource; }
+namespace UnityEngine::EventSystems { class PointerEventData; }
+
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ADDPOP_OFFSET UNITYSDK_OFFSET(0xAC55480)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ADDTEMPLATEPOP_OFFSET UNITYSDK_OFFSET(0xAC55540)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_BINDTIPBTN_OFFSET UNITYSDK_OFFSET(0xAC4F4E0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_CREATEPOPDATA_OFFSET UNITYSDK_OFFSET(0xAC54CB0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_FINISHCURRENTPOP_OFFSET UNITYSDK_OFFSET(0xAC54750)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_GETORCREATECOINCTRL_OFFSET UNITYSDK_OFFSET(0xAC53950)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_GET_FADEANIMATIONNAME_OFFSET UNITYSDK_OFFSET(0xAC4E9E0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_GET_FADEOUTTIME_OFFSET UNITYSDK_OFFSET(0xAC4EA20)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_GET_TYPE_OFFSET UNITYSDK_OFFSET(0xAC4E6C0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xAC4F150)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_INITDESK_OFFSET UNITYSDK_OFFSET(0x71D6CE0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_INITPOP_OFFSET UNITYSDK_OFFSET(0xAC4F830)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONCLICKHEAD_OFFSET UNITYSDK_OFFSET(0x71D6220)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAC4EB20)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONDRAG_OFFSET UNITYSDK_OFFSET(0xAC52040)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONENTERDETAIL_OFFSET UNITYSDK_OFFSET(0xAC4E6D0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONEXITDETAIL_OFFSET UNITYSDK_OFFSET(0xAC4E800)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xAC504E0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONSELECTBUDDY_OFFSET UNITYSDK_OFFSET(0x71D6550)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xAC505E0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONTAKESMALLCHANGE_OFFSET UNITYSDK_OFFSET(0xAC53AD0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONTEMPLEFADEINFINISHED_OFFSET UNITYSDK_OFFSET(0xAC50880)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONTEMPLESELLBUBBLEREFRESH_OFFSET UNITYSDK_OFFSET(0xAC545F0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xAC50570)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAC4F9A0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAC4F200)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAC4FB60)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_RECYCLEALLCOINCTRL_OFFSET UNITYSDK_OFFSET(0xAC53E30)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_RECYCLECOINCTRL_OFFSET UNITYSDK_OFFSET(0xAC53C90)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_RECYCLESMALLCHANGE_OFFSET UNITYSDK_OFFSET(0xAC53B60)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHBUDDYENERGYWITHTALENT_OFFSET UNITYSDK_OFFSET(0xAC52D90)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHBUDDYENERGY_OFFSET UNITYSDK_OFFSET(0xAC527C0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHBUDDYSPINE_OFFSET UNITYSDK_OFFSET(0xAC50940)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHBUDDY_OFFSET UNITYSDK_OFFSET(0xAC52360)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHCURRENTPOP_OFFSET UNITYSDK_OFFSET(0xAC51E90)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHDESK_OFFSET UNITYSDK_OFFSET(0xAC50140)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHSMALLCHANGELIST_OFFSET UNITYSDK_OFFSET(0xAC50D20)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHTAKESMALLCHANGETIMES_OFFSET UNITYSDK_OFFSET(0xAC53130)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_RESET_OFFSET UNITYSDK_OFFSET(0x71D6E10)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_RESTOREPARAS_OFFSET UNITYSDK_OFFSET(0x71D6E70)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SETBUDDYSTATEASYNC_OFFSET UNITYSDK_OFFSET(0xAC52720)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SETPOPINTERACTABLE_OFFSET UNITYSDK_OFFSET(0xAC55830)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SETSIMSELLER_OFFSET UNITYSDK_OFFSET(0x71D6AC0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SHOWCOIN_OFFSET UNITYSDK_OFFSET(0xAC534B0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SHOWPOPVIEW_OFFSET UNITYSDK_OFFSET(0xAC55AD0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SHOWSMALLCHANGETIPS_OFFSET UNITYSDK_OFFSET(0xAC540A0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_STOPSMALLCHANGETIPSHANDLER_OFFSET UNITYSDK_OFFSET(0xAC54200)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_TAKEALLSMALLCHANGE_OFFSET UNITYSDK_OFFSET(0xAC52240)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_TRYTRIGGERNEWBIE_OFFSET UNITYSDK_OFFSET(0xAC506B0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_UPDATEPOP_OFFSET UNITYSDK_OFFSET(0xAC54430)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xAC543C0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__BINDTIPBTN_B__28_0_OFFSET UNITYSDK_OFFSET(0x71D7140)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__BINDTIPBTN_B__28_1_OFFSET UNITYSDK_OFFSET(0x71D7150)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x71D6ED0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__FINISHCURRENTPOP_B__66_0_OFFSET UNITYSDK_OFFSET(0x71D7250)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__FINISHCURRENTPOP_B__66_1_OFFSET UNITYSDK_OFFSET(0x71D72A0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__FINISHCURRENTPOP_B__66_2_OFFSET UNITYSDK_OFFSET(0x71D72F0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__INITPOP_B__62_0_OFFSET UNITYSDK_OFFSET(0x71D7240)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__ONUIINIT_B__27_0_OFFSET UNITYSDK_OFFSET(0x71D7130)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__REFRESHCURRENTPOP_B__35_0_OFFSET UNITYSDK_OFFSET(0x71D7160)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__REFRESHSMALLCHANGELIST_B__46_1_OFFSET UNITYSDK_OFFSET(0x71D71D0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__SHOWPOPVIEW_B__69_0_OFFSET UNITYSDK_OFFSET(0x71D7340)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__SHOWPOPVIEW_B__69_1_OFFSET UNITYSDK_OFFSET(0x71D73B0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__SHOWPOPVIEW_B__69_2_OFFSET UNITYSDK_OFFSET(0x71D7410)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__SHOWSMALLCHANGETIPS_B__53_0_OFFSET UNITYSDK_OFFSET(0x71D7210)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0x71D7470)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x71D74D0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONENTERDETAIL_OFFSET UNITYSDK_OFFSET(0x71D7540)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONEXITDETAIL_OFFSET UNITYSDK_OFFSET(0x71D75A0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x71D7600)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x71D7630)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONTEMPLEFADEINFINISHED_OFFSET UNITYSDK_OFFSET(0x71D76A0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x71D7700)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x71D7710)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x71D7790)
+#define MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x71D77F0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISuibianTempleSellWidgetController_TypeDefinitionIndex = 40473;
+
+	class UISuibianTempleSellWidgetController : public ::MoleMole::UISuibianTempleSimWidgetController
+	{
+	public:
+		// static const ::System::String* BUDDY_FADE_IN_ANIM_NAME; // 0x0
+		// static const ::System::String* BUDDY_FADE_OUT_ANIM_NAME; // 0x0
+		// static const ::System::String* SuibianPopPanelPop01FadeIn; // 0x0
+		// static const ::System::String* SuibianPopPanelPop01FadeOut; // 0x0
+		// static const ::System::String* SuibianPopPanelPop01Loop; // 0x0
+		// static const ::System::String* SuibianPopPanelPop02FadeIn; // 0x0
+		// static const ::System::String* SuibianPopPanelPop02FadeOut; // 0x0
+		// static const ::System::String* SuibianPopPanelPop02Loop; // 0x0
+		// static const ::System::String* SuibianPopPanelPop02TextFadein; // 0x0
+		// static const ::System::String* SuibianPopPanelPop02TextFadeOut; // 0x0
+		::Class_2_79AE422BA06F6D26_37* _view; // 0x2C0
+		::MoleMole::UISuibianTempleSellWidgetController_ViewModel* _viewModel; // 0x2C8
+		::MoleMole::UISuibianTempleSimWidgetContext* _context; // 0x2D0
+		::System::Collections::Generic::List_1<::MoleMole::UISuibianTempleSellDeskRowWidgetController*>* _sellDeskCtrlList; // 0x2D8
+		::MoleMole::UIGeneralHeadRowWidgetController* _generalHeadRow; // 0x2E0
+		::Class_1_48D56DACBE4271BC* _syncHelper; // 0x2E8
+		::System::Collections::Generic::List_1<::MoleMole::UISuibianTempleCoinWidgetController*>* _coinCtrlPool; // 0x2F0
+		::System::Collections::Generic::Dictionary_2<::System::UInt32, ::MoleMole::UISuibianTempleCoinWidgetController*>* _showCoinCtrlDict; // 0x2F8
+		::System::Collections::Generic::List_1<::MoleMole::UISuibianTempleCoinWidgetController*>* _showCoinCtrlList; // 0x300
+		::System::Int32 _coinDisplayMax; // 0x308
+		::Spine::Unity::SkeletonGraphic* _buddySpineIdle; // 0x310
+		::Spine::Unity::SkeletonGraphic* _buddySpineExhaustion; // 0x318
+		::Foundation::Coroutine::CoroutineHandle _smallChangeTipsHandler; // 0x320
+		::System::Boolean firstInitPop; // 0x324
+		::Foundation::Coroutine::CoroutineHandle _nextSmallChangeHandler; // 0x328
+		::Enum_3_21ABFF850B7EB4AB _sellBuddyState; // 0x32C
+		::MoleMole::MonoUIMoverMode* _buddyMoverMode; // 0x330
+		::Enum_3_8252736F97D4CFA3_1 _lastBuddyPingPongDirection; // 0x338
+		::System::Threading::CancellationTokenSource* _buddyStateCancelSource; // 0x340
+		::Struct_2_110646609982E7A8 currentPop; // 0x348
+		::System::Collections::Generic::List_1<::Struct_2_110646609982E7A8>* pops; // 0x370
+		::System::Boolean isAnimation; // 0x378
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_7287219DC64CD06D get_Type()
+		{
+			return ((::Enum_3_7287219DC64CD06D(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_GET_TYPE_OFFSET))(this);
+		}
+
+		::System::Void OnEnterDetail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONENTERDETAIL_OFFSET))(this);
+		}
+
+		::System::Void OnExitDetail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONEXITDETAIL_OFFSET))(this);
+		}
+
+		::System::String* get_FadeAnimationName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_GET_FADEANIMATIONNAME_OFFSET))(this);
+		}
+
+		::System::Single get_FadeOutTime()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_GET_FADEOUTTIME_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void BindTipBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_BINDTIPBTN_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnTempleFadeInFinished()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONTEMPLEFADEINFINISHED_OFFSET))(this);
+		}
+
+		::System::Void RefreshCurrentPop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHCURRENTPOP_OFFSET))(this);
+		}
+
+		::System::Void OnDrag(::UnityEngine::EventSystems::PointerEventData* eventData, ::UnityEngine::Vector3 worldPointDelta)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONDRAG_OFFSET))(this, eventData, worldPointDelta);
+		}
+
+		::System::Void TakeAllSmallChange()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_TAKEALLSMALLCHANGE_OFFSET))(this);
+		}
+
+		::System::Void TryTriggerNewbie()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_TRYTRIGGERNEWBIE_OFFSET))(this);
+		}
+
+		::System::Void RefreshDesk()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHDESK_OFFSET))(this);
+		}
+
+		::System::Void RefreshBuddy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHBUDDY_OFFSET))(this);
+		}
+
+		::System::Void RefreshBuddySpine()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHBUDDYSPINE_OFFSET))(this);
+		}
+
+		::System::Void RefreshBuddyEnergy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHBUDDYENERGY_OFFSET))(this);
+		}
+
+		::System::Void RefreshBuddyEnergyWithTalent()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHBUDDYENERGYWITHTALENT_OFFSET))(this);
+		}
+
+		::System::Void RefreshTakeSmallChangeTimes()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHTAKESMALLCHANGETIMES_OFFSET))(this);
+		}
+
+		::System::Void RefreshSmallChangeList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_REFRESHSMALLCHANGELIST_OFFSET))(this);
+		}
+
+		::System::Void ShowCoin(::Class_2_3060898443690D21* smallChange)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_3060898443690D21*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SHOWCOIN_OFFSET))(this, smallChange);
+		}
+
+		::System::Void OnTakeSmallChange(::MoleMole::UISuibianTempleCoinWidgetController* ctrl)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UISuibianTempleCoinWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONTAKESMALLCHANGE_OFFSET))(this, ctrl);
+		}
+
+		::MoleMole::UISuibianTempleCoinWidgetController* GetOrCreateCoinCtrl()
+		{
+			return ((::MoleMole::UISuibianTempleCoinWidgetController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_GETORCREATECOINCTRL_OFFSET))(this);
+		}
+
+		::System::Void RecycleSmallChange(::System::UInt32 uid)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_RECYCLESMALLCHANGE_OFFSET))(this, uid);
+		}
+
+		::System::Void RecycleCoinCtrl(::MoleMole::UISuibianTempleCoinWidgetController* ctrl)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UISuibianTempleCoinWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_RECYCLECOINCTRL_OFFSET))(this, ctrl);
+		}
+
+		::System::Void RecycleAllCoinCtrl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_RECYCLEALLCOINCTRL_OFFSET))(this);
+		}
+
+		::System::Void ShowSmallChangeTips(::System::Int32 smallChangeID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SHOWSMALLCHANGETIPS_OFFSET))(this, smallChangeID);
+		}
+
+		::System::Void StopSmallChangeTipsHandler()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_STOPSMALLCHANGETIPSHANDLER_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid SetBuddyStateAsync(::Enum_3_21ABFF850B7EB4AB state)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::Enum_3_21ABFF850B7EB4AB))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SETBUDDYSTATEASYNC_OFFSET))(this, state);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnTempleSellBubbleRefresh(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONTEMPLESELLBUBBLEREFRESH_OFFSET))(this, args);
+		}
+
+		::System::Void InitPop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_INITPOP_OFFSET))(this);
+		}
+
+		::System::Void CreatePopData(::System::Boolean changeCurrentPopData)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_CREATEPOPDATA_OFFSET))(this, changeCurrentPopData);
+		}
+
+		::System::Void AddTemplatePop(::System::Int32 templateID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ADDTEMPLATEPOP_OFFSET))(this, templateID);
+		}
+
+		::System::Void AddPop(::Struct_2_110646609982E7A8 data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_110646609982E7A8))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ADDPOP_OFFSET))(this, data);
+		}
+
+		::System::Void FinishCurrentPop(::System::Boolean send)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_FINISHCURRENTPOP_OFFSET))(this, send);
+		}
+
+		::System::Void SetPopInteractable(::System::Boolean interactable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SETPOPINTERACTABLE_OFFSET))(this, interactable);
+		}
+
+		::System::Void UpdatePop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_UPDATEPOP_OFFSET))(this);
+		}
+
+		::System::Void ShowPopView(::Struct_2_110646609982E7A8 data, ::System::Boolean fromText)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_110646609982E7A8, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SHOWPOPVIEW_OFFSET))(this, data, fromText);
+		}
+
+		::System::Void OnClickHead(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONCLICKHEAD_OFFSET))(this, obj);
+		}
+
+		::System::Void OnSelectBuddy(::System::UInt32 buddyUid)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_ONSELECTBUDDY_OFFSET))(this, buddyUid);
+		}
+
+		::System::Void SetSimSeller(::System::UInt32 buddyUid)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_SETSIMSELLER_OFFSET))(this, buddyUid);
+		}
+
+		::System::Void InitDesk()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_INITDESK_OFFSET))(this);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_RESET_OFFSET))(this);
+		}
+
+		::Class_1_72108342D7142693_Class_1_D8C08C94211C11A1* RestoreParas()
+		{
+			return ((::Class_1_72108342D7142693_Class_1_D8C08C94211C11A1*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER_RESTOREPARAS_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__27_0(::System::EventArgs* _)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__ONUIINIT_B__27_0_OFFSET))(this, _);
+		}
+
+		::System::Void _BindTipBtn_b__28_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__BINDTIPBTN_B__28_0_OFFSET))(this);
+		}
+
+		::System::Void _BindTipBtn_b__28_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__BINDTIPBTN_B__28_1_OFFSET))(this);
+		}
+
+		::System::Void _RefreshCurrentPop_b__35_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__REFRESHCURRENTPOP_B__35_0_OFFSET))(this);
+		}
+
+		::System::Void _RefreshSmallChangeList_b__46_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__REFRESHSMALLCHANGELIST_B__46_1_OFFSET))(this);
+		}
+
+		::System::Void _ShowSmallChangeTips_b__53_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__SHOWSMALLCHANGETIPS_B__53_0_OFFSET))(this);
+		}
+
+		::System::Void _InitPop_b__62_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__INITPOP_B__62_0_OFFSET))(this);
+		}
+
+		::System::Void _FinishCurrentPop_b__66_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__FINISHCURRENTPOP_B__66_0_OFFSET))(this);
+		}
+
+		::System::Void _FinishCurrentPop_b__66_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__FINISHCURRENTPOP_B__66_1_OFFSET))(this);
+		}
+
+		::System::Void _FinishCurrentPop_b__66_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__FINISHCURRENTPOP_B__66_2_OFFSET))(this);
+		}
+
+		::System::Void _ShowPopView_b__69_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__SHOWPOPVIEW_B__69_0_OFFSET))(this);
+		}
+
+		::System::Void _ShowPopView_b__69_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__SHOWPOPVIEW_B__69_1_OFFSET))(this);
+		}
+
+		::System::Void _ShowPopView_b__69_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER__SHOWPOPVIEW_B__69_2_OFFSET))(this);
+		}
+
+		::System::Void __base_InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnEnterDetail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONENTERDETAIL_OFFSET))(this);
+		}
+
+		::System::Void __base_OnExitDetail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONEXITDETAIL_OFFSET))(this);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnTempleFadeInFinished()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONTEMPLEFADEINFINISHED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLESELLWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MONO_GLOBALIZATION_UNICODE_SIMPLECOLLATOR_PREVIOUSINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1FFD4D0)
+#define MONO_GLOBALIZATION_UNICODE_SIMPLECOLLATOR_PREVIOUSINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x8B1170)
 
 namespace Mono::Globalization::Unicode
 {
-	inline static constexpr unsigned int SimpleCollator_PreviousInfo_TypeDefinitionIndex = 41;
+	inline static constexpr unsigned int SimpleCollator_PreviousInfo_TypeDefinitionIndex = 44;
 
 	struct alignas(8) SimpleCollator_PreviousInfo
 	{

@@ -2,16 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Collections/CollectionBase.h"
 
+namespace System::Text { class StringBuilder; }
 namespace System::Xml::Serialization { class XmlElementAttribute; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLELEMENTATTRIBUTES_ADD_OFFSET UNITYSDK_OFFSET(0x17DACB60)
-#define SYSTEM_XML_SERIALIZATION_XMLELEMENTATTRIBUTES_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x17DAEB60)
-#define SYSTEM_XML_SERIALIZATION_XMLELEMENTATTRIBUTES_GET_ORDER_OFFSET UNITYSDK_OFFSET(0x17DACDC0)
-#define SYSTEM_XML_SERIALIZATION_XMLELEMENTATTRIBUTES__CTOR_OFFSET UNITYSDK_OFFSET(0x17DAC310)
+#define SYSTEM_XML_SERIALIZATION_XMLELEMENTATTRIBUTES_ADDKEYHASH_OFFSET UNITYSDK_OFFSET(0x195AB5E0)
+#define SYSTEM_XML_SERIALIZATION_XMLELEMENTATTRIBUTES_ADD_OFFSET UNITYSDK_OFFSET(0x195AB520)
+#define SYSTEM_XML_SERIALIZATION_XMLELEMENTATTRIBUTES_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x195AB410)
+#define SYSTEM_XML_SERIALIZATION_XMLELEMENTATTRIBUTES_GET_ORDER_OFFSET UNITYSDK_OFFSET(0x195AB6D0)
+#define SYSTEM_XML_SERIALIZATION_XMLELEMENTATTRIBUTES__CTOR_OFFSET UNITYSDK_OFFSET(0x195ABA60)
 
 namespace System::Xml::Serialization
 {
-	inline static constexpr unsigned int XmlElementAttributes_TypeDefinitionIndex = 1991;
+	inline static constexpr unsigned int XmlElementAttributes_TypeDefinitionIndex = 1885;
 
 	class XmlElementAttributes : public ::System::Collections::CollectionBase
 	{
@@ -29,6 +31,11 @@ namespace System::Xml::Serialization
 		::System::Int32 Add(::System::Xml::Serialization::XmlElementAttribute* attribute)
 		{
 			return ((::System::Int32(*)(::PVOID, ::System::Xml::Serialization::XmlElementAttribute*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLELEMENTATTRIBUTES_ADD_OFFSET))(this, attribute);
+		}
+
+		::System::Void AddKeyHash(::System::Text::StringBuilder* sb)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Text::StringBuilder*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLELEMENTATTRIBUTES_ADDKEYHASH_OFFSET))(this, sb);
 		}
 
 		::System::Int32 get_Order()

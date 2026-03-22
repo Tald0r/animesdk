@@ -3,7 +3,7 @@
 
 namespace Mono::Globalization::Unicode
 {
-	inline static constexpr unsigned int SimpleCollator_ExtenderType_TypeDefinitionIndex = 43;
+	inline static constexpr unsigned int SimpleCollator_ExtenderType_TypeDefinitionIndex = 46;
 
 	enum class SimpleCollator_ExtenderType : ::System::Int32
 	{

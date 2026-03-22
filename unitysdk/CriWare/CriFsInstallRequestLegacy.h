@@ -7,14 +7,13 @@ namespace CriWare { class CriFsInstaller; }
 namespace CriWare { class CriFsRequest_DoneDelegate; }
 namespace System { class String; }
 
-#define CRIWARE_CRIFSINSTALLREQUESTLEGACY_DISPOSE_OFFSET UNITYSDK_OFFSET(0x112C6860)
-#define CRIWARE_CRIFSINSTALLREQUESTLEGACY_STOP_OFFSET UNITYSDK_OFFSET(0x112C5E30)
-#define CRIWARE_CRIFSINSTALLREQUESTLEGACY_UPDATE_OFFSET UNITYSDK_OFFSET(0x112C6480)
-#define CRIWARE_CRIFSINSTALLREQUESTLEGACY__CTOR_OFFSET UNITYSDK_OFFSET(0x112C5F40)
+#define CRIWARE_CRIFSINSTALLREQUESTLEGACY_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1B0CF240)
+#define CRIWARE_CRIFSINSTALLREQUESTLEGACY_UPDATE_OFFSET UNITYSDK_OFFSET(0x1B0CF010)
+#define CRIWARE_CRIFSINSTALLREQUESTLEGACY__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0CEF30)
 
 namespace CriWare
 {
-	inline static constexpr unsigned int CriFsInstallRequestLegacy_TypeDefinitionIndex = 30259;
+	inline static constexpr unsigned int CriFsInstallRequestLegacy_TypeDefinitionIndex = 31283;
 
 	class CriFsInstallRequestLegacy : public ::CriWare::CriFsInstallRequest
 	{
@@ -24,11 +23,6 @@ namespace CriWare
 		::System::Void _ctor(::CriWare::CriFsBinder* srcBinder, ::System::String* srcPath, ::System::String* dstPath, ::CriWare::CriFsRequest_DoneDelegate* doneDelegate, ::System::Int32 installBufferSize)
 		{
 			return ((::System::Void(*)(::PVOID, ::CriWare::CriFsBinder*, ::System::String*, ::System::String*, ::CriWare::CriFsRequest_DoneDelegate*, ::System::Int32))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSINSTALLREQUESTLEGACY__CTOR_OFFSET))(this, srcBinder, srcPath, dstPath, doneDelegate, installBufferSize);
-		}
-
-		::System::Void Stop()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSINSTALLREQUESTLEGACY_STOP_OFFSET))(this);
 		}
 
 		::System::Void Update()

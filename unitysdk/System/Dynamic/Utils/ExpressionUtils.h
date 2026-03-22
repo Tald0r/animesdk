@@ -10,24 +10,39 @@ namespace System::Collections::Generic { template <typename T> class IEnumerable
 namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
 namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 namespace System::Linq::Expressions { class Expression; }
+namespace System::Linq::Expressions { class IArgumentProvider; }
+namespace System::Linq::Expressions { class IParameterProvider; }
+namespace System::Linq::Expressions { class ParameterExpression; }
 namespace System::Reflection { class MethodBase; }
 namespace System::Reflection { class ParameterInfo; }
 
-#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_GETPARAMETERSFORVALIDATION_OFFSET UNITYSDK_OFFSET(0x17C7FA00)
-#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_REQUIRESCANREAD_1_OFFSET UNITYSDK_OFFSET(0x17C7FFE0)
-#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_REQUIRESCANREAD_OFFSET UNITYSDK_OFFSET(0x17C80810)
-#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_TRYQUOTE_OFFSET UNITYSDK_OFFSET(0x17C80290)
-#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_VALIDATEARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x17C7FA80)
-#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_VALIDATEARGUMENTTYPES_OFFSET UNITYSDK_OFFSET(0x17C7F4D0)
-#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_VALIDATEONEARGUMENT_OFFSET UNITYSDK_OFFSET(0x17C7FB40)
+#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_GETPARAMETERSFORVALIDATION_OFFSET UNITYSDK_OFFSET(0x1AD5C9F0)
+#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_REQUIRESCANREAD_1_OFFSET UNITYSDK_OFFSET(0x1AD5CDC0)
+#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_REQUIRESCANREAD_OFFSET UNITYSDK_OFFSET(0x1AD5D060)
+#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_RETURNREADONLY_1_OFFSET UNITYSDK_OFFSET(0x1AD5C3B0)
+#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_RETURNREADONLY_OFFSET UNITYSDK_OFFSET(0x1AD5C2A0)
+#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_TRYQUOTE_OFFSET UNITYSDK_OFFSET(0x1AD5CF70)
+#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_VALIDATEARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x1AD5CA70)
+#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_VALIDATEARGUMENTTYPES_OFFSET UNITYSDK_OFFSET(0x1AD5C4C0)
+#define SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_VALIDATEONEARGUMENT_OFFSET UNITYSDK_OFFSET(0x1AD5CB30)
 
 namespace System::Dynamic::Utils
 {
-	inline static constexpr unsigned int ExpressionUtils_TypeDefinitionIndex = 3663;
+	inline static constexpr unsigned int ExpressionUtils_TypeDefinitionIndex = 5016;
 
 	class ExpressionUtils : public ::System::Object
 	{
 	public:
+		static ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::ParameterExpression*>* ReturnReadOnly(::System::Linq::Expressions::IParameterProvider* provider, ::System::Object*& collection)
+		{
+			return ((::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::ParameterExpression*>*(*)(::System::Linq::Expressions::IParameterProvider*, ::System::Object*&))((::PBYTE)hIl2Cpp + SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_RETURNREADONLY_OFFSET))(provider, collection);
+		}
+
+		static ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>* ReturnReadOnly_1(::System::Linq::Expressions::IArgumentProvider* provider, ::System::Object*& collection)
+		{
+			return ((::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*(*)(::System::Linq::Expressions::IArgumentProvider*, ::System::Object*&))((::PBYTE)hIl2Cpp + SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_RETURNREADONLY_1_OFFSET))(provider, collection);
+		}
+
 		static ::System::Void ValidateArgumentTypes(::System::Reflection::MethodBase* method, ::System::Linq::Expressions::ExpressionType nodeKind, ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*& arguments, ::System::String* methodParamName)
 		{
 			return ((::System::Void(*)(::System::Reflection::MethodBase*, ::System::Linq::Expressions::ExpressionType, ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*&, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DYNAMIC_UTILS_EXPRESSIONUTILS_VALIDATEARGUMENTTYPES_OFFSET))(method, nodeKind, arguments, methodParamName);

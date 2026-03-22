@@ -5,18 +5,18 @@
 #include "unitysdk/UnityEngine/Vector2.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define TMPRO_TMP_VERTEX_GET_ZERO_OFFSET UNITYSDK_OFFSET(0x181589E0)
-#define TMPRO_TMP_VERTEX__CCTOR_OFFSET UNITYSDK_OFFSET(0x18158A30)
+#define TMPRO_TMP_VERTEX_GET_ZERO_OFFSET UNITYSDK_OFFSET(0x1B126050)
+#define TMPRO_TMP_VERTEX__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B1260A0)
 
 namespace TMPro
 {
-	inline static constexpr unsigned int TMP_Vertex_TypeDefinitionIndex = 33289;
+	inline static constexpr unsigned int TMP_Vertex_TypeDefinitionIndex = 35912;
 
 	struct alignas(4) TMP_Vertex
 	{
 		static ::TMPro::TMP_Vertex* StaticGet_k_Zero()
 		{
-			return (::TMPro::TMP_Vertex*)Il2CppClass::FromTypeDefinitionIndex(TMP_Vertex_TypeDefinitionIndex)->GetStaticField(0xC1C0);
+			return (::TMPro::TMP_Vertex*)Il2CppClass::FromTypeDefinitionIndex(TMP_Vertex_TypeDefinitionIndex)->GetStaticField(0x8E70);
 		}
 		::UnityEngine::Vector3 position; // 0x10
 		::UnityEngine::Vector2 uv; // 0x1C

@@ -1,0 +1,33 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/GalGame/MainCityChatPlayableNodeBase.h"
+
+class Class_1_328B10E9F3553A0D;
+namespace MoleMole { class UIBaseChatPlayController; }
+namespace MoleMole { class UIMainCityChatPlayContext; }
+namespace MoleMole::GalGame { class MainCityChatBranchItem; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_GALGAME_MAINCITYCHATRANDOMNEXTNODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0xC2D1960)
+#define MOLEMOLE_GALGAME_MAINCITYCHATRANDOMNEXTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC2D1950)
+
+namespace MoleMole::GalGame
+{
+	inline static constexpr unsigned int MainCityChatRandomNextNode_TypeDefinitionIndex = 36399;
+
+	class MainCityChatRandomNextNode : public ::MoleMole::GalGame::MainCityChatPlayableNodeBase
+	{
+	public:
+		::System::Collections::Generic::List_1<::MoleMole::GalGame::MainCityChatBranchItem*>* nextList; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GALGAME_MAINCITYCHATRANDOMNEXTNODE__CTOR_OFFSET))(this);
+		}
+
+		::Class_1_328B10E9F3553A0D* Instantiate(::MoleMole::UIBaseChatPlayController* controller, ::MoleMole::UIMainCityChatPlayContext* context)
+		{
+			return ((::Class_1_328B10E9F3553A0D*(*)(::PVOID, ::MoleMole::UIBaseChatPlayController*, ::MoleMole::UIMainCityChatPlayContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_GALGAME_MAINCITYCHATRANDOMNEXTNODE_INSTANTIATE_OFFSET))(this, controller, context);
+		}
+	};
+}

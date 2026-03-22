@@ -14,20 +14,20 @@ namespace UnityEngine::Timeline { class RuntimeElement; }
 namespace UnityEngine::Timeline { class TimelineClip; }
 namespace UnityEngine::Timeline { template <typename T> class IntervalTree_1; }
 
-#define UNITYENGINE_TIMELINE_AUDIOTRACK_COMPILECLIPS_OFFSET UNITYSDK_OFFSET(0x1818E0B0)
-#define UNITYENGINE_TIMELINE_AUDIOTRACK_CREATECLIP_OFFSET UNITYSDK_OFFSET(0x1818DCB0)
-#define UNITYENGINE_TIMELINE_AUDIOTRACK_GET_OUTPUTS_OFFSET UNITYSDK_OFFSET(0x1818ED90)
-#define UNITYENGINE_TIMELINE_AUDIOTRACK_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x1818EE10)
-#define UNITYENGINE_TIMELINE_AUDIOTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1818EE90)
+#define UNITYENGINE_TIMELINE_AUDIOTRACK_COMPILECLIPS_OFFSET UNITYSDK_OFFSET(0x1A4441F0)
+#define UNITYENGINE_TIMELINE_AUDIOTRACK_CREATECLIP_OFFSET UNITYSDK_OFFSET(0x1A443F90)
+#define UNITYENGINE_TIMELINE_AUDIOTRACK_GET_OUTPUTS_OFFSET UNITYSDK_OFFSET(0x1A444D30)
+#define UNITYENGINE_TIMELINE_AUDIOTRACK_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x1A444D90)
+#define UNITYENGINE_TIMELINE_AUDIOTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1A444E10)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int AudioTrack_TypeDefinitionIndex = 28976;
+	inline static constexpr unsigned int AudioTrack_TypeDefinitionIndex = 29255;
 
 	class AudioTrack : public ::UnityEngine::Timeline::TrackAsset
 	{
 	public:
-		::UnityEngine::Timeline::AudioMixerProperties* m_TrackProperties; // 0xC8
+		::UnityEngine::Timeline::AudioMixerProperties* m_TrackProperties; // 0xB0
 
 		::System::Void _ctor()
 		{

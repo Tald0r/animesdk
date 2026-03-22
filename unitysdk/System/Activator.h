@@ -7,19 +7,26 @@ namespace System { class Type; }
 namespace System::Globalization { class CultureInfo; }
 namespace System::Reflection { class Binder; }
 
-#define SYSTEM_ACTIVATOR_CREATEINSTANCE_1_OFFSET UNITYSDK_OFFSET(0x15AF2600)
-#define SYSTEM_ACTIVATOR_CREATEINSTANCE_2_OFFSET UNITYSDK_OFFSET(0x15AF2770)
-#define SYSTEM_ACTIVATOR_CREATEINSTANCE_3_OFFSET UNITYSDK_OFFSET(0x15AD3000)
-#define SYSTEM_ACTIVATOR_CREATEINSTANCE_4_OFFSET UNITYSDK_OFFSET(0x15AF27A0)
-#define SYSTEM_ACTIVATOR_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x15AF25D0)
+#define SYSTEM_ACTIVATOR_CREATEINSTANCE_1_OFFSET UNITYSDK_OFFSET(0x17F48B00)
+#define SYSTEM_ACTIVATOR_CREATEINSTANCE_2_OFFSET UNITYSDK_OFFSET(0x17F48C70)
+#define SYSTEM_ACTIVATOR_CREATEINSTANCE_3_OFFSET UNITYSDK_OFFSET(0x17F48CA0)
+#define SYSTEM_ACTIVATOR_CREATEINSTANCE_4_OFFSET UNITYSDK_OFFSET(0x17F48CD0)
+#define SYSTEM_ACTIVATOR_CREATEINSTANCE_5_OFFSET UNITYSDK_OFFSET(0x17F48CE0)
+#define SYSTEM_ACTIVATOR_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x17F48AD0)
+#define SYSTEM_ACTIVATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x17F48AC0)
 
 namespace System
 {
-	inline static constexpr unsigned int Activator_TypeDefinitionIndex = 190;
+	inline static constexpr unsigned int Activator_TypeDefinitionIndex = 178;
 
 	class Activator : public ::System::Object
 	{
 	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_ACTIVATOR__CTOR_OFFSET))(this);
+		}
+
 		static ::System::Object* CreateInstance(::System::Type* type, ::System::Reflection::BindingFlags bindingAttr, ::System::Reflection::Binder* binder, ::Il2CppArray<::System::Object*>* args, ::System::Globalization::CultureInfo* culture)
 		{
 			return ((::System::Object*(*)(::System::Type*, ::System::Reflection::BindingFlags, ::System::Reflection::Binder*, ::Il2CppArray<::System::Object*>*, ::System::Globalization::CultureInfo*))((::PBYTE)hIl2Cpp + SYSTEM_ACTIVATOR_CREATEINSTANCE_OFFSET))(type, bindingAttr, binder, args, culture);
@@ -35,14 +42,19 @@ namespace System
 			return ((::System::Object*(*)(::System::Type*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + SYSTEM_ACTIVATOR_CREATEINSTANCE_2_OFFSET))(type, args);
 		}
 
-		static ::System::Object* CreateInstance_3(::System::Type* type)
+		static ::System::Object* CreateInstance_3(::System::Type* type, ::Il2CppArray<::System::Object*>* args, ::Il2CppArray<::System::Object*>* activationAttributes)
 		{
-			return ((::System::Object*(*)(::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_ACTIVATOR_CREATEINSTANCE_3_OFFSET))(type);
+			return ((::System::Object*(*)(::System::Type*, ::Il2CppArray<::System::Object*>*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + SYSTEM_ACTIVATOR_CREATEINSTANCE_3_OFFSET))(type, args, activationAttributes);
 		}
 
-		static ::System::Object* CreateInstance_4(::System::Type* type, ::System::Boolean nonPublic)
+		static ::System::Object* CreateInstance_4(::System::Type* type)
 		{
-			return ((::System::Object*(*)(::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_ACTIVATOR_CREATEINSTANCE_4_OFFSET))(type, nonPublic);
+			return ((::System::Object*(*)(::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_ACTIVATOR_CREATEINSTANCE_4_OFFSET))(type);
+		}
+
+		static ::System::Object* CreateInstance_5(::System::Type* type, ::System::Boolean nonPublic)
+		{
+			return ((::System::Object*(*)(::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_ACTIVATOR_CREATEINSTANCE_5_OFFSET))(type, nonPublic);
 		}
 	};
 }

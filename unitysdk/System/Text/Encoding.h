@@ -2,7 +2,6 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/Runtime/Serialization/StreamingContext.h"
-#include "unitysdk/System/Text/NormalizationForm.h"
 
 namespace System { class String; }
 namespace System::Collections { class Hashtable; }
@@ -14,190 +13,122 @@ namespace System::Text { class DecoderNLS; }
 namespace System::Text { class Encoder; }
 namespace System::Text { class EncoderFallback; }
 namespace System::Text { class EncoderNLS; }
-namespace System::Text { class EncodingInfo; }
-namespace System::Text { class EncodingProvider; }
 
-#define SYSTEM_TEXT_ENCODING_CLONE_OFFSET UNITYSDK_OFFSET(0x15B5CA50)
-#define SYSTEM_TEXT_ENCODING_CONVERT_1_OFFSET UNITYSDK_OFFSET(0x15B5A2A0)
-#define SYSTEM_TEXT_ENCODING_CONVERT_OFFSET UNITYSDK_OFFSET(0x15B5A170)
-#define SYSTEM_TEXT_ENCODING_CREATEDEFAULTENCODING_OFFSET UNITYSDK_OFFSET(0x15B5DA00)
-#define SYSTEM_TEXT_ENCODING_DESERIALIZEENCODING_OFFSET UNITYSDK_OFFSET(0x15B59B40)
-#define SYSTEM_TEXT_ENCODING_EQUALS_OFFSET UNITYSDK_OFFSET(0x15B5DE50)
-#define SYSTEM_TEXT_ENCODING_GETBESTFITBYTESTOUNICODEDATA_OFFSET UNITYSDK_OFFSET(0x15B5DFA0)
-#define SYSTEM_TEXT_ENCODING_GETBESTFITUNICODETOBYTESDATA_OFFSET UNITYSDK_OFFSET(0x15B5DF70)
-#define SYSTEM_TEXT_ENCODING_GETBYTECOUNT_1_OFFSET UNITYSDK_OFFSET(0x15B5CBF0)
-#define SYSTEM_TEXT_ENCODING_GETBYTECOUNT_2_OFFSET UNITYSDK_OFFSET(0x15B5CCD0)
-#define SYSTEM_TEXT_ENCODING_GETBYTECOUNT_3_OFFSET UNITYSDK_OFFSET(0x15B5CE10)
-#define SYSTEM_TEXT_ENCODING_GETBYTECOUNT_OFFSET UNITYSDK_OFFSET(0x15B5CB60)
-#define SYSTEM_TEXT_ENCODING_GETBYTES_1_OFFSET UNITYSDK_OFFSET(0x15B5CEB0)
-#define SYSTEM_TEXT_ENCODING_GETBYTES_2_OFFSET UNITYSDK_OFFSET(0x15B5CF30)
-#define SYSTEM_TEXT_ENCODING_GETBYTES_3_OFFSET UNITYSDK_OFFSET(0x15B5CFD0)
-#define SYSTEM_TEXT_ENCODING_GETBYTES_4_OFFSET UNITYSDK_OFFSET(0x15B5D0E0)
-#define SYSTEM_TEXT_ENCODING_GETBYTES_5_OFFSET UNITYSDK_OFFSET(0x15B5D110)
-#define SYSTEM_TEXT_ENCODING_GETBYTES_OFFSET UNITYSDK_OFFSET(0x15B5CE20)
-#define SYSTEM_TEXT_ENCODING_GETCHARCOUNT_1_OFFSET UNITYSDK_OFFSET(0x15B5D390)
-#define SYSTEM_TEXT_ENCODING_GETCHARCOUNT_2_OFFSET UNITYSDK_OFFSET(0x15B5D4D0)
-#define SYSTEM_TEXT_ENCODING_GETCHARCOUNT_OFFSET UNITYSDK_OFFSET(0x15B5D300)
-#define SYSTEM_TEXT_ENCODING_GETCHARS_1_OFFSET UNITYSDK_OFFSET(0x15B5D570)
-#define SYSTEM_TEXT_ENCODING_GETCHARS_2_OFFSET UNITYSDK_OFFSET(0x15B5D5F0)
-#define SYSTEM_TEXT_ENCODING_GETCHARS_3_OFFSET UNITYSDK_OFFSET(0x15B5D7F0)
-#define SYSTEM_TEXT_ENCODING_GETCHARS_OFFSET UNITYSDK_OFFSET(0x15B5D4E0)
-#define SYSTEM_TEXT_ENCODING_GETDATAITEM_OFFSET UNITYSDK_OFFSET(0x15B5C740)
-#define SYSTEM_TEXT_ENCODING_GETDECODER_OFFSET UNITYSDK_OFFSET(0x15B5D9B0)
-#define SYSTEM_TEXT_ENCODING_GETENCODER_OFFSET UNITYSDK_OFFSET(0x15B5DC30)
-#define SYSTEM_TEXT_ENCODING_GETENCODINGS_OFFSET UNITYSDK_OFFSET(0x15B5C6E0)
-#define SYSTEM_TEXT_ENCODING_GETENCODING_1_OFFSET UNITYSDK_OFFSET(0x15B5C0A0)
-#define SYSTEM_TEXT_ENCODING_GETENCODING_2_OFFSET UNITYSDK_OFFSET(0x15B5C3C0)
-#define SYSTEM_TEXT_ENCODING_GETENCODING_3_OFFSET UNITYSDK_OFFSET(0x15B5C540)
-#define SYSTEM_TEXT_ENCODING_GETENCODING_OFFSET UNITYSDK_OFFSET(0x15B5A800)
-#define SYSTEM_TEXT_ENCODING_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x15B5DF00)
-#define SYSTEM_TEXT_ENCODING_GETPREAMBLE_OFFSET UNITYSDK_OFFSET(0x15B5C710)
-#define SYSTEM_TEXT_ENCODING_GETSTRING_1_OFFSET UNITYSDK_OFFSET(0x15B5DC80)
-#define SYSTEM_TEXT_ENCODING_GETSTRING_2_OFFSET UNITYSDK_OFFSET(0x15B5DCF0)
-#define SYSTEM_TEXT_ENCODING_GETSTRING_OFFSET UNITYSDK_OFFSET(0x15B5D820)
-#define SYSTEM_TEXT_ENCODING_GET_ASCII_OFFSET UNITYSDK_OFFSET(0x15B5B820)
-#define SYSTEM_TEXT_ENCODING_GET_BIGENDIANUNICODE_OFFSET UNITYSDK_OFFSET(0x15B5B590)
-#define SYSTEM_TEXT_ENCODING_GET_BODYNAME_OFFSET UNITYSDK_OFFSET(0x15B5C810)
-#define SYSTEM_TEXT_ENCODING_GET_CODEPAGE_OFFSET UNITYSDK_OFFSET(0x15B5D970)
-#define SYSTEM_TEXT_ENCODING_GET_DECODERFALLBACK_OFFSET UNITYSDK_OFFSET(0x15B5CA40)
-#define SYSTEM_TEXT_ENCODING_GET_DEFAULT_OFFSET UNITYSDK_OFFSET(0x15B5B490)
-#define SYSTEM_TEXT_ENCODING_GET_ENCODERFALLBACK_OFFSET UNITYSDK_OFFSET(0x15B5CA30)
-#define SYSTEM_TEXT_ENCODING_GET_ENCODINGNAME_OFFSET UNITYSDK_OFFSET(0x15B5C850)
-#define SYSTEM_TEXT_ENCODING_GET_HEADERNAME_OFFSET UNITYSDK_OFFSET(0x15B5C860)
-#define SYSTEM_TEXT_ENCODING_GET_INTERNALSYNCOBJECT_OFFSET UNITYSDK_OFFSET(0x15B5A3B0)
-#define SYSTEM_TEXT_ENCODING_GET_ISBROWSERDISPLAY_OFFSET UNITYSDK_OFFSET(0x15B5C920)
-#define SYSTEM_TEXT_ENCODING_GET_ISBROWSERSAVE_OFFSET UNITYSDK_OFFSET(0x15B5C960)
-#define SYSTEM_TEXT_ENCODING_GET_ISMAILNEWSDISPLAY_OFFSET UNITYSDK_OFFSET(0x15B5C9A0)
-#define SYSTEM_TEXT_ENCODING_GET_ISMAILNEWSSAVE_OFFSET UNITYSDK_OFFSET(0x15B5C9E0)
-#define SYSTEM_TEXT_ENCODING_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x15B5CB30)
-#define SYSTEM_TEXT_ENCODING_GET_ISSINGLEBYTE_OFFSET UNITYSDK_OFFSET(0x15B5CA20)
-#define SYSTEM_TEXT_ENCODING_GET_LATIN1_OFFSET UNITYSDK_OFFSET(0x15B5B890)
-#define SYSTEM_TEXT_ENCODING_GET_UNICODE_OFFSET UNITYSDK_OFFSET(0x15B5B510)
-#define SYSTEM_TEXT_ENCODING_GET_UTF32_OFFSET UNITYSDK_OFFSET(0x15B5B6C0)
-#define SYSTEM_TEXT_ENCODING_GET_UTF7_OFFSET UNITYSDK_OFFSET(0x15B5B610)
-#define SYSTEM_TEXT_ENCODING_GET_UTF8_OFFSET UNITYSDK_OFFSET(0x15B5B7A0)
-#define SYSTEM_TEXT_ENCODING_GET_WEBNAME_OFFSET UNITYSDK_OFFSET(0x15B5C8A0)
-#define SYSTEM_TEXT_ENCODING_GET_WINDOWSCODEPAGE_OFFSET UNITYSDK_OFFSET(0x15B5C8E0)
-#define SYSTEM_TEXT_ENCODING_ISALWAYSNORMALIZED_1_OFFSET UNITYSDK_OFFSET(0x15B5D9A0)
-#define SYSTEM_TEXT_ENCODING_ISALWAYSNORMALIZED_OFFSET UNITYSDK_OFFSET(0x15B5D980)
-#define SYSTEM_TEXT_ENCODING_ONDESERIALIZED_1_OFFSET UNITYSDK_OFFSET(0x15B59AF0)
-#define SYSTEM_TEXT_ENCODING_ONDESERIALIZED_OFFSET UNITYSDK_OFFSET(0x15B59A90)
-#define SYSTEM_TEXT_ENCODING_ONDESERIALIZING_1_OFFSET UNITYSDK_OFFSET(0x15B59AD0)
-#define SYSTEM_TEXT_ENCODING_ONDESERIALIZING_OFFSET UNITYSDK_OFFSET(0x15B59A70)
-#define SYSTEM_TEXT_ENCODING_ONSERIALIZING_OFFSET UNITYSDK_OFFSET(0x15B59B30)
-#define SYSTEM_TEXT_ENCODING_REGISTERPROVIDER_OFFSET UNITYSDK_OFFSET(0x15B5A400)
-#define SYSTEM_TEXT_ENCODING_SERIALIZEENCODING_OFFSET UNITYSDK_OFFSET(0x15B59EB0)
-#define SYSTEM_TEXT_ENCODING_SETDEFAULTFALLBACKS_OFFSET UNITYSDK_OFFSET(0x15B59A10)
-#define SYSTEM_TEXT_ENCODING_SETREADONLY_OFFSET UNITYSDK_OFFSET(0x15B5DC20)
-#define SYSTEM_TEXT_ENCODING_SET_DECODERFALLBACK_OFFSET UNITYSDK_OFFSET(0x15B5C320)
-#define SYSTEM_TEXT_ENCODING_SET_ENCODERFALLBACK_OFFSET UNITYSDK_OFFSET(0x15B5C280)
-#define SYSTEM_TEXT_ENCODING_THROWBYTESOVERFLOW_1_OFFSET UNITYSDK_OFFSET(0x15B5E0C0)
-#define SYSTEM_TEXT_ENCODING_THROWBYTESOVERFLOW_OFFSET UNITYSDK_OFFSET(0x15B5DFD0)
-#define SYSTEM_TEXT_ENCODING_THROWCHARSOVERFLOW_1_OFFSET UNITYSDK_OFFSET(0x15B5E220)
-#define SYSTEM_TEXT_ENCODING_THROWCHARSOVERFLOW_OFFSET UNITYSDK_OFFSET(0x15B5E130)
-#define SYSTEM_TEXT_ENCODING__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15B598C0)
-#define SYSTEM_TEXT_ENCODING__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15B59920)
-#define SYSTEM_TEXT_ENCODING__CTOR_OFFSET UNITYSDK_OFFSET(0x15B598A0)
+#define SYSTEM_TEXT_ENCODING_CLONE_OFFSET UNITYSDK_OFFSET(0x1966F290)
+#define SYSTEM_TEXT_ENCODING_CREATEDEFAULTENCODING_OFFSET UNITYSDK_OFFSET(0x196700B0)
+#define SYSTEM_TEXT_ENCODING_DESERIALIZEENCODING_OFFSET UNITYSDK_OFFSET(0x1966E5A0)
+#define SYSTEM_TEXT_ENCODING_EQUALS_OFFSET UNITYSDK_OFFSET(0x19670260)
+#define SYSTEM_TEXT_ENCODING_GETBESTFITUNICODETOBYTESDATA_OFFSET UNITYSDK_OFFSET(0x19670380)
+#define SYSTEM_TEXT_ENCODING_GETBYTECOUNT_1_OFFSET UNITYSDK_OFFSET(0x1966F450)
+#define SYSTEM_TEXT_ENCODING_GETBYTECOUNT_2_OFFSET UNITYSDK_OFFSET(0x1966F590)
+#define SYSTEM_TEXT_ENCODING_GETBYTECOUNT_OFFSET UNITYSDK_OFFSET(0x1966F370)
+#define SYSTEM_TEXT_ENCODING_GETBYTES_1_OFFSET UNITYSDK_OFFSET(0x1966F630)
+#define SYSTEM_TEXT_ENCODING_GETBYTES_2_OFFSET UNITYSDK_OFFSET(0x1966F6B0)
+#define SYSTEM_TEXT_ENCODING_GETBYTES_3_OFFSET UNITYSDK_OFFSET(0x1966F750)
+#define SYSTEM_TEXT_ENCODING_GETBYTES_4_OFFSET UNITYSDK_OFFSET(0x1966F860)
+#define SYSTEM_TEXT_ENCODING_GETBYTES_5_OFFSET UNITYSDK_OFFSET(0x1966F890)
+#define SYSTEM_TEXT_ENCODING_GETBYTES_OFFSET UNITYSDK_OFFSET(0x1966F5A0)
+#define SYSTEM_TEXT_ENCODING_GETCHARCOUNT_1_OFFSET UNITYSDK_OFFSET(0x1966FB10)
+#define SYSTEM_TEXT_ENCODING_GETCHARCOUNT_2_OFFSET UNITYSDK_OFFSET(0x1966FC50)
+#define SYSTEM_TEXT_ENCODING_GETCHARCOUNT_OFFSET UNITYSDK_OFFSET(0x1966FA80)
+#define SYSTEM_TEXT_ENCODING_GETCHARS_1_OFFSET UNITYSDK_OFFSET(0x1966FCE0)
+#define SYSTEM_TEXT_ENCODING_GETCHARS_2_OFFSET UNITYSDK_OFFSET(0x1966FEE0)
+#define SYSTEM_TEXT_ENCODING_GETCHARS_OFFSET UNITYSDK_OFFSET(0x1966FC60)
+#define SYSTEM_TEXT_ENCODING_GETDATAITEM_OFFSET UNITYSDK_OFFSET(0x1966F0D0)
+#define SYSTEM_TEXT_ENCODING_GETDECODER_OFFSET UNITYSDK_OFFSET(0x19670070)
+#define SYSTEM_TEXT_ENCODING_GETENCODER_OFFSET UNITYSDK_OFFSET(0x196700F0)
+#define SYSTEM_TEXT_ENCODING_GETENCODING_1_OFFSET UNITYSDK_OFFSET(0x1966EDB0)
+#define SYSTEM_TEXT_ENCODING_GETENCODING_2_OFFSET UNITYSDK_OFFSET(0x1966EFB0)
+#define SYSTEM_TEXT_ENCODING_GETENCODING_3_OFFSET UNITYSDK_OFFSET(0x1966F020)
+#define SYSTEM_TEXT_ENCODING_GETENCODING_OFFSET UNITYSDK_OFFSET(0x196532F0)
+#define SYSTEM_TEXT_ENCODING_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x19670310)
+#define SYSTEM_TEXT_ENCODING_GETPREAMBLE_OFFSET UNITYSDK_OFFSET(0x1966F0A0)
+#define SYSTEM_TEXT_ENCODING_GETSTRING_1_OFFSET UNITYSDK_OFFSET(0x19670130)
+#define SYSTEM_TEXT_ENCODING_GETSTRING_2_OFFSET UNITYSDK_OFFSET(0x196701A0)
+#define SYSTEM_TEXT_ENCODING_GETSTRING_OFFSET UNITYSDK_OFFSET(0x1966FF10)
+#define SYSTEM_TEXT_ENCODING_GET_ASCII_OFFSET UNITYSDK_OFFSET(0x19657C70)
+#define SYSTEM_TEXT_ENCODING_GET_BIGENDIANUNICODE_OFFSET UNITYSDK_OFFSET(0x19653270)
+#define SYSTEM_TEXT_ENCODING_GET_BODYNAME_OFFSET UNITYSDK_OFFSET(0x1966F1C0)
+#define SYSTEM_TEXT_ENCODING_GET_CODEPAGE_OFFSET UNITYSDK_OFFSET(0x19670060)
+#define SYSTEM_TEXT_ENCODING_GET_DEFAULT_OFFSET UNITYSDK_OFFSET(0x1966EC00)
+#define SYSTEM_TEXT_ENCODING_GET_ENCODINGNAME_OFFSET UNITYSDK_OFFSET(0x1966F200)
+#define SYSTEM_TEXT_ENCODING_GET_HEADERNAME_OFFSET UNITYSDK_OFFSET(0x1966F210)
+#define SYSTEM_TEXT_ENCODING_GET_INTERNALSYNCOBJECT_OFFSET UNITYSDK_OFFSET(0x1966EBB0)
+#define SYSTEM_TEXT_ENCODING_GET_LATIN1_OFFSET UNITYSDK_OFFSET(0x1966ED10)
+#define SYSTEM_TEXT_ENCODING_GET_UNICODE_OFFSET UNITYSDK_OFFSET(0x19653140)
+#define SYSTEM_TEXT_ENCODING_GET_UTF32_OFFSET UNITYSDK_OFFSET(0x1966EC80)
+#define SYSTEM_TEXT_ENCODING_GET_UTF7_OFFSET UNITYSDK_OFFSET(0x196531C0)
+#define SYSTEM_TEXT_ENCODING_GET_UTF8_OFFSET UNITYSDK_OFFSET(0x196530C0)
+#define SYSTEM_TEXT_ENCODING_GET_WEBNAME_OFFSET UNITYSDK_OFFSET(0x1966F250)
+#define SYSTEM_TEXT_ENCODING_ONDESERIALIZED_1_OFFSET UNITYSDK_OFFSET(0x1966E550)
+#define SYSTEM_TEXT_ENCODING_ONDESERIALIZED_OFFSET UNITYSDK_OFFSET(0x1966E500)
+#define SYSTEM_TEXT_ENCODING_ONDESERIALIZING_1_OFFSET UNITYSDK_OFFSET(0x1966E540)
+#define SYSTEM_TEXT_ENCODING_ONDESERIALIZING_OFFSET UNITYSDK_OFFSET(0x1966E4F0)
+#define SYSTEM_TEXT_ENCODING_ONSERIALIZING_OFFSET UNITYSDK_OFFSET(0x1966E590)
+#define SYSTEM_TEXT_ENCODING_SERIALIZEENCODING_OFFSET UNITYSDK_OFFSET(0x1966E900)
+#define SYSTEM_TEXT_ENCODING_SETDEFAULTFALLBACKS_OFFSET UNITYSDK_OFFSET(0x1966E490)
+#define SYSTEM_TEXT_ENCODING_SET_DECODERFALLBACK_OFFSET UNITYSDK_OFFSET(0x1966EF10)
+#define SYSTEM_TEXT_ENCODING_SET_ENCODERFALLBACK_OFFSET UNITYSDK_OFFSET(0x1966EE70)
+#define SYSTEM_TEXT_ENCODING_THROWBYTESOVERFLOW_1_OFFSET UNITYSDK_OFFSET(0x196704A0)
+#define SYSTEM_TEXT_ENCODING_THROWBYTESOVERFLOW_OFFSET UNITYSDK_OFFSET(0x196703B0)
+#define SYSTEM_TEXT_ENCODING_THROWCHARSOVERFLOW_1_OFFSET UNITYSDK_OFFSET(0x19670600)
+#define SYSTEM_TEXT_ENCODING_THROWCHARSOVERFLOW_OFFSET UNITYSDK_OFFSET(0x19670510)
+#define SYSTEM_TEXT_ENCODING__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1966E430)
+#define SYSTEM_TEXT_ENCODING__CTOR_OFFSET UNITYSDK_OFFSET(0x1966E410)
 
 namespace System::Text
 {
-	inline static constexpr unsigned int Encoding_TypeDefinitionIndex = 487;
+	inline static constexpr unsigned int Encoding_TypeDefinitionIndex = 473;
 
 	class Encoding : public ::System::Object
 	{
 	public:
-		static ::System::Text::Encoding** StaticGet_bigEndianUnicode()
+		static ::System::Text::Encoding** StaticGet_utf8Encoding()
 		{
-			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xFED0);
-		}
-		static ::System::Text::Encoding** StaticGet_latin1Encoding()
-		{
-			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xFED8);
+			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xA60);
 		}
 		static ::System::Text::Encoding** StaticGet_utf7Encoding()
 		{
-			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xFEE0);
-		}
-		static ::System::Text::Encoding** StaticGet_unicodeEncoding()
-		{
-			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xFEE8);
-		}
-		static ::System::Collections::Hashtable** StaticGet_encodings()
-		{
-			return (::System::Collections::Hashtable**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xFEF0);
+			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xA68);
 		}
 		static ::System::Object** StaticGet_s_InternalSyncObject()
 		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xFEF8);
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xA70);
+		}
+		static ::System::Text::Encoding** StaticGet_bigEndianUnicode()
+		{
+			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xA78);
 		}
 		static ::System::Text::Encoding** StaticGet_asciiEncoding()
 		{
-			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xFF00);
-		}
-		static ::System::Text::Encoding** StaticGet_utf8Encoding()
-		{
-			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xFF08);
+			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xA80);
 		}
 		static ::System::Text::Encoding** StaticGet_defaultEncoding()
 		{
-			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xFF10);
+			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xA88);
+		}
+		static ::System::Collections::Hashtable** StaticGet_encodings()
+		{
+			return (::System::Collections::Hashtable**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xA90);
 		}
 		static ::System::Text::Encoding** StaticGet_utf32Encoding()
 		{
-			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xFF18);
+			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xA98);
 		}
-		// static const ::System::Int32 MIMECONTF_MAILNEWS = 0x1; // 0x0
-		// static const ::System::Int32 MIMECONTF_BROWSER = 0x2; // 0x0
-		// static const ::System::Int32 MIMECONTF_SAVABLE_MAILNEWS = 0x100; // 0x0
-		// static const ::System::Int32 MIMECONTF_SAVABLE_BROWSER = 0x200; // 0x0
-		// static const ::System::Int32 CodePageDefault = 0x0; // 0x0
-		// static const ::System::Int32 CodePageNoOEM = 0x1; // 0x0
-		// static const ::System::Int32 CodePageNoMac = 0x2; // 0x0
-		// static const ::System::Int32 CodePageNoThread = 0x3; // 0x0
-		// static const ::System::Int32 CodePageNoSymbol = 0x2A; // 0x0
-		// static const ::System::Int32 CodePageUnicode = 0x4B0; // 0x0
-		// static const ::System::Int32 CodePageBigEndian = 0x4B1; // 0x0
-		// static const ::System::Int32 CodePageWindows1252 = 0x4E4; // 0x0
-		// static const ::System::Int32 CodePageMacGB2312 = 0x2718; // 0x0
-		// static const ::System::Int32 CodePageGB2312 = 0x51C8; // 0x0
-		// static const ::System::Int32 CodePageMacKorean = 0x2713; // 0x0
-		// static const ::System::Int32 CodePageDLLKorean = 0x51D5; // 0x0
-		// static const ::System::Int32 ISO2022JP = 0xC42C; // 0x0
-		// static const ::System::Int32 ISO2022JPESC = 0xC42D; // 0x0
-		// static const ::System::Int32 ISO2022JPSISO = 0xC42E; // 0x0
-		// static const ::System::Int32 ISOKorean = 0xC431; // 0x0
-		// static const ::System::Int32 ISOSimplifiedCN = 0xC433; // 0x0
-		// static const ::System::Int32 EUCJP = 0xCADC; // 0x0
-		// static const ::System::Int32 ChineseHZ = 0xCEC8; // 0x0
-		// static const ::System::Int32 DuplicateEUCCN = 0xCAE0; // 0x0
-		// static const ::System::Int32 EUCCN = 0x3A8; // 0x0
-		// static const ::System::Int32 EUCKR = 0xCAED; // 0x0
-		// static const ::System::Int32 CodePageASCII = 0x4E9F; // 0x0
-		// static const ::System::Int32 ISO_8859_1 = 0x6FAF; // 0x0
-		// static const ::System::Int32 ISCIIAssemese = 0xDEAE; // 0x0
-		// static const ::System::Int32 ISCIIBengali = 0xDEAB; // 0x0
-		// static const ::System::Int32 ISCIIDevanagari = 0xDEAA; // 0x0
-		// static const ::System::Int32 ISCIIGujarathi = 0xDEB2; // 0x0
-		// static const ::System::Int32 ISCIIKannada = 0xDEB0; // 0x0
-		// static const ::System::Int32 ISCIIMalayalam = 0xDEB1; // 0x0
-		// static const ::System::Int32 ISCIIOriya = 0xDEAF; // 0x0
-		// static const ::System::Int32 ISCIIPanjabi = 0xDEB3; // 0x0
-		// static const ::System::Int32 ISCIITamil = 0xDEAC; // 0x0
-		// static const ::System::Int32 ISCIITelugu = 0xDEAD; // 0x0
-		// static const ::System::Int32 GB18030 = 0xD698; // 0x0
-		// static const ::System::Int32 ISO_8859_8I = 0x96C6; // 0x0
-		// static const ::System::Int32 ISO_8859_8_Visual = 0x6FB6; // 0x0
-		// static const ::System::Int32 ENC50229 = 0xC435; // 0x0
-		// static const ::System::Int32 CodePageUTF7 = 0xFDE8; // 0x0
-		// static const ::System::Int32 CodePageUTF8 = 0xFDE9; // 0x0
-		// static const ::System::Int32 CodePageUTF32 = 0x2EE0; // 0x0
-		// static const ::System::Int32 CodePageUTF32BE = 0x2EE1; // 0x0
-		::System::Text::DecoderFallback* decoderFallback; // 0x10
-		::System::Globalization::CodePageDataItem* dataItem; // 0x18
-		::System::Text::EncoderFallback* encoderFallback; // 0x20
-		::System::Int32 m_codePage; // 0x28
-		::System::Boolean m_deserializedFromEverett; // 0x2C
-		::System::Boolean m_isReadOnly; // 0x2D
+		static ::System::Text::Encoding** StaticGet_latin1Encoding()
+		{
+			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xAA0);
+		}
+		static ::System::Text::Encoding** StaticGet_unicodeEncoding()
+		{
+			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Encoding_TypeDefinitionIndex)->GetStaticField(0xAA8);
+		}
+		::System::Globalization::CodePageDataItem* dataItem; // 0x10
+		::System::Text::EncoderFallback* encoderFallback; // 0x18
+		::System::Text::DecoderFallback* decoderFallback; // 0x20
+		::System::Boolean m_deserializedFromEverett; // 0x28
+		::System::Boolean m_isReadOnly; // 0x29
+		::System::Int32 m_codePage; // 0x2C
 
 		::System::Void _ctor()
 		{
@@ -207,11 +138,6 @@ namespace System::Text
 		::System::Void _ctor_1(::System::Int32 codePage)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING__CTOR_1_OFFSET))(this, codePage);
-		}
-
-		::System::Void _ctor_2(::System::Int32 codePage, ::System::Text::EncoderFallback* encoderFallback, ::System::Text::DecoderFallback* decoderFallback)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Text::EncoderFallback*, ::System::Text::DecoderFallback*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING__CTOR_2_OFFSET))(this, codePage, encoderFallback, decoderFallback);
 		}
 
 		::System::Void SetDefaultFallbacks()
@@ -254,24 +180,9 @@ namespace System::Text
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_SERIALIZEENCODING_OFFSET))(this, info, context);
 		}
 
-		static ::Il2CppArray<::System::Byte>* Convert(::System::Text::Encoding* srcEncoding, ::System::Text::Encoding* dstEncoding, ::Il2CppArray<::System::Byte>* bytes)
-		{
-			return ((::Il2CppArray<::System::Byte>*(*)(::System::Text::Encoding*, ::System::Text::Encoding*, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_CONVERT_OFFSET))(srcEncoding, dstEncoding, bytes);
-		}
-
-		static ::Il2CppArray<::System::Byte>* Convert_1(::System::Text::Encoding* srcEncoding, ::System::Text::Encoding* dstEncoding, ::Il2CppArray<::System::Byte>* bytes, ::System::Int32 index, ::System::Int32 count)
-		{
-			return ((::Il2CppArray<::System::Byte>*(*)(::System::Text::Encoding*, ::System::Text::Encoding*, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_CONVERT_1_OFFSET))(srcEncoding, dstEncoding, bytes, index, count);
-		}
-
 		static ::System::Object* get_InternalSyncObject()
 		{
 			return ((::System::Object*(*)())((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_INTERNALSYNCOBJECT_OFFSET))();
-		}
-
-		static ::System::Void RegisterProvider(::System::Text::EncodingProvider* provider)
-		{
-			return ((::System::Void(*)(::System::Text::EncodingProvider*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_REGISTERPROVIDER_OFFSET))(provider);
 		}
 
 		static ::System::Text::Encoding* GetEncoding(::System::Int32 codepage)
@@ -292,11 +203,6 @@ namespace System::Text
 		static ::System::Text::Encoding* GetEncoding_3(::System::String* name, ::System::Text::EncoderFallback* encoderFallback, ::System::Text::DecoderFallback* decoderFallback)
 		{
 			return ((::System::Text::Encoding*(*)(::System::String*, ::System::Text::EncoderFallback*, ::System::Text::DecoderFallback*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETENCODING_3_OFFSET))(name, encoderFallback, decoderFallback);
-		}
-
-		static ::Il2CppArray<::System::Text::EncodingInfo*>* GetEncodings()
-		{
-			return ((::Il2CppArray<::System::Text::EncodingInfo*>*(*)())((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETENCODINGS_OFFSET))();
 		}
 
 		::Il2CppArray<::System::Byte>* GetPreamble()
@@ -329,49 +235,9 @@ namespace System::Text
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_WEBNAME_OFFSET))(this);
 		}
 
-		::System::Int32 get_WindowsCodePage()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_WINDOWSCODEPAGE_OFFSET))(this);
-		}
-
-		::System::Boolean get_IsBrowserDisplay()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_ISBROWSERDISPLAY_OFFSET))(this);
-		}
-
-		::System::Boolean get_IsBrowserSave()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_ISBROWSERSAVE_OFFSET))(this);
-		}
-
-		::System::Boolean get_IsMailNewsDisplay()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_ISMAILNEWSDISPLAY_OFFSET))(this);
-		}
-
-		::System::Boolean get_IsMailNewsSave()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_ISMAILNEWSSAVE_OFFSET))(this);
-		}
-
-		::System::Boolean get_IsSingleByte()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_ISSINGLEBYTE_OFFSET))(this);
-		}
-
-		::System::Text::EncoderFallback* get_EncoderFallback()
-		{
-			return ((::System::Text::EncoderFallback*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_ENCODERFALLBACK_OFFSET))(this);
-		}
-
 		::System::Void set_EncoderFallback(::System::Text::EncoderFallback* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Text::EncoderFallback*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_SET_ENCODERFALLBACK_OFFSET))(this, value);
-		}
-
-		::System::Text::DecoderFallback* get_DecoderFallback()
-		{
-			return ((::System::Text::DecoderFallback*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_DECODERFALLBACK_OFFSET))(this);
 		}
 
 		::System::Void set_DecoderFallback(::System::Text::DecoderFallback* value)
@@ -384,11 +250,6 @@ namespace System::Text
 			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_CLONE_OFFSET))(this);
 		}
 
-		::System::Boolean get_IsReadOnly()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_ISREADONLY_OFFSET))(this);
-		}
-
 		static ::System::Text::Encoding* get_ASCII()
 		{
 			return ((::System::Text::Encoding*(*)())((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_ASCII_OFFSET))();
@@ -399,24 +260,19 @@ namespace System::Text
 			return ((::System::Text::Encoding*(*)())((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_LATIN1_OFFSET))();
 		}
 
-		::System::Int32 GetByteCount(::Il2CppArray<::System::Char>* chars)
+		::System::Int32 GetByteCount(::System::String* s)
 		{
-			return ((::System::Int32(*)(::PVOID, ::Il2CppArray<::System::Char>*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETBYTECOUNT_OFFSET))(this, chars);
+			return ((::System::Int32(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETBYTECOUNT_OFFSET))(this, s);
 		}
 
-		::System::Int32 GetByteCount_1(::System::String* s)
+		::System::Int32 GetByteCount_1(::System::Char* chars, ::System::Int32 count)
 		{
-			return ((::System::Int32(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETBYTECOUNT_1_OFFSET))(this, s);
+			return ((::System::Int32(*)(::PVOID, ::System::Char*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETBYTECOUNT_1_OFFSET))(this, chars, count);
 		}
 
-		::System::Int32 GetByteCount_2(::System::Char* chars, ::System::Int32 count)
+		::System::Int32 GetByteCount_2(::System::Char* chars, ::System::Int32 count, ::System::Text::EncoderNLS* encoder)
 		{
-			return ((::System::Int32(*)(::PVOID, ::System::Char*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETBYTECOUNT_2_OFFSET))(this, chars, count);
-		}
-
-		::System::Int32 GetByteCount_3(::System::Char* chars, ::System::Int32 count, ::System::Text::EncoderNLS* encoder)
-		{
-			return ((::System::Int32(*)(::PVOID, ::System::Char*, ::System::Int32, ::System::Text::EncoderNLS*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETBYTECOUNT_3_OFFSET))(this, chars, count, encoder);
+			return ((::System::Int32(*)(::PVOID, ::System::Char*, ::System::Int32, ::System::Text::EncoderNLS*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETBYTECOUNT_2_OFFSET))(this, chars, count, encoder);
 		}
 
 		::Il2CppArray<::System::Byte>* GetBytes(::Il2CppArray<::System::Char>* chars)
@@ -464,24 +320,19 @@ namespace System::Text
 			return ((::System::Int32(*)(::PVOID, ::System::Byte*, ::System::Int32, ::System::Text::DecoderNLS*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETCHARCOUNT_2_OFFSET))(this, bytes, count, decoder);
 		}
 
-		::Il2CppArray<::System::Char>* GetChars(::Il2CppArray<::System::Byte>* bytes)
+		::Il2CppArray<::System::Char>* GetChars(::Il2CppArray<::System::Byte>* bytes, ::System::Int32 index, ::System::Int32 count)
 		{
-			return ((::Il2CppArray<::System::Char>*(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETCHARS_OFFSET))(this, bytes);
+			return ((::Il2CppArray<::System::Char>*(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETCHARS_OFFSET))(this, bytes, index, count);
 		}
 
-		::Il2CppArray<::System::Char>* GetChars_1(::Il2CppArray<::System::Byte>* bytes, ::System::Int32 index, ::System::Int32 count)
+		::System::Int32 GetChars_1(::System::Byte* bytes, ::System::Int32 byteCount, ::System::Char* chars, ::System::Int32 charCount)
 		{
-			return ((::Il2CppArray<::System::Char>*(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETCHARS_1_OFFSET))(this, bytes, index, count);
+			return ((::System::Int32(*)(::PVOID, ::System::Byte*, ::System::Int32, ::System::Char*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETCHARS_1_OFFSET))(this, bytes, byteCount, chars, charCount);
 		}
 
-		::System::Int32 GetChars_2(::System::Byte* bytes, ::System::Int32 byteCount, ::System::Char* chars, ::System::Int32 charCount)
+		::System::Int32 GetChars_2(::System::Byte* bytes, ::System::Int32 byteCount, ::System::Char* chars, ::System::Int32 charCount, ::System::Text::DecoderNLS* decoder)
 		{
-			return ((::System::Int32(*)(::PVOID, ::System::Byte*, ::System::Int32, ::System::Char*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETCHARS_2_OFFSET))(this, bytes, byteCount, chars, charCount);
-		}
-
-		::System::Int32 GetChars_3(::System::Byte* bytes, ::System::Int32 byteCount, ::System::Char* chars, ::System::Int32 charCount, ::System::Text::DecoderNLS* decoder)
-		{
-			return ((::System::Int32(*)(::PVOID, ::System::Byte*, ::System::Int32, ::System::Char*, ::System::Int32, ::System::Text::DecoderNLS*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETCHARS_3_OFFSET))(this, bytes, byteCount, chars, charCount, decoder);
+			return ((::System::Int32(*)(::PVOID, ::System::Byte*, ::System::Int32, ::System::Char*, ::System::Int32, ::System::Text::DecoderNLS*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETCHARS_2_OFFSET))(this, bytes, byteCount, chars, charCount, decoder);
 		}
 
 		::System::String* GetString(::System::Byte* bytes, ::System::Int32 byteCount)
@@ -494,16 +345,6 @@ namespace System::Text
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GET_CODEPAGE_OFFSET))(this);
 		}
 
-		::System::Boolean IsAlwaysNormalized()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_ISALWAYSNORMALIZED_OFFSET))(this);
-		}
-
-		::System::Boolean IsAlwaysNormalized_1(::System::Text::NormalizationForm form)
-		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Text::NormalizationForm))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_ISALWAYSNORMALIZED_1_OFFSET))(this, form);
-		}
-
 		::System::Text::Decoder* GetDecoder()
 		{
 			return ((::System::Text::Decoder*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETDECODER_OFFSET))(this);
@@ -512,11 +353,6 @@ namespace System::Text
 		static ::System::Text::Encoding* CreateDefaultEncoding()
 		{
 			return ((::System::Text::Encoding*(*)())((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_CREATEDEFAULTENCODING_OFFSET))();
-		}
-
-		::System::Void setReadOnly(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_SETREADONLY_OFFSET))(this, value);
 		}
 
 		static ::System::Text::Encoding* get_Default()
@@ -577,11 +413,6 @@ namespace System::Text
 		::Il2CppArray<::System::Char>* GetBestFitUnicodeToBytesData()
 		{
 			return ((::Il2CppArray<::System::Char>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETBESTFITUNICODETOBYTESDATA_OFFSET))(this);
-		}
-
-		::Il2CppArray<::System::Char>* GetBestFitBytesToUnicodeData()
-		{
-			return ((::Il2CppArray<::System::Char>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_GETBESTFITBYTESTOUNICODEDATA_OFFSET))(this);
 		}
 
 		::System::Void ThrowBytesOverflow()

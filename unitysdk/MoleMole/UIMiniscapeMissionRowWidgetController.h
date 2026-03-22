@@ -1,0 +1,145 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_B90C1A15EA6E3C2B.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_8F61B9A09E64A3EA;
+class Class_2_F1E1FDBC7FC59E8F;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIItemIconBtnSmallWidgetController; }
+namespace System { class Object; }
+namespace System { template <typename T> class Func_1; }
+
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ADDITEMICONBTNSMALLWIDGET_OFFSET UNITYSDK_OFFSET(0x8713620)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_CANGETREWARD_OFFSET UNITYSDK_OFFSET(0x8712EB0)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ISREWARDTAKEN_OFFSET UNITYSDK_OFFSET(0x8712A10)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONCLICKGOBTN_OFFSET UNITYSDK_OFFSET(0x87136F0)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONCLICKTAKEREWARD_OFFSET UNITYSDK_OFFSET(0x8713490)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x87120F0)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x8712270)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8712190)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8711E80)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8712040)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_REFRESHBTNSTATE_OFFSET UNITYSDK_OFFSET(0x8712B60)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x8712410)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_SHOULDSHOWGOBTN_OFFSET UNITYSDK_OFFSET(0x8713000)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x87138D0)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER__ONCLICKTAKEREWARD_B__8_0_OFFSET UNITYSDK_OFFSET(0x87138E0)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8713960)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x87139D0)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8713A50)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8713AD0)
+#define MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8713B30)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMiniscapeMissionRowWidgetController_TypeDefinitionIndex = 69461;
+
+	class UIMiniscapeMissionRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_F1E1FDBC7FC59E8F* _view; // 0x2D0
+		::Class_2_8F61B9A09E64A3EA* _config; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshBtnState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_REFRESHBTNSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnClickTakeReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONCLICKTAKEREWARD_OFFSET))(this);
+		}
+
+		::System::Boolean CanGetReward()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_CANGETREWARD_OFFSET))(this);
+		}
+
+		::System::Boolean IsRewardTaken()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ISREWARDTAKEN_OFFSET))(this);
+		}
+
+		::MoleMole::UIItemIconBtnSmallWidgetController* AddItemIconBtnSmallWidget(::Enum_3_B90C1A15EA6E3C2B ctrl, ::System::Func_1<::MoleMole::UIControlReference*>* arg)
+		{
+			return ((::MoleMole::UIItemIconBtnSmallWidgetController*(*)(::PVOID, ::Enum_3_B90C1A15EA6E3C2B, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ADDITEMICONBTNSMALLWIDGET_OFFSET))(this, ctrl, arg);
+		}
+
+		::System::Boolean ShouldShowGoBtn()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_SHOULDSHOWGOBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickGoBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER_ONCLICKGOBTN_OFFSET))(this);
+		}
+
+		::System::Void _OnClickTakeReward_b__8_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER__ONCLICKTAKEREWARD_B__8_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMISSIONROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

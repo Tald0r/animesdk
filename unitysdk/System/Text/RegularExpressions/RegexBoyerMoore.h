@@ -5,28 +5,29 @@
 namespace System { class String; }
 namespace System::Globalization { class CultureInfo; }
 
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_ISMATCH_OFFSET UNITYSDK_OFFSET(0x17F2EAD0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_MATCHPATTERN_OFFSET UNITYSDK_OFFSET(0x17F2E920)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_SCAN_OFFSET UNITYSDK_OFFSET(0x17F2EB40)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17F2F050)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE__CTOR_OFFSET UNITYSDK_OFFSET(0x17F2E130)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_ISMATCH_OFFSET UNITYSDK_OFFSET(0x1824F3A0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_MATCHPATTERN_OFFSET UNITYSDK_OFFSET(0x1824F1F0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_SCAN_OFFSET UNITYSDK_OFFSET(0x1824F410)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1824F920)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE__CTOR_OFFSET UNITYSDK_OFFSET(0x1824E9F0)
 
 namespace System::Text::RegularExpressions
 {
-	inline static constexpr unsigned int RegexBoyerMoore_TypeDefinitionIndex = 2485;
+	inline static constexpr unsigned int RegexBoyerMoore_TypeDefinitionIndex = 2723;
 
 	class RegexBoyerMoore : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::Int32>* _negativeASCII; // 0x10
+		// static const ::System::Int32 infinite = 0x7FFFFFFF; // 0x0
+		::Il2CppArray<::Il2CppArray<::System::Int32>*>* _negativeUnicode; // 0x10
 		::Il2CppArray<::System::Int32>* _positive; // 0x18
-		::Il2CppArray<::Il2CppArray<::System::Int32>*>* _negativeUnicode; // 0x20
-		::System::String* _pattern; // 0x28
+		::System::String* _pattern; // 0x20
+		::Il2CppArray<::System::Int32>* _negativeASCII; // 0x28
 		::System::Globalization::CultureInfo* _culture; // 0x30
-		::System::Boolean _caseInsensitive; // 0x38
-		::System::Boolean _rightToLeft; // 0x39
-		::System::Int32 _lowASCII; // 0x3C
-		::System::Int32 _highASCII; // 0x40
+		::System::Int32 _highASCII; // 0x38
+		::System::Boolean _caseInsensitive; // 0x3C
+		::System::Boolean _rightToLeft; // 0x3D
+		::System::Int32 _lowASCII; // 0x40
 
 		::System::Void _ctor(::System::String* pattern, ::System::Boolean caseInsensitive, ::System::Boolean rightToLeft, ::System::Globalization::CultureInfo* culture)
 		{

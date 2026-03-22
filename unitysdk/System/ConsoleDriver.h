@@ -1,40 +1,43 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ConsoleColor.h"
 #include "unitysdk/System/ConsoleKeyInfo.h"
 #include "unitysdk/System/Object.h"
 
 namespace System { class IConsoleDriver; }
 namespace System { class String; }
 
-#define SYSTEM_CONSOLEDRIVER_CREATENULLCONSOLEDRIVER_OFFSET UNITYSDK_OFFSET(0x15BC8590)
-#define SYSTEM_CONSOLEDRIVER_CREATETERMINFODRIVER_OFFSET UNITYSDK_OFFSET(0x15BC8620)
-#define SYSTEM_CONSOLEDRIVER_CREATEWINDOWSCONSOLEDRIVER_OFFSET UNITYSDK_OFFSET(0x15BC85D0)
-#define SYSTEM_CONSOLEDRIVER_GET_ISCONSOLE_OFFSET UNITYSDK_OFFSET(0x15BC6810)
-#define SYSTEM_CONSOLEDRIVER_INTERNALKEYAVAILABLE_OFFSET UNITYSDK_OFFSET(0x15BC8690)
-#define SYSTEM_CONSOLEDRIVER_ISATTY_OFFSET UNITYSDK_OFFSET(0x15BC8670)
-#define SYSTEM_CONSOLEDRIVER_READKEY_OFFSET UNITYSDK_OFFSET(0x15BC6E90)
-#define SYSTEM_CONSOLEDRIVER_SETECHO_OFFSET UNITYSDK_OFFSET(0x15BC86B0)
-#define SYSTEM_CONSOLEDRIVER_TTYSETUP_OFFSET UNITYSDK_OFFSET(0x15BC86A0)
-#define SYSTEM_CONSOLEDRIVER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15BC8540)
+#define SYSTEM_CONSOLEDRIVER_CREATENULLCONSOLEDRIVER_OFFSET UNITYSDK_OFFSET(0x197A8140)
+#define SYSTEM_CONSOLEDRIVER_CREATETERMINFODRIVER_OFFSET UNITYSDK_OFFSET(0x197A81D0)
+#define SYSTEM_CONSOLEDRIVER_CREATEWINDOWSCONSOLEDRIVER_OFFSET UNITYSDK_OFFSET(0x197A8180)
+#define SYSTEM_CONSOLEDRIVER_GET_ISCONSOLE_OFFSET UNITYSDK_OFFSET(0x197A8000)
+#define SYSTEM_CONSOLEDRIVER_INTERNALKEYAVAILABLE_OFFSET UNITYSDK_OFFSET(0x197A85E0)
+#define SYSTEM_CONSOLEDRIVER_ISATTY_OFFSET UNITYSDK_OFFSET(0x197A85C0)
+#define SYSTEM_CONSOLEDRIVER_READKEY_OFFSET UNITYSDK_OFFSET(0x197A8370)
+#define SYSTEM_CONSOLEDRIVER_RESETCOLOR_OFFSET UNITYSDK_OFFSET(0x197A84B0)
+#define SYSTEM_CONSOLEDRIVER_SETECHO_OFFSET UNITYSDK_OFFSET(0x197A8600)
+#define SYSTEM_CONSOLEDRIVER_SET_FOREGROUNDCOLOR_OFFSET UNITYSDK_OFFSET(0x197A8220)
+#define SYSTEM_CONSOLEDRIVER_TTYSETUP_OFFSET UNITYSDK_OFFSET(0x197A85F0)
+#define SYSTEM_CONSOLEDRIVER__CCTOR_OFFSET UNITYSDK_OFFSET(0x197A7FB0)
 
 namespace System
 {
-	inline static constexpr unsigned int ConsoleDriver_TypeDefinitionIndex = 384;
+	inline static constexpr unsigned int ConsoleDriver_TypeDefinitionIndex = 372;
 
 	class ConsoleDriver : public ::System::Object
 	{
 	public:
 		static ::System::IConsoleDriver** StaticGet_driver()
 		{
-			return (::System::IConsoleDriver**)Il2CppClass::FromTypeDefinitionIndex(ConsoleDriver_TypeDefinitionIndex)->GetStaticField(0x73D0);
-		}
-		static ::System::Boolean* StaticGet_called_isatty()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ConsoleDriver_TypeDefinitionIndex)->GetStaticField(0x26E0);
+			return (::System::IConsoleDriver**)Il2CppClass::FromTypeDefinitionIndex(ConsoleDriver_TypeDefinitionIndex)->GetStaticField(0x8D0);
 		}
 		static ::System::Boolean* StaticGet_is_console()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ConsoleDriver_TypeDefinitionIndex)->GetStaticField(0x26E1);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ConsoleDriver_TypeDefinitionIndex)->GetStaticField(0x1D0);
+		}
+		static ::System::Boolean* StaticGet_called_isatty()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ConsoleDriver_TypeDefinitionIndex)->GetStaticField(0x1D1);
 		}
 
 		static ::System::Void _cctor()
@@ -57,9 +60,19 @@ namespace System
 			return ((::System::IConsoleDriver*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_CONSOLEDRIVER_CREATETERMINFODRIVER_OFFSET))(term);
 		}
 
+		static ::System::Void set_ForegroundColor(::System::ConsoleColor value)
+		{
+			return ((::System::Void(*)(::System::ConsoleColor))((::PBYTE)hIl2Cpp + SYSTEM_CONSOLEDRIVER_SET_FOREGROUNDCOLOR_OFFSET))(value);
+		}
+
 		static ::System::ConsoleKeyInfo ReadKey(::System::Boolean intercept)
 		{
 			return ((::System::ConsoleKeyInfo(*)(::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_CONSOLEDRIVER_READKEY_OFFSET))(intercept);
+		}
+
+		static ::System::Void ResetColor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_CONSOLEDRIVER_RESETCOLOR_OFFSET))();
 		}
 
 		static ::System::Boolean get_IsConsole()

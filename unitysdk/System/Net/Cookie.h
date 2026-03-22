@@ -9,94 +9,139 @@ namespace System { class Uri; }
 namespace System::Collections { class IComparer; }
 namespace System::Net { class Comparer; }
 
-#define SYSTEM_NET_COOKIE_DOMAINCHARSTEST_OFFSET UNITYSDK_OFFSET(0x17EA42F0)
-#define SYSTEM_NET_COOKIE_EQUALS_OFFSET UNITYSDK_OFFSET(0x17EA4A30)
-#define SYSTEM_NET_COOKIE_GETCOMPARER_OFFSET UNITYSDK_OFFSET(0x17EA4A00)
-#define SYSTEM_NET_COOKIE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x17EA4AC0)
-#define SYSTEM_NET_COOKIE_GET_COMMENT_OFFSET UNITYSDK_OFFSET(0x17EA3150)
-#define SYSTEM_NET_COOKIE_GET_DOMAINKEY_OFFSET UNITYSDK_OFFSET(0x17EA48C0)
-#define SYSTEM_NET_COOKIE_GET_DOMAIN_OFFSET UNITYSDK_OFFSET(0x17EA31B0)
-#define SYSTEM_NET_COOKIE_GET_EXPIRED_OFFSET UNITYSDK_OFFSET(0x17EA32A0)
-#define SYSTEM_NET_COOKIE_GET_NAME_OFFSET UNITYSDK_OFFSET(0x17EA3350)
-#define SYSTEM_NET_COOKIE_GET_PATH_OFFSET UNITYSDK_OFFSET(0x17EA3540)
-#define SYSTEM_NET_COOKIE_GET_PLAIN_OFFSET UNITYSDK_OFFSET(0x17EA3290)
-#define SYSTEM_NET_COOKIE_GET_PORTLIST_OFFSET UNITYSDK_OFFSET(0x17EA47B0)
-#define SYSTEM_NET_COOKIE_GET_PORT_OFFSET UNITYSDK_OFFSET(0x17EA4350)
-#define SYSTEM_NET_COOKIE_GET_SECURE_OFFSET UNITYSDK_OFFSET(0x17EA4850)
-#define SYSTEM_NET_COOKIE_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x17EA4870)
-#define SYSTEM_NET_COOKIE_GET_VARIANT_OFFSET UNITYSDK_OFFSET(0x17EA48B0)
-#define SYSTEM_NET_COOKIE_GET_VERSION_OFFSET UNITYSDK_OFFSET(0x17EA48E0)
-#define SYSTEM_NET_COOKIE_GET__DOMAIN_OFFSET UNITYSDK_OFFSET(0x17EA3200)
-#define SYSTEM_NET_COOKIE_GET__PATH_OFFSET UNITYSDK_OFFSET(0x17EA3580)
-#define SYSTEM_NET_COOKIE_GET__PORT_OFFSET UNITYSDK_OFFSET(0x17EA47C0)
-#define SYSTEM_NET_COOKIE_GET__VERSION_OFFSET UNITYSDK_OFFSET(0x17EA4970)
-#define SYSTEM_NET_COOKIE_INTERNALSETNAME_OFFSET UNITYSDK_OFFSET(0x17EA3480)
-#define SYSTEM_NET_COOKIE_ISDOMAINEQUALTOHOST_OFFSET UNITYSDK_OFFSET(0x17EA35F0)
-#define SYSTEM_NET_COOKIE_SET_COMMENTURI_OFFSET UNITYSDK_OFFSET(0x17EA3180)
-#define SYSTEM_NET_COOKIE_SET_COMMENT_OFFSET UNITYSDK_OFFSET(0x17EA3160)
-#define SYSTEM_NET_COOKIE_SET_DISCARD_OFFSET UNITYSDK_OFFSET(0x17EA31A0)
-#define SYSTEM_NET_COOKIE_SET_DOMAIN_OFFSET UNITYSDK_OFFSET(0x17EA31C0)
-#define SYSTEM_NET_COOKIE_SET_EXPIRES_OFFSET UNITYSDK_OFFSET(0x17EA3340)
-#define SYSTEM_NET_COOKIE_SET_HTTPONLY_OFFSET UNITYSDK_OFFSET(0x17EA3190)
-#define SYSTEM_NET_COOKIE_SET_NAME_OFFSET UNITYSDK_OFFSET(0x17EA3360)
-#define SYSTEM_NET_COOKIE_SET_PATH_OFFSET UNITYSDK_OFFSET(0x17EA3550)
-#define SYSTEM_NET_COOKIE_SET_PORT_OFFSET UNITYSDK_OFFSET(0x17EA4360)
-#define SYSTEM_NET_COOKIE_SET_SECURE_OFFSET UNITYSDK_OFFSET(0x17EA4860)
-#define SYSTEM_NET_COOKIE_SET_VALUE_OFFSET UNITYSDK_OFFSET(0x17EA4880)
-#define SYSTEM_NET_COOKIE_SET_VERSION_OFFSET UNITYSDK_OFFSET(0x17EA48F0)
-#define SYSTEM_NET_COOKIE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17EA4FF0)
-#define SYSTEM_NET_COOKIE_VERIFYSETDEFAULTS_OFFSET UNITYSDK_OFFSET(0x17EA3650)
-#define SYSTEM_NET_COOKIE__CCTOR_OFFSET UNITYSDK_OFFSET(0x17EA5470)
-#define SYSTEM_NET_COOKIE__CTOR_OFFSET UNITYSDK_OFFSET(0x17EA3050)
+#define SYSTEM_NET_COOKIE_CLONE_OFFSET UNITYSDK_OFFSET(0x18D738D0)
+#define SYSTEM_NET_COOKIE_DOMAINCHARSTEST_OFFSET UNITYSDK_OFFSET(0x18D74D60)
+#define SYSTEM_NET_COOKIE_EQUALS_OFFSET UNITYSDK_OFFSET(0x18D75040)
+#define SYSTEM_NET_COOKIE_GETCOMPARER_OFFSET UNITYSDK_OFFSET(0x18D74FE0)
+#define SYSTEM_NET_COOKIE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x18D75100)
+#define SYSTEM_NET_COOKIE_GET_COMMENTURI_OFFSET UNITYSDK_OFFSET(0x18D734A0)
+#define SYSTEM_NET_COOKIE_GET_COMMENT_OFFSET UNITYSDK_OFFSET(0x18D73470)
+#define SYSTEM_NET_COOKIE_GET_DISCARD_OFFSET UNITYSDK_OFFSET(0x18D734E0)
+#define SYSTEM_NET_COOKIE_GET_DOMAINIMPLICIT_OFFSET UNITYSDK_OFFSET(0x18D735B0)
+#define SYSTEM_NET_COOKIE_GET_DOMAINKEY_OFFSET UNITYSDK_OFFSET(0x18D74F00)
+#define SYSTEM_NET_COOKIE_GET_DOMAIN_OFFSET UNITYSDK_OFFSET(0x18D73500)
+#define SYSTEM_NET_COOKIE_GET_EXPIRED_OFFSET UNITYSDK_OFFSET(0x18D735D0)
+#define SYSTEM_NET_COOKIE_GET_EXPIRES_OFFSET UNITYSDK_OFFSET(0x18D73720)
+#define SYSTEM_NET_COOKIE_GET_HTTPONLY_OFFSET UNITYSDK_OFFSET(0x18D734C0)
+#define SYSTEM_NET_COOKIE_GET_NAME_OFFSET UNITYSDK_OFFSET(0x18D73740)
+#define SYSTEM_NET_COOKIE_GET_PATH_OFFSET UNITYSDK_OFFSET(0x18D73850)
+#define SYSTEM_NET_COOKIE_GET_PLAIN_OFFSET UNITYSDK_OFFSET(0x18D735A0)
+#define SYSTEM_NET_COOKIE_GET_PORTLIST_OFFSET UNITYSDK_OFFSET(0x18D74DD0)
+#define SYSTEM_NET_COOKIE_GET_PORT_OFFSET UNITYSDK_OFFSET(0x18D74DC0)
+#define SYSTEM_NET_COOKIE_GET_SECURE_OFFSET UNITYSDK_OFFSET(0x18D74E70)
+#define SYSTEM_NET_COOKIE_GET_TIMESTAMP_OFFSET UNITYSDK_OFFSET(0x18D74E90)
+#define SYSTEM_NET_COOKIE_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x18D74EA0)
+#define SYSTEM_NET_COOKIE_GET_VARIANT_OFFSET UNITYSDK_OFFSET(0x18D74EE0)
+#define SYSTEM_NET_COOKIE_GET_VERSION_OFFSET UNITYSDK_OFFSET(0x18D74F20)
+#define SYSTEM_NET_COOKIE_GET__DOMAIN_OFFSET UNITYSDK_OFFSET(0x18D73510)
+#define SYSTEM_NET_COOKIE_GET__PATH_OFFSET UNITYSDK_OFFSET(0x18D73860)
+#define SYSTEM_NET_COOKIE_GET__PORT_OFFSET UNITYSDK_OFFSET(0x18D74DE0)
+#define SYSTEM_NET_COOKIE_GET__VERSION_OFFSET UNITYSDK_OFFSET(0x18D74F30)
+#define SYSTEM_NET_COOKIE_INTERNALSETNAME_OFFSET UNITYSDK_OFFSET(0x18D73750)
+#define SYSTEM_NET_COOKIE_ISDOMAINEQUALTOHOST_OFFSET UNITYSDK_OFFSET(0x18D74000)
+#define SYSTEM_NET_COOKIE_SET_COMMENTURI_OFFSET UNITYSDK_OFFSET(0x18D734B0)
+#define SYSTEM_NET_COOKIE_SET_COMMENT_OFFSET UNITYSDK_OFFSET(0x18D73480)
+#define SYSTEM_NET_COOKIE_SET_DISCARD_OFFSET UNITYSDK_OFFSET(0x18D734F0)
+#define SYSTEM_NET_COOKIE_SET_DOMAINIMPLICIT_OFFSET UNITYSDK_OFFSET(0x18D735C0)
+#define SYSTEM_NET_COOKIE_SET_DOMAIN_OFFSET UNITYSDK_OFFSET(0x18D73430)
+#define SYSTEM_NET_COOKIE_SET_EXPIRED_OFFSET UNITYSDK_OFFSET(0x18D73670)
+#define SYSTEM_NET_COOKIE_SET_EXPIRES_OFFSET UNITYSDK_OFFSET(0x18D73730)
+#define SYSTEM_NET_COOKIE_SET_HTTPONLY_OFFSET UNITYSDK_OFFSET(0x18D734D0)
+#define SYSTEM_NET_COOKIE_SET_NAME_OFFSET UNITYSDK_OFFSET(0x18D73040)
+#define SYSTEM_NET_COOKIE_SET_PATH_OFFSET UNITYSDK_OFFSET(0x18D732A0)
+#define SYSTEM_NET_COOKIE_SET_PORT_OFFSET UNITYSDK_OFFSET(0x18D73B60)
+#define SYSTEM_NET_COOKIE_SET_SECURE_OFFSET UNITYSDK_OFFSET(0x18D74E80)
+#define SYSTEM_NET_COOKIE_SET_VALUE_OFFSET UNITYSDK_OFFSET(0x18D74EB0)
+#define SYSTEM_NET_COOKIE_SET_VARIANT_OFFSET UNITYSDK_OFFSET(0x18D74EF0)
+#define SYSTEM_NET_COOKIE_SET_VERSION_OFFSET UNITYSDK_OFFSET(0x18D73F80)
+#define SYSTEM_NET_COOKIE_TOSERVERSTRING_OFFSET UNITYSDK_OFFSET(0x18D75B00)
+#define SYSTEM_NET_COOKIE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x18D75630)
+#define SYSTEM_NET_COOKIE_VERIFYSETDEFAULTS_OFFSET UNITYSDK_OFFSET(0x18D74060)
+#define SYSTEM_NET_COOKIE__CCTOR_OFFSET UNITYSDK_OFFSET(0x18D75E00)
+#define SYSTEM_NET_COOKIE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18D72F20)
+#define SYSTEM_NET_COOKIE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x18D73160)
+#define SYSTEM_NET_COOKIE__CTOR_3_OFFSET UNITYSDK_OFFSET(0x18D732D0)
+#define SYSTEM_NET_COOKIE__CTOR_OFFSET UNITYSDK_OFFSET(0x18D72E20)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int Cookie_TypeDefinitionIndex = 2774;
+	inline static constexpr unsigned int Cookie_TypeDefinitionIndex = 3414;
 
 	class Cookie : public ::System::Object
 	{
 	public:
+		static ::System::Net::Comparer** StaticGet_staticComparer()
+		{
+			return (::System::Net::Comparer**)Il2CppClass::FromTypeDefinitionIndex(Cookie_TypeDefinitionIndex)->GetStaticField(0x2E50);
+		}
 		static ::Il2CppArray<::System::Char>** StaticGet_Reserved2Value()
 		{
-			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(Cookie_TypeDefinitionIndex)->GetStaticField(0x16B20);
+			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(Cookie_TypeDefinitionIndex)->GetStaticField(0x2E58);
 		}
 		static ::Il2CppArray<::System::Char>** StaticGet_PortSplitDelimiters()
 		{
-			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(Cookie_TypeDefinitionIndex)->GetStaticField(0x16B28);
+			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(Cookie_TypeDefinitionIndex)->GetStaticField(0x2E60);
 		}
 		static ::Il2CppArray<::System::Char>** StaticGet_Reserved2Name()
 		{
-			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(Cookie_TypeDefinitionIndex)->GetStaticField(0x16B30);
+			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(Cookie_TypeDefinitionIndex)->GetStaticField(0x2E68);
 		}
-		static ::System::Net::Comparer** StaticGet_staticComparer()
-		{
-			return (::System::Net::Comparer**)Il2CppClass::FromTypeDefinitionIndex(Cookie_TypeDefinitionIndex)->GetStaticField(0x16B38);
-		}
-		::System::String* m_domain; // 0x10
-		::Il2CppArray<::System::Int32>* m_port_list; // 0x18
-		::System::String* m_path; // 0x20
-		::System::String* m_name; // 0x28
-		::System::String* m_comment; // 0x30
-		::System::Uri* m_commentUri; // 0x38
-		::System::String* m_port; // 0x40
-		::System::String* m_domainKey; // 0x48
-		::System::String* m_value; // 0x50
-		::System::DateTime m_expires; // 0x58
-		::System::DateTime m_timeStamp; // 0x60
+		// static const ::System::Int32 MaxSupportedVersion = 0x1; // 0x0
+		// static const ::System::String* CommentAttributeName; // 0x0
+		// static const ::System::String* CommentUrlAttributeName; // 0x0
+		// static const ::System::String* DiscardAttributeName; // 0x0
+		// static const ::System::String* DomainAttributeName; // 0x0
+		// static const ::System::String* ExpiresAttributeName; // 0x0
+		// static const ::System::String* MaxAgeAttributeName; // 0x0
+		// static const ::System::String* PathAttributeName; // 0x0
+		// static const ::System::String* PortAttributeName; // 0x0
+		// static const ::System::String* SecureAttributeName; // 0x0
+		// static const ::System::String* VersionAttributeName; // 0x0
+		// static const ::System::String* HttpOnlyAttributeName; // 0x0
+		// static const ::System::String* SeparatorLiteral; // 0x0
+		// static const ::System::String* EqualsLiteral; // 0x0
+		// static const ::System::String* QuotesLiteral; // 0x0
+		// static const ::System::String* SpecialAttributeLiteral; // 0x0
+		::System::String* m_name; // 0x10
+		::System::Uri* m_commentUri; // 0x18
+		::System::String* m_domain; // 0x20
+		::System::String* m_port; // 0x28
+		::System::String* m_value; // 0x30
+		::Il2CppArray<::System::Int32>* m_port_list; // 0x38
+		::System::String* m_path; // 0x40
+		::System::String* m_comment; // 0x48
+		::System::String* m_domainKey; // 0x50
+		::System::DateTime m_timeStamp; // 0x58
+		::System::Int32 m_version; // 0x60
+		::System::Boolean m_path_implicit; // 0x64
+		::System::Boolean m_discard; // 0x65
+		::System::Boolean m_domain_implicit; // 0x66
+		::System::Boolean m_port_implicit; // 0x67
 		::System::Net::CookieVariant m_cookieVariant; // 0x68
-		::System::Boolean m_path_implicit; // 0x6C
-		::System::Boolean IsQuotedVersion; // 0x6D
-		::System::Boolean m_secure; // 0x6E
-		::System::Boolean IsQuotedDomain; // 0x6F
-		::System::Int32 m_version; // 0x70
-		::System::Boolean m_domain_implicit; // 0x74
-		::System::Boolean m_discard; // 0x75
-		::System::Boolean m_httpOnly; // 0x76
-		::System::Boolean m_port_implicit; // 0x77
+		::System::Boolean m_secure; // 0x6C
+		::System::Boolean m_httpOnly; // 0x6D
+		::System::Boolean IsQuotedDomain; // 0x6E
+		::System::Boolean IsQuotedVersion; // 0x6F
+		::System::DateTime m_expires; // 0x70
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::String* name, ::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE__CTOR_1_OFFSET))(this, name, value);
+		}
+
+		::System::Void _ctor_2(::System::String* name, ::System::String* value, ::System::String* path)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE__CTOR_2_OFFSET))(this, name, value, path);
+		}
+
+		::System::Void _ctor_3(::System::String* name, ::System::String* value, ::System::String* path, ::System::String* domain)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE__CTOR_3_OFFSET))(this, name, value, path, domain);
 		}
 
 		static ::System::Void _cctor()
@@ -114,14 +159,29 @@ namespace System::Net
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_SET_COMMENT_OFFSET))(this, value);
 		}
 
+		::System::Uri* get_CommentUri()
+		{
+			return ((::System::Uri*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_GET_COMMENTURI_OFFSET))(this);
+		}
+
 		::System::Void set_CommentUri(::System::Uri* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Uri*))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_SET_COMMENTURI_OFFSET))(this, value);
 		}
 
+		::System::Boolean get_HttpOnly()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_GET_HTTPONLY_OFFSET))(this);
+		}
+
 		::System::Void set_HttpOnly(::System::Boolean value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_SET_HTTPONLY_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_Discard()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_GET_DISCARD_OFFSET))(this);
 		}
 
 		::System::Void set_Discard(::System::Boolean value)
@@ -144,9 +204,29 @@ namespace System::Net
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_GET__DOMAIN_OFFSET))(this);
 		}
 
+		::System::Boolean get_DomainImplicit()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_GET_DOMAINIMPLICIT_OFFSET))(this);
+		}
+
+		::System::Void set_DomainImplicit(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_SET_DOMAINIMPLICIT_OFFSET))(this, value);
+		}
+
 		::System::Boolean get_Expired()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_GET_EXPIRED_OFFSET))(this);
+		}
+
+		::System::Void set_Expired(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_SET_EXPIRED_OFFSET))(this, value);
+		}
+
+		::System::DateTime get_Expires()
+		{
+			return ((::System::DateTime(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_GET_EXPIRES_OFFSET))(this);
 		}
 
 		::System::Void set_Expires(::System::DateTime value)
@@ -187,6 +267,11 @@ namespace System::Net
 		::System::Boolean get_Plain()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_GET_PLAIN_OFFSET))(this);
+		}
+
+		::System::Net::Cookie* Clone()
+		{
+			return ((::System::Net::Cookie*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_CLONE_OFFSET))(this);
 		}
 
 		static ::System::Boolean IsDomainEqualToHost(::System::String* domain, ::System::String* host)
@@ -234,6 +319,11 @@ namespace System::Net
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_SET_SECURE_OFFSET))(this, value);
 		}
 
+		::System::DateTime get_TimeStamp()
+		{
+			return ((::System::DateTime(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_GET_TIMESTAMP_OFFSET))(this);
+		}
+
 		::System::String* get_Value()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_GET_VALUE_OFFSET))(this);
@@ -247,6 +337,11 @@ namespace System::Net
 		::System::Net::CookieVariant get_Variant()
 		{
 			return ((::System::Net::CookieVariant(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_GET_VARIANT_OFFSET))(this);
+		}
+
+		::System::Void set_Variant(::System::Net::CookieVariant value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::CookieVariant))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_SET_VARIANT_OFFSET))(this, value);
 		}
 
 		::System::String* get_DomainKey()
@@ -287,6 +382,11 @@ namespace System::Net
 		::System::String* ToString()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_TOSTRING_OFFSET))(this);
+		}
+
+		::System::String* ToServerString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIE_TOSERVERSTRING_OFFSET))(this);
 		}
 	};
 }

@@ -1,0 +1,123 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_79F6D62CE30E3F8E_86;
+namespace MoleMole { class ActivityDemoTrialContext; }
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB8F0420)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xB8F04C0)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB8F0680)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB8F05A0)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB8F02C0)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_REBINDNOTIFICATION_OFFSET UNITYSDK_OFFSET(0xB8F0F40)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_REFRESHGOTQUESTSTATE_OFFSET UNITYSDK_OFFSET(0xB8F1050)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_REFRESHQUESTSWEEPSTATE_OFFSET UNITYSDK_OFFSET(0xB8F11C0)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_SETCURRENTINGACHA_OFFSET UNITYSDK_OFFSET(0xB8F0E90)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_SETICONIMAGE_OFFSET UNITYSDK_OFFSET(0xB8F0A10)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_SETROLERARITY_OFFSET UNITYSDK_OFFSET(0xB8F0C10)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB8F1470)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB8F1480)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xB8F14F0)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB8F1560)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB8F15E0)
+#define MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB8F1660)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityDemoRowWidgetController_TypeDefinitionIndex = 74939;
+
+	class UIActivityDemoRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_86* _view; // 0x2D0
+		::MoleMole::ActivityDemoTrialContext* contextData; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void SetIconImage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_SETICONIMAGE_OFFSET))(this);
+		}
+
+		::System::Void RebindNotification()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_REBINDNOTIFICATION_OFFSET))(this);
+		}
+
+		::System::Void SetCurrentInGacha()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_SETCURRENTINGACHA_OFFSET))(this);
+		}
+
+		::System::Void SetRoleRarity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_SETROLERARITY_OFFSET))(this);
+		}
+
+		::System::Void RefreshGotQuestState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_REFRESHGOTQUESTSTATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshQuestSweepState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER_REFRESHQUESTSWEEPSTATE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

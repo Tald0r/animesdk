@@ -4,20 +4,21 @@
 
 namespace System { template <typename T> class Func_1; }
 
-#define UNITYENGINE_RENDERING_DEBUGUI_INTFIELD_VALIDATEVALUE_OFFSET UNITYSDK_OFFSET(0x180CCA20)
-#define UNITYENGINE_RENDERING_DEBUGUI_INTFIELD__CTOR_OFFSET UNITYSDK_OFFSET(0x180CCA60)
+#define UNITYENGINE_RENDERING_DEBUGUI_INTFIELD_VALIDATEVALUE_OFFSET UNITYSDK_OFFSET(0x1843E700)
+#define UNITYENGINE_RENDERING_DEBUGUI_INTFIELD__CTOR_OFFSET UNITYSDK_OFFSET(0x1843E7A0)
+#define UNITYENGINE_RENDERING_DEBUGUI_INTFIELD___BASE_VALIDATEVALUE_OFFSET UNITYSDK_OFFSET(0x1843E7B0)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int DebugUI_IntField_TypeDefinitionIndex = 27082;
+	inline static constexpr unsigned int DebugUI_IntField_TypeDefinitionIndex = 9540;
 
 	class DebugUI_IntField : public ::UnityEngine::Rendering::DebugUI_Field_1<::System::Int32>
 	{
 	public:
 		::System::Func_1<::System::Int32>* min; // 0x50
 		::System::Func_1<::System::Int32>* max; // 0x58
-		::System::Int32 intStepMult; // 0x60
-		::System::Int32 incStep; // 0x64
+		::System::Int32 incStep; // 0x60
+		::System::Int32 intStepMult; // 0x64
 
 		::System::Void _ctor()
 		{
@@ -27,6 +28,11 @@ namespace UnityEngine::Rendering
 		::System::Int32 ValidateValue(::System::Int32 value)
 		{
 			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DEBUGUI_INTFIELD_VALIDATEVALUE_OFFSET))(this, value);
+		}
+
+		::System::Int32 __base_ValidateValue(::System::Int32 P0)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DEBUGUI_INTFIELD___BASE_VALIDATEVALUE_OFFSET))(this, P0);
 		}
 	};
 }

@@ -1,11 +1,13 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/Client/AvatarRoleType.h"
+#include "unitysdk/Foundation/NativeMemoryRequestHandle.h"
+#include "unitysdk/System/Span_1.h"
 
-namespace RPG::Client { class AvatarData; }
-namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace Foundation { class NativeMemoryBuilder; }
+namespace MoleMole::Photo { class Skeleton; }
+namespace UnityEngine { class Animator; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_567_TypeDefinitionIndex = 50158;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_567_TypeDefinitionIndex = 57004;
 
 class Class_0_16E4307DCC419505_567
 {

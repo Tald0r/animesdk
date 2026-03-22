@@ -1,0 +1,86 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D;
+class Class_3_B6A6E344CE687278_3;
+namespace System::Collections::Generic { template <typename T1, typename T2> class IReadOnlyDictionary_2; }
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
+namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_CURTAGLIST_OFFSET UNITYSDK_OFFSET(0x753A5D0)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_CURTAGWITHOUTHIDING_OFFSET UNITYSDK_OFFSET(0x753A6A0)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_CURVHSSLOTLIST_OFFSET UNITYSDK_OFFSET(0x753A8A0)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_ENERGY_OFFSET UNITYSDK_OFFSET(0x753A1C0)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_OPTIONRECORDLIST_OFFSET UNITYSDK_OFFSET(0x753A290)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_RECOMMENDROUND_OFFSET UNITYSDK_OFFSET(0x753A430)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_SCORE_OFFSET UNITYSDK_OFFSET(0x753A360)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_VHSRECOMMENDROUNDMAP_OFFSET UNITYSDK_OFFSET(0x753A500)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_WAITREFRESHTAGIDX_OFFSET UNITYSDK_OFFSET(0x753A970)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_WAITREFRESHTAGNEW_OFFSET UNITYSDK_OFFSET(0x753AA40)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x753AB10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVHSStoreLimitWidgetController_Context_Data_TypeDefinitionIndex = 42286;
+
+	class UIVHSStoreLimitWidgetController_Context_Data : public ::System::Object
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA__CTOR_OFFSET))(this);
+		}
+
+		::System::Int32 get_Energy()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_ENERGY_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IReadOnlyList_1<::Class_3_B6A6E344CE687278_3*>* get_OptionRecordList()
+		{
+			return ((::System::Collections::Generic::IReadOnlyList_1<::Class_3_B6A6E344CE687278_3*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_OPTIONRECORDLIST_OFFSET))(this);
+		}
+
+		::System::Int32 get_Score()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_SCORE_OFFSET))(this);
+		}
+
+		::System::UInt32 get_RecommendRound()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_RECOMMENDROUND_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IReadOnlyDictionary_2<::System::UInt32, ::System::UInt32>* get_VhsRecommendRoundMap()
+		{
+			return ((::System::Collections::Generic::IReadOnlyDictionary_2<::System::UInt32, ::System::UInt32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_VHSRECOMMENDROUNDMAP_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IReadOnlyList_1<::System::UInt32>* get_CurTagList()
+		{
+			return ((::System::Collections::Generic::IReadOnlyList_1<::System::UInt32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_CURTAGLIST_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IEnumerable_1<::System::UInt32>* get_CurTagWithoutHiding()
+		{
+			return ((::System::Collections::Generic::IEnumerable_1<::System::UInt32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_CURTAGWITHOUTHIDING_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>* get_CurVhsSlotList()
+		{
+			return ((::System::Collections::Generic::List_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_CURVHSSLOTLIST_OFFSET))(this);
+		}
+
+		::System::UInt32 get_WaitRefreshTagIdx()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_WAITREFRESHTAGIDX_OFFSET))(this);
+		}
+
+		::System::UInt32 get_WaitRefreshTagNew()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA_GET_WAITREFRESHTAGNEW_OFFSET))(this);
+		}
+	};
+}

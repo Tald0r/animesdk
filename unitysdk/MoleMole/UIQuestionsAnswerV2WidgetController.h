@@ -1,0 +1,95 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIQuestionsAnswerWidgetController.h"
+
+namespace MoleMole { class UIQuestionsAnswerCardItemRowWidgetController; }
+namespace MoleMole { class UIQuestionsAnswerChatPlayWidgetController; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_CREATEUIQUESTIONSANSWERCARDITEMROWWIDGETCONTROLLER_OFFSET UNITYSDK_OFFSET(0xBE80540)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_CREATEUIQUESTIONSANSWERCHATPLAYWIDGETCONTROLLER_OFFSET UNITYSDK_OFFSET(0xBE80470)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_ENABLECHEETBUTTON_OFFSET UNITYSDK_OFFSET(0xBE80610)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_GETBUFFTOTALCOUNT_OFFSET UNITYSDK_OFFSET(0xBE80700)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_GETBUFFVIEW_OFFSET UNITYSDK_OFFSET(0xBE80760)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_GETSTARTBLACKTEXT_OFFSET UNITYSDK_OFFSET(0xBE80670)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBE80820)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_CREATEUIQUESTIONSANSWERCARDITEMROWWIDGETCONTROLLER_OFFSET UNITYSDK_OFFSET(0xBE80AE0)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_CREATEUIQUESTIONSANSWERCHATPLAYWIDGETCONTROLLER_OFFSET UNITYSDK_OFFSET(0xBE80BC0)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_ENABLECHEETBUTTON_OFFSET UNITYSDK_OFFSET(0xBE80CA0)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_GETBUFFTOTALCOUNT_OFFSET UNITYSDK_OFFSET(0xBE80D60)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_GETBUFFVIEW_OFFSET UNITYSDK_OFFSET(0xBE80E20)
+#define MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_GETSTARTBLACKTEXT_OFFSET UNITYSDK_OFFSET(0xBE80EE0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIQuestionsAnswerV2WidgetController_TypeDefinitionIndex = 54302;
+
+	class UIQuestionsAnswerV2WidgetController : public ::MoleMole::UIQuestionsAnswerWidgetController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::UIQuestionsAnswerChatPlayWidgetController* CreateUIQuestionsAnswerChatPlayWidgetController()
+		{
+			return ((::MoleMole::UIQuestionsAnswerChatPlayWidgetController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_CREATEUIQUESTIONSANSWERCHATPLAYWIDGETCONTROLLER_OFFSET))(this);
+		}
+
+		::MoleMole::UIQuestionsAnswerCardItemRowWidgetController* CreateUIQuestionsAnswerCardItemRowWidgetController()
+		{
+			return ((::MoleMole::UIQuestionsAnswerCardItemRowWidgetController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_CREATEUIQUESTIONSANSWERCARDITEMROWWIDGETCONTROLLER_OFFSET))(this);
+		}
+
+		::System::Boolean EnableCheetButton()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_ENABLECHEETBUTTON_OFFSET))(this);
+		}
+
+		::System::String* GetStartBlackText(::System::Int32 stageType)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_GETSTARTBLACKTEXT_OFFSET))(this, stageType);
+		}
+
+		::System::Int32 GetBuffTotalCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_GETBUFFTOTALCOUNT_OFFSET))(this);
+		}
+
+		::MoleMole::UIQuestionsAnswerCardItemRowWidgetController* GetBuffView(::System::Int32 buffIndex)
+		{
+			return ((::MoleMole::UIQuestionsAnswerCardItemRowWidgetController*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER_GETBUFFVIEW_OFFSET))(this, buffIndex);
+		}
+
+		::MoleMole::UIQuestionsAnswerCardItemRowWidgetController* __base_CreateUIQuestionsAnswerCardItemRowWidgetController()
+		{
+			return ((::MoleMole::UIQuestionsAnswerCardItemRowWidgetController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_CREATEUIQUESTIONSANSWERCARDITEMROWWIDGETCONTROLLER_OFFSET))(this);
+		}
+
+		::MoleMole::UIQuestionsAnswerChatPlayWidgetController* __base_CreateUIQuestionsAnswerChatPlayWidgetController()
+		{
+			return ((::MoleMole::UIQuestionsAnswerChatPlayWidgetController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_CREATEUIQUESTIONSANSWERCHATPLAYWIDGETCONTROLLER_OFFSET))(this);
+		}
+
+		::System::Boolean __base_EnableCheetButton()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_ENABLECHEETBUTTON_OFFSET))(this);
+		}
+
+		::System::Int32 __base_GetBuffTotalCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_GETBUFFTOTALCOUNT_OFFSET))(this);
+		}
+
+		::MoleMole::UIQuestionsAnswerCardItemRowWidgetController* __base_GetBuffView(::System::Int32 P0)
+		{
+			return ((::MoleMole::UIQuestionsAnswerCardItemRowWidgetController*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_GETBUFFVIEW_OFFSET))(this, P0);
+		}
+
+		::System::String* __base_GetStartBlackText(::System::Int32 P0)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERV2WIDGETCONTROLLER___BASE_GETSTARTBLACKTEXT_OFFSET))(this, P0);
+		}
+	};
+}

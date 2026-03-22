@@ -1,9 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace RPG::Client { class IAssetOperation; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_443_TypeDefinitionIndex = 46842;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_443_TypeDefinitionIndex = 55979;
 
 class Class_0_16E4307DCC419505_443
 {

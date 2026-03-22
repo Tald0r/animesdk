@@ -7,17 +7,23 @@ namespace System { class String; }
 namespace System { class Type; }
 namespace System::Reflection::Emit { class TypeBuilder; }
 
-#define SYSTEM_REFLECTION_EMIT_MODULEBUILDER_DEFINETYPE_1_OFFSET UNITYSDK_OFFSET(0x15CBAB40)
-#define SYSTEM_REFLECTION_EMIT_MODULEBUILDER_DEFINETYPE_2_OFFSET UNITYSDK_OFFSET(0x15CBAB90)
-#define SYSTEM_REFLECTION_EMIT_MODULEBUILDER_DEFINETYPE_OFFSET UNITYSDK_OFFSET(0x15CBAAF0)
+#define SYSTEM_REFLECTION_EMIT_MODULEBUILDER_DEFINETYPE_1_OFFSET UNITYSDK_OFFSET(0x192BA400)
+#define SYSTEM_REFLECTION_EMIT_MODULEBUILDER_DEFINETYPE_2_OFFSET UNITYSDK_OFFSET(0x192BA450)
+#define SYSTEM_REFLECTION_EMIT_MODULEBUILDER_DEFINETYPE_OFFSET UNITYSDK_OFFSET(0x192BA3B0)
+#define SYSTEM_REFLECTION_EMIT_MODULEBUILDER__CTOR_OFFSET UNITYSDK_OFFSET(0x192BA4A0)
 
 namespace System::Reflection::Emit
 {
-	inline static constexpr unsigned int ModuleBuilder_TypeDefinitionIndex = 649;
+	inline static constexpr unsigned int ModuleBuilder_TypeDefinitionIndex = 620;
 
 	class ModuleBuilder : public ::System::Reflection::Module
 	{
 	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_MODULEBUILDER__CTOR_OFFSET))(this);
+		}
+
 		::System::Reflection::Emit::TypeBuilder* DefineType(::System::String* name, ::System::Reflection::TypeAttributes attr)
 		{
 			return ((::System::Reflection::Emit::TypeBuilder*(*)(::PVOID, ::System::String*, ::System::Reflection::TypeAttributes))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_MODULEBUILDER_DEFINETYPE_OFFSET))(this, name, attr);

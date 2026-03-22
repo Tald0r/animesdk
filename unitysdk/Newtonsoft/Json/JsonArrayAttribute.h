@@ -2,18 +2,46 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Newtonsoft/Json/JsonContainerAttribute.h"
 
-#define NEWTONSOFT_JSON_JSONARRAYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x15D8C0B0)
+namespace System { class String; }
+
+#define NEWTONSOFT_JSON_JSONARRAYATTRIBUTE_GET_ALLOWNULLITEMS_OFFSET UNITYSDK_OFFSET(0x1B108200)
+#define NEWTONSOFT_JSON_JSONARRAYATTRIBUTE_SET_ALLOWNULLITEMS_OFFSET UNITYSDK_OFFSET(0x1B108210)
+#define NEWTONSOFT_JSON_JSONARRAYATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B108230)
+#define NEWTONSOFT_JSON_JSONARRAYATTRIBUTE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1B108240)
+#define NEWTONSOFT_JSON_JSONARRAYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B108220)
 
 namespace Newtonsoft::Json
 {
-	inline static constexpr unsigned int JsonArrayAttribute_TypeDefinitionIndex = 8071;
+	inline static constexpr unsigned int JsonArrayAttribute_TypeDefinitionIndex = 6853;
 
 	class JsonArrayAttribute : public ::Newtonsoft::Json::JsonContainerAttribute
 	{
 	public:
+		::System::Boolean _allowNullItems; // 0x68
+
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONARRAYATTRIBUTE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::Boolean allowNullItems)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONARRAYATTRIBUTE__CTOR_1_OFFSET))(this, allowNullItems);
+		}
+
+		::System::Void _ctor_2(::System::String* id)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONARRAYATTRIBUTE__CTOR_2_OFFSET))(this, id);
+		}
+
+		::System::Boolean get_AllowNullItems()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONARRAYATTRIBUTE_GET_ALLOWNULLITEMS_OFFSET))(this);
+		}
+
+		::System::Void set_AllowNullItems(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONARRAYATTRIBUTE_SET_ALLOWNULLITEMS_OFFSET))(this, value);
 		}
 	};
 }

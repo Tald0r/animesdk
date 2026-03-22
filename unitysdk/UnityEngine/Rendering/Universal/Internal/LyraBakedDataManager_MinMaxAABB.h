@@ -1,0 +1,98 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_CALCULATECENTER_OFFSET UNITYSDK_OFFSET(0x7ECBE0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_CALCULATEEXTENT_OFFSET UNITYSDK_OFFSET(0x7ECC80)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_CALCULATESIZE_OFFSET UNITYSDK_OFFSET(0x7ECD20)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_EXPAND_1_OFFSET UNITYSDK_OFFSET(0x7ECDC0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_EXPAND_OFFSET UNITYSDK_OFFSET(0x7ECDB0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_INIT_OFFSET UNITYSDK_OFFSET(0x7ECB70)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_INTERSECT_OFFSET UNITYSDK_OFFSET(0x7ECE60)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_ISVALID_OFFSET UNITYSDK_OFFSET(0x7ECE50)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_OVERLAP_OFFSET UNITYSDK_OFFSET(0x7ECEF0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB__CTOR_1_OFFSET UNITYSDK_OFFSET(0x7ECAD0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB__CTOR_2_OFFSET UNITYSDK_OFFSET(0x7ECAF0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB__CTOR_3_OFFSET UNITYSDK_OFFSET(0x7ECB30)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB__CTOR_OFFSET UNITYSDK_OFFSET(0x310080)
+
+namespace UnityEngine::Rendering::Universal::Internal
+{
+	inline static constexpr unsigned int LyraBakedDataManager_MinMaxAABB_TypeDefinitionIndex = 28995;
+
+	struct alignas(4) LyraBakedDataManager_MinMaxAABB
+	{
+		::UnityEngine::Vector3 m_Min; // 0x10
+		::UnityEngine::Vector3 m_Max; // 0x1C
+
+		::System::Void _ctor(::UnityEngine::Vector3 inMin, ::UnityEngine::Vector3 inMax)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB__CTOR_OFFSET))(this, inMin, inMax);
+		}
+
+		::System::Void _ctor_1(::UnityEngine::Vector3& inMin, ::UnityEngine::Vector3& inMax)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3&, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB__CTOR_1_OFFSET))(this, inMin, inMax);
+		}
+
+		/*
+		::System::Void _ctor_2(::UnityEngine::Bounds& bounds)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Bounds&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB__CTOR_2_OFFSET))(this, bounds);
+		}
+		*/
+
+		/*
+		::System::Void _ctor_3(::UnityEngine::Bounds bounds)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Bounds))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB__CTOR_3_OFFSET))(this, bounds);
+		}
+		*/
+
+		::System::Void Init()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_INIT_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 CalculateCenter()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_CALCULATECENTER_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 CalculateExtent()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_CALCULATEEXTENT_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 CalculateSize()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_CALCULATESIZE_OFFSET))(this);
+		}
+
+		::System::Void Expand(::System::Single offset)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_EXPAND_OFFSET))(this, offset);
+		}
+
+		::System::Void Expand_1(::UnityEngine::Vector3& offset)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_EXPAND_1_OFFSET))(this, offset);
+		}
+
+		::System::Boolean IsValid()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_ISVALID_OFFSET))(this);
+		}
+
+		::System::Boolean Intersect(::UnityEngine::Rendering::Universal::Internal::LyraBakedDataManager_MinMaxAABB& other)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Rendering::Universal::Internal::LyraBakedDataManager_MinMaxAABB&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_INTERSECT_OFFSET))(this, other);
+		}
+
+		::UnityEngine::Rendering::Universal::Internal::LyraBakedDataManager_MinMaxAABB Overlap(::UnityEngine::Rendering::Universal::Internal::LyraBakedDataManager_MinMaxAABB& other)
+		{
+			return ((::UnityEngine::Rendering::Universal::Internal::LyraBakedDataManager_MinMaxAABB(*)(::PVOID, ::UnityEngine::Rendering::Universal::Internal::LyraBakedDataManager_MinMaxAABB&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_MINMAXAABB_OVERLAP_OFFSET))(this, other);
+		}
+	};
+}

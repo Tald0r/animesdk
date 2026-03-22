@@ -1,7 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_421_TypeDefinitionIndex = 56083;
+class Class_1_8922DBE482CC1BA4;
+
+inline static constexpr unsigned int Class_0_16E4307DCC419505_421_TypeDefinitionIndex = 52882;
 
 class Class_0_16E4307DCC419505_421
 {

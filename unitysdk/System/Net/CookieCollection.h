@@ -5,46 +5,66 @@
 #include "unitysdk/System/Object.h"
 
 namespace System { class Array; }
+namespace System { class String; }
 namespace System::Collections { class ArrayList; }
 namespace System::Collections { class IEnumerator; }
 namespace System::Net { class Cookie; }
 
-#define SYSTEM_NET_COOKIECOLLECTION_ADD_1_OFFSET UNITYSDK_OFFSET(0x17EA5BD0)
-#define SYSTEM_NET_COOKIECOLLECTION_ADD_OFFSET UNITYSDK_OFFSET(0x17EA5710)
-#define SYSTEM_NET_COOKIECOLLECTION_COPYTO_OFFSET UNITYSDK_OFFSET(0x17EA5F80)
-#define SYSTEM_NET_COOKIECOLLECTION_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x17EA5ED0)
-#define SYSTEM_NET_COOKIECOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x17EA5F30)
-#define SYSTEM_NET_COOKIECOLLECTION_GET_ISOTHERVERSIONSEEN_OFFSET UNITYSDK_OFFSET(0x17EA6080)
-#define SYSTEM_NET_COOKIECOLLECTION_GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x17EA5F60)
-#define SYSTEM_NET_COOKIECOLLECTION_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x17EA5650)
-#define SYSTEM_NET_COOKIECOLLECTION_GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x17EA5F70)
-#define SYSTEM_NET_COOKIECOLLECTION_INDEXOF_OFFSET UNITYSDK_OFFSET(0x17EA57D0)
-#define SYSTEM_NET_COOKIECOLLECTION_INTERNALADD_OFFSET UNITYSDK_OFFSET(0x17EA6090)
-#define SYSTEM_NET_COOKIECOLLECTION_REMOVEAT_OFFSET UNITYSDK_OFFSET(0x17EA6580)
-#define SYSTEM_NET_COOKIECOLLECTION_TIMESTAMP_OFFSET UNITYSDK_OFFSET(0x17EA5FB0)
-#define SYSTEM_NET_COOKIECOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x17EA55F0)
+#define SYSTEM_NET_COOKIECOLLECTION_ADD_1_OFFSET UNITYSDK_OFFSET(0x1900C080)
+#define SYSTEM_NET_COOKIECOLLECTION_ADD_OFFSET UNITYSDK_OFFSET(0x1900BBA0)
+#define SYSTEM_NET_COOKIECOLLECTION_COPYTO_1_OFFSET UNITYSDK_OFFSET(0x1900C4B0)
+#define SYSTEM_NET_COOKIECOLLECTION_COPYTO_OFFSET UNITYSDK_OFFSET(0x1900C480)
+#define SYSTEM_NET_COOKIECOLLECTION_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1900C3B0)
+#define SYSTEM_NET_COOKIECOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x1900C430)
+#define SYSTEM_NET_COOKIECOLLECTION_GET_ISOTHERVERSIONSEEN_OFFSET UNITYSDK_OFFSET(0x1900C5B0)
+#define SYSTEM_NET_COOKIECOLLECTION_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x1900B780)
+#define SYSTEM_NET_COOKIECOLLECTION_GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x1900C460)
+#define SYSTEM_NET_COOKIECOLLECTION_GET_ITEM_1_OFFSET UNITYSDK_OFFSET(0x1900B850)
+#define SYSTEM_NET_COOKIECOLLECTION_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x1900B790)
+#define SYSTEM_NET_COOKIECOLLECTION_GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x1900C470)
+#define SYSTEM_NET_COOKIECOLLECTION_INDEXOF_OFFSET UNITYSDK_OFFSET(0x1900BC60)
+#define SYSTEM_NET_COOKIECOLLECTION_INTERNALADD_OFFSET UNITYSDK_OFFSET(0x1900C5C0)
+#define SYSTEM_NET_COOKIECOLLECTION_REMOVEAT_OFFSET UNITYSDK_OFFSET(0x1900CAD0)
+#define SYSTEM_NET_COOKIECOLLECTION_TIMESTAMP_OFFSET UNITYSDK_OFFSET(0x1900C4E0)
+#define SYSTEM_NET_COOKIECOLLECTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1900B720)
+#define SYSTEM_NET_COOKIECOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1900B6C0)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int CookieCollection_TypeDefinitionIndex = 2780;
+	inline static constexpr unsigned int CookieCollection_TypeDefinitionIndex = 3420;
 
 	class CookieCollection : public ::System::Object
 	{
 	public:
 		::System::Collections::ArrayList* m_list; // 0x10
-		::System::DateTime m_TimeStamp; // 0x18
-		::System::Boolean m_has_other_versions; // 0x20
-		::System::Boolean m_IsReadOnly; // 0x21
-		::System::Int32 m_version; // 0x24
+		::System::Boolean m_IsReadOnly; // 0x18
+		::System::Boolean m_has_other_versions; // 0x19
+		::System::Int32 m_version; // 0x1C
+		::System::DateTime m_TimeStamp; // 0x20
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIECOLLECTION__CTOR_OFFSET))(this);
 		}
 
+		::System::Void _ctor_1(::System::Boolean IsReadOnly)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIECOLLECTION__CTOR_1_OFFSET))(this, IsReadOnly);
+		}
+
+		::System::Boolean get_IsReadOnly()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIECOLLECTION_GET_ISREADONLY_OFFSET))(this);
+		}
+
 		::System::Net::Cookie* get_Item(::System::Int32 index)
 		{
 			return ((::System::Net::Cookie*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIECOLLECTION_GET_ITEM_OFFSET))(this, index);
+		}
+
+		::System::Net::Cookie* get_Item_1(::System::String* name)
+		{
+			return ((::System::Net::Cookie*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIECOLLECTION_GET_ITEM_1_OFFSET))(this, name);
 		}
 
 		::System::Void Add(::System::Net::Cookie* cookie)
@@ -75,6 +95,11 @@ namespace System::Net
 		::System::Void CopyTo(::System::Array* array, ::System::Int32 index)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Array*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIECOLLECTION_COPYTO_OFFSET))(this, array, index);
+		}
+
+		::System::Void CopyTo_1(::Il2CppArray<::System::Net::Cookie*>* array, ::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Net::Cookie*>*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_COOKIECOLLECTION_COPYTO_1_OFFSET))(this, array, index);
 		}
 
 		::System::DateTime TimeStamp(::System::Net::CookieCollection_Stamp how)

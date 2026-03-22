@@ -1,0 +1,138 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/UIInLevelOnlineSkillInfoTipRowWidgetController_EState.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_49ABC235CB23B56F.h"
+
+class Class_2_A7E0AEFF6CC574ED;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace System::Threading { class CancellationTokenSource; }
+
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_GET_STATE_OFFSET UNITYSDK_OFFSET(0xA3B97F0)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_GET_TIMEUP_OFFSET UNITYSDK_OFFSET(0xA3B9810)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xA3B8B10)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3B8C40)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3B8CE0)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3B87F0)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3B8B90)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_PLAYFADEINANIM_OFFSET UNITYSDK_OFFSET(0xA3B92F0)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_PLAYFADEOUTANIM_OFFSET UNITYSDK_OFFSET(0xA3B9480)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xA3B8E60)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_SET_STATE_OFFSET UNITYSDK_OFFSET(0xA3B9800)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_SKIPFADEOUTANIMTOHIDE_OFFSET UNITYSDK_OFFSET(0xA3B96D0)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA3B9830)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER__PLAYFADEOUTANIM_B__7_0_OFFSET UNITYSDK_OFFSET(0xA3B9860)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3B98B0)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3B9920)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3B99A0)
+#define MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3B9A00)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelOnlineSkillInfoTipRowWidgetController_TypeDefinitionIndex = 64364;
+
+	class UIInLevelOnlineSkillInfoTipRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* FADE_IN_ANIM_NAME; // 0x0
+		// static const ::System::String* FADE_OUT_ANIM_NAME; // 0x0
+		::Class_2_A7E0AEFF6CC574ED* _view; // 0x2A0
+		::MoleMole::UIInLevelOnlineSkillInfoTipRowWidgetController_EState _State_k__BackingField; // 0x2A8
+		::Struct_2_49ABC235CB23B56F TimeUpTimerHandle; // 0x2B0
+		::System::Threading::CancellationTokenSource* _fadeOutAnimCts; // 0x2C0
+		::Foundation::Coroutine::CoroutineHandle _fadeOutCoroutineHandle; // 0x2C8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean RefreshView(::System::Int32 peerID, ::System::Int32 energyDelta, ::System::Int32 operateType)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, peerID, energyDelta, operateType);
+		}
+
+		::System::Void PlayFadeInAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_PLAYFADEINANIM_OFFSET))(this);
+		}
+
+		::System::Void PlayFadeOutAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_PLAYFADEOUTANIM_OFFSET))(this);
+		}
+
+		::System::Void SkipFadeOutAnimToHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_SKIPFADEOUTANIMTOHIDE_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::MoleMole::UIInLevelOnlineSkillInfoTipRowWidgetController_EState get_State()
+		{
+			return ((::MoleMole::UIInLevelOnlineSkillInfoTipRowWidgetController_EState(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_GET_STATE_OFFSET))(this);
+		}
+
+		::System::Void set_State(::MoleMole::UIInLevelOnlineSkillInfoTipRowWidgetController_EState value)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIInLevelOnlineSkillInfoTipRowWidgetController_EState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_SET_STATE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_TimeUp()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER_GET_TIMEUP_OFFSET))(this);
+		}
+
+		::System::Void _PlayFadeOutAnim_b__7_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER__PLAYFADEOUTANIM_B__7_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELONLINESKILLINFOTIPROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -3,35 +3,36 @@
 #include "unitysdk/System/Attribute.h"
 
 namespace System { class String; }
+namespace System::Text { class StringBuilder; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLANYELEMENTATTRIBUTE_GET_NAMESPACE_OFFSET UNITYSDK_OFFSET(0x17DAAFE0)
-#define SYSTEM_XML_SERIALIZATION_XMLANYELEMENTATTRIBUTE_GET_NAME_OFFSET UNITYSDK_OFFSET(0x17DAAFC0)
-#define SYSTEM_XML_SERIALIZATION_XMLANYELEMENTATTRIBUTE_GET_ORDER_OFFSET UNITYSDK_OFFSET(0x17DAAFF0)
+#define SYSTEM_XML_SERIALIZATION_XMLANYELEMENTATTRIBUTE_ADDKEYHASH_OFFSET UNITYSDK_OFFSET(0x199C4C40)
+#define SYSTEM_XML_SERIALIZATION_XMLANYELEMENTATTRIBUTE_GET_NAME_OFFSET UNITYSDK_OFFSET(0x199C4C20)
+#define SYSTEM_XML_SERIALIZATION_XMLANYELEMENTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x199C4C10)
 
 namespace System::Xml::Serialization
 {
-	inline static constexpr unsigned int XmlAnyElementAttribute_TypeDefinitionIndex = 1980;
+	inline static constexpr unsigned int XmlAnyElementAttribute_TypeDefinitionIndex = 1874;
 
 	class XmlAnyElementAttribute : public ::System::Attribute
 	{
 	public:
-		::System::String* elementName; // 0x10
-		::System::String* ns; // 0x18
+		::System::String* ns; // 0x10
+		::System::String* elementName; // 0x18
 		::System::Int32 order; // 0x20
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLANYELEMENTATTRIBUTE__CTOR_OFFSET))(this);
+		}
 
 		::System::String* get_Name()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLANYELEMENTATTRIBUTE_GET_NAME_OFFSET))(this);
 		}
 
-		::System::String* get_Namespace()
+		::System::Void AddKeyHash(::System::Text::StringBuilder* sb)
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLANYELEMENTATTRIBUTE_GET_NAMESPACE_OFFSET))(this);
-		}
-
-		::System::Int32 get_Order()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLANYELEMENTATTRIBUTE_GET_ORDER_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Text::StringBuilder*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLANYELEMENTATTRIBUTE_ADDKEYHASH_OFFSET))(this, sb);
 		}
 	};
 }

@@ -1,0 +1,120 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_3076E7144CA9F588;
+class Class_2_79AE422BA06F6D26_196;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIPlayerSkinSwitchRoleCardWidgetControllerContext; }
+namespace MoleMole { class UIPlayerSkinSwitchRoleCardWidgetControllerContext_AvatarForm; }
+namespace System { class Action; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_GET_MODEL_OFFSET UNITYSDK_OFFSET(0xB25F8D0)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xB25F850)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB25F9A0)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xB2602A0)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB25FB20)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB25FA40)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB25F630)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_REFRESHBYUICONTEXT_1_OFFSET UNITYSDK_OFFSET(0xB25FF30)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_REFRESHBYUICONTEXT_OFFSET UNITYSDK_OFFSET(0xB25FC40)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB2603A0)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xB2603B0)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB2603C0)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xB260430)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB2604A0)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB260520)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB2605A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPlayerSkinSwitchRoleCardWidgetController_TypeDefinitionIndex = 64300;
+
+	class UIPlayerSkinSwitchRoleCardWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_196* _view; // 0x2D0
+		::System::Action* _onClickItemAction; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::Class_2_3076E7144CA9F588* get_Model()
+		{
+			return ((::Class_2_3076E7144CA9F588*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_GET_MODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void RefreshByUIContext(::MoleMole::UIPlayerSkinSwitchRoleCardWidgetControllerContext* ctx)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIPlayerSkinSwitchRoleCardWidgetControllerContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_REFRESHBYUICONTEXT_OFFSET))(this, ctx);
+		}
+
+		::System::Void RefreshByUIContext_1(::MoleMole::UIPlayerSkinSwitchRoleCardWidgetControllerContext_AvatarForm* ctx)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIPlayerSkinSwitchRoleCardWidgetControllerContext_AvatarForm*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_REFRESHBYUICONTEXT_1_OFFSET))(this, ctx);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void __base_OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

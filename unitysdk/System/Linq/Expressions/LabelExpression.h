@@ -7,27 +7,33 @@ namespace System { class Type; }
 namespace System::Linq::Expressions { class ExpressionVisitor; }
 namespace System::Linq::Expressions { class LabelTarget; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x17CFEFC0)
-#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_GET_DEFAULTVALUE_OFFSET UNITYSDK_OFFSET(0x17CFEFB0)
-#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x17CFEF90)
-#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_GET_TARGET_OFFSET UNITYSDK_OFFSET(0x17CFEFA0)
-#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x17CFEF70)
-#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_UPDATE_OFFSET UNITYSDK_OFFSET(0x17CFEFF0)
-#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17CFEF00)
+#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x197472B0)
+#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_GET_DEFAULTVALUE_OFFSET UNITYSDK_OFFSET(0x197472A0)
+#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x19747280)
+#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_GET_TARGET_OFFSET UNITYSDK_OFFSET(0x19747290)
+#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x197423C0)
+#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION_UPDATE_OFFSET UNITYSDK_OFFSET(0x197472E0)
+#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19747360)
+#define SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x1972EAF0)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int LabelExpression_TypeDefinitionIndex = 3203;
+	inline static constexpr unsigned int LabelExpression_TypeDefinitionIndex = 4490;
 
 	class LabelExpression : public ::System::Linq::Expressions::Expression
 	{
 	public:
-		::System::Linq::Expressions::Expression* _DefaultValue_k__BackingField; // 0x10
-		::System::Linq::Expressions::LabelTarget* _Target_k__BackingField; // 0x18
+		::System::Linq::Expressions::LabelTarget* _Target_k__BackingField; // 0x10
+		::System::Linq::Expressions::Expression* _DefaultValue_k__BackingField; // 0x18
 
 		::System::Void _ctor(::System::Linq::Expressions::LabelTarget* label, ::System::Linq::Expressions::Expression* defaultValue)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Linq::Expressions::LabelTarget*, ::System::Linq::Expressions::Expression*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION__CTOR_OFFSET))(this, label, defaultValue);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_LABELEXPRESSION__CTOR_1_OFFSET))(this);
 		}
 
 		::System::Type* get_Type()

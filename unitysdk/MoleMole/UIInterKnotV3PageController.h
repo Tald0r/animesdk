@@ -1,0 +1,901 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_1F219549AE9B7C82_Enum_3_F1DF3CE6FAEE3AB7.h"
+#include "unitysdk/Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00.h"
+#include "unitysdk/Enum_3_0A7046221EDB878A.h"
+#include "unitysdk/Enum_3_205E43D40B9E7AEA.h"
+#include "unitysdk/Enum_3_2EF95CAD9F4FAEA2.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_AB9CCA0B2E05A401.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/EUILayoutPlatform.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIInterKnotV3PageContext_MissionFocusItemStyle.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/System/Nullable_1.h"
+
+class Class_0_16E4307DCC419505_218;
+class Class_1_2181504E881DDEE4;
+class Class_1_48D56DACBE4271BC;
+class Class_1_A11CB4C08EF906E4;
+class Class_1_D15EABFC012D3014;
+class Class_2_79F6D62CE30E3F8E_131;
+class Class_3_179E5BE5492E987F;
+namespace MoleMole { class ConfigNewbie_HighLightDynamicData; }
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class MonoGamepadNavigatableList; }
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIBaseController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralBtn03WidgetController; }
+namespace MoleMole { class UIGeneralNewsBubbleWidgetController; }
+namespace MoleMole { class UIGeneralPlayerExpBtnWidgetController; }
+namespace MoleMole { class UIGeneralSortWidgetController; }
+namespace MoleMole { class UIInterKnotMissionWidgetController; }
+namespace MoleMole { class UIInterKnotNewsMissionRowWidgetController; }
+namespace MoleMole { class UIInterKnotPageConfig; }
+namespace MoleMole { class UIInterKnowCoursePanelWidgetController; }
+namespace MoleMole { class UIWidgetController; }
+namespace MoleMole::GalGame { class MainCityChatShowUIConfig_OnCloseWithIndex; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Animation; }
+template <typename T> class Class_2_7AE1A22930C1CD01;
+
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ACTIVEINPUT_OFFSET UNITYSDK_OFFSET(0xA1F27F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_BINDPROPERTY_OFFSET UNITYSDK_OFFSET(0xA1E8B90)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_BIND_OFFSET UNITYSDK_OFFSET(0xA1EC500)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CHECKSOCIALUNLOCK_OFFSET UNITYSDK_OFFSET(0xA1E9250)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CHECKSOCIAL_OFFSET UNITYSDK_OFFSET(0xAF2AF60)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CLEARCURRENTMULTINEW_OFFSET UNITYSDK_OFFSET(0xA1F3F60)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CLEAR_OFFSET UNITYSDK_OFFSET(0xAF2A540)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CLOSEGUIDEUI_OFFSET UNITYSDK_OFFSET(0xA1F3920)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CLOSEINTERKNOT_OFFSET UNITYSDK_OFFSET(0xAF2DAC0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_DEACTIVEINPUT_OFFSET UNITYSDK_OFFSET(0xA1F29F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_DOEXPANIMATION_OFFSET UNITYSDK_OFFSET(0xA1E9610)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_FILTERSORT_OFFSET UNITYSDK_OFFSET(0xA1F4250)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_FOCUSCONFRIM_OFFSET UNITYSDK_OFFSET(0xA1F2680)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_FOCUSINPUT_OFFSET UNITYSDK_OFFSET(0xA1F24A0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GETJUMPMANUALTIME_OFFSET UNITYSDK_OFFSET(0xA1F0B40)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GETNEWBIEDYNAMICOBJECT_OFFSET UNITYSDK_OFFSET(0xA1EF5E0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GETREWARDLISTBYREWARDQUESTID_OFFSET UNITYSDK_OFFSET(0xA1F3D10)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GETREWARDQUESTIDBYQUESTGROUPID_OFFSET UNITYSDK_OFFSET(0xA1F3AE0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GETTABINDEX_OFFSET UNITYSDK_OFFSET(0xA1F0680)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GET_CANOPENNEWBIEMASK_OFFSET UNITYSDK_OFFSET(0xA1E85D0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GET_MESSAGEMATCHPAGE_OFFSET UNITYSDK_OFFSET(0xA1E85E0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xA1E85C0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GONEWBIE_OFFSET UNITYSDK_OFFSET(0xA1F0A60)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_HASFILTERSELECTION_OFFSET UNITYSDK_OFFSET(0xA1EE5A0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_HASQUESTKNOTPOST_OFFSET UNITYSDK_OFFSET(0xAF2DC70)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xA1E85F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITINTERKNOTREWARDS_OFFSET UNITYSDK_OFFSET(0xAF2C8F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITINTERKNOTTYPENAME_OFFSET UNITYSDK_OFFSET(0xA1EC040)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITPLAYEREXPBTN_OFFSET UNITYSDK_OFFSET(0xA1EC260)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITSOCIALSHOP_OFFSET UNITYSDK_OFFSET(0xA1ED4D0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITSORT_OFFSET UNITYSDK_OFFSET(0xA1EBB90)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISCIRCLEOPEN_OFFSET UNITYSDK_OFFSET(0xA1E9490)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISNEEDGUID_OFFSET UNITYSDK_OFFSET(0xA1F0AD0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISNEEDSETNAME_OFFSET UNITYSDK_OFFSET(0xA1ED370)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISPOSTOPEN_OFFSET UNITYSDK_OFFSET(0xA1E9310)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISTRACKINGPERSONALQUEST_OFFSET UNITYSDK_OFFSET(0xAF2E660)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISTRACKKNOTPOST_OFFSET UNITYSDK_OFFSET(0xAF2E0E0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_NORMALSETNAMEUI_OFFSET UNITYSDK_OFFSET(0xA1F2BF0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA1E86A0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONDROPDOWNSELECT_OFFSET UNITYSDK_OFFSET(0xA1EEA00)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONENDEDITCALL_OFFSET UNITYSDK_OFFSET(0xA1F3070)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONEXPGROWTH_OFFSET UNITYSDK_OFFSET(0xAF2D9C0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONFITTERUNLOCK_OFFSET UNITYSDK_OFFSET(0xAF2E5B0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0xA1F1740)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONGAMEPADMODULEIGNORESETFOCUS_OFFSET UNITYSDK_OFFSET(0xA1F1FB0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0xA1F1DE0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xA1F1440)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONHOME_OFFSET UNITYSDK_OFFSET(0xAF2BB50)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA1F21E0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONINPUTNAMECHANGED_OFFSET UNITYSDK_OFFSET(0xA1F36F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONINTERKNOTPOSTCHANGE_OFFSET UNITYSDK_OFFSET(0xA1F15F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONINTERKNOTPOSTSELECT_OFFSET UNITYSDK_OFFSET(0xA1EA470)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONINTERKNOTREWARDS_OFFSET UNITYSDK_OFFSET(0xAF2C650)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONITEMGET_OFFSET UNITYSDK_OFFSET(0xAF2D4F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xA1EA510)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONLEVELUP_OFFSET UNITYSDK_OFFSET(0xAF2D690)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONMISSION_OFFSET UNITYSDK_OFFSET(0xAF2C2D0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONREFRESHSOCIAL_OFFSET UNITYSDK_OFFSET(0xAF2A920)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONSCROLLBEGIN_OFFSET UNITYSDK_OFFSET(0xA1EEC50)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONSCROLLEND_OFFSET UNITYSDK_OFFSET(0xA1EEEC0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONSETTABBTNSPAGEINDEX_OFFSET UNITYSDK_OFFSET(0xAF2BAC0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xA1EF9D0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONSOCIAL_OFFSET UNITYSDK_OFFSET(0xAF2B290)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA1EF000)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA1EB240)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA1E8740)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONVALIDATEINPUT_OFFSET UNITYSDK_OFFSET(0xA1F32D0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_OPENFILTER_OFFSET UNITYSDK_OFFSET(0xA1F10A0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_OPENGUIDUI_OFFSET UNITYSDK_OFFSET(0xA1F0700)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_OPENSHOP_OFFSET UNITYSDK_OFFSET(0xA1F4450)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_QUESTUNLOCKANDNOTINPERSONAL_OFFSET UNITYSDK_OFFSET(0xAF2DF20)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_REFRESHKNOTPOSTFOLLOWQUESTHINT_OFFSET UNITYSDK_OFFSET(0xAF2E3A0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_REFRESHONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xA1EB040)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_REFRESHRUNTIMEINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA1EA790)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_REFRESHSOCIALBTNSTATE_OFFSET UNITYSDK_OFFSET(0xA1EDA80)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_REFRESHTAKEALLREWARDSBTN_OFFSET UNITYSDK_OFFSET(0xAF2D230)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SAMPLEANIM_OFFSET UNITYSDK_OFFSET(0xAF2D3F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SAVESORT_OFFSET UNITYSDK_OFFSET(0xA1EF320)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETFORUMPANELSHOW_OFFSET UNITYSDK_OFFSET(0xA1EA8A0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETNAMELIMITHINT_OFFSET UNITYSDK_OFFSET(0xA1F3460)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETNEWSREWARDSTATE_OFFSET UNITYSDK_OFFSET(0xA1F1CA0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETTABBTNSPAGEINDEX_OFFSET UNITYSDK_OFFSET(0xAF2B9E0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETTABCLICK_OFFSET UNITYSDK_OFFSET(0xA1EED80)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETUPFOCUSITEMSTYLE_OFFSET UNITYSDK_OFFSET(0xA1EE7C0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SHOULDREFRESHONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xA1EE970)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SHOWINTERKNOTUI_OFFSET UNITYSDK_OFFSET(0xA1F12A0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_TOPSWITCHTOSOCIAL_OFFSET UNITYSDK_OFFSET(0xA1F4580)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_TRANSITIONORCLOSE_OFFSET UNITYSDK_OFFSET(0xAF2DBB0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_TRIMVALIDVALUE_OFFSET UNITYSDK_OFFSET(0xA1F3150)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_U13SETNAMEUI_OFFSET UNITYSDK_OFFSET(0xA1EAC40)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BINDPROPERTY_B__29_0_OFFSET UNITYSDK_OFFSET(0xAF2E9F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BINDPROPERTY_B__29_1_OFFSET UNITYSDK_OFFSET(0xAF2EE10)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BINDPROPERTY_B__29_2_OFFSET UNITYSDK_OFFSET(0xAF2F400)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BINDPROPERTY_B__29_3_OFFSET UNITYSDK_OFFSET(0xAF2F9F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BIND_B__81_0_OFFSET UNITYSDK_OFFSET(0xAF30300)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BIND_B__81_10_OFFSET UNITYSDK_OFFSET(0xAF30500)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BIND_B__81_11_OFFSET UNITYSDK_OFFSET(0xAF30520)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BIND_B__81_5_OFFSET UNITYSDK_OFFSET(0xAF30530)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xAF2E880)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__CLOSEGUIDEUI_B__66_0_OFFSET UNITYSDK_OFFSET(0xAF2FC60)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__CLOSEGUIDEUI_B__66_1_OFFSET UNITYSDK_OFFSET(0xAF2FF00)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAF2E6C0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__INITINTERKNOTREWARDS_B__105_0_OFFSET UNITYSDK_OFFSET(0xAF30900)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__INITINTERKNOTREWARDS_B__105_1_OFFSET UNITYSDK_OFFSET(0xAF30910)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__INITINTERKNOTREWARDS_B__105_3_OFFSET UNITYSDK_OFFSET(0xAF30920)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__INITSORT_B__85_0_OFFSET UNITYSDK_OFFSET(0xAF30540)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONREFRESHSOCIAL_B__95_0_OFFSET UNITYSDK_OFFSET(0xAF30870)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONREFRESHSOCIAL_B__95_2_OFFSET UNITYSDK_OFFSET(0xAF308F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONREFRESHSOCIAL_G__REFRESH_95_1_OFFSET UNITYSDK_OFFSET(0xAF2AC00)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONUIINIT_B__33_0_OFFSET UNITYSDK_OFFSET(0xAF2FBD0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONUIINIT_B__33_1_OFFSET UNITYSDK_OFFSET(0xAF2FBE0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONUIOPEN_B__27_0_OFFSET UNITYSDK_OFFSET(0xAF2E9E0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__OPENFILTER_B__77_0_OFFSET UNITYSDK_OFFSET(0xAF2FFE0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__SETFORUMPANELSHOW_B__80_0_OFFSET UNITYSDK_OFFSET(0xAF302B0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__TOPSWITCHTOSOCIAL_B__92_0_OFFSET UNITYSDK_OFFSET(0xAF307F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__TOPSWITCHTOSOCIAL_B__92_1_OFFSET UNITYSDK_OFFSET(0xAF30830)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__TRANSITIONORCLOSE_B__111_0_OFFSET UNITYSDK_OFFSET(0xAF30C50)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_GETNEWBIEDYNAMICOBJECT_OFFSET UNITYSDK_OFFSET(0xAF31200)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xAF31270)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAF312D0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0xAF31340)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONGAMEPADMODULEIGNORESETFOCUS_OFFSET UNITYSDK_OFFSET(0xAF313B0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0xAF31420)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0xAF31490)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xAF314F0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xAF31520)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xAF31580)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAF31590)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAF315A0)
+#define MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAF315B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInterKnotV3PageController_TypeDefinitionIndex = 63892;
+
+	class UIInterKnotV3PageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>** StaticGet_ConditionKeyMap()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotV3PageController_TypeDefinitionIndex)->GetStaticField(0x34FD0);
+		}
+		// static const ::System::String* BLUE_POINT_PATH; // 0x0
+		// static const ::System::String* InterKnotPageSignUpFadeOut; // 0x0
+		// static const ::System::String* InterKnotPageSignUpFadeIn; // 0x0
+		// static const ::System::String* InterKnotPageFadeIn; // 0x0
+		::MoleMole::UIInterKnowCoursePanelWidgetController* journeyWidget; // 0x2F8
+		::MoleMole::GalGame::MainCityChatShowUIConfig_OnCloseWithIndex* _onCloseWithIndexAction; // 0x300
+		::Class_2_79F6D62CE30E3F8E_131* _view; // 0x308
+		::System::Boolean _newBieMask; // 0x310
+		::MoleMole::UIGeneralNewsBubbleWidgetController* _bubbleCtrl; // 0x318
+		::MoleMole::UIInterKnotMissionWidgetController* _missionCtrl; // 0x320
+		::MoleMole::UIInterKnotV3PageContext_MissionFocusItemStyle _focusItemStyle; // 0x328
+		::MoleMole::MonoGamepadNavigatableList* newsList; // 0x338
+		::System::Boolean isSendingName; // 0x340
+		::MoleMole::UIBaseController* fromController; // 0x348
+		::System::Boolean _stopAvatarPhoneAnim; // 0x350
+		::System::String* WaringColor; // 0x358
+		::System::String* NormalColor; // 0x360
+		::System::Int32 parentIndex; // 0x368
+		::System::Int32 nestIndex; // 0x36C
+		::Class_1_48D56DACBE4271BC* syncHelper; // 0x370
+		::MoleMole::UIGeneralSortWidgetController* sortWidget; // 0x378
+		::MoleMole::UIGeneralBtn03WidgetController* refreshBtn; // 0x380
+		::Enum_3_0A7046221EDB878A _focusState; // 0x388
+		::Foundation::Coroutine::CoroutineHandle switchHandle; // 0x38C
+		::System::Nullable_1<::System::Boolean> socialState; // 0x390
+		::System::Boolean _isSocialRefresh; // 0x392
+		::System::Boolean _isSocial; // 0x393
+		::System::Boolean _interKnotRewardsInit; // 0x394
+		::System::String* cacheInputName; // 0x398
+		::Class_1_1F219549AE9B7C82_Enum_3_F1DF3CE6FAEE3AB7 _inputStringResult; // 0x3A0
+		::MoleMole::UIInterKnotPageConfig* _config; // 0x3A8
+		::System::Boolean selectFadeState; // 0x3B0
+		::System::Collections::Generic::List_1<::MoleMole::UIWidgetController*>* itemList; // 0x3B8
+		::System::Collections::Generic::List_1<::Class_1_2181504E881DDEE4*>* manualList; // 0x3C0
+		::MoleMole::UIInterKnotNewsMissionRowWidgetController* currentMissionCtrl; // 0x3C8
+		::Class_3_179E5BE5492E987F* _redDotModel; // 0x3D0
+		::System::Boolean isShow; // 0x3D8
+		::System::Boolean fromMessageJump; // 0x3D9
+		::System::Int32 currentTabBtnsPageIndex; // 0x3DC
+		::System::Int32 curTime; // 0x3E0
+		::System::Single newsScrollValue; // 0x3E4
+		::System::Boolean firstInit; // 0x3E8
+		::System::Boolean isOpenFilterTab; // 0x3E9
+		::System::Boolean isInSignUp; // 0x3EA
+		::Enum_3_2EF95CAD9F4FAEA2 currentInterknotType; // 0x3EC
+		::System::Collections::Generic::List_1<::Enum_3_2EF95CAD9F4FAEA2>* interknotTypes; // 0x3F0
+		::System::Collections::Generic::List_1<::System::String*>* interknotNames; // 0x3F8
+		::System::Collections::Generic::List_1<::System::String*>* interknotRedPoints; // 0x400
+		::System::Collections::Generic::List_1<::System::Boolean>* interknotNotificationState; // 0x408
+		::System::Boolean levelRewardModuleInit; // 0x410
+		::System::Int32 levelRewardStartIdx; // 0x414
+		::MoleMole::UIGeneralPlayerExpBtnWidgetController* _playerExpBtnWidget; // 0x418
+		::Class_1_D15EABFC012D3014* _postProxy; // 0x420
+		::MoleMole::EUILayoutPlatform _layoutPlatform; // 0x428
+		::System::Boolean _isInputFieldShowingWarning; // 0x42C
+		::System::Boolean _isGuidUIOpened; // 0x42D
+		::System::Boolean _isBanSetName; // 0x42E
+		::Class_2_7AE1A22930C1CD01<::Class_0_16E4307DCC419505_218*>* _sorter; // 0x430
+		::System::Boolean needRefreshSocial; // 0x438
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanOpenNewBieMask()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GET_CANOPENNEWBIEMASK_OFFSET))(this);
+		}
+
+		::Enum_3_205E43D40B9E7AEA get_MessageMatchPage()
+		{
+			return ((::Enum_3_205E43D40B9E7AEA(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GET_MESSAGEMATCHPAGE_OFFSET))(this);
+		}
+
+		::System::Void InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void CheckSocialUnlock()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CHECKSOCIALUNLOCK_OFFSET))(this);
+		}
+
+		::System::Void BindProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_BINDPROPERTY_OFFSET))(this);
+		}
+
+		::System::Void DoExpAnimation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_DOEXPANIMATION_OFFSET))(this);
+		}
+
+		::System::Void OnInterknotPostSelect(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONINTERKNOTPOSTSELECT_OFFSET))(this, args);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void InitSocialShop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITSOCIALSHOP_OFFSET))(this);
+		}
+
+		::System::Void RefreshSocialBtnState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_REFRESHSOCIALBTNSTATE_OFFSET))(this);
+		}
+
+		::System::Void SetupFocusItemStyle(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETUPFOCUSITEMSTYLE_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Boolean ShouldRefreshOnLayoutPlatformChanged(::MoleMole::EUILayoutPlatform lastLayout, ::MoleMole::EUILayoutPlatform curLayout)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::EUILayoutPlatform, ::MoleMole::EUILayoutPlatform))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SHOULDREFRESHONLAYOUTPLATFORMCHANGED_OFFSET))(this, lastLayout, curLayout);
+		}
+
+		::System::Void RefreshOnLayoutPlatformChanged(::MoleMole::EUILayoutPlatform oldLayoutPlatform)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::EUILayoutPlatform))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_REFRESHONLAYOUTPLATFORMCHANGED_OFFSET))(this, oldLayoutPlatform);
+		}
+
+		::System::Void OnScrollBegin()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONSCROLLBEGIN_OFFSET))(this);
+		}
+
+		::System::Void SetTabClick(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETTABCLICK_OFFSET))(this, index);
+		}
+
+		::System::Void OnScrollEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONSCROLLEND_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::Class_1_A11CB4C08EF906E4* GetNewbieDynamicObject(::MoleMole::ConfigNewbie_HighLightDynamicData* config)
+		{
+			return ((::Class_1_A11CB4C08EF906E4*(*)(::PVOID, ::MoleMole::ConfigNewbie_HighLightDynamicData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GETNEWBIEDYNAMICOBJECT_OFFSET))(this, config);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONSHOW_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnInterKnotPostChange(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONINTERKNOTPOSTCHANGE_OFFSET))(this, value);
+		}
+
+		static ::Enum_3_AB9CCA0B2E05A401 GetJumpManualTime(::System::Int32 questId, ::System::Int32& realManualID)
+		{
+			return ((::Enum_3_AB9CCA0B2E05A401(*)(::System::Int32, ::System::Int32&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GETJUMPMANUALTIME_OFFSET))(questId, realManualID);
+		}
+
+		::System::Void OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Boolean OnGamepadModuleIgnoreSetFocus(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Boolean focus)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONGAMEPADMODULEIGNORESETFOCUS_OFFSET))(this, gamepadModule, focus);
+		}
+
+		::System::Void RefreshRuntimeInputAction()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_REFRESHRUNTIMEINPUTACTION_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void FocusInput()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_FOCUSINPUT_OFFSET))(this);
+		}
+
+		::System::Void ActiveInput()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ACTIVEINPUT_OFFSET))(this);
+		}
+
+		::System::Void DeactiveInput()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_DEACTIVEINPUT_OFFSET))(this);
+		}
+
+		::System::Void FocusConfrim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_FOCUSCONFRIM_OFFSET))(this);
+		}
+
+		::System::Void OpenGuidUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_OPENGUIDUI_OFFSET))(this);
+		}
+
+		::System::Void NormalSetNameUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_NORMALSETNAMEUI_OFFSET))(this);
+		}
+
+		::System::Void U13SetNameUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_U13SETNAMEUI_OFFSET))(this);
+		}
+
+		::System::Void OnEndEditCall(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONENDEDITCALL_OFFSET))(this, value);
+		}
+
+		::System::String* TrimValidValue(::System::String* value)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_TRIMVALIDVALUE_OFFSET))(this, value);
+		}
+
+		::System::Char OnValidateInput(::System::String* text, ::System::Int32 charIndex, ::System::Char addedChar)
+		{
+			return ((::System::Char(*)(::PVOID, ::System::String*, ::System::Int32, ::System::Char))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONVALIDATEINPUT_OFFSET))(this, text, charIndex, addedChar);
+		}
+
+		::System::Void SetNameLimitHint(::System::Boolean isShow, ::System::String* text)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETNAMELIMITHINT_OFFSET))(this, isShow, text);
+		}
+
+		::System::Void OnInputNameChanged(::System::String* inputName)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONINPUTNAMECHANGED_OFFSET))(this, inputName);
+		}
+
+		::System::Void CloseGuideUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CLOSEGUIDEUI_OFFSET))(this);
+		}
+
+		::System::Void GoNewbie()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GONEWBIE_OFFSET))(this);
+		}
+
+		::System::Void ShowInterknotUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SHOWINTERKNOTUI_OFFSET))(this);
+		}
+
+		::System::Boolean IsNeedSetName()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISNEEDSETNAME_OFFSET))(this);
+		}
+
+		::System::Boolean IsNeedGuid()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISNEEDGUID_OFFSET))(this);
+		}
+
+		::System::Void SetNewsRewardState(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETNEWSREWARDSTATE_OFFSET))(this, state);
+		}
+
+		static ::System::Int32 GetRewardQuestIDByQuestGroupID(::System::Int32 manualQuestID)
+		{
+			return ((::System::Int32(*)(::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GETREWARDQUESTIDBYQUESTGROUPID_OFFSET))(manualQuestID);
+		}
+
+		static ::System::Collections::Generic::List_1<::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00>* GetRewardListByRewardQuestID(::System::Int32 rewardQuestID)
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00>*(*)(::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GETREWARDLISTBYREWARDQUESTID_OFFSET))(rewardQuestID);
+		}
+
+		::System::Void InitInterknotTypeName()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITINTERKNOTTYPENAME_OFFSET))(this);
+		}
+
+		::System::Void InitPlayerExpBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITPLAYEREXPBTN_OFFSET))(this);
+		}
+
+		::System::Void OpenFilter()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_OPENFILTER_OFFSET))(this);
+		}
+
+		::System::Void OnDropDownSelect(::System::Int32 selectIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONDROPDOWNSELECT_OFFSET))(this, selectIndex);
+		}
+
+		::System::Void ClearCurrentMultiNew(::Enum_3_2EF95CAD9F4FAEA2 toClearType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_2EF95CAD9F4FAEA2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CLEARCURRENTMULTINEW_OFFSET))(this, toClearType);
+		}
+
+		::System::Void SetForumPanelShow(::System::Boolean active, ::System::Boolean focus)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETFORUMPANELSHOW_OFFSET))(this, active, focus);
+		}
+
+		::System::Void Bind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_BIND_OFFSET))(this);
+		}
+
+		::System::Boolean IsPostOpen()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISPOSTOPEN_OFFSET))(this);
+		}
+
+		::System::Boolean IsCircleOpen()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISCIRCLEOPEN_OFFSET))(this);
+		}
+
+		::System::Int32 GetTabIndex(::System::Int32 tabIndex)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_GETTABINDEX_OFFSET))(this, tabIndex);
+		}
+
+		::System::Void InitSort()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITSORT_OFFSET))(this);
+		}
+
+		::System::Void SaveSort()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SAVESORT_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_218*>* FilterSort(::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_218*>* knots)
+		{
+			return ((::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_218*>*(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_218*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_FILTERSORT_OFFSET))(this, knots);
+		}
+
+		::System::Boolean HasFilterSelection()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_HASFILTERSELECTION_OFFSET))(this);
+		}
+
+		::System::Void OpenShop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_OPENSHOP_OFFSET))(this);
+		}
+
+		::System::Void TopSwitchToSocial(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_TOPSWITCHTOSOCIAL_OFFSET))(this, state);
+		}
+
+		::System::Void Clear(::System::Boolean clearManual)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CLEAR_OFFSET))(this, clearManual);
+		}
+
+		::System::Void OnRefreshSocial(::System::Boolean sendNet)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONREFRESHSOCIAL_OFFSET))(this, sendNet);
+		}
+
+		::System::Void CheckSocial()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CHECKSOCIAL_OFFSET))(this);
+		}
+
+		::System::Void OnSocial()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONSOCIAL_OFFSET))(this);
+		}
+
+		::System::Void SetTabBtnsPageIndex(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SETTABBTNSPAGEINDEX_OFFSET))(this, index);
+		}
+
+		::System::Void OnSetTabBtnsPageIndex(::System::Int32 old, ::System::Int32 current)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONSETTABBTNSPAGEINDEX_OFFSET))(this, old, current);
+		}
+
+		::System::Void OnHome()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONHOME_OFFSET))(this);
+		}
+
+		::System::Void OnMission()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONMISSION_OFFSET))(this);
+		}
+
+		::System::Void OnInterKnotRewards()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONINTERKNOTREWARDS_OFFSET))(this);
+		}
+
+		::System::Void InitInterKnotRewards()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_INITINTERKNOTREWARDS_OFFSET))(this);
+		}
+
+		static ::System::Void SampleAnim(::UnityEngine::Animation* anim, ::System::String* clipName, ::System::Single normalizedTime)
+		{
+			return ((::System::Void(*)(::UnityEngine::Animation*, ::System::String*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_SAMPLEANIM_OFFSET))(anim, clipName, normalizedTime);
+		}
+
+		::System::Void OnItemGet(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONITEMGET_OFFSET))(this, args);
+		}
+
+		::System::Void OnLevelUp(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONLEVELUP_OFFSET))(this, args);
+		}
+
+		::System::Void OnExpGrowth(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONEXPGROWTH_OFFSET))(this, args);
+		}
+
+		::System::Void CloseInterKnot()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_CLOSEINTERKNOT_OFFSET))(this);
+		}
+
+		::System::Void TransitionOrClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_TRANSITIONORCLOSE_OFFSET))(this);
+		}
+
+		::System::Boolean HasQuestKnotPost()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_HASQUESTKNOTPOST_OFFSET))(this);
+		}
+
+		::System::Boolean IsTrackKnotPost()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISTRACKKNOTPOST_OFFSET))(this);
+		}
+
+		::System::Void RefreshKnotPostFollowQuestHint(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_REFRESHKNOTPOSTFOLLOWQUESTHINT_OFFSET))(this, args);
+		}
+
+		::System::Void OnFitterUnlock(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ONFITTERUNLOCK_OFFSET))(this, args);
+		}
+
+		::System::Boolean QuestUnlockAndNotInPersonal()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_QUESTUNLOCKANDNOTINPERSONAL_OFFSET))(this);
+		}
+
+		::System::Boolean IsTrackingPersonalQuest()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_ISTRACKINGPERSONALQUEST_OFFSET))(this);
+		}
+
+		::System::Void RefreshTakeAllRewardsBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER_REFRESHTAKEALLREWARDSBTN_OFFSET))(this);
+		}
+
+		::System::Void _OnUIOpen_b__27_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONUIOPEN_B__27_0_OFFSET))(this, args);
+		}
+
+		::System::Void _BindProperty_b__29_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BINDPROPERTY_B__29_0_OFFSET))(this);
+		}
+
+		::System::Void _BindProperty_b__29_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BINDPROPERTY_B__29_1_OFFSET))(this);
+		}
+
+		::System::Void _BindProperty_b__29_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BINDPROPERTY_B__29_2_OFFSET))(this);
+		}
+
+		::System::Void _BindProperty_b__29_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BINDPROPERTY_B__29_3_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__33_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONUIINIT_B__33_0_OFFSET))(this, args);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _OnUIInit_b__33_1(::System::Func_1<::MoleMole::UIControlReference*>* reference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONUIINIT_B__33_1_OFFSET))(this, reference);
+		}
+
+		::System::Void _CloseGuideUI_b__66_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__CLOSEGUIDEUI_B__66_0_OFFSET))(this);
+		}
+
+		::System::Void _CloseGuideUI_b__66_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__CLOSEGUIDEUI_B__66_1_OFFSET))(this);
+		}
+
+		::System::Void _OpenFilter_b__77_0(::System::Int32 i)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__OPENFILTER_B__77_0_OFFSET))(this, i);
+		}
+
+		::System::Void _SetForumPanelShow_b__80_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__SETFORUMPANELSHOW_B__80_0_OFFSET))(this);
+		}
+
+		::System::Void _Bind_b__81_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BIND_B__81_0_OFFSET))(this);
+		}
+
+		::System::Void _Bind_b__81_10(::System::Boolean _)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BIND_B__81_10_OFFSET))(this, _);
+		}
+
+		::System::Void _Bind_b__81_11()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BIND_B__81_11_OFFSET))(this);
+		}
+
+		::System::Void _Bind_b__81_5()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__BIND_B__81_5_OFFSET))(this);
+		}
+
+		::System::Void _InitSort_b__85_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__INITSORT_B__85_0_OFFSET))(this);
+		}
+
+		::System::Void _TopSwitchToSocial_b__92_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__TOPSWITCHTOSOCIAL_B__92_0_OFFSET))(this);
+		}
+
+		::System::Void _TopSwitchToSocial_b__92_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__TOPSWITCHTOSOCIAL_B__92_1_OFFSET))(this);
+		}
+
+		::System::Void _OnRefreshSocial_b__95_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONREFRESHSOCIAL_B__95_0_OFFSET))(this);
+		}
+
+		::System::Void _OnRefreshSocial_b__95_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONREFRESHSOCIAL_B__95_2_OFFSET))(this);
+		}
+
+		::System::Void _OnRefreshSocial_g__Refresh_95_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__ONREFRESHSOCIAL_G__REFRESH_95_1_OFFSET))(this);
+		}
+
+		::System::Void _InitInterKnotRewards_b__105_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__INITINTERKNOTREWARDS_B__105_0_OFFSET))(this, args);
+		}
+
+		::System::Void _InitInterKnotRewards_b__105_1(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__INITINTERKNOTREWARDS_B__105_1_OFFSET))(this, args);
+		}
+
+		::System::Void _InitInterKnotRewards_b__105_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__INITINTERKNOTREWARDS_B__105_3_OFFSET))(this);
+		}
+
+		::System::Void _TransitionOrClose_b__111_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER__TRANSITIONORCLOSE_B__111_0_OFFSET))(this);
+		}
+
+		::Class_1_A11CB4C08EF906E4* __base_GetNewbieDynamicObject(::MoleMole::ConfigNewbie_HighLightDynamicData* P0)
+		{
+			return ((::Class_1_A11CB4C08EF906E4*(*)(::PVOID, ::MoleMole::ConfigNewbie_HighLightDynamicData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_GETNEWBIEDYNAMICOBJECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnGamepadModuleIgnoreSetFocus(::MoleMole::MonoGamepadModule* P0, ::System::Boolean P1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONGAMEPADMODULEIGNORESETFOCUS_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTV3PAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

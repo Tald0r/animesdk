@@ -1,0 +1,12 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+inline static constexpr unsigned int HueAndSaturation_TypeDefinitionIndex = 42198;
+
+struct alignas(4) HueAndSaturation
+{
+	::System::Single Hue; // 0x10
+	::System::Single Saturation; // 0x14
+	::System::Single Brightness; // 0x18
+};

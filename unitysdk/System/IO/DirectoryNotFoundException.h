@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_IO_DIRECTORYNOTFOUNDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C779D0)
-#define SYSTEM_IO_DIRECTORYNOTFOUNDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C7A5A0)
-#define SYSTEM_IO_DIRECTORYNOTFOUNDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C7A500)
+#define SYSTEM_IO_DIRECTORYNOTFOUNDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1913CF20)
+#define SYSTEM_IO_DIRECTORYNOTFOUNDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1913CF90)
+#define SYSTEM_IO_DIRECTORYNOTFOUNDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1913CE80)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int DirectoryNotFoundException_TypeDefinitionIndex = 664;
+	inline static constexpr unsigned int DirectoryNotFoundException_TypeDefinitionIndex = 632;
 
 	class DirectoryNotFoundException : public ::System::IO::IOException
 	{

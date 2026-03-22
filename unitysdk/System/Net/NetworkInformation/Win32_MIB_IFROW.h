@@ -5,10 +5,13 @@
 
 namespace System::Net::NetworkInformation
 {
-	inline static constexpr unsigned int Win32_MIB_IFROW_TypeDefinitionIndex = 2946;
+	inline static constexpr unsigned int Win32_MIB_IFROW_TypeDefinitionIndex = 3840;
 
 	struct alignas(8) Win32_MIB_IFROW
 	{
+		// static const ::System::Int32 MAX_INTERFACE_NAME_LEN = 0x100; // 0x0
+		// static const ::System::Int32 MAXLEN_PHYSADDR = 0x8; // 0x0
+		// static const ::System::Int32 MAXLEN_IFDESCR = 0x100; // 0x0
 		::Il2CppArray<::System::Char>* Name; // 0x10
 		::System::Int32 Index; // 0x18
 		::System::Net::NetworkInformation::NetworkInterfaceType Type; // 0x1C

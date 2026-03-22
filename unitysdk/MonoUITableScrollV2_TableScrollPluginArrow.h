@@ -1,0 +1,279 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MonoUITableScrollV2_TableScrollPlugin.h"
+#include "unitysdk/MonoUITableScrollV2_TableScrollPluginArrow_ScrollViewDirtyFlag.h"
+#include "unitysdk/MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass12_0.h"
+#include "unitysdk/MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass14_0.h"
+#include "unitysdk/MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_0.h"
+#include "unitysdk/MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_1.h"
+#include "unitysdk/System/ValueTuple_2.h"
+
+class MonoUITableScrollV2;
+class MonoUITableScrollV2_BaseScrollLogic;
+class MonoUITableScrollV2_ScrollParams;
+namespace MoleMole { class ScrollViewArrow; }
+namespace System { template <typename T1, typename T2, typename T3> class Func_3; }
+namespace UnityEngine { class RectTransform; }
+namespace UnityEngine::UI::Extension { class UIButtonEx; }
+
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_AFTERREFRESHARROW_OFFSET UNITYSDK_OFFSET(0x65CA9C0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_CALARROWRED_OFFSET UNITYSDK_OFFSET(0x65CA4B0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_CALARROWSTATE_OFFSET UNITYSDK_OFFSET(0x65CA430)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_GET_CONTENT_OFFSET UNITYSDK_OFFSET(0x65CAE00)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_GET_DATACOUNT_OFFSET UNITYSDK_OFFSET(0x65CAD70)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_GET_LOGIC_OFFSET UNITYSDK_OFFSET(0x65CADA0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_GET_SIMPLEMODE_OFFSET UNITYSDK_OFFSET(0x65CADE0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_GET__SCROLLPARAMS_OFFSET UNITYSDK_OFFSET(0x65CADC0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_HIDESCROLLVIEWARROW_OFFSET UNITYSDK_OFFSET(0x65CA840)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_INITSCROLLVIEWARROWBTN_OFFSET UNITYSDK_OFFSET(0x65C9870)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x65C9B30)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_MARKARROWDIRTY_OFFSET UNITYSDK_OFFSET(0x65CA1D0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x65C97C0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_ONENABLENEXTFRAME_OFFSET UNITYSDK_OFFSET(0x65C9E00)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_ONSCROLLVIEWITEMMOVE_OFFSET UNITYSDK_OFFSET(0x65C9FB0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_REFRESHARROWIMMEDIATELY_OFFSET UNITYSDK_OFFSET(0x65CA2A0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_RESETSCROLLVIEWARROWINNER_OFFSET UNITYSDK_OFFSET(0x65CA740)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_RESETSCROLLVIEWARROW_OFFSET UNITYSDK_OFFSET(0x65C9E70)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_SHOWSCROLLVIEWARROW_OFFSET UNITYSDK_OFFSET(0x65CA900)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_UPDATEONENABLEDELAYMARKARROWDIRTY_OFFSET UNITYSDK_OFFSET(0x65C9C20)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_UPDATESCROLLVIEWARROW_OFFSET UNITYSDK_OFFSET(0x65C9D60)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__BYCONTENTEND_16_5_OFFSET UNITYSDK_OFFSET(0x65CBF60)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__BYCONTENTSTART_16_3_OFFSET UNITYSDK_OFFSET(0x65CB760)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__BYFIRSTITEM_16_2_OFFSET UNITYSDK_OFFSET(0x65CB3F0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__BYLASTITEM_16_4_OFFSET UNITYSDK_OFFSET(0x65CBBA0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__ISEND_16_1_OFFSET UNITYSDK_OFFSET(0x65CACD0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__ISSTART_16_0_OFFSET UNITYSDK_OFFSET(0x65CAC30)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CCTOR_OFFSET UNITYSDK_OFFSET(0x65CAE20)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CTOR_OFFSET UNITYSDK_OFFSET(0x65C97A0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__INITSCROLLVIEWARROWBTN_B__14_0_OFFSET UNITYSDK_OFFSET(0x65CAE60)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__INITSCROLLVIEWARROWBTN_B__14_1_OFFSET UNITYSDK_OFFSET(0x65CB090)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__INITSCROLLVIEWARROWBTN_G__GETINDEX_14_3_OFFSET UNITYSDK_OFFSET(0x65CB0A0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__INITSCROLLVIEWARROWBTN_G__SCROLLTO_14_2_OFFSET UNITYSDK_OFFSET(0x65CAE70)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__INITSCROLLVIEWARROWBTN_G__TRYSCROLLTOINDEX_14_4_OFFSET UNITYSDK_OFFSET(0x65CB220)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__UPDATESCROLLVIEWARROW_G__UPDATEARROWREDDOT_12_1_OFFSET UNITYSDK_OFFSET(0x65CAC20)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__UPDATESCROLLVIEWARROW_G__UPDATEARROW_12_0_OFFSET UNITYSDK_OFFSET(0x65CAA30)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW___BASE_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x65CC3B0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x65CC410)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW___BASE_ONENABLENEXTFRAME_OFFSET UNITYSDK_OFFSET(0x65CC470)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW___BASE_ONSCROLLVIEWITEMMOVE_OFFSET UNITYSDK_OFFSET(0x65CC4D0)
+
+inline static constexpr unsigned int MonoUITableScrollV2_TableScrollPluginArrow_TypeDefinitionIndex = 43879;
+
+class MonoUITableScrollV2_TableScrollPluginArrow : public ::MonoUITableScrollV2_TableScrollPlugin
+{
+public:
+	static ::System::Single* StaticGet_ArrowContentEdge()
+	{
+		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(MonoUITableScrollV2_TableScrollPluginArrow_TypeDefinitionIndex)->GetStaticField(0x108C0);
+	}
+	::UnityEngine::UI::Extension::UIButtonEx* EndBtn; // 0x18
+	::MoleMole::ScrollViewArrow* _scrollViewArrow; // 0x20
+	::UnityEngine::UI::Extension::UIButtonEx* StartBtn; // 0x28
+	::System::Func_3<::System::Int32, ::System::Int32, ::System::Boolean>* GetRedRange; // 0x30
+	::MonoUITableScrollV2_TableScrollPluginArrow_ScrollViewDirtyFlag _lastScrollViewDirtyFlag; // 0x38
+	::System::Int32 _delayMarkScrollViewDirty_ForOnEnable; // 0x3C
+	::System::ValueTuple_2<::System::Boolean, ::System::Boolean> _currentFrameScrollViewArrowState; // 0x40
+	::System::Boolean _scrollViewArrowDirty; // 0x42
+	::System::ValueTuple_2<::System::Boolean, ::System::Boolean> _lastFrameScrollViewArrowState; // 0x43
+	::MonoUITableScrollV2_TableScrollPluginArrow_ScrollViewDirtyFlag _currentScrollViewDirtyFlag; // 0x48
+
+	::System::Void _ctor(::MonoUITableScrollV2* tableScroll)
+	{
+		return ((::System::Void(*)(::PVOID, ::MonoUITableScrollV2*))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CTOR_OFFSET))(this, tableScroll);
+	}
+
+	static ::System::Void _cctor()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CCTOR_OFFSET))();
+	}
+
+	::System::Void OnAwake()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_ONAWAKE_OFFSET))(this);
+	}
+
+	::System::Void LateUpdate()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_LATEUPDATE_OFFSET))(this);
+	}
+
+	::System::Void OnEnableNextFrame()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_ONENABLENEXTFRAME_OFFSET))(this);
+	}
+
+	::System::Void OnScrollViewItemMove(::System::Boolean fromCanvasRebuild)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_ONSCROLLVIEWITEMMOVE_OFFSET))(this, fromCanvasRebuild);
+	}
+
+	::System::Void RefreshArrowImmediately()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_REFRESHARROWIMMEDIATELY_OFFSET))(this);
+	}
+
+	::System::Void ResetScrollViewArrow()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_RESETSCROLLVIEWARROW_OFFSET))(this);
+	}
+
+	::System::Void HideScrollViewArrow()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_HIDESCROLLVIEWARROW_OFFSET))(this);
+	}
+
+	::System::Void ShowScrollViewArrow()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_SHOWSCROLLVIEWARROW_OFFSET))(this);
+	}
+
+	::System::Void UpdateOnEnableDelayMarkArrowDirty()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_UPDATEONENABLEDELAYMARKARROWDIRTY_OFFSET))(this);
+	}
+
+	::System::Void AfterRefreshArrow()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_AFTERREFRESHARROW_OFFSET))(this);
+	}
+
+	::System::Void UpdateScrollViewArrow()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_UPDATESCROLLVIEWARROW_OFFSET))(this);
+	}
+
+	::System::Void MarkArrowDirty(::MonoUITableScrollV2_TableScrollPluginArrow_ScrollViewDirtyFlag flag)
+	{
+		return ((::System::Void(*)(::PVOID, ::MonoUITableScrollV2_TableScrollPluginArrow_ScrollViewDirtyFlag))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_MARKARROWDIRTY_OFFSET))(this, flag);
+	}
+
+	::System::Void InitScrollViewArrowBtn()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_INITSCROLLVIEWARROWBTN_OFFSET))(this);
+	}
+
+	::System::Void ResetScrollViewArrowInner()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_RESETSCROLLVIEWARROWINNER_OFFSET))(this);
+	}
+
+	::System::ValueTuple_2<::System::Boolean, ::System::Boolean> CalArrowState()
+	{
+		return ((::System::ValueTuple_2<::System::Boolean, ::System::Boolean>(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_CALARROWSTATE_OFFSET))(this);
+	}
+
+	::System::Void CalArrowRed()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_CALARROWRED_OFFSET))(this);
+	}
+
+	::MonoUITableScrollV2_BaseScrollLogic* get_logic()
+	{
+		return ((::MonoUITableScrollV2_BaseScrollLogic*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_GET_LOGIC_OFFSET))(this);
+	}
+
+	::MonoUITableScrollV2_ScrollParams* get__scrollParams()
+	{
+		return ((::MonoUITableScrollV2_ScrollParams*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_GET__SCROLLPARAMS_OFFSET))(this);
+	}
+
+	::System::Boolean get_SimpleMode()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_GET_SIMPLEMODE_OFFSET))(this);
+	}
+
+	::UnityEngine::RectTransform* get_content()
+	{
+		return ((::UnityEngine::RectTransform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_GET_CONTENT_OFFSET))(this);
+	}
+
+	::System::Int32 get_dataCount()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW_GET_DATACOUNT_OFFSET))(this);
+	}
+
+	::System::Void _UpdateScrollViewArrow_g__UpdateArrow_12_0(::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass12_0& a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass12_0&))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__UPDATESCROLLVIEWARROW_G__UPDATEARROW_12_0_OFFSET))(this, a1);
+	}
+
+	::System::Void _UpdateScrollViewArrow_g__UpdateArrowRedDot_12_1(::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass12_0& a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass12_0&))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__UPDATESCROLLVIEWARROW_G__UPDATEARROWREDDOT_12_1_OFFSET))(this, a1);
+	}
+
+	::System::Void _InitScrollViewArrowBtn_b__14_0()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__INITSCROLLVIEWARROWBTN_B__14_0_OFFSET))(this);
+	}
+
+	::System::Void _InitScrollViewArrowBtn_b__14_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__INITSCROLLVIEWARROWBTN_B__14_1_OFFSET))(this);
+	}
+
+	::System::Void _InitScrollViewArrowBtn_g__ScrollTo_14_2(::System::Boolean next)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__INITSCROLLVIEWARROWBTN_G__SCROLLTO_14_2_OFFSET))(this, next);
+	}
+
+	::System::Int32 _InitScrollViewArrowBtn_g__GetIndex_14_3(::System::Int32 curDataIndex, ::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass14_0& a2)
+	{
+		return ((::System::Int32(*)(::PVOID, ::System::Int32, ::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass14_0&))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__INITSCROLLVIEWARROWBTN_G__GETINDEX_14_3_OFFSET))(this, curDataIndex, a2);
+	}
+
+	::System::Void _InitScrollViewArrowBtn_g__TryScrollToIndex_14_4(::System::Int32 index)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__INITSCROLLVIEWARROWBTN_G__TRYSCROLLTOINDEX_14_4_OFFSET))(this, index);
+	}
+
+	::System::Boolean _CalArrowState_g__IsStart_16_0()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__ISSTART_16_0_OFFSET))(this);
+	}
+
+	::System::Boolean _CalArrowState_g__ByFirstItem_16_2(::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_0& a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_0&))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__BYFIRSTITEM_16_2_OFFSET))(this, a1);
+	}
+
+	::System::Boolean _CalArrowState_g__ByContentStart_16_3(::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_0& a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_0&))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__BYCONTENTSTART_16_3_OFFSET))(this, a1);
+	}
+
+	::System::Boolean _CalArrowState_g__IsEnd_16_1()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__ISEND_16_1_OFFSET))(this);
+	}
+
+	::System::Boolean _CalArrowState_g__ByLastItem_16_4(::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_1& a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_1&))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__BYLASTITEM_16_4_OFFSET))(this, a1);
+	}
+
+	::System::Boolean _CalArrowState_g__ByContentEnd_16_5(::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_1& a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_1&))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW__CALARROWSTATE_G__BYCONTENTEND_16_5_OFFSET))(this, a1);
+	}
+
+	::System::Void __base_LateUpdate()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW___BASE_LATEUPDATE_OFFSET))(this);
+	}
+
+	::System::Void __base_OnAwake()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW___BASE_ONAWAKE_OFFSET))(this);
+	}
+
+	::System::Void __base_OnEnableNextFrame()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW___BASE_ONENABLENEXTFRAME_OFFSET))(this);
+	}
+
+	::System::Void __base_OnScrollViewItemMove(::System::Boolean P0)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINARROW___BASE_ONSCROLLVIEWITEMMOVE_OFFSET))(this, P0);
+	}
+};

@@ -4,17 +4,14 @@
 
 namespace System { class String; }
 
-#define CRIWARE_CRIFSINSTALLREQUEST_GET_DESTINATIONPATH_OFFSET UNITYSDK_OFFSET(0x112C5DC0)
-#define CRIWARE_CRIFSINSTALLREQUEST_GET_PROGRESS_OFFSET UNITYSDK_OFFSET(0x112C5DE0)
-#define CRIWARE_CRIFSINSTALLREQUEST_GET_SOURCEPATH_OFFSET UNITYSDK_OFFSET(0x112C5DA0)
-#define CRIWARE_CRIFSINSTALLREQUEST_SET_DESTINATIONPATH_OFFSET UNITYSDK_OFFSET(0x112C5DD0)
-#define CRIWARE_CRIFSINSTALLREQUEST_SET_PROGRESS_OFFSET UNITYSDK_OFFSET(0x112C5DF0)
-#define CRIWARE_CRIFSINSTALLREQUEST_SET_SOURCEPATH_OFFSET UNITYSDK_OFFSET(0x112C5DB0)
-#define CRIWARE_CRIFSINSTALLREQUEST__CTOR_OFFSET UNITYSDK_OFFSET(0x112C5E00)
+#define CRIWARE_CRIFSINSTALLREQUEST_SET_DESTINATIONPATH_OFFSET UNITYSDK_OFFSET(0x1B13AF50)
+#define CRIWARE_CRIFSINSTALLREQUEST_SET_PROGRESS_OFFSET UNITYSDK_OFFSET(0x1B13AF60)
+#define CRIWARE_CRIFSINSTALLREQUEST_SET_SOURCEPATH_OFFSET UNITYSDK_OFFSET(0x1B13AF40)
+#define CRIWARE_CRIFSINSTALLREQUEST__CTOR_OFFSET UNITYSDK_OFFSET(0x1B13AF70)
 
 namespace CriWare
 {
-	inline static constexpr unsigned int CriFsInstallRequest_TypeDefinitionIndex = 30258;
+	inline static constexpr unsigned int CriFsInstallRequest_TypeDefinitionIndex = 31282;
 
 	class CriFsInstallRequest : public ::CriWare::CriFsRequest
 	{
@@ -28,29 +25,14 @@ namespace CriWare
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSINSTALLREQUEST__CTOR_OFFSET))(this);
 		}
 
-		::System::String* get_sourcePath()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSINSTALLREQUEST_GET_SOURCEPATH_OFFSET))(this);
-		}
-
 		::System::Void set_sourcePath(::System::String* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSINSTALLREQUEST_SET_SOURCEPATH_OFFSET))(this, value);
 		}
 
-		::System::String* get_destinationPath()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSINSTALLREQUEST_GET_DESTINATIONPATH_OFFSET))(this);
-		}
-
 		::System::Void set_destinationPath(::System::String* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSINSTALLREQUEST_SET_DESTINATIONPATH_OFFSET))(this, value);
-		}
-
-		::System::Single get_progress()
-		{
-			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSINSTALLREQUEST_GET_PROGRESS_OFFSET))(this);
 		}
 
 		::System::Void set_progress(::System::Single value)

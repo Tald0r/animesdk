@@ -1,0 +1,45 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIVHSStoreDialogV2PopWindowController_Logic.h"
+
+namespace MoleMole { class UIVHSStoreDialogV2PopWindowController; }
+
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_RECOMMANDLOGIC_ONOKBTNCLICK_OFFSET UNITYSDK_OFFSET(0x938BD90)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_RECOMMANDLOGIC_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x938BCC0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_RECOMMANDLOGIC__CTOR_OFFSET UNITYSDK_OFFSET(0x9388B90)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_RECOMMANDLOGIC___BASE_ONOKBTNCLICK_OFFSET UNITYSDK_OFFSET(0x938C0C0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_RECOMMANDLOGIC___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x938C120)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVHSStoreDialogV2PopWindowController_RecommandLogic_TypeDefinitionIndex = 74541;
+
+	class UIVHSStoreDialogV2PopWindowController_RecommandLogic : public ::MoleMole::UIVHSStoreDialogV2PopWindowController_Logic
+	{
+	public:
+		::System::Void _ctor(::MoleMole::UIVHSStoreDialogV2PopWindowController* controller)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIVHSStoreDialogV2PopWindowController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_RECOMMANDLOGIC__CTOR_OFFSET))(this, controller);
+		}
+
+		::System::Void OnUIOpen()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_RECOMMANDLOGIC_ONUIOPEN_OFFSET))(this);
+		}
+
+		::System::Void OnOKBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_RECOMMANDLOGIC_ONOKBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void __base_OnOKBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_RECOMMANDLOGIC___BASE_ONOKBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_RECOMMANDLOGIC___BASE_ONUIOPEN_OFFSET))(this);
+		}
+	};
+}

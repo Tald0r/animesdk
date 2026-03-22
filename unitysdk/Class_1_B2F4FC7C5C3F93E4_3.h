@@ -1,0 +1,29 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_AAFADCBFB5411608.h"
+#include "unitysdk/System/Object.h"
+
+#define CLASS_1_B2F4FC7C5C3F93E4_3_METHOD_1_C1C5AB73E443B1B4_1_OFFSET UNITYSDK_OFFSET(0x75FBD30)
+#define CLASS_1_B2F4FC7C5C3F93E4_3_METHOD_1_C1C5AB73E443B1B4_2_OFFSET UNITYSDK_OFFSET(0x75FBDA0)
+#define CLASS_1_B2F4FC7C5C3F93E4_3_METHOD_1_C1C5AB73E443B1B4_OFFSET UNITYSDK_OFFSET(0x75FBCC0)
+
+inline static constexpr unsigned int Class_1_B2F4FC7C5C3F93E4_3_TypeDefinitionIndex = 61998;
+
+class Class_1_B2F4FC7C5C3F93E4_3 : public ::System::Object
+{
+public:
+	static ::System::Boolean Method_1_C1C5AB73E443B1B4(::Enum_3_AAFADCBFB5411608 a1)
+	{
+		return ((::System::Boolean(*)(::Enum_3_AAFADCBFB5411608))((::PBYTE)hIl2Cpp + CLASS_1_B2F4FC7C5C3F93E4_3_METHOD_1_C1C5AB73E443B1B4_OFFSET))(a1);
+	}
+
+	static ::System::Boolean Method_1_C1C5AB73E443B1B4_1(::Enum_3_AAFADCBFB5411608 a1)
+	{
+		return ((::System::Boolean(*)(::Enum_3_AAFADCBFB5411608))((::PBYTE)hIl2Cpp + CLASS_1_B2F4FC7C5C3F93E4_3_METHOD_1_C1C5AB73E443B1B4_1_OFFSET))(a1);
+	}
+
+	static ::System::Boolean Method_1_C1C5AB73E443B1B4_2(::Enum_3_AAFADCBFB5411608 a1)
+	{
+		return ((::System::Boolean(*)(::Enum_3_AAFADCBFB5411608))((::PBYTE)hIl2Cpp + CLASS_1_B2F4FC7C5C3F93E4_3_METHOD_1_C1C5AB73E443B1B4_2_OFFSET))(a1);
+	}
+};

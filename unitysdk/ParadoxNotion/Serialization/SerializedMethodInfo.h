@@ -1,0 +1,120 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace System { class String; }
+namespace System::Reflection { class MemberInfo; }
+namespace System::Reflection { class MethodBase; }
+namespace System::Reflection { class MethodInfo; }
+
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_ASMEMBERINFO_OFFSET UNITYSDK_OFFSET(0x19764EA0)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_ASSTRING_OFFSET UNITYSDK_OFFSET(0x1974B730)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_GETMETHODBASE_OFFSET UNITYSDK_OFFSET(0x19764EB0)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_GET_TBASEINFO_OFFSET UNITYSDK_OFFSET(0x19764260)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_GET_T_GENERICARGUMENTSINFO_OFFSET UNITYSDK_OFFSET(0x197642A0)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_GET_T_PARAMSINFO_OFFSET UNITYSDK_OFFSET(0x19764280)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_HASCHANGED_OFFSET UNITYSDK_OFFSET(0x19764EC0)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1974B1C0)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_SET_TBASEINFO_OFFSET UNITYSDK_OFFSET(0x19764270)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_SET_T_GENERICARGUMENTSINFO_OFFSET UNITYSDK_OFFSET(0x197642B0)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_SET_T_PARAMSINFO_OFFSET UNITYSDK_OFFSET(0x19764290)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_TOSTRING_OFFSET UNITYSDK_OFFSET(0x19764ED0)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0x19764690)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONBEFORESERIALIZE_OFFSET UNITYSDK_OFFSET(0x197642C0)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1974BA60)
+#define PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x19764E90)
+
+namespace ParadoxNotion::Serialization
+{
+	inline static constexpr unsigned int SerializedMethodInfo_TypeDefinitionIndex = 25340;
+
+	class SerializedMethodInfo : public ::System::Object
+	{
+	public:
+		::System::String* _baseInfo; // 0x10
+		::System::String* _paramsInfo; // 0x18
+		::System::String* _genericArgumentsInfo; // 0x20
+		::System::Reflection::MethodInfo* _method; // 0x28
+		::System::Boolean _hasChanged; // 0x30
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::Reflection::MethodInfo* method)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Reflection::MethodInfo*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO__CTOR_1_OFFSET))(this, method);
+		}
+
+		::System::String* get_TBaseInfo()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_GET_TBASEINFO_OFFSET))(this);
+		}
+
+		::System::Void set_TBaseInfo(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_SET_TBASEINFO_OFFSET))(this, value);
+		}
+
+		::System::String* get_T_paramsInfo()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_GET_T_PARAMSINFO_OFFSET))(this);
+		}
+
+		::System::Void set_T_paramsInfo(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_SET_T_PARAMSINFO_OFFSET))(this, value);
+		}
+
+		::System::String* get_T_genericArgumentsInfo()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_GET_T_GENERICARGUMENTSINFO_OFFSET))(this);
+		}
+
+		::System::Void set_T_genericArgumentsInfo(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_SET_T_GENERICARGUMENTSINFO_OFFSET))(this, value);
+		}
+
+		::System::Void UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONBEFORESERIALIZE_OFFSET))(this);
+		}
+
+		::System::Void UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_UNITYENGINE_ISERIALIZATIONCALLBACKRECEIVER_ONAFTERDESERIALIZE_OFFSET))(this);
+		}
+
+		::System::Reflection::MemberInfo* AsMemberInfo()
+		{
+			return ((::System::Reflection::MemberInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_ASMEMBERINFO_OFFSET))(this);
+		}
+
+		::System::Reflection::MethodBase* GetMethodBase()
+		{
+			return ((::System::Reflection::MethodBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_GETMETHODBASE_OFFSET))(this);
+		}
+
+		::System::Boolean HasChanged()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_HASCHANGED_OFFSET))(this);
+		}
+
+		::System::String* AsString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_ASSTRING_OFFSET))(this);
+		}
+
+		::System::String* ToString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_TOSTRING_OFFSET))(this);
+		}
+
+		static ::System::Reflection::MethodInfo* op_Implicit(::ParadoxNotion::Serialization::SerializedMethodInfo* value)
+		{
+			return ((::System::Reflection::MethodInfo*(*)(::ParadoxNotion::Serialization::SerializedMethodInfo*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_SERIALIZEDMETHODINFO_OP_IMPLICIT_OFFSET))(value);
+		}
+	};
+}

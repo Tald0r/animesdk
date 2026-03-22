@@ -1,0 +1,20 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace Utf8Json { template <typename T> class IJsonFormatter_1; }
+
+namespace Utf8Json::Resolvers
+{
+	inline static constexpr unsigned int BuiltinResolver_FormatterCache_1_TypeDefinitionIndex = 81762;
+
+	template <typename T>
+	class BuiltinResolver_FormatterCache_1 : public ::System::Object
+	{
+	public:
+		static ::Utf8Json::IJsonFormatter_1<T>** StaticGet_formatter()
+		{
+			return (::Utf8Json::IJsonFormatter_1<T>**)Il2CppClass::FromTypeDefinitionIndex(BuiltinResolver_FormatterCache_1_TypeDefinitionIndex)->GetStaticField(0x0);
+		}
+	};
+}

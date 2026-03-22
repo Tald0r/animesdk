@@ -1,0 +1,161 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIOnlineChatTipsContainerWidgetController_OnlineChatOperateDataModify.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_3D70108AB8A5915A;
+class Class_1_8CB785F2EFECB918;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIInLevelOnlineRoleTipsWidgetController; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+template <typename T> class Class_1_8914B0C55B12E9CE;
+
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_CLEAR_OFFSET UNITYSDK_OFFSET(0xA3DC660)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_GET__ONLINECHATOPERATEDATAMODIFYQUEUE_OFFSET UNITYSDK_OFFSET(0xA3DAE60)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_GET__ONLINECHATOPERATEDATAS_OFFSET UNITYSDK_OFFSET(0xA3DAF50)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ISSHOWTIP_OFFSET UNITYSDK_OFFSET(0xA3DC770)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_MOVEOPERATEUITOFRONT_OFFSET UNITYSDK_OFFSET(0xA3DC200)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3DB830)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ONRECEIVEMULTIPLAYERCHATMESSAGE_OFFSET UNITYSDK_OFFSET(0xA3DB910)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3DB8A0)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3DB060)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3DB720)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_PROCESSONLINECHATOPERATEDATAMODIFYQUEUE_OFFSET UNITYSDK_OFFSET(0xA3DBD60)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xA3DC850)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_REMOVEOPERATEDATA_OFFSET UNITYSDK_OFFSET(0xA3DC400)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_RESUME_OFFSET UNITYSDK_OFFSET(0xA3DC710)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_SETCONSOLEACTIVE_OFFSET UNITYSDK_OFFSET(0xA3DC4A0)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xA3DBCF0)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA3DC8C0)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3DCA70)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3DCAE0)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3DCB60)
+#define MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3DCBC0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIOnlineChatTipsContainerWidgetController_TypeDefinitionIndex = 71742;
+
+	class UIOnlineChatTipsContainerWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::Int32 ONTLINE_CHAT_OPERATE_DATA_COUNT = 0x4; // 0x0
+		::System::Boolean _checkAllPopupClosed; // 0x2A0
+		::System::Collections::Generic::List_1<::Class_1_8CB785F2EFECB918*>* _onlineChatTipDatas; // 0x2A8
+		::Class_1_8914B0C55B12E9CE<::MoleMole::UIOnlineChatTipsContainerWidgetController_OnlineChatOperateDataModify>* __onlineChatOperateDataModifyQueue; // 0x2B0
+		::Class_1_8914B0C55B12E9CE<::MoleMole::UIInLevelOnlineRoleTipsWidgetController*>* _onlineChatRowWidgets; // 0x2B8
+		::Class_1_8914B0C55B12E9CE<::Class_1_8CB785F2EFECB918*>* __onlineChatOperateDatas; // 0x2C0
+		::System::Int32 _delay; // 0x2C8
+		::Class_1_3D70108AB8A5915A* _animResetHelperList; // 0x2D0
+		::System::Boolean _isInBattle; // 0x2D8
+		::System::Boolean _isInChallenge; // 0x2D9
+		::System::Collections::Generic::List_1<::Class_1_8CB785F2EFECB918*>* removeList; // 0x2E0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_1_8914B0C55B12E9CE<::MoleMole::UIOnlineChatTipsContainerWidgetController_OnlineChatOperateDataModify>* get__onlineChatOperateDataModifyQueue()
+		{
+			return ((::Class_1_8914B0C55B12E9CE<::MoleMole::UIOnlineChatTipsContainerWidgetController_OnlineChatOperateDataModify>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_GET__ONLINECHATOPERATEDATAMODIFYQUEUE_OFFSET))(this);
+		}
+
+		::Class_1_8914B0C55B12E9CE<::Class_1_8CB785F2EFECB918*>* get__onlineChatOperateDatas()
+		{
+			return ((::Class_1_8914B0C55B12E9CE<::Class_1_8CB785F2EFECB918*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_GET__ONLINECHATOPERATEDATAS_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnReceiveMultiPlayerChatMessage(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ONRECEIVEMULTIPLAYERCHATMESSAGE_OFFSET))(this, args);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void MoveOperateUIToFront()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_MOVEOPERATEUITOFRONT_OFFSET))(this);
+		}
+
+		::System::Void RemoveOperateData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_REMOVEOPERATEDATA_OFFSET))(this);
+		}
+
+		::System::Void ProcessOnlineChatOperateDataModifyQueue()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_PROCESSONLINECHATOPERATEDATAMODIFYQUEUE_OFFSET))(this);
+		}
+
+		::System::Void SetConsoleActive(::System::Boolean active, ::System::Boolean force)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_SETCONSOLEACTIVE_OFFSET))(this, active, force);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_CLEAR_OFFSET))(this);
+		}
+
+		::System::Void Resume()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_RESUME_OFFSET))(this);
+		}
+
+		::System::Boolean IsShowTip()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_ISSHOWTIP_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::System::Boolean show)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, show);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIONLINECHATTIPSCONTAINERWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

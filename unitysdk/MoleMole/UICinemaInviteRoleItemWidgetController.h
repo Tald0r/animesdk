@@ -1,0 +1,100 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_8F1270868BBD4A4B.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_23EC6E39A5C61502;
+class Class_2_BC43AB34274023A3;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_ONCLICKROLEITEM_OFFSET UNITYSDK_OFFSET(0xBF4D6B0)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBF4CA90)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xBF4CC90)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBF4CB30)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBF4C8B0)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_REFRESHROLESTATE_OFFSET UNITYSDK_OFFSET(0xBF4D0E0)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_SETITEMSELECT_OFFSET UNITYSDK_OFFSET(0xBF4D790)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_SETUICINEMAROLESTATE_OFFSET UNITYSDK_OFFSET(0xBF4CE10)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBF4D820)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBF4D830)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xBF4D8A0)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBF4D920)
+#define MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBF4D9A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICinemaInviteRoleItemWidgetController_TypeDefinitionIndex = 39100;
+
+	class UICinemaInviteRoleItemWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_BC43AB34274023A3* _view; // 0x2D0
+		::Class_2_23EC6E39A5C61502* itemLevelData; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnClickRoleItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_ONCLICKROLEITEM_OFFSET))(this);
+		}
+
+		::System::Void RefreshRoleState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_REFRESHROLESTATE_OFFSET))(this);
+		}
+
+		::System::Void SetItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_SETITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void SetUICinemaRoleState(::Enum_3_8F1270868BBD4A4B state)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_8F1270868BBD4A4B))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER_SETUICINEMAROLESTATE_OFFSET))(this, state);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEROLEITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

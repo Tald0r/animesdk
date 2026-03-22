@@ -1,0 +1,89 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_C24561AE5AC74100.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_79F6D62CE30E3F8E_107;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIJourneyWidgetContext; }
+namespace System { class Action; }
+
+#define MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_GETVIEW_OFFSET UNITYSDK_OFFSET(0xA800910)
+#define MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA800770)
+#define MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA800810)
+#define MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA8005A0)
+#define MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA800640)
+#define MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_PLAYNODEUIANIM_OFFSET UNITYSDK_OFFSET(0xA800980)
+#define MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA800B60)
+#define MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA800B90)
+#define MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA800C00)
+#define MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA800C80)
+#define MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA800CE0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInterKnowCoursePointRewardWidgetController_TypeDefinitionIndex = 78429;
+
+	class UIInterKnowCoursePointRewardWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_107* _view; // 0x2A0
+		::MoleMole::UIJourneyWidgetContext* context; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::Class_2_79F6D62CE30E3F8E_107* GetView()
+		{
+			return ((::Class_2_79F6D62CE30E3F8E_107*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_GETVIEW_OFFSET))(this);
+		}
+
+		::System::Void PlayNodeUIAnim(::Enum_3_C24561AE5AC74100 animEnum, ::System::Action* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_C24561AE5AC74100, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER_PLAYNODEUIANIM_OFFSET))(this, animEnum, callback);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOWCOURSEPOINTREWARDWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

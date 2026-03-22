@@ -6,75 +6,75 @@
 namespace Mono::Net { class CFDictionary; }
 namespace System { class String; }
 
-#define MONO_NET_CFPROXY_CFPROXYTYPETOENUM_OFFSET UNITYSDK_OFFSET(0x17E42CA0)
-#define MONO_NET_CFPROXY_GET_AUTOCONFIGURATIONJAVASCRIPT_OFFSET UNITYSDK_OFFSET(0x17E41780)
-#define MONO_NET_CFPROXY_GET_AUTOCONFIGURATIONURL_OFFSET UNITYSDK_OFFSET(0x17E41920)
-#define MONO_NET_CFPROXY_GET_HOSTNAME_OFFSET UNITYSDK_OFFSET(0x17E40EA0)
-#define MONO_NET_CFPROXY_GET_PASSWORD_OFFSET UNITYSDK_OFFSET(0x17E40D00)
-#define MONO_NET_CFPROXY_GET_PORT_OFFSET UNITYSDK_OFFSET(0x17E41040)
-#define MONO_NET_CFPROXY_GET_PROXYTYPE_OFFSET UNITYSDK_OFFSET(0x17E409C0)
-#define MONO_NET_CFPROXY_GET_USERNAME_OFFSET UNITYSDK_OFFSET(0x17E40B60)
-#define MONO_NET_CFPROXY__CCTOR_OFFSET UNITYSDK_OFFSET(0x17E42150)
-#define MONO_NET_CFPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x17E3E740)
+#define MONO_NET_CFPROXY_CFPROXYTYPETOENUM_OFFSET UNITYSDK_OFFSET(0x190055A0)
+#define MONO_NET_CFPROXY_GET_AUTOCONFIGURATIONJAVASCRIPT_OFFSET UNITYSDK_OFFSET(0x19004440)
+#define MONO_NET_CFPROXY_GET_AUTOCONFIGURATIONURL_OFFSET UNITYSDK_OFFSET(0x190045D0)
+#define MONO_NET_CFPROXY_GET_HOSTNAME_OFFSET UNITYSDK_OFFSET(0x19003B60)
+#define MONO_NET_CFPROXY_GET_PASSWORD_OFFSET UNITYSDK_OFFSET(0x190039C0)
+#define MONO_NET_CFPROXY_GET_PORT_OFFSET UNITYSDK_OFFSET(0x19003D00)
+#define MONO_NET_CFPROXY_GET_PROXYTYPE_OFFSET UNITYSDK_OFFSET(0x19003680)
+#define MONO_NET_CFPROXY_GET_USERNAME_OFFSET UNITYSDK_OFFSET(0x19003820)
+#define MONO_NET_CFPROXY__CCTOR_OFFSET UNITYSDK_OFFSET(0x19004840)
+#define MONO_NET_CFPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x19005590)
 
 namespace Mono::Net
 {
-	inline static constexpr unsigned int CFProxy_TypeDefinitionIndex = 2398;
+	inline static constexpr unsigned int CFProxy_TypeDefinitionIndex = 2597;
 
 	class CFProxy : public ::System::Object
 	{
 	public:
-		static ::System::IntPtr* StaticGet_kCFProxyAutoConfigurationURLKey()
+		static ::System::IntPtr* StaticGet_kCFProxyPortNumberKey()
 		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x5150);
-		}
-		static ::System::IntPtr* StaticGet_kCFProxyTypeAutoConfigurationJavaScript()
-		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x5158);
-		}
-		static ::System::IntPtr* StaticGet_kCFProxyTypeAutoConfigurationURL()
-		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x5160);
-		}
-		static ::System::IntPtr* StaticGet_kCFProxyTypeFTP()
-		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x5168);
-		}
-		static ::System::IntPtr* StaticGet_kCFProxyUsernameKey()
-		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x5170);
-		}
-		static ::System::IntPtr* StaticGet_kCFProxyTypeHTTPS()
-		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x5178);
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x12F0);
 		}
 		static ::System::IntPtr* StaticGet_kCFProxyHostNameKey()
 		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x5180);
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x12F8);
 		}
 		static ::System::IntPtr* StaticGet_kCFProxyTypeSOCKS()
 		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x5188);
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x1300);
 		}
 		static ::System::IntPtr* StaticGet_kCFProxyAutoConfigurationJavaScriptKey()
 		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x5190);
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x1308);
 		}
 		static ::System::IntPtr* StaticGet_kCFProxyTypeKey()
 		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x5198);
-		}
-		static ::System::IntPtr* StaticGet_kCFProxyPortNumberKey()
-		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x51A0);
-		}
-		static ::System::IntPtr* StaticGet_kCFProxyPasswordKey()
-		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x51A8);
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x1310);
 		}
 		static ::System::IntPtr* StaticGet_kCFProxyTypeHTTP()
 		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x51B0);
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x1318);
+		}
+		static ::System::IntPtr* StaticGet_kCFProxyTypeAutoConfigurationURL()
+		{
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x1320);
+		}
+		static ::System::IntPtr* StaticGet_kCFProxyTypeAutoConfigurationJavaScript()
+		{
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x1328);
+		}
+		static ::System::IntPtr* StaticGet_kCFProxyAutoConfigurationURLKey()
+		{
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x1330);
+		}
+		static ::System::IntPtr* StaticGet_kCFProxyTypeFTP()
+		{
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x1338);
+		}
+		static ::System::IntPtr* StaticGet_kCFProxyTypeHTTPS()
+		{
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x1340);
+		}
+		static ::System::IntPtr* StaticGet_kCFProxyPasswordKey()
+		{
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x1348);
+		}
+		static ::System::IntPtr* StaticGet_kCFProxyUsernameKey()
+		{
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFProxy_TypeDefinitionIndex)->GetStaticField(0x1350);
 		}
 		::Mono::Net::CFDictionary* settings; // 0x10
 

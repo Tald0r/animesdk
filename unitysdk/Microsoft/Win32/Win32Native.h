@@ -4,13 +4,12 @@
 
 namespace System { class String; }
 
-#define MICROSOFT_WIN32_WIN32NATIVE_GETCURRENTPROCESSID_OFFSET UNITYSDK_OFFSET(0x15AADC50)
-#define MICROSOFT_WIN32_WIN32NATIVE_GETMESSAGE_OFFSET UNITYSDK_OFFSET(0x15AADB70)
-#define MICROSOFT_WIN32_WIN32NATIVE_MAKEHRFROMERRORCODE_OFFSET UNITYSDK_OFFSET(0x15AADC40)
+#define MICROSOFT_WIN32_WIN32NATIVE_GETMESSAGE_OFFSET UNITYSDK_OFFSET(0x19652000)
+#define MICROSOFT_WIN32_WIN32NATIVE_MAKEHRFROMERRORCODE_OFFSET UNITYSDK_OFFSET(0x196520D0)
 
 namespace Microsoft::Win32
 {
-	inline static constexpr unsigned int Win32Native_TypeDefinitionIndex = 112;
+	inline static constexpr unsigned int Win32Native_TypeDefinitionIndex = 100;
 
 	class Win32Native : public ::System::Object
 	{
@@ -23,11 +22,6 @@ namespace Microsoft::Win32
 		static ::System::Int32 MakeHRFromErrorCode(::System::Int32 errorCode)
 		{
 			return ((::System::Int32(*)(::System::Int32))((::PBYTE)hIl2Cpp + MICROSOFT_WIN32_WIN32NATIVE_MAKEHRFROMERRORCODE_OFFSET))(errorCode);
-		}
-
-		static ::System::UInt32 GetCurrentProcessId()
-		{
-			return ((::System::UInt32(*)())((::PBYTE)hIl2Cpp + MICROSOFT_WIN32_WIN32NATIVE_GETCURRENTPROCESSID_OFFSET))();
 		}
 	};
 }

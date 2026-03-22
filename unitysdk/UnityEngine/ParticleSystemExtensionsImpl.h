@@ -1,23 +1,30 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
-#include "unitysdk/UnityEngine/ParticleSystem_Particle.h"
+#include "unitysdk/UnityEngine/ParticleCollisionEvent.h"
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class ParticleSystem; }
 
-#define UNITYENGINE_PARTICLESYSTEMEXTENSIONSIMPL_GETTRIGGERPARTICLES_OFFSET UNITYSDK_OFFSET(0x18284070)
+#define UNITYENGINE_PARTICLESYSTEMEXTENSIONSIMPL_GETCOLLISIONEVENTS_OFFSET UNITYSDK_OFFSET(0x1A871220)
+#define UNITYENGINE_PARTICLESYSTEMEXTENSIONSIMPL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A874340)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ParticleSystemExtensionsImpl_TypeDefinitionIndex = 5404;
+	inline static constexpr unsigned int ParticleSystemExtensionsImpl_TypeDefinitionIndex = 23718;
 
 	class ParticleSystemExtensionsImpl : public ::System::Object
 	{
 	public:
-		static ::System::Int32 GetTriggerParticles(::UnityEngine::ParticleSystem* ps, ::System::Int32 type, ::System::Collections::Generic::List_1<::UnityEngine::ParticleSystem_Particle>* particles)
+		::System::Void _ctor()
 		{
-			return ((::System::Int32(*)(::UnityEngine::ParticleSystem*, ::System::Int32, ::System::Collections::Generic::List_1<::UnityEngine::ParticleSystem_Particle>*))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEMEXTENSIONSIMPL_GETTRIGGERPARTICLES_OFFSET))(ps, type, particles);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEMEXTENSIONSIMPL__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Int32 GetCollisionEvents(::UnityEngine::ParticleSystem* ps, ::UnityEngine::GameObject* go, ::System::Collections::Generic::List_1<::UnityEngine::ParticleCollisionEvent>* collisionEvents)
+		{
+			return ((::System::Int32(*)(::UnityEngine::ParticleSystem*, ::UnityEngine::GameObject*, ::System::Collections::Generic::List_1<::UnityEngine::ParticleCollisionEvent>*))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEMEXTENSIONSIMPL_GETCOLLISIONEVENTS_OFFSET))(ps, go, collisionEvents);
 		}
 	};
 }

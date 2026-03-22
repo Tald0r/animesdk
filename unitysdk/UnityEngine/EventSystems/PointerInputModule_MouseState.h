@@ -8,15 +8,13 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine::EventSystems { class PointerEventData; }
 namespace UnityEngine::EventSystems { class PointerInputModule_ButtonState; }
 
-#define UNITYENGINE_EVENTSYSTEMS_POINTERINPUTMODULE_MOUSESTATE_ANYPRESSESTHISFRAME_OFFSET UNITYSDK_OFFSET(0x182E2230)
-#define UNITYENGINE_EVENTSYSTEMS_POINTERINPUTMODULE_MOUSESTATE_ANYRELEASESTHISFRAME_OFFSET UNITYSDK_OFFSET(0x182E22A0)
-#define UNITYENGINE_EVENTSYSTEMS_POINTERINPUTMODULE_MOUSESTATE_GETBUTTONSTATE_OFFSET UNITYSDK_OFFSET(0x182E2310)
-#define UNITYENGINE_EVENTSYSTEMS_POINTERINPUTMODULE_MOUSESTATE_SETBUTTONSTATE_OFFSET UNITYSDK_OFFSET(0x182E12A0)
-#define UNITYENGINE_EVENTSYSTEMS_POINTERINPUTMODULE_MOUSESTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x182E2170)
+#define UNITYENGINE_EVENTSYSTEMS_POINTERINPUTMODULE_MOUSESTATE_GETBUTTONSTATE_OFFSET UNITYSDK_OFFSET(0x1A7F3090)
+#define UNITYENGINE_EVENTSYSTEMS_POINTERINPUTMODULE_MOUSESTATE_SETBUTTONSTATE_OFFSET UNITYSDK_OFFSET(0x1A7F3190)
+#define UNITYENGINE_EVENTSYSTEMS_POINTERINPUTMODULE_MOUSESTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7F3210)
 
 namespace UnityEngine::EventSystems
 {
-	inline static constexpr unsigned int PointerInputModule_MouseState_TypeDefinitionIndex = 5709;
+	inline static constexpr unsigned int PointerInputModule_MouseState_TypeDefinitionIndex = 8519;
 
 	class PointerInputModule_MouseState : public ::System::Object
 	{
@@ -26,16 +24,6 @@ namespace UnityEngine::EventSystems
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTSYSTEMS_POINTERINPUTMODULE_MOUSESTATE__CTOR_OFFSET))(this);
-		}
-
-		::System::Boolean AnyPressesThisFrame()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTSYSTEMS_POINTERINPUTMODULE_MOUSESTATE_ANYPRESSESTHISFRAME_OFFSET))(this);
-		}
-
-		::System::Boolean AnyReleasesThisFrame()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTSYSTEMS_POINTERINPUTMODULE_MOUSESTATE_ANYRELEASESTHISFRAME_OFFSET))(this);
 		}
 
 		::UnityEngine::EventSystems::PointerInputModule_ButtonState* GetButtonState(::UnityEngine::EventSystems::PointerEventData_InputButton button)

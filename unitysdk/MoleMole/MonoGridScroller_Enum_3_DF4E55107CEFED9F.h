@@ -1,0 +1,13 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int MonoGridScroller_Enum_3_DF4E55107CEFED9F_TypeDefinitionIndex = 55015;
+
+	enum class MonoGridScroller_Enum_3_DF4E55107CEFED9F : ::System::Int32
+	{
+		Horizontal = 0,
+		Vertical = 1,
+	};
+}

@@ -1,0 +1,106 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_79526D80B8F6897C;
+class Class_2_D0A4026DE14E897F_3;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ENABLENUM_OFFSET UNITYSDK_OFFSET(0x8917560)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8916E20)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ONNODEREFRESHCOUNT_OFFSET UNITYSDK_OFFSET(0x8917620)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8916EC0)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8916CD0)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8916D70)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_REFRESHCOUNTNUM_OFFSET UNITYSDK_OFFSET(0x8917200)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_SETREFNOTIFICATIONNODE_OFFSET UNITYSDK_OFFSET(0x8917020)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_SHOWREDPOINT_OFFSET UNITYSDK_OFFSET(0x8917140)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8917690)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x89176C0)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8917730)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x89177B0)
+#define MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8917810)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralPopNumHintWidgetController_TypeDefinitionIndex = 72228;
+
+	class UIGeneralPopNumHintWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_D0A4026DE14E897F_3* _view; // 0x2A0
+		::System::Boolean isPopEnable; // 0x2A8
+		::Class_1_79526D80B8F6897C* _notificationNode; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetRefNotificationNode(::Class_1_79526D80B8F6897C* node)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_79526D80B8F6897C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_SETREFNOTIFICATIONNODE_OFFSET))(this, node);
+		}
+
+		::System::Void ShowRedPoint()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_SHOWREDPOINT_OFFSET))(this);
+		}
+
+		::System::Void EnableNum(::System::Boolean isEnable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ENABLENUM_OFFSET))(this, isEnable);
+		}
+
+		::System::Void OnNodeRefreshCount(::System::Int32 count)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_ONNODEREFRESHCOUNT_OFFSET))(this, count);
+		}
+
+		::System::Void RefreshCountNum()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER_REFRESHCOUNTNUM_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPNUMHINTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

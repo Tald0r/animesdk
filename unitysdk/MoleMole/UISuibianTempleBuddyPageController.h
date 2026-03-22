@@ -1,0 +1,104 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_2_60638234271CCDB8_9;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UISuibianTempleBuddyPageController_ViewModel; }
+namespace System { template <typename T> class Lazy_1; }
+namespace System::Threading { class CancellationTokenSource; }
+
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_BINDVIEWCALLBACKS_OFFSET UNITYSDK_OFFSET(0xBEBDC50)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET UNITYSDK_OFFSET(0xBEBDCB0)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_GET_CANCELLATIONTOKENSOURCE_OFFSET UNITYSDK_OFFSET(0xBEBDF30)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xBEBD970)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xBEBDE80)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBEBD980)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBEBDD40)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBEBDA20)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBEBDF90)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xBEBE040)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBEBE0A0)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBEBE110)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBEBE120)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISuibianTempleBuddyPageController_TypeDefinitionIndex = 37800;
+
+	class UISuibianTempleBuddyPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_60638234271CCDB8_9* _view; // 0x2F8
+		::Class_1_48D56DACBE4271BC* _propertySyncHelper; // 0x300
+		::MoleMole::UISuibianTempleBuddyPageController_ViewModel* _viewModel; // 0x308
+		::System::Lazy_1<::System::Threading::CancellationTokenSource*>* _lazyCancellationTokenSource; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void BindViewCallbacks()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_BINDVIEWCALLBACKS_OFFSET))(this);
+		}
+
+		::System::Void BuildViewModelDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET))(this);
+		}
+
+		::System::Threading::CancellationTokenSource* get_CancellationTokenSource()
+		{
+			return ((::System::Threading::CancellationTokenSource*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER_GET_CANCELLATIONTOKENSOURCE_OFFSET))(this);
+		}
+
+		::System::Void __base_InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

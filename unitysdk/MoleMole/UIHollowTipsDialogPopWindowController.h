@@ -1,0 +1,160 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_79F6D62CE30E3F8E_60;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_BINDDEFAULTOKBTN_OFFSET UNITYSDK_OFFSET(0x7D18180)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0x7D17400)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x7D173F0)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_INITHOLLOWITEM_OFFSET UNITYSDK_OFFSET(0x7D17910)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_INITSWITCHHOLLOWITEM_OFFSET UNITYSDK_OFFSET(0x7D182F0)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_MASKCLOSE_OFFSET UNITYSDK_OFFSET(0x7D17730)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D17530)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x7D17680)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D175D0)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7D17410)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7D17480)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_SETCLOSETRIGGEROKCLICK_OFFSET UNITYSDK_OFFSET(0x7D18A50)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_SETOKCALLBACK_OFFSET UNITYSDK_OFFSET(0x7D18AC0)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER__BINDDEFAULTOKBTN_B__15_0_OFFSET UNITYSDK_OFFSET(0x7D18B40)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER__BINDDEFAULTOKBTN_B__15_1_OFFSET UNITYSDK_OFFSET(0x7D18BC0)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7D18B30)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_MASKCLOSE_OFFSET UNITYSDK_OFFSET(0x7D18DF0)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D18E60)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x7D18ED0)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D18F00)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7D18F10)
+#define MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7D18F20)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowTipsDialogPopWindowController_TypeDefinitionIndex = 42151;
+
+	class UIHollowTipsDialogPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_60* _view; // 0x2F8
+		::System::Boolean CloseTriggerOkClick; // 0x300
+		::System::Boolean _isClicked; // 0x301
+		::System::Action* okBtnCb; // 0x308
+		::System::Boolean canCloseWithMask; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void InitHollowItem(::System::Int32 hollowItemID, ::System::Int32 count)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_INITHOLLOWITEM_OFFSET))(this, hollowItemID, count);
+		}
+
+		::System::Void MaskClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_MASKCLOSE_OFFSET))(this);
+		}
+
+		::System::Void InitSwitchHollowItem(::System::Int32 hollowItemID, ::System::Int32 count, ::System::Action_1<::System::Int32>* switchCallback, ::System::Action* deleteCallback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Action_1<::System::Int32>*, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_INITSWITCHHOLLOWITEM_OFFSET))(this, hollowItemID, count, switchCallback, deleteCallback);
+		}
+
+		::System::Void SetCloseTriggerOkClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_SETCLOSETRIGGEROKCLICK_OFFSET))(this);
+		}
+
+		::System::Void SetOkCallback(::System::Action* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_SETOKCALLBACK_OFFSET))(this, callback);
+		}
+
+		::System::Void BindDefaultOKBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER_BINDDEFAULTOKBTN_OFFSET))(this);
+		}
+
+		::System::Void _BindDefaultOKBtn_b__15_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER__BINDDEFAULTOKBTN_B__15_0_OFFSET))(this);
+		}
+
+		::System::Void _BindDefaultOKBtn_b__15_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER__BINDDEFAULTOKBTN_B__15_1_OFFSET))(this);
+		}
+
+		::System::Void __base_MaskClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_MASKCLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWTIPSDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

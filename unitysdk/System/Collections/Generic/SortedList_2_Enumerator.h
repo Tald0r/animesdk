@@ -7,7 +7,7 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 
 namespace System::Collections::Generic
 {
-	inline static constexpr unsigned int SortedList_2_Enumerator_TypeDefinitionIndex = 3014;
+	inline static constexpr unsigned int SortedList_2_Enumerator_TypeDefinitionIndex = 3976;
 
 	template <typename TKey, typename TValue>
 	struct SortedList_2_Enumerator
@@ -18,5 +18,7 @@ namespace System::Collections::Generic
 		::System::Int32 _index; // 0x0
 		::System::Int32 _version; // 0x0
 		::System::Int32 _getEnumeratorRetType; // 0x0
+		// static const ::System::Int32 KeyValuePair = 0x1; // 0x0
+		// static const ::System::Int32 DictEntry = 0x2; // 0x0
 	};
 }

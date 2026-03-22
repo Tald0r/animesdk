@@ -1,0 +1,157 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+namespace System { class Object; }
+namespace System { class String; }
+namespace UnityEngine::InputSystem { class InputControl; }
+namespace UnityEngine::InputSystem::LowLevel { class InputStateHistory; }
+
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_CHECKVALID_OFFSET UNITYSDK_OFFSET(0x84A330)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_COPYFROM_OFFSET UNITYSDK_OFFSET(0x84A310)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x84A340)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_EQUALS_OFFSET UNITYSDK_OFFSET(0x389250)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x7C2220)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GETUNSAFEEXTRAMEMORYPTRUNCHECKED_OFFSET UNITYSDK_OFFSET(0x84A300)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GETUNSAFEEXTRAMEMORYPTR_OFFSET UNITYSDK_OFFSET(0x84A2D0)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GETUNSAFEMEMORYPTRUNCHECKED_OFFSET UNITYSDK_OFFSET(0x7C2150)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GETUNSAFEMEMORYPTR_OFFSET UNITYSDK_OFFSET(0x84A270)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_CONTROL_OFFSET UNITYSDK_OFFSET(0x84A0B0)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_HEADER_OFFSET UNITYSDK_OFFSET(0x7C1E10)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_INDEX_OFFSET UNITYSDK_OFFSET(0x84A030)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_NEXT_OFFSET UNITYSDK_OFFSET(0x84A130)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_OWNER_OFFSET UNITYSDK_OFFSET(0x21C7C0)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_PREVIOUS_OFFSET UNITYSDK_OFFSET(0x84A1B0)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_RECORDINDEX_OFFSET UNITYSDK_OFFSET(0x2F7640)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_TIME_OFFSET UNITYSDK_OFFSET(0x84A070)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_VALID_OFFSET UNITYSDK_OFFSET(0x7C1E40)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_VERSION_OFFSET UNITYSDK_OFFSET(0x2C50B0)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_READVALUEASOBJECT_OFFSET UNITYSDK_OFFSET(0x84A230)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_TOSTRING_OFFSET UNITYSDK_OFFSET(0x84A3B0)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD__CTOR_OFFSET UNITYSDK_OFFSET(0x7C2020)
+
+namespace UnityEngine::InputSystem::LowLevel
+{
+	inline static constexpr unsigned int InputStateHistory_Record_TypeDefinitionIndex = 27840;
+
+	struct alignas(8) InputStateHistory_Record
+	{
+		::UnityEngine::InputSystem::LowLevel::InputStateHistory* m_Owner; // 0x10
+		::System::Int32 m_IndexPlusOne; // 0x18
+		::System::UInt32 m_Version; // 0x1C
+
+		/*
+		::System::Void _ctor(::UnityEngine::InputSystem::LowLevel::InputStateHistory* owner, ::System::Int32 index, ::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader* header)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::InputSystem::LowLevel::InputStateHistory*, ::System::Int32, ::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader*))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD__CTOR_OFFSET))(this, owner, index, header);
+		}
+		*/
+
+		/*
+		::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader* get_header()
+		{
+			return ((::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_HEADER_OFFSET))(this);
+		}
+		*/
+
+		::System::Int32 get_recordIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_RECORDINDEX_OFFSET))(this);
+		}
+
+		::System::UInt32 get_version()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_VERSION_OFFSET))(this);
+		}
+
+		::System::Boolean get_valid()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_VALID_OFFSET))(this);
+		}
+
+		::UnityEngine::InputSystem::LowLevel::InputStateHistory* get_owner()
+		{
+			return ((::UnityEngine::InputSystem::LowLevel::InputStateHistory*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_OWNER_OFFSET))(this);
+		}
+
+		::System::Int32 get_index()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_INDEX_OFFSET))(this);
+		}
+
+		::System::Double get_time()
+		{
+			return ((::System::Double(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_TIME_OFFSET))(this);
+		}
+
+		::UnityEngine::InputSystem::InputControl* get_control()
+		{
+			return ((::UnityEngine::InputSystem::InputControl*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_CONTROL_OFFSET))(this);
+		}
+
+		::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record get_next()
+		{
+			return ((::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_NEXT_OFFSET))(this);
+		}
+
+		::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record get_previous()
+		{
+			return ((::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GET_PREVIOUS_OFFSET))(this);
+		}
+
+		::System::Object* ReadValueAsObject()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_READVALUEASOBJECT_OFFSET))(this);
+		}
+
+		::System::Void* GetUnsafeMemoryPtr()
+		{
+			return ((::System::Void*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GETUNSAFEMEMORYPTR_OFFSET))(this);
+		}
+
+		::System::Void* GetUnsafeMemoryPtrUnchecked()
+		{
+			return ((::System::Void*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GETUNSAFEMEMORYPTRUNCHECKED_OFFSET))(this);
+		}
+
+		::System::Void* GetUnsafeExtraMemoryPtr()
+		{
+			return ((::System::Void*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GETUNSAFEEXTRAMEMORYPTR_OFFSET))(this);
+		}
+
+		::System::Void* GetUnsafeExtraMemoryPtrUnchecked()
+		{
+			return ((::System::Void*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GETUNSAFEEXTRAMEMORYPTRUNCHECKED_OFFSET))(this);
+		}
+
+		::System::Void CopyFrom(::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record record)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_COPYFROM_OFFSET))(this, record);
+		}
+
+		::System::Void CheckValid()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_CHECKVALID_OFFSET))(this);
+		}
+
+		::System::Boolean Equals(::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record other)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_EQUALS_OFFSET))(this, other);
+		}
+
+		::System::Boolean Equals_1(::System::Object* obj)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_EQUALS_1_OFFSET))(this, obj);
+		}
+
+		::System::Int32 GetHashCode()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_GETHASHCODE_OFFSET))(this);
+		}
+
+		::System::String* ToString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTSTATEHISTORY_RECORD_TOSTRING_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,10 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+inline static constexpr unsigned int Enum_3_01BE6AEDF4C525EC_TypeDefinitionIndex = 47124;
+
+enum class Enum_3_01BE6AEDF4C525EC : ::System::Int32
+{
+	Penetrate = 1,
+	Normal = 0,
+};

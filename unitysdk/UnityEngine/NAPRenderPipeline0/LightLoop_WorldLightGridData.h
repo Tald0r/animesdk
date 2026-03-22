@@ -1,0 +1,44 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace UnityEngine { class ComputeBuffer; }
+
+#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_WORLDLIGHTGRIDDATA_CLEANUP_OFFSET UNITYSDK_OFFSET(0x19E3B270)
+#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_WORLDLIGHTGRIDDATA_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x19E3AF20)
+#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_WORLDLIGHTGRIDDATA_RESIZE_OFFSET UNITYSDK_OFFSET(0x19E3AFE0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_WORLDLIGHTGRIDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x19E3B450)
+
+namespace UnityEngine::NAPRenderPipeline0
+{
+	inline static constexpr unsigned int LightLoop_WorldLightGridData_TypeDefinitionIndex = 5992;
+
+	class LightLoop_WorldLightGridData : public ::System::Object
+	{
+	public:
+		::UnityEngine::ComputeBuffer* IndexAllocatorBuffer; // 0x10
+		::UnityEngine::ComputeBuffer* WorldLightGridInfoBuffer; // 0x18
+		::UnityEngine::ComputeBuffer* WorldLightGridBuffer; // 0x20
+		::UnityEngine::ComputeBuffer* WorldLightIndexBuffer; // 0x28
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_WORLDLIGHTGRIDDATA__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Initialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_WORLDLIGHTGRIDDATA_INITIALIZE_OFFSET))(this);
+		}
+
+		::System::Void Resize(::System::UInt32 cellNum)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_WORLDLIGHTGRIDDATA_RESIZE_OFFSET))(this, cellNum);
+		}
+
+		::System::Void Cleanup()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_WORLDLIGHTGRIDDATA_CLEANUP_OFFSET))(this);
+		}
+	};
+}

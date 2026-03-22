@@ -2,22 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-namespace RPG::Client::Billboard { class IBillboardTypeData; }
+#define CLASS_1_656F8176D9E918FF_METHOD_1_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0x74E57C0)
+#define CLASS_1_656F8176D9E918FF_METHOD_1_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x74E5820)
+#define CLASS_1_656F8176D9E918FF_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x74E5760)
+#define CLASS_1_656F8176D9E918FF__CCTOR_OFFSET UNITYSDK_OFFSET(0x74E5890)
+#define CLASS_1_656F8176D9E918FF__CTOR_OFFSET UNITYSDK_OFFSET(0x74E5880)
 
-#define CLASS_1_656F8176D9E918FF_CLONE_OFFSET UNITYSDK_OFFSET(0x8421C10)
-#define CLASS_1_656F8176D9E918FF_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x8421B90)
-#define CLASS_1_656F8176D9E918FF_ISVALID_OFFSET UNITYSDK_OFFSET(0x8421BD0)
-#define CLASS_1_656F8176D9E918FF__CCTOR_OFFSET UNITYSDK_OFFSET(0x8421C50)
-#define CLASS_1_656F8176D9E918FF__CTOR_OFFSET UNITYSDK_OFFSET(0x8421BC0)
-
-inline static constexpr unsigned int Class_1_656F8176D9E918FF_TypeDefinitionIndex = 59787;
+inline static constexpr unsigned int Class_1_656F8176D9E918FF_TypeDefinitionIndex = 49354;
 
 class Class_1_656F8176D9E918FF : public ::System::Object
 {
 public:
-	static ::Class_1_656F8176D9E918FF** StaticGet__Instance_k__BackingField()
+	static ::Class_1_656F8176D9E918FF** StaticGet_Field_1_0()
 	{
-		return (::Class_1_656F8176D9E918FF**)Il2CppClass::FromTypeDefinitionIndex(Class_1_656F8176D9E918FF_TypeDefinitionIndex)->GetStaticField(0x14F80);
+		return (::Class_1_656F8176D9E918FF**)Il2CppClass::FromTypeDefinitionIndex(Class_1_656F8176D9E918FF_TypeDefinitionIndex)->GetStaticField(0x30980);
 	}
 
 	::System::Void _ctor()
@@ -30,18 +28,18 @@ public:
 		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_656F8176D9E918FF__CCTOR_OFFSET))();
 	}
 
-	static ::Class_1_656F8176D9E918FF* get_Instance()
+	::System::Void Method_1_CA373AA1C7054598()
 	{
-		return ((::Class_1_656F8176D9E918FF*(*)())((::PBYTE)hIl2Cpp + CLASS_1_656F8176D9E918FF_GET_INSTANCE_OFFSET))();
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_656F8176D9E918FF_METHOD_1_CA373AA1C7054598_OFFSET))(this);
 	}
 
-	::System::Boolean IsValid()
+	::System::Boolean Method_1_391A84BCD9F51317()
 	{
-		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_656F8176D9E918FF_ISVALID_OFFSET))(this);
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_656F8176D9E918FF_METHOD_1_391A84BCD9F51317_OFFSET))(this);
 	}
 
-	::RPG::Client::Billboard::IBillboardTypeData* Clone()
+	::System::Void Method_1_CA373AA1C7054598_1()
 	{
-		return ((::RPG::Client::Billboard::IBillboardTypeData*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_656F8176D9E918FF_CLONE_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_656F8176D9E918FF_METHOD_1_CA373AA1C7054598_1_OFFSET))(this);
 	}
 };

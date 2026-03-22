@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int RenderTextureCreationFlags_TypeDefinitionIndex = 3963;
+	inline static constexpr unsigned int RenderTextureCreationFlags_TypeDefinitionIndex = 5243;
 
 	enum class RenderTextureCreationFlags : ::System::Int32
 	{
@@ -17,7 +17,15 @@ namespace UnityEngine
 		NoResolvedColorSurface = 256,
 		DynamicallyScalable = 1024,
 		BindMS = 2048,
-		SRVPerMip = 16384,
-		CPUWrite = 32768,
+		LossyCompression = 16384,
+		FastClear = 32768,
+		AutoApplyDynamicScale = 65536,
+		UniformGridSamplePattern = 131072,
+		DCC = 262144,
+		TC = 524288,
+		NoRTV = 1048576,
+		DepthWithoutHTile = 2097152,
+		PrivateStorage = 4194304,
+		DynamicCache = 8388608,
 	};
 }

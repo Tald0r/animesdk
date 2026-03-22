@@ -1,0 +1,183 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_B26F16DF089078E4;
+namespace MoleMole { class MonoGamepadSelectable; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralRoleCardRowWidgetController_Context; }
+namespace System { class Object; }
+namespace System { template <typename T> class Action_1; }
+namespace UnityEngine { class Material; }
+
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_GETGAMEPADSELECTABLE_OFFSET UNITYSDK_OFFSET(0x7A44120)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0x7A43C10)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x7A43C80)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONFOCUSSTATECHANGEDFORGAMEPADMODULE_OFFSET UNITYSDK_OFFSET(0x7A448D0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONFOCUSSTATECHANGED_OFFSET UNITYSDK_OFFSET(0x7A44940)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0x7A45130)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0x7A459D0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x7A45AB0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x7A441E0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x7A44E50)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A45EF0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A43F30)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x7A44410)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_RESETSELECTOBJALPHA_OFFSET UNITYSDK_OFFSET(0x7A44F10)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_SETBTNCLICKEDACTION_OFFSET UNITYSDK_OFFSET(0x7A44F80)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_SETFOCUSSTATE_OFFSET UNITYSDK_OFFSET(0x7A45C00)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_SETSELECTOBJALPHA_OFFSET UNITYSDK_OFFSET(0x7A44A30)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A46080)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x7A46090)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0x7A46100)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0x7A46170)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x7A461D0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x7A46250)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x7A462C0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A462D0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A46350)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralRoleCardRowWidgetController_TypeDefinitionIndex = 72249;
+
+	class UIGeneralRoleCardRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		// static const ::System::Single NORMAL_ALPHA; // 0x0
+		// static const ::System::Single TRANSPARENT_ALPHA; // 0x0
+		::UnityEngine::Material* _hpMaterial; // 0x2D0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_B26F16DF089078E4* get__viewModel()
+		{
+			return ((::Class_2_B26F16DF089078E4*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::MoleMole::MonoGamepadSelectable* GetGamepadSelectable()
+		{
+			return ((::MoleMole::MonoGamepadSelectable*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_GETGAMEPADSELECTABLE_OFFSET))(this);
+		}
+
+		::System::Void OnFocusStateChangedForGamepadModule(::System::Boolean isFocus)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONFOCUSSTATECHANGEDFORGAMEPADMODULE_OFFSET))(this, isFocus);
+		}
+
+		::System::Void OnFocusStateChanged(::System::Boolean isFocus, ::System::Boolean force)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONFOCUSSTATECHANGED_OFFSET))(this, isFocus, force);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void ResetSelectObjAlpha()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_RESETSELECTOBJALPHA_OFFSET))(this);
+		}
+
+		::System::Void SetSelectObjAlpha(::System::Single alpha)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_SETSELECTOBJALPHA_OFFSET))(this, alpha);
+		}
+
+		::System::Void SetBtnClickedAction(::System::Action_1<::MoleMole::UIGeneralRoleCardRowWidgetController_Context*>* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::MoleMole::UIGeneralRoleCardRowWidgetController_Context*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_SETBTNCLICKEDACTION_OFFSET))(this, callback);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void RefreshView(::MoleMole::UIGeneralRoleCardRowWidgetController_Context* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIGeneralRoleCardRowWidgetController_Context*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, context);
+		}
+
+		::System::Void SetFocusState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_SETFOCUSSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

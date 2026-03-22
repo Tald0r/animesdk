@@ -1,0 +1,58 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_5DF25B7A40A1031E.h"
+
+class Class_1_34B3048095D388ED;
+namespace MoleMole::HollowChessboard { class HollowEntity; }
+
+#define CLASS_3_5A46B9360F369125_METHOD_3_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0xB997C60)
+#define CLASS_3_5A46B9360F369125_METHOD_3_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0xB997B40)
+#define CLASS_3_5A46B9360F369125_METHOD_3_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xB997C00)
+#define CLASS_3_5A46B9360F369125_METHOD_3_CA373AA1C7054598_2_OFFSET UNITYSDK_OFFSET(0xB997CC0)
+#define CLASS_3_5A46B9360F369125_METHOD_3_CA373AA1C7054598_3_OFFSET UNITYSDK_OFFSET(0xB997D20)
+#define CLASS_3_5A46B9360F369125_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xB997BA0)
+#define CLASS_3_5A46B9360F369125__CTOR_OFFSET UNITYSDK_OFFSET(0xB997B30)
+
+inline static constexpr unsigned int Class_3_5A46B9360F369125_TypeDefinitionIndex = 77374;
+
+class Class_3_5A46B9360F369125 : public ::Class_2_5DF25B7A40A1031E
+{
+public:
+	::Class_1_34B3048095D388ED* Field_3_1; // 0x20
+	::MoleMole::HollowChessboard::HollowEntity* Field_3_0; // 0x28
+
+	::System::Void _ctor(::MoleMole::HollowChessboard::HollowEntity* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::HollowChessboard::HollowEntity*))((::PBYTE)hIl2Cpp + CLASS_3_5A46B9360F369125__CTOR_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Method_3_391A84BCD9F51317()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_5A46B9360F369125_METHOD_3_391A84BCD9F51317_OFFSET))(this);
+	}
+
+	::System::Void Method_3_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_5A46B9360F369125_METHOD_3_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_3_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_5A46B9360F369125_METHOD_3_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::System::Boolean Method_3_391A84BCD9F51317_1()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_5A46B9360F369125_METHOD_3_391A84BCD9F51317_1_OFFSET))(this);
+	}
+
+	::System::Void Method_3_CA373AA1C7054598_2()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_5A46B9360F369125_METHOD_3_CA373AA1C7054598_2_OFFSET))(this);
+	}
+
+	::System::Void Method_3_CA373AA1C7054598_3()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_5A46B9360F369125_METHOD_3_CA373AA1C7054598_3_OFFSET))(this);
+	}
+};

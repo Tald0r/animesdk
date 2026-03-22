@@ -4,21 +4,31 @@
 #include "unitysdk/UnityEngine/Color.h"
 
 namespace System::Collections::Generic { template <typename T> class IEqualityComparer_1; }
-namespace UnityEngine::UI { class CustomUIVectot4EqualityComparer; }
+namespace UnityEngine::UI { class CustomUIVector2EqualityComparer; }
+namespace UnityEngine::UI { class CustomUIVector3EqualityComparer; }
+namespace UnityEngine::UI { class CustomUIVector4EqualityComparer; }
 
-#define UNITYENGINE_UI_SETPROPERTYUTILITY_SETCOLOR_OFFSET UNITYSDK_OFFSET(0x18316860)
-#define UNITYENGINE_UI_SETPROPERTYUTILITY__CCTOR_OFFSET UNITYSDK_OFFSET(0x18353E50)
+#define UNITYENGINE_UI_SETPROPERTYUTILITY_SETCOLOR_OFFSET UNITYSDK_OFFSET(0x1A6B7940)
+#define UNITYENGINE_UI_SETPROPERTYUTILITY__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A6B79D0)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int SetPropertyUtility_TypeDefinitionIndex = 5609;
+	inline static constexpr unsigned int SetPropertyUtility_TypeDefinitionIndex = 8424;
 
 	class SetPropertyUtility : public ::System::Object
 	{
 	public:
-		static ::UnityEngine::UI::CustomUIVectot4EqualityComparer** StaticGet_vectot4EqualityComparer()
+		static ::UnityEngine::UI::CustomUIVector2EqualityComparer** StaticGet_vector2EqualityComparer()
 		{
-			return (::UnityEngine::UI::CustomUIVectot4EqualityComparer**)Il2CppClass::FromTypeDefinitionIndex(SetPropertyUtility_TypeDefinitionIndex)->GetStaticField(0x8DD0);
+			return (::UnityEngine::UI::CustomUIVector2EqualityComparer**)Il2CppClass::FromTypeDefinitionIndex(SetPropertyUtility_TypeDefinitionIndex)->GetStaticField(0x7750);
+		}
+		static ::UnityEngine::UI::CustomUIVector3EqualityComparer** StaticGet_vector3EqualityComparer()
+		{
+			return (::UnityEngine::UI::CustomUIVector3EqualityComparer**)Il2CppClass::FromTypeDefinitionIndex(SetPropertyUtility_TypeDefinitionIndex)->GetStaticField(0x7758);
+		}
+		static ::UnityEngine::UI::CustomUIVector4EqualityComparer** StaticGet_vector4EqualityComparer()
+		{
+			return (::UnityEngine::UI::CustomUIVector4EqualityComparer**)Il2CppClass::FromTypeDefinitionIndex(SetPropertyUtility_TypeDefinitionIndex)->GetStaticField(0x7760);
 		}
 
 		static ::System::Void _cctor()

@@ -1,0 +1,146 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_5DA2E7556103D5A3_280;
+class Class_2_12758EFCB74270F1_1;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Object; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_GETCLIPDATA_OFFSET UNITYSDK_OFFSET(0xC003B50)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_GET_ISSELECTED_OFFSET UNITYSDK_OFFSET(0xC003650)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_MARKSELECTED_OFFSET UNITYSDK_OFFSET(0xC003BC0)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_MARKUNSELECTED_OFFSET UNITYSDK_OFFSET(0xC003C60)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0038E0)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0xC004270)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xC003D60)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC003980)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC003660)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC003700)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_SETCLICKCALLBACK_OFFSET UNITYSDK_OFFSET(0xC0042E0)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC004350)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER__ONUIOPEN_B__6_0_OFFSET UNITYSDK_OFFSET(0xC004360)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER__SETEMPTY_OFFSET UNITYSDK_OFFSET(0xC003D00)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0043C0)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0xC004430)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xC004490)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC004510)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC004590)
+#define MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0045F0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHadalLineUp_LayerClipWidgetController_TypeDefinitionIndex = 58002;
+
+	class UIHadalLineUp_LayerClipWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_12758EFCB74270F1_1* _view; // 0x2D0
+		::System::Boolean _isLocked; // 0x2D8
+		::System::Boolean _isSelected; // 0x2D9
+		::Class_1_5DA2E7556103D5A3_280* _curData; // 0x2E0
+		::System::Action_1<::MoleMole::UIHadalLineUp_LayerClipWidgetController*>* _clickCallback; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsSelected()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_GET_ISSELECTED_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::Class_1_5DA2E7556103D5A3_280* GetClipData()
+		{
+			return ((::Class_1_5DA2E7556103D5A3_280*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_GETCLIPDATA_OFFSET))(this);
+		}
+
+		::System::Boolean MarkSelected()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_MARKSELECTED_OFFSET))(this);
+		}
+
+		::System::Void MarkUnselected()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_MARKUNSELECTED_OFFSET))(this);
+		}
+
+		::System::Void _SetEmpty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER__SETEMPTY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void SetClickCallback(::System::Action_1<::MoleMole::UIHadalLineUp_LayerClipWidgetController*>* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::MoleMole::UIHadalLineUp_LayerClipWidgetController*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER_SETCLICKCALLBACK_OFFSET))(this, callback);
+		}
+
+		::System::Void _OnUIOpen_b__6_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER__ONUIOPEN_B__6_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALLINEUP_LAYERCLIPWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

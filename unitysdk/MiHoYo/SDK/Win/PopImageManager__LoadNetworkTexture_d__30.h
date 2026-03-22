@@ -9,32 +9,32 @@ namespace UnityEngine { class Texture2D; }
 namespace UnityEngine::Events { template <typename T> class UnityAction_1; }
 namespace UnityEngine::Networking { class UnityWebRequest; }
 
-#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x15A77010)
-#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x15A77670)
-#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x15A776D0)
-#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x15A77680)
-#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x15A77000)
-#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30__CTOR_OFFSET UNITYSDK_OFFSET(0x15A76C90)
+#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x18A37F90)
+#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x18A38570)
+#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x18A385D0)
+#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x18A38580)
+#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18A37F80)
+#define MIHOYO_SDK_WIN_POPIMAGEMANAGER__LOADNETWORKTEXTURE_D__30__CTOR_OFFSET UNITYSDK_OFFSET(0x18A37F70)
 
 namespace MiHoYo::SDK::Win
 {
-	inline static constexpr unsigned int PopImageManager__LoadNetworkTexture_d__30_TypeDefinitionIndex = 7950;
+	inline static constexpr unsigned int PopImageManager__LoadNetworkTexture_d__30_TypeDefinitionIndex = 19097;
 
 	class PopImageManager__LoadNetworkTexture_d__30 : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::Byte>* _pngData_5__4; // 0x10
-		::System::Object* __2__current; // 0x18
-		::System::String* _name_5__2; // 0x20
-		::UnityEngine::Events::UnityAction_1<::UnityEngine::Texture2D*>* callback; // 0x28
-		::Il2CppArray<::System::Byte>* _hash_5__7; // 0x30
-		::System::String* _imageMD5_5__5; // 0x38
-		::System::Security::Cryptography::MD5* _md5_5__6; // 0x40
-		::MiHoYo::SDK::Win::PopImageManager* __4__this; // 0x48
-		::System::String* _downloadMD5_5__8; // 0x50
-		::UnityEngine::Networking::UnityWebRequest* _localRequest_5__1; // 0x58
-		::UnityEngine::Texture2D* _image_5__3; // 0x60
-		::System::String* url; // 0x68
+		::UnityEngine::Texture2D* _image_5__3; // 0x10
+		::System::String* url; // 0x18
+		::MiHoYo::SDK::Win::PopImageManager* __4__this; // 0x20
+		::Il2CppArray<::System::Byte>* _pngData_5__4; // 0x28
+		::System::Object* __2__current; // 0x30
+		::System::Security::Cryptography::MD5* _md5_5__6; // 0x38
+		::UnityEngine::Events::UnityAction_1<::UnityEngine::Texture2D*>* callback; // 0x40
+		::UnityEngine::Networking::UnityWebRequest* _localRequest_5__1; // 0x48
+		::Il2CppArray<::System::Byte>* _hash_5__7; // 0x50
+		::System::String* _name_5__2; // 0x58
+		::System::String* _downloadMD5_5__8; // 0x60
+		::System::String* _imageMD5_5__5; // 0x68
 		::System::Int32 __1__state; // 0x70
 
 		::System::Void _ctor(::System::Int32 __1__state)

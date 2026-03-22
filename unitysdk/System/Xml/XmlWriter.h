@@ -4,31 +4,29 @@
 #include "unitysdk/System/Xml/WriteState.h"
 
 namespace System { class String; }
-namespace System::IO { class Stream; }
-namespace System::IO { class TextWriter; }
-namespace System::Xml { class XmlWriterSettings; }
+namespace System::Xml { class XmlReader; }
 
-#define SYSTEM_XML_XMLWRITER_CLOSE_OFFSET UNITYSDK_OFFSET(0x17E3A410)
-#define SYSTEM_XML_XMLWRITER_CREATE_1_OFFSET UNITYSDK_OFFSET(0x17E3AC00)
-#define SYSTEM_XML_XMLWRITER_CREATE_OFFSET UNITYSDK_OFFSET(0x17E3A500)
-#define SYSTEM_XML_XMLWRITER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x17E3A4C0)
-#define SYSTEM_XML_XMLWRITER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17E3A4A0)
-#define SYSTEM_XML_XMLWRITER_WRITEATTRIBUTESTRING_1_OFFSET UNITYSDK_OFFSET(0x17E3A370)
-#define SYSTEM_XML_XMLWRITER_WRITEATTRIBUTESTRING_2_OFFSET UNITYSDK_OFFSET(0x17E3A3C0)
-#define SYSTEM_XML_XMLWRITER_WRITEATTRIBUTESTRING_OFFSET UNITYSDK_OFFSET(0x17E3A320)
-#define SYSTEM_XML_XMLWRITER_WRITEBINHEX_OFFSET UNITYSDK_OFFSET(0x17E38660)
-#define SYSTEM_XML_XMLWRITER_WRITEELEMENTSTRING_OFFSET UNITYSDK_OFFSET(0x17E3A440)
-#define SYSTEM_XML_XMLWRITER_WRITESTARTELEMENT_OFFSET UNITYSDK_OFFSET(0x17E3A2F0)
-#define SYSTEM_XML_XMLWRITER_WRITEVALUE_OFFSET UNITYSDK_OFFSET(0x17E3A420)
-#define SYSTEM_XML_XMLWRITER__CTOR_OFFSET UNITYSDK_OFFSET(0x17E27040)
+#define SYSTEM_XML_XMLWRITER_CLOSE_OFFSET UNITYSDK_OFFSET(0x18C837E0)
+#define SYSTEM_XML_XMLWRITER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x18C83ED0)
+#define SYSTEM_XML_XMLWRITER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18C83EB0)
+#define SYSTEM_XML_XMLWRITER_WRITEATTRIBUTESTRING_1_OFFSET UNITYSDK_OFFSET(0x18C83740)
+#define SYSTEM_XML_XMLWRITER_WRITEATTRIBUTESTRING_2_OFFSET UNITYSDK_OFFSET(0x18C83790)
+#define SYSTEM_XML_XMLWRITER_WRITEATTRIBUTESTRING_OFFSET UNITYSDK_OFFSET(0x18C836F0)
+#define SYSTEM_XML_XMLWRITER_WRITEATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x18C837F0)
+#define SYSTEM_XML_XMLWRITER_WRITEELEMENTSTRING_OFFSET UNITYSDK_OFFSET(0x18C83E50)
+#define SYSTEM_XML_XMLWRITER_WRITENODE_OFFSET UNITYSDK_OFFSET(0x18C83A40)
+#define SYSTEM_XML_XMLWRITER_WRITESTARTELEMENT_OFFSET UNITYSDK_OFFSET(0x18C836C0)
+#define SYSTEM_XML_XMLWRITER__CTOR_OFFSET UNITYSDK_OFFSET(0x18C83F10)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int XmlWriter_TypeDefinitionIndex = 1868;
+	inline static constexpr unsigned int XmlWriter_TypeDefinitionIndex = 1743;
 
 	class XmlWriter : public ::System::Object
 	{
 	public:
+		::Il2CppArray<::System::Char>* writeNodeBuffer; // 0x10
+
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLWRITER__CTOR_OFFSET))(this);
@@ -54,19 +52,19 @@ namespace System::Xml
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLWRITER_WRITEATTRIBUTESTRING_2_OFFSET))(this, prefix, localName, ns, value);
 		}
 
-		::System::Void WriteBinHex(::Il2CppArray<::System::Byte>* buffer, ::System::Int32 index, ::System::Int32 count)
-		{
-			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLWRITER_WRITEBINHEX_OFFSET))(this, buffer, index, count);
-		}
-
 		::System::Void Close()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLWRITER_CLOSE_OFFSET))(this);
 		}
 
-		::System::Void WriteValue(::System::String* value)
+		::System::Void WriteAttributes(::System::Xml::XmlReader* reader, ::System::Boolean defattr)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLWRITER_WRITEVALUE_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlReader*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLWRITER_WRITEATTRIBUTES_OFFSET))(this, reader, defattr);
+		}
+
+		::System::Void WriteNode(::System::Xml::XmlReader* reader, ::System::Boolean defattr)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlReader*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLWRITER_WRITENODE_OFFSET))(this, reader, defattr);
 		}
 
 		::System::Void WriteElementString(::System::String* localName, ::System::String* ns, ::System::String* value)
@@ -82,16 +80,6 @@ namespace System::Xml
 		::System::Void Dispose_1(::System::Boolean disposing)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLWRITER_DISPOSE_1_OFFSET))(this, disposing);
-		}
-
-		static ::System::Xml::XmlWriter* Create(::System::IO::Stream* output, ::System::Xml::XmlWriterSettings* settings)
-		{
-			return ((::System::Xml::XmlWriter*(*)(::System::IO::Stream*, ::System::Xml::XmlWriterSettings*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLWRITER_CREATE_OFFSET))(output, settings);
-		}
-
-		static ::System::Xml::XmlWriter* Create_1(::System::IO::TextWriter* output, ::System::Xml::XmlWriterSettings* settings)
-		{
-			return ((::System::Xml::XmlWriter*(*)(::System::IO::TextWriter*, ::System::Xml::XmlWriterSettings*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLWRITER_CREATE_1_OFFSET))(output, settings);
 		}
 	};
 }

@@ -3,7 +3,7 @@
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int EventAttributes_TypeDefinitionIndex = 558;
+	inline static constexpr unsigned int EventAttributes_TypeDefinitionIndex = 532;
 
 	enum class EventAttributes : ::System::Int32
 	{

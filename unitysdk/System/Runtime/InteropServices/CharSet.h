@@ -3,7 +3,7 @@
 
 namespace System::Runtime::InteropServices
 {
-	inline static constexpr unsigned int CharSet_TypeDefinitionIndex = 1409;
+	inline static constexpr unsigned int CharSet_TypeDefinitionIndex = 1428;
 
 	enum class CharSet : ::System::Int32
 	{

@@ -1,0 +1,149 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_EEA0111A28582B57;
+class Class_2_6AE7655A34E411CC;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralLoginTipsContext; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace UnityEngine { class Animation; }
+
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_CLOSETEXT_OFFSET UNITYSDK_OFFSET(0x7A423B0)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_FADEIN_OFFSET UNITYSDK_OFFSET(0x7A41D80)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_FADEOUT_OFFSET UNITYSDK_OFFSET(0x7A41E00)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_GETVIEW_OFFSET UNITYSDK_OFFSET(0x7A42540)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_GET_ISIGNOREINPUT_OFFSET UNITYSDK_OFFSET(0x7A41A40)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x7A41A30)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A41AD0)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A41CF0)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A41A50)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A41B70)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_SETIMAGE_OFFSET UNITYSDK_OFFSET(0x7A42210)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_SETTEXT_OFFSET UNITYSDK_OFFSET(0x7A41F00)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_SHOWLOGINSUCCESS_OFFSET UNITYSDK_OFFSET(0x7A424E0)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_SHOWTOTAS_OFFSET UNITYSDK_OFFSET(0x7A42480)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER__CLOSETEXT_B__14_0_OFFSET UNITYSDK_OFFSET(0x7A425C0)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A425B0)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A42650)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A426C0)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A426D0)
+#define MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A426E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralLoginTipsPopWindowController_TypeDefinitionIndex = 46271;
+
+	class UIGeneralLoginTipsPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_6AE7655A34E411CC* _view; // 0x2F8
+		::Foundation::Coroutine::CoroutineHandle handler; // 0x300
+		::MoleMole::UIGeneralLoginTipsContext* _context; // 0x308
+		::UnityEngine::Animation* _ani; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsIgnoreInput()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_GET_ISIGNOREINPUT_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void FadeIn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_FADEIN_OFFSET))(this);
+		}
+
+		::System::Void FadeOut(::System::Action* call)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_FADEOUT_OFFSET))(this, call);
+		}
+
+		::System::Void SetText(::System::String* str, ::System::Single time)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_SETTEXT_OFFSET))(this, str, time);
+		}
+
+		::System::Void SetImage(::System::String* imgPath)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_SETIMAGE_OFFSET))(this, imgPath);
+		}
+
+		::System::Void CloseText(::System::Single time)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_CLOSETEXT_OFFSET))(this, time);
+		}
+
+		::System::Void ShowTotas()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_SHOWTOTAS_OFFSET))(this);
+		}
+
+		::System::Void ShowLoginSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_SHOWLOGINSUCCESS_OFFSET))(this);
+		}
+
+		::Class_1_EEA0111A28582B57* GetView()
+		{
+			return ((::Class_1_EEA0111A28582B57*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER_GETVIEW_OFFSET))(this);
+		}
+
+		::System::Void _CloseText_b__14_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER__CLOSETEXT_B__14_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALLOGINTIPSPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

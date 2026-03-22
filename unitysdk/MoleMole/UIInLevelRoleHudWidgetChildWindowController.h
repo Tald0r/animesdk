@@ -1,0 +1,551 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_41BDD9D588006A51.h"
+#include "unitysdk/MoleMole/Config/BaseProperty.h"
+#include "unitysdk/MoleMole/EntityHandle.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/UnityEngine/Color.h"
+
+class Class_1_10E552FF2A1B8136;
+class Class_1_15CCFE77B9E12299;
+class Class_1_48D56DACBE4271BC;
+class Class_1_6A3A26AD0CB7F995;
+class Class_1_6DB015FE22A27672;
+class Class_2_3BEB019E352B28D9;
+class Class_2_3BEB019E352B28D9_Class_2_8F205FCD6AF442AF;
+class Class_2_79AE422BA06F6D26_31;
+class Class_3_7472FB6CC4015359;
+namespace MoleMole { class CharacterScriptConfig; }
+namespace MoleMole { class RoleHudSpColorConfig; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIInLevelRoleHudWidgetChildWindowController_HpDataBindView; }
+namespace MoleMole { class UIInLevelRoleHudWidgetChildWindowController_ViewModel; }
+namespace MoleMole::Battle { class Entity; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Animation; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_BUILDDATABINDING_OFFSET UNITYSDK_OFFSET(0x89609B0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_BUILDHELPER_OFFSET UNITYSDK_OFFSET(0x8960F00)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_BUILDMPDATABINDING_OFFSET UNITYSDK_OFFSET(0x8959B70)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_CHANGETOVEHICLEUI_OFFSET UNITYSDK_OFFSET(0x8961AF0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_GET_CUSTOMPROPERTYUIPARENT_OFFSET UNITYSDK_OFFSET(0x895F9C0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_GET_OWNERENTITY_OFFSET UNITYSDK_OFFSET(0x8962220)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_GET_WEAKINGDURATIONPERCENTAGE_OFFSET UNITYSDK_OFFSET(0x8961EB0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x895DCB0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_HANDLEWEAKINGDURATION_OFFSET UNITYSDK_OFFSET(0x8961040)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0x895DD60)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_INITIALIZEENERGYBAR_OFFSET UNITYSDK_OFFSET(0x8958F90)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONAVATARPROPERTYCHANGESP_CURRP_OFFSET UNITYSDK_OFFSET(0x895A050)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONAVATARPROPERTYCHANGESP_CURSP_OFFSET UNITYSDK_OFFSET(0x8959F90)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONAVATARPROPERTYCHANGESP_OFFSET UNITYSDK_OFFSET(0x8959E80)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONAVATARPROPERTYCHANGE_OFFSET UNITYSDK_OFFSET(0x89612B0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONAVATARSPTHREADCHANGED_OFFSET UNITYSDK_OFFSET(0x8961830)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONBUFFADD_OFFSET UNITYSDK_OFFSET(0x8961660)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONBUFFCUSTOMNUMCHANGE_OFFSET UNITYSDK_OFFSET(0x8961710)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONBUFFREMOVE_OFFSET UNITYSDK_OFFSET(0x89617B0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x895DCC0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONCUSTONPROPERTYCHANGE_OFFSET UNITYSDK_OFFSET(0x8961570)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONENERGYBARTYPECHANGED_OFFSET UNITYSDK_OFFSET(0x8959100)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONLOCALAVATARCHANGED_OFFSET UNITYSDK_OFFSET(0x895EE10)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONMPREVIVENUMCHANGED_OFFSET UNITYSDK_OFFSET(0x8959720)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONPROPERTYCHANGE_OFFSET UNITYSDK_OFFSET(0x8961E20)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONREVIVENUMCHANGED_OFFSET UNITYSDK_OFFSET(0x8961990)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONSPCONSTANTCHANGED_OFFSET UNITYSDK_OFFSET(0x895EC30)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x895E6D0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x895E740)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIINITSP_CURRP_OFFSET UNITYSDK_OFFSET(0x895D1C0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIINITSP_CURSP_OFFSET UNITYSDK_OFFSET(0x895CC90)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIINITSP_OFFSET UNITYSDK_OFFSET(0x895B960)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x895DE10)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x895E610)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONWEAKINGDURATIONACTIVECHANGED_OFFSET UNITYSDK_OFFSET(0x8962010)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_PLAYSPREACHSOUND_OFFSET UNITYSDK_OFFSET(0x895BD00)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHBUFFVIEW_OFFSET UNITYSDK_OFFSET(0x89602C0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHHUDEFFECTS_OFFSET UNITYSDK_OFFSET(0x8960250)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHREVIVEICON_OFFSET UNITYSDK_OFFSET(0x895FBB0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPARROWVIEW_CURRP_OFFSET UNITYSDK_OFFSET(0x895C580)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPARROWVIEW_CURSP_OFFSET UNITYSDK_OFFSET(0x895BE70)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPARROWVIEW_OFFSET UNITYSDK_OFFSET(0x895A110)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPVIEW_CURRP_OFFSET UNITYSDK_OFFSET(0x895AF30)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPVIEW_CURSP_OFFSET UNITYSDK_OFFSET(0x895A370)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPVIEW_OFFSET UNITYSDK_OFFSET(0x895A220)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHTEAMIDX_OFFSET UNITYSDK_OFFSET(0x8959230)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHWATCHICON_OFFSET UNITYSDK_OFFSET(0x89605D0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SETROLEHUDONLYICON_OFFSET UNITYSDK_OFFSET(0x8961D60)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SETSPMATERIALBLINK_OFFSET UNITYSDK_OFFSET(0x895D890)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SETSPMATERIALCOLOR_OFFSET UNITYSDK_OFFSET(0x895BA70)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SETSPMATERIALRAMPCOLOR_OFFSET UNITYSDK_OFFSET(0x895D700)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SET_OWNERENTITY_OFFSET UNITYSDK_OFFSET(0x895FA40)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SET_WEAKINGDURATIONPERCENTAGE_OFFSET UNITYSDK_OFFSET(0x8961EC0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_TRYPLAYSPANIM_OFFSET UNITYSDK_OFFSET(0x895BB30)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_TRYSTOPALLSPANIM_OFFSET UNITYSDK_OFFSET(0x895BC20)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_UPDATEDEATHMODE_OFFSET UNITYSDK_OFFSET(0x8959A90)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0x895E950)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDDATABINDING_B__51_0_OFFSET UNITYSDK_OFFSET(0x89633F0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDDATABINDING_B__51_1_OFFSET UNITYSDK_OFFSET(0x89635D0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDDATABINDING_B__51_2_OFFSET UNITYSDK_OFFSET(0x89637B0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDDATABINDING_B__51_3_OFFSET UNITYSDK_OFFSET(0x8963990)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDMPDATABINDING_B__9_0_OFFSET UNITYSDK_OFFSET(0x8962A80)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDMPDATABINDING_B__9_1_OFFSET UNITYSDK_OFFSET(0x8962BD0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0x89629D0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8962230)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__ONWEAKINGDURATIONACTIVECHANGED_B__72_0_OFFSET UNITYSDK_OFFSET(0x8963C20)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0x8963C80)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8963CE0)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8963D50)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8963D60)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8963D70)
+#define MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8963D80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelRoleHudWidgetChildWindowController_TypeDefinitionIndex = 63365;
+
+	class UIInLevelRoleHudWidgetChildWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		static ::System::Int32* StaticGet_RampColorAShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIInLevelRoleHudWidgetChildWindowController_TypeDefinitionIndex)->GetStaticField(0x101D0);
+		}
+		static ::System::Int32* StaticGet_RampColorBShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIInLevelRoleHudWidgetChildWindowController_TypeDefinitionIndex)->GetStaticField(0x101D4);
+		}
+		static ::System::Int32* StaticGet_AidingShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIInLevelRoleHudWidgetChildWindowController_TypeDefinitionIndex)->GetStaticField(0x101D8);
+		}
+		static ::System::Int32* StaticGet_BlinkColorBShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIInLevelRoleHudWidgetChildWindowController_TypeDefinitionIndex)->GetStaticField(0x101DC);
+		}
+		static ::System::Boolean* StaticGet_SP_CanvasGroup()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(UIInLevelRoleHudWidgetChildWindowController_TypeDefinitionIndex)->GetStaticField(0x101E0);
+		}
+		static ::System::Int32* StaticGet_WaveHeightShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIInLevelRoleHudWidgetChildWindowController_TypeDefinitionIndex)->GetStaticField(0x101E4);
+		}
+		static ::System::Int32* StaticGet_DyingShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIInLevelRoleHudWidgetChildWindowController_TypeDefinitionIndex)->GetStaticField(0x101E8);
+		}
+		static ::System::Int32* StaticGet_BlinkColorShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIInLevelRoleHudWidgetChildWindowController_TypeDefinitionIndex)->GetStaticField(0x101EC);
+		}
+		static ::System::Int32* StaticGet_StepPositionParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIInLevelRoleHudWidgetChildWindowController_TypeDefinitionIndex)->GetStaticField(0x101F0);
+		}
+		// static const ::System::String* CUSTOM_PROPERTY_WEAKING_DURATION; // 0x0
+		::Class_1_10E552FF2A1B8136* _energyBar; // 0x2F8
+		::System::Boolean _isBeingAided; // 0x300
+		::MoleMole::RoleHudSpColorConfig* SpGrayColorConfig; // 0x308
+		::MoleMole::RoleHudSpColorConfig* RpGrayColorConfig; // 0x310
+		::System::String* FillMatPath_CurSP; // 0x318
+		::UnityEngine::Material* FillMat_CurSP; // 0x320
+		::System::String* FillMatPath_CurRp; // 0x328
+		::UnityEngine::Material* FillMat_CurRp; // 0x330
+		::System::UInt32 Parameter_SP_Percent; // 0x338
+		::System::Single _weakingDurationPercentage; // 0x33C
+		::MoleMole::RoleHudSpColorConfig* WeakingDurationColorConfig; // 0x340
+		::System::String* WeakingDuartionFadeInAnimClip; // 0x348
+		::System::String* WeakingDuartionFadeOutAnimClip; // 0x350
+		::Class_2_79AE422BA06F6D26_31* _view; // 0x358
+		::System::Boolean _lastIsEnoughSpSwitch; // 0x360
+		::Class_1_15CCFE77B9E12299* _dBattleFighter; // 0x368
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::Transform*>* _exclusivePropTransDic; // 0x370
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::UnityEngine::Transform*>*>* _exclusivePropertyUIPoolDic; // 0x378
+		::System::Boolean isInit; // 0x380
+		::System::Int32 reviveCoinDisplayNum; // 0x384
+		::System::Boolean reviveCoinEnabled; // 0x388
+		::UnityEngine::Animation* _buffRootAni; // 0x390
+		::System::String* LOCAL_CHANGE_BUFF_ANI; // 0x398
+		::Class_1_6DB015FE22A27672* _buffHudModel; // 0x3A0
+		::System::String* HudEffCustomProperty; // 0x3A8
+		::System::String* HudEffPath; // 0x3B0
+		::System::String* HudEffFadeInAnimClip; // 0x3B8
+		::System::String* HudEffLoopAnimClip; // 0x3C0
+		::System::String* HudEffFadeOutAnimClip; // 0x3C8
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::Animation*>* _loadedHudEffects; // 0x3D0
+		::MoleMole::CharacterScriptConfig* _characterScriptConfig; // 0x3D8
+		::Class_3_7472FB6CC4015359* _hudComponent; // 0x3E0
+		::Class_1_48D56DACBE4271BC* _propertySyncHelper; // 0x3E8
+		::MoleMole::UIInLevelRoleHudWidgetChildWindowController_ViewModel* _viewModel; // 0x3F0
+		::System::Boolean _hasBindView; // 0x3F8
+		::Class_2_3BEB019E352B28D9* _hudHelper_hp; // 0x400
+		::Class_2_3BEB019E352B28D9_Class_2_8F205FCD6AF442AF* _hpIDataBindModel; // 0x408
+		::MoleMole::UIInLevelRoleHudWidgetChildWindowController_HpDataBindView* _hpIDataBindView; // 0x410
+		::MoleMole::EntityHandle _ownerEntity; // 0x418
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::System::Void InitializeEnergyBar()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_INITIALIZEENERGYBAR_OFFSET))(this);
+		}
+
+		::System::Void OnEnergyBarTypeChanged(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONENERGYBARTYPECHANGED_OFFSET))(this, args);
+		}
+
+		::System::Void RefreshTeamIdx()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHTEAMIDX_OFFSET))(this);
+		}
+
+		::System::Void OnMPReviveNumChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONMPREVIVENUMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void UpdateDeathMode()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_UPDATEDEATHMODE_OFFSET))(this);
+		}
+
+		::System::Void BuildMpDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_BUILDMPDATABINDING_OFFSET))(this);
+		}
+
+		::System::Void OnAvatarPropertyChangeSp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONAVATARPROPERTYCHANGESP_OFFSET))(this);
+		}
+
+		::System::Void OnAvatarPropertyChangeSp_CurSP()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONAVATARPROPERTYCHANGESP_CURSP_OFFSET))(this);
+		}
+
+		::System::Void OnAvatarPropertyChangeSp_CurRp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONAVATARPROPERTYCHANGESP_CURRP_OFFSET))(this);
+		}
+
+		::System::Void RefreshSpView(::System::Boolean exchangeAvatar)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPVIEW_OFFSET))(this, exchangeAvatar);
+		}
+
+		::System::Void RefreshSpView_CurSp(::System::Boolean exchangeAvatar)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPVIEW_CURSP_OFFSET))(this, exchangeAvatar);
+		}
+
+		::System::Void RefreshSpView_CurRp(::System::Boolean exchangeAvatar)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPVIEW_CURRP_OFFSET))(this, exchangeAvatar);
+		}
+
+		::System::Void RefreshSpArrowView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPARROWVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshSpArrowView_CurSP()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPARROWVIEW_CURSP_OFFSET))(this);
+		}
+
+		::System::Void RefreshSpArrowView_CurRp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHSPARROWVIEW_CURRP_OFFSET))(this);
+		}
+
+		::System::Void OnUIInitSp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIINITSP_OFFSET))(this);
+		}
+
+		::System::Void OnUIInitSp_CurSP()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIINITSP_CURSP_OFFSET))(this);
+		}
+
+		::System::Void OnUIInitSp_CurRp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIINITSP_CURRP_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnSpConstantChanged(::Enum_3_41BDD9D588006A51 type, ::System::UInt32 entityID)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_41BDD9D588006A51, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONSPCONSTANTCHANGED_OFFSET))(this, type, entityID);
+		}
+
+		::System::Void OnLocalAvatarChanged(::MoleMole::Battle::Entity* fromEntity, ::MoleMole::Battle::Entity* toEntity)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONLOCALAVATARCHANGED_OFFSET))(this, fromEntity, toEntity);
+		}
+
+		::System::Void OnAvatarPropertyChange(::Class_1_6A3A26AD0CB7F995* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_6A3A26AD0CB7F995*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONAVATARPROPERTYCHANGE_OFFSET))(this, args);
+		}
+
+		::System::Void OnBuffAdd(::System::Int32 buffID, ::MoleMole::Battle::Entity* owner, ::System::Boolean muteAni, ::System::Boolean replaceBuff)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::MoleMole::Battle::Entity*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONBUFFADD_OFFSET))(this, buffID, owner, muteAni, replaceBuff);
+		}
+
+		::System::Void OnBuffCustomNumChange(::System::Int32 buffID, ::MoleMole::Battle::Entity* owner, ::System::Int32 customNum)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::MoleMole::Battle::Entity*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONBUFFCUSTOMNUMCHANGE_OFFSET))(this, buffID, owner, customNum);
+		}
+
+		::System::Void OnBuffRemove(::System::Int32 buffID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONBUFFREMOVE_OFFSET))(this, buffID);
+		}
+
+		::System::Void OnAvatarSpThreadChanged(::MoleMole::Battle::Entity* entity)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONAVATARSPTHREADCHANGED_OFFSET))(this, entity);
+		}
+
+		::System::Void OnReviveNumChanged(::System::Int32 num)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONREVIVENUMCHANGED_OFFSET))(this, num);
+		}
+
+		::System::Void RefreshReviveIcon()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHREVIVEICON_OFFSET))(this);
+		}
+
+		::System::Void RefreshWatchIcon()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHWATCHICON_OFFSET))(this);
+		}
+
+		::System::Void ChangeToVehicleUI(::System::String* headIconPath)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_CHANGETOVEHICLEUI_OFFSET))(this, headIconPath);
+		}
+
+		::System::Void SetRoleHudOnlyIcon()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SETROLEHUDONLYICON_OFFSET))(this);
+		}
+
+		::System::Void BuildDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_BUILDDATABINDING_OFFSET))(this);
+		}
+
+		::System::Void BuildHelper()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_BUILDHELPER_OFFSET))(this);
+		}
+
+		::System::Void TryPlaySpAnim(::System::String* animName)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_TRYPLAYSPANIM_OFFSET))(this, animName);
+		}
+
+		::System::Void TryStopAllSpAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_TRYSTOPALLSPANIM_OFFSET))(this);
+		}
+
+		::System::Void SetSpMaterialColor(::MoleMole::RoleHudSpColorConfig* config)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::RoleHudSpColorConfig*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SETSPMATERIALCOLOR_OFFSET))(this, config);
+		}
+
+		::System::Void SetSpMaterialRampColor(::UnityEngine::Color rampA, ::UnityEngine::Color rampB)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SETSPMATERIALRAMPCOLOR_OFFSET))(this, rampA, rampB);
+		}
+
+		::System::Void SetSpMaterialBlink(::System::Boolean enable, ::UnityEngine::Color blinkColor, ::UnityEngine::Color blinkColorB)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::UnityEngine::Color, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SETSPMATERIALBLINK_OFFSET))(this, enable, blinkColor, blinkColorB);
+		}
+
+		::System::Void PlaySpReachSound()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_PLAYSPREACHSOUND_OFFSET))(this);
+		}
+
+		::System::Void RefreshBuffView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHBUFFVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnPropertyChange(::System::UInt32 fighterID, ::MoleMole::Config::BaseProperty propertyType, ::System::String* customType, ::System::Double oldValue, ::System::Double newValue)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32, ::MoleMole::Config::BaseProperty, ::System::String*, ::System::Double, ::System::Double))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONPROPERTYCHANGE_OFFSET))(this, fighterID, propertyType, customType, oldValue, newValue);
+		}
+
+		::System::Void RefreshHudEffects(::Class_1_15CCFE77B9E12299* fighter)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_15CCFE77B9E12299*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_REFRESHHUDEFFECTS_OFFSET))(this, fighter);
+		}
+
+		::System::Single get_weakingDurationPercentage()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_GET_WEAKINGDURATIONPERCENTAGE_OFFSET))(this);
+		}
+
+		::System::Void set_weakingDurationPercentage(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SET_WEAKINGDURATIONPERCENTAGE_OFFSET))(this, value);
+		}
+
+		::System::Void OnCustonPropertyChange(::System::String* customType, ::System::Double oldValue, ::System::Double newValue)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Double, ::System::Double))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONCUSTONPROPERTYCHANGE_OFFSET))(this, customType, oldValue, newValue);
+		}
+
+		::System::Void HandleWeakingDuration()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_HANDLEWEAKINGDURATION_OFFSET))(this);
+		}
+
+		::System::Void OnWeakingDurationActiveChanged(::System::Boolean active)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_ONWEAKINGDURATIONACTIVECHANGED_OFFSET))(this, active);
+		}
+
+		::UnityEngine::Transform* get_customPropertyUIParent()
+		{
+			return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_GET_CUSTOMPROPERTYUIPARENT_OFFSET))(this);
+		}
+
+		::MoleMole::EntityHandle get_ownerEntity()
+		{
+			return ((::MoleMole::EntityHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_GET_OWNERENTITY_OFFSET))(this);
+		}
+
+		::System::Void set_ownerEntity(::MoleMole::EntityHandle value)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::EntityHandle))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER_SET_OWNERENTITY_OFFSET))(this, value);
+		}
+
+		::System::Void _BuildMpDataBinding_b__9_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDMPDATABINDING_B__9_0_OFFSET))(this);
+		}
+
+		::System::Void _BuildMpDataBinding_b__9_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDMPDATABINDING_B__9_1_OFFSET))(this);
+		}
+
+		::System::Void _BuildDataBinding_b__51_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDDATABINDING_B__51_0_OFFSET))(this);
+		}
+
+		::System::Void _BuildDataBinding_b__51_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDDATABINDING_B__51_1_OFFSET))(this);
+		}
+
+		::System::Void _BuildDataBinding_b__51_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDDATABINDING_B__51_2_OFFSET))(this);
+		}
+
+		::System::Void _BuildDataBinding_b__51_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__BUILDDATABINDING_B__51_3_OFFSET))(this);
+		}
+
+		::System::Void _OnWeakingDurationActiveChanged_b__72_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER__ONWEAKINGDURATIONACTIVECHANGED_B__72_0_OFFSET))(this);
+		}
+
+		::System::Void __base_InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELROLEHUDWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

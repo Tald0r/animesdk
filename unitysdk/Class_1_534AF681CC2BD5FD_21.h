@@ -2,9 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-namespace Entitas { template <typename T> class IContext_1; }
-
-inline static constexpr unsigned int Class_1_534AF681CC2BD5FD_21_TypeDefinitionIndex = 27984;
+inline static constexpr unsigned int Class_1_534AF681CC2BD5FD_21_TypeDefinitionIndex = 11921;
 
 class Class_1_534AF681CC2BD5FD_21 : public ::System::Object
 {

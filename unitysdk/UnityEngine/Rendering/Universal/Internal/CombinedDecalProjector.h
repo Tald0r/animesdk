@@ -1,0 +1,62 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/UnityEngine/MonoBehaviour.h"
+
+namespace UnityEngine { class Material; }
+namespace UnityEngine::Rendering::Universal::Internal { class DecalProjector; }
+
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_OFFPREVIEWCOMBINE_OFFSET UNITYSDK_OFFSET(0x17BEF640)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_OFFPREVIEW_OFFSET UNITYSDK_OFFSET(0x17BEF550)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x17BEF430)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_ONENABLE_OFFSET UNITYSDK_OFFSET(0x17BEF300)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_PREVIEWBAKE_OFFSET UNITYSDK_OFFSET(0x17BEF4D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_PREVIEWCOMBINE_OFFSET UNITYSDK_OFFSET(0x17BEF5D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x17BEF6B0)
+
+namespace UnityEngine::Rendering::Universal::Internal
+{
+	inline static constexpr unsigned int CombinedDecalProjector_TypeDefinitionIndex = 28855;
+
+	class CombinedDecalProjector : public ::UnityEngine::MonoBehaviour
+	{
+	public:
+		::UnityEngine::Rendering::Universal::Internal::DecalProjector* baseDecalProjector; // 0x18
+		::System::Boolean isCombinedQuadDecal; // 0x20
+		::UnityEngine::Material* m_CachedMaterial; // 0x28
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_ONENABLE_OFFSET))(this);
+		}
+
+		::System::Void OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_ONDESTROY_OFFSET))(this);
+		}
+
+		::System::Void PreviewBake()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_PREVIEWBAKE_OFFSET))(this);
+		}
+
+		::System::Void OffPreview()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_OFFPREVIEW_OFFSET))(this);
+		}
+
+		::System::Void PreviewCombine()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_PREVIEWCOMBINE_OFFSET))(this);
+		}
+
+		::System::Void OffPreviewCombine()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_COMBINEDDECALPROJECTOR_OFFPREVIEWCOMBINE_OFFSET))(this);
+		}
+	};
+}

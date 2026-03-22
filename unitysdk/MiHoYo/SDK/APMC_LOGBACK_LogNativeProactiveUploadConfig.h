@@ -4,7 +4,7 @@
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int APMC_LOGBACK_LogNativeProactiveUploadConfig_TypeDefinitionIndex = 36321;
+	inline static constexpr unsigned int APMC_LOGBACK_LogNativeProactiveUploadConfig_TypeDefinitionIndex = 33807;
 
 	struct alignas(8) APMC_LOGBACK_LogNativeProactiveUploadConfig
 	{

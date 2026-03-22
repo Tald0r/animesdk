@@ -8,16 +8,15 @@ namespace System { class Exception; }
 namespace System { class String; }
 namespace UnityEngine { class Object; }
 
-#define UNITYENGINE_DEBUGLOGHANDLER_INTERNAL_LOGEXCEPTION_OFFSET UNITYSDK_OFFSET(0x181E80B0)
-#define UNITYENGINE_DEBUGLOGHANDLER_INTERNAL_LOG_OFFSET UNITYSDK_OFFSET(0x181E80A0)
-#define UNITYENGINE_DEBUGLOGHANDLER_LOGEXCEPTION_OFFSET UNITYSDK_OFFSET(0x181E8180)
-#define UNITYENGINE_DEBUGLOGHANDLER_LOGFORMAT_1_OFFSET UNITYSDK_OFFSET(0x181E69A0)
-#define UNITYENGINE_DEBUGLOGHANDLER_LOGFORMAT_OFFSET UNITYSDK_OFFSET(0x181E80C0)
-#define UNITYENGINE_DEBUGLOGHANDLER__CTOR_OFFSET UNITYSDK_OFFSET(0x181E8090)
+#define UNITYENGINE_DEBUGLOGHANDLER_INTERNAL_LOGEXCEPTION_OFFSET UNITYSDK_OFFSET(0x19DD6000)
+#define UNITYENGINE_DEBUGLOGHANDLER_INTERNAL_LOG_OFFSET UNITYSDK_OFFSET(0x19DD5FF0)
+#define UNITYENGINE_DEBUGLOGHANDLER_LOGEXCEPTION_OFFSET UNITYSDK_OFFSET(0x19DD60D0)
+#define UNITYENGINE_DEBUGLOGHANDLER_LOGFORMAT_OFFSET UNITYSDK_OFFSET(0x19DD6010)
+#define UNITYENGINE_DEBUGLOGHANDLER__CTOR_OFFSET UNITYSDK_OFFSET(0x19DD6150)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int DebugLogHandler_TypeDefinitionIndex = 3870;
+	inline static constexpr unsigned int DebugLogHandler_TypeDefinitionIndex = 5155;
 
 	class DebugLogHandler : public ::System::Object
 	{
@@ -40,11 +39,6 @@ namespace UnityEngine
 		::System::Void LogFormat(::UnityEngine::LogType logType, ::UnityEngine::Object* context, ::System::String* format, ::Il2CppArray<::System::Object*>* args)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::LogType, ::UnityEngine::Object*, ::System::String*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_DEBUGLOGHANDLER_LOGFORMAT_OFFSET))(this, logType, context, format, args);
-		}
-
-		::System::Void LogFormat_1(::UnityEngine::LogType logType, ::UnityEngine::LogOption logOptions, ::UnityEngine::Object* context, ::System::String* format, ::Il2CppArray<::System::Object*>* args)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::LogType, ::UnityEngine::LogOption, ::UnityEngine::Object*, ::System::String*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_DEBUGLOGHANDLER_LOGFORMAT_1_OFFSET))(this, logType, logOptions, context, format, args);
 		}
 
 		::System::Void LogException(::System::Exception* exception, ::UnityEngine::Object* context)

@@ -1,0 +1,79 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_2_E992BBDEABA30866;
+namespace FlowCanvas { class FlowOutput; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE_LISTENONITEMCHALLENGEUPDATE_OFFSET UNITYSDK_OFFSET(0xE47F970)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0xE47FC50)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0xE47FCC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xE47F680)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE__CCTOR_OFFSET UNITYSDK_OFFSET(0xE47FDE0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE__CTOR_OFFSET UNITYSDK_OFFSET(0xE47FDC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE__ONITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xE47FA70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE___BASE_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0xE47FDF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE___BASE_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0xE47FE00)
+
+namespace MoleMole::FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int LD_AbyssS2_ListenItemChallengeUpdate_TypeDefinitionIndex = 50755;
+
+	class LD_AbyssS2_ListenItemChallengeUpdate : public ::FlowCanvas::Nodes::FlowControlNode
+	{
+	public:
+		static ::Class_2_E992BBDEABA30866** StaticGet_s_data()
+		{
+			return (::Class_2_E992BBDEABA30866**)Il2CppClass::FromTypeDefinitionIndex(LD_AbyssS2_ListenItemChallengeUpdate_TypeDefinitionIndex)->GetStaticField(0x36590);
+		}
+		::FlowCanvas::FlowOutput* _doOne; // 0xA8
+		::FlowCanvas::FlowOutput* _doDone; // 0xB0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE__CCTOR_OFFSET))();
+		}
+
+		::System::Void RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE_REGISTERPORTS_OFFSET))(this);
+		}
+
+		::System::Void ListenOnItemChallengeUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE_LISTENONITEMCHALLENGEUPDATE_OFFSET))(this);
+		}
+
+		::System::Void _OnItemUpdate(::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* itemList)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE__ONITEMUPDATE_OFFSET))(this, itemList);
+		}
+
+		::System::Void OnGraphStarted()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE_ONGRAPHSTARTED_OFFSET))(this);
+		}
+
+		::System::Void OnGraphStoped()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE_ONGRAPHSTOPED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnGraphStarted()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE___BASE_ONGRAPHSTARTED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnGraphStoped()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_LISTENITEMCHALLENGEUPDATE___BASE_ONGRAPHSTOPED_OFFSET))(this);
+		}
+	};
+}

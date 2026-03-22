@@ -3,7 +3,7 @@
 
 namespace System
 {
-	inline static constexpr unsigned int DateTimeKind_TypeDefinitionIndex = 225;
+	inline static constexpr unsigned int DateTimeKind_TypeDefinitionIndex = 211;
 
 	enum class DateTimeKind : ::System::Int32
 	{

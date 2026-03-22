@@ -2,7 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/IO/SeekOrigin.h"
 #include "unitysdk/System/MarshalByRefObject.h"
+#include "unitysdk/System/Memory_1.h"
+#include "unitysdk/System/ReadOnlyMemory_1.h"
+#include "unitysdk/System/ReadOnlySpan_1.h"
+#include "unitysdk/System/Span_1.h"
 #include "unitysdk/System/Threading/CancellationToken.h"
+#include "unitysdk/System/Threading/Tasks/ValueTask_1.h"
 
 namespace System { class AsyncCallback; }
 namespace System { class IAsyncResult; }
@@ -12,51 +17,62 @@ namespace System::Threading { class SemaphoreSlim; }
 namespace System::Threading::Tasks { class Task; }
 namespace System::Threading::Tasks { template <typename T> class Task_1; }
 
-#define SYSTEM_IO_STREAM_BEGINENDREADASYNC_OFFSET UNITYSDK_OFFSET(0x15C8D1B0)
-#define SYSTEM_IO_STREAM_BEGINENDWRITEASYNC_OFFSET UNITYSDK_OFFSET(0x15C8D790)
-#define SYSTEM_IO_STREAM_BEGINREADINTERNAL_OFFSET UNITYSDK_OFFSET(0x15C8C9D0)
-#define SYSTEM_IO_STREAM_BEGINREAD_OFFSET UNITYSDK_OFFSET(0x15C82600)
-#define SYSTEM_IO_STREAM_BEGINWRITEINTERNAL_OFFSET UNITYSDK_OFFSET(0x15C8D360)
-#define SYSTEM_IO_STREAM_BEGINWRITE_OFFSET UNITYSDK_OFFSET(0x15C83210)
-#define SYSTEM_IO_STREAM_BLOCKINGBEGINREAD_OFFSET UNITYSDK_OFFSET(0x15C8CCE0)
-#define SYSTEM_IO_STREAM_BLOCKINGBEGINWRITE_OFFSET UNITYSDK_OFFSET(0x15C8D600)
-#define SYSTEM_IO_STREAM_BLOCKINGENDREAD_OFFSET UNITYSDK_OFFSET(0x15C8D1A0)
-#define SYSTEM_IO_STREAM_BLOCKINGENDWRITE_OFFSET UNITYSDK_OFFSET(0x15C8D720)
-#define SYSTEM_IO_STREAM_CLOSE_OFFSET UNITYSDK_OFFSET(0x15C8C970)
-#define SYSTEM_IO_STREAM_COPYTO_OFFSET UNITYSDK_OFFSET(0x15C8C6C0)
-#define SYSTEM_IO_STREAM_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x15C869B0)
-#define SYSTEM_IO_STREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x15C8C9C0)
-#define SYSTEM_IO_STREAM_ENDREAD_OFFSET UNITYSDK_OFFSET(0x15C82820)
-#define SYSTEM_IO_STREAM_ENDWRITE_OFFSET UNITYSDK_OFFSET(0x15C834C0)
-#define SYSTEM_IO_STREAM_ENSUREASYNCACTIVESEMAPHOREINITIALIZED_OFFSET UNITYSDK_OFFSET(0x15C8C3A0)
-#define SYSTEM_IO_STREAM_GET_READTIMEOUT_OFFSET UNITYSDK_OFFSET(0x15C8C4D0)
-#define SYSTEM_IO_STREAM_GET_WRITETIMEOUT_OFFSET UNITYSDK_OFFSET(0x15C8C600)
-#define SYSTEM_IO_STREAM_INTERNALCOPYTO_OFFSET UNITYSDK_OFFSET(0x15C8C8C0)
-#define SYSTEM_IO_STREAM_READASYNC_OFFSET UNITYSDK_OFFSET(0x15C83F90)
-#define SYSTEM_IO_STREAM_READBYTE_OFFSET UNITYSDK_OFFSET(0x15C8D940)
-#define SYSTEM_IO_STREAM_RUNREADWRITETASKWHENREADY_OFFSET UNITYSDK_OFFSET(0x15C8CF20)
-#define SYSTEM_IO_STREAM_RUNREADWRITETASK_OFFSET UNITYSDK_OFFSET(0x15C8D130)
-#define SYSTEM_IO_STREAM_SET_READTIMEOUT_OFFSET UNITYSDK_OFFSET(0x15C8C5A0)
-#define SYSTEM_IO_STREAM_SET_WRITETIMEOUT_OFFSET UNITYSDK_OFFSET(0x15C8C660)
-#define SYSTEM_IO_STREAM_WRITEASYNC_1_OFFSET UNITYSDK_OFFSET(0x15C84030)
-#define SYSTEM_IO_STREAM_WRITEASYNC_OFFSET UNITYSDK_OFFSET(0x15C8D730)
-#define SYSTEM_IO_STREAM_WRITEBYTE_OFFSET UNITYSDK_OFFSET(0x15C8D9C0)
-#define SYSTEM_IO_STREAM__CCTOR_OFFSET UNITYSDK_OFFSET(0x15C8DCE0)
-#define SYSTEM_IO_STREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x15C7F020)
+#define SYSTEM_IO_STREAM_BEGINENDREADASYNC_OFFSET UNITYSDK_OFFSET(0x1943D300)
+#define SYSTEM_IO_STREAM_BEGINENDWRITEASYNC_OFFSET UNITYSDK_OFFSET(0x1943DAF0)
+#define SYSTEM_IO_STREAM_BEGINREADINTERNAL_OFFSET UNITYSDK_OFFSET(0x1943CAF0)
+#define SYSTEM_IO_STREAM_BEGINREAD_OFFSET UNITYSDK_OFFSET(0x1943CAD0)
+#define SYSTEM_IO_STREAM_BEGINWRITEINTERNAL_OFFSET UNITYSDK_OFFSET(0x1943D500)
+#define SYSTEM_IO_STREAM_BEGINWRITE_OFFSET UNITYSDK_OFFSET(0x1943D4E0)
+#define SYSTEM_IO_STREAM_BLOCKINGBEGINREAD_OFFSET UNITYSDK_OFFSET(0x1943CD40)
+#define SYSTEM_IO_STREAM_BLOCKINGBEGINWRITE_OFFSET UNITYSDK_OFFSET(0x1943D730)
+#define SYSTEM_IO_STREAM_BLOCKINGENDREAD_OFFSET UNITYSDK_OFFSET(0x1943D2A0)
+#define SYSTEM_IO_STREAM_BLOCKINGENDWRITE_OFFSET UNITYSDK_OFFSET(0x1943DA30)
+#define SYSTEM_IO_STREAM_CLOSE_OFFSET UNITYSDK_OFFSET(0x1943C8D0)
+#define SYSTEM_IO_STREAM_COPYTOASYNCINTERNAL_OFFSET UNITYSDK_OFFSET(0x1943C1E0)
+#define SYSTEM_IO_STREAM_COPYTOASYNC_1_OFFSET UNITYSDK_OFFSET(0x1943BDD0)
+#define SYSTEM_IO_STREAM_COPYTOASYNC_2_OFFSET UNITYSDK_OFFSET(0x1943BE20)
+#define SYSTEM_IO_STREAM_COPYTOASYNC_OFFSET UNITYSDK_OFFSET(0x1943BD80)
+#define SYSTEM_IO_STREAM_COPYTO_1_OFFSET UNITYSDK_OFFSET(0x1943C660)
+#define SYSTEM_IO_STREAM_COPYTO_OFFSET UNITYSDK_OFFSET(0x1943C3B0)
+#define SYSTEM_IO_STREAM_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x1943C930)
+#define SYSTEM_IO_STREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1943C920)
+#define SYSTEM_IO_STREAM_ENDREAD_OFFSET UNITYSDK_OFFSET(0x1943D0A0)
+#define SYSTEM_IO_STREAM_ENDWRITE_OFFSET UNITYSDK_OFFSET(0x1943D850)
+#define SYSTEM_IO_STREAM_ENSUREASYNCACTIVESEMAPHOREINITIALIZED_OFFSET UNITYSDK_OFFSET(0x1943BAC0)
+#define SYSTEM_IO_STREAM_FLUSHASYNC_OFFSET UNITYSDK_OFFSET(0x1943C940)
+#define SYSTEM_IO_STREAM_GET_CANTIMEOUT_OFFSET UNITYSDK_OFFSET(0x1943BBF0)
+#define SYSTEM_IO_STREAM_GET_READTIMEOUT_OFFSET UNITYSDK_OFFSET(0x1943BC00)
+#define SYSTEM_IO_STREAM_GET_WRITETIMEOUT_OFFSET UNITYSDK_OFFSET(0x1943BCC0)
+#define SYSTEM_IO_STREAM_INTERNALCOPYTO_OFFSET UNITYSDK_OFFSET(0x1943C5B0)
+#define SYSTEM_IO_STREAM_READASYNC_1_OFFSET UNITYSDK_OFFSET(0x1943DE60)
+#define SYSTEM_IO_STREAM_READASYNC_OFFSET UNITYSDK_OFFSET(0x1943D2B0)
+#define SYSTEM_IO_STREAM_READBYTE_OFFSET UNITYSDK_OFFSET(0x1943DCD0)
+#define SYSTEM_IO_STREAM_READ_OFFSET UNITYSDK_OFFSET(0x1943DDC0)
+#define SYSTEM_IO_STREAM_RUNREADWRITETASKWHENREADY_OFFSET UNITYSDK_OFFSET(0x1943CE70)
+#define SYSTEM_IO_STREAM_RUNREADWRITETASK_OFFSET UNITYSDK_OFFSET(0x1943D040)
+#define SYSTEM_IO_STREAM_SET_READTIMEOUT_OFFSET UNITYSDK_OFFSET(0x1943BC60)
+#define SYSTEM_IO_STREAM_SET_WRITETIMEOUT_OFFSET UNITYSDK_OFFSET(0x1943BD20)
+#define SYSTEM_IO_STREAM_WRITEASYNC_1_OFFSET UNITYSDK_OFFSET(0x1943DAA0)
+#define SYSTEM_IO_STREAM_WRITEASYNC_2_OFFSET UNITYSDK_OFFSET(0x1943DEB0)
+#define SYSTEM_IO_STREAM_WRITEASYNC_OFFSET UNITYSDK_OFFSET(0x1943DA40)
+#define SYSTEM_IO_STREAM_WRITEBYTE_OFFSET UNITYSDK_OFFSET(0x1943DD50)
+#define SYSTEM_IO_STREAM_WRITE_OFFSET UNITYSDK_OFFSET(0x1943DE10)
+#define SYSTEM_IO_STREAM__CCTOR_OFFSET UNITYSDK_OFFSET(0x1943DF20)
+#define SYSTEM_IO_STREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x1943DF00)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int Stream_TypeDefinitionIndex = 682;
+	inline static constexpr unsigned int Stream_TypeDefinitionIndex = 650;
 
 	class Stream : public ::System::MarshalByRefObject
 	{
 	public:
 		static ::System::IO::Stream** StaticGet_Null()
 		{
-			return (::System::IO::Stream**)Il2CppClass::FromTypeDefinitionIndex(Stream_TypeDefinitionIndex)->GetStaticField(0x73B0);
+			return (::System::IO::Stream**)Il2CppClass::FromTypeDefinitionIndex(Stream_TypeDefinitionIndex)->GetStaticField(0x150);
 		}
-		::System::Threading::SemaphoreSlim* _asyncActiveSemaphore; // 0x18
-		::System::IO::Stream_ReadWriteTask* _activeReadWriteTask; // 0x20
+		::System::IO::Stream_ReadWriteTask* _activeReadWriteTask; // 0x18
+		::System::Threading::SemaphoreSlim* _asyncActiveSemaphore; // 0x20
 
 		::System::Void _ctor()
 		{
@@ -71,6 +87,11 @@ namespace System::IO
 		::System::Threading::SemaphoreSlim* EnsureAsyncActiveSemaphoreInitialized()
 		{
 			return ((::System::Threading::SemaphoreSlim*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_ENSUREASYNCACTIVESEMAPHOREINITIALIZED_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanTimeout()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_GET_CANTIMEOUT_OFFSET))(this);
 		}
 
 		::System::Int32 get_ReadTimeout()
@@ -93,9 +114,34 @@ namespace System::IO
 			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_SET_WRITETIMEOUT_OFFSET))(this, value);
 		}
 
+		::System::Threading::Tasks::Task* CopyToAsync(::System::IO::Stream* destination)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::IO::Stream*))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_COPYTOASYNC_OFFSET))(this, destination);
+		}
+
+		::System::Threading::Tasks::Task* CopyToAsync_1(::System::IO::Stream* destination, ::System::Int32 bufferSize)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::IO::Stream*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_COPYTOASYNC_1_OFFSET))(this, destination, bufferSize);
+		}
+
+		::System::Threading::Tasks::Task* CopyToAsync_2(::System::IO::Stream* destination, ::System::Int32 bufferSize, ::System::Threading::CancellationToken cancellationToken)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::IO::Stream*, ::System::Int32, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_COPYTOASYNC_2_OFFSET))(this, destination, bufferSize, cancellationToken);
+		}
+
+		::System::Threading::Tasks::Task* CopyToAsyncInternal(::System::IO::Stream* destination, ::System::Int32 bufferSize, ::System::Threading::CancellationToken cancellationToken)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::IO::Stream*, ::System::Int32, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_COPYTOASYNCINTERNAL_OFFSET))(this, destination, bufferSize, cancellationToken);
+		}
+
 		::System::Void CopyTo(::System::IO::Stream* destination)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_COPYTO_OFFSET))(this, destination);
+		}
+
+		::System::Void CopyTo_1(::System::IO::Stream* destination, ::System::Int32 bufferSize)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_COPYTO_1_OFFSET))(this, destination, bufferSize);
 		}
 
 		::System::Void InternalCopyTo(::System::IO::Stream* destination, ::System::Int32 bufferSize)
@@ -116,6 +162,11 @@ namespace System::IO
 		::System::Void Dispose_1(::System::Boolean disposing)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_DISPOSE_1_OFFSET))(this, disposing);
+		}
+
+		::System::Threading::Tasks::Task* FlushAsync(::System::Threading::CancellationToken cancellationToken)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_FLUSHASYNC_OFFSET))(this, cancellationToken);
 		}
 
 		::System::IAsyncResult* BeginRead(::Il2CppArray<::System::Byte>* buffer, ::System::Int32 offset, ::System::Int32 count, ::System::AsyncCallback* callback, ::System::Object* state)
@@ -211,6 +262,26 @@ namespace System::IO
 		static ::System::Void BlockingEndWrite(::System::IAsyncResult* asyncResult)
 		{
 			return ((::System::Void(*)(::System::IAsyncResult*))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_BLOCKINGENDWRITE_OFFSET))(asyncResult);
+		}
+
+		::System::Int32 Read(::System::Span_1<::System::Byte> destination)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Span_1<::System::Byte>))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_READ_OFFSET))(this, destination);
+		}
+
+		::System::Void Write(::System::ReadOnlySpan_1<::System::Byte> source)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::ReadOnlySpan_1<::System::Byte>))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_WRITE_OFFSET))(this, source);
+		}
+
+		::System::Threading::Tasks::ValueTask_1<::System::Int32> ReadAsync_1(::System::Memory_1<::System::Byte> destination, ::System::Threading::CancellationToken cancellationToken)
+		{
+			return ((::System::Threading::Tasks::ValueTask_1<::System::Int32>(*)(::PVOID, ::System::Memory_1<::System::Byte>, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_READASYNC_1_OFFSET))(this, destination, cancellationToken);
+		}
+
+		::System::Threading::Tasks::Task* WriteAsync_2(::System::ReadOnlyMemory_1<::System::Byte> source, ::System::Threading::CancellationToken cancellationToken)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::ReadOnlyMemory_1<::System::Byte>, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_IO_STREAM_WRITEASYNC_2_OFFSET))(this, source, cancellationToken);
 		}
 	};
 }

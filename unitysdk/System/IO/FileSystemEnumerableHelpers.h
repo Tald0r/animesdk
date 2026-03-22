@@ -4,12 +4,12 @@
 
 namespace Microsoft::Win32 { class Win32Native_WIN32_FIND_DATA; }
 
-#define SYSTEM_IO_FILESYSTEMENUMERABLEHELPERS_ISDIR_OFFSET UNITYSDK_OFFSET(0x15C855D0)
-#define SYSTEM_IO_FILESYSTEMENUMERABLEHELPERS_ISFILE_OFFSET UNITYSDK_OFFSET(0x15C85660)
+#define SYSTEM_IO_FILESYSTEMENUMERABLEHELPERS_ISDIR_OFFSET UNITYSDK_OFFSET(0x19AD1C40)
+#define SYSTEM_IO_FILESYSTEMENUMERABLEHELPERS_ISFILE_OFFSET UNITYSDK_OFFSET(0x19AD1CD0)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int FileSystemEnumerableHelpers_TypeDefinitionIndex = 676;
+	inline static constexpr unsigned int FileSystemEnumerableHelpers_TypeDefinitionIndex = 644;
 
 	class FileSystemEnumerableHelpers : public ::System::Object
 	{

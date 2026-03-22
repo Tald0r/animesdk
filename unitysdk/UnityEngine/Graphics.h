@@ -2,110 +2,128 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Bounds.h"
+#include "unitysdk/UnityEngine/Color.h"
 #include "unitysdk/UnityEngine/CubemapFace.h"
 #include "unitysdk/UnityEngine/Internal_DrawTextureArguments.h"
 #include "unitysdk/UnityEngine/Matrix4x4.h"
 #include "unitysdk/UnityEngine/MeshTopology.h"
+#include "unitysdk/UnityEngine/Quaternion.h"
+#include "unitysdk/UnityEngine/Rect.h"
 #include "unitysdk/UnityEngine/RenderBuffer.h"
+#include "unitysdk/UnityEngine/RenderTargetSetup.h"
+#include "unitysdk/UnityEngine/Rendering/ComputeQueueType.h"
 #include "unitysdk/UnityEngine/Rendering/GraphicsTier.h"
+#include "unitysdk/UnityEngine/Rendering/LightProbeUsage.h"
+#include "unitysdk/UnityEngine/Rendering/RenderBufferLoadAction.h"
+#include "unitysdk/UnityEngine/Rendering/RenderBufferStoreAction.h"
 #include "unitysdk/UnityEngine/Rendering/ShadowCastingMode.h"
-#include "unitysdk/UnityEngine/Vector2.h"
+#include "unitysdk/UnityEngine/Vector3.h"
 
-namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace System { class String; }
 namespace UnityEngine { class Camera; }
 namespace UnityEngine { class ComputeBuffer; }
+namespace UnityEngine { class LightProbeProxyVolume; }
 namespace UnityEngine { class Material; }
 namespace UnityEngine { class MaterialPropertyBlock; }
 namespace UnityEngine { class Mesh; }
 namespace UnityEngine { class RenderTexture; }
-namespace UnityEngine { class SkinnedMeshRenderer; }
 namespace UnityEngine { class Texture; }
+namespace UnityEngine { class Transform; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_GRAPHICS_BLIT2_OFFSET UNITYSDK_OFFSET(0x181F8470)
-#define UNITYENGINE_GRAPHICS_BLIT4_INJECTED_OFFSET UNITYSDK_OFFSET(0x181FB350)
-#define UNITYENGINE_GRAPHICS_BLIT4_OFFSET UNITYSDK_OFFSET(0x181F8480)
-#define UNITYENGINE_GRAPHICS_BLIT_1_OFFSET UNITYSDK_OFFSET(0x181FA0E0)
-#define UNITYENGINE_GRAPHICS_BLIT_2_OFFSET UNITYSDK_OFFSET(0x181FA160)
-#define UNITYENGINE_GRAPHICS_BLIT_3_OFFSET UNITYSDK_OFFSET(0x181FA1B0)
-#define UNITYENGINE_GRAPHICS_BLIT_OFFSET UNITYSDK_OFFSET(0x181FA0A0)
-#define UNITYENGINE_GRAPHICS_COPYTEXTURE_1_OFFSET UNITYSDK_OFFSET(0x181F8780)
-#define UNITYENGINE_GRAPHICS_COPYTEXTURE_2_OFFSET UNITYSDK_OFFSET(0x181F87D0)
-#define UNITYENGINE_GRAPHICS_COPYTEXTURE_OFFSET UNITYSDK_OFFSET(0x181F8730)
-#define UNITYENGINE_GRAPHICS_COPYTEXTURE_REGION_OFFSET UNITYSDK_OFFSET(0x181F81F0)
-#define UNITYENGINE_GRAPHICS_COPYTEXTURE_SLICE_ALLMIPS_OFFSET UNITYSDK_OFFSET(0x181F81D0)
-#define UNITYENGINE_GRAPHICS_COPYTEXTURE_SLICE_OFFSET UNITYSDK_OFFSET(0x181F81E0)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_1_OFFSET UNITYSDK_OFFSET(0x181F9A20)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_2_OFFSET UNITYSDK_OFFSET(0x181F9DB0)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_3_OFFSET UNITYSDK_OFFSET(0x181FADB0)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_4_OFFSET UNITYSDK_OFFSET(0x181FAEC0)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_5_OFFSET UNITYSDK_OFFSET(0x181FAFE0)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_6_OFFSET UNITYSDK_OFFSET(0x181FB110)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_OFFSET UNITYSDK_OFFSET(0x181F9780)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDPROCEDURAL_OFFSET UNITYSDK_OFFSET(0x181F94E0)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_10_OFFSET UNITYSDK_OFFSET(0x181FAB10)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_11_OFFSET UNITYSDK_OFFSET(0x181FAC50)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_1_OFFSET UNITYSDK_OFFSET(0x181F8F80)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_2_OFFSET UNITYSDK_OFFSET(0x181F9040)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_3_OFFSET UNITYSDK_OFFSET(0x181F9190)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_4_OFFSET UNITYSDK_OFFSET(0x181FA590)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_5_OFFSET UNITYSDK_OFFSET(0x181FA720)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_6_OFFSET UNITYSDK_OFFSET(0x181FA7C0)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_7_OFFSET UNITYSDK_OFFSET(0x181FA650)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_8_OFFSET UNITYSDK_OFFSET(0x181FA870)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_9_OFFSET UNITYSDK_OFFSET(0x181FA9D0)
-#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_OFFSET UNITYSDK_OFFSET(0x181F8CF0)
-#define UNITYENGINE_GRAPHICS_DRAWMESHNOW_OFFSET UNITYSDK_OFFSET(0x181F8820)
-#define UNITYENGINE_GRAPHICS_DRAWMESH_1_OFFSET UNITYSDK_OFFSET(0x181F8B90)
-#define UNITYENGINE_GRAPHICS_DRAWMESH_2_OFFSET UNITYSDK_OFFSET(0x181FA210)
-#define UNITYENGINE_GRAPHICS_DRAWMESH_3_OFFSET UNITYSDK_OFFSET(0x181FA3C0)
-#define UNITYENGINE_GRAPHICS_DRAWMESH_OFFSET UNITYSDK_OFFSET(0x181F8970)
-#define UNITYENGINE_GRAPHICS_DRAWPROCEDURAL_OFFSET UNITYSDK_OFFSET(0x181F9EC0)
-#define UNITYENGINE_GRAPHICS_DRAWSKINNEDMESH_1_OFFSET UNITYSDK_OFFSET(0x181FA050)
-#define UNITYENGINE_GRAPHICS_DRAWSKINNEDMESH_OFFSET UNITYSDK_OFFSET(0x181FA000)
-#define UNITYENGINE_GRAPHICS_EXECUTECOMMANDBUFFER_OFFSET UNITYSDK_OFFSET(0x181F84D0)
-#define UNITYENGINE_GRAPHICS_GET_ACTIVETIER_OFFSET UNITYSDK_OFFSET(0x181F8160)
-#define UNITYENGINE_GRAPHICS_INTERNAL_BLITMATERIAL5_OFFSET UNITYSDK_OFFSET(0x181F8460)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT1_INJECTED_OFFSET UNITYSDK_OFFSET(0x181FB330)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT1_OFFSET UNITYSDK_OFFSET(0x181F83A0)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT_INJECTED_OFFSET UNITYSDK_OFFSET(0x181FB320)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT_OFFSET UNITYSDK_OFFSET(0x181F8350)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDPROCEDURAL_INJECTED_OFFSET UNITYSDK_OFFSET(0x181FB310)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDPROCEDURAL_OFFSET UNITYSDK_OFFSET(0x181F8300)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCED_1_OFFSET UNITYSDK_OFFSET(0x181F82B0)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCED_INJECTED_OFFSET UNITYSDK_OFFSET(0x181FB300)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCED_OFFSET UNITYSDK_OFFSET(0x181F82A0)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHNOW2_INJECTED_OFFSET UNITYSDK_OFFSET(0x181FB2E0)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHNOW2_OFFSET UNITYSDK_OFFSET(0x181F8200)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESH_INJECTED_OFFSET UNITYSDK_OFFSET(0x181FB2F0)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESH_OFFSET UNITYSDK_OFFSET(0x181F8250)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWPROCEDURAL_INJECTED_OFFSET UNITYSDK_OFFSET(0x181FB340)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWPROCEDURAL_OFFSET UNITYSDK_OFFSET(0x181F83F0)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWSKINNEDMESH1_OFFSET UNITYSDK_OFFSET(0x181F8450)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWSKINNEDMESH_OFFSET UNITYSDK_OFFSET(0x181F8440)
-#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWTEXTURE_OFFSET UNITYSDK_OFFSET(0x181F8240)
-#define UNITYENGINE_GRAPHICS_INTERNAL_GETMAXDRAWMESHINSTANCECOUNT_OFFSET UNITYSDK_OFFSET(0x181F8150)
-#define UNITYENGINE_GRAPHICS_INTERNAL_SETNULLRT_OFFSET UNITYSDK_OFFSET(0x181F8170)
-#define UNITYENGINE_GRAPHICS_INTERNAL_SETRTSIMPLE_INJECTED_OFFSET UNITYSDK_OFFSET(0x181FB2D0)
-#define UNITYENGINE_GRAPHICS_INTERNAL_SETRTSIMPLE_OFFSET UNITYSDK_OFFSET(0x181F8180)
-#define UNITYENGINE_GRAPHICS_SETGLCLIPCONTROL_OFFSET UNITYSDK_OFFSET(0x181F84F0)
-#define UNITYENGINE_GRAPHICS_SETRENDERTARGETIMPL_1_OFFSET UNITYSDK_OFFSET(0x181F85A0)
-#define UNITYENGINE_GRAPHICS_SETRENDERTARGETIMPL_OFFSET UNITYSDK_OFFSET(0x181F8500)
-#define UNITYENGINE_GRAPHICS_SETRENDERTARGET_1_OFFSET UNITYSDK_OFFSET(0x181FB260)
-#define UNITYENGINE_GRAPHICS_SETRENDERTARGET_OFFSET UNITYSDK_OFFSET(0x181F86E0)
-#define UNITYENGINE_GRAPHICS_SETUSESREVERSEDZBUFFER_OFFSET UNITYSDK_OFFSET(0x181F84E0)
-#define UNITYENGINE_GRAPHICS__CCTOR_OFFSET UNITYSDK_OFFSET(0x181FB2B0)
+#define UNITYENGINE_GRAPHICS_BLIT_1_OFFSET UNITYSDK_OFFSET(0x19D162F0)
+#define UNITYENGINE_GRAPHICS_BLIT_OFFSET UNITYSDK_OFFSET(0x19D162A0)
+#define UNITYENGINE_GRAPHICS_CHECKLOADACTIONVALID_OFFSET UNITYSDK_OFFSET(0x19D14B60)
+#define UNITYENGINE_GRAPHICS_CHECKSTOREACTIONVALID_OFFSET UNITYSDK_OFFSET(0x19D14C10)
+#define UNITYENGINE_GRAPHICS_COPYTEXTURE_1_OFFSET UNITYSDK_OFFSET(0x19D15360)
+#define UNITYENGINE_GRAPHICS_COPYTEXTURE_2_OFFSET UNITYSDK_OFFSET(0x19D153B0)
+#define UNITYENGINE_GRAPHICS_COPYTEXTURE_3_OFFSET UNITYSDK_OFFSET(0x19D15400)
+#define UNITYENGINE_GRAPHICS_COPYTEXTURE_FULL_OFFSET UNITYSDK_OFFSET(0x19D14820)
+#define UNITYENGINE_GRAPHICS_COPYTEXTURE_OFFSET UNITYSDK_OFFSET(0x19D15320)
+#define UNITYENGINE_GRAPHICS_COPYTEXTURE_REGION_OFFSET UNITYSDK_OFFSET(0x19D14850)
+#define UNITYENGINE_GRAPHICS_COPYTEXTURE_SLICE_ALLMIPS_OFFSET UNITYSDK_OFFSET(0x19D14830)
+#define UNITYENGINE_GRAPHICS_COPYTEXTURE_SLICE_OFFSET UNITYSDK_OFFSET(0x19D14840)
+#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_1_OFFSET UNITYSDK_OFFSET(0x19D16640)
+#define UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_OFFSET UNITYSDK_OFFSET(0x19D15D90)
+#define UNITYENGINE_GRAPHICS_DRAWMESHNOW_1_OFFSET UNITYSDK_OFFSET(0x19D15810)
+#define UNITYENGINE_GRAPHICS_DRAWMESHNOW_2_OFFSET UNITYSDK_OFFSET(0x19D159C0)
+#define UNITYENGINE_GRAPHICS_DRAWMESHNOW_3_OFFSET UNITYSDK_OFFSET(0x19D15A40)
+#define UNITYENGINE_GRAPHICS_DRAWMESHNOW_OFFSET UNITYSDK_OFFSET(0x19D15680)
+#define UNITYENGINE_GRAPHICS_DRAWMESH_1_OFFSET UNITYSDK_OFFSET(0x19D16350)
+#define UNITYENGINE_GRAPHICS_DRAWMESH_2_OFFSET UNITYSDK_OFFSET(0x19D16500)
+#define UNITYENGINE_GRAPHICS_DRAWMESH_OFFSET UNITYSDK_OFFSET(0x19D15AD0)
+#define UNITYENGINE_GRAPHICS_DRAWPROCEDURALNOW_OFFSET UNITYSDK_OFFSET(0x19D16260)
+#define UNITYENGINE_GRAPHICS_DRAWTEXTUREIMPL_OFFSET UNITYSDK_OFFSET(0x19D15450)
+#define UNITYENGINE_GRAPHICS_DRAWTEXTURE_1_OFFSET UNITYSDK_OFFSET(0x19D16720)
+#define UNITYENGINE_GRAPHICS_DRAWTEXTURE_OFFSET UNITYSDK_OFFSET(0x19D15540)
+#define UNITYENGINE_GRAPHICS_ENABLEEXECUTEASYNC_OFFSET UNITYSDK_OFFSET(0x19D14A80)
+#define UNITYENGINE_GRAPHICS_ENABLEMETALHEAPOPT_OFFSET UNITYSDK_OFFSET(0x19D14B40)
+#define UNITYENGINE_GRAPHICS_ENABLEMETALSHADERMEMOPT_OFFSET UNITYSDK_OFFSET(0x19D14AB0)
+#define UNITYENGINE_GRAPHICS_ENABLEPERIODICFREEBUFFERTRIMMING_OFFSET UNITYSDK_OFFSET(0x19D14B10)
+#define UNITYENGINE_GRAPHICS_ENABLEPSOWARMUP_OFFSET UNITYSDK_OFFSET(0x19D14AF0)
+#define UNITYENGINE_GRAPHICS_ENABLESHADERWARMUPBYJOB_OFFSET UNITYSDK_OFFSET(0x19D14B00)
+#define UNITYENGINE_GRAPHICS_ENABLESRPINSTANCING_OFFSET UNITYSDK_OFFSET(0x19D14AC0)
+#define UNITYENGINE_GRAPHICS_EXECUTECOMMANDBUFFERASYNC_OFFSET UNITYSDK_OFFSET(0x19D14A10)
+#define UNITYENGINE_GRAPHICS_EXECUTECOMMANDBUFFER_OFFSET UNITYSDK_OFFSET(0x19D14A00)
+#define UNITYENGINE_GRAPHICS_GETDRAWSTATSSETPASSCALLS_OFFSET UNITYSDK_OFFSET(0x19D14A20)
+#define UNITYENGINE_GRAPHICS_GETDRAWSTATSTRIANGLES_OFFSET UNITYSDK_OFFSET(0x19D14A40)
+#define UNITYENGINE_GRAPHICS_GETDRAWSTATSVERTICES_OFFSET UNITYSDK_OFFSET(0x19D14A30)
+#define UNITYENGINE_GRAPHICS_GETLIFETIMEIDFROMNAMEID_OFFSET UNITYSDK_OFFSET(0x19D14B30)
+#define UNITYENGINE_GRAPHICS_GETLIFETIMEIDFROMNAME_OFFSET UNITYSDK_OFFSET(0x19D14B20)
+#define UNITYENGINE_GRAPHICS_GETPRESERVEFRAMEBUFFERALPHA_OFFSET UNITYSDK_OFFSET(0x19D14710)
+#define UNITYENGINE_GRAPHICS_GETSHADERCOMPILESTAMP_OFFSET UNITYSDK_OFFSET(0x19D14A90)
+#define UNITYENGINE_GRAPHICS_GET_ACTIVETIER_OFFSET UNITYSDK_OFFSET(0x19D146F0)
+#define UNITYENGINE_GRAPHICS_GET_PRESERVEFRAMEBUFFERALPHA_OFFSET UNITYSDK_OFFSET(0x19D14720)
+#define UNITYENGINE_GRAPHICS_GET_USEDRAWSTATSBETWEENPASS_OFFSET UNITYSDK_OFFSET(0x19D14A50)
+#define UNITYENGINE_GRAPHICS_INITIALIZENAPPVSHANDLES_OFFSET UNITYSDK_OFFSET(0x19D14A70)
+#define UNITYENGINE_GRAPHICS_INTERNAL_BLITMATERIAL5_OFFSET UNITYSDK_OFFSET(0x19D149F0)
+#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT_INJECTED_OFFSET UNITYSDK_OFFSET(0x19D149D0)
+#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT_OFFSET UNITYSDK_OFFSET(0x19D14980)
+#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHNOW1_INJECTED_OFFSET UNITYSDK_OFFSET(0x19D148B0)
+#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHNOW1_OFFSET UNITYSDK_OFFSET(0x19D14860)
+#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHNOW2_INJECTED_OFFSET UNITYSDK_OFFSET(0x19D14900)
+#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHNOW2_OFFSET UNITYSDK_OFFSET(0x19D148C0)
+#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESH_INJECTED_OFFSET UNITYSDK_OFFSET(0x19D14970)
+#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESH_OFFSET UNITYSDK_OFFSET(0x19D14920)
+#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWPROCEDURALNOW_OFFSET UNITYSDK_OFFSET(0x19D149E0)
+#define UNITYENGINE_GRAPHICS_INTERNAL_DRAWTEXTURE_OFFSET UNITYSDK_OFFSET(0x19D14910)
+#define UNITYENGINE_GRAPHICS_INTERNAL_GETMAXDRAWMESHINSTANCECOUNT_OFFSET UNITYSDK_OFFSET(0x19D146E0)
+#define UNITYENGINE_GRAPHICS_INTERNAL_SETMRTFULLSETUP_INJECTED_OFFSET UNITYSDK_OFFSET(0x19D14810)
+#define UNITYENGINE_GRAPHICS_INTERNAL_SETMRTFULLSETUP_OFFSET UNITYSDK_OFFSET(0x19D147C0)
+#define UNITYENGINE_GRAPHICS_INTERNAL_SETNULLRT_OFFSET UNITYSDK_OFFSET(0x19D14750)
+#define UNITYENGINE_GRAPHICS_INTERNAL_SETRTSIMPLE_INJECTED_OFFSET UNITYSDK_OFFSET(0x19D147B0)
+#define UNITYENGINE_GRAPHICS_INTERNAL_SETRTSIMPLE_OFFSET UNITYSDK_OFFSET(0x19D14760)
+#define UNITYENGINE_GRAPHICS_ISENABLEDYNAMICCACHE_OFFSET UNITYSDK_OFFSET(0x19D14AE0)
+#define UNITYENGINE_GRAPHICS_ISPIPELINCACHEVALID_OFFSET UNITYSDK_OFFSET(0x19D14AD0)
+#define UNITYENGINE_GRAPHICS_SETENABLEFORCEMETALTEXTURESWAPPABLE_OFFSET UNITYSDK_OFFSET(0x19D14B50)
+#define UNITYENGINE_GRAPHICS_SETGPUMEMOPTPARAMS_OFFSET UNITYSDK_OFFSET(0x19D14AA0)
+#define UNITYENGINE_GRAPHICS_SETRENDERTARGETIMPL_1_OFFSET UNITYSDK_OFFSET(0x19D15000)
+#define UNITYENGINE_GRAPHICS_SETRENDERTARGETIMPL_2_OFFSET UNITYSDK_OFFSET(0x19D150A0)
+#define UNITYENGINE_GRAPHICS_SETRENDERTARGETIMPL_OFFSET UNITYSDK_OFFSET(0x19D14CC0)
+#define UNITYENGINE_GRAPHICS_SETRENDERTARGET_1_OFFSET UNITYSDK_OFFSET(0x19D15290)
+#define UNITYENGINE_GRAPHICS_SETRENDERTARGET_2_OFFSET UNITYSDK_OFFSET(0x19D16880)
+#define UNITYENGINE_GRAPHICS_SETRENDERTARGET_3_OFFSET UNITYSDK_OFFSET(0x19D168D0)
+#define UNITYENGINE_GRAPHICS_SETRENDERTARGET_OFFSET UNITYSDK_OFFSET(0x19D15240)
+#define UNITYENGINE_GRAPHICS_SET_ACTIVETIER_OFFSET UNITYSDK_OFFSET(0x19D14700)
+#define UNITYENGINE_GRAPHICS_SET_USEDRAWSTATSBETWEENPASS_OFFSET UNITYSDK_OFFSET(0x19D14A60)
+#define UNITYENGINE_GRAPHICS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19D16930)
+#define UNITYENGINE_GRAPHICS__CTOR_OFFSET UNITYSDK_OFFSET(0x19D16920)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int Graphics_TypeDefinitionIndex = 3909;
+	inline static constexpr unsigned int Graphics_TypeDefinitionIndex = 5180;
 
 	class Graphics : public ::System::Object
 	{
 	public:
 		static ::System::Int32* StaticGet_kMaxDrawMeshInstanceCount()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Graphics_TypeDefinitionIndex)->GetStaticField(0x6610);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Graphics_TypeDefinitionIndex)->GetStaticField(0x25E0);
+		}
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS__CTOR_OFFSET))(this);
 		}
 
 		static ::System::Void _cctor()
@@ -123,6 +141,21 @@ namespace UnityEngine
 			return ((::UnityEngine::Rendering::GraphicsTier(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_GET_ACTIVETIER_OFFSET))();
 		}
 
+		static ::System::Void set_activeTier(::UnityEngine::Rendering::GraphicsTier value)
+		{
+			return ((::System::Void(*)(::UnityEngine::Rendering::GraphicsTier))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SET_ACTIVETIER_OFFSET))(value);
+		}
+
+		static ::System::Boolean GetPreserveFramebufferAlpha()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_GETPRESERVEFRAMEBUFFERALPHA_OFFSET))();
+		}
+
+		static ::System::Boolean get_preserveFramebufferAlpha()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_GET_PRESERVEFRAMEBUFFERALPHA_OFFSET))();
+		}
+
 		static ::System::Void Internal_SetNullRT()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_SETNULLRT_OFFSET))();
@@ -131,6 +164,16 @@ namespace UnityEngine
 		static ::System::Void Internal_SetRTSimple(::UnityEngine::RenderBuffer color, ::UnityEngine::RenderBuffer depth, ::System::Int32 mip, ::UnityEngine::CubemapFace face, ::System::Int32 depthSlice)
 		{
 			return ((::System::Void(*)(::UnityEngine::RenderBuffer, ::UnityEngine::RenderBuffer, ::System::Int32, ::UnityEngine::CubemapFace, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_SETRTSIMPLE_OFFSET))(color, depth, mip, face, depthSlice);
+		}
+
+		static ::System::Void Internal_SetMRTFullSetup(::Il2CppArray<::UnityEngine::RenderBuffer>* color, ::UnityEngine::RenderBuffer depth, ::System::Int32 mip, ::UnityEngine::CubemapFace face, ::System::Int32 depthSlice, ::Il2CppArray<::UnityEngine::Rendering::RenderBufferLoadAction>* colorLA, ::Il2CppArray<::UnityEngine::Rendering::RenderBufferStoreAction>* colorSA, ::UnityEngine::Rendering::RenderBufferLoadAction depthLA, ::UnityEngine::Rendering::RenderBufferStoreAction depthSA)
+		{
+			return ((::System::Void(*)(::Il2CppArray<::UnityEngine::RenderBuffer>*, ::UnityEngine::RenderBuffer, ::System::Int32, ::UnityEngine::CubemapFace, ::System::Int32, ::Il2CppArray<::UnityEngine::Rendering::RenderBufferLoadAction>*, ::Il2CppArray<::UnityEngine::Rendering::RenderBufferStoreAction>*, ::UnityEngine::Rendering::RenderBufferLoadAction, ::UnityEngine::Rendering::RenderBufferStoreAction))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_SETMRTFULLSETUP_OFFSET))(color, depth, mip, face, depthSlice, colorLA, colorSA, depthLA, depthSA);
+		}
+
+		static ::System::Void CopyTexture_Full(::UnityEngine::Texture* src, ::UnityEngine::Texture* dst)
+		{
+			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::Texture*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_COPYTEXTURE_FULL_OFFSET))(src, dst);
 		}
 
 		static ::System::Void CopyTexture_Slice_AllMips(::UnityEngine::Texture* src, ::System::Int32 srcElement, ::UnityEngine::Texture* dst, ::System::Int32 dstElement)
@@ -148,6 +191,11 @@ namespace UnityEngine
 			return ((::System::Void(*)(::UnityEngine::Texture*, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::UnityEngine::Texture*, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_COPYTEXTURE_REGION_OFFSET))(src, srcElement, srcMip, srcX, srcY, srcWidth, srcHeight, dst, dstElement, dstMip, dstX, dstY);
 		}
 
+		static ::System::Void Internal_DrawMeshNow1(::UnityEngine::Mesh* mesh, ::System::Int32 subsetIndex, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation)
+		{
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Vector3, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHNOW1_OFFSET))(mesh, subsetIndex, position, rotation);
+		}
+
 		static ::System::Void Internal_DrawMeshNow2(::UnityEngine::Mesh* mesh, ::System::Int32 subsetIndex, ::UnityEngine::Matrix4x4 matrix)
 		{
 			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Matrix4x4))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHNOW2_OFFSET))(mesh, subsetIndex, matrix);
@@ -158,49 +206,19 @@ namespace UnityEngine
 			return ((::System::Void(*)(::UnityEngine::Internal_DrawTextureArguments&))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWTEXTURE_OFFSET))(args);
 		}
 
-		static ::System::Void Internal_DrawMesh(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows)
+		static ::System::Void Internal_DrawMesh(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::UnityEngine::Camera* camera, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::UnityEngine::Transform* probeAnchor, ::UnityEngine::Rendering::LightProbeUsage lightProbeUsage, ::UnityEngine::LightProbeProxyVolume* lightProbeProxyVolume)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESH_OFFSET))(mesh, submeshIndex, matrix, material, layer, renderingLayerMask, camera, properties, castShadows, receiveShadows);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::System::Int32, ::UnityEngine::Camera*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::UnityEngine::Transform*, ::UnityEngine::Rendering::LightProbeUsage, ::UnityEngine::LightProbeProxyVolume*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESH_OFFSET))(mesh, submeshIndex, matrix, material, layer, camera, properties, castShadows, receiveShadows, probeAnchor, lightProbeUsage, lightProbeProxyVolume);
 		}
 
-		static ::System::Void Internal_DrawMeshInstanced(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::Il2CppArray<::UnityEngine::Matrix4x4>* matrices, ::System::Int32 count, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera)
+		static ::System::Void Internal_DrawMeshInstancedIndirect(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::UnityEngine::Camera* camera, ::UnityEngine::Rendering::LightProbeUsage lightProbeUsage, ::UnityEngine::LightProbeProxyVolume* lightProbeProxyVolume)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::Il2CppArray<::UnityEngine::Matrix4x4>*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCED_OFFSET))(mesh, submeshIndex, material, matrices, count, properties, castShadows, receiveShadows, layer, renderingLayerMask, camera);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::UnityEngine::Camera*, ::UnityEngine::Rendering::LightProbeUsage, ::UnityEngine::LightProbeProxyVolume*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, camera, lightProbeUsage, lightProbeProxyVolume);
 		}
 
-		static ::System::Void Internal_DrawMeshInstanced_1(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::Il2CppArray<::UnityEngine::Matrix4x4>* matrices, ::System::Int32 count, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera)
+		static ::System::Void Internal_DrawProceduralNow(::UnityEngine::MeshTopology topology, ::System::Int32 vertexCount, ::System::Int32 instanceCount)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::Il2CppArray<::UnityEngine::Matrix4x4>*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCED_1_OFFSET))(mesh, submeshIndex, material, bounds, matrices, count, properties, castShadows, receiveShadows, layer, renderingLayerMask, camera);
-		}
-
-		static ::System::Void Internal_DrawMeshInstancedProcedural(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::System::Int32 count, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::UnityEngine::Camera* camera)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDPROCEDURAL_OFFSET))(mesh, submeshIndex, material, bounds, count, properties, castShadows, receiveShadows, layer, camera);
-		}
-
-		static ::System::Void Internal_DrawMeshInstancedIndirect(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, renderingLayerMask, camera);
-		}
-
-		static ::System::Void Internal_DrawMeshInstancedIndirect1(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT1_OFFSET))(mesh, submeshIndex, matrix, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, renderingLayerMask, camera);
-		}
-
-		static ::System::Void Internal_DrawProcedural(::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::MeshTopology topology, ::System::Int32 vertexCount, ::System::Int32 instanceCount, ::UnityEngine::Camera* camera, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer)
-		{
-			return ((::System::Void(*)(::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::MeshTopology, ::System::Int32, ::System::Int32, ::UnityEngine::Camera*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWPROCEDURAL_OFFSET))(material, bounds, topology, vertexCount, instanceCount, camera, properties, castShadows, receiveShadows, layer);
-		}
-
-		static ::System::Void Internal_DrawSkinnedMesh(::UnityEngine::SkinnedMeshRenderer* renderer, ::Il2CppArray<::UnityEngine::Material*>* materials, ::UnityEngine::Camera* camera, ::System::UInt32 renderingLayerMask)
-		{
-			return ((::System::Void(*)(::UnityEngine::SkinnedMeshRenderer*, ::Il2CppArray<::UnityEngine::Material*>*, ::UnityEngine::Camera*, ::System::UInt32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWSKINNEDMESH_OFFSET))(renderer, materials, camera, renderingLayerMask);
-		}
-
-		static ::System::Void Internal_DrawSkinnedMesh1(::UnityEngine::SkinnedMeshRenderer* renderer, ::UnityEngine::Material* material, ::UnityEngine::Camera* camera, ::System::UInt32 renderingLayerMask, ::System::Int32 submeshIndex)
-		{
-			return ((::System::Void(*)(::UnityEngine::SkinnedMeshRenderer*, ::UnityEngine::Material*, ::UnityEngine::Camera*, ::System::UInt32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWSKINNEDMESH1_OFFSET))(renderer, material, camera, renderingLayerMask, submeshIndex);
+			return ((::System::Void(*)(::UnityEngine::MeshTopology, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWPROCEDURALNOW_OFFSET))(topology, vertexCount, instanceCount);
 		}
 
 		static ::System::Void Internal_BlitMaterial5(::UnityEngine::Texture* source, ::UnityEngine::RenderTexture* dest, ::UnityEngine::Material* mat, ::System::Int32 pass, ::System::Boolean setRT)
@@ -208,39 +226,139 @@ namespace UnityEngine
 			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::RenderTexture*, ::UnityEngine::Material*, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_BLITMATERIAL5_OFFSET))(source, dest, mat, pass, setRT);
 		}
 
-		static ::System::Void Blit2(::UnityEngine::Texture* source, ::UnityEngine::RenderTexture* dest)
-		{
-			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::RenderTexture*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_BLIT2_OFFSET))(source, dest);
-		}
-
-		static ::System::Void Blit4(::UnityEngine::Texture* source, ::UnityEngine::RenderTexture* dest, ::UnityEngine::Vector2 scale, ::UnityEngine::Vector2 offset)
-		{
-			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::RenderTexture*, ::UnityEngine::Vector2, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_BLIT4_OFFSET))(source, dest, scale, offset);
-		}
-
 		static ::System::Void ExecuteCommandBuffer(::UnityEngine::Rendering::CommandBuffer* buffer)
 		{
 			return ((::System::Void(*)(::UnityEngine::Rendering::CommandBuffer*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_EXECUTECOMMANDBUFFER_OFFSET))(buffer);
 		}
 
-		static ::System::Void SetUsesReversedZBuffer(::System::Boolean useReverseZ)
+		static ::System::Void ExecuteCommandBufferAsync(::UnityEngine::Rendering::CommandBuffer* buffer, ::UnityEngine::Rendering::ComputeQueueType queueType)
 		{
-			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETUSESREVERSEDZBUFFER_OFFSET))(useReverseZ);
+			return ((::System::Void(*)(::UnityEngine::Rendering::CommandBuffer*, ::UnityEngine::Rendering::ComputeQueueType))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_EXECUTECOMMANDBUFFERASYNC_OFFSET))(buffer, queueType);
 		}
 
-		static ::System::Void SetGLClipControl(::System::Boolean enable)
+		static ::System::UInt64 GetDrawStatsSetPassCalls()
 		{
-			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETGLCLIPCONTROL_OFFSET))(enable);
+			return ((::System::UInt64(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_GETDRAWSTATSSETPASSCALLS_OFFSET))();
 		}
 
-		static ::System::Void SetRenderTargetImpl(::UnityEngine::RenderBuffer colorBuffer, ::UnityEngine::RenderBuffer depthBuffer, ::System::Int32 mipLevel, ::UnityEngine::CubemapFace face, ::System::Int32 depthSlice)
+		static ::System::UInt64 GetDrawStatsVertices()
 		{
-			return ((::System::Void(*)(::UnityEngine::RenderBuffer, ::UnityEngine::RenderBuffer, ::System::Int32, ::UnityEngine::CubemapFace, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETRENDERTARGETIMPL_OFFSET))(colorBuffer, depthBuffer, mipLevel, face, depthSlice);
+			return ((::System::UInt64(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_GETDRAWSTATSVERTICES_OFFSET))();
 		}
 
-		static ::System::Void SetRenderTargetImpl_1(::UnityEngine::RenderTexture* rt, ::System::Int32 mipLevel, ::UnityEngine::CubemapFace face, ::System::Int32 depthSlice)
+		static ::System::UInt64 GetDrawStatsTriangles()
 		{
-			return ((::System::Void(*)(::UnityEngine::RenderTexture*, ::System::Int32, ::UnityEngine::CubemapFace, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETRENDERTARGETIMPL_1_OFFSET))(rt, mipLevel, face, depthSlice);
+			return ((::System::UInt64(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_GETDRAWSTATSTRIANGLES_OFFSET))();
+		}
+
+		static ::System::Int32 get_UseDrawStatsBetweenPass()
+		{
+			return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_GET_USEDRAWSTATSBETWEENPASS_OFFSET))();
+		}
+
+		static ::System::Void set_UseDrawStatsBetweenPass(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SET_USEDRAWSTATSBETWEENPASS_OFFSET))(value);
+		}
+
+		static ::System::Boolean InitializeNapPVSHandles(::Il2CppArray<::System::Int32>* instance2PVSHandleMap)
+		{
+			return ((::System::Boolean(*)(::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INITIALIZENAPPVSHANDLES_OFFSET))(instance2PVSHandleMap);
+		}
+
+		static ::System::Void EnableExecuteAsync(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_ENABLEEXECUTEASYNC_OFFSET))(enable);
+		}
+
+		static ::System::UInt64 GetShaderCompileStamp()
+		{
+			return ((::System::UInt64(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_GETSHADERCOMPILESTAMP_OFFSET))();
+		}
+
+		static ::System::Void SetGpuMemOptParams(::Il2CppArray<::System::Int32>* parameters)
+		{
+			return ((::System::Void(*)(::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETGPUMEMOPTPARAMS_OFFSET))(parameters);
+		}
+
+		static ::System::Void EnableMetalShaderMemOpt(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_ENABLEMETALSHADERMEMOPT_OFFSET))(enable);
+		}
+
+		static ::System::Void EnableSRPInstancing(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_ENABLESRPINSTANCING_OFFSET))(enable);
+		}
+
+		static ::System::Boolean IsPipelinCacheValid()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_ISPIPELINCACHEVALID_OFFSET))();
+		}
+
+		static ::System::Boolean IsEnableDynamicCache()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_ISENABLEDYNAMICCACHE_OFFSET))();
+		}
+
+		static ::System::Void EnablePSOWarmup(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_ENABLEPSOWARMUP_OFFSET))(enable);
+		}
+
+		static ::System::Void EnableShaderWarmupByJob(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_ENABLESHADERWARMUPBYJOB_OFFSET))(enable);
+		}
+
+		static ::System::Void EnablePeriodicFreeBufferTrimming(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_ENABLEPERIODICFREEBUFFERTRIMMING_OFFSET))(enable);
+		}
+
+		static ::System::UInt32 GetLifeTimeIdFromName(::System::String* name)
+		{
+			return ((::System::UInt32(*)(::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_GETLIFETIMEIDFROMNAME_OFFSET))(name);
+		}
+
+		static ::System::UInt32 GetLifeTimeIdFromNameId(::System::Int32 nameID)
+		{
+			return ((::System::UInt32(*)(::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_GETLIFETIMEIDFROMNAMEID_OFFSET))(nameID);
+		}
+
+		static ::System::Void EnableMetalHeapOpt(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_ENABLEMETALHEAPOPT_OFFSET))(enable);
+		}
+
+		static ::System::Void SetEnableForceMetalTextureSwappable(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETENABLEFORCEMETALTEXTURESWAPPABLE_OFFSET))(enable);
+		}
+
+		static ::System::Void CheckLoadActionValid(::UnityEngine::Rendering::RenderBufferLoadAction load, ::System::String* bufferType)
+		{
+			return ((::System::Void(*)(::UnityEngine::Rendering::RenderBufferLoadAction, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_CHECKLOADACTIONVALID_OFFSET))(load, bufferType);
+		}
+
+		static ::System::Void CheckStoreActionValid(::UnityEngine::Rendering::RenderBufferStoreAction store, ::System::String* bufferType)
+		{
+			return ((::System::Void(*)(::UnityEngine::Rendering::RenderBufferStoreAction, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_CHECKSTOREACTIONVALID_OFFSET))(store, bufferType);
+		}
+
+		static ::System::Void SetRenderTargetImpl(::UnityEngine::RenderTargetSetup setup)
+		{
+			return ((::System::Void(*)(::UnityEngine::RenderTargetSetup))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETRENDERTARGETIMPL_OFFSET))(setup);
+		}
+
+		static ::System::Void SetRenderTargetImpl_1(::UnityEngine::RenderBuffer colorBuffer, ::UnityEngine::RenderBuffer depthBuffer, ::System::Int32 mipLevel, ::UnityEngine::CubemapFace face, ::System::Int32 depthSlice)
+		{
+			return ((::System::Void(*)(::UnityEngine::RenderBuffer, ::UnityEngine::RenderBuffer, ::System::Int32, ::UnityEngine::CubemapFace, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETRENDERTARGETIMPL_1_OFFSET))(colorBuffer, depthBuffer, mipLevel, face, depthSlice);
+		}
+
+		static ::System::Void SetRenderTargetImpl_2(::UnityEngine::RenderTexture* rt, ::System::Int32 mipLevel, ::UnityEngine::CubemapFace face, ::System::Int32 depthSlice)
+		{
+			return ((::System::Void(*)(::UnityEngine::RenderTexture*, ::System::Int32, ::UnityEngine::CubemapFace, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETRENDERTARGETIMPL_2_OFFSET))(rt, mipLevel, face, depthSlice);
 		}
 
 		static ::System::Void SetRenderTarget(::UnityEngine::RenderTexture* rt, ::System::Int32 mipLevel, ::UnityEngine::CubemapFace face, ::System::Int32 depthSlice)
@@ -248,184 +366,114 @@ namespace UnityEngine
 			return ((::System::Void(*)(::UnityEngine::RenderTexture*, ::System::Int32, ::UnityEngine::CubemapFace, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETRENDERTARGET_OFFSET))(rt, mipLevel, face, depthSlice);
 		}
 
-		static ::System::Void CopyTexture(::UnityEngine::Texture* src, ::System::Int32 srcElement, ::UnityEngine::Texture* dst, ::System::Int32 dstElement)
+		static ::System::Void SetRenderTarget_1(::UnityEngine::RenderTargetSetup setup)
 		{
-			return ((::System::Void(*)(::UnityEngine::Texture*, ::System::Int32, ::UnityEngine::Texture*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_COPYTEXTURE_OFFSET))(src, srcElement, dst, dstElement);
+			return ((::System::Void(*)(::UnityEngine::RenderTargetSetup))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETRENDERTARGET_1_OFFSET))(setup);
 		}
 
-		static ::System::Void CopyTexture_1(::UnityEngine::Texture* src, ::System::Int32 srcElement, ::System::Int32 srcMip, ::UnityEngine::Texture* dst, ::System::Int32 dstElement, ::System::Int32 dstMip)
+		static ::System::Void CopyTexture(::UnityEngine::Texture* src, ::UnityEngine::Texture* dst)
 		{
-			return ((::System::Void(*)(::UnityEngine::Texture*, ::System::Int32, ::System::Int32, ::UnityEngine::Texture*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_COPYTEXTURE_1_OFFSET))(src, srcElement, srcMip, dst, dstElement, dstMip);
+			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::Texture*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_COPYTEXTURE_OFFSET))(src, dst);
 		}
 
-		static ::System::Void CopyTexture_2(::UnityEngine::Texture* src, ::System::Int32 srcElement, ::System::Int32 srcMip, ::System::Int32 srcX, ::System::Int32 srcY, ::System::Int32 srcWidth, ::System::Int32 srcHeight, ::UnityEngine::Texture* dst, ::System::Int32 dstElement, ::System::Int32 dstMip, ::System::Int32 dstX, ::System::Int32 dstY)
+		static ::System::Void CopyTexture_1(::UnityEngine::Texture* src, ::System::Int32 srcElement, ::UnityEngine::Texture* dst, ::System::Int32 dstElement)
 		{
-			return ((::System::Void(*)(::UnityEngine::Texture*, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::UnityEngine::Texture*, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_COPYTEXTURE_2_OFFSET))(src, srcElement, srcMip, srcX, srcY, srcWidth, srcHeight, dst, dstElement, dstMip, dstX, dstY);
+			return ((::System::Void(*)(::UnityEngine::Texture*, ::System::Int32, ::UnityEngine::Texture*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_COPYTEXTURE_1_OFFSET))(src, srcElement, dst, dstElement);
 		}
 
-		static ::System::Void DrawMeshNow(::UnityEngine::Mesh* mesh, ::UnityEngine::Matrix4x4 matrix, ::System::Int32 materialIndex)
+		static ::System::Void CopyTexture_2(::UnityEngine::Texture* src, ::System::Int32 srcElement, ::System::Int32 srcMip, ::UnityEngine::Texture* dst, ::System::Int32 dstElement, ::System::Int32 dstMip)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Matrix4x4, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHNOW_OFFSET))(mesh, matrix, materialIndex);
+			return ((::System::Void(*)(::UnityEngine::Texture*, ::System::Int32, ::System::Int32, ::UnityEngine::Texture*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_COPYTEXTURE_2_OFFSET))(src, srcElement, srcMip, dst, dstElement, dstMip);
 		}
 
-		static ::System::Void DrawMesh(::UnityEngine::Mesh* mesh, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera, ::System::Int32 submeshIndex, ::UnityEngine::MaterialPropertyBlock* properties, ::System::Boolean castShadows, ::System::Boolean receiveShadows, ::System::Boolean useLightProbesNotUsed)
+		static ::System::Void CopyTexture_3(::UnityEngine::Texture* src, ::System::Int32 srcElement, ::System::Int32 srcMip, ::System::Int32 srcX, ::System::Int32 srcY, ::System::Int32 srcWidth, ::System::Int32 srcHeight, ::UnityEngine::Texture* dst, ::System::Int32 dstElement, ::System::Int32 dstMip, ::System::Int32 dstX, ::System::Int32 dstY)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::System::Boolean, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESH_OFFSET))(mesh, matrix, material, layer, renderingLayerMask, camera, submeshIndex, properties, castShadows, receiveShadows, useLightProbesNotUsed);
+			return ((::System::Void(*)(::UnityEngine::Texture*, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::UnityEngine::Texture*, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_COPYTEXTURE_3_OFFSET))(src, srcElement, srcMip, srcX, srcY, srcWidth, srcHeight, dst, dstElement, dstMip, dstX, dstY);
 		}
 
-		static ::System::Void DrawMesh_1(::UnityEngine::Mesh* mesh, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera, ::System::Int32 submeshIndex, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows)
+		static ::System::Void DrawTextureImpl(::UnityEngine::Rect screenRect, ::UnityEngine::Texture* texture, ::UnityEngine::Rect sourceRect, ::System::Int32 leftBorder, ::System::Int32 rightBorder, ::System::Int32 topBorder, ::System::Int32 bottomBorder, ::UnityEngine::Color color, ::UnityEngine::Material* mat, ::System::Int32 pass)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESH_1_OFFSET))(mesh, matrix, material, layer, renderingLayerMask, camera, submeshIndex, properties, castShadows, receiveShadows);
+			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::Texture*, ::UnityEngine::Rect, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::UnityEngine::Color, ::UnityEngine::Material*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWTEXTUREIMPL_OFFSET))(screenRect, texture, sourceRect, leftBorder, rightBorder, topBorder, bottomBorder, color, mat, pass);
 		}
 
-		static ::System::Void DrawMeshInstanced(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::Il2CppArray<::UnityEngine::Matrix4x4>* matrices, ::System::Int32 count, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera)
+		static ::System::Void DrawTexture(::UnityEngine::Rect screenRect, ::UnityEngine::Texture* texture, ::UnityEngine::Rect sourceRect, ::System::Int32 leftBorder, ::System::Int32 rightBorder, ::System::Int32 topBorder, ::System::Int32 bottomBorder, ::UnityEngine::Material* mat, ::System::Int32 pass)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::Il2CppArray<::UnityEngine::Matrix4x4>*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_OFFSET))(mesh, submeshIndex, material, matrices, count, properties, castShadows, receiveShadows, layer, renderingLayerMask, camera);
+			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::Texture*, ::UnityEngine::Rect, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::UnityEngine::Material*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWTEXTURE_OFFSET))(screenRect, texture, sourceRect, leftBorder, rightBorder, topBorder, bottomBorder, mat, pass);
 		}
 
-		static ::System::Void DrawMeshInstanced_1(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::Il2CppArray<::UnityEngine::Matrix4x4>* matrices, ::System::Int32 count, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::UnityEngine::Camera* camera)
+		static ::System::Void DrawMeshNow(::UnityEngine::Mesh* mesh, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::System::Int32 materialIndex)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::Il2CppArray<::UnityEngine::Matrix4x4>*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_1_OFFSET))(mesh, submeshIndex, material, matrices, count, properties, castShadows, receiveShadows, layer, camera);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHNOW_OFFSET))(mesh, position, rotation, materialIndex);
 		}
 
-		static ::System::Void DrawMeshInstanced_2(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>* matrices, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::UnityEngine::Camera* camera)
+		static ::System::Void DrawMeshNow_1(::UnityEngine::Mesh* mesh, ::UnityEngine::Matrix4x4 matrix, ::System::Int32 materialIndex)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_2_OFFSET))(mesh, submeshIndex, material, matrices, properties, castShadows, receiveShadows, layer, camera);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Matrix4x4, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHNOW_1_OFFSET))(mesh, matrix, materialIndex);
 		}
 
-		static ::System::Void DrawMeshInstanced_3(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>* matrices, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera)
+		static ::System::Void DrawMeshNow_2(::UnityEngine::Mesh* mesh, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_3_OFFSET))(mesh, submeshIndex, material, bounds, matrices, properties, castShadows, receiveShadows, layer, renderingLayerMask, camera);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHNOW_2_OFFSET))(mesh, position, rotation);
 		}
 
-		static ::System::Void DrawMeshInstancedProcedural(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::System::Int32 count, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::UnityEngine::Camera* camera)
+		static ::System::Void DrawMeshNow_3(::UnityEngine::Mesh* mesh, ::UnityEngine::Matrix4x4 matrix)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDPROCEDURAL_OFFSET))(mesh, submeshIndex, material, bounds, count, properties, castShadows, receiveShadows, layer, camera);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Matrix4x4))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHNOW_3_OFFSET))(mesh, matrix);
 		}
 
-		static ::System::Void DrawMeshInstancedIndirect(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera)
+		static ::System::Void DrawMesh(::UnityEngine::Mesh* mesh, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::UnityEngine::Camera* camera, ::System::Int32 submeshIndex, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::UnityEngine::Transform* probeAnchor, ::UnityEngine::Rendering::LightProbeUsage lightProbeUsage, ::UnityEngine::LightProbeProxyVolume* lightProbeProxyVolume)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, renderingLayerMask, camera);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::System::Int32, ::UnityEngine::Camera*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::UnityEngine::Transform*, ::UnityEngine::Rendering::LightProbeUsage, ::UnityEngine::LightProbeProxyVolume*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESH_OFFSET))(mesh, matrix, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows, probeAnchor, lightProbeUsage, lightProbeProxyVolume);
 		}
 
-		static ::System::Void DrawMeshInstancedIndirect_1(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera)
+		static ::System::Void DrawMeshInstancedIndirect(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::UnityEngine::Camera* camera, ::UnityEngine::Rendering::LightProbeUsage lightProbeUsage, ::UnityEngine::LightProbeProxyVolume* lightProbeProxyVolume)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_1_OFFSET))(mesh, submeshIndex, matrix, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, renderingLayerMask, camera);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::UnityEngine::Camera*, ::UnityEngine::Rendering::LightProbeUsage, ::UnityEngine::LightProbeProxyVolume*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, camera, lightProbeUsage, lightProbeProxyVolume);
 		}
 
-		static ::System::Void DrawMeshInstancedIndirect_2(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::UnityEngine::Camera* camera)
+		static ::System::Void DrawProceduralNow(::UnityEngine::MeshTopology topology, ::System::Int32 vertexCount, ::System::Int32 instanceCount)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_2_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, camera);
+			return ((::System::Void(*)(::UnityEngine::MeshTopology, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWPROCEDURALNOW_OFFSET))(topology, vertexCount, instanceCount);
 		}
 
-		static ::System::Void DrawProcedural(::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::MeshTopology topology, ::System::Int32 vertexCount, ::System::Int32 instanceCount, ::UnityEngine::Camera* camera, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer)
+		static ::System::Void Blit(::UnityEngine::Texture* source, ::UnityEngine::RenderTexture* dest, ::UnityEngine::Material* mat, ::System::Int32 pass)
 		{
-			return ((::System::Void(*)(::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::MeshTopology, ::System::Int32, ::System::Int32, ::UnityEngine::Camera*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWPROCEDURAL_OFFSET))(material, bounds, topology, vertexCount, instanceCount, camera, properties, castShadows, receiveShadows, layer);
+			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::RenderTexture*, ::UnityEngine::Material*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_BLIT_OFFSET))(source, dest, mat, pass);
 		}
 
-		static ::System::Void DrawSkinnedMesh(::UnityEngine::SkinnedMeshRenderer* renderer, ::UnityEngine::Material* material, ::UnityEngine::Camera* camera, ::System::UInt32 renderingLayerMask, ::System::Int32 submeshIndex)
+		static ::System::Void Blit_1(::UnityEngine::Texture* source, ::UnityEngine::RenderTexture* dest, ::UnityEngine::Material* mat)
 		{
-			return ((::System::Void(*)(::UnityEngine::SkinnedMeshRenderer*, ::UnityEngine::Material*, ::UnityEngine::Camera*, ::System::UInt32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWSKINNEDMESH_OFFSET))(renderer, material, camera, renderingLayerMask, submeshIndex);
+			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::RenderTexture*, ::UnityEngine::Material*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_BLIT_1_OFFSET))(source, dest, mat);
 		}
 
-		static ::System::Void DrawSkinnedMesh_1(::UnityEngine::SkinnedMeshRenderer* renderer, ::Il2CppArray<::UnityEngine::Material*>* materials, ::UnityEngine::Camera* camera, ::System::UInt32 renderingLayerMask)
+		static ::System::Void DrawMesh_1(::UnityEngine::Mesh* mesh, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::UnityEngine::Camera* camera, ::System::Int32 submeshIndex, ::UnityEngine::MaterialPropertyBlock* properties)
 		{
-			return ((::System::Void(*)(::UnityEngine::SkinnedMeshRenderer*, ::Il2CppArray<::UnityEngine::Material*>*, ::UnityEngine::Camera*, ::System::UInt32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWSKINNEDMESH_1_OFFSET))(renderer, materials, camera, renderingLayerMask);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::System::Int32, ::UnityEngine::Camera*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESH_1_OFFSET))(mesh, matrix, material, layer, camera, submeshIndex, properties);
 		}
 
-		static ::System::Void Blit(::UnityEngine::Texture* source, ::UnityEngine::RenderTexture* dest)
+		static ::System::Void DrawMesh_2(::UnityEngine::Mesh* mesh, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::UnityEngine::Camera* camera, ::System::Int32 submeshIndex, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::UnityEngine::Transform* probeAnchor, ::System::Boolean useLightProbes)
 		{
-			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::RenderTexture*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_BLIT_OFFSET))(source, dest);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::System::Int32, ::UnityEngine::Camera*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::UnityEngine::Transform*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESH_2_OFFSET))(mesh, matrix, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows, probeAnchor, useLightProbes);
 		}
 
-		static ::System::Void Blit_1(::UnityEngine::Texture* source, ::UnityEngine::RenderTexture* dest, ::UnityEngine::Vector2 scale, ::UnityEngine::Vector2 offset)
+		static ::System::Void DrawMeshInstancedIndirect_1(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs)
 		{
-			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::RenderTexture*, ::UnityEngine::Vector2, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_BLIT_1_OFFSET))(source, dest, scale, offset);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_1_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs);
 		}
 
-		static ::System::Void Blit_2(::UnityEngine::Texture* source, ::UnityEngine::RenderTexture* dest, ::UnityEngine::Material* mat, ::System::Int32 pass)
+		static ::System::Void DrawTexture_1(::UnityEngine::Rect screenRect, ::UnityEngine::Texture* texture, ::UnityEngine::Rect sourceRect, ::System::Int32 leftBorder, ::System::Int32 rightBorder, ::System::Int32 topBorder, ::System::Int32 bottomBorder, ::UnityEngine::Material* mat)
 		{
-			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::RenderTexture*, ::UnityEngine::Material*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_BLIT_2_OFFSET))(source, dest, mat, pass);
+			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::Texture*, ::UnityEngine::Rect, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::UnityEngine::Material*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWTEXTURE_1_OFFSET))(screenRect, texture, sourceRect, leftBorder, rightBorder, topBorder, bottomBorder, mat);
 		}
 
-		static ::System::Void Blit_3(::UnityEngine::Texture* source, ::UnityEngine::RenderTexture* dest, ::UnityEngine::Material* mat)
+		static ::System::Void SetRenderTarget_2(::UnityEngine::RenderTexture* rt)
 		{
-			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::RenderTexture*, ::UnityEngine::Material*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_BLIT_3_OFFSET))(source, dest, mat);
+			return ((::System::Void(*)(::UnityEngine::RenderTexture*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETRENDERTARGET_2_OFFSET))(rt);
 		}
 
-		static ::System::Void DrawMesh_2(::UnityEngine::Mesh* mesh, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::System::Int32 layer)
+		static ::System::Void SetRenderTarget_3(::UnityEngine::RenderTexture* rt, ::System::Int32 mipLevel)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESH_2_OFFSET))(mesh, matrix, material, layer);
-		}
-
-		static ::System::Void DrawMesh_3(::UnityEngine::Mesh* mesh, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::UnityEngine::Camera* camera, ::System::Int32 submeshIndex)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::System::Int32, ::UnityEngine::Camera*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESH_3_OFFSET))(mesh, matrix, material, layer, camera, submeshIndex);
-		}
-
-		static ::System::Void DrawMeshInstanced_4(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::Il2CppArray<::UnityEngine::Matrix4x4>* matrices)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::Il2CppArray<::UnityEngine::Matrix4x4>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_4_OFFSET))(mesh, submeshIndex, material, matrices);
-		}
-
-		static ::System::Void DrawMeshInstanced_5(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::Il2CppArray<::UnityEngine::Matrix4x4>* matrices, ::System::Int32 count, ::UnityEngine::MaterialPropertyBlock* properties)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::Il2CppArray<::UnityEngine::Matrix4x4>*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_5_OFFSET))(mesh, submeshIndex, material, matrices, count, properties);
-		}
-
-		static ::System::Void DrawMeshInstanced_6(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::Il2CppArray<::UnityEngine::Matrix4x4>* matrices, ::System::Int32 count, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::Il2CppArray<::UnityEngine::Matrix4x4>*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_6_OFFSET))(mesh, submeshIndex, material, matrices, count, properties, castShadows);
-		}
-
-		static ::System::Void DrawMeshInstanced_7(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::Il2CppArray<::UnityEngine::Matrix4x4>* matrices, ::System::Int32 count, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::Il2CppArray<::UnityEngine::Matrix4x4>*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_7_OFFSET))(mesh, submeshIndex, material, matrices, count, properties, castShadows, receiveShadows, layer);
-		}
-
-		static ::System::Void DrawMeshInstanced_8(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>* matrices)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_8_OFFSET))(mesh, submeshIndex, material, matrices);
-		}
-
-		static ::System::Void DrawMeshInstanced_9(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>* matrices, ::UnityEngine::MaterialPropertyBlock* properties)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>*, ::UnityEngine::MaterialPropertyBlock*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_9_OFFSET))(mesh, submeshIndex, material, matrices, properties);
-		}
-
-		static ::System::Void DrawMeshInstanced_10(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>* matrices, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_10_OFFSET))(mesh, submeshIndex, material, matrices, properties, castShadows);
-		}
-
-		static ::System::Void DrawMeshInstanced_11(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>* matrices, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::System::Collections::Generic::List_1<::UnityEngine::Matrix4x4>*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCED_11_OFFSET))(mesh, submeshIndex, material, matrices, properties, castShadows, receiveShadows, layer);
-		}
-
-		static ::System::Void DrawMeshInstancedIndirect_3(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_3_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs);
-		}
-
-		static ::System::Void DrawMeshInstancedIndirect_4(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_4_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties);
-		}
-
-		static ::System::Void DrawMeshInstancedIndirect_5(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_5_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows);
-		}
-
-		static ::System::Void DrawMeshInstancedIndirect_6(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_DRAWMESHINSTANCEDINDIRECT_6_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer);
-		}
-
-		static ::System::Void SetRenderTarget_1(::UnityEngine::RenderTexture* rt)
-		{
-			return ((::System::Void(*)(::UnityEngine::RenderTexture*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETRENDERTARGET_1_OFFSET))(rt);
+			return ((::System::Void(*)(::UnityEngine::RenderTexture*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_SETRENDERTARGET_3_OFFSET))(rt, mipLevel);
 		}
 
 		static ::System::Void Internal_SetRTSimple_Injected(::UnityEngine::RenderBuffer& color, ::UnityEngine::RenderBuffer& depth, ::System::Int32 mip, ::UnityEngine::CubemapFace face, ::System::Int32 depthSlice)
@@ -433,44 +481,29 @@ namespace UnityEngine
 			return ((::System::Void(*)(::UnityEngine::RenderBuffer&, ::UnityEngine::RenderBuffer&, ::System::Int32, ::UnityEngine::CubemapFace, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_SETRTSIMPLE_INJECTED_OFFSET))(color, depth, mip, face, depthSlice);
 		}
 
+		static ::System::Void Internal_SetMRTFullSetup_Injected(::Il2CppArray<::UnityEngine::RenderBuffer>* color, ::UnityEngine::RenderBuffer& depth, ::System::Int32 mip, ::UnityEngine::CubemapFace face, ::System::Int32 depthSlice, ::Il2CppArray<::UnityEngine::Rendering::RenderBufferLoadAction>* colorLA, ::Il2CppArray<::UnityEngine::Rendering::RenderBufferStoreAction>* colorSA, ::UnityEngine::Rendering::RenderBufferLoadAction depthLA, ::UnityEngine::Rendering::RenderBufferStoreAction depthSA)
+		{
+			return ((::System::Void(*)(::Il2CppArray<::UnityEngine::RenderBuffer>*, ::UnityEngine::RenderBuffer&, ::System::Int32, ::UnityEngine::CubemapFace, ::System::Int32, ::Il2CppArray<::UnityEngine::Rendering::RenderBufferLoadAction>*, ::Il2CppArray<::UnityEngine::Rendering::RenderBufferStoreAction>*, ::UnityEngine::Rendering::RenderBufferLoadAction, ::UnityEngine::Rendering::RenderBufferStoreAction))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_SETMRTFULLSETUP_INJECTED_OFFSET))(color, depth, mip, face, depthSlice, colorLA, colorSA, depthLA, depthSA);
+		}
+
+		static ::System::Void Internal_DrawMeshNow1_Injected(::UnityEngine::Mesh* mesh, ::System::Int32 subsetIndex, ::UnityEngine::Vector3& position, ::UnityEngine::Quaternion& rotation)
+		{
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Vector3&, ::UnityEngine::Quaternion&))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHNOW1_INJECTED_OFFSET))(mesh, subsetIndex, position, rotation);
+		}
+
 		static ::System::Void Internal_DrawMeshNow2_Injected(::UnityEngine::Mesh* mesh, ::System::Int32 subsetIndex, ::UnityEngine::Matrix4x4& matrix)
 		{
 			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Matrix4x4&))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHNOW2_INJECTED_OFFSET))(mesh, subsetIndex, matrix);
 		}
 
-		static ::System::Void Internal_DrawMesh_Injected(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Matrix4x4& matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows)
+		static ::System::Void Internal_DrawMesh_Injected(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Matrix4x4& matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::UnityEngine::Camera* camera, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::UnityEngine::Transform* probeAnchor, ::UnityEngine::Rendering::LightProbeUsage lightProbeUsage, ::UnityEngine::LightProbeProxyVolume* lightProbeProxyVolume)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Matrix4x4&, ::UnityEngine::Material*, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESH_INJECTED_OFFSET))(mesh, submeshIndex, matrix, material, layer, renderingLayerMask, camera, properties, castShadows, receiveShadows);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Matrix4x4&, ::UnityEngine::Material*, ::System::Int32, ::UnityEngine::Camera*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::UnityEngine::Transform*, ::UnityEngine::Rendering::LightProbeUsage, ::UnityEngine::LightProbeProxyVolume*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESH_INJECTED_OFFSET))(mesh, submeshIndex, matrix, material, layer, camera, properties, castShadows, receiveShadows, probeAnchor, lightProbeUsage, lightProbeProxyVolume);
 		}
 
-		static ::System::Void Internal_DrawMeshInstanced_Injected(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds& bounds, ::Il2CppArray<::UnityEngine::Matrix4x4>* matrices, ::System::Int32 count, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera)
+		static ::System::Void Internal_DrawMeshInstancedIndirect_Injected(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds& bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::UnityEngine::Camera* camera, ::UnityEngine::Rendering::LightProbeUsage lightProbeUsage, ::UnityEngine::LightProbeProxyVolume* lightProbeProxyVolume)
 		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds&, ::Il2CppArray<::UnityEngine::Matrix4x4>*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCED_INJECTED_OFFSET))(mesh, submeshIndex, material, bounds, matrices, count, properties, castShadows, receiveShadows, layer, renderingLayerMask, camera);
-		}
-
-		static ::System::Void Internal_DrawMeshInstancedProcedural_Injected(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds& bounds, ::System::Int32 count, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::UnityEngine::Camera* camera)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds&, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDPROCEDURAL_INJECTED_OFFSET))(mesh, submeshIndex, material, bounds, count, properties, castShadows, receiveShadows, layer, camera);
-		}
-
-		static ::System::Void Internal_DrawMeshInstancedIndirect_Injected(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Material* material, ::UnityEngine::Bounds& bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds&, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT_INJECTED_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, renderingLayerMask, camera);
-		}
-
-		static ::System::Void Internal_DrawMeshInstancedIndirect1_Injected(::UnityEngine::Mesh* mesh, ::System::Int32 submeshIndex, ::UnityEngine::Matrix4x4& matrix, ::UnityEngine::Material* material, ::UnityEngine::Bounds& bounds, ::UnityEngine::ComputeBuffer* bufferWithArgs, ::System::Int32 argsOffset, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer, ::System::UInt32 renderingLayerMask, ::UnityEngine::Camera* camera)
-		{
-			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Matrix4x4&, ::UnityEngine::Material*, ::UnityEngine::Bounds&, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::System::UInt32, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT1_INJECTED_OFFSET))(mesh, submeshIndex, matrix, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, renderingLayerMask, camera);
-		}
-
-		static ::System::Void Internal_DrawProcedural_Injected(::UnityEngine::Material* material, ::UnityEngine::Bounds& bounds, ::UnityEngine::MeshTopology topology, ::System::Int32 vertexCount, ::System::Int32 instanceCount, ::UnityEngine::Camera* camera, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::System::Int32 layer)
-		{
-			return ((::System::Void(*)(::UnityEngine::Material*, ::UnityEngine::Bounds&, ::UnityEngine::MeshTopology, ::System::Int32, ::System::Int32, ::UnityEngine::Camera*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWPROCEDURAL_INJECTED_OFFSET))(material, bounds, topology, vertexCount, instanceCount, camera, properties, castShadows, receiveShadows, layer);
-		}
-
-		static ::System::Void Blit4_Injected(::UnityEngine::Texture* source, ::UnityEngine::RenderTexture* dest, ::UnityEngine::Vector2& scale, ::UnityEngine::Vector2& offset)
-		{
-			return ((::System::Void(*)(::UnityEngine::Texture*, ::UnityEngine::RenderTexture*, ::UnityEngine::Vector2&, ::UnityEngine::Vector2&))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_BLIT4_INJECTED_OFFSET))(source, dest, scale, offset);
+			return ((::System::Void(*)(::UnityEngine::Mesh*, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Bounds&, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::System::Int32, ::UnityEngine::Camera*, ::UnityEngine::Rendering::LightProbeUsage, ::UnityEngine::LightProbeProxyVolume*))((::PBYTE)hIl2Cpp + UNITYENGINE_GRAPHICS_INTERNAL_DRAWMESHINSTANCEDINDIRECT_INJECTED_OFFSET))(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, camera, lightProbeUsage, lightProbeProxyVolume);
 		}
 	};
 }

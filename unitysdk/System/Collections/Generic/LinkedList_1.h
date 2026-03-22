@@ -5,6 +5,7 @@
 #include "unitysdk/System/Runtime/Serialization/StreamingContext.h"
 
 namespace System { class Array; }
+namespace System { class String; }
 namespace System::Collections { class IEnumerator; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
@@ -13,7 +14,7 @@ namespace System::Runtime::Serialization { class SerializationInfo; }
 
 namespace System::Collections::Generic
 {
-	inline static constexpr unsigned int LinkedList_1_TypeDefinitionIndex = 2992;
+	inline static constexpr unsigned int LinkedList_1_TypeDefinitionIndex = 3953;
 
 	template <typename T>
 	class LinkedList_1 : public ::System::Object
@@ -24,5 +25,8 @@ namespace System::Collections::Generic
 		::System::Int32 version; // 0x0
 		::System::Object* _syncRoot; // 0x0
 		::System::Runtime::Serialization::SerializationInfo* _siInfo; // 0x0
+		// static const ::System::String* VersionName; // 0x0
+		// static const ::System::String* CountName; // 0x0
+		// static const ::System::String* ValuesName; // 0x0
 	};
 }

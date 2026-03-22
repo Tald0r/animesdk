@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int AkMIDICcTypes_TypeDefinitionIndex = 33496;
+inline static constexpr unsigned int AkMIDICcTypes_TypeDefinitionIndex = 29943;
 
 enum class AkMIDICcTypes : ::System::Int32
 {

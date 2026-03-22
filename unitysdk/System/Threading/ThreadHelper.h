@@ -6,27 +6,26 @@ namespace System { class Delegate; }
 namespace System::Threading { class ContextCallback; }
 namespace System::Threading { class ExecutionContext; }
 
-#define SYSTEM_THREADING_THREADHELPER_SETEXECUTIONCONTEXTHELPER_OFFSET UNITYSDK_OFFSET(0x15B98730)
-#define SYSTEM_THREADING_THREADHELPER_THREADSTART_1_OFFSET UNITYSDK_OFFSET(0x15B98C90)
-#define SYSTEM_THREADING_THREADHELPER_THREADSTART_CONTEXT_OFFSET UNITYSDK_OFFSET(0x15B98740)
-#define SYSTEM_THREADING_THREADHELPER_THREADSTART_OFFSET UNITYSDK_OFFSET(0x15B98BC0)
-#define SYSTEM_THREADING_THREADHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15B986F0)
-#define SYSTEM_THREADING_THREADHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x15B976B0)
+#define SYSTEM_THREADING_THREADHELPER_THREADSTART_1_OFFSET UNITYSDK_OFFSET(0x17F83110)
+#define SYSTEM_THREADING_THREADHELPER_THREADSTART_CONTEXT_OFFSET UNITYSDK_OFFSET(0x17F82FF0)
+#define SYSTEM_THREADING_THREADHELPER_THREADSTART_OFFSET UNITYSDK_OFFSET(0x17F83070)
+#define SYSTEM_THREADING_THREADHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x17F82FA0)
+#define SYSTEM_THREADING_THREADHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x17F82FE0)
 
 namespace System::Threading
 {
-	inline static constexpr unsigned int ThreadHelper_TypeDefinitionIndex = 843;
+	inline static constexpr unsigned int ThreadHelper_TypeDefinitionIndex = 835;
 
 	class ThreadHelper : public ::System::Object
 	{
 	public:
 		static ::System::Threading::ContextCallback** StaticGet__ccb()
 		{
-			return (::System::Threading::ContextCallback**)Il2CppClass::FromTypeDefinitionIndex(ThreadHelper_TypeDefinitionIndex)->GetStaticField(0x131A0);
+			return (::System::Threading::ContextCallback**)Il2CppClass::FromTypeDefinitionIndex(ThreadHelper_TypeDefinitionIndex)->GetStaticField(0x1140);
 		}
-		::System::Object* _startArg; // 0x10
-		::System::Delegate* _start; // 0x18
-		::System::Threading::ExecutionContext* _executionContext; // 0x20
+		::System::Delegate* _start; // 0x10
+		::System::Threading::ExecutionContext* _executionContext; // 0x18
+		::System::Object* _startArg; // 0x20
 
 		static ::System::Void _cctor()
 		{
@@ -36,11 +35,6 @@ namespace System::Threading
 		::System::Void _ctor(::System::Delegate* start)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Delegate*))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_THREADHELPER__CTOR_OFFSET))(this, start);
-		}
-
-		::System::Void SetExecutionContextHelper(::System::Threading::ExecutionContext* ec)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Threading::ExecutionContext*))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_THREADHELPER_SETEXECUTIONCONTEXTHELPER_OFFSET))(this, ec);
 		}
 
 		static ::System::Void ThreadStart_Context(::System::Object* state)

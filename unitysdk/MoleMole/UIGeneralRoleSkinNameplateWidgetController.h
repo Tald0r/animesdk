@@ -1,0 +1,86 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_8499A426CE7C54B9;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAA08840)
+#define MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA088E0)
+#define MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAA08610)
+#define MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAA086B0)
+#define MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_SETNAME_OFFSET UNITYSDK_OFFSET(0xAA089C0)
+#define MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_SETSUBNAME_OFFSET UNITYSDK_OFFSET(0xAA08A50)
+#define MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAA08AE0)
+#define MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAA08B10)
+#define MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA08B80)
+#define MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAA08C00)
+#define MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAA08C60)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralRoleSkinNameplateWidgetController_TypeDefinitionIndex = 58062;
+
+	class UIGeneralRoleSkinNameplateWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_8499A426CE7C54B9* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetName(::System::String* name)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_SETNAME_OFFSET))(this, name);
+		}
+
+		::System::Void SetSubName(::System::String* subName)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER_SETSUBNAME_OFFSET))(this, subName);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLESKINNAMEPLATEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

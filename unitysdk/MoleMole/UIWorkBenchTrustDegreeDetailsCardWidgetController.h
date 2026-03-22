@@ -1,0 +1,187 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/MoleMole/UIWorkBenchTrustDegreeDetailsCardWidgetController_InfoWidgetState.h"
+#include "unitysdk/MoleMole/UIWorkBenchTrustDegreeDetailsCardWidgetController_State.h"
+#include "unitysdk/MoleMole/UIWorkBenchTrustDegreeDetailsCardWidgetController___c__DisplayClass17_0.h"
+
+class Class_2_60638234271CCDB8_141;
+class Class_2_6D99A03C58ED2B6E_2;
+class Class_2_CEF0D076577A9E4E;
+class Class_3_AE02BC8285203464_19;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UITrustDegreeDetailTabRowWidgetController; }
+namespace MoleMole { class UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController; }
+namespace MoleMole { class UIWorkBenchTrustDegreeDetailsCardButtonWidgetController; }
+namespace MoleMole { class UIWorkBenchTrustDegreeDetailsCardDetailInfoWidgetController; }
+namespace MoleMole { class UIWorkBenchTrustDegreeDetailsCardEmptyWidgetController; }
+namespace MoleMole { class UIWorkBenchTrustDegreeDetailsCardMemorylInfoWidgetController; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_AFTERTEMPLATECHANGE_OFFSET UNITYSDK_OFFSET(0xC409980)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_BINDEVENT_BUTTON_OFFSET UNITYSDK_OFFSET(0xC4087E0)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_CREATEWIDGET_OFFSET UNITYSDK_OFFSET(0xC4089F0)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_GET_TEMPLATE_OFFSET UNITYSDK_OFFSET(0xC40A420)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONCLICKBASEINFOBUTTON_OFFSET UNITYSDK_OFFSET(0xC408B80)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONCLICKDETAILBUTTON_OFFSET UNITYSDK_OFFSET(0xC409770)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONCLICKMEMORYBUTTON_OFFSET UNITYSDK_OFFSET(0xC409560)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC408E00)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONFOCUS_OFFSET UNITYSDK_OFFSET(0xC408F80)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC408EA0)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC408710)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_PLAYANIM_OFFSET UNITYSDK_OFFSET(0xC40A2F0)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_REFRESHCHILDWIDGETFOCUSSTATE_OFFSET UNITYSDK_OFFSET(0xC408FF0)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xC409A50)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_SET_TEMPLATE_OFFSET UNITYSDK_OFFSET(0xC40A430)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC40A640)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER__PLAYANIM_B__12_0_OFFSET UNITYSDK_OFFSET(0xC40A680)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER__PLAYANIM_B__12_1_OFFSET UNITYSDK_OFFSET(0xC40A690)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER__PLAYANIM_B__12_2_OFFSET UNITYSDK_OFFSET(0xC40A710)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER__SET_TEMPLATE_G__GETSERVERPARTNERDATA_17_0_OFFSET UNITYSDK_OFFSET(0xC40A560)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC40A720)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC40A790)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC40A810)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIWorkBenchTrustDegreeDetailsCardWidgetController_TypeDefinitionIndex = 74028;
+
+	class UIWorkBenchTrustDegreeDetailsCardWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* FADE_IN_ANIM_NAME; // 0x0
+		// static const ::System::String* FADE_OUT_ANIM_NAME; // 0x0
+		// static const ::System::String* EMPTY_FADE_IN_ANIM_NAME; // 0x0
+		// static const ::System::String* EMPTY_FADE_OUT_ANIM_NAME; // 0x0
+		::Class_2_60638234271CCDB8_141* _view; // 0x2A0
+		::Class_2_CEF0D076577A9E4E* _template; // 0x2A8
+		::Class_2_6D99A03C58ED2B6E_2* _partnerCampTemplate; // 0x2B0
+		::MoleMole::UIWorkBenchTrustDegreeDetailsCardEmptyWidgetController* _emptyWidget; // 0x2B8
+		::System::Boolean firstTime; // 0x2C0
+		::MoleMole::UIWorkBenchTrustDegreeDetailsCardWidgetController_State _currentState; // 0x2C4
+		::MoleMole::UITrustDegreeDetailTabRowWidgetController* _baseBtnWidget; // 0x2C8
+		::MoleMole::UITrustDegreeDetailTabRowWidgetController* _detailBtnWidget; // 0x2D0
+		::MoleMole::UITrustDegreeDetailTabRowWidgetController* _memoryBtnWidget; // 0x2D8
+		::MoleMole::UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController* _baseInfoWidget; // 0x2E0
+		::MoleMole::UIWorkBenchTrustDegreeDetailsCardDetailInfoWidgetController* _detailInfoWidget; // 0x2E8
+		::MoleMole::UIWorkBenchTrustDegreeDetailsCardMemorylInfoWidgetController* _memoryInfoWidget; // 0x2F0
+		::MoleMole::UIWorkBenchTrustDegreeDetailsCardButtonWidgetController* _bottomButtonWidget; // 0x2F8
+		::System::Boolean _totalFocus; // 0x300
+		::MoleMole::UIWorkBenchTrustDegreeDetailsCardWidgetController_InfoWidgetState _infoWidgetState; // 0x304
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnFocus(::System::Boolean focus)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONFOCUS_OFFSET))(this, focus);
+		}
+
+		::System::Void RefreshChildWidgetFocusState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_REFRESHCHILDWIDGETFOCUSSTATE_OFFSET))(this);
+		}
+
+		::System::Void BindEvent_Button()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_BINDEVENT_BUTTON_OFFSET))(this);
+		}
+
+		::System::Void CreateWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_CREATEWIDGET_OFFSET))(this);
+		}
+
+		::System::Void OnClickMemoryButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONCLICKMEMORYBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnClickBaseInfoButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONCLICKBASEINFOBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnClickDetailButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_ONCLICKDETAILBUTTON_OFFSET))(this);
+		}
+
+		::System::Void AfterTemplateChange(::Class_2_CEF0D076577A9E4E* oldValue)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_CEF0D076577A9E4E*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_AFTERTEMPLATECHANGE_OFFSET))(this, oldValue);
+		}
+
+		::System::Void PlayAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_PLAYANIM_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::Class_2_CEF0D076577A9E4E* get_template()
+		{
+			return ((::Class_2_CEF0D076577A9E4E*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_GET_TEMPLATE_OFFSET))(this);
+		}
+
+		::System::Void set_template(::Class_2_CEF0D076577A9E4E* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_CEF0D076577A9E4E*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER_SET_TEMPLATE_OFFSET))(this, value);
+		}
+
+		::System::Void _PlayAnim_b__12_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER__PLAYANIM_B__12_0_OFFSET))(this);
+		}
+
+		::System::Void _PlayAnim_b__12_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER__PLAYANIM_B__12_1_OFFSET))(this);
+		}
+
+		::System::Void _PlayAnim_b__12_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER__PLAYANIM_B__12_2_OFFSET))(this);
+		}
+
+		static ::Class_3_AE02BC8285203464_19* _set_template_g__GetServerPartnerData_17_0(::MoleMole::UIWorkBenchTrustDegreeDetailsCardWidgetController___c__DisplayClass17_0& a1)
+		{
+			return ((::Class_3_AE02BC8285203464_19*(*)(::MoleMole::UIWorkBenchTrustDegreeDetailsCardWidgetController___c__DisplayClass17_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER__SET_TEMPLATE_G__GETSERVERPARTNERDATA_17_0_OFFSET))(a1);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,59 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UILiveHouseInGameNoteWidgetControllerBase.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_3_3A5D0821EF70FACC;
+namespace MoleMole { class UIControlReference; }
+
+#define MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0x7D47110)
+#define MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x7D47180)
+#define MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D47330)
+#define MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER_SETHEALICONVISIBLE_OFFSET UNITYSDK_OFFSET(0x7D47240)
+#define MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7D473F0)
+#define MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x7D47430)
+#define MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D474A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UILiveHouseInGameSingleNote1WidgetController_TypeDefinitionIndex = 46028;
+
+	class UILiveHouseInGameSingleNote1WidgetController : public ::MoleMole::UILiveHouseInGameNoteWidgetControllerBase
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_3_3A5D0821EF70FACC* get__viewModel()
+		{
+			return ((::Class_3_3A5D0821EF70FACC*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::MoleMole::UILiveHouseInGameSingleNote1WidgetController* SetHealIconVisible(::System::Boolean visible)
+		{
+			return ((::MoleMole::UILiveHouseInGameSingleNote1WidgetController*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER_SETHEALICONVISIBLE_OFFSET))(this, visible);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILIVEHOUSEINGAMESINGLENOTE1WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+	};
+}

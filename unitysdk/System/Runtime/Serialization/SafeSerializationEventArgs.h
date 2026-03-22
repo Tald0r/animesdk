@@ -4,30 +4,29 @@
 #include "unitysdk/System/Runtime/Serialization/StreamingContext.h"
 
 namespace System { class Object; }
-namespace System::Collections::Generic { template <typename T> class IList_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONEVENTARGS_GET_SERIALIZEDSTATES_OFFSET UNITYSDK_OFFSET(0x15D3E9F0)
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x15D3E990)
+#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONEVENTARGS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18B22630)
+#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x18B225B0)
 
 namespace System::Runtime::Serialization
 {
-	inline static constexpr unsigned int SafeSerializationEventArgs_TypeDefinitionIndex = 1102;
+	inline static constexpr unsigned int SafeSerializationEventArgs_TypeDefinitionIndex = 1157;
 
 	class SafeSerializationEventArgs : public ::System::EventArgs
 	{
 	public:
-		::System::Collections::Generic::List_1<::System::Object*>* m_serializedStates; // 0x10
-		::System::Runtime::Serialization::StreamingContext m_streamingContext; // 0x18
+		::System::Runtime::Serialization::StreamingContext m_streamingContext; // 0x10
+		::System::Collections::Generic::List_1<::System::Object*>* m_serializedStates; // 0x20
 
 		::System::Void _ctor(::System::Runtime::Serialization::StreamingContext streamingContext)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONEVENTARGS__CTOR_OFFSET))(this, streamingContext);
 		}
 
-		::System::Collections::Generic::IList_1<::System::Object*>* get_SerializedStates()
+		::System::Void _ctor_1()
 		{
-			return ((::System::Collections::Generic::IList_1<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONEVENTARGS_GET_SERIALIZEDSTATES_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONEVENTARGS__CTOR_1_OFFSET))(this);
 		}
 	};
 }

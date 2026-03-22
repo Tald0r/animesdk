@@ -1,0 +1,133 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/MonoUIWeaponVideoScreenPlayer_Enum_3_60BA6CD66500147A.h"
+#include "unitysdk/UnityEngine/MonoBehaviour.h"
+#include "unitysdk/UnityEngine/UI/AspectRatioFitter_AspectMode.h"
+
+class Class_1_7ECB9691B142D586;
+class Class_2_CA67A9CEB871FFD3;
+namespace System { class Action; }
+namespace System { class String; }
+
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_CLEARVIDEOSTARTPLAYCB_OFFSET UNITYSDK_OFFSET(0x7F1F080)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_DESTROY_OFFSET UNITYSDK_OFFSET(0x7F1DFF0)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_INIT_OFFSET UNITYSDK_OFFSET(0x7F1DEC0)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_METHOD_5_5EA79CD11E1E5CB8_OFFSET UNITYSDK_OFFSET(0x7F1F160)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_METHOD_5_7EAA8879197594BA_OFFSET UNITYSDK_OFFSET(0x7F1E2D0)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_METHOD_5_943BEE88B8C58D7F_OFFSET UNITYSDK_OFFSET(0x7F1F2C0)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_METHOD_5_C8E2469222842786_OFFSET UNITYSDK_OFFSET(0x7F1E680)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_METHOD_5_EBAC71FBE1837205_OFFSET UNITYSDK_OFFSET(0x7F1F140)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x7F1E8A0)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_ONENABLE_OFFSET UNITYSDK_OFFSET(0x7F1E240)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_PLAYFRAMETEXTUREONSCREEN_OFFSET UNITYSDK_OFFSET(0x7F1E9A0)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_PLAYVIDEOONSCREEN_OFFSET UNITYSDK_OFFSET(0x7F1E910)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_PLAYWEAPONFRAMETEXTUREORVIDEO_OFFSET UNITYSDK_OFFSET(0x7F1EA30)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_SETASPECTMODE_OFFSET UNITYSDK_OFFSET(0x7F1E1D0)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_SETVIDEOSTARTPLAYCB_OFFSET UNITYSDK_OFFSET(0x7F1F010)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_STOP_OFFSET UNITYSDK_OFFSET(0x7F1E0C0)
+#define MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER__CTOR_OFFSET UNITYSDK_OFFSET(0x7F1F0F0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int MonoUIWeaponVideoScreenPlayer_TypeDefinitionIndex = 74996;
+
+	class MonoUIWeaponVideoScreenPlayer : public ::UnityEngine::MonoBehaviour
+	{
+	public:
+		::Class_2_CA67A9CEB871FFD3* Field_5_0; // 0x18
+		::Class_2_CA67A9CEB871FFD3* Field_5_1; // 0x20
+		::System::String* Field_5_2; // 0x28
+		::System::String* Field_5_3; // 0x30
+		::MoleMole::MonoUIWeaponVideoScreenPlayer_Enum_3_60BA6CD66500147A Field_5_4; // 0x38
+		::System::String* Field_5_5; // 0x40
+		::System::String* Field_5_6; // 0x48
+		::System::String* Field_5_7; // 0x50
+		::Class_1_7ECB9691B142D586* Field_5_8; // 0x58
+		::System::Action* Field_5_9; // 0x60
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Init(::Class_2_CA67A9CEB871FFD3* a1, ::Class_2_CA67A9CEB871FFD3* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_CA67A9CEB871FFD3*, ::Class_2_CA67A9CEB871FFD3*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_INIT_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Destroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_DESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetAspectMode(::UnityEngine::UI::AspectRatioFitter_AspectMode a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::AspectRatioFitter_AspectMode))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_SETASPECTMODE_OFFSET))(this, a1);
+		}
+
+		::System::Void OnEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_ONENABLE_OFFSET))(this);
+		}
+
+		::System::Void OnDisable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_ONDISABLE_OFFSET))(this);
+		}
+
+		::System::Void PlayVideoOnScreen(::System::String* a1, ::System::String* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_PLAYVIDEOONSCREEN_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void PlayFrameTextureOnScreen(::System::String* a1, ::System::String* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_PLAYFRAMETEXTUREONSCREEN_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void PlayWeaponFrameTextureOrVideo(::System::Boolean a1, ::System::Boolean a2, ::System::Int32 a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_PLAYWEAPONFRAMETEXTUREORVIDEO_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Void Stop(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_STOP_OFFSET))(this, a1);
+		}
+
+		::System::Void SetVideoStartPlayCb(::System::Action* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_SETVIDEOSTARTPLAYCB_OFFSET))(this, a1);
+		}
+
+		::System::Void ClearVideoStartPlayCb()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_CLEARVIDEOSTARTPLAYCB_OFFSET))(this);
+		}
+
+		::System::Void Method_5_EBAC71FBE1837205()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_METHOD_5_EBAC71FBE1837205_OFFSET))(this);
+		}
+
+		::System::Void Method_5_5EA79CD11E1E5CB8(::Class_1_7ECB9691B142D586* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7ECB9691B142D586*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_METHOD_5_5EA79CD11E1E5CB8_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_5_7EAA8879197594BA()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_METHOD_5_7EAA8879197594BA_OFFSET))(this);
+		}
+
+		::System::Void Method_5_C8E2469222842786()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_METHOD_5_C8E2469222842786_OFFSET))(this);
+		}
+
+		::System::Void Method_5_943BEE88B8C58D7F(::Class_1_7ECB9691B142D586* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7ECB9691B142D586*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIWEAPONVIDEOSCREENPLAYER_METHOD_5_943BEE88B8C58D7F_OFFSET))(this, a1);
+		}
+	};
+}

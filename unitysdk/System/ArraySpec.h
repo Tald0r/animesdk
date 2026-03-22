@@ -6,20 +6,20 @@ namespace System { class String; }
 namespace System { class Type; }
 namespace System::Text { class StringBuilder; }
 
-#define SYSTEM_ARRAYSPEC_APPEND_OFFSET UNITYSDK_OFFSET(0x15B00A70)
-#define SYSTEM_ARRAYSPEC_RESOLVE_OFFSET UNITYSDK_OFFSET(0x15B009F0)
-#define SYSTEM_ARRAYSPEC_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15B00B00)
-#define SYSTEM_ARRAYSPEC__CTOR_OFFSET UNITYSDK_OFFSET(0x15B009E0)
+#define SYSTEM_ARRAYSPEC_APPEND_OFFSET UNITYSDK_OFFSET(0x1942F6E0)
+#define SYSTEM_ARRAYSPEC_RESOLVE_OFFSET UNITYSDK_OFFSET(0x1942F660)
+#define SYSTEM_ARRAYSPEC_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1942F770)
+#define SYSTEM_ARRAYSPEC__CTOR_OFFSET UNITYSDK_OFFSET(0x1942F650)
 
 namespace System
 {
-	inline static constexpr unsigned int ArraySpec_TypeDefinitionIndex = 443;
+	inline static constexpr unsigned int ArraySpec_TypeDefinitionIndex = 430;
 
 	class ArraySpec : public ::System::Object
 	{
 	public:
-		::System::Int32 dimensions; // 0x10
-		::System::Boolean bound; // 0x14
+		::System::Boolean bound; // 0x10
+		::System::Int32 dimensions; // 0x14
 
 		::System::Void _ctor(::System::Int32 dimensions, ::System::Boolean bound)
 		{

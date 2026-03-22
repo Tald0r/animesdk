@@ -1,6 +1,8 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Unity/Collections/NativeArray_1.h"
 #include "unitysdk/UnityEngine/Color.h"
+#include "unitysdk/UnityEngine/Color32.h"
 #include "unitysdk/UnityEngine/CubemapFace.h"
 #include "unitysdk/UnityEngine/Experimental/Rendering/DefaultFormat.h"
 #include "unitysdk/UnityEngine/Experimental/Rendering/GraphicsFormat.h"
@@ -8,24 +10,38 @@
 #include "unitysdk/UnityEngine/Texture.h"
 #include "unitysdk/UnityEngine/TextureFormat.h"
 
-#define UNITYENGINE_CUBEMAPARRAY_APPLYIMPL_OFFSET UNITYSDK_OFFSET(0x181E5270)
-#define UNITYENGINE_CUBEMAPARRAY_APPLY_1_OFFSET UNITYSDK_OFFSET(0x181E5650)
-#define UNITYENGINE_CUBEMAPARRAY_APPLY_OFFSET UNITYSDK_OFFSET(0x181E55D0)
-#define UNITYENGINE_CUBEMAPARRAY_GET_ISREADABLE_OFFSET UNITYSDK_OFFSET(0x181E51B0)
-#define UNITYENGINE_CUBEMAPARRAY_INTERNAL_CREATEIMPL_OFFSET UNITYSDK_OFFSET(0x181E51C0)
-#define UNITYENGINE_CUBEMAPARRAY_INTERNAL_CREATE_OFFSET UNITYSDK_OFFSET(0x181E51D0)
-#define UNITYENGINE_CUBEMAPARRAY_SETPIXELS_1_OFFSET UNITYSDK_OFFSET(0x181E5290)
-#define UNITYENGINE_CUBEMAPARRAY_SETPIXELS_OFFSET UNITYSDK_OFFSET(0x181E5280)
-#define UNITYENGINE_CUBEMAPARRAY__CTOR_1_OFFSET UNITYSDK_OFFSET(0x181E5320)
-#define UNITYENGINE_CUBEMAPARRAY__CTOR_2_OFFSET UNITYSDK_OFFSET(0x181E5380)
-#define UNITYENGINE_CUBEMAPARRAY__CTOR_3_OFFSET UNITYSDK_OFFSET(0x181E5450)
-#define UNITYENGINE_CUBEMAPARRAY__CTOR_4_OFFSET UNITYSDK_OFFSET(0x181E5550)
-#define UNITYENGINE_CUBEMAPARRAY__CTOR_5_OFFSET UNITYSDK_OFFSET(0x181E5590)
-#define UNITYENGINE_CUBEMAPARRAY__CTOR_OFFSET UNITYSDK_OFFSET(0x181E52B0)
+namespace System { class Array; }
+
+#define UNITYENGINE_CUBEMAPARRAY_APPLYIMPL_OFFSET UNITYSDK_OFFSET(0x19BB74E0)
+#define UNITYENGINE_CUBEMAPARRAY_APPLY_1_OFFSET UNITYSDK_OFFSET(0x19BB79B0)
+#define UNITYENGINE_CUBEMAPARRAY_APPLY_2_OFFSET UNITYSDK_OFFSET(0x19BB7A30)
+#define UNITYENGINE_CUBEMAPARRAY_APPLY_OFFSET UNITYSDK_OFFSET(0x19BB7930)
+#define UNITYENGINE_CUBEMAPARRAY_GETPIXELS32_1_OFFSET UNITYSDK_OFFSET(0x19BB7520)
+#define UNITYENGINE_CUBEMAPARRAY_GETPIXELS32_OFFSET UNITYSDK_OFFSET(0x19BB7510)
+#define UNITYENGINE_CUBEMAPARRAY_GETPIXELS_1_OFFSET UNITYSDK_OFFSET(0x19BB7500)
+#define UNITYENGINE_CUBEMAPARRAY_GETPIXELS_OFFSET UNITYSDK_OFFSET(0x19BB74F0)
+#define UNITYENGINE_CUBEMAPARRAY_GET_CUBEMAPCOUNT_OFFSET UNITYSDK_OFFSET(0x19BB7400)
+#define UNITYENGINE_CUBEMAPARRAY_GET_FORMAT_OFFSET UNITYSDK_OFFSET(0x19BB7410)
+#define UNITYENGINE_CUBEMAPARRAY_GET_ISREADABLE_OFFSET UNITYSDK_OFFSET(0x19BB7420)
+#define UNITYENGINE_CUBEMAPARRAY_INTERNAL_CREATEIMPL_OFFSET UNITYSDK_OFFSET(0x19BB7430)
+#define UNITYENGINE_CUBEMAPARRAY_INTERNAL_CREATE_OFFSET UNITYSDK_OFFSET(0x19BB7440)
+#define UNITYENGINE_CUBEMAPARRAY_SETPIXELDATAIMPLARRAY_OFFSET UNITYSDK_OFFSET(0x19BB7590)
+#define UNITYENGINE_CUBEMAPARRAY_SETPIXELDATAIMPL_OFFSET UNITYSDK_OFFSET(0x19BB75A0)
+#define UNITYENGINE_CUBEMAPARRAY_SETPIXELS32_1_OFFSET UNITYSDK_OFFSET(0x19BB7570)
+#define UNITYENGINE_CUBEMAPARRAY_SETPIXELS32_OFFSET UNITYSDK_OFFSET(0x19BB7560)
+#define UNITYENGINE_CUBEMAPARRAY_SETPIXELS_1_OFFSET UNITYSDK_OFFSET(0x19BB7540)
+#define UNITYENGINE_CUBEMAPARRAY_SETPIXELS_OFFSET UNITYSDK_OFFSET(0x19BB7530)
+#define UNITYENGINE_CUBEMAPARRAY_SETREADABLE_OFFSET UNITYSDK_OFFSET(0x19BB75B0)
+#define UNITYENGINE_CUBEMAPARRAY__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19BB7630)
+#define UNITYENGINE_CUBEMAPARRAY__CTOR_2_OFFSET UNITYSDK_OFFSET(0x19BB7690)
+#define UNITYENGINE_CUBEMAPARRAY__CTOR_3_OFFSET UNITYSDK_OFFSET(0x19BB7780)
+#define UNITYENGINE_CUBEMAPARRAY__CTOR_4_OFFSET UNITYSDK_OFFSET(0x19BB78B0)
+#define UNITYENGINE_CUBEMAPARRAY__CTOR_5_OFFSET UNITYSDK_OFFSET(0x19BB78F0)
+#define UNITYENGINE_CUBEMAPARRAY__CTOR_OFFSET UNITYSDK_OFFSET(0x19BB75C0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int CubemapArray_TypeDefinitionIndex = 3988;
+	inline static constexpr unsigned int CubemapArray_TypeDefinitionIndex = 5273;
 
 	class CubemapArray : public ::UnityEngine::Texture
 	{
@@ -60,6 +76,16 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::UnityEngine::TextureFormat, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY__CTOR_5_OFFSET))(this, width, cubemapCount, textureFormat, mipChain);
 		}
 
+		::System::Int32 get_cubemapCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_GET_CUBEMAPCOUNT_OFFSET))(this);
+		}
+
+		::UnityEngine::TextureFormat get_format()
+		{
+			return ((::UnityEngine::TextureFormat(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_GET_FORMAT_OFFSET))(this);
+		}
+
 		::System::Boolean get_isReadable()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_GET_ISREADABLE_OFFSET))(this);
@@ -80,6 +106,26 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_APPLYIMPL_OFFSET))(this, updateMipmaps, makeNoLongerReadable);
 		}
 
+		::Il2CppArray<::UnityEngine::Color>* GetPixels(::UnityEngine::CubemapFace face, ::System::Int32 arrayElement, ::System::Int32 miplevel)
+		{
+			return ((::Il2CppArray<::UnityEngine::Color>*(*)(::PVOID, ::UnityEngine::CubemapFace, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_GETPIXELS_OFFSET))(this, face, arrayElement, miplevel);
+		}
+
+		::Il2CppArray<::UnityEngine::Color>* GetPixels_1(::UnityEngine::CubemapFace face, ::System::Int32 arrayElement)
+		{
+			return ((::Il2CppArray<::UnityEngine::Color>*(*)(::PVOID, ::UnityEngine::CubemapFace, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_GETPIXELS_1_OFFSET))(this, face, arrayElement);
+		}
+
+		::Il2CppArray<::UnityEngine::Color32>* GetPixels32(::UnityEngine::CubemapFace face, ::System::Int32 arrayElement, ::System::Int32 miplevel)
+		{
+			return ((::Il2CppArray<::UnityEngine::Color32>*(*)(::PVOID, ::UnityEngine::CubemapFace, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_GETPIXELS32_OFFSET))(this, face, arrayElement, miplevel);
+		}
+
+		::Il2CppArray<::UnityEngine::Color32>* GetPixels32_1(::UnityEngine::CubemapFace face, ::System::Int32 arrayElement)
+		{
+			return ((::Il2CppArray<::UnityEngine::Color32>*(*)(::PVOID, ::UnityEngine::CubemapFace, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_GETPIXELS32_1_OFFSET))(this, face, arrayElement);
+		}
+
 		::System::Void SetPixels(::Il2CppArray<::UnityEngine::Color>* colors, ::UnityEngine::CubemapFace face, ::System::Int32 arrayElement, ::System::Int32 miplevel)
 		{
 			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::UnityEngine::Color>*, ::UnityEngine::CubemapFace, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_SETPIXELS_OFFSET))(this, colors, face, arrayElement, miplevel);
@@ -90,14 +136,44 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::UnityEngine::Color>*, ::UnityEngine::CubemapFace, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_SETPIXELS_1_OFFSET))(this, colors, face, arrayElement);
 		}
 
+		::System::Void SetPixels32(::Il2CppArray<::UnityEngine::Color32>* colors, ::UnityEngine::CubemapFace face, ::System::Int32 arrayElement, ::System::Int32 miplevel)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::UnityEngine::Color32>*, ::UnityEngine::CubemapFace, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_SETPIXELS32_OFFSET))(this, colors, face, arrayElement, miplevel);
+		}
+
+		::System::Void SetPixels32_1(::Il2CppArray<::UnityEngine::Color32>* colors, ::UnityEngine::CubemapFace face, ::System::Int32 arrayElement)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::UnityEngine::Color32>*, ::UnityEngine::CubemapFace, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_SETPIXELS32_1_OFFSET))(this, colors, face, arrayElement);
+		}
+
+		::System::Boolean SetPixelDataImplArray(::System::Array* data, ::System::Int32 mipLevel, ::System::Int32 face, ::System::Int32 element, ::System::Int32 elementSize, ::System::Int32 dataArraySize, ::System::Int32 sourceDataStartIndex)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Array*, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_SETPIXELDATAIMPLARRAY_OFFSET))(this, data, mipLevel, face, element, elementSize, dataArraySize, sourceDataStartIndex);
+		}
+
+		::System::Boolean SetPixelDataImpl(::System::IntPtr data, ::System::Int32 mipLevel, ::System::Int32 face, ::System::Int32 element, ::System::Int32 elementSize, ::System::Int32 dataArraySize, ::System::Int32 sourceDataStartIndex)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::IntPtr, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_SETPIXELDATAIMPL_OFFSET))(this, data, mipLevel, face, element, elementSize, dataArraySize, sourceDataStartIndex);
+		}
+
+		::System::Void SetReadable(::System::Boolean isReadable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_SETREADABLE_OFFSET))(this, isReadable);
+		}
+
 		::System::Void Apply(::System::Boolean updateMipmaps, ::System::Boolean makeNoLongerReadable)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_APPLY_OFFSET))(this, updateMipmaps, makeNoLongerReadable);
 		}
 
-		::System::Void Apply_1()
+		::System::Void Apply_1(::System::Boolean updateMipmaps)
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_APPLY_1_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_APPLY_1_OFFSET))(this, updateMipmaps);
+		}
+
+		::System::Void Apply_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CUBEMAPARRAY_APPLY_2_OFFSET))(this);
 		}
 	};
 }

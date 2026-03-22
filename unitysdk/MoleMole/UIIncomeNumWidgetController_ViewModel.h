@@ -1,0 +1,81 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_F57C3EEEB03201AF.h"
+#include "unitysdk/MoleMole/UIIncomeNumWidgetController_EAnimState.h"
+
+template <typename T> class Class_0_16E4307DCC419505_103;
+
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_GET_ANIMSTATE_OFFSET UNITYSDK_OFFSET(0x8A55E10)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_GET_EMPTY_OFFSET UNITYSDK_OFFSET(0x8A55DB0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_GET_NUM_OFFSET UNITYSDK_OFFSET(0x8A55DD0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_GET_PRENUM_OFFSET UNITYSDK_OFFSET(0x8A55DF0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0x8A55E30)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_SET_ANIMSTATE_OFFSET UNITYSDK_OFFSET(0x8A55E20)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_SET_EMPTY_OFFSET UNITYSDK_OFFSET(0x8A55DC0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_SET_NUM_OFFSET UNITYSDK_OFFSET(0x8A55DE0)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_SET_PRENUM_OFFSET UNITYSDK_OFFSET(0x8A55E00)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0x8A55F20)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIIncomeNumWidgetController_ViewModel_TypeDefinitionIndex = 70265;
+
+	class UIIncomeNumWidgetController_ViewModel : public ::Class_1_F57C3EEEB03201AF
+	{
+	public:
+		::Class_0_16E4307DCC419505_103<::System::Int32>* _Num_k__BackingField; // 0x60
+		::Class_0_16E4307DCC419505_103<::MoleMole::UIIncomeNumWidgetController_EAnimState>* _AnimState_k__BackingField; // 0x68
+		::Class_0_16E4307DCC419505_103<::System::Boolean>* _Empty_k__BackingField; // 0x70
+		::Class_0_16E4307DCC419505_103<::System::Int32>* _PreNum_k__BackingField; // 0x78
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL__CTOR_OFFSET))(this);
+		}
+
+		::Class_0_16E4307DCC419505_103<::System::Boolean>* get_Empty()
+		{
+			return ((::Class_0_16E4307DCC419505_103<::System::Boolean>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_GET_EMPTY_OFFSET))(this);
+		}
+
+		::System::Void set_Empty(::Class_0_16E4307DCC419505_103<::System::Boolean>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_103<::System::Boolean>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_SET_EMPTY_OFFSET))(this, value);
+		}
+
+		::Class_0_16E4307DCC419505_103<::System::Int32>* get_Num()
+		{
+			return ((::Class_0_16E4307DCC419505_103<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_GET_NUM_OFFSET))(this);
+		}
+
+		::System::Void set_Num(::Class_0_16E4307DCC419505_103<::System::Int32>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_103<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_SET_NUM_OFFSET))(this, value);
+		}
+
+		::Class_0_16E4307DCC419505_103<::System::Int32>* get_PreNum()
+		{
+			return ((::Class_0_16E4307DCC419505_103<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_GET_PRENUM_OFFSET))(this);
+		}
+
+		::System::Void set_PreNum(::Class_0_16E4307DCC419505_103<::System::Int32>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_103<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_SET_PRENUM_OFFSET))(this, value);
+		}
+
+		::Class_0_16E4307DCC419505_103<::MoleMole::UIIncomeNumWidgetController_EAnimState>* get_AnimState()
+		{
+			return ((::Class_0_16E4307DCC419505_103<::MoleMole::UIIncomeNumWidgetController_EAnimState>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_GET_ANIMSTATE_OFFSET))(this);
+		}
+
+		::System::Void set_AnimState(::Class_0_16E4307DCC419505_103<::MoleMole::UIIncomeNumWidgetController_EAnimState>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_103<::MoleMole::UIIncomeNumWidgetController_EAnimState>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_SET_ANIMSTATE_OFFSET))(this, value);
+		}
+
+		::System::Void OnCreateProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_VIEWMODEL_ONCREATEPROPERTY_OFFSET))(this);
+		}
+	};
+}

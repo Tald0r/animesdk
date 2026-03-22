@@ -2,35 +2,46 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/ZXing/OneD/OneDReader.h"
 
-#define ZXING_ONED_CODABARREADER_ARRAYCONTAINS_OFFSET UNITYSDK_OFFSET(0x185231F0)
-#define ZXING_ONED_CODABARREADER__CCTOR_OFFSET UNITYSDK_OFFSET(0x18523230)
+namespace System::Text { class StringBuilder; }
+
+#define ZXING_ONED_CODABARREADER_ARRAYCONTAINS_OFFSET UNITYSDK_OFFSET(0x17D2F0F0)
+#define ZXING_ONED_CODABARREADER__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D2F130)
+#define ZXING_ONED_CODABARREADER__CTOR_OFFSET UNITYSDK_OFFSET(0x17D2EFF0)
 
 namespace ZXing::OneD
 {
-	inline static constexpr unsigned int CodaBarReader_TypeDefinitionIndex = 5934;
+	inline static constexpr unsigned int CodaBarReader_TypeDefinitionIndex = 8589;
 
 	class CodaBarReader : public ::ZXing::OneD::OneDReader
 	{
 	public:
-		static ::Il2CppArray<::System::Int32>** StaticGet_CHARACTER_ENCODINGS()
-		{
-			return (::Il2CppArray<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CodaBarReader_TypeDefinitionIndex)->GetStaticField(0xAB00);
-		}
 		static ::Il2CppArray<::System::Char>** StaticGet_ALPHABET()
 		{
-			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(CodaBarReader_TypeDefinitionIndex)->GetStaticField(0xAB08);
+			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(CodaBarReader_TypeDefinitionIndex)->GetStaticField(0x79B0);
 		}
 		static ::Il2CppArray<::System::Char>** StaticGet_STARTEND_ENCODING()
 		{
-			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(CodaBarReader_TypeDefinitionIndex)->GetStaticField(0xAB10);
+			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(CodaBarReader_TypeDefinitionIndex)->GetStaticField(0x79B8);
+		}
+		static ::Il2CppArray<::System::Int32>** StaticGet_CHARACTER_ENCODINGS()
+		{
+			return (::Il2CppArray<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CodaBarReader_TypeDefinitionIndex)->GetStaticField(0x79C0);
 		}
 		static ::System::Int32* StaticGet_MAX_ACCEPTABLE()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(CodaBarReader_TypeDefinitionIndex)->GetStaticField(0x3C20);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(CodaBarReader_TypeDefinitionIndex)->GetStaticField(0x3BB0);
 		}
 		static ::System::Int32* StaticGet_PADDING()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(CodaBarReader_TypeDefinitionIndex)->GetStaticField(0x3C24);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(CodaBarReader_TypeDefinitionIndex)->GetStaticField(0x3BB4);
+		}
+		::Il2CppArray<::System::Int32>* counters; // 0x10
+		::System::Text::StringBuilder* decodeRowResult; // 0x18
+		::System::Int32 counterLength; // 0x20
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ZXING_ONED_CODABARREADER__CTOR_OFFSET))(this);
 		}
 
 		static ::System::Void _cctor()

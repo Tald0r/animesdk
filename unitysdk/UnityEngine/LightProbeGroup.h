@@ -3,12 +3,12 @@
 #include "unitysdk/UnityEngine/Behaviour.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define UNITYENGINE_LIGHTPROBEGROUP_GET_PROBEPOSITIONS_OFFSET UNITYSDK_OFFSET(0x181FD510)
-#define UNITYENGINE_LIGHTPROBEGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x181FD520)
+#define UNITYENGINE_LIGHTPROBEGROUP_GET_PROBEPOSITIONS_OFFSET UNITYSDK_OFFSET(0x19E45580)
+#define UNITYENGINE_LIGHTPROBEGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x19E45590)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int LightProbeGroup_TypeDefinitionIndex = 3975;
+	inline static constexpr unsigned int LightProbeGroup_TypeDefinitionIndex = 5255;
 
 	class LightProbeGroup : public ::UnityEngine::Behaviour
 	{

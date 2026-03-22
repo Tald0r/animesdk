@@ -1,0 +1,124 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_7F5519C7783D073C_Enum_3_EA54F5594D2D53A6.h"
+#include "unitysdk/Enum_3_01FCCDD0DAFD0465.h"
+#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/MoleMole/UIFashionStoreGameKeyOnTrailWidgetController_KeyState.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_EC707217DE7794EF_5;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIFashionStoreGameKeyOnTrailWidgetController_Context; }
+
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_GETSCORELEVELIMAGEPATH_OFFSET UNITYSDK_OFFSET(0x80771A0)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_GET_CURBEATTYPE_OFFSET UNITYSDK_OFFSET(0x8076E80)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_GET_INPUTKEY_OFFSET UNITYSDK_OFFSET(0x8076E70)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8076CF0)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8076D90)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8076A40)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8076AE0)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_REFRESHSTATE_OFFSET UNITYSDK_OFFSET(0x8076F90)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x8076C00)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_SETKEYSTATE_OFFSET UNITYSDK_OFFSET(0x8076F10)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_SETSHOWSTATE_OFFSET UNITYSDK_OFFSET(0x8076EA0)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8077270)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x80772A0)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8077310)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8077390)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x80773F0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFashionStoreGameKeyOnTrailWidgetController_TypeDefinitionIndex = 57277;
+
+	class UIFashionStoreGameKeyOnTrailWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_EC707217DE7794EF_5* _view; // 0x2A0
+		::System::Int32 m_inputKey; // 0x2A8
+		::MoleMole::UIFashionStoreGameKeyOnTrailWidgetController_Context* m_ctx; // 0x2B0
+		::MoleMole::UIFashionStoreGameKeyOnTrailWidgetController_KeyState m_keyState; // 0x2B8
+		::Enum_3_01FCCDD0DAFD0465 m_beatType; // 0x2BC
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Int32 get_InputKey()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_GET_INPUTKEY_OFFSET))(this);
+		}
+
+		::Class_1_7F5519C7783D073C_Enum_3_EA54F5594D2D53A6 get_CurBeatType()
+		{
+			return ((::Class_1_7F5519C7783D073C_Enum_3_EA54F5594D2D53A6(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_GET_CURBEATTYPE_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::MoleMole::UIFashionStoreGameKeyOnTrailWidgetController_Context* ctx)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIFashionStoreGameKeyOnTrailWidgetController_Context*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, ctx);
+		}
+
+		::System::Void SetShowState(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_SETSHOWSTATE_OFFSET))(this, state);
+		}
+
+		::System::Void SetKeyState(::MoleMole::UIFashionStoreGameKeyOnTrailWidgetController_KeyState state, ::Enum_3_01FCCDD0DAFD0465 actionType)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIFashionStoreGameKeyOnTrailWidgetController_KeyState, ::Enum_3_01FCCDD0DAFD0465))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_SETKEYSTATE_OFFSET))(this, state, actionType);
+		}
+
+		::System::Void RefreshState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_REFRESHSTATE_OFFSET))(this);
+		}
+
+		::Foundation::AssetPath GetScoreLevelImagePath(::Enum_3_01FCCDD0DAFD0465 actionType)
+		{
+			return ((::Foundation::AssetPath(*)(::PVOID, ::Enum_3_01FCCDD0DAFD0465))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_GETSCORELEVELIMAGEPATH_OFFSET))(this, actionType);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,112 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_79AE422BA06F6D26_165;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_ONCLICKPREVIEWAVATAR_OFFSET UNITYSDK_OFFSET(0xD85FA80)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD85EC00)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD85ECA0)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD85E930)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD85EB50)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_RESETIMGACTIVE_OFFSET UNITYSDK_OFFSET(0xD85ED80)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_SETPREVIEWBANGBOO_OFFSET UNITYSDK_OFFSET(0xD85F390)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_SETPREVIEWROLE_OFFSET UNITYSDK_OFFSET(0xD85EFA0)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_SETPREVIEWWEAPON_OFFSET UNITYSDK_OFFSET(0xD85F6B0)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_SETRECEIVEMASK_OFFSET UNITYSDK_OFFSET(0xD85EF10)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD85FB30)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD85FB60)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD85FBD0)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD85FC50)
+#define MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD85FCB0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityRoleRewardPreviewWidgetController_TypeDefinitionIndex = 52144;
+
+	class UIActivityRoleRewardPreviewWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_165* _view; // 0x2A0
+		::System::Int32 previewItemID; // 0x2A8
+		::System::Action_1<::System::Int32>* previewCallback; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void ResetImgActive()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_RESETIMGACTIVE_OFFSET))(this);
+		}
+
+		::System::Void SetReceiveMask(::System::Boolean active)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_SETRECEIVEMASK_OFFSET))(this, active);
+		}
+
+		::System::Void SetPreviewRole(::System::Int32 avatarID, ::System::Action_1<::System::Int32>* previewCallback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_SETPREVIEWROLE_OFFSET))(this, avatarID, previewCallback);
+		}
+
+		::System::Void SetPreviewBangboo(::System::Int32 bangbooID, ::System::Action_1<::System::Int32>* previewCallback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_SETPREVIEWBANGBOO_OFFSET))(this, bangbooID, previewCallback);
+		}
+
+		::System::Void SetPreviewWeapon(::System::Int32 weaponID, ::System::Action_1<::System::Int32>* previewCallback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_SETPREVIEWWEAPON_OFFSET))(this, weaponID, previewCallback);
+		}
+
+		::System::Void OnClickPreviewAvatar()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER_ONCLICKPREVIEWAVATAR_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYROLEREWARDPREVIEWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

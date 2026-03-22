@@ -7,12 +7,12 @@ namespace MiHoYo::SDK::Win { class CNPayPlatManager; }
 namespace MiHoYo::SDK::Win { class PayPlatInfoModel; }
 namespace System { class String; }
 
-#define MIHOYO_SDK_WIN_CNPAYPLATMANAGER___C__DISPLAYCLASS65_0__CTOR_OFFSET UNITYSDK_OFFSET(0x159BCDD0)
-#define MIHOYO_SDK_WIN_CNPAYPLATMANAGER___C__DISPLAYCLASS65_0__REQUESTCHECKOUTV2_B__0_OFFSET UNITYSDK_OFFSET(0x159BEAF0)
+#define MIHOYO_SDK_WIN_CNPAYPLATMANAGER___C__DISPLAYCLASS65_0__CTOR_OFFSET UNITYSDK_OFFSET(0x187975A0)
+#define MIHOYO_SDK_WIN_CNPAYPLATMANAGER___C__DISPLAYCLASS65_0__REQUESTCHECKOUTV2_B__0_OFFSET UNITYSDK_OFFSET(0x187975B0)
 
 namespace MiHoYo::SDK::Win
 {
-	inline static constexpr unsigned int CNPayPlatManager___c__DisplayClass65_0_TypeDefinitionIndex = 7764;
+	inline static constexpr unsigned int CNPayPlatManager___c__DisplayClass65_0_TypeDefinitionIndex = 18907;
 
 	class CNPayPlatManager___c__DisplayClass65_0 : public ::System::Object
 	{

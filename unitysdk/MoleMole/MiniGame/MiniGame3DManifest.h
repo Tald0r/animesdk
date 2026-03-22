@@ -1,0 +1,74 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/MiniGame/MiniGameManifest.h"
+#include "unitysdk/Struct_2_E614D3B245F96744.h"
+#include "unitysdk/Struct_2_E614D3B245F96744_1.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+namespace UnityEngine { class Camera; }
+
+#define MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST_CONVERTLOGICPOSTOGLOBALLAYOUTPOS_OFFSET UNITYSDK_OFFSET(0x7F155E0)
+#define MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST_CONVERTLOGICPOSTOLAYOUTPOS_1_OFFSET UNITYSDK_OFFSET(0x7F15430)
+#define MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST_CONVERTLOGICPOSTOLAYOUTPOS_2_OFFSET UNITYSDK_OFFSET(0x7F15500)
+#define MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST_CONVERTLOGICPOSTOLAYOUTPOS_OFFSET UNITYSDK_OFFSET(0x7F15350)
+#define MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST__CTOR_OFFSET UNITYSDK_OFFSET(0x7F156B0)
+#define MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST___BASE_CONVERTLOGICPOSTOGLOBALLAYOUTPOS_OFFSET UNITYSDK_OFFSET(0x7F156D0)
+#define MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST___BASE_CONVERTLOGICPOSTOLAYOUTPOS_1_OFFSET UNITYSDK_OFFSET(0x7F15740)
+#define MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST___BASE_CONVERTLOGICPOSTOLAYOUTPOS_2_OFFSET UNITYSDK_OFFSET(0x7F15770)
+#define MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST___BASE_CONVERTLOGICPOSTOLAYOUTPOS_OFFSET UNITYSDK_OFFSET(0x7F15700)
+
+namespace MoleMole::MiniGame
+{
+	inline static constexpr unsigned int MiniGame3DManifest_TypeDefinitionIndex = 64448;
+
+	class MiniGame3DManifest : public ::MoleMole::MiniGame::MiniGameManifest
+	{
+	public:
+		::UnityEngine::Camera* uiCamera; // 0x50
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST__CTOR_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 ConvertLogicPosToLayoutPos(::Struct_2_E614D3B245F96744 a1)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::Struct_2_E614D3B245F96744))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST_CONVERTLOGICPOSTOLAYOUTPOS_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Vector3 ConvertLogicPosToLayoutPos_1(::Struct_2_E614D3B245F96744_1 a1)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::Struct_2_E614D3B245F96744_1))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST_CONVERTLOGICPOSTOLAYOUTPOS_1_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Vector3 ConvertLogicPosToLayoutPos_2(::UnityEngine::Vector3 a1)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST_CONVERTLOGICPOSTOLAYOUTPOS_2_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Vector3 ConvertLogicPosToGlobalLayoutPos(::Struct_2_E614D3B245F96744_1 a1)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::Struct_2_E614D3B245F96744_1))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST_CONVERTLOGICPOSTOGLOBALLAYOUTPOS_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Vector3 __base_ConvertLogicPosToGlobalLayoutPos(::Struct_2_E614D3B245F96744_1 a1)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::Struct_2_E614D3B245F96744_1))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST___BASE_CONVERTLOGICPOSTOGLOBALLAYOUTPOS_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Vector3 __base_ConvertLogicPosToLayoutPos(::Struct_2_E614D3B245F96744 a1)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::Struct_2_E614D3B245F96744))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST___BASE_CONVERTLOGICPOSTOLAYOUTPOS_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Vector3 __base_ConvertLogicPosToLayoutPos_1(::Struct_2_E614D3B245F96744_1 a1)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::Struct_2_E614D3B245F96744_1))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST___BASE_CONVERTLOGICPOSTOLAYOUTPOS_1_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Vector3 __base_ConvertLogicPosToLayoutPos_2(::UnityEngine::Vector3 a1)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_MINIGAME3DMANIFEST___BASE_CONVERTLOGICPOSTOLAYOUTPOS_2_OFFSET))(this, a1);
+		}
+	};
+}

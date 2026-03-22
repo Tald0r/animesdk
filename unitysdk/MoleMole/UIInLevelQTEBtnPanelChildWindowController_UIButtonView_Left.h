@@ -1,0 +1,55 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_60DDD9C206686F44;
+namespace MoleMole { class UIInLevelQTEBtnPanelChildWindowController; }
+namespace UnityEngine { class RectTransform; }
+
+#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT_GET_BTN_OFFSET UNITYSDK_OFFSET(0x7A8EB30)
+#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT_GET_BUTTONAREA_OFFSET UNITYSDK_OFFSET(0x7A8EDD0)
+#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT_GET_BUTTONROOT_OFFSET UNITYSDK_OFFSET(0x7A8EB60)
+#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT_GET_MAXDRAGAREA_OFFSET UNITYSDK_OFFSET(0x7A8EC30)
+#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT_GET_MINDRAGAREA_OFFSET UNITYSDK_OFFSET(0x7A8ED00)
+#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT__CTOR_OFFSET UNITYSDK_OFFSET(0x7A8EEA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelQTEBtnPanelChildWindowController_UIButtonView_Left_TypeDefinitionIndex = 68543;
+
+	class UIInLevelQTEBtnPanelChildWindowController_UIButtonView_Left : public ::System::Object
+	{
+	public:
+		::MoleMole::UIInLevelQTEBtnPanelChildWindowController* _owner; // 0x10
+
+		::System::Void _ctor(::MoleMole::UIInLevelQTEBtnPanelChildWindowController* owner)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIInLevelQTEBtnPanelChildWindowController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT__CTOR_OFFSET))(this, owner);
+		}
+
+		::Class_2_60DDD9C206686F44* get_Btn()
+		{
+			return ((::Class_2_60DDD9C206686F44*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT_GET_BTN_OFFSET))(this);
+		}
+
+		::UnityEngine::RectTransform* get_ButtonRoot()
+		{
+			return ((::UnityEngine::RectTransform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT_GET_BUTTONROOT_OFFSET))(this);
+		}
+
+		::UnityEngine::RectTransform* get_MaxDragArea()
+		{
+			return ((::UnityEngine::RectTransform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT_GET_MAXDRAGAREA_OFFSET))(this);
+		}
+
+		::UnityEngine::RectTransform* get_MinDragArea()
+		{
+			return ((::UnityEngine::RectTransform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT_GET_MINDRAGAREA_OFFSET))(this);
+		}
+
+		::UnityEngine::RectTransform* get_ButtonArea()
+		{
+			return ((::UnityEngine::RectTransform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER_UIBUTTONVIEW_LEFT_GET_BUTTONAREA_OFFSET))(this);
+		}
+	};
+}

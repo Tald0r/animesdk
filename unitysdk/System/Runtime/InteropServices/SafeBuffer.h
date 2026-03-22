@@ -2,32 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Microsoft/Win32/SafeHandles/SafeHandleZeroOrMinusOneIsInvalid.h"
 
-#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEBUFFER_ACQUIREPOINTER_OFFSET UNITYSDK_OFFSET(0x15CE1090)
-#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEBUFFER_GET_BYTELENGTH_OFFSET UNITYSDK_OFFSET(0x15CE11C0)
-#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEBUFFER_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x15CE1040)
-#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEBUFFER_RELEASEPOINTER_OFFSET UNITYSDK_OFFSET(0x15CE1170)
-#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEBUFFER__CTOR_OFFSET UNITYSDK_OFFSET(0x15CE0FE0)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEBUFFER_ACQUIREPOINTER_OFFSET UNITYSDK_OFFSET(0x191975B0)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEBUFFER_RELEASEPOINTER_OFFSET UNITYSDK_OFFSET(0x19197630)
 
 namespace System::Runtime::InteropServices
 {
-	inline static constexpr unsigned int SafeBuffer_TypeDefinitionIndex = 1423;
+	inline static constexpr unsigned int SafeBuffer_TypeDefinitionIndex = 1440;
 
 	class SafeBuffer : public ::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid
 	{
 	public:
 		::System::Boolean inited; // 0x20
-		::System::UInt64 byte_length; // 0x28
-		::System::Byte* last_byte; // 0x30
-
-		::System::Void _ctor(::System::Boolean ownsHandle)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEBUFFER__CTOR_OFFSET))(this, ownsHandle);
-		}
-
-		::System::Void Initialize(::System::UInt64 numBytes)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::UInt64))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEBUFFER_INITIALIZE_OFFSET))(this, numBytes);
-		}
 
 		::System::Void AcquirePointer(::System::Byte*& pointer)
 		{
@@ -37,11 +22,6 @@ namespace System::Runtime::InteropServices
 		::System::Void ReleasePointer()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEBUFFER_RELEASEPOINTER_OFFSET))(this);
-		}
-
-		::System::UInt64 get_ByteLength()
-		{
-			return ((::System::UInt64(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEBUFFER_GET_BYTELENGTH_OFFSET))(this);
 		}
 	};
 }

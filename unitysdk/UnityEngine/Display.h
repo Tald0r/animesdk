@@ -5,39 +5,43 @@
 
 namespace UnityEngine { class Display_DisplaysUpdatedDelegate; }
 
-#define UNITYENGINE_DISPLAY_FIREDISPLAYSUPDATED_OFFSET UNITYSDK_OFFSET(0x181F0270)
-#define UNITYENGINE_DISPLAY_GETRENDERINGEXTIMPL_OFFSET UNITYSDK_OFFSET(0x181EFEA0)
-#define UNITYENGINE_DISPLAY_GETSYSTEMEXTIMPL_OFFSET UNITYSDK_OFFSET(0x181EFF50)
-#define UNITYENGINE_DISPLAY_GET_MAIN_OFFSET UNITYSDK_OFFSET(0x181F0050)
-#define UNITYENGINE_DISPLAY_GET_RENDERINGHEIGHT_OFFSET UNITYSDK_OFFSET(0x181EFEB0)
-#define UNITYENGINE_DISPLAY_GET_RENDERINGWIDTH_OFFSET UNITYSDK_OFFSET(0x181EFE50)
-#define UNITYENGINE_DISPLAY_GET_SYSTEMHEIGHT_OFFSET UNITYSDK_OFFSET(0x181EFF60)
-#define UNITYENGINE_DISPLAY_GET_SYSTEMWIDTH_OFFSET UNITYSDK_OFFSET(0x181EFF00)
-#define UNITYENGINE_DISPLAY_RECREATEDISPLAYLIST_OFFSET UNITYSDK_OFFSET(0x181F0080)
-#define UNITYENGINE_DISPLAY_RELATIVEMOUSEATIMPL_OFFSET UNITYSDK_OFFSET(0x181F0040)
-#define UNITYENGINE_DISPLAY_RELATIVEMOUSEAT_OFFSET UNITYSDK_OFFSET(0x181EFFB0)
-#define UNITYENGINE_DISPLAY__CCTOR_OFFSET UNITYSDK_OFFSET(0x181F06C0)
-#define UNITYENGINE_DISPLAY__CTOR_1_OFFSET UNITYSDK_OFFSET(0x181EFE40)
-#define UNITYENGINE_DISPLAY__CTOR_OFFSET UNITYSDK_OFFSET(0x181EFE30)
+#define UNITYENGINE_DISPLAY_FIREDISPLAYSUPDATED_OFFSET UNITYSDK_OFFSET(0x19CF6080)
+#define UNITYENGINE_DISPLAY_GETRENDERINGEXTIMPL_OFFSET UNITYSDK_OFFSET(0x19CF5C30)
+#define UNITYENGINE_DISPLAY_GETSYSTEMEXTIMPL_OFFSET UNITYSDK_OFFSET(0x19CF5CE0)
+#define UNITYENGINE_DISPLAY_GET_MAIN_OFFSET UNITYSDK_OFFSET(0x19CF5E60)
+#define UNITYENGINE_DISPLAY_GET_RENDERINGHEIGHT_OFFSET UNITYSDK_OFFSET(0x19CF5C40)
+#define UNITYENGINE_DISPLAY_GET_RENDERINGWIDTH_OFFSET UNITYSDK_OFFSET(0x19CF5BE0)
+#define UNITYENGINE_DISPLAY_GET_REQUIRESBLITTOBACKBUFFER_OFFSET UNITYSDK_OFFSET(0x19CF5D40)
+#define UNITYENGINE_DISPLAY_GET_REQUIRESSRGBBLITTOBACKBUFFER_OFFSET UNITYSDK_OFFSET(0x19CF5D80)
+#define UNITYENGINE_DISPLAY_GET_SYSTEMHEIGHT_OFFSET UNITYSDK_OFFSET(0x19CF5CF0)
+#define UNITYENGINE_DISPLAY_GET_SYSTEMWIDTH_OFFSET UNITYSDK_OFFSET(0x19CF5C90)
+#define UNITYENGINE_DISPLAY_RECREATEDISPLAYLIST_OFFSET UNITYSDK_OFFSET(0x19CF5E90)
+#define UNITYENGINE_DISPLAY_RELATIVEMOUSEATIMPL_OFFSET UNITYSDK_OFFSET(0x19CF5E50)
+#define UNITYENGINE_DISPLAY_RELATIVEMOUSEAT_OFFSET UNITYSDK_OFFSET(0x19CF5DC0)
+#define UNITYENGINE_DISPLAY_REQUIRESBLITTOBACKBUFFERIMPL_OFFSET UNITYSDK_OFFSET(0x19CF5D70)
+#define UNITYENGINE_DISPLAY_REQUIRESSRGBBLITTOBACKBUFFERIMPL_OFFSET UNITYSDK_OFFSET(0x19CF5DB0)
+#define UNITYENGINE_DISPLAY__CCTOR_OFFSET UNITYSDK_OFFSET(0x19CF6100)
+#define UNITYENGINE_DISPLAY__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19CF5BD0)
+#define UNITYENGINE_DISPLAY__CTOR_OFFSET UNITYSDK_OFFSET(0x19CF5BC0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int Display_TypeDefinitionIndex = 3899;
+	inline static constexpr unsigned int Display_TypeDefinitionIndex = 5174;
 
 	class Display : public ::System::Object
 	{
 	public:
+		static ::Il2CppArray<::UnityEngine::Display*>** StaticGet_displays()
+		{
+			return (::Il2CppArray<::UnityEngine::Display*>**)Il2CppClass::FromTypeDefinitionIndex(Display_TypeDefinitionIndex)->GetStaticField(0x5360);
+		}
 		static ::UnityEngine::Display** StaticGet__mainDisplay()
 		{
-			return (::UnityEngine::Display**)Il2CppClass::FromTypeDefinitionIndex(Display_TypeDefinitionIndex)->GetStaticField(0x2F0);
+			return (::UnityEngine::Display**)Il2CppClass::FromTypeDefinitionIndex(Display_TypeDefinitionIndex)->GetStaticField(0x5368);
 		}
 		static ::UnityEngine::Display_DisplaysUpdatedDelegate** StaticGet_onDisplaysUpdated()
 		{
-			return (::UnityEngine::Display_DisplaysUpdatedDelegate**)Il2CppClass::FromTypeDefinitionIndex(Display_TypeDefinitionIndex)->GetStaticField(0x2F8);
-		}
-		static ::Il2CppArray<::UnityEngine::Display*>** StaticGet_displays()
-		{
-			return (::Il2CppArray<::UnityEngine::Display*>**)Il2CppClass::FromTypeDefinitionIndex(Display_TypeDefinitionIndex)->GetStaticField(0x300);
+			return (::UnityEngine::Display_DisplaysUpdatedDelegate**)Il2CppClass::FromTypeDefinitionIndex(Display_TypeDefinitionIndex)->GetStaticField(0x5370);
 		}
 		::System::IntPtr nativeDisplay; // 0x10
 
@@ -76,6 +80,16 @@ namespace UnityEngine
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_DISPLAY_GET_SYSTEMHEIGHT_OFFSET))(this);
 		}
 
+		::System::Boolean get_requiresBlitToBackbuffer()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_DISPLAY_GET_REQUIRESBLITTOBACKBUFFER_OFFSET))(this);
+		}
+
+		::System::Boolean get_requiresSrgbBlitToBackbuffer()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_DISPLAY_GET_REQUIRESSRGBBLITTOBACKBUFFER_OFFSET))(this);
+		}
+
 		static ::UnityEngine::Vector3 RelativeMouseAt(::UnityEngine::Vector3 inputMouseCoordinates)
 		{
 			return ((::UnityEngine::Vector3(*)(::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_DISPLAY_RELATIVEMOUSEAT_OFFSET))(inputMouseCoordinates);
@@ -109,6 +123,16 @@ namespace UnityEngine
 		static ::System::Int32 RelativeMouseAtImpl(::System::Int32 x, ::System::Int32 y, ::System::Int32& rx, ::System::Int32& ry)
 		{
 			return ((::System::Int32(*)(::System::Int32, ::System::Int32, ::System::Int32&, ::System::Int32&))((::PBYTE)hIl2Cpp + UNITYENGINE_DISPLAY_RELATIVEMOUSEATIMPL_OFFSET))(x, y, rx, ry);
+		}
+
+		static ::System::Boolean RequiresBlitToBackbufferImpl(::System::IntPtr nativeDisplay)
+		{
+			return ((::System::Boolean(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + UNITYENGINE_DISPLAY_REQUIRESBLITTOBACKBUFFERIMPL_OFFSET))(nativeDisplay);
+		}
+
+		static ::System::Boolean RequiresSrgbBlitToBackbufferImpl(::System::IntPtr nativeDisplay)
+		{
+			return ((::System::Boolean(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + UNITYENGINE_DISPLAY_REQUIRESSRGBBLITTOBACKBUFFERIMPL_OFFSET))(nativeDisplay);
 		}
 	};
 }

@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MICROSOFT_WIN32_WIN32NATIVE_WIN32_FIND_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x15AADD10)
+#define MICROSOFT_WIN32_WIN32NATIVE_WIN32_FIND_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x19505F70)
 
 namespace Microsoft::Win32
 {
-	inline static constexpr unsigned int Win32Native_WIN32_FIND_DATA_TypeDefinitionIndex = 113;
+	inline static constexpr unsigned int Win32Native_WIN32_FIND_DATA_TypeDefinitionIndex = 101;
 
 	class Win32Native_WIN32_FIND_DATA : public ::System::Object
 	{

@@ -1,0 +1,58 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace UnityEngine { class RenderTexture; }
+namespace UnityEngine { class Texture; }
+
+#define UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_GETMIPISREADY_OFFSET UNITYSDK_OFFSET(0x1A04BAF0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_GETRAWVIDEO_OFFSET UNITYSDK_OFFSET(0x1A04BAC0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_SETBLURAMOUNT_OFFSET UNITYSDK_OFFSET(0x1A04BAB0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_SETMIPISREADY_OFFSET UNITYSDK_OFFSET(0x1A04BB00)
+#define UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_SETMIPVIDEO_OFFSET UNITYSDK_OFFSET(0x1A04BAE0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_SETRAWVIDEO_OFFSET UNITYSDK_OFFSET(0x1A04BAD0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A04BB10)
+
+namespace UnityEngine::NAPRenderPipeline0
+{
+	inline static constexpr unsigned int VideoMipGeneratorNativeHelper_TypeDefinitionIndex = 5702;
+
+	class VideoMipGeneratorNativeHelper : public ::System::Object
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void SetBlurAmount(::System::Single v)
+		{
+			return ((::System::Void(*)(::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_SETBLURAMOUNT_OFFSET))(v);
+		}
+
+		static ::UnityEngine::Texture* GetRawVideo()
+		{
+			return ((::UnityEngine::Texture*(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_GETRAWVIDEO_OFFSET))();
+		}
+
+		static ::System::Void SetRawVideo(::UnityEngine::Texture* tex)
+		{
+			return ((::System::Void(*)(::UnityEngine::Texture*))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_SETRAWVIDEO_OFFSET))(tex);
+		}
+
+		static ::System::Void SetMipVideo(::UnityEngine::RenderTexture* rt)
+		{
+			return ((::System::Void(*)(::UnityEngine::RenderTexture*))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_SETMIPVIDEO_OFFSET))(rt);
+		}
+
+		static ::System::Boolean GetMipIsReady()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_GETMIPISREADY_OFFSET))();
+		}
+
+		static ::System::Void SetMipIsReady(::System::Boolean ready)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_VIDEOMIPGENERATORNATIVEHELPER_SETMIPISREADY_OFFSET))(ready);
+		}
+	};
+}

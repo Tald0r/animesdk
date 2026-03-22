@@ -8,52 +8,69 @@ namespace System { class String; }
 namespace UnityEngine { class GUIContent; }
 namespace UnityEngine { class GUILayoutOption; }
 namespace UnityEngine { class GUIStyle; }
+namespace UnityEngine { class GUI_WindowFunction; }
 namespace UnityEngine { class Texture; }
 
-#define UNITYENGINE_GUILAYOUT_BEGINAREA_1_OFFSET UNITYSDK_OFFSET(0x1825F260)
-#define UNITYENGINE_GUILAYOUT_BEGINAREA_OFFSET UNITYSDK_OFFSET(0x1825F130)
-#define UNITYENGINE_GUILAYOUT_BEGINHORIZONTAL_1_OFFSET UNITYSDK_OFFSET(0x1825E830)
-#define UNITYENGINE_GUILAYOUT_BEGINHORIZONTAL_OFFSET UNITYSDK_OFFSET(0x1825E700)
-#define UNITYENGINE_GUILAYOUT_BEGINSCROLLVIEW_1_OFFSET UNITYSDK_OFFSET(0x1825F9E0)
-#define UNITYENGINE_GUILAYOUT_BEGINSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x1825F900)
-#define UNITYENGINE_GUILAYOUT_BEGINVERTICAL_1_OFFSET UNITYSDK_OFFSET(0x1825EF70)
-#define UNITYENGINE_GUILAYOUT_BEGINVERTICAL_OFFSET UNITYSDK_OFFSET(0x1825EE40)
-#define UNITYENGINE_GUILAYOUT_BUTTON_OFFSET UNITYSDK_OFFSET(0x1825D590)
-#define UNITYENGINE_GUILAYOUT_DOBUTTON_OFFSET UNITYSDK_OFFSET(0x1825D6F0)
-#define UNITYENGINE_GUILAYOUT_DOHORIZONTALSLIDER_OFFSET UNITYSDK_OFFSET(0x1825E030)
-#define UNITYENGINE_GUILAYOUT_DOLABEL_OFFSET UNITYSDK_OFFSET(0x1825D320)
-#define UNITYENGINE_GUILAYOUT_DOTEXTFIELD_OFFSET UNITYSDK_OFFSET(0x1825D890)
-#define UNITYENGINE_GUILAYOUT_DOTOGGLE_OFFSET UNITYSDK_OFFSET(0x1825DEC0)
-#define UNITYENGINE_GUILAYOUT_ENDAREA_OFFSET UNITYSDK_OFFSET(0x1825F6F0)
-#define UNITYENGINE_GUILAYOUT_ENDHORIZONTAL_OFFSET UNITYSDK_OFFSET(0x1825EC90)
-#define UNITYENGINE_GUILAYOUT_ENDSCROLLVIEW_1_OFFSET UNITYSDK_OFFSET(0x1825FD50)
-#define UNITYENGINE_GUILAYOUT_ENDSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x1825FCE0)
-#define UNITYENGINE_GUILAYOUT_ENDVERTICAL_OFFSET UNITYSDK_OFFSET(0x1825F120)
-#define UNITYENGINE_GUILAYOUT_EXPANDWIDTH_OFFSET UNITYSDK_OFFSET(0x1825FDC0)
-#define UNITYENGINE_GUILAYOUT_HEIGHT_OFFSET UNITYSDK_OFFSET(0x1825C4A0)
-#define UNITYENGINE_GUILAYOUT_HORIZONTALSLIDER_OFFSET UNITYSDK_OFFSET(0x1825DF40)
-#define UNITYENGINE_GUILAYOUT_LABEL_1_OFFSET UNITYSDK_OFFSET(0x1825D3A0)
-#define UNITYENGINE_GUILAYOUT_LABEL_OFFSET UNITYSDK_OFFSET(0x1825D150)
-#define UNITYENGINE_GUILAYOUT_SPACE_OFFSET UNITYSDK_OFFSET(0x1825E270)
-#define UNITYENGINE_GUILAYOUT_TEXTFIELD_OFFSET UNITYSDK_OFFSET(0x1825D7F0)
-#define UNITYENGINE_GUILAYOUT_TOGGLE_OFFSET UNITYSDK_OFFSET(0x1825DCE0)
-#define UNITYENGINE_GUILAYOUT_WIDTH_OFFSET UNITYSDK_OFFSET(0x1825C430)
+#define UNITYENGINE_GUILAYOUT_BEGINAREA_1_OFFSET UNITYSDK_OFFSET(0x19C39AC0)
+#define UNITYENGINE_GUILAYOUT_BEGINAREA_2_OFFSET UNITYSDK_OFFSET(0x19C39B20)
+#define UNITYENGINE_GUILAYOUT_BEGINAREA_3_OFFSET UNITYSDK_OFFSET(0x19C39940)
+#define UNITYENGINE_GUILAYOUT_BEGINAREA_OFFSET UNITYSDK_OFFSET(0x19C39830)
+#define UNITYENGINE_GUILAYOUT_BEGINHORIZONTAL_1_OFFSET UNITYSDK_OFFSET(0x19C390C0)
+#define UNITYENGINE_GUILAYOUT_BEGINHORIZONTAL_2_OFFSET UNITYSDK_OFFSET(0x19C38F30)
+#define UNITYENGINE_GUILAYOUT_BEGINHORIZONTAL_OFFSET UNITYSDK_OFFSET(0x19C38E40)
+#define UNITYENGINE_GUILAYOUT_BEGINSCROLLVIEW_1_OFFSET UNITYSDK_OFFSET(0x19C3A2B0)
+#define UNITYENGINE_GUILAYOUT_BEGINSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x19C3A020)
+#define UNITYENGINE_GUILAYOUT_BEGINVERTICAL_1_OFFSET UNITYSDK_OFFSET(0x19C397D0)
+#define UNITYENGINE_GUILAYOUT_BEGINVERTICAL_2_OFFSET UNITYSDK_OFFSET(0x19C39640)
+#define UNITYENGINE_GUILAYOUT_BEGINVERTICAL_OFFSET UNITYSDK_OFFSET(0x19C39550)
+#define UNITYENGINE_GUILAYOUT_BOX_OFFSET UNITYSDK_OFFSET(0x19C38260)
+#define UNITYENGINE_GUILAYOUT_BUTTON_1_OFFSET UNITYSDK_OFFSET(0x19C38740)
+#define UNITYENGINE_GUILAYOUT_BUTTON_OFFSET UNITYSDK_OFFSET(0x19C38480)
+#define UNITYENGINE_GUILAYOUT_DOBOX_OFFSET UNITYSDK_OFFSET(0x19C38420)
+#define UNITYENGINE_GUILAYOUT_DOBUTTON_OFFSET UNITYSDK_OFFSET(0x19C38690)
+#define UNITYENGINE_GUILAYOUT_DOLABEL_OFFSET UNITYSDK_OFFSET(0x19C38100)
+#define UNITYENGINE_GUILAYOUT_DOTOGGLE_OFFSET UNITYSDK_OFFSET(0x19C38950)
+#define UNITYENGINE_GUILAYOUT_DOWINDOW_OFFSET UNITYSDK_OFFSET(0x19C3A7F0)
+#define UNITYENGINE_GUILAYOUT_ENDAREA_OFFSET UNITYSDK_OFFSET(0x19C39E40)
+#define UNITYENGINE_GUILAYOUT_ENDHORIZONTAL_OFFSET UNITYSDK_OFFSET(0x19C393A0)
+#define UNITYENGINE_GUILAYOUT_ENDSCROLLVIEW_1_OFFSET UNITYSDK_OFFSET(0x19C3A5F0)
+#define UNITYENGINE_GUILAYOUT_ENDSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x19C3A5B0)
+#define UNITYENGINE_GUILAYOUT_ENDVERTICAL_OFFSET UNITYSDK_OFFSET(0x19C39820)
+#define UNITYENGINE_GUILAYOUT_EXPANDHEIGHT_OFFSET UNITYSDK_OFFSET(0x19C3ABE0)
+#define UNITYENGINE_GUILAYOUT_EXPANDWIDTH_OFFSET UNITYSDK_OFFSET(0x19C3AB80)
+#define UNITYENGINE_GUILAYOUT_HEIGHT_OFFSET UNITYSDK_OFFSET(0x19C36FD0)
+#define UNITYENGINE_GUILAYOUT_LABEL_1_OFFSET UNITYSDK_OFFSET(0x19C38160)
+#define UNITYENGINE_GUILAYOUT_LABEL_OFFSET UNITYSDK_OFFSET(0x19C37F40)
+#define UNITYENGINE_GUILAYOUT_MAXHEIGHT_OFFSET UNITYSDK_OFFSET(0x19C3AB10)
+#define UNITYENGINE_GUILAYOUT_MAXWIDTH_OFFSET UNITYSDK_OFFSET(0x19C3AA30)
+#define UNITYENGINE_GUILAYOUT_MINHEIGHT_OFFSET UNITYSDK_OFFSET(0x19C3AAA0)
+#define UNITYENGINE_GUILAYOUT_MINWIDTH_OFFSET UNITYSDK_OFFSET(0x19C3A9C0)
+#define UNITYENGINE_GUILAYOUT_SPACE_OFFSET UNITYSDK_OFFSET(0x19C389B0)
+#define UNITYENGINE_GUILAYOUT_TOGGLE_OFFSET UNITYSDK_OFFSET(0x19C38870)
+#define UNITYENGINE_GUILAYOUT_WIDTH_OFFSET UNITYSDK_OFFSET(0x19C36F60)
+#define UNITYENGINE_GUILAYOUT_WINDOW_OFFSET UNITYSDK_OFFSET(0x19C3A620)
+#define UNITYENGINE_GUILAYOUT__CTOR_OFFSET UNITYSDK_OFFSET(0x19C3AC40)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int GUILayout_TypeDefinitionIndex = 5013;
+	inline static constexpr unsigned int GUILayout_TypeDefinitionIndex = 6358;
 
 	class GUILayout : public ::System::Object
 	{
 	public:
-		static ::System::Void Label(::UnityEngine::Texture* image, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		::System::Void _ctor()
 		{
-			return ((::System::Void(*)(::UnityEngine::Texture*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_LABEL_OFFSET))(image, options);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT__CTOR_OFFSET))(this);
 		}
 
-		static ::System::Void Label_1(::System::String* text, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		static ::System::Void Label(::System::String* text, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
 		{
-			return ((::System::Void(*)(::System::String*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_LABEL_1_OFFSET))(text, options);
+			return ((::System::Void(*)(::System::String*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_LABEL_OFFSET))(text, options);
+		}
+
+		static ::System::Void Label_1(::System::String* text, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		{
+			return ((::System::Void(*)(::System::String*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_LABEL_1_OFFSET))(text, style, options);
 		}
 
 		static ::System::Void DoLabel(::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
@@ -61,9 +78,24 @@ namespace UnityEngine
 			return ((::System::Void(*)(::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_DOLABEL_OFFSET))(content, style, options);
 		}
 
+		static ::System::Void Box(::UnityEngine::Texture* image, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		{
+			return ((::System::Void(*)(::UnityEngine::Texture*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BOX_OFFSET))(image, options);
+		}
+
+		static ::System::Void DoBox(::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		{
+			return ((::System::Void(*)(::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_DOBOX_OFFSET))(content, style, options);
+		}
+
 		static ::System::Boolean Button(::System::String* text, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
 		{
 			return ((::System::Boolean(*)(::System::String*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BUTTON_OFFSET))(text, options);
+		}
+
+		static ::System::Boolean Button_1(::System::String* text, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		{
+			return ((::System::Boolean(*)(::System::String*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BUTTON_1_OFFSET))(text, style, options);
 		}
 
 		static ::System::Boolean DoButton(::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
@@ -71,34 +103,14 @@ namespace UnityEngine
 			return ((::System::Boolean(*)(::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_DOBUTTON_OFFSET))(content, style, options);
 		}
 
-		static ::System::String* TextField(::System::String* text, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		static ::System::Boolean Toggle(::System::Boolean value, ::System::String* text, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
 		{
-			return ((::System::String*(*)(::System::String*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_TEXTFIELD_OFFSET))(text, options);
-		}
-
-		static ::System::String* DoTextField(::System::String* text, ::System::Int32 maxLength, ::System::Boolean multiline, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
-		{
-			return ((::System::String*(*)(::System::String*, ::System::Int32, ::System::Boolean, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_DOTEXTFIELD_OFFSET))(text, maxLength, multiline, style, options);
-		}
-
-		static ::System::Boolean Toggle(::System::Boolean value, ::System::String* text, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
-		{
-			return ((::System::Boolean(*)(::System::Boolean, ::System::String*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_TOGGLE_OFFSET))(value, text, options);
+			return ((::System::Boolean(*)(::System::Boolean, ::System::String*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_TOGGLE_OFFSET))(value, text, style, options);
 		}
 
 		static ::System::Boolean DoToggle(::System::Boolean value, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
 		{
 			return ((::System::Boolean(*)(::System::Boolean, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_DOTOGGLE_OFFSET))(value, content, style, options);
-		}
-
-		static ::System::Single HorizontalSlider(::System::Single value, ::System::Single leftValue, ::System::Single rightValue, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
-		{
-			return ((::System::Single(*)(::System::Single, ::System::Single, ::System::Single, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_HORIZONTALSLIDER_OFFSET))(value, leftValue, rightValue, options);
-		}
-
-		static ::System::Single DoHorizontalSlider(::System::Single value, ::System::Single leftValue, ::System::Single rightValue, ::UnityEngine::GUIStyle* slider, ::UnityEngine::GUIStyle* thumb, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
-		{
-			return ((::System::Single(*)(::System::Single, ::System::Single, ::System::Single, ::UnityEngine::GUIStyle*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_DOHORIZONTALSLIDER_OFFSET))(value, leftValue, rightValue, slider, thumb, options);
 		}
 
 		static ::System::Void Space(::System::Single pixels)
@@ -111,9 +123,14 @@ namespace UnityEngine
 			return ((::System::Void(*)(::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINHORIZONTAL_OFFSET))(options);
 		}
 
-		static ::System::Void BeginHorizontal_1(::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		static ::System::Void BeginHorizontal_1(::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
 		{
-			return ((::System::Void(*)(::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINHORIZONTAL_1_OFFSET))(content, style, options);
+			return ((::System::Void(*)(::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINHORIZONTAL_1_OFFSET))(style, options);
+		}
+
+		static ::System::Void BeginHorizontal_2(::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		{
+			return ((::System::Void(*)(::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINHORIZONTAL_2_OFFSET))(content, style, options);
 		}
 
 		static ::System::Void EndHorizontal()
@@ -126,9 +143,14 @@ namespace UnityEngine
 			return ((::System::Void(*)(::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINVERTICAL_OFFSET))(options);
 		}
 
-		static ::System::Void BeginVertical_1(::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		static ::System::Void BeginVertical_1(::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
 		{
-			return ((::System::Void(*)(::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINVERTICAL_1_OFFSET))(content, style, options);
+			return ((::System::Void(*)(::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINVERTICAL_1_OFFSET))(style, options);
+		}
+
+		static ::System::Void BeginVertical_2(::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		{
+			return ((::System::Void(*)(::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINVERTICAL_2_OFFSET))(content, style, options);
 		}
 
 		static ::System::Void EndVertical()
@@ -141,9 +163,19 @@ namespace UnityEngine
 			return ((::System::Void(*)(::UnityEngine::Rect))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINAREA_OFFSET))(screenRect);
 		}
 
-		static ::System::Void BeginArea_1(::UnityEngine::Rect screenRect, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
+		static ::System::Void BeginArea_1(::UnityEngine::Rect screenRect, ::UnityEngine::GUIStyle* style)
 		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINAREA_1_OFFSET))(screenRect, content, style);
+			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINAREA_1_OFFSET))(screenRect, style);
+		}
+
+		static ::System::Void BeginArea_2(::UnityEngine::Rect screenRect, ::System::String* text, ::UnityEngine::GUIStyle* style)
+		{
+			return ((::System::Void(*)(::UnityEngine::Rect, ::System::String*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINAREA_2_OFFSET))(screenRect, text, style);
+		}
+
+		static ::System::Void BeginArea_3(::UnityEngine::Rect screenRect, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
+		{
+			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_BEGINAREA_3_OFFSET))(screenRect, content, style);
 		}
 
 		static ::System::Void EndArea()
@@ -171,9 +203,29 @@ namespace UnityEngine
 			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_ENDSCROLLVIEW_1_OFFSET))(handleScrollWheel);
 		}
 
+		static ::UnityEngine::Rect Window(::System::Int32 id, ::UnityEngine::Rect screenRect, ::UnityEngine::GUI_WindowFunction* func, ::System::String* text, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		{
+			return ((::UnityEngine::Rect(*)(::System::Int32, ::UnityEngine::Rect, ::UnityEngine::GUI_WindowFunction*, ::System::String*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_WINDOW_OFFSET))(id, screenRect, func, text, options);
+		}
+
+		static ::UnityEngine::Rect DoWindow(::System::Int32 id, ::UnityEngine::Rect screenRect, ::UnityEngine::GUI_WindowFunction* func, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::Il2CppArray<::UnityEngine::GUILayoutOption*>* options)
+		{
+			return ((::UnityEngine::Rect(*)(::System::Int32, ::UnityEngine::Rect, ::UnityEngine::GUI_WindowFunction*, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_DOWINDOW_OFFSET))(id, screenRect, func, content, style, options);
+		}
+
 		static ::UnityEngine::GUILayoutOption* Width(::System::Single width)
 		{
 			return ((::UnityEngine::GUILayoutOption*(*)(::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_WIDTH_OFFSET))(width);
+		}
+
+		static ::UnityEngine::GUILayoutOption* MinWidth(::System::Single minWidth)
+		{
+			return ((::UnityEngine::GUILayoutOption*(*)(::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_MINWIDTH_OFFSET))(minWidth);
+		}
+
+		static ::UnityEngine::GUILayoutOption* MaxWidth(::System::Single maxWidth)
+		{
+			return ((::UnityEngine::GUILayoutOption*(*)(::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_MAXWIDTH_OFFSET))(maxWidth);
 		}
 
 		static ::UnityEngine::GUILayoutOption* Height(::System::Single height)
@@ -181,9 +233,24 @@ namespace UnityEngine
 			return ((::UnityEngine::GUILayoutOption*(*)(::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_HEIGHT_OFFSET))(height);
 		}
 
+		static ::UnityEngine::GUILayoutOption* MinHeight(::System::Single minHeight)
+		{
+			return ((::UnityEngine::GUILayoutOption*(*)(::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_MINHEIGHT_OFFSET))(minHeight);
+		}
+
+		static ::UnityEngine::GUILayoutOption* MaxHeight(::System::Single maxHeight)
+		{
+			return ((::UnityEngine::GUILayoutOption*(*)(::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_MAXHEIGHT_OFFSET))(maxHeight);
+		}
+
 		static ::UnityEngine::GUILayoutOption* ExpandWidth(::System::Boolean expand)
 		{
 			return ((::UnityEngine::GUILayoutOption*(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_EXPANDWIDTH_OFFSET))(expand);
+		}
+
+		static ::UnityEngine::GUILayoutOption* ExpandHeight(::System::Boolean expand)
+		{
+			return ((::UnityEngine::GUILayoutOption*(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUILAYOUT_EXPANDHEIGHT_OFFSET))(expand);
 		}
 	};
 }

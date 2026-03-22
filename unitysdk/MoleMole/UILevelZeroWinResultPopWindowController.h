@@ -1,0 +1,47 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_87D98DA5C1AD6384_Enum_3_3DCE6AAF7E47B319.h"
+#include "unitysdk/Class_1_87D98DA5C1AD6384_Enum_3_A188519F532ACB95.h"
+#include "unitysdk/MoleMole/UILevelGeneralWinResultDialogPopWindowController.h"
+
+namespace System { class String; }
+
+#define MOLEMOLE_UILEVELZEROWINRESULTPOPWINDOWCONTROLLER_ACQUIRETITLETEXT_OFFSET UNITYSDK_OFFSET(0x98BA320)
+#define MOLEMOLE_UILEVELZEROWINRESULTPOPWINDOWCONTROLLER_GETBUTTONCOMBINESTATE_OFFSET UNITYSDK_OFFSET(0x98BA200)
+#define MOLEMOLE_UILEVELZEROWINRESULTPOPWINDOWCONTROLLER_GETPANELSTATE_OFFSET UNITYSDK_OFFSET(0x98BA260)
+#define MOLEMOLE_UILEVELZEROWINRESULTPOPWINDOWCONTROLLER_ONPOPSHOWED_OFFSET UNITYSDK_OFFSET(0x98BA2C0)
+#define MOLEMOLE_UILEVELZEROWINRESULTPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x98BA420)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UILevelZeroWinResultPopWindowController_TypeDefinitionIndex = 47699;
+
+	class UILevelZeroWinResultPopWindowController : public ::MoleMole::UILevelGeneralWinResultDialogPopWindowController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELZEROWINRESULTPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_1_87D98DA5C1AD6384_Enum_3_3DCE6AAF7E47B319 GetButtonCombineState()
+		{
+			return ((::Class_1_87D98DA5C1AD6384_Enum_3_3DCE6AAF7E47B319(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELZEROWINRESULTPOPWINDOWCONTROLLER_GETBUTTONCOMBINESTATE_OFFSET))(this);
+		}
+
+		::Class_1_87D98DA5C1AD6384_Enum_3_A188519F532ACB95 GetPanelState()
+		{
+			return ((::Class_1_87D98DA5C1AD6384_Enum_3_A188519F532ACB95(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELZEROWINRESULTPOPWINDOWCONTROLLER_GETPANELSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnPopShowed()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELZEROWINRESULTPOPWINDOWCONTROLLER_ONPOPSHOWED_OFFSET))(this);
+		}
+
+		::System::Void AcquireTitleText(::System::String*& mainTitleTextID, ::System::String*& resultTitleTextID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*&, ::System::String*&))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELZEROWINRESULTPOPWINDOWCONTROLLER_ACQUIRETITLETEXT_OFFSET))(this, mainTitleTextID, resultTitleTextID);
+		}
+	};
+}

@@ -1,92 +1,90 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
-#include "unitysdk/UnityEngine/FindObjectsInactive.h"
-#include "unitysdk/UnityEngine/FindObjectsSortMode.h"
 #include "unitysdk/UnityEngine/HideFlags.h"
-#include "unitysdk/UnityEngine/NativeString.h"
 #include "unitysdk/UnityEngine/Quaternion.h"
-#include "unitysdk/UnityEngine/Rendering/ShaderKeyword.h"
-#include "unitysdk/UnityEngine/Rendering/ShaderTagId.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-namespace System { class Array; }
 namespace System { class String; }
 namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
-namespace UnityEngine { class ObjectInstantiateRequest; }
+namespace UnityEngine { class AsyncInstantiateOperation; }
 namespace UnityEngine { class Transform; }
+namespace UnityEngine { template <typename T> class AsyncInstantiateOperation_1; }
 
-#define UNITYENGINE_OBJECT_CHECKNULLARGUMENT_OFFSET UNITYSDK_OFFSET(0x18212C40)
-#define UNITYENGINE_OBJECT_COMPAREBASEOBJECTS_OFFSET UNITYSDK_OFFSET(0x18212990)
-#define UNITYENGINE_OBJECT_CURRENTTHREADISMAINTHREAD_OFFSET UNITYSDK_OFFSET(0x18212A40)
-#define UNITYENGINE_OBJECT_DESTROYIMMEDIATE_1_OFFSET UNITYSDK_OFFSET(0x18212F50)
-#define UNITYENGINE_OBJECT_DESTROYIMMEDIATE_OFFSET UNITYSDK_OFFSET(0x18212F40)
-#define UNITYENGINE_OBJECT_DESTROYOBJECT_1_OFFSET UNITYSDK_OFFSET(0x18212FC0)
-#define UNITYENGINE_OBJECT_DESTROYOBJECT_OFFSET UNITYSDK_OFFSET(0x18212FB0)
-#define UNITYENGINE_OBJECT_DESTROY_1_OFFSET UNITYSDK_OFFSET(0x18212F30)
-#define UNITYENGINE_OBJECT_DESTROY_OFFSET UNITYSDK_OFFSET(0x18212F20)
-#define UNITYENGINE_OBJECT_DOESOBJECTWITHINSTANCEIDEXIST_OFFSET UNITYSDK_OFFSET(0x18213110)
-#define UNITYENGINE_OBJECT_DONTDESTROYONLOAD_OFFSET UNITYSDK_OFFSET(0x18212F90)
-#define UNITYENGINE_OBJECT_ENSURERUNNINGONMAINTHREAD_OFFSET UNITYSDK_OFFSET(0x182129D0)
-#define UNITYENGINE_OBJECT_EQUALS_OFFSET UNITYSDK_OFFSET(0x18212900)
-#define UNITYENGINE_OBJECT_FINDOBJECTFROMINSTANCEID_OFFSET UNITYSDK_OFFSET(0x18213120)
-#define UNITYENGINE_OBJECT_FINDOBJECTOFTYPE_OFFSET UNITYSDK_OFFSET(0x18213000)
-#define UNITYENGINE_OBJECT_FINDOBJECTSBYTYPE_1_OFFSET UNITYSDK_OFFSET(0x18212F70)
-#define UNITYENGINE_OBJECT_FINDOBJECTSBYTYPE_OFFSET UNITYSDK_OFFSET(0x18212F60)
-#define UNITYENGINE_OBJECT_FINDOBJECTSOFTYPEALL_OFFSET UNITYSDK_OFFSET(0x18212FF0)
-#define UNITYENGINE_OBJECT_FINDOBJECTSOFTYPEINCLUDINGASSETS_OFFSET UNITYSDK_OFFSET(0x18212FE0)
-#define UNITYENGINE_OBJECT_FINDOBJECTSOFTYPE_OFFSET UNITYSDK_OFFSET(0x18212F80)
-#define UNITYENGINE_OBJECT_FINDSCENEOBJECTSOFTYPE_OFFSET UNITYSDK_OFFSET(0x18212FD0)
-#define UNITYENGINE_OBJECT_FORCELOADFROMINSTANCEID_OFFSET UNITYSDK_OFFSET(0x18213130)
-#define UNITYENGINE_OBJECT_GETCACHEDPTR_OFFSET UNITYSDK_OFFSET(0x18212A70)
-#define UNITYENGINE_OBJECT_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x182128F0)
-#define UNITYENGINE_OBJECT_GETINSTANCEID_OFFSET UNITYSDK_OFFSET(0x182128A0)
-#define UNITYENGINE_OBJECT_GETNAME_OFFSET UNITYSDK_OFFSET(0x18212A80)
-#define UNITYENGINE_OBJECT_GETNATIVENAME_OFFSET UNITYSDK_OFFSET(0x18212AB0)
-#define UNITYENGINE_OBJECT_GETOFFSETOFINSTANCEIDINCPLUSPLUSOBJECT_OFFSET UNITYSDK_OFFSET(0x182128E0)
-#define UNITYENGINE_OBJECT_GETTYPENAMEWITHNATIVESTRING_INJECTED_OFFSET UNITYSDK_OFFSET(0x182130F0)
-#define UNITYENGINE_OBJECT_GETTYPENAMEWITHNATIVESTRING_OFFSET UNITYSDK_OFFSET(0x18212AE0)
-#define UNITYENGINE_OBJECT_GET_HIDEFLAGS_OFFSET UNITYSDK_OFFSET(0x18212FA0)
-#define UNITYENGINE_OBJECT_GET_NAME_OFFSET UNITYSDK_OFFSET(0x1820C810)
-#define UNITYENGINE_OBJECT_INSTANTIATEASYNC_OFFSET UNITYSDK_OFFSET(0x18213140)
-#define UNITYENGINE_OBJECT_INSTANTIATE_1_OFFSET UNITYSDK_OFFSET(0x18212C90)
-#define UNITYENGINE_OBJECT_INSTANTIATE_2_OFFSET UNITYSDK_OFFSET(0x18212D90)
-#define UNITYENGINE_OBJECT_INSTANTIATE_3_OFFSET UNITYSDK_OFFSET(0x18212E30)
-#define UNITYENGINE_OBJECT_INSTANTIATE_4_OFFSET UNITYSDK_OFFSET(0x18212E40)
-#define UNITYENGINE_OBJECT_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0x18212B10)
-#define UNITYENGINE_OBJECT_INTERNAL_CLONESINGLEWITHPARENT_OFFSET UNITYSDK_OFFSET(0x18212F10)
-#define UNITYENGINE_OBJECT_INTERNAL_CLONESINGLE_OFFSET UNITYSDK_OFFSET(0x18212E20)
-#define UNITYENGINE_OBJECT_INTERNAL_INSTANTIATEASYNC_OFFSET UNITYSDK_OFFSET(0x182131A0)
-#define UNITYENGINE_OBJECT_INTERNAL_INSTANTIATESINGLEWITHPARENT_INJECTED_OFFSET UNITYSDK_OFFSET(0x182130E0)
-#define UNITYENGINE_OBJECT_INTERNAL_INSTANTIATESINGLEWITHPARENT_OFFSET UNITYSDK_OFFSET(0x18212D80)
-#define UNITYENGINE_OBJECT_INTERNAL_INSTANTIATESINGLE_INJECTED_OFFSET UNITYSDK_OFFSET(0x182130D0)
-#define UNITYENGINE_OBJECT_INTERNAL_INSTANTIATESINGLE_OFFSET UNITYSDK_OFFSET(0x18212C80)
-#define UNITYENGINE_OBJECT_INTERNAL_SETSHADERASYNCCOMPILECONTEXT_OFFSET UNITYSDK_OFFSET(0x182131B0)
-#define UNITYENGINE_OBJECT_ISNATIVEOBJECTALIVE_OFFSET UNITYSDK_OFFSET(0x18212A50)
-#define UNITYENGINE_OBJECT_ISPERSISTENT_OFFSET UNITYSDK_OFFSET(0x18213100)
-#define UNITYENGINE_OBJECT_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x18213050)
-#define UNITYENGINE_OBJECT_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x18212970)
-#define UNITYENGINE_OBJECT_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x18213090)
-#define UNITYENGINE_OBJECT_SETNAME_OFFSET UNITYSDK_OFFSET(0x18212AA0)
-#define UNITYENGINE_OBJECT_SETSHADERASYNCCOMPILECONTEXT_OFFSET UNITYSDK_OFFSET(0x182131C0)
-#define UNITYENGINE_OBJECT_SET_HIDEFLAGS_OFFSET UNITYSDK_OFFSET(0x18210690)
-#define UNITYENGINE_OBJECT_SET_NAME_OFFSET UNITYSDK_OFFSET(0x18212A90)
-#define UNITYENGINE_OBJECT_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x18213040)
-#define UNITYENGINE_OBJECT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x18213030)
-#define UNITYENGINE_OBJECT__CCTOR_OFFSET UNITYSDK_OFFSET(0x18213350)
-#define UNITYENGINE_OBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x18213340)
+#define UNITYENGINE_OBJECT_BATCHNULLCHECK_OFFSET UNITYSDK_OFFSET(0x19E4F400)
+#define UNITYENGINE_OBJECT_CHECKNULLARGUMENT_OFFSET UNITYSDK_OFFSET(0x19E4E930)
+#define UNITYENGINE_OBJECT_COMPAREBASEOBJECTS_OFFSET UNITYSDK_OFFSET(0x19E4E520)
+#define UNITYENGINE_OBJECT_CURRENTTHREADISMAINTHREAD_OFFSET UNITYSDK_OFFSET(0x19E4E650)
+#define UNITYENGINE_OBJECT_DESTROYIMMEDIATE_1_OFFSET UNITYSDK_OFFSET(0x19E4F0D0)
+#define UNITYENGINE_OBJECT_DESTROYIMMEDIATE_OFFSET UNITYSDK_OFFSET(0x19E4F0C0)
+#define UNITYENGINE_OBJECT_DESTROYOBJECT_1_OFFSET UNITYSDK_OFFSET(0x19E4F190)
+#define UNITYENGINE_OBJECT_DESTROYOBJECT_OFFSET UNITYSDK_OFFSET(0x19E4F140)
+#define UNITYENGINE_OBJECT_DESTROY_1_OFFSET UNITYSDK_OFFSET(0x19E4F080)
+#define UNITYENGINE_OBJECT_DESTROY_OFFSET UNITYSDK_OFFSET(0x19E4F070)
+#define UNITYENGINE_OBJECT_DOESOBJECTWITHINSTANCEIDEXIST_OFFSET UNITYSDK_OFFSET(0x19E4F3C0)
+#define UNITYENGINE_OBJECT_DONTDESTROYONLOAD_OFFSET UNITYSDK_OFFSET(0x19E4F120)
+#define UNITYENGINE_OBJECT_ENSURERUNNINGONMAINTHREAD_OFFSET UNITYSDK_OFFSET(0x19E4E5C0)
+#define UNITYENGINE_OBJECT_EQUALS_OFFSET UNITYSDK_OFFSET(0x19E4E3A0)
+#define UNITYENGINE_OBJECT_FINDOBJECTFROMINSTANCEID_OFFSET UNITYSDK_OFFSET(0x19E4F3D0)
+#define UNITYENGINE_OBJECT_FINDOBJECTOFTYPE_OFFSET UNITYSDK_OFFSET(0x19E4F200)
+#define UNITYENGINE_OBJECT_FINDOBJECTSOFTYPEALL_OFFSET UNITYSDK_OFFSET(0x19E4F1F0)
+#define UNITYENGINE_OBJECT_FINDOBJECTSOFTYPEINCLUDINGASSETS_OFFSET UNITYSDK_OFFSET(0x19E4F1E0)
+#define UNITYENGINE_OBJECT_FINDOBJECTSOFTYPE_OFFSET UNITYSDK_OFFSET(0x19E4F110)
+#define UNITYENGINE_OBJECT_FINDSCENEOBJECTSOFTYPE_OFFSET UNITYSDK_OFFSET(0x19E4F1D0)
+#define UNITYENGINE_OBJECT_FORCELOADFROMINSTANCEID_OFFSET UNITYSDK_OFFSET(0x19E4F3E0)
+#define UNITYENGINE_OBJECT_GETCACHEDPTR_OFFSET UNITYSDK_OFFSET(0x19E4E660)
+#define UNITYENGINE_OBJECT_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x19E4CF60)
+#define UNITYENGINE_OBJECT_GETINSTANCEID_OFFSET UNITYSDK_OFFSET(0x19E4E2E0)
+#define UNITYENGINE_OBJECT_GETNAME_OFFSET UNITYSDK_OFFSET(0x19E4E6B0)
+#define UNITYENGINE_OBJECT_GETOFFSETOFINSTANCEIDINCPLUSPLUSOBJECT_OFFSET UNITYSDK_OFFSET(0x19E4E390)
+#define UNITYENGINE_OBJECT_GET_HIDEFLAGS_OFFSET UNITYSDK_OFFSET(0x19E4F130)
+#define UNITYENGINE_OBJECT_GET_NAME_OFFSET UNITYSDK_OFFSET(0x19E4E680)
+#define UNITYENGINE_OBJECT_INSTANTIATE_1_OFFSET UNITYSDK_OFFSET(0x19E4E9F0)
+#define UNITYENGINE_OBJECT_INSTANTIATE_2_OFFSET UNITYSDK_OFFSET(0x19E4ECE0)
+#define UNITYENGINE_OBJECT_INSTANTIATE_3_OFFSET UNITYSDK_OFFSET(0x19E4EE00)
+#define UNITYENGINE_OBJECT_INSTANTIATE_4_OFFSET UNITYSDK_OFFSET(0x19E4EE40)
+#define UNITYENGINE_OBJECT_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0x19E4E6D0)
+#define UNITYENGINE_OBJECT_INTERNAL_CLONESINGLEWITHPARENT_OFFSET UNITYSDK_OFFSET(0x19E4F060)
+#define UNITYENGINE_OBJECT_INTERNAL_CLONESINGLE_OFFSET UNITYSDK_OFFSET(0x19E4EDF0)
+#define UNITYENGINE_OBJECT_INTERNAL_INSTANTIATEASYNCWITHPARENT_OFFSET UNITYSDK_OFFSET(0x19E4F380)
+#define UNITYENGINE_OBJECT_INTERNAL_INSTANTIATESINGLEWITHPARENT_INJECTED_OFFSET UNITYSDK_OFFSET(0x19E4F3A0)
+#define UNITYENGINE_OBJECT_INTERNAL_INSTANTIATESINGLEWITHPARENT_OFFSET UNITYSDK_OFFSET(0x19E4EC90)
+#define UNITYENGINE_OBJECT_INTERNAL_INSTANTIATESINGLE_INJECTED_OFFSET UNITYSDK_OFFSET(0x19E4F390)
+#define UNITYENGINE_OBJECT_INTERNAL_INSTANTIATESINGLE_OFFSET UNITYSDK_OFFSET(0x19E4E9A0)
+#define UNITYENGINE_OBJECT_ISCACHEDPTRNULL_OFFSET UNITYSDK_OFFSET(0x19E4E670)
+#define UNITYENGINE_OBJECT_ISNATIVEOBJECTALIVE_OFFSET UNITYSDK_OFFSET(0x19E4E5A0)
+#define UNITYENGINE_OBJECT_ISPERSISTENT_OFFSET UNITYSDK_OFFSET(0x19E4F3B0)
+#define UNITYENGINE_OBJECT_NAMECOMPARE2_OFFSET UNITYSDK_OFFSET(0x19E4F270)
+#define UNITYENGINE_OBJECT_NAMECOMPARE_OFFSET UNITYSDK_OFFSET(0x19E4F260)
+#define UNITYENGINE_OBJECT_NAMECONTAINSINTERNAL2_OFFSET UNITYSDK_OFFSET(0x19E4F330)
+#define UNITYENGINE_OBJECT_NAMECONTAINSINTERNAL_OFFSET UNITYSDK_OFFSET(0x19E4F2E0)
+#define UNITYENGINE_OBJECT_NAMECONTAINS_1_OFFSET UNITYSDK_OFFSET(0x19E4F2F0)
+#define UNITYENGINE_OBJECT_NAMECONTAINS_OFFSET UNITYSDK_OFFSET(0x19E4F2A0)
+#define UNITYENGINE_OBJECT_NAMEENDSWITH_OFFSET UNITYSDK_OFFSET(0x19E4F290)
+#define UNITYENGINE_OBJECT_NAMESTARTSWITH_OFFSET UNITYSDK_OFFSET(0x19E4F280)
+#define UNITYENGINE_OBJECT_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x19E450B0)
+#define UNITYENGINE_OBJECT_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x19E48910)
+#define UNITYENGINE_OBJECT_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x19E44F70)
+#define UNITYENGINE_OBJECT_SETBASEOBJECTTHREADCHECKLEVEL_OFFSET UNITYSDK_OFFSET(0x19E4F3F0)
+#define UNITYENGINE_OBJECT_SETNAME_OFFSET UNITYSDK_OFFSET(0x19E4E6C0)
+#define UNITYENGINE_OBJECT_SET_HIDEFLAGS_OFFSET UNITYSDK_OFFSET(0x19E4D4E0)
+#define UNITYENGINE_OBJECT_SET_NAME_OFFSET UNITYSDK_OFFSET(0x19E49550)
+#define UNITYENGINE_OBJECT_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x19E4F370)
+#define UNITYENGINE_OBJECT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x19E4F340)
+#define UNITYENGINE_OBJECT__CCTOR_OFFSET UNITYSDK_OFFSET(0x19E4F410)
+#define UNITYENGINE_OBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x19E45220)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int Object_TypeDefinitionIndex = 4147;
+	inline static constexpr unsigned int Object_TypeDefinitionIndex = 5366;
 
 	class Object : public ::System::Object
 	{
 	public:
 		static ::System::Int32* StaticGet_OffsetOfInstanceIDInCPlusPlusObject()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Object_TypeDefinitionIndex)->GetStaticField(0x5E50);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Object_TypeDefinitionIndex)->GetStaticField(0x2E60);
 		}
 		// static const ::System::String* objectIsNullMessage; // 0x0
 		// static const ::System::String* cloneDestroyedMessage; // 0x0
@@ -142,6 +140,11 @@ namespace UnityEngine
 			return ((::System::IntPtr(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_GETCACHEDPTR_OFFSET))(this);
 		}
 
+		::System::Boolean IsCachedPtrNULL()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_ISCACHEDPTRNULL_OFFSET))(this);
+		}
+
 		::System::String* get_name()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_GET_NAME_OFFSET))(this);
@@ -150,11 +153,6 @@ namespace UnityEngine
 		::System::Void set_name(::System::String* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_SET_NAME_OFFSET))(this, value);
-		}
-
-		::UnityEngine::NativeString GetNativeName()
-		{
-			return ((::UnityEngine::NativeString(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_GETNATIVENAME_OFFSET))(this);
 		}
 
 		static ::UnityEngine::Object* Instantiate(::UnityEngine::Object* original, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation)
@@ -200,16 +198,6 @@ namespace UnityEngine
 		static ::System::Void DestroyImmediate_1(::UnityEngine::Object* obj)
 		{
 			return ((::System::Void(*)(::UnityEngine::Object*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_DESTROYIMMEDIATE_1_OFFSET))(obj);
-		}
-
-		static ::Il2CppArray<::UnityEngine::Object*>* FindObjectsByType(::System::Type* type, ::UnityEngine::FindObjectsSortMode sortMode)
-		{
-			return ((::Il2CppArray<::UnityEngine::Object*>*(*)(::System::Type*, ::UnityEngine::FindObjectsSortMode))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_FINDOBJECTSBYTYPE_OFFSET))(type, sortMode);
-		}
-
-		static ::Il2CppArray<::UnityEngine::Object*>* FindObjectsByType_1(::System::Type* type, ::UnityEngine::FindObjectsInactive findObjectsInactive, ::UnityEngine::FindObjectsSortMode sortMode)
-		{
-			return ((::Il2CppArray<::UnityEngine::Object*>*(*)(::System::Type*, ::UnityEngine::FindObjectsInactive, ::UnityEngine::FindObjectsSortMode))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_FINDOBJECTSBYTYPE_1_OFFSET))(type, findObjectsInactive, sortMode);
 		}
 
 		static ::Il2CppArray<::UnityEngine::Object*>* FindObjectsOfType(::System::Type* type)
@@ -267,6 +255,46 @@ namespace UnityEngine
 			return ((::UnityEngine::Object*(*)(::System::Type*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_FINDOBJECTOFTYPE_OFFSET))(type);
 		}
 
+		static ::System::Boolean NameCompare(::UnityEngine::Object* obj, ::System::String* name)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Object*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_NAMECOMPARE_OFFSET))(obj, name);
+		}
+
+		static ::System::Boolean NameCompare2(::UnityEngine::Object* obj, ::UnityEngine::Object* other)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Object*, ::UnityEngine::Object*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_NAMECOMPARE2_OFFSET))(obj, other);
+		}
+
+		static ::System::Boolean NameStartsWith(::UnityEngine::Object* obj, ::UnityEngine::Object* other)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Object*, ::UnityEngine::Object*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_NAMESTARTSWITH_OFFSET))(obj, other);
+		}
+
+		static ::System::Boolean NameEndsWith(::UnityEngine::Object* obj, ::UnityEngine::Object* other)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Object*, ::UnityEngine::Object*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_NAMEENDSWITH_OFFSET))(obj, other);
+		}
+
+		static ::System::Boolean NameContains(::UnityEngine::Object* obj, ::System::String* name)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Object*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_NAMECONTAINS_OFFSET))(obj, name);
+		}
+
+		static ::System::Boolean NameContains_1(::UnityEngine::Object* obj, ::UnityEngine::Object* other)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Object*, ::UnityEngine::Object*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_NAMECONTAINS_1_OFFSET))(obj, other);
+		}
+
+		static ::System::Boolean NameContainsInternal2(::UnityEngine::Object* obj, ::UnityEngine::Object* other)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Object*, ::UnityEngine::Object*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_NAMECONTAINSINTERNAL2_OFFSET))(obj, other);
+		}
+
+		static ::System::Boolean NameContainsInternal(::UnityEngine::Object* obj, ::System::String* name)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Object*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_NAMECONTAINSINTERNAL_OFFSET))(obj, name);
+		}
+
 		::System::String* ToString()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_TOSTRING_OFFSET))(this);
@@ -302,6 +330,11 @@ namespace UnityEngine
 			return ((::UnityEngine::Object*(*)(::UnityEngine::Object*, ::UnityEngine::Transform*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_INTERNAL_CLONESINGLEWITHPARENT_OFFSET))(data, parent, worldPositionStays);
 		}
 
+		static ::UnityEngine::AsyncInstantiateOperation* Internal_InstantiateAsyncWithParent(::UnityEngine::Object* original, ::System::Int32 count, ::UnityEngine::Transform* parent, ::System::IntPtr positions, ::System::Int32 positionsCount, ::System::IntPtr rotations, ::System::Int32 rotationsCount)
+		{
+			return ((::UnityEngine::AsyncInstantiateOperation*(*)(::UnityEngine::Object*, ::System::Int32, ::UnityEngine::Transform*, ::System::IntPtr, ::System::Int32, ::System::IntPtr, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_INTERNAL_INSTANTIATEASYNCWITHPARENT_OFFSET))(original, count, parent, positions, positionsCount, rotations, rotationsCount);
+		}
+
 		static ::UnityEngine::Object* Internal_InstantiateSingle(::UnityEngine::Object* data, ::UnityEngine::Vector3 pos, ::UnityEngine::Quaternion rot)
 		{
 			return ((::UnityEngine::Object*(*)(::UnityEngine::Object*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_INTERNAL_INSTANTIATESINGLE_OFFSET))(data, pos, rot);
@@ -320,11 +353,6 @@ namespace UnityEngine
 		static ::System::String* GetName(::UnityEngine::Object* obj)
 		{
 			return ((::System::String*(*)(::UnityEngine::Object*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_GETNAME_OFFSET))(obj);
-		}
-
-		static ::UnityEngine::NativeString GetTypeNameWithNativeString(::UnityEngine::Object* obj)
-		{
-			return ((::UnityEngine::NativeString(*)(::UnityEngine::Object*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_GETTYPENAMEWITHNATIVESTRING_OFFSET))(obj);
 		}
 
 		static ::System::Boolean IsPersistent(::UnityEngine::Object* obj)
@@ -352,24 +380,14 @@ namespace UnityEngine
 			return ((::UnityEngine::Object*(*)(::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_FORCELOADFROMINSTANCEID_OFFSET))(instanceID);
 		}
 
-		static ::UnityEngine::ObjectInstantiateRequest* InstantiateAsync(::UnityEngine::Object* original, ::System::Boolean asyncshadercompile)
+		static ::System::Void SetBaseObjectThreadCheckLevel(::System::Int32 level)
 		{
-			return ((::UnityEngine::ObjectInstantiateRequest*(*)(::UnityEngine::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_INSTANTIATEASYNC_OFFSET))(original, asyncshadercompile);
+			return ((::System::Void(*)(::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_SETBASEOBJECTTHREADCHECKLEVEL_OFFSET))(level);
 		}
 
-		static ::UnityEngine::ObjectInstantiateRequest* Internal_InstantiateAsync(::UnityEngine::Object* original, ::System::Boolean asyncshadercompile)
+		static ::System::Void BatchNullCheck(::System::Collections::Generic::List_1<::UnityEngine::Object*>* objects, ::System::Void* result)
 		{
-			return ((::UnityEngine::ObjectInstantiateRequest*(*)(::UnityEngine::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_INTERNAL_INSTANTIATEASYNC_OFFSET))(original, asyncshadercompile);
-		}
-
-		static ::System::Void Internal_SetShaderAsyncCompileContext(::System::Array* keywords, ::System::Int32 numKey, ::System::Array* tags, ::System::Int32 numTag)
-		{
-			return ((::System::Void(*)(::System::Array*, ::System::Int32, ::System::Array*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_INTERNAL_SETSHADERASYNCCOMPILECONTEXT_OFFSET))(keywords, numKey, tags, numTag);
-		}
-
-		static ::System::Void SetShaderAsyncCompileContext(::System::Collections::Generic::List_1<::UnityEngine::Rendering::ShaderKeyword>* keywords, ::Il2CppArray<::UnityEngine::Rendering::ShaderTagId>* tagids)
-		{
-			return ((::System::Void(*)(::System::Collections::Generic::List_1<::UnityEngine::Rendering::ShaderKeyword>*, ::Il2CppArray<::UnityEngine::Rendering::ShaderTagId>*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_SETSHADERASYNCCOMPILECONTEXT_OFFSET))(keywords, tagids);
+			return ((::System::Void(*)(::System::Collections::Generic::List_1<::UnityEngine::Object*>*, ::System::Void*))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_BATCHNULLCHECK_OFFSET))(objects, result);
 		}
 
 		static ::UnityEngine::Object* Internal_InstantiateSingle_Injected(::UnityEngine::Object* data, ::UnityEngine::Vector3& pos, ::UnityEngine::Quaternion& rot)
@@ -380,11 +398,6 @@ namespace UnityEngine
 		static ::UnityEngine::Object* Internal_InstantiateSingleWithParent_Injected(::UnityEngine::Object* data, ::UnityEngine::Transform* parent, ::UnityEngine::Vector3& pos, ::UnityEngine::Quaternion& rot)
 		{
 			return ((::UnityEngine::Object*(*)(::UnityEngine::Object*, ::UnityEngine::Transform*, ::UnityEngine::Vector3&, ::UnityEngine::Quaternion&))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_INTERNAL_INSTANTIATESINGLEWITHPARENT_INJECTED_OFFSET))(data, parent, pos, rot);
-		}
-
-		static ::System::Void GetTypeNameWithNativeString_Injected(::UnityEngine::Object* obj, ::UnityEngine::NativeString& ret)
-		{
-			return ((::System::Void(*)(::UnityEngine::Object*, ::UnityEngine::NativeString&))((::PBYTE)hIl2Cpp + UNITYENGINE_OBJECT_GETTYPENAMEWITHNATIVESTRING_INJECTED_OFFSET))(obj, ret);
 		}
 	};
 }

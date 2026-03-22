@@ -5,13 +5,15 @@
 namespace Newtonsoft::Json::Serialization { class ErrorContext; }
 namespace System { class Object; }
 
-#define NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS_SET_CURRENTOBJECT_OFFSET UNITYSDK_OFFSET(0x15DC5630)
-#define NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS_SET_ERRORCONTEXT_OFFSET UNITYSDK_OFFSET(0x15DC5640)
-#define NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x15DC5650)
+#define NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS_GET_CURRENTOBJECT_OFFSET UNITYSDK_OFFSET(0x1AC48D10)
+#define NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS_GET_ERRORCONTEXT_OFFSET UNITYSDK_OFFSET(0x1AC48D30)
+#define NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS_SET_CURRENTOBJECT_OFFSET UNITYSDK_OFFSET(0x1AC48D20)
+#define NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS_SET_ERRORCONTEXT_OFFSET UNITYSDK_OFFSET(0x1AC48D40)
+#define NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC48D50)
 
 namespace Newtonsoft::Json::Serialization
 {
-	inline static constexpr unsigned int ErrorEventArgs_TypeDefinitionIndex = 8173;
+	inline static constexpr unsigned int ErrorEventArgs_TypeDefinitionIndex = 6976;
 
 	class ErrorEventArgs : public ::System::EventArgs
 	{
@@ -24,9 +26,19 @@ namespace Newtonsoft::Json::Serialization
 			return ((::System::Void(*)(::PVOID, ::System::Object*, ::Newtonsoft::Json::Serialization::ErrorContext*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS__CTOR_OFFSET))(this, currentObject, errorContext);
 		}
 
+		::System::Object* get_CurrentObject()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS_GET_CURRENTOBJECT_OFFSET))(this);
+		}
+
 		::System::Void set_CurrentObject(::System::Object* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS_SET_CURRENTOBJECT_OFFSET))(this, value);
+		}
+
+		::Newtonsoft::Json::Serialization::ErrorContext* get_ErrorContext()
+		{
+			return ((::Newtonsoft::Json::Serialization::ErrorContext*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_SERIALIZATION_ERROREVENTARGS_GET_ERRORCONTEXT_OFFSET))(this);
 		}
 
 		::System::Void set_ErrorContext(::Newtonsoft::Json::Serialization::ErrorContext* value)

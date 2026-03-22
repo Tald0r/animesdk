@@ -2,22 +2,46 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_NET_TIMERTHREAD_TIMER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17F05A20)
-#define SYSTEM_NET_TIMERTHREAD_TIMER__CTOR_OFFSET UNITYSDK_OFFSET(0x17F059D0)
+#define SYSTEM_NET_TIMERTHREAD_TIMER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x191DF280)
+#define SYSTEM_NET_TIMERTHREAD_TIMER_GET_DURATION_OFFSET UNITYSDK_OFFSET(0x191DF180)
+#define SYSTEM_NET_TIMERTHREAD_TIMER_GET_EXPIRATION_OFFSET UNITYSDK_OFFSET(0x191DF1A0)
+#define SYSTEM_NET_TIMERTHREAD_TIMER_GET_STARTTIME_OFFSET UNITYSDK_OFFSET(0x191DF190)
+#define SYSTEM_NET_TIMERTHREAD_TIMER_GET_TIMEREMAINING_OFFSET UNITYSDK_OFFSET(0x191DF1B0)
+#define SYSTEM_NET_TIMERTHREAD_TIMER__CTOR_OFFSET UNITYSDK_OFFSET(0x191DF130)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int TimerThread_Timer_TypeDefinitionIndex = 2766;
+	inline static constexpr unsigned int TimerThread_Timer_TypeDefinitionIndex = 3397;
 
 	class TimerThread_Timer : public ::System::Object
 	{
 	public:
-		::System::Int32 m_StartTimeMilliseconds; // 0x10
-		::System::Int32 m_DurationMilliseconds; // 0x14
+		::System::Int32 m_DurationMilliseconds; // 0x10
+		::System::Int32 m_StartTimeMilliseconds; // 0x14
 
 		::System::Void _ctor(::System::Int32 durationMilliseconds)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_TIMER__CTOR_OFFSET))(this, durationMilliseconds);
+		}
+
+		::System::Int32 get_Duration()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_TIMER_GET_DURATION_OFFSET))(this);
+		}
+
+		::System::Int32 get_StartTime()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_TIMER_GET_STARTTIME_OFFSET))(this);
+		}
+
+		::System::Int32 get_Expiration()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_TIMER_GET_EXPIRATION_OFFSET))(this);
+		}
+
+		::System::Int32 get_TimeRemaining()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_TIMER_GET_TIMEREMAINING_OFFSET))(this);
 		}
 
 		::System::Void Dispose()

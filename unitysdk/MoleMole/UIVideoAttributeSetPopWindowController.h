@@ -1,0 +1,114 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_208CC9941471731A_618;
+class Class_2_79F6D62CE30E3F8E_179;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xACF5230)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONATTRIBUTESELECTHANDLE_OFFSET UNITYSDK_OFFSET(0xACF5C80)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONCLOSECLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xACF5E40)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xACF5240)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xACF5EB0)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xACF52E0)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xACF5640)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONUSECLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xACF5D90)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xACF5780)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xACF5F40)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xACF5F50)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xACF5FC0)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xACF5FD0)
+#define MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xACF5FE0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVideoAttributeSetPopWindowController_TypeDefinitionIndex = 69968;
+
+	class UIVideoAttributeSetPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_179* _view; // 0x2F8
+		::System::Int32 selectPosition; // 0x300
+		::System::Int32 itemID; // 0x304
+		::System::Int32 costNum; // 0x308
+		::System::Int32 defaultSelectPropertyID; // 0x30C
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_618*>* propertyList; // 0x310
+		::Class_2_208CC9941471731A_618* selectPropertyCfg; // 0x318
+		::System::Action_1<::Class_2_208CC9941471731A_618*>* selectPropertyHandle; // 0x320
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnAttributeSelectHandle(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONATTRIBUTESELECTHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnUseClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONUSECLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnCloseClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONCLOSECLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOATTRIBUTESETPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -9,36 +9,37 @@ namespace System::Collections { class IEnumerator; }
 namespace System::Text::RegularExpressions { class Match; }
 namespace System::Text::RegularExpressions { class Regex; }
 
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_COPYTO_OFFSET UNITYSDK_OFFSET(0x17F29A30)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x17F29BE0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GETMATCH_OFFSET UNITYSDK_OFFSET(0x17F297F0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x17F29950)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x17F299D0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x17F299E0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x17F299C0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION__CCTOR_OFFSET UNITYSDK_OFFSET(0x17F29C10)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F29C20)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x17F29730)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_COPYTO_OFFSET UNITYSDK_OFFSET(0x1824E6E0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1824E890)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GETMATCH_OFFSET UNITYSDK_OFFSET(0x1824E470)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x1824E5D0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x1824E660)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x1824E650)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x1824E670)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x1824E640)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION__CCTOR_OFFSET UNITYSDK_OFFSET(0x1824E8C0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1824E8D0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1824E3B0)
 
 namespace System::Text::RegularExpressions
 {
-	inline static constexpr unsigned int MatchCollection_TypeDefinitionIndex = 2503;
+	inline static constexpr unsigned int MatchCollection_TypeDefinitionIndex = 2742;
 
 	class MatchCollection : public ::System::Object
 	{
 	public:
 		static ::System::Int32* StaticGet_infinite()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MatchCollection_TypeDefinitionIndex)->GetStaticField(0x5270);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MatchCollection_TypeDefinitionIndex)->GetStaticField(0x1150);
 		}
 		::System::String* _input; // 0x10
-		::System::Text::RegularExpressions::Regex* _regex; // 0x18
-		::System::Collections::ArrayList* _matches; // 0x20
-		::System::Int32 _beginning; // 0x28
-		::System::Int32 _prevlen; // 0x2C
-		::System::Int32 _length; // 0x30
-		::System::Int32 _startat; // 0x34
-		::System::Boolean _done; // 0x38
+		::System::Collections::ArrayList* _matches; // 0x18
+		::System::Text::RegularExpressions::Regex* _regex; // 0x20
+		::System::Boolean _done; // 0x28
+		::System::Int32 _length; // 0x2C
+		::System::Int32 _startat; // 0x30
+		::System::Int32 _prevlen; // 0x34
+		::System::Int32 _beginning; // 0x38
 
 		::System::Void _ctor(::System::Text::RegularExpressions::Regex* regex, ::System::String* input, ::System::Int32 beginning, ::System::Int32 length, ::System::Int32 startat)
 		{
@@ -73,6 +74,11 @@ namespace System::Text::RegularExpressions
 		::System::Boolean get_IsSynchronized()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GET_ISSYNCHRONIZED_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsReadOnly()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHCOLLECTION_GET_ISREADONLY_OFFSET))(this);
 		}
 
 		::System::Text::RegularExpressions::Match* get_Item(::System::Int32 i)

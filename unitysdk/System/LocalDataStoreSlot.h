@@ -4,41 +4,29 @@
 
 namespace System { class LocalDataStoreMgr; }
 
-#define SYSTEM_LOCALDATASTORESLOT_FINALIZE_OFFSET UNITYSDK_OFFSET(0x15C9D630)
-#define SYSTEM_LOCALDATASTORESLOT_GET_COOKIE_OFFSET UNITYSDK_OFFSET(0x15C9D620)
-#define SYSTEM_LOCALDATASTORESLOT_GET_MANAGER_OFFSET UNITYSDK_OFFSET(0x15C9D600)
-#define SYSTEM_LOCALDATASTORESLOT_GET_SLOT_OFFSET UNITYSDK_OFFSET(0x15C9D610)
-#define SYSTEM_LOCALDATASTORESLOT__CTOR_OFFSET UNITYSDK_OFFSET(0x15C9CFD0)
+#define SYSTEM_LOCALDATASTORESLOT_FINALIZE_OFFSET UNITYSDK_OFFSET(0x19B72750)
+#define SYSTEM_LOCALDATASTORESLOT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19B727D0)
+#define SYSTEM_LOCALDATASTORESLOT__CTOR_OFFSET UNITYSDK_OFFSET(0x19B72740)
 
 namespace System
 {
-	inline static constexpr unsigned int LocalDataStoreSlot_TypeDefinitionIndex = 167;
+	inline static constexpr unsigned int LocalDataStoreSlot_TypeDefinitionIndex = 154;
 
 	class LocalDataStoreSlot : public ::System::Object
 	{
 	public:
 		::System::LocalDataStoreMgr* m_mgr; // 0x10
-		::System::Int64 m_cookie; // 0x18
-		::System::Int32 m_slot; // 0x20
+		::System::Int32 m_slot; // 0x18
+		::System::Int64 m_cookie; // 0x20
 
 		::System::Void _ctor(::System::LocalDataStoreMgr* mgr, ::System::Int32 slot, ::System::Int64 cookie)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::LocalDataStoreMgr*, ::System::Int32, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_LOCALDATASTORESLOT__CTOR_OFFSET))(this, mgr, slot, cookie);
 		}
 
-		::System::LocalDataStoreMgr* get_Manager()
+		::System::Void _ctor_1()
 		{
-			return ((::System::LocalDataStoreMgr*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LOCALDATASTORESLOT_GET_MANAGER_OFFSET))(this);
-		}
-
-		::System::Int32 get_Slot()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LOCALDATASTORESLOT_GET_SLOT_OFFSET))(this);
-		}
-
-		::System::Int64 get_Cookie()
-		{
-			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LOCALDATASTORESLOT_GET_COOKIE_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LOCALDATASTORESLOT__CTOR_1_OFFSET))(this);
 		}
 
 		::System::Void Finalize()

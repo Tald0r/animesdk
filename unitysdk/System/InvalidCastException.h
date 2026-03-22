@@ -7,14 +7,15 @@ namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_INVALIDCASTEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C9A280)
-#define SYSTEM_INVALIDCASTEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C9BCC0)
-#define SYSTEM_INVALIDCASTEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15C9BD30)
-#define SYSTEM_INVALIDCASTEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C9BC20)
+#define SYSTEM_INVALIDCASTEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19431460)
+#define SYSTEM_INVALIDCASTEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1943ED40)
+#define SYSTEM_INVALIDCASTEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1943EDB0)
+#define SYSTEM_INVALIDCASTEXCEPTION__CTOR_4_OFFSET UNITYSDK_OFFSET(0x1943EE00)
+#define SYSTEM_INVALIDCASTEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1943ECA0)
 
 namespace System
 {
-	inline static constexpr unsigned int InvalidCastException_TypeDefinitionIndex = 288;
+	inline static constexpr unsigned int InvalidCastException_TypeDefinitionIndex = 275;
 
 	class InvalidCastException : public ::System::SystemException
 	{
@@ -37,6 +38,11 @@ namespace System
 		::System::Void _ctor_3(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_INVALIDCASTEXCEPTION__CTOR_3_OFFSET))(this, info, context);
+		}
+
+		::System::Void _ctor_4(::System::String* message, ::System::Int32 errorCode)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_INVALIDCASTEXCEPTION__CTOR_4_OFFSET))(this, message, errorCode);
 		}
 	};
 }

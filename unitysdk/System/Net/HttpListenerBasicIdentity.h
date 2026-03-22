@@ -4,11 +4,12 @@
 
 namespace System { class String; }
 
-#define SYSTEM_NET_HTTPLISTENERBASICIDENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0x17ED1400)
+#define SYSTEM_NET_HTTPLISTENERBASICIDENTITY_GET_PASSWORD_OFFSET UNITYSDK_OFFSET(0x19688280)
+#define SYSTEM_NET_HTTPLISTENERBASICIDENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0x19688230)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int HttpListenerBasicIdentity_TypeDefinitionIndex = 2830;
+	inline static constexpr unsigned int HttpListenerBasicIdentity_TypeDefinitionIndex = 3525;
 
 	class HttpListenerBasicIdentity : public ::System::Security::Principal::GenericIdentity
 	{
@@ -18,6 +19,11 @@ namespace System::Net
 		::System::Void _ctor(::System::String* username, ::System::String* password)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENERBASICIDENTITY__CTOR_OFFSET))(this, username, password);
+		}
+
+		::System::String* get_Password()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENERBASICIDENTITY_GET_PASSWORD_OFFSET))(this);
 		}
 	};
 }

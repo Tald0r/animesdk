@@ -4,25 +4,36 @@
 
 namespace System { class String; }
 
-#define SYSTEM_DOMAINNAMEHELPER_IDNEQUIVALENT_1_OFFSET UNITYSDK_OFFSET(0x17E94370)
-#define SYSTEM_DOMAINNAMEHELPER_IDNEQUIVALENT_OFFSET UNITYSDK_OFFSET(0x17E94070)
-#define SYSTEM_DOMAINNAMEHELPER_ISASCIILETTERORDIGIT_OFFSET UNITYSDK_OFFSET(0x17E93E30)
-#define SYSTEM_DOMAINNAMEHELPER_ISIDNACE_1_OFFSET UNITYSDK_OFFSET(0x17E945F0)
-#define SYSTEM_DOMAINNAMEHELPER_ISIDNACE_OFFSET UNITYSDK_OFFSET(0x17E94620)
-#define SYSTEM_DOMAINNAMEHELPER_ISVALIDBYIRI_OFFSET UNITYSDK_OFFSET(0x17E93EA0)
-#define SYSTEM_DOMAINNAMEHELPER_ISVALIDDOMAINLABELCHARACTER_OFFSET UNITYSDK_OFFSET(0x17E93E60)
-#define SYSTEM_DOMAINNAMEHELPER_ISVALID_OFFSET UNITYSDK_OFFSET(0x17E93CC0)
-#define SYSTEM_DOMAINNAMEHELPER_PARSECANONICALNAME_OFFSET UNITYSDK_OFFSET(0x17E93AF0)
-#define SYSTEM_DOMAINNAMEHELPER_UNICODEEQUIVALENT_1_OFFSET UNITYSDK_OFFSET(0x17E94860)
-#define SYSTEM_DOMAINNAMEHELPER_UNICODEEQUIVALENT_OFFSET UNITYSDK_OFFSET(0x17E94720)
+#define SYSTEM_DOMAINNAMEHELPER_IDNEQUIVALENT_1_OFFSET UNITYSDK_OFFSET(0x1909C300)
+#define SYSTEM_DOMAINNAMEHELPER_IDNEQUIVALENT_2_OFFSET UNITYSDK_OFFSET(0x1909C600)
+#define SYSTEM_DOMAINNAMEHELPER_IDNEQUIVALENT_OFFSET UNITYSDK_OFFSET(0x1909C2C0)
+#define SYSTEM_DOMAINNAMEHELPER_ISASCIILETTERORDIGIT_OFFSET UNITYSDK_OFFSET(0x1909C080)
+#define SYSTEM_DOMAINNAMEHELPER_ISIDNACE_1_OFFSET UNITYSDK_OFFSET(0x1909C870)
+#define SYSTEM_DOMAINNAMEHELPER_ISIDNACE_OFFSET UNITYSDK_OFFSET(0x1909C8A0)
+#define SYSTEM_DOMAINNAMEHELPER_ISVALIDBYIRI_OFFSET UNITYSDK_OFFSET(0x1909C0F0)
+#define SYSTEM_DOMAINNAMEHELPER_ISVALIDDOMAINLABELCHARACTER_OFFSET UNITYSDK_OFFSET(0x1909C0B0)
+#define SYSTEM_DOMAINNAMEHELPER_ISVALID_OFFSET UNITYSDK_OFFSET(0x1909BF10)
+#define SYSTEM_DOMAINNAMEHELPER_PARSECANONICALNAME_OFFSET UNITYSDK_OFFSET(0x1909BD40)
+#define SYSTEM_DOMAINNAMEHELPER_UNICODEEQUIVALENT_1_OFFSET UNITYSDK_OFFSET(0x1909CAE0)
+#define SYSTEM_DOMAINNAMEHELPER_UNICODEEQUIVALENT_OFFSET UNITYSDK_OFFSET(0x1909C9A0)
+#define SYSTEM_DOMAINNAMEHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x1909BD30)
 
 namespace System
 {
-	inline static constexpr unsigned int DomainNameHelper_TypeDefinitionIndex = 2463;
+	inline static constexpr unsigned int DomainNameHelper_TypeDefinitionIndex = 2691;
 
 	class DomainNameHelper : public ::System::Object
 	{
 	public:
+		// static const ::System::Char c_DummyChar; // 0x0
+		// static const ::System::String* Localhost; // 0x0
+		// static const ::System::String* Loopback; // 0x0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DOMAINNAMEHELPER__CTOR_OFFSET))(this);
+		}
+
 		static ::System::String* ParseCanonicalName(::System::String* str, ::System::Int32 start, ::System::Int32 end, ::System::Boolean& loopback)
 		{
 			return ((::System::String*(*)(::System::String*, ::System::Int32, ::System::Int32, ::System::Boolean&))((::PBYTE)hIl2Cpp + SYSTEM_DOMAINNAMEHELPER_PARSECANONICALNAME_OFFSET))(str, start, end, loopback);
@@ -38,14 +49,19 @@ namespace System
 			return ((::System::Boolean(*)(::System::Char*, ::System::UInt16, ::System::Int32&, ::System::Boolean&, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_DOMAINNAMEHELPER_ISVALIDBYIRI_OFFSET))(name, pos, returnedEnd, notCanonical, notImplicitFile);
 		}
 
-		static ::System::String* IdnEquivalent(::System::Char* hostname, ::System::Int32 start, ::System::Int32 end, ::System::Boolean& allAscii, ::System::Boolean& atLeastOneValidIdn)
+		static ::System::String* IdnEquivalent(::System::String* hostname)
 		{
-			return ((::System::String*(*)(::System::Char*, ::System::Int32, ::System::Int32, ::System::Boolean&, ::System::Boolean&))((::PBYTE)hIl2Cpp + SYSTEM_DOMAINNAMEHELPER_IDNEQUIVALENT_OFFSET))(hostname, start, end, allAscii, atLeastOneValidIdn);
+			return ((::System::String*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DOMAINNAMEHELPER_IDNEQUIVALENT_OFFSET))(hostname);
 		}
 
-		static ::System::String* IdnEquivalent_1(::System::Char* hostname, ::System::Int32 start, ::System::Int32 end, ::System::Boolean& allAscii, ::System::String*& bidiStrippedHost)
+		static ::System::String* IdnEquivalent_1(::System::Char* hostname, ::System::Int32 start, ::System::Int32 end, ::System::Boolean& allAscii, ::System::Boolean& atLeastOneValidIdn)
 		{
-			return ((::System::String*(*)(::System::Char*, ::System::Int32, ::System::Int32, ::System::Boolean&, ::System::String*&))((::PBYTE)hIl2Cpp + SYSTEM_DOMAINNAMEHELPER_IDNEQUIVALENT_1_OFFSET))(hostname, start, end, allAscii, bidiStrippedHost);
+			return ((::System::String*(*)(::System::Char*, ::System::Int32, ::System::Int32, ::System::Boolean&, ::System::Boolean&))((::PBYTE)hIl2Cpp + SYSTEM_DOMAINNAMEHELPER_IDNEQUIVALENT_1_OFFSET))(hostname, start, end, allAscii, atLeastOneValidIdn);
+		}
+
+		static ::System::String* IdnEquivalent_2(::System::Char* hostname, ::System::Int32 start, ::System::Int32 end, ::System::Boolean& allAscii, ::System::String*& bidiStrippedHost)
+		{
+			return ((::System::String*(*)(::System::Char*, ::System::Int32, ::System::Int32, ::System::Boolean&, ::System::String*&))((::PBYTE)hIl2Cpp + SYSTEM_DOMAINNAMEHELPER_IDNEQUIVALENT_2_OFFSET))(hostname, start, end, allAscii, bidiStrippedHost);
 		}
 
 		static ::System::Boolean IsIdnAce(::System::String* input, ::System::Int32 index)

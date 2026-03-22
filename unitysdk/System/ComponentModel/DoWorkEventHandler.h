@@ -1,0 +1,42 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/MulticastDelegate.h"
+
+namespace System { class AsyncCallback; }
+namespace System { class IAsyncResult; }
+namespace System { class Object; }
+namespace System::ComponentModel { class DoWorkEventArgs; }
+
+#define SYSTEM_COMPONENTMODEL_DOWORKEVENTHANDLER_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x19090740)
+#define SYSTEM_COMPONENTMODEL_DOWORKEVENTHANDLER_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x19090780)
+#define SYSTEM_COMPONENTMODEL_DOWORKEVENTHANDLER_INVOKE_OFFSET UNITYSDK_OFFSET(0x190901C0)
+#define SYSTEM_COMPONENTMODEL_DOWORKEVENTHANDLER__CTOR_OFFSET UNITYSDK_OFFSET(0x190901B0)
+
+namespace System::ComponentModel
+{
+	inline static constexpr unsigned int DoWorkEventHandler_TypeDefinitionIndex = 2872;
+
+	class DoWorkEventHandler : public ::System::MulticastDelegate
+	{
+	public:
+		::System::Void _ctor(::System::Object* object, ::System::IntPtr method)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DOWORKEVENTHANDLER__CTOR_OFFSET))(this, object, method);
+		}
+
+		::System::Void Invoke(::System::Object* sender, ::System::ComponentModel::DoWorkEventArgs* e)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::ComponentModel::DoWorkEventArgs*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DOWORKEVENTHANDLER_INVOKE_OFFSET))(this, sender, e);
+		}
+
+		::System::IAsyncResult* BeginInvoke(::System::Object* sender, ::System::ComponentModel::DoWorkEventArgs* e, ::System::AsyncCallback* callback, ::System::Object* object)
+		{
+			return ((::System::IAsyncResult*(*)(::PVOID, ::System::Object*, ::System::ComponentModel::DoWorkEventArgs*, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DOWORKEVENTHANDLER_BEGININVOKE_OFFSET))(this, sender, e, callback, object);
+		}
+
+		::System::Void EndInvoke(::System::IAsyncResult* result)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::IAsyncResult*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DOWORKEVENTHANDLER_ENDINVOKE_OFFSET))(this, result);
+		}
+	};
+}

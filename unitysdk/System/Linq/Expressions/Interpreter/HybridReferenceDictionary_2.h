@@ -8,7 +8,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerator
 
 namespace System::Linq::Expressions::Interpreter
 {
-	inline static constexpr unsigned int HybridReferenceDictionary_2_TypeDefinitionIndex = 3640;
+	inline static constexpr unsigned int HybridReferenceDictionary_2_TypeDefinitionIndex = 4936;
 
 	template <typename TKey, typename TValue>
 	class HybridReferenceDictionary_2 : public ::System::Object
@@ -16,5 +16,6 @@ namespace System::Linq::Expressions::Interpreter
 	public:
 		::Il2CppArray<::System::Collections::Generic::KeyValuePair_2<TKey, TValue>>* _keysAndValues; // 0x0
 		::System::Collections::Generic::Dictionary_2<TKey, TValue>* _dict; // 0x0
+		// static const ::System::Int32 ArraySize = 0xA; // 0x0
 	};
 }

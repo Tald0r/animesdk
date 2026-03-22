@@ -3,20 +3,25 @@
 #include "unitysdk/System/Linq/Expressions/Interpreter/Instruction.h"
 #include "unitysdk/System/Linq/Expressions/Interpreter/RuntimeLabel.h"
 
+namespace System { class Object; }
 namespace System { class String; }
+namespace System { template <typename T1, typename T2> class Func_2; }
+namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
 namespace System::Linq::Expressions::Interpreter { class InterpretedFrame; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INDEXEDBRANCHINSTRUCTION_GETLABEL_OFFSET UNITYSDK_OFFSET(0x17CBFB10)
-#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INDEXEDBRANCHINSTRUCTION_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17CC8B50)
-#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INDEXEDBRANCHINSTRUCTION__CTOR_OFFSET UNITYSDK_OFFSET(0x17CBF8D0)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INDEXEDBRANCHINSTRUCTION_GETLABEL_OFFSET UNITYSDK_OFFSET(0x1B001210)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INDEXEDBRANCHINSTRUCTION_TODEBUGSTRING_OFFSET UNITYSDK_OFFSET(0x1B001270)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INDEXEDBRANCHINSTRUCTION_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1B0013B0)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INDEXEDBRANCHINSTRUCTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1B001200)
 
 namespace System::Linq::Expressions::Interpreter
 {
-	inline static constexpr unsigned int IndexedBranchInstruction_TypeDefinitionIndex = 3301;
+	inline static constexpr unsigned int IndexedBranchInstruction_TypeDefinitionIndex = 4593;
 
 	class IndexedBranchInstruction : public ::System::Linq::Expressions::Interpreter::Instruction
 	{
 	public:
+		// static const ::System::Int32 CacheSize = 0x20; // 0x0
 		::System::Int32 _labelIndex; // 0x10
 
 		::System::Void _ctor(::System::Int32 labelIndex)
@@ -27,6 +32,11 @@ namespace System::Linq::Expressions::Interpreter
 		::System::Linq::Expressions::Interpreter::RuntimeLabel GetLabel(::System::Linq::Expressions::Interpreter::InterpretedFrame* frame)
 		{
 			return ((::System::Linq::Expressions::Interpreter::RuntimeLabel(*)(::PVOID, ::System::Linq::Expressions::Interpreter::InterpretedFrame*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INDEXEDBRANCHINSTRUCTION_GETLABEL_OFFSET))(this, frame);
+		}
+
+		::System::String* ToDebugString(::System::Int32 instructionIndex, ::System::Object* cookie, ::System::Func_2<::System::Int32, ::System::Int32>* labelIndexer, ::System::Collections::Generic::IReadOnlyList_1<::System::Object*>* objects)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Func_2<::System::Int32, ::System::Int32>*, ::System::Collections::Generic::IReadOnlyList_1<::System::Object*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INDEXEDBRANCHINSTRUCTION_TODEBUGSTRING_OFFSET))(this, instructionIndex, cookie, labelIndexer, objects);
 		}
 
 		::System::String* ToString()

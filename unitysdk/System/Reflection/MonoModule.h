@@ -11,72 +11,78 @@ namespace System::Reflection { class Assembly; }
 namespace System::Reflection { class RuntimeAssembly; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_REFLECTION_MONOMODULE_GETCUSTOMATTRIBUTES_1_OFFSET UNITYSDK_OFFSET(0x15CC7160)
-#define SYSTEM_REFLECTION_MONOMODULE_GETCUSTOMATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x15CC7150)
-#define SYSTEM_REFLECTION_MONOMODULE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x15CC7180)
-#define SYSTEM_REFLECTION_MONOMODULE_GETRUNTIMEASSEMBLY_OFFSET UNITYSDK_OFFSET(0x15CC7280)
-#define SYSTEM_REFLECTION_MONOMODULE_GET_ASSEMBLY_OFFSET UNITYSDK_OFFSET(0x15CC70E0)
-#define SYSTEM_REFLECTION_MONOMODULE_GET_MODULEVERSIONID_OFFSET UNITYSDK_OFFSET(0x15CC7100)
-#define SYSTEM_REFLECTION_MONOMODULE_GET_SCOPENAME_OFFSET UNITYSDK_OFFSET(0x15CC70F0)
-#define SYSTEM_REFLECTION_MONOMODULE_ISDEFINED_OFFSET UNITYSDK_OFFSET(0x15CC7170)
-#define SYSTEM_REFLECTION_MONOMODULE_ISRESOURCE_OFFSET UNITYSDK_OFFSET(0x15CC7140)
-#define SYSTEM_REFLECTION_MONOMODULE__CTOR_OFFSET UNITYSDK_OFFSET(0x15CC72F0)
+#define SYSTEM_REFLECTION_MONOMODULE_METHOD_3_126AB3935214AA22_1_OFFSET UNITYSDK_OFFSET(0x17FD7580)
+#define SYSTEM_REFLECTION_MONOMODULE_METHOD_3_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0x17FD7530)
+#define SYSTEM_REFLECTION_MONOMODULE_METHOD_3_6148F4753B6872B6_OFFSET UNITYSDK_OFFSET(0x17FD75B0)
+#define SYSTEM_REFLECTION_MONOMODULE_METHOD_3_A27AD73ED4EC8EA1_OFFSET UNITYSDK_OFFSET(0x17FD75D0)
+#define SYSTEM_REFLECTION_MONOMODULE_METHOD_3_C0B669C1C81DA065_OFFSET UNITYSDK_OFFSET(0x17FD75A0)
+#define SYSTEM_REFLECTION_MONOMODULE_METHOD_3_C4956DB9C5EDE438_OFFSET UNITYSDK_OFFSET(0x17FD7520)
+#define SYSTEM_REFLECTION_MONOMODULE_METHOD_3_D2D7B48E5CB284C7_OFFSET UNITYSDK_OFFSET(0x17FD75C0)
+#define SYSTEM_REFLECTION_MONOMODULE_METHOD_3_EFDFDE54D3FC00B2_OFFSET UNITYSDK_OFFSET(0x17FD7690)
+#define SYSTEM_REFLECTION_MONOMODULE_METHOD_3_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x17FD7590)
+#define SYSTEM_REFLECTION_MONOMODULE_METHOD_3_F4779E52B1AE4857_OFFSET UNITYSDK_OFFSET(0x17FD7540)
+#define SYSTEM_REFLECTION_MONOMODULE_METHOD_3_F8C7231308CD2C82_OFFSET UNITYSDK_OFFSET(0x17FD76E0)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int MonoModule_TypeDefinitionIndex = 624;
+	inline static constexpr unsigned int MonoModule_TypeDefinitionIndex = 597;
 
 	class MonoModule : public ::System::Reflection::RuntimeModule
 	{
 	public:
-		::System::Void _ctor()
+		::System::Void Method_3_F8C7231308CD2C82()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_METHOD_3_F8C7231308CD2C82_OFFSET))(this);
 		}
 
-		::System::Reflection::Assembly* get_Assembly()
+		::System::Reflection::Assembly* Method_3_C4956DB9C5EDE438()
 		{
-			return ((::System::Reflection::Assembly*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_GET_ASSEMBLY_OFFSET))(this);
+			return ((::System::Reflection::Assembly*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_METHOD_3_C4956DB9C5EDE438_OFFSET))(this);
 		}
 
-		::System::String* get_ScopeName()
+		::System::String* Method_3_126AB3935214AA22()
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_GET_SCOPENAME_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_METHOD_3_126AB3935214AA22_OFFSET))(this);
 		}
 
-		::System::Guid get_ModuleVersionId()
+		::System::Guid Method_3_F4779E52B1AE4857()
 		{
-			return ((::System::Guid(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_GET_MODULEVERSIONID_OFFSET))(this);
+			return ((::System::Guid(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_METHOD_3_F4779E52B1AE4857_OFFSET))(this);
 		}
 
-		::System::Boolean IsResource()
+		::System::String* Method_3_126AB3935214AA22_1()
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_ISRESOURCE_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_METHOD_3_126AB3935214AA22_1_OFFSET))(this);
 		}
 
-		::Il2CppArray<::System::Object*>* GetCustomAttributes(::System::Boolean inherit)
+		::System::Boolean Method_3_F0088C88851A7DFB()
 		{
-			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_GETCUSTOMATTRIBUTES_OFFSET))(this, inherit);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_METHOD_3_F0088C88851A7DFB_OFFSET))(this);
 		}
 
-		::Il2CppArray<::System::Object*>* GetCustomAttributes_1(::System::Type* attributeType, ::System::Boolean inherit)
+		::Il2CppArray<::System::Object*>* Method_3_C0B669C1C81DA065(::System::Boolean inherit)
 		{
-			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_GETCUSTOMATTRIBUTES_1_OFFSET))(this, attributeType, inherit);
+			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_METHOD_3_C0B669C1C81DA065_OFFSET))(this, inherit);
 		}
 
-		::System::Boolean IsDefined(::System::Type* attributeType, ::System::Boolean inherit)
+		::Il2CppArray<::System::Object*>* Method_3_6148F4753B6872B6(::System::Type* attributeType, ::System::Boolean inherit)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_ISDEFINED_OFFSET))(this, attributeType, inherit);
+			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_METHOD_3_6148F4753B6872B6_OFFSET))(this, attributeType, inherit);
 		}
 
-		::System::Void GetObjectData(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::Boolean Method_3_D2D7B48E5CB284C7(::System::Type* attributeType, ::System::Boolean inherit)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_GETOBJECTDATA_OFFSET))(this, info, context);
+			return ((::System::Boolean(*)(::PVOID, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_METHOD_3_D2D7B48E5CB284C7_OFFSET))(this, attributeType, inherit);
 		}
 
-		::System::Reflection::RuntimeAssembly* GetRuntimeAssembly()
+		::System::Void Method_3_A27AD73ED4EC8EA1(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
-			return ((::System::Reflection::RuntimeAssembly*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_GETRUNTIMEASSEMBLY_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_METHOD_3_A27AD73ED4EC8EA1_OFFSET))(this, info, context);
+		}
+
+		::System::Reflection::RuntimeAssembly* Method_3_EFDFDE54D3FC00B2()
+		{
+			return ((::System::Reflection::RuntimeAssembly*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMODULE_METHOD_3_EFDFDE54D3FC00B2_OFFSET))(this);
 		}
 	};
 }

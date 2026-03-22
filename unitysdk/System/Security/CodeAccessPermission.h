@@ -8,19 +8,21 @@ namespace System { class Type; }
 namespace System::Security { class IPermission; }
 namespace System::Security { class SecurityElement; }
 
-#define SYSTEM_SECURITY_CODEACCESSPERMISSION_CHECKPERMISSIONSTATE_OFFSET UNITYSDK_OFFSET(0x15D55D60)
-#define SYSTEM_SECURITY_CODEACCESSPERMISSION_DEMAND_OFFSET UNITYSDK_OFFSET(0x15D55A40)
-#define SYSTEM_SECURITY_CODEACCESSPERMISSION_ELEMENT_OFFSET UNITYSDK_OFFSET(0x15D55C30)
-#define SYSTEM_SECURITY_CODEACCESSPERMISSION_EQUALS_OFFSET UNITYSDK_OFFSET(0x15D55A70)
-#define SYSTEM_SECURITY_CODEACCESSPERMISSION_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x15D55BF0)
-#define SYSTEM_SECURITY_CODEACCESSPERMISSION_SYSTEM_SECURITY_IPERMISSION_DEMAND_OFFSET UNITYSDK_OFFSET(0x15D55E80)
-#define SYSTEM_SECURITY_CODEACCESSPERMISSION_THROWINVALIDPERMISSION_OFFSET UNITYSDK_OFFSET(0x15D55DF0)
-#define SYSTEM_SECURITY_CODEACCESSPERMISSION_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15D55C00)
-#define SYSTEM_SECURITY_CODEACCESSPERMISSION__CTOR_OFFSET UNITYSDK_OFFSET(0x15D55A30)
+#define SYSTEM_SECURITY_CODEACCESSPERMISSION_CHECKPERMISSIONSTATE_OFFSET UNITYSDK_OFFSET(0x18F0F5D0)
+#define SYSTEM_SECURITY_CODEACCESSPERMISSION_CHECKSECURITYELEMENT_OFFSET UNITYSDK_OFFSET(0x18F0F660)
+#define SYSTEM_SECURITY_CODEACCESSPERMISSION_DEMAND_OFFSET UNITYSDK_OFFSET(0x18F0F310)
+#define SYSTEM_SECURITY_CODEACCESSPERMISSION_ELEMENT_OFFSET UNITYSDK_OFFSET(0x18F0F4A0)
+#define SYSTEM_SECURITY_CODEACCESSPERMISSION_EQUALS_OFFSET UNITYSDK_OFFSET(0x18F0F320)
+#define SYSTEM_SECURITY_CODEACCESSPERMISSION_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x18F0F400)
+#define SYSTEM_SECURITY_CODEACCESSPERMISSION_ISUNRESTRICTED_OFFSET UNITYSDK_OFFSET(0x18F0F930)
+#define SYSTEM_SECURITY_CODEACCESSPERMISSION_THROWINVALIDPERMISSION_OFFSET UNITYSDK_OFFSET(0x18F0FAB0)
+#define SYSTEM_SECURITY_CODEACCESSPERMISSION_TOSTRING_OFFSET UNITYSDK_OFFSET(0x18F0F410)
+#define SYSTEM_SECURITY_CODEACCESSPERMISSION_UNION_OFFSET UNITYSDK_OFFSET(0x18F0F440)
+#define SYSTEM_SECURITY_CODEACCESSPERMISSION__CTOR_OFFSET UNITYSDK_OFFSET(0x18F0F300)
 
 namespace System::Security
 {
-	inline static constexpr unsigned int CodeAccessPermission_TypeDefinitionIndex = 930;
+	inline static constexpr unsigned int CodeAccessPermission_TypeDefinitionIndex = 942;
 
 	class CodeAccessPermission : public ::System::Object
 	{
@@ -50,6 +52,11 @@ namespace System::Security
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CODEACCESSPERMISSION_TOSTRING_OFFSET))(this);
 		}
 
+		::System::Security::IPermission* Union(::System::Security::IPermission* other)
+		{
+			return ((::System::Security::IPermission*(*)(::PVOID, ::System::Security::IPermission*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CODEACCESSPERMISSION_UNION_OFFSET))(this, other);
+		}
+
 		::System::Security::SecurityElement* Element(::System::Int32 version)
 		{
 			return ((::System::Security::SecurityElement*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CODEACCESSPERMISSION_ELEMENT_OFFSET))(this, version);
@@ -60,14 +67,19 @@ namespace System::Security
 			return ((::System::Security::Permissions::PermissionState(*)(::System::Security::Permissions::PermissionState, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CODEACCESSPERMISSION_CHECKPERMISSIONSTATE_OFFSET))(state, allowUnrestricted);
 		}
 
+		static ::System::Int32 CheckSecurityElement(::System::Security::SecurityElement* se, ::System::String* parameterName, ::System::Int32 minimumVersion, ::System::Int32 maximumVersion)
+		{
+			return ((::System::Int32(*)(::System::Security::SecurityElement*, ::System::String*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CODEACCESSPERMISSION_CHECKSECURITYELEMENT_OFFSET))(se, parameterName, minimumVersion, maximumVersion);
+		}
+
+		static ::System::Boolean IsUnrestricted(::System::Security::SecurityElement* se)
+		{
+			return ((::System::Boolean(*)(::System::Security::SecurityElement*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CODEACCESSPERMISSION_ISUNRESTRICTED_OFFSET))(se);
+		}
+
 		static ::System::Void ThrowInvalidPermission(::System::Security::IPermission* target, ::System::Type* expected)
 		{
 			return ((::System::Void(*)(::System::Security::IPermission*, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CODEACCESSPERMISSION_THROWINVALIDPERMISSION_OFFSET))(target, expected);
-		}
-
-		::System::Void System_Security_IPermission_Demand()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CODEACCESSPERMISSION_SYSTEM_SECURITY_IPERMISSION_DEMAND_OFFSET))(this);
 		}
 	};
 }

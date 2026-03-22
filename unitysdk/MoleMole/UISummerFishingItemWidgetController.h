@@ -1,0 +1,164 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_60638234271CCDB8_52;
+class Class_2_B640B8B6C20C4AB0;
+class Class_2_B640B8B6C20C4AB0_Class_1_6F12E11FBB9A2E65;
+class Class_3_9D33A2E94B3E53DC;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UISummerFishAquariumStarWidgetController; }
+namespace System { class Object; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_GETCURFISHDATA_OFFSET UNITYSDK_OFFSET(0xA751DB0)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_GET_ISSELECTED_OFFSET UNITYSDK_OFFSET(0xA751D70)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_GET_ISSELLSELECTED_OFFSET UNITYSDK_OFFSET(0xA751D90)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_GET__ISLOCKED_OFFSET UNITYSDK_OFFSET(0xA751C20)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA751020)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA7511A0)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA7510C0)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA750D10)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHICONVIEW_OFFSET UNITYSDK_OFFSET(0xA751800)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHLOCKEDVIEW_OFFSET UNITYSDK_OFFSET(0xA751A30)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHNEWVIEW_1_OFFSET UNITYSDK_OFFSET(0xA751CB0)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHNEWVIEW_OFFSET UNITYSDK_OFFSET(0xA751670)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHSELECTEDVIEW_OFFSET UNITYSDK_OFFSET(0xA751B40)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHSTARVIEW_OFFSET UNITYSDK_OFFSET(0xA751770)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xA751420)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_SET_ISSELECTED_OFFSET UNITYSDK_OFFSET(0xA751D80)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_SET_ISSELLSELECTED_OFFSET UNITYSDK_OFFSET(0xA751DA0)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA751E20)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA751E30)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA751EA0)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA751F20)
+#define MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA751FA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISummerFishingItemWidgetController_TypeDefinitionIndex = 42708;
+
+	class UISummerFishingItemWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_60638234271CCDB8_52* _view; // 0x2D0
+		::Class_3_9D33A2E94B3E53DC* _fish; // 0x2D8
+		::Class_2_B640B8B6C20C4AB0_Class_1_6F12E11FBB9A2E65* _fishData; // 0x2E0
+		::Class_2_B640B8B6C20C4AB0* _model; // 0x2E8
+		::MoleMole::UISummerFishAquariumStarWidgetController* _starWidget; // 0x2F0
+		::System::Int32 Index; // 0x2F8
+		::System::Action_1<::MoleMole::UISummerFishingItemWidgetController*>* RefreshViewAction; // 0x300
+		::System::Boolean _IsSelected_k__BackingField; // 0x308
+		::System::Boolean _IsSellSelected_k__BackingField; // 0x309
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void RefreshView(::Class_3_9D33A2E94B3E53DC* fish)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_9D33A2E94B3E53DC*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, fish);
+		}
+
+		::System::Void RefreshIconView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHICONVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshStarView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHSTARVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshLockedView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHLOCKEDVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshSelectedView(::System::Boolean selected, ::System::Boolean sellSelected)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHSELECTEDVIEW_OFFSET))(this, selected, sellSelected);
+		}
+
+		::System::Void RefreshNewView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHNEWVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshNewView_1(::System::Boolean active)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_REFRESHNEWVIEW_1_OFFSET))(this, active);
+		}
+
+		::System::Boolean get__isLocked()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_GET__ISLOCKED_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsSelected()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_GET_ISSELECTED_OFFSET))(this);
+		}
+
+		::System::Void set_IsSelected(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_SET_ISSELECTED_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsSellSelected()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_GET_ISSELLSELECTED_OFFSET))(this);
+		}
+
+		::System::Void set_IsSellSelected(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_SET_ISSELLSELECTED_OFFSET))(this, value);
+		}
+
+		::Class_3_9D33A2E94B3E53DC* GetCurFishData()
+		{
+			return ((::Class_3_9D33A2E94B3E53DC*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER_GETCURFISHDATA_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERFISHINGITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -6,34 +6,33 @@ namespace System::Text { class EncoderFallbackBuffer; }
 namespace System::Text { class EncoderNLS; }
 namespace System::Text { class Encoding; }
 
-#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_ADDBYTE_1_OFFSET UNITYSDK_OFFSET(0x15B5EF20)
-#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_ADDBYTE_2_OFFSET UNITYSDK_OFFSET(0x15B5EF60)
-#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_ADDBYTE_3_OFFSET UNITYSDK_OFFSET(0x15B5EFD0)
-#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_ADDBYTE_OFFSET UNITYSDK_OFFSET(0x15B5EE20)
-#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_GETNEXTCHAR_OFFSET UNITYSDK_OFFSET(0x15B5F0A0)
-#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_GET_CHARSUSED_OFFSET UNITYSDK_OFFSET(0x15B5F100)
-#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x15B5F120)
-#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_GET_MOREDATA_OFFSET UNITYSDK_OFFSET(0x15B5F050)
-#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_MOVEPREVIOUS_OFFSET UNITYSDK_OFFSET(0x15B5EE60)
-#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER__CTOR_OFFSET UNITYSDK_OFFSET(0x15B5EBB0)
+#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_ADDBYTE_1_OFFSET UNITYSDK_OFFSET(0x1944C770)
+#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_ADDBYTE_2_OFFSET UNITYSDK_OFFSET(0x1944C850)
+#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_ADDBYTE_3_OFFSET UNITYSDK_OFFSET(0x1944C9F0)
+#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_ADDBYTE_OFFSET UNITYSDK_OFFSET(0x1944C5D0)
+#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_GETNEXTCHAR_OFFSET UNITYSDK_OFFSET(0x1944CA80)
+#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_GET_CHARSUSED_OFFSET UNITYSDK_OFFSET(0x1944CAE0)
+#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_GET_MOREDATA_OFFSET UNITYSDK_OFFSET(0x1944CA30)
+#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_MOVEPREVIOUS_OFFSET UNITYSDK_OFFSET(0x1944C6B0)
+#define SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER__CTOR_OFFSET UNITYSDK_OFFSET(0x1944C360)
 
 namespace System::Text
 {
-	inline static constexpr unsigned int Encoding_EncodingByteBuffer_TypeDefinitionIndex = 491;
+	inline static constexpr unsigned int Encoding_EncodingByteBuffer_TypeDefinitionIndex = 477;
 
 	class Encoding_EncodingByteBuffer : public ::System::Object
 	{
 	public:
-		::System::Text::EncoderNLS* encoder; // 0x10
-		::System::Text::Encoding* enc; // 0x18
-		::System::Text::EncoderFallbackBuffer* fallbackBuffer; // 0x20
-		::System::Char* chars; // 0x28
-		::System::Char* charStart; // 0x30
-		::System::Int32 byteCountResult; // 0x38
-		::System::Byte* byteStart; // 0x40
+		::System::Text::EncoderFallbackBuffer* fallbackBuffer; // 0x10
+		::System::Text::EncoderNLS* encoder; // 0x18
+		::System::Text::Encoding* enc; // 0x20
+		::System::Byte* byteEnd; // 0x28
+		::System::Byte* byteStart; // 0x30
+		::System::Char* chars; // 0x38
+		::System::Char* charStart; // 0x40
 		::System::Char* charEnd; // 0x48
-		::System::Byte* bytes; // 0x50
-		::System::Byte* byteEnd; // 0x58
+		::System::Int32 byteCountResult; // 0x50
+		::System::Byte* bytes; // 0x58
 
 		::System::Void _ctor(::System::Text::Encoding* inEncoding, ::System::Text::EncoderNLS* inEncoder, ::System::Byte* inByteStart, ::System::Int32 inByteCount, ::System::Char* inCharStart, ::System::Int32 inCharCount)
 		{
@@ -78,11 +77,6 @@ namespace System::Text
 		::System::Int32 get_CharsUsed()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_GET_CHARSUSED_OFFSET))(this);
-		}
-
-		::System::Int32 get_Count()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODING_ENCODINGBYTEBUFFER_GET_COUNT_OFFSET))(this);
 		}
 	};
 }

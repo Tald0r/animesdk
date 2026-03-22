@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define SYSTEM_IO_DIRECTORY_SEARCHDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x15C78830)
+#define SYSTEM_IO_DIRECTORY_SEARCHDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1943BAB0)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int Directory_SearchData_TypeDefinitionIndex = 663;
+	inline static constexpr unsigned int Directory_SearchData_TypeDefinitionIndex = 631;
 
 	class Directory_SearchData : public ::System::Object
 	{

@@ -6,19 +6,19 @@ namespace MiHoYo::SDK { class AccountModel; }
 namespace MiHoYo::SDK::Win { class PayManager; }
 namespace System { class String; }
 
-#define MIHOYO_SDK_WIN_PAYMANAGER___C__DISPLAYCLASS23_0__CTOR_OFFSET UNITYSDK_OFFSET(0x15A6C8D0)
-#define MIHOYO_SDK_WIN_PAYMANAGER___C__DISPLAYCLASS23_0__PAY_B__0_OFFSET UNITYSDK_OFFSET(0x15A74690)
-#define MIHOYO_SDK_WIN_PAYMANAGER___C__DISPLAYCLASS23_0__PAY_B__1_OFFSET UNITYSDK_OFFSET(0x15A746B0)
+#define MIHOYO_SDK_WIN_PAYMANAGER___C__DISPLAYCLASS23_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18906820)
+#define MIHOYO_SDK_WIN_PAYMANAGER___C__DISPLAYCLASS23_0__PAY_B__0_OFFSET UNITYSDK_OFFSET(0x1890C370)
+#define MIHOYO_SDK_WIN_PAYMANAGER___C__DISPLAYCLASS23_0__PAY_B__1_OFFSET UNITYSDK_OFFSET(0x1890C390)
 
 namespace MiHoYo::SDK::Win
 {
-	inline static constexpr unsigned int PayManager___c__DisplayClass23_0_TypeDefinitionIndex = 7944;
+	inline static constexpr unsigned int PayManager___c__DisplayClass23_0_TypeDefinitionIndex = 19091;
 
 	class PayManager___c__DisplayClass23_0 : public ::System::Object
 	{
 	public:
-		::MiHoYo::SDK::Win::PayManager* __4__this; // 0x10
-		::MiHoYo::SDK::AccountModel* accountModel; // 0x18
+		::MiHoYo::SDK::AccountModel* accountModel; // 0x10
+		::MiHoYo::SDK::Win::PayManager* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

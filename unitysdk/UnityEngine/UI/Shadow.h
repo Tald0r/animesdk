@@ -7,27 +7,25 @@
 #include "unitysdk/UnityEngine/Vector2.h"
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
-namespace UnityEngine::Pooled { template <typename T> class PooledList_1; }
 namespace UnityEngine::UI { class VertexHelper; }
 
-#define UNITYENGINE_UI_SHADOW_APPLYSHADOWZEROALLOC_1_OFFSET UNITYSDK_OFFSET(0x18331290)
-#define UNITYENGINE_UI_SHADOW_APPLYSHADOWZEROALLOC_OFFSET UNITYSDK_OFFSET(0x183543A0)
-#define UNITYENGINE_UI_SHADOW_APPLYSHADOW_1_OFFSET UNITYSDK_OFFSET(0x18354600)
-#define UNITYENGINE_UI_SHADOW_APPLYSHADOW_OFFSET UNITYSDK_OFFSET(0x183545F0)
-#define UNITYENGINE_UI_SHADOW_GET_COLOR_OFFSET UNITYSDK_OFFSET(0x18354020)
-#define UNITYENGINE_UI_SHADOW_GET_EFFECTCOLOR_OFFSET UNITYSDK_OFFSET(0x18354190)
-#define UNITYENGINE_UI_SHADOW_GET_EFFECTDISTANCE_OFFSET UNITYSDK_OFFSET(0x183541A0)
-#define UNITYENGINE_UI_SHADOW_GET_USEGRAPHICALPHA_OFFSET UNITYSDK_OFFSET(0x183542E0)
-#define UNITYENGINE_UI_SHADOW_MODIFYMESH_OFFSET UNITYSDK_OFFSET(0x18354610)
-#define UNITYENGINE_UI_SHADOW_SET_COLOR_OFFSET UNITYSDK_OFFSET(0x18354030)
-#define UNITYENGINE_UI_SHADOW_SET_EFFECTCOLOR_OFFSET UNITYSDK_OFFSET(0x183540E0)
-#define UNITYENGINE_UI_SHADOW_SET_EFFECTDISTANCE_OFFSET UNITYSDK_OFFSET(0x183541B0)
-#define UNITYENGINE_UI_SHADOW_SET_USEGRAPHICALPHA_OFFSET UNITYSDK_OFFSET(0x183542F0)
-#define UNITYENGINE_UI_SHADOW__CTOR_OFFSET UNITYSDK_OFFSET(0x183308B0)
+#define UNITYENGINE_UI_SHADOW_APPLYSHADOWZEROALLOC_OFFSET UNITYSDK_OFFSET(0x19EC2B50)
+#define UNITYENGINE_UI_SHADOW_APPLYSHADOW_OFFSET UNITYSDK_OFFSET(0x19EC2E50)
+#define UNITYENGINE_UI_SHADOW_ENABLEUIVERTEXCOLORCALC_OFFSET UNITYSDK_OFFSET(0x19EC2670)
+#define UNITYENGINE_UI_SHADOW_GET_EFFECTCOLOR_OFFSET UNITYSDK_OFFSET(0x19EC27E0)
+#define UNITYENGINE_UI_SHADOW_GET_EFFECTDISTANCE_OFFSET UNITYSDK_OFFSET(0x19EC28E0)
+#define UNITYENGINE_UI_SHADOW_GET_USEGRAPHICALPHA_OFFSET UNITYSDK_OFFSET(0x19EC2A60)
+#define UNITYENGINE_UI_SHADOW_MODIFYMESH_OFFSET UNITYSDK_OFFSET(0x19EC2F10)
+#define UNITYENGINE_UI_SHADOW_SET_EFFECTCOLOR_OFFSET UNITYSDK_OFFSET(0x19EC27F0)
+#define UNITYENGINE_UI_SHADOW_SET_EFFECTDISTANCE_OFFSET UNITYSDK_OFFSET(0x19EC28F0)
+#define UNITYENGINE_UI_SHADOW_SET_USEGRAPHICALPHA_OFFSET UNITYSDK_OFFSET(0x19EC2A70)
+#define UNITYENGINE_UI_SHADOW_START_OFFSET UNITYSDK_OFFSET(0x19EC2600)
+#define UNITYENGINE_UI_SHADOW__CTOR_OFFSET UNITYSDK_OFFSET(0x19EC2570)
+#define UNITYENGINE_UI_SHADOW___BASE_START_OFFSET UNITYSDK_OFFSET(0x19EC31A0)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int Shadow_TypeDefinitionIndex = 5660;
+	inline static constexpr unsigned int Shadow_TypeDefinitionIndex = 8467;
 
 	class Shadow : public ::UnityEngine::UI::BaseMeshEffect
 	{
@@ -42,14 +40,14 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SHADOW__CTOR_OFFSET))(this);
 		}
 
-		::UnityEngine::Color get_color()
+		::System::Void Start()
 		{
-			return ((::UnityEngine::Color(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SHADOW_GET_COLOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SHADOW_START_OFFSET))(this);
 		}
 
-		::System::Void set_color(::UnityEngine::Color value)
+		::System::Void EnableUIVertexColorCalc()
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SHADOW_SET_COLOR_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SHADOW_ENABLEUIVERTEXCOLORCALC_OFFSET))(this);
 		}
 
 		::UnityEngine::Color get_effectColor()
@@ -87,24 +85,19 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::UnityEngine::UIVertex>*, ::UnityEngine::Color32, ::System::Int32, ::System::Int32, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SHADOW_APPLYSHADOWZEROALLOC_OFFSET))(this, verts, color, start, end, x, y);
 		}
 
-		::System::Void ApplyShadowZeroAlloc_1(::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>* verts, ::UnityEngine::Color32 color, ::System::Int32 start, ::System::Int32 end, ::System::Single x, ::System::Single y)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>*, ::UnityEngine::Color32, ::System::Int32, ::System::Int32, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SHADOW_APPLYSHADOWZEROALLOC_1_OFFSET))(this, verts, color, start, end, x, y);
-		}
-
 		::System::Void ApplyShadow(::System::Collections::Generic::List_1<::UnityEngine::UIVertex>* verts, ::UnityEngine::Color32 color, ::System::Int32 start, ::System::Int32 end, ::System::Single x, ::System::Single y)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::UnityEngine::UIVertex>*, ::UnityEngine::Color32, ::System::Int32, ::System::Int32, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SHADOW_APPLYSHADOW_OFFSET))(this, verts, color, start, end, x, y);
 		}
 
-		::System::Void ApplyShadow_1(::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>* verts, ::UnityEngine::Color32 color, ::System::Int32 start, ::System::Int32 end, ::System::Single x, ::System::Single y)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>*, ::UnityEngine::Color32, ::System::Int32, ::System::Int32, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SHADOW_APPLYSHADOW_1_OFFSET))(this, verts, color, start, end, x, y);
-		}
-
 		::System::Void ModifyMesh(::UnityEngine::UI::VertexHelper* vh)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SHADOW_MODIFYMESH_OFFSET))(this, vh);
+		}
+
+		::System::Void __base_Start()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SHADOW___BASE_START_OFFSET))(this);
 		}
 	};
 }

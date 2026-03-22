@@ -3,9 +3,24 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
+namespace UnityEngine { class Collider2D; }
+namespace UnityEngine { class Rigidbody2D; }
+
+#define UNITYENGINE_CONTACTPOINT2D_GET_COLLIDER_OFFSET UNITYSDK_OFFSET(0x951FD0)
+#define UNITYENGINE_CONTACTPOINT2D_GET_ENABLED_OFFSET UNITYSDK_OFFSET(0x9521D0)
+#define UNITYENGINE_CONTACTPOINT2D_GET_NORMALIMPULSE_OFFSET UNITYSDK_OFFSET(0x8FF150)
+#define UNITYENGINE_CONTACTPOINT2D_GET_NORMAL_OFFSET UNITYSDK_OFFSET(0x2CB080)
+#define UNITYENGINE_CONTACTPOINT2D_GET_OTHERCOLLIDER_OFFSET UNITYSDK_OFFSET(0x952070)
+#define UNITYENGINE_CONTACTPOINT2D_GET_OTHERRIGIDBODY_OFFSET UNITYSDK_OFFSET(0x952170)
+#define UNITYENGINE_CONTACTPOINT2D_GET_POINT_OFFSET UNITYSDK_OFFSET(0x21C7C0)
+#define UNITYENGINE_CONTACTPOINT2D_GET_RELATIVEVELOCITY_OFFSET UNITYSDK_OFFSET(0x2C6240)
+#define UNITYENGINE_CONTACTPOINT2D_GET_RIGIDBODY_OFFSET UNITYSDK_OFFSET(0x952110)
+#define UNITYENGINE_CONTACTPOINT2D_GET_SEPARATION_OFFSET UNITYSDK_OFFSET(0x308880)
+#define UNITYENGINE_CONTACTPOINT2D_GET_TANGENTIMPULSE_OFFSET UNITYSDK_OFFSET(0x3FA490)
+
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ContactPoint2D_TypeDefinitionIndex = 5088;
+	inline static constexpr unsigned int ContactPoint2D_TypeDefinitionIndex = 7627;
 
 	struct alignas(4) ContactPoint2D
 	{
@@ -20,5 +35,60 @@ namespace UnityEngine
 		::System::Int32 m_Rigidbody; // 0x3C
 		::System::Int32 m_OtherRigidbody; // 0x40
 		::System::Int32 m_Enabled; // 0x44
+
+		::UnityEngine::Vector2 get_point()
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTACTPOINT2D_GET_POINT_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector2 get_normal()
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTACTPOINT2D_GET_NORMAL_OFFSET))(this);
+		}
+
+		::System::Single get_separation()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTACTPOINT2D_GET_SEPARATION_OFFSET))(this);
+		}
+
+		::System::Single get_normalImpulse()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTACTPOINT2D_GET_NORMALIMPULSE_OFFSET))(this);
+		}
+
+		::System::Single get_tangentImpulse()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTACTPOINT2D_GET_TANGENTIMPULSE_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector2 get_relativeVelocity()
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTACTPOINT2D_GET_RELATIVEVELOCITY_OFFSET))(this);
+		}
+
+		::UnityEngine::Collider2D* get_collider()
+		{
+			return ((::UnityEngine::Collider2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTACTPOINT2D_GET_COLLIDER_OFFSET))(this);
+		}
+
+		::UnityEngine::Collider2D* get_otherCollider()
+		{
+			return ((::UnityEngine::Collider2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTACTPOINT2D_GET_OTHERCOLLIDER_OFFSET))(this);
+		}
+
+		::UnityEngine::Rigidbody2D* get_rigidbody()
+		{
+			return ((::UnityEngine::Rigidbody2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTACTPOINT2D_GET_RIGIDBODY_OFFSET))(this);
+		}
+
+		::UnityEngine::Rigidbody2D* get_otherRigidbody()
+		{
+			return ((::UnityEngine::Rigidbody2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTACTPOINT2D_GET_OTHERRIGIDBODY_OFFSET))(this);
+		}
+
+		::System::Boolean get_enabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTACTPOINT2D_GET_ENABLED_OFFSET))(this);
+		}
 	};
 }

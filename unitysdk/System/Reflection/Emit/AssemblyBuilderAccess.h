@@ -3,7 +3,7 @@
 
 namespace System::Reflection::Emit
 {
-	inline static constexpr unsigned int AssemblyBuilderAccess_TypeDefinitionIndex = 638;
+	inline static constexpr unsigned int AssemblyBuilderAccess_TypeDefinitionIndex = 611;
 
 	enum class AssemblyBuilderAccess : ::System::Int32
 	{

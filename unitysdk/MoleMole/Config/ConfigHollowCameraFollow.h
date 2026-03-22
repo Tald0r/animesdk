@@ -1,0 +1,29 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Battle/ProceduralAnimDamperParam.h"
+#include "unitysdk/System/Object.h"
+
+namespace MoleMole::Config { class ConfigHollowCameraAvoidObstacle; }
+
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAFOLLOW__CTOR_OFFSET UNITYSDK_OFFSET(0x139987E0)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int ConfigHollowCameraFollow_TypeDefinitionIndex = 48686;
+
+	class ConfigHollowCameraFollow : public ::System::Object
+	{
+	public:
+		::MoleMole::Config::ConfigHollowCameraAvoidObstacle* ConfigAvoidObstacle; // 0x10
+		::System::Single DistToTargetZ; // 0x18
+		::System::Single ScreenRatio; // 0x1C
+		::System::Boolean UseDynamicZ; // 0x20
+		::System::Boolean PlayerAvoidJoystick; // 0x21
+		::MoleMole::Battle::ProceduralAnimDamperParam DamperParams; // 0x24
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAFOLLOW__CTOR_OFFSET))(this);
+		}
+	};
+}

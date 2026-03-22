@@ -4,13 +4,15 @@
 
 namespace System { class String; }
 namespace System { class Type; }
+namespace System::Text { class StringBuilder; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLTEXTATTRIBUTE_GET_DATATYPE_OFFSET UNITYSDK_OFFSET(0x17DB8DD0)
-#define SYSTEM_XML_SERIALIZATION_XMLTEXTATTRIBUTE_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x17DD67D0)
+#define SYSTEM_XML_SERIALIZATION_XMLTEXTATTRIBUTE_ADDKEYHASH_OFFSET UNITYSDK_OFFSET(0x199C5400)
+#define SYSTEM_XML_SERIALIZATION_XMLTEXTATTRIBUTE_GET_DATATYPE_OFFSET UNITYSDK_OFFSET(0x199C53E0)
+#define SYSTEM_XML_SERIALIZATION_XMLTEXTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x199C53D0)
 
 namespace System::Xml::Serialization
 {
-	inline static constexpr unsigned int XmlTextAttribute_TypeDefinitionIndex = 2026;
+	inline static constexpr unsigned int XmlTextAttribute_TypeDefinitionIndex = 1921;
 
 	class XmlTextAttribute : public ::System::Attribute
 	{
@@ -18,14 +20,19 @@ namespace System::Xml::Serialization
 		::System::String* dataType; // 0x10
 		::System::Type* type; // 0x18
 
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLTEXTATTRIBUTE__CTOR_OFFSET))(this);
+		}
+
 		::System::String* get_DataType()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLTEXTATTRIBUTE_GET_DATATYPE_OFFSET))(this);
 		}
 
-		::System::Type* get_Type()
+		::System::Void AddKeyHash(::System::Text::StringBuilder* sb)
 		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLTEXTATTRIBUTE_GET_TYPE_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Text::StringBuilder*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLTEXTATTRIBUTE_ADDKEYHASH_OFFSET))(this, sb);
 		}
 	};
 }

@@ -1,0 +1,32 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Config/ConfigUIBaseActionNode.h"
+
+class Class_1_D72537470FC2F779;
+namespace MoleMole::Config { class BoolUISpecialNum; }
+namespace MoleMole::Config { class StringUISpecialNum; }
+
+#define MOLEMOLE_CONFIG_CONFIGCREATEHOLLOWEFFECTPREFAB_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x804AB50)
+#define MOLEMOLE_CONFIG_CONFIGCREATEHOLLOWEFFECTPREFAB__CTOR_OFFSET UNITYSDK_OFFSET(0x804ABE0)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int ConfigCreateHollowEffectPrefab_TypeDefinitionIndex = 38261;
+
+	class ConfigCreateHollowEffectPrefab : public ::MoleMole::Config::ConfigUIBaseActionNode
+	{
+	public:
+		::MoleMole::Config::BoolUISpecialNum* WaitForComplete; // 0x18
+		::MoleMole::Config::StringUISpecialNum* Prefab; // 0x20
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGCREATEHOLLOWEFFECTPREFAB__CTOR_OFFSET))(this);
+		}
+
+		::Class_1_D72537470FC2F779* GetUIAnimationNode()
+		{
+			return ((::Class_1_D72537470FC2F779*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGCREATEHOLLOWEFFECTPREFAB_GETUIANIMATIONNODE_OFFSET))(this);
+		}
+	};
+}

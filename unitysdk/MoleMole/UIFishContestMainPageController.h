@@ -1,0 +1,464 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF.h"
+#include "unitysdk/Class_2_3CC769D284A54927_Enum_3_059D0CF60338BF04.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIFishContestMainPageController_ECloseReason.h"
+#include "unitysdk/MoleMole/UIFishContestMainPageController_EState.h"
+#include "unitysdk/MoleMole/UIMainCityStorePageController.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_0_16E4307DCC419505_169;
+class Class_1_451601B8BB62C38C;
+class Class_1_D6D1B35AE0BED5AD;
+class Class_2_60638234271CCDB8_6;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIFishClickButtonWidgetController; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Coroutine; }
+
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CHANGETOFISHQTE_OFFSET UNITYSDK_OFFSET(0xD53A4B0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CHANGETOSTARTFISH_OFFSET UNITYSDK_OFFSET(0xD53A2B0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CHANGETOWAITFISH_OFFSET UNITYSDK_OFFSET(0xD539F40)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CLEARALLSTATE_OFFSET UNITYSDK_OFFSET(0xD5375A0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CLOSEMAINCITYSTOREPAGE_OFFSET UNITYSDK_OFFSET(0xD53E0F0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CLOSEUI_OFFSET UNITYSDK_OFFSET(0xD53DA90)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_COMPARISON_OFFSET UNITYSDK_OFFSET(0xD53FE80)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xD5367D0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0xD539AE0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD5368D0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHBEGINWAITIDLEHANDLE_OFFSET UNITYSDK_OFFSET(0xD53A140)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHENDWAITIDLEHANDLE_OFFSET UNITYSDK_OFFSET(0xD53A1F0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGBATTLEPROGRESSHANDLE_OFFSET UNITYSDK_OFFSET(0xD53B4C0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGENDCOUNTDOWNHANDLE_OFFSET UNITYSDK_OFFSET(0xD53E860)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGENDTIMELINEHANDLE_OFFSET UNITYSDK_OFFSET(0xD53E590)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGFAILPRESSHANDLE_OFFSET UNITYSDK_OFFSET(0xD53CCC0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGHPUPDATE_OFFSET UNITYSDK_OFFSET(0xD53D860)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGMATCHFINALTIMEHANDLE_OFFSET UNITYSDK_OFFSET(0xD53EC80)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGMATCHTIMEOUTHANDLE_OFFSET UNITYSDK_OFFSET(0xD53EAF0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGMATCHTIMEUPDATEHANDLE_OFFSET UNITYSDK_OFFSET(0xD53E9F0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGQTERESULTHANDLE_OFFSET UNITYSDK_OFFSET(0xD53AC50)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGQTETIMERATEHANDLE_OFFSET UNITYSDK_OFFSET(0xD53AD10)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGQUEUEENDHANDLE_OFFSET UNITYSDK_OFFSET(0xD53D990)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSINGLEBATTLEENDHANDLE_OFFSET UNITYSDK_OFFSET(0xD53D410)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSTARTBATTLELOOPHANDLE_OFFSET UNITYSDK_OFFSET(0xD53ADF0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSTARTCOUNTDOWNHANDLE_OFFSET UNITYSDK_OFFSET(0xD53E600)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSTARTSINGLEBATTLEHANDLE_OFFSET UNITYSDK_OFFSET(0xD53B560)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSTARTSKILLHANDLE_OFFSET UNITYSDK_OFFSET(0xD53CBF0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSTARTTIMELINEHANDLE_OFFSET UNITYSDK_OFFSET(0xD53E520)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSUCCESSCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xD53D170)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSUCCESSPRESSHANDLE_OFFSET UNITYSDK_OFFSET(0xD53CF10)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONGOINGTRIGGER_OFFSET UNITYSDK_OFFSET(0xD53FF60)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xD53A730)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xD538EE0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONMATCHCLOSE_OFFSET UNITYSDK_OFFSET(0xD53E160)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD539CE0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xD538730)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD538E50)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD537D60)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD536970)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xD5367E0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_SHOWFOLLOWTIPS_OFFSET UNITYSDK_OFFSET(0xD53C990)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_SHOWNEWTIPS_OFFSET UNITYSDK_OFFSET(0xD53A7D0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_UPDATEFOLLOWTIPSPOS_OFFSET UNITYSDK_OFFSET(0xD5383D0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_UPDATEPLAYERINFO_OFFSET UNITYSDK_OFFSET(0xD53ED40)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xD538050)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_WAITMESSAGECENTERFREE_OFFSET UNITYSDK_OFFSET(0xD53E050)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD540000)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONFISHINGSTARTCOUNTDOWNHANDLE_B__68_0_OFFSET UNITYSDK_OFFSET(0xD5407C0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONFISHINGSTARTSINGLEBATTLEHANDLE_B__49_0_OFFSET UNITYSDK_OFFSET(0xD5402C0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONFISHINGSTARTSINGLEBATTLEHANDLE_B__49_1_OFFSET UNITYSDK_OFFSET(0xD540390)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONFISHINGSTARTSINGLEBATTLEHANDLE_B__49_2_OFFSET UNITYSDK_OFFSET(0xD540460)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONFISHINGSTARTSINGLEBATTLEHANDLE_B__49_3_OFFSET UNITYSDK_OFFSET(0xD540530)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONMATCHCLOSE_B__65_0_OFFSET UNITYSDK_OFFSET(0xD540630)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONUIINIT_B__33_0_OFFSET UNITYSDK_OFFSET(0xD540180)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONUIOPEN_B__32_0_OFFSET UNITYSDK_OFFSET(0xD540100)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__SHOWFOLLOWTIPS_B__59_0_OFFSET UNITYSDK_OFFSET(0xD540600)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_CLOSEMAINCITYSTOREPAGE_OFFSET UNITYSDK_OFFSET(0xD540800)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD540810)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0xD540880)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xD5408E0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD540910)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xD540980)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD540990)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD5409A0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD5409B0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xD5409C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFishContestMainPageController_TypeDefinitionIndex = 37502;
+
+	class UIFishContestMainPageController : public ::MoleMole::UIMainCityStorePageController
+	{
+	public:
+		::Class_2_60638234271CCDB8_6* _view; // 0x308
+		::MoleMole::UIFishContestMainPageController_EState _state; // 0x310
+		::Class_2_3CC769D284A54927_Enum_3_059D0CF60338BF04 _mode; // 0x314
+		::System::Int32 _leftOrRight; // 0x318
+		::System::Single _battleProgress; // 0x31C
+		::System::String* _currentTips; // 0x320
+		::UnityEngine::Vector3 _followTipsPos; // 0x328
+		::UnityEngine::Coroutine* _animCoroutine; // 0x338
+		::MoleMole::UIFishClickButtonWidgetController* _leftButtonController; // 0x340
+		::MoleMole::UIFishClickButtonWidgetController* _rightButtonController; // 0x348
+		::Foundation::Coroutine::CoroutineHandle _rowAnimationHandle; // 0x350
+		::Foundation::Coroutine::CoroutineHandle _waitMessageCenterHandle; // 0x354
+		::UnityEngine::Coroutine* _pressLoopHandle; // 0x358
+		::System::Collections::Generic::List_1<::Class_1_451601B8BB62C38C*>* _viewPlayerInfos; // 0x360
+		::System::Collections::Generic::List_1<::Class_1_451601B8BB62C38C*>* _addList; // 0x368
+		::System::Collections::Generic::List_1<::Class_1_451601B8BB62C38C*>* _removeList; // 0x370
+		::Foundation::Coroutine::CoroutineHandle _matchPlayerHandle; // 0x378
+		::System::Boolean _waitAutoRestart; // 0x37C
+		::System::Boolean _oldDebugMode; // 0x37D
+		::System::Int32 _oldDebugFishId; // 0x380
+		::System::Int32 _oldLevelId; // 0x384
+		::System::UInt32 _oldInteractId; // 0x388
+		::System::String* _lastSoundState; // 0x390
+		::System::Boolean _startFishDown; // 0x398
+		::System::Boolean _startFishCurrentDown; // 0x399
+		::Class_1_D6D1B35AE0BED5AD* _chatPlayer; // 0x3A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONUIOPEN_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void LateUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_LATEUPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void ClearAllState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CLEARALLSTATE_OFFSET))(this);
+		}
+
+		::System::Void ChangeToWaitFish(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CHANGETOWAITFISH_OFFSET))(this, args);
+		}
+
+		::System::Void ChangeToStartFish(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CHANGETOSTARTFISH_OFFSET))(this, args);
+		}
+
+		::System::Void ChangeToFishQTE(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CHANGETOFISHQTE_OFFSET))(this, args);
+		}
+
+		::System::Void OnFishingQTEResultHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGQTERESULTHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingQTETimeRateHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGQTETIMERATEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingStartBattleLoopHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSTARTBATTLELOOPHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingBattleProgressHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGBATTLEPROGRESSHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingStartSingleBattleHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSTARTSINGLEBATTLEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingStartSkillHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSTARTSKILLHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingFailPressHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGFAILPRESSHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingSuccessPressHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSUCCESSPRESSHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingSuccessClickHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSUCCESSCLICKHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingSingleBattleEndHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSINGLEBATTLEENDHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingHpUpdate(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGHPUPDATE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishBeginWaitIdleHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHBEGINWAITIDLEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishEndWaitIdleHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHENDWAITIDLEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void UpdateFollowTipsPos()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_UPDATEFOLLOWTIPSPOS_OFFSET))(this);
+		}
+
+		::System::Void ShowFollowTips(::System::String* key, ::UnityEngine::Vector3 worldPos)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_SHOWFOLLOWTIPS_OFFSET))(this, key, worldPos);
+		}
+
+		::System::Void ShowNewTips(::System::String* key)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_SHOWNEWTIPS_OFFSET))(this, key);
+		}
+
+		::System::Void OnFishingQueueEndHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGQUEUEENDHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Collections::Generic::IEnumerator_1<::System::Single>* WaitMessageCenterFree(::System::Action* callback)
+		{
+			return ((::System::Collections::Generic::IEnumerator_1<::System::Single>*(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_WAITMESSAGECENTERFREE_OFFSET))(this, callback);
+		}
+
+		::System::Void CloseMainCityStorePage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CLOSEMAINCITYSTOREPAGE_OFFSET))(this);
+		}
+
+		::System::Void CloseUI(::System::Int32 levelId, ::System::UInt32 fishUid, ::MoleMole::UIFishContestMainPageController_ECloseReason reason, ::System::Single passTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::UInt32, ::MoleMole::UIFishContestMainPageController_ECloseReason, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_CLOSEUI_OFFSET))(this, levelId, fishUid, reason, passTime);
+		}
+
+		::System::Void OnMatchClose(::System::Boolean restart, ::MoleMole::UIFishContestMainPageController_ECloseReason reason)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::MoleMole::UIFishContestMainPageController_ECloseReason))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONMATCHCLOSE_OFFSET))(this, restart, reason);
+		}
+
+		::System::Void OnFishingStartTimelineHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSTARTTIMELINEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingEndTimelineHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGENDTIMELINEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingStartCountDownHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGSTARTCOUNTDOWNHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingEndCountDownHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGENDCOUNTDOWNHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingMatchTimeUpdateHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGMATCHTIMEUPDATEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingMatchTimeOutHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGMATCHTIMEOUTHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFishingMatchFinalTimeHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONFISHINGMATCHFINALTIMEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void UpdatePlayerInfo(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_UPDATEPLAYERINFO_OFFSET))(this, obj);
+		}
+
+		::System::Int32 Comparison(::Class_1_451601B8BB62C38C* x, ::Class_1_451601B8BB62C38C* y)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_451601B8BB62C38C*, ::Class_1_451601B8BB62C38C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_COMPARISON_OFFSET))(this, x, y);
+		}
+
+		::System::Void OnGoingTrigger(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER_ONGOINGTRIGGER_OFFSET))(this, obj);
+		}
+
+		::Class_0_16E4307DCC419505_169* _OnUIOpen_b__32_0()
+		{
+			return ((::Class_0_16E4307DCC419505_169*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONUIOPEN_B__32_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__33_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONUIINIT_B__33_0_OFFSET))(this);
+		}
+
+		::System::Void _OnFishingStartSingleBattleHandle_b__49_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONFISHINGSTARTSINGLEBATTLEHANDLE_B__49_0_OFFSET))(this);
+		}
+
+		::System::Void _OnFishingStartSingleBattleHandle_b__49_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONFISHINGSTARTSINGLEBATTLEHANDLE_B__49_1_OFFSET))(this);
+		}
+
+		::System::Void _OnFishingStartSingleBattleHandle_b__49_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONFISHINGSTARTSINGLEBATTLEHANDLE_B__49_2_OFFSET))(this);
+		}
+
+		::System::Void _OnFishingStartSingleBattleHandle_b__49_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONFISHINGSTARTSINGLEBATTLEHANDLE_B__49_3_OFFSET))(this);
+		}
+
+		::System::Void _ShowFollowTips_b__59_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__SHOWFOLLOWTIPS_B__59_0_OFFSET))(this);
+		}
+
+		::System::Void _OnMatchClose_b__65_0(::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF r)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONMATCHCLOSE_B__65_0_OFFSET))(this, r);
+		}
+
+		::System::Void _OnFishingStartCountDownHandle_b__68_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER__ONFISHINGSTARTCOUNTDOWNHANDLE_B__68_0_OFFSET))(this);
+		}
+
+		::System::Void __base_CloseMainCityStorePage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_CLOSEMAINCITYSTOREPAGE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

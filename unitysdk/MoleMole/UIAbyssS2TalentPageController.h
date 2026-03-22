@@ -1,0 +1,285 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_DA8BF519212BAE65_Enum_3_54FE281E94D0C8ED.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_4608E37A1B3D374A_12.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_0_16E4307DCC419505_7;
+class Class_1_37E2AFB640209C03;
+class Class_1_9545B07472DE9BFD_Class_3_EC22137A5AE21E1C;
+class Class_2_11B3F578B206B5B7;
+class Class_2_DA8BF519212BAE65;
+class Class_2_FC589D4BC0069EAD;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIAbyssS2TalentItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIGeneralTokenWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_CREATEITEM_OFFSET UNITYSDK_OFFSET(0xBAD1A80)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_GETRSPFUNCBYOPTION_OFFSET UNITYSDK_OFFSET(0xBAD30F0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_GET_MODEL_OFFSET UNITYSDK_OFFSET(0xBAD0D10)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_GET_TALENTPOINTDKMAP_OFFSET UNITYSDK_OFFSET(0xBAD1C50)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xBACF820)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_INITITEMS_OFFSET UNITYSDK_OFFSET(0xBACFBF0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xBAD1D10)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONCLICKOKBTN_OFFSET UNITYSDK_OFFSET(0xBAD2D30)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBACF830)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONINFOBTNCLICK_OFFSET UNITYSDK_OFFSET(0xBAD0A60)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xBAD1750)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONSCROLLVIEWSELECTHANDLE_OFFSET UNITYSDK_OFFSET(0xBAD0E40)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONTALENTACTIVEHANDLE_OFFSET UNITYSDK_OFFSET(0xBAD39F0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONTALENTCHANGEHANDLE_OFFSET UNITYSDK_OFFSET(0xBAD0B00)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONTALENTINSTALL_OFFSET UNITYSDK_OFFSET(0xBAD36F0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONTALENTUNINSTALL_OFFSET UNITYSDK_OFFSET(0xBAD3870)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONTALENTUPGRADE_OFFSET UNITYSDK_OFFSET(0xBAD33F0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBAD1BC0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBACF8D0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_PLAYASSEMBLEANIM_OFFSET UNITYSDK_OFFSET(0xBAD3EC0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_PLAYDISASSEMBLEANIM_OFFSET UNITYSDK_OFFSET(0xBAD3FC0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_PLAYREFRESHANIM_OFFSET UNITYSDK_OFFSET(0xBAD1650)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_PLAYUNLOCKORUPGRADEANIM_OFFSET UNITYSDK_OFFSET(0xBAD35F0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHBUTTONSTATE_OFFSET UNITYSDK_OFFSET(0xBAD2830)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHRIGHTTALENTINFO_OFFSET UNITYSDK_OFFSET(0xBAD1950)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHTALENTSKILLINFO_OFFSET UNITYSDK_OFFSET(0xBAD1D80)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHTOKEN_OFFSET UNITYSDK_OFFSET(0xBAD0FF0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHTVICONS_OFFSET UNITYSDK_OFFSET(0xBAD2AD0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHUPGRADEINFO_OFFSET UNITYSDK_OFFSET(0xBAD1E70)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xBAD0B80)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_SETALLITEMSAUTOREFRESH_OFFSET UNITYSDK_OFFSET(0xBAD3210)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBAD40C0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER__ONTALENTACTIVEHANDLE_B__42_0_OFFSET UNITYSDK_OFFSET(0xBAD4290)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER__ONTALENTINSTALL_B__39_0_OFFSET UNITYSDK_OFFSET(0xBAD4130)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER__ONTALENTUNINSTALL_B__41_0_OFFSET UNITYSDK_OFFSET(0xBAD41F0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBAD42A0)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xBAD4310)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBAD4340)
+#define MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBAD4350)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAbyssS2TalentPageController_TypeDefinitionIndex = 41897;
+
+	class UIAbyssS2TalentPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Single installPerformTime; // 0x0
+		// static const ::System::Single uninstallPerformTime; // 0x0
+		::Class_2_11B3F578B206B5B7* _view; // 0x2F8
+		::System::Boolean m_autoRefresh; // 0x300
+		::Class_2_DA8BF519212BAE65* m_abyssModel; // 0x308
+		::Class_2_FC589D4BC0069EAD* m_curItemCfg; // 0x310
+		::System::Boolean m_tokenInited; // 0x318
+		::System::Collections::Generic::List_1<::Class_2_FC589D4BC0069EAD*>* m_itemConfigs; // 0x320
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UIAbyssS2TalentItemWidgetController*>* m_ctrlDict; // 0x328
+		::System::Int32 curSelectNodeID; // 0x330
+		::Class_2_DA8BF519212BAE65_Enum_3_54FE281E94D0C8ED m_state; // 0x334
+		::MoleMole::UIAbyssS2TalentItemWidgetController* selectPointCtrl; // 0x338
+		::MoleMole::UIGeneralTokenWidgetController* _tokenWidget; // 0x340
+		::System::String* animUnlockOrUpgrade; // 0x348
+		::System::String* animAssemble; // 0x350
+		::System::String* animDisassemble; // 0x358
+		::System::String* animRefresh; // 0x360
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnInfoBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONINFOBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnTalentChangeHandle(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONTALENTCHANGEHANDLE_OFFSET))(this, args);
+		}
+
+		::Class_2_DA8BF519212BAE65* get_Model()
+		{
+			return ((::Class_2_DA8BF519212BAE65*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_GET_MODEL_OFFSET))(this);
+		}
+
+		::System::Void OnScrollViewSelectHandle(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONSCROLLVIEWSELECTHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void InitItems()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_INITITEMS_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateItem(::System::Func_1<::MoleMole::UIControlReference*>* arg)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_CREATEITEM_OFFSET))(this, arg);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::Class_1_37E2AFB640209C03* get_TalentPointDKMap()
+		{
+			return ((::Class_1_37E2AFB640209C03*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_GET_TALENTPOINTDKMAP_OFFSET))(this);
+		}
+
+		::System::Void OnClickItem(::System::Int32 nodeID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONCLICKITEM_OFFSET))(this, nodeID);
+		}
+
+		::System::Void RefreshRightTalentInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHRIGHTTALENTINFO_OFFSET))(this);
+		}
+
+		::System::Void RefreshTVIcons()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHTVICONS_OFFSET))(this);
+		}
+
+		::System::Void RefreshTalentSkillInfo(::Class_2_FC589D4BC0069EAD* talentTemplate)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_FC589D4BC0069EAD*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHTALENTSKILLINFO_OFFSET))(this, talentTemplate);
+		}
+
+		::System::Void RefreshUpgradeInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHUPGRADEINFO_OFFSET))(this);
+		}
+
+		::System::Void RefreshButtonState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHBUTTONSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnClickOkBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONCLICKOKBTN_OFFSET))(this);
+		}
+
+		::Class_1_9545B07472DE9BFD_Class_3_EC22137A5AE21E1C* GetRspFuncByOption(::Enum_3_4608E37A1B3D374A_12 opt)
+		{
+			return ((::Class_1_9545B07472DE9BFD_Class_3_EC22137A5AE21E1C*(*)(::PVOID, ::Enum_3_4608E37A1B3D374A_12))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_GETRSPFUNCBYOPTION_OFFSET))(this, opt);
+		}
+
+		::System::Void SetAllItemsAutoRefresh(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_SETALLITEMSAUTOREFRESH_OFFSET))(this, state);
+		}
+
+		::System::Void RefreshToken()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_REFRESHTOKEN_OFFSET))(this);
+		}
+
+		::System::Void OnTalentUpgrade(::Class_0_16E4307DCC419505_7* rcvMessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONTALENTUPGRADE_OFFSET))(this, rcvMessage);
+		}
+
+		::System::Void OnTalentInstall(::Class_0_16E4307DCC419505_7* rcvMessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONTALENTINSTALL_OFFSET))(this, rcvMessage);
+		}
+
+		::System::Void OnTalentUnInstall(::Class_0_16E4307DCC419505_7* rcvMessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONTALENTUNINSTALL_OFFSET))(this, rcvMessage);
+		}
+
+		::System::Void OnTalentActiveHandle(::Class_0_16E4307DCC419505_7* rcvMessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_ONTALENTACTIVEHANDLE_OFFSET))(this, rcvMessage);
+		}
+
+		::System::Void PlayUnlockOrUpgradeAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_PLAYUNLOCKORUPGRADEANIM_OFFSET))(this);
+		}
+
+		::System::Void PlayAssembleAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_PLAYASSEMBLEANIM_OFFSET))(this);
+		}
+
+		::System::Void PlayDisassembleAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_PLAYDISASSEMBLEANIM_OFFSET))(this);
+		}
+
+		::System::Void PlayRefreshAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER_PLAYREFRESHANIM_OFFSET))(this);
+		}
+
+		::System::Void _OnTalentInstall_b__39_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER__ONTALENTINSTALL_B__39_0_OFFSET))(this);
+		}
+
+		::System::Void _OnTalentUnInstall_b__41_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER__ONTALENTUNINSTALL_B__41_0_OFFSET))(this);
+		}
+
+		::System::Void _OnTalentActiveHandle_b__42_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER__ONTALENTACTIVEHANDLE_B__42_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2TALENTPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -4,12 +4,12 @@
 
 namespace UnityEngine::UIElements { class EventBase; }
 
-#define UNITYENGINE_UIELEMENTS_EVENTDEBUGGERLOGIMGUICALL_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1020)
-#define UNITYENGINE_UIELEMENTS_EVENTDEBUGGERLOGIMGUICALL__CTOR_OFFSET UNITYSDK_OFFSET(0x1020)
+#define UNITYENGINE_UIELEMENTS_EVENTDEBUGGERLOGIMGUICALL_DISPOSE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define UNITYENGINE_UIELEMENTS_EVENTDEBUGGERLOGIMGUICALL__CTOR_OFFSET UNITYSDK_OFFSET(0x259A50)
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int EventDebuggerLogIMGUICall_TypeDefinitionIndex = 5857;
+	inline static constexpr unsigned int EventDebuggerLogIMGUICall_TypeDefinitionIndex = 23870;
 
 	struct alignas(1) EventDebuggerLogIMGUICall
 	{

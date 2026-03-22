@@ -7,14 +7,14 @@ namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_EXECUTIONENGINEEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C37000)
-#define SYSTEM_EXECUTIONENGINEEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C34730)
-#define SYSTEM_EXECUTIONENGINEEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15C37070)
-#define SYSTEM_EXECUTIONENGINEEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C36F60)
+#define SYSTEM_EXECUTIONENGINEEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18B08A10)
+#define SYSTEM_EXECUTIONENGINEEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x18B08A80)
+#define SYSTEM_EXECUTIONENGINEEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x18B08AF0)
+#define SYSTEM_EXECUTIONENGINEEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x18B08970)
 
 namespace System
 {
-	inline static constexpr unsigned int ExecutionEngineException_TypeDefinitionIndex = 247;
+	inline static constexpr unsigned int ExecutionEngineException_TypeDefinitionIndex = 233;
 
 	class ExecutionEngineException : public ::System::SystemException
 	{

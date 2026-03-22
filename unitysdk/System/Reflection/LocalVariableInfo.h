@@ -5,14 +5,13 @@
 namespace System { class String; }
 namespace System { class Type; }
 
-#define SYSTEM_REFLECTION_LOCALVARIABLEINFO_GET_LOCALINDEX_OFFSET UNITYSDK_OFFSET(0x15CC04F0)
-#define SYSTEM_REFLECTION_LOCALVARIABLEINFO_GET_LOCALTYPE_OFFSET UNITYSDK_OFFSET(0x15CC0500)
-#define SYSTEM_REFLECTION_LOCALVARIABLEINFO_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15CC0510)
-#define SYSTEM_REFLECTION_LOCALVARIABLEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x15CC04E0)
+#define SYSTEM_REFLECTION_LOCALVARIABLEINFO_GET_LOCALINDEX_OFFSET UNITYSDK_OFFSET(0x18EFF5A0)
+#define SYSTEM_REFLECTION_LOCALVARIABLEINFO_TOSTRING_OFFSET UNITYSDK_OFFSET(0x18EFF5B0)
+#define SYSTEM_REFLECTION_LOCALVARIABLEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x18EFF590)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int LocalVariableInfo_TypeDefinitionIndex = 606;
+	inline static constexpr unsigned int LocalVariableInfo_TypeDefinitionIndex = 580;
 
 	class LocalVariableInfo : public ::System::Object
 	{
@@ -29,11 +28,6 @@ namespace System::Reflection
 		::System::Int32 get_LocalIndex()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_LOCALVARIABLEINFO_GET_LOCALINDEX_OFFSET))(this);
-		}
-
-		::System::Type* get_LocalType()
-		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_LOCALVARIABLEINFO_GET_LOCALTYPE_OFFSET))(this);
 		}
 
 		::System::String* ToString()

@@ -1,0 +1,126 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Share/ENotificationBadgeType.h"
+
+class Class_2_36865368388A1C3B;
+class Class_2_A8F5ABF31E066ED4;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_GET_ICON_OFFSET UNITYSDK_OFFSET(0xC057E60)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_GET_PRESSURE_OFFSET UNITYSDK_OFFSET(0xC057E80)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_HANDLEPOPUP_OFFSET UNITYSDK_OFFSET(0xC0576E0)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_HIDEPROGRESSVALUE_OFFSET UNITYSDK_OFFSET(0xC057DE0)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_MARKCOUNTDOWN_OFFSET UNITYSDK_OFFSET(0xC0575E0)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC057460)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC057500)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0571D0)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0573B0)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_SETONCLICKBACK_OFFSET UNITYSDK_OFFSET(0xC057670)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_SHOWPROGRESSVALUE_OFFSET UNITYSDK_OFFSET(0xC057B50)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC057EA0)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER__ONUIINIT_B__2_0_OFFSET UNITYSDK_OFFSET(0xC057ED0)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC057EF0)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC057F60)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC057FE0)
+#define MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC058040)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralRewardListBtnWidgetController_TypeDefinitionIndex = 53770;
+
+	class UIGeneralRewardListBtnWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::Single UiPressureOffset; // 0x0
+		::Class_2_36865368388A1C3B* _view; // 0x2A0
+		::System::Action* _callback; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::MoleMole::UIGeneralRewardListBtnWidgetController* MarkCountDown(::System::Boolean status)
+		{
+			return ((::MoleMole::UIGeneralRewardListBtnWidgetController*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_MARKCOUNTDOWN_OFFSET))(this, status);
+		}
+
+		::System::Void SetOnClickBack(::System::Action* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_SETONCLICKBACK_OFFSET))(this, callback);
+		}
+
+		::System::Void HandlePopup(::System::Boolean isActive, ::Share::ENotificationBadgeType badgeType, ::System::Int32 subId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Share::ENotificationBadgeType, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_HANDLEPOPUP_OFFSET))(this, isActive, badgeType, subId);
+		}
+
+		::System::Void ShowProgressValue(::System::Int32 curValue, ::System::Int32 targetValue)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_SHOWPROGRESSVALUE_OFFSET))(this, curValue, targetValue);
+		}
+
+		::System::Void HideProgressValue()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_HIDEPROGRESSVALUE_OFFSET))(this);
+		}
+
+		::Class_2_A8F5ABF31E066ED4* get_Icon()
+		{
+			return ((::Class_2_A8F5ABF31E066ED4*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_GET_ICON_OFFSET))(this);
+		}
+
+		::Class_2_A8F5ABF31E066ED4* get_Pressure()
+		{
+			return ((::Class_2_A8F5ABF31E066ED4*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER_GET_PRESSURE_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__2_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER__ONUIINIT_B__2_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALREWARDLISTBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

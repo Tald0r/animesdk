@@ -7,7 +7,7 @@ namespace System::Collections::ObjectModel { template <typename T> class ReadOnl
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int ArrayBuilderExtensions_TypeDefinitionIndex = 3181;
+	inline static constexpr unsigned int ArrayBuilderExtensions_TypeDefinitionIndex = 4444;
 
 	class ArrayBuilderExtensions : public ::System::Object
 	{

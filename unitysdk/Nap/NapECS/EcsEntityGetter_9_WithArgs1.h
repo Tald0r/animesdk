@@ -1,0 +1,24 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+namespace System { template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9> class Func_9; }
+
+namespace Nap::NapECS
+{
+	inline static constexpr unsigned int EcsEntityGetter_9_WithArgs1_TypeDefinitionIndex = 34177;
+
+	template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename TResult>
+	struct EcsEntityGetter_9_WithArgs1
+	{
+		TResult Result; // 0x0
+		::System::Func_9<T1, T2, T3, T4, T5, T6, T7, T8, TResult>* _getter; // 0x0
+		T2 _args2; // 0x0
+		T3 _args3; // 0x0
+		T4 _args4; // 0x0
+		T5 _args5; // 0x0
+		T6 _args6; // 0x0
+		T7 _args7; // 0x0
+		T8 _args8; // 0x0
+	};
+}

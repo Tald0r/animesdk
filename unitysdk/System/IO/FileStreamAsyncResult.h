@@ -7,26 +7,26 @@ namespace System { class IAsyncResult; }
 namespace System::Threading { class ManualResetEvent; }
 namespace System::Threading { class WaitHandle; }
 
-#define SYSTEM_IO_FILESTREAMASYNCRESULT_CBWRAPPER_OFFSET UNITYSDK_OFFSET(0x15C85440)
-#define SYSTEM_IO_FILESTREAMASYNCRESULT_GET_ASYNCSTATE_OFFSET UNITYSDK_OFFSET(0x15C854D0)
-#define SYSTEM_IO_FILESTREAMASYNCRESULT_GET_ASYNCWAITHANDLE_OFFSET UNITYSDK_OFFSET(0x15C854F0)
-#define SYSTEM_IO_FILESTREAMASYNCRESULT_GET_COMPLETEDSYNCHRONOUSLY_OFFSET UNITYSDK_OFFSET(0x15C854E0)
-#define SYSTEM_IO_FILESTREAMASYNCRESULT_GET_ISCOMPLETED_OFFSET UNITYSDK_OFFSET(0x15C85500)
-#define SYSTEM_IO_FILESTREAMASYNCRESULT__CTOR_OFFSET UNITYSDK_OFFSET(0x15C83230)
+#define SYSTEM_IO_FILESTREAMASYNCRESULT_CBWRAPPER_OFFSET UNITYSDK_OFFSET(0x1918E880)
+#define SYSTEM_IO_FILESTREAMASYNCRESULT_GET_ASYNCSTATE_OFFSET UNITYSDK_OFFSET(0x1918E910)
+#define SYSTEM_IO_FILESTREAMASYNCRESULT_GET_ASYNCWAITHANDLE_OFFSET UNITYSDK_OFFSET(0x1918E930)
+#define SYSTEM_IO_FILESTREAMASYNCRESULT_GET_COMPLETEDSYNCHRONOUSLY_OFFSET UNITYSDK_OFFSET(0x1918E920)
+#define SYSTEM_IO_FILESTREAMASYNCRESULT_GET_ISCOMPLETED_OFFSET UNITYSDK_OFFSET(0x1918E940)
+#define SYSTEM_IO_FILESTREAMASYNCRESULT__CTOR_OFFSET UNITYSDK_OFFSET(0x1918E7E0)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int FileStreamAsyncResult_TypeDefinitionIndex = 717;
+	inline static constexpr unsigned int FileStreamAsyncResult_TypeDefinitionIndex = 683;
 
 	class FileStreamAsyncResult : public ::System::Object
 	{
 	public:
-		::System::Threading::ManualResetEvent* wh; // 0x10
-		::System::AsyncCallback* realcb; // 0x18
-		::System::Object* state; // 0x20
-		::System::AsyncCallback* cb; // 0x28
-		::System::Int32 Count; // 0x30
-		::System::Int32 BytesRead; // 0x34
+		::System::AsyncCallback* cb; // 0x10
+		::System::Object* state; // 0x18
+		::System::Threading::ManualResetEvent* wh; // 0x20
+		::System::AsyncCallback* realcb; // 0x28
+		::System::Int32 BytesRead; // 0x30
+		::System::Int32 Count; // 0x34
 		::System::Boolean completedSynch; // 0x38
 		::System::Boolean completed; // 0x39
 		::System::Int32 OriginalCount; // 0x3C

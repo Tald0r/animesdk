@@ -1,0 +1,101 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_91A4E45FCB86776B;
+class Class_3_E6A377784A0B8569;
+namespace MoleMole { class PasswordGameNumberButtonContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x98F5D10)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_ONNUMBTN_OFFSET UNITYSDK_OFFSET(0x98F61A0)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x98F5DB0)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x98F57A0)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x98F5840)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_RESETVIEW_OFFSET UNITYSDK_OFFSET(0x98F59F0)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_SETSELECTED_OFFSET UNITYSDK_OFFSET(0x98F5E90)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_SIMULATESELECTBTN_OFFSET UNITYSDK_OFFSET(0x98F5FD0)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x98F6220)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x98F6250)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x98F62C0)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x98F6340)
+#define MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x98F63A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPasswordGameNumberButtonWidgetController_TypeDefinitionIndex = 41508;
+
+	class UIPasswordGameNumberButtonWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_91A4E45FCB86776B* _view; // 0x2A0
+		::Class_3_E6A377784A0B8569* _model; // 0x2A8
+		::System::Char _input; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void ResetView(::MoleMole::PasswordGameNumberButtonContext* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::PasswordGameNumberButtonContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_RESETVIEW_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetSelected(::System::Boolean isSelected)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_SETSELECTED_OFFSET))(this, isSelected);
+		}
+
+		::System::Void SimulateSelectBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_SIMULATESELECTBTN_OFFSET))(this);
+		}
+
+		::System::Void OnNumBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER_ONNUMBTN_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPASSWORDGAMENUMBERBUTTONWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

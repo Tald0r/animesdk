@@ -2,29 +2,51 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_43BD383C98B4C0C5_86__CTOR_OFFSET UNITYSDK_OFFSET(0x16145620)
+namespace System { class String; }
 
-inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_86_TypeDefinitionIndex = 32149;
+#define CLASS_1_43BD383C98B4C0C5_86__CTOR_OFFSET UNITYSDK_OFFSET(0xA6B9330)
+
+inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_86_TypeDefinitionIndex = 51346;
 
 class Class_1_43BD383C98B4C0C5_86 : public ::System::Object
 {
 public:
-	::System::Int32 Field_1_8; // 0x10
-	::System::Boolean Field_1_3; // 0x14
-	::System::Boolean Field_1_1; // 0x15
-	::System::Int32 Field_1_0; // 0x18
-	::System::Boolean Field_1_5; // 0x1C
-	::System::Boolean Field_1_2; // 0x1D
-	::System::Boolean Field_1_4; // 0x1E
-	::System::UInt32 Field_1_13; // 0x20
-	::System::Int32 Field_1_10; // 0x24
-	::System::Int32 Field_1_7; // 0x28
-	::System::Int32 Field_1_6; // 0x2C
-	::System::UInt32 Field_1_11; // 0x30
-	::System::UInt32 Field_1_14; // 0x34
-	::System::Int32 Field_1_9; // 0x38
-	::System::UInt32 Field_1_12; // 0x3C
-	::System::UInt32 Field_1_15; // 0x40
+	// static const ::System::Int32 Field_1_0 = 0x7D73; // 0x0
+	::System::String* Field_1_18; // 0x10
+	::System::String* Field_1_21; // 0x18
+	::System::String* Field_1_23; // 0x20
+	::System::String* Field_1_29; // 0x28
+	::System::String* Field_1_19; // 0x30
+	::System::String* Field_1_31; // 0x38
+	::System::String* Field_1_22; // 0x40
+	::System::String* Field_1_28; // 0x48
+	::System::String* Field_1_27; // 0x50
+	::System::String* Field_1_26; // 0x58
+	::System::String* Field_1_33; // 0x60
+	::System::String* Field_1_20; // 0x68
+	::System::String* Field_1_30; // 0x70
+	::System::String* Field_1_25; // 0x78
+	::System::String* Field_1_32; // 0x80
+	::System::String* Field_1_24; // 0x88
+	::System::String* Field_1_34; // 0x90
+	::System::Int32 Field_1_7; // 0x98
+	::System::Int32 Field_1_4; // 0x9C
+	::System::Int32 Field_1_35; // 0xA0
+	::System::Int32 Field_1_15; // 0xA4
+	::System::Int32 Field_1_16; // 0xA8
+	::System::Int32 Field_1_2; // 0xAC
+	::System::Int32 Field_1_8; // 0xB0
+	::System::Int32 Field_1_14; // 0xB4
+	::System::Int32 Field_1_9; // 0xB8
+	::System::Int32 Field_1_6; // 0xBC
+	::System::Int32 Field_1_5; // 0xC0
+	::System::Int32 Field_1_11; // 0xC4
+	::System::Int32 Field_1_17; // 0xC8
+	::System::Int32 Field_1_10; // 0xCC
+	::System::Int32 Field_1_12; // 0xD0
+	::System::Int32 Field_1_3; // 0xD4
+	::System::Int32 Field_1_1; // 0xD8
+	::System::Int32 Field_1_13; // 0xDC
 
 	::System::Void _ctor()
 	{

@@ -8,32 +8,41 @@ namespace Newtonsoft::Json { class JsonReader; }
 namespace Newtonsoft::Json { class JsonWriter; }
 namespace Newtonsoft::Json::Linq { class JToken; }
 namespace Newtonsoft::Json::Linq { class JsonLoadSettings; }
+namespace Newtonsoft::Json::Linq { class JsonMergeSettings; }
+namespace System { class Object; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class IList_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_CLONETOKEN_OFFSET UNITYSDK_OFFSET(0x15DA6E80)
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_DEEPEQUALS_OFFSET UNITYSDK_OFFSET(0x15DA6E00)
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GETDEEPHASHCODE_OFFSET UNITYSDK_OFFSET(0x15DA7230)
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GET_CHILDRENTOKENS_OFFSET UNITYSDK_OFFSET(0x15DA6B60)
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GET_NAME_OFFSET UNITYSDK_OFFSET(0x15DA6C50)
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x15DA6C60)
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_INDEXOFITEM_OFFSET UNITYSDK_OFFSET(0x15DA6B70)
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_LOAD_OFFSET UNITYSDK_OFFSET(0x15DA72D0)
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_WRITETO_OFFSET UNITYSDK_OFFSET(0x15DA6EF0)
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15DA6CC0)
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15DA6D20)
-#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x15DA6C70)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_CLONETOKEN_OFFSET UNITYSDK_OFFSET(0x1A9875C0)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_DEEPEQUALS_OFFSET UNITYSDK_OFFSET(0x1A987520)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GETDEEPHASHCODE_OFFSET UNITYSDK_OFFSET(0x1A987C30)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GET_CHILDRENTOKENS_OFFSET UNITYSDK_OFFSET(0x1A987010)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x1A987A20)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GET_NAME_OFFSET UNITYSDK_OFFSET(0x1A987190)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1A9871B0)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_INDEXOFITEM_OFFSET UNITYSDK_OFFSET(0x1A987020)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_LOAD_1_OFFSET UNITYSDK_OFFSET(0x1A987CE0)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_LOAD_OFFSET UNITYSDK_OFFSET(0x1A987CD0)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_MERGEITEM_OFFSET UNITYSDK_OFFSET(0x1A987100)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_SET_ITEM_OFFSET UNITYSDK_OFFSET(0x1A987B20)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_SET_NAME_OFFSET UNITYSDK_OFFSET(0x1A9871A0)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_WRITETO_OFFSET UNITYSDK_OFFSET(0x1A9876A0)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A9872A0)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1A987350)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1A987380)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_4_OFFSET UNITYSDK_OFFSET(0x1A9873B0)
+#define NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9871C0)
 
 namespace Newtonsoft::Json::Linq
 {
-	inline static constexpr unsigned int JConstructor_TypeDefinitionIndex = 8243;
+	inline static constexpr unsigned int JConstructor_TypeDefinitionIndex = 7034;
 
 	class JConstructor : public ::Newtonsoft::Json::Linq::JContainer
 	{
 	public:
+		::System::String* _name; // 0x40
 		::System::Collections::Generic::List_1<::Newtonsoft::Json::Linq::JToken*>* _values; // 0x48
-		::System::String* _name; // 0x50
 
 		::System::Void _ctor()
 		{
@@ -45,9 +54,19 @@ namespace Newtonsoft::Json::Linq
 			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::Linq::JConstructor*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_1_OFFSET))(this, other);
 		}
 
-		::System::Void _ctor_2(::System::String* name)
+		::System::Void _ctor_2(::System::String* name, ::Il2CppArray<::System::Object*>* content)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_2_OFFSET))(this, name);
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_2_OFFSET))(this, name, content);
+		}
+
+		::System::Void _ctor_3(::System::String* name, ::System::Object* content)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_3_OFFSET))(this, name, content);
+		}
+
+		::System::Void _ctor_4(::System::String* name)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR__CTOR_4_OFFSET))(this, name);
 		}
 
 		::System::Collections::Generic::IList_1<::Newtonsoft::Json::Linq::JToken*>* get_ChildrenTokens()
@@ -60,9 +79,19 @@ namespace Newtonsoft::Json::Linq
 			return ((::System::Int32(*)(::PVOID, ::Newtonsoft::Json::Linq::JToken*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_INDEXOFITEM_OFFSET))(this, item);
 		}
 
+		::System::Void MergeItem(::System::Object* content, ::Newtonsoft::Json::Linq::JsonMergeSettings* settings)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::Newtonsoft::Json::Linq::JsonMergeSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_MERGEITEM_OFFSET))(this, content, settings);
+		}
+
 		::System::String* get_Name()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GET_NAME_OFFSET))(this);
+		}
+
+		::System::Void set_Name(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_SET_NAME_OFFSET))(this, value);
 		}
 
 		::Newtonsoft::Json::Linq::JTokenType get_Type()
@@ -85,14 +114,29 @@ namespace Newtonsoft::Json::Linq
 			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::JsonWriter*, ::Il2CppArray<::Newtonsoft::Json::JsonConverter*>*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_WRITETO_OFFSET))(this, writer, converters);
 		}
 
+		::Newtonsoft::Json::Linq::JToken* get_Item(::System::Object* key)
+		{
+			return ((::Newtonsoft::Json::Linq::JToken*(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GET_ITEM_OFFSET))(this, key);
+		}
+
+		::System::Void set_Item(::System::Object* key, ::Newtonsoft::Json::Linq::JToken* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::Newtonsoft::Json::Linq::JToken*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_SET_ITEM_OFFSET))(this, key, value);
+		}
+
 		::System::Int32 GetDeepHashCode()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_GETDEEPHASHCODE_OFFSET))(this);
 		}
 
-		static ::Newtonsoft::Json::Linq::JConstructor* Load(::Newtonsoft::Json::JsonReader* reader, ::Newtonsoft::Json::Linq::JsonLoadSettings* settings)
+		static ::Newtonsoft::Json::Linq::JConstructor* Load(::Newtonsoft::Json::JsonReader* reader)
 		{
-			return ((::Newtonsoft::Json::Linq::JConstructor*(*)(::Newtonsoft::Json::JsonReader*, ::Newtonsoft::Json::Linq::JsonLoadSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_LOAD_OFFSET))(reader, settings);
+			return ((::Newtonsoft::Json::Linq::JConstructor*(*)(::Newtonsoft::Json::JsonReader*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_LOAD_OFFSET))(reader);
+		}
+
+		static ::Newtonsoft::Json::Linq::JConstructor* Load_1(::Newtonsoft::Json::JsonReader* reader, ::Newtonsoft::Json::Linq::JsonLoadSettings* settings)
+		{
+			return ((::Newtonsoft::Json::Linq::JConstructor*(*)(::Newtonsoft::Json::JsonReader*, ::Newtonsoft::Json::Linq::JsonLoadSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JCONSTRUCTOR_LOAD_1_OFFSET))(reader, settings);
 		}
 	};
 }

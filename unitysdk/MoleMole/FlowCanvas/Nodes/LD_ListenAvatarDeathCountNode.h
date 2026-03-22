@@ -1,0 +1,82 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlowCanvas/Flow.h"
+#include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
+
+class Class_1_B7E341C5F1A6F199;
+namespace FlowCanvas { class FlowOutput; }
+namespace MoleMole::Battle { class Entity; }
+
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x8B099F0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0x8B09A60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x8B093C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE_UNBINDEVENT_OFFSET UNITYSDK_OFFSET(0x8B09840)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE__BINDEVENT_OFFSET UNITYSDK_OFFSET(0x8B096A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x8B09AD0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE__ONEVENT_OFFSET UNITYSDK_OFFSET(0x8B09580)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE__REGISTERPORTS_B__2_0_OFFSET UNITYSDK_OFFSET(0x8B09AF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE___BASE_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x8B09B40)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE___BASE_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0x8B09B50)
+
+namespace MoleMole::FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int LD_ListenAvatarDeathCountNode_TypeDefinitionIndex = 40955;
+
+	class LD_ListenAvatarDeathCountNode : public ::FlowCanvas::Nodes::FlowControlNode
+	{
+	public:
+		::FlowCanvas::FlowOutput* output; // 0xA8
+		::FlowCanvas::FlowOutput* OnDeathOut; // 0xB0
+		::System::Boolean hasBindEvent; // 0xB8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE_REGISTERPORTS_OFFSET))(this);
+		}
+
+		::System::Void _OnEvent(::Class_1_B7E341C5F1A6F199* evt, ::MoleMole::Battle::Entity* entity)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_B7E341C5F1A6F199*, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE__ONEVENT_OFFSET))(this, evt, entity);
+		}
+
+		::System::Void _BindEvent()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE__BINDEVENT_OFFSET))(this);
+		}
+
+		::System::Void UnBindEvent()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE_UNBINDEVENT_OFFSET))(this);
+		}
+
+		::System::Void OnGraphStarted()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE_ONGRAPHSTARTED_OFFSET))(this);
+		}
+
+		::System::Void OnGraphStoped()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE_ONGRAPHSTOPED_OFFSET))(this);
+		}
+
+		::System::Void _RegisterPorts_b__2_0(::FlowCanvas::Flow flow)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE__REGISTERPORTS_B__2_0_OFFSET))(this, flow);
+		}
+
+		::System::Void __base_OnGraphStarted()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE___BASE_ONGRAPHSTARTED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnGraphStoped()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE___BASE_ONGRAPHSTOPED_OFFSET))(this);
+		}
+	};
+}

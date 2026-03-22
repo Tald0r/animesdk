@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Microsoft/Win32/SafeHandles/SafeHandleZeroOrMinusOneIsInvalid.h"
 
-#define MICROSOFT_WIN32_SAFEHANDLES_SAFEFILEHANDLE_RELEASEHANDLE_OFFSET UNITYSDK_OFFSET(0x15AAC5F0)
-#define MICROSOFT_WIN32_SAFEHANDLES_SAFEFILEHANDLE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15AAC580)
-#define MICROSOFT_WIN32_SAFEHANDLES_SAFEFILEHANDLE__CTOR_OFFSET UNITYSDK_OFFSET(0x15AAC500)
+#define MICROSOFT_WIN32_SAFEHANDLES_SAFEFILEHANDLE_RELEASEHANDLE_OFFSET UNITYSDK_OFFSET(0x18EE9F60)
+#define MICROSOFT_WIN32_SAFEHANDLES_SAFEFILEHANDLE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18EE9EF0)
+#define MICROSOFT_WIN32_SAFEHANDLES_SAFEFILEHANDLE__CTOR_OFFSET UNITYSDK_OFFSET(0x18EE9ED0)
 
 namespace Microsoft::Win32::SafeHandles
 {
-	inline static constexpr unsigned int SafeFileHandle_TypeDefinitionIndex = 114;
+	inline static constexpr unsigned int SafeFileHandle_TypeDefinitionIndex = 102;
 
 	class SafeFileHandle : public ::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid
 	{

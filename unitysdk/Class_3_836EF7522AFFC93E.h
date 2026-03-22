@@ -1,0 +1,91 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_F33340E023067DAF.h"
+
+class Class_1_B7E341C5F1A6F199;
+class Class_2_0DEEBF600A668CAC;
+namespace MoleMole::Battle { class Entity; }
+namespace Nap::NapECS { class EcsFilter; }
+namespace Nap::NapECS { class EcsWorld; }
+
+#define CLASS_3_836EF7522AFFC93E_CREATEFILTERS_OFFSET UNITYSDK_OFFSET(0x9A4BD60)
+#define CLASS_3_836EF7522AFFC93E_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x9A4C830)
+#define CLASS_3_836EF7522AFFC93E_METHOD_3_029C65A844AC7F63_OFFSET UNITYSDK_OFFSET(0x9A4D3A0)
+#define CLASS_3_836EF7522AFFC93E_METHOD_3_15589FA2A8B3BF1D_OFFSET UNITYSDK_OFFSET(0x9A4CE30)
+#define CLASS_3_836EF7522AFFC93E_METHOD_3_40EA903589A7C814_OFFSET UNITYSDK_OFFSET(0x9A4CB80)
+#define CLASS_3_836EF7522AFFC93E_METHOD_3_74DCB093D513EC16_OFFSET UNITYSDK_OFFSET(0x9A4D060)
+#define CLASS_3_836EF7522AFFC93E_METHOD_3_89C8F1D9B2E7AA27_OFFSET UNITYSDK_OFFSET(0x9A4D240)
+#define CLASS_3_836EF7522AFFC93E_METHOD_3_B09C2E83BABDC60F_OFFSET UNITYSDK_OFFSET(0x9A4D140)
+#define CLASS_3_836EF7522AFFC93E_METHOD_3_BADC81CF9C936EDA_OFFSET UNITYSDK_OFFSET(0x9A4CDC0)
+#define CLASS_3_836EF7522AFFC93E_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x9A4D480)
+#define CLASS_3_836EF7522AFFC93E_METHOD_3_DCBFECF520D836C0_OFFSET UNITYSDK_OFFSET(0x9A4CA00)
+#define CLASS_3_836EF7522AFFC93E__CTOR_OFFSET UNITYSDK_OFFSET(0x9A4CB60)
+
+inline static constexpr unsigned int Class_3_836EF7522AFFC93E_TypeDefinitionIndex = 47098;
+
+class Class_3_836EF7522AFFC93E : public ::Class_2_F33340E023067DAF
+{
+public:
+	::Nap::NapECS::EcsFilter* Field_3_1; // 0x20
+	::Nap::NapECS::EcsFilter* Field_3_0; // 0x28
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E__CTOR_OFFSET))(this);
+	}
+
+	::System::Void CreateFilters(::Nap::NapECS::EcsWorld* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Nap::NapECS::EcsWorld*))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E_CREATEFILTERS_OFFSET))(this, a1);
+	}
+
+	::System::Void LateUpdate()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E_LATEUPDATE_OFFSET))(this);
+	}
+
+	static ::System::Void Method_3_40EA903589A7C814(::Class_1_B7E341C5F1A6F199* a1, ::MoleMole::Battle::Entity* a2)
+	{
+		return ((::System::Void(*)(::Class_1_B7E341C5F1A6F199*, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E_METHOD_3_40EA903589A7C814_OFFSET))(a1, a2);
+	}
+
+	::System::Void Method_3_BADC81CF9C936EDA(::Nap::NapECS::EcsWorld* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Nap::NapECS::EcsWorld*))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E_METHOD_3_BADC81CF9C936EDA_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_DCBFECF520D836C0()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E_METHOD_3_DCBFECF520D836C0_OFFSET))(this);
+	}
+
+	static ::System::Void Method_3_15589FA2A8B3BF1D(::Class_1_B7E341C5F1A6F199* a1, ::MoleMole::Battle::Entity* a2)
+	{
+		return ((::System::Void(*)(::Class_1_B7E341C5F1A6F199*, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E_METHOD_3_15589FA2A8B3BF1D_OFFSET))(a1, a2);
+	}
+
+	static ::System::Void Method_3_74DCB093D513EC16(::Class_1_B7E341C5F1A6F199* a1, ::MoleMole::Battle::Entity* a2)
+	{
+		return ((::System::Void(*)(::Class_1_B7E341C5F1A6F199*, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E_METHOD_3_74DCB093D513EC16_OFFSET))(a1, a2);
+	}
+
+	static ::System::Void Method_3_89C8F1D9B2E7AA27(::Class_1_B7E341C5F1A6F199* a1, ::MoleMole::Battle::Entity* a2)
+	{
+		return ((::System::Void(*)(::Class_1_B7E341C5F1A6F199*, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E_METHOD_3_89C8F1D9B2E7AA27_OFFSET))(a1, a2);
+	}
+
+	static ::System::Void Method_3_B09C2E83BABDC60F(::Class_2_0DEEBF600A668CAC* a1)
+	{
+		return ((::System::Void(*)(::Class_2_0DEEBF600A668CAC*))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E_METHOD_3_B09C2E83BABDC60F_OFFSET))(a1);
+	}
+
+	static ::System::Void Method_3_029C65A844AC7F63(::Class_1_B7E341C5F1A6F199* a1, ::MoleMole::Battle::Entity* a2)
+	{
+		return ((::System::Void(*)(::Class_1_B7E341C5F1A6F199*, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E_METHOD_3_029C65A844AC7F63_OFFSET))(a1, a2);
+	}
+
+	::System::Void Method_3_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_836EF7522AFFC93E_METHOD_3_CA373AA1C7054598_OFFSET))(this);
+	}
+};

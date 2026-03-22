@@ -9,12 +9,14 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 
 namespace System::Collections::Generic
 {
-	inline static constexpr unsigned int SortedDictionary_2_Enumerator_TypeDefinitionIndex = 2998;
+	inline static constexpr unsigned int SortedDictionary_2_Enumerator_TypeDefinitionIndex = 3960;
 
 	template <typename TKey, typename TValue>
 	struct SortedDictionary_2_Enumerator
 	{
 		::System::Collections::Generic::SortedSet_1_Enumerator<::System::Collections::Generic::KeyValuePair_2<TKey, TValue>> _treeEnum; // 0x0
 		::System::Int32 _getEnumeratorRetType; // 0x0
+		// static const ::System::Int32 KeyValuePair = 0x1; // 0x0
+		// static const ::System::Int32 DictEntry = 0x2; // 0x0
 	};
 }

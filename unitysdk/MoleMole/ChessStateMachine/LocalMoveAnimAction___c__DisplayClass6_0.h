@@ -1,0 +1,49 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_5_2169ABC757988FED;
+namespace System { class Action; }
+
+#define MOLEMOLE_CHESSSTATEMACHINE_LOCALMOVEANIMACTION___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9B4D310)
+#define MOLEMOLE_CHESSSTATEMACHINE_LOCALMOVEANIMACTION___C__DISPLAYCLASS6_0__DORISEORSINKBYCONFIG_B__0_OFFSET UNITYSDK_OFFSET(0x9B4D320)
+#define MOLEMOLE_CHESSSTATEMACHINE_LOCALMOVEANIMACTION___C__DISPLAYCLASS6_0__DORISEORSINKBYCONFIG_B__1_OFFSET UNITYSDK_OFFSET(0x9B4D3C0)
+#define MOLEMOLE_CHESSSTATEMACHINE_LOCALMOVEANIMACTION___C__DISPLAYCLASS6_0__DORISEORSINKBYCONFIG_B__2_OFFSET UNITYSDK_OFFSET(0x9B4D460)
+#define MOLEMOLE_CHESSSTATEMACHINE_LOCALMOVEANIMACTION___C__DISPLAYCLASS6_0__DORISEORSINKBYCONFIG_B__3_OFFSET UNITYSDK_OFFSET(0x9B4D500)
+
+namespace MoleMole::ChessStateMachine
+{
+	inline static constexpr unsigned int LocalMoveAnimAction___c__DisplayClass6_0_TypeDefinitionIndex = 58450;
+
+	class LocalMoveAnimAction___c__DisplayClass6_0 : public ::System::Object
+	{
+	public:
+		::System::Action* onEnd; // 0x10
+		::Class_5_2169ABC757988FED* chessPiece3dModel; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_LOCALMOVEANIMACTION___C__DISPLAYCLASS6_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _DoRiseOrSinkByConfig_b__0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_LOCALMOVEANIMACTION___C__DISPLAYCLASS6_0__DORISEORSINKBYCONFIG_B__0_OFFSET))(this);
+		}
+
+		::System::Void _DoRiseOrSinkByConfig_b__1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_LOCALMOVEANIMACTION___C__DISPLAYCLASS6_0__DORISEORSINKBYCONFIG_B__1_OFFSET))(this);
+		}
+
+		::System::Void _DoRiseOrSinkByConfig_b__2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_LOCALMOVEANIMACTION___C__DISPLAYCLASS6_0__DORISEORSINKBYCONFIG_B__2_OFFSET))(this);
+		}
+
+		::System::Void _DoRiseOrSinkByConfig_b__3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_LOCALMOVEANIMACTION___C__DISPLAYCLASS6_0__DORISEORSINKBYCONFIG_B__3_OFFSET))(this);
+		}
+	};
+}

@@ -6,7 +6,7 @@ namespace UnityEngine { class GameObject; }
 
 namespace TapTap::Sdk
 {
-	inline static constexpr unsigned int UI_TypeDefinitionIndex = 6324;
+	inline static constexpr unsigned int UI_TypeDefinitionIndex = 9464;
 
 	class UI : public ::System::Object
 	{

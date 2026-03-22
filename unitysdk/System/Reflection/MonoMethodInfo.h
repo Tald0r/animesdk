@@ -11,89 +11,89 @@ namespace System::Reflection { class MonoMethod; }
 namespace System::Reflection { class ParameterInfo; }
 namespace System::Runtime::InteropServices { class MarshalAsAttribute; }
 
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GETATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x15CC4FC0)
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GETCALLINGCONVENTION_OFFSET UNITYSDK_OFFSET(0x15CC5030)
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GETDECLARINGTYPE_OFFSET UNITYSDK_OFFSET(0x15CC5100)
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GETMETHODIMPLEMENTATIONFLAGS_OFFSET UNITYSDK_OFFSET(0x15CC45B0)
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GETMETHODINFO_OFFSET UNITYSDK_OFFSET(0x15CC6AF0)
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GETPARAMETERSINFO_OFFSET UNITYSDK_OFFSET(0x15CC4650)
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GETRETURNPARAMETERINFO_OFFSET UNITYSDK_OFFSET(0x15CC60A0)
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GETRETURNTYPE_OFFSET UNITYSDK_OFFSET(0x15CC61A0)
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GET_METHOD_ATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x15CC7090)
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GET_METHOD_INFO_OFFSET UNITYSDK_OFFSET(0x15CC7020)
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GET_PARAMETER_INFO_OFFSET UNITYSDK_OFFSET(0x15CC70A0)
-#define SYSTEM_REFLECTION_MONOMETHODINFO_GET_RETVAL_MARSHAL_OFFSET UNITYSDK_OFFSET(0x15CC70D0)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_1AE676A9E9611704_OFFSET UNITYSDK_OFFSET(0x17F5BB00)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_3204CD4EBE9A766A_OFFSET UNITYSDK_OFFSET(0x17F5BC30)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_45D72BDBA6197A9A_1_OFFSET UNITYSDK_OFFSET(0x17F5BBF0)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_45D72BDBA6197A9A_OFFSET UNITYSDK_OFFSET(0x17F5BBC0)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_727CF190BC0265BA_OFFSET UNITYSDK_OFFSET(0x17F5BA30)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_7E7A9368928F07C2_OFFSET UNITYSDK_OFFSET(0x17F5BC20)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_8DDB103BDA7773A7_OFFSET UNITYSDK_OFFSET(0x17F5BA90)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_9D76713045F7177A_OFFSET UNITYSDK_OFFSET(0x17F5BB60)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_A4AB7A81B4FDCA20_OFFSET UNITYSDK_OFFSET(0x17F5B9B0)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_EB74F63191BFC4A5_OFFSET UNITYSDK_OFFSET(0x17F5B930)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_F0C86BA4D830FBFC_OFFSET UNITYSDK_OFFSET(0x17F5B9A0)
+#define SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_F10EEFCCC75DEE3A_OFFSET UNITYSDK_OFFSET(0x17F5BAF0)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int MonoMethodInfo_TypeDefinitionIndex = 618;
+	inline static constexpr unsigned int MonoMethodInfo_TypeDefinitionIndex = 591;
 
 	struct alignas(8) MonoMethodInfo
 	{
-		::System::Type* parent; // 0x10
-		::System::Type* ret; // 0x18
-		::System::Reflection::MethodAttributes attrs; // 0x20
-		::System::Reflection::MethodImplAttributes iattrs; // 0x24
-		::System::Reflection::CallingConventions callconv; // 0x28
+		::System::Type* Field_2_0; // 0x10
+		::System::Type* Field_2_1; // 0x18
+		::System::Reflection::MethodAttributes Field_2_2; // 0x20
+		::System::Reflection::MethodImplAttributes Field_2_3; // 0x24
+		::System::Reflection::CallingConventions Field_2_4; // 0x28
 
-		static ::System::Void get_method_info(::System::IntPtr handle, ::System::Reflection::MonoMethodInfo& info)
+		static ::System::Void Method_2_EB74F63191BFC4A5(::System::IntPtr handle, ::System::Reflection::MonoMethodInfo& info)
 		{
-			return ((::System::Void(*)(::System::IntPtr, ::System::Reflection::MonoMethodInfo&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GET_METHOD_INFO_OFFSET))(handle, info);
+			return ((::System::Void(*)(::System::IntPtr, ::System::Reflection::MonoMethodInfo&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_EB74F63191BFC4A5_OFFSET))(handle, info);
 		}
 
-		static ::System::Int32 get_method_attributes(::System::IntPtr handle)
+		static ::System::Int32 Method_2_F0C86BA4D830FBFC(::System::IntPtr handle)
 		{
-			return ((::System::Int32(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GET_METHOD_ATTRIBUTES_OFFSET))(handle);
+			return ((::System::Int32(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_F0C86BA4D830FBFC_OFFSET))(handle);
 		}
 
-		static ::System::Reflection::MonoMethodInfo GetMethodInfo(::System::IntPtr handle)
+		static ::System::Reflection::MonoMethodInfo Method_2_A4AB7A81B4FDCA20(::System::IntPtr handle)
 		{
-			return ((::System::Reflection::MonoMethodInfo(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GETMETHODINFO_OFFSET))(handle);
+			return ((::System::Reflection::MonoMethodInfo(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_A4AB7A81B4FDCA20_OFFSET))(handle);
 		}
 
-		static ::System::Type* GetDeclaringType(::System::IntPtr handle)
+		static ::System::Type* Method_2_727CF190BC0265BA(::System::IntPtr handle)
 		{
-			return ((::System::Type*(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GETDECLARINGTYPE_OFFSET))(handle);
+			return ((::System::Type*(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_727CF190BC0265BA_OFFSET))(handle);
 		}
 
-		static ::System::Type* GetReturnType(::System::IntPtr handle)
+		static ::System::Type* Method_2_8DDB103BDA7773A7(::System::IntPtr handle)
 		{
-			return ((::System::Type*(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GETRETURNTYPE_OFFSET))(handle);
+			return ((::System::Type*(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_8DDB103BDA7773A7_OFFSET))(handle);
 		}
 
-		static ::System::Reflection::MethodAttributes GetAttributes(::System::IntPtr handle)
+		static ::System::Reflection::MethodAttributes Method_2_F10EEFCCC75DEE3A(::System::IntPtr handle)
 		{
-			return ((::System::Reflection::MethodAttributes(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GETATTRIBUTES_OFFSET))(handle);
+			return ((::System::Reflection::MethodAttributes(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_F10EEFCCC75DEE3A_OFFSET))(handle);
 		}
 
-		static ::System::Reflection::CallingConventions GetCallingConvention(::System::IntPtr handle)
+		static ::System::Reflection::CallingConventions Method_2_1AE676A9E9611704(::System::IntPtr handle)
 		{
-			return ((::System::Reflection::CallingConventions(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GETCALLINGCONVENTION_OFFSET))(handle);
+			return ((::System::Reflection::CallingConventions(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_1AE676A9E9611704_OFFSET))(handle);
 		}
 
-		static ::System::Reflection::MethodImplAttributes GetMethodImplementationFlags(::System::IntPtr handle)
+		static ::System::Reflection::MethodImplAttributes Method_2_9D76713045F7177A(::System::IntPtr handle)
 		{
-			return ((::System::Reflection::MethodImplAttributes(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GETMETHODIMPLEMENTATIONFLAGS_OFFSET))(handle);
+			return ((::System::Reflection::MethodImplAttributes(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_9D76713045F7177A_OFFSET))(handle);
 		}
 
-		static ::Il2CppArray<::System::Reflection::ParameterInfo*>* get_parameter_info(::System::IntPtr handle, ::System::Reflection::MemberInfo* member)
+		static ::Il2CppArray<::System::Reflection::ParameterInfo*>* Method_2_45D72BDBA6197A9A(::System::IntPtr handle, ::System::Reflection::MemberInfo* member)
 		{
-			return ((::Il2CppArray<::System::Reflection::ParameterInfo*>*(*)(::System::IntPtr, ::System::Reflection::MemberInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GET_PARAMETER_INFO_OFFSET))(handle, member);
+			return ((::Il2CppArray<::System::Reflection::ParameterInfo*>*(*)(::System::IntPtr, ::System::Reflection::MemberInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_45D72BDBA6197A9A_OFFSET))(handle, member);
 		}
 
-		static ::Il2CppArray<::System::Reflection::ParameterInfo*>* GetParametersInfo(::System::IntPtr handle, ::System::Reflection::MemberInfo* member)
+		static ::Il2CppArray<::System::Reflection::ParameterInfo*>* Method_2_45D72BDBA6197A9A_1(::System::IntPtr handle, ::System::Reflection::MemberInfo* member)
 		{
-			return ((::Il2CppArray<::System::Reflection::ParameterInfo*>*(*)(::System::IntPtr, ::System::Reflection::MemberInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GETPARAMETERSINFO_OFFSET))(handle, member);
+			return ((::Il2CppArray<::System::Reflection::ParameterInfo*>*(*)(::System::IntPtr, ::System::Reflection::MemberInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_45D72BDBA6197A9A_1_OFFSET))(handle, member);
 		}
 
-		static ::System::Runtime::InteropServices::MarshalAsAttribute* get_retval_marshal(::System::IntPtr handle)
+		static ::System::Runtime::InteropServices::MarshalAsAttribute* Method_2_7E7A9368928F07C2(::System::IntPtr handle)
 		{
-			return ((::System::Runtime::InteropServices::MarshalAsAttribute*(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GET_RETVAL_MARSHAL_OFFSET))(handle);
+			return ((::System::Runtime::InteropServices::MarshalAsAttribute*(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_7E7A9368928F07C2_OFFSET))(handle);
 		}
 
-		static ::System::Reflection::ParameterInfo* GetReturnParameterInfo(::System::Reflection::MonoMethod* method)
+		static ::System::Reflection::ParameterInfo* Method_2_3204CD4EBE9A766A(::System::Reflection::MonoMethod* method)
 		{
-			return ((::System::Reflection::ParameterInfo*(*)(::System::Reflection::MonoMethod*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_GETRETURNPARAMETERINFO_OFFSET))(method);
+			return ((::System::Reflection::ParameterInfo*(*)(::System::Reflection::MonoMethod*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOMETHODINFO_METHOD_2_3204CD4EBE9A766A_OFFSET))(method);
 		}
 	};
 }

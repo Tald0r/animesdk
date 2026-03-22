@@ -1,0 +1,54 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_7807B2B04302CD7B_17;
+class Class_1_7B1D2CC2F7CEF243;
+namespace System::Collections::Generic { template <typename T> class SortedSet_1; }
+
+#define CLASS_1_7583C380A049B4E1_METHOD_1_01BEC92F3CDF67C6_OFFSET UNITYSDK_OFFSET(0x65DC8C0)
+#define CLASS_1_7583C380A049B4E1_METHOD_1_2943CB55423DBA35_OFFSET UNITYSDK_OFFSET(0x65DCD40)
+#define CLASS_1_7583C380A049B4E1_METHOD_1_4EA6B1791DACA9CC_OFFSET UNITYSDK_OFFSET(0x65DC660)
+#define CLASS_1_7583C380A049B4E1_METHOD_1_8D61BE16C9463302_OFFSET UNITYSDK_OFFSET(0x65DCA50)
+#define CLASS_1_7583C380A049B4E1_METHOD_1_95780ED94B90ED36_OFFSET UNITYSDK_OFFSET(0x65DC860)
+#define CLASS_1_7583C380A049B4E1__CTOR_OFFSET UNITYSDK_OFFSET(0x65DC5B0)
+
+inline static constexpr unsigned int Class_1_7583C380A049B4E1_TypeDefinitionIndex = 58807;
+
+class Class_1_7583C380A049B4E1 : public ::System::Object
+{
+public:
+	::Class_1_7B1D2CC2F7CEF243* Field_1_2; // 0x10
+	::System::Collections::Generic::SortedSet_1<::Class_1_7B1D2CC2F7CEF243*>* Field_1_1; // 0x18
+	::Class_1_7807B2B04302CD7B_17* Field_1_0; // 0x20
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_7583C380A049B4E1__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_4EA6B1791DACA9CC()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_7583C380A049B4E1_METHOD_1_4EA6B1791DACA9CC_OFFSET))(this);
+	}
+
+	::Class_1_7B1D2CC2F7CEF243* Method_1_01BEC92F3CDF67C6()
+	{
+		return ((::Class_1_7B1D2CC2F7CEF243*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_7583C380A049B4E1_METHOD_1_01BEC92F3CDF67C6_OFFSET))(this);
+	}
+
+	::System::Void Method_1_8D61BE16C9463302()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_7583C380A049B4E1_METHOD_1_8D61BE16C9463302_OFFSET))(this);
+	}
+
+	::System::Void Method_1_2943CB55423DBA35(::Class_1_7B1D2CC2F7CEF243* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_7B1D2CC2F7CEF243*))((::PBYTE)hIl2Cpp + CLASS_1_7583C380A049B4E1_METHOD_1_2943CB55423DBA35_OFFSET))(this, a1);
+	}
+
+	::System::Int32 Method_1_95780ED94B90ED36()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_7583C380A049B4E1_METHOD_1_95780ED94B90ED36_OFFSET))(this);
+	}
+};

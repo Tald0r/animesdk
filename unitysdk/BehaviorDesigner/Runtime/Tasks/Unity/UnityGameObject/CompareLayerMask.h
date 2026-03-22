@@ -1,0 +1,50 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/BehaviorDesigner/Runtime/Tasks/Conditional.h"
+#include "unitysdk/BehaviorDesigner/Runtime/Tasks/TaskStatus.h"
+#include "unitysdk/UnityEngine/LayerMask.h"
+
+namespace BehaviorDesigner::Runtime { class SharedGameObject; }
+
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYGAMEOBJECT_COMPARELAYERMASK_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A65F5C0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYGAMEOBJECT_COMPARELAYERMASK_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A65F4F0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYGAMEOBJECT_COMPARELAYERMASK__CTOR_OFFSET UNITYSDK_OFFSET(0x1A65F610)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYGAMEOBJECT_COMPARELAYERMASK___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A65F650)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYGAMEOBJECT_COMPARELAYERMASK___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A65F6E0)
+
+namespace BehaviorDesigner::Runtime::Tasks::Unity::UnityGameObject
+{
+	inline static constexpr unsigned int CompareLayerMask_TypeDefinitionIndex = 30681;
+
+	class CompareLayerMask : public ::BehaviorDesigner::Runtime::Tasks::Conditional
+	{
+	public:
+		::BehaviorDesigner::Runtime::SharedGameObject* targetGameObject; // 0x50
+		::UnityEngine::LayerMask layermask; // 0x58
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYGAMEOBJECT_COMPARELAYERMASK__CTOR_OFFSET))(this);
+		}
+
+		::BehaviorDesigner::Runtime::Tasks::TaskStatus OnUpdate()
+		{
+			return ((::BehaviorDesigner::Runtime::Tasks::TaskStatus(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYGAMEOBJECT_COMPARELAYERMASK_ONUPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnReset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYGAMEOBJECT_COMPARELAYERMASK_ONRESET_OFFSET))(this);
+		}
+
+		::System::Void __base_OnReset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYGAMEOBJECT_COMPARELAYERMASK___BASE_ONRESET_OFFSET))(this);
+		}
+
+		::BehaviorDesigner::Runtime::Tasks::TaskStatus __base_OnUpdate()
+		{
+			return ((::BehaviorDesigner::Runtime::Tasks::TaskStatus(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYGAMEOBJECT_COMPARELAYERMASK___BASE_ONUPDATE_OFFSET))(this);
+		}
+	};
+}

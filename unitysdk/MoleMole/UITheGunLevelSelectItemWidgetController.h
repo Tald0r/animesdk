@@ -1,0 +1,183 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_AAFADCBFB5411608.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_F88C6BB7AF47AD69;
+class Class_2_79F6D62CE30E3F8E_67;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralNewHintWidgetController; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+namespace System { class String; }
+
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_NEEDPLAYUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xA416CF0)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA4152A0)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONFADEINFINISH_OFFSET UNITYSDK_OFFSET(0xA416320)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xA4164F0)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONLOCKCONTDOWNEND_OFFSET UNITYSDK_OFFSET(0xA417180)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA415420)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA415340)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA414EA0)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA4151F0)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_PLAYUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xA416E80)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_PREPAREUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xA415800)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_REFRESHITEM_OFFSET UNITYSDK_OFFSET(0xA415960)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_REFRESHNEW_OFFSET UNITYSDK_OFFSET(0xA416A60)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_REFRESHTRACK_OFFSET UNITYSDK_OFFSET(0xA416840)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_TRYPLAYUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xA416460)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA417230)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER__ONLOCKCONTDOWNEND_B__21_0_OFFSET UNITYSDK_OFFSET(0xA417250)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER__ONUIINIT_B__7_0_OFFSET UNITYSDK_OFFSET(0xA417240)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA4172F0)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONFADEINFINISH_OFFSET UNITYSDK_OFFSET(0xA417360)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xA4173C0)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA417430)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA4174B0)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA417530)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA417590)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UITheGunLevelSelectItemWidgetController_TypeDefinitionIndex = 52083;
+
+	class UITheGunLevelSelectItemWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		// static const ::System::String* UnlockAnimName; // 0x0
+		// static const ::System::String* FadeInAnimName; // 0x0
+		::Class_2_79F6D62CE30E3F8E_67* _view; // 0x2D0
+		::Class_1_F88C6BB7AF47AD69* levelItemData; // 0x2D8
+		::System::Boolean firstFadeIn; // 0x2E0
+		::Foundation::Coroutine::CoroutineHandle handler; // 0x2E4
+		::MoleMole::UIGeneralNewHintWidgetController* _newHintWidgetController; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnFadeInFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONFADEINFINISH_OFFSET))(this);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void RefreshItem(::Enum_3_AAFADCBFB5411608 levelState)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_AAFADCBFB5411608))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_REFRESHITEM_OFFSET))(this, levelState);
+		}
+
+		::System::Void RefreshTrack()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_REFRESHTRACK_OFFSET))(this);
+		}
+
+		::System::Void RefreshNew()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_REFRESHNEW_OFFSET))(this);
+		}
+
+		::System::Boolean NeedPlayUnlockAnim()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_NEEDPLAYUNLOCKANIM_OFFSET))(this);
+		}
+
+		::System::Boolean PrepareUnlockAnim(::Enum_3_AAFADCBFB5411608 lastState)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_AAFADCBFB5411608))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_PREPAREUNLOCKANIM_OFFSET))(this, lastState);
+		}
+
+		::System::Boolean TryPlayUnlockAnim(::Enum_3_AAFADCBFB5411608 lastState, ::System::Action* onUnlockAnimEnd)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_AAFADCBFB5411608, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_TRYPLAYUNLOCKANIM_OFFSET))(this, lastState, onUnlockAnimEnd);
+		}
+
+		::System::Boolean PlayUnlockAnim(::System::Action* onUnlockAnimEnd)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_PLAYUNLOCKANIM_OFFSET))(this, onUnlockAnimEnd);
+		}
+
+		::System::Void OnLockContDownEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER_ONLOCKCONTDOWNEND_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__7_0(::System::EventArgs* _)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER__ONUIINIT_B__7_0_OFFSET))(this, _);
+		}
+
+		::System::Void _OnLockContDownEnd_b__21_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER__ONLOCKCONTDOWNEND_B__21_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnFadeInFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONFADEINFINISH_OFFSET))(this);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

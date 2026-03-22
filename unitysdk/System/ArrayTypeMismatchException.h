@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_ARRAYTYPEMISMATCHEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15B00B90)
-#define SYSTEM_ARRAYTYPEMISMATCHEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15B00C00)
-#define SYSTEM_ARRAYTYPEMISMATCHEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15AFE180)
+#define SYSTEM_ARRAYTYPEMISMATCHEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1917F070)
+#define SYSTEM_ARRAYTYPEMISMATCHEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1917F0E0)
+#define SYSTEM_ARRAYTYPEMISMATCHEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1917EFD0)
 
 namespace System
 {
-	inline static constexpr unsigned int ArrayTypeMismatchException_TypeDefinitionIndex = 199;
+	inline static constexpr unsigned int ArrayTypeMismatchException_TypeDefinitionIndex = 187;
 
 	class ArrayTypeMismatchException : public ::System::SystemException
 	{

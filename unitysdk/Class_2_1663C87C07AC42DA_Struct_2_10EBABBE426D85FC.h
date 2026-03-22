@@ -1,0 +1,82 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+class Class_1_E13183B148E560DC;
+namespace System { class String; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class SpriteRenderer; }
+namespace UnityEngine { class Transform; }
+
+#define CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_00819B4306278D6F_OFFSET UNITYSDK_OFFSET(0x9132B0)
+#define CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_0F504293AAA194A3_OFFSET UNITYSDK_OFFSET(0x9133D0)
+#define CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_10FFF5D129383396_OFFSET UNITYSDK_OFFSET(0x913380)
+#define CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_22E9A499BB66146D_OFFSET UNITYSDK_OFFSET(0x913370)
+#define CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_2C95AFAD0256302F_OFFSET UNITYSDK_OFFSET(0x913360)
+#define CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_4925E7D735974DD2_OFFSET UNITYSDK_OFFSET(0x9133A0)
+#define CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_924C62BE8591D2FD_OFFSET UNITYSDK_OFFSET(0x9133C0)
+#define CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_C331FCD0B9D56E7A_OFFSET UNITYSDK_OFFSET(0x9132E0)
+
+inline static constexpr unsigned int Class_2_1663C87C07AC42DA_Struct_2_10EBABBE426D85FC_TypeDefinitionIndex = 81629;
+
+struct alignas(8) Class_2_1663C87C07AC42DA_Struct_2_10EBABBE426D85FC
+{
+	::System::UInt32 Field_2_0; // 0x10
+	::UnityEngine::Transform* Field_2_1; // 0x18
+	::UnityEngine::Transform* Field_2_2; // 0x20
+	::System::Boolean Field_2_3; // 0x28
+	::Class_1_E13183B148E560DC* Field_2_4; // 0x30
+	::UnityEngine::SpriteRenderer* Field_2_5; // 0x38
+	::Class_1_E13183B148E560DC* Field_2_6; // 0x40
+	::UnityEngine::SpriteRenderer* Field_2_7; // 0x48
+	::UnityEngine::SpriteRenderer* Field_2_8; // 0x50
+	::Class_1_E13183B148E560DC* Field_2_9; // 0x58
+
+	/*
+	::Class_2_1663C87C07AC42DA_Struct_2_10EBABBE426D85FC Method_2_00819B4306278D6F(::Struct_2_E614D3B245F96744 a1)
+	{
+		return ((::Class_2_1663C87C07AC42DA_Struct_2_10EBABBE426D85FC(*)(::PVOID, ::Struct_2_E614D3B245F96744))((::PBYTE)hIl2Cpp + CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_00819B4306278D6F_OFFSET))(this, a1);
+	}
+	*/
+
+	/*
+	::System::Void Method_2_C331FCD0B9D56E7A(::UnityEngine::Color a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_C331FCD0B9D56E7A_OFFSET))(this, a1);
+	}
+	*/
+
+	::System::Void Method_2_2C95AFAD0256302F()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_2C95AFAD0256302F_OFFSET))(this);
+	}
+
+	::System::Void Method_2_22E9A499BB66146D(::UnityEngine::GameObject* a1, ::System::String* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_22E9A499BB66146D_OFFSET))(this, a1, a2);
+	}
+
+	/*
+	::System::Void Method_2_10FFF5D129383396(::UnityEngine::Quaternion a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_10FFF5D129383396_OFFSET))(this, a1);
+	}
+	*/
+
+	/*
+	::UnityEngine::Vector3 Method_2_4925E7D735974DD2(::System::Int32 a1, ::System::Boolean a2)
+	{
+		return ((::UnityEngine::Vector3(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_4925E7D735974DD2_OFFSET))(this, a1, a2);
+	}
+	*/
+
+	::System::Void Method_2_924C62BE8591D2FD()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_924C62BE8591D2FD_OFFSET))(this);
+	}
+
+	::Class_2_1663C87C07AC42DA_Struct_2_10EBABBE426D85FC Method_2_0F504293AAA194A3(::UnityEngine::Transform* a1, ::UnityEngine::Transform* a2)
+	{
+		return ((::Class_2_1663C87C07AC42DA_Struct_2_10EBABBE426D85FC(*)(::PVOID, ::UnityEngine::Transform*, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + CLASS_2_1663C87C07AC42DA_STRUCT_2_10EBABBE426D85FC_METHOD_2_0F504293AAA194A3_OFFSET))(this, a1, a2);
+	}
+};

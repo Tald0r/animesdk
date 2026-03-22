@@ -1,0 +1,119 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MonoCustomPropertyUIControllerBase.h"
+
+class Class_2_4852CCAE4FBD1B0C;
+namespace MoleMole { class UIControlReference; }
+namespace System { class String; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class RectTransform; }
+
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_CHANGEMATERIAL_OFFSET UNITYSDK_OFFSET(0xAA39410)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_COLLECTALLANIMATIONCOMPONENTS_OFFSET UNITYSDK_OFFSET(0xAA392E0)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xAA37D90)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_HANDLEALLCUSTOMPROPERTIESONSHOW_OFFSET UNITYSDK_OFFSET(0xAA380D0)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_HANDLECUSTOMPROPERTY_OFFSET UNITYSDK_OFFSET(0xAA38250)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_ONATTACHENTITY_OFFSET UNITYSDK_OFFSET(0xAA37F10)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAA37DA0)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA37E40)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAA396E0)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER__HANDLECUSTOMPROPERTY_B__15_0_OFFSET UNITYSDK_OFFSET(0xAA396F0)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER__HANDLECUSTOMPROPERTY_B__15_1_OFFSET UNITYSDK_OFFSET(0xAA39790)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER__HANDLECUSTOMPROPERTY_B__15_2_OFFSET UNITYSDK_OFFSET(0xAA39830)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER___BASE_ONATTACHENTITY_OFFSET UNITYSDK_OFFSET(0xAA398D0)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAA39930)
+#define MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA399A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelJanePanelChildWindowController_TypeDefinitionIndex = 59043;
+
+	class UIInLevelJanePanelChildWindowController : public ::MonoCustomPropertyUIControllerBase
+	{
+	public:
+		// static const ::System::String* BULLET_FADE_IN_ANIM_CLIP; // 0x0
+		// static const ::System::String* BULLET_FADE_OUT_ANIM_CLIP; // 0x0
+		// static const ::System::String* BULLET_LOOP_ANIM_CLIP; // 0x0
+		::Class_2_4852CCAE4FBD1B0C* _view; // 0x330
+		::System::Single _fillBgParentWidth; // 0x338
+		::UnityEngine::RectTransform* _fillRect; // 0x340
+		::UnityEngine::Material* _mat1; // 0x348
+		::UnityEngine::Material* _mat2; // 0x350
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnAttachEntity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_ONATTACHENTITY_OFFSET))(this);
+		}
+
+		::System::Void HandleAllCustomPropertiesOnShow()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_HANDLEALLCUSTOMPROPERTIESONSHOW_OFFSET))(this);
+		}
+
+		::System::Void CollectAllAnimationComponents()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_COLLECTALLANIMATIONCOMPONENTS_OFFSET))(this);
+		}
+
+		::System::Void HandleCustomProperty(::System::String* customTypePlaceholder, ::System::Double oldValue, ::System::Double newValue, ::System::Boolean ignoreAnimation)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Double, ::System::Double, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_HANDLECUSTOMPROPERTY_OFFSET))(this, customTypePlaceholder, oldValue, newValue, ignoreAnimation);
+		}
+
+		::System::Void ChangeMaterial()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER_CHANGEMATERIAL_OFFSET))(this);
+		}
+
+		::System::Void _HandleCustomProperty_b__15_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER__HANDLECUSTOMPROPERTY_B__15_0_OFFSET))(this);
+		}
+
+		::System::Void _HandleCustomProperty_b__15_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER__HANDLECUSTOMPROPERTY_B__15_1_OFFSET))(this);
+		}
+
+		::System::Void _HandleCustomProperty_b__15_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER__HANDLECUSTOMPROPERTY_B__15_2_OFFSET))(this);
+		}
+
+		::System::Void __base_OnAttachEntity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER___BASE_ONATTACHENTITY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELJANEPANELCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+	};
+}

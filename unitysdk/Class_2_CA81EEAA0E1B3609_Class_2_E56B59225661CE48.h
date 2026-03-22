@@ -1,0 +1,27 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_F57C3EEEB03201AF.h"
+
+class Class_3_99DB8A93CF92E1F7;
+template <typename T> class Class_0_16E4307DCC41950C_11;
+
+#define CLASS_2_CA81EEAA0E1B3609_CLASS_2_E56B59225661CE48_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0x9A80010)
+#define CLASS_2_CA81EEAA0E1B3609_CLASS_2_E56B59225661CE48__CTOR_OFFSET UNITYSDK_OFFSET(0x9A800B0)
+
+inline static constexpr unsigned int Class_2_CA81EEAA0E1B3609_Class_2_E56B59225661CE48_TypeDefinitionIndex = 36466;
+
+class Class_2_CA81EEAA0E1B3609_Class_2_E56B59225661CE48 : public ::Class_1_F57C3EEEB03201AF
+{
+public:
+	::Class_0_16E4307DCC41950C_11<::Class_3_99DB8A93CF92E1F7*>* Field_2_0; // 0x60
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_CA81EEAA0E1B3609_CLASS_2_E56B59225661CE48__CTOR_OFFSET))(this);
+	}
+
+	::System::Void OnCreateProperty()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_CA81EEAA0E1B3609_CLASS_2_E56B59225661CE48_ONCREATEPROPERTY_OFFSET))(this);
+	}
+};

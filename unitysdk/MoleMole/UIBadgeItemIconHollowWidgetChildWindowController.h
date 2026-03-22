@@ -1,0 +1,157 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/AssetRequestHandle.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_2_79AE422BA06F6D26_27;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Object; }
+namespace System { class String; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class Material; }
+
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBF3B4B0)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONGAMEPADDESELECT_OFFSET UNITYSDK_OFFSET(0xBF3C1A0)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONGAMEPADSELECT_OFFSET UNITYSDK_OFFSET(0xBF3CC90)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xBF3CB00)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONMOVESELECT_OFFSET UNITYSDK_OFFSET(0xBF3CC00)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xBF3B600)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONSELECT_OFFSET UNITYSDK_OFFSET(0xBF3B550)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xBF3B0E0)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBF3B150)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBF3B030)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_SETCURSESTATE_OFFSET UNITYSDK_OFFSET(0xBF3C230)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_SETEFFECT_OFFSET UNITYSDK_OFFSET(0xBF3C630)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBF3CD20)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER__ONSCROLLITEMUPDATE_B__5_0_OFFSET UNITYSDK_OFFSET(0xBF3CD30)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBF3CD40)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xBF3CDB0)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xBF3CE20)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xBF3CEA0)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBF3CEB0)
+#define MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBF3CF30)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBadgeItemIconHollowWidgetChildWindowController_TypeDefinitionIndex = 63501;
+
+	class UIBadgeItemIconHollowWidgetChildWindowController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		// static const ::System::String* CombineEffect; // 0x0
+		// static const ::System::String* SEffect; // 0x0
+		// static const ::System::String* CurseMaterial; // 0x0
+		::Foundation::AssetRequestHandle _curseMaterialHandle; // 0x2D0
+		::Class_2_79AE422BA06F6D26_27* _view; // 0x2F0
+		::System::Int32 selfIndex; // 0x2F8
+		::UnityEngine::Material* _curseMaterial; // 0x300
+		::UnityEngine::Material* garyMat; // 0x308
+		::UnityEngine::Material* defalutMat; // 0x310
+		::System::Boolean isUseGray; // 0x318
+		::UnityEngine::GameObject* CombineEffectGo; // 0x320
+		::UnityEngine::GameObject* SEffectGo; // 0x328
+		::System::Boolean isUseCurse; // 0x330
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnSelect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONSELECT_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void SetCurseState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_SETCURSESTATE_OFFSET))(this);
+		}
+
+		::System::Void SetEffect(::Class_1_0D6706375CDAAE8C* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_SETEFFECT_OFFSET))(this, data);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnMoveSelect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONMOVESELECT_OFFSET))(this);
+		}
+
+		::System::Void OnGamePadSelect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONGAMEPADSELECT_OFFSET))(this);
+		}
+
+		::System::Void OnGamePadDeSelect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER_ONGAMEPADDESELECT_OFFSET))(this);
+		}
+
+		::System::Void _OnScrollItemUpdate_b__5_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER__ONSCROLLITEMUPDATE_B__5_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBADGEITEMICONHOLLOWWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int SmoothMaskMaterial_Params_DirtyFlagBit_TypeDefinitionIndex = 5624;
+	inline static constexpr unsigned int SmoothMaskMaterial_Params_DirtyFlagBit_TypeDefinitionIndex = 8439;
 
 	enum class SmoothMaskMaterial_Params_DirtyFlagBit : ::System::Int32
 	{
@@ -12,8 +12,6 @@ namespace UnityEngine::UI
 		Matrix = 4,
 		SoftRange = 8,
 		FillParams = 16,
-		SliceParams = 32,
-		FillParams2 = 64,
-		ReverseMask = 128,
+		Invert = 32,
 	};
 }

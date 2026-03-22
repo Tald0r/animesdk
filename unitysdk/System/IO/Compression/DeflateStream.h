@@ -4,49 +4,63 @@
 #include "unitysdk/System/IO/Compression/CompressionMode.h"
 #include "unitysdk/System/IO/SeekOrigin.h"
 #include "unitysdk/System/IO/Stream.h"
+#include "unitysdk/System/Memory_1.h"
+#include "unitysdk/System/ReadOnlyMemory_1.h"
+#include "unitysdk/System/ReadOnlySpan_1.h"
+#include "unitysdk/System/Span_1.h"
+#include "unitysdk/System/Threading/CancellationToken.h"
+#include "unitysdk/System/Threading/Tasks/ValueTask_1.h"
 
 namespace System { class AsyncCallback; }
 namespace System { class IAsyncResult; }
 namespace System { class Object; }
 namespace System::IO::Compression { class DeflateStreamNative; }
+namespace System::Threading::Tasks { class Task; }
 
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_BEGINREAD_OFFSET UNITYSDK_OFFSET(0x17E95F00)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_BEGINWRITE_OFFSET UNITYSDK_OFFSET(0x17E96220)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17E951A0)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_ENDREAD_OFFSET UNITYSDK_OFFSET(0x17E96540)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_ENDWRITE_OFFSET UNITYSDK_OFFSET(0x17E966B0)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_FLUSH_OFFSET UNITYSDK_OFFSET(0x17E95C90)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_CANREAD_OFFSET UNITYSDK_OFFSET(0x17E957A0)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_CANSEEK_OFFSET UNITYSDK_OFFSET(0x17E96880)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_CANWRITE_OFFSET UNITYSDK_OFFSET(0x17E95C50)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_LENGTH_OFFSET UNITYSDK_OFFSET(0x17E96890)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_POSITION_OFFSET UNITYSDK_OFFSET(0x17E968E0)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_READINTERNAL_OFFSET UNITYSDK_OFFSET(0x17E95390)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_READ_OFFSET UNITYSDK_OFFSET(0x17E955E0)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_SEEK_OFFSET UNITYSDK_OFFSET(0x17E967E0)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_SETLENGTH_OFFSET UNITYSDK_OFFSET(0x17E96830)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_SET_POSITION_OFFSET UNITYSDK_OFFSET(0x17E96930)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_WRITEINTERNAL_OFFSET UNITYSDK_OFFSET(0x17E957E0)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_WRITE_OFFSET UNITYSDK_OFFSET(0x17E95A90)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17E94FA0)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17E94FC0)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_3_OFFSET UNITYSDK_OFFSET(0x17E94EB0)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_4_OFFSET UNITYSDK_OFFSET(0x17E95170)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_5_OFFSET UNITYSDK_OFFSET(0x17E95190)
-#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x17E94E90)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_BEGINREAD_OFFSET UNITYSDK_OFFSET(0x18F4D300)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_BEGINWRITE_OFFSET UNITYSDK_OFFSET(0x18F4D580)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18F4CB70)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_ENDREAD_OFFSET UNITYSDK_OFFSET(0x18F4D800)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_ENDWRITE_OFFSET UNITYSDK_OFFSET(0x18F4D940)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_FLUSH_OFFSET UNITYSDK_OFFSET(0x18F4D230)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_BASESTREAM_OFFSET UNITYSDK_OFFSET(0x18F4DB00)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_CANREAD_OFFSET UNITYSDK_OFFSET(0x18F4CEB0)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_CANSEEK_OFFSET UNITYSDK_OFFSET(0x18F4DB10)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_CANWRITE_OFFSET UNITYSDK_OFFSET(0x18F4D1F0)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_LENGTH_OFFSET UNITYSDK_OFFSET(0x18F4DB20)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_POSITION_OFFSET UNITYSDK_OFFSET(0x18F4DB70)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_READASYNCMEMORY_OFFSET UNITYSDK_OFFSET(0x18F4CC20)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_READCORE_OFFSET UNITYSDK_OFFSET(0x18F4CC70)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_READINTERNAL_OFFSET UNITYSDK_OFFSET(0x18F4CBD0)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_READ_OFFSET UNITYSDK_OFFSET(0x18F4CCC0)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_SEEK_OFFSET UNITYSDK_OFFSET(0x18F4DA60)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_SETLENGTH_OFFSET UNITYSDK_OFFSET(0x18F4DAB0)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_SET_POSITION_OFFSET UNITYSDK_OFFSET(0x18F4DBC0)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_WRITEASYNCMEMORY_OFFSET UNITYSDK_OFFSET(0x18F4CF40)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_WRITECORE_OFFSET UNITYSDK_OFFSET(0x18F4CF90)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_WRITEINTERNAL_OFFSET UNITYSDK_OFFSET(0x18F4CEF0)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM_WRITE_OFFSET UNITYSDK_OFFSET(0x18F4CFE0)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18F4CAC0)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_2_OFFSET UNITYSDK_OFFSET(0x18F4CAE0)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_3_OFFSET UNITYSDK_OFFSET(0x18F4C9D0)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_4_OFFSET UNITYSDK_OFFSET(0x18F4CB00)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_5_OFFSET UNITYSDK_OFFSET(0x18F4CB30)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_6_OFFSET UNITYSDK_OFFSET(0x18F4CB50)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_7_OFFSET UNITYSDK_OFFSET(0x18F4CB20)
+#define SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x18F4C9B0)
 
 namespace System::IO::Compression
 {
-	inline static constexpr unsigned int DeflateStream_TypeDefinitionIndex = 2700;
+	inline static constexpr unsigned int DeflateStream_TypeDefinitionIndex = 3244;
 
 	class DeflateStream : public ::System::IO::Stream
 	{
 	public:
-		::System::IO::Stream* base_stream; // 0x28
-		::System::IO::Compression::DeflateStreamNative* native; // 0x30
-		::System::IO::Compression::CompressionMode mode; // 0x38
-		::System::Boolean disposed; // 0x3C
-		::System::Boolean leaveOpen; // 0x3D
+		::System::IO::Compression::DeflateStreamNative* native; // 0x28
+		::System::IO::Stream* base_stream; // 0x30
+		::System::Boolean disposed; // 0x38
+		::System::Boolean leaveOpen; // 0x39
+		::System::IO::Compression::CompressionMode mode; // 0x3C
 
 		::System::Void _ctor(::System::IO::Stream* stream, ::System::IO::Compression::CompressionMode mode)
 		{
@@ -68,14 +82,24 @@ namespace System::IO::Compression
 			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*, ::System::IO::Compression::CompressionMode, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_3_OFFSET))(this, compressedStream, mode, leaveOpen, gzip);
 		}
 
-		::System::Void _ctor_4(::System::IO::Stream* stream, ::System::IO::Compression::CompressionLevel compressionLevel, ::System::Boolean leaveOpen, ::System::Int32 windowsBits)
+		::System::Void _ctor_4(::System::IO::Stream* stream, ::System::IO::Compression::CompressionLevel compressionLevel)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*, ::System::IO::Compression::CompressionLevel, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_4_OFFSET))(this, stream, compressionLevel, leaveOpen, windowsBits);
+			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*, ::System::IO::Compression::CompressionLevel))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_4_OFFSET))(this, stream, compressionLevel);
 		}
 
-		::System::Void _ctor_5(::System::IO::Stream* stream, ::System::IO::Compression::CompressionLevel compressionLevel, ::System::Boolean leaveOpen, ::System::Boolean gzip)
+		::System::Void _ctor_5(::System::IO::Stream* stream, ::System::IO::Compression::CompressionLevel compressionLevel, ::System::Boolean leaveOpen)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*, ::System::IO::Compression::CompressionLevel, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_5_OFFSET))(this, stream, compressionLevel, leaveOpen, gzip);
+			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*, ::System::IO::Compression::CompressionLevel, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_5_OFFSET))(this, stream, compressionLevel, leaveOpen);
+		}
+
+		::System::Void _ctor_6(::System::IO::Stream* stream, ::System::IO::Compression::CompressionLevel compressionLevel, ::System::Boolean leaveOpen, ::System::Int32 windowsBits)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*, ::System::IO::Compression::CompressionLevel, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_6_OFFSET))(this, stream, compressionLevel, leaveOpen, windowsBits);
+		}
+
+		::System::Void _ctor_7(::System::IO::Stream* stream, ::System::IO::Compression::CompressionLevel compressionLevel, ::System::Boolean leaveOpen, ::System::Boolean gzip)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*, ::System::IO::Compression::CompressionLevel, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM__CTOR_7_OFFSET))(this, stream, compressionLevel, leaveOpen, gzip);
 		}
 
 		::System::Void Dispose(::System::Boolean disposing)
@@ -88,6 +112,16 @@ namespace System::IO::Compression
 			return ((::System::Int32(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM_READINTERNAL_OFFSET))(this, array, offset, count);
 		}
 
+		::System::Threading::Tasks::ValueTask_1<::System::Int32> ReadAsyncMemory(::System::Memory_1<::System::Byte> destination, ::System::Threading::CancellationToken cancellationToken)
+		{
+			return ((::System::Threading::Tasks::ValueTask_1<::System::Int32>(*)(::PVOID, ::System::Memory_1<::System::Byte>, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM_READASYNCMEMORY_OFFSET))(this, destination, cancellationToken);
+		}
+
+		::System::Int32 ReadCore(::System::Span_1<::System::Byte> destination)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Span_1<::System::Byte>))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM_READCORE_OFFSET))(this, destination);
+		}
+
 		::System::Int32 Read(::Il2CppArray<::System::Byte>* array, ::System::Int32 offset, ::System::Int32 count)
 		{
 			return ((::System::Int32(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM_READ_OFFSET))(this, array, offset, count);
@@ -96,6 +130,16 @@ namespace System::IO::Compression
 		::System::Void WriteInternal(::Il2CppArray<::System::Byte>* array, ::System::Int32 offset, ::System::Int32 count)
 		{
 			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM_WRITEINTERNAL_OFFSET))(this, array, offset, count);
+		}
+
+		::System::Threading::Tasks::Task* WriteAsyncMemory(::System::ReadOnlyMemory_1<::System::Byte> source, ::System::Threading::CancellationToken cancellationToken)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::ReadOnlyMemory_1<::System::Byte>, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM_WRITEASYNCMEMORY_OFFSET))(this, source, cancellationToken);
+		}
+
+		::System::Void WriteCore(::System::ReadOnlySpan_1<::System::Byte> source)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::ReadOnlySpan_1<::System::Byte>))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM_WRITECORE_OFFSET))(this, source);
 		}
 
 		::System::Void Write(::Il2CppArray<::System::Byte>* array, ::System::Int32 offset, ::System::Int32 count)
@@ -136,6 +180,11 @@ namespace System::IO::Compression
 		::System::Void SetLength(::System::Int64 value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM_SETLENGTH_OFFSET))(this, value);
+		}
+
+		::System::IO::Stream* get_BaseStream()
+		{
+			return ((::System::IO::Stream*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_IO_COMPRESSION_DEFLATESTREAM_GET_BASESTREAM_OFFSET))(this);
 		}
 
 		::System::Boolean get_CanRead()

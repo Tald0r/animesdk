@@ -8,37 +8,36 @@ namespace System::Runtime::Remoting::Activation { class IActivator; }
 namespace System::Runtime::Remoting::Activation { class IConstructionCallMessage; }
 namespace System::Runtime::Remoting::Messaging { class ConstructionCall; }
 namespace System::Runtime::Remoting::Messaging { class IMessage; }
-namespace System::Runtime::Remoting::Proxies { class RemotingProxy; }
 
-#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_ACTIVATE_OFFSET UNITYSDK_OFFSET(0x15CE1C10)
-#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_ALLOCATEUNINITIALIZEDCLASSINSTANCE_OFFSET UNITYSDK_OFFSET(0x15CE3160)
-#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_CREATECONSTRUCTIONCALL_OFFSET UNITYSDK_OFFSET(0x15CE2350)
-#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_CREATEINSTANCEFROMMESSAGE_OFFSET UNITYSDK_OFFSET(0x15CE3000)
-#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_CREATEPROXYFORTYPE_OFFSET UNITYSDK_OFFSET(0x15CE3170)
-#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_ENABLEPROXYACTIVATION_OFFSET UNITYSDK_OFFSET(0x15CE3380)
-#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_GET_CONSTRUCTIONACTIVATOR_OFFSET UNITYSDK_OFFSET(0x15CE1B90)
-#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_REMOTEACTIVATE_OFFSET UNITYSDK_OFFSET(0x15CE21F0)
+#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_ALLOCATEUNINITIALIZEDCLASSINSTANCE_OFFSET UNITYSDK_OFFSET(0x19B79330)
+#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_CREATECONSTRUCTIONCALL_OFFSET UNITYSDK_OFFSET(0x19B78530)
+#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_CREATEINSTANCEFROMMESSAGE_OFFSET UNITYSDK_OFFSET(0x19B791D0)
+#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_CREATEPROXYFORTYPE_OFFSET UNITYSDK_OFFSET(0x19B79340)
+#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_ENABLEPROXYACTIVATION_OFFSET UNITYSDK_OFFSET(0x19B79550)
+#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_GET_CONSTRUCTIONACTIVATOR_OFFSET UNITYSDK_OFFSET(0x19B78370)
+#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_REMOTEACTIVATE_OFFSET UNITYSDK_OFFSET(0x19B783E0)
+#define SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES__CTOR_OFFSET UNITYSDK_OFFSET(0x19B79560)
 
 namespace System::Runtime::Remoting::Activation
 {
-	inline static constexpr unsigned int ActivationServices_TypeDefinitionIndex = 1262;
+	inline static constexpr unsigned int ActivationServices_TypeDefinitionIndex = 1310;
 
 	class ActivationServices : public ::System::Object
 	{
 	public:
 		static ::System::Runtime::Remoting::Activation::IActivator** StaticGet__constructionActivator()
 		{
-			return (::System::Runtime::Remoting::Activation::IActivator**)Il2CppClass::FromTypeDefinitionIndex(ActivationServices_TypeDefinitionIndex)->GetStaticField(0xB630);
+			return (::System::Runtime::Remoting::Activation::IActivator**)Il2CppClass::FromTypeDefinitionIndex(ActivationServices_TypeDefinitionIndex)->GetStaticField(0x1450);
+		}
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES__CTOR_OFFSET))(this);
 		}
 
 		static ::System::Runtime::Remoting::Activation::IActivator* get_ConstructionActivator()
 		{
 			return ((::System::Runtime::Remoting::Activation::IActivator*(*)())((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_GET_CONSTRUCTIONACTIVATOR_OFFSET))();
-		}
-
-		static ::System::Runtime::Remoting::Messaging::IMessage* Activate(::System::Runtime::Remoting::Proxies::RemotingProxy* proxy, ::System::Runtime::Remoting::Messaging::ConstructionCall* ctorCall)
-		{
-			return ((::System::Runtime::Remoting::Messaging::IMessage*(*)(::System::Runtime::Remoting::Proxies::RemotingProxy*, ::System::Runtime::Remoting::Messaging::ConstructionCall*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_ACTIVATION_ACTIVATIONSERVICES_ACTIVATE_OFFSET))(proxy, ctorCall);
 		}
 
 		static ::System::Runtime::Remoting::Messaging::IMessage* RemoteActivate(::System::Runtime::Remoting::Activation::IConstructionCallMessage* ctorCall)

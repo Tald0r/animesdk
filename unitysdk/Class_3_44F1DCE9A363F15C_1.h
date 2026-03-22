@@ -1,0 +1,69 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_E87F1D15F1D4AC72.h"
+
+class Class_2_60DDD9C206686F44;
+class Class_2_777A5D016ADC7368;
+class MonoUITableScrollV2;
+namespace MoleMole { class UIControlCollection; }
+namespace System { class String; }
+
+#define CLASS_3_44F1DCE9A363F15C_1_METHOD_3_0C88AB06D46E777A_OFFSET UNITYSDK_OFFSET(0x8CE3820)
+#define CLASS_3_44F1DCE9A363F15C_1_METHOD_3_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x8CE3780)
+#define CLASS_3_44F1DCE9A363F15C_1_METHOD_3_43A46E5F9FAC62B8_OFFSET UNITYSDK_OFFSET(0x8CE3A30)
+#define CLASS_3_44F1DCE9A363F15C_1_METHOD_3_451128A24F29622D_OFFSET UNITYSDK_OFFSET(0x8CE3A10)
+#define CLASS_3_44F1DCE9A363F15C_1_METHOD_3_58BA0C8308C8127F_OFFSET UNITYSDK_OFFSET(0x8CE3A00)
+#define CLASS_3_44F1DCE9A363F15C_1_METHOD_3_AA6A73448047A840_OFFSET UNITYSDK_OFFSET(0x8CE3600)
+#define CLASS_3_44F1DCE9A363F15C_1_METHOD_3_F086E082034F96CA_OFFSET UNITYSDK_OFFSET(0x8CE3A20)
+#define CLASS_3_44F1DCE9A363F15C_1__CTOR_OFFSET UNITYSDK_OFFSET(0x8CE3980)
+
+inline static constexpr unsigned int Class_3_44F1DCE9A363F15C_1_TypeDefinitionIndex = 40740;
+
+class Class_3_44F1DCE9A363F15C_1 : public ::Class_2_E87F1D15F1D4AC72
+{
+public:
+	// static const ::System::String* Field_3_0; // 0x0
+	// static const ::System::String* Field_3_1; // 0x0
+	::Class_2_60DDD9C206686F44* Field_3_2; // 0x28
+	::MonoUITableScrollV2* Field_3_3; // 0x30
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_44F1DCE9A363F15C_1__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_3_AA6A73448047A840(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_3_44F1DCE9A363F15C_1_METHOD_3_AA6A73448047A840_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_3_58BA0C8308C8127F(::Class_2_60DDD9C206686F44* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_60DDD9C206686F44*))((::PBYTE)hIl2Cpp + CLASS_3_44F1DCE9A363F15C_1_METHOD_3_58BA0C8308C8127F_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_1B167429A8B82AD3()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_44F1DCE9A363F15C_1_METHOD_3_1B167429A8B82AD3_OFFSET))(this);
+	}
+
+	::System::Void Method_3_451128A24F29622D(::MonoUITableScrollV2* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MonoUITableScrollV2*))((::PBYTE)hIl2Cpp + CLASS_3_44F1DCE9A363F15C_1_METHOD_3_451128A24F29622D_OFFSET))(this, a1);
+	}
+
+	::MonoUITableScrollV2* Method_3_F086E082034F96CA()
+	{
+		return ((::MonoUITableScrollV2*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_44F1DCE9A363F15C_1_METHOD_3_F086E082034F96CA_OFFSET))(this);
+	}
+
+	::System::Void Method_3_0C88AB06D46E777A()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_44F1DCE9A363F15C_1_METHOD_3_0C88AB06D46E777A_OFFSET))(this);
+	}
+
+	::Class_2_60DDD9C206686F44* Method_3_43A46E5F9FAC62B8()
+	{
+		return ((::Class_2_60DDD9C206686F44*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_44F1DCE9A363F15C_1_METHOD_3_43A46E5F9FAC62B8_OFFSET))(this);
+	}
+};

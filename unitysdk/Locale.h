@@ -4,15 +4,27 @@
 
 namespace System { class String; }
 
-#define LOCALE_GETTEXT_OFFSET UNITYSDK_OFFSET(0x15A7A390)
+#define LOCALE_GETTEXT_1_OFFSET UNITYSDK_OFFSET(0x1A9F3AD0)
+#define LOCALE_GETTEXT_OFFSET UNITYSDK_OFFSET(0x1A9F3AC0)
+#define LOCALE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9F3AB0)
 
-inline static constexpr unsigned int Locale_TypeDefinitionIndex = 2239;
+inline static constexpr unsigned int Locale_TypeDefinitionIndex = 2260;
 
 class Locale : public ::System::Object
 {
 public:
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + LOCALE__CTOR_OFFSET))(this);
+	}
+
 	static ::System::String* GetText(::System::String* msg)
 	{
 		return ((::System::String*(*)(::System::String*))((::PBYTE)hIl2Cpp + LOCALE_GETTEXT_OFFSET))(msg);
+	}
+
+	static ::System::String* GetText_1(::System::String* fmt, ::Il2CppArray<::System::Object*>* args)
+	{
+		return ((::System::String*(*)(::System::String*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + LOCALE_GETTEXT_1_OFFSET))(fmt, args);
 	}
 };

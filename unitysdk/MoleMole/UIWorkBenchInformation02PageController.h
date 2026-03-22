@@ -1,0 +1,213 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_208CC9941471731A_948;
+class Class_2_6D99A03C58ED2B6E_4;
+class Class_2_C8673CF268A973E6;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIWorkBenchInformation02InfoPanelWidgetController; }
+namespace System { class EventArgs; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class RectTransform; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_BINDEVENT_BUTTON_OFFSET UNITYSDK_OFFSET(0x8824900)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_BINDEVENT_NOTIFY_OFFSET UNITYSDK_OFFSET(0x8824D60)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_BINDEVENT_SCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x8824B20)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_CREATEWIDGET_OFFSET UNITYSDK_OFFSET(0x8824E10)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_GET_CURRENTAREA_OFFSET UNITYSDK_OFFSET(0x88274E0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x88247C0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_INITCLUEAREADATA_OFFSET UNITYSDK_OFFSET(0x8824F70)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_INITCLUEDATA_OFFSET UNITYSDK_OFFSET(0x8826E60)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x88247D0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONCURRENTAREACHANGE_OFFSET UNITYSDK_OFFSET(0x8826B70)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x8826100)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x8825C70)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x88259C0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8825BE0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8824870)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONWORKBENCHDATAUPDATE_OFFSET UNITYSDK_OFFSET(0x8827470)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_SCROLLTOTARGET_OFFSET UNITYSDK_OFFSET(0x8826440)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_SELECTEDCLUEAREA_OFFSET UNITYSDK_OFFSET(0x8826960)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_SELECTEDCLUE_OFFSET UNITYSDK_OFFSET(0x88272A0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_SET_CURRENTAREA_OFFSET UNITYSDK_OFFSET(0x8826AE0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER__BINDEVENT_BUTTON_B__12_0_OFFSET UNITYSDK_OFFSET(0x88276D0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER__BINDEVENT_SCROLLVIEW_B__13_0_OFFSET UNITYSDK_OFFSET(0x88277D0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x88274F0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x88278D0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x8827940)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x88279C0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x88279F0)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8827A00)
+#define MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8827A10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIWorkBenchInformation02PageController_TypeDefinitionIndex = 54359;
+
+	class UIWorkBenchInformation02PageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_C8673CF268A973E6* _view; // 0x2F8
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_948*>*>* _limboPhaseClueAreaTemplateDic; // 0x300
+		::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_948*>*>* _clueAreaPhaseDatas; // 0x308
+		::System::Collections::Generic::List_1<::System::Int32>* _clueAreaPhaseDatasKeys; // 0x310
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_948*>* _clueAreaTemplateDatas; // 0x318
+		::System::Collections::Generic::List_1<::Class_2_6D99A03C58ED2B6E_4*>* _clueTemplateDatas; // 0x320
+		::Class_2_208CC9941471731A_948* _currentArea; // 0x328
+		::MoleMole::UIWorkBenchInformation02InfoPanelWidgetController* _detailWidget; // 0x330
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void ScrollToTarget(::UnityEngine::RectTransform* rectTransform)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::RectTransform*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_SCROLLTOTARGET_OFFSET))(this, rectTransform);
+		}
+
+		::System::Void CreateWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_CREATEWIDGET_OFFSET))(this);
+		}
+
+		::System::Void BindEvent_Notify()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_BINDEVENT_NOTIFY_OFFSET))(this);
+		}
+
+		::System::Void BindEvent_Button()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_BINDEVENT_BUTTON_OFFSET))(this);
+		}
+
+		::System::Void BindEvent_ScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_BINDEVENT_SCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void InitClueAreaData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_INITCLUEAREADATA_OFFSET))(this);
+		}
+
+		::System::Void SelectedClueArea(::System::Int32 clueAreaPhaseIndex, ::System::Int32 clueAreaIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_SELECTEDCLUEAREA_OFFSET))(this, clueAreaPhaseIndex, clueAreaIndex);
+		}
+
+		::System::Void OnCurrentAreaChange(::Class_2_208CC9941471731A_948* oldValue, ::Class_2_208CC9941471731A_948* newValue)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_948*, ::Class_2_208CC9941471731A_948*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONCURRENTAREACHANGE_OFFSET))(this, oldValue, newValue);
+		}
+
+		::System::Void InitClueData(::System::Int32 regionID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_INITCLUEDATA_OFFSET))(this, regionID);
+		}
+
+		::System::Void SelectedClue(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_SELECTEDCLUE_OFFSET))(this, index);
+		}
+
+		::System::Void OnWorkBenchDataUpdate(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_ONWORKBENCHDATAUPDATE_OFFSET))(this, args);
+		}
+
+		::Class_2_208CC9941471731A_948* get_currentArea()
+		{
+			return ((::Class_2_208CC9941471731A_948*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_GET_CURRENTAREA_OFFSET))(this);
+		}
+
+		::System::Void set_currentArea(::Class_2_208CC9941471731A_948* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_948*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER_SET_CURRENTAREA_OFFSET))(this, value);
+		}
+
+		::System::Void _BindEvent_Button_b__12_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER__BINDEVENT_BUTTON_B__12_0_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _BindEvent_ScrollView_b__13_0(::System::Func_1<::MoleMole::UIControlReference*>* reference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER__BINDEVENT_SCROLLVIEW_B__13_0_OFFSET))(this, reference);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHINFORMATION02PAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

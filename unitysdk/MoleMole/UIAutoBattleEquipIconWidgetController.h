@@ -1,0 +1,142 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_2_365776BB4B11829F;
+class Class_2_95C7794E44FC59B2;
+namespace MoleMole { class UIABInLevelGeneralWidgetController; }
+namespace MoleMole { class UIBangBooAutoBattleInLevelPageController; }
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_BINDITEMDATA_OFFSET UNITYSDK_OFFSET(0xB28F1F0)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_GETCFGID_OFFSET UNITYSDK_OFFSET(0xB28FA00)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xB28F480)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB28ECE0)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xB28F7C0)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0xB28ED80)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB28EF20)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB28EE30)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB28E920)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_REFRESHICON_OFFSET UNITYSDK_OFFSET(0xB28FB30)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_SETEMPTY_OFFSET UNITYSDK_OFFSET(0xB28F020)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB28FFB0)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xB28FFC0)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB28FFD0)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xB290040)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0xB2900B0)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB290110)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB290190)
+#define MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB290210)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAutoBattleEquipIconWidgetController_TypeDefinitionIndex = 46019;
+
+	class UIAutoBattleEquipIconWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::System::Int32 BindedItemHash; // 0x2D0
+		::Class_2_365776BB4B11829F* _view; // 0x2D8
+		::Class_1_48D56DACBE4271BC* _syncHelper; // 0x2E0
+		::Class_2_95C7794E44FC59B2* _itemData; // 0x2E8
+		::MoleMole::UIABInLevelGeneralWidgetController* _parentWidget; // 0x2F0
+		::MoleMole::UIBangBooAutoBattleInLevelPageController* _parent; // 0x2F8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void SetEmpty(::System::Boolean isEmpty)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_SETEMPTY_OFFSET))(this, isEmpty);
+		}
+
+		::System::Int32 GetCfgID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_GETCFGID_OFFSET))(this);
+		}
+
+		::System::Void RefreshIcon(::System::Boolean isAvatar, ::System::Int32 cfgID, ::System::Boolean enableButton)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_REFRESHICON_OFFSET))(this, isAvatar, cfgID, enableButton);
+		}
+
+		::System::Void BindItemData(::Class_2_95C7794E44FC59B2* itemData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_95C7794E44FC59B2*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER_BINDITEMDATA_OFFSET))(this, itemData);
+		}
+
+		::System::Void __base_OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEEQUIPICONWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

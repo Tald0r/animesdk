@@ -1,0 +1,555 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Unity/Jobs/JobHandle.h"
+#include "unitysdk/UnityEngine/MonoBehaviour.h"
+
+class Class_1_019870FE224FBE5A;
+class Class_1_8F6F43710765B0C1;
+class Class_1_C682C5BA0B1AC838;
+class Class_2_CD42631606067E6B;
+class CrowdModuleMonoListener;
+class MonoEntityPostSimulationUpdateListener;
+namespace MoleMole { class MonoEntityIKUpdateListener; }
+namespace System { class Action; }
+namespace System { class Type; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections { class IEnumerator; }
+namespace UnityEngine { class Coroutine; }
+namespace UnityEngine { class WaitForEndOfFrame; }
+namespace UnityEngine { class WaitForFixedUpdate; }
+
+#define MOLEMOLE_GAMEENGINE_ADDDEPENDENCY_OFFSET UNITYSDK_OFFSET(0x6793010)
+#define MOLEMOLE_GAMEENGINE_ADD_ONFRAMESTART_OFFSET UNITYSDK_OFFSET(0x6792BA0)
+#define MOLEMOLE_GAMEENGINE_AFTERLOCALSTORAGELOADED_OFFSET UNITYSDK_OFFSET(0x67952C0)
+#define MOLEMOLE_GAMEENGINE_AWAKE_OFFSET UNITYSDK_OFFSET(0x67930C0)
+#define MOLEMOLE_GAMEENGINE_BINDEXTRAUPDATEPHASECALLBACK_OFFSET UNITYSDK_OFFSET(0x6793920)
+#define MOLEMOLE_GAMEENGINE_CLAMPDOUBLE_OFFSET UNITYSDK_OFFSET(0x6792940)
+#define MOLEMOLE_GAMEENGINE_CREATEWHENRESTART_OFFSET UNITYSDK_OFFSET(0x679B350)
+#define MOLEMOLE_GAMEENGINE_DISPOSEWHENRESTART_OFFSET UNITYSDK_OFFSET(0x679B510)
+#define MOLEMOLE_GAMEENGINE_FIXEDUPDATE_OFFSET UNITYSDK_OFFSET(0x67953F0)
+#define MOLEMOLE_GAMEENGINE_FORCEQUITAPPLICATION2_OFFSET UNITYSDK_OFFSET(0x679A7A0)
+#define MOLEMOLE_GAMEENGINE_FORCEQUITAPPLICATION_OFFSET UNITYSDK_OFFSET(0x679A490)
+#define MOLEMOLE_GAMEENGINE_GETCURGAMECONTEXT_OFFSET UNITYSDK_OFFSET(0x679B000)
+#define MOLEMOLE_GAMEENGINE_GETCURGAMETYPE_OFFSET UNITYSDK_OFFSET(0x679AF20)
+#define MOLEMOLE_GAMEENGINE_GETLASTGAMECONTEXT_OFFSET UNITYSDK_OFFSET(0x679B070)
+#define MOLEMOLE_GAMEENGINE_GETLASTGAMETYPE_OFFSET UNITYSDK_OFFSET(0x679AF90)
+#define MOLEMOLE_GAMEENGINE_GETNAPSEED_OFFSET UNITYSDK_OFFSET(0x6792C80)
+#define MOLEMOLE_GAMEENGINE_GET_APPLICATIONTARGETFRAMERATE_OFFSET UNITYSDK_OFFSET(0x6792820)
+#define MOLEMOLE_GAMEENGINE_GET_BUDGETSEC_OFFSET UNITYSDK_OFFSET(0x6792830)
+#define MOLEMOLE_GAMEENGINE_GET_CURGAME_OFFSET UNITYSDK_OFFSET(0x6792A90)
+#define MOLEMOLE_GAMEENGINE_GET_CURRENTRUNSEED_OFFSET UNITYSDK_OFFSET(0x6792FF0)
+#define MOLEMOLE_GAMEENGINE_GET_CURUISCENE_OFFSET UNITYSDK_OFFSET(0x6792AA0)
+#define MOLEMOLE_GAMEENGINE_GET_HANDLEINPUTINEARLYUPDATE_OFFSET UNITYSDK_OFFSET(0x67929F0)
+#define MOLEMOLE_GAMEENGINE_GET_ISLOADING_OFFSET UNITYSDK_OFFSET(0x6792B20)
+#define MOLEMOLE_GAMEENGINE_GET_ISRESTART_OFFSET UNITYSDK_OFFSET(0x6792A80)
+#define MOLEMOLE_GAMEENGINE_GET_ISSEEDED_OFFSET UNITYSDK_OFFSET(0x6793000)
+#define MOLEMOLE_GAMEENGINE_GET_USEFULLTIMELIMIT_OFFSET UNITYSDK_OFFSET(0x6792800)
+#define MOLEMOLE_GAMEENGINE_GET_USETIMELIMIT_OFFSET UNITYSDK_OFFSET(0x67927E0)
+#define MOLEMOLE_GAMEENGINE_GOTOLOGINGAME_OFFSET UNITYSDK_OFFSET(0x679B0E0)
+#define MOLEMOLE_GAMEENGINE_INITCONFIGDATA_OFFSET UNITYSDK_OFFSET(0x679A250)
+#define MOLEMOLE_GAMEENGINE_INITWHENRESTART_OFFSET UNITYSDK_OFFSET(0x679B3C0)
+#define MOLEMOLE_GAMEENGINE_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x6797B80)
+#define MOLEMOLE_GAMEENGINE_LAUNCHERGAME_OFFSET UNITYSDK_OFFSET(0x679AAD0)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_045F1AAB54606068_OFFSET UNITYSDK_OFFSET(0x679BB50)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_0865E94460F11643_OFFSET UNITYSDK_OFFSET(0x679E280)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_0AAA07F08640B711_OFFSET UNITYSDK_OFFSET(0x679ABF0)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_0B7E3489D2C0938B_OFFSET UNITYSDK_OFFSET(0x679E5E0)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_23E4256FCB16FEBB_OFFSET UNITYSDK_OFFSET(0x67932D0)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_25DEA5C65A602671_OFFSET UNITYSDK_OFFSET(0x679D960)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_276036CDF4BFF5A6_OFFSET UNITYSDK_OFFSET(0x67986D0)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_3B258437A86233AC_OFFSET UNITYSDK_OFFSET(0x679B790)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_3CF43707BF2E9BBA_1_OFFSET UNITYSDK_OFFSET(0x6795C70)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_3CF43707BF2E9BBA_2_OFFSET UNITYSDK_OFFSET(0x6793240)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_3CF43707BF2E9BBA_OFFSET UNITYSDK_OFFSET(0x6798980)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_3E23A2EE3F65066B_OFFSET UNITYSDK_OFFSET(0x679CE20)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_464B80C09A37526F_OFFSET UNITYSDK_OFFSET(0x679E000)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_5D3D37F2BAE9FB65_OFFSET UNITYSDK_OFFSET(0x6793EF0)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_627C7524E98F4AC5_1_OFFSET UNITYSDK_OFFSET(0x679E7B0)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_627C7524E98F4AC5_OFFSET UNITYSDK_OFFSET(0x679B8F0)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_6423291ED13007B8_OFFSET UNITYSDK_OFFSET(0x679B430)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_676E831338583C9D_OFFSET UNITYSDK_OFFSET(0x679ED60)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_67D41ACFEF39E84E_OFFSET UNITYSDK_OFFSET(0x679DA10)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_705FFC79B57F4953_OFFSET UNITYSDK_OFFSET(0x679E850)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_735EE20B25F86BF4_OFFSET UNITYSDK_OFFSET(0x679D330)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_7A73F165001BC325_OFFSET UNITYSDK_OFFSET(0x6794A20)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_7DBE4BF81A0D0238_OFFSET UNITYSDK_OFFSET(0x67940F0)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_8327FEEFBF3EC917_OFFSET UNITYSDK_OFFSET(0x6795A60)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_9681042564541CD6_OFFSET UNITYSDK_OFFSET(0x679DF40)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_9765352E01408D38_OFFSET UNITYSDK_OFFSET(0x679B990)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x679EFC0)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_CF8BA38996D09531_OFFSET UNITYSDK_OFFSET(0x679E490)
+#define MOLEMOLE_GAMEENGINE_METHOD_5_DF3BCB639F0C02DF_OFFSET UNITYSDK_OFFSET(0x6798A10)
+#define MOLEMOLE_GAMEENGINE_ONAPPLICATIONFOCUS_OFFSET UNITYSDK_OFFSET(0x679A010)
+#define MOLEMOLE_GAMEENGINE_ONAPPLICATIONPAUSE_OFFSET UNITYSDK_OFFSET(0x6799AC0)
+#define MOLEMOLE_GAMEENGINE_ONAPPLICATIONQUIT_OFFSET UNITYSDK_OFFSET(0x6799750)
+#define MOLEMOLE_GAMEENGINE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x6798810)
+#define MOLEMOLE_GAMEENGINE_REMOVE_ONFRAMESTART_OFFSET UNITYSDK_OFFSET(0x6792C10)
+#define MOLEMOLE_GAMEENGINE_SETLOADINGSTAGE_OFFSET UNITYSDK_OFFSET(0x679AEA0)
+#define MOLEMOLE_GAMEENGINE_SETUPCURRENTCULTURE_OFFSET UNITYSDK_OFFSET(0x6794A90)
+#define MOLEMOLE_GAMEENGINE_SET_BUDGETSEC_OFFSET UNITYSDK_OFFSET(0x6792840)
+#define MOLEMOLE_GAMEENGINE_SET_CURRENTRUNSEED_OFFSET UNITYSDK_OFFSET(0x6792F50)
+#define MOLEMOLE_GAMEENGINE_SET_HANDLEINPUTINEARLYUPDATE_OFFSET UNITYSDK_OFFSET(0x6792A00)
+#define MOLEMOLE_GAMEENGINE_SET_USEFULLTIMELIMIT_OFFSET UNITYSDK_OFFSET(0x6792810)
+#define MOLEMOLE_GAMEENGINE_SET_USETIMELIMIT_OFFSET UNITYSDK_OFFSET(0x67927F0)
+#define MOLEMOLE_GAMEENGINE_START_OFFSET UNITYSDK_OFFSET(0x6793CC0)
+#define MOLEMOLE_GAMEENGINE_TESTANDINFORMFRAMESTART_OFFSET UNITYSDK_OFFSET(0x6795230)
+#define MOLEMOLE_GAMEENGINE_UNBINDEXTRAUPDATECALLBACK_OFFSET UNITYSDK_OFFSET(0x6793B20)
+#define MOLEMOLE_GAMEENGINE_UPDATE_OFFSET UNITYSDK_OFFSET(0x6795E10)
+#define MOLEMOLE_GAMEENGINE__CCTOR_OFFSET UNITYSDK_OFFSET(0x679B8E0)
+#define MOLEMOLE_GAMEENGINE__CTOR_OFFSET UNITYSDK_OFFSET(0x679B850)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int GameEngine_TypeDefinitionIndex = 54636;
+
+	class GameEngine : public ::UnityEngine::MonoBehaviour
+	{
+	public:
+		static ::MoleMole::GameEngine** StaticGet_instance()
+		{
+			return (::MoleMole::GameEngine**)Il2CppClass::FromTypeDefinitionIndex(GameEngine_TypeDefinitionIndex)->GetStaticField(0x278E0);
+		}
+		static ::System::Boolean* StaticGet_Field_5_7()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(GameEngine_TypeDefinitionIndex)->GetStaticField(0x91B0);
+		}
+		static ::System::Boolean* StaticGet_HalfFrameFixedUpdate()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(GameEngine_TypeDefinitionIndex)->GetStaticField(0x91B1);
+		}
+		static ::System::Boolean* StaticGet_QuitApplication()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(GameEngine_TypeDefinitionIndex)->GetStaticField(0x91B2);
+		}
+		// static const ::System::Double Field_5_4; // 0x0
+		// static const ::System::Double Field_5_5; // 0x0
+		::System::Boolean Field_5_0; // 0x18
+		::System::Boolean Field_5_1; // 0x19
+		::System::Int32 Field_5_2; // 0x1C
+		::System::Double Field_5_3; // 0x20
+		::UnityEngine::WaitForEndOfFrame* endOfFrame; // 0x28
+		::System::Boolean Field_5_10; // 0x30
+		::System::UInt32 Field_5_11; // 0x34
+		::CrowdModuleMonoListener* Field_5_13; // 0x38
+		::MoleMole::MonoEntityIKUpdateListener* Field_5_14; // 0x40
+		::MonoEntityPostSimulationUpdateListener* Field_5_15; // 0x48
+		::Class_1_8F6F43710765B0C1* GameSceneSwitch; // 0x50
+		::System::Boolean isDevLevel; // 0x58
+		::System::Boolean isSceneDirectlyOpen; // 0x59
+		::System::Action_1<::System::Single>* OnBeforeUpdate; // 0x60
+		::System::Action_1<::System::Single>* OnAfterUpdate; // 0x68
+		::System::Action_1<::System::Boolean>* ApplicationFocus; // 0x70
+		::System::Action_1<::System::Single>* OnBeforeLateUpdate; // 0x78
+		::System::Action_1<::System::Single>* OnAfterLateUpdate; // 0x80
+		::System::Action* Field_5_24; // 0x88
+		::System::Int32 Field_5_25; // 0x90
+		::System::Int32 Field_5_26; // 0x94
+		::System::Int32 Field_5_27; // 0x98
+		::UnityEngine::WaitForFixedUpdate* Field_5_28; // 0xA0
+		::UnityEngine::Coroutine* Field_5_29; // 0xA8
+		::UnityEngine::WaitForEndOfFrame* Field_5_30; // 0xB0
+		::UnityEngine::Coroutine* Field_5_31; // 0xB8
+		::Unity::Jobs::JobHandle Field_5_32; // 0xC0
+		::System::Boolean Field_5_33; // 0xD0
+		::System::Type* Field_5_34; // 0xD8
+		::System::Type* Field_5_35; // 0xE0
+		::Class_2_CD42631606067E6B* Field_5_36; // 0xE8
+		::Class_1_019870FE224FBE5A* Field_5_37; // 0xF0
+		::Class_1_019870FE224FBE5A* Field_5_38; // 0xF8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE__CCTOR_OFFSET))();
+		}
+
+		::System::Boolean get_UseTimeLimit()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GET_USETIMELIMIT_OFFSET))(this);
+		}
+
+		::System::Void set_UseTimeLimit(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_SET_USETIMELIMIT_OFFSET))(this, a1);
+		}
+
+		::System::Boolean get_UseFullTimeLimit()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GET_USEFULLTIMELIMIT_OFFSET))(this);
+		}
+
+		::System::Void set_UseFullTimeLimit(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_SET_USEFULLTIMELIMIT_OFFSET))(this, a1);
+		}
+
+		::System::Int32 get_ApplicationTargetFrameRate()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GET_APPLICATIONTARGETFRAMERATE_OFFSET))(this);
+		}
+
+		::System::Double get_BudgetSec()
+		{
+			return ((::System::Double(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GET_BUDGETSEC_OFFSET))(this);
+		}
+
+		::System::Void set_BudgetSec(::System::Double a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Double))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_SET_BUDGETSEC_OFFSET))(this, a1);
+		}
+
+		static ::System::Double ClampDouble(::System::Double a1, ::System::Double a2, ::System::Double a3)
+		{
+			return ((::System::Double(*)(::System::Double, ::System::Double, ::System::Double))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_CLAMPDOUBLE_OFFSET))(a1, a2, a3);
+		}
+
+		static ::System::Boolean get_HandleInputInEarlyUpdate()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GET_HANDLEINPUTINEARLYUPDATE_OFFSET))();
+		}
+
+		static ::System::Void set_HandleInputInEarlyUpdate(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_SET_HANDLEINPUTINEARLYUPDATE_OFFSET))(a1);
+		}
+
+		::System::Boolean get_IsRestart()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GET_ISRESTART_OFFSET))(this);
+		}
+
+		::Class_2_CD42631606067E6B* get_CurGame()
+		{
+			return ((::Class_2_CD42631606067E6B*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GET_CURGAME_OFFSET))(this);
+		}
+
+		::Class_1_C682C5BA0B1AC838* get_CurUIScene()
+		{
+			return ((::Class_1_C682C5BA0B1AC838*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GET_CURUISCENE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsLoading()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GET_ISLOADING_OFFSET))(this);
+		}
+
+		::System::Void add_OnFrameStart(::System::Action* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_ADD_ONFRAMESTART_OFFSET))(this, a1);
+		}
+
+		::System::Void remove_OnFrameStart(::System::Action* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_REMOVE_ONFRAMESTART_OFFSET))(this, a1);
+		}
+
+		static ::System::Int32 GetNapSeed()
+		{
+			return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GETNAPSEED_OFFSET))();
+		}
+
+		::System::Int32 get_CurrentRunSeed()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GET_CURRENTRUNSEED_OFFSET))(this);
+		}
+
+		::System::Void set_CurrentRunSeed(::System::Int32 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_SET_CURRENTRUNSEED_OFFSET))(this, a1);
+		}
+
+		::System::Boolean get_IsSeeded()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GET_ISSEEDED_OFFSET))(this);
+		}
+
+		::System::Void AddDependency(::Unity::Jobs::JobHandle a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Unity::Jobs::JobHandle))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_ADDDEPENDENCY_OFFSET))(this, a1);
+		}
+
+		::System::Void Awake()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_AWAKE_OFFSET))(this);
+		}
+
+		::System::Void BindExtraUpdatePhaseCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_BINDEXTRAUPDATEPHASECALLBACK_OFFSET))(this);
+		}
+
+		::System::Void UnbindExtraUpdateCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_UNBINDEXTRAUPDATECALLBACK_OFFSET))(this);
+		}
+
+		::System::Void Start()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_START_OFFSET))(this);
+		}
+
+		static ::System::Void SetupCurrentCulture()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_SETUPCURRENTCULTURE_OFFSET))();
+		}
+
+		::System::Void TestAndInformFrameStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_TESTANDINFORMFRAMESTART_OFFSET))(this);
+		}
+
+		::System::Void AfterLocalStorageLoaded()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_AFTERLOCALSTORAGELOADED_OFFSET))(this);
+		}
+
+		::System::Void FixedUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_FIXEDUPDATE_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void LateUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_LATEUPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_ONDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnApplicationQuit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_ONAPPLICATIONQUIT_OFFSET))(this);
+		}
+
+		::System::Void OnApplicationPause(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_ONAPPLICATIONPAUSE_OFFSET))(this, a1);
+		}
+
+		::System::Void OnApplicationFocus(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_ONAPPLICATIONFOCUS_OFFSET))(this, a1);
+		}
+
+		::System::Void InitConfigData(::System::Action* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_INITCONFIGDATA_OFFSET))(this, a1);
+		}
+
+		static ::System::Void ForceQuitApplication()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_FORCEQUITAPPLICATION_OFFSET))();
+		}
+
+		static ::System::Void ForceQuitApplication2()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_FORCEQUITAPPLICATION2_OFFSET))();
+		}
+
+		::System::Void LauncherGame(::System::Type* a1, ::Class_1_019870FE224FBE5A* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Type*, ::Class_1_019870FE224FBE5A*))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_LAUNCHERGAME_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void SetLoadingStage(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_SETLOADINGSTAGE_OFFSET))(this, a1);
+		}
+
+		::System::Type* GetCurGameType()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GETCURGAMETYPE_OFFSET))(this);
+		}
+
+		::System::Type* GetLastGameType()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GETLASTGAMETYPE_OFFSET))(this);
+		}
+
+		::Class_1_019870FE224FBE5A* GetCurGameContext()
+		{
+			return ((::Class_1_019870FE224FBE5A*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GETCURGAMECONTEXT_OFFSET))(this);
+		}
+
+		::Class_1_019870FE224FBE5A* GetLastGameContext()
+		{
+			return ((::Class_1_019870FE224FBE5A*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GETLASTGAMECONTEXT_OFFSET))(this);
+		}
+
+		::System::Void GoToLoginGame()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_GOTOLOGINGAME_OFFSET))(this);
+		}
+
+		::System::Void CreateWhenRestart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_CREATEWHENRESTART_OFFSET))(this);
+		}
+
+		::System::Void InitWhenRestart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_INITWHENRESTART_OFFSET))(this);
+		}
+
+		::System::Void DisposeWhenRestart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_DISPOSEWHENRESTART_OFFSET))(this);
+		}
+
+		::System::Collections::IEnumerator* Method_5_627C7524E98F4AC5()
+		{
+			return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_627C7524E98F4AC5_OFFSET))(this);
+		}
+
+		::System::Void Method_5_9765352E01408D38()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_9765352E01408D38_OFFSET))(this);
+		}
+
+		::System::Void Method_5_7A73F165001BC325()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_7A73F165001BC325_OFFSET))(this);
+		}
+
+		::System::Void Method_5_735EE20B25F86BF4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_735EE20B25F86BF4_OFFSET))(this);
+		}
+
+		::System::Void Method_5_25DEA5C65A602671()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_25DEA5C65A602671_OFFSET))(this);
+		}
+
+		::System::Void Method_5_67D41ACFEF39E84E()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_67D41ACFEF39E84E_OFFSET))(this);
+		}
+
+		::System::Void Method_5_3CF43707BF2E9BBA()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_3CF43707BF2E9BBA_OFFSET))(this);
+		}
+
+		::System::Void Method_5_3CF43707BF2E9BBA_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_3CF43707BF2E9BBA_1_OFFSET))(this);
+		}
+
+		::System::Void Method_5_9681042564541CD6()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_9681042564541CD6_OFFSET))(this);
+		}
+
+		::System::Void Method_5_8327FEEFBF3EC917()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_8327FEEFBF3EC917_OFFSET))(this);
+		}
+
+		::System::Void Method_5_3CF43707BF2E9BBA_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_3CF43707BF2E9BBA_2_OFFSET))(this);
+		}
+
+		::System::Void Method_5_7DBE4BF81A0D0238(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_7DBE4BF81A0D0238_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_5_464B80C09A37526F()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_464B80C09A37526F_OFFSET))(this);
+		}
+
+		::System::Void Method_5_0865E94460F11643()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_0865E94460F11643_OFFSET))(this);
+		}
+
+		::System::Void Method_5_3B258437A86233AC()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_3B258437A86233AC_OFFSET))(this);
+		}
+
+		::System::Void Method_5_276036CDF4BFF5A6()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_276036CDF4BFF5A6_OFFSET))(this);
+		}
+
+		::System::Boolean Method_5_CF8BA38996D09531()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_CF8BA38996D09531_OFFSET))(this);
+		}
+
+		::System::Void Method_5_0B7E3489D2C0938B()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_0B7E3489D2C0938B_OFFSET))(this);
+		}
+
+		::System::Void Method_5_5D3D37F2BAE9FB65()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_5D3D37F2BAE9FB65_OFFSET))(this);
+		}
+
+		::System::Collections::IEnumerator* Method_5_627C7524E98F4AC5_1()
+		{
+			return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_627C7524E98F4AC5_1_OFFSET))(this);
+		}
+
+		::System::Void Method_5_23E4256FCB16FEBB(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_23E4256FCB16FEBB_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_5_DF3BCB639F0C02DF(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_DF3BCB639F0C02DF_OFFSET))(this, a1);
+		}
+
+		::Class_2_CD42631606067E6B* Method_5_0AAA07F08640B711(::Class_2_CD42631606067E6B* a1, ::Class_1_019870FE224FBE5A* a2)
+		{
+			return ((::Class_2_CD42631606067E6B*(*)(::PVOID, ::Class_2_CD42631606067E6B*, ::Class_1_019870FE224FBE5A*))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_0AAA07F08640B711_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_5_705FFC79B57F4953(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_705FFC79B57F4953_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_5_045F1AAB54606068()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_045F1AAB54606068_OFFSET))(this);
+		}
+
+		::System::Void Method_5_676E831338583C9D()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_676E831338583C9D_OFFSET))(this);
+		}
+
+		::System::Void Method_5_6423291ED13007B8(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_6423291ED13007B8_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_5_3E23A2EE3F65066B()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_3E23A2EE3F65066B_OFFSET))(this);
+		}
+
+		::System::Void Method_5_CA373AA1C7054598()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEENGINE_METHOD_5_CA373AA1C7054598_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,98 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_C36D127C88299910.h"
+#include "unitysdk/Class_1_C36D127C88299910_Enum_3_267898ADE98304D3.h"
+#include "unitysdk/MoleMole/UICameraAtom.h"
+
+class Class_0_16E4307DCC419505_364;
+namespace MoleMole::Config { class AnimCurveParam; }
+
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_1167B82216E9F065_OFFSET UNITYSDK_OFFSET(0x786B680)
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_2ACF2A61FB239D23_OFFSET UNITYSDK_OFFSET(0x786B660)
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_6165A61E462D916C_1_OFFSET UNITYSDK_OFFSET(0x786BB70)
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_6165A61E462D916C_2_OFFSET UNITYSDK_OFFSET(0x786BBA0)
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_6165A61E462D916C_OFFSET UNITYSDK_OFFSET(0x786BB40)
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_7ACC2D9B6D47AD97_1_OFFSET UNITYSDK_OFFSET(0x786BB80)
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_7ACC2D9B6D47AD97_2_OFFSET UNITYSDK_OFFSET(0x786BB90)
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_7ACC2D9B6D47AD97_OFFSET UNITYSDK_OFFSET(0x786BB30)
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_809C7E150982F8E0_OFFSET UNITYSDK_OFFSET(0x786BB50)
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_A6F89F219EBBE475_OFFSET UNITYSDK_OFFSET(0x786B710)
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x786B670)
+#define CLASS_2_C9567A13CABACCEF_METHOD_2_FB39AC018AA7BC4F_OFFSET UNITYSDK_OFFSET(0x786BBB0)
+#define CLASS_2_C9567A13CABACCEF__CTOR_OFFSET UNITYSDK_OFFSET(0x786BB20)
+
+inline static constexpr unsigned int Class_2_C9567A13CABACCEF_TypeDefinitionIndex = 59908;
+
+class Class_2_C9567A13CABACCEF : public ::Class_1_C36D127C88299910
+{
+public:
+	::MoleMole::Config::AnimCurveParam* Field_2_1; // 0x78
+	::MoleMole::Config::AnimCurveParam* Field_2_2; // 0x80
+	::MoleMole::Config::AnimCurveParam* Field_2_3; // 0x88
+	::MoleMole::UICameraAtom Field_2_0; // 0x90
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF__CTOR_OFFSET))(this);
+	}
+
+	::Class_1_C36D127C88299910_Enum_3_267898ADE98304D3 Method_2_2ACF2A61FB239D23()
+	{
+		return ((::Class_1_C36D127C88299910_Enum_3_267898ADE98304D3(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_2ACF2A61FB239D23_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_F0088C88851A7DFB()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_F0088C88851A7DFB_OFFSET))(this);
+	}
+
+	::System::Void Method_2_1167B82216E9F065(::MoleMole::UICameraAtom a1, ::MoleMole::UICameraAtom a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UICameraAtom, ::MoleMole::UICameraAtom))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_1167B82216E9F065_OFFSET))(this, a1, a2);
+	}
+
+	::Class_0_16E4307DCC419505_364* Method_2_A6F89F219EBBE475(::MoleMole::UICameraAtom a1, ::MoleMole::UICameraAtom a2)
+	{
+		return ((::Class_0_16E4307DCC419505_364*(*)(::PVOID, ::MoleMole::UICameraAtom, ::MoleMole::UICameraAtom))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_A6F89F219EBBE475_OFFSET))(this, a1, a2);
+	}
+
+	::MoleMole::Config::AnimCurveParam* Method_2_7ACC2D9B6D47AD97()
+	{
+		return ((::MoleMole::Config::AnimCurveParam*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_7ACC2D9B6D47AD97_OFFSET))(this);
+	}
+
+	::System::Void Method_2_6165A61E462D916C(::MoleMole::Config::AnimCurveParam* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Config::AnimCurveParam*))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_6165A61E462D916C_OFFSET))(this, a1);
+	}
+
+	::MoleMole::UICameraAtom Method_2_809C7E150982F8E0()
+	{
+		return ((::MoleMole::UICameraAtom(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_809C7E150982F8E0_OFFSET))(this);
+	}
+
+	::System::Void Method_2_6165A61E462D916C_1(::MoleMole::Config::AnimCurveParam* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Config::AnimCurveParam*))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_6165A61E462D916C_1_OFFSET))(this, a1);
+	}
+
+	::MoleMole::Config::AnimCurveParam* Method_2_7ACC2D9B6D47AD97_1()
+	{
+		return ((::MoleMole::Config::AnimCurveParam*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_7ACC2D9B6D47AD97_1_OFFSET))(this);
+	}
+
+	::MoleMole::Config::AnimCurveParam* Method_2_7ACC2D9B6D47AD97_2()
+	{
+		return ((::MoleMole::Config::AnimCurveParam*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_7ACC2D9B6D47AD97_2_OFFSET))(this);
+	}
+
+	::System::Void Method_2_6165A61E462D916C_2(::MoleMole::Config::AnimCurveParam* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Config::AnimCurveParam*))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_6165A61E462D916C_2_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_FB39AC018AA7BC4F(::MoleMole::UICameraAtom a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UICameraAtom))((::PBYTE)hIl2Cpp + CLASS_2_C9567A13CABACCEF_METHOD_2_FB39AC018AA7BC4F_OFFSET))(this, a1);
+	}
+};

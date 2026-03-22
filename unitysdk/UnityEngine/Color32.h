@@ -4,15 +4,14 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_COLOR32_LERP_OFFSET UNITYSDK_OFFSET(0x181E0BB0)
-#define UNITYENGINE_COLOR32_OP_IMPLICIT_1_OFFSET UNITYSDK_OFFSET(0x181E0B60)
-#define UNITYENGINE_COLOR32_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x181E07F0)
-#define UNITYENGINE_COLOR32_TOSTRING_OFFSET UNITYSDK_OFFSET(0x2041850)
-#define UNITYENGINE_COLOR32__CTOR_OFFSET UNITYSDK_OFFSET(0x2041830)
+#define UNITYENGINE_COLOR32_OP_IMPLICIT_1_OFFSET UNITYSDK_OFFSET(0x1A1119F0)
+#define UNITYENGINE_COLOR32_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1A111680)
+#define UNITYENGINE_COLOR32_TOSTRING_OFFSET UNITYSDK_OFFSET(0x909FD0)
+#define UNITYENGINE_COLOR32__CTOR_OFFSET UNITYSDK_OFFSET(0x784500)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int Color32_TypeDefinitionIndex = 4005;
+	inline static constexpr unsigned int Color32_TypeDefinitionIndex = 5291;
 
 	struct alignas(4) Color32
 	{
@@ -40,11 +39,6 @@ namespace UnityEngine
 			return ((::UnityEngine::Color(*)(::UnityEngine::Color32))((::PBYTE)hIl2Cpp + UNITYENGINE_COLOR32_OP_IMPLICIT_1_OFFSET))(c);
 		}
 		*/
-
-		static ::UnityEngine::Color32 Lerp(::UnityEngine::Color32 a, ::UnityEngine::Color32 b, ::System::Single t)
-		{
-			return ((::UnityEngine::Color32(*)(::UnityEngine::Color32, ::UnityEngine::Color32, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_COLOR32_LERP_OFFSET))(a, b, t);
-		}
 
 		::System::String* ToString()
 		{

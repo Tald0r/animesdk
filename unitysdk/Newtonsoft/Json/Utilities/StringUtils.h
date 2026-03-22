@@ -1,6 +1,5 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/System/Nullable_1.h"
 #include "unitysdk/System/Object.h"
 
 namespace System { class IFormatProvider; }
@@ -9,27 +8,34 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::IO { class StringWriter; }
 
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_CREATESTRINGWRITER_OFFSET UNITYSDK_OFFSET(0x15DF5810)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_ENDSWITH_OFFSET UNITYSDK_OFFSET(0x15DF5D10)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_1_OFFSET UNITYSDK_OFFSET(0x15DF1AC0)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_2_OFFSET UNITYSDK_OFFSET(0x15DF5340)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_3_OFFSET UNITYSDK_OFFSET(0x15DF5560)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_4_OFFSET UNITYSDK_OFFSET(0x15DF5270)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_OFFSET UNITYSDK_OFFSET(0x15DF0CA0)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_GETLENGTH_OFFSET UNITYSDK_OFFSET(0x15DF58B0)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_ISHIGHSURROGATE_OFFSET UNITYSDK_OFFSET(0x15DF5CC0)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_ISLOWSURROGATE_OFFSET UNITYSDK_OFFSET(0x15DF5CD0)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_STARTSWITH_OFFSET UNITYSDK_OFFSET(0x15DF5CE0)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_TOCAMELCASE_OFFSET UNITYSDK_OFFSET(0x15DF5A00)
-#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_TOCHARASUNICODE_OFFSET UNITYSDK_OFFSET(0x15DF58D0)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_CREATESTRINGWRITER_OFFSET UNITYSDK_OFFSET(0x1A8CB130)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_ENDSWITH_OFFSET UNITYSDK_OFFSET(0x1A8CB920)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_1_OFFSET UNITYSDK_OFFSET(0x1A8C1240)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_2_OFFSET UNITYSDK_OFFSET(0x1A8CAB20)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_3_OFFSET UNITYSDK_OFFSET(0x1A8CAD80)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_4_OFFSET UNITYSDK_OFFSET(0x1A8CAA20)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_OFFSET UNITYSDK_OFFSET(0x1A8C10E0)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_ISHIGHSURROGATE_OFFSET UNITYSDK_OFFSET(0x1A8CB8D0)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_ISLOWSURROGATE_OFFSET UNITYSDK_OFFSET(0x1A8CB8E0)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_ISWHITESPACE_OFFSET UNITYSDK_OFFSET(0x1A8CB060)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_STARTSWITH_OFFSET UNITYSDK_OFFSET(0x1A8CB8F0)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_TOCAMELCASE_OFFSET UNITYSDK_OFFSET(0x1A8CB320)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_TOCHARASUNICODE_OFFSET UNITYSDK_OFFSET(0x1A8CB1F0)
+#define NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_TOSNAKECASE_OFFSET UNITYSDK_OFFSET(0x1A8CB5D0)
 
 namespace Newtonsoft::Json::Utilities
 {
-	inline static constexpr unsigned int StringUtils_TypeDefinitionIndex = 8156;
+	inline static constexpr unsigned int StringUtils_TypeDefinitionIndex = 6951;
 
 	class StringUtils : public ::System::Object
 	{
 	public:
+		// static const ::System::String* CarriageReturnLineFeed; // 0x0
+		// static const ::System::String* Empty; // 0x0
+		// static const ::System::Char CarriageReturn; // 0x0
+		// static const ::System::Char LineFeed; // 0x0
+		// static const ::System::Char Tab; // 0x0
+
 		static ::System::String* FormatWith(::System::String* format, ::System::IFormatProvider* provider, ::System::Object* arg0)
 		{
 			return ((::System::String*(*)(::System::String*, ::System::IFormatProvider*, ::System::Object*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_OFFSET))(format, provider, arg0);
@@ -55,14 +61,14 @@ namespace Newtonsoft::Json::Utilities
 			return ((::System::String*(*)(::System::String*, ::System::IFormatProvider*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_FORMATWITH_4_OFFSET))(format, provider, args);
 		}
 
+		static ::System::Boolean IsWhiteSpace(::System::String* s)
+		{
+			return ((::System::Boolean(*)(::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_ISWHITESPACE_OFFSET))(s);
+		}
+
 		static ::System::IO::StringWriter* CreateStringWriter(::System::Int32 capacity)
 		{
 			return ((::System::IO::StringWriter*(*)(::System::Int32))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_CREATESTRINGWRITER_OFFSET))(capacity);
-		}
-
-		static ::System::Nullable_1<::System::Int32> GetLength(::System::String* value)
-		{
-			return ((::System::Nullable_1<::System::Int32>(*)(::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_GETLENGTH_OFFSET))(value);
 		}
 
 		static ::System::Void ToCharAsUnicode(::System::Char c, ::Il2CppArray<::System::Char>* buffer)
@@ -73,6 +79,11 @@ namespace Newtonsoft::Json::Utilities
 		static ::System::String* ToCamelCase(::System::String* s)
 		{
 			return ((::System::String*(*)(::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_TOCAMELCASE_OFFSET))(s);
+		}
+
+		static ::System::String* ToSnakeCase(::System::String* s)
+		{
+			return ((::System::String*(*)(::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_STRINGUTILS_TOSNAKECASE_OFFSET))(s);
 		}
 
 		static ::System::Boolean IsHighSurrogate(::System::Char c)

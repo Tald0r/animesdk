@@ -1,9 +1,8 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/UnityEngine/Matrix4x4.h"
 
-class Class_2_7BE5A46414023E45;
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_369_TypeDefinitionIndex = 42797;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_369_TypeDefinitionIndex = 44094;
 
 class Class_0_16E4307DCC419505_369
 {

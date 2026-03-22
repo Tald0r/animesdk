@@ -1,12 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace BansheeGz::BGSpline::Components { class BGCcMath; }
-namespace BansheeGz::BGSpline::Components { class BGCcSplitterPolyline; }
-namespace BansheeGz::BGSpline::Curve { class BGCurve; }
-namespace UnityEngine { class LineRenderer; }
+class Class_1_80FCC156EBF58EC5;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_530_TypeDefinitionIndex = 49507;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_530_TypeDefinitionIndex = 53827;
 
 class Class_0_16E4307DCC419505_530
 {

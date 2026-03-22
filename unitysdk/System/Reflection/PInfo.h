@@ -3,7 +3,7 @@
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int PInfo_TypeDefinitionIndex = 628;
+	inline static constexpr unsigned int PInfo_TypeDefinitionIndex = 601;
 
 	enum class PInfo : ::System::Int32
 	{

@@ -4,25 +4,56 @@
 
 namespace System { class Object; }
 namespace System { class String; }
+namespace System { class Type; }
 
-#define SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE_GET_TYPEID_OFFSET UNITYSDK_OFFSET(0x17E6F240)
-#define SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x17E6F230)
+#define SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE_GET_RELOADABLE_OFFSET UNITYSDK_OFFSET(0x190093E0)
+#define SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE_GET_SERIALIZERBASETYPENAME_OFFSET UNITYSDK_OFFSET(0x19009400)
+#define SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE_GET_SERIALIZERTYPENAME_OFFSET UNITYSDK_OFFSET(0x190093F0)
+#define SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE_GET_TYPEID_OFFSET UNITYSDK_OFFSET(0x19009410)
+#define SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19009390)
+#define SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x190093D0)
+#define SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19009330)
 
 namespace System::ComponentModel::Design::Serialization
 {
-	inline static constexpr unsigned int RootDesignerSerializerAttribute_TypeDefinitionIndex = 2645;
+	inline static constexpr unsigned int RootDesignerSerializerAttribute_TypeDefinitionIndex = 3116;
 
 	class RootDesignerSerializerAttribute : public ::System::Attribute
 	{
 	public:
-		::System::String* serializerBaseTypeName; // 0x10
-		::System::String* typeId; // 0x18
-		::System::String* serializerTypeName; // 0x20
+		::System::String* serializerTypeName; // 0x10
+		::System::String* serializerBaseTypeName; // 0x18
+		::System::String* typeId; // 0x20
 		::System::Boolean reloadable; // 0x28
 
-		::System::Void _ctor(::System::String* serializerTypeName, ::System::String* baseSerializerTypeName, ::System::Boolean reloadable)
+		::System::Void _ctor(::System::Type* serializerType, ::System::Type* baseSerializerType, ::System::Boolean reloadable)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE__CTOR_OFFSET))(this, serializerTypeName, baseSerializerTypeName, reloadable);
+			return ((::System::Void(*)(::PVOID, ::System::Type*, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE__CTOR_OFFSET))(this, serializerType, baseSerializerType, reloadable);
+		}
+
+		::System::Void _ctor_1(::System::String* serializerTypeName, ::System::Type* baseSerializerType, ::System::Boolean reloadable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE__CTOR_1_OFFSET))(this, serializerTypeName, baseSerializerType, reloadable);
+		}
+
+		::System::Void _ctor_2(::System::String* serializerTypeName, ::System::String* baseSerializerTypeName, ::System::Boolean reloadable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE__CTOR_2_OFFSET))(this, serializerTypeName, baseSerializerTypeName, reloadable);
+		}
+
+		::System::Boolean get_Reloadable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE_GET_RELOADABLE_OFFSET))(this);
+		}
+
+		::System::String* get_SerializerTypeName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE_GET_SERIALIZERTYPENAME_OFFSET))(this);
+		}
+
+		::System::String* get_SerializerBaseTypeName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DESIGN_SERIALIZATION_ROOTDESIGNERSERIALIZERATTRIBUTE_GET_SERIALIZERBASETYPENAME_OFFSET))(this);
 		}
 
 		::System::Object* get_TypeId()

@@ -3,24 +3,21 @@
 #include "unitysdk/System/Attribute.h"
 #include "unitysdk/System/AttributeTargets.h"
 
-#define SYSTEM_ATTRIBUTEUSAGEATTRIBUTE_GET_ALLOWMULTIPLE_OFFSET UNITYSDK_OFFSET(0x15B03D00)
-#define SYSTEM_ATTRIBUTEUSAGEATTRIBUTE_GET_INHERITED_OFFSET UNITYSDK_OFFSET(0x15B03D20)
-#define SYSTEM_ATTRIBUTEUSAGEATTRIBUTE_SET_ALLOWMULTIPLE_OFFSET UNITYSDK_OFFSET(0x15B03D10)
-#define SYSTEM_ATTRIBUTEUSAGEATTRIBUTE_SET_INHERITED_OFFSET UNITYSDK_OFFSET(0x15B03D30)
-#define SYSTEM_ATTRIBUTEUSAGEATTRIBUTE__CCTOR_OFFSET UNITYSDK_OFFSET(0x15B03D40)
-#define SYSTEM_ATTRIBUTEUSAGEATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15B03CF0)
-#define SYSTEM_ATTRIBUTEUSAGEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x15B03CE0)
+#define SYSTEM_ATTRIBUTEUSAGEATTRIBUTE_SET_ALLOWMULTIPLE_OFFSET UNITYSDK_OFFSET(0x1987C870)
+#define SYSTEM_ATTRIBUTEUSAGEATTRIBUTE_SET_INHERITED_OFFSET UNITYSDK_OFFSET(0x1987C880)
+#define SYSTEM_ATTRIBUTEUSAGEATTRIBUTE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1987C890)
+#define SYSTEM_ATTRIBUTEUSAGEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1987C860)
 
 namespace System
 {
-	inline static constexpr unsigned int AttributeUsageAttribute_TypeDefinitionIndex = 203;
+	inline static constexpr unsigned int AttributeUsageAttribute_TypeDefinitionIndex = 191;
 
 	class AttributeUsageAttribute : public ::System::Attribute
 	{
 	public:
 		static ::System::AttributeUsageAttribute** StaticGet_Default()
 		{
-			return (::System::AttributeUsageAttribute**)Il2CppClass::FromTypeDefinitionIndex(AttributeUsageAttribute_TypeDefinitionIndex)->GetStaticField(0x7060);
+			return (::System::AttributeUsageAttribute**)Il2CppClass::FromTypeDefinitionIndex(AttributeUsageAttribute_TypeDefinitionIndex)->GetStaticField(0x1310);
 		}
 		::System::AttributeTargets m_attributeTarget; // 0x10
 		::System::Boolean m_allowMultiple; // 0x14
@@ -31,29 +28,14 @@ namespace System
 			return ((::System::Void(*)(::PVOID, ::System::AttributeTargets))((::PBYTE)hIl2Cpp + SYSTEM_ATTRIBUTEUSAGEATTRIBUTE__CTOR_OFFSET))(this, validOn);
 		}
 
-		::System::Void _ctor_1(::System::AttributeTargets validOn, ::System::Boolean allowMultiple, ::System::Boolean inherited)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::AttributeTargets, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_ATTRIBUTEUSAGEATTRIBUTE__CTOR_1_OFFSET))(this, validOn, allowMultiple, inherited);
-		}
-
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_ATTRIBUTEUSAGEATTRIBUTE__CCTOR_OFFSET))();
 		}
 
-		::System::Boolean get_AllowMultiple()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_ATTRIBUTEUSAGEATTRIBUTE_GET_ALLOWMULTIPLE_OFFSET))(this);
-		}
-
 		::System::Void set_AllowMultiple(::System::Boolean value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_ATTRIBUTEUSAGEATTRIBUTE_SET_ALLOWMULTIPLE_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_Inherited()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_ATTRIBUTEUSAGEATTRIBUTE_GET_INHERITED_OFFSET))(this);
 		}
 
 		::System::Void set_Inherited(::System::Boolean value)

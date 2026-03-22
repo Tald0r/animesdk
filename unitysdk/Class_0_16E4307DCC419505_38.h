@@ -1,11 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/Client/ByteHash16.h"
 
-namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_38_TypeDefinitionIndex = 31103;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_38_TypeDefinitionIndex = 24236;
 
+template <typename TVertex, typename TEdge>
 class Class_0_16E4307DCC419505_38
 {
 public:

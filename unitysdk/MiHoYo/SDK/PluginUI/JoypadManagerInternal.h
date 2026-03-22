@@ -5,25 +5,25 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MIHOYO_SDK_PLUGINUI_JOYPADMANAGERINTERNAL_INSTANCE_OFFSET UNITYSDK_OFFSET(0x821BD00)
-#define MIHOYO_SDK_PLUGINUI_JOYPADMANAGERINTERNAL_ISTOP_OFFSET UNITYSDK_OFFSET(0x82202D0)
-#define MIHOYO_SDK_PLUGINUI_JOYPADMANAGERINTERNAL_POPUI_OFFSET UNITYSDK_OFFSET(0x821C060)
-#define MIHOYO_SDK_PLUGINUI_JOYPADMANAGERINTERNAL_PUSHUI_OFFSET UNITYSDK_OFFSET(0x821BDA0)
-#define MIHOYO_SDK_PLUGINUI_JOYPADMANAGERINTERNAL__CTOR_OFFSET UNITYSDK_OFFSET(0x8229020)
+#define MIHOYO_SDK_PLUGINUI_JOYPADMANAGERINTERNAL_INSTANCE_OFFSET UNITYSDK_OFFSET(0x18DB5A80)
+#define MIHOYO_SDK_PLUGINUI_JOYPADMANAGERINTERNAL_ISTOP_OFFSET UNITYSDK_OFFSET(0x18DB5E90)
+#define MIHOYO_SDK_PLUGINUI_JOYPADMANAGERINTERNAL_POPUI_OFFSET UNITYSDK_OFFSET(0x18DB5CF0)
+#define MIHOYO_SDK_PLUGINUI_JOYPADMANAGERINTERNAL_PUSHUI_OFFSET UNITYSDK_OFFSET(0x18DB5BA0)
+#define MIHOYO_SDK_PLUGINUI_JOYPADMANAGERINTERNAL__CTOR_OFFSET UNITYSDK_OFFSET(0x18DB5B40)
 
 namespace MiHoYo::SDK::PluginUI
 {
-	inline static constexpr unsigned int JoypadManagerInternal_TypeDefinitionIndex = 36518;
+	inline static constexpr unsigned int JoypadManagerInternal_TypeDefinitionIndex = 34002;
 
 	class JoypadManagerInternal : public ::System::Object
 	{
 	public:
 		static ::MiHoYo::SDK::PluginUI::JoypadManagerInternal** StaticGet__instance()
 		{
-			return (::MiHoYo::SDK::PluginUI::JoypadManagerInternal**)Il2CppClass::FromTypeDefinitionIndex(JoypadManagerInternal_TypeDefinitionIndex)->GetStaticField(0x80B0);
+			return (::MiHoYo::SDK::PluginUI::JoypadManagerInternal**)Il2CppClass::FromTypeDefinitionIndex(JoypadManagerInternal_TypeDefinitionIndex)->GetStaticField(0x243F0);
 		}
-		::System::Collections::Generic::List_1<::System::String*>* m_lstUIStack; // 0x10
-		::System::String* m_strTopUI; // 0x18
+		::System::String* m_strTopUI; // 0x10
+		::System::Collections::Generic::List_1<::System::String*>* m_lstUIStack; // 0x18
 
 		::System::Void _ctor()
 		{

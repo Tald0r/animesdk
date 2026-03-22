@@ -6,21 +6,23 @@
 #include "unitysdk/UnityEngine/Texture.h"
 #include "unitysdk/UnityEngine/TextureFormat.h"
 
-#define UNITYENGINE_TEXTURE2DARRAY_GET_ALLSLICES_OFFSET UNITYSDK_OFFSET(0x182407B0)
-#define UNITYENGINE_TEXTURE2DARRAY_GET_DEPTH_OFFSET UNITYSDK_OFFSET(0x182407C0)
-#define UNITYENGINE_TEXTURE2DARRAY_GET_ISREADABLE_OFFSET UNITYSDK_OFFSET(0x182407D0)
-#define UNITYENGINE_TEXTURE2DARRAY_INTERNAL_CREATEIMPL_OFFSET UNITYSDK_OFFSET(0x182407E0)
-#define UNITYENGINE_TEXTURE2DARRAY_INTERNAL_CREATE_OFFSET UNITYSDK_OFFSET(0x182407F0)
-#define UNITYENGINE_TEXTURE2DARRAY__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18240920)
-#define UNITYENGINE_TEXTURE2DARRAY__CTOR_2_OFFSET UNITYSDK_OFFSET(0x18240990)
-#define UNITYENGINE_TEXTURE2DARRAY__CTOR_3_OFFSET UNITYSDK_OFFSET(0x18240A70)
-#define UNITYENGINE_TEXTURE2DARRAY__CTOR_4_OFFSET UNITYSDK_OFFSET(0x18240B80)
-#define UNITYENGINE_TEXTURE2DARRAY__CTOR_5_OFFSET UNITYSDK_OFFSET(0x18240BD0)
-#define UNITYENGINE_TEXTURE2DARRAY__CTOR_OFFSET UNITYSDK_OFFSET(0x182408A0)
+#define UNITYENGINE_TEXTURE2DARRAY_APPLYIMPL_OFFSET UNITYSDK_OFFSET(0x19D010C0)
+#define UNITYENGINE_TEXTURE2DARRAY_APPLY_OFFSET UNITYSDK_OFFSET(0x19D014A0)
+#define UNITYENGINE_TEXTURE2DARRAY_GET_ALLSLICES_OFFSET UNITYSDK_OFFSET(0x19D00FD0)
+#define UNITYENGINE_TEXTURE2DARRAY_GET_FORMAT_OFFSET UNITYSDK_OFFSET(0x19D00FE0)
+#define UNITYENGINE_TEXTURE2DARRAY_GET_ISREADABLE_OFFSET UNITYSDK_OFFSET(0x19D00FF0)
+#define UNITYENGINE_TEXTURE2DARRAY_INTERNAL_CREATEIMPL_OFFSET UNITYSDK_OFFSET(0x19D01000)
+#define UNITYENGINE_TEXTURE2DARRAY_INTERNAL_CREATE_OFFSET UNITYSDK_OFFSET(0x19D01010)
+#define UNITYENGINE_TEXTURE2DARRAY__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19D01150)
+#define UNITYENGINE_TEXTURE2DARRAY__CTOR_2_OFFSET UNITYSDK_OFFSET(0x19D011C0)
+#define UNITYENGINE_TEXTURE2DARRAY__CTOR_3_OFFSET UNITYSDK_OFFSET(0x19D012C0)
+#define UNITYENGINE_TEXTURE2DARRAY__CTOR_4_OFFSET UNITYSDK_OFFSET(0x19D01410)
+#define UNITYENGINE_TEXTURE2DARRAY__CTOR_5_OFFSET UNITYSDK_OFFSET(0x19D01460)
+#define UNITYENGINE_TEXTURE2DARRAY__CTOR_OFFSET UNITYSDK_OFFSET(0x19D010D0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int Texture2DArray_TypeDefinitionIndex = 3987;
+	inline static constexpr unsigned int Texture2DArray_TypeDefinitionIndex = 5272;
 
 	class Texture2DArray : public ::UnityEngine::Texture
 	{
@@ -60,9 +62,9 @@ namespace UnityEngine
 			return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTURE2DARRAY_GET_ALLSLICES_OFFSET))();
 		}
 
-		::System::Int32 get_depth()
+		::UnityEngine::TextureFormat get_format()
 		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTURE2DARRAY_GET_DEPTH_OFFSET))(this);
+			return ((::UnityEngine::TextureFormat(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTURE2DARRAY_GET_FORMAT_OFFSET))(this);
 		}
 
 		::System::Boolean get_isReadable()
@@ -78,6 +80,16 @@ namespace UnityEngine
 		static ::System::Void Internal_Create(::UnityEngine::Texture2DArray* mono, ::System::Int32 w, ::System::Int32 h, ::System::Int32 d, ::System::Int32 mipCount, ::UnityEngine::Experimental::Rendering::GraphicsFormat format, ::UnityEngine::Experimental::Rendering::TextureCreationFlags flags)
 		{
 			return ((::System::Void(*)(::UnityEngine::Texture2DArray*, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::UnityEngine::Experimental::Rendering::GraphicsFormat, ::UnityEngine::Experimental::Rendering::TextureCreationFlags))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTURE2DARRAY_INTERNAL_CREATE_OFFSET))(mono, w, h, d, mipCount, format, flags);
+		}
+
+		::System::Void ApplyImpl(::System::Boolean updateMipmaps, ::System::Boolean makeNoLongerReadable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTURE2DARRAY_APPLYIMPL_OFFSET))(this, updateMipmaps, makeNoLongerReadable);
+		}
+
+		::System::Void Apply(::System::Boolean updateMipmaps, ::System::Boolean makeNoLongerReadable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTURE2DARRAY_APPLY_OFFSET))(this, updateMipmaps, makeNoLongerReadable);
 		}
 	};
 }

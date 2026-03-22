@@ -1,10 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/Client/TextID.h"
+#include "unitysdk/Struct_2_D7E802D2192B688B_1.h"
 
-namespace System { class String; }
+class Class_1_FD893FD36F6A3A6D_1;
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_211_TypeDefinitionIndex = 32731;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_211_TypeDefinitionIndex = 72067;
 
 class Class_0_16E4307DCC419505_211
 {

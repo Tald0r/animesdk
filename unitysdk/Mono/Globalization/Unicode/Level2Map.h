@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MONO_GLOBALIZATION_UNICODE_LEVEL2MAP__CTOR_OFFSET UNITYSDK_OFFSET(0x15AB0350)
+#define MONO_GLOBALIZATION_UNICODE_LEVEL2MAP__CTOR_OFFSET UNITYSDK_OFFSET(0x17F472D0)
 
 namespace Mono::Globalization::Unicode
 {
-	inline static constexpr unsigned int Level2Map_TypeDefinitionIndex = 34;
+	inline static constexpr unsigned int Level2Map_TypeDefinitionIndex = 37;
 
 	class Level2Map : public ::System::Object
 	{
 	public:
-		::System::Byte Source; // 0x10
-		::System::Byte Replace; // 0x11
+		::System::Byte Replace; // 0x10
+		::System::Byte Source; // 0x11
 
 		::System::Void _ctor(::System::Byte source, ::System::Byte replace)
 		{

@@ -1,0 +1,537 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_F4705266FB2007C7.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_0106C133B17575D7.h"
+#include "unitysdk/Struct_2_49ABC235CB23B56F.h"
+#include "unitysdk/Struct_2_B136CFD8FB6B8F37_1.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+class Class_0_16E4307DCC419505_139;
+class Class_1_346D7AF1D5276E18;
+class Class_1_4431FF0C8F5E605E;
+class Class_1_A11CB4C08EF906E4_1;
+class Class_1_CA0505FEE22A1EA9;
+class Class_1_F542B7C6D777DFEB;
+class Class_2_2019B3C14943B358_1;
+namespace MoleMole { class ConfigNewbie_HighLightData; }
+namespace MoleMole { class ConfigNewbie_NewbieGroup; }
+namespace MoleMole { class ConfigNewbie_NewbieStep; }
+namespace MoleMole { class ConfigNewbie_TargetPath; }
+namespace MoleMole { class UIBaseController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralNewsBubbleRowWidgetController; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine::UI { class Image; }
+template <typename T> class Class_0_16E4307DCC41950C_24;
+template <typename T> class Class_1_82F5ED37D022BD35;
+
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_BINDHIGHLIGHTFAIL_OFFSET UNITYSDK_OFFSET(0xB249DB0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_BINDHIGHLIGHT_OFFSET UNITYSDK_OFFSET(0xB24A170)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_CHANGESTATE_OFFSET UNITYSDK_OFFSET(0xB249AE0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_CHECKBUTTONPROTECT_OFFSET UNITYSDK_OFFSET(0xB24F140)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_CHECKENDBYCONDITION_OFFSET UNITYSDK_OFFSET(0xB24E000)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_CLOSECIRCLEEFFECT_OFFSET UNITYSDK_OFFSET(0xB24A470)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_CONDITIONCALLBACK_OFFSET UNITYSDK_OFFSET(0xB24EB30)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_DISABLERAYCAST_OFFSET UNITYSDK_OFFSET(0xB2499F0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_DOTRIGGERNEXTSTEP_OFFSET UNITYSDK_OFFSET(0xB24DCC0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ENDCURSTEPBYCONDITION_OFFSET UNITYSDK_OFFSET(0xB24E1E0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ENDNEWBIE_OFFSET UNITYSDK_OFFSET(0xB249EA0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_EXECCURNEWBIESTEP_OFFSET UNITYSDK_OFFSET(0xB24D890)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_FINISHCURRENTNEWBIE_OFFSET UNITYSDK_OFFSET(0xB24C820)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_FORCETRIGGERNEXTSTEP_OFFSET UNITYSDK_OFFSET(0xB24C890)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GETBINDTARGET_OFFSET UNITYSDK_OFFSET(0xB24A980)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GETRUNNINGGROUP_OFFSET UNITYSDK_OFFSET(0xB24B410)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GETSTEPINDEX_OFFSET UNITYSDK_OFFSET(0xB24B480)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_ACTIVE_OFFSET UNITYSDK_OFFSET(0xB24AC50)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_CURNEWBIESTEP_OFFSET UNITYSDK_OFFSET(0xB249930)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_ISALLOWINPUTPASS_OFFSET UNITYSDK_OFFSET(0xB24AC60)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_SENDOPENPOPUPFORNEWBIE_OFFSET UNITYSDK_OFFSET(0xB24D880)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_UICURSORHIDESTATE_OFFSET UNITYSDK_OFFSET(0xB24B000)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xB24AC40)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GOCONSOLENEXTSTEP_OFFSET UNITYSDK_OFFSET(0xB24DE20)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GONEXTSTEP_OFFSET UNITYSDK_OFFSET(0xB24DAE0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GUIROOTONBLACKEDGEALPHACHANGED_OFFSET UNITYSDK_OFFSET(0xB24C580)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLECURNEWBIESTEP_OFFSET UNITYSDK_OFFSET(0xB24EBA0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEFAIRY_OFFSET UNITYSDK_OFFSET(0xB24EFD0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHLIGHTGO_OFFSET UNITYSDK_OFFSET(0xB24F5D0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHLIGHTSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0xB24FB80)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHLIGHTS_OFFSET UNITYSDK_OFFSET(0xB24EE00)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHLIGHT_1_OFFSET UNITYSDK_OFFSET(0xB24F270)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHLIGHT_OFFSET UNITYSDK_OFFSET(0xB24A310)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHTLIGHTGONONE_OFFSET UNITYSDK_OFFSET(0xB24FB10)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEMASK_OFFSET UNITYSDK_OFFSET(0xB24A620)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HASFAIRYEXCLUDECTRL_OFFSET UNITYSDK_OFFSET(0xB24B4F0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ISALLOWINPUTPASSBYACTION_OFFSET UNITYSDK_OFFSET(0xB24ACE0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ISCONDITIONACHIEVE_OFFSET UNITYSDK_OFFSET(0xB24E090)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONCLICKGONEXT_OFFSET UNITYSDK_OFFSET(0xB24DDB0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONCONSOLENEXT_OFFSET UNITYSDK_OFFSET(0xB24D200)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB24B5D0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONFULLSCREENBTNCLICKED_OFFSET UNITYSDK_OFFSET(0xB250800)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONHOOKWINDOWCLOSED_OFFSET UNITYSDK_OFFSET(0xB2508B0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONINPUTACTIONPOSTUPDATE_OFFSET UNITYSDK_OFFSET(0xB24CFE0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONINPUTACTIONPREUPDATE_OFFSET UNITYSDK_OFFSET(0xB24CF60)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xB24D400)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONNEWBIETRIGGER_OFFSET UNITYSDK_OFFSET(0xB24B930)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONSTATECHANGE_OFFSET UNITYSDK_OFFSET(0xB249A70)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xB24BCA0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB24CBE0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB24BF30)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB24B670)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_OPENCIRCLEEFFECT_OFFSET UNITYSDK_OFFSET(0xB24A530)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_RESETGUIDEDATA_OFFSET UNITYSDK_OFFSET(0xB24BDD0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_REVERSECURNEWBIESTEP_OFFSET UNITYSDK_OFFSET(0xB24E310)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_REVERSEHIGHLIGHTS_OFFSET UNITYSDK_OFFSET(0xB250590)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_SENDENDNEWBIE_OFFSET UNITYSDK_OFFSET(0xB24E670)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_SETCIRCLERATIO_OFFSET UNITYSDK_OFFSET(0xB24A8A0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_SETCURSTEP_OFFSET UNITYSDK_OFFSET(0xB24E7E0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xB24C650)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_STARTNEWLOOP_OFFSET UNITYSDK_OFFSET(0xB249940)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_TOPARAM_OFFSET UNITYSDK_OFFSET(0xB24F4E0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_TRIGGERCURNEWBIESTEP_OFFSET UNITYSDK_OFFSET(0xB24E8B0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_TRYGETTARGET_OFFSET UNITYSDK_OFFSET(0xB249B90)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xB24D7B0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB250AD0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER__HANDLEHIGHLIGHT_OFFSET UNITYSDK_OFFSET(0xB250190)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER__ONUIOPEN_B__31_0_OFFSET UNITYSDK_OFFSET(0xB250BE0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER__REVERSECURNEWBIESTEP_G__REVERSEMASKANDHIGHLIGHTS_70_0_OFFSET UNITYSDK_OFFSET(0xB250410)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_GET_ISALLOWINPUTPASS_OFFSET UNITYSDK_OFFSET(0xB250CA0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_GET_UICURSORHIDESTATE_OFFSET UNITYSDK_OFFSET(0xB250CB0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ISALLOWINPUTPASSBYACTION_OFFSET UNITYSDK_OFFSET(0xB250CC0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB250D50)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xB250DC0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xB250DF0)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB250E00)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB250E10)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB250E20)
+#define MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xB250E90)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UINewbiePopWindowController_TypeDefinitionIndex = 65169;
+
+	class UINewbiePopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Int32 NextDelay = 0x1F4; // 0x0
+		::Class_1_82F5ED37D022BD35<::MoleMole::UINewbiePopWindowController*>* _stateMachine; // 0x2F8
+		::MoleMole::UIBaseController* _curHookWindow; // 0x300
+		::System::Int32 _curNewbieGroupId; // 0x308
+		::Struct_2_B136CFD8FB6B8F37_1 _conditionHandle; // 0x30C
+		::Class_2_2019B3C14943B358_1* _view; // 0x310
+		::System::Int32 _curStepIndex; // 0x318
+		::System::Int32 _curReverseIndex; // 0x31C
+		::MoleMole::ConfigNewbie_NewbieGroup* _curGroupConfig; // 0x320
+		::MoleMole::ConfigNewbie_NewbieStep* _curNewbieStep; // 0x328
+		::MoleMole::ConfigNewbie_NewbieStep* _postHandleNewbieStep; // 0x330
+		::Struct_2_49ABC235CB23B56F _reverseHandle; // 0x338
+		::Class_1_4431FF0C8F5E605E* _maskObject; // 0x348
+		::Class_1_346D7AF1D5276E18* _fairyObject; // 0x350
+		::System::Boolean _isStart; // 0x358
+		::UnityEngine::UI::Image* _fullBtnImage; // 0x360
+		::System::Collections::Generic::List_1<::Class_1_CA0505FEE22A1EA9*>* _highLightObjects; // 0x368
+		::System::Collections::Generic::List_1<::Class_1_F542B7C6D777DFEB*>* highLightDynamicObjectInstances; // 0x370
+		::System::Boolean _sendEnd; // 0x378
+		::System::Boolean _isFailure; // 0x379
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::ConfigNewbie_NewbieStep* get_CurNewbieStep()
+		{
+			return ((::MoleMole::ConfigNewbie_NewbieStep*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_CURNEWBIESTEP_OFFSET))(this);
+		}
+
+		::System::Void StartNewLoop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_STARTNEWLOOP_OFFSET))(this);
+		}
+
+		::System::Void DisableRaycast()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_DISABLERAYCAST_OFFSET))(this);
+		}
+
+		::System::Void OnStateChange(::Class_0_16E4307DCC419505_139* last, ::Class_0_16E4307DCC419505_139* current)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_139*, ::Class_0_16E4307DCC419505_139*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONSTATECHANGE_OFFSET))(this, last, current);
+		}
+
+		::System::Void ChangeState(::Class_0_16E4307DCC41950C_24<::MoleMole::UINewbiePopWindowController*>* state)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC41950C_24<::MoleMole::UINewbiePopWindowController*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_CHANGESTATE_OFFSET))(this, state);
+		}
+
+		::System::Boolean TryGetTarget()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_TRYGETTARGET_OFFSET))(this);
+		}
+
+		::System::Void BindHighLightFail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_BINDHIGHLIGHTFAIL_OFFSET))(this);
+		}
+
+		::System::Void BindHighLight()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_BINDHIGHLIGHT_OFFSET))(this);
+		}
+
+		::System::Void CloseCircleEffect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_CLOSECIRCLEEFFECT_OFFSET))(this);
+		}
+
+		::System::Void OpenCircleEffect(::UnityEngine::Vector2 position, ::System::Single ratio)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_OPENCIRCLEEFFECT_OFFSET))(this, position, ratio);
+		}
+
+		::System::Void SetCircleRatio(::System::Single ratio)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_SETCIRCLERATIO_OFFSET))(this, ratio);
+		}
+
+		::UnityEngine::GameObject* GetBindTarget(::MoleMole::ConfigNewbie_TargetPath* targetPath)
+		{
+			return ((::UnityEngine::GameObject*(*)(::PVOID, ::MoleMole::ConfigNewbie_TargetPath*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GETBINDTARGET_OFFSET))(this, targetPath);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Boolean get_Active()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_ACTIVE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsAllowInputPass()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_ISALLOWINPUTPASS_OFFSET))(this);
+		}
+
+		::System::Boolean IsAllowInputPassByAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ISALLOWINPUTPASSBYACTION_OFFSET))(this, inputAction);
+		}
+
+		::Enum_3_F4705266FB2007C7 get_UICursorHideState()
+		{
+			return ((::Enum_3_F4705266FB2007C7(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_UICURSORHIDESTATE_OFFSET))(this);
+		}
+
+		::MoleMole::ConfigNewbie_NewbieGroup* GetRunningGroup()
+		{
+			return ((::MoleMole::ConfigNewbie_NewbieGroup*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GETRUNNINGGROUP_OFFSET))(this);
+		}
+
+		::System::Int32 GetStepIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GETSTEPINDEX_OFFSET))(this);
+		}
+
+		::System::Boolean HasFairyExcludeCtrl(::MoleMole::UIGeneralNewsBubbleRowWidgetController* ctrl)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::UIGeneralNewsBubbleRowWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HASFAIRYEXCLUDECTRL_OFFSET))(this, ctrl);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void GUIRootOnBlackEdgeAlphaChanged(::System::Int32 layer, ::System::Int32 count, ::System::Single alpha)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GUIROOTONBLACKEDGEALPHACHANGED_OFFSET))(this, layer, count, alpha);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void FinishCurrentNewbie(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_FINISHCURRENTNEWBIE_OFFSET))(this, args);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnInputActionPreUpdate(::System::Single deltaTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONINPUTACTIONPREUPDATE_OFFSET))(this, deltaTime);
+		}
+
+		::System::Void OnInputActionPostUpdate(::System::Collections::Generic::List_1<::MoleMole::InputActionEvent>* handledInputActions, ::System::Single deltaTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::MoleMole::InputActionEvent>*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONINPUTACTIONPOSTUPDATE_OFFSET))(this, handledInputActions, deltaTime);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Boolean get_SendOpenPopUpForNewBie()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GET_SENDOPENPOPUPFORNEWBIE_OFFSET))(this);
+		}
+
+		::System::Void ResetGuideData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_RESETGUIDEDATA_OFFSET))(this);
+		}
+
+		::System::Void OnNewbieTrigger(::System::Int32 newbieGroupTemplateID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONNEWBIETRIGGER_OFFSET))(this, newbieGroupTemplateID);
+		}
+
+		::System::Void GoNextStep()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GONEXTSTEP_OFFSET))(this);
+		}
+
+		::System::Void OnClickGoNext()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONCLICKGONEXT_OFFSET))(this);
+		}
+
+		::System::Void OnConsoleNext()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONCONSOLENEXT_OFFSET))(this);
+		}
+
+		::System::Void GoConsoleNextStep()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_GOCONSOLENEXTSTEP_OFFSET))(this);
+		}
+
+		::System::Void DoTriggerNextStep()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_DOTRIGGERNEXTSTEP_OFFSET))(this);
+		}
+
+		::System::Void CheckEndByCondition()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_CHECKENDBYCONDITION_OFFSET))(this);
+		}
+
+		::System::Void EndCurStepByCondition()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ENDCURSTEPBYCONDITION_OFFSET))(this);
+		}
+
+		::System::Void ForceTriggerNextStep()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_FORCETRIGGERNEXTSTEP_OFFSET))(this);
+		}
+
+		::System::Boolean IsConditionAchieve()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ISCONDITIONACHIEVE_OFFSET))(this);
+		}
+
+		::System::Void SetCurStep(::System::Int32 step)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_SETCURSTEP_OFFSET))(this, step);
+		}
+
+		::System::Void ExecCurNewbieStep()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_EXECCURNEWBIESTEP_OFFSET))(this);
+		}
+
+		::System::Void TriggerCurNewbieStep()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_TRIGGERCURNEWBIESTEP_OFFSET))(this);
+		}
+
+		::System::Void ConditionCallback(::Struct_2_0106C133B17575D7 context)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_0106C133B17575D7))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_CONDITIONCALLBACK_OFFSET))(this, context);
+		}
+
+		::System::Boolean HandleCurNewbieStep()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLECURNEWBIESTEP_OFFSET))(this);
+		}
+
+		::System::Void CheckButtonProtect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_CHECKBUTTONPROTECT_OFFSET))(this);
+		}
+
+		::System::Void HandleMask(::System::Boolean forceShow)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEMASK_OFFSET))(this, forceShow);
+		}
+
+		::System::Boolean HandleHighLights()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHLIGHTS_OFFSET))(this);
+		}
+
+		::System::Void HandleHighLight(::Class_1_F542B7C6D777DFEB* instance)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_F542B7C6D777DFEB*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHLIGHT_OFFSET))(this, instance);
+		}
+
+		::System::Void HandleHightLightGoNone(::Class_1_F542B7C6D777DFEB* instance)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_F542B7C6D777DFEB*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHTLIGHTGONONE_OFFSET))(this, instance);
+		}
+
+		::System::Void HandleHighLightScrollView(::Class_1_F542B7C6D777DFEB* instance)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_F542B7C6D777DFEB*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHLIGHTSCROLLVIEW_OFFSET))(this, instance);
+		}
+
+		::System::Void HandleHighLight_1(::MoleMole::ConfigNewbie_HighLightData* highLight)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigNewbie_HighLightData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHLIGHT_1_OFFSET))(this, highLight);
+		}
+
+		::System::Void HandleHighLightGo(::Class_1_A11CB4C08EF906E4_1* param)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_A11CB4C08EF906E4_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEHIGHLIGHTGO_OFFSET))(this, param);
+		}
+
+		::System::Void _HandleHighLight(::MoleMole::ConfigNewbie_HighLightData* highLight)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigNewbie_HighLightData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER__HANDLEHIGHLIGHT_OFFSET))(this, highLight);
+		}
+
+		::System::Void HandleFairy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_HANDLEFAIRY_OFFSET))(this);
+		}
+
+		::System::Void ReverseCurNewbieStep()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_REVERSECURNEWBIESTEP_OFFSET))(this);
+		}
+
+		::System::Void ReverseHighLights()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_REVERSEHIGHLIGHTS_OFFSET))(this);
+		}
+
+		::System::Void OnFullScreenBtnClicked()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONFULLSCREENBTNCLICKED_OFFSET))(this);
+		}
+
+		::Class_1_A11CB4C08EF906E4_1* ToParam(::MoleMole::ConfigNewbie_HighLightData* highLightData)
+		{
+			return ((::Class_1_A11CB4C08EF906E4_1*(*)(::PVOID, ::MoleMole::ConfigNewbie_HighLightData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_TOPARAM_OFFSET))(this, highLightData);
+		}
+
+		::System::Void SendEndNewbie()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_SENDENDNEWBIE_OFFSET))(this);
+		}
+
+		::System::Void OnHookWindowClosed(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ONHOOKWINDOWCLOSED_OFFSET))(this, args);
+		}
+
+		::System::Void EndNewbie()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER_ENDNEWBIE_OFFSET))(this);
+		}
+
+		::System::Void _OnUIOpen_b__31_0(::System::EventArgs* _)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER__ONUIOPEN_B__31_0_OFFSET))(this, _);
+		}
+
+		::System::Void _ReverseCurNewbieStep_g__ReverseMaskAndHighLights_70_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER__REVERSECURNEWBIESTEP_G__REVERSEMASKANDHIGHLIGHTS_70_0_OFFSET))(this);
+		}
+
+		::System::Boolean __base_get_IsAllowInputPass()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_GET_ISALLOWINPUTPASS_OFFSET))(this);
+		}
+
+		::Enum_3_F4705266FB2007C7 __base_get_UICursorHideState()
+		{
+			return ((::Enum_3_F4705266FB2007C7(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_GET_UICURSORHIDESTATE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsAllowInputPassByAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ISALLOWINPUTPASSBYACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEWBIEPOPWINDOWCONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

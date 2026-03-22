@@ -1,0 +1,70 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/HollowEntityConfig_CampType.h"
+#include "unitysdk/MoleMole/HollowEntityConfig_TeamRelationship.h"
+#include "unitysdk/System/Object.h"
+
+namespace MoleMole::Config { class HollowCampTypeConfig; }
+namespace MoleMole::Config { class HollowCampTypeConfig_CampTypeItem; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define CLASS_1_3B5D702A260F9C39_METHOD_1_0BE1846AC20D43BE_OFFSET UNITYSDK_OFFSET(0xBA88F20)
+#define CLASS_1_3B5D702A260F9C39_METHOD_1_3E372E1A00FA0CCA_OFFSET UNITYSDK_OFFSET(0xBA89160)
+#define CLASS_1_3B5D702A260F9C39_METHOD_1_91E9683AEFDA9918_OFFSET UNITYSDK_OFFSET(0xBA891C0)
+#define CLASS_1_3B5D702A260F9C39_METHOD_1_A8133AB06CB4BE88_OFFSET UNITYSDK_OFFSET(0xBA889B0)
+#define CLASS_1_3B5D702A260F9C39_METHOD_1_AA169839CB93802A_OFFSET UNITYSDK_OFFSET(0xBA88CA0)
+#define CLASS_1_3B5D702A260F9C39_METHOD_1_FDDC5A41F149A0CC_OFFSET UNITYSDK_OFFSET(0xBA88DE0)
+#define CLASS_1_3B5D702A260F9C39__CCTOR_OFFSET UNITYSDK_OFFSET(0xBA88970)
+
+inline static constexpr unsigned int Class_1_3B5D702A260F9C39_TypeDefinitionIndex = 64495;
+
+class Class_1_3B5D702A260F9C39 : public ::System::Object
+{
+public:
+	static ::MoleMole::Config::HollowCampTypeConfig_CampTypeItem** StaticGet_Field_1_1()
+	{
+		return (::MoleMole::Config::HollowCampTypeConfig_CampTypeItem**)Il2CppClass::FromTypeDefinitionIndex(Class_1_3B5D702A260F9C39_TypeDefinitionIndex)->GetStaticField(0x33E10);
+	}
+	static ::MoleMole::Config::HollowCampTypeConfig** StaticGet_Field_1_0()
+	{
+		return (::MoleMole::Config::HollowCampTypeConfig**)Il2CppClass::FromTypeDefinitionIndex(Class_1_3B5D702A260F9C39_TypeDefinitionIndex)->GetStaticField(0x33E18);
+	}
+
+	static ::System::Void _cctor()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_3B5D702A260F9C39__CCTOR_OFFSET))();
+	}
+
+	static ::MoleMole::HollowEntityConfig_TeamRelationship Method_1_A8133AB06CB4BE88(::MoleMole::HollowEntityConfig_CampType a1, ::MoleMole::HollowEntityConfig_CampType a2)
+	{
+		return ((::MoleMole::HollowEntityConfig_TeamRelationship(*)(::MoleMole::HollowEntityConfig_CampType, ::MoleMole::HollowEntityConfig_CampType))((::PBYTE)hIl2Cpp + CLASS_1_3B5D702A260F9C39_METHOD_1_A8133AB06CB4BE88_OFFSET))(a1, a2);
+	}
+
+	static ::System::Void Method_1_FDDC5A41F149A0CC(::System::Single a1, ::System::Action_1<::System::Single>* a2, ::System::Action_1<::System::String*>* a3, ::System::String* a4)
+	{
+		return ((::System::Void(*)(::System::Single, ::System::Action_1<::System::Single>*, ::System::Action_1<::System::String*>*, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_3B5D702A260F9C39_METHOD_1_FDDC5A41F149A0CC_OFFSET))(a1, a2, a3, a4);
+	}
+
+	static ::MoleMole::Config::HollowCampTypeConfig* Method_1_3E372E1A00FA0CCA()
+	{
+		return ((::MoleMole::Config::HollowCampTypeConfig*(*)())((::PBYTE)hIl2Cpp + CLASS_1_3B5D702A260F9C39_METHOD_1_3E372E1A00FA0CCA_OFFSET))();
+	}
+
+	static ::System::Collections::Generic::List_1<::MoleMole::HollowEntityConfig_CampType>* Method_1_91E9683AEFDA9918(::MoleMole::HollowEntityConfig_CampType a1, ::MoleMole::HollowEntityConfig_TeamRelationship a2)
+	{
+		return ((::System::Collections::Generic::List_1<::MoleMole::HollowEntityConfig_CampType>*(*)(::MoleMole::HollowEntityConfig_CampType, ::MoleMole::HollowEntityConfig_TeamRelationship))((::PBYTE)hIl2Cpp + CLASS_1_3B5D702A260F9C39_METHOD_1_91E9683AEFDA9918_OFFSET))(a1, a2);
+	}
+
+	static ::System::Void Method_1_AA169839CB93802A()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_3B5D702A260F9C39_METHOD_1_AA169839CB93802A_OFFSET))();
+	}
+
+	static ::System::Void Method_1_0BE1846AC20D43BE(::System::Boolean a1, ::System::Action* a2)
+	{
+		return ((::System::Void(*)(::System::Boolean, ::System::Action*))((::PBYTE)hIl2Cpp + CLASS_1_3B5D702A260F9C39_METHOD_1_0BE1846AC20D43BE_OFFSET))(a1, a2);
+	}
+};

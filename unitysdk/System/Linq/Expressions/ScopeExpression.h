@@ -2,18 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Linq/Expressions/BlockExpression.h"
 
+namespace System::Collections::Generic { template <typename T> class ICollection_1; }
 namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
 namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 namespace System::Linq::Expressions { class ParameterExpression; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_SCOPEEXPRESSION_GETORMAKEVARIABLES_OFFSET UNITYSDK_OFFSET(0x17D02380)
-#define SYSTEM_LINQ_EXPRESSIONS_SCOPEEXPRESSION_GET_VARIABLESLIST_OFFSET UNITYSDK_OFFSET(0x17D023C0)
-#define SYSTEM_LINQ_EXPRESSIONS_SCOPEEXPRESSION_REUSEORVALIDATEVARIABLES_OFFSET UNITYSDK_OFFSET(0x17D02300)
-#define SYSTEM_LINQ_EXPRESSIONS_SCOPEEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17D020C0)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEEXPRESSION_GETORMAKEVARIABLES_OFFSET UNITYSDK_OFFSET(0x19747450)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEEXPRESSION_GET_VARIABLESLIST_OFFSET UNITYSDK_OFFSET(0x19747490)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEEXPRESSION_REUSEORVALIDATEVARIABLES_OFFSET UNITYSDK_OFFSET(0x197474A0)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEEXPRESSION_SAMEVARIABLES_OFFSET UNITYSDK_OFFSET(0x19747400)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x197473A0)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int ScopeExpression_TypeDefinitionIndex = 3174;
+	inline static constexpr unsigned int ScopeExpression_TypeDefinitionIndex = 4437;
 
 	class ScopeExpression : public ::System::Linq::Expressions::BlockExpression
 	{
@@ -23,6 +25,11 @@ namespace System::Linq::Expressions
 		::System::Void _ctor(::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::ParameterExpression*>* variables)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::ParameterExpression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_SCOPEEXPRESSION__CTOR_OFFSET))(this, variables);
+		}
+
+		::System::Boolean SameVariables(::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::ParameterExpression*>* variables)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::ParameterExpression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_SCOPEEXPRESSION_SAMEVARIABLES_OFFSET))(this, variables);
 		}
 
 		::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::ParameterExpression*>* GetOrMakeVariables()

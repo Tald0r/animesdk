@@ -5,24 +5,24 @@
 namespace Mono::Globalization::Unicode { class Level2Map; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define MONO_GLOBALIZATION_UNICODE_MSCOMPATUNICODETABLE___C__BUILDTAILORINGTABLES_B__17_0_OFFSET UNITYSDK_OFFSET(0x15AB1B70)
-#define MONO_GLOBALIZATION_UNICODE_MSCOMPATUNICODETABLE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x15AB1B30)
-#define MONO_GLOBALIZATION_UNICODE_MSCOMPATUNICODETABLE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x15AB1B60)
+#define MONO_GLOBALIZATION_UNICODE_MSCOMPATUNICODETABLE___C__BUILDTAILORINGTABLES_B__17_0_OFFSET UNITYSDK_OFFSET(0x19AC4170)
+#define MONO_GLOBALIZATION_UNICODE_MSCOMPATUNICODETABLE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x19AC4130)
+#define MONO_GLOBALIZATION_UNICODE_MSCOMPATUNICODETABLE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x19AC4160)
 
 namespace Mono::Globalization::Unicode
 {
-	inline static constexpr unsigned int MSCompatUnicodeTable___c_TypeDefinitionIndex = 36;
+	inline static constexpr unsigned int MSCompatUnicodeTable___c_TypeDefinitionIndex = 39;
 
 	class MSCompatUnicodeTable___c : public ::System::Object
 	{
 	public:
 		static ::System::Comparison_1<::Mono::Globalization::Unicode::Level2Map*>** StaticGet___9__17_0()
 		{
-			return (::System::Comparison_1<::Mono::Globalization::Unicode::Level2Map*>**)Il2CppClass::FromTypeDefinitionIndex(MSCompatUnicodeTable___c_TypeDefinitionIndex)->GetStaticField(0x3400);
+			return (::System::Comparison_1<::Mono::Globalization::Unicode::Level2Map*>**)Il2CppClass::FromTypeDefinitionIndex(MSCompatUnicodeTable___c_TypeDefinitionIndex)->GetStaticField(0xF80);
 		}
 		static ::Mono::Globalization::Unicode::MSCompatUnicodeTable___c** StaticGet___9()
 		{
-			return (::Mono::Globalization::Unicode::MSCompatUnicodeTable___c**)Il2CppClass::FromTypeDefinitionIndex(MSCompatUnicodeTable___c_TypeDefinitionIndex)->GetStaticField(0x3408);
+			return (::Mono::Globalization::Unicode::MSCompatUnicodeTable___c**)Il2CppClass::FromTypeDefinitionIndex(MSCompatUnicodeTable___c_TypeDefinitionIndex)->GetStaticField(0xF88);
 		}
 
 		static ::System::Void _cctor()

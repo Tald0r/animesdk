@@ -6,14 +6,13 @@
 namespace System { class String; }
 namespace System { class Type; }
 namespace System::Xml { class IXmlNamespaceResolver; }
-namespace System::Xml::Schema { class XmlSchemaType; }
 
-#define SYSTEM_XML_XPATH_XPATHITEM_VALUEAS_OFFSET UNITYSDK_OFFSET(0x17DDB5F0)
-#define SYSTEM_XML_XPATH_XPATHITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x17DDB610)
+#define SYSTEM_XML_XPATH_XPATHITEM_VALUEAS_OFFSET UNITYSDK_OFFSET(0x19E66FA0)
+#define SYSTEM_XML_XPATH_XPATHITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x19E66FC0)
 
 namespace System::Xml::XPath
 {
-	inline static constexpr unsigned int XPathItem_TypeDefinitionIndex = 1957;
+	inline static constexpr unsigned int XPathItem_TypeDefinitionIndex = 1847;
 
 	class XPathItem : public ::System::Object
 	{

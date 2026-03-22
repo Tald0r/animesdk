@@ -3,16 +3,20 @@
 #include "unitysdk/System/Security/Cryptography/AsnEncodedData.h"
 
 namespace System { class String; }
+namespace System::Security::Cryptography { class Oid; }
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION_COPYFROM_OFFSET UNITYSDK_OFFSET(0x17F24B50)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION_FORMATUNKOWNDATA_OFFSET UNITYSDK_OFFSET(0x17F24A00)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION_GET_CRITICAL_OFFSET UNITYSDK_OFFSET(0x17F24B30)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION_SET_CRITICAL_OFFSET UNITYSDK_OFFSET(0x17F24B40)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17F240A0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION_COPYFROM_OFFSET UNITYSDK_OFFSET(0x18E4F540)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION_FORMATUNKOWNDATA_OFFSET UNITYSDK_OFFSET(0x18E4F610)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION_GET_CRITICAL_OFFSET UNITYSDK_OFFSET(0x18E4F520)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION_SET_CRITICAL_OFFSET UNITYSDK_OFFSET(0x18E4F530)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18E4F320)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x18E4F410)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x18E4F500)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION__CTOR_OFFSET UNITYSDK_OFFSET(0x18E4F310)
 
 namespace System::Security::Cryptography::X509Certificates
 {
-	inline static constexpr unsigned int X509Extension_TypeDefinitionIndex = 2690;
+	inline static constexpr unsigned int X509Extension_TypeDefinitionIndex = 3205;
 
 	class X509Extension : public ::System::Security::Cryptography::AsnEncodedData
 	{
@@ -22,6 +26,21 @@ namespace System::Security::Cryptography::X509Certificates
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::Security::Cryptography::AsnEncodedData* encodedExtension, ::System::Boolean critical)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::AsnEncodedData*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION__CTOR_1_OFFSET))(this, encodedExtension, critical);
+		}
+
+		::System::Void _ctor_2(::System::Security::Cryptography::Oid* oid, ::Il2CppArray<::System::Byte>* rawData, ::System::Boolean critical)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::Oid*, ::Il2CppArray<::System::Byte>*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION__CTOR_2_OFFSET))(this, oid, rawData, critical);
+		}
+
+		::System::Void _ctor_3(::System::String* oid, ::Il2CppArray<::System::Byte>* rawData, ::System::Boolean critical)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::Il2CppArray<::System::Byte>*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509EXTENSION__CTOR_3_OFFSET))(this, oid, rawData, critical);
 		}
 
 		::System::Boolean get_Critical()

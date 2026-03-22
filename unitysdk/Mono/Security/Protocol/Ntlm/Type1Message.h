@@ -4,30 +4,48 @@
 
 namespace System { class String; }
 
-#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_DECODE_OFFSET UNITYSDK_OFFSET(0x15A92CC0)
-#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_GETBYTES_OFFSET UNITYSDK_OFFSET(0x15A92E80)
-#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_SET_DOMAIN_OFFSET UNITYSDK_OFFSET(0x15A92BC0)
-#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_SET_HOST_OFFSET UNITYSDK_OFFSET(0x15A92C40)
-#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x15A92B50)
+#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_DECODE_OFFSET UNITYSDK_OFFSET(0x1AFEE540)
+#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_GETBYTES_OFFSET UNITYSDK_OFFSET(0x1AFEE820)
+#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_GET_DOMAIN_OFFSET UNITYSDK_OFFSET(0x1AFEE700)
+#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_GET_HOST_OFFSET UNITYSDK_OFFSET(0x1AFEE790)
+#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_SET_DOMAIN_OFFSET UNITYSDK_OFFSET(0x1AFEE710)
+#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_SET_HOST_OFFSET UNITYSDK_OFFSET(0x1AFEE7A0)
+#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AFEE4D0)
+#define MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFEE460)
 
 namespace Mono::Security::Protocol::Ntlm
 {
-	inline static constexpr unsigned int Type1Message_TypeDefinitionIndex = 2261;
+	inline static constexpr unsigned int Type1Message_TypeDefinitionIndex = 2422;
 
 	class Type1Message : public ::Mono::Security::Protocol::Ntlm::MessageBase
 	{
 	public:
-		::System::String* _domain; // 0x18
-		::System::String* _host; // 0x20
+		::System::String* _host; // 0x18
+		::System::String* _domain; // 0x20
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE__CTOR_OFFSET))(this);
 		}
 
+		::System::Void _ctor_1(::Il2CppArray<::System::Byte>* message)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE__CTOR_1_OFFSET))(this, message);
+		}
+
+		::System::String* get_Domain()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_GET_DOMAIN_OFFSET))(this);
+		}
+
 		::System::Void set_Domain(::System::String* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_SET_DOMAIN_OFFSET))(this, value);
+		}
+
+		::System::String* get_Host()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_PROTOCOL_NTLM_TYPE1MESSAGE_GET_HOST_OFFSET))(this);
 		}
 
 		::System::Void set_Host(::System::String* value)

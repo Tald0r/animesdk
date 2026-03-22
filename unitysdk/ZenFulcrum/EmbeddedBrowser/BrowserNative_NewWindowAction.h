@@ -3,7 +3,7 @@
 
 namespace ZenFulcrum::EmbeddedBrowser
 {
-	inline static constexpr unsigned int BrowserNative_NewWindowAction_TypeDefinitionIndex = 29558;
+	inline static constexpr unsigned int BrowserNative_NewWindowAction_TypeDefinitionIndex = 29539;
 
 	enum class BrowserNative_NewWindowAction : ::System::Int32
 	{

@@ -1,0 +1,15 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+namespace Foundation::Container
+{
+	inline static constexpr unsigned int NativeBitArrayView_1_InlineData_TypeDefinitionIndex = 8872;
+
+	template <typename TUserData>
+	struct NativeBitArrayView_1_InlineData
+	{
+		TUserData Data; // 0x0
+		::System::Int64 Length; // 0x0
+	};
+}

@@ -4,22 +4,16 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_HELPURLATTRIBUTE_GET_URL_OFFSET UNITYSDK_OFFSET(0x181FBA00)
-#define UNITYENGINE_HELPURLATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x181FB9F0)
+#define UNITYENGINE_HELPURLATTRIBUTE_GET_URL_OFFSET UNITYSDK_OFFSET(0x19E39720)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int HelpURLAttribute_TypeDefinitionIndex = 4094;
+	inline static constexpr unsigned int HelpURLAttribute_TypeDefinitionIndex = 5329;
 
 	class HelpURLAttribute : public ::System::Attribute
 	{
 	public:
 		::System::String* m_Url; // 0x10
-
-		::System::Void _ctor(::System::String* url)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_HELPURLATTRIBUTE__CTOR_OFFSET))(this, url);
-		}
 
 		::System::String* get_URL()
 		{

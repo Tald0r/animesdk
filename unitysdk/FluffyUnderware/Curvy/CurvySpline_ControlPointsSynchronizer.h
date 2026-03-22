@@ -1,0 +1,93 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FluffyUnderware/Curvy/CurvySpline_ControlPointsSynchronizer_SynchronizationRequest.h"
+#include "unitysdk/System/Object.h"
+
+namespace FluffyUnderware::Curvy { class CurvySpline; }
+namespace System { class String; }
+
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_ASSERTISNOTPROCESSING_OFFSET UNITYSDK_OFFSET(0x1AE82920)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_CANCELREQUESTS_OFFSET UNITYSDK_OFFSET(0x1AE826C0)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_DEBUGLOG_OFFSET UNITYSDK_OFFSET(0x1AE827F0)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_GET_CURRENTREQUEST_OFFSET UNITYSDK_OFFSET(0x1AE823A0)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_LOGIGNOREDREQUEST_OFFSET UNITYSDK_OFFSET(0x1AE82870)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_PROCESSREQUESTS_OFFSET UNITYSDK_OFFSET(0x1AE82410)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_REQUESTHIERARCHYTOSPLINE_OFFSET UNITYSDK_OFFSET(0x1AE823F0)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_REQUESTSPLINETOHIERARCHY_OFFSET UNITYSDK_OFFSET(0x1AE823D0)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_SET_CURRENTREQUEST_OFFSET UNITYSDK_OFFSET(0x1AE823B0)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_SYNCHRONIZEHIERARCHYTOSPLINE_OFFSET UNITYSDK_OFFSET(0x1AE824F0)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_SYNCHRONIZESPLINETOHIERARCHY_OFFSET UNITYSDK_OFFSET(0x1AE826D0)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE823C0)
+
+namespace FluffyUnderware::Curvy
+{
+	inline static constexpr unsigned int CurvySpline_ControlPointsSynchronizer_TypeDefinitionIndex = 35650;
+
+	class CurvySpline_ControlPointsSynchronizer : public ::System::Object
+	{
+	public:
+		::FluffyUnderware::Curvy::CurvySpline* spline; // 0x10
+		::System::Boolean processing; // 0x18
+		::FluffyUnderware::Curvy::CurvySpline_ControlPointsSynchronizer_SynchronizationRequest _CurrentRequest_k__BackingField; // 0x1C
+
+		::System::Void _ctor(::FluffyUnderware::Curvy::CurvySpline* spline)
+		{
+			return ((::System::Void(*)(::PVOID, ::FluffyUnderware::Curvy::CurvySpline*))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER__CTOR_OFFSET))(this, spline);
+		}
+
+		::FluffyUnderware::Curvy::CurvySpline_ControlPointsSynchronizer_SynchronizationRequest get_CurrentRequest()
+		{
+			return ((::FluffyUnderware::Curvy::CurvySpline_ControlPointsSynchronizer_SynchronizationRequest(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_GET_CURRENTREQUEST_OFFSET))(this);
+		}
+
+		::System::Void set_CurrentRequest(::FluffyUnderware::Curvy::CurvySpline_ControlPointsSynchronizer_SynchronizationRequest value)
+		{
+			return ((::System::Void(*)(::PVOID, ::FluffyUnderware::Curvy::CurvySpline_ControlPointsSynchronizer_SynchronizationRequest))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_SET_CURRENTREQUEST_OFFSET))(this, value);
+		}
+
+		::System::Void RequestSplineToHierarchy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_REQUESTSPLINETOHIERARCHY_OFFSET))(this);
+		}
+
+		::System::Void RequestHierarchyToSpline()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_REQUESTHIERARCHYTOSPLINE_OFFSET))(this);
+		}
+
+		::System::Void ProcessRequests()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_PROCESSREQUESTS_OFFSET))(this);
+		}
+
+		::System::Void CancelRequests()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_CANCELREQUESTS_OFFSET))(this);
+		}
+
+		::System::Void SynchronizeHierarchyToSpline()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_SYNCHRONIZEHIERARCHYTOSPLINE_OFFSET))(this);
+		}
+
+		::System::Void SynchronizeSplineToHierarchy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_SYNCHRONIZESPLINETOHIERARCHY_OFFSET))(this);
+		}
+
+		static ::System::Void DebugLog(::System::String* message)
+		{
+			return ((::System::Void(*)(::System::String*))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_DEBUGLOG_OFFSET))(message);
+		}
+
+		static ::System::Void LogIgnoredRequest()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_LOGIGNOREDREQUEST_OFFSET))();
+		}
+
+		::System::Void AssertIsNotProcessing()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_CURVYSPLINE_CONTROLPOINTSSYNCHRONIZER_ASSERTISNOTPROCESSING_OFFSET))(this);
+		}
+	};
+}

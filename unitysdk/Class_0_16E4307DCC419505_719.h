@@ -1,11 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/Client/NewsTickerViewportCheckResult.h"
-#include "unitysdk/UnityEngine/Vector2.h"
 
-namespace UnityEngine { class RectTransform; }
+namespace UnityEngine { class GameObject; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_719_TypeDefinitionIndex = 54786;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_719_TypeDefinitionIndex = 77385;
 
 class Class_0_16E4307DCC419505_719
 {

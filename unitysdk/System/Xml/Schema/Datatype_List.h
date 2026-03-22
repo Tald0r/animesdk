@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/Datatype_anySimpleType.h"
+#include "unitysdk/System/Xml/Schema/RestrictionFlags.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 #include "unitysdk/System/Xml/XmlTokenizedType.h"
 
@@ -15,19 +16,21 @@ namespace System::Xml::Schema { class FacetsChecker; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_COMPARE_OFFSET UNITYSDK_OFFSET(0x17D67560)
-#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D67130)
-#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x17D67B60)
-#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D67B00)
-#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_TOKENIZEDTYPE_OFFSET UNITYSDK_OFFSET(0x17D67B30)
-#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D67BC0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D67AD0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x17D67BF0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_LIST__CTOR_OFFSET UNITYSDK_OFFSET(0x17D66BC0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_COMPARE_OFFSET UNITYSDK_OFFSET(0x19455720)
+#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x194552D0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x19455D20)
+#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x19455CC0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_TOKENIZEDTYPE_OFFSET UNITYSDK_OFFSET(0x19455CF0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x19455D80)
+#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_VALIDRESTRICTIONFLAGS_OFFSET UNITYSDK_OFFSET(0x19455DB0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x19455C90)
+#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_TRYPARSEVALUE_1_OFFSET UNITYSDK_OFFSET(0x194564F0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_LIST_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x19455DC0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_LIST__CTOR_OFFSET UNITYSDK_OFFSET(0x19455670)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_List_TypeDefinitionIndex = 2074;
+	inline static constexpr unsigned int Datatype_List_TypeDefinitionIndex = 1989;
 
 	class Datatype_List : public ::System::Xml::Schema::Datatype_anySimpleType
 	{
@@ -75,9 +78,19 @@ namespace System::Xml::Schema
 			return ((::System::Xml::Schema::XmlTypeCode(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_TYPECODE_OFFSET))(this);
 		}
 
-		::System::Exception* TryParseValue(::System::String* s, ::System::Xml::XmlNameTable* nameTable, ::System::Xml::IXmlNamespaceResolver* nsmgr, ::System::Object*& typedValue)
+		::System::Xml::Schema::RestrictionFlags get_ValidRestrictionFlags()
 		{
-			return ((::System::Exception*(*)(::PVOID, ::System::String*, ::System::Xml::XmlNameTable*, ::System::Xml::IXmlNamespaceResolver*, ::System::Object*&))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_LIST_TRYPARSEVALUE_OFFSET))(this, s, nameTable, nsmgr, typedValue);
+			return ((::System::Xml::Schema::RestrictionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_LIST_GET_VALIDRESTRICTIONFLAGS_OFFSET))(this);
+		}
+
+		::System::Exception* TryParseValue(::System::Object* value, ::System::Xml::XmlNameTable* nameTable, ::System::Xml::IXmlNamespaceResolver* namespaceResolver, ::System::Object*& typedValue)
+		{
+			return ((::System::Exception*(*)(::PVOID, ::System::Object*, ::System::Xml::XmlNameTable*, ::System::Xml::IXmlNamespaceResolver*, ::System::Object*&))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_LIST_TRYPARSEVALUE_OFFSET))(this, value, nameTable, namespaceResolver, typedValue);
+		}
+
+		::System::Exception* TryParseValue_1(::System::String* s, ::System::Xml::XmlNameTable* nameTable, ::System::Xml::IXmlNamespaceResolver* nsmgr, ::System::Object*& typedValue)
+		{
+			return ((::System::Exception*(*)(::PVOID, ::System::String*, ::System::Xml::XmlNameTable*, ::System::Xml::IXmlNamespaceResolver*, ::System::Object*&))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_LIST_TRYPARSEVALUE_1_OFFSET))(this, s, nameTable, nsmgr, typedValue);
 		}
 	};
 }

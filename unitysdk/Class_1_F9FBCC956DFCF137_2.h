@@ -1,27 +1,26 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/FixPoint.h"
 #include "unitysdk/System/Object.h"
 
-class Class_1_BD800F5B29A08E1F;
+class Class_1_F50B5EAC0B6702FB;
 
-#define CLASS_1_F9FBCC956DFCF137_2_METHOD_1_CE1FB3C3C4E44EF4_OFFSET UNITYSDK_OFFSET(0xD1FA1C0)
-#define CLASS_1_F9FBCC956DFCF137_2__CTOR_OFFSET UNITYSDK_OFFSET(0xD1FA1B0)
+#define CLASS_1_F9FBCC956DFCF137_2_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xADC4210)
+#define CLASS_1_F9FBCC956DFCF137_2__CTOR_OFFSET UNITYSDK_OFFSET(0xADC4200)
 
-inline static constexpr unsigned int Class_1_F9FBCC956DFCF137_2_TypeDefinitionIndex = 42395;
+inline static constexpr unsigned int Class_1_F9FBCC956DFCF137_2_TypeDefinitionIndex = 67513;
 
 class Class_1_F9FBCC956DFCF137_2 : public ::System::Object
 {
 public:
-	::Class_1_BD800F5B29A08E1F* Field_1_0; // 0x10
+	::Class_1_F50B5EAC0B6702FB* Field_1_0; // 0x10
 
-	::System::Void _ctor(::Class_1_BD800F5B29A08E1F* a1)
+	::System::Void _ctor(::Class_1_F50B5EAC0B6702FB* a1)
 	{
-		return ((::System::Void(*)(::PVOID, ::Class_1_BD800F5B29A08E1F*))((::PBYTE)hIl2Cpp + CLASS_1_F9FBCC956DFCF137_2__CTOR_OFFSET))(this, a1);
+		return ((::System::Void(*)(::PVOID, ::Class_1_F50B5EAC0B6702FB*))((::PBYTE)hIl2Cpp + CLASS_1_F9FBCC956DFCF137_2__CTOR_OFFSET))(this, a1);
 	}
 
-	::RPG::GameCore::FixPoint Method_1_CE1FB3C3C4E44EF4()
+	::System::Void Method_1_CA373AA1C7054598()
 	{
-		return ((::RPG::GameCore::FixPoint(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_F9FBCC956DFCF137_2_METHOD_1_CE1FB3C3C4E44EF4_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_F9FBCC956DFCF137_2_METHOD_1_CA373AA1C7054598_OFFSET))(this);
 	}
 };

@@ -4,10 +4,11 @@
 
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
+namespace System::Runtime::CompilerServices { template <typename T> class TrueReadOnlyCollection_1; }
 
 namespace System::Dynamic::Utils
 {
-	inline static constexpr unsigned int CollectionExtensions_TypeDefinitionIndex = 3660;
+	inline static constexpr unsigned int CollectionExtensions_TypeDefinitionIndex = 5013;
 
 	class CollectionExtensions : public ::System::Object
 	{

@@ -1,0 +1,92 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_4994931DD1E6D64C;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBED2630)
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBED26D0)
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBED24E0)
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBED2580)
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_REMOVETASKNEWDOTNOTIFICATION_OFFSET UNITYSDK_OFFSET(0xBED2DD0)
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_SETBPREWARDITEMICON_OFFSET UNITYSDK_OFFSET(0xBED27B0)
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_SETTASKNEWDOTNOTIFICATION_OFFSET UNITYSDK_OFFSET(0xBED2C50)
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBED2EA0)
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBED2ED0)
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBED2F40)
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBED2FC0)
+#define MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBED3020)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBPTaskRewardRowItemWidgetController_TypeDefinitionIndex = 37678;
+
+	class UIBPTaskRewardRowItemWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_4994931DD1E6D64C* _view; // 0x2A0
+		::System::Int32 refItemID; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetBPRewardItemIcon(::System::Int32 itemID, ::System::Int32 num)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_SETBPREWARDITEMICON_OFFSET))(this, itemID, num);
+		}
+
+		::System::Void SetTaskNewDotNotification(::System::UInt32 taskID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_SETTASKNEWDOTNOTIFICATION_OFFSET))(this, taskID);
+		}
+
+		::System::Void RemoveTaskNewDotNotification()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER_REMOVETASKNEWDOTNOTIFICATION_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPTASKREWARDROWITEMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

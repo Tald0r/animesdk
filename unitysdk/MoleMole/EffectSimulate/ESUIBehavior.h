@@ -1,0 +1,63 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_17B78A87EAE1DCED.h"
+#include "unitysdk/MoleMole/EffectSimulate/ESLoopable.h"
+
+namespace MoleMole::EffectSimulate { class NESUIDataCache; }
+namespace System { class String; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_4272BE5198E6F216_OFFSET UNITYSDK_OFFSET(0x6E0B760)
+#define MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_49AC00594530B714_1_OFFSET UNITYSDK_OFFSET(0x6E0B770)
+#define MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_49AC00594530B714_OFFSET UNITYSDK_OFFSET(0x6E0B460)
+#define MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_818FDD7DE72C3221_OFFSET UNITYSDK_OFFSET(0x6E0B5C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_B8746CF4034D9E80_OFFSET UNITYSDK_OFFSET(0x6E0B4C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_DA1BF2C227DC3D86_OFFSET UNITYSDK_OFFSET(0x6E0B7D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR__CTOR_OFFSET UNITYSDK_OFFSET(0x6E0B6F0)
+
+namespace MoleMole::EffectSimulate
+{
+	inline static constexpr unsigned int ESUIBehavior_TypeDefinitionIndex = 43193;
+
+	class ESUIBehavior : public ::MoleMole::EffectSimulate::ESLoopable
+	{
+	public:
+		// static const ::System::Int32 DRAW_ORDER = 0x14; // 0x0
+		::MoleMole::EffectSimulate::NESUIDataCache* m_stUIDataCache; // 0x58
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_17B78A87EAE1DCED Method_3_49AC00594530B714()
+		{
+			return ((::Enum_3_17B78A87EAE1DCED(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_49AC00594530B714_OFFSET))(this);
+		}
+
+		::System::Void Method_3_B8746CF4034D9E80(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_B8746CF4034D9E80_OFFSET))(this, a1);
+		}
+
+		::System::String* Method_3_818FDD7DE72C3221()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_818FDD7DE72C3221_OFFSET))(this);
+		}
+
+		::System::Void Method_3_4272BE5198E6F216(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_4272BE5198E6F216_OFFSET))(this, a1);
+		}
+
+		::Enum_3_17B78A87EAE1DCED Method_3_49AC00594530B714_1()
+		{
+			return ((::Enum_3_17B78A87EAE1DCED(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_49AC00594530B714_1_OFFSET))(this);
+		}
+
+		::System::String* Method_3_DA1BF2C227DC3D86()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESUIBEHAVIOR_METHOD_3_DA1BF2C227DC3D86_OFFSET))(this);
+		}
+	};
+}

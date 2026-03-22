@@ -4,11 +4,11 @@
 
 namespace System { class Type; }
 
-#define UNITYENGINE_RENDERING_HLSLARRAY__CTOR_OFFSET UNITYSDK_OFFSET(0x180D05F0)
+#define UNITYENGINE_RENDERING_HLSLARRAY__CTOR_OFFSET UNITYSDK_OFFSET(0x184406E0)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int HLSLArray_TypeDefinitionIndex = 27127;
+	inline static constexpr unsigned int HLSLArray_TypeDefinitionIndex = 9568;
 
 	class HLSLArray : public ::System::Attribute
 	{

@@ -1,0 +1,161 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_0_16E4307DCC419505_422;
+class Class_1_52BC70FDA339CCD0;
+class Class_2_60638234271CCDB8_77;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UITrickTutorialDialongContext; }
+namespace MoleMole { class UITutorialVideoPanelWidgetController; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xCC2D470)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_INITAVATAR_OFFSET UNITYSDK_OFFSET(0xCC2DCF0)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_INITBABELSKILLDESC_OFFSET UNITYSDK_OFFSET(0xCC2D9C0)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_INITVIDEOBTN_OFFSET UNITYSDK_OFFSET(0xCC2CAE0)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONCLICKNEXT_OFFSET UNITYSDK_OFFSET(0xCC2D3D0)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONCLICKPRE_OFFSET UNITYSDK_OFFSET(0xCC2D350)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONCLICKTUTORIALSKILL_OFFSET UNITYSDK_OFFSET(0xCC2E710)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xCC2E0C0)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xCC2D870)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xCC2E160)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCC2D480)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xCC2D7C0)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_OPENROLEDETAIL_OFFSET UNITYSDK_OFFSET(0xCC2E1F0)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_REFRESHCURRENTTUTORIAL_OFFSET UNITYSDK_OFFSET(0xCC2CE30)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_REFRESHSWITCHDESCGROUP_OFFSET UNITYSDK_OFFSET(0xCC2CD40)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xCC2E7D0)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xCC2E7E0)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xCC2E850)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xCC2E860)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCC2E870)
+#define MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xCC2E880)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBabeltowerBattleDialogPopWindowController_TypeDefinitionIndex = 46818;
+
+	class UIBabeltowerBattleDialogPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::MoleMole::UITutorialVideoPanelWidgetController* tutorialVideoPanel; // 0x2F8
+		::System::Int32 groupIndex; // 0x300
+		::Class_2_60638234271CCDB8_77* _view; // 0x308
+		::Class_0_16E4307DCC419505_422* TutorialGetter; // 0x310
+		::System::Int32 towerid; // 0x318
+		::System::Collections::Generic::List_1<::System::UInt32>* avatarList; // 0x320
+		::System::Collections::Generic::List_1<::Class_1_52BC70FDA339CCD0*>* groupList; // 0x328
+		::Class_1_52BC70FDA339CCD0* currentGroup; // 0x330
+		::System::Int32 InitIndex; // 0x338
+		::System::Boolean isInit; // 0x33C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void InitVideoBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_INITVIDEOBTN_OFFSET))(this);
+		}
+
+		::System::Void RefreshSwitchDescGroup()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_REFRESHSWITCHDESCGROUP_OFFSET))(this);
+		}
+
+		::System::Void RefreshCurrentTutorial()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_REFRESHCURRENTTUTORIAL_OFFSET))(this);
+		}
+
+		::System::Void OnClickPre()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONCLICKPRE_OFFSET))(this);
+		}
+
+		::System::Void OnClickNext()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONCLICKNEXT_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitBabelSkillDesc(::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_1_52BC70FDA339CCD0*>* groupDict, ::MoleMole::UITrickTutorialDialongContext* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_1_52BC70FDA339CCD0*>*, ::MoleMole::UITrickTutorialDialongContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_INITBABELSKILLDESC_OFFSET))(this, groupDict, context);
+		}
+
+		::System::Void OpenRoleDetail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_OPENROLEDETAIL_OFFSET))(this);
+		}
+
+		::System::Void InitAvatar()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_INITAVATAR_OFFSET))(this);
+		}
+
+		::System::Void OnClickTutorialSkill(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER_ONCLICKTUTORIALSKILL_OFFSET))(this, index);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERBATTLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

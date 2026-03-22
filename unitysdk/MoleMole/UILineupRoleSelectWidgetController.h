@@ -1,0 +1,491 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_1CC0E2699D5FB1A6_1_Class_2_37D3DE03A9F27246_Enum_3_C8E5B7E08211DD2C.h"
+#include "unitysdk/Enum_3_74604EE93A89573F_1.h"
+#include "unitysdk/Enum_3_7609C87F8335DE37_4.h"
+#include "unitysdk/Enum_3_A3CFF9D0B4DAD45E.h"
+#include "unitysdk/Enum_3_D51CB1582D6C6E9A.h"
+#include "unitysdk/MoleMole/UILineupRoleSelectWidgetController_FadeState.h"
+#include "unitysdk/MoleMole/UILineupRoleSelectWidgetController_RoleBGColor.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_B6BE0E422E1288EE.h"
+
+class Class_2_104EA16A1BE40F83;
+class Class_2_1CC0E2699D5FB1A6_1;
+class Class_2_60DDD9C206686F44;
+class Class_2_A8F5ABF31E066ED4;
+class Class_2_D89CCC627A66D0AD;
+class MonoUILoopBGText;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UILineupRoleSelectWidgetController_AvatarRT; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace UnityEngine { class Animation; }
+namespace UnityEngine { class AnimationState; }
+namespace UnityEngine { class CanvasGroup; }
+namespace UnityEngine { class Material; }
+
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ACTIVEAVATARMODEL_OFFSET UNITYSDK_OFFSET(0x92A3FB0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_APPLYROLEIMAGETEXTURE_OFFSET UNITYSDK_OFFSET(0x92A3BF0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_APPLYROLETEXTURE_OFFSET UNITYSDK_OFFSET(0x92A0E30)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_BUILDMODEL_OFFSET UNITYSDK_OFFSET(0x92A3B40)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ENABLEAVATARRTCAMERA_OFFSET UNITYSDK_OFFSET(0x92A4210)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ENABLEAVATARRT_OFFSET UNITYSDK_OFFSET(0x92A4140)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GETANIMSTATE_OFFSET UNITYSDK_OFFSET(0x929F150)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GETLOCKINBATTLETOGGLE_OFFSET UNITYSDK_OFFSET(0x92A0A60)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GETSELECTBUTTON_OFFSET UNITYSDK_OFFSET(0x92A09E0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GETWAITANIMNORMALIZEDTIME_OFFSET UNITYSDK_OFFSET(0x929F030)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_INDEX_OFFSET UNITYSDK_OFFSET(0x929FF90)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_ISROLEIMAGEFADEOUTCOMPLETE_OFFSET UNITYSDK_OFFSET(0x92A2280)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_ISROLEIMAGEFADING_OFFSET UNITYSDK_OFFSET(0x92A21E0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_MODELAVATAR_OFFSET UNITYSDK_OFFSET(0x929FF70)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_ROLEIMAGEFADING_OFFSET UNITYSDK_OFFSET(0x929FF20)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_RTSTATE_OFFSET UNITYSDK_OFFSET(0x929FF50)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_INTERNALPLAYMATCHINGANIM_OFFSET UNITYSDK_OFFSET(0x929EE80)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_INTERNALSTOPMATCHINGANIM_OFFSET UNITYSDK_OFFSET(0x929E230)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ISSELECTABLE_OFFSET UNITYSDK_OFFSET(0x92A1000)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x92A08E0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_LERPBGCOLORBYALPHA_OFFSET UNITYSDK_OFFSET(0x92A1C10)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_LOADPLAYERICON_OFFSET UNITYSDK_OFFSET(0x929FD90)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x92A0560)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x92A0600)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x92A0720)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x92A0030)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x92A04B0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_PLAYANIMLOOP_OFFSET UNITYSDK_OFFSET(0x929F770)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_PLAYFADEANIMINTERNAL_OFFSET UNITYSDK_OFFSET(0x92A1F00)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_PLAYMATCHINGANIM_OFFSET UNITYSDK_OFFSET(0x929EE00)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_PLAYROLEIMAGEFADEINANIM_OFFSET UNITYSDK_OFFSET(0x92A1E90)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_PLAYROLEIMAGEFADEOUTANIM_OFFSET UNITYSDK_OFFSET(0x92A2160)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHAVATARINFO_OFFSET UNITYSDK_OFFSET(0x92A23E0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHAVATARLEVEL_OFFSET UNITYSDK_OFFSET(0x92A2CA0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHBUFFPAIRUP_OFFSET UNITYSDK_OFFSET(0x92A3130)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHHPSTATE_OFFSET UNITYSDK_OFFSET(0x92A3780)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHONLINESELECTSHOWICON_OFFSET UNITYSDK_OFFSET(0x929F410)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHPLAYERDATA_OFFSET UNITYSDK_OFFSET(0x929EA10)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHPLAYERNAMEICON_OFFSET UNITYSDK_OFFSET(0x929E740)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHPLAYERNAMEICON_PC_OFFSET UNITYSDK_OFFSET(0x929F900)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHROLEINFOSTATE_1_OFFSET UNITYSDK_OFFSET(0x929E7B0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHROLEINFOSTATE_OFFSET UNITYSDK_OFFSET(0x92A0D20)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHSELECTBUTTONMP_OFFSET UNITYSDK_OFFSET(0x929E460)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHSELECTBUTTON_OFFSET UNITYSDK_OFFSET(0x92A0B90)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_RELEASE_OFFSET UNITYSDK_OFFSET(0x92A0AE0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REQUIREBUILDAVATARMODEL_OFFSET UNITYSDK_OFFSET(0x92A3F30)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SAMPLEANIMATION_OFFSET UNITYSDK_OFFSET(0x929F800)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETBACKFLOWTRIAL_OFFSET UNITYSDK_OFFSET(0x92A1090)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETLOCKED_OFFSET UNITYSDK_OFFSET(0x929ECC0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETLOCKINBATTLE_OFFSET UNITYSDK_OFFSET(0x92A1950)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETONLINEPLAYERSELECTED_OFFSET UNITYSDK_OFFSET(0x929E520)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETRECOMMENDUP_OFFSET UNITYSDK_OFFSET(0x92A1300)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETREPELTAG_OFFSET UNITYSDK_OFFSET(0x92A1290)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETROLEIMAGEFADEANIMSPEED_OFFSET UNITYSDK_OFFSET(0x92A2320)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETSELECTABLE_OFFSET UNITYSDK_OFFSET(0x929ED70)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETTEXTBGLOOPREVERSE_OFFSET UNITYSDK_OFFSET(0x92A43A0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETTRIALSTYLE_OFFSET UNITYSDK_OFFSET(0x92A13C0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETTRIAL_OFFSET UNITYSDK_OFFSET(0x92A1510)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETWAITANIMLOOPNORMALIZEDTIME_OFFSET UNITYSDK_OFFSET(0x929F2C0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SET_INDEX_OFFSET UNITYSDK_OFFSET(0x929FFB0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_STOPROLEIMAGEFADEANIM_OFFSET UNITYSDK_OFFSET(0x92A1D60)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SWAPAVATARRT_OFFSET UNITYSDK_OFFSET(0x92A42E0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SWITCHSHOWSTATE_OFFSET UNITYSDK_OFFSET(0x929DDB0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SWITCHUSERSNAMEUIBYPLATFORM_OFFSET UNITYSDK_OFFSET(0x929FEB0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x92A4630)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER__SETTEXTBGLOOPREVERSE_G__SAFEREVERSE_94_0_OFFSET UNITYSDK_OFFSET(0x92A45C0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x92A46A0)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x92A4710)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x92A4780)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x92A4800)
+#define MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x92A4860)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UILineupRoleSelectWidgetController_TypeDefinitionIndex = 76903;
+
+	class UILineupRoleSelectWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* MatchingIconEnter; // 0x0
+		// static const ::System::String* MatchingIconExit; // 0x0
+		// static const ::System::String* RAW_IMAGE_FADE_IN; // 0x0
+		// static const ::System::String* RAW_IMAGE_FADE_OUT; // 0x0
+		// static const ::System::String* PAIR_UP_ACTIVE_ICON; // 0x0
+		// static const ::System::String* PAIR_UP_DEACTIVE_ICON; // 0x0
+		::Struct_2_B6BE0E422E1288EE _playerData; // 0x2A0
+		::Enum_3_74604EE93A89573F_1 _showState; // 0x2A8
+		::System::Boolean _showPlatformAccountInfo; // 0x2AC
+		::Class_2_D89CCC627A66D0AD* _avatar; // 0x2B0
+		::MoleMole::UILineupRoleSelectWidgetController_AvatarRT* _avatarRt; // 0x2B8
+		::System::Boolean _lockInBattle; // 0x2C0
+		::System::Boolean _lockInBattleToggleShow; // 0x2C1
+		::System::Boolean _showRoleInfo; // 0x2C2
+		::System::Boolean _showRoleSelected; // 0x2C3
+		::MoleMole::UILineupRoleSelectWidgetController_FadeState _roleFadeState; // 0x2C4
+		::System::Boolean _isLocked; // 0x2C8
+		::System::Int32 roleRTW; // 0x2CC
+		::System::Int32 roleRTH; // 0x2D0
+		::UnityEngine::CanvasGroup* _alphaCanvas; // 0x2D8
+		::MoleMole::UILineupRoleSelectWidgetController_RoleBGColor _bgColor; // 0x2E0
+		::MoleMole::UILineupRoleSelectWidgetController_RoleBGColor _defaultBgColor; // 0x304
+		::System::Boolean _loopTextReverse; // 0x328
+		::System::Boolean IsBigScene; // 0x329
+		::UnityEngine::Material* _hpMaterial; // 0x330
+		::Class_2_1CC0E2699D5FB1A6_1* _view; // 0x338
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void SwitchShowState(::Enum_3_74604EE93A89573F_1 state)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_74604EE93A89573F_1))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SWITCHSHOWSTATE_OFFSET))(this, state);
+		}
+
+		::System::Void SetOnlinePlayerSelected(::System::Boolean selected)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETONLINEPLAYERSELECTED_OFFSET))(this, selected);
+		}
+
+		::System::Void RefreshPlayerData(::System::Boolean isLocalHost, ::Struct_2_B6BE0E422E1288EE data)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Struct_2_B6BE0E422E1288EE))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHPLAYERDATA_OFFSET))(this, isLocalHost, data);
+		}
+
+		::System::Void PlayMatchingAnim(::System::Boolean play)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_PLAYMATCHINGANIM_OFFSET))(this, play);
+		}
+
+		::System::Single GetWaitAnimNormalizedTime()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GETWAITANIMNORMALIZEDTIME_OFFSET))(this);
+		}
+
+		::System::Void SetWaitAnimLoopNormalizedTime(::System::Single normalizedTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETWAITANIMLOOPNORMALIZEDTIME_OFFSET))(this, normalizedTime);
+		}
+
+		::System::Void RefreshSelectButtonMp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHSELECTBUTTONMP_OFFSET))(this);
+		}
+
+		::System::Void RefreshOnlineSelectShowIcon(::Class_2_1CC0E2699D5FB1A6_1_Class_2_37D3DE03A9F27246_Enum_3_C8E5B7E08211DD2C icon)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_1CC0E2699D5FB1A6_1_Class_2_37D3DE03A9F27246_Enum_3_C8E5B7E08211DD2C))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHONLINESELECTSHOWICON_OFFSET))(this, icon);
+		}
+
+		::System::Void RefreshPlayerNameIcon()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHPLAYERNAMEICON_OFFSET))(this);
+		}
+
+		::System::Void RefreshPlayerNameIcon_PC()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHPLAYERNAMEICON_PC_OFFSET))(this);
+		}
+
+		::System::Void LoadPlayerIcon(::System::Int32 playerIcon, ::Class_2_A8F5ABF31E066ED4* image)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::Class_2_A8F5ABF31E066ED4*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_LOADPLAYERICON_OFFSET))(this, playerIcon, image);
+		}
+
+		::System::Void InternalPlayMatchingAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_INTERNALPLAYMATCHINGANIM_OFFSET))(this);
+		}
+
+		::System::Void InternalStopMatchingAnim(::System::Boolean immediately)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_INTERNALSTOPMATCHINGANIM_OFFSET))(this, immediately);
+		}
+
+		static ::System::Void PlayAnimLoop(::UnityEngine::Animation* anim)
+		{
+			return ((::System::Void(*)(::UnityEngine::Animation*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_PLAYANIMLOOP_OFFSET))(anim);
+		}
+
+		static ::System::Void SampleAnimation(::UnityEngine::Animation* anim, ::System::Boolean loop, ::System::Single speed)
+		{
+			return ((::System::Void(*)(::UnityEngine::Animation*, ::System::Boolean, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SAMPLEANIMATION_OFFSET))(anim, loop, speed);
+		}
+
+		static ::UnityEngine::AnimationState* GetAnimState(::UnityEngine::Animation* anim)
+		{
+			return ((::UnityEngine::AnimationState*(*)(::UnityEngine::Animation*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GETANIMSTATE_OFFSET))(anim);
+		}
+
+		::System::Void SwitchUsersNameUIByPlatform(::System::Boolean isShow)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SWITCHUSERSNAMEUIBYPLATFORM_OFFSET))(this, isShow);
+		}
+
+		::System::Boolean get_RoleImageFading()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_ROLEIMAGEFADING_OFFSET))(this);
+		}
+
+		::Enum_3_A3CFF9D0B4DAD45E get_RtState()
+		{
+			return ((::Enum_3_A3CFF9D0B4DAD45E(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_RTSTATE_OFFSET))(this);
+		}
+
+		::Class_2_D89CCC627A66D0AD* get_ModelAvatar()
+		{
+			return ((::Class_2_D89CCC627A66D0AD*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_MODELAVATAR_OFFSET))(this);
+		}
+
+		::System::Int32 get_Index()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_INDEX_OFFSET))(this);
+		}
+
+		::System::Void set_Index(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SET_INDEX_OFFSET))(this, value);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void LateUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_LATEUPDATE_OFFSET))(this);
+		}
+
+		::Class_2_60DDD9C206686F44* GetSelectButton()
+		{
+			return ((::Class_2_60DDD9C206686F44*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GETSELECTBUTTON_OFFSET))(this);
+		}
+
+		::Class_2_60DDD9C206686F44* GetLockInBattleToggle()
+		{
+			return ((::Class_2_60DDD9C206686F44*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GETLOCKINBATTLETOGGLE_OFFSET))(this);
+		}
+
+		::System::Void Release()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_RELEASE_OFFSET))(this);
+		}
+
+		::System::Void RefreshSelectButton(::System::Boolean showSelect, ::System::Boolean locked)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHSELECTBUTTON_OFFSET))(this, showSelect, locked);
+		}
+
+		::System::Void ApplyRoleTexture()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_APPLYROLETEXTURE_OFFSET))(this);
+		}
+
+		::System::Void SetSelectable(::System::Boolean selectable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETSELECTABLE_OFFSET))(this, selectable);
+		}
+
+		::System::Boolean IsSelectable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ISSELECTABLE_OFFSET))(this);
+		}
+
+		::System::Void SetLocked(::System::Boolean locked)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETLOCKED_OFFSET))(this, locked);
+		}
+
+		::System::Void SetBackFlowTrial(::System::Boolean active)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETBACKFLOWTRIAL_OFFSET))(this, active);
+		}
+
+		::System::Void SetRepelTag(::System::String* tagKey)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETREPELTAG_OFFSET))(this, tagKey);
+		}
+
+		::System::Void SetRecommendUp(::System::Boolean active)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETRECOMMENDUP_OFFSET))(this, active);
+		}
+
+		::System::Void SetTrialStyle(::Enum_3_D51CB1582D6C6E9A type, ::System::Boolean _isUsingPreset)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_D51CB1582D6C6E9A, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETTRIALSTYLE_OFFSET))(this, type, _isUsingPreset);
+		}
+
+		::System::Void SetTrial(::Enum_3_D51CB1582D6C6E9A avatarType, ::System::String* trialKey)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_D51CB1582D6C6E9A, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETTRIAL_OFFSET))(this, avatarType, trialKey);
+		}
+
+		::System::Void SetLockInBattle(::System::Boolean buttonShow, ::System::Boolean isToggled, ::System::Boolean anim)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETLOCKINBATTLE_OFFSET))(this, buttonShow, isToggled, anim);
+		}
+
+		::System::Void LerpBgColorByAlpha()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_LERPBGCOLORBYALPHA_OFFSET))(this);
+		}
+
+		::System::Void StopRoleImageFadeAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_STOPROLEIMAGEFADEANIM_OFFSET))(this);
+		}
+
+		::System::Void PlayRoleImageFadeInAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_PLAYROLEIMAGEFADEINANIM_OFFSET))(this);
+		}
+
+		::System::Void PlayRoleImageFadeOutAnim(::System::Single forceNormalizedTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_PLAYROLEIMAGEFADEOUTANIM_OFFSET))(this, forceNormalizedTime);
+		}
+
+		::System::Boolean get_IsRoleImageFading()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_ISROLEIMAGEFADING_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsRoleImageFadeOutComplete()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_GET_ISROLEIMAGEFADEOUTCOMPLETE_OFFSET))(this);
+		}
+
+		::System::Void SetRoleImageFadeAnimSpeed(::System::Single targetSpeed)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETROLEIMAGEFADEANIMSPEED_OFFSET))(this, targetSpeed);
+		}
+
+		::System::Void RefreshAvatarInfo(::Class_2_D89CCC627A66D0AD* showAvatar, ::Class_2_104EA16A1BE40F83* pairUpInfo, ::System::Boolean writeRoleColorImmediately)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_D89CCC627A66D0AD*, ::Class_2_104EA16A1BE40F83*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHAVATARINFO_OFFSET))(this, showAvatar, pairUpInfo, writeRoleColorImmediately);
+		}
+
+		::System::Void RefreshHPState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHHPSTATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshRoleInfoState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHROLEINFOSTATE_OFFSET))(this);
+		}
+
+		::System::Void BuildModel(::System::String* ctrlName, ::Enum_3_7609C87F8335DE37_4 type, ::System::Action* onComplete)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::Enum_3_7609C87F8335DE37_4, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_BUILDMODEL_OFFSET))(this, ctrlName, type, onComplete);
+		}
+
+		::System::Void ApplyRoleImageTexture()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_APPLYROLEIMAGETEXTURE_OFFSET))(this);
+		}
+
+		::System::Void RequireBuildAvatarModel(::Class_2_D89CCC627A66D0AD* avatarItem)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_D89CCC627A66D0AD*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REQUIREBUILDAVATARMODEL_OFFSET))(this, avatarItem);
+		}
+
+		::System::Void ActiveAvatarModel(::System::Boolean active)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ACTIVEAVATARMODEL_OFFSET))(this, active);
+		}
+
+		::System::Void EnableAvatarRT(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ENABLEAVATARRT_OFFSET))(this, enable);
+		}
+
+		::System::Void EnableAvatarRTCamera(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_ENABLEAVATARRTCAMERA_OFFSET))(this, enable);
+		}
+
+		::System::Void SwapAvatarRT(::MoleMole::UILineupRoleSelectWidgetController* other)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UILineupRoleSelectWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SWAPAVATARRT_OFFSET))(this, other);
+		}
+
+		::System::Void SetTextBgLoopReverse(::System::Boolean reverse)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_SETTEXTBGLOOPREVERSE_OFFSET))(this, reverse);
+		}
+
+		::System::Void RefreshAvatarLevel(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHAVATARLEVEL_OFFSET))(this, args);
+		}
+
+		::System::Void PlayFadeAnimInternal(::MoleMole::UILineupRoleSelectWidgetController_FadeState fadeState, ::System::Single forceNormalizedTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UILineupRoleSelectWidgetController_FadeState, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_PLAYFADEANIMINTERNAL_OFFSET))(this, fadeState, forceNormalizedTime);
+		}
+
+		::System::Void RefreshRoleInfoState_1(::System::Boolean selected)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHROLEINFOSTATE_1_OFFSET))(this, selected);
+		}
+
+		::System::Void RefreshBuffPairUp(::Class_2_D89CCC627A66D0AD* avatar, ::Class_2_104EA16A1BE40F83* pairUpInfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_D89CCC627A66D0AD*, ::Class_2_104EA16A1BE40F83*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER_REFRESHBUFFPAIRUP_OFFSET))(this, avatar, pairUpInfo);
+		}
+
+		static ::System::Void _SetTextBgLoopReverse_g__SafeReverse_94_0(::MonoUILoopBGText* loopText, ::System::Boolean doReverse)
+		{
+			return ((::System::Void(*)(::MonoUILoopBGText*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER__SETTEXTBGLOOPREVERSE_G__SAFEREVERSE_94_0_OFFSET))(loopText, doReverse);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPROLESELECTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

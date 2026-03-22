@@ -1,0 +1,99 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_60DDD9C206686F44;
+class Class_2_B209BD9CC7A9C533_8;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_GET_ENERGYCOST_OFFSET UNITYSDK_OFFSET(0x808EC00)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_GET_NEXTBTN_OFFSET UNITYSDK_OFFSET(0x808ECC0)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x808E940)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x808E9E0)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x808E7F0)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x808E890)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_SET_ENERGYCOST_OFFSET UNITYSDK_OFFSET(0x808EC10)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_SET_ENERGYNOW_OFFSET UNITYSDK_OFFSET(0x808EAC0)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x808ECE0)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x808ED10)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x808ED80)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x808EE00)
+#define MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x808EE60)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralNextBtnsWidgetController_TypeDefinitionIndex = 50028;
+
+	class UIGeneralNextBtnsWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_B209BD9CC7A9C533_8* _view; // 0x2A0
+		::System::Int32 _energyCost; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void set_EnergyNow(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_SET_ENERGYNOW_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_EnergyCost()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_GET_ENERGYCOST_OFFSET))(this);
+		}
+
+		::System::Void set_EnergyCost(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_SET_ENERGYCOST_OFFSET))(this, value);
+		}
+
+		::Class_2_60DDD9C206686F44* get_NextBtn()
+		{
+			return ((::Class_2_60DDD9C206686F44*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER_GET_NEXTBTN_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEXTBTNSWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

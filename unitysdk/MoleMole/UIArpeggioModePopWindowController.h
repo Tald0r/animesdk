@@ -1,0 +1,141 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_0_16E4307DCC419505_7;
+class Class_2_208CC9941471731A_682;
+class Class_2_3C79416A83F6226B;
+class Class_2_4050202702C5AF24;
+namespace MoleMole { class UIArpeggioBlessModeWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0xDC4F4A0)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xDC4F490)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_INITBLESSGROUP_OFFSET UNITYSDK_OFFSET(0xDC4F9A0)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONBLESSCARDCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xDC50010)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xDC4FE60)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xDC506A0)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONSELECTBTNCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xDC50300)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONSETARPEGGIOBLESSGROUPHANDLE_OFFSET UNITYSDK_OFFSET(0xDC505E0)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xDC50850)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xDC4F4B0)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xDC4F8E0)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_REFRESHSELECTSTATE_OFFSET UNITYSDK_OFFSET(0xDC4FF00)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xDC508E0)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xDC50940)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xDC509B0)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xDC50A10)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xDC50A20)
+#define MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xDC50A30)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIArpeggioModePopWindowController_TypeDefinitionIndex = 56725;
+
+	class UIArpeggioModePopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_3C79416A83F6226B* _view; // 0x2F8
+		::System::Collections::Generic::List_1<::MoleMole::UIArpeggioBlessModeWidgetController*>* _blessGroupList; // 0x300
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_682*>* _blessGroupCfgList; // 0x308
+		::Class_2_208CC9941471731A_682* _selectBlessCfg; // 0x310
+		::System::Int32 _selectIndex; // 0x318
+		::Class_2_4050202702C5AF24* _arpeggioModel; // 0x320
+		::System::Collections::Generic::List_1<::Il2CppArray<::System::String*>*>* _blessDesList; // 0x328
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void InitBlessGroup()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_INITBLESSGROUP_OFFSET))(this);
+		}
+
+		::System::Void RefreshSelectState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_REFRESHSELECTSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnBlessCardClickHandle(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONBLESSCARDCLICKHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnSelectBtnClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONSELECTBTNCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnSetArpeggioBlessGroupHandle(::Class_0_16E4307DCC419505_7* rcvMessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONSETARPEGGIOBLESSGROUPHANDLE_OFFSET))(this, rcvMessage);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARPEGGIOMODEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

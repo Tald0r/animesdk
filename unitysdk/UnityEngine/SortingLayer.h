@@ -4,14 +4,12 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_SORTINGLAYER_GETLAYERVALUEFROMID_OFFSET UNITYSDK_OFFSET(0x18238BF0)
-#define UNITYENGINE_SORTINGLAYER_IDTONAME_OFFSET UNITYSDK_OFFSET(0x18238C10)
-#define UNITYENGINE_SORTINGLAYER_ISVALID_OFFSET UNITYSDK_OFFSET(0x18238C20)
-#define UNITYENGINE_SORTINGLAYER_NAMETOID_OFFSET UNITYSDK_OFFSET(0x18238C00)
+#define UNITYENGINE_SORTINGLAYER_GETLAYERVALUEFROMID_OFFSET UNITYSDK_OFFSET(0x19BD39E0)
+#define UNITYENGINE_SORTINGLAYER_NAMETOID_OFFSET UNITYSDK_OFFSET(0x19BD39F0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int SortingLayer_TypeDefinitionIndex = 3823;
+	inline static constexpr unsigned int SortingLayer_TypeDefinitionIndex = 5124;
 
 	struct alignas(4) SortingLayer
 	{
@@ -25,16 +23,6 @@ namespace UnityEngine
 		static ::System::Int32 NameToID(::System::String* name)
 		{
 			return ((::System::Int32(*)(::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_SORTINGLAYER_NAMETOID_OFFSET))(name);
-		}
-
-		static ::System::String* IDToName(::System::Int32 id)
-		{
-			return ((::System::String*(*)(::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_SORTINGLAYER_IDTONAME_OFFSET))(id);
-		}
-
-		static ::System::Boolean IsValid(::System::Int32 id)
-		{
-			return ((::System::Boolean(*)(::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_SORTINGLAYER_ISVALID_OFFSET))(id);
 		}
 	};
 }

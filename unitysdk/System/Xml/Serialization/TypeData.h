@@ -10,49 +10,42 @@ namespace System::Reflection { class MethodInfo; }
 namespace System::Reflection { class PropertyInfo; }
 namespace System::Xml::Schema { class XmlSchemaPatternFacet; }
 
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_CONVERTFORASSIGNMENT_OFFSET UNITYSDK_OFFSET(0x17DA5220)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_CREATEMISSINGADDMETHODEXCEPTION_OFFSET UNITYSDK_OFFSET(0x17DA5D70)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GETGENERICLISTITEMTYPE_OFFSET UNITYSDK_OFFSET(0x17DA5AC0)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GETINDEXERPROPERTY_OFFSET UNITYSDK_OFFSET(0x17DA5C70)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_FULLTYPENAME_OFFSET UNITYSDK_OFFSET(0x17DA5320)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_HASPUBLICCONSTRUCTOR_OFFSET UNITYSDK_OFFSET(0x17DA5EA0)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISCOMPLEXTYPE_OFFSET UNITYSDK_OFFSET(0x17DA5340)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISLISTTYPE_OFFSET UNITYSDK_OFFSET(0x17DA0480)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISNULLABLE_OFFSET UNITYSDK_OFFSET(0x17DA53A0)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISVALUETYPE_OFFSET UNITYSDK_OFFSET(0x17DA5370)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISXSDTYPE_OFFSET UNITYSDK_OFFSET(0x17DA5360)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_LISTITEMTYPEDATA_OFFSET UNITYSDK_OFFSET(0x17DA4ED0)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_LISTITEMTYPE_OFFSET UNITYSDK_OFFSET(0x17DA5470)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_SCHEMATYPE_OFFSET UNITYSDK_OFFSET(0x17DA5330)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_TYPENAME_OFFSET UNITYSDK_OFFSET(0x17DA52F0)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x17DA5310)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_XMLTYPE_OFFSET UNITYSDK_OFFSET(0x17DA5300)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_LOOKUPTYPECONVERTOR_OFFSET UNITYSDK_OFFSET(0x17DA5120)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA_SET_ISNULLABLE_OFFSET UNITYSDK_OFFSET(0x17DA5460)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x17DA5EB0)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17DA4B60)
-#define SYSTEM_XML_SERIALIZATION_TYPEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x17DA4B40)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_CONVERTFORASSIGNMENT_OFFSET UNITYSDK_OFFSET(0x19475AB0)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_CREATEMISSINGADDMETHODEXCEPTION_OFFSET UNITYSDK_OFFSET(0x19476560)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GETGENERICLISTITEMTYPE_OFFSET UNITYSDK_OFFSET(0x194762B0)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GETINDEXERPROPERTY_OFFSET UNITYSDK_OFFSET(0x19476460)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISCOMPLEXTYPE_OFFSET UNITYSDK_OFFSET(0x19475B80)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISLISTTYPE_OFFSET UNITYSDK_OFFSET(0x194758D0)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISNULLABLE_OFFSET UNITYSDK_OFFSET(0x19475BE0)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISVALUETYPE_OFFSET UNITYSDK_OFFSET(0x19475BB0)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISXSDTYPE_OFFSET UNITYSDK_OFFSET(0x19475BA0)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_LISTITEMTYPEDATA_OFFSET UNITYSDK_OFFSET(0x194758E0)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_LISTITEMTYPE_OFFSET UNITYSDK_OFFSET(0x19475CA0)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA_LOOKUPTYPECONVERTOR_OFFSET UNITYSDK_OFFSET(0x194759B0)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x19476690)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x194754F0)
+#define SYSTEM_XML_SERIALIZATION_TYPEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x194754D0)
 
 namespace System::Xml::Serialization
 {
-	inline static constexpr unsigned int TypeData_TypeDefinitionIndex = 1976;
+	inline static constexpr unsigned int TypeData_TypeDefinitionIndex = 1870;
 
 	class TypeData : public ::System::Object
 	{
 	public:
 		static ::Il2CppArray<::System::String*>** StaticGet_keywords()
 		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TypeData_TypeDefinitionIndex)->GetStaticField(0xFF60);
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TypeData_TypeDefinitionIndex)->GetStaticField(0x1B70);
 		}
-		::System::String* fullTypeName; // 0x10
-		::System::Xml::Serialization::TypeData* listItemTypeData; // 0x18
-		::System::String* elementName; // 0x20
-		::System::Type* listItemType; // 0x28
-		::System::Reflection::MethodInfo* typeConvertor; // 0x30
-		::System::Type* type; // 0x38
-		::System::Xml::Schema::XmlSchemaPatternFacet* facet; // 0x40
-		::System::Xml::Serialization::TypeData* mappedType; // 0x48
-		::System::String* typeName; // 0x50
+		::System::Xml::Schema::XmlSchemaPatternFacet* facet; // 0x10
+		::System::Xml::Serialization::TypeData* mappedType; // 0x18
+		::System::Xml::Serialization::TypeData* listItemTypeData; // 0x20
+		::System::String* elementName; // 0x28
+		::System::Type* type; // 0x30
+		::System::Reflection::MethodInfo* typeConvertor; // 0x38
+		::System::String* typeName; // 0x40
+		::System::Type* listItemType; // 0x48
+		::System::String* fullTypeName; // 0x50
 		::System::Boolean hasPublicConstructor; // 0x58
 		::System::Boolean nullableOverride; // 0x59
 		::System::Xml::Serialization::SchemaTypes sType; // 0x5C
@@ -82,31 +75,6 @@ namespace System::Xml::Serialization
 			return ((::System::Void(*)(::PVOID, ::System::Object*&))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_CONVERTFORASSIGNMENT_OFFSET))(this, value);
 		}
 
-		::System::String* get_TypeName()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_TYPENAME_OFFSET))(this);
-		}
-
-		::System::String* get_XmlType()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_XMLTYPE_OFFSET))(this);
-		}
-
-		::System::Type* get_Type()
-		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_TYPE_OFFSET))(this);
-		}
-
-		::System::String* get_FullTypeName()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_FULLTYPENAME_OFFSET))(this);
-		}
-
-		::System::Xml::Serialization::SchemaTypes get_SchemaType()
-		{
-			return ((::System::Xml::Serialization::SchemaTypes(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_SCHEMATYPE_OFFSET))(this);
-		}
-
 		::System::Boolean get_IsListType()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISLISTTYPE_OFFSET))(this);
@@ -127,11 +95,6 @@ namespace System::Xml::Serialization
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISNULLABLE_OFFSET))(this);
 		}
 
-		::System::Void set_IsNullable(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_SET_ISNULLABLE_OFFSET))(this, value);
-		}
-
 		::System::Xml::Serialization::TypeData* get_ListItemTypeData()
 		{
 			return ((::System::Xml::Serialization::TypeData*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_LISTITEMTYPEDATA_OFFSET))(this);
@@ -145,11 +108,6 @@ namespace System::Xml::Serialization
 		::System::Boolean get_IsXsdType()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_ISXSDTYPE_OFFSET))(this);
-		}
-
-		::System::Boolean get_HasPublicConstructor()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_TYPEDATA_GET_HASPUBLICCONSTRUCTOR_OFFSET))(this);
 		}
 
 		static ::System::Reflection::PropertyInfo* GetIndexerProperty(::System::Type* collectionType)

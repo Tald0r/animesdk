@@ -1,43 +1,25 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_B8FB38F0526A59B0.h"
-#include "unitysdk/RPG/GameCore/AttackDamageType.h"
-#include "unitysdk/RPG/GameCore/BigFixPoint.h"
-#include "unitysdk/RPG/GameCore/FixPoint.h"
-#include "unitysdk/RPG/GameCore/WaveMonsterTiming.h"
-#include "unitysdk/System/Nullable_1.h"
+#include "unitysdk/Class_1_AFF4E9169F584164.h"
 
-class Class_0_16E4307DCC419505_358;
-class Class_1_9AD7EC315F99B05E;
-namespace RPG::GameCore { class GameEntity; }
-namespace RPG::GameCore { class GameWorld; }
+class Class_0_16E4307DCC419505_371;
+namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_6729AC3ED949BE6A__CTOR_OFFSET UNITYSDK_OFFSET(0x8633320)
+#define CLASS_2_6729AC3ED949BE6A_METHOD_2_F02D65FD793ACDAF_OFFSET UNITYSDK_OFFSET(0x93513A0)
+#define CLASS_2_6729AC3ED949BE6A__CTOR_OFFSET UNITYSDK_OFFSET(0x9351550)
 
-inline static constexpr unsigned int Class_2_6729AC3ED949BE6A_TypeDefinitionIndex = 45388;
+inline static constexpr unsigned int Class_2_6729AC3ED949BE6A_TypeDefinitionIndex = 44113;
 
-class Class_2_6729AC3ED949BE6A : public ::Class_1_B8FB38F0526A59B0
+class Class_2_6729AC3ED949BE6A : public ::Class_1_AFF4E9169F584164
 {
 public:
-	::Class_1_9AD7EC315F99B05E* Field_2_1; // 0x58
-	::Class_0_16E4307DCC419505_358* Field_2_15; // 0x60
-	::Il2CppArray<::RPG::GameCore::AttackDamageType>* Field_2_11; // 0x68
-	::RPG::GameCore::BigFixPoint Field_2_6; // 0x70
-	::RPG::GameCore::BigFixPoint Field_2_5; // 0x80
-	::RPG::GameCore::GameWorld* Field_2_0; // 0x90
-	::RPG::GameCore::GameEntity* Field_2_12; // 0x98
-	::RPG::GameCore::FixPoint Field_2_3; // 0xA0
-	::System::Nullable_1<::RPG::GameCore::FixPoint> Field_2_8; // 0xA8
-	::System::UInt32 Field_2_10; // 0xB8
-	::System::Int32 Field_2_13; // 0xBC
-	::System::Boolean Field_2_4; // 0xC0
-	::System::Nullable_1<::RPG::GameCore::FixPoint> Field_2_7; // 0xC8
-	::RPG::GameCore::FixPoint Field_2_2; // 0xD8
-	::System::Single Field_2_14; // 0xE0
-	::RPG::GameCore::WaveMonsterTiming Field_2_9; // 0xE4
-
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_6729AC3ED949BE6A__CTOR_OFFSET))(this);
+	}
+
+	::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_371*>* Method_2_F02D65FD793ACDAF()
+	{
+		return ((::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_371*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_6729AC3ED949BE6A_METHOD_2_F02D65FD793ACDAF_OFFSET))(this);
 	}
 };

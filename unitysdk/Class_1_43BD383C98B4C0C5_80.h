@@ -2,9 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_43BD383C98B4C0C5_80__CTOR_OFFSET UNITYSDK_OFFSET(0x161B1F50)
+class Class_0_16E4307DCC419505_431;
+namespace MoleMole { class TextureSheetLoopFrame; }
+namespace MoleMole { class TextureSheetSkipFrameParam; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine::Events { class UnityAction; }
 
-inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_80_TypeDefinitionIndex = 32131;
+#define CLASS_1_43BD383C98B4C0C5_80__CTOR_OFFSET UNITYSDK_OFFSET(0x7E5F9E0)
+
+inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_80_TypeDefinitionIndex = 76379;
 
 class Class_1_43BD383C98B4C0C5_80 : public ::System::Object
 {

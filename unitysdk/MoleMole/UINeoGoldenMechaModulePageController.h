@@ -1,0 +1,79 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_BEC2BED47EDCC746;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xBE71430)
+#define MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xBE71440)
+#define MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xBE714B0)
+#define MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xBE71800)
+#define MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBE715B0)
+#define MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xBE71930)
+#define MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBE71A00)
+#define MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xBE71A10)
+#define MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xBE71A80)
+#define MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBE71AE0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UINeoGoldenMechaModulePageController_TypeDefinitionIndex = 76186;
+
+	class UINeoGoldenMechaModulePageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Class_2_BEC2BED47EDCC746* get__viewModel()
+		{
+			return ((::Class_2_BEC2BED47EDCC746*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHAMODULEPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+	};
+}

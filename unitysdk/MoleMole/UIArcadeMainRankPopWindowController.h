@@ -1,0 +1,185 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_0A3761FE34514D6C_29.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_208CC9941471731A_208;
+class Class_2_4764FB01CB28A087;
+class Class_2_888C59F77423C576_2;
+namespace MoleMole { class UIArcadeMainRankContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Object; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xCA98770)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_INITTABBTNS_OFFSET UNITYSDK_OFFSET(0xCA991F0)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_INITUIBYPLATFORM_OFFSET UNITYSDK_OFFSET(0xCA98950)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xCA98E50)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONCLOSEBTNCLICKED_OFFSET UNITYSDK_OFFSET(0xCA99920)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xCA990C0)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONFRIENDTABBTNCLICKED_OFFSET UNITYSDK_OFFSET(0xCA994C0)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xCA98CA0)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONTABBTNCLICKED_OFFSET UNITYSDK_OFFSET(0xCA99990)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xCA99160)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCA98780)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xCA98D20)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_SHOWSWITCHPLATFORMINFO_OFFSET UNITYSDK_OFFSET(0xCA99B40)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_SWITCHUSERSNAMEUIBYPLATFORM_INNER_OFFSET UNITYSDK_OFFSET(0xCA99D00)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_SWITCHUSERSNAMEUIBYPLATFORM_OFFSET UNITYSDK_OFFSET(0xCA99C30)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCA99F70)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xCA99F10)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER__INITUIBYPLATFORM_B__13_0_OFFSET UNITYSDK_OFFSET(0xCA99FC0)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER__INITUIBYPLATFORM_B__13_1_OFFSET UNITYSDK_OFFSET(0xCA99FD0)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER__ONTABBTNCLICKED_B__12_0_OFFSET UNITYSDK_OFFSET(0xCA99FB0)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xCA99FE0)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xCA9A050)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xCA9A060)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCA9A070)
+#define MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xCA9A080)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIArcadeMainRankPopWindowController_TypeDefinitionIndex = 78116;
+
+	class UIArcadeMainRankPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		static ::System::Int32* StaticGet_ARCADE_MAIN_RANK_FIRST_LINE_UID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIArcadeMainRankPopWindowController_TypeDefinitionIndex)->GetStaticField(0xB770);
+		}
+		::Class_2_4764FB01CB28A087* _view; // 0x2F8
+		::MoleMole::UIArcadeMainRankContext* _context; // 0x300
+		::System::Collections::Generic::List_1<::System::Object*>* _playerList; // 0x308
+		::Class_2_888C59F77423C576_2* _rankSelfData; // 0x310
+		::System::Collections::Generic::List_1<::Enum_3_0A3761FE34514D6C_29>* _rankTypeList; // 0x318
+		::System::Boolean _allowShowPlatform; // 0x320
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnCloseBtnClicked()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONCLOSEBTNCLICKED_OFFSET))(this);
+		}
+
+		::System::Void OnFriendTabBtnClicked()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONFRIENDTABBTNCLICKED_OFFSET))(this);
+		}
+
+		::System::Void InitTabBtns(::Class_2_208CC9941471731A_208* cfg)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_208*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_INITTABBTNS_OFFSET))(this, cfg);
+		}
+
+		::System::Void OnTabBtnClicked(::System::Int32 id)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_ONTABBTNCLICKED_OFFSET))(this, id);
+		}
+
+		::System::Void InitUIByPlatform()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_INITUIBYPLATFORM_OFFSET))(this);
+		}
+
+		::System::Void SwitchUsersNameUIByPlatform(::System::Boolean showPlatformAccountInfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_SWITCHUSERSNAMEUIBYPLATFORM_OFFSET))(this, showPlatformAccountInfo);
+		}
+
+		::System::Void SwitchUsersNameUIByPlatform_Inner(::System::Boolean showConsoleAccountInfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_SWITCHUSERSNAMEUIBYPLATFORM_INNER_OFFSET))(this, showConsoleAccountInfo);
+		}
+
+		::System::Void ShowSwitchPlatformInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER_SHOWSWITCHPLATFORMINFO_OFFSET))(this);
+		}
+
+		::System::Void _OnTabBtnClicked_b__12_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER__ONTABBTNCLICKED_B__12_0_OFFSET))(this);
+		}
+
+		::System::Void _InitUIByPlatform_b__13_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER__INITUIBYPLATFORM_B__13_0_OFFSET))(this);
+		}
+
+		::System::Void _InitUIByPlatform_b__13_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER__INITUIBYPLATFORM_B__13_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMAINRANKPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -6,12 +6,12 @@ namespace MiHoYo::SDK::Console::CN { class PayManagerCX; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_CONSOLE_CN_PAYMANAGERCX___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x15744750)
-#define MIHOYO_SDK_CONSOLE_CN_PAYMANAGERCX___C__DISPLAYCLASS9_0__GETUSERCOLLECTIONSID_B__0_OFFSET UNITYSDK_OFFSET(0x15747E40)
+#define MIHOYO_SDK_CONSOLE_CN_PAYMANAGERCX___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x187739A0)
+#define MIHOYO_SDK_CONSOLE_CN_PAYMANAGERCX___C__DISPLAYCLASS9_0__GETUSERCOLLECTIONSID_B__0_OFFSET UNITYSDK_OFFSET(0x187739B0)
 
 namespace MiHoYo::SDK::Console::CN
 {
-	inline static constexpr unsigned int PayManagerCX___c__DisplayClass9_0_TypeDefinitionIndex = 7610;
+	inline static constexpr unsigned int PayManagerCX___c__DisplayClass9_0_TypeDefinitionIndex = 18751;
 
 	class PayManagerCX___c__DisplayClass9_0 : public ::System::Object
 	{

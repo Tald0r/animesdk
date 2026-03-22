@@ -1,0 +1,100 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_A7E16C971D58140E_1;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIPushFaceContext; }
+
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_GETVIEW_OFFSET UNITYSDK_OFFSET(0x98FCEC0)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x98FCA00)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x98FCBD0)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x98FCC70)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x98FCA10)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x98FCA80)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0x98FCD20)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x98FCF30)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x98FCF40)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x98FCFB0)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x98FCFC0)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x98FCFD0)
+#define MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0x98FD040)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPushFaceV1PopWindowController_TypeDefinitionIndex = 45523;
+
+	class UIPushFaceV1PopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_A7E16C971D58140E_1* _view; // 0x2F8
+		::MoleMole::UIPushFaceContext* context; // 0x300
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::Class_2_A7E16C971D58140E_1* GetView()
+		{
+			return ((::Class_2_A7E16C971D58140E_1*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER_GETVIEW_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHFACEV1POPWINDOWCONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

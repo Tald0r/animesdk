@@ -1,0 +1,72 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/GameSubsystemBaseEx_1.h"
+
+class Class_2_9EA8D45226512D21;
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_GET_CURRENTTEMPLATE_OFFSET UNITYSDK_OFFSET(0x8B0AD30)
+#define MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_INITDATA_OFFSET UNITYSDK_OFFSET(0x8B0AF20)
+#define MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x8B0AD50)
+#define MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x8B0B180)
+#define MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_ONQUESTADD_OFFSET UNITYSDK_OFFSET(0x8B0B350)
+#define MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_SET_CURRENTTEMPLATE_OFFSET UNITYSDK_OFFSET(0x8B0AD40)
+#define MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM__CTOR_OFFSET UNITYSDK_OFFSET(0x8B0B530)
+#define MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x8B0B550)
+#define MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM___BASE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x8B0B5B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int ForbiddenQuestUnlockedSubsystem_TypeDefinitionIndex = 66345;
+
+	class ForbiddenQuestUnlockedSubsystem : public ::MoleMole::GameSubsystemBaseEx_1<::MoleMole::ForbiddenQuestUnlockedSubsystem*>
+	{
+	public:
+		::Class_2_9EA8D45226512D21* _CurrentTemplate_k__BackingField; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_9EA8D45226512D21* get_CurrentTemplate()
+		{
+			return ((::Class_2_9EA8D45226512D21*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_GET_CURRENTTEMPLATE_OFFSET))(this);
+		}
+
+		::System::Void set_CurrentTemplate(::Class_2_9EA8D45226512D21* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_9EA8D45226512D21*))((::PBYTE)hIl2Cpp + MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_SET_CURRENTTEMPLATE_OFFSET))(this, value);
+		}
+
+		::System::Void OnAwake()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_ONAWAKE_OFFSET))(this);
+		}
+
+		::System::Void OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_ONDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_INITDATA_OFFSET))(this);
+		}
+
+		::System::Void OnQuestAdd(::System::EventArgs* eventArgs)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM_ONQUESTADD_OFFSET))(this, eventArgs);
+		}
+
+		::System::Void __base_OnAwake()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM___BASE_ONAWAKE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FORBIDDENQUESTUNLOCKEDSUBSYSTEM___BASE_ONDESTROY_OFFSET))(this);
+		}
+	};
+}

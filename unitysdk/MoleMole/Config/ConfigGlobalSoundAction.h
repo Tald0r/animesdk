@@ -1,0 +1,44 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/MihoyoSerializedScriptableObject.h"
+
+namespace MoleMole::Config { class ConfigSoundActionGeneral; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+
+#define MOLEMOLE_CONFIG_CONFIGGLOBALSOUNDACTION_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1418DC00)
+#define MOLEMOLE_CONFIG_CONFIGGLOBALSOUNDACTION_RUMTIMERELOAD_OFFSET UNITYSDK_OFFSET(0x1418DA10)
+#define MOLEMOLE_CONFIG_CONFIGGLOBALSOUNDACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1418DDE0)
+#define MOLEMOLE_CONFIG_CONFIGGLOBALSOUNDACTION___BASE_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1418DE10)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int ConfigGlobalSoundAction_TypeDefinitionIndex = 51127;
+
+	class ConfigGlobalSoundAction : public ::Foundation::MihoyoSerializedScriptableObject
+	{
+	public:
+		::System::String* comments; // 0x58
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigSoundActionGeneral*>* actions; // 0x60
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGGLOBALSOUNDACTION__CTOR_OFFSET))(this);
+		}
+
+		::System::Void RumtimeReload()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGGLOBALSOUNDACTION_RUMTIMERELOAD_OFFSET))(this);
+		}
+
+		::System::Void OnAfterDeserialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGGLOBALSOUNDACTION_ONAFTERDESERIALIZE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnAfterDeserialize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGGLOBALSOUNDACTION___BASE_ONAFTERDESERIALIZE_OFFSET))(this);
+		}
+	};
+}

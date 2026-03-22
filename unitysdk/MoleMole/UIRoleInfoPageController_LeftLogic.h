@@ -1,0 +1,14 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIRoleInfoPageController_LeftLogic_TypeDefinitionIndex = 47504;
+
+	enum class UIRoleInfoPageController_LeftLogic : ::System::Int32
+	{
+		NoDelay = 0,
+		Delay = 1,
+		LoadCallback = 2,
+	};
+}

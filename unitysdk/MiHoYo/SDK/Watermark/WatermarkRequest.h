@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MIHOYO_SDK_WATERMARK_WATERMARKREQUEST__CTOR_OFFSET UNITYSDK_OFFSET(0x15961370)
+#define MIHOYO_SDK_WATERMARK_WATERMARKREQUEST__CTOR_OFFSET UNITYSDK_OFFSET(0x18BAF0C0)
 
 namespace MiHoYo::SDK::Watermark
 {
-	inline static constexpr unsigned int WatermarkRequest_TypeDefinitionIndex = 7367;
+	inline static constexpr unsigned int WatermarkRequest_TypeDefinitionIndex = 18510;
 
 	class WatermarkRequest : public ::System::Object
 	{

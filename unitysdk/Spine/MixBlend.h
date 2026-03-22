@@ -3,7 +3,7 @@
 
 namespace Spine
 {
-	inline static constexpr unsigned int MixBlend_TypeDefinitionIndex = 29761;
+	inline static constexpr unsigned int MixBlend_TypeDefinitionIndex = 29766;
 
 	enum class MixBlend : ::System::Int32
 	{

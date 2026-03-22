@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_INSPECTORNAMEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x181FBA20)
+#define UNITYENGINE_INSPECTORNAMEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A040B10)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int InspectorNameAttribute_TypeDefinitionIndex = 4024;
+	inline static constexpr unsigned int InspectorNameAttribute_TypeDefinitionIndex = 5312;
 
 	class InspectorNameAttribute : public ::UnityEngine::PropertyAttribute
 	{

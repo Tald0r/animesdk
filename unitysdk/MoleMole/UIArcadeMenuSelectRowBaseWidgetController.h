@@ -1,0 +1,204 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+#include "unitysdk/UnityEngine/Color.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_2_60DDD9C206686F44;
+class Class_2_A8F5ABF31E066ED4;
+namespace System { class Object; }
+namespace UnityEngine { class Canvas; }
+namespace UnityEngine { class CanvasGroup; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class RectTransform; }
+namespace UnityEngine::UI::Extension { class UILocalizationText; }
+
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_DISABLECANVASSORTINGORDER_OFFSET UNITYSDK_OFFSET(0xBAE45C0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_ENABLECANVASSORTINGORDER_OFFSET UNITYSDK_OFFSET(0xBAE4520)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_GETARCADEGAMEID_OFFSET UNITYSDK_OFFSET(0xBAE4150)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_GETITEMCENTERY_OFFSET UNITYSDK_OFFSET(0xBAE4260)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_GETITEMHEIGHT_OFFSET UNITYSDK_OFFSET(0xBAE42F0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_INITVIEWCONTROL_OFFSET UNITYSDK_OFFSET(0xBAE40B0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xBAE28A0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0xBAE3F30)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xBAE2FB0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_ONSCROLLVIEWITEMMOVE_OFFSET UNITYSDK_OFFSET(0xBAE3B60)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBAE2EF0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBAE27E0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xBAE35C0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_SETBUTTONENABLE_OFFSET UNITYSDK_OFFSET(0xBAE41C0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_SETITEMCENTEROFFSET_OFFSET UNITYSDK_OFFSET(0xBAE30B0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_SETWIDGETINNERPOSITION_OFFSET UNITYSDK_OFFSET(0xBAE4450)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_SETWIDGETINNERSCALE_OFFSET UNITYSDK_OFFSET(0xBAE4380)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_UPDATECANVAS_OFFSET UNITYSDK_OFFSET(0xBAE3D50)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_UPDATEITEMSCALE_OFFSET UNITYSDK_OFFSET(0xBAE3BD0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBAE66E0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER__UPDATEITEMSCALE_G__NEWSCALELOGICRECT_17_0_OFFSET UNITYSDK_OFFSET(0xBAE4640)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER__UPDATEITEMSCALE_G__NEWSCALELOGIC_17_1_OFFSET UNITYSDK_OFFSET(0xBAE5700)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xBAE66F0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER___BASE_ONSCROLLVIEWITEMMOVE_OFFSET UNITYSDK_OFFSET(0xBAE6770)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBAE67D0)
+#define MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBAE6850)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIArcadeMenuSelectRowBaseWidgetController_TypeDefinitionIndex = 45144;
+
+	class UIArcadeMenuSelectRowBaseWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::UnityEngine::RectTransform* _root; // 0x2D0
+		::UnityEngine::RectTransform* _empty; // 0x2D8
+		::UnityEngine::RectTransform* _iconPanel; // 0x2E0
+		::Class_2_A8F5ABF31E066ED4* _frameImage; // 0x2E8
+		::Class_2_A8F5ABF31E066ED4* _bannerImage; // 0x2F0
+		::UnityEngine::UI::Extension::UILocalizationText* _nameText; // 0x2F8
+		::UnityEngine::Canvas* _rootCanvas; // 0x300
+		::Class_2_60DDD9C206686F44* _iconBtn; // 0x308
+		::Class_2_60DDD9C206686F44* _emptyBtn; // 0x310
+		::UnityEngine::RectTransform* _rootInner; // 0x318
+		::UnityEngine::CanvasGroup* _rootCanvasGroup; // 0x320
+		::Class_2_A8F5ABF31E066ED4* _questIcon; // 0x328
+		::UnityEngine::GameObject* _singleNumRoot; // 0x330
+		::UnityEngine::GameObject* _mutiNumRoot; // 0x338
+		::UnityEngine::UI::Extension::UILocalizationText* _mutiNumText; // 0x340
+		::UnityEngine::GameObject* _achievementRoot; // 0x348
+		::System::Int32 _centerOffset; // 0x350
+		::System::Int32 _arcadeGameID; // 0x354
+		::UnityEngine::Material* _frameMaterial; // 0x358
+		::UnityEngine::Material* _bannerMaterial; // 0x360
+		::UnityEngine::Color _centerTextColor; // 0x368
+		::UnityEngine::Color _noCenterTextColor; // 0x378
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnScrollViewItemMove()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_ONSCROLLVIEWITEMMOVE_OFFSET))(this);
+		}
+
+		::System::Void LateUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_LATEUPDATE_OFFSET))(this);
+		}
+
+		::System::Void InitViewControl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_INITVIEWCONTROL_OFFSET))(this);
+		}
+
+		::System::Int32 GetArcadeGameID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_GETARCADEGAMEID_OFFSET))(this);
+		}
+
+		::System::Void SetButtonEnable(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_SETBUTTONENABLE_OFFSET))(this, state);
+		}
+
+		::System::Single GetItemCenterY()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_GETITEMCENTERY_OFFSET))(this);
+		}
+
+		::System::Single GetItemHeight()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_GETITEMHEIGHT_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::System::Int32 arcadeGameID, ::System::Boolean force)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, arcadeGameID, force);
+		}
+
+		::System::Void SetWidgetInnerScale(::System::Single scale)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_SETWIDGETINNERSCALE_OFFSET))(this, scale);
+		}
+
+		::System::Void SetWidgetInnerPosition(::UnityEngine::Vector3 localPosition)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_SETWIDGETINNERPOSITION_OFFSET))(this, localPosition);
+		}
+
+		::System::Void EnableCanvasSortingOrder(::System::Int32 order)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_ENABLECANVASSORTINGORDER_OFFSET))(this, order);
+		}
+
+		::System::Void DisableCanvasSortingOrder()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_DISABLECANVASSORTINGORDER_OFFSET))(this);
+		}
+
+		::System::Void SetItemCenterOffset(::System::Int32 offset, ::System::Boolean force)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_SETITEMCENTEROFFSET_OFFSET))(this, offset, force);
+		}
+
+		::System::Void UpdateCanvas()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_UPDATECANVAS_OFFSET))(this);
+		}
+
+		::System::Void UpdateItemScale()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_UPDATEITEMSCALE_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void _UpdateItemScale_g__NewScaleLogicRect_17_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER__UPDATEITEMSCALE_G__NEWSCALELOGICRECT_17_0_OFFSET))(this);
+		}
+
+		::System::Void _UpdateItemScale_g__NewScaleLogic_17_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER__UPDATEITEMSCALE_G__NEWSCALELOGIC_17_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnScrollViewItemMove()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER___BASE_ONSCROLLVIEWITEMMOVE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMENUSELECTROWBASEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

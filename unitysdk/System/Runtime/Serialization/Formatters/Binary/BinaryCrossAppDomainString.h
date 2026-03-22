@@ -4,13 +4,12 @@
 
 namespace System::Runtime::Serialization::Formatters::Binary { class __BinaryParser; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYCROSSAPPDOMAINSTRING_DUMP_OFFSET UNITYSDK_OFFSET(0x15D1AAB0)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYCROSSAPPDOMAINSTRING_READ_OFFSET UNITYSDK_OFFSET(0x15D1AA50)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYCROSSAPPDOMAINSTRING__CTOR_OFFSET UNITYSDK_OFFSET(0x15D1AA40)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYCROSSAPPDOMAINSTRING_READ_OFFSET UNITYSDK_OFFSET(0x18F001D0)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYCROSSAPPDOMAINSTRING__CTOR_OFFSET UNITYSDK_OFFSET(0x18F001C0)
 
 namespace System::Runtime::Serialization::Formatters::Binary
 {
-	inline static constexpr unsigned int BinaryCrossAppDomainString_TypeDefinitionIndex = 1138;
+	inline static constexpr unsigned int BinaryCrossAppDomainString_TypeDefinitionIndex = 1190;
 
 	class BinaryCrossAppDomainString : public ::System::Object
 	{
@@ -26,11 +25,6 @@ namespace System::Runtime::Serialization::Formatters::Binary
 		::System::Void Read(::System::Runtime::Serialization::Formatters::Binary::__BinaryParser* input)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::Formatters::Binary::__BinaryParser*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYCROSSAPPDOMAINSTRING_READ_OFFSET))(this, input);
-		}
-
-		::System::Void Dump()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYCROSSAPPDOMAINSTRING_DUMP_OFFSET))(this);
 		}
 	};
 }

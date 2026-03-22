@@ -6,15 +6,14 @@ namespace System { class String; }
 namespace System::Runtime::Serialization::Formatters::Binary { class __BinaryParser; }
 namespace System::Runtime::Serialization::Formatters::Binary { class __BinaryWriter; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYASSEMBLY_DUMP_OFFSET UNITYSDK_OFFSET(0x15D19070)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYASSEMBLY_READ_OFFSET UNITYSDK_OFFSET(0x15D18FE0)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYASSEMBLY_SET_OFFSET UNITYSDK_OFFSET(0x15D18F50)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYASSEMBLY_WRITE_OFFSET UNITYSDK_OFFSET(0x15D18F60)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYASSEMBLY__CTOR_OFFSET UNITYSDK_OFFSET(0x15D18F40)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYASSEMBLY_READ_OFFSET UNITYSDK_OFFSET(0x1951D9C0)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYASSEMBLY_SET_OFFSET UNITYSDK_OFFSET(0x1951D930)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYASSEMBLY_WRITE_OFFSET UNITYSDK_OFFSET(0x1951D940)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYASSEMBLY__CTOR_OFFSET UNITYSDK_OFFSET(0x1951D920)
 
 namespace System::Runtime::Serialization::Formatters::Binary
 {
-	inline static constexpr unsigned int BinaryAssembly_TypeDefinitionIndex = 1132;
+	inline static constexpr unsigned int BinaryAssembly_TypeDefinitionIndex = 1184;
 
 	class BinaryAssembly : public ::System::Object
 	{
@@ -40,11 +39,6 @@ namespace System::Runtime::Serialization::Formatters::Binary
 		::System::Void Read(::System::Runtime::Serialization::Formatters::Binary::__BinaryParser* input)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::Formatters::Binary::__BinaryParser*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYASSEMBLY_READ_OFFSET))(this, input);
-		}
-
-		::System::Void Dump()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_BINARYASSEMBLY_DUMP_OFFSET))(this);
 		}
 	};
 }

@@ -7,26 +7,38 @@ namespace System::Net { class LazyAsyncResult_ThreadContext; }
 namespace System::Threading { class ManualResetEvent; }
 namespace System::Threading { class WaitHandle; }
 
-#define SYSTEM_NET_LAZYASYNCRESULT_CLEANUP_OFFSET UNITYSDK_OFFSET(0x17EE27E0)
-#define SYSTEM_NET_LAZYASYNCRESULT_COMPLETE_OFFSET UNITYSDK_OFFSET(0x17EE2550)
-#define SYSTEM_NET_LAZYASYNCRESULT_GET_ASYNCOBJECT_OFFSET UNITYSDK_OFFSET(0x17EE2040)
-#define SYSTEM_NET_LAZYASYNCRESULT_GET_ASYNCSTATE_OFFSET UNITYSDK_OFFSET(0x17EE2050)
-#define SYSTEM_NET_LAZYASYNCRESULT_GET_ASYNCWAITHANDLE_OFFSET UNITYSDK_OFFSET(0x17EE2060)
-#define SYSTEM_NET_LAZYASYNCRESULT_GET_COMPLETEDSYNCHRONOUSLY_OFFSET UNITYSDK_OFFSET(0x17EE2300)
-#define SYSTEM_NET_LAZYASYNCRESULT_GET_CURRENTTHREADCONTEXT_OFFSET UNITYSDK_OFFSET(0x17EE1F70)
-#define SYSTEM_NET_LAZYASYNCRESULT_GET_INTERNALPEEKCOMPLETED_OFFSET UNITYSDK_OFFSET(0x17EE22F0)
-#define SYSTEM_NET_LAZYASYNCRESULT_GET_ISCOMPLETED_OFFSET UNITYSDK_OFFSET(0x17EBC7A0)
-#define SYSTEM_NET_LAZYASYNCRESULT_INTERNALWAITFORCOMPLETION_OFFSET UNITYSDK_OFFSET(0x17EBAE90)
-#define SYSTEM_NET_LAZYASYNCRESULT_INVOKECALLBACK_OFFSET UNITYSDK_OFFSET(0x17EBBB30)
-#define SYSTEM_NET_LAZYASYNCRESULT_LAZILYCREATEEVENT_OFFSET UNITYSDK_OFFSET(0x17EE20E0)
-#define SYSTEM_NET_LAZYASYNCRESULT_PROTECTEDINVOKECALLBACK_OFFSET UNITYSDK_OFFSET(0x17EE2320)
-#define SYSTEM_NET_LAZYASYNCRESULT_WAITFORCOMPLETION_OFFSET UNITYSDK_OFFSET(0x17EE27F0)
-#define SYSTEM_NET_LAZYASYNCRESULT_WORKERTHREADCOMPLETE_OFFSET UNITYSDK_OFFSET(0x17EE2750)
-#define SYSTEM_NET_LAZYASYNCRESULT__CTOR_OFFSET UNITYSDK_OFFSET(0x17EBA8E0)
+#define SYSTEM_NET_LAZYASYNCRESULT_CLEANUP_OFFSET UNITYSDK_OFFSET(0x19FDCDE0)
+#define SYSTEM_NET_LAZYASYNCRESULT_COMPLETE_OFFSET UNITYSDK_OFFSET(0x19FDCBF0)
+#define SYSTEM_NET_LAZYASYNCRESULT_DEBUGPROTECTSTATE_OFFSET UNITYSDK_OFFSET(0x19FDC8C0)
+#define SYSTEM_NET_LAZYASYNCRESULT_GET_ASYNCCALLBACK_OFFSET UNITYSDK_OFFSET(0x19FDC620)
+#define SYSTEM_NET_LAZYASYNCRESULT_GET_ASYNCOBJECT_OFFSET UNITYSDK_OFFSET(0x19FDC600)
+#define SYSTEM_NET_LAZYASYNCRESULT_GET_ASYNCSTATE_OFFSET UNITYSDK_OFFSET(0x19FDC610)
+#define SYSTEM_NET_LAZYASYNCRESULT_GET_ASYNCWAITHANDLE_OFFSET UNITYSDK_OFFSET(0x19FDC640)
+#define SYSTEM_NET_LAZYASYNCRESULT_GET_COMPLETEDSYNCHRONOUSLY_OFFSET UNITYSDK_OFFSET(0x19FDC8D0)
+#define SYSTEM_NET_LAZYASYNCRESULT_GET_CURRENTTHREADCONTEXT_OFFSET UNITYSDK_OFFSET(0x19FDC4D0)
+#define SYSTEM_NET_LAZYASYNCRESULT_GET_ENDCALLED_OFFSET UNITYSDK_OFFSET(0x19FDC980)
+#define SYSTEM_NET_LAZYASYNCRESULT_GET_ERRORCODE_OFFSET UNITYSDK_OFFSET(0x19FDC9A0)
+#define SYSTEM_NET_LAZYASYNCRESULT_GET_INTERNALPEEKCOMPLETED_OFFSET UNITYSDK_OFFSET(0x19FDC8B0)
+#define SYSTEM_NET_LAZYASYNCRESULT_GET_ISCOMPLETED_OFFSET UNITYSDK_OFFSET(0x19FDC8F0)
+#define SYSTEM_NET_LAZYASYNCRESULT_GET_RESULT_OFFSET UNITYSDK_OFFSET(0x19FDC920)
+#define SYSTEM_NET_LAZYASYNCRESULT_INTERNALCLEANUP_OFFSET UNITYSDK_OFFSET(0x19FDD050)
+#define SYSTEM_NET_LAZYASYNCRESULT_INTERNALWAITFORCOMPLETION_OFFSET UNITYSDK_OFFSET(0x19FDCDF0)
+#define SYSTEM_NET_LAZYASYNCRESULT_INVOKECALLBACK_1_OFFSET UNITYSDK_OFFSET(0x19FDCBE0)
+#define SYSTEM_NET_LAZYASYNCRESULT_INVOKECALLBACK_OFFSET UNITYSDK_OFFSET(0x19FDCBD0)
+#define SYSTEM_NET_LAZYASYNCRESULT_LAZILYCREATEEVENT_OFFSET UNITYSDK_OFFSET(0x19FDC6C0)
+#define SYSTEM_NET_LAZYASYNCRESULT_PROTECTEDINVOKECALLBACK_OFFSET UNITYSDK_OFFSET(0x19FDC9C0)
+#define SYSTEM_NET_LAZYASYNCRESULT_SET_ASYNCCALLBACK_OFFSET UNITYSDK_OFFSET(0x19FDC630)
+#define SYSTEM_NET_LAZYASYNCRESULT_SET_ENDCALLED_OFFSET UNITYSDK_OFFSET(0x19FDC990)
+#define SYSTEM_NET_LAZYASYNCRESULT_SET_ERRORCODE_OFFSET UNITYSDK_OFFSET(0x19FDC9B0)
+#define SYSTEM_NET_LAZYASYNCRESULT_SET_RESULT_OFFSET UNITYSDK_OFFSET(0x19FDC970)
+#define SYSTEM_NET_LAZYASYNCRESULT_WAITFORCOMPLETION_OFFSET UNITYSDK_OFFSET(0x19FDCE00)
+#define SYSTEM_NET_LAZYASYNCRESULT_WORKERTHREADCOMPLETE_OFFSET UNITYSDK_OFFSET(0x19FDCDC0)
+#define SYSTEM_NET_LAZYASYNCRESULT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19FDC5D0)
+#define SYSTEM_NET_LAZYASYNCRESULT__CTOR_OFFSET UNITYSDK_OFFSET(0x19FDC590)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int LazyAsyncResult_TypeDefinitionIndex = 2760;
+	inline static constexpr unsigned int LazyAsyncResult_TypeDefinitionIndex = 3378;
 
 	class LazyAsyncResult : public ::System::Object
 	{
@@ -35,17 +47,26 @@ namespace System::Net
 		{
 			return (::System::Net::LazyAsyncResult_ThreadContext**)Il2CppClass::FromTypeDefinitionIndex(LazyAsyncResult_TypeDefinitionIndex)->GetStaticField(0x0);
 		}
-		::System::Object* m_AsyncObject; // 0x10
-		::System::Object* m_Event; // 0x18
-		::System::Object* m_Result; // 0x20
-		::System::AsyncCallback* m_AsyncCallback; // 0x28
-		::System::Object* m_AsyncState; // 0x30
+		// static const ::System::Int32 c_HighBit = 0x80000000; // 0x0
+		// static const ::System::Int32 c_ForceAsyncCount = 0x32; // 0x0
+		::System::AsyncCallback* m_AsyncCallback; // 0x10
+		::System::Object* m_AsyncObject; // 0x18
+		::System::Object* m_AsyncState; // 0x20
+		::System::Object* m_Event; // 0x28
+		::System::Object* m_Result; // 0x30
 		::System::Boolean m_UserEvent; // 0x38
-		::System::Int32 m_IntCompleted; // 0x3C
+		::System::Boolean m_EndCalled; // 0x39
+		::System::Int32 m_ErrorCode; // 0x3C
+		::System::Int32 m_IntCompleted; // 0x40
 
 		::System::Void _ctor(::System::Object* myObject, ::System::Object* myState, ::System::AsyncCallback* myCallBack)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*, ::System::AsyncCallback*))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT__CTOR_OFFSET))(this, myObject, myState, myCallBack);
+		}
+
+		::System::Void _ctor_1(::System::Object* myObject, ::System::Object* myState, ::System::AsyncCallback* myCallBack, ::System::Object* result)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT__CTOR_1_OFFSET))(this, myObject, myState, myCallBack, result);
 		}
 
 		static ::System::Net::LazyAsyncResult_ThreadContext* get_CurrentThreadContext()
@@ -63,6 +84,16 @@ namespace System::Net
 			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_GET_ASYNCSTATE_OFFSET))(this);
 		}
 
+		::System::AsyncCallback* get_AsyncCallback()
+		{
+			return ((::System::AsyncCallback*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_GET_ASYNCCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void set_AsyncCallback(::System::AsyncCallback* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::AsyncCallback*))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_SET_ASYNCCALLBACK_OFFSET))(this, value);
+		}
+
 		::System::Threading::WaitHandle* get_AsyncWaitHandle()
 		{
 			return ((::System::Threading::WaitHandle*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_GET_ASYNCWAITHANDLE_OFFSET))(this);
@@ -71,6 +102,11 @@ namespace System::Net
 		::System::Boolean LazilyCreateEvent(::System::Threading::ManualResetEvent*& waitHandle)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::System::Threading::ManualResetEvent*&))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_LAZILYCREATEEVENT_OFFSET))(this, waitHandle);
+		}
+
+		::System::Void DebugProtectState(::System::Boolean protect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_DEBUGPROTECTSTATE_OFFSET))(this, protect);
 		}
 
 		::System::Boolean get_CompletedSynchronously()
@@ -88,6 +124,36 @@ namespace System::Net
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_GET_INTERNALPEEKCOMPLETED_OFFSET))(this);
 		}
 
+		::System::Object* get_Result()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_GET_RESULT_OFFSET))(this);
+		}
+
+		::System::Void set_Result(::System::Object* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_SET_RESULT_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_EndCalled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_GET_ENDCALLED_OFFSET))(this);
+		}
+
+		::System::Void set_EndCalled(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_SET_ENDCALLED_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_ErrorCode()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_GET_ERRORCODE_OFFSET))(this);
+		}
+
+		::System::Void set_ErrorCode(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_SET_ERRORCODE_OFFSET))(this, value);
+		}
+
 		::System::Void ProtectedInvokeCallback(::System::Object* result, ::System::IntPtr userToken)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_PROTECTEDINVOKECALLBACK_OFFSET))(this, result, userToken);
@@ -96,6 +162,11 @@ namespace System::Net
 		::System::Void InvokeCallback(::System::Object* result)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_INVOKECALLBACK_OFFSET))(this, result);
+		}
+
+		::System::Void InvokeCallback_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_INVOKECALLBACK_1_OFFSET))(this);
 		}
 
 		::System::Void Complete(::System::IntPtr userToken)
@@ -121,6 +192,11 @@ namespace System::Net
 		::System::Object* WaitForCompletion(::System::Boolean snap)
 		{
 			return ((::System::Object*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_WAITFORCOMPLETION_OFFSET))(this, snap);
+		}
+
+		::System::Void InternalCleanup()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_LAZYASYNCRESULT_INTERNALCLEANUP_OFFSET))(this);
 		}
 	};
 }

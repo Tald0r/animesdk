@@ -1,15 +1,12 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/UnityEngine/Quaternion.h"
-#include "unitysdk/UnityEngine/Vector3.h"
+#include "unitysdk/Enum_3_3DFF9931974CDE28.h"
+#include "unitysdk/Struct_2_17E0E0442218CD79.h"
 
-class Class_0_16E4307DCC419505_57;
-class Class_1_47EE63CB5C4DC8FC_5;
-class Class_2_9850514C0F89B91A;
-namespace System { class String; }
-namespace UnityEngine { class Transform; }
+class Class_0_16E4307DCC419505_160;
+class Class_1_1C46DBAB65E43874;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_159_TypeDefinitionIndex = 31721;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_159_TypeDefinitionIndex = 47144;
 
 class Class_0_16E4307DCC419505_159
 {

@@ -5,12 +5,12 @@
 namespace MiHoYo::SDK::Uploader { class OSSUploader; }
 namespace MiHoYo::SDK::Uploader { class Task; }
 
-#define MIHOYO_SDK_UPLOADER_OSSUPLOADER___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8265C60)
-#define MIHOYO_SDK_UPLOADER_OSSUPLOADER___C__DISPLAYCLASS1_0__INTERNALUPLOAD_B__0_OFFSET UNITYSDK_OFFSET(0x8265C70)
+#define MIHOYO_SDK_UPLOADER_OSSUPLOADER___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19AFB950)
+#define MIHOYO_SDK_UPLOADER_OSSUPLOADER___C__DISPLAYCLASS1_0__INTERNALUPLOAD_B__0_OFFSET UNITYSDK_OFFSET(0x19AFB960)
 
 namespace MiHoYo::SDK::Uploader
 {
-	inline static constexpr unsigned int OSSUploader___c__DisplayClass1_0_TypeDefinitionIndex = 36415;
+	inline static constexpr unsigned int OSSUploader___c__DisplayClass1_0_TypeDefinitionIndex = 33898;
 
 	class OSSUploader___c__DisplayClass1_0 : public ::System::Object
 	{

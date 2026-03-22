@@ -1,0 +1,105 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace System { class String; }
+
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_CATEGORYCOUNT_OFFSET UNITYSDK_OFFSET(0x182DA150)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_CATEGORYRESOURCEFILE_OFFSET UNITYSDK_OFFSET(0x182DA1D0)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_LOGNAME_OFFSET UNITYSDK_OFFSET(0x182DA250)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_MACHINENAME_OFFSET UNITYSDK_OFFSET(0x182DA2D0)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_MESSAGERESOURCEFILE_OFFSET UNITYSDK_OFFSET(0x182DA350)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_PARAMETERRESOURCEFILE_OFFSET UNITYSDK_OFFSET(0x182DA3D0)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_SOURCE_OFFSET UNITYSDK_OFFSET(0x182DA450)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_CATEGORYCOUNT_OFFSET UNITYSDK_OFFSET(0x182DA190)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_CATEGORYRESOURCEFILE_OFFSET UNITYSDK_OFFSET(0x182DA210)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_LOGNAME_OFFSET UNITYSDK_OFFSET(0x182DA290)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_MACHINENAME_OFFSET UNITYSDK_OFFSET(0x182DA310)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_MESSAGERESOURCEFILE_OFFSET UNITYSDK_OFFSET(0x182DA390)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_PARAMETERRESOURCEFILE_OFFSET UNITYSDK_OFFSET(0x182DA410)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_SOURCE_OFFSET UNITYSDK_OFFSET(0x182DA490)
+#define SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x182DA110)
+
+namespace System::Diagnostics
+{
+	inline static constexpr unsigned int EventSourceCreationData_TypeDefinitionIndex = 4097;
+
+	class EventSourceCreationData : public ::System::Object
+	{
+	public:
+		::System::Void _ctor(::System::String* source, ::System::String* logName)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA__CTOR_OFFSET))(this, source, logName);
+		}
+
+		::System::Int32 get_CategoryCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_CATEGORYCOUNT_OFFSET))(this);
+		}
+
+		::System::Void set_CategoryCount(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_CATEGORYCOUNT_OFFSET))(this, value);
+		}
+
+		::System::String* get_CategoryResourceFile()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_CATEGORYRESOURCEFILE_OFFSET))(this);
+		}
+
+		::System::Void set_CategoryResourceFile(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_CATEGORYRESOURCEFILE_OFFSET))(this, value);
+		}
+
+		::System::String* get_LogName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_LOGNAME_OFFSET))(this);
+		}
+
+		::System::Void set_LogName(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_LOGNAME_OFFSET))(this, value);
+		}
+
+		::System::String* get_MachineName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_MACHINENAME_OFFSET))(this);
+		}
+
+		::System::Void set_MachineName(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_MACHINENAME_OFFSET))(this, value);
+		}
+
+		::System::String* get_MessageResourceFile()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_MESSAGERESOURCEFILE_OFFSET))(this);
+		}
+
+		::System::Void set_MessageResourceFile(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_MESSAGERESOURCEFILE_OFFSET))(this, value);
+		}
+
+		::System::String* get_ParameterResourceFile()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_PARAMETERRESOURCEFILE_OFFSET))(this);
+		}
+
+		::System::Void set_ParameterResourceFile(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_PARAMETERRESOURCEFILE_OFFSET))(this, value);
+		}
+
+		::System::String* get_Source()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_GET_SOURCE_OFFSET))(this);
+		}
+
+		::System::Void set_Source(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_EVENTSOURCECREATIONDATA_SET_SOURCE_OFFSET))(this, value);
+		}
+	};
+}

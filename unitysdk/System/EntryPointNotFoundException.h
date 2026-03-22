@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_ENTRYPOINTNOTFOUNDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C2D550)
-#define SYSTEM_ENTRYPOINTNOTFOUNDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C2D5C0)
-#define SYSTEM_ENTRYPOINTNOTFOUNDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C2D4B0)
+#define SYSTEM_ENTRYPOINTNOTFOUNDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19B694F0)
+#define SYSTEM_ENTRYPOINTNOTFOUNDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x19B69560)
+#define SYSTEM_ENTRYPOINTNOTFOUNDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x19B69450)
 
 namespace System
 {
-	inline static constexpr unsigned int EntryPointNotFoundException_TypeDefinitionIndex = 237;
+	inline static constexpr unsigned int EntryPointNotFoundException_TypeDefinitionIndex = 223;
 
 	class EntryPointNotFoundException : public ::System::TypeLoadException
 	{

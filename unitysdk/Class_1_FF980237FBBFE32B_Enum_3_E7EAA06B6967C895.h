@@ -1,0 +1,11 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+inline static constexpr unsigned int Class_1_FF980237FBBFE32B_Enum_3_E7EAA06B6967C895_TypeDefinitionIndex = 53282;
+
+enum class Class_1_FF980237FBBFE32B_Enum_3_E7EAA06B6967C895 : ::System::Int32
+{
+	Delay = 2,
+	None = 0,
+	Immediate = 1,
+};

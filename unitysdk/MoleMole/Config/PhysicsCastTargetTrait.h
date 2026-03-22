@@ -1,0 +1,92 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlexBuffers/FlxMap.h"
+#include "unitysdk/FlexBuffers/FlxValue.h"
+#include "unitysdk/MoleMole/Config/ConfigViewObjectTraitBase.h"
+
+class Class_1_236FD73ABC492E3F;
+class Class_1_9BBA877A0A83A422;
+namespace System { class Object; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xCD20510)
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_FROMFLX_OFFSET UNITYSDK_OFFSET(0xCD204A0)
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_1D2F15E1636AC595_OFFSET UNITYSDK_OFFSET(0xCD20270)
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_2A6B87C525933554_OFFSET UNITYSDK_OFFSET(0xCD20750)
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_80E12D9970BF6226_OFFSET UNITYSDK_OFFSET(0xCD207C0)
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_915C8E9929D9F299_OFFSET UNITYSDK_OFFSET(0xCD205F0)
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_9B00DC6B301F3F39_OFFSET UNITYSDK_OFFSET(0xCD20520)
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_A042C46DE73C3043_OFFSET UNITYSDK_OFFSET(0xCD20260)
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_B525722F60E6B94F_OFFSET UNITYSDK_OFFSET(0xCD20370)
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_D4DA1493472613E6_OFFSET UNITYSDK_OFFSET(0xCD20500)
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_F86E3F6E3E2B1642_OFFSET UNITYSDK_OFFSET(0xCD20530)
+#define MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT__CTOR_OFFSET UNITYSDK_OFFSET(0xCD205E0)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int PhysicsCastTargetTrait_TypeDefinitionIndex = 58347;
+
+	class PhysicsCastTargetTrait : public ::MoleMole::Config::ConfigViewObjectTraitBase
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Method_2_A042C46DE73C3043(::System::Action_1<::System::Object*>* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::System::Object*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_A042C46DE73C3043_OFFSET))(this, a1);
+		}
+
+		::MoleMole::Config::ConfigViewObjectTraitBase* Method_2_1D2F15E1636AC595()
+		{
+			return ((::MoleMole::Config::ConfigViewObjectTraitBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_1D2F15E1636AC595_OFFSET))(this);
+		}
+
+		::System::Int32 Method_2_B525722F60E6B94F()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_B525722F60E6B94F_OFFSET))(this);
+		}
+
+		::System::Boolean FromFlx(::FlexBuffers::FlxValue a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::FlexBuffers::FlxValue))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_FROMFLX_OFFSET))(this, a1);
+		}
+
+		::System::Boolean FromBinary(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_FROMBINARY_OFFSET))(this, a1, a2);
+		}
+
+		::System::Boolean Method_2_F86E3F6E3E2B1642(::Class_1_9BBA877A0A83A422* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_9BBA877A0A83A422*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_F86E3F6E3E2B1642_OFFSET))(this, a1);
+		}
+
+		static ::MoleMole::Config::PhysicsCastTargetTrait* Method_2_915C8E9929D9F299(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+		{
+			return ((::MoleMole::Config::PhysicsCastTargetTrait*(*)(::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_915C8E9929D9F299_OFFSET))(a1, a2);
+		}
+
+		::System::Boolean Method_2_9B00DC6B301F3F39(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_9B00DC6B301F3F39_OFFSET))(this, a1, a2);
+		}
+
+		::System::Boolean Method_2_2A6B87C525933554(::Class_1_9BBA877A0A83A422* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_9BBA877A0A83A422*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_2A6B87C525933554_OFFSET))(this, a1);
+		}
+
+		static ::MoleMole::Config::PhysicsCastTargetTrait* Method_2_80E12D9970BF6226(::FlexBuffers::FlxValue a1)
+		{
+			return ((::MoleMole::Config::PhysicsCastTargetTrait*(*)(::FlexBuffers::FlxValue))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_80E12D9970BF6226_OFFSET))(a1);
+		}
+
+		::System::Boolean Method_2_D4DA1493472613E6(::FlexBuffers::FlxMap a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::FlexBuffers::FlxMap))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_PHYSICSCASTTARGETTRAIT_METHOD_2_D4DA1493472613E6_OFFSET))(this, a1);
+		}
+	};
+}

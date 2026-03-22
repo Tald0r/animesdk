@@ -2,37 +2,58 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
+namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Collections { class ArrayList; }
+namespace System::Collections { class IEnumerator; }
+namespace System::Collections::Specialized { class StringDictionary; }
 namespace System::Net { class Authorization; }
+namespace System::Net { class IAuthenticationModule; }
 namespace System::Net { class ICredentialPolicy; }
 namespace System::Net { class ICredentials; }
 namespace System::Net { class WebRequest; }
 
-#define SYSTEM_NET_AUTHENTICATIONMANAGER_AUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x17E9EF40)
-#define SYSTEM_NET_AUTHENTICATIONMANAGER_DOAUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x17E9F040)
-#define SYSTEM_NET_AUTHENTICATIONMANAGER_ENSUREMODULES_OFFSET UNITYSDK_OFFSET(0x17E9ECC0)
-#define SYSTEM_NET_AUTHENTICATIONMANAGER_PREAUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x17E9F6F0)
-#define SYSTEM_NET_AUTHENTICATIONMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x17E9FDD0)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_AUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x18FB7100)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_CLEAR_OFFSET UNITYSDK_OFFSET(0x18FB6FC0)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_DOAUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x18FB7200)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_DOUNREGISTER_OFFSET UNITYSDK_OFFSET(0x18FB8190)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_ENSUREMODULES_OFFSET UNITYSDK_OFFSET(0x18FB6B10)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_GETMUSTIMPLEMENT_OFFSET UNITYSDK_OFFSET(0x18FB6E40)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_GET_CREDENTIALPOLICY_OFFSET UNITYSDK_OFFSET(0x18FB6D80)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_GET_CUSTOMTARGETNAMEDICTIONARY_OFFSET UNITYSDK_OFFSET(0x18FB6EF0)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_GET_OSSUPPORTSEXTENDEDPROTECTION_OFFSET UNITYSDK_OFFSET(0x18FB6FB0)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_GET_REGISTEREDMODULES_OFFSET UNITYSDK_OFFSET(0x18FB6F30)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_PREAUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x18FB78B0)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_REGISTER_OFFSET UNITYSDK_OFFSET(0x18FB7F90)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_SET_CREDENTIALPOLICY_OFFSET UNITYSDK_OFFSET(0x18FB6DE0)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_UNREGISTER_1_OFFSET UNITYSDK_OFFSET(0x18FB8840)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER_UNREGISTER_OFFSET UNITYSDK_OFFSET(0x18FB8720)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x18FB88C0)
+#define SYSTEM_NET_AUTHENTICATIONMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x18FB6B00)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int AuthenticationManager_TypeDefinitionIndex = 2802;
+	inline static constexpr unsigned int AuthenticationManager_TypeDefinitionIndex = 3492;
 
 	class AuthenticationManager : public ::System::Object
 	{
 	public:
-		static ::System::Net::ICredentialPolicy** StaticGet_credential_policy()
+		static ::System::Collections::ArrayList** StaticGet_modules()
 		{
-			return (::System::Net::ICredentialPolicy**)Il2CppClass::FromTypeDefinitionIndex(AuthenticationManager_TypeDefinitionIndex)->GetStaticField(0x169F0);
+			return (::System::Collections::ArrayList**)Il2CppClass::FromTypeDefinitionIndex(AuthenticationManager_TypeDefinitionIndex)->GetStaticField(0x2930);
 		}
 		static ::System::Object** StaticGet_locker()
 		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(AuthenticationManager_TypeDefinitionIndex)->GetStaticField(0x169F8);
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(AuthenticationManager_TypeDefinitionIndex)->GetStaticField(0x2938);
 		}
-		static ::System::Collections::ArrayList** StaticGet_modules()
+		static ::System::Net::ICredentialPolicy** StaticGet_credential_policy()
 		{
-			return (::System::Collections::ArrayList**)Il2CppClass::FromTypeDefinitionIndex(AuthenticationManager_TypeDefinitionIndex)->GetStaticField(0x16A00);
+			return (::System::Net::ICredentialPolicy**)Il2CppClass::FromTypeDefinitionIndex(AuthenticationManager_TypeDefinitionIndex)->GetStaticField(0x2940);
+		}
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER__CTOR_OFFSET))(this);
 		}
 
 		static ::System::Void _cctor()
@@ -43,6 +64,41 @@ namespace System::Net
 		static ::System::Void EnsureModules()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_ENSUREMODULES_OFFSET))();
+		}
+
+		static ::System::Net::ICredentialPolicy* get_CredentialPolicy()
+		{
+			return ((::System::Net::ICredentialPolicy*(*)())((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_GET_CREDENTIALPOLICY_OFFSET))();
+		}
+
+		static ::System::Void set_CredentialPolicy(::System::Net::ICredentialPolicy* value)
+		{
+			return ((::System::Void(*)(::System::Net::ICredentialPolicy*))((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_SET_CREDENTIALPOLICY_OFFSET))(value);
+		}
+
+		static ::System::Exception* GetMustImplement()
+		{
+			return ((::System::Exception*(*)())((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_GETMUSTIMPLEMENT_OFFSET))();
+		}
+
+		static ::System::Collections::Specialized::StringDictionary* get_CustomTargetNameDictionary()
+		{
+			return ((::System::Collections::Specialized::StringDictionary*(*)())((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_GET_CUSTOMTARGETNAMEDICTIONARY_OFFSET))();
+		}
+
+		static ::System::Collections::IEnumerator* get_RegisteredModules()
+		{
+			return ((::System::Collections::IEnumerator*(*)())((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_GET_REGISTEREDMODULES_OFFSET))();
+		}
+
+		static ::System::Boolean get_OSSupportsExtendedProtection()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_GET_OSSUPPORTSEXTENDEDPROTECTION_OFFSET))();
+		}
+
+		static ::System::Void Clear()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_CLEAR_OFFSET))();
 		}
 
 		static ::System::Net::Authorization* Authenticate(::System::String* challenge, ::System::Net::WebRequest* request, ::System::Net::ICredentials* credentials)
@@ -58,6 +114,26 @@ namespace System::Net
 		static ::System::Net::Authorization* PreAuthenticate(::System::Net::WebRequest* request, ::System::Net::ICredentials* credentials)
 		{
 			return ((::System::Net::Authorization*(*)(::System::Net::WebRequest*, ::System::Net::ICredentials*))((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_PREAUTHENTICATE_OFFSET))(request, credentials);
+		}
+
+		static ::System::Void Register(::System::Net::IAuthenticationModule* authenticationModule)
+		{
+			return ((::System::Void(*)(::System::Net::IAuthenticationModule*))((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_REGISTER_OFFSET))(authenticationModule);
+		}
+
+		static ::System::Void Unregister(::System::Net::IAuthenticationModule* authenticationModule)
+		{
+			return ((::System::Void(*)(::System::Net::IAuthenticationModule*))((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_UNREGISTER_OFFSET))(authenticationModule);
+		}
+
+		static ::System::Void Unregister_1(::System::String* authenticationScheme)
+		{
+			return ((::System::Void(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_UNREGISTER_1_OFFSET))(authenticationScheme);
+		}
+
+		static ::System::Void DoUnregister(::System::String* authenticationScheme, ::System::Boolean throwEx)
+		{
+			return ((::System::Void(*)(::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_AUTHENTICATIONMANAGER_DOUNREGISTER_OFFSET))(authenticationScheme, throwEx);
 		}
 	};
 }

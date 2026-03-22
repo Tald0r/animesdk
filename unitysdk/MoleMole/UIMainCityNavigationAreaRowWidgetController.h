@@ -1,0 +1,190 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_DF6C6EDD3432F685;
+class Class_3_41D28B70EDF95E34;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Action; }
+namespace System { class Object; }
+namespace System { class String; }
+namespace UnityEngine { class Animation; }
+
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_GETAREAID_OFFSET UNITYSDK_OFFSET(0x68BFE00)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_GETCENTERDIS_OFFSET UNITYSDK_OFFSET(0x68BFC70)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x68BEA50)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0x68BF500)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x68BEBE0)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONSCROLLVIEWITEMMOVE_OFFSET UNITYSDK_OFFSET(0x68BF570)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x68BEAF0)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x68BE750)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_PLAYTRACKICONANIM_OFFSET UNITYSDK_OFFSET(0x68C0040)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_PLAYUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0x68BFE70)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_REFRESHQUESTTRACK_OFFSET UNITYSDK_OFFSET(0x68C0190)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x68BEDA0)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_SETAREAID_OFFSET UNITYSDK_OFFSET(0x68BED30)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_SETINPUTKEYVISIBLE_OFFSET UNITYSDK_OFFSET(0x68C00A0)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_SETITEMSELECT_OFFSET UNITYSDK_OFFSET(0x68BF410)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_SETPOSITIONOFFSET_OFFSET UNITYSDK_OFFSET(0x68C0240)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_SHOWNOTIFICATION_OFFSET UNITYSDK_OFFSET(0x68C0130)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0x68C04B0)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x68C04A0)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x68C0510)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0x68C0580)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x68C05F0)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONSCROLLVIEWITEMMOVE_OFFSET UNITYSDK_OFFSET(0x68C0670)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x68C06D0)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x68C0750)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMainCityNavigationAreaRowWidgetController_TypeDefinitionIndex = 45760;
+
+	class UIMainCityNavigationAreaRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		static ::System::String** StaticGet__tempUnlockAnimOut()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIMainCityNavigationAreaRowWidgetController_TypeDefinitionIndex)->GetStaticField(0x34BC0);
+		}
+		static ::System::String** StaticGet__tempUnlockAnim()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIMainCityNavigationAreaRowWidgetController_TypeDefinitionIndex)->GetStaticField(0x34BC8);
+		}
+		static ::System::String** StaticGet__unlockAnim()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIMainCityNavigationAreaRowWidgetController_TypeDefinitionIndex)->GetStaticField(0x34BD0);
+		}
+		::Class_2_DF6C6EDD3432F685* _view; // 0x2D0
+		::System::Single _itemWith; // 0x2D8
+		::Class_3_41D28B70EDF95E34* _blockUINotification; // 0x2E0
+		::UnityEngine::Animation* tempUnlockAnim; // 0x2E8
+		::System::Int32 _areaID; // 0x2F0
+		::System::Boolean _needUnlock; // 0x2F4
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void SetItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_SETITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnScrollViewItemMove()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_ONSCROLLVIEWITEMMOVE_OFFSET))(this);
+		}
+
+		::System::Single GetCenterDis()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_GETCENTERDIS_OFFSET))(this);
+		}
+
+		::System::Int32 GetAreaID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_GETAREAID_OFFSET))(this);
+		}
+
+		::System::Void PlayUnlockAnim(::System::Action* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_PLAYUNLOCKANIM_OFFSET))(this, callback);
+		}
+
+		::System::Void PlayTrackIconAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_PLAYTRACKICONANIM_OFFSET))(this);
+		}
+
+		::System::Void SetInputKeyVisible(::System::Boolean visible)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_SETINPUTKEYVISIBLE_OFFSET))(this, visible);
+		}
+
+		::System::Void SetAreaID(::System::Int32 areaID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_SETAREAID_OFFSET))(this, areaID);
+		}
+
+		::System::Void ShowNotification()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_SHOWNOTIFICATION_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void SetPositionOffset(::System::String* iconPath)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_SETPOSITIONOFFSET_OFFSET))(this, iconPath);
+		}
+
+		::System::Void RefreshQuestTrack()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER_REFRESHQUESTTRACK_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnScrollViewItemMove()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONSCROLLVIEWITEMMOVE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYNAVIGATIONAREAROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

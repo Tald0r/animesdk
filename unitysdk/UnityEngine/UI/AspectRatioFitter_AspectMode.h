@@ -3,7 +3,7 @@
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int AspectRatioFitter_AspectMode_TypeDefinitionIndex = 5518;
+	inline static constexpr unsigned int AspectRatioFitter_AspectMode_TypeDefinitionIndex = 8365;
 
 	enum class AspectRatioFitter_AspectMode : ::System::Int32
 	{

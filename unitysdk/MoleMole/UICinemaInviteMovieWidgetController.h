@@ -1,0 +1,139 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_C6CFD545CB9F30D6;
+class Class_2_B191F157DF5DCD67;
+namespace MoleMole { class UICinemaInvitePageController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_DOSTARTDATELEVEL_OFFSET UNITYSDK_OFFSET(0x8067A50)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONCLICKINVITEMOVIE_OFFSET UNITYSDK_OFFSET(0x8067300)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONCLICKSTARTDATEMOVIE_OFFSET UNITYSDK_OFFSET(0x8067670)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x80674F0)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x8067420)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8067590)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8066CC0)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8066EA0)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_REFRESHAVATARLIKEMOVIE_OFFSET UNITYSDK_OFFSET(0x80666D0)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_REFRESHRIGHTINFO_OFFSET UNITYSDK_OFFSET(0x80664A0)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_REFRESHTAGTAB_OFFSET UNITYSDK_OFFSET(0x8066940)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_REFRESHTEXTINFO_OFFSET UNITYSDK_OFFSET(0x8066580)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_SETDATEROLE_OFFSET UNITYSDK_OFFSET(0x80663B0)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8067AC0)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8067AF0)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x8067B60)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8067BD0)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8067C50)
+#define MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8067CB0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICinemaInviteMovieWidgetController_TypeDefinitionIndex = 48555;
+
+	class UICinemaInviteMovieWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_B191F157DF5DCD67* _view; // 0x2A0
+		::MoleMole::UICinemaInvitePageController* parentPageController; // 0x2A8
+		::System::Collections::Generic::List_1<::Class_1_C6CFD545CB9F30D6*>* movieList; // 0x2B0
+		::Class_1_C6CFD545CB9F30D6* nowMovieData; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void SetDateRole()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_SETDATEROLE_OFFSET))(this);
+		}
+
+		::System::Void RefreshRightInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_REFRESHRIGHTINFO_OFFSET))(this);
+		}
+
+		::System::Void RefreshTextInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_REFRESHTEXTINFO_OFFSET))(this);
+		}
+
+		::System::Void RefreshAvatarLikeMovie()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_REFRESHAVATARLIKEMOVIE_OFFSET))(this);
+		}
+
+		::System::Void RefreshTagTab()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_REFRESHTAGTAB_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnClickStartDateMovie()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONCLICKSTARTDATEMOVIE_OFFSET))(this);
+		}
+
+		::System::Void DoStartDateLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_DOSTARTDATELEVEL_OFFSET))(this);
+		}
+
+		::System::Void OnClickInviteMovie(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER_ONCLICKINVITEMOVIE_OFFSET))(this, index);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAINVITEMOVIEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

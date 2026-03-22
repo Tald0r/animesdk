@@ -1,0 +1,123 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_79AE422BA06F6D26_8;
+namespace MoleMole { class AvatarStoryStyleBtnContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralNewHintWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_CLICKENTRY_OFFSET UNITYSDK_OFFSET(0xBD855E0)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONCLICKENTRY_OFFSET UNITYSDK_OFFSET(0xBD84C70)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBD84AF0)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONPERIODCHANGE_OFFSET UNITYSDK_OFFSET(0xBD84A60)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBD82DE0)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBD84B90)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBD82B60)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBD82D30)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_SETENTRYSTATE_OFFSET UNITYSDK_OFFSET(0xBD83440)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_UPDATESTYLE_OFFSET UNITYSDK_OFFSET(0xBD82F10)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBD85670)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBD856A0)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBD85710)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBD85780)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBD85800)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBD85860)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityOVALighterEntryBtnWidgetController_TypeDefinitionIndex = 65748;
+
+	class UIActivityOVALighterEntryBtnWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* ClickEntryActionValue; // 0x0
+		::Class_2_79AE422BA06F6D26_8* _view; // 0x2A0
+		::MoleMole::AvatarStoryStyleBtnContext* context; // 0x2A8
+		::MoleMole::UIGeneralNewHintWidgetController* popNew; // 0x2B0
+		::System::Int32 focusQuest; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void UpdateStyle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_UPDATESTYLE_OFFSET))(this);
+		}
+
+		::System::Void OnPeriodChange(::System::EventArgs* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONPERIODCHANGE_OFFSET))(this, arg);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnClickEntry()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_ONCLICKENTRY_OFFSET))(this);
+		}
+
+		::System::Void ClickEntry(::System::Int32 focusQuest)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_CLICKENTRY_OFFSET))(this, focusQuest);
+		}
+
+		::System::Void SetEntryState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER_SETENTRYSTATE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYOVALIGHTERENTRYBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

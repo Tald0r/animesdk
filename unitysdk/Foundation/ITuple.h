@@ -1,0 +1,14 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace System { class String; }
+
+namespace Foundation
+{
+	inline static constexpr unsigned int ITuple_TypeDefinitionIndex = 7959;
+
+	class ITuple
+	{
+	public:
+	};
+}

@@ -1,0 +1,204 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_B90C1A15EA6E3C2B.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_B2C060183F4E5398;
+class Class_2_1556BC22B0BEF6B6;
+class Class_2_208CC9941471731A_32;
+class Class_2_383BD95DA56206F0;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIBossIllustratedBookCardWidgetWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_BINDEVENT_OFFSET UNITYSDK_OFFSET(0xC3FACB0)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_COMPARISONMONSTERCARD_OFFSET UNITYSDK_OFFSET(0xC3FC210)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_CREATEFUNC_OFFSET UNITYSDK_OFFSET(0xC3FAE40)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_CREATEITEM_OFFSET UNITYSDK_OFFSET(0xC3FBA20)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_GETCOLLECTIONTYPE_OFFSET UNITYSDK_OFFSET(0xC3FBC30)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_GETCURRENTCOLLECTIONTYPE_OFFSET UNITYSDK_OFFSET(0xC3FB760)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xC3FA970)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_INITMONSTERCARDS_OFFSET UNITYSDK_OFFSET(0xC3FABE0)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_INITTABS_OFFSET UNITYSDK_OFFSET(0xC3FB100)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONCLICKMONSTERCARD_OFFSET UNITYSDK_OFFSET(0xC3FBBA0)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC3FA980)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xC3FB2E0)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONNEWMONSTERCARDHANDLE_OFFSET UNITYSDK_OFFSET(0xC3FB8D0)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONSELECTTAB_OFFSET UNITYSDK_OFFSET(0xC3FB540)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xC3FB660)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC3FB7D0)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC3FAA20)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC3FAF60)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_REFRESHINFO_OFFSET UNITYSDK_OFFSET(0xC3FB030)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_REFRESHMONSTERCARDS_OFFSET UNITYSDK_OFFSET(0xC3FBCF0)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_REFRESHPROGRESS_OFFSET UNITYSDK_OFFSET(0xC3FC0C0)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC3FC330)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC3FC420)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xC3FC490)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xC3FC510)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC3FC520)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC3FC530)
+#define MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC3FC540)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVRBossIllustratedBookPageController_TypeDefinitionIndex = 44198;
+
+	class UIVRBossIllustratedBookPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_383BD95DA56206F0* _view; // 0x2F8
+		::Class_2_1556BC22B0BEF6B6* _model; // 0x300
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_32*>* _collectionTemplateExts; // 0x308
+		::System::Collections::Generic::List_1<::Class_1_B2C060183F4E5398*>* _monsterCardSummaries; // 0x310
+		::System::Int32 _currentCollectionTypeIndex; // 0x318
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateFunc(::Enum_3_B90C1A15EA6E3C2B arg1, ::System::Func_1<::MoleMole::UIControlReference*>* arg2)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::Enum_3_B90C1A15EA6E3C2B, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_CREATEFUNC_OFFSET))(this, arg1, arg2);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void BindEvent()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_BINDEVENT_OFFSET))(this);
+		}
+
+		::System::Void OnNewMonsterCardHandle(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONNEWMONSTERCARDHANDLE_OFFSET))(this, args);
+		}
+
+		::System::Void InitTabs()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_INITTABS_OFFSET))(this);
+		}
+
+		::System::Void InitMonsterCards()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_INITMONSTERCARDS_OFFSET))(this);
+		}
+
+		::MoleMole::UIBossIllustratedBookCardWidgetWidgetController* CreateItem(::System::Func_1<::MoleMole::UIControlReference*>* controlReference)
+		{
+			return ((::MoleMole::UIBossIllustratedBookCardWidgetWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_CREATEITEM_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnClickMonsterCard(::Class_1_B2C060183F4E5398* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_B2C060183F4E5398*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONCLICKMONSTERCARD_OFFSET))(this, data);
+		}
+
+		::System::Void OnSelectTab(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_ONSELECTTAB_OFFSET))(this, index);
+		}
+
+		::System::Void RefreshInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_REFRESHINFO_OFFSET))(this);
+		}
+
+		::Class_2_208CC9941471731A_32* GetCurrentCollectionType()
+		{
+			return ((::Class_2_208CC9941471731A_32*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_GETCURRENTCOLLECTIONTYPE_OFFSET))(this);
+		}
+
+		::Class_2_208CC9941471731A_32* GetCollectionType(::System::Int32 index)
+		{
+			return ((::Class_2_208CC9941471731A_32*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_GETCOLLECTIONTYPE_OFFSET))(this, index);
+		}
+
+		::System::Void RefreshMonsterCards(::Class_2_208CC9941471731A_32* collectionTemplate)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_32*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_REFRESHMONSTERCARDS_OFFSET))(this, collectionTemplate);
+		}
+
+		::System::Int32 ComparisonMonsterCard(::Class_1_B2C060183F4E5398* x, ::Class_1_B2C060183F4E5398* y)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_B2C060183F4E5398*, ::Class_1_B2C060183F4E5398*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_COMPARISONMONSTERCARD_OFFSET))(this, x, y);
+		}
+
+		::System::Void RefreshProgress()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER_REFRESHPROGRESS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSILLUSTRATEDBOOKPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

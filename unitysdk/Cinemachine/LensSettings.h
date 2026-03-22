@@ -1,48 +1,52 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Cinemachine/LensSettings_OverrideModes.h"
 #include "unitysdk/System/ValueType.h"
+#include "unitysdk/UnityEngine/Camera_GateFitMode.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
 namespace UnityEngine { class Camera; }
 
-#define CINEMACHINE_LENSSETTINGS_FROMCAMERA_OFFSET UNITYSDK_OFFSET(0x11265710)
-#define CINEMACHINE_LENSSETTINGS_GET_ASPECT_OFFSET UNITYSDK_OFFSET(0x14661E0)
-#define CINEMACHINE_LENSSETTINGS_GET_ISPHYSICALCAMERA_OFFSET UNITYSDK_OFFSET(0x57AD0)
-#define CINEMACHINE_LENSSETTINGS_GET_ORTHOGRAPHIC_OFFSET UNITYSDK_OFFSET(0xCA8E0)
-#define CINEMACHINE_LENSSETTINGS_GET_SENSORSIZE_OFFSET UNITYSDK_OFFSET(0x28F50)
-#define CINEMACHINE_LENSSETTINGS_LERP_OFFSET UNITYSDK_OFFSET(0x11265990)
-#define CINEMACHINE_LENSSETTINGS_SET_ISPHYSICALCAMERA_OFFSET UNITYSDK_OFFSET(0x58CC0)
-#define CINEMACHINE_LENSSETTINGS_SET_ORTHOGRAPHIC_OFFSET UNITYSDK_OFFSET(0xCA8F0)
-#define CINEMACHINE_LENSSETTINGS_SET_SENSORSIZE_OFFSET UNITYSDK_OFFSET(0x28F60)
-#define CINEMACHINE_LENSSETTINGS_SNAPSHOTCAMERAREADONLYPROPERTIES_1_OFFSET UNITYSDK_OFFSET(0x1466290)
-#define CINEMACHINE_LENSSETTINGS_SNAPSHOTCAMERAREADONLYPROPERTIES_OFFSET UNITYSDK_OFFSET(0x1466210)
-#define CINEMACHINE_LENSSETTINGS_VALIDATE_OFFSET UNITYSDK_OFFSET(0x1466300)
-#define CINEMACHINE_LENSSETTINGS__CCTOR_OFFSET UNITYSDK_OFFSET(0x11265B20)
-#define CINEMACHINE_LENSSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x14662C0)
+#define CINEMACHINE_LENSSETTINGS_FROMCAMERA_OFFSET UNITYSDK_OFFSET(0x1AD0B670)
+#define CINEMACHINE_LENSSETTINGS_GET_ASPECT_OFFSET UNITYSDK_OFFSET(0x961140)
+#define CINEMACHINE_LENSSETTINGS_GET_ISPHYSICALCAMERA_OFFSET UNITYSDK_OFFSET(0x961170)
+#define CINEMACHINE_LENSSETTINGS_GET_ORTHOGRAPHIC_OFFSET UNITYSDK_OFFSET(0x9610F0)
+#define CINEMACHINE_LENSSETTINGS_GET_SENSORSIZE_OFFSET UNITYSDK_OFFSET(0x3B3FD0)
+#define CINEMACHINE_LENSSETTINGS_LERP_OFFSET UNITYSDK_OFFSET(0x1AD0BA60)
+#define CINEMACHINE_LENSSETTINGS_SET_ISPHYSICALCAMERA_OFFSET UNITYSDK_OFFSET(0x961190)
+#define CINEMACHINE_LENSSETTINGS_SET_ORTHOGRAPHIC_OFFSET UNITYSDK_OFFSET(0x961110)
+#define CINEMACHINE_LENSSETTINGS_SET_SENSORSIZE_OFFSET UNITYSDK_OFFSET(0x961130)
+#define CINEMACHINE_LENSSETTINGS_SNAPSHOTCAMERAREADONLYPROPERTIES_1_OFFSET UNITYSDK_OFFSET(0x9611B0)
+#define CINEMACHINE_LENSSETTINGS_SNAPSHOTCAMERAREADONLYPROPERTIES_OFFSET UNITYSDK_OFFSET(0x9611A0)
+#define CINEMACHINE_LENSSETTINGS_VALIDATE_OFFSET UNITYSDK_OFFSET(0x961260)
+#define CINEMACHINE_LENSSETTINGS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AD0BBF0)
+#define CINEMACHINE_LENSSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x961210)
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int LensSettings_TypeDefinitionIndex = 30006;
+	inline static constexpr unsigned int LensSettings_TypeDefinitionIndex = 31107;
 
 	struct alignas(4) LensSettings
 	{
 		static ::Cinemachine::LensSettings* StaticGet_Default()
 		{
-			return (::Cinemachine::LensSettings*)Il2CppClass::FromTypeDefinitionIndex(LensSettings_TypeDefinitionIndex)->GetStaticField(0xBD0);
+			return (::Cinemachine::LensSettings*)Il2CppClass::FromTypeDefinitionIndex(LensSettings_TypeDefinitionIndex)->GetStaticField(0x7A10);
 		}
 		::System::Single FieldOfView; // 0x10
 		::System::Single OrthographicSize; // 0x14
 		::System::Single NearClipPlane; // 0x18
 		::System::Single FarClipPlane; // 0x1C
 		::System::Single Dutch; // 0x20
-		::System::Boolean _Orthographic_k__BackingField; // 0x24
-		::UnityEngine::Vector2 _SensorSize_k__BackingField; // 0x28
-		::System::Boolean _IsPhysicalCamera_k__BackingField; // 0x30
-		::UnityEngine::Vector2 LensShift; // 0x34
+		::Cinemachine::LensSettings_OverrideModes ModeOverride; // 0x24
+		::UnityEngine::Vector2 LensShift; // 0x28
+		::UnityEngine::Camera_GateFitMode GateFit; // 0x30
+		::UnityEngine::Vector2 m_SensorSize; // 0x34
+		::System::Boolean m_OrthoFromCamera; // 0x3C
+		::System::Boolean m_PhysicalFromCamera; // 0x3D
 
-		::System::Void _ctor(::System::Single fov, ::System::Single orthographicSize, ::System::Single nearClip, ::System::Single farClip, ::System::Single dutch)
+		::System::Void _ctor(::System::Single verticalFOV, ::System::Single orthographicSize, ::System::Single nearClip, ::System::Single farClip, ::System::Single dutch)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Single, ::System::Single, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + CINEMACHINE_LENSSETTINGS__CTOR_OFFSET))(this, fov, orthographicSize, nearClip, farClip, dutch);
+			return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Single, ::System::Single, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + CINEMACHINE_LENSSETTINGS__CTOR_OFFSET))(this, verticalFOV, orthographicSize, nearClip, farClip, dutch);
 		}
 
 		static ::System::Void _cctor()

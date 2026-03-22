@@ -1,0 +1,213 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_DB663931210BBC27_2.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/MonoUITableScrollV2_MoveContext.h"
+
+class Class_1_C24B693A39FF0505_1;
+class Class_1_F9A4B687C800B5DE;
+class Class_2_60638234271CCDB8_2;
+namespace MoleMole { class BPRewardInfoWidgetContext; }
+namespace MoleMole { class MonoBPAnimations; }
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_COMPARISON_OFFSET UNITYSDK_OFFSET(0xDC58180)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_GETINITSCROLLVIEWSITE_OFFSET UNITYSDK_OFFSET(0xDC575E0)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONBPDIALOGSHOWCHANGED_OFFSET UNITYSDK_OFFSET(0xDC56C20)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xDC55820)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xDC558C0)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONLEVELINFOCHANGED_OFFSET UNITYSDK_OFFSET(0xDC56B80)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONOPENREWARDINFOWIDGET_OFFSET UNITYSDK_OFFSET(0xDC544D0)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONREWARDCHANGED_OFFSET UNITYSDK_OFFSET(0xDC56690)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONREWARDSCROLLVIEWCHANGED_OFFSET UNITYSDK_OFFSET(0xDC57890)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xDC54AB0)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONSTARTSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0xDC57800)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xDC55E10)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xDC53EA0)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xDC54060)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_PLAYREWARDITEMSHOWEFFECT_OFFSET UNITYSDK_OFFSET(0xDC58220)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_REFRESHLEVELREWARDDATALIST_OFFSET UNITYSDK_OFFSET(0xDC56130)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_REFRESHRIGHTMAXREWARD_OFFSET UNITYSDK_OFFSET(0xDC56830)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_RESETREWARDITEMSHOWEFFECT_OFFSET UNITYSDK_OFFSET(0xDC55970)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_SCROLLVIEWSLIDETOTARGETONOPEN_OFFSET UNITYSDK_OFFSET(0xDC54BC0)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_STARTREWARDANIM_OFFSET UNITYSDK_OFFSET(0xDC56CA0)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_STARTREWARDLEVELCHANGEDANIM_OFFSET UNITYSDK_OFFSET(0xDC55330)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xDC584D0)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER__PLAYREWARDITEMSHOWEFFECT_B__32_0_OFFSET UNITYSDK_OFFSET(0xDC585D0)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xDC58760)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0xDC587D0)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xDC58830)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xDC588A0)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xDC58920)
+#define MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xDC58980)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBPRewardInfoWidgetWidgetController_TypeDefinitionIndex = 62860;
+
+	class UIBPRewardInfoWidgetWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_60638234271CCDB8_2* _view; // 0x2A0
+		::System::Int32 nowRightShowLevel; // 0x2A8
+		::System::Collections::Generic::List_1<::Class_1_C24B693A39FF0505_1*>* levelList; // 0x2B0
+		::Class_1_F9A4B687C800B5DE* rightLevelRewardHandler; // 0x2B8
+		::MoleMole::MonoBPAnimations* bpAnimation; // 0x2C0
+		::System::Boolean firstOpen; // 0x2C8
+		::System::Int32 rewardItemIndex; // 0x2CC
+		::System::Int32 oldLevel; // 0x2D0
+		::Enum_3_DB663931210BBC27_2 oldPurchaseType; // 0x2D4
+		::System::Boolean rewardStateChanged; // 0x2D8
+		::MoleMole::BPRewardInfoWidgetContext* context; // 0x2E0
+		::System::Collections::Generic::List_1<::MoleMole::ScrollViewItemWidgetController*>* ItemList; // 0x2E8
+		::System::Collections::Generic::List_1<::MoleMole::ScrollViewItemWidgetController*>* ItemList2; // 0x2F0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnOpenRewardInfoWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONOPENREWARDINFOWIDGET_OFFSET))(this);
+		}
+
+		::System::Void OnRewardChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONREWARDCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnLevelInfoChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONLEVELINFOCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnBPDialogShowChanged(::System::Boolean isOpen)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONBPDIALOGSHOWCHANGED_OFFSET))(this, isOpen);
+		}
+
+		::System::Void StartRewardLevelChangedAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_STARTREWARDLEVELCHANGEDANIM_OFFSET))(this);
+		}
+
+		::System::Void ScrollViewSlideToTargetOnOpen()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_SCROLLVIEWSLIDETOTARGETONOPEN_OFFSET))(this);
+		}
+
+		::System::Void GetInitScrollViewSite(::System::Int32& scrollIndex, ::System::Boolean& hasReward)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32&, ::System::Boolean&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_GETINITSCROLLVIEWSITE_OFFSET))(this, scrollIndex, hasReward);
+		}
+
+		::System::Void OnStartScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONSTARTSCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnRewardScrollViewChanged(::MonoUITableScrollV2_MoveContext moveContext, ::System::Single site)
+		{
+			return ((::System::Void(*)(::PVOID, ::MonoUITableScrollV2_MoveContext, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_ONREWARDSCROLLVIEWCHANGED_OFFSET))(this, moveContext, site);
+		}
+
+		static ::System::Int32 Comparison(::MoleMole::ScrollViewItemWidgetController* x, ::MoleMole::ScrollViewItemWidgetController* y)
+		{
+			return ((::System::Int32(*)(::MoleMole::ScrollViewItemWidgetController*, ::MoleMole::ScrollViewItemWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_COMPARISON_OFFSET))(x, y);
+		}
+
+		::System::Void RefreshLevelRewardDataList(::System::Boolean isInit)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_REFRESHLEVELREWARDDATALIST_OFFSET))(this, isInit);
+		}
+
+		::System::Void RefreshRightMaxReward(::System::Int32 rightShowLevel)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_REFRESHRIGHTMAXREWARD_OFFSET))(this, rightShowLevel);
+		}
+
+		::System::Void StartRewardAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_STARTREWARDANIM_OFFSET))(this);
+		}
+
+		::System::Void PlayRewardItemShowEffect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_PLAYREWARDITEMSHOWEFFECT_OFFSET))(this);
+		}
+
+		::System::Void ResetRewardItemShowEffect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER_RESETREWARDITEMSHOWEFFECT_OFFSET))(this);
+		}
+
+		::System::Void _PlayRewardItemShowEffect_b__32_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER__PLAYREWARDITEMSHOWEFFECT_B__32_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPREWARDINFOWIDGETWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

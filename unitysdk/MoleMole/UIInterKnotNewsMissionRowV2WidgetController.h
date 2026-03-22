@@ -1,0 +1,211 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_2181504E881DDEE4;
+class Class_1_A5FC45CC23522FB5;
+class Class_2_79F6D62CE30E3F8E_167;
+namespace DG::Tweening { class Tweener; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIInterKnotMissionItemWidgetController; }
+namespace MoleMole { class UIInterKnotPageConfig; }
+namespace MoleMole { class UIInterKnotPageConfig_MainCityQuestTypeRowConfig; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_GETMISSIONLISTQUESTICON_OFFSET UNITYSDK_OFFSET(0xC10E8E0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_GETSELECTMANUAL_OFFSET UNITYSDK_OFFSET(0xC10F080)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_GET_CONFIG_OFFSET UNITYSDK_OFFSET(0xC10CBB0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xC10F3B0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC10CF70)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xC10F440)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONMANUALADD_OFFSET UNITYSDK_OFFSET(0xC10E6D0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONMISSIONITEMCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xC10F160)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xC10D0F0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONTRACKQUESTUPDATE_OFFSET UNITYSDK_OFFSET(0xC10E2D0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC10D010)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC10CBD0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_PLAYSELECT_OFFSET UNITYSDK_OFFSET(0xC10F8A0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_REFRESHNEW_OFFSET UNITYSDK_OFFSET(0xC10E750)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_REFRESHTRACK_OFFSET UNITYSDK_OFFSET(0xC10E360)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xC10D3F0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_SETMISSIONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xC10F1E0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_SETMISSIONLISTSELECT_OFFSET UNITYSDK_OFFSET(0xC10EC30)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_SETNAMETEXT_OFFSET UNITYSDK_OFFSET(0xC10EE70)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_SET_CONFIG_OFFSET UNITYSDK_OFFSET(0xC10CBC0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xC10FB20)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC10FA90)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER__REFRESHTRACK_G__SETTRACKED_20_0_OFFSET UNITYSDK_OFFSET(0xC10EFF0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC10FB70)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xC10FBE0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xC10FC50)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC10FCD0)
+#define MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC10FD50)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInterKnotNewsMissionRowV2WidgetController_TypeDefinitionIndex = 75010;
+
+	class UIInterKnotNewsMissionRowV2WidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		static ::System::Int32* StaticGet_RampColorB()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotNewsMissionRowV2WidgetController_TypeDefinitionIndex)->GetStaticField(0xE790);
+		}
+		static ::System::Int32* StaticGet_RampColorA()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotNewsMissionRowV2WidgetController_TypeDefinitionIndex)->GetStaticField(0xE794);
+		}
+		::Class_2_79F6D62CE30E3F8E_167* _view; // 0x2D0
+		::Class_1_A5FC45CC23522FB5* _topicData; // 0x2D8
+		::System::Collections::Generic::List_1<::MoleMole::UIInterKnotMissionItemWidgetController*>* _missionItemCtrls; // 0x2E0
+		::System::Int32 _selectMissionIndex; // 0x2E8
+		::System::Boolean _firstTimeSelect; // 0x2EC
+		::MoleMole::UIInterKnotPageConfig* _Config_k__BackingField; // 0x2F0
+		::MoleMole::UIInterKnotPageConfig_MainCityQuestTypeRowConfig* _rowConfig; // 0x2F8
+		::DG::Tweening::Tweener* tweener; // 0x300
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::MoleMole::UIInterKnotPageConfig* get_Config()
+		{
+			return ((::MoleMole::UIInterKnotPageConfig*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_GET_CONFIG_OFFSET))(this);
+		}
+
+		::System::Void set_Config(::MoleMole::UIInterKnotPageConfig* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIInterKnotPageConfig*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_SET_CONFIG_OFFSET))(this, value);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnTrackQuestUpdate(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONTRACKQUESTUPDATE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnManualAdd(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONMANUALADD_OFFSET))(this, obj);
+		}
+
+		::System::Void RefreshView(::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, init);
+		}
+
+		::Foundation::AssetPath GetMissionListQuestIcon(::System::Collections::Generic::List_1<::Class_1_2181504E881DDEE4*>* missionList)
+		{
+			return ((::Foundation::AssetPath(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_2181504E881DDEE4*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_GETMISSIONLISTQUESTICON_OFFSET))(this, missionList);
+		}
+
+		::System::Void RefreshTrack()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_REFRESHTRACK_OFFSET))(this);
+		}
+
+		::System::Void RefreshNew()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_REFRESHNEW_OFFSET))(this);
+		}
+
+		::System::Void SetNameText(::Class_1_2181504E881DDEE4* _manual)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_2181504E881DDEE4*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_SETNAMETEXT_OFFSET))(this, _manual);
+		}
+
+		::Class_1_2181504E881DDEE4* GetSelectManual()
+		{
+			return ((::Class_1_2181504E881DDEE4*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_GETSELECTMANUAL_OFFSET))(this);
+		}
+
+		::System::Void OnMissionItemClickHandle(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONMISSIONITEMCLICKHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void SetMissionItemSelect(::System::Int32 questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_SETMISSIONITEMSELECT_OFFSET))(this, questID);
+		}
+
+		::System::Void OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void SetMissionListSelect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_SETMISSIONLISTSELECT_OFFSET))(this);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void PlaySelect(::System::Boolean isSelect, ::System::Boolean anim)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER_PLAYSELECT_OFFSET))(this, isSelect, anim);
+		}
+
+		::System::Void _RefreshTrack_g__SetTracked_20_0(::System::Boolean tracked)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER__REFRESHTRACK_G__SETTRACKED_20_0_OFFSET))(this, tracked);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTNEWSMISSIONROWV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -1,8 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_45_TypeDefinitionIndex = 31143;
+namespace System { class IDisposable; }
 
+inline static constexpr unsigned int Class_0_16E4307DCC419505_45_TypeDefinitionIndex = 24254;
+
+template <typename TAlgorithm>
 class Class_0_16E4307DCC419505_45
 {
 public:

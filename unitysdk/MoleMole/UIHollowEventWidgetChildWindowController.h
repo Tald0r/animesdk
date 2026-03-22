@@ -1,0 +1,260 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_BF73F764A6192785.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_2EF69FD7F867E7F6;
+class Class_1_30D3D578039787FA;
+class Class_1_F37ACBD40C173304;
+class Class_1_F8AB682D4111BB8F;
+class Class_2_095670C69DA9DCE4;
+class Class_2_79F6D62CE30E3F8E_24;
+class Class_2_A8B97606E71328D6;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIHollowEventWidgetContext; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace System { template <typename T1, typename T2> class Action_2; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace System::Text::RegularExpressions { class Regex; }
+namespace UnityEngine { class Animation; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine::UI { class Image; }
+
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_CLEARMATERIALS_OFFSET UNITYSDK_OFFSET(0x80A5C60)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_DETAILFADEOUT_OFFSET UNITYSDK_OFFSET(0x80AB1A0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_EXITCHOICEEVENT_OFFSET UNITYSDK_OFFSET(0x80A9BE0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_GETSIMPLETEXT_OFFSET UNITYSDK_OFFSET(0x80A70D0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_GETVIEW_OFFSET UNITYSDK_OFFSET(0x80A5E60)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_GET_ANIM_OFFSET UNITYSDK_OFFSET(0x80A5ED0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_GET_CONTEXT_OFFSET UNITYSDK_OFFSET(0x80AB210)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x80A5590)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_INITCHOICEOBJ_OFFSET UNITYSDK_OFFSET(0x80A8230)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x80A5A30)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x80A5AD0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x80A55A0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x80A56F0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYDETAILFADEIN_OFFSET UNITYSDK_OFFSET(0x80AAFF0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYDETAILFADEOUT_OFFSET UNITYSDK_OFFSET(0x80AAD40)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYDIALOGFADEIN_OFFSET UNITYSDK_OFFSET(0x80A5F90)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYFADEOUT_OFFSET UNITYSDK_OFFSET(0x80A6140)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYFRAMETEXTUREFAIRY_OFFSET UNITYSDK_OFFSET(0x80A9E40)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYSWITCHFADEOUT_OFFSET UNITYSDK_OFFSET(0x80A66B0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_REBUILD_OFFSET UNITYSDK_OFFSET(0x80A7830)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_REFRESHCHOICEDESC_OFFSET UNITYSDK_OFFSET(0x80AA140)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x80A7C40)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_SETBGSTATE_OFFSET UNITYSDK_OFFSET(0x80AACB0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_SETUI_OFFSET UNITYSDK_OFFSET(0x80A6800)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_SET_CONTEXT_OFFSET UNITYSDK_OFFSET(0x80AB220)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_SHOWDESC_OFFSET UNITYSDK_OFFSET(0x80A7310)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0x80A7950)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0x80AB330)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x80AB230)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER__EXITCHOICEEVENT_B__22_0_OFFSET UNITYSDK_OFFSET(0x80AB3B0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x80AB3E0)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x80AB450)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x80AB460)
+#define MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x80AB470)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowEventWidgetChildWindowController_TypeDefinitionIndex = 38601;
+
+	class UIHollowEventWidgetChildWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		static ::System::Text::RegularExpressions::Regex** StaticGet_colorTextRegex()
+		{
+			return (::System::Text::RegularExpressions::Regex**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventWidgetChildWindowController_TypeDefinitionIndex)->GetStaticField(0x3C4E0);
+		}
+		// static const ::System::Single REFRESH_CD_TIME; // 0x0
+		::Enum_3_BF73F764A6192785 State; // 0x2F8
+		::System::Boolean IsDialogFadeIn; // 0x2FC
+		::Class_2_79F6D62CE30E3F8E_24* _view; // 0x300
+		::System::Boolean _detailFadeOut; // 0x308
+		::MoleMole::UIHollowEventWidgetContext* _context; // 0x310
+		::Class_1_F37ACBD40C173304* choiceData; // 0x318
+		::System::Boolean _exitState; // 0x320
+		::System::Boolean _isSending; // 0x321
+		::Class_1_2EF69FD7F867E7F6* _context_k__BackingField; // 0x328
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_1_30D3D578039787FA*>* uiFrameTextureSheetPlayer; // 0x330
+		::System::Action_2<::System::Int32, ::System::Action*>* choiceFunc; // 0x338
+		::Class_2_A8B97606E71328D6* graph; // 0x340
+		::Class_2_095670C69DA9DCE4* actionInstance; // 0x348
+		::System::Single _refreshCDTimer; // 0x350
+		::System::Collections::Generic::List_1<::UnityEngine::Material*>* loadImgsMaterials; // 0x358
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void ClearMaterials()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_CLEARMATERIALS_OFFSET))(this);
+		}
+
+		::Class_2_79F6D62CE30E3F8E_24* GetView()
+		{
+			return ((::Class_2_79F6D62CE30E3F8E_24*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_GETVIEW_OFFSET))(this);
+		}
+
+		::UnityEngine::Animation* get_Anim()
+		{
+			return ((::UnityEngine::Animation*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_GET_ANIM_OFFSET))(this);
+		}
+
+		::System::Void PlayDialogFadeIn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYDIALOGFADEIN_OFFSET))(this);
+		}
+
+		::System::Single PlayFadeOut()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYFADEOUT_OFFSET))(this);
+		}
+
+		::System::Void PlaySwitchFadeOut()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYSWITCHFADEOUT_OFFSET))(this);
+		}
+
+		::System::Void SetUI(::System::Boolean enable, ::Class_1_F37ACBD40C173304* choiceData)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Class_1_F37ACBD40C173304*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_SETUI_OFFSET))(this, enable, choiceData);
+		}
+
+		::System::String* GetSimpleText(::System::String* rawText)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_GETSIMPLETEXT_OFFSET))(this, rawText);
+		}
+
+		::System::Void ShowDesc(::System::String* desc, ::System::Action* OnTextShowFinish)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_SHOWDESC_OFFSET))(this, desc, OnTextShowFinish);
+		}
+
+		::System::Void Rebuild()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_REBUILD_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::Class_1_F8AB682D4111BB8F* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_F8AB682D4111BB8F*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this, context);
+		}
+
+		::System::Void ExitChoiceEvent()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_EXITCHOICEEVENT_OFFSET))(this);
+		}
+
+		::System::Boolean PlayFrameTextureFairy(::UnityEngine::UI::Image* icon, ::System::String* key, ::System::Int32 index)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::UI::Image*, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYFRAMETEXTUREFAIRY_OFFSET))(this, icon, key, index);
+		}
+
+		::System::Void RefreshChoiceDesc(::System::Int32 choiceIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_REFRESHCHOICEDESC_OFFSET))(this, choiceIndex);
+		}
+
+		::System::Void InitChoiceObj(::System::Int32 choiceIndex, ::System::Boolean& interactable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_INITCHOICEOBJ_OFFSET))(this, choiceIndex, interactable);
+		}
+
+		::System::Void SetBGState(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_SETBGSTATE_OFFSET))(this, state);
+		}
+
+		::System::Void PlayDetailFadeOut(::System::Action* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYDETAILFADEOUT_OFFSET))(this, callback);
+		}
+
+		::System::Void PlayDetailFadeIn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_PLAYDETAILFADEIN_OFFSET))(this);
+		}
+
+		::System::Boolean DetailFadeOut()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_DETAILFADEOUT_OFFSET))(this);
+		}
+
+		::Class_1_2EF69FD7F867E7F6* get_context()
+		{
+			return ((::Class_1_2EF69FD7F867E7F6*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_GET_CONTEXT_OFFSET))(this);
+		}
+
+		::System::Void set_context(::Class_1_2EF69FD7F867E7F6* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_2EF69FD7F867E7F6*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER_SET_CONTEXT_OFFSET))(this, value);
+		}
+
+		::System::Void _ExitChoiceEvent_b__22_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER__EXITCHOICEEVENT_B__22_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWEVENTWIDGETCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

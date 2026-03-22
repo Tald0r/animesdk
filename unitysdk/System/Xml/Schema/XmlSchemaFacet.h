@@ -5,33 +5,28 @@
 
 namespace System { class String; }
 
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAFACET_SET_FACETTYPE_OFFSET UNITYSDK_OFFSET(0x17D94820)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAFACET_SET_VALUE_OFFSET UNITYSDK_OFFSET(0x17D94810)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAFACET__CTOR_OFFSET UNITYSDK_OFFSET(0x17D94830)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAFACET_SET_ISFIXED_OFFSET UNITYSDK_OFFSET(0x1A687D50)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAFACET__CTOR_OFFSET UNITYSDK_OFFSET(0x1A687DE0)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int XmlSchemaFacet_TypeDefinitionIndex = 2181;
+	inline static constexpr unsigned int XmlSchemaFacet_TypeDefinitionIndex = 2144;
 
 	class XmlSchemaFacet : public ::System::Xml::Schema::XmlSchemaAnnotated
 	{
 	public:
-		::System::String* value; // 0x10
-		::System::Xml::Schema::FacetType facetType; // 0x18
+		::System::String* value; // 0x50
+		::System::Boolean isFixed; // 0x58
+		::System::Xml::Schema::FacetType facetType; // 0x5C
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAFACET__CTOR_OFFSET))(this);
 		}
 
-		::System::Void set_Value(::System::String* value)
+		::System::Void set_IsFixed(::System::Boolean value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAFACET_SET_VALUE_OFFSET))(this, value);
-		}
-
-		::System::Void set_FacetType(::System::Xml::Schema::FacetType value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::FacetType))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAFACET_SET_FACETTYPE_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAFACET_SET_ISFIXED_OFFSET))(this, value);
 		}
 	};
 }

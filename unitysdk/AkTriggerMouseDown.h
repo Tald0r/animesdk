@@ -2,9 +2,10 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/AkTriggerBase.h"
 
-#define AKTRIGGERMOUSEDOWN__CTOR_OFFSET UNITYSDK_OFFSET(0x18420050)
+#define AKTRIGGERMOUSEDOWN_ONMOUSEDOWN_OFFSET UNITYSDK_OFFSET(0x195917A0)
+#define AKTRIGGERMOUSEDOWN__CTOR_OFFSET UNITYSDK_OFFSET(0x195917C0)
 
-inline static constexpr unsigned int AkTriggerMouseDown_TypeDefinitionIndex = 33716;
+inline static constexpr unsigned int AkTriggerMouseDown_TypeDefinitionIndex = 30158;
 
 class AkTriggerMouseDown : public ::AkTriggerBase
 {
@@ -12,5 +13,10 @@ public:
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKTRIGGERMOUSEDOWN__CTOR_OFFSET))(this);
+	}
+
+	::System::Void OnMouseDown()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKTRIGGERMOUSEDOWN_ONMOUSEDOWN_OFFSET))(this);
 	}
 };

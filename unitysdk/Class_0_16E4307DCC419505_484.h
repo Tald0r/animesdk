@@ -1,10 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/Client/ConeSphereTrigger_TriggerPattern.h"
 
-namespace UnityEngine { class Collider; }
+namespace SimpleJSON { class JSONNode; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_484_TypeDefinitionIndex = 47926;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_484_TypeDefinitionIndex = 49964;
 
 class Class_0_16E4307DCC419505_484
 {

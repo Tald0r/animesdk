@@ -1,0 +1,112 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_E84218D063721ED0;
+namespace MoleMole { class UIActivityAbyssZeroCompContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONABYSSUPDATEDATA_OFFSET UNITYSDK_OFFSET(0xA50AE50)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA50A480)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xA50A520)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA50AD70)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA509F60)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA50A0E0)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_REFRESHABYSSZEROINFO_OFFSET UNITYSDK_OFFSET(0xA50A5F0)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_REFRESHABYSSZEROROLEINFO_OFFSET UNITYSDK_OFFSET(0xA50AA60)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_SETACTIVITYDATA_OFFSET UNITYSDK_OFFSET(0xA50A210)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA50B0C0)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA50B0F0)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xA50B160)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA50B1D0)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA50B250)
+#define MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA50B2B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityAbyssZeroCompWidgetController_TypeDefinitionIndex = 53469;
+
+	class UIActivityAbyssZeroCompWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_E84218D063721ED0* _view; // 0x2A0
+		::MoleMole::UIActivityAbyssZeroCompContext* context; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetActivityData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_SETACTIVITYDATA_OFFSET))(this);
+		}
+
+		::System::Void RefreshAbyssZeroInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_REFRESHABYSSZEROINFO_OFFSET))(this);
+		}
+
+		::System::Void RefreshAbyssZeroRoleInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_REFRESHABYSSZEROROLEINFO_OFFSET))(this);
+		}
+
+		::System::Void OnAbyssUpdateData(::System::EventArgs* eventArgs)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER_ONABYSSUPDATEDATA_OFFSET))(this, eventArgs);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYABYSSZEROCOMPWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

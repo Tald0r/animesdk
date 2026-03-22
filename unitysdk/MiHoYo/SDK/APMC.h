@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int APMC_TypeDefinitionIndex = 36310;
+	inline static constexpr unsigned int APMC_TypeDefinitionIndex = 33796;
 
 	class APMC : public ::System::Object
 	{
@@ -19,5 +19,8 @@ namespace MiHoYo::SDK
 		// static const ::System::String* REPLAY_PLUGIN; // 0x0
 		// static const ::System::String* FTC_SWITCH; // 0x0
 		// static const ::System::String* FTC_LRSAG; // 0x0
+		// static const ::System::String* SET_CUSTOM_DATA; // 0x0
+		// static const ::System::String* SONY_TITLE_ID; // 0x0
+		// static const ::System::String* SONY_VERSION; // 0x0
 	};
 }

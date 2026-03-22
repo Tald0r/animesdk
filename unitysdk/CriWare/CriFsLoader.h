@@ -7,39 +7,29 @@
 namespace CriWare { class CriFsBinder; }
 namespace System { class String; }
 
-#define CRIWARE_CRIFSLOADER_CRIFSLOADER_CREATE_OFFSET UNITYSDK_OFFSET(0x112C8190)
-#define CRIWARE_CRIFSLOADER_CRIFSLOADER_DECOMPRESSDATA_OFFSET UNITYSDK_OFFSET(0x112C8B90)
-#define CRIWARE_CRIFSLOADER_CRIFSLOADER_DESTROY_OFFSET UNITYSDK_OFFSET(0x112C8360)
-#define CRIWARE_CRIFSLOADER_CRIFSLOADER_GETSTATUS_OFFSET UNITYSDK_OFFSET(0x112C8CC0)
-#define CRIWARE_CRIFSLOADER_CRIFSLOADER_LOADBYID_OFFSET UNITYSDK_OFFSET(0x112C85E0)
-#define CRIWARE_CRIFSLOADER_CRIFSLOADER_LOADWITHOUTDECOMPRESSIONBYID_OFFSET UNITYSDK_OFFSET(0x112C89D0)
-#define CRIWARE_CRIFSLOADER_CRIFSLOADER_LOADWITHOUTDECOMPRESSION_OFFSET UNITYSDK_OFFSET(0x112C87D0)
-#define CRIWARE_CRIFSLOADER_CRIFSLOADER_LOAD_OFFSET UNITYSDK_OFFSET(0x112C83E0)
-#define CRIWARE_CRIFSLOADER_CRIFSLOADER_SETREADUNITSIZE_OFFSET UNITYSDK_OFFSET(0x112C8D50)
-#define CRIWARE_CRIFSLOADER_CRIFSLOADER_STOP_OFFSET UNITYSDK_OFFSET(0x112C8C40)
-#define CRIWARE_CRIFSLOADER_DECOMPRESSDATA_OFFSET UNITYSDK_OFFSET(0x112C8AA0)
-#define CRIWARE_CRIFSLOADER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x112C8210)
-#define CRIWARE_CRIFSLOADER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x112C76E0)
-#define CRIWARE_CRIFSLOADER_FINALIZE_OFFSET UNITYSDK_OFFSET(0x112C8DE0)
-#define CRIWARE_CRIFSLOADER_GETSTATUS_OFFSET UNITYSDK_OFFSET(0x112C8060)
-#define CRIWARE_CRIFSLOADER_LOADBYID_OFFSET UNITYSDK_OFFSET(0x112C84D0)
-#define CRIWARE_CRIFSLOADER_LOADWITHOUTDECOMPRESSIONBYID_OFFSET UNITYSDK_OFFSET(0x112C88C0)
-#define CRIWARE_CRIFSLOADER_LOADWITHOUTDECOMPRESSION_OFFSET UNITYSDK_OFFSET(0x112C86B0)
-#define CRIWARE_CRIFSLOADER_LOAD_OFFSET UNITYSDK_OFFSET(0x112C7F40)
-#define CRIWARE_CRIFSLOADER_SETREADUNITSIZE_OFFSET UNITYSDK_OFFSET(0x112C7EB0)
-#define CRIWARE_CRIFSLOADER_STOP_OFFSET UNITYSDK_OFFSET(0x112C77F0)
-#define CRIWARE_CRIFSLOADER__CTOR_OFFSET UNITYSDK_OFFSET(0x112C7CC0)
+#define CRIWARE_CRIFSLOADER_CRIFSLOADER_CREATE_OFFSET UNITYSDK_OFFSET(0x1AF42F90)
+#define CRIWARE_CRIFSLOADER_CRIFSLOADER_DESTROY_OFFSET UNITYSDK_OFFSET(0x1AF431E0)
+#define CRIWARE_CRIFSLOADER_CRIFSLOADER_GETSTATUS_OFFSET UNITYSDK_OFFSET(0x1AF435A0)
+#define CRIWARE_CRIFSLOADER_CRIFSLOADER_LOAD_OFFSET UNITYSDK_OFFSET(0x1AF43380)
+#define CRIWARE_CRIFSLOADER_CRIFSLOADER_SETREADUNITSIZE_OFFSET UNITYSDK_OFFSET(0x1AF436C0)
+#define CRIWARE_CRIFSLOADER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x1AF43090)
+#define CRIWARE_CRIFSLOADER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1AF43010)
+#define CRIWARE_CRIFSLOADER_FINALIZE_OFFSET UNITYSDK_OFFSET(0x1AF43750)
+#define CRIWARE_CRIFSLOADER_GETSTATUS_OFFSET UNITYSDK_OFFSET(0x1AF43470)
+#define CRIWARE_CRIFSLOADER_LOAD_OFFSET UNITYSDK_OFFSET(0x1AF43260)
+#define CRIWARE_CRIFSLOADER_SETREADUNITSIZE_OFFSET UNITYSDK_OFFSET(0x1AF43630)
+#define CRIWARE_CRIFSLOADER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF42DA0)
 
 namespace CriWare
 {
-	inline static constexpr unsigned int CriFsLoader_TypeDefinitionIndex = 30244;
+	inline static constexpr unsigned int CriFsLoader_TypeDefinitionIndex = 31270;
 
 	class CriFsLoader : public ::CriWare::CriDisposable
 	{
 	public:
 		::System::IntPtr handle; // 0x20
-		::System::Runtime::InteropServices::GCHandle srcGch; // 0x28
-		::System::Runtime::InteropServices::GCHandle dstGch; // 0x2C
+		::System::Runtime::InteropServices::GCHandle dstGch; // 0x28
+		::System::Runtime::InteropServices::GCHandle srcGch; // 0x2C
 
 		::System::Void _ctor()
 		{
@@ -59,31 +49,6 @@ namespace CriWare
 		::System::Void Load(::CriWare::CriFsBinder* binder, ::System::String* path, ::System::Int64 fileOffset, ::System::Int64 loadSize, ::Il2CppArray<::System::Byte>* buffer)
 		{
 			return ((::System::Void(*)(::PVOID, ::CriWare::CriFsBinder*, ::System::String*, ::System::Int64, ::System::Int64, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_LOAD_OFFSET))(this, binder, path, fileOffset, loadSize, buffer);
-		}
-
-		::System::Void LoadById(::CriWare::CriFsBinder* binder, ::System::Int32 id, ::System::Int64 fileOffset, ::System::Int64 loadSize, ::Il2CppArray<::System::Byte>* buffer)
-		{
-			return ((::System::Void(*)(::PVOID, ::CriWare::CriFsBinder*, ::System::Int32, ::System::Int64, ::System::Int64, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_LOADBYID_OFFSET))(this, binder, id, fileOffset, loadSize, buffer);
-		}
-
-		::System::Void LoadWithoutDecompression(::CriWare::CriFsBinder* binder, ::System::String* path, ::System::Int64 fileOffset, ::System::Int64 loadSize, ::Il2CppArray<::System::Byte>* buffer)
-		{
-			return ((::System::Void(*)(::PVOID, ::CriWare::CriFsBinder*, ::System::String*, ::System::Int64, ::System::Int64, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_LOADWITHOUTDECOMPRESSION_OFFSET))(this, binder, path, fileOffset, loadSize, buffer);
-		}
-
-		::System::Void LoadWithoutDecompressionById(::CriWare::CriFsBinder* binder, ::System::Int32 id, ::System::Int64 fileOffset, ::System::Int64 loadSize, ::Il2CppArray<::System::Byte>* buffer)
-		{
-			return ((::System::Void(*)(::PVOID, ::CriWare::CriFsBinder*, ::System::Int32, ::System::Int64, ::System::Int64, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_LOADWITHOUTDECOMPRESSIONBYID_OFFSET))(this, binder, id, fileOffset, loadSize, buffer);
-		}
-
-		::System::Void DecompressData(::System::Int64 srcSize, ::Il2CppArray<::System::Byte>* srcBuffer, ::System::Int64 dstSize, ::Il2CppArray<::System::Byte>* dstBuffer)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Int64, ::Il2CppArray<::System::Byte>*, ::System::Int64, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_DECOMPRESSDATA_OFFSET))(this, srcSize, srcBuffer, dstSize, dstBuffer);
-		}
-
-		::System::Void Stop()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_STOP_OFFSET))(this);
 		}
 
 		::CriWare::CriFsLoader_Status GetStatus()
@@ -116,16 +81,6 @@ namespace CriWare
 			return ((::System::Int32(*)(::System::IntPtr, ::System::IntPtr, ::System::String*, ::System::Int64, ::System::Int64, ::System::IntPtr, ::System::Int64))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_CRIFSLOADER_LOAD_OFFSET))(loader, binder, path, offset, load_size, buffer, buffer_size);
 		}
 
-		static ::System::Int32 criFsLoader_LoadById(::System::IntPtr loader, ::System::IntPtr binder, ::System::Int32 id, ::System::Int64 offset, ::System::Int64 load_size, ::System::IntPtr buffer, ::System::Int64 buffer_size)
-		{
-			return ((::System::Int32(*)(::System::IntPtr, ::System::IntPtr, ::System::Int32, ::System::Int64, ::System::Int64, ::System::IntPtr, ::System::Int64))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_CRIFSLOADER_LOADBYID_OFFSET))(loader, binder, id, offset, load_size, buffer, buffer_size);
-		}
-
-		static ::System::Int32 criFsLoader_Stop(::System::IntPtr loader)
-		{
-			return ((::System::Int32(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_CRIFSLOADER_STOP_OFFSET))(loader);
-		}
-
 		static ::System::Int32 criFsLoader_GetStatus(::System::IntPtr loader, ::CriWare::CriFsLoader_Status& status)
 		{
 			return ((::System::Int32(*)(::System::IntPtr, ::CriWare::CriFsLoader_Status&))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_CRIFSLOADER_GETSTATUS_OFFSET))(loader, status);
@@ -134,21 +89,6 @@ namespace CriWare
 		static ::System::Int32 criFsLoader_SetReadUnitSize(::System::IntPtr loader, ::System::Int64 unit_size)
 		{
 			return ((::System::Int32(*)(::System::IntPtr, ::System::Int64))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_CRIFSLOADER_SETREADUNITSIZE_OFFSET))(loader, unit_size);
-		}
-
-		static ::System::Int32 criFsLoader_LoadWithoutDecompression(::System::IntPtr loader, ::System::IntPtr binder, ::System::String* path, ::System::Int64 offset, ::System::Int64 load_size, ::System::IntPtr buffer, ::System::Int64 buffer_size)
-		{
-			return ((::System::Int32(*)(::System::IntPtr, ::System::IntPtr, ::System::String*, ::System::Int64, ::System::Int64, ::System::IntPtr, ::System::Int64))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_CRIFSLOADER_LOADWITHOUTDECOMPRESSION_OFFSET))(loader, binder, path, offset, load_size, buffer, buffer_size);
-		}
-
-		static ::System::Int32 criFsLoader_LoadWithoutDecompressionById(::System::IntPtr loader, ::System::IntPtr binder, ::System::Int32 id, ::System::Int64 offset, ::System::Int64 load_size, ::System::IntPtr buffer, ::System::Int64 buffer_size)
-		{
-			return ((::System::Int32(*)(::System::IntPtr, ::System::IntPtr, ::System::Int32, ::System::Int64, ::System::Int64, ::System::IntPtr, ::System::Int64))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_CRIFSLOADER_LOADWITHOUTDECOMPRESSIONBYID_OFFSET))(loader, binder, id, offset, load_size, buffer, buffer_size);
-		}
-
-		static ::System::Int32 criFsLoader_DecompressData(::System::IntPtr loader, ::System::IntPtr src, ::System::Int64 src_size, ::System::IntPtr dst, ::System::Int64 dst_size)
-		{
-			return ((::System::Int32(*)(::System::IntPtr, ::System::IntPtr, ::System::Int64, ::System::IntPtr, ::System::Int64))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSLOADER_CRIFSLOADER_DECOMPRESSDATA_OFFSET))(loader, src, src_size, dst, dst_size);
 		}
 	};
 }

@@ -4,11 +4,10 @@
 
 class AkEnvironment;
 
-#define AKENVIRONMENT_AKENVIRONMENT_COMPAREBYSELECTIONALGORITHM_COMPARE_OFFSET UNITYSDK_OFFSET(0x18397C90)
-#define AKENVIRONMENT_AKENVIRONMENT_COMPAREBYSELECTIONALGORITHM__CTOR_OFFSET UNITYSDK_OFFSET(0x18397BF0)
-#define AKENVIRONMENT_AKENVIRONMENT_COMPAREBYSELECTIONALGORITHM___IFIXBASEPROXY_COMPARE_OFFSET UNITYSDK_OFFSET(0x18397DC0)
+#define AKENVIRONMENT_AKENVIRONMENT_COMPAREBYSELECTIONALGORITHM_COMPARE_OFFSET UNITYSDK_OFFSET(0x1B006570)
+#define AKENVIRONMENT_AKENVIRONMENT_COMPAREBYSELECTIONALGORITHM__CTOR_OFFSET UNITYSDK_OFFSET(0x1B006630)
 
-inline static constexpr unsigned int AkEnvironment_AkEnvironment_CompareBySelectionAlgorithm_TypeDefinitionIndex = 33666;
+inline static constexpr unsigned int AkEnvironment_AkEnvironment_CompareBySelectionAlgorithm_TypeDefinitionIndex = 30108;
 
 class AkEnvironment_AkEnvironment_CompareBySelectionAlgorithm : public ::AkEnvironment_AkEnvironment_CompareByPriority
 {
@@ -21,10 +20,5 @@ public:
 	::System::Int32 Compare(::AkEnvironment* a, ::AkEnvironment* b)
 	{
 		return ((::System::Int32(*)(::PVOID, ::AkEnvironment*, ::AkEnvironment*))((::PBYTE)hIl2Cpp + AKENVIRONMENT_AKENVIRONMENT_COMPAREBYSELECTIONALGORITHM_COMPARE_OFFSET))(this, a, b);
-	}
-
-	::System::Int32 __iFixBaseProxy_Compare(::AkEnvironment* P0, ::AkEnvironment* P1)
-	{
-		return ((::System::Int32(*)(::PVOID, ::AkEnvironment*, ::AkEnvironment*))((::PBYTE)hIl2Cpp + AKENVIRONMENT_AKENVIRONMENT_COMPAREBYSELECTIONALGORITHM___IFIXBASEPROXY_COMPARE_OFFSET))(this, P0, P1);
 	}
 };

@@ -2,17 +2,34 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
+namespace System { class Array; }
 namespace System { class String; }
 namespace System::Collections { class Hashtable; }
+namespace System::Collections { class ICollection; }
 namespace System::Collections { class IEnumerator; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class IDictionary_2; }
 
-#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_ADD_OFFSET UNITYSDK_OFFSET(0x17E6A0F0)
-#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x17E6A200)
-#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY__CTOR_OFFSET UNITYSDK_OFFSET(0x17E604E0)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_ADD_OFFSET UNITYSDK_OFFSET(0x18F47A10)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_ASGENERICDICTIONARY_OFFSET UNITYSDK_OFFSET(0x18F47DE0)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_CLEAR_OFFSET UNITYSDK_OFFSET(0x18F47B10)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_CONTAINSKEY_OFFSET UNITYSDK_OFFSET(0x18F47B40)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_CONTAINSVALUE_OFFSET UNITYSDK_OFFSET(0x18F47C40)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_COPYTO_OFFSET UNITYSDK_OFFSET(0x18F47C70)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x18F47CA0)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x18F47700)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x18F47730)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x18F47760)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_KEYS_OFFSET UNITYSDK_OFFSET(0x18F47980)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x18F479B0)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_VALUES_OFFSET UNITYSDK_OFFSET(0x18F479E0)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_REMOVE_OFFSET UNITYSDK_OFFSET(0x18F47CD0)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_REPLACEHASHTABLE_OFFSET UNITYSDK_OFFSET(0x18F47DD0)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_SET_ITEM_OFFSET UNITYSDK_OFFSET(0x18F47880)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY__CTOR_OFFSET UNITYSDK_OFFSET(0x18F476A0)
 
 namespace System::Collections::Specialized
 {
-	inline static constexpr unsigned int StringDictionary_TypeDefinitionIndex = 2986;
+	inline static constexpr unsigned int StringDictionary_TypeDefinitionIndex = 3933;
 
 	class StringDictionary : public ::System::Object
 	{
@@ -24,14 +41,84 @@ namespace System::Collections::Specialized
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY__CTOR_OFFSET))(this);
 		}
 
+		::System::Int32 get_Count()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_COUNT_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsSynchronized()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_ISSYNCHRONIZED_OFFSET))(this);
+		}
+
+		::System::String* get_Item(::System::String* key)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_ITEM_OFFSET))(this, key);
+		}
+
+		::System::Void set_Item(::System::String* key, ::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_SET_ITEM_OFFSET))(this, key, value);
+		}
+
+		::System::Collections::ICollection* get_Keys()
+		{
+			return ((::System::Collections::ICollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_KEYS_OFFSET))(this);
+		}
+
+		::System::Object* get_SyncRoot()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_SYNCROOT_OFFSET))(this);
+		}
+
+		::System::Collections::ICollection* get_Values()
+		{
+			return ((::System::Collections::ICollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GET_VALUES_OFFSET))(this);
+		}
+
 		::System::Void Add(::System::String* key, ::System::String* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_ADD_OFFSET))(this, key, value);
 		}
 
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_CLEAR_OFFSET))(this);
+		}
+
+		::System::Boolean ContainsKey(::System::String* key)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_CONTAINSKEY_OFFSET))(this, key);
+		}
+
+		::System::Boolean ContainsValue(::System::String* value)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_CONTAINSVALUE_OFFSET))(this, value);
+		}
+
+		::System::Void CopyTo(::System::Array* array, ::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Array*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_COPYTO_OFFSET))(this, array, index);
+		}
+
 		::System::Collections::IEnumerator* GetEnumerator()
 		{
 			return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_GETENUMERATOR_OFFSET))(this);
+		}
+
+		::System::Void Remove(::System::String* key)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_REMOVE_OFFSET))(this, key);
+		}
+
+		::System::Void ReplaceHashtable(::System::Collections::Hashtable* useThisHashtableInstead)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Hashtable*))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_REPLACEHASHTABLE_OFFSET))(this, useThisHashtableInstead);
+		}
+
+		::System::Collections::Generic::IDictionary_2<::System::String*, ::System::String*>* AsGenericDictionary()
+		{
+			return ((::System::Collections::Generic::IDictionary_2<::System::String*, ::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COLLECTIONS_SPECIALIZED_STRINGDICTIONARY_ASGENERICDICTIONARY_OFFSET))(this);
 		}
 	};
 }

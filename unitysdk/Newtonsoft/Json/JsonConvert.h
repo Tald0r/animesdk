@@ -1,83 +1,117 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Newtonsoft/Json/DateFormatHandling.h"
+#include "unitysdk/Newtonsoft/Json/DateTimeZoneHandling.h"
 #include "unitysdk/Newtonsoft/Json/FloatFormatHandling.h"
 #include "unitysdk/Newtonsoft/Json/Formatting.h"
 #include "unitysdk/Newtonsoft/Json/StringEscapeHandling.h"
+#include "unitysdk/System/DateTime.h"
+#include "unitysdk/System/DateTimeOffset.h"
 #include "unitysdk/System/Decimal.h"
+#include "unitysdk/System/Guid.h"
 #include "unitysdk/System/Object.h"
+#include "unitysdk/System/TimeSpan.h"
 
+namespace Newtonsoft::Json { class JsonConverter; }
 namespace Newtonsoft::Json { class JsonSerializer; }
 namespace Newtonsoft::Json { class JsonSerializerSettings; }
 namespace System { class String; }
 namespace System { class Type; }
+namespace System { class Uri; }
+namespace System { struct Enum; }
 namespace System { template <typename T> class Func_1; }
 
-#define NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_1_OFFSET UNITYSDK_OFFSET(0x15D8D1B0)
-#define NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_OFFSET UNITYSDK_OFFSET(0x15D8D170)
-#define NEWTONSOFT_JSON_JSONCONVERT_ENSUREDECIMALPLACE_1_OFFSET UNITYSDK_OFFSET(0x15D8C8E0)
-#define NEWTONSOFT_JSON_JSONCONVERT_ENSUREDECIMALPLACE_OFFSET UNITYSDK_OFFSET(0x15D8C600)
-#define NEWTONSOFT_JSON_JSONCONVERT_ENSUREFLOATFORMAT_OFFSET UNITYSDK_OFFSET(0x15D8C6D0)
-#define NEWTONSOFT_JSON_JSONCONVERT_GETDEFAULTSETTINGS_OFFSET UNITYSDK_OFFSET(0x15D8C370)
-#define NEWTONSOFT_JSON_JSONCONVERT_GET_DEFAULTSETTINGS_OFFSET UNITYSDK_OFFSET(0x15D8C100)
-#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECTINTERNAL_OFFSET UNITYSDK_OFFSET(0x15D8CD20)
-#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_1_OFFSET UNITYSDK_OFFSET(0x15D8CBC0)
-#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_2_OFFSET UNITYSDK_OFFSET(0x15D8CB60)
-#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_3_OFFSET UNITYSDK_OFFSET(0x15D8CC50)
-#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_4_OFFSET UNITYSDK_OFFSET(0x15D8CFA0)
-#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_OFFSET UNITYSDK_OFFSET(0x15D8CB00)
-#define NEWTONSOFT_JSON_JSONCONVERT_SET_DEFAULTSETTINGS_OFFSET UNITYSDK_OFFSET(0x15D8C130)
-#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x15D8C3E0)
-#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_2_OFFSET UNITYSDK_OFFSET(0x15D8C570)
-#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_3_OFFSET UNITYSDK_OFFSET(0x15D8C850)
-#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_4_OFFSET UNITYSDK_OFFSET(0x15D8C950)
-#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_5_OFFSET UNITYSDK_OFFSET(0x15D8C4E0)
-#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_6_OFFSET UNITYSDK_OFFSET(0x15D8CA10)
-#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_7_OFFSET UNITYSDK_OFFSET(0x15D8CA50)
-#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15D8C3A0)
-#define NEWTONSOFT_JSON_JSONCONVERT__CCTOR_OFFSET UNITYSDK_OFFSET(0x15D8C170)
+#define NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_1_OFFSET UNITYSDK_OFFSET(0x1AD108D0)
+#define NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_2_OFFSET UNITYSDK_OFFSET(0x1AD10930)
+#define NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_3_OFFSET UNITYSDK_OFFSET(0x1AD109A0)
+#define NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_4_OFFSET UNITYSDK_OFFSET(0x1AD10630)
+#define NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_OFFSET UNITYSDK_OFFSET(0x1AD105D0)
+#define NEWTONSOFT_JSON_JSONCONVERT_ENSUREDECIMALPLACE_1_OFFSET UNITYSDK_OFFSET(0x1AD0E570)
+#define NEWTONSOFT_JSON_JSONCONVERT_ENSUREDECIMALPLACE_OFFSET UNITYSDK_OFFSET(0x1AD0E180)
+#define NEWTONSOFT_JSON_JSONCONVERT_ENSUREFLOATFORMAT_OFFSET UNITYSDK_OFFSET(0x1AD0E2C0)
+#define NEWTONSOFT_JSON_JSONCONVERT_GET_DEFAULTSETTINGS_OFFSET UNITYSDK_OFFSET(0x1AD0D790)
+#define NEWTONSOFT_JSON_JSONCONVERT_POPULATEOBJECT_1_OFFSET UNITYSDK_OFFSET(0x1AD10B20)
+#define NEWTONSOFT_JSON_JSONCONVERT_POPULATEOBJECT_OFFSET UNITYSDK_OFFSET(0x1AD10AB0)
+#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECTINTERNAL_OFFSET UNITYSDK_OFFSET(0x1AD102E0)
+#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_1_OFFSET UNITYSDK_OFFSET(0x1AD0FD20)
+#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_2_OFFSET UNITYSDK_OFFSET(0x1AD0FE80)
+#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_3_OFFSET UNITYSDK_OFFSET(0x1AD0FFE0)
+#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_4_OFFSET UNITYSDK_OFFSET(0x1AD10210)
+#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_5_OFFSET UNITYSDK_OFFSET(0x1AD0FC90)
+#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_6_OFFSET UNITYSDK_OFFSET(0x1AD0FD80)
+#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_7_OFFSET UNITYSDK_OFFSET(0x1AD10160)
+#define NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_OFFSET UNITYSDK_OFFSET(0x1AD0FBF0)
+#define NEWTONSOFT_JSON_JSONCONVERT_SET_DEFAULTSETTINGS_OFFSET UNITYSDK_OFFSET(0x1AD0D7F0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_10_OFFSET UNITYSDK_OFFSET(0x1AD0E060)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_11_OFFSET UNITYSDK_OFFSET(0x1AD0E090)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_12_OFFSET UNITYSDK_OFFSET(0x1AD0E0C0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_13_OFFSET UNITYSDK_OFFSET(0x1AD0E0F0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_14_OFFSET UNITYSDK_OFFSET(0x1AD0E210)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_15_OFFSET UNITYSDK_OFFSET(0x1AD0E440)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_16_OFFSET UNITYSDK_OFFSET(0x1AD0E4C0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_17_OFFSET UNITYSDK_OFFSET(0x1AD0E5C0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_18_OFFSET UNITYSDK_OFFSET(0x1AD0E5F0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_19_OFFSET UNITYSDK_OFFSET(0x1AD0E620)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x1AD0D8B0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_20_OFFSET UNITYSDK_OFFSET(0x1AD0E6E0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_21_OFFSET UNITYSDK_OFFSET(0x1AD0E7D0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_22_OFFSET UNITYSDK_OFFSET(0x1AD0E870)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_23_OFFSET UNITYSDK_OFFSET(0x1AD0E8D0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_24_OFFSET UNITYSDK_OFFSET(0x1AD0EA00)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_25_OFFSET UNITYSDK_OFFSET(0x1AD0EAB0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_26_OFFSET UNITYSDK_OFFSET(0x1AD0DEA0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_27_OFFSET UNITYSDK_OFFSET(0x1AD0E9A0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_28_OFFSET UNITYSDK_OFFSET(0x1AD0EC10)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_29_OFFSET UNITYSDK_OFFSET(0x1AD0ECC0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_2_OFFSET UNITYSDK_OFFSET(0x1AD0DB60)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_3_OFFSET UNITYSDK_OFFSET(0x1AD0DBC0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_4_OFFSET UNITYSDK_OFFSET(0x1AD0DD90)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_5_OFFSET UNITYSDK_OFFSET(0x1AD0DE00)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_6_OFFSET UNITYSDK_OFFSET(0x1AD0DFB0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_7_OFFSET UNITYSDK_OFFSET(0x1AD0DFD0)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_8_OFFSET UNITYSDK_OFFSET(0x1AD0E000)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_9_OFFSET UNITYSDK_OFFSET(0x1AD0E030)
+#define NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1AD0D850)
+#define NEWTONSOFT_JSON_JSONCONVERT__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AD10DB0)
 
 namespace Newtonsoft::Json
 {
-	inline static constexpr unsigned int JsonConvert_TypeDefinitionIndex = 8091;
+	inline static constexpr unsigned int JsonConvert_TypeDefinitionIndex = 6856;
 
 	class JsonConvert : public ::System::Object
 	{
 	public:
-		static ::System::String** StaticGet_NaN()
+		static ::System::Func_1<::Newtonsoft::Json::JsonSerializerSettings*>** StaticGet__DefaultSettings_k__BackingField()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x25050);
+			return (::System::Func_1<::Newtonsoft::Json::JsonSerializerSettings*>**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x5CA0);
 		}
 		static ::System::String** StaticGet_True()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x25058);
-		}
-		static ::System::String** StaticGet_Undefined()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x25060);
-		}
-		static ::System::Func_1<::Newtonsoft::Json::JsonSerializerSettings*>** StaticGet__DefaultSettings_k__BackingField()
-		{
-			return (::System::Func_1<::Newtonsoft::Json::JsonSerializerSettings*>**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x25068);
-		}
-		static ::System::String** StaticGet_PositiveInfinity()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x25070);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x5CA8);
 		}
 		static ::System::String** StaticGet_Null()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x25078);
-		}
-		static ::System::String** StaticGet_NegativeInfinity()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x25080);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x5CB0);
 		}
 		static ::System::String** StaticGet_False()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x25088);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x5CB8);
 		}
-		static ::Newtonsoft::Json::JsonSerializerSettings** StaticGet_InitialSerializerSettings()
+		static ::System::String** StaticGet_Undefined()
 		{
-			return (::Newtonsoft::Json::JsonSerializerSettings**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x25090);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x5CC0);
+		}
+		static ::System::String** StaticGet_NegativeInfinity()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x5CC8);
+		}
+		static ::System::String** StaticGet_NaN()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x5CD0);
+		}
+		static ::System::String** StaticGet_PositiveInfinity()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(JsonConvert_TypeDefinitionIndex)->GetStaticField(0x5CD8);
 		}
 
 		static ::System::Void _cctor()
@@ -95,24 +129,79 @@ namespace Newtonsoft::Json
 			return ((::System::Void(*)(::System::Func_1<::Newtonsoft::Json::JsonSerializerSettings*>*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SET_DEFAULTSETTINGS_OFFSET))(value);
 		}
 
-		static ::Newtonsoft::Json::JsonSerializerSettings* GetDefaultSettings()
+		static ::System::String* ToString(::System::DateTime value)
 		{
-			return ((::Newtonsoft::Json::JsonSerializerSettings*(*)())((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_GETDEFAULTSETTINGS_OFFSET))();
+			return ((::System::String*(*)(::System::DateTime))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_OFFSET))(value);
 		}
 
-		static ::System::String* ToString(::System::Boolean value)
+		static ::System::String* ToString_1(::System::DateTime value, ::Newtonsoft::Json::DateFormatHandling format, ::Newtonsoft::Json::DateTimeZoneHandling timeZoneHandling)
 		{
-			return ((::System::String*(*)(::System::Boolean))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_OFFSET))(value);
+			return ((::System::String*(*)(::System::DateTime, ::Newtonsoft::Json::DateFormatHandling, ::Newtonsoft::Json::DateTimeZoneHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_1_OFFSET))(value, format, timeZoneHandling);
 		}
 
-		static ::System::String* ToString_1(::System::Char value)
+		static ::System::String* ToString_2(::System::DateTimeOffset value)
 		{
-			return ((::System::String*(*)(::System::Char))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_1_OFFSET))(value);
+			return ((::System::String*(*)(::System::DateTimeOffset))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_2_OFFSET))(value);
 		}
 
-		static ::System::String* ToString_2(::System::Single value, ::Newtonsoft::Json::FloatFormatHandling floatFormatHandling, ::System::Char quoteChar, ::System::Boolean nullable)
+		static ::System::String* ToString_3(::System::DateTimeOffset value, ::Newtonsoft::Json::DateFormatHandling format)
 		{
-			return ((::System::String*(*)(::System::Single, ::Newtonsoft::Json::FloatFormatHandling, ::System::Char, ::System::Boolean))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_2_OFFSET))(value, floatFormatHandling, quoteChar, nullable);
+			return ((::System::String*(*)(::System::DateTimeOffset, ::Newtonsoft::Json::DateFormatHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_3_OFFSET))(value, format);
+		}
+
+		static ::System::String* ToString_4(::System::Boolean value)
+		{
+			return ((::System::String*(*)(::System::Boolean))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_4_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_5(::System::Char value)
+		{
+			return ((::System::String*(*)(::System::Char))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_5_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_6(::System::Enum* value)
+		{
+			return ((::System::String*(*)(::System::Enum*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_6_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_7(::System::Int32 value)
+		{
+			return ((::System::String*(*)(::System::Int32))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_7_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_8(::System::Int16 value)
+		{
+			return ((::System::String*(*)(::System::Int16))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_8_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_9(::System::UInt16 value)
+		{
+			return ((::System::String*(*)(::System::UInt16))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_9_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_10(::System::UInt32 value)
+		{
+			return ((::System::String*(*)(::System::UInt32))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_10_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_11(::System::Int64 value)
+		{
+			return ((::System::String*(*)(::System::Int64))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_11_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_12(::System::UInt64 value)
+		{
+			return ((::System::String*(*)(::System::UInt64))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_12_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_13(::System::Single value)
+		{
+			return ((::System::String*(*)(::System::Single))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_13_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_14(::System::Single value, ::Newtonsoft::Json::FloatFormatHandling floatFormatHandling, ::System::Char quoteChar, ::System::Boolean nullable)
+		{
+			return ((::System::String*(*)(::System::Single, ::Newtonsoft::Json::FloatFormatHandling, ::System::Char, ::System::Boolean))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_14_OFFSET))(value, floatFormatHandling, quoteChar, nullable);
 		}
 
 		static ::System::String* EnsureFloatFormat(::System::Double value, ::System::String* text, ::Newtonsoft::Json::FloatFormatHandling floatFormatHandling, ::System::Char quoteChar, ::System::Boolean nullable)
@@ -120,9 +209,14 @@ namespace Newtonsoft::Json
 			return ((::System::String*(*)(::System::Double, ::System::String*, ::Newtonsoft::Json::FloatFormatHandling, ::System::Char, ::System::Boolean))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_ENSUREFLOATFORMAT_OFFSET))(value, text, floatFormatHandling, quoteChar, nullable);
 		}
 
-		static ::System::String* ToString_3(::System::Double value, ::Newtonsoft::Json::FloatFormatHandling floatFormatHandling, ::System::Char quoteChar, ::System::Boolean nullable)
+		static ::System::String* ToString_15(::System::Double value)
 		{
-			return ((::System::String*(*)(::System::Double, ::Newtonsoft::Json::FloatFormatHandling, ::System::Char, ::System::Boolean))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_3_OFFSET))(value, floatFormatHandling, quoteChar, nullable);
+			return ((::System::String*(*)(::System::Double))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_15_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_16(::System::Double value, ::Newtonsoft::Json::FloatFormatHandling floatFormatHandling, ::System::Char quoteChar, ::System::Boolean nullable)
+		{
+			return ((::System::String*(*)(::System::Double, ::Newtonsoft::Json::FloatFormatHandling, ::System::Char, ::System::Boolean))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_16_OFFSET))(value, floatFormatHandling, quoteChar, nullable);
 		}
 
 		static ::System::String* EnsureDecimalPlace(::System::Double value, ::System::String* text)
@@ -135,24 +229,69 @@ namespace Newtonsoft::Json
 			return ((::System::String*(*)(::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_ENSUREDECIMALPLACE_1_OFFSET))(text);
 		}
 
-		static ::System::String* ToString_4(::System::Decimal value)
+		static ::System::String* ToString_17(::System::Byte value)
 		{
-			return ((::System::String*(*)(::System::Decimal))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_4_OFFSET))(value);
+			return ((::System::String*(*)(::System::Byte))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_17_OFFSET))(value);
 		}
 
-		static ::System::String* ToString_5(::System::String* value)
+		static ::System::String* ToString_18(::System::SByte value)
 		{
-			return ((::System::String*(*)(::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_5_OFFSET))(value);
+			return ((::System::String*(*)(::System::SByte))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_18_OFFSET))(value);
 		}
 
-		static ::System::String* ToString_6(::System::String* value, ::System::Char delimiter)
+		static ::System::String* ToString_19(::System::Decimal value)
 		{
-			return ((::System::String*(*)(::System::String*, ::System::Char))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_6_OFFSET))(value, delimiter);
+			return ((::System::String*(*)(::System::Decimal))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_19_OFFSET))(value);
 		}
 
-		static ::System::String* ToString_7(::System::String* value, ::System::Char delimiter, ::Newtonsoft::Json::StringEscapeHandling stringEscapeHandling)
+		static ::System::String* ToString_20(::System::Guid value)
 		{
-			return ((::System::String*(*)(::System::String*, ::System::Char, ::Newtonsoft::Json::StringEscapeHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_7_OFFSET))(value, delimiter, stringEscapeHandling);
+			return ((::System::String*(*)(::System::Guid))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_20_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_21(::System::Guid value, ::System::Char quoteChar)
+		{
+			return ((::System::String*(*)(::System::Guid, ::System::Char))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_21_OFFSET))(value, quoteChar);
+		}
+
+		static ::System::String* ToString_22(::System::TimeSpan value)
+		{
+			return ((::System::String*(*)(::System::TimeSpan))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_22_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_23(::System::TimeSpan value, ::System::Char quoteChar)
+		{
+			return ((::System::String*(*)(::System::TimeSpan, ::System::Char))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_23_OFFSET))(value, quoteChar);
+		}
+
+		static ::System::String* ToString_24(::System::Uri* value)
+		{
+			return ((::System::String*(*)(::System::Uri*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_24_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_25(::System::Uri* value, ::System::Char quoteChar)
+		{
+			return ((::System::String*(*)(::System::Uri*, ::System::Char))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_25_OFFSET))(value, quoteChar);
+		}
+
+		static ::System::String* ToString_26(::System::String* value)
+		{
+			return ((::System::String*(*)(::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_26_OFFSET))(value);
+		}
+
+		static ::System::String* ToString_27(::System::String* value, ::System::Char delimiter)
+		{
+			return ((::System::String*(*)(::System::String*, ::System::Char))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_27_OFFSET))(value, delimiter);
+		}
+
+		static ::System::String* ToString_28(::System::String* value, ::System::Char delimiter, ::Newtonsoft::Json::StringEscapeHandling stringEscapeHandling)
+		{
+			return ((::System::String*(*)(::System::String*, ::System::Char, ::Newtonsoft::Json::StringEscapeHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_28_OFFSET))(value, delimiter, stringEscapeHandling);
+		}
+
+		static ::System::String* ToString_29(::System::Object* value)
+		{
+			return ((::System::String*(*)(::System::Object*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_TOSTRING_29_OFFSET))(value);
 		}
 
 		static ::System::String* SerializeObject(::System::Object* value)
@@ -165,19 +304,34 @@ namespace Newtonsoft::Json
 			return ((::System::String*(*)(::System::Object*, ::Newtonsoft::Json::Formatting))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_1_OFFSET))(value, formatting);
 		}
 
-		static ::System::String* SerializeObject_2(::System::Object* value, ::System::Type* type, ::Newtonsoft::Json::JsonSerializerSettings* settings)
+		static ::System::String* SerializeObject_2(::System::Object* value, ::Il2CppArray<::Newtonsoft::Json::JsonConverter*>* converters)
 		{
-			return ((::System::String*(*)(::System::Object*, ::System::Type*, ::Newtonsoft::Json::JsonSerializerSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_2_OFFSET))(value, type, settings);
+			return ((::System::String*(*)(::System::Object*, ::Il2CppArray<::Newtonsoft::Json::JsonConverter*>*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_2_OFFSET))(value, converters);
 		}
 
-		static ::System::String* SerializeObject_3(::System::Object* value, ::Newtonsoft::Json::Formatting formatting, ::Newtonsoft::Json::JsonSerializerSettings* settings)
+		static ::System::String* SerializeObject_3(::System::Object* value, ::Newtonsoft::Json::Formatting formatting, ::Il2CppArray<::Newtonsoft::Json::JsonConverter*>* converters)
 		{
-			return ((::System::String*(*)(::System::Object*, ::Newtonsoft::Json::Formatting, ::Newtonsoft::Json::JsonSerializerSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_3_OFFSET))(value, formatting, settings);
+			return ((::System::String*(*)(::System::Object*, ::Newtonsoft::Json::Formatting, ::Il2CppArray<::Newtonsoft::Json::JsonConverter*>*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_3_OFFSET))(value, formatting, converters);
 		}
 
-		static ::System::String* SerializeObject_4(::System::Object* value, ::System::Type* type, ::Newtonsoft::Json::Formatting formatting, ::Newtonsoft::Json::JsonSerializerSettings* settings)
+		static ::System::String* SerializeObject_4(::System::Object* value, ::Newtonsoft::Json::JsonSerializerSettings* settings)
 		{
-			return ((::System::String*(*)(::System::Object*, ::System::Type*, ::Newtonsoft::Json::Formatting, ::Newtonsoft::Json::JsonSerializerSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_4_OFFSET))(value, type, formatting, settings);
+			return ((::System::String*(*)(::System::Object*, ::Newtonsoft::Json::JsonSerializerSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_4_OFFSET))(value, settings);
+		}
+
+		static ::System::String* SerializeObject_5(::System::Object* value, ::System::Type* type, ::Newtonsoft::Json::JsonSerializerSettings* settings)
+		{
+			return ((::System::String*(*)(::System::Object*, ::System::Type*, ::Newtonsoft::Json::JsonSerializerSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_5_OFFSET))(value, type, settings);
+		}
+
+		static ::System::String* SerializeObject_6(::System::Object* value, ::Newtonsoft::Json::Formatting formatting, ::Newtonsoft::Json::JsonSerializerSettings* settings)
+		{
+			return ((::System::String*(*)(::System::Object*, ::Newtonsoft::Json::Formatting, ::Newtonsoft::Json::JsonSerializerSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_6_OFFSET))(value, formatting, settings);
+		}
+
+		static ::System::String* SerializeObject_7(::System::Object* value, ::System::Type* type, ::Newtonsoft::Json::Formatting formatting, ::Newtonsoft::Json::JsonSerializerSettings* settings)
+		{
+			return ((::System::String*(*)(::System::Object*, ::System::Type*, ::Newtonsoft::Json::Formatting, ::Newtonsoft::Json::JsonSerializerSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECT_7_OFFSET))(value, type, formatting, settings);
 		}
 
 		static ::System::String* SerializeObjectInternal(::System::Object* value, ::System::Type* type, ::Newtonsoft::Json::JsonSerializer* jsonSerializer)
@@ -185,14 +339,39 @@ namespace Newtonsoft::Json
 			return ((::System::String*(*)(::System::Object*, ::System::Type*, ::Newtonsoft::Json::JsonSerializer*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_SERIALIZEOBJECTINTERNAL_OFFSET))(value, type, jsonSerializer);
 		}
 
-		static ::System::Object* DeserializeObject(::System::String* value, ::System::Type* type)
+		static ::System::Object* DeserializeObject(::System::String* value)
 		{
-			return ((::System::Object*(*)(::System::String*, ::System::Type*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_OFFSET))(value, type);
+			return ((::System::Object*(*)(::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_OFFSET))(value);
 		}
 
-		static ::System::Object* DeserializeObject_1(::System::String* value, ::System::Type* type, ::Newtonsoft::Json::JsonSerializerSettings* settings)
+		static ::System::Object* DeserializeObject_1(::System::String* value, ::Newtonsoft::Json::JsonSerializerSettings* settings)
 		{
-			return ((::System::Object*(*)(::System::String*, ::System::Type*, ::Newtonsoft::Json::JsonSerializerSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_1_OFFSET))(value, type, settings);
+			return ((::System::Object*(*)(::System::String*, ::Newtonsoft::Json::JsonSerializerSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_1_OFFSET))(value, settings);
+		}
+
+		static ::System::Object* DeserializeObject_2(::System::String* value, ::System::Type* type)
+		{
+			return ((::System::Object*(*)(::System::String*, ::System::Type*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_2_OFFSET))(value, type);
+		}
+
+		static ::System::Object* DeserializeObject_3(::System::String* value, ::System::Type* type, ::Il2CppArray<::Newtonsoft::Json::JsonConverter*>* converters)
+		{
+			return ((::System::Object*(*)(::System::String*, ::System::Type*, ::Il2CppArray<::Newtonsoft::Json::JsonConverter*>*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_3_OFFSET))(value, type, converters);
+		}
+
+		static ::System::Object* DeserializeObject_4(::System::String* value, ::System::Type* type, ::Newtonsoft::Json::JsonSerializerSettings* settings)
+		{
+			return ((::System::Object*(*)(::System::String*, ::System::Type*, ::Newtonsoft::Json::JsonSerializerSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_DESERIALIZEOBJECT_4_OFFSET))(value, type, settings);
+		}
+
+		static ::System::Void PopulateObject(::System::String* value, ::System::Object* target)
+		{
+			return ((::System::Void(*)(::System::String*, ::System::Object*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_POPULATEOBJECT_OFFSET))(value, target);
+		}
+
+		static ::System::Void PopulateObject_1(::System::String* value, ::System::Object* target, ::Newtonsoft::Json::JsonSerializerSettings* settings)
+		{
+			return ((::System::Void(*)(::System::String*, ::System::Object*, ::Newtonsoft::Json::JsonSerializerSettings*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONCONVERT_POPULATEOBJECT_1_OFFSET))(value, target, settings);
 		}
 	};
 }

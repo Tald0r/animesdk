@@ -1,0 +1,214 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ActivityGuideUIBaseWidgetController.h"
+
+class Class_1_D375C91CCE5D3999;
+class Class_2_501C41990F1F96AC;
+class Class_3_BE75AAF0F7C40C75_3;
+namespace MoleMole { class UIActivityAetherXItemWidgetController; }
+namespace MoleMole { class UIActivityAetherXWeaponWidgetController; }
+namespace MoleMole { class UIActivitySelectAvatarWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralActivityTagWidgetController; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine::UI::Extension { class UITimeWidget; }
+
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_CREATEITEMLIST_OFFSET UNITYSDK_OFFSET(0xC24ED50)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_CREATEROLELIST_OFFSET UNITYSDK_OFFSET(0xC24EC20)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_CREATEWEAPONLIST_OFFSET UNITYSDK_OFFSET(0xC24EEC0)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONACTIVITYAETHERREFRESH_OFFSET UNITYSDK_OFFSET(0xC2510A0)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONACTIVITYEND_OFFSET UNITYSDK_OFFSET(0xC251030)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONAVATARREWARDBTNCLICK_OFFSET UNITYSDK_OFFSET(0xC250D30)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC24F950)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xC24FA60)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC24F9F0)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONTAKEITEMREWARDBTNCLICK_OFFSET UNITYSDK_OFFSET(0xC250B00)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC24FAD0)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC24E750)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC24F040)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONWEAPONREWARDBTNCLICK_OFFSET UNITYSDK_OFFSET(0xC250EB0)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_REFRESHAVATARVIEW_OFFSET UNITYSDK_OFFSET(0xC24FB60)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_REFRESHITEMVIEW_OFFSET UNITYSDK_OFFSET(0xC250110)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xC24F4A0)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_REFRESHWEAPONVIEW_OFFSET UNITYSDK_OFFSET(0xC250630)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_SETUPACTIVITYINFO_OFFSET UNITYSDK_OFFSET(0xC24F7E0)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_SETUPBACKGROUND_OFFSET UNITYSDK_OFFSET(0xC24F870)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER__CREATEITEMLIST_B__22_0_OFFSET UNITYSDK_OFFSET(0xC251340)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER__CREATEWEAPONLIST_B__23_0_OFFSET UNITYSDK_OFFSET(0xC251350)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC251110)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC251360)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0xC2513D0)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC2513E0)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC2513F0)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC251400)
+#define MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC251460)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityAnniversaryWidgetController_TypeDefinitionIndex = 72724;
+
+	class UIActivityAnniversaryWidgetController : public ::MoleMole::ActivityGuideUIBaseWidgetController
+	{
+	public:
+		// static const ::System::Int32 AVATAR_TASK_ID = 0x989F75; // 0x0
+		// static const ::System::Int32 ITEM_TASK_ID = 0x989F76; // 0x0
+		// static const ::System::Int32 WEIPON_TASK_ID = 0x98A018; // 0x0
+		::Class_2_501C41990F1F96AC* _view; // 0x2C8
+		::System::Collections::Generic::List_1<::MoleMole::UIActivitySelectAvatarWidgetController*>* _allAvatarCtrl; // 0x2D0
+		::System::Collections::Generic::List_1<::MoleMole::UIActivityAetherXItemWidgetController*>* _allItemCtrl; // 0x2D8
+		::System::Collections::Generic::List_1<::MoleMole::UIActivityAetherXWeaponWidgetController*>* _allWeaponCtrl; // 0x2E0
+		::Class_1_D375C91CCE5D3999* MainActivity; // 0x2E8
+		::System::Int32 _curSelectItemIndex; // 0x2F0
+		::Class_3_BE75AAF0F7C40C75_3* _avatarTask; // 0x2F8
+		::Class_3_BE75AAF0F7C40C75_3* _itemTask; // 0x300
+		::Class_3_BE75AAF0F7C40C75_3* _weaponTask; // 0x308
+		::MoleMole::UIGeneralActivityTagWidgetController* tagWidgetController; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void CreateRoleList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_CREATEROLELIST_OFFSET))(this);
+		}
+
+		::System::Void CreateItemList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_CREATEITEMLIST_OFFSET))(this);
+		}
+
+		::System::Void CreateWeaponList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_CREATEWEAPONLIST_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshAvatarView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_REFRESHAVATARVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshItemView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_REFRESHITEMVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshWeaponView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_REFRESHWEAPONVIEW_OFFSET))(this);
+		}
+
+		::System::Void SetupActivityInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_SETUPACTIVITYINFO_OFFSET))(this);
+		}
+
+		::System::Void SetupBackground()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_SETUPBACKGROUND_OFFSET))(this);
+		}
+
+		::System::Void OnTakeItemRewardBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONTAKEITEMREWARDBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnAvatarRewardBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONAVATARREWARDBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnWeaponRewardBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONWEAPONREWARDBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnActivityEnd(::UnityEngine::UI::Extension::UITimeWidget* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UITimeWidget*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONACTIVITYEND_OFFSET))(this, obj);
+		}
+
+		::System::Void OnActivityAetherRefresh(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER_ONACTIVITYAETHERREFRESH_OFFSET))(this, args);
+		}
+
+		::System::Void _CreateItemList_b__22_0(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER__CREATEITEMLIST_B__22_0_OFFSET))(this, index);
+		}
+
+		::System::Void _CreateWeaponList_b__23_0(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER__CREATEWEAPONLIST_B__23_0_OFFSET))(this, index);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYANNIVERSARYWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

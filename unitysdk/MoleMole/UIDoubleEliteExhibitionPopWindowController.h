@@ -1,0 +1,99 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_208CC9941471731A_588;
+class Class_2_8D91CCB135292C21;
+class Class_2_8D91CCB135292C21_Class_2_3DD13681DECC4A27;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIDailyChallengeCardRowWidgetController; }
+namespace UnityEngine::UI::Extension { class UILocalizationText; }
+
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x95DDFF0)
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x95DE6E0)
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x95DE780)
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x95DE000)
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x95DE260)
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_UPDATECARD_OFFSET UNITYSDK_OFFSET(0x95DE590)
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x95DE970)
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER__UPDATECARD_G__SETNAME_10_0_OFFSET UNITYSDK_OFFSET(0x95DE810)
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x95DE980)
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x95DE9F0)
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x95DEA00)
+#define MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x95DEA10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIDoubleEliteExhibitionPopWindowController_TypeDefinitionIndex = 61393;
+
+	class UIDoubleEliteExhibitionPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_8D91CCB135292C21* _view; // 0x2F8
+		::Class_2_8D91CCB135292C21_Class_2_3DD13681DECC4A27* _cardView; // 0x300
+		::MoleMole::UIDailyChallengeCardRowWidgetController* _elite1; // 0x308
+		::MoleMole::UIDailyChallengeCardRowWidgetController* _elite2; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void UpdateCard(::Class_2_208CC9941471731A_588* template_)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_588*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER_UPDATECARD_OFFSET))(this, template_);
+		}
+
+		static ::System::Void _UpdateCard_g__SetName_10_0(::UnityEngine::UI::Extension::UILocalizationText* text, ::System::Int32 cardId)
+		{
+			return ((::System::Void(*)(::UnityEngine::UI::Extension::UILocalizationText*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER__UPDATECARD_G__SETNAME_10_0_OFFSET))(text, cardId);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLEELITEEXHIBITIONPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -8,16 +8,22 @@ namespace System { class String; }
 namespace System::Globalization { class NumberFormatInfo; }
 namespace System::Text { class StringBuilder; }
 
-#define SYSTEM_GLOBALIZATION_FORMATPROVIDER_FORMATBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x17D20150)
-#define SYSTEM_GLOBALIZATION_FORMATPROVIDER_TRYSTRINGTOBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x17D22260)
+#define SYSTEM_GLOBALIZATION_FORMATPROVIDER_FORMATBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x1A2BCD60)
+#define SYSTEM_GLOBALIZATION_FORMATPROVIDER_TRYSTRINGTOBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x1A2BEEC0)
+#define SYSTEM_GLOBALIZATION_FORMATPROVIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2BF150)
 
 namespace System::Globalization
 {
-	inline static constexpr unsigned int FormatProvider_TypeDefinitionIndex = 4758;
+	inline static constexpr unsigned int FormatProvider_TypeDefinitionIndex = 6485;
 
 	class FormatProvider : public ::System::Object
 	{
 	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_FORMATPROVIDER__CTOR_OFFSET))(this);
+		}
+
 		static ::System::String* FormatBigInteger(::System::Int32 precision, ::System::Int32 scale, ::System::Boolean sign, ::System::String* format, ::System::Globalization::NumberFormatInfo* numberFormatInfo, ::Il2CppArray<::System::Char>* digits, ::System::Int32 startIndex)
 		{
 			return ((::System::String*(*)(::System::Int32, ::System::Int32, ::System::Boolean, ::System::String*, ::System::Globalization::NumberFormatInfo*, ::Il2CppArray<::System::Char>*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_FORMATPROVIDER_FORMATBIGINTEGER_OFFSET))(precision, scale, sign, format, numberFormatInfo, digits, startIndex);

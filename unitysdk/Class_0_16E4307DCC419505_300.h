@@ -1,10 +1,8 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Nullable_1.h"
 
-namespace RPG::Client::Prop { class ChimeraBattlePuzzleBoard; }
-namespace System { class Action; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_300_TypeDefinitionIndex = 60407;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_300_TypeDefinitionIndex = 64523;
 
 class Class_0_16E4307DCC419505_300
 {

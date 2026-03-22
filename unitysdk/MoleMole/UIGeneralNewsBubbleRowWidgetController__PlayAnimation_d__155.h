@@ -1,0 +1,36 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Cysharp/Threading/Tasks/CompilerServices/AsyncUniTaskMethodBuilder.h"
+#include "unitysdk/Cysharp/Threading/Tasks/YieldAwaitable_Awaiter.h"
+#include "unitysdk/System/ValueType.h"
+
+namespace System { class String; }
+namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
+namespace UnityEngine { class Animation; }
+
+#define MOLEMOLE_UIGENERALNEWSBUBBLEROWWIDGETCONTROLLER__PLAYANIMATION_D__155_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3F3140)
+#define MOLEMOLE_UIGENERALNEWSBUBBLEROWWIDGETCONTROLLER__PLAYANIMATION_D__155_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralNewsBubbleRowWidgetController__PlayAnimation_d__155_TypeDefinitionIndex = 60639;
+
+	struct alignas(8) UIGeneralNewsBubbleRowWidgetController__PlayAnimation_d__155
+	{
+		::UnityEngine::Animation* animation; // 0x10
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x18
+		::System::String* animName; // 0x28
+		::System::Int32 __1__state; // 0x30
+		::Cysharp::Threading::Tasks::YieldAwaitable_Awaiter __u__1; // 0x34
+
+		::System::Void MoveNext()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWSBUBBLEROWWIDGETCONTROLLER__PLAYANIMATION_D__155_MOVENEXT_OFFSET))(this);
+		}
+
+		::System::Void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::CompilerServices::IAsyncStateMachine*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALNEWSBUBBLEROWWIDGETCONTROLLER__PLAYANIMATION_D__155_SETSTATEMACHINE_OFFSET))(this, stateMachine);
+		}
+	};
+}

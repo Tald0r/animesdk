@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define UNITYENGINE_EXECUTEALWAYS__CTOR_OFFSET UNITYSDK_OFFSET(0x181F3800)
+#define UNITYENGINE_EXECUTEALWAYS__CTOR_OFFSET UNITYSDK_OFFSET(0x19BC59D0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ExecuteAlways_TypeDefinitionIndex = 4092;
+	inline static constexpr unsigned int ExecuteAlways_TypeDefinitionIndex = 5328;
 
 	class ExecuteAlways : public ::System::Attribute
 	{

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_THREADING_TIMEOUTHELPER_GETTIME_OFFSET UNITYSDK_OFFSET(0x15B9BB70)
-#define SYSTEM_THREADING_TIMEOUTHELPER_UPDATETIMEOUT_OFFSET UNITYSDK_OFFSET(0x15B9BBB0)
+#define SYSTEM_THREADING_TIMEOUTHELPER_GETTIME_OFFSET UNITYSDK_OFFSET(0x17F831A0)
+#define SYSTEM_THREADING_TIMEOUTHELPER_UPDATETIMEOUT_OFFSET UNITYSDK_OFFSET(0x17F831E0)
 
 namespace System::Threading
 {
-	inline static constexpr unsigned int TimeoutHelper_TypeDefinitionIndex = 810;
+	inline static constexpr unsigned int TimeoutHelper_TypeDefinitionIndex = 801;
 
 	class TimeoutHelper : public ::System::Object
 	{

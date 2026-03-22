@@ -1,0 +1,111 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MiHoYo/SDK/PluginUI/MiHoYoSDKUIContainer.h"
+
+class Class_2_4446D357C89B715C;
+namespace MoleMole { class UIGeneralUserAgreementDialogPopWindowController; }
+namespace MoleMole { class UITextLink; }
+namespace System { class String; }
+
+#define CLASS_2_708B9CA28578F4FD_METHOD_2_283DA224BE06DA9F_OFFSET UNITYSDK_OFFSET(0x79FDF50)
+#define CLASS_2_708B9CA28578F4FD_METHOD_2_37F16DA5DF8EC523_OFFSET UNITYSDK_OFFSET(0x79FDAA0)
+#define CLASS_2_708B9CA28578F4FD_METHOD_2_3FC863B885E15ED5_OFFSET UNITYSDK_OFFSET(0x79FE060)
+#define CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_1_OFFSET UNITYSDK_OFFSET(0x79FD960)
+#define CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_2_OFFSET UNITYSDK_OFFSET(0x79FDA00)
+#define CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_3_OFFSET UNITYSDK_OFFSET(0x79FDEB0)
+#define CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_4_OFFSET UNITYSDK_OFFSET(0x79FDFC0)
+#define CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_5_OFFSET UNITYSDK_OFFSET(0x79FDE10)
+#define CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_OFFSET UNITYSDK_OFFSET(0x79FD8C0)
+#define CLASS_2_708B9CA28578F4FD_METHOD_2_80A9DB3F285E392F_OFFSET UNITYSDK_OFFSET(0x79FE340)
+#define CLASS_2_708B9CA28578F4FD_METHOD_2_85377D41FEE05B66_OFFSET UNITYSDK_OFFSET(0x79FD3A0)
+#define CLASS_2_708B9CA28578F4FD_ONCLOSE_OFFSET UNITYSDK_OFFSET(0x79FD7C0)
+#define CLASS_2_708B9CA28578F4FD_ONSHOW_OFFSET UNITYSDK_OFFSET(0x79FCAB0)
+#define CLASS_2_708B9CA28578F4FD__CTOR_OFFSET UNITYSDK_OFFSET(0x79FD840)
+
+inline static constexpr unsigned int Class_2_708B9CA28578F4FD_TypeDefinitionIndex = 52478;
+
+class Class_2_708B9CA28578F4FD : public ::MiHoYo::SDK::PluginUI::MiHoYoSDKUIContainer
+{
+public:
+	static ::Class_2_708B9CA28578F4FD** StaticGet_Field_2_2()
+	{
+		return (::Class_2_708B9CA28578F4FD**)Il2CppClass::FromTypeDefinitionIndex(Class_2_708B9CA28578F4FD_TypeDefinitionIndex)->GetStaticField(0x42D70);
+	}
+	// static const ::System::String* Field_2_3; // 0x0
+	// static const ::System::String* Field_2_4; // 0x0
+	// static const ::System::String* Field_2_5; // 0x0
+	// static const ::System::String* Field_2_6; // 0x0
+	::MoleMole::UIGeneralUserAgreementDialogPopWindowController* Field_2_0; // 0x18
+	::Class_2_4446D357C89B715C* Field_2_1; // 0x20
+	::MoleMole::UITextLink* Field_2_7; // 0x28
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD__CTOR_OFFSET))(this);
+	}
+
+	::System::Void OnShow()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_ONSHOW_OFFSET))(this);
+	}
+
+	::System::Void OnClose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_ONCLOSE_OFFSET))(this);
+	}
+
+	::System::Void Method_2_596D9113D22B8335()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_OFFSET))(this);
+	}
+
+	::System::Void Method_2_596D9113D22B8335_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_596D9113D22B8335_2()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_2_OFFSET))(this);
+	}
+
+	::System::Void Method_2_37F16DA5DF8EC523(::System::String* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_METHOD_2_37F16DA5DF8EC523_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_85377D41FEE05B66()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_METHOD_2_85377D41FEE05B66_OFFSET))(this);
+	}
+
+	::System::Void Method_2_596D9113D22B8335_3()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_3_OFFSET))(this);
+	}
+
+	::System::Void Method_2_283DA224BE06DA9F()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_METHOD_2_283DA224BE06DA9F_OFFSET))(this);
+	}
+
+	::System::Void Method_2_596D9113D22B8335_4()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_4_OFFSET))(this);
+	}
+
+	::System::Void Method_2_596D9113D22B8335_5()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_METHOD_2_596D9113D22B8335_5_OFFSET))(this);
+	}
+
+	::System::Void Method_2_3FC863B885E15ED5()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_METHOD_2_3FC863B885E15ED5_OFFSET))(this);
+	}
+
+	static ::Class_2_708B9CA28578F4FD* Method_2_80A9DB3F285E392F()
+	{
+		return ((::Class_2_708B9CA28578F4FD*(*)())((::PBYTE)hIl2Cpp + CLASS_2_708B9CA28578F4FD_METHOD_2_80A9DB3F285E392F_OFFSET))();
+	}
+};

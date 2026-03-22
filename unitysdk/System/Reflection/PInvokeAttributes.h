@@ -3,7 +3,7 @@
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int PInvokeAttributes_TypeDefinitionIndex = 569;
+	inline static constexpr unsigned int PInvokeAttributes_TypeDefinitionIndex = 543;
 
 	enum class PInvokeAttributes : ::System::Int32
 	{

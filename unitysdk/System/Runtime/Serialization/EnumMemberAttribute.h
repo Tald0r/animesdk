@@ -4,12 +4,14 @@
 
 namespace System { class String; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_ENUMMEMBERATTRIBUTE_GET_ISVALUESETEXPLICITLY_OFFSET UNITYSDK_OFFSET(0x17D371A0)
-#define SYSTEM_RUNTIME_SERIALIZATION_ENUMMEMBERATTRIBUTE_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x17D37190)
+#define SYSTEM_RUNTIME_SERIALIZATION_ENUMMEMBERATTRIBUTE_GET_ISVALUESETEXPLICITLY_OFFSET UNITYSDK_OFFSET(0x1B156C10)
+#define SYSTEM_RUNTIME_SERIALIZATION_ENUMMEMBERATTRIBUTE_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x1B156BF0)
+#define SYSTEM_RUNTIME_SERIALIZATION_ENUMMEMBERATTRIBUTE_SET_VALUE_OFFSET UNITYSDK_OFFSET(0x1B156C00)
+#define SYSTEM_RUNTIME_SERIALIZATION_ENUMMEMBERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B156BE0)
 
 namespace System::Runtime::Serialization
 {
-	inline static constexpr unsigned int EnumMemberAttribute_TypeDefinitionIndex = 3713;
+	inline static constexpr unsigned int EnumMemberAttribute_TypeDefinitionIndex = 6517;
 
 	class EnumMemberAttribute : public ::System::Attribute
 	{
@@ -17,9 +19,19 @@ namespace System::Runtime::Serialization
 		::System::String* value; // 0x10
 		::System::Boolean isValueSetExplicitly; // 0x18
 
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_ENUMMEMBERATTRIBUTE__CTOR_OFFSET))(this);
+		}
+
 		::System::String* get_Value()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_ENUMMEMBERATTRIBUTE_GET_VALUE_OFFSET))(this);
+		}
+
+		::System::Void set_Value(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_ENUMMEMBERATTRIBUTE_SET_VALUE_OFFSET))(this, value);
 		}
 
 		::System::Boolean get_IsValueSetExplicitly()

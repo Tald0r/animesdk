@@ -1,0 +1,116 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_52BF5A8E97668B1D;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine::EventSystems { class StandaloneInputModule; }
+namespace UnityEngine::InputSystem::UI { class InputSystemUIInputModule; }
+
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_CHANGETOINPUTSYSTEMMODULE_OFFSET UNITYSDK_OFFSET(0xC3C2E50)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_CHANGETONORMALINPUTMODULE_OFFSET UNITYSDK_OFFSET(0xC3C3B80)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xC3C2BC0)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC3C3A00)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC3C3AA0)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC3C2C50)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC3C3950)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xC3C2BD0)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER__CHANGETOINPUTSYSTEMMODULE_B__12_0_OFFSET UNITYSDK_OFFSET(0xC3C3E30)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC3C3E20)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC3C3E60)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC3C3ED0)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC3C3EE0)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC3C3EF0)
+#define MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xC3C3F60)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIRuntimeInspectorPopWindowController_TypeDefinitionIndex = 36386;
+
+	class UIRuntimeInspectorPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_52BF5A8E97668B1D* _view; // 0x2F8
+		::UnityEngine::EventSystems::StandaloneInputModule* _oldNormalInputModule; // 0x300
+		::UnityEngine::InputSystem::UI::InputSystemUIInputModule* _newInputSystemInputModule; // 0x308
+		::UnityEngine::GameObject* _virtualMouse; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void ChangeToNormalInputModule()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_CHANGETONORMALINPUTMODULE_OFFSET))(this);
+		}
+
+		::System::Void ChangeToInputsystemModule()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER_CHANGETOINPUTSYSTEMMODULE_OFFSET))(this);
+		}
+
+		::System::Void _ChangeToInputsystemModule_b__12_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER__CHANGETOINPUTSYSTEMMODULE_B__12_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRUNTIMEINSPECTORPOPWINDOWCONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

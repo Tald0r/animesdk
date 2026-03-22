@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK::Protobuf::Reflection
 {
-	inline static constexpr unsigned int FieldDescriptorProto_Types_Label_TypeDefinitionIndex = 27323;
+	inline static constexpr unsigned int FieldDescriptorProto_Types_Label_TypeDefinitionIndex = 24676;
 
 	enum class FieldDescriptorProto_Types_Label : ::System::Int32
 	{

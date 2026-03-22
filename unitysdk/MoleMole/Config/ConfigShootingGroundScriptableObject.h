@@ -1,0 +1,25 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/MihoyoSerializedScriptableObject.h"
+
+namespace MoleMole::Config { class ConfigShootingGround; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+
+#define MOLEMOLE_CONFIG_CONFIGSHOOTINGGROUNDSCRIPTABLEOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x970E4C0)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int ConfigShootingGroundScriptableObject_TypeDefinitionIndex = 75454;
+
+	class ConfigShootingGroundScriptableObject : public ::Foundation::MihoyoSerializedScriptableObject
+	{
+	public:
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigShootingGround*>* configs; // 0x58
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGSHOOTINGGROUNDSCRIPTABLEOBJECT__CTOR_OFFSET))(this);
+		}
+	};
+}

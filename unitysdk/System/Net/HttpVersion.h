@@ -4,22 +4,28 @@
 
 namespace System { class Version; }
 
-#define SYSTEM_NET_HTTPVERSION__CCTOR_OFFSET UNITYSDK_OFFSET(0x17ED6DA0)
+#define SYSTEM_NET_HTTPVERSION__CCTOR_OFFSET UNITYSDK_OFFSET(0x18D7DD20)
+#define SYSTEM_NET_HTTPVERSION__CTOR_OFFSET UNITYSDK_OFFSET(0x18D7DD10)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int HttpVersion_TypeDefinitionIndex = 2722;
+	inline static constexpr unsigned int HttpVersion_TypeDefinitionIndex = 3282;
 
 	class HttpVersion : public ::System::Object
 	{
 	public:
 		static ::System::Version** StaticGet_Version11()
 		{
-			return (::System::Version**)Il2CppClass::FromTypeDefinitionIndex(HttpVersion_TypeDefinitionIndex)->GetStaticField(0x145E0);
+			return (::System::Version**)Il2CppClass::FromTypeDefinitionIndex(HttpVersion_TypeDefinitionIndex)->GetStaticField(0x2E90);
 		}
 		static ::System::Version** StaticGet_Version10()
 		{
-			return (::System::Version**)Il2CppClass::FromTypeDefinitionIndex(HttpVersion_TypeDefinitionIndex)->GetStaticField(0x145E8);
+			return (::System::Version**)Il2CppClass::FromTypeDefinitionIndex(HttpVersion_TypeDefinitionIndex)->GetStaticField(0x2E98);
+		}
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPVERSION__CTOR_OFFSET))(this);
 		}
 
 		static ::System::Void _cctor()

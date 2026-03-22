@@ -7,26 +7,34 @@
 #include "unitysdk/UnityEngine/Timeline/AnimationOutputWeightProcessor_WeightInfo.h"
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine::Timeline { class AnimationTrack; }
 
-#define UNITYENGINE_TIMELINE_ANIMATIONOUTPUTWEIGHTPROCESSOR_EVALUATE_OFFSET UNITYSDK_OFFSET(0x18186440)
-#define UNITYENGINE_TIMELINE_ANIMATIONOUTPUTWEIGHTPROCESSOR_FINDMIXERS_1_OFFSET UNITYSDK_OFFSET(0x18186100)
-#define UNITYENGINE_TIMELINE_ANIMATIONOUTPUTWEIGHTPROCESSOR_FINDMIXERS_OFFSET UNITYSDK_OFFSET(0x18185FD0)
-#define UNITYENGINE_TIMELINE_ANIMATIONOUTPUTWEIGHTPROCESSOR__CTOR_OFFSET UNITYSDK_OFFSET(0x18185F30)
+#define UNITYENGINE_TIMELINE_ANIMATIONOUTPUTWEIGHTPROCESSOR_EVALUATE_OFFSET UNITYSDK_OFFSET(0x1AB5A360)
+#define UNITYENGINE_TIMELINE_ANIMATIONOUTPUTWEIGHTPROCESSOR_FINDMIXERS_1_OFFSET UNITYSDK_OFFSET(0x1AB5A030)
+#define UNITYENGINE_TIMELINE_ANIMATIONOUTPUTWEIGHTPROCESSOR_FINDMIXERS_OFFSET UNITYSDK_OFFSET(0x1AB59F00)
+#define UNITYENGINE_TIMELINE_ANIMATIONOUTPUTWEIGHTPROCESSOR_SETANIMATIONTRACK_OFFSET UNITYSDK_OFFSET(0x1AB59E70)
+#define UNITYENGINE_TIMELINE_ANIMATIONOUTPUTWEIGHTPROCESSOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB59E80)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int AnimationOutputWeightProcessor_TypeDefinitionIndex = 28935;
+	inline static constexpr unsigned int AnimationOutputWeightProcessor_TypeDefinitionIndex = 29210;
 
 	class AnimationOutputWeightProcessor : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::List_1<::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo>* m_Mixers; // 0x10
-		::UnityEngine::Animations::AnimationPlayableOutput m_Output; // 0x18
-		::UnityEngine::Animations::AnimationMotionXToDeltaPlayable m_MotionXPlayable; // 0x28
+		::UnityEngine::Timeline::AnimationTrack* _animTrack; // 0x10
+		::System::Collections::Generic::List_1<::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo>* m_Mixers; // 0x18
+		::UnityEngine::Animations::AnimationPlayableOutput m_Output; // 0x20
+		::UnityEngine::Animations::AnimationMotionXToDeltaPlayable m_MotionXPlayable; // 0x30
 
 		::System::Void _ctor(::UnityEngine::Animations::AnimationPlayableOutput output)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Animations::AnimationPlayableOutput))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_ANIMATIONOUTPUTWEIGHTPROCESSOR__CTOR_OFFSET))(this, output);
+		}
+
+		::System::Void SetAnimationTrack(::UnityEngine::Timeline::AnimationTrack* animTrack)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Timeline::AnimationTrack*))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_ANIMATIONOUTPUTWEIGHTPROCESSOR_SETANIMATIONTRACK_OFFSET))(this, animTrack);
 		}
 
 		::System::Void FindMixers()

@@ -4,22 +4,22 @@
 
 namespace System { class Array; }
 
-#define SYSTEM_ARRAY_ARRAYENUMERATOR_CLONE_OFFSET UNITYSDK_OFFSET(0x15AFE330)
-#define SYSTEM_ARRAY_ARRAYENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x15AFE3D0)
-#define SYSTEM_ARRAY_ARRAYENUMERATOR_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x15AFE300)
-#define SYSTEM_ARRAY_ARRAYENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x15AFE320)
-#define SYSTEM_ARRAY_ARRAYENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x15AFD540)
+#define SYSTEM_ARRAY_ARRAYENUMERATOR_CLONE_OFFSET UNITYSDK_OFFSET(0x192ACF60)
+#define SYSTEM_ARRAY_ARRAYENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x192AD0A0)
+#define SYSTEM_ARRAY_ARRAYENUMERATOR_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x192ACF30)
+#define SYSTEM_ARRAY_ARRAYENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x192ACF50)
+#define SYSTEM_ARRAY_ARRAYENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x192ACE10)
 
 namespace System
 {
-	inline static constexpr unsigned int Array_ArrayEnumerator_TypeDefinitionIndex = 137;
+	inline static constexpr unsigned int Array_ArrayEnumerator_TypeDefinitionIndex = 127;
 
 	class Array_ArrayEnumerator : public ::System::Object
 	{
 	public:
 		::System::Array* _array; // 0x10
-		::System::Int32 _index; // 0x18
-		::System::Int32 _endIndex; // 0x1C
+		::System::Int32 _endIndex; // 0x18
+		::System::Int32 _index; // 0x1C
 
 		::System::Void _ctor(::System::Array* array)
 		{

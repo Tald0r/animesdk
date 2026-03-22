@@ -5,43 +5,68 @@
 
 namespace System { class String; }
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID_GET_FRIENDLYNAME_OFFSET UNITYSDK_OFFSET(0x17F1C420)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x17F1C400)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID_SET_VALUE_OFFSET UNITYSDK_OFFSET(0x17F1C410)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F1C320)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17F1C3F0)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_3_OFFSET UNITYSDK_OFFSET(0x17F19F20)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_OFFSET UNITYSDK_OFFSET(0x17F1C290)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID_FROMFRIENDLYNAME_OFFSET UNITYSDK_OFFSET(0x182F7240)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID_FROMOIDVALUE_OFFSET UNITYSDK_OFFSET(0x182F7340)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID_GET_FRIENDLYNAME_OFFSET UNITYSDK_OFFSET(0x182F7460)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x182F7440)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID_SET_FRIENDLYNAME_OFFSET UNITYSDK_OFFSET(0x182F7510)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID_SET_VALUE_OFFSET UNITYSDK_OFFSET(0x182F7450)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_1_OFFSET UNITYSDK_OFFSET(0x182F7040)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_2_OFFSET UNITYSDK_OFFSET(0x182F70D0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_3_OFFSET UNITYSDK_OFFSET(0x182F71A0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_4_OFFSET UNITYSDK_OFFSET(0x182F71B0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_5_OFFSET UNITYSDK_OFFSET(0x182F7230)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_OFFSET UNITYSDK_OFFSET(0x182F7030)
 
 namespace System::Security::Cryptography
 {
-	inline static constexpr unsigned int Oid_TypeDefinitionIndex = 2658;
+	inline static constexpr unsigned int Oid_TypeDefinitionIndex = 3161;
 
 	class Oid : public ::System::Object
 	{
 	public:
-		::System::String* m_friendlyName; // 0x10
-		::System::String* m_value; // 0x18
+		::System::String* m_value; // 0x10
+		::System::String* m_friendlyName; // 0x18
 		::System::Security::Cryptography::OidGroup m_group; // 0x20
 
-		::System::Void _ctor(::System::String* oid)
+		::System::Void _ctor()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_OFFSET))(this, oid);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _ctor_1(::System::String* oid, ::System::Security::Cryptography::OidGroup group, ::System::Boolean lookupFriendlyName)
+		::System::Void _ctor_1(::System::String* oid)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Security::Cryptography::OidGroup, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_1_OFFSET))(this, oid, group, lookupFriendlyName);
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_1_OFFSET))(this, oid);
 		}
 
-		::System::Void _ctor_2(::System::String* value, ::System::String* friendlyName)
+		::System::Void _ctor_2(::System::String* oid, ::System::Security::Cryptography::OidGroup group, ::System::Boolean lookupFriendlyName)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_2_OFFSET))(this, value, friendlyName);
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Security::Cryptography::OidGroup, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_2_OFFSET))(this, oid, group, lookupFriendlyName);
 		}
 
-		::System::Void _ctor_3(::System::Security::Cryptography::Oid* oid)
+		::System::Void _ctor_3(::System::String* value, ::System::String* friendlyName)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::Oid*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_3_OFFSET))(this, oid);
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_3_OFFSET))(this, value, friendlyName);
+		}
+
+		::System::Void _ctor_4(::System::Security::Cryptography::Oid* oid)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::Oid*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_4_OFFSET))(this, oid);
+		}
+
+		::System::Void _ctor_5(::System::String* value, ::System::String* friendlyName, ::System::Security::Cryptography::OidGroup group)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::Security::Cryptography::OidGroup))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID__CTOR_5_OFFSET))(this, value, friendlyName, group);
+		}
+
+		static ::System::Security::Cryptography::Oid* FromFriendlyName(::System::String* friendlyName, ::System::Security::Cryptography::OidGroup group)
+		{
+			return ((::System::Security::Cryptography::Oid*(*)(::System::String*, ::System::Security::Cryptography::OidGroup))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID_FROMFRIENDLYNAME_OFFSET))(friendlyName, group);
+		}
+
+		static ::System::Security::Cryptography::Oid* FromOidValue(::System::String* oidValue, ::System::Security::Cryptography::OidGroup group)
+		{
+			return ((::System::Security::Cryptography::Oid*(*)(::System::String*, ::System::Security::Cryptography::OidGroup))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID_FROMOIDVALUE_OFFSET))(oidValue, group);
 		}
 
 		::System::String* get_Value()
@@ -57,6 +82,11 @@ namespace System::Security::Cryptography
 		::System::String* get_FriendlyName()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID_GET_FRIENDLYNAME_OFFSET))(this);
+		}
+
+		::System::Void set_FriendlyName(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_OID_SET_FRIENDLYNAME_OFFSET))(this, value);
 		}
 	};
 }

@@ -1,0 +1,29 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Config/AnimatorEventEntry.h"
+
+namespace MoleMole::Config { class AnimatorEvent; }
+
+#define MOLEMOLE_CONFIG_ANIMATOREVENTTRIGGERLEVELCUSTOMCONDITIONSENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x9B51CC0)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTTRIGGERLEVELCUSTOMCONDITIONSENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x9B51D60)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int AnimatorEventTriggerLevelCustomConditionsEntry_TypeDefinitionIndex = 53983;
+
+	class AnimatorEventTriggerLevelCustomConditionsEntry : public ::MoleMole::Config::AnimatorEventEntry
+	{
+	public:
+		::System::Int32 LevelConditionsID; // 0x58
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_ANIMATOREVENTTRIGGERLEVELCUSTOMCONDITIONSENTRY__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::Config::AnimatorEvent* CreateAnimationEvent()
+		{
+			return ((::MoleMole::Config::AnimatorEvent*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_ANIMATOREVENTTRIGGERLEVELCUSTOMCONDITIONSENTRY_CREATEANIMATIONEVENT_OFFSET))(this);
+		}
+	};
+}

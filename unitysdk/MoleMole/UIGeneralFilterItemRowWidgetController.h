@@ -1,0 +1,126 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/UnityEngine/Color.h"
+
+class Class_2_8AC0F053FD37D9E9;
+namespace MoleMole { class UIControlReference; }
+namespace System { class String; }
+namespace UnityEngine::Events { class UnityAction; }
+
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_GET_NEEDCACHE_OFFSET UNITYSDK_OFFSET(0x8C06EA0)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_GET_SELECTED_OFFSET UNITYSDK_OFFSET(0x8C071E0)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C077E0)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8C07880)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C07BE0)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SETACTIVECONSOLETIP_OFFSET UNITYSDK_OFFSET(0x8C07750)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SETONCLICK_OFFSET UNITYSDK_OFFSET(0x8C07420)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SET_BUTTONENABLED_OFFSET UNITYSDK_OFFSET(0x8C072A0)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SET_BUTTONVISIBLE_OFFSET UNITYSDK_OFFSET(0x8C07360)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SET_COLOR_OFFSET UNITYSDK_OFFSET(0x8C07140)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SET_SELECTED_OFFSET UNITYSDK_OFFSET(0x8C07210)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SET_TITLE_OFFSET UNITYSDK_OFFSET(0x8C06EB0)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SHOWNUMBER_OFFSET UNITYSDK_OFFSET(0x8C07540)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8C07CC0)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C07CF0)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8C07D60)
+#define MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C07D70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralFilterItemRowWidgetController_TypeDefinitionIndex = 41826;
+
+	class UIGeneralFilterItemRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::Int32 MAX_SHOW_NUM = 0x63; // 0x0
+		// static const ::System::String* NUM_TEXT; // 0x0
+		// static const ::System::String* MAX_NUM_TEXT; // 0x0
+		::Class_2_8AC0F053FD37D9E9* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_NeedCache()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_GET_NEEDCACHE_OFFSET))(this);
+		}
+
+		::System::Void set_Title(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SET_TITLE_OFFSET))(this, value);
+		}
+
+		::System::Void set_Color(::UnityEngine::Color value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SET_COLOR_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_Selected()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_GET_SELECTED_OFFSET))(this);
+		}
+
+		::System::Void set_Selected(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SET_SELECTED_OFFSET))(this, value);
+		}
+
+		::System::Void set_ButtonEnabled(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SET_BUTTONENABLED_OFFSET))(this, value);
+		}
+
+		::System::Void set_ButtonVisible(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SET_BUTTONVISIBLE_OFFSET))(this, value);
+		}
+
+		::System::Void SetOnClick(::UnityEngine::Events::UnityAction* onClick)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Events::UnityAction*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SETONCLICK_OFFSET))(this, onClick);
+		}
+
+		::System::Void ShowNumber(::System::Int32 num)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SHOWNUMBER_OFFSET))(this, num);
+		}
+
+		::System::Void SetActiveConsoleTip(::System::Boolean active)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_SETACTIVECONSOLETIP_OFFSET))(this, active);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALFILTERITEMROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+	};
+}

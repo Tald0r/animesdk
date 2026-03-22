@@ -1,0 +1,115 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_BD67E5EC91589BF1.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/Struct_2_61D95EB9B5A93E74.h"
+#include "unitysdk/UnityEngine/EventSystems/RaycastResult.h"
+
+class Class_0_16E4307DCC419505_177;
+namespace MoleMole { class UITowerDefenseMainPageController; }
+namespace MoleMole::Battle { class Entity; }
+namespace UnityEngine { class GameObject; }
+
+#define CLASS_2_179C97C1A228F960_METHOD_2_1115C2579F87AE18_OFFSET UNITYSDK_OFFSET(0x7426EA0)
+#define CLASS_2_179C97C1A228F960_METHOD_2_13B7129DF98444A6_OFFSET UNITYSDK_OFFSET(0x7427770)
+#define CLASS_2_179C97C1A228F960_METHOD_2_2C95AFAD0256302F_OFFSET UNITYSDK_OFFSET(0x7427A50)
+#define CLASS_2_179C97C1A228F960_METHOD_2_385AA2E42A1A69EE_OFFSET UNITYSDK_OFFSET(0x7427150)
+#define CLASS_2_179C97C1A228F960_METHOD_2_3A8648EF05D0840F_OFFSET UNITYSDK_OFFSET(0x74277F0)
+#define CLASS_2_179C97C1A228F960_METHOD_2_5BCE9210F4ACDD0B_OFFSET UNITYSDK_OFFSET(0x7427BC0)
+#define CLASS_2_179C97C1A228F960_METHOD_2_6AE2166528100175_OFFSET UNITYSDK_OFFSET(0x7427420)
+#define CLASS_2_179C97C1A228F960_METHOD_2_6F9D83D4C3125F87_OFFSET UNITYSDK_OFFSET(0x74269E0)
+#define CLASS_2_179C97C1A228F960_METHOD_2_8754C33A018B7044_OFFSET UNITYSDK_OFFSET(0x7426F70)
+#define CLASS_2_179C97C1A228F960_METHOD_2_8C704EC832EDEFC8_OFFSET UNITYSDK_OFFSET(0x74266C0)
+#define CLASS_2_179C97C1A228F960_METHOD_2_A27DC2C5A103933A_OFFSET UNITYSDK_OFFSET(0x74262C0)
+#define CLASS_2_179C97C1A228F960_METHOD_2_B06F516E4459C742_OFFSET UNITYSDK_OFFSET(0x74275D0)
+#define CLASS_2_179C97C1A228F960_METHOD_2_D0FF215AEC76A26C_OFFSET UNITYSDK_OFFSET(0x7427320)
+#define CLASS_2_179C97C1A228F960_METHOD_2_E32BCC2C6A959814_OFFSET UNITYSDK_OFFSET(0x7426510)
+#define CLASS_2_179C97C1A228F960__CTOR_OFFSET UNITYSDK_OFFSET(0x7426240)
+
+inline static constexpr unsigned int Class_2_179C97C1A228F960_TypeDefinitionIndex = 66375;
+
+class Class_2_179C97C1A228F960 : public ::Class_1_BD67E5EC91589BF1
+{
+public:
+	::UnityEngine::GameObject* Field_2_3; // 0x10
+	::MoleMole::Battle::Entity* Field_2_1; // 0x18
+	::MoleMole::UITowerDefenseMainPageController* Field_2_0; // 0x20
+	::UnityEngine::GameObject* Field_2_4; // 0x28
+	::UnityEngine::GameObject* Field_2_2; // 0x30
+	::System::Boolean Field_2_5; // 0x38
+
+	::System::Void _ctor(::MoleMole::UITowerDefenseMainPageController* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UITowerDefenseMainPageController*))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960__CTOR_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_A27DC2C5A103933A()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_A27DC2C5A103933A_OFFSET))(this);
+	}
+
+	::System::Void Method_2_8C704EC832EDEFC8()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_8C704EC832EDEFC8_OFFSET))(this);
+	}
+
+	::Class_0_16E4307DCC419505_177* Method_2_6F9D83D4C3125F87()
+	{
+		return ((::Class_0_16E4307DCC419505_177*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_6F9D83D4C3125F87_OFFSET))(this);
+	}
+
+	::Struct_2_61D95EB9B5A93E74 Method_2_D0FF215AEC76A26C(::MoleMole::InputActionEvent a1)
+	{
+		return ((::Struct_2_61D95EB9B5A93E74(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_D0FF215AEC76A26C_OFFSET))(this, a1);
+	}
+
+	::Class_0_16E4307DCC419505_177* Method_2_6AE2166528100175(::MoleMole::UITowerDefenseMainPageController* a1, ::UnityEngine::GameObject* a2, ::System::Int32 a3, ::System::Int32 a4)
+	{
+		return ((::Class_0_16E4307DCC419505_177*(*)(::PVOID, ::MoleMole::UITowerDefenseMainPageController*, ::UnityEngine::GameObject*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_6AE2166528100175_OFFSET))(this, a1, a2, a3, a4);
+	}
+
+	::System::Void Method_2_B06F516E4459C742()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_B06F516E4459C742_OFFSET))(this);
+	}
+
+	::System::Void Method_2_13B7129DF98444A6(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_13B7129DF98444A6_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Method_2_3A8648EF05D0840F(::UnityEngine::EventSystems::RaycastResult a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::UnityEngine::EventSystems::RaycastResult))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_3A8648EF05D0840F_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_2C95AFAD0256302F()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_2C95AFAD0256302F_OFFSET))(this);
+	}
+
+	::System::Void Method_2_5BCE9210F4ACDD0B()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_5BCE9210F4ACDD0B_OFFSET))(this);
+	}
+
+	::Class_0_16E4307DCC419505_177* Method_2_1115C2579F87AE18()
+	{
+		return ((::Class_0_16E4307DCC419505_177*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_1115C2579F87AE18_OFFSET))(this);
+	}
+
+	::System::Void Method_2_385AA2E42A1A69EE(::MoleMole::Battle::Entity* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_385AA2E42A1A69EE_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_E32BCC2C6A959814()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_E32BCC2C6A959814_OFFSET))(this);
+	}
+
+	::Class_0_16E4307DCC419505_177* Method_2_8754C33A018B7044()
+	{
+		return ((::Class_0_16E4307DCC419505_177*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_179C97C1A228F960_METHOD_2_8754C33A018B7044_OFFSET))(this);
+	}
+};

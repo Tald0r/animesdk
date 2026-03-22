@@ -7,25 +7,25 @@ namespace UnityEngine { class ISubsystemDescriptor; }
 namespace UnityEngine { class ISubsystemDescriptorImpl; }
 namespace UnityEngine { class SubsystemDescriptor; }
 
-#define UNITYENGINE_INTERNAL_SUBSYSTEMDESCRIPTORS_INTERNAL_ADDDESCRIPTOR_OFFSET UNITYSDK_OFFSET(0x182A36B0)
-#define UNITYENGINE_INTERNAL_SUBSYSTEMDESCRIPTORS_INTERNAL_CLEARMANAGEDDESCRIPTORS_OFFSET UNITYSDK_OFFSET(0x182A39D0)
-#define UNITYENGINE_INTERNAL_SUBSYSTEMDESCRIPTORS_INTERNAL_INITIALIZEMANAGEDDESCRIPTOR_OFFSET UNITYSDK_OFFSET(0x182A38A0)
-#define UNITYENGINE_INTERNAL_SUBSYSTEMDESCRIPTORS__CCTOR_OFFSET UNITYSDK_OFFSET(0x182A3C10)
+#define UNITYENGINE_INTERNAL_SUBSYSTEMDESCRIPTORS_INTERNAL_ADDDESCRIPTOR_OFFSET UNITYSDK_OFFSET(0x1B144A60)
+#define UNITYENGINE_INTERNAL_SUBSYSTEMDESCRIPTORS_INTERNAL_CLEARMANAGEDDESCRIPTORS_OFFSET UNITYSDK_OFFSET(0x1B144CF0)
+#define UNITYENGINE_INTERNAL_SUBSYSTEMDESCRIPTORS_INTERNAL_INITIALIZEMANAGEDDESCRIPTOR_OFFSET UNITYSDK_OFFSET(0x1B144C60)
+#define UNITYENGINE_INTERNAL_SUBSYSTEMDESCRIPTORS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B144EB0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int Internal_SubsystemDescriptors_TypeDefinitionIndex = 5417;
+	inline static constexpr unsigned int Internal_SubsystemDescriptors_TypeDefinitionIndex = 9637;
 
 	class Internal_SubsystemDescriptors : public ::System::Object
 	{
 	public:
-		static ::System::Collections::Generic::List_1<::UnityEngine::ISubsystemDescriptor*>** StaticGet_s_StandaloneSubsystemDescriptors()
-		{
-			return (::System::Collections::Generic::List_1<::UnityEngine::ISubsystemDescriptor*>**)Il2CppClass::FromTypeDefinitionIndex(Internal_SubsystemDescriptors_TypeDefinitionIndex)->GetStaticField(0x460);
-		}
 		static ::System::Collections::Generic::List_1<::UnityEngine::ISubsystemDescriptorImpl*>** StaticGet_s_IntegratedSubsystemDescriptors()
 		{
-			return (::System::Collections::Generic::List_1<::UnityEngine::ISubsystemDescriptorImpl*>**)Il2CppClass::FromTypeDefinitionIndex(Internal_SubsystemDescriptors_TypeDefinitionIndex)->GetStaticField(0x468);
+			return (::System::Collections::Generic::List_1<::UnityEngine::ISubsystemDescriptorImpl*>**)Il2CppClass::FromTypeDefinitionIndex(Internal_SubsystemDescriptors_TypeDefinitionIndex)->GetStaticField(0x8B40);
+		}
+		static ::System::Collections::Generic::List_1<::UnityEngine::ISubsystemDescriptor*>** StaticGet_s_StandaloneSubsystemDescriptors()
+		{
+			return (::System::Collections::Generic::List_1<::UnityEngine::ISubsystemDescriptor*>**)Il2CppClass::FromTypeDefinitionIndex(Internal_SubsystemDescriptors_TypeDefinitionIndex)->GetStaticField(0x8B48);
 		}
 
 		static ::System::Void _cctor()

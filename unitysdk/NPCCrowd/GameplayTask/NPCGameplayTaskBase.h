@@ -1,0 +1,217 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/NPCCrowd/GameplayTask/EAbilityActionTaskState.h"
+#include "unitysdk/NPCCrowd/GameplayTask/EActionType.h"
+#include "unitysdk/System/Object.h"
+
+namespace NPCCrowd::GameplayTask { class NPCGameplayTaskContainer; }
+namespace System { class String; }
+
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ACTIVATEINTASKQUEUE_OFFSET UNITYSDK_OFFSET(0x603DA00)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ACTIVATE_OFFSET UNITYSDK_OFFSET(0x603D670)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ENDTASK_OFFSET UNITYSDK_OFFSET(0x603C760)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_EXTERNALCANCEL_OFFSET UNITYSDK_OFFSET(0x603CC60)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_EXTERNALCONFIRM_OFFSET UNITYSDK_OFFSET(0x603CBE0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETDEBUGSTRING_OFFSET UNITYSDK_OFFSET(0x603CCD0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETINSTANCENAME_OFFSET UNITYSDK_OFFSET(0x603D190)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETNAME_OFFSET UNITYSDK_OFFSET(0x603CDC0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETSTATE_OFFSET UNITYSDK_OFFSET(0x603D310)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETTASKOWNER_OFFSET UNITYSDK_OFFSET(0x603D4C0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETTASKSTATENAME_OFFSET UNITYSDK_OFFSET(0x603DC10)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETTASKTYPENAME_OFFSET UNITYSDK_OFFSET(0x603DB20)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_HASOWNERFINISHED_OFFSET UNITYSDK_OFFSET(0x603D2B0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_INITTASK_OFFSET UNITYSDK_OFFSET(0x603C8B0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_INIT_OFFSET UNITYSDK_OFFSET(0x603C550)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x603D370)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISFINISHED_OFFSET UNITYSDK_OFFSET(0x603D450)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISPAUSABLE_OFFSET UNITYSDK_OFFSET(0x603D250)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISPAUSED_OFFSET UNITYSDK_OFFSET(0x603D3E0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISTICKINGTASK_OFFSET UNITYSDK_OFFSET(0x603D1F0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISVALID_OFFSET UNITYSDK_OFFSET(0x603CAE0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x603CB50)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_PAUSEINTASKQUEUE_OFFSET UNITYSDK_OFFSET(0x603DAA0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_PAUSE_OFFSET UNITYSDK_OFFSET(0x603D900)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_PERFORMACTIVATION_OFFSET UNITYSDK_OFFSET(0x603D520)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_READYFORACTIVATION_OFFSET UNITYSDK_OFFSET(0x603C5C0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_RESUME_OFFSET UNITYSDK_OFFSET(0x603D980)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_TASKOWNERENDED_OFFSET UNITYSDK_OFFSET(0x603C990)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_TICKTASK_OFFSET UNITYSDK_OFFSET(0x603C920)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE__CCTOR_OFFSET UNITYSDK_OFFSET(0x603DCC0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x603DCB0)
+
+namespace NPCCrowd::GameplayTask
+{
+	inline static constexpr unsigned int NPCGameplayTaskBase_TypeDefinitionIndex = 61079;
+
+	class NPCGameplayTaskBase : public ::System::Object
+	{
+	public:
+		static ::NPCCrowd::GameplayTask::EActionType* StaticGet_actionType()
+		{
+			return (::NPCCrowd::GameplayTask::EActionType*)Il2CppClass::FromTypeDefinitionIndex(NPCGameplayTaskBase_TypeDefinitionIndex)->GetStaticField(0xFA70);
+		}
+		::System::String* overrideName; // 0x10
+		::NPCCrowd::GameplayTask::NPCGameplayTaskContainer* TaskOwner; // 0x18
+		::NPCCrowd::GameplayTask::EAbilityActionTaskState TaskState; // 0x20
+		::System::UInt16 actionNo; // 0x24
+		::System::Boolean bIsPausable; // 0x26
+		::System::Boolean bTickingTask; // 0x27
+		::System::Boolean bOwnerFinished; // 0x28
+		::System::Boolean bIsNeedUpdate; // 0x29
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE__CCTOR_OFFSET))();
+		}
+
+		::System::Void Init()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_INIT_OFFSET))(this);
+		}
+
+		::System::Void ReadyForActivation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_READYFORACTIVATION_OFFSET))(this);
+		}
+
+		::System::Void InitTask(::NPCCrowd::GameplayTask::NPCGameplayTaskContainer* InTaskOwner)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::GameplayTask::NPCGameplayTaskContainer*))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_INITTASK_OFFSET))(this, InTaskOwner);
+		}
+
+		::System::Void TickTask(::System::Single DeltaTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_TICKTASK_OFFSET))(this, DeltaTime);
+		}
+
+		::System::Void TaskOwnerEnded()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_TASKOWNERENDED_OFFSET))(this);
+		}
+
+		::System::Void EndTask()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ENDTASK_OFFSET))(this);
+		}
+
+		::System::Void ExternalConfirm(::System::Boolean bEndTask)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_EXTERNALCONFIRM_OFFSET))(this, bEndTask);
+		}
+
+		::System::Void ExternalCancel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_EXTERNALCANCEL_OFFSET))(this);
+		}
+
+		::System::String* GetDebugString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETDEBUGSTRING_OFFSET))(this);
+		}
+
+		::System::Void OnDestroy(::System::Boolean bInOwnerFinished)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ONDESTROY_OFFSET))(this, bInOwnerFinished);
+		}
+
+		::System::Void GetInstanceName()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETINSTANCENAME_OFFSET))(this);
+		}
+
+		::System::Boolean IsTickingTask()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISTICKINGTASK_OFFSET))(this);
+		}
+
+		::System::Boolean IsPausable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISPAUSABLE_OFFSET))(this);
+		}
+
+		::System::Boolean HasOwnerFinished()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_HASOWNERFINISHED_OFFSET))(this);
+		}
+
+		static ::System::Boolean IsValid(::NPCCrowd::GameplayTask::NPCGameplayTaskBase* actionTask)
+		{
+			return ((::System::Boolean(*)(::NPCCrowd::GameplayTask::NPCGameplayTaskBase*))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISVALID_OFFSET))(actionTask);
+		}
+
+		::NPCCrowd::GameplayTask::EAbilityActionTaskState GetState()
+		{
+			return ((::NPCCrowd::GameplayTask::EAbilityActionTaskState(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETSTATE_OFFSET))(this);
+		}
+
+		::System::Boolean IsActive()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISACTIVE_OFFSET))(this);
+		}
+
+		::System::Boolean IsPaused()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISPAUSED_OFFSET))(this);
+		}
+
+		::System::Boolean IsFinished()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ISFINISHED_OFFSET))(this);
+		}
+
+		::NPCCrowd::GameplayTask::NPCGameplayTaskContainer* GetTaskOwner()
+		{
+			return ((::NPCCrowd::GameplayTask::NPCGameplayTaskContainer*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETTASKOWNER_OFFSET))(this);
+		}
+
+		::System::Void PerformActivation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_PERFORMACTIVATION_OFFSET))(this);
+		}
+
+		::System::Void Activate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ACTIVATE_OFFSET))(this);
+		}
+
+		::System::Void Pause()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_PAUSE_OFFSET))(this);
+		}
+
+		::System::Void Resume()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_RESUME_OFFSET))(this);
+		}
+
+		::System::Void ActivateInTaskQueue()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_ACTIVATEINTASKQUEUE_OFFSET))(this);
+		}
+
+		::System::Void PauseInTaskQueue()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_PAUSEINTASKQUEUE_OFFSET))(this);
+		}
+
+		::System::String* GetName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETNAME_OFFSET))(this);
+		}
+
+		::System::String* GetTaskTypeName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETTASKTYPENAME_OFFSET))(this);
+		}
+
+		::System::String* GetTaskStateName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKBASE_GETTASKSTATENAME_OFFSET))(this);
+		}
+	};
+}

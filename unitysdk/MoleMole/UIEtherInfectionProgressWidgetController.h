@@ -1,0 +1,288 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Config/BaseProperty.h"
+#include "unitysdk/MoleMole/UIEtherInfectionProgressWidgetController_ShowState.h"
+#include "unitysdk/MoleMole/UITweenSlotWidgetController.h"
+
+class Class_1_15CCFE77B9E12299;
+class Class_2_84D60E5AA05E9C23;
+class Class_3_22E2E0842E5C55A9;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole::Battle { class Entity; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace UnityEngine { class Animation; }
+namespace UnityEngine::UI::Extension { class UILinearProgressBar; }
+
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_BINDDATAPROPERTYLISTENER_OFFSET UNITYSDK_OFFSET(0xBEF25E0)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_CHECKSHOWORHIDE_OFFSET UNITYSDK_OFFSET(0xBEF3550)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ENTEREMPTYFADEOUTMUTIPLAYERMODE_OFFSET UNITYSDK_OFFSET(0xBEF33D0)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ENTEREMPTYFADEOUT_OFFSET UNITYSDK_OFFSET(0xBEF4F70)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_GETFADEANIMDURATION_OFFSET UNITYSDK_OFFSET(0xBEF4B60)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_HAVEFADEOUTANIMATION_OFFSET UNITYSDK_OFFSET(0xBEF4060)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_INITSHOWORHIDE_OFFSET UNITYSDK_OFFSET(0xBEF4320)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ISPLAYINGFADEANIM_OFFSET UNITYSDK_OFFSET(0xBEF4210)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBEF2A70)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONETHERINFECTIONVALUECHANGE_OFFSET UNITYSDK_OFFSET(0xBEF50F0)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONETHERINFECTIONVALUEEMPTY_OFFSET UNITYSDK_OFFSET(0xBEF4E50)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONETHERINFECTIONVALUEFULL_OFFSET UNITYSDK_OFFSET(0xBEF4D80)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONFIGHTER_PROPERTYVALUECHANGED_OFFSET UNITYSDK_OFFSET(0xBEF5460)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONGETINFECTIONVALUE_OFFSET UNITYSDK_OFFSET(0xBEF4650)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONLOCALAVATARCHANGED_OFFSET UNITYSDK_OFFSET(0xBEF4470)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONQTESTATECHANGE_OFFSET UNITYSDK_OFFSET(0xBEF5320)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBEF2B10)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBEF1BA0)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBEF2170)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_PLAYCUSTOMPROPERTYFULLFADEOUT_OFFSET UNITYSDK_OFFSET(0xBEF4C10)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_PLAYFULLFADEOUT_OFFSET UNITYSDK_OFFSET(0xBEF4790)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_REFRESHCUSTOMPROPERTYDISPLAY_OFFSET UNITYSDK_OFFSET(0xBEF2780)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_REFRESHMULTIPLAYERDISPLAYMODE_OFFSET UNITYSDK_OFFSET(0xBEF23F0)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_REFRESHPROGRESSVALUE_OFFSET UNITYSDK_OFFSET(0xBEF38D0)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_SETHIDE_OFFSET UNITYSDK_OFFSET(0xBEF3D90)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_SETROOTSLOTACTIVESTATE_OFFSET UNITYSDK_OFFSET(0xBEF53C0)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_SETVISIBLE_OFFSET UNITYSDK_OFFSET(0xBEF5190)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_TRYBINDCUSTOMPROPERTYLISTENERANDREFRESH_OFFSET UNITYSDK_OFFSET(0xBEF5B50)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_UNBINDPROPERTYLISTENER_OFFSET UNITYSDK_OFFSET(0xBEF2C10)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xBEF2F30)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBEF5D40)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER__INITSHOWORHIDE_B__11_0_OFFSET UNITYSDK_OFFSET(0xBEF5DA0)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER__ONGETINFECTIONVALUE_B__16_0_OFFSET UNITYSDK_OFFSET(0xBEF5E90)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER__SETHIDE_B__30_0_OFFSET UNITYSDK_OFFSET(0xBEF6050)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER__SETVISIBLE_B__29_0_OFFSET UNITYSDK_OFFSET(0xBEF5F70)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBEF6220)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBEF6290)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBEF62A0)
+#define MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBEF6300)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIEtherInfectionProgressWidgetController_TypeDefinitionIndex = 50922;
+
+	class UIEtherInfectionProgressWidgetController : public ::MoleMole::UITweenSlotWidgetController
+	{
+	public:
+		// static const ::System::Single FadeTweenDuration; // 0x0
+		// static const ::System::String* FadeOutAnim; // 0x0
+		// static const ::System::String* FadeOutAnim02; // 0x0
+		// static const ::System::String* FadeInAnim; // 0x0
+		// static const ::System::String* CustomProperty_EtherInfectionCounterNum_Key; // 0x0
+		// static const ::System::String* CustomProperty_MaxEtherInfectionCounterNum_Key; // 0x0
+		::Class_2_84D60E5AA05E9C23* _view; // 0x2A8
+		::System::Single maskWidth; // 0x2B0
+		::System::Single maskWidth02; // 0x2B4
+		::UnityEngine::UI::Extension::UILinearProgressBar* _progressBar; // 0x2B8
+		::UnityEngine::UI::Extension::UILinearProgressBar* _progressBar2; // 0x2C0
+		::UnityEngine::UI::Extension::UILinearProgressBar* _customProgressBar; // 0x2C8
+		::Class_3_22E2E0842E5C55A9* _teamEntityComponent; // 0x2D0
+		::MoleMole::UIEtherInfectionProgressWidgetController_ShowState _uiShowState; // 0x2D8
+		::System::Boolean qteOpen; // 0x2DC
+		::System::Boolean rootSlotActive; // 0x2DD
+		::System::Single totalFadingTime; // 0x2E0
+		::System::Single fadeingTimer; // 0x2E4
+		::System::Boolean useMultiPlayerMode; // 0x2E8
+		::System::Single lastCustomPropertyProgress; // 0x2EC
+		::System::Boolean onCustomPropertyProgressClean; // 0x2F0
+		::System::Boolean isWaitPlayEmptyFadeOut; // 0x2F1
+		::System::String* currentPlayingFadeOutAnim; // 0x2F8
+		::UnityEngine::Animation* viewAnimation; // 0x300
+		::System::UInt32 lastAvatarId; // 0x308
+		::System::Boolean isBindPropertyListener; // 0x30C
+		::Class_1_15CCFE77B9E12299* lastFighter; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Boolean CheckShowOrHide()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_CHECKSHOWORHIDE_OFFSET))(this);
+		}
+
+		::System::Void InitShowOrHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_INITSHOWORHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnLocalAvatarChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONLOCALAVATARCHANGED_OFFSET))(this);
+		}
+
+		::System::Void BindDataPropertyListener(::MoleMole::Battle::Entity* avatar)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_BINDDATAPROPERTYLISTENER_OFFSET))(this, avatar);
+		}
+
+		::System::Void UnBindPropertyListener()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_UNBINDPROPERTYLISTENER_OFFSET))(this);
+		}
+
+		::System::Void RefreshProgressValue()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_REFRESHPROGRESSVALUE_OFFSET))(this);
+		}
+
+		::System::Void OnGetInfectionValue(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONGETINFECTIONVALUE_OFFSET))(this, args);
+		}
+
+		::System::Void PlayFullFadeOut()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_PLAYFULLFADEOUT_OFFSET))(this);
+		}
+
+		::System::Void PlayCustomPropertyFullFadeOut()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_PLAYCUSTOMPROPERTYFULLFADEOUT_OFFSET))(this);
+		}
+
+		::System::Boolean HaveFadeOutAnimation(::System::String* fadeOutAnimName)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_HAVEFADEOUTANIMATION_OFFSET))(this, fadeOutAnimName);
+		}
+
+		::System::Boolean IsPlayingFadeAnim(::System::String* animName)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ISPLAYINGFADEANIM_OFFSET))(this, animName);
+		}
+
+		::System::Single GetFadeAnimDuration(::System::String* animName)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_GETFADEANIMDURATION_OFFSET))(this, animName);
+		}
+
+		::System::Void OnEtherInfectionValueFull(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONETHERINFECTIONVALUEFULL_OFFSET))(this, args);
+		}
+
+		::System::Void OnEtherInfectionValueEmpty(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONETHERINFECTIONVALUEEMPTY_OFFSET))(this, args);
+		}
+
+		::System::Void EnterEmptyFadeOut()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ENTEREMPTYFADEOUT_OFFSET))(this);
+		}
+
+		::System::Void EnterEmptyFadeOutMutiPlayerMode()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ENTEREMPTYFADEOUTMUTIPLAYERMODE_OFFSET))(this);
+		}
+
+		::System::Void OnEtherInfectionValueChange(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONETHERINFECTIONVALUECHANGE_OFFSET))(this, args);
+		}
+
+		::System::Void OnQteStateChange(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONQTESTATECHANGE_OFFSET))(this, args);
+		}
+
+		::System::Void SetRootSlotActiveState(::System::Boolean active)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_SETROOTSLOTACTIVESTATE_OFFSET))(this, active);
+		}
+
+		::System::Void SetVisible()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_SETVISIBLE_OFFSET))(this);
+		}
+
+		::System::Void SetHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_SETHIDE_OFFSET))(this);
+		}
+
+		::System::Void RefreshMultiPlayerDisplayMode()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_REFRESHMULTIPLAYERDISPLAYMODE_OFFSET))(this);
+		}
+
+		::System::Void OnFighter_PropertyValueChanged(::System::UInt32 FighterId, ::MoleMole::Config::BaseProperty type, ::System::String* customType, ::System::Double oldValue, ::System::Double newValue)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32, ::MoleMole::Config::BaseProperty, ::System::String*, ::System::Double, ::System::Double))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_ONFIGHTER_PROPERTYVALUECHANGED_OFFSET))(this, FighterId, type, customType, oldValue, newValue);
+		}
+
+		::System::Void RefreshCustomPropertyDisplay()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_REFRESHCUSTOMPROPERTYDISPLAY_OFFSET))(this);
+		}
+
+		::System::Void TryBindCustomPropertyListenerAndRefresh()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER_TRYBINDCUSTOMPROPERTYLISTENERANDREFRESH_OFFSET))(this);
+		}
+
+		::System::Void _InitShowOrHide_b__11_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER__INITSHOWORHIDE_B__11_0_OFFSET))(this);
+		}
+
+		::System::Void _OnGetInfectionValue_b__16_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER__ONGETINFECTIONVALUE_B__16_0_OFFSET))(this);
+		}
+
+		::System::Void _SetVisible_b__29_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER__SETVISIBLE_B__29_0_OFFSET))(this);
+		}
+
+		::System::Void _SetHide_b__30_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER__SETHIDE_B__30_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIETHERINFECTIONPROGRESSWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

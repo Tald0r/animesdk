@@ -1,11 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace RPG::Client { class ChimeraDuelGameData; }
-namespace RPG::Client { class ChimeraDuelGameSessionCurrentRound; }
-namespace RPG::Client { class ChimeraDuelGameSessionTeam; }
+namespace MoleMole { class TurnBattleUnitBase; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_574_TypeDefinitionIndex = 50257;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_574_TypeDefinitionIndex = 57871;
 
 class Class_0_16E4307DCC419505_574
 {

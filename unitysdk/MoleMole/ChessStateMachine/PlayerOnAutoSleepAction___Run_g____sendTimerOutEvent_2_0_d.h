@@ -1,0 +1,60 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_C03EC65F99EF4B16;
+namespace MoleMole::ChessStateMachine { class PlayerOnAutoSleepAction; }
+
+#define MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x6BDF290)
+#define MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_SINGLE__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x6BDF7C0)
+#define MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x6BDF820)
+#define MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x6BDF7D0)
+#define MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x6BDF280)
+#define MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D__CTOR_OFFSET UNITYSDK_OFFSET(0x6BDF270)
+
+namespace MoleMole::ChessStateMachine
+{
+	inline static constexpr unsigned int PlayerOnAutoSleepAction___Run_g____sendTimerOutEvent_2_0_d_TypeDefinitionIndex = 59530;
+
+	class PlayerOnAutoSleepAction___Run_g____sendTimerOutEvent_2_0_d : public ::System::Object
+	{
+	public:
+		::Class_2_C03EC65F99EF4B16* _eventModel_5__4; // 0x10
+		::MoleMole::ChessStateMachine::PlayerOnAutoSleepAction* __4__this; // 0x18
+		::System::Int32 __1__state; // 0x20
+		::System::Single _effectTime_5__2; // 0x24
+		::System::Single _sleepDelay_5__3; // 0x28
+		::System::Single __2__current; // 0x2C
+		::System::Boolean _breakSleep_5__5; // 0x30
+
+		::System::Void _ctor(::System::Int32 __1__state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D__CTOR_OFFSET))(this, __1__state);
+		}
+
+		::System::Void System_IDisposable_Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET))(this);
+		}
+
+		::System::Boolean MoveNext()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D_MOVENEXT_OFFSET))(this);
+		}
+
+		::System::Single System_Collections_Generic_IEnumerator_System_Single__get_Current()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_SINGLE__GET_CURRENT_OFFSET))(this);
+		}
+
+		::System::Void System_Collections_IEnumerator_Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET))(this);
+		}
+
+		::System::Object* System_Collections_IEnumerator_get_Current()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_PLAYERONAUTOSLEEPACTION___RUN_G____SENDTIMEROUTEVENT_2_0_D_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET))(this);
+		}
+	};
+}

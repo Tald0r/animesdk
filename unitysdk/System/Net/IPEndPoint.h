@@ -8,33 +8,39 @@ namespace System { class String; }
 namespace System::Net { class IPAddress; }
 namespace System::Net { class SocketAddress; }
 
-#define SYSTEM_NET_IPENDPOINT_CREATE_OFFSET UNITYSDK_OFFSET(0x17EE13C0)
-#define SYSTEM_NET_IPENDPOINT_EQUALS_OFFSET UNITYSDK_OFFSET(0x17EE16A0)
-#define SYSTEM_NET_IPENDPOINT_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x17EE1760)
-#define SYSTEM_NET_IPENDPOINT_GET_ADDRESSFAMILY_OFFSET UNITYSDK_OFFSET(0x17EC5BE0)
-#define SYSTEM_NET_IPENDPOINT_GET_ADDRESS_OFFSET UNITYSDK_OFFSET(0x17EE1290)
-#define SYSTEM_NET_IPENDPOINT_GET_PORT_OFFSET UNITYSDK_OFFSET(0x17EE12A0)
-#define SYSTEM_NET_IPENDPOINT_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x17EE1380)
-#define SYSTEM_NET_IPENDPOINT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17EE12B0)
-#define SYSTEM_NET_IPENDPOINT__CCTOR_OFFSET UNITYSDK_OFFSET(0x17EE1800)
-#define SYSTEM_NET_IPENDPOINT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17EB5240)
-#define SYSTEM_NET_IPENDPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0x17EE1190)
+#define SYSTEM_NET_IPENDPOINT_CREATE_OFFSET UNITYSDK_OFFSET(0x185A1AB0)
+#define SYSTEM_NET_IPENDPOINT_EQUALS_OFFSET UNITYSDK_OFFSET(0x185A1D90)
+#define SYSTEM_NET_IPENDPOINT_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x185A1E30)
+#define SYSTEM_NET_IPENDPOINT_GET_ADDRESSFAMILY_OFFSET UNITYSDK_OFFSET(0x185A16F0)
+#define SYSTEM_NET_IPENDPOINT_GET_ADDRESS_OFFSET UNITYSDK_OFFSET(0x185A18D0)
+#define SYSTEM_NET_IPENDPOINT_GET_PORT_OFFSET UNITYSDK_OFFSET(0x185A18F0)
+#define SYSTEM_NET_IPENDPOINT_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x185A1A70)
+#define SYSTEM_NET_IPENDPOINT_SET_ADDRESS_OFFSET UNITYSDK_OFFSET(0x185A18E0)
+#define SYSTEM_NET_IPENDPOINT_SET_PORT_OFFSET UNITYSDK_OFFSET(0x185A1900)
+#define SYSTEM_NET_IPENDPOINT_SNAPSHOT_OFFSET UNITYSDK_OFFSET(0x185A1EC0)
+#define SYSTEM_NET_IPENDPOINT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x185A19A0)
+#define SYSTEM_NET_IPENDPOINT__CCTOR_OFFSET UNITYSDK_OFFSET(0x185A1F10)
+#define SYSTEM_NET_IPENDPOINT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x185A1820)
+#define SYSTEM_NET_IPENDPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0x185A1710)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int IPEndPoint_TypeDefinitionIndex = 2727;
+	inline static constexpr unsigned int IPEndPoint_TypeDefinitionIndex = 3288;
 
 	class IPEndPoint : public ::System::Net::EndPoint
 	{
 	public:
-		static ::System::Net::IPEndPoint** StaticGet_IPv6Any()
-		{
-			return (::System::Net::IPEndPoint**)Il2CppClass::FromTypeDefinitionIndex(IPEndPoint_TypeDefinitionIndex)->GetStaticField(0x186C0);
-		}
 		static ::System::Net::IPEndPoint** StaticGet_Any()
 		{
-			return (::System::Net::IPEndPoint**)Il2CppClass::FromTypeDefinitionIndex(IPEndPoint_TypeDefinitionIndex)->GetStaticField(0x186C8);
+			return (::System::Net::IPEndPoint**)Il2CppClass::FromTypeDefinitionIndex(IPEndPoint_TypeDefinitionIndex)->GetStaticField(0x3350);
 		}
+		static ::System::Net::IPEndPoint** StaticGet_IPv6Any()
+		{
+			return (::System::Net::IPEndPoint**)Il2CppClass::FromTypeDefinitionIndex(IPEndPoint_TypeDefinitionIndex)->GetStaticField(0x3358);
+		}
+		// static const ::System::Int32 MinPort = 0x0; // 0x0
+		// static const ::System::Int32 MaxPort = 0xFFFF; // 0x0
+		// static const ::System::Int32 AnyPort = 0x0; // 0x0
 		::System::Net::IPAddress* m_Address; // 0x10
 		::System::Int32 m_Port; // 0x18
 
@@ -63,9 +69,19 @@ namespace System::Net
 			return ((::System::Net::IPAddress*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_IPENDPOINT_GET_ADDRESS_OFFSET))(this);
 		}
 
+		::System::Void set_Address(::System::Net::IPAddress* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::IPAddress*))((::PBYTE)hIl2Cpp + SYSTEM_NET_IPENDPOINT_SET_ADDRESS_OFFSET))(this, value);
+		}
+
 		::System::Int32 get_Port()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_IPENDPOINT_GET_PORT_OFFSET))(this);
+		}
+
+		::System::Void set_Port(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_IPENDPOINT_SET_PORT_OFFSET))(this, value);
 		}
 
 		::System::String* ToString()
@@ -91,6 +107,11 @@ namespace System::Net
 		::System::Int32 GetHashCode()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_IPENDPOINT_GETHASHCODE_OFFSET))(this);
+		}
+
+		::System::Net::IPEndPoint* Snapshot()
+		{
+			return ((::System::Net::IPEndPoint*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_IPENDPOINT_SNAPSHOT_OFFSET))(this);
 		}
 	};
 }

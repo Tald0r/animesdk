@@ -1,0 +1,89 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_9EDE5D0623B668B8;
+class Class_1_B1CC8F53861C28C2;
+class Class_2_07730F63355AFF87_1;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xBF05100)
+#define MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBF056F0)
+#define MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBF04FA0)
+#define MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBF05790)
+#define MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBF04F00)
+#define MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_RESET_OFFSET UNITYSDK_OFFSET(0xBF05870)
+#define MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBF058F0)
+#define MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBF05920)
+#define MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBF05990)
+#define MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBF05A00)
+#define MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBF05A80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFriendChatCommonTopUIWidgetController_TypeDefinitionIndex = 72197;
+
+	class UIFriendChatCommonTopUIWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_07730F63355AFF87_1* _view; // 0x2A0
+		::Class_1_B1CC8F53861C28C2* _data; // 0x2A8
+		::Class_1_9EDE5D0623B668B8* _item; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER_RESET_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDCHATCOMMONTOPUIWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

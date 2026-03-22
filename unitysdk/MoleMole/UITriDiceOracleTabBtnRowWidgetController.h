@@ -1,0 +1,101 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_B89683A15B3B0C43_Enum_3_55DEA7760B94F1B2.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_27F0062FB904474B;
+namespace MoleMole { class NotificationBadge; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace UnityEngine::UI::Extension { class UITabButton; }
+
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_GETBADGE_OFFSET UNITYSDK_OFFSET(0x71DFB20)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_GETTABBUTTON_OFFSET UNITYSDK_OFFSET(0x71DF830)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x71DF6B0)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x71DF750)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x71DF560)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x71DF600)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_SETLUCKTYPE_OFFSET UNITYSDK_OFFSET(0x71DF8A0)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_SETTEXT_OFFSET UNITYSDK_OFFSET(0x71DFA80)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x71DFB90)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x71DFBC0)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x71DFC30)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x71DFCB0)
+#define MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x71DFD10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UITriDiceOracleTabBtnRowWidgetController_TypeDefinitionIndex = 67759;
+
+	class UITriDiceOracleTabBtnRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_27F0062FB904474B* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::UnityEngine::UI::Extension::UITabButton* GetTabButton()
+		{
+			return ((::UnityEngine::UI::Extension::UITabButton*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_GETTABBUTTON_OFFSET))(this);
+		}
+
+		::System::Void SetLuckType(::Class_2_B89683A15B3B0C43_Enum_3_55DEA7760B94F1B2 luckType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_B89683A15B3B0C43_Enum_3_55DEA7760B94F1B2))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_SETLUCKTYPE_OFFSET))(this, luckType);
+		}
+
+		::System::Void SetText(::System::String* text)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_SETTEXT_OFFSET))(this, text);
+		}
+
+		::MoleMole::NotificationBadge* GetBadge()
+		{
+			return ((::MoleMole::NotificationBadge*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER_GETBADGE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITRIDICEORACLETABBTNROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -7,25 +7,25 @@ namespace System { class Type; }
 namespace UnityEngine { class Object; }
 namespace UnityEngine::Playables { class PlayableBinding_CreateOutputMethod; }
 
-#define UNITYENGINE_PLAYABLES_PLAYABLEBINDING_CREATEINTERNAL_OFFSET UNITYSDK_OFFSET(0x18214A70)
-#define UNITYENGINE_PLAYABLES_PLAYABLEBINDING_CREATEOUTPUT_OFFSET UNITYSDK_OFFSET(0x2043E90)
-#define UNITYENGINE_PLAYABLES_PLAYABLEBINDING_GET_SOURCEOBJECT_OFFSET UNITYSDK_OFFSET(0x5AF0)
-#define UNITYENGINE_PLAYABLES_PLAYABLEBINDING_GET_STREAMNAME_OFFSET UNITYSDK_OFFSET(0x5580)
-#define UNITYENGINE_PLAYABLES_PLAYABLEBINDING__CCTOR_OFFSET UNITYSDK_OFFSET(0x18214A90)
+#define UNITYENGINE_PLAYABLES_PLAYABLEBINDING_CREATEINTERNAL_OFFSET UNITYSDK_OFFSET(0x19BC1CC0)
+#define UNITYENGINE_PLAYABLES_PLAYABLEBINDING_CREATEOUTPUT_OFFSET UNITYSDK_OFFSET(0x8E8B90)
+#define UNITYENGINE_PLAYABLES_PLAYABLEBINDING_GET_SOURCEOBJECT_OFFSET UNITYSDK_OFFSET(0x2CB080)
+#define UNITYENGINE_PLAYABLES_PLAYABLEBINDING_GET_STREAMNAME_OFFSET UNITYSDK_OFFSET(0x21C7C0)
+#define UNITYENGINE_PLAYABLES_PLAYABLEBINDING__CCTOR_OFFSET UNITYSDK_OFFSET(0x19BC1CE0)
 
 namespace UnityEngine::Playables
 {
-	inline static constexpr unsigned int PlayableBinding_TypeDefinitionIndex = 4679;
+	inline static constexpr unsigned int PlayableBinding_TypeDefinitionIndex = 6259;
 
 	struct alignas(8) PlayableBinding
 	{
 		static ::Il2CppArray<::UnityEngine::Playables::PlayableBinding>** StaticGet_None()
 		{
-			return (::Il2CppArray<::UnityEngine::Playables::PlayableBinding>**)Il2CppClass::FromTypeDefinitionIndex(PlayableBinding_TypeDefinitionIndex)->GetStaticField(0x194C0);
+			return (::Il2CppArray<::UnityEngine::Playables::PlayableBinding>**)Il2CppClass::FromTypeDefinitionIndex(PlayableBinding_TypeDefinitionIndex)->GetStaticField(0x4E60);
 		}
 		static ::System::Double* StaticGet_DefaultDuration()
 		{
-			return (::System::Double*)Il2CppClass::FromTypeDefinitionIndex(PlayableBinding_TypeDefinitionIndex)->GetStaticField(0x5E70);
+			return (::System::Double*)Il2CppClass::FromTypeDefinitionIndex(PlayableBinding_TypeDefinitionIndex)->GetStaticField(0x2310);
 		}
 		::System::String* m_StreamName; // 0x10
 		::UnityEngine::Object* m_SourceObject; // 0x18

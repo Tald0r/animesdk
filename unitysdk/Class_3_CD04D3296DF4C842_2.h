@@ -6,12 +6,12 @@ namespace System { class AsyncCallback; }
 namespace System { class IAsyncResult; }
 namespace System { class Object; }
 
-#define CLASS_3_CD04D3296DF4C842_2_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x15FD6190)
-#define CLASS_3_CD04D3296DF4C842_2_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x15FD61C0)
-#define CLASS_3_CD04D3296DF4C842_2_INVOKE_OFFSET UNITYSDK_OFFSET(0x15FD5DC0)
-#define CLASS_3_CD04D3296DF4C842_2__CTOR_OFFSET UNITYSDK_OFFSET(0x15FD5DA0)
+#define CLASS_3_CD04D3296DF4C842_2_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x6D020B0)
+#define CLASS_3_CD04D3296DF4C842_2_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x6D020E0)
+#define CLASS_3_CD04D3296DF4C842_2_INVOKE_OFFSET UNITYSDK_OFFSET(0x6D01E10)
+#define CLASS_3_CD04D3296DF4C842_2__CTOR_OFFSET UNITYSDK_OFFSET(0x6D01E00)
 
-inline static constexpr unsigned int Class_3_CD04D3296DF4C842_2_TypeDefinitionIndex = 28092;
+inline static constexpr unsigned int Class_3_CD04D3296DF4C842_2_TypeDefinitionIndex = 58697;
 
 class Class_3_CD04D3296DF4C842_2 : public ::System::MulticastDelegate
 {
@@ -21,9 +21,9 @@ public:
 		return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::IntPtr))((::PBYTE)hIl2Cpp + CLASS_3_CD04D3296DF4C842_2__CTOR_OFFSET))(this, a1, a2);
 	}
 
-	::System::Boolean Invoke()
+	::System::Void Invoke()
 	{
-		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_CD04D3296DF4C842_2_INVOKE_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_CD04D3296DF4C842_2_INVOKE_OFFSET))(this);
 	}
 
 	::System::IAsyncResult* BeginInvoke(::System::AsyncCallback* a1, ::System::Object* a2)
@@ -31,8 +31,8 @@ public:
 		return ((::System::IAsyncResult*(*)(::PVOID, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_3_CD04D3296DF4C842_2_BEGININVOKE_OFFSET))(this, a1, a2);
 	}
 
-	::System::Boolean EndInvoke(::System::IAsyncResult* a1)
+	::System::Void EndInvoke(::System::IAsyncResult* a1)
 	{
-		return ((::System::Boolean(*)(::PVOID, ::System::IAsyncResult*))((::PBYTE)hIl2Cpp + CLASS_3_CD04D3296DF4C842_2_ENDINVOKE_OFFSET))(this, a1);
+		return ((::System::Void(*)(::PVOID, ::System::IAsyncResult*))((::PBYTE)hIl2Cpp + CLASS_3_CD04D3296DF4C842_2_ENDINVOKE_OFFSET))(this, a1);
 	}
 };

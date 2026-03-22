@@ -5,18 +5,22 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_TEXTASSET_GETBYTESWITHARRAY_OFFSET UNITYSDK_OFFSET(0x1823DAA0)
-#define UNITYENGINE_TEXTASSET_GETSIZE_OFFSET UNITYSDK_OFFSET(0x1823DA90)
-#define UNITYENGINE_TEXTASSET_GET_BYTES_OFFSET UNITYSDK_OFFSET(0x1823DA80)
-#define UNITYENGINE_TEXTASSET_GET_TEXT_OFFSET UNITYSDK_OFFSET(0x1823DA70)
-#define UNITYENGINE_TEXTASSET_INTERNAL_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x1823DAF0)
-#define UNITYENGINE_TEXTASSET_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1823DAB0)
-#define UNITYENGINE_TEXTASSET__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1823DAD0)
-#define UNITYENGINE_TEXTASSET__CTOR_OFFSET UNITYSDK_OFFSET(0x1823DAC0)
+#define UNITYENGINE_TEXTASSET_CASTTOSCRIPTINGSTRING_OFFSET UNITYSDK_OFFSET(0x19DE4090)
+#define UNITYENGINE_TEXTASSET_GETRAWDATABYTELENGTH_OFFSET UNITYSDK_OFFSET(0x19DE4080)
+#define UNITYENGINE_TEXTASSET_GETRAWDATAPTR_OFFSET UNITYSDK_OFFSET(0x19DE4070)
+#define UNITYENGINE_TEXTASSET_GET_BYTES_OFFSET UNITYSDK_OFFSET(0x19DE3F60)
+#define UNITYENGINE_TEXTASSET_GET_TEXT_OFFSET UNITYSDK_OFFSET(0x19DD7480)
+#define UNITYENGINE_TEXTASSET_INTERNAL_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x19DE4060)
+#define UNITYENGINE_TEXTASSET_SETBYTES_OFFSET UNITYSDK_OFFSET(0x19DE3F70)
+#define UNITYENGINE_TEXTASSET_SETTEXT_OFFSET UNITYSDK_OFFSET(0x19DE3F50)
+#define UNITYENGINE_TEXTASSET_TOSTRING_OFFSET UNITYSDK_OFFSET(0x19DE3F80)
+#define UNITYENGINE_TEXTASSET__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19DE4020)
+#define UNITYENGINE_TEXTASSET__CTOR_2_OFFSET UNITYSDK_OFFSET(0x19DE3FD0)
+#define UNITYENGINE_TEXTASSET__CTOR_OFFSET UNITYSDK_OFFSET(0x19DE3F90)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int TextAsset_TypeDefinitionIndex = 4134;
+	inline static constexpr unsigned int TextAsset_TypeDefinitionIndex = 5360;
 
 	class TextAsset : public ::UnityEngine::Object
 	{
@@ -26,9 +30,14 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _ctor_1(::UnityEngine::TextAsset_CreateOptions options, ::System::String* text)
+		::System::Void _ctor_1(::System::String* text)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::TextAsset_CreateOptions, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET__CTOR_1_OFFSET))(this, options, text);
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET__CTOR_1_OFFSET))(this, text);
+		}
+
+		::System::Void _ctor_2(::UnityEngine::TextAsset_CreateOptions options, ::System::String* text)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::TextAsset_CreateOptions, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET__CTOR_2_OFFSET))(this, options, text);
 		}
 
 		::System::String* get_text()
@@ -36,19 +45,19 @@ namespace UnityEngine
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET_GET_TEXT_OFFSET))(this);
 		}
 
+		::System::Void SetText(::System::String* text)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET_SETTEXT_OFFSET))(this, text);
+		}
+
 		::Il2CppArray<::System::Byte>* get_bytes()
 		{
 			return ((::Il2CppArray<::System::Byte>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET_GET_BYTES_OFFSET))(this);
 		}
 
-		::System::Int32 GetSize()
+		::System::Void SetBytes(::Il2CppArray<::System::Byte>* bytes)
 		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET_GETSIZE_OFFSET))(this);
-		}
-
-		::System::Void GetBytesWithArray(::Il2CppArray<::System::Byte>* outBytes)
-		{
-			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET_GETBYTESWITHARRAY_OFFSET))(this, outBytes);
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET_SETBYTES_OFFSET))(this, bytes);
 		}
 
 		::System::String* ToString()
@@ -59,6 +68,21 @@ namespace UnityEngine
 		static ::System::Void Internal_CreateInstance(::UnityEngine::TextAsset* self, ::System::String* text)
 		{
 			return ((::System::Void(*)(::UnityEngine::TextAsset*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET_INTERNAL_CREATEINSTANCE_OFFSET))(self, text);
+		}
+
+		::System::IntPtr GetRawDataPtr()
+		{
+			return ((::System::IntPtr(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET_GETRAWDATAPTR_OFFSET))(this);
+		}
+
+		::System::Int32 GetRawDataByteLength()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET_GETRAWDATABYTELENGTH_OFFSET))(this);
+		}
+
+		::System::String* CastToScriptingString(::System::Int32 offsetOnTextAsset, ::System::String* emptyString)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTASSET_CASTTOSCRIPTINGSTRING_OFFSET))(this, offsetOnTextAsset, emptyString);
 		}
 	};
 }

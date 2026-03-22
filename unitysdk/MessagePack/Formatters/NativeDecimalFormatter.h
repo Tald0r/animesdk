@@ -8,21 +8,21 @@
 namespace MessagePack { class MessagePackSerializerOptions; }
 namespace MessagePack::Formatters { template <typename T> class IMessagePackFormatter_1; }
 
-#define MESSAGEPACK_FORMATTERS_NATIVEDECIMALFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x15631A60)
-#define MESSAGEPACK_FORMATTERS_NATIVEDECIMALFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x15631970)
-#define MESSAGEPACK_FORMATTERS_NATIVEDECIMALFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15631CD0)
-#define MESSAGEPACK_FORMATTERS_NATIVEDECIMALFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x15631960)
+#define MESSAGEPACK_FORMATTERS_NATIVEDECIMALFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x19FEB350)
+#define MESSAGEPACK_FORMATTERS_NATIVEDECIMALFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x19FEB230)
+#define MESSAGEPACK_FORMATTERS_NATIVEDECIMALFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19FEB640)
+#define MESSAGEPACK_FORMATTERS_NATIVEDECIMALFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x19FEB220)
 
 namespace MessagePack::Formatters
 {
-	inline static constexpr unsigned int NativeDecimalFormatter_TypeDefinitionIndex = 9843;
+	inline static constexpr unsigned int NativeDecimalFormatter_TypeDefinitionIndex = 25549;
 
 	class NativeDecimalFormatter : public ::System::Object
 	{
 	public:
 		static ::MessagePack::Formatters::IMessagePackFormatter_1<::System::Decimal>** StaticGet_Instance()
 		{
-			return (::MessagePack::Formatters::IMessagePackFormatter_1<::System::Decimal>**)Il2CppClass::FromTypeDefinitionIndex(NativeDecimalFormatter_TypeDefinitionIndex)->GetStaticField(0x23D90);
+			return (::MessagePack::Formatters::IMessagePackFormatter_1<::System::Decimal>**)Il2CppClass::FromTypeDefinitionIndex(NativeDecimalFormatter_TypeDefinitionIndex)->GetStaticField(0x1EC70);
 		}
 
 		::System::Void _ctor()

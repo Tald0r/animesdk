@@ -1,9 +1,13 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/AvatarSkillTreeAnchorType.h"
-#include "unitysdk/Struct_2_BC950E36747FB4C9.h"
+#include "unitysdk/Struct_2_6E1B724B14572104_1.h"
+#include "unitysdk/Struct_2_AAD2B1B6FB741157.h"
+#include "unitysdk/Struct_2_C006DA4A56FC21E6.h"
+#include "unitysdk/Struct_2_F213AC3D3FBF57B9.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_340_TypeDefinitionIndex = 40946;
+class Class_0_16E4307DCC419505_341;
+
+inline static constexpr unsigned int Class_0_16E4307DCC419505_340_TypeDefinitionIndex = 43012;
 
 class Class_0_16E4307DCC419505_340
 {

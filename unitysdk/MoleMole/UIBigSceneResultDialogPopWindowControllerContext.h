@@ -1,0 +1,21 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIControllerContextBase.h"
+
+#define MOLEMOLE_UIBIGSCENERESULTDIALOGPOPWINDOWCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC2947D0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBigSceneResultDialogPopWindowControllerContext_TypeDefinitionIndex = 61576;
+
+	class UIBigSceneResultDialogPopWindowControllerContext : public ::MoleMole::UIControllerContextBase
+	{
+	public:
+		::System::UInt32 KillerGroupID; // 0x28
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENERESULTDIALOGPOPWINDOWCONTROLLERCONTEXT__CTOR_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,42 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_4_86126C0ABC4F0231.h"
+
+class Class_1_F50B5EAC0B6702FB;
+class Class_2_9DCE2FC33F67E8A2;
+class Class_3_793A447220C740D8;
+namespace MoleMole::Config { class ConfigPlayFilterPluginSpecialEffect; }
+namespace MoleMole::Config { class UISpecialNumGroup; }
+
+#define CLASS_5_6647112852B5D45D_METHOD_5_8E8B1DEC3F78455A_OFFSET UNITYSDK_OFFSET(0xD58DC20)
+#define CLASS_5_6647112852B5D45D_METHOD_5_9D3A21F2F0EC6A39_OFFSET UNITYSDK_OFFSET(0xD58DB90)
+#define CLASS_5_6647112852B5D45D_METHOD_5_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xD58DE10)
+#define CLASS_5_6647112852B5D45D__CTOR_OFFSET UNITYSDK_OFFSET(0xD58DDB0)
+
+inline static constexpr unsigned int Class_5_6647112852B5D45D_TypeDefinitionIndex = 37526;
+
+class Class_5_6647112852B5D45D : public ::Class_4_86126C0ABC4F0231<::MoleMole::Config::ConfigPlayFilterPluginSpecialEffect*>
+{
+public:
+	::Class_3_793A447220C740D8* Field_5_0; // 0x40
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_6647112852B5D45D__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_5_9D3A21F2F0EC6A39(::MoleMole::Config::ConfigPlayFilterPluginSpecialEffect* a1, ::Class_2_9DCE2FC33F67E8A2* a2, ::MoleMole::Config::UISpecialNumGroup* a3, ::Class_1_F50B5EAC0B6702FB* a4)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigPlayFilterPluginSpecialEffect*, ::Class_2_9DCE2FC33F67E8A2*, ::MoleMole::Config::UISpecialNumGroup*, ::Class_1_F50B5EAC0B6702FB*))((::PBYTE)hIl2Cpp + CLASS_5_6647112852B5D45D_METHOD_5_9D3A21F2F0EC6A39_OFFSET))(this, a1, a2, a3, a4);
+	}
+
+	::System::Void Method_5_8E8B1DEC3F78455A()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_6647112852B5D45D_METHOD_5_8E8B1DEC3F78455A_OFFSET))(this);
+	}
+
+	::System::Void Method_5_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_6647112852B5D45D_METHOD_5_CA373AA1C7054598_OFFSET))(this);
+	}
+};

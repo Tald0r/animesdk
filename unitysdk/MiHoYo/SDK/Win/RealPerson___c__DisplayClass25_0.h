@@ -5,12 +5,12 @@
 namespace MiHoYo::SDK { class AccountModel; }
 namespace MiHoYo::SDK::Win { class RealPerson; }
 
-#define MIHOYO_SDK_WIN_REALPERSON___C__DISPLAYCLASS25_0__CTOR_OFFSET UNITYSDK_OFFSET(0x157ABFF0)
-#define MIHOYO_SDK_WIN_REALPERSON___C__DISPLAYCLASS25_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x157AC400)
+#define MIHOYO_SDK_WIN_REALPERSON___C__DISPLAYCLASS25_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18ABE9F0)
+#define MIHOYO_SDK_WIN_REALPERSON___C__DISPLAYCLASS25_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x18ABEA00)
 
 namespace MiHoYo::SDK::Win
 {
-	inline static constexpr unsigned int RealPerson___c__DisplayClass25_0_TypeDefinitionIndex = 7964;
+	inline static constexpr unsigned int RealPerson___c__DisplayClass25_0_TypeDefinitionIndex = 19111;
 
 	class RealPerson___c__DisplayClass25_0 : public ::System::Object
 	{

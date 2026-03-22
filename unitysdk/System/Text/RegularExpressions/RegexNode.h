@@ -6,41 +6,75 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_ADDCHILD_OFFSET UNITYSDK_OFFSET(0x17F40F80)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_CHILDCOUNT_OFFSET UNITYSDK_OFFSET(0x17F388E0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_CHILD_OFFSET UNITYSDK_OFFSET(0x17F388F0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_MAKEQUANTIFIER_OFFSET UNITYSDK_OFFSET(0x17F40E20)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_MAKEREP_OFFSET UNITYSDK_OFFSET(0x17F3FF90)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCEALTERNATION_OFFSET UNITYSDK_OFFSET(0x17F400B0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCECONCATENATION_OFFSET UNITYSDK_OFFSET(0x17F406A0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCEGROUP_OFFSET UNITYSDK_OFFSET(0x17F40C40)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCEREP_OFFSET UNITYSDK_OFFSET(0x17F40A80)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCESET_OFFSET UNITYSDK_OFFSET(0x17F40C90)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCE_OFFSET UNITYSDK_OFFSET(0x17F3FFB0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REVERSELEFT_OFFSET UNITYSDK_OFFSET(0x17F3FF00)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_STRIPENATION_OFFSET UNITYSDK_OFFSET(0x17F40DD0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_TYPE_OFFSET UNITYSDK_OFFSET(0x17F41060)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_USEOPTIONR_OFFSET UNITYSDK_OFFSET(0x17F3FEF0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F3FEA0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17F3FEB0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE__CTOR_3_OFFSET UNITYSDK_OFFSET(0x17F3FEC0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE__CTOR_4_OFFSET UNITYSDK_OFFSET(0x17F3FED0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x17F3FE90)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_ADDCHILD_OFFSET UNITYSDK_OFFSET(0x19D82780)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_CHILDCOUNT_OFFSET UNITYSDK_OFFSET(0x19D825E0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_CHILD_OFFSET UNITYSDK_OFFSET(0x19D825F0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_MAKEQUANTIFIER_OFFSET UNITYSDK_OFFSET(0x19D82620)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_MAKEREP_OFFSET UNITYSDK_OFFSET(0x19D81870)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCEALTERNATION_OFFSET UNITYSDK_OFFSET(0x19D81AD0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCECONCATENATION_OFFSET UNITYSDK_OFFSET(0x19D81E60)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCEGROUP_OFFSET UNITYSDK_OFFSET(0x19D82400)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCEREP_OFFSET UNITYSDK_OFFSET(0x19D82240)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCESET_OFFSET UNITYSDK_OFFSET(0x19D82450)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REDUCE_OFFSET UNITYSDK_OFFSET(0x19D81890)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_REVERSELEFT_OFFSET UNITYSDK_OFFSET(0x19D817E0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_STRIPENATION_OFFSET UNITYSDK_OFFSET(0x19D82590)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_TYPE_OFFSET UNITYSDK_OFFSET(0x19D82860)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE_USEOPTIONR_OFFSET UNITYSDK_OFFSET(0x19D817D0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19D81780)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x19D81790)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE__CTOR_3_OFFSET UNITYSDK_OFFSET(0x19D817A0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE__CTOR_4_OFFSET UNITYSDK_OFFSET(0x19D817B0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x19D81770)
 
 namespace System::Text::RegularExpressions
 {
-	inline static constexpr unsigned int RegexNode_TypeDefinitionIndex = 2506;
+	inline static constexpr unsigned int RegexNode_TypeDefinitionIndex = 2745;
 
 	class RegexNode : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::List_1<::System::Text::RegularExpressions::RegexNode*>* _children; // 0x10
-		::System::String* _str; // 0x18
-		::System::Text::RegularExpressions::RegexNode* _next; // 0x20
-		::System::Char _ch; // 0x28
-		::System::Int32 _n; // 0x2C
-		::System::Int32 _m; // 0x30
-		::System::Text::RegularExpressions::RegexOptions _options; // 0x34
+		// static const ::System::Int32 Oneloop = 0x3; // 0x0
+		// static const ::System::Int32 Notoneloop = 0x4; // 0x0
+		// static const ::System::Int32 Setloop = 0x5; // 0x0
+		// static const ::System::Int32 Onelazy = 0x6; // 0x0
+		// static const ::System::Int32 Notonelazy = 0x7; // 0x0
+		// static const ::System::Int32 Setlazy = 0x8; // 0x0
+		// static const ::System::Int32 One = 0x9; // 0x0
+		// static const ::System::Int32 Notone = 0xA; // 0x0
+		// static const ::System::Int32 Set = 0xB; // 0x0
+		// static const ::System::Int32 Multi = 0xC; // 0x0
+		// static const ::System::Int32 Ref = 0xD; // 0x0
+		// static const ::System::Int32 Bol = 0xE; // 0x0
+		// static const ::System::Int32 Eol = 0xF; // 0x0
+		// static const ::System::Int32 Boundary = 0x10; // 0x0
+		// static const ::System::Int32 Nonboundary = 0x11; // 0x0
+		// static const ::System::Int32 ECMABoundary = 0x29; // 0x0
+		// static const ::System::Int32 NonECMABoundary = 0x2A; // 0x0
+		// static const ::System::Int32 Beginning = 0x12; // 0x0
+		// static const ::System::Int32 Start = 0x13; // 0x0
+		// static const ::System::Int32 EndZ = 0x14; // 0x0
+		// static const ::System::Int32 End = 0x15; // 0x0
+		// static const ::System::Int32 Nothing = 0x16; // 0x0
+		// static const ::System::Int32 Empty = 0x17; // 0x0
+		// static const ::System::Int32 Alternate = 0x18; // 0x0
+		// static const ::System::Int32 Concatenate = 0x19; // 0x0
+		// static const ::System::Int32 Loop = 0x1A; // 0x0
+		// static const ::System::Int32 Lazyloop = 0x1B; // 0x0
+		// static const ::System::Int32 Capture = 0x1C; // 0x0
+		// static const ::System::Int32 Group = 0x1D; // 0x0
+		// static const ::System::Int32 Require = 0x1E; // 0x0
+		// static const ::System::Int32 Prevent = 0x1F; // 0x0
+		// static const ::System::Int32 Greedy = 0x20; // 0x0
+		// static const ::System::Int32 Testref = 0x21; // 0x0
+		// static const ::System::Int32 Testgroup = 0x22; // 0x0
+		::System::String* _str; // 0x10
+		::System::Text::RegularExpressions::RegexNode* _next; // 0x18
+		::System::Collections::Generic::List_1<::System::Text::RegularExpressions::RegexNode*>* _children; // 0x20
+		::System::Int32 _n; // 0x28
+		::System::Text::RegularExpressions::RegexOptions _options; // 0x2C
+		::System::Char _ch; // 0x30
+		::System::Int32 _m; // 0x34
 		::System::Int32 _type; // 0x38
 
 		::System::Void _ctor(::System::Int32 type, ::System::Text::RegularExpressions::RegexOptions options)

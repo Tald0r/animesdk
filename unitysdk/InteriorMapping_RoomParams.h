@@ -1,0 +1,20 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+#define INTERIORMAPPING_ROOMPARAMS__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0C7280)
+
+inline static constexpr unsigned int InteriorMapping_RoomParams_TypeDefinitionIndex = 31596;
+
+class InteriorMapping_RoomParams : public ::System::Object
+{
+public:
+	::System::Int32 x; // 0x10
+	::System::Int32 y; // 0x14
+	::System::Single depth; // 0x18
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + INTERIORMAPPING_ROOMPARAMS__CTOR_OFFSET))(this);
+	}
+};

@@ -1,0 +1,46 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_72493A19B112705C.h"
+#include "unitysdk/Enum_3_CF6069113B9F5B89.h"
+#include "unitysdk/Struct_2_A47ACAABA9AAFE92.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_266;
+class Class_0_16E4307DCC419505_361;
+
+#define MOLEMOLE_BRACKETEXPRESSIONVAL_METHOD_1_3C696CB7BFAE965B_OFFSET UNITYSDK_OFFSET(0xC30D510)
+#define MOLEMOLE_BRACKETEXPRESSIONVAL_METHOD_1_49AC00594530B714_OFFSET UNITYSDK_OFFSET(0xC30D3E0)
+#define MOLEMOLE_BRACKETEXPRESSIONVAL_METHOD_1_B438BB4175B451ED_OFFSET UNITYSDK_OFFSET(0xC30D440)
+#define MOLEMOLE_BRACKETEXPRESSIONVAL__CTOR_OFFSET UNITYSDK_OFFSET(0xC30D760)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int BracketExpressionVal_TypeDefinitionIndex = 77491;
+
+	class BracketExpressionVal : public ::System::Object
+	{
+	public:
+		::Enum_3_72493A19B112705C expressionRetValType; // 0x10
+		::Il2CppArray<::Class_0_16E4307DCC419505_361*>* ExpressionVal; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BRACKETEXPRESSIONVAL__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_CF6069113B9F5B89 Method_1_49AC00594530B714()
+		{
+			return ((::Enum_3_CF6069113B9F5B89(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BRACKETEXPRESSIONVAL_METHOD_1_49AC00594530B714_OFFSET))(this);
+		}
+
+		::Struct_2_A47ACAABA9AAFE92 Method_1_B438BB4175B451ED(::Class_0_16E4307DCC419505_266* a1)
+		{
+			return ((::Struct_2_A47ACAABA9AAFE92(*)(::PVOID, ::Class_0_16E4307DCC419505_266*))((::PBYTE)hIl2Cpp + MOLEMOLE_BRACKETEXPRESSIONVAL_METHOD_1_B438BB4175B451ED_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_3C696CB7BFAE965B()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BRACKETEXPRESSIONVAL_METHOD_1_3C696CB7BFAE965B_OFFSET))(this);
+		}
+	};
+}

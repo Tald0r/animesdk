@@ -6,26 +6,20 @@ namespace System { class IFormatProvider; }
 namespace System { class Object; }
 namespace System { class String; }
 
-#define SYSTEM_NUMERICS_VECTOR2_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x202D800)
-#define SYSTEM_NUMERICS_VECTOR2_EQUALS_OFFSET UNITYSDK_OFFSET(0x202D6E0)
-#define SYSTEM_NUMERICS_VECTOR2_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x202D650)
-#define SYSTEM_NUMERICS_VECTOR2_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x202D7F0)
-#define SYSTEM_NUMERICS_VECTOR2_TOSTRING_OFFSET UNITYSDK_OFFSET(0x202D760)
-#define SYSTEM_NUMERICS_VECTOR2__CTOR_OFFSET UNITYSDK_OFFSET(0x29910)
+#define SYSTEM_NUMERICS_VECTOR2_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x8C3F10)
+#define SYSTEM_NUMERICS_VECTOR2_EQUALS_OFFSET UNITYSDK_OFFSET(0x90FAC0)
+#define SYSTEM_NUMERICS_VECTOR2_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x90FA30)
+#define SYSTEM_NUMERICS_VECTOR2_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x90FBD0)
+#define SYSTEM_NUMERICS_VECTOR2_TOSTRING_OFFSET UNITYSDK_OFFSET(0x90FB40)
 
 namespace System::Numerics
 {
-	inline static constexpr unsigned int Vector2_TypeDefinitionIndex = 4777;
+	inline static constexpr unsigned int Vector2_TypeDefinitionIndex = 6474;
 
 	struct alignas(4) Vector2
 	{
 		::System::Single X; // 0x10
 		::System::Single Y; // 0x14
-
-		::System::Void _ctor(::System::Single x, ::System::Single y)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + SYSTEM_NUMERICS_VECTOR2__CTOR_OFFSET))(this, x, y);
-		}
 
 		::System::Int32 GetHashCode()
 		{

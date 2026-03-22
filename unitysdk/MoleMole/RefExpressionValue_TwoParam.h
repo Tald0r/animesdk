@@ -1,0 +1,49 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_72493A19B112705C.h"
+#include "unitysdk/Enum_3_CF6069113B9F5B89.h"
+#include "unitysdk/Struct_2_A47ACAABA9AAFE92.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_266;
+class Class_0_16E4307DCC419505_361;
+namespace System { class String; }
+
+#define MOLEMOLE_REFEXPRESSIONVALUE_TWOPARAM_METHOD_1_122A0B7E942B5C93_OFFSET UNITYSDK_OFFSET(0x99433A0)
+#define MOLEMOLE_REFEXPRESSIONVALUE_TWOPARAM_METHOD_1_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0x99436D0)
+#define MOLEMOLE_REFEXPRESSIONVALUE_TWOPARAM_METHOD_1_49AC00594530B714_OFFSET UNITYSDK_OFFSET(0x9943340)
+#define MOLEMOLE_REFEXPRESSIONVALUE_TWOPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x9943320)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int RefExpressionValue_TwoParam_TypeDefinitionIndex = 54361;
+
+	class RefExpressionValue_TwoParam : public ::System::Object
+	{
+	public:
+		::System::String* RefName; // 0x10
+		::Class_0_16E4307DCC419505_361* Param1; // 0x18
+		::Class_0_16E4307DCC419505_361* Param2; // 0x20
+		::Enum_3_72493A19B112705C ExpressionRetValType; // 0x28
+
+		::System::Void _ctor(::System::String* a1, ::Class_0_16E4307DCC419505_361* a2, ::Class_0_16E4307DCC419505_361* a3, ::Enum_3_72493A19B112705C a4)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::Class_0_16E4307DCC419505_361*, ::Class_0_16E4307DCC419505_361*, ::Enum_3_72493A19B112705C))((::PBYTE)hIl2Cpp + MOLEMOLE_REFEXPRESSIONVALUE_TWOPARAM__CTOR_OFFSET))(this, a1, a2, a3, a4);
+		}
+
+		::Enum_3_CF6069113B9F5B89 Method_1_49AC00594530B714()
+		{
+			return ((::Enum_3_CF6069113B9F5B89(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_REFEXPRESSIONVALUE_TWOPARAM_METHOD_1_49AC00594530B714_OFFSET))(this);
+		}
+
+		::Struct_2_A47ACAABA9AAFE92 Method_1_122A0B7E942B5C93(::Class_0_16E4307DCC419505_266* a1)
+		{
+			return ((::Struct_2_A47ACAABA9AAFE92(*)(::PVOID, ::Class_0_16E4307DCC419505_266*))((::PBYTE)hIl2Cpp + MOLEMOLE_REFEXPRESSIONVALUE_TWOPARAM_METHOD_1_122A0B7E942B5C93_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_391A84BCD9F51317()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_REFEXPRESSIONVALUE_TWOPARAM_METHOD_1_391A84BCD9F51317_OFFSET))(this);
+		}
+	};
+}

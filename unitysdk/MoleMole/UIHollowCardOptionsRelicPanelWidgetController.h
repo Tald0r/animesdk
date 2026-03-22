@@ -1,0 +1,130 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_D27E2863F5099D68;
+class MonoUITableScrollV2;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralButtonController; }
+namespace MoleMole { class UIHollowCardOptionsDialogContext; }
+namespace System { class Action; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_GET_CONFIRMBTN_OFFSET UNITYSDK_OFFSET(0x7A703F0)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_GET_SCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x7A70410)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_INITSELECTGAMEPAD_OFFSET UNITYSDK_OFFSET(0x7A70DD0)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_INITUPGRADEGAMEPAD_OFFSET UNITYSDK_OFFSET(0x7A71140)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ISMUTISELECTMODE_OFFSET UNITYSDK_OFFSET(0x7A70D50)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ONCLICKCONFIRM_OFFSET UNITYSDK_OFFSET(0x7A70660)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A70790)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A70830)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A70430)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A706E0)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_REFRESHCONFIRM_OFFSET UNITYSDK_OFFSET(0x7A70910)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_REGISTERCLICKCONFIRMCALLBACK_OFFSET UNITYSDK_OFFSET(0x7A705F0)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A71330)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A71360)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A713D0)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A71450)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A714B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowCardOptionsRelicPanelWidgetController_TypeDefinitionIndex = 64136;
+
+	class UIHollowCardOptionsRelicPanelWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* SELECT_CONFIRM_KEY; // 0x0
+		// static const ::System::String* NORMAL_CONFIRM_KEY; // 0x0
+		::Class_2_D27E2863F5099D68* _view; // 0x2A0
+		::System::Action* _onGiveUpAction; // 0x2A8
+		::System::Action* OnClickConfirmAction; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::UIGeneralButtonController* get_ConfirmBtn()
+		{
+			return ((::MoleMole::UIGeneralButtonController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_GET_CONFIRMBTN_OFFSET))(this);
+		}
+
+		::MonoUITableScrollV2* get_ScrollView()
+		{
+			return ((::MonoUITableScrollV2*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_GET_SCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void RegisterClickConfirmCallback(::System::Action* action)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_REGISTERCLICKCONFIRMCALLBACK_OFFSET))(this, action);
+		}
+
+		::System::Void OnClickConfirm()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ONCLICKCONFIRM_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshConfirm(::MoleMole::UIHollowCardOptionsDialogContext* dialogContext, ::System::Int32 selectCount)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIHollowCardOptionsDialogContext*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_REFRESHCONFIRM_OFFSET))(this, dialogContext, selectCount);
+		}
+
+		::System::Void InitSelectGamepad(::MoleMole::UIHollowCardOptionsDialogContext* dialogContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIHollowCardOptionsDialogContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_INITSELECTGAMEPAD_OFFSET))(this, dialogContext);
+		}
+
+		static ::System::Boolean IsMutiSelectMode(::MoleMole::UIHollowCardOptionsDialogContext* dialogContext)
+		{
+			return ((::System::Boolean(*)(::MoleMole::UIHollowCardOptionsDialogContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_ISMUTISELECTMODE_OFFSET))(dialogContext);
+		}
+
+		::System::Void InitUpgradeGamepad()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER_INITUPGRADEGAMEPAD_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSRELICPANELWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

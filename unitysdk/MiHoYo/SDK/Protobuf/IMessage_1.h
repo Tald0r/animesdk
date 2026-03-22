@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK::Protobuf
 {
-	inline static constexpr unsigned int IMessage_1_TypeDefinitionIndex = 27274;
+	inline static constexpr unsigned int IMessage_1_TypeDefinitionIndex = 24627;
 
 	template <typename T>
 	class IMessage_1

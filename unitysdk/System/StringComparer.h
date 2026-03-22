@@ -3,39 +3,40 @@
 #include "unitysdk/System/Object.h"
 
 namespace System { class String; }
+namespace System::Globalization { class CultureInfo; }
 
-#define SYSTEM_STRINGCOMPARER_COMPARE_OFFSET UNITYSDK_OFFSET(0x15B49B90)
-#define SYSTEM_STRINGCOMPARER_EQUALS_OFFSET UNITYSDK_OFFSET(0x15B49D10)
-#define SYSTEM_STRINGCOMPARER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x15B49D70)
-#define SYSTEM_STRINGCOMPARER_GET_CURRENTCULTUREIGNORECASE_OFFSET UNITYSDK_OFFSET(0x15B49A60)
-#define SYSTEM_STRINGCOMPARER_GET_INVARIANTCULTUREIGNORECASE_OFFSET UNITYSDK_OFFSET(0x15B49A30)
-#define SYSTEM_STRINGCOMPARER_GET_ORDINALIGNORECASE_OFFSET UNITYSDK_OFFSET(0x15B49B60)
-#define SYSTEM_STRINGCOMPARER_GET_ORDINAL_OFFSET UNITYSDK_OFFSET(0x15B49B30)
-#define SYSTEM_STRINGCOMPARER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15B49E00)
-#define SYSTEM_STRINGCOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x15B49DF0)
+#define SYSTEM_STRINGCOMPARER_COMPARE_OFFSET UNITYSDK_OFFSET(0x1966DEA0)
+#define SYSTEM_STRINGCOMPARER_CREATE_OFFSET UNITYSDK_OFFSET(0x1966DDF0)
+#define SYSTEM_STRINGCOMPARER_EQUALS_OFFSET UNITYSDK_OFFSET(0x1966E020)
+#define SYSTEM_STRINGCOMPARER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x1966E080)
+#define SYSTEM_STRINGCOMPARER_GET_CURRENTCULTUREIGNORECASE_OFFSET UNITYSDK_OFFSET(0x1966DCC0)
+#define SYSTEM_STRINGCOMPARER_GET_ORDINALIGNORECASE_OFFSET UNITYSDK_OFFSET(0x1966DDC0)
+#define SYSTEM_STRINGCOMPARER_GET_ORDINAL_OFFSET UNITYSDK_OFFSET(0x1966DD90)
+#define SYSTEM_STRINGCOMPARER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1966E110)
+#define SYSTEM_STRINGCOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x1966E100)
 
 namespace System
 {
-	inline static constexpr unsigned int StringComparer_TypeDefinitionIndex = 330;
+	inline static constexpr unsigned int StringComparer_TypeDefinitionIndex = 320;
 
 	class StringComparer : public ::System::Object
 	{
 	public:
-		static ::System::StringComparer** StaticGet__ordinal()
+		static ::System::StringComparer** StaticGet__invariantCulture()
 		{
-			return (::System::StringComparer**)Il2CppClass::FromTypeDefinitionIndex(StringComparer_TypeDefinitionIndex)->GetStaticField(0x3C0);
+			return (::System::StringComparer**)Il2CppClass::FromTypeDefinitionIndex(StringComparer_TypeDefinitionIndex)->GetStaticField(0xA40);
 		}
 		static ::System::StringComparer** StaticGet__invariantCultureIgnoreCase()
 		{
-			return (::System::StringComparer**)Il2CppClass::FromTypeDefinitionIndex(StringComparer_TypeDefinitionIndex)->GetStaticField(0x3C8);
-		}
-		static ::System::StringComparer** StaticGet__invariantCulture()
-		{
-			return (::System::StringComparer**)Il2CppClass::FromTypeDefinitionIndex(StringComparer_TypeDefinitionIndex)->GetStaticField(0x3D0);
+			return (::System::StringComparer**)Il2CppClass::FromTypeDefinitionIndex(StringComparer_TypeDefinitionIndex)->GetStaticField(0xA48);
 		}
 		static ::System::StringComparer** StaticGet__ordinalIgnoreCase()
 		{
-			return (::System::StringComparer**)Il2CppClass::FromTypeDefinitionIndex(StringComparer_TypeDefinitionIndex)->GetStaticField(0x3D8);
+			return (::System::StringComparer**)Il2CppClass::FromTypeDefinitionIndex(StringComparer_TypeDefinitionIndex)->GetStaticField(0xA50);
+		}
+		static ::System::StringComparer** StaticGet__ordinal()
+		{
+			return (::System::StringComparer**)Il2CppClass::FromTypeDefinitionIndex(StringComparer_TypeDefinitionIndex)->GetStaticField(0xA58);
 		}
 
 		::System::Void _ctor()
@@ -46,11 +47,6 @@ namespace System
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_STRINGCOMPARER__CCTOR_OFFSET))();
-		}
-
-		static ::System::StringComparer* get_InvariantCultureIgnoreCase()
-		{
-			return ((::System::StringComparer*(*)())((::PBYTE)hIl2Cpp + SYSTEM_STRINGCOMPARER_GET_INVARIANTCULTUREIGNORECASE_OFFSET))();
 		}
 
 		static ::System::StringComparer* get_CurrentCultureIgnoreCase()
@@ -66,6 +62,11 @@ namespace System
 		static ::System::StringComparer* get_OrdinalIgnoreCase()
 		{
 			return ((::System::StringComparer*(*)())((::PBYTE)hIl2Cpp + SYSTEM_STRINGCOMPARER_GET_ORDINALIGNORECASE_OFFSET))();
+		}
+
+		static ::System::StringComparer* Create(::System::Globalization::CultureInfo* culture, ::System::Boolean ignoreCase)
+		{
+			return ((::System::StringComparer*(*)(::System::Globalization::CultureInfo*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_STRINGCOMPARER_CREATE_OFFSET))(culture, ignoreCase);
 		}
 
 		::System::Int32 Compare(::System::Object* x, ::System::Object* y)

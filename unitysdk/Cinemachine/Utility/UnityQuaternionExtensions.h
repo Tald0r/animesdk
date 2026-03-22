@@ -5,21 +5,56 @@
 #include "unitysdk/UnityEngine/Vector2.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_APPLYCAMERAROTATION_OFFSET UNITYSDK_OFFSET(0x1126FBC0)
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_GETCAMERAROTATIONTOTARGET_OFFSET UNITYSDK_OFFSET(0x1126F3E0)
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_NORMALIZED_OFFSET UNITYSDK_OFFSET(0x1126F360)
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUP_OFFSET UNITYSDK_OFFSET(0x1126E9E0)
+namespace System { template <typename T1, typename T2, typename T3, typename T4> class Func_4; }
+
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_APPLYCAMERAROTATION_OFFSET UNITYSDK_OFFSET(0x1AF80450)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_GETCAMERAROTATIONTOTARGET_OFFSET UNITYSDK_OFFSET(0x1AF7FEC0)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_NORMALIZED_OFFSET UNITYSDK_OFFSET(0x1AF7FE40)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUPANTICLOCKWISE_OFFSET UNITYSDK_OFFSET(0x1AF7FD30)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUPCLOCKWISE_OFFSET UNITYSDK_OFFSET(0x1AF7F2F0)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUP_OFFSET UNITYSDK_OFFSET(0x1AF7E9D0)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCE_OFFSET UNITYSDK_OFFSET(0x1AF7F400)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AF806A0)
 
 namespace Cinemachine::Utility
 {
-	inline static constexpr unsigned int UnityQuaternionExtensions_TypeDefinitionIndex = 30065;
+	inline static constexpr unsigned int UnityQuaternionExtensions_TypeDefinitionIndex = 31170;
 
 	class UnityQuaternionExtensions : public ::System::Object
 	{
 	public:
+		static ::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>** StaticGet_lerpAnagleClockwise()
+		{
+			return (::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(UnityQuaternionExtensions_TypeDefinitionIndex)->GetStaticField(0x23900);
+		}
+		static ::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>** StaticGet_lerpAnagleAnticlockwise()
+		{
+			return (::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(UnityQuaternionExtensions_TypeDefinitionIndex)->GetStaticField(0x23908);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS__CCTOR_OFFSET))();
+		}
+
 		static ::UnityEngine::Quaternion SlerpWithReferenceUp(::UnityEngine::Quaternion qA, ::UnityEngine::Quaternion qB, ::System::Single t, ::UnityEngine::Vector3 up)
 		{
 			return ((::UnityEngine::Quaternion(*)(::UnityEngine::Quaternion, ::UnityEngine::Quaternion, ::System::Single, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUP_OFFSET))(qA, qB, t, up);
+		}
+
+		static ::UnityEngine::Quaternion SlerpWithReferenceUpClockwise(::UnityEngine::Quaternion qA, ::UnityEngine::Quaternion qB, ::System::Single t, ::UnityEngine::Vector3 up)
+		{
+			return ((::UnityEngine::Quaternion(*)(::UnityEngine::Quaternion, ::UnityEngine::Quaternion, ::System::Single, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUPCLOCKWISE_OFFSET))(qA, qB, t, up);
+		}
+
+		static ::UnityEngine::Quaternion SlerpWithReferenceUpAnticlockwise(::UnityEngine::Quaternion qA, ::UnityEngine::Quaternion qB, ::System::Single t, ::UnityEngine::Vector3 up)
+		{
+			return ((::UnityEngine::Quaternion(*)(::UnityEngine::Quaternion, ::UnityEngine::Quaternion, ::System::Single, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUPANTICLOCKWISE_OFFSET))(qA, qB, t, up);
+		}
+
+		static ::UnityEngine::Quaternion SlerpWithReference(::UnityEngine::Quaternion qA, ::UnityEngine::Quaternion qB, ::System::Single t, ::UnityEngine::Vector3 up, ::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>* lerpMethodAxisY)
+		{
+			return ((::UnityEngine::Quaternion(*)(::UnityEngine::Quaternion, ::UnityEngine::Quaternion, ::System::Single, ::UnityEngine::Vector3, ::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>*))((::PBYTE)hIl2Cpp + CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCE_OFFSET))(qA, qB, t, up, lerpMethodAxisY);
 		}
 
 		static ::UnityEngine::Quaternion Normalized(::UnityEngine::Quaternion q)

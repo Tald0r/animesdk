@@ -5,33 +5,16 @@
 
 namespace System { class Object; }
 
-#define UNITYENGINE_RENDERING_BLENDSTATE_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x2046A40)
-#define UNITYENGINE_RENDERING_BLENDSTATE_EQUALS_OFFSET UNITYSDK_OFFSET(0x20469F0)
-#define UNITYENGINE_RENDERING_BLENDSTATE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x2046AD0)
-#define UNITYENGINE_RENDERING_BLENDSTATE_GET_ALPHATOMASK_OFFSET UNITYSDK_OFFSET(0x20469D0)
-#define UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE0_OFFSET UNITYSDK_OFFSET(0x5580)
-#define UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE1_OFFSET UNITYSDK_OFFSET(0x5AF0)
-#define UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE2_OFFSET UNITYSDK_OFFSET(0x13C90)
-#define UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE3_OFFSET UNITYSDK_OFFSET(0x28F50)
-#define UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE4_OFFSET UNITYSDK_OFFSET(0x10480)
-#define UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE5_OFFSET UNITYSDK_OFFSET(0x24FD0)
-#define UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE6_OFFSET UNITYSDK_OFFSET(0x24FE0)
-#define UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE7_OFFSET UNITYSDK_OFFSET(0x24FF0)
-#define UNITYENGINE_RENDERING_BLENDSTATE_GET_SEPARATEMRTBLENDSTATES_OFFSET UNITYSDK_OFFSET(0x20469B0)
-#define UNITYENGINE_RENDERING_BLENDSTATE_SET_ALPHATOMASK_OFFSET UNITYSDK_OFFSET(0x20469E0)
-#define UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE0_OFFSET UNITYSDK_OFFSET(0xBDC0)
-#define UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE1_OFFSET UNITYSDK_OFFSET(0x8D10)
-#define UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE2_OFFSET UNITYSDK_OFFSET(0xAF80)
-#define UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE3_OFFSET UNITYSDK_OFFSET(0x28F60)
-#define UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE4_OFFSET UNITYSDK_OFFSET(0xB390)
-#define UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE5_OFFSET UNITYSDK_OFFSET(0x3C1A0)
-#define UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE6_OFFSET UNITYSDK_OFFSET(0x29170)
-#define UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE7_OFFSET UNITYSDK_OFFSET(0x5A740)
-#define UNITYENGINE_RENDERING_BLENDSTATE_SET_SEPARATEMRTBLENDSTATES_OFFSET UNITYSDK_OFFSET(0x20469C0)
+#define UNITYENGINE_RENDERING_BLENDSTATE_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x906A90)
+#define UNITYENGINE_RENDERING_BLENDSTATE_EQUALS_OFFSET UNITYSDK_OFFSET(0x906A40)
+#define UNITYENGINE_RENDERING_BLENDSTATE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x906B20)
+#define UNITYENGINE_RENDERING_BLENDSTATE_GET_DEFAULTVALUE_OFFSET UNITYSDK_OFFSET(0x1A04D020)
+#define UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE0_OFFSET UNITYSDK_OFFSET(0x2C3980)
+#define UNITYENGINE_RENDERING_BLENDSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x906A10)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int BlendState_TypeDefinitionIndex = 4522;
+	inline static constexpr unsigned int BlendState_TypeDefinitionIndex = 6196;
 
 	struct alignas(2) BlendState
 	{
@@ -47,104 +30,19 @@ namespace UnityEngine::Rendering
 		::System::Byte m_AlphaToMask; // 0x51
 		::System::Int16 m_Padding; // 0x52
 
-		::System::Boolean get_separateMRTBlendStates()
+		::System::Void _ctor(::System::Boolean separateMRTBlend, ::System::Boolean alphaToMask)
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_GET_SEPARATEMRTBLENDSTATES_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE__CTOR_OFFSET))(this, separateMRTBlend, alphaToMask);
 		}
 
-		::System::Void set_separateMRTBlendStates(::System::Boolean value)
+		static ::UnityEngine::Rendering::BlendState get_defaultValue()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_SET_SEPARATEMRTBLENDSTATES_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_alphaToMask()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_GET_ALPHATOMASK_OFFSET))(this);
-		}
-
-		::System::Void set_alphaToMask(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_SET_ALPHATOMASK_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::RenderTargetBlendState get_blendState0()
-		{
-			return ((::UnityEngine::Rendering::RenderTargetBlendState(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE0_OFFSET))(this);
+			return ((::UnityEngine::Rendering::BlendState(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_GET_DEFAULTVALUE_OFFSET))();
 		}
 
 		::System::Void set_blendState0(::UnityEngine::Rendering::RenderTargetBlendState value)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::RenderTargetBlendState))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE0_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::RenderTargetBlendState get_blendState1()
-		{
-			return ((::UnityEngine::Rendering::RenderTargetBlendState(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE1_OFFSET))(this);
-		}
-
-		::System::Void set_blendState1(::UnityEngine::Rendering::RenderTargetBlendState value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::RenderTargetBlendState))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE1_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::RenderTargetBlendState get_blendState2()
-		{
-			return ((::UnityEngine::Rendering::RenderTargetBlendState(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE2_OFFSET))(this);
-		}
-
-		::System::Void set_blendState2(::UnityEngine::Rendering::RenderTargetBlendState value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::RenderTargetBlendState))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE2_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::RenderTargetBlendState get_blendState3()
-		{
-			return ((::UnityEngine::Rendering::RenderTargetBlendState(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE3_OFFSET))(this);
-		}
-
-		::System::Void set_blendState3(::UnityEngine::Rendering::RenderTargetBlendState value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::RenderTargetBlendState))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE3_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::RenderTargetBlendState get_blendState4()
-		{
-			return ((::UnityEngine::Rendering::RenderTargetBlendState(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE4_OFFSET))(this);
-		}
-
-		::System::Void set_blendState4(::UnityEngine::Rendering::RenderTargetBlendState value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::RenderTargetBlendState))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE4_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::RenderTargetBlendState get_blendState5()
-		{
-			return ((::UnityEngine::Rendering::RenderTargetBlendState(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE5_OFFSET))(this);
-		}
-
-		::System::Void set_blendState5(::UnityEngine::Rendering::RenderTargetBlendState value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::RenderTargetBlendState))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE5_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::RenderTargetBlendState get_blendState6()
-		{
-			return ((::UnityEngine::Rendering::RenderTargetBlendState(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE6_OFFSET))(this);
-		}
-
-		::System::Void set_blendState6(::UnityEngine::Rendering::RenderTargetBlendState value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::RenderTargetBlendState))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE6_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::RenderTargetBlendState get_blendState7()
-		{
-			return ((::UnityEngine::Rendering::RenderTargetBlendState(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_GET_BLENDSTATE7_OFFSET))(this);
-		}
-
-		::System::Void set_blendState7(::UnityEngine::Rendering::RenderTargetBlendState value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::RenderTargetBlendState))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BLENDSTATE_SET_BLENDSTATE7_OFFSET))(this, value);
 		}
 
 		::System::Boolean Equals(::UnityEngine::Rendering::BlendState other)

@@ -5,12 +5,13 @@
 namespace System { class Array; }
 namespace System::Collections { class IEnumerator; }
 namespace System::Collections::Concurrent { template <typename T> class ConcurrentBag_1_WorkStealingQueue; }
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
 namespace System::Threading { template <typename T> class ThreadLocal_1; }
 
 namespace System::Collections::Concurrent
 {
-	inline static constexpr unsigned int ConcurrentBag_1_TypeDefinitionIndex = 3034;
+	inline static constexpr unsigned int ConcurrentBag_1_TypeDefinitionIndex = 4000;
 
 	template <typename T>
 	class ConcurrentBag_1 : public ::System::Object

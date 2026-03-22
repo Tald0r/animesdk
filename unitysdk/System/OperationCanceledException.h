@@ -4,19 +4,22 @@
 #include "unitysdk/System/SystemException.h"
 #include "unitysdk/System/Threading/CancellationToken.h"
 
+namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_OPERATIONCANCELEDEXCEPTION_GET_CANCELLATIONTOKEN_OFFSET UNITYSDK_OFFSET(0x15CAE2D0)
-#define SYSTEM_OPERATIONCANCELEDEXCEPTION_SET_CANCELLATIONTOKEN_OFFSET UNITYSDK_OFFSET(0x15CAE2E0)
-#define SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15CAE360)
-#define SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15CAE3D0)
-#define SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15CAE440)
-#define SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15CAE2F0)
+#define SYSTEM_OPERATIONCANCELEDEXCEPTION_GET_CANCELLATIONTOKEN_OFFSET UNITYSDK_OFFSET(0x19B76ED0)
+#define SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19B76F50)
+#define SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x19B76FC0)
+#define SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x19B77030)
+#define SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_4_OFFSET UNITYSDK_OFFSET(0x19B770B0)
+#define SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_5_OFFSET UNITYSDK_OFFSET(0x19B77120)
+#define SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_6_OFFSET UNITYSDK_OFFSET(0x19B771A0)
+#define SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x19B76EE0)
 
 namespace System
 {
-	inline static constexpr unsigned int OperationCanceledException_TypeDefinitionIndex = 309;
+	inline static constexpr unsigned int OperationCanceledException_TypeDefinitionIndex = 299;
 
 	class OperationCanceledException : public ::System::SystemException
 	{
@@ -33,24 +36,34 @@ namespace System
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_1_OFFSET))(this, message);
 		}
 
-		::System::Void _ctor_2(::System::String* message, ::System::Threading::CancellationToken token)
+		::System::Void _ctor_2(::System::String* message, ::System::Exception* innerException)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_2_OFFSET))(this, message, token);
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Exception*))((::PBYTE)hIl2Cpp + SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_2_OFFSET))(this, message, innerException);
 		}
 
-		::System::Void _ctor_3(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::Void _ctor_3(::System::Threading::CancellationToken token)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_3_OFFSET))(this, info, context);
+			return ((::System::Void(*)(::PVOID, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_3_OFFSET))(this, token);
+		}
+
+		::System::Void _ctor_4(::System::String* message, ::System::Threading::CancellationToken token)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_4_OFFSET))(this, message, token);
+		}
+
+		::System::Void _ctor_5(::System::String* message, ::System::Exception* innerException, ::System::Threading::CancellationToken token)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Exception*, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_5_OFFSET))(this, message, innerException, token);
+		}
+
+		::System::Void _ctor_6(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_OPERATIONCANCELEDEXCEPTION__CTOR_6_OFFSET))(this, info, context);
 		}
 
 		::System::Threading::CancellationToken get_CancellationToken()
 		{
 			return ((::System::Threading::CancellationToken(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_OPERATIONCANCELEDEXCEPTION_GET_CANCELLATIONTOKEN_OFFSET))(this);
-		}
-
-		::System::Void set_CancellationToken(::System::Threading::CancellationToken value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + SYSTEM_OPERATIONCANCELEDEXCEPTION_SET_CANCELLATIONTOKEN_OFFSET))(this, value);
 		}
 	};
 }

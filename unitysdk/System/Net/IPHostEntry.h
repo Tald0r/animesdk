@@ -5,23 +5,24 @@
 namespace System { class String; }
 namespace System::Net { class IPAddress; }
 
-#define SYSTEM_NET_IPHOSTENTRY_GET_ADDRESSLIST_OFFSET UNITYSDK_OFFSET(0x17EE19F0)
-#define SYSTEM_NET_IPHOSTENTRY_GET_HOSTNAME_OFFSET UNITYSDK_OFFSET(0x17EE19C0)
-#define SYSTEM_NET_IPHOSTENTRY_SET_ADDRESSLIST_OFFSET UNITYSDK_OFFSET(0x17EE1A00)
-#define SYSTEM_NET_IPHOSTENTRY_SET_ALIASES_OFFSET UNITYSDK_OFFSET(0x17EE19E0)
-#define SYSTEM_NET_IPHOSTENTRY_SET_HOSTNAME_OFFSET UNITYSDK_OFFSET(0x17EE19D0)
-#define SYSTEM_NET_IPHOSTENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x17EB2DE0)
+#define SYSTEM_NET_IPHOSTENTRY_GET_ADDRESSLIST_OFFSET UNITYSDK_OFFSET(0x190A1B20)
+#define SYSTEM_NET_IPHOSTENTRY_GET_ALIASES_OFFSET UNITYSDK_OFFSET(0x190A1B00)
+#define SYSTEM_NET_IPHOSTENTRY_GET_HOSTNAME_OFFSET UNITYSDK_OFFSET(0x190A1AE0)
+#define SYSTEM_NET_IPHOSTENTRY_SET_ADDRESSLIST_OFFSET UNITYSDK_OFFSET(0x190A1B30)
+#define SYSTEM_NET_IPHOSTENTRY_SET_ALIASES_OFFSET UNITYSDK_OFFSET(0x190A1B10)
+#define SYSTEM_NET_IPHOSTENTRY_SET_HOSTNAME_OFFSET UNITYSDK_OFFSET(0x190A1AF0)
+#define SYSTEM_NET_IPHOSTENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x190A1B40)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int IPHostEntry_TypeDefinitionIndex = 2728;
+	inline static constexpr unsigned int IPHostEntry_TypeDefinitionIndex = 3289;
 
 	class IPHostEntry : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::Net::IPAddress*>* addressList; // 0x10
-		::System::String* hostName; // 0x18
-		::Il2CppArray<::System::String*>* aliases; // 0x20
+		::System::String* hostName; // 0x10
+		::Il2CppArray<::System::String*>* aliases; // 0x18
+		::Il2CppArray<::System::Net::IPAddress*>* addressList; // 0x20
 		::System::Boolean isTrustedHost; // 0x28
 
 		::System::Void _ctor()
@@ -37,6 +38,11 @@ namespace System::Net
 		::System::Void set_HostName(::System::String* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_IPHOSTENTRY_SET_HOSTNAME_OFFSET))(this, value);
+		}
+
+		::Il2CppArray<::System::String*>* get_Aliases()
+		{
+			return ((::Il2CppArray<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_IPHOSTENTRY_GET_ALIASES_OFFSET))(this);
 		}
 
 		::System::Void set_Aliases(::Il2CppArray<::System::String*>* value)

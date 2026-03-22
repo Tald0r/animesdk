@@ -1,0 +1,134 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_2_76D19AFFD7FD31D2;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIFlowerMainTabWidgetController_Context; }
+namespace MoleMole { class UIFlowerMainTabWidgetController_ViewModel; }
+
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_BINDBUTTON_OFFSET UNITYSDK_OFFSET(0x9D73830)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_BUILDDATABINDING_OFFSET UNITYSDK_OFFSET(0x9D73BA0)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET UNITYSDK_OFFSET(0x9D73890)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_CREATESUBWIDGET_OFFSET UNITYSDK_OFFSET(0x9D73C50)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_GET_SELECT_OFFSET UNITYSDK_OFFSET(0x9D73F10)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0x9D73D50)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9D73CB0)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x9D73A10)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9D73E30)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9D73710)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_SET_SELECT_OFFSET UNITYSDK_OFFSET(0x9D74000)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__11_0_OFFSET UNITYSDK_OFFSET(0x9D742A0)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9D74150)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0x9D744C0)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9D74520)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x9D74590)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9D74600)
+#define MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9D74680)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFlowerMainTabWidgetController_TypeDefinitionIndex = 66445;
+
+	class UIFlowerMainTabWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_76D19AFFD7FD31D2* _view; // 0x2A0
+		::MoleMole::UIFlowerMainTabWidgetController_Context* _context; // 0x2A8
+		::MoleMole::UIFlowerMainTabWidgetController_ViewModel* _viewModel; // 0x2B0
+		::Class_1_48D56DACBE4271BC* _propertySyncHelper; // 0x2B8
+		::Class_1_48D56DACBE4271BC* _propertySyncHelper_ViewModel; // 0x2C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean get_Select()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_GET_SELECT_OFFSET))(this);
+		}
+
+		::System::Void set_Select(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_SET_SELECT_OFFSET))(this, value);
+		}
+
+		::System::Void BuildDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_BUILDDATABINDING_OFFSET))(this);
+		}
+
+		::System::Void BuildViewModelDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET))(this);
+		}
+
+		::System::Void CreateSubWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_CREATESUBWIDGET_OFFSET))(this);
+		}
+
+		::System::Void BindButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER_BINDBUTTON_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__11_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__11_0_OFFSET))(this);
+		}
+
+		::System::Void __base_InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERMAINTABWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

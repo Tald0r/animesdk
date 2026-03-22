@@ -1,0 +1,26 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/RaycastHit.h"
+
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_RAYCASTHITCOMPARE_COMPARE_OFFSET UNITYSDK_OFFSET(0xD1A34F0)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_RAYCASTHITCOMPARE__CTOR_OFFSET UNITYSDK_OFFSET(0xD1A3600)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int SummerEventDroneSubsystem_RaycastHitCompare_TypeDefinitionIndex = 63650;
+
+	class SummerEventDroneSubsystem_RaycastHitCompare : public ::System::Object
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_RAYCASTHITCOMPARE__CTOR_OFFSET))(this);
+		}
+
+		::System::Int32 Compare(::UnityEngine::RaycastHit x, ::UnityEngine::RaycastHit y)
+		{
+			return ((::System::Int32(*)(::PVOID, ::UnityEngine::RaycastHit, ::UnityEngine::RaycastHit))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_RAYCASTHITCOMPARE_COMPARE_OFFSET))(this, x, y);
+		}
+	};
+}

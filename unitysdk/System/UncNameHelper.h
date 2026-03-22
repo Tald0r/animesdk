@@ -4,16 +4,24 @@
 
 namespace System { class String; }
 
-#define SYSTEM_UNCNAMEHELPER_ISVALID_OFFSET UNITYSDK_OFFSET(0x17F4C500)
-#define SYSTEM_UNCNAMEHELPER_PARSECANONICALNAME_OFFSET UNITYSDK_OFFSET(0x17F4C4F0)
+#define SYSTEM_UNCNAMEHELPER_ISVALID_OFFSET UNITYSDK_OFFSET(0x18251590)
+#define SYSTEM_UNCNAMEHELPER_PARSECANONICALNAME_OFFSET UNITYSDK_OFFSET(0x18251580)
+#define SYSTEM_UNCNAMEHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x18251570)
 
 namespace System
 {
-	inline static constexpr unsigned int UncNameHelper_TypeDefinitionIndex = 2466;
+	inline static constexpr unsigned int UncNameHelper_TypeDefinitionIndex = 2694;
 
 	class UncNameHelper : public ::System::Object
 	{
 	public:
+		// static const ::System::Int32 MaximumInternetNameLength = 0x100; // 0x0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_UNCNAMEHELPER__CTOR_OFFSET))(this);
+		}
+
 		static ::System::String* ParseCanonicalName(::System::String* str, ::System::Int32 start, ::System::Int32 end, ::System::Boolean& loopback)
 		{
 			return ((::System::String*(*)(::System::String*, ::System::Int32, ::System::Int32, ::System::Boolean&))((::PBYTE)hIl2Cpp + SYSTEM_UNCNAMEHELPER_PARSECANONICALNAME_OFFSET))(str, start, end, loopback);

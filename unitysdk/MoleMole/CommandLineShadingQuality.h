@@ -1,0 +1,37 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/CommandLineSettingBase_2.h"
+#include "unitysdk/System/Nullable_1.h"
+#include "unitysdk/UnityEngine/NAPRenderPipeline0/NAPShaderQuality.h"
+
+namespace MoleMole { class ShadingQualityProfileContext; }
+
+#define MOLEMOLE_COMMANDLINESHADINGQUALITY_METHOD_2_01E1005A437FAB49_OFFSET UNITYSDK_OFFSET(0x6D3D5E0)
+#define MOLEMOLE_COMMANDLINESHADINGQUALITY_METHOD_2_B7E02E99FEE97A03_OFFSET UNITYSDK_OFFSET(0x6D3D720)
+#define MOLEMOLE_COMMANDLINESHADINGQUALITY__CTOR_OFFSET UNITYSDK_OFFSET(0x6D3D6E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int CommandLineShadingQuality_TypeDefinitionIndex = 51837;
+
+	class CommandLineShadingQuality : public ::MoleMole::CommandLineSettingBase_2<::MoleMole::ShadingQualityProfileContext*, ::MoleMole::CommandLineShadingQuality*>
+	{
+	public:
+		::System::Nullable_1<::UnityEngine::NAPRenderPipeline0::NAPShaderQuality> Quality; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_COMMANDLINESHADINGQUALITY__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::CommandLineShadingQuality* Method_2_01E1005A437FAB49(::MoleMole::ShadingQualityProfileContext* a1)
+		{
+			return ((::MoleMole::CommandLineShadingQuality*(*)(::PVOID, ::MoleMole::ShadingQualityProfileContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_COMMANDLINESHADINGQUALITY_METHOD_2_01E1005A437FAB49_OFFSET))(this, a1);
+		}
+
+		::MoleMole::ShadingQualityProfileContext* Method_2_B7E02E99FEE97A03(::MoleMole::ShadingQualityProfileContext* a1)
+		{
+			return ((::MoleMole::ShadingQualityProfileContext*(*)(::PVOID, ::MoleMole::ShadingQualityProfileContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_COMMANDLINESHADINGQUALITY_METHOD_2_B7E02E99FEE97A03_OFFSET))(this, a1);
+		}
+	};
+}

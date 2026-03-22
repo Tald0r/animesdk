@@ -1,10 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_65D7BE12F72F5758.h"
+#include "unitysdk/UnityEngine/Vector2.h"
 
-namespace RPG::GameCore { class AvatarEnergyBarState; }
+namespace UnityEngine { class AnimationCurve; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_402_TypeDefinitionIndex = 44706;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_402_TypeDefinitionIndex = 51339;
 
 class Class_0_16E4307DCC419505_402
 {

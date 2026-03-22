@@ -1,0 +1,124 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIHollowMiniGameDiscretePlayerMoveChildWindowController.h"
+
+class Class_2_AF1529468061B28B;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_GET_DIRNORMALANIMNAME_OFFSET UNITYSDK_OFFSET(0x68E5D00)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_GET_DIRPRESSEDANIMNAME_OFFSET UNITYSDK_OFFSET(0x68E5D60)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_INITHOLLOWVIEWCONTROL_OFFSET UNITYSDK_OFFSET(0x68E5E60)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_INITVIEWCONTROL_OFFSET UNITYSDK_OFFSET(0x68E5DC0)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x68E5B90)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x68E5C30)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x68E5A70)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x68E5AE0)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0x68E5F10)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x68E5F00)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_INITHOLLOWVIEWCONTROL_OFFSET UNITYSDK_OFFSET(0x68E5F60)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_INITVIEWCONTROL_OFFSET UNITYSDK_OFFSET(0x68E5F70)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x68E5F80)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x68E5FF0)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x68E6060)
+#define MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x68E6070)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPushBoxPlayerMoveChildWindowController_TypeDefinitionIndex = 77394;
+
+	class UIPushBoxPlayerMoveChildWindowController : public ::MoleMole::UIHollowMiniGameDiscretePlayerMoveChildWindowController
+	{
+	public:
+		static ::System::String** StaticGet_DIR_NORMAL_ANIM_NAME()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIPushBoxPlayerMoveChildWindowController_TypeDefinitionIndex)->GetStaticField(0x34D00);
+		}
+		static ::System::String** StaticGet_DIR_PRESSED_ANIM_NAME()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIPushBoxPlayerMoveChildWindowController_TypeDefinitionIndex)->GetStaticField(0x34D08);
+		}
+		::Class_2_AF1529468061B28B* _view; // 0x3D0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::String* get_DirNormalAnimName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_GET_DIRNORMALANIMNAME_OFFSET))(this);
+		}
+
+		::System::String* get_DirPressedAnimName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_GET_DIRPRESSEDANIMNAME_OFFSET))(this);
+		}
+
+		::System::Void InitViewControl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_INITVIEWCONTROL_OFFSET))(this);
+		}
+
+		::System::Void InitHollowViewControl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER_INITHOLLOWVIEWCONTROL_OFFSET))(this);
+		}
+
+		::System::Void __base_InitHollowViewControl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_INITHOLLOWVIEWCONTROL_OFFSET))(this);
+		}
+
+		::System::Void __base_InitViewControl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_INITVIEWCONTROL_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

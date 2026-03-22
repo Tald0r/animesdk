@@ -1,0 +1,48 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_3_F39AA09F6254945B.h"
+
+class Class_2_777A5D016ADC7368;
+namespace MoleMole { class UIControlCollection; }
+namespace MoleMole { class UIGeneralButtonController; }
+namespace System { class String; }
+
+#define CLASS_3_1045F1C51DB3FD1B_CLASS_4_4BF75E9380488D9A_METHOD_4_082DE155818A77D8_OFFSET UNITYSDK_OFFSET(0xEE75340)
+#define CLASS_3_1045F1C51DB3FD1B_CLASS_4_4BF75E9380488D9A_METHOD_4_0865E94460F11643_OFFSET UNITYSDK_OFFSET(0xEE751C0)
+#define CLASS_3_1045F1C51DB3FD1B_CLASS_4_4BF75E9380488D9A_METHOD_4_4F75C9B796DF2E67_OFFSET UNITYSDK_OFFSET(0xEE75330)
+#define CLASS_3_1045F1C51DB3FD1B_CLASS_4_4BF75E9380488D9A_METHOD_4_929BD2659F9FA6CA_OFFSET UNITYSDK_OFFSET(0xEE75100)
+#define CLASS_3_1045F1C51DB3FD1B_CLASS_4_4BF75E9380488D9A__CTOR_OFFSET UNITYSDK_OFFSET(0xEE752B0)
+
+inline static constexpr unsigned int Class_3_1045F1C51DB3FD1B_Class_4_4BF75E9380488D9A_TypeDefinitionIndex = 63832;
+
+class Class_3_1045F1C51DB3FD1B_Class_4_4BF75E9380488D9A : public ::Class_3_F39AA09F6254945B
+{
+public:
+	// static const ::System::String* Field_4_0; // 0x0
+	::MoleMole::UIGeneralButtonController* Field_4_1; // 0x28
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_CLASS_4_4BF75E9380488D9A__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_4_929BD2659F9FA6CA(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_CLASS_4_4BF75E9380488D9A_METHOD_4_929BD2659F9FA6CA_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_4_4F75C9B796DF2E67(::MoleMole::UIGeneralButtonController* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UIGeneralButtonController*))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_CLASS_4_4BF75E9380488D9A_METHOD_4_4F75C9B796DF2E67_OFFSET))(this, a1);
+	}
+
+	::MoleMole::UIGeneralButtonController* Method_4_082DE155818A77D8()
+	{
+		return ((::MoleMole::UIGeneralButtonController*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_CLASS_4_4BF75E9380488D9A_METHOD_4_082DE155818A77D8_OFFSET))(this);
+	}
+
+	::System::Void Method_4_0865E94460F11643()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_CLASS_4_4BF75E9380488D9A_METHOD_4_0865E94460F11643_OFFSET))(this);
+	}
+};

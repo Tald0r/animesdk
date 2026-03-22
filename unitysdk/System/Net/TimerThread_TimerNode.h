@@ -6,30 +6,43 @@
 namespace System { class Object; }
 namespace System::Net { class TimerThread_Callback; }
 
-#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_CANCEL_OFFSET UNITYSDK_OFFSET(0x17F05A40)
-#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_GET_NEXT_OFFSET UNITYSDK_OFFSET(0x17F05C10)
-#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_GET_PREV_OFFSET UNITYSDK_OFFSET(0x17F05C30)
-#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_SET_NEXT_OFFSET UNITYSDK_OFFSET(0x17F05C20)
-#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_SET_PREV_OFFSET UNITYSDK_OFFSET(0x17F05C40)
-#define SYSTEM_NET_TIMERTHREAD_TIMERNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x17F05BB0)
+#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_CANCEL_OFFSET UNITYSDK_OFFSET(0x18E43F60)
+#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_FIRE_OFFSET UNITYSDK_OFFSET(0x18E440C0)
+#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_GET_HASEXPIRED_OFFSET UNITYSDK_OFFSET(0x18E43F10)
+#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_GET_NEXT_OFFSET UNITYSDK_OFFSET(0x18E43F20)
+#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_GET_PREV_OFFSET UNITYSDK_OFFSET(0x18E43F40)
+#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_SET_NEXT_OFFSET UNITYSDK_OFFSET(0x18E43F30)
+#define SYSTEM_NET_TIMERTHREAD_TIMERNODE_SET_PREV_OFFSET UNITYSDK_OFFSET(0x18E43F50)
+#define SYSTEM_NET_TIMERTHREAD_TIMERNODE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18E43EB0)
+#define SYSTEM_NET_TIMERTHREAD_TIMERNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x18E43E30)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int TimerThread_TimerNode_TypeDefinitionIndex = 2770;
+	inline static constexpr unsigned int TimerThread_TimerNode_TypeDefinitionIndex = 3402;
 
 	class TimerThread_TimerNode : public ::System::Net::TimerThread_Timer
 	{
 	public:
-		::System::Net::TimerThread_TimerNode* prev; // 0x18
-		::System::Net::TimerThread_TimerNode* next; // 0x20
-		::System::Object* m_Context; // 0x28
-		::System::Object* m_QueueLock; // 0x30
-		::System::Net::TimerThread_Callback* m_Callback; // 0x38
+		::System::Object* m_Context; // 0x18
+		::System::Net::TimerThread_Callback* m_Callback; // 0x20
+		::System::Net::TimerThread_TimerNode* prev; // 0x28
+		::System::Net::TimerThread_TimerNode* next; // 0x30
+		::System::Object* m_QueueLock; // 0x38
 		::System::Net::TimerThread_TimerNode_TimerState m_TimerState; // 0x40
 
-		::System::Void _ctor()
+		::System::Void _ctor(::System::Net::TimerThread_Callback* callback, ::System::Object* context, ::System::Int32 durationMilliseconds, ::System::Object* queueLock)
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_TIMERNODE__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Net::TimerThread_Callback*, ::System::Object*, ::System::Int32, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_TIMERNODE__CTOR_OFFSET))(this, callback, context, durationMilliseconds, queueLock);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_TIMERNODE__CTOR_1_OFFSET))(this);
+		}
+
+		::System::Boolean get_HasExpired()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_TIMERNODE_GET_HASEXPIRED_OFFSET))(this);
 		}
 
 		::System::Net::TimerThread_TimerNode* get_Next()
@@ -55,6 +68,11 @@ namespace System::Net
 		::System::Boolean Cancel()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_TIMERNODE_CANCEL_OFFSET))(this);
+		}
+
+		::System::Boolean Fire()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_TIMERTHREAD_TIMERNODE_FIRE_OFFSET))(this);
 		}
 	};
 }

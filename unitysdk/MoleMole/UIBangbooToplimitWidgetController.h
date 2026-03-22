@@ -1,0 +1,204 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/BangbooBaseWidget.h"
+
+class Class_2_5FE47F3D2BA6E8D1;
+class Class_2_79F6D62CE30E3F8E_44;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralConversionTipsPopWindowContext; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_GETCOMSUMEITEMID_OFFSET UNITYSDK_OFFSET(0xDC5F400)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_GETLEFTBTNTEXT_OFFSET UNITYSDK_OFFSET(0xDC5E730)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_GETRIGHTBTNTEXT_OFFSET UNITYSDK_OFFSET(0xDC5EFF0)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONBUDDYRANK_OFFSET UNITYSDK_OFFSET(0xDC5EB00)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xDC5C110)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xDC5C8C0)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONITEMCHANGED_OFFSET UNITYSDK_OFFSET(0xDC5EF80)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xDC5C540)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONSTARPROGRESSANIFINISH_OFFSET UNITYSDK_OFFSET(0xDC5EE90)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xDC5C1B0)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xDC5BFD0)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_REFRESHSKIN_OFFSET UNITYSDK_OFFSET(0xDC5CC40)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_RIGHTBTNCALL_OFFSET UNITYSDK_OFFSET(0xDC5E7A0)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_SETATTRIBUTE_OFFSET UNITYSDK_OFFSET(0xDC5E620)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_SETCONSUME_OFFSET UNITYSDK_OFFSET(0xDC5CE10)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_UPDATELEVELINFO_OFFSET UNITYSDK_OFFSET(0xDC5F100)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_UPDATEUI_OFFSET UNITYSDK_OFFSET(0xDC5CBD0)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xDC5F470)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER__ONSTARPROGRESSANIFINISH_B__18_0_OFFSET UNITYSDK_OFFSET(0xDC5F560)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_GETLEFTBTNTEXT_OFFSET UNITYSDK_OFFSET(0xDC5F640)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_GETRIGHTBTNTEXT_OFFSET UNITYSDK_OFFSET(0xDC5F6B0)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xDC5F720)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0xDC5F790)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xDC5F7A0)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xDC5F810)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xDC5F890)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_RIGHTBTNCALL_OFFSET UNITYSDK_OFFSET(0xDC5F8F0)
+#define MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_UPDATEUI_OFFSET UNITYSDK_OFFSET(0xDC5F950)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBangbooToplimitWidgetController_TypeDefinitionIndex = 52670;
+
+	class UIBangbooToplimitWidgetController : public ::MoleMole::BangbooBaseWidget
+	{
+	public:
+		::Class_2_5FE47F3D2BA6E8D1* _view; // 0x2C0
+		::System::Boolean isJumpToCompose; // 0x2C8
+		::System::Int32 jumpToItemID; // 0x2CC
+		::System::Int32 jumpTabIndex; // 0x2D0
+		::System::Int32 composeNeedCount; // 0x2D4
+		::System::Boolean isSuggestUseMaterialConversion; // 0x2D8
+		::MoleMole::UIGeneralConversionTipsPopWindowContext* conversionContext; // 0x2E0
+		::System::Boolean isbreaking; // 0x2E8
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnWidgetController*>* _expMatItems; // 0x2F0
+		::Class_2_79F6D62CE30E3F8E_44* _ParentView; // 0x2F8
+		::System::Boolean _registed; // 0x300
+		::System::Int32 _consumeItemID; // 0x304
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void UpdateUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_UPDATEUI_OFFSET))(this);
+		}
+
+		::System::Void RefreshSkin(::System::Single refreshLevelDelay)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_REFRESHSKIN_OFFSET))(this, refreshLevelDelay);
+		}
+
+		::System::String* GetLeftBtnText()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_GETLEFTBTNTEXT_OFFSET))(this);
+		}
+
+		::System::Void RightBtnCall()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_RIGHTBTNCALL_OFFSET))(this);
+		}
+
+		::System::Void OnBuddyRank(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONBUDDYRANK_OFFSET))(this, args);
+		}
+
+		::System::Void OnStarProgressAniFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONSTARPROGRESSANIFINISH_OFFSET))(this);
+		}
+
+		::System::Void OnItemChanged(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_ONITEMCHANGED_OFFSET))(this, args);
+		}
+
+		::System::String* GetRightBtnText()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_GETRIGHTBTNTEXT_OFFSET))(this);
+		}
+
+		::System::Void UpdateLevelInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_UPDATELEVELINFO_OFFSET))(this);
+		}
+
+		::System::Void SetAttribute()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_SETATTRIBUTE_OFFSET))(this);
+		}
+
+		::System::Void SetConsume()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_SETCONSUME_OFFSET))(this);
+		}
+
+		::System::Int32 GetComsumeItemID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER_GETCOMSUMEITEMID_OFFSET))(this);
+		}
+
+		::System::Void _OnStarProgressAniFinish_b__18_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER__ONSTARPROGRESSANIFINISH_B__18_0_OFFSET))(this);
+		}
+
+		::System::String* __base_GetLeftBtnText()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_GETLEFTBTNTEXT_OFFSET))(this);
+		}
+
+		::System::String* __base_GetRightBtnText()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_GETRIGHTBTNTEXT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_RightBtnCall()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_RIGHTBTNCALL_OFFSET))(this);
+		}
+
+		::System::Void __base_UpdateUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOTOPLIMITWIDGETCONTROLLER___BASE_UPDATEUI_OFFSET))(this);
+		}
+	};
+}

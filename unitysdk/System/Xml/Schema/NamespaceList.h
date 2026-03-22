@@ -8,18 +8,22 @@ namespace System::Collections { class Hashtable; }
 namespace System::Collections { class ICollection; }
 namespace System::Xml { class XmlQualifiedName; }
 
-#define SYSTEM_XML_SCHEMA_NAMESPACELIST_ALLOWS_1_OFFSET UNITYSDK_OFFSET(0x17D72430)
-#define SYSTEM_XML_SCHEMA_NAMESPACELIST_ALLOWS_OFFSET UNITYSDK_OFFSET(0x17D723A0)
-#define SYSTEM_XML_SCHEMA_NAMESPACELIST_GET_ENUMERATE_OFFSET UNITYSDK_OFFSET(0x17D72320)
-#define SYSTEM_XML_SCHEMA_NAMESPACELIST_GET_EXCLUDED_OFFSET UNITYSDK_OFFSET(0x17D72310)
-#define SYSTEM_XML_SCHEMA_NAMESPACELIST_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x17D72300)
-#define SYSTEM_XML_SCHEMA_NAMESPACELIST_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17D72460)
-#define SYSTEM_XML_SCHEMA_NAMESPACELIST__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17D71F90)
-#define SYSTEM_XML_SCHEMA_NAMESPACELIST__CTOR_OFFSET UNITYSDK_OFFSET(0x17D71F80)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST_ALLOWS_1_OFFSET UNITYSDK_OFFSET(0x19108A20)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST_ALLOWS_OFFSET UNITYSDK_OFFSET(0x19108990)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST_CLONE_OFFSET UNITYSDK_OFFSET(0x191087A0)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST_COMPARESETTOOTHER_OFFSET UNITYSDK_OFFSET(0x19109990)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST_GET_ENUMERATE_OFFSET UNITYSDK_OFFSET(0x19108910)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST_INTERSECTION_OFFSET UNITYSDK_OFFSET(0x19109AB0)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST_ISSUBSET_OFFSET UNITYSDK_OFFSET(0x19108F50)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST_REMOVENAMESPACE_OFFSET UNITYSDK_OFFSET(0x1910A1B0)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST_TOSTRING_OFFSET UNITYSDK_OFFSET(0x19108A50)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST_UNION_OFFSET UNITYSDK_OFFSET(0x19109390)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19108430)
+#define SYSTEM_XML_SCHEMA_NAMESPACELIST__CTOR_OFFSET UNITYSDK_OFFSET(0x19108420)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int NamespaceList_TypeDefinitionIndex = 2150;
+	inline static constexpr unsigned int NamespaceList_TypeDefinitionIndex = 2070;
 
 	class NamespaceList : public ::System::Object
 	{
@@ -38,14 +42,9 @@ namespace System::Xml::Schema
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_NAMESPACELIST__CTOR_1_OFFSET))(this, namespaces, targetNamespace);
 		}
 
-		::System::Xml::Schema::NamespaceList_ListType get_Type()
+		::System::Xml::Schema::NamespaceList* Clone()
 		{
-			return ((::System::Xml::Schema::NamespaceList_ListType(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_NAMESPACELIST_GET_TYPE_OFFSET))(this);
-		}
-
-		::System::String* get_Excluded()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_NAMESPACELIST_GET_EXCLUDED_OFFSET))(this);
+			return ((::System::Xml::Schema::NamespaceList*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_NAMESPACELIST_CLONE_OFFSET))(this);
 		}
 
 		::System::Collections::ICollection* get_Enumerate()
@@ -66,6 +65,31 @@ namespace System::Xml::Schema
 		::System::String* ToString()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_NAMESPACELIST_TOSTRING_OFFSET))(this);
+		}
+
+		static ::System::Boolean IsSubset(::System::Xml::Schema::NamespaceList* sub, ::System::Xml::Schema::NamespaceList* super)
+		{
+			return ((::System::Boolean(*)(::System::Xml::Schema::NamespaceList*, ::System::Xml::Schema::NamespaceList*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_NAMESPACELIST_ISSUBSET_OFFSET))(sub, super);
+		}
+
+		static ::System::Xml::Schema::NamespaceList* Union(::System::Xml::Schema::NamespaceList* o1, ::System::Xml::Schema::NamespaceList* o2, ::System::Boolean v1Compat)
+		{
+			return ((::System::Xml::Schema::NamespaceList*(*)(::System::Xml::Schema::NamespaceList*, ::System::Xml::Schema::NamespaceList*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_NAMESPACELIST_UNION_OFFSET))(o1, o2, v1Compat);
+		}
+
+		::System::Xml::Schema::NamespaceList* CompareSetToOther(::System::Xml::Schema::NamespaceList* other)
+		{
+			return ((::System::Xml::Schema::NamespaceList*(*)(::PVOID, ::System::Xml::Schema::NamespaceList*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_NAMESPACELIST_COMPARESETTOOTHER_OFFSET))(this, other);
+		}
+
+		static ::System::Xml::Schema::NamespaceList* Intersection(::System::Xml::Schema::NamespaceList* o1, ::System::Xml::Schema::NamespaceList* o2, ::System::Boolean v1Compat)
+		{
+			return ((::System::Xml::Schema::NamespaceList*(*)(::System::Xml::Schema::NamespaceList*, ::System::Xml::Schema::NamespaceList*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_NAMESPACELIST_INTERSECTION_OFFSET))(o1, o2, v1Compat);
+		}
+
+		::System::Void RemoveNamespace(::System::String* tns)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_NAMESPACELIST_REMOVENAMESPACE_OFFSET))(this, tns);
 		}
 	};
 }

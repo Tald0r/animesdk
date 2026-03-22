@@ -6,30 +6,55 @@
 #include "unitysdk/UnityEngine/Playables/PlayableGraph.h"
 #include "unitysdk/UnityEngine/Playables/ScriptPlayable_1.h"
 
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x18190030)
-#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_GET_PREFABINSTANCE_OFFSET UNITYSDK_OFFSET(0x18198A80)
-#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x18198790)
-#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_ONBEHAVIOURPAUSE_OFFSET UNITYSDK_OFFSET(0x18198E00)
-#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x18198DE0)
-#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0x18198D90)
-#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_SETHIDEFLAGSRECURSIVE_OFFSET UNITYSDK_OFFSET(0x18198A90)
-#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x18198E30)
+#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_CLEANUPCACHE_OFFSET UNITYSDK_OFFSET(0x1AC96830)
+#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x1AC961E0)
+#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_GET_PREFABINSTANCE_OFFSET UNITYSDK_OFFSET(0x1AC96820)
+#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1AC963B0)
+#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_ONBEHAVIOURPAUSE_OFFSET UNITYSDK_OFFSET(0x1AC96EE0)
+#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x1AC96E50)
+#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0x1AC96B50)
+#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_SETHIDEFLAGSRECURSIVE_OFFSET UNITYSDK_OFFSET(0x1AC96AD0)
+#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AC96F90)
+#define UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC96F80)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int PrefabControlPlayable_TypeDefinitionIndex = 29016;
+	inline static constexpr unsigned int PrefabControlPlayable_TypeDefinitionIndex = 29365;
 
 	class PrefabControlPlayable : public ::UnityEngine::Playables::PlayableBehaviour
 	{
 	public:
+		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::GameObject*>** StaticGet_s_PrefabInstanceCache()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(PrefabControlPlayable_TypeDefinitionIndex)->GetStaticField(0x22A80);
+		}
+		static ::System::Collections::Generic::HashSet_1<::UnityEngine::GameObject*>** StaticGet_InUsePrefabInstanceSet()
+		{
+			return (::System::Collections::Generic::HashSet_1<::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(PrefabControlPlayable_TypeDefinitionIndex)->GetStaticField(0x22A88);
+		}
+		static ::System::Int32* StaticGet_m_PrefabKey()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(PrefabControlPlayable_TypeDefinitionIndex)->GetStaticField(0x76A0);
+		}
+		static ::System::Boolean* StaticGet_UsePrefabCache()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(PrefabControlPlayable_TypeDefinitionIndex)->GetStaticField(0x76A4);
+		}
 		::UnityEngine::GameObject* m_Instance; // 0x10
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE__CCTOR_OFFSET))();
 		}
 
 		static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::PrefabControlPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* prefabGameObject, ::UnityEngine::Transform* parentTransform)
@@ -40,6 +65,11 @@ namespace UnityEngine::Timeline
 		::UnityEngine::GameObject* get_prefabInstance()
 		{
 			return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_GET_PREFABINSTANCE_OFFSET))(this);
+		}
+
+		static ::System::Void CleanupCache()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PREFABCONTROLPLAYABLE_CLEANUPCACHE_OFFSET))();
 		}
 
 		::UnityEngine::GameObject* Initialize(::UnityEngine::GameObject* prefabGameObject, ::UnityEngine::Transform* parentTransform)

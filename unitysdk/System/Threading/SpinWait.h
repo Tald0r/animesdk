@@ -2,23 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define SYSTEM_THREADING_SPINWAIT_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x59D0)
-#define SYSTEM_THREADING_SPINWAIT_GET_NEXTSPINWILLYIELD_OFFSET UNITYSDK_OFFSET(0x1FFFCA0)
-#define SYSTEM_THREADING_SPINWAIT_RESET_OFFSET UNITYSDK_OFFSET(0x1491B10)
-#define SYSTEM_THREADING_SPINWAIT_SPINONCE_OFFSET UNITYSDK_OFFSET(0x1FFFD30)
+namespace System { template <typename T> class Func_1; }
+
+#define SYSTEM_THREADING_SPINWAIT_GET_NEXTSPINWILLYIELD_OFFSET UNITYSDK_OFFSET(0x87D530)
+#define SYSTEM_THREADING_SPINWAIT_RESET_OFFSET UNITYSDK_OFFSET(0x7A2900)
+#define SYSTEM_THREADING_SPINWAIT_SPINONCE_OFFSET UNITYSDK_OFFSET(0x87D5C0)
+#define SYSTEM_THREADING_SPINWAIT_SPINUNTIL_OFFSET UNITYSDK_OFFSET(0x192C7900)
 
 namespace System::Threading
 {
-	inline static constexpr unsigned int SpinWait_TypeDefinitionIndex = 808;
+	inline static constexpr unsigned int SpinWait_TypeDefinitionIndex = 799;
 
 	struct alignas(4) SpinWait
 	{
 		::System::Int32 m_count; // 0x10
-
-		::System::Int32 get_Count()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_SPINWAIT_GET_COUNT_OFFSET))(this);
-		}
 
 		::System::Boolean get_NextSpinWillYield()
 		{
@@ -33,6 +30,11 @@ namespace System::Threading
 		::System::Void Reset()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_SPINWAIT_RESET_OFFSET))(this);
+		}
+
+		static ::System::Boolean SpinUntil(::System::Func_1<::System::Boolean>* condition, ::System::Int32 millisecondsTimeout)
+		{
+			return ((::System::Boolean(*)(::System::Func_1<::System::Boolean>*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_SPINWAIT_SPINUNTIL_OFFSET))(condition, millisecondsTimeout);
 		}
 	};
 }

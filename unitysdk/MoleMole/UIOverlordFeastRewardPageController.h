@@ -1,0 +1,108 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_B1555FA59A3F87CE;
+class Class_2_C1F3D2B433A06B93;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIOverlordFeastLevelWidgetController; }
+
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xAC1B920)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xAC1BA40)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAC1B930)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAC1C5F0)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAC1B9D0)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAC1BD40)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xAC1BE00)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_TAKEALLREWARDS_OFFSET UNITYSDK_OFFSET(0xAC1C680)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAC1CAB0)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER__TAKEALLREWARDS_B__9_0_OFFSET UNITYSDK_OFFSET(0xAC1CAC0)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAC1CAF0)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAC1CB60)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAC1CB70)
+#define MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAC1CB80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIOverlordFeastRewardPageController_TypeDefinitionIndex = 57608;
+
+	class UIOverlordFeastRewardPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_C1F3D2B433A06B93* _view; // 0x2F8
+		::Class_2_B1555FA59A3F87CE* _overlordFeastModel; // 0x300
+		::MoleMole::UIOverlordFeastLevelWidgetController* _levelIconWidget; // 0x308
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void TakeAllRewards()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER_TAKEALLREWARDS_OFFSET))(this);
+		}
+
+		::System::Void _TakeAllRewards_b__9_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER__TAKEALLREWARDS_B__9_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTREWARDPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

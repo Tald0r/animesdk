@@ -8,20 +8,20 @@ namespace MiHoYo::SDK { class UGCInterface_UgcResponseModel; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x825AB20)
-#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__HTTPGETCARRYTOKEN_B__0_OFFSET UNITYSDK_OFFSET(0x825F5E0)
-#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__HTTPGETCARRYTOKEN_B__1_OFFSET UNITYSDK_OFFSET(0x825F660)
+#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18F42840)
+#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__HTTPGETCARRYTOKEN_B__0_OFFSET UNITYSDK_OFFSET(0x18F42850)
+#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__HTTPGETCARRYTOKEN_B__1_OFFSET UNITYSDK_OFFSET(0x18F428E0)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int UGCInterface___c__DisplayClass11_0_TypeDefinitionIndex = 36262;
+	inline static constexpr unsigned int UGCInterface___c__DisplayClass11_0_TypeDefinitionIndex = 33748;
 
 	class UGCInterface___c__DisplayClass11_0 : public ::System::Object
 	{
 	public:
-		::System::Action_1<::MiHoYo::SDK::UGCInterface_UgcResponseModel*>* callback; // 0x10
+		::MiHoYo::SDK::UGCInterface* __4__this; // 0x10
 		::System::String* strTaskId; // 0x18
-		::MiHoYo::SDK::UGCInterface* __4__this; // 0x20
+		::System::Action_1<::MiHoYo::SDK::UGCInterface_UgcResponseModel*>* callback; // 0x20
 		::System::Action_1<::MiHoYo::SDK::UGCInterface_UgcResponseModel*>* tokenFailedCallback; // 0x28
 
 		::System::Void _ctor()

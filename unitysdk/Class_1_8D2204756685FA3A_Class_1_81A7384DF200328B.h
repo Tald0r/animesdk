@@ -1,0 +1,36 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UI/FlowerShop/ESlotType.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_8D2204756685FA3A;
+class Class_2_AB9601BC4707463D;
+
+#define CLASS_1_8D2204756685FA3A_CLASS_1_81A7384DF200328B_METHOD_1_5790A55946AA509D_OFFSET UNITYSDK_OFFSET(0x8759F60)
+#define CLASS_1_8D2204756685FA3A_CLASS_1_81A7384DF200328B_METHOD_1_601EF3E7226D7DC2_OFFSET UNITYSDK_OFFSET(0x8759CE0)
+#define CLASS_1_8D2204756685FA3A_CLASS_1_81A7384DF200328B__CTOR_OFFSET UNITYSDK_OFFSET(0x8759CD0)
+
+inline static constexpr unsigned int Class_1_8D2204756685FA3A_Class_1_81A7384DF200328B_TypeDefinitionIndex = 68522;
+
+class Class_1_8D2204756685FA3A_Class_1_81A7384DF200328B : public ::System::Object
+{
+public:
+	::Class_1_8D2204756685FA3A* Field_1_2; // 0x10
+	::Class_2_AB9601BC4707463D* Field_1_1; // 0x18
+	::MoleMole::UI::FlowerShop::ESlotType Field_1_0; // 0x20
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_CLASS_1_81A7384DF200328B__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_601EF3E7226D7DC2()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_CLASS_1_81A7384DF200328B_METHOD_1_601EF3E7226D7DC2_OFFSET))(this);
+	}
+
+	::System::Void Method_1_5790A55946AA509D()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_8D2204756685FA3A_CLASS_1_81A7384DF200328B_METHOD_1_5790A55946AA509D_OFFSET))(this);
+	}
+};

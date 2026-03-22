@@ -15,66 +15,94 @@ namespace System::Net { class AuthenticationSchemeSelector; }
 namespace System::Net { class HttpConnection; }
 namespace System::Net { class HttpListenerContext; }
 namespace System::Net { class HttpListenerPrefixCollection; }
+namespace System::Net { class HttpListenerTimeoutManager; }
+namespace System::Net { class HttpListener_ExtendedProtectionSelector; }
 namespace System::Net { class IPAddress; }
 namespace System::Net { class ServiceNameStore; }
 namespace System::Net::Security { class RemoteCertificateValidationCallback; }
 namespace System::Net::Security { class SslStream; }
 namespace System::Security::Authentication::ExtendedProtection { class ExtendedProtectionPolicy; }
+namespace System::Security::Authentication::ExtendedProtection { class ServiceNameCollection; }
 namespace System::Security::Cryptography::X509Certificates { class X509Certificate; }
+namespace System::Threading::Tasks { template <typename T> class Task_1; }
 
-#define SYSTEM_NET_HTTPLISTENER_ADDCONNECTION_OFFSET UNITYSDK_OFFSET(0x17ECBFE0)
-#define SYSTEM_NET_HTTPLISTENER_BEGINGETCONTEXT_OFFSET UNITYSDK_OFFSET(0x17ECFEF0)
-#define SYSTEM_NET_HTTPLISTENER_CHECKDISPOSED_OFFSET UNITYSDK_OFFSET(0x17ECEEE0)
-#define SYSTEM_NET_HTTPLISTENER_CLEANUP_OFFSET UNITYSDK_OFFSET(0x17ECF060)
-#define SYSTEM_NET_HTTPLISTENER_CLOSE_1_OFFSET UNITYSDK_OFFSET(0x17ECF000)
-#define SYSTEM_NET_HTTPLISTENER_CLOSE_OFFSET UNITYSDK_OFFSET(0x17ECEF80)
-#define SYSTEM_NET_HTTPLISTENER_CREATESSLSTREAM_OFFSET UNITYSDK_OFFSET(0x17EC9EA0)
-#define SYSTEM_NET_HTTPLISTENER_ENDGETCONTEXT_OFFSET UNITYSDK_OFFSET(0x17ED0BC0)
-#define SYSTEM_NET_HTTPLISTENER_GETCONTEXTFROMQUEUE_OFFSET UNITYSDK_OFFSET(0x17ED0290)
-#define SYSTEM_NET_HTTPLISTENER_GET_AUTHENTICATIONSCHEMESELECTORDELEGATE_OFFSET UNITYSDK_OFFSET(0x17ECEEB0)
-#define SYSTEM_NET_HTTPLISTENER_GET_AUTHENTICATIONSCHEMES_OFFSET UNITYSDK_OFFSET(0x17ECEEA0)
-#define SYSTEM_NET_HTTPLISTENER_GET_IGNOREWRITEEXCEPTIONS_OFFSET UNITYSDK_OFFSET(0x17ECEEC0)
-#define SYSTEM_NET_HTTPLISTENER_GET_ISLISTENING_OFFSET UNITYSDK_OFFSET(0x17ECEED0)
-#define SYSTEM_NET_HTTPLISTENER_GET_PREFIXES_OFFSET UNITYSDK_OFFSET(0x17EB89F0)
-#define SYSTEM_NET_HTTPLISTENER_GET_REALM_OFFSET UNITYSDK_OFFSET(0x17ECEF70)
-#define SYSTEM_NET_HTTPLISTENER_LOADCERTIFICATEANDKEY_OFFSET UNITYSDK_OFFSET(0x17EB4E90)
-#define SYSTEM_NET_HTTPLISTENER_REGISTERCONTEXT_OFFSET UNITYSDK_OFFSET(0x17ECC010)
-#define SYSTEM_NET_HTTPLISTENER_REMOVECONNECTION_OFFSET UNITYSDK_OFFSET(0x17ECC450)
-#define SYSTEM_NET_HTTPLISTENER_SELECTAUTHENTICATIONSCHEME_OFFSET UNITYSDK_OFFSET(0x17ED1120)
-#define SYSTEM_NET_HTTPLISTENER_START_OFFSET UNITYSDK_OFFSET(0x17ED12A0)
-#define SYSTEM_NET_HTTPLISTENER_STOP_OFFSET UNITYSDK_OFFSET(0x17ED1310)
-#define SYSTEM_NET_HTTPLISTENER_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17ED1380)
-#define SYSTEM_NET_HTTPLISTENER_UNREGISTERCONTEXT_OFFSET UNITYSDK_OFFSET(0x17EB64D0)
-#define SYSTEM_NET_HTTPLISTENER__CTOR_OFFSET UNITYSDK_OFFSET(0x17ECEC50)
+#define SYSTEM_NET_HTTPLISTENER_ABORT_OFFSET UNITYSDK_OFFSET(0x1900FC50)
+#define SYSTEM_NET_HTTPLISTENER_ADDCONNECTION_OFFSET UNITYSDK_OFFSET(0x19011AD0)
+#define SYSTEM_NET_HTTPLISTENER_BEGINGETCONTEXT_OFFSET UNITYSDK_OFFSET(0x190109D0)
+#define SYSTEM_NET_HTTPLISTENER_CHECKDISPOSED_OFFSET UNITYSDK_OFFSET(0x1900F820)
+#define SYSTEM_NET_HTTPLISTENER_CLEANUP_OFFSET UNITYSDK_OFFSET(0x1900FDB0)
+#define SYSTEM_NET_HTTPLISTENER_CLOSE_1_OFFSET UNITYSDK_OFFSET(0x1900FCD0)
+#define SYSTEM_NET_HTTPLISTENER_CLOSE_OFFSET UNITYSDK_OFFSET(0x1900FD30)
+#define SYSTEM_NET_HTTPLISTENER_CREATESSLSTREAM_OFFSET UNITYSDK_OFFSET(0x1900F4B0)
+#define SYSTEM_NET_HTTPLISTENER_ENDGETCONTEXT_OFFSET UNITYSDK_OFFSET(0x19010E00)
+#define SYSTEM_NET_HTTPLISTENER_GETCONTEXTASYNC_OFFSET UNITYSDK_OFFSET(0x190113A0)
+#define SYSTEM_NET_HTTPLISTENER_GETCONTEXTFROMQUEUE_OFFSET UNITYSDK_OFFSET(0x19010D40)
+#define SYSTEM_NET_HTTPLISTENER_GETCONTEXT_OFFSET UNITYSDK_OFFSET(0x19011150)
+#define SYSTEM_NET_HTTPLISTENER_GET_AUTHENTICATIONSCHEMESELECTORDELEGATE_OFFSET UNITYSDK_OFFSET(0x1900F8B0)
+#define SYSTEM_NET_HTTPLISTENER_GET_AUTHENTICATIONSCHEMES_OFFSET UNITYSDK_OFFSET(0x1900F7F0)
+#define SYSTEM_NET_HTTPLISTENER_GET_DEFAULTSERVICENAMES_OFFSET UNITYSDK_OFFSET(0x1900FB10)
+#define SYSTEM_NET_HTTPLISTENER_GET_EXTENDEDPROTECTIONPOLICY_OFFSET UNITYSDK_OFFSET(0x1900FA60)
+#define SYSTEM_NET_HTTPLISTENER_GET_EXTENDEDPROTECTIONSELECTORDELEGATE_OFFSET UNITYSDK_OFFSET(0x1900F8E0)
+#define SYSTEM_NET_HTTPLISTENER_GET_IGNOREWRITEEXCEPTIONS_OFFSET UNITYSDK_OFFSET(0x1900F9A0)
+#define SYSTEM_NET_HTTPLISTENER_GET_ISLISTENING_OFFSET UNITYSDK_OFFSET(0x1900F9D0)
+#define SYSTEM_NET_HTTPLISTENER_GET_ISSUPPORTED_OFFSET UNITYSDK_OFFSET(0x1900F9E0)
+#define SYSTEM_NET_HTTPLISTENER_GET_PREFIXES_OFFSET UNITYSDK_OFFSET(0x1900F9F0)
+#define SYSTEM_NET_HTTPLISTENER_GET_REALM_OFFSET UNITYSDK_OFFSET(0x1900FBF0)
+#define SYSTEM_NET_HTTPLISTENER_GET_TIMEOUTMANAGER_OFFSET UNITYSDK_OFFSET(0x1900FA10)
+#define SYSTEM_NET_HTTPLISTENER_GET_UNSAFECONNECTIONNTLMAUTHENTICATION_OFFSET UNITYSDK_OFFSET(0x1900FC20)
+#define SYSTEM_NET_HTTPLISTENER_LOADCERTIFICATEANDKEY_OFFSET UNITYSDK_OFFSET(0x1900F0E0)
+#define SYSTEM_NET_HTTPLISTENER_REGISTERCONTEXT_OFFSET UNITYSDK_OFFSET(0x190114B0)
+#define SYSTEM_NET_HTTPLISTENER_REMOVECONNECTION_OFFSET UNITYSDK_OFFSET(0x19011B00)
+#define SYSTEM_NET_HTTPLISTENER_SELECTAUTHENTICATIONSCHEME_OFFSET UNITYSDK_OFFSET(0x19011110)
+#define SYSTEM_NET_HTTPLISTENER_SET_AUTHENTICATIONSCHEMESELECTORDELEGATE_OFFSET UNITYSDK_OFFSET(0x1900F8C0)
+#define SYSTEM_NET_HTTPLISTENER_SET_AUTHENTICATIONSCHEMES_OFFSET UNITYSDK_OFFSET(0x1900F800)
+#define SYSTEM_NET_HTTPLISTENER_SET_EXTENDEDPROTECTIONPOLICY_OFFSET UNITYSDK_OFFSET(0x1900FA70)
+#define SYSTEM_NET_HTTPLISTENER_SET_EXTENDEDPROTECTIONSELECTORDELEGATE_OFFSET UNITYSDK_OFFSET(0x1900F8F0)
+#define SYSTEM_NET_HTTPLISTENER_SET_IGNOREWRITEEXCEPTIONS_OFFSET UNITYSDK_OFFSET(0x1900F9B0)
+#define SYSTEM_NET_HTTPLISTENER_SET_REALM_OFFSET UNITYSDK_OFFSET(0x1900FC00)
+#define SYSTEM_NET_HTTPLISTENER_SET_UNSAFECONNECTIONNTLMAUTHENTICATION_OFFSET UNITYSDK_OFFSET(0x1900FC30)
+#define SYSTEM_NET_HTTPLISTENER_START_OFFSET UNITYSDK_OFFSET(0x19011230)
+#define SYSTEM_NET_HTTPLISTENER_STOP_OFFSET UNITYSDK_OFFSET(0x190112B0)
+#define SYSTEM_NET_HTTPLISTENER_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x19011320)
+#define SYSTEM_NET_HTTPLISTENER_UNREGISTERCONTEXT_OFFSET UNITYSDK_OFFSET(0x190118F0)
+#define SYSTEM_NET_HTTPLISTENER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1900EE80)
+#define SYSTEM_NET_HTTPLISTENER__CTOR_OFFSET UNITYSDK_OFFSET(0x1900EE50)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int HttpListener_TypeDefinitionIndex = 2829;
+	inline static constexpr unsigned int HttpListener_TypeDefinitionIndex = 3523;
 
 	class HttpListener : public ::System::Object
 	{
 	public:
 		::System::Collections::ArrayList* ctx_queue; // 0x10
-		::Mono::Security::Interface::MonoTlsProvider* tlsProvider; // 0x18
-		::System::Collections::Hashtable* registry; // 0x20
-		::System::Net::ServiceNameStore* defaultServiceNames; // 0x28
-		::Mono::Security::Interface::MonoTlsSettings* tlsSettings; // 0x30
+		::Mono::Security::Interface::MonoTlsSettings* tlsSettings; // 0x18
+		::Mono::Security::Interface::MonoTlsProvider* tlsProvider; // 0x20
+		::System::Collections::Hashtable* connections; // 0x28
+		::System::Net::AuthenticationSchemeSelector* auth_selector; // 0x30
 		::System::Security::Cryptography::X509Certificates::X509Certificate* certificate; // 0x38
-		::System::Object* _internalLock; // 0x40
-		::System::Collections::ArrayList* wait_queue; // 0x48
-		::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy* extendedProtectionPolicy; // 0x50
-		::System::Net::HttpListenerPrefixCollection* prefixes; // 0x58
-		::System::Net::AuthenticationSchemeSelector* auth_selector; // 0x60
-		::System::Collections::Hashtable* connections; // 0x68
-		::System::String* realm; // 0x70
-		::System::Boolean ignore_write_exceptions; // 0x78
-		::System::Boolean disposed; // 0x79
-		::System::Boolean listening; // 0x7A
-		::System::Net::AuthenticationSchemes auth_schemes; // 0x7C
+		::System::String* realm; // 0x40
+		::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy* extendedProtectionPolicy; // 0x48
+		::System::Net::HttpListener_ExtendedProtectionSelector* extendedProtectionSelectorDelegate; // 0x50
+		::System::Net::ServiceNameStore* defaultServiceNames; // 0x58
+		::System::Net::HttpListenerPrefixCollection* prefixes; // 0x60
+		::System::Collections::Hashtable* registry; // 0x68
+		::System::Collections::ArrayList* wait_queue; // 0x70
+		::System::Object* _internalLock; // 0x78
+		::System::Net::AuthenticationSchemes auth_schemes; // 0x80
+		::System::Boolean unsafe_ntlm_auth; // 0x84
+		::System::Boolean listening; // 0x85
+		::System::Boolean ignore_write_exceptions; // 0x86
+		::System::Boolean disposed; // 0x87
 
-		::System::Void _ctor()
+		::System::Void _ctor(::System::Security::Cryptography::X509Certificates::X509Certificate* certificate, ::Mono::Security::Interface::MonoTlsProvider* tlsProvider, ::Mono::Security::Interface::MonoTlsSettings* tlsSettings)
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::X509Certificates::X509Certificate*, ::Mono::Security::Interface::MonoTlsProvider*, ::Mono::Security::Interface::MonoTlsSettings*))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER__CTOR_OFFSET))(this, certificate, tlsProvider, tlsSettings);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER__CTOR_1_OFFSET))(this);
 		}
 
 		::System::Security::Cryptography::X509Certificates::X509Certificate* LoadCertificateAndKey(::System::Net::IPAddress* addr, ::System::Int32 port)
@@ -92,9 +120,29 @@ namespace System::Net
 			return ((::System::Net::AuthenticationSchemes(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_AUTHENTICATIONSCHEMES_OFFSET))(this);
 		}
 
+		::System::Void set_AuthenticationSchemes(::System::Net::AuthenticationSchemes value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::AuthenticationSchemes))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_SET_AUTHENTICATIONSCHEMES_OFFSET))(this, value);
+		}
+
 		::System::Net::AuthenticationSchemeSelector* get_AuthenticationSchemeSelectorDelegate()
 		{
 			return ((::System::Net::AuthenticationSchemeSelector*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_AUTHENTICATIONSCHEMESELECTORDELEGATE_OFFSET))(this);
+		}
+
+		::System::Void set_AuthenticationSchemeSelectorDelegate(::System::Net::AuthenticationSchemeSelector* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::AuthenticationSchemeSelector*))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_SET_AUTHENTICATIONSCHEMESELECTORDELEGATE_OFFSET))(this, value);
+		}
+
+		::System::Net::HttpListener_ExtendedProtectionSelector* get_ExtendedProtectionSelectorDelegate()
+		{
+			return ((::System::Net::HttpListener_ExtendedProtectionSelector*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_EXTENDEDPROTECTIONSELECTORDELEGATE_OFFSET))(this);
+		}
+
+		::System::Void set_ExtendedProtectionSelectorDelegate(::System::Net::HttpListener_ExtendedProtectionSelector* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::HttpListener_ExtendedProtectionSelector*))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_SET_EXTENDEDPROTECTIONSELECTORDELEGATE_OFFSET))(this, value);
 		}
 
 		::System::Boolean get_IgnoreWriteExceptions()
@@ -102,9 +150,19 @@ namespace System::Net
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_IGNOREWRITEEXCEPTIONS_OFFSET))(this);
 		}
 
+		::System::Void set_IgnoreWriteExceptions(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_SET_IGNOREWRITEEXCEPTIONS_OFFSET))(this, value);
+		}
+
 		::System::Boolean get_IsListening()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_ISLISTENING_OFFSET))(this);
+		}
+
+		static ::System::Boolean get_IsSupported()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_ISSUPPORTED_OFFSET))();
 		}
 
 		::System::Net::HttpListenerPrefixCollection* get_Prefixes()
@@ -112,9 +170,49 @@ namespace System::Net
 			return ((::System::Net::HttpListenerPrefixCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_PREFIXES_OFFSET))(this);
 		}
 
+		::System::Net::HttpListenerTimeoutManager* get_TimeoutManager()
+		{
+			return ((::System::Net::HttpListenerTimeoutManager*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_TIMEOUTMANAGER_OFFSET))(this);
+		}
+
+		::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy* get_ExtendedProtectionPolicy()
+		{
+			return ((::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_EXTENDEDPROTECTIONPOLICY_OFFSET))(this);
+		}
+
+		::System::Void set_ExtendedProtectionPolicy(::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy*))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_SET_EXTENDEDPROTECTIONPOLICY_OFFSET))(this, value);
+		}
+
+		::System::Security::Authentication::ExtendedProtection::ServiceNameCollection* get_DefaultServiceNames()
+		{
+			return ((::System::Security::Authentication::ExtendedProtection::ServiceNameCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_DEFAULTSERVICENAMES_OFFSET))(this);
+		}
+
 		::System::String* get_Realm()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_REALM_OFFSET))(this);
+		}
+
+		::System::Void set_Realm(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_SET_REALM_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_UnsafeConnectionNtlmAuthentication()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GET_UNSAFECONNECTIONNTLMAUTHENTICATION_OFFSET))(this);
+		}
+
+		::System::Void set_UnsafeConnectionNtlmAuthentication(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_SET_UNSAFECONNECTIONNTLMAUTHENTICATION_OFFSET))(this, value);
+		}
+
+		::System::Void Abort()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_ABORT_OFFSET))(this);
 		}
 
 		::System::Void Close()
@@ -147,6 +245,11 @@ namespace System::Net
 			return ((::System::Net::AuthenticationSchemes(*)(::PVOID, ::System::Net::HttpListenerContext*))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_SELECTAUTHENTICATIONSCHEME_OFFSET))(this, context);
 		}
 
+		::System::Net::HttpListenerContext* GetContext()
+		{
+			return ((::System::Net::HttpListenerContext*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GETCONTEXT_OFFSET))(this);
+		}
+
 		::System::Void Start()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_START_OFFSET))(this);
@@ -160,6 +263,11 @@ namespace System::Net
 		::System::Void System_IDisposable_Dispose()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET))(this);
+		}
+
+		::System::Threading::Tasks::Task_1<::System::Net::HttpListenerContext*>* GetContextAsync()
+		{
+			return ((::System::Threading::Tasks::Task_1<::System::Net::HttpListenerContext*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_HTTPLISTENER_GETCONTEXTASYNC_OFFSET))(this);
 		}
 
 		::System::Void CheckDisposed()

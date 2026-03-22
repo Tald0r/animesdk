@@ -1,0 +1,35 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87.h"
+#include "unitysdk/Cysharp/Threading/Tasks/CompilerServices/AsyncUniTaskMethodBuilder.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTask_1_Awaiter.h"
+#include "unitysdk/System/ValueType.h"
+
+namespace MoleMole { class UIQuestionsAnswerScreenWidgetController; }
+namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
+
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER__HIDESTANDBY_D__9_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x430C40)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER__HIDESTANDBY_D__9_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIQuestionsAnswerScreenWidgetController__HideStandBy_d__9_TypeDefinitionIndex = 67419;
+
+	struct alignas(8) UIQuestionsAnswerScreenWidgetController__HideStandBy_d__9
+	{
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x10
+		::MoleMole::UIQuestionsAnswerScreenWidgetController* __4__this; // 0x20
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x28
+		::System::Int32 __1__state; // 0x38
+
+		::System::Void MoveNext()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER__HIDESTANDBY_D__9_MOVENEXT_OFFSET))(this);
+		}
+
+		::System::Void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::CompilerServices::IAsyncStateMachine*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER__HIDESTANDBY_D__9_SETSTATEMACHINE_OFFSET))(this, stateMachine);
+		}
+	};
+}

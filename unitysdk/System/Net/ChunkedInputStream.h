@@ -9,28 +9,40 @@ namespace System::IO { class Stream; }
 namespace System::Net { class HttpListenerContext; }
 namespace System::Net { class MonoChunkStream; }
 
-#define SYSTEM_NET_CHUNKEDINPUTSTREAM_BEGINREAD_OFFSET UNITYSDK_OFFSET(0x17EA1DD0)
-#define SYSTEM_NET_CHUNKEDINPUTSTREAM_CLOSE_OFFSET UNITYSDK_OFFSET(0x17EA2680)
-#define SYSTEM_NET_CHUNKEDINPUTSTREAM_ENDREAD_OFFSET UNITYSDK_OFFSET(0x17EA2080)
-#define SYSTEM_NET_CHUNKEDINPUTSTREAM_ONREAD_OFFSET UNITYSDK_OFFSET(0x17EA2340)
-#define SYSTEM_NET_CHUNKEDINPUTSTREAM_READ_OFFSET UNITYSDK_OFFSET(0x17EA1DA0)
-#define SYSTEM_NET_CHUNKEDINPUTSTREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x17EA1CA0)
+#define SYSTEM_NET_CHUNKEDINPUTSTREAM_BEGINREAD_OFFSET UNITYSDK_OFFSET(0x1909E210)
+#define SYSTEM_NET_CHUNKEDINPUTSTREAM_CLOSE_OFFSET UNITYSDK_OFFSET(0x1909EA80)
+#define SYSTEM_NET_CHUNKEDINPUTSTREAM_ENDREAD_OFFSET UNITYSDK_OFFSET(0x1909E4B0)
+#define SYSTEM_NET_CHUNKEDINPUTSTREAM_GET_DECODER_OFFSET UNITYSDK_OFFSET(0x1909E1C0)
+#define SYSTEM_NET_CHUNKEDINPUTSTREAM_ONREAD_OFFSET UNITYSDK_OFFSET(0x1909E750)
+#define SYSTEM_NET_CHUNKEDINPUTSTREAM_READ_OFFSET UNITYSDK_OFFSET(0x1909E1E0)
+#define SYSTEM_NET_CHUNKEDINPUTSTREAM_SET_DECODER_OFFSET UNITYSDK_OFFSET(0x1909E1D0)
+#define SYSTEM_NET_CHUNKEDINPUTSTREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x1909E0C0)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int ChunkedInputStream_TypeDefinitionIndex = 2805;
+	inline static constexpr unsigned int ChunkedInputStream_TypeDefinitionIndex = 3495;
 
 	class ChunkedInputStream : public ::System::Net::RequestStream
 	{
 	public:
-		::System::Net::HttpListenerContext* context; // 0x50
-		::System::Net::MonoChunkStream* decoder; // 0x58
-		::System::Boolean no_more_data; // 0x60
-		::System::Boolean disposed; // 0x61
+		::System::Net::MonoChunkStream* decoder; // 0x50
+		::System::Net::HttpListenerContext* context; // 0x58
+		::System::Boolean disposed; // 0x60
+		::System::Boolean no_more_data; // 0x61
 
 		::System::Void _ctor(::System::Net::HttpListenerContext* context, ::System::IO::Stream* stream, ::Il2CppArray<::System::Byte>* buffer, ::System::Int32 offset, ::System::Int32 length)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Net::HttpListenerContext*, ::System::IO::Stream*, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_CHUNKEDINPUTSTREAM__CTOR_OFFSET))(this, context, stream, buffer, offset, length);
+		}
+
+		::System::Net::MonoChunkStream* get_Decoder()
+		{
+			return ((::System::Net::MonoChunkStream*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CHUNKEDINPUTSTREAM_GET_DECODER_OFFSET))(this);
+		}
+
+		::System::Void set_Decoder(::System::Net::MonoChunkStream* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::MonoChunkStream*))((::PBYTE)hIl2Cpp + SYSTEM_NET_CHUNKEDINPUTSTREAM_SET_DECODER_OFFSET))(this, value);
 		}
 
 		::System::Int32 Read(::Il2CppArray<::System::Byte>* buffer, ::System::Int32 offset, ::System::Int32 count)

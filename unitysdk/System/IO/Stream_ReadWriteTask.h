@@ -10,29 +10,29 @@ namespace System::Threading { class ContextCallback; }
 namespace System::Threading { class ExecutionContext; }
 namespace System::Threading::Tasks { class Task; }
 
-#define SYSTEM_IO_STREAM_READWRITETASK_CLEARBEGINSTATE_OFFSET UNITYSDK_OFFSET(0x15C8DED0)
-#define SYSTEM_IO_STREAM_READWRITETASK_INVOKEASYNCCALLBACK_OFFSET UNITYSDK_OFFSET(0x15C8E560)
-#define SYSTEM_IO_STREAM_READWRITETASK_SYSTEM_THREADING_TASKS_ITASKCOMPLETIONACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x15C8E5D0)
-#define SYSTEM_IO_STREAM_READWRITETASK__CTOR_OFFSET UNITYSDK_OFFSET(0x15C8CE10)
+#define SYSTEM_IO_STREAM_READWRITETASK_CLEARBEGINSTATE_OFFSET UNITYSDK_OFFSET(0x1913CFF0)
+#define SYSTEM_IO_STREAM_READWRITETASK_INVOKEASYNCCALLBACK_OFFSET UNITYSDK_OFFSET(0x1913D120)
+#define SYSTEM_IO_STREAM_READWRITETASK_SYSTEM_THREADING_TASKS_ITASKCOMPLETIONACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x1913D190)
+#define SYSTEM_IO_STREAM_READWRITETASK__CTOR_OFFSET UNITYSDK_OFFSET(0x1913D010)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int Stream_ReadWriteTask_TypeDefinitionIndex = 684;
+	inline static constexpr unsigned int Stream_ReadWriteTask_TypeDefinitionIndex = 652;
 
 	class Stream_ReadWriteTask : public ::System::Threading::Tasks::Task_1<::System::Int32>
 	{
 	public:
 		static ::System::Threading::ContextCallback** StaticGet_s_invokeAsyncCallback()
 		{
-			return (::System::Threading::ContextCallback**)Il2CppClass::FromTypeDefinitionIndex(Stream_ReadWriteTask_TypeDefinitionIndex)->GetStaticField(0x8F70);
+			return (::System::Threading::ContextCallback**)Il2CppClass::FromTypeDefinitionIndex(Stream_ReadWriteTask_TypeDefinitionIndex)->GetStaticField(0xD40);
 		}
-		::System::IO::Stream* _stream; // 0x50
+		::Il2CppArray<::System::Byte>* _buffer; // 0x50
 		::System::AsyncCallback* _callback; // 0x58
-		::Il2CppArray<::System::Byte>* _buffer; // 0x60
-		::System::Threading::ExecutionContext* _context; // 0x68
+		::System::Threading::ExecutionContext* _context; // 0x60
+		::System::IO::Stream* _stream; // 0x68
 		::System::Int32 _count; // 0x70
-		::System::Boolean _isRead; // 0x74
-		::System::Int32 _offset; // 0x78
+		::System::Int32 _offset; // 0x74
+		::System::Boolean _isRead; // 0x78
 
 		::System::Void _ctor(::System::Boolean isRead, ::System::Func_2<::System::Object*, ::System::Int32>* function, ::System::Object* state, ::System::IO::Stream* stream, ::Il2CppArray<::System::Byte>* buffer, ::System::Int32 offset, ::System::Int32 count, ::System::AsyncCallback* callback)
 		{

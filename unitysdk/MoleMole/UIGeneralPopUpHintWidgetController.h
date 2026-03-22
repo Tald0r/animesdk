@@ -1,0 +1,87 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_79526D80B8F6897C;
+class Class_2_3F751654DB473886_1;
+namespace MoleMole { class UIControlReference; }
+
+#define MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_ENABLEREDPOINT_OFFSET UNITYSDK_OFFSET(0xAA04FB0)
+#define MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_GET_NEEDCACHE_OFFSET UNITYSDK_OFFSET(0xAA07FB0)
+#define MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAA08070)
+#define MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA08110)
+#define MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAA07FC0)
+#define MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_SETREFNOTIFICATIONNODE_OFFSET UNITYSDK_OFFSET(0xAA082B0)
+#define MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_SHOWREDPOINT_OFFSET UNITYSDK_OFFSET(0xAA081F0)
+#define MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAA08320)
+#define MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAA08360)
+#define MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA083D0)
+#define MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAA08450)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralPopUpHintWidgetController_TypeDefinitionIndex = 38898;
+
+	class UIGeneralPopUpHintWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_3F751654DB473886_1* _view; // 0x2A0
+		::System::Int32 _nowCount; // 0x2A8
+		::Class_1_79526D80B8F6897C* _notificationNode; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_NeedCache()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_GET_NEEDCACHE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean ShowRedPoint()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_SHOWREDPOINT_OFFSET))(this);
+		}
+
+		::System::Void SetRefNotificationNode(::Class_1_79526D80B8F6897C* node)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_79526D80B8F6897C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_SETREFNOTIFICATIONNODE_OFFSET))(this, node);
+		}
+
+		::System::Void EnableRedPoint(::System::Boolean isEnable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER_ENABLEREDPOINT_OFFSET))(this, isEnable);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALPOPUPHINTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

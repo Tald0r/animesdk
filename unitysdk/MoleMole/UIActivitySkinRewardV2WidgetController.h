@@ -1,0 +1,97 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_D375C91CCE5D3999;
+class Class_2_1DB39C120B52CB5D;
+class Class_2_1DB39C120B52CB5D_Class_2_47F94C3827CAB3BB_9;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_ONCLICKSKINBTN_OFFSET UNITYSDK_OFFSET(0xC8E36A0)
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC8E2F20)
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC8E2FC0)
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC8E29B0)
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC8E2E70)
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_SETROOTACTIVITYDATA_OFFSET UNITYSDK_OFFSET(0xC8E33D0)
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_SETSKINREWARDSTATE_OFFSET UNITYSDK_OFFSET(0xC8E30A0)
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC8E3720)
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC8E3750)
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC8E37C0)
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC8E3840)
+#define MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC8E38A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivitySkinRewardV2WidgetController_TypeDefinitionIndex = 68194;
+
+	class UIActivitySkinRewardV2WidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_1DB39C120B52CB5D* _view; // 0x2A0
+		::System::Collections::Generic::List_1<::Class_2_1DB39C120B52CB5D_Class_2_47F94C3827CAB3BB_9*>* _roleImageView; // 0x2A8
+		::Class_1_D375C91CCE5D3999* rootActivityData; // 0x2B0
+		::Class_1_D375C91CCE5D3999* doubleSkinActivityData; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetSkinRewardState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_SETSKINREWARDSTATE_OFFSET))(this);
+		}
+
+		::System::Void SetRootActivityData(::Class_1_D375C91CCE5D3999* activityData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_SETROOTACTIVITYDATA_OFFSET))(this, activityData);
+		}
+
+		::System::Void OnClickSkinBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER_ONCLICKSKINBTN_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSKINREWARDV2WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

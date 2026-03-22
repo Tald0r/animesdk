@@ -1,0 +1,35 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_8AEAC96C9E81D972_Struct_2_18E794CDBE104DC1_1.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_8AEAC96C9E81D972;
+namespace MoleMole::Cameras { class NapVirtualPipelineCamera; }
+
+#define CLASS_2_8AEAC96C9E81D972_CLASS_1_1BDD82A70CFADE3B_METHOD_1_B5A55817A22DFFF3_OFFSET UNITYSDK_OFFSET(0x657D3D0)
+#define CLASS_2_8AEAC96C9E81D972_CLASS_1_1BDD82A70CFADE3B_METHOD_1_C1EB52A4F4431ADE_OFFSET UNITYSDK_OFFSET(0x657D390)
+#define CLASS_2_8AEAC96C9E81D972_CLASS_1_1BDD82A70CFADE3B__CTOR_OFFSET UNITYSDK_OFFSET(0x657D380)
+
+inline static constexpr unsigned int Class_2_8AEAC96C9E81D972_Class_1_1BDD82A70CFADE3B_TypeDefinitionIndex = 50991;
+
+class Class_2_8AEAC96C9E81D972_Class_1_1BDD82A70CFADE3B : public ::System::Object
+{
+public:
+	::Class_2_8AEAC96C9E81D972* Field_1_0; // 0x10
+	::MoleMole::Cameras::NapVirtualPipelineCamera* Field_1_1; // 0x18
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_8AEAC96C9E81D972_CLASS_1_1BDD82A70CFADE3B__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_C1EB52A4F4431ADE()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_8AEAC96C9E81D972_CLASS_1_1BDD82A70CFADE3B_METHOD_1_C1EB52A4F4431ADE_OFFSET))(this);
+	}
+
+	::System::Void Method_1_B5A55817A22DFFF3(::Class_2_8AEAC96C9E81D972_Struct_2_18E794CDBE104DC1_1 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_8AEAC96C9E81D972_Struct_2_18E794CDBE104DC1_1))((::PBYTE)hIl2Cpp + CLASS_2_8AEAC96C9E81D972_CLASS_1_1BDD82A70CFADE3B_METHOD_1_B5A55817A22DFFF3_OFFSET))(this, a1);
+	}
+};

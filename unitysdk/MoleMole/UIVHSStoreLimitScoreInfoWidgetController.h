@@ -1,0 +1,157 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_208CC9941471731A_184;
+class Class_2_6D99A03C58ED2B6E;
+class Class_2_7BEEB90214042948_5;
+class Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIVHSStoreLimitWidgetController_Context; }
+namespace MoleMole { class UIVHSStoreRecommandWidgetController; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_CHECKVALID_OFFSET UNITYSDK_OFFSET(0xD6EE000)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_GETBASESCORE_OFFSET UNITYSDK_OFFSET(0xD6EE6D0)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_GETSCORERATIO_OFFSET UNITYSDK_OFFSET(0xD6EE840)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_GET__CONTEXT_OFFSET UNITYSDK_OFFSET(0xD6EF050)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_INITBYCONTEXT_OFFSET UNITYSDK_OFFSET(0xD6EDE10)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ISALLMATCH_OFFSET UNITYSDK_OFFSET(0xD6EE8E0)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONAFTERVHSSELECTCHANGEFORLIMIT_OFFSET UNITYSDK_OFFSET(0xD6EE450)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONCONTEXTCHANGE_OFFSET UNITYSDK_OFFSET(0xD6EE070)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD6EDC90)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD6EDD30)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD6EDB00)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONVHSMODULECURRENTTAGLISTUPDATE_OFFSET UNITYSDK_OFFSET(0xD6EE380)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONVHSMODULEUPDATE_OFFSET UNITYSDK_OFFSET(0xD6EE2B0)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONVHSSTORELIMITSUBMITED_OFFSET UNITYSDK_OFFSET(0xD6EE5F0)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONVHSSTORELIMITSUBMITTING_OFFSET UNITYSDK_OFFSET(0xD6EE520)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xD6EE0E0)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_SET__CONTEXT_OFFSET UNITYSDK_OFFSET(0xD6EDE80)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD6EF060)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD6EF090)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD6EF100)
+#define MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD6EF180)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVHSStoreLimitScoreInfoWidgetController_TypeDefinitionIndex = 64341;
+
+	class UIVHSStoreLimitScoreInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_7BEEB90214042948_5* _view; // 0x2A0
+		::MoleMole::UIVHSStoreRecommandWidgetController* _recommandWidget; // 0x2A8
+		::MoleMole::UIVHSStoreLimitWidgetController_Context* __context; // 0x2B0
+		::Class_2_6D99A03C58ED2B6E* _activityRandomPlayTemplateExt; // 0x2B8
+		::Class_2_208CC9941471731A_184* _activityRPTagTemplateExt; // 0x2C0
+		::System::Boolean _submitting; // 0x2C8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitByContext(::MoleMole::UIVHSStoreLimitWidgetController_Context* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIVHSStoreLimitWidgetController_Context*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_INITBYCONTEXT_OFFSET))(this, context);
+		}
+
+		::System::Boolean CheckValid()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_CHECKVALID_OFFSET))(this);
+		}
+
+		::System::Void OnContextChange()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONCONTEXTCHANGE_OFFSET))(this);
+		}
+
+		::System::Void OnVHSModuleUpdate(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONVHSMODULEUPDATE_OFFSET))(this, args);
+		}
+
+		::System::Void OnVHSModuleCurrentTagListUpdate(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONVHSMODULECURRENTTAGLISTUPDATE_OFFSET))(this, args);
+		}
+
+		::System::Void OnAfterVhsSelectChangeForLimit(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONAFTERVHSSELECTCHANGEFORLIMIT_OFFSET))(this, args);
+		}
+
+		::System::Void OnVhsStoreLimitSubmitting(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONVHSSTORELIMITSUBMITTING_OFFSET))(this, args);
+		}
+
+		::System::Void OnVhsStoreLimitSubmited(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ONVHSSTORELIMITSUBMITED_OFFSET))(this, args);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		static ::System::Boolean IsAllMatch(::System::Collections::Generic::IReadOnlyList_1<::System::UInt32>* tagIDList, ::System::Collections::Generic::List_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>* vhsCollectionIDList)
+		{
+			return ((::System::Boolean(*)(::System::Collections::Generic::IReadOnlyList_1<::System::UInt32>*, ::System::Collections::Generic::List_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_ISALLMATCH_OFFSET))(tagIDList, vhsCollectionIDList);
+		}
+
+		::System::Single GetBaseScore()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_GETBASESCORE_OFFSET))(this);
+		}
+
+		::System::Single GetScoreRatio()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_GETSCORERATIO_OFFSET))(this);
+		}
+
+		::MoleMole::UIVHSStoreLimitWidgetController_Context* get__context()
+		{
+			return ((::MoleMole::UIVHSStoreLimitWidgetController_Context*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_GET__CONTEXT_OFFSET))(this);
+		}
+
+		::System::Void set__context(::MoleMole::UIVHSStoreLimitWidgetController_Context* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIVHSStoreLimitWidgetController_Context*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER_SET__CONTEXT_OFFSET))(this, value);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTORELIMITSCOREINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

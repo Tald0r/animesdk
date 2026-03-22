@@ -1,0 +1,116 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIMainCityStorePageController.h"
+
+class Class_2_D68EC59F0214DAC2_2;
+namespace MoleMole { class UIControlReference; }
+
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_CLOSEMAINCITYSTOREPAGE_OFFSET UNITYSDK_OFFSET(0xBE8B740)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBE8AEE0)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xBE8B540)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xBE8BA50)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBE8B3A0)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBE8AF80)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xBE8B2B0)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_TRIGGERBACKBTN_OFFSET UNITYSDK_OFFSET(0xBE8B880)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBE8BAD0)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_CLOSEMAINCITYSTOREPAGE_OFFSET UNITYSDK_OFFSET(0xBE8BAE0)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBE8BAF0)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xBE8BB60)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xBE8BB90)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBE8BBA0)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBE8BBB0)
+#define MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xBE8BBC0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIRamenStorePageController_TypeDefinitionIndex = 63625;
+
+	class UIRamenStorePageController : public ::MoleMole::UIMainCityStorePageController
+	{
+	public:
+		::Class_2_D68EC59F0214DAC2_2* _view; // 0x308
+		::System::Boolean PlayCloseSound; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void CloseMainCityStorePage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_CLOSEMAINCITYSTOREPAGE_OFFSET))(this);
+		}
+
+		::System::Void TriggerBackBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_TRIGGERBACKBTN_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_CloseMainCityStorePage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_CLOSEMAINCITYSTOREPAGE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRAMENSTOREPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

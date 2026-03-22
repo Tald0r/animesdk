@@ -1,0 +1,99 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIActivityItemListDialogPopWindowController.h"
+
+class Class_2_208CC9941471731A_240;
+class Class_2_DAA2287413BF9E42;
+namespace MoleMole { class UIBuffListItemRowWidgetController_BuffListItemData; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_CANSELECT_OFFSET UNITYSDK_OFFSET(0xA32AC90)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_CREATEITEM_OFFSET UNITYSDK_OFFSET(0xA32ADB0)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_ISLOCK_OFFSET UNITYSDK_OFFSET(0xA32AD40)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_ONCONFIRM_OFFSET UNITYSDK_OFFSET(0xA32AB20)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA32A8A0)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA32A9E0)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA32AF90)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_CANSELECT_OFFSET UNITYSDK_OFFSET(0xA32AFA0)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_CREATEITEM_OFFSET UNITYSDK_OFFSET(0xA32AFB0)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_ISLOCK_OFFSET UNITYSDK_OFFSET(0xA32AFC0)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_ONCONFIRM_OFFSET UNITYSDK_OFFSET(0xA32B030)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA32B090)
+#define MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA32B130)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBangbooUAVBuffListDialogPopWindowController_TypeDefinitionIndex = 38087;
+
+	class UIBangbooUAVBuffListDialogPopWindowController : public ::MoleMole::UIActivityItemListDialogPopWindowController
+	{
+	public:
+		::Class_2_DAA2287413BF9E42* _view; // 0x330
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnConfirm()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_ONCONFIRM_OFFSET))(this);
+		}
+
+		::System::Boolean CanSelect(::System::Int32 itemid)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_CANSELECT_OFFSET))(this, itemid);
+		}
+
+		::System::Boolean IsLock(::System::Int32 dataid)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_ISLOCK_OFFSET))(this, dataid);
+		}
+
+		::MoleMole::UIBuffListItemRowWidgetController_BuffListItemData* CreateItem(::Class_2_208CC9941471731A_240* template_)
+		{
+			return ((::MoleMole::UIBuffListItemRowWidgetController_BuffListItemData*(*)(::PVOID, ::Class_2_208CC9941471731A_240*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER_CREATEITEM_OFFSET))(this, template_);
+		}
+
+		::System::Boolean __base_CanSelect(::System::Int32 P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_CANSELECT_OFFSET))(this, P0);
+		}
+
+		::MoleMole::UIBuffListItemRowWidgetController_BuffListItemData* __base_CreateItem(::Class_2_208CC9941471731A_240* P0)
+		{
+			return ((::MoleMole::UIBuffListItemRowWidgetController_BuffListItemData*(*)(::PVOID, ::Class_2_208CC9941471731A_240*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_CREATEITEM_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_IsLock(::System::Int32 P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_ISLOCK_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnConfirm()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_ONCONFIRM_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBANGBOOUAVBUFFLISTDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

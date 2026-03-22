@@ -4,15 +4,17 @@
 
 namespace System { class Type; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_DELEGATEHELPERS_MAKEDELEGATE_OFFSET UNITYSDK_OFFSET(0x17CBD8C0)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_DELEGATEHELPERS_MAKEDELEGATE_OFFSET UNITYSDK_OFFSET(0x1A603440)
 
 namespace System::Linq::Expressions::Interpreter
 {
-	inline static constexpr unsigned int DelegateHelpers_TypeDefinitionIndex = 3636;
+	inline static constexpr unsigned int DelegateHelpers_TypeDefinitionIndex = 4932;
 
 	class DelegateHelpers : public ::System::Object
 	{
 	public:
+		// static const ::System::Int32 MaximumArity = 0x11; // 0x0
+
 		static ::System::Type* MakeDelegate(::Il2CppArray<::System::Type*>* types)
 		{
 			return ((::System::Type*(*)(::Il2CppArray<::System::Type*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_DELEGATEHELPERS_MAKEDELEGATE_OFFSET))(types);

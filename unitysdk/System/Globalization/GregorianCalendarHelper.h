@@ -2,52 +2,82 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/DateTime.h"
 #include "unitysdk/System/DayOfWeek.h"
+#include "unitysdk/System/Globalization/CalendarWeekRule.h"
 #include "unitysdk/System/Object.h"
 
 namespace System::Globalization { class Calendar; }
 namespace System::Globalization { class EraInfo; }
 
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_CHECKTICKSRANGE_OFFSET UNITYSDK_OFFSET(0x15C58EC0)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_DATETOTICKS_OFFSET UNITYSDK_OFFSET(0x15C591D0)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETABSOLUTEDATE_OFFSET UNITYSDK_OFFSET(0x15C59010)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDATEPART_OFFSET UNITYSDK_OFFSET(0x15C58C90)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYOFMONTH_OFFSET UNITYSDK_OFFSET(0x15C59390)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYOFWEEK_OFFSET UNITYSDK_OFFSET(0x15C593C0)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYSINMONTH_OFFSET UNITYSDK_OFFSET(0x15C59420)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETERA_OFFSET UNITYSDK_OFFSET(0x15C59580)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETGREGORIANYEAR_OFFSET UNITYSDK_OFFSET(0x15C58A10)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETMONTHSINYEAR_OFFSET UNITYSDK_OFFSET(0x15C597E0)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETMONTH_OFFSET UNITYSDK_OFFSET(0x15C597B0)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETYEAR_OFFSET UNITYSDK_OFFSET(0x15C59800)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GET_ERAS_OFFSET UNITYSDK_OFFSET(0x15C59640)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GET_MAXYEAR_OFFSET UNITYSDK_OFFSET(0x15C58980)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ISLEAPYEAR_OFFSET UNITYSDK_OFFSET(0x15C598E0)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ISVALIDYEAR_OFFSET UNITYSDK_OFFSET(0x15C58C10)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_TIMETOTICKS_OFFSET UNITYSDK_OFFSET(0x15C59250)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_TODATETIME_OFFSET UNITYSDK_OFFSET(0x15C59920)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15C59AC0)
-#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x15C58990)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ADDMONTHS_OFFSET UNITYSDK_OFFSET(0x197B09C0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ADDYEARS_OFFSET UNITYSDK_OFFSET(0x197B0DC0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_CHECKTICKSRANGE_OFFSET UNITYSDK_OFFSET(0x197B04F0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_DATETOTICKS_OFFSET UNITYSDK_OFFSET(0x197B0800)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETABSOLUTEDATE_OFFSET UNITYSDK_OFFSET(0x197B0640)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDATEPART_OFFSET UNITYSDK_OFFSET(0x197B02C0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYOFMONTH_OFFSET UNITYSDK_OFFSET(0x197B0DD0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYOFWEEK_OFFSET UNITYSDK_OFFSET(0x197B0E00)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYOFYEAR_OFFSET UNITYSDK_OFFSET(0x197B0E60)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYSINMONTH_OFFSET UNITYSDK_OFFSET(0x197B0E90)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYSINYEAR_OFFSET UNITYSDK_OFFSET(0x197B0FF0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETERA_OFFSET UNITYSDK_OFFSET(0x197B1040)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETGREGORIANYEAR_OFFSET UNITYSDK_OFFSET(0x197B0040)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETLEAPMONTH_OFFSET UNITYSDK_OFFSET(0x197B1620)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETMONTHSINYEAR_OFFSET UNITYSDK_OFFSET(0x197B12A0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETMONTH_OFFSET UNITYSDK_OFFSET(0x197B1270)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETWEEKOFYEAR_OFFSET UNITYSDK_OFFSET(0x197B1890)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETYEAR_1_OFFSET UNITYSDK_OFFSET(0x197B13A0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETYEAR_OFFSET UNITYSDK_OFFSET(0x197B12C0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GET_ERAS_OFFSET UNITYSDK_OFFSET(0x197B1100)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GET_MAXYEAR_OFFSET UNITYSDK_OFFSET(0x197AFFB0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ISLEAPDAY_OFFSET UNITYSDK_OFFSET(0x197B1470)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ISLEAPMONTH_OFFSET UNITYSDK_OFFSET(0x197B1630)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ISLEAPYEAR_OFFSET UNITYSDK_OFFSET(0x197B15E0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ISVALIDYEAR_OFFSET UNITYSDK_OFFSET(0x197B0240)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_TIMETOTICKS_OFFSET UNITYSDK_OFFSET(0x197B0880)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_TODATETIME_OFFSET UNITYSDK_OFFSET(0x197B1710)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_TOFOURDIGITYEAR_OFFSET UNITYSDK_OFFSET(0x197B19B0)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x197B1B20)
+#define SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x197AFFC0)
 
 namespace System::Globalization
 {
-	inline static constexpr unsigned int GregorianCalendarHelper_TypeDefinitionIndex = 748;
+	inline static constexpr unsigned int GregorianCalendarHelper_TypeDefinitionIndex = 726;
 
 	class GregorianCalendarHelper : public ::System::Object
 	{
 	public:
-		static ::Il2CppArray<::System::Int32>** StaticGet_DaysToMonth365()
-		{
-			return (::Il2CppArray<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(GregorianCalendarHelper_TypeDefinitionIndex)->GetStaticField(0x8700);
-		}
 		static ::Il2CppArray<::System::Int32>** StaticGet_DaysToMonth366()
 		{
-			return (::Il2CppArray<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(GregorianCalendarHelper_TypeDefinitionIndex)->GetStaticField(0x8708);
+			return (::Il2CppArray<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(GregorianCalendarHelper_TypeDefinitionIndex)->GetStaticField(0x11D0);
 		}
-		::System::Globalization::Calendar* m_Cal; // 0x10
+		static ::Il2CppArray<::System::Int32>** StaticGet_DaysToMonth365()
+		{
+			return (::Il2CppArray<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(GregorianCalendarHelper_TypeDefinitionIndex)->GetStaticField(0x11D8);
+		}
+		// static const ::System::Int64 TicksPerMillisecond = 0x2710; // 0x0
+		// static const ::System::Int64 TicksPerSecond = 0x989680; // 0x0
+		// static const ::System::Int64 TicksPerMinute = 0x23C34600; // 0x0
+		// static const ::System::Int64 TicksPerHour = 0x861C46800; // 0x0
+		// static const ::System::Int64 TicksPerDay = 0xC92A69C000; // 0x0
+		// static const ::System::Int32 MillisPerSecond = 0x3E8; // 0x0
+		// static const ::System::Int32 MillisPerMinute = 0xEA60; // 0x0
+		// static const ::System::Int32 MillisPerHour = 0x36EE80; // 0x0
+		// static const ::System::Int32 MillisPerDay = 0x5265C00; // 0x0
+		// static const ::System::Int32 DaysPerYear = 0x16D; // 0x0
+		// static const ::System::Int32 DaysPer4Years = 0x5B5; // 0x0
+		// static const ::System::Int32 DaysPer100Years = 0x8EAC; // 0x0
+		// static const ::System::Int32 DaysPer400Years = 0x23AB1; // 0x0
+		// static const ::System::Int32 DaysTo10000 = 0x37B9DB; // 0x0
+		// static const ::System::Int64 MaxMillis = 0x11EFAE44CB400; // 0x0
+		// static const ::System::Int32 DatePartYear = 0x0; // 0x0
+		// static const ::System::Int32 DatePartDayOfYear = 0x1; // 0x0
+		// static const ::System::Int32 DatePartMonth = 0x2; // 0x0
+		// static const ::System::Int32 DatePartDay = 0x3; // 0x0
+		::Il2CppArray<::System::Int32>* m_eras; // 0x10
 		::Il2CppArray<::System::Globalization::EraInfo*>* m_EraInfo; // 0x18
-		::Il2CppArray<::System::Int32>* m_eras; // 0x20
-		::System::Int32 m_maxYear; // 0x28
-		::System::Int32 m_minYear; // 0x2C
+		::System::Globalization::Calendar* m_Cal; // 0x20
+		::System::Int32 m_minYear; // 0x28
+		::System::Int32 m_maxYear; // 0x2C
 		::System::DateTime m_minDate; // 0x30
 
 		::System::Void _ctor(::System::Globalization::Calendar* cal, ::Il2CppArray<::System::Globalization::EraInfo*>* eraInfo)
@@ -100,6 +130,16 @@ namespace System::Globalization
 			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_CHECKTICKSRANGE_OFFSET))(this, ticks);
 		}
 
+		::System::DateTime AddMonths(::System::DateTime time, ::System::Int32 months)
+		{
+			return ((::System::DateTime(*)(::PVOID, ::System::DateTime, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ADDMONTHS_OFFSET))(this, time, months);
+		}
+
+		::System::DateTime AddYears(::System::DateTime time, ::System::Int32 years)
+		{
+			return ((::System::DateTime(*)(::PVOID, ::System::DateTime, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ADDYEARS_OFFSET))(this, time, years);
+		}
+
 		::System::Int32 GetDayOfMonth(::System::DateTime time)
 		{
 			return ((::System::Int32(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYOFMONTH_OFFSET))(this, time);
@@ -110,9 +150,19 @@ namespace System::Globalization
 			return ((::System::DayOfWeek(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYOFWEEK_OFFSET))(this, time);
 		}
 
+		::System::Int32 GetDayOfYear(::System::DateTime time)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYOFYEAR_OFFSET))(this, time);
+		}
+
 		::System::Int32 GetDaysInMonth(::System::Int32 year, ::System::Int32 month, ::System::Int32 era)
 		{
 			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYSINMONTH_OFFSET))(this, year, month, era);
+		}
+
+		::System::Int32 GetDaysInYear(::System::Int32 year, ::System::Int32 era)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETDAYSINYEAR_OFFSET))(this, year, era);
 		}
 
 		::System::Int32 GetEra(::System::DateTime time)
@@ -140,6 +190,26 @@ namespace System::Globalization
 			return ((::System::Int32(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETYEAR_OFFSET))(this, time);
 		}
 
+		::System::Int32 GetYear_1(::System::Int32 year, ::System::DateTime time)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::DateTime))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETYEAR_1_OFFSET))(this, year, time);
+		}
+
+		::System::Boolean IsLeapDay(::System::Int32 year, ::System::Int32 month, ::System::Int32 day, ::System::Int32 era)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ISLEAPDAY_OFFSET))(this, year, month, day, era);
+		}
+
+		::System::Int32 GetLeapMonth(::System::Int32 year, ::System::Int32 era)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETLEAPMONTH_OFFSET))(this, year, era);
+		}
+
+		::System::Boolean IsLeapMonth(::System::Int32 year, ::System::Int32 month, ::System::Int32 era)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ISLEAPMONTH_OFFSET))(this, year, month, era);
+		}
+
 		::System::Boolean IsLeapYear(::System::Int32 year, ::System::Int32 era)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_ISLEAPYEAR_OFFSET))(this, year, era);
@@ -148,6 +218,16 @@ namespace System::Globalization
 		::System::DateTime ToDateTime(::System::Int32 year, ::System::Int32 month, ::System::Int32 day, ::System::Int32 hour, ::System::Int32 minute, ::System::Int32 second, ::System::Int32 millisecond, ::System::Int32 era)
 		{
 			return ((::System::DateTime(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_TODATETIME_OFFSET))(this, year, month, day, hour, minute, second, millisecond, era);
+		}
+
+		::System::Int32 GetWeekOfYear(::System::DateTime time, ::System::Globalization::CalendarWeekRule rule, ::System::DayOfWeek firstDayOfWeek)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::DateTime, ::System::Globalization::CalendarWeekRule, ::System::DayOfWeek))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_GETWEEKOFYEAR_OFFSET))(this, time, rule, firstDayOfWeek);
+		}
+
+		::System::Int32 ToFourDigitYear(::System::Int32 year, ::System::Int32 twoDigitYearMax)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_GREGORIANCALENDARHELPER_TOFOURDIGITYEAR_OFFSET))(this, year, twoDigitYearMax);
 		}
 	};
 }

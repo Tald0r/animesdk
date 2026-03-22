@@ -9,71 +9,59 @@ namespace System::Reflection { class FieldInfo; }
 namespace System::Reflection { class RtFieldInfo; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_RUNTIMEFIELDHANDLE_EQUALS_OFFSET UNITYSDK_OFFSET(0x200C6D0)
-#define SYSTEM_RUNTIMEFIELDHANDLE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x59D0)
-#define SYSTEM_RUNTIMEFIELDHANDLE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x200C6C0)
-#define SYSTEM_RUNTIMEFIELDHANDLE_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x5580)
-#define SYSTEM_RUNTIMEFIELDHANDLE_SETVALUEDIRECT_OFFSET UNITYSDK_OFFSET(0x15D43360)
-#define SYSTEM_RUNTIMEFIELDHANDLE_SETVALUEINTERNAL_OFFSET UNITYSDK_OFFSET(0x15D43340)
-#define SYSTEM_RUNTIMEFIELDHANDLE_SETVALUE_OFFSET UNITYSDK_OFFSET(0x15D43350)
-#define SYSTEM_RUNTIMEFIELDHANDLE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x200C6B0)
-#define SYSTEM_RUNTIMEFIELDHANDLE__CTOR_OFFSET UNITYSDK_OFFSET(0xBDC0)
+#define SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_09A9FEEF0912788E_OFFSET UNITYSDK_OFFSET(0x8B3FD0)
+#define SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_2D9A8F3394962A5B_OFFSET UNITYSDK_OFFSET(0x8B3FC0)
+#define SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_571E199764B048BD_OFFSET UNITYSDK_OFFSET(0x197BE1A0)
+#define SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_67F6AE7F9001053A_OFFSET UNITYSDK_OFFSET(0x8B3FE0)
+#define SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_8004D4ED772C50A9_OFFSET UNITYSDK_OFFSET(0x197BE180)
+#define SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_8B1F4DC8AD6A3756_OFFSET UNITYSDK_OFFSET(0x197BE190)
+#define SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_C74CF020AA42ED85_OFFSET UNITYSDK_OFFSET(0x2C3E30)
 
 namespace System
 {
-	inline static constexpr unsigned int RuntimeFieldHandle_TypeDefinitionIndex = 420;
+	inline static constexpr unsigned int RuntimeFieldHandle_TypeDefinitionIndex = 407;
 
 	struct alignas(8) RuntimeFieldHandle
 	{
 		::System::IntPtr value; // 0x10
 
-		::System::Void _ctor(::System::IntPtr v)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE__CTOR_OFFSET))(this, v);
-		}
-
 		/*
-		::System::Void _ctor_1(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::Void Method_2_2D9A8F3394962A5B(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE__CTOR_1_OFFSET))(this, info, context);
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_2D9A8F3394962A5B_OFFSET))(this, info, context);
 		}
 		*/
 
-		::System::IntPtr get_Value()
-		{
-			return ((::System::IntPtr(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_GET_VALUE_OFFSET))(this);
-		}
-
 		/*
-		::System::Void GetObjectData(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::Void Method_2_09A9FEEF0912788E(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_GETOBJECTDATA_OFFSET))(this, info, context);
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_09A9FEEF0912788E_OFFSET))(this, info, context);
 		}
 		*/
 
-		::System::Boolean Equals(::System::Object* obj)
+		::System::Boolean Method_2_67F6AE7F9001053A(::System::Object* obj)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_EQUALS_OFFSET))(this, obj);
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_67F6AE7F9001053A_OFFSET))(this, obj);
 		}
 
-		::System::Int32 GetHashCode()
+		::System::Int32 Method_2_C74CF020AA42ED85()
 		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_GETHASHCODE_OFFSET))(this);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_C74CF020AA42ED85_OFFSET))(this);
 		}
 
-		static ::System::Void SetValueInternal(::System::Reflection::FieldInfo* fi, ::System::Object* obj, ::System::Object* value)
+		static ::System::Void Method_2_8004D4ED772C50A9(::System::Reflection::FieldInfo* fi, ::System::Object* obj, ::System::Object* value)
 		{
-			return ((::System::Void(*)(::System::Reflection::FieldInfo*, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_SETVALUEINTERNAL_OFFSET))(fi, obj, value);
+			return ((::System::Void(*)(::System::Reflection::FieldInfo*, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_8004D4ED772C50A9_OFFSET))(fi, obj, value);
 		}
 
-		static ::System::Void SetValue(::System::Reflection::RtFieldInfo* field, ::System::Object* obj, ::System::Object* value, ::System::RuntimeType* fieldType, ::System::Reflection::FieldAttributes fieldAttr, ::System::RuntimeType* declaringType, ::System::Boolean& domainInitialized)
+		static ::System::Void Method_2_8B1F4DC8AD6A3756(::System::Reflection::RtFieldInfo* field, ::System::Object* obj, ::System::Object* value, ::System::RuntimeType* fieldType, ::System::Reflection::FieldAttributes fieldAttr, ::System::RuntimeType* declaringType, ::System::Boolean& domainInitialized)
 		{
-			return ((::System::Void(*)(::System::Reflection::RtFieldInfo*, ::System::Object*, ::System::Object*, ::System::RuntimeType*, ::System::Reflection::FieldAttributes, ::System::RuntimeType*, ::System::Boolean&))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_SETVALUE_OFFSET))(field, obj, value, fieldType, fieldAttr, declaringType, domainInitialized);
+			return ((::System::Void(*)(::System::Reflection::RtFieldInfo*, ::System::Object*, ::System::Object*, ::System::RuntimeType*, ::System::Reflection::FieldAttributes, ::System::RuntimeType*, ::System::Boolean&))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_8B1F4DC8AD6A3756_OFFSET))(field, obj, value, fieldType, fieldAttr, declaringType, domainInitialized);
 		}
 
-		static ::System::Void SetValueDirect(::System::Reflection::RtFieldInfo* field, ::System::RuntimeType* fieldType, ::System::Void* pTypedRef, ::System::Object* value, ::System::RuntimeType* contextType)
+		static ::System::Void Method_2_571E199764B048BD(::System::Reflection::RtFieldInfo* field, ::System::RuntimeType* fieldType, ::System::Void* pTypedRef, ::System::Object* value, ::System::RuntimeType* contextType)
 		{
-			return ((::System::Void(*)(::System::Reflection::RtFieldInfo*, ::System::RuntimeType*, ::System::Void*, ::System::Object*, ::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_SETVALUEDIRECT_OFFSET))(field, fieldType, pTypedRef, value, contextType);
+			return ((::System::Void(*)(::System::Reflection::RtFieldInfo*, ::System::RuntimeType*, ::System::Void*, ::System::Object*, ::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMEFIELDHANDLE_METHOD_2_571E199764B048BD_OFFSET))(field, fieldType, pTypedRef, value, contextType);
 		}
 	};
 }

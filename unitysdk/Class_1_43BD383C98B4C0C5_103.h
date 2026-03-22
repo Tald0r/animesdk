@@ -1,19 +1,16 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_103_Struct_2_0A33320B2F65B0F7.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_103_Struct_2_8D4F9E4D299B5DEE.h"
+#include "unitysdk/Class_3_248DACE3BB3053DD_Enum_3_208B758CC2D6E4CF.h"
 #include "unitysdk/System/Object.h"
-#include "unitysdk/System/ValueTuple_2.h"
-#include "unitysdk/UnityEngine/Vector3.h"
 
-namespace System { class String; }
-namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
-namespace System::Collections::Generic { template <typename T> class HashSet_1; }
-namespace System::Collections::Generic { template <typename T> class List_1; }
+class Class_2_14986121AA61AD99;
+class Class_3_248DACE3BB3053DD;
+class Class_3_F35B080B137ECC46;
+namespace MoleMole::Battle { class Entity; }
 
-#define CLASS_1_43BD383C98B4C0C5_103__CTOR_OFFSET UNITYSDK_OFFSET(0x8497E50)
+#define CLASS_1_43BD383C98B4C0C5_103__CTOR_OFFSET UNITYSDK_OFFSET(0x6D506F0)
 
-inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_103_TypeDefinitionIndex = 40802;
+inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_103_TypeDefinitionIndex = 66904;
 
 class Class_1_43BD383C98B4C0C5_103 : public ::System::Object
 {

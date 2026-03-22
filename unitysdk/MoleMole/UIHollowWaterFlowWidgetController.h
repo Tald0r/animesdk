@@ -1,0 +1,140 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_B6A3FA7992F9F37E_1.h"
+
+class Class_0_16E4307DCC419505_189;
+class Class_2_A9A40925D3D5D1C0;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_GETCURDELTATIME_OFFSET UNITYSDK_OFFSET(0x7A7A5A0)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_GET_MAXARROWPROGRESSVALUE_OFFSET UNITYSDK_OFFSET(0x7A794C0)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_GET_MAXFILLBARPROGRESSVALUE_OFFSET UNITYSDK_OFFSET(0x7A79560)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_GET_POINTSACCUMULATED_OFFSET UNITYSDK_OFFSET(0x7A79600)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONCLICKBTN_OFFSET UNITYSDK_OFFSET(0x7A7A1E0)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A79F70)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONGAMEPLAYFINISHED_OFFSET UNITYSDK_OFFSET(0x7A79D40)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A7A010)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A79620)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A79EC0)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_SETPOINTS_OFFSET UNITYSDK_OFFSET(0x7A79800)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_SETUP_OFFSET UNITYSDK_OFFSET(0x7A79A10)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_SET_POINTSACCUMULATED_OFFSET UNITYSDK_OFFSET(0x7A79610)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0x7A7A310)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A7A610)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A7A640)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A7A6B0)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A7A730)
+#define MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A7A790)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowWaterFlowWidgetController_TypeDefinitionIndex = 66943;
+
+	class UIHollowWaterFlowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_0_16E4307DCC419505_189* _activeGameplay; // 0x2A0
+		::System::Action_1<::Struct_2_B6A3FA7992F9F37E_1>* _onFinish; // 0x2A8
+		::Class_2_A9A40925D3D5D1C0* _view; // 0x2B0
+		::System::Single _PointsAccumulated_k__BackingField; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Single get_MaxArrowProgressValue()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_GET_MAXARROWPROGRESSVALUE_OFFSET))(this);
+		}
+
+		::System::Single get_MaxFillBarProgressValue()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_GET_MAXFILLBARPROGRESSVALUE_OFFSET))(this);
+		}
+
+		::System::Single get_PointsAccumulated()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_GET_POINTSACCUMULATED_OFFSET))(this);
+		}
+
+		::System::Void set_PointsAccumulated(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_SET_POINTSACCUMULATED_OFFSET))(this, value);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void Setup(::System::String* gameplayKey, ::System::Action_1<::Struct_2_B6A3FA7992F9F37E_1>* onFinish)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Action_1<::Struct_2_B6A3FA7992F9F37E_1>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_SETUP_OFFSET))(this, gameplayKey, onFinish);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnClickBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONCLICKBTN_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Single GetCurDeltaTime()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_GETCURDELTATIME_OFFSET))(this);
+		}
+
+		::System::Void SetPoints(::System::Single points)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_SETPOINTS_OFFSET))(this, points);
+		}
+
+		::System::Void OnGameplayFinished()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER_ONGAMEPLAYFINISHED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

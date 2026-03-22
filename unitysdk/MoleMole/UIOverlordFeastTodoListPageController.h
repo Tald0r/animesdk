@@ -1,0 +1,150 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_208CC9941471731A_892;
+class Class_2_83D433B570E0864F;
+class Class_2_B1555FA59A3F87CE;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIOverlordFeastTodoListPageContext; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_GETREWARDITEMFROMID_OFFSET UNITYSDK_OFFSET(0xB254BE0)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xB2528C0)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xB2529E0)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB2528D0)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONLEVELCHANGED_OFFSET UNITYSDK_OFFSET(0xB253DE0)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xB253550)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB253B70)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB252970)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB252D30)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_READTODOLISTFORLASTLEVEL_OFFSET UNITYSDK_OFFSET(0xB253C00)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xB253740)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_SETTODOLISTS_OFFSET UNITYSDK_OFFSET(0xB254390)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB254EC0)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER__ONUIOPEN_G__GETLEVELIDXWITHUNFINISHEDQUEST_6_0_OFFSET UNITYSDK_OFFSET(0xB252F20)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER__REFRESHVIEW_B__10_0_OFFSET UNITYSDK_OFFSET(0xB254ED0)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB254F20)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xB254F90)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB254FA0)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB254FB0)
+#define MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB254FC0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIOverlordFeastTodoListPageController_TypeDefinitionIndex = 43419;
+
+	class UIOverlordFeastTodoListPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_83D433B570E0864F* _view; // 0x2F8
+		::Class_2_B1555FA59A3F87CE* _overlordFeastModel; // 0x300
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_892*>* _levels; // 0x308
+		::System::Int32 _curIdx; // 0x310
+		::System::Int32 _targetQuestIdx; // 0x314
+		::MoleMole::UIOverlordFeastTodoListPageContext* _context; // 0x318
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnLevelChanged(::System::Int32 idx)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_ONLEVELCHANGED_OFFSET))(this, idx);
+		}
+
+		::System::Void SetTodoLists(::System::Int32 targetIdx)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_SETTODOLISTS_OFFSET))(this, targetIdx);
+		}
+
+		::System::Void ReadTodoListForLastLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_READTODOLISTFORLASTLEVEL_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00>* GetRewardItemFromId(::System::Collections::Generic::List_1<::System::Int32>* questIDList)
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00>*(*)(::PVOID, ::System::Collections::Generic::List_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER_GETREWARDITEMFROMID_OFFSET))(this, questIDList);
+		}
+
+		::System::Int32 _OnUIOpen_g__GetLevelIdxWithUnfinishedQuest_6_0()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER__ONUIOPEN_G__GETLEVELIDXWITHUNFINISHEDQUEST_6_0_OFFSET))(this);
+		}
+
+		::System::Void _RefreshView_b__10_0(::System::Int32 idx)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER__REFRESHVIEW_B__10_0_OFFSET))(this, idx);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTTODOLISTPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

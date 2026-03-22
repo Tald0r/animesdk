@@ -1,11 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/CharaStoryMoveState.h"
-#include "unitysdk/UnityEngine/Vector3.h"
+#include "unitysdk/Enum_3_6A96CF8852C977C2.h"
+#include "unitysdk/UnityEngine/Vector2.h"
 
-namespace RPG::GameCore { class CharacterInputData; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_355_TypeDefinitionIndex = 42344;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_355_TypeDefinitionIndex = 67295;
 
 class Class_0_16E4307DCC419505_355
 {

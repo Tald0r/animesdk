@@ -1,17 +1,16 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MessagePack/Unity/Extension/ReverseEndianessHelperSimpleRepeat_1.h"
-#include "unitysdk/MessagePack/Unity/Extension/UnsafeBlitFormatterBase_2.h"
+#include "unitysdk/MessagePack/Unity/Extension/UnsafeBlitFormatterBase_1.h"
 #include "unitysdk/UnityEngine/Quaternion.h"
 
-#define MESSAGEPACK_UNITY_EXTENSION_QUATERNIONARRAYBLITFORMATTER_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x1561A5F0)
-#define MESSAGEPACK_UNITY_EXTENSION_QUATERNIONARRAYBLITFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1561A600)
+#define MESSAGEPACK_UNITY_EXTENSION_QUATERNIONARRAYBLITFORMATTER_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x19F57680)
+#define MESSAGEPACK_UNITY_EXTENSION_QUATERNIONARRAYBLITFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x19F57690)
 
 namespace MessagePack::Unity::Extension
 {
-	inline static constexpr unsigned int QuaternionArrayBlitFormatter_TypeDefinitionIndex = 33960;
+	inline static constexpr unsigned int QuaternionArrayBlitFormatter_TypeDefinitionIndex = 26378;
 
-	class QuaternionArrayBlitFormatter : public ::MessagePack::Unity::Extension::UnsafeBlitFormatterBase_2<::UnityEngine::Quaternion, ::MessagePack::Unity::Extension::ReverseEndianessHelperSimpleRepeat_1<::System::Single>>
+	class QuaternionArrayBlitFormatter : public ::MessagePack::Unity::Extension::UnsafeBlitFormatterBase_1<::UnityEngine::Quaternion>
 	{
 	public:
 		::System::Void _ctor()

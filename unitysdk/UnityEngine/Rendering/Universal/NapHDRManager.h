@@ -1,0 +1,56 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPHDRMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x16DC2900)
+
+namespace UnityEngine::Rendering::Universal
+{
+	inline static constexpr unsigned int NapHDRManager_TypeDefinitionIndex = 28533;
+
+	class NapHDRManager : public ::System::Object
+	{
+	public:
+		static ::System::Boolean* StaticGet_HDRSplitLine()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapHDRManager_TypeDefinitionIndex)->GetStaticField(0x7090);
+		}
+		static ::System::Boolean* StaticGet_HDRPipelineOn()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapHDRManager_TypeDefinitionIndex)->GetStaticField(0x7091);
+		}
+		static ::System::Single* StaticGet_HDRSplitRatio()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapHDRManager_TypeDefinitionIndex)->GetStaticField(0x7094);
+		}
+		static ::System::Single* StaticGet_HueShiftLerpThreshold()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapHDRManager_TypeDefinitionIndex)->GetStaticField(0x7098);
+		}
+		static ::System::Single* StaticGet_SceneMaxLuminanceScaleFadeRange()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapHDRManager_TypeDefinitionIndex)->GetStaticField(0x709C);
+		}
+		static ::System::Single* StaticGet_AvatarMaxLuminanceScaleFadeRange()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapHDRManager_TypeDefinitionIndex)->GetStaticField(0x70A0);
+		}
+		static ::System::Single* StaticGet_SceneMaxLuminanceScale()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapHDRManager_TypeDefinitionIndex)->GetStaticField(0x70A4);
+		}
+		static ::System::Single* StaticGet_HueShiftLerpRange()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapHDRManager_TypeDefinitionIndex)->GetStaticField(0x70A8);
+		}
+		static ::System::Single* StaticGet_AvatarMaxLuminanceScale()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapHDRManager_TypeDefinitionIndex)->GetStaticField(0x70AC);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_NAPHDRMANAGER__CCTOR_OFFSET))();
+		}
+	};
+}

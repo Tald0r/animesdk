@@ -1,0 +1,153 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_17B78A87EAE1DCED.h"
+#include "unitysdk/MoleMole/EffectSimulate/ESLoopable.h"
+
+namespace MoleMole::EffectSimulate { class FloatKeyframeCurve; }
+namespace MoleMole::EffectSimulate { class NapEffectSimulatorComponent; }
+namespace System { class String; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine::NAPRenderPipeline0 { class LensFlareComponentSRP; }
+namespace UnityEngine::NAPRenderPipeline0 { class LensFlareDataSRP_NativeSRP; }
+
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_GET_LENSFLAREDATASHOWER_OFFSET UNITYSDK_OFFSET(0xF193410)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_25317D1DD74E2173_OFFSET UNITYSDK_OFFSET(0xF192920)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_2685B6183E614529_OFFSET UNITYSDK_OFFSET(0xF1938D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0xF193810)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0xF192FA0)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_4272BE5198E6F216_OFFSET UNITYSDK_OFFSET(0xF1939B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_45A1D7CC71C13515_OFFSET UNITYSDK_OFFSET(0xF193290)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_49AC00594530B714_1_OFFSET UNITYSDK_OFFSET(0xF1939C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_49AC00594530B714_OFFSET UNITYSDK_OFFSET(0xF192EB0)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_581A5078A2F29034_OFFSET UNITYSDK_OFFSET(0xF193800)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_82A4CB8B519B2651_OFFSET UNITYSDK_OFFSET(0xF193940)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_82E992240300FB30_OFFSET UNITYSDK_OFFSET(0xF193090)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_88B60F3B95FAA4F1_1_OFFSET UNITYSDK_OFFSET(0xF193000)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0xF192F10)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_A5ADA4706DA592FA_OFFSET UNITYSDK_OFFSET(0xF192C70)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xF193870)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_D3129FE8DF635B48_OFFSET UNITYSDK_OFFSET(0xF193A20)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_DA1BF2C227DC3D86_OFFSET UNITYSDK_OFFSET(0xF1937A0)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_EBEE0D0A222A8264_OFFSET UNITYSDK_OFFSET(0xF192DC0)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_SET_LENSFLAREDATASHOWER_OFFSET UNITYSDK_OFFSET(0xF193480)
+#define MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE__CTOR_OFFSET UNITYSDK_OFFSET(0xF193610)
+
+namespace MoleMole::EffectSimulate
+{
+	inline static constexpr unsigned int ESLensFlare_TypeDefinitionIndex = 55594;
+
+	class ESLensFlare : public ::MoleMole::EffectSimulate::ESLoopable
+	{
+	public:
+		// static const ::System::Int32 DRAW_ORDER = 0x14; // 0x0
+		::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP* m_stCom; // 0x58
+		::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP* comCache; // 0x60
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* intensity; // 0x68
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* scale; // 0x70
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Method_3_25317D1DD74E2173(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_25317D1DD74E2173_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_3_A5ADA4706DA592FA(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_A5ADA4706DA592FA_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_3_EBEE0D0A222A8264()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_EBEE0D0A222A8264_OFFSET))(this);
+		}
+
+		::Enum_3_17B78A87EAE1DCED Method_3_49AC00594530B714()
+		{
+			return ((::Enum_3_17B78A87EAE1DCED(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_49AC00594530B714_OFFSET))(this);
+		}
+
+		::System::String* Method_3_88B60F3B95FAA4F1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_88B60F3B95FAA4F1_OFFSET))(this);
+		}
+
+		::System::Boolean Method_3_391A84BCD9F51317()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_391A84BCD9F51317_OFFSET))(this);
+		}
+
+		::System::String* Method_3_88B60F3B95FAA4F1_1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_88B60F3B95FAA4F1_1_OFFSET))(this);
+		}
+
+		::System::Void Method_3_82E992240300FB30()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_82E992240300FB30_OFFSET))(this);
+		}
+
+		::System::Void Method_3_45A1D7CC71C13515(::UnityEngine::GameObject* a1, ::MoleMole::EffectSimulate::NapEffectSimulatorComponent* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*, ::MoleMole::EffectSimulate::NapEffectSimulatorComponent*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_45A1D7CC71C13515_OFFSET))(this, a1, a2);
+		}
+
+		::UnityEngine::NAPRenderPipeline0::LensFlareDataSRP_NativeSRP* get_lensFlareDataShower()
+		{
+			return ((::UnityEngine::NAPRenderPipeline0::LensFlareDataSRP_NativeSRP*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_GET_LENSFLAREDATASHOWER_OFFSET))(this);
+		}
+
+		::System::Void set_lensFlareDataShower(::UnityEngine::NAPRenderPipeline0::LensFlareDataSRP_NativeSRP* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::NAPRenderPipeline0::LensFlareDataSRP_NativeSRP*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_SET_LENSFLAREDATASHOWER_OFFSET))(this, a1);
+		}
+
+		::System::String* Method_3_DA1BF2C227DC3D86()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_DA1BF2C227DC3D86_OFFSET))(this);
+		}
+
+		::System::String* Method_3_581A5078A2F29034()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_581A5078A2F29034_OFFSET))(this);
+		}
+
+		::System::Boolean Method_3_391A84BCD9F51317_1()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_391A84BCD9F51317_1_OFFSET))(this);
+		}
+
+		::System::Void Method_3_CA373AA1C7054598()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_CA373AA1C7054598_OFFSET))(this);
+		}
+
+		::System::Void Method_3_2685B6183E614529(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_2685B6183E614529_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_3_82A4CB8B519B2651(::UnityEngine::GameObject* a1, ::MoleMole::EffectSimulate::NapEffectSimulatorComponent* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*, ::MoleMole::EffectSimulate::NapEffectSimulatorComponent*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_82A4CB8B519B2651_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_3_4272BE5198E6F216(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_4272BE5198E6F216_OFFSET))(this, a1);
+		}
+
+		::Enum_3_17B78A87EAE1DCED Method_3_49AC00594530B714_1()
+		{
+			return ((::Enum_3_17B78A87EAE1DCED(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_49AC00594530B714_1_OFFSET))(this);
+		}
+
+		::System::Void Method_3_D3129FE8DF635B48()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESLENSFLARE_METHOD_3_D3129FE8DF635B48_OFFSET))(this);
+		}
+	};
+}

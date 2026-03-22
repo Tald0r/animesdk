@@ -1,0 +1,135 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/UnityEngine/NAPRenderPipeline0/VolumeComponent.h"
+
+namespace UnityEngine::NAPRenderPipeline0 { class BoolParameter; }
+namespace UnityEngine::NAPRenderPipeline0 { class ClampedFloatParameter; }
+namespace UnityEngine::NAPRenderPipeline0 { class ClampedIntParameter; }
+
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_BILATERALUPSAMPLE_OFFSET UNITYSDK_OFFSET(0x179693F0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_BLURSHARPNESS_OFFSET UNITYSDK_OFFSET(0x17969350)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_DEBUGMODE_OFFSET UNITYSDK_OFFSET(0x17969450)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_DENOISERRADIUS_OFFSET UNITYSDK_OFFSET(0x179693B0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_DENOISE_OFFSET UNITYSDK_OFFSET(0x17969390)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_DIRECTIONCOUNT_OFFSET UNITYSDK_OFFSET(0x17969430)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_DIRECTLIGHTINGSTRENGTH_OFFSET UNITYSDK_OFFSET(0x179692B0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_FULLRESOLUTION_OFFSET UNITYSDK_OFFSET(0x179692F0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_GHOSTINGREDUCTION_OFFSET UNITYSDK_OFFSET(0x17969330)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_INTENSITY_OFFSET UNITYSDK_OFFSET(0x17969290)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_MAXIMUMRADIUSINPIXELS_OFFSET UNITYSDK_OFFSET(0x17969410)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_RADIUS_OFFSET UNITYSDK_OFFSET(0x179692D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_SAMPLECOUNT_OFFSET UNITYSDK_OFFSET(0x17969370)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_STEPCOUNT_OFFSET UNITYSDK_OFFSET(0x179693D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_TEMPORALACCUMULATION_OFFSET UNITYSDK_OFFSET(0x17969310)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x17969470)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION__CTOR_OFFSET UNITYSDK_OFFSET(0x179694E0)
+
+namespace UnityEngine::Rendering::Universal
+{
+	inline static constexpr unsigned int ScreenSpaceAmbientOcclusion_TypeDefinitionIndex = 28416;
+
+	class ScreenSpaceAmbientOcclusion : public ::UnityEngine::NAPRenderPipeline0::VolumeComponent
+	{
+	public:
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* Intensity; // 0x38
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* DirectLightingStrength; // 0x40
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* Radius; // 0x48
+		::UnityEngine::NAPRenderPipeline0::BoolParameter* FullResolution; // 0x50
+		::UnityEngine::NAPRenderPipeline0::BoolParameter* TemporalAccumulation; // 0x58
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* GhostingReduction; // 0x60
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* BlurSharpness; // 0x68
+		::UnityEngine::NAPRenderPipeline0::ClampedIntParameter* SampleCount; // 0x70
+		::UnityEngine::NAPRenderPipeline0::BoolParameter* Denoise; // 0x78
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* DenoiserRadius; // 0x80
+		::UnityEngine::NAPRenderPipeline0::ClampedIntParameter* StepCount; // 0x88
+		::UnityEngine::NAPRenderPipeline0::BoolParameter* BilateralUpsample; // 0x90
+		::UnityEngine::NAPRenderPipeline0::ClampedIntParameter* MaximumRadiusInPixels; // 0x98
+		::UnityEngine::NAPRenderPipeline0::ClampedIntParameter* DirectionCount; // 0xA0
+		::UnityEngine::NAPRenderPipeline0::BoolParameter* DebugMode; // 0xA8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION__CTOR_OFFSET))(this);
+		}
+
+		::System::Single get_intensity()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_INTENSITY_OFFSET))(this);
+		}
+
+		::System::Single get_directLightingStrength()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_DIRECTLIGHTINGSTRENGTH_OFFSET))(this);
+		}
+
+		::System::Single get_radius()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_RADIUS_OFFSET))(this);
+		}
+
+		::System::Boolean get_fullResolution()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_FULLRESOLUTION_OFFSET))(this);
+		}
+
+		::System::Boolean get_temporalAccumulation()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_TEMPORALACCUMULATION_OFFSET))(this);
+		}
+
+		::System::Single get_ghostingReduction()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_GHOSTINGREDUCTION_OFFSET))(this);
+		}
+
+		::System::Single get_blurSharpness()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_BLURSHARPNESS_OFFSET))(this);
+		}
+
+		::System::Single get_sampleCount()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_SAMPLECOUNT_OFFSET))(this);
+		}
+
+		::System::Boolean get_denoise()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_DENOISE_OFFSET))(this);
+		}
+
+		::System::Single get_denoiserRadius()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_DENOISERRADIUS_OFFSET))(this);
+		}
+
+		::System::Int32 get_stepCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_STEPCOUNT_OFFSET))(this);
+		}
+
+		::System::Boolean get_bilateralUpsample()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_BILATERALUPSAMPLE_OFFSET))(this);
+		}
+
+		::System::Int32 get_maximumRadiusInPixels()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_MAXIMUMRADIUSINPIXELS_OFFSET))(this);
+		}
+
+		::System::Int32 get_directionCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_DIRECTIONCOUNT_OFFSET))(this);
+		}
+
+		::System::Boolean get_debugMode()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_GET_DEBUGMODE_OFFSET))(this);
+		}
+
+		::System::Boolean IsActive()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEAMBIENTOCCLUSION_ISACTIVE_OFFSET))(this);
+		}
+	};
+}

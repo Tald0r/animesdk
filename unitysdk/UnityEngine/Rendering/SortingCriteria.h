@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int SortingCriteria_TypeDefinitionIndex = 4553;
+	inline static constexpr unsigned int SortingCriteria_TypeDefinitionIndex = 6232;
 
 	enum class SortingCriteria : ::System::Int32
 	{
@@ -15,7 +15,10 @@ namespace UnityEngine::Rendering
 		OptimizeStateChanges = 16,
 		CanvasOrder = 32,
 		RendererPriority = 64,
+		LowPrioQuantizedFrontToBack = 128,
+		BackToFrontPassIndexFirst = 256,
 		CommonOpaque = 59,
 		CommonTransparent = 23,
+		ModernCommonOpaque = 179,
 	};
 }

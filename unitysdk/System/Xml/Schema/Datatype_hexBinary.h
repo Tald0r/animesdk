@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/Datatype_anySimpleType.h"
+#include "unitysdk/System/Xml/Schema/RestrictionFlags.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaWhiteSpace.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 
@@ -14,31 +15,32 @@ namespace System::Xml::Schema { class FacetsChecker; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_COMPARE_OFFSET UNITYSDK_OFFSET(0x17D6D520)
-#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D6D390)
-#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x17D6D510)
-#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x17D6D3E0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D6D4B0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D6D440)
-#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D6D450)
-#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x17D6D5E0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D6D7E0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY__CTOR_OFFSET UNITYSDK_OFFSET(0x17D63D80)
+#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_COMPARE_OFFSET UNITYSDK_OFFSET(0x18C6E950)
+#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x18C6E7B0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x18C6E930)
+#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x18C6E800)
+#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x18C6E8D0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x18C6E860)
+#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_VALIDRESTRICTIONFLAGS_OFFSET UNITYSDK_OFFSET(0x18C6E940)
+#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x18C6E870)
+#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x18C6EA10)
+#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY__CCTOR_OFFSET UNITYSDK_OFFSET(0x18C6ECB0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY__CTOR_OFFSET UNITYSDK_OFFSET(0x18C6EC10)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_hexBinary_TypeDefinitionIndex = 2100;
+	inline static constexpr unsigned int Datatype_hexBinary_TypeDefinitionIndex = 2015;
 
 	class Datatype_hexBinary : public ::System::Xml::Schema::Datatype_anySimpleType
 	{
 	public:
-		static ::System::Type** StaticGet_listValueType()
-		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_hexBinary_TypeDefinitionIndex)->GetStaticField(0x141B0);
-		}
 		static ::System::Type** StaticGet_atomicValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_hexBinary_TypeDefinitionIndex)->GetStaticField(0x141B8);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_hexBinary_TypeDefinitionIndex)->GetStaticField(0x18E0);
+		}
+		static ::System::Type** StaticGet_listValueType()
+		{
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_hexBinary_TypeDefinitionIndex)->GetStaticField(0x18E8);
 		}
 
 		::System::Void _ctor()
@@ -79,6 +81,11 @@ namespace System::Xml::Schema
 		::System::Xml::Schema::XmlSchemaWhiteSpace get_BuiltInWhitespaceFacet()
 		{
 			return ((::System::Xml::Schema::XmlSchemaWhiteSpace(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_BUILTINWHITESPACEFACET_OFFSET))(this);
+		}
+
+		::System::Xml::Schema::RestrictionFlags get_ValidRestrictionFlags()
+		{
+			return ((::System::Xml::Schema::RestrictionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_HEXBINARY_GET_VALIDRESTRICTIONFLAGS_OFFSET))(this);
 		}
 
 		::System::Int32 Compare(::System::Object* value1, ::System::Object* value2)

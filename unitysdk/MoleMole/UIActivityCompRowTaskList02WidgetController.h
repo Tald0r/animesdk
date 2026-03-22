@@ -1,0 +1,86 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_8127D35606966C67_30;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB5D8010)
+#define MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB5D80B0)
+#define MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB5D7EC0)
+#define MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB5D7F60)
+#define MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_SETRANKDESC_OFFSET UNITYSDK_OFFSET(0xB5D8230)
+#define MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_SETSCOREDESC_OFFSET UNITYSDK_OFFSET(0xB5D8190)
+#define MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB5D82D0)
+#define MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB5D8300)
+#define MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB5D8370)
+#define MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB5D83F0)
+#define MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB5D8450)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityCompRowTaskList02WidgetController_TypeDefinitionIndex = 63658;
+
+	class UIActivityCompRowTaskList02WidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_8127D35606966C67_30* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetScoreDesc(::System::String* scoreDesc)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_SETSCOREDESC_OFFSET))(this, scoreDesc);
+		}
+
+		::System::Void SetRankDesc(::System::String* rankDesc)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER_SETRANKDESC_OFFSET))(this, rankDesc);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPROWTASKLIST02WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

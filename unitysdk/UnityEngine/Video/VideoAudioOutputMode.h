@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Video
 {
-	inline static constexpr unsigned int VideoAudioOutputMode_TypeDefinitionIndex = 5908;
+	inline static constexpr unsigned int VideoAudioOutputMode_TypeDefinitionIndex = 23941;
 
 	enum class VideoAudioOutputMode : ::System::Int32
 	{

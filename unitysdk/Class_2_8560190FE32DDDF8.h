@@ -1,0 +1,83 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_63D18ECF87218619_1.h"
+
+namespace MoleMole::GalGame { class GalJumpChapterNode; }
+namespace MoleMole::GalGame { class GalPlayableNodeBase; }
+
+#define CLASS_2_8560190FE32DDDF8_METHOD_2_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0x9EED5D0)
+#define CLASS_2_8560190FE32DDDF8_METHOD_2_391A84BCD9F51317_2_OFFSET UNITYSDK_OFFSET(0x9EED760)
+#define CLASS_2_8560190FE32DDDF8_METHOD_2_391A84BCD9F51317_3_OFFSET UNITYSDK_OFFSET(0x9EED7C0)
+#define CLASS_2_8560190FE32DDDF8_METHOD_2_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0x9EED570)
+#define CLASS_2_8560190FE32DDDF8_METHOD_2_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x9EED4C0)
+#define CLASS_2_8560190FE32DDDF8_METHOD_2_4FFBD2C0EA9FF935_OFFSET UNITYSDK_OFFSET(0x9EED820)
+#define CLASS_2_8560190FE32DDDF8_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x9EED6A0)
+#define CLASS_2_8560190FE32DDDF8_METHOD_2_CA373AA1C7054598_2_OFFSET UNITYSDK_OFFSET(0x9EED700)
+#define CLASS_2_8560190FE32DDDF8_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x9EED630)
+#define CLASS_2_8560190FE32DDDF8_METHOD_2_D8FA8F2233576021_OFFSET UNITYSDK_OFFSET(0x9EED3C0)
+#define CLASS_2_8560190FE32DDDF8__CTOR_OFFSET UNITYSDK_OFFSET(0x9EED690)
+
+inline static constexpr unsigned int Class_2_8560190FE32DDDF8_TypeDefinitionIndex = 70552;
+
+class Class_2_8560190FE32DDDF8 : public ::Class_1_63D18ECF87218619_1
+{
+public:
+	::MoleMole::GalGame::GalJumpChapterNode* Field_2_0; // 0x10
+	::System::Boolean Field_2_2; // 0x18
+	::System::Boolean Field_2_1; // 0x19
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_8560190FE32DDDF8__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_D8FA8F2233576021(::MoleMole::GalGame::GalPlayableNodeBase* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::GalGame::GalPlayableNodeBase*))((::PBYTE)hIl2Cpp + CLASS_2_8560190FE32DDDF8_METHOD_2_D8FA8F2233576021_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_4343F372F34C05BF()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_8560190FE32DDDF8_METHOD_2_4343F372F34C05BF_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_391A84BCD9F51317()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_8560190FE32DDDF8_METHOD_2_391A84BCD9F51317_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_391A84BCD9F51317_1()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_8560190FE32DDDF8_METHOD_2_391A84BCD9F51317_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_8560190FE32DDDF8_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_8560190FE32DDDF8_METHOD_2_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_2()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_8560190FE32DDDF8_METHOD_2_CA373AA1C7054598_2_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_391A84BCD9F51317_2()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_8560190FE32DDDF8_METHOD_2_391A84BCD9F51317_2_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_391A84BCD9F51317_3()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_8560190FE32DDDF8_METHOD_2_391A84BCD9F51317_3_OFFSET))(this);
+	}
+
+	::System::Void Method_2_4FFBD2C0EA9FF935(::MoleMole::GalGame::GalPlayableNodeBase* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::GalGame::GalPlayableNodeBase*))((::PBYTE)hIl2Cpp + CLASS_2_8560190FE32DDDF8_METHOD_2_4FFBD2C0EA9FF935_OFFSET))(this, a1);
+	}
+};

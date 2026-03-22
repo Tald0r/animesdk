@@ -1,0 +1,101 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+#include "unitysdk/Struct_2_8FE35F6355424026_1.h"
+
+class Class_1_21A92C5FAA405415;
+class Class_2_208CC9941471731A_454;
+class Class_2_266E760D880E5A4D;
+class Class_3_7A267C1006DF3527_1;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x69ADA30)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x69ADBB0)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x69ADAD0)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x69AD990)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_SETDAMAGETYPE_OFFSET UNITYSDK_OFFSET(0x69AE010)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_UPDATEAVATAR_OFFSET UNITYSDK_OFFSET(0x69AE400)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_UPDATEBABEL_OFFSET UNITYSDK_OFFSET(0x69AE100)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_UPDATEUI_OFFSET UNITYSDK_OFFSET(0x69ADCE0)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x69AE710)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x69AE720)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x69AE790)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x69AE810)
+#define MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x69AE890)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIYorozuyaAbyssHeadRowV2WidgetController_TypeDefinitionIndex = 52626;
+
+	class UIYorozuyaAbyssHeadRowV2WidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_266E760D880E5A4D* _view; // 0x2D0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void UpdateUI(::Class_1_21A92C5FAA405415* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_21A92C5FAA405415*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_UPDATEUI_OFFSET))(this, data);
+		}
+
+		::System::Void UpdateBabel(::Class_3_7A267C1006DF3527_1* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_7A267C1006DF3527_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_UPDATEBABEL_OFFSET))(this, data);
+		}
+
+		::System::Void UpdateAvatar(::Struct_2_8FE35F6355424026_1 data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_8FE35F6355424026_1))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_UPDATEAVATAR_OFFSET))(this, data);
+		}
+
+		::System::Void SetDamageType(::Class_2_208CC9941471731A_454* avatarBattleTemplate, ::System::Int32 damageType, ::System::Int32 elementSubID)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_454*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER_SETDAMAGETYPE_OFFSET))(this, avatarBattleTemplate, damageType, elementSubID);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYAABYSSHEADROWV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -2,11 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
+namespace System { class Object; }
 namespace System { class String; }
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int ValueDropdownItem_1_TypeDefinitionIndex = 9093;
+	inline static constexpr unsigned int ValueDropdownItem_1_TypeDefinitionIndex = 7247;
 
 	template <typename T>
 	struct ValueDropdownItem_1

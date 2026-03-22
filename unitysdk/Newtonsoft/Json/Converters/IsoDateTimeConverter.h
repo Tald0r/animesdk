@@ -11,18 +11,24 @@ namespace System { class String; }
 namespace System { class Type; }
 namespace System::Globalization { class CultureInfo; }
 
-#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_GET_CULTURE_OFFSET UNITYSDK_OFFSET(0x15D7AF50)
-#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_READJSON_OFFSET UNITYSDK_OFFSET(0x15D7B3D0)
-#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_WRITEJSON_OFFSET UNITYSDK_OFFSET(0x15D7AFE0)
-#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x15D7BA00)
+#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_GET_CULTURE_OFFSET UNITYSDK_OFFSET(0x1B1237C0)
+#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_GET_DATETIMEFORMAT_OFFSET UNITYSDK_OFFSET(0x1B123770)
+#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_GET_DATETIMESTYLES_OFFSET UNITYSDK_OFFSET(0x1B123750)
+#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_READJSON_OFFSET UNITYSDK_OFFSET(0x1B123C20)
+#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_SET_CULTURE_OFFSET UNITYSDK_OFFSET(0x1B123850)
+#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_SET_DATETIMEFORMAT_OFFSET UNITYSDK_OFFSET(0x1B123790)
+#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_SET_DATETIMESTYLES_OFFSET UNITYSDK_OFFSET(0x1B123760)
+#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_WRITEJSON_OFFSET UNITYSDK_OFFSET(0x1B123860)
+#define NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1241A0)
 
 namespace Newtonsoft::Json::Converters
 {
-	inline static constexpr unsigned int IsoDateTimeConverter_TypeDefinitionIndex = 8296;
+	inline static constexpr unsigned int IsoDateTimeConverter_TypeDefinitionIndex = 7088;
 
 	class IsoDateTimeConverter : public ::Newtonsoft::Json::Converters::DateTimeConverterBase
 	{
 	public:
+		// static const ::System::String* DefaultDateTimeFormat; // 0x0
 		::System::String* _dateTimeFormat; // 0x10
 		::System::Globalization::CultureInfo* _culture; // 0x18
 		::System::Globalization::DateTimeStyles _dateTimeStyles; // 0x20
@@ -32,9 +38,34 @@ namespace Newtonsoft::Json::Converters
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER__CTOR_OFFSET))(this);
 		}
 
+		::System::Globalization::DateTimeStyles get_DateTimeStyles()
+		{
+			return ((::System::Globalization::DateTimeStyles(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_GET_DATETIMESTYLES_OFFSET))(this);
+		}
+
+		::System::Void set_DateTimeStyles(::System::Globalization::DateTimeStyles value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Globalization::DateTimeStyles))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_SET_DATETIMESTYLES_OFFSET))(this, value);
+		}
+
+		::System::String* get_DateTimeFormat()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_GET_DATETIMEFORMAT_OFFSET))(this);
+		}
+
+		::System::Void set_DateTimeFormat(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_SET_DATETIMEFORMAT_OFFSET))(this, value);
+		}
+
 		::System::Globalization::CultureInfo* get_Culture()
 		{
 			return ((::System::Globalization::CultureInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_GET_CULTURE_OFFSET))(this);
+		}
+
+		::System::Void set_Culture(::System::Globalization::CultureInfo* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Globalization::CultureInfo*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_CONVERTERS_ISODATETIMECONVERTER_SET_CULTURE_OFFSET))(this, value);
 		}
 
 		::System::Void WriteJson(::Newtonsoft::Json::JsonWriter* writer, ::System::Object* value, ::Newtonsoft::Json::JsonSerializer* serializer)

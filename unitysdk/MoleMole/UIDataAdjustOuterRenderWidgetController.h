@@ -1,0 +1,115 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_84861DFCE46AC3BE.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_72E2AB5ACACAD004;
+class Class_3_5F814DBCD2974AFB;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIDataAdjustGameWidgetController; }
+
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_BINDGAMEWIDGET_OFFSET UNITYSDK_OFFSET(0xA8ECA00)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA8EC7B0)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA8EC850)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA8EC8C0)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA8EBDE0)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA8EC060)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONWIN_OFFSET UNITYSDK_OFFSET(0xA8ECAF0)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_RESETVIEW_OFFSET UNITYSDK_OFFSET(0xA8EC120)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA8ECC90)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET UNITYSDK_OFFSET(0xA8ECCC0)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA8ECCF0)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA8ECD60)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA8ECD70)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA8ECDF0)
+#define MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA8ECE50)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIDataAdjustOuterRenderWidgetController_TypeDefinitionIndex = 36657;
+
+	class UIDataAdjustOuterRenderWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_72E2AB5ACACAD004* _view; // 0x2A0
+		::Class_3_5F814DBCD2974AFB* _model; // 0x2A8
+		::MoleMole::UIDataAdjustGameWidgetController* gameWidget; // 0x2B0
+		::System::Boolean isWinning; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void ResetView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_RESETVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnWin(::Enum_3_84861DFCE46AC3BE result)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_84861DFCE46AC3BE))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_ONWIN_OFFSET))(this, result);
+		}
+
+		::System::Void BindGameWidget(::MoleMole::UIDataAdjustGameWidgetController* gameWidget)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIDataAdjustGameWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER_BINDGAMEWIDGET_OFFSET))(this, gameWidget);
+		}
+
+		::System::Void _OnUIInit_b__3_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTOUTERRENDERWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

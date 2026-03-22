@@ -1,0 +1,124 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_195AA062117E5DEF.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_9CF9955F8B7A43EF;
+class Class_2_2C0041594758236B;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONCLICKCOLLECTTAB_OFFSET UNITYSDK_OFFSET(0xC0CCE50)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0CC4C0)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONITEMRESELECT_OFFSET UNITYSDK_OFFSET(0xC0CC720)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xC0CC670)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xC0CC890)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0CC560)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0CC390)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_REFRESHSTATE_OFFSET UNITYSDK_OFFSET(0xC0CCB70)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_SETTABSELECTSTATE_OFFSET UNITYSDK_OFFSET(0xC0CD150)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_SETTABSTATE_OFFSET UNITYSDK_OFFSET(0xC0CCF10)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC0CD220)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0CD230)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONITEMRESELECT_OFFSET UNITYSDK_OFFSET(0xC0CD2A0)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xC0CD300)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xC0CD370)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0CD3F0)
+#define MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0CD470)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICinemaCollectTabWidgetController_TypeDefinitionIndex = 52851;
+
+	class UICinemaCollectTabWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_2C0041594758236B* _view; // 0x2D0
+		::Class_1_9CF9955F8B7A43EF* collectData; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnItemReselect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONITEMRESELECT_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnClickCollectTab()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_ONCLICKCOLLECTTAB_OFFSET))(this);
+		}
+
+		::System::Void RefreshState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_REFRESHSTATE_OFFSET))(this);
+		}
+
+		::System::Void SetTabSelectState(::System::Boolean selectState)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_SETTABSELECTSTATE_OFFSET))(this, selectState);
+		}
+
+		::System::Void SetTabState(::Enum_3_195AA062117E5DEF collectState)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_195AA062117E5DEF))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER_SETTABSTATE_OFFSET))(this, collectState);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemReselect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONITEMRESELECT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMACOLLECTTABWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

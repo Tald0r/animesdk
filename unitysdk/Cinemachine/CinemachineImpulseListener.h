@@ -6,23 +6,30 @@
 
 namespace Cinemachine { class CinemachineVirtualCameraBase; }
 
-#define CINEMACHINE_CINEMACHINEIMPULSELISTENER_POSTPIPELINESTAGECALLBACK_OFFSET UNITYSDK_OFFSET(0x11249C30)
-#define CINEMACHINE_CINEMACHINEIMPULSELISTENER__CTOR_OFFSET UNITYSDK_OFFSET(0x1124A2A0)
+#define CINEMACHINE_CINEMACHINEIMPULSELISTENER_POSTPIPELINESTAGECALLBACK_OFFSET UNITYSDK_OFFSET(0x1AD05C40)
+#define CINEMACHINE_CINEMACHINEIMPULSELISTENER_RESET_OFFSET UNITYSDK_OFFSET(0x1AD05C20)
+#define CINEMACHINE_CINEMACHINEIMPULSELISTENER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD05E60)
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int CinemachineImpulseListener_TypeDefinitionIndex = 30036;
+	inline static constexpr unsigned int CinemachineImpulseListener_TypeDefinitionIndex = 31146;
 
 	class CinemachineImpulseListener : public ::Cinemachine::CinemachineExtension
 	{
 	public:
-		::System::Int32 m_ChannelMask; // 0x28
-		::System::Single m_Gain; // 0x2C
-		::System::Boolean m_Use2DDistance; // 0x30
+		::Cinemachine::CinemachineCore_Stage m_ApplyAfter; // 0x28
+		::System::Int32 m_ChannelMask; // 0x2C
+		::System::Single m_Gain; // 0x30
+		::System::Boolean m_Use2DDistance; // 0x34
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CINEMACHINE_CINEMACHINEIMPULSELISTENER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CINEMACHINE_CINEMACHINEIMPULSELISTENER_RESET_OFFSET))(this);
 		}
 
 		::System::Void PostPipelineStageCallback(::Cinemachine::CinemachineVirtualCameraBase* vcam, ::Cinemachine::CinemachineCore_Stage stage, ::Cinemachine::CameraState& state, ::System::Single deltaTime)

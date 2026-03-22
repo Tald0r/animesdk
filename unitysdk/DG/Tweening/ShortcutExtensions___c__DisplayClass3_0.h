@@ -1,0 +1,36 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/Color.h"
+
+namespace UnityEngine { class Camera; }
+
+#define DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B12BC40)
+#define DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS3_0__DOCOLOR_B__0_OFFSET UNITYSDK_OFFSET(0x1B12BC50)
+#define DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS3_0__DOCOLOR_B__1_OFFSET UNITYSDK_OFFSET(0x1B12BC90)
+
+namespace DG::Tweening
+{
+	inline static constexpr unsigned int ShortcutExtensions___c__DisplayClass3_0_TypeDefinitionIndex = 24025;
+
+	class ShortcutExtensions___c__DisplayClass3_0 : public ::System::Object
+	{
+	public:
+		::UnityEngine::Camera* target; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS3_0__CTOR_OFFSET))(this);
+		}
+
+		::UnityEngine::Color _DOColor_b__0()
+		{
+			return ((::UnityEngine::Color(*)(::PVOID))((::PBYTE)hIl2Cpp + DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS3_0__DOCOLOR_B__0_OFFSET))(this);
+		}
+
+		::System::Void _DOColor_b__1(::UnityEngine::Color x)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS3_0__DOCOLOR_B__1_OFFSET))(this, x);
+		}
+	};
+}

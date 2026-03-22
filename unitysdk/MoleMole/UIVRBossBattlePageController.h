@@ -1,0 +1,246 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_0FD5CF626EB7D21F.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_49ABC235CB23B56F.h"
+#include "unitysdk/Struct_2_8F9E26CA2B644EB8.h"
+
+class Class_0_16E4307DCC419505_7;
+class Class_1_7ECB9691B142D586;
+class Class_2_208CC9941471731A_772;
+class Class_2_60638234271CCDB8_91;
+class Class_2_82E692415C3A4E10_Class_1_4BFD88CA6931108F;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralRewardListBtnWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_GETORDERNUMFROMBOSSQUESTID_OFFSET UNITYSDK_OFFSET(0xACF2C50)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_GETORDERNUMFROMLITTLEBOSSQUESTID_OFFSET UNITYSDK_OFFSET(0xACF2A70)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xACF08C0)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_HANDLECLOSE_OFFSET UNITYSDK_OFFSET(0xACF37F0)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONCLICKBOSSREWARDCALLBACK_OFFSET UNITYSDK_OFFSET(0xACF4180)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xACF08D0)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xACF2E30)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONITEMCLICK_OFFSET UNITYSDK_OFFSET(0xACF33E0)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xACF1010)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xACF2F70)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xACF31B0)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xACF0970)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xACF0E30)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_OPENTIPSPANEL_OFFSET UNITYSDK_OFFSET(0xACF3630)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_REFRESHEXVR_OFFSET UNITYSDK_OFFSET(0xACF2820)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_REFRESHREWARDBUFFVIEW_OFFSET UNITYSDK_OFFSET(0xACF28A0)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_REFRESHREWARDINFO_OFFSET UNITYSDK_OFFSET(0xACF1EC0)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_UPDATENEXTREFRESHTIME_OFFSET UNITYSDK_OFFSET(0xACF3F50)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_VRBOSSINFOUPDATEHANDLE_OFFSET UNITYSDK_OFFSET(0xACF3860)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xACF42F0)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONSHOW_B__16_0_OFFSET UNITYSDK_OFFSET(0xACF44A0)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONSHOW_B__16_1_OFFSET UNITYSDK_OFFSET(0xACF4980)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONSHOW_B__16_2_OFFSET UNITYSDK_OFFSET(0xACF4C20)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONSHOW_B__16_7_OFFSET UNITYSDK_OFFSET(0xACF4DF0)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONUIINIT_B__14_0_OFFSET UNITYSDK_OFFSET(0xACF4380)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONUIINIT_B__14_1_OFFSET UNITYSDK_OFFSET(0xACF4480)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__REFRESHREWARDINFO_B__26_0_OFFSET UNITYSDK_OFFSET(0xACF4E40)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xACF4E50)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0xACF4EC0)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xACF4F20)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xACF4F30)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xACF4F40)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xACF4F50)
+#define MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xACF4F60)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVRBossBattlePageController_TypeDefinitionIndex = 51172;
+
+	class UIVRBossBattlePageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::String* BossTitle; // 0x0
+		// static const ::System::String* LittleBossTitle; // 0x0
+		::Enum_3_0FD5CF626EB7D21F _showType; // 0x2F8
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_772*>* _bossQuests; // 0x300
+		::Class_1_7ECB9691B142D586* _videoPlayerHelper; // 0x308
+		::Class_2_60638234271CCDB8_91* _view; // 0x310
+		::MoleMole::UIGeneralRewardListBtnWidgetController* _rewardListBtnWidget; // 0x318
+		::Struct_2_49ABC235CB23B56F _timerHandle; // 0x320
+		::System::String* _currentTextureSheetKey; // 0x330
+		::Struct_2_8F9E26CA2B644EB8 JumpData; // 0x338
+		::System::Int32 JumpQuestId; // 0x344
+		::Class_2_82E692415C3A4E10_Class_1_4BFD88CA6931108F* _buffShowingContext; // 0x348
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Int32 GetOrderNumFromLittleBossQuestID(::System::Int32 questID)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_GETORDERNUMFROMLITTLEBOSSQUESTID_OFFSET))(this, questID);
+		}
+
+		::System::Int32 GetOrderNumFromBossQuestID(::System::Int32 questID)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_GETORDERNUMFROMBOSSQUESTID_OFFSET))(this, questID);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnItemClick(::System::Int32 idx)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONITEMCLICK_OFFSET))(this, idx);
+		}
+
+		::System::Void OpenTipsPanel(::Class_2_208CC9941471731A_772* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_772*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_OPENTIPSPANEL_OFFSET))(this, data);
+		}
+
+		::System::Void HandleClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_HANDLECLOSE_OFFSET))(this);
+		}
+
+		::System::Void VRBossInfoUpdateHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_VRBOSSINFOUPDATEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void RefreshRewardInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_REFRESHREWARDINFO_OFFSET))(this);
+		}
+
+		::System::Void OnClickBossRewardCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_ONCLICKBOSSREWARDCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void UpdateNextRefreshTime()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_UPDATENEXTREFRESHTIME_OFFSET))(this);
+		}
+
+		::System::Void RefreshExVR()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_REFRESHEXVR_OFFSET))(this);
+		}
+
+		::System::Void RefreshRewardBuffView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER_REFRESHREWARDBUFFVIEW_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__14_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONUIINIT_B__14_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__14_1(::Class_1_7ECB9691B142D586* helper)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7ECB9691B142D586*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONUIINIT_B__14_1_OFFSET))(this, helper);
+		}
+
+		::System::Int32 _OnShow_b__16_0(::Class_2_208CC9941471731A_772* l, ::Class_2_208CC9941471731A_772* r)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_772*, ::Class_2_208CC9941471731A_772*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONSHOW_B__16_0_OFFSET))(this, l, r);
+		}
+
+		::System::Int32 _OnShow_b__16_1(::Class_2_208CC9941471731A_772* l, ::Class_2_208CC9941471731A_772* r)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_772*, ::Class_2_208CC9941471731A_772*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONSHOW_B__16_1_OFFSET))(this, l, r);
+		}
+
+		::System::Void _OnShow_b__16_2(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONSHOW_B__16_2_OFFSET))(this, args);
+		}
+
+		::System::Void _OnShow_b__16_7(::Class_0_16E4307DCC419505_7* message)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__ONSHOW_B__16_7_OFFSET))(this, message);
+		}
+
+		::System::Void _RefreshRewardInfo_b__26_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER__REFRESHREWARDINFO_B__26_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVRBOSSBATTLEPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

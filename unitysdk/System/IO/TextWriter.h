@@ -8,70 +8,87 @@ namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Text { class Encoding; }
 
-#define SYSTEM_IO_TEXTWRITER_CLOSE_OFFSET UNITYSDK_OFFSET(0x15C93970)
-#define SYSTEM_IO_TEXTWRITER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x15C939C0)
-#define SYSTEM_IO_TEXTWRITER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x15C919C0)
-#define SYSTEM_IO_TEXTWRITER_FLUSH_OFFSET UNITYSDK_OFFSET(0x15C93A10)
-#define SYSTEM_IO_TEXTWRITER_GET_FORMATPROVIDER_OFFSET UNITYSDK_OFFSET(0x15C938E0)
-#define SYSTEM_IO_TEXTWRITER_GET_INITIALNEWLINE_OFFSET UNITYSDK_OFFSET(0x15C93790)
-#define SYSTEM_IO_TEXTWRITER_SYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x15C93A20)
-#define SYSTEM_IO_TEXTWRITER_WRITELINE_1_OFFSET UNITYSDK_OFFSET(0x15C93FA0)
-#define SYSTEM_IO_TEXTWRITER_WRITELINE_2_OFFSET UNITYSDK_OFFSET(0x15C93FD0)
-#define SYSTEM_IO_TEXTWRITER_WRITELINE_3_OFFSET UNITYSDK_OFFSET(0x15C94010)
-#define SYSTEM_IO_TEXTWRITER_WRITELINE_4_OFFSET UNITYSDK_OFFSET(0x15C941F0)
-#define SYSTEM_IO_TEXTWRITER_WRITELINE_5_OFFSET UNITYSDK_OFFSET(0x15C94260)
-#define SYSTEM_IO_TEXTWRITER_WRITELINE_6_OFFSET UNITYSDK_OFFSET(0x15C942E0)
-#define SYSTEM_IO_TEXTWRITER_WRITELINE_7_OFFSET UNITYSDK_OFFSET(0x15C94360)
-#define SYSTEM_IO_TEXTWRITER_WRITELINE_OFFSET UNITYSDK_OFFSET(0x15C93F80)
-#define SYSTEM_IO_TEXTWRITER_WRITE_1_OFFSET UNITYSDK_OFFSET(0x15C93BE0)
-#define SYSTEM_IO_TEXTWRITER_WRITE_2_OFFSET UNITYSDK_OFFSET(0x15C93C10)
-#define SYSTEM_IO_TEXTWRITER_WRITE_3_OFFSET UNITYSDK_OFFSET(0x15C93D90)
-#define SYSTEM_IO_TEXTWRITER_WRITE_4_OFFSET UNITYSDK_OFFSET(0x15C93E00)
-#define SYSTEM_IO_TEXTWRITER_WRITE_5_OFFSET UNITYSDK_OFFSET(0x15C93E90)
-#define SYSTEM_IO_TEXTWRITER_WRITE_6_OFFSET UNITYSDK_OFFSET(0x15C93F00)
-#define SYSTEM_IO_TEXTWRITER_WRITE_OFFSET UNITYSDK_OFFSET(0x15C93BD0)
-#define SYSTEM_IO_TEXTWRITER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15C94430)
-#define SYSTEM_IO_TEXTWRITER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C90D80)
-#define SYSTEM_IO_TEXTWRITER__CTOR_OFFSET UNITYSDK_OFFSET(0x15C937F0)
+#define SYSTEM_IO_TEXTWRITER_CLOSE_OFFSET UNITYSDK_OFFSET(0x197B28E0)
+#define SYSTEM_IO_TEXTWRITER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x197B2940)
+#define SYSTEM_IO_TEXTWRITER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x197B2930)
+#define SYSTEM_IO_TEXTWRITER_FLUSH_OFFSET UNITYSDK_OFFSET(0x197B2990)
+#define SYSTEM_IO_TEXTWRITER_GET_FORMATPROVIDER_OFFSET UNITYSDK_OFFSET(0x197B2850)
+#define SYSTEM_IO_TEXTWRITER_GET_INITIALNEWLINE_OFFSET UNITYSDK_OFFSET(0x197B2610)
+#define SYSTEM_IO_TEXTWRITER_GET_NEWLINE_OFFSET UNITYSDK_OFFSET(0x197B29A0)
+#define SYSTEM_IO_TEXTWRITER_SET_NEWLINE_OFFSET UNITYSDK_OFFSET(0x197B2A50)
+#define SYSTEM_IO_TEXTWRITER_SYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x197B2B40)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_10_OFFSET UNITYSDK_OFFSET(0x197B3560)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_11_OFFSET UNITYSDK_OFFSET(0x197B3740)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_12_OFFSET UNITYSDK_OFFSET(0x197B3870)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_13_OFFSET UNITYSDK_OFFSET(0x197B38E0)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_14_OFFSET UNITYSDK_OFFSET(0x197B3960)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_1_OFFSET UNITYSDK_OFFSET(0x197B33A0)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_2_OFFSET UNITYSDK_OFFSET(0x197B33D0)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_3_OFFSET UNITYSDK_OFFSET(0x197B3400)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_4_OFFSET UNITYSDK_OFFSET(0x197B3440)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_5_OFFSET UNITYSDK_OFFSET(0x197B3470)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_6_OFFSET UNITYSDK_OFFSET(0x197B34A0)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_7_OFFSET UNITYSDK_OFFSET(0x197B34D0)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_8_OFFSET UNITYSDK_OFFSET(0x197B3500)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_9_OFFSET UNITYSDK_OFFSET(0x197B3530)
+#define SYSTEM_IO_TEXTWRITER_WRITELINE_OFFSET UNITYSDK_OFFSET(0x197B3380)
+#define SYSTEM_IO_TEXTWRITER_WRITE_10_OFFSET UNITYSDK_OFFSET(0x197B3020)
+#define SYSTEM_IO_TEXTWRITER_WRITE_11_OFFSET UNITYSDK_OFFSET(0x197B3140)
+#define SYSTEM_IO_TEXTWRITER_WRITE_12_OFFSET UNITYSDK_OFFSET(0x197B31B0)
+#define SYSTEM_IO_TEXTWRITER_WRITE_13_OFFSET UNITYSDK_OFFSET(0x197B3230)
+#define SYSTEM_IO_TEXTWRITER_WRITE_14_OFFSET UNITYSDK_OFFSET(0x197B32B0)
+#define SYSTEM_IO_TEXTWRITER_WRITE_1_OFFSET UNITYSDK_OFFSET(0x197B2C10)
+#define SYSTEM_IO_TEXTWRITER_WRITE_2_OFFSET UNITYSDK_OFFSET(0x197B2C40)
+#define SYSTEM_IO_TEXTWRITER_WRITE_3_OFFSET UNITYSDK_OFFSET(0x197B2DC0)
+#define SYSTEM_IO_TEXTWRITER_WRITE_4_OFFSET UNITYSDK_OFFSET(0x197B2E00)
+#define SYSTEM_IO_TEXTWRITER_WRITE_5_OFFSET UNITYSDK_OFFSET(0x197B2E50)
+#define SYSTEM_IO_TEXTWRITER_WRITE_6_OFFSET UNITYSDK_OFFSET(0x197B2EA0)
+#define SYSTEM_IO_TEXTWRITER_WRITE_7_OFFSET UNITYSDK_OFFSET(0x197B2EF0)
+#define SYSTEM_IO_TEXTWRITER_WRITE_8_OFFSET UNITYSDK_OFFSET(0x197B2F40)
+#define SYSTEM_IO_TEXTWRITER_WRITE_9_OFFSET UNITYSDK_OFFSET(0x197B2F90)
+#define SYSTEM_IO_TEXTWRITER_WRITE_OFFSET UNITYSDK_OFFSET(0x197B2C00)
+#define SYSTEM_IO_TEXTWRITER__CCTOR_OFFSET UNITYSDK_OFFSET(0x197B3A30)
+#define SYSTEM_IO_TEXTWRITER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x197B2760)
+#define SYSTEM_IO_TEXTWRITER__CTOR_OFFSET UNITYSDK_OFFSET(0x197B2670)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int TextWriter_TypeDefinitionIndex = 698;
+	inline static constexpr unsigned int TextWriter_TypeDefinitionIndex = 667;
 
 	class TextWriter : public ::System::MarshalByRefObject
 	{
 	public:
-		static ::System::Action_1<::System::Object*>** StaticGet__WriteCharDelegate()
-		{
-			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x9150);
-		}
-		static ::System::Action_1<::System::Object*>** StaticGet__WriteCharArrayRangeDelegate()
-		{
-			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x9158);
-		}
 		static ::System::Action_1<::System::Object*>** StaticGet__WriteLineCharArrayRangeDelegate()
 		{
-			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x9160);
-		}
-		static ::System::IO::TextWriter** StaticGet_Null()
-		{
-			return (::System::IO::TextWriter**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x9168);
-		}
-		static ::System::Action_1<::System::Object*>** StaticGet__WriteStringDelegate()
-		{
-			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x9170);
-		}
-		static ::System::Action_1<::System::Object*>** StaticGet__WriteLineCharDelegate()
-		{
-			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x9178);
-		}
-		static ::System::Action_1<::System::Object*>** StaticGet__FlushDelegate()
-		{
-			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x9180);
+			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x11F0);
 		}
 		static ::System::Action_1<::System::Object*>** StaticGet__WriteLineStringDelegate()
 		{
-			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x9188);
+			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x11F8);
+		}
+		static ::System::Action_1<::System::Object*>** StaticGet__WriteStringDelegate()
+		{
+			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x1200);
+		}
+		static ::System::Action_1<::System::Object*>** StaticGet__WriteCharArrayRangeDelegate()
+		{
+			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x1208);
+		}
+		static ::System::Action_1<::System::Object*>** StaticGet__FlushDelegate()
+		{
+			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x1210);
+		}
+		static ::System::Action_1<::System::Object*>** StaticGet__WriteCharDelegate()
+		{
+			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x1218);
+		}
+		static ::System::IO::TextWriter** StaticGet_Null()
+		{
+			return (::System::IO::TextWriter**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x1220);
+		}
+		static ::System::Action_1<::System::Object*>** StaticGet__WriteLineCharDelegate()
+		{
+			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(TextWriter_TypeDefinitionIndex)->GetStaticField(0x1228);
 		}
 		::Il2CppArray<::System::Char>* CoreNewLine; // 0x18
 		::System::IFormatProvider* InternalFormatProvider; // 0x20
@@ -121,6 +138,16 @@ namespace System::IO
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_FLUSH_OFFSET))(this);
 		}
 
+		::System::String* get_NewLine()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_GET_NEWLINE_OFFSET))(this);
+		}
+
+		::System::Void set_NewLine(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_SET_NEWLINE_OFFSET))(this, value);
+		}
+
 		static ::System::IO::TextWriter* Synchronized(::System::IO::TextWriter* writer)
 		{
 			return ((::System::IO::TextWriter*(*)(::System::IO::TextWriter*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_SYNCHRONIZED_OFFSET))(writer);
@@ -141,24 +168,64 @@ namespace System::IO
 			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Char>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_2_OFFSET))(this, buffer, index, count);
 		}
 
-		::System::Void Write_3(::System::Int32 value)
+		::System::Void Write_3(::System::Boolean value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_3_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_3_OFFSET))(this, value);
 		}
 
-		::System::Void Write_4(::System::String* value)
+		::System::Void Write_4(::System::Int32 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_4_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_4_OFFSET))(this, value);
 		}
 
-		::System::Void Write_5(::System::String* format, ::System::Object* arg0)
+		::System::Void Write_5(::System::UInt32 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_5_OFFSET))(this, format, arg0);
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_5_OFFSET))(this, value);
 		}
 
-		::System::Void Write_6(::System::String* format, ::System::Object* arg0, ::System::Object* arg1, ::System::Object* arg2)
+		::System::Void Write_6(::System::Int64 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_6_OFFSET))(this, format, arg0, arg1, arg2);
+			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_6_OFFSET))(this, value);
+		}
+
+		::System::Void Write_7(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_7_OFFSET))(this, value);
+		}
+
+		::System::Void Write_8(::System::Double value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Double))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_8_OFFSET))(this, value);
+		}
+
+		::System::Void Write_9(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_9_OFFSET))(this, value);
+		}
+
+		::System::Void Write_10(::System::Object* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_10_OFFSET))(this, value);
+		}
+
+		::System::Void Write_11(::System::String* format, ::System::Object* arg0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_11_OFFSET))(this, format, arg0);
+		}
+
+		::System::Void Write_12(::System::String* format, ::System::Object* arg0, ::System::Object* arg1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_12_OFFSET))(this, format, arg0, arg1);
+		}
+
+		::System::Void Write_13(::System::String* format, ::System::Object* arg0, ::System::Object* arg1, ::System::Object* arg2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_13_OFFSET))(this, format, arg0, arg1, arg2);
+		}
+
+		::System::Void Write_14(::System::String* format, ::Il2CppArray<::System::Object*>* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITE_14_OFFSET))(this, format, arg);
 		}
 
 		::System::Void WriteLine()
@@ -171,34 +238,69 @@ namespace System::IO
 			return ((::System::Void(*)(::PVOID, ::System::Char))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_1_OFFSET))(this, value);
 		}
 
-		::System::Void WriteLine_2(::Il2CppArray<::System::Char>* buffer, ::System::Int32 index, ::System::Int32 count)
+		::System::Void WriteLine_2(::Il2CppArray<::System::Char>* buffer)
 		{
-			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Char>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_2_OFFSET))(this, buffer, index, count);
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Char>*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_2_OFFSET))(this, buffer);
 		}
 
-		::System::Void WriteLine_3(::System::String* value)
+		::System::Void WriteLine_3(::Il2CppArray<::System::Char>* buffer, ::System::Int32 index, ::System::Int32 count)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_3_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Char>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_3_OFFSET))(this, buffer, index, count);
 		}
 
-		::System::Void WriteLine_4(::System::String* format, ::System::Object* arg0)
+		::System::Void WriteLine_4(::System::Boolean value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_4_OFFSET))(this, format, arg0);
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_4_OFFSET))(this, value);
 		}
 
-		::System::Void WriteLine_5(::System::String* format, ::System::Object* arg0, ::System::Object* arg1)
+		::System::Void WriteLine_5(::System::Int32 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_5_OFFSET))(this, format, arg0, arg1);
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_5_OFFSET))(this, value);
 		}
 
-		::System::Void WriteLine_6(::System::String* format, ::System::Object* arg0, ::System::Object* arg1, ::System::Object* arg2)
+		::System::Void WriteLine_6(::System::UInt32 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_6_OFFSET))(this, format, arg0, arg1, arg2);
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_6_OFFSET))(this, value);
 		}
 
-		::System::Void WriteLine_7(::System::String* format, ::Il2CppArray<::System::Object*>* arg)
+		::System::Void WriteLine_7(::System::Int64 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_7_OFFSET))(this, format, arg);
+			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_7_OFFSET))(this, value);
+		}
+
+		::System::Void WriteLine_8(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_8_OFFSET))(this, value);
+		}
+
+		::System::Void WriteLine_9(::System::Double value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Double))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_9_OFFSET))(this, value);
+		}
+
+		::System::Void WriteLine_10(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_10_OFFSET))(this, value);
+		}
+
+		::System::Void WriteLine_11(::System::Object* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_11_OFFSET))(this, value);
+		}
+
+		::System::Void WriteLine_12(::System::String* format, ::System::Object* arg0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_12_OFFSET))(this, format, arg0);
+		}
+
+		::System::Void WriteLine_13(::System::String* format, ::System::Object* arg0, ::System::Object* arg1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_13_OFFSET))(this, format, arg0, arg1);
+		}
+
+		::System::Void WriteLine_14(::System::String* format, ::Il2CppArray<::System::Object*>* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + SYSTEM_IO_TEXTWRITER_WRITELINE_14_OFFSET))(this, format, arg);
 		}
 	};
 }

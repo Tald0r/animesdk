@@ -1,0 +1,62 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Arcade/BallsRace/EBrSpeedLevel.h"
+#include "unitysdk/Struct_2_E614D3B245F96744_1.h"
+#include "unitysdk/System/Object.h"
+
+class Class_4_06287BFE0A30E0A3;
+class Class_4_295F8FFB3788E5D7;
+class Class_4_4BA0DF1EA13B94EC;
+class Class_4_63DC05821294ECD3;
+class Class_4_BB295FBF5DD8DB59;
+class Class_4_C3281F1010689A02;
+class Class_4_EF9B54D195DF7339_1;
+
+#define CLASS_1_ECA46D1BEB15682A_METHOD_1_41145AA5EA656E9C_OFFSET UNITYSDK_OFFSET(0x1A903E50)
+#define CLASS_1_ECA46D1BEB15682A_METHOD_1_96C7ACBCA2EC70EA_OFFSET UNITYSDK_OFFSET(0x1A9040A0)
+#define CLASS_1_ECA46D1BEB15682A_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x1A904110)
+#define CLASS_1_ECA46D1BEB15682A_METHOD_1_F54735121992B893_OFFSET UNITYSDK_OFFSET(0x1A903F70)
+#define CLASS_1_ECA46D1BEB15682A__CTOR_OFFSET UNITYSDK_OFFSET(0x1A903DD0)
+
+inline static constexpr unsigned int Class_1_ECA46D1BEB15682A_TypeDefinitionIndex = 79491;
+
+class Class_1_ECA46D1BEB15682A : public ::System::Object
+{
+public:
+	::Class_4_63DC05821294ECD3* Field_1_7; // 0x10
+	::Class_4_4BA0DF1EA13B94EC* Field_1_10; // 0x18
+	::Class_4_BB295FBF5DD8DB59* Field_1_6; // 0x20
+	::Class_4_06287BFE0A30E0A3* Field_1_4; // 0x28
+	::Class_4_C3281F1010689A02* Field_1_3; // 0x30
+	::Class_4_06287BFE0A30E0A3* Field_1_5; // 0x38
+	::Class_4_295F8FFB3788E5D7* Field_1_8; // 0x40
+	::Class_4_EF9B54D195DF7339_1* Field_1_0; // 0x48
+	::Class_4_EF9B54D195DF7339_1* Field_1_1; // 0x50
+	::Class_4_C3281F1010689A02* Field_1_2; // 0x58
+	::MoleMole::Arcade::BallsRace::EBrSpeedLevel Field_1_9; // 0x60
+
+	::System::Void _ctor(::Class_4_4BA0DF1EA13B94EC* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_4_4BA0DF1EA13B94EC*))((::PBYTE)hIl2Cpp + CLASS_1_ECA46D1BEB15682A__CTOR_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_F54735121992B893(::Class_4_EF9B54D195DF7339_1* a1, ::Class_4_C3281F1010689A02* a2, ::Class_4_06287BFE0A30E0A3* a3, ::MoleMole::Arcade::BallsRace::EBrSpeedLevel a4)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_4_EF9B54D195DF7339_1*, ::Class_4_C3281F1010689A02*, ::Class_4_06287BFE0A30E0A3*, ::MoleMole::Arcade::BallsRace::EBrSpeedLevel))((::PBYTE)hIl2Cpp + CLASS_1_ECA46D1BEB15682A_METHOD_1_F54735121992B893_OFFSET))(this, a1, a2, a3, a4);
+	}
+
+	::System::Void Method_1_96C7ACBCA2EC70EA(::Class_4_EF9B54D195DF7339_1* a1, ::Class_4_C3281F1010689A02* a2, ::Class_4_06287BFE0A30E0A3* a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_4_EF9B54D195DF7339_1*, ::Class_4_C3281F1010689A02*, ::Class_4_06287BFE0A30E0A3*))((::PBYTE)hIl2Cpp + CLASS_1_ECA46D1BEB15682A_METHOD_1_96C7ACBCA2EC70EA_OFFSET))(this, a1, a2, a3);
+	}
+
+	::System::Void Method_1_41145AA5EA656E9C()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_ECA46D1BEB15682A_METHOD_1_41145AA5EA656E9C_OFFSET))(this);
+	}
+
+	::System::Void Method_1_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_ECA46D1BEB15682A_METHOD_1_CA373AA1C7054598_OFFSET))(this);
+	}
+};

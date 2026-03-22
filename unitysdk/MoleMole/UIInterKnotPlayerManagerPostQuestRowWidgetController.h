@@ -1,0 +1,61 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_0591F49F42E285A4;
+class Class_2_6766B8BA5509E097;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER_BIND_OFFSET UNITYSDK_OFFSET(0xC111F00)
+#define MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xC111D90)
+#define MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xC111E00)
+#define MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC111FD0)
+#define MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC112100)
+#define MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xC112130)
+#define MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC1121A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInterKnotPlayerManagerPostQuestRowWidgetController_TypeDefinitionIndex = 45530;
+
+	class UIInterKnotPlayerManagerPostQuestRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_6766B8BA5509E097* get__viewModel()
+		{
+			return ((::Class_2_6766B8BA5509E097*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void Bind(::Class_2_0591F49F42E285A4* quest)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_0591F49F42E285A4*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER_BIND_OFFSET))(this, quest);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERMANAGERPOSTQUESTROWWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+	};
+}

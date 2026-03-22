@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define HOYOSHARE_BASE_UTILS_CASTUTILS_ACCOUNTTHEMECAST_OFFSET UNITYSDK_OFFSET(0x156F2630)
-#define HOYOSHARE_BASE_UTILS_CASTUTILS__CTOR_OFFSET UNITYSDK_OFFSET(0x156F2830)
+#define HOYOSHARE_BASE_UTILS_CASTUTILS_ACCOUNTTHEMECAST_OFFSET UNITYSDK_OFFSET(0x18A0D8E0)
+#define HOYOSHARE_BASE_UTILS_CASTUTILS__CTOR_OFFSET UNITYSDK_OFFSET(0x18A0DAE0)
 
 namespace HoYoShare::Base::Utils
 {
-	inline static constexpr unsigned int CastUtils_TypeDefinitionIndex = 6435;
+	inline static constexpr unsigned int CastUtils_TypeDefinitionIndex = 17570;
 
 	class CastUtils : public ::System::Object
 	{

@@ -1,0 +1,109 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_0_16E4307DCC419505_154;
+class Class_2_374D688FD254861E_2;
+namespace MoleMole { class UIControlReference; }
+namespace System { class EventArgs; }
+namespace System { template <typename T1, typename T2> class Action_2; }
+namespace UnityEngine { class RectTransform; }
+
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_BUFFID_OFFSET UNITYSDK_OFFSET(0x8911BC0)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_GETTITLERECTTRANS_OFFSET UNITYSDK_OFFSET(0x8911910)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0x8911D70)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8911790)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8911830)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x89115B0)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_REGISTERONCLICK_OFFSET UNITYSDK_OFFSET(0x8911F70)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_SETBUFFDETAILFOLD_OFFSET UNITYSDK_OFFSET(0x8911C40)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_SETDATA_OFFSET UNITYSDK_OFFSET(0x89119B0)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_UPDATESELECT_OFFSET UNITYSDK_OFFSET(0x8911CD0)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8911FE0)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8912010)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8912080)
+#define MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8912100)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralBuffSelectRowWidgetController_TypeDefinitionIndex = 66042;
+
+	class UIGeneralBuffSelectRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_374D688FD254861E_2* _view; // 0x2A0
+		::Class_0_16E4307DCC419505_154* _buffSelectData; // 0x2A8
+		::System::Int32 index; // 0x2B0
+		::System::Action_2<::System::Boolean, ::System::Int32>* OnSelect; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::UnityEngine::RectTransform* GetTitleRecttrans()
+		{
+			return ((::UnityEngine::RectTransform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_GETTITLERECTTRANS_OFFSET))(this);
+		}
+
+		::System::Void SetData(::Class_0_16E4307DCC419505_154* data, ::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_154*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_SETDATA_OFFSET))(this, data, index);
+		}
+
+		::System::Int32 BuffID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_BUFFID_OFFSET))(this);
+		}
+
+		::System::Void SetBuffDetailFold(::System::Boolean isFold)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_SETBUFFDETAILFOLD_OFFSET))(this, isFold);
+		}
+
+		::System::Void UpdateSelect(::System::EventArgs* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_UPDATESELECT_OFFSET))(this, arg);
+		}
+
+		::System::Void OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void RegisterOnClick(::System::Action_2<::System::Boolean, ::System::Int32>* onSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_2<::System::Boolean, ::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER_REGISTERONCLICK_OFFSET))(this, onSelect);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFSELECTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

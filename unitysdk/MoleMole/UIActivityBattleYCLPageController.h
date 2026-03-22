@@ -1,0 +1,426 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_4_D06919D0930604DE_Enum_3_05BF65C41833FF20.h"
+#include "unitysdk/Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIActivityBattleYCLPageController_PageState.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_7ECB9691B142D586;
+class Class_2_055450060950DB07_4;
+class Class_2_055450060950DB07_4_Class_2_8DF4C563FE3B66BB;
+class Class_2_CFC1DA8C3898E356;
+namespace MoleMole { class UIActivityBattleCommonRecordPopWindowController_RecordData; }
+namespace MoleMole { class UIActivityBattleYCLFightingWidgetController; }
+namespace MoleMole { class UIActivityBattleYCLWidgetController; }
+namespace MoleMole { class UIActivityCompWeekRewardBtnWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace UnityEngine { class Animation; }
+namespace UnityEngine { class Coroutine; }
+namespace UnityEngine::UI::Extension { class UITimeWidget; }
+template <typename T> class Class_2_0D31A1661D004892;
+
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ADDCOMPENTERBTN_OFFSET UNITYSDK_OFFSET(0x9AFFDD0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_CHECKTABCLICKWITHTIPS_OFFSET UNITYSDK_OFFSET(0x9B02280)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_CLEARCOMPONTNBTNS_OFFSET UNITYSDK_OFFSET(0x9AFF4A0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETBOTTOMBTNSHOWCOUNT_OFFSET UNITYSDK_OFFSET(0x9B03CF0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETRECORDDATA_OFFSET UNITYSDK_OFFSET(0x9B047F0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETTABANIM_OFFSET UNITYSDK_OFFSET(0x9B03200)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETTABINDEX_OFFSET UNITYSDK_OFFSET(0x9B03190)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETTABTYPE_OFFSET UNITYSDK_OFFSET(0x9AFF170)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETTABVIEWNODE_OFFSET UNITYSDK_OFFSET(0x9B02890)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x9AFE880)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_INITANDPLAYVIDEO_OFFSET UNITYSDK_OFFSET(0x9B00280)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ISSTYLISHQUEST_OFFSET UNITYSDK_OFFSET(0x9B04680)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONACTIVITYCLOSE_OFFSET UNITYSDK_OFFSET(0x9B013E0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONACTIVITYEND_OFFSET UNITYSDK_OFFSET(0x9B01570)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKACTIVITYINFO_OFFSET UNITYSDK_OFFSET(0x9B04080)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKBACK_OFFSET UNITYSDK_OFFSET(0x9B03EA0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKBATTLERECORDINFO_OFFSET UNITYSDK_OFFSET(0x9B043E0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKDEMOTRIAL_OFFSET UNITYSDK_OFFSET(0x9B04EA0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKLEVELGUIDE_OFFSET UNITYSDK_OFFSET(0x9B042E0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKMAINCITY_OFFSET UNITYSDK_OFFSET(0x9B03F30)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKOK_OFFSET UNITYSDK_OFFSET(0x9B04F20)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKSKILL_OFFSET UNITYSDK_OFFSET(0x9B04D50)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKTAB_OFFSET UNITYSDK_OFFSET(0x9B02610)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9AFE890)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0x9B01150)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x9B01290)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONOPENSTYLISHRECORD_OFFSET UNITYSDK_OFFSET(0x9B040F0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONSELECTQUEST_OFFSET UNITYSDK_OFFSET(0x9B01610)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x9B01040)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x9B00960)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9AFF2A0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9AFF1E0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9AFF5D0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_PLAYTABFADEINANIM_OFFSET UNITYSDK_OFFSET(0x9B03590)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_PLAYTABFADEOUTANIM_OFFSET UNITYSDK_OFFSET(0x9B03390)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHAUDITIONBTN_OFFSET UNITYSDK_OFFSET(0x9B03950)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHBOTTOMBTN_OFFSET UNITYSDK_OFFSET(0x9B01CC0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHGAMEPADBTN_OFFSET UNITYSDK_OFFSET(0x9B03BD0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHLEVELINFO_OFFSET UNITYSDK_OFFSET(0x9B01C20)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHLEVELLIST_OFFSET UNITYSDK_OFFSET(0x9B01AB0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHOKBTN_OFFSET UNITYSDK_OFFSET(0x9B03A30)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHREMAINTIMER_OFFSET UNITYSDK_OFFSET(0x9B00030)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHTABANIM_OFFSET UNITYSDK_OFFSET(0x9B02C80)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHTAB_OFFSET UNITYSDK_OFFSET(0x9B029D0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_SELECTTAB_OFFSET UNITYSDK_OFFSET(0x9B02310)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_SETPAGESTATE_OFFSET UNITYSDK_OFFSET(0x9B00520)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_STOPSWITCHANIM_OFFSET UNITYSDK_OFFSET(0x9AFF380)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_STOPTABANIM_OFFSET UNITYSDK_OFFSET(0x9B03790)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_TRYCREATEWIDGET_OFFSET UNITYSDK_OFFSET(0x9B01800)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0x9B05020)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9B05010)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER__INITANDPLAYVIDEO_B__30_0_OFFSET UNITYSDK_OFFSET(0x9B053C0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER__INITANDPLAYVIDEO_B__30_1_OFFSET UNITYSDK_OFFSET(0x9B05420)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER__ONUIINIT_B__18_0_OFFSET UNITYSDK_OFFSET(0x9B053B0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9B05460)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0x9B054D0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x9B05530)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x9B05560)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x9B05570)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9B05580)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9B05590)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9B055A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityBattleYCLPageController_TypeDefinitionIndex = 57559;
+
+	class UIActivityBattleYCLPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		static ::System::Collections::Generic::Dictionary_2<::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF, ::Il2CppArray<::System::String*>*>** StaticGet__tabAnimNameDict()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF, ::Il2CppArray<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityBattleYCLPageController_TypeDefinitionIndex)->GetStaticField(0x2FD80);
+		}
+		// static const ::System::String* BgVideoUrl; // 0x0
+		::Class_2_055450060950DB07_4* _view; // 0x2F8
+		::MoleMole::UIActivityBattleYCLWidgetController* _levelListWidgetController; // 0x300
+		::MoleMole::UIActivityBattleYCLFightingWidgetController* _levelInfoWidgetController; // 0x308
+		::MoleMole::UIActivityCompWeekRewardBtnWidgetController* _compRewardBtn; // 0x310
+		::Class_1_7ECB9691B142D586* _videoPlayerHelper; // 0x318
+		::System::Int32 _activityID; // 0x320
+		::Class_4_D06919D0930604DE_Enum_3_05BF65C41833FF20 _activityBattleType; // 0x324
+		::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF _activityBattleSubType; // 0x328
+		::MoleMole::UIActivityBattleYCLPageController_PageState _pageState; // 0x32C
+		::UnityEngine::Coroutine* _switchAnimCoroutineFadeOut; // 0x330
+		::UnityEngine::Coroutine* _switchAnimCoroutineFadeIn; // 0x338
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnActivityClose(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONACTIVITYCLOSE_OFFSET))(this, obj);
+		}
+
+		::System::Void AddCompEnterBtn(::Class_2_CFC1DA8C3898E356* btnData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_CFC1DA8C3898E356*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ADDCOMPENTERBTN_OFFSET))(this, btnData);
+		}
+
+		::System::Void ClearCompontnBtns()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_CLEARCOMPONTNBTNS_OFFSET))(this);
+		}
+
+		::System::Void RefreshRemainTimer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHREMAINTIMER_OFFSET))(this);
+		}
+
+		::System::Void OnActivityEnd(::UnityEngine::UI::Extension::UITimeWidget* timeWidget)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UITimeWidget*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONACTIVITYEND_OFFSET))(this, timeWidget);
+		}
+
+		::System::Void InitAndPlayVideo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_INITANDPLAYVIDEO_OFFSET))(this);
+		}
+
+		::System::Void OnSelectQuest(::System::Int32 questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONSELECTQUEST_OFFSET))(this, questID);
+		}
+
+		::System::Void SetPageState(::MoleMole::UIActivityBattleYCLPageController_PageState pageState, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF activityBattleSubType, ::System::Int32 questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityBattleYCLPageController_PageState, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_SETPAGESTATE_OFFSET))(this, pageState, activityBattleSubType, questID);
+		}
+
+		::System::Void TryCreateWidget(::MoleMole::UIActivityBattleYCLPageController_PageState pageState)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityBattleYCLPageController_PageState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_TRYCREATEWIDGET_OFFSET))(this, pageState);
+		}
+
+		::System::Void RefreshLevelList(::MoleMole::UIActivityBattleYCLPageController_PageState pageState, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF activityBattleSubType, ::System::Int32 questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityBattleYCLPageController_PageState, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHLEVELLIST_OFFSET))(this, pageState, activityBattleSubType, questID);
+		}
+
+		::System::Void OnClickTab(::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF activityBattleSubType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKTAB_OFFSET))(this, activityBattleSubType);
+		}
+
+		::System::Boolean CheckTabClickWithTips(::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF subType)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_CHECKTABCLICKWITHTIPS_OFFSET))(this, subType);
+		}
+
+		::System::Void SelectTab(::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF activityBattleSubType, ::System::Boolean withAni, ::System::Int32 questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_SELECTTAB_OFFSET))(this, activityBattleSubType, withAni, questID);
+		}
+
+		::System::Int32 GetTabIndex(::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF activityBattleSubType)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETTABINDEX_OFFSET))(this, activityBattleSubType);
+		}
+
+		::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF GetTabType(::System::Int32 tabIndex)
+		{
+			return ((::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETTABTYPE_OFFSET))(this, tabIndex);
+		}
+
+		::Class_2_0D31A1661D004892<::Class_2_055450060950DB07_4_Class_2_8DF4C563FE3B66BB*>* GetTabViewNode(::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF subType)
+		{
+			return ((::Class_2_0D31A1661D004892<::Class_2_055450060950DB07_4_Class_2_8DF4C563FE3B66BB*>*(*)(::PVOID, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETTABVIEWNODE_OFFSET))(this, subType);
+		}
+
+		::UnityEngine::Animation* GetTabAnim(::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF subType)
+		{
+			return ((::UnityEngine::Animation*(*)(::PVOID, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETTABANIM_OFFSET))(this, subType);
+		}
+
+		::System::Void RefreshTab(::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF newSubType, ::System::Boolean withAni)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHTAB_OFFSET))(this, newSubType, withAni);
+		}
+
+		::System::Void RefreshTabAnim(::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF oldSubType, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF newSubType, ::System::Boolean withAni)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHTABANIM_OFFSET))(this, oldSubType, newSubType, withAni);
+		}
+
+		::System::Void PlayTabFadeInAnim(::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF subType, ::System::Action* finishCb)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_PLAYTABFADEINANIM_OFFSET))(this, subType, finishCb);
+		}
+
+		::System::Void PlayTabFadeOutAnim(::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF subType, ::System::Action* finishCb)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_4_D06919D0930604DE_Enum_3_4845697BF1CAFCFF, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_PLAYTABFADEOUTANIM_OFFSET))(this, subType, finishCb);
+		}
+
+		::System::Void StopSwitchAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_STOPSWITCHANIM_OFFSET))(this);
+		}
+
+		::System::Void StopTabAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_STOPTABANIM_OFFSET))(this);
+		}
+
+		::System::Void RefreshLevelInfo(::MoleMole::UIActivityBattleYCLPageController_PageState pageState)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityBattleYCLPageController_PageState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHLEVELINFO_OFFSET))(this, pageState);
+		}
+
+		::System::Void RefreshBottomBtn(::MoleMole::UIActivityBattleYCLPageController_PageState pageState)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityBattleYCLPageController_PageState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHBOTTOMBTN_OFFSET))(this, pageState);
+		}
+
+		::System::Void RefreshAuditionBtn(::MoleMole::UIActivityBattleYCLPageController_PageState pageState)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityBattleYCLPageController_PageState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHAUDITIONBTN_OFFSET))(this, pageState);
+		}
+
+		::System::Void RefreshOkBtn(::MoleMole::UIActivityBattleYCLPageController_PageState pageState)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityBattleYCLPageController_PageState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHOKBTN_OFFSET))(this, pageState);
+		}
+
+		::System::Void RefreshGamepadBtn(::MoleMole::UIActivityBattleYCLPageController_PageState pageState)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityBattleYCLPageController_PageState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_REFRESHGAMEPADBTN_OFFSET))(this, pageState);
+		}
+
+		::System::Int32 GetBottomBtnShowCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETBOTTOMBTNSHOWCOUNT_OFFSET))(this);
+		}
+
+		::System::Void OnClickBack()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKBACK_OFFSET))(this);
+		}
+
+		::System::Void OnClickMainCity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKMAINCITY_OFFSET))(this);
+		}
+
+		::System::Void OnClickActivityInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKACTIVITYINFO_OFFSET))(this);
+		}
+
+		::System::Void OnOpenStylishRecord()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONOPENSTYLISHRECORD_OFFSET))(this);
+		}
+
+		::System::Void OnClickLevelGuide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKLEVELGUIDE_OFFSET))(this);
+		}
+
+		::System::Void OnClickBattleRecordInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKBATTLERECORDINFO_OFFSET))(this);
+		}
+
+		::System::Void OnClickSkill()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKSKILL_OFFSET))(this);
+		}
+
+		::System::Void OnClickDemoTrial()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKDEMOTRIAL_OFFSET))(this);
+		}
+
+		::System::Boolean IsStylishQuest(::System::Int32 questid)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ISSTYLISHQUEST_OFFSET))(this, questid);
+		}
+
+		::MoleMole::UIActivityBattleCommonRecordPopWindowController_RecordData* GetRecordData(::System::Int32 questID, ::System::Boolean isLast)
+		{
+			return ((::MoleMole::UIActivityBattleCommonRecordPopWindowController_RecordData*(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_GETRECORDDATA_OFFSET))(this, questID, isLast);
+		}
+
+		::System::Void OnClickOK()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER_ONCLICKOK_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__18_0(::System::EventArgs* _)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER__ONUIINIT_B__18_0_OFFSET))(this, _);
+		}
+
+		::System::Void _InitAndPlayVideo_b__30_0(::Class_1_7ECB9691B142D586* helper)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7ECB9691B142D586*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER__INITANDPLAYVIDEO_B__30_0_OFFSET))(this, helper);
+		}
+
+		::System::Void _InitAndPlayVideo_b__30_1(::Class_1_7ECB9691B142D586* helper)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7ECB9691B142D586*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER__INITANDPLAYVIDEO_B__30_1_OFFSET))(this, helper);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYBATTLEYCLPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

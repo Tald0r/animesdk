@@ -1,0 +1,63 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_3_F39AA09F6254945B.h"
+
+class Class_2_777A5D016ADC7368;
+namespace MoleMole { class UIControlCollection; }
+namespace MoleMole { class UIGeneralButtonController; }
+namespace System { class String; }
+namespace UnityEngine::UI { class InputField; }
+
+#define CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_07C288082517A297_OFFSET UNITYSDK_OFFSET(0xB0E42F0)
+#define CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_082DE155818A77D8_OFFSET UNITYSDK_OFFSET(0xB0E4310)
+#define CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_0C88AB06D46E777A_OFFSET UNITYSDK_OFFSET(0xB0E4110)
+#define CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_1B36A88079884AB4_OFFSET UNITYSDK_OFFSET(0xB0E4320)
+#define CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_4F75C9B796DF2E67_OFFSET UNITYSDK_OFFSET(0xB0E4300)
+#define CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_FA1CF250E644264D_OFFSET UNITYSDK_OFFSET(0xB0E4030)
+#define CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB__CTOR_OFFSET UNITYSDK_OFFSET(0xB0E4270)
+
+inline static constexpr unsigned int Class_3_1045F1C51DB3FD1B_1_Class_4_7329E0843C095CFB_TypeDefinitionIndex = 68224;
+
+class Class_3_1045F1C51DB3FD1B_1_Class_4_7329E0843C095CFB : public ::Class_3_F39AA09F6254945B
+{
+public:
+	// static const ::System::String* Field_4_0; // 0x0
+	// static const ::System::String* Field_4_1; // 0x0
+	::MoleMole::UIGeneralButtonController* Field_4_3; // 0x28
+	::UnityEngine::UI::InputField* Field_4_2; // 0x30
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_4_FA1CF250E644264D(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_FA1CF250E644264D_OFFSET))(this, a1, a2);
+	}
+
+	::UnityEngine::UI::InputField* Method_4_07C288082517A297()
+	{
+		return ((::UnityEngine::UI::InputField*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_07C288082517A297_OFFSET))(this);
+	}
+
+	::System::Void Method_4_4F75C9B796DF2E67(::MoleMole::UIGeneralButtonController* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UIGeneralButtonController*))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_4F75C9B796DF2E67_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_4_0C88AB06D46E777A()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_0C88AB06D46E777A_OFFSET))(this);
+	}
+
+	::MoleMole::UIGeneralButtonController* Method_4_082DE155818A77D8()
+	{
+		return ((::MoleMole::UIGeneralButtonController*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_082DE155818A77D8_OFFSET))(this);
+	}
+
+	::System::Void Method_4_1B36A88079884AB4(::UnityEngine::UI::InputField* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::InputField*))((::PBYTE)hIl2Cpp + CLASS_3_1045F1C51DB3FD1B_1_CLASS_4_7329E0843C095CFB_METHOD_4_1B36A88079884AB4_OFFSET))(this, a1);
+	}
+};

@@ -1,0 +1,118 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8C62274399C7DB0E.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_C31F776B3FE6F486_1;
+class Class_2_410E84DCFF746137_4;
+namespace MoleMole { class UIAvatarStorySpecailInfoContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIWidgetController; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_CREATEELEMENTS_OFFSET UNITYSDK_OFFSET(0xD1CA540)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_CREATELAYOUTSTYLEELEMENT_OFFSET UNITYSDK_OFFSET(0xD1CA900)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_GETELEMENTUI_OFFSET UNITYSDK_OFFSET(0xD1CA7E0)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xD1C9E50)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD1CA410)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD1CA4B0)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD1C9E60)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD1C9FD0)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xD1CA310)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD1CAD20)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER__ONUIOPEN_B__6_0_OFFSET UNITYSDK_OFFSET(0xD1CADC0)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD1CAE10)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD1CAE80)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD1CAE90)
+#define MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD1CAEA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityAvatarSpecailInfoPopWindowController_TypeDefinitionIndex = 53368;
+
+	class UIActivityAvatarSpecailInfoPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_410E84DCFF746137_4* _view; // 0x2F8
+		::MoleMole::UIAvatarStorySpecailInfoContext* _context; // 0x300
+		::System::Collections::Generic::Dictionary_2<::Enum_3_8C62274399C7DB0E, ::MoleMole::UIWidgetController*>* allElement; // 0x308
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::MoleMole::UIWidgetController* GetElementUI(::Enum_3_8C62274399C7DB0E style)
+		{
+			return ((::MoleMole::UIWidgetController*(*)(::PVOID, ::Enum_3_8C62274399C7DB0E))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_GETELEMENTUI_OFFSET))(this, style);
+		}
+
+		::System::Void CreateElements(::System::Collections::Generic::List_1<::Class_1_C31F776B3FE6F486_1*>* elements)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_C31F776B3FE6F486_1*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_CREATEELEMENTS_OFFSET))(this, elements);
+		}
+
+		::MoleMole::UIWidgetController* CreateLayoutStyleElement(::Enum_3_8C62274399C7DB0E style, ::System::Int32 siblingIndex, ::Class_1_C31F776B3FE6F486_1* element, ::System::Int32 questID)
+		{
+			return ((::MoleMole::UIWidgetController*(*)(::PVOID, ::Enum_3_8C62274399C7DB0E, ::System::Int32, ::Class_1_C31F776B3FE6F486_1*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER_CREATELAYOUTSTYLEELEMENT_OFFSET))(this, style, siblingIndex, element, questID);
+		}
+
+		::System::Void _OnUIOpen_b__6_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER__ONUIOPEN_B__6_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARSPECAILINFOPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

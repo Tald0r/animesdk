@@ -1,0 +1,27 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/Unreal/FTransform.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_8F5A10ECD132BF05;
+
+#define CLASS_1_C0D373E596B22681_CLASS_1_A8C0499BB1C6BF37_METHOD_1_50389A2494E0BB0F_OFFSET UNITYSDK_OFFSET(0x9F20CD0)
+#define CLASS_1_C0D373E596B22681_CLASS_1_A8C0499BB1C6BF37__CTOR_OFFSET UNITYSDK_OFFSET(0x9F20CC0)
+
+inline static constexpr unsigned int Class_1_C0D373E596B22681_Class_1_A8C0499BB1C6BF37_TypeDefinitionIndex = 48116;
+
+class Class_1_C0D373E596B22681_Class_1_A8C0499BB1C6BF37 : public ::System::Object
+{
+public:
+	::Class_1_8F5A10ECD132BF05* Field_1_0; // 0x10
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_C0D373E596B22681_CLASS_1_A8C0499BB1C6BF37__CTOR_OFFSET))(this);
+	}
+
+	::Foundation::Unreal::FTransform Method_1_50389A2494E0BB0F()
+	{
+		return ((::Foundation::Unreal::FTransform(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_C0D373E596B22681_CLASS_1_A8C0499BB1C6BF37_METHOD_1_50389A2494E0BB0F_OFFSET))(this);
+	}
+};

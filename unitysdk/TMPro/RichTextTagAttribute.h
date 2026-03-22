@@ -6,7 +6,7 @@
 
 namespace TMPro
 {
-	inline static constexpr unsigned int RichTextTagAttribute_TypeDefinitionIndex = 33437;
+	inline static constexpr unsigned int RichTextTagAttribute_TypeDefinitionIndex = 36058;
 
 	struct alignas(4) RichTextTagAttribute
 	{

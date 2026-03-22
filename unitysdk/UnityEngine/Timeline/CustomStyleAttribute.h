@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_TIMELINE_CUSTOMSTYLEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x18193EF0)
+#define UNITYENGINE_TIMELINE_CUSTOMSTYLEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B128D60)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int CustomStyleAttribute_TypeDefinitionIndex = 29033;
+	inline static constexpr unsigned int CustomStyleAttribute_TypeDefinitionIndex = 29383;
 
 	class CustomStyleAttribute : public ::System::Attribute
 	{

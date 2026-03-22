@@ -1,0 +1,59 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace MoleMole::Battle { class Entity; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER_GET_ISINCAMERAVIEW_OFFSET UNITYSDK_OFFSET(0xC9C77D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER_GET_SHOULDCONTINUE_OFFSET UNITYSDK_OFFSET(0xC9C77C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER_ISBINDTOTHISENTITY_OFFSET UNITYSDK_OFFSET(0xC9C79C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER_MARKCONTINUE_OFFSET UNITYSDK_OFFSET(0xC9C7750)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER_UPDATEINCAMERAVIEW_OFFSET UNITYSDK_OFFSET(0xC9C77E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER__CTOR_OFFSET UNITYSDK_OFFSET(0xC9C7A40)
+
+namespace MoleMole::FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int LDShowTargetEntityUINode_GuideEntityTargetCameraViewChecker_TypeDefinitionIndex = 59656;
+
+	class LDShowTargetEntityUINode_GuideEntityTargetCameraViewChecker : public ::System::Object
+	{
+	public:
+		::System::Action_1<::MoleMole::FlowCanvas::Nodes::LDShowTargetEntityUINode_GuideEntityTargetCameraViewChecker*>* OnChange; // 0x10
+		::MoleMole::Battle::Entity* TestEntity; // 0x18
+		::System::String* key; // 0x20
+		::System::Boolean _isContinue; // 0x28
+		::System::Boolean _isInCameraView; // 0x29
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void MarkContinue(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER_MARKCONTINUE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_ShouldContinue()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER_GET_SHOULDCONTINUE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsInCameraView()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER_GET_ISINCAMERAVIEW_OFFSET))(this);
+		}
+
+		::System::Void UpdateInCameraView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER_UPDATEINCAMERAVIEW_OFFSET))(this);
+		}
+
+		::System::Boolean IsBindToThisEntity(::MoleMole::Battle::Entity* entity)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_GUIDEENTITYTARGETCAMERAVIEWCHECKER_ISBINDTOTHISENTITY_OFFSET))(this, entity);
+		}
+	};
+}

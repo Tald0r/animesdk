@@ -6,12 +6,12 @@ namespace System { class Type; }
 namespace System::Reflection { class MemberInfo; }
 namespace System::Runtime::Serialization { class MemberHolder; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERSERVICES___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x15D16D50)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERSERVICES___C__DISPLAYCLASS9_0__GETSERIALIZABLEMEMBERS_B__0_OFFSET UNITYSDK_OFFSET(0x15D17FB0)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERSERVICES___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x188B6620)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERSERVICES___C__DISPLAYCLASS9_0__GETSERIALIZABLEMEMBERS_B__0_OFFSET UNITYSDK_OFFSET(0x188B6630)
 
 namespace System::Runtime::Serialization
 {
-	inline static constexpr unsigned int FormatterServices___c__DisplayClass9_0_TypeDefinitionIndex = 1083;
+	inline static constexpr unsigned int FormatterServices___c__DisplayClass9_0_TypeDefinitionIndex = 1138;
 
 	class FormatterServices___c__DisplayClass9_0 : public ::System::Object
 	{

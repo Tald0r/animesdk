@@ -7,14 +7,14 @@ namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_ARITHMETICEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15AF7870)
-#define SYSTEM_ARITHMETICEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15AF78E0)
-#define SYSTEM_ARITHMETICEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15AF7950)
-#define SYSTEM_ARITHMETICEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15AF77D0)
+#define SYSTEM_ARITHMETICEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17FB6700)
+#define SYSTEM_ARITHMETICEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17FBBE00)
+#define SYSTEM_ARITHMETICEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x17FBBE70)
+#define SYSTEM_ARITHMETICEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x17FBBD60)
 
 namespace System
 {
-	inline static constexpr unsigned int ArithmeticException_TypeDefinitionIndex = 196;
+	inline static constexpr unsigned int ArithmeticException_TypeDefinitionIndex = 184;
 
 	class ArithmeticException : public ::System::SystemException
 	{

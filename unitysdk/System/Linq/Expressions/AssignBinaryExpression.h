@@ -6,13 +6,15 @@
 namespace System { class Type; }
 namespace System::Linq::Expressions { class Expression; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_ASSIGNBINARYEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x17C88800)
-#define SYSTEM_LINQ_EXPRESSIONS_ASSIGNBINARYEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x17C887C0)
-#define SYSTEM_LINQ_EXPRESSIONS_ASSIGNBINARYEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17C886E0)
+#define SYSTEM_LINQ_EXPRESSIONS_ASSIGNBINARYEXPRESSION_GET_ISBYREF_OFFSET UNITYSDK_OFFSET(0x1A924A30)
+#define SYSTEM_LINQ_EXPRESSIONS_ASSIGNBINARYEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x1A924A80)
+#define SYSTEM_LINQ_EXPRESSIONS_ASSIGNBINARYEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1A924A40)
+#define SYSTEM_LINQ_EXPRESSIONS_ASSIGNBINARYEXPRESSION_MAKE_OFFSET UNITYSDK_OFFSET(0x1A924990)
+#define SYSTEM_LINQ_EXPRESSIONS_ASSIGNBINARYEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A924920)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int AssignBinaryExpression_TypeDefinitionIndex = 3161;
+	inline static constexpr unsigned int AssignBinaryExpression_TypeDefinitionIndex = 4395;
 
 	class AssignBinaryExpression : public ::System::Linq::Expressions::BinaryExpression
 	{
@@ -20,6 +22,16 @@ namespace System::Linq::Expressions
 		::System::Void _ctor(::System::Linq::Expressions::Expression* left, ::System::Linq::Expressions::Expression* right)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Linq::Expressions::Expression*, ::System::Linq::Expressions::Expression*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_ASSIGNBINARYEXPRESSION__CTOR_OFFSET))(this, left, right);
+		}
+
+		static ::System::Linq::Expressions::AssignBinaryExpression* Make(::System::Linq::Expressions::Expression* left, ::System::Linq::Expressions::Expression* right, ::System::Boolean byRef)
+		{
+			return ((::System::Linq::Expressions::AssignBinaryExpression*(*)(::System::Linq::Expressions::Expression*, ::System::Linq::Expressions::Expression*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_ASSIGNBINARYEXPRESSION_MAKE_OFFSET))(left, right, byRef);
+		}
+
+		::System::Boolean get_IsByRef()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_ASSIGNBINARYEXPRESSION_GET_ISBYREF_OFFSET))(this);
 		}
 
 		::System::Type* get_Type()

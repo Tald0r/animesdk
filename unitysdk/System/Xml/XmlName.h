@@ -11,37 +11,32 @@ namespace System::Xml::Schema { class XmlSchemaElement; }
 namespace System::Xml::Schema { class XmlSchemaSimpleType; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 
-#define SYSTEM_XML_XMLNAME_CREATE_OFFSET UNITYSDK_OFFSET(0x17E05860)
-#define SYSTEM_XML_XMLNAME_EQUALS_OFFSET UNITYSDK_OFFSET(0x17E05F20)
-#define SYSTEM_XML_XMLNAME_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x17E05F30)
-#define SYSTEM_XML_XMLNAME_GET_HASHCODE_OFFSET UNITYSDK_OFFSET(0x17E05E90)
-#define SYSTEM_XML_XMLNAME_GET_ISDEFAULT_OFFSET UNITYSDK_OFFSET(0x17E05EC0)
-#define SYSTEM_XML_XMLNAME_GET_ISNIL_OFFSET UNITYSDK_OFFSET(0x17E05ED0)
-#define SYSTEM_XML_XMLNAME_GET_LOCALNAME_OFFSET UNITYSDK_OFFSET(0x17E05E60)
-#define SYSTEM_XML_XMLNAME_GET_MEMBERTYPE_OFFSET UNITYSDK_OFFSET(0x17E05EE0)
-#define SYSTEM_XML_XMLNAME_GET_NAMESPACEURI_OFFSET UNITYSDK_OFFSET(0x17E05E70)
-#define SYSTEM_XML_XMLNAME_GET_NAME_OFFSET UNITYSDK_OFFSET(0x17DF4860)
-#define SYSTEM_XML_XMLNAME_GET_OWNERDOCUMENT_OFFSET UNITYSDK_OFFSET(0x17E05EA0)
-#define SYSTEM_XML_XMLNAME_GET_PREFIX_OFFSET UNITYSDK_OFFSET(0x17E05E80)
-#define SYSTEM_XML_XMLNAME_GET_SCHEMAATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x17E05F10)
-#define SYSTEM_XML_XMLNAME_GET_SCHEMAELEMENT_OFFSET UNITYSDK_OFFSET(0x17E05F00)
-#define SYSTEM_XML_XMLNAME_GET_SCHEMATYPE_OFFSET UNITYSDK_OFFSET(0x17E05EF0)
-#define SYSTEM_XML_XMLNAME_GET_VALIDITY_OFFSET UNITYSDK_OFFSET(0x17E05EB0)
-#define SYSTEM_XML_XMLNAME__CTOR_OFFSET UNITYSDK_OFFSET(0x17E05940)
+#define SYSTEM_XML_XMLNAME_CREATE_OFFSET UNITYSDK_OFFSET(0x196181A0)
+#define SYSTEM_XML_XMLNAME_EQUALS_OFFSET UNITYSDK_OFFSET(0x196184E0)
+#define SYSTEM_XML_XMLNAME_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x196184F0)
+#define SYSTEM_XML_XMLNAME_GET_ISDEFAULT_OFFSET UNITYSDK_OFFSET(0x19618480)
+#define SYSTEM_XML_XMLNAME_GET_ISNIL_OFFSET UNITYSDK_OFFSET(0x19618490)
+#define SYSTEM_XML_XMLNAME_GET_MEMBERTYPE_OFFSET UNITYSDK_OFFSET(0x196184A0)
+#define SYSTEM_XML_XMLNAME_GET_NAME_OFFSET UNITYSDK_OFFSET(0x196182B0)
+#define SYSTEM_XML_XMLNAME_GET_SCHEMAATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x196184D0)
+#define SYSTEM_XML_XMLNAME_GET_SCHEMAELEMENT_OFFSET UNITYSDK_OFFSET(0x196184C0)
+#define SYSTEM_XML_XMLNAME_GET_SCHEMATYPE_OFFSET UNITYSDK_OFFSET(0x196184B0)
+#define SYSTEM_XML_XMLNAME_GET_VALIDITY_OFFSET UNITYSDK_OFFSET(0x19618470)
+#define SYSTEM_XML_XMLNAME__CTOR_OFFSET UNITYSDK_OFFSET(0x19618280)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int XmlName_TypeDefinitionIndex = 1892;
+	inline static constexpr unsigned int XmlName_TypeDefinitionIndex = 1773;
 
 	class XmlName : public ::System::Object
 	{
 	public:
 		::System::String* ns; // 0x10
-		::System::String* name; // 0x18
-		::System::String* localName; // 0x20
+		::System::String* localName; // 0x18
+		::System::Xml::XmlName* next; // 0x20
 		::System::String* prefix; // 0x28
-		::System::Xml::XmlName* next; // 0x30
-		::System::Xml::XmlDocument* ownerDoc; // 0x38
+		::System::Xml::XmlDocument* ownerDoc; // 0x30
+		::System::String* name; // 0x38
 		::System::Int32 hashCode; // 0x40
 
 		::System::Void _ctor(::System::String* prefix, ::System::String* localName, ::System::String* ns, ::System::Int32 hashCode, ::System::Xml::XmlDocument* ownerDoc, ::System::Xml::XmlName* next)
@@ -52,31 +47,6 @@ namespace System::Xml
 		static ::System::Xml::XmlName* Create(::System::String* prefix, ::System::String* localName, ::System::String* ns, ::System::Int32 hashCode, ::System::Xml::XmlDocument* ownerDoc, ::System::Xml::XmlName* next, ::System::Xml::Schema::IXmlSchemaInfo* schemaInfo)
 		{
 			return ((::System::Xml::XmlName*(*)(::System::String*, ::System::String*, ::System::String*, ::System::Int32, ::System::Xml::XmlDocument*, ::System::Xml::XmlName*, ::System::Xml::Schema::IXmlSchemaInfo*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLNAME_CREATE_OFFSET))(prefix, localName, ns, hashCode, ownerDoc, next, schemaInfo);
-		}
-
-		::System::String* get_LocalName()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLNAME_GET_LOCALNAME_OFFSET))(this);
-		}
-
-		::System::String* get_NamespaceURI()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLNAME_GET_NAMESPACEURI_OFFSET))(this);
-		}
-
-		::System::String* get_Prefix()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLNAME_GET_PREFIX_OFFSET))(this);
-		}
-
-		::System::Int32 get_HashCode()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLNAME_GET_HASHCODE_OFFSET))(this);
-		}
-
-		::System::Xml::XmlDocument* get_OwnerDocument()
-		{
-			return ((::System::Xml::XmlDocument*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLNAME_GET_OWNERDOCUMENT_OFFSET))(this);
 		}
 
 		::System::String* get_Name()

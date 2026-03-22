@@ -7,20 +7,19 @@ namespace System { class String; }
 namespace UnityEngine { class AndroidJavaProxy; }
 namespace UnityEngine { class AndroidJavaRunnable; }
 
-#define UNITYENGINE_ANDROIDJNIHELPER_CREATEJAVAPROXY_OFFSET UNITYSDK_OFFSET(0x181B31A0)
-#define UNITYENGINE_ANDROIDJNIHELPER_CREATEJAVARUNNABLE_OFFSET UNITYSDK_OFFSET(0x181B2FA0)
-#define UNITYENGINE_ANDROIDJNIHELPER_CREATEJNIARGARRAY_OFFSET UNITYSDK_OFFSET(0x181B3330)
-#define UNITYENGINE_ANDROIDJNIHELPER_DELETEJNIARGARRAY_OFFSET UNITYSDK_OFFSET(0x181B3CD0)
-#define UNITYENGINE_ANDROIDJNIHELPER_GETCONSTRUCTORID_1_OFFSET UNITYSDK_OFFSET(0x181B3E50)
-#define UNITYENGINE_ANDROIDJNIHELPER_GETCONSTRUCTORID_OFFSET UNITYSDK_OFFSET(0x181B2750)
-#define UNITYENGINE_ANDROIDJNIHELPER_GETFIELDID_OFFSET UNITYSDK_OFFSET(0x181B2B60)
-#define UNITYENGINE_ANDROIDJNIHELPER_GETMETHODID_1_OFFSET UNITYSDK_OFFSET(0x181B2950)
-#define UNITYENGINE_ANDROIDJNIHELPER_GETMETHODID_2_OFFSET UNITYSDK_OFFSET(0x181B3E90)
-#define UNITYENGINE_ANDROIDJNIHELPER_GETMETHODID_OFFSET UNITYSDK_OFFSET(0x181B2940)
+#define UNITYENGINE_ANDROIDJNIHELPER_CREATEJAVAPROXY_OFFSET UNITYSDK_OFFSET(0x1A9BEB50)
+#define UNITYENGINE_ANDROIDJNIHELPER_CREATEJAVARUNNABLE_OFFSET UNITYSDK_OFFSET(0x1A9BE9E0)
+#define UNITYENGINE_ANDROIDJNIHELPER_CREATEJNIARGARRAY_OFFSET UNITYSDK_OFFSET(0x1A9BECE0)
+#define UNITYENGINE_ANDROIDJNIHELPER_DELETEJNIARGARRAY_OFFSET UNITYSDK_OFFSET(0x1A9BF560)
+#define UNITYENGINE_ANDROIDJNIHELPER_GETCONSTRUCTORID_1_OFFSET UNITYSDK_OFFSET(0x1A9BF740)
+#define UNITYENGINE_ANDROIDJNIHELPER_GETCONSTRUCTORID_OFFSET UNITYSDK_OFFSET(0x1A9BE1A0)
+#define UNITYENGINE_ANDROIDJNIHELPER_GETFIELDID_OFFSET UNITYSDK_OFFSET(0x1A9BE5A0)
+#define UNITYENGINE_ANDROIDJNIHELPER_GETMETHODID_1_OFFSET UNITYSDK_OFFSET(0x1A9BF780)
+#define UNITYENGINE_ANDROIDJNIHELPER_GETMETHODID_OFFSET UNITYSDK_OFFSET(0x1A9BE390)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int AndroidJNIHelper_TypeDefinitionIndex = 5296;
+	inline static constexpr unsigned int AndroidJNIHelper_TypeDefinitionIndex = 36085;
 
 	class AndroidJNIHelper : public ::System::Object
 	{
@@ -30,14 +29,9 @@ namespace UnityEngine
 			return ((::System::IntPtr(*)(::System::IntPtr, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_ANDROIDJNIHELPER_GETCONSTRUCTORID_OFFSET))(javaClass, signature);
 		}
 
-		static ::System::IntPtr GetMethodID(::System::IntPtr javaClass, ::System::String* methodName, ::System::String* signature)
+		static ::System::IntPtr GetMethodID(::System::IntPtr javaClass, ::System::String* methodName, ::System::String* signature, ::System::Boolean isStatic)
 		{
-			return ((::System::IntPtr(*)(::System::IntPtr, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_ANDROIDJNIHELPER_GETMETHODID_OFFSET))(javaClass, methodName, signature);
-		}
-
-		static ::System::IntPtr GetMethodID_1(::System::IntPtr javaClass, ::System::String* methodName, ::System::String* signature, ::System::Boolean isStatic)
-		{
-			return ((::System::IntPtr(*)(::System::IntPtr, ::System::String*, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_ANDROIDJNIHELPER_GETMETHODID_1_OFFSET))(javaClass, methodName, signature, isStatic);
+			return ((::System::IntPtr(*)(::System::IntPtr, ::System::String*, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_ANDROIDJNIHELPER_GETMETHODID_OFFSET))(javaClass, methodName, signature, isStatic);
 		}
 
 		static ::System::IntPtr GetFieldID(::System::IntPtr javaClass, ::System::String* fieldName, ::System::String* signature, ::System::Boolean isStatic)
@@ -70,9 +64,9 @@ namespace UnityEngine
 			return ((::System::IntPtr(*)(::System::IntPtr, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_ANDROIDJNIHELPER_GETCONSTRUCTORID_1_OFFSET))(jclass, args);
 		}
 
-		static ::System::IntPtr GetMethodID_2(::System::IntPtr jclass, ::System::String* methodName, ::Il2CppArray<::System::Object*>* args, ::System::Boolean isStatic)
+		static ::System::IntPtr GetMethodID_1(::System::IntPtr jclass, ::System::String* methodName, ::Il2CppArray<::System::Object*>* args, ::System::Boolean isStatic)
 		{
-			return ((::System::IntPtr(*)(::System::IntPtr, ::System::String*, ::Il2CppArray<::System::Object*>*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_ANDROIDJNIHELPER_GETMETHODID_2_OFFSET))(jclass, methodName, args, isStatic);
+			return ((::System::IntPtr(*)(::System::IntPtr, ::System::String*, ::Il2CppArray<::System::Object*>*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_ANDROIDJNIHELPER_GETMETHODID_1_OFFSET))(jclass, methodName, args, isStatic);
 		}
 	};
 }

@@ -4,7 +4,7 @@
 
 namespace Mono
 {
-	inline static constexpr unsigned int RuntimeStructs_HandleStackMark_TypeDefinitionIndex = 17;
+	inline static constexpr unsigned int RuntimeStructs_HandleStackMark_TypeDefinitionIndex = 20;
 
 	struct alignas(8) RuntimeStructs_HandleStackMark
 	{

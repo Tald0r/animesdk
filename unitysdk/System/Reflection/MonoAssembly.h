@@ -6,36 +6,36 @@ namespace System { class String; }
 namespace System { class Type; }
 namespace System::Reflection { class Module; }
 
-#define SYSTEM_REFLECTION_MONOASSEMBLY_GETMODULES_OFFSET UNITYSDK_OFFSET(0x15CC4310)
-#define SYSTEM_REFLECTION_MONOASSEMBLY_GETMODULE_OFFSET UNITYSDK_OFFSET(0x15CC4150)
-#define SYSTEM_REFLECTION_MONOASSEMBLY_GETTYPE_OFFSET UNITYSDK_OFFSET(0x15CC40C0)
-#define SYSTEM_REFLECTION_MONOASSEMBLY__CTOR_OFFSET UNITYSDK_OFFSET(0x15CC4510)
+#define SYSTEM_REFLECTION_MONOASSEMBLY_METHOD_3_25189D47D4092890_OFFSET UNITYSDK_OFFSET(0x195137D0)
+#define SYSTEM_REFLECTION_MONOASSEMBLY_METHOD_3_85EFDDCA81AD854C_OFFSET UNITYSDK_OFFSET(0x19513580)
+#define SYSTEM_REFLECTION_MONOASSEMBLY_METHOD_3_8C432A108884785D_OFFSET UNITYSDK_OFFSET(0x19513610)
+#define SYSTEM_REFLECTION_MONOASSEMBLY_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x195139D0)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int MonoAssembly_TypeDefinitionIndex = 611;
+	inline static constexpr unsigned int MonoAssembly_TypeDefinitionIndex = 584;
 
 	class MonoAssembly : public ::System::Reflection::RuntimeAssembly
 	{
 	public:
-		::System::Void _ctor()
+		::System::Void Method_3_CA373AA1C7054598()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOASSEMBLY__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOASSEMBLY_METHOD_3_CA373AA1C7054598_OFFSET))(this);
 		}
 
-		::System::Type* GetType(::System::String* name, ::System::Boolean throwOnError, ::System::Boolean ignoreCase)
+		::System::Type* Method_3_85EFDDCA81AD854C(::System::String* name, ::System::Boolean throwOnError, ::System::Boolean ignoreCase)
 		{
-			return ((::System::Type*(*)(::PVOID, ::System::String*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOASSEMBLY_GETTYPE_OFFSET))(this, name, throwOnError, ignoreCase);
+			return ((::System::Type*(*)(::PVOID, ::System::String*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOASSEMBLY_METHOD_3_85EFDDCA81AD854C_OFFSET))(this, name, throwOnError, ignoreCase);
 		}
 
-		::System::Reflection::Module* GetModule(::System::String* name)
+		::System::Reflection::Module* Method_3_8C432A108884785D(::System::String* name)
 		{
-			return ((::System::Reflection::Module*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOASSEMBLY_GETMODULE_OFFSET))(this, name);
+			return ((::System::Reflection::Module*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOASSEMBLY_METHOD_3_8C432A108884785D_OFFSET))(this, name);
 		}
 
-		::Il2CppArray<::System::Reflection::Module*>* GetModules(::System::Boolean getResourceModules)
+		::Il2CppArray<::System::Reflection::Module*>* Method_3_25189D47D4092890(::System::Boolean getResourceModules)
 		{
-			return ((::Il2CppArray<::System::Reflection::Module*>*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOASSEMBLY_GETMODULES_OFFSET))(this, getResourceModules);
+			return ((::Il2CppArray<::System::Reflection::Module*>*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_MONOASSEMBLY_METHOD_3_25189D47D4092890_OFFSET))(this, getResourceModules);
 		}
 	};
 }

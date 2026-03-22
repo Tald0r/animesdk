@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK::Console
 {
-	inline static constexpr unsigned int SDKUIController_Direction_TypeDefinitionIndex = 7463;
+	inline static constexpr unsigned int SDKUIController_Direction_TypeDefinitionIndex = 18606;
 
 	enum class SDKUIController_Direction : ::System::Int32
 	{

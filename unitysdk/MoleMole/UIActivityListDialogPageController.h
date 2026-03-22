@@ -1,0 +1,199 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_49ABC235CB23B56F.h"
+
+class Class_0_16E4307DCC419505_548;
+class Class_1_6D028104A2786020;
+class Class_1_D375C91CCE5D3999;
+class Class_2_77AC4A2204370F5A;
+class MonoUITableScrollV2;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_CREATELISTROW_OFFSET UNITYSDK_OFFSET(0x8ABAB20)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_CREATETITLE_OFFSET UNITYSDK_OFFSET(0x8ABAC00)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_GETTEMPLATEINDEX_OFFSET UNITYSDK_OFFSET(0x8ABACE0)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x8ABBAE0)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_INITSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x8ABA8C0)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONCLICKRIGHTGOBTN_OFFSET UNITYSDK_OFFSET(0x8ABA760)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONCLICKTAB_OFFSET UNITYSDK_OFFSET(0x8ABB2B0)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8ABBAF0)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0x8ABBD00)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONREFRESHUITIMESTAMP_OFFSET UNITYSDK_OFFSET(0x8ABB9A0)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x8ABBF70)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8ABBE50)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8ABBB90)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_REFRESHSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x8ABB160)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_REFRESHTABDATA_OFFSET UNITYSDK_OFFSET(0x8ABADC0)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_REFRESHTABSELECTITEM_OFFSET UNITYSDK_OFFSET(0x8ABB210)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_REFRESHUI_OFFSET UNITYSDK_OFFSET(0x8ABBA60)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_SETCURTABBYINDEX_OFFSET UNITYSDK_OFFSET(0x8ABB320)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_SHOWTAB_OFFSET UNITYSDK_OFFSET(0x8AB9E10)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_TIMERREFRESH_CALTIMESTAMP_OFFSET UNITYSDK_OFFSET(0x8ABB630)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_TRYSETREFRESHUITIMER_OFFSET UNITYSDK_OFFSET(0x8ABB400)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8ABC1A0)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8ABC230)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0x8ABC2A0)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x8ABC300)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8ABC310)
+#define MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8ABC320)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityListDialogPageController_TypeDefinitionIndex = 77072;
+
+	class UIActivityListDialogPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_1_6D028104A2786020* _activityQuestListData; // 0x2F8
+		::MonoUITableScrollV2* _scrollView; // 0x300
+		::System::Int32 _curTabIndex; // 0x308
+		::System::Int32 _curTabSelectIndex; // 0x30C
+		::System::Int32 _defaultSelectableIndex; // 0x310
+		::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_548*>* tabDatas; // 0x318
+		::System::Int64 _nextRefreshUITimeStamp; // 0x320
+		::Struct_2_49ABC235CB23B56F _timerHandle; // 0x328
+		::Class_2_77AC4A2204370F5A* _view; // 0x338
+		::Class_1_D375C91CCE5D3999* _activityBaseData; // 0x340
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void ShowTab(::Class_0_16E4307DCC419505_548* tabData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_548*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_SHOWTAB_OFFSET))(this, tabData);
+		}
+
+		::System::Void OnClickRightGoBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONCLICKRIGHTGOBTN_OFFSET))(this);
+		}
+
+		::System::Void InitScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_INITSCROLLVIEW_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateListRow(::System::Func_1<::MoleMole::UIControlReference*>* controlReference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_CREATELISTROW_OFFSET))(this, controlReference);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateTitle(::System::Func_1<::MoleMole::UIControlReference*>* controlReference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_CREATETITLE_OFFSET))(this, controlReference);
+		}
+
+		::System::Int32 GetTemplateIndex(::System::Int32 dataIndex)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_GETTEMPLATEINDEX_OFFSET))(this, dataIndex);
+		}
+
+		::System::Void RefreshTabData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_REFRESHTABDATA_OFFSET))(this);
+		}
+
+		::System::Void RefreshScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_REFRESHSCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshTabSelectItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_REFRESHTABSELECTITEM_OFFSET))(this);
+		}
+
+		::System::Void OnClickTab(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONCLICKTAB_OFFSET))(this, index);
+		}
+
+		::System::Void SetCurTabByIndex(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_SETCURTABBYINDEX_OFFSET))(this, index);
+		}
+
+		::System::Void TrySetRefreshUITimer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_TRYSETREFRESHUITIMER_OFFSET))(this);
+		}
+
+		::System::Void TimerRefresh_CalTimestamp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_TIMERREFRESH_CALTIMESTAMP_OFFSET))(this);
+		}
+
+		::System::Void OnRefreshUITimeStamp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONREFRESHUITIMESTAMP_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void RefreshUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER_REFRESHUI_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYLISTDIALOGPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

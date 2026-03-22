@@ -4,31 +4,35 @@
 
 namespace System { class String; }
 namespace System::Net { class HttpListener; }
+namespace System::Net { class IPAddress; }
 
-#define SYSTEM_NET_LISTENERPREFIX_CHECKURI_OFFSET UNITYSDK_OFFSET(0x17ED1B60)
-#define SYSTEM_NET_LISTENERPREFIX_EQUALS_OFFSET UNITYSDK_OFFSET(0x17EE2F80)
-#define SYSTEM_NET_LISTENERPREFIX_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x17EE3000)
-#define SYSTEM_NET_LISTENERPREFIX_GET_HOST_OFFSET UNITYSDK_OFFSET(0x17EE2F50)
-#define SYSTEM_NET_LISTENERPREFIX_GET_PATH_OFFSET UNITYSDK_OFFSET(0x17EE2F70)
-#define SYSTEM_NET_LISTENERPREFIX_GET_PORT_OFFSET UNITYSDK_OFFSET(0x17EE2F60)
-#define SYSTEM_NET_LISTENERPREFIX_GET_SECURE_OFFSET UNITYSDK_OFFSET(0x17EE2F40)
-#define SYSTEM_NET_LISTENERPREFIX_PARSE_OFFSET UNITYSDK_OFFSET(0x17EE2BC0)
-#define SYSTEM_NET_LISTENERPREFIX_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17EE2F30)
-#define SYSTEM_NET_LISTENERPREFIX__CTOR_OFFSET UNITYSDK_OFFSET(0x17EB8E30)
+#define SYSTEM_NET_LISTENERPREFIX_CHECKURI_OFFSET UNITYSDK_OFFSET(0x19FDD580)
+#define SYSTEM_NET_LISTENERPREFIX_EQUALS_OFFSET UNITYSDK_OFFSET(0x19FDD470)
+#define SYSTEM_NET_LISTENERPREFIX_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x19FDD4F0)
+#define SYSTEM_NET_LISTENERPREFIX_GET_ADDRESSES_OFFSET UNITYSDK_OFFSET(0x19FDD410)
+#define SYSTEM_NET_LISTENERPREFIX_GET_HOST_OFFSET UNITYSDK_OFFSET(0x19FDD440)
+#define SYSTEM_NET_LISTENERPREFIX_GET_PATH_OFFSET UNITYSDK_OFFSET(0x19FDD460)
+#define SYSTEM_NET_LISTENERPREFIX_GET_PORT_OFFSET UNITYSDK_OFFSET(0x19FDD450)
+#define SYSTEM_NET_LISTENERPREFIX_GET_SECURE_OFFSET UNITYSDK_OFFSET(0x19FDD430)
+#define SYSTEM_NET_LISTENERPREFIX_PARSE_OFFSET UNITYSDK_OFFSET(0x19FDD090)
+#define SYSTEM_NET_LISTENERPREFIX_SET_ADDRESSES_OFFSET UNITYSDK_OFFSET(0x19FDD420)
+#define SYSTEM_NET_LISTENERPREFIX_TOSTRING_OFFSET UNITYSDK_OFFSET(0x19FDD400)
+#define SYSTEM_NET_LISTENERPREFIX__CTOR_OFFSET UNITYSDK_OFFSET(0x19FDD080)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int ListenerPrefix_TypeDefinitionIndex = 2846;
+	inline static constexpr unsigned int ListenerPrefix_TypeDefinitionIndex = 3545;
 
 	class ListenerPrefix : public ::System::Object
 	{
 	public:
-		::System::String* host; // 0x10
-		::System::String* original; // 0x18
-		::System::Net::HttpListener* Listener; // 0x20
-		::System::String* path; // 0x28
-		::System::Boolean secure; // 0x30
-		::System::UInt16 port; // 0x32
+		::System::Net::HttpListener* Listener; // 0x10
+		::Il2CppArray<::System::Net::IPAddress*>* addresses; // 0x18
+		::System::String* original; // 0x20
+		::System::String* host; // 0x28
+		::System::String* path; // 0x30
+		::System::Boolean secure; // 0x38
+		::System::UInt16 port; // 0x3A
 
 		::System::Void _ctor(::System::String* prefix)
 		{
@@ -38,6 +42,16 @@ namespace System::Net
 		::System::String* ToString()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_LISTENERPREFIX_TOSTRING_OFFSET))(this);
+		}
+
+		::Il2CppArray<::System::Net::IPAddress*>* get_Addresses()
+		{
+			return ((::Il2CppArray<::System::Net::IPAddress*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_LISTENERPREFIX_GET_ADDRESSES_OFFSET))(this);
+		}
+
+		::System::Void set_Addresses(::Il2CppArray<::System::Net::IPAddress*>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Net::IPAddress*>*))((::PBYTE)hIl2Cpp + SYSTEM_NET_LISTENERPREFIX_SET_ADDRESSES_OFFSET))(this, value);
 		}
 
 		::System::Boolean get_Secure()

@@ -1,0 +1,66 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_4D1A4E92D7B04559;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0x945C020)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER_ONCLICKSTART_OFFSET UNITYSDK_OFFSET(0x945C620)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x945C090)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x945C190)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER_SYNCCONTEXT_OFFSET UNITYSDK_OFFSET(0x945C440)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x945C6E0)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x945C710)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x945C780)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMonsterFantasyStoryInfoStoryLevelWidgetController_TypeDefinitionIndex = 73425;
+
+	class UIMonsterFantasyStoryInfoStoryLevelWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_4D1A4E92D7B04559* get__viewModel()
+		{
+			return ((::Class_2_4D1A4E92D7B04559*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void SyncContext(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER_SYNCCONTEXT_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnClickStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER_ONCLICKSTART_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOSTORYLEVELWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

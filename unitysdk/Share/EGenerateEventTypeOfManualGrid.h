@@ -1,0 +1,14 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace Share
+{
+	inline static constexpr unsigned int EGenerateEventTypeOfManualGrid_TypeDefinitionIndex = 11602;
+
+	enum class EGenerateEventTypeOfManualGrid : ::System::Int16
+	{
+		EnumCount = 2,
+		GroupName = 1,
+		EventList = 0,
+	};
+}

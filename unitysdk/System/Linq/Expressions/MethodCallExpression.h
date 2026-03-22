@@ -4,24 +4,32 @@
 #include "unitysdk/System/Linq/Expressions/ExpressionType.h"
 
 namespace System { class Type; }
+namespace System::Collections::Generic { template <typename T> class ICollection_1; }
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
+namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 namespace System::Linq::Expressions { class ExpressionVisitor; }
 namespace System::Reflection { class MethodInfo; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x17CFFAC0)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x17CFFB40)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GETINSTANCE_OFFSET UNITYSDK_OFFSET(0x17CFFA50)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x17CFFB90)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_METHOD_OFFSET UNITYSDK_OFFSET(0x17CFFAA0)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x17CFFA60)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_OBJECT_OFFSET UNITYSDK_OFFSET(0x17CFFAB0)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x17CFFA70)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_REWRITE_OFFSET UNITYSDK_OFFSET(0x17CFFAF0)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17CFF9F0)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x1AAC72F0)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x1AAC7370)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GETINSTANCE_OFFSET UNITYSDK_OFFSET(0x1AAC7100)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GETORMAKEARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1AAC72A0)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x1AAC73C0)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_ARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1AAC7170)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_METHOD_OFFSET UNITYSDK_OFFSET(0x1AAC7150)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x1AAC7110)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_OBJECT_OFFSET UNITYSDK_OFFSET(0x1AAC7160)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1AAC7120)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_REWRITE_OFFSET UNITYSDK_OFFSET(0x1AAC7320)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_SAMEARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1AAC7250)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_UPDATE_OFFSET UNITYSDK_OFFSET(0x1AAC7180)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AAC7410)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAC70A0)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int MethodCallExpression_TypeDefinitionIndex = 3225;
+	inline static constexpr unsigned int MethodCallExpression_TypeDefinitionIndex = 4512;
 
 	class MethodCallExpression : public ::System::Linq::Expressions::Expression
 	{
@@ -31,6 +39,11 @@ namespace System::Linq::Expressions
 		::System::Void _ctor(::System::Reflection::MethodInfo* method)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Reflection::MethodInfo*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION__CTOR_OFFSET))(this, method);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION__CTOR_1_OFFSET))(this);
 		}
 
 		::System::Linq::Expressions::Expression* GetInstance()
@@ -56,6 +69,26 @@ namespace System::Linq::Expressions
 		::System::Linq::Expressions::Expression* get_Object()
 		{
 			return ((::System::Linq::Expressions::Expression*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_OBJECT_OFFSET))(this);
+		}
+
+		::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>* get_Arguments()
+		{
+			return ((::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GET_ARGUMENTS_OFFSET))(this);
+		}
+
+		::System::Linq::Expressions::MethodCallExpression* Update(::System::Linq::Expressions::Expression* object, ::System::Collections::Generic::IEnumerable_1<::System::Linq::Expressions::Expression*>* arguments)
+		{
+			return ((::System::Linq::Expressions::MethodCallExpression*(*)(::PVOID, ::System::Linq::Expressions::Expression*, ::System::Collections::Generic::IEnumerable_1<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_UPDATE_OFFSET))(this, object, arguments);
+		}
+
+		::System::Boolean SameArguments(::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::Expression*>* arguments)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_SAMEARGUMENTS_OFFSET))(this, arguments);
+		}
+
+		::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>* GetOrMakeArguments()
+		{
+			return ((::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION_GETORMAKEARGUMENTS_OFFSET))(this);
 		}
 
 		::System::Linq::Expressions::Expression* Accept(::System::Linq::Expressions::ExpressionVisitor* visitor)

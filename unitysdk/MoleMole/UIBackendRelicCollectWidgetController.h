@@ -1,0 +1,191 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_2_79F6D62CE30E3F8E_181;
+class Class_2_DA8BF519212BAE65;
+class Class_3_8073069F10AF85F5;
+namespace MoleMole { class MonoGamepadNavigatableList; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine::UI::Extension { class UILocalizationText; }
+
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_FETCHCFGS_OFFSET UNITYSDK_OFFSET(0xC0B1180)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_GET_CURFOCUSED_OFFSET UNITYSDK_OFFSET(0xC0B2AC0)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_INITSORT_OFFSET UNITYSDK_OFFSET(0xC0B1FB0)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_MATCHFUNCCOLLECTED_OFFSET UNITYSDK_OFFSET(0xC0B2270)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0B25A0)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONSCROLLVIEWSELECTHANDLE_OFFSET UNITYSDK_OFFSET(0xC0B2920)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC0B3420)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONSORTORFILTERCHANGED_OFFSET UNITYSDK_OFFSET(0xC0B2470)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0B3340)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0B0C40)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0B1EE0)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_OPENINFO_OFFSET UNITYSDK_OFFSET(0xC0B36C0)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_REFRESHPROGRESSTITLETEXT_OFFSET UNITYSDK_OFFSET(0xC0B2640)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_REFRESHSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0xC0B24E0)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_REFRESHSELECTVIEW_OFFSET UNITYSDK_OFFSET(0xC0B1580)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_REFRESHVIEWONFOCUSCHANGE_OFFSET UNITYSDK_OFFSET(0xC0B1510)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_SETLEVELDESCTEXT_OFFSET UNITYSDK_OFFSET(0xC0B2C00)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_SETSIMPLEDESC_OFFSET UNITYSDK_OFFSET(0xC0B2F90)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_TRYCANCELSELECTONLAYOUTCHANGETOCONSOLE_OFFSET UNITYSDK_OFFSET(0xC0B35E0)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_TRYSELECTFIRSTITEMEXCEPTCONSOLELAYOUT_OFFSET UNITYSDK_OFFSET(0xC0B3500)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC0B37B0)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0B3860)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC0B38D0)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0B3940)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0B39C0)
+#define MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0B3A20)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBackendRelicCollectWidgetController_TypeDefinitionIndex = 77356;
+
+	class UIBackendRelicCollectWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* AbyssS2ClueSystemRelicFilterTag01_001_TextMap; // 0x0
+		// static const ::System::String* AbyssS2ClueSystemRelicFilterTag01_002_TextMap; // 0x0
+		// static const ::System::String* RelicCurLevelLevelColor; // 0x0
+		::Class_2_79F6D62CE30E3F8E_181* _view; // 0x2A0
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* _allItemList; // 0x2A8
+		::Class_2_DA8BF519212BAE65* _abyssModel; // 0x2B0
+		::Class_3_8073069F10AF85F5* showData; // 0x2B8
+		::MoleMole::MonoGamepadNavigatableList* m_naviList; // 0x2C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void RefreshViewOnFocusChange(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_REFRESHVIEWONFOCUSCHANGE_OFFSET))(this, args);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void InitSort(::MoleMole::UIControllerContextBase* ctx)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_INITSORT_OFFSET))(this, ctx);
+		}
+
+		::System::Boolean MatchFuncCollected(::Class_1_0D6706375CDAAE8C* arg1, ::System::String* arg2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_MATCHFUNCCOLLECTED_OFFSET))(this, arg1, arg2);
+		}
+
+		::System::Void OnSortOrFilterChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONSORTORFILTERCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void RefreshProgressTitleText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_REFRESHPROGRESSTITLETEXT_OFFSET))(this);
+		}
+
+		::System::Void OnScrollViewSelectHandle(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONSCROLLVIEWSELECTHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Boolean get_CurFocused()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_GET_CURFOCUSED_OFFSET))(this);
+		}
+
+		::System::Void RefreshSelectView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_REFRESHSELECTVIEW_OFFSET))(this);
+		}
+
+		::System::Void SetSimpleDesc(::System::String* title)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_SETSIMPLEDESC_OFFSET))(this, title);
+		}
+
+		::System::Void SetLevelDescText(::UnityEngine::UI::Extension::UILocalizationText* textCom, ::UnityEngine::GameObject* spaceUpGo, ::System::Int32 configLevel, ::System::Int32 curLevel)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UILocalizationText*, ::UnityEngine::GameObject*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_SETLEVELDESCTEXT_OFFSET))(this, textCom, spaceUpGo, configLevel, curLevel);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void RefreshScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_REFRESHSCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void TrySelectFirstItemExceptConsoleLayout()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_TRYSELECTFIRSTITEMEXCEPTCONSOLELAYOUT_OFFSET))(this);
+		}
+
+		::System::Void TryCancelSelectOnLayoutChangeToConsole()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_TRYCANCELSELECTONLAYOUTCHANGETOCONSOLE_OFFSET))(this);
+		}
+
+		::System::Void FetchCfgs()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_FETCHCFGS_OFFSET))(this);
+		}
+
+		::System::Void OpenInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER_OPENINFO_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBACKENDRELICCOLLECTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

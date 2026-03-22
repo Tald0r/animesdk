@@ -1,0 +1,199 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_1_BC95CD88D4586F73;
+class Class_2_79F6D62CE30E3F8E_122;
+class Class_2_E71E286B10A21FB0;
+namespace MoleMole { class MonoGamepadCustomList; }
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class MonoGamepadNavigatableList; }
+namespace MoleMole { class UIBangBooAutoBattleInLevelPageController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_BINDVIEW_OFFSET UNITYSDK_OFFSET(0xB5C4670)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB5C34B0)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xB5C40C0)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xB5C3550)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xB5C37E0)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB5C3700)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB5C2E40)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB5C3400)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_REFRESHBANGBOO_OFFSET UNITYSDK_OFFSET(0xB5C3920)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_SHOWPLATFORMUI_OFFSET UNITYSDK_OFFSET(0xB5C4DC0)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xB5C3850)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__BINDVIEW_B__17_0_OFFSET UNITYSDK_OFFSET(0xB5C5050)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__BINDVIEW_B__17_1_OFFSET UNITYSDK_OFFSET(0xB5C52A0)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__BINDVIEW_B__17_2_OFFSET UNITYSDK_OFFSET(0xB5C54F0)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__BINDVIEW_B__17_3_OFFSET UNITYSDK_OFFSET(0xB5C57E0)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__BINDVIEW_B__17_4_OFFSET UNITYSDK_OFFSET(0xB5C5920)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB5C4FC0)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__ONUIINIT_B__9_0_OFFSET UNITYSDK_OFFSET(0xB5C4FF0)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__ONUIINIT_B__9_1_OFFSET UNITYSDK_OFFSET(0xB5C5020)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__SHOWPLATFORMUI_G__SETUPPLATFORMUI_18_0_OFFSET UNITYSDK_OFFSET(0xB5C4F40)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB5C5A60)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xB5C5AD0)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xB5C5B50)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xB5C5B80)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB5C5B90)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB5C5C10)
+#define MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB5C5C70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIABInLevelPlayerInfoWidgetController_TypeDefinitionIndex = 51560;
+
+	class UIABInLevelPlayerInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_122* _view; // 0x2A0
+		::Class_1_48D56DACBE4271BC* _syncHelper; // 0x2A8
+		::Class_1_48D56DACBE4271BC* _syncHelper_gold; // 0x2B0
+		::Class_1_48D56DACBE4271BC* _syncHelper_hp; // 0x2B8
+		::MoleMole::UIBangBooAutoBattleInLevelPageController* _parent; // 0x2C0
+		::Class_2_E71E286B10A21FB0* _data; // 0x2C8
+		::MoleMole::MonoGamepadNavigatableList* _camp; // 0x2D0
+		::MoleMole::MonoGamepadNavigatableList* _equip; // 0x2D8
+		::MoleMole::MonoGamepadCustomList* _bangBoo; // 0x2E0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void BindView(::Class_2_E71E286B10A21FB0* inLevelData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_E71E286B10A21FB0*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_BINDVIEW_OFFSET))(this, inLevelData);
+		}
+
+		::System::Void ShowPlatformUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_SHOWPLATFORMUI_OFFSET))(this);
+		}
+
+		::System::Void RefreshBangBoo(::Class_2_E71E286B10A21FB0* inLevelData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_E71E286B10A21FB0*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER_REFRESHBANGBOO_OFFSET))(this, inLevelData);
+		}
+
+		::System::Void _OnUIInit_b__9_0(::System::Int32 _)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__ONUIINIT_B__9_0_OFFSET))(this, _);
+		}
+
+		::System::Void _OnUIInit_b__9_1(::System::Int32 _)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__ONUIINIT_B__9_1_OFFSET))(this, _);
+		}
+
+		::System::Void _BindView_b__17_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__BINDVIEW_B__17_0_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__17_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__BINDVIEW_B__17_1_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__17_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__BINDVIEW_B__17_2_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__17_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__BINDVIEW_B__17_3_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__17_4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__BINDVIEW_B__17_4_OFFSET))(this);
+		}
+
+		::System::Void _ShowPlatformUI_g__SetupPlatformUI_18_0(::Class_1_BC95CD88D4586F73* info)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_BC95CD88D4586F73*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER__SHOWPLATFORMUI_G__SETUPPLATFORMUI_18_0_OFFSET))(this, info);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

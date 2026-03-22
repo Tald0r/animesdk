@@ -1,9 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/AvatarPropertyType.h"
-#include "unitysdk/RPG/GameCore/FixPoint.h"
+#include "unitysdk/Enum_3_7CF6DCCA0AF3DB5F.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_324_TypeDefinitionIndex = 40914;
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+inline static constexpr unsigned int Class_0_16E4307DCC419505_324_TypeDefinitionIndex = 42750;
 
 class Class_0_16E4307DCC419505_324
 {

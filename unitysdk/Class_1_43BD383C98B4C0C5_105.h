@@ -1,50 +1,32 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/AbilityLinearProperty.h"
-#include "unitysdk/RPG/GameCore/AbilityLinearPropertyWithOverride.h"
-#include "unitysdk/RPG/GameCore/BigFixPoint.h"
-#include "unitysdk/RPG/GameCore/FixPoint.h"
-#include "unitysdk/RPG/GameCore/HealFormulaType.h"
 #include "unitysdk/System/Object.h"
 
-namespace RPG::GameCore { class TurnBasedAbilityComponent; }
+#define CLASS_1_43BD383C98B4C0C5_105__CTOR_OFFSET UNITYSDK_OFFSET(0x94ECCB0)
 
-#define CLASS_1_43BD383C98B4C0C5_105__CTOR_OFFSET UNITYSDK_OFFSET(0x8A88B60)
-
-inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_105_TypeDefinitionIndex = 42458;
+inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_105_TypeDefinitionIndex = 61985;
 
 class Class_1_43BD383C98B4C0C5_105 : public ::System::Object
 {
 public:
-	::RPG::GameCore::BigFixPoint Field_1_14; // 0x10
-	::RPG::GameCore::TurnBasedAbilityComponent* Field_1_27; // 0x20
-	::RPG::GameCore::TurnBasedAbilityComponent* Field_1_28; // 0x28
-	::RPG::GameCore::BigFixPoint Field_1_7; // 0x30
-	::RPG::GameCore::BigFixPoint Field_1_12; // 0x40
-	::RPG::GameCore::FixPoint Field_1_10; // 0x50
-	::RPG::GameCore::FixPoint Field_1_2; // 0x58
-	::RPG::GameCore::FixPoint Field_1_15; // 0x60
-	::RPG::GameCore::FixPoint Field_1_6; // 0x68
-	::RPG::GameCore::FixPoint Field_1_23; // 0x70
-	::RPG::GameCore::FixPoint Field_1_4; // 0x78
-	::RPG::GameCore::FixPoint Field_1_3; // 0x80
-	::RPG::GameCore::FixPoint Field_1_9; // 0x88
-	::RPG::GameCore::FixPoint Field_1_22; // 0x90
-	::RPG::GameCore::AbilityLinearPropertyWithOverride Field_1_5; // 0x98
-	::RPG::GameCore::FixPoint Field_1_18; // 0xE8
-	::RPG::GameCore::FixPoint Field_1_20; // 0xF0
-	::RPG::GameCore::FixPoint Field_1_1; // 0xF8
-	::RPG::GameCore::FixPoint Field_1_8; // 0x100
-	::RPG::GameCore::FixPoint Field_1_16; // 0x108
-	::RPG::GameCore::FixPoint Field_1_11; // 0x110
-	::RPG::GameCore::FixPoint Field_1_24; // 0x118
-	::RPG::GameCore::FixPoint Field_1_17; // 0x120
-	::RPG::GameCore::AbilityLinearProperty Field_1_0; // 0x128
-	::RPG::GameCore::FixPoint Field_1_13; // 0x170
-	::System::Boolean Field_1_25; // 0x178
-	::System::Boolean Field_1_26; // 0x179
-	::RPG::GameCore::HealFormulaType Field_1_19; // 0x17C
-	::RPG::GameCore::FixPoint Field_1_21; // 0x180
+	// static const ::System::Int32 Field_1_0 = 0x27D9; // 0x0
+	// static const ::System::Int32 Field_1_1 = 0x283D; // 0x0
+	// static const ::System::Int32 Field_1_2 = 0x283E; // 0x0
+	// static const ::System::Int32 Field_1_3 = 0x64; // 0x0
+	// static const ::System::Int32 Field_1_4 = 0x65; // 0x0
+	// static const ::System::Int32 Field_1_5 = 0x66; // 0x0
+	// static const ::System::Int32 Field_1_6 = 0x67; // 0x0
+	// static const ::System::Int32 Field_1_7 = 0x68; // 0x0
+	// static const ::System::Int32 Field_1_8 = 0x69; // 0x0
+	// static const ::System::Int32 Field_1_9 = 0x6A; // 0x0
+	// static const ::System::Int32 Field_1_10 = 0x6B; // 0x0
+	// static const ::System::Int32 Field_1_11 = 0x1; // 0x0
+	// static const ::System::Int32 Field_1_12 = 0x2; // 0x0
+	// static const ::System::Int32 Field_1_13 = 0x1; // 0x0
+	// static const ::System::Int32 Field_1_14 = 0x2; // 0x0
+	// static const ::System::Int32 Field_1_15 = 0x2DCD0E; // 0x0
+	// static const ::System::Int32 Field_1_16 = 0x2EE1; // 0x0
+	// static const ::System::Int32 Field_1_17 = 0x2DCD2F; // 0x0
 
 	::System::Void _ctor()
 	{

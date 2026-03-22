@@ -1,0 +1,134 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MonoCustomPropertyUIControllerBase.h"
+
+class Class_2_F356F730CBE9F77E;
+namespace MoleMole { class UIControlReference; }
+namespace System { class String; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class RectTransform; }
+
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_CHANGEMATERIAL_OFFSET UNITYSDK_OFFSET(0x9293030)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_COLLECTALLANIMATIONCOMPONENTS_OFFSET UNITYSDK_OFFSET(0x9292DA0)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_GET_ISUIHIDED_OFFSET UNITYSDK_OFFSET(0x9291AE0)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_GET_PLAYFADEOUTDELAY_OFFSET UNITYSDK_OFFSET(0x9291BA0)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x9291AD0)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_HANDLEALLCUSTOMPROPERTIESONSHOW_OFFSET UNITYSDK_OFFSET(0x92920B0)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_HANDLECUSTOMPROPERTY_OFFSET UNITYSDK_OFFSET(0x92921D0)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_ONATTACHENTITY_OFFSET UNITYSDK_OFFSET(0x9291E60)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9291C50)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9291CF0)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_SET_PLAYFADEOUTDELAY_OFFSET UNITYSDK_OFFSET(0x9291BB0)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0x9292E60)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9293300)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER__HANDLECUSTOMPROPERTY_B__23_1_OFFSET UNITYSDK_OFFSET(0x9293310)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER___BASE_ONATTACHENTITY_OFFSET UNITYSDK_OFFSET(0x9293370)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x92933D0)
+#define MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9293440)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelYiXuanPanelChildWindowController_TypeDefinitionIndex = 74533;
+
+	class UIInLevelYiXuanPanelChildWindowController : public ::MonoCustomPropertyUIControllerBase
+	{
+	public:
+		// static const ::System::String* FadeInAnimaClip; // 0x0
+		// static const ::System::String* LoopAnimaClip; // 0x0
+		// static const ::System::String* FadeOutAnimaClip; // 0x0
+		::Class_2_F356F730CBE9F77E* _view; // 0x330
+		::System::Single _fillBgParentWidth; // 0x338
+		::UnityEngine::RectTransform* _fillRect; // 0x340
+		::UnityEngine::Material* _mat1; // 0x348
+		::UnityEngine::Material* _mat2; // 0x350
+		::System::Boolean _playFadeOutDelay; // 0x358
+		::Foundation::Coroutine::CoroutineHandle _fadeOutDelayCallHandle; // 0x35C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsUIHided()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_GET_ISUIHIDED_OFFSET))(this);
+		}
+
+		::System::Boolean get_playFadeOutDelay()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_GET_PLAYFADEOUTDELAY_OFFSET))(this);
+		}
+
+		::System::Void set_playFadeOutDelay(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_SET_PLAYFADEOUTDELAY_OFFSET))(this, value);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnAttachEntity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_ONATTACHENTITY_OFFSET))(this);
+		}
+
+		::System::Void HandleAllCustomPropertiesOnShow()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_HANDLEALLCUSTOMPROPERTIESONSHOW_OFFSET))(this);
+		}
+
+		::System::Void CollectAllAnimationComponents()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_COLLECTALLANIMATIONCOMPONENTS_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void HandleCustomProperty(::System::String* customTypePlaceholder, ::System::Double oldValue, ::System::Double newValue, ::System::Boolean ignoreAnimation)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Double, ::System::Double, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_HANDLECUSTOMPROPERTY_OFFSET))(this, customTypePlaceholder, oldValue, newValue, ignoreAnimation);
+		}
+
+		::System::Void ChangeMaterial()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER_CHANGEMATERIAL_OFFSET))(this);
+		}
+
+		::System::Void _HandleCustomProperty_b__23_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER__HANDLECUSTOMPROPERTY_B__23_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnAttachEntity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER___BASE_ONATTACHENTITY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELYIXUANPANELCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+	};
+}

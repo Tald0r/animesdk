@@ -1,0 +1,38 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/PipelineCamera/CameraCommandHandlerCollection.h"
+#include "unitysdk/System/Object.h"
+
+namespace PipelineCamera { class ICameraCommand; }
+namespace System { template <typename T> class Action_1; }
+
+#define PIPELINECAMERA_DETAIL_PIPELINECAMERACOMMANDHANDLER_PIPELINEVALUETOPIPELINEINDEX_OFFSET UNITYSDK_OFFSET(0x1A1A87A0)
+#define PIPELINECAMERA_DETAIL_PIPELINECAMERACOMMANDHANDLER_SENDCAMERACOMMAND_OFFSET UNITYSDK_OFFSET(0x1A1A8680)
+#define PIPELINECAMERA_DETAIL_PIPELINECAMERACOMMANDHANDLER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1A8650)
+
+namespace PipelineCamera::Detail
+{
+	inline static constexpr unsigned int PipelineCameraCommandHandler_TypeDefinitionIndex = 34881;
+
+	class PipelineCameraCommandHandler : public ::System::Object
+	{
+	public:
+		::Il2CppArray<::PipelineCamera::CameraCommandHandlerCollection>* _cameraCommandHandlers; // 0x10
+		::System::Int32 _pipelineCount; // 0x18
+
+		::System::Void _ctor(::System::Int32 pipelineCount)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + PIPELINECAMERA_DETAIL_PIPELINECAMERACOMMANDHANDLER__CTOR_OFFSET))(this, pipelineCount);
+		}
+
+		::System::Void SendCameraCommand(::System::Int32 pipeline, ::PipelineCamera::ICameraCommand* command)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::PipelineCamera::ICameraCommand*))((::PBYTE)hIl2Cpp + PIPELINECAMERA_DETAIL_PIPELINECAMERACOMMANDHANDLER_SENDCAMERACOMMAND_OFFSET))(this, pipeline, command);
+		}
+
+		static ::System::Int32 PipelineValueToPipelineIndex(::System::Int32 pipeline, ::System::Int32 pipelineCount)
+		{
+			return ((::System::Int32(*)(::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + PIPELINECAMERA_DETAIL_PIPELINECAMERACOMMANDHANDLER_PIPELINEVALUETOPIPELINEINDEX_OFFSET))(pipeline, pipelineCount);
+		}
+	};
+}

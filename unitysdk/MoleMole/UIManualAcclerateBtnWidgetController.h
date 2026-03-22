@@ -1,0 +1,109 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_1EB2B840600E4E48;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_ACCELERATIONVIEW_OFFSET UNITYSDK_OFFSET(0xCFCDDF0)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_GET_ISMANUALACCELERATIONON_OFFSET UNITYSDK_OFFSET(0xCFCD8C0)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_LOCKVIEW_OFFSET UNITYSDK_OFFSET(0xCFCDF90)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_MANUALACCELERATE_OFFSET UNITYSDK_OFFSET(0xCFCDB40)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_NOACCELERATIONVIEW_OFFSET UNITYSDK_OFFSET(0xCFCDEC0)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xCFCDC70)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xCFCDD10)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCFCD8F0)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xCFCDBC0)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xCFCE060)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET UNITYSDK_OFFSET(0xCFCE090)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xCFCE220)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xCFCE290)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCFCE310)
+#define MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xCFCE370)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIManualAcclerateBtnWidgetController_TypeDefinitionIndex = 55418;
+
+	class UIManualAcclerateBtnWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_1EB2B840600E4E48* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsManualAccelerationOn()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_GET_ISMANUALACCELERATIONON_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void ManualAccelerate(::System::Boolean v)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_MANUALACCELERATE_OFFSET))(this, v);
+		}
+
+		::System::Void LockView(::System::Boolean v)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_LOCKVIEW_OFFSET))(this, v);
+		}
+
+		::System::Void AccelerationView(::System::Boolean v)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_ACCELERATIONVIEW_OFFSET))(this, v);
+		}
+
+		::System::Void NoAccelerationView(::System::Boolean v)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER_NOACCELERATIONVIEW_OFFSET))(this, v);
+		}
+
+		::System::Void _OnUIInit_b__3_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMANUALACCLERATEBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -4,9 +4,9 @@
 
 namespace System { class Type; }
 
-#define AKENUMFLAGATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x183977E0)
+#define AKENUMFLAGATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD6F3C0)
 
-inline static constexpr unsigned int AkEnumFlagAttribute_TypeDefinitionIndex = 33591;
+inline static constexpr unsigned int AkEnumFlagAttribute_TypeDefinitionIndex = 30037;
 
 class AkEnumFlagAttribute : public ::UnityEngine::PropertyAttribute
 {

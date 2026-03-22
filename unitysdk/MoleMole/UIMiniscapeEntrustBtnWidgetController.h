@@ -1,0 +1,128 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_A8C94EA612F5CBF3_3;
+class Class_3_5139B0F7496B8379_4;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIItemIconBtnSmallWidgetController; }
+namespace System { class Action; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_GETRARITYICONPATH_OFFSET UNITYSDK_OFFSET(0xAB6E580)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_GET_TASKID_OFFSET UNITYSDK_OFFSET(0xAB6E500)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xAB6D080)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_ONCLICKBTN_OFFSET UNITYSDK_OFFSET(0xAB6E8C0)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAB6D1F0)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAB6D290)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAB6CF20)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAB6CFC0)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_PLAYREFRESHANIM_OFFSET UNITYSDK_OFFSET(0xAB6E320)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xAB6D3F0)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_SETQUEST_OFFSET UNITYSDK_OFFSET(0xAB6D370)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_TRYREFRESHTASK_OFFSET UNITYSDK_OFFSET(0xAB6E750)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAB6EE60)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAB6EE90)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAB6EF00)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAB6EF80)
+#define MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAB6EFE0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMiniscapeEntrustBtnWidgetController_TypeDefinitionIndex = 69474;
+
+	class UIMiniscapeEntrustBtnWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_A8C94EA612F5CBF3_3* _view; // 0x2A0
+		::Class_3_5139B0F7496B8379_4* _task; // 0x2A8
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnSmallWidgetController*>* _rewardItems; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetQuest(::Class_3_5139B0F7496B8379_4* task)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_5139B0F7496B8379_4*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_SETQUEST_OFFSET))(this, task);
+		}
+
+		::System::Void PlayRefreshAnim(::System::Action* onRefreshOutFinish)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_PLAYREFRESHANIM_OFFSET))(this, onRefreshOutFinish);
+		}
+
+		::System::Int32 get_TaskID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_GET_TASKID_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void TryRefreshTask()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_TRYREFRESHTASK_OFFSET))(this);
+		}
+
+		::System::Void OnClickBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_ONCLICKBTN_OFFSET))(this);
+		}
+
+		::Foundation::AssetPath GetRarityIconPath(::System::Int32 rarity)
+		{
+			return ((::Foundation::AssetPath(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER_GETRARITYICONPATH_OFFSET))(this, rarity);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEENTRUSTBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

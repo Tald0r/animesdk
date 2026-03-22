@@ -4,7 +4,7 @@
 
 namespace UnityEngine::PlayerLoop
 {
-	inline static constexpr unsigned int PostLateUpdate_ProfilerEndFrame_TypeDefinitionIndex = 4449;
+	inline static constexpr unsigned int PostLateUpdate_ProfilerEndFrame_TypeDefinitionIndex = 5657;
 
 	struct alignas(1) PostLateUpdate_ProfilerEndFrame
 	{

@@ -1,0 +1,247 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_23A92D1EBBE1C2D2;
+class Class_1_346A299033A30404;
+class Class_1_7F8E72A37FA24C0F;
+class Class_1_D4F8C41AAD377B89;
+class Class_2_79F6D62CE30E3F8E_170;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace System { class Object; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_CHANGEDIFFICULTY_OFFSET UNITYSDK_OFFSET(0xCFEE7C0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_GETFIRSTREWARDBYID_OFFSET UNITYSDK_OFFSET(0xCFF07E0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_GETFIRSTREWARDBYINDEX_1_OFFSET UNITYSDK_OFFSET(0xCFF0930)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_GETFIRSTREWARDBYINDEX_OFFSET UNITYSDK_OFFSET(0xCFF06F0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_INITREWARDVIEW_OFFSET UNITYSDK_OFFSET(0xCFEDCC0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xCFEC640)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONADDDIFFICULTYLEVEL_OFFSET UNITYSDK_OFFSET(0xCFEE750)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONADDSUITECLICK_OFFSET UNITYSDK_OFFSET(0xCFEE3D0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONAUTOFILL_OFFSET UNITYSDK_OFFSET(0xCFEF630)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONCARDCLICK_OFFSET UNITYSDK_OFFSET(0xCFEEA40)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONCLICKDELITEM_OFFSET UNITYSDK_OFFSET(0xCFEF400)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xCFECFA0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONEDITCLICK_OFFSET UNITYSDK_OFFSET(0xCFEF970)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONENDEDIT_OFFSET UNITYSDK_OFFSET(0xCFEF7F0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONREDDIFFICULTYLEVEL_OFFSET UNITYSDK_OFFSET(0xCFEE9D0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xCFED120)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONSUITECHANGED_OFFSET UNITYSDK_OFFSET(0xCFEDAB0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xCFED040)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCFEC4E0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xCFEC580)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_REFRESHBASEVIEW_OFFSET UNITYSDK_OFFSET(0xCFED380)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_REFRESHCARDLISTVIEW_OFFSET UNITYSDK_OFFSET(0xCFEEB20)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_REFRESHEMPTYVIEW_OFFSET UNITYSDK_OFFSET(0xCFEF240)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_REFRESHREWARDBUFFVIEW_OFFSET UNITYSDK_OFFSET(0xCFEFFA0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_REFRESHREWARDVIEW_OFFSET UNITYSDK_OFFSET(0xCFEFAB0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_SELECTCURSUITE_OFFSET UNITYSDK_OFFSET(0xCFEE5D0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_SETOWNERVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xCFEDC50)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_SETSUITE_OFFSET UNITYSDK_OFFSET(0xCFED2F0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xCFF0B70)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER__ONCLICKDELITEM_B__26_0_OFFSET UNITYSDK_OFFSET(0xCFF0CA0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xCFF0DA0)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xCFF0E10)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xCFF0E90)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCFF0F10)
+#define MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xCFF0F70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMonsterCardDeckWidgetController_TypeDefinitionIndex = 64321;
+
+	class UIMonsterCardDeckWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		// static const ::System::String* InputPanel_Title; // 0x0
+		// static const ::System::String* InputPanel_Tips; // 0x0
+		// static const ::System::String* InputPanel_InputTips; // 0x0
+		// static const ::System::Int32 MaxRewardCount = 0x5; // 0x0
+		// static const ::System::Int32 EMPTT_ITEM_ID = 0x0; // 0x0
+		::Class_2_79F6D62CE30E3F8E_170* _view; // 0x2D0
+		::System::Collections::Generic::List_1<::Class_1_23A92D1EBBE1C2D2*>* _cardViewModels; // 0x2D8
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnWidgetController*>* _rewardControllers; // 0x2E0
+		::System::Int32 _curSuiteId; // 0x2E8
+		::System::Int32 _curDifficultyLevel; // 0x2EC
+		::Class_1_346A299033A30404* ownerViewModel; // 0x2F0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void SetSuite(::System::Int32 suiteId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_SETSUITE_OFFSET))(this, suiteId);
+		}
+
+		::System::Void SetOwnerViewModel(::Class_1_346A299033A30404* owner)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_346A299033A30404*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_SETOWNERVIEWMODEL_OFFSET))(this, owner);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnAddSuiteClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONADDSUITECLICK_OFFSET))(this);
+		}
+
+		::System::Void SelectCurSuite()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_SELECTCURSUITE_OFFSET))(this);
+		}
+
+		::System::Void OnAddDifficultyLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONADDDIFFICULTYLEVEL_OFFSET))(this);
+		}
+
+		::System::Void OnRedDifficultyLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONREDDIFFICULTYLEVEL_OFFSET))(this);
+		}
+
+		::System::Void ChangeDifficulty(::System::Int32 diff)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_CHANGEDIFFICULTY_OFFSET))(this, diff);
+		}
+
+		::System::Void OnCardClick(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONCARDCLICK_OFFSET))(this, obj);
+		}
+
+		::System::Void OnSuiteChanged(::System::Int32 suiteId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONSUITECHANGED_OFFSET))(this, suiteId);
+		}
+
+		::System::Void OnClickDelItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONCLICKDELITEM_OFFSET))(this);
+		}
+
+		::System::Void OnAutoFill()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONAUTOFILL_OFFSET))(this);
+		}
+
+		::System::Void OnEndEdit(::System::String* name)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONENDEDIT_OFFSET))(this, name);
+		}
+
+		::System::Void OnEditClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_ONEDITCLICK_OFFSET))(this);
+		}
+
+		::System::Void InitRewardView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_INITREWARDVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshEmptyView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_REFRESHEMPTYVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshBaseView(::System::Boolean needRefreshReward)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_REFRESHBASEVIEW_OFFSET))(this, needRefreshReward);
+		}
+
+		::System::Void RefreshCardListView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_REFRESHCARDLISTVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshRewardView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_REFRESHREWARDVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshRewardBuffView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_REFRESHREWARDBUFFVIEW_OFFSET))(this);
+		}
+
+		::System::Int32 GetFirstRewardByIndex(::System::Int32 machineLevel, ::System::Collections::Generic::List_1<::Class_1_7F8E72A37FA24C0F*>* build, ::System::Int32 idx)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Collections::Generic::List_1<::Class_1_7F8E72A37FA24C0F*>*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_GETFIRSTREWARDBYINDEX_OFFSET))(this, machineLevel, build, idx);
+		}
+
+		::System::Int32 GetFirstRewardByIndex_1(::System::Int32 machineLevel, ::Class_1_D4F8C41AAD377B89* build, ::System::Int32 idx)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::Class_1_D4F8C41AAD377B89*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_GETFIRSTREWARDBYINDEX_1_OFFSET))(this, machineLevel, build, idx);
+		}
+
+		::System::Int32 GetFirstRewardById(::System::Int32 machineLevel, ::System::Int32 monsterCard)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER_GETFIRSTREWARDBYID_OFFSET))(this, machineLevel, monsterCard);
+		}
+
+		::System::Void _OnClickDelItem_b__26_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER__ONCLICKDELITEM_B__26_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERCARDDECKWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

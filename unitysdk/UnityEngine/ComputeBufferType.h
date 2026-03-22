@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ComputeBufferType_TypeDefinitionIndex = 3940;
+	inline static constexpr unsigned int ComputeBufferType_TypeDefinitionIndex = 5215;
 
 	enum class ComputeBufferType : ::System::Int32
 	{
@@ -13,12 +13,9 @@ namespace UnityEngine
 		Counter = 4,
 		Constant = 8,
 		Structured = 16,
-		CpuRead = 32,
 		DrawIndirect = 256,
 		IndirectArguments = 256,
 		GPUMemory = 512,
-		VertexBuffer = 1024,
-		TextureBuffer = 2048,
-		IndexBuffer = 4096,
+		Typed = 1024,
 	};
 }

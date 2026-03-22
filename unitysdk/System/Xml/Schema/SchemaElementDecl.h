@@ -1,8 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/SchemaDeclBase.h"
+#include "unitysdk/System/Xml/Schema/XmlSchemaDerivationMethod.h"
 
 namespace System { class String; }
+namespace System::Collections { class Hashtable; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Collections::Generic { template <typename T> class IList_1; }
@@ -10,53 +12,54 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Xml { class IDtdAttributeInfo; }
 namespace System::Xml { class IDtdDefaultAttributeInfo; }
 namespace System::Xml { class XmlQualifiedName; }
+namespace System::Xml::Schema { class CompiledIdentityConstraint; }
 namespace System::Xml::Schema { class ContentValidator; }
 namespace System::Xml::Schema { class SchemaAttDef; }
 namespace System::Xml::Schema { class XmlSchemaAnyAttribute; }
 namespace System::Xml::Schema { class XmlSchemaDatatype; }
+namespace System::Xml::Schema { class XmlSchemaElement; }
 
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_ADDATTDEF_OFFSET UNITYSDK_OFFSET(0x17D77E20)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_CREATEANYTYPEELEMENTDECL_OFFSET UNITYSDK_OFFSET(0x17D77B90)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GETATTDEF_OFFSET UNITYSDK_OFFSET(0x17D77F60)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_ATTDEFS_OFFSET UNITYSDK_OFFSET(0x17D78030)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_CONTENTVALIDATOR_OFFSET UNITYSDK_OFFSET(0x17D77DF0)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_DEFAULTATTDEFS_OFFSET UNITYSDK_OFFSET(0x17D78020)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_HASNONCDATAATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x17D77DB0)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_ISIDDECLARED_OFFSET UNITYSDK_OFFSET(0x17D77D90)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_ISNOTATIONDECLARED_OFFSET UNITYSDK_OFFSET(0x17D77DD0)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SET_ANYATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x17D77E10)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SET_CONTENTVALIDATOR_OFFSET UNITYSDK_OFFSET(0x17D77E00)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SET_HASNONCDATAATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x17D77DC0)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SET_ISIDDECLARED_OFFSET UNITYSDK_OFFSET(0x17D77DA0)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SET_ISNOTATIONDECLARED_OFFSET UNITYSDK_OFFSET(0x17D77DE0)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SYSTEM_XML_IDTDATTRIBUTELISTINFO_GET_HASNONCDATAATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x17D77C70)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SYSTEM_XML_IDTDATTRIBUTELISTINFO_LOOKUPATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x17D77C80)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SYSTEM_XML_IDTDATTRIBUTELISTINFO_LOOKUPDEFAULTATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x17D77D80)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D78040)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17D77850)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17D77A00)
-#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL__CTOR_OFFSET UNITYSDK_OFFSET(0x17D776D0)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_ADDATTDEF_OFFSET UNITYSDK_OFFSET(0x1A36EB60)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_CHECKATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x1A36ED90)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_CLONE_OFFSET UNITYSDK_OFFSET(0x1A36EA60)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_CREATEANYTYPEELEMENTDECL_OFFSET UNITYSDK_OFFSET(0x1A36E730)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GETATTDEF_OFFSET UNITYSDK_OFFSET(0x1A36ECC0)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_DEFAULTATTDEFS_OFFSET UNITYSDK_OFFSET(0x1A36ED80)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_HASDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x1A36EB50)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_HASNONCDATAATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x1A36EA50)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SYSTEM_XML_IDTDATTRIBUTELISTINFO_GET_HASNONCDATAATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x1A36E930)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SYSTEM_XML_IDTDATTRIBUTELISTINFO_LOOKUPATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x1A36E940)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SYSTEM_XML_IDTDATTRIBUTELISTINFO_LOOKUPDEFAULTATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x1A36EA40)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A36F0E0)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A36E3F0)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1A36E5A0)
+#define SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A36E270)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int SchemaElementDecl_TypeDefinitionIndex = 2156;
+	inline static constexpr unsigned int SchemaElementDecl_TypeDefinitionIndex = 2085;
 
 	class SchemaElementDecl : public ::System::Xml::Schema::SchemaDeclBase
 	{
 	public:
 		static ::System::Xml::Schema::SchemaElementDecl** StaticGet_Empty()
 		{
-			return (::System::Xml::Schema::SchemaElementDecl**)Il2CppClass::FromTypeDefinitionIndex(SchemaElementDecl_TypeDefinitionIndex)->GetStaticField(0xBE70);
+			return (::System::Xml::Schema::SchemaElementDecl**)Il2CppClass::FromTypeDefinitionIndex(SchemaElementDecl_TypeDefinitionIndex)->GetStaticField(0x18C0);
 		}
 		::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::XmlQualifiedName*>* prohibitedAttributes; // 0x60
-		::System::Xml::Schema::ContentValidator* contentValidator; // 0x68
-		::System::Xml::Schema::XmlSchemaAnyAttribute* anyAttribute; // 0x70
-		::System::Collections::Generic::List_1<::System::Xml::IDtdDefaultAttributeInfo*>* defaultAttdefs; // 0x78
-		::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaAttDef*>* attdefs; // 0x80
-		::System::Boolean hasNonCDataAttribute; // 0x88
-		::System::Boolean isNotationDeclared; // 0x89
-		::System::Boolean hasRequiredAttribute; // 0x8A
-		::System::Boolean isIdDeclared; // 0x8B
+		::Il2CppArray<::System::Xml::Schema::CompiledIdentityConstraint*>* constraints; // 0x68
+		::System::Collections::Generic::List_1<::System::Xml::IDtdDefaultAttributeInfo*>* defaultAttdefs; // 0x70
+		::System::Xml::Schema::ContentValidator* contentValidator; // 0x78
+		::System::Xml::Schema::XmlSchemaElement* schemaElement; // 0x80
+		::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaAttDef*>* attdefs; // 0x88
+		::System::Xml::Schema::XmlSchemaAnyAttribute* anyAttribute; // 0x90
+		::System::Boolean isNillable; // 0x98
+		::System::Boolean hasRequiredAttribute; // 0x99
+		::System::Boolean isNotationDeclared; // 0x9A
+		::System::Boolean hasNonCDataAttribute; // 0x9B
+		::System::Boolean isIdDeclared; // 0x9C
+		::System::Boolean isAbstract; // 0x9D
+		::System::Xml::Schema::XmlSchemaDerivationMethod block; // 0xA0
 
 		::System::Void _ctor()
 		{
@@ -98,49 +101,19 @@ namespace System::Xml::Schema
 			return ((::System::Collections::Generic::IEnumerable_1<::System::Xml::IDtdDefaultAttributeInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SYSTEM_XML_IDTDATTRIBUTELISTINFO_LOOKUPDEFAULTATTRIBUTES_OFFSET))(this);
 		}
 
-		::System::Boolean get_IsIdDeclared()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_ISIDDECLARED_OFFSET))(this);
-		}
-
-		::System::Void set_IsIdDeclared(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SET_ISIDDECLARED_OFFSET))(this, value);
-		}
-
 		::System::Boolean get_HasNonCDataAttribute()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_HASNONCDATAATTRIBUTE_OFFSET))(this);
 		}
 
-		::System::Void set_HasNonCDataAttribute(::System::Boolean value)
+		::System::Xml::Schema::SchemaElementDecl* Clone()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SET_HASNONCDATAATTRIBUTE_OFFSET))(this, value);
+			return ((::System::Xml::Schema::SchemaElementDecl*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_CLONE_OFFSET))(this);
 		}
 
-		::System::Boolean get_IsNotationDeclared()
+		::System::Boolean get_HasDefaultAttribute()
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_ISNOTATIONDECLARED_OFFSET))(this);
-		}
-
-		::System::Void set_IsNotationDeclared(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SET_ISNOTATIONDECLARED_OFFSET))(this, value);
-		}
-
-		::System::Xml::Schema::ContentValidator* get_ContentValidator()
-		{
-			return ((::System::Xml::Schema::ContentValidator*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_CONTENTVALIDATOR_OFFSET))(this);
-		}
-
-		::System::Void set_ContentValidator(::System::Xml::Schema::ContentValidator* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::ContentValidator*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SET_CONTENTVALIDATOR_OFFSET))(this, value);
-		}
-
-		::System::Void set_AnyAttribute(::System::Xml::Schema::XmlSchemaAnyAttribute* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaAnyAttribute*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_SET_ANYATTRIBUTE_OFFSET))(this, value);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_HASDEFAULTATTRIBUTE_OFFSET))(this);
 		}
 
 		::System::Void AddAttDef(::System::Xml::Schema::SchemaAttDef* attdef)
@@ -158,9 +131,9 @@ namespace System::Xml::Schema
 			return ((::System::Collections::Generic::IList_1<::System::Xml::IDtdDefaultAttributeInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_DEFAULTATTDEFS_OFFSET))(this);
 		}
 
-		::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaAttDef*>* get_AttDefs()
+		::System::Void CheckAttributes(::System::Collections::Hashtable* presence, ::System::Boolean standalone)
 		{
-			return ((::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaAttDef*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_GET_ATTDEFS_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Hashtable*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMAELEMENTDECL_CHECKATTRIBUTES_OFFSET))(this, presence, standalone);
 		}
 	};
 }

@@ -7,18 +7,48 @@
 namespace System { class String; }
 namespace UnityEngine::Windows::Speech { class PhraseRecognizer_PhraseRecognizedDelegate; }
 
-#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_INVOKEPHRASERECOGNIZEDEVENT_OFFSET UNITYSDK_OFFSET(0x1824DE60)
-#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_MARSHALSEMANTICMEANING_OFFSET UNITYSDK_OFFSET(0x1824E530)
+#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_DESTROYTHREADED_OFFSET UNITYSDK_OFFSET(0x19E54D60)
+#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_DESTROY_OFFSET UNITYSDK_OFFSET(0x19E54D50)
+#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x19E54E30)
+#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_FINALIZE_OFFSET UNITYSDK_OFFSET(0x19E54D80)
+#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_INVOKEPHRASERECOGNIZEDEVENT_OFFSET UNITYSDK_OFFSET(0x19E54E90)
+#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_MARSHALSEMANTICMEANING_OFFSET UNITYSDK_OFFSET(0x19E54F00)
+#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x19E54D70)
 
 namespace UnityEngine::Windows::Speech
 {
-	inline static constexpr unsigned int PhraseRecognizer_TypeDefinitionIndex = 4218;
+	inline static constexpr unsigned int PhraseRecognizer_TypeDefinitionIndex = 5445;
 
 	class PhraseRecognizer : public ::System::Object
 	{
 	public:
 		::UnityEngine::Windows::Speech::PhraseRecognizer_PhraseRecognizedDelegate* OnPhraseRecognized; // 0x10
 		::System::IntPtr m_Recognizer; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void Destroy(::System::IntPtr recognizer)
+		{
+			return ((::System::Void(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_DESTROY_OFFSET))(recognizer);
+		}
+
+		static ::System::Void DestroyThreaded(::System::IntPtr recognizer)
+		{
+			return ((::System::Void(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_DESTROYTHREADED_OFFSET))(recognizer);
+		}
+
+		::System::Void Finalize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_FINALIZE_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNIZER_DISPOSE_OFFSET))(this);
+		}
 
 		::System::Void InvokePhraseRecognizedEvent(::System::String* text, ::UnityEngine::Windows::Speech::ConfidenceLevel confidence, ::Il2CppArray<::UnityEngine::Windows::Speech::SemanticMeaning>* semanticMeanings, ::System::Int64 phraseStartFileTime, ::System::Int64 phraseDurationTicks)
 		{

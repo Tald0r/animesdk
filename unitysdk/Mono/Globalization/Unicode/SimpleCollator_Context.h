@@ -3,11 +3,11 @@
 #include "unitysdk/System/Globalization/CompareOptions.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MONO_GLOBALIZATION_UNICODE_SIMPLECOLLATOR_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x1FFD4A0)
+#define MONO_GLOBALIZATION_UNICODE_SIMPLECOLLATOR_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7B2C90)
 
 namespace Mono::Globalization::Unicode
 {
-	inline static constexpr unsigned int SimpleCollator_Context_TypeDefinitionIndex = 40;
+	inline static constexpr unsigned int SimpleCollator_Context_TypeDefinitionIndex = 43;
 
 	struct alignas(8) SimpleCollator_Context
 	{

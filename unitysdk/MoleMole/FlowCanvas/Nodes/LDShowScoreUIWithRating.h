@@ -1,0 +1,89 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/FlowCanvas/Nodes/LDShowScoreUI.h"
+#include "unitysdk/MoleMole/Level/RatingType.h"
+#include "unitysdk/Struct_2_D83DC7376F4C0DA0.h"
+
+namespace FlowCanvas { template <typename T> class ValueInput_1; }
+namespace System { class String; }
+
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING_GETONRESTARTPARAM_OFFSET UNITYSDK_OFFSET(0x8F03DD0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING_GETONSTARTPARAM_OFFSET UNITYSDK_OFFSET(0xCCE63E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xCCE62C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING__CTOR_OFFSET UNITYSDK_OFFSET(0x8F03FF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING__GETONRESTARTPARAM_B__6_0_OFFSET UNITYSDK_OFFSET(0x8F04160)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING__GETONRESTARTPARAM_B__6_1_OFFSET UNITYSDK_OFFSET(0x8F04230)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING__GETONSTARTPARAM_B__5_0_OFFSET UNITYSDK_OFFSET(0x8F04000)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING__GETONSTARTPARAM_B__5_1_OFFSET UNITYSDK_OFFSET(0x8F040D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING___BASE_GETONRESTARTPARAM_OFFSET UNITYSDK_OFFSET(0x8F042C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING___BASE_GETONSTARTPARAM_OFFSET UNITYSDK_OFFSET(0x8F042D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING___BASE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x8F042E0)
+
+namespace MoleMole::FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int LDShowScoreUIWithRating_TypeDefinitionIndex = 53755;
+
+	class LDShowScoreUIWithRating : public ::MoleMole::FlowCanvas::Nodes::LDShowScoreUI
+	{
+	public:
+		::FlowCanvas::ValueInput_1<::System::String*>* dynamicRatingIconPresetKey; // 0x100
+		::FlowCanvas::ValueInput_1<::System::Boolean>* hideProgress; // 0x108
+		::FlowCanvas::ValueInput_1<::MoleMole::Level::RatingType>* ratingType; // 0x110
+		::FlowCanvas::ValueInput_1<::System::Single>* progress; // 0x118
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING__CTOR_OFFSET))(this);
+		}
+
+		::System::Void RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING_REGISTERPORTS_OFFSET))(this);
+		}
+
+		::System::Void GetOnStartParam(::Struct_2_D83DC7376F4C0DA0& arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_D83DC7376F4C0DA0&))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING_GETONSTARTPARAM_OFFSET))(this, arg);
+		}
+
+		::System::Void GetOnRestartParam(::Struct_2_D83DC7376F4C0DA0& arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_D83DC7376F4C0DA0&))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING_GETONRESTARTPARAM_OFFSET))(this, arg);
+		}
+
+		::MoleMole::Level::RatingType _GetOnStartParam_b__5_0()
+		{
+			return ((::MoleMole::Level::RatingType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING__GETONSTARTPARAM_B__5_0_OFFSET))(this);
+		}
+
+		::System::Single _GetOnStartParam_b__5_1()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING__GETONSTARTPARAM_B__5_1_OFFSET))(this);
+		}
+
+		::MoleMole::Level::RatingType _GetOnRestartParam_b__6_0()
+		{
+			return ((::MoleMole::Level::RatingType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING__GETONRESTARTPARAM_B__6_0_OFFSET))(this);
+		}
+
+		::System::Single _GetOnRestartParam_b__6_1()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING__GETONRESTARTPARAM_B__6_1_OFFSET))(this);
+		}
+
+		::System::Void __base_GetOnRestartParam(::Struct_2_D83DC7376F4C0DA0& P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_D83DC7376F4C0DA0&))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING___BASE_GETONRESTARTPARAM_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_GetOnStartParam(::Struct_2_D83DC7376F4C0DA0& P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_D83DC7376F4C0DA0&))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING___BASE_GETONSTARTPARAM_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDSHOWSCOREUIWITHRATING___BASE_REGISTERPORTS_OFFSET))(this);
+		}
+	};
+}

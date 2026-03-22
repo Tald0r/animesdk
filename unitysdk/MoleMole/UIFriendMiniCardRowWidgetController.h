@@ -1,0 +1,193 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+#include "unitysdk/Struct_2_3912DACC4CA46F07.h"
+#include "unitysdk/UnityEngine/Color.h"
+
+class Class_1_7B289FAFFCBC2507;
+class Class_1_BE6BF7909AD9D940;
+class Class_2_2F3C7D4EFC74D485;
+class Class_2_79AE422BA06F6D26_133;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+namespace UnityEngine::UI::Extension { class UILocalizationText; }
+
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_CLICKINVITEBTN_OFFSET UNITYSDK_OFFSET(0xD555600)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_CLICKSHAREBTN_OFFSET UNITYSDK_OFFSET(0xD5548E0)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONCLICKREMOVEBTN_OFFSET UNITYSDK_OFFSET(0xD555720)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD5538F0)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xD553A80)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONSWITCHPLATFORMINFO_OFFSET UNITYSDK_OFFSET(0xD553600)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD553990)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD5533D0)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_RESETUIBTNVIEW_OFFSET UNITYSDK_OFFSET(0xD553FA0)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SHOWARCADESTATE_OFFSET UNITYSDK_OFFSET(0xD5541C0)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SHOWFRINEDINFO_OFFSET UNITYSDK_OFFSET(0xD554130)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SHOWPLATFORMUI_OFFSET UNITYSDK_OFFSET(0xD5536D0)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SHOWUIVIEW_OFFSET UNITYSDK_OFFSET(0xD554A00)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SWITCHINVITEBTNSTATE_OFFSET UNITYSDK_OFFSET(0xD555540)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SWITCHSHAREBTNSTATE_OFFSET UNITYSDK_OFFSET(0xD554820)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD555810)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__ONCLICKREMOVEBTN_B__17_0_OFFSET UNITYSDK_OFFSET(0xD555AB0)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__ONSCROLLITEMUPDATE_B__7_0_OFFSET UNITYSDK_OFFSET(0xD555830)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__ONSCROLLITEMUPDATE_B__7_1_OFFSET UNITYSDK_OFFSET(0xD555890)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__SHOWARCADESTATE_B__13_0_OFFSET UNITYSDK_OFFSET(0xD555970)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__SHOWARCADESTATE_B__13_1_OFFSET UNITYSDK_OFFSET(0xD5559D0)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__SHOWUIVIEW_G__SETUPPLATFORMUI_12_0_OFFSET UNITYSDK_OFFSET(0xD5554A0)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD555B10)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xD555B80)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD555C00)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD555C80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFriendMiniCardRowWidgetController_TypeDefinitionIndex = 58455;
+
+	class UIFriendMiniCardRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_133* _view; // 0x2D0
+		::Class_2_2F3C7D4EFC74D485* _model; // 0x2D8
+		::Class_1_7B289FAFFCBC2507* cardImgHandler; // 0x2E0
+		::Struct_2_3912DACC4CA46F07 _info; // 0x2E8
+		::System::Boolean _isAccountCancelled; // 0x308
+		::System::Boolean _allowShowPlatform; // 0x309
+		::System::Boolean _canSwitchPlatformInfo; // 0x30A
+		::System::Boolean _isShowingPlatform; // 0x30B
+		::UnityEngine::UI::Extension::UILocalizationText* displayNameText; // 0x310
+		::UnityEngine::Color defaultOfflineColor; // 0x318
+		::System::Boolean isBtnBindedActionCalling; // 0x328
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnSwitchPlatformInfo(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONSWITCHPLATFORMINFO_OFFSET))(this, args);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void ClickShareBtn(::System::Action* onSuccessClick)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_CLICKSHAREBTN_OFFSET))(this, onSuccessClick);
+		}
+
+		::System::Void ResetUIBtnView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_RESETUIBTNVIEW_OFFSET))(this);
+		}
+
+		::System::Void ShowFrinedInfo(::Class_1_BE6BF7909AD9D940* info)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_BE6BF7909AD9D940*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SHOWFRINEDINFO_OFFSET))(this, info);
+		}
+
+		::System::Void ShowPlatformUI(::System::Boolean isShowingPlatformInfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SHOWPLATFORMUI_OFFSET))(this, isShowingPlatformInfo);
+		}
+
+		::System::Void ShowUIView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SHOWUIVIEW_OFFSET))(this);
+		}
+
+		::System::Void ShowArcadeState(::Struct_2_3912DACC4CA46F07 info)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_3912DACC4CA46F07))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SHOWARCADESTATE_OFFSET))(this, info);
+		}
+
+		::System::Void ClickInviteBtn(::System::Action* onSuccessClick)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_CLICKINVITEBTN_OFFSET))(this, onSuccessClick);
+		}
+
+		::System::Void SwitchInviteBtnState(::System::Boolean isShow)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SWITCHINVITEBTNSTATE_OFFSET))(this, isShow);
+		}
+
+		::System::Void SwitchShareBtnState(::System::Boolean isShow)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_SWITCHSHAREBTNSTATE_OFFSET))(this, isShow);
+		}
+
+		::System::Void OnClickRemoveBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER_ONCLICKREMOVEBTN_OFFSET))(this);
+		}
+
+		::System::Void _OnScrollItemUpdate_b__7_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__ONSCROLLITEMUPDATE_B__7_0_OFFSET))(this);
+		}
+
+		::System::Void _OnScrollItemUpdate_b__7_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__ONSCROLLITEMUPDATE_B__7_1_OFFSET))(this);
+		}
+
+		::System::Void _ShowUIView_g__SetupPlatformUI_12_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__SHOWUIVIEW_G__SETUPPLATFORMUI_12_0_OFFSET))(this);
+		}
+
+		::System::Void _ShowArcadeState_b__13_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__SHOWARCADESTATE_B__13_0_OFFSET))(this);
+		}
+
+		::System::Void _ShowArcadeState_b__13_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__SHOWARCADESTATE_B__13_1_OFFSET))(this);
+		}
+
+		::System::Void _OnClickRemoveBtn_b__17_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER__ONCLICKREMOVEBTN_B__17_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,156 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTask.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/System/Threading/CancellationToken.h"
+
+class Class_2_2CBC8051822D14AC;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIQuestionsAnswerScreenDetailContext; }
+namespace MoleMole { class UIQuestionsAnswerScreenDetailWidgetController; }
+namespace MoleMole { class UIQuestionsAnswerScreenSettleContext; }
+namespace MoleMole { class UIQuestionsAnswerScreenSettleWidgetController; }
+namespace MoleMole { class UIQuestionsAnswerScreenStandbyWidgetController; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_CHANGETODETAIL_OFFSET UNITYSDK_OFFSET(0xA3E5A10)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_CHANGETOSETTLE_OFFSET UNITYSDK_OFFSET(0xA3E5FF0)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_CHANGETOSTANDBY_OFFSET UNITYSDK_OFFSET(0xA3E58A0)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_DIRECTCHANGETOSETTLE_OFFSET UNITYSDK_OFFSET(0xA3E5D50)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONANSWERSCREENUIPAGEDETAILFADEIN_OFFSET UNITYSDK_OFFSET(0xA3E6160)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONANSWERSCREENUIPAGEDETAILFADEOUT_OFFSET UNITYSDK_OFFSET(0xA3E60D0)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONANSWERSCREENUIPAGESETTLEMENTFADEIN_OFFSET UNITYSDK_OFFSET(0xA3E6280)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONANSWERSCREENUIPAGESETTLEMENTFADEOUT_OFFSET UNITYSDK_OFFSET(0xA3E61F0)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONSANSWERSCREENUIPAGESTANDBYFADEIN_OFFSET UNITYSDK_OFFSET(0xA3E6310)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONSANSWERSCREENUIPAGESTANDBYFADEOUT_OFFSET UNITYSDK_OFFSET(0xA3E63A0)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_HIDEALL_OFFSET UNITYSDK_OFFSET(0xA3E5AE0)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_HIDESTANDBY_OFFSET UNITYSDK_OFFSET(0xA3E5960)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3E5720)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3E57C0)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3E5470)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3E5670)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA3E6430)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3E6460)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3E64D0)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3E6550)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3E65B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIQuestionsAnswerScreenWidgetController_TypeDefinitionIndex = 67415;
+
+	class UIQuestionsAnswerScreenWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_2CBC8051822D14AC* _view; // 0x2A0
+		::MoleMole::UIQuestionsAnswerScreenStandbyWidgetController* Standby; // 0x2A8
+		::MoleMole::UIQuestionsAnswerScreenDetailWidgetController* Detail; // 0x2B0
+		::MoleMole::UIQuestionsAnswerScreenSettleWidgetController* Settlement; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask ChangeToStandby()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_CHANGETOSTANDBY_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask HideStandBy()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_HIDESTANDBY_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask ChangeToDetail(::MoleMole::UIQuestionsAnswerScreenDetailContext* context)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID, ::MoleMole::UIQuestionsAnswerScreenDetailContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_CHANGETODETAIL_OFFSET))(this, context);
+		}
+
+		::System::Void HideAll()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_HIDEALL_OFFSET))(this);
+		}
+
+		::System::Void DirectChangeToSettle(::MoleMole::UIQuestionsAnswerScreenSettleContext* context, ::System::Threading::CancellationToken cts)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIQuestionsAnswerScreenSettleContext*, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_DIRECTCHANGETOSETTLE_OFFSET))(this, context, cts);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask ChangeToSettle(::MoleMole::UIQuestionsAnswerScreenSettleContext* context, ::System::Threading::CancellationToken cts)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID, ::MoleMole::UIQuestionsAnswerScreenSettleContext*, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_CHANGETOSETTLE_OFFSET))(this, context, cts);
+		}
+
+		::System::String* GetQuestionAnswerScreenUIPageDetailFadeOut()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONANSWERSCREENUIPAGEDETAILFADEOUT_OFFSET))(this);
+		}
+
+		::System::String* GetQuestionAnswerScreenUIPageDetailFadeIn()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONANSWERSCREENUIPAGEDETAILFADEIN_OFFSET))(this);
+		}
+
+		::System::String* GetQuestionAnswerScreenUIPageSettlementFadeOut()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONANSWERSCREENUIPAGESETTLEMENTFADEOUT_OFFSET))(this);
+		}
+
+		::System::String* GetQuestionAnswerScreenUIPageSettlementFadeIn()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONANSWERSCREENUIPAGESETTLEMENTFADEIN_OFFSET))(this);
+		}
+
+		::System::String* GetQuestionsAnswerScreenUIPageStandbyFadeIn()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONSANSWERSCREENUIPAGESTANDBYFADEIN_OFFSET))(this);
+		}
+
+		::System::String* GetQuestionsAnswerScreenUIPageStandbyFadeOut()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER_GETQUESTIONSANSWERSCREENUIPAGESTANDBYFADEOUT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

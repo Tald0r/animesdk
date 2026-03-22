@@ -1,10 +1,14 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/AssetRequestHandle.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_83665B095F1535B5_13__CTOR_OFFSET UNITYSDK_OFFSET(0x160C04D0)
+namespace System { class String; }
+namespace System { template <typename T1, typename T2> class Action_2; }
 
-inline static constexpr unsigned int Class_1_83665B095F1535B5_13_TypeDefinitionIndex = 32003;
+#define CLASS_1_83665B095F1535B5_13__CTOR_OFFSET UNITYSDK_OFFSET(0x6B692D0)
+
+inline static constexpr unsigned int Class_1_83665B095F1535B5_13_TypeDefinitionIndex = 76556;
 
 class Class_1_83665B095F1535B5_13 : public ::System::Object
 {

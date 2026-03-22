@@ -6,34 +6,48 @@
 namespace System { class String; }
 namespace System { class UriParser; }
 
-#define SYSTEM_URIHELPER_ENSUREDESTINATIONSIZE_OFFSET UNITYSDK_OFFSET(0x17F60770)
-#define SYSTEM_URIHELPER_ESCAPEASCIICHAR_OFFSET UNITYSDK_OFFSET(0x17F60870)
-#define SYSTEM_URIHELPER_ESCAPEDASCII_OFFSET UNITYSDK_OFFSET(0x17F5C340)
-#define SYSTEM_URIHELPER_ESCAPESTRING_OFFSET UNITYSDK_OFFSET(0x17F550A0)
-#define SYSTEM_URIHELPER_IS3986UNRESERVED_OFFSET UNITYSDK_OFFSET(0x17F5E150)
-#define SYSTEM_URIHELPER_ISNOTSAFEFORUNESCAPE_OFFSET UNITYSDK_OFFSET(0x17F60B30)
-#define SYSTEM_URIHELPER_ISRESERVEDUNRESERVEDORHASH_OFFSET UNITYSDK_OFFSET(0x17F60A60)
-#define SYSTEM_URIHELPER_ISUNRESERVED_OFFSET UNITYSDK_OFFSET(0x17F609A0)
-#define SYSTEM_URIHELPER_MATCHUTF8SEQUENCE_OFFSET UNITYSDK_OFFSET(0x17F60B90)
-#define SYSTEM_URIHELPER_UNESCAPESTRING_1_OFFSET UNITYSDK_OFFSET(0x17F5C700)
-#define SYSTEM_URIHELPER_UNESCAPESTRING_OFFSET UNITYSDK_OFFSET(0x17F52680)
-#define SYSTEM_URIHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x17F61260)
+#define SYSTEM_URIHELPER_ENSUREDESTINATIONSIZE_OFFSET UNITYSDK_OFFSET(0x18B8A0B0)
+#define SYSTEM_URIHELPER_ESCAPEASCIICHAR_OFFSET UNITYSDK_OFFSET(0x18B674A0)
+#define SYSTEM_URIHELPER_ESCAPEDASCII_OFFSET UNITYSDK_OFFSET(0x18B66CD0)
+#define SYSTEM_URIHELPER_ESCAPESTRING_OFFSET UNITYSDK_OFFSET(0x18B89780)
+#define SYSTEM_URIHELPER_IS3986UNRESERVED_OFFSET UNITYSDK_OFFSET(0x18B8B090)
+#define SYSTEM_URIHELPER_ISNOTSAFEFORUNESCAPE_OFFSET UNITYSDK_OFFSET(0x18B66D70)
+#define SYSTEM_URIHELPER_ISRESERVEDUNRESERVEDORHASH_OFFSET UNITYSDK_OFFSET(0x18B8A270)
+#define SYSTEM_URIHELPER_ISUNRESERVED_OFFSET UNITYSDK_OFFSET(0x18B8A1B0)
+#define SYSTEM_URIHELPER_MATCHUTF8SEQUENCE_OFFSET UNITYSDK_OFFSET(0x18B66DD0)
+#define SYSTEM_URIHELPER_TESTFORSUBPATH_OFFSET UNITYSDK_OFFSET(0x18B894A0)
+#define SYSTEM_URIHELPER_UNESCAPESTRING_1_OFFSET UNITYSDK_OFFSET(0x18B8A390)
+#define SYSTEM_URIHELPER_UNESCAPESTRING_OFFSET UNITYSDK_OFFSET(0x18B8A340)
+#define SYSTEM_URIHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x18B8B110)
 
 namespace System
 {
-	inline static constexpr unsigned int UriHelper_TypeDefinitionIndex = 2458;
+	inline static constexpr unsigned int UriHelper_TypeDefinitionIndex = 2678;
 
 	class UriHelper : public ::System::Object
 	{
 	public:
 		static ::Il2CppArray<::System::Char>** StaticGet_HexUpperChars()
 		{
-			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(UriHelper_TypeDefinitionIndex)->GetStaticField(0x16100);
+			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(UriHelper_TypeDefinitionIndex)->GetStaticField(0x36E0);
 		}
+		// static const ::System::Int16 c_MaxAsciiCharsReallocate = 0x28; // 0x0
+		// static const ::System::Int16 c_MaxUnicodeCharsReallocate = 0x28; // 0x0
+		// static const ::System::Int16 c_MaxUTF_8BytesPerUnicodeChar = 0x4; // 0x0
+		// static const ::System::Int16 c_EncodedCharsPerByte = 0x3; // 0x0
+		// static const ::System::String* RFC2396ReservedMarks; // 0x0
+		// static const ::System::String* RFC3986ReservedMarks; // 0x0
+		// static const ::System::String* RFC2396UnreservedMarks; // 0x0
+		// static const ::System::String* RFC3986UnreservedMarks; // 0x0
 
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_URIHELPER__CCTOR_OFFSET))();
+		}
+
+		static ::System::Boolean TestForSubPath(::System::Char* pMe, ::System::UInt16 meLength, ::System::Char* pShe, ::System::UInt16 sheLength, ::System::Boolean ignoreCase)
+		{
+			return ((::System::Boolean(*)(::System::Char*, ::System::UInt16, ::System::Char*, ::System::UInt16, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_URIHELPER_TESTFORSUBPATH_OFFSET))(pMe, meLength, pShe, sheLength, ignoreCase);
 		}
 
 		static ::Il2CppArray<::System::Char>* EscapeString(::System::String* input, ::System::Int32 start, ::System::Int32 end, ::Il2CppArray<::System::Char>* dest, ::System::Int32& destPos, ::System::Boolean isUriString, ::System::Char force1, ::System::Char force2, ::System::Char rsvd)

@@ -1,0 +1,94 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/SummerEventDroneSubsystem_WeaponSkillBase.h"
+
+class Class_3_F41D242A20F8FE06;
+namespace MoleMole { class SummerEventDroneSubsystem; }
+namespace MoleMole { class SummerEventWeaponSkillParamBase; }
+namespace System { class String; }
+
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_CLEANUP_OFFSET UNITYSDK_OFFSET(0xB304C20)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_INIT_OFFSET UNITYSDK_OFFSET(0xB3045B0)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_ISINSTANTSKILLTYPE_OFFSET UNITYSDK_OFFSET(0xB304BC0)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_ONADD_OFFSET UNITYSDK_OFFSET(0xB304730)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_ONRECYCLE_OFFSET UNITYSDK_OFFSET(0xB304D10)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_ONREMOVED_OFFSET UNITYSDK_OFFSET(0xB3049F0)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0xB304DC0)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER___BASE_CLEANUP_OFFSET UNITYSDK_OFFSET(0xB304DE0)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER___BASE_INIT_OFFSET UNITYSDK_OFFSET(0xB304E60)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER___BASE_ISINSTANTSKILLTYPE_OFFSET UNITYSDK_OFFSET(0xB304F10)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER___BASE_ONADD_OFFSET UNITYSDK_OFFSET(0xB304F70)
+#define MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER___BASE_ONREMOVED_OFFSET UNITYSDK_OFFSET(0xB304FD0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int SummerEventDroneSubsystem_WeaponSkillApplyModifier_TypeDefinitionIndex = 63647;
+
+	class SummerEventDroneSubsystem_WeaponSkillApplyModifier : public ::MoleMole::SummerEventDroneSubsystem_WeaponSkillBase
+	{
+	public:
+		::System::String* modifierName; // 0x38
+		::System::String* abilityName; // 0x40
+		::Class_3_F41D242A20F8FE06* abilityComponent; // 0x48
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Init(::MoleMole::SummerEventDroneSubsystem* logicSySubsystem, ::MoleMole::SummerEventWeaponSkillParamBase* skillParam, ::System::String* weaponKey)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::SummerEventDroneSubsystem*, ::MoleMole::SummerEventWeaponSkillParamBase*, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_INIT_OFFSET))(this, logicSySubsystem, skillParam, weaponKey);
+		}
+
+		::System::Void OnAdd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_ONADD_OFFSET))(this);
+		}
+
+		::System::Void OnRemoved()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_ONREMOVED_OFFSET))(this);
+		}
+
+		::System::Boolean IsInstantSkillType()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_ISINSTANTSKILLTYPE_OFFSET))(this);
+		}
+
+		::System::Void CleanUp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_CLEANUP_OFFSET))(this);
+		}
+
+		::System::Void OnRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER_ONRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void __base_CleanUp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER___BASE_CLEANUP_OFFSET))(this);
+		}
+
+		::System::Void __base_Init(::MoleMole::SummerEventDroneSubsystem* P0, ::MoleMole::SummerEventWeaponSkillParamBase* P1, ::System::String* P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::SummerEventDroneSubsystem*, ::MoleMole::SummerEventWeaponSkillParamBase*, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER___BASE_INIT_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Boolean __base_IsInstantSkillType()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER___BASE_ISINSTANTSKILLTYPE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnAdd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER___BASE_ONADD_OFFSET))(this);
+		}
+
+		::System::Void __base_OnRemoved()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SUMMEREVENTDRONESUBSYSTEM_WEAPONSKILLAPPLYMODIFIER___BASE_ONREMOVED_OFFSET))(this);
+		}
+	};
+}

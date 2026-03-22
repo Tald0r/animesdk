@@ -4,42 +4,42 @@
 
 namespace Microsoft::Win32 { class RegistryKey; }
 
-#define MICROSOFT_WIN32_REGISTRY__CCTOR_OFFSET UNITYSDK_OFFSET(0x15AAB120)
+#define MICROSOFT_WIN32_REGISTRY__CCTOR_OFFSET UNITYSDK_OFFSET(0x1912CEC0)
 
 namespace Microsoft::Win32
 {
-	inline static constexpr unsigned int Registry_TypeDefinitionIndex = 102;
+	inline static constexpr unsigned int Registry_TypeDefinitionIndex = 90;
 
 	class Registry : public ::System::Object
 	{
 	public:
-		static ::Microsoft::Win32::RegistryKey** StaticGet_DynData()
-		{
-			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x32C0);
-		}
-		static ::Microsoft::Win32::RegistryKey** StaticGet_Users()
-		{
-			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x32C8);
-		}
-		static ::Microsoft::Win32::RegistryKey** StaticGet_LocalMachine()
-		{
-			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x32D0);
-		}
 		static ::Microsoft::Win32::RegistryKey** StaticGet_PerformanceData()
 		{
-			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x32D8);
+			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x7F0);
 		}
 		static ::Microsoft::Win32::RegistryKey** StaticGet_ClassesRoot()
 		{
-			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x32E0);
+			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x7F8);
 		}
-		static ::Microsoft::Win32::RegistryKey** StaticGet_CurrentConfig()
+		static ::Microsoft::Win32::RegistryKey** StaticGet_DynData()
 		{
-			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x32E8);
+			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x800);
+		}
+		static ::Microsoft::Win32::RegistryKey** StaticGet_LocalMachine()
+		{
+			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x808);
 		}
 		static ::Microsoft::Win32::RegistryKey** StaticGet_CurrentUser()
 		{
-			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x32F0);
+			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x810);
+		}
+		static ::Microsoft::Win32::RegistryKey** StaticGet_Users()
+		{
+			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x818);
+		}
+		static ::Microsoft::Win32::RegistryKey** StaticGet_CurrentConfig()
+		{
+			return (::Microsoft::Win32::RegistryKey**)Il2CppClass::FromTypeDefinitionIndex(Registry_TypeDefinitionIndex)->GetStaticField(0x820);
 		}
 
 		static ::System::Void _cctor()

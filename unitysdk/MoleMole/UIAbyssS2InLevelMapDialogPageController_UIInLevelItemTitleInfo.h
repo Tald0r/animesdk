@@ -1,0 +1,41 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace System { class String; }
+
+#define MOLEMOLE_UIABYSSS2INLEVELMAPDIALOGPAGECONTROLLER_UIINLEVELITEMTITLEINFO_GETTEMPLATEINDEX_OFFSET UNITYSDK_OFFSET(0xC24CA40)
+#define MOLEMOLE_UIABYSSS2INLEVELMAPDIALOGPAGECONTROLLER_UIINLEVELITEMTITLEINFO_SETBRIEF_OFFSET UNITYSDK_OFFSET(0xC24CAA0)
+#define MOLEMOLE_UIABYSSS2INLEVELMAPDIALOGPAGECONTROLLER_UIINLEVELITEMTITLEINFO_SETSELECT_OFFSET UNITYSDK_OFFSET(0xC24CB10)
+#define MOLEMOLE_UIABYSSS2INLEVELMAPDIALOGPAGECONTROLLER_UIINLEVELITEMTITLEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xC248180)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAbyssS2InLevelMapDialogPageController_UIInLevelItemTitleInfo_TypeDefinitionIndex = 48292;
+
+	class UIAbyssS2InLevelMapDialogPageController_UIInLevelItemTitleInfo : public ::System::Object
+	{
+	public:
+		::System::String* TextKey; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2INLEVELMAPDIALOGPAGECONTROLLER_UIINLEVELITEMTITLEINFO__CTOR_OFFSET))(this);
+		}
+
+		::System::Int32 GetTemplateIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2INLEVELMAPDIALOGPAGECONTROLLER_UIINLEVELITEMTITLEINFO_GETTEMPLATEINDEX_OFFSET))(this);
+		}
+
+		::System::Void SetBrief(::System::Boolean brief)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2INLEVELMAPDIALOGPAGECONTROLLER_UIINLEVELITEMTITLEINFO_SETBRIEF_OFFSET))(this, brief);
+		}
+
+		::System::Void SetSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2INLEVELMAPDIALOGPAGECONTROLLER_UIINLEVELITEMTITLEINFO_SETSELECT_OFFSET))(this, isSelect);
+		}
+	};
+}

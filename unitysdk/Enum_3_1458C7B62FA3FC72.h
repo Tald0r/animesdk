@@ -1,0 +1,15 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+inline static constexpr unsigned int Enum_3_1458C7B62FA3FC72_TypeDefinitionIndex = 62170;
+
+enum class Enum_3_1458C7B62FA3FC72 : ::System::Byte
+{
+	OnPostEvent = 0x4,
+	OnPreEvent = 0x1,
+	OnResolvedEvent = 0x8,
+	All = 0xFF,
+	OnEventFromAnyone = 0x10,
+	OnEvent = 0x2,
+	None = 0x0,
+};

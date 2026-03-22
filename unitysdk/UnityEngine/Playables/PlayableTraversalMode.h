@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Playables
 {
-	inline static constexpr unsigned int PlayableTraversalMode_TypeDefinitionIndex = 4681;
+	inline static constexpr unsigned int PlayableTraversalMode_TypeDefinitionIndex = 6261;
 
 	enum class PlayableTraversalMode : ::System::Int32
 	{

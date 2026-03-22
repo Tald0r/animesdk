@@ -5,7 +5,7 @@
 
 namespace Unity::Jobs
 {
-	inline static constexpr unsigned int IJobExtensions_TypeDefinitionIndex = 3757;
+	inline static constexpr unsigned int IJobExtensions_TypeDefinitionIndex = 5050;
 
 	class IJobExtensions : public ::System::Object
 	{

@@ -1,0 +1,67 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_3FA12F979A3713A3.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+#include "unitysdk/UnityEngine/Color.h"
+
+class Class_2_E87F1D15F1D4AC72;
+namespace MoleMole { class UIThreeDMapElement_MonsterContext; }
+namespace System { class String; }
+namespace UnityEngine { class RectTransform; }
+
+#define CLASS_3_008F7018E697FA4B_5_METHOD_3_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0xCF3F100)
+#define CLASS_3_008F7018E697FA4B_5_METHOD_3_4AF4FA1AC5B5B485_OFFSET UNITYSDK_OFFSET(0xCF3F050)
+#define CLASS_3_008F7018E697FA4B_5_METHOD_3_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0xCF3EEC0)
+#define CLASS_3_008F7018E697FA4B_5_METHOD_3_B79D80B665810DA3_OFFSET UNITYSDK_OFFSET(0xCF3F1B0)
+#define CLASS_3_008F7018E697FA4B_5_METHOD_3_DD1EE3A48E307831_1_OFFSET UNITYSDK_OFFSET(0xCF3F110)
+#define CLASS_3_008F7018E697FA4B_5_METHOD_3_DD1EE3A48E307831_OFFSET UNITYSDK_OFFSET(0xCF3EFB0)
+#define CLASS_3_008F7018E697FA4B_5_METHOD_3_E2CFE21492926DBB_OFFSET UNITYSDK_OFFSET(0xCF3EA90)
+#define CLASS_3_008F7018E697FA4B_5__CTOR_OFFSET UNITYSDK_OFFSET(0xCF3EF50)
+
+inline static constexpr unsigned int Class_3_008F7018E697FA4B_5_TypeDefinitionIndex = 58173;
+
+class Class_3_008F7018E697FA4B_5 : public ::Class_2_3FA12F979A3713A3<::MoleMole::UIThreeDMapElement_MonsterContext*>
+{
+public:
+	::UnityEngine::RectTransform* Field_3_0; // 0x70
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_008F7018E697FA4B_5__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_3_E2CFE21492926DBB(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_3_008F7018E697FA4B_5_METHOD_3_E2CFE21492926DBB_OFFSET))(this, a1, a2);
+	}
+
+	::System::String* Method_3_88B60F3B95FAA4F1()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_008F7018E697FA4B_5_METHOD_3_88B60F3B95FAA4F1_OFFSET))(this);
+	}
+
+	::System::Boolean Method_3_DD1EE3A48E307831()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_008F7018E697FA4B_5_METHOD_3_DD1EE3A48E307831_OFFSET))(this);
+	}
+
+	::UnityEngine::Color Method_3_4AF4FA1AC5B5B485()
+	{
+		return ((::UnityEngine::Color(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_008F7018E697FA4B_5_METHOD_3_4AF4FA1AC5B5B485_OFFSET))(this);
+	}
+
+	::System::String* Method_3_126AB3935214AA22()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_008F7018E697FA4B_5_METHOD_3_126AB3935214AA22_OFFSET))(this);
+	}
+
+	::System::Boolean Method_3_DD1EE3A48E307831_1()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_008F7018E697FA4B_5_METHOD_3_DD1EE3A48E307831_1_OFFSET))(this);
+	}
+
+	::System::Void Method_3_B79D80B665810DA3(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_3_008F7018E697FA4B_5_METHOD_3_B79D80B665810DA3_OFFSET))(this, a1, a2);
+	}
+};

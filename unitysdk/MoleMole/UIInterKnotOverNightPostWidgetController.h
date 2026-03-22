@@ -1,0 +1,80 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_142C57324E00A5F7_2;
+class Class_2_2B455251E8F574AB;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER_GETROOTVIEW_OFFSET UNITYSDK_OFFSET(0xA7FDDB0)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA7FDC30)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA7FDCD0)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA7FDAE0)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA7FDB80)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA7FDE60)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA7FDE90)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA7FDF00)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA7FDF80)
+#define MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA7FDFE0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInterKnotOverNightPostWidgetController_TypeDefinitionIndex = 61075;
+
+	class UIInterKnotOverNightPostWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_142C57324E00A5F7_2* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::Class_2_2B455251E8F574AB* GetRootView()
+		{
+			return ((::Class_2_2B455251E8F574AB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER_GETROOTVIEW_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTOVERNIGHTPOSTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

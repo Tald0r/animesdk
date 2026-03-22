@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MONO_XML_SMALLXMLPARSEREXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15AEF890)
+#define MONO_XML_SMALLXMLPARSEREXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x19508000)
 
 namespace Mono::Xml
 {
-	inline static constexpr unsigned int SmallXmlParserException_TypeDefinitionIndex = 28;
+	inline static constexpr unsigned int SmallXmlParserException_TypeDefinitionIndex = 31;
 
 	class SmallXmlParserException : public ::System::SystemException
 	{

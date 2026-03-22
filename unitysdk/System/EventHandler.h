@@ -7,14 +7,14 @@ namespace System { class EventArgs; }
 namespace System { class IAsyncResult; }
 namespace System { class Object; }
 
-#define SYSTEM_EVENTHANDLER_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x15C35130)
-#define SYSTEM_EVENTHANDLER_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x15C35170)
-#define SYSTEM_EVENTHANDLER_INVOKE_OFFSET UNITYSDK_OFFSET(0x15C34910)
-#define SYSTEM_EVENTHANDLER__CTOR_OFFSET UNITYSDK_OFFSET(0x15C07960)
+#define SYSTEM_EVENTHANDLER_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x19880370)
+#define SYSTEM_EVENTHANDLER_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x198803B0)
+#define SYSTEM_EVENTHANDLER_INVOKE_OFFSET UNITYSDK_OFFSET(0x1987FDF0)
+#define SYSTEM_EVENTHANDLER__CTOR_OFFSET UNITYSDK_OFFSET(0x1987FDE0)
 
 namespace System
 {
-	inline static constexpr unsigned int EventHandler_TypeDefinitionIndex = 243;
+	inline static constexpr unsigned int EventHandler_TypeDefinitionIndex = 229;
 
 	class EventHandler : public ::System::MulticastDelegate
 	{

@@ -1,0 +1,40 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/NodeCanvas/BehaviourTrees/BTNode.h"
+#include "unitysdk/NodeCanvas/Framework/Status.h"
+
+namespace NodeCanvas::Framework { class IBlackboard; }
+namespace NodeCanvas::Framework { class Node; }
+namespace System { class String; }
+namespace UnityEngine { class Component; }
+
+#define NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A089730)
+#define NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x1A0896D0)
+#define NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A0897A0)
+
+namespace NodeCanvas::BehaviourTrees
+{
+	inline static constexpr unsigned int RootSwitcher_TypeDefinitionIndex = 26435;
+
+	class RootSwitcher : public ::NodeCanvas::BehaviourTrees::BTNode
+	{
+	public:
+		::System::String* targetNodeTag; // 0x78
+		::NodeCanvas::Framework::Node* targetNode; // 0x80
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnGraphStarted()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER_ONGRAPHSTARTED_OFFSET))(this);
+		}
+
+		::NodeCanvas::Framework::Status OnExecute(::UnityEngine::Component* agent, ::NodeCanvas::Framework::IBlackboard* blackboard)
+		{
+			return ((::NodeCanvas::Framework::Status(*)(::PVOID, ::UnityEngine::Component*, ::NodeCanvas::Framework::IBlackboard*))((::PBYTE)hIl2Cpp + NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER_ONEXECUTE_OFFSET))(this, agent, blackboard);
+		}
+	};
+}

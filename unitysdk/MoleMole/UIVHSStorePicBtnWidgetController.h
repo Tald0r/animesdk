@@ -1,0 +1,232 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_208CC9941471731A_457;
+class Class_2_F520CFAC469766FF;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIVHSStorePicBtnWidgetController_Data; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_CLEARFOCUS_OFFSET UNITYSDK_OFFSET(0xD6EFF70)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_GET_VHSCOLLECTIONID_OFFSET UNITYSDK_OFFSET(0xD6F0B70)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_GET__DATA_OFFSET UNITYSDK_OFFSET(0xD6F0610)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONAFTERVHSSELECTCHANGE_OFFSET UNITYSDK_OFFSET(0xD6F08E0)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD6EF1E0)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xD6EFD70)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONSCROLLITEMUPDATEINNER_OFFSET UNITYSDK_OFFSET(0xD6EF830)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xD6EF750)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xD6EF600)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD6EF670)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD6EF280)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD6EF550)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONVHSSTORELIMITSUBMITED_OFFSET UNITYSDK_OFFSET(0xD6F0AF0)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONVHSSTORELIMITSUBMITTING_OFFSET UNITYSDK_OFFSET(0xD6F0A80)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETBGLOCK_OFFSET UNITYSDK_OFFSET(0xD6F0080)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETBUTTONNOINTERACTIVE_OFFSET UNITYSDK_OFFSET(0xD6F0000)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETCANTSELECT_OFFSET UNITYSDK_OFFSET(0xD6F0750)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETCLICK_OFFSET UNITYSDK_OFFSET(0xD6F0110)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETDATAID_OFFSET UNITYSDK_OFFSET(0xD6F0180)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETEMPTY_OFFSET UNITYSDK_OFFSET(0xD6F0690)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETFOCUS_OFFSET UNITYSDK_OFFSET(0xD6EFEE0)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETMULTISELECTFULL_OFFSET UNITYSDK_OFFSET(0xD6F09F0)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETSELECTED_OFFSET UNITYSDK_OFFSET(0xD6F0960)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SET_VHSCOLLECTIONID_OFFSET UNITYSDK_OFFSET(0xD6F0B80)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SHOWFIRSTLIGHT_OFFSET UNITYSDK_OFFSET(0xD6F0800)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD6F0B90)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET UNITYSDK_OFFSET(0xD6F0BA0)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD6F0C00)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xD6F0C70)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xD6F0CE0)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xD6F0D60)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD6F0D70)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD6F0DF0)
+#define MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD6F0E50)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVHSStorePicBtnWidgetController_TypeDefinitionIndex = 51399;
+
+	class UIVHSStorePicBtnWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::System::Int32 _VhsCollectionID_k__BackingField; // 0x2D0
+		::System::Action_1<::MoleMole::UIVHSStorePicBtnWidgetController*>* _callbackV2; // 0x2D8
+		::Class_2_F520CFAC469766FF* _view; // 0x2E0
+		::MoleMole::UIVHSStorePicBtnWidgetController_Data* _dataV2; // 0x2E8
+		::System::Boolean _submitting; // 0x2F0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void SetButtonNoInteractive()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETBUTTONNOINTERACTIVE_OFFSET))(this);
+		}
+
+		::System::Void SetFocus()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETFOCUS_OFFSET))(this);
+		}
+
+		::System::Void ClearFocus()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_CLEARFOCUS_OFFSET))(this);
+		}
+
+		::System::Void SetBGLock(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETBGLOCK_OFFSET))(this, enable);
+		}
+
+		::System::Void SetClick(::System::Action_1<::MoleMole::UIVHSStorePicBtnWidgetController*>* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::MoleMole::UIVHSStorePicBtnWidgetController*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETCLICK_OFFSET))(this, callback);
+		}
+
+		::System::Void SetDataID(::System::Int32 vhsCollectionID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETDATAID_OFFSET))(this, vhsCollectionID);
+		}
+
+		::System::Void ShowFirstLight()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SHOWFIRSTLIGHT_OFFSET))(this);
+		}
+
+		::System::Void OnAfterVhsSelectChange(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONAFTERVHSSELECTCHANGE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnScrollItemUpdateInner()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONSCROLLITEMUPDATEINNER_OFFSET))(this);
+		}
+
+		::System::Void SetSelected(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETSELECTED_OFFSET))(this, enable);
+		}
+
+		::System::Void SetCantSelect(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETCANTSELECT_OFFSET))(this, enable);
+		}
+
+		::System::Void SetEmpty(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETEMPTY_OFFSET))(this, enable);
+		}
+
+		::System::Void SetMultiSelectFull(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SETMULTISELECTFULL_OFFSET))(this, enable);
+		}
+
+		::System::Void OnVhsStoreLimitSubmitting(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONVHSSTORELIMITSUBMITTING_OFFSET))(this, args);
+		}
+
+		::System::Void OnVhsStoreLimitSubmited(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_ONVHSSTORELIMITSUBMITED_OFFSET))(this, args);
+		}
+
+		::System::Int32 get_VhsCollectionID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_GET_VHSCOLLECTIONID_OFFSET))(this);
+		}
+
+		::System::Void set_VhsCollectionID(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_SET_VHSCOLLECTIONID_OFFSET))(this, value);
+		}
+
+		::Class_2_208CC9941471731A_457* get__data()
+		{
+			return ((::Class_2_208CC9941471731A_457*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER_GET__DATA_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__1_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREPICBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,49 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_B7E341C5F1A6F199.h"
+#include "unitysdk/Enum_3_BEADE0D60E8972CC.h"
+
+class Class_2_D92382DB92EE14DA;
+
+#define CLASS_2_D2635BA9D50B0AA7_METHOD_2_A51229C6A1DD3A8F_OFFSET UNITYSDK_OFFSET(0x7C21020)
+#define CLASS_2_D2635BA9D50B0AA7_METHOD_2_BC516BD7B592E51E_OFFSET UNITYSDK_OFFSET(0x7C20F10)
+#define CLASS_2_D2635BA9D50B0AA7_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x7C20FC0)
+#define CLASS_2_D2635BA9D50B0AA7__CCTOR_OFFSET UNITYSDK_OFFSET(0x7C20E90)
+#define CLASS_2_D2635BA9D50B0AA7__CTOR_OFFSET UNITYSDK_OFFSET(0x7C20F00)
+
+inline static constexpr unsigned int Class_2_D2635BA9D50B0AA7_TypeDefinitionIndex = 50964;
+
+class Class_2_D2635BA9D50B0AA7 : public ::Class_1_B7E341C5F1A6F199
+{
+public:
+	// static const ::System::UInt16 Field_2_4 = 0x7D; // 0x0
+	::Class_2_D92382DB92EE14DA* Field_2_2; // 0x20
+	::System::Single Field_2_0; // 0x28
+	::Enum_3_BEADE0D60E8972CC Field_2_3; // 0x2C
+	::System::Single Field_2_1; // 0x30
+
+	static ::System::Void _cctor()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_2_D2635BA9D50B0AA7__CCTOR_OFFSET))();
+	}
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D2635BA9D50B0AA7__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_BC516BD7B592E51E()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D2635BA9D50B0AA7_METHOD_2_BC516BD7B592E51E_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D2635BA9D50B0AA7_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_2_A51229C6A1DD3A8F(::Class_2_D92382DB92EE14DA* a1, ::System::Single a2, ::System::Single a3, ::Enum_3_BEADE0D60E8972CC a4)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_D92382DB92EE14DA*, ::System::Single, ::System::Single, ::Enum_3_BEADE0D60E8972CC))((::PBYTE)hIl2Cpp + CLASS_2_D2635BA9D50B0AA7_METHOD_2_A51229C6A1DD3A8F_OFFSET))(this, a1, a2, a3, a4);
+	}
+};

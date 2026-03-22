@@ -7,12 +7,13 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine::EventSystems { class PointerEventData; }
 
-#define UNITYENGINE_EVENTSYSTEMS_PHYSICS2DRAYCASTER_RAYCAST_OFFSET UNITYSDK_OFFSET(0x182DE030)
-#define UNITYENGINE_EVENTSYSTEMS_PHYSICS2DRAYCASTER__CTOR_OFFSET UNITYSDK_OFFSET(0x182DE010)
+#define UNITYENGINE_EVENTSYSTEMS_PHYSICS2DRAYCASTER_RAYCAST_OFFSET UNITYSDK_OFFSET(0x1ADCBEA0)
+#define UNITYENGINE_EVENTSYSTEMS_PHYSICS2DRAYCASTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADCBE80)
+#define UNITYENGINE_EVENTSYSTEMS_PHYSICS2DRAYCASTER___BASE_RAYCAST_OFFSET UNITYSDK_OFFSET(0x1ADCC7D0)
 
 namespace UnityEngine::EventSystems
 {
-	inline static constexpr unsigned int Physics2DRaycaster_TypeDefinitionIndex = 5718;
+	inline static constexpr unsigned int Physics2DRaycaster_TypeDefinitionIndex = 8528;
 
 	class Physics2DRaycaster : public ::UnityEngine::EventSystems::PhysicsRaycaster
 	{
@@ -27,6 +28,11 @@ namespace UnityEngine::EventSystems
 		::System::Void Raycast(::UnityEngine::EventSystems::PointerEventData* eventData, ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>* resultAppendList)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*, ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>*))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTSYSTEMS_PHYSICS2DRAYCASTER_RAYCAST_OFFSET))(this, eventData, resultAppendList);
+		}
+
+		::System::Void __base_Raycast(::UnityEngine::EventSystems::PointerEventData* P0, ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*, ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>*))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTSYSTEMS_PHYSICS2DRAYCASTER___BASE_RAYCAST_OFFSET))(this, P0, P1);
 		}
 	};
 }

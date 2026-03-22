@@ -1,10 +1,8 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_333D68058B10D010.h"
 
-namespace RPG::GameCore { class SpritePresetRecord; }
-namespace UnityEngine { class Component; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_722_TypeDefinitionIndex = 54825;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_722_TypeDefinitionIndex = 78051;
 
 class Class_0_16E4307DCC419505_722
 {

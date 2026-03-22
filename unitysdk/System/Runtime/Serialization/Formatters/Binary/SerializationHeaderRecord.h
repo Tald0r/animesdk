@@ -6,27 +6,26 @@
 namespace System::Runtime::Serialization::Formatters::Binary { class __BinaryParser; }
 namespace System::Runtime::Serialization::Formatters::Binary { class __BinaryWriter; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD_DUMP_OFFSET UNITYSDK_OFFSET(0x15D2CA40)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD_GETINT32_OFFSET UNITYSDK_OFFSET(0x15D2C800)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD_READ_OFFSET UNITYSDK_OFFSET(0x15D2C8A0)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD_WRITE_OFFSET UNITYSDK_OFFSET(0x15D2C730)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15D2C700)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD__CTOR_OFFSET UNITYSDK_OFFSET(0x15D2C6F0)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD_GETINT32_OFFSET UNITYSDK_OFFSET(0x18B223D0)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD_READ_OFFSET UNITYSDK_OFFSET(0x18B22470)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD_WRITE_OFFSET UNITYSDK_OFFSET(0x18B22300)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18B222D0)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD__CTOR_OFFSET UNITYSDK_OFFSET(0x18B222C0)
 
 namespace System::Runtime::Serialization::Formatters::Binary
 {
-	inline static constexpr unsigned int SerializationHeaderRecord_TypeDefinitionIndex = 1131;
+	inline static constexpr unsigned int SerializationHeaderRecord_TypeDefinitionIndex = 1183;
 
 	class SerializationHeaderRecord : public ::System::Object
 	{
 	public:
-		::System::Int32 topId; // 0x10
-		::System::Int32 majorVersion; // 0x14
-		::System::Int32 binaryFormatterMinorVersion; // 0x18
-		::System::Int32 minorVersion; // 0x1C
-		::System::Int32 headerId; // 0x20
-		::System::Int32 binaryFormatterMajorVersion; // 0x24
-		::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum binaryHeaderEnum; // 0x28
+		::System::Int32 binaryFormatterMinorVersion; // 0x10
+		::System::Int32 binaryFormatterMajorVersion; // 0x14
+		::System::Int32 headerId; // 0x18
+		::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum binaryHeaderEnum; // 0x1C
+		::System::Int32 majorVersion; // 0x20
+		::System::Int32 topId; // 0x24
+		::System::Int32 minorVersion; // 0x28
 
 		::System::Void _ctor()
 		{
@@ -51,11 +50,6 @@ namespace System::Runtime::Serialization::Formatters::Binary
 		::System::Void Read(::System::Runtime::Serialization::Formatters::Binary::__BinaryParser* input)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::Formatters::Binary::__BinaryParser*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD_READ_OFFSET))(this, input);
-		}
-
-		::System::Void Dump()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_SERIALIZATIONHEADERRECORD_DUMP_OFFSET))(this);
 		}
 	};
 }

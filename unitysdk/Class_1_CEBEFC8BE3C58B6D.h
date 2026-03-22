@@ -1,0 +1,124 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_CEBEFC8BE3C58B6D_Enum_3_33B16E3E02BB0BB4_1.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTaskVoid.h"
+#include "unitysdk/PipelineCamera/CameraVariableFetchContext_1.h"
+#include "unitysdk/PipelineCamera/ScopedDelegateHandle.h"
+#include "unitysdk/PipelineCamera/WorldBasicCameraData.h"
+#include "unitysdk/Struct_2_9F85650CFFBE9F44.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_216;
+namespace MoleMole::Cameras { class CameraTrackBlending; }
+namespace MoleMole::Utils { template <typename T> class TaskBasedEventCollection_1; }
+namespace PipelineCamera { class CameraCommandSpawnSubModules; }
+namespace PipelineCamera { class CameraCommandUnSpawnSubModules; }
+namespace PipelineCamera { template <typename T> class CameraVariableSubModule_1; }
+namespace PipelineCamera { template <typename T> class ICameraSubModuleBuilder_1; }
+namespace PipelineCamera { template <typename T> class ICameraSubModule_1; }
+
+#define CLASS_1_CEBEFC8BE3C58B6D_DISPOSE_OFFSET UNITYSDK_OFFSET(0x70E0390)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_04F4515D28120AE5_OFFSET UNITYSDK_OFFSET(0x70E1AA0)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_0E53AE4483FDA031_OFFSET UNITYSDK_OFFSET(0x70E1420)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_1C536E9223C4CF4A_OFFSET UNITYSDK_OFFSET(0x70E0ED0)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_3C927B51D2142A24_OFFSET UNITYSDK_OFFSET(0x70E1B60)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_4EF190452E1934F6_OFFSET UNITYSDK_OFFSET(0x70E1370)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_6E2764032463B88C_OFFSET UNITYSDK_OFFSET(0x70E18C0)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_9CCEE866A876C683_OFFSET UNITYSDK_OFFSET(0x70E0670)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_A70C3F7A731F6023_OFFSET UNITYSDK_OFFSET(0x70E0A70)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_C668CA64A755C44E_OFFSET UNITYSDK_OFFSET(0x70E0600)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_C8E95FE07A51705A_OFFSET UNITYSDK_OFFSET(0x70E1940)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_C91E5170F9E36EED_OFFSET UNITYSDK_OFFSET(0x70E1010)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_D8C84ED0A4CB22BF_OFFSET UNITYSDK_OFFSET(0x70E0690)
+#define CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_E4C5DF5CBDD06761_OFFSET UNITYSDK_OFFSET(0x70E1030)
+#define CLASS_1_CEBEFC8BE3C58B6D__CTOR_OFFSET UNITYSDK_OFFSET(0x70E0510)
+
+inline static constexpr unsigned int Class_1_CEBEFC8BE3C58B6D_TypeDefinitionIndex = 38624;
+
+class Class_1_CEBEFC8BE3C58B6D : public ::System::Object
+{
+public:
+	::Struct_2_9F85650CFFBE9F44 Field_1_3; // 0x10
+	::Class_0_16E4307DCC419505_216* Field_1_4; // 0xC8
+	::Struct_2_9F85650CFFBE9F44 Field_1_2; // 0xD0
+	::MoleMole::Utils::TaskBasedEventCollection_1<::Class_1_CEBEFC8BE3C58B6D_Enum_3_33B16E3E02BB0BB4_1>* Field_1_0; // 0x188
+	::System::Boolean Field_1_1; // 0x190
+	::System::Boolean Field_1_7; // 0x191
+	::System::Boolean Field_1_6; // 0x192
+	::System::Single Field_1_5; // 0x194
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Dispose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_DISPOSE_OFFSET))(this);
+	}
+
+	::Class_1_CEBEFC8BE3C58B6D* Method_1_C668CA64A755C44E(::System::Boolean a1)
+	{
+		return ((::Class_1_CEBEFC8BE3C58B6D*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_C668CA64A755C44E_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_9CCEE866A876C683(::Class_0_16E4307DCC419505_216* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_216*))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_9CCEE866A876C683_OFFSET))(this, a1);
+	}
+
+	::PipelineCamera::ScopedDelegateHandle Method_1_D8C84ED0A4CB22BF(::MoleMole::Cameras::CameraTrackBlending* a1, ::MoleMole::Cameras::CameraTrackBlending* a2)
+	{
+		return ((::PipelineCamera::ScopedDelegateHandle(*)(::PVOID, ::MoleMole::Cameras::CameraTrackBlending*, ::MoleMole::Cameras::CameraTrackBlending*))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_D8C84ED0A4CB22BF_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_1_1C536E9223C4CF4A(::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_1C536E9223C4CF4A_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_C91E5170F9E36EED(::System::Boolean a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_C91E5170F9E36EED_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_A70C3F7A731F6023(::MoleMole::Cameras::CameraTrackBlending* a1, ::MoleMole::Cameras::CameraTrackBlending* a2, ::PipelineCamera::CameraCommandSpawnSubModules*& a3, ::PipelineCamera::CameraCommandUnSpawnSubModules*& a4)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Cameras::CameraTrackBlending*, ::MoleMole::Cameras::CameraTrackBlending*, ::PipelineCamera::CameraCommandSpawnSubModules*&, ::PipelineCamera::CameraCommandUnSpawnSubModules*&))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_A70C3F7A731F6023_OFFSET))(this, a1, a2, a3, a4);
+	}
+
+	::Cysharp::Threading::Tasks::UniTaskVoid Method_1_4EF190452E1934F6(::MoleMole::Cameras::CameraTrackBlending* a1, ::MoleMole::Cameras::CameraTrackBlending* a2)
+	{
+		return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::MoleMole::Cameras::CameraTrackBlending*, ::MoleMole::Cameras::CameraTrackBlending*))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_4EF190452E1934F6_OFFSET))(this, a1, a2);
+	}
+
+	::PipelineCamera::CameraVariableSubModule_1<::PipelineCamera::WorldBasicCameraData>* Method_1_0E53AE4483FDA031()
+	{
+		return ((::PipelineCamera::CameraVariableSubModule_1<::PipelineCamera::WorldBasicCameraData>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_0E53AE4483FDA031_OFFSET))(this);
+	}
+
+	::System::Void Method_1_6E2764032463B88C(::Struct_2_9F85650CFFBE9F44 a1, ::Struct_2_9F85650CFFBE9F44 a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_9F85650CFFBE9F44, ::Struct_2_9F85650CFFBE9F44))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_6E2764032463B88C_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_1_C8E95FE07A51705A(::MoleMole::Cameras::CameraTrackBlending* a1, ::MoleMole::Cameras::CameraTrackBlending* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Cameras::CameraTrackBlending*, ::MoleMole::Cameras::CameraTrackBlending*))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_C8E95FE07A51705A_OFFSET))(this, a1, a2);
+	}
+
+	::PipelineCamera::WorldBasicCameraData Method_1_04F4515D28120AE5(::PipelineCamera::CameraVariableFetchContext_1<::PipelineCamera::WorldBasicCameraData> a1)
+	{
+		return ((::PipelineCamera::WorldBasicCameraData(*)(::PVOID, ::PipelineCamera::CameraVariableFetchContext_1<::PipelineCamera::WorldBasicCameraData>))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_04F4515D28120AE5_OFFSET))(this, a1);
+	}
+
+	::PipelineCamera::ICameraSubModuleBuilder_1<::PipelineCamera::WorldBasicCameraData>* Method_1_E4C5DF5CBDD06761()
+	{
+		return ((::PipelineCamera::ICameraSubModuleBuilder_1<::PipelineCamera::WorldBasicCameraData>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_E4C5DF5CBDD06761_OFFSET))(this);
+	}
+
+	::System::Void Method_1_3C927B51D2142A24(::System::Single a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_CEBEFC8BE3C58B6D_METHOD_1_3C927B51D2142A24_OFFSET))(this, a1);
+	}
+};

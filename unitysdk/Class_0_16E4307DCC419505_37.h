@@ -1,12 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_7DEC15197331BC9B.h"
 
-class Class_0_16E4307DCC419505_45;
-namespace System { class String; }
+template <typename T1, typename T2> class Class_3_B60F6C2F126D2E26_4;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_37_TypeDefinitionIndex = 31145;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_37_TypeDefinitionIndex = 24233;
 
+template <typename TVertex, typename TEdge>
 class Class_0_16E4307DCC419505_37
 {
 public:

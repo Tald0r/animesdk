@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_TIMEZONENOTFOUNDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15BB34C0)
-#define SYSTEM_TIMEZONENOTFOUNDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15BA8360)
-#define SYSTEM_TIMEZONENOTFOUNDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15BAC300)
+#define SYSTEM_TIMEZONENOTFOUNDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x197C4180)
+#define SYSTEM_TIMEZONENOTFOUNDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x197C41D0)
+#define SYSTEM_TIMEZONENOTFOUNDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x197C4110)
 
 namespace System
 {
-	inline static constexpr unsigned int TimeZoneNotFoundException_TypeDefinitionIndex = 348;
+	inline static constexpr unsigned int TimeZoneNotFoundException_TypeDefinitionIndex = 338;
 
 	class TimeZoneNotFoundException : public ::System::Exception
 	{

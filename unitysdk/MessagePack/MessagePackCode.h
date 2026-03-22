@@ -5,31 +5,25 @@
 
 namespace System { class String; }
 
-#define MESSAGEPACK_MESSAGEPACKCODE_CHECKBITMASK_OFFSET UNITYSDK_OFFSET(0x15675F90)
-#define MESSAGEPACK_MESSAGEPACKCODE_ISFIXARRAY_OFFSET UNITYSDK_OFFSET(0x15675FA0)
-#define MESSAGEPACK_MESSAGEPACKCODE_ISFIXMAP_OFFSET UNITYSDK_OFFSET(0x15675F60)
-#define MESSAGEPACK_MESSAGEPACKCODE_ISFIXSTR_OFFSET UNITYSDK_OFFSET(0x15675FD0)
-#define MESSAGEPACK_MESSAGEPACKCODE_ISNEGATIVEFIXINT_OFFSET UNITYSDK_OFFSET(0x15675F40)
-#define MESSAGEPACK_MESSAGEPACKCODE_ISPOSITIVEFIXINT_OFFSET UNITYSDK_OFFSET(0x15675F50)
-#define MESSAGEPACK_MESSAGEPACKCODE_ISSIGNEDINTEGER_OFFSET UNITYSDK_OFFSET(0x15675F00)
-#define MESSAGEPACK_MESSAGEPACKCODE_TOFORMATNAME_OFFSET UNITYSDK_OFFSET(0x15675E90)
-#define MESSAGEPACK_MESSAGEPACKCODE_TOMESSAGEPACKTYPE_OFFSET UNITYSDK_OFFSET(0x15675E20)
-#define MESSAGEPACK_MESSAGEPACKCODE__CCTOR_OFFSET UNITYSDK_OFFSET(0x15674CE0)
+#define MESSAGEPACK_MESSAGEPACKCODE_ISSIGNEDINTEGER_OFFSET UNITYSDK_OFFSET(0x19E9A580)
+#define MESSAGEPACK_MESSAGEPACKCODE_TOFORMATNAME_OFFSET UNITYSDK_OFFSET(0x19E9A4E0)
+#define MESSAGEPACK_MESSAGEPACKCODE_TOMESSAGEPACKTYPE_OFFSET UNITYSDK_OFFSET(0x19E9A440)
+#define MESSAGEPACK_MESSAGEPACKCODE__CCTOR_OFFSET UNITYSDK_OFFSET(0x19E992D0)
 
 namespace MessagePack
 {
-	inline static constexpr unsigned int MessagePackCode_TypeDefinitionIndex = 9404;
+	inline static constexpr unsigned int MessagePackCode_TypeDefinitionIndex = 26619;
 
 	class MessagePackCode : public ::System::Object
 	{
 	public:
 		static ::Il2CppArray<::System::String*>** StaticGet_FormatNameTable()
 		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MessagePackCode_TypeDefinitionIndex)->GetStaticField(0x267B0);
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MessagePackCode_TypeDefinitionIndex)->GetStaticField(0x1F170);
 		}
 		static ::Il2CppArray<::MessagePack::MessagePackType>** StaticGet_TypeLookupTable()
 		{
-			return (::Il2CppArray<::MessagePack::MessagePackType>**)Il2CppClass::FromTypeDefinitionIndex(MessagePackCode_TypeDefinitionIndex)->GetStaticField(0x267B8);
+			return (::Il2CppArray<::MessagePack::MessagePackType>**)Il2CppClass::FromTypeDefinitionIndex(MessagePackCode_TypeDefinitionIndex)->GetStaticField(0x1F178);
 		}
 		// static const ::System::Byte MinFixInt = 0x0; // 0x0
 		// static const ::System::Byte MaxFixInt = 0x7F; // 0x0
@@ -92,36 +86,6 @@ namespace MessagePack
 		static ::System::Boolean IsSignedInteger(::System::Byte code)
 		{
 			return ((::System::Boolean(*)(::System::Byte))((::PBYTE)hIl2Cpp + MESSAGEPACK_MESSAGEPACKCODE_ISSIGNEDINTEGER_OFFSET))(code);
-		}
-
-		static ::System::Boolean IsPositiveFixInt(::System::Byte code)
-		{
-			return ((::System::Boolean(*)(::System::Byte))((::PBYTE)hIl2Cpp + MESSAGEPACK_MESSAGEPACKCODE_ISPOSITIVEFIXINT_OFFSET))(code);
-		}
-
-		static ::System::Boolean IsNegativeFixInt(::System::Byte code)
-		{
-			return ((::System::Boolean(*)(::System::Byte))((::PBYTE)hIl2Cpp + MESSAGEPACK_MESSAGEPACKCODE_ISNEGATIVEFIXINT_OFFSET))(code);
-		}
-
-		static ::System::Boolean IsFixMap(::System::Byte code)
-		{
-			return ((::System::Boolean(*)(::System::Byte))((::PBYTE)hIl2Cpp + MESSAGEPACK_MESSAGEPACKCODE_ISFIXMAP_OFFSET))(code);
-		}
-
-		static ::System::Boolean IsFixArray(::System::Byte code)
-		{
-			return ((::System::Boolean(*)(::System::Byte))((::PBYTE)hIl2Cpp + MESSAGEPACK_MESSAGEPACKCODE_ISFIXARRAY_OFFSET))(code);
-		}
-
-		static ::System::Boolean IsFixStr(::System::Byte code)
-		{
-			return ((::System::Boolean(*)(::System::Byte))((::PBYTE)hIl2Cpp + MESSAGEPACK_MESSAGEPACKCODE_ISFIXSTR_OFFSET))(code);
-		}
-
-		static ::System::Boolean CheckBitmask(::System::Byte code, ::System::Byte bitmask, ::System::Byte targetValue)
-		{
-			return ((::System::Boolean(*)(::System::Byte, ::System::Byte, ::System::Byte))((::PBYTE)hIl2Cpp + MESSAGEPACK_MESSAGEPACKCODE_CHECKBITMASK_OFFSET))(code, bitmask, targetValue);
 		}
 	};
 }

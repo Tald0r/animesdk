@@ -5,17 +5,19 @@
 
 namespace System { class Exception; }
 namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Collections::Generic { template <typename T> class Queue_1; }
 
-#define NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER_GET_LEVELFILTER_OFFSET UNITYSDK_OFFSET(0x15DE1070)
-#define NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER_SET_LEVELFILTER_OFFSET UNITYSDK_OFFSET(0x15DE1080)
-#define NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15DE1350)
-#define NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER_TRACE_OFFSET UNITYSDK_OFFSET(0x15DE10F0)
-#define NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER__CTOR_OFFSET UNITYSDK_OFFSET(0x15DE1090)
+#define NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER_GETTRACEMESSAGES_OFFSET UNITYSDK_OFFSET(0x1A8C9FA0)
+#define NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER_GET_LEVELFILTER_OFFSET UNITYSDK_OFFSET(0x1A8C9CB0)
+#define NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER_SET_LEVELFILTER_OFFSET UNITYSDK_OFFSET(0x1A8C9CC0)
+#define NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1A8C9FB0)
+#define NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER_TRACE_OFFSET UNITYSDK_OFFSET(0x1A8C9D50)
+#define NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A8C9CD0)
 
 namespace Newtonsoft::Json::Serialization
 {
-	inline static constexpr unsigned int MemoryTraceWriter_TypeDefinitionIndex = 8165;
+	inline static constexpr unsigned int MemoryTraceWriter_TypeDefinitionIndex = 7013;
 
 	class MemoryTraceWriter : public ::System::Object
 	{
@@ -41,6 +43,11 @@ namespace Newtonsoft::Json::Serialization
 		::System::Void Trace(::System::Diagnostics::TraceLevel level, ::System::String* message, ::System::Exception* ex)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Diagnostics::TraceLevel, ::System::String*, ::System::Exception*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER_TRACE_OFFSET))(this, level, message, ex);
+		}
+
+		::System::Collections::Generic::IEnumerable_1<::System::String*>* GetTraceMessages()
+		{
+			return ((::System::Collections::Generic::IEnumerable_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_SERIALIZATION_MEMORYTRACEWRITER_GETTRACEMESSAGES_OFFSET))(this);
 		}
 
 		::System::String* ToString()

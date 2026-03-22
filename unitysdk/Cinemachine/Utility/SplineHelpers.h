@@ -4,16 +4,17 @@
 #include "unitysdk/UnityEngine/Vector3.h"
 #include "unitysdk/UnityEngine/Vector4.h"
 
-#define CINEMACHINE_UTILITY_SPLINEHELPERS_BEZIER1_OFFSET UNITYSDK_OFFSET(0x1126D160)
-#define CINEMACHINE_UTILITY_SPLINEHELPERS_BEZIER3_OFFSET UNITYSDK_OFFSET(0x1126CF20)
-#define CINEMACHINE_UTILITY_SPLINEHELPERS_BEZIERTANGENT1_OFFSET UNITYSDK_OFFSET(0x1126D210)
-#define CINEMACHINE_UTILITY_SPLINEHELPERS_BEZIERTANGENT3_OFFSET UNITYSDK_OFFSET(0x1126CFF0)
-#define CINEMACHINE_UTILITY_SPLINEHELPERS_COMPUTESMOOTHCONTROLPOINTSLOOPED_OFFSET UNITYSDK_OFFSET(0x1126E600)
-#define CINEMACHINE_UTILITY_SPLINEHELPERS_COMPUTESMOOTHCONTROLPOINTS_OFFSET UNITYSDK_OFFSET(0x1126D2B0)
+#define CINEMACHINE_UTILITY_SPLINEHELPERS_BEZIER1_OFFSET UNITYSDK_OFFSET(0x1A91BDC0)
+#define CINEMACHINE_UTILITY_SPLINEHELPERS_BEZIER3_OFFSET UNITYSDK_OFFSET(0x1A91BB80)
+#define CINEMACHINE_UTILITY_SPLINEHELPERS_BEZIERTANGENT1_OFFSET UNITYSDK_OFFSET(0x1A91BE70)
+#define CINEMACHINE_UTILITY_SPLINEHELPERS_BEZIERTANGENT3_OFFSET UNITYSDK_OFFSET(0x1A91BC50)
+#define CINEMACHINE_UTILITY_SPLINEHELPERS_COMPUTESMOOTHCONTROLPOINTSLOOPED_OFFSET UNITYSDK_OFFSET(0x1A91D420)
+#define CINEMACHINE_UTILITY_SPLINEHELPERS_COMPUTESMOOTHCONTROLPOINTSWITHMORETHANTHREEPOINT_OFFSET UNITYSDK_OFFSET(0x1A91D800)
+#define CINEMACHINE_UTILITY_SPLINEHELPERS_COMPUTESMOOTHCONTROLPOINTS_OFFSET UNITYSDK_OFFSET(0x1A91BF10)
 
 namespace Cinemachine::Utility
 {
-	inline static constexpr unsigned int SplineHelpers_TypeDefinitionIndex = 30063;
+	inline static constexpr unsigned int SplineHelpers_TypeDefinitionIndex = 31168;
 
 	class SplineHelpers : public ::System::Object
 	{
@@ -46,6 +47,11 @@ namespace Cinemachine::Utility
 		static ::System::Void ComputeSmoothControlPointsLooped(::Il2CppArray<::UnityEngine::Vector4>*& knot, ::Il2CppArray<::UnityEngine::Vector4>*& ctrl1, ::Il2CppArray<::UnityEngine::Vector4>*& ctrl2)
 		{
 			return ((::System::Void(*)(::Il2CppArray<::UnityEngine::Vector4>*&, ::Il2CppArray<::UnityEngine::Vector4>*&, ::Il2CppArray<::UnityEngine::Vector4>*&))((::PBYTE)hIl2Cpp + CINEMACHINE_UTILITY_SPLINEHELPERS_COMPUTESMOOTHCONTROLPOINTSLOOPED_OFFSET))(knot, ctrl1, ctrl2);
+		}
+
+		static ::System::Void ComputeSmoothControlPointsWithMoreThanThreePoint(::Il2CppArray<::UnityEngine::Vector4>*& knot, ::Il2CppArray<::UnityEngine::Vector4>*& ctrl1, ::Il2CppArray<::UnityEngine::Vector4>*& ctrl2, ::Il2CppArray<::UnityEngine::Vector4>* extraData)
+		{
+			return ((::System::Void(*)(::Il2CppArray<::UnityEngine::Vector4>*&, ::Il2CppArray<::UnityEngine::Vector4>*&, ::Il2CppArray<::UnityEngine::Vector4>*&, ::Il2CppArray<::UnityEngine::Vector4>*))((::PBYTE)hIl2Cpp + CINEMACHINE_UTILITY_SPLINEHELPERS_COMPUTESMOOTHCONTROLPOINTSWITHMORETHANTHREEPOINT_OFFSET))(knot, ctrl1, ctrl2, extraData);
 		}
 	};
 }

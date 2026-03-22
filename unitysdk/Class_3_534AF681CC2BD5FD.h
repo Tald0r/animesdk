@@ -1,16 +1,19 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_2_FF1662A92369C7AD.h"
-#include "unitysdk/EnviromentSystemV2Space/CancelFadingReason.h"
+#include "unitysdk/Class_2_97B8C5560BEC00CB.h"
+#include "unitysdk/Enum_3_190E3717882702BE.h"
 
-class Class_0_16E4307DCC419505_282;
-class Class_1_C662E2F2A633F51D;
-template <typename T> class Class_3_455124A410922D94;
+class Class_1_0D6706375CDAAE8C;
+class Class_1_1685EC66FBD28897;
+class Class_2_12BDE7300F0E061C;
+namespace System { class String; }
+namespace System { template <typename T1, typename T2> class Func_2; }
+template <typename T> class Class_0_16E4307DCC41950C_13;
 
-inline static constexpr unsigned int Class_3_534AF681CC2BD5FD_TypeDefinitionIndex = 39128;
+inline static constexpr unsigned int Class_3_534AF681CC2BD5FD_TypeDefinitionIndex = 36721;
 
-template <typename T>
-class Class_3_534AF681CC2BD5FD : public ::Class_2_FF1662A92369C7AD<T>
+template <typename TFilter>
+class Class_3_534AF681CC2BD5FD : public ::Class_2_97B8C5560BEC00CB<::Class_1_0D6706375CDAAE8C*, TFilter>
 {
 public:
 };

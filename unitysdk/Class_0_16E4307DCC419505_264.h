@@ -1,8 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/GenderType.h"
+#include "unitysdk/MoleMole/GameplayTag.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_264_TypeDefinitionIndex = 37767;
+namespace UnityEngine { class GameObject; }
+
+inline static constexpr unsigned int Class_0_16E4307DCC419505_264_TypeDefinitionIndex = 53095;
 
 class Class_0_16E4307DCC419505_264
 {

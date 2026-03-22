@@ -1,0 +1,13 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICoopMatchPageController_LevelTabStatus_TypeDefinitionIndex = 58242;
+
+	enum class UICoopMatchPageController_LevelTabStatus : ::System::Int32
+	{
+		LEVEL_NORMAL = 0,
+		LEVEL_NIGHTMARE = 1,
+	};
+}

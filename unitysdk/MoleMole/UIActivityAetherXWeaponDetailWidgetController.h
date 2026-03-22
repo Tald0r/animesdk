@@ -1,0 +1,106 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_A933CF9454745DA7_4;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_BINDCALLBACK_OFFSET UNITYSDK_OFFSET(0xD1C9290)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_INITINDEX_OFFSET UNITYSDK_OFFSET(0xD1C90D0)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD1C8F50)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD1C8FF0)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD1C8CC0)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD1C8EA0)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_SETINTERACTABLE_OFFSET UNITYSDK_OFFSET(0xD1C9200)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_SETSELECT_OFFSET UNITYSDK_OFFSET(0xD1C9140)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD1C9300)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET UNITYSDK_OFFSET(0xD1C9330)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD1C9390)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD1C9400)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD1C9480)
+#define MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD1C94E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityAetherXWeaponDetailWidgetController_TypeDefinitionIndex = 64329;
+
+	class UIActivityAetherXWeaponDetailWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_A933CF9454745DA7_4* _view; // 0x2A0
+		::System::Int32 WeaponIndex; // 0x2A8
+		::System::Action_1<::MoleMole::UIActivityAetherXWeaponDetailWidgetController*>* _callback; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitIndex(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_INITINDEX_OFFSET))(this, index);
+		}
+
+		::System::Void SetSelect(::System::Boolean select)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_SETSELECT_OFFSET))(this, select);
+		}
+
+		::System::Void SetInteractable(::System::Boolean interactable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_SETINTERACTABLE_OFFSET))(this, interactable);
+		}
+
+		::System::Void BindCallback(::System::Action_1<::MoleMole::UIActivityAetherXWeaponDetailWidgetController*>* cb)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::MoleMole::UIActivityAetherXWeaponDetailWidgetController*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER_BINDCALLBACK_OFFSET))(this, cb);
+		}
+
+		::System::Void _OnUIInit_b__3_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAETHERXWEAPONDETAILWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

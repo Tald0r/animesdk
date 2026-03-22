@@ -1,0 +1,78 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_1EB8C469AAE7B7DE.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_E87F1D15F1D4AC72;
+namespace MoleMole { class UIActivityBlindBoxReportItemWidgetController_Context; }
+namespace System { class String; }
+template <typename T> class Class_0_16E4307DCC419505_103;
+
+#define CLASS_2_02254F4768EDFFA3_METHOD_2_1798FAFF45053267_1_OFFSET UNITYSDK_OFFSET(0x93BB900)
+#define CLASS_2_02254F4768EDFFA3_METHOD_2_1798FAFF45053267_OFFSET UNITYSDK_OFFSET(0x93BB800)
+#define CLASS_2_02254F4768EDFFA3_METHOD_2_25362D4D359FC448_OFFSET UNITYSDK_OFFSET(0x93BB7F0)
+#define CLASS_2_02254F4768EDFFA3_METHOD_2_33ACA6CB2ABC73F7_OFFSET UNITYSDK_OFFSET(0x93BB510)
+#define CLASS_2_02254F4768EDFFA3_METHOD_2_43D99DDD80B1E30C_OFFSET UNITYSDK_OFFSET(0x93BB420)
+#define CLASS_2_02254F4768EDFFA3_METHOD_2_9D768FB7C06C1DF3_OFFSET UNITYSDK_OFFSET(0x93BB3B0)
+#define CLASS_2_02254F4768EDFFA3_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x93BB9F0)
+#define CLASS_2_02254F4768EDFFA3_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x93BB780)
+#define CLASS_2_02254F4768EDFFA3_METHOD_2_D45F8D57AB5DA65B_OFFSET UNITYSDK_OFFSET(0x93BB7E0)
+#define CLASS_2_02254F4768EDFFA3__CTOR_OFFSET UNITYSDK_OFFSET(0x93BB730)
+
+inline static constexpr unsigned int Class_2_02254F4768EDFFA3_TypeDefinitionIndex = 49952;
+
+class Class_2_02254F4768EDFFA3 : public ::Class_1_1EB8C469AAE7B7DE
+{
+public:
+	::Class_0_16E4307DCC419505_103<::MoleMole::UIActivityBlindBoxReportItemWidgetController_Context*>* Field_2_0; // 0x50
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_02254F4768EDFFA3__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_9D768FB7C06C1DF3(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_2_02254F4768EDFFA3_METHOD_2_9D768FB7C06C1DF3_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_43D99DDD80B1E30C()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_02254F4768EDFFA3_METHOD_2_43D99DDD80B1E30C_OFFSET))(this);
+	}
+
+	::System::Void Method_2_33ACA6CB2ABC73F7()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_02254F4768EDFFA3_METHOD_2_33ACA6CB2ABC73F7_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_02254F4768EDFFA3_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_2_D45F8D57AB5DA65B(::Class_0_16E4307DCC419505_103<::MoleMole::UIActivityBlindBoxReportItemWidgetController_Context*>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_103<::MoleMole::UIActivityBlindBoxReportItemWidgetController_Context*>*))((::PBYTE)hIl2Cpp + CLASS_2_02254F4768EDFFA3_METHOD_2_D45F8D57AB5DA65B_OFFSET))(this, a1);
+	}
+
+	::Class_0_16E4307DCC419505_103<::MoleMole::UIActivityBlindBoxReportItemWidgetController_Context*>* Method_2_25362D4D359FC448()
+	{
+		return ((::Class_0_16E4307DCC419505_103<::MoleMole::UIActivityBlindBoxReportItemWidgetController_Context*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_02254F4768EDFFA3_METHOD_2_25362D4D359FC448_OFFSET))(this);
+	}
+
+	::System::String* Method_2_1798FAFF45053267()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_02254F4768EDFFA3_METHOD_2_1798FAFF45053267_OFFSET))(this);
+	}
+
+	::System::String* Method_2_1798FAFF45053267_1()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_02254F4768EDFFA3_METHOD_2_1798FAFF45053267_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_02254F4768EDFFA3_METHOD_2_CA373AA1C7054598_1_OFFSET))(this);
+	}
+};

@@ -1,0 +1,125 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Security/Permissions/CodeAccessSecurityAttribute.h"
+#include "unitysdk/System/Security/Permissions/SecurityAction.h"
+#include "unitysdk/System/Security/Permissions/StorePermissionFlags.h"
+
+namespace System::Security { class IPermission; }
+
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_CREATEPERMISSION_OFFSET UNITYSDK_OFFSET(0x182F8940)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_ADDTOSTORE_OFFSET UNITYSDK_OFFSET(0x182F8540)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_CREATESTORE_OFFSET UNITYSDK_OFFSET(0x182F85C0)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_DELETESTORE_OFFSET UNITYSDK_OFFSET(0x182F8640)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_ENUMERATECERTIFICATES_OFFSET UNITYSDK_OFFSET(0x182F86C0)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_ENUMERATESTORES_OFFSET UNITYSDK_OFFSET(0x182F8740)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_FLAGS_OFFSET UNITYSDK_OFFSET(0x182F87C0)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_OPENSTORE_OFFSET UNITYSDK_OFFSET(0x182F8840)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_REMOVEFROMSTORE_OFFSET UNITYSDK_OFFSET(0x182F88C0)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_ADDTOSTORE_OFFSET UNITYSDK_OFFSET(0x182F8580)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_CREATESTORE_OFFSET UNITYSDK_OFFSET(0x182F8600)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_DELETESTORE_OFFSET UNITYSDK_OFFSET(0x182F8680)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_ENUMERATECERTIFICATES_OFFSET UNITYSDK_OFFSET(0x182F8700)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_ENUMERATESTORES_OFFSET UNITYSDK_OFFSET(0x182F8780)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_FLAGS_OFFSET UNITYSDK_OFFSET(0x182F8800)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_OPENSTORE_OFFSET UNITYSDK_OFFSET(0x182F8880)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_REMOVEFROMSTORE_OFFSET UNITYSDK_OFFSET(0x182F8900)
+#define SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x182F8530)
+
+namespace System::Security::Permissions
+{
+	inline static constexpr unsigned int StorePermissionAttribute_TypeDefinitionIndex = 4107;
+
+	class StorePermissionAttribute : public ::System::Security::Permissions::CodeAccessSecurityAttribute
+	{
+	public:
+		::System::Void _ctor(::System::Security::Permissions::SecurityAction action)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Permissions::SecurityAction))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE__CTOR_OFFSET))(this, action);
+		}
+
+		::System::Boolean get_AddToStore()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_ADDTOSTORE_OFFSET))(this);
+		}
+
+		::System::Void set_AddToStore(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_ADDTOSTORE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_CreateStore()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_CREATESTORE_OFFSET))(this);
+		}
+
+		::System::Void set_CreateStore(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_CREATESTORE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_DeleteStore()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_DELETESTORE_OFFSET))(this);
+		}
+
+		::System::Void set_DeleteStore(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_DELETESTORE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_EnumerateCertificates()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_ENUMERATECERTIFICATES_OFFSET))(this);
+		}
+
+		::System::Void set_EnumerateCertificates(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_ENUMERATECERTIFICATES_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_EnumerateStores()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_ENUMERATESTORES_OFFSET))(this);
+		}
+
+		::System::Void set_EnumerateStores(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_ENUMERATESTORES_OFFSET))(this, value);
+		}
+
+		::System::Security::Permissions::StorePermissionFlags get_Flags()
+		{
+			return ((::System::Security::Permissions::StorePermissionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_FLAGS_OFFSET))(this);
+		}
+
+		::System::Void set_Flags(::System::Security::Permissions::StorePermissionFlags value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Permissions::StorePermissionFlags))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_FLAGS_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_OpenStore()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_OPENSTORE_OFFSET))(this);
+		}
+
+		::System::Void set_OpenStore(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_OPENSTORE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_RemoveFromStore()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_GET_REMOVEFROMSTORE_OFFSET))(this);
+		}
+
+		::System::Void set_RemoveFromStore(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_SET_REMOVEFROMSTORE_OFFSET))(this, value);
+		}
+
+		::System::Security::IPermission* CreatePermission()
+		{
+			return ((::System::Security::IPermission*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_PERMISSIONS_STOREPERMISSIONATTRIBUTE_CREATEPERMISSION_OFFSET))(this);
+		}
+	};
+}

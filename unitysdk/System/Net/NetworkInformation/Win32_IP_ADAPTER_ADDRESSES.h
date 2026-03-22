@@ -8,12 +8,25 @@
 
 namespace System { class String; }
 
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32_IP_ADAPTER_ADDRESSES_GET_DDNSENABLED_OFFSET UNITYSDK_OFFSET(0x869D80)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32_IP_ADAPTER_ADDRESSES_GET_DHCPENABLED_OFFSET UNITYSDK_OFFSET(0x869D90)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32_IP_ADAPTER_ADDRESSES_GET_ISRECEIVEONLY_OFFSET UNITYSDK_OFFSET(0x869DA0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32_IP_ADAPTER_ADDRESSES_GET_NOMULTICAST_OFFSET UNITYSDK_OFFSET(0x869DB0)
+
 namespace System::Net::NetworkInformation
 {
-	inline static constexpr unsigned int Win32_IP_ADAPTER_ADDRESSES_TypeDefinitionIndex = 2945;
+	inline static constexpr unsigned int Win32_IP_ADAPTER_ADDRESSES_TypeDefinitionIndex = 3838;
 
 	struct alignas(8) Win32_IP_ADAPTER_ADDRESSES
 	{
+		// static const ::System::Int32 GAA_FLAG_INCLUDE_WINS_INFO = 0x40; // 0x0
+		// static const ::System::Int32 GAA_FLAG_INCLUDE_GATEWAYS = 0x80; // 0x0
+		// static const ::System::Int32 MAX_ADAPTER_ADDRESS_LENGTH = 0x8; // 0x0
+		// static const ::System::Int32 MAX_DHCPV6_DUID_LENGTH = 0x82; // 0x0
+		// static const ::System::Int32 IP_ADAPTER_DDNS_ENABLED = 0x1; // 0x0
+		// static const ::System::Int32 IP_ADAPTER_DHCP_ENABLED = 0x4; // 0x0
+		// static const ::System::Int32 IP_ADAPTER_RECEIVE_ONLY = 0x8; // 0x0
+		// static const ::System::Int32 IP_ADAPTER_NO_MULTICAST = 0x10; // 0x0
 		::System::Net::NetworkInformation::AlignmentUnion Alignment; // 0x10
 		::System::IntPtr Next; // 0x18
 		::System::String* AdapterName; // 0x20
@@ -50,5 +63,25 @@ namespace System::Net::NetworkInformation
 		::System::UInt64 Dhcpv6ClientDuidLength; // 0x100
 		::System::UInt64 Dhcpv6Iaid; // 0x108
 		::System::IntPtr FirstDnsSuffix; // 0x110
+
+		::System::Boolean get_DdnsEnabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32_IP_ADAPTER_ADDRESSES_GET_DDNSENABLED_OFFSET))(this);
+		}
+
+		::System::Boolean get_DhcpEnabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32_IP_ADAPTER_ADDRESSES_GET_DHCPENABLED_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsReceiveOnly()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32_IP_ADAPTER_ADDRESSES_GET_ISRECEIVEONLY_OFFSET))(this);
+		}
+
+		::System::Boolean get_NoMulticast()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32_IP_ADAPTER_ADDRESSES_GET_NOMULTICAST_OFFSET))(this);
+		}
 	};
 }

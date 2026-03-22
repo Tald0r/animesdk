@@ -1,0 +1,160 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_0_16E4307DCC419505_7;
+class Class_1_BE6BF7909AD9D940;
+class Class_2_2F3C7D4EFC74D485;
+class Class_2_79F6D62CE30E3F8E_138;
+class Class_3_E6E3938E70B764D0;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace UnityEngine::UI::Extension { class UILocalizationText; }
+
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_BINDINVITEBTN_OFFSET UNITYSDK_OFFSET(0xB906830)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONADDFRIENDHANDLE_OFFSET UNITYSDK_OFFSET(0xB906C00)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONBTNCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xB906E40)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB905D50)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONKICKPLAYERHANDLE_OFFSET UNITYSDK_OFFSET(0xB906B90)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONREMOVECLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xB9069C0)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONSWITCHPLATFORMINFO_OFFSET UNITYSDK_OFFSET(0xB9074E0)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB906750)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB905AC0)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB905CA0)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xB905DF0)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_SHOWINFO_OFFSET UNITYSDK_OFFSET(0xB9066C0)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_SHOWPLATFORMUI_OFFSET UNITYSDK_OFFSET(0xB9075B0)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_SHOWUIVIEW_OFFSET UNITYSDK_OFFSET(0xB907820)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB907D60)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER__SHOWUIVIEW_G__SETUPPLATFORMUI_27_0_OFFSET UNITYSDK_OFFSET(0xB907CF0)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB907E80)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB907EF0)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB907F70)
+#define MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB907FD0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAutoBattlePVPPlayerRowWidgetController_TypeDefinitionIndex = 74160;
+
+	class UIAutoBattlePVPPlayerRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* ADD_ICON; // 0x0
+		// static const ::System::String* KICK_ICON; // 0x0
+		::Class_2_79F6D62CE30E3F8E_138* _view; // 0x2A0
+		::Class_3_E6E3938E70B764D0* _playerInfo; // 0x2A8
+		::System::Boolean _IsMine; // 0x2B0
+		::System::Boolean _isChaptain; // 0x2B1
+		::System::Boolean _mineIsChaptain; // 0x2B2
+		::System::Action* MyTitleConsoleClickHandle; // 0x2B8
+		::Class_2_2F3C7D4EFC74D485* _model; // 0x2C0
+		::Class_1_BE6BF7909AD9D940* _friendBrief; // 0x2C8
+		::System::Boolean _allowShowPlatform; // 0x2D0
+		::System::Boolean _canSwitchPlatformInfo; // 0x2D1
+		::System::Boolean _isShowingPlatform; // 0x2D2
+		::UnityEngine::UI::Extension::UILocalizationText* displayNameText; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void RefreshView(::Class_3_E6E3938E70B764D0* playerInfo, ::System::UInt32 chaptainUid, ::System::Boolean isMine)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_E6E3938E70B764D0*, ::System::UInt32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, playerInfo, chaptainUid, isMine);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void BindInviteBtn(::System::Action* inviteAction)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_BINDINVITEBTN_OFFSET))(this, inviteAction);
+		}
+
+		::System::Void OnRemoveClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONREMOVECLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnKickPlayerHandle(::Class_0_16E4307DCC419505_7* rcvmessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONKICKPLAYERHANDLE_OFFSET))(this, rcvmessage);
+		}
+
+		::System::Void OnAddFriendHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONADDFRIENDHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnBtnClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONBTNCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnSwitchPlatformInfo(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_ONSWITCHPLATFORMINFO_OFFSET))(this, args);
+		}
+
+		::System::Void ShowInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_SHOWINFO_OFFSET))(this);
+		}
+
+		::System::Void ShowPlatformUI(::System::Boolean isShowingPlatformInfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_SHOWPLATFORMUI_OFFSET))(this, isShowingPlatformInfo);
+		}
+
+		::System::Void ShowUIView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER_SHOWUIVIEW_OFFSET))(this);
+		}
+
+		::System::Void _ShowUIView_g__SetupPlatformUI_27_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER__SHOWUIVIEW_G__SETUPPLATFORMUI_27_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAUTOBATTLEPVPPLAYERROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

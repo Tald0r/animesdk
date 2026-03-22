@@ -8,70 +8,61 @@ namespace System { class Object; }
 namespace System { class String; }
 namespace System::Security::Cryptography { class RandomNumberGenerator; }
 
-#define SYSTEM_GUID_COMPARETO_1_OFFSET UNITYSDK_OFFSET(0x2009620)
-#define SYSTEM_GUID_COMPARETO_OFFSET UNITYSDK_OFFSET(0x2009610)
-#define SYSTEM_GUID_EATALLWHITESPACE_OFFSET UNITYSDK_OFFSET(0x15C6FF70)
-#define SYSTEM_GUID_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x2009590)
-#define SYSTEM_GUID_EQUALS_OFFSET UNITYSDK_OFFSET(0x2009510)
-#define SYSTEM_GUID_FASTNEWGUIDARRAY_OFFSET UNITYSDK_OFFSET(0x15C718D0)
-#define SYSTEM_GUID_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x20094E0)
-#define SYSTEM_GUID_GETRESULT_OFFSET UNITYSDK_OFFSET(0x2009600)
-#define SYSTEM_GUID_HEXSTOCHARS_1_OFFSET UNITYSDK_OFFSET(0x15C716A0)
-#define SYSTEM_GUID_HEXSTOCHARS_OFFSET UNITYSDK_OFFSET(0x15C71620)
-#define SYSTEM_GUID_HEXTOCHAR_OFFSET UNITYSDK_OFFSET(0x15C71610)
-#define SYSTEM_GUID_ISHEXPREFIX_OFFSET UNITYSDK_OFFSET(0x15C70080)
-#define SYSTEM_GUID_NEWGUID_OFFSET UNITYSDK_OFFSET(0x15C71750)
-#define SYSTEM_GUID_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x15C71510)
-#define SYSTEM_GUID_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x15C71580)
-#define SYSTEM_GUID_PARSEEXACT_OFFSET UNITYSDK_OFFSET(0x15C6E880)
-#define SYSTEM_GUID_PARSE_OFFSET UNITYSDK_OFFSET(0x15C6E770)
-#define SYSTEM_GUID_STRINGTOINT_1_OFFSET UNITYSDK_OFFSET(0x15C70260)
-#define SYSTEM_GUID_STRINGTOINT_2_OFFSET UNITYSDK_OFFSET(0x15C702F0)
-#define SYSTEM_GUID_STRINGTOINT_OFFSET UNITYSDK_OFFSET(0x15C701D0)
-#define SYSTEM_GUID_STRINGTOLONG_1_OFFSET UNITYSDK_OFFSET(0x15C70250)
-#define SYSTEM_GUID_STRINGTOLONG_2_OFFSET UNITYSDK_OFFSET(0x15C704C0)
-#define SYSTEM_GUID_STRINGTOLONG_OFFSET UNITYSDK_OFFSET(0x15C704A0)
-#define SYSTEM_GUID_STRINGTOSHORT_1_OFFSET UNITYSDK_OFFSET(0x15C702B0)
-#define SYSTEM_GUID_STRINGTOSHORT_2_OFFSET UNITYSDK_OFFSET(0x15C70270)
-#define SYSTEM_GUID_STRINGTOSHORT_OFFSET UNITYSDK_OFFSET(0x15C70200)
-#define SYSTEM_GUID_TOBYTEARRAY_OFFSET UNITYSDK_OFFSET(0x20094C0)
-#define SYSTEM_GUID_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x20096D0)
-#define SYSTEM_GUID_TOSTRING_2_OFFSET UNITYSDK_OFFSET(0x20096D0)
-#define SYSTEM_GUID_TOSTRING_OFFSET UNITYSDK_OFFSET(0x20094D0)
-#define SYSTEM_GUID_TRYPARSEEXACT_OFFSET UNITYSDK_OFFSET(0x15C6EB20)
-#define SYSTEM_GUID_TRYPARSEGUIDWITHDASHES_OFFSET UNITYSDK_OFFSET(0x15C6ED10)
-#define SYSTEM_GUID_TRYPARSEGUIDWITHHEXPREFIX_OFFSET UNITYSDK_OFFSET(0x15C6F1C0)
-#define SYSTEM_GUID_TRYPARSEGUIDWITHNOSTYLE_OFFSET UNITYSDK_OFFSET(0x15C6FB10)
-#define SYSTEM_GUID_TRYPARSEGUID_OFFSET UNITYSDK_OFFSET(0x15C6DFC0)
-#define SYSTEM_GUID_TRYPARSE_OFFSET UNITYSDK_OFFSET(0x15C6E820)
-#define SYSTEM_GUID__CCTOR_OFFSET UNITYSDK_OFFSET(0x15C71A40)
-#define SYSTEM_GUID__CTOR_1_OFFSET UNITYSDK_OFFSET(0x2009430)
-#define SYSTEM_GUID__CTOR_2_OFFSET UNITYSDK_OFFSET(0x20094A0)
-#define SYSTEM_GUID__CTOR_3_OFFSET UNITYSDK_OFFSET(0x2009430)
-#define SYSTEM_GUID__CTOR_4_OFFSET UNITYSDK_OFFSET(0x20094B0)
-#define SYSTEM_GUID__CTOR_OFFSET UNITYSDK_OFFSET(0x2009420)
+#define SYSTEM_GUID_COMPARETO_1_OFFSET UNITYSDK_OFFSET(0x8A1690)
+#define SYSTEM_GUID_COMPARETO_OFFSET UNITYSDK_OFFSET(0x8A1680)
+#define SYSTEM_GUID_EATALLWHITESPACE_OFFSET UNITYSDK_OFFSET(0x1965CC50)
+#define SYSTEM_GUID_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x8A1600)
+#define SYSTEM_GUID_EQUALS_OFFSET UNITYSDK_OFFSET(0x8A1580)
+#define SYSTEM_GUID_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x8A1550)
+#define SYSTEM_GUID_GETRESULT_OFFSET UNITYSDK_OFFSET(0x8A1670)
+#define SYSTEM_GUID_HEXSTOCHARS_1_OFFSET UNITYSDK_OFFSET(0x1965E290)
+#define SYSTEM_GUID_HEXSTOCHARS_OFFSET UNITYSDK_OFFSET(0x1965E210)
+#define SYSTEM_GUID_HEXTOCHAR_OFFSET UNITYSDK_OFFSET(0x1965E200)
+#define SYSTEM_GUID_ISHEXPREFIX_OFFSET UNITYSDK_OFFSET(0x1965CD60)
+#define SYSTEM_GUID_NEWGUID_OFFSET UNITYSDK_OFFSET(0x1965E350)
+#define SYSTEM_GUID_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x1965E110)
+#define SYSTEM_GUID_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x1965E180)
+#define SYSTEM_GUID_PARSE_OFFSET UNITYSDK_OFFSET(0x1965B9E0)
+#define SYSTEM_GUID_STRINGTOINT_1_OFFSET UNITYSDK_OFFSET(0x1965CED0)
+#define SYSTEM_GUID_STRINGTOINT_2_OFFSET UNITYSDK_OFFSET(0x1965CF20)
+#define SYSTEM_GUID_STRINGTOINT_OFFSET UNITYSDK_OFFSET(0x1965CE40)
+#define SYSTEM_GUID_STRINGTOLONG_1_OFFSET UNITYSDK_OFFSET(0x1965D0C0)
+#define SYSTEM_GUID_STRINGTOLONG_OFFSET UNITYSDK_OFFSET(0x1965CEC0)
+#define SYSTEM_GUID_STRINGTOSHORT_1_OFFSET UNITYSDK_OFFSET(0x1965CEE0)
+#define SYSTEM_GUID_STRINGTOSHORT_OFFSET UNITYSDK_OFFSET(0x1965CE70)
+#define SYSTEM_GUID_TOBYTEARRAY_OFFSET UNITYSDK_OFFSET(0x8A1530)
+#define SYSTEM_GUID_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x8A1740)
+#define SYSTEM_GUID_TOSTRING_2_OFFSET UNITYSDK_OFFSET(0x8A1740)
+#define SYSTEM_GUID_TOSTRING_OFFSET UNITYSDK_OFFSET(0x8A1540)
+#define SYSTEM_GUID_TRYPARSEGUIDWITHDASHES_OFFSET UNITYSDK_OFFSET(0x1965BAF0)
+#define SYSTEM_GUID_TRYPARSEGUIDWITHHEXPREFIX_OFFSET UNITYSDK_OFFSET(0x1965BFA0)
+#define SYSTEM_GUID_TRYPARSEGUIDWITHNOSTYLE_OFFSET UNITYSDK_OFFSET(0x1965C880)
+#define SYSTEM_GUID_TRYPARSEGUID_OFFSET UNITYSDK_OFFSET(0x1965B4E0)
+#define SYSTEM_GUID_TRYPARSE_OFFSET UNITYSDK_OFFSET(0x1965BA90)
+#define SYSTEM_GUID__CCTOR_OFFSET UNITYSDK_OFFSET(0x1965E4D0)
+#define SYSTEM_GUID__CTOR_1_OFFSET UNITYSDK_OFFSET(0x8A14A0)
+#define SYSTEM_GUID__CTOR_2_OFFSET UNITYSDK_OFFSET(0x8A1510)
+#define SYSTEM_GUID__CTOR_3_OFFSET UNITYSDK_OFFSET(0x8A14A0)
+#define SYSTEM_GUID__CTOR_4_OFFSET UNITYSDK_OFFSET(0x8A1520)
+#define SYSTEM_GUID__CTOR_OFFSET UNITYSDK_OFFSET(0x8A1490)
 
 namespace System
 {
-	inline static constexpr unsigned int Guid_TypeDefinitionIndex = 268;
+	inline static constexpr unsigned int Guid_TypeDefinitionIndex = 255;
 
 	struct alignas(4) Guid
 	{
-		static ::System::Security::Cryptography::RandomNumberGenerator** StaticGet__fastRng()
+		static ::System::Object** StaticGet__rngAccess()
 		{
-			return (::System::Security::Cryptography::RandomNumberGenerator**)Il2CppClass::FromTypeDefinitionIndex(Guid_TypeDefinitionIndex)->GetStaticField(0x3340);
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(Guid_TypeDefinitionIndex)->GetStaticField(0x5B0);
 		}
 		static ::System::Security::Cryptography::RandomNumberGenerator** StaticGet__rng()
 		{
-			return (::System::Security::Cryptography::RandomNumberGenerator**)Il2CppClass::FromTypeDefinitionIndex(Guid_TypeDefinitionIndex)->GetStaticField(0x3348);
-		}
-		static ::System::Object** StaticGet__rngAccess()
-		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(Guid_TypeDefinitionIndex)->GetStaticField(0x3350);
+			return (::System::Security::Cryptography::RandomNumberGenerator**)Il2CppClass::FromTypeDefinitionIndex(Guid_TypeDefinitionIndex)->GetStaticField(0x5B8);
 		}
 		static ::System::Guid* StaticGet_Empty()
 		{
-			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(Guid_TypeDefinitionIndex)->GetStaticField(0xD80);
+			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(Guid_TypeDefinitionIndex)->GetStaticField(0x100);
 		}
 		::System::Int32 _a; // 0x10
 		::System::Int16 _b; // 0x14
@@ -125,16 +116,6 @@ namespace System
 			return ((::System::Boolean(*)(::System::String*, ::System::Guid&))((::PBYTE)hIl2Cpp + SYSTEM_GUID_TRYPARSE_OFFSET))(input, result);
 		}
 
-		static ::System::Guid ParseExact(::System::String* input, ::System::String* format)
-		{
-			return ((::System::Guid(*)(::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_GUID_PARSEEXACT_OFFSET))(input, format);
-		}
-
-		static ::System::Boolean TryParseExact(::System::String* input, ::System::String* format, ::System::Guid& result)
-		{
-			return ((::System::Boolean(*)(::System::String*, ::System::String*, ::System::Guid&))((::PBYTE)hIl2Cpp + SYSTEM_GUID_TRYPARSEEXACT_OFFSET))(input, format, result);
-		}
-
 		/*
 		static ::System::Boolean TryParseGuid(::System::String* g, ::System::Guid_GuidStyles flags, ::System::Guid_GuidResult& result)
 		{
@@ -171,16 +152,9 @@ namespace System
 		*/
 
 		/*
-		static ::System::Boolean StringToShort_1(::System::String* str, ::System::Int32& parsePos, ::System::Int32 requiredLength, ::System::Int32 flags, ::System::Int16& result, ::System::Guid_GuidResult& parseResult)
+		static ::System::Boolean StringToShort_1(::System::String* str, ::System::Int32* parsePos, ::System::Int32 requiredLength, ::System::Int32 flags, ::System::Int16& result, ::System::Guid_GuidResult& parseResult)
 		{
-			return ((::System::Boolean(*)(::System::String*, ::System::Int32&, ::System::Int32, ::System::Int32, ::System::Int16&, ::System::Guid_GuidResult&))((::PBYTE)hIl2Cpp + SYSTEM_GUID_STRINGTOSHORT_1_OFFSET))(str, parsePos, requiredLength, flags, result, parseResult);
-		}
-		*/
-
-		/*
-		static ::System::Boolean StringToShort_2(::System::String* str, ::System::Int32* parsePos, ::System::Int32 requiredLength, ::System::Int32 flags, ::System::Int16& result, ::System::Guid_GuidResult& parseResult)
-		{
-			return ((::System::Boolean(*)(::System::String*, ::System::Int32*, ::System::Int32, ::System::Int32, ::System::Int16&, ::System::Guid_GuidResult&))((::PBYTE)hIl2Cpp + SYSTEM_GUID_STRINGTOSHORT_2_OFFSET))(str, parsePos, requiredLength, flags, result, parseResult);
+			return ((::System::Boolean(*)(::System::String*, ::System::Int32*, ::System::Int32, ::System::Int32, ::System::Int16&, ::System::Guid_GuidResult&))((::PBYTE)hIl2Cpp + SYSTEM_GUID_STRINGTOSHORT_1_OFFSET))(str, parsePos, requiredLength, flags, result, parseResult);
 		}
 		*/
 
@@ -206,23 +180,16 @@ namespace System
 		*/
 
 		/*
-		static ::System::Boolean StringToLong(::System::String* str, ::System::Int32 flags, ::System::Int64& result, ::System::Guid_GuidResult& parseResult)
+		static ::System::Boolean StringToLong(::System::String* str, ::System::Int32& parsePos, ::System::Int32 flags, ::System::Int64& result, ::System::Guid_GuidResult& parseResult)
 		{
-			return ((::System::Boolean(*)(::System::String*, ::System::Int32, ::System::Int64&, ::System::Guid_GuidResult&))((::PBYTE)hIl2Cpp + SYSTEM_GUID_STRINGTOLONG_OFFSET))(str, flags, result, parseResult);
+			return ((::System::Boolean(*)(::System::String*, ::System::Int32&, ::System::Int32, ::System::Int64&, ::System::Guid_GuidResult&))((::PBYTE)hIl2Cpp + SYSTEM_GUID_STRINGTOLONG_OFFSET))(str, parsePos, flags, result, parseResult);
 		}
 		*/
 
 		/*
-		static ::System::Boolean StringToLong_1(::System::String* str, ::System::Int32& parsePos, ::System::Int32 flags, ::System::Int64& result, ::System::Guid_GuidResult& parseResult)
+		static ::System::Boolean StringToLong_1(::System::String* str, ::System::Int32* parsePos, ::System::Int32 flags, ::System::Int64& result, ::System::Guid_GuidResult& parseResult)
 		{
-			return ((::System::Boolean(*)(::System::String*, ::System::Int32&, ::System::Int32, ::System::Int64&, ::System::Guid_GuidResult&))((::PBYTE)hIl2Cpp + SYSTEM_GUID_STRINGTOLONG_1_OFFSET))(str, parsePos, flags, result, parseResult);
-		}
-		*/
-
-		/*
-		static ::System::Boolean StringToLong_2(::System::String* str, ::System::Int32* parsePos, ::System::Int32 flags, ::System::Int64& result, ::System::Guid_GuidResult& parseResult)
-		{
-			return ((::System::Boolean(*)(::System::String*, ::System::Int32*, ::System::Int32, ::System::Int64&, ::System::Guid_GuidResult&))((::PBYTE)hIl2Cpp + SYSTEM_GUID_STRINGTOLONG_2_OFFSET))(str, parsePos, flags, result, parseResult);
+			return ((::System::Boolean(*)(::System::String*, ::System::Int32*, ::System::Int32, ::System::Int64&, ::System::Guid_GuidResult&))((::PBYTE)hIl2Cpp + SYSTEM_GUID_STRINGTOLONG_1_OFFSET))(str, parsePos, flags, result, parseResult);
 		}
 		*/
 
@@ -314,11 +281,6 @@ namespace System
 		static ::System::Guid NewGuid()
 		{
 			return ((::System::Guid(*)())((::PBYTE)hIl2Cpp + SYSTEM_GUID_NEWGUID_OFFSET))();
-		}
-
-		static ::Il2CppArray<::System::Byte>* FastNewGuidArray()
-		{
-			return ((::Il2CppArray<::System::Byte>*(*)())((::PBYTE)hIl2Cpp + SYSTEM_GUID_FASTNEWGUIDARRAY_OFFSET))();
 		}
 	};
 }

@@ -4,24 +4,28 @@
 #include "unitysdk/Cinemachine/CinemachineComponentBase.h"
 #include "unitysdk/Cinemachine/CinemachineCore_Stage.h"
 #include "unitysdk/UnityEngine/LayerMask.h"
+#include "unitysdk/UnityEngine/Quaternion.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
 namespace System { class String; }
 
-#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GETMAXDAMPTIME_OFFSET UNITYSDK_OFFSET(0x11220680)
-#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GETRIGPOSITIONS_OFFSET UNITYSDK_OFFSET(0x11221880)
-#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x112205D0)
-#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GET_STAGE_OFFSET UNITYSDK_OFFSET(0x11220670)
-#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_MUTATECAMERASTATE_OFFSET UNITYSDK_OFFSET(0x112206A0)
-#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x11220540)
-#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_POSITIONCAMERA_OFFSET UNITYSDK_OFFSET(0x112208C0)
-#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_PULLTOWARDSSTARTONCOLLISION_OFFSET UNITYSDK_OFFSET(0x11221C40)
-#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_RESET_OFFSET UNITYSDK_OFFSET(0x112205A0)
-#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW__CTOR_OFFSET UNITYSDK_OFFSET(0x11221DA0)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GETHEADING_OFFSET UNITYSDK_OFFSET(0x1AB955B0)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GETMAXDAMPTIME_OFFSET UNITYSDK_OFFSET(0x1AB943F0)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GETRAWRIGPOSITIONS_OFFSET UNITYSDK_OFFSET(0x1AB95690)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GETRIGPOSITIONS_OFFSET UNITYSDK_OFFSET(0x1AB95C70)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x1AB94260)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GET_STAGE_OFFSET UNITYSDK_OFFSET(0x1AB943E0)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_MUTATECAMERASTATE_OFFSET UNITYSDK_OFFSET(0x1AB94410)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1AB94230)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x1AB941A0)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_POSITIONCAMERA_OFFSET UNITYSDK_OFFSET(0x1AB94710)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_RESET_OFFSET UNITYSDK_OFFSET(0x1AB94200)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_RESOLVECOLLISIONS_OFFSET UNITYSDK_OFFSET(0x1AB959E0)
+#define CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB95FD0)
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int Cinemachine3rdPersonFollow_TypeDefinitionIndex = 29936;
+	inline static constexpr unsigned int Cinemachine3rdPersonFollow_TypeDefinitionIndex = 31028;
 
 	class Cinemachine3rdPersonFollow : public ::Cinemachine::CinemachineComponentBase
 	{
@@ -34,8 +38,8 @@ namespace Cinemachine
 		::UnityEngine::LayerMask CameraCollisionFilter; // 0x74
 		::System::String* IgnoreTag; // 0x78
 		::System::Single CameraRadius; // 0x80
-		::UnityEngine::Vector3 PreviousFollowTargetPosition; // 0x84
-		::System::Single PreviousHeadingAngle; // 0x90
+		::UnityEngine::Vector3 m_PreviousFollowTargetPosition; // 0x84
+		::UnityEngine::Vector3 m_DampingCorrection; // 0x90
 
 		::System::Void _ctor()
 		{
@@ -50,6 +54,11 @@ namespace Cinemachine
 		::System::Void Reset()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_RESET_OFFSET))(this);
+		}
+
+		::System::Void OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_ONDESTROY_OFFSET))(this);
 		}
 
 		::System::Boolean get_IsValid()
@@ -82,9 +91,19 @@ namespace Cinemachine
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3&, ::UnityEngine::Vector3&, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GETRIGPOSITIONS_OFFSET))(this, root, shoulder, hand);
 		}
 
-		::UnityEngine::Vector3 PullTowardsStartOnCollision(::UnityEngine::Vector3& rayStart, ::UnityEngine::Vector3& rayEnd, ::UnityEngine::LayerMask& filter, ::System::Single radius)
+		::UnityEngine::Quaternion GetHeading(::UnityEngine::Vector3 targetForward, ::UnityEngine::Vector3 up)
 		{
-			return ((::UnityEngine::Vector3(*)(::PVOID, ::UnityEngine::Vector3&, ::UnityEngine::Vector3&, ::UnityEngine::LayerMask&, ::System::Single))((::PBYTE)hIl2Cpp + CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_PULLTOWARDSSTARTONCOLLISION_OFFSET))(this, rayStart, rayEnd, filter, radius);
+			return ((::UnityEngine::Quaternion(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GETHEADING_OFFSET))(this, targetForward, up);
+		}
+
+		::System::Void GetRawRigPositions(::UnityEngine::Vector3 root, ::UnityEngine::Quaternion targetRot, ::UnityEngine::Quaternion heading, ::UnityEngine::Vector3& shoulder, ::UnityEngine::Vector3& hand)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::UnityEngine::Quaternion, ::UnityEngine::Vector3&, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_GETRAWRIGPOSITIONS_OFFSET))(this, root, targetRot, heading, shoulder, hand);
+		}
+
+		::UnityEngine::Vector3 ResolveCollisions(::UnityEngine::Vector3 root, ::UnityEngine::Vector3 tip, ::System::Single cameraRadius)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::System::Single))((::PBYTE)hIl2Cpp + CINEMACHINE_CINEMACHINE3RDPERSONFOLLOW_RESOLVECOLLISIONS_OFFSET))(this, root, tip, cameraRadius);
 		}
 	};
 }

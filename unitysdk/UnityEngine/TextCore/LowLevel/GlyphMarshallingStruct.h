@@ -4,13 +4,9 @@
 #include "unitysdk/UnityEngine/TextCore/GlyphMetrics.h"
 #include "unitysdk/UnityEngine/TextCore/GlyphRect.h"
 
-namespace UnityEngine::TextCore { class Glyph; }
-
-#define UNITYENGINE_TEXTCORE_LOWLEVEL_GLYPHMARSHALLINGSTRUCT__CTOR_OFFSET UNITYSDK_OFFSET(0x2058B60)
-
 namespace UnityEngine::TextCore::LowLevel
 {
-	inline static constexpr unsigned int GlyphMarshallingStruct_TypeDefinitionIndex = 5440;
+	inline static constexpr unsigned int GlyphMarshallingStruct_TypeDefinitionIndex = 29473;
 
 	struct alignas(4) GlyphMarshallingStruct
 	{
@@ -19,10 +15,5 @@ namespace UnityEngine::TextCore::LowLevel
 		::UnityEngine::TextCore::GlyphRect glyphRect; // 0x28
 		::System::Single scale; // 0x38
 		::System::Int32 atlasIndex; // 0x3C
-
-		::System::Void _ctor(::UnityEngine::TextCore::Glyph* glyph)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::TextCore::Glyph*))((::PBYTE)hIl2Cpp + UNITYENGINE_TEXTCORE_LOWLEVEL_GLYPHMARSHALLINGSTRUCT__CTOR_OFFSET))(this, glyph);
-		}
 	};
 }

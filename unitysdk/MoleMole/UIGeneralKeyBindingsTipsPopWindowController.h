@@ -1,0 +1,174 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_543B6B88E17BAFE0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/Enum_3_A019F766F8C74696.h"
+#include "unitysdk/Enum_3_EB2D507B2CF7B110.h"
+#include "unitysdk/MoleMole/LogicButtonInputType.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_029003AFE5A42E47.h"
+#include "unitysdk/UnityEngine/InputSystem/LowLevel/GamepadButton.h"
+
+class Class_2_809B068491AD1EEA_3;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIKeyBindingContext; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_APPLYKEYBINDING_OFFSET UNITYSDK_OFFSET(0x8C0C230)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_CHECKDPADCOMBOCONFLICT_OFFSET UNITYSDK_OFFSET(0x8C0CAC0)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_DOTRYKEYBINDING_OFFSET UNITYSDK_OFFSET(0x8C0B520)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_GETDPADCONFLICTTEXTPARAM_OFFSET UNITYSDK_OFFSET(0x8C0C840)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0x8C08E20)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x8C08E10)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0x8C08FD0)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_ONBEFOREUPDATE_OFFSET UNITYSDK_OFFSET(0x8C096A0)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C09460)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8C09500)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C09570)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8C08E30)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_POSTCHECKGAMEPADCOMBOKEYBINDINGVALID_OFFSET UNITYSDK_OFFSET(0x8C0BC60)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_TICKKEYBINDING_OFFSET UNITYSDK_OFFSET(0x8C09F40)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_TRYKEYBINDING_OFFSET UNITYSDK_OFFSET(0x8C0AF60)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_UNBINDKEY_OFFSET UNITYSDK_OFFSET(0x8C09A80)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8C0CD50)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER__UNBINDKEY_B__11_0_OFFSET UNITYSDK_OFFSET(0x8C0CD60)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER__UNBINDKEY_B__11_1_OFFSET UNITYSDK_OFFSET(0x8C0D180)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C0D190)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8C0D200)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C0D210)
+#define MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8C0D220)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralKeyBindingsTipsPopWindowController_TypeDefinitionIndex = 47226;
+
+	class UIGeneralKeyBindingsTipsPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_809B068491AD1EEA_3* _view; // 0x2F8
+		::MoleMole::UIKeyBindingContext* _context; // 0x300
+		::Enum_3_A019F766F8C74696 _inputDevice; // 0x308
+		::MoleMole::LogicButtonInputType _logicButtonType; // 0x30C
+		::Enum_3_543B6B88E17BAFE0 _settingContentType; // 0x310
+		::System::Boolean _isListenInput; // 0x314
+		::System::Boolean _isEnableUpdate; // 0x315
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnBeforeUpdate(::System::Single deltaTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_ONBEFOREUPDATE_OFFSET))(this, deltaTime);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void UnbindKey()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_UNBINDKEY_OFFSET))(this);
+		}
+
+		::System::Void TickKeyBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_TICKKEYBINDING_OFFSET))(this);
+		}
+
+		::System::Void TryKeyBinding(::System::Int32 keycode)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_TRYKEYBINDING_OFFSET))(this, keycode);
+		}
+
+		::System::Void DoTryKeyBinding(::System::Collections::Generic::List_1<::Struct_2_029003AFE5A42E47>* allInfos)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Struct_2_029003AFE5A42E47>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_DOTRYKEYBINDING_OFFSET))(this, allInfos);
+		}
+
+		::System::Boolean GetDPadConflictTextParam(::Enum_3_EB2D507B2CF7B110 checkComboKeyBindingValidType, ::UnityEngine::InputSystem::LowLevel::GamepadButton conflictDpadKeyCode, ::MoleMole::LogicButtonInputType conflictDpadLogicButton, ::System::String*& param0, ::System::String*& param1, ::System::String*& param2, ::System::String*& param3)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_EB2D507B2CF7B110, ::UnityEngine::InputSystem::LowLevel::GamepadButton, ::MoleMole::LogicButtonInputType, ::System::String*&, ::System::String*&, ::System::String*&, ::System::String*&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_GETDPADCONFLICTTEXTPARAM_OFFSET))(this, checkComboKeyBindingValidType, conflictDpadKeyCode, conflictDpadLogicButton, param0, param1, param2, param3);
+		}
+
+		::Enum_3_EB2D507B2CF7B110 PostCheckGamepadComboKeyBindingValid(::System::Collections::Generic::List_1<::Struct_2_029003AFE5A42E47>* allInfos, ::UnityEngine::InputSystem::LowLevel::GamepadButton& conflictDpadKeyCode, ::MoleMole::LogicButtonInputType& conflictDpadLogicButton)
+		{
+			return ((::Enum_3_EB2D507B2CF7B110(*)(::PVOID, ::System::Collections::Generic::List_1<::Struct_2_029003AFE5A42E47>*, ::UnityEngine::InputSystem::LowLevel::GamepadButton&, ::MoleMole::LogicButtonInputType&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_POSTCHECKGAMEPADCOMBOKEYBINDINGVALID_OFFSET))(this, allInfos, conflictDpadKeyCode, conflictDpadLogicButton);
+		}
+
+		::System::Boolean CheckDPadComboConflict(::UnityEngine::InputSystem::LowLevel::GamepadButton targetCode, ::MoleMole::LogicButtonInputType checkType, ::System::Collections::Generic::List_1<::Struct_2_029003AFE5A42E47>* allInfos)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::InputSystem::LowLevel::GamepadButton, ::MoleMole::LogicButtonInputType, ::System::Collections::Generic::List_1<::Struct_2_029003AFE5A42E47>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_CHECKDPADCOMBOCONFLICT_OFFSET))(this, targetCode, checkType, allInfos);
+		}
+
+		::System::Void ApplyKeyBinding(::System::Collections::Generic::List_1<::Struct_2_029003AFE5A42E47>* keyBindingInfoList)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Struct_2_029003AFE5A42E47>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER_APPLYKEYBINDING_OFFSET))(this, keyBindingInfoList);
+		}
+
+		::System::Void _UnbindKey_b__11_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER__UNBINDKEY_B__11_0_OFFSET))(this);
+		}
+
+		::System::Void _UnbindKey_b__11_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER__UNBINDKEY_B__11_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALKEYBINDINGSTIPSPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

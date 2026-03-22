@@ -1,15 +1,23 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/HollowChessboard/HollowCell.h"
 #include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/Color.h"
 
-#define CLASS_1_C4C2ACF3D9655BEA_3__CTOR_OFFSET UNITYSDK_OFFSET(0x16110990)
+class Class_5_AF65C3A968E836D2;
+namespace System { class String; }
+namespace System { template <typename T1, typename T2, typename T3> class Action_3; }
+namespace System { template <typename T1, typename T2> class Func_2; }
+namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 
-inline static constexpr unsigned int Class_1_C4C2ACF3D9655BEA_3_TypeDefinitionIndex = 31455;
+#define CLASS_1_C4C2ACF3D9655BEA_3__CTOR_OFFSET UNITYSDK_OFFSET(0x88DD500)
+
+inline static constexpr unsigned int Class_1_C4C2ACF3D9655BEA_3_TypeDefinitionIndex = 73348;
 
 class Class_1_C4C2ACF3D9655BEA_3 : public ::System::Object
 {
 public:
-	::System::Single Field_1_0; // 0x10
+	// static const ::System::Single Field_1_0; // 0x0
 
 	::System::Void _ctor()
 	{

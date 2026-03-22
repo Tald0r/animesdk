@@ -1,0 +1,88 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FluffyUnderware/Curvy/Generator/SplineInputModuleBase.h"
+
+namespace FluffyUnderware::Curvy { class CurvySpline; }
+namespace FluffyUnderware::Curvy::Generator { class CGData; }
+namespace FluffyUnderware::Curvy::Generator { class CGDataRequestParameter; }
+namespace FluffyUnderware::Curvy::Generator { class CGModuleInputSlot; }
+namespace FluffyUnderware::Curvy::Generator { class CGModuleOutputSlot; }
+
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_GET_FREEFORM_OFFSET UNITYSDK_OFFSET(0x1AEDFE60)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_GET_INPUTSPLINE_OFFSET UNITYSDK_OFFSET(0x1AEE04A0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_GET_SHAPE_OFFSET UNITYSDK_OFFSET(0x1AEDFBB0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_GET_SUPPORTSIPE_OFFSET UNITYSDK_OFFSET(0x1AEDFE50)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_ONSLOTDATAREQUEST_OFFSET UNITYSDK_OFFSET(0x1AEE0280)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_ONSPLINEASSIGNED_OFFSET UNITYSDK_OFFSET(0x1AEDFD90)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_REMOVEMANAGEDSHAPE_OFFSET UNITYSDK_OFFSET(0x1AEE03D0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_SET_FREEFORM_OFFSET UNITYSDK_OFFSET(0x1AEE0010)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_SET_INPUTSPLINE_OFFSET UNITYSDK_OFFSET(0x1AEE04B0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_SET_SHAPE_OFFSET UNITYSDK_OFFSET(0x1AEDFBC0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEE04C0)
+
+namespace FluffyUnderware::Curvy::Generator::Modules
+{
+	inline static constexpr unsigned int InputSplineShape_TypeDefinitionIndex = 35856;
+
+	class InputSplineShape : public ::FluffyUnderware::Curvy::Generator::SplineInputModuleBase
+	{
+	public:
+		::FluffyUnderware::Curvy::Generator::CGModuleOutputSlot* OutShape; // 0xD0
+		::FluffyUnderware::Curvy::CurvySpline* m_Shape; // 0xD8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE__CTOR_OFFSET))(this);
+		}
+
+		::FluffyUnderware::Curvy::CurvySpline* get_Shape()
+		{
+			return ((::FluffyUnderware::Curvy::CurvySpline*(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_GET_SHAPE_OFFSET))(this);
+		}
+
+		::System::Void set_Shape(::FluffyUnderware::Curvy::CurvySpline* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::FluffyUnderware::Curvy::CurvySpline*))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_SET_SHAPE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_SupportsIPE()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_GET_SUPPORTSIPE_OFFSET))(this);
+		}
+
+		::System::Boolean get_FreeForm()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_GET_FREEFORM_OFFSET))(this);
+		}
+
+		::System::Void set_FreeForm(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_SET_FREEFORM_OFFSET))(this, value);
+		}
+
+		::Il2CppArray<::FluffyUnderware::Curvy::Generator::CGData*>* OnSlotDataRequest(::FluffyUnderware::Curvy::Generator::CGModuleInputSlot* requestedBy, ::FluffyUnderware::Curvy::Generator::CGModuleOutputSlot* requestedSlot, ::Il2CppArray<::FluffyUnderware::Curvy::Generator::CGDataRequestParameter*>* requests)
+		{
+			return ((::Il2CppArray<::FluffyUnderware::Curvy::Generator::CGData*>*(*)(::PVOID, ::FluffyUnderware::Curvy::Generator::CGModuleInputSlot*, ::FluffyUnderware::Curvy::Generator::CGModuleOutputSlot*, ::Il2CppArray<::FluffyUnderware::Curvy::Generator::CGDataRequestParameter*>*))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_ONSLOTDATAREQUEST_OFFSET))(this, requestedBy, requestedSlot, requests);
+		}
+
+		::System::Void RemoveManagedShape()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_REMOVEMANAGEDSHAPE_OFFSET))(this);
+		}
+
+		::FluffyUnderware::Curvy::CurvySpline* get_InputSpline()
+		{
+			return ((::FluffyUnderware::Curvy::CurvySpline*(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_GET_INPUTSPLINE_OFFSET))(this);
+		}
+
+		::System::Void set_InputSpline(::FluffyUnderware::Curvy::CurvySpline* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::FluffyUnderware::Curvy::CurvySpline*))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_SET_INPUTSPLINE_OFFSET))(this, value);
+		}
+
+		::System::Void OnSplineAssigned()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_INPUTSPLINESHAPE_ONSPLINEASSIGNED_OFFSET))(this);
+		}
+	};
+}

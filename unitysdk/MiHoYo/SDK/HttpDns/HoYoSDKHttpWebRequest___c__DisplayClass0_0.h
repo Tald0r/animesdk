@@ -7,12 +7,12 @@ namespace MiHoYo::SDK { class HoYoSDKNetworkNative_HttpResponse; }
 namespace MiHoYo::SDK::HttpDns { class HoYoSDKHttpWebRequest; }
 namespace MiHoYo::SDK::HttpDns { class HoYoSDKHttpWebResponse; }
 
-#define MIHOYO_SDK_HTTPDNS_HOYOSDKHTTPWEBREQUEST___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x81A58E0)
-#define MIHOYO_SDK_HTTPDNS_HOYOSDKHTTPWEBREQUEST___C__DISPLAYCLASS0_0__GETRESPONSE_B__0_OFFSET UNITYSDK_OFFSET(0x81A6130)
+#define MIHOYO_SDK_HTTPDNS_HOYOSDKHTTPWEBREQUEST___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x17EED870)
+#define MIHOYO_SDK_HTTPDNS_HOYOSDKHTTPWEBREQUEST___C__DISPLAYCLASS0_0__GETRESPONSE_B__0_OFFSET UNITYSDK_OFFSET(0x17EEE110)
 
 namespace MiHoYo::SDK::HttpDns
 {
-	inline static constexpr unsigned int HoYoSDKHttpWebRequest___c__DisplayClass0_0_TypeDefinitionIndex = 36450;
+	inline static constexpr unsigned int HoYoSDKHttpWebRequest___c__DisplayClass0_0_TypeDefinitionIndex = 33933;
 
 	class HoYoSDKHttpWebRequest___c__DisplayClass0_0 : public ::System::Object
 	{

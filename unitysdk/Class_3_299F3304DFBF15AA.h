@@ -1,0 +1,75 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_6952D5479ECBADD3.h"
+#include "unitysdk/Enum_3_71AA90D596A09AC8.h"
+#include "unitysdk/Enum_3_D716341FB3B6F6CC.h"
+
+class Class_0_16E4307DCC419505_71;
+class Class_1_E591DF54310AABF5;
+class Class_2_75849929E643D130;
+class Class_2_785FDC7D0DA58280;
+class Class_2_BA0FF11A88971F97;
+namespace System { class String; }
+namespace System { class Type; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define CLASS_3_299F3304DFBF15AA_METHOD_3_608993CB6D13EE32_OFFSET UNITYSDK_OFFSET(0x1A1643E0)
+#define CLASS_3_299F3304DFBF15AA_METHOD_3_62D75ADFFEE4BD8B_OFFSET UNITYSDK_OFFSET(0x1A163D00)
+#define CLASS_3_299F3304DFBF15AA_METHOD_3_7DFCEB9CDFA83D02_OFFSET UNITYSDK_OFFSET(0x1A163DF0)
+#define CLASS_3_299F3304DFBF15AA_METHOD_3_851E97FEBE6F98A1_1_OFFSET UNITYSDK_OFFSET(0x1A164330)
+#define CLASS_3_299F3304DFBF15AA_METHOD_3_851E97FEBE6F98A1_OFFSET UNITYSDK_OFFSET(0x1A164280)
+#define CLASS_3_299F3304DFBF15AA_METHOD_3_98511BB23D2E3748_OFFSET UNITYSDK_OFFSET(0x1A164460)
+#define CLASS_3_299F3304DFBF15AA_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x1A1644B0)
+#define CLASS_3_299F3304DFBF15AA_METHOD_3_CE598ADC84F228C9_OFFSET UNITYSDK_OFFSET(0x1A164500)
+#define CLASS_3_299F3304DFBF15AA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1644F0)
+
+inline static constexpr unsigned int Class_3_299F3304DFBF15AA_TypeDefinitionIndex = 34259;
+
+class Class_3_299F3304DFBF15AA : public ::Class_2_6952D5479ECBADD3
+{
+public:
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_299F3304DFBF15AA__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_3_62D75ADFFEE4BD8B(::Class_1_E591DF54310AABF5* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_E591DF54310AABF5*))((::PBYTE)hIl2Cpp + CLASS_3_299F3304DFBF15AA_METHOD_3_62D75ADFFEE4BD8B_OFFSET))(this, a1);
+	}
+
+	::Class_2_785FDC7D0DA58280* Method_3_7DFCEB9CDFA83D02(::System::UInt64 a1, ::Class_1_E591DF54310AABF5* a2, ::System::String* a3, ::System::String* a4)
+	{
+		return ((::Class_2_785FDC7D0DA58280*(*)(::PVOID, ::System::UInt64, ::Class_1_E591DF54310AABF5*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_299F3304DFBF15AA_METHOD_3_7DFCEB9CDFA83D02_OFFSET))(this, a1, a2, a3, a4);
+	}
+
+	::System::Collections::Generic::List_1<::Class_2_75849929E643D130*>* Method_3_851E97FEBE6F98A1()
+	{
+		return ((::System::Collections::Generic::List_1<::Class_2_75849929E643D130*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_299F3304DFBF15AA_METHOD_3_851E97FEBE6F98A1_OFFSET))(this);
+	}
+
+	::System::Collections::Generic::List_1<::Class_2_75849929E643D130*>* Method_3_851E97FEBE6F98A1_1()
+	{
+		return ((::System::Collections::Generic::List_1<::Class_2_75849929E643D130*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_299F3304DFBF15AA_METHOD_3_851E97FEBE6F98A1_1_OFFSET))(this);
+	}
+
+	::System::Collections::Generic::List_1<::System::Type*>* Method_3_608993CB6D13EE32()
+	{
+		return ((::System::Collections::Generic::List_1<::System::Type*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_299F3304DFBF15AA_METHOD_3_608993CB6D13EE32_OFFSET))(this);
+	}
+
+	::System::Void Method_3_98511BB23D2E3748(::Class_2_785FDC7D0DA58280* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_785FDC7D0DA58280*))((::PBYTE)hIl2Cpp + CLASS_3_299F3304DFBF15AA_METHOD_3_98511BB23D2E3748_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_299F3304DFBF15AA_METHOD_3_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::Class_2_BA0FF11A88971F97* Method_3_CE598ADC84F228C9(::Class_0_16E4307DCC419505_71* a1, ::Enum_3_D716341FB3B6F6CC a2, ::System::UInt32 a3, ::Enum_3_71AA90D596A09AC8 a4, ::System::UInt32 a5, ::System::Int32 a6)
+	{
+		return ((::Class_2_BA0FF11A88971F97*(*)(::PVOID, ::Class_0_16E4307DCC419505_71*, ::Enum_3_D716341FB3B6F6CC, ::System::UInt32, ::Enum_3_71AA90D596A09AC8, ::System::UInt32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_3_299F3304DFBF15AA_METHOD_3_CE598ADC84F228C9_OFFSET))(this, a1, a2, a3, a4, a5, a6);
+	}
+};

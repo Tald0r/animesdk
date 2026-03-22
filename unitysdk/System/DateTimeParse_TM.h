@@ -3,7 +3,7 @@
 
 namespace System
 {
-	inline static constexpr unsigned int DateTimeParse_TM_TypeDefinitionIndex = 256;
+	inline static constexpr unsigned int DateTimeParse_TM_TypeDefinitionIndex = 243;
 
 	enum class DateTimeParse_TM : ::System::Int32
 	{

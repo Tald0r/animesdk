@@ -1,0 +1,60 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace Foundation::Coroutine { class CoroutineManager; }
+namespace System { class Action; }
+namespace UnityEngine { class GameObject; }
+
+#define FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1ABC2D00)
+#define FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_SINGLE__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1ABC2E40)
+#define FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1ABC2EA0)
+#define FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x1ABC2E50)
+#define FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1ABC2CF0)
+#define FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABC2CE0)
+
+namespace Foundation::Coroutine
+{
+	inline static constexpr unsigned int CoroutineManager___DelayedCall_d__138_TypeDefinitionIndex = 7888;
+
+	class CoroutineManager___DelayedCall_d__138 : public ::System::Object
+	{
+	public:
+		::UnityEngine::GameObject* cancelWith; // 0x10
+		::Foundation::Coroutine::CoroutineManager* __4__this; // 0x18
+		::System::Action* action; // 0x20
+		::System::Single __2__current; // 0x28
+		::System::Single delay; // 0x2C
+		::System::Int32 __1__state; // 0x30
+
+		::System::Void _ctor(::System::Int32 __1__state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138__CTOR_OFFSET))(this, __1__state);
+		}
+
+		::System::Void System_IDisposable_Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET))(this);
+		}
+
+		::System::Boolean MoveNext()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138_MOVENEXT_OFFSET))(this);
+		}
+
+		::System::Single System_Collections_Generic_IEnumerator_System_Single__get_Current()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_SINGLE__GET_CURRENT_OFFSET))(this);
+		}
+
+		::System::Void System_Collections_IEnumerator_Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET))(this);
+		}
+
+		::System::Object* System_Collections_IEnumerator_get_Current()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + FOUNDATION_COROUTINE_COROUTINEMANAGER___DELAYEDCALL_D__138_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,209 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_2140EBF640BC9674.h"
+
+class Class_0_16E4307DCC419505_373;
+class Class_1_8289F2785D9AA990;
+class Class_2_9760011945436DFC_4;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralNewsBubbleRowWidgetController; }
+namespace MoleMole { class UIInLevelCountDownUIChildWindowController_UIInLevelCountDownUIContext; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
+
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_CLEARTIMEOUTCALLBACK_OFFSET UNITYSDK_OFFSET(0xA628E10)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_CLOSETIMER_OFFSET UNITYSDK_OFFSET(0xA629600)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_COUNTDOWNUI_CHANGETIMEWIDGET_OFFSET UNITYSDK_OFFSET(0xA629910)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xA6287A0)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA6287B0)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA628AD0)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA628B40)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA628850)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA6288C0)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_OPENTIMER_OFFSET UNITYSDK_OFFSET(0xA629300)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_PAUSE_OFFSET UNITYSDK_OFFSET(0xA629840)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_SETTIMEOUTCALLBACK_OFFSET UNITYSDK_OFFSET(0xA628DA0)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_SHOWBONUSTIME_OFFSET UNITYSDK_OFFSET(0xA629A80)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_TICKTIMER_OFFSET UNITYSDK_OFFSET(0xA628C50)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_UPDATEFIXEDTEXT_OFFSET UNITYSDK_OFFSET(0xA629780)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_UPDATETIMER_OFFSET UNITYSDK_OFFSET(0xA629220)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xA628BD0)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA629C90)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER__EASEADDTIME_OFFSET UNITYSDK_OFFSET(0xA6299D0)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER__GETTIMER_OFFSET UNITYSDK_OFFSET(0xA628E80)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER__TRYCORETIMER_OFFSET UNITYSDK_OFFSET(0xA629130)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA629D90)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA629E00)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA629E10)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA629E20)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA629E30)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___GETTIMER_B__15_0_OFFSET UNITYSDK_OFFSET(0xA629CD0)
+#define MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___GETTIMER_B__15_1_OFFSET UNITYSDK_OFFSET(0xA629D30)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelCountDownUIChildWindowController_TypeDefinitionIndex = 70555;
+
+	class UIInLevelCountDownUIChildWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Single BONUS_EASE_DURATION; // 0x0
+		::Class_0_16E4307DCC419505_373* _rowContainer; // 0x2F8
+		::MoleMole::UIInLevelCountDownUIChildWindowController_UIInLevelCountDownUIContext* _curUiCtx; // 0x300
+		::MoleMole::UIGeneralNewsBubbleRowWidgetController* tipController; // 0x308
+		::System::Action_1<::Class_1_8289F2785D9AA990*>* _timeoutCallback; // 0x310
+		::Foundation::Coroutine::CoroutineHandle _bonusEaseHandle; // 0x318
+		::Class_2_9760011945436DFC_4* _view; // 0x320
+		::Class_1_8289F2785D9AA990* timer; // 0x328
+		::System::String* currentCustomKey; // 0x330
+		::System::Single countDownSenconds; // 0x338
+		::System::Boolean timerStart; // 0x33C
+		::System::Boolean ignoreTimeScale; // 0x33D
+		::System::Boolean pause; // 0x33E
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void SetTimeoutCallback(::System::Action_1<::Class_1_8289F2785D9AA990*>* onTimeOutCallback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::Class_1_8289F2785D9AA990*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_SETTIMEOUTCALLBACK_OFFSET))(this, onTimeOutCallback);
+		}
+
+		::System::Void ClearTimeoutCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_CLEARTIMEOUTCALLBACK_OFFSET))(this);
+		}
+
+		::Class_1_8289F2785D9AA990* _GetTimer(::System::Boolean onlyUnique)
+		{
+			return ((::Class_1_8289F2785D9AA990*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER__GETTIMER_OFFSET))(this, onlyUnique);
+		}
+
+		::System::Boolean _TryCoreTimer()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER__TRYCORETIMER_OFFSET))(this);
+		}
+
+		::System::Void TickTimer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_TICKTIMER_OFFSET))(this);
+		}
+
+		::System::Void UpdateTimer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_UPDATETIMER_OFFSET))(this);
+		}
+
+		::System::Void OpenTimer(::System::Boolean ignoreTimeScale, ::System::String* linkTimerCustomKey)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_OPENTIMER_OFFSET))(this, ignoreTimeScale, linkTimerCustomKey);
+		}
+
+		::System::Void CloseTimer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_CLOSETIMER_OFFSET))(this);
+		}
+
+		::System::Void UpdateFixedText(::System::String* text)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_UPDATEFIXEDTEXT_OFFSET))(this, text);
+		}
+
+		::System::Void Pause(::System::Boolean pauseState)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_PAUSE_OFFSET))(this, pauseState);
+		}
+
+		::System::Void CountDownUI_ChangeTimeWidget(::Struct_2_2140EBF640BC9674 data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_2140EBF640BC9674))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_COUNTDOWNUI_CHANGETIMEWIDGET_OFFSET))(this, data);
+		}
+
+		static ::System::Collections::Generic::IEnumerator_1<::System::Single>* _EaseAddTime(::Class_1_8289F2785D9AA990* timer, ::System::Single tBonus)
+		{
+			return ((::System::Collections::Generic::IEnumerator_1<::System::Single>*(*)(::Class_1_8289F2785D9AA990*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER__EASEADDTIME_OFFSET))(timer, tBonus);
+		}
+
+		::System::Void ShowBonusTime(::System::Single bonusTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER_SHOWBONUSTIME_OFFSET))(this, bonusTime);
+		}
+
+		::System::Void __GetTimer_b__15_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___GETTIMER_B__15_0_OFFSET))(this);
+		}
+
+		::System::Void __GetTimer_b__15_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___GETTIMER_B__15_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCOUNTDOWNUICHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

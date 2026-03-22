@@ -1,0 +1,74 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+namespace System { template <typename T1, typename T2> class Action_2; }
+namespace UnityEngine { class Transform; }
+
+#define UNITYENGINE_TRANSFORMHOOK_INVOKE_ONHOOKTRANSFORMSETEULERANGLES_OFFSET UNITYSDK_OFFSET(0x19D016A0)
+#define UNITYENGINE_TRANSFORMHOOK_INVOKE_ONHOOKTRANSFORMSETLOCALEULERANGLES_OFFSET UNITYSDK_OFFSET(0x19D01720)
+#define UNITYENGINE_TRANSFORMHOOK_INVOKE_ONHOOKTRANSFORMSETLOCALPOSITION_OFFSET UNITYSDK_OFFSET(0x19D015A0)
+#define UNITYENGINE_TRANSFORMHOOK_INVOKE_ONHOOKTRANSFORMSETLOCALSCALE_OFFSET UNITYSDK_OFFSET(0x19D01620)
+#define UNITYENGINE_TRANSFORMHOOK_INVOKE_ONHOOKTRANSFORMSETPOSITION_OFFSET UNITYSDK_OFFSET(0x19D01520)
+#define UNITYENGINE_TRANSFORMHOOK__CTOR_OFFSET UNITYSDK_OFFSET(0x19D017A0)
+
+namespace UnityEngine
+{
+	inline static constexpr unsigned int TransformHook_TypeDefinitionIndex = 5344;
+
+	class TransformHook : public ::System::Object
+	{
+	public:
+		static ::System::Action_2<::UnityEngine::Transform*, ::UnityEngine::Vector3>** StaticGet_onHookSetEulerAngles()
+		{
+			return (::System::Action_2<::UnityEngine::Transform*, ::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(TransformHook_TypeDefinitionIndex)->GetStaticField(0x5390);
+		}
+		static ::System::Action_2<::UnityEngine::Transform*, ::UnityEngine::Vector3>** StaticGet_onHookSetLocalScale()
+		{
+			return (::System::Action_2<::UnityEngine::Transform*, ::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(TransformHook_TypeDefinitionIndex)->GetStaticField(0x5398);
+		}
+		static ::System::Action_2<::UnityEngine::Transform*, ::UnityEngine::Vector3>** StaticGet_onHookSetPosition()
+		{
+			return (::System::Action_2<::UnityEngine::Transform*, ::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(TransformHook_TypeDefinitionIndex)->GetStaticField(0x53A0);
+		}
+		static ::System::Action_2<::UnityEngine::Transform*, ::UnityEngine::Vector3>** StaticGet_onHookSetLocalPosition()
+		{
+			return (::System::Action_2<::UnityEngine::Transform*, ::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(TransformHook_TypeDefinitionIndex)->GetStaticField(0x53A8);
+		}
+		static ::System::Action_2<::UnityEngine::Transform*, ::UnityEngine::Vector3>** StaticGet_onHookSetLocalEulerAngles()
+		{
+			return (::System::Action_2<::UnityEngine::Transform*, ::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(TransformHook_TypeDefinitionIndex)->GetStaticField(0x53B0);
+		}
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TRANSFORMHOOK__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void invoke_onHookTransformSetPosition(::UnityEngine::Transform* trans, ::UnityEngine::Vector3 value)
+		{
+			return ((::System::Void(*)(::UnityEngine::Transform*, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_TRANSFORMHOOK_INVOKE_ONHOOKTRANSFORMSETPOSITION_OFFSET))(trans, value);
+		}
+
+		static ::System::Void invoke_onHookTransformSetLocalPosition(::UnityEngine::Transform* trans, ::UnityEngine::Vector3 value)
+		{
+			return ((::System::Void(*)(::UnityEngine::Transform*, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_TRANSFORMHOOK_INVOKE_ONHOOKTRANSFORMSETLOCALPOSITION_OFFSET))(trans, value);
+		}
+
+		static ::System::Void invoke_onHookTransformSetLocalScale(::UnityEngine::Transform* trans, ::UnityEngine::Vector3 value)
+		{
+			return ((::System::Void(*)(::UnityEngine::Transform*, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_TRANSFORMHOOK_INVOKE_ONHOOKTRANSFORMSETLOCALSCALE_OFFSET))(trans, value);
+		}
+
+		static ::System::Void invoke_onHookTransformSetEulerAngles(::UnityEngine::Transform* trans, ::UnityEngine::Vector3 value)
+		{
+			return ((::System::Void(*)(::UnityEngine::Transform*, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_TRANSFORMHOOK_INVOKE_ONHOOKTRANSFORMSETEULERANGLES_OFFSET))(trans, value);
+		}
+
+		static ::System::Void invoke_onHookTransformSetLocalEulerAngles(::UnityEngine::Transform* trans, ::UnityEngine::Vector3 value)
+		{
+			return ((::System::Void(*)(::UnityEngine::Transform*, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_TRANSFORMHOOK_INVOKE_ONHOOKTRANSFORMSETLOCALEULERANGLES_OFFSET))(trans, value);
+		}
+	};
+}

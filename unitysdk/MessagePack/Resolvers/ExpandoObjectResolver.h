@@ -5,22 +5,22 @@
 namespace MessagePack { class IFormatterResolver; }
 namespace MessagePack { class MessagePackSerializerOptions; }
 
-#define MESSAGEPACK_RESOLVERS_EXPANDOOBJECTRESOLVER__CCTOR_OFFSET UNITYSDK_OFFSET(0x156A2C70)
+#define MESSAGEPACK_RESOLVERS_EXPANDOOBJECTRESOLVER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19262E90)
 
 namespace MessagePack::Resolvers
 {
-	inline static constexpr unsigned int ExpandoObjectResolver_TypeDefinitionIndex = 9537;
+	inline static constexpr unsigned int ExpandoObjectResolver_TypeDefinitionIndex = 26515;
 
 	class ExpandoObjectResolver : public ::System::Object
 	{
 	public:
-		static ::MessagePack::MessagePackSerializerOptions** StaticGet_Options()
-		{
-			return (::MessagePack::MessagePackSerializerOptions**)Il2CppClass::FromTypeDefinitionIndex(ExpandoObjectResolver_TypeDefinitionIndex)->GetStaticField(0x277D0);
-		}
 		static ::MessagePack::IFormatterResolver** StaticGet_Instance()
 		{
-			return (::MessagePack::IFormatterResolver**)Il2CppClass::FromTypeDefinitionIndex(ExpandoObjectResolver_TypeDefinitionIndex)->GetStaticField(0x277D8);
+			return (::MessagePack::IFormatterResolver**)Il2CppClass::FromTypeDefinitionIndex(ExpandoObjectResolver_TypeDefinitionIndex)->GetStaticField(0x1E790);
+		}
+		static ::MessagePack::MessagePackSerializerOptions** StaticGet_Options()
+		{
+			return (::MessagePack::MessagePackSerializerOptions**)Il2CppClass::FromTypeDefinitionIndex(ExpandoObjectResolver_TypeDefinitionIndex)->GetStaticField(0x1E798);
 		}
 
 		static ::System::Void _cctor()

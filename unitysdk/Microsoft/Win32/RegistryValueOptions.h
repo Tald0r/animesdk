@@ -3,7 +3,7 @@
 
 namespace Microsoft::Win32
 {
-	inline static constexpr unsigned int RegistryValueOptions_TypeDefinitionIndex = 106;
+	inline static constexpr unsigned int RegistryValueOptions_TypeDefinitionIndex = 94;
 
 	enum class RegistryValueOptions : ::System::Int32
 	{

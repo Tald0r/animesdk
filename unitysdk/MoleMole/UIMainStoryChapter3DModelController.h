@@ -1,0 +1,117 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/UIBase3DModelController.h"
+
+class Class_2_208CC9941471731A_726;
+class Class_2_8E88A0E1784C6047;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_DOSKIP_OFFSET UNITYSDK_OFFSET(0x9E7C240)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x9E7BB10)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9E7C400)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONTIMELINEENDHANDLE_OFFSET UNITYSDK_OFFSET(0x9E7C310)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x9E7C0E0)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9E7C4A0)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9E7BB20)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9E7BB90)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_SETTIMELINEENDHANDLE_OFFSET UNITYSDK_OFFSET(0x9E7C390)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9E7C530)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9E7C5A0)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x9E7C610)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9E7C620)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9E7C630)
+#define MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9E7C640)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMainStoryChapter3DModelController_TypeDefinitionIndex = 46212;
+
+	class UIMainStoryChapter3DModelController : public ::MoleMole::UIBase3DModelController
+	{
+	public:
+		::Class_2_8E88A0E1784C6047* _view; // 0x340
+		::System::Int32 _chapterPerformID; // 0x348
+		::Class_2_208CC9941471731A_726* _chapterPerformCfg; // 0x350
+		::System::Action* _onTimeLineEndhandle; // 0x358
+		::Foundation::Coroutine::CoroutineHandle _coroutineHandle; // 0x360
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void DoSkip()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_DOSKIP_OFFSET))(this);
+		}
+
+		::System::Void OnTimeLineEndhandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONTIMELINEENDHANDLE_OFFSET))(this);
+		}
+
+		::System::Void SetTimeLineEndhandle(::System::Action* handle)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_SETTIMELINEENDHANDLE_OFFSET))(this, handle);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYCHAPTER3DMODELCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

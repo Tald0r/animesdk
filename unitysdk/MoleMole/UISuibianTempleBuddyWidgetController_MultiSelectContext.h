@@ -1,0 +1,84 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_F57C3EEEB03201AF.h"
+
+namespace System { template <typename T1, typename T2> class Func_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+template <typename T> class Class_0_16E4307DCC419505_119;
+template <typename T> class Class_0_16E4307DCC419505_122;
+
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_GET_ISMULTISELECT_OFFSET UNITYSDK_OFFSET(0xAC41920)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_GET_SELECTUIDLIST_OFFSET UNITYSDK_OFFSET(0xAC41960)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_GET_SHOWMULTISELECTINDEX_OFFSET UNITYSDK_OFFSET(0xAC41940)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0xAC41980)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_SET_ISMULTISELECT_OFFSET UNITYSDK_OFFSET(0xAC41930)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_SET_SELECTUIDLIST_OFFSET UNITYSDK_OFFSET(0xAC41970)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_SET_SHOWMULTISELECTINDEX_OFFSET UNITYSDK_OFFSET(0xAC41950)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAC41AC0)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT__ONCREATEPROPERTY_B__14_0_OFFSET UNITYSDK_OFFSET(0xAC41B90)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT__ONCREATEPROPERTY_B__14_1_OFFSET UNITYSDK_OFFSET(0xAC41BA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISuibianTempleBuddyWidgetController_MultiSelectContext_TypeDefinitionIndex = 63795;
+
+	class UISuibianTempleBuddyWidgetController_MultiSelectContext : public ::Class_1_F57C3EEEB03201AF
+	{
+	public:
+		::Class_0_16E4307DCC419505_122<::System::Collections::Generic::List_1<::System::UInt32>*>* _SelectUidList_k__BackingField; // 0x60
+		::Class_0_16E4307DCC419505_119<::System::Boolean>* _ShowMultiSelectIndex_k__BackingField; // 0x68
+		::System::Collections::Generic::List_1<::System::UInt32>* _selectedIndexList; // 0x70
+		::Class_0_16E4307DCC419505_119<::System::Boolean>* _IsMultiSelect_k__BackingField; // 0x78
+		::System::Func_2<::System::UInt32, ::System::Boolean>* SetMultiMask; // 0x80
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT__CTOR_OFFSET))(this);
+		}
+
+		::Class_0_16E4307DCC419505_119<::System::Boolean>* get_IsMultiSelect()
+		{
+			return ((::Class_0_16E4307DCC419505_119<::System::Boolean>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_GET_ISMULTISELECT_OFFSET))(this);
+		}
+
+		::System::Void set_IsMultiSelect(::Class_0_16E4307DCC419505_119<::System::Boolean>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_119<::System::Boolean>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_SET_ISMULTISELECT_OFFSET))(this, value);
+		}
+
+		::Class_0_16E4307DCC419505_119<::System::Boolean>* get_ShowMultiSelectIndex()
+		{
+			return ((::Class_0_16E4307DCC419505_119<::System::Boolean>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_GET_SHOWMULTISELECTINDEX_OFFSET))(this);
+		}
+
+		::System::Void set_ShowMultiSelectIndex(::Class_0_16E4307DCC419505_119<::System::Boolean>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_119<::System::Boolean>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_SET_SHOWMULTISELECTINDEX_OFFSET))(this, value);
+		}
+
+		::Class_0_16E4307DCC419505_122<::System::Collections::Generic::List_1<::System::UInt32>*>* get_SelectUidList()
+		{
+			return ((::Class_0_16E4307DCC419505_122<::System::Collections::Generic::List_1<::System::UInt32>*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_GET_SELECTUIDLIST_OFFSET))(this);
+		}
+
+		::System::Void set_SelectUidList(::Class_0_16E4307DCC419505_122<::System::Collections::Generic::List_1<::System::UInt32>*>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_122<::System::Collections::Generic::List_1<::System::UInt32>*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_SET_SELECTUIDLIST_OFFSET))(this, value);
+		}
+
+		::System::Void OnCreateProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT_ONCREATEPROPERTY_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::UInt32>* _OnCreateProperty_b__14_0()
+		{
+			return ((::System::Collections::Generic::List_1<::System::UInt32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT__ONCREATEPROPERTY_B__14_0_OFFSET))(this);
+		}
+
+		::System::Void _OnCreateProperty_b__14_1(::System::Collections::Generic::List_1<::System::UInt32>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::System::UInt32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEBUDDYWIDGETCONTROLLER_MULTISELECTCONTEXT__ONCREATEPROPERTY_B__14_1_OFFSET))(this, value);
+		}
+	};
+}

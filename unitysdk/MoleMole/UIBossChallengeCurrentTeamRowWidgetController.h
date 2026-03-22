@@ -1,0 +1,72 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_4C62EC4DB2F49EEB;
+namespace MoleMole { class UIControlReference; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA32CD10)
+#define MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA32CD80)
+#define MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA32CE80)
+#define MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER_SETLAYER_OFFSET UNITYSDK_OFFSET(0xA32CFC0)
+#define MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA32D280)
+#define MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET UNITYSDK_OFFSET(0xA32D2B0)
+#define MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER__ONUIINIT_B__3_1_OFFSET UNITYSDK_OFFSET(0xA32D320)
+#define MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA32D390)
+#define MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA32D400)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBossChallengeCurrentTeamRowWidgetController_TypeDefinitionIndex = 70647;
+
+	class UIBossChallengeCurrentTeamRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_4C62EC4DB2F49EEB* get__viewModel()
+		{
+			return ((::Class_2_4C62EC4DB2F49EEB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void SetLayer(::System::Int32 zoneID, ::System::Int32 layerIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER_SETLAYER_OFFSET))(this, zoneID, layerIndex);
+		}
+
+		::System::Void _OnUIInit_b__3_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER__ONUIINIT_B__3_0_OFFSET))(this, args);
+		}
+
+		::System::Void _OnUIInit_b__3_1(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER__ONUIINIT_B__3_1_OFFSET))(this, args);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGECURRENTTEAMROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

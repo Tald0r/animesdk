@@ -1,0 +1,377 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_B90C1A15EA6E3C2B.h"
+#include "unitysdk/Enum_3_E94B2CDB841AF71D.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_222A145CFB71510C;
+class Class_2_79AE422BA06F6D26_124;
+namespace MoleMole { class UIBPLevelRowWidgetController; }
+namespace MoleMole { class UIBPPageContext; }
+namespace MoleMole { class UIBPPageTopBtnWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIWidgetController; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace UnityEngine::UI::Extension { class UITimeWidget; }
+
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_CHECKNEWSCHEDULEANDSET_OFFSET UNITYSDK_OFFSET(0xBED1CC0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_CHECKPOPPURCHASEDIALOG_OFFSET UNITYSDK_OFFSET(0xBED1790)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_CHECKREWARDNEWDIALOG_OFFSET UNITYSDK_OFFSET(0xBED19B0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_CHECKREWARDSELECTDIALOG_OFFSET UNITYSDK_OFFSET(0xBED1AA0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_CLICKJUMPTAB_OFFSET UNITYSDK_OFFSET(0xBED01A0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xBECEBC0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_INITBATTLEPASS_OFFSET UNITYSDK_OFFSET(0xBECF7C0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_INITTOPBTNS_OFFSET UNITYSDK_OFFSET(0xBECE4D0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONBATTLEPASSPAGEEND_OFFSET UNITYSDK_OFFSET(0xBED10D0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONBATTLEPASSWIDGET_OFFSET UNITYSDK_OFFSET(0xBED1450)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONBPCLOSEPOPUPWINDOW_OFFSET UNITYSDK_OFFSET(0xBECCFF0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONCLICKEXCHANGESHOP_OFFSET UNITYSDK_OFFSET(0xBECEA00)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONCLICKSELECTREWARD_OFFSET UNITYSDK_OFFSET(0xBECE860)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBECEBD0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xBED0840)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONPAGEFADEINFINISH_OFFSET UNITYSDK_OFFSET(0xBED1230)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONPOPDIALOGCLOSE_OFFSET UNITYSDK_OFFSET(0xBED1720)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONREWARDINFOCHANGED_OFFSET UNITYSDK_OFFSET(0xBECD410)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONSETPAGECONSOLEBTN_OFFSET UNITYSDK_OFFSET(0xBECCEB0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBED0070)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONTASKCHANGED_OFFSET UNITYSDK_OFFSET(0xBECCBD0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBED0450)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBECEC70)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBECEDA0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_OPENBATTLEPASSWIDGET_OFFSET UNITYSDK_OFFSET(0xBED12B0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_OPENBPPURCHASEPAGE_OFFSET UNITYSDK_OFFSET(0xBECC940)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_OPENDETAIL_OFFSET UNITYSDK_OFFSET(0xBECC8E0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_PLAYBPPAGEFADEIN_OFFSET UNITYSDK_OFFSET(0xBECCAC0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_PUSHCHECKPOP_OFFSET UNITYSDK_OFFSET(0xBED1630)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_RECEIVEALLTASKREWARD_OFFSET UNITYSDK_OFFSET(0xBECDBB0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_RECEIVELEVELREWARDS_OFFSET UNITYSDK_OFFSET(0xBECDA60)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_REFRESHBPPURCHASETEXT_OFFSET UNITYSDK_OFFSET(0xBECD760)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_REFRESHCONSOLEINFOBTN_OFFSET UNITYSDK_OFFSET(0xBECFC20)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_REFRESHCOREREWARDBTN_OFFSET UNITYSDK_OFFSET(0xBECDFA0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_REFRESHNEXTWIDGETBTNSTATE_OFFSET UNITYSDK_OFFSET(0xBED0900)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_REFRESHREWARDBTN_OFFSET UNITYSDK_OFFSET(0xBECD4A0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_SETTASKSTATE_OFFSET UNITYSDK_OFFSET(0xBECCC60)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_SHOWCOREREWARDINFO_OFFSET UNITYSDK_OFFSET(0xBECDDF0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_STARTPOPPAGE_OFFSET UNITYSDK_OFFSET(0xBECFD50)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER_TAKESELECTCOREREWARD_OFFSET UNITYSDK_OFFSET(0xBECDC20)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER__CHECKREWARDNEWDIALOG_B__54_0_OFFSET UNITYSDK_OFFSET(0xBED2150)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBED1E40)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER__INITBATTLEPASS_B__39_0_OFFSET UNITYSDK_OFFSET(0xBED2120)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER__INITBATTLEPASS_B__39_1_OFFSET UNITYSDK_OFFSET(0xBED2130)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER__INITBATTLEPASS_B__39_2_OFFSET UNITYSDK_OFFSET(0xBED2140)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER__ONBPCLOSEPOPUPWINDOW_B__6_0_OFFSET UNITYSDK_OFFSET(0xBED2000)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER__ONSHOW_B__36_0_OFFSET UNITYSDK_OFFSET(0xBED20C0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER__OPENBPPURCHASEPAGE_B__1_0_OFFSET UNITYSDK_OFFSET(0xBED1E50)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER__OPENBPPURCHASEPAGE_B__1_1_OFFSET UNITYSDK_OFFSET(0xBED1EB0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBED2370)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xBED23E0)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBED2440)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBED2450)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBED2460)
+#define MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBED2470)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBPPagePageController_TypeDefinitionIndex = 69642;
+
+	class UIBPPagePageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::String* BPFadeInAnimName; // 0x0
+		// static const ::System::String* BPFadeOutAnimName; // 0x0
+		::MoleMole::UIBPPageTopBtnWidgetController* selectRewardBtn; // 0x2F8
+		::MoleMole::UIBPPageTopBtnWidgetController* jumpShopBtn; // 0x300
+		::Class_2_79AE422BA06F6D26_124* _view; // 0x308
+		::MoleMole::UIBPPageContext* _context; // 0x310
+		::MoleMole::UIWidgetController* _nowWidget; // 0x318
+		::System::Collections::Generic::Dictionary_2<::Enum_3_B90C1A15EA6E3C2B, ::MoleMole::UIWidgetController*>* _bpWidgetMap; // 0x320
+		::Enum_3_B90C1A15EA6E3C2B _nextBPWidgetCtrl; // 0x328
+		::Enum_3_B90C1A15EA6E3C2B _nowBPWidgetCtrl; // 0x330
+		::Class_2_222A145CFB71510C* _battlePassModel; // 0x338
+		::System::Action* fadeInAction; // 0x340
+		::MoleMole::UIBPLevelRowWidgetController* levelRowController; // 0x348
+		::Il2CppArray<::System::Func_1<::System::Boolean>*>* popCheckProcess; // 0x350
+		::System::Int32 nowStep; // 0x358
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OpenDetail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_OPENDETAIL_OFFSET))(this);
+		}
+
+		::System::Void OpenBPPurchasePage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_OPENBPPURCHASEPAGE_OFFSET))(this);
+		}
+
+		::System::Void PlayBPPageFadeIn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_PLAYBPPAGEFADEIN_OFFSET))(this);
+		}
+
+		::System::Void OnTaskChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONTASKCHANGED_OFFSET))(this);
+		}
+
+		::System::Void SetTaskState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_SETTASKSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnSetPageConsoleBtn(::Enum_3_E94B2CDB841AF71D consoleEnum, ::System::String* text, ::System::Boolean interactable)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_E94B2CDB841AF71D, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONSETPAGECONSOLEBTN_OFFSET))(this, consoleEnum, text, interactable);
+		}
+
+		::System::Void OnBPClosePopupWindow(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONBPCLOSEPOPUPWINDOW_OFFSET))(this, args);
+		}
+
+		::System::Void OnRewardInfoChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONREWARDINFOCHANGED_OFFSET))(this);
+		}
+
+		::System::Void RefreshRewardBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_REFRESHREWARDBTN_OFFSET))(this);
+		}
+
+		::System::Void ReceiveLevelRewards()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_RECEIVELEVELREWARDS_OFFSET))(this);
+		}
+
+		::System::Void ReceiveAllTaskReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_RECEIVEALLTASKREWARD_OFFSET))(this);
+		}
+
+		::System::Void TakeSelectCoreReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_TAKESELECTCOREREWARD_OFFSET))(this);
+		}
+
+		::System::Void ShowCoreRewardInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_SHOWCOREREWARDINFO_OFFSET))(this);
+		}
+
+		::System::Void RefreshBPPurchaseText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_REFRESHBPPURCHASETEXT_OFFSET))(this);
+		}
+
+		::System::Void RefreshCoreRewardBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_REFRESHCOREREWARDBTN_OFFSET))(this);
+		}
+
+		::System::Void InitTopBtns()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_INITTOPBTNS_OFFSET))(this);
+		}
+
+		::System::Void OnClickSelectReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONCLICKSELECTREWARD_OFFSET))(this);
+		}
+
+		::System::Void OnClickExchangeShop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONCLICKEXCHANGESHOP_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void InitBattlePass()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_INITBATTLEPASS_OFFSET))(this);
+		}
+
+		::System::Void ClickJumpTab(::System::Int32 jumpIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_CLICKJUMPTAB_OFFSET))(this, jumpIndex);
+		}
+
+		::System::Void OnBattlePassPageEnd(::UnityEngine::UI::Extension::UITimeWidget* timeWidget)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UITimeWidget*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONBATTLEPASSPAGEEND_OFFSET))(this, timeWidget);
+		}
+
+		::System::Void OnPageFadeInFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONPAGEFADEINFINISH_OFFSET))(this);
+		}
+
+		::System::Void RefreshConsoleInfoBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_REFRESHCONSOLEINFOBTN_OFFSET))(this);
+		}
+
+		::System::Void OpenBattlePassWidget(::Enum_3_B90C1A15EA6E3C2B widgetEnum)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_B90C1A15EA6E3C2B))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_OPENBATTLEPASSWIDGET_OFFSET))(this, widgetEnum);
+		}
+
+		::System::Void OnBattlePassWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONBATTLEPASSWIDGET_OFFSET))(this);
+		}
+
+		::System::Void RefreshNextWidgetBtnState(::Enum_3_B90C1A15EA6E3C2B nowWidgetCtrl)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_B90C1A15EA6E3C2B))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_REFRESHNEXTWIDGETBTNSTATE_OFFSET))(this, nowWidgetCtrl);
+		}
+
+		::System::Void StartPopPage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_STARTPOPPAGE_OFFSET))(this);
+		}
+
+		::System::Void OnPopDialogClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_ONPOPDIALOGCLOSE_OFFSET))(this);
+		}
+
+		::System::Void PushCheckPop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_PUSHCHECKPOP_OFFSET))(this);
+		}
+
+		::System::Boolean CheckPopPurchaseDialog()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_CHECKPOPPURCHASEDIALOG_OFFSET))(this);
+		}
+
+		::System::Boolean CheckRewardNewDialog()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_CHECKREWARDNEWDIALOG_OFFSET))(this);
+		}
+
+		::System::Boolean CheckRewardSelectDialog()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_CHECKREWARDSELECTDIALOG_OFFSET))(this);
+		}
+
+		::System::Boolean CheckNewScheduleAndSet()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER_CHECKNEWSCHEDULEANDSET_OFFSET))(this);
+		}
+
+		::System::Void _OpenBPPurchasePage_b__1_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER__OPENBPPURCHASEPAGE_B__1_0_OFFSET))(this);
+		}
+
+		::System::Void _OpenBPPurchasePage_b__1_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER__OPENBPPURCHASEPAGE_B__1_1_OFFSET))(this);
+		}
+
+		::System::Void _OnBPClosePopupWindow_b__6_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER__ONBPCLOSEPOPUPWINDOW_B__6_0_OFFSET))(this);
+		}
+
+		::System::Void _OnShow_b__36_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER__ONSHOW_B__36_0_OFFSET))(this);
+		}
+
+		::System::Void _InitBattlePass_b__39_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER__INITBATTLEPASS_B__39_0_OFFSET))(this);
+		}
+
+		::System::Void _InitBattlePass_b__39_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER__INITBATTLEPASS_B__39_1_OFFSET))(this);
+		}
+
+		::System::Void _InitBattlePass_b__39_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER__INITBATTLEPASS_B__39_2_OFFSET))(this);
+		}
+
+		::System::Void _CheckRewardNewDialog_b__54_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER__CHECKREWARDNEWDIALOG_B__54_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBPPAGEPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

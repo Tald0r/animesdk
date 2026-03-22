@@ -1,0 +1,153 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_B2D270DFAE7C21C4.h"
+#include "unitysdk/Enum_3_B90C1A15EA6E3C2B.h"
+
+class Class_1_EEA0111A28582B57;
+class Class_2_208CC9941471731A_791;
+class Class_2_8DE4455BA0C8D634;
+class Class_2_DA8BF519212BAE65;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIActivityWeekRewardComponentPopWindowController; }
+namespace MoleMole { class UIControlReference; }
+namespace System { class EventArgs; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define CLASS_2_0082F110AC4E220D_METHOD_2_145E325C5ED34A96_OFFSET UNITYSDK_OFFSET(0xB456000)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_1D4018D4200358D0_OFFSET UNITYSDK_OFFSET(0xB4567C0)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_3CAD92CFB876DBF6_OFFSET UNITYSDK_OFFSET(0xB456600)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0xB456160)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_4BD4946264C7D098_OFFSET UNITYSDK_OFFSET(0xB456BA0)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_4EA6B1791DACA9CC_OFFSET UNITYSDK_OFFSET(0xB457D30)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_735EE20B25F86BF4_OFFSET UNITYSDK_OFFSET(0xB456720)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_7C606D2272E470B6_OFFSET UNITYSDK_OFFSET(0xB4584D0)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_7D21D8548943D577_OFFSET UNITYSDK_OFFSET(0xB4577A0)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_85377D41FEE05B66_OFFSET UNITYSDK_OFFSET(0xB456200)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_8CA88D55ECEFAD59_OFFSET UNITYSDK_OFFSET(0xB457BB0)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_98DEAC99EAA26EFB_OFFSET UNITYSDK_OFFSET(0xB4579D0)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_A7B05C4CA3C82393_OFFSET UNITYSDK_OFFSET(0xB456840)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_AA169839CB93802A_OFFSET UNITYSDK_OFFSET(0xB4564E0)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_AB603CA7D990D95A_OFFSET UNITYSDK_OFFSET(0xB4584E0)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xB457AC0)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xB457970)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_E8F71BC8471C5469_OFFSET UNITYSDK_OFFSET(0xB457B20)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_F05D083F22A9CAF6_OFFSET UNITYSDK_OFFSET(0xB456CA0)
+#define CLASS_2_0082F110AC4E220D_METHOD_2_FBE1F15FAD3CE2AA_OFFSET UNITYSDK_OFFSET(0xB457F20)
+#define CLASS_2_0082F110AC4E220D__CTOR_OFFSET UNITYSDK_OFFSET(0xB456080)
+
+inline static constexpr unsigned int Class_2_0082F110AC4E220D_TypeDefinitionIndex = 50345;
+
+class Class_2_0082F110AC4E220D : public ::Class_1_B2D270DFAE7C21C4
+{
+public:
+	::System::Collections::Generic::List_1<::Class_2_8DE4455BA0C8D634*>* Field_2_1; // 0x28
+	::Class_2_DA8BF519212BAE65* Field_2_3; // 0x30
+	::System::Int32 Field_2_0; // 0x38
+	::System::Int32 Field_2_2; // 0x3C
+
+	::System::Void _ctor(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D__CTOR_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_145E325C5ED34A96(::MoleMole::UIActivityWeekRewardComponentPopWindowController* a1, ::Class_1_EEA0111A28582B57* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityWeekRewardComponentPopWindowController*, ::Class_1_EEA0111A28582B57*))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_145E325C5ED34A96_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_4343F372F34C05BF()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_4343F372F34C05BF_OFFSET))(this);
+	}
+
+	::System::Void Method_2_85377D41FEE05B66()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_85377D41FEE05B66_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_1D4018D4200358D0()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_1D4018D4200358D0_OFFSET))(this);
+	}
+
+	::System::Void Method_2_735EE20B25F86BF4()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_735EE20B25F86BF4_OFFSET))(this);
+	}
+
+	::System::Void Method_2_4BD4946264C7D098(::System::EventArgs* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_4BD4946264C7D098_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_2_7D21D8548943D577()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_7D21D8548943D577_OFFSET))(this);
+	}
+
+	::MoleMole::ScrollViewItemWidgetController* Method_2_98DEAC99EAA26EFB(::Enum_3_B90C1A15EA6E3C2B a1, ::System::Func_1<::MoleMole::UIControlReference*>* a2)
+	{
+		return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::Enum_3_B90C1A15EA6E3C2B, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_98DEAC99EAA26EFB_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_E8F71BC8471C5469()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_E8F71BC8471C5469_OFFSET))(this);
+	}
+
+	::System::Void Method_2_8CA88D55ECEFAD59()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_8CA88D55ECEFAD59_OFFSET))(this);
+	}
+
+	::System::Void Method_2_3CAD92CFB876DBF6()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_3CAD92CFB876DBF6_OFFSET))(this);
+	}
+
+	::System::Collections::Generic::List_1<::Class_2_8DE4455BA0C8D634*>* Method_2_F05D083F22A9CAF6()
+	{
+		return ((::System::Collections::Generic::List_1<::Class_2_8DE4455BA0C8D634*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_F05D083F22A9CAF6_OFFSET))(this);
+	}
+
+	::System::Void Method_2_4EA6B1791DACA9CC()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_4EA6B1791DACA9CC_OFFSET))(this);
+	}
+
+	::System::Void Method_2_AA169839CB93802A()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_AA169839CB93802A_OFFSET))(this);
+	}
+
+	::System::Collections::Generic::List_1<::System::Int32>* Method_2_A7B05C4CA3C82393(::System::Int32 a1)
+	{
+		return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_A7B05C4CA3C82393_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_7C606D2272E470B6(::MoleMole::UIActivityWeekRewardComponentPopWindowController* a1, ::Class_1_EEA0111A28582B57* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityWeekRewardComponentPopWindowController*, ::Class_1_EEA0111A28582B57*))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_7C606D2272E470B6_OFFSET))(this, a1, a2);
+	}
+
+	::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_791*>* Method_2_FBE1F15FAD3CE2AA()
+	{
+		return ((::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_791*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_FBE1F15FAD3CE2AA_OFFSET))(this);
+	}
+
+	::System::Void Method_2_AB603CA7D990D95A(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_0082F110AC4E220D_METHOD_2_AB603CA7D990D95A_OFFSET))(this, a1);
+	}
+};

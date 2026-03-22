@@ -1,0 +1,69 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ChessStateMachine/StateMachineAction.h"
+#include "unitysdk/MoleMole/HollowChessboard/HollowCell.h"
+
+class Class_1_43BD383C98B4C0C5_20;
+class Class_2_208CC9941471731A_281;
+
+#define MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_ACTIONOVER_OFFSET UNITYSDK_OFFSET(0x62283A0)
+#define MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_FORCESTOP_OFFSET UNITYSDK_OFFSET(0x6228340)
+#define MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_GET_ISINSTANT_OFFSET UNITYSDK_OFFSET(0x6228490)
+#define MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_PLAYTEXTURESHEETSOUND_OFFSET UNITYSDK_OFFSET(0x62282B0)
+#define MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_RUN_OFFSET UNITYSDK_OFFSET(0x6228240)
+#define MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_STOP_OFFSET UNITYSDK_OFFSET(0x6228430)
+#define MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x62284A0)
+#define MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION___BASE_ACTIONOVER_OFFSET UNITYSDK_OFFSET(0x62284B0)
+
+namespace MoleMole::ChessStateMachine
+{
+	inline static constexpr unsigned int ShowVideoViewByServerInfoAction_TypeDefinitionIndex = 50377;
+
+	class ShowVideoViewByServerInfoAction : public ::MoleMole::ChessStateMachine::StateMachineAction
+	{
+	public:
+		::System::Boolean IsNeedVideoPlayEndPause; // 0x28
+		::System::Boolean IsUseOverrideID; // 0x29
+		::System::Int32 OverrideEventAnimConfigID; // 0x2C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Run(::Class_1_43BD383C98B4C0C5_20* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_43BD383C98B4C0C5_20*))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_RUN_OFFSET))(this, context);
+		}
+
+		::System::Boolean PlayTextureSheetSound(::Class_2_208CC9941471731A_281* template_, ::MoleMole::HollowChessboard::HollowCell fullIndex, ::System::Boolean needReSeek)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_281*, ::MoleMole::HollowChessboard::HollowCell, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_PLAYTEXTURESHEETSOUND_OFFSET))(this, template_, fullIndex, needReSeek);
+		}
+
+		::System::Void ForceStop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_FORCESTOP_OFFSET))(this);
+		}
+
+		::System::Void ActionOver()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_ACTIONOVER_OFFSET))(this);
+		}
+
+		::System::Void Stop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_STOP_OFFSET))(this);
+		}
+
+		::System::Boolean get_isInstant()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION_GET_ISINSTANT_OFFSET))(this);
+		}
+
+		::System::Void __base_ActionOver()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SHOWVIDEOVIEWBYSERVERINFOACTION___BASE_ACTIONOVER_OFFSET))(this);
+		}
+	};
+}

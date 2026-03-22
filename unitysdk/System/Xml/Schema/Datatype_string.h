@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/Datatype_anySimpleType.h"
+#include "unitysdk/System/Xml/Schema/RestrictionFlags.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaWhiteSpace.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 #include "unitysdk/System/Xml/XmlTokenizedType.h"
@@ -14,17 +15,18 @@ namespace System::Xml::Schema { class FacetsChecker; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D6EB70)
-#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x17D6EBC0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x17D6EBD0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_GET_TOKENIZEDTYPE_OFFSET UNITYSDK_OFFSET(0x17D6EC40)
-#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D6EC30)
-#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x17D6EC50)
-#define SYSTEM_XML_SCHEMA_DATATYPE_STRING__CTOR_OFFSET UNITYSDK_OFFSET(0x17D64940)
+#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x18C6F360)
+#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x18C6F3B0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x18C6F3C0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_GET_TOKENIZEDTYPE_OFFSET UNITYSDK_OFFSET(0x18C6F430)
+#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x18C6F420)
+#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_GET_VALIDRESTRICTIONFLAGS_OFFSET UNITYSDK_OFFSET(0x18C6F440)
+#define SYSTEM_XML_SCHEMA_DATATYPE_STRING_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x18C6F450)
+#define SYSTEM_XML_SCHEMA_DATATYPE_STRING__CTOR_OFFSET UNITYSDK_OFFSET(0x18C6F580)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_string_TypeDefinitionIndex = 2079;
+	inline static constexpr unsigned int Datatype_string_TypeDefinitionIndex = 1994;
 
 	class Datatype_string : public ::System::Xml::Schema::Datatype_anySimpleType
 	{
@@ -57,6 +59,11 @@ namespace System::Xml::Schema
 		::System::Xml::XmlTokenizedType get_TokenizedType()
 		{
 			return ((::System::Xml::XmlTokenizedType(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_STRING_GET_TOKENIZEDTYPE_OFFSET))(this);
+		}
+
+		::System::Xml::Schema::RestrictionFlags get_ValidRestrictionFlags()
+		{
+			return ((::System::Xml::Schema::RestrictionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_STRING_GET_VALIDRESTRICTIONFLAGS_OFFSET))(this);
 		}
 
 		::System::Exception* TryParseValue(::System::String* s, ::System::Xml::XmlNameTable* nameTable, ::System::Xml::IXmlNamespaceResolver* nsmgr, ::System::Object*& typedValue)

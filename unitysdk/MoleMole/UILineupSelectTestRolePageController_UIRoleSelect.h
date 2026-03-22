@@ -1,0 +1,59 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_C2B4B123B5A9B78A;
+class Class_2_D89CCC627A66D0AD;
+namespace System { class String; }
+
+#define MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT_BUILDRT_OFFSET UNITYSDK_OFFSET(0x7D47000)
+#define MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT_GET_DATA_OFFSET UNITYSDK_OFFSET(0x7D46FD0)
+#define MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT_GET_UNIT_OFFSET UNITYSDK_OFFSET(0x7D46FB0)
+#define MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT_SET_DATA_OFFSET UNITYSDK_OFFSET(0x7D46FE0)
+#define MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT_SET_UNIT_OFFSET UNITYSDK_OFFSET(0x7D46FC0)
+#define MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT__CTOR_OFFSET UNITYSDK_OFFSET(0x7D46FF0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UILineupSelectTestRolePageController_UIRoleSelect_TypeDefinitionIndex = 41635;
+
+	class UILineupSelectTestRolePageController_UIRoleSelect : public ::System::Object
+	{
+	public:
+		::Class_2_D89CCC627A66D0AD* _data_k__BackingField; // 0x10
+		::Class_2_C2B4B123B5A9B78A* _unit_k__BackingField; // 0x18
+		::System::Int32 height; // 0x20
+		::System::Int32 width; // 0x24
+		::System::Int32 curIndex; // 0x28
+
+		::System::Void _ctor(::System::Int32 width, ::System::Int32 height)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT__CTOR_OFFSET))(this, width, height);
+		}
+
+		::Class_2_C2B4B123B5A9B78A* get_unit()
+		{
+			return ((::Class_2_C2B4B123B5A9B78A*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT_GET_UNIT_OFFSET))(this);
+		}
+
+		::System::Void set_unit(::Class_2_C2B4B123B5A9B78A* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_C2B4B123B5A9B78A*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT_SET_UNIT_OFFSET))(this, value);
+		}
+
+		::Class_2_D89CCC627A66D0AD* get_data()
+		{
+			return ((::Class_2_D89CCC627A66D0AD*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT_GET_DATA_OFFSET))(this);
+		}
+
+		::System::Void set_data(::Class_2_D89CCC627A66D0AD* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_D89CCC627A66D0AD*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT_SET_DATA_OFFSET))(this, value);
+		}
+
+		::System::Void BuildRT(::System::String* ctrlName)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILINEUPSELECTTESTROLEPAGECONTROLLER_UIROLESELECT_BUILDRT_OFFSET))(this, ctrlName);
+		}
+	};
+}

@@ -1,17 +1,17 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/CriWare/CriMana/Detail/RendererResourceSofdecPrimeYuv.h"
+#include "unitysdk/CriWare/CriMana/Detail/RendererResourceSofdecPrimeYuvRawData.h"
 
 namespace CriWare::CriMana { class MovieInfo; }
 namespace UnityEngine { class Shader; }
 
-#define CRIWARE_CRIMANA_DETAIL_RENDERERRESOURCEH264YUV__CTOR_OFFSET UNITYSDK_OFFSET(0x112CDC00)
+#define CRIWARE_CRIMANA_DETAIL_RENDERERRESOURCEH264YUV__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0FC420)
 
 namespace CriWare::CriMana::Detail
 {
-	inline static constexpr unsigned int RendererResourceH264Yuv_TypeDefinitionIndex = 30372;
+	inline static constexpr unsigned int RendererResourceH264Yuv_TypeDefinitionIndex = 31383;
 
-	class RendererResourceH264Yuv : public ::CriWare::CriMana::Detail::RendererResourceSofdecPrimeYuv
+	class RendererResourceH264Yuv : public ::CriWare::CriMana::Detail::RendererResourceSofdecPrimeYuvRawData
 	{
 	public:
 		::System::Void _ctor(::System::Int32 playerId, ::CriWare::CriMana::MovieInfo* movieInfo, ::System::Boolean additive, ::UnityEngine::Shader* userShader)

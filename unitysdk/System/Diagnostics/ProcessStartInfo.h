@@ -11,37 +11,64 @@ namespace System::Diagnostics { class Process; }
 namespace System::Security { class SecureString; }
 namespace System::Text { class Encoding; }
 
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_ARGUMENTS_OFFSET UNITYSDK_OFFSET(0x17E8FF40)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_DOMAIN_OFFSET UNITYSDK_OFFSET(0x17E8FF80)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_ENVIRONMENTVARIABLES_OFFSET UNITYSDK_OFFSET(0x17E8F930)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_FILENAME_OFFSET UNITYSDK_OFFSET(0x17E8DC20)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_HAVEENVVARS_OFFSET UNITYSDK_OFFSET(0x17E8F920)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_LOADUSERPROFILE_OFFSET UNITYSDK_OFFSET(0x17E90020)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_PASSWORD_OFFSET UNITYSDK_OFFSET(0x17E90010)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_REDIRECTSTANDARDERROR_OFFSET UNITYSDK_OFFSET(0x17E8FFD0)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_REDIRECTSTANDARDINPUT_OFFSET UNITYSDK_OFFSET(0x17E8FFB0)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_REDIRECTSTANDARDOUTPUT_OFFSET UNITYSDK_OFFSET(0x17E8FFC0)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_STANDARDERRORENCODING_OFFSET UNITYSDK_OFFSET(0x17E8FFE0)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_STANDARDOUTPUTENCODING_OFFSET UNITYSDK_OFFSET(0x17E8FFF0)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_USERNAME_OFFSET UNITYSDK_OFFSET(0x17E8F510)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_USESHELLEXECUTE_OFFSET UNITYSDK_OFFSET(0x17E90000)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_WORKINGDIRECTORY_OFFSET UNITYSDK_OFFSET(0x17E8FF60)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_ARGUMENTS_OFFSET UNITYSDK_OFFSET(0x17E8FFA0)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_FILENAME_OFFSET UNITYSDK_OFFSET(0x17E90030)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CCTOR_OFFSET UNITYSDK_OFFSET(0x17E90040)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17E8EE30)
-#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x17E8CB80)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_ARGUMENTS_OFFSET UNITYSDK_OFFSET(0x18FB3FE0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_CREATENOWINDOW_OFFSET UNITYSDK_OFFSET(0x18FB4010)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_DOMAIN_OFFSET UNITYSDK_OFFSET(0x18FB47E0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_ENVIRONMENTVARIABLES_OFFSET UNITYSDK_OFFSET(0x18FB4030)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_ENVIRONMENT_OFFSET UNITYSDK_OFFSET(0x18FB4640)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_ERRORDIALOGPARENTHANDLE_OFFSET UNITYSDK_OFFSET(0x18FB48B0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_ERRORDIALOG_OFFSET UNITYSDK_OFFSET(0x18FB4890)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_FILENAME_OFFSET UNITYSDK_OFFSET(0x18FB4830)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_HAVEENVVARS_OFFSET UNITYSDK_OFFSET(0x18FB49F0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_LOADUSERPROFILE_OFFSET UNITYSDK_OFFSET(0x18FB4810)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_PASSWORDINCLEARTEXT_OFFSET UNITYSDK_OFFSET(0x18FB47C0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_PASSWORD_OFFSET UNITYSDK_OFFSET(0x18FB47A0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_REDIRECTSTANDARDERROR_OFFSET UNITYSDK_OFFSET(0x18FB46F0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_REDIRECTSTANDARDINPUT_OFFSET UNITYSDK_OFFSET(0x18FB46B0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_REDIRECTSTANDARDOUTPUT_OFFSET UNITYSDK_OFFSET(0x18FB46D0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_STANDARDERRORENCODING_OFFSET UNITYSDK_OFFSET(0x18FB4710)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_STANDARDOUTPUTENCODING_OFFSET UNITYSDK_OFFSET(0x18FB4730)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_USERNAME_OFFSET UNITYSDK_OFFSET(0x18FB4770)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_USESHELLEXECUTE_OFFSET UNITYSDK_OFFSET(0x18FB4750)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_VERBS_OFFSET UNITYSDK_OFFSET(0x18FB4A00)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_VERB_OFFSET UNITYSDK_OFFSET(0x18FB3FB0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_WINDOWSTYLE_OFFSET UNITYSDK_OFFSET(0x18FB48D0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_WORKINGDIRECTORY_OFFSET UNITYSDK_OFFSET(0x18FB4860)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_ARGUMENTS_OFFSET UNITYSDK_OFFSET(0x18FB4000)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_CREATENOWINDOW_OFFSET UNITYSDK_OFFSET(0x18FB4020)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_DOMAIN_OFFSET UNITYSDK_OFFSET(0x18FB4800)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_ERRORDIALOGPARENTHANDLE_OFFSET UNITYSDK_OFFSET(0x18FB48C0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_ERRORDIALOG_OFFSET UNITYSDK_OFFSET(0x18FB48A0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_FILENAME_OFFSET UNITYSDK_OFFSET(0x18FB4850)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_LOADUSERPROFILE_OFFSET UNITYSDK_OFFSET(0x18FB4820)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_PASSWORDINCLEARTEXT_OFFSET UNITYSDK_OFFSET(0x18FB47D0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_PASSWORD_OFFSET UNITYSDK_OFFSET(0x18FB47B0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_REDIRECTSTANDARDERROR_OFFSET UNITYSDK_OFFSET(0x18FB4700)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_REDIRECTSTANDARDINPUT_OFFSET UNITYSDK_OFFSET(0x18FB46C0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_REDIRECTSTANDARDOUTPUT_OFFSET UNITYSDK_OFFSET(0x18FB46E0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_STANDARDERRORENCODING_OFFSET UNITYSDK_OFFSET(0x18FB4720)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_STANDARDOUTPUTENCODING_OFFSET UNITYSDK_OFFSET(0x18FB4740)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_USERNAME_OFFSET UNITYSDK_OFFSET(0x18FB4790)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_USESHELLEXECUTE_OFFSET UNITYSDK_OFFSET(0x18FB4760)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_VERB_OFFSET UNITYSDK_OFFSET(0x18FB3FD0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_WINDOWSTYLE_OFFSET UNITYSDK_OFFSET(0x18FB48E0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_WORKINGDIRECTORY_OFFSET UNITYSDK_OFFSET(0x18FB4880)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CCTOR_OFFSET UNITYSDK_OFFSET(0x18FB4A60)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18FB3F40)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_2_OFFSET UNITYSDK_OFFSET(0x18FB3F90)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_3_OFFSET UNITYSDK_OFFSET(0x18FB3FA0)
+#define SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x18FB3F30)
 
 namespace System::Diagnostics
 {
-	inline static constexpr unsigned int ProcessStartInfo_TypeDefinitionIndex = 2535;
+	inline static constexpr unsigned int ProcessStartInfo_TypeDefinitionIndex = 2788;
 
 	class ProcessStartInfo : public ::System::Object
 	{
 	public:
 		static ::Il2CppArray<::System::String*>** StaticGet_empty()
 		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ProcessStartInfo_TypeDefinitionIndex)->GetStaticField(0x166D0);
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ProcessStartInfo_TypeDefinitionIndex)->GetStaticField(0x2920);
 		}
 		::System::String* fileName; // 0x10
 		::System::String* arguments; // 0x18
@@ -66,19 +93,39 @@ namespace System::Diagnostics
 		::System::Collections::Specialized::StringDictionary* environmentVariables; // 0x90
 		::System::Collections::Generic::IDictionary_2<::System::String*, ::System::String*>* environment; // 0x98
 
-		::System::Void _ctor(::System::Diagnostics::Process* parent)
+		::System::Void _ctor()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Diagnostics::Process*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_OFFSET))(this, parent);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _ctor_1(::System::String* fileName, ::System::String* arguments)
+		::System::Void _ctor_1(::System::Diagnostics::Process* parent)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_1_OFFSET))(this, fileName, arguments);
+			return ((::System::Void(*)(::PVOID, ::System::Diagnostics::Process*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_1_OFFSET))(this, parent);
+		}
+
+		::System::Void _ctor_2(::System::String* fileName)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_2_OFFSET))(this, fileName);
+		}
+
+		::System::Void _ctor_3(::System::String* fileName, ::System::String* arguments)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CTOR_3_OFFSET))(this, fileName, arguments);
 		}
 
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO__CCTOR_OFFSET))();
+		}
+
+		::System::String* get_Verb()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_VERB_OFFSET))(this);
+		}
+
+		::System::Void set_Verb(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_VERB_OFFSET))(this, value);
 		}
 
 		::System::String* get_Arguments()
@@ -91,9 +138,24 @@ namespace System::Diagnostics
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_ARGUMENTS_OFFSET))(this, value);
 		}
 
+		::System::Boolean get_CreateNoWindow()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_CREATENOWINDOW_OFFSET))(this);
+		}
+
+		::System::Void set_CreateNoWindow(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_CREATENOWINDOW_OFFSET))(this, value);
+		}
+
 		::System::Collections::Specialized::StringDictionary* get_EnvironmentVariables()
 		{
 			return ((::System::Collections::Specialized::StringDictionary*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_ENVIRONMENTVARIABLES_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IDictionary_2<::System::String*, ::System::String*>* get_Environment()
+		{
+			return ((::System::Collections::Generic::IDictionary_2<::System::String*, ::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_ENVIRONMENT_OFFSET))(this);
 		}
 
 		::System::Boolean get_RedirectStandardInput()
@@ -101,9 +163,19 @@ namespace System::Diagnostics
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_REDIRECTSTANDARDINPUT_OFFSET))(this);
 		}
 
+		::System::Void set_RedirectStandardInput(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_REDIRECTSTANDARDINPUT_OFFSET))(this, value);
+		}
+
 		::System::Boolean get_RedirectStandardOutput()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_REDIRECTSTANDARDOUTPUT_OFFSET))(this);
+		}
+
+		::System::Void set_RedirectStandardOutput(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_REDIRECTSTANDARDOUTPUT_OFFSET))(this, value);
 		}
 
 		::System::Boolean get_RedirectStandardError()
@@ -111,9 +183,19 @@ namespace System::Diagnostics
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_REDIRECTSTANDARDERROR_OFFSET))(this);
 		}
 
+		::System::Void set_RedirectStandardError(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_REDIRECTSTANDARDERROR_OFFSET))(this, value);
+		}
+
 		::System::Text::Encoding* get_StandardErrorEncoding()
 		{
 			return ((::System::Text::Encoding*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_STANDARDERRORENCODING_OFFSET))(this);
+		}
+
+		::System::Void set_StandardErrorEncoding(::System::Text::Encoding* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Text::Encoding*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_STANDARDERRORENCODING_OFFSET))(this, value);
 		}
 
 		::System::Text::Encoding* get_StandardOutputEncoding()
@@ -121,9 +203,19 @@ namespace System::Diagnostics
 			return ((::System::Text::Encoding*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_STANDARDOUTPUTENCODING_OFFSET))(this);
 		}
 
+		::System::Void set_StandardOutputEncoding(::System::Text::Encoding* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Text::Encoding*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_STANDARDOUTPUTENCODING_OFFSET))(this, value);
+		}
+
 		::System::Boolean get_UseShellExecute()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_USESHELLEXECUTE_OFFSET))(this);
+		}
+
+		::System::Void set_UseShellExecute(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_USESHELLEXECUTE_OFFSET))(this, value);
 		}
 
 		::System::String* get_UserName()
@@ -131,9 +223,29 @@ namespace System::Diagnostics
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_USERNAME_OFFSET))(this);
 		}
 
+		::System::Void set_UserName(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_USERNAME_OFFSET))(this, value);
+		}
+
 		::System::Security::SecureString* get_Password()
 		{
 			return ((::System::Security::SecureString*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_PASSWORD_OFFSET))(this);
+		}
+
+		::System::Void set_Password(::System::Security::SecureString* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::SecureString*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_PASSWORD_OFFSET))(this, value);
+		}
+
+		::System::String* get_PasswordInClearText()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_PASSWORDINCLEARTEXT_OFFSET))(this);
+		}
+
+		::System::Void set_PasswordInClearText(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_PASSWORDINCLEARTEXT_OFFSET))(this, value);
 		}
 
 		::System::String* get_Domain()
@@ -141,9 +253,19 @@ namespace System::Diagnostics
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_DOMAIN_OFFSET))(this);
 		}
 
+		::System::Void set_Domain(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_DOMAIN_OFFSET))(this, value);
+		}
+
 		::System::Boolean get_LoadUserProfile()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_LOADUSERPROFILE_OFFSET))(this);
+		}
+
+		::System::Void set_LoadUserProfile(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_LOADUSERPROFILE_OFFSET))(this, value);
 		}
 
 		::System::String* get_FileName()
@@ -161,9 +283,49 @@ namespace System::Diagnostics
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_WORKINGDIRECTORY_OFFSET))(this);
 		}
 
+		::System::Void set_WorkingDirectory(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_WORKINGDIRECTORY_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_ErrorDialog()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_ERRORDIALOG_OFFSET))(this);
+		}
+
+		::System::Void set_ErrorDialog(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_ERRORDIALOG_OFFSET))(this, value);
+		}
+
+		::System::IntPtr get_ErrorDialogParentHandle()
+		{
+			return ((::System::IntPtr(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_ERRORDIALOGPARENTHANDLE_OFFSET))(this);
+		}
+
+		::System::Void set_ErrorDialogParentHandle(::System::IntPtr value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_ERRORDIALOGPARENTHANDLE_OFFSET))(this, value);
+		}
+
+		::System::Diagnostics::ProcessWindowStyle get_WindowStyle()
+		{
+			return ((::System::Diagnostics::ProcessWindowStyle(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_WINDOWSTYLE_OFFSET))(this);
+		}
+
+		::System::Void set_WindowStyle(::System::Diagnostics::ProcessWindowStyle value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Diagnostics::ProcessWindowStyle))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_SET_WINDOWSTYLE_OFFSET))(this, value);
+		}
+
 		::System::Boolean get_HaveEnvVars()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_HAVEENVVARS_OFFSET))(this);
+		}
+
+		::Il2CppArray<::System::String*>* get_Verbs()
+		{
+			return ((::Il2CppArray<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_PROCESSSTARTINFO_GET_VERBS_OFFSET))(this);
 		}
 	};
 }

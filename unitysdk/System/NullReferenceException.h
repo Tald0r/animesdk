@@ -3,18 +3,16 @@
 #include "unitysdk/System/Runtime/Serialization/StreamingContext.h"
 #include "unitysdk/System/SystemException.h"
 
-namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_NULLREFERENCEEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15CA2C40)
-#define SYSTEM_NULLREFERENCEEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15CA2CB0)
-#define SYSTEM_NULLREFERENCEEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15CA2D20)
-#define SYSTEM_NULLREFERENCEEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15CA2BA0)
+#define SYSTEM_NULLREFERENCEEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F59980)
+#define SYSTEM_NULLREFERENCEEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17F599F0)
+#define SYSTEM_NULLREFERENCEEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x17F59910)
 
 namespace System
 {
-	inline static constexpr unsigned int NullReferenceException_TypeDefinitionIndex = 304;
+	inline static constexpr unsigned int NullReferenceException_TypeDefinitionIndex = 294;
 
 	class NullReferenceException : public ::System::SystemException
 	{
@@ -29,14 +27,9 @@ namespace System
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NULLREFERENCEEXCEPTION__CTOR_1_OFFSET))(this, message);
 		}
 
-		::System::Void _ctor_2(::System::String* message, ::System::Exception* innerException)
+		::System::Void _ctor_2(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Exception*))((::PBYTE)hIl2Cpp + SYSTEM_NULLREFERENCEEXCEPTION__CTOR_2_OFFSET))(this, message, innerException);
-		}
-
-		::System::Void _ctor_3(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_NULLREFERENCEEXCEPTION__CTOR_3_OFFSET))(this, info, context);
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_NULLREFERENCEEXCEPTION__CTOR_2_OFFSET))(this, info, context);
 		}
 	};
 }

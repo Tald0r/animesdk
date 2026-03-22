@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_MULTICASTNOTSUPPORTEDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15CA2800)
-#define SYSTEM_MULTICASTNOTSUPPORTEDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15CA2870)
-#define SYSTEM_MULTICASTNOTSUPPORTEDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15CA2760)
+#define SYSTEM_MULTICASTNOTSUPPORTEDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x188B0D50)
+#define SYSTEM_MULTICASTNOTSUPPORTEDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x188B0DC0)
+#define SYSTEM_MULTICASTNOTSUPPORTEDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x188B0CB0)
 
 namespace System
 {
-	inline static constexpr unsigned int MulticastNotSupportedException_TypeDefinitionIndex = 300;
+	inline static constexpr unsigned int MulticastNotSupportedException_TypeDefinitionIndex = 290;
 
 	class MulticastNotSupportedException : public ::System::SystemException
 	{

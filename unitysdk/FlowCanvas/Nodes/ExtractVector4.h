@@ -1,0 +1,26 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlowCanvas/Nodes/ExtractorNode_5.h"
+#include "unitysdk/UnityEngine/Vector4.h"
+
+#define FLOWCANVAS_NODES_EXTRACTVECTOR4_INVOKE_OFFSET UNITYSDK_OFFSET(0x19E01FB0)
+#define FLOWCANVAS_NODES_EXTRACTVECTOR4__CTOR_OFFSET UNITYSDK_OFFSET(0x19E01FE0)
+
+namespace FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int ExtractVector4_TypeDefinitionIndex = 26404;
+
+	class ExtractVector4 : public ::FlowCanvas::Nodes::ExtractorNode_5<::UnityEngine::Vector4, ::System::Single, ::System::Single, ::System::Single, ::System::Single>
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_EXTRACTVECTOR4__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Invoke(::UnityEngine::Vector4 vector, ::System::Single& x, ::System::Single& y, ::System::Single& z, ::System::Single& w)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector4, ::System::Single&, ::System::Single&, ::System::Single&, ::System::Single&))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_EXTRACTVECTOR4_INVOKE_OFFSET))(this, vector, x, y, z, w);
+		}
+	};
+}

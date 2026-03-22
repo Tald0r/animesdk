@@ -2,19 +2,23 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
+namespace System { template <typename T1, typename T2, typename T3, typename T4> class Func_4; }
+namespace System { template <typename T1, typename T2, typename T3> class Action_3; }
+namespace System { template <typename T1, typename T2, typename T3> class Func_3; }
 namespace System { template <typename T1, typename T2> class Action_2; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_STACKGUARD_TRYENTERONCURRENTSTACK_OFFSET UNITYSDK_OFFSET(0x17D02980)
-#define SYSTEM_LINQ_EXPRESSIONS_STACKGUARD__CTOR_OFFSET UNITYSDK_OFFSET(0x17D029B0)
+#define SYSTEM_LINQ_EXPRESSIONS_STACKGUARD_TRYENTERONCURRENTSTACK_OFFSET UNITYSDK_OFFSET(0x1A607A00)
+#define SYSTEM_LINQ_EXPRESSIONS_STACKGUARD__CTOR_OFFSET UNITYSDK_OFFSET(0x1A607A30)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int StackGuard_TypeDefinitionIndex = 3248;
+	inline static constexpr unsigned int StackGuard_TypeDefinitionIndex = 4536;
 
 	class StackGuard : public ::System::Object
 	{
 	public:
+		// static const ::System::Int32 MaxExecutionStackCount = 0x400; // 0x0
 		::System::Int32 _executionStackCount; // 0x10
 
 		::System::Void _ctor()

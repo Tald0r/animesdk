@@ -5,12 +5,12 @@
 
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_THREADING_THREADABORTEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15B986A0)
-#define SYSTEM_THREADING_THREADABORTEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15B98610)
+#define SYSTEM_THREADING_THREADABORTEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x192C8ED0)
+#define SYSTEM_THREADING_THREADABORTEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x192C8E10)
 
 namespace System::Threading
 {
-	inline static constexpr unsigned int ThreadAbortException_TypeDefinitionIndex = 846;
+	inline static constexpr unsigned int ThreadAbortException_TypeDefinitionIndex = 838;
 
 	class ThreadAbortException : public ::System::SystemException
 	{

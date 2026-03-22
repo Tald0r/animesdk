@@ -1,9 +1,8 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_9F66557673414516.h"
 
-namespace RPG::GameCore { class AdventureCharacterController; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_409_TypeDefinitionIndex = 44828;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_409_TypeDefinitionIndex = 45828;
 
 class Class_0_16E4307DCC419505_409
 {

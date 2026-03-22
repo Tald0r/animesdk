@@ -3,7 +3,7 @@
 
 namespace System::Net::Sockets
 {
-	inline static constexpr unsigned int SocketError_TypeDefinitionIndex = 2887;
+	inline static constexpr unsigned int SocketError_TypeDefinitionIndex = 3665;
 
 	enum class SocketError : ::System::Int32
 	{

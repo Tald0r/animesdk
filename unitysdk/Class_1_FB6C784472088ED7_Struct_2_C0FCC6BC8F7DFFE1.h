@@ -1,0 +1,45 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+namespace System { class String; }
+
+#define CLASS_1_FB6C784472088ED7_STRUCT_2_C0FCC6BC8F7DFFE1_METHOD_2_86538F53E1327F01_OFFSET UNITYSDK_OFFSET(0x391070)
+#define CLASS_1_FB6C784472088ED7_STRUCT_2_C0FCC6BC8F7DFFE1_METHOD_2_A957F695E7113877_1_OFFSET UNITYSDK_OFFSET(0x391010)
+#define CLASS_1_FB6C784472088ED7_STRUCT_2_C0FCC6BC8F7DFFE1_METHOD_2_A957F695E7113877_2_OFFSET UNITYSDK_OFFSET(0x391080)
+#define CLASS_1_FB6C784472088ED7_STRUCT_2_C0FCC6BC8F7DFFE1_METHOD_2_A957F695E7113877_OFFSET UNITYSDK_OFFSET(0x390FB0)
+
+inline static constexpr unsigned int Class_1_FB6C784472088ED7_Struct_2_C0FCC6BC8F7DFFE1_TypeDefinitionIndex = 36368;
+
+struct alignas(8) Class_1_FB6C784472088ED7_Struct_2_C0FCC6BC8F7DFFE1
+{
+	::System::UInt32 Field_2_0; // 0x10
+	::System::UInt64 Field_2_1; // 0x18
+	::System::Int32 Field_2_2; // 0x20
+	::System::Int32 Field_2_3; // 0x24
+	::System::Int32 Field_2_4; // 0x28
+	::System::Int32 Field_2_5; // 0x2C
+	::System::UInt32 Field_2_6; // 0x30
+	::System::UInt32 Field_2_7; // 0x34
+	::System::UInt32 Field_2_8; // 0x38
+
+	::System::String* Method_2_A957F695E7113877()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_FB6C784472088ED7_STRUCT_2_C0FCC6BC8F7DFFE1_METHOD_2_A957F695E7113877_OFFSET))(this);
+	}
+
+	::System::String* Method_2_A957F695E7113877_1()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_FB6C784472088ED7_STRUCT_2_C0FCC6BC8F7DFFE1_METHOD_2_A957F695E7113877_1_OFFSET))(this);
+	}
+
+	::System::Int32 Method_2_86538F53E1327F01(::System::String* a1)
+	{
+		return ((::System::Int32(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_FB6C784472088ED7_STRUCT_2_C0FCC6BC8F7DFFE1_METHOD_2_86538F53E1327F01_OFFSET))(this, a1);
+	}
+
+	::System::String* Method_2_A957F695E7113877_2()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_FB6C784472088ED7_STRUCT_2_C0FCC6BC8F7DFFE1_METHOD_2_A957F695E7113877_2_OFFSET))(this);
+	}
+};

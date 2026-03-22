@@ -1,0 +1,27 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIControllerContextBase.h"
+
+class Class_2_27DB1968BCF5D736;
+class Class_2_CA6B0A762D3100A4;
+
+#define MOLEMOLE_UISOCIALCIRCLENEWSROWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC84F1B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISocialCircleNewsRowContext_TypeDefinitionIndex = 59935;
+
+	class UISocialCircleNewsRowContext : public ::MoleMole::UIControllerContextBase
+	{
+	public:
+		::Class_2_CA6B0A762D3100A4* NewsData; // 0x28
+		::Class_2_27DB1968BCF5D736* LogData; // 0x30
+		::System::Int32 Day; // 0x38
+		::System::Boolean IsTimeTitle; // 0x3C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOCIALCIRCLENEWSROWCONTEXT__CTOR_OFFSET))(this);
+		}
+	};
+}

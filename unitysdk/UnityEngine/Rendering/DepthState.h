@@ -5,41 +5,29 @@
 
 namespace System { class Object; }
 
-#define UNITYENGINE_RENDERING_DEPTHSTATE_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x2048B80)
-#define UNITYENGINE_RENDERING_DEPTHSTATE_EQUALS_OFFSET UNITYSDK_OFFSET(0x202CB60)
-#define UNITYENGINE_RENDERING_DEPTHSTATE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x2048BE0)
-#define UNITYENGINE_RENDERING_DEPTHSTATE_GET_COMPAREFUNCTION_OFFSET UNITYSDK_OFFSET(0x2048B70)
-#define UNITYENGINE_RENDERING_DEPTHSTATE_GET_WRITEENABLED_OFFSET UNITYSDK_OFFSET(0x1FFDC00)
-#define UNITYENGINE_RENDERING_DEPTHSTATE_SET_COMPAREFUNCTION_OFFSET UNITYSDK_OFFSET(0x2037310)
-#define UNITYENGINE_RENDERING_DEPTHSTATE_SET_WRITEENABLED_OFFSET UNITYSDK_OFFSET(0xCE9D0)
+#define UNITYENGINE_RENDERING_DEPTHSTATE_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x9005D0)
+#define UNITYENGINE_RENDERING_DEPTHSTATE_EQUALS_OFFSET UNITYSDK_OFFSET(0x9005B0)
+#define UNITYENGINE_RENDERING_DEPTHSTATE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x900630)
+#define UNITYENGINE_RENDERING_DEPTHSTATE_GET_DEFAULTVALUE_OFFSET UNITYSDK_OFFSET(0x19F414F0)
+#define UNITYENGINE_RENDERING_DEPTHSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x3914D0)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int DepthState_TypeDefinitionIndex = 4534;
+	inline static constexpr unsigned int DepthState_TypeDefinitionIndex = 6209;
 
 	struct alignas(1) DepthState
 	{
 		::System::Byte m_WriteEnabled; // 0x10
 		::System::SByte m_CompareFunction; // 0x11
 
-		::System::Boolean get_writeEnabled()
+		::System::Void _ctor(::System::Boolean writeEnabled, ::UnityEngine::Rendering::CompareFunction compareFunction)
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DEPTHSTATE_GET_WRITEENABLED_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::UnityEngine::Rendering::CompareFunction))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DEPTHSTATE__CTOR_OFFSET))(this, writeEnabled, compareFunction);
 		}
 
-		::System::Void set_writeEnabled(::System::Boolean value)
+		static ::UnityEngine::Rendering::DepthState get_defaultValue()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DEPTHSTATE_SET_WRITEENABLED_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::CompareFunction get_compareFunction()
-		{
-			return ((::UnityEngine::Rendering::CompareFunction(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DEPTHSTATE_GET_COMPAREFUNCTION_OFFSET))(this);
-		}
-
-		::System::Void set_compareFunction(::UnityEngine::Rendering::CompareFunction value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::CompareFunction))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DEPTHSTATE_SET_COMPAREFUNCTION_OFFSET))(this, value);
+			return ((::UnityEngine::Rendering::DepthState(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DEPTHSTATE_GET_DEFAULTVALUE_OFFSET))();
 		}
 
 		::System::Boolean Equals(::UnityEngine::Rendering::DepthState other)

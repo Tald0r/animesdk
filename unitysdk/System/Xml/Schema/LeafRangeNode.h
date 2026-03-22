@@ -4,15 +4,18 @@
 #include "unitysdk/System/Xml/Schema/LeafNode.h"
 
 namespace System::Xml::Schema { class BitSet; }
+namespace System::Xml::Schema { class InteriorNode; }
+namespace System::Xml::Schema { class Positions; }
+namespace System::Xml::Schema { class SymbolsDictionary; }
 
-#define SYSTEM_XML_SCHEMA_LEAFRANGENODE_GET_MAX_OFFSET UNITYSDK_OFFSET(0x17D71B80)
-#define SYSTEM_XML_SCHEMA_LEAFRANGENODE_GET_MIN_OFFSET UNITYSDK_OFFSET(0x17D71B90)
-#define SYSTEM_XML_SCHEMA_LEAFRANGENODE_GET_NEXTITERATION_OFFSET UNITYSDK_OFFSET(0x17D71BA0)
-#define SYSTEM_XML_SCHEMA_LEAFRANGENODE_SET_NEXTITERATION_OFFSET UNITYSDK_OFFSET(0x17D71BB0)
+#define SYSTEM_XML_SCHEMA_LEAFRANGENODE_EXPANDTREE_OFFSET UNITYSDK_OFFSET(0x1A105680)
+#define SYSTEM_XML_SCHEMA_LEAFRANGENODE_GET_ISRANGENODE_OFFSET UNITYSDK_OFFSET(0x1A105670)
+#define SYSTEM_XML_SCHEMA_LEAFRANGENODE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A105650)
+#define SYSTEM_XML_SCHEMA_LEAFRANGENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A105610)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int LeafRangeNode_TypeDefinitionIndex = 2061;
+	inline static constexpr unsigned int LeafRangeNode_TypeDefinitionIndex = 1974;
 
 	class LeafRangeNode : public ::System::Xml::Schema::LeafNode
 	{
@@ -21,24 +24,24 @@ namespace System::Xml::Schema
 		::System::Decimal min; // 0x20
 		::System::Decimal max; // 0x30
 
-		::System::Decimal get_Max()
+		::System::Void _ctor(::System::Decimal min, ::System::Decimal max)
 		{
-			return ((::System::Decimal(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_LEAFRANGENODE_GET_MAX_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Decimal, ::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_LEAFRANGENODE__CTOR_OFFSET))(this, min, max);
 		}
 
-		::System::Decimal get_Min()
+		::System::Void _ctor_1(::System::Int32 pos, ::System::Decimal min, ::System::Decimal max)
 		{
-			return ((::System::Decimal(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_LEAFRANGENODE_GET_MIN_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Decimal, ::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_LEAFRANGENODE__CTOR_1_OFFSET))(this, pos, min, max);
 		}
 
-		::System::Xml::Schema::BitSet* get_NextIteration()
+		::System::Boolean get_IsRangeNode()
 		{
-			return ((::System::Xml::Schema::BitSet*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_LEAFRANGENODE_GET_NEXTITERATION_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_LEAFRANGENODE_GET_ISRANGENODE_OFFSET))(this);
 		}
 
-		::System::Void set_NextIteration(::System::Xml::Schema::BitSet* value)
+		::System::Void ExpandTree(::System::Xml::Schema::InteriorNode* parent, ::System::Xml::Schema::SymbolsDictionary* symbols, ::System::Xml::Schema::Positions* positions)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::BitSet*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_LEAFRANGENODE_SET_NEXTITERATION_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::InteriorNode*, ::System::Xml::Schema::SymbolsDictionary*, ::System::Xml::Schema::Positions*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_LEAFRANGENODE_EXPANDTREE_OFFSET))(this, parent, symbols, positions);
 		}
 	};
 }

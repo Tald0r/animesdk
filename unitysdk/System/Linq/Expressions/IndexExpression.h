@@ -4,34 +4,44 @@
 #include "unitysdk/System/Linq/Expressions/ExpressionType.h"
 
 namespace System { class Type; }
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
+namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 namespace System::Linq::Expressions { class ExpressionVisitor; }
 namespace System::Reflection { class PropertyInfo; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x17CB3A00)
-#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x17C8B5F0)
-#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x17C8B510)
-#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_INDEXER_OFFSET UNITYSDK_OFFSET(0x17CB39F0)
-#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x17CB3970)
-#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_OBJECT_OFFSET UNITYSDK_OFFSET(0x17CB39E0)
-#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x17CB3980)
-#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_REWRITE_OFFSET UNITYSDK_OFFSET(0x17CB30C0)
-#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17CA3000)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x1AD1F860)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x1AD1F6A0)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x1AD1F780)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_ARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1AD1F510)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_INDEXER_OFFSET UNITYSDK_OFFSET(0x1AD1F500)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x1AD1F480)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_OBJECT_OFFSET UNITYSDK_OFFSET(0x1AD1F4F0)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1AD1F490)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_REWRITE_OFFSET UNITYSDK_OFFSET(0x1AD1F890)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_UPDATE_OFFSET UNITYSDK_OFFSET(0x1AD1F550)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AD1F990)
+#define SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD1F410)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int IndexExpression_TypeDefinitionIndex = 3200;
+	inline static constexpr unsigned int IndexExpression_TypeDefinitionIndex = 4481;
 
 	class IndexExpression : public ::System::Linq::Expressions::Expression
 	{
 	public:
-		::System::Linq::Expressions::Expression* _Object_k__BackingField; // 0x10
-		::System::Reflection::PropertyInfo* _Indexer_k__BackingField; // 0x18
+		::System::Reflection::PropertyInfo* _Indexer_k__BackingField; // 0x10
+		::System::Linq::Expressions::Expression* _Object_k__BackingField; // 0x18
 		::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>* _arguments; // 0x20
 
 		::System::Void _ctor(::System::Linq::Expressions::Expression* instance, ::System::Reflection::PropertyInfo* indexer, ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>* arguments)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Linq::Expressions::Expression*, ::System::Reflection::PropertyInfo*, ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION__CTOR_OFFSET))(this, instance, indexer, arguments);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION__CTOR_1_OFFSET))(this);
 		}
 
 		::System::Linq::Expressions::ExpressionType get_NodeType()
@@ -52,6 +62,16 @@ namespace System::Linq::Expressions
 		::System::Reflection::PropertyInfo* get_Indexer()
 		{
 			return ((::System::Reflection::PropertyInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_INDEXER_OFFSET))(this);
+		}
+
+		::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>* get_Arguments()
+		{
+			return ((::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_GET_ARGUMENTS_OFFSET))(this);
+		}
+
+		::System::Linq::Expressions::IndexExpression* Update(::System::Linq::Expressions::Expression* object, ::System::Collections::Generic::IEnumerable_1<::System::Linq::Expressions::Expression*>* arguments)
+		{
+			return ((::System::Linq::Expressions::IndexExpression*(*)(::PVOID, ::System::Linq::Expressions::Expression*, ::System::Collections::Generic::IEnumerable_1<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INDEXEXPRESSION_UPDATE_OFFSET))(this, object, arguments);
 		}
 
 		::System::Linq::Expressions::Expression* GetArgument(::System::Int32 index)

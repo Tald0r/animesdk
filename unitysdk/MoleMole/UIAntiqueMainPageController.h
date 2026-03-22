@@ -1,0 +1,209 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_E5C5FCDBF5C3BDAC;
+class Class_2_680CA39CC66C138B;
+class Class_2_79AE422BA06F6D26_45;
+namespace MoleMole { class UICinemaRewardLevelWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_GETLEVELASSETPATH_OFFSET UNITYSDK_OFFSET(0xB289010)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xB287590)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ISTASKLOCK_OFFSET UNITYSDK_OFFSET(0xB289120)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONANTIQUELEVELCHANGE_OFFSET UNITYSDK_OFFSET(0xB289940)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONCOLLECTBUTTONFINISH_OFFSET UNITYSDK_OFFSET(0xB289850)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONCOLLECTBUTTON_OFFSET UNITYSDK_OFFSET(0xB2896D0)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB2875A0)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONEXPCHANGE_OFFSET UNITYSDK_OFFSET(0xB2898D0)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONHANDBOOKBUTTONFINISH_OFFSET UNITYSDK_OFFSET(0xB289510)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONHANDBOOKBUTTON_OFFSET UNITYSDK_OFFSET(0xB289460)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONINFOBUTTON_OFFSET UNITYSDK_OFFSET(0xB288EE0)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONLEVELBUTTONFINISH_OFFSET UNITYSDK_OFFSET(0xB2893E0)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONLEVELBUTTON_OFFSET UNITYSDK_OFFSET(0xB289190)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONREFRESHREWARDSTATE_OFFSET UNITYSDK_OFFSET(0xB2899B0)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONTASKBUTTONFINISH_OFFSET UNITYSDK_OFFSET(0xB289650)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONTASKBUTTON_OFFSET UNITYSDK_OFFSET(0xB289590)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB288E50)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB287980)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_PLAYOUTANIMATION_OFFSET UNITYSDK_OFFSET(0xB289310)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_REFRESHCOLLECTRATE_OFFSET UNITYSDK_OFFSET(0xB2887D0)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_REFRESHHANDBOOKRATE_OFFSET UNITYSDK_OFFSET(0xB2888F0)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_REFRESHLEFTEXPINFO_OFFSET UNITYSDK_OFFSET(0xB288F80)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_REFRESHLEVELINFO_OFFSET UNITYSDK_OFFSET(0xB288020)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_REFRESHTASK_OFFSET UNITYSDK_OFFSET(0xB2885E0)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_SHOWINFOTIPSONFIRSTOPEN_OFFSET UNITYSDK_OFFSET(0xB288B70)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB289A20)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB289A70)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB289AE0)
+#define MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB289AF0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAntiqueMainPageController_TypeDefinitionIndex = 42186;
+
+	class UIAntiqueMainPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_45* _view; // 0x2F8
+		::Class_2_680CA39CC66C138B* _model; // 0x300
+		::MoleMole::UICinemaRewardLevelWidgetController* _levelWidgetController; // 0x308
+		::Class_1_E5C5FCDBF5C3BDAC* _progressBarHandler; // 0x310
+		::System::String* _dataRecordId_ActionSubModule; // 0x318
+		::System::Int32 _dataRecordId_OpenPanel; // 0x320
+		::System::Int32 _dataRecordId_LevelButton; // 0x324
+		::System::Int32 _dataRecordId_HandbookButton; // 0x328
+		::System::Int32 _dataRecordId_TaskButton; // 0x32C
+		::System::Int32 _dataRecordId_CollectButton; // 0x330
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void ShowInfoTipsOnFirstOpen()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_SHOWINFOTIPSONFIRSTOPEN_OFFSET))(this);
+		}
+
+		::System::Void RefreshLevelInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_REFRESHLEVELINFO_OFFSET))(this);
+		}
+
+		::Foundation::AssetPath GetLevelAssetPath(::System::Int32 num, ::System::Boolean isGold)
+		{
+			return ((::Foundation::AssetPath(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_GETLEVELASSETPATH_OFFSET))(this, num, isGold);
+		}
+
+		::System::Void RefreshLeftExpInfo(::System::Int32 showItemCount, ::System::Int32 nextNeedCount)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_REFRESHLEFTEXPINFO_OFFSET))(this, showItemCount, nextNeedCount);
+		}
+
+		::System::Void RefreshTask()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_REFRESHTASK_OFFSET))(this);
+		}
+
+		::System::Boolean IsTaskLock()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ISTASKLOCK_OFFSET))(this);
+		}
+
+		::System::Void RefreshCollectRate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_REFRESHCOLLECTRATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshHandbookRate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_REFRESHHANDBOOKRATE_OFFSET))(this);
+		}
+
+		::System::Void OnLevelButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONLEVELBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnLevelButtonFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONLEVELBUTTONFINISH_OFFSET))(this);
+		}
+
+		::System::Void OnHandbookButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONHANDBOOKBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnHandbookButtonFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONHANDBOOKBUTTONFINISH_OFFSET))(this);
+		}
+
+		::System::Void OnTaskButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONTASKBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnTaskButtonFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONTASKBUTTONFINISH_OFFSET))(this);
+		}
+
+		::System::Void OnCollectButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONCOLLECTBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnCollectButtonFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONCOLLECTBUTTONFINISH_OFFSET))(this);
+		}
+
+		::System::Void OnExpChange(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONEXPCHANGE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnAntiqueLevelChange(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONANTIQUELEVELCHANGE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnRefreshRewardState(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONREFRESHREWARDSTATE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnInfoButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_ONINFOBUTTON_OFFSET))(this);
+		}
+
+		::System::Void PlayOutAnimation(::System::Action* finishCB)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER_PLAYOUTANIMATION_OFFSET))(this, finishCB);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUEMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

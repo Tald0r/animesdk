@@ -1,0 +1,51 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_4B0DF145F14A458C_Struct_2_0537EC851ECAE0C6.h"
+#include "unitysdk/Class_1_4B0DF145F14A458C_Struct_2_A10452A7E9060F35.h"
+#include "unitysdk/Enum_3_B19988988E716CB3.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_227;
+class Class_1_AD0B670E62600413;
+namespace Nap::NapECS { template <typename T1, typename T2> class DictionaryList_2; }
+
+#define CLASS_1_4B0DF145F14A458C_METHOD_1_04309940D97A325F_OFFSET UNITYSDK_OFFSET(0x9E38980)
+#define CLASS_1_4B0DF145F14A458C_METHOD_1_66BB3DDEE5892004_OFFSET UNITYSDK_OFFSET(0x9E38490)
+#define CLASS_1_4B0DF145F14A458C_METHOD_1_67C72510EB1016ED_OFFSET UNITYSDK_OFFSET(0x9E38AD0)
+#define CLASS_1_4B0DF145F14A458C_METHOD_1_E0474ABD724209BE_OFFSET UNITYSDK_OFFSET(0x9E38700)
+#define CLASS_1_4B0DF145F14A458C__CTOR_OFFSET UNITYSDK_OFFSET(0x9E38440)
+
+inline static constexpr unsigned int Class_1_4B0DF145F14A458C_TypeDefinitionIndex = 45580;
+
+class Class_1_4B0DF145F14A458C : public ::System::Object
+{
+public:
+	::Class_1_4B0DF145F14A458C_Struct_2_0537EC851ECAE0C6 Field_1_1; // 0x10
+	::Nap::NapECS::DictionaryList_2<::Enum_3_B19988988E716CB3, ::Class_0_16E4307DCC419505_227*>* Field_1_0; // 0x18
+	::System::Boolean Field_1_2; // 0x20
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_4B0DF145F14A458C__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_66BB3DDEE5892004(::Class_1_AD0B670E62600413* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_AD0B670E62600413*))((::PBYTE)hIl2Cpp + CLASS_1_4B0DF145F14A458C_METHOD_1_66BB3DDEE5892004_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_E0474ABD724209BE(::System::UInt32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + CLASS_1_4B0DF145F14A458C_METHOD_1_E0474ABD724209BE_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_04309940D97A325F(::Class_0_16E4307DCC419505_227* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_227*))((::PBYTE)hIl2Cpp + CLASS_1_4B0DF145F14A458C_METHOD_1_04309940D97A325F_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_67C72510EB1016ED(::Class_1_4B0DF145F14A458C_Struct_2_A10452A7E9060F35& a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_4B0DF145F14A458C_Struct_2_A10452A7E9060F35&))((::PBYTE)hIl2Cpp + CLASS_1_4B0DF145F14A458C_METHOD_1_67C72510EB1016ED_OFFSET))(this, a1);
+	}
+};

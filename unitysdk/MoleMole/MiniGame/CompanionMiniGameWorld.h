@@ -1,0 +1,77 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/MiniGame/CommonMiniGameWorld.h"
+
+class Class_0_16E4307DCC419505_289;
+namespace MoleMole { class UIWindowController; }
+namespace System { class String; }
+
+#define MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_GETMINIGAMELOGIC_OFFSET UNITYSDK_OFFSET(0x6AFE180)
+#define MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_GETPREFABPATH_OFFSET UNITYSDK_OFFSET(0x6AFE0F0)
+#define MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_GETRTNAME_OFFSET UNITYSDK_OFFSET(0x6AFE000)
+#define MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_ONENTER_OFFSET UNITYSDK_OFFSET(0x6AFE450)
+#define MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_ONEXIT_OFFSET UNITYSDK_OFFSET(0x6AFE670)
+#define MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_RTUSEALPHA_OFFSET UNITYSDK_OFFSET(0x6AFE090)
+#define MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_SHOWROOTPAGEUI_OFFSET UNITYSDK_OFFSET(0x6AFE220)
+#define MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD__CTOR_OFFSET UNITYSDK_OFFSET(0x6AFE960)
+#define MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD___BASE_ONENTER_OFFSET UNITYSDK_OFFSET(0x6AFE9B0)
+#define MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD___BASE_ONEXIT_OFFSET UNITYSDK_OFFSET(0x6AFE9C0)
+
+namespace MoleMole::MiniGame
+{
+	inline static constexpr unsigned int CompanionMiniGameWorld_TypeDefinitionIndex = 43902;
+
+	class CompanionMiniGameWorld : public ::MoleMole::MiniGame::CommonMiniGameWorld
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD__CTOR_OFFSET))(this);
+		}
+
+		::System::String* GetRTName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_GETRTNAME_OFFSET))(this);
+		}
+
+		::System::Boolean RTUseAlpha()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_RTUSEALPHA_OFFSET))(this);
+		}
+
+		::System::String* GetPrefabPath()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_GETPREFABPATH_OFFSET))(this);
+		}
+
+		::Class_0_16E4307DCC419505_289* GetMiniGameLogic()
+		{
+			return ((::Class_0_16E4307DCC419505_289*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_GETMINIGAMELOGIC_OFFSET))(this);
+		}
+
+		::MoleMole::UIWindowController* ShowRootPageUI()
+		{
+			return ((::MoleMole::UIWindowController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_SHOWROOTPAGEUI_OFFSET))(this);
+		}
+
+		::System::Void OnEnter()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_ONENTER_OFFSET))(this);
+		}
+
+		::System::Void OnExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD_ONEXIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnEnter()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD___BASE_ONENTER_OFFSET))(this);
+		}
+
+		::System::Void __base_OnExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_COMPANIONMINIGAMEWORLD___BASE_ONEXIT_OFFSET))(this);
+		}
+	};
+}

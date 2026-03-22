@@ -1,30 +1,42 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_2_20A66CAC7607EB44_1.h"
+#include "unitysdk/Class_2_A48F3719AA1CF200.h"
 
-namespace System { class String; }
+class Class_3_9EB037FB307C0985;
+namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_3_DCB7F8B839F0C44B_2_METHOD_3_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0x10D60E00)
-#define CLASS_3_DCB7F8B839F0C44B_2_METHOD_3_EBEE0D0A222A8264_OFFSET UNITYSDK_OFFSET(0x10D60E70)
-#define CLASS_3_DCB7F8B839F0C44B_2__CTOR_OFFSET UNITYSDK_OFFSET(0x10D60EE0)
+#define CLASS_3_DCB7F8B839F0C44B_2__CTOR_OFFSET UNITYSDK_OFFSET(0x1A163760)
 
-inline static constexpr unsigned int Class_3_DCB7F8B839F0C44B_2_TypeDefinitionIndex = 61111;
+inline static constexpr unsigned int Class_3_DCB7F8B839F0C44B_2_TypeDefinitionIndex = 34253;
 
-class Class_3_DCB7F8B839F0C44B_2 : public ::Class_2_20A66CAC7607EB44_1
+class Class_3_DCB7F8B839F0C44B_2 : public ::Class_2_A48F3719AA1CF200
 {
 public:
+	::System::Collections::Generic::List_1<::Class_3_9EB037FB307C0985*>* Field_3_6; // 0x10
+	::System::Collections::Generic::List_1<::System::Single>* Field_3_1; // 0x18
+	::System::Int32 Field_3_2; // 0x20
+	::System::Int32 Field_3_16; // 0x24
+	::System::Single Field_3_0; // 0x28
+	::System::Int32 Field_3_13; // 0x2C
+	::System::Int32 Field_3_21; // 0x30
+	::System::Int32 Field_3_7; // 0x34
+	::System::Boolean Field_3_17; // 0x38
+	::System::Int32 Field_3_12; // 0x3C
+	::System::Int32 Field_3_18; // 0x40
+	::System::Int32 Field_3_9; // 0x44
+	::System::Int32 Field_3_11; // 0x48
+	::System::Int32 Field_3_20; // 0x4C
+	::System::Int32 Field_3_14; // 0x50
+	::System::Int32 Field_3_4; // 0x54
+	::System::Int32 Field_3_10; // 0x58
+	::System::Int32 Field_3_5; // 0x5C
+	::System::Int32 Field_3_19; // 0x60
+	::System::Int32 Field_3_3; // 0x64
+	::System::Int32 Field_3_15; // 0x68
+	::System::Int32 Field_3_8; // 0x6C
+
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_DCB7F8B839F0C44B_2__CTOR_OFFSET))(this);
-	}
-
-	::System::String* Method_3_88B60F3B95FAA4F1()
-	{
-		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_DCB7F8B839F0C44B_2_METHOD_3_88B60F3B95FAA4F1_OFFSET))(this);
-	}
-
-	::System::Void Method_3_EBEE0D0A222A8264()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_DCB7F8B839F0C44B_2_METHOD_3_EBEE0D0A222A8264_OFFSET))(this);
 	}
 };

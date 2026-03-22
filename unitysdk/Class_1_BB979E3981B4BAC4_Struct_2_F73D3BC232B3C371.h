@@ -1,0 +1,15 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+#define CLASS_1_BB979E3981B4BAC4_STRUCT_2_F73D3BC232B3C371_EXECUTE_OFFSET UNITYSDK_OFFSET(0x2C6D20)
+
+inline static constexpr unsigned int Class_1_BB979E3981B4BAC4_Struct_2_F73D3BC232B3C371_TypeDefinitionIndex = 75281;
+
+struct alignas(1) Class_1_BB979E3981B4BAC4_Struct_2_F73D3BC232B3C371
+{
+	::System::Void Execute(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_BB979E3981B4BAC4_STRUCT_2_F73D3BC232B3C371_EXECUTE_OFFSET))(this, a1);
+	}
+};

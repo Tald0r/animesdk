@@ -1,36 +1,36 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
-#include "unitysdk/UnityEngine/Rendering/MSAASamples.h"
-#include "unitysdk/UnityEngine/Rendering/RTHandleProperties.h"
+#include "unitysdk/UnityEngine/NAPRenderPipeline0/MSAASamples.h"
+#include "unitysdk/UnityEngine/NAPRenderPipeline0/RTHandleProperties.h"
 
 namespace System { template <typename T1, typename T2, typename T3> class Func_3; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
-namespace UnityEngine::Rendering { class RTHandle; }
-namespace UnityEngine::Rendering { class RTHandleSystem; }
+namespace UnityEngine::NAPRenderPipeline0 { class RTHandle; }
+namespace UnityEngine::NAPRenderPipeline0 { class RTHandleSystem; }
 
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_ALLOCBUFFER_OFFSET UNITYSDK_OFFSET(0x180B1B50)
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x180B2640)
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x180B22E0)
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GETFRAMERT_OFFSET UNITYSDK_OFFSET(0x180B1A80)
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GET_MAXHEIGHT_OFFSET UNITYSDK_OFFSET(0x180B1A20)
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GET_MAXWIDTH_OFFSET UNITYSDK_OFFSET(0x180B1A00)
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GET_RTHANDLEPROPERTIES_OFFSET UNITYSDK_OFFSET(0x180B1A40)
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_RELEASEALL_OFFSET UNITYSDK_OFFSET(0x180B2330)
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_RELEASEBUFFER_OFFSET UNITYSDK_OFFSET(0x180B1D80)
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_SWAPANDSETREFERENCESIZE_OFFSET UNITYSDK_OFFSET(0x180B1EC0)
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_SWAP_OFFSET UNITYSDK_OFFSET(0x180B1F00)
-#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM__CTOR_OFFSET UNITYSDK_OFFSET(0x180B2690)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_ALLOCBUFFER_OFFSET UNITYSDK_OFFSET(0x1842E9D0)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x1842F730)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1842F300)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GETFRAMERT_OFFSET UNITYSDK_OFFSET(0x1842E8B0)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GET_MAXHEIGHT_OFFSET UNITYSDK_OFFSET(0x1842E850)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GET_MAXWIDTH_OFFSET UNITYSDK_OFFSET(0x1842E830)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GET_RTHANDLEPROPERTIES_OFFSET UNITYSDK_OFFSET(0x1842E870)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_RELEASEALL_OFFSET UNITYSDK_OFFSET(0x1842F380)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_RELEASEBUFFER_OFFSET UNITYSDK_OFFSET(0x1842EC50)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_SWAPANDSETREFERENCESIZE_OFFSET UNITYSDK_OFFSET(0x1842EE40)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_SWAP_OFFSET UNITYSDK_OFFSET(0x1842EEC0)
+#define UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM__CTOR_OFFSET UNITYSDK_OFFSET(0x1842F7E0)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int BufferedRTHandleSystem_TypeDefinitionIndex = 27129;
+	inline static constexpr unsigned int BufferedRTHandleSystem_TypeDefinitionIndex = 9570;
 
 	class BufferedRTHandleSystem : public ::System::Object
 	{
 	public:
-		::UnityEngine::Rendering::RTHandleSystem* m_RTHandleSystem; // 0x10
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Il2CppArray<::UnityEngine::Rendering::RTHandle*>*>* m_RTHandles; // 0x18
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Il2CppArray<::UnityEngine::NAPRenderPipeline0::RTHandle*>*>* m_RTHandles; // 0x10
+		::UnityEngine::NAPRenderPipeline0::RTHandleSystem* m_RTHandleSystem; // 0x18
 		::System::Boolean m_DisposedValue; // 0x20
 
 		::System::Void _ctor()
@@ -48,19 +48,19 @@ namespace UnityEngine::Rendering
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GET_MAXHEIGHT_OFFSET))(this);
 		}
 
-		::UnityEngine::Rendering::RTHandleProperties get_rtHandleProperties()
+		::UnityEngine::NAPRenderPipeline0::RTHandleProperties get_rtHandleProperties()
 		{
-			return ((::UnityEngine::Rendering::RTHandleProperties(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GET_RTHANDLEPROPERTIES_OFFSET))(this);
+			return ((::UnityEngine::NAPRenderPipeline0::RTHandleProperties(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GET_RTHANDLEPROPERTIES_OFFSET))(this);
 		}
 
-		::UnityEngine::Rendering::RTHandle* GetFrameRT(::System::Int32 bufferId, ::System::Int32 frameIndex)
+		::UnityEngine::NAPRenderPipeline0::RTHandle* GetFrameRT(::System::Int32 bufferId, ::System::Int32 frameIndex)
 		{
-			return ((::UnityEngine::Rendering::RTHandle*(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GETFRAMERT_OFFSET))(this, bufferId, frameIndex);
+			return ((::UnityEngine::NAPRenderPipeline0::RTHandle*(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_GETFRAMERT_OFFSET))(this, bufferId, frameIndex);
 		}
 
-		::System::Void AllocBuffer(::System::Int32 bufferId, ::System::Func_3<::UnityEngine::Rendering::RTHandleSystem*, ::System::Int32, ::UnityEngine::Rendering::RTHandle*>* allocator, ::System::Int32 bufferCount)
+		::System::Void AllocBuffer(::System::Int32 bufferId, ::System::Func_3<::UnityEngine::NAPRenderPipeline0::RTHandleSystem*, ::System::Int32, ::UnityEngine::NAPRenderPipeline0::RTHandle*>* allocator, ::System::Int32 bufferCount)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Func_3<::UnityEngine::Rendering::RTHandleSystem*, ::System::Int32, ::UnityEngine::Rendering::RTHandle*>*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_ALLOCBUFFER_OFFSET))(this, bufferId, allocator, bufferCount);
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Func_3<::UnityEngine::NAPRenderPipeline0::RTHandleSystem*, ::System::Int32, ::UnityEngine::NAPRenderPipeline0::RTHandle*>*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_ALLOCBUFFER_OFFSET))(this, bufferId, allocator, bufferCount);
 		}
 
 		::System::Void ReleaseBuffer(::System::Int32 bufferId)
@@ -68,9 +68,9 @@ namespace UnityEngine::Rendering
 			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_RELEASEBUFFER_OFFSET))(this, bufferId);
 		}
 
-		::System::Void SwapAndSetReferenceSize(::System::Int32 width, ::System::Int32 height, ::UnityEngine::Rendering::MSAASamples msaaSamples)
+		::System::Void SwapAndSetReferenceSize(::System::Int32 width, ::System::Int32 height, ::UnityEngine::NAPRenderPipeline0::MSAASamples msaaSamples)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::UnityEngine::Rendering::MSAASamples))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_SWAPANDSETREFERENCESIZE_OFFSET))(this, width, height, msaaSamples);
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::UnityEngine::NAPRenderPipeline0::MSAASamples))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_BUFFEREDRTHANDLESYSTEM_SWAPANDSETREFERENCESIZE_OFFSET))(this, width, height, msaaSamples);
 		}
 
 		::System::Void Swap()

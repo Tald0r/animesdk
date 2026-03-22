@@ -3,36 +3,67 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/UI/SmoothMaskMaterial_Params.h"
 
-namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Material; }
 namespace UnityEngine::UI { class SmoothMask; }
 namespace UnityEngine::UI { class SmoothMaskMaterial_MatEntry; }
 
-#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_ADDMASKOVERRIDESMOOTHMASK_OFFSET UNITYSDK_OFFSET(0x1835B240)
-#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_ADD_OFFSET UNITYSDK_OFFSET(0x1835AD60)
-#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_CLEARALL_OFFSET UNITYSDK_OFFSET(0x1835BCE0)
-#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_REMOVEMASKOVERRIDESMOOTHMASK_OFFSET UNITYSDK_OFFSET(0x1835B350)
-#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_REMOVE_OFFSET UNITYSDK_OFFSET(0x1835BB90)
-#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_SETALLPARAMS_OFFSET UNITYSDK_OFFSET(0x1835AC70)
-#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_SETMATENTRYPARAMS_OFFSET UNITYSDK_OFFSET(0x1835B130)
-#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_SETPARAMS_OFFSET UNITYSDK_OFFSET(0x1835B420)
-#define UNITYENGINE_UI_SMOOTHMASKMATERIAL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1835BDD0)
+#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_ADD_OFFSET UNITYSDK_OFFSET(0x1A7FD590)
+#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_REMOVE_OFFSET UNITYSDK_OFFSET(0x1A7FE0F0)
+#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_SETALLPARAMS_OFFSET UNITYSDK_OFFSET(0x1A7FDF10)
+#define UNITYENGINE_UI_SMOOTHMASKMATERIAL_SETPARAMS_OFFSET UNITYSDK_OFFSET(0x1A7FD980)
+#define UNITYENGINE_UI_SMOOTHMASKMATERIAL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A7FE320)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int SmoothMaskMaterial_TypeDefinitionIndex = 5622;
+	inline static constexpr unsigned int SmoothMaskMaterial_TypeDefinitionIndex = 8437;
 
 	class SmoothMaskMaterial : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Generic::List_1<::UnityEngine::UI::SmoothMaskMaterial_MatEntry*>** StaticGet_m_List()
 		{
-			return (::System::Collections::Generic::List_1<::UnityEngine::UI::SmoothMaskMaterial_MatEntry*>**)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0xA510);
+			return (::System::Collections::Generic::List_1<::UnityEngine::UI::SmoothMaskMaterial_MatEntry*>**)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0x7580);
 		}
-		static ::Il2CppArray<::System::String*>** StaticGet_TypeKeywords()
+		static ::System::Int32* StaticGet__SmoothMaskTransformA()
 		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0xA518);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0x3AC0);
+		}
+		static ::System::Int32* StaticGet__SmoothMaskTransformD()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0x3AC4);
+		}
+		static ::System::Int32* StaticGet__SmoothMaskTexture()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0x3AC8);
+		}
+		static ::System::Int32* StaticGet__SmoothMaskTransform()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0x3ACC);
+		}
+		static ::System::Int32* StaticGet__SmoothMaskSoftRanges()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0x3AD0);
+		}
+		static ::System::Int32* StaticGet__SmoothMaskTransformC()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0x3AD4);
+		}
+		static ::System::Int32* StaticGet__SmoothMaskInvert()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0x3AD8);
+		}
+		static ::System::Int32* StaticGet__SmoothMaskFillParams()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0x3ADC);
+		}
+		static ::System::Int32* StaticGet__SmoothMaskType()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0x3AE0);
+		}
+		static ::System::Int32* StaticGet__SmoothMaskTransformB()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SmoothMaskMaterial_TypeDefinitionIndex)->GetStaticField(0x3AE4);
 		}
 
 		static ::System::Void _cctor()
@@ -45,16 +76,6 @@ namespace UnityEngine::UI
 			return ((::UnityEngine::Material*(*)(::UnityEngine::Material*, ::UnityEngine::UI::SmoothMask*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASKMATERIAL_ADD_OFFSET))(baseMat, mask);
 		}
 
-		static ::System::Void AddMaskOverrideSmoothMask(::UnityEngine::Material* smoothMaskMat, ::UnityEngine::Material* maskMat)
-		{
-			return ((::System::Void(*)(::UnityEngine::Material*, ::UnityEngine::Material*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASKMATERIAL_ADDMASKOVERRIDESMOOTHMASK_OFFSET))(smoothMaskMat, maskMat);
-		}
-
-		static ::System::Void RemoveMaskOverrideSmoothMask(::UnityEngine::Material* smoothMaskMat, ::UnityEngine::Material* maskMat)
-		{
-			return ((::System::Void(*)(::UnityEngine::Material*, ::UnityEngine::Material*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASKMATERIAL_REMOVEMASKOVERRIDESMOOTHMASK_OFFSET))(smoothMaskMat, maskMat);
-		}
-
 		static ::System::Void SetAllParams(::UnityEngine::UI::SmoothMask* mask)
 		{
 			return ((::System::Void(*)(::UnityEngine::UI::SmoothMask*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASKMATERIAL_SETALLPARAMS_OFFSET))(mask);
@@ -65,19 +86,9 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::UnityEngine::Material*, ::UnityEngine::UI::SmoothMaskMaterial_Params&, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASKMATERIAL_SETPARAMS_OFFSET))(material, parameters, forceSet);
 		}
 
-		static ::System::Void SetMatEntryParams(::UnityEngine::UI::SmoothMaskMaterial_MatEntry* ent, ::UnityEngine::UI::SmoothMaskMaterial_Params& parameters, ::System::Boolean forceSet)
-		{
-			return ((::System::Void(*)(::UnityEngine::UI::SmoothMaskMaterial_MatEntry*, ::UnityEngine::UI::SmoothMaskMaterial_Params&, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASKMATERIAL_SETMATENTRYPARAMS_OFFSET))(ent, parameters, forceSet);
-		}
-
 		static ::System::Void Remove(::UnityEngine::Material* customMat)
 		{
 			return ((::System::Void(*)(::UnityEngine::Material*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASKMATERIAL_REMOVE_OFFSET))(customMat);
-		}
-
-		static ::System::Void ClearAll()
-		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASKMATERIAL_CLEARALL_OFFSET))();
 		}
 	};
 }

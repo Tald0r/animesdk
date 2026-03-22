@@ -1,0 +1,183 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_7C92B1F86E869A52;
+namespace MoleMole { class IVideoPlayer; }
+namespace MoleMole { class MultipleVideoPlayerManager; }
+namespace MoleMole { class UIActivityGachaPopContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine::UI::Extension { class UITimeWidget; }
+
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_CHECKUIPANELSHOW_OFFSET UNITYSDK_OFFSET(0xA4BEC10)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xA4BDA90)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONACTIVITYEND_OFFSET UNITYSDK_OFFSET(0xA4BD8C0)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONCLICKJUMPBUTTON_OFFSET UNITYSDK_OFFSET(0xA4BD940)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA4BE1F0)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA4BE290)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA4BDAA0)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA4BDD10)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONVIDEOERROR_OFFSET UNITYSDK_OFFSET(0xA4BEB90)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONVIDEOFINISH_OFFSET UNITYSDK_OFFSET(0xA4BEAA0)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONVIDEOPHASESTART_OFFSET UNITYSDK_OFFSET(0xA4BE880)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONVIDEOPREPARE_OFFSET UNITYSDK_OFFSET(0xA4BE6B0)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_OPENPALYGACHAVIDEO_OFFSET UNITYSDK_OFFSET(0xA4BDFB0)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_PLAYGACHAVIDEOENTER_OFFSET UNITYSDK_OFFSET(0xA4BE5B0)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_REFRESHACTIVITYINFO_OFFSET UNITYSDK_OFFSET(0xA4BD210)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_REFRESHACTIVITYTIME_OFFSET UNITYSDK_OFFSET(0xA4BD360)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_RERFRESHJUMPBUTTON_OFFSET UNITYSDK_OFFSET(0xA4BD6A0)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xA4BDB70)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_SHOWUIPANEL_OFFSET UNITYSDK_OFFSET(0xA4BCF90)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA4BEC90)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA4BECA0)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA4BED10)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA4BED20)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA4BED30)
+#define MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xA4BEDA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityGachaVideoPopWindowController_TypeDefinitionIndex = 72913;
+
+	class UIActivityGachaVideoPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_7C92B1F86E869A52* _view; // 0x2F8
+		::MoleMole::UIActivityGachaPopContext* context; // 0x300
+		::Foundation::Coroutine::CoroutineHandle guaranteeHandle; // 0x308
+		::System::Collections::Generic::List_1<::System::String*>* videoList; // 0x310
+		::System::Collections::Generic::List_1<::System::UInt32>* audioList; // 0x318
+		::MoleMole::MultipleVideoPlayerManager* _multipleVideoPlayerManager; // 0x320
+		::System::Boolean hasShowUI; // 0x328
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void ShowUIPanel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_SHOWUIPANEL_OFFSET))(this);
+		}
+
+		::System::Void RefreshActivityInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_REFRESHACTIVITYINFO_OFFSET))(this);
+		}
+
+		::System::Void RefreshActivityTime()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_REFRESHACTIVITYTIME_OFFSET))(this);
+		}
+
+		::System::Void OnActivityEnd(::UnityEngine::UI::Extension::UITimeWidget* timeWidget)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UITimeWidget*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONACTIVITYEND_OFFSET))(this, timeWidget);
+		}
+
+		::System::Void RerfreshJumpButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_RERFRESHJUMPBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnClickJumpButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONCLICKJUMPBUTTON_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OpenPalyGachaVideo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_OPENPALYGACHAVIDEO_OFFSET))(this);
+		}
+
+		::System::Void PlayGachaVideoEnter()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_PLAYGACHAVIDEOENTER_OFFSET))(this);
+		}
+
+		::System::Void OnVideoPrepare(::MoleMole::MultipleVideoPlayerManager* videoPlayerManager)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MultipleVideoPlayerManager*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONVIDEOPREPARE_OFFSET))(this, videoPlayerManager);
+		}
+
+		::System::Void OnVideoPhaseStart(::MoleMole::MultipleVideoPlayerManager* videoManager, ::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MultipleVideoPlayerManager*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONVIDEOPHASESTART_OFFSET))(this, videoManager, index);
+		}
+
+		::System::Void OnVideoFinish(::MoleMole::MultipleVideoPlayerManager* videoManager, ::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MultipleVideoPlayerManager*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONVIDEOFINISH_OFFSET))(this, videoManager, index);
+		}
+
+		::System::Void OnVideoError(::MoleMole::IVideoPlayer* video, ::System::String* error_msg)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::IVideoPlayer*, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_ONVIDEOERROR_OFFSET))(this, video, error_msg);
+		}
+
+		::System::Void CheckUIPanelShow()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER_CHECKUIPANELSHOW_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGACHAVIDEOPOPWINDOWCONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

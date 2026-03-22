@@ -2,24 +2,26 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_XML_XMLCONFIGURATION_XMLREADERSECTION_GET_COLLAPSEWHITESPACEINTOEMPTYSTRING_OFFSET UNITYSDK_OFFSET(0x17DE4050)
-#define SYSTEM_XML_XMLCONFIGURATION_XMLREADERSECTION_GET_PROHIBITDEFAULTURLRESOLVER_OFFSET UNITYSDK_OFFSET(0x17DE4280)
+namespace System::Xml { class XmlResolver; }
+
+#define SYSTEM_XML_XMLCONFIGURATION_XMLREADERSECTION_CREATEDEFAULTRESOLVER_OFFSET UNITYSDK_OFFSET(0x199A23D0)
+#define SYSTEM_XML_XMLCONFIGURATION_XMLREADERSECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x199A2410)
 
 namespace System::Xml::XmlConfiguration
 {
-	inline static constexpr unsigned int XmlReaderSection_TypeDefinitionIndex = 2224;
+	inline static constexpr unsigned int XmlReaderSection_TypeDefinitionIndex = 2237;
 
 	class XmlReaderSection : public ::System::Object
 	{
 	public:
-		static ::System::Boolean get_ProhibitDefaultUrlResolver()
+		::System::Void _ctor()
 		{
-			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLCONFIGURATION_XMLREADERSECTION_GET_PROHIBITDEFAULTURLRESOLVER_OFFSET))();
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLCONFIGURATION_XMLREADERSECTION__CTOR_OFFSET))(this);
 		}
 
-		static ::System::Boolean get_CollapseWhiteSpaceIntoEmptyString()
+		static ::System::Xml::XmlResolver* CreateDefaultResolver()
 		{
-			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLCONFIGURATION_XMLREADERSECTION_GET_COLLAPSEWHITESPACEINTOEMPTYSTRING_OFFSET))();
+			return ((::System::Xml::XmlResolver*(*)())((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLCONFIGURATION_XMLREADERSECTION_CREATEDEFAULTRESOLVER_OFFSET))();
 		}
 	};
 }

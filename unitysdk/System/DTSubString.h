@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define SYSTEM_DTSUBSTRING_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x2003A70)
+#define SYSTEM_DTSUBSTRING_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x87A290)
 
 namespace System
 {
-	inline static constexpr unsigned int DTSubString_TypeDefinitionIndex = 260;
+	inline static constexpr unsigned int DTSubString_TypeDefinitionIndex = 247;
 
 	struct alignas(8) DTSubString
 	{

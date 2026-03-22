@@ -1,0 +1,46 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_EEA0111A28582B57.h"
+
+class Class_2_777A5D016ADC7368;
+namespace MoleMole { class MonoGamepadCustomList; }
+namespace MoleMole { class UIControlCollection; }
+
+#define CLASS_2_C7387D40D4120A48_CLASS_2_7F61BD52C3F09565_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x7BFE460)
+#define CLASS_2_C7387D40D4120A48_CLASS_2_7F61BD52C3F09565_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7BFE500)
+#define CLASS_2_C7387D40D4120A48_CLASS_2_7F61BD52C3F09565_METHOD_2_E6CC964F3C187CBD_OFFSET UNITYSDK_OFFSET(0x7BFE580)
+#define CLASS_2_C7387D40D4120A48_CLASS_2_7F61BD52C3F09565_METHOD_2_F72FA9E8720A047A_OFFSET UNITYSDK_OFFSET(0x7BFE570)
+#define CLASS_2_C7387D40D4120A48_CLASS_2_7F61BD52C3F09565__CTOR_OFFSET UNITYSDK_OFFSET(0x7BFE4F0)
+
+inline static constexpr unsigned int Class_2_C7387D40D4120A48_Class_2_7F61BD52C3F09565_TypeDefinitionIndex = 50945;
+
+class Class_2_C7387D40D4120A48_Class_2_7F61BD52C3F09565 : public ::Class_1_EEA0111A28582B57
+{
+public:
+	::MoleMole::MonoGamepadCustomList* Field_2_0; // 0x18
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C7387D40D4120A48_CLASS_2_7F61BD52C3F09565__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_445108444CB6DC1F(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_C7387D40D4120A48_CLASS_2_7F61BD52C3F09565_METHOD_2_445108444CB6DC1F_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_C8903A36ECBA4078(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_C7387D40D4120A48_CLASS_2_7F61BD52C3F09565_METHOD_2_C8903A36ECBA4078_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_F72FA9E8720A047A(::MoleMole::MonoGamepadCustomList* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadCustomList*))((::PBYTE)hIl2Cpp + CLASS_2_C7387D40D4120A48_CLASS_2_7F61BD52C3F09565_METHOD_2_F72FA9E8720A047A_OFFSET))(this, a1);
+	}
+
+	::MoleMole::MonoGamepadCustomList* Method_2_E6CC964F3C187CBD()
+	{
+		return ((::MoleMole::MonoGamepadCustomList*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C7387D40D4120A48_CLASS_2_7F61BD52C3F09565_METHOD_2_E6CC964F3C187CBD_OFFSET))(this);
+	}
+};

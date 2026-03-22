@@ -13,38 +13,29 @@ namespace System::Runtime::Remoting::Messaging { class IMessage; }
 namespace System::Runtime::Remoting::Messaging { class IMessageCtrl; }
 namespace System::Runtime::Remoting::Messaging { class IMessageSink; }
 
-#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_ATTACHSERVEROBJECT_OFFSET UNITYSDK_OFFSET(0x15D122F0)
-#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_CREATEOBJREF_OFFSET UNITYSDK_OFFSET(0x15D10DC0)
-#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_DISPOSESERVEROBJECT_OFFSET UNITYSDK_OFFSET(0x15D12A80)
-#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_GET_CONTEXT_OFFSET UNITYSDK_OFFSET(0x15D12AE0)
-#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_GET_LEASE_OFFSET UNITYSDK_OFFSET(0x15D12AD0)
-#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_GET_OBJECTTYPE_OFFSET UNITYSDK_OFFSET(0x15D12A20)
-#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_ONLIFETIMEEXPIRED_OFFSET UNITYSDK_OFFSET(0x15D12A30)
-#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_SET_CONTEXT_OFFSET UNITYSDK_OFFSET(0x15D12AF0)
-#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_STARTTRACKINGLIFETIME_OFFSET UNITYSDK_OFFSET(0x15D10C30)
-#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0x15D12A10)
+#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_ATTACHSERVEROBJECT_OFFSET UNITYSDK_OFFSET(0x17FE02A0)
+#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_CREATEOBJREF_OFFSET UNITYSDK_OFFSET(0x17FDE980)
+#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_DISPOSESERVEROBJECT_OFFSET UNITYSDK_OFFSET(0x17FE0840)
+#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_ONLIFETIMEEXPIRED_OFFSET UNITYSDK_OFFSET(0x17FE07F0)
+#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_STARTTRACKINGLIFETIME_OFFSET UNITYSDK_OFFSET(0x17FDE7F0)
+#define SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0x17FE07E0)
 
 namespace System::Runtime::Remoting
 {
-	inline static constexpr unsigned int ServerIdentity_TypeDefinitionIndex = 1205;
+	inline static constexpr unsigned int ServerIdentity_TypeDefinitionIndex = 1256;
 
 	class ServerIdentity : public ::System::Runtime::Remoting::Identity
 	{
 	public:
 		::System::Type* _objectType; // 0x48
-		::System::Runtime::Remoting::Messaging::IMessageSink* _serverSink; // 0x50
+		::System::MarshalByRefObject* _serverObject; // 0x50
 		::System::Runtime::Remoting::Contexts::Context* _context; // 0x58
-		::System::MarshalByRefObject* _serverObject; // 0x60
+		::System::Runtime::Remoting::Messaging::IMessageSink* _serverSink; // 0x60
 		::System::Runtime::Remoting::Lifetime::Lease* _lease; // 0x68
 
 		::System::Void _ctor(::System::String* objectUri, ::System::Runtime::Remoting::Contexts::Context* context, ::System::Type* objectType)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Runtime::Remoting::Contexts::Context*, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY__CTOR_OFFSET))(this, objectUri, context, objectType);
-		}
-
-		::System::Type* get_ObjectType()
-		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_GET_OBJECTTYPE_OFFSET))(this);
 		}
 
 		::System::Void StartTrackingLifetime(::System::Runtime::Remoting::Lifetime::ILease* lease)
@@ -65,21 +56,6 @@ namespace System::Runtime::Remoting
 		::System::Void AttachServerObject(::System::MarshalByRefObject* serverObject, ::System::Runtime::Remoting::Contexts::Context* context)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::MarshalByRefObject*, ::System::Runtime::Remoting::Contexts::Context*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_ATTACHSERVEROBJECT_OFFSET))(this, serverObject, context);
-		}
-
-		::System::Runtime::Remoting::Lifetime::Lease* get_Lease()
-		{
-			return ((::System::Runtime::Remoting::Lifetime::Lease*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_GET_LEASE_OFFSET))(this);
-		}
-
-		::System::Runtime::Remoting::Contexts::Context* get_Context()
-		{
-			return ((::System::Runtime::Remoting::Contexts::Context*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_GET_CONTEXT_OFFSET))(this);
-		}
-
-		::System::Void set_Context(::System::Runtime::Remoting::Contexts::Context* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Remoting::Contexts::Context*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_SERVERIDENTITY_SET_CONTEXT_OFFSET))(this, value);
 		}
 
 		::System::Void DisposeServerObject()

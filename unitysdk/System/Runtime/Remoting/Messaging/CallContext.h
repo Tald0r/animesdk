@@ -5,15 +5,14 @@
 namespace System { class String; }
 namespace System::Runtime::Remoting::Messaging { class LogicalCallContext; }
 
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CALLCONTEXT_LOGICALGETDATA_OFFSET UNITYSDK_OFFSET(0x15CF7810)
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CALLCONTEXT_LOGICALSETDATA_OFFSET UNITYSDK_OFFSET(0x15CF79C0)
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CALLCONTEXT_SETCURRENTCALLCONTEXT_OFFSET UNITYSDK_OFFSET(0x15CF7720)
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CALLCONTEXT_SETLOGICALCALLCONTEXT_OFFSET UNITYSDK_OFFSET(0x15CF7730)
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CALLCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x15CF7710)
+#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CALLCONTEXT_LOGICALGETDATA_OFFSET UNITYSDK_OFFSET(0x192BD100)
+#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CALLCONTEXT_LOGICALSETDATA_OFFSET UNITYSDK_OFFSET(0x192BD220)
+#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CALLCONTEXT_SETLOGICALCALLCONTEXT_OFFSET UNITYSDK_OFFSET(0x192BD020)
+#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CALLCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x192BD010)
 
 namespace System::Runtime::Remoting::Messaging
 {
-	inline static constexpr unsigned int CallContext_TypeDefinitionIndex = 1275;
+	inline static constexpr unsigned int CallContext_TypeDefinitionIndex = 1324;
 
 	class CallContext : public ::System::Object
 	{
@@ -21,11 +20,6 @@ namespace System::Runtime::Remoting::Messaging
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_MESSAGING_CALLCONTEXT__CTOR_OFFSET))(this);
-		}
-
-		static ::System::Object* SetCurrentCallContext(::System::Runtime::Remoting::Messaging::LogicalCallContext* ctx)
-		{
-			return ((::System::Object*(*)(::System::Runtime::Remoting::Messaging::LogicalCallContext*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_MESSAGING_CALLCONTEXT_SETCURRENTCALLCONTEXT_OFFSET))(ctx);
 		}
 
 		static ::System::Runtime::Remoting::Messaging::LogicalCallContext* SetLogicalCallContext(::System::Runtime::Remoting::Messaging::LogicalCallContext* callCtx)

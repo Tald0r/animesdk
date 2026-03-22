@@ -1,0 +1,99 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_509DCA6CF8698226.h"
+
+class Class_1_6535CE33BDD95E74;
+class Class_2_8127D35606966C67_36;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0E91F0)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0E9290)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0E90A0)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0E9140)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_REFRESHBUFFVIEW_1_OFFSET UNITYSDK_OFFSET(0xC0E9A20)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_REFRESHBUFFVIEW_OFFSET UNITYSDK_OFFSET(0xC0E0AA0)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_SETBGCOLOR_1_OFFSET UNITYSDK_OFFSET(0xC0E96C0)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_SETBGCOLOR_OFFSET UNITYSDK_OFFSET(0xC0E9370)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC0E9BE0)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0E9C10)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0E9C80)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0E9D00)
+#define MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0E9D60)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIDoubleTipsInfoWidgetController_TypeDefinitionIndex = 77983;
+
+	class UIDoubleTipsInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_8127D35606966C67_36* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshBuffView(::Class_1_6535CE33BDD95E74* rewardBuff)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_6535CE33BDD95E74*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_REFRESHBUFFVIEW_OFFSET))(this, rewardBuff);
+		}
+
+		::System::Void SetBgColor(::Class_1_6535CE33BDD95E74* rewardBuff)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_6535CE33BDD95E74*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_SETBGCOLOR_OFFSET))(this, rewardBuff);
+		}
+
+		::System::Void SetBgColor_1(::Struct_2_509DCA6CF8698226 rewardBuff)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_509DCA6CF8698226))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_SETBGCOLOR_1_OFFSET))(this, rewardBuff);
+		}
+
+		::System::Void RefreshBuffView_1(::Struct_2_509DCA6CF8698226 rewardBuffIconShowInfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_509DCA6CF8698226))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER_REFRESHBUFFVIEW_1_OFFSET))(this, rewardBuffIconShowInfo);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDOUBLETIPSINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

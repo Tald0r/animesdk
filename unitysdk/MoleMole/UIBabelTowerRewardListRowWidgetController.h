@@ -1,0 +1,130 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_08E43914789BE5F3;
+class Class_2_208CC9941471731A_215;
+class Class_2_79F6D62CE30E3F8E_94;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIGeneralPopUpHintWidgetController; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace System { class Object; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_CLEARREWARDS_OFFSET UNITYSDK_OFFSET(0xB29FD50)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_GERREWARDREQ_OFFSET UNITYSDK_OFFSET(0xB29ED30)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB29EC10)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xB29F7F0)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB29F9D0)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONTAKEREWARDHANDLE_OFFSET UNITYSDK_OFFSET(0xB29EEE0)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB29F8F0)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB29EA60)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_REFRESHREWARDBTNREDPOINT_OFFSET UNITYSDK_OFFSET(0xB29FBB0)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_REFRESHREWARDS_OFFSET UNITYSDK_OFFSET(0xB29F020)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_UPDATEUI_OFFSET UNITYSDK_OFFSET(0xB29F510)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB29FEF0)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB29FF80)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xB29FFF0)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB2A0060)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB2A00E0)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB2A0160)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBabelTowerRewardListRowWidgetController_TypeDefinitionIndex = 65752;
+
+	class UIBabelTowerRewardListRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_94* _view; // 0x2D0
+		::Class_2_208CC9941471731A_215* rewardCfg; // 0x2D8
+		::Class_2_08E43914789BE5F3* babelTowerModel; // 0x2E0
+		::MoleMole::UIGeneralPopUpHintWidgetController* _popUpHintController; // 0x2E8
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnWidgetController*>* _rewardIconList; // 0x2F0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void GerRewardReq()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_GERREWARDREQ_OFFSET))(this);
+		}
+
+		::System::Void OnTakeRewardHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONTAKEREWARDHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void UpdateUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_UPDATEUI_OFFSET))(this);
+		}
+
+		::System::Void RefreshRewardBtnRedpoint(::System::Boolean isRed)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_REFRESHREWARDBTNREDPOINT_OFFSET))(this, isRed);
+		}
+
+		::System::Void ClearRewards()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_CLEARREWARDS_OFFSET))(this);
+		}
+
+		::System::Void RefreshRewards()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER_REFRESHREWARDS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDLISTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,164 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_59919CA8B8CC259B.h"
+#include "unitysdk/Enum_3_63D476C405CEAF7E_2.h"
+
+class Class_1_D375C91CCE5D3999;
+class Class_1_EEA0111A28582B57;
+class Class_1_F4BC7A67D37045F0;
+class Class_2_79F6D62CE30E3F8E_144;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class UIActivityDirectAwardReceivingWidgetController; }
+namespace MoleMole { class UIActivityRoleRewardPreviewWidgetController; }
+namespace MoleMole { class UIBaseController; }
+namespace MoleMole { class UIGeneralConsoleExistGoBtnWidgetController; }
+namespace MoleMole { class UIGeneralConsoleExistNormalBtnWidgetController; }
+namespace System { class String; }
+namespace UnityEngine::UI::Extension { class UITimeWidget; }
+
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_06A2B758FCB8A24E_OFFSET UNITYSDK_OFFSET(0x6C6A7A0)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_0ECFC40900BF36DA_OFFSET UNITYSDK_OFFSET(0x6C6AE50)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_1D01682836CDD6E2_1_OFFSET UNITYSDK_OFFSET(0x6C6B300)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_1D01682836CDD6E2_OFFSET UNITYSDK_OFFSET(0x6C6B210)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_33E2FA8E6403B93D_OFFSET UNITYSDK_OFFSET(0x6C69790)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_7B3E1D54D95DDA1F_1_OFFSET UNITYSDK_OFFSET(0x6C6AAF0)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_7B3E1D54D95DDA1F_OFFSET UNITYSDK_OFFSET(0x6C6A8D0)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_88B60F3B95FAA4F1_1_OFFSET UNITYSDK_OFFSET(0x6C6AF90)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0x6C69E50)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_8923446497E3D0C5_OFFSET UNITYSDK_OFFSET(0x6C6B020)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_92F85D4296A9ADDA_OFFSET UNITYSDK_OFFSET(0x6C6B290)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_95D919A3FFE39CED_OFFSET UNITYSDK_OFFSET(0x6C6AF20)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_9636FCCD0F2A7398_OFFSET UNITYSDK_OFFSET(0x6C6A610)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_9681042564541CD6_OFFSET UNITYSDK_OFFSET(0x6C6ADA0)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_9E44E80DF1C6F29E_OFFSET UNITYSDK_OFFSET(0x6C6B280)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_C7BF9C1E6A78DCAB_OFFSET UNITYSDK_OFFSET(0x6C699A0)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x6C6AEC0)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x6C6AD40)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_D0EDFA57F5E97657_OFFSET UNITYSDK_OFFSET(0x6C69EE0)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_E3778F031C27CB8C_OFFSET UNITYSDK_OFFSET(0x6C69590)
+#define CLASS_2_C2E629BFA3FA2894_METHOD_2_FA188AED7B474233_OFFSET UNITYSDK_OFFSET(0x6C6B370)
+#define CLASS_2_C2E629BFA3FA2894__CTOR_OFFSET UNITYSDK_OFFSET(0x6C69540)
+
+inline static constexpr unsigned int Class_2_C2E629BFA3FA2894_TypeDefinitionIndex = 56491;
+
+class Class_2_C2E629BFA3FA2894 : public ::Class_1_59919CA8B8CC259B
+{
+public:
+	::MoleMole::UIGeneralConsoleExistGoBtnWidgetController* Field_2_5; // 0x30
+	::MoleMole::UIActivityDirectAwardReceivingWidgetController* Field_2_0; // 0x38
+	::MoleMole::UIActivityRoleRewardPreviewWidgetController* Field_2_3; // 0x40
+	::Class_2_79F6D62CE30E3F8E_144* Field_2_1; // 0x48
+	::Class_1_F4BC7A67D37045F0* Field_2_4; // 0x50
+	::MoleMole::UIGeneralConsoleExistNormalBtnWidgetController* Field_2_6; // 0x58
+	::Enum_3_63D476C405CEAF7E_2 Field_2_2; // 0x60
+
+	::System::Void _ctor(::Enum_3_63D476C405CEAF7E_2 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Enum_3_63D476C405CEAF7E_2))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894__CTOR_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_E3778F031C27CB8C(::MoleMole::UIBaseController* a1, ::Class_1_EEA0111A28582B57* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UIBaseController*, ::Class_1_EEA0111A28582B57*))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_E3778F031C27CB8C_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_C7BF9C1E6A78DCAB()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_C7BF9C1E6A78DCAB_OFFSET))(this);
+	}
+
+	::System::Void Method_2_06A2B758FCB8A24E()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_06A2B758FCB8A24E_OFFSET))(this);
+	}
+
+	::System::Void Method_2_7B3E1D54D95DDA1F(::MoleMole::MonoGamepadModule* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_7B3E1D54D95DDA1F_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_7B3E1D54D95DDA1F_1(::MoleMole::MonoGamepadModule* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_7B3E1D54D95DDA1F_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_2_9681042564541CD6()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_9681042564541CD6_OFFSET))(this);
+	}
+
+	::System::Void Method_2_0ECFC40900BF36DA(::MoleMole::UIBaseController* a1, ::Class_1_EEA0111A28582B57* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UIBaseController*, ::Class_1_EEA0111A28582B57*))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_0ECFC40900BF36DA_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_9636FCCD0F2A7398(::Class_1_D375C91CCE5D3999* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_9636FCCD0F2A7398_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_95D919A3FFE39CED(::Class_1_D375C91CCE5D3999* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_95D919A3FFE39CED_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_D0EDFA57F5E97657()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_D0EDFA57F5E97657_OFFSET))(this);
+	}
+
+	::System::String* Method_2_88B60F3B95FAA4F1()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_88B60F3B95FAA4F1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_33E2FA8E6403B93D()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_33E2FA8E6403B93D_OFFSET))(this);
+	}
+
+	::System::Void Method_2_8923446497E3D0C5()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_8923446497E3D0C5_OFFSET))(this);
+	}
+
+	::System::Void Method_2_1D01682836CDD6E2(::MoleMole::MonoGamepadModule* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_1D01682836CDD6E2_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_9E44E80DF1C6F29E(::UnityEngine::UI::Extension::UITimeWidget* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UITimeWidget*))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_9E44E80DF1C6F29E_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_92F85D4296A9ADDA()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_92F85D4296A9ADDA_OFFSET))(this);
+	}
+
+	::System::Void Method_2_1D01682836CDD6E2_1(::MoleMole::MonoGamepadModule* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_1D01682836CDD6E2_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_FA188AED7B474233(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_FA188AED7B474233_OFFSET))(this, a1);
+	}
+
+	::System::String* Method_2_88B60F3B95FAA4F1_1()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C2E629BFA3FA2894_METHOD_2_88B60F3B95FAA4F1_1_OFFSET))(this);
+	}
+};

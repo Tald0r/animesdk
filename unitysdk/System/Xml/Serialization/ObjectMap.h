@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_XML_SERIALIZATION_OBJECTMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x17DA1BD0)
+#define SYSTEM_XML_SERIALIZATION_OBJECTMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x18C7E4E0)
 
 namespace System::Xml::Serialization
 {
-	inline static constexpr unsigned int ObjectMap_TypeDefinitionIndex = 1996;
+	inline static constexpr unsigned int ObjectMap_TypeDefinitionIndex = 1890;
 
 	class ObjectMap : public ::System::Object
 	{

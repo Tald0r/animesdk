@@ -1,0 +1,48 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/Quaternion.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+namespace MoleMole::Config { class CameraChangeAttribute; }
+namespace MoleMole::Config { class CameraChangeAttribute_FOV; }
+template <typename T> class Class_2_4884F46B6DD72B5E_Class_1_F100B52B923727C3;
+
+#define MOLEMOLE_CONFIG_CAMERATARGETCONFIG_GETFOVPARAM_OFFSET UNITYSDK_OFFSET(0x1417FE50)
+#define MOLEMOLE_CONFIG_CAMERATARGETCONFIG_GETPOSITIONPARAM_OFFSET UNITYSDK_OFFSET(0x1417F940)
+#define MOLEMOLE_CONFIG_CAMERATARGETCONFIG_GETROTATIONPARAM_OFFSET UNITYSDK_OFFSET(0x1417FBA0)
+#define MOLEMOLE_CONFIG_CAMERATARGETCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1417FF60)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int CameraTargetConfig_TypeDefinitionIndex = 65561;
+
+	class CameraTargetConfig : public ::System::Object
+	{
+	public:
+		::MoleMole::Config::CameraChangeAttribute* posConfig; // 0x10
+		::MoleMole::Config::CameraChangeAttribute* rotateConfig; // 0x18
+		::MoleMole::Config::CameraChangeAttribute_FOV* fovConfig; // 0x20
+		::System::Single changeTime; // 0x28
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERATARGETCONFIG__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_4884F46B6DD72B5E_Class_1_F100B52B923727C3<::UnityEngine::Vector3>* GetPositionParam(::UnityEngine::Vector3 now_position)
+		{
+			return ((::Class_2_4884F46B6DD72B5E_Class_1_F100B52B923727C3<::UnityEngine::Vector3>*(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERATARGETCONFIG_GETPOSITIONPARAM_OFFSET))(this, now_position);
+		}
+
+		::Class_2_4884F46B6DD72B5E_Class_1_F100B52B923727C3<::UnityEngine::Quaternion>* GetRotationParam(::UnityEngine::Quaternion now_rotation)
+		{
+			return ((::Class_2_4884F46B6DD72B5E_Class_1_F100B52B923727C3<::UnityEngine::Quaternion>*(*)(::PVOID, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERATARGETCONFIG_GETROTATIONPARAM_OFFSET))(this, now_rotation);
+		}
+
+		::Class_2_4884F46B6DD72B5E_Class_1_F100B52B923727C3<::System::Single>* GetFOVParam(::System::Single now_fov)
+		{
+			return ((::Class_2_4884F46B6DD72B5E_Class_1_F100B52B923727C3<::System::Single>*(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERATARGETCONFIG_GETFOVPARAM_OFFSET))(this, now_fov);
+		}
+	};
+}

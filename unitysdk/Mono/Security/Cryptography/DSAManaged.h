@@ -5,48 +5,59 @@
 
 namespace Mono::Math { class BigInteger; }
 namespace Mono::Security::Cryptography { class DSAManaged_KeyGeneratedEventHandler; }
+namespace System { class String; }
 namespace System::Security::Cryptography { class RandomNumberGenerator; }
 
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_ADD_KEYGENERATED_OFFSET UNITYSDK_OFFSET(0x15ACD9B0)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_ADD_OFFSET UNITYSDK_OFFSET(0x15ACCF00)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_DISPOSE_OFFSET UNITYSDK_OFFSET(0x15ACB0E0)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_EXPORTPARAMETERS_OFFSET UNITYSDK_OFFSET(0x15ACD110)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_FINALIZE_OFFSET UNITYSDK_OFFSET(0x15ACB070)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GENERATEKEYPAIR_OFFSET UNITYSDK_OFFSET(0x15ACC2E0)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GENERATEPARAMS_OFFSET UNITYSDK_OFFSET(0x15ACB5A0)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GENERATE_OFFSET UNITYSDK_OFFSET(0x15ACB560)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_KEYSIZE_OFFSET UNITYSDK_OFFSET(0x15ACD010)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_PUBLICONLY_OFFSET UNITYSDK_OFFSET(0x15ACD040)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_RANDOM_OFFSET UNITYSDK_OFFSET(0x15ACCFD0)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_IMPORTPARAMETERS_OFFSET UNITYSDK_OFFSET(0x15ACD630)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_NORMALIZEARRAY_OFFSET UNITYSDK_OFFSET(0x15ACD0A0)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_REMOVE_KEYGENERATED_OFFSET UNITYSDK_OFFSET(0x15ACDA30)
-#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED__CTOR_OFFSET UNITYSDK_OFFSET(0x15ACB000)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_ADD_KEYGENERATED_OFFSET UNITYSDK_OFFSET(0x17FBB3F0)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_ADD_OFFSET UNITYSDK_OFFSET(0x17FB9C80)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_CREATESIGNATURE_OFFSET UNITYSDK_OFFSET(0x17FBA9A0)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17FB8230)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_EXPORTPARAMETERS_OFFSET UNITYSDK_OFFSET(0x17FBA090)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_FINALIZE_OFFSET UNITYSDK_OFFSET(0x17FB80C0)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GENERATEKEYPAIR_OFFSET UNITYSDK_OFFSET(0x17FB99D0)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GENERATEPARAMS_OFFSET UNITYSDK_OFFSET(0x17FB8900)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GENERATE_OFFSET UNITYSDK_OFFSET(0x17FB88C0)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_KEYEXCHANGEALGORITHM_OFFSET UNITYSDK_OFFSET(0x17FB9F90)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_KEYSIZE_OFFSET UNITYSDK_OFFSET(0x17FB9F60)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_PUBLICONLY_OFFSET UNITYSDK_OFFSET(0x17FB9FA0)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_RANDOM_OFFSET UNITYSDK_OFFSET(0x17FB9DA0)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_SIGNATUREALGORITHM_OFFSET UNITYSDK_OFFSET(0x17FB9FE0)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_IMPORTPARAMETERS_OFFSET UNITYSDK_OFFSET(0x17FBA5B0)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_NORMALIZEARRAY_OFFSET UNITYSDK_OFFSET(0x17FBA020)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_REMOVE_KEYGENERATED_OFFSET UNITYSDK_OFFSET(0x17FBB470)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_VERIFYSIGNATURE_OFFSET UNITYSDK_OFFSET(0x17FBAD80)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17FB8050)
+#define MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED__CTOR_OFFSET UNITYSDK_OFFSET(0x17FB7FD0)
 
 namespace Mono::Security::Cryptography
 {
-	inline static constexpr unsigned int DSAManaged_TypeDefinitionIndex = 79;
+	inline static constexpr unsigned int DSAManaged_TypeDefinitionIndex = 78;
 
 	class DSAManaged : public ::System::Security::Cryptography::DSA
 	{
 	public:
 		::Mono::Math::BigInteger* seed; // 0x20
-		::Mono::Math::BigInteger* g; // 0x28
-		::System::Security::Cryptography::RandomNumberGenerator* rng; // 0x30
-		::Mono::Math::BigInteger* x; // 0x38
-		::Mono::Math::BigInteger* q; // 0x40
-		::Mono::Math::BigInteger* j; // 0x48
-		::Mono::Math::BigInteger* p; // 0x50
-		::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler* KeyGenerated; // 0x58
-		::Mono::Math::BigInteger* y; // 0x60
+		::Mono::Math::BigInteger* x; // 0x28
+		::Mono::Math::BigInteger* p; // 0x30
+		::Mono::Math::BigInteger* j; // 0x38
+		::Mono::Math::BigInteger* g; // 0x40
+		::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler* KeyGenerated; // 0x48
+		::Mono::Math::BigInteger* y; // 0x50
+		::System::Security::Cryptography::RandomNumberGenerator* rng; // 0x58
+		::Mono::Math::BigInteger* q; // 0x60
 		::System::Boolean j_missing; // 0x68
-		::System::Boolean keypairGenerated; // 0x69
-		::System::Boolean m_disposed; // 0x6A
+		::System::Boolean m_disposed; // 0x69
+		::System::Boolean keypairGenerated; // 0x6A
 		::System::Int32 counter; // 0x6C
 
-		::System::Void _ctor(::System::Int32 dwKeySize)
+		::System::Void _ctor()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED__CTOR_OFFSET))(this, dwKeySize);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::Int32 dwKeySize)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED__CTOR_1_OFFSET))(this, dwKeySize);
 		}
 
 		::System::Void Finalize()
@@ -84,9 +95,19 @@ namespace Mono::Security::Cryptography
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_KEYSIZE_OFFSET))(this);
 		}
 
+		::System::String* get_KeyExchangeAlgorithm()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_KEYEXCHANGEALGORITHM_OFFSET))(this);
+		}
+
 		::System::Boolean get_PublicOnly()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_PUBLICONLY_OFFSET))(this);
+		}
+
+		::System::String* get_SignatureAlgorithm()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_GET_SIGNATUREALGORITHM_OFFSET))(this);
 		}
 
 		::Il2CppArray<::System::Byte>* NormalizeArray(::Il2CppArray<::System::Byte>* array)
@@ -102,6 +123,16 @@ namespace Mono::Security::Cryptography
 		::System::Void ImportParameters(::System::Security::Cryptography::DSAParameters parameters)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::DSAParameters))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_IMPORTPARAMETERS_OFFSET))(this, parameters);
+		}
+
+		::Il2CppArray<::System::Byte>* CreateSignature(::Il2CppArray<::System::Byte>* rgbHash)
+		{
+			return ((::Il2CppArray<::System::Byte>*(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_CREATESIGNATURE_OFFSET))(this, rgbHash);
+		}
+
+		::System::Boolean VerifySignature(::Il2CppArray<::System::Byte>* rgbHash, ::Il2CppArray<::System::Byte>* rgbSignature)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_DSAMANAGED_VERIFYSIGNATURE_OFFSET))(this, rgbHash, rgbSignature);
 		}
 
 		::System::Void Dispose(::System::Boolean disposing)

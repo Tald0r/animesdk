@@ -1,0 +1,58 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_B7E341C5F1A6F199.h"
+
+class Class_2_131E282CCAEB876E;
+namespace System { class String; }
+
+#define CLASS_2_874AD1BB59BFEABD_1_METHOD_2_128774387667156B_OFFSET UNITYSDK_OFFSET(0x9D1B790)
+#define CLASS_2_874AD1BB59BFEABD_1_METHOD_2_98511BB23D2E3748_OFFSET UNITYSDK_OFFSET(0x9D1B6C0)
+#define CLASS_2_874AD1BB59BFEABD_1_METHOD_2_BC516BD7B592E51E_OFFSET UNITYSDK_OFFSET(0x9D1B610)
+#define CLASS_2_874AD1BB59BFEABD_1_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x9D1B730)
+#define CLASS_2_874AD1BB59BFEABD_1_TOSTRING_OFFSET UNITYSDK_OFFSET(0x9D1B4F0)
+#define CLASS_2_874AD1BB59BFEABD_1__CCTOR_OFFSET UNITYSDK_OFFSET(0x9D1B590)
+#define CLASS_2_874AD1BB59BFEABD_1__CTOR_OFFSET UNITYSDK_OFFSET(0x9D1B600)
+
+inline static constexpr unsigned int Class_2_874AD1BB59BFEABD_1_TypeDefinitionIndex = 63872;
+
+class Class_2_874AD1BB59BFEABD_1 : public ::Class_1_B7E341C5F1A6F199
+{
+public:
+	// static const ::System::UInt16 Field_2_1 = 0x76; // 0x0
+	::Class_2_131E282CCAEB876E* Field_2_0; // 0x20
+
+	static ::System::Void _cctor()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_2_874AD1BB59BFEABD_1__CCTOR_OFFSET))();
+	}
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_874AD1BB59BFEABD_1__CTOR_OFFSET))(this);
+	}
+
+	::System::String* ToString()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_874AD1BB59BFEABD_1_TOSTRING_OFFSET))(this);
+	}
+
+	::System::Void Method_2_BC516BD7B592E51E()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_874AD1BB59BFEABD_1_METHOD_2_BC516BD7B592E51E_OFFSET))(this);
+	}
+
+	::System::Void Method_2_98511BB23D2E3748(::Class_2_131E282CCAEB876E* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_131E282CCAEB876E*))((::PBYTE)hIl2Cpp + CLASS_2_874AD1BB59BFEABD_1_METHOD_2_98511BB23D2E3748_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_874AD1BB59BFEABD_1_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::String* Method_2_128774387667156B()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_874AD1BB59BFEABD_1_METHOD_2_128774387667156B_OFFSET))(this);
+	}
+};

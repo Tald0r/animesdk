@@ -1,0 +1,56 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Battle/ChallengeSubTypeItem.h"
+
+class Class_1_B7E341C5F1A6F199;
+class Class_2_208CC9941471731A_236;
+namespace System { class String; }
+
+#define MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE_GETPROGRESSSTRING_OFFSET UNITYSDK_OFFSET(0x6532530)
+#define MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE_GETPROGRESS_OFFSET UNITYSDK_OFFSET(0x65324B0)
+#define MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE_GET_ISSUCCESS_OFFSET UNITYSDK_OFFSET(0x6532440)
+#define MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE_ONEVENTFROMANYONE_OFFSET UNITYSDK_OFFSET(0x6532330)
+#define MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE__CTOR_OFFSET UNITYSDK_OFFSET(0x65322D0)
+#define MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE___BASE_ONEVENTFROMANYONE_OFFSET UNITYSDK_OFFSET(0x6532630)
+
+namespace MoleMole::Battle
+{
+	inline static constexpr unsigned int ChallengeSubTypeOccupyInteractive_TypeDefinitionIndex = 37205;
+
+	class ChallengeSubTypeOccupyInteractive : public ::MoleMole::Battle::ChallengeSubTypeItem
+	{
+	public:
+		::System::Int32 occupyCount; // 0x20
+		::System::Int32 targetOccupyCount; // 0x24
+
+		::System::Void _ctor(::Class_2_208CC9941471731A_236* inTemplate)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_236*))((::PBYTE)hIl2Cpp + MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE__CTOR_OFFSET))(this, inTemplate);
+		}
+
+		::System::Void OnEventFromAnyone(::Class_1_B7E341C5F1A6F199* evt)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_B7E341C5F1A6F199*))((::PBYTE)hIl2Cpp + MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE_ONEVENTFROMANYONE_OFFSET))(this, evt);
+		}
+
+		::System::Boolean get_IsSuccess()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE_GET_ISSUCCESS_OFFSET))(this);
+		}
+
+		::System::Single GetProgress()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE_GETPROGRESS_OFFSET))(this);
+		}
+
+		::System::String* GetProgressString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE_GETPROGRESSSTRING_OFFSET))(this);
+		}
+
+		::System::Void __base_OnEventFromAnyone(::Class_1_B7E341C5F1A6F199* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_B7E341C5F1A6F199*))((::PBYTE)hIl2Cpp + MOLEMOLE_BATTLE_CHALLENGESUBTYPEOCCUPYINTERACTIVE___BASE_ONEVENTFROMANYONE_OFFSET))(this, P0);
+		}
+	};
+}

@@ -7,18 +7,16 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Text { class Encoding; }
 
-#define UNITYENGINE_WWWFORM_ADDBINARYDATA_1_OFFSET UNITYSDK_OFFSET(0x1836E3E0)
-#define UNITYENGINE_WWWFORM_ADDBINARYDATA_OFFSET UNITYSDK_OFFSET(0x1836E3C0)
-#define UNITYENGINE_WWWFORM_ADDFIELD_1_OFFSET UNITYSDK_OFFSET(0x1836E2E0)
-#define UNITYENGINE_WWWFORM_ADDFIELD_OFFSET UNITYSDK_OFFSET(0x1836E240)
-#define UNITYENGINE_WWWFORM_GET_DATA_OFFSET UNITYSDK_OFFSET(0x1836BA70)
-#define UNITYENGINE_WWWFORM_GET_DEFAULTENCODING_OFFSET UNITYSDK_OFFSET(0x1836DF70)
-#define UNITYENGINE_WWWFORM_GET_HEADERS_OFFSET UNITYSDK_OFFSET(0x1836D080)
-#define UNITYENGINE_WWWFORM__CTOR_OFFSET UNITYSDK_OFFSET(0x1836E110)
+#define UNITYENGINE_WWWFORM_ADDFIELD_1_OFFSET UNITYSDK_OFFSET(0x1AE6A890)
+#define UNITYENGINE_WWWFORM_ADDFIELD_OFFSET UNITYSDK_OFFSET(0x1AE6A7F0)
+#define UNITYENGINE_WWWFORM_GET_DATA_OFFSET UNITYSDK_OFFSET(0x1AE687C0)
+#define UNITYENGINE_WWWFORM_GET_DEFAULTENCODING_OFFSET UNITYSDK_OFFSET(0x1AE6A580)
+#define UNITYENGINE_WWWFORM_GET_HEADERS_OFFSET UNITYSDK_OFFSET(0x1AE69EF0)
+#define UNITYENGINE_WWWFORM__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE6A5F0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int WWWForm_TypeDefinitionIndex = 5163;
+	inline static constexpr unsigned int WWWForm_TypeDefinitionIndex = 6616;
 
 	class WWWForm : public ::System::Object
 	{
@@ -48,16 +46,6 @@ namespace UnityEngine
 		::System::Void AddField_1(::System::String* fieldName, ::System::String* value, ::System::Text::Encoding* e)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::Text::Encoding*))((::PBYTE)hIl2Cpp + UNITYENGINE_WWWFORM_ADDFIELD_1_OFFSET))(this, fieldName, value, e);
-		}
-
-		::System::Void AddBinaryData(::System::String* fieldName, ::Il2CppArray<::System::Byte>* contents, ::System::String* fileName)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::Il2CppArray<::System::Byte>*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_WWWFORM_ADDBINARYDATA_OFFSET))(this, fieldName, contents, fileName);
-		}
-
-		::System::Void AddBinaryData_1(::System::String* fieldName, ::Il2CppArray<::System::Byte>* contents, ::System::String* fileName, ::System::String* mimeType)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::Il2CppArray<::System::Byte>*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_WWWFORM_ADDBINARYDATA_1_OFFSET))(this, fieldName, contents, fileName, mimeType);
 		}
 
 		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* get_headers()

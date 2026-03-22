@@ -1,0 +1,112 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_504F298B4B2B1EEF.h"
+#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_AEEA82AB75F4904D_1;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_GETVIEW_OFFSET UNITYSDK_OFFSET(0xA512C40)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA5127E0)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONITEMRESELECT_OFFSET UNITYSDK_OFFSET(0xA512A10)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xA512960)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA512B80)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA512880)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA512680)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_SETICONANDTEXT_OFFSET UNITYSDK_OFFSET(0xA512CB0)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA512F10)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA512F20)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONITEMRESELECT_OFFSET UNITYSDK_OFFSET(0xA512F90)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xA512FF0)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA513060)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA5130E0)
+#define MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA513160)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityWinterPageTabWidgetController_TypeDefinitionIndex = 72560;
+
+	class UIActivityWinterPageTabWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_AEEA82AB75F4904D_1* _view; // 0x2D0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnItemReselect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONITEMRESELECT_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::Class_2_AEEA82AB75F4904D_1* GetView()
+		{
+			return ((::Class_2_AEEA82AB75F4904D_1*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_GETVIEW_OFFSET))(this);
+		}
+
+		::System::Void SetIconAndText(::System::String* titleText, ::Foundation::AssetPath iconPath, ::Enum_3_504F298B4B2B1EEF iconType)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::Foundation::AssetPath, ::Enum_3_504F298B4B2B1EEF))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER_SETICONANDTEXT_OFFSET))(this, titleText, iconPath, iconType);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemReselect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONITEMRESELECT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGETABWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

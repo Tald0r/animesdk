@@ -13,18 +13,30 @@ namespace System::Xml { class IXmlNamespaceResolver; }
 namespace System::Xml { class XmlNameTable; }
 namespace System::Xml::Schema { class FacetsChecker; }
 namespace System::Xml::Schema { class RestrictionFacets; }
+namespace System::Xml::Schema { class SchemaNames; }
+namespace System::Xml::Schema { class XmlSchemaObject; }
+namespace System::Xml::Schema { class XmlSchemaObjectCollection; }
+namespace System::Xml::Schema { class XmlSchemaObjectTable; }
+namespace System::Xml::Schema { class XmlSchemaSimpleType; }
+namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_FROMXMLTOKENIZEDTYPE_OFFSET UNITYSDK_OFFSET(0x17D76FC0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_GET_TYPECODESTRING_OFFSET UNITYSDK_OFFSET(0x17D937B0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D937A0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_GET_VARIETY_OFFSET UNITYSDK_OFFSET(0x17D93790)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_TYPECODETOSTRING_OFFSET UNITYSDK_OFFSET(0x17D93870)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE__CTOR_OFFSET UNITYSDK_OFFSET(0x17D93C20)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_CONCATENATEDTOSTRING_OFFSET UNITYSDK_OFFSET(0x19EE2150)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_DERIVEBYUNION_OFFSET UNITYSDK_OFFSET(0x19EE2C10)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_FROMXDRNAME_OFFSET UNITYSDK_OFFSET(0x19EE2BB0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_FROMXMLTOKENIZEDTYPEXSD_OFFSET UNITYSDK_OFFSET(0x19EE2AD0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_FROMXMLTOKENIZEDTYPE_OFFSET UNITYSDK_OFFSET(0x19EE29F0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_GET_TYPECODESTRING_OFFSET UNITYSDK_OFFSET(0x19EDB340)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x19EE1D80)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_GET_VARIETY_OFFSET UNITYSDK_OFFSET(0x19EE1D70)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_ISDERIVEDFROM_OFFSET UNITYSDK_OFFSET(0x19EE1D90)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_TYPECODETOSTRING_OFFSET UNITYSDK_OFFSET(0x19EE1DA0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_XDRCANONIZEURI_OFFSET UNITYSDK_OFFSET(0x19EE2C70)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE__CTOR_OFFSET UNITYSDK_OFFSET(0x19EE2E20)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int XmlSchemaDatatype_TypeDefinitionIndex = 2176;
+	inline static constexpr unsigned int XmlSchemaDatatype_TypeDefinitionIndex = 2137;
 
 	class XmlSchemaDatatype : public ::System::Object
 	{
@@ -44,6 +56,11 @@ namespace System::Xml::Schema
 			return ((::System::Xml::Schema::XmlTypeCode(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_GET_TYPECODE_OFFSET))(this);
 		}
 
+		::System::Boolean IsDerivedFrom(::System::Xml::Schema::XmlSchemaDatatype* datatype)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Xml::Schema::XmlSchemaDatatype*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_ISDERIVEDFROM_OFFSET))(this, datatype);
+		}
+
 		::System::String* get_TypeCodeString()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_GET_TYPECODESTRING_OFFSET))(this);
@@ -54,9 +71,34 @@ namespace System::Xml::Schema
 			return ((::System::String*(*)(::PVOID, ::System::Xml::Schema::XmlTypeCode))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_TYPECODETOSTRING_OFFSET))(this, typeCode);
 		}
 
+		static ::System::String* ConcatenatedToString(::System::Object* value)
+		{
+			return ((::System::String*(*)(::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_CONCATENATEDTOSTRING_OFFSET))(value);
+		}
+
 		static ::System::Xml::Schema::XmlSchemaDatatype* FromXmlTokenizedType(::System::Xml::XmlTokenizedType token)
 		{
 			return ((::System::Xml::Schema::XmlSchemaDatatype*(*)(::System::Xml::XmlTokenizedType))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_FROMXMLTOKENIZEDTYPE_OFFSET))(token);
+		}
+
+		static ::System::Xml::Schema::XmlSchemaDatatype* FromXmlTokenizedTypeXsd(::System::Xml::XmlTokenizedType token)
+		{
+			return ((::System::Xml::Schema::XmlSchemaDatatype*(*)(::System::Xml::XmlTokenizedType))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_FROMXMLTOKENIZEDTYPEXSD_OFFSET))(token);
+		}
+
+		static ::System::Xml::Schema::XmlSchemaDatatype* FromXdrName(::System::String* name)
+		{
+			return ((::System::Xml::Schema::XmlSchemaDatatype*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_FROMXDRNAME_OFFSET))(name);
+		}
+
+		static ::System::Xml::Schema::XmlSchemaDatatype* DeriveByUnion(::Il2CppArray<::System::Xml::Schema::XmlSchemaSimpleType*>* types, ::System::Xml::Schema::XmlSchemaType* schemaType)
+		{
+			return ((::System::Xml::Schema::XmlSchemaDatatype*(*)(::Il2CppArray<::System::Xml::Schema::XmlSchemaSimpleType*>*, ::System::Xml::Schema::XmlSchemaType*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_DERIVEBYUNION_OFFSET))(types, schemaType);
+		}
+
+		static ::System::String* XdrCanonizeUri(::System::String* uri, ::System::Xml::XmlNameTable* nameTable, ::System::Xml::Schema::SchemaNames* schemaNames)
+		{
+			return ((::System::String*(*)(::System::String*, ::System::Xml::XmlNameTable*, ::System::Xml::Schema::SchemaNames*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMADATATYPE_XDRCANONIZEURI_OFFSET))(uri, nameTable, schemaNames);
 		}
 	};
 }

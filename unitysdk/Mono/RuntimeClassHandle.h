@@ -5,36 +5,18 @@
 
 namespace System { class Object; }
 
-#define MONO_RUNTIMECLASSHANDLE_EQUALS_OFFSET UNITYSDK_OFFSET(0x1FFD4E0)
-#define MONO_RUNTIMECLASSHANDLE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x59D0)
-#define MONO_RUNTIMECLASSHANDLE_GETTYPEFROMCLASS_OFFSET UNITYSDK_OFFSET(0x15AC56A0)
-#define MONO_RUNTIMECLASSHANDLE_GETTYPEHANDLE_OFFSET UNITYSDK_OFFSET(0x1FFD4F0)
-#define MONO_RUNTIMECLASSHANDLE_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x5580)
-#define MONO_RUNTIMECLASSHANDLE__CTOR_1_OFFSET UNITYSDK_OFFSET(0xBDC0)
-#define MONO_RUNTIMECLASSHANDLE__CTOR_OFFSET UNITYSDK_OFFSET(0xBDC0)
+#define MONO_RUNTIMECLASSHANDLE_EQUALS_OFFSET UNITYSDK_OFFSET(0x87C7C0)
+#define MONO_RUNTIMECLASSHANDLE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x2C3E30)
+#define MONO_RUNTIMECLASSHANDLE_GETTYPEFROMCLASS_OFFSET UNITYSDK_OFFSET(0x192ACDF0)
+#define MONO_RUNTIMECLASSHANDLE_GETTYPEHANDLE_OFFSET UNITYSDK_OFFSET(0x87C7D0)
 
 namespace Mono
 {
-	inline static constexpr unsigned int RuntimeClassHandle_TypeDefinitionIndex = 5;
+	inline static constexpr unsigned int RuntimeClassHandle_TypeDefinitionIndex = 8;
 
 	struct alignas(8) RuntimeClassHandle
 	{
 		::Mono::RuntimeStructs_MonoClass* value; // 0x10
-
-		::System::Void _ctor(::Mono::RuntimeStructs_MonoClass* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::Mono::RuntimeStructs_MonoClass*))((::PBYTE)hIl2Cpp + MONO_RUNTIMECLASSHANDLE__CTOR_OFFSET))(this, value);
-		}
-
-		::System::Void _ctor_1(::System::IntPtr ptr)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::IntPtr))((::PBYTE)hIl2Cpp + MONO_RUNTIMECLASSHANDLE__CTOR_1_OFFSET))(this, ptr);
-		}
-
-		::Mono::RuntimeStructs_MonoClass* get_Value()
-		{
-			return ((::Mono::RuntimeStructs_MonoClass*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_RUNTIMECLASSHANDLE_GET_VALUE_OFFSET))(this);
-		}
 
 		::System::Boolean Equals(::System::Object* obj)
 		{

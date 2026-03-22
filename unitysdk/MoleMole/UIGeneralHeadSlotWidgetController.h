@@ -1,0 +1,89 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_2_5E653D9F744DDC7F;
+class Class_2_75F2EAEF71D81709;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET UNITYSDK_OFFSET(0xA9FFD00)
+#define MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA9FFA40)
+#define MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA9FFAB0)
+#define MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xAA00060)
+#define MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER_SETHEADSLOTVIEW_OFFSET UNITYSDK_OFFSET(0xA9FFC00)
+#define MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__7_0_OFFSET UNITYSDK_OFFSET(0xAA00140)
+#define MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__7_1_OFFSET UNITYSDK_OFFSET(0xAA00330)
+#define MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__7_2_OFFSET UNITYSDK_OFFSET(0xAA004C0)
+#define MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAA00130)
+#define MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xAA00650)
+#define MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xAA006C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralHeadSlotWidgetController_TypeDefinitionIndex = 56064;
+
+	class UIGeneralHeadSlotWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_5E653D9F744DDC7F* _headSlotView; // 0x2D0
+		::Class_1_48D56DACBE4271BC* _syncHelper; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_75F2EAEF71D81709* get__viewModel()
+		{
+			return ((::Class_2_75F2EAEF71D81709*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void SetHeadSlotView(::Class_2_5E653D9F744DDC7F* headSlotView)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_5E653D9F744DDC7F*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER_SETHEADSLOTVIEW_OFFSET))(this, headSlotView);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void BuildViewModelDataBinding()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER_BUILDVIEWMODELDATABINDING_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__7_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__7_0_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__7_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__7_1_OFFSET))(this);
+		}
+
+		::System::Void _BuildViewModelDataBinding_b__7_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER__BUILDVIEWMODELDATABINDING_B__7_2_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALHEADSLOTWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+	};
+}

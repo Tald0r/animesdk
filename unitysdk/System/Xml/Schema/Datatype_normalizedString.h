@@ -4,13 +4,14 @@
 #include "unitysdk/System/Xml/Schema/XmlSchemaWhiteSpace.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_NORMALIZEDSTRING_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x17D6E5E0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_NORMALIZEDSTRING_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D6E5D0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_NORMALIZEDSTRING__CTOR_OFFSET UNITYSDK_OFFSET(0x17D645C0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NORMALIZEDSTRING_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x1A4D86C0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NORMALIZEDSTRING_GET_HASVALUEFACETS_OFFSET UNITYSDK_OFFSET(0x1A4D86D0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NORMALIZEDSTRING_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x1A4D86B0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_NORMALIZEDSTRING__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4D86E0)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_normalizedString_TypeDefinitionIndex = 2104;
+	inline static constexpr unsigned int Datatype_normalizedString_TypeDefinitionIndex = 2019;
 
 	class Datatype_normalizedString : public ::System::Xml::Schema::Datatype_string
 	{
@@ -28,6 +29,11 @@ namespace System::Xml::Schema
 		::System::Xml::Schema::XmlSchemaWhiteSpace get_BuiltInWhitespaceFacet()
 		{
 			return ((::System::Xml::Schema::XmlSchemaWhiteSpace(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_NORMALIZEDSTRING_GET_BUILTINWHITESPACEFACET_OFFSET))(this);
+		}
+
+		::System::Boolean get_HasValueFacets()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_NORMALIZEDSTRING_GET_HASVALUEFACETS_OFFSET))(this);
 		}
 	};
 }

@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace Mono::Globalization::Unicode
 {
-	inline static constexpr unsigned int SimpleCollator_Escape_TypeDefinitionIndex = 42;
+	inline static constexpr unsigned int SimpleCollator_Escape_TypeDefinitionIndex = 45;
 
 	struct alignas(8) SimpleCollator_Escape
 	{

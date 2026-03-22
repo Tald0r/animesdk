@@ -4,36 +4,67 @@
 #include "unitysdk/System/Xml/Schema/XmlSchemaContentProcessing.h"
 
 namespace System { class String; }
+namespace System::Xml { class XmlQualifiedName; }
 namespace System::Xml::Schema { class NamespaceList; }
 
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_BUILDNAMESPACELIST_OFFSET UNITYSDK_OFFSET(0x17D92570)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_SET_PROCESSCONTENTS_OFFSET UNITYSDK_OFFSET(0x17D92560)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x17D925D0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_ALLOWS_OFFSET UNITYSDK_OFFSET(0x1910C0E0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_BUILDNAMESPACELISTV1COMPAT_OFFSET UNITYSDK_OFFSET(0x1910C060)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_BUILDNAMESPACELIST_OFFSET UNITYSDK_OFFSET(0x1910C000)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_GET_PROCESSCONTENTSCORRECT_OFFSET UNITYSDK_OFFSET(0x1910BFF0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_INTERSECTION_OFFSET UNITYSDK_OFFSET(0x1910C150)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_ISSUBSET_OFFSET UNITYSDK_OFFSET(0x1910C120)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_UNION_OFFSET UNITYSDK_OFFSET(0x1910C1F0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1910C1E0)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int XmlSchemaAnyAttribute_TypeDefinitionIndex = 2169;
+	inline static constexpr unsigned int XmlSchemaAnyAttribute_TypeDefinitionIndex = 2119;
 
 	class XmlSchemaAnyAttribute : public ::System::Xml::Schema::XmlSchemaAnnotated
 	{
 	public:
-		::System::Xml::Schema::NamespaceList* namespaceList; // 0x10
-		::System::String* ns; // 0x18
-		::System::Xml::Schema::XmlSchemaContentProcessing processContents; // 0x20
+		::System::String* ns; // 0x50
+		::System::Xml::Schema::NamespaceList* namespaceList; // 0x58
+		::System::Xml::Schema::XmlSchemaContentProcessing processContents; // 0x60
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE__CTOR_OFFSET))(this);
 		}
 
-		::System::Void set_ProcessContents(::System::Xml::Schema::XmlSchemaContentProcessing value)
+		::System::Xml::Schema::XmlSchemaContentProcessing get_ProcessContentsCorrect()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaContentProcessing))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_SET_PROCESSCONTENTS_OFFSET))(this, value);
+			return ((::System::Xml::Schema::XmlSchemaContentProcessing(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_GET_PROCESSCONTENTSCORRECT_OFFSET))(this);
 		}
 
 		::System::Void BuildNamespaceList(::System::String* targetNamespace)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_BUILDNAMESPACELIST_OFFSET))(this, targetNamespace);
+		}
+
+		::System::Void BuildNamespaceListV1Compat(::System::String* targetNamespace)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_BUILDNAMESPACELISTV1COMPAT_OFFSET))(this, targetNamespace);
+		}
+
+		::System::Boolean Allows(::System::Xml::XmlQualifiedName* qname)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Xml::XmlQualifiedName*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_ALLOWS_OFFSET))(this, qname);
+		}
+
+		static ::System::Boolean IsSubset(::System::Xml::Schema::XmlSchemaAnyAttribute* sub, ::System::Xml::Schema::XmlSchemaAnyAttribute* super)
+		{
+			return ((::System::Boolean(*)(::System::Xml::Schema::XmlSchemaAnyAttribute*, ::System::Xml::Schema::XmlSchemaAnyAttribute*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_ISSUBSET_OFFSET))(sub, super);
+		}
+
+		static ::System::Xml::Schema::XmlSchemaAnyAttribute* Intersection(::System::Xml::Schema::XmlSchemaAnyAttribute* o1, ::System::Xml::Schema::XmlSchemaAnyAttribute* o2, ::System::Boolean v1Compat)
+		{
+			return ((::System::Xml::Schema::XmlSchemaAnyAttribute*(*)(::System::Xml::Schema::XmlSchemaAnyAttribute*, ::System::Xml::Schema::XmlSchemaAnyAttribute*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_INTERSECTION_OFFSET))(o1, o2, v1Compat);
+		}
+
+		static ::System::Xml::Schema::XmlSchemaAnyAttribute* Union(::System::Xml::Schema::XmlSchemaAnyAttribute* o1, ::System::Xml::Schema::XmlSchemaAnyAttribute* o2, ::System::Boolean v1Compat)
+		{
+			return ((::System::Xml::Schema::XmlSchemaAnyAttribute*(*)(::System::Xml::Schema::XmlSchemaAnyAttribute*, ::System::Xml::Schema::XmlSchemaAnyAttribute*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAANYATTRIBUTE_UNION_OFFSET))(o1, o2, v1Compat);
 		}
 	};
 }

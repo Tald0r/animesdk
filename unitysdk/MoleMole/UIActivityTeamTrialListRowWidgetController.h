@@ -1,0 +1,137 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_264FAB74DAF817C0.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_60638234271CCDB8_59;
+namespace MoleMole { class UIActivityTeamTrialListRowWidgetController_Data; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIGeneralNewHintWidgetController; }
+namespace System { class Action; }
+namespace System { class Object; }
+namespace System { class String; }
+namespace UnityEngine::UI::Extension { class UITimeWidget; }
+
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_NEEDPLAYUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xD3C99A0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD3C7B10)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONLOCKCONTDOWNEND_OFFSET UNITYSDK_OFFSET(0xD3C9C60)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0xD3C7EB0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xD3C7FF0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD3C7DD0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD3C7BB0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_PLAYUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xD3C9AD0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_PREPAREUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xD3C8200)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_REFRESHITEM_OFFSET UNITYSDK_OFFSET(0xD3C84B0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_TRYPLAYUNLOCKANIM_OFFSET UNITYSDK_OFFSET(0xD3C9A40)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD3C9D20)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER__ONLOCKCONTDOWNEND_B__16_0_OFFSET UNITYSDK_OFFSET(0xD3C9D30)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD3C9DD0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0xD3C9E40)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xD3C9EA0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD3C9F20)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD3C9FA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityTeamTrialListRowWidgetController_TypeDefinitionIndex = 77857;
+
+	class UIActivityTeamTrialListRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		// static const ::System::String* FadeInAnimName; // 0x0
+		// static const ::System::String* UnlockAnimName; // 0x0
+		::Class_2_60638234271CCDB8_59* _view; // 0x2D0
+		::MoleMole::UIActivityTeamTrialListRowWidgetController_Data* _data; // 0x2D8
+		::MoleMole::UIGeneralNewHintWidgetController* _newHintWidgetController; // 0x2E0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void RefreshItem(::Enum_3_264FAB74DAF817C0 levelState)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_264FAB74DAF817C0))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_REFRESHITEM_OFFSET))(this, levelState);
+		}
+
+		::System::Boolean NeedPlayUnlockAnim()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_NEEDPLAYUNLOCKANIM_OFFSET))(this);
+		}
+
+		::System::Boolean PrepareUnlockAnim(::Enum_3_264FAB74DAF817C0 lastState)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_264FAB74DAF817C0))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_PREPAREUNLOCKANIM_OFFSET))(this, lastState);
+		}
+
+		::System::Boolean TryPlayUnlockAnim(::Enum_3_264FAB74DAF817C0 lastState, ::System::Action* onUnlockAnimEnd)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_264FAB74DAF817C0, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_TRYPLAYUNLOCKANIM_OFFSET))(this, lastState, onUnlockAnimEnd);
+		}
+
+		::System::Boolean PlayUnlockAnim(::System::Action* onUnlockAnimEnd)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_PLAYUNLOCKANIM_OFFSET))(this, onUnlockAnimEnd);
+		}
+
+		::System::Void OnLockContDownEnd(::UnityEngine::UI::Extension::UITimeWidget* widget)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UITimeWidget*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER_ONLOCKCONTDOWNEND_OFFSET))(this, widget);
+		}
+
+		::System::Void _OnLockContDownEnd_b__16_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER__ONLOCKCONTDOWNEND_B__16_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALLISTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

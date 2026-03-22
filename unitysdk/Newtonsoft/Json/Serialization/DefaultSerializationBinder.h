@@ -7,21 +7,21 @@ namespace Newtonsoft::Json::Utilities { template <typename T1, typename T2> clas
 namespace System { class String; }
 namespace System { class Type; }
 
-#define NEWTONSOFT_JSON_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_BINDTOTYPE_OFFSET UNITYSDK_OFFSET(0x15DC4CA0)
-#define NEWTONSOFT_JSON_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_GETTYPEFROMTYPENAMEKEY_OFFSET UNITYSDK_OFFSET(0x15DC4960)
-#define NEWTONSOFT_JSON_SERIALIZATION_DEFAULTSERIALIZATIONBINDER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15DC4D90)
-#define NEWTONSOFT_JSON_SERIALIZATION_DEFAULTSERIALIZATIONBINDER__CTOR_OFFSET UNITYSDK_OFFSET(0x15DC4D20)
+#define NEWTONSOFT_JSON_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_BINDTOTYPE_OFFSET UNITYSDK_OFFSET(0x1A988250)
+#define NEWTONSOFT_JSON_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_GETTYPEFROMTYPENAMEKEY_OFFSET UNITYSDK_OFFSET(0x1A987F80)
+#define NEWTONSOFT_JSON_SERIALIZATION_DEFAULTSERIALIZATIONBINDER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A988340)
+#define NEWTONSOFT_JSON_SERIALIZATION_DEFAULTSERIALIZATIONBINDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9882C0)
 
 namespace Newtonsoft::Json::Serialization
 {
-	inline static constexpr unsigned int DefaultSerializationBinder_TypeDefinitionIndex = 8187;
+	inline static constexpr unsigned int DefaultSerializationBinder_TypeDefinitionIndex = 6973;
 
 	class DefaultSerializationBinder : public ::System::Runtime::Serialization::SerializationBinder
 	{
 	public:
 		static ::Newtonsoft::Json::Serialization::DefaultSerializationBinder** StaticGet_Instance()
 		{
-			return (::Newtonsoft::Json::Serialization::DefaultSerializationBinder**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x25310);
+			return (::Newtonsoft::Json::Serialization::DefaultSerializationBinder**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x5E60);
 		}
 		::Newtonsoft::Json::Utilities::ThreadSafeStore_2<::Newtonsoft::Json::Serialization::DefaultSerializationBinder_TypeNameKey, ::System::Type*>* _typeCache; // 0x10
 

@@ -6,29 +6,41 @@
 namespace Newtonsoft::Json::Bson { class BsonString; }
 namespace System { class String; }
 
-#define NEWTONSOFT_JSON_BSON_BSONREGEX_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x15D79600)
-#define NEWTONSOFT_JSON_BSON_BSONREGEX_SET_OPTIONS_OFFSET UNITYSDK_OFFSET(0x15D79580)
-#define NEWTONSOFT_JSON_BSON_BSONREGEX_SET_PATTERN_OFFSET UNITYSDK_OFFSET(0x15D79570)
-#define NEWTONSOFT_JSON_BSON_BSONREGEX__CTOR_OFFSET UNITYSDK_OFFSET(0x15D79590)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX_GET_OPTIONS_OFFSET UNITYSDK_OFFSET(0x1B108110)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX_GET_PATTERN_OFFSET UNITYSDK_OFFSET(0x1B1080F0)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1B1081B0)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX_SET_OPTIONS_OFFSET UNITYSDK_OFFSET(0x1B108120)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX_SET_PATTERN_OFFSET UNITYSDK_OFFSET(0x1B108100)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX__CTOR_OFFSET UNITYSDK_OFFSET(0x1B108130)
 
 namespace Newtonsoft::Json::Bson
 {
-	inline static constexpr unsigned int BsonRegex_TypeDefinitionIndex = 8330;
+	inline static constexpr unsigned int BsonRegex_TypeDefinitionIndex = 7106;
 
 	class BsonRegex : public ::Newtonsoft::Json::Bson::BsonToken
 	{
 	public:
-		::Newtonsoft::Json::Bson::BsonString* _Pattern_k__BackingField; // 0x18
 		::Newtonsoft::Json::Bson::BsonString* _Options_k__BackingField; // 0x20
+		::Newtonsoft::Json::Bson::BsonString* _Pattern_k__BackingField; // 0x28
 
 		::System::Void _ctor(::System::String* pattern, ::System::String* options)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_BSON_BSONREGEX__CTOR_OFFSET))(this, pattern, options);
 		}
 
+		::Newtonsoft::Json::Bson::BsonString* get_Pattern()
+		{
+			return ((::Newtonsoft::Json::Bson::BsonString*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_BSON_BSONREGEX_GET_PATTERN_OFFSET))(this);
+		}
+
 		::System::Void set_Pattern(::Newtonsoft::Json::Bson::BsonString* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::Bson::BsonString*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_BSON_BSONREGEX_SET_PATTERN_OFFSET))(this, value);
+		}
+
+		::Newtonsoft::Json::Bson::BsonString* get_Options()
+		{
+			return ((::Newtonsoft::Json::Bson::BsonString*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_BSON_BSONREGEX_GET_OPTIONS_OFFSET))(this);
 		}
 
 		::System::Void set_Options(::Newtonsoft::Json::Bson::BsonString* value)

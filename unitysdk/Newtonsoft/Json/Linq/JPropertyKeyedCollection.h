@@ -8,32 +8,37 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class ICollection_1; }
 namespace System::Collections::Generic { template <typename T> class IEqualityComparer_1; }
 
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_ADDKEY_OFFSET UNITYSDK_OFFSET(0x15DABFD0)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_CLEARITEMS_OFFSET UNITYSDK_OFFSET(0x15DAC210)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_COMPARE_OFFSET UNITYSDK_OFFSET(0x15DACAC0)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_CONTAINS_OFFSET UNITYSDK_OFFSET(0x15DAA110)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_ENSUREDICTIONARY_OFFSET UNITYSDK_OFFSET(0x15DAC140)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_GETKEYFORITEM_OFFSET UNITYSDK_OFFSET(0x15DAC2B0)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_GET_KEYS_OFFSET UNITYSDK_OFFSET(0x15DAC950)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_INDEXOFREFERENCE_OFFSET UNITYSDK_OFFSET(0x15DAC9A0)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_INSERTITEM_OFFSET UNITYSDK_OFFSET(0x15DAC300)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_REMOVEITEM_OFFSET UNITYSDK_OFFSET(0x15DAC390)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_REMOVEKEY_OFFSET UNITYSDK_OFFSET(0x15DAC500)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_SETITEM_OFFSET UNITYSDK_OFFSET(0x15DAC560)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_TRYGETVALUE_OFFSET UNITYSDK_OFFSET(0x15DAC880)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION__CCTOR_OFFSET UNITYSDK_OFFSET(0x15DACDF0)
-#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15DA92B0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_ADDKEY_OFFSET UNITYSDK_OFFSET(0x1A2F1170)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_CHANGEITEMKEY_OFFSET UNITYSDK_OFFSET(0x1A2F13B0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_CLEARITEMS_OFFSET UNITYSDK_OFFSET(0x1A2F17E0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_COMPARE_OFFSET UNITYSDK_OFFSET(0x1A2F24F0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_CONTAINSITEM_OFFSET UNITYSDK_OFFSET(0x1A2F15E0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_CONTAINS_OFFSET UNITYSDK_OFFSET(0x1A2F1880)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_ENSUREDICTIONARY_OFFSET UNITYSDK_OFFSET(0x1A2F12E0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_GETKEYFORITEM_OFFSET UNITYSDK_OFFSET(0x1A2F1710)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x1A2F1FF0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_GET_KEYS_OFFSET UNITYSDK_OFFSET(0x1A2F2170)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_GET_VALUES_OFFSET UNITYSDK_OFFSET(0x1A2F22A0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_INDEXOFREFERENCE_OFFSET UNITYSDK_OFFSET(0x1A2F23D0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_INSERTITEM_OFFSET UNITYSDK_OFFSET(0x1A2F1930)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_REMOVEITEM_OFFSET UNITYSDK_OFFSET(0x1A2F1AF0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_REMOVEKEY_OFFSET UNITYSDK_OFFSET(0x1A2F1780)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_REMOVE_OFFSET UNITYSDK_OFFSET(0x1A2F19F0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_SETITEM_OFFSET UNITYSDK_OFFSET(0x1A2F1C90)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_TRYGETVALUE_OFFSET UNITYSDK_OFFSET(0x1A2F20A0)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A2F2820)
+#define NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2F10D0)
 
 namespace Newtonsoft::Json::Linq
 {
-	inline static constexpr unsigned int JPropertyKeyedCollection_TypeDefinitionIndex = 8226;
+	inline static constexpr unsigned int JPropertyKeyedCollection_TypeDefinitionIndex = 7045;
 
 	class JPropertyKeyedCollection : public ::System::Collections::ObjectModel::Collection_1<::Newtonsoft::Json::Linq::JToken*>
 	{
 	public:
 		static ::System::Collections::Generic::IEqualityComparer_1<::System::String*>** StaticGet_Comparer()
 		{
-			return (::System::Collections::Generic::IEqualityComparer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(JPropertyKeyedCollection_TypeDefinitionIndex)->GetStaticField(0x25940);
+			return (::System::Collections::Generic::IEqualityComparer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(JPropertyKeyedCollection_TypeDefinitionIndex)->GetStaticField(0x5F60);
 		}
 		::System::Collections::Generic::Dictionary_2<::System::String*, ::Newtonsoft::Json::Linq::JToken*>* _dictionary; // 0x20
 
@@ -52,6 +57,11 @@ namespace Newtonsoft::Json::Linq
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::Newtonsoft::Json::Linq::JToken*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_ADDKEY_OFFSET))(this, key, item);
 		}
 
+		::System::Void ChangeItemKey(::Newtonsoft::Json::Linq::JToken* item, ::System::String* newKey)
+		{
+			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::Linq::JToken*, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_CHANGEITEMKEY_OFFSET))(this, item, newKey);
+		}
+
 		::System::Void ClearItems()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_CLEARITEMS_OFFSET))(this);
@@ -60,6 +70,11 @@ namespace Newtonsoft::Json::Linq
 		::System::Boolean Contains(::System::String* key)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_CONTAINS_OFFSET))(this, key);
+		}
+
+		::System::Boolean ContainsItem(::Newtonsoft::Json::Linq::JToken* item)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Newtonsoft::Json::Linq::JToken*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_CONTAINSITEM_OFFSET))(this, item);
 		}
 
 		::System::Void EnsureDictionary()
@@ -77,6 +92,11 @@ namespace Newtonsoft::Json::Linq
 			return ((::System::Void(*)(::PVOID, ::System::Int32, ::Newtonsoft::Json::Linq::JToken*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_INSERTITEM_OFFSET))(this, index, item);
 		}
 
+		::System::Boolean Remove(::System::String* key)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_REMOVE_OFFSET))(this, key);
+		}
+
 		::System::Void RemoveItem(::System::Int32 index)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_REMOVEITEM_OFFSET))(this, index);
@@ -92,6 +112,11 @@ namespace Newtonsoft::Json::Linq
 			return ((::System::Void(*)(::PVOID, ::System::Int32, ::Newtonsoft::Json::Linq::JToken*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_SETITEM_OFFSET))(this, index, item);
 		}
 
+		::Newtonsoft::Json::Linq::JToken* get_Item(::System::String* key)
+		{
+			return ((::Newtonsoft::Json::Linq::JToken*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_GET_ITEM_OFFSET))(this, key);
+		}
+
 		::System::Boolean TryGetValue(::System::String* key, ::Newtonsoft::Json::Linq::JToken*& value)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::System::String*, ::Newtonsoft::Json::Linq::JToken*&))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_TRYGETVALUE_OFFSET))(this, key, value);
@@ -100,6 +125,11 @@ namespace Newtonsoft::Json::Linq
 		::System::Collections::Generic::ICollection_1<::System::String*>* get_Keys()
 		{
 			return ((::System::Collections::Generic::ICollection_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_GET_KEYS_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::ICollection_1<::Newtonsoft::Json::Linq::JToken*>* get_Values()
+		{
+			return ((::System::Collections::Generic::ICollection_1<::Newtonsoft::Json::Linq::JToken*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JPROPERTYKEYEDCOLLECTION_GET_VALUES_OFFSET))(this);
 		}
 
 		::System::Int32 IndexOfReference(::Newtonsoft::Json::Linq::JToken* t)

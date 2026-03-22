@@ -5,21 +5,27 @@
 namespace System::Collections { class ArrayList; }
 namespace System::Runtime::Remoting { class ObjRef; }
 
-#define SYSTEM_RUNTIME_REMOTING_SERVICES_TRACKINGSERVICES_NOTIFYDISCONNECTEDOBJECT_OFFSET UNITYSDK_OFFSET(0x15D12B00)
-#define SYSTEM_RUNTIME_REMOTING_SERVICES_TRACKINGSERVICES_NOTIFYMARSHALEDOBJECT_OFFSET UNITYSDK_OFFSET(0x15D11000)
-#define SYSTEM_RUNTIME_REMOTING_SERVICES_TRACKINGSERVICES_NOTIFYUNMARSHALEDOBJECT_OFFSET UNITYSDK_OFFSET(0x15D10100)
-#define SYSTEM_RUNTIME_REMOTING_SERVICES_TRACKINGSERVICES__CCTOR_OFFSET UNITYSDK_OFFSET(0x15D12EB0)
+#define SYSTEM_RUNTIME_REMOTING_SERVICES_TRACKINGSERVICES_NOTIFYDISCONNECTEDOBJECT_OFFSET UNITYSDK_OFFSET(0x1951D500)
+#define SYSTEM_RUNTIME_REMOTING_SERVICES_TRACKINGSERVICES_NOTIFYMARSHALEDOBJECT_OFFSET UNITYSDK_OFFSET(0x1951CD60)
+#define SYSTEM_RUNTIME_REMOTING_SERVICES_TRACKINGSERVICES_NOTIFYUNMARSHALEDOBJECT_OFFSET UNITYSDK_OFFSET(0x1951D130)
+#define SYSTEM_RUNTIME_REMOTING_SERVICES_TRACKINGSERVICES__CCTOR_OFFSET UNITYSDK_OFFSET(0x1951D8B0)
+#define SYSTEM_RUNTIME_REMOTING_SERVICES_TRACKINGSERVICES__CTOR_OFFSET UNITYSDK_OFFSET(0x1951CD50)
 
 namespace System::Runtime::Remoting::Services
 {
-	inline static constexpr unsigned int TrackingServices_TypeDefinitionIndex = 1218;
+	inline static constexpr unsigned int TrackingServices_TypeDefinitionIndex = 1269;
 
 	class TrackingServices : public ::System::Object
 	{
 	public:
 		static ::System::Collections::ArrayList** StaticGet__handlers()
 		{
-			return (::System::Collections::ArrayList**)Il2CppClass::FromTypeDefinitionIndex(TrackingServices_TypeDefinitionIndex)->GetStaticField(0x9250);
+			return (::System::Collections::ArrayList**)Il2CppClass::FromTypeDefinitionIndex(TrackingServices_TypeDefinitionIndex)->GetStaticField(0xE20);
+		}
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_SERVICES_TRACKINGSERVICES__CTOR_OFFSET))(this);
 		}
 
 		static ::System::Void _cctor()

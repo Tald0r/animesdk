@@ -1,0 +1,49 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_E053999CF96A442A;
+namespace MoleMole { class UIHollowCardOptionsDialogPopWindowController; }
+
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS24_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAA23310)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS24_0__INITCHOICEOBJ_B__0_OFFSET UNITYSDK_OFFSET(0xAA23320)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS24_0__INITCHOICEOBJ_B__1_OFFSET UNITYSDK_OFFSET(0xAA235E0)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS24_0__INITCHOICEOBJ_B__2_OFFSET UNITYSDK_OFFSET(0xAA23600)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS24_0__INITCHOICEOBJ_B__3_OFFSET UNITYSDK_OFFSET(0xAA236B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowCardOptionsDialogPopWindowController___c__DisplayClass24_0_TypeDefinitionIndex = 64592;
+
+	class UIHollowCardOptionsDialogPopWindowController___c__DisplayClass24_0 : public ::System::Object
+	{
+	public:
+		::MoleMole::UIHollowCardOptionsDialogPopWindowController* __4__this; // 0x10
+		::Class_1_E053999CF96A442A* choice; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS24_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _InitChoiceObj_b__0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS24_0__INITCHOICEOBJ_B__0_OFFSET))(this);
+		}
+
+		::System::Void _InitChoiceObj_b__1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS24_0__INITCHOICEOBJ_B__1_OFFSET))(this);
+		}
+
+		::System::Void _InitChoiceObj_b__2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS24_0__INITCHOICEOBJ_B__2_OFFSET))(this);
+		}
+
+		::System::Void _InitChoiceObj_b__3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS24_0__INITCHOICEOBJ_B__3_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,76 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Config/BaseProperty.h"
+#include "unitysdk/System/ValueType.h"
+
+#define STRUCT_2_0EA61705E6C719A1_METHOD_2_00E4D5DDC2254315_OFFSET UNITYSDK_OFFSET(0x2C3E30)
+#define STRUCT_2_0EA61705E6C719A1_METHOD_2_8633AE51B23EBDFD_1_OFFSET UNITYSDK_OFFSET(0x2D8740)
+#define STRUCT_2_0EA61705E6C719A1_METHOD_2_8633AE51B23EBDFD_2_OFFSET UNITYSDK_OFFSET(0x2D8750)
+#define STRUCT_2_0EA61705E6C719A1_METHOD_2_8633AE51B23EBDFD_OFFSET UNITYSDK_OFFSET(0x2D8710)
+#define STRUCT_2_0EA61705E6C719A1_METHOD_2_C229FF62B898C0B2_1_OFFSET UNITYSDK_OFFSET(0x2D8730)
+#define STRUCT_2_0EA61705E6C719A1_METHOD_2_C229FF62B898C0B2_2_OFFSET UNITYSDK_OFFSET(0x2D8760)
+#define STRUCT_2_0EA61705E6C719A1_METHOD_2_C229FF62B898C0B2_OFFSET UNITYSDK_OFFSET(0x2D8720)
+#define STRUCT_2_0EA61705E6C719A1_METHOD_2_C74E50CBD41F0264_OFFSET UNITYSDK_OFFSET(0x2D8700)
+#define STRUCT_2_0EA61705E6C719A1_METHOD_2_CF2BB9E876F7F042_OFFSET UNITYSDK_OFFSET(0x2D3600)
+#define STRUCT_2_0EA61705E6C719A1_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x2D86F0)
+
+inline static constexpr unsigned int Struct_2_0EA61705E6C719A1_TypeDefinitionIndex = 72218;
+
+struct alignas(8) Struct_2_0EA61705E6C719A1
+{
+	::MoleMole::Config::BaseProperty Field_2_0; // 0x10
+	::System::Double Field_2_1; // 0x18
+	::System::Double Field_2_2; // 0x20
+	::System::Double Field_2_3; // 0x28
+	::System::Boolean Field_2_4; // 0x30
+
+	::System::Boolean Method_2_F0088C88851A7DFB()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_0EA61705E6C719A1_METHOD_2_F0088C88851A7DFB_OFFSET))(this);
+	}
+
+	::System::Void Method_2_C74E50CBD41F0264(::System::Boolean a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + STRUCT_2_0EA61705E6C719A1_METHOD_2_C74E50CBD41F0264_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_8633AE51B23EBDFD(::System::Double a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Double))((::PBYTE)hIl2Cpp + STRUCT_2_0EA61705E6C719A1_METHOD_2_8633AE51B23EBDFD_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_CF2BB9E876F7F042(::MoleMole::Config::BaseProperty a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Config::BaseProperty))((::PBYTE)hIl2Cpp + STRUCT_2_0EA61705E6C719A1_METHOD_2_CF2BB9E876F7F042_OFFSET))(this, a1);
+	}
+
+	::System::Double Method_2_C229FF62B898C0B2()
+	{
+		return ((::System::Double(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_0EA61705E6C719A1_METHOD_2_C229FF62B898C0B2_OFFSET))(this);
+	}
+
+	::System::Double Method_2_C229FF62B898C0B2_1()
+	{
+		return ((::System::Double(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_0EA61705E6C719A1_METHOD_2_C229FF62B898C0B2_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_8633AE51B23EBDFD_1(::System::Double a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Double))((::PBYTE)hIl2Cpp + STRUCT_2_0EA61705E6C719A1_METHOD_2_8633AE51B23EBDFD_1_OFFSET))(this, a1);
+	}
+
+	::MoleMole::Config::BaseProperty Method_2_00E4D5DDC2254315()
+	{
+		return ((::MoleMole::Config::BaseProperty(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_0EA61705E6C719A1_METHOD_2_00E4D5DDC2254315_OFFSET))(this);
+	}
+
+	::System::Void Method_2_8633AE51B23EBDFD_2(::System::Double a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Double))((::PBYTE)hIl2Cpp + STRUCT_2_0EA61705E6C719A1_METHOD_2_8633AE51B23EBDFD_2_OFFSET))(this, a1);
+	}
+
+	::System::Double Method_2_C229FF62B898C0B2_2()
+	{
+		return ((::System::Double(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_0EA61705E6C719A1_METHOD_2_C229FF62B898C0B2_2_OFFSET))(this);
+	}
+};

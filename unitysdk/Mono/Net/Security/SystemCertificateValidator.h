@@ -1,30 +1,41 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Net/Security/SslPolicyErrors.h"
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.h"
 
 namespace Mono::Security::Interface { class MonoTlsSettings; }
+namespace System { class String; }
+namespace System::Security::Cryptography::X509Certificates { class X509Certificate2; }
 namespace System::Security::Cryptography::X509Certificates { class X509CertificateCollection; }
 namespace System::Security::Cryptography::X509Certificates { class X509Chain; }
 
-#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_CREATEX509CHAIN_OFFSET UNITYSDK_OFFSET(0x17E4F460)
-#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_NEEDSCHAIN_OFFSET UNITYSDK_OFFSET(0x17E478A0)
-#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR__CCTOR_OFFSET UNITYSDK_OFFSET(0x17E4F360)
+#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_BUILDX509CHAIN_OFFSET UNITYSDK_OFFSET(0x18577B40)
+#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_CHECKCERTIFICATEUSAGE_OFFSET UNITYSDK_OFFSET(0x18577CE0)
+#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_CHECKDOMAINNAME_OFFSET UNITYSDK_OFFSET(0x18578D00)
+#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_CHECKSERVERIDENTITY_OFFSET UNITYSDK_OFFSET(0x18578100)
+#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_CHECKUSAGE_OFFSET UNITYSDK_OFFSET(0x18577B50)
+#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_CREATEX509CHAIN_OFFSET UNITYSDK_OFFSET(0x18577A00)
+#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_EVALUATESYSTEM_OFFSET UNITYSDK_OFFSET(0x18578490)
+#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_EVALUATE_OFFSET UNITYSDK_OFFSET(0x185785D0)
+#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_MATCH_OFFSET UNITYSDK_OFFSET(0x18578AD0)
+#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_NEEDSCHAIN_OFFSET UNITYSDK_OFFSET(0x185786C0)
+#define MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR__CCTOR_OFFSET UNITYSDK_OFFSET(0x185779C0)
 
 namespace Mono::Net::Security
 {
-	inline static constexpr unsigned int SystemCertificateValidator_TypeDefinitionIndex = 2430;
+	inline static constexpr unsigned int SystemCertificateValidator_TypeDefinitionIndex = 2633;
 
 	class SystemCertificateValidator : public ::System::Object
 	{
 	public:
-		static ::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags* StaticGet_s_flags()
-		{
-			return (::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags*)Il2CppClass::FromTypeDefinitionIndex(SystemCertificateValidator_TypeDefinitionIndex)->GetStaticField(0x5340);
-		}
 		static ::System::Boolean* StaticGet_is_macosx()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(SystemCertificateValidator_TypeDefinitionIndex)->GetStaticField(0x5344);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(SystemCertificateValidator_TypeDefinitionIndex)->GetStaticField(0x1250);
+		}
+		static ::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags* StaticGet_s_flags()
+		{
+			return (::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags*)Il2CppClass::FromTypeDefinitionIndex(SystemCertificateValidator_TypeDefinitionIndex)->GetStaticField(0x1254);
 		}
 
 		static ::System::Void _cctor()
@@ -37,9 +48,49 @@ namespace Mono::Net::Security
 			return ((::System::Security::Cryptography::X509Certificates::X509Chain*(*)(::System::Security::Cryptography::X509Certificates::X509CertificateCollection*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_CREATEX509CHAIN_OFFSET))(certs);
 		}
 
+		static ::System::Boolean BuildX509Chain(::System::Security::Cryptography::X509Certificates::X509CertificateCollection* certs, ::System::Security::Cryptography::X509Certificates::X509Chain* chain, ::System::Net::Security::SslPolicyErrors& errors, ::System::Int32& status11)
+		{
+			return ((::System::Boolean(*)(::System::Security::Cryptography::X509Certificates::X509CertificateCollection*, ::System::Security::Cryptography::X509Certificates::X509Chain*, ::System::Net::Security::SslPolicyErrors&, ::System::Int32&))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_BUILDX509CHAIN_OFFSET))(certs, chain, errors, status11);
+		}
+
+		static ::System::Boolean CheckUsage(::System::Security::Cryptography::X509Certificates::X509CertificateCollection* certs, ::System::String* host, ::System::Net::Security::SslPolicyErrors& errors, ::System::Int32& status11)
+		{
+			return ((::System::Boolean(*)(::System::Security::Cryptography::X509Certificates::X509CertificateCollection*, ::System::String*, ::System::Net::Security::SslPolicyErrors&, ::System::Int32&))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_CHECKUSAGE_OFFSET))(certs, host, errors, status11);
+		}
+
+		static ::System::Boolean EvaluateSystem(::System::Security::Cryptography::X509Certificates::X509CertificateCollection* certs, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection* anchors, ::System::String* host, ::System::Security::Cryptography::X509Certificates::X509Chain* chain, ::System::Net::Security::SslPolicyErrors& errors, ::System::Int32& status11)
+		{
+			return ((::System::Boolean(*)(::System::Security::Cryptography::X509Certificates::X509CertificateCollection*, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*, ::System::String*, ::System::Security::Cryptography::X509Certificates::X509Chain*, ::System::Net::Security::SslPolicyErrors&, ::System::Int32&))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_EVALUATESYSTEM_OFFSET))(certs, anchors, host, chain, errors, status11);
+		}
+
+		static ::System::Boolean Evaluate(::Mono::Security::Interface::MonoTlsSettings* settings, ::System::String* host, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection* certs, ::System::Security::Cryptography::X509Certificates::X509Chain* chain, ::System::Net::Security::SslPolicyErrors& errors, ::System::Int32& status11)
+		{
+			return ((::System::Boolean(*)(::Mono::Security::Interface::MonoTlsSettings*, ::System::String*, ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*, ::System::Security::Cryptography::X509Certificates::X509Chain*, ::System::Net::Security::SslPolicyErrors&, ::System::Int32&))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_EVALUATE_OFFSET))(settings, host, certs, chain, errors, status11);
+		}
+
 		static ::System::Boolean NeedsChain(::Mono::Security::Interface::MonoTlsSettings* settings)
 		{
 			return ((::System::Boolean(*)(::Mono::Security::Interface::MonoTlsSettings*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_NEEDSCHAIN_OFFSET))(settings);
+		}
+
+		static ::System::Boolean CheckCertificateUsage(::System::Security::Cryptography::X509Certificates::X509Certificate2* cert)
+		{
+			return ((::System::Boolean(*)(::System::Security::Cryptography::X509Certificates::X509Certificate2*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_CHECKCERTIFICATEUSAGE_OFFSET))(cert);
+		}
+
+		static ::System::Boolean CheckServerIdentity(::System::Security::Cryptography::X509Certificates::X509Certificate2* cert, ::System::String* targetHost)
+		{
+			return ((::System::Boolean(*)(::System::Security::Cryptography::X509Certificates::X509Certificate2*, ::System::String*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_CHECKSERVERIDENTITY_OFFSET))(cert, targetHost);
+		}
+
+		static ::System::Boolean CheckDomainName(::System::String* subjectName, ::System::String* targetHost)
+		{
+			return ((::System::Boolean(*)(::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_CHECKDOMAINNAME_OFFSET))(subjectName, targetHost);
+		}
+
+		static ::System::Boolean Match(::System::String* hostname, ::System::String* pattern)
+		{
+			return ((::System::Boolean(*)(::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + MONO_NET_SECURITY_SYSTEMCERTIFICATEVALIDATOR_MATCH_OFFSET))(hostname, pattern);
 		}
 	};
 }

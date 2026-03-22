@@ -1,10 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace System { class String; }
+inline static constexpr unsigned int Class_0_16E4307DCC419505_53_TypeDefinitionIndex = 24323;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_53_TypeDefinitionIndex = 31198;
-
+template <typename TVertex, typename TEdge>
 class Class_0_16E4307DCC419505_53
 {
 public:

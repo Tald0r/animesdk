@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ThreadPriority_TypeDefinitionIndex = 3821;
+	inline static constexpr unsigned int ThreadPriority_TypeDefinitionIndex = 5123;
 
 	enum class ThreadPriority : ::System::Int32
 	{

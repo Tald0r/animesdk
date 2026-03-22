@@ -6,38 +6,31 @@
 
 namespace System { class String; }
 namespace System::Collections { class ArrayList; }
-namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::IO { class FileInfo; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_IO_DIRECTORYINFO_CHECKPATH_OFFSET UNITYSDK_OFFSET(0x15C78840)
-#define SYSTEM_IO_DIRECTORYINFO_CREATEENUMERATEDIRECTORIESITERATOR_OFFSET UNITYSDK_OFFSET(0x15C79610)
-#define SYSTEM_IO_DIRECTORYINFO_CREATEENUMERATEFILESITERATOR_OFFSET UNITYSDK_OFFSET(0x15C797A0)
-#define SYSTEM_IO_DIRECTORYINFO_CREATE_OFFSET UNITYSDK_OFFSET(0x15C77850)
-#define SYSTEM_IO_DIRECTORYINFO_DELETE_1_OFFSET UNITYSDK_OFFSET(0x15C78F60)
-#define SYSTEM_IO_DIRECTORYINFO_DELETE_OFFSET UNITYSDK_OFFSET(0x15C78F30)
-#define SYSTEM_IO_DIRECTORYINFO_ENUMERATEDIRECTORIES_1_OFFSET UNITYSDK_OFFSET(0x15C79550)
-#define SYSTEM_IO_DIRECTORYINFO_ENUMERATEDIRECTORIES_OFFSET UNITYSDK_OFFSET(0x15C79540)
-#define SYSTEM_IO_DIRECTORYINFO_ENUMERATEFILES_1_OFFSET UNITYSDK_OFFSET(0x15C79720)
-#define SYSTEM_IO_DIRECTORYINFO_ENUMERATEFILES_OFFSET UNITYSDK_OFFSET(0x15C796A0)
-#define SYSTEM_IO_DIRECTORYINFO_GETDIRECTORIES_1_OFFSET UNITYSDK_OFFSET(0x15C78D90)
-#define SYSTEM_IO_DIRECTORYINFO_GETDIRECTORIES_OFFSET UNITYSDK_OFFSET(0x15C78D80)
-#define SYSTEM_IO_DIRECTORYINFO_GETFILESSUBDIRS_OFFSET UNITYSDK_OFFSET(0x15C78FB0)
-#define SYSTEM_IO_DIRECTORYINFO_GETFILES_1_OFFSET UNITYSDK_OFFSET(0x15C78B10)
-#define SYSTEM_IO_DIRECTORYINFO_GETFILES_2_OFFSET UNITYSDK_OFFSET(0x15C79130)
-#define SYSTEM_IO_DIRECTORYINFO_GETFILES_OFFSET UNITYSDK_OFFSET(0x15C78B00)
-#define SYSTEM_IO_DIRECTORYINFO_GET_EXISTS_OFFSET UNITYSDK_OFFSET(0x15C777D0)
-#define SYSTEM_IO_DIRECTORYINFO_GET_NAME_OFFSET UNITYSDK_OFFSET(0x15C78AF0)
-#define SYSTEM_IO_DIRECTORYINFO_GET_PARENT_OFFSET UNITYSDK_OFFSET(0x15C77760)
-#define SYSTEM_IO_DIRECTORYINFO_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x15C78960)
-#define SYSTEM_IO_DIRECTORYINFO_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15C78FA0)
-#define SYSTEM_IO_DIRECTORYINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C77700)
-#define SYSTEM_IO_DIRECTORYINFO__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C78AD0)
-#define SYSTEM_IO_DIRECTORYINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x15C780F0)
+#define SYSTEM_IO_DIRECTORYINFO_CHECKPATH_OFFSET UNITYSDK_OFFSET(0x1965E5D0)
+#define SYSTEM_IO_DIRECTORYINFO_CREATE_OFFSET UNITYSDK_OFFSET(0x1965EAA0)
+#define SYSTEM_IO_DIRECTORYINFO_DELETE_1_OFFSET UNITYSDK_OFFSET(0x1965EE00)
+#define SYSTEM_IO_DIRECTORYINFO_DELETE_OFFSET UNITYSDK_OFFSET(0x1965EDD0)
+#define SYSTEM_IO_DIRECTORYINFO_GETDIRECTORIES_1_OFFSET UNITYSDK_OFFSET(0x1965EC60)
+#define SYSTEM_IO_DIRECTORYINFO_GETDIRECTORIES_OFFSET UNITYSDK_OFFSET(0x1965EC50)
+#define SYSTEM_IO_DIRECTORYINFO_GETFILESSUBDIRS_OFFSET UNITYSDK_OFFSET(0x1965EE50)
+#define SYSTEM_IO_DIRECTORYINFO_GETFILES_1_OFFSET UNITYSDK_OFFSET(0x1965EAC0)
+#define SYSTEM_IO_DIRECTORYINFO_GETFILES_2_OFFSET UNITYSDK_OFFSET(0x1965EFB0)
+#define SYSTEM_IO_DIRECTORYINFO_GETFILES_OFFSET UNITYSDK_OFFSET(0x1965EAB0)
+#define SYSTEM_IO_DIRECTORYINFO_GET_EXISTS_OFFSET UNITYSDK_OFFSET(0x1965E930)
+#define SYSTEM_IO_DIRECTORYINFO_GET_NAME_OFFSET UNITYSDK_OFFSET(0x1965EA20)
+#define SYSTEM_IO_DIRECTORYINFO_GET_PARENT_OFFSET UNITYSDK_OFFSET(0x1965EA30)
+#define SYSTEM_IO_DIRECTORYINFO_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1965E6F0)
+#define SYSTEM_IO_DIRECTORYINFO_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1965EE40)
+#define SYSTEM_IO_DIRECTORYINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1965E550)
+#define SYSTEM_IO_DIRECTORYINFO__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1965E860)
+#define SYSTEM_IO_DIRECTORYINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1965E500)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int DirectoryInfo_TypeDefinitionIndex = 705;
+	inline static constexpr unsigned int DirectoryInfo_TypeDefinitionIndex = 673;
 
 	class DirectoryInfo : public ::System::IO::FileSystemInfo
 	{
@@ -128,36 +121,6 @@ namespace System::IO
 		::Il2CppArray<::System::IO::FileInfo*>* GetFiles_2(::System::String* searchPattern, ::System::IO::SearchOption searchOption)
 		{
 			return ((::Il2CppArray<::System::IO::FileInfo*>*(*)(::PVOID, ::System::String*, ::System::IO::SearchOption))((::PBYTE)hIl2Cpp + SYSTEM_IO_DIRECTORYINFO_GETFILES_2_OFFSET))(this, searchPattern, searchOption);
-		}
-
-		::System::Collections::Generic::IEnumerable_1<::System::IO::DirectoryInfo*>* EnumerateDirectories()
-		{
-			return ((::System::Collections::Generic::IEnumerable_1<::System::IO::DirectoryInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_IO_DIRECTORYINFO_ENUMERATEDIRECTORIES_OFFSET))(this);
-		}
-
-		::System::Collections::Generic::IEnumerable_1<::System::IO::DirectoryInfo*>* EnumerateDirectories_1(::System::String* searchPattern, ::System::IO::SearchOption searchOption)
-		{
-			return ((::System::Collections::Generic::IEnumerable_1<::System::IO::DirectoryInfo*>*(*)(::PVOID, ::System::String*, ::System::IO::SearchOption))((::PBYTE)hIl2Cpp + SYSTEM_IO_DIRECTORYINFO_ENUMERATEDIRECTORIES_1_OFFSET))(this, searchPattern, searchOption);
-		}
-
-		::System::Collections::Generic::IEnumerable_1<::System::IO::DirectoryInfo*>* CreateEnumerateDirectoriesIterator(::System::String* searchPattern, ::System::IO::SearchOption searchOption)
-		{
-			return ((::System::Collections::Generic::IEnumerable_1<::System::IO::DirectoryInfo*>*(*)(::PVOID, ::System::String*, ::System::IO::SearchOption))((::PBYTE)hIl2Cpp + SYSTEM_IO_DIRECTORYINFO_CREATEENUMERATEDIRECTORIESITERATOR_OFFSET))(this, searchPattern, searchOption);
-		}
-
-		::System::Collections::Generic::IEnumerable_1<::System::IO::FileInfo*>* EnumerateFiles()
-		{
-			return ((::System::Collections::Generic::IEnumerable_1<::System::IO::FileInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_IO_DIRECTORYINFO_ENUMERATEFILES_OFFSET))(this);
-		}
-
-		::System::Collections::Generic::IEnumerable_1<::System::IO::FileInfo*>* EnumerateFiles_1(::System::String* searchPattern, ::System::IO::SearchOption searchOption)
-		{
-			return ((::System::Collections::Generic::IEnumerable_1<::System::IO::FileInfo*>*(*)(::PVOID, ::System::String*, ::System::IO::SearchOption))((::PBYTE)hIl2Cpp + SYSTEM_IO_DIRECTORYINFO_ENUMERATEFILES_1_OFFSET))(this, searchPattern, searchOption);
-		}
-
-		::System::Collections::Generic::IEnumerable_1<::System::IO::FileInfo*>* CreateEnumerateFilesIterator(::System::String* searchPattern, ::System::IO::SearchOption searchOption)
-		{
-			return ((::System::Collections::Generic::IEnumerable_1<::System::IO::FileInfo*>*(*)(::PVOID, ::System::String*, ::System::IO::SearchOption))((::PBYTE)hIl2Cpp + SYSTEM_IO_DIRECTORYINFO_CREATEENUMERATEFILESITERATOR_OFFSET))(this, searchPattern, searchOption);
 		}
 
 		::System::Void CheckPath(::System::String* path)

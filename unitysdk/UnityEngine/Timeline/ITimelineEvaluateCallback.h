@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int ITimelineEvaluateCallback_TypeDefinitionIndex = 29037;
+	inline static constexpr unsigned int ITimelineEvaluateCallback_TypeDefinitionIndex = 29392;
 
 	class ITimelineEvaluateCallback
 	{

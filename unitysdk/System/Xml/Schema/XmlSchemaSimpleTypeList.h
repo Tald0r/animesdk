@@ -3,42 +3,37 @@
 #include "unitysdk/System/Xml/Schema/XmlSchemaSimpleTypeContent.h"
 
 namespace System::Xml { class XmlQualifiedName; }
+namespace System::Xml::Schema { class XmlSchemaObject; }
 namespace System::Xml::Schema { class XmlSchemaSimpleType; }
 
-#define SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST_GET_BASEITEMTYPE_OFFSET UNITYSDK_OFFSET(0x17D95310)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST_SET_BASEITEMTYPE_OFFSET UNITYSDK_OFFSET(0x17D95320)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST_SET_ITEMTYPE_OFFSET UNITYSDK_OFFSET(0x17D95300)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST__CTOR_OFFSET UNITYSDK_OFFSET(0x17D95330)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST_CLONE_OFFSET UNITYSDK_OFFSET(0x18C7E050)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST_SET_ITEMTYPENAME_OFFSET UNITYSDK_OFFSET(0x18C7DFB0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST__CTOR_OFFSET UNITYSDK_OFFSET(0x18C7E1F0)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int XmlSchemaSimpleTypeList_TypeDefinitionIndex = 2196;
+	inline static constexpr unsigned int XmlSchemaSimpleTypeList_TypeDefinitionIndex = 2191;
 
 	class XmlSchemaSimpleTypeList : public ::System::Xml::Schema::XmlSchemaSimpleTypeContent
 	{
 	public:
-		::System::Xml::Schema::XmlSchemaSimpleType* baseItemType; // 0x10
-		::System::Xml::Schema::XmlSchemaSimpleType* itemType; // 0x18
-		::System::Xml::XmlQualifiedName* itemTypeName; // 0x20
+		::System::Xml::Schema::XmlSchemaSimpleType* baseItemType; // 0x50
+		::System::Xml::XmlQualifiedName* itemTypeName; // 0x58
+		::System::Xml::Schema::XmlSchemaSimpleType* itemType; // 0x60
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST__CTOR_OFFSET))(this);
 		}
 
-		::System::Void set_ItemType(::System::Xml::Schema::XmlSchemaSimpleType* value)
+		::System::Void set_ItemTypeName(::System::Xml::XmlQualifiedName* value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaSimpleType*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST_SET_ITEMTYPE_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlQualifiedName*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST_SET_ITEMTYPENAME_OFFSET))(this, value);
 		}
 
-		::System::Xml::Schema::XmlSchemaSimpleType* get_BaseItemType()
+		::System::Xml::Schema::XmlSchemaObject* Clone()
 		{
-			return ((::System::Xml::Schema::XmlSchemaSimpleType*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST_GET_BASEITEMTYPE_OFFSET))(this);
-		}
-
-		::System::Void set_BaseItemType(::System::Xml::Schema::XmlSchemaSimpleType* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaSimpleType*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST_SET_BASEITEMTYPE_OFFSET))(this, value);
+			return ((::System::Xml::Schema::XmlSchemaObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMASIMPLETYPELIST_CLONE_OFFSET))(this);
 		}
 	};
 }

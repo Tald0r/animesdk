@@ -1,0 +1,63 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_7CF7F1C413CECBBD.h"
+#include "unitysdk/System/ValueType.h"
+
+namespace System { class Object; }
+
+#define STRUCT_2_B2494015E9A5BF5D_2_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x34A120)
+#define STRUCT_2_B2494015E9A5BF5D_2_EQUALS_OFFSET UNITYSDK_OFFSET(0x34A0A0)
+#define STRUCT_2_B2494015E9A5BF5D_2_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x34A130)
+#define STRUCT_2_B2494015E9A5BF5D_2_METHOD_2_6D0360BD23602584_OFFSET UNITYSDK_OFFSET(0x34A1A0)
+#define STRUCT_2_B2494015E9A5BF5D_2_METHOD_2_95780ED94B90ED36_OFFSET UNITYSDK_OFFSET(0x34A200)
+#define STRUCT_2_B2494015E9A5BF5D_2_METHOD_2_A96DCA30C6927810_OFFSET UNITYSDK_OFFSET(0x2C3E30)
+#define STRUCT_2_B2494015E9A5BF5D_2_METHOD_2_C74CF020AA42ED85_OFFSET UNITYSDK_OFFSET(0x2D38E0)
+#define STRUCT_2_B2494015E9A5BF5D_2__CTOR_OFFSET UNITYSDK_OFFSET(0x2D3730)
+
+inline static constexpr unsigned int Struct_2_B2494015E9A5BF5D_2_TypeDefinitionIndex = 70855;
+
+struct alignas(4) Struct_2_B2494015E9A5BF5D_2
+{
+	::Enum_3_7CF7F1C413CECBBD Field_2_0; // 0x10
+	::System::Int32 Field_2_1; // 0x14
+
+	::System::Void _ctor(::Enum_3_7CF7F1C413CECBBD a1, ::System::Int32 a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Enum_3_7CF7F1C413CECBBD, ::System::Int32))((::PBYTE)hIl2Cpp + STRUCT_2_B2494015E9A5BF5D_2__CTOR_OFFSET))(this, a1, a2);
+	}
+
+	::System::Boolean Equals(::Struct_2_B2494015E9A5BF5D_2 a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Struct_2_B2494015E9A5BF5D_2))((::PBYTE)hIl2Cpp + STRUCT_2_B2494015E9A5BF5D_2_EQUALS_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Equals_1(::System::Object* a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + STRUCT_2_B2494015E9A5BF5D_2_EQUALS_1_OFFSET))(this, a1);
+	}
+
+	::System::Int32 GetHashCode()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_B2494015E9A5BF5D_2_GETHASHCODE_OFFSET))(this);
+	}
+
+	::System::Int32 Method_2_C74CF020AA42ED85()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_B2494015E9A5BF5D_2_METHOD_2_C74CF020AA42ED85_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_6D0360BD23602584(::System::Object* a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + STRUCT_2_B2494015E9A5BF5D_2_METHOD_2_6D0360BD23602584_OFFSET))(this, a1);
+	}
+
+	::Enum_3_7CF7F1C413CECBBD Method_2_A96DCA30C6927810()
+	{
+		return ((::Enum_3_7CF7F1C413CECBBD(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_B2494015E9A5BF5D_2_METHOD_2_A96DCA30C6927810_OFFSET))(this);
+	}
+
+	::System::Int32 Method_2_95780ED94B90ED36()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_B2494015E9A5BF5D_2_METHOD_2_95780ED94B90ED36_OFFSET))(this);
+	}
+};

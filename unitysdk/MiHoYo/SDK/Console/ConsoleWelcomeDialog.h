@@ -9,29 +9,29 @@ namespace System { class String; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI { class Text; }
 
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_AWAKE_OFFSET UNITYSDK_OFFSET(0x15765270)
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_BINDEXISTINGACCOUNT_OFFSET UNITYSDK_OFFSET(0x157669F0)
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_CANCELDIALOG_OFFSET UNITYSDK_OFFSET(0x15766A20)
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_CONFIRMDIALOG_OFFSET UNITYSDK_OFFSET(0x15766A80)
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_CREATEANDBINDNEWACCOUNT_OFFSET UNITYSDK_OFFSET(0x15766A10)
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_HIDE_OFFSET UNITYSDK_OFFSET(0x157651C0)
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x15766230)
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_ONENABLE_OFFSET UNITYSDK_OFFSET(0x15766200)
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_SHOWBINDMODESELECTION_OFFSET UNITYSDK_OFFSET(0x15765D60)
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_SHOWNEWACCOUNTPROMPT_OFFSET UNITYSDK_OFFSET(0x15766270)
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_SHOW_OFFSET UNITYSDK_OFFSET(0x15765030)
-#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG__CTOR_OFFSET UNITYSDK_OFFSET(0x15766AA0)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_AWAKE_OFFSET UNITYSDK_OFFSET(0x18447820)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_BINDEXISTINGACCOUNT_OFFSET UNITYSDK_OFFSET(0x18448D50)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_CANCELDIALOG_OFFSET UNITYSDK_OFFSET(0x18448D80)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_CONFIRMDIALOG_OFFSET UNITYSDK_OFFSET(0x18448DE0)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_CREATEANDBINDNEWACCOUNT_OFFSET UNITYSDK_OFFSET(0x18448D70)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_HIDE_OFFSET UNITYSDK_OFFSET(0x184472B0)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x184487B0)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_ONENABLE_OFFSET UNITYSDK_OFFSET(0x18448780)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_SHOWBINDMODESELECTION_OFFSET UNITYSDK_OFFSET(0x184484C0)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_SHOWNEWACCOUNTPROMPT_OFFSET UNITYSDK_OFFSET(0x184487F0)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG_SHOW_OFFSET UNITYSDK_OFFSET(0x18446FF0)
+#define MIHOYO_SDK_CONSOLE_CONSOLEWELCOMEDIALOG__CTOR_OFFSET UNITYSDK_OFFSET(0x18448E00)
 
 namespace MiHoYo::SDK::Console
 {
-	inline static constexpr unsigned int ConsoleWelcomeDialog_TypeDefinitionIndex = 7504;
+	inline static constexpr unsigned int ConsoleWelcomeDialog_TypeDefinitionIndex = 18647;
 
 	class ConsoleWelcomeDialog : public ::MiHoYo::SDK::Console::ConsoleDialogBase
 	{
 	public:
 		static ::MiHoYo::SDK::Console::ConsoleWelcomeDialog** StaticGet_Instance()
 		{
-			return (::MiHoYo::SDK::Console::ConsoleWelcomeDialog**)Il2CppClass::FromTypeDefinitionIndex(ConsoleWelcomeDialog_TypeDefinitionIndex)->GetStaticField(0x14590);
+			return (::MiHoYo::SDK::Console::ConsoleWelcomeDialog**)Il2CppClass::FromTypeDefinitionIndex(ConsoleWelcomeDialog_TypeDefinitionIndex)->GetStaticField(0x96C0);
 		}
 		// static const ::System::String* PrefabName; // 0x0
 		// static const ::System::String* TitlePath; // 0x0
@@ -42,19 +42,19 @@ namespace MiHoYo::SDK::Console
 		// static const ::System::String* SkipButtonTextPath; // 0x0
 		// static const ::System::String* ConsoleUserNamePath; // 0x0
 		// static const ::System::String* ConsoleUserPanelPath; // 0x0
-		::UnityEngine::UI::Text* titleText; // 0xB0
-		::UnityEngine::UI::Text* contentText; // 0xB8
-		::UnityEngine::UI::Text* bindExistingAccountButtonText; // 0xC0
-		::UnityEngine::UI::Text* createNewAccountButtonText; // 0xC8
-		::UnityEngine::UI::Text* consoleAccountUserName; // 0xD0
-		::UnityEngine::GameObject* bindExistingAccountBtnObj; // 0xD8
-		::UnityEngine::GameObject* createNewAccountBtnObj; // 0xE0
-		::UnityEngine::GameObject* consoleUserObj; // 0xE8
-		::System::Action* OnBindExisitingAccount; // 0xF0
-		::System::Action* OnCreateAndBindNewAccount; // 0xF8
-		::System::Action* OnCancelBinding; // 0x100
-		::MiHoYo::SDK::ReportType SDKReportType; // 0x108
-		::MiHoYo::SDK::Console::ConsoleWelcomeDialog_DisplayStage displayStage; // 0x10C
+		::UnityEngine::UI::Text* titleText; // 0xC0
+		::UnityEngine::UI::Text* contentText; // 0xC8
+		::UnityEngine::UI::Text* bindExistingAccountButtonText; // 0xD0
+		::UnityEngine::UI::Text* createNewAccountButtonText; // 0xD8
+		::UnityEngine::UI::Text* consoleAccountUserName; // 0xE0
+		::UnityEngine::GameObject* bindExistingAccountBtnObj; // 0xE8
+		::UnityEngine::GameObject* createNewAccountBtnObj; // 0xF0
+		::UnityEngine::GameObject* consoleUserObj; // 0xF8
+		::System::Action* OnBindExisitingAccount; // 0x100
+		::System::Action* OnCreateAndBindNewAccount; // 0x108
+		::System::Action* OnCancelBinding; // 0x110
+		::MiHoYo::SDK::ReportType SDKReportType; // 0x118
+		::MiHoYo::SDK::Console::ConsoleWelcomeDialog_DisplayStage displayStage; // 0x11C
 
 		::System::Void _ctor()
 		{

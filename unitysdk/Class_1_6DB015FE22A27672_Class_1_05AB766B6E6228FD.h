@@ -1,0 +1,35 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_6DB015FE22A27672;
+namespace MoleMole { class MonoBuffIcon; }
+
+#define CLASS_1_6DB015FE22A27672_CLASS_1_05AB766B6E6228FD_METHOD_1_03A81715BD2AFEF3_OFFSET UNITYSDK_OFFSET(0x82AD9D0)
+#define CLASS_1_6DB015FE22A27672_CLASS_1_05AB766B6E6228FD_METHOD_1_3BE5DBAE268F9022_OFFSET UNITYSDK_OFFSET(0x82AD970)
+#define CLASS_1_6DB015FE22A27672_CLASS_1_05AB766B6E6228FD__CTOR_OFFSET UNITYSDK_OFFSET(0x82AD960)
+
+inline static constexpr unsigned int Class_1_6DB015FE22A27672_Class_1_05AB766B6E6228FD_TypeDefinitionIndex = 55075;
+
+class Class_1_6DB015FE22A27672_Class_1_05AB766B6E6228FD : public ::System::Object
+{
+public:
+	::Class_1_6DB015FE22A27672* Field_1_0; // 0x10
+	::MoleMole::MonoBuffIcon* Field_1_1; // 0x18
+	::System::Boolean Field_1_2; // 0x20
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6DB015FE22A27672_CLASS_1_05AB766B6E6228FD__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_3BE5DBAE268F9022()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6DB015FE22A27672_CLASS_1_05AB766B6E6228FD_METHOD_1_3BE5DBAE268F9022_OFFSET))(this);
+	}
+
+	::System::Void Method_1_03A81715BD2AFEF3()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6DB015FE22A27672_CLASS_1_05AB766B6E6228FD_METHOD_1_03A81715BD2AFEF3_OFFSET))(this);
+	}
+};

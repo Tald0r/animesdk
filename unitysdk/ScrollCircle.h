@@ -1,0 +1,73 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/UnityEngine/EventSystems/UIBehaviour.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+namespace UnityEngine { class RectTransform; }
+namespace UnityEngine::EventSystems { class PointerEventData; }
+
+#define SCROLLCIRCLE_AWAKE_OFFSET UNITYSDK_OFFSET(0x19C21CC0)
+#define SCROLLCIRCLE_FIXCONTENTPOS_OFFSET UNITYSDK_OFFSET(0x19C21EC0)
+#define SCROLLCIRCLE_ONBEGINDRAG_OFFSET UNITYSDK_OFFSET(0x19C220D0)
+#define SCROLLCIRCLE_ONDRAG_OFFSET UNITYSDK_OFFSET(0x19C21E50)
+#define SCROLLCIRCLE_ONENDDRAG_OFFSET UNITYSDK_OFFSET(0x19C22140)
+#define SCROLLCIRCLE_ONPOINTERDOWN_OFFSET UNITYSDK_OFFSET(0x19C221D0)
+#define SCROLLCIRCLE_ONPOINTERUP_OFFSET UNITYSDK_OFFSET(0x19C22240)
+#define SCROLLCIRCLE__CTOR_OFFSET UNITYSDK_OFFSET(0x19C222D0)
+#define SCROLLCIRCLE___BASE_AWAKE_OFFSET UNITYSDK_OFFSET(0x19C222F0)
+
+inline static constexpr unsigned int ScrollCircle_TypeDefinitionIndex = 45612;
+
+class ScrollCircle : public ::UnityEngine::EventSystems::UIBehaviour
+{
+public:
+	::UnityEngine::RectTransform* content; // 0x18
+	::UnityEngine::RectTransform* viewPort; // 0x20
+	::System::Single _circleRadius; // 0x28
+	::UnityEngine::Vector2 _originAnchorPos; // 0x2C
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SCROLLCIRCLE__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Awake()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SCROLLCIRCLE_AWAKE_OFFSET))(this);
+	}
+
+	::System::Void OnDrag(::UnityEngine::EventSystems::PointerEventData* eventData)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + SCROLLCIRCLE_ONDRAG_OFFSET))(this, eventData);
+	}
+
+	::System::Void OnBeginDrag(::UnityEngine::EventSystems::PointerEventData* eventData)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + SCROLLCIRCLE_ONBEGINDRAG_OFFSET))(this, eventData);
+	}
+
+	::System::Void OnEndDrag(::UnityEngine::EventSystems::PointerEventData* eventData)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + SCROLLCIRCLE_ONENDDRAG_OFFSET))(this, eventData);
+	}
+
+	::System::Void OnPointerDown(::UnityEngine::EventSystems::PointerEventData* eventData)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + SCROLLCIRCLE_ONPOINTERDOWN_OFFSET))(this, eventData);
+	}
+
+	::System::Void OnPointerUp(::UnityEngine::EventSystems::PointerEventData* eventData)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + SCROLLCIRCLE_ONPOINTERUP_OFFSET))(this, eventData);
+	}
+
+	::System::Void FixContentPos(::UnityEngine::EventSystems::PointerEventData* eventData)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + SCROLLCIRCLE_FIXCONTENTPOS_OFFSET))(this, eventData);
+	}
+
+	::System::Void __base_Awake()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SCROLLCIRCLE___BASE_AWAKE_OFFSET))(this);
+	}
+};

@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ParticleSystemSimulationSpace_TypeDefinitionIndex = 5382;
+	inline static constexpr unsigned int ParticleSystemSimulationSpace_TypeDefinitionIndex = 23708;
 
 	enum class ParticleSystemSimulationSpace : ::System::Int32
 	{

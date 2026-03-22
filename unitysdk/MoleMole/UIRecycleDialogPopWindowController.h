@@ -1,0 +1,610 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Share/EItemType.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_1_1685EC66FBD28897;
+class Class_1_320D5F9D31519B3D;
+class Class_1_4F2E1A9F7CA83F80;
+class Class_1_A7674D82B2D081D4;
+class Class_1_BDEEA5009A8A636E;
+class Class_1_D2E90365D99FC7E6;
+class Class_2_208CC9941471731A_240;
+class Class_2_208CC9941471731A_911;
+class Class_2_79AE422BA06F6D26_70;
+class Class_2_888829D5F4E4EBE0;
+class Class_2_A63C194229EB6BF2;
+class Class_3_1F0B390B50451710;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralSmallTipsWidgetController; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace MoleMole { class UIWorkshopIconBtnWidgetController; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+template <typename T> class Class_0_16E4307DCC41950C_13;
+template <typename T> class Class_2_7AE1A22930C1CD01;
+
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_BIND_OFFSET UNITYSDK_OFFSET(0xAF82490)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_CLEARSELECT_OFFSET UNITYSDK_OFFSET(0xAF873C0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_CREATEITEMICON_OFFSET UNITYSDK_OFFSET(0xAF87100)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_DOCLOSE_OFFSET UNITYSDK_OFFSET(0xD6AF890)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_DOREFRESHSCROLLVIEWDATA_OFFSET UNITYSDK_OFFSET(0xAF88150)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETCUREQUIPICONBTNCONTROLLER_OFFSET UNITYSDK_OFFSET(0xD6AF3C0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETCUREQUIPITEMDATA_OFFSET UNITYSDK_OFFSET(0xD6AF5E0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETEQUIPCOST_OFFSET UNITYSDK_OFFSET(0xAF8AD20)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETEQUIPICONBTNCONTROLLER_OFFSET UNITYSDK_OFFSET(0xD6AF430)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETEQUIPLEVELINFO_OFFSET UNITYSDK_OFFSET(0xD6ADCB0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETITEMLISTHASSELECT_OFFSET UNITYSDK_OFFSET(0xAF88DE0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETSHOWREWARDLIST_OFFSET UNITYSDK_OFFSET(0xAF8B210)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETTOTALCOSTNUM_OFFSET UNITYSDK_OFFSET(0xAF8AE80)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETWEAPONCOST_OFFSET UNITYSDK_OFFSET(0xAF8AE10)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETWEAPONLEVELINFO_OFFSET UNITYSDK_OFFSET(0xD6ADDA0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0xAF82220)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xAF82210)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_INITDELANDLOCKBTN_OFFSET UNITYSDK_OFFSET(0xAF86D10)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_INITMAINPROPERTY_OFFSET UNITYSDK_OFFSET(0xAF85EE0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_INITRANDOMPROPERTY_OFFSET UNITYSDK_OFFSET(0xAF86480)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_INITSTARS_OFFSET UNITYSDK_OFFSET(0xAF86A20)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_INITUI_OFFSET UNITYSDK_OFFSET(0xAF83230)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISINSELECTLIST_OFFSET UNITYSDK_OFFSET(0xAF876B0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISITEMEQUIPPED_OFFSET UNITYSDK_OFFSET(0xAF89140)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISITEMLEVELUP_OFFSET UNITYSDK_OFFSET(0xAF89F70)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISITEMLOCK_OFFSET UNITYSDK_OFFSET(0xAF87BF0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISITEMTRASH_OFFSET UNITYSDK_OFFSET(0xAF89EA0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISREACHMAXSELECTABLECOUNT_OFFSET UNITYSDK_OFFSET(0xAF87D00)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISSELECTIONCONTAINSA_OFFSET UNITYSDK_OFFSET(0xD6AF6A0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISWEAPONRECYCLE_OFFSET UNITYSDK_OFFSET(0xD6AFD00)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONBATCHOPERATIONCALLBACK_OFFSET UNITYSDK_OFFSET(0xAF88700)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONCLICKCONSUMEITEM_OFFSET UNITYSDK_OFFSET(0xAF8A590)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAF84930)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONEQUIPITEMCLICK_OFFSET UNITYSDK_OFFSET(0xAF89670)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0xAF850D0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0xAF84E30)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xAF849D0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONGENERALSMALLTIPSWIDGETCLOSED_OFFSET UNITYSDK_OFFSET(0xD6B00E0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONINFODESCBTNCLICK_OFFSET UNITYSDK_OFFSET(0xD6B0220)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xAF85CE0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xAF85460)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONQUICKSELECTBTN_OFFSET UNITYSDK_OFFSET(0xAF8A080)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONSORTERMARKDELETECLICK_OFFSET UNITYSDK_OFFSET(0xAF888C0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONSORTORFILTERCHANGED_OFFSET UNITYSDK_OFFSET(0xAF88560)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONTOGGLELOCKCALLBACK_OFFSET UNITYSDK_OFFSET(0xAF87730)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAF85B30)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAF82230)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAF82E50)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_OPENSUITFILTERPOPUP_OFFSET UNITYSDK_OFFSET(0xAF86EF0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHAVATAR_OFFSET UNITYSDK_OFFSET(0xD6ADA40)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPINFO_OFFSET UNITYSDK_OFFSET(0xAF84BF0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPITEMDETAILVIEW_OFFSET UNITYSDK_OFFSET(0xAF8B570)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPLIST_OFFSET UNITYSDK_OFFSET(0xAF87450)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPMAINPROP_OFFSET UNITYSDK_OFFSET(0xD6AE270)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPRANDOMPROP_OFFSET UNITYSDK_OFFSET(0xD6AE470)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPSTATEHANDLE_OFFSET UNITYSDK_OFFSET(0xAF88EC0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPSUITINFO_OFFSET UNITYSDK_OFFSET(0xD6AE750)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHITEMMASKSTATE_OFFSET UNITYSDK_OFFSET(0xAF87F50)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHITEMSPREVIEW_OFFSET UNITYSDK_OFFSET(0xAF8A640)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHQUICKSELECTBTNSTATE_OFFSET UNITYSDK_OFFSET(0xAF8A440)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHVIEWCOMMON_OFFSET UNITYSDK_OFFSET(0xAF8B830)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHVIEWFOREQUIP_OFFSET UNITYSDK_OFFSET(0xD6ADE90)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHVIEWFORWEAPON_OFFSET UNITYSDK_OFFSET(0xD6AEB20)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xAF84600)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SELECTEQUIPFORCONSOLE_OFFSET UNITYSDK_OFFSET(0xAF856A0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SELECTEQUIPFORNOTCONSOLE_OFFSET UNITYSDK_OFFSET(0xAF85910)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SENDDISMANTLE_OFFSET UNITYSDK_OFFSET(0xD6AFD70)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SETQUICKSELECTSTATE_OFFSET UNITYSDK_OFFSET(0xAF8A2C0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SETSELECT_OFFSET UNITYSDK_OFFSET(0xAF87DA0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SHOWGENERALSMALLTIPS_OFFSET UNITYSDK_OFFSET(0xD6AFF20)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SHOWPARENTCONTROLLERBACKBTNGAMEPAD_OFFSET UNITYSDK_OFFSET(0xD6AF800)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_TOGGLESELECT_OFFSET UNITYSDK_OFFSET(0xAF89240)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_TRYSENDDISMANTLE_OFFSET UNITYSDK_OFFSET(0xD6AF900)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_UPDATESELECTEDINFO_OFFSET UNITYSDK_OFFSET(0xAF87540)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD6B0470)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER__ONUIOPEN_B__38_0_OFFSET UNITYSDK_OFFSET(0xD6B05F0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER__SENDDISMANTLE_B__109_0_OFFSET UNITYSDK_OFFSET(0xD6B0660)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER__SENDDISMANTLE_B__109_1_OFFSET UNITYSDK_OFFSET(0xD6B07A0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD6B08E0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0xD6B0950)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0xD6B09C0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xD6B0A30)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xD6B0AB0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xD6B0AE0)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD6B0B40)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD6B0B50)
+#define MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD6B0B60)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIRecycleDialogPopWindowController_TypeDefinitionIndex = 42839;
+
+	class UIRecycleDialogPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		static ::System::Int32* StaticGet_C_EquipRecycleSelectLimit()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIRecycleDialogPopWindowController_TypeDefinitionIndex)->GetStaticField(0xE150);
+		}
+		// static const ::System::Int32 MAX_EQUIP_STAR_COUNT = 0x5; // 0x0
+		// static const ::System::String* Weapon_Lock_Tips; // 0x0
+		// static const ::System::String* Weapon_Max_Tips; // 0x0
+		// static const ::System::String* Weapon_Equiped_Tips; // 0x0
+		// static const ::System::String* Equip_Lock_Tips; // 0x0
+		// static const ::System::String* Equip_Max_Tips; // 0x0
+		// static const ::System::String* Equip_Equiped_Tips; // 0x0
+		// static const ::System::Int32 MAX_PROPERTY_COUNT = 0x4; // 0x0
+		// static const ::System::String* SwitchAnimName; // 0x0
+		// static const ::System::Int32 MAX_BASE_PROP_COUNT = 0x1; // 0x0
+		::Class_2_79AE422BA06F6D26_70* _view; // 0x2F8
+		::Class_2_888829D5F4E4EBE0* _equipmentDataProxy; // 0x300
+		::Class_2_A63C194229EB6BF2* _equipModel; // 0x308
+		::System::Collections::Generic::List_1<::System::UInt32>* _selectSet; // 0x310
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* _curShowBtnItems; // 0x318
+		::System::Int32 _curSelectedEquipIndex; // 0x320
+		::Class_1_0D6706375CDAAE8C* _detailItemData; // 0x328
+		::System::Collections::Generic::List_1<::Class_1_D2E90365D99FC7E6*>* _decomposeResultItems; // 0x330
+		::System::Collections::Generic::List_1<::Class_1_320D5F9D31519B3D*>* _equipStarList; // 0x338
+		::System::Collections::Generic::List_1<::Class_1_4F2E1A9F7CA83F80*>* _basePropertyItems; // 0x340
+		::System::Collections::Generic::List_1<::Class_1_4F2E1A9F7CA83F80*>* _randomPropertyItems; // 0x348
+		::Class_2_7AE1A22930C1CD01<::Class_1_0D6706375CDAAE8C*>* _sorter; // 0x350
+		::Share::EItemType _showItemType; // 0x358
+		::System::Int32 _fromDevelopmentAvatarID; // 0x35C
+		::System::Action* _onCloseAction; // 0x360
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* _showItemList; // 0x368
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::UIGeneralSmallTipsWidgetController*>* _smallTipsWidgetDict; // 0x370
+		::System::Collections::Generic::List_1<::Class_1_BDEEA5009A8A636E*>* _equipBasePropertyItems; // 0x378
+		::System::Collections::Generic::List_1<::Class_1_BDEEA5009A8A636E*>* _equipRandomPropertyItems; // 0x380
+		::System::Collections::Generic::List_1<::Class_1_320D5F9D31519B3D*>* _equipStar; // 0x388
+		::Class_0_16E4307DCC41950C_13<::Class_1_0D6706375CDAAE8C*>* suitFilterGroupData; // 0x390
+		::System::Boolean _isSelectAllDelete; // 0x398
+		::System::Int32 _curSelectRarity; // 0x39C
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* showList; // 0x3A0
+		::Class_1_A7674D82B2D081D4* _gamepadEquipStateProxy; // 0x3A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void InitUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_INITUI_OFFSET))(this);
+		}
+
+		::System::Void Bind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_BIND_OFFSET))(this);
+		}
+
+		::System::Void OpenSuitFilterPopup()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_OPENSUITFILTERPOPUP_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateItemIcon(::Struct_2_575273D27F02957E binderInfo)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::Struct_2_575273D27F02957E))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_CREATEITEMICON_OFFSET))(this, binderInfo);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Boolean IsInSelectList(::System::UInt32 uid)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISINSELECTLIST_OFFSET))(this, uid);
+		}
+
+		::System::Void ClearSelect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_CLEARSELECT_OFFSET))(this);
+		}
+
+		::System::Void OnToggleLockCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONTOGGLELOCKCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void RefreshEquipList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPLIST_OFFSET))(this);
+		}
+
+		::System::Void OnSortOrFilterChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONSORTORFILTERCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnBatchOperationCallBack(::System::Boolean isBatchLock)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONBATCHOPERATIONCALLBACK_OFFSET))(this, isBatchLock);
+		}
+
+		::System::Void OnSorterMarkDeleteClick(::System::Int32 OptType)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONSORTERMARKDELETECLICK_OFFSET))(this, OptType);
+		}
+
+		::System::Void DoRefreshScrollViewData(::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* itemList)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_DOREFRESHSCROLLVIEWDATA_OFFSET))(this, itemList);
+		}
+
+		::System::Boolean GetItemListHasSelect(::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* list, ::System::UInt32 uid)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>*, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETITEMLISTHASSELECT_OFFSET))(this, list, uid);
+		}
+
+		::System::Void RefreshEquipStateHandle(::MoleMole::UIWorkshopIconBtnWidgetController* ctrl)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIWorkshopIconBtnWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPSTATEHANDLE_OFFSET))(this, ctrl);
+		}
+
+		::System::Void RefreshItemMaskState(::MoleMole::UIItemIconBtnWidgetController* itemCtrl, ::Class_1_0D6706375CDAAE8C* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIItemIconBtnWidgetController*, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHITEMMASKSTATE_OFFSET))(this, itemCtrl, data);
+		}
+
+		::System::Boolean ToggleSelect(::MoleMole::UIItemIconBtnWidgetController* ctrl, ::System::Boolean isCurSelect, ::System::Boolean showTips)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::UIItemIconBtnWidgetController*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_TOGGLESELECT_OFFSET))(this, ctrl, isCurSelect, showTips);
+		}
+
+		::System::Boolean SetSelect(::Class_1_0D6706375CDAAE8C* data, ::System::Boolean isSelect)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SETSELECT_OFFSET))(this, data, isSelect);
+		}
+
+		::System::Void OnEquipItemClick(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONEQUIPITEMCLICK_OFFSET))(this, index);
+		}
+
+		::System::Boolean IsItemLock(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISITEMLOCK_OFFSET))(this, itemData);
+		}
+
+		::System::Boolean IsItemTrash(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISITEMTRASH_OFFSET))(this, itemData);
+		}
+
+		::System::Boolean IsItemEquipped(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISITEMEQUIPPED_OFFSET))(this, itemData);
+		}
+
+		::System::Boolean IsReachMaxSelectableCount()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISREACHMAXSELECTABLECOUNT_OFFSET))(this);
+		}
+
+		::System::Boolean IsItemLevelUp(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISITEMLEVELUP_OFFSET))(this, itemData);
+		}
+
+		::System::Void OnQuickSelectBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONQUICKSELECTBTN_OFFSET))(this);
+		}
+
+		::System::Void SetQuickSelectState(::System::Boolean isSelectAllDelete, ::System::Int32 curSelectRarity)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SETQUICKSELECTSTATE_OFFSET))(this, isSelectAllDelete, curSelectRarity);
+		}
+
+		::System::Void RefreshQuickSelectBtnState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHQUICKSELECTBTNSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnClickConsumeItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONCLICKCONSUMEITEM_OFFSET))(this);
+		}
+
+		::System::Void UpdateSelectedInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_UPDATESELECTEDINFO_OFFSET))(this);
+		}
+
+		::System::Void SelectEquipForConsole(::System::UInt64 uid)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt64))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SELECTEQUIPFORCONSOLE_OFFSET))(this, uid);
+		}
+
+		::System::Void SelectEquipForNotConsole(::System::UInt64 uid, ::System::Boolean forceClearCurSelectIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt64, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SELECTEQUIPFORNOTCONSOLE_OFFSET))(this, uid, forceClearCurSelectIndex);
+		}
+
+		::System::Int32 GetEquipCost(::System::Int32 rarity, ::System::Int32 level)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETEQUIPCOST_OFFSET))(this, rarity, level);
+		}
+
+		::System::Int32 GetWeaponCost(::System::Int32 star, ::System::Int32 rarity)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETWEAPONCOST_OFFSET))(this, star, rarity);
+		}
+
+		::System::Int32 GetTotalCostNum()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETTOTALCOSTNUM_OFFSET))(this);
+		}
+
+		::System::Void RefreshItemsPreview()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHITEMSPREVIEW_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* GetShowRewardList(::System::Collections::Generic::List_1<::Class_1_D2E90365D99FC7E6*>* dataList)
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>*(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_D2E90365D99FC7E6*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETSHOWREWARDLIST_OFFSET))(this, dataList);
+		}
+
+		::System::Void InitMainProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_INITMAINPROPERTY_OFFSET))(this);
+		}
+
+		::System::Void InitRandomProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_INITRANDOMPROPERTY_OFFSET))(this);
+		}
+
+		::System::Void InitStars()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_INITSTARS_OFFSET))(this);
+		}
+
+		::System::Void InitDelAndLockBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_INITDELANDLOCKBTN_OFFSET))(this);
+		}
+
+		::System::Void RefreshEquipInfo(::System::Boolean isSwitch)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPINFO_OFFSET))(this, isSwitch);
+		}
+
+		::System::Void RefreshEquipItemDetailView(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPITEMDETAILVIEW_OFFSET))(this, itemData);
+		}
+
+		::System::Void RefreshViewCommon(::Class_1_0D6706375CDAAE8C* itemData, ::Class_2_208CC9941471731A_240* itemConfig, ::System::UInt32 curLevel, ::System::UInt32 maxLevel, ::System::UInt32 avatarUID)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::Class_2_208CC9941471731A_240*, ::System::UInt32, ::System::UInt32, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHVIEWCOMMON_OFFSET))(this, itemData, itemConfig, curLevel, maxLevel, avatarUID);
+		}
+
+		::System::Void RefreshAvatar(::System::UInt32 avatarUID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHAVATAR_OFFSET))(this, avatarUID);
+		}
+
+		::System::Void GetEquipLevelInfo(::Class_1_0D6706375CDAAE8C* itemData, ::System::UInt32& curLevel, ::System::UInt32& maxLevel)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::System::UInt32&, ::System::UInt32&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETEQUIPLEVELINFO_OFFSET))(this, itemData, curLevel, maxLevel);
+		}
+
+		::System::Void GetWeaponLevelInfo(::Class_1_0D6706375CDAAE8C* itemData, ::System::UInt32& curLevel, ::System::UInt32& maxLevel)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::System::UInt32&, ::System::UInt32&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETWEAPONLEVELINFO_OFFSET))(this, itemData, curLevel, maxLevel);
+		}
+
+		::System::Void RefreshViewForEquip(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHVIEWFOREQUIP_OFFSET))(this, itemData);
+		}
+
+		::System::Void RefreshEquipMainProp(::Class_3_1F0B390B50451710* equipserverinfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_1F0B390B50451710*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPMAINPROP_OFFSET))(this, equipserverinfo);
+		}
+
+		::System::Void RefreshEquipRandomProp(::Class_3_1F0B390B50451710* equipserverinfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_1F0B390B50451710*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPRANDOMPROP_OFFSET))(this, equipserverinfo);
+		}
+
+		::System::Void RefreshEquipSuitInfo(::Class_2_208CC9941471731A_911* equipConfig)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_911*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHEQUIPSUITINFO_OFFSET))(this, equipConfig);
+		}
+
+		::System::Void RefreshViewForWeapon(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_REFRESHVIEWFORWEAPON_OFFSET))(this, itemData);
+		}
+
+		::MoleMole::UIItemIconBtnWidgetController* GetCurEquipIconBtnController()
+		{
+			return ((::MoleMole::UIItemIconBtnWidgetController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETCUREQUIPICONBTNCONTROLLER_OFFSET))(this);
+		}
+
+		::Class_1_0D6706375CDAAE8C* GetCurEquipItemData()
+		{
+			return ((::Class_1_0D6706375CDAAE8C*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETCUREQUIPITEMDATA_OFFSET))(this);
+		}
+
+		::MoleMole::UIItemIconBtnWidgetController* GetEquipIconBtnController(::System::Int32 index)
+		{
+			return ((::MoleMole::UIItemIconBtnWidgetController*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_GETEQUIPICONBTNCONTROLLER_OFFSET))(this, index);
+		}
+
+		::System::Boolean IsSelectionContainsA()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISSELECTIONCONTAINSA_OFFSET))(this);
+		}
+
+		::System::Void ShowParentControllerBackBtnGamepad(::System::Boolean show)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SHOWPARENTCONTROLLERBACKBTNGAMEPAD_OFFSET))(this, show);
+		}
+
+		::System::Void DoClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_DOCLOSE_OFFSET))(this);
+		}
+
+		::System::Void TrySendDismantle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_TRYSENDDISMANTLE_OFFSET))(this);
+		}
+
+		::System::Void SendDismantle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SENDDISMANTLE_OFFSET))(this);
+		}
+
+		::System::Void ShowGeneralSmallTips(::System::String* text)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_SHOWGENERALSMALLTIPS_OFFSET))(this, text);
+		}
+
+		::System::Void OnGeneralSmallTipsWidgetClosed(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONGENERALSMALLTIPSWIDGETCLOSED_OFFSET))(this, args);
+		}
+
+		::System::Boolean IsWeaponRecycle()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ISWEAPONRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void OnInfoDescBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER_ONINFODESCBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void _OnUIOpen_b__38_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER__ONUIOPEN_B__38_0_OFFSET))(this, args);
+		}
+
+		::System::Void _SendDismantle_b__109_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER__SENDDISMANTLE_B__109_0_OFFSET))(this);
+		}
+
+		::System::Void _SendDismantle_b__109_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER__SENDDISMANTLE_B__109_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRECYCLEDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

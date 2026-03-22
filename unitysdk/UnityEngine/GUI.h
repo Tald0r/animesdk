@@ -16,162 +16,168 @@ namespace UnityEngine { class GUISkin; }
 namespace UnityEngine { class GUIStyle; }
 namespace UnityEngine { class GUI_WindowFunction; }
 namespace UnityEngine { class Material; }
-namespace UnityEngine { class TextEditor; }
 namespace UnityEngine { class Texture; }
 namespace UnityEngineInternal { class GenericStack; }
 
-#define UNITYENGINE_GUI_BEGINGROUP_1_OFFSET UNITYSDK_OFFSET(0x1825A0D0)
-#define UNITYENGINE_GUI_BEGINGROUP_OFFSET UNITYSDK_OFFSET(0x1825A050)
-#define UNITYENGINE_GUI_BEGINSCROLLVIEW_1_OFFSET UNITYSDK_OFFSET(0x1825A780)
-#define UNITYENGINE_GUI_BEGINSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x1825A640)
-#define UNITYENGINE_GUI_BOX_1_OFFSET UNITYSDK_OFFSET(0x18254C70)
-#define UNITYENGINE_GUI_BOX_OFFSET UNITYSDK_OFFSET(0x18254AF0)
-#define UNITYENGINE_GUI_BUTTON_1_OFFSET UNITYSDK_OFFSET(0x18255200)
-#define UNITYENGINE_GUI_BUTTON_2_OFFSET UNITYSDK_OFFSET(0x182552B0)
-#define UNITYENGINE_GUI_BUTTON_OFFSET UNITYSDK_OFFSET(0x18255010)
-#define UNITYENGINE_GUI_CALCULATESCALEDTEXTURERECTS_OFFSET UNITYSDK_OFFSET(0x182544F0)
-#define UNITYENGINE_GUI_CALLWINDOWDELEGATE_OFFSET UNITYSDK_OFFSET(0x1825BF50)
-#define UNITYENGINE_GUI_DOBUTTON_OFFSET UNITYSDK_OFFSET(0x18255390)
-#define UNITYENGINE_GUI_DOCONTROL_OFFSET UNITYSDK_OFFSET(0x18258410)
-#define UNITYENGINE_GUI_DOLABEL_OFFSET UNITYSDK_OFFSET(0x18253220)
-#define UNITYENGINE_GUI_DOREPEATBUTTON_OFFSET UNITYSDK_OFFSET(0x18255610)
-#define UNITYENGINE_GUI_DOSETSKIN_OFFSET UNITYSDK_OFFSET(0x18252B20)
-#define UNITYENGINE_GUI_DOTEXTFIELD_1_OFFSET UNITYSDK_OFFSET(0x18255DD0)
-#define UNITYENGINE_GUI_DOTEXTFIELD_2_OFFSET UNITYSDK_OFFSET(0x18255E90)
-#define UNITYENGINE_GUI_DOTEXTFIELD_OFFSET UNITYSDK_OFFSET(0x18255CD0)
-#define UNITYENGINE_GUI_DOTOGGLE_OFFSET UNITYSDK_OFFSET(0x18258300)
-#define UNITYENGINE_GUI_DRAWTEXTUREWITHTEXCOORDS_1_OFFSET UNITYSDK_OFFSET(0x18254730)
-#define UNITYENGINE_GUI_DRAWTEXTUREWITHTEXCOORDS_OFFSET UNITYSDK_OFFSET(0x182546A0)
-#define UNITYENGINE_GUI_DRAWTEXTURE_1_OFFSET UNITYSDK_OFFSET(0x182534B0)
-#define UNITYENGINE_GUI_DRAWTEXTURE_2_OFFSET UNITYSDK_OFFSET(0x18253580)
-#define UNITYENGINE_GUI_DRAWTEXTURE_3_OFFSET UNITYSDK_OFFSET(0x18253600)
-#define UNITYENGINE_GUI_DRAWTEXTURE_4_OFFSET UNITYSDK_OFFSET(0x182537A0)
-#define UNITYENGINE_GUI_DRAWTEXTURE_5_OFFSET UNITYSDK_OFFSET(0x182538F0)
-#define UNITYENGINE_GUI_DRAWTEXTURE_6_OFFSET UNITYSDK_OFFSET(0x18253AA0)
-#define UNITYENGINE_GUI_DRAWTEXTURE_7_OFFSET UNITYSDK_OFFSET(0x18253BF0)
-#define UNITYENGINE_GUI_DRAWTEXTURE_8_OFFSET UNITYSDK_OFFSET(0x18253DD0)
-#define UNITYENGINE_GUI_DRAWTEXTURE_OFFSET UNITYSDK_OFFSET(0x18253440)
-#define UNITYENGINE_GUI_ENDGROUP_OFFSET UNITYSDK_OFFSET(0x1825A560)
-#define UNITYENGINE_GUI_ENDSCROLLVIEW_1_OFFSET UNITYSDK_OFFSET(0x1825BAA0)
-#define UNITYENGINE_GUI_ENDSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x1825BA40)
-#define UNITYENGINE_GUI_GET_BACKGROUNDCOLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x182520C0)
-#define UNITYENGINE_GUI_GET_BACKGROUNDCOLOR_OFFSET UNITYSDK_OFFSET(0x18252060)
-#define UNITYENGINE_GUI_GET_BLENDMATERIAL_OFFSET UNITYSDK_OFFSET(0x18252270)
-#define UNITYENGINE_GUI_GET_BLITMATERIAL_OFFSET UNITYSDK_OFFSET(0x18252280)
-#define UNITYENGINE_GUI_GET_CHANGED_OFFSET UNITYSDK_OFFSET(0x18252220)
-#define UNITYENGINE_GUI_GET_COLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x18251FE0)
-#define UNITYENGINE_GUI_GET_COLOR_OFFSET UNITYSDK_OFFSET(0x18251F80)
-#define UNITYENGINE_GUI_GET_CONTENTCOLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x182521A0)
-#define UNITYENGINE_GUI_GET_CONTENTCOLOR_OFFSET UNITYSDK_OFFSET(0x18252140)
-#define UNITYENGINE_GUI_GET_ENABLED_OFFSET UNITYSDK_OFFSET(0x18252240)
-#define UNITYENGINE_GUI_GET_MATRIX_OFFSET UNITYSDK_OFFSET(0x18252E40)
-#define UNITYENGINE_GUI_GET_NEXTSCROLLSTEPTIME_OFFSET UNITYSDK_OFFSET(0x18252940)
-#define UNITYENGINE_GUI_GET_ROUNDEDRECTMATERIAL_OFFSET UNITYSDK_OFFSET(0x18252290)
-#define UNITYENGINE_GUI_GET_ROUNDEDRECTWITHCOLORPERBORDERMATERIAL_OFFSET UNITYSDK_OFFSET(0x182522A0)
-#define UNITYENGINE_GUI_GET_SCROLLTROUGHSIDE_OFFSET UNITYSDK_OFFSET(0x18252880)
-#define UNITYENGINE_GUI_GET_SCROLLVIEWSTATES_OFFSET UNITYSDK_OFFSET(0x1825A5E0)
-#define UNITYENGINE_GUI_GET_SKIN_OFFSET UNITYSDK_OFFSET(0x18252CB0)
-#define UNITYENGINE_GUI_GET_USEPAGESCROLLBARS_OFFSET UNITYSDK_OFFSET(0x18252260)
-#define UNITYENGINE_GUI_GRABMOUSECONTROL_OFFSET UNITYSDK_OFFSET(0x182522B0)
-#define UNITYENGINE_GUI_HANDLETEXTFIELDEVENTFORDESKTOPWITHFORCEDKEYBOARD_OFFSET UNITYSDK_OFFSET(0x182564C0)
-#define UNITYENGINE_GUI_HANDLETEXTFIELDEVENTFORDESKTOP_OFFSET UNITYSDK_OFFSET(0x18256D10)
-#define UNITYENGINE_GUI_HANDLETEXTFIELDEVENTFORTOUCHSCREEN_OFFSET UNITYSDK_OFFSET(0x18256800)
-#define UNITYENGINE_GUI_HASMOUSECONTROL_OFFSET UNITYSDK_OFFSET(0x182522C0)
-#define UNITYENGINE_GUI_HORIZONTALSCROLLBAR_OFFSET UNITYSDK_OFFSET(0x18258E60)
-#define UNITYENGINE_GUI_HORIZONTALSLIDER_OFFSET UNITYSDK_OFFSET(0x18258A80)
-#define UNITYENGINE_GUI_INTERNALREPAINTEDITORWINDOW_OFFSET UNITYSDK_OFFSET(0x182522E0)
-#define UNITYENGINE_GUI_LABEL_1_OFFSET UNITYSDK_OFFSET(0x18253140)
-#define UNITYENGINE_GUI_LABEL_OFFSET UNITYSDK_OFFSET(0x18252F50)
-#define UNITYENGINE_GUI_PASSWORDFIELDGETSTRTOSHOW_OFFSET UNITYSDK_OFFSET(0x18255C40)
-#define UNITYENGINE_GUI_RELEASEMOUSECONTROL_OFFSET UNITYSDK_OFFSET(0x182522D0)
-#define UNITYENGINE_GUI_REPEATBUTTON_1_OFFSET UNITYSDK_OFFSET(0x18255A00)
-#define UNITYENGINE_GUI_REPEATBUTTON_OFFSET UNITYSDK_OFFSET(0x18255490)
-#define UNITYENGINE_GUI_SCROLLERREPEATBUTTON_OFFSET UNITYSDK_OFFSET(0x182599D0)
-#define UNITYENGINE_GUI_SCROLLER_OFFSET UNITYSDK_OFFSET(0x18259450)
-#define UNITYENGINE_GUI_SET_BACKGROUNDCOLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x18252130)
-#define UNITYENGINE_GUI_SET_BACKGROUNDCOLOR_OFFSET UNITYSDK_OFFSET(0x182520D0)
-#define UNITYENGINE_GUI_SET_CHANGED_OFFSET UNITYSDK_OFFSET(0x18252230)
-#define UNITYENGINE_GUI_SET_COLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x18252050)
-#define UNITYENGINE_GUI_SET_COLOR_OFFSET UNITYSDK_OFFSET(0x18251FF0)
-#define UNITYENGINE_GUI_SET_CONTENTCOLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x18252210)
-#define UNITYENGINE_GUI_SET_CONTENTCOLOR_OFFSET UNITYSDK_OFFSET(0x182521B0)
-#define UNITYENGINE_GUI_SET_ENABLED_OFFSET UNITYSDK_OFFSET(0x18252250)
-#define UNITYENGINE_GUI_SET_MATRIX_OFFSET UNITYSDK_OFFSET(0x18252F00)
-#define UNITYENGINE_GUI_SET_NEXTSCROLLSTEPTIME_OFFSET UNITYSDK_OFFSET(0x182529A0)
-#define UNITYENGINE_GUI_SET_SCROLLTROUGHSIDE_OFFSET UNITYSDK_OFFSET(0x182528E0)
-#define UNITYENGINE_GUI_SET_SKIN_OFFSET UNITYSDK_OFFSET(0x18252A00)
-#define UNITYENGINE_GUI_SLIDER_OFFSET UNITYSDK_OFFSET(0x18258B70)
-#define UNITYENGINE_GUI_TOGGLE_OFFSET UNITYSDK_OFFSET(0x182581E0)
-#define UNITYENGINE_GUI_VERTICALSCROLLBAR_OFFSET UNITYSDK_OFFSET(0x18259E40)
-#define UNITYENGINE_GUI__CCTOR_OFFSET UNITYSDK_OFFSET(0x182522F0)
+#define UNITYENGINE_GUI_BEGINGROUP_1_OFFSET UNITYSDK_OFFSET(0x19C34520)
+#define UNITYENGINE_GUI_BEGINGROUP_2_OFFSET UNITYSDK_OFFSET(0x19C34580)
+#define UNITYENGINE_GUI_BEGINGROUP_OFFSET UNITYSDK_OFFSET(0x19C34320)
+#define UNITYENGINE_GUI_BEGINSCROLLVIEW_1_OFFSET UNITYSDK_OFFSET(0x19C34CD0)
+#define UNITYENGINE_GUI_BEGINSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x19C349E0)
+#define UNITYENGINE_GUI_BOX_1_OFFSET UNITYSDK_OFFSET(0x19C31540)
+#define UNITYENGINE_GUI_BOX_2_OFFSET UNITYSDK_OFFSET(0x19C312E0)
+#define UNITYENGINE_GUI_BOX_OFFSET UNITYSDK_OFFSET(0x19C311F0)
+#define UNITYENGINE_GUI_BUTTON_1_OFFSET UNITYSDK_OFFSET(0x19C318B0)
+#define UNITYENGINE_GUI_BUTTON_2_OFFSET UNITYSDK_OFFSET(0x19C31840)
+#define UNITYENGINE_GUI_BUTTON_3_OFFSET UNITYSDK_OFFSET(0x19C319E0)
+#define UNITYENGINE_GUI_BUTTON_OFFSET UNITYSDK_OFFSET(0x19C316F0)
+#define UNITYENGINE_GUI_CALCULATESCALEDTEXTURERECTS_OFFSET UNITYSDK_OFFSET(0x19C31040)
+#define UNITYENGINE_GUI_CALLWINDOWDELEGATE_OFFSET UNITYSDK_OFFSET(0x19C369D0)
+#define UNITYENGINE_GUI_DOBUTTON_OFFSET UNITYSDK_OFFSET(0x19C31B60)
+#define UNITYENGINE_GUI_DOCONTROL_OFFSET UNITYSDK_OFFSET(0x19C322B0)
+#define UNITYENGINE_GUI_DOLABEL_OFFSET UNITYSDK_OFFSET(0x19C2FE20)
+#define UNITYENGINE_GUI_DOREPEATBUTTON_OFFSET UNITYSDK_OFFSET(0x19C31C40)
+#define UNITYENGINE_GUI_DOSETSKIN_OFFSET UNITYSDK_OFFSET(0x19C2F7A0)
+#define UNITYENGINE_GUI_DOTOGGLE_OFFSET UNITYSDK_OFFSET(0x19C321C0)
+#define UNITYENGINE_GUI_DOWINDOW_OFFSET UNITYSDK_OFFSET(0x19C366B0)
+#define UNITYENGINE_GUI_DRAGWINDOW_1_OFFSET UNITYSDK_OFFSET(0x19C37720)
+#define UNITYENGINE_GUI_DRAGWINDOW_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C2F0A0)
+#define UNITYENGINE_GUI_DRAGWINDOW_OFFSET UNITYSDK_OFFSET(0x19C2F070)
+#define UNITYENGINE_GUI_DRAWTEXTURE_1_OFFSET UNITYSDK_OFFSET(0x19C300F0)
+#define UNITYENGINE_GUI_DRAWTEXTURE_2_OFFSET UNITYSDK_OFFSET(0x19C30180)
+#define UNITYENGINE_GUI_DRAWTEXTURE_3_OFFSET UNITYSDK_OFFSET(0x19C301E0)
+#define UNITYENGINE_GUI_DRAWTEXTURE_4_OFFSET UNITYSDK_OFFSET(0x19C30310)
+#define UNITYENGINE_GUI_DRAWTEXTURE_5_OFFSET UNITYSDK_OFFSET(0x19C30430)
+#define UNITYENGINE_GUI_DRAWTEXTURE_6_OFFSET UNITYSDK_OFFSET(0x19C305E0)
+#define UNITYENGINE_GUI_DRAWTEXTURE_7_OFFSET UNITYSDK_OFFSET(0x19C30750)
+#define UNITYENGINE_GUI_DRAWTEXTURE_8_OFFSET UNITYSDK_OFFSET(0x19C308F0)
+#define UNITYENGINE_GUI_DRAWTEXTURE_OFFSET UNITYSDK_OFFSET(0x19C30040)
+#define UNITYENGINE_GUI_ENDGROUP_OFFSET UNITYSDK_OFFSET(0x19C34930)
+#define UNITYENGINE_GUI_ENDSCROLLVIEW_1_OFFSET UNITYSDK_OFFSET(0x19C35F80)
+#define UNITYENGINE_GUI_ENDSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x19C35F50)
+#define UNITYENGINE_GUI_GET_BACKGROUNDCOLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C2EDE0)
+#define UNITYENGINE_GUI_GET_BACKGROUNDCOLOR_OFFSET UNITYSDK_OFFSET(0x19C2ED90)
+#define UNITYENGINE_GUI_GET_BLENDMATERIAL_OFFSET UNITYSDK_OFFSET(0x19C2EF20)
+#define UNITYENGINE_GUI_GET_BLITMATERIAL_OFFSET UNITYSDK_OFFSET(0x19C2EF30)
+#define UNITYENGINE_GUI_GET_CHANGED_OFFSET UNITYSDK_OFFSET(0x19C2EED0)
+#define UNITYENGINE_GUI_GET_COLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C2ED40)
+#define UNITYENGINE_GUI_GET_COLOR_OFFSET UNITYSDK_OFFSET(0x19C2ECF0)
+#define UNITYENGINE_GUI_GET_CONTENTCOLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C2EE80)
+#define UNITYENGINE_GUI_GET_CONTENTCOLOR_OFFSET UNITYSDK_OFFSET(0x19C2EE30)
+#define UNITYENGINE_GUI_GET_ENABLED_OFFSET UNITYSDK_OFFSET(0x19C2EEF0)
+#define UNITYENGINE_GUI_GET_MATRIX_OFFSET UNITYSDK_OFFSET(0x19C2FA30)
+#define UNITYENGINE_GUI_GET_NEXTSCROLLSTEPTIME_OFFSET UNITYSDK_OFFSET(0x19C2F630)
+#define UNITYENGINE_GUI_GET_ROUNDEDRECTMATERIAL_OFFSET UNITYSDK_OFFSET(0x19C2EF40)
+#define UNITYENGINE_GUI_GET_ROUNDEDRECTWITHCOLORPERBORDERMATERIAL_OFFSET UNITYSDK_OFFSET(0x19C2EF50)
+#define UNITYENGINE_GUI_GET_SCROLLTROUGHSIDE_OFFSET UNITYSDK_OFFSET(0x19C2F5D0)
+#define UNITYENGINE_GUI_GET_SCROLLVIEWSTATES_OFFSET UNITYSDK_OFFSET(0x19C349B0)
+#define UNITYENGINE_GUI_GET_SKIN_OFFSET UNITYSDK_OFFSET(0x19C2F900)
+#define UNITYENGINE_GUI_GET_USEPAGESCROLLBARS_OFFSET UNITYSDK_OFFSET(0x19C2EF10)
+#define UNITYENGINE_GUI_GRABMOUSECONTROL_OFFSET UNITYSDK_OFFSET(0x19C2EF60)
+#define UNITYENGINE_GUI_HASMOUSECONTROL_OFFSET UNITYSDK_OFFSET(0x19C2EF70)
+#define UNITYENGINE_GUI_HORIZONTALSCROLLBAR_OFFSET UNITYSDK_OFFSET(0x19C32EE0)
+#define UNITYENGINE_GUI_HORIZONTALSLIDER_OFFSET UNITYSDK_OFFSET(0x19C32910)
+#define UNITYENGINE_GUI_INTERNALREPAINTEDITORWINDOW_OFFSET UNITYSDK_OFFSET(0x19C2EF90)
+#define UNITYENGINE_GUI_INTERNAL_DOWINDOW_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C2F060)
+#define UNITYENGINE_GUI_INTERNAL_DOWINDOW_OFFSET UNITYSDK_OFFSET(0x19C2EFA0)
+#define UNITYENGINE_GUI_LABEL_1_OFFSET UNITYSDK_OFFSET(0x19C2FD60)
+#define UNITYENGINE_GUI_LABEL_2_OFFSET UNITYSDK_OFFSET(0x19C2FCB0)
+#define UNITYENGINE_GUI_LABEL_OFFSET UNITYSDK_OFFSET(0x19C2FB40)
+#define UNITYENGINE_GUI_RELEASEMOUSECONTROL_OFFSET UNITYSDK_OFFSET(0x19C2EF80)
+#define UNITYENGINE_GUI_SCROLLERREPEATBUTTON_OFFSET UNITYSDK_OFFSET(0x19C33BC0)
+#define UNITYENGINE_GUI_SCROLLER_OFFSET UNITYSDK_OFFSET(0x19C33660)
+#define UNITYENGINE_GUI_SET_BACKGROUNDCOLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C2EE20)
+#define UNITYENGINE_GUI_SET_BACKGROUNDCOLOR_OFFSET UNITYSDK_OFFSET(0x19C2EDF0)
+#define UNITYENGINE_GUI_SET_CHANGED_OFFSET UNITYSDK_OFFSET(0x19C2EEE0)
+#define UNITYENGINE_GUI_SET_COLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C2ED80)
+#define UNITYENGINE_GUI_SET_COLOR_OFFSET UNITYSDK_OFFSET(0x19C2ED50)
+#define UNITYENGINE_GUI_SET_CONTENTCOLOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C2EEC0)
+#define UNITYENGINE_GUI_SET_CONTENTCOLOR_OFFSET UNITYSDK_OFFSET(0x19C2EE90)
+#define UNITYENGINE_GUI_SET_ENABLED_OFFSET UNITYSDK_OFFSET(0x19C2EF00)
+#define UNITYENGINE_GUI_SET_MATRIX_OFFSET UNITYSDK_OFFSET(0x19C2FAF0)
+#define UNITYENGINE_GUI_SET_NEXTSCROLLSTEPTIME_OFFSET UNITYSDK_OFFSET(0x19C2F670)
+#define UNITYENGINE_GUI_SET_SCROLLTROUGHSIDE_OFFSET UNITYSDK_OFFSET(0x19C2F600)
+#define UNITYENGINE_GUI_SET_SKIN_OFFSET UNITYSDK_OFFSET(0x19C2F6A0)
+#define UNITYENGINE_GUI_SLIDER_OFFSET UNITYSDK_OFFSET(0x19C32C20)
+#define UNITYENGINE_GUI_TOGGLE_OFFSET UNITYSDK_OFFSET(0x19C32030)
+#define UNITYENGINE_GUI_VERTICALSCROLLBAR_OFFSET UNITYSDK_OFFSET(0x19C33F60)
+#define UNITYENGINE_GUI_WINDOW_1_OFFSET UNITYSDK_OFFSET(0x19C367A0)
+#define UNITYENGINE_GUI_WINDOW_OFFSET UNITYSDK_OFFSET(0x19C36350)
+#define UNITYENGINE_GUI__CCTOR_OFFSET UNITYSDK_OFFSET(0x19C2F0B0)
+#define UNITYENGINE_GUI__CTOR_OFFSET UNITYSDK_OFFSET(0x19C37780)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int GUI_TypeDefinitionIndex = 5006;
+	inline static constexpr unsigned int GUI_TypeDefinitionIndex = 6350;
 
 	class GUI : public ::System::Object
 	{
 	public:
 		static ::UnityEngineInternal::GenericStack** StaticGet__scrollViewStates_k__BackingField()
 		{
-			return (::UnityEngineInternal::GenericStack**)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x1C2E0);
+			return (::UnityEngineInternal::GenericStack**)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x5810);
 		}
 		static ::UnityEngine::GUISkin** StaticGet_s_Skin()
 		{
-			return (::UnityEngine::GUISkin**)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x1C2E8);
-		}
-		static ::System::Int32* StaticGet_s_BeginGroupHash()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D30);
-		}
-		static ::System::Int32* StaticGet_s_ButonHash()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D34);
-		}
-		static ::System::Int32* StaticGet_s_ToggleHash()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D38);
-		}
-		static ::System::Int32* StaticGet_s_ScrollControlId()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D3C);
+			return (::UnityEngine::GUISkin**)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x5818);
 		}
 		static ::System::Int32* StaticGet_s_HotTextField()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D40);
-		}
-		static ::System::Int32* StaticGet_s_ScrollviewHash()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D44);
-		}
-		static ::System::Int32* StaticGet__scrollTroughSide_k__BackingField()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D48);
-		}
-		static ::System::Int32* StaticGet_s_BoxHash()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D4C);
-		}
-		static ::System::Int32* StaticGet_s_ButtonGridHash()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D50);
-		}
-		static ::System::DateTime* StaticGet__nextScrollStepTime_k__BackingField()
-		{
-			return (::System::DateTime*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D58);
-		}
-		static ::System::Int32* StaticGet_s_RepeatButtonHash()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D60);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F20);
 		}
 		static ::System::Int32* StaticGet_s_SliderHash()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x6D64);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F24);
+		}
+		static ::System::Int32* StaticGet_s_BeginGroupHash()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F28);
+		}
+		static ::System::Int32* StaticGet_s_ToggleHash()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F2C);
+		}
+		static ::System::Int32* StaticGet_s_ButtonGridHash()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F30);
+		}
+		static ::System::Int32* StaticGet_s_ButonHash()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F34);
+		}
+		static ::System::Int32* StaticGet_s_ScrollControlId()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F38);
+		}
+		static ::System::Int32* StaticGet__scrollTroughSide_k__BackingField()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F3C);
+		}
+		static ::System::DateTime* StaticGet__nextScrollStepTime_k__BackingField()
+		{
+			return (::System::DateTime*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F40);
+		}
+		static ::System::Int32* StaticGet_s_BoxHash()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F48);
+		}
+		static ::System::Int32* StaticGet_s_RepeatButtonHash()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F4C);
+		}
+		static ::System::Int32* StaticGet_s_ScrollviewHash()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(GUI_TypeDefinitionIndex)->GetStaticField(0x2F50);
 		}
 
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GUI__CCTOR_OFFSET))();
+		}
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI__CTOR_OFFSET))(this);
 		}
 
 		static ::UnityEngine::Color get_color()
@@ -269,6 +275,16 @@ namespace UnityEngine
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_INTERNALREPAINTEDITORWINDOW_OFFSET))();
 		}
 
+		static ::UnityEngine::Rect Internal_DoWindow(::System::Int32 id, ::System::Int32 instanceID, ::UnityEngine::Rect clientRect, ::UnityEngine::GUI_WindowFunction* func, ::UnityEngine::GUIContent* title, ::UnityEngine::GUIStyle* style, ::System::Object* skin, ::System::Boolean forceRectOnLayout)
+		{
+			return ((::UnityEngine::Rect(*)(::System::Int32, ::System::Int32, ::UnityEngine::Rect, ::UnityEngine::GUI_WindowFunction*, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_INTERNAL_DOWINDOW_OFFSET))(id, instanceID, clientRect, func, title, style, skin, forceRectOnLayout);
+		}
+
+		static ::System::Void DragWindow(::UnityEngine::Rect position)
+		{
+			return ((::System::Void(*)(::UnityEngine::Rect))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_DRAGWINDOW_OFFSET))(position);
+		}
+
 		static ::System::Int32 get_scrollTroughSide()
 		{
 			return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_GET_SCROLLTROUGHSIDE_OFFSET))();
@@ -314,14 +330,19 @@ namespace UnityEngine
 			return ((::System::Void(*)(::UnityEngine::Matrix4x4))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_SET_MATRIX_OFFSET))(value);
 		}
 
-		static ::System::Void Label(::UnityEngine::Rect position, ::System::String* text, ::UnityEngine::GUIStyle* style)
+		static ::System::Void Label(::UnityEngine::Rect position, ::System::String* text)
 		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::System::String*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_LABEL_OFFSET))(position, text, style);
+			return ((::System::Void(*)(::UnityEngine::Rect, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_LABEL_OFFSET))(position, text);
 		}
 
-		static ::System::Void Label_1(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
+		static ::System::Void Label_1(::UnityEngine::Rect position, ::System::String* text, ::UnityEngine::GUIStyle* style)
 		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_LABEL_1_OFFSET))(position, content, style);
+			return ((::System::Void(*)(::UnityEngine::Rect, ::System::String*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_LABEL_1_OFFSET))(position, text, style);
+		}
+
+		static ::System::Void Label_2(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
+		{
+			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_LABEL_2_OFFSET))(position, content, style);
 		}
 
 		static ::System::Void DrawTexture(::UnityEngine::Rect position, ::UnityEngine::Texture* image)
@@ -374,24 +395,19 @@ namespace UnityEngine
 			return ((::System::Boolean(*)(::UnityEngine::Rect, ::UnityEngine::ScaleMode, ::System::Single, ::UnityEngine::Rect&, ::UnityEngine::Rect&))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_CALCULATESCALEDTEXTURERECTS_OFFSET))(position, scaleMode, imageAspect, outScreenRect, outSourceRect);
 		}
 
-		static ::System::Void DrawTextureWithTexCoords(::UnityEngine::Rect position, ::UnityEngine::Texture* image, ::UnityEngine::Rect texCoords)
-		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::Texture*, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_DRAWTEXTUREWITHTEXCOORDS_OFFSET))(position, image, texCoords);
-		}
-
-		static ::System::Void DrawTextureWithTexCoords_1(::UnityEngine::Rect position, ::UnityEngine::Texture* image, ::UnityEngine::Rect texCoords, ::System::Boolean alphaBlend)
-		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::Texture*, ::UnityEngine::Rect, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_DRAWTEXTUREWITHTEXCOORDS_1_OFFSET))(position, image, texCoords, alphaBlend);
-		}
-
 		static ::System::Void Box(::UnityEngine::Rect position, ::System::String* text)
 		{
 			return ((::System::Void(*)(::UnityEngine::Rect, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BOX_OFFSET))(position, text);
 		}
 
-		static ::System::Void Box_1(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
+		static ::System::Void Box_1(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content)
 		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BOX_1_OFFSET))(position, content, style);
+			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BOX_1_OFFSET))(position, content);
+		}
+
+		static ::System::Void Box_2(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
+		{
+			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BOX_2_OFFSET))(position, content, style);
 		}
 
 		static ::System::Boolean Button(::UnityEngine::Rect position, ::System::String* text)
@@ -399,64 +415,24 @@ namespace UnityEngine
 			return ((::System::Boolean(*)(::UnityEngine::Rect, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BUTTON_OFFSET))(position, text);
 		}
 
-		static ::System::Boolean Button_1(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
+		static ::System::Boolean Button_1(::UnityEngine::Rect position, ::System::String* text, ::UnityEngine::GUIStyle* style)
 		{
-			return ((::System::Boolean(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BUTTON_1_OFFSET))(position, content, style);
+			return ((::System::Boolean(*)(::UnityEngine::Rect, ::System::String*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BUTTON_1_OFFSET))(position, text, style);
 		}
 
-		static ::System::Boolean Button_2(::UnityEngine::Rect position, ::System::Int32 id, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
+		static ::System::Boolean Button_2(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
 		{
-			return ((::System::Boolean(*)(::UnityEngine::Rect, ::System::Int32, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BUTTON_2_OFFSET))(position, id, content, style);
+			return ((::System::Boolean(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BUTTON_2_OFFSET))(position, content, style);
 		}
 
-		static ::System::Boolean RepeatButton(::UnityEngine::Rect position, ::System::String* text)
+		static ::System::Boolean Button_3(::UnityEngine::Rect position, ::System::Int32 id, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
 		{
-			return ((::System::Boolean(*)(::UnityEngine::Rect, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_REPEATBUTTON_OFFSET))(position, text);
-		}
-
-		static ::System::Boolean RepeatButton_1(::UnityEngine::Rect position, ::UnityEngine::Texture* image)
-		{
-			return ((::System::Boolean(*)(::UnityEngine::Rect, ::UnityEngine::Texture*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_REPEATBUTTON_1_OFFSET))(position, image);
+			return ((::System::Boolean(*)(::UnityEngine::Rect, ::System::Int32, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BUTTON_3_OFFSET))(position, id, content, style);
 		}
 
 		static ::System::Boolean DoRepeatButton(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::UnityEngine::FocusType focusType)
 		{
 			return ((::System::Boolean(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::UnityEngine::FocusType))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_DOREPEATBUTTON_OFFSET))(position, content, style, focusType);
-		}
-
-		static ::System::String* PasswordFieldGetStrToShow(::System::String* password, ::System::Char maskChar)
-		{
-			return ((::System::String*(*)(::System::String*, ::System::Char))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_PASSWORDFIELDGETSTRTOSHOW_OFFSET))(password, maskChar);
-		}
-
-		static ::System::Void DoTextField(::UnityEngine::Rect position, ::System::Int32 id, ::UnityEngine::GUIContent* content, ::System::Boolean multiline, ::System::Int32 maxLength, ::UnityEngine::GUIStyle* style)
-		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::System::Int32, ::UnityEngine::GUIContent*, ::System::Boolean, ::System::Int32, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_DOTEXTFIELD_OFFSET))(position, id, content, multiline, maxLength, style);
-		}
-
-		static ::System::Void DoTextField_1(::UnityEngine::Rect position, ::System::Int32 id, ::UnityEngine::GUIContent* content, ::System::Boolean multiline, ::System::Int32 maxLength, ::UnityEngine::GUIStyle* style, ::System::String* secureText)
-		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::System::Int32, ::UnityEngine::GUIContent*, ::System::Boolean, ::System::Int32, ::UnityEngine::GUIStyle*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_DOTEXTFIELD_1_OFFSET))(position, id, content, multiline, maxLength, style, secureText);
-		}
-
-		static ::System::Void DoTextField_2(::UnityEngine::Rect position, ::System::Int32 id, ::UnityEngine::GUIContent* content, ::System::Boolean multiline, ::System::Int32 maxLength, ::UnityEngine::GUIStyle* style, ::System::String* secureText, ::System::Char maskChar)
-		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::System::Int32, ::UnityEngine::GUIContent*, ::System::Boolean, ::System::Int32, ::UnityEngine::GUIStyle*, ::System::String*, ::System::Char))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_DOTEXTFIELD_2_OFFSET))(position, id, content, multiline, maxLength, style, secureText, maskChar);
-		}
-
-		static ::System::Void HandleTextFieldEventForTouchscreen(::UnityEngine::Rect position, ::System::Int32 id, ::UnityEngine::GUIContent* content, ::System::Boolean multiline, ::System::Int32 maxLength, ::UnityEngine::GUIStyle* style, ::System::String* secureText, ::System::Char maskChar, ::UnityEngine::TextEditor* editor)
-		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::System::Int32, ::UnityEngine::GUIContent*, ::System::Boolean, ::System::Int32, ::UnityEngine::GUIStyle*, ::System::String*, ::System::Char, ::UnityEngine::TextEditor*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_HANDLETEXTFIELDEVENTFORTOUCHSCREEN_OFFSET))(position, id, content, multiline, maxLength, style, secureText, maskChar, editor);
-		}
-
-		static ::System::Void HandleTextFieldEventForDesktop(::UnityEngine::Rect position, ::System::Int32 id, ::UnityEngine::GUIContent* content, ::System::Boolean multiline, ::System::Int32 maxLength, ::UnityEngine::GUIStyle* style, ::UnityEngine::TextEditor* editor)
-		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::System::Int32, ::UnityEngine::GUIContent*, ::System::Boolean, ::System::Int32, ::UnityEngine::GUIStyle*, ::UnityEngine::TextEditor*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_HANDLETEXTFIELDEVENTFORDESKTOP_OFFSET))(position, id, content, multiline, maxLength, style, editor);
-		}
-
-		static ::System::Void HandleTextFieldEventForDesktopWithForcedKeyboard(::UnityEngine::Rect position, ::System::Int32 id, ::UnityEngine::GUIContent* content, ::System::Boolean multiline, ::System::Int32 maxLength, ::UnityEngine::GUIStyle* style, ::System::String* secureText, ::UnityEngine::TextEditor* editor)
-		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::System::Int32, ::UnityEngine::GUIContent*, ::System::Boolean, ::System::Int32, ::UnityEngine::GUIStyle*, ::System::String*, ::UnityEngine::TextEditor*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_HANDLETEXTFIELDEVENTFORDESKTOPWITHFORCEDKEYBOARD_OFFSET))(position, id, content, multiline, maxLength, style, secureText, editor);
 		}
 
 		static ::System::Boolean Toggle(::UnityEngine::Rect position, ::System::Boolean value, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
@@ -484,9 +460,9 @@ namespace UnityEngine
 			return ((::System::Boolean(*)(::UnityEngine::Rect, ::System::Int32, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_DOBUTTON_OFFSET))(position, id, content, style);
 		}
 
-		static ::System::Single HorizontalSlider(::UnityEngine::Rect position, ::System::Single value, ::System::Single leftValue, ::System::Single rightValue, ::UnityEngine::GUIStyle* slider, ::UnityEngine::GUIStyle* thumb)
+		static ::System::Single HorizontalSlider(::UnityEngine::Rect position, ::System::Single value, ::System::Single leftValue, ::System::Single rightValue)
 		{
-			return ((::System::Single(*)(::UnityEngine::Rect, ::System::Single, ::System::Single, ::System::Single, ::UnityEngine::GUIStyle*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_HORIZONTALSLIDER_OFFSET))(position, value, leftValue, rightValue, slider, thumb);
+			return ((::System::Single(*)(::UnityEngine::Rect, ::System::Single, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_HORIZONTALSLIDER_OFFSET))(position, value, leftValue, rightValue);
 		}
 
 		static ::System::Single Slider(::UnityEngine::Rect position, ::System::Single value, ::System::Single size, ::System::Single start, ::System::Single end, ::UnityEngine::GUIStyle* slider, ::UnityEngine::GUIStyle* thumb, ::System::Boolean horiz, ::System::Int32 id, ::UnityEngine::GUIStyle* thumbExtent)
@@ -514,14 +490,19 @@ namespace UnityEngine
 			return ((::System::Single(*)(::UnityEngine::Rect, ::System::Single, ::System::Single, ::System::Single, ::System::Single, ::UnityEngine::GUIStyle*, ::UnityEngine::GUIStyle*, ::UnityEngine::GUIStyle*, ::UnityEngine::GUIStyle*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_SCROLLER_OFFSET))(position, value, size, leftValue, rightValue, slider, thumb, leftButton, rightButton, horiz);
 		}
 
-		static ::System::Void BeginGroup(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
+		static ::System::Void BeginGroup(::UnityEngine::Rect position)
 		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BEGINGROUP_OFFSET))(position, content, style);
+			return ((::System::Void(*)(::UnityEngine::Rect))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BEGINGROUP_OFFSET))(position);
 		}
 
-		static ::System::Void BeginGroup_1(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::UnityEngine::Vector2 scrollOffset)
+		static ::System::Void BeginGroup_1(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style)
 		{
-			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BEGINGROUP_1_OFFSET))(position, content, style, scrollOffset);
+			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BEGINGROUP_1_OFFSET))(position, content, style);
+		}
+
+		static ::System::Void BeginGroup_2(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::GUIStyle* style, ::UnityEngine::Vector2 scrollOffset)
+		{
+			return ((::System::Void(*)(::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_BEGINGROUP_2_OFFSET))(position, content, style, scrollOffset);
 		}
 
 		static ::System::Void EndGroup()
@@ -554,9 +535,29 @@ namespace UnityEngine
 			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_ENDSCROLLVIEW_1_OFFSET))(handleScrollWheel);
 		}
 
+		static ::UnityEngine::Rect Window(::System::Int32 id, ::UnityEngine::Rect clientRect, ::UnityEngine::GUI_WindowFunction* func, ::System::String* text)
+		{
+			return ((::UnityEngine::Rect(*)(::System::Int32, ::UnityEngine::Rect, ::UnityEngine::GUI_WindowFunction*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_WINDOW_OFFSET))(id, clientRect, func, text);
+		}
+
+		static ::UnityEngine::Rect Window_1(::System::Int32 id, ::UnityEngine::Rect clientRect, ::UnityEngine::GUI_WindowFunction* func, ::UnityEngine::GUIContent* title, ::UnityEngine::GUIStyle* style)
+		{
+			return ((::UnityEngine::Rect(*)(::System::Int32, ::UnityEngine::Rect, ::UnityEngine::GUI_WindowFunction*, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_WINDOW_1_OFFSET))(id, clientRect, func, title, style);
+		}
+
+		static ::UnityEngine::Rect DoWindow(::System::Int32 id, ::UnityEngine::Rect clientRect, ::UnityEngine::GUI_WindowFunction* func, ::UnityEngine::GUIContent* title, ::UnityEngine::GUIStyle* style, ::UnityEngine::GUISkin* skin, ::System::Boolean forceRectOnLayout)
+		{
+			return ((::UnityEngine::Rect(*)(::System::Int32, ::UnityEngine::Rect, ::UnityEngine::GUI_WindowFunction*, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::UnityEngine::GUISkin*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_DOWINDOW_OFFSET))(id, clientRect, func, title, style, skin, forceRectOnLayout);
+		}
+
 		static ::System::Void CallWindowDelegate(::UnityEngine::GUI_WindowFunction* func, ::System::Int32 id, ::System::Int32 instanceID, ::UnityEngine::GUISkin* _skin, ::System::Int32 forceRect, ::System::Single width, ::System::Single height, ::UnityEngine::GUIStyle* style)
 		{
 			return ((::System::Void(*)(::UnityEngine::GUI_WindowFunction*, ::System::Int32, ::System::Int32, ::UnityEngine::GUISkin*, ::System::Int32, ::System::Single, ::System::Single, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_CALLWINDOWDELEGATE_OFFSET))(func, id, instanceID, _skin, forceRect, width, height, style);
+		}
+
+		static ::System::Void DragWindow_1()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_DRAGWINDOW_1_OFFSET))();
 		}
 
 		static ::System::Void get_color_Injected(::UnityEngine::Color& ret)
@@ -587,6 +588,16 @@ namespace UnityEngine
 		static ::System::Void set_contentColor_Injected(::UnityEngine::Color& value)
 		{
 			return ((::System::Void(*)(::UnityEngine::Color&))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_SET_CONTENTCOLOR_INJECTED_OFFSET))(value);
+		}
+
+		static ::System::Void Internal_DoWindow_Injected(::System::Int32 id, ::System::Int32 instanceID, ::UnityEngine::Rect& clientRect, ::UnityEngine::GUI_WindowFunction* func, ::UnityEngine::GUIContent* title, ::UnityEngine::GUIStyle* style, ::System::Object* skin, ::System::Boolean forceRectOnLayout, ::UnityEngine::Rect& ret)
+		{
+			return ((::System::Void(*)(::System::Int32, ::System::Int32, ::UnityEngine::Rect&, ::UnityEngine::GUI_WindowFunction*, ::UnityEngine::GUIContent*, ::UnityEngine::GUIStyle*, ::System::Object*, ::System::Boolean, ::UnityEngine::Rect&))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_INTERNAL_DOWINDOW_INJECTED_OFFSET))(id, instanceID, clientRect, func, title, style, skin, forceRectOnLayout, ret);
+		}
+
+		static ::System::Void DragWindow_Injected(::UnityEngine::Rect& position)
+		{
+			return ((::System::Void(*)(::UnityEngine::Rect&))((::PBYTE)hIl2Cpp + UNITYENGINE_GUI_DRAGWINDOW_INJECTED_OFFSET))(position);
 		}
 	};
 }

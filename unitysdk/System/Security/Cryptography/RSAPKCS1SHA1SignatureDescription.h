@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Security/Cryptography/RSAPKCS1SignatureDescription.h"
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SHA1SIGNATUREDESCRIPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15B1E780)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1SHA1SIGNATUREDESCRIPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x192C0FC0)
 
 namespace System::Security::Cryptography
 {
-	inline static constexpr unsigned int RSAPKCS1SHA1SignatureDescription_TypeDefinitionIndex = 1050;
+	inline static constexpr unsigned int RSAPKCS1SHA1SignatureDescription_TypeDefinitionIndex = 1105;
 
 	class RSAPKCS1SHA1SignatureDescription : public ::System::Security::Cryptography::RSAPKCS1SignatureDescription
 	{

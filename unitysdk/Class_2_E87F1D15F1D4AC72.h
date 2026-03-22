@@ -1,0 +1,42 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_679286007DE1DCF6.h"
+
+class Class_0_16E4307DCC419505_550;
+class Class_2_777A5D016ADC7368;
+namespace MoleMole { class UIControlCollection; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define CLASS_2_E87F1D15F1D4AC72_METHOD_2_2C825E716CE9F2F9_OFFSET UNITYSDK_OFFSET(0xD73DC90)
+#define CLASS_2_E87F1D15F1D4AC72_METHOD_2_7033EFB970A18315_OFFSET UNITYSDK_OFFSET(0xD73E040)
+#define CLASS_2_E87F1D15F1D4AC72_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xD73DFB0)
+#define CLASS_2_E87F1D15F1D4AC72__CTOR_OFFSET UNITYSDK_OFFSET(0xD710170)
+
+inline static constexpr unsigned int Class_2_E87F1D15F1D4AC72_TypeDefinitionIndex = 55427;
+
+class Class_2_E87F1D15F1D4AC72 : public ::Class_1_679286007DE1DCF6
+{
+public:
+	::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_550*>* Field_2_0; // 0x18
+	::System::Collections::Generic::List_1<::Class_1_679286007DE1DCF6*>* Field_2_1; // 0x20
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_E87F1D15F1D4AC72__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_2C825E716CE9F2F9()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_E87F1D15F1D4AC72_METHOD_2_2C825E716CE9F2F9_OFFSET))(this);
+	}
+
+	::System::Void Method_2_C8903A36ECBA4078(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_E87F1D15F1D4AC72_METHOD_2_C8903A36ECBA4078_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_7033EFB970A18315()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_E87F1D15F1D4AC72_METHOD_2_7033EFB970A18315_OFFSET))(this);
+	}
+};

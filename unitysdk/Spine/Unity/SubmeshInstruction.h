@@ -6,12 +6,12 @@ namespace Spine { class Skeleton; }
 namespace System { class String; }
 namespace UnityEngine { class Material; }
 
-#define SPINE_UNITY_SUBMESHINSTRUCTION_GET_SLOTCOUNT_OFFSET UNITYSDK_OFFSET(0x202C720)
-#define SPINE_UNITY_SUBMESHINSTRUCTION_TOSTRING_OFFSET UNITYSDK_OFFSET(0x202C730)
+#define SPINE_UNITY_SUBMESHINSTRUCTION_GET_SLOTCOUNT_OFFSET UNITYSDK_OFFSET(0x79DB90)
+#define SPINE_UNITY_SUBMESHINSTRUCTION_TOSTRING_OFFSET UNITYSDK_OFFSET(0x79DBA0)
 
 namespace Spine::Unity
 {
-	inline static constexpr unsigned int SubmeshInstruction_TypeDefinitionIndex = 33834;
+	inline static constexpr unsigned int SubmeshInstruction_TypeDefinitionIndex = 36320;
 
 	struct alignas(8) SubmeshInstruction
 	{

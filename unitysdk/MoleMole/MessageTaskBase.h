@@ -1,0 +1,100 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_205E43D40B9E7AEA.h"
+#include "unitysdk/Enum_3_50D0DC5CA38BF4B6.h"
+#include "unitysdk/Enum_3_8759316605FB4414.h"
+#include "unitysdk/Enum_3_B90C1A15EA6E3C2B.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_B9450A1C2AF2156A;
+
+#define MOLEMOLE_MESSAGETASKBASE_ADDIGNOREPOPCTRL_OFFSET UNITYSDK_OFFSET(0xC2D9870)
+#define MOLEMOLE_MESSAGETASKBASE_CHANGEMATCHPAGE_OFFSET UNITYSDK_OFFSET(0xC2D97F0)
+#define MOLEMOLE_MESSAGETASKBASE_GET_ACCEPTGAMETYPE_OFFSET UNITYSDK_OFFSET(0xC2D94C0)
+#define MOLEMOLE_MESSAGETASKBASE_GET_DISPOSEGAMETYPE_OFFSET UNITYSDK_OFFSET(0xC2D9550)
+#define MOLEMOLE_MESSAGETASKBASE_GET_EXECUTEGAMETYPE_OFFSET UNITYSDK_OFFSET(0xC2D94E0)
+#define MOLEMOLE_MESSAGETASKBASE_GET_MATCHPAGE_OFFSET UNITYSDK_OFFSET(0xC2D9500)
+#define MOLEMOLE_MESSAGETASKBASE_GET_MESSAGECONFIG_OFFSET UNITYSDK_OFFSET(0xC2D9540)
+#define MOLEMOLE_MESSAGETASKBASE_GET_UID_OFFSET UNITYSDK_OFFSET(0xC2D9520)
+#define MOLEMOLE_MESSAGETASKBASE_ISIGNOREPOPCTRL_OFFSET UNITYSDK_OFFSET(0xC2D95F0)
+#define MOLEMOLE_MESSAGETASKBASE_MATCHTOPPAGE_OFFSET UNITYSDK_OFFSET(0xC2D9570)
+#define MOLEMOLE_MESSAGETASKBASE_SETMESSAGECONFIG_OFFSET UNITYSDK_OFFSET(0xC2D9790)
+#define MOLEMOLE_MESSAGETASKBASE_SET_UID_OFFSET UNITYSDK_OFFSET(0xC2D9530)
+#define MOLEMOLE_MESSAGETASKBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xC2D96B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int MessageTaskBase_TypeDefinitionIndex = 54401;
+
+	class MessageTaskBase : public ::System::Object
+	{
+	public:
+		::Class_1_B9450A1C2AF2156A* _messageTaskConfig; // 0x10
+		::System::UInt64 _UID_k__BackingField; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_8759316605FB4414 get_AcceptGameType()
+		{
+			return ((::Enum_3_8759316605FB4414(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_GET_ACCEPTGAMETYPE_OFFSET))(this);
+		}
+
+		::Enum_3_8759316605FB4414 get_ExecuteGameType()
+		{
+			return ((::Enum_3_8759316605FB4414(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_GET_EXECUTEGAMETYPE_OFFSET))(this);
+		}
+
+		::Enum_3_205E43D40B9E7AEA get_MatchPage()
+		{
+			return ((::Enum_3_205E43D40B9E7AEA(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_GET_MATCHPAGE_OFFSET))(this);
+		}
+
+		::System::UInt64 get_UID()
+		{
+			return ((::System::UInt64(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_GET_UID_OFFSET))(this);
+		}
+
+		::System::Void set_UID(::System::UInt64 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt64))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_SET_UID_OFFSET))(this, value);
+		}
+
+		::Class_1_B9450A1C2AF2156A* get_MessageConfig()
+		{
+			return ((::Class_1_B9450A1C2AF2156A*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_GET_MESSAGECONFIG_OFFSET))(this);
+		}
+
+		::Enum_3_50D0DC5CA38BF4B6 get_DisposeGameType()
+		{
+			return ((::Enum_3_50D0DC5CA38BF4B6(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_GET_DISPOSEGAMETYPE_OFFSET))(this);
+		}
+
+		::System::Boolean MatchTopPage(::Enum_3_205E43D40B9E7AEA showPage)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_205E43D40B9E7AEA))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_MATCHTOPPAGE_OFFSET))(this, showPage);
+		}
+
+		::System::Boolean IsIgnorePopCtrl(::Enum_3_B90C1A15EA6E3C2B ctrl)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_B90C1A15EA6E3C2B))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_ISIGNOREPOPCTRL_OFFSET))(this, ctrl);
+		}
+
+		::System::Void SetMessageConfig()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_SETMESSAGECONFIG_OFFSET))(this);
+		}
+
+		::System::Void ChangeMatchPage(::Enum_3_205E43D40B9E7AEA triggerPage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_205E43D40B9E7AEA))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_CHANGEMATCHPAGE_OFFSET))(this, triggerPage);
+		}
+
+		::System::Void AddIgnorePopCtrl(::Enum_3_B90C1A15EA6E3C2B ctrl)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_B90C1A15EA6E3C2B))((::PBYTE)hIl2Cpp + MOLEMOLE_MESSAGETASKBASE_ADDIGNOREPOPCTRL_OFFSET))(this, ctrl);
+		}
+	};
+}

@@ -7,20 +7,20 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine::Experimental::Animations { class IAnimationWindowPreview; }
 
-#define UNITYENGINE_TIMELINE_ANIMATIONPREVIEWUPDATECALLBACK_EVALUATE_OFFSET UNITYSDK_OFFSET(0x18187CF0)
-#define UNITYENGINE_TIMELINE_ANIMATIONPREVIEWUPDATECALLBACK_FETCHPREVIEWCOMPONENTS_OFFSET UNITYSDK_OFFSET(0x18187EE0)
-#define UNITYENGINE_TIMELINE_ANIMATIONPREVIEWUPDATECALLBACK__CTOR_OFFSET UNITYSDK_OFFSET(0x18187C10)
+#define UNITYENGINE_TIMELINE_ANIMATIONPREVIEWUPDATECALLBACK_EVALUATE_OFFSET UNITYSDK_OFFSET(0x1AEDC300)
+#define UNITYENGINE_TIMELINE_ANIMATIONPREVIEWUPDATECALLBACK_FETCHPREVIEWCOMPONENTS_OFFSET UNITYSDK_OFFSET(0x1AEDC4F0)
+#define UNITYENGINE_TIMELINE_ANIMATIONPREVIEWUPDATECALLBACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEDC220)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int AnimationPreviewUpdateCallback_TypeDefinitionIndex = 28942;
+	inline static constexpr unsigned int AnimationPreviewUpdateCallback_TypeDefinitionIndex = 29220;
 
 	class AnimationPreviewUpdateCallback : public ::System::Object
 	{
 	public:
 		::System::Collections::Generic::List_1<::UnityEngine::Experimental::Animations::IAnimationWindowPreview*>* m_PreviewComponents; // 0x10
-		::UnityEngine::Playables::PlayableGraph m_Graph; // 0x18
-		::UnityEngine::Animations::AnimationPlayableOutput m_Output; // 0x28
+		::UnityEngine::Animations::AnimationPlayableOutput m_Output; // 0x18
+		::UnityEngine::Playables::PlayableGraph m_Graph; // 0x28
 
 		::System::Void _ctor(::UnityEngine::Animations::AnimationPlayableOutput output)
 		{

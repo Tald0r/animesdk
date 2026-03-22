@@ -1,0 +1,108 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlowCanvas/Flow.h"
+#include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
+
+class Class_1_B7E341C5F1A6F199;
+class Class_3_A18F3B252E440C5B;
+namespace FlowCanvas { class FlowOutput; }
+namespace FlowCanvas { template <typename T> class ValueInput_1; }
+
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_BINDEVENT_OFFSET UNITYSDK_OFFSET(0x141D5FC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_GETEVENTCOMPONENT_OFFSET UNITYSDK_OFFSET(0x141D5CF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_ONEVENTFROMANYONE_OFFSET UNITYSDK_OFFSET(0x141D6420)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0x141D6370)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x141D5B50)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_START_OFFSET UNITYSDK_OFFSET(0x141D5E80)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_STOP_OFFSET UNITYSDK_OFFSET(0x141D6160)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_UNBINDEVENT_OFFSET UNITYSDK_OFFSET(0x141D61D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT__CTOR_OFFSET UNITYSDK_OFFSET(0x141D65B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT__REGISTERPORTS_B__10_0_OFFSET UNITYSDK_OFFSET(0x141D65D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT__REGISTERPORTS_B__10_1_OFFSET UNITYSDK_OFFSET(0x141D6620)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT__REGISTERPORTS_B__10_2_OFFSET UNITYSDK_OFFSET(0x141D6690)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT___BASE_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0x141D66A0)
+
+namespace MoleMole::FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int LDListenAvatarWipeOut_TypeDefinitionIndex = 43206;
+
+	class LDListenAvatarWipeOut : public ::FlowCanvas::Nodes::FlowControlNode
+	{
+	public:
+		::FlowCanvas::FlowOutput* Output; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::Int32>* Counter; // 0xB0
+		::FlowCanvas::FlowOutput* OnAvatarTeamDie; // 0xB8
+		::System::Int32 Count; // 0xC0
+		::System::UInt32 EntityId; // 0xC4
+		::System::Int32 ResetCount; // 0xC8
+		::System::Boolean OnlyInStage; // 0xCC
+		::System::Boolean BoundEvent; // 0xCD
+		::System::Int32 AvatarID; // 0xD0
+		::System::Int32 Index; // 0xD4
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT__CTOR_OFFSET))(this);
+		}
+
+		::System::Void RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_REGISTERPORTS_OFFSET))(this);
+		}
+
+		::Class_3_A18F3B252E440C5B* GetEventComponent()
+		{
+			return ((::Class_3_A18F3B252E440C5B*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_GETEVENTCOMPONENT_OFFSET))(this);
+		}
+
+		::System::Void Start()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_START_OFFSET))(this);
+		}
+
+		::System::Void Stop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_STOP_OFFSET))(this);
+		}
+
+		::System::Void OnGraphStoped()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_ONGRAPHSTOPED_OFFSET))(this);
+		}
+
+		::System::Void UnBindEvent()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_UNBINDEVENT_OFFSET))(this);
+		}
+
+		::System::Void BindEvent()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_BINDEVENT_OFFSET))(this);
+		}
+
+		::System::Void OnEventFromAnyone(::Class_1_B7E341C5F1A6F199* evt)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_B7E341C5F1A6F199*))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT_ONEVENTFROMANYONE_OFFSET))(this, evt);
+		}
+
+		::System::Void _RegisterPorts_b__10_0(::FlowCanvas::Flow f)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT__REGISTERPORTS_B__10_0_OFFSET))(this, f);
+		}
+
+		::System::Void _RegisterPorts_b__10_1(::FlowCanvas::Flow f)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT__REGISTERPORTS_B__10_1_OFFSET))(this, f);
+		}
+
+		::System::Int32 _RegisterPorts_b__10_2()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT__REGISTERPORTS_B__10_2_OFFSET))(this);
+		}
+
+		::System::Void __base_OnGraphStoped()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLISTENAVATARWIPEOUT___BASE_ONGRAPHSTOPED_OFFSET))(this);
+		}
+	};
+}

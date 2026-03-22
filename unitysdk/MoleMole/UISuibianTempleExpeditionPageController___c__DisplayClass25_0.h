@@ -1,0 +1,29 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace MoleMole { class UISuibianTempleExpeditionAreaWidgetController; }
+
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__DISPLAYCLASS25_0__CTOR_OFFSET UNITYSDK_OFFSET(0x751FBA0)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__DISPLAYCLASS25_0__FINDAREAGAMEOBJECT_B__0_OFFSET UNITYSDK_OFFSET(0x751FBB0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISuibianTempleExpeditionPageController___c__DisplayClass25_0_TypeDefinitionIndex = 37768;
+
+	class UISuibianTempleExpeditionPageController___c__DisplayClass25_0 : public ::System::Object
+	{
+	public:
+		::System::Int32 areaID; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__DISPLAYCLASS25_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean _FindAreaGameObject_b__0(::MoleMole::UISuibianTempleExpeditionAreaWidgetController* match)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::UISuibianTempleExpeditionAreaWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__DISPLAYCLASS25_0__FINDAREAGAMEOBJECT_B__0_OFFSET))(this, match);
+		}
+	};
+}

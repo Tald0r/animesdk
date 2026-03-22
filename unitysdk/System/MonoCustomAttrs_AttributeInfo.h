@@ -4,13 +4,11 @@
 
 namespace System { class AttributeUsageAttribute; }
 
-#define SYSTEM_MONOCUSTOMATTRS_ATTRIBUTEINFO_GET_INHERITANCELEVEL_OFFSET UNITYSDK_OFFSET(0x15CA1910)
-#define SYSTEM_MONOCUSTOMATTRS_ATTRIBUTEINFO_GET_USAGE_OFFSET UNITYSDK_OFFSET(0x15CA1900)
-#define SYSTEM_MONOCUSTOMATTRS_ATTRIBUTEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x15CA0D60)
+#define SYSTEM_MONOCUSTOMATTRS_ATTRIBUTEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x17F598F0)
 
 namespace System
 {
-	inline static constexpr unsigned int MonoCustomAttrs_AttributeInfo_TypeDefinitionIndex = 405;
+	inline static constexpr unsigned int MonoCustomAttrs_AttributeInfo_TypeDefinitionIndex = 392;
 
 	class MonoCustomAttrs_AttributeInfo : public ::System::Object
 	{
@@ -21,16 +19,6 @@ namespace System
 		::System::Void _ctor(::System::AttributeUsageAttribute* usage, ::System::Int32 inheritanceLevel)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::AttributeUsageAttribute*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_MONOCUSTOMATTRS_ATTRIBUTEINFO__CTOR_OFFSET))(this, usage, inheritanceLevel);
-		}
-
-		::System::AttributeUsageAttribute* get_Usage()
-		{
-			return ((::System::AttributeUsageAttribute*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_MONOCUSTOMATTRS_ATTRIBUTEINFO_GET_USAGE_OFFSET))(this);
-		}
-
-		::System::Int32 get_InheritanceLevel()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_MONOCUSTOMATTRS_ATTRIBUTEINFO_GET_INHERITANCELEVEL_OFFSET))(this);
 		}
 	};
 }

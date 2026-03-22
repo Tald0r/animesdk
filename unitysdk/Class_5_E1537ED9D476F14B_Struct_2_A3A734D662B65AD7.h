@@ -1,0 +1,40 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/ProtoScript/PostEffectType.h"
+#include "unitysdk/System/ValueType.h"
+
+class Class_3_EBAAC3198F77E35A;
+namespace System { class String; }
+
+#define CLASS_5_E1537ED9D476F14B_STRUCT_2_A3A734D662B65AD7_METHOD_2_4639088DA5437112_OFFSET UNITYSDK_OFFSET(0x9FAA680)
+#define CLASS_5_E1537ED9D476F14B_STRUCT_2_A3A734D662B65AD7_METHOD_2_60935DC63DC7D01A_OFFSET UNITYSDK_OFFSET(0x9FAA510)
+#define CLASS_5_E1537ED9D476F14B_STRUCT_2_A3A734D662B65AD7_METHOD_2_C2916EA3DBB992DA_OFFSET UNITYSDK_OFFSET(0x9FAA5D0)
+
+inline static constexpr unsigned int Class_5_E1537ED9D476F14B_Struct_2_A3A734D662B65AD7_TypeDefinitionIndex = 66248;
+
+struct alignas(8) Class_5_E1537ED9D476F14B_Struct_2_A3A734D662B65AD7
+{
+	::System::Single Field_2_0; // 0x10
+	::ProtoScript::PostEffectType Field_2_1; // 0x14
+	::System::Boolean Field_2_2; // 0x18
+	::System::String* Field_2_3; // 0x20
+
+	/*
+	static ::Class_5_E1537ED9D476F14B_Struct_2_A3A734D662B65AD7 Method_2_60935DC63DC7D01A(::MoleMole::Config::ConfigHollowChessboard_PostEffect_Config a1)
+	{
+		return ((::Class_5_E1537ED9D476F14B_Struct_2_A3A734D662B65AD7(*)(::MoleMole::Config::ConfigHollowChessboard_PostEffect_Config))((::PBYTE)hIl2Cpp + CLASS_5_E1537ED9D476F14B_STRUCT_2_A3A734D662B65AD7_METHOD_2_60935DC63DC7D01A_OFFSET))(a1);
+	}
+	*/
+
+	static ::Class_5_E1537ED9D476F14B_Struct_2_A3A734D662B65AD7 Method_2_C2916EA3DBB992DA(::Class_3_EBAAC3198F77E35A* a1)
+	{
+		return ((::Class_5_E1537ED9D476F14B_Struct_2_A3A734D662B65AD7(*)(::Class_3_EBAAC3198F77E35A*))((::PBYTE)hIl2Cpp + CLASS_5_E1537ED9D476F14B_STRUCT_2_A3A734D662B65AD7_METHOD_2_C2916EA3DBB992DA_OFFSET))(a1);
+	}
+
+	/*
+	static ::Class_5_E1537ED9D476F14B_Struct_2_A3A734D662B65AD7 Method_2_4639088DA5437112(::MoleMole::FlowCanvas::ChessBoardPlayPostEffect_Config a1)
+	{
+		return ((::Class_5_E1537ED9D476F14B_Struct_2_A3A734D662B65AD7(*)(::MoleMole::FlowCanvas::ChessBoardPlayPostEffect_Config))((::PBYTE)hIl2Cpp + CLASS_5_E1537ED9D476F14B_STRUCT_2_A3A734D662B65AD7_METHOD_2_4639088DA5437112_OFFSET))(a1);
+	}
+	*/
+};

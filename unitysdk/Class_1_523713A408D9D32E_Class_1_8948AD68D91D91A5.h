@@ -1,0 +1,44 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_2C5A03A90BB5E900.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_7;
+class Class_3_46ACE6C9C1C8C43D_2;
+namespace Cysharp::Threading::Tasks { class UniTaskCompletionSource; }
+
+#define CLASS_1_523713A408D9D32E_CLASS_1_8948AD68D91D91A5_METHOD_1_09BF188F1F91D68B_OFFSET UNITYSDK_OFFSET(0xA076720)
+#define CLASS_1_523713A408D9D32E_CLASS_1_8948AD68D91D91A5_METHOD_1_7EB1399966B33D71_OFFSET UNITYSDK_OFFSET(0xA0766C0)
+#define CLASS_1_523713A408D9D32E_CLASS_1_8948AD68D91D91A5_METHOD_1_FB486FED5699E989_OFFSET UNITYSDK_OFFSET(0xA0766F0)
+#define CLASS_1_523713A408D9D32E_CLASS_1_8948AD68D91D91A5__CTOR_OFFSET UNITYSDK_OFFSET(0xA0766B0)
+
+inline static constexpr unsigned int Class_1_523713A408D9D32E_Class_1_8948AD68D91D91A5_TypeDefinitionIndex = 64082;
+
+class Class_1_523713A408D9D32E_Class_1_8948AD68D91D91A5 : public ::System::Object
+{
+public:
+	::Cysharp::Threading::Tasks::UniTaskCompletionSource* Field_1_3; // 0x10
+	::Class_3_46ACE6C9C1C8C43D_2* Field_1_2; // 0x18
+	::Cysharp::Threading::Tasks::UniTaskCompletionSource* Field_1_1; // 0x20
+	::Struct_2_2C5A03A90BB5E900 Field_1_0; // 0x28
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_523713A408D9D32E_CLASS_1_8948AD68D91D91A5__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_7EB1399966B33D71(::Class_3_46ACE6C9C1C8C43D_2* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_3_46ACE6C9C1C8C43D_2*))((::PBYTE)hIl2Cpp + CLASS_1_523713A408D9D32E_CLASS_1_8948AD68D91D91A5_METHOD_1_7EB1399966B33D71_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_FB486FED5699E989(::Struct_2_2C5A03A90BB5E900 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_2C5A03A90BB5E900))((::PBYTE)hIl2Cpp + CLASS_1_523713A408D9D32E_CLASS_1_8948AD68D91D91A5_METHOD_1_FB486FED5699E989_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_09BF188F1F91D68B(::Class_0_16E4307DCC419505_7* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + CLASS_1_523713A408D9D32E_CLASS_1_8948AD68D91D91A5_METHOD_1_09BF188F1F91D68B_OFFSET))(this, a1);
+	}
+};

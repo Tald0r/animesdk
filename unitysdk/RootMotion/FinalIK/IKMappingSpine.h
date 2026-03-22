@@ -1,0 +1,113 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/RootMotion/FinalIK/IKMapping.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+namespace RootMotion::FinalIK { class IKMapping_BoneMap; }
+namespace RootMotion::FinalIK { class IKSolver; }
+namespace RootMotion::FinalIK { class IKSolverFullBody; }
+namespace System { class String; }
+namespace UnityEngine { class Transform; }
+
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE_BACKWARDREACH_OFFSET UNITYSDK_OFFSET(0x1A6C0C80)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE_FIXTRANSFORMS_OFFSET UNITYSDK_OFFSET(0x1A6BF420)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE_FORWARDREACH_OFFSET UNITYSDK_OFFSET(0x1A6C0A30)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE_INITIATE_OFFSET UNITYSDK_OFFSET(0x1A6BF500)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE_ISVALID_OFFSET UNITYSDK_OFFSET(0x1A6BEC60)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE_MAPTOSOLVERPOSITIONS_OFFSET UNITYSDK_OFFSET(0x1A6C0E70)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE_READPOSE_OFFSET UNITYSDK_OFFSET(0x1A6C0000)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE_SETBONES_OFFSET UNITYSDK_OFFSET(0x1A6BF300)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE_STOREDEFAULTLOCALSTATE_OFFSET UNITYSDK_OFFSET(0x1A6BF320)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE_USEFABRIK_OFFSET UNITYSDK_OFFSET(0x1A6BFFD0)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE_WRITEPOSE_OFFSET UNITYSDK_OFFSET(0x1A6C0550)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A6BF1B0)
+#define ROOTMOTION_FINALIK_IKMAPPINGSPINE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A6BF0A0)
+
+namespace RootMotion::FinalIK
+{
+	inline static constexpr unsigned int IKMappingSpine_TypeDefinitionIndex = 35060;
+
+	class IKMappingSpine : public ::RootMotion::FinalIK::IKMapping
+	{
+	public:
+		::Il2CppArray<::UnityEngine::Transform*>* spineBones; // 0x10
+		::UnityEngine::Transform* leftUpperArmBone; // 0x18
+		::UnityEngine::Transform* rightUpperArmBone; // 0x20
+		::UnityEngine::Transform* leftThighBone; // 0x28
+		::UnityEngine::Transform* rightThighBone; // 0x30
+		::System::Int32 iterations; // 0x38
+		::System::Single twistWeight; // 0x3C
+		::System::Int32 rootNodeIndex; // 0x40
+		::Il2CppArray<::RootMotion::FinalIK::IKMapping_BoneMap*>* spine; // 0x48
+		::RootMotion::FinalIK::IKMapping_BoneMap* leftUpperArm; // 0x50
+		::RootMotion::FinalIK::IKMapping_BoneMap* rightUpperArm; // 0x58
+		::RootMotion::FinalIK::IKMapping_BoneMap* leftThigh; // 0x60
+		::RootMotion::FinalIK::IKMapping_BoneMap* rightThigh; // 0x68
+		::System::Boolean useFABRIK; // 0x70
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::Il2CppArray<::UnityEngine::Transform*>* spineBones, ::UnityEngine::Transform* leftUpperArmBone, ::UnityEngine::Transform* rightUpperArmBone, ::UnityEngine::Transform* leftThighBone, ::UnityEngine::Transform* rightThighBone)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::UnityEngine::Transform*>*, ::UnityEngine::Transform*, ::UnityEngine::Transform*, ::UnityEngine::Transform*, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE__CTOR_1_OFFSET))(this, spineBones, leftUpperArmBone, rightUpperArmBone, leftThighBone, rightThighBone);
+		}
+
+		::System::Boolean IsValid(::RootMotion::FinalIK::IKSolver* solver, ::System::String*& message)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::RootMotion::FinalIK::IKSolver*, ::System::String*&))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE_ISVALID_OFFSET))(this, solver, message);
+		}
+
+		::System::Void SetBones(::Il2CppArray<::UnityEngine::Transform*>* spineBones, ::UnityEngine::Transform* leftUpperArmBone, ::UnityEngine::Transform* rightUpperArmBone, ::UnityEngine::Transform* leftThighBone, ::UnityEngine::Transform* rightThighBone)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::UnityEngine::Transform*>*, ::UnityEngine::Transform*, ::UnityEngine::Transform*, ::UnityEngine::Transform*, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE_SETBONES_OFFSET))(this, spineBones, leftUpperArmBone, rightUpperArmBone, leftThighBone, rightThighBone);
+		}
+
+		::System::Void StoreDefaultLocalState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE_STOREDEFAULTLOCALSTATE_OFFSET))(this);
+		}
+
+		::System::Void FixTransforms()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE_FIXTRANSFORMS_OFFSET))(this);
+		}
+
+		::System::Void Initiate(::RootMotion::FinalIK::IKSolverFullBody* solver)
+		{
+			return ((::System::Void(*)(::PVOID, ::RootMotion::FinalIK::IKSolverFullBody*))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE_INITIATE_OFFSET))(this, solver);
+		}
+
+		::System::Boolean UseFABRIK()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE_USEFABRIK_OFFSET))(this);
+		}
+
+		::System::Void ReadPose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE_READPOSE_OFFSET))(this);
+		}
+
+		::System::Void WritePose(::RootMotion::FinalIK::IKSolverFullBody* solver)
+		{
+			return ((::System::Void(*)(::PVOID, ::RootMotion::FinalIK::IKSolverFullBody*))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE_WRITEPOSE_OFFSET))(this, solver);
+		}
+
+		::System::Void ForwardReach(::UnityEngine::Vector3 position)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE_FORWARDREACH_OFFSET))(this, position);
+		}
+
+		::System::Void BackwardReach(::UnityEngine::Vector3 position)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE_BACKWARDREACH_OFFSET))(this, position);
+		}
+
+		::System::Void MapToSolverPositions(::RootMotion::FinalIK::IKSolverFullBody* solver)
+		{
+			return ((::System::Void(*)(::PVOID, ::RootMotion::FinalIK::IKSolverFullBody*))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKMAPPINGSPINE_MAPTOSOLVERPOSITIONS_OFFSET))(this, solver);
+		}
+	};
+}

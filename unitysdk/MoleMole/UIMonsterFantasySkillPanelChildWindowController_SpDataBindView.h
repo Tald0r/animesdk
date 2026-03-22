@@ -1,0 +1,113 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_3BEB019E352B28D9_1_Class_2_190E8D2E48A46BE5_3.h"
+#include "unitysdk/UnityEngine/Color.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_1_7C49A1AA8D795789;
+class Class_1_8AD00B3E434B607C;
+class Class_1_8AD00B3E434B607C_1;
+class Class_2_3BEB019E352B28D9_1_Class_0_16E7307DCC43CB2C_17;
+class Class_2_3BEB019E352B28D9_1_Class_0_16E7307DCC43CB2C_18;
+class Class_2_A8F5ABF31E066ED4;
+class Class_2_E87F1D15F1D4AC72;
+class UIControllerExtensionData;
+namespace MoleMole { class UIMonsterFantasySkillPanelChildWindowController; }
+
+#define MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_GET_SPANIM_OFFSET UNITYSDK_OFFSET(0x98E7700)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_GET_SPTEXT_OFFSET UNITYSDK_OFFSET(0x98E76F0)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_ONBUILDDATABINDING_OFFSET UNITYSDK_OFFSET(0x98E7710)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_ONINIT_OFFSET UNITYSDK_OFFSET(0x98E7900)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_SETSPMATERIALBLINK_OFFSET UNITYSDK_OFFSET(0x98E7C00)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_SETSPMATERIALRAMPCOLOR_OFFSET UNITYSDK_OFFSET(0x98E7A70)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW__CCTOR_OFFSET UNITYSDK_OFFSET(0x98E7FD0)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW__CTOR_OFFSET UNITYSDK_OFFSET(0x98E6DC0)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW__ONBUILDDATABINDING_B__10_0_OFFSET UNITYSDK_OFFSET(0x98E8050)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW__ONBUILDDATABINDING_B__10_1_OFFSET UNITYSDK_OFFSET(0x98E81C0)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW__ONBUILDDATABINDING_B__10_2_OFFSET UNITYSDK_OFFSET(0x98E8A10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMonsterFantasySkillPanelChildWindowController_SpDataBindView_TypeDefinitionIndex = 45883;
+
+	class UIMonsterFantasySkillPanelChildWindowController_SpDataBindView : public ::Class_2_3BEB019E352B28D9_1_Class_2_190E8D2E48A46BE5_3
+	{
+	public:
+		static ::System::Int32* StaticGet_BlinkColorShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasySkillPanelChildWindowController_SpDataBindView_TypeDefinitionIndex)->GetStaticField(0x11400);
+		}
+		static ::System::Int32* StaticGet_BlinkColorBShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasySkillPanelChildWindowController_SpDataBindView_TypeDefinitionIndex)->GetStaticField(0x11404);
+		}
+		static ::System::Int32* StaticGet_RampColorAShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasySkillPanelChildWindowController_SpDataBindView_TypeDefinitionIndex)->GetStaticField(0x11408);
+		}
+		static ::System::Int32* StaticGet_RampColorBShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasySkillPanelChildWindowController_SpDataBindView_TypeDefinitionIndex)->GetStaticField(0x1140C);
+		}
+		::Class_1_8AD00B3E434B607C_1* _dmgPercent; // 0x28
+		::Class_1_7C49A1AA8D795789* _dmgAndRecoverState; // 0x30
+		::Class_2_A8F5ABF31E066ED4* _spImg; // 0x38
+		::Class_1_8AD00B3E434B607C* _recoverPercent; // 0x40
+		::UIControllerExtensionData* _extData; // 0x48
+
+		::System::Void _ctor(::MoleMole::UIMonsterFantasySkillPanelChildWindowController* ctrl)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIMonsterFantasySkillPanelChildWindowController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW__CTOR_OFFSET))(this, ctrl);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW__CCTOR_OFFSET))();
+		}
+
+		::Class_2_3BEB019E352B28D9_1_Class_0_16E7307DCC43CB2C_17* get_SpText()
+		{
+			return ((::Class_2_3BEB019E352B28D9_1_Class_0_16E7307DCC43CB2C_17*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_GET_SPTEXT_OFFSET))(this);
+		}
+
+		::Class_2_3BEB019E352B28D9_1_Class_0_16E7307DCC43CB2C_18* get_SpAnim()
+		{
+			return ((::Class_2_3BEB019E352B28D9_1_Class_0_16E7307DCC43CB2C_18*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_GET_SPANIM_OFFSET))(this);
+		}
+
+		::System::Void OnBuildDataBinding(::Class_1_48D56DACBE4271BC* propertySyncHelper)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_48D56DACBE4271BC*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_ONBUILDDATABINDING_OFFSET))(this, propertySyncHelper);
+		}
+
+		::System::Void OnInit(::Class_2_E87F1D15F1D4AC72* binder)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_ONINIT_OFFSET))(this, binder);
+		}
+
+		::System::Void SetSpMaterialRampColor(::UnityEngine::Color rampA, ::UnityEngine::Color rampB)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_SETSPMATERIALRAMPCOLOR_OFFSET))(this, rampA, rampB);
+		}
+
+		::System::Void SetSpMaterialBlink(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW_SETSPMATERIALBLINK_OFFSET))(this, enable);
+		}
+
+		::System::Void _OnBuildDataBinding_b__10_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW__ONBUILDDATABINDING_B__10_0_OFFSET))(this);
+		}
+
+		::System::Void _OnBuildDataBinding_b__10_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW__ONBUILDDATABINDING_B__10_1_OFFSET))(this);
+		}
+
+		::System::Void _OnBuildDataBinding_b__10_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLPANELCHILDWINDOWCONTROLLER_SPDATABINDVIEW__ONBUILDDATABINDING_B__10_2_OFFSET))(this);
+		}
+	};
+}

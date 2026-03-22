@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int RigidbodyInterpolation2D_TypeDefinitionIndex = 5080;
+	inline static constexpr unsigned int RigidbodyInterpolation2D_TypeDefinitionIndex = 7618;
 
 	enum class RigidbodyInterpolation2D : ::System::Int32
 	{

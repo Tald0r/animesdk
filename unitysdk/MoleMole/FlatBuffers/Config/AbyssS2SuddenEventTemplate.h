@@ -1,0 +1,162 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_3E75877A2888D88A_590.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_13;
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_CLEAR_OFFSET UNITYSDK_OFFSET(0x16B0C2C0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_ADDPROBABILITYLIST_OFFSET UNITYSDK_OFFSET(0x16B0AC60)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_BATTLERANKINGID_OFFSET UNITYSDK_OFFSET(0x16B0AF60)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_CHALLENGEID_OFFSET UNITYSDK_OFFSET(0x16B0B0D0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_FCPATH_OFFSET UNITYSDK_OFFSET(0x16B0B240)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_ISLOADALL_OFFSET UNITYSDK_OFFSET(0x16B0AAC0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_NONBATTLEAREAIDINFO_OFFSET UNITYSDK_OFFSET(0x16B0B360)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_RESULTIDLIST_OFFSET UNITYSDK_OFFSET(0x16B0B480)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_REWARDIDLIST_OFFSET UNITYSDK_OFFSET(0x16B0B5A0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_SUBTRACTPROBABILITYLIST_OFFSET UNITYSDK_OFFSET(0x16B0B6C0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_SUDDENAREATAGLIST_OFFSET UNITYSDK_OFFSET(0x16B0B9C0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_SUDDENEVENTID_OFFSET UNITYSDK_OFFSET(0x16B0AAF0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_WAVE1_OFFSET UNITYSDK_OFFSET(0x16B0BC20)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_WAVE2_OFFSET UNITYSDK_OFFSET(0x16B0BD40)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_WAVE3_OFFSET UNITYSDK_OFFSET(0x16B0BE60)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_WAVE4_OFFSET UNITYSDK_OFFSET(0x16B0BF80)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_WAVE5_OFFSET UNITYSDK_OFFSET(0x16B0C0A0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_LOADANDCHECK_OFFSET UNITYSDK_OFFSET(0x16B0C1C0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_SET_ISLOADALL_OFFSET UNITYSDK_OFFSET(0x16B0AAD0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE__CTOR_OFFSET UNITYSDK_OFFSET(0x16B0AAE0)
+
+namespace MoleMole::FlatBuffers::Config
+{
+	inline static constexpr unsigned int AbyssS2SuddenEventTemplate_TypeDefinitionIndex = 11722;
+
+	class AbyssS2SuddenEventTemplate : public ::System::Object
+	{
+	public:
+		// static const ::System::String* Hash; // 0x0
+		// static const ::System::Byte VAR_MAX_COUNT = 0xF; // 0x0
+		::System::String* m_RewardIDList; // 0x10
+		::System::String* m_FCPath; // 0x18
+		::System::String* m_Wave5; // 0x20
+		::System::String* m_Wave2; // 0x28
+		::System::Collections::Generic::List_1<::System::Int32>* m_SubtractProbabilityList; // 0x30
+		::System::String* m_Wave1; // 0x38
+		::System::String* m_ResultIDList; // 0x40
+		::System::String* m_NonbattleAreaIDInfo; // 0x48
+		::Class_0_16E4307DCC419505_13* m_Notify; // 0x50
+		::System::Collections::Generic::List_1<::System::String*>* m_SuddenAreaTagList; // 0x58
+		::System::String* m_Wave3; // 0x60
+		::System::Collections::Generic::List_1<::System::Int32>* m_AddProbabilityList; // 0x68
+		::Struct_2_3E75877A2888D88A_590 m_Data; // 0x70
+		::System::String* m_Wave4; // 0x80
+		::System::Int32 m_BattleRankingID; // 0x88
+		::System::Int32 m_SuddenEventID; // 0x8C
+		::System::Int32 m_ChallengeID; // 0x90
+		::System::Byte m_Mask1; // 0x94
+		::System::Boolean _IsLoadAll_k__BackingField; // 0x95
+		::System::Byte m_Mask0; // 0x96
+		::System::Byte m_VarLoadedCount; // 0x97
+
+		::System::Void _ctor(::Struct_2_3E75877A2888D88A_590 data, ::Class_0_16E4307DCC419505_13* notify)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_3E75877A2888D88A_590, ::Class_0_16E4307DCC419505_13*))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE__CTOR_OFFSET))(this, data, notify);
+		}
+
+		::System::Boolean get_IsLoadAll()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_ISLOADALL_OFFSET))(this);
+		}
+
+		::System::Void set_IsLoadAll(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_SET_ISLOADALL_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_SuddenEventID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_SUDDENEVENTID_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* get_AddProbabilityList()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_ADDPROBABILITYLIST_OFFSET))(this);
+		}
+
+		::System::Int32 get_BattleRankingID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_BATTLERANKINGID_OFFSET))(this);
+		}
+
+		::System::Int32 get_ChallengeID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_CHALLENGEID_OFFSET))(this);
+		}
+
+		::System::String* get_FCPath()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_FCPATH_OFFSET))(this);
+		}
+
+		::System::String* get_NonbattleAreaIDInfo()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_NONBATTLEAREAIDINFO_OFFSET))(this);
+		}
+
+		::System::String* get_ResultIDList()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_RESULTIDLIST_OFFSET))(this);
+		}
+
+		::System::String* get_RewardIDList()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_REWARDIDLIST_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* get_SubtractProbabilityList()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_SUBTRACTPROBABILITYLIST_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* get_SuddenAreaTagList()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_SUDDENAREATAGLIST_OFFSET))(this);
+		}
+
+		::System::String* get_Wave1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_WAVE1_OFFSET))(this);
+		}
+
+		::System::String* get_Wave2()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_WAVE2_OFFSET))(this);
+		}
+
+		::System::String* get_Wave3()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_WAVE3_OFFSET))(this);
+		}
+
+		::System::String* get_Wave4()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_WAVE4_OFFSET))(this);
+		}
+
+		::System::String* get_Wave5()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_GET_WAVE5_OFFSET))(this);
+		}
+
+		::System::Void LoadAndCheck()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_LOADANDCHECK_OFFSET))(this);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ABYSSS2SUDDENEVENTTEMPLATE_CLEAR_OFFSET))(this);
+		}
+	};
+}

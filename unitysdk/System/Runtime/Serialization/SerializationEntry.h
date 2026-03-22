@@ -6,13 +6,14 @@ namespace System { class Object; }
 namespace System { class String; }
 namespace System { class Type; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONENTRY_GET_NAME_OFFSET UNITYSDK_OFFSET(0x13C90)
-#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONENTRY_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x5AF0)
-#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x200C510)
+#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONENTRY_GET_NAME_OFFSET UNITYSDK_OFFSET(0x2C6240)
+#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONENTRY_GET_OBJECTTYPE_OFFSET UNITYSDK_OFFSET(0x21C7C0)
+#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONENTRY_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x2CB080)
+#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x7B7BF0)
 
 namespace System::Runtime::Serialization
 {
-	inline static constexpr unsigned int SerializationEntry_TypeDefinitionIndex = 1116;
+	inline static constexpr unsigned int SerializationEntry_TypeDefinitionIndex = 1171;
 
 	struct alignas(8) SerializationEntry
 	{
@@ -33,6 +34,11 @@ namespace System::Runtime::Serialization
 		::System::String* get_Name()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONENTRY_GET_NAME_OFFSET))(this);
+		}
+
+		::System::Type* get_ObjectType()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONENTRY_GET_OBJECTTYPE_OFFSET))(this);
 		}
 	};
 }

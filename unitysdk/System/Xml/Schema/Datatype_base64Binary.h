@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/Datatype_anySimpleType.h"
+#include "unitysdk/System/Xml/Schema/RestrictionFlags.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaWhiteSpace.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 
@@ -14,31 +15,32 @@ namespace System::Xml::Schema { class FacetsChecker; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_COMPARE_OFFSET UNITYSDK_OFFSET(0x17D69940)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D697B0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x17D69930)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x17D69800)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D698D0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D69860)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D69870)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x17D69A00)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D69C20)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY__CTOR_OFFSET UNITYSDK_OFFSET(0x17D62D00)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_COMPARE_OFFSET UNITYSDK_OFFSET(0x19E624C0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x19E62320)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x19E624A0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x19E62370)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x19E62440)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x19E623D0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_VALIDRESTRICTIONFLAGS_OFFSET UNITYSDK_OFFSET(0x19E624B0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x19E623E0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x19E62580)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY__CCTOR_OFFSET UNITYSDK_OFFSET(0x19E62840)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY__CTOR_OFFSET UNITYSDK_OFFSET(0x19E627A0)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_base64Binary_TypeDefinitionIndex = 2101;
+	inline static constexpr unsigned int Datatype_base64Binary_TypeDefinitionIndex = 2016;
 
 	class Datatype_base64Binary : public ::System::Xml::Schema::Datatype_anySimpleType
 	{
 	public:
 		static ::System::Type** StaticGet_listValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_base64Binary_TypeDefinitionIndex)->GetStaticField(0x140D0);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_base64Binary_TypeDefinitionIndex)->GetStaticField(0x1BB0);
 		}
 		static ::System::Type** StaticGet_atomicValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_base64Binary_TypeDefinitionIndex)->GetStaticField(0x140D8);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_base64Binary_TypeDefinitionIndex)->GetStaticField(0x1BB8);
 		}
 
 		::System::Void _ctor()
@@ -79,6 +81,11 @@ namespace System::Xml::Schema
 		::System::Xml::Schema::XmlSchemaWhiteSpace get_BuiltInWhitespaceFacet()
 		{
 			return ((::System::Xml::Schema::XmlSchemaWhiteSpace(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_BUILTINWHITESPACEFACET_OFFSET))(this);
+		}
+
+		::System::Xml::Schema::RestrictionFlags get_ValidRestrictionFlags()
+		{
+			return ((::System::Xml::Schema::RestrictionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_BASE64BINARY_GET_VALIDRESTRICTIONFLAGS_OFFSET))(this);
 		}
 
 		::System::Int32 Compare(::System::Object* value1, ::System::Object* value2)

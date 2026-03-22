@@ -1,9 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-class Class_2_9850514C0F89B91A;
+class MonoUITableScrollV2;
+namespace System { class Object; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_171_TypeDefinitionIndex = 31720;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_171_TypeDefinitionIndex = 37520;
 
 class Class_0_16E4307DCC419505_171
 {

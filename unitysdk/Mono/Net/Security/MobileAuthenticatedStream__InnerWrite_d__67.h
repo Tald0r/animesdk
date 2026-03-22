@@ -8,12 +8,12 @@
 namespace Mono::Net::Security { class MobileAuthenticatedStream; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__INNERWRITE_D__67_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2031B20)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__INNERWRITE_D__67_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0xD1A70)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__INNERWRITE_D__67_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x868FA0)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__INNERWRITE_D__67_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2C3CA0)
 
 namespace Mono::Net::Security
 {
-	inline static constexpr unsigned int MobileAuthenticatedStream__InnerWrite_d__67_TypeDefinitionIndex = 2425;
+	inline static constexpr unsigned int MobileAuthenticatedStream__InnerWrite_d__67_TypeDefinitionIndex = 2628;
 
 	struct alignas(8) MobileAuthenticatedStream__InnerWrite_d__67
 	{

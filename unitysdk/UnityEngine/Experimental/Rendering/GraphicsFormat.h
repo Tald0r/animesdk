@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Experimental::Rendering
 {
-	inline static constexpr unsigned int GraphicsFormat_TypeDefinitionIndex = 4708;
+	inline static constexpr unsigned int GraphicsFormat_TypeDefinitionIndex = 6303;
 
 	enum class GraphicsFormat : ::System::Int32
 	{
@@ -60,9 +60,6 @@ namespace UnityEngine::Experimental::Rendering
 		R32G32_SFloat = 50,
 		R32G32B32_SFloat = 51,
 		R32G32B32A32_SFloat = 52,
-		L8_UNorm = 53,
-		A8_UNorm = 54,
-		A16_UNorm = 55,
 		B8G8R8_SRGB = 56,
 		B8G8R8A8_SRGB = 57,
 		B8G8R8_UNorm = 58,
@@ -94,15 +91,6 @@ namespace UnityEngine::Experimental::Rendering
 		R10G10B10_XRUNormPack32 = 84,
 		A10R10G10B10_XRSRGBPack32 = 85,
 		A10R10G10B10_XRUNormPack32 = 86,
-		A8R8G8B8_SRGB = 87,
-		A8R8G8B8_UNorm = 88,
-		A32R32G32B32_SFloat = 89,
-		D16_UNorm = 90,
-		D24_UNorm = 91,
-		D24_UNorm_S8_UInt = 92,
-		D32_SFloat = 93,
-		D32_SFloat_S8_UInt = 94,
-		S8_UInt = 95,
 		RGB_DXT1_SRGB = 96,
 		RGBA_DXT1_SRGB = 96,
 		RGB_DXT1_UNorm = 97,

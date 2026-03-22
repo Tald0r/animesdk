@@ -8,68 +8,87 @@
 #include "unitysdk/System/Xml/ValidationType.h"
 
 namespace System { class String; }
+namespace System { class Uri; }
+namespace System::IO { class Stream; }
+namespace System::IO { class TextReader; }
 namespace System::Xml { class XmlNameTable; }
+namespace System::Xml { class XmlParserContext; }
+namespace System::Xml { class XmlReader; }
 namespace System::Xml { class XmlResolver; }
+namespace System::Xml { class XmlValidatingReaderImpl; }
+namespace System::Xml::Schema { class ValidationEventHandler; }
 namespace System::Xml::Schema { class XmlSchemaSet; }
 
-#define SYSTEM_XML_XMLREADERSETTINGS_CHECKREADONLY_OFFSET UNITYSDK_OFFSET(0x17E0C950)
-#define SYSTEM_XML_XMLREADERSETTINGS_CREATEDEFAULTRESOLVER_OFFSET UNITYSDK_OFFSET(0x17E0CE90)
-#define SYSTEM_XML_XMLREADERSETTINGS_ENABLELEGACYXMLSETTINGS_OFFSET UNITYSDK_OFFSET(0x17E0CED0)
-#define SYSTEM_XML_XMLREADERSETTINGS_GETXMLRESOLVER_OFFSET UNITYSDK_OFFSET(0x17E0CA50)
-#define SYSTEM_XML_XMLREADERSETTINGS_GET_SCHEMAS_OFFSET UNITYSDK_OFFSET(0x17DFF6F0)
-#define SYSTEM_XML_XMLREADERSETTINGS_GET_VALIDATIONTYPE_OFFSET UNITYSDK_OFFSET(0x17E0CDE0)
-#define SYSTEM_XML_XMLREADERSETTINGS_INITIALIZE_1_OFFSET UNITYSDK_OFFSET(0x17E0CE00)
-#define SYSTEM_XML_XMLREADERSETTINGS_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x17E0C880)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_CHECKCHARACTERS_OFFSET UNITYSDK_OFFSET(0x17E0CB60)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_CONFORMANCELEVEL_OFFSET UNITYSDK_OFFSET(0x17E0CAE0)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_DTDPROCESSING_OFFSET UNITYSDK_OFFSET(0x17E0CD60)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_IGNORECOMMENTS_OFFSET UNITYSDK_OFFSET(0x17E0CD20)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_IGNOREPROCESSINGINSTRUCTIONS_OFFSET UNITYSDK_OFFSET(0x17E0CCE0)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_IGNOREWHITESPACE_OFFSET UNITYSDK_OFFSET(0x17E0CCA0)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_ISXMLRESOLVERSET_OFFSET UNITYSDK_OFFSET(0x17E0C9F0)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_LINENUMBEROFFSET_OFFSET UNITYSDK_OFFSET(0x17E0CA60)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_LINEPOSITIONOFFSET_OFFSET UNITYSDK_OFFSET(0x17E0CAA0)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_MAXCHARACTERSFROMENTITIES_OFFSET UNITYSDK_OFFSET(0x17E0CC20)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_MAXCHARACTERSINDOCUMENT_OFFSET UNITYSDK_OFFSET(0x17E0CBA0)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_NAMETABLE_OFFSET UNITYSDK_OFFSET(0x17E0C900)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_READONLY_OFFSET UNITYSDK_OFFSET(0x17E0CDF0)
-#define SYSTEM_XML_XMLREADERSETTINGS_SET_XMLRESOLVER_OFFSET UNITYSDK_OFFSET(0x17E0CA00)
-#define SYSTEM_XML_XMLREADERSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x17E0C800)
+#define SYSTEM_XML_XMLREADERSETTINGS_ADDVALIDATION_OFFSET UNITYSDK_OFFSET(0x19619700)
+#define SYSTEM_XML_XMLREADERSETTINGS_CHECKREADONLY_OFFSET UNITYSDK_OFFSET(0x19618C70)
+#define SYSTEM_XML_XMLREADERSETTINGS_CLONE_OFFSET UNITYSDK_OFFSET(0x196192C0)
+#define SYSTEM_XML_XMLREADERSETTINGS_CREATEDEFAULTRESOLVER_OFFSET UNITYSDK_OFFSET(0x19619AC0)
+#define SYSTEM_XML_XMLREADERSETTINGS_CREATEDTDVALIDATINGREADER_OFFSET UNITYSDK_OFFSET(0x19619B90)
+#define SYSTEM_XML_XMLREADERSETTINGS_CREATEREADER_1_OFFSET UNITYSDK_OFFSET(0x19619880)
+#define SYSTEM_XML_XMLREADERSETTINGS_CREATEREADER_OFFSET UNITYSDK_OFFSET(0x196193B0)
+#define SYSTEM_XML_XMLREADERSETTINGS_ENABLELEGACYXMLSETTINGS_OFFSET UNITYSDK_OFFSET(0x19619B00)
+#define SYSTEM_XML_XMLREADERSETTINGS_GET_SCHEMAS_OFFSET UNITYSDK_OFFSET(0x19611E10)
+#define SYSTEM_XML_XMLREADERSETTINGS_INITIALIZE_1_OFFSET UNITYSDK_OFFSET(0x19619A40)
+#define SYSTEM_XML_XMLREADERSETTINGS_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x19618BC0)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_ASYNC_OFFSET UNITYSDK_OFFSET(0x19618C30)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_CHECKCHARACTERS_OFFSET UNITYSDK_OFFSET(0x19618EB0)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_CLOSEINPUT_OFFSET UNITYSDK_OFFSET(0x19619130)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_CONFORMANCELEVEL_OFFSET UNITYSDK_OFFSET(0x19618E30)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_DTDPROCESSING_OFFSET UNITYSDK_OFFSET(0x196190B0)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_IGNORECOMMENTS_OFFSET UNITYSDK_OFFSET(0x19619070)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_IGNOREPROCESSINGINSTRUCTIONS_OFFSET UNITYSDK_OFFSET(0x19619030)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_IGNOREWHITESPACE_OFFSET UNITYSDK_OFFSET(0x19618FF0)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_LINENUMBEROFFSET_OFFSET UNITYSDK_OFFSET(0x19618DB0)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_LINEPOSITIONOFFSET_OFFSET UNITYSDK_OFFSET(0x19618DF0)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_MAXCHARACTERSFROMENTITIES_OFFSET UNITYSDK_OFFSET(0x19618F70)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_MAXCHARACTERSINDOCUMENT_OFFSET UNITYSDK_OFFSET(0x19618EF0)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_NAMETABLE_OFFSET UNITYSDK_OFFSET(0x19618D10)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_SCHEMAS_OFFSET UNITYSDK_OFFSET(0x19619270)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_VALIDATIONFLAGS_OFFSET UNITYSDK_OFFSET(0x196191F0)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_VALIDATIONTYPE_OFFSET UNITYSDK_OFFSET(0x19619170)
+#define SYSTEM_XML_XMLREADERSETTINGS_SET_XMLRESOLVER_OFFSET UNITYSDK_OFFSET(0x19618D60)
+#define SYSTEM_XML_XMLREADERSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x19618B50)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int XmlReaderSettings_TypeDefinitionIndex = 1825;
+	inline static constexpr unsigned int XmlReaderSettings_TypeDefinitionIndex = 1711;
 
 	class XmlReaderSettings : public ::System::Object
 	{
 	public:
 		static ::System::Nullable_1<::System::Boolean>* StaticGet_s_enableLegacyXmlSettings()
 		{
-			return (::System::Nullable_1<::System::Boolean>*)Il2CppClass::FromTypeDefinitionIndex(XmlReaderSettings_TypeDefinitionIndex)->GetStaticField(0x4A70);
+			return (::System::Nullable_1<::System::Boolean>*)Il2CppClass::FromTypeDefinitionIndex(XmlReaderSettings_TypeDefinitionIndex)->GetStaticField(0xEA0);
 		}
 		::System::Xml::Schema::XmlSchemaSet* schemas; // 0x10
 		::System::Xml::XmlNameTable* nameTable; // 0x18
-		::System::Xml::XmlResolver* xmlResolver; // 0x20
-		::System::Boolean ignoreComments; // 0x28
-		::System::Boolean isReadOnly; // 0x29
-		::System::Boolean checkCharacters; // 0x2A
-		::System::Boolean ignorePIs; // 0x2B
-		::System::Xml::ValidationType validationType; // 0x2C
-		::System::Int32 linePositionOffset; // 0x30
-		::System::Xml::DtdProcessing dtdProcessing; // 0x34
-		::System::Boolean useAsync; // 0x38
-		::System::Boolean closeInput; // 0x39
-		::System::Boolean _IsXmlResolverSet_k__BackingField; // 0x3A
-		::System::Boolean ignoreWhitespace; // 0x3B
-		::System::Xml::ConformanceLevel conformanceLevel; // 0x3C
-		::System::Int64 maxCharactersInDocument; // 0x40
-		::System::Int32 lineNumberOffset; // 0x48
-		::System::Xml::Schema::XmlSchemaValidationFlags validationFlags; // 0x4C
-		::System::Int64 maxCharactersFromEntities; // 0x50
+		::System::Xml::Schema::ValidationEventHandler* valEventHandler; // 0x20
+		::System::Xml::XmlResolver* xmlResolver; // 0x28
+		::System::Xml::Schema::XmlSchemaValidationFlags validationFlags; // 0x30
+		::System::Int32 linePositionOffset; // 0x34
+		::System::Xml::ConformanceLevel conformanceLevel; // 0x38
+		::System::Xml::ValidationType validationType; // 0x3C
+		::System::Xml::DtdProcessing dtdProcessing; // 0x40
+		::System::Int32 lineNumberOffset; // 0x44
+		::System::Int64 maxCharactersFromEntities; // 0x48
+		::System::Boolean closeInput; // 0x50
+		::System::Boolean ignorePIs; // 0x51
+		::System::Boolean checkCharacters; // 0x52
+		::System::Boolean isReadOnly; // 0x53
+		::System::Boolean ignoreComments; // 0x54
+		::System::Boolean ignoreWhitespace; // 0x55
+		::System::Boolean _IsXmlResolverSet_k__BackingField; // 0x56
+		::System::Boolean useAsync; // 0x57
+		::System::Int64 maxCharactersInDocument; // 0x58
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS__CTOR_OFFSET))(this);
+		}
+
+		::System::Void set_Async(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_SET_ASYNC_OFFSET))(this, value);
 		}
 
 		::System::Void set_NameTable(::System::Xml::XmlNameTable* value)
@@ -77,19 +96,9 @@ namespace System::Xml
 			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlNameTable*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_SET_NAMETABLE_OFFSET))(this, value);
 		}
 
-		::System::Void set_IsXmlResolverSet(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_SET_ISXMLRESOLVERSET_OFFSET))(this, value);
-		}
-
 		::System::Void set_XmlResolver(::System::Xml::XmlResolver* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlResolver*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_SET_XMLRESOLVER_OFFSET))(this, value);
-		}
-
-		::System::Xml::XmlResolver* GetXmlResolver()
-		{
-			return ((::System::Xml::XmlResolver*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_GETXMLRESOLVER_OFFSET))(this);
 		}
 
 		::System::Void set_LineNumberOffset(::System::Int32 value)
@@ -142,9 +151,19 @@ namespace System::Xml
 			return ((::System::Void(*)(::PVOID, ::System::Xml::DtdProcessing))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_SET_DTDPROCESSING_OFFSET))(this, value);
 		}
 
-		::System::Xml::ValidationType get_ValidationType()
+		::System::Void set_CloseInput(::System::Boolean value)
 		{
-			return ((::System::Xml::ValidationType(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_GET_VALIDATIONTYPE_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_SET_CLOSEINPUT_OFFSET))(this, value);
+		}
+
+		::System::Void set_ValidationType(::System::Xml::ValidationType value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::ValidationType))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_SET_VALIDATIONTYPE_OFFSET))(this, value);
+		}
+
+		::System::Void set_ValidationFlags(::System::Xml::Schema::XmlSchemaValidationFlags value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaValidationFlags))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_SET_VALIDATIONFLAGS_OFFSET))(this, value);
 		}
 
 		::System::Xml::Schema::XmlSchemaSet* get_Schemas()
@@ -152,9 +171,24 @@ namespace System::Xml
 			return ((::System::Xml::Schema::XmlSchemaSet*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_GET_SCHEMAS_OFFSET))(this);
 		}
 
-		::System::Void set_ReadOnly(::System::Boolean value)
+		::System::Void set_Schemas(::System::Xml::Schema::XmlSchemaSet* value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_SET_READONLY_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaSet*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_SET_SCHEMAS_OFFSET))(this, value);
+		}
+
+		::System::Xml::XmlReaderSettings* Clone()
+		{
+			return ((::System::Xml::XmlReaderSettings*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_CLONE_OFFSET))(this);
+		}
+
+		::System::Xml::XmlReader* CreateReader(::System::IO::Stream* input, ::System::Uri* baseUri, ::System::String* baseUriString, ::System::Xml::XmlParserContext* inputContext)
+		{
+			return ((::System::Xml::XmlReader*(*)(::PVOID, ::System::IO::Stream*, ::System::Uri*, ::System::String*, ::System::Xml::XmlParserContext*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_CREATEREADER_OFFSET))(this, input, baseUri, baseUriString, inputContext);
+		}
+
+		::System::Xml::XmlReader* CreateReader_1(::System::IO::TextReader* input, ::System::String* baseUriString, ::System::Xml::XmlParserContext* inputContext)
+		{
+			return ((::System::Xml::XmlReader*(*)(::PVOID, ::System::IO::TextReader*, ::System::String*, ::System::Xml::XmlParserContext*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_CREATEREADER_1_OFFSET))(this, input, baseUriString, inputContext);
 		}
 
 		::System::Void CheckReadOnly(::System::String* propertyName)
@@ -175,6 +209,16 @@ namespace System::Xml
 		static ::System::Xml::XmlResolver* CreateDefaultResolver()
 		{
 			return ((::System::Xml::XmlResolver*(*)())((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_CREATEDEFAULTRESOLVER_OFFSET))();
+		}
+
+		::System::Xml::XmlReader* AddValidation(::System::Xml::XmlReader* reader)
+		{
+			return ((::System::Xml::XmlReader*(*)(::PVOID, ::System::Xml::XmlReader*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_ADDVALIDATION_OFFSET))(this, reader);
+		}
+
+		::System::Xml::XmlValidatingReaderImpl* CreateDtdValidatingReader(::System::Xml::XmlReader* baseReader)
+		{
+			return ((::System::Xml::XmlValidatingReaderImpl*(*)(::PVOID, ::System::Xml::XmlReader*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLREADERSETTINGS_CREATEDTDVALIDATINGREADER_OFFSET))(this, baseReader);
 		}
 
 		static ::System::Boolean EnableLegacyXmlSettings()

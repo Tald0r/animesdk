@@ -7,45 +7,27 @@ namespace System { class String; }
 namespace System::Xml::Serialization { class XmlTypeMapElementInfo; }
 namespace System::Xml::Serialization { class XmlTypeMapElementInfoList; }
 
-#define SYSTEM_XML_SERIALIZATION_LISTMAP_EQUALS_OFFSET UNITYSDK_OFFSET(0x17DA42B0)
-#define SYSTEM_XML_SERIALIZATION_LISTMAP_FINDELEMENT_1_OFFSET UNITYSDK_OFFSET(0x17DA3820)
-#define SYSTEM_XML_SERIALIZATION_LISTMAP_FINDELEMENT_OFFSET UNITYSDK_OFFSET(0x17DA2DB0)
-#define SYSTEM_XML_SERIALIZATION_LISTMAP_FINDTEXTELEMENT_OFFSET UNITYSDK_OFFSET(0x17DA3C60)
-#define SYSTEM_XML_SERIALIZATION_LISTMAP_GETARRAYTYPE_OFFSET UNITYSDK_OFFSET(0x17DA4090)
-#define SYSTEM_XML_SERIALIZATION_LISTMAP_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x17DA43D0)
-#define SYSTEM_XML_SERIALIZATION_LISTMAP_GET_ITEMINFO_OFFSET UNITYSDK_OFFSET(0x17DA2D90)
-#define SYSTEM_XML_SERIALIZATION_LISTMAP_SET_CHOICEMEMBER_OFFSET UNITYSDK_OFFSET(0x17DA2D80)
-#define SYSTEM_XML_SERIALIZATION_LISTMAP_SET_ITEMINFO_OFFSET UNITYSDK_OFFSET(0x17DA2DA0)
-#define SYSTEM_XML_SERIALIZATION_LISTMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x17DA43E0)
+#define SYSTEM_XML_SERIALIZATION_LISTMAP_EQUALS_OFFSET UNITYSDK_OFFSET(0x199C4AD0)
+#define SYSTEM_XML_SERIALIZATION_LISTMAP_FINDELEMENT_1_OFFSET UNITYSDK_OFFSET(0x199C4050)
+#define SYSTEM_XML_SERIALIZATION_LISTMAP_FINDELEMENT_OFFSET UNITYSDK_OFFSET(0x199C35E0)
+#define SYSTEM_XML_SERIALIZATION_LISTMAP_FINDTEXTELEMENT_OFFSET UNITYSDK_OFFSET(0x199C4490)
+#define SYSTEM_XML_SERIALIZATION_LISTMAP_GETARRAYTYPE_OFFSET UNITYSDK_OFFSET(0x199C48B0)
+#define SYSTEM_XML_SERIALIZATION_LISTMAP_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x199C4BF0)
+#define SYSTEM_XML_SERIALIZATION_LISTMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x199C4C00)
 
 namespace System::Xml::Serialization
 {
-	inline static constexpr unsigned int ListMap_TypeDefinitionIndex = 2042;
+	inline static constexpr unsigned int ListMap_TypeDefinitionIndex = 1937;
 
 	class ListMap : public ::System::Xml::Serialization::ObjectMap
 	{
 	public:
-		::System::Xml::Serialization::XmlTypeMapElementInfoList* _itemInfo; // 0x10
-		::System::String* _choiceMember; // 0x18
+		::System::String* _choiceMember; // 0x10
+		::System::Xml::Serialization::XmlTypeMapElementInfoList* _itemInfo; // 0x18
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_LISTMAP__CTOR_OFFSET))(this);
-		}
-
-		::System::Void set_ChoiceMember(::System::String* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_LISTMAP_SET_CHOICEMEMBER_OFFSET))(this, value);
-		}
-
-		::System::Xml::Serialization::XmlTypeMapElementInfoList* get_ItemInfo()
-		{
-			return ((::System::Xml::Serialization::XmlTypeMapElementInfoList*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_LISTMAP_GET_ITEMINFO_OFFSET))(this);
-		}
-
-		::System::Void set_ItemInfo(::System::Xml::Serialization::XmlTypeMapElementInfoList* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Serialization::XmlTypeMapElementInfoList*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_LISTMAP_SET_ITEMINFO_OFFSET))(this, value);
 		}
 
 		::System::Xml::Serialization::XmlTypeMapElementInfo* FindElement(::System::Object* ob, ::System::Int32 index, ::System::Object* memberValue)

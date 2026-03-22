@@ -1,0 +1,60 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace UnityEngine { class CullingGroup; }
+
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_CLEAR_OFFSET UNITYSDK_OFFSET(0x16F69570)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x16F694E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_DISPOSE_OFFSET UNITYSDK_OFFSET(0x16F69430)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_GET_NUMRESULTS_OFFSET UNITYSDK_OFFSET(0x16F69410)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_GET_RESULTINDICES_OFFSET UNITYSDK_OFFSET(0x16F69420)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_QUERYINDICES_OFFSET UNITYSDK_OFFSET(0x16F695C0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET__CTOR_OFFSET UNITYSDK_OFFSET(0x16F69660)
+
+namespace UnityEngine::Rendering::Universal::Internal
+{
+	inline static constexpr unsigned int DecalSystem_CullResult_Set_TypeDefinitionIndex = 28870;
+
+	class DecalSystem_CullResult_Set : public ::System::Object
+	{
+	public:
+		::Il2CppArray<::System::Int32>* m_ResultIndices; // 0x10
+		::System::Int32 m_NumResults; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET__CTOR_OFFSET))(this);
+		}
+
+		::System::Int32 get_numResults()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_GET_NUMRESULTS_OFFSET))(this);
+		}
+
+		::Il2CppArray<::System::Int32>* get_resultIndices()
+		{
+			return ((::Il2CppArray<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_GET_RESULTINDICES_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_DISPOSE_OFFSET))(this);
+		}
+
+		::System::Void Dispose_1(::System::Boolean disposing)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_DISPOSE_1_OFFSET))(this, disposing);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_CLEAR_OFFSET))(this);
+		}
+
+		::System::Int32 QueryIndices(::System::Int32 maxLength, ::UnityEngine::CullingGroup* cullingGroup)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::UnityEngine::CullingGroup*))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DECALSYSTEM_CULLRESULT_SET_QUERYINDICES_OFFSET))(this, maxLength, cullingGroup);
+		}
+	};
+}

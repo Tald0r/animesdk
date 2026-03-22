@@ -1,0 +1,212 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/UnityEngine/Color.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_1_9B23C5C43A8B2B79;
+class Class_2_79AE422BA06F6D26_187;
+class Class_2_9898C607BA2F1EDB;
+namespace MoleMole { class MonoGamepadNavigatableList; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralToggleWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+template <typename T> class Class_2_7AE1A22930C1CD01;
+
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_CUSTOMSORTACTION_OFFSET UNITYSDK_OFFSET(0x9DA8D70)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_GETCOLLECTEDSHOWITEMNUM_OFFSET UNITYSDK_OFFSET(0x9DA8C80)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_GET_CURFOCUSED_OFFSET UNITYSDK_OFFSET(0x9DA69A0)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_INITCARDLIST_OFFSET UNITYSDK_OFFSET(0x9DA76B0)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_INITSORT_OFFSET UNITYSDK_OFFSET(0x9DA6BC0)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_MATCHFUNCCOLLECTED_OFFSET UNITYSDK_OFFSET(0x9DA88F0)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_MATCHFUNC_OFFSET UNITYSDK_OFFSET(0x9DA8800)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9DA86F0)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONSCROLLVIEWSELECTHANDLE_OFFSET UNITYSDK_OFFSET(0x9DA9100)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x9DA8610)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONSORTORFILTERCHANGED_OFFSET UNITYSDK_OFFSET(0x9DA8790)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONTOGGLEVALUE_OFFSET UNITYSDK_OFFSET(0x9DA9360)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9DA9E60)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9DA5F70)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9DA6AE0)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_REFRESHITEMRARITY_OFFSET UNITYSDK_OFFSET(0x9DA9260)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_REFRESHPROGRESSTITLETEXT_OFFSET UNITYSDK_OFFSET(0x9DA8140)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_REFRESHSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x9DA8230)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_REFRESHVIEWONFOCUSCHANGE_OFFSET UNITYSDK_OFFSET(0x9DA6400)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x9DA6470)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_TRYCANCELSELECTONLAYOUTCHANGETOCONSOLE_OFFSET UNITYSDK_OFFSET(0x9DA8BA0)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_TRYSELECTFIRSTITEMEXCEPTCONSOLELAYOUT_OFFSET UNITYSDK_OFFSET(0x9DA8AC0)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9DA9F40)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9DAA0F0)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x9DAA160)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9DAA1D0)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9DAA250)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9DAA2B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowCardCollectWidgetController_TypeDefinitionIndex = 72091;
+
+	class UIHollowCardCollectWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* FilterCollectedText; // 0x0
+		// static const ::System::String* FilterNotCollectedText; // 0x0
+		::Class_2_79AE422BA06F6D26_187* _view; // 0x2A0
+		::Class_2_7AE1A22930C1CD01<::Class_1_0D6706375CDAAE8C*>* _sorter; // 0x2A8
+		::Class_2_9898C607BA2F1EDB* _collectModel; // 0x2B0
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* unLockItemList; // 0x2B8
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_1_9B23C5C43A8B2B79*>* badgeCollectDir; // 0x2C0
+		::System::Collections::Generic::List_1<::Class_1_9B23C5C43A8B2B79*>* showList; // 0x2C8
+		::MoleMole::UIGeneralToggleWidgetController* toggle; // 0x2D0
+		::Class_1_9B23C5C43A8B2B79* showData; // 0x2D8
+		::MoleMole::MonoGamepadNavigatableList* m_naviList; // 0x2E0
+		::System::Boolean m_everSelected; // 0x2E8
+		::UnityEngine::Color GrayTextColor; // 0x2EC
+		::UnityEngine::Color NormalTextColor; // 0x2FC
+		::System::Int32 _abyssGroupId; // 0x30C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void RefreshViewOnFocusChange(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_REFRESHVIEWONFOCUSCHANGE_OFFSET))(this, args);
+		}
+
+		::System::Boolean get_CurFocused()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_GET_CURFOCUSED_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void RefreshProgressTitleText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_REFRESHPROGRESSTITLETEXT_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void InitSort(::MoleMole::UIControllerContextBase* ctx)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_INITSORT_OFFSET))(this, ctx);
+		}
+
+		::System::Void OnSortOrFilterChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONSORTORFILTERCHANGED_OFFSET))(this);
+		}
+
+		::System::Boolean MatchFunc(::Class_1_0D6706375CDAAE8C* arg1, ::System::String* arg2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_MATCHFUNC_OFFSET))(this, arg1, arg2);
+		}
+
+		::System::Boolean MatchFuncCollected(::Class_1_0D6706375CDAAE8C* arg1, ::System::String* arg2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_MATCHFUNCCOLLECTED_OFFSET))(this, arg1, arg2);
+		}
+
+		::System::Void InitCardList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_INITCARDLIST_OFFSET))(this);
+		}
+
+		::System::Void TrySelectFirstItemExceptConsoleLayout()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_TRYSELECTFIRSTITEMEXCEPTCONSOLELAYOUT_OFFSET))(this);
+		}
+
+		::System::Void TryCancelSelectOnLayoutChangeToConsole()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_TRYCANCELSELECTONLAYOUTCHANGETOCONSOLE_OFFSET))(this);
+		}
+
+		::System::Void RefreshScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_REFRESHSCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Int32 GetCollectedShowItemNum()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_GETCOLLECTEDSHOWITEMNUM_OFFSET))(this);
+		}
+
+		::System::Int32 CustomSortAction(::Class_1_0D6706375CDAAE8C* arg1, ::Class_1_0D6706375CDAAE8C* arg2)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_CUSTOMSORTACTION_OFFSET))(this, arg1, arg2);
+		}
+
+		::System::Void OnScrollViewSelectHandle(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONSCROLLVIEWSELECTHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshItemRarity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_REFRESHITEMRARITY_OFFSET))(this);
+		}
+
+		::System::Void OnToggleValue(::System::Boolean isupgrade, ::System::Boolean arg2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONTOGGLEVALUE_OFFSET))(this, isupgrade, arg2);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

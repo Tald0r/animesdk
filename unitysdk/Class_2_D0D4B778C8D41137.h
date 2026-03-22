@@ -1,0 +1,36 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Collections/Generic/Queue_1.h"
+
+class Class_1_3E7133801FE52D88;
+
+#define CLASS_2_D0D4B778C8D41137_METHOD_2_6DFEF4918C679AF0_OFFSET UNITYSDK_OFFSET(0xB523DC0)
+#define CLASS_2_D0D4B778C8D41137_METHOD_2_AF3DE7EEF4AB88EF_OFFSET UNITYSDK_OFFSET(0xB523EF0)
+#define CLASS_2_D0D4B778C8D41137_METHOD_2_E681B6D41E5607D0_OFFSET UNITYSDK_OFFSET(0xB523FF0)
+#define CLASS_2_D0D4B778C8D41137__CTOR_OFFSET UNITYSDK_OFFSET(0xB523D20)
+
+inline static constexpr unsigned int Class_2_D0D4B778C8D41137_TypeDefinitionIndex = 46509;
+
+class Class_2_D0D4B778C8D41137 : public ::System::Collections::Generic::Queue_1<::Class_1_3E7133801FE52D88*>
+{
+public:
+	::System::Void _ctor(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_D0D4B778C8D41137__CTOR_OFFSET))(this, a1);
+	}
+
+	::System::Int32 Method_2_AF3DE7EEF4AB88EF()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D0D4B778C8D41137_METHOD_2_AF3DE7EEF4AB88EF_OFFSET))(this);
+	}
+
+	::System::Void Method_2_6DFEF4918C679AF0(::Class_1_3E7133801FE52D88* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_3E7133801FE52D88*))((::PBYTE)hIl2Cpp + CLASS_2_D0D4B778C8D41137_METHOD_2_6DFEF4918C679AF0_OFFSET))(this, a1);
+	}
+
+	::Class_1_3E7133801FE52D88* Method_2_E681B6D41E5607D0()
+	{
+		return ((::Class_1_3E7133801FE52D88*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D0D4B778C8D41137_METHOD_2_E681B6D41E5607D0_OFFSET))(this);
+	}
+};

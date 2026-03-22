@@ -1,0 +1,1093 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Config/MaterialPropertyType.h"
+#include "unitysdk/MoleMole/EffectSimulate/ESAvatarMatChange.h"
+
+namespace MoleMole { class ConfigAnimationCurveGroup; }
+namespace MoleMole { class ConfigMaterialPropertyModifier; }
+namespace MoleMole::EffectSimulate { class Color01KeyframeCurve; }
+namespace MoleMole::EffectSimulate { class Float01KeyframeCurve; }
+namespace MoleMole::EffectSimulate { class UV01KeyframeCurve; }
+namespace MoleMole::EffectSimulate { class Vector401KeyframeCurve; }
+namespace System { class String; }
+namespace System { class Type; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class MaterialPropertyBlock; }
+namespace UnityEngine { class Renderer; }
+namespace UnityEngine { class Texture; }
+
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_1AAA42B779F9EAD8_OFFSET UNITYSDK_OFFSET(0x139B60B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_37461498E137EA3C_OFFSET UNITYSDK_OFFSET(0x139B3EB0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0x139B3C40)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_391A84BCD9F51317_2_OFFSET UNITYSDK_OFFSET(0x139BD980)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_391A84BCD9F51317_3_OFFSET UNITYSDK_OFFSET(0x139C0250)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0x139B3B50)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_3E4DAEC21EB746AE_OFFSET UNITYSDK_OFFSET(0x139B3D30)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_430A8A499F660301_OFFSET UNITYSDK_OFFSET(0x139B2780)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x139B8B60)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_4FB5F56430673EA6_OFFSET UNITYSDK_OFFSET(0x139B3DD0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_581A5078A2F29034_OFFSET UNITYSDK_OFFSET(0x139BC740)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_681E224EC188A7D5_OFFSET UNITYSDK_OFFSET(0x139BE330)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_6F54E34F52AB60F6_OFFSET UNITYSDK_OFFSET(0x139B2590)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_10_OFFSET UNITYSDK_OFFSET(0x139BC0B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_11_OFFSET UNITYSDK_OFFSET(0x139BC140)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_12_OFFSET UNITYSDK_OFFSET(0x139BC1D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_13_OFFSET UNITYSDK_OFFSET(0x139BC260)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_14_OFFSET UNITYSDK_OFFSET(0x139BC350)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_15_OFFSET UNITYSDK_OFFSET(0x139BC3E0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_16_OFFSET UNITYSDK_OFFSET(0x139BC470)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_17_OFFSET UNITYSDK_OFFSET(0x139BC500)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_18_OFFSET UNITYSDK_OFFSET(0x139BC590)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_19_OFFSET UNITYSDK_OFFSET(0x139BC620)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_1_OFFSET UNITYSDK_OFFSET(0x139B3BB0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_20_OFFSET UNITYSDK_OFFSET(0x139BC6B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_21_OFFSET UNITYSDK_OFFSET(0x139BC750)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_22_OFFSET UNITYSDK_OFFSET(0x139BC7E0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_23_OFFSET UNITYSDK_OFFSET(0x139BC870)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_24_OFFSET UNITYSDK_OFFSET(0x139BC900)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_25_OFFSET UNITYSDK_OFFSET(0x139BC990)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_26_OFFSET UNITYSDK_OFFSET(0x139BCA20)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_27_OFFSET UNITYSDK_OFFSET(0x139BCAB0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_28_OFFSET UNITYSDK_OFFSET(0x139BCB40)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_29_OFFSET UNITYSDK_OFFSET(0x139BCC40)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_2_OFFSET UNITYSDK_OFFSET(0x139B3CA0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_30_OFFSET UNITYSDK_OFFSET(0x139BCCD0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_31_OFFSET UNITYSDK_OFFSET(0x139BCD60)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_32_OFFSET UNITYSDK_OFFSET(0x139BCE50)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_33_OFFSET UNITYSDK_OFFSET(0x139BCEE0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_34_OFFSET UNITYSDK_OFFSET(0x139BCF70)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_35_OFFSET UNITYSDK_OFFSET(0x139BD000)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_36_OFFSET UNITYSDK_OFFSET(0x139BD0F0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_37_OFFSET UNITYSDK_OFFSET(0x139BD180)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_38_OFFSET UNITYSDK_OFFSET(0x139BD280)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_39_OFFSET UNITYSDK_OFFSET(0x139BD310)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_3_OFFSET UNITYSDK_OFFSET(0x139BBCC0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_40_OFFSET UNITYSDK_OFFSET(0x139BD3A0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_41_OFFSET UNITYSDK_OFFSET(0x139BD4A0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_42_OFFSET UNITYSDK_OFFSET(0x139BD530)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_43_OFFSET UNITYSDK_OFFSET(0x139BD5C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_44_OFFSET UNITYSDK_OFFSET(0x139BD650)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_45_OFFSET UNITYSDK_OFFSET(0x139BD6E0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_46_OFFSET UNITYSDK_OFFSET(0x139BD770)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_47_OFFSET UNITYSDK_OFFSET(0x139BD800)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_48_OFFSET UNITYSDK_OFFSET(0x139BD890)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_49_OFFSET UNITYSDK_OFFSET(0x139BD9E0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_4_OFFSET UNITYSDK_OFFSET(0x139BBD50)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_50_OFFSET UNITYSDK_OFFSET(0x139BDAE0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_51_OFFSET UNITYSDK_OFFSET(0x139BDB70)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_52_OFFSET UNITYSDK_OFFSET(0x139BDC00)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_53_OFFSET UNITYSDK_OFFSET(0x139BDC90)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_54_OFFSET UNITYSDK_OFFSET(0x139BDD90)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_55_OFFSET UNITYSDK_OFFSET(0x139BDE20)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_56_OFFSET UNITYSDK_OFFSET(0x139BDEB0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_57_OFFSET UNITYSDK_OFFSET(0x139BDF40)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_58_OFFSET UNITYSDK_OFFSET(0x139BDFD0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_59_OFFSET UNITYSDK_OFFSET(0x139BE060)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_5_OFFSET UNITYSDK_OFFSET(0x139BBDE0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_60_OFFSET UNITYSDK_OFFSET(0x139BE0F0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_61_OFFSET UNITYSDK_OFFSET(0x139BE180)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_62_OFFSET UNITYSDK_OFFSET(0x139BE210)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_63_OFFSET UNITYSDK_OFFSET(0x139BE2A0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_64_OFFSET UNITYSDK_OFFSET(0x139BE420)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_65_OFFSET UNITYSDK_OFFSET(0x139BE520)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_66_OFFSET UNITYSDK_OFFSET(0x139BE5B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_67_OFFSET UNITYSDK_OFFSET(0x139BE640)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_68_OFFSET UNITYSDK_OFFSET(0x139BE6D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_69_OFFSET UNITYSDK_OFFSET(0x139BFA90)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_6_OFFSET UNITYSDK_OFFSET(0x139BBE70)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_70_OFFSET UNITYSDK_OFFSET(0x139BFB20)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_71_OFFSET UNITYSDK_OFFSET(0x139BFBB0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_72_OFFSET UNITYSDK_OFFSET(0x139BFC40)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_73_OFFSET UNITYSDK_OFFSET(0x139BFCD0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_74_OFFSET UNITYSDK_OFFSET(0x139BFD60)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_75_OFFSET UNITYSDK_OFFSET(0x139BFDF0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_76_OFFSET UNITYSDK_OFFSET(0x139BFEF0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_77_OFFSET UNITYSDK_OFFSET(0x139BFF80)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_78_OFFSET UNITYSDK_OFFSET(0x139C0010)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_79_OFFSET UNITYSDK_OFFSET(0x139C00A0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_7_OFFSET UNITYSDK_OFFSET(0x139BBF00)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_80_OFFSET UNITYSDK_OFFSET(0x139C0130)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_81_OFFSET UNITYSDK_OFFSET(0x139C01C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_82_OFFSET UNITYSDK_OFFSET(0x139C0390)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_83_OFFSET UNITYSDK_OFFSET(0x139C0430)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_84_OFFSET UNITYSDK_OFFSET(0x139C04C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_85_OFFSET UNITYSDK_OFFSET(0x139C0550)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_86_OFFSET UNITYSDK_OFFSET(0x139C05E0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_87_OFFSET UNITYSDK_OFFSET(0x139C06E0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_88_OFFSET UNITYSDK_OFFSET(0x139C0770)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_8_OFFSET UNITYSDK_OFFSET(0x139BBF90)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_9_OFFSET UNITYSDK_OFFSET(0x139BC020)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0x139B3AC0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_8D6879CAA76F6588_OFFSET UNITYSDK_OFFSET(0x139B7F70)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_9441529D4B4B549D_OFFSET UNITYSDK_OFFSET(0x139BE4B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_9F8EF6EE79B16064_OFFSET UNITYSDK_OFFSET(0x139BBBC0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x139BCDF0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x139BC2F0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_10_OFFSET UNITYSDK_OFFSET(0x139C02B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_11_OFFSET UNITYSDK_OFFSET(0x139C0320)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_12_OFFSET UNITYSDK_OFFSET(0x139C0670)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_1_OFFSET UNITYSDK_OFFSET(0x139BBC50)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_2_OFFSET UNITYSDK_OFFSET(0x139BCBD0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_3_OFFSET UNITYSDK_OFFSET(0x139BD210)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_4_OFFSET UNITYSDK_OFFSET(0x139BD430)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_5_OFFSET UNITYSDK_OFFSET(0x139BD920)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_6_OFFSET UNITYSDK_OFFSET(0x139BDA70)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_7_OFFSET UNITYSDK_OFFSET(0x139BDD20)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_8_OFFSET UNITYSDK_OFFSET(0x139BE3B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_9_OFFSET UNITYSDK_OFFSET(0x139BFE80)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_OFFSET UNITYSDK_OFFSET(0x139BBB50)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_EB15466536C39910_OFFSET UNITYSDK_OFFSET(0x139BE7E0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_EEA73B6010018ADD_1_OFFSET UNITYSDK_OFFSET(0x139BD090)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_EEA73B6010018ADD_OFFSET UNITYSDK_OFFSET(0x139B3E50)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_F91B8892FC7A8C48_OFFSET UNITYSDK_OFFSET(0x139BE760)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_FCAE2431182375FA_OFFSET UNITYSDK_OFFSET(0x139C0420)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS__CTOR_OFFSET UNITYSDK_OFFSET(0x139B8C00)
+
+namespace MoleMole::EffectSimulate
+{
+	inline static constexpr unsigned int ESAvatarMainMaps_TypeDefinitionIndex = 59064;
+
+	class ESAvatarMainMaps : public ::MoleMole::EffectSimulate::ESAvatarMatChange
+	{
+	public:
+		// static const ::System::String* _COLOR_PROP_NAME; // 0x0
+		// static const ::System::String* _MAINTEX_PROP_NAME; // 0x0
+		// static const ::System::String* _MAINTEX_ST_PROP_NAME; // 0x0
+		// static const ::System::String* _LIGHTTEX_PROP_NAME; // 0x0
+		// static const ::System::String* _LIGHTTEX_ST_PROP_NAME; // 0x0
+		// static const ::System::String* _OTHERDATATEX_PROP_NAME; // 0x0
+		// static const ::System::String* _OTHERDATATEX_ST_PROP_NAME; // 0x0
+		// static const ::System::String* _OTHERDATATEX2_PROP_NAME; // 0x0
+		// static const ::System::String* _OTHERDATATEX2_ST_PROP_NAME; // 0x0
+		// static const ::System::String* _MATERIALNUM_PROP_NAME; // 0x0
+		// static const ::System::String* _SKINMATID_PROP_NAME; // 0x0
+		// static const ::System::String* _SHALLOWCOLOR_PROP_NAME; // 0x0
+		// static const ::System::String* _SHALLOWCOLOR2_PROP_NAME; // 0x0
+		// static const ::System::String* _SHALLOWCOLOR3_PROP_NAME; // 0x0
+		// static const ::System::String* _SHALLOWCOLOR4_PROP_NAME; // 0x0
+		// static const ::System::String* _SHALLOWCOLOR5_PROP_NAME; // 0x0
+		// static const ::System::String* _SHADOWCOLOR_PROP_NAME; // 0x0
+		// static const ::System::String* _SHADOWCOLOR2_PROP_NAME; // 0x0
+		// static const ::System::String* _SHADOWCOLOR3_PROP_NAME; // 0x0
+		// static const ::System::String* _SHADOWCOLOR4_PROP_NAME; // 0x0
+		// static const ::System::String* _SHADOWCOLOR5_PROP_NAME; // 0x0
+		// static const ::System::String* _EYECOLORMAP_PROP_NAME; // 0x0
+		// static const ::System::String* _EYECOLORMAP_ST_PROP_NAME; // 0x0
+		// static const ::System::String* _THREADMAP_PROP_NAME; // 0x0
+		// static const ::System::String* _THREADMAP_ST_PROP_NAME; // 0x0
+		// static const ::System::String* _CHANNELMIXTEX_PROP_NAME; // 0x0
+		// static const ::System::String* _CHANNELMIXTEX_ST_PROP_NAME; // 0x0
+		// static const ::System::String* _SPECULARCOLOR_PROP_NAME; // 0x0
+		// static const ::System::String* _SPECULARCOLOR2_PROP_NAME; // 0x0
+		// static const ::System::String* _SPECULARCOLOR3_PROP_NAME; // 0x0
+		// static const ::System::String* _SPECULARCOLOR4_PROP_NAME; // 0x0
+		// static const ::System::String* _SPECULARCOLOR5_PROP_NAME; // 0x0
+		// static const ::System::String* _RIMGLOWLIGHTCOLOR_PROP_NAME; // 0x0
+		// static const ::System::String* _RIMGLOWLIGHTCOLOR2_PROP_NAME; // 0x0
+		// static const ::System::String* _RIMGLOWLIGHTCOLOR3_PROP_NAME; // 0x0
+		// static const ::System::String* _RIMGLOWLIGHTCOLOR4_PROP_NAME; // 0x0
+		// static const ::System::String* _RIMGLOWLIGHTCOLOR5_PROP_NAME; // 0x0
+		// static const ::System::String* _EMISSIONCOLOR_PROP_NAME; // 0x0
+		// static const ::System::String* _EMISSIONCOLOR2_PROP_NAME; // 0x0
+		// static const ::System::String* _EMISSIONCOLOR3_PROP_NAME; // 0x0
+		// static const ::System::String* _EMISSIONCOLOR4_PROP_NAME; // 0x0
+		// static const ::System::String* _EMISSIONCOLOR5_PROP_NAME; // 0x0
+		// static const ::System::String* _OUTLINECOLOR_PROP_NAME; // 0x0
+		// static const ::System::String* _OUTLINECOLOR2_PROP_NAME; // 0x0
+		// static const ::System::String* _OUTLINECOLOR3_PROP_NAME; // 0x0
+		// static const ::System::String* _OUTLINECOLOR4_PROP_NAME; // 0x0
+		// static const ::System::String* _OUTLINECOLOR5_PROP_NAME; // 0x0
+		// static const ::System::String* _SILKFRESNELCOLORFRONT_PROP_NAME; // 0x0
+		// static const ::System::String* _SILKFRESNELCOLOREDGE_PROP_NAME; // 0x0
+		// static const ::System::String* _RCHANNELCOLORPRECOMPUTED_PROP_NAME; // 0x0
+		// static const ::System::String* _GCHANNELCOLORPRECOMPUTED_PROP_NAME; // 0x0
+		// static const ::System::String* _BCHANNELCOLORPRECOMPUTED_PROP_NAME; // 0x0
+		// static const ::System::String* _ACHANNELCOLORPRECOMPUTED_PROP_NAME; // 0x0
+		// static const ::System::String* _SILKPACKEDPARAMS0_PROP_NAME; // 0x0
+		// static const ::System::String* _RENDERTYPE_PROP_NAME; // 0x0
+		// static const ::System::String* _USEOVERLAYTEX_PROP_NAME; // 0x0
+		// static const ::System::String* _OVERLAYTEXSCALE_PROP_NAME; // 0x0
+		// static const ::System::String* _BUMPSCALE_PROP_NAME; // 0x0
+		// static const ::System::String* _GLOSSINESS_PROP_NAME; // 0x0
+		// static const ::System::String* _METALLIC_PROP_NAME; // 0x0
+		// static const ::System::String* _ANISOTROPY_PROP_NAME; // 0x0
+		// static const ::System::String* _MODELSIZE_PROP_NAME; // 0x0
+		// static const ::System::String* _MODELSIZE2_PROP_NAME; // 0x0
+		// static const ::System::String* _MODELSIZE3_PROP_NAME; // 0x0
+		// static const ::System::String* _MODELSIZE4_PROP_NAME; // 0x0
+		// static const ::System::String* _MODELSIZE5_PROP_NAME; // 0x0
+		// static const ::System::String* _ALBEDOSMOOTHNESS_PROP_NAME; // 0x0
+		// static const ::System::String* _ALBEDOSMOOTHNESS2_PROP_NAME; // 0x0
+		// static const ::System::String* _ALBEDOSMOOTHNESS3_PROP_NAME; // 0x0
+		// static const ::System::String* _ALBEDOSMOOTHNESS4_PROP_NAME; // 0x0
+		// static const ::System::String* _ALBEDOSMOOTHNESS5_PROP_NAME; // 0x0
+		// static const ::System::String* _HIGHLIGHTSHAPE_PROP_NAME; // 0x0
+		// static const ::System::String* _HIGHLIGHTSHAPE2_PROP_NAME; // 0x0
+		// static const ::System::String* _HIGHLIGHTSHAPE3_PROP_NAME; // 0x0
+		// static const ::System::String* _HIGHLIGHTSHAPE4_PROP_NAME; // 0x0
+		// static const ::System::String* _HIGHLIGHTSHAPE5_PROP_NAME; // 0x0
+		// static const ::System::String* _TOONSPECULAR_PROP_NAME; // 0x0
+		// static const ::System::String* _TOONSPECULAR2_PROP_NAME; // 0x0
+		// static const ::System::String* _TOONSPECULAR3_PROP_NAME; // 0x0
+		// static const ::System::String* _TOONSPECULAR4_PROP_NAME; // 0x0
+		// static const ::System::String* _TOONSPECULAR5_PROP_NAME; // 0x0
+		// static const ::System::String* _SPECULARRANGE_PROP_NAME; // 0x0
+		// static const ::System::String* _SPECULARRANGE2_PROP_NAME; // 0x0
+		// static const ::System::String* _SPECULARRANGE3_PROP_NAME; // 0x0
+		// static const ::System::String* _SPECULARRANGE4_PROP_NAME; // 0x0
+		// static const ::System::String* _SPECULARRANGE5_PROP_NAME; // 0x0
+		// static const ::System::String* _SHAPESOFTNESS_PROP_NAME; // 0x0
+		// static const ::System::String* _SHAPESOFTNESS2_PROP_NAME; // 0x0
+		// static const ::System::String* _SHAPESOFTNESS3_PROP_NAME; // 0x0
+		// static const ::System::String* _SHAPESOFTNESS4_PROP_NAME; // 0x0
+		// static const ::System::String* _SHAPESOFTNESS5_PROP_NAME; // 0x0
+		// static const ::System::String* _SPECINTENSITY_PROP_NAME; // 0x0
+		// static const ::System::String* _EMISSION_PROP_NAME; // 0x0
+		// static const ::System::String* _OUTLINEWIDTH_PROP_NAME; // 0x0
+		// static const ::System::String* _MAXOUTLINEZOFFSET_PROP_NAME; // 0x0
+		// static const ::System::String* _PEROBJECTSHADOWINTENSITY_PROP_NAME; // 0x0
+		// static const ::System::String* _PEROBJECTSHADOWINTENSITY2_PROP_NAME; // 0x0
+		// static const ::System::String* _PEROBJECTSHADOWINTENSITY3_PROP_NAME; // 0x0
+		// static const ::System::String* _PEROBJECTSHADOWINTENSITY4_PROP_NAME; // 0x0
+		// static const ::System::String* _PEROBJECTSHADOWINTENSITY5_PROP_NAME; // 0x0
+		// static const ::System::String* _USECHANNELMIXER_PROP_NAME; // 0x0
+		// static const ::System::String* _CHANNELMIXERUSINGUV4_PROP_NAME; // 0x0
+		// static const ::System::String* _CULL_PROP_NAME; // 0x0
+		// static const ::System::String* _DOUBLESIDED_PROP_NAME; // 0x0
+		// static const ::System::String* _SYMMETRYUV_PROP_NAME; // 0x0
+		::System::Boolean use_Color; // 0xB8
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_Color; // 0xC0
+		::System::Boolean use_MainTex; // 0xC8
+		::UnityEngine::Texture* AMC_MainTex; // 0xD0
+		::MoleMole::EffectSimulate::UV01KeyframeCurve* AMC_MainTex_ST; // 0xD8
+		::System::Boolean use_LightTex; // 0xE0
+		::UnityEngine::Texture* AMC_LightTex; // 0xE8
+		::MoleMole::EffectSimulate::UV01KeyframeCurve* AMC_LightTex_ST; // 0xF0
+		::System::Boolean use_OtherDataTex; // 0xF8
+		::UnityEngine::Texture* AMC_OtherDataTex; // 0x100
+		::MoleMole::EffectSimulate::UV01KeyframeCurve* AMC_OtherDataTex_ST; // 0x108
+		::System::Boolean use_OtherDataTex2; // 0x110
+		::UnityEngine::Texture* AMC_OtherDataTex2; // 0x118
+		::MoleMole::EffectSimulate::UV01KeyframeCurve* AMC_OtherDataTex2_ST; // 0x120
+		::System::Boolean use_MaterialNum; // 0x128
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_MaterialNum; // 0x130
+		::System::Boolean use_SkinMatId; // 0x138
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_SkinMatId; // 0x140
+		::System::Boolean use_ShallowColor; // 0x148
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_ShallowColor; // 0x150
+		::System::Boolean use_ShallowColor2; // 0x158
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_ShallowColor2; // 0x160
+		::System::Boolean use_ShallowColor3; // 0x168
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_ShallowColor3; // 0x170
+		::System::Boolean use_ShallowColor4; // 0x178
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_ShallowColor4; // 0x180
+		::System::Boolean use_ShallowColor5; // 0x188
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_ShallowColor5; // 0x190
+		::System::Boolean use_ShadowColor; // 0x198
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_ShadowColor; // 0x1A0
+		::System::Boolean use_ShadowColor2; // 0x1A8
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_ShadowColor2; // 0x1B0
+		::System::Boolean use_ShadowColor3; // 0x1B8
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_ShadowColor3; // 0x1C0
+		::System::Boolean use_ShadowColor4; // 0x1C8
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_ShadowColor4; // 0x1D0
+		::System::Boolean use_ShadowColor5; // 0x1D8
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_ShadowColor5; // 0x1E0
+		::System::Boolean use_EyeColorMap; // 0x1E8
+		::UnityEngine::Texture* AMC_EyeColorMap; // 0x1F0
+		::MoleMole::EffectSimulate::UV01KeyframeCurve* AMC_EyeColorMap_ST; // 0x1F8
+		::System::Boolean use_ThreadMap; // 0x200
+		::UnityEngine::Texture* AMC_ThreadMap; // 0x208
+		::MoleMole::EffectSimulate::UV01KeyframeCurve* AMC_ThreadMap_ST; // 0x210
+		::System::Boolean use_ChannelMixTex; // 0x218
+		::UnityEngine::Texture* AMC_ChannelMixTex; // 0x220
+		::MoleMole::EffectSimulate::UV01KeyframeCurve* AMC_ChannelMixTex_ST; // 0x228
+		::System::Boolean use_SpecularColor; // 0x230
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_SpecularColor; // 0x238
+		::System::Boolean use_SpecularColor2; // 0x240
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_SpecularColor2; // 0x248
+		::System::Boolean use_SpecularColor3; // 0x250
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_SpecularColor3; // 0x258
+		::System::Boolean use_SpecularColor4; // 0x260
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_SpecularColor4; // 0x268
+		::System::Boolean use_SpecularColor5; // 0x270
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_SpecularColor5; // 0x278
+		::System::Boolean use_RimGlowLightColor; // 0x280
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_RimGlowLightColor; // 0x288
+		::System::Boolean use_RimGlowLightColor2; // 0x290
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_RimGlowLightColor2; // 0x298
+		::System::Boolean use_RimGlowLightColor3; // 0x2A0
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_RimGlowLightColor3; // 0x2A8
+		::System::Boolean use_RimGlowLightColor4; // 0x2B0
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_RimGlowLightColor4; // 0x2B8
+		::System::Boolean use_RimGlowLightColor5; // 0x2C0
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_RimGlowLightColor5; // 0x2C8
+		::System::Boolean use_EmissionColor; // 0x2D0
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_EmissionColor; // 0x2D8
+		::System::Boolean use_EmissionColor2; // 0x2E0
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_EmissionColor2; // 0x2E8
+		::System::Boolean use_EmissionColor3; // 0x2F0
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_EmissionColor3; // 0x2F8
+		::System::Boolean use_EmissionColor4; // 0x300
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_EmissionColor4; // 0x308
+		::System::Boolean use_EmissionColor5; // 0x310
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_EmissionColor5; // 0x318
+		::System::Boolean use_OutlineColor; // 0x320
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_OutlineColor; // 0x328
+		::System::Boolean use_OutlineColor2; // 0x330
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_OutlineColor2; // 0x338
+		::System::Boolean use_OutlineColor3; // 0x340
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_OutlineColor3; // 0x348
+		::System::Boolean use_OutlineColor4; // 0x350
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_OutlineColor4; // 0x358
+		::System::Boolean use_OutlineColor5; // 0x360
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_OutlineColor5; // 0x368
+		::System::Boolean use_SilkFresnelColorFront; // 0x370
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_SilkFresnelColorFront; // 0x378
+		::System::Boolean use_SilkFresnelColorEdge; // 0x380
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_SilkFresnelColorEdge; // 0x388
+		::System::Boolean use_RChannelColorPrecomputed; // 0x390
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_RChannelColorPrecomputed; // 0x398
+		::System::Boolean use_GChannelColorPrecomputed; // 0x3A0
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_GChannelColorPrecomputed; // 0x3A8
+		::System::Boolean use_BChannelColorPrecomputed; // 0x3B0
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_BChannelColorPrecomputed; // 0x3B8
+		::System::Boolean use_AChannelColorPrecomputed; // 0x3C0
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_AChannelColorPrecomputed; // 0x3C8
+		::System::Boolean use_SilkPackedParams0; // 0x3D0
+		::MoleMole::EffectSimulate::Vector401KeyframeCurve* AMC_SilkPackedParams0; // 0x3D8
+		::System::Boolean use_RenderType; // 0x3E0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_RenderType; // 0x3E8
+		::System::Boolean use_UseOverlayTex; // 0x3F0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_UseOverlayTex; // 0x3F8
+		::System::Boolean use_OverlayTexScale; // 0x400
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_OverlayTexScale; // 0x408
+		::System::Boolean use_BumpScale; // 0x410
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_BumpScale; // 0x418
+		::System::Boolean use_Glossiness; // 0x420
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_Glossiness; // 0x428
+		::System::Boolean use_Metallic; // 0x430
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_Metallic; // 0x438
+		::System::Boolean use_Anisotropy; // 0x440
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_Anisotropy; // 0x448
+		::System::Boolean use_ModelSize; // 0x450
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ModelSize; // 0x458
+		::System::Boolean use_ModelSize2; // 0x460
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ModelSize2; // 0x468
+		::System::Boolean use_ModelSize3; // 0x470
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ModelSize3; // 0x478
+		::System::Boolean use_ModelSize4; // 0x480
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ModelSize4; // 0x488
+		::System::Boolean use_ModelSize5; // 0x490
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ModelSize5; // 0x498
+		::System::Boolean use_AlbedoSmoothness; // 0x4A0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_AlbedoSmoothness; // 0x4A8
+		::System::Boolean use_AlbedoSmoothness2; // 0x4B0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_AlbedoSmoothness2; // 0x4B8
+		::System::Boolean use_AlbedoSmoothness3; // 0x4C0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_AlbedoSmoothness3; // 0x4C8
+		::System::Boolean use_AlbedoSmoothness4; // 0x4D0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_AlbedoSmoothness4; // 0x4D8
+		::System::Boolean use_AlbedoSmoothness5; // 0x4E0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_AlbedoSmoothness5; // 0x4E8
+		::System::Boolean use_HighlightShape; // 0x4F0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_HighlightShape; // 0x4F8
+		::System::Boolean use_HighlightShape2; // 0x500
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_HighlightShape2; // 0x508
+		::System::Boolean use_HighlightShape3; // 0x510
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_HighlightShape3; // 0x518
+		::System::Boolean use_HighlightShape4; // 0x520
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_HighlightShape4; // 0x528
+		::System::Boolean use_HighlightShape5; // 0x530
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_HighlightShape5; // 0x538
+		::System::Boolean use_ToonSpecular; // 0x540
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ToonSpecular; // 0x548
+		::System::Boolean use_ToonSpecular2; // 0x550
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ToonSpecular2; // 0x558
+		::System::Boolean use_ToonSpecular3; // 0x560
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ToonSpecular3; // 0x568
+		::System::Boolean use_ToonSpecular4; // 0x570
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ToonSpecular4; // 0x578
+		::System::Boolean use_ToonSpecular5; // 0x580
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ToonSpecular5; // 0x588
+		::System::Boolean use_SpecularRange; // 0x590
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_SpecularRange; // 0x598
+		::System::Boolean use_SpecularRange2; // 0x5A0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_SpecularRange2; // 0x5A8
+		::System::Boolean use_SpecularRange3; // 0x5B0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_SpecularRange3; // 0x5B8
+		::System::Boolean use_SpecularRange4; // 0x5C0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_SpecularRange4; // 0x5C8
+		::System::Boolean use_SpecularRange5; // 0x5D0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_SpecularRange5; // 0x5D8
+		::System::Boolean use_ShapeSoftness; // 0x5E0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ShapeSoftness; // 0x5E8
+		::System::Boolean use_ShapeSoftness2; // 0x5F0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ShapeSoftness2; // 0x5F8
+		::System::Boolean use_ShapeSoftness3; // 0x600
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ShapeSoftness3; // 0x608
+		::System::Boolean use_ShapeSoftness4; // 0x610
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ShapeSoftness4; // 0x618
+		::System::Boolean use_ShapeSoftness5; // 0x620
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ShapeSoftness5; // 0x628
+		::System::Boolean use_SpecIntensity; // 0x630
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_SpecIntensity; // 0x638
+		::System::Boolean use_Emission; // 0x640
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_Emission; // 0x648
+		::System::Boolean use_OutlineWidth; // 0x650
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_OutlineWidth; // 0x658
+		::System::Boolean use_MaxOutlineZOffset; // 0x660
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_MaxOutlineZOffset; // 0x668
+		::System::Boolean use_PerObjectShadowIntensity; // 0x670
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_PerObjectShadowIntensity; // 0x678
+		::System::Boolean use_PerObjectShadowIntensity2; // 0x680
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_PerObjectShadowIntensity2; // 0x688
+		::System::Boolean use_PerObjectShadowIntensity3; // 0x690
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_PerObjectShadowIntensity3; // 0x698
+		::System::Boolean use_PerObjectShadowIntensity4; // 0x6A0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_PerObjectShadowIntensity4; // 0x6A8
+		::System::Boolean use_PerObjectShadowIntensity5; // 0x6B0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_PerObjectShadowIntensity5; // 0x6B8
+		::System::Boolean use_UseChannelMixer; // 0x6C0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_UseChannelMixer; // 0x6C8
+		::System::Boolean use_ChannelMixerUsingUV4; // 0x6D0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_ChannelMixerUsingUV4; // 0x6D8
+		::System::Boolean use_Cull; // 0x6E0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_Cull; // 0x6E8
+		::System::Boolean use_DoubleSided; // 0x6F0
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_DoubleSided; // 0x6F8
+		::System::Boolean use_SymmetryUV; // 0x700
+		::MoleMole::EffectSimulate::Float01KeyframeCurve* AMC_SymmetryUV; // 0x708
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Method_4_6F54E34F52AB60F6(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_6F54E34F52AB60F6_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_4_430A8A499F660301(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_430A8A499F660301_OFFSET))(this, a1);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_OFFSET))(this);
+		}
+
+		::System::Boolean Method_4_391A84BCD9F51317()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_391A84BCD9F51317_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_1_OFFSET))(this);
+		}
+
+		::System::Boolean Method_4_391A84BCD9F51317_1()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_391A84BCD9F51317_1_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_2()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_2_OFFSET))(this);
+		}
+
+		::MoleMole::ConfigMaterialPropertyModifier* Method_4_3E4DAEC21EB746AE()
+		{
+			return ((::MoleMole::ConfigMaterialPropertyModifier*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_3E4DAEC21EB746AE_OFFSET))(this);
+		}
+
+		::System::Type* Method_4_4FB5F56430673EA6()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_4FB5F56430673EA6_OFFSET))(this);
+		}
+
+		::MoleMole::Config::MaterialPropertyType Method_4_EEA73B6010018ADD()
+		{
+			return ((::MoleMole::Config::MaterialPropertyType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_EEA73B6010018ADD_OFFSET))(this);
+		}
+
+		::System::Void Method_4_37461498E137EA3C(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2, ::System::Single a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_37461498E137EA3C_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Void Method_4_1AAA42B779F9EAD8(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_1AAA42B779F9EAD8_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_4_8D6879CAA76F6588()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_8D6879CAA76F6588_OFFSET))(this);
+		}
+
+		::System::Void Method_4_4343F372F34C05BF()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_4343F372F34C05BF_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_OFFSET))(this);
+		}
+
+		::System::Void Method_4_9F8EF6EE79B16064(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_9F8EF6EE79B16064_OFFSET))(this, a1);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_1_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_3()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_3_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_4()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_4_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_5()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_5_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_6()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_6_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_7()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_7_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_8()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_8_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_9()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_9_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_10()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_10_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_11()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_11_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_12()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_12_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_13()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_13_OFFSET))(this);
+		}
+
+		::System::Void Method_4_CA373AA1C7054598()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_CA373AA1C7054598_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_14()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_14_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_15()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_15_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_16()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_16_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_17()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_17_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_18()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_18_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_19()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_19_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_20()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_20_OFFSET))(this);
+		}
+
+		::System::String* Method_4_581A5078A2F29034()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_581A5078A2F29034_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_21()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_21_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_22()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_22_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_23()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_23_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_24()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_24_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_25()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_25_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_26()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_26_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_27()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_27_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_28()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_28_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_2()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_2_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_29()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_29_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_30()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_30_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_31()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_31_OFFSET))(this);
+		}
+
+		::System::Void Method_4_CA373AA1C7054598_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_CA373AA1C7054598_1_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_32()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_32_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_33()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_33_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_34()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_34_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_35()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_35_OFFSET))(this);
+		}
+
+		::MoleMole::Config::MaterialPropertyType Method_4_EEA73B6010018ADD_1()
+		{
+			return ((::MoleMole::Config::MaterialPropertyType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_EEA73B6010018ADD_1_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_36()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_36_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_37()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_37_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_3()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_3_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_38()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_38_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_39()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_39_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_40()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_40_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_4()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_4_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_41()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_41_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_42()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_42_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_43()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_43_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_44()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_44_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_45()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_45_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_46()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_46_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_47()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_47_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_48()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_48_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_5()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_5_OFFSET))(this);
+		}
+
+		::System::Boolean Method_4_391A84BCD9F51317_2()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_391A84BCD9F51317_2_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_49()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_49_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_6()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_6_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_50()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_50_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_51()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_51_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_52()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_52_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_53()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_53_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_7()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_7_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_54()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_54_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_55()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_55_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_56()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_56_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_57()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_57_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_58()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_58_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_59()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_59_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_60()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_60_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_61()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_61_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_62()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_62_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_63()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_63_OFFSET))(this);
+		}
+
+		::System::Type* Method_4_681E224EC188A7D5()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_681E224EC188A7D5_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_8()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_8_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_64()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_64_OFFSET))(this);
+		}
+
+		::System::Void Method_4_9441529D4B4B549D(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_9441529D4B4B549D_OFFSET))(this, a1, a2);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_65()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_65_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_66()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_66_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_67()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_67_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_68()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_68_OFFSET))(this);
+		}
+
+		::System::Void Method_4_F91B8892FC7A8C48(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2, ::System::Single a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_F91B8892FC7A8C48_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Void Method_4_EB15466536C39910(::UnityEngine::Renderer* a1, ::UnityEngine::Material* a2, ::UnityEngine::MaterialPropertyBlock* a3, ::UnityEngine::Material* a4)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Renderer*, ::UnityEngine::Material*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Material*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_EB15466536C39910_OFFSET))(this, a1, a2, a3, a4);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_69()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_69_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_70()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_70_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_71()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_71_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_72()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_72_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_73()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_73_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_74()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_74_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_75()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_75_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_9()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_9_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_76()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_76_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_77()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_77_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_78()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_78_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_79()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_79_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_80()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_80_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_81()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_81_OFFSET))(this);
+		}
+
+		::System::Boolean Method_4_391A84BCD9F51317_3()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_391A84BCD9F51317_3_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_10()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_10_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_11()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_11_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_82()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_82_OFFSET))(this);
+		}
+
+		::System::Void Method_4_FCAE2431182375FA(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_FCAE2431182375FA_OFFSET))(this, a1);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_83()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_83_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_84()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_84_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_85()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_85_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_86()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_86_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_12()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_DA1BF2C227DC3D86_12_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_87()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_87_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_88()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARMAINMAPS_METHOD_4_88B60F3B95FAA4F1_88_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,10 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+inline static constexpr unsigned int Class_1_534AF681CC2BD5FD_58_TypeDefinitionIndex = 11109;
+
+class Class_1_534AF681CC2BD5FD_58 : public ::System::Object
+{
+public:
+};

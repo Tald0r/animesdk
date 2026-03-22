@@ -2,8 +2,6 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/EventSystems/UIBehaviour.h"
 #include "unitysdk/UnityEngine/Matrix4x4.h"
-#include "unitysdk/UnityEngine/Rect.h"
-#include "unitysdk/UnityEngine/UI/Image_Type.h"
 #include "unitysdk/UnityEngine/UI/SmoothMaskMaterial_Params.h"
 #include "unitysdk/UnityEngine/UI/SmoothMask_FillOriginHorizontal.h"
 #include "unitysdk/UnityEngine/UI/SmoothMask_FillOriginRadial.h"
@@ -14,131 +12,117 @@
 #include "unitysdk/UnityEngine/UI/SmoothMask_Type.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 #include "unitysdk/UnityEngine/Vector3.h"
-#include "unitysdk/UnityEngine/Vector4.h"
 
 namespace UnityEngine { class Camera; }
 namespace UnityEngine { class Canvas; }
 namespace UnityEngine { class RectTransform; }
-namespace UnityEngine { class Sprite; }
 namespace UnityEngine { class Texture; }
 
-#define UNITYENGINE_UI_SMOOTHMASK_CACHEROOTCANVAS_OFFSET UNITYSDK_OFFSET(0x18358180)
-#define UNITYENGINE_UI_SMOOTHMASK_GETADJUSTEDBORDERS_OFFSET UNITYSDK_OFFSET(0x1835A6A0)
-#define UNITYENGINE_UI_SMOOTHMASK_GETPIXELADJUSTEDRECT_OFFSET UNITYSDK_OFFSET(0x1835A470)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_ACTIVESPRITE_OFFSET UNITYSDK_OFFSET(0x18357500)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_CANVASTRANSFORM_OFFSET UNITYSDK_OFFSET(0x18358260)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLAMOUNT_OFFSET UNITYSDK_OFFSET(0x18357F00)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLCLOCKWISE_OFFSET UNITYSDK_OFFSET(0x18358050)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLORIGINHORIZONTAL_OFFSET UNITYSDK_OFFSET(0x18357FC0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLORIGINRADIAL90_OFFSET UNITYSDK_OFFSET(0x18358020)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLORIGINRADIAL_OFFSET UNITYSDK_OFFSET(0x18358000)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLORIGINVERTICAL_OFFSET UNITYSDK_OFFSET(0x18357FE0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x18357E50)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLSOFT_OFFSET UNITYSDK_OFFSET(0x18357D30)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLTYPE_OFFSET UNITYSDK_OFFSET(0x18357D10)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_HORIZONTALSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x18357B00)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_HORIZONTALSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x183578C0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_IMAGETYPE_OFFSET UNITYSDK_OFFSET(0x183575C0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_MULTIPLIEDPIXELSPERUNIT_OFFSET UNITYSDK_OFFSET(0x183577E0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_OVERRIDEFILLSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x18357DC0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_OVERRIDESPRITE_OFFSET UNITYSDK_OFFSET(0x183574E0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_OVERRIDETEXTURE_OFFSET UNITYSDK_OFFSET(0x183575A0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_PIXELSPERUNIT_OFFSET UNITYSDK_OFFSET(0x183576E0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_RADIALSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x18357C60)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_RADIALSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x18357A40)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_RECTTRANSFORM_OFFSET UNITYSDK_OFFSET(0x183580F0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_REVERSEMASK_OFFSET UNITYSDK_OFFSET(0x183573C0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_ROOTCANVAS_OFFSET UNITYSDK_OFFSET(0x183577A0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_SOFTRANGETYPE_OFFSET UNITYSDK_OFFSET(0x183578A0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_SPRITE_OFFSET UNITYSDK_OFFSET(0x18357450)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_TEXTURE_OFFSET UNITYSDK_OFFSET(0x18357660)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x18357390)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_VERTICALSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x18357BB0)
-#define UNITYENGINE_UI_SMOOTHMASK_GET_VERTICALSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x18357980)
-#define UNITYENGINE_UI_SMOOTHMASK_ISRAYCASTLOCATIONVALID_OFFSET UNITYSDK_OFFSET(0x1835A8F0)
-#define UNITYENGINE_UI_SMOOTHMASK_MASKENABLED_OFFSET UNITYSDK_OFFSET(0x18358340)
-#define UNITYENGINE_UI_SMOOTHMASK_ONCANVASHIERARCHYCHANGED_OFFSET UNITYSDK_OFFSET(0x18358480)
-#define UNITYENGINE_UI_SMOOTHMASK_ONDIDAPPLYANIMATIONPROPERTIES_OFFSET UNITYSDK_OFFSET(0x1835AA70)
-#define UNITYENGINE_UI_SMOOTHMASK_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x18358400)
-#define UNITYENGINE_UI_SMOOTHMASK_ONENABLE_OFFSET UNITYSDK_OFFSET(0x18358360)
-#define UNITYENGINE_UI_SMOOTHMASK_ONRECTTRANSFORMDIMENSIONSCHANGE_OFFSET UNITYSDK_OFFSET(0x1835AA60)
-#define UNITYENGINE_UI_SMOOTHMASK_ONSIBLINGGRAPHICENABLEDDISABLED_OFFSET UNITYSDK_OFFSET(0x18358350)
-#define UNITYENGINE_UI_SMOOTHMASK_ONTRANSFORMPARENTCHANGED_OFFSET UNITYSDK_OFFSET(0x18358580)
-#define UNITYENGINE_UI_SMOOTHMASK_REBUILD_OFFSET UNITYSDK_OFFSET(0x1835AA80)
-#define UNITYENGINE_UI_SMOOTHMASK_RECALCULATEPARAMS_OFFSET UNITYSDK_OFFSET(0x18358940)
-#define UNITYENGINE_UI_SMOOTHMASK_SETPARAMSDIRTY_OFFSET UNITYSDK_OFFSET(0x183573B0)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLAMOUNT_OFFSET UNITYSDK_OFFSET(0x18357F10)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLCLOCKWISE_OFFSET UNITYSDK_OFFSET(0x18358060)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLORIGINHORIZONTAL_OFFSET UNITYSDK_OFFSET(0x18357FD0)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLORIGINRADIAL90_OFFSET UNITYSDK_OFFSET(0x18358030)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLORIGINRADIAL_OFFSET UNITYSDK_OFFSET(0x18358010)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLORIGINVERTICAL_OFFSET UNITYSDK_OFFSET(0x18357FF0)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x18357E60)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLSOFT_OFFSET UNITYSDK_OFFSET(0x18357D40)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLTYPE_OFFSET UNITYSDK_OFFSET(0x18357D20)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_HORIZONTALSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x18357B10)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_HORIZONTALSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x183578D0)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_IMAGETYPE_OFFSET UNITYSDK_OFFSET(0x183575D0)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_OVERRIDEFILLSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x18357DD0)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_OVERRIDESPRITE_OFFSET UNITYSDK_OFFSET(0x18357520)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_OVERRIDETEXTURE_OFFSET UNITYSDK_OFFSET(0x183575B0)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_RADIALSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x18357C70)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_RADIALSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x18357A50)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_REVERSEMASK_OFFSET UNITYSDK_OFFSET(0x183573D0)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_SOFTRANGETYPE_OFFSET UNITYSDK_OFFSET(0x183578B0)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_SPRITE_OFFSET UNITYSDK_OFFSET(0x18357460)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_TYPE_OFFSET UNITYSDK_OFFSET(0x183573A0)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_VERTICALSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x18357BC0)
-#define UNITYENGINE_UI_SMOOTHMASK_SET_VERTICALSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x18357990)
-#define UNITYENGINE_UI_SMOOTHMASK_TRANSFORMPOINTS_OFFSET UNITYSDK_OFFSET(0x18358600)
-#define UNITYENGINE_UI_SMOOTHMASK_UPDATEROOTCANVAS_OFFSET UNITYSDK_OFFSET(0x18358500)
-#define UNITYENGINE_UI_SMOOTHMASK__CTOR_OFFSET UNITYSDK_OFFSET(0x183582A0)
+#define UNITYENGINE_UI_SMOOTHMASK_CACHEROOTCANVAS_OFFSET UNITYSDK_OFFSET(0x1ADBC0D0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_CANVASTRANSFORM_OFFSET UNITYSDK_OFFSET(0x1ADBC3D0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_DOWNSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x1ADBB740)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_DOWNSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x1ADBB3E0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLAMOUNT_OFFSET UNITYSDK_OFFSET(0x1ADBBB00)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLCLOCKWISE_OFFSET UNITYSDK_OFFSET(0x1ADBBE30)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLORIGINHORIZONTAL_OFFSET UNITYSDK_OFFSET(0x1ADBBBB0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLORIGINRADIAL90_OFFSET UNITYSDK_OFFSET(0x1ADBBD90)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLORIGINRADIAL_OFFSET UNITYSDK_OFFSET(0x1ADBBCF0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLORIGINVERTICAL_OFFSET UNITYSDK_OFFSET(0x1ADBBC50)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_FILLTYPE_OFFSET UNITYSDK_OFFSET(0x1ADBBA60)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_INVERT_OFFSET UNITYSDK_OFFSET(0x1ADBBED0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_LEFTSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x1ADBB7E0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_LEFTSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x1ADBB490)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_RADIALSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x1ADBB9C0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_RADIALSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x1ADBB5F0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_RECTTRANSFORM_OFFSET UNITYSDK_OFFSET(0x1ADBBF70)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_RIGHTSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x1ADBB880)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_RIGHTSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x1ADBB540)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_ROOTCANVAS_OFFSET UNITYSDK_OFFSET(0x1ADBC020)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_SOFTRANGETYPE_OFFSET UNITYSDK_OFFSET(0x1ADBB290)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_TEXTURE_OFFSET UNITYSDK_OFFSET(0x1ADBB1D0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_TOPSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x1ADBB6A0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_TOPSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x1ADBB330)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1ADBB0E0)
+#define UNITYENGINE_UI_SMOOTHMASK_GET_USEACTUALPIXELS_OFFSET UNITYSDK_OFFSET(0x1ADBB920)
+#define UNITYENGINE_UI_SMOOTHMASK_ISRAYCASTLOCATIONVALID_OFFSET UNITYSDK_OFFSET(0x1ADBD910)
+#define UNITYENGINE_UI_SMOOTHMASK_MASKENABLED_OFFSET UNITYSDK_OFFSET(0x1ADBC530)
+#define UNITYENGINE_UI_SMOOTHMASK_ONCANVASHIERARCHYCHANGED_OFFSET UNITYSDK_OFFSET(0x1ADBC720)
+#define UNITYENGINE_UI_SMOOTHMASK_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1ADBC6A0)
+#define UNITYENGINE_UI_SMOOTHMASK_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1ADBC5E0)
+#define UNITYENGINE_UI_SMOOTHMASK_ONRECTTRANSFORMDIMENSIONSCHANGE_OFFSET UNITYSDK_OFFSET(0x1ADBDB10)
+#define UNITYENGINE_UI_SMOOTHMASK_ONSIBLINGGRAPHICENABLEDDISABLED_OFFSET UNITYSDK_OFFSET(0x1ADBC5A0)
+#define UNITYENGINE_UI_SMOOTHMASK_ONTRANSFORMPARENTCHANGED_OFFSET UNITYSDK_OFFSET(0x1ADBC900)
+#define UNITYENGINE_UI_SMOOTHMASK_REBUILD_OFFSET UNITYSDK_OFFSET(0x1ADBDB70)
+#define UNITYENGINE_UI_SMOOTHMASK_RECALCULATEPARAMS_OFFSET UNITYSDK_OFFSET(0x1ADBCD00)
+#define UNITYENGINE_UI_SMOOTHMASK_SETPARAMSDIRTY_OFFSET UNITYSDK_OFFSET(0x1ADBB180)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_DOWNSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x1ADBB750)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_DOWNSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x1ADBB3F0)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLAMOUNT_OFFSET UNITYSDK_OFFSET(0x1ADBBB10)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLCLOCKWISE_OFFSET UNITYSDK_OFFSET(0x1ADBBE40)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLORIGINHORIZONTAL_OFFSET UNITYSDK_OFFSET(0x1ADBBBC0)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLORIGINRADIAL90_OFFSET UNITYSDK_OFFSET(0x1ADBBDA0)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLORIGINRADIAL_OFFSET UNITYSDK_OFFSET(0x1ADBBD00)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLORIGINVERTICAL_OFFSET UNITYSDK_OFFSET(0x1ADBBC60)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_FILLTYPE_OFFSET UNITYSDK_OFFSET(0x1ADBBA70)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_INVERT_OFFSET UNITYSDK_OFFSET(0x1ADBBEE0)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_LEFTSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x1ADBB7F0)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_LEFTSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x1ADBB4A0)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_RADIALSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x1ADBB9D0)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_RADIALSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x1ADBB600)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_RIGHTSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x1ADBB890)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_RIGHTSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x1ADBB550)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_SOFTRANGETYPE_OFFSET UNITYSDK_OFFSET(0x1ADBB2A0)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_TEXTURE_OFFSET UNITYSDK_OFFSET(0x1ADBB1E0)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_TOPSOFTPIXEL_OFFSET UNITYSDK_OFFSET(0x1ADBB6B0)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_TOPSOFTRANGE_OFFSET UNITYSDK_OFFSET(0x1ADBB340)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_TYPE_OFFSET UNITYSDK_OFFSET(0x1ADBB0F0)
+#define UNITYENGINE_UI_SMOOTHMASK_SET_USEACTUALPIXELS_OFFSET UNITYSDK_OFFSET(0x1ADBB930)
+#define UNITYENGINE_UI_SMOOTHMASK_TRANSFORMPOINTS_OFFSET UNITYSDK_OFFSET(0x1ADBC950)
+#define UNITYENGINE_UI_SMOOTHMASK_UPDATEROOTCANVAS_OFFSET UNITYSDK_OFFSET(0x1ADBC770)
+#define UNITYENGINE_UI_SMOOTHMASK__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADBC480)
+#define UNITYENGINE_UI_SMOOTHMASK___BASE_ONCANVASHIERARCHYCHANGED_OFFSET UNITYSDK_OFFSET(0x1ADBE030)
+#define UNITYENGINE_UI_SMOOTHMASK___BASE_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1ADBE0C0)
+#define UNITYENGINE_UI_SMOOTHMASK___BASE_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1ADBE150)
+#define UNITYENGINE_UI_SMOOTHMASK___BASE_ONRECTTRANSFORMDIMENSIONSCHANGE_OFFSET UNITYSDK_OFFSET(0x1ADBE1E0)
+#define UNITYENGINE_UI_SMOOTHMASK___BASE_ONTRANSFORMPARENTCHANGED_OFFSET UNITYSDK_OFFSET(0x1ADBE270)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int SmoothMask_TypeDefinitionIndex = 5614;
+	inline static constexpr unsigned int SmoothMask_TypeDefinitionIndex = 8429;
 
 	class SmoothMask : public ::UnityEngine::EventSystems::UIBehaviour
 	{
 	public:
 		::UnityEngine::UI::SmoothMask_Type m_Type; // 0x18
-		::System::Boolean m_ReverseMask; // 0x1C
-		::UnityEngine::Sprite* m_Sprite; // 0x20
-		::UnityEngine::Sprite* m_OverrideSprite; // 0x28
-		::UnityEngine::Texture* _overrideTexture_k__BackingField; // 0x30
-		::UnityEngine::UI::Image_Type m_ImageType; // 0x38
-		::System::Single m_CachedReferencePixelsPerUnit; // 0x3C
-		::System::Single m_PixelsPerUnitMultiplier; // 0x40
-		::UnityEngine::UI::SmoothMask_SoftRangeType m_SoftRangeType; // 0x44
-		::System::Single m_HorizontalSoftRange; // 0x48
-		::System::Single m_VerticalSoftRange; // 0x4C
-		::System::Single m_RadialSoftRange; // 0x50
-		::System::Int32 m_HorizontalSoftPixel; // 0x54
-		::System::Int32 m_VerticalSoftPixel; // 0x58
-		::System::Int32 m_RadialSoftPixel; // 0x5C
-		::UnityEngine::UI::SmoothMask_FillType m_FillType; // 0x60
-		::System::Boolean m_FillSoft; // 0x64
-		::System::Boolean m_OverrideFillSoftRange; // 0x65
-		::UnityEngine::Vector2 m_FillSoftRange; // 0x68
-		::System::Single m_FillAmount; // 0x70
-		::UnityEngine::UI::SmoothMask_FillOriginHorizontal m_FillOriginHorizontal; // 0x74
-		::UnityEngine::UI::SmoothMask_FillOriginVertical m_FillOriginVertical; // 0x78
-		::UnityEngine::UI::SmoothMask_FillOriginRadial m_FillOriginRadial; // 0x7C
-		::UnityEngine::UI::SmoothMask_FillOriginRadial90 m_FillOriginRadial90; // 0x80
-		::System::Boolean m_FillClockwise; // 0x84
-		::UnityEngine::RectTransform* m_RectTransform; // 0x88
-		::UnityEngine::UI::SmoothMaskMaterial_Params materialParams; // 0x90
-		::System::Boolean m_MaterialParamsDirty; // 0x150
-		::UnityEngine::Canvas* m_RootCanvas; // 0x158
-		::UnityEngine::RectTransform* m_CanvasTransform; // 0x160
-		::UnityEngine::Matrix4x4 m_LocalToWorldMatrix; // 0x168
-		::Il2CppArray<::UnityEngine::Vector3>* _Corners; // 0x1A8
-		::UnityEngine::Vector4 SmoothMaskTexSlice0; // 0x1B0
-		::Il2CppArray<::UnityEngine::Vector4>* s_VertScratch; // 0x1C0
-		::UnityEngine::Vector4 fillParams; // 0x1C8
-		::UnityEngine::Vector4 fillParams2; // 0x1D8
-		::UnityEngine::Vector2 unitPerPixel; // 0x1E8
-		::UnityEngine::Vector4 SmoothMaskTexSlice1; // 0x1F0
+		::System::Boolean m_ForceUpdateChild; // 0x1C
+		::UnityEngine::Texture* m_Texture; // 0x20
+		::UnityEngine::UI::SmoothMask_SoftRangeType m_SoftRangeType; // 0x28
+		::System::Single m_TopSoftRange; // 0x2C
+		::System::Single m_DownSoftRange; // 0x30
+		::System::Single m_LeftSoftRange; // 0x34
+		::System::Single m_RightSoftRange; // 0x38
+		::System::Single m_RadialSoftRange; // 0x3C
+		::System::Int32 m_TopSoftPixel; // 0x40
+		::System::Int32 m_DownSoftPixel; // 0x44
+		::System::Int32 m_LeftSoftPixel; // 0x48
+		::System::Int32 m_RightSoftPixel; // 0x4C
+		::System::Boolean m_UseActualPixels; // 0x50
+		::System::Int32 m_RadialSoftPixel; // 0x54
+		::UnityEngine::UI::SmoothMask_FillType m_FillType; // 0x58
+		::System::Single m_FillAmount; // 0x5C
+		::UnityEngine::UI::SmoothMask_FillOriginHorizontal m_FillOriginHorizontal; // 0x60
+		::UnityEngine::UI::SmoothMask_FillOriginVertical m_FillOriginVertical; // 0x64
+		::UnityEngine::UI::SmoothMask_FillOriginRadial m_FillOriginRadial; // 0x68
+		::UnityEngine::UI::SmoothMask_FillOriginRadial90 m_FillOriginRadial90; // 0x6C
+		::System::Boolean m_FillClockwise; // 0x70
+		::System::Boolean m_Invert; // 0x71
+		::UnityEngine::RectTransform* m_RectTransform; // 0x78
+		::UnityEngine::UI::SmoothMaskMaterial_Params materialParams; // 0x80
+		::System::Boolean m_MaterialParamsDirty; // 0xF8
+		::UnityEngine::Canvas* m_RootCanvas; // 0x100
+		::UnityEngine::RectTransform* m_CanvasTransform; // 0x108
+		::Il2CppArray<::UnityEngine::Vector3>* _Corners; // 0x110
+		::UnityEngine::Matrix4x4 thisOldMatrix; // 0x118
 
 		::System::Void _ctor()
 		{
@@ -155,74 +139,14 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::SmoothMask_Type))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_TYPE_OFFSET))(this, value);
 		}
 
-		::System::Boolean get_reverseMask()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_REVERSEMASK_OFFSET))(this);
-		}
-
-		::System::Void set_reverseMask(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_REVERSEMASK_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Sprite* get_sprite()
-		{
-			return ((::UnityEngine::Sprite*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_SPRITE_OFFSET))(this);
-		}
-
-		::System::Void set_sprite(::UnityEngine::Sprite* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Sprite*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_SPRITE_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Sprite* get_overrideSprite()
-		{
-			return ((::UnityEngine::Sprite*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_OVERRIDESPRITE_OFFSET))(this);
-		}
-
-		::System::Void set_overrideSprite(::UnityEngine::Sprite* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Sprite*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_OVERRIDESPRITE_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Sprite* get_activeSprite()
-		{
-			return ((::UnityEngine::Sprite*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_ACTIVESPRITE_OFFSET))(this);
-		}
-
-		::UnityEngine::Texture* get_overrideTexture()
-		{
-			return ((::UnityEngine::Texture*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_OVERRIDETEXTURE_OFFSET))(this);
-		}
-
-		::System::Void set_overrideTexture(::UnityEngine::Texture* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Texture*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_OVERRIDETEXTURE_OFFSET))(this, value);
-		}
-
-		::UnityEngine::UI::Image_Type get_imageType()
-		{
-			return ((::UnityEngine::UI::Image_Type(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_IMAGETYPE_OFFSET))(this);
-		}
-
-		::System::Void set_imageType(::UnityEngine::UI::Image_Type value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Image_Type))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_IMAGETYPE_OFFSET))(this, value);
-		}
-
 		::UnityEngine::Texture* get_texture()
 		{
 			return ((::UnityEngine::Texture*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_TEXTURE_OFFSET))(this);
 		}
 
-		::System::Single get_pixelsPerUnit()
+		::System::Void set_texture(::UnityEngine::Texture* value)
 		{
-			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_PIXELSPERUNIT_OFFSET))(this);
-		}
-
-		::System::Single get_multipliedPixelsPerUnit()
-		{
-			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_MULTIPLIEDPIXELSPERUNIT_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Texture*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_TEXTURE_OFFSET))(this, value);
 		}
 
 		::UnityEngine::UI::SmoothMask_SoftRangeType get_softRangeType()
@@ -235,24 +159,44 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::SmoothMask_SoftRangeType))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_SOFTRANGETYPE_OFFSET))(this, value);
 		}
 
-		::System::Single get_horizontalSoftRange()
+		::System::Single get_topSoftRange()
 		{
-			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_HORIZONTALSOFTRANGE_OFFSET))(this);
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_TOPSOFTRANGE_OFFSET))(this);
 		}
 
-		::System::Void set_horizontalSoftRange(::System::Single value)
+		::System::Void set_topSoftRange(::System::Single value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_HORIZONTALSOFTRANGE_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_TOPSOFTRANGE_OFFSET))(this, value);
 		}
 
-		::System::Single get_verticalSoftRange()
+		::System::Single get_downSoftRange()
 		{
-			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_VERTICALSOFTRANGE_OFFSET))(this);
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_DOWNSOFTRANGE_OFFSET))(this);
 		}
 
-		::System::Void set_verticalSoftRange(::System::Single value)
+		::System::Void set_downSoftRange(::System::Single value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_VERTICALSOFTRANGE_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_DOWNSOFTRANGE_OFFSET))(this, value);
+		}
+
+		::System::Single get_leftSoftRange()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_LEFTSOFTRANGE_OFFSET))(this);
+		}
+
+		::System::Void set_leftSoftRange(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_LEFTSOFTRANGE_OFFSET))(this, value);
+		}
+
+		::System::Single get_rightSoftRange()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_RIGHTSOFTRANGE_OFFSET))(this);
+		}
+
+		::System::Void set_rightSoftRange(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_RIGHTSOFTRANGE_OFFSET))(this, value);
 		}
 
 		::System::Single get_radialSoftRange()
@@ -265,24 +209,54 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_RADIALSOFTRANGE_OFFSET))(this, value);
 		}
 
-		::System::Int32 get_horizontalSoftPixel()
+		::System::Int32 get_topSoftPixel()
 		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_HORIZONTALSOFTPIXEL_OFFSET))(this);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_TOPSOFTPIXEL_OFFSET))(this);
 		}
 
-		::System::Void set_horizontalSoftPixel(::System::Int32 value)
+		::System::Void set_topSoftPixel(::System::Int32 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_HORIZONTALSOFTPIXEL_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_TOPSOFTPIXEL_OFFSET))(this, value);
 		}
 
-		::System::Int32 get_verticalSoftPixel()
+		::System::Int32 get_downSoftPixel()
 		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_VERTICALSOFTPIXEL_OFFSET))(this);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_DOWNSOFTPIXEL_OFFSET))(this);
 		}
 
-		::System::Void set_verticalSoftPixel(::System::Int32 value)
+		::System::Void set_downSoftPixel(::System::Int32 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_VERTICALSOFTPIXEL_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_DOWNSOFTPIXEL_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_leftSoftPixel()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_LEFTSOFTPIXEL_OFFSET))(this);
+		}
+
+		::System::Void set_leftSoftPixel(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_LEFTSOFTPIXEL_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_rightSoftPixel()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_RIGHTSOFTPIXEL_OFFSET))(this);
+		}
+
+		::System::Void set_rightSoftPixel(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_RIGHTSOFTPIXEL_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_useActualPixels()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_USEACTUALPIXELS_OFFSET))(this);
+		}
+
+		::System::Void set_useActualPixels(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_USEACTUALPIXELS_OFFSET))(this, value);
 		}
 
 		::System::Int32 get_radialSoftPixel()
@@ -303,36 +277,6 @@ namespace UnityEngine::UI
 		::System::Void set_fillType(::UnityEngine::UI::SmoothMask_FillType value)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::SmoothMask_FillType))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_FILLTYPE_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_fillSoft()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_FILLSOFT_OFFSET))(this);
-		}
-
-		::System::Void set_fillSoft(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_FILLSOFT_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_overrideFillSoftRange()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_OVERRIDEFILLSOFTRANGE_OFFSET))(this);
-		}
-
-		::System::Void set_overrideFillSoftRange(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_OVERRIDEFILLSOFTRANGE_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Vector2 get_fillSoftRange()
-		{
-			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_FILLSOFTRANGE_OFFSET))(this);
-		}
-
-		::System::Void set_fillSoftRange(::UnityEngine::Vector2 value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_FILLSOFTRANGE_OFFSET))(this, value);
 		}
 
 		::System::Single get_fillAmount()
@@ -393,6 +337,16 @@ namespace UnityEngine::UI
 		::System::Void set_fillClockwise(::System::Boolean value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_FILLCLOCKWISE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_invert()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GET_INVERT_OFFSET))(this);
+		}
+
+		::System::Void set_invert(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_SET_INVERT_OFFSET))(this, value);
 		}
 
 		::UnityEngine::RectTransform* get_rectTransform()
@@ -465,16 +419,6 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_RECALCULATEPARAMS_OFFSET))(this);
 		}
 
-		::UnityEngine::Rect GetPixelAdjustedRect()
-		{
-			return ((::UnityEngine::Rect(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GETPIXELADJUSTEDRECT_OFFSET))(this);
-		}
-
-		::UnityEngine::Vector4 GetAdjustedBorders(::UnityEngine::Vector4 border, ::UnityEngine::Rect adjustedRect)
-		{
-			return ((::UnityEngine::Vector4(*)(::PVOID, ::UnityEngine::Vector4, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_GETADJUSTEDBORDERS_OFFSET))(this, border, adjustedRect);
-		}
-
 		::System::Boolean IsRaycastLocationValid(::UnityEngine::Vector2 sp, ::UnityEngine::Camera* eventCamera)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Vector2, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_ISRAYCASTLOCATIONVALID_OFFSET))(this, sp, eventCamera);
@@ -485,14 +429,34 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_ONRECTTRANSFORMDIMENSIONSCHANGE_OFFSET))(this);
 		}
 
-		::System::Void OnDidApplyAnimationProperties()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_ONDIDAPPLYANIMATIONPROPERTIES_OFFSET))(this);
-		}
-
 		::System::Void Rebuild()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK_REBUILD_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCanvasHierarchyChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK___BASE_ONCANVASHIERARCHYCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnDisable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK___BASE_ONDISABLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK___BASE_ONENABLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnRectTransformDimensionsChange()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK___BASE_ONRECTTRANSFORMDIMENSIONSCHANGE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnTransformParentChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_SMOOTHMASK___BASE_ONTRANSFORMPARENTCHANGED_OFFSET))(this);
 		}
 	};
 }

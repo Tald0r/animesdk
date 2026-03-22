@@ -1,0 +1,49 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_5_2169ABC757988FED;
+namespace System { class Action; }
+
+#define MOLEMOLE_CHESSSTATEMACHINE_GRIDMOVEACTION___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6FBE5F0)
+#define MOLEMOLE_CHESSSTATEMACHINE_GRIDMOVEACTION___C__DISPLAYCLASS11_0__DORISEORSINKBYCONFIG_B__0_OFFSET UNITYSDK_OFFSET(0x6FBE600)
+#define MOLEMOLE_CHESSSTATEMACHINE_GRIDMOVEACTION___C__DISPLAYCLASS11_0__DORISEORSINKBYCONFIG_B__1_OFFSET UNITYSDK_OFFSET(0x6FBE6A0)
+#define MOLEMOLE_CHESSSTATEMACHINE_GRIDMOVEACTION___C__DISPLAYCLASS11_0__DORISEORSINKBYCONFIG_B__2_OFFSET UNITYSDK_OFFSET(0x6FBE740)
+#define MOLEMOLE_CHESSSTATEMACHINE_GRIDMOVEACTION___C__DISPLAYCLASS11_0__DORISEORSINKBYCONFIG_B__3_OFFSET UNITYSDK_OFFSET(0x6FBE7E0)
+
+namespace MoleMole::ChessStateMachine
+{
+	inline static constexpr unsigned int GridMoveAction___c__DisplayClass11_0_TypeDefinitionIndex = 52142;
+
+	class GridMoveAction___c__DisplayClass11_0 : public ::System::Object
+	{
+	public:
+		::Class_5_2169ABC757988FED* chessPiece3dModel; // 0x10
+		::System::Action* onEnd; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_GRIDMOVEACTION___C__DISPLAYCLASS11_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _DoRiseOrSinkByConfig_b__0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_GRIDMOVEACTION___C__DISPLAYCLASS11_0__DORISEORSINKBYCONFIG_B__0_OFFSET))(this);
+		}
+
+		::System::Void _DoRiseOrSinkByConfig_b__1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_GRIDMOVEACTION___C__DISPLAYCLASS11_0__DORISEORSINKBYCONFIG_B__1_OFFSET))(this);
+		}
+
+		::System::Void _DoRiseOrSinkByConfig_b__2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_GRIDMOVEACTION___C__DISPLAYCLASS11_0__DORISEORSINKBYCONFIG_B__2_OFFSET))(this);
+		}
+
+		::System::Void _DoRiseOrSinkByConfig_b__3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_GRIDMOVEACTION___C__DISPLAYCLASS11_0__DORISEORSINKBYCONFIG_B__3_OFFSET))(this);
+		}
+	};
+}

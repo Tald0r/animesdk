@@ -1,0 +1,36 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace MoleMole { class UIMiniscapeMainPageController; }
+namespace System { class Action; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIMINISCAPEMAINPAGECONTROLLER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC0A2E0)
+#define MOLEMOLE_UIMINISCAPEMAINPAGECONTROLLER___C__DISPLAYCLASS22_0__DOPLAYPROGRESSANIM_B__1_OFFSET UNITYSDK_OFFSET(0xAC0A2F0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMiniscapeMainPageController___c__DisplayClass22_0_TypeDefinitionIndex = 40663;
+
+	class UIMiniscapeMainPageController___c__DisplayClass22_0 : public ::System::Object
+	{
+	public:
+		::System::Action* onFinish; // 0x10
+		::MoleMole::UIMiniscapeMainPageController* __4__this; // 0x18
+		::System::Action_1<::System::Single>* onSetProgress; // 0x20
+		::System::Single prvProgress; // 0x28
+		::System::Single duration; // 0x2C
+		::System::Single curProgress; // 0x30
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMAINPAGECONTROLLER___C__DISPLAYCLASS22_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _DoPlayProgressAnim_b__1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMAINPAGECONTROLLER___C__DISPLAYCLASS22_0__DOPLAYPROGRESSANIM_B__1_OFFSET))(this);
+		}
+	};
+}

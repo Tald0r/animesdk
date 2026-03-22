@@ -1,0 +1,461 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_1_1685EC66FBD28897;
+class Class_1_320D5F9D31519B3D;
+class Class_1_4F2E1A9F7CA83F80;
+class Class_2_79F6D62CE30E3F8E_180;
+class Class_2_888829D5F4E4EBE0;
+class Class_2_9D9172C07F82DDAE;
+class Class_2_D89CCC627A66D0AD;
+class MonoUITableScrollV2;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIEquipItemIconBtnWidgetController; }
+namespace MoleMole { class UIGeneralEquipDetailV2WidgetController; }
+namespace MoleMole { class UIGeneralSmallTipsWidgetController; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace MoleMole { class UIRoleEquipReplaceWidgetController; }
+namespace MoleMole { class UIWeaponRefineContext; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_AUTOSELECTHANDLE_OFFSET UNITYSDK_OFFSET(0x683A7D0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_CREATEITEMICON_OFFSET UNITYSDK_OFFSET(0x6836D80)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_DOREFINE_OFFSET UNITYSDK_OFFSET(0xD70D790)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_FOCUSTOCONSUMECONTENT_OFFSET UNITYSDK_OFFSET(0x683BC00)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_FOCUSTOOKBUTTON_OFFSET UNITYSDK_OFFSET(0x683B960)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GAMEPADITEMENABLE_OFFSET UNITYSDK_OFFSET(0x683A2F0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GETAPPENDLEVELNOW_OFFSET UNITYSDK_OFFSET(0x683AED0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GETMATERIALITEMICONCTRL_OFFSET UNITYSDK_OFFSET(0x6839E10)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GETSHOWREWARDLIST_OFFSET UNITYSDK_OFFSET(0xD70C7F0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GETWEAPONCANSELECT_OFFSET UNITYSDK_OFFSET(0x6838120)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0xD70A280)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xD708F40)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_INITEQUIPSTAR_OFFSET UNITYSDK_OFFSET(0xD70A8E0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xD709210)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ISREACHMAXSELECTABLECOUNT_OFFSET UNITYSDK_OFFSET(0x68382E0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ISSELECTALLITEMINBAG_OFFSET UNITYSDK_OFFSET(0x683B770)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ISWEAPONREFINECOSTENOUGH_OFFSET UNITYSDK_OFFSET(0x683B4B0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ISWEAPONREFINEMAX_OFFSET UNITYSDK_OFFSET(0xD70D650)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCLICKCONSOLECHECKCONSUMEBTN_OFFSET UNITYSDK_OFFSET(0x683C230)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCLICKCONSUMEICONBTN_OFFSET UNITYSDK_OFFSET(0x683C180)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCLICKMATERIALITEM_OFFSET UNITYSDK_OFFSET(0x683B090)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCLICKREFINE_OFFSET UNITYSDK_OFFSET(0xD70CE40)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCLICKTOGGLELOCKCALLBACK_OFFSET UNITYSDK_OFFSET(0xD70B920)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD709010)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGAMEPADCLICKCANCEL_OFFSET UNITYSDK_OFFSET(0x683C520)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGAMEPADCLICKCONSUME_OFFSET UNITYSDK_OFFSET(0x683C670)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGAMEPADCLICKITEM_OFFSET UNITYSDK_OFFSET(0x6837880)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0x683E550)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x683D310)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGENERALSMALLTIPSWIDGETCLOSED_OFFSET UNITYSDK_OFFSET(0x68371D0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x683C320)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONITEMCLICK_OFFSET UNITYSDK_OFFSET(0x6837310)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xD70A290)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONSELECTCHANGEHANDLE_OFFSET UNITYSDK_OFFSET(0x683AE50)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD709FF0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD708F50)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD7090B0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHCONSOLELOCKBTN_OFFSET UNITYSDK_OFFSET(0xD70CA30)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHCOSTAREA_OFFSET UNITYSDK_OFFSET(0x683BE50)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHCURREFINEWEAPONINFO_OFFSET UNITYSDK_OFFSET(0xD70B9A0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHEQUIPSTATEHANDLE_OFFSET UNITYSDK_OFFSET(0x6838B10)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHGAMEPADFOCUS_OFFSET UNITYSDK_OFFSET(0x683E800)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHMULTISELECT_OFFSET UNITYSDK_OFFSET(0x68384D0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHREFINEBTNSTATE_OFFSET UNITYSDK_OFFSET(0x683B2F0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHSELECTEDWEAPONINFO_OFFSET UNITYSDK_OFFSET(0xD70C590)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHSHOWMATERIALITEMCONTROLLER_OFFSET UNITYSDK_OFFSET(0x6839080)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xD709F60)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHWEAPONSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0xD70BF00)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_SETSTAR_OFFSET UNITYSDK_OFFSET(0xD70CC90)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_SHOWGENERALSMALLTIPS_OFFSET UNITYSDK_OFFSET(0x6837010)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_TOGGLELOCK_OFFSET UNITYSDK_OFFSET(0x683A740)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x683EA70)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__DOREFINE_B__25_0_OFFSET UNITYSDK_OFFSET(0x683ECD0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__DOREFINE_B__25_1_OFFSET UNITYSDK_OFFSET(0x683F110)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__DOREFINE_B__25_2_OFFSET UNITYSDK_OFFSET(0x683F1B0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__ONCLICKREFINE_B__24_0_OFFSET UNITYSDK_OFFSET(0x683ECB0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__ONCLICKREFINE_B__24_1_OFFSET UNITYSDK_OFFSET(0x683ECC0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x683F1C0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0x683F230)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x683F2A0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x683F320)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0x683F350)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x683F3B0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x683F3C0)
+#define MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x683F3D0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIWeaponRefinePopWindowController_TypeDefinitionIndex = 74003;
+
+	class UIWeaponRefinePopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Int32 MAX_EQUIP_STAR_COUNT = 0x5; // 0x0
+		::Class_2_79F6D62CE30E3F8E_180* _view; // 0x2F8
+		::MoleMole::UIWeaponRefineContext* _context; // 0x300
+		::System::Collections::Generic::List_1<::System::UInt32>* selectList; // 0x308
+		::System::Int32 selectMaterialCount; // 0x310
+		::System::Int32 refineMaterialID; // 0x314
+		::MoleMole::UIRoleEquipReplaceWidgetController* _equipReplaceWidget; // 0x318
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* showList; // 0x320
+		::Class_1_0D6706375CDAAE8C* _curRefineItemData; // 0x328
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::UIGeneralSmallTipsWidgetController*>* _smallTipsWidgetDict; // 0x330
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnWidgetController*>* _showMaterialItemList; // 0x338
+		::Class_1_0D6706375CDAAE8C* _curSelectedIconItemData; // 0x340
+		::Class_2_D89CCC627A66D0AD* _avatarData; // 0x348
+		::Class_2_888829D5F4E4EBE0* _equipModel; // 0x350
+		::Class_2_9D9172C07F82DDAE* _itemModel; // 0x358
+		::System::Collections::Generic::List_1<::Class_1_4F2E1A9F7CA83F80*>* _basePropertyItems; // 0x360
+		::System::Collections::Generic::List_1<::Class_1_4F2E1A9F7CA83F80*>* _randomPropertyItems; // 0x368
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* _curShowItemDatas; // 0x370
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* _weaponMats; // 0x378
+		::System::Collections::Generic::List_1<::Class_1_320D5F9D31519B3D*>* _equipStarList; // 0x380
+		::System::Collections::Generic::List_1<::Class_1_320D5F9D31519B3D*>* _equipRefineCurStar; // 0x388
+		::System::Collections::Generic::List_1<::Class_1_320D5F9D31519B3D*>* _equipRefineNextStar; // 0x390
+		::MonoUITableScrollV2* _scrollRectEx; // 0x398
+		::MoleMole::UIGeneralEquipDetailV2WidgetController* _generalItemDetailWidget; // 0x3A0
+		::System::Boolean _isPlayingRefineAnim; // 0x3A8
+		::System::Boolean _isRefineUp; // 0x3A9
+		::System::Int32 _consumeItemID; // 0x3AC
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnClickToggleLockCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCLICKTOGGLELOCKCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void InitEquipStar()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_INITEQUIPSTAR_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshWeaponScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHWEAPONSCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshSelectedWeaponInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHSELECTEDWEAPONINFO_OFFSET))(this);
+		}
+
+		::System::Void RefreshConsoleLockBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHCONSOLELOCKBTN_OFFSET))(this);
+		}
+
+		::System::Void RefreshCurRefineWeaponInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHCURREFINEWEAPONINFO_OFFSET))(this);
+		}
+
+		::System::Void SetStar(::System::Collections::Generic::List_1<::Class_1_320D5F9D31519B3D*>* uistarList, ::System::Int32 count, ::System::Int32 maxStar)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_320D5F9D31519B3D*>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_SETSTAR_OFFSET))(this, uistarList, count, maxStar);
+		}
+
+		::System::Void OnClickRefine()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCLICKREFINE_OFFSET))(this);
+		}
+
+		::System::Void DoRefine()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_DOREFINE_OFFSET))(this);
+		}
+
+		::System::Boolean IsWeaponRefineMax()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ISWEAPONREFINEMAX_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* GetShowRewardList(::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* dataList)
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>*(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GETSHOWREWARDLIST_OFFSET))(this, dataList);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateItemIcon(::Struct_2_575273D27F02957E binderInfo)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::Struct_2_575273D27F02957E))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_CREATEITEMICON_OFFSET))(this, binderInfo);
+		}
+
+		::System::Void ShowGeneralSmallTips(::System::String* text)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_SHOWGENERALSMALLTIPS_OFFSET))(this, text);
+		}
+
+		::System::Void OnGeneralSmallTipsWidgetClosed(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGENERALSMALLTIPSWIDGETCLOSED_OFFSET))(this, args);
+		}
+
+		::System::Void OnItemClick(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONITEMCLICK_OFFSET))(this, index);
+		}
+
+		::System::Boolean GetWeaponCanSelect(::System::UInt32 uid, ::System::Boolean showTip)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::UInt32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GETWEAPONCANSELECT_OFFSET))(this, uid, showTip);
+		}
+
+		::System::Void RefreshMultiSelect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHMULTISELECT_OFFSET))(this);
+		}
+
+		::MoleMole::UIEquipItemIconBtnWidgetController* GetMaterialItemIconCtrl()
+		{
+			return ((::MoleMole::UIEquipItemIconBtnWidgetController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GETMATERIALITEMICONCTRL_OFFSET))(this);
+		}
+
+		::System::Void RefreshEquipStateHandle(::MoleMole::UIEquipItemIconBtnWidgetController* ctrl)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIEquipItemIconBtnWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHEQUIPSTATEHANDLE_OFFSET))(this, ctrl);
+		}
+
+		::System::Void ToggleLock()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_TOGGLELOCK_OFFSET))(this);
+		}
+
+		::System::Void AutoSelectHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_AUTOSELECTHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnSelectChangeHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONSELECTCHANGEHANDLE_OFFSET))(this);
+		}
+
+		::System::Void RefreshShowMaterialItemController()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHSHOWMATERIALITEMCONTROLLER_OFFSET))(this);
+		}
+
+		::System::Void OnClickMaterialItem(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCLICKMATERIALITEM_OFFSET))(this, obj);
+		}
+
+		::System::Void RefreshRefineBtnState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHREFINEBTNSTATE_OFFSET))(this);
+		}
+
+		::System::Boolean IsSelectAllItemInBag()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ISSELECTALLITEMINBAG_OFFSET))(this);
+		}
+
+		::System::Void RefreshCostArea()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHCOSTAREA_OFFSET))(this);
+		}
+
+		::System::Boolean IsReachMaxSelectableCount()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ISREACHMAXSELECTABLECOUNT_OFFSET))(this);
+		}
+
+		::System::Boolean IsWeaponRefineCostEnough(::System::Int32& curNum, ::System::Int32& costNum)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32&, ::System::Int32&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ISWEAPONREFINECOSTENOUGH_OFFSET))(this, curNum, costNum);
+		}
+
+		::System::Int32 GetAppendLevelNow()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GETAPPENDLEVELNOW_OFFSET))(this);
+		}
+
+		::System::Void OnClickConsumeIconBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCLICKCONSUMEICONBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickConsoleCheckConsumeBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONCLICKCONSOLECHECKCONSUMEBTN_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnGamepadClickConsume(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGAMEPADCLICKCONSUME_OFFSET))(this, index);
+		}
+
+		::System::Boolean OnGamepadClickCancel()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGAMEPADCLICKCANCEL_OFFSET))(this);
+		}
+
+		::System::Void OnGamepadClickItem(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGAMEPADCLICKITEM_OFFSET))(this, index);
+		}
+
+		::System::Boolean GamepadItemEnable(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_GAMEPADITEMENABLE_OFFSET))(this, itemData);
+		}
+
+		::System::Void FocusToConsumeContent()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_FOCUSTOCONSUMECONTENT_OFFSET))(this);
+		}
+
+		::System::Void FocusToOkButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_FOCUSTOOKBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void RefreshGamepadFocus()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER_REFRESHGAMEPADFOCUS_OFFSET))(this);
+		}
+
+		::System::Void _OnClickRefine_b__24_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__ONCLICKREFINE_B__24_0_OFFSET))(this);
+		}
+
+		::System::Void _OnClickRefine_b__24_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__ONCLICKREFINE_B__24_1_OFFSET))(this);
+		}
+
+		::System::Void _DoRefine_b__25_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__DOREFINE_B__25_0_OFFSET))(this);
+		}
+
+		::System::Void _DoRefine_b__25_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__DOREFINE_B__25_1_OFFSET))(this);
+		}
+
+		::System::Void _DoRefine_b__25_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER__DOREFINE_B__25_2_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWEAPONREFINEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

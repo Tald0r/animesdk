@@ -1,0 +1,126 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_4F5B254ADA117E5F.h"
+#include "unitysdk/MoleMole/UIMainCityStorePageController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_65BFFA950148C892;
+class Class_2_65BFFA950148C892_Class_1_9A90CD018E72DF20_2;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x7A3A6B0)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0x7A3A6C0)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x7A3A820)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x7A3ADC0)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A3AE90)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A3A930)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A3AB20)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0x7A3A730)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_SETUPACTIVITYDATAANDCONFIGS_OFFSET UNITYSDK_OFFSET(0x7A3AF60)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_SETUPVIEWDATA_OFFSET UNITYSDK_OFFSET(0x7A3AC20)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A3B480)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x7A3B490)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x7A3B500)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A3B510)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A3B520)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A3B530)
+#define MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0x7A3B540)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGameUIBoardPageController_TypeDefinitionIndex = 73413;
+
+	class UIGameUIBoardPageController : public ::MoleMole::UIMainCityStorePageController
+	{
+	public:
+		::Enum_3_4F5B254ADA117E5F _binderType; // 0x308
+		::Class_2_65BFFA950148C892_Class_1_9A90CD018E72DF20_2* _viewData; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Class_2_65BFFA950148C892* get__viewModel()
+		{
+			return ((::Class_2_65BFFA950148C892*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetupViewData(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_SETUPVIEWDATA_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void SetupActivityDataAndConfigs()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER_SETUPACTIVITYDATAANDCONFIGS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGAMEUIBOARDPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,23 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Attribute.h"
+
+namespace System { class String; }
+
+#define NODECANVAS_FRAMEWORK_EVENTRECEIVERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19C84BD0)
+
+namespace NodeCanvas::Framework
+{
+	inline static constexpr unsigned int EventReceiverAttribute_TypeDefinitionIndex = 25865;
+
+	class EventReceiverAttribute : public ::System::Attribute
+	{
+	public:
+		::Il2CppArray<::System::String*>* eventMessages; // 0x10
+
+		::System::Void _ctor(::Il2CppArray<::System::String*>* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::String*>*))((::PBYTE)hIl2Cpp + NODECANVAS_FRAMEWORK_EVENTRECEIVERATTRIBUTE__CTOR_OFFSET))(this, args);
+		}
+	};
+}

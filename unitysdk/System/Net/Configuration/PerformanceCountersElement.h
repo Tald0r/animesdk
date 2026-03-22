@@ -4,12 +4,14 @@
 
 namespace System::Configuration { class ConfigurationPropertyCollection; }
 
-#define SYSTEM_NET_CONFIGURATION_PERFORMANCECOUNTERSELEMENT_GET_PROPERTIES_OFFSET UNITYSDK_OFFSET(0x17EA2C50)
-#define SYSTEM_NET_CONFIGURATION_PERFORMANCECOUNTERSELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x17EA2C10)
+#define SYSTEM_NET_CONFIGURATION_PERFORMANCECOUNTERSELEMENT_GET_ENABLED_OFFSET UNITYSDK_OFFSET(0x18F54470)
+#define SYSTEM_NET_CONFIGURATION_PERFORMANCECOUNTERSELEMENT_GET_PROPERTIES_OFFSET UNITYSDK_OFFSET(0x18F544F0)
+#define SYSTEM_NET_CONFIGURATION_PERFORMANCECOUNTERSELEMENT_SET_ENABLED_OFFSET UNITYSDK_OFFSET(0x18F544B0)
+#define SYSTEM_NET_CONFIGURATION_PERFORMANCECOUNTERSELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x18F54430)
 
 namespace System::Net::Configuration
 {
-	inline static constexpr unsigned int PerformanceCountersElement_TypeDefinitionIndex = 3062;
+	inline static constexpr unsigned int PerformanceCountersElement_TypeDefinitionIndex = 4142;
 
 	class PerformanceCountersElement : public ::System::Configuration::ConfigurationElement
 	{
@@ -17,6 +19,16 @@ namespace System::Net::Configuration
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PERFORMANCECOUNTERSELEMENT__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_Enabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PERFORMANCECOUNTERSELEMENT_GET_ENABLED_OFFSET))(this);
+		}
+
+		::System::Void set_Enabled(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PERFORMANCECOUNTERSELEMENT_SET_ENABLED_OFFSET))(this, value);
 		}
 
 		::System::Configuration::ConfigurationPropertyCollection* get_Properties()

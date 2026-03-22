@@ -3,7 +3,7 @@
 
 namespace Microsoft::Win32
 {
-	inline static constexpr unsigned int RegistryHive_TypeDefinitionIndex = 103;
+	inline static constexpr unsigned int RegistryHive_TypeDefinitionIndex = 91;
 
 	enum class RegistryHive : ::System::Int32
 	{

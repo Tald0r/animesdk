@@ -2,13 +2,14 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/IO/Stream.h"
 
-#define SYSTEM_NET_SECURITY_AUTHENTICATEDSTREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17EECC70)
-#define SYSTEM_NET_SECURITY_AUTHENTICATEDSTREAM_GET_INNERSTREAM_OFFSET UNITYSDK_OFFSET(0x17EECC60)
-#define SYSTEM_NET_SECURITY_AUTHENTICATEDSTREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x17EECB10)
+#define SYSTEM_NET_SECURITY_AUTHENTICATEDSTREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18FD9400)
+#define SYSTEM_NET_SECURITY_AUTHENTICATEDSTREAM_GET_INNERSTREAM_OFFSET UNITYSDK_OFFSET(0x18FF52A0)
+#define SYSTEM_NET_SECURITY_AUTHENTICATEDSTREAM_GET_LEAVEINNERSTREAMOPEN_OFFSET UNITYSDK_OFFSET(0x18FF5290)
+#define SYSTEM_NET_SECURITY_AUTHENTICATEDSTREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x18FD6510)
 
 namespace System::Net::Security
 {
-	inline static constexpr unsigned int AuthenticatedStream_TypeDefinitionIndex = 2901;
+	inline static constexpr unsigned int AuthenticatedStream_TypeDefinitionIndex = 3692;
 
 	class AuthenticatedStream : public ::System::IO::Stream
 	{
@@ -19,6 +20,11 @@ namespace System::Net::Security
 		::System::Void _ctor(::System::IO::Stream* innerStream, ::System::Boolean leaveInnerStreamOpen)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_SECURITY_AUTHENTICATEDSTREAM__CTOR_OFFSET))(this, innerStream, leaveInnerStreamOpen);
+		}
+
+		::System::Boolean get_LeaveInnerStreamOpen()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SECURITY_AUTHENTICATEDSTREAM_GET_LEAVEINNERSTREAMOPEN_OFFSET))(this);
 		}
 
 		::System::IO::Stream* get_InnerStream()

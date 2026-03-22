@@ -1,0 +1,152 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_208CC9941471731A_740;
+class Class_2_5FC8B03E48700862;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class UIArcadeLevelInfoWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralShopLevelInfoWidgetController; }
+namespace System { class String; }
+namespace UnityEngine { class RectTransform; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GETCURRENTLEVEL_OFFSET UNITYSDK_OFFSET(0xDC3FB10)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GETDESCTITLEKEY_OFFSET UNITYSDK_OFFSET(0xDC40A00)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GETMAXLEVEL_OFFSET UNITYSDK_OFFSET(0xDC3F9D0)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GETTEMPLATE_OFFSET UNITYSDK_OFFSET(0xDC40420)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GETTITLEKEY_OFFSET UNITYSDK_OFFSET(0xDC40970)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xDC3F2C0)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xDC3F2D0)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xDC40040)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xDC3FFB0)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xDC3F370)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xDC3FF00)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_REFRESHLAYOUT_OFFSET UNITYSDK_OFFSET(0xDC3FE50)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_UPDATELEVELITEM_OFFSET UNITYSDK_OFFSET(0xDC3FC60)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xDC40A90)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER__UPDATELEVELITEM_B__7_0_OFFSET UNITYSDK_OFFSET(0xDC40AB0)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xDC40B50)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xDC40BC0)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xDC40C40)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xDC40C50)
+#define MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xDC40C60)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIArcadeLevelInfoDialogPopWindowController_TypeDefinitionIndex = 47300;
+
+	class UIArcadeLevelInfoDialogPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::System::Int32 _MaxLevel; // 0x2F8
+		::System::Int32 _curSelectLevel; // 0x2FC
+		::MoleMole::UIGeneralShopLevelInfoWidgetController* _selectCtrl; // 0x300
+		::Class_2_5FC8B03E48700862* _view; // 0x308
+		::UnityEngine::RectTransform* detailContentRectTrans; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void UpdateLevelItem(::MoleMole::UIArcadeLevelInfoWidgetController* ctrl, ::System::Int32 dataIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIArcadeLevelInfoWidgetController*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_UPDATELEVELITEM_OFFSET))(this, ctrl, dataIndex);
+		}
+
+		::System::Void RefreshLayout()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_REFRESHLAYOUT_OFFSET))(this);
+		}
+
+		::System::Int32 GetMaxLevel()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GETMAXLEVEL_OFFSET))(this);
+		}
+
+		::System::Int32 GetCurrentLevel()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GETCURRENTLEVEL_OFFSET))(this);
+		}
+
+		::System::String* GetTitleKey()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GETTITLEKEY_OFFSET))(this);
+		}
+
+		::System::String* GetDescTitleKey()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GETDESCTITLEKEY_OFFSET))(this);
+		}
+
+		::Class_2_208CC9941471731A_740* GetTemplate(::System::Int32 level)
+		{
+			return ((::Class_2_208CC9941471731A_740*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER_GETTEMPLATE_OFFSET))(this, level);
+		}
+
+		::System::Void _UpdateLevelItem_b__7_0(::MoleMole::UIGeneralShopLevelInfoWidgetController* selectCtrl)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIGeneralShopLevelInfoWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER__UPDATELEVELITEM_B__7_0_OFFSET))(this, selectCtrl);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADELEVELINFODIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

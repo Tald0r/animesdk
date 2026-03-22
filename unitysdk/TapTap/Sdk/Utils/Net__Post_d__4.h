@@ -8,27 +8,27 @@ namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class WWW; }
 
-#define TAPTAP_SDK_UTILS_NET__POST_D__4_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x17F766F0)
-#define TAPTAP_SDK_UTILS_NET__POST_D__4_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x17F76FF0)
-#define TAPTAP_SDK_UTILS_NET__POST_D__4_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x17F77050)
-#define TAPTAP_SDK_UTILS_NET__POST_D__4_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x17F77000)
-#define TAPTAP_SDK_UTILS_NET__POST_D__4_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17F766E0)
-#define TAPTAP_SDK_UTILS_NET__POST_D__4__CTOR_OFFSET UNITYSDK_OFFSET(0x17F751C0)
+#define TAPTAP_SDK_UTILS_NET__POST_D__4_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1A7CF1E0)
+#define TAPTAP_SDK_UTILS_NET__POST_D__4_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1A7CFAF0)
+#define TAPTAP_SDK_UTILS_NET__POST_D__4_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1A7CFB50)
+#define TAPTAP_SDK_UTILS_NET__POST_D__4_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x1A7CFB00)
+#define TAPTAP_SDK_UTILS_NET__POST_D__4_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1A7CF1D0)
+#define TAPTAP_SDK_UTILS_NET__POST_D__4__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7CDC60)
 
 namespace TapTap::Sdk::Utils
 {
-	inline static constexpr unsigned int Net__Post_d__4_TypeDefinitionIndex = 6338;
+	inline static constexpr unsigned int Net__Post_d__4_TypeDefinitionIndex = 9479;
 
 	class Net__Post_d__4 : public ::System::Object
 	{
 	public:
-		::UnityEngine::WWW* _w_5__2; // 0x10
-		::System::String* url; // 0x18
-		::System::Action_1<::System::String*>* methodForResult; // 0x20
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* formParams; // 0x28
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* queryParams; // 0x30
-		::System::Object* __2__current; // 0x38
-		::System::Action_2<::System::Int32, ::System::String*>* methodForError; // 0x40
+		::System::Object* __2__current; // 0x10
+		::UnityEngine::WWW* _w_5__2; // 0x18
+		::System::Action_2<::System::Int32, ::System::String*>* methodForError; // 0x20
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* queryParams; // 0x28
+		::System::Action_1<::System::String*>* methodForResult; // 0x30
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* formParams; // 0x38
+		::System::String* url; // 0x40
 		::System::Int32 __1__state; // 0x48
 
 		::System::Void _ctor(::System::Int32 __1__state)

@@ -9,20 +9,20 @@ namespace System::Collections { class IEnumerator; }
 namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NEWTONSOFT_JSON_BSON_BSONOBJECT_ADD_OFFSET UNITYSDK_OFFSET(0x15D76A80)
-#define NEWTONSOFT_JSON_BSON_BSONOBJECT_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x15D76B60)
-#define NEWTONSOFT_JSON_BSON_BSONOBJECT_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x15D76B50)
-#define NEWTONSOFT_JSON_BSON_BSONOBJECT_SYSTEM_COLLECTIONS_IENUMERABLE_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x15D76C00)
-#define NEWTONSOFT_JSON_BSON_BSONOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x15D76CA0)
+#define NEWTONSOFT_JSON_BSON_BSONOBJECT_ADD_OFFSET UNITYSDK_OFFSET(0x1ACCC370)
+#define NEWTONSOFT_JSON_BSON_BSONOBJECT_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1ACCC430)
+#define NEWTONSOFT_JSON_BSON_BSONOBJECT_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1ACCC420)
+#define NEWTONSOFT_JSON_BSON_BSONOBJECT_SYSTEM_COLLECTIONS_IENUMERABLE_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1ACCC4D0)
+#define NEWTONSOFT_JSON_BSON_BSONOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x1ACCC570)
 
 namespace Newtonsoft::Json::Bson
 {
-	inline static constexpr unsigned int BsonObject_TypeDefinitionIndex = 8325;
+	inline static constexpr unsigned int BsonObject_TypeDefinitionIndex = 7101;
 
 	class BsonObject : public ::Newtonsoft::Json::Bson::BsonToken
 	{
 	public:
-		::System::Collections::Generic::List_1<::Newtonsoft::Json::Bson::BsonProperty*>* _children; // 0x18
+		::System::Collections::Generic::List_1<::Newtonsoft::Json::Bson::BsonProperty*>* _children; // 0x20
 
 		::System::Void _ctor()
 		{

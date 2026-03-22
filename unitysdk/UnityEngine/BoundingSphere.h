@@ -3,12 +3,11 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define UNITYENGINE_BOUNDINGSPHERE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x14A6D00)
-#define UNITYENGINE_BOUNDINGSPHERE__CTOR_OFFSET UNITYSDK_OFFSET(0x246B0)
+#define UNITYENGINE_BOUNDINGSPHERE__CTOR_OFFSET UNITYSDK_OFFSET(0x33FDB0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int BoundingSphere_TypeDefinitionIndex = 3848;
+	inline static constexpr unsigned int BoundingSphere_TypeDefinitionIndex = 5142;
 
 	struct alignas(4) BoundingSphere
 	{
@@ -19,12 +18,5 @@ namespace UnityEngine
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_BOUNDINGSPHERE__CTOR_OFFSET))(this, pos, rad);
 		}
-
-		/*
-		::System::Void _ctor_1(::UnityEngine::Vector4 packedSphere)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector4))((::PBYTE)hIl2Cpp + UNITYENGINE_BOUNDINGSPHERE__CTOR_1_OFFSET))(this, packedSphere);
-		}
-		*/
 	};
 }

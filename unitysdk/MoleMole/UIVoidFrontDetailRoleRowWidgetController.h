@@ -1,0 +1,66 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_10C1E1662BD0781C;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA08C040)
+#define MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA08C0B0)
+#define MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xA08C2F0)
+#define MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER_ONSETDATA_OFFSET UNITYSDK_OFFSET(0xA08C1B0)
+#define MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA08C3B0)
+#define MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA08C3E0)
+#define MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xA08C450)
+#define MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER___BASE_ONSETDATA_OFFSET UNITYSDK_OFFSET(0xA08C4B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVoidFrontDetailRoleRowWidgetController_TypeDefinitionIndex = 38181;
+
+	class UIVoidFrontDetailRoleRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_10C1E1662BD0781C* get__viewModel()
+		{
+			return ((::Class_2_10C1E1662BD0781C*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnSetData(::System::Object* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER_ONSETDATA_OFFSET))(this, data);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnSetData(::System::Object* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILROLEROWWIDGETCONTROLLER___BASE_ONSETDATA_OFFSET))(this, P0);
+		}
+	};
+}

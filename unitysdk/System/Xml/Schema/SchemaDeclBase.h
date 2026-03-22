@@ -9,40 +9,31 @@ namespace System::Xml { class XmlQualifiedName; }
 namespace System::Xml::Schema { class XmlSchemaDatatype; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_ADDVALUE_OFFSET UNITYSDK_OFFSET(0x17D77620)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_DATATYPE_OFFSET UNITYSDK_OFFSET(0x17D77600)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_DEFAULTVALUERAW_OFFSET UNITYSDK_OFFSET(0x17D77690)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_DEFAULTVALUETYPED_OFFSET UNITYSDK_OFFSET(0x17D776B0)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_ISDECLAREDINEXTERNAL_OFFSET UNITYSDK_OFFSET(0x17D775B0)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_NAME_OFFSET UNITYSDK_OFFSET(0x17D775A0)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_PREFIX_OFFSET UNITYSDK_OFFSET(0x17D76CE0)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_PRESENCE_OFFSET UNITYSDK_OFFSET(0x17D775D0)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_VALUES_OFFSET UNITYSDK_OFFSET(0x17D77680)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_SET_DATATYPE_OFFSET UNITYSDK_OFFSET(0x17D77610)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_SET_DEFAULTVALUETYPED_OFFSET UNITYSDK_OFFSET(0x17D776C0)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_SET_ISDECLAREDINEXTERNAL_OFFSET UNITYSDK_OFFSET(0x17D775C0)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_SET_PRESENCE_OFFSET UNITYSDK_OFFSET(0x17D775E0)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_SET_SCHEMATYPE_OFFSET UNITYSDK_OFFSET(0x17D775F0)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17D76C50)
-#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x17D76B60)
+#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_ADDVALUE_OFFSET UNITYSDK_OFFSET(0x19E5B620)
+#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_CHECKENUMERATION_OFFSET UNITYSDK_OFFSET(0x19E638A0)
+#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_CHECKVALUE_OFFSET UNITYSDK_OFFSET(0x19E63940)
+#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_DEFAULTVALUERAW_OFFSET UNITYSDK_OFFSET(0x19E63880)
+#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_PREFIX_OFFSET UNITYSDK_OFFSET(0x19E5A460)
+#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19E63810)
+#define SYSTEM_XML_SCHEMA_SCHEMADECLBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x19E637A0)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int SchemaDeclBase_TypeDefinitionIndex = 2154;
+	inline static constexpr unsigned int SchemaDeclBase_TypeDefinitionIndex = 2083;
 
 	class SchemaDeclBase : public ::System::Object
 	{
 	public:
-		::System::Xml::XmlQualifiedName* name; // 0x10
+		::System::String* prefix; // 0x10
 		::System::Object* defaultValueTyped; // 0x18
-		::System::String* prefix; // 0x20
-		::System::Collections::Generic::List_1<::System::String*>* values; // 0x28
-		::System::Xml::Schema::XmlSchemaType* schemaType; // 0x30
-		::System::String* defaultValueRaw; // 0x38
-		::System::Xml::Schema::XmlSchemaDatatype* datatype; // 0x40
-		::System::Int64 maxLength; // 0x48
-		::System::Boolean isDeclaredInExternal; // 0x50
-		::System::Xml::Schema::SchemaDeclBase_Use presence; // 0x54
+		::System::Collections::Generic::List_1<::System::String*>* values; // 0x20
+		::System::String* defaultValueRaw; // 0x28
+		::System::Xml::Schema::XmlSchemaDatatype* datatype; // 0x30
+		::System::Xml::XmlQualifiedName* name; // 0x38
+		::System::Xml::Schema::XmlSchemaType* schemaType; // 0x40
+		::System::Boolean isDeclaredInExternal; // 0x48
+		::System::Xml::Schema::SchemaDeclBase_Use presence; // 0x4C
+		::System::Int64 maxLength; // 0x50
 		::System::Int64 minLength; // 0x58
 
 		::System::Void _ctor(::System::Xml::XmlQualifiedName* name, ::System::String* prefix)
@@ -55,49 +46,9 @@ namespace System::Xml::Schema
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE__CTOR_1_OFFSET))(this);
 		}
 
-		::System::Xml::XmlQualifiedName* get_Name()
-		{
-			return ((::System::Xml::XmlQualifiedName*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_NAME_OFFSET))(this);
-		}
-
 		::System::String* get_Prefix()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_PREFIX_OFFSET))(this);
-		}
-
-		::System::Boolean get_IsDeclaredInExternal()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_ISDECLAREDINEXTERNAL_OFFSET))(this);
-		}
-
-		::System::Void set_IsDeclaredInExternal(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_SET_ISDECLAREDINEXTERNAL_OFFSET))(this, value);
-		}
-
-		::System::Xml::Schema::SchemaDeclBase_Use get_Presence()
-		{
-			return ((::System::Xml::Schema::SchemaDeclBase_Use(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_PRESENCE_OFFSET))(this);
-		}
-
-		::System::Void set_Presence(::System::Xml::Schema::SchemaDeclBase_Use value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::SchemaDeclBase_Use))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_SET_PRESENCE_OFFSET))(this, value);
-		}
-
-		::System::Void set_SchemaType(::System::Xml::Schema::XmlSchemaType* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaType*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_SET_SCHEMATYPE_OFFSET))(this, value);
-		}
-
-		::System::Xml::Schema::XmlSchemaDatatype* get_Datatype()
-		{
-			return ((::System::Xml::Schema::XmlSchemaDatatype*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_DATATYPE_OFFSET))(this);
-		}
-
-		::System::Void set_Datatype(::System::Xml::Schema::XmlSchemaDatatype* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaDatatype*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_SET_DATATYPE_OFFSET))(this, value);
 		}
 
 		::System::Void AddValue(::System::String* value)
@@ -105,24 +56,19 @@ namespace System::Xml::Schema
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_ADDVALUE_OFFSET))(this, value);
 		}
 
-		::System::Collections::Generic::List_1<::System::String*>* get_Values()
-		{
-			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_VALUES_OFFSET))(this);
-		}
-
 		::System::String* get_DefaultValueRaw()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_DEFAULTVALUERAW_OFFSET))(this);
 		}
 
-		::System::Object* get_DefaultValueTyped()
+		::System::Boolean CheckEnumeration(::System::Object* pVal)
 		{
-			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_GET_DEFAULTVALUETYPED_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_CHECKENUMERATION_OFFSET))(this, pVal);
 		}
 
-		::System::Void set_DefaultValueTyped(::System::Object* value)
+		::System::Boolean CheckValue(::System::Object* pVal)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_SET_DEFAULTVALUETYPED_OFFSET))(this, value);
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_SCHEMADECLBASE_CHECKVALUE_OFFSET))(this, pVal);
 		}
 	};
 }

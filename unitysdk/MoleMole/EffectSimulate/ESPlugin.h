@@ -1,0 +1,44 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_17B78A87EAE1DCED.h"
+#include "unitysdk/MoleMole/EffectSimulate/ESLoopable.h"
+
+#define MOLEMOLE_EFFECTSIMULATE_ESPLUGIN_METHOD_3_2685B6183E614529_1_OFFSET UNITYSDK_OFFSET(0xE0E42B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPLUGIN_METHOD_3_2685B6183E614529_OFFSET UNITYSDK_OFFSET(0xE0E4130)
+#define MOLEMOLE_EFFECTSIMULATE_ESPLUGIN_METHOD_3_49AC00594530B714_1_OFFSET UNITYSDK_OFFSET(0xE0E4320)
+#define MOLEMOLE_EFFECTSIMULATE_ESPLUGIN_METHOD_3_49AC00594530B714_OFFSET UNITYSDK_OFFSET(0xE0E41E0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPLUGIN__CTOR_OFFSET UNITYSDK_OFFSET(0xE0E4240)
+
+namespace MoleMole::EffectSimulate
+{
+	inline static constexpr unsigned int ESPlugin_TypeDefinitionIndex = 64770;
+
+	class ESPlugin : public ::MoleMole::EffectSimulate::ESLoopable
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPLUGIN__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Method_3_2685B6183E614529(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPLUGIN_METHOD_3_2685B6183E614529_OFFSET))(this, a1);
+		}
+
+		::Enum_3_17B78A87EAE1DCED Method_3_49AC00594530B714()
+		{
+			return ((::Enum_3_17B78A87EAE1DCED(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPLUGIN_METHOD_3_49AC00594530B714_OFFSET))(this);
+		}
+
+		::System::Void Method_3_2685B6183E614529_1(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPLUGIN_METHOD_3_2685B6183E614529_1_OFFSET))(this, a1);
+		}
+
+		::Enum_3_17B78A87EAE1DCED Method_3_49AC00594530B714_1()
+		{
+			return ((::Enum_3_17B78A87EAE1DCED(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPLUGIN_METHOD_3_49AC00594530B714_1_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,522 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_51B971E69E38047E_Enum_3_0382F90FC5FDF590.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_B90C1A15EA6E3C2B.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_1_DCC4A220F5A3F1EE;
+class Class_1_EC682544DE1271C8;
+class Class_2_51B971E69E38047E;
+class Class_2_79F6D62CE30E3F8E_2;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIPhotoWallObjectControlWidgetController; }
+namespace MoleMole { class UIPhotoWallPageController; }
+namespace System { template <typename T> class Action_1; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+namespace UnityEngine::EventSystems { class PointerEventData; }
+
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ADDNEWOBJECTTOPOSITION_OFFSET UNITYSDK_OFFSET(0xAF6CAD0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_CANADDNEWOBJECTTOPOSITION_OFFSET UNITYSDK_OFFSET(0xAF6B670)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_CREATEFUNC_OFFSET UNITYSDK_OFFSET(0xAF68CB0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ENDDRAG_OFFSET UNITYSDK_OFFSET(0xAF62680)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_GET_DIRTY_OFFSET UNITYSDK_OFFSET(0xAF66FE0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_GET_EDITING_OFFSET UNITYSDK_OFFSET(0xAF66FD0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_GET_PARENTPHOTOWALLCONTROLLER_OFFSET UNITYSDK_OFFSET(0xAF67D50)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_GET__PARENTPHOTOWALLCONTROLLER_OFFSET UNITYSDK_OFFSET(0xAF639B0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_INITOBJECTCONTROL_OFFSET UNITYSDK_OFFSET(0xAF61B80)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONADDNEWOBJECTLOADED_OFFSET UNITYSDK_OFFSET(0xAF6B870)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONAPPLICATIONFOCUS_OFFSET UNITYSDK_OFFSET(0xAF64120)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONBEGINDRAGCONTROL_OFFSET UNITYSDK_OFFSET(0xAF6E830)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKBAG_OFFSET UNITYSDK_OFFSET(0xAF6D430)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKCAMERARESET_OFFSET UNITYSDK_OFFSET(0xAF67DD0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKCANCEL_OFFSET UNITYSDK_OFFSET(0xAF6D670)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKCONFIRM_1_OFFSET UNITYSDK_OFFSET(0xAF6CCF0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKCONFIRM_OFFSET UNITYSDK_OFFSET(0xAF671B0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKEMPTY_OFFSET UNITYSDK_OFFSET(0xAF670F0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKOBJECT_OFFSET UNITYSDK_OFFSET(0xAF66D60)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKSAVE_OFFSET UNITYSDK_OFFSET(0xAF68300)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKSHOWHIDEUI_OFFSET UNITYSDK_OFFSET(0xAF66210)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKSHOWUI_OFFSET UNITYSDK_OFFSET(0xAF678A0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKTAB_OFFSET UNITYSDK_OFFSET(0xAF68470)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAF630A0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONDRAGCONTROL_OFFSET UNITYSDK_OFFSET(0xAF6E900)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONDRAGFROMCHILD_OFFSET UNITYSDK_OFFSET(0xAF6BCB0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONDRAGINSCROLL_OFFSET UNITYSDK_OFFSET(0xAF69740)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONDRAGSINGLEOBJECT_OFFSET UNITYSDK_OFFSET(0xAF63E70)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONDRAG_OFFSET UNITYSDK_OFFSET(0xAF67770)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONEDITGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xAF698E0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONENDDRAGCHILD_OFFSET UNITYSDK_OFFSET(0xAF68EA0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONENDDRAGCONTROL_OFFSET UNITYSDK_OFFSET(0xAF6EA20)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONENDDRAG_OFFSET UNITYSDK_OFFSET(0xAF67820)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xAF63420)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xAF650E0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xAF64230)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONNUMCHANGE_OFFSET UNITYSDK_OFFSET(0xAF627C0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONROTATEEND_OFFSET UNITYSDK_OFFSET(0xAF6D8F0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONSELECTCHILD_OFFSET UNITYSDK_OFFSET(0xAF6A6C0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONSELECTTHEME_OFFSET UNITYSDK_OFFSET(0xAF6A1F0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xAF61A50)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONSTARTDRAG_OFFSET UNITYSDK_OFFSET(0xAF67440)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAF63140)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAF61370)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAF619A0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_PHOTOWALLITEMCOMPARISON_OFFSET UNITYSDK_OFFSET(0xAF68BA0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_PHOTOWALLTHEMECOMPARISON_OFFSET UNITYSDK_OFFSET(0xAF68560)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_REFRESHERRORTIP_OFFSET UNITYSDK_OFFSET(0xAF6C580)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_REFRESHITEMLIST_OFFSET UNITYSDK_OFFSET(0xAF646A0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_REVERTDATA_OFFSET UNITYSDK_OFFSET(0xAF66EC0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_SAVE_OFFSET UNITYSDK_OFFSET(0xAF67000)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_SCREENTOOBJECTPLANEPOS_OFFSET UNITYSDK_OFFSET(0xAF66670)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_SCREENTOWALLPLANEPOS_OFFSET UNITYSDK_OFFSET(0xAF6C760)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_SETBLOCKALLBUTTON_OFFSET UNITYSDK_OFFSET(0xAF6D970)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_SET_DIRTY_OFFSET UNITYSDK_OFFSET(0xAF66FF0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_STARTDRAGNEWOBJECT_OFFSET UNITYSDK_OFFSET(0xAF6BFA0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_STARTDRAGSINGLEOBJECT_OFFSET UNITYSDK_OFFSET(0xAF67550)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_STARTEDITSINGLEOBJECT_OFFSET UNITYSDK_OFFSET(0xAF67220)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_STOPEDITSINGLEOBJECT_OFFSET UNITYSDK_OFFSET(0xAF62130)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_TRYADDBLOCK_OFFSET UNITYSDK_OFFSET(0xAF67C70)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_TRYREDUCEBLOCK_OFFSET UNITYSDK_OFFSET(0xAF63330)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_UPDATEVALID_OFFSET UNITYSDK_OFFSET(0xAF669C0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xAF63A60)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAF6EB00)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONCLICKSHOWHIDEUI_B__24_0_OFFSET UNITYSDK_OFFSET(0xAF6F1A0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONCLICKSHOWHIDEUI_B__24_1_OFFSET UNITYSDK_OFFSET(0xAF6F290)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONINPUTACTION_B__10_0_OFFSET UNITYSDK_OFFSET(0xAF6ECD0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONINPUTACTION_B__10_1_OFFSET UNITYSDK_OFFSET(0xAF6F100)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONLAYOUTPLATFORMCHANGED_B__9_0_OFFSET UNITYSDK_OFFSET(0xAF6EC30)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONSELECTTHEME_B__55_0_OFFSET UNITYSDK_OFFSET(0xAF6F400)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAF6F410)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0xAF6F480)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xAF6F4E0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xAF6F510)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xAF6F570)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAF6F5E0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAF6F660)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAF6F6C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPhotoWallEditModeWidgetController_TypeDefinitionIndex = 63196;
+
+	class UIPhotoWallEditModeWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_2* _view; // 0x2A0
+		::System::Boolean _isEditingFromBag; // 0x2A8
+		::System::Boolean _isEditSingleObject; // 0x2A9
+		::Class_1_EC682544DE1271C8* _editSingleObject; // 0x2B0
+		::Class_2_51B971E69E38047E* _model; // 0x2B8
+		::System::Boolean _draging; // 0x2C0
+		::UnityEngine::Vector3 _dragStartWorldPos; // 0x2C4
+		::UnityEngine::Vector3 _dragStartObjectPos; // 0x2D0
+		::System::Collections::Generic::List_1<::Class_1_DCC4A220F5A3F1EE*>* _currentList; // 0x2E0
+		::System::Boolean _blocking; // 0x2E8
+		::System::Boolean _dirty; // 0x2E9
+		::System::Boolean _hideUI; // 0x2EA
+		::System::Boolean _isFloatingObj; // 0x2EB
+		::Class_2_51B971E69E38047E_Enum_3_0382F90FC5FDF590 _lastReason; // 0x2EC
+		::System::Single _lastErrorTime; // 0x2F0
+		::System::Int32 _currentPointerId; // 0x2F4
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UIPhotoWallObjectControlWidgetController*>* _objectControlWidgetControllers; // 0x2F8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnApplicationFocus(::System::Boolean focus)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONAPPLICATIONFOCUS_OFFSET))(this, focus);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void RevertData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_REVERTDATA_OFFSET))(this);
+		}
+
+		::System::Boolean get_Editing()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_GET_EDITING_OFFSET))(this);
+		}
+
+		::System::Boolean get_Dirty()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_GET_DIRTY_OFFSET))(this);
+		}
+
+		::System::Void set_Dirty(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_SET_DIRTY_OFFSET))(this, value);
+		}
+
+		::System::Void Save(::System::Boolean showTips)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_SAVE_OFFSET))(this, showTips);
+		}
+
+		::System::Void OnClickEmpty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKEMPTY_OFFSET))(this);
+		}
+
+		::System::Void OnClickObject(::Class_1_EC682544DE1271C8* target, ::System::Boolean playAnim)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_EC682544DE1271C8*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKOBJECT_OFFSET))(this, target, playAnim);
+		}
+
+		::System::Void OnStartDrag(::Class_1_EC682544DE1271C8* target, ::UnityEngine::Vector3 screenPos, ::UnityEngine::EventSystems::PointerEventData* eventData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_EC682544DE1271C8*, ::UnityEngine::Vector3, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONSTARTDRAG_OFFSET))(this, target, screenPos, eventData);
+		}
+
+		::System::Boolean OnDrag(::UnityEngine::Vector3 screenPos)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONDRAG_OFFSET))(this, screenPos);
+		}
+
+		::System::Void OnEndDrag()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONENDDRAG_OFFSET))(this);
+		}
+
+		::System::Boolean OnClickShowUI()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKSHOWUI_OFFSET))(this);
+		}
+
+		::System::Void OnClickShowHideUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKSHOWHIDEUI_OFFSET))(this);
+		}
+
+		::MoleMole::UIPhotoWallPageController* get__parentPhotoWallController()
+		{
+			return ((::MoleMole::UIPhotoWallPageController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_GET__PARENTPHOTOWALLCONTROLLER_OFFSET))(this);
+		}
+
+		::MoleMole::UIPhotoWallPageController* get_ParentPhotoWallController()
+		{
+			return ((::MoleMole::UIPhotoWallPageController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_GET_PARENTPHOTOWALLCONTROLLER_OFFSET))(this);
+		}
+
+		::System::Void OnClickCameraReset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKCAMERARESET_OFFSET))(this);
+		}
+
+		::System::Void OnClickSave()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKSAVE_OFFSET))(this);
+		}
+
+		::System::Void OnClickTab(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKTAB_OFFSET))(this, index);
+		}
+
+		::System::Void RefreshItemList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_REFRESHITEMLIST_OFFSET))(this);
+		}
+
+		::System::Int32 PhotoWallThemeComparison(::Class_1_DCC4A220F5A3F1EE* x, ::Class_1_DCC4A220F5A3F1EE* y)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_DCC4A220F5A3F1EE*, ::Class_1_DCC4A220F5A3F1EE*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_PHOTOWALLTHEMECOMPARISON_OFFSET))(this, x, y);
+		}
+
+		::System::Int32 PhotoWallItemComparison(::System::Int32 x, ::System::Int32 y)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_PHOTOWALLITEMCOMPARISON_OFFSET))(this, x, y);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateFunc(::Enum_3_B90C1A15EA6E3C2B arg1, ::System::Func_1<::MoleMole::UIControlReference*>* arg2)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::Enum_3_B90C1A15EA6E3C2B, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_CREATEFUNC_OFFSET))(this, arg1, arg2);
+		}
+
+		::System::Void OnEndDragChild()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONENDDRAGCHILD_OFFSET))(this);
+		}
+
+		::System::Void OnDragInScroll(::UnityEngine::EventSystems::PointerEventData* delta)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONDRAGINSCROLL_OFFSET))(this, delta);
+		}
+
+		::System::Void OnEditGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONEDITGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void OnSelectTheme(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONSELECTTHEME_OFFSET))(this, index);
+		}
+
+		::System::Void OnSelectChild(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONSELECTCHILD_OFFSET))(this, index);
+		}
+
+		::System::Void TryAddBlock()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_TRYADDBLOCK_OFFSET))(this);
+		}
+
+		::System::Void TryReduceBlock()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_TRYREDUCEBLOCK_OFFSET))(this);
+		}
+
+		::System::Void OnAddNewObjectLoaded(::Class_1_EC682544DE1271C8* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_EC682544DE1271C8*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONADDNEWOBJECTLOADED_OFFSET))(this, obj);
+		}
+
+		::System::Void OnDragFromChild(::System::Int32 index, ::UnityEngine::Vector3 pointScreenPos)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONDRAGFROMCHILD_OFFSET))(this, index, pointScreenPos);
+		}
+
+		::System::Void StartEditSingleObject(::Class_1_EC682544DE1271C8* target, ::System::Boolean fromBag, ::System::Boolean playAnim)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_EC682544DE1271C8*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_STARTEDITSINGLEOBJECT_OFFSET))(this, target, fromBag, playAnim);
+		}
+
+		::System::Void StopEditSingleObject(::System::Boolean isRevert)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_STOPEDITSINGLEOBJECT_OFFSET))(this, isRevert);
+		}
+
+		::System::Void StartDragNewObject(::System::Int32 itemConfigId, ::UnityEngine::Vector2 screenPos)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_STARTDRAGNEWOBJECT_OFFSET))(this, itemConfigId, screenPos);
+		}
+
+		::System::Boolean CanAddNewObjectToPosition(::System::Int32 itemConfigId, ::UnityEngine::Vector2 screenPos, ::System::Boolean showTips)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::UnityEngine::Vector2, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_CANADDNEWOBJECTTOPOSITION_OFFSET))(this, itemConfigId, screenPos, showTips);
+		}
+
+		::System::Boolean AddNewObjectToPosition(::System::Int32 itemConfigId, ::UnityEngine::Vector2 screenPos, ::System::Action_1<::Class_1_EC682544DE1271C8*>* callback)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::UnityEngine::Vector2, ::System::Action_1<::Class_1_EC682544DE1271C8*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ADDNEWOBJECTTOPOSITION_OFFSET))(this, itemConfigId, screenPos, callback);
+		}
+
+		::System::Void StartDragSingleObject(::Class_1_EC682544DE1271C8* target, ::UnityEngine::Vector3 screenPos)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_EC682544DE1271C8*, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_STARTDRAGSINGLEOBJECT_OFFSET))(this, target, screenPos);
+		}
+
+		::System::Void OnDragSingleObject(::Class_1_EC682544DE1271C8* target, ::UnityEngine::Vector3 screenPos)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_EC682544DE1271C8*, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONDRAGSINGLEOBJECT_OFFSET))(this, target, screenPos);
+		}
+
+		::System::Void EndDrag()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ENDDRAG_OFFSET))(this);
+		}
+
+		::System::Void UpdateValid(::Class_1_EC682544DE1271C8* target)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_EC682544DE1271C8*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_UPDATEVALID_OFFSET))(this, target);
+		}
+
+		::UnityEngine::Vector3 ScreenToObjectPlanePos(::UnityEngine::Vector3 screenPos, ::Class_1_EC682544DE1271C8* target)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::UnityEngine::Vector3, ::Class_1_EC682544DE1271C8*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_SCREENTOOBJECTPLANEPOS_OFFSET))(this, screenPos, target);
+		}
+
+		::UnityEngine::Vector3 ScreenToWallPlanePos(::UnityEngine::Vector3 screenPos, ::System::Int32 layer)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::UnityEngine::Vector3, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_SCREENTOWALLPLANEPOS_OFFSET))(this, screenPos, layer);
+		}
+
+		::System::Void InitObjectControl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_INITOBJECTCONTROL_OFFSET))(this);
+		}
+
+		::System::Boolean OnClickConfirm()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKCONFIRM_OFFSET))(this);
+		}
+
+		::System::Boolean OnClickConfirm_1(::System::Boolean showTips)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKCONFIRM_1_OFFSET))(this, showTips);
+		}
+
+		::System::Void OnClickBag()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKBAG_OFFSET))(this);
+		}
+
+		::System::Void OnClickCancel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONCLICKCANCEL_OFFSET))(this);
+		}
+
+		::System::Void OnNumChange(::System::Boolean dirty)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONNUMCHANGE_OFFSET))(this, dirty);
+		}
+
+		::System::Void RefreshErrorTip(::Class_2_51B971E69E38047E_Enum_3_0382F90FC5FDF590 reason)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_51B971E69E38047E_Enum_3_0382F90FC5FDF590))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_REFRESHERRORTIP_OFFSET))(this, reason);
+		}
+
+		::System::Void OnRotateEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONROTATEEND_OFFSET))(this);
+		}
+
+		::System::Void SetBlockAllButton(::System::Boolean block)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_SETBLOCKALLBUTTON_OFFSET))(this, block);
+		}
+
+		::System::Void OnBeginDragControl(::UnityEngine::EventSystems::PointerEventData* eventData)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONBEGINDRAGCONTROL_OFFSET))(this, eventData);
+		}
+
+		::System::Void OnDragControl(::UnityEngine::EventSystems::PointerEventData* eventData)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONDRAGCONTROL_OFFSET))(this, eventData);
+		}
+
+		::System::Void OnEndDragControl(::UnityEngine::EventSystems::PointerEventData* eventData)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER_ONENDDRAGCONTROL_OFFSET))(this, eventData);
+		}
+
+		::System::Void _OnLayoutPlatformChanged_b__9_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONLAYOUTPLATFORMCHANGED_B__9_0_OFFSET))(this);
+		}
+
+		::System::Void _OnInputAction_b__10_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONINPUTACTION_B__10_0_OFFSET))(this);
+		}
+
+		::System::Void _OnInputAction_b__10_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONINPUTACTION_B__10_1_OFFSET))(this);
+		}
+
+		::System::Void _OnClickShowHideUI_b__24_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONCLICKSHOWHIDEUI_B__24_0_OFFSET))(this);
+		}
+
+		::System::Void _OnClickShowHideUI_b__24_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONCLICKSHOWHIDEUI_B__24_1_OFFSET))(this);
+		}
+
+		::System::Void _OnSelectTheme_b__55_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER__ONSELECTTHEME_B__55_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

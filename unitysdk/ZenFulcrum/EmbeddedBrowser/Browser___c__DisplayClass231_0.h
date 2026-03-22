@@ -4,19 +4,19 @@
 
 namespace ZenFulcrum::EmbeddedBrowser { class Browser; }
 
-#define ZENFULCRUM_EMBEDDEDBROWSER_BROWSER___C__DISPLAYCLASS231_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18452C30)
-#define ZENFULCRUM_EMBEDDEDBROWSER_BROWSER___C__DISPLAYCLASS231_0__SETOVERLAY_B__0_OFFSET UNITYSDK_OFFSET(0x18458760)
-#define ZENFULCRUM_EMBEDDEDBROWSER_BROWSER___C__DISPLAYCLASS231_0__SETOVERLAY_B__1_OFFSET UNITYSDK_OFFSET(0x18458790)
+#define ZENFULCRUM_EMBEDDEDBROWSER_BROWSER___C__DISPLAYCLASS231_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0A43D0)
+#define ZENFULCRUM_EMBEDDEDBROWSER_BROWSER___C__DISPLAYCLASS231_0__SETOVERLAY_B__0_OFFSET UNITYSDK_OFFSET(0x1B0A43E0)
+#define ZENFULCRUM_EMBEDDEDBROWSER_BROWSER___C__DISPLAYCLASS231_0__SETOVERLAY_B__1_OFFSET UNITYSDK_OFFSET(0x1B0A4410)
 
 namespace ZenFulcrum::EmbeddedBrowser
 {
-	inline static constexpr unsigned int Browser___c__DisplayClass231_0_TypeDefinitionIndex = 29523;
+	inline static constexpr unsigned int Browser___c__DisplayClass231_0_TypeDefinitionIndex = 29504;
 
 	class Browser___c__DisplayClass231_0 : public ::System::Object
 	{
 	public:
-		::ZenFulcrum::EmbeddedBrowser::Browser* overlayBrowser; // 0x10
-		::ZenFulcrum::EmbeddedBrowser::Browser* __4__this; // 0x18
+		::ZenFulcrum::EmbeddedBrowser::Browser* __4__this; // 0x10
+		::ZenFulcrum::EmbeddedBrowser::Browser* overlayBrowser; // 0x18
 
 		::System::Void _ctor()
 		{

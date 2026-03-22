@@ -1,0 +1,86 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Mono/Security/X509/X509Extension.h"
+
+namespace Mono::Security { class ASN1; }
+namespace System { class String; }
+
+#define MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_DECODE_OFFSET UNITYSDK_OFFSET(0x1A9FEC90)
+#define MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_ENCODE_OFFSET UNITYSDK_OFFSET(0x1A9FEDC0)
+#define MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_GET_CERTIFICATEAUTHORITY_OFFSET UNITYSDK_OFFSET(0x1A9FEFD0)
+#define MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_GET_NAME_OFFSET UNITYSDK_OFFSET(0x1A9FEFF0)
+#define MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_GET_PATHLENCONSTRAINT_OFFSET UNITYSDK_OFFSET(0x1A9FF030)
+#define MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_SET_CERTIFICATEAUTHORITY_OFFSET UNITYSDK_OFFSET(0x1A9FEFE0)
+#define MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_SET_PATHLENCONSTRAINT_OFFSET UNITYSDK_OFFSET(0x1A9FF040)
+#define MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1A9FF110)
+#define MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A9FEC70)
+#define MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1A9FEC80)
+#define MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9FEC30)
+
+namespace Mono::Security::X509::Extensions
+{
+	inline static constexpr unsigned int BasicConstraintsExtension_TypeDefinitionIndex = 2329;
+
+	class BasicConstraintsExtension : public ::Mono::Security::X509::X509Extension
+	{
+	public:
+		// static const ::System::Int32 NoPathLengthConstraint = 0xFFFFFFFF; // 0x0
+		::System::Int32 pathLenConstraint; // 0x28
+		::System::Boolean cA; // 0x2C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::Mono::Security::ASN1* asn1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Mono::Security::ASN1*))((::PBYTE)hIl2Cpp + MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION__CTOR_1_OFFSET))(this, asn1);
+		}
+
+		::System::Void _ctor_2(::Mono::Security::X509::X509Extension* extension)
+		{
+			return ((::System::Void(*)(::PVOID, ::Mono::Security::X509::X509Extension*))((::PBYTE)hIl2Cpp + MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION__CTOR_2_OFFSET))(this, extension);
+		}
+
+		::System::Void Decode()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_DECODE_OFFSET))(this);
+		}
+
+		::System::Void Encode()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_ENCODE_OFFSET))(this);
+		}
+
+		::System::Boolean get_CertificateAuthority()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_GET_CERTIFICATEAUTHORITY_OFFSET))(this);
+		}
+
+		::System::Void set_CertificateAuthority(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_SET_CERTIFICATEAUTHORITY_OFFSET))(this, value);
+		}
+
+		::System::String* get_Name()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_GET_NAME_OFFSET))(this);
+		}
+
+		::System::Int32 get_PathLenConstraint()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_GET_PATHLENCONSTRAINT_OFFSET))(this);
+		}
+
+		::System::Void set_PathLenConstraint(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_SET_PATHLENCONSTRAINT_OFFSET))(this, value);
+		}
+
+		::System::String* ToString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_X509_EXTENSIONS_BASICCONSTRAINTSEXTENSION_TOSTRING_OFFSET))(this);
+		}
+	};
+}

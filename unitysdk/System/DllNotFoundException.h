@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_DLLNOTFOUNDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C2C6D0)
-#define SYSTEM_DLLNOTFOUNDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C2C740)
-#define SYSTEM_DLLNOTFOUNDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C2C630)
+#define SYSTEM_DLLNOTFOUNDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1950E3B0)
+#define SYSTEM_DLLNOTFOUNDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1950E420)
+#define SYSTEM_DLLNOTFOUNDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1950E310)
 
 namespace System
 {
-	inline static constexpr unsigned int DllNotFoundException_TypeDefinitionIndex = 234;
+	inline static constexpr unsigned int DllNotFoundException_TypeDefinitionIndex = 220;
 
 	class DllNotFoundException : public ::System::TypeLoadException
 	{

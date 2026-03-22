@@ -5,11 +5,11 @@
 namespace System { class Type; }
 namespace System::Reflection { class TypeInfo; }
 
-#define SYSTEM_REFLECTION_INTROSPECTIONEXTENSIONS_GETTYPEINFO_OFFSET UNITYSDK_OFFSET(0x15CC0310)
+#define SYSTEM_REFLECTION_INTROSPECTIONEXTENSIONS_GETTYPEINFO_OFFSET UNITYSDK_OFFSET(0x197B5F30)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int IntrospectionExtensions_TypeDefinitionIndex = 563;
+	inline static constexpr unsigned int IntrospectionExtensions_TypeDefinitionIndex = 537;
 
 	class IntrospectionExtensions : public ::System::Object
 	{

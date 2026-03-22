@@ -1,0 +1,91 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ELocalPlayType.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_31FF0D5A926BE076;
+
+#define CLASS_1_39E506AAC34FCC77_METHOD_1_0CFA35EC667043CB_OFFSET UNITYSDK_OFFSET(0x8E62F90)
+#define CLASS_1_39E506AAC34FCC77_METHOD_1_3E7178C5ECF017DB_1_OFFSET UNITYSDK_OFFSET(0x8E63000)
+#define CLASS_1_39E506AAC34FCC77_METHOD_1_3E7178C5ECF017DB_OFFSET UNITYSDK_OFFSET(0x8E62E80)
+#define CLASS_1_39E506AAC34FCC77_METHOD_1_6D5A44B786D4B31D_OFFSET UNITYSDK_OFFSET(0x8E63070)
+#define CLASS_1_39E506AAC34FCC77_METHOD_1_858CF2EC5EE423D3_1_OFFSET UNITYSDK_OFFSET(0x8E62F80)
+#define CLASS_1_39E506AAC34FCC77_METHOD_1_858CF2EC5EE423D3_OFFSET UNITYSDK_OFFSET(0x8E62E70)
+#define CLASS_1_39E506AAC34FCC77_METHOD_1_98EC354A67C8BC14_OFFSET UNITYSDK_OFFSET(0x8E62F10)
+#define CLASS_1_39E506AAC34FCC77_METHOD_1_C74E50CBD41F0264_OFFSET UNITYSDK_OFFSET(0x8E62F00)
+#define CLASS_1_39E506AAC34FCC77_METHOD_1_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x8E62D80)
+#define CLASS_1_39E506AAC34FCC77_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x8E62D20)
+#define CLASS_1_39E506AAC34FCC77_METHOD_1_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x8E62EF0)
+#define CLASS_1_39E506AAC34FCC77__CTOR_OFFSET UNITYSDK_OFFSET(0x8E62DE0)
+
+inline static constexpr unsigned int Class_1_39E506AAC34FCC77_TypeDefinitionIndex = 63001;
+
+class Class_1_39E506AAC34FCC77 : public ::System::Object
+{
+public:
+	::Class_1_31FF0D5A926BE076* Field_1_3; // 0x10
+	::MoleMole::ELocalPlayType Field_1_1; // 0x18
+	::MoleMole::ELocalPlayType Field_1_0; // 0x1C
+	::System::Boolean Field_1_4; // 0x20
+	::System::Boolean Field_1_2; // 0x21
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77_METHOD_1_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_1_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77_METHOD_1_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::MoleMole::ELocalPlayType Method_1_858CF2EC5EE423D3()
+	{
+		return ((::MoleMole::ELocalPlayType(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77_METHOD_1_858CF2EC5EE423D3_OFFSET))(this);
+	}
+
+	::System::Void Method_1_3E7178C5ECF017DB(::System::Boolean a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77_METHOD_1_3E7178C5ECF017DB_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Method_1_F0088C88851A7DFB()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77_METHOD_1_F0088C88851A7DFB_OFFSET))(this);
+	}
+
+	::System::Void Method_1_C74E50CBD41F0264(::System::Boolean a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77_METHOD_1_C74E50CBD41F0264_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_98EC354A67C8BC14(::MoleMole::ELocalPlayType a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::ELocalPlayType))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77_METHOD_1_98EC354A67C8BC14_OFFSET))(this, a1);
+	}
+
+	::MoleMole::ELocalPlayType Method_1_858CF2EC5EE423D3_1()
+	{
+		return ((::MoleMole::ELocalPlayType(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77_METHOD_1_858CF2EC5EE423D3_1_OFFSET))(this);
+	}
+
+	::System::Void Method_1_0CFA35EC667043CB(::MoleMole::ELocalPlayType& a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::ELocalPlayType&))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77_METHOD_1_0CFA35EC667043CB_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_3E7178C5ECF017DB_1(::System::Boolean& a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean&))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77_METHOD_1_3E7178C5ECF017DB_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_6D5A44B786D4B31D(::MoleMole::ELocalPlayType a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::ELocalPlayType))((::PBYTE)hIl2Cpp + CLASS_1_39E506AAC34FCC77_METHOD_1_6D5A44B786D4B31D_OFFSET))(this, a1);
+	}
+};

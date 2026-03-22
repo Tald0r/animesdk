@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int CameraType_TypeDefinitionIndex = 3939;
+	inline static constexpr unsigned int CameraType_TypeDefinitionIndex = 5214;
 
 	enum class CameraType : ::System::Int32
 	{
@@ -12,10 +12,5 @@ namespace UnityEngine
 		Preview = 4,
 		VR = 8,
 		Reflection = 16,
-		FogEmission = 32,
-		PVS = 64,
-		GBufferOnly = 128,
-		Transparent = 256,
-		CullingOnly = 512,
 	};
 }

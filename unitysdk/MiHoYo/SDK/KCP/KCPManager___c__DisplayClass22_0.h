@@ -5,12 +5,12 @@
 
 namespace System { class String; }
 
-#define MIHOYO_SDK_KCP_KCPMANAGER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0x81A9FD0)
-#define MIHOYO_SDK_KCP_KCPMANAGER___C__DISPLAYCLASS22_0__KCPKIBANAREPORT_B__0_OFFSET UNITYSDK_OFFSET(0x81AB4B0)
+#define MIHOYO_SDK_KCP_KCPMANAGER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19AF2DB0)
+#define MIHOYO_SDK_KCP_KCPMANAGER___C__DISPLAYCLASS22_0__KCPKIBANAREPORT_B__0_OFFSET UNITYSDK_OFFSET(0x19AF2DC0)
 
 namespace MiHoYo::SDK::KCP
 {
-	inline static constexpr unsigned int KCPManager___c__DisplayClass22_0_TypeDefinitionIndex = 36442;
+	inline static constexpr unsigned int KCPManager___c__DisplayClass22_0_TypeDefinitionIndex = 33925;
 
 	class KCPManager___c__DisplayClass22_0 : public ::System::Object
 	{

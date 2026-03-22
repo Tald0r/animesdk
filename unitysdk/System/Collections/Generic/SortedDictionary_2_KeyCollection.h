@@ -1,5 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Collections/Generic/SortedDictionary_2_KeyCollection_Enumerator.h"
 #include "unitysdk/System/Object.h"
 
 namespace System { class Array; }
@@ -9,7 +10,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerator
 
 namespace System::Collections::Generic
 {
-	inline static constexpr unsigned int SortedDictionary_2_KeyCollection_TypeDefinitionIndex = 2999;
+	inline static constexpr unsigned int SortedDictionary_2_KeyCollection_TypeDefinitionIndex = 3961;
 
 	template <typename TKey, typename TValue>
 	class SortedDictionary_2_KeyCollection : public ::System::Object

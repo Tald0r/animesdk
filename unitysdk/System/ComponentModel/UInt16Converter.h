@@ -5,20 +5,28 @@
 namespace System { class Object; }
 namespace System { class String; }
 namespace System { class Type; }
+namespace System::Globalization { class CultureInfo; }
 namespace System::Globalization { class NumberFormatInfo; }
 
-#define SYSTEM_COMPONENTMODEL_UINT16CONVERTER_FROMSTRING_1_OFFSET UNITYSDK_OFFSET(0x17E86E40)
-#define SYSTEM_COMPONENTMODEL_UINT16CONVERTER_FROMSTRING_OFFSET UNITYSDK_OFFSET(0x17E86E10)
-#define SYSTEM_COMPONENTMODEL_UINT16CONVERTER_GET_TARGETTYPE_OFFSET UNITYSDK_OFFSET(0x17E86DE0)
-#define SYSTEM_COMPONENTMODEL_UINT16CONVERTER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17E86E80)
+#define SYSTEM_COMPONENTMODEL_UINT16CONVERTER_FROMSTRING_1_OFFSET UNITYSDK_OFFSET(0x1858F620)
+#define SYSTEM_COMPONENTMODEL_UINT16CONVERTER_FROMSTRING_2_OFFSET UNITYSDK_OFFSET(0x1858F660)
+#define SYSTEM_COMPONENTMODEL_UINT16CONVERTER_FROMSTRING_OFFSET UNITYSDK_OFFSET(0x1858F5F0)
+#define SYSTEM_COMPONENTMODEL_UINT16CONVERTER_GET_TARGETTYPE_OFFSET UNITYSDK_OFFSET(0x1858F5C0)
+#define SYSTEM_COMPONENTMODEL_UINT16CONVERTER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1858F6A0)
+#define SYSTEM_COMPONENTMODEL_UINT16CONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1858F730)
 
 namespace System::ComponentModel
 {
-	inline static constexpr unsigned int UInt16Converter_TypeDefinitionIndex = 2630;
+	inline static constexpr unsigned int UInt16Converter_TypeDefinitionIndex = 3011;
 
 	class UInt16Converter : public ::System::ComponentModel::BaseNumberConverter
 	{
 	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_UINT16CONVERTER__CTOR_OFFSET))(this);
+		}
+
 		::System::Type* get_TargetType()
 		{
 			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_UINT16CONVERTER_GET_TARGETTYPE_OFFSET))(this);
@@ -32,6 +40,11 @@ namespace System::ComponentModel
 		::System::Object* FromString_1(::System::String* value, ::System::Globalization::NumberFormatInfo* formatInfo)
 		{
 			return ((::System::Object*(*)(::PVOID, ::System::String*, ::System::Globalization::NumberFormatInfo*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_UINT16CONVERTER_FROMSTRING_1_OFFSET))(this, value, formatInfo);
+		}
+
+		::System::Object* FromString_2(::System::String* value, ::System::Globalization::CultureInfo* culture)
+		{
+			return ((::System::Object*(*)(::PVOID, ::System::String*, ::System::Globalization::CultureInfo*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_UINT16CONVERTER_FROMSTRING_2_OFFSET))(this, value, culture);
 		}
 
 		::System::String* ToString(::System::Object* value, ::System::Globalization::NumberFormatInfo* formatInfo)

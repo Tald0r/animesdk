@@ -1,0 +1,46 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_472DC7144C4970D5.h"
+#include "unitysdk/MoleMole/EntityHandle.h"
+#include "unitysdk/Struct_2_E147DFD2A4EE8B0B.h"
+#include "unitysdk/Struct_2_E33A8767CD3B76C6.h"
+
+class Class_0_16E4307DCC419505_272;
+class Class_0_16E4307DCC419505_323;
+class Class_1_60925D628256D7AC;
+class Class_1_7F3BD032E45D4187;
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define CLASS_2_7227AD48B8D39750_METHOD_2_218F2836DA51D562_1_OFFSET UNITYSDK_OFFSET(0x89BC0B0)
+#define CLASS_2_7227AD48B8D39750_METHOD_2_218F2836DA51D562_OFFSET UNITYSDK_OFFSET(0x89BC050)
+#define CLASS_2_7227AD48B8D39750_METHOD_2_DA93AA6C5355C127_OFFSET UNITYSDK_OFFSET(0x89BC110)
+#define CLASS_2_7227AD48B8D39750__CTOR_OFFSET UNITYSDK_OFFSET(0x89BC2E0)
+
+inline static constexpr unsigned int Class_2_7227AD48B8D39750_TypeDefinitionIndex = 77584;
+
+class Class_2_7227AD48B8D39750 : public ::Class_1_472DC7144C4970D5<::System::Collections::Generic::List_1<::MoleMole::EntityHandle>*>
+{
+public:
+	::Class_1_7F3BD032E45D4187* Field_2_0; // 0x10
+	::Class_1_60925D628256D7AC* Field_2_1; // 0x18
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7227AD48B8D39750__CTOR_OFFSET))(this);
+	}
+
+	::Class_0_16E4307DCC419505_272* Method_2_218F2836DA51D562()
+	{
+		return ((::Class_0_16E4307DCC419505_272*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7227AD48B8D39750_METHOD_2_218F2836DA51D562_OFFSET))(this);
+	}
+
+	::Class_0_16E4307DCC419505_323* Method_2_218F2836DA51D562_1()
+	{
+		return ((::Class_0_16E4307DCC419505_323*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7227AD48B8D39750_METHOD_2_218F2836DA51D562_1_OFFSET))(this);
+	}
+
+	::Struct_2_E33A8767CD3B76C6 Method_2_DA93AA6C5355C127(::Struct_2_E147DFD2A4EE8B0B& a1)
+	{
+		return ((::Struct_2_E33A8767CD3B76C6(*)(::PVOID, ::Struct_2_E147DFD2A4EE8B0B&))((::PBYTE)hIl2Cpp + CLASS_2_7227AD48B8D39750_METHOD_2_DA93AA6C5355C127_OFFSET))(this, a1);
+	}
+};

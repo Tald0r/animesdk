@@ -4,7 +4,7 @@
 
 namespace ZenFulcrum::EmbeddedBrowser
 {
-	inline static constexpr unsigned int BrowserNative_RenderData_TypeDefinitionIndex = 29564;
+	inline static constexpr unsigned int BrowserNative_RenderData_TypeDefinitionIndex = 29545;
 
 	struct alignas(1) BrowserNative_RenderData
 	{

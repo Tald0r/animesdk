@@ -5,16 +5,22 @@
 namespace System { class String; }
 namespace System { class Type; }
 
-#define UNITYENGINE_GUITARGETATTRIBUTE_GETGUITARGETATTRVALUE_OFFSET UNITYSDK_OFFSET(0x1826A7F0)
+#define UNITYENGINE_GUITARGETATTRIBUTE_GETGUITARGETATTRVALUE_OFFSET UNITYSDK_OFFSET(0x19C45820)
+#define UNITYENGINE_GUITARGETATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19C45810)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int GUITargetAttribute_TypeDefinitionIndex = 5025;
+	inline static constexpr unsigned int GUITargetAttribute_TypeDefinitionIndex = 6373;
 
 	class GUITargetAttribute : public ::System::Attribute
 	{
 	public:
 		::System::Int32 displayMask; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUITARGETATTRIBUTE__CTOR_OFFSET))(this);
+		}
 
 		static ::System::Int32 GetGUITargetAttrValue(::System::Type* klass, ::System::String* methodName)
 		{

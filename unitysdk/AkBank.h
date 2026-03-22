@@ -7,19 +7,16 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 
-#define AKBANK_AWAKE_OFFSET UNITYSDK_OFFSET(0x183813B0)
-#define AKBANK_GET_BANKNAME_OFFSET UNITYSDK_OFFSET(0x18381980)
-#define AKBANK_GET_VALUEGUID_OFFSET UNITYSDK_OFFSET(0x18381A10)
-#define AKBANK_HANDLEEVENT_OFFSET UNITYSDK_OFFSET(0x183816F0)
-#define AKBANK_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x183818A0)
-#define AKBANK_START_OFFSET UNITYSDK_OFFSET(0x18381450)
-#define AKBANK_UNLOADBANK_OFFSET UNITYSDK_OFFSET(0x18381600)
-#define AKBANK__CTOR_OFFSET UNITYSDK_OFFSET(0x18381B50)
-#define AKBANK___IFIXBASEPROXY_AWAKE_OFFSET UNITYSDK_OFFSET(0x18381C70)
-#define AKBANK___IFIXBASEPROXY_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x18381D20)
-#define AKBANK___IFIXBASEPROXY_START_OFFSET UNITYSDK_OFFSET(0x18381C80)
+#define AKBANK_AWAKE_OFFSET UNITYSDK_OFFSET(0x1B016570)
+#define AKBANK_GET_BANKNAME_OFFSET UNITYSDK_OFFSET(0x1B016850)
+#define AKBANK_GET_VALUEGUID_OFFSET UNITYSDK_OFFSET(0x1B0168B0)
+#define AKBANK_HANDLEEVENT_OFFSET UNITYSDK_OFFSET(0x1B016700)
+#define AKBANK_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1B016750)
+#define AKBANK_START_OFFSET UNITYSDK_OFFSET(0x1B016660)
+#define AKBANK_UNLOADBANK_OFFSET UNITYSDK_OFFSET(0x1B0166E0)
+#define AKBANK__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0169E0)
 
-inline static constexpr unsigned int AkBank_TypeDefinitionIndex = 33661;
+inline static constexpr unsigned int AkBank_TypeDefinitionIndex = 30103;
 
 class AkBank : public ::AkTriggerHandler
 {
@@ -70,20 +67,5 @@ public:
 	::Il2CppArray<::System::Byte>* get_valueGuid()
 	{
 		return ((::Il2CppArray<::System::Byte>*(*)(::PVOID))((::PBYTE)hIl2Cpp + AKBANK_GET_VALUEGUID_OFFSET))(this);
-	}
-
-	::System::Void __iFixBaseProxy_Awake()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKBANK___IFIXBASEPROXY_AWAKE_OFFSET))(this);
-	}
-
-	::System::Void __iFixBaseProxy_Start()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKBANK___IFIXBASEPROXY_START_OFFSET))(this);
-	}
-
-	::System::Void __iFixBaseProxy_OnDestroy()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKBANK___IFIXBASEPROXY_ONDESTROY_OFFSET))(this);
 	}
 };

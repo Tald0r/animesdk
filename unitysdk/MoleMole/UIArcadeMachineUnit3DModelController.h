@@ -1,0 +1,365 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_9E872ED84D1478B9.h"
+#include "unitysdk/Enum_3_D1B5ECE5F6139778.h"
+#include "unitysdk/MoleMole/UIBase3DModelController.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_2_7F6C2AB9D0833BB5;
+class ScreenPlayData;
+class TextureFrameScreenPlayData;
+class VideoScreenPlayData;
+namespace MoleMole { class IVideoPlayer; }
+namespace MoleMole { class ScreenPlayer; }
+namespace MoleMole { class UIArcadePageController; }
+namespace MoleMole { class UIArcadeShop3DModelController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole::MiniGame { class MiniGameWorldBase; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+namespace UnityEngine::Events { class UnityAction; }
+
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_CREATETEXTUREFRAMESCREENPLAYDATA_OFFSET UNITYSDK_OFFSET(0xBEC5C60)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_CREATEVIDEOSCREENPLAYDATA_OFFSET UNITYSDK_OFFSET(0xBEC6540)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_DELAYSWITCHNEARSCREEN_OFFSET UNITYSDK_OFFSET(0xBEC7080)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_GETARCADESCREENDISPLAYTYPE_OFFSET UNITYSDK_OFFSET(0xBD94C80)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_GETDATAINDEX_OFFSET UNITYSDK_OFFSET(0xBD94CF0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_GETINITANGLEOFFSET_OFFSET UNITYSDK_OFFSET(0xBD94EE0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_GETINITFORWARD_OFFSET UNITYSDK_OFFSET(0xBD94E50)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_GETPOSITIONINDEX_OFFSET UNITYSDK_OFFSET(0xBD94DE0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xBEC71F0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_ISINNEARSCREENVIDEOSTATUS_OFFSET UNITYSDK_OFFSET(0xBEC7170)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_ISMATCHFARPOSTEXTUREFRAMETONEARPOSVIDEOTRANSITION_OFFSET UNITYSDK_OFFSET(0xBEC6E50)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBD948E0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBD94980)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBD94870)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_PLAYENTERGAMETITLEVIDEO_OFFSET UNITYSDK_OFFSET(0xBEC65F0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_PLAYFARPOSTEXTUREFRAME_OFFSET UNITYSDK_OFFSET(0xBD950F0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_PLAYGLITCHBLENDTEXTUREFRAME_OFFSET UNITYSDK_OFFSET(0xBD952A0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_PLAYNEARPOSVIDEO_OFFSET UNITYSDK_OFFSET(0xBEC6170)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_PLAYONSCREEN_OFFSET UNITYSDK_OFFSET(0xBEC5F50)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_REFRESHCOMMONVIEW_OFFSET UNITYSDK_OFFSET(0xBD95040)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_REFRESHSCREENPLAY_OFFSET UNITYSDK_OFFSET(0xBEC61F0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_REGISTERMINIGAMEWORLD_OFFSET UNITYSDK_OFFSET(0xBEC6880)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SET3DSCREENSHOWENABLED_OFFSET UNITYSDK_OFFSET(0xBD94C10)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SETCENTERSELECTED_OFFSET UNITYSDK_OFFSET(0xBD94FD0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SETPOSITIONINDEX_OFFSET UNITYSDK_OFFSET(0xBD94D60)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SETREFCONTROLLER_OFFSET UNITYSDK_OFFSET(0xBD94F50)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SHOWGAMERT_OFFSET UNITYSDK_OFFSET(0xBEC6810)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_STARTARCADEGAME_OFFSET UNITYSDK_OFFSET(0xBEC6960)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_STOPFARPOSTEXTUREFRAME_OFFSET UNITYSDK_OFFSET(0xBD95450)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_STOPVIDEO_OFFSET UNITYSDK_OFFSET(0xBD95560)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SWITCHSCREENPOS_OFFSET UNITYSDK_OFFSET(0xBEC5D00)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TICKFARPOSTEXTUREFRAMELOOPTIME_OFFSET UNITYSDK_OFFSET(0xBEC6FE0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TICKGLITCHBLEND_OFFSET UNITYSDK_OFFSET(0xBEC6AE0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TICKSCREENPLAYSTATETRANSITION_OFFSET UNITYSDK_OFFSET(0xBEC6B70)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TRYPLAYENTERGAMETITLEVIDEO_OFFSET UNITYSDK_OFFSET(0xBEC6670)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TRYPLAYFARPOSTEXTUREFRAME_OFFSET UNITYSDK_OFFSET(0xBEC5AD0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TRYPLAYNEARPOSVIDEO_OFFSET UNITYSDK_OFFSET(0xBEC63A0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TRYSTOPFARPOSTEXTUREFRAME_OFFSET UNITYSDK_OFFSET(0xBD954D0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TRYSTOPVIDEO_OFFSET UNITYSDK_OFFSET(0xBD955E0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_UNREGISTERMINIGAMEWORLD_OFFSET UNITYSDK_OFFSET(0xBEC68F0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xBD94A40)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xBEC7710)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBEC7690)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__PLAYGLITCHBLENDTEXTUREFRAME_B__15_0_OFFSET UNITYSDK_OFFSET(0xBEC7770)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__TRYPLAYENTERGAMETITLEVIDEO_B__25_0_OFFSET UNITYSDK_OFFSET(0xBEC7830)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__TRYPLAYFARPOSTEXTUREFRAME_B__21_0_OFFSET UNITYSDK_OFFSET(0xBEC7780)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__TRYPLAYNEARPOSVIDEO_B__23_0_OFFSET UNITYSDK_OFFSET(0xBEC7790)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBEC78D0)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBEC7940)
+#define MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBEC7950)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIArcadeMachineUnit3DModelController_TypeDefinitionIndex = 59325;
+
+	class UIArcadeMachineUnit3DModelController : public ::MoleMole::UIBase3DModelController
+	{
+	public:
+		static ::System::String** StaticGet_NO_GAME_TEXTURE_SHEET_KEY()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIArcadeMachineUnit3DModelController_TypeDefinitionIndex)->GetStaticField(0x3A7D0);
+		}
+		static ::System::String** StaticGet_GLITCH_BLEND_TEXTURE_SHEET_KEY()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIArcadeMachineUnit3DModelController_TypeDefinitionIndex)->GetStaticField(0x3A7D8);
+		}
+		static ::System::Int32* StaticGet_ScreenMapPropertyID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIArcadeMachineUnit3DModelController_TypeDefinitionIndex)->GetStaticField(0xE710);
+		}
+		::Class_2_7F6C2AB9D0833BB5* _view; // 0x340
+		::MoleMole::UIArcadePageController* _arcadePageController; // 0x348
+		::MoleMole::UIArcadeShop3DModelController* _arcadeShop3DModelController; // 0x350
+		::System::Int32 _dataIndex; // 0x358
+		::System::Int32 _positionIndex; // 0x35C
+		::System::Boolean _isCenterSelected; // 0x360
+		::UnityEngine::Vector3 _initForward; // 0x364
+		::System::Single _initAngleOffset; // 0x370
+		::System::Int32 _arcadeID; // 0x374
+		::MoleMole::ScreenPlayer* _screenPlayerFar; // 0x378
+		::MoleMole::ScreenPlayer* _screenPlayerNear; // 0x380
+		::Enum_3_D1B5ECE5F6139778 _curArcadeModelScreenNodeType; // 0x388
+		::Enum_3_9E872ED84D1478B9 _curModelScreenDisplayType; // 0x38C
+		::System::String* _farPosTextureSheetKey; // 0x390
+		::System::Boolean _isInGlitchBlendState; // 0x398
+		::System::Single _farPosTextureFrameLoopTimer; // 0x39C
+		::System::Boolean _farPosTextureFrameReachEndCurFrame; // 0x3A0
+		::System::Boolean _glitchBlendTextureFrameReachEndCurFrame; // 0x3A1
+		::MoleMole::MiniGame::MiniGameWorldBase* _miniGameWorld; // 0x3A8
+		::System::Boolean _isInActivityMode; // 0x3B0
+		::System::Boolean _enable3DScreenShow; // 0x3B1
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void Set3DScreenShowEnabled(::System::Boolean isEnabled)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SET3DSCREENSHOWENABLED_OFFSET))(this, isEnabled);
+		}
+
+		::Enum_3_9E872ED84D1478B9 GetArcadeScreenDisplayType()
+		{
+			return ((::Enum_3_9E872ED84D1478B9(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_GETARCADESCREENDISPLAYTYPE_OFFSET))(this);
+		}
+
+		::System::Int32 GetDataIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_GETDATAINDEX_OFFSET))(this);
+		}
+
+		::System::Void SetPositionIndex(::System::Int32 positionIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SETPOSITIONINDEX_OFFSET))(this, positionIndex);
+		}
+
+		::System::Int32 GetPositionIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_GETPOSITIONINDEX_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 GetInitForward()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_GETINITFORWARD_OFFSET))(this);
+		}
+
+		::System::Single GetInitAngleOffset()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_GETINITANGLEOFFSET_OFFSET))(this);
+		}
+
+		::System::Void SetRefController(::MoleMole::UIArcadePageController* arcadePageController, ::MoleMole::UIArcadeShop3DModelController* arcadeShop3DModelController)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIArcadePageController*, ::MoleMole::UIArcadeShop3DModelController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SETREFCONTROLLER_OFFSET))(this, arcadePageController, arcadeShop3DModelController);
+		}
+
+		::System::Void SetCenterSelected(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SETCENTERSELECTED_OFFSET))(this, state);
+		}
+
+		::System::Void RefreshCommonView(::System::Int32 arcadeID, ::System::Int32 dataIndex, ::System::Boolean force)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_REFRESHCOMMONVIEW_OFFSET))(this, arcadeID, dataIndex, force);
+		}
+
+		::System::Void PlayGlitchBlendTextureFrame()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_PLAYGLITCHBLENDTEXTUREFRAME_OFFSET))(this);
+		}
+
+		::System::Void StopFarPosTextureFrame()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_STOPFARPOSTEXTUREFRAME_OFFSET))(this);
+		}
+
+		::System::Void TryStopFarPosTextureFrame()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TRYSTOPFARPOSTEXTUREFRAME_OFFSET))(this);
+		}
+
+		::System::Void StopVideo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_STOPVIDEO_OFFSET))(this);
+		}
+
+		::System::Void TryStopVideo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TRYSTOPVIDEO_OFFSET))(this);
+		}
+
+		::System::Void PlayFarPosTextureFrame(::System::Boolean force)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_PLAYFARPOSTEXTUREFRAME_OFFSET))(this, force);
+		}
+
+		::System::Void TryPlayFarPosTextureFrame()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TRYPLAYFARPOSTEXTUREFRAME_OFFSET))(this);
+		}
+
+		::System::Void PlayNearPosVideo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_PLAYNEARPOSVIDEO_OFFSET))(this);
+		}
+
+		::System::Void TryPlayNearPosVideo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TRYPLAYNEARPOSVIDEO_OFFSET))(this);
+		}
+
+		::System::Void PlayEnterGameTitleVideo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_PLAYENTERGAMETITLEVIDEO_OFFSET))(this);
+		}
+
+		::System::Void TryPlayEnterGameTitleVideo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TRYPLAYENTERGAMETITLEVIDEO_OFFSET))(this);
+		}
+
+		::System::Void ShowGameRT()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SHOWGAMERT_OFFSET))(this);
+		}
+
+		::System::Void RegisterMiniGameWorld(::MoleMole::MiniGame::MiniGameWorldBase* miniGameWorld)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MiniGame::MiniGameWorldBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_REGISTERMINIGAMEWORLD_OFFSET))(this, miniGameWorld);
+		}
+
+		::System::Void UnregisterMiniGameWorld()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_UNREGISTERMINIGAMEWORLD_OFFSET))(this);
+		}
+
+		::System::Void StartArcadeGame()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_STARTARCADEGAME_OFFSET))(this);
+		}
+
+		::System::Void TickGlitchBlend()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TICKGLITCHBLEND_OFFSET))(this);
+		}
+
+		::System::Void RefreshScreenPlay()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_REFRESHSCREENPLAY_OFFSET))(this);
+		}
+
+		::System::Void TickScreenPlayStateTransition()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TICKSCREENPLAYSTATETRANSITION_OFFSET))(this);
+		}
+
+		::System::Void TickFarPosTextureFrameLoopTime()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_TICKFARPOSTEXTUREFRAMELOOPTIME_OFFSET))(this);
+		}
+
+		::System::Boolean IsMatchFarPosTextureFrameToNearPosVideoTransition()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_ISMATCHFARPOSTEXTUREFRAMETONEARPOSVIDEOTRANSITION_OFFSET))(this);
+		}
+
+		::System::Void DelaySwitchNearScreen(::MoleMole::IVideoPlayer* vp)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::IVideoPlayer*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_DELAYSWITCHNEARSCREEN_OFFSET))(this, vp);
+		}
+
+		::System::Boolean IsInNearScreenVideoStatus()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_ISINNEARSCREENVIDEOSTATUS_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Boolean SwitchScreenPos(::Enum_3_D1B5ECE5F6139778 arcadeModelScreenNodeType, ::System::Boolean force)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_D1B5ECE5F6139778, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_SWITCHSCREENPOS_OFFSET))(this, arcadeModelScreenNodeType, force);
+		}
+
+		::System::Void PlayOnScreen(::ScreenPlayData* data, ::System::Action* successCB, ::System::Boolean skipStop, ::Enum_3_D1B5ECE5F6139778 arcadeModelScreenNodeType)
+		{
+			return ((::System::Void(*)(::PVOID, ::ScreenPlayData*, ::System::Action*, ::System::Boolean, ::Enum_3_D1B5ECE5F6139778))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_PLAYONSCREEN_OFFSET))(this, data, successCB, skipStop, arcadeModelScreenNodeType);
+		}
+
+		::TextureFrameScreenPlayData* CreateTextureFrameScreenPlayData(::System::String* textureSheetKey, ::UnityEngine::Events::UnityAction* loopEvent)
+		{
+			return ((::TextureFrameScreenPlayData*(*)(::PVOID, ::System::String*, ::UnityEngine::Events::UnityAction*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_CREATETEXTUREFRAMESCREENPLAYDATA_OFFSET))(this, textureSheetKey, loopEvent);
+		}
+
+		::VideoScreenPlayData* CreateVideoScreenPlayData(::System::String* videoPath, ::System::Boolean isLoop, ::System::Action_1<::MoleMole::IVideoPlayer*>* onVideoPrepared)
+		{
+			return ((::VideoScreenPlayData*(*)(::PVOID, ::System::String*, ::System::Boolean, ::System::Action_1<::MoleMole::IVideoPlayer*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER_CREATEVIDEOSCREENPLAYDATA_OFFSET))(this, videoPath, isLoop, onVideoPrepared);
+		}
+
+		::System::Void _PlayGlitchBlendTextureFrame_b__15_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__PLAYGLITCHBLENDTEXTUREFRAME_B__15_0_OFFSET))(this);
+		}
+
+		::System::Void _TryPlayFarPosTextureFrame_b__21_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__TRYPLAYFARPOSTEXTUREFRAME_B__21_0_OFFSET))(this);
+		}
+
+		::System::Void _TryPlayNearPosVideo_b__23_0(::MoleMole::IVideoPlayer* vp)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::IVideoPlayer*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__TRYPLAYNEARPOSVIDEO_B__23_0_OFFSET))(this, vp);
+		}
+
+		::System::Void _TryPlayEnterGameTitleVideo_b__25_0(::MoleMole::IVideoPlayer* vp)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::IVideoPlayer*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER__TRYPLAYENTERGAMETITLEVIDEO_B__25_0_OFFSET))(this, vp);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIARCADEMACHINEUNIT3DMODELCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,198 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+#include "unitysdk/System/Nullable_1.h"
+#include "unitysdk/UnityEngine/Color.h"
+#include "unitysdk/UnityEngine/UI/Extension/UIToggleButton_ButtonState.h"
+
+class Class_1_794BA983EDDBCFDE_Class_1_40F0860CEB67D2B1;
+class Class_1_794BA983EDDBCFDE_Class_1_6142B71DCEBDB866;
+class Class_1_79526D80B8F6897C;
+class Class_2_79AE422BA06F6D26_172;
+class Class_2_D7D8BB398F7CF61F;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIGeneralPopUpHintWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_CANCELNEW_OFFSET UNITYSDK_OFFSET(0xAC21390)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_EXPAND_OFFSET UNITYSDK_OFFSET(0xAC21410)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAC20090)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONFINISHMESSAGEGROUP_OFFSET UNITYSDK_OFFSET(0xAC21780)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xAC202E0)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONNOTIFICATIONCOUNTCHANGE_OFFSET UNITYSDK_OFFSET(0xAC228F0)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xAC20390)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONSHOWCURMESSAGE_OFFSET UNITYSDK_OFFSET(0xAC21670)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONSTATECHANGED_OFFSET UNITYSDK_OFFSET(0xAC20EE0)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAC20130)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAC1FC80)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SETMESSAGETEXT_OFFSET UNITYSDK_OFFSET(0xAC22120)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWBUBBLE_OFFSET UNITYSDK_OFFSET(0xAC21910)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWCONTACTUSERDATA_OFFSET UNITYSDK_OFFSET(0xAC20AD0)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWCONTACTUSERMESSAGE_OFFSET UNITYSDK_OFFSET(0xAC21190)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWMESSAGE_OFFSET UNITYSDK_OFFSET(0xAC21030)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWMISSIONICON_OFFSET UNITYSDK_OFFSET(0xAC22970)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWTEXTELLIPSE_OFFSET UNITYSDK_OFFSET(0xAC21FD0)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWUSERDATA_OFFSET UNITYSDK_OFFSET(0xAC20840)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHRINK_OFFSET UNITYSDK_OFFSET(0xAC21540)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAC22C60)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER__SETMESSAGETEXT_G__SETCOLOR_27_0_OFFSET UNITYSDK_OFFSET(0xAC22BE0)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAC22C70)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xAC22CE0)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xAC22D50)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAC22DD0)
+#define MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAC22E50)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPrivateMessageRoleWidgetController_TypeDefinitionIndex = 78848;
+
+	class UIPrivateMessageRoleWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_172* _view; // 0x2D0
+		::Class_1_794BA983EDDBCFDE_Class_1_40F0860CEB67D2B1* _myData; // 0x2D8
+		::Class_2_D7D8BB398F7CF61F* _messageModel; // 0x2E0
+		::MoleMole::UIGeneralPopUpHintWidgetController* _bubble; // 0x2E8
+		::Class_1_794BA983EDDBCFDE_Class_1_6142B71DCEBDB866* _nowMessage; // 0x2F0
+		::System::Single _textWidth; // 0x2F8
+		::System::Single _nameWidth; // 0x2FC
+		::Class_1_79526D80B8F6897C* notificatioNode; // 0x300
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnStateChanged(::UnityEngine::UI::Extension::UIToggleButton_ButtonState buttonState)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UIToggleButton_ButtonState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONSTATECHANGED_OFFSET))(this, buttonState);
+		}
+
+		::System::Void CancelNew()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_CANCELNEW_OFFSET))(this);
+		}
+
+		::System::Single Expand(::System::Nullable_1<::System::Single> normalizedTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Nullable_1<::System::Single>))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_EXPAND_OFFSET))(this, normalizedTime);
+		}
+
+		::System::Single Shrink(::System::Nullable_1<::System::Single> normalizedTime)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Nullable_1<::System::Single>))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHRINK_OFFSET))(this, normalizedTime);
+		}
+
+		::System::Void OnShowCurMessage(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONSHOWCURMESSAGE_OFFSET))(this, args);
+		}
+
+		::System::Void OnFinishMessageGroup(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONFINISHMESSAGEGROUP_OFFSET))(this, args);
+		}
+
+		::System::Void ShowUserData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWUSERDATA_OFFSET))(this);
+		}
+
+		::System::Void ShowContactUserData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWCONTACTUSERDATA_OFFSET))(this);
+		}
+
+		::System::Void ShowContactUserMessage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWCONTACTUSERMESSAGE_OFFSET))(this);
+		}
+
+		::System::Void ShowBubble()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWBUBBLE_OFFSET))(this);
+		}
+
+		::System::Void OnNotificationCountChange(::System::Int32 count)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_ONNOTIFICATIONCOUNTCHANGE_OFFSET))(this, count);
+		}
+
+		::System::Void ShowMessage(::Class_1_794BA983EDDBCFDE_Class_1_6142B71DCEBDB866* nowMessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_794BA983EDDBCFDE_Class_1_6142B71DCEBDB866*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWMESSAGE_OFFSET))(this, nowMessage);
+		}
+
+		::System::Void ShowMissionIcon(::Class_1_794BA983EDDBCFDE_Class_1_6142B71DCEBDB866* nowMessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_794BA983EDDBCFDE_Class_1_6142B71DCEBDB866*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWMISSIONICON_OFFSET))(this, nowMessage);
+		}
+
+		::System::Void ShowTextEllipse()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SHOWTEXTELLIPSE_OFFSET))(this);
+		}
+
+		::System::Void SetMessageText(::System::String* message, ::System::Int32 colorType)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER_SETMESSAGETEXT_OFFSET))(this, message, colorType);
+		}
+
+		::System::Void _SetMessageText_g__SetColor_27_0(::UnityEngine::Color color)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER__SETMESSAGETEXT_G__SETCOLOR_27_0_OFFSET))(this, color);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEROLEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

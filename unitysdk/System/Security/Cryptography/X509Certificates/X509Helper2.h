@@ -3,29 +3,58 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.h"
 
+namespace Mono::Security::X509 { class X509Certificate; }
 namespace System { class Exception; }
 namespace System { class String; }
+namespace System::IO { class Stream; }
+namespace System::Security::Cryptography::X509Certificates { class X509Certificate2; }
 namespace System::Security::Cryptography::X509Certificates { class X509Certificate2Impl; }
 namespace System::Security::Cryptography::X509Certificates { class X509Certificate; }
 namespace System::Security::Cryptography::X509Certificates { class X509CertificateImpl; }
 namespace System::Security::Cryptography::X509Certificates { class X509ChainImpl; }
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_CREATECHAINIMPL_OFFSET UNITYSDK_OFFSET(0x17F24E50)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_GETINVALIDCHAINCONTEXTEXCEPTION_OFFSET UNITYSDK_OFFSET(0x17F24EC0)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_IMPORT_1_OFFSET UNITYSDK_OFFSET(0x17F24D50)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_IMPORT_OFFSET UNITYSDK_OFFSET(0x17F24D00)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x17F24C70)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_ISVALID_OFFSET UNITYSDK_OFFSET(0x17F24E80)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_THROWIFCONTEXTINVALID_1_OFFSET UNITYSDK_OFFSET(0x17F24E90)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_THROWIFCONTEXTINVALID_OFFSET UNITYSDK_OFFSET(0x17F24CC0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_CREATECHAINIMPL_OFFSET UNITYSDK_OFFSET(0x18B891D0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_EXPORTASPEM_1_OFFSET UNITYSDK_OFFSET(0x18B88DF0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_EXPORTASPEM_OFFSET UNITYSDK_OFFSET(0x18B88D50)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_GETINVALIDCHAINCONTEXTEXCEPTION_OFFSET UNITYSDK_OFFSET(0x18B88AC0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_GETMONOCERTIFICATE_OFFSET UNITYSDK_OFFSET(0x18B89120)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_GETNATIVEINSTANCE_OFFSET UNITYSDK_OFFSET(0x18B88D00)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_GETSUBJECTNAMEHASH_1_OFFSET UNITYSDK_OFFSET(0x18B88CB0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_GETSUBJECTNAMEHASH_OFFSET UNITYSDK_OFFSET(0x18B88C10)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_IMPORT_1_OFFSET UNITYSDK_OFFSET(0x18B88FA0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_IMPORT_OFFSET UNITYSDK_OFFSET(0x18B88F30)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x18B88E40)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_ISVALID_OFFSET UNITYSDK_OFFSET(0x18B89220)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_THROWIFCONTEXTINVALID_1_OFFSET UNITYSDK_OFFSET(0x18B89230)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_THROWIFCONTEXTINVALID_OFFSET UNITYSDK_OFFSET(0x18B88ED0)
 
 namespace System::Security::Cryptography::X509Certificates
 {
-	inline static constexpr unsigned int X509Helper2_TypeDefinitionIndex = 2692;
+	inline static constexpr unsigned int X509Helper2_TypeDefinitionIndex = 3208;
 
 	class X509Helper2 : public ::System::Object
 	{
 	public:
+		static ::System::Int64 GetSubjectNameHash(::System::Security::Cryptography::X509Certificates::X509Certificate* certificate)
+		{
+			return ((::System::Int64(*)(::System::Security::Cryptography::X509Certificates::X509Certificate*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_GETSUBJECTNAMEHASH_OFFSET))(certificate);
+		}
+
+		static ::System::Int64 GetSubjectNameHash_1(::System::Security::Cryptography::X509Certificates::X509CertificateImpl* impl)
+		{
+			return ((::System::Int64(*)(::System::Security::Cryptography::X509Certificates::X509CertificateImpl*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_GETSUBJECTNAMEHASH_1_OFFSET))(impl);
+		}
+
+		static ::System::Void ExportAsPEM(::System::Security::Cryptography::X509Certificates::X509Certificate* certificate, ::System::IO::Stream* stream, ::System::Boolean includeHumanReadableForm)
+		{
+			return ((::System::Void(*)(::System::Security::Cryptography::X509Certificates::X509Certificate*, ::System::IO::Stream*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_EXPORTASPEM_OFFSET))(certificate, stream, includeHumanReadableForm);
+		}
+
+		static ::System::Void ExportAsPEM_1(::System::Security::Cryptography::X509Certificates::X509CertificateImpl* impl, ::System::IO::Stream* stream, ::System::Boolean includeHumanReadableForm)
+		{
+			return ((::System::Void(*)(::System::Security::Cryptography::X509Certificates::X509CertificateImpl*, ::System::IO::Stream*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_EXPORTASPEM_1_OFFSET))(impl, stream, includeHumanReadableForm);
+		}
+
 		static ::System::Void Initialize()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_INITIALIZE_OFFSET))();
@@ -36,6 +65,11 @@ namespace System::Security::Cryptography::X509Certificates
 			return ((::System::Void(*)(::System::Security::Cryptography::X509Certificates::X509CertificateImpl*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_THROWIFCONTEXTINVALID_OFFSET))(impl);
 		}
 
+		static ::System::Security::Cryptography::X509Certificates::X509Certificate* GetNativeInstance(::System::Security::Cryptography::X509Certificates::X509CertificateImpl* impl)
+		{
+			return ((::System::Security::Cryptography::X509Certificates::X509Certificate*(*)(::System::Security::Cryptography::X509Certificates::X509CertificateImpl*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_GETNATIVEINSTANCE_OFFSET))(impl);
+		}
+
 		static ::System::Security::Cryptography::X509Certificates::X509Certificate2Impl* Import(::Il2CppArray<::System::Byte>* rawData, ::System::String* password, ::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags, ::System::Boolean disableProvider)
 		{
 			return ((::System::Security::Cryptography::X509Certificates::X509Certificate2Impl*(*)(::Il2CppArray<::System::Byte>*, ::System::String*, ::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_IMPORT_OFFSET))(rawData, password, keyStorageFlags, disableProvider);
@@ -44,6 +78,11 @@ namespace System::Security::Cryptography::X509Certificates
 		static ::System::Security::Cryptography::X509Certificates::X509Certificate2Impl* Import_1(::System::Security::Cryptography::X509Certificates::X509Certificate* cert, ::System::Boolean disableProvider)
 		{
 			return ((::System::Security::Cryptography::X509Certificates::X509Certificate2Impl*(*)(::System::Security::Cryptography::X509Certificates::X509Certificate*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_IMPORT_1_OFFSET))(cert, disableProvider);
+		}
+
+		static ::Mono::Security::X509::X509Certificate* GetMonoCertificate(::System::Security::Cryptography::X509Certificates::X509Certificate2* certificate)
+		{
+			return ((::Mono::Security::X509::X509Certificate*(*)(::System::Security::Cryptography::X509Certificates::X509Certificate2*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509HELPER2_GETMONOCERTIFICATE_OFFSET))(certificate);
 		}
 
 		static ::System::Security::Cryptography::X509Certificates::X509ChainImpl* CreateChainImpl(::System::Boolean useMachineContext)

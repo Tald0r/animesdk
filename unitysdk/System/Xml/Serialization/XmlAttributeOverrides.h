@@ -5,17 +5,19 @@
 namespace System { class String; }
 namespace System { class Type; }
 namespace System::Collections { class Hashtable; }
+namespace System::Text { class StringBuilder; }
 namespace System::Xml::Serialization { class TypeMember; }
 namespace System::Xml::Serialization { class XmlAttributes; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEOVERRIDES_GETKEY_OFFSET UNITYSDK_OFFSET(0x17DAC160)
-#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEOVERRIDES_GET_ITEM_1_OFFSET UNITYSDK_OFFSET(0x17DAC090)
-#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEOVERRIDES_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x17DAC080)
-#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEOVERRIDES__CTOR_OFFSET UNITYSDK_OFFSET(0x17DAC020)
+#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEOVERRIDES_ADDKEYHASH_OFFSET UNITYSDK_OFFSET(0x19477660)
+#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEOVERRIDES_GETKEY_OFFSET UNITYSDK_OFFSET(0x19477610)
+#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEOVERRIDES_GET_ITEM_1_OFFSET UNITYSDK_OFFSET(0x19477540)
+#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEOVERRIDES_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x19477530)
+#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEOVERRIDES__CTOR_OFFSET UNITYSDK_OFFSET(0x194774D0)
 
 namespace System::Xml::Serialization
 {
-	inline static constexpr unsigned int XmlAttributeOverrides_TypeDefinitionIndex = 1986;
+	inline static constexpr unsigned int XmlAttributeOverrides_TypeDefinitionIndex = 1880;
 
 	class XmlAttributeOverrides : public ::System::Object
 	{
@@ -40,6 +42,11 @@ namespace System::Xml::Serialization
 		::System::Xml::Serialization::TypeMember* GetKey(::System::Type* type, ::System::String* member)
 		{
 			return ((::System::Xml::Serialization::TypeMember*(*)(::PVOID, ::System::Type*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEOVERRIDES_GETKEY_OFFSET))(this, type, member);
+		}
+
+		::System::Void AddKeyHash(::System::Text::StringBuilder* sb)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Text::StringBuilder*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEOVERRIDES_ADDKEYHASH_OFFSET))(this, sb);
 		}
 	};
 }

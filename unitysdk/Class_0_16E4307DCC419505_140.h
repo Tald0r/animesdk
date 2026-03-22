@@ -1,11 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/UnityEngine/Quaternion.h"
-#include "unitysdk/UnityEngine/Vector3.h"
 
-class Class_1_964A712EA586728B;
+namespace System { class Action; }
+namespace System { class Exception; }
+namespace System { template <typename T> class Action_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_140_TypeDefinitionIndex = 31544;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_140_TypeDefinitionIndex = 73674;
 
 class Class_0_16E4307DCC419505_140
 {

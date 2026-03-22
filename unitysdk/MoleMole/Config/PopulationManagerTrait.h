@@ -1,0 +1,92 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlexBuffers/FlxMap.h"
+#include "unitysdk/FlexBuffers/FlxValue.h"
+#include "unitysdk/MoleMole/Config/ConfigViewObjectTraitBase.h"
+
+class Class_1_236FD73ABC492E3F;
+class Class_1_9BBA877A0A83A422;
+namespace System { class Object; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_FROMBINARY_OFFSET UNITYSDK_OFFSET(0x6DF6C20)
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_FROMFLX_OFFSET UNITYSDK_OFFSET(0x6DF6BB0)
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_1D2F15E1636AC595_OFFSET UNITYSDK_OFFSET(0x6DF6980)
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_237EC647C66D55CC_OFFSET UNITYSDK_OFFSET(0x6DF6D00)
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_2A6B87C525933554_OFFSET UNITYSDK_OFFSET(0x6DF6E60)
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_9B00DC6B301F3F39_OFFSET UNITYSDK_OFFSET(0x6DF6C30)
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_A042C46DE73C3043_OFFSET UNITYSDK_OFFSET(0x6DF6970)
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_B525722F60E6B94F_OFFSET UNITYSDK_OFFSET(0x6DF6A80)
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_BB967F4F425193E1_OFFSET UNITYSDK_OFFSET(0x6DF6ED0)
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_D4DA1493472613E6_OFFSET UNITYSDK_OFFSET(0x6DF6C10)
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_F86E3F6E3E2B1642_OFFSET UNITYSDK_OFFSET(0x6DF6C40)
+#define MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT__CTOR_OFFSET UNITYSDK_OFFSET(0x6DF6CF0)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int PopulationManagerTrait_TypeDefinitionIndex = 55275;
+
+	class PopulationManagerTrait : public ::MoleMole::Config::ConfigViewObjectTraitBase
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Method_2_A042C46DE73C3043(::System::Action_1<::System::Object*>* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::System::Object*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_A042C46DE73C3043_OFFSET))(this, a1);
+		}
+
+		::MoleMole::Config::ConfigViewObjectTraitBase* Method_2_1D2F15E1636AC595()
+		{
+			return ((::MoleMole::Config::ConfigViewObjectTraitBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_1D2F15E1636AC595_OFFSET))(this);
+		}
+
+		::System::Int32 Method_2_B525722F60E6B94F()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_B525722F60E6B94F_OFFSET))(this);
+		}
+
+		::System::Boolean FromFlx(::FlexBuffers::FlxValue a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::FlexBuffers::FlxValue))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_FROMFLX_OFFSET))(this, a1);
+		}
+
+		::System::Boolean FromBinary(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_FROMBINARY_OFFSET))(this, a1, a2);
+		}
+
+		::System::Boolean Method_2_F86E3F6E3E2B1642(::Class_1_9BBA877A0A83A422* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_9BBA877A0A83A422*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_F86E3F6E3E2B1642_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_2_9B00DC6B301F3F39(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_9B00DC6B301F3F39_OFFSET))(this, a1, a2);
+		}
+
+		::System::Boolean Method_2_D4DA1493472613E6(::FlexBuffers::FlxMap a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::FlexBuffers::FlxMap))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_D4DA1493472613E6_OFFSET))(this, a1);
+		}
+
+		static ::MoleMole::Config::PopulationManagerTrait* Method_2_237EC647C66D55CC(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+		{
+			return ((::MoleMole::Config::PopulationManagerTrait*(*)(::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_237EC647C66D55CC_OFFSET))(a1, a2);
+		}
+
+		::System::Boolean Method_2_2A6B87C525933554(::Class_1_9BBA877A0A83A422* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_9BBA877A0A83A422*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_2A6B87C525933554_OFFSET))(this, a1);
+		}
+
+		static ::MoleMole::Config::PopulationManagerTrait* Method_2_BB967F4F425193E1(::FlexBuffers::FlxValue a1)
+		{
+			return ((::MoleMole::Config::PopulationManagerTrait*(*)(::FlexBuffers::FlxValue))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POPULATIONMANAGERTRAIT_METHOD_2_BB967F4F425193E1_OFFSET))(a1);
+		}
+	};
+}

@@ -1,0 +1,89 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIInLevelPauseBattleInfoWidgetController.h"
+
+class Class_2_208CC9941471731A_627;
+namespace MoleMole { class UIActivityTeamTrialInLevelPauseBuffInfoWidgetController; }
+namespace MoleMole { class UICombatPauseMissionWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C7CFB0)
+#define MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_REFRESHACTCHALLENGELIST_OFFSET UNITYSDK_OFFSET(0x8C7DDB0)
+#define MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_REFRESHACTVIEW_OFFSET UNITYSDK_OFFSET(0x8C7D480)
+#define MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_REFRESHBUFFVIEW_OFFSET UNITYSDK_OFFSET(0x8C7D8F0)
+#define MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_REFRESHTITLEAREA_OFFSET UNITYSDK_OFFSET(0x8C7D190)
+#define MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_SETBUFFCOUNT_OFFSET UNITYSDK_OFFSET(0x8C7DB60)
+#define MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8C7E230)
+#define MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C7E320)
+#define MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER___BASE_REFRESHACTCHALLENGELIST_OFFSET UNITYSDK_OFFSET(0x8C7E3C0)
+#define MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER___BASE_REFRESHACTVIEW_OFFSET UNITYSDK_OFFSET(0x8C7E3D0)
+#define MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER___BASE_REFRESHTITLEAREA_OFFSET UNITYSDK_OFFSET(0x8C7E3E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelPauseActivityCombatPauseWidgetController_TypeDefinitionIndex = 51343;
+
+	class UIInLevelPauseActivityCombatPauseWidgetController : public ::MoleMole::UIInLevelPauseBattleInfoWidgetController
+	{
+	public:
+		::MoleMole::UICombatPauseMissionWidgetController* _combatPauseMissionWidgetController; // 0x2C8
+		::System::Collections::Generic::List_1<::MoleMole::UIActivityTeamTrialInLevelPauseBuffInfoWidgetController*>* _buffInfoWidgetControllers; // 0x2D0
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_627*>* _buffInfos; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void RefreshTitleArea()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_REFRESHTITLEAREA_OFFSET))(this);
+		}
+
+		::System::Void RefreshACTView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_REFRESHACTVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshBuffView(::System::Int32 questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_REFRESHBUFFVIEW_OFFSET))(this, questID);
+		}
+
+		::System::Void SetBuffCount(::System::Int32 count)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_SETBUFFCOUNT_OFFSET))(this, count);
+		}
+
+		::System::Void RefreshACTChallengeList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER_REFRESHACTCHALLENGELIST_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_RefreshACTChallengeList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER___BASE_REFRESHACTCHALLENGELIST_OFFSET))(this);
+		}
+
+		::System::Void __base_RefreshACTView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER___BASE_REFRESHACTVIEW_OFFSET))(this);
+		}
+
+		::System::Void __base_RefreshTitleArea()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEACTIVITYCOMBATPAUSEWIDGETCONTROLLER___BASE_REFRESHTITLEAREA_OFFSET))(this);
+		}
+	};
+}

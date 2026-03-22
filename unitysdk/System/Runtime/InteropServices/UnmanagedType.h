@@ -3,7 +3,7 @@
 
 namespace System::Runtime::InteropServices
 {
-	inline static constexpr unsigned int UnmanagedType_TypeDefinitionIndex = 1395;
+	inline static constexpr unsigned int UnmanagedType_TypeDefinitionIndex = 1417;
 
 	enum class UnmanagedType : ::System::Int32
 	{

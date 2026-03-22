@@ -3,19 +3,49 @@
 #include "unitysdk/System/Object.h"
 
 class AkCallbackManager_BankCallback;
+namespace System::Collections::Generic { template <typename T> class Stack_1; }
 
-#define AKCALLBACKMANAGER_BANKCALLBACKPACKAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x1838A940)
+#define AKCALLBACKMANAGER_BANKCALLBACKPACKAGE_CREATE_OFFSET UNITYSDK_OFFSET(0x1B0B9F70)
+#define AKCALLBACKMANAGER_BANKCALLBACKPACKAGE_RECYCLE_OFFSET UNITYSDK_OFFSET(0x1B0B9EE0)
+#define AKCALLBACKMANAGER_BANKCALLBACKPACKAGE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0B9C50)
+#define AKCALLBACKMANAGER_BANKCALLBACKPACKAGE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B0B9E20)
+#define AKCALLBACKMANAGER_BANKCALLBACKPACKAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0B9ED0)
 
-inline static constexpr unsigned int AkCallbackManager_BankCallbackPackage_TypeDefinitionIndex = 33574;
+inline static constexpr unsigned int AkCallbackManager_BankCallbackPackage_TypeDefinitionIndex = 30020;
 
 class AkCallbackManager_BankCallbackPackage : public ::System::Object
 {
 public:
+	static ::System::Collections::Generic::Stack_1<::AkCallbackManager_BankCallbackPackage*>** StaticGet_m_Pool()
+	{
+		return (::System::Collections::Generic::Stack_1<::AkCallbackManager_BankCallbackPackage*>**)Il2CppClass::FromTypeDefinitionIndex(AkCallbackManager_BankCallbackPackage_TypeDefinitionIndex)->GetStaticField(0x23360);
+	}
+	// static const ::System::Int32 POOL_SIZE = 0x1000; // 0x0
 	::System::Object* m_Cookie; // 0x10
 	::AkCallbackManager_BankCallback* m_Callback; // 0x18
 
-	::System::Void _ctor(::AkCallbackManager_BankCallback* in_cb, ::System::Object* in_cookie)
+	static ::System::Void _cctor()
 	{
-		return ((::System::Void(*)(::PVOID, ::AkCallbackManager_BankCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + AKCALLBACKMANAGER_BANKCALLBACKPACKAGE__CTOR_OFFSET))(this, in_cb, in_cookie);
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + AKCALLBACKMANAGER_BANKCALLBACKPACKAGE__CCTOR_OFFSET))();
+	}
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKCALLBACKMANAGER_BANKCALLBACKPACKAGE__CTOR_OFFSET))(this);
+	}
+
+	::System::Void _ctor_1(::AkCallbackManager_BankCallback* in_cb, ::System::Object* in_cookie)
+	{
+		return ((::System::Void(*)(::PVOID, ::AkCallbackManager_BankCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + AKCALLBACKMANAGER_BANKCALLBACKPACKAGE__CTOR_1_OFFSET))(this, in_cb, in_cookie);
+	}
+
+	static ::System::Void Recycle(::AkCallbackManager_BankCallbackPackage* bank)
+	{
+		return ((::System::Void(*)(::AkCallbackManager_BankCallbackPackage*))((::PBYTE)hIl2Cpp + AKCALLBACKMANAGER_BANKCALLBACKPACKAGE_RECYCLE_OFFSET))(bank);
+	}
+
+	static ::AkCallbackManager_BankCallbackPackage* Create(::AkCallbackManager_BankCallback* in_cb, ::System::Object* in_cookie)
+	{
+		return ((::AkCallbackManager_BankCallbackPackage*(*)(::AkCallbackManager_BankCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + AKCALLBACKMANAGER_BANKCALLBACKPACKAGE_CREATE_OFFSET))(in_cb, in_cookie);
 	}
 };

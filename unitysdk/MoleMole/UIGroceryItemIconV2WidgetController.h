@@ -1,0 +1,167 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_0_16E4307DCC419505_187;
+class Class_0_16E4307DCC419505_491;
+class Class_1_43BD383C98B4C0C5_31;
+class Class_2_60638234271CCDB8_80;
+class Class_2_A48F3719AA1CF200_27;
+class Class_2_EC28E1D3A39EE7DE_8;
+namespace MoleMole { class GroceryItemIconV2Context; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralIconCardRarityWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_GET_ITEMID_OFFSET UNITYSDK_OFFSET(0x8925D20)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0x8921F30)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0x8922110)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONCONSOLEPRICEBUTTONCLICK_OFFSET UNITYSDK_OFFSET(0x8925B80)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x8921FA0)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8925970)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONHIDEJUMPITEMTIPFOCUS_OFFSET UNITYSDK_OFFSET(0x8925C90)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0x8925120)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x8925230)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8925A10)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8922060)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8924D50)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_REFRESHJUMPFOCUS_OFFSET UNITYSDK_OFFSET(0x8925840)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_SETITEMIDSHOWSTATE_OFFSET UNITYSDK_OFFSET(0x8925D30)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8925E60)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x8925F30)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8925EC0)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0x8925FA0)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x8926000)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8926080)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8926100)
+#define MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8926160)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGroceryItemIconV2WidgetController_TypeDefinitionIndex = 65454;
+
+	class UIGroceryItemIconV2WidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_60638234271CCDB8_80* _view; // 0x2D0
+		::MoleMole::UIGeneralIconCardRarityWidgetController* _cardRarityWidget; // 0x2D8
+		::Class_0_16E4307DCC419505_187* _goodsData; // 0x2E0
+		::MoleMole::GroceryItemIconV2Context* _context; // 0x2E8
+		::Class_1_43BD383C98B4C0C5_31* _viewProxy; // 0x2F0
+		::Class_2_A48F3719AA1CF200_27* _goodUILogic; // 0x2F8
+		::System::Int32 m_itemID; // 0x300
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_EC28E1D3A39EE7DE_8* get__viewModel()
+		{
+			return ((::Class_2_EC28E1D3A39EE7DE_8*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnConsolePriceButtonClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONCONSOLEPRICEBUTTONCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnHideJumpItemTipFocus(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_ONHIDEJUMPITEMTIPFOCUS_OFFSET))(this, obj);
+		}
+
+		::System::Void RefreshJumpFocus(::Class_0_16E4307DCC419505_491* tip)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_491*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_REFRESHJUMPFOCUS_OFFSET))(this, tip);
+		}
+
+		::System::Int32 get_ItemID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_GET_ITEMID_OFFSET))(this);
+		}
+
+		::System::Void SetItemIDShowState(::System::Boolean isShow)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER_SETITEMIDSHOWSTATE_OFFSET))(this, isShow);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYITEMICONV2WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

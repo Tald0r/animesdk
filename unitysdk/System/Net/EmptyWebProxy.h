@@ -4,15 +4,18 @@
 
 namespace System { class Uri; }
 namespace System::Net { class ICredentials; }
+namespace System::Net { class ProxyChain; }
 
-#define SYSTEM_NET_EMPTYWEBPROXY_GETPROXY_OFFSET UNITYSDK_OFFSET(0x17EB4930)
-#define SYSTEM_NET_EMPTYWEBPROXY_GET_CREDENTIALS_OFFSET UNITYSDK_OFFSET(0x17EB4950)
-#define SYSTEM_NET_EMPTYWEBPROXY_ISBYPASSED_OFFSET UNITYSDK_OFFSET(0x17EB4940)
-#define SYSTEM_NET_EMPTYWEBPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x17EB4920)
+#define SYSTEM_NET_EMPTYWEBPROXY_GETPROXY_OFFSET UNITYSDK_OFFSET(0x18E3F2C0)
+#define SYSTEM_NET_EMPTYWEBPROXY_GET_CREDENTIALS_OFFSET UNITYSDK_OFFSET(0x18E3F2E0)
+#define SYSTEM_NET_EMPTYWEBPROXY_ISBYPASSED_OFFSET UNITYSDK_OFFSET(0x18E3F2D0)
+#define SYSTEM_NET_EMPTYWEBPROXY_SET_CREDENTIALS_OFFSET UNITYSDK_OFFSET(0x18E3F2F0)
+#define SYSTEM_NET_EMPTYWEBPROXY_SYSTEM_NET_IAUTOWEBPROXY_GETPROXIES_OFFSET UNITYSDK_OFFSET(0x18E3F300)
+#define SYSTEM_NET_EMPTYWEBPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x18E3F2B0)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int EmptyWebProxy_TypeDefinitionIndex = 2772;
+	inline static constexpr unsigned int EmptyWebProxy_TypeDefinitionIndex = 3406;
 
 	class EmptyWebProxy : public ::System::Object
 	{
@@ -37,6 +40,16 @@ namespace System::Net
 		::System::Net::ICredentials* get_Credentials()
 		{
 			return ((::System::Net::ICredentials*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_EMPTYWEBPROXY_GET_CREDENTIALS_OFFSET))(this);
+		}
+
+		::System::Void set_Credentials(::System::Net::ICredentials* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::ICredentials*))((::PBYTE)hIl2Cpp + SYSTEM_NET_EMPTYWEBPROXY_SET_CREDENTIALS_OFFSET))(this, value);
+		}
+
+		::System::Net::ProxyChain* System_Net_IAutoWebProxy_GetProxies(::System::Uri* destination)
+		{
+			return ((::System::Net::ProxyChain*(*)(::PVOID, ::System::Uri*))((::PBYTE)hIl2Cpp + SYSTEM_NET_EMPTYWEBPROXY_SYSTEM_NET_IAUTOWEBPROXY_GETPROXIES_OFFSET))(this, destination);
 		}
 	};
 }

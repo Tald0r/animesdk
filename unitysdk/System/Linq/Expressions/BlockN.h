@@ -2,20 +2,22 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Linq/Expressions/BlockExpression.h"
 
+namespace System::Collections::Generic { template <typename T> class ICollection_1; }
 namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
 namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 namespace System::Linq::Expressions { class Expression; }
 namespace System::Linq::Expressions { class ParameterExpression; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_BLOCKN_GETEXPRESSION_OFFSET UNITYSDK_OFFSET(0x17C8E7D0)
-#define SYSTEM_LINQ_EXPRESSIONS_BLOCKN_GETORMAKEEXPRESSIONS_OFFSET UNITYSDK_OFFSET(0x17C8E990)
-#define SYSTEM_LINQ_EXPRESSIONS_BLOCKN_GET_EXPRESSIONCOUNT_OFFSET UNITYSDK_OFFSET(0x17C8E8B0)
-#define SYSTEM_LINQ_EXPRESSIONS_BLOCKN_REWRITE_OFFSET UNITYSDK_OFFSET(0x17C8E9D0)
-#define SYSTEM_LINQ_EXPRESSIONS_BLOCKN__CTOR_OFFSET UNITYSDK_OFFSET(0x17C8E770)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCKN_GETEXPRESSION_OFFSET UNITYSDK_OFFSET(0x1A926F60)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCKN_GETORMAKEEXPRESSIONS_OFFSET UNITYSDK_OFFSET(0x1A927120)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCKN_GET_EXPRESSIONCOUNT_OFFSET UNITYSDK_OFFSET(0x1A927040)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCKN_REWRITE_OFFSET UNITYSDK_OFFSET(0x1A927160)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCKN_SAMEEXPRESSIONS_OFFSET UNITYSDK_OFFSET(0x1A926F10)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCKN__CTOR_OFFSET UNITYSDK_OFFSET(0x1A926EB0)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int BlockN_TypeDefinitionIndex = 3173;
+	inline static constexpr unsigned int BlockN_TypeDefinitionIndex = 4436;
 
 	class BlockN : public ::System::Linq::Expressions::BlockExpression
 	{
@@ -25,6 +27,11 @@ namespace System::Linq::Expressions
 		::System::Void _ctor(::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>* expressions)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_BLOCKN__CTOR_OFFSET))(this, expressions);
+		}
+
+		::System::Boolean SameExpressions(::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::Expression*>* expressions)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_BLOCKN_SAMEEXPRESSIONS_OFFSET))(this, expressions);
 		}
 
 		::System::Linq::Expressions::Expression* GetExpression(::System::Int32 index)

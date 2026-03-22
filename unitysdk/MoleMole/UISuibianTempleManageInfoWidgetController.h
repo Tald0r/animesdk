@@ -1,0 +1,336 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_7287219DC64CD06D.h"
+#include "unitysdk/Enum_3_D3384FC764485EA3.h"
+#include "unitysdk/Enum_3_EDC2AF1268851C10.h"
+#include "unitysdk/MoleMole/UISuibianTempleManageInfoWidgetController_TabWidget.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_72108342D7142693_Class_1_D8C08C94211C11A1;
+class Class_1_A8EA6B61E855F22F;
+class Class_2_1E89A1A01EA84819;
+class Class_2_6EA4F26ED1B99676;
+class Class_2_D7C82C373A53D1D3;
+class Class_2_F58E1814EA419801;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UISuibianDevelopRightWidgetController; }
+namespace MoleMole { class UISuibianProductionRightWidgetController; }
+namespace MoleMole { class UISuibianSellRightWidgetController; }
+namespace MoleMole { class UISuibianTempleManageInfoContext; }
+namespace MoleMole { class UISuibianTempleManageInfoWidgetController_DetailTypeFilter; }
+namespace MoleMole { class UISuibianTempleManageInfoWidgetController_ProductFilter; }
+namespace MoleMole { class UISuibianTempleManageInfoWidgetController_ProductTypeFilter; }
+namespace MoleMole { class UISuibianTempleManageInfoWidgetController_ResearchTabTypeFilter; }
+namespace MoleMole { class UISuibianTempleManageInfoWidgetController_TempleManageInfoWidget; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+template <typename T1, typename T2> class Class_2_97B8C5560BEC00CB;
+template <typename T> class Class_2_7AE1A22930C1CD01;
+
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_CLEARPRODUCTBIND_OFFSET UNITYSDK_OFFSET(0xAE2FEB0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_CLOSEINFOALL_OFFSET UNITYSDK_OFFSET(0xAE30580)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_CLOSETEMPLEPRODUCTINFO_OFFSET UNITYSDK_OFFSET(0xAE34E70)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_CREATEPRODUCTTAB_OFFSET UNITYSDK_OFFSET(0xAE33440)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_GETDEFAULTSELECTPRODUCTID_OFFSET UNITYSDK_OFFSET(0xAE325B0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_GET_TYPE_OFFSET UNITYSDK_OFFSET(0xAE35240)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xAE2F6A0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITLOGO_OFFSET UNITYSDK_OFFSET(0xAE31CD0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITORIFILTER_OFFSET UNITYSDK_OFFSET(0xAE31340)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITPRODUCTTAB_OFFSET UNITYSDK_OFFSET(0xAE314D0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITPROPERTYBIND_OFFSET UNITYSDK_OFFSET(0xAE30CB0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITSELECTPRODUCT_OFFSET UNITYSDK_OFFSET(0xAE32300)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONCLICKRESEARCHSUBTAB_OFFSET UNITYSDK_OFFSET(0xAE33360)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAE2F280)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONSELECTBUDDY_OFFSET UNITYSDK_OFFSET(0xAE34130)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONSELECTROWITEM_OFFSET UNITYSDK_OFFSET(0xAE2F440)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONTEMPLESIMPRODUCTSELECTPANELSYNCBLOCK_OFFSET UNITYSDK_OFFSET(0xAE2F980)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAE2FB00)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAE2F7B0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAE2FF40)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_OPENRIGHTWIDGET_OFFSET UNITYSDK_OFFSET(0xAE30F00)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHBOTTOMTIPS_OFFSET UNITYSDK_OFFSET(0xAE31EB0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHCONSOLE_OFFSET UNITYSDK_OFFSET(0xAE332D0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHPRODUCTSBYFILTER_OFFSET UNITYSDK_OFFSET(0xAE33AF0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHPRODUCTSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0xAE342C0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHPRODUCTSELECTCURSHELVEID_OFFSET UNITYSDK_OFFSET(0xAE307C0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHPRODUCTTAB_OFFSET UNITYSDK_OFFSET(0xAE318C0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHREPLACETITLE_OFFSET UNITYSDK_OFFSET(0xAE30A80)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHSORTMODULE_OFFSET UNITYSDK_OFFSET(0xAE31AB0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHTABNOTIFICATION_OFFSET UNITYSDK_OFFSET(0xAE336D0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHTABSELECT_OFFSET UNITYSDK_OFFSET(0xAE33980)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xAE301D0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_RESET_OFFSET UNITYSDK_OFFSET(0xAE34EE0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_RESTOREPARAS_OFFSET UNITYSDK_OFFSET(0xAE34F50)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_SELECTPRODUCTTYPE_OFFSET UNITYSDK_OFFSET(0xAE338F0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_SETLINKSTATUS_OFFSET UNITYSDK_OFFSET(0xAE30070)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xAE35390)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAE35250)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER__ONCREATEVIEW_B__7_0_OFFSET UNITYSDK_OFFSET(0xAE35520)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER__REFRESHSORTMODULE_B__35_0_OFFSET UNITYSDK_OFFSET(0xAE355A0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0xAE359D0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAE35A30)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAE35AA0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAE35B20)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAE35B80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISuibianTempleManageInfoWidgetController_TypeDefinitionIndex = 51373;
+
+	class UISuibianTempleManageInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		static ::Class_2_97B8C5560BEC00CB<::Class_2_1E89A1A01EA84819*, ::System::Int32>** StaticGet_TempleBuddyTalentFilter()
+		{
+			return (::Class_2_97B8C5560BEC00CB<::Class_2_1E89A1A01EA84819*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleManageInfoWidgetController_TypeDefinitionIndex)->GetStaticField(0x3F170);
+		}
+		// static const ::System::Int32 AllProductType = 0x0; // 0x0
+		::Class_2_D7C82C373A53D1D3* _view; // 0x2A0
+		::Class_2_7AE1A22930C1CD01<::Class_2_1E89A1A01EA84819*>* _sort; // 0x2A8
+		::Class_1_A8EA6B61E855F22F* sortModule; // 0x2B0
+		::System::String* replaceTitle; // 0x2B8
+		::System::Collections::Generic::List_1<::MoleMole::UISuibianTempleManageInfoWidgetController_TabWidget>* widgets; // 0x2C0
+		::MoleMole::UISuibianTempleManageInfoWidgetController_ProductTypeFilter* productTypeFilter; // 0x2C8
+		::MoleMole::UISuibianTempleManageInfoWidgetController_DetailTypeFilter* detailFilter; // 0x2D0
+		::MoleMole::UISuibianTempleManageInfoWidgetController_ResearchTabTypeFilter* researchTabTypeFilter; // 0x2D8
+		::System::UInt32 buddyID; // 0x2E0
+		::System::Collections::Generic::List_1<::MoleMole::UISuibianTempleManageInfoWidgetController_ProductFilter*>* filters; // 0x2E8
+		::System::Collections::Generic::List_1<::Class_2_6EA4F26ED1B99676*>* _tmpProductData; // 0x2F0
+		::Class_2_F58E1814EA419801* _syncHelper; // 0x2F8
+		::MoleMole::UISuibianTempleManageInfoWidgetController_TempleManageInfoWidget* _infoData; // 0x300
+		::Enum_3_D3384FC764485EA3 _detailType; // 0x308
+		::MoleMole::UISuibianDevelopRightWidgetController* developRightController; // 0x310
+		::MoleMole::UISuibianProductionRightWidgetController* productRightController; // 0x318
+		::MoleMole::UISuibianSellRightWidgetController* sellRightController; // 0x320
+		::Enum_3_7287219DC64CD06D linkType; // 0x328
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnSelectRowItem(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONSELECTROWITEM_OFFSET))(this, index);
+		}
+
+		::System::Void InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnTempleSimProductSelectPanelSyncBlock(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONTEMPLESIMPRODUCTSELECTPANELSYNCBLOCK_OFFSET))(this, obj);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void SetLinkStatus(::MoleMole::UISuibianTempleManageInfoContext* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UISuibianTempleManageInfoContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_SETLINKSTATUS_OFFSET))(this, context);
+		}
+
+		::System::Void RefreshView(::MoleMole::UISuibianTempleManageInfoContext* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UISuibianTempleManageInfoContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, context);
+		}
+
+		::System::Void RefreshProductSelectCurShelveID()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHPRODUCTSELECTCURSHELVEID_OFFSET))(this);
+		}
+
+		::System::Int32 GetDefaultSelectProductID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_GETDEFAULTSELECTPRODUCTID_OFFSET))(this);
+		}
+
+		::System::Void RefreshConsole()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHCONSOLE_OFFSET))(this);
+		}
+
+		::System::Void RefreshReplaceTitle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHREPLACETITLE_OFFSET))(this);
+		}
+
+		::System::Void InitSelectProduct(::System::Int32 productID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITSELECTPRODUCT_OFFSET))(this, productID);
+		}
+
+		::System::Void InitPropertyBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITPROPERTYBIND_OFFSET))(this);
+		}
+
+		::System::Void RefreshBottomTips()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHBOTTOMTIPS_OFFSET))(this);
+		}
+
+		::System::Void CloseInfoAll()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_CLOSEINFOALL_OFFSET))(this);
+		}
+
+		::System::Void InitLogo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITLOGO_OFFSET))(this);
+		}
+
+		::System::Void OpenRightWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_OPENRIGHTWIDGET_OFFSET))(this);
+		}
+
+		::System::Void InitOriFilter(::Enum_3_D3384FC764485EA3 detailType, ::Enum_3_EDC2AF1268851C10 developRightTabType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_D3384FC764485EA3, ::Enum_3_EDC2AF1268851C10))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITORIFILTER_OFFSET))(this, detailType, developRightTabType);
+		}
+
+		::System::Void OnClickResearchSubTab(::Enum_3_EDC2AF1268851C10 developRightTabType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_EDC2AF1268851C10))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONCLICKRESEARCHSUBTAB_OFFSET))(this, developRightTabType);
+		}
+
+		::System::Void InitProductTab(::Enum_3_D3384FC764485EA3 detailType, ::Enum_3_EDC2AF1268851C10 developRightTabType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_D3384FC764485EA3, ::Enum_3_EDC2AF1268851C10))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_INITPRODUCTTAB_OFFSET))(this, detailType, developRightTabType);
+		}
+
+		::MoleMole::UISuibianTempleManageInfoWidgetController_TabWidget CreateProductTab(::Enum_3_D3384FC764485EA3 detailType, ::Enum_3_EDC2AF1268851C10 developRightTabType, ::System::Int32 index, ::System::Int32 productType)
+		{
+			return ((::MoleMole::UISuibianTempleManageInfoWidgetController_TabWidget(*)(::PVOID, ::Enum_3_D3384FC764485EA3, ::Enum_3_EDC2AF1268851C10, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_CREATEPRODUCTTAB_OFFSET))(this, detailType, developRightTabType, index, productType);
+		}
+
+		::System::Int32 RefreshProductTab(::Enum_3_D3384FC764485EA3 detailType, ::Enum_3_EDC2AF1268851C10 developRightTabType)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Enum_3_D3384FC764485EA3, ::Enum_3_EDC2AF1268851C10))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHPRODUCTTAB_OFFSET))(this, detailType, developRightTabType);
+		}
+
+		::System::Void SelectProductType(::System::Int32 productType)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_SELECTPRODUCTTYPE_OFFSET))(this, productType);
+		}
+
+		::System::Void RefreshTabSelect(::System::Int32 productType)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHTABSELECT_OFFSET))(this, productType);
+		}
+
+		::System::Void RefreshTabNotification(::Enum_3_D3384FC764485EA3 detailType, ::Enum_3_EDC2AF1268851C10 developRightTabType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_D3384FC764485EA3, ::Enum_3_EDC2AF1268851C10))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHTABNOTIFICATION_OFFSET))(this, detailType, developRightTabType);
+		}
+
+		::System::Void RefreshProductsByFilter()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHPRODUCTSBYFILTER_OFFSET))(this);
+		}
+
+		::System::Void RefreshSortModule(::Enum_3_D3384FC764485EA3 detailType, ::Enum_3_EDC2AF1268851C10 developRightTabType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_D3384FC764485EA3, ::Enum_3_EDC2AF1268851C10))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHSORTMODULE_OFFSET))(this, detailType, developRightTabType);
+		}
+
+		::System::Void OnSelectBuddy(::System::UInt32 buddyUid)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_ONSELECTBUDDY_OFFSET))(this, buddyUid);
+		}
+
+		::System::Void ClearProductBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_CLEARPRODUCTBIND_OFFSET))(this);
+		}
+
+		::System::Void RefreshProductScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_REFRESHPRODUCTSCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void CloseTempleProductInfo(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_CLOSETEMPLEPRODUCTINFO_OFFSET))(this, args);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_RESET_OFFSET))(this);
+		}
+
+		::Class_1_72108342D7142693_Class_1_D8C08C94211C11A1* RestoreParas()
+		{
+			return ((::Class_1_72108342D7142693_Class_1_D8C08C94211C11A1*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_RESTOREPARAS_OFFSET))(this);
+		}
+
+		::Enum_3_7287219DC64CD06D get_Type()
+		{
+			return ((::Enum_3_7287219DC64CD06D(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER_GET_TYPE_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _OnCreateView_b__7_0(::System::Func_1<::MoleMole::UIControlReference*>* reference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER__ONCREATEVIEW_B__7_0_OFFSET))(this, reference);
+		}
+
+		::System::Void _RefreshSortModule_b__35_0(::System::Collections::Generic::List_1<::Class_2_1E89A1A01EA84819*>* res)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_2_1E89A1A01EA84819*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER__REFRESHSORTMODULE_B__35_0_OFFSET))(this, res);
+		}
+
+		::System::Void __base_InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANTEMPLEMANAGEINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

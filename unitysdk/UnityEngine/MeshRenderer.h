@@ -1,24 +1,28 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/UnityEngine/Bounds.h"
 #include "unitysdk/UnityEngine/Renderer.h"
+#include "unitysdk/UnityEngine/Vector3.h"
 
+namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Mesh; }
 
-#define UNITYENGINE_MESHRENDERER_DONTSTRIPMESHRENDERER_OFFSET UNITYSDK_OFFSET(0x1820F3A0)
-#define UNITYENGINE_MESHRENDERER_GETMATERIALENABLED_OFFSET UNITYSDK_OFFSET(0x1820F440)
-#define UNITYENGINE_MESHRENDERER_GET_ADDITIONALVERTEXSTREAMS_OFFSET UNITYSDK_OFFSET(0x1820F3B0)
-#define UNITYENGINE_MESHRENDERER_GET_SUBMESHSTARTINDEX_OFFSET UNITYSDK_OFFSET(0x1820F3D0)
-#define UNITYENGINE_MESHRENDERER_SETMATERIALENABLED_OFFSET UNITYSDK_OFFSET(0x1820F430)
-#define UNITYENGINE_MESHRENDERER_SETOVERRIDEBOUNDS_OFFSET UNITYSDK_OFFSET(0x1820F400)
-#define UNITYENGINE_MESHRENDERER_SETOVERRIDEWORLDAABB_INJECTED_OFFSET UNITYSDK_OFFSET(0x1820F3F0)
-#define UNITYENGINE_MESHRENDERER_SETOVERRIDEWORLDAABB_OFFSET UNITYSDK_OFFSET(0x1820F3E0)
-#define UNITYENGINE_MESHRENDERER_SET_ADDITIONALVERTEXSTREAMS_OFFSET UNITYSDK_OFFSET(0x1820F3C0)
-#define UNITYENGINE_MESHRENDERER__CTOR_OFFSET UNITYSDK_OFFSET(0x1820F450)
+#define UNITYENGINE_MESHRENDERER_DONTSTRIPMESHRENDERER_OFFSET UNITYSDK_OFFSET(0x1A119EA0)
+#define UNITYENGINE_MESHRENDERER_GET_ADDITIONALVERTEXSTREAMS_OFFSET UNITYSDK_OFFSET(0x1A119EB0)
+#define UNITYENGINE_MESHRENDERER_GET_BOUNDSSCALE_INJECTED_OFFSET UNITYSDK_OFFSET(0x1A119F50)
+#define UNITYENGINE_MESHRENDERER_GET_BOUNDSSCALE_OFFSET UNITYSDK_OFFSET(0x1A119F00)
+#define UNITYENGINE_MESHRENDERER_GET_SORTINGFUDGE_OFFSET UNITYSDK_OFFSET(0x1A119EE0)
+#define UNITYENGINE_MESHRENDERER_GET_SUBMESHSTARTINDEX_OFFSET UNITYSDK_OFFSET(0x1A119ED0)
+#define UNITYENGINE_MESHRENDERER_RESETVISIBLEEFFECTPREFABSQUERY_OFFSET UNITYSDK_OFFSET(0x1A119F80)
+#define UNITYENGINE_MESHRENDERER_SET_ADDITIONALVERTEXSTREAMS_OFFSET UNITYSDK_OFFSET(0x1A119EC0)
+#define UNITYENGINE_MESHRENDERER_SET_BOUNDSSCALE_INJECTED_OFFSET UNITYSDK_OFFSET(0x1A119F70)
+#define UNITYENGINE_MESHRENDERER_SET_BOUNDSSCALE_OFFSET UNITYSDK_OFFSET(0x1A119F60)
+#define UNITYENGINE_MESHRENDERER_SET_SORTINGFUDGE_OFFSET UNITYSDK_OFFSET(0x1A119EF0)
+#define UNITYENGINE_MESHRENDERER_VISIBLEEFFECTPREFABSQUERY_OFFSET UNITYSDK_OFFSET(0x1A119F90)
+#define UNITYENGINE_MESHRENDERER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A119FA0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int MeshRenderer_TypeDefinitionIndex = 3972;
+	inline static constexpr unsigned int MeshRenderer_TypeDefinitionIndex = 5254;
 
 	class MeshRenderer : public ::UnityEngine::Renderer
 	{
@@ -48,29 +52,44 @@ namespace UnityEngine
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_GET_SUBMESHSTARTINDEX_OFFSET))(this);
 		}
 
-		::System::Void SetOverrideWorldAABB(::System::Boolean override, ::UnityEngine::Bounds bounds)
+		::System::Single get_sortingFudge()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::UnityEngine::Bounds))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_SETOVERRIDEWORLDAABB_OFFSET))(this, override, bounds);
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_GET_SORTINGFUDGE_OFFSET))(this);
 		}
 
-		::System::Void SetOverrideBounds(::System::Boolean override, ::UnityEngine::Bounds bounds)
+		::System::Void set_sortingFudge(::System::Single value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::UnityEngine::Bounds))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_SETOVERRIDEBOUNDS_OFFSET))(this, override, bounds);
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_SET_SORTINGFUDGE_OFFSET))(this, value);
 		}
 
-		::System::Void SetMaterialEnabled(::System::Int32 index, ::System::Boolean enabled)
+		::UnityEngine::Vector3 get_boundsScale()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_SETMATERIALENABLED_OFFSET))(this, index, enabled);
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_GET_BOUNDSSCALE_OFFSET))(this);
 		}
 
-		::System::Boolean GetMaterialEnabled(::System::Int32 index)
+		::System::Void set_boundsScale(::UnityEngine::Vector3 value)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_GETMATERIALENABLED_OFFSET))(this, index);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_SET_BOUNDSSCALE_OFFSET))(this, value);
 		}
 
-		::System::Void SetOverrideWorldAABB_Injected(::System::Boolean override, ::UnityEngine::Bounds& bounds)
+		static ::System::Void ResetVisibleEffectPrefabsQuery()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::UnityEngine::Bounds&))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_SETOVERRIDEWORLDAABB_INJECTED_OFFSET))(this, override, bounds);
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_RESETVISIBLEEFFECTPREFABSQUERY_OFFSET))();
+		}
+
+		static ::Il2CppArray<::UnityEngine::GameObject*>* VisibleEffectPrefabsQuery()
+		{
+			return ((::Il2CppArray<::UnityEngine::GameObject*>*(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_VISIBLEEFFECTPREFABSQUERY_OFFSET))();
+		}
+
+		::System::Void get_boundsScale_Injected(::UnityEngine::Vector3& ret)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_GET_BOUNDSSCALE_INJECTED_OFFSET))(this, ret);
+		}
+
+		::System::Void set_boundsScale_Injected(::UnityEngine::Vector3& value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + UNITYENGINE_MESHRENDERER_SET_BOUNDSSCALE_INJECTED_OFFSET))(this, value);
 		}
 	};
 }

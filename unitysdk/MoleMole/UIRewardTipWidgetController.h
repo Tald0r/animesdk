@@ -1,0 +1,141 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+class Class_1_C4CB11A2FD957208_Class_1_A983ED79C549CB78;
+class Class_2_75FB4A09078427E5_2;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+namespace UnityEngine { class AnimationCurve; }
+namespace UnityEngine { class RectTransform; }
+
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_GET_ISFINISHED_OFFSET UNITYSDK_OFFSET(0xD6B8A80)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD6B8E10)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD6B8EB0)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD6B8A90)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD6B8D60)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_REFRESHUI_OFFSET UNITYSDK_OFFSET(0xD6B90D0)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_SETANIMMOVE_OFFSET UNITYSDK_OFFSET(0xD6B95F0)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER__CALLDELAYCLOSE_OFFSET UNITYSDK_OFFSET(0xD6B93D0)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD6B9890)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER__ONDELAYCALLBACK_OFFSET UNITYSDK_OFFSET(0xD6B94F0)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER__SETANIMMOVE_B__24_0_OFFSET UNITYSDK_OFFSET(0xD6B9900)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER__SETANIMMOVE_B__24_1_OFFSET UNITYSDK_OFFSET(0xD6B9AE0)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD6B9C10)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD6B9C80)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD6B9D00)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD6B9D60)
+#define MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER___ONDELAYCALLBACK_B__23_0_OFFSET UNITYSDK_OFFSET(0xD6B98E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIRewardTipWidgetController_TypeDefinitionIndex = 71887;
+
+	class UIRewardTipWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_75FB4A09078427E5_2* _view; // 0x2A0
+		::System::Single _waitingTime; // 0x2A8
+		::System::Boolean _isFinished; // 0x2AC
+		::System::Boolean _isInDelaying; // 0x2AD
+		::System::Single _waitingMarkTime; // 0x2B0
+		::System::Boolean isFirstEnter; // 0x2B4
+		::UnityEngine::Vector2 startAnchorPos; // 0x2B8
+		::UnityEngine::Vector2 targetAnchorPos; // 0x2C0
+		::UnityEngine::AnimationCurve* motionCurve; // 0x2C8
+		::System::Single totalTime; // 0x2D0
+		::System::Single passTime; // 0x2D4
+		::UnityEngine::RectTransform* rectTrans; // 0x2D8
+		::Foundation::Coroutine::CoroutineHandle moveCoroutine; // 0x2E0
+		::System::Action* OnFnish; // 0x2E8
+		::Class_1_C4CB11A2FD957208_Class_1_A983ED79C549CB78* _prevItem; // 0x2F0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsFinished()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_GET_ISFINISHED_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshUI(::Class_1_C4CB11A2FD957208_Class_1_A983ED79C549CB78* rewardTip, ::System::Int32 redirectCount, ::System::Action* OnFinishCb)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_C4CB11A2FD957208_Class_1_A983ED79C549CB78*, ::System::Int32, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_REFRESHUI_OFFSET))(this, rewardTip, redirectCount, OnFinishCb);
+		}
+
+		::System::Void _CallDelayClose(::System::Single delayTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER__CALLDELAYCLOSE_OFFSET))(this, delayTime);
+		}
+
+		::System::Void _OnDelayCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER__ONDELAYCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void SetAnimMove(::UnityEngine::Vector2 targetPos)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER_SETANIMMOVE_OFFSET))(this, targetPos);
+		}
+
+		::System::Void __OnDelayCallback_b__23_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER___ONDELAYCALLBACK_B__23_0_OFFSET))(this);
+		}
+
+		::System::Void _SetAnimMove_b__24_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER__SETANIMMOVE_B__24_0_OFFSET))(this);
+		}
+
+		::System::Void _SetAnimMove_b__24_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER__SETANIMMOVE_B__24_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIREWARDTIPWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

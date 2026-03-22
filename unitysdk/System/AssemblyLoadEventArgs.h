@@ -4,11 +4,12 @@
 
 namespace System::Reflection { class Assembly; }
 
-#define SYSTEM_ASSEMBLYLOADEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x15B00C50)
+#define SYSTEM_ASSEMBLYLOADEVENTARGS_GET_LOADEDASSEMBLY_OFFSET UNITYSDK_OFFSET(0x17F4ACA0)
+#define SYSTEM_ASSEMBLYLOADEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x17F496B0)
 
 namespace System
 {
-	inline static constexpr unsigned int AssemblyLoadEventArgs_TypeDefinitionIndex = 378;
+	inline static constexpr unsigned int AssemblyLoadEventArgs_TypeDefinitionIndex = 366;
 
 	class AssemblyLoadEventArgs : public ::System::EventArgs
 	{
@@ -18,6 +19,11 @@ namespace System
 		::System::Void _ctor(::System::Reflection::Assembly* loadedAssembly)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Reflection::Assembly*))((::PBYTE)hIl2Cpp + SYSTEM_ASSEMBLYLOADEVENTARGS__CTOR_OFFSET))(this, loadedAssembly);
+		}
+
+		::System::Reflection::Assembly* get_LoadedAssembly()
+		{
+			return ((::System::Reflection::Assembly*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_ASSEMBLYLOADEVENTARGS_GET_LOADEDASSEMBLY_OFFSET))(this);
 		}
 	};
 }

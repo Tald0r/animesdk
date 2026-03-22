@@ -1,0 +1,62 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace NPCCrowd::Animation
+{
+	inline static constexpr unsigned int AnimationSubManager_AvatarAnimationCurve_TypeDefinitionIndex = 71100;
+
+	enum class AnimationSubManager_AvatarAnimationCurve : ::System::Int32
+	{
+		MotionRatioRightHandTX = 14,
+		MotionRatioPelvisTZ = 32,
+		MotionRatioRightFootTX = 22,
+		MotionRatioRootTY = 7,
+		MotionRatioRightFootTZ = 24,
+		MotionRatioBip001TZ = 28,
+		MotionRatioPelvisA = 33,
+		MotionRatioNeckA = 49,
+		MotionRatioSpineA = 37,
+		MotionRatioSpineTX = 34,
+		Max = 50,
+		MotionRatioLeftHandTX = 10,
+		FootAreaSection = 4,
+		MotionRatioRootTX = 6,
+		MotionRatioLeftHandTZ = 12,
+		MotionRatioSpine2A = 45,
+		MotionRatioLeftFootTX = 18,
+		MotionRatioNeckTX = 46,
+		MotionRatioSpine1TZ = 40,
+		MotionRatioSpine1TY = 39,
+		MotionRatioNeckTZ = 48,
+		MotionRatioSpineTZ = 36,
+		LeftFootIkWeight = 0,
+		MotionRatioSpine2TY = 43,
+		MotionRatioBip001TY = 27,
+		MotionRatioLeftHandA = 13,
+		MotionRatioRightHandTZ = 16,
+		MotionRatioNeckTY = 47,
+		MotionRatioRightHandTY = 15,
+		MotionRatioSpine2TX = 42,
+		FootLockStatus = 5,
+		MotionRatioSpine1A = 41,
+		FootAreaPhase = 3,
+		MotionRatioLeftFootTZ = 20,
+		MotionRatioPelvisTX = 30,
+		MotionRatioBip001A = 29,
+		MotionRatioSpineTY = 35,
+		MotionRatioLeftFootA = 21,
+		MotionRatioRootTZ = 8,
+		RightFootIkWeight = 1,
+		MotionRatioPelvisTY = 31,
+		MotionRatioRightFootA = 25,
+		MotionRatioLeftFootTY = 19,
+		MotionRatioRightFootTY = 23,
+		MotionRatioBip001TX = 26,
+		MotionRatioSpine2TZ = 44,
+		MotionRatioRootA = 9,
+		FootArea = 2,
+		MotionRatioLeftHandTY = 11,
+		MotionRatioSpine1TX = 38,
+		MotionRatioRightHandA = 17,
+	};
+}

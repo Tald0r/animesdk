@@ -1,0 +1,99 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_2A212FCBF7BDBEDF;
+class Class_2_C04F87C132BA9A06;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_GET_MODEL_OFFSET UNITYSDK_OFFSET(0xA3396D0)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xA338F10)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA338F20)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_INITEXPITEM_OFFSET UNITYSDK_OFFSET(0xA339A00)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA338F90)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_ONITEMCHANGEHANDLE_OFFSET UNITYSDK_OFFSET(0xA339140)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA339050)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3397A0)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_SETPROPERTYBYMODELDATA_OFFSET UNITYSDK_OFFSET(0xA3391B0)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA339D40)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA339D50)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA339DC0)
+#define MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA339DD0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICoopLevelRewardPageController_TypeDefinitionIndex = 74436;
+
+	class UICoopLevelRewardPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Class_2_2A212FCBF7BDBEDF* get__viewModel()
+		{
+			return ((::Class_2_2A212FCBF7BDBEDF*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnItemChangeHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_ONITEMCHANGEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void SetPropertyByModelData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_SETPROPERTYBYMODELDATA_OFFSET))(this);
+		}
+
+		::Class_2_C04F87C132BA9A06* get_Model()
+		{
+			return ((::Class_2_C04F87C132BA9A06*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_GET_MODEL_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void InitExpItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER_INITEXPITEM_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPLEVELREWARDPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

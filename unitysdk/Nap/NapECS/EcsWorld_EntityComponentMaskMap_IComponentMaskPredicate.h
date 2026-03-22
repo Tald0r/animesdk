@@ -1,0 +1,13 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Nap/NapECS/ComponentMask.h"
+
+namespace Nap::NapECS
+{
+	inline static constexpr unsigned int EcsWorld_EntityComponentMaskMap_IComponentMaskPredicate_TypeDefinitionIndex = 34161;
+
+	class EcsWorld_EntityComponentMaskMap_IComponentMaskPredicate
+	{
+	public:
+	};
+}

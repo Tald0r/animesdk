@@ -9,29 +9,27 @@ namespace System::Collections::Generic { template <typename T> class IList_1; }
 namespace System::Runtime::Serialization { class SafeSerializationEventArgs; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_ADD_SERIALIZEOBJECTSTATE_OFFSET UNITYSDK_OFFSET(0x15D3EA00)
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_COMPLETEDESERIALIZATION_OFFSET UNITYSDK_OFFSET(0x15D3F380)
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_COMPLETESERIALIZATION_OFFSET UNITYSDK_OFFSET(0x15D3EFD0)
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_GET_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x15D3EFC0)
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_ONDESERIALIZED_OFFSET UNITYSDK_OFFSET(0x15D3FA50)
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_REMOVE_SERIALIZEOBJECTSTATE_OFFSET UNITYSDK_OFFSET(0x15D3EA80)
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_SYSTEM_RUNTIME_SERIALIZATION_IOBJECTREFERENCE_GETREALOBJECT_OFFSET UNITYSDK_OFFSET(0x15D3F7F0)
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_SYSTEM_RUNTIME_SERIALIZATION_ISERIALIZABLE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x15D3F770)
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15D3EB10)
-#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x15D3EB00)
+#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_COMPLETEDESERIALIZATION_OFFSET UNITYSDK_OFFSET(0x1966A100)
+#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_COMPLETESERIALIZATION_OFFSET UNITYSDK_OFFSET(0x19669F40)
+#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_GET_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x19669F30)
+#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_ONDESERIALIZED_OFFSET UNITYSDK_OFFSET(0x1966A7C0)
+#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_SYSTEM_RUNTIME_SERIALIZATION_IOBJECTREFERENCE_GETREALOBJECT_OFFSET UNITYSDK_OFFSET(0x1966A570)
+#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_SYSTEM_RUNTIME_SERIALIZATION_ISERIALIZABLE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x1966A4F0)
+#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19669DE0)
+#define SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x19669DD0)
 
 namespace System::Runtime::Serialization
 {
-	inline static constexpr unsigned int SafeSerializationManager_TypeDefinitionIndex = 1104;
+	inline static constexpr unsigned int SafeSerializationManager_TypeDefinitionIndex = 1159;
 
 	class SafeSerializationManager : public ::System::Object
 	{
 	public:
-		::System::Object* m_realObject; // 0x10
-		::System::EventHandler_1<::System::Runtime::Serialization::SafeSerializationEventArgs*>* SerializeObjectState; // 0x18
-		::System::Runtime::Serialization::SerializationInfo* m_savedSerializationInfo; // 0x20
-		::System::RuntimeType* m_realType; // 0x28
-		::System::Collections::Generic::IList_1<::System::Object*>* m_serializedStates; // 0x30
+		::System::EventHandler_1<::System::Runtime::Serialization::SafeSerializationEventArgs*>* SerializeObjectState; // 0x10
+		::System::Object* m_realObject; // 0x18
+		::System::Collections::Generic::IList_1<::System::Object*>* m_serializedStates; // 0x20
+		::System::Runtime::Serialization::SerializationInfo* m_savedSerializationInfo; // 0x28
+		::System::RuntimeType* m_realType; // 0x30
 
 		::System::Void _ctor()
 		{
@@ -41,16 +39,6 @@ namespace System::Runtime::Serialization
 		::System::Void _ctor_1(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER__CTOR_1_OFFSET))(this, info, context);
-		}
-
-		::System::Void add_SerializeObjectState(::System::EventHandler_1<::System::Runtime::Serialization::SafeSerializationEventArgs*>* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::EventHandler_1<::System::Runtime::Serialization::SafeSerializationEventArgs*>*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_ADD_SERIALIZEOBJECTSTATE_OFFSET))(this, value);
-		}
-
-		::System::Void remove_SerializeObjectState(::System::EventHandler_1<::System::Runtime::Serialization::SafeSerializationEventArgs*>* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::EventHandler_1<::System::Runtime::Serialization::SafeSerializationEventArgs*>*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_SAFESERIALIZATIONMANAGER_REMOVE_SERIALIZEOBJECTSTATE_OFFSET))(this, value);
 		}
 
 		::System::Boolean get_IsActive()

@@ -1,0 +1,40 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_543B6B88E17BAFE0.h"
+#include "unitysdk/MoleMole/EnumSettingEntry.h"
+
+class Class_1_CDA44BE4158CAA8A;
+
+#define MOLEMOLE_PCRESOLUTIONSETTINGENTRY_GETSETTINGCONTROLUNIT_OFFSET UNITYSDK_OFFSET(0x67C8890)
+#define MOLEMOLE_PCRESOLUTIONSETTINGENTRY_GET_SETTINGCONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x67C8880)
+#define MOLEMOLE_PCRESOLUTIONSETTINGENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x67C8930)
+#define MOLEMOLE_PCRESOLUTIONSETTINGENTRY___BASE_GETSETTINGCONTROLUNIT_OFFSET UNITYSDK_OFFSET(0x67C89D0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int PCResolutionSettingEntry_TypeDefinitionIndex = 72878;
+
+	class PCResolutionSettingEntry : public ::MoleMole::EnumSettingEntry
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_PCRESOLUTIONSETTINGENTRY__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_543B6B88E17BAFE0 get_SettingContentType()
+		{
+			return ((::Enum_3_543B6B88E17BAFE0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_PCRESOLUTIONSETTINGENTRY_GET_SETTINGCONTENTTYPE_OFFSET))(this);
+		}
+
+		::Class_1_CDA44BE4158CAA8A* GetSettingControlUnit()
+		{
+			return ((::Class_1_CDA44BE4158CAA8A*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_PCRESOLUTIONSETTINGENTRY_GETSETTINGCONTROLUNIT_OFFSET))(this);
+		}
+
+		::Class_1_CDA44BE4158CAA8A* __base_GetSettingControlUnit()
+		{
+			return ((::Class_1_CDA44BE4158CAA8A*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_PCRESOLUTIONSETTINGENTRY___BASE_GETSETTINGCONTROLUNIT_OFFSET))(this);
+		}
+	};
+}

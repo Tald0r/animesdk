@@ -4,26 +4,26 @@
 
 namespace System { class String; }
 
-#define SYSTEM_COMPONENTMODEL_PROPERTYCHANGINGEVENTARGS_SET_PROPERTYNAME_OFFSET UNITYSDK_OFFSET(0x15DF74A0)
-#define SYSTEM_COMPONENTMODEL_PROPERTYCHANGINGEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x15DF7460)
+#define SYSTEM_COMPONENTMODEL_PROPERTYCHANGINGEVENTARGS_GET_PROPERTYNAME_OFFSET UNITYSDK_OFFSET(0x1967DAE0)
+#define SYSTEM_COMPONENTMODEL_PROPERTYCHANGINGEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x1967DAB0)
 
 namespace System::ComponentModel
 {
-	inline static constexpr unsigned int PropertyChangingEventArgs_TypeDefinitionIndex = 8049;
+	inline static constexpr unsigned int PropertyChangingEventArgs_TypeDefinitionIndex = 2961;
 
 	class PropertyChangingEventArgs : public ::System::EventArgs
 	{
 	public:
-		::System::String* _PropertyName_k__BackingField; // 0x10
+		::System::String* propertyName; // 0x10
 
 		::System::Void _ctor(::System::String* propertyName)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_PROPERTYCHANGINGEVENTARGS__CTOR_OFFSET))(this, propertyName);
 		}
 
-		::System::Void set_PropertyName(::System::String* value)
+		::System::String* get_PropertyName()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_PROPERTYCHANGINGEVENTARGS_SET_PROPERTYNAME_OFFSET))(this, value);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_PROPERTYCHANGINGEVENTARGS_GET_PROPERTYNAME_OFFSET))(this);
 		}
 	};
 }

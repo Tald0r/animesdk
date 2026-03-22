@@ -1,0 +1,31 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+namespace MoleMole { class UIPhotoWallPageController; }
+
+#define MOLEMOLE_UIPHOTOWALLPAGECONTROLLER___C__DISPLAYCLASS64_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAB82A20)
+#define MOLEMOLE_UIPHOTOWALLPAGECONTROLLER___C__DISPLAYCLASS64_0__LATEUPDATE_B__1_OFFSET UNITYSDK_OFFSET(0xAB82A30)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPhotoWallPageController___c__DisplayClass64_0_TypeDefinitionIndex = 36588;
+
+	class UIPhotoWallPageController___c__DisplayClass64_0 : public ::System::Object
+	{
+	public:
+		::MoleMole::UIPhotoWallPageController* __4__this; // 0x10
+		::UnityEngine::Vector2 autoMoveDelta; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLPAGECONTROLLER___C__DISPLAYCLASS64_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _LateUpdate_b__1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLPAGECONTROLLER___C__DISPLAYCLASS64_0__LATEUPDATE_B__1_OFFSET))(this);
+		}
+	};
+}

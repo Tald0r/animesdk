@@ -1,0 +1,96 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_543B6B88E17BAFE0.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_6CF05998D9A2083C;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UISettingEntryContext; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xA2A0080)
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA2A07C0)
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_ONINFOBTNCLICKED_OFFSET UNITYSDK_OFFSET(0xA2A1040)
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_ONSETTINGONUIDISABLESTATECHANGED_OFFSET UNITYSDK_OFFSET(0xA2A0F70)
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA2A0860)
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA29FF00)
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_REFRESHLAYOUT_OFFSET UNITYSDK_OFFSET(0xA2A0EC0)
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_REFRESHSETTINGONUIDISABLESTATE_OFFSET UNITYSDK_OFFSET(0xA2A0940)
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA2A1190)
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA2A11C0)
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA2A1230)
+#define MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA2A12B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralSettingsListRowWidgetController_TypeDefinitionIndex = 72743;
+
+	class UIGeneralSettingsListRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_6CF05998D9A2083C* _view; // 0x2A0
+		::Enum_3_543B6B88E17BAFE0 _settingContentType; // 0x2A8
+		::MoleMole::UISettingEntryContext* _context; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshLayout(::System::Boolean isMultiKeyBinding)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_REFRESHLAYOUT_OFFSET))(this, isMultiKeyBinding);
+		}
+
+		::System::Void OnSettingOnUIDisableStateChanged(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_ONSETTINGONUIDISABLESTATECHANGED_OFFSET))(this, args);
+		}
+
+		::System::Void RefreshSettingOnUIDisableState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_REFRESHSETTINGONUIDISABLESTATE_OFFSET))(this);
+		}
+
+		::System::Void OnInfoBtnClicked()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER_ONINFOBTNCLICKED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALSETTINGSLISTROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

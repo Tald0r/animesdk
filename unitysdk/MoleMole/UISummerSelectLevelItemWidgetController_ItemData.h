@@ -1,0 +1,73 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_241;
+class Class_2_208CC9941471731A_816;
+class Class_2_8F61B9A09E64A3EA;
+class Class_2_A8F5ABF31E066ED4;
+namespace System { class String; }
+
+#define MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_GETMAXSCORECOUNT_OFFSET UNITYSDK_OFFSET(0x9A22EA0)
+#define MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_GETNAME_OFFSET UNITYSDK_OFFSET(0x9A22DD0)
+#define MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_GETTABLEID_OFFSET UNITYSDK_OFFSET(0x9A23190)
+#define MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_GETTIME_OFFSET UNITYSDK_OFFSET(0x9A230F0)
+#define MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_ISLOCK_OFFSET UNITYSDK_OFFSET(0x9A22F20)
+#define MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_SETRANKICON_OFFSET UNITYSDK_OFFSET(0x9A22F90)
+#define MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_SORTMETHOD_OFFSET UNITYSDK_OFFSET(0x9A23200)
+#define MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x9A23300)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISummerSelectLevelItemWidgetController_ItemData_TypeDefinitionIndex = 72391;
+
+	class UISummerSelectLevelItemWidgetController_ItemData : public ::System::Object
+	{
+	public:
+		::System::String* ScoreTitleText; // 0x10
+		::Class_2_8F61B9A09E64A3EA* _questTableInfo; // 0x18
+		::Class_2_208CC9941471731A_816* TableInfo; // 0x20
+		::Class_0_16E4307DCC419505_241* LevelData; // 0x28
+		::System::Boolean IsShooting; // 0x30
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA__CTOR_OFFSET))(this);
+		}
+
+		::System::String* GetName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_GETNAME_OFFSET))(this);
+		}
+
+		::System::UInt32 GetMaxScoreCount()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_GETMAXSCORECOUNT_OFFSET))(this);
+		}
+
+		::System::Boolean IsLock()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_ISLOCK_OFFSET))(this);
+		}
+
+		::System::Void SetRankIcon(::Class_2_A8F5ABF31E066ED4* rankIcon)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_A8F5ABF31E066ED4*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_SETRANKICON_OFFSET))(this, rankIcon);
+		}
+
+		::System::Int32 GetTime()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_GETTIME_OFFSET))(this);
+		}
+
+		::System::Int32 GetTableId()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_GETTABLEID_OFFSET))(this);
+		}
+
+		static ::System::Int32 SortMethod(::MoleMole::UISummerSelectLevelItemWidgetController_ItemData* first, ::MoleMole::UISummerSelectLevelItemWidgetController_ItemData* second)
+		{
+			return ((::System::Int32(*)(::MoleMole::UISummerSelectLevelItemWidgetController_ItemData*, ::MoleMole::UISummerSelectLevelItemWidgetController_ItemData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERSELECTLEVELITEMWIDGETCONTROLLER_ITEMDATA_SORTMETHOD_OFFSET))(first, second);
+		}
+	};
+}

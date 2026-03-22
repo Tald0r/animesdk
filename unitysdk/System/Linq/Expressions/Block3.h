@@ -3,30 +3,37 @@
 #include "unitysdk/System/Linq/Expressions/BlockExpression.h"
 
 namespace System { class Object; }
+namespace System::Collections::Generic { template <typename T> class ICollection_1; }
 namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 namespace System::Linq::Expressions { class Expression; }
 namespace System::Linq::Expressions { class ParameterExpression; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_BLOCK3_GETEXPRESSION_OFFSET UNITYSDK_OFFSET(0x17C8D640)
-#define SYSTEM_LINQ_EXPRESSIONS_BLOCK3_GETORMAKEEXPRESSIONS_OFFSET UNITYSDK_OFFSET(0x17C8D6D0)
-#define SYSTEM_LINQ_EXPRESSIONS_BLOCK3_GET_EXPRESSIONCOUNT_OFFSET UNITYSDK_OFFSET(0x17C8D6C0)
-#define SYSTEM_LINQ_EXPRESSIONS_BLOCK3_REWRITE_OFFSET UNITYSDK_OFFSET(0x17C8D6E0)
-#define SYSTEM_LINQ_EXPRESSIONS_BLOCK3__CTOR_OFFSET UNITYSDK_OFFSET(0x17C8D5D0)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCK3_GETEXPRESSION_OFFSET UNITYSDK_OFFSET(0x1A925890)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCK3_GETORMAKEEXPRESSIONS_OFFSET UNITYSDK_OFFSET(0x1A925920)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCK3_GET_EXPRESSIONCOUNT_OFFSET UNITYSDK_OFFSET(0x1A925910)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCK3_REWRITE_OFFSET UNITYSDK_OFFSET(0x1A925930)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCK3_SAMEEXPRESSIONS_OFFSET UNITYSDK_OFFSET(0x1A925230)
+#define SYSTEM_LINQ_EXPRESSIONS_BLOCK3__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9251C0)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int Block3_TypeDefinitionIndex = 3170;
+	inline static constexpr unsigned int Block3_TypeDefinitionIndex = 4433;
 
 	class Block3 : public ::System::Linq::Expressions::BlockExpression
 	{
 	public:
-		::System::Linq::Expressions::Expression* _arg1; // 0x10
-		::System::Object* _arg0; // 0x18
-		::System::Linq::Expressions::Expression* _arg2; // 0x20
+		::System::Object* _arg0; // 0x10
+		::System::Linq::Expressions::Expression* _arg2; // 0x18
+		::System::Linq::Expressions::Expression* _arg1; // 0x20
 
 		::System::Void _ctor(::System::Linq::Expressions::Expression* arg0, ::System::Linq::Expressions::Expression* arg1, ::System::Linq::Expressions::Expression* arg2)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Linq::Expressions::Expression*, ::System::Linq::Expressions::Expression*, ::System::Linq::Expressions::Expression*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_BLOCK3__CTOR_OFFSET))(this, arg0, arg1, arg2);
+		}
+
+		::System::Boolean SameExpressions(::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::Expression*>* expressions)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_BLOCK3_SAMEEXPRESSIONS_OFFSET))(this, expressions);
 		}
 
 		::System::Linq::Expressions::Expression* GetExpression(::System::Int32 index)

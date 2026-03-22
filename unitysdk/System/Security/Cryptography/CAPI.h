@@ -5,16 +5,21 @@
 
 namespace System { class String; }
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_CAPI_CRYPTFINDOIDINFOKEYFROMNAME_OFFSET UNITYSDK_OFFSET(0x17F1BC00)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_CAPI_CRYPTFINDOIDINFONAMEFROMKEY_OFFSET UNITYSDK_OFFSET(0x17F1B550)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_CAPI_CRYPTFINDOIDINFOKEYFROMNAME_OFFSET UNITYSDK_OFFSET(0x19030760)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_CAPI_CRYPTFINDOIDINFONAMEFROMKEY_OFFSET UNITYSDK_OFFSET(0x190300B0)
 
 namespace System::Security::Cryptography
 {
-	inline static constexpr unsigned int CAPI_TypeDefinitionIndex = 2661;
+	inline static constexpr unsigned int CAPI_TypeDefinitionIndex = 3164;
 
 	class CAPI : public ::System::Object
 	{
 	public:
+		// static const ::System::UInt32 CRYPT_OID_INFO_OID_KEY = 0x1; // 0x0
+		// static const ::System::UInt32 CRYPT_OID_INFO_NAME_KEY = 0x2; // 0x0
+		// static const ::System::UInt32 CRYPT_OID_INFO_ALGID_KEY = 0x3; // 0x0
+		// static const ::System::UInt32 CRYPT_OID_INFO_SIGN_KEY = 0x4; // 0x0
+
 		static ::System::String* CryptFindOIDInfoNameFromKey(::System::String* key, ::System::Security::Cryptography::OidGroup oidGroup)
 		{
 			return ((::System::String*(*)(::System::String*, ::System::Security::Cryptography::OidGroup))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_CAPI_CRYPTFINDOIDINFONAMEFROMKEY_OFFSET))(key, oidGroup);

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_XML_INCREMENTALREADDECODER__CTOR_OFFSET UNITYSDK_OFFSET(0x17D59A30)
+#define SYSTEM_XML_INCREMENTALREADDECODER__CTOR_OFFSET UNITYSDK_OFFSET(0x19E610F0)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int IncrementalReadDecoder_TypeDefinitionIndex = 1800;
+	inline static constexpr unsigned int IncrementalReadDecoder_TypeDefinitionIndex = 1694;
 
 	class IncrementalReadDecoder : public ::System::Object
 	{

@@ -1,79 +1,67 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
-#include "unitysdk/UnityEngine/AdditionalCanvasShaderChannels.h"
+#include "unitysdk/System/ValueTuple_2.h"
 #include "unitysdk/UnityEngine/Color32.h"
 #include "unitysdk/UnityEngine/UIVertex.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 #include "unitysdk/UnityEngine/Vector4.h"
 
+namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Mesh; }
-namespace UnityEngine::Pooled { template <typename T> class PooledList_1; }
 
-#define UNITYENGINE_UI_VERTEXHELPER_ADDSIMPLEVERT_OFFSET UNITYSDK_OFFSET(0x18367C90)
-#define UNITYENGINE_UI_VERTEXHELPER_ADDTRIANGLE_OFFSET UNITYSDK_OFFSET(0x18367FF0)
-#define UNITYENGINE_UI_VERTEXHELPER_ADDUIVERTEXQUAD_OFFSET UNITYSDK_OFFSET(0x18361BF0)
-#define UNITYENGINE_UI_VERTEXHELPER_ADDUIVERTEXSTREAM_OFFSET UNITYSDK_OFFSET(0x18368230)
-#define UNITYENGINE_UI_VERTEXHELPER_ADDUIVERTEXTRIANGLESTREAM_OFFSET UNITYSDK_OFFSET(0x18368340)
-#define UNITYENGINE_UI_VERTEXHELPER_ADDVERT_1_OFFSET UNITYSDK_OFFSET(0x18367B30)
-#define UNITYENGINE_UI_VERTEXHELPER_ADDVERT_2_OFFSET UNITYSDK_OFFSET(0x18367BC0)
-#define UNITYENGINE_UI_VERTEXHELPER_ADDVERT_3_OFFSET UNITYSDK_OFFSET(0x18367EF0)
-#define UNITYENGINE_UI_VERTEXHELPER_ADDVERT_OFFSET UNITYSDK_OFFSET(0x183674F0)
-#define UNITYENGINE_UI_VERTEXHELPER_CLEAR_OFFSET UNITYSDK_OFFSET(0x183603C0)
-#define UNITYENGINE_UI_VERTEXHELPER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18365F10)
-#define UNITYENGINE_UI_VERTEXHELPER_FILLMESHWITHCHANNEL_OFFSET UNITYSDK_OFFSET(0x183672E0)
-#define UNITYENGINE_UI_VERTEXHELPER_FILLMESH_OFFSET UNITYSDK_OFFSET(0x18367110)
-#define UNITYENGINE_UI_VERTEXHELPER_GETUIVERTEXSTREAMNOTOPOLOGY_OFFSET UNITYSDK_OFFSET(0x183683E0)
-#define UNITYENGINE_UI_VERTEXHELPER_GETUIVERTEXSTREAM_OFFSET UNITYSDK_OFFSET(0x18368390)
-#define UNITYENGINE_UI_VERTEXHELPER_GET_COLORS_OFFSET UNITYSDK_OFFSET(0x18365100)
-#define UNITYENGINE_UI_VERTEXHELPER_GET_CURRENTINDEXCOUNT_OFFSET UNITYSDK_OFFSET(0x18366370)
-#define UNITYENGINE_UI_VERTEXHELPER_GET_CURRENTVERTCOUNT_OFFSET UNITYSDK_OFFSET(0x183662B0)
-#define UNITYENGINE_UI_VERTEXHELPER_GET_INDICES_OFFSET UNITYSDK_OFFSET(0x18365120)
-#define UNITYENGINE_UI_VERTEXHELPER_GET_POSITIONS_OFFSET UNITYSDK_OFFSET(0x183650F0)
-#define UNITYENGINE_UI_VERTEXHELPER_GET_UV0S_OFFSET UNITYSDK_OFFSET(0x18365110)
-#define UNITYENGINE_UI_VERTEXHELPER_INITIALIZELISTIFREQUIRED_OFFSET UNITYSDK_OFFSET(0x18365BA0)
-#define UNITYENGINE_UI_VERTEXHELPER_POPULATEUIVERTEX_OFFSET UNITYSDK_OFFSET(0x18366430)
-#define UNITYENGINE_UI_VERTEXHELPER_SETUIVERTEX_OFFSET UNITYSDK_OFFSET(0x18366A50)
-#define UNITYENGINE_UI_VERTEXHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x18369010)
-#define UNITYENGINE_UI_VERTEXHELPER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18365140)
-#define UNITYENGINE_UI_VERTEXHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x18365130)
+#define UNITYENGINE_UI_VERTEXHELPER_ADDTRIANGLE_OFFSET UNITYSDK_OFFSET(0x1A428990)
+#define UNITYENGINE_UI_VERTEXHELPER_ADDUIVERTEXQUAD_OFFSET UNITYSDK_OFFSET(0x1A428A40)
+#define UNITYENGINE_UI_VERTEXHELPER_ADDUIVERTEXTRIANGLESTREAM_OFFSET UNITYSDK_OFFSET(0x1A425040)
+#define UNITYENGINE_UI_VERTEXHELPER_ADDVERT_1_OFFSET UNITYSDK_OFFSET(0x1A4284E0)
+#define UNITYENGINE_UI_VERTEXHELPER_ADDVERT_2_OFFSET UNITYSDK_OFFSET(0x1A428620)
+#define UNITYENGINE_UI_VERTEXHELPER_ADDVERT_3_OFFSET UNITYSDK_OFFSET(0x1A428810)
+#define UNITYENGINE_UI_VERTEXHELPER_ADDVERT_OFFSET UNITYSDK_OFFSET(0x1A4282C0)
+#define UNITYENGINE_UI_VERTEXHELPER_CLEAR_OFFSET UNITYSDK_OFFSET(0x1A41F880)
+#define UNITYENGINE_UI_VERTEXHELPER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1A4277A0)
+#define UNITYENGINE_UI_VERTEXHELPER_FILLMESH_OFFSET UNITYSDK_OFFSET(0x1A427E00)
+#define UNITYENGINE_UI_VERTEXHELPER_GETQUADSIZE_OFFSET UNITYSDK_OFFSET(0x1A428D20)
+#define UNITYENGINE_UI_VERTEXHELPER_GETUIVERTEXSTREAM_OFFSET UNITYSDK_OFFSET(0x1A424FB0)
+#define UNITYENGINE_UI_VERTEXHELPER_GET_CURRENTINDEXCOUNT_OFFSET UNITYSDK_OFFSET(0x1A427BC0)
+#define UNITYENGINE_UI_VERTEXHELPER_GET_CURRENTVERTCOUNT_OFFSET UNITYSDK_OFFSET(0x1A427B70)
+#define UNITYENGINE_UI_VERTEXHELPER_INITIALIZELISTIFREQUIRED_OFFSET UNITYSDK_OFFSET(0x1A427400)
+#define UNITYENGINE_UI_VERTEXHELPER_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1A41FA80)
+#define UNITYENGINE_UI_VERTEXHELPER_ISQUADVERTICES_OFFSET UNITYSDK_OFFSET(0x1A427C10)
+#define UNITYENGINE_UI_VERTEXHELPER_POPULATEUIVERTEX_OFFSET UNITYSDK_OFFSET(0x1A41FD40)
+#define UNITYENGINE_UI_VERTEXHELPER_SETUIVERTEX_OFFSET UNITYSDK_OFFSET(0x1A41FEF0)
+#define UNITYENGINE_UI_VERTEXHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A428DF0)
+#define UNITYENGINE_UI_VERTEXHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4273F0)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int VertexHelper_TypeDefinitionIndex = 5653;
+	inline static constexpr unsigned int VertexHelper_TypeDefinitionIndex = 8460;
 
 	class VertexHelper : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::Vector3* StaticGet_s_DefaultNormal()
 		{
-			return (::UnityEngine::Vector3*)Il2CppClass::FromTypeDefinitionIndex(VertexHelper_TypeDefinitionIndex)->GetStaticField(0x3B80);
+			return (::UnityEngine::Vector3*)Il2CppClass::FromTypeDefinitionIndex(VertexHelper_TypeDefinitionIndex)->GetStaticField(0x3B40);
 		}
 		static ::UnityEngine::Vector4* StaticGet_s_DefaultTangent()
 		{
-			return (::UnityEngine::Vector4*)Il2CppClass::FromTypeDefinitionIndex(VertexHelper_TypeDefinitionIndex)->GetStaticField(0x3B8C);
+			return (::UnityEngine::Vector4*)Il2CppClass::FromTypeDefinitionIndex(VertexHelper_TypeDefinitionIndex)->GetStaticField(0x3B4C);
 		}
-		::System::Boolean poppingMesh; // 0x10
-		::UnityEngine::Pooled::PooledList_1<::UnityEngine::Vector3>* m_Positions; // 0x18
-		::UnityEngine::Pooled::PooledList_1<::UnityEngine::Color32>* m_Colors; // 0x20
-		::UnityEngine::Pooled::PooledList_1<::UnityEngine::Vector2>* m_Uv0S; // 0x28
-		::UnityEngine::Pooled::PooledList_1<::UnityEngine::Vector2>* m_Uv1S; // 0x30
-		::UnityEngine::Pooled::PooledList_1<::UnityEngine::Vector2>* m_Uv2S; // 0x38
-		::UnityEngine::Pooled::PooledList_1<::UnityEngine::Vector2>* m_Uv3S; // 0x40
-		::UnityEngine::Pooled::PooledList_1<::UnityEngine::Vector3>* m_Normals; // 0x48
-		::UnityEngine::Pooled::PooledList_1<::UnityEngine::Vector4>* m_Tangents; // 0x50
-		::UnityEngine::Pooled::PooledList_1<::System::Int32>* m_Indices; // 0x58
-		::System::Boolean m_ListsInitalized; // 0x60
+		::System::Collections::Generic::List_1<::UnityEngine::Vector3>* m_Positions; // 0x10
+		::System::Collections::Generic::List_1<::UnityEngine::Color32>* m_Colors; // 0x18
+		::System::Collections::Generic::List_1<::UnityEngine::Vector2>* m_Uv0S; // 0x20
+		::System::Collections::Generic::List_1<::UnityEngine::Vector2>* m_Uv1S; // 0x28
+		::System::Collections::Generic::List_1<::UnityEngine::Vector2>* m_Uv2S; // 0x30
+		::System::Collections::Generic::List_1<::UnityEngine::Vector2>* m_Uv3S; // 0x38
+		::System::Collections::Generic::List_1<::UnityEngine::Vector3>* m_Normals; // 0x40
+		::System::Collections::Generic::List_1<::UnityEngine::Vector4>* m_Tangents; // 0x48
+		::System::Collections::Generic::List_1<::System::Int32>* m_Indices; // 0x50
+		::System::Boolean m_ListsInitalized; // 0x58
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER__CTOR_OFFSET))(this);
-		}
-
-		::System::Void _ctor_1(::UnityEngine::Mesh* m)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Mesh*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER__CTOR_1_OFFSET))(this, m);
 		}
 
 		static ::System::Void _cctor()
@@ -81,24 +69,9 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER__CCTOR_OFFSET))();
 		}
 
-		::UnityEngine::Pooled::PooledList_1<::UnityEngine::Vector3>* get_positions()
+		::UnityEngine::UI::VertexHelper* Initialize(::UnityEngine::Mesh* m)
 		{
-			return ((::UnityEngine::Pooled::PooledList_1<::UnityEngine::Vector3>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_GET_POSITIONS_OFFSET))(this);
-		}
-
-		::UnityEngine::Pooled::PooledList_1<::UnityEngine::Color32>* get_colors()
-		{
-			return ((::UnityEngine::Pooled::PooledList_1<::UnityEngine::Color32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_GET_COLORS_OFFSET))(this);
-		}
-
-		::UnityEngine::Pooled::PooledList_1<::UnityEngine::Vector2>* get_uv0s()
-		{
-			return ((::UnityEngine::Pooled::PooledList_1<::UnityEngine::Vector2>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_GET_UV0S_OFFSET))(this);
-		}
-
-		::UnityEngine::Pooled::PooledList_1<::System::Int32>* get_indices()
-		{
-			return ((::UnityEngine::Pooled::PooledList_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_GET_INDICES_OFFSET))(this);
+			return ((::UnityEngine::UI::VertexHelper*(*)(::PVOID, ::UnityEngine::Mesh*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_INITIALIZE_OFFSET))(this, m);
 		}
 
 		::System::Void InitializeListIfRequired()
@@ -126,6 +99,11 @@ namespace UnityEngine::UI
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_GET_CURRENTINDEXCOUNT_OFFSET))(this);
 		}
 
+		::System::Boolean IsQuadVertices()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_ISQUADVERTICES_OFFSET))(this);
+		}
+
 		::System::Void PopulateUIVertex(::UnityEngine::UIVertex& vertex, ::System::Int32 i)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::UIVertex&, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_POPULATEUIVERTEX_OFFSET))(this, vertex, i);
@@ -139,11 +117,6 @@ namespace UnityEngine::UI
 		::System::Void FillMesh(::UnityEngine::Mesh* mesh)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Mesh*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_FILLMESH_OFFSET))(this, mesh);
-		}
-
-		::System::Void FillMeshWithChannel(::UnityEngine::Mesh* mesh, ::UnityEngine::AdditionalCanvasShaderChannels channels)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Mesh*, ::UnityEngine::AdditionalCanvasShaderChannels))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_FILLMESHWITHCHANNEL_OFFSET))(this, mesh, channels);
 		}
 
 		::System::Void AddVert(::UnityEngine::Vector3 position, ::UnityEngine::Color32 color, ::UnityEngine::Vector2 uv0, ::UnityEngine::Vector2 uv1, ::UnityEngine::Vector2 uv2, ::UnityEngine::Vector2 uv3, ::UnityEngine::Vector3 normal, ::UnityEngine::Vector4 tangent)
@@ -161,11 +134,6 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Color32, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_ADDVERT_2_OFFSET))(this, position, color, uv0);
 		}
 
-		::System::Void AddSimpleVert(::UnityEngine::Vector3 position, ::UnityEngine::Color32 color, ::UnityEngine::Vector2 uv0)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Color32, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_ADDSIMPLEVERT_OFFSET))(this, position, color, uv0);
-		}
-
 		::System::Void AddVert_3(::UnityEngine::UIVertex v)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::UIVertex))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_ADDVERT_3_OFFSET))(this, v);
@@ -181,24 +149,19 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::UnityEngine::UIVertex>*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_ADDUIVERTEXQUAD_OFFSET))(this, verts);
 		}
 
-		::System::Void AddUIVertexStream(::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>* verts, ::UnityEngine::Pooled::PooledList_1<::System::Int32>* indices)
+		::System::Void AddUIVertexTriangleStream(::System::Collections::Generic::List_1<::UnityEngine::UIVertex>* verts)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>*, ::UnityEngine::Pooled::PooledList_1<::System::Int32>*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_ADDUIVERTEXSTREAM_OFFSET))(this, verts, indices);
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::UnityEngine::UIVertex>*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_ADDUIVERTEXTRIANGLESTREAM_OFFSET))(this, verts);
 		}
 
-		::System::Void AddUIVertexTriangleStream(::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>* verts)
+		::System::Void GetUIVertexStream(::System::Collections::Generic::List_1<::UnityEngine::UIVertex>* stream)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_ADDUIVERTEXTRIANGLESTREAM_OFFSET))(this, verts);
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::UnityEngine::UIVertex>*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_GETUIVERTEXSTREAM_OFFSET))(this, stream);
 		}
 
-		::System::Void GetUIVertexStream(::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>* stream)
+		::System::ValueTuple_2<::System::Single, ::System::Single> GetQuadSize(::System::Int32 vertexStartIndex)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_GETUIVERTEXSTREAM_OFFSET))(this, stream);
-		}
-
-		::System::Void GetUIVertexStreamNoTopology(::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>* stream)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Pooled::PooledList_1<::UnityEngine::UIVertex>*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_GETUIVERTEXSTREAMNOTOPOLOGY_OFFSET))(this, stream);
+			return ((::System::ValueTuple_2<::System::Single, ::System::Single>(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_VERTEXHELPER_GETQUADSIZE_OFFSET))(this, vertexStartIndex);
 		}
 	};
 }

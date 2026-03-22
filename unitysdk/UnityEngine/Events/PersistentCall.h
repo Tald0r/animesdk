@@ -11,19 +11,23 @@ namespace UnityEngine::Events { class ArgumentCache; }
 namespace UnityEngine::Events { class BaseInvokableCall; }
 namespace UnityEngine::Events { class UnityEventBase; }
 
-#define UNITYENGINE_EVENTS_PERSISTENTCALL_GETOBJECTCALL_OFFSET UNITYSDK_OFFSET(0x181F1CE0)
-#define UNITYENGINE_EVENTS_PERSISTENTCALL_GETRUNTIMECALL_OFFSET UNITYSDK_OFFSET(0x181F1780)
-#define UNITYENGINE_EVENTS_PERSISTENTCALL_GET_ARGUMENTS_OFFSET UNITYSDK_OFFSET(0x181F1730)
-#define UNITYENGINE_EVENTS_PERSISTENTCALL_GET_METHODNAME_OFFSET UNITYSDK_OFFSET(0x181F1710)
-#define UNITYENGINE_EVENTS_PERSISTENTCALL_GET_MODE_OFFSET UNITYSDK_OFFSET(0x181F1720)
-#define UNITYENGINE_EVENTS_PERSISTENTCALL_GET_TARGET_OFFSET UNITYSDK_OFFSET(0x181F1700)
-#define UNITYENGINE_EVENTS_PERSISTENTCALL_ISVALID_OFFSET UNITYSDK_OFFSET(0x181F1750)
-#define UNITYENGINE_EVENTS_PERSISTENTCALL_SET_CALLSTATE_OFFSET UNITYSDK_OFFSET(0x181F1740)
-#define UNITYENGINE_EVENTS_PERSISTENTCALL__CTOR_OFFSET UNITYSDK_OFFSET(0x181F2480)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_GETOBJECTCALL_OFFSET UNITYSDK_OFFSET(0x19E15100)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_GETRUNTIMECALL_OFFSET UNITYSDK_OFFSET(0x19E14DB0)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_GET_ARGUMENTS_OFFSET UNITYSDK_OFFSET(0x19E14D00)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_GET_CALLSTATE_OFFSET UNITYSDK_OFFSET(0x19E14D10)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_GET_METHODNAME_OFFSET UNITYSDK_OFFSET(0x19E14CD0)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_GET_MODE_OFFSET UNITYSDK_OFFSET(0x19E14CE0)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_GET_TARGET_OFFSET UNITYSDK_OFFSET(0x19E14CC0)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_ISVALID_OFFSET UNITYSDK_OFFSET(0x19E14D30)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_REGISTERPERSISTENTLISTENER_OFFSET UNITYSDK_OFFSET(0x19E158F0)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_SET_CALLSTATE_OFFSET UNITYSDK_OFFSET(0x19E14D20)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_SET_MODE_OFFSET UNITYSDK_OFFSET(0x19E14CF0)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL_UNREGISTERPERSISTENTLISTENER_OFFSET UNITYSDK_OFFSET(0x19E15900)
+#define UNITYENGINE_EVENTS_PERSISTENTCALL__CTOR_OFFSET UNITYSDK_OFFSET(0x19E15920)
 
 namespace UnityEngine::Events
 {
-	inline static constexpr unsigned int PersistentCall_TypeDefinitionIndex = 4270;
+	inline static constexpr unsigned int PersistentCall_TypeDefinitionIndex = 5487;
 
 	class PersistentCall : public ::System::Object
 	{
@@ -54,9 +58,19 @@ namespace UnityEngine::Events
 			return ((::UnityEngine::Events::PersistentListenerMode(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTS_PERSISTENTCALL_GET_MODE_OFFSET))(this);
 		}
 
+		::System::Void set_mode(::UnityEngine::Events::PersistentListenerMode value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Events::PersistentListenerMode))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTS_PERSISTENTCALL_SET_MODE_OFFSET))(this, value);
+		}
+
 		::UnityEngine::Events::ArgumentCache* get_arguments()
 		{
 			return ((::UnityEngine::Events::ArgumentCache*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTS_PERSISTENTCALL_GET_ARGUMENTS_OFFSET))(this);
+		}
+
+		::UnityEngine::Events::UnityEventCallState get_callState()
+		{
+			return ((::UnityEngine::Events::UnityEventCallState(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTS_PERSISTENTCALL_GET_CALLSTATE_OFFSET))(this);
 		}
 
 		::System::Void set_callState(::UnityEngine::Events::UnityEventCallState value)
@@ -77,6 +91,16 @@ namespace UnityEngine::Events
 		static ::UnityEngine::Events::BaseInvokableCall* GetObjectCall(::UnityEngine::Object* target, ::System::Reflection::MethodInfo* method, ::UnityEngine::Events::ArgumentCache* arguments)
 		{
 			return ((::UnityEngine::Events::BaseInvokableCall*(*)(::UnityEngine::Object*, ::System::Reflection::MethodInfo*, ::UnityEngine::Events::ArgumentCache*))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTS_PERSISTENTCALL_GETOBJECTCALL_OFFSET))(target, method, arguments);
+		}
+
+		::System::Void RegisterPersistentListener(::UnityEngine::Object* ttarget, ::System::String* mmethodName)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Object*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTS_PERSISTENTCALL_REGISTERPERSISTENTLISTENER_OFFSET))(this, ttarget, mmethodName);
+		}
+
+		::System::Void UnregisterPersistentListener()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTS_PERSISTENTCALL_UNREGISTERPERSISTENTLISTENER_OFFSET))(this);
 		}
 	};
 }

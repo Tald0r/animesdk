@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_DEFAULTBINDER_BINDERSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x15BF8000)
+#define SYSTEM_DEFAULTBINDER_BINDERSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x19185040)
 
 namespace System
 {
-	inline static constexpr unsigned int DefaultBinder_BinderState_TypeDefinitionIndex = 231;
+	inline static constexpr unsigned int DefaultBinder_BinderState_TypeDefinitionIndex = 217;
 
 	class DefaultBinder_BinderState : public ::System::Object
 	{

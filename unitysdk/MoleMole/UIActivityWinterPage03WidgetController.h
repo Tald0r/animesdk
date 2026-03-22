@@ -1,0 +1,114 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_D375C91CCE5D3999;
+class Class_2_54E12A858AE85617;
+class Class_2_54E12A858AE85617_Class_2_657518773CBED714;
+class Class_3_BE75AAF0F7C40C75_3;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD3CB710)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD3CB7B0)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD3CB570)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD3CB610)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_REFRESHPROGRESSBAR_OFFSET UNITYSDK_OFFSET(0xD3CBBB0)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_REFRESHPROGRESSLIST_OFFSET UNITYSDK_OFFSET(0xD3CB9D0)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_REFRESHPROGRESSPOINTVIEW_OFFSET UNITYSDK_OFFSET(0xD3CC520)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xD3CB890)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xD3CC880)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD3CC850)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD3CC8C0)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD3CC930)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD3CC9B0)
+#define MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD3CCA10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityWinterPage03WidgetController_TypeDefinitionIndex = 39941;
+
+	class UIActivityWinterPage03WidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		static ::System::String** StaticGet_tipsTextFormat()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIActivityWinterPage03WidgetController_TypeDefinitionIndex)->GetStaticField(0x323F0);
+		}
+		::Class_2_54E12A858AE85617* _view; // 0x2A0
+		::Class_1_D375C91CCE5D3999* refActivityData; // 0x2A8
+		::System::Int32 limitItemID; // 0x2B0
+		::Il2CppArray<::System::Single>* taskSiteArray; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::Class_1_D375C91CCE5D3999* activityData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, activityData);
+		}
+
+		::System::Void RefreshProgressBar()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_REFRESHPROGRESSBAR_OFFSET))(this);
+		}
+
+		::System::Void RefreshProgressList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_REFRESHPROGRESSLIST_OFFSET))(this);
+		}
+
+		::System::Void RefreshProgressPointView(::Class_2_54E12A858AE85617_Class_2_657518773CBED714* view, ::Class_3_BE75AAF0F7C40C75_3* task)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_54E12A858AE85617_Class_2_657518773CBED714*, ::Class_3_BE75AAF0F7C40C75_3*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER_REFRESHPROGRESSPOINTVIEW_OFFSET))(this, view, task);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYWINTERPAGE03WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

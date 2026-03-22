@@ -1,0 +1,76 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_F57C3EEEB03201AF.h"
+
+class Class_2_6C100683412065D7_Class_2_64BF5C9CD45A0BD0;
+namespace MoleMole { class UIFashionStoreEditPanelWidgetController_SubTrack; }
+namespace MoleMole { class UIFashionStorePreviewPanelWidgetController_MusicRowData; }
+template <typename T> class Class_0_16E4307DCC41950C_11;
+
+#define MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_CLEAR_OFFSET UNITYSDK_OFFSET(0xB2CE6A0)
+#define MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_GET_FASHIONSTOREKEYBOARDDATA_OFFSET UNITYSDK_OFFSET(0xB2CE4A0)
+#define MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_GET_MUSICROWDATA_OFFSET UNITYSDK_OFFSET(0xB2CE4E0)
+#define MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_GET_SUBTRACKS_OFFSET UNITYSDK_OFFSET(0xB2CE4C0)
+#define MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0xB2CE5A0)
+#define MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_SET_FASHIONSTOREKEYBOARDDATA_OFFSET UNITYSDK_OFFSET(0xB2CE4B0)
+#define MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_SET_MUSICROWDATA_OFFSET UNITYSDK_OFFSET(0xB2CE4F0)
+#define MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_SET_SUBTRACKS_OFFSET UNITYSDK_OFFSET(0xB2CE4D0)
+#define MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0xB2CE790)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFashionStoreEditPanelWidgetController_ViewModel_TypeDefinitionIndex = 58690;
+
+	class UIFashionStoreEditPanelWidgetController_ViewModel : public ::Class_1_F57C3EEEB03201AF
+	{
+	public:
+		::MoleMole::UIFashionStorePreviewPanelWidgetController_MusicRowData* _musicRowData; // 0x60
+		::Class_2_6C100683412065D7_Class_2_64BF5C9CD45A0BD0* _FashionStoreKeyBoardData_k__BackingField; // 0x68
+		::Class_0_16E4307DCC41950C_11<::MoleMole::UIFashionStoreEditPanelWidgetController_SubTrack*>* _SubTracks_k__BackingField; // 0x70
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_6C100683412065D7_Class_2_64BF5C9CD45A0BD0* get_FashionStoreKeyBoardData()
+		{
+			return ((::Class_2_6C100683412065D7_Class_2_64BF5C9CD45A0BD0*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_GET_FASHIONSTOREKEYBOARDDATA_OFFSET))(this);
+		}
+
+		::System::Void set_FashionStoreKeyBoardData(::Class_2_6C100683412065D7_Class_2_64BF5C9CD45A0BD0* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_6C100683412065D7_Class_2_64BF5C9CD45A0BD0*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_SET_FASHIONSTOREKEYBOARDDATA_OFFSET))(this, value);
+		}
+
+		::Class_0_16E4307DCC41950C_11<::MoleMole::UIFashionStoreEditPanelWidgetController_SubTrack*>* get_SubTracks()
+		{
+			return ((::Class_0_16E4307DCC41950C_11<::MoleMole::UIFashionStoreEditPanelWidgetController_SubTrack*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_GET_SUBTRACKS_OFFSET))(this);
+		}
+
+		::System::Void set_SubTracks(::Class_0_16E4307DCC41950C_11<::MoleMole::UIFashionStoreEditPanelWidgetController_SubTrack*>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC41950C_11<::MoleMole::UIFashionStoreEditPanelWidgetController_SubTrack*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_SET_SUBTRACKS_OFFSET))(this, value);
+		}
+
+		::MoleMole::UIFashionStorePreviewPanelWidgetController_MusicRowData* get_MusicRowData()
+		{
+			return ((::MoleMole::UIFashionStorePreviewPanelWidgetController_MusicRowData*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_GET_MUSICROWDATA_OFFSET))(this);
+		}
+
+		::System::Void set_MusicRowData(::MoleMole::UIFashionStorePreviewPanelWidgetController_MusicRowData* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIFashionStorePreviewPanelWidgetController_MusicRowData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_SET_MUSICROWDATA_OFFSET))(this, value);
+		}
+
+		::System::Void OnCreateProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_ONCREATEPROPERTY_OFFSET))(this);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREEDITPANELWIDGETCONTROLLER_VIEWMODEL_CLEAR_OFFSET))(this);
+		}
+	};
+}

@@ -4,11 +4,12 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_SERIALIZATION_FORMERLYSERIALIZEDASATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x182378A0)
+#define UNITYENGINE_SERIALIZATION_FORMERLYSERIALIZEDASATTRIBUTE_GET_OLDNAME_OFFSET UNITYSDK_OFFSET(0x19D209E0)
+#define UNITYENGINE_SERIALIZATION_FORMERLYSERIALIZEDASATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19D209D0)
 
 namespace UnityEngine::Serialization
 {
-	inline static constexpr unsigned int FormerlySerializedAsAttribute_TypeDefinitionIndex = 4284;
+	inline static constexpr unsigned int FormerlySerializedAsAttribute_TypeDefinitionIndex = 5501;
 
 	class FormerlySerializedAsAttribute : public ::System::Attribute
 	{
@@ -18,6 +19,11 @@ namespace UnityEngine::Serialization
 		::System::Void _ctor(::System::String* oldName)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_SERIALIZATION_FORMERLYSERIALIZEDASATTRIBUTE__CTOR_OFFSET))(this, oldName);
+		}
+
+		::System::String* get_oldName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SERIALIZATION_FORMERLYSERIALIZEDASATTRIBUTE_GET_OLDNAME_OFFSET))(this);
 		}
 	};
 }

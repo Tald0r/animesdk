@@ -1,0 +1,40 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_208CC9941471731A_420;
+namespace System { template <typename T1, typename T2> class Func_2; }
+
+#define CLASS_1_362E82DEC886C505_CLASS_1_F4BCF3B96268478A_CLASS_1_D22095C9E7B2FCD2___C_METHOD_1_E52A85E9F69A491B_OFFSET UNITYSDK_OFFSET(0x6F1BE10)
+#define CLASS_1_362E82DEC886C505_CLASS_1_F4BCF3B96268478A_CLASS_1_D22095C9E7B2FCD2___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x6F1BDC0)
+#define CLASS_1_362E82DEC886C505_CLASS_1_F4BCF3B96268478A_CLASS_1_D22095C9E7B2FCD2___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6F1BE00)
+
+inline static constexpr unsigned int Class_1_362E82DEC886C505_Class_1_F4BCF3B96268478A_Class_1_D22095C9E7B2FCD2___c_TypeDefinitionIndex = 61244;
+
+class Class_1_362E82DEC886C505_Class_1_F4BCF3B96268478A_Class_1_D22095C9E7B2FCD2___c : public ::System::Object
+{
+public:
+	static ::Class_1_362E82DEC886C505_Class_1_F4BCF3B96268478A_Class_1_D22095C9E7B2FCD2___c** StaticGet___9()
+	{
+		return (::Class_1_362E82DEC886C505_Class_1_F4BCF3B96268478A_Class_1_D22095C9E7B2FCD2___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_362E82DEC886C505_Class_1_F4BCF3B96268478A_Class_1_D22095C9E7B2FCD2___c_TypeDefinitionIndex)->GetStaticField(0x318E0);
+	}
+	static ::System::Func_2<::Class_2_208CC9941471731A_420*, ::System::Boolean>** StaticGet___9__7_0()
+	{
+		return (::System::Func_2<::Class_2_208CC9941471731A_420*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_362E82DEC886C505_Class_1_F4BCF3B96268478A_Class_1_D22095C9E7B2FCD2___c_TypeDefinitionIndex)->GetStaticField(0x318E8);
+	}
+
+	static ::System::Void _cctor()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_362E82DEC886C505_CLASS_1_F4BCF3B96268478A_CLASS_1_D22095C9E7B2FCD2___C__CCTOR_OFFSET))();
+	}
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_362E82DEC886C505_CLASS_1_F4BCF3B96268478A_CLASS_1_D22095C9E7B2FCD2___C__CTOR_OFFSET))(this);
+	}
+
+	::System::Boolean Method_1_E52A85E9F69A491B(::Class_2_208CC9941471731A_420* a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_420*))((::PBYTE)hIl2Cpp + CLASS_1_362E82DEC886C505_CLASS_1_F4BCF3B96268478A_CLASS_1_D22095C9E7B2FCD2___C_METHOD_1_E52A85E9F69A491B_OFFSET))(this, a1);
+	}
+};

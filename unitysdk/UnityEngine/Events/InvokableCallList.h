@@ -6,21 +6,27 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Reflection { class MethodInfo; }
 namespace UnityEngine::Events { class BaseInvokableCall; }
 
-#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_ADDLISTENER_OFFSET UNITYSDK_OFFSET(0x181F1210)
-#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_ADDPERSISTENTINVOKABLECALL_OFFSET UNITYSDK_OFFSET(0x181F11E0)
-#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_CLEARPERSISTENT_OFFSET UNITYSDK_OFFSET(0x181F1540)
-#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_CLEAR_OFFSET UNITYSDK_OFFSET(0x181F14F0)
-#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_PREPAREINVOKE_OFFSET UNITYSDK_OFFSET(0x181F1590)
-#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_REMOVELISTENER_OFFSET UNITYSDK_OFFSET(0x181F1240)
-#define UNITYENGINE_EVENTS_INVOKABLECALLLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x181F1680)
+#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_ADDLISTENER_OFFSET UNITYSDK_OFFSET(0x1A111E40)
+#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_ADDPERSISTENTINVOKABLECALL_OFFSET UNITYSDK_OFFSET(0x1A111DA0)
+#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_CLEARPERSISTENT_OFFSET UNITYSDK_OFFSET(0x1A112140)
+#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_CLEAR_OFFSET UNITYSDK_OFFSET(0x1A1120F0)
+#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x1A111D70)
+#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_PREPAREINVOKE_OFFSET UNITYSDK_OFFSET(0x1A112190)
+#define UNITYENGINE_EVENTS_INVOKABLECALLLIST_REMOVELISTENER_OFFSET UNITYSDK_OFFSET(0x1A111EE0)
+#define UNITYENGINE_EVENTS_INVOKABLECALLLIST__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A1123D0)
+#define UNITYENGINE_EVENTS_INVOKABLECALLLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1123C0)
 
 namespace UnityEngine::Events
 {
-	inline static constexpr unsigned int InvokableCallList_TypeDefinitionIndex = 4272;
+	inline static constexpr unsigned int InvokableCallList_TypeDefinitionIndex = 5489;
 
 	class InvokableCallList : public ::System::Object
 	{
 	public:
+		static ::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>** StaticGet_s_EmptyCalls()
+		{
+			return (::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>**)Il2CppClass::FromTypeDefinitionIndex(InvokableCallList_TypeDefinitionIndex)->GetStaticField(0x5640);
+		}
 		::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>* m_PersistentCalls; // 0x10
 		::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>* m_RuntimeCalls; // 0x18
 		::System::Collections::Generic::List_1<::UnityEngine::Events::BaseInvokableCall*>* m_ExecutingCalls; // 0x20
@@ -29,6 +35,16 @@ namespace UnityEngine::Events
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTS_INVOKABLECALLLIST__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTS_INVOKABLECALLLIST__CCTOR_OFFSET))();
+		}
+
+		::System::Int32 get_Count()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EVENTS_INVOKABLECALLLIST_GET_COUNT_OFFSET))(this);
 		}
 
 		::System::Void AddPersistentInvokableCall(::UnityEngine::Events::BaseInvokableCall* call)

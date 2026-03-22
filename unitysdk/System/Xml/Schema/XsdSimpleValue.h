@@ -4,12 +4,11 @@
 
 namespace System::Xml::Schema { class XmlSchemaSimpleType; }
 
-#define SYSTEM_XML_SCHEMA_XSDSIMPLEVALUE_GET_TYPEDVALUE_OFFSET UNITYSDK_OFFSET(0x17D9E950)
-#define SYSTEM_XML_SCHEMA_XSDSIMPLEVALUE_GET_XMLTYPE_OFFSET UNITYSDK_OFFSET(0x17D9E940)
+#define SYSTEM_XML_SCHEMA_XSDSIMPLEVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A375180)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int XsdSimpleValue_TypeDefinitionIndex = 2068;
+	inline static constexpr unsigned int XsdSimpleValue_TypeDefinitionIndex = 1983;
 
 	class XsdSimpleValue : public ::System::Object
 	{
@@ -17,14 +16,9 @@ namespace System::Xml::Schema
 		::System::Object* typedValue; // 0x10
 		::System::Xml::Schema::XmlSchemaSimpleType* xmlType; // 0x18
 
-		::System::Xml::Schema::XmlSchemaSimpleType* get_XmlType()
+		::System::Void _ctor(::System::Xml::Schema::XmlSchemaSimpleType* st, ::System::Object* value)
 		{
-			return ((::System::Xml::Schema::XmlSchemaSimpleType*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XSDSIMPLEVALUE_GET_XMLTYPE_OFFSET))(this);
-		}
-
-		::System::Object* get_TypedValue()
-		{
-			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XSDSIMPLEVALUE_GET_TYPEDVALUE_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaSimpleType*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XSDSIMPLEVALUE__CTOR_OFFSET))(this, st, value);
 		}
 	};
 }

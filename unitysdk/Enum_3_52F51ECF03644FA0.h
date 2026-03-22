@@ -1,0 +1,46 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+inline static constexpr unsigned int Enum_3_52F51ECF03644FA0_TypeDefinitionIndex = 68446;
+
+enum class Enum_3_52F51ECF03644FA0 : ::System::Int32
+{
+	Array = 8,
+	DynamicNumberLabel = 17,
+	TabButtonGroup = 27,
+	Animator = 11,
+	ShaderAniHelp = 37,
+	Label = 25,
+	UILocalizationText = 2,
+	RawImage = 18,
+	None = 0,
+	GameObject = 1,
+	Slider = 21,
+	WidgetView = 7,
+	TableScroll = 22,
+	NotificationBadge = 34,
+	UITimeWidget = 30,
+	CustomType = 9,
+	MonoGamepadRegion = 33,
+	NotificationBadgeEx = 35,
+	UISpriteNumPanel = 31,
+	CanvasGroup = 12,
+	TableView = 15,
+	WidgetControl = 6,
+	UIToggleButton = 29,
+	ExtensionData = 28,
+	RectTransform = 13,
+	Toggle = 5,
+	Animation = 16,
+	InputField = 24,
+	Image = 3,
+	UISlider = 23,
+	Camera = 20,
+	Button = 26,
+	Transform = 10,
+	GeneralButtonController = 36,
+	TweenAlpha = 14,
+	MonoGamepadModule = 32,
+	ScrollRect = 19,
+	ButtonEx = 4,
+};

@@ -3,7 +3,7 @@
 
 namespace System
 {
-	inline static constexpr unsigned int Guid_GuidStyles_TypeDefinitionIndex = 269;
+	inline static constexpr unsigned int Guid_GuidStyles_TypeDefinitionIndex = 256;
 
 	enum class Guid_GuidStyles : ::System::Int32
 	{

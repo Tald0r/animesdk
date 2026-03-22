@@ -1,0 +1,11 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+inline static constexpr unsigned int Enum_3_04AC4CFD519E8D90_TypeDefinitionIndex = 36849;
+
+enum class Enum_3_04AC4CFD519E8D90 : ::System::Int32
+{
+	None = 0,
+	WaitingResource = 1,
+	Playing = 2,
+};

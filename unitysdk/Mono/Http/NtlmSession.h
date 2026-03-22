@@ -8,12 +8,12 @@ namespace System::Net { class Authorization; }
 namespace System::Net { class ICredentials; }
 namespace System::Net { class WebRequest; }
 
-#define MONO_HTTP_NTLMSESSION_AUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x17E3C310)
-#define MONO_HTTP_NTLMSESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17E3C7C0)
+#define MONO_HTTP_NTLMSESSION_AUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x182BA850)
+#define MONO_HTTP_NTLMSESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x182BA840)
 
 namespace Mono::Http
 {
-	inline static constexpr unsigned int NtlmSession_TypeDefinitionIndex = 2435;
+	inline static constexpr unsigned int NtlmSession_TypeDefinitionIndex = 2648;
 
 	class NtlmSession : public ::System::Object
 	{

@@ -2,6 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
+namespace System { template <typename T1, typename T2, typename T3> class Func_3; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Collections { class IEnumerator; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
@@ -13,7 +14,7 @@ namespace System::Linq { template <typename T1, typename T2> class Lookup_2_Grou
 
 namespace System::Linq
 {
-	inline static constexpr unsigned int Lookup_2_TypeDefinitionIndex = 3145;
+	inline static constexpr unsigned int Lookup_2_TypeDefinitionIndex = 4377;
 
 	template <typename TKey, typename TElement>
 	class Lookup_2 : public ::System::Object

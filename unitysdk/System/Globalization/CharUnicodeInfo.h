@@ -5,46 +5,61 @@
 
 namespace System { class String; }
 
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETNUMERICVALUE_1_OFFSET UNITYSDK_OFFSET(0x15C3B220)
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETNUMERICVALUE_OFFSET UNITYSDK_OFFSET(0x15C3B1F0)
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETUNICODECATEGORY_1_OFFSET UNITYSDK_OFFSET(0x15C3ADE0)
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETUNICODECATEGORY_OFFSET UNITYSDK_OFFSET(0x15C3B0B0)
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALCONVERTTOUTF32_OFFSET UNITYSDK_OFFSET(0x15C3AC10)
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETCATEGORYVALUE_OFFSET UNITYSDK_OFFSET(0x15C3B4D0)
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETNUMERICVALUE_OFFSET UNITYSDK_OFFSET(0x15C3B100)
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETUNICODECATEGORY_1_OFFSET UNITYSDK_OFFSET(0x15C3B440)
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETUNICODECATEGORY_OFFSET UNITYSDK_OFFSET(0x15C3B410)
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_ISWHITESPACE_1_OFFSET UNITYSDK_OFFSET(0x15C3B040)
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_ISWHITESPACE_OFFSET UNITYSDK_OFFSET(0x15C3AD70)
-#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO__CCTOR_OFFSET UNITYSDK_OFFSET(0x15C3B5C0)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETDECIMALDIGITVALUE_1_OFFSET UNITYSDK_OFFSET(0x197AE890)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETDECIMALDIGITVALUE_OFFSET UNITYSDK_OFFSET(0x197AE850)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETDIGITVALUE_1_OFFSET UNITYSDK_OFFSET(0x197AE990)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETDIGITVALUE_OFFSET UNITYSDK_OFFSET(0x197AE960)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETNUMERICVALUE_1_OFFSET UNITYSDK_OFFSET(0x197AE780)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETNUMERICVALUE_OFFSET UNITYSDK_OFFSET(0x197AE750)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETUNICODECATEGORY_1_OFFSET UNITYSDK_OFFSET(0x197AE360)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETUNICODECATEGORY_OFFSET UNITYSDK_OFFSET(0x197AE520)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALCONVERTTOUTF32_1_OFFSET UNITYSDK_OFFSET(0x197AE1A0)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALCONVERTTOUTF32_OFFSET UNITYSDK_OFFSET(0x197AE050)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETCATEGORYVALUE_OFFSET UNITYSDK_OFFSET(0x197AEB20)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETDIGITVALUES_OFFSET UNITYSDK_OFFSET(0x197AE660)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETNUMERICVALUE_OFFSET UNITYSDK_OFFSET(0x197AE570)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETUNICODECATEGORY_1_OFFSET UNITYSDK_OFFSET(0x197AEA90)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETUNICODECATEGORY_2_OFFSET UNITYSDK_OFFSET(0x197AEC10)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETUNICODECATEGORY_OFFSET UNITYSDK_OFFSET(0x197AEA60)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_ISCOMBININGCATEGORY_OFFSET UNITYSDK_OFFSET(0x197AECA0)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_ISWHITESPACE_1_OFFSET UNITYSDK_OFFSET(0x197AE4B0)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO_ISWHITESPACE_OFFSET UNITYSDK_OFFSET(0x197AE2F0)
+#define SYSTEM_GLOBALIZATION_CHARUNICODEINFO__CCTOR_OFFSET UNITYSDK_OFFSET(0x197AECE0)
 
 namespace System::Globalization
 {
-	inline static constexpr unsigned int CharUnicodeInfo_TypeDefinitionIndex = 729;
+	inline static constexpr unsigned int CharUnicodeInfo_TypeDefinitionIndex = 695;
 
 	class CharUnicodeInfo : public ::System::Object
 	{
 	public:
-		static ::Il2CppArray<::System::Byte>** StaticGet_s_pCategoriesValue()
+		static ::Il2CppArray<::System::Byte>** StaticGet_s_pNumericValues()
 		{
-			return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(CharUnicodeInfo_TypeDefinitionIndex)->GetStaticField(0x8520);
+			return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(CharUnicodeInfo_TypeDefinitionIndex)->GetStaticField(0x1180);
 		}
 		static ::Il2CppArray<::System::UInt16>** StaticGet_s_pDigitValues()
 		{
-			return (::Il2CppArray<::System::UInt16>**)Il2CppClass::FromTypeDefinitionIndex(CharUnicodeInfo_TypeDefinitionIndex)->GetStaticField(0x8528);
+			return (::Il2CppArray<::System::UInt16>**)Il2CppClass::FromTypeDefinitionIndex(CharUnicodeInfo_TypeDefinitionIndex)->GetStaticField(0x1188);
+		}
+		static ::Il2CppArray<::System::Byte>** StaticGet_s_pCategoriesValue()
+		{
+			return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(CharUnicodeInfo_TypeDefinitionIndex)->GetStaticField(0x1190);
 		}
 		static ::Il2CppArray<::System::UInt16>** StaticGet_s_pNumericLevel1Index()
 		{
-			return (::Il2CppArray<::System::UInt16>**)Il2CppClass::FromTypeDefinitionIndex(CharUnicodeInfo_TypeDefinitionIndex)->GetStaticField(0x8530);
-		}
-		static ::Il2CppArray<::System::Byte>** StaticGet_s_pNumericValues()
-		{
-			return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(CharUnicodeInfo_TypeDefinitionIndex)->GetStaticField(0x8538);
+			return (::Il2CppArray<::System::UInt16>**)Il2CppClass::FromTypeDefinitionIndex(CharUnicodeInfo_TypeDefinitionIndex)->GetStaticField(0x1198);
 		}
 		static ::Il2CppArray<::System::UInt16>** StaticGet_s_pCategoryLevel1Index()
 		{
-			return (::Il2CppArray<::System::UInt16>**)Il2CppClass::FromTypeDefinitionIndex(CharUnicodeInfo_TypeDefinitionIndex)->GetStaticField(0x8540);
+			return (::Il2CppArray<::System::UInt16>**)Il2CppClass::FromTypeDefinitionIndex(CharUnicodeInfo_TypeDefinitionIndex)->GetStaticField(0x11A0);
 		}
+		// static const ::System::Char HIGH_SURROGATE_START; // 0x0
+		// static const ::System::Char HIGH_SURROGATE_END; // 0x0
+		// static const ::System::Char LOW_SURROGATE_START; // 0x0
+		// static const ::System::Char LOW_SURROGATE_END; // 0x0
+		// static const ::System::Int32 UNICODE_CATEGORY_OFFSET = 0x0; // 0x0
+		// static const ::System::Int32 BIDI_CATEGORY_OFFSET = 0x1; // 0x0
+		// static const ::System::Int32 UNICODE_PLANE01_START = 0x10000; // 0x0
 
 		static ::System::Void _cctor()
 		{
@@ -54,6 +69,11 @@ namespace System::Globalization
 		static ::System::Int32 InternalConvertToUtf32(::System::String* s, ::System::Int32 index)
 		{
 			return ((::System::Int32(*)(::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALCONVERTTOUTF32_OFFSET))(s, index);
+		}
+
+		static ::System::Int32 InternalConvertToUtf32_1(::System::String* s, ::System::Int32 index, ::System::Int32& charLength)
+		{
+			return ((::System::Int32(*)(::System::String*, ::System::Int32, ::System::Int32&))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALCONVERTTOUTF32_1_OFFSET))(s, index, charLength);
 		}
 
 		static ::System::Boolean IsWhiteSpace(::System::String* s, ::System::Int32 index)
@@ -71,6 +91,11 @@ namespace System::Globalization
 			return ((::System::Double(*)(::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETNUMERICVALUE_OFFSET))(ch);
 		}
 
+		static ::System::UInt16 InternalGetDigitValues(::System::Int32 ch)
+		{
+			return ((::System::UInt16(*)(::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETDIGITVALUES_OFFSET))(ch);
+		}
+
 		static ::System::Double GetNumericValue(::System::Char ch)
 		{
 			return ((::System::Double(*)(::System::Char))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETNUMERICVALUE_OFFSET))(ch);
@@ -79,6 +104,26 @@ namespace System::Globalization
 		static ::System::Double GetNumericValue_1(::System::String* s, ::System::Int32 index)
 		{
 			return ((::System::Double(*)(::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETNUMERICVALUE_1_OFFSET))(s, index);
+		}
+
+		static ::System::Int32 GetDecimalDigitValue(::System::Char ch)
+		{
+			return ((::System::Int32(*)(::System::Char))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETDECIMALDIGITVALUE_OFFSET))(ch);
+		}
+
+		static ::System::Int32 GetDecimalDigitValue_1(::System::String* s, ::System::Int32 index)
+		{
+			return ((::System::Int32(*)(::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETDECIMALDIGITVALUE_1_OFFSET))(s, index);
+		}
+
+		static ::System::Int32 GetDigitValue(::System::Char ch)
+		{
+			return ((::System::Int32(*)(::System::Char))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETDIGITVALUE_OFFSET))(ch);
+		}
+
+		static ::System::Int32 GetDigitValue_1(::System::String* s, ::System::Int32 index)
+		{
+			return ((::System::Int32(*)(::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_GETDIGITVALUE_1_OFFSET))(s, index);
 		}
 
 		static ::System::Globalization::UnicodeCategory GetUnicodeCategory(::System::Char ch)
@@ -104,6 +149,16 @@ namespace System::Globalization
 		static ::System::Globalization::UnicodeCategory InternalGetUnicodeCategory_1(::System::String* value, ::System::Int32 index)
 		{
 			return ((::System::Globalization::UnicodeCategory(*)(::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETUNICODECATEGORY_1_OFFSET))(value, index);
+		}
+
+		static ::System::Globalization::UnicodeCategory InternalGetUnicodeCategory_2(::System::String* str, ::System::Int32 index, ::System::Int32& charLength)
+		{
+			return ((::System::Globalization::UnicodeCategory(*)(::System::String*, ::System::Int32, ::System::Int32&))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_INTERNALGETUNICODECATEGORY_2_OFFSET))(str, index, charLength);
+		}
+
+		static ::System::Boolean IsCombiningCategory(::System::Globalization::UnicodeCategory uc)
+		{
+			return ((::System::Boolean(*)(::System::Globalization::UnicodeCategory))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_CHARUNICODEINFO_ISCOMBININGCATEGORY_OFFSET))(uc);
 		}
 	};
 }

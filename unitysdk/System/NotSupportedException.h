@@ -7,14 +7,14 @@ namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_NOTSUPPORTEDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C819B0)
-#define SYSTEM_NOTSUPPORTEDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15CA2A00)
-#define SYSTEM_NOTSUPPORTEDEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15CA2A70)
-#define SYSTEM_NOTSUPPORTEDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C9D700)
+#define SYSTEM_NOTSUPPORTEDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18EFC8B0)
+#define SYSTEM_NOTSUPPORTEDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x18EFF0F0)
+#define SYSTEM_NOTSUPPORTEDEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x18EFF160)
+#define SYSTEM_NOTSUPPORTEDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x18EFF050)
 
 namespace System
 {
-	inline static constexpr unsigned int NotSupportedException_TypeDefinitionIndex = 303;
+	inline static constexpr unsigned int NotSupportedException_TypeDefinitionIndex = 293;
 
 	class NotSupportedException : public ::System::SystemException
 	{

@@ -1,0 +1,146 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/BackFlowWidget.h"
+
+class Class_1_82DFA6C681F8DC14;
+class Class_1_D64959CBBD533335_1;
+class Class_2_68D38DAD1613A778_6;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_CREATENORMALITEMROW_OFFSET UNITYSDK_OFFSET(0xD85E290)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_CREATESPECIALITEMROW_OFFSET UNITYSDK_OFFSET(0xD85E370)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_GETTEMPLATEINDEXFROMDATA_OFFSET UNITYSDK_OFFSET(0xD85E020)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONBACKFLOWTASKCHANGED_OFFSET UNITYSDK_OFFSET(0xD85E450)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONCLICKRETURNREWARDBTN_OFFSET UNITYSDK_OFFSET(0xD85E610)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD85DEA0)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xD85DD50)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD85DB10)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD85DF40)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD85D4E0)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD85D6B0)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_OPENRETURNSIGNINWIDGET_OFFSET UNITYSDK_OFFSET(0xD85D870)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_REFRESHSIGNINITEM_OFFSET UNITYSDK_OFFSET(0xD85DC90)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD85E690)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD85E6C0)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0xD85E730)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD85E790)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD85E800)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD85E880)
+#define MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD85E890)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityReturnSignInWidgetController_TypeDefinitionIndex = 59313;
+
+	class UIActivityReturnSignInWidgetController : public ::MoleMole::BackFlowWidget
+	{
+	public:
+		::Class_2_68D38DAD1613A778_6* _view; // 0x2C8
+		::System::Collections::Generic::List_1<::Class_1_D64959CBBD533335_1*>* signInTaskList; // 0x2D0
+		::Class_1_D64959CBBD533335_1* lastSignInTask; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Int32 GetTemplateIndexFromData(::System::Int32 index)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_GETTEMPLATEINDEXFROMDATA_OFFSET))(this, index);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateNormalItemRow(::System::Func_1<::MoleMole::UIControlReference*>* arg)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_CREATENORMALITEMROW_OFFSET))(this, arg);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateSpecialItemRow(::System::Func_1<::MoleMole::UIControlReference*>* arg)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_CREATESPECIALITEMROW_OFFSET))(this, arg);
+		}
+
+		::System::Void OpenReturnSignInWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_OPENRETURNSIGNINWIDGET_OFFSET))(this);
+		}
+
+		::System::Void RefreshSignInItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_REFRESHSIGNINITEM_OFFSET))(this);
+		}
+
+		::System::Void OnBackFlowTaskChanged(::Class_1_82DFA6C681F8DC14* backFlowActivityTask)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_82DFA6C681F8DC14*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONBACKFLOWTASKCHANGED_OFFSET))(this, backFlowActivityTask);
+		}
+
+		::System::Void OnClickReturnRewardBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER_ONCLICKRETURNREWARDBTN_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYRETURNSIGNINWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

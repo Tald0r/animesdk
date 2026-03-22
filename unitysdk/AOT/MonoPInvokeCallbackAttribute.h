@@ -4,11 +4,11 @@
 
 namespace System { class Type; }
 
-#define AOT_MONOPINVOKECALLBACKATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x181CB2E0)
+#define AOT_MONOPINVOKECALLBACKATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19E37100)
 
 namespace AOT
 {
-	inline static constexpr unsigned int MonoPInvokeCallbackAttribute_TypeDefinitionIndex = 3718;
+	inline static constexpr unsigned int MonoPInvokeCallbackAttribute_TypeDefinitionIndex = 5043;
 
 	class MonoPInvokeCallbackAttribute : public ::System::Attribute
 	{

@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_INSUFFICIENTEXECUTIONSTACKEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C990F0)
-#define SYSTEM_INSUFFICIENTEXECUTIONSTACKEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C99160)
-#define SYSTEM_INSUFFICIENTEXECUTIONSTACKEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C99050)
+#define SYSTEM_INSUFFICIENTEXECUTIONSTACKEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1913DC60)
+#define SYSTEM_INSUFFICIENTEXECUTIONSTACKEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1913DCD0)
+#define SYSTEM_INSUFFICIENTEXECUTIONSTACKEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1913DBC0)
 
 namespace System
 {
-	inline static constexpr unsigned int InsufficientExecutionStackException_TypeDefinitionIndex = 284;
+	inline static constexpr unsigned int InsufficientExecutionStackException_TypeDefinitionIndex = 271;
 
 	class InsufficientExecutionStackException : public ::System::SystemException
 	{

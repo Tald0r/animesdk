@@ -1,9 +1,8 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/Unreal/FTransform.h"
 
-namespace System { class Object; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_689_TypeDefinitionIndex = 53866;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_689_TypeDefinitionIndex = 72331;
 
 class Class_0_16E4307DCC419505_689
 {

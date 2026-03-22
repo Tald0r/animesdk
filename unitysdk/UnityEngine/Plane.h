@@ -5,22 +5,21 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_PLANE_CLOSESTPOINTONPLANE_OFFSET UNITYSDK_OFFSET(0x2026310)
-#define UNITYENGINE_PLANE_GETDISTANCETOPOINT_OFFSET UNITYSDK_OFFSET(0x2043C10)
-#define UNITYENGINE_PLANE_GETSIDE_OFFSET UNITYSDK_OFFSET(0x2043C40)
-#define UNITYENGINE_PLANE_GET_DISTANCE_OFFSET UNITYSDK_OFFSET(0xCCB0)
-#define UNITYENGINE_PLANE_GET_NORMAL_OFFSET UNITYSDK_OFFSET(0x24630)
-#define UNITYENGINE_PLANE_RAYCAST_OFFSET UNITYSDK_OFFSET(0x2043C80)
-#define UNITYENGINE_PLANE_SETNORMALANDPOSITION_OFFSET UNITYSDK_OFFSET(0x2043B10)
-#define UNITYENGINE_PLANE_SET_DISTANCE_OFFSET UNITYSDK_OFFSET(0xCCC0)
-#define UNITYENGINE_PLANE_SET_NORMAL_OFFSET UNITYSDK_OFFSET(0x72E10)
-#define UNITYENGINE_PLANE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x2043D40)
-#define UNITYENGINE_PLANE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x246D0)
-#define UNITYENGINE_PLANE__CTOR_OFFSET UNITYSDK_OFFSET(0x2043A20)
+#define UNITYENGINE_PLANE_CLOSESTPOINTONPLANE_OFFSET UNITYSDK_OFFSET(0x8B4CB0)
+#define UNITYENGINE_PLANE_GETDISTANCETOPOINT_OFFSET UNITYSDK_OFFSET(0x8B4D20)
+#define UNITYENGINE_PLANE_GETSIDE_OFFSET UNITYSDK_OFFSET(0x8B4D50)
+#define UNITYENGINE_PLANE_GET_DISTANCE_OFFSET UNITYSDK_OFFSET(0x2D8630)
+#define UNITYENGINE_PLANE_GET_NORMAL_OFFSET UNITYSDK_OFFSET(0x31DD30)
+#define UNITYENGINE_PLANE_RAYCAST_OFFSET UNITYSDK_OFFSET(0x8B4D90)
+#define UNITYENGINE_PLANE_SETNORMALANDPOSITION_OFFSET UNITYSDK_OFFSET(0x8B4BB0)
+#define UNITYENGINE_PLANE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x8B4E50)
+#define UNITYENGINE_PLANE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x8B49C0)
+#define UNITYENGINE_PLANE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x8B4A70)
+#define UNITYENGINE_PLANE__CTOR_OFFSET UNITYSDK_OFFSET(0x8B48D0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int Plane_TypeDefinitionIndex = 3879;
+	inline static constexpr unsigned int Plane_TypeDefinitionIndex = 5162;
 
 	struct alignas(4) Plane
 	{
@@ -32,9 +31,14 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_PLANE__CTOR_OFFSET))(this, inNormal, inPoint);
 		}
 
-		::System::Void _ctor_1(::UnityEngine::Vector3 a, ::UnityEngine::Vector3 b, ::UnityEngine::Vector3 c)
+		::System::Void _ctor_1(::UnityEngine::Vector3 inNormal, ::System::Single d)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_PLANE__CTOR_1_OFFSET))(this, a, b, c);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_PLANE__CTOR_1_OFFSET))(this, inNormal, d);
+		}
+
+		::System::Void _ctor_2(::UnityEngine::Vector3 a, ::UnityEngine::Vector3 b, ::UnityEngine::Vector3 c)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_PLANE__CTOR_2_OFFSET))(this, a, b, c);
 		}
 
 		::UnityEngine::Vector3 get_normal()
@@ -42,19 +46,9 @@ namespace UnityEngine
 			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_PLANE_GET_NORMAL_OFFSET))(this);
 		}
 
-		::System::Void set_normal(::UnityEngine::Vector3 value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_PLANE_SET_NORMAL_OFFSET))(this, value);
-		}
-
 		::System::Single get_distance()
 		{
 			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_PLANE_GET_DISTANCE_OFFSET))(this);
-		}
-
-		::System::Void set_distance(::System::Single value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_PLANE_SET_DISTANCE_OFFSET))(this, value);
 		}
 
 		::System::Void SetNormalAndPosition(::UnityEngine::Vector3 inNormal, ::UnityEngine::Vector3 inPoint)

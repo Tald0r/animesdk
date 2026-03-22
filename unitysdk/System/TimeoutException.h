@@ -3,16 +3,18 @@
 #include "unitysdk/System/Runtime/Serialization/StreamingContext.h"
 #include "unitysdk/System/SystemException.h"
 
+namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_TIMEOUTEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15BB3580)
-#define SYSTEM_TIMEOUTEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15BB35F0)
-#define SYSTEM_TIMEOUTEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15BB3510)
+#define SYSTEM_TIMEOUTEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F84450)
+#define SYSTEM_TIMEOUTEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17F844C0)
+#define SYSTEM_TIMEOUTEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x17F84530)
+#define SYSTEM_TIMEOUTEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x17F843E0)
 
 namespace System
 {
-	inline static constexpr unsigned int TimeoutException_TypeDefinitionIndex = 338;
+	inline static constexpr unsigned int TimeoutException_TypeDefinitionIndex = 328;
 
 	class TimeoutException : public ::System::SystemException
 	{
@@ -27,9 +29,14 @@ namespace System
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TIMEOUTEXCEPTION__CTOR_1_OFFSET))(this, message);
 		}
 
-		::System::Void _ctor_2(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::Void _ctor_2(::System::String* message, ::System::Exception* innerException)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_TIMEOUTEXCEPTION__CTOR_2_OFFSET))(this, info, context);
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Exception*))((::PBYTE)hIl2Cpp + SYSTEM_TIMEOUTEXCEPTION__CTOR_2_OFFSET))(this, message, innerException);
+		}
+
+		::System::Void _ctor_3(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_TIMEOUTEXCEPTION__CTOR_3_OFFSET))(this, info, context);
 		}
 	};
 }

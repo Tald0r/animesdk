@@ -1,55 +1,49 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
-#include "unitysdk/UnityEngine/Quaternion.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
 namespace RootMotion::FinalIK { class IKSolver_Bone; }
 namespace RootMotion::FinalIK { class IKSolver_Point; }
-namespace RootMotion::FinalIK { class IKSolver_TipPoint; }
 namespace RootMotion::FinalIK { class IKSolver_UpdateDelegate; }
+namespace RootMotion::FinalIK { class RotationLookAt; }
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define ROOTMOTION_FINALIK_IKSOLVER_CONTAINSDUPLICATEBONE_OFFSET UNITYSDK_OFFSET(0x82A3F20)
-#define ROOTMOTION_FINALIK_IKSOLVER_GETIKPOSITIONWEIGHT_OFFSET UNITYSDK_OFFSET(0x82A3830)
-#define ROOTMOTION_FINALIK_IKSOLVER_GETIKPOSITION_OFFSET UNITYSDK_OFFSET(0x82A3800)
-#define ROOTMOTION_FINALIK_IKSOLVER_GETIKROTATIONWEIGHT_OFFSET UNITYSDK_OFFSET(0x82A38C0)
-#define ROOTMOTION_FINALIK_IKSOLVER_GETIKROTATION_OFFSET UNITYSDK_OFFSET(0x82A38B0)
-#define ROOTMOTION_FINALIK_IKSOLVER_GETROOT_OFFSET UNITYSDK_OFFSET(0x82A38D0)
-#define ROOTMOTION_FINALIK_IKSOLVER_GET_INITIATED_OFFSET UNITYSDK_OFFSET(0x82A38E0)
-#define ROOTMOTION_FINALIK_IKSOLVER_HIERARCHYISVALID_OFFSET UNITYSDK_OFFSET(0x82A4000)
-#define ROOTMOTION_FINALIK_IKSOLVER_INITIATE_OFFSET UNITYSDK_OFFSET(0x82A1C90)
-#define ROOTMOTION_FINALIK_IKSOLVER_ISVALID_OFFSET UNITYSDK_OFFSET(0x82A1E40)
-#define ROOTMOTION_FINALIK_IKSOLVER_LOGWARNING_OFFSET UNITYSDK_OFFSET(0x82A3F00)
-#define ROOTMOTION_FINALIK_IKSOLVER_ONDRAWGIZMOS_OFFSET UNITYSDK_OFFSET(0x82A3900)
-#define ROOTMOTION_FINALIK_IKSOLVER_PRESOLVEBONES_OFFSET UNITYSDK_OFFSET(0x82A4190)
-#define ROOTMOTION_FINALIK_IKSOLVER_SETIKPOSITIONWEIGHT_OFFSET UNITYSDK_OFFSET(0x82A3840)
-#define ROOTMOTION_FINALIK_IKSOLVER_SETIKPOSITION_OFFSET UNITYSDK_OFFSET(0x82A3820)
-#define ROOTMOTION_FINALIK_IKSOLVER_SETIKROTATIONWEIGHT_OFFSET UNITYSDK_OFFSET(0x82A3880)
-#define ROOTMOTION_FINALIK_IKSOLVER_SETIKROTATION_OFFSET UNITYSDK_OFFSET(0x82A3870)
-#define ROOTMOTION_FINALIK_IKSOLVER_SET_INITIATED_OFFSET UNITYSDK_OFFSET(0x82A38F0)
-#define ROOTMOTION_FINALIK_IKSOLVER_UPDATE_OFFSET UNITYSDK_OFFSET(0x82A1BD0)
-#define ROOTMOTION_FINALIK_IKSOLVER__CTOR_OFFSET UNITYSDK_OFFSET(0x82A46D0)
+#define ROOTMOTION_FINALIK_IKSOLVER_CONTAINSDUPLICATEBONE_OFFSET UNITYSDK_OFFSET(0x1AAA91E0)
+#define ROOTMOTION_FINALIK_IKSOLVER_GETIKPOSITIONWEIGHT_OFFSET UNITYSDK_OFFSET(0x1AAA90E0)
+#define ROOTMOTION_FINALIK_IKSOLVER_GETIKPOSITION_OFFSET UNITYSDK_OFFSET(0x1AAA90B0)
+#define ROOTMOTION_FINALIK_IKSOLVER_GETROOT_OFFSET UNITYSDK_OFFSET(0x1AAA9120)
+#define ROOTMOTION_FINALIK_IKSOLVER_GET_INITIATED_OFFSET UNITYSDK_OFFSET(0x1AAA9130)
+#define ROOTMOTION_FINALIK_IKSOLVER_HIERARCHYISVALID_OFFSET UNITYSDK_OFFSET(0x1AAA93A0)
+#define ROOTMOTION_FINALIK_IKSOLVER_INITIATE_OFFSET UNITYSDK_OFFSET(0x1AAA8EB0)
+#define ROOTMOTION_FINALIK_IKSOLVER_ISVALID_OFFSET UNITYSDK_OFFSET(0x1AAA8E80)
+#define ROOTMOTION_FINALIK_IKSOLVER_LOGWARNING_OFFSET UNITYSDK_OFFSET(0x1AAA9150)
+#define ROOTMOTION_FINALIK_IKSOLVER_PRESOLVEBONES_OFFSET UNITYSDK_OFFSET(0x1AAA9440)
+#define ROOTMOTION_FINALIK_IKSOLVER_SETIKPOSITIONWEIGHT_OFFSET UNITYSDK_OFFSET(0x1AAA90F0)
+#define ROOTMOTION_FINALIK_IKSOLVER_SETIKPOSITION_OFFSET UNITYSDK_OFFSET(0x1AAA90D0)
+#define ROOTMOTION_FINALIK_IKSOLVER_SET_INITIATED_OFFSET UNITYSDK_OFFSET(0x1AAA9140)
+#define ROOTMOTION_FINALIK_IKSOLVER_UPDATE_OFFSET UNITYSDK_OFFSET(0x1AAA9050)
+#define ROOTMOTION_FINALIK_IKSOLVER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAA9980)
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int IKSolver_TypeDefinitionIndex = 34268;
+	inline static constexpr unsigned int IKSolver_TypeDefinitionIndex = 35061;
 
 	class IKSolver : public ::System::Object
 	{
 	public:
-		::UnityEngine::Vector3 IKPosition; // 0x10
-		::System::Single IKPositionWeight; // 0x1C
-		::System::Single IKRotationWeight; // 0x20
-		::UnityEngine::Quaternion IKRotation; // 0x24
-		::System::Boolean _initiated_k__BackingField; // 0x34
-		::RootMotion::FinalIK::IKSolver_UpdateDelegate* OnPreInitiate; // 0x38
-		::RootMotion::FinalIK::IKSolver_UpdateDelegate* OnPostInitiate; // 0x40
-		::RootMotion::FinalIK::IKSolver_UpdateDelegate* OnPreUpdate; // 0x48
-		::RootMotion::FinalIK::IKSolver_UpdateDelegate* OnPostUpdate; // 0x50
-		::System::Boolean firstInitiation; // 0x58
-		::UnityEngine::Transform* root; // 0x60
+		::System::Boolean executedInEditor; // 0x10
+		::UnityEngine::Vector3 IKPosition; // 0x14
+		::System::Single IKPositionWeight; // 0x20
+		::System::Boolean _initiated_k__BackingField; // 0x24
+		::RootMotion::FinalIK::IKSolver_UpdateDelegate* OnPreInitiate; // 0x28
+		::RootMotion::FinalIK::IKSolver_UpdateDelegate* OnPostInitiate; // 0x30
+		::RootMotion::FinalIK::IKSolver_UpdateDelegate* OnPreUpdate; // 0x38
+		::RootMotion::FinalIK::IKSolver_UpdateDelegate* OnPostUpdate; // 0x40
+		::System::Boolean firstInitiation; // 0x48
+		::UnityEngine::Transform* root; // 0x50
+		::Il2CppArray<::RootMotion::FinalIK::RotationLookAt*>* rotationLookAts; // 0x58
 
 		::System::Void _ctor()
 		{
@@ -91,26 +85,6 @@ namespace RootMotion::FinalIK
 			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKSOLVER_SETIKPOSITIONWEIGHT_OFFSET))(this, weight);
 		}
 
-		::System::Void SetIKRotation(::UnityEngine::Quaternion rotation)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKSOLVER_SETIKROTATION_OFFSET))(this, rotation);
-		}
-
-		::System::Void SetIKRotationWeight(::System::Single weight)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKSOLVER_SETIKROTATIONWEIGHT_OFFSET))(this, weight);
-		}
-
-		::UnityEngine::Quaternion GetIKRotation()
-		{
-			return ((::UnityEngine::Quaternion(*)(::PVOID))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKSOLVER_GETIKROTATION_OFFSET))(this);
-		}
-
-		::System::Single GetIKRotationWeight()
-		{
-			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKSOLVER_GETIKROTATIONWEIGHT_OFFSET))(this);
-		}
-
 		::UnityEngine::Transform* GetRoot()
 		{
 			return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKSOLVER_GETROOT_OFFSET))(this);
@@ -124,11 +98,6 @@ namespace RootMotion::FinalIK
 		::System::Void set_initiated(::System::Boolean value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKSOLVER_SET_INITIATED_OFFSET))(this, value);
-		}
-
-		::System::Void OnDrawGizmos()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKSOLVER_ONDRAWGIZMOS_OFFSET))(this);
 		}
 
 		::System::Void LogWarning(::System::String* message)

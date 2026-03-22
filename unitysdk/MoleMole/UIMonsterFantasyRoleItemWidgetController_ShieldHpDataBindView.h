@@ -1,0 +1,66 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_3BEB019E352B28D9_Class_2_190E8D2E48A46BE5_1.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_2_E87F1D15F1D4AC72;
+namespace MoleMole { class UIMonsterFantasyRoleItemWidgetController; }
+namespace UnityEngine { class Material; }
+
+#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW_GET_HPIMGMAT_OFFSET UNITYSDK_OFFSET(0x6CE4200)
+#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW_ONBUILDDATABINDING_OFFSET UNITYSDK_OFFSET(0x6CE4340)
+#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW_ONINIT_OFFSET UNITYSDK_OFFSET(0x6CE42D0)
+#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW_SET_HPIMGMAT_OFFSET UNITYSDK_OFFSET(0x6CE4210)
+#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW__CCTOR_OFFSET UNITYSDK_OFFSET(0x6CE4480)
+#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW__CTOR_OFFSET UNITYSDK_OFFSET(0x6CE4220)
+#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW__ONBUILDDATABINDING_B__6_0_OFFSET UNITYSDK_OFFSET(0x6CE44C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMonsterFantasyRoleItemWidgetController_ShieldHpDataBindView_TypeDefinitionIndex = 45159;
+
+	class UIMonsterFantasyRoleItemWidgetController_ShieldHpDataBindView : public ::Class_2_3BEB019E352B28D9_Class_2_190E8D2E48A46BE5_1
+	{
+	public:
+		static ::System::Int32* StaticGet_ShieldPercentShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasyRoleItemWidgetController_ShieldHpDataBindView_TypeDefinitionIndex)->GetStaticField(0xF990);
+		}
+		::UnityEngine::Material* _hpImgMat_k__BackingField; // 0x28
+
+		::System::Void _ctor(::MoleMole::UIMonsterFantasyRoleItemWidgetController* uiController)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIMonsterFantasyRoleItemWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW__CTOR_OFFSET))(this, uiController);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW__CCTOR_OFFSET))();
+		}
+
+		::UnityEngine::Material* get_hpImgMat()
+		{
+			return ((::UnityEngine::Material*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW_GET_HPIMGMAT_OFFSET))(this);
+		}
+
+		::System::Void set_hpImgMat(::UnityEngine::Material* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Material*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW_SET_HPIMGMAT_OFFSET))(this, value);
+		}
+
+		::System::Void OnInit(::Class_2_E87F1D15F1D4AC72* binder)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW_ONINIT_OFFSET))(this, binder);
+		}
+
+		::System::Void OnBuildDataBinding(::Class_1_48D56DACBE4271BC* propertySyncHelper)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_48D56DACBE4271BC*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW_ONBUILDDATABINDING_OFFSET))(this, propertySyncHelper);
+		}
+
+		::System::Void _OnBuildDataBinding_b__6_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER_SHIELDHPDATABINDVIEW__ONBUILDDATABINDING_B__6_0_OFFSET))(this);
+		}
+	};
+}

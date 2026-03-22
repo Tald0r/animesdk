@@ -1,0 +1,78 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_B3BE3A775F46A81F_2;
+namespace MoleMole { class UIControlReference; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xCA8E5D0)
+#define MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xCA8E780)
+#define MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCA8E640)
+#define MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER_SETONLYSHOWMEDALBTN_OFFSET UNITYSDK_OFFSET(0xCA8EC50)
+#define MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER_SETRECORDID_OFFSET UNITYSDK_OFFSET(0xCA8E880)
+#define MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xCA8EDF0)
+#define MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER__ONUIINIT_B__2_0_OFFSET UNITYSDK_OFFSET(0xCA8EE20)
+#define MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER__ONUIINIT_B__2_1_OFFSET UNITYSDK_OFFSET(0xCA8EF50)
+#define MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xCA8F080)
+#define MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xCA8F0F0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVoidFrontEndingCollectRowWidgetController_TypeDefinitionIndex = 76489;
+
+	class UIVoidFrontEndingCollectRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_B3BE3A775F46A81F_2* get__viewModel()
+		{
+			return ((::Class_2_B3BE3A775F46A81F_2*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void SetRecordID(::System::Int32 entranceId, ::System::Int32 recordID, ::System::Boolean onlyShowMedalBtn)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER_SETRECORDID_OFFSET))(this, entranceId, recordID, onlyShowMedalBtn);
+		}
+
+		::System::Void SetOnlyShowMedalBtn(::System::Boolean onlyShowMedalBtn)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER_SETONLYSHOWMEDALBTN_OFFSET))(this, onlyShowMedalBtn);
+		}
+
+		::System::Void _OnUIInit_b__2_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER__ONUIINIT_B__2_0_OFFSET))(this, args);
+		}
+
+		::System::Void _OnUIInit_b__2_1(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER__ONUIINIT_B__2_1_OFFSET))(this, args);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTENDINGCOLLECTROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

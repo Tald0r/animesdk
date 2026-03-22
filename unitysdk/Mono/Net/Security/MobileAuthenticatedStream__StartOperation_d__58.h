@@ -11,20 +11,20 @@ namespace Mono::Net::Security { class AsyncProtocolResult; }
 namespace Mono::Net::Security { class MobileAuthenticatedStream; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__STARTOPERATION_D__58_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2031B40)
-#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__STARTOPERATION_D__58_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x14FF340)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__STARTOPERATION_D__58_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x85F070)
+#define MONO_NET_SECURITY_MOBILEAUTHENTICATEDSTREAM__STARTOPERATION_D__58_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2D0140)
 
 namespace Mono::Net::Security
 {
-	inline static constexpr unsigned int MobileAuthenticatedStream__StartOperation_d__58_TypeDefinitionIndex = 2422;
+	inline static constexpr unsigned int MobileAuthenticatedStream__StartOperation_d__58_TypeDefinitionIndex = 2625;
 
 	struct alignas(8) MobileAuthenticatedStream__StartOperation_d__58
 	{
-		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Int32> __t__builder; // 0x10
-		::System::Threading::CancellationToken cancellationToken; // 0x28
-		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<::Mono::Net::Security::AsyncProtocolResult*> __u__1; // 0x30
-		::Mono::Net::Security::AsyncProtocolRequest* asyncRequest; // 0x40
-		::Mono::Net::Security::MobileAuthenticatedStream* __4__this; // 0x48
+		::Mono::Net::Security::AsyncProtocolRequest* asyncRequest; // 0x10
+		::Mono::Net::Security::MobileAuthenticatedStream* __4__this; // 0x18
+		::System::Threading::CancellationToken cancellationToken; // 0x20
+		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Int32> __t__builder; // 0x28
+		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<::Mono::Net::Security::AsyncProtocolResult*> __u__1; // 0x40
 		::System::Int32 __1__state; // 0x50
 		::Mono::Net::Security::MobileAuthenticatedStream_OperationType type; // 0x54
 

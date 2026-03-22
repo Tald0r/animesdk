@@ -1,0 +1,63 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/Quaternion.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_1_EDF4DCFB9AF1C323;
+class Class_2_1AF58D2D7D5CC9BA_Class_0_16E7307DCC43CB2C_28;
+class Class_2_1AF58D2D7D5CC9BA_Class_2_C782B74CC7F113AB;
+namespace MoleMole { class UIMiniScapeMapPage_MapWidgetController; }
+template <typename T> class Class_0_16E4307DCC419505_102;
+template <typename T> class Class_0_16E4307DCC419505_103;
+
+#define MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE_GET_CANROTATION_OFFSET UNITYSDK_OFFSET(0x87113C0)
+#define MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE_GET_MAPSIZECURRENT_OFFSET UNITYSDK_OFFSET(0x8711350)
+#define MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE_GET_SUBMAPDATA_OFFSET UNITYSDK_OFFSET(0x8711320)
+#define MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE_GET_WORLDSPACEPOS_OFFSET UNITYSDK_OFFSET(0x8711380)
+#define MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE_GET_WORLDSPACEROTATION_OFFSET UNITYSDK_OFFSET(0x8711390)
+#define MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE__CTOR_OFFSET UNITYSDK_OFFSET(0x87113E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMiniScapeMapPage_MapWidgetController_MapIconModel_Simple_TypeDefinitionIndex = 66535;
+
+	class UIMiniScapeMapPage_MapWidgetController_MapIconModel_Simple : public ::System::Object
+	{
+	public:
+		::Class_2_1AF58D2D7D5CC9BA_Class_2_C782B74CC7F113AB* _iconKeyData; // 0x10
+		::Class_0_16E4307DCC419505_103<::UnityEngine::Vector3>* _worldSpacePos; // 0x18
+		::MoleMole::UIMiniScapeMapPage_MapWidgetController* _uiController; // 0x20
+		::Class_1_EDF4DCFB9AF1C323* _propertyAllocateHelper; // 0x28
+
+		::System::Void _ctor(::MoleMole::UIMiniScapeMapPage_MapWidgetController* uiController, ::UnityEngine::Vector3 worldSpacePos, ::Class_2_1AF58D2D7D5CC9BA_Class_2_C782B74CC7F113AB* iconKeyData)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIMiniScapeMapPage_MapWidgetController*, ::UnityEngine::Vector3, ::Class_2_1AF58D2D7D5CC9BA_Class_2_C782B74CC7F113AB*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE__CTOR_OFFSET))(this, uiController, worldSpacePos, iconKeyData);
+		}
+
+		::Class_2_1AF58D2D7D5CC9BA_Class_0_16E7307DCC43CB2C_28* get_SubMapData()
+		{
+			return ((::Class_2_1AF58D2D7D5CC9BA_Class_0_16E7307DCC43CB2C_28*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE_GET_SUBMAPDATA_OFFSET))(this);
+		}
+
+		::Class_0_16E4307DCC419505_102<::System::Single>* get_MapSizeCurrent()
+		{
+			return ((::Class_0_16E4307DCC419505_102<::System::Single>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE_GET_MAPSIZECURRENT_OFFSET))(this);
+		}
+
+		::Class_0_16E4307DCC419505_102<::UnityEngine::Vector3>* get_WorldSpacePos()
+		{
+			return ((::Class_0_16E4307DCC419505_102<::UnityEngine::Vector3>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE_GET_WORLDSPACEPOS_OFFSET))(this);
+		}
+
+		::Class_0_16E4307DCC419505_102<::UnityEngine::Quaternion>* get_WorldSpaceRotation()
+		{
+			return ((::Class_0_16E4307DCC419505_102<::UnityEngine::Quaternion>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE_GET_WORLDSPACEROTATION_OFFSET))(this);
+		}
+
+		::Class_0_16E4307DCC419505_102<::System::Boolean>* get_CanRotation()
+		{
+			return ((::Class_0_16E4307DCC419505_102<::System::Boolean>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMINISCAPEMAPPAGE_MAPWIDGETCONTROLLER_MAPICONMODEL_SIMPLE_GET_CANROTATION_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,107 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_80B4F6F934B64A41.h"
+#include "unitysdk/Struct_2_FFBC003CFBB61A74.h"
+#include "unitysdk/System/Object.h"
+
+namespace System { class Action; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class Queue_1; }
+
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_17BD30EFE8176014_OFFSET UNITYSDK_OFFSET(0xB847F60)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_41A074549EF25F63_OFFSET UNITYSDK_OFFSET(0xB8486B0)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_9681042564541CD6_OFFSET UNITYSDK_OFFSET(0xB847E20)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_AE4897DD9DFBC7D2_1_OFFSET UNITYSDK_OFFSET(0xB848220)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_AE4897DD9DFBC7D2_OFFSET UNITYSDK_OFFSET(0xB847EA0)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_BCCEF225A11BDA90_1_OFFSET UNITYSDK_OFFSET(0xB848280)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_BCCEF225A11BDA90_OFFSET UNITYSDK_OFFSET(0xB847D60)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xB847F00)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_DE2116939DE8F13B_1_OFFSET UNITYSDK_OFFSET(0xB848320)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_DE2116939DE8F13B_2_OFFSET UNITYSDK_OFFSET(0xB8483A0)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_DE2116939DE8F13B_3_OFFSET UNITYSDK_OFFSET(0xB848630)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_DE2116939DE8F13B_OFFSET UNITYSDK_OFFSET(0xB8481A0)
+#define CLASS_1_6AFAE3D46C1B4159_METHOD_1_F7300E87EC49A206_OFFSET UNITYSDK_OFFSET(0xB848420)
+#define CLASS_1_6AFAE3D46C1B4159__CTOR_OFFSET UNITYSDK_OFFSET(0xB847CD0)
+
+inline static constexpr unsigned int Class_1_6AFAE3D46C1B4159_TypeDefinitionIndex = 64568;
+
+class Class_1_6AFAE3D46C1B4159 : public ::System::Object
+{
+public:
+	::System::Collections::Generic::Queue_1<::Struct_2_80B4F6F934B64A41>* Field_1_1; // 0x10
+	::System::Collections::Generic::Queue_1<::Struct_2_FFBC003CFBB61A74>* Field_1_0; // 0x18
+	::System::Action* Field_1_5; // 0x20
+	::System::Action_1<::Struct_2_80B4F6F934B64A41>* Field_1_4; // 0x28
+	::System::Action_1<::Struct_2_FFBC003CFBB61A74>* Field_1_3; // 0x30
+	::System::Boolean Field_1_2; // 0x38
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_BCCEF225A11BDA90(::Struct_2_FFBC003CFBB61A74 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_FFBC003CFBB61A74))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_BCCEF225A11BDA90_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_9681042564541CD6()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_9681042564541CD6_OFFSET))(this);
+	}
+
+	::System::Void Method_1_AE4897DD9DFBC7D2(::System::Action* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_AE4897DD9DFBC7D2_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_1_17BD30EFE8176014()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_17BD30EFE8176014_OFFSET))(this);
+	}
+
+	::System::Void Method_1_DE2116939DE8F13B(::System::Action_1<::Struct_2_80B4F6F934B64A41>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Action_1<::Struct_2_80B4F6F934B64A41>*))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_DE2116939DE8F13B_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_AE4897DD9DFBC7D2_1(::System::Action* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_AE4897DD9DFBC7D2_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_BCCEF225A11BDA90_1(::Struct_2_80B4F6F934B64A41 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_80B4F6F934B64A41))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_BCCEF225A11BDA90_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_DE2116939DE8F13B_1(::System::Action_1<::Struct_2_80B4F6F934B64A41>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Action_1<::Struct_2_80B4F6F934B64A41>*))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_DE2116939DE8F13B_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_DE2116939DE8F13B_2(::System::Action_1<::Struct_2_FFBC003CFBB61A74>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Action_1<::Struct_2_FFBC003CFBB61A74>*))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_DE2116939DE8F13B_2_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_F7300E87EC49A206()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_F7300E87EC49A206_OFFSET))(this);
+	}
+
+	::System::Void Method_1_DE2116939DE8F13B_3(::System::Action_1<::Struct_2_FFBC003CFBB61A74>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Action_1<::Struct_2_FFBC003CFBB61A74>*))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_DE2116939DE8F13B_3_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_41A074549EF25F63()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6AFAE3D46C1B4159_METHOD_1_41A074549EF25F63_OFFSET))(this);
+	}
+};

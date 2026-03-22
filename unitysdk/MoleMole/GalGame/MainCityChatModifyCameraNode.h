@@ -1,0 +1,34 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/GalGame/MainCityChatPlayableNodeBase.h"
+
+class Class_1_328B10E9F3553A0D;
+namespace MoleMole { class UIBaseChatPlayController; }
+namespace MoleMole { class UIMainCityChatPlayContext; }
+namespace MoleMole::Cameras { class CameraTrackBlending; }
+namespace MoleMole::GalGame { class MainCityChatCameraParam; }
+
+#define MOLEMOLE_GALGAME_MAINCITYCHATMODIFYCAMERANODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0xE483410)
+#define MOLEMOLE_GALGAME_MAINCITYCHATMODIFYCAMERANODE__CTOR_OFFSET UNITYSDK_OFFSET(0xE4833F0)
+
+namespace MoleMole::GalGame
+{
+	inline static constexpr unsigned int MainCityChatModifyCameraNode_TypeDefinitionIndex = 56692;
+
+	class MainCityChatModifyCameraNode : public ::MoleMole::GalGame::MainCityChatPlayableNodeBase
+	{
+	public:
+		::MoleMole::GalGame::MainCityChatCameraParam* CameraParam; // 0x18
+		::MoleMole::Cameras::CameraTrackBlending* BlendParam; // 0x20
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GALGAME_MAINCITYCHATMODIFYCAMERANODE__CTOR_OFFSET))(this);
+		}
+
+		::Class_1_328B10E9F3553A0D* Instantiate(::MoleMole::UIBaseChatPlayController* controller, ::MoleMole::UIMainCityChatPlayContext* context)
+		{
+			return ((::Class_1_328B10E9F3553A0D*(*)(::PVOID, ::MoleMole::UIBaseChatPlayController*, ::MoleMole::UIMainCityChatPlayContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_GALGAME_MAINCITYCHATMODIFYCAMERANODE_INSTANTIATE_OFFSET))(this, controller, context);
+		}
+	};
+}

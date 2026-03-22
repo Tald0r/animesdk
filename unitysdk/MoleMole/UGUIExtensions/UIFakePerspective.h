@@ -1,0 +1,69 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UGUIExtensions/UIFakePerspectiveBase.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+#define MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_486AF1E6C0038D4C_1_OFFSET UNITYSDK_OFFSET(0x8F4FFB0)
+#define MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_486AF1E6C0038D4C_2_OFFSET UNITYSDK_OFFSET(0x8F4FFC0)
+#define MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_486AF1E6C0038D4C_3_OFFSET UNITYSDK_OFFSET(0x8F4FFD0)
+#define MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_486AF1E6C0038D4C_OFFSET UNITYSDK_OFFSET(0x8F4FFA0)
+#define MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_F0088C88851A7DFB_1_OFFSET UNITYSDK_OFFSET(0x8F4FFF0)
+#define MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x8F4FFE0)
+#define MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_SETUPDATE_OFFSET UNITYSDK_OFFSET(0x8F50000)
+#define MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE__CTOR_OFFSET UNITYSDK_OFFSET(0x8F50070)
+
+namespace MoleMole::UGUIExtensions
+{
+	inline static constexpr unsigned int UIFakePerspective_TypeDefinitionIndex = 41507;
+
+	class UIFakePerspective : public ::MoleMole::UGUIExtensions::UIFakePerspectiveBase
+	{
+	public:
+		::System::Boolean forceImageUVFixOff; // 0x48
+		::UnityEngine::Vector2 pointAOffset; // 0x4C
+		::UnityEngine::Vector2 pointBOffset; // 0x54
+		::UnityEngine::Vector2 pointCOffset; // 0x5C
+		::UnityEngine::Vector2 pointDOffset; // 0x64
+		::System::Boolean updateAlways; // 0x6C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE__CTOR_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector2 Method_7_486AF1E6C0038D4C()
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_486AF1E6C0038D4C_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector2 Method_7_486AF1E6C0038D4C_1()
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_486AF1E6C0038D4C_1_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector2 Method_7_486AF1E6C0038D4C_2()
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_486AF1E6C0038D4C_2_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector2 Method_7_486AF1E6C0038D4C_3()
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_486AF1E6C0038D4C_3_OFFSET))(this);
+		}
+
+		::System::Boolean Method_7_F0088C88851A7DFB()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_F0088C88851A7DFB_OFFSET))(this);
+		}
+
+		::System::Boolean Method_7_F0088C88851A7DFB_1()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_METHOD_7_F0088C88851A7DFB_1_OFFSET))(this);
+		}
+
+		::System::Void SetUpdate(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UGUIEXTENSIONS_UIFAKEPERSPECTIVE_SETUPDATE_OFFSET))(this, a1);
+		}
+	};
+}

@@ -4,7 +4,7 @@
 
 namespace MiHoYo::SDK::Protobuf::Reflection
 {
-	inline static constexpr unsigned int UninterpretedOption_Types_TypeDefinitionIndex = 27357;
+	inline static constexpr unsigned int UninterpretedOption_Types_TypeDefinitionIndex = 24710;
 
 	class UninterpretedOption_Types : public ::System::Object
 	{

@@ -1,0 +1,95 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Net/NetworkInformation/DuplicateAddressDetectionState.h"
+#include "unitysdk/System/Net/NetworkInformation/PrefixOrigin.h"
+#include "unitysdk/System/Net/NetworkInformation/SuffixOrigin.h"
+#include "unitysdk/System/Net/NetworkInformation/UnicastIPAddressInformation.h"
+#include "unitysdk/System/Net/NetworkInformation/Win32_IP_ADAPTER_UNICAST_ADDRESS.h"
+#include "unitysdk/System/Net/Sockets/AddressFamily.h"
+
+namespace System::Net { class IPAddress; }
+
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_ADDRESSPREFERREDLIFETIME_OFFSET UNITYSDK_OFFSET(0x18F59DB0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_ADDRESSVALIDLIFETIME_OFFSET UNITYSDK_OFFSET(0x18F59DC0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_ADDRESS_OFFSET UNITYSDK_OFFSET(0x18F59D80)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_DHCPLEASELIFETIME_OFFSET UNITYSDK_OFFSET(0x18F59DD0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_DUPLICATEADDRESSDETECTIONSTATE_OFFSET UNITYSDK_OFFSET(0x18F59DE0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_IPV4MASK_OFFSET UNITYSDK_OFFSET(0x18F59DF0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_ISDNSELIGIBLE_OFFSET UNITYSDK_OFFSET(0x18F59D90)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_ISTRANSIENT_OFFSET UNITYSDK_OFFSET(0x18F59DA0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_PREFIXORIGIN_OFFSET UNITYSDK_OFFSET(0x18F59E50)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_SUFFIXORIGIN_OFFSET UNITYSDK_OFFSET(0x18F59E60)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_PREFIXLENGTHTOSUBNETMASK_OFFSET UNITYSDK_OFFSET(0x18F59CE0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION__CTOR_OFFSET UNITYSDK_OFFSET(0x18F59C80)
+
+namespace System::Net::NetworkInformation
+{
+	inline static constexpr unsigned int Win32UnicastIPAddressInformation_TypeDefinitionIndex = 3833;
+
+	class Win32UnicastIPAddressInformation : public ::System::Net::NetworkInformation::UnicastIPAddressInformation
+	{
+	public:
+		::System::Net::IPAddress* ipv4Mask; // 0x10
+		::System::Net::NetworkInformation::Win32_IP_ADAPTER_UNICAST_ADDRESS info; // 0x18
+
+		::System::Void _ctor(::System::Net::NetworkInformation::Win32_IP_ADAPTER_UNICAST_ADDRESS info)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::NetworkInformation::Win32_IP_ADAPTER_UNICAST_ADDRESS))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION__CTOR_OFFSET))(this, info);
+		}
+
+		::System::Net::IPAddress* get_Address()
+		{
+			return ((::System::Net::IPAddress*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_ADDRESS_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsDnsEligible()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_ISDNSELIGIBLE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsTransient()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_ISTRANSIENT_OFFSET))(this);
+		}
+
+		::System::Int64 get_AddressPreferredLifetime()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_ADDRESSPREFERREDLIFETIME_OFFSET))(this);
+		}
+
+		::System::Int64 get_AddressValidLifetime()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_ADDRESSVALIDLIFETIME_OFFSET))(this);
+		}
+
+		::System::Int64 get_DhcpLeaseLifetime()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_DHCPLEASELIFETIME_OFFSET))(this);
+		}
+
+		::System::Net::NetworkInformation::DuplicateAddressDetectionState get_DuplicateAddressDetectionState()
+		{
+			return ((::System::Net::NetworkInformation::DuplicateAddressDetectionState(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_DUPLICATEADDRESSDETECTIONSTATE_OFFSET))(this);
+		}
+
+		::System::Net::IPAddress* get_IPv4Mask()
+		{
+			return ((::System::Net::IPAddress*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_IPV4MASK_OFFSET))(this);
+		}
+
+		::System::Net::NetworkInformation::PrefixOrigin get_PrefixOrigin()
+		{
+			return ((::System::Net::NetworkInformation::PrefixOrigin(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_PREFIXORIGIN_OFFSET))(this);
+		}
+
+		::System::Net::NetworkInformation::SuffixOrigin get_SuffixOrigin()
+		{
+			return ((::System::Net::NetworkInformation::SuffixOrigin(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_GET_SUFFIXORIGIN_OFFSET))(this);
+		}
+
+		static ::System::Net::IPAddress* PrefixLengthToSubnetMask(::System::Byte prefixLength, ::System::Net::Sockets::AddressFamily family)
+		{
+			return ((::System::Net::IPAddress*(*)(::System::Byte, ::System::Net::Sockets::AddressFamily))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32UNICASTIPADDRESSINFORMATION_PREFIXLENGTHTOSUBNETMASK_OFFSET))(prefixLength, family);
+		}
+	};
+}

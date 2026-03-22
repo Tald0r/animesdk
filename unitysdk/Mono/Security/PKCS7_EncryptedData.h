@@ -5,14 +5,21 @@
 namespace Mono::Security { class ASN1; }
 namespace Mono::Security { class PKCS7_ContentInfo; }
 
-#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GET_ENCRYPTEDCONTENT_OFFSET UNITYSDK_OFFSET(0x15A8ED20)
-#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GET_ENCRYPTIONALGORITHM_OFFSET UNITYSDK_OFFSET(0x15A8ED10)
-#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15A8E830)
-#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x15A8E820)
+#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GETASN1_OFFSET UNITYSDK_OFFSET(0x1AD56ED0)
+#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GETBYTES_OFFSET UNITYSDK_OFFSET(0x1AD56FF0)
+#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GET_ASN1_OFFSET UNITYSDK_OFFSET(0x1AD56EC0)
+#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GET_CONTENTINFO_OFFSET UNITYSDK_OFFSET(0x1AD56EE0)
+#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GET_ENCRYPTEDCONTENT_OFFSET UNITYSDK_OFFSET(0x1AD56F00)
+#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GET_ENCRYPTIONALGORITHM_OFFSET UNITYSDK_OFFSET(0x1AD56EF0)
+#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GET_VERSION_OFFSET UNITYSDK_OFFSET(0x1AD56FD0)
+#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA_SET_VERSION_OFFSET UNITYSDK_OFFSET(0x1AD56FE0)
+#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AD56AD0)
+#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1AD56B30)
+#define MONO_SECURITY_PKCS7_ENCRYPTEDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD56AC0)
 
 namespace Mono::Security
 {
-	inline static constexpr unsigned int PKCS7_EncryptedData_TypeDefinitionIndex = 2245;
+	inline static constexpr unsigned int PKCS7_EncryptedData_TypeDefinitionIndex = 2278;
 
 	class PKCS7_EncryptedData : public ::System::Object
 	{
@@ -27,9 +34,24 @@ namespace Mono::Security
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_PKCS7_ENCRYPTEDDATA__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _ctor_1(::Mono::Security::ASN1* asn1)
+		::System::Void _ctor_1(::Il2CppArray<::System::Byte>* data)
 		{
-			return ((::System::Void(*)(::PVOID, ::Mono::Security::ASN1*))((::PBYTE)hIl2Cpp + MONO_SECURITY_PKCS7_ENCRYPTEDDATA__CTOR_1_OFFSET))(this, asn1);
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + MONO_SECURITY_PKCS7_ENCRYPTEDDATA__CTOR_1_OFFSET))(this, data);
+		}
+
+		::System::Void _ctor_2(::Mono::Security::ASN1* asn1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Mono::Security::ASN1*))((::PBYTE)hIl2Cpp + MONO_SECURITY_PKCS7_ENCRYPTEDDATA__CTOR_2_OFFSET))(this, asn1);
+		}
+
+		::Mono::Security::ASN1* get_ASN1()
+		{
+			return ((::Mono::Security::ASN1*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GET_ASN1_OFFSET))(this);
+		}
+
+		::Mono::Security::PKCS7_ContentInfo* get_ContentInfo()
+		{
+			return ((::Mono::Security::PKCS7_ContentInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GET_CONTENTINFO_OFFSET))(this);
 		}
 
 		::Mono::Security::PKCS7_ContentInfo* get_EncryptionAlgorithm()
@@ -40,6 +62,26 @@ namespace Mono::Security
 		::Il2CppArray<::System::Byte>* get_EncryptedContent()
 		{
 			return ((::Il2CppArray<::System::Byte>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GET_ENCRYPTEDCONTENT_OFFSET))(this);
+		}
+
+		::System::Byte get_Version()
+		{
+			return ((::System::Byte(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GET_VERSION_OFFSET))(this);
+		}
+
+		::System::Void set_Version(::System::Byte value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Byte))((::PBYTE)hIl2Cpp + MONO_SECURITY_PKCS7_ENCRYPTEDDATA_SET_VERSION_OFFSET))(this, value);
+		}
+
+		::Mono::Security::ASN1* GetASN1()
+		{
+			return ((::Mono::Security::ASN1*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GETASN1_OFFSET))(this);
+		}
+
+		::Il2CppArray<::System::Byte>* GetBytes()
+		{
+			return ((::Il2CppArray<::System::Byte>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_PKCS7_ENCRYPTEDDATA_GETBYTES_OFFSET))(this);
 		}
 	};
 }

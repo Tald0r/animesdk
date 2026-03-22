@@ -1,55 +1,100 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Net/Sockets/AddressFamily.h"
+#include "unitysdk/System/Net/Sockets/SocketOptionLevel.h"
+#include "unitysdk/System/Net/Sockets/SocketOptionName.h"
 #include "unitysdk/System/Object.h"
 
 namespace System { class AsyncCallback; }
 namespace System { class IAsyncResult; }
 namespace System { class String; }
+namespace System::Net { class IPAddress; }
+namespace System::Net { class IPEndPoint; }
+namespace System::Net::Sockets { class LingerOption; }
 namespace System::Net::Sockets { class NetworkStream; }
 namespace System::Net::Sockets { class Socket; }
+namespace System::Threading::Tasks { class Task; }
 
-#define SYSTEM_NET_SOCKETS_TCPCLIENT_BEGINCONNECT_OFFSET UNITYSDK_OFFSET(0x17F032A0)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT_CLOSE_OFFSET UNITYSDK_OFFSET(0x17F03430)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x17F03450)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17F03470)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT_ENDCONNECT_OFFSET UNITYSDK_OFFSET(0x17F032C0)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT_FINALIZE_OFFSET UNITYSDK_OFFSET(0x17F036F0)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT_GETSTREAM_OFFSET UNITYSDK_OFFSET(0x17F032F0)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_CLIENT_OFFSET UNITYSDK_OFFSET(0x17F03260)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_CONNECTED_OFFSET UNITYSDK_OFFSET(0x17F03280)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x17F031F0)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT_SET_CLIENT_OFFSET UNITYSDK_OFFSET(0x17F03270)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F030D0)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17F03250)
-#define SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x17F03030)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_BEGINCONNECT_1_OFFSET UNITYSDK_OFFSET(0x1824BC00)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_BEGINCONNECT_2_OFFSET UNITYSDK_OFFSET(0x1824BC20)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_BEGINCONNECT_OFFSET UNITYSDK_OFFSET(0x1824BBE0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_CLOSE_OFFSET UNITYSDK_OFFSET(0x1824C1D0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECTASYNC_1_OFFSET UNITYSDK_OFFSET(0x1824BDD0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECTASYNC_2_OFFSET UNITYSDK_OFFSET(0x1824BF30)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECTASYNC_OFFSET UNITYSDK_OFFSET(0x1824BC70)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECT_1_OFFSET UNITYSDK_OFFSET(0x1824BA40)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECT_2_OFFSET UNITYSDK_OFFSET(0x1824B960)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECT_3_OFFSET UNITYSDK_OFFSET(0x1824BBB0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECT_OFFSET UNITYSDK_OFFSET(0x1824AD30)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x1824C1F0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1824C210)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_ENDCONNECT_OFFSET UNITYSDK_OFFSET(0x1824BC40)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_FINALIZE_OFFSET UNITYSDK_OFFSET(0x1824C470)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GETSTREAM_OFFSET UNITYSDK_OFFSET(0x1824C090)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_ACTIVE_OFFSET UNITYSDK_OFFSET(0x1824B7D0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_AVAILABLE_OFFSET UNITYSDK_OFFSET(0x1824B7F0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_CLIENT_OFFSET UNITYSDK_OFFSET(0x1824B7B0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_CONNECTED_OFFSET UNITYSDK_OFFSET(0x1824B810)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_EXCLUSIVEADDRESSUSE_OFFSET UNITYSDK_OFFSET(0x1824B830)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_LINGERSTATE_OFFSET UNITYSDK_OFFSET(0x1824C870)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_NODELAY_OFFSET UNITYSDK_OFFSET(0x1824C900)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_RECEIVEBUFFERSIZE_OFFSET UNITYSDK_OFFSET(0x1824C4E0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_RECEIVETIMEOUT_OFFSET UNITYSDK_OFFSET(0x1824C6F0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_SENDBUFFERSIZE_OFFSET UNITYSDK_OFFSET(0x1824C630)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_GET_SENDTIMEOUT_OFFSET UNITYSDK_OFFSET(0x1824C7B0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1824A9E0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_NUMERICOPTION_OFFSET UNITYSDK_OFFSET(0x1824C570)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_SET_ACTIVE_OFFSET UNITYSDK_OFFSET(0x1824B7E0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_SET_CLIENT_OFFSET UNITYSDK_OFFSET(0x1824B7C0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_SET_EXCLUSIVEADDRESSUSE_OFFSET UNITYSDK_OFFSET(0x1824B8D0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_SET_LINGERSTATE_OFFSET UNITYSDK_OFFSET(0x1824C8D0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_SET_NODELAY_OFFSET UNITYSDK_OFFSET(0x1824C9A0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_SET_RECEIVEBUFFERSIZE_OFFSET UNITYSDK_OFFSET(0x1824C600)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_SET_RECEIVETIMEOUT_OFFSET UNITYSDK_OFFSET(0x1824C780)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_SET_SENDBUFFERSIZE_OFFSET UNITYSDK_OFFSET(0x1824C6C0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT_SET_SENDTIMEOUT_OFFSET UNITYSDK_OFFSET(0x1824C840)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1824AA30)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1824AAA0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1824ABA0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_4_OFFSET UNITYSDK_OFFSET(0x1824B7A0)
+#define SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1824A910)
 
 namespace System::Net::Sockets
 {
-	inline static constexpr unsigned int TcpClient_TypeDefinitionIndex = 2893;
+	inline static constexpr unsigned int TcpClient_TypeDefinitionIndex = 3673;
 
 	class TcpClient : public ::System::Object
 	{
 	public:
-		::System::Net::Sockets::Socket* m_ClientSocket; // 0x10
-		::System::Net::Sockets::NetworkStream* m_DataStream; // 0x18
+		::System::Net::Sockets::NetworkStream* m_DataStream; // 0x10
+		::System::Net::Sockets::Socket* m_ClientSocket; // 0x18
 		::System::Net::Sockets::AddressFamily m_Family; // 0x20
-		::System::Boolean m_Active; // 0x24
-		::System::Boolean m_CleanedUp; // 0x25
+		::System::Boolean m_CleanedUp; // 0x24
+		::System::Boolean m_Active; // 0x25
 
-		::System::Void _ctor()
+		::System::Void _ctor(::System::Net::IPEndPoint* localEP)
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Net::IPEndPoint*))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_OFFSET))(this, localEP);
 		}
 
-		::System::Void _ctor_1(::System::Net::Sockets::AddressFamily family)
+		::System::Void _ctor_1()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Net::Sockets::AddressFamily))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_1_OFFSET))(this, family);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_1_OFFSET))(this);
 		}
 
-		::System::Void _ctor_2(::System::Net::Sockets::Socket* acceptedSocket)
+		::System::Void _ctor_2(::System::Net::Sockets::AddressFamily family)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Net::Sockets::Socket*))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_2_OFFSET))(this, acceptedSocket);
+			return ((::System::Void(*)(::PVOID, ::System::Net::Sockets::AddressFamily))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_2_OFFSET))(this, family);
+		}
+
+		::System::Void _ctor_3(::System::String* hostname, ::System::Int32 port)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_3_OFFSET))(this, hostname, port);
+		}
+
+		::System::Void _ctor_4(::System::Net::Sockets::Socket* acceptedSocket)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::Sockets::Socket*))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT__CTOR_4_OFFSET))(this, acceptedSocket);
 		}
 
 		::System::Net::Sockets::Socket* get_Client()
@@ -62,9 +107,54 @@ namespace System::Net::Sockets
 			return ((::System::Void(*)(::PVOID, ::System::Net::Sockets::Socket*))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_SET_CLIENT_OFFSET))(this, value);
 		}
 
+		::System::Boolean get_Active()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_GET_ACTIVE_OFFSET))(this);
+		}
+
+		::System::Void set_Active(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_SET_ACTIVE_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_Available()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_GET_AVAILABLE_OFFSET))(this);
+		}
+
 		::System::Boolean get_Connected()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_GET_CONNECTED_OFFSET))(this);
+		}
+
+		::System::Boolean get_ExclusiveAddressUse()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_GET_EXCLUSIVEADDRESSUSE_OFFSET))(this);
+		}
+
+		::System::Void set_ExclusiveAddressUse(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_SET_EXCLUSIVEADDRESSUSE_OFFSET))(this, value);
+		}
+
+		::System::Void Connect(::System::String* hostname, ::System::Int32 port)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECT_OFFSET))(this, hostname, port);
+		}
+
+		::System::Void Connect_1(::System::Net::IPAddress* address, ::System::Int32 port)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::IPAddress*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECT_1_OFFSET))(this, address, port);
+		}
+
+		::System::Void Connect_2(::System::Net::IPEndPoint* remoteEP)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::IPEndPoint*))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECT_2_OFFSET))(this, remoteEP);
+		}
+
+		::System::Void Connect_3(::Il2CppArray<::System::Net::IPAddress*>* ipAddresses, ::System::Int32 port)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Net::IPAddress*>*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECT_3_OFFSET))(this, ipAddresses, port);
 		}
 
 		::System::IAsyncResult* BeginConnect(::System::String* host, ::System::Int32 port, ::System::AsyncCallback* requestCallback, ::System::Object* state)
@@ -72,9 +162,34 @@ namespace System::Net::Sockets
 			return ((::System::IAsyncResult*(*)(::PVOID, ::System::String*, ::System::Int32, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_BEGINCONNECT_OFFSET))(this, host, port, requestCallback, state);
 		}
 
+		::System::IAsyncResult* BeginConnect_1(::System::Net::IPAddress* address, ::System::Int32 port, ::System::AsyncCallback* requestCallback, ::System::Object* state)
+		{
+			return ((::System::IAsyncResult*(*)(::PVOID, ::System::Net::IPAddress*, ::System::Int32, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_BEGINCONNECT_1_OFFSET))(this, address, port, requestCallback, state);
+		}
+
+		::System::IAsyncResult* BeginConnect_2(::Il2CppArray<::System::Net::IPAddress*>* addresses, ::System::Int32 port, ::System::AsyncCallback* requestCallback, ::System::Object* state)
+		{
+			return ((::System::IAsyncResult*(*)(::PVOID, ::Il2CppArray<::System::Net::IPAddress*>*, ::System::Int32, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_BEGINCONNECT_2_OFFSET))(this, addresses, port, requestCallback, state);
+		}
+
 		::System::Void EndConnect(::System::IAsyncResult* asyncResult)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::IAsyncResult*))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_ENDCONNECT_OFFSET))(this, asyncResult);
+		}
+
+		::System::Threading::Tasks::Task* ConnectAsync(::System::Net::IPAddress* address, ::System::Int32 port)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::Net::IPAddress*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECTASYNC_OFFSET))(this, address, port);
+		}
+
+		::System::Threading::Tasks::Task* ConnectAsync_1(::System::String* host, ::System::Int32 port)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECTASYNC_1_OFFSET))(this, host, port);
+		}
+
+		::System::Threading::Tasks::Task* ConnectAsync_2(::Il2CppArray<::System::Net::IPAddress*>* addresses, ::System::Int32 port)
+		{
+			return ((::System::Threading::Tasks::Task*(*)(::PVOID, ::Il2CppArray<::System::Net::IPAddress*>*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_CONNECTASYNC_2_OFFSET))(this, addresses, port);
 		}
 
 		::System::Net::Sockets::NetworkStream* GetStream()
@@ -102,9 +217,74 @@ namespace System::Net::Sockets
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_FINALIZE_OFFSET))(this);
 		}
 
+		::System::Int32 get_ReceiveBufferSize()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_GET_RECEIVEBUFFERSIZE_OFFSET))(this);
+		}
+
+		::System::Void set_ReceiveBufferSize(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_SET_RECEIVEBUFFERSIZE_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_SendBufferSize()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_GET_SENDBUFFERSIZE_OFFSET))(this);
+		}
+
+		::System::Void set_SendBufferSize(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_SET_SENDBUFFERSIZE_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_ReceiveTimeout()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_GET_RECEIVETIMEOUT_OFFSET))(this);
+		}
+
+		::System::Void set_ReceiveTimeout(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_SET_RECEIVETIMEOUT_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_SendTimeout()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_GET_SENDTIMEOUT_OFFSET))(this);
+		}
+
+		::System::Void set_SendTimeout(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_SET_SENDTIMEOUT_OFFSET))(this, value);
+		}
+
+		::System::Net::Sockets::LingerOption* get_LingerState()
+		{
+			return ((::System::Net::Sockets::LingerOption*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_GET_LINGERSTATE_OFFSET))(this);
+		}
+
+		::System::Void set_LingerState(::System::Net::Sockets::LingerOption* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::Sockets::LingerOption*))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_SET_LINGERSTATE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_NoDelay()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_GET_NODELAY_OFFSET))(this);
+		}
+
+		::System::Void set_NoDelay(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_SET_NODELAY_OFFSET))(this, value);
+		}
+
 		::System::Void initialize()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_INITIALIZE_OFFSET))(this);
+		}
+
+		::System::Int32 numericOption(::System::Net::Sockets::SocketOptionLevel optionLevel, ::System::Net::Sockets::SocketOptionName optionName)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Net::Sockets::SocketOptionLevel, ::System::Net::Sockets::SocketOptionName))((::PBYTE)hIl2Cpp + SYSTEM_NET_SOCKETS_TCPCLIENT_NUMERICOPTION_OFFSET))(this, optionLevel, optionName);
 		}
 	};
 }

@@ -5,26 +5,28 @@
 namespace System { class String; }
 namespace System::Text::RegularExpressions { class CaptureCollection; }
 
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP_GET_CAPTURES_OFFSET UNITYSDK_OFFSET(0x17F27730)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP_GET_SUCCESS_OFFSET UNITYSDK_OFFSET(0x17F27720)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP__CCTOR_OFFSET UNITYSDK_OFFSET(0x17F27790)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F27810)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x17F27690)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP_GET_CAPTURES_OFFSET UNITYSDK_OFFSET(0x18F66700)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP_GET_NAME_OFFSET UNITYSDK_OFFSET(0x18F666F0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP_GET_SUCCESS_OFFSET UNITYSDK_OFFSET(0x18F666E0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP_SYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x18F66760)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP__CCTOR_OFFSET UNITYSDK_OFFSET(0x18F66830)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18F668B0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x18F66650)
 
 namespace System::Text::RegularExpressions
 {
-	inline static constexpr unsigned int Group_TypeDefinitionIndex = 2497;
+	inline static constexpr unsigned int Group_TypeDefinitionIndex = 2736;
 
 	class Group : public ::System::Text::RegularExpressions::Capture
 	{
 	public:
 		static ::System::Text::RegularExpressions::Group** StaticGet__emptygroup()
 		{
-			return (::System::Text::RegularExpressions::Group**)Il2CppClass::FromTypeDefinitionIndex(Group_TypeDefinitionIndex)->GetStaticField(0x155B0);
+			return (::System::Text::RegularExpressions::Group**)Il2CppClass::FromTypeDefinitionIndex(Group_TypeDefinitionIndex)->GetStaticField(0x3550);
 		}
-		::System::String* _name; // 0x20
-		::System::Text::RegularExpressions::CaptureCollection* _capcoll; // 0x28
-		::Il2CppArray<::System::Int32>* _caps; // 0x30
+		::System::Text::RegularExpressions::CaptureCollection* _capcoll; // 0x20
+		::Il2CppArray<::System::Int32>* _caps; // 0x28
+		::System::String* _name; // 0x30
 		::System::Int32 _capcount; // 0x38
 
 		::System::Void _ctor(::System::String* text, ::Il2CppArray<::System::Int32>* caps, ::System::Int32 capcount, ::System::String* name)
@@ -47,9 +49,19 @@ namespace System::Text::RegularExpressions
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP_GET_SUCCESS_OFFSET))(this);
 		}
 
+		::System::String* get_Name()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP_GET_NAME_OFFSET))(this);
+		}
+
 		::System::Text::RegularExpressions::CaptureCollection* get_Captures()
 		{
 			return ((::System::Text::RegularExpressions::CaptureCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP_GET_CAPTURES_OFFSET))(this);
+		}
+
+		static ::System::Text::RegularExpressions::Group* Synchronized(::System::Text::RegularExpressions::Group* inner)
+		{
+			return ((::System::Text::RegularExpressions::Group*(*)(::System::Text::RegularExpressions::Group*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_GROUP_SYNCHRONIZED_OFFSET))(inner);
 		}
 	};
 }

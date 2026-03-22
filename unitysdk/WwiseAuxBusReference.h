@@ -3,10 +3,10 @@
 #include "unitysdk/WwiseObjectReference.h"
 #include "unitysdk/WwiseObjectType.h"
 
-#define WWISEAUXBUSREFERENCE_GET_WWISEOBJECTTYPE_OFFSET UNITYSDK_OFFSET(0x1843D160)
-#define WWISEAUXBUSREFERENCE__CTOR_OFFSET UNITYSDK_OFFSET(0x1843D170)
+#define WWISEAUXBUSREFERENCE_GET_WWISEOBJECTTYPE_OFFSET UNITYSDK_OFFSET(0x1B113EB0)
+#define WWISEAUXBUSREFERENCE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B113EC0)
 
-inline static constexpr unsigned int WwiseAuxBusReference_TypeDefinitionIndex = 33629;
+inline static constexpr unsigned int WwiseAuxBusReference_TypeDefinitionIndex = 30073;
 
 class WwiseAuxBusReference : public ::WwiseObjectReference
 {

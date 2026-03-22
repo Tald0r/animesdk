@@ -1,6 +1,5 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RootMotion/FinalIK/GrounderIKThreadSolver_Limb.h"
 #include "unitysdk/RootMotion/FinalIK/IKSolverLimb_AxisDirection.h"
 #include "unitysdk/RootMotion/FinalIK/IKSolverLimb_BendModifier.h"
 #include "unitysdk/RootMotion/FinalIK/IKSolverTrigonometric.h"
@@ -10,22 +9,20 @@
 
 namespace UnityEngine { class Transform; }
 
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB_COPYFROM_OFFSET UNITYSDK_OFFSET(0x82A6C60)
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB_COPYTO_OFFSET UNITYSDK_OFFSET(0x82A6880)
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB_GETMODIFIEDBENDNORMAL_OFFSET UNITYSDK_OFFSET(0x82A7880)
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB_GET_AXISDIRECTIONS_OFFSET UNITYSDK_OFFSET(0x82A8C50)
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB_MAINTAINBEND_OFFSET UNITYSDK_OFFSET(0x82A5ED0)
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB_MAINTAINROTATION_OFFSET UNITYSDK_OFFSET(0x82A5E70)
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB_ONINITIATEVIRTUAL_OFFSET UNITYSDK_OFFSET(0x82A6CF0)
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB_ONPOSTSOLVEVIRTUAL_OFFSET UNITYSDK_OFFSET(0x82A8770)
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB_ONUPDATEVIRTUAL_OFFSET UNITYSDK_OFFSET(0x82A7750)
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB_STOREAXISDIRECTIONS_OFFSET UNITYSDK_OFFSET(0x82A75A0)
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB__CTOR_1_OFFSET UNITYSDK_OFFSET(0x82A8AE0)
-#define ROOTMOTION_FINALIK_IKSOLVERLIMB__CTOR_OFFSET UNITYSDK_OFFSET(0x82A8850)
+#define ROOTMOTION_FINALIK_IKSOLVERLIMB_GETMODIFIEDBENDNORMAL_OFFSET UNITYSDK_OFFSET(0x1AA5ACF0)
+#define ROOTMOTION_FINALIK_IKSOLVERLIMB_GET_AXISDIRECTIONS_OFFSET UNITYSDK_OFFSET(0x1AA5BF20)
+#define ROOTMOTION_FINALIK_IKSOLVERLIMB_MAINTAINBEND_OFFSET UNITYSDK_OFFSET(0x1AA5A460)
+#define ROOTMOTION_FINALIK_IKSOLVERLIMB_MAINTAINROTATION_OFFSET UNITYSDK_OFFSET(0x1AA5A400)
+#define ROOTMOTION_FINALIK_IKSOLVERLIMB_ONINITIATEVIRTUAL_OFFSET UNITYSDK_OFFSET(0x1AA5A4B0)
+#define ROOTMOTION_FINALIK_IKSOLVERLIMB_ONPOSTSOLVEVIRTUAL_OFFSET UNITYSDK_OFFSET(0x1AA5BD50)
+#define ROOTMOTION_FINALIK_IKSOLVERLIMB_ONUPDATEVIRTUAL_OFFSET UNITYSDK_OFFSET(0x1AA5ABC0)
+#define ROOTMOTION_FINALIK_IKSOLVERLIMB_STOREAXISDIRECTIONS_OFFSET UNITYSDK_OFFSET(0x1AA5AA10)
+#define ROOTMOTION_FINALIK_IKSOLVERLIMB__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AA5BEA0)
+#define ROOTMOTION_FINALIK_IKSOLVERLIMB__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA5BE30)
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int IKSolverLimb_TypeDefinitionIndex = 34275;
+	inline static constexpr unsigned int IKSolverLimb_TypeDefinitionIndex = 35081;
 
 	class IKSolverLimb : public ::RootMotion::FinalIK::IKSolverTrigonometric
 	{
@@ -35,9 +32,8 @@ namespace RootMotion::FinalIK
 		::System::Single maintainRotationWeight; // 0xB8
 		::System::Single bendModifierWeight; // 0xBC
 		::UnityEngine::Transform* bendGoal; // 0xC0
-		::System::Boolean useBendGoalForInitialBend; // 0xC8
-		::System::Boolean maintainBendFor1Frame; // 0xC9
-		::System::Boolean maintainRotationFor1Frame; // 0xCA
+		::System::Boolean maintainBendFor1Frame; // 0xC8
+		::System::Boolean maintainRotationFor1Frame; // 0xC9
 		::UnityEngine::Quaternion defaultRootRotation; // 0xCC
 		::UnityEngine::Quaternion parentDefaultRotation; // 0xDC
 		::UnityEngine::Quaternion bone3RotationBeforeSolve; // 0xEC
@@ -66,16 +62,6 @@ namespace RootMotion::FinalIK
 		::System::Void MaintainBend()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKSOLVERLIMB_MAINTAINBEND_OFFSET))(this);
-		}
-
-		::System::Void CopyTo(::RootMotion::FinalIK::GrounderIKThreadSolver_Limb& data)
-		{
-			return ((::System::Void(*)(::PVOID, ::RootMotion::FinalIK::GrounderIKThreadSolver_Limb&))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKSOLVERLIMB_COPYTO_OFFSET))(this, data);
-		}
-
-		::System::Void CopyFrom(::RootMotion::FinalIK::GrounderIKThreadSolver_Limb& data)
-		{
-			return ((::System::Void(*)(::PVOID, ::RootMotion::FinalIK::GrounderIKThreadSolver_Limb&))((::PBYTE)hIl2Cpp + ROOTMOTION_FINALIK_IKSOLVERLIMB_COPYFROM_OFFSET))(this, data);
 		}
 
 		::System::Void OnInitiateVirtual()

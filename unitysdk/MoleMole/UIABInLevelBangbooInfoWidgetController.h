@@ -1,0 +1,192 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_2_208CC9941471731A_766;
+class Class_2_3B0F8CEEFA465A87;
+class Class_2_79F6D62CE30E3F8E_130;
+class Class_2_79F6D62CE30E3F8E_130_Class_2_0D5D8405826EE6F8_20;
+class Class_2_B994F46AE011E30F;
+namespace MoleMole { class UIBangBooAutoBattleInLevelPageController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Material; }
+template <typename T> class Class_2_0D31A1661D004892;
+
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_BINDFAKE_OFFSET UNITYSDK_OFFSET(0xBD71460)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_BINDVIEW_OFFSET UNITYSDK_OFFSET(0xBD70710)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_CLONEMATERIALS_OFFSET UNITYSDK_OFFSET(0xBD6FF90)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_DISPOSEMATERIALS_OFFSET UNITYSDK_OFFSET(0xBD70660)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_GET_BINDEDSLOT_OFFSET UNITYSDK_OFFSET(0xBD70700)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBD703A0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xBD70440)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBD704B0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBD6FDA0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBD702F0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_OPENFAKECAMP_OFFSET UNITYSDK_OFFSET(0xBD70CE0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_REFRESHPROPERTY_1_OFFSET UNITYSDK_OFFSET(0xBD71BE0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_REFRESHPROPERTY_OFFSET UNITYSDK_OFFSET(0xBD70ED0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_TOGGLEATTRIBUTE_OFFSET UNITYSDK_OFFSET(0xBD70DA0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__BINDVIEW_B__17_0_OFFSET UNITYSDK_OFFSET(0xBD722C0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__BINDVIEW_B__17_1_OFFSET UNITYSDK_OFFSET(0xBD729C0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__BINDVIEW_B__17_2_OFFSET UNITYSDK_OFFSET(0xBD73140)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__BINDVIEW_B__17_3_OFFSET UNITYSDK_OFFSET(0xBD732F0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xBD72280)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBD721D0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBD73430)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xBD734A0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBD734B0)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBD73530)
+#define MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBD73590)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIABInLevelBangbooInfoWidgetController_TypeDefinitionIndex = 53864;
+
+	class UIABInLevelBangbooInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		static ::System::Int32* StaticGet_PercentShaderParamID()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIABInLevelBangbooInfoWidgetController_TypeDefinitionIndex)->GetStaticField(0xE700);
+		}
+		::Class_2_79F6D62CE30E3F8E_130* _view; // 0x2A0
+		::Class_1_48D56DACBE4271BC* _syncHelper; // 0x2A8
+		::Class_1_48D56DACBE4271BC* _syncHelper_HP; // 0x2B0
+		::Class_1_48D56DACBE4271BC* _syncHelper_MP; // 0x2B8
+		::Class_2_3B0F8CEEFA465A87* _slotData; // 0x2C0
+		::MoleMole::UIBangBooAutoBattleInLevelPageController* _parent; // 0x2C8
+		::UnityEngine::Material* _hpFillMaterial; // 0x2D0
+		::UnityEngine::Material* _mpFillMaterial; // 0x2D8
+		::System::Collections::Generic::List_1<::Class_2_0D31A1661D004892<::Class_2_79F6D62CE30E3F8E_130_Class_2_0D5D8405826EE6F8_20*>*>* _attributeWidgetList; // 0x2E0
+		::System::Int32 fakeCfgID; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::Class_2_3B0F8CEEFA465A87* get_BindedSlot()
+		{
+			return ((::Class_2_3B0F8CEEFA465A87*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_GET_BINDEDSLOT_OFFSET))(this);
+		}
+
+		::System::Void BindView(::Class_2_3B0F8CEEFA465A87* slotDataDefine)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_3B0F8CEEFA465A87*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_BINDVIEW_OFFSET))(this, slotDataDefine);
+		}
+
+		::System::Void OpenFakeCamp(::System::Int32 cfgID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_OPENFAKECAMP_OFFSET))(this, cfgID);
+		}
+
+		::System::Void ToggleAttribute()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_TOGGLEATTRIBUTE_OFFSET))(this);
+		}
+
+		::System::Void CloneMaterials()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_CLONEMATERIALS_OFFSET))(this);
+		}
+
+		::System::Void DisposeMaterials()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_DISPOSEMATERIALS_OFFSET))(this);
+		}
+
+		::System::Void RefreshProperty(::Class_2_B994F46AE011E30F* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_B994F46AE011E30F*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_REFRESHPROPERTY_OFFSET))(this, data);
+		}
+
+		::System::Void BindFake(::System::Int32 cfgID, ::Class_2_208CC9941471731A_766* suggsetCfg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::Class_2_208CC9941471731A_766*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_BINDFAKE_OFFSET))(this, cfgID, suggsetCfg);
+		}
+
+		::System::Void RefreshProperty_1(::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::Int32>* propertyDic)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER_REFRESHPROPERTY_1_OFFSET))(this, propertyDic);
+		}
+
+		::System::Void _BindView_b__17_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__BINDVIEW_B__17_0_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__17_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__BINDVIEW_B__17_1_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__17_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__BINDVIEW_B__17_2_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__17_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER__BINDVIEW_B__17_3_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELBANGBOOINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

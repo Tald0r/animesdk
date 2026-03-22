@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int CullingOptions_TypeDefinitionIndex = 4528;
+	inline static constexpr unsigned int CullingOptions_TypeDefinitionIndex = 6202;
 
 	enum class CullingOptions : ::System::Int32
 	{
@@ -15,6 +15,9 @@ namespace UnityEngine::Rendering
 		Stereo = 16,
 		DisablePerObjectCulling = 32,
 		ShadowCasters = 64,
-		HizOcclusionCull = 128,
+		NoSceneCullingEvent = 128,
+		NoShadowCullingEvent = 256,
+		HizLightCull = 512,
+		IsNapDrawSetCulling = 1024,
 	};
 }

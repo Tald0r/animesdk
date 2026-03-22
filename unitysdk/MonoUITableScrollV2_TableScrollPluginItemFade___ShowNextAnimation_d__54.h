@@ -1,0 +1,57 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class MonoUITableScrollV2_TableScrollPluginItemFade;
+
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x685A020)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_SINGLE__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x685A370)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x685A3D0)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x685A380)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x685A010)
+#define MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54__CTOR_OFFSET UNITYSDK_OFFSET(0x685A000)
+
+inline static constexpr unsigned int MonoUITableScrollV2_TableScrollPluginItemFade___ShowNextAnimation_d__54_TypeDefinitionIndex = 43842;
+
+class MonoUITableScrollV2_TableScrollPluginItemFade___ShowNextAnimation_d__54 : public ::System::Object
+{
+public:
+	::MonoUITableScrollV2_TableScrollPluginItemFade* __4__this; // 0x10
+	::System::Single _size_5__4; // 0x18
+	::System::Boolean _needScrollToEnd_5__2; // 0x1C
+	::System::Int32 dataCount; // 0x20
+	::System::Single __2__current; // 0x24
+	::System::Single _d_5__5; // 0x28
+	::System::Single _dis_5__3; // 0x2C
+	::System::Int32 __1__state; // 0x30
+
+	::System::Void _ctor(::System::Int32 __1__state)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54__CTOR_OFFSET))(this, __1__state);
+	}
+
+	::System::Void System_IDisposable_Dispose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET))(this);
+	}
+
+	::System::Boolean MoveNext()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54_MOVENEXT_OFFSET))(this);
+	}
+
+	::System::Single System_Collections_Generic_IEnumerator_System_Single__get_Current()
+	{
+		return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_SINGLE__GET_CURRENT_OFFSET))(this);
+	}
+
+	::System::Void System_Collections_IEnumerator_Reset()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET))(this);
+	}
+
+	::System::Object* System_Collections_IEnumerator_get_Current()
+	{
+		return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOUITABLESCROLLV2_TABLESCROLLPLUGINITEMFADE___SHOWNEXTANIMATION_D__54_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET))(this);
+	}
+};

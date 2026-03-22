@@ -10,251 +10,239 @@ namespace System::Reflection { class RuntimeAssembly; }
 namespace System::Reflection { class RuntimeModule; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_RUNTIMETYPEHANDLE_CANCASTTO_OFFSET UNITYSDK_OFFSET(0x15D49B40)
-#define SYSTEM_RUNTIMETYPEHANDLE_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x149B4C0)
-#define SYSTEM_RUNTIMETYPEHANDLE_EQUALS_OFFSET UNITYSDK_OFFSET(0x200C750)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETARRAYRANK_OFFSET UNITYSDK_OFFSET(0x15D4A360)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETASSEMBLY_OFFSET UNITYSDK_OFFSET(0x15D49770)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x15D49DF0)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETBASETYPE_OFFSET UNITYSDK_OFFSET(0x15D49D80)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETELEMENTTYPE_OFFSET UNITYSDK_OFFSET(0x15D4A3F0)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETGENERICPARAMETERINFO_OFFSET UNITYSDK_OFFSET(0x15D4F1E0)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETGENERICTYPEDEFINITION_IMPL_OFFSET UNITYSDK_OFFSET(0x15D501B0)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETGENERICTYPEDEFINITION_OFFSET UNITYSDK_OFFSET(0x15D4B680)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x59D0)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETMETADATATOKEN_OFFSET UNITYSDK_OFFSET(0x15D50190)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETMODULE_OFFSET UNITYSDK_OFFSET(0x15D496F0)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x200C740)
-#define SYSTEM_RUNTIMETYPEHANDLE_GETTOKEN_OFFSET UNITYSDK_OFFSET(0x15D4D320)
-#define SYSTEM_RUNTIMETYPEHANDLE_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x5580)
-#define SYSTEM_RUNTIMETYPEHANDLE_HASELEMENTTYPE_OFFSET UNITYSDK_OFFSET(0x15D4A1A0)
-#define SYSTEM_RUNTIMETYPEHANDLE_HASINSTANTIATION_OFFSET UNITYSDK_OFFSET(0x15D4B6D0)
-#define SYSTEM_RUNTIMETYPEHANDLE_HASPROXYATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x15D4A020)
-#define SYSTEM_RUNTIMETYPEHANDLE_HASREFERENCES_OFFSET UNITYSDK_OFFSET(0x15D50210)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISARRAY_OFFSET UNITYSDK_OFFSET(0x15D4A2D0)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISBYREF_OFFSET UNITYSDK_OFFSET(0x15D49EE0)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISCOMOBJECT_1_OFFSET UNITYSDK_OFFSET(0x15D49FC0)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISCOMOBJECT_OFFSET UNITYSDK_OFFSET(0x15D50200)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISCONTEXTFUL_OFFSET UNITYSDK_OFFSET(0x15D49E70)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISEQUIVALENTTO_OFFSET UNITYSDK_OFFSET(0x15D49C00)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISGENERICTYPEDEFINITION_OFFSET UNITYSDK_OFFSET(0x15D4B3D0)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISGENERICVARIABLE_OFFSET UNITYSDK_OFFSET(0x15D49C10)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISINSTANCEOFTYPE_OFFSET UNITYSDK_OFFSET(0x15D49830)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISINTERFACE_OFFSET UNITYSDK_OFFSET(0x15D50230)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISPOINTER_OFFSET UNITYSDK_OFFSET(0x15D49F90)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISPRIMITIVE_OFFSET UNITYSDK_OFFSET(0x15D49F30)
-#define SYSTEM_RUNTIMETYPEHANDLE_ISSZARRAY_OFFSET UNITYSDK_OFFSET(0x15D4A220)
-#define SYSTEM_RUNTIMETYPEHANDLE_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x15D50170)
-#define SYSTEM_RUNTIMETYPEHANDLE_TYPE_IS_ASSIGNABLE_FROM_OFFSET UNITYSDK_OFFSET(0x15D50260)
-#define SYSTEM_RUNTIMETYPEHANDLE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x200C710)
-#define SYSTEM_RUNTIMETYPEHANDLE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x200C730)
-#define SYSTEM_RUNTIMETYPEHANDLE__CTOR_OFFSET UNITYSDK_OFFSET(0xBDC0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_02E7E41DEA045AD5_OFFSET UNITYSDK_OFFSET(0x1966B050)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_0AD29C4635C13851_OFFSET UNITYSDK_OFFSET(0x1966B220)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_1FC0B2F39686D047_OFFSET UNITYSDK_OFFSET(0x1966B020)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_265ECFC30C5B0EEF_OFFSET UNITYSDK_OFFSET(0x1966AC00)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_33D58E766C7B00FE_1_OFFSET UNITYSDK_OFFSET(0x1966AEE0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_33D58E766C7B00FE_OFFSET UNITYSDK_OFFSET(0x1966AD00)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_3ADD64610AC194BA_1_OFFSET UNITYSDK_OFFSET(0x1966AD70)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_3ADD64610AC194BA_2_OFFSET UNITYSDK_OFFSET(0x1966AE30)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_3ADD64610AC194BA_3_OFFSET UNITYSDK_OFFSET(0x1966AD80)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_3ADD64610AC194BA_4_OFFSET UNITYSDK_OFFSET(0x1966AEB0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_3ADD64610AC194BA_OFFSET UNITYSDK_OFFSET(0x1966AD50)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_410B44FC09D73F6A_OFFSET UNITYSDK_OFFSET(0x1966AF40)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_41F560F5C23DB7E4_OFFSET UNITYSDK_OFFSET(0x1966AED0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_4B5CBFE43FBBA4A9_OFFSET UNITYSDK_OFFSET(0x387830)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_4D4E7EACA5CCCAAF_1_OFFSET UNITYSDK_OFFSET(0x1966ACB0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_4D4E7EACA5CCCAAF_OFFSET UNITYSDK_OFFSET(0x1966AC60)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_4EAC41C8407E0F15_OFFSET UNITYSDK_OFFSET(0x1966AE40)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_5331BA00549B687E_OFFSET UNITYSDK_OFFSET(0x8A1970)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_56B42DCB4C2CE4F6_OFFSET UNITYSDK_OFFSET(0x8A1950)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_59FD75ABB3EBD456_OFFSET UNITYSDK_OFFSET(0x1966B130)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_643F02B697786BA6_OFFSET UNITYSDK_OFFSET(0x1966B190)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_67F6AE7F9001053A_OFFSET UNITYSDK_OFFSET(0x8A1990)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_713FB278BE4F23BF_OFFSET UNITYSDK_OFFSET(0x1966B0F0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_7289B051E4D48AE8_OFFSET UNITYSDK_OFFSET(0x1966ADF0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_8D3CAA3E8561FA03_1_OFFSET UNITYSDK_OFFSET(0x1966B0C0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_8D3CAA3E8561FA03_2_OFFSET UNITYSDK_OFFSET(0x1966B1F0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_8D3CAA3E8561FA03_OFFSET UNITYSDK_OFFSET(0x1966AFD0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_92CF7E0F59557848_OFFSET UNITYSDK_OFFSET(0x21C7C0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_9BB2E1286B8738B0_1_OFFSET UNITYSDK_OFFSET(0x1966AC40)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_9BB2E1286B8738B0_2_OFFSET UNITYSDK_OFFSET(0x1966B000)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_9BB2E1286B8738B0_OFFSET UNITYSDK_OFFSET(0x1966AC20)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_B1A5F67F55C20F2A_OFFSET UNITYSDK_OFFSET(0x2C3980)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_B79F4C754405332D_OFFSET UNITYSDK_OFFSET(0x1966ADA0)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_BA96C7EB570C3B63_OFFSET UNITYSDK_OFFSET(0x19663840)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_C34B2CBA679A9D4C_OFFSET UNITYSDK_OFFSET(0x1966AE70)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_C74CF020AA42ED85_OFFSET UNITYSDK_OFFSET(0x2C3E30)
+#define SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_ED09B2FB0A09B0BE_OFFSET UNITYSDK_OFFSET(0x8A1980)
 
 namespace System
 {
-	inline static constexpr unsigned int RuntimeTypeHandle_TypeDefinitionIndex = 422;
+	inline static constexpr unsigned int RuntimeTypeHandle_TypeDefinitionIndex = 409;
 
 	struct alignas(8) RuntimeTypeHandle
 	{
 		::System::IntPtr value; // 0x10
 
-		::System::Void _ctor(::System::IntPtr val)
+		::System::Void Method_2_B1A5F67F55C20F2A(::System::IntPtr val)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE__CTOR_OFFSET))(this, val);
+			return ((::System::Void(*)(::PVOID, ::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_B1A5F67F55C20F2A_OFFSET))(this, val);
 		}
 
-		::System::Void _ctor_1(::System::RuntimeType* type)
+		::System::Void Method_2_56B42DCB4C2CE4F6(::System::RuntimeType* type)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE__CTOR_1_OFFSET))(this, type);
-		}
-
-		/*
-		::System::Void _ctor_2(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE__CTOR_2_OFFSET))(this, info, context);
-		}
-		*/
-
-		::System::IntPtr get_Value()
-		{
-			return ((::System::IntPtr(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GET_VALUE_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_56B42DCB4C2CE4F6_OFFSET))(this, type);
 		}
 
 		/*
-		::System::Void GetObjectData(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::Void Method_2_5331BA00549B687E(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETOBJECTDATA_OFFSET))(this, info, context);
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_5331BA00549B687E_OFFSET))(this, info, context);
 		}
 		*/
 
-		::System::Boolean Equals(::System::Object* obj)
+		::System::IntPtr Method_2_92CF7E0F59557848()
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_EQUALS_OFFSET))(this, obj);
+			return ((::System::IntPtr(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_92CF7E0F59557848_OFFSET))(this);
 		}
 
-		::System::Boolean Equals_1(::System::RuntimeTypeHandle handle)
+		/*
+		::System::Void Method_2_ED09B2FB0A09B0BE(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::RuntimeTypeHandle))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_EQUALS_1_OFFSET))(this, handle);
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_ED09B2FB0A09B0BE_OFFSET))(this, info, context);
+		}
+		*/
+
+		::System::Boolean Method_2_67F6AE7F9001053A(::System::Object* obj)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_67F6AE7F9001053A_OFFSET))(this, obj);
 		}
 
-		::System::Int32 GetHashCode()
+		::System::Boolean Method_2_4B5CBFE43FBBA4A9(::System::RuntimeTypeHandle handle)
 		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETHASHCODE_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID, ::System::RuntimeTypeHandle))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_4B5CBFE43FBBA4A9_OFFSET))(this, handle);
 		}
 
-		static ::System::Boolean op_Equality(::System::RuntimeTypeHandle left, ::System::Object* right)
+		::System::Int32 Method_2_C74CF020AA42ED85()
 		{
-			return ((::System::Boolean(*)(::System::RuntimeTypeHandle, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_OP_EQUALITY_OFFSET))(left, right);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_C74CF020AA42ED85_OFFSET))(this);
 		}
 
-		static ::System::Reflection::TypeAttributes GetAttributes(::System::RuntimeType* type)
+		static ::System::Reflection::TypeAttributes Method_2_265ECFC30C5B0EEF(::System::RuntimeType* type)
 		{
-			return ((::System::Reflection::TypeAttributes(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETATTRIBUTES_OFFSET))(type);
+			return ((::System::Reflection::TypeAttributes(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_265ECFC30C5B0EEF_OFFSET))(type);
 		}
 
-		static ::System::Int32 GetMetadataToken(::System::RuntimeType* type)
+		static ::System::Int32 Method_2_9BB2E1286B8738B0(::System::RuntimeType* type)
 		{
-			return ((::System::Int32(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETMETADATATOKEN_OFFSET))(type);
+			return ((::System::Int32(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_9BB2E1286B8738B0_OFFSET))(type);
 		}
 
-		static ::System::Int32 GetToken(::System::RuntimeType* type)
+		static ::System::Int32 Method_2_9BB2E1286B8738B0_1(::System::RuntimeType* type)
 		{
-			return ((::System::Int32(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETTOKEN_OFFSET))(type);
+			return ((::System::Int32(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_9BB2E1286B8738B0_1_OFFSET))(type);
 		}
 
-		static ::System::Type* GetGenericTypeDefinition_impl(::System::RuntimeType* type)
+		static ::System::Type* Method_2_4D4E7EACA5CCCAAF(::System::RuntimeType* type)
 		{
-			return ((::System::Type*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETGENERICTYPEDEFINITION_IMPL_OFFSET))(type);
+			return ((::System::Type*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_4D4E7EACA5CCCAAF_OFFSET))(type);
 		}
 
-		static ::System::Type* GetGenericTypeDefinition(::System::RuntimeType* type)
+		static ::System::Type* Method_2_4D4E7EACA5CCCAAF_1(::System::RuntimeType* type)
 		{
-			return ((::System::Type*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETGENERICTYPEDEFINITION_OFFSET))(type);
+			return ((::System::Type*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_4D4E7EACA5CCCAAF_1_OFFSET))(type);
 		}
 
-		static ::System::Boolean HasElementType(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_33D58E766C7B00FE(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_HASELEMENTTYPE_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_33D58E766C7B00FE_OFFSET))(type);
 		}
 
-		static ::System::Boolean HasProxyAttribute(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_B79F4C754405332D(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_HASPROXYATTRIBUTE_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_B79F4C754405332D_OFFSET))(type);
 		}
 
-		static ::System::Boolean HasInstantiation(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_7289B051E4D48AE8(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_HASINSTANTIATION_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_7289B051E4D48AE8_OFFSET))(type);
 		}
 
-		static ::System::Boolean IsArray(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_3ADD64610AC194BA(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISARRAY_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_3ADD64610AC194BA_OFFSET))(type);
 		}
 
-		static ::System::Boolean IsByRef(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_3ADD64610AC194BA_1(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISBYREF_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_3ADD64610AC194BA_1_OFFSET))(type);
 		}
 
-		static ::System::Boolean IsComObject(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_3ADD64610AC194BA_2(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISCOMOBJECT_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_3ADD64610AC194BA_2_OFFSET))(type);
 		}
 
-		static ::System::Boolean IsInstanceOfType(::System::RuntimeType* type, ::System::Object* o)
+		static ::System::Boolean Method_2_4EAC41C8407E0F15(::System::RuntimeType* type, ::System::Object* o)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISINSTANCEOFTYPE_OFFSET))(type, o);
+			return ((::System::Boolean(*)(::System::RuntimeType*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_4EAC41C8407E0F15_OFFSET))(type, o);
 		}
 
-		static ::System::Boolean IsPointer(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_3ADD64610AC194BA_3(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISPOINTER_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_3ADD64610AC194BA_3_OFFSET))(type);
 		}
 
-		static ::System::Boolean IsPrimitive(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_C34B2CBA679A9D4C(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISPRIMITIVE_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_C34B2CBA679A9D4C_OFFSET))(type);
 		}
 
-		static ::System::Boolean HasReferences(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_3ADD64610AC194BA_4(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_HASREFERENCES_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_3ADD64610AC194BA_4_OFFSET))(type);
 		}
 
-		static ::System::Boolean IsComObject_1(::System::RuntimeType* type, ::System::Boolean isGenericCOM)
+		static ::System::Boolean Method_2_41F560F5C23DB7E4(::System::RuntimeType* type, ::System::Boolean isGenericCOM)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISCOMOBJECT_1_OFFSET))(type, isGenericCOM);
+			return ((::System::Boolean(*)(::System::RuntimeType*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_41F560F5C23DB7E4_OFFSET))(type, isGenericCOM);
 		}
 
-		static ::System::Boolean IsContextful(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_33D58E766C7B00FE_1(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISCONTEXTFUL_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_33D58E766C7B00FE_1_OFFSET))(type);
 		}
 
-		static ::System::Boolean IsEquivalentTo(::System::RuntimeType* rtType1, ::System::RuntimeType* rtType2)
+		static ::System::Boolean Method_2_410B44FC09D73F6A(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*, ::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISEQUIVALENTTO_OFFSET))(rtType1, rtType2);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_410B44FC09D73F6A_OFFSET))(type);
 		}
 
-		static ::System::Boolean IsSzArray(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_8D3CAA3E8561FA03(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISSZARRAY_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_8D3CAA3E8561FA03_OFFSET))(type);
 		}
 
-		static ::System::Boolean IsInterface(::System::RuntimeType* type)
+		static ::System::Int32 Method_2_9BB2E1286B8738B0_2(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISINTERFACE_OFFSET))(type);
+			return ((::System::Int32(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_9BB2E1286B8738B0_2_OFFSET))(type);
 		}
 
-		static ::System::Int32 GetArrayRank(::System::RuntimeType* type)
+		static ::System::Reflection::RuntimeAssembly* Method_2_1FC0B2F39686D047(::System::RuntimeType* type)
 		{
-			return ((::System::Int32(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETARRAYRANK_OFFSET))(type);
+			return ((::System::Reflection::RuntimeAssembly*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_1FC0B2F39686D047_OFFSET))(type);
 		}
 
-		static ::System::Reflection::RuntimeAssembly* GetAssembly(::System::RuntimeType* type)
+		static ::System::RuntimeType* Method_2_02E7E41DEA045AD5(::System::RuntimeType* type)
 		{
-			return ((::System::Reflection::RuntimeAssembly*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETASSEMBLY_OFFSET))(type);
+			return ((::System::RuntimeType*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_02E7E41DEA045AD5_OFFSET))(type);
 		}
 
-		static ::System::RuntimeType* GetElementType(::System::RuntimeType* type)
+		static ::System::Reflection::RuntimeModule* Method_2_BA96C7EB570C3B63(::System::RuntimeType* type)
 		{
-			return ((::System::RuntimeType*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETELEMENTTYPE_OFFSET))(type);
+			return ((::System::Reflection::RuntimeModule*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_BA96C7EB570C3B63_OFFSET))(type);
 		}
 
-		static ::System::Reflection::RuntimeModule* GetModule(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_8D3CAA3E8561FA03_1(::System::RuntimeType* type)
 		{
-			return ((::System::Reflection::RuntimeModule*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETMODULE_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_8D3CAA3E8561FA03_1_OFFSET))(type);
 		}
 
-		static ::System::Boolean IsGenericVariable(::System::RuntimeType* type)
+		static ::System::RuntimeType* Method_2_713FB278BE4F23BF(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISGENERICVARIABLE_OFFSET))(type);
+			return ((::System::RuntimeType*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_713FB278BE4F23BF_OFFSET))(type);
 		}
 
-		static ::System::RuntimeType* GetBaseType(::System::RuntimeType* type)
+		static ::System::Boolean Method_2_59FD75ABB3EBD456(::System::RuntimeType* type, ::System::RuntimeType* target)
 		{
-			return ((::System::RuntimeType*(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETBASETYPE_OFFSET))(type);
+			return ((::System::Boolean(*)(::System::RuntimeType*, ::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_59FD75ABB3EBD456_OFFSET))(type, target);
 		}
 
-		static ::System::Boolean CanCastTo(::System::RuntimeType* type, ::System::RuntimeType* target)
+		static ::System::Boolean Method_2_643F02B697786BA6(::System::Type* a, ::System::Type* b)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*, ::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_CANCASTTO_OFFSET))(type, target);
+			return ((::System::Boolean(*)(::System::Type*, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_643F02B697786BA6_OFFSET))(a, b);
 		}
 
-		static ::System::Boolean type_is_assignable_from(::System::Type* a, ::System::Type* b)
+		static ::System::Boolean Method_2_8D3CAA3E8561FA03_2(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::Type*, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_TYPE_IS_ASSIGNABLE_FROM_OFFSET))(a, b);
+			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_8D3CAA3E8561FA03_2_OFFSET))(type);
 		}
 
-		static ::System::Boolean IsGenericTypeDefinition(::System::RuntimeType* type)
+		static ::System::IntPtr Method_2_0AD29C4635C13851(::System::RuntimeType* type)
 		{
-			return ((::System::Boolean(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_ISGENERICTYPEDEFINITION_OFFSET))(type);
-		}
-
-		static ::System::IntPtr GetGenericParameterInfo(::System::RuntimeType* type)
-		{
-			return ((::System::IntPtr(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_GETGENERICPARAMETERINFO_OFFSET))(type);
+			return ((::System::IntPtr(*)(::System::RuntimeType*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIMETYPEHANDLE_METHOD_2_0AD29C4635C13851_OFFSET))(type);
 		}
 	};
 }

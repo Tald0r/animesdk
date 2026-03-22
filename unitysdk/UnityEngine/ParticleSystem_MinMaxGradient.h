@@ -6,31 +6,17 @@
 
 namespace UnityEngine { class Gradient; }
 
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_EVALUATE_1_OFFSET UNITYSDK_OFFSET(0x2052210)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_EVALUATE_OFFSET UNITYSDK_OFFSET(0x20521E0)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_COLORMAX_OFFSET UNITYSDK_OFFSET(0x20521C0)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_COLORMIN_OFFSET UNITYSDK_OFFSET(0x154E100)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_COLOR_OFFSET UNITYSDK_OFFSET(0x20521C0)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_GRADIENTMAX_OFFSET UNITYSDK_OFFSET(0x13C90)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_GRADIENTMIN_OFFSET UNITYSDK_OFFSET(0x5AF0)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_GRADIENT_OFFSET UNITYSDK_OFFSET(0x13C90)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_MODE_OFFSET UNITYSDK_OFFSET(0x59D0)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1827A940)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_COLORMAX_OFFSET UNITYSDK_OFFSET(0x20521D0)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_COLORMIN_OFFSET UNITYSDK_OFFSET(0x203C600)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_COLOR_OFFSET UNITYSDK_OFFSET(0x20521D0)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_GRADIENTMAX_OFFSET UNITYSDK_OFFSET(0xAF80)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_GRADIENTMIN_OFFSET UNITYSDK_OFFSET(0x8D10)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_GRADIENT_OFFSET UNITYSDK_OFFSET(0xAF80)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_MODE_OFFSET UNITYSDK_OFFSET(0x29250)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x2052130)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT__CTOR_2_OFFSET UNITYSDK_OFFSET(0x2052160)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT__CTOR_3_OFFSET UNITYSDK_OFFSET(0x20521A0)
-#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x20520F0)
+#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_COLORMIN_OFFSET UNITYSDK_OFFSET(0x52D1D0)
+#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_COLOR_OFFSET UNITYSDK_OFFSET(0x79E800)
+#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_MODE_OFFSET UNITYSDK_OFFSET(0x2C3E30)
+#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1A871900)
+#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_COLORMIN_OFFSET UNITYSDK_OFFSET(0x943C00)
+#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_COLOR_OFFSET UNITYSDK_OFFSET(0x838AE0)
+#define UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x943BC0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ParticleSystem_MinMaxGradient_TypeDefinitionIndex = 5332;
+	inline static constexpr unsigned int ParticleSystem_MinMaxGradient_TypeDefinitionIndex = 23668;
 
 	struct alignas(8) ParticleSystem_MinMaxGradient
 	{
@@ -45,59 +31,9 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT__CTOR_OFFSET))(this, color);
 		}
 
-		::System::Void _ctor_1(::UnityEngine::Gradient* gradient)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Gradient*))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT__CTOR_1_OFFSET))(this, gradient);
-		}
-
-		::System::Void _ctor_2(::UnityEngine::Color min, ::UnityEngine::Color max)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT__CTOR_2_OFFSET))(this, min, max);
-		}
-
-		::System::Void _ctor_3(::UnityEngine::Gradient* min, ::UnityEngine::Gradient* max)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Gradient*, ::UnityEngine::Gradient*))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT__CTOR_3_OFFSET))(this, min, max);
-		}
-
 		::UnityEngine::ParticleSystemGradientMode get_mode()
 		{
 			return ((::UnityEngine::ParticleSystemGradientMode(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_MODE_OFFSET))(this);
-		}
-
-		::System::Void set_mode(::UnityEngine::ParticleSystemGradientMode value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::ParticleSystemGradientMode))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_MODE_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Gradient* get_gradientMax()
-		{
-			return ((::UnityEngine::Gradient*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_GRADIENTMAX_OFFSET))(this);
-		}
-
-		::System::Void set_gradientMax(::UnityEngine::Gradient* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Gradient*))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_GRADIENTMAX_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Gradient* get_gradientMin()
-		{
-			return ((::UnityEngine::Gradient*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_GRADIENTMIN_OFFSET))(this);
-		}
-
-		::System::Void set_gradientMin(::UnityEngine::Gradient* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Gradient*))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_GRADIENTMIN_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Color get_colorMax()
-		{
-			return ((::UnityEngine::Color(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_COLORMAX_OFFSET))(this);
-		}
-
-		::System::Void set_colorMax(::UnityEngine::Color value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_COLORMAX_OFFSET))(this, value);
 		}
 
 		::UnityEngine::Color get_colorMin()
@@ -118,26 +54,6 @@ namespace UnityEngine
 		::System::Void set_color(::UnityEngine::Color value)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_COLOR_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Gradient* get_gradient()
-		{
-			return ((::UnityEngine::Gradient*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_GET_GRADIENT_OFFSET))(this);
-		}
-
-		::System::Void set_gradient(::UnityEngine::Gradient* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Gradient*))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_SET_GRADIENT_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Color Evaluate(::System::Single time)
-		{
-			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_EVALUATE_OFFSET))(this, time);
-		}
-
-		::UnityEngine::Color Evaluate_1(::System::Single time, ::System::Single lerpFactor)
-		{
-			return ((::UnityEngine::Color(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_PARTICLESYSTEM_MINMAXGRADIENT_EVALUATE_1_OFFSET))(this, time, lerpFactor);
 		}
 
 		static ::UnityEngine::ParticleSystem_MinMaxGradient op_Implicit(::UnityEngine::Color color)

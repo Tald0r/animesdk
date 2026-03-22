@@ -7,25 +7,23 @@
 namespace Cinemachine { class AxisState_IInputAxisProvider; }
 namespace System { class String; }
 
-#define CINEMACHINE_AXISSTATE_CLAMPANGLE_OFFSET UNITYSDK_OFFSET(0x14653B0)
-#define CINEMACHINE_AXISSTATE_CLAMPVALUE_OFFSET UNITYSDK_OFFSET(0x14652A0)
-#define CINEMACHINE_AXISSTATE_GETMAXSPEED_OFFSET UNITYSDK_OFFSET(0x14653D0)
-#define CINEMACHINE_AXISSTATE_GET_HASINPUTPROVIDER_OFFSET UNITYSDK_OFFSET(0x1465280)
-#define CINEMACHINE_AXISSTATE_GET_HASRECENTERING_OFFSET UNITYSDK_OFFSET(0x1465470)
-#define CINEMACHINE_AXISSTATE_GET_VALUERANGELOCKED_OFFSET UNITYSDK_OFFSET(0x1465450)
-#define CINEMACHINE_AXISSTATE_MAXSPEEDUPDATE_OFFSET UNITYSDK_OFFSET(0x14653C0)
-#define CINEMACHINE_AXISSTATE_NORMALIZEANGLE_OFFSET UNITYSDK_OFFSET(0x1465350)
-#define CINEMACHINE_AXISSTATE_RESET_OFFSET UNITYSDK_OFFSET(0x1465260)
-#define CINEMACHINE_AXISSTATE_SETINPUTAXISPROVIDER_OFFSET UNITYSDK_OFFSET(0x1465270)
-#define CINEMACHINE_AXISSTATE_SET_HASRECENTERING_OFFSET UNITYSDK_OFFSET(0x1465480)
-#define CINEMACHINE_AXISSTATE_SET_VALUERANGELOCKED_OFFSET UNITYSDK_OFFSET(0x1465460)
-#define CINEMACHINE_AXISSTATE_UPDATE_OFFSET UNITYSDK_OFFSET(0x1465290)
-#define CINEMACHINE_AXISSTATE_VALIDATE_OFFSET UNITYSDK_OFFSET(0x1465220)
-#define CINEMACHINE_AXISSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x1465160)
+#define CINEMACHINE_AXISSTATE_CLAMPVALUE_OFFSET UNITYSDK_OFFSET(0x94DDF0)
+#define CINEMACHINE_AXISSTATE_GETMAXSPEED_OFFSET UNITYSDK_OFFSET(0x94DE80)
+#define CINEMACHINE_AXISSTATE_GET_HASINPUTPROVIDER_OFFSET UNITYSDK_OFFSET(0x96DFB0)
+#define CINEMACHINE_AXISSTATE_GET_HASRECENTERING_OFFSET UNITYSDK_OFFSET(0x94DF20)
+#define CINEMACHINE_AXISSTATE_GET_VALUERANGELOCKED_OFFSET UNITYSDK_OFFSET(0x94DF00)
+#define CINEMACHINE_AXISSTATE_MAXSPEEDUPDATE_OFFSET UNITYSDK_OFFSET(0x96DFD0)
+#define CINEMACHINE_AXISSTATE_RESET_OFFSET UNITYSDK_OFFSET(0x94DDC0)
+#define CINEMACHINE_AXISSTATE_SETINPUTAXISPROVIDER_OFFSET UNITYSDK_OFFSET(0x94DDD0)
+#define CINEMACHINE_AXISSTATE_SET_HASRECENTERING_OFFSET UNITYSDK_OFFSET(0x94DF30)
+#define CINEMACHINE_AXISSTATE_SET_VALUERANGELOCKED_OFFSET UNITYSDK_OFFSET(0x94DF10)
+#define CINEMACHINE_AXISSTATE_UPDATE_OFFSET UNITYSDK_OFFSET(0x96DFC0)
+#define CINEMACHINE_AXISSTATE_VALIDATE_OFFSET UNITYSDK_OFFSET(0x94DD80)
+#define CINEMACHINE_AXISSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x94DCE0)
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int AxisState_TypeDefinitionIndex = 29962;
+	inline static constexpr unsigned int AxisState_TypeDefinitionIndex = 31055;
 
 	struct alignas(8) AxisState
 	{
@@ -40,17 +38,13 @@ namespace Cinemachine
 		::System::Boolean m_InvertInput; // 0x34
 		::System::Single m_MinValue; // 0x38
 		::System::Single m_MaxValue; // 0x3C
-		::System::Single m_MinClampValue; // 0x40
-		::System::Single m_MaxClampValue; // 0x44
-		::System::Boolean m_Wrap; // 0x48
-		::Cinemachine::AxisState_Recentering m_Recentering; // 0x4C
-		::System::Boolean m_AngleLimitMode; // 0x68
-		::System::Single m_AngleLimitOrign; // 0x6C
-		::System::Single mCurrentSpeed; // 0x70
-		::Cinemachine::AxisState_IInputAxisProvider* m_InputAxisProvider; // 0x78
-		::System::Int32 m_InputAxisIndex; // 0x80
-		::System::Boolean _ValueRangeLocked_k__BackingField; // 0x84
-		::System::Boolean _HasRecentering_k__BackingField; // 0x85
+		::System::Boolean m_Wrap; // 0x40
+		::Cinemachine::AxisState_Recentering m_Recentering; // 0x44
+		::System::Single mCurrentSpeed; // 0x60
+		::Cinemachine::AxisState_IInputAxisProvider* m_InputAxisProvider; // 0x68
+		::System::Int32 m_InputAxisIndex; // 0x70
+		::System::Boolean _ValueRangeLocked_k__BackingField; // 0x74
+		::System::Boolean _HasRecentering_k__BackingField; // 0x75
 
 		::System::Void _ctor(::System::Single minValue, ::System::Single maxValue, ::System::Boolean wrap, ::System::Boolean rangeLocked, ::System::Single maxSpeed, ::System::Single accelTime, ::System::Single decelTime, ::System::String* name, ::System::Boolean invert)
 		{
@@ -85,16 +79,6 @@ namespace Cinemachine
 		::System::Single ClampValue(::System::Single v)
 		{
 			return ((::System::Single(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CINEMACHINE_AXISSTATE_CLAMPVALUE_OFFSET))(this, v);
-		}
-
-		::System::Single NormalizeAngle(::System::Single angle)
-		{
-			return ((::System::Single(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CINEMACHINE_AXISSTATE_NORMALIZEANGLE_OFFSET))(this, angle);
-		}
-
-		::System::Single ClampAngle(::System::Single originAngle, ::System::Single minRange, ::System::Single maxRange, ::System::Single inputAngle)
-		{
-			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + CINEMACHINE_AXISSTATE_CLAMPANGLE_OFFSET))(this, originAngle, minRange, maxRange, inputAngle);
 		}
 
 		::System::Boolean MaxSpeedUpdate(::System::Single input, ::System::Single deltaTime)

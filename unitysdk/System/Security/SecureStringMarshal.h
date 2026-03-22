@@ -1,0 +1,39 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace System::Security { class SecureString; }
+
+#define SYSTEM_SECURITY_SECURESTRINGMARSHAL_SECURESTRINGTOCOTASKMEMANSI_OFFSET UNITYSDK_OFFSET(0x18F66550)
+#define SYSTEM_SECURITY_SECURESTRINGMARSHAL_SECURESTRINGTOCOTASKMEMUNICODE_OFFSET UNITYSDK_OFFSET(0x18F665D0)
+#define SYSTEM_SECURITY_SECURESTRINGMARSHAL_SECURESTRINGTOGLOBALALLOCANSI_OFFSET UNITYSDK_OFFSET(0x18F66560)
+#define SYSTEM_SECURITY_SECURESTRINGMARSHAL_SECURESTRINGTOGLOBALALLOCUNICODE_OFFSET UNITYSDK_OFFSET(0x18F665E0)
+
+namespace System::Security
+{
+	inline static constexpr unsigned int SecureStringMarshal_TypeDefinitionIndex = 3138;
+
+	class SecureStringMarshal : public ::System::Object
+	{
+	public:
+		static ::System::IntPtr SecureStringToCoTaskMemAnsi(::System::Security::SecureString* s)
+		{
+			return ((::System::IntPtr(*)(::System::Security::SecureString*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_SECURESTRINGMARSHAL_SECURESTRINGTOCOTASKMEMANSI_OFFSET))(s);
+		}
+
+		static ::System::IntPtr SecureStringToGlobalAllocAnsi(::System::Security::SecureString* s)
+		{
+			return ((::System::IntPtr(*)(::System::Security::SecureString*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_SECURESTRINGMARSHAL_SECURESTRINGTOGLOBALALLOCANSI_OFFSET))(s);
+		}
+
+		static ::System::IntPtr SecureStringToCoTaskMemUnicode(::System::Security::SecureString* s)
+		{
+			return ((::System::IntPtr(*)(::System::Security::SecureString*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_SECURESTRINGMARSHAL_SECURESTRINGTOCOTASKMEMUNICODE_OFFSET))(s);
+		}
+
+		static ::System::IntPtr SecureStringToGlobalAllocUnicode(::System::Security::SecureString* s)
+		{
+			return ((::System::IntPtr(*)(::System::Security::SecureString*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_SECURESTRINGMARSHAL_SECURESTRINGTOGLOBALALLOCUNICODE_OFFSET))(s);
+		}
+	};
+}

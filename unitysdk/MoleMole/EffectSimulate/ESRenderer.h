@@ -1,0 +1,140 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_17B78A87EAE1DCED.h"
+#include "unitysdk/MoleMole/EffectSimulate/IEffectSimulate.h"
+#include "unitysdk/UnityEngine/ParticleSystemRenderMode.h"
+#include "unitysdk/UnityEngine/Rendering/ShadowCastingMode.h"
+
+namespace System { class String; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class Mesh; }
+
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_GET_PSMAT_OFFSET UNITYSDK_OFFSET(0xCCCE1A0)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_GET_PSMESH_OFFSET UNITYSDK_OFFSET(0xCCCDE70)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_GET_PSRECEIVESHADOWS_OFFSET UNITYSDK_OFFSET(0xCCCE800)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_GET_PSRENDERMODE_OFFSET UNITYSDK_OFFSET(0xCCCDAC0)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_GET_PSSHADOWCASTINGMODE_OFFSET UNITYSDK_OFFSET(0xCCCE4D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_1D4018D4200358D0_OFFSET UNITYSDK_OFFSET(0xCCCDC50)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0xCCCF090)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0xCCCEB30)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_49AC00594530B714_1_OFFSET UNITYSDK_OFFSET(0xCCCEFC0)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_49AC00594530B714_OFFSET UNITYSDK_OFFSET(0xCCCEC20)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_581A5078A2F29034_OFFSET UNITYSDK_OFFSET(0xCCCF020)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_796EFD23047085C6_OFFSET UNITYSDK_OFFSET(0xCCCEC80)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0xCCCEB90)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_DA1BF2C227DC3D86_OFFSET UNITYSDK_OFFSET(0xCCCF030)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_SET_PSMAT_OFFSET UNITYSDK_OFFSET(0xCCCE330)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_SET_PSMESH_OFFSET UNITYSDK_OFFSET(0xCCCE000)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_SET_PSRECEIVESHADOWS_OFFSET UNITYSDK_OFFSET(0xCCCE990)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_SET_PSRENDERMODE_OFFSET UNITYSDK_OFFSET(0xCCCDCD0)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER_SET_PSSHADOWCASTINGMODE_OFFSET UNITYSDK_OFFSET(0xCCCE660)
+#define MOLEMOLE_EFFECTSIMULATE_ESRENDERER__CTOR_OFFSET UNITYSDK_OFFSET(0xCCCEFA0)
+
+namespace MoleMole::EffectSimulate
+{
+	inline static constexpr unsigned int ESRenderer_TypeDefinitionIndex = 48339;
+
+	class ESRenderer : public ::MoleMole::EffectSimulate::IEffectSimulate
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER__CTOR_OFFSET))(this);
+		}
+
+		::UnityEngine::ParticleSystemRenderMode get_psRenderMode()
+		{
+			return ((::UnityEngine::ParticleSystemRenderMode(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_GET_PSRENDERMODE_OFFSET))(this);
+		}
+
+		::System::Void set_psRenderMode(::UnityEngine::ParticleSystemRenderMode a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::ParticleSystemRenderMode))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_SET_PSRENDERMODE_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Mesh* get_psMesh()
+		{
+			return ((::UnityEngine::Mesh*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_GET_PSMESH_OFFSET))(this);
+		}
+
+		::System::Void set_psMesh(::UnityEngine::Mesh* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Mesh*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_SET_PSMESH_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Material* get_psMat()
+		{
+			return ((::UnityEngine::Material*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_GET_PSMAT_OFFSET))(this);
+		}
+
+		::System::Void set_psMat(::UnityEngine::Material* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Material*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_SET_PSMAT_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Rendering::ShadowCastingMode get_psShadowCastingMode()
+		{
+			return ((::UnityEngine::Rendering::ShadowCastingMode(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_GET_PSSHADOWCASTINGMODE_OFFSET))(this);
+		}
+
+		::System::Void set_psShadowCastingMode(::UnityEngine::Rendering::ShadowCastingMode a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::ShadowCastingMode))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_SET_PSSHADOWCASTINGMODE_OFFSET))(this, a1);
+		}
+
+		::System::Boolean get_psReceiveShadows()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_GET_PSRECEIVESHADOWS_OFFSET))(this);
+		}
+
+		::System::Void set_psReceiveShadows(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_SET_PSRECEIVESHADOWS_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_2_391A84BCD9F51317()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_391A84BCD9F51317_OFFSET))(this);
+		}
+
+		::System::String* Method_2_88B60F3B95FAA4F1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_88B60F3B95FAA4F1_OFFSET))(this);
+		}
+
+		::Enum_3_17B78A87EAE1DCED Method_2_49AC00594530B714()
+		{
+			return ((::Enum_3_17B78A87EAE1DCED(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_49AC00594530B714_OFFSET))(this);
+		}
+
+		::System::String* Method_2_796EFD23047085C6()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_796EFD23047085C6_OFFSET))(this);
+		}
+
+		::Enum_3_17B78A87EAE1DCED Method_2_49AC00594530B714_1()
+		{
+			return ((::Enum_3_17B78A87EAE1DCED(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_49AC00594530B714_1_OFFSET))(this);
+		}
+
+		::System::String* Method_2_581A5078A2F29034()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_581A5078A2F29034_OFFSET))(this);
+		}
+
+		::System::String* Method_2_DA1BF2C227DC3D86()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_DA1BF2C227DC3D86_OFFSET))(this);
+		}
+
+		::System::Boolean Method_2_391A84BCD9F51317_1()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_391A84BCD9F51317_1_OFFSET))(this);
+		}
+
+		::System::Boolean Method_2_1D4018D4200358D0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESRENDERER_METHOD_2_1D4018D4200358D0_OFFSET))(this);
+		}
+	};
+}

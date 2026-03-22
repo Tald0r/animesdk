@@ -3,11 +3,13 @@
 #include "unitysdk/System/DateTime.h"
 #include "unitysdk/System/EventArgs.h"
 
-#define SYSTEM_TIMERS_ELAPSEDEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x17F4A950)
+#define SYSTEM_TIMERS_ELAPSEDEVENTARGS_GET_SIGNALTIME_OFFSET UNITYSDK_OFFSET(0x18FD0360)
+#define SYSTEM_TIMERS_ELAPSEDEVENTARGS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18FD0370)
+#define SYSTEM_TIMERS_ELAPSEDEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x18FD0330)
 
 namespace System::Timers
 {
-	inline static constexpr unsigned int ElapsedEventArgs_TypeDefinitionIndex = 2479;
+	inline static constexpr unsigned int ElapsedEventArgs_TypeDefinitionIndex = 2717;
 
 	class ElapsedEventArgs : public ::System::EventArgs
 	{
@@ -17,6 +19,16 @@ namespace System::Timers
 		::System::Void _ctor(::System::DateTime time)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + SYSTEM_TIMERS_ELAPSEDEVENTARGS__CTOR_OFFSET))(this, time);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TIMERS_ELAPSEDEVENTARGS__CTOR_1_OFFSET))(this);
+		}
+
+		::System::DateTime get_SignalTime()
+		{
+			return ((::System::DateTime(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TIMERS_ELAPSEDEVENTARGS_GET_SIGNALTIME_OFFSET))(this);
 		}
 	};
 }

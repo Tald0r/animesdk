@@ -1,0 +1,198 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_468A4FBF2E9F527C;
+class Class_2_79AE422BA06F6D26_189;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIHadalZone_Common_ZoneItemInfoData; }
+namespace System { class Object; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
+
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_CLICKLOCKSTATE_OFFSET UNITYSDK_OFFSET(0x7D05E00)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_GETCURCTX_OFFSET UNITYSDK_OFFSET(0x7D04F40)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_GETCURRENTZONEID_OFFSET UNITYSDK_OFFSET(0x7D04BA0)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_MARKSELECT_OFFSET UNITYSDK_OFFSET(0x7D058A0)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D04730)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x7D05050)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D047D0)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7D04690)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7D049A0)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_SETPARENTWINDOWFADEINDONEFUNC_OFFSET UNITYSDK_OFFSET(0x7D06020)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_SETZONEITEMINFO_CLICKCALLBACK_OFFSET UNITYSDK_OFFSET(0x7D06130)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__CHECKPLAY_OFFSET UNITYSDK_OFFSET(0x7D06090)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7D061A0)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__ONSCROLLITEMUPDATE_B__18_0_OFFSET UNITYSDK_OFFSET(0x7D061F0)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__REFRESHBESTRECORD_OFFSET UNITYSDK_OFFSET(0x7D04FB0)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__REGNOTIFICATION_OFFSET UNITYSDK_OFFSET(0x7D05730)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__SETCOMMON_OFFSET UNITYSDK_OFFSET(0x7D04E30)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__SETEMPTYSTATE_OFFSET UNITYSDK_OFFSET(0x7D04C10)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__SETLOCKSTATE_OFFSET UNITYSDK_OFFSET(0x7D04D20)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__TRYPLAYUNLOCKZONEANIM_OFFSET UNITYSDK_OFFSET(0x7D05B70)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D063A0)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x7D06410)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D06490)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7D06510)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7D06570)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___CHECKPLAY_B__25_0_OFFSET UNITYSDK_OFFSET(0x7D06330)
+#define MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___TRYPLAYUNLOCKZONEANIM_G____PLAYZONEUNLOCKANIM_21_0_OFFSET UNITYSDK_OFFSET(0x7D05F50)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHadalZoneItemInfoV2WidgetController_TypeDefinitionIndex = 61554;
+
+	class UIHadalZoneItemInfoV2WidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		// static const ::System::String* IMG_BLUE_PATH; // 0x0
+		// static const ::System::String* IMG_RED_PATH; // 0x0
+		::Class_2_79AE422BA06F6D26_189* _view; // 0x2D0
+		::MoleMole::UIHadalZone_Common_ZoneItemInfoData* _curItemData; // 0x2D8
+		::System::Int32 _curZoneID; // 0x2E0
+		::System::Int32 _curIndex; // 0x2E4
+		::Class_2_468A4FBF2E9F527C* _hadalZoneModel; // 0x2E8
+		::System::Func_1<::System::Boolean>* _isParentFadeInDoneFunc; // 0x2F0
+		::System::String* UNLOCK_ZONE_ANIM_RED; // 0x2F8
+		::System::String* UNLOCK_ZONE_ANIM_BLUE; // 0x300
+		::System::Action_1<::MoleMole::UIHadalZoneItemInfoV2WidgetController*>* _clickCallback; // 0x308
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Int32 GetCurrentZoneID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_GETCURRENTZONEID_OFFSET))(this);
+		}
+
+		::System::Void _SetEmptyState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__SETEMPTYSTATE_OFFSET))(this);
+		}
+
+		::System::Void _SetLockState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__SETLOCKSTATE_OFFSET))(this);
+		}
+
+		::System::Void _SetCommon()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__SETCOMMON_OFFSET))(this);
+		}
+
+		::MoleMole::UIHadalZone_Common_ZoneItemInfoData* GetCurCtx()
+		{
+			return ((::MoleMole::UIHadalZone_Common_ZoneItemInfoData*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_GETCURCTX_OFFSET))(this);
+		}
+
+		::System::Void _RefreshBestRecord(::System::Boolean isFixed)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__REFRESHBESTRECORD_OFFSET))(this, isFixed);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void _RegNotification()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__REGNOTIFICATION_OFFSET))(this);
+		}
+
+		::System::Void ClickLockState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_CLICKLOCKSTATE_OFFSET))(this);
+		}
+
+		::System::Void _TryPlayUnlockZoneAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__TRYPLAYUNLOCKZONEANIM_OFFSET))(this);
+		}
+
+		::System::Void SetParentWindowFadeInDoneFunc(::System::Func_1<::System::Boolean>* getter)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Func_1<::System::Boolean>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_SETPARENTWINDOWFADEINDONEFUNC_OFFSET))(this, getter);
+		}
+
+		::System::Collections::Generic::IEnumerator_1<::System::Single>* _CheckPlay()
+		{
+			return ((::System::Collections::Generic::IEnumerator_1<::System::Single>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__CHECKPLAY_OFFSET))(this);
+		}
+
+		::System::Void SetZoneItemInfo_ClickCallback(::System::Action_1<::MoleMole::UIHadalZoneItemInfoV2WidgetController*>* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::MoleMole::UIHadalZoneItemInfoV2WidgetController*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_SETZONEITEMINFO_CLICKCALLBACK_OFFSET))(this, callback);
+		}
+
+		::System::Void MarkSelect(::System::Boolean isSelected)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER_MARKSELECT_OFFSET))(this, isSelected);
+		}
+
+		::System::Void _OnScrollItemUpdate_b__18_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER__ONSCROLLITEMUPDATE_B__18_0_OFFSET))(this);
+		}
+
+		::System::Void __TryPlayUnlockZoneAnim_g____PlayZoneUnlockAnim_21_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___TRYPLAYUNLOCKZONEANIM_G____PLAYZONEUNLOCKANIM_21_0_OFFSET))(this);
+		}
+
+		::System::Void __CheckPlay_b__25_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___CHECKPLAY_B__25_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONEITEMINFOV2WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

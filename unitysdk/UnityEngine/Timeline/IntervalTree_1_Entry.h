@@ -4,7 +4,7 @@
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int IntervalTree_1_Entry_TypeDefinitionIndex = 28988;
+	inline static constexpr unsigned int IntervalTree_1_Entry_TypeDefinitionIndex = 29331;
 
 	template <typename T>
 	struct IntervalTree_1_Entry

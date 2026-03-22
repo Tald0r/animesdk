@@ -7,18 +7,17 @@
 namespace AK::Wwise { class RTPC; }
 namespace UnityEngine { class GameObject; }
 
-#define AKRTPCTRACK_CREATETRACKMIXER_OFFSET UNITYSDK_OFFSET(0x183BBBA0)
-#define AKRTPCTRACK_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x183BC0B0)
-#define AKRTPCTRACK_SETPLAYABLEPROPERTIES_OFFSET UNITYSDK_OFFSET(0x183BBD10)
-#define AKRTPCTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x183BC430)
-#define AKRTPCTRACK___IFIXBASEPROXY_CREATETRACKMIXER_OFFSET UNITYSDK_OFFSET(0x183BC510)
+#define AKRTPCTRACK_CREATETRACKMIXER_OFFSET UNITYSDK_OFFSET(0x1AF9D010)
+#define AKRTPCTRACK_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x1AF9D1C0)
+#define AKRTPCTRACK_SETPLAYABLEPROPERTIES_OFFSET UNITYSDK_OFFSET(0x1AF9D0F0)
+#define AKRTPCTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF9D290)
 
-inline static constexpr unsigned int AkRTPCTrack_TypeDefinitionIndex = 33689;
+inline static constexpr unsigned int AkRTPCTrack_TypeDefinitionIndex = 30131;
 
 class AkRTPCTrack : public ::UnityEngine::Timeline::TrackAsset
 {
 public:
-	::AK::Wwise::RTPC* Parameter; // 0xC8
+	::AK::Wwise::RTPC* Parameter; // 0xB0
 
 	::System::Void _ctor()
 	{
@@ -38,10 +37,5 @@ public:
 	::System::Void OnValidate()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKRTPCTRACK_ONVALIDATE_OFFSET))(this);
-	}
-
-	::UnityEngine::Playables::Playable __iFixBaseProxy_CreateTrackMixer(::UnityEngine::Playables::PlayableGraph P0, ::UnityEngine::GameObject* P1, ::System::Int32 P2)
-	{
-		return ((::UnityEngine::Playables::Playable(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*, ::System::Int32))((::PBYTE)hIl2Cpp + AKRTPCTRACK___IFIXBASEPROXY_CREATETRACKMIXER_OFFSET))(this, P0, P1, P2);
 	}
 };

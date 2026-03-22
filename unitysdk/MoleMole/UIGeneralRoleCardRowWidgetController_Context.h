@@ -1,0 +1,307 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_CB0BFAD855838C72.h"
+#include "unitysdk/MoleMole/UIControllerContextBase.h"
+#include "unitysdk/UnityEngine/Color.h"
+
+class Class_2_D89CCC627A66D0AD;
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ATTACKVALUE_OFFSET UNITYSDK_OFFSET(0x9D8D010)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_HANDLESELECT_OFFSET UNITYSDK_OFFSET(0x9D8CE70)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_HPPERCENT_OFFSET UNITYSDK_OFFSET(0x9D8CF10)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISADD_OFFSET UNITYSDK_OFFSET(0x9D8CEF0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISDEFAULTAVATAR_OFFSET UNITYSDK_OFFSET(0x9D8CF50)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISEMPTY_OFFSET UNITYSDK_OFFSET(0x9D8CE50)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISLOCK_OFFSET UNITYSDK_OFFSET(0x9D8CFB0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISMASK_OFFSET UNITYSDK_OFFSET(0x9D8CE90)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISNEW_OFFSET UNITYSDK_OFFSET(0x9D8CF30)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISROBOT_OFFSET UNITYSDK_OFFSET(0x9D8CF90)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISSELECTED_OFFSET UNITYSDK_OFFSET(0x9D8CEB0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ROLETAGTEXT_OFFSET UNITYSDK_OFFSET(0x9D8CF70)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_SHOWATTACKVALUE_OFFSET UNITYSDK_OFFSET(0x9D8CFF0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_SHOWCOOPUP_OFFSET UNITYSDK_OFFSET(0x9D8D030)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_SHOWNOTIFICATION_OFFSET UNITYSDK_OFFSET(0x9D8CED0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_SHOWUPGRADE_OFFSET UNITYSDK_OFFSET(0x9D8CFD0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETAVATARADDSTATE_OFFSET UNITYSDK_OFFSET(0x9D8D050)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETAVATAR_1_OFFSET UNITYSDK_OFFSET(0x9D8D510)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETAVATAR_OFFSET UNITYSDK_OFFSET(0x9D8D2C0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETBUDDYADDSTATE_OFFSET UNITYSDK_OFFSET(0x9D8D0C0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETHANDLESELECT_OFFSET UNITYSDK_OFFSET(0x9D8D6A0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETLOCKSTATE_OFFSET UNITYSDK_OFFSET(0x9D8D3C0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETMASK_OFFSET UNITYSDK_OFFSET(0x9D8D720)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETROBOT_OFFSET UNITYSDK_OFFSET(0x9D8D130)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ATTACKVALUE_OFFSET UNITYSDK_OFFSET(0x9D8D020)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_HANDLESELECT_OFFSET UNITYSDK_OFFSET(0x9D8CE80)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_HPPERCENT_OFFSET UNITYSDK_OFFSET(0x9D8CF20)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISADD_OFFSET UNITYSDK_OFFSET(0x9D8CF00)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISDEFAULTAVATAR_OFFSET UNITYSDK_OFFSET(0x9D8CF60)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISEMPTY_OFFSET UNITYSDK_OFFSET(0x9D8CE60)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISLOCK_OFFSET UNITYSDK_OFFSET(0x9D8CFC0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISMASK_OFFSET UNITYSDK_OFFSET(0x9D8CEA0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISNEW_OFFSET UNITYSDK_OFFSET(0x9D8CF40)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISROBOT_OFFSET UNITYSDK_OFFSET(0x9D8CFA0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISSELECTED_OFFSET UNITYSDK_OFFSET(0x9D8CEC0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ROLETAGTEXT_OFFSET UNITYSDK_OFFSET(0x9D8CF80)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_SHOWATTACKVALUE_OFFSET UNITYSDK_OFFSET(0x9D8D000)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_SHOWCOOPUP_OFFSET UNITYSDK_OFFSET(0x9D8D040)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_SHOWNOTIFICATION_OFFSET UNITYSDK_OFFSET(0x9D8CEE0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_SHOWUPGRADE_OFFSET UNITYSDK_OFFSET(0x9D8CFE0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x9D8D5C0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT__CTOR_2_OFFSET UNITYSDK_OFFSET(0x9D8D5E0)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT__CTOR_3_OFFSET UNITYSDK_OFFSET(0x9D8D600)
+#define MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9D8D5A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralRoleCardRowWidgetController_Context_TypeDefinitionIndex = 72250;
+
+	class UIGeneralRoleCardRowWidgetController_Context : public ::MoleMole::UIControllerContextBase
+	{
+	public:
+		::System::String* _RoleTagText_k__BackingField; // 0x28
+		::System::Action_1<::MoleMole::UIGeneralRoleCardRowWidgetController_Context*>* OnClick; // 0x30
+		::System::Boolean _IsLock_k__BackingField; // 0x38
+		::System::Boolean _IsNew_k__BackingField; // 0x39
+		::System::Boolean _ShowNotification_k__BackingField; // 0x3A
+		::System::Boolean _ShowUpgrade_k__BackingField; // 0x3B
+		::System::Int32 BuddyId; // 0x3C
+		::UnityEngine::Color AttackValueColor; // 0x40
+		::System::Boolean _IsMask_k__BackingField; // 0x50
+		::System::Boolean _IsRobot_k__BackingField; // 0x51
+		::System::Boolean _ShowCoopUp_k__BackingField; // 0x52
+		::System::Boolean _IsSelected_k__BackingField; // 0x53
+		::System::Int32 Level; // 0x54
+		::System::Boolean _IsAdd_k__BackingField; // 0x58
+		::System::Boolean _IsEmpty_k__BackingField; // 0x59
+		::System::Boolean IsBtnInteractable; // 0x5A
+		::System::Boolean _IsDefaultAvatar_k__BackingField; // 0x5B
+		::System::Int32 _HpPercent_k__BackingField; // 0x5C
+		::System::Int32 AvatarId; // 0x60
+		::System::Int32 _AttackValue_k__BackingField; // 0x64
+		::System::Boolean _ShowAttackValue_k__BackingField; // 0x68
+		::System::Boolean _HandleSelect_k__BackingField; // 0x69
+		::Enum_3_CB0BFAD855838C72 ShowType; // 0x6C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::Int32 robotID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT__CTOR_1_OFFSET))(this, robotID);
+		}
+
+		::System::Void _ctor_2(::Class_2_D89CCC627A66D0AD* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_D89CCC627A66D0AD*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT__CTOR_2_OFFSET))(this, data);
+		}
+
+		::System::Void _ctor_3(::System::Int32 avatarId, ::System::Int32 level)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT__CTOR_3_OFFSET))(this, avatarId, level);
+		}
+
+		::System::Boolean get_IsEmpty()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISEMPTY_OFFSET))(this);
+		}
+
+		::System::Void set_IsEmpty(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISEMPTY_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_HandleSelect()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_HANDLESELECT_OFFSET))(this);
+		}
+
+		::System::Void set_HandleSelect(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_HANDLESELECT_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsMask()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISMASK_OFFSET))(this);
+		}
+
+		::System::Void set_IsMask(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISMASK_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsSelected()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISSELECTED_OFFSET))(this);
+		}
+
+		::System::Void set_IsSelected(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISSELECTED_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_ShowNotification()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_SHOWNOTIFICATION_OFFSET))(this);
+		}
+
+		::System::Void set_ShowNotification(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_SHOWNOTIFICATION_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsAdd()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISADD_OFFSET))(this);
+		}
+
+		::System::Void set_IsAdd(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISADD_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_HpPercent()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_HPPERCENT_OFFSET))(this);
+		}
+
+		::System::Void set_HpPercent(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_HPPERCENT_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsNew()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISNEW_OFFSET))(this);
+		}
+
+		::System::Void set_IsNew(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISNEW_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsDefaultAvatar()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISDEFAULTAVATAR_OFFSET))(this);
+		}
+
+		::System::Void set_IsDefaultAvatar(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISDEFAULTAVATAR_OFFSET))(this, value);
+		}
+
+		::System::String* get_RoleTagText()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ROLETAGTEXT_OFFSET))(this);
+		}
+
+		::System::Void set_RoleTagText(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ROLETAGTEXT_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsRobot()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISROBOT_OFFSET))(this);
+		}
+
+		::System::Void set_IsRobot(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISROBOT_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsLock()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ISLOCK_OFFSET))(this);
+		}
+
+		::System::Void set_IsLock(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ISLOCK_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_ShowUpgrade()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_SHOWUPGRADE_OFFSET))(this);
+		}
+
+		::System::Void set_ShowUpgrade(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_SHOWUPGRADE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_ShowAttackValue()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_SHOWATTACKVALUE_OFFSET))(this);
+		}
+
+		::System::Void set_ShowAttackValue(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_SHOWATTACKVALUE_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_AttackValue()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_ATTACKVALUE_OFFSET))(this);
+		}
+
+		::System::Void set_AttackValue(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_ATTACKVALUE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_ShowCoopUp()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_GET_SHOWCOOPUP_OFFSET))(this);
+		}
+
+		::System::Void set_ShowCoopUp(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SET_SHOWCOOPUP_OFFSET))(this, value);
+		}
+
+		::MoleMole::UIGeneralRoleCardRowWidgetController_Context* SetAvatarAddState()
+		{
+			return ((::MoleMole::UIGeneralRoleCardRowWidgetController_Context*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETAVATARADDSTATE_OFFSET))(this);
+		}
+
+		::MoleMole::UIGeneralRoleCardRowWidgetController_Context* SetBuddyAddState()
+		{
+			return ((::MoleMole::UIGeneralRoleCardRowWidgetController_Context*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETBUDDYADDSTATE_OFFSET))(this);
+		}
+
+		::MoleMole::UIGeneralRoleCardRowWidgetController_Context* SetRobot(::System::Int32 robotID)
+		{
+			return ((::MoleMole::UIGeneralRoleCardRowWidgetController_Context*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETROBOT_OFFSET))(this, robotID);
+		}
+
+		::MoleMole::UIGeneralRoleCardRowWidgetController_Context* SetAvatar(::Class_2_D89CCC627A66D0AD* data)
+		{
+			return ((::MoleMole::UIGeneralRoleCardRowWidgetController_Context*(*)(::PVOID, ::Class_2_D89CCC627A66D0AD*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETAVATAR_OFFSET))(this, data);
+		}
+
+		::MoleMole::UIGeneralRoleCardRowWidgetController_Context* SetAvatar_1(::System::Int32 avatarId, ::System::Int32 level)
+		{
+			return ((::MoleMole::UIGeneralRoleCardRowWidgetController_Context*(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETAVATAR_1_OFFSET))(this, avatarId, level);
+		}
+
+		::System::Void SetLockState(::System::Int32 avatarId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETLOCKSTATE_OFFSET))(this, avatarId);
+		}
+
+		::MoleMole::UIGeneralRoleCardRowWidgetController_Context* SetHandleSelect(::System::Boolean handleSelect, ::System::Boolean showNotification)
+		{
+			return ((::MoleMole::UIGeneralRoleCardRowWidgetController_Context*(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETHANDLESELECT_OFFSET))(this, handleSelect, showNotification);
+		}
+
+		::MoleMole::UIGeneralRoleCardRowWidgetController_Context* SetMask(::System::Boolean mask)
+		{
+			return ((::MoleMole::UIGeneralRoleCardRowWidgetController_Context*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALROLECARDROWWIDGETCONTROLLER_CONTEXT_SETMASK_OFFSET))(this, mask);
+		}
+	};
+}

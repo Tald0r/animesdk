@@ -1,0 +1,165 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_0BDA461375E67B4B;
+class Class_2_37FEA7F793EE2199;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIHouseRhythmViewContext; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_CLICKCLOSEVIEWPAGE_OFFSET UNITYSDK_OFFSET(0x7A7B3B0)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_CLICKFULLSCREENINFO_OFFSET UNITYSDK_OFFSET(0x7A7C020)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_CLICKHIDEUIINFO_OFFSET UNITYSDK_OFFSET(0x7A7BD70)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_CLICKJUMPPERFORM_OFFSET UNITYSDK_OFFSET(0x7A7B470)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_CLOSEWITHCHANGEMAINCITYTIME_OFFSET UNITYSDK_OFFSET(0x7A7B610)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x7A7A9F0)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A7AA00)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0x7A7B280)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONMAINCITYLOADREADYHANDLE_OFFSET UNITYSDK_OFFSET(0x7A7BA30)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONMAINCITYTIMECHANGED_OFFSET UNITYSDK_OFFSET(0x7A7B830)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x7A7AF40)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A7B320)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A7AAA0)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A7ADD0)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONVIEWPAGECLOSED_OFFSET UNITYSDK_OFFSET(0x7A7BAE0)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_SETUIINFO_OFFSET UNITYSDK_OFFSET(0x7A7BDE0)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A7C090)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A7C0A0)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0x7A7C110)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x7A7C170)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A7C180)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A7C190)
+#define MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A7C1A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHouseRhythmViewPageController_TypeDefinitionIndex = 66723;
+
+	class UIHouseRhythmViewPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_0BDA461375E67B4B* _view; // 0x2F8
+		::MoleMole::UIHouseRhythmViewContext* context; // 0x300
+		::Class_2_37FEA7F793EE2199* _model; // 0x308
+		::System::Boolean waitHallRefresh; // 0x310
+		::System::Boolean nowUIInfoShow; // 0x311
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void ClickCloseViewPage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_CLICKCLOSEVIEWPAGE_OFFSET))(this);
+		}
+
+		::System::Void ClickJumpPerform()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_CLICKJUMPPERFORM_OFFSET))(this);
+		}
+
+		::System::Void CloseWithChangeMainCityTime()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_CLOSEWITHCHANGEMAINCITYTIME_OFFSET))(this);
+		}
+
+		::System::Void OnMainCityTimeChanged(::System::Boolean isSuccesss)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONMAINCITYTIMECHANGED_OFFSET))(this, isSuccesss);
+		}
+
+		::System::Void OnMainCityLoadReadyHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONMAINCITYLOADREADYHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnViewPageClosed()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_ONVIEWPAGECLOSED_OFFSET))(this);
+		}
+
+		::System::Void ClickHideUIInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_CLICKHIDEUIINFO_OFFSET))(this);
+		}
+
+		::System::Void ClickFullScreenInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_CLICKFULLSCREENINFO_OFFSET))(this);
+		}
+
+		::System::Void SetUIInfo(::System::Boolean active)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER_SETUIINFO_OFFSET))(this, active);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMVIEWPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

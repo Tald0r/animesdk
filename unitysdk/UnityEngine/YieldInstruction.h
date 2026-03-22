@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_YIELDINSTRUCTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1824B5D0)
+#define UNITYENGINE_YIELDINSTRUCTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4C1420)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int YieldInstruction_TypeDefinitionIndex = 4155;
+	inline static constexpr unsigned int YieldInstruction_TypeDefinitionIndex = 5375;
 
 	class YieldInstruction : public ::System::Object
 	{

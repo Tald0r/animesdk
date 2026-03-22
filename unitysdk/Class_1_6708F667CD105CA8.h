@@ -1,0 +1,85 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_C7E6991E78CB1409;
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define CLASS_1_6708F667CD105CA8_METHOD_1_1156AA9C8571A61E_OFFSET UNITYSDK_OFFSET(0x17CC38E0)
+#define CLASS_1_6708F667CD105CA8_METHOD_1_241FCB0507EB9FA1_OFFSET UNITYSDK_OFFSET(0x17CC3990)
+#define CLASS_1_6708F667CD105CA8_METHOD_1_3CBC005DD90168A6_OFFSET UNITYSDK_OFFSET(0x17CC37E0)
+#define CLASS_1_6708F667CD105CA8_METHOD_1_8633AE51B23EBDFD_1_OFFSET UNITYSDK_OFFSET(0x17CC3A00)
+#define CLASS_1_6708F667CD105CA8_METHOD_1_8633AE51B23EBDFD_OFFSET UNITYSDK_OFFSET(0x17CC39F0)
+#define CLASS_1_6708F667CD105CA8_METHOD_1_A239DF324AF4215D_OFFSET UNITYSDK_OFFSET(0x17CC35F0)
+#define CLASS_1_6708F667CD105CA8_METHOD_1_B09E78EE7EE4F8FA_OFFSET UNITYSDK_OFFSET(0x17CC36C0)
+#define CLASS_1_6708F667CD105CA8_METHOD_1_C229FF62B898C0B2_1_OFFSET UNITYSDK_OFFSET(0x17CC36B0)
+#define CLASS_1_6708F667CD105CA8_METHOD_1_C229FF62B898C0B2_OFFSET UNITYSDK_OFFSET(0x17CC36A0)
+#define CLASS_1_6708F667CD105CA8_METHOD_1_EC61075536D10822_OFFSET UNITYSDK_OFFSET(0x17CC3A10)
+#define CLASS_1_6708F667CD105CA8__CTOR_OFFSET UNITYSDK_OFFSET(0x17CC35E0)
+
+inline static constexpr unsigned int Class_1_6708F667CD105CA8_TypeDefinitionIndex = 49174;
+
+class Class_1_6708F667CD105CA8 : public ::System::Object
+{
+public:
+	::System::Collections::Generic::List_1<::Class_1_C7E6991E78CB1409*>* Field_1_3; // 0x10
+	::System::String* Field_1_0; // 0x18
+	::System::Double Field_1_2; // 0x20
+	::System::Double Field_1_1; // 0x28
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6708F667CD105CA8__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_A239DF324AF4215D()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6708F667CD105CA8_METHOD_1_A239DF324AF4215D_OFFSET))(this);
+	}
+
+	::System::Double Method_1_C229FF62B898C0B2()
+	{
+		return ((::System::Double(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6708F667CD105CA8_METHOD_1_C229FF62B898C0B2_OFFSET))(this);
+	}
+
+	::System::Double Method_1_C229FF62B898C0B2_1()
+	{
+		return ((::System::Double(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6708F667CD105CA8_METHOD_1_C229FF62B898C0B2_1_OFFSET))(this);
+	}
+
+	::System::Void Method_1_B09E78EE7EE4F8FA()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6708F667CD105CA8_METHOD_1_B09E78EE7EE4F8FA_OFFSET))(this);
+	}
+
+	::System::Void Method_1_3CBC005DD90168A6(::System::String* a1, ::System::Double a2, ::System::Double a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Double, ::System::Double))((::PBYTE)hIl2Cpp + CLASS_1_6708F667CD105CA8_METHOD_1_3CBC005DD90168A6_OFFSET))(this, a1, a2, a3);
+	}
+
+	static ::System::Int32 Method_1_1156AA9C8571A61E(::Class_1_C7E6991E78CB1409* a1, ::Class_1_C7E6991E78CB1409* a2)
+	{
+		return ((::System::Int32(*)(::Class_1_C7E6991E78CB1409*, ::Class_1_C7E6991E78CB1409*))((::PBYTE)hIl2Cpp + CLASS_1_6708F667CD105CA8_METHOD_1_1156AA9C8571A61E_OFFSET))(a1, a2);
+	}
+
+	::System::Collections::Generic::List_1<::Class_1_C7E6991E78CB1409*>* Method_1_241FCB0507EB9FA1()
+	{
+		return ((::System::Collections::Generic::List_1<::Class_1_C7E6991E78CB1409*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_6708F667CD105CA8_METHOD_1_241FCB0507EB9FA1_OFFSET))(this);
+	}
+
+	::System::Void Method_1_8633AE51B23EBDFD(::System::Double a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Double))((::PBYTE)hIl2Cpp + CLASS_1_6708F667CD105CA8_METHOD_1_8633AE51B23EBDFD_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_8633AE51B23EBDFD_1(::System::Double a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Double))((::PBYTE)hIl2Cpp + CLASS_1_6708F667CD105CA8_METHOD_1_8633AE51B23EBDFD_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_EC61075536D10822(::Class_1_C7E6991E78CB1409* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_C7E6991E78CB1409*))((::PBYTE)hIl2Cpp + CLASS_1_6708F667CD105CA8_METHOD_1_EC61075536D10822_OFFSET))(this, a1);
+	}
+};

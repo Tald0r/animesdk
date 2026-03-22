@@ -10,7 +10,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerator
 
 namespace System::Collections::Generic
 {
-	inline static constexpr unsigned int Queue_1_TypeDefinitionIndex = 2995;
+	inline static constexpr unsigned int Queue_1_TypeDefinitionIndex = 3956;
 
 	template <typename T>
 	class Queue_1 : public ::System::Object
@@ -22,5 +22,7 @@ namespace System::Collections::Generic
 		::System::Int32 _size; // 0x0
 		::System::Int32 _version; // 0x0
 		::System::Object* _syncRoot; // 0x0
+		// static const ::System::Int32 MinimumGrow = 0x4; // 0x0
+		// static const ::System::Int32 GrowFactor = 0xC8; // 0x0
 	};
 }

@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_CANNOTUNLOADAPPDOMAINEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15B077B0)
-#define SYSTEM_CANNOTUNLOADAPPDOMAINEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15B07820)
-#define SYSTEM_CANNOTUNLOADAPPDOMAINEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15B07710)
+#define SYSTEM_CANNOTUNLOADAPPDOMAINEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x189752D0)
+#define SYSTEM_CANNOTUNLOADAPPDOMAINEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x18975340)
+#define SYSTEM_CANNOTUNLOADAPPDOMAINEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x18975230)
 
 namespace System
 {
-	inline static constexpr unsigned int CannotUnloadAppDomainException_TypeDefinitionIndex = 209;
+	inline static constexpr unsigned int CannotUnloadAppDomainException_TypeDefinitionIndex = 197;
 
 	class CannotUnloadAppDomainException : public ::System::SystemException
 	{

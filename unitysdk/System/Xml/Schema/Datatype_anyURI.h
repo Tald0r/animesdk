@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/Datatype_anySimpleType.h"
+#include "unitysdk/System/Xml/Schema/RestrictionFlags.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaWhiteSpace.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 
@@ -14,31 +15,33 @@ namespace System::Xml::Schema { class FacetsChecker; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_COMPARE_OFFSET UNITYSDK_OFFSET(0x17D69450)
-#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D692C0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x17D69440)
-#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x17D69310)
-#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D693E0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D69370)
-#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D69380)
-#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x17D694D0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D69720)
-#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI__CTOR_OFFSET UNITYSDK_OFFSET(0x17D62C60)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_COMPARE_OFFSET UNITYSDK_OFFSET(0x18C6E2B0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x18C6E100)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x18C6E290)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x18C6E150)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_HASVALUEFACETS_OFFSET UNITYSDK_OFFSET(0x18C6E220)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x18C6E230)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x18C6E1B0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_VALIDRESTRICTIONFLAGS_OFFSET UNITYSDK_OFFSET(0x18C6E2A0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x18C6E1C0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x18C6E330)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI__CCTOR_OFFSET UNITYSDK_OFFSET(0x18C6E620)
+#define SYSTEM_XML_SCHEMA_DATATYPE_ANYURI__CTOR_OFFSET UNITYSDK_OFFSET(0x18C6E580)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_anyURI_TypeDefinitionIndex = 2102;
+	inline static constexpr unsigned int Datatype_anyURI_TypeDefinitionIndex = 2017;
 
 	class Datatype_anyURI : public ::System::Xml::Schema::Datatype_anySimpleType
 	{
 	public:
-		static ::System::Type** StaticGet_listValueType()
-		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_anyURI_TypeDefinitionIndex)->GetStaticField(0x140C0);
-		}
 		static ::System::Type** StaticGet_atomicValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_anyURI_TypeDefinitionIndex)->GetStaticField(0x140C8);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_anyURI_TypeDefinitionIndex)->GetStaticField(0x18D0);
+		}
+		static ::System::Type** StaticGet_listValueType()
+		{
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_anyURI_TypeDefinitionIndex)->GetStaticField(0x18D8);
 		}
 
 		::System::Void _ctor()
@@ -71,6 +74,11 @@ namespace System::Xml::Schema
 			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_VALUETYPE_OFFSET))(this);
 		}
 
+		::System::Boolean get_HasValueFacets()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_HASVALUEFACETS_OFFSET))(this);
+		}
+
 		::System::Type* get_ListValueType()
 		{
 			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_LISTVALUETYPE_OFFSET))(this);
@@ -79,6 +87,11 @@ namespace System::Xml::Schema
 		::System::Xml::Schema::XmlSchemaWhiteSpace get_BuiltInWhitespaceFacet()
 		{
 			return ((::System::Xml::Schema::XmlSchemaWhiteSpace(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_BUILTINWHITESPACEFACET_OFFSET))(this);
+		}
+
+		::System::Xml::Schema::RestrictionFlags get_ValidRestrictionFlags()
+		{
+			return ((::System::Xml::Schema::RestrictionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_ANYURI_GET_VALIDRESTRICTIONFLAGS_OFFSET))(this);
 		}
 
 		::System::Int32 Compare(::System::Object* value1, ::System::Object* value2)

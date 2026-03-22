@@ -4,74 +4,80 @@
 
 namespace System { class String; }
 
-#define CLASS_1_54A71F2B374F1F5D_1__CCTOR_OFFSET UNITYSDK_OFFSET(0x15E73B90)
-#define CLASS_1_54A71F2B374F1F5D_1__CTOR_OFFSET UNITYSDK_OFFSET(0x15E73B80)
+#define CLASS_1_54A71F2B374F1F5D_1__CCTOR_OFFSET UNITYSDK_OFFSET(0x84BE250)
 
-inline static constexpr unsigned int Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex = 31236;
+inline static constexpr unsigned int Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex = 54316;
 
 class Class_1_54A71F2B374F1F5D_1 : public ::System::Object
 {
 public:
-	static ::System::String** StaticGet_Field_1_21()
+	static ::System::String** StaticGet_Field_1_42()
 	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x2F50);
+		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x37280);
 	}
-	static ::System::String** StaticGet_Field_1_10()
+	static ::System::String** StaticGet_Field_1_41()
 	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x2F58);
+		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x37288);
 	}
-	static ::System::String** StaticGet_Field_1_18()
+	static ::System::String** StaticGet_Field_1_45()
 	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x2F60);
+		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x37290);
 	}
-	static ::System::String** StaticGet_Field_1_6()
+	static ::System::String** StaticGet_Field_1_43()
 	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x2F68);
+		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x37298);
 	}
-	static ::System::String** StaticGet_Field_1_17()
+	static ::System::String** StaticGet_Field_1_40()
 	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x2F70);
+		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x372A0);
 	}
-	static ::System::String** StaticGet_Field_1_1()
+	static ::System::String** StaticGet_Field_1_44()
 	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x2F78);
+		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x372A8);
 	}
-	static ::System::String** StaticGet_Field_1_13()
+	static ::System::String** StaticGet_Field_1_39()
 	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x2F80);
-	}
-	static ::System::String** StaticGet_Field_1_8()
-	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x2F88);
-	}
-	static ::System::String** StaticGet_Field_1_9()
-	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x2F90);
-	}
-	static ::System::String** StaticGet_Field_1_16()
-	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x2F98);
-	}
-	static ::System::String** StaticGet_Field_1_7()
-	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x2FA0);
+		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Class_1_54A71F2B374F1F5D_1_TypeDefinitionIndex)->GetStaticField(0x372B0);
 	}
 	// static const ::System::String* Field_1_0; // 0x0
+	// static const ::System::String* Field_1_1; // 0x0
 	// static const ::System::String* Field_1_2; // 0x0
 	// static const ::System::String* Field_1_3; // 0x0
 	// static const ::System::String* Field_1_4; // 0x0
 	// static const ::System::String* Field_1_5; // 0x0
+	// static const ::System::String* Field_1_6; // 0x0
+	// static const ::System::String* Field_1_7; // 0x0
+	// static const ::System::String* Field_1_8; // 0x0
+	// static const ::System::String* Field_1_9; // 0x0
+	// static const ::System::String* Field_1_10; // 0x0
 	// static const ::System::String* Field_1_11; // 0x0
 	// static const ::System::String* Field_1_12; // 0x0
+	// static const ::System::String* Field_1_13; // 0x0
 	// static const ::System::String* Field_1_14; // 0x0
 	// static const ::System::String* Field_1_15; // 0x0
+	// static const ::System::String* Field_1_16; // 0x0
+	// static const ::System::String* Field_1_17; // 0x0
+	// static const ::System::String* Field_1_18; // 0x0
 	// static const ::System::String* Field_1_19; // 0x0
 	// static const ::System::String* Field_1_20; // 0x0
-
-	::System::Void _ctor()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_54A71F2B374F1F5D_1__CTOR_OFFSET))(this);
-	}
+	// static const ::System::String* Field_1_21; // 0x0
+	// static const ::System::String* Field_1_22; // 0x0
+	// static const ::System::String* Field_1_23; // 0x0
+	// static const ::System::String* Field_1_24; // 0x0
+	// static const ::System::Int32 Field_1_25 = 0x2711; // 0x0
+	// static const ::System::Int32 Field_1_26 = 0x2710; // 0x0
+	// static const ::System::String* Field_1_27; // 0x0
+	// static const ::System::String* Field_1_28; // 0x0
+	// static const ::System::String* Field_1_29; // 0x0
+	// static const ::System::String* Field_1_30; // 0x0
+	// static const ::System::String* Field_1_31; // 0x0
+	// static const ::System::String* Field_1_32; // 0x0
+	// static const ::System::String* Field_1_33; // 0x0
+	// static const ::System::String* Field_1_34; // 0x0
+	// static const ::System::String* Field_1_35; // 0x0
+	// static const ::System::String* Field_1_36; // 0x0
+	// static const ::System::String* Field_1_37; // 0x0
+	// static const ::System::String* Field_1_38; // 0x0
 
 	static ::System::Void _cctor()
 	{

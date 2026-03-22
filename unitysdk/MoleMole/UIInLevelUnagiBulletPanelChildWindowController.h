@@ -1,0 +1,98 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MonoCustomPropertyUIControllerBase.h"
+
+class Class_2_2930B6D633C2701E_7;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIInLevelUnagiBulletWidgetChildWindowController; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_COLLECTALLANIMATIONCOMPONENTS_OFFSET UNITYSDK_OFFSET(0xA3C0680)
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xA3BFDB0)
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_HANDLEALLCUSTOMPROPERTIESONSHOW_OFFSET UNITYSDK_OFFSET(0xA3BFF30)
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_HANDLECUSTOMPROPERTY_OFFSET UNITYSDK_OFFSET(0xA3C0000)
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_ONATTACHENTITY_OFFSET UNITYSDK_OFFSET(0xA3C06E0)
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3BFDC0)
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3BFE60)
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_RECREATEITEMLIST_OFFSET UNITYSDK_OFFSET(0xA3C0240)
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA3C07A0)
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER___BASE_ONATTACHENTITY_OFFSET UNITYSDK_OFFSET(0xA3C0830)
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3C0890)
+#define MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3C0900)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelUnagiBulletPanelChildWindowController_TypeDefinitionIndex = 74773;
+
+	class UIInLevelUnagiBulletPanelChildWindowController : public ::MonoCustomPropertyUIControllerBase
+	{
+	public:
+		::System::Collections::Generic::List_1<::MoleMole::UIInLevelUnagiBulletWidgetChildWindowController*>* _itemList; // 0x330
+		::System::Boolean _isFullLightFlameOn; // 0x338
+		::Class_2_2930B6D633C2701E_7* _view; // 0x340
+		::System::Int32 _maxMagicCount; // 0x348
+		::System::Int32 _curMagicCount; // 0x34C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void HandleAllCustomPropertiesOnShow()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_HANDLEALLCUSTOMPROPERTIESONSHOW_OFFSET))(this);
+		}
+
+		::System::Void HandleCustomProperty(::System::String* customTypePlaceholder, ::System::Double oldValue, ::System::Double newValue, ::System::Boolean ignoreAnimation)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Double, ::System::Double, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_HANDLECUSTOMPROPERTY_OFFSET))(this, customTypePlaceholder, oldValue, newValue, ignoreAnimation);
+		}
+
+		::System::Void CollectAllAnimationComponents()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_COLLECTALLANIMATIONCOMPONENTS_OFFSET))(this);
+		}
+
+		::System::Void OnAttachEntity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_ONATTACHENTITY_OFFSET))(this);
+		}
+
+		::System::Void RecreateItemList(::System::Int32 num)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER_RECREATEITEMLIST_OFFSET))(this, num);
+		}
+
+		::System::Void __base_OnAttachEntity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER___BASE_ONATTACHENTITY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELUNAGIBULLETPANELCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+	};
+}

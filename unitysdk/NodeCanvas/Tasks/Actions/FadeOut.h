@@ -1,0 +1,33 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/NodeCanvas/Framework/ActionTask.h"
+
+#define NODECANVAS_TASKS_ACTIONS_FADEOUT_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1975F9A0)
+#define NODECANVAS_TASKS_ACTIONS_FADEOUT_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1975F9D0)
+#define NODECANVAS_TASKS_ACTIONS_FADEOUT__CTOR_OFFSET UNITYSDK_OFFSET(0x1975FAD0)
+
+namespace NodeCanvas::Tasks::Actions
+{
+	inline static constexpr unsigned int FadeOut_TypeDefinitionIndex = 26264;
+
+	class FadeOut : public ::NodeCanvas::Framework::ActionTask
+	{
+	public:
+		::System::Single fadeTime; // 0x60
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NODECANVAS_TASKS_ACTIONS_FADEOUT__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnExecute()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NODECANVAS_TASKS_ACTIONS_FADEOUT_ONEXECUTE_OFFSET))(this);
+		}
+
+		::System::Void OnUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NODECANVAS_TASKS_ACTIONS_FADEOUT_ONUPDATE_OFFSET))(this);
+		}
+	};
+}

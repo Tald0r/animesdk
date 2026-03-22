@@ -1,0 +1,75 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/BinaryBundleLib/Runtime/BinaryBundleFileEntryInfo.h"
+#include "unitysdk/Class_1_929E686C2F593C85.h"
+#include "unitysdk/Enum_3_13BF739DB2F051E5.h"
+
+class Class_1_24527869B3D2620F;
+class Class_1_468101999ADA762F;
+class Class_1_6B726127E0C2F7BF;
+namespace System { class Object; }
+
+#define CLASS_2_3B8FFB4B4C429CEF_METHOD_2_06330CD58CB602B6_OFFSET UNITYSDK_OFFSET(0x19B16DB0)
+#define CLASS_2_3B8FFB4B4C429CEF_METHOD_2_151E25A63D14DDB0_OFFSET UNITYSDK_OFFSET(0x19B17020)
+#define CLASS_2_3B8FFB4B4C429CEF_METHOD_2_2F852B703EBC20D1_OFFSET UNITYSDK_OFFSET(0x19B166F0)
+#define CLASS_2_3B8FFB4B4C429CEF_METHOD_2_8706B4640D53FE36_1_OFFSET UNITYSDK_OFFSET(0x19B17270)
+#define CLASS_2_3B8FFB4B4C429CEF_METHOD_2_8706B4640D53FE36_OFFSET UNITYSDK_OFFSET(0x19B17150)
+#define CLASS_2_3B8FFB4B4C429CEF_METHOD_2_96189EDEF38976A6_OFFSET UNITYSDK_OFFSET(0x19B16780)
+#define CLASS_2_3B8FFB4B4C429CEF_METHOD_2_9681042564541CD6_OFFSET UNITYSDK_OFFSET(0x19B16FA0)
+#define CLASS_2_3B8FFB4B4C429CEF_METHOD_2_9BAF6D2146BD16A1_OFFSET UNITYSDK_OFFSET(0x19B17250)
+#define CLASS_2_3B8FFB4B4C429CEF__CTOR_OFFSET UNITYSDK_OFFSET(0x19B16610)
+
+inline static constexpr unsigned int Class_2_3B8FFB4B4C429CEF_TypeDefinitionIndex = 30874;
+
+class Class_2_3B8FFB4B4C429CEF : public ::Class_1_929E686C2F593C85
+{
+public:
+	::Class_1_24527869B3D2620F* Field_2_2; // 0x48
+	::BinaryBundleLib::Runtime::BinaryBundleFileEntryInfo Field_2_0; // 0x50
+	::Class_1_6B726127E0C2F7BF* Field_2_1; // 0x78
+
+	::System::Void _ctor(::Class_1_468101999ADA762F* a1, ::System::Int64 a2, ::Enum_3_13BF739DB2F051E5 a3, ::BinaryBundleLib::Runtime::BinaryBundleFileEntryInfo a4)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_468101999ADA762F*, ::System::Int64, ::Enum_3_13BF739DB2F051E5, ::BinaryBundleLib::Runtime::BinaryBundleFileEntryInfo))((::PBYTE)hIl2Cpp + CLASS_2_3B8FFB4B4C429CEF__CTOR_OFFSET))(this, a1, a2, a3, a4);
+	}
+
+	::System::Object* Method_2_2F852B703EBC20D1()
+	{
+		return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_3B8FFB4B4C429CEF_METHOD_2_2F852B703EBC20D1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_96189EDEF38976A6()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_3B8FFB4B4C429CEF_METHOD_2_96189EDEF38976A6_OFFSET))(this);
+	}
+
+	::System::Void Method_2_06330CD58CB602B6()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_3B8FFB4B4C429CEF_METHOD_2_06330CD58CB602B6_OFFSET))(this);
+	}
+
+	::System::Void Method_2_151E25A63D14DDB0()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_3B8FFB4B4C429CEF_METHOD_2_151E25A63D14DDB0_OFFSET))(this);
+	}
+
+	::System::Void Method_2_8706B4640D53FE36()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_3B8FFB4B4C429CEF_METHOD_2_8706B4640D53FE36_OFFSET))(this);
+	}
+
+	::BinaryBundleLib::Runtime::BinaryBundleFileEntryInfo Method_2_9BAF6D2146BD16A1()
+	{
+		return ((::BinaryBundleLib::Runtime::BinaryBundleFileEntryInfo(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_3B8FFB4B4C429CEF_METHOD_2_9BAF6D2146BD16A1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_9681042564541CD6()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_3B8FFB4B4C429CEF_METHOD_2_9681042564541CD6_OFFSET))(this);
+	}
+
+	::System::Void Method_2_8706B4640D53FE36_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_3B8FFB4B4C429CEF_METHOD_2_8706B4640D53FE36_1_OFFSET))(this);
+	}
+};

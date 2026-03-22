@@ -4,12 +4,13 @@
 
 namespace UnityEngine::UI { class VertexHelper; }
 
-#define UNITYENGINE_UI_OUTLINE_MODIFYMESH_OFFSET UNITYSDK_OFFSET(0x183308D0)
-#define UNITYENGINE_UI_OUTLINE__CTOR_OFFSET UNITYSDK_OFFSET(0x18330890)
+#define UNITYENGINE_UI_OUTLINE_MODIFYMESH_OFFSET UNITYSDK_OFFSET(0x1A424C20)
+#define UNITYENGINE_UI_OUTLINE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A424B90)
+#define UNITYENGINE_UI_OUTLINE___BASE_MODIFYMESH_OFFSET UNITYSDK_OFFSET(0x1A4250E0)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int Outline_TypeDefinitionIndex = 5658;
+	inline static constexpr unsigned int Outline_TypeDefinitionIndex = 8465;
 
 	class Outline : public ::UnityEngine::UI::Shadow
 	{
@@ -22,6 +23,11 @@ namespace UnityEngine::UI
 		::System::Void ModifyMesh(::UnityEngine::UI::VertexHelper* vh)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_OUTLINE_MODIFYMESH_OFFSET))(this, vh);
+		}
+
+		::System::Void __base_ModifyMesh(::UnityEngine::UI::VertexHelper* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_OUTLINE___BASE_MODIFYMESH_OFFSET))(this, P0);
 		}
 	};
 }

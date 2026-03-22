@@ -2,22 +2,35 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ComponentModel/TypeConverter_SimplePropertyDescriptor.h"
 
+namespace System { class Object; }
 namespace System { class Type; }
 
-#define SYSTEM_COMPONENTMODEL_ARRAYCONVERTER_ARRAYPROPERTYDESCRIPTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x17E6A800)
+#define SYSTEM_COMPONENTMODEL_ARRAYCONVERTER_ARRAYPROPERTYDESCRIPTOR_GETVALUE_OFFSET UNITYSDK_OFFSET(0x1822CBA0)
+#define SYSTEM_COMPONENTMODEL_ARRAYCONVERTER_ARRAYPROPERTYDESCRIPTOR_SETVALUE_OFFSET UNITYSDK_OFFSET(0x1822CC20)
+#define SYSTEM_COMPONENTMODEL_ARRAYCONVERTER_ARRAYPROPERTYDESCRIPTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1822CB30)
 
 namespace System::ComponentModel
 {
-	inline static constexpr unsigned int ArrayConverter_ArrayPropertyDescriptor_TypeDefinitionIndex = 2543;
+	inline static constexpr unsigned int ArrayConverter_ArrayPropertyDescriptor_TypeDefinitionIndex = 2810;
 
 	class ArrayConverter_ArrayPropertyDescriptor : public ::System::ComponentModel::TypeConverter_SimplePropertyDescriptor
 	{
 	public:
-		::System::Int32 index; // 0x90
+		::System::Int32 index; // 0x98
 
 		::System::Void _ctor(::System::Type* arrayType, ::System::Type* elementType, ::System::Int32 index)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Type*, ::System::Type*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_ARRAYCONVERTER_ARRAYPROPERTYDESCRIPTOR__CTOR_OFFSET))(this, arrayType, elementType, index);
+		}
+
+		::System::Object* GetValue(::System::Object* instance)
+		{
+			return ((::System::Object*(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_ARRAYCONVERTER_ARRAYPROPERTYDESCRIPTOR_GETVALUE_OFFSET))(this, instance);
+		}
+
+		::System::Void SetValue(::System::Object* instance, ::System::Object* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_ARRAYCONVERTER_ARRAYPROPERTYDESCRIPTOR_SETVALUE_OFFSET))(this, instance, value);
 		}
 	};
 }

@@ -1,0 +1,224 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_15A8EF2824547B27.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_0E5778BB52E10271;
+class Class_1_4F9417780723166C;
+class Class_2_60638234271CCDB8_66;
+class Class_2_86B3C791290970F4;
+class Class_2_CA67A9CEB871FFD3;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_GET_CANUNLOCK_OFFSET UNITYSDK_OFFSET(0xB8DCA70)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_GET_INITIALRELICMODEL_OFFSET UNITYSDK_OFFSET(0xB8DA6E0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_GET_INTERACTABLE_OFFSET UNITYSDK_OFFSET(0xB8DCA90)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_LOADIMG_OFFSET UNITYSDK_OFFSET(0xB8DC820)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xB8DC5A0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONCLICKSELECT_OFFSET UNITYSDK_OFFSET(0xB8DA4A0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB8DBFE0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONINITIALRELICDATAUPDATE_OFFSET UNITYSDK_OFFSET(0xB8DA540)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xB8DC4D0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0xB8DA220)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB8DC2A0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB8DC140)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB8D9F50)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB8DA170)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_PLAYFRAMETEXTURE_OFFSET UNITYSDK_OFFSET(0xB8DC650)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_REFRESHINITIALRELICVIEW_OFFSET UNITYSDK_OFFSET(0xB8DA830)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_REGEVENTS_OFFSET UNITYSDK_OFFSET(0xB8DA360)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_SETCLICKCALLBACK_OFFSET UNITYSDK_OFFSET(0xB8DA430)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_SETLOCKED_OFFSET UNITYSDK_OFFSET(0xB8DC9D0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_SET_CANUNLOCK_OFFSET UNITYSDK_OFFSET(0xB8DCA80)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_SET_INTERACTABLE_OFFSET UNITYSDK_OFFSET(0xB8DCAA0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_UNREGEVENTS_OFFSET UNITYSDK_OFFSET(0xB8DA2E0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB8DCAB0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xB8DCAC0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB8DCAD0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xB8DCB40)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0xB8DCBB0)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB8DCC10)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB8DCC90)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB8DCD10)
+#define MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB8DCD70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAbyssS2RelicRowWidgetController_TypeDefinitionIndex = 44918;
+
+	class UIAbyssS2RelicRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_60638234271CCDB8_66* _view; // 0x2D0
+		::System::Action_1<::Class_1_0E5778BB52E10271*>* _clickCallBack; // 0x2D8
+		::Class_1_0E5778BB52E10271* _cacheData; // 0x2E0
+		::System::Boolean _CanUnlock_k__BackingField; // 0x2E8
+		::System::Boolean _Interactable_k__BackingField; // 0x2E9
+		::Class_1_4F9417780723166C* _relicData; // 0x2F0
+		::System::Int32 m_relicID; // 0x2F8
+		::System::UInt32 m_objUID; // 0x2FC
+		::Class_2_86B3C791290970F4* m_initialRelicModel; // 0x300
+		::Enum_3_15A8EF2824547B27 m_showType; // 0x308
+		::System::Boolean _isLocked; // 0x30C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void RegEvents()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_REGEVENTS_OFFSET))(this);
+		}
+
+		::System::Void SetClickCallBack(::System::Action_1<::Class_1_0E5778BB52E10271*>* clickCallBack)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::Class_1_0E5778BB52E10271*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_SETCLICKCALLBACK_OFFSET))(this, clickCallBack);
+		}
+
+		::System::Void OnClickSelect(::Class_1_0E5778BB52E10271* curData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0E5778BB52E10271*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONCLICKSELECT_OFFSET))(this, curData);
+		}
+
+		::System::Void OnInitialRelicDataUpdate(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONINITIALRELICDATAUPDATE_OFFSET))(this, args);
+		}
+
+		::System::Void UnRegEvents()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_UNREGEVENTS_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void PlayFrameTexture(::Class_2_CA67A9CEB871FFD3* controlImage, ::System::String* key, ::System::Boolean gray)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_CA67A9CEB871FFD3*, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_PLAYFRAMETEXTURE_OFFSET))(this, controlImage, key, gray);
+		}
+
+		::System::Void LoadImg(::Class_2_CA67A9CEB871FFD3* controlImage, ::System::String* iconPath, ::System::Boolean gray)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_CA67A9CEB871FFD3*, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_LOADIMG_OFFSET))(this, controlImage, iconPath, gray);
+		}
+
+		::System::Void RefreshInitialRelicView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_REFRESHINITIALRELICVIEW_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanUnlock()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_GET_CANUNLOCK_OFFSET))(this);
+		}
+
+		::System::Void set_CanUnlock(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_SET_CANUNLOCK_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_Interactable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_GET_INTERACTABLE_OFFSET))(this);
+		}
+
+		::System::Void set_Interactable(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_SET_INTERACTABLE_OFFSET))(this, value);
+		}
+
+		::System::Void SetLocked(::System::Boolean locked)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_SETLOCKED_OFFSET))(this, locked);
+		}
+
+		::Class_2_86B3C791290970F4* get_InitialRelicModel()
+		{
+			return ((::Class_2_86B3C791290970F4*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER_GET_INITIALRELICMODEL_OFFSET))(this);
+		}
+
+		::System::Void __base_OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2RELICROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

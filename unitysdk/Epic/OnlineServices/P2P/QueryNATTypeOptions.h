@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define EPIC_ONLINESERVICES_P2P_QUERYNATTYPEOPTIONS__CTOR_OFFSET UNITYSDK_OFFSET(0x83762E0)
+#define EPIC_ONLINESERVICES_P2P_QUERYNATTYPEOPTIONS__CTOR_OFFSET UNITYSDK_OFFSET(0x19AE9590)
 
 namespace Epic::OnlineServices::P2P
 {
-	inline static constexpr unsigned int QueryNATTypeOptions_TypeDefinitionIndex = 34986;
+	inline static constexpr unsigned int QueryNATTypeOptions_TypeDefinitionIndex = 32475;
 
 	class QueryNATTypeOptions : public ::System::Object
 	{

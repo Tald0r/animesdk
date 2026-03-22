@@ -3,21 +3,12 @@
 #include "unitysdk/Mono/RuntimeStructs_RemoteClass.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MONO_RUNTIMEREMOTECLASSHANDLE_GET_PROXYCLASS_OFFSET UNITYSDK_OFFSET(0x1FFD610)
-
 namespace Mono
 {
-	inline static constexpr unsigned int RuntimeRemoteClassHandle_TypeDefinitionIndex = 6;
+	inline static constexpr unsigned int RuntimeRemoteClassHandle_TypeDefinitionIndex = 9;
 
 	struct alignas(8) RuntimeRemoteClassHandle
 	{
 		::Mono::RuntimeStructs_RemoteClass* value; // 0x10
-
-		/*
-		::Mono::RuntimeClassHandle get_ProxyClass()
-		{
-			return ((::Mono::RuntimeClassHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_RUNTIMEREMOTECLASSHANDLE_GET_PROXYCLASS_OFFSET))(this);
-		}
-		*/
 	};
 }

@@ -3,7 +3,7 @@
 
 namespace System
 {
-	inline static constexpr unsigned int Handles_TypeDefinitionIndex = 459;
+	inline static constexpr unsigned int Handles_TypeDefinitionIndex = 445;
 
 	enum class Handles : ::System::Int32
 	{

@@ -1,0 +1,92 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_69CBB7FF0BE6A673_18;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x6CE31B0)
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_GET_BUFFROOT2_OFFSET UNITYSDK_OFFSET(0x6CE2E60)
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_GET_BUFFROOT_OFFSET UNITYSDK_OFFSET(0x6CE2DE0)
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x6CE3030)
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x6CE30D0)
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x6CE2EE0)
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x6CE2F80)
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x6CE3220)
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x6CE3250)
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x6CE32C0)
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x6CE3340)
+#define MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x6CE33A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMonsterFantasyHudBuffWidgetController_TypeDefinitionIndex = 45015;
+
+	class UIMonsterFantasyHudBuffWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_69CBB7FF0BE6A673_18* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::UnityEngine::Transform* get_BuffRoot()
+		{
+			return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_GET_BUFFROOT_OFFSET))(this);
+		}
+
+		::UnityEngine::Transform* get_BuffRoot2()
+		{
+			return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_GET_BUFFROOT2_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER_DISPOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYHUDBUFFWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,58 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/TurnBattleEntityUnit.h"
+
+class Class_2_2DFF2C3A1B28473E;
+class Class_3_1A1D7F575F611658;
+
+#define MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT_NEWSNAPSHOT_OFFSET UNITYSDK_OFFSET(0xB315AA0)
+#define MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT_ONTURNOVER_OFFSET UNITYSDK_OFFSET(0xB315860)
+#define MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT_ONTURNSTART_OFFSET UNITYSDK_OFFSET(0xB3155B0)
+#define MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT__CTOR_OFFSET UNITYSDK_OFFSET(0xB3155A0)
+#define MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT___BASE_NEWSNAPSHOT_OFFSET UNITYSDK_OFFSET(0xB315B40)
+#define MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT___BASE_ONTURNOVER_OFFSET UNITYSDK_OFFSET(0xB315B50)
+#define MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT___BASE_ONTURNSTART_OFFSET UNITYSDK_OFFSET(0xB315B60)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int TurnBattleEntityDummyUnit_TypeDefinitionIndex = 49032;
+
+	class TurnBattleEntityDummyUnit : public ::MoleMole::TurnBattleEntityUnit
+	{
+	public:
+		::System::Void _ctor(::Class_3_1A1D7F575F611658* sourceSnapshot)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_1A1D7F575F611658*))((::PBYTE)hIl2Cpp + MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT__CTOR_OFFSET))(this, sourceSnapshot);
+		}
+
+		::System::Void OnTurnStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT_ONTURNSTART_OFFSET))(this);
+		}
+
+		::System::Void OnTurnOver()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT_ONTURNOVER_OFFSET))(this);
+		}
+
+		::Class_2_2DFF2C3A1B28473E* NewSnapshot()
+		{
+			return ((::Class_2_2DFF2C3A1B28473E*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT_NEWSNAPSHOT_OFFSET))(this);
+		}
+
+		::Class_2_2DFF2C3A1B28473E* __base_NewSnapshot()
+		{
+			return ((::Class_2_2DFF2C3A1B28473E*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT___BASE_NEWSNAPSHOT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnTurnOver()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT___BASE_ONTURNOVER_OFFSET))(this);
+		}
+
+		::System::Void __base_OnTurnStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TURNBATTLEENTITYDUMMYUNIT___BASE_ONTURNSTART_OFFSET))(this);
+		}
+	};
+}

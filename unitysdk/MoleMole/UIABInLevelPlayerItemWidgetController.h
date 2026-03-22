@@ -1,0 +1,213 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+#include "unitysdk/MoleMole/UIABInLevelPlayerItemWidgetController_ToastType.h"
+#include "unitysdk/System/ValueTuple_2.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_2_A00C43D6DDE43DC2_1;
+class Class_2_A00C43D6DDE43DC2_1_Class_2_0EF245B87F02A5C0_4;
+class Class_2_A00C43D6DDE43DC2_1_Class_2_B2B3577F24704706;
+class Class_2_E71E286B10A21FB0;
+namespace MoleMole { class UIABPlayerItemMoveScript; }
+namespace MoleMole { class UIABStandbyPhaseWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class Queue_1; }
+
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_BINDVIEW_OFFSET UNITYSDK_OFFSET(0xD1B0A80)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_CHECKSHOWTOAST_OFFSET UNITYSDK_OFFSET(0xD1B1710)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_GETMOVESCRIPT_OFFSET UNITYSDK_OFFSET(0xD1B1370)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_GETPLAYERENTITYID_OFFSET UNITYSDK_OFFSET(0xD1B15E0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_GETPOSITION_OFFSET UNITYSDK_OFFSET(0xD1B1510)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0xD1B1D90)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xD1B1050)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD1B07B0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xD1B10E0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xD1B09B0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD1B08D0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD1B0500)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_TOGGLEAUTHORITY_OFFSET UNITYSDK_OFFSET(0xD1B12A0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__BINDVIEW_B__26_0_OFFSET UNITYSDK_OFFSET(0xD1B1FA0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__BINDVIEW_B__26_1_OFFSET UNITYSDK_OFFSET(0xD1B2530)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__BINDVIEW_B__26_2_OFFSET UNITYSDK_OFFSET(0xD1B2950)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__BINDVIEW_B__26_3_OFFSET UNITYSDK_OFFSET(0xD1B2CC0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__BINDVIEW_B__26_4_OFFSET UNITYSDK_OFFSET(0xD1B3020)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__CHECKSHOWTOAST_B__28_0_OFFSET UNITYSDK_OFFSET(0xD1B35B0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__CHECKSHOWTOAST_B__28_1_OFFSET UNITYSDK_OFFSET(0xD1B3620)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__CHECKSHOWTOAST_B__28_2_OFFSET UNITYSDK_OFFSET(0xD1B36C0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD1B1F10)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xD1B3730)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD1B3740)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xD1B37B0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xD1B3820)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD1B38A0)
+#define MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD1B3920)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIABInLevelPlayerItemWidgetController_TypeDefinitionIndex = 41293;
+
+	class UIABInLevelPlayerItemWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		// static const ::System::String* TOAST_FADEIN; // 0x0
+		// static const ::System::String* TOAST_FADEOUT; // 0x0
+		// static const ::System::String* TOAST_WIN; // 0x0
+		// static const ::System::String* TOAST_LOSE; // 0x0
+		// static const ::System::String* TOAST_LEVELUP; // 0x0
+		::Class_2_A00C43D6DDE43DC2_1* _view; // 0x2D0
+		::Class_1_48D56DACBE4271BC* _syncHelper; // 0x2D8
+		::Class_1_48D56DACBE4271BC* _syncHelper_lvl; // 0x2E0
+		::Class_1_48D56DACBE4271BC* _syncHelper_hp; // 0x2E8
+		::Class_2_E71E286B10A21FB0* _data; // 0x2F0
+		::Class_2_A00C43D6DDE43DC2_1_Class_2_B2B3577F24704706* _normalView; // 0x2F8
+		::Class_2_A00C43D6DDE43DC2_1_Class_2_0EF245B87F02A5C0_4* _deathView; // 0x300
+		::MoleMole::UIABStandbyPhaseWidgetController* _parent; // 0x308
+		::MoleMole::UIABPlayerItemMoveScript* _moveScript; // 0x310
+		::System::Collections::Generic::Queue_1<::System::ValueTuple_2<::MoleMole::UIABInLevelPlayerItemWidgetController_ToastType, ::System::Int32>>* _toastQueue; // 0x318
+		::System::Boolean _isOnToast; // 0x320
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void ToggleAuthority(::Class_2_E71E286B10A21FB0* localPlayer)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_E71E286B10A21FB0*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_TOGGLEAUTHORITY_OFFSET))(this, localPlayer);
+		}
+
+		::MoleMole::UIABPlayerItemMoveScript* GetMoveScript()
+		{
+			return ((::MoleMole::UIABPlayerItemMoveScript*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_GETMOVESCRIPT_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 GetPosition()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_GETPOSITION_OFFSET))(this);
+		}
+
+		::System::UInt32 GetPlayerEntityId()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_GETPLAYERENTITYID_OFFSET))(this);
+		}
+
+		::System::Void BindView(::Class_2_E71E286B10A21FB0* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_E71E286B10A21FB0*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_BINDVIEW_OFFSET))(this, data);
+		}
+
+		::System::Void CheckShowToast()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_CHECKSHOWTOAST_OFFSET))(this);
+		}
+
+		::System::Void LateUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER_LATEUPDATE_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__26_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__BINDVIEW_B__26_0_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__26_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__BINDVIEW_B__26_1_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__26_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__BINDVIEW_B__26_2_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__26_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__BINDVIEW_B__26_3_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__26_4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__BINDVIEW_B__26_4_OFFSET))(this);
+		}
+
+		::System::Void _CheckShowToast_b__28_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__CHECKSHOWTOAST_B__28_0_OFFSET))(this);
+		}
+
+		::System::Void _CheckShowToast_b__28_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__CHECKSHOWTOAST_B__28_1_OFFSET))(this);
+		}
+
+		::System::Void _CheckShowToast_b__28_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER__CHECKSHOWTOAST_B__28_2_OFFSET))(this);
+		}
+
+		::System::Void __base_OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABINLEVELPLAYERITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ForceMode_TypeDefinitionIndex = 5102;
+	inline static constexpr unsigned int ForceMode_TypeDefinitionIndex = 7645;
 
 	enum class ForceMode : ::System::Int32
 	{

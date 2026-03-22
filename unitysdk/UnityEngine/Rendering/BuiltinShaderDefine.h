@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int BuiltinShaderDefine_TypeDefinitionIndex = 4506;
+	inline static constexpr unsigned int BuiltinShaderDefine_TypeDefinitionIndex = 6177;
 
 	enum class BuiltinShaderDefine : ::System::Int32
 	{
@@ -35,5 +35,6 @@ namespace UnityEngine::Rendering
 		UNITY_LIGHTMAP_DLDR_ENCODING = 25,
 		UNITY_LIGHTMAP_RGBM_ENCODING = 26,
 		UNITY_LIGHTMAP_FULL_HDR = 27,
+		UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION = 28,
 	};
 }

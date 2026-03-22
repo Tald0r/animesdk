@@ -1,0 +1,44 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+#define PIPELINECAMERA_EASINGALPHAMODIFIER_EASEOUT_DODERIVATIVE_OFFSET UNITYSDK_OFFSET(0x1A89EBF0)
+#define PIPELINECAMERA_EASINGALPHAMODIFIER_EASEOUT_DOPROCESS_OFFSET UNITYSDK_OFFSET(0x1A89EB40)
+#define PIPELINECAMERA_EASINGALPHAMODIFIER_EASEOUT_PIPELINECAMERA_IALPHAMODIFIER_DERIVATIVE_OFFSET UNITYSDK_OFFSET(0x944D30)
+#define PIPELINECAMERA_EASINGALPHAMODIFIER_EASEOUT_PIPELINECAMERA_IALPHAMODIFIER_PROCESS_OFFSET UNITYSDK_OFFSET(0x944C00)
+#define PIPELINECAMERA_EASINGALPHAMODIFIER_EASEOUT__CTOR_OFFSET UNITYSDK_OFFSET(0x2C4B00)
+
+namespace PipelineCamera::EasingAlphaModifier
+{
+	inline static constexpr unsigned int EaseOut_TypeDefinitionIndex = 34559;
+
+	struct alignas(4) EaseOut
+	{
+		::System::Single _exp; // 0x10
+
+		::System::Void _ctor(::System::Single exp)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + PIPELINECAMERA_EASINGALPHAMODIFIER_EASEOUT__CTOR_OFFSET))(this, exp);
+		}
+
+		static ::System::Single DoProcess(::System::Single alpha, ::System::Single exp)
+		{
+			return ((::System::Single(*)(::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + PIPELINECAMERA_EASINGALPHAMODIFIER_EASEOUT_DOPROCESS_OFFSET))(alpha, exp);
+		}
+
+		static ::System::Single DoDerivative(::System::Single alpha, ::System::Single exp)
+		{
+			return ((::System::Single(*)(::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + PIPELINECAMERA_EASINGALPHAMODIFIER_EASEOUT_DODERIVATIVE_OFFSET))(alpha, exp);
+		}
+
+		::System::Single PipelineCamera_IAlphaModifier_Process(::System::Single alpha)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + PIPELINECAMERA_EASINGALPHAMODIFIER_EASEOUT_PIPELINECAMERA_IALPHAMODIFIER_PROCESS_OFFSET))(this, alpha);
+		}
+
+		::System::Single PipelineCamera_IAlphaModifier_Derivative(::System::Single alpha, ::System::Single deltaStep)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + PIPELINECAMERA_EASINGALPHAMODIFIER_EASEOUT_PIPELINECAMERA_IALPHAMODIFIER_DERIVATIVE_OFFSET))(this, alpha, deltaStep);
+		}
+	};
+}

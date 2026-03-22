@@ -6,11 +6,11 @@
 namespace System { class DateTimeParse_MatchNumberDelegate; }
 namespace System::Globalization { class Calendar; }
 
-#define SYSTEM_PARSINGINFO_INIT_OFFSET UNITYSDK_OFFSET(0x200B390)
+#define SYSTEM_PARSINGINFO_INIT_OFFSET UNITYSDK_OFFSET(0x87A310)
 
 namespace System
 {
-	inline static constexpr unsigned int ParsingInfo_TypeDefinitionIndex = 266;
+	inline static constexpr unsigned int ParsingInfo_TypeDefinitionIndex = 253;
 
 	struct alignas(8) ParsingInfo
 	{

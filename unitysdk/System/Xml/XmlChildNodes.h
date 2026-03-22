@@ -5,13 +5,14 @@
 namespace System::Collections { class IEnumerator; }
 namespace System::Xml { class XmlNode; }
 
-#define SYSTEM_XML_XMLCHILDNODES_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x17DBFF60)
-#define SYSTEM_XML_XMLCHILDNODES_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x17DBFF00)
-#define SYSTEM_XML_XMLCHILDNODES__CTOR_OFFSET UNITYSDK_OFFSET(0x17DE3B50)
+#define SYSTEM_XML_XMLCHILDNODES_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x19CBB870)
+#define SYSTEM_XML_XMLCHILDNODES_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x19CBB810)
+#define SYSTEM_XML_XMLCHILDNODES_ITEM_OFFSET UNITYSDK_OFFSET(0x19CBB7A0)
+#define SYSTEM_XML_XMLCHILDNODES__CTOR_OFFSET UNITYSDK_OFFSET(0x19CBB780)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int XmlChildNodes_TypeDefinitionIndex = 1879;
+	inline static constexpr unsigned int XmlChildNodes_TypeDefinitionIndex = 1756;
 
 	class XmlChildNodes : public ::System::Xml::XmlNodeList
 	{
@@ -21,6 +22,11 @@ namespace System::Xml
 		::System::Void _ctor(::System::Xml::XmlNode* container)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlNode*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLCHILDNODES__CTOR_OFFSET))(this, container);
+		}
+
+		::System::Xml::XmlNode* Item(::System::Int32 i)
+		{
+			return ((::System::Xml::XmlNode*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLCHILDNODES_ITEM_OFFSET))(this, i);
 		}
 
 		::System::Int32 get_Count()

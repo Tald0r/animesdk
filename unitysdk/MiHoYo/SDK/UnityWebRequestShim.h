@@ -6,13 +6,13 @@ namespace System { class String; }
 namespace UnityEngine::Networking { class UnityWebRequest; }
 namespace UnityEngine::Networking { class UnityWebRequestAsyncOperation; }
 
-#define MIHOYO_SDK_UNITYWEBREQUESTSHIM_DISPOSEEX_OFFSET UNITYSDK_OFFSET(0x1595FF60)
-#define MIHOYO_SDK_UNITYWEBREQUESTSHIM_SENDWEBREQUESTEX_OFFSET UNITYSDK_OFFSET(0x1595FF90)
-#define MIHOYO_SDK_UNITYWEBREQUESTSHIM_SETREQUESTHEADEREX_OFFSET UNITYSDK_OFFSET(0x1595FF70)
+#define MIHOYO_SDK_UNITYWEBREQUESTSHIM_DISPOSEEX_OFFSET UNITYSDK_OFFSET(0x1895C120)
+#define MIHOYO_SDK_UNITYWEBREQUESTSHIM_SENDWEBREQUESTEX_OFFSET UNITYSDK_OFFSET(0x1895C130)
+#define MIHOYO_SDK_UNITYWEBREQUESTSHIM_SETREQUESTHEADEREX_OFFSET UNITYSDK_OFFSET(0x18954EF0)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int UnityWebRequestShim_TypeDefinitionIndex = 6863;
+	inline static constexpr unsigned int UnityWebRequestShim_TypeDefinitionIndex = 17997;
 
 	class UnityWebRequestShim : public ::System::Object
 	{

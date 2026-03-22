@@ -5,18 +5,20 @@
 namespace System { class Object; }
 namespace System { class String; }
 namespace System { class Type; }
+namespace System::Globalization { class CultureInfo; }
 namespace System::Globalization { class NumberFormatInfo; }
 
-#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_FROMSTRING_1_OFFSET UNITYSDK_OFFSET(0x17E6FE70)
-#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_FROMSTRING_OFFSET UNITYSDK_OFFSET(0x17E6FDB0)
-#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_GET_ALLOWHEX_OFFSET UNITYSDK_OFFSET(0x17E6FD70)
-#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_GET_TARGETTYPE_OFFSET UNITYSDK_OFFSET(0x17E6FD80)
-#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17E6FEB0)
-#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x17E6FF50)
+#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_FROMSTRING_1_OFFSET UNITYSDK_OFFSET(0x18B5D070)
+#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_FROMSTRING_2_OFFSET UNITYSDK_OFFSET(0x18B5D0B0)
+#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_FROMSTRING_OFFSET UNITYSDK_OFFSET(0x18B5CFB0)
+#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_GET_ALLOWHEX_OFFSET UNITYSDK_OFFSET(0x18B5CF70)
+#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_GET_TARGETTYPE_OFFSET UNITYSDK_OFFSET(0x18B5CF80)
+#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x18B5D0F0)
+#define SYSTEM_COMPONENTMODEL_DOUBLECONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x18B5D190)
 
 namespace System::ComponentModel
 {
-	inline static constexpr unsigned int DoubleConverter_TypeDefinitionIndex = 2570;
+	inline static constexpr unsigned int DoubleConverter_TypeDefinitionIndex = 2873;
 
 	class DoubleConverter : public ::System::ComponentModel::BaseNumberConverter
 	{
@@ -44,6 +46,11 @@ namespace System::ComponentModel
 		::System::Object* FromString_1(::System::String* value, ::System::Globalization::NumberFormatInfo* formatInfo)
 		{
 			return ((::System::Object*(*)(::PVOID, ::System::String*, ::System::Globalization::NumberFormatInfo*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_FROMSTRING_1_OFFSET))(this, value, formatInfo);
+		}
+
+		::System::Object* FromString_2(::System::String* value, ::System::Globalization::CultureInfo* culture)
+		{
+			return ((::System::Object*(*)(::PVOID, ::System::String*, ::System::Globalization::CultureInfo*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_DOUBLECONVERTER_FROMSTRING_2_OFFSET))(this, value, culture);
 		}
 
 		::System::String* ToString(::System::Object* value, ::System::Globalization::NumberFormatInfo* formatInfo)

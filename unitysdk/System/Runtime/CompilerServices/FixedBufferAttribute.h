@@ -4,13 +4,11 @@
 
 namespace System { class Type; }
 
-#define SYSTEM_RUNTIME_COMPILERSERVICES_FIXEDBUFFERATTRIBUTE_GET_ELEMENTTYPE_OFFSET UNITYSDK_OFFSET(0x15CDE600)
-#define SYSTEM_RUNTIME_COMPILERSERVICES_FIXEDBUFFERATTRIBUTE_GET_LENGTH_OFFSET UNITYSDK_OFFSET(0x15CDE610)
-#define SYSTEM_RUNTIME_COMPILERSERVICES_FIXEDBUFFERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x15CDE5F0)
+#define SYSTEM_RUNTIME_COMPILERSERVICES_FIXEDBUFFERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19AD3E80)
 
 namespace System::Runtime::CompilerServices
 {
-	inline static constexpr unsigned int FixedBufferAttribute_TypeDefinitionIndex = 1369;
+	inline static constexpr unsigned int FixedBufferAttribute_TypeDefinitionIndex = 1403;
 
 	class FixedBufferAttribute : public ::System::Attribute
 	{
@@ -21,16 +19,6 @@ namespace System::Runtime::CompilerServices
 		::System::Void _ctor(::System::Type* elementType, ::System::Int32 length)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Type*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_COMPILERSERVICES_FIXEDBUFFERATTRIBUTE__CTOR_OFFSET))(this, elementType, length);
-		}
-
-		::System::Type* get_ElementType()
-		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_COMPILERSERVICES_FIXEDBUFFERATTRIBUTE_GET_ELEMENTTYPE_OFFSET))(this);
-		}
-
-		::System::Int32 get_Length()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_COMPILERSERVICES_FIXEDBUFFERATTRIBUTE_GET_LENGTH_OFFSET))(this);
 		}
 	};
 }

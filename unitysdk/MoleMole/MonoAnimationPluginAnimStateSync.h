@@ -1,0 +1,96 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/MonoAnimationPluginBase.h"
+#include "unitysdk/System/Nullable_1.h"
+
+namespace MoleMole { class MonoAnimationPluginAnimStateSync_SyncConfig; }
+namespace System { class Action; }
+namespace System { class String; }
+
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_AWAKE_OFFSET UNITYSDK_OFFSET(0x8F1B660)
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_GETPROCESSEDNORMALIZEDTIME_OFFSET UNITYSDK_OFFSET(0x8F1BD70)
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_METHOD_6_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0x8F1C2C0)
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_METHOD_6_62593EE2FE331D20_OFFSET UNITYSDK_OFFSET(0x8F1C000)
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_METHOD_6_A239DF324AF4215D_OFFSET UNITYSDK_OFFSET(0x8F1B6D0)
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_METHOD_6_EDACF3D84F32DDEF_OFFSET UNITYSDK_OFFSET(0x8F1C1A0)
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x8F1B8F0)
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_ONENABLE_OFFSET UNITYSDK_OFFSET(0x8F1B870)
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_REGISTERONENABLE_OFFSET UNITYSDK_OFFSET(0x8F1BA20)
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_REGISTER_OFFSET UNITYSDK_OFFSET(0x8F1BA90)
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_START_OFFSET UNITYSDK_OFFSET(0x8F1B960)
+#define MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC__CTOR_OFFSET UNITYSDK_OFFSET(0x8F1BFA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int MonoAnimationPluginAnimStateSync_TypeDefinitionIndex = 37703;
+
+	class MonoAnimationPluginAnimStateSync : public ::MoleMole::MonoAnimationPluginBase
+	{
+	public:
+		::Il2CppArray<::MoleMole::MonoAnimationPluginAnimStateSync_SyncConfig*>* _syncConfigs; // 0x20
+		::System::Boolean Field_6_1; // 0x28
+		::System::String* Field_6_2; // 0x30
+		::System::Action* Field_6_3; // 0x38
+		::System::Boolean Field_6_4; // 0x40
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Awake()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_AWAKE_OFFSET))(this);
+		}
+
+		::System::Void OnEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_ONENABLE_OFFSET))(this);
+		}
+
+		::System::Void OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_ONDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Start()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_START_OFFSET))(this);
+		}
+
+		::System::Void RegisterOnEnable(::System::Action* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_REGISTERONENABLE_OFFSET))(this, a1);
+		}
+
+		::System::Void Register()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_REGISTER_OFFSET))(this);
+		}
+
+		::System::Nullable_1<::System::Single> GetProcessedNormalizedTime(::System::String* a1)
+		{
+			return ((::System::Nullable_1<::System::Single>(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_GETPROCESSEDNORMALIZEDTIME_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_6_62593EE2FE331D20()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_METHOD_6_62593EE2FE331D20_OFFSET))(this);
+		}
+
+		::System::Single Method_6_EDACF3D84F32DDEF()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_METHOD_6_EDACF3D84F32DDEF_OFFSET))(this);
+		}
+
+		::System::String* Method_6_126AB3935214AA22()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_METHOD_6_126AB3935214AA22_OFFSET))(this);
+		}
+
+		::System::Void Method_6_A239DF324AF4215D()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOANIMATIONPLUGINANIMSTATESYNC_METHOD_6_A239DF324AF4215D_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,42 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlowCanvas/Flow.h"
+#include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
+
+namespace FlowCanvas { class FlowOutput; }
+
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCLOSETRANSITIONLOADING_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x6E165E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCLOSETRANSITIONLOADING__CTOR_OFFSET UNITYSDK_OFFSET(0x6E16750)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCLOSETRANSITIONLOADING__ONSTOPCOMPLETE_OFFSET UNITYSDK_OFFSET(0x6E166C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCLOSETRANSITIONLOADING__REGISTERPORTS_B__1_0_OFFSET UNITYSDK_OFFSET(0x6E16770)
+
+namespace MoleMole::FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int LDCloseTransitionLoading_TypeDefinitionIndex = 65463;
+
+	class LDCloseTransitionLoading : public ::FlowCanvas::Nodes::FlowControlNode
+	{
+	public:
+		::FlowCanvas::FlowOutput* _closeOutput; // 0xA8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDCLOSETRANSITIONLOADING__CTOR_OFFSET))(this);
+		}
+
+		::System::Void RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDCLOSETRANSITIONLOADING_REGISTERPORTS_OFFSET))(this);
+		}
+
+		::System::Void _OnStopComplete()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDCLOSETRANSITIONLOADING__ONSTOPCOMPLETE_OFFSET))(this);
+		}
+
+		::System::Void _RegisterPorts_b__1_0(::FlowCanvas::Flow flow)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDCLOSETRANSITIONLOADING__REGISTERPORTS_B__1_0_OFFSET))(this, flow);
+		}
+	};
+}

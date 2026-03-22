@@ -13,34 +13,64 @@ namespace System { class Object; }
 namespace System { class String; }
 namespace System { class Type; }
 
-#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMCONVERTERPARAMETERS_OFFSET UNITYSDK_OFFSET(0x15D8E020)
-#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMCONVERTERTYPE_OFFSET UNITYSDK_OFFSET(0x15D8E010)
-#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_PROPERTYNAME_OFFSET UNITYSDK_OFFSET(0x15D8E030)
-#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_PROPERTYNAME_OFFSET UNITYSDK_OFFSET(0x15D8E040)
-#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15D8E060)
-#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x15D8E050)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_DEFAULTVALUEHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A89D0)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ISREFERENCE_OFFSET UNITYSDK_OFFSET(0x1A0A8AD0)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMCONVERTERPARAMETERS_OFFSET UNITYSDK_OFFSET(0x1A0A8930)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMCONVERTERTYPE_OFFSET UNITYSDK_OFFSET(0x1A0A8910)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMISREFERENCE_OFFSET UNITYSDK_OFFSET(0x1A0A8C20)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMREFERENCELOOPHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A8BA0)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMTYPENAMEHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A8BE0)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_NAMINGSTRATEGYPARAMETERS_OFFSET UNITYSDK_OFFSET(0x1A0A8970)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_NAMINGSTRATEGYTYPE_OFFSET UNITYSDK_OFFSET(0x1A0A8950)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_NULLVALUEHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A8990)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_OBJECTCREATIONHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A8A50)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ORDER_OFFSET UNITYSDK_OFFSET(0x1A0A8B00)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_PROPERTYNAME_OFFSET UNITYSDK_OFFSET(0x1A0A8B80)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_REFERENCELOOPHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A8A10)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_REQUIRED_OFFSET UNITYSDK_OFFSET(0x1A0A8B40)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_TYPENAMEHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A8A90)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_DEFAULTVALUEHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A89F0)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ISREFERENCE_OFFSET UNITYSDK_OFFSET(0x1A0A8AF0)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ITEMCONVERTERPARAMETERS_OFFSET UNITYSDK_OFFSET(0x1A0A8940)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ITEMCONVERTERTYPE_OFFSET UNITYSDK_OFFSET(0x1A0A8920)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ITEMISREFERENCE_OFFSET UNITYSDK_OFFSET(0x1A0A8C40)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ITEMREFERENCELOOPHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A8BC0)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ITEMTYPENAMEHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A8C00)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_NAMINGSTRATEGYPARAMETERS_OFFSET UNITYSDK_OFFSET(0x1A0A8980)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_NAMINGSTRATEGYTYPE_OFFSET UNITYSDK_OFFSET(0x1A0A8960)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_NULLVALUEHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A89B0)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_OBJECTCREATIONHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A8A70)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ORDER_OFFSET UNITYSDK_OFFSET(0x1A0A8B20)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_PROPERTYNAME_OFFSET UNITYSDK_OFFSET(0x1A0A8B90)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_REFERENCELOOPHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A8A30)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_REQUIRED_OFFSET UNITYSDK_OFFSET(0x1A0A8B60)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_TYPENAMEHANDLING_OFFSET UNITYSDK_OFFSET(0x1A0A8AB0)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A0A8C60)
+#define NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A0A8C50)
 
 namespace Newtonsoft::Json
 {
-	inline static constexpr unsigned int JsonPropertyAttribute_TypeDefinitionIndex = 8082;
+	inline static constexpr unsigned int JsonPropertyAttribute_TypeDefinitionIndex = 6867;
 
 	class JsonPropertyAttribute : public ::System::Attribute
 	{
 	public:
-		::Il2CppArray<::System::Object*>* _ItemConverterParameters_k__BackingField; // 0x10
-		::System::String* _PropertyName_k__BackingField; // 0x18
-		::System::Type* _ItemConverterType_k__BackingField; // 0x20
-		::System::Nullable_1<::System::Int32> _order; // 0x28
-		::System::Nullable_1<::Newtonsoft::Json::Required> _required; // 0x30
+		::System::Type* _NamingStrategyType_k__BackingField; // 0x10
+		::System::Type* _ItemConverterType_k__BackingField; // 0x18
+		::Il2CppArray<::System::Object*>* _NamingStrategyParameters_k__BackingField; // 0x20
+		::System::String* _PropertyName_k__BackingField; // 0x28
+		::Il2CppArray<::System::Object*>* _ItemConverterParameters_k__BackingField; // 0x30
 		::System::Nullable_1<::Newtonsoft::Json::ObjectCreationHandling> _objectCreationHandling; // 0x38
-		::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling> _itemTypeNameHandling; // 0x40
+		::System::Nullable_1<::Newtonsoft::Json::Required> _required; // 0x40
 		::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling> _typeNameHandling; // 0x48
 		::System::Nullable_1<::Newtonsoft::Json::DefaultValueHandling> _defaultValueHandling; // 0x50
-		::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling> _itemReferenceLoopHandling; // 0x58
-		::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling> _referenceLoopHandling; // 0x60
-		::System::Nullable_1<::System::Boolean> _isReference; // 0x68
-		::System::Nullable_1<::System::Boolean> _itemIsReference; // 0x6A
-		::System::Nullable_1<::Newtonsoft::Json::NullValueHandling> _nullValueHandling; // 0x6C
+		::System::Nullable_1<::System::Int32> _order; // 0x58
+		::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling> _itemReferenceLoopHandling; // 0x60
+		::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling> _itemTypeNameHandling; // 0x68
+		::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling> _referenceLoopHandling; // 0x70
+		::System::Nullable_1<::System::Boolean> _itemIsReference; // 0x78
+		::System::Nullable_1<::System::Boolean> _isReference; // 0x7A
+		::System::Nullable_1<::Newtonsoft::Json::NullValueHandling> _nullValueHandling; // 0x7C
 
 		::System::Void _ctor()
 		{
@@ -57,9 +87,119 @@ namespace Newtonsoft::Json
 			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMCONVERTERTYPE_OFFSET))(this);
 		}
 
+		::System::Void set_ItemConverterType(::System::Type* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Type*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ITEMCONVERTERTYPE_OFFSET))(this, value);
+		}
+
 		::Il2CppArray<::System::Object*>* get_ItemConverterParameters()
 		{
 			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMCONVERTERPARAMETERS_OFFSET))(this);
+		}
+
+		::System::Void set_ItemConverterParameters(::Il2CppArray<::System::Object*>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ITEMCONVERTERPARAMETERS_OFFSET))(this, value);
+		}
+
+		::System::Type* get_NamingStrategyType()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_NAMINGSTRATEGYTYPE_OFFSET))(this);
+		}
+
+		::System::Void set_NamingStrategyType(::System::Type* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Type*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_NAMINGSTRATEGYTYPE_OFFSET))(this, value);
+		}
+
+		::Il2CppArray<::System::Object*>* get_NamingStrategyParameters()
+		{
+			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_NAMINGSTRATEGYPARAMETERS_OFFSET))(this);
+		}
+
+		::System::Void set_NamingStrategyParameters(::Il2CppArray<::System::Object*>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_NAMINGSTRATEGYPARAMETERS_OFFSET))(this, value);
+		}
+
+		::Newtonsoft::Json::NullValueHandling get_NullValueHandling()
+		{
+			return ((::Newtonsoft::Json::NullValueHandling(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_NULLVALUEHANDLING_OFFSET))(this);
+		}
+
+		::System::Void set_NullValueHandling(::Newtonsoft::Json::NullValueHandling value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::NullValueHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_NULLVALUEHANDLING_OFFSET))(this, value);
+		}
+
+		::Newtonsoft::Json::DefaultValueHandling get_DefaultValueHandling()
+		{
+			return ((::Newtonsoft::Json::DefaultValueHandling(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_DEFAULTVALUEHANDLING_OFFSET))(this);
+		}
+
+		::System::Void set_DefaultValueHandling(::Newtonsoft::Json::DefaultValueHandling value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::DefaultValueHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_DEFAULTVALUEHANDLING_OFFSET))(this, value);
+		}
+
+		::Newtonsoft::Json::ReferenceLoopHandling get_ReferenceLoopHandling()
+		{
+			return ((::Newtonsoft::Json::ReferenceLoopHandling(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_REFERENCELOOPHANDLING_OFFSET))(this);
+		}
+
+		::System::Void set_ReferenceLoopHandling(::Newtonsoft::Json::ReferenceLoopHandling value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::ReferenceLoopHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_REFERENCELOOPHANDLING_OFFSET))(this, value);
+		}
+
+		::Newtonsoft::Json::ObjectCreationHandling get_ObjectCreationHandling()
+		{
+			return ((::Newtonsoft::Json::ObjectCreationHandling(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_OBJECTCREATIONHANDLING_OFFSET))(this);
+		}
+
+		::System::Void set_ObjectCreationHandling(::Newtonsoft::Json::ObjectCreationHandling value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::ObjectCreationHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_OBJECTCREATIONHANDLING_OFFSET))(this, value);
+		}
+
+		::Newtonsoft::Json::TypeNameHandling get_TypeNameHandling()
+		{
+			return ((::Newtonsoft::Json::TypeNameHandling(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_TYPENAMEHANDLING_OFFSET))(this);
+		}
+
+		::System::Void set_TypeNameHandling(::Newtonsoft::Json::TypeNameHandling value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::TypeNameHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_TYPENAMEHANDLING_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsReference()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ISREFERENCE_OFFSET))(this);
+		}
+
+		::System::Void set_IsReference(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ISREFERENCE_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_Order()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ORDER_OFFSET))(this);
+		}
+
+		::System::Void set_Order(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ORDER_OFFSET))(this, value);
+		}
+
+		::Newtonsoft::Json::Required get_Required()
+		{
+			return ((::Newtonsoft::Json::Required(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_REQUIRED_OFFSET))(this);
+		}
+
+		::System::Void set_Required(::Newtonsoft::Json::Required value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::Required))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_REQUIRED_OFFSET))(this, value);
 		}
 
 		::System::String* get_PropertyName()
@@ -70,6 +210,36 @@ namespace Newtonsoft::Json
 		::System::Void set_PropertyName(::System::String* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_PROPERTYNAME_OFFSET))(this, value);
+		}
+
+		::Newtonsoft::Json::ReferenceLoopHandling get_ItemReferenceLoopHandling()
+		{
+			return ((::Newtonsoft::Json::ReferenceLoopHandling(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMREFERENCELOOPHANDLING_OFFSET))(this);
+		}
+
+		::System::Void set_ItemReferenceLoopHandling(::Newtonsoft::Json::ReferenceLoopHandling value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::ReferenceLoopHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ITEMREFERENCELOOPHANDLING_OFFSET))(this, value);
+		}
+
+		::Newtonsoft::Json::TypeNameHandling get_ItemTypeNameHandling()
+		{
+			return ((::Newtonsoft::Json::TypeNameHandling(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMTYPENAMEHANDLING_OFFSET))(this);
+		}
+
+		::System::Void set_ItemTypeNameHandling(::Newtonsoft::Json::TypeNameHandling value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::TypeNameHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ITEMTYPENAMEHANDLING_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_ItemIsReference()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_GET_ITEMISREFERENCE_OFFSET))(this);
+		}
+
+		::System::Void set_ItemIsReference(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONPROPERTYATTRIBUTE_SET_ITEMISREFERENCE_OFFSET))(this, value);
 		}
 	};
 }

@@ -1,0 +1,51 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_F1DF8AE5E9727CA6.h"
+
+#define CLASS_3_D4351E5A6F9F31E0_1_METHOD_3_64F3965CE4C4DB47_OFFSET UNITYSDK_OFFSET(0x89BC040)
+#define CLASS_3_D4351E5A6F9F31E0_1_METHOD_3_BEAB6CF0CF797770_OFFSET UNITYSDK_OFFSET(0x89BBF00)
+#define CLASS_3_D4351E5A6F9F31E0_1_METHOD_3_F5447CD65612575D_OFFSET UNITYSDK_OFFSET(0x89BC030)
+#define CLASS_3_D4351E5A6F9F31E0_1_ONCLOSE_OFFSET UNITYSDK_OFFSET(0x89BBE10)
+#define CLASS_3_D4351E5A6F9F31E0_1_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC57B6C0)
+#define CLASS_3_D4351E5A6F9F31E0_1__CTOR_OFFSET UNITYSDK_OFFSET(0x89BBE80)
+
+inline static constexpr unsigned int Class_3_D4351E5A6F9F31E0_1_TypeDefinitionIndex = 65234;
+
+class Class_3_D4351E5A6F9F31E0_1 : public ::Class_2_F1DF8AE5E9727CA6
+{
+public:
+	static ::Class_3_D4351E5A6F9F31E0_1** StaticGet_Field_3_0()
+	{
+		return (::Class_3_D4351E5A6F9F31E0_1**)Il2CppClass::FromTypeDefinitionIndex(Class_3_D4351E5A6F9F31E0_1_TypeDefinitionIndex)->GetStaticField(0x3FA30);
+	}
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D4351E5A6F9F31E0_1__CTOR_OFFSET))(this);
+	}
+
+	::System::Void OnShow()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D4351E5A6F9F31E0_1_ONSHOW_OFFSET))(this);
+	}
+
+	::System::Void OnClose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D4351E5A6F9F31E0_1_ONCLOSE_OFFSET))(this);
+	}
+
+	static ::Class_3_D4351E5A6F9F31E0_1* Method_3_BEAB6CF0CF797770()
+	{
+		return ((::Class_3_D4351E5A6F9F31E0_1*(*)())((::PBYTE)hIl2Cpp + CLASS_3_D4351E5A6F9F31E0_1_METHOD_3_BEAB6CF0CF797770_OFFSET))();
+	}
+
+	::System::Void Method_3_F5447CD65612575D()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D4351E5A6F9F31E0_1_METHOD_3_F5447CD65612575D_OFFSET))(this);
+	}
+
+	::System::Void Method_3_64F3965CE4C4DB47()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D4351E5A6F9F31E0_1_METHOD_3_64F3965CE4C4DB47_OFFSET))(this);
+	}
+};

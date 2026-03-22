@@ -5,17 +5,13 @@
 namespace System::Xml::Schema { class Positions; }
 namespace System::Xml::Schema { class SymbolsDictionary; }
 
-#define SYSTEM_XML_SCHEMA_INTERIORNODE_EXPANDTREENORECURSIVE_OFFSET UNITYSDK_OFFSET(0x17D5C710)
-#define SYSTEM_XML_SCHEMA_INTERIORNODE_EXPANDTREE_OFFSET UNITYSDK_OFFSET(0x17D71A80)
-#define SYSTEM_XML_SCHEMA_INTERIORNODE_GET_LEFTCHILD_OFFSET UNITYSDK_OFFSET(0x17D71A40)
-#define SYSTEM_XML_SCHEMA_INTERIORNODE_GET_RIGHTCHILD_OFFSET UNITYSDK_OFFSET(0x17D71A60)
-#define SYSTEM_XML_SCHEMA_INTERIORNODE_SET_LEFTCHILD_OFFSET UNITYSDK_OFFSET(0x17D71A50)
-#define SYSTEM_XML_SCHEMA_INTERIORNODE_SET_RIGHTCHILD_OFFSET UNITYSDK_OFFSET(0x17D71A70)
-#define SYSTEM_XML_SCHEMA_INTERIORNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x17D5C8B0)
+#define SYSTEM_XML_SCHEMA_INTERIORNODE_EXPANDTREENORECURSIVE_OFFSET UNITYSDK_OFFSET(0x1A6829D0)
+#define SYSTEM_XML_SCHEMA_INTERIORNODE_EXPANDTREE_OFFSET UNITYSDK_OFFSET(0x1A682B60)
+#define SYSTEM_XML_SCHEMA_INTERIORNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A682BD0)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int InteriorNode_TypeDefinitionIndex = 2054;
+	inline static constexpr unsigned int InteriorNode_TypeDefinitionIndex = 1967;
 
 	class InteriorNode : public ::System::Xml::Schema::SyntaxTreeNode
 	{
@@ -26,26 +22,6 @@ namespace System::Xml::Schema
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_INTERIORNODE__CTOR_OFFSET))(this);
-		}
-
-		::System::Xml::Schema::SyntaxTreeNode* get_LeftChild()
-		{
-			return ((::System::Xml::Schema::SyntaxTreeNode*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_INTERIORNODE_GET_LEFTCHILD_OFFSET))(this);
-		}
-
-		::System::Void set_LeftChild(::System::Xml::Schema::SyntaxTreeNode* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::SyntaxTreeNode*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_INTERIORNODE_SET_LEFTCHILD_OFFSET))(this, value);
-		}
-
-		::System::Xml::Schema::SyntaxTreeNode* get_RightChild()
-		{
-			return ((::System::Xml::Schema::SyntaxTreeNode*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_INTERIORNODE_GET_RIGHTCHILD_OFFSET))(this);
-		}
-
-		::System::Void set_RightChild(::System::Xml::Schema::SyntaxTreeNode* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::SyntaxTreeNode*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_INTERIORNODE_SET_RIGHTCHILD_OFFSET))(this, value);
 		}
 
 		::System::Void ExpandTreeNoRecursive(::System::Xml::Schema::InteriorNode* parent, ::System::Xml::Schema::SymbolsDictionary* symbols, ::System::Xml::Schema::Positions* positions)

@@ -7,7 +7,6 @@
 #include "unitysdk/System/Reflection/PropertyAttributes.h"
 #include "unitysdk/System/RuntimeTypeHandle.h"
 
-namespace System { class NotImplementedException; }
 namespace System { class Object; }
 namespace System { class Type; }
 namespace System::Globalization { class CultureInfo; }
@@ -15,138 +14,108 @@ namespace System::Reflection { class Binder; }
 namespace System::Reflection { class MethodInfo; }
 namespace System::Reflection { class ParameterInfo; }
 
-#define SYSTEM_REFLECTION_PROPERTYINFO_CREATENIE_OFFSET UNITYSDK_OFFSET(0x15CCA410)
-#define SYSTEM_REFLECTION_PROPERTYINFO_EQUALS_OFFSET UNITYSDK_OFFSET(0x15CCA530)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GETCONSTANTVALUE_OFFSET UNITYSDK_OFFSET(0x15CCA490)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GETGETMETHOD_OFFSET UNITYSDK_OFFSET(0x15CCA2F0)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x15CCA540)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GETOPTIONALCUSTOMMODIFIERS_OFFSET UNITYSDK_OFFSET(0x15CCA3F0)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GETPROPERTYFROMHANDLE_OFFSET UNITYSDK_OFFSET(0x15CCA610)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GETRAWCONSTANTVALUE_OFFSET UNITYSDK_OFFSET(0x15CCA4E0)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GETREQUIREDCUSTOMMODIFIERS_OFFSET UNITYSDK_OFFSET(0x15CCA400)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GETSETMETHOD_OFFSET UNITYSDK_OFFSET(0x15CCA310)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GETVALUE_1_OFFSET UNITYSDK_OFFSET(0x15CCA360)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GETVALUE_OFFSET UNITYSDK_OFFSET(0x15CCA330)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GET_GETMETHOD_OFFSET UNITYSDK_OFFSET(0x15CCA290)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GET_MEMBERTYPE_OFFSET UNITYSDK_OFFSET(0x15CCA2D0)
-#define SYSTEM_REFLECTION_PROPERTYINFO_GET_SETMETHOD_OFFSET UNITYSDK_OFFSET(0x15CCA2B0)
-#define SYSTEM_REFLECTION_PROPERTYINFO_INTERNAL_FROM_HANDLE_TYPE_OFFSET UNITYSDK_OFFSET(0x15CCA5B0)
-#define SYSTEM_REFLECTION_PROPERTYINFO_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x15CCA550)
-#define SYSTEM_REFLECTION_PROPERTYINFO_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x15CCA580)
-#define SYSTEM_REFLECTION_PROPERTYINFO_SETVALUE_1_OFFSET UNITYSDK_OFFSET(0x15CCA3C0)
-#define SYSTEM_REFLECTION_PROPERTYINFO_SETVALUE_OFFSET UNITYSDK_OFFSET(0x15CCA390)
-#define SYSTEM_REFLECTION_PROPERTYINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x15CCA2E0)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_066F893FDE90FA5B_1_OFFSET UNITYSDK_OFFSET(0x192BC690)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_066F893FDE90FA5B_OFFSET UNITYSDK_OFFSET(0x192BC660)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_083577508CCFDAF3_OFFSET UNITYSDK_OFFSET(0x192BC640)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_174799846CA15A4F_OFFSET UNITYSDK_OFFSET(0x192BC610)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_1AAEC4BA42500199_OFFSET UNITYSDK_OFFSET(0x192BC5B0)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_359B08BF3A117819_OFFSET UNITYSDK_OFFSET(0x192BC720)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_4731EF2FE426A6EB_OFFSET UNITYSDK_OFFSET(0x192BC6C0)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_49E3FA61F17A6A16_OFFSET UNITYSDK_OFFSET(0x192BC520)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_7496EFF6EF43D7C2_OFFSET UNITYSDK_OFFSET(0x192BC5E0)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_832295EC279E5994_OFFSET UNITYSDK_OFFSET(0x192BC530)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_845A70D2AF300EB9_1_OFFSET UNITYSDK_OFFSET(0x192BC500)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_845A70D2AF300EB9_2_OFFSET UNITYSDK_OFFSET(0x192BC540)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_845A70D2AF300EB9_3_OFFSET UNITYSDK_OFFSET(0x192BC560)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_845A70D2AF300EB9_OFFSET UNITYSDK_OFFSET(0x192BC4E0)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_993C03AFE823E7FA_OFFSET UNITYSDK_OFFSET(0x192BC580)
+#define SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_C74CF020AA42ED85_OFFSET UNITYSDK_OFFSET(0x192BC650)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int PropertyInfo_TypeDefinitionIndex = 635;
+	inline static constexpr unsigned int PropertyInfo_TypeDefinitionIndex = 608;
 
 	class PropertyInfo : public ::System::Reflection::MemberInfo
 	{
 	public:
-		::System::Void _ctor()
+		::System::Void Method_2_832295EC279E5994()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_832295EC279E5994_OFFSET))(this);
 		}
 
-		::System::Reflection::MethodInfo* get_GetMethod()
+		::System::Reflection::MethodInfo* Method_2_845A70D2AF300EB9()
 		{
-			return ((::System::Reflection::MethodInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GET_GETMETHOD_OFFSET))(this);
+			return ((::System::Reflection::MethodInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_845A70D2AF300EB9_OFFSET))(this);
 		}
 
-		::System::Reflection::MethodInfo* get_SetMethod()
+		::System::Reflection::MethodInfo* Method_2_845A70D2AF300EB9_1()
 		{
-			return ((::System::Reflection::MethodInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GET_SETMETHOD_OFFSET))(this);
+			return ((::System::Reflection::MethodInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_845A70D2AF300EB9_1_OFFSET))(this);
 		}
 
-		::System::Reflection::MemberTypes get_MemberType()
+		::System::Reflection::MemberTypes Method_2_49E3FA61F17A6A16()
 		{
-			return ((::System::Reflection::MemberTypes(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GET_MEMBERTYPE_OFFSET))(this);
+			return ((::System::Reflection::MemberTypes(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_49E3FA61F17A6A16_OFFSET))(this);
 		}
 
-		::System::Reflection::MethodInfo* GetGetMethod()
+		::System::Reflection::MethodInfo* Method_2_845A70D2AF300EB9_2()
 		{
-			return ((::System::Reflection::MethodInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GETGETMETHOD_OFFSET))(this);
+			return ((::System::Reflection::MethodInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_845A70D2AF300EB9_2_OFFSET))(this);
 		}
 
-		::System::Reflection::MethodInfo* GetSetMethod()
+		::System::Reflection::MethodInfo* Method_2_845A70D2AF300EB9_3()
 		{
-			return ((::System::Reflection::MethodInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GETSETMETHOD_OFFSET))(this);
+			return ((::System::Reflection::MethodInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_845A70D2AF300EB9_3_OFFSET))(this);
 		}
 
-		::System::Object* GetValue(::System::Object* obj, ::Il2CppArray<::System::Object*>* index)
+		::System::Object* Method_2_993C03AFE823E7FA(::System::Object* obj, ::Il2CppArray<::System::Object*>* index)
 		{
-			return ((::System::Object*(*)(::PVOID, ::System::Object*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GETVALUE_OFFSET))(this, obj, index);
+			return ((::System::Object*(*)(::PVOID, ::System::Object*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_993C03AFE823E7FA_OFFSET))(this, obj, index);
 		}
 
-		::System::Object* GetValue_1(::System::Object* obj)
+		::System::Object* Method_2_1AAEC4BA42500199(::System::Object* obj)
 		{
-			return ((::System::Object*(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GETVALUE_1_OFFSET))(this, obj);
+			return ((::System::Object*(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_1AAEC4BA42500199_OFFSET))(this, obj);
 		}
 
-		::System::Void SetValue(::System::Object* obj, ::System::Object* value, ::Il2CppArray<::System::Object*>* index)
+		::System::Void Method_2_7496EFF6EF43D7C2(::System::Object* obj, ::System::Object* value, ::Il2CppArray<::System::Object*>* index)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_SETVALUE_OFFSET))(this, obj, value, index);
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_7496EFF6EF43D7C2_OFFSET))(this, obj, value, index);
 		}
 
-		::System::Void SetValue_1(::System::Object* obj, ::System::Object* value)
+		::System::Void Method_2_174799846CA15A4F(::System::Object* obj, ::System::Object* value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_SETVALUE_1_OFFSET))(this, obj, value);
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_174799846CA15A4F_OFFSET))(this, obj, value);
 		}
 
-		::Il2CppArray<::System::Type*>* GetOptionalCustomModifiers()
+		::System::Boolean Method_2_083577508CCFDAF3(::System::Object* obj)
 		{
-			return ((::Il2CppArray<::System::Type*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GETOPTIONALCUSTOMMODIFIERS_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_083577508CCFDAF3_OFFSET))(this, obj);
 		}
 
-		::Il2CppArray<::System::Type*>* GetRequiredCustomModifiers()
+		::System::Int32 Method_2_C74CF020AA42ED85()
 		{
-			return ((::Il2CppArray<::System::Type*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GETREQUIREDCUSTOMMODIFIERS_OFFSET))(this);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_C74CF020AA42ED85_OFFSET))(this);
 		}
 
-		static ::System::NotImplementedException* CreateNIE()
+		static ::System::Boolean Method_2_066F893FDE90FA5B(::System::Reflection::PropertyInfo* left, ::System::Reflection::PropertyInfo* right)
 		{
-			return ((::System::NotImplementedException*(*)())((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_CREATENIE_OFFSET))();
+			return ((::System::Boolean(*)(::System::Reflection::PropertyInfo*, ::System::Reflection::PropertyInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_066F893FDE90FA5B_OFFSET))(left, right);
 		}
 
-		::System::Object* GetConstantValue()
+		static ::System::Boolean Method_2_066F893FDE90FA5B_1(::System::Reflection::PropertyInfo* left, ::System::Reflection::PropertyInfo* right)
 		{
-			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GETCONSTANTVALUE_OFFSET))(this);
+			return ((::System::Boolean(*)(::System::Reflection::PropertyInfo*, ::System::Reflection::PropertyInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_066F893FDE90FA5B_1_OFFSET))(left, right);
 		}
 
-		::System::Object* GetRawConstantValue()
+		static ::System::Reflection::PropertyInfo* Method_2_4731EF2FE426A6EB(::System::IntPtr event_handle, ::System::IntPtr type_handle)
 		{
-			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GETRAWCONSTANTVALUE_OFFSET))(this);
+			return ((::System::Reflection::PropertyInfo*(*)(::System::IntPtr, ::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_4731EF2FE426A6EB_OFFSET))(event_handle, type_handle);
 		}
 
-		::System::Boolean Equals(::System::Object* obj)
+		static ::System::Reflection::PropertyInfo* Method_2_359B08BF3A117819(::Mono::RuntimePropertyHandle handle, ::System::RuntimeTypeHandle reflectedType)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_EQUALS_OFFSET))(this, obj);
-		}
-
-		::System::Int32 GetHashCode()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GETHASHCODE_OFFSET))(this);
-		}
-
-		static ::System::Boolean op_Equality(::System::Reflection::PropertyInfo* left, ::System::Reflection::PropertyInfo* right)
-		{
-			return ((::System::Boolean(*)(::System::Reflection::PropertyInfo*, ::System::Reflection::PropertyInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_OP_EQUALITY_OFFSET))(left, right);
-		}
-
-		static ::System::Boolean op_Inequality(::System::Reflection::PropertyInfo* left, ::System::Reflection::PropertyInfo* right)
-		{
-			return ((::System::Boolean(*)(::System::Reflection::PropertyInfo*, ::System::Reflection::PropertyInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_OP_INEQUALITY_OFFSET))(left, right);
-		}
-
-		static ::System::Reflection::PropertyInfo* internal_from_handle_type(::System::IntPtr event_handle, ::System::IntPtr type_handle)
-		{
-			return ((::System::Reflection::PropertyInfo*(*)(::System::IntPtr, ::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_INTERNAL_FROM_HANDLE_TYPE_OFFSET))(event_handle, type_handle);
-		}
-
-		static ::System::Reflection::PropertyInfo* GetPropertyFromHandle(::Mono::RuntimePropertyHandle handle, ::System::RuntimeTypeHandle reflectedType)
-		{
-			return ((::System::Reflection::PropertyInfo*(*)(::Mono::RuntimePropertyHandle, ::System::RuntimeTypeHandle))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_GETPROPERTYFROMHANDLE_OFFSET))(handle, reflectedType);
+			return ((::System::Reflection::PropertyInfo*(*)(::Mono::RuntimePropertyHandle, ::System::RuntimeTypeHandle))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_PROPERTYINFO_METHOD_2_359B08BF3A117819_OFFSET))(handle, reflectedType);
 		}
 	};
 }

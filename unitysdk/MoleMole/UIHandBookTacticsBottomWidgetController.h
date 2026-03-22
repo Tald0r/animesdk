@@ -1,0 +1,137 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_116C18A40C30981C;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace System { template <typename T> class Func_1; }
+
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONAVATARCOURSE_OFFSET UNITYSDK_OFFSET(0x8C584A0)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONCOURSE_OFFSET UNITYSDK_OFFSET(0x8C583B0)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C574F0)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONREWARDBTNCLICK_OFFSET UNITYSDK_OFFSET(0x8C57670)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x8C573D0)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C57590)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C568F0)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8C56A20)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_OPENPGC_OFFSET UNITYSDK_OFFSET(0x8C57480)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x8C577E0)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_SELECTITEM_OFFSET UNITYSDK_OFFSET(0x8C58010)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_SETREWARDICON_OFFSET UNITYSDK_OFFSET(0x8C56F80)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8C58590)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET UNITYSDK_OFFSET(0x8C585C0)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C58640)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x8C586B0)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C58720)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C587A0)
+#define MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8C58800)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHandBookTacticsBottomWidgetController_TypeDefinitionIndex = 59498;
+
+	class UIHandBookTacticsBottomWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_116C18A40C30981C* _view; // 0x2A0
+		::System::Int32 lastTrainType; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OpenPGC()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_OPENPGC_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetRewardIcon()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_SETREWARDICON_OFFSET))(this);
+		}
+
+		::System::Void OnRewardBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONREWARDBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::System::Int32 trainType, ::System::String* title)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, trainType, title);
+		}
+
+		::System::Void SelectItem(::System::Int32 trainType, ::System::Int32 trainQuestID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_SELECTITEM_OFFSET))(this, trainType, trainQuestID);
+		}
+
+		::System::Void OnCourse()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONCOURSE_OFFSET))(this);
+		}
+
+		::System::Void OnAvatarCourse()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER_ONAVATARCOURSE_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _OnUIInit_b__1_0(::System::Func_1<::MoleMole::UIControlReference*>* reference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET))(this, reference);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKTACTICSBOTTOMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,452 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Share/EAvatarSkillType.h"
+
+class Class_1_3CDBAA6BC10A7F83;
+class Class_1_A0B1A57C6DC75B0F;
+class Class_2_208CC9941471731A_240;
+class Class_2_B9985733D17C9982;
+class Class_2_D89CCC627A66D0AD;
+class Class_3_36FF8167703D4259;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIItemIconBtnSmallWidgetController; }
+namespace MoleMole { class UIRoleChangeWidgetController; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Component; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class Transform; }
+namespace UnityEngine::UI::Extension { class UILocalizationText; }
+
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_CLOSEPREVIEWITEMICONSMALLBTNWIDGET_OFFSET UNITYSDK_OFFSET(0x65B0380)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_GETSKILLLEVEL_OFFSET UNITYSDK_OFFSET(0x65B2660)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xAE9E570)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_GOTOROLEINFO_OFFSET UNITYSDK_OFFSET(0x65B2710)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONAVATARCHANGEHANDLE_OFFSET UNITYSDK_OFFSET(0x65B1B90)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONAVATARLEFTHANDLE_OFFSET UNITYSDK_OFFSET(0x65B2400)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONAVATARRIGHTHANDLE_OFFSET UNITYSDK_OFFSET(0x65B2530)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKAVATARCOINICONBTN_OFFSET UNITYSDK_OFFSET(0x65B1750)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKAVATARPLANSWITCHBTN_OFFSET UNITYSDK_OFFSET(0x65B1350)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKCHOOSEWEAPONBTN_OFFSET UNITYSDK_OFFSET(0x65B1180)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKCOINBTN_OFFSET UNITYSDK_OFFSET(0x65B1640)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKEQUIPPLANSWITCHBTN_OFFSET UNITYSDK_OFFSET(0x65B15D0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKFAIRYBTN_OFFSET UNITYSDK_OFFSET(0x65B2A90)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKINFOBTN_OFFSET UNITYSDK_OFFSET(0x65B30A0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKMOREBTN_OFFSET UNITYSDK_OFFSET(0x65B2A20)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKQUICKBTN_OFFSET UNITYSDK_OFFSET(0x65B2880)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKSKILLCOINICONBTN_OFFSET UNITYSDK_OFFSET(0x65B1970)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKSKILLPLANSWITCHBTN_OFFSET UNITYSDK_OFFSET(0x65B1560)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAE9E580)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xAEA02E0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xAEA0240)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONITEMCHANGE_OFFSET UNITYSDK_OFFSET(0x65B34E0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONPREVIEWWEAPONBTNCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0x65B2810)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xAE9FA70)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAEA0620)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAE9E620)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAE9F700)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_OPENPREVIEWCOMPOSEITEMWIDGET_OFFSET UNITYSDK_OFFSET(0x65B0520)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_RECORDBUTTONCLICKACTION_OFFSET UNITYSDK_OFFSET(0x65B3190)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_REFRESHFAIRYBTNTEXT_OFFSET UNITYSDK_OFFSET(0x65B07C0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_REFRESHMATERIALPREVIEW_OFFSET UNITYSDK_OFFSET(0xAEA30E0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_REFRESHRARITY_OFFSET UNITYSDK_OFFSET(0xAEA2EF0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xAEA09B0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SETUPBGCOLORIMG_OFFSET UNITYSDK_OFFSET(0x65B0A30)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SETUPBGCOLORTEXT_OFFSET UNITYSDK_OFFSET(0x65B0C60)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SETUPBGCOLOR_OFFSET UNITYSDK_OFFSET(0x65B08F0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SETUPBGTEXT_OFFSET UNITYSDK_OFFSET(0x65B0E90)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWAVATARBREAKTHROUGHPROCESS_OFFSET UNITYSDK_OFFSET(0xAEA5770)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWAVATARLEVELUPPROCESS_OFFSET UNITYSDK_OFFSET(0xAEA4EE0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWAVATARWEAPONCOINPROCESS_OFFSET UNITYSDK_OFFSET(0xAEA6FC0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWEQUIPLEVELUPPROCESS_OFFSET UNITYSDK_OFFSET(0xAEA8330)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWEXPITEMPREVIEW_OFFSET UNITYSDK_OFFSET(0xAEA4C80)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSKILLCOINPROCESS_OFFSET UNITYSDK_OFFSET(0x65B01B0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSKILLCOREBIGPROCESS_OFFSET UNITYSDK_OFFSET(0xAEA7D20)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSKILLCORELITTLEPROCESS_OFFSET UNITYSDK_OFFSET(0x65AFBA0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSKILLLEVELUPPROCESS_OFFSET UNITYSDK_OFFSET(0xAEA7190)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSKILLSPECIALITEMPROCESS_OFFSET UNITYSDK_OFFSET(0xAEA79A0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSWITCHPLANPOPPANEL_OFFSET UNITYSDK_OFFSET(0x65B13C0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWWEAPONBREAKTHROUGHPROCESS_OFFSET UNITYSDK_OFFSET(0xAEA67E0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWWEAPONLEVELUPPROCESS_OFFSET UNITYSDK_OFFSET(0xAEA5F50)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_UPDATEUI_OFFSET UNITYSDK_OFFSET(0xAEA0040)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x65B3720)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONCLICKFAIRYBTN_B__64_0_OFFSET UNITYSDK_OFFSET(0x65B43B0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONCLICKFAIRYBTN_B__64_1_OFFSET UNITYSDK_OFFSET(0x65B41B0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONCLICKFAIRYBTN_B__64_2_OFFSET UNITYSDK_OFFSET(0x65B42E0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONSHOW_B__18_0_OFFSET UNITYSDK_OFFSET(0x65B38D0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONSHOW_B__18_1_OFFSET UNITYSDK_OFFSET(0x65B3CB0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONUIINIT_B__16_0_OFFSET UNITYSDK_OFFSET(0x65B3890)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONUIINIT_B__16_1_OFFSET UNITYSDK_OFFSET(0x65B38B0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__REFRESHMATERIALPREVIEW_B__28_5_OFFSET UNITYSDK_OFFSET(0x65B4180)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x65B4480)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0x65B44F0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x65B4550)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x65B4580)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x65B4590)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x65B45A0)
+#define MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x65B45B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIWishlistMainPageController_TypeDefinitionIndex = 49118;
+
+	class UIWishlistMainPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Int32 ConversionFactor = 0x9; // 0x0
+		::Class_2_B9985733D17C9982* _view; // 0x2F8
+		::Class_3_36FF8167703D4259* _wishlistPlan; // 0x300
+		::System::UInt32 _avatarID; // 0x308
+		::System::UInt32 _targetAvatarID; // 0x30C
+		::Class_2_D89CCC627A66D0AD* _avatarData; // 0x310
+		::MoleMole::UIRoleChangeWidgetController* _roleChangeWidget; // 0x318
+		::System::Collections::Generic::List_1<::UnityEngine::UI::Extension::UILocalizationText*>* _skillLevelTexts; // 0x320
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* _skillGetIconGameObjects; // 0x328
+		::System::Boolean _bAllEquipmentNumEnough; // 0x330
+		::System::Boolean _bAllComplete; // 0x331
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnSmallWidgetController*>* _previewItemIconSmallBtnWidget; // 0x338
+		::Class_1_A0B1A57C6DC75B0F* _selectionData; // 0x340
+		::System::Int32 curCoinNum; // 0x348
+		::System::Int32 needTotalCoinNumAvatar; // 0x34C
+		::System::Int32 needTotalCoinNumSkill; // 0x350
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void UpdateUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_UPDATEUI_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshRarity(::System::Int32 rarityValue)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_REFRESHRARITY_OFFSET))(this, rarityValue);
+		}
+
+		::System::Void RefreshMaterialPreview()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_REFRESHMATERIALPREVIEW_OFFSET))(this);
+		}
+
+		::MoleMole::UIItemIconBtnSmallWidgetController* ShowExpItemPreview(::Class_2_208CC9941471731A_240* itemConfig, ::UnityEngine::Transform* parent)
+		{
+			return ((::MoleMole::UIItemIconBtnSmallWidgetController*(*)(::PVOID, ::Class_2_208CC9941471731A_240*, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWEXPITEMPREVIEW_OFFSET))(this, itemConfig, parent);
+		}
+
+		::System::Void ShowAvatarLevelUpProcess(::Class_2_208CC9941471731A_240* itemConfig, ::System::Int32& diffNum)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_240*, ::System::Int32&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWAVATARLEVELUPPROCESS_OFFSET))(this, itemConfig, diffNum);
+		}
+
+		::System::Void ShowWeaponLevelUpProcess(::Class_2_208CC9941471731A_240* itemConfig, ::System::Int32& diffNum)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_240*, ::System::Int32&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWWEAPONLEVELUPPROCESS_OFFSET))(this, itemConfig, diffNum);
+		}
+
+		::System::Void ShowEquipLevelUpProcess(::Class_2_208CC9941471731A_240* itemConfig, ::System::Int32& diffNum)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_240*, ::System::Int32&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWEQUIPLEVELUPPROCESS_OFFSET))(this, itemConfig, diffNum);
+		}
+
+		::System::Void ShowAvatarBreakThroughProcess(::System::Int32 itemId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWAVATARBREAKTHROUGHPROCESS_OFFSET))(this, itemId);
+		}
+
+		::System::Void ShowWeaponBreakThroughProcess(::System::Int32 itemId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWWEAPONBREAKTHROUGHPROCESS_OFFSET))(this, itemId);
+		}
+
+		::System::Void ShowAvatarWeaponCoinProcess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWAVATARWEAPONCOINPROCESS_OFFSET))(this);
+		}
+
+		::System::Void ShowSkillLevelUpProcess(::System::Int32 itemId, ::System::Int32& diffNum)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSKILLLEVELUPPROCESS_OFFSET))(this, itemId, diffNum);
+		}
+
+		::System::Void ShowSkillSpecialItemProcess(::System::Int32 needSpecialItemNum)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSKILLSPECIALITEMPROCESS_OFFSET))(this, needSpecialItemNum);
+		}
+
+		::System::Void ShowSkillCoreBigProcess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSKILLCOREBIGPROCESS_OFFSET))(this);
+		}
+
+		::System::Void ShowSkillCoreLittleProcess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSKILLCORELITTLEPROCESS_OFFSET))(this);
+		}
+
+		::System::Void ShowSkillCoinProcess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSKILLCOINPROCESS_OFFSET))(this);
+		}
+
+		::System::Void ClosePreviewItemIconSmallBtnWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_CLOSEPREVIEWITEMICONSMALLBTNWIDGET_OFFSET))(this);
+		}
+
+		::MoleMole::UIItemIconBtnSmallWidgetController* OpenPreviewComposeItemWidget(::System::Int32 itemId, ::UnityEngine::Transform* root)
+		{
+			return ((::MoleMole::UIItemIconBtnSmallWidgetController*(*)(::PVOID, ::System::Int32, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_OPENPREVIEWCOMPOSEITEMWIDGET_OFFSET))(this, itemId, root);
+		}
+
+		::System::Void RefreshFairyBtnText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_REFRESHFAIRYBTNTEXT_OFFSET))(this);
+		}
+
+		::System::Void SetupBgColor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SETUPBGCOLOR_OFFSET))(this);
+		}
+
+		::System::Void SetupBgColorImg(::UnityEngine::Component* imageTrans)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Component*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SETUPBGCOLORIMG_OFFSET))(this, imageTrans);
+		}
+
+		::System::Void SetupBgColorText(::UnityEngine::Component* textTrans)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Component*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SETUPBGCOLORTEXT_OFFSET))(this, textTrans);
+		}
+
+		::System::Void SetupBgText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SETUPBGTEXT_OFFSET))(this);
+		}
+
+		::System::Void OnClickChooseWeaponBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKCHOOSEWEAPONBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickAvatarPlanSwitchBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKAVATARPLANSWITCHBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickSkillPlanSwitchBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKSKILLPLANSWITCHBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickEquipPlanSwitchBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKEQUIPPLANSWITCHBTN_OFFSET))(this);
+		}
+
+		::System::Void ShowSwitchPlanPopPanel(::System::Int32 switchType)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_SHOWSWITCHPLANPOPPANEL_OFFSET))(this, switchType);
+		}
+
+		::System::Void OnClickCoinBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKCOINBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickAvatarCoinIconBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKAVATARCOINICONBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickSkillCoinIconBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKSKILLCOINICONBTN_OFFSET))(this);
+		}
+
+		::System::Void OnAvatarChangeHandle(::Class_1_3CDBAA6BC10A7F83* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_3CDBAA6BC10A7F83*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONAVATARCHANGEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnAvatarLeftHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONAVATARLEFTHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnAvatarRightHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONAVATARRIGHTHANDLE_OFFSET))(this);
+		}
+
+		::System::UInt32 GetSKillLevel(::Share::EAvatarSkillType skillType)
+		{
+			return ((::System::UInt32(*)(::PVOID, ::Share::EAvatarSkillType))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_GETSKILLLEVEL_OFFSET))(this, skillType);
+		}
+
+		::System::Void GotoRoleInfo(::System::Int32 autoTabIndex, ::System::Boolean forceClickEquip, ::System::Boolean forceClickWeapon)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_GOTOROLEINFO_OFFSET))(this, autoTabIndex, forceClickEquip, forceClickWeapon);
+		}
+
+		::System::Void OnPreviewWeaponBtnClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONPREVIEWWEAPONBTNCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnClickQuickBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKQUICKBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickMoreBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKMOREBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickFairyBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKFAIRYBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickInfoBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONCLICKINFOBTN_OFFSET))(this);
+		}
+
+		::System::Void RecordButtonClickAction(::System::Int32 targetId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_RECORDBUTTONCLICKACTION_OFFSET))(this, targetId);
+		}
+
+		::System::Void OnItemChange(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER_ONITEMCHANGE_OFFSET))(this, obj);
+		}
+
+		::System::Void _OnUIInit_b__16_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONUIINIT_B__16_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__16_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONUIINIT_B__16_1_OFFSET))(this);
+		}
+
+		::System::Void _OnShow_b__18_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONSHOW_B__18_0_OFFSET))(this, args);
+		}
+
+		::System::Int32 _OnShow_b__18_1(::Class_1_3CDBAA6BC10A7F83* a, ::Class_1_3CDBAA6BC10A7F83* b)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_3CDBAA6BC10A7F83*, ::Class_1_3CDBAA6BC10A7F83*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONSHOW_B__18_1_OFFSET))(this, a, b);
+		}
+
+		::System::Void _RefreshMaterialPreview_b__28_5()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__REFRESHMATERIALPREVIEW_B__28_5_OFFSET))(this);
+		}
+
+		::System::Void _OnClickFairyBtn_b__64_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONCLICKFAIRYBTN_B__64_1_OFFSET))(this);
+		}
+
+		::System::Void _OnClickFairyBtn_b__64_2(::System::Int32 ret)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONCLICKFAIRYBTN_B__64_2_OFFSET))(this, ret);
+		}
+
+		::System::Void _OnClickFairyBtn_b__64_0(::System::Int32 ret)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER__ONCLICKFAIRYBTN_B__64_0_OFFSET))(this, ret);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTMAINPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,178 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_98DE5B0AA67D49FB;
+class Class_2_E1B7681C6974F40D;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralBuffRowWidgetController; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_DESTROYVIEW_OFFSET UNITYSDK_OFFSET(0xA9FEC40)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_GETALLBUFFROW_OFFSET UNITYSDK_OFFSET(0xA9FF390)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xA9FDF50)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ISHAVEANYBUFF_OFFSET UNITYSDK_OFFSET(0xA9FF320)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA9FEA50)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA9FECB0)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xA9FEF50)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA9FEAF0)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA9FDEA0)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA9FE070)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_OPENBUFFDIALOG_OFFSET UNITYSDK_OFFSET(0xA9FF470)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_OPENPAIRBUFFDIALOG_OFFSET UNITYSDK_OFFSET(0xA9FF600)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_REFRESHCONSOLENAVIGATIONFUNCTION_OFFSET UNITYSDK_OFFSET(0xA9FF000)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xA9FE170)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_SETDIRECTTRIGGERBUTTON_OFFSET UNITYSDK_OFFSET(0xA9FF400)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_TRYDIRECTTRIGGERTOKENBTN_OFFSET UNITYSDK_OFFSET(0xA9FED60)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA9FF7B0)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER__INITVIEW_B__12_0_OFFSET UNITYSDK_OFFSET(0xA9FF7E0)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER__REFRESHVIEW_G__GETBUFFROW_7_0_OFFSET UNITYSDK_OFFSET(0xA9FF190)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA9FF7F0)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA9FF860)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xA9FF890)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA9FF8F0)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA9FF970)
+#define MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA9FF9D0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralBuffPanelWidgetController_TypeDefinitionIndex = 45587;
+
+	class UIGeneralBuffPanelWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_E1B7681C6974F40D* _view; // 0x2A0
+		::System::Collections::Generic::List_1<::MoleMole::UIGeneralBuffRowWidgetController*>* _buffRows; // 0x2A8
+		::Class_1_98DE5B0AA67D49FB* _config; // 0x2B0
+		::System::Int32 _showCount; // 0x2B8
+		::System::Boolean _isConsoleDirectTriggerButton; // 0x2BC
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::MoleMole::UIGeneralBuffRowWidgetController*>* GetAllBuffRow()
+		{
+			return ((::System::Collections::Generic::List_1<::MoleMole::UIGeneralBuffRowWidgetController*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_GETALLBUFFROW_OFFSET))(this);
+		}
+
+		::System::Void SetDirectTriggerButton(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_SETDIRECTTRIGGERBUTTON_OFFSET))(this, state);
+		}
+
+		::System::Void RefreshConsoleNavigationFunction()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_REFRESHCONSOLENAVIGATIONFUNCTION_OFFSET))(this);
+		}
+
+		::System::Boolean TryDirectTriggerTokenBtn()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_TRYDIRECTTRIGGERTOKENBTN_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void DestroyView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_DESTROYVIEW_OFFSET))(this);
+		}
+
+		::System::Boolean IsHaveAnyBuff()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_ISHAVEANYBUFF_OFFSET))(this);
+		}
+
+		::System::Void OpenBuffDialog()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_OPENBUFFDIALOG_OFFSET))(this);
+		}
+
+		::System::Void OpenPairBuffDialog()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER_OPENPAIRBUFFDIALOG_OFFSET))(this);
+		}
+
+		::MoleMole::UIGeneralBuffRowWidgetController* _RefreshView_g__GetBuffRow_7_0(::System::Int32& count)
+		{
+			return ((::MoleMole::UIGeneralBuffRowWidgetController*(*)(::PVOID, ::System::Int32&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER__REFRESHVIEW_G__GETBUFFROW_7_0_OFFSET))(this, count);
+		}
+
+		::System::Void _InitView_b__12_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER__INITVIEW_B__12_0_OFFSET))(this, args);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALBUFFPANELWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

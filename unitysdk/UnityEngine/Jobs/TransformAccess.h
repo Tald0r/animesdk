@@ -2,12 +2,24 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define UNITYENGINE_JOBS_TRANSFORMACCESS_GETLOCALTOWORLDMATRIX_OFFSET UNITYSDK_OFFSET(0x181FBBA0)
-#define UNITYENGINE_JOBS_TRANSFORMACCESS_GET_LOCALTOWORLDMATRIX_OFFSET UNITYSDK_OFFSET(0x2042B70)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_GETLOCALSCALE_OFFSET UNITYSDK_OFFSET(0x19D16A90)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_GETLOCALTOWORLDMATRIX_OFFSET UNITYSDK_OFFSET(0x19D16B20)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_GETPOSITION_OFFSET UNITYSDK_OFFSET(0x19D169A0)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_GETROTATION_OFFSET UNITYSDK_OFFSET(0x19D16A10)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_GET_LOCALSCALE_OFFSET UNITYSDK_OFFSET(0x8F5270)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_GET_LOCALTOWORLDMATRIX_OFFSET UNITYSDK_OFFSET(0x8F52E0)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_GET_POSITION_OFFSET UNITYSDK_OFFSET(0x8F51A0)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_GET_ROTATION_OFFSET UNITYSDK_OFFSET(0x8F5210)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_SETLOCALSCALE_OFFSET UNITYSDK_OFFSET(0x19D16AB0)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_SETPOSITION_OFFSET UNITYSDK_OFFSET(0x19D169C0)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_SETROTATION_OFFSET UNITYSDK_OFFSET(0x19D16A30)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_SET_LOCALSCALE_OFFSET UNITYSDK_OFFSET(0x8F52B0)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_SET_POSITION_OFFSET UNITYSDK_OFFSET(0x8F51E0)
+#define UNITYENGINE_JOBS_TRANSFORMACCESS_SET_ROTATION_OFFSET UNITYSDK_OFFSET(0x8F5240)
 
 namespace UnityEngine::Jobs
 {
-	inline static constexpr unsigned int TransformAccess_TypeDefinitionIndex = 4213;
+	inline static constexpr unsigned int TransformAccess_TypeDefinitionIndex = 5440;
 
 	struct alignas(8) TransformAccess
 	{
@@ -15,9 +27,93 @@ namespace UnityEngine::Jobs
 		::System::Int32 index; // 0x18
 
 		/*
+		::UnityEngine::Vector3 get_position()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_GET_POSITION_OFFSET))(this);
+		}
+		*/
+
+		/*
+		::System::Void set_position(::UnityEngine::Vector3 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_SET_POSITION_OFFSET))(this, value);
+		}
+		*/
+
+		/*
+		::UnityEngine::Quaternion get_rotation()
+		{
+			return ((::UnityEngine::Quaternion(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_GET_ROTATION_OFFSET))(this);
+		}
+		*/
+
+		/*
+		::System::Void set_rotation(::UnityEngine::Quaternion value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Quaternion))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_SET_ROTATION_OFFSET))(this, value);
+		}
+		*/
+
+		/*
+		::UnityEngine::Vector3 get_localScale()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_GET_LOCALSCALE_OFFSET))(this);
+		}
+		*/
+
+		/*
+		::System::Void set_localScale(::UnityEngine::Vector3 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_SET_LOCALSCALE_OFFSET))(this, value);
+		}
+		*/
+
+		/*
 		::UnityEngine::Matrix4x4 get_localToWorldMatrix()
 		{
 			return ((::UnityEngine::Matrix4x4(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_GET_LOCALTOWORLDMATRIX_OFFSET))(this);
+		}
+		*/
+
+		/*
+		static ::System::Void GetPosition(::UnityEngine::Jobs::TransformAccess& access, ::UnityEngine::Vector3& p)
+		{
+			return ((::System::Void(*)(::UnityEngine::Jobs::TransformAccess&, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_GETPOSITION_OFFSET))(access, p);
+		}
+		*/
+
+		/*
+		static ::System::Void SetPosition(::UnityEngine::Jobs::TransformAccess& access, ::UnityEngine::Vector3& p)
+		{
+			return ((::System::Void(*)(::UnityEngine::Jobs::TransformAccess&, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_SETPOSITION_OFFSET))(access, p);
+		}
+		*/
+
+		/*
+		static ::System::Void GetRotation(::UnityEngine::Jobs::TransformAccess& access, ::UnityEngine::Quaternion& r)
+		{
+			return ((::System::Void(*)(::UnityEngine::Jobs::TransformAccess&, ::UnityEngine::Quaternion&))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_GETROTATION_OFFSET))(access, r);
+		}
+		*/
+
+		/*
+		static ::System::Void SetRotation(::UnityEngine::Jobs::TransformAccess& access, ::UnityEngine::Quaternion& r)
+		{
+			return ((::System::Void(*)(::UnityEngine::Jobs::TransformAccess&, ::UnityEngine::Quaternion&))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_SETROTATION_OFFSET))(access, r);
+		}
+		*/
+
+		/*
+		static ::System::Void GetLocalScale(::UnityEngine::Jobs::TransformAccess& access, ::UnityEngine::Vector3& r)
+		{
+			return ((::System::Void(*)(::UnityEngine::Jobs::TransformAccess&, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_GETLOCALSCALE_OFFSET))(access, r);
+		}
+		*/
+
+		/*
+		static ::System::Void SetLocalScale(::UnityEngine::Jobs::TransformAccess& access, ::UnityEngine::Vector3& r)
+		{
+			return ((::System::Void(*)(::UnityEngine::Jobs::TransformAccess&, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + UNITYENGINE_JOBS_TRANSFORMACCESS_SETLOCALSCALE_OFFSET))(access, r);
 		}
 		*/
 

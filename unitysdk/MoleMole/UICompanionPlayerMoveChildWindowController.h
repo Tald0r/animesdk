@@ -1,0 +1,153 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIArcadeContinuousPlayerMoveChildWindowController.h"
+#include "unitysdk/MoleMole/UICompanionPlayerMoveChildWindowController_JoystickInputDir.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+class Class_2_79F6D62CE30E3F8E_84;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_CALJOYSTICKINPUTDIR_OFFSET UNITYSDK_OFFSET(0xC0D0820)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xC0CFB80)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_INITARCADECONTINUOUSVIEWCONTROL_OFFSET UNITYSDK_OFFSET(0xC0CFDA0)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_INITVIEWCONTROL_OFFSET UNITYSDK_OFFSET(0xC0D0060)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0CFC70)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0CFD10)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0CFB90)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0CFC00)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_REFRESHJOYSTICK_OFFSET UNITYSDK_OFFSET(0xC0D0680)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_SWITCHDIR_OFFSET UNITYSDK_OFFSET(0xC0D07B0)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_TRYJOYSTICKMOVECLASSIC_OFFSET UNITYSDK_OFFSET(0xC0D0300)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_TRYJOYSTICKMOVE_OFFSET UNITYSDK_OFFSET(0xC0D01B0)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xC0D05C0)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC0D0C00)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_INITARCADECONTINUOUSVIEWCONTROL_OFFSET UNITYSDK_OFFSET(0xC0D0CC0)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_INITVIEWCONTROL_OFFSET UNITYSDK_OFFSET(0xC0D0CD0)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC0D0CE0)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC0D0D50)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC0D0D60)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC0D0D70)
+#define MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_TRYJOYSTICKMOVE_OFFSET UNITYSDK_OFFSET(0xC0D0D80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICompanionPlayerMoveChildWindowController_TypeDefinitionIndex = 65444;
+
+	class UICompanionPlayerMoveChildWindowController : public ::MoleMole::UIArcadeContinuousPlayerMoveChildWindowController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_84* _view; // 0x3D8
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* _dirGos; // 0x3E0
+		::MoleMole::UICompanionPlayerMoveChildWindowController_JoystickInputDir curFrameDir; // 0x3E8
+		::MoleMole::UICompanionPlayerMoveChildWindowController_JoystickInputDir lastFrameDir; // 0x3EC
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitArcadeContinuousViewControl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_INITARCADECONTINUOUSVIEWCONTROL_OFFSET))(this);
+		}
+
+		::System::Void InitViewControl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_INITVIEWCONTROL_OFFSET))(this);
+		}
+
+		::System::Void TryJoystickMove(::UnityEngine::Vector2 hitPos, ::System::Boolean wasPressedThisFrame)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_TRYJOYSTICKMOVE_OFFSET))(this, hitPos, wasPressedThisFrame);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshJoystick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_REFRESHJOYSTICK_OFFSET))(this);
+		}
+
+		::System::Void TryJoystickMoveClassic(::UnityEngine::Vector2 hitPos, ::System::Boolean WasPressedThisFrame)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_TRYJOYSTICKMOVECLASSIC_OFFSET))(this, hitPos, WasPressedThisFrame);
+		}
+
+		::System::Void CalJoystickInputDir()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_CALJOYSTICKINPUTDIR_OFFSET))(this);
+		}
+
+		::System::Void SwitchDir(::MoleMole::UICompanionPlayerMoveChildWindowController_JoystickInputDir dir)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UICompanionPlayerMoveChildWindowController_JoystickInputDir))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER_SWITCHDIR_OFFSET))(this, dir);
+		}
+
+		::System::Void __base_InitArcadeContinuousViewControl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_INITARCADECONTINUOUSVIEWCONTROL_OFFSET))(this);
+		}
+
+		::System::Void __base_InitViewControl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_INITVIEWCONTROL_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_TryJoystickMove(::UnityEngine::Vector2 P0, ::System::Boolean P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOMPANIONPLAYERMOVECHILDWINDOWCONTROLLER___BASE_TRYJOYSTICKMOVE_OFFSET))(this, P0, P1);
+		}
+	};
+}

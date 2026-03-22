@@ -1,0 +1,124 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_D375C91CCE5D3999;
+class Class_2_208CC9941471731A_543;
+class Class_2_79AE422BA06F6D26;
+namespace MoleMole { class UIActivityCompRowTaskListWidgetController; }
+namespace MoleMole { class UIActivityCompTaskMiniscapeContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONACTIVITYCHANGED_OFFSET UNITYSDK_OFFSET(0xD3B7500)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD3B6650)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONREFRESHTASK_OFFSET UNITYSDK_OFFSET(0xD3B67C0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD3B66F0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD3B73A0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD3B6400)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD3B6520)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_REFRESHTASKVIEW_OFFSET UNITYSDK_OFFSET(0xD3B6AE0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD3B7570)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER__ONREFRESHTASK_B__10_0_OFFSET UNITYSDK_OFFSET(0xD3B75A0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER__ONREFRESHTASK_B__10_1_OFFSET UNITYSDK_OFFSET(0xD3B75B0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD3B75C0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD3B7630)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD3B76A0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD3B7720)
+#define MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD3B7780)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityCompTaskMiniscapeWidgetController_TypeDefinitionIndex = 45367;
+
+	class UIActivityCompTaskMiniscapeWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26* _view; // 0x2A0
+		::MoleMole::UIActivityCompTaskMiniscapeContext* compContext; // 0x2A8
+		::Class_2_208CC9941471731A_543* activityRuleTemplate; // 0x2B0
+		::Class_1_D375C91CCE5D3999* relateActivityData; // 0x2B8
+		::MoleMole::UIActivityCompRowTaskListWidgetController* item; // 0x2C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnRefreshTask()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONREFRESHTASK_OFFSET))(this);
+		}
+
+		::System::Void OnActivityChanged(::Class_1_D375C91CCE5D3999* activityBaseData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_ONACTIVITYCHANGED_OFFSET))(this, activityBaseData);
+		}
+
+		::System::Void RefreshTaskView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER_REFRESHTASKVIEW_OFFSET))(this);
+		}
+
+		::System::Void _OnRefreshTask_b__10_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER__ONREFRESHTASK_B__10_0_OFFSET))(this, args);
+		}
+
+		::System::Void _OnRefreshTask_b__10_1(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER__ONREFRESHTASK_B__10_1_OFFSET))(this, args);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKMINISCAPEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

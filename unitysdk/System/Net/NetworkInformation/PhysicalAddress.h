@@ -4,26 +4,28 @@
 
 namespace System { class String; }
 
-#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS_EQUALS_OFFSET UNITYSDK_OFFSET(0x17EE9030)
-#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x17EE8C70)
-#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17EE90D0)
-#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS__CCTOR_OFFSET UNITYSDK_OFFSET(0x17EE91F0)
-#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS__CTOR_OFFSET UNITYSDK_OFFSET(0x17EE8C60)
+#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS_EQUALS_OFFSET UNITYSDK_OFFSET(0x19D7CF10)
+#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS_GETADDRESSBYTES_OFFSET UNITYSDK_OFFSET(0x19D7D0D0)
+#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x19D7CB50)
+#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS_PARSE_OFFSET UNITYSDK_OFFSET(0x19D7D130)
+#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS_TOSTRING_OFFSET UNITYSDK_OFFSET(0x19D7CFB0)
+#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19D7D550)
+#define SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS__CTOR_OFFSET UNITYSDK_OFFSET(0x19D7CB40)
 
 namespace System::Net::NetworkInformation
 {
-	inline static constexpr unsigned int PhysicalAddress_TypeDefinitionIndex = 2914;
+	inline static constexpr unsigned int PhysicalAddress_TypeDefinitionIndex = 3735;
 
 	class PhysicalAddress : public ::System::Object
 	{
 	public:
 		static ::System::Net::NetworkInformation::PhysicalAddress** StaticGet_None()
 		{
-			return (::System::Net::NetworkInformation::PhysicalAddress**)Il2CppClass::FromTypeDefinitionIndex(PhysicalAddress_TypeDefinitionIndex)->GetStaticField(0x189C0);
+			return (::System::Net::NetworkInformation::PhysicalAddress**)Il2CppClass::FromTypeDefinitionIndex(PhysicalAddress_TypeDefinitionIndex)->GetStaticField(0x31D0);
 		}
 		::Il2CppArray<::System::Byte>* address; // 0x10
-		::System::Int32 hash; // 0x18
-		::System::Boolean changed; // 0x1C
+		::System::Boolean changed; // 0x18
+		::System::Int32 hash; // 0x1C
 
 		::System::Void _ctor(::Il2CppArray<::System::Byte>* address)
 		{
@@ -48,6 +50,16 @@ namespace System::Net::NetworkInformation
 		::System::String* ToString()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS_TOSTRING_OFFSET))(this);
+		}
+
+		::Il2CppArray<::System::Byte>* GetAddressBytes()
+		{
+			return ((::Il2CppArray<::System::Byte>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS_GETADDRESSBYTES_OFFSET))(this);
+		}
+
+		static ::System::Net::NetworkInformation::PhysicalAddress* Parse(::System::String* address)
+		{
+			return ((::System::Net::NetworkInformation::PhysicalAddress*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_PHYSICALADDRESS_PARSE_OFFSET))(address);
 		}
 	};
 }

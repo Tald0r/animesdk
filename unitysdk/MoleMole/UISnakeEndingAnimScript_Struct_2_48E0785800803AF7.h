@@ -1,0 +1,32 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+namespace System { class String; }
+namespace UnityEngine::UI::Extension { class UILocalizationText; }
+
+#define MOLEMOLE_UISNAKEENDINGANIMSCRIPT_STRUCT_2_48E0785800803AF7_METHOD_2_1B9CC121BDC8766D_OFFSET UNITYSDK_OFFSET(0x96E080)
+#define MOLEMOLE_UISNAKEENDINGANIMSCRIPT_STRUCT_2_48E0785800803AF7__CTOR_OFFSET UNITYSDK_OFFSET(0x96E060)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISnakeEndingAnimScript_Struct_2_48E0785800803AF7_TypeDefinitionIndex = 81640;
+
+	struct alignas(8) UISnakeEndingAnimScript_Struct_2_48E0785800803AF7
+	{
+		::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x10
+		::System::String* Field_2_1; // 0x18
+		::System::String* Field_2_2; // 0x20
+		::System::Boolean Field_2_3; // 0x28
+
+		::System::Void _ctor(::UnityEngine::UI::Extension::UILocalizationText* a1, ::System::String* a2, ::System::String* a3, ::System::Boolean a4)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UILocalizationText*, ::System::String*, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISNAKEENDINGANIMSCRIPT_STRUCT_2_48E0785800803AF7__CTOR_OFFSET))(this, a1, a2, a3, a4);
+		}
+
+		::System::Void Method_2_1B9CC121BDC8766D(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISNAKEENDINGANIMSCRIPT_STRUCT_2_48E0785800803AF7_METHOD_2_1B9CC121BDC8766D_OFFSET))(this, a1);
+		}
+	};
+}

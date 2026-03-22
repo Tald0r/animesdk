@@ -2,13 +2,16 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_THREADING_VOLATILE_READ_1_OFFSET UNITYSDK_OFFSET(0x15B9DDE0)
-#define SYSTEM_THREADING_VOLATILE_READ_OFFSET UNITYSDK_OFFSET(0x15B9DDD0)
-#define SYSTEM_THREADING_VOLATILE_WRITE_OFFSET UNITYSDK_OFFSET(0x15B9DDF0)
+#define SYSTEM_THREADING_VOLATILE_READ_1_OFFSET UNITYSDK_OFFSET(0x19672B50)
+#define SYSTEM_THREADING_VOLATILE_READ_2_OFFSET UNITYSDK_OFFSET(0x19672B60)
+#define SYSTEM_THREADING_VOLATILE_READ_OFFSET UNITYSDK_OFFSET(0x19672B40)
+#define SYSTEM_THREADING_VOLATILE_WRITE_1_OFFSET UNITYSDK_OFFSET(0x19672B80)
+#define SYSTEM_THREADING_VOLATILE_WRITE_2_OFFSET UNITYSDK_OFFSET(0x19672B90)
+#define SYSTEM_THREADING_VOLATILE_WRITE_OFFSET UNITYSDK_OFFSET(0x19672B70)
 
 namespace System::Threading
 {
-	inline static constexpr unsigned int Volatile_TypeDefinitionIndex = 877;
+	inline static constexpr unsigned int Volatile_TypeDefinitionIndex = 869;
 
 	class Volatile : public ::System::Object
 	{
@@ -23,9 +26,24 @@ namespace System::Threading
 			return ((::System::Int32(*)(::System::Int32&))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_VOLATILE_READ_1_OFFSET))(location);
 		}
 
-		static ::System::Void Write(::System::Int32& location, ::System::Int32 value)
+		static ::System::Int64 Read_2(::System::Int64& location)
 		{
-			return ((::System::Void(*)(::System::Int32&, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_VOLATILE_WRITE_OFFSET))(location, value);
+			return ((::System::Int64(*)(::System::Int64&))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_VOLATILE_READ_2_OFFSET))(location);
+		}
+
+		static ::System::Void Write(::System::Boolean& location, ::System::Boolean value)
+		{
+			return ((::System::Void(*)(::System::Boolean&, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_VOLATILE_WRITE_OFFSET))(location, value);
+		}
+
+		static ::System::Void Write_1(::System::Int32& location, ::System::Int32 value)
+		{
+			return ((::System::Void(*)(::System::Int32&, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_VOLATILE_WRITE_1_OFFSET))(location, value);
+		}
+
+		static ::System::Void Write_2(::System::Int64& location, ::System::Int64 value)
+		{
+			return ((::System::Void(*)(::System::Int64&, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_THREADING_VOLATILE_WRITE_2_OFFSET))(location, value);
 		}
 	};
 }

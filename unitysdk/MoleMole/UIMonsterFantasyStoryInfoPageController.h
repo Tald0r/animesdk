@@ -1,0 +1,120 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_C90EE27542528082;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIMonsterFantasyStoryInfoBattleLevelWidgetController; }
+namespace MoleMole { class UIMonsterFantasyStoryInfoStoryLevelWidgetController; }
+
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_GET_IGNOREFADING_OFFSET UNITYSDK_OFFSET(0x9E89C90)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_GET_ISENABLEFADEINPUTBLOCKING_OFFSET UNITYSDK_OFFSET(0x9E89C80)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x9E89C00)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0x9E89C10)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x9E89CA0)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x9E8A7A0)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONSTARTBTNCLICK_OFFSET UNITYSDK_OFFSET(0x9E8A890)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x9E8A820)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9E89DA0)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9E89FE0)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9E8AB60)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0x9E8AB70)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x9E8ABE0)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x9E8ABF0)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9E8AC00)
+#define MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9E8AC10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMonsterFantasyStoryInfoPageController_TypeDefinitionIndex = 54397;
+
+	class UIMonsterFantasyStoryInfoPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::MoleMole::UIMonsterFantasyStoryInfoBattleLevelWidgetController* _battleLevelWidgetController; // 0x2F8
+		::MoleMole::UIMonsterFantasyStoryInfoStoryLevelWidgetController* _storyLevelWidgetController; // 0x300
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Class_2_C90EE27542528082* get__viewModel()
+		{
+			return ((::Class_2_C90EE27542528082*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsEnableFadeInputBlocking()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_GET_ISENABLEFADEINPUTBLOCKING_OFFSET))(this);
+		}
+
+		::System::Boolean get_IgnoreFading()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_GET_IGNOREFADING_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnStartBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER_ONSTARTBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSTORYINFOPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,146 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_A76EAD5D385CC920;
+class Class_2_0A55B5A82A61DAFA_1;
+class Class_2_14E7CE92E8A3183F;
+class Class_2_60638234271CCDB8_144;
+class Class_2_AC1B1CB16C488BEC;
+class Class_2_DA8BF519212BAE65;
+namespace MoleMole { class UIActivityTeamTrialMissionRowWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIDailyChallengeCardRowWidgetController; }
+namespace MoleMole { class UIRoleChallengeVideoInfoWidgetController; }
+namespace MoleMole { class UIYorozuyaVideoInfoStoryPageController; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONBUILDBTNCLICK_OFFSET UNITYSDK_OFFSET(0xD1C4180)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD1C3F20)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xD1C3DD0)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONMONSTERCARDBTNCLICK_OFFSET UNITYSDK_OFFSET(0xD1C3FC0)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD1C3970)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD1C3D20)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHBUFFVIEW_OFFSET UNITYSDK_OFFSET(0xD1C4600)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHCHALLENGEVIEW_OFFSET UNITYSDK_OFFSET(0xD1C43F0)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHGRADEVIEW_OFFSET UNITYSDK_OFFSET(0xD1C4B90)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHITEMVIEW_OFFSET UNITYSDK_OFFSET(0xD1C4900)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHMONSTERCARDVIEW_OFFSET UNITYSDK_OFFSET(0xD1C5930)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHVIDEOINFOVIEW_OFFSET UNITYSDK_OFFSET(0xD1C5420)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xD1C5CF0)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD1C5DE0)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD1C5EE0)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xD1C5F50)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD1C5FB0)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD1C6010)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAbyssS2RoleChallengeInfoWidgetController_TypeDefinitionIndex = 78351;
+
+	class UIAbyssS2RoleChallengeInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_60638234271CCDB8_144* _view; // 0x2A0
+		::Class_2_DA8BF519212BAE65* _abyssModel; // 0x2A8
+		::Class_1_A76EAD5D385CC920* _data; // 0x2B0
+		::Class_2_0A55B5A82A61DAFA_1* _questConfig; // 0x2B8
+		::Class_2_14E7CE92E8A3183F* _dungeonConfig; // 0x2C0
+		::System::Collections::Generic::List_1<::Class_2_AC1B1CB16C488BEC*>* _items; // 0x2C8
+		::MoleMole::UIRoleChallengeVideoInfoWidgetController* _videoInfoWidget; // 0x2D0
+		::MoleMole::UIYorozuyaVideoInfoStoryPageController* _challengeVideoInfoWidget; // 0x2D8
+		::MoleMole::UIDailyChallengeCardRowWidgetController* _monsterCardWidget; // 0x2E0
+		::System::Collections::Generic::List_1<::MoleMole::UIActivityTeamTrialMissionRowWidgetController*>* _challengeWidgets; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnMonsterCardBtnClick(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONMONSTERCARDBTNCLICK_OFFSET))(this, value);
+		}
+
+		::System::Void OnBuildBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_ONBUILDBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void RefreshChallengeView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHCHALLENGEVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshBuffView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHBUFFVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshItemView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHITEMVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshGradeView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHGRADEVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshVideoInfoView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHVIDEOINFOVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshMonsterCardView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHMONSTERCARDVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::Class_1_A76EAD5D385CC920* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_A76EAD5D385CC920*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, data);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSS2ROLECHALLENGEINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

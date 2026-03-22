@@ -1,0 +1,324 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIForbiddenAreaTalentPageController_PanelAnimation.h"
+#include "unitysdk/MoleMole/UIMainCityStorePageController.h"
+
+class Class_1_C1A35900D7C07432;
+class Class_2_08D4B905A1D5723A;
+class Class_2_79AE422BA06F6D26_87;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIForbiddenAreaTalentPointWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Animation; }
+
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_CHECKPANELSTATECHANGE_OFFSET UNITYSDK_OFFSET(0xD54AFE0)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_CLOSERIGHT_OFFSET UNITYSDK_OFFSET(0xD54BB90)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_CREATETALENTPOINTLIST_OFFSET UNITYSDK_OFFSET(0xD547B30)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_GETCURSELECTORFOCUSITEM_OFFSET UNITYSDK_OFFSET(0xD54A580)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_GETSUBTALENTID_OFFSET UNITYSDK_OFFSET(0xD54BC00)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_GET_CURPANELANIMATION_OFFSET UNITYSDK_OFFSET(0xD54B420)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xD546B90)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_INITBIND_OFFSET UNITYSDK_OFFSET(0xD546F10)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_INITITEMICON_OFFSET UNITYSDK_OFFSET(0xD547560)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_INITTOKEN_OFFSET UNITYSDK_OFFSET(0xD547780)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONADVANCEITEMBTN_OFFSET UNITYSDK_OFFSET(0xD54CC40)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONCLICKDONEBTN_OFFSET UNITYSDK_OFFSET(0xD54C8B0)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONCLICKOKBTN_OFFSET UNITYSDK_OFFSET(0xD54C610)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONCLICKRESETBTN_OFFSET UNITYSDK_OFFSET(0xD54CA70)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONCLICKTALENTPOINT_OFFSET UNITYSDK_OFFSET(0xD54A830)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD546BA0)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xD54A1F0)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xD54ACA0)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD54A160)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD546C40)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD547940)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_OPENINFOBTN_OFFSET UNITYSDK_OFFSET(0xD54C380)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHALLTALENTARROW_OFFSET UNITYSDK_OFFSET(0xD54D690)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHBOTTOMBTNVIEW_OFFSET UNITYSDK_OFFSET(0xD549190)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHRIGHTVIEW_OFFSET UNITYSDK_OFFSET(0xD54B560)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHTALENTPOINT_OFFSET UNITYSDK_OFFSET(0xD54CDF0)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHTOPVIEW_OFFSET UNITYSDK_OFFSET(0xD548E80)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xD54AF30)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_TRYAVOIDOCCLUSION_OFFSET UNITYSDK_OFFSET(0xD54BE70)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD54DA00)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONCLICKDONEBTN_B__39_0_OFFSET UNITYSDK_OFFSET(0xD54DD10)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONCLICKOKBTN_B__38_0_OFFSET UNITYSDK_OFFSET(0xD54DC80)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONCLICKOKBTN_B__38_1_OFFSET UNITYSDK_OFFSET(0xD54DCC0)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONCLICKRESETBTN_B__40_0_OFFSET UNITYSDK_OFFSET(0xD54DD50)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONUIINIT_B__9_0_OFFSET UNITYSDK_OFFSET(0xD54DB00)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONUIINIT_B__9_1_OFFSET UNITYSDK_OFFSET(0xD54DB10)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONUIINIT_B__9_2_OFFSET UNITYSDK_OFFSET(0xD54DB20)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__REFRESHRIGHTVIEW_B__30_0_OFFSET UNITYSDK_OFFSET(0xD54DB60)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__REFRESHRIGHTVIEW_B__30_1_OFFSET UNITYSDK_OFFSET(0xD54DC00)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__REFRESHRIGHTVIEW_B__30_2_OFFSET UNITYSDK_OFFSET(0xD54DC40)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__REFRESHVIEW_B__17_0_OFFSET UNITYSDK_OFFSET(0xD54DB30)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD54DED0)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xD54DF40)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xD54DF70)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD54DFD0)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD54DFE0)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD54DFF0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIForbiddenAreaTalentPageController_TypeDefinitionIndex = 44639;
+
+	class UIForbiddenAreaTalentPageController : public ::MoleMole::UIMainCityStorePageController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_87* _view; // 0x308
+		::Class_2_08D4B905A1D5723A* _model; // 0x310
+		::MoleMole::UIForbiddenAreaTalentPointWidgetController* _rightTalentPointWidgetController; // 0x318
+		::System::Int32 _currentTalentID; // 0x320
+		::MoleMole::UIForbiddenAreaTalentPointWidgetController* _curSelectedTalentCtrl; // 0x328
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_1_C1A35900D7C07432*>* _mainTalentPointDict; // 0x330
+		::MoleMole::UIForbiddenAreaTalentPointWidgetController* m_prevTalentCtrl; // 0x338
+		::System::String* fadeInAnim; // 0x340
+		::System::String* fadeOutAnim; // 0x348
+		::System::String* refreshAnim; // 0x350
+		::UnityEngine::Animation* m_panelAnimation; // 0x358
+		::System::String* dialogSpaceFadeIn; // 0x360
+		::System::String* dialogSpaceFadeOut; // 0x368
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void InitBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_INITBIND_OFFSET))(this);
+		}
+
+		::System::Void InitItemIcon()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_INITITEMICON_OFFSET))(this);
+		}
+
+		::System::Void InitToken()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_INITTOKEN_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshTopView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHTOPVIEW_OFFSET))(this);
+		}
+
+		::MoleMole::UIForbiddenAreaTalentPageController_PanelAnimation CheckPanelStateChange()
+		{
+			return ((::MoleMole::UIForbiddenAreaTalentPageController_PanelAnimation(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_CHECKPANELSTATECHANGE_OFFSET))(this);
+		}
+
+		::UnityEngine::Animation* get_CurPanelAnimation()
+		{
+			return ((::UnityEngine::Animation*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_GET_CURPANELANIMATION_OFFSET))(this);
+		}
+
+		::System::Void RefreshRightView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHRIGHTVIEW_OFFSET))(this);
+		}
+
+		::System::Void CloseRight()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_CLOSERIGHT_OFFSET))(this);
+		}
+
+		::System::Void RefreshBottomBtnView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHBOTTOMBTNVIEW_OFFSET))(this);
+		}
+
+		::System::Void CreateTalentPointList(::System::Int32 forceSelectTalentID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_CREATETALENTPOINTLIST_OFFSET))(this, forceSelectTalentID);
+		}
+
+		::System::Int32 GetSubTalentID(::System::Int32 mainTalentID, ::System::Collections::Generic::List_1<::System::Int32>* talentSubList)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Collections::Generic::List_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_GETSUBTALENTID_OFFSET))(this, mainTalentID, talentSubList);
+		}
+
+		::System::Void OnClickTalentPoint(::MoleMole::UIForbiddenAreaTalentPointWidgetController* ctrl, ::System::Boolean forceRefresh)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIForbiddenAreaTalentPointWidgetController*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONCLICKTALENTPOINT_OFFSET))(this, ctrl, forceRefresh);
+		}
+
+		::System::Void TryAvoidOcclusion(::System::Boolean infoPanelOpening)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_TRYAVOIDOCCLUSION_OFFSET))(this, infoPanelOpening);
+		}
+
+		::System::Void OpenInfoBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_OPENINFOBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickOKBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONCLICKOKBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickDoneBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONCLICKDONEBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickResetBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONCLICKRESETBTN_OFFSET))(this);
+		}
+
+		::System::Void OnAdvanceItemBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_ONADVANCEITEMBTN_OFFSET))(this);
+		}
+
+		::System::Void RefreshTalentPoint(::System::Int32 talentID, ::System::Boolean isRefreshLink, ::System::Boolean isRefreshRight, ::System::Collections::Generic::List_1<::MoleMole::UIForbiddenAreaTalentPointWidgetController*>*& refreshedCtrlList)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean, ::System::Boolean, ::System::Collections::Generic::List_1<::MoleMole::UIForbiddenAreaTalentPointWidgetController*>*&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHTALENTPOINT_OFFSET))(this, talentID, isRefreshLink, isRefreshRight, refreshedCtrlList);
+		}
+
+		::System::Void RefreshAllTalentArrow(::System::Collections::Generic::List_1<::MoleMole::UIForbiddenAreaTalentPointWidgetController*>* excludeCtrlList)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::MoleMole::UIForbiddenAreaTalentPointWidgetController*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_REFRESHALLTALENTARROW_OFFSET))(this, excludeCtrlList);
+		}
+
+		::MoleMole::UIForbiddenAreaTalentPointWidgetController* GetCurSelectOrFocusItem()
+		{
+			return ((::MoleMole::UIForbiddenAreaTalentPointWidgetController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER_GETCURSELECTORFOCUSITEM_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__9_0(::System::EventArgs* EventArgs)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONUIINIT_B__9_0_OFFSET))(this, EventArgs);
+		}
+
+		::System::Void _OnUIInit_b__9_1(::System::EventArgs* EventArgs)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONUIINIT_B__9_1_OFFSET))(this, EventArgs);
+		}
+
+		::System::Void _OnUIInit_b__9_2(::System::EventArgs* EventArgs)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONUIINIT_B__9_2_OFFSET))(this, EventArgs);
+		}
+
+		::System::Void _RefreshView_b__17_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__REFRESHVIEW_B__17_0_OFFSET))(this);
+		}
+
+		::System::Void _RefreshRightView_b__30_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__REFRESHRIGHTVIEW_B__30_0_OFFSET))(this);
+		}
+
+		::System::Void _RefreshRightView_b__30_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__REFRESHRIGHTVIEW_B__30_1_OFFSET))(this);
+		}
+
+		::System::Void _RefreshRightView_b__30_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__REFRESHRIGHTVIEW_B__30_2_OFFSET))(this);
+		}
+
+		::System::Void _OnClickOKBtn_b__38_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONCLICKOKBTN_B__38_0_OFFSET))(this);
+		}
+
+		::System::Void _OnClickOKBtn_b__38_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONCLICKOKBTN_B__38_1_OFFSET))(this);
+		}
+
+		::System::Void _OnClickDoneBtn_b__39_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONCLICKDONEBTN_B__39_0_OFFSET))(this);
+		}
+
+		::System::Void _OnClickResetBtn_b__40_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER__ONCLICKRESETBTN_B__40_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFORBIDDENAREATALENTPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

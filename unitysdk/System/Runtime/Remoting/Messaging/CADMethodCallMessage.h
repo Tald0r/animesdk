@@ -8,16 +8,14 @@ namespace System::Collections { class ArrayList; }
 namespace System::Runtime::Remoting::Messaging { class IMessage; }
 namespace System::Runtime::Remoting::Messaging { class IMethodCallMessage; }
 
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE_CREATE_OFFSET UNITYSDK_OFFSET(0x15CF6950)
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE_GETARGS_OFFSET UNITYSDK_OFFSET(0x15CF6D30)
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE_GETARGUMENTS_OFFSET UNITYSDK_OFFSET(0x15CF6C90)
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE_GET_PROPERTIESCOUNT_OFFSET UNITYSDK_OFFSET(0x15CF6D40)
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE_GET_URI_OFFSET UNITYSDK_OFFSET(0x15CF6940)
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x15CF69C0)
+#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE_CREATE_OFFSET UNITYSDK_OFFSET(0x1988AC80)
+#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE_GETARGS_OFFSET UNITYSDK_OFFSET(0x1988B0D0)
+#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE_GETARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1988AFA0)
+#define SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x1988ACF0)
 
 namespace System::Runtime::Remoting::Messaging
 {
-	inline static constexpr unsigned int CADMethodCallMessage_TypeDefinitionIndex = 1288;
+	inline static constexpr unsigned int CADMethodCallMessage_TypeDefinitionIndex = 1337;
 
 	class CADMethodCallMessage : public ::System::Runtime::Remoting::Messaging::CADMessageBase
 	{
@@ -27,11 +25,6 @@ namespace System::Runtime::Remoting::Messaging
 		::System::Void _ctor(::System::Runtime::Remoting::Messaging::IMethodCallMessage* callMsg)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Remoting::Messaging::IMethodCallMessage*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE__CTOR_OFFSET))(this, callMsg);
-		}
-
-		::System::String* get_Uri()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE_GET_URI_OFFSET))(this);
 		}
 
 		static ::System::Runtime::Remoting::Messaging::CADMethodCallMessage* Create(::System::Runtime::Remoting::Messaging::IMessage* callMsg)
@@ -47,11 +40,6 @@ namespace System::Runtime::Remoting::Messaging
 		::Il2CppArray<::System::Object*>* GetArgs(::System::Collections::ArrayList* args)
 		{
 			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID, ::System::Collections::ArrayList*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE_GETARGS_OFFSET))(this, args);
-		}
-
-		::System::Int32 get_PropertiesCount()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_MESSAGING_CADMETHODCALLMESSAGE_GET_PROPERTIESCOUNT_OFFSET))(this);
 		}
 	};
 }

@@ -1,0 +1,10 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+inline static constexpr unsigned int Struct_2_7DA347CFE6585CBC_2_TypeDefinitionIndex = 63737;
+
+struct alignas(8) Struct_2_7DA347CFE6585CBC_2
+{
+	::System::IntPtr Field_2_0; // 0x10
+};

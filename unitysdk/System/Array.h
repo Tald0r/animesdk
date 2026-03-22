@@ -5,7 +5,6 @@
 namespace System { class Exception; }
 namespace System { class Type; }
 namespace System { template <typename T1, typename T2> class Converter_2; }
-namespace System { template <typename T> class Action_1; }
 namespace System { template <typename T> class Comparison_1; }
 namespace System { template <typename T> class Predicate_1; }
 namespace System::Collections { class IComparer; }
@@ -15,108 +14,81 @@ namespace System::Collections::Generic { template <typename T> class IComparer_1
 namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
 namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 
-#define SYSTEM_ARRAY_BINARYSEARCH_1_OFFSET UNITYSDK_OFFSET(0x15AFAFE0)
-#define SYSTEM_ARRAY_BINARYSEARCH_2_OFFSET UNITYSDK_OFFSET(0x15AFB000)
-#define SYSTEM_ARRAY_BINARYSEARCH_3_OFFSET UNITYSDK_OFFSET(0x15AFA110)
-#define SYSTEM_ARRAY_BINARYSEARCH_OFFSET UNITYSDK_OFFSET(0x15AF9F70)
-#define SYSTEM_ARRAY_CANASSIGNARRAYELEMENT_OFFSET UNITYSDK_OFFSET(0x15AFE010)
-#define SYSTEM_ARRAY_CLEARINTERNAL_OFFSET UNITYSDK_OFFSET(0x15AFDF30)
-#define SYSTEM_ARRAY_CLEAR_OFFSET UNITYSDK_OFFSET(0x15AF8590)
-#define SYSTEM_ARRAY_CLONE_OFFSET UNITYSDK_OFFSET(0x15AF91C0)
-#define SYSTEM_ARRAY_COMBINEHASHCODES_OFFSET UNITYSDK_OFFSET(0x15AF9B90)
-#define SYSTEM_ARRAY_CONSTRAINEDCOPY_OFFSET UNITYSDK_OFFSET(0x15AFE220)
-#define SYSTEM_ARRAY_COPYTO_1_OFFSET UNITYSDK_OFFSET(0x15AFA8B0)
-#define SYSTEM_ARRAY_COPYTO_OFFSET UNITYSDK_OFFSET(0x15AF88D0)
-#define SYSTEM_ARRAY_COPY_1_OFFSET UNITYSDK_OFFSET(0x15AFA7E0)
-#define SYSTEM_ARRAY_COPY_2_OFFSET UNITYSDK_OFFSET(0x15AFA710)
-#define SYSTEM_ARRAY_COPY_3_OFFSET UNITYSDK_OFFSET(0x15AF8A60)
-#define SYSTEM_ARRAY_COPY_OFFSET UNITYSDK_OFFSET(0x15AFA680)
-#define SYSTEM_ARRAY_CREATEARRAYTYPEMISMATCHEXCEPTION_OFFSET UNITYSDK_OFFSET(0x15AFDF60)
-#define SYSTEM_ARRAY_CREATEINSTANCEIMPL_OFFSET UNITYSDK_OFFSET(0x15AFD990)
-#define SYSTEM_ARRAY_CREATEINSTANCE_1_OFFSET UNITYSDK_OFFSET(0x15AFDE50)
-#define SYSTEM_ARRAY_CREATEINSTANCE_2_OFFSET UNITYSDK_OFFSET(0x15AFDDD0)
-#define SYSTEM_ARRAY_CREATEINSTANCE_3_OFFSET UNITYSDK_OFFSET(0x15AFDEA0)
-#define SYSTEM_ARRAY_CREATEINSTANCE_4_OFFSET UNITYSDK_OFFSET(0x15AF7B10)
-#define SYSTEM_ARRAY_CREATEINSTANCE_5_OFFSET UNITYSDK_OFFSET(0x15AFDA50)
-#define SYSTEM_ARRAY_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x15AF79A0)
-#define SYSTEM_ARRAY_FASTCOPY_OFFSET UNITYSDK_OFFSET(0x15AFD980)
-#define SYSTEM_ARRAY_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x15AFD410)
-#define SYSTEM_ARRAY_GETLENGTH_OFFSET UNITYSDK_OFFSET(0x15AFAA10)
-#define SYSTEM_ARRAY_GETLONGLENGTH_OFFSET UNITYSDK_OFFSET(0x15AFAA70)
-#define SYSTEM_ARRAY_GETLOWERBOUND_OFFSET UNITYSDK_OFFSET(0x15AF8530)
-#define SYSTEM_ARRAY_GETMEDIAN_OFFSET UNITYSDK_OFFSET(0x15AFB1B0)
-#define SYSTEM_ARRAY_GETRANK_OFFSET UNITYSDK_OFFSET(0x15AFD920)
-#define SYSTEM_ARRAY_GETUPPERBOUND_OFFSET UNITYSDK_OFFSET(0x15AFD9A0)
-#define SYSTEM_ARRAY_GETVALUEIMPL_OFFSET UNITYSDK_OFFSET(0x15AFD930)
-#define SYSTEM_ARRAY_GETVALUE_1_OFFSET UNITYSDK_OFFSET(0x15AFAB50)
-#define SYSTEM_ARRAY_GETVALUE_2_OFFSET UNITYSDK_OFFSET(0x15AFAC80)
-#define SYSTEM_ARRAY_GETVALUE_3_OFFSET UNITYSDK_OFFSET(0x15AFAE20)
-#define SYSTEM_ARRAY_GETVALUE_4_OFFSET UNITYSDK_OFFSET(0x15AFAF90)
-#define SYSTEM_ARRAY_GETVALUE_5_OFFSET UNITYSDK_OFFSET(0x15AF7F10)
-#define SYSTEM_ARRAY_GETVALUE_6_OFFSET UNITYSDK_OFFSET(0x15AFAC10)
-#define SYSTEM_ARRAY_GETVALUE_7_OFFSET UNITYSDK_OFFSET(0x15AFAD90)
-#define SYSTEM_ARRAY_GETVALUE_OFFSET UNITYSDK_OFFSET(0x15AFAAD0)
-#define SYSTEM_ARRAY_GET_ISFIXEDSIZE_OFFSET UNITYSDK_OFFSET(0x15AFAFA0)
-#define SYSTEM_ARRAY_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x15AFAFB0)
-#define SYSTEM_ARRAY_GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x15AFAFC0)
-#define SYSTEM_ARRAY_GET_LENGTH_OFFSET UNITYSDK_OFFSET(0x15AF7DF0)
-#define SYSTEM_ARRAY_GET_LONGLENGTH_OFFSET UNITYSDK_OFFSET(0x15AFA940)
-#define SYSTEM_ARRAY_GET_RANK_OFFSET UNITYSDK_OFFSET(0x15AF8A50)
-#define SYSTEM_ARRAY_GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x15AFAFD0)
-#define SYSTEM_ARRAY_INDEXOF_1_OFFSET UNITYSDK_OFFSET(0x15AFB4B0)
-#define SYSTEM_ARRAY_INDEXOF_2_OFFSET UNITYSDK_OFFSET(0x15AFB1C0)
-#define SYSTEM_ARRAY_INDEXOF_OFFSET UNITYSDK_OFFSET(0x15AF8270)
-#define SYSTEM_ARRAY_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x15AFE230)
-#define SYSTEM_ARRAY_INTERNALARRAY__ICOLLECTION_CLEAR_OFFSET UNITYSDK_OFFSET(0x15AFD780)
-#define SYSTEM_ARRAY_INTERNALARRAY__ICOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x15AFD670)
-#define SYSTEM_ARRAY_INTERNALARRAY__ICOLLECTION_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x15AFD770)
-#define SYSTEM_ARRAY_INTERNALARRAY__IREADONLYCOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x15AFD7D0)
-#define SYSTEM_ARRAY_INTERNALARRAY__REMOVEAT_OFFSET UNITYSDK_OFFSET(0x15AFD8D0)
-#define SYSTEM_ARRAY_LASTINDEXOF_1_OFFSET UNITYSDK_OFFSET(0x15AFBDA0)
-#define SYSTEM_ARRAY_LASTINDEXOF_2_OFFSET UNITYSDK_OFFSET(0x15AFB8D0)
-#define SYSTEM_ARRAY_LASTINDEXOF_OFFSET UNITYSDK_OFFSET(0x15AFB660)
-#define SYSTEM_ARRAY_REVERSE_1_OFFSET UNITYSDK_OFFSET(0x15AFBFB0)
-#define SYSTEM_ARRAY_REVERSE_OFFSET UNITYSDK_OFFSET(0x15AFBE20)
-#define SYSTEM_ARRAY_SETVALUEIMPL_OFFSET UNITYSDK_OFFSET(0x15AFD970)
-#define SYSTEM_ARRAY_SETVALUE_1_OFFSET UNITYSDK_OFFSET(0x15AFC470)
-#define SYSTEM_ARRAY_SETVALUE_2_OFFSET UNITYSDK_OFFSET(0x15AFC5C0)
-#define SYSTEM_ARRAY_SETVALUE_3_OFFSET UNITYSDK_OFFSET(0x15AFC780)
-#define SYSTEM_ARRAY_SETVALUE_4_OFFSET UNITYSDK_OFFSET(0x15AFC900)
-#define SYSTEM_ARRAY_SETVALUE_5_OFFSET UNITYSDK_OFFSET(0x15AF80B0)
-#define SYSTEM_ARRAY_SETVALUE_6_OFFSET UNITYSDK_OFFSET(0x15AFC540)
-#define SYSTEM_ARRAY_SETVALUE_7_OFFSET UNITYSDK_OFFSET(0x15AFC6E0)
-#define SYSTEM_ARRAY_SETVALUE_OFFSET UNITYSDK_OFFSET(0x15AFC3E0)
-#define SYSTEM_ARRAY_SORTIMPL_OFFSET UNITYSDK_OFFSET(0x15AFD310)
-#define SYSTEM_ARRAY_SORT_1_OFFSET UNITYSDK_OFFSET(0x15AFCDB0)
-#define SYSTEM_ARRAY_SORT_2_OFFSET UNITYSDK_OFFSET(0x15AFCDD0)
-#define SYSTEM_ARRAY_SORT_3_OFFSET UNITYSDK_OFFSET(0x15AFCF70)
-#define SYSTEM_ARRAY_SORT_4_OFFSET UNITYSDK_OFFSET(0x15AFCF90)
-#define SYSTEM_ARRAY_SORT_5_OFFSET UNITYSDK_OFFSET(0x15AFD140)
-#define SYSTEM_ARRAY_SORT_6_OFFSET UNITYSDK_OFFSET(0x15AFD2F0)
-#define SYSTEM_ARRAY_SORT_7_OFFSET UNITYSDK_OFFSET(0x15AFCAB0)
-#define SYSTEM_ARRAY_SORT_OFFSET UNITYSDK_OFFSET(0x15AFC910)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ICOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x15AF7CF0)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_ADD_OFFSET UNITYSDK_OFFSET(0x15AF8200)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_CLEAR_OFFSET UNITYSDK_OFFSET(0x15AF8410)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_CONTAINS_OFFSET UNITYSDK_OFFSET(0x15AF8250)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x15AF7EF0)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x15AF7F00)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_INDEXOF_OFFSET UNITYSDK_OFFSET(0x15AF87D0)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_INSERT_OFFSET UNITYSDK_OFFSET(0x15AF87E0)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_REMOVEAT_OFFSET UNITYSDK_OFFSET(0x15AF8880)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_REMOVE_OFFSET UNITYSDK_OFFSET(0x15AF8830)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_SET_ITEM_OFFSET UNITYSDK_OFFSET(0x15AF80A0)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ISTRUCTURALCOMPARABLE_COMPARETO_OFFSET UNITYSDK_OFFSET(0x15AF9260)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ISTRUCTURALEQUATABLE_EQUALS_OFFSET UNITYSDK_OFFSET(0x15AF96F0)
-#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ISTRUCTURALEQUATABLE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x15AF9BA0)
-#define SYSTEM_ARRAY_UNSAFECREATEINSTANCE_1_OFFSET UNITYSDK_OFFSET(0x15AFDDC0)
-#define SYSTEM_ARRAY_UNSAFECREATEINSTANCE_2_OFFSET UNITYSDK_OFFSET(0x15AFDE40)
-#define SYSTEM_ARRAY_UNSAFECREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x15AFDA40)
-#define SYSTEM_ARRAY__CTOR_OFFSET UNITYSDK_OFFSET(0x15AFD660)
+#define SYSTEM_ARRAY_BINARYSEARCH_1_OFFSET UNITYSDK_OFFSET(0x1917CDC0)
+#define SYSTEM_ARRAY_BINARYSEARCH_2_OFFSET UNITYSDK_OFFSET(0x1917C5C0)
+#define SYSTEM_ARRAY_BINARYSEARCH_OFFSET UNITYSDK_OFFSET(0x1917C420)
+#define SYSTEM_ARRAY_CANASSIGNARRAYELEMENT_OFFSET UNITYSDK_OFFSET(0x1917EE60)
+#define SYSTEM_ARRAY_CLEARINTERNAL_OFFSET UNITYSDK_OFFSET(0x1917ED80)
+#define SYSTEM_ARRAY_CLEAR_OFFSET UNITYSDK_OFFSET(0x1917A140)
+#define SYSTEM_ARRAY_CLONE_OFFSET UNITYSDK_OFFSET(0x19173260)
+#define SYSTEM_ARRAY_COMBINEHASHCODES_OFFSET UNITYSDK_OFFSET(0x1917C040)
+#define SYSTEM_ARRAY_COPYTO_OFFSET UNITYSDK_OFFSET(0x1917AE10)
+#define SYSTEM_ARRAY_COPY_1_OFFSET UNITYSDK_OFFSET(0x1917CB70)
+#define SYSTEM_ARRAY_COPY_2_OFFSET UNITYSDK_OFFSET(0x1917AF90)
+#define SYSTEM_ARRAY_COPY_OFFSET UNITYSDK_OFFSET(0x1917CB20)
+#define SYSTEM_ARRAY_CREATEARRAYTYPEMISMATCHEXCEPTION_OFFSET UNITYSDK_OFFSET(0x1917EDB0)
+#define SYSTEM_ARRAY_CREATEINSTANCEIMPL_OFFSET UNITYSDK_OFFSET(0x1917E620)
+#define SYSTEM_ARRAY_CREATEINSTANCE_1_OFFSET UNITYSDK_OFFSET(0x1917EB50)
+#define SYSTEM_ARRAY_CREATEINSTANCE_2_OFFSET UNITYSDK_OFFSET(0x1917E7D0)
+#define SYSTEM_ARRAY_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x1917ED30)
+#define SYSTEM_ARRAY_FASTCOPY_OFFSET UNITYSDK_OFFSET(0x1917E610)
+#define SYSTEM_ARRAY_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1917E1A0)
+#define SYSTEM_ARRAY_GETLENGTH_OFFSET UNITYSDK_OFFSET(0x1917CD20)
+#define SYSTEM_ARRAY_GETLOWERBOUND_OFFSET UNITYSDK_OFFSET(0x1917ACB0)
+#define SYSTEM_ARRAY_GETMEDIAN_OFFSET UNITYSDK_OFFSET(0x1917CFC0)
+#define SYSTEM_ARRAY_GETRANK_OFFSET UNITYSDK_OFFSET(0x1917E590)
+#define SYSTEM_ARRAY_GETUPPERBOUND_OFFSET UNITYSDK_OFFSET(0x1917E630)
+#define SYSTEM_ARRAY_GETVALUEIMPL_OFFSET UNITYSDK_OFFSET(0x1917E5C0)
+#define SYSTEM_ARRAY_GETVALUE_1_OFFSET UNITYSDK_OFFSET(0x1917A6A0)
+#define SYSTEM_ARRAY_GETVALUE_OFFSET UNITYSDK_OFFSET(0x1917E5A0)
+#define SYSTEM_ARRAY_GET_ISFIXEDSIZE_OFFSET UNITYSDK_OFFSET(0x1917CD80)
+#define SYSTEM_ARRAY_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x1917CD90)
+#define SYSTEM_ARRAY_GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x1917CDA0)
+#define SYSTEM_ARRAY_GET_LENGTH_OFFSET UNITYSDK_OFFSET(0x1917A580)
+#define SYSTEM_ARRAY_GET_LONGLENGTH_OFFSET UNITYSDK_OFFSET(0x1917CC50)
+#define SYSTEM_ARRAY_GET_RANK_OFFSET UNITYSDK_OFFSET(0x1917AF80)
+#define SYSTEM_ARRAY_GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x1917CDB0)
+#define SYSTEM_ARRAY_INDEXOF_1_OFFSET UNITYSDK_OFFSET(0x1917CFD0)
+#define SYSTEM_ARRAY_INDEXOF_OFFSET UNITYSDK_OFFSET(0x1917AA00)
+#define SYSTEM_ARRAY_INTERNALARRAY__ICOLLECTION_CLEAR_OFFSET UNITYSDK_OFFSET(0x1917E3F0)
+#define SYSTEM_ARRAY_INTERNALARRAY__ICOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x1917E2E0)
+#define SYSTEM_ARRAY_INTERNALARRAY__ICOLLECTION_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x1917E3E0)
+#define SYSTEM_ARRAY_INTERNALARRAY__IREADONLYCOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x1917E440)
+#define SYSTEM_ARRAY_INTERNALARRAY__REMOVEAT_OFFSET UNITYSDK_OFFSET(0x1917E540)
+#define SYSTEM_ARRAY_REVERSE_1_OFFSET UNITYSDK_OFFSET(0x1917D450)
+#define SYSTEM_ARRAY_REVERSE_OFFSET UNITYSDK_OFFSET(0x1917D2C0)
+#define SYSTEM_ARRAY_SETVALUEIMPL_OFFSET UNITYSDK_OFFSET(0x1917E600)
+#define SYSTEM_ARRAY_SETVALUE_1_OFFSET UNITYSDK_OFFSET(0x1917A840)
+#define SYSTEM_ARRAY_SETVALUE_2_OFFSET UNITYSDK_OFFSET(0x1917E6A0)
+#define SYSTEM_ARRAY_SETVALUE_3_OFFSET UNITYSDK_OFFSET(0x1917E720)
+#define SYSTEM_ARRAY_SETVALUE_OFFSET UNITYSDK_OFFSET(0x1917E5B0)
+#define SYSTEM_ARRAY_SORTIMPL_OFFSET UNITYSDK_OFFSET(0x1917E0A0)
+#define SYSTEM_ARRAY_SORT_1_OFFSET UNITYSDK_OFFSET(0x1917DD50)
+#define SYSTEM_ARRAY_SORT_2_OFFSET UNITYSDK_OFFSET(0x1917DD70)
+#define SYSTEM_ARRAY_SORT_3_OFFSET UNITYSDK_OFFSET(0x1917DF10)
+#define SYSTEM_ARRAY_SORT_4_OFFSET UNITYSDK_OFFSET(0x1917DA30)
+#define SYSTEM_ARRAY_SORT_OFFSET UNITYSDK_OFFSET(0x1917D8A0)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ICOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x1917A480)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_ADD_OFFSET UNITYSDK_OFFSET(0x1917A990)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_CLEAR_OFFSET UNITYSDK_OFFSET(0x1917AB90)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_CONTAINS_OFFSET UNITYSDK_OFFSET(0x1917A9E0)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x1917A680)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x1917A690)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_INDEXOF_OFFSET UNITYSDK_OFFSET(0x1917AD10)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_INSERT_OFFSET UNITYSDK_OFFSET(0x1917AD20)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_REMOVEAT_OFFSET UNITYSDK_OFFSET(0x1917ADC0)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_REMOVE_OFFSET UNITYSDK_OFFSET(0x1917AD70)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ILIST_SET_ITEM_OFFSET UNITYSDK_OFFSET(0x1917A830)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ISTRUCTURALCOMPARABLE_COMPARETO_OFFSET UNITYSDK_OFFSET(0x1917B710)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ISTRUCTURALEQUATABLE_EQUALS_OFFSET UNITYSDK_OFFSET(0x1917BBA0)
+#define SYSTEM_ARRAY_SYSTEM_COLLECTIONS_ISTRUCTURALEQUATABLE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x1917C050)
+#define SYSTEM_ARRAY_UNSAFECREATEINSTANCE_1_OFFSET UNITYSDK_OFFSET(0x1917EB40)
+#define SYSTEM_ARRAY_UNSAFECREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x1917E7C0)
+#define SYSTEM_ARRAY__CTOR_OFFSET UNITYSDK_OFFSET(0x1917E2D0)
 
 namespace System
 {
-	inline static constexpr unsigned int Array_TypeDefinitionIndex = 136;
+	inline static constexpr unsigned int Array_TypeDefinitionIndex = 126;
 
 	class Array : public ::System::Object
 	{
@@ -124,11 +96,6 @@ namespace System
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY__CTOR_OFFSET))(this);
-		}
-
-		static ::System::Array* CreateInstance(::System::Type* elementType, ::Il2CppArray<::System::Int64>* lengths)
-		{
-			return ((::System::Array*(*)(::System::Type*, ::Il2CppArray<::System::Int64>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CREATEINSTANCE_OFFSET))(elementType, lengths);
 		}
 
 		::System::Int32 System_Collections_ICollection_get_Count()
@@ -226,44 +193,9 @@ namespace System
 			return ((::System::Void(*)(::System::Array*, ::System::Array*, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_COPY_OFFSET))(sourceArray, destinationArray, length);
 		}
 
-		static ::System::Void Copy_1(::System::Array* sourceArray, ::System::Int64 sourceIndex, ::System::Array* destinationArray, ::System::Int64 destinationIndex, ::System::Int64 length)
-		{
-			return ((::System::Void(*)(::System::Array*, ::System::Int64, ::System::Array*, ::System::Int64, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_COPY_1_OFFSET))(sourceArray, sourceIndex, destinationArray, destinationIndex, length);
-		}
-
-		::System::Void CopyTo_1(::System::Array* array, ::System::Int64 index)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Array*, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_COPYTO_1_OFFSET))(this, array, index);
-		}
-
 		::System::Int64 get_LongLength()
 		{
 			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GET_LONGLENGTH_OFFSET))(this);
-		}
-
-		::System::Int64 GetLongLength(::System::Int32 dimension)
-		{
-			return ((::System::Int64(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETLONGLENGTH_OFFSET))(this, dimension);
-		}
-
-		::System::Object* GetValue(::System::Int64 index)
-		{
-			return ((::System::Object*(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETVALUE_OFFSET))(this, index);
-		}
-
-		::System::Object* GetValue_1(::System::Int64 index1, ::System::Int64 index2)
-		{
-			return ((::System::Object*(*)(::PVOID, ::System::Int64, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETVALUE_1_OFFSET))(this, index1, index2);
-		}
-
-		::System::Object* GetValue_2(::System::Int64 index1, ::System::Int64 index2, ::System::Int64 index3)
-		{
-			return ((::System::Object*(*)(::PVOID, ::System::Int64, ::System::Int64, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETVALUE_2_OFFSET))(this, index1, index2, index3);
-		}
-
-		::System::Object* GetValue_3(::Il2CppArray<::System::Int64>* indices)
-		{
-			return ((::System::Object*(*)(::PVOID, ::Il2CppArray<::System::Int64>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETVALUE_3_OFFSET))(this, indices);
 		}
 
 		::System::Boolean get_IsFixedSize()
@@ -286,19 +218,14 @@ namespace System
 			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GET_SYNCROOT_OFFSET))(this);
 		}
 
-		static ::System::Int32 BinarySearch_1(::System::Array* array, ::System::Int32 index, ::System::Int32 length, ::System::Object* value)
+		static ::System::Int32 BinarySearch_1(::System::Array* array, ::System::Object* value, ::System::Collections::IComparer* comparer)
 		{
-			return ((::System::Int32(*)(::System::Array*, ::System::Int32, ::System::Int32, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_BINARYSEARCH_1_OFFSET))(array, index, length, value);
+			return ((::System::Int32(*)(::System::Array*, ::System::Object*, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_BINARYSEARCH_1_OFFSET))(array, value, comparer);
 		}
 
-		static ::System::Int32 BinarySearch_2(::System::Array* array, ::System::Object* value, ::System::Collections::IComparer* comparer)
+		static ::System::Int32 BinarySearch_2(::System::Array* array, ::System::Int32 index, ::System::Int32 length, ::System::Object* value, ::System::Collections::IComparer* comparer)
 		{
-			return ((::System::Int32(*)(::System::Array*, ::System::Object*, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_BINARYSEARCH_2_OFFSET))(array, value, comparer);
-		}
-
-		static ::System::Int32 BinarySearch_3(::System::Array* array, ::System::Int32 index, ::System::Int32 length, ::System::Object* value, ::System::Collections::IComparer* comparer)
-		{
-			return ((::System::Int32(*)(::System::Array*, ::System::Int32, ::System::Int32, ::System::Object*, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_BINARYSEARCH_3_OFFSET))(array, index, length, value, comparer);
+			return ((::System::Int32(*)(::System::Array*, ::System::Int32, ::System::Int32, ::System::Object*, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_BINARYSEARCH_2_OFFSET))(array, index, length, value, comparer);
 		}
 
 		static ::System::Int32 GetMedian(::System::Int32 low, ::System::Int32 hi)
@@ -311,29 +238,9 @@ namespace System
 			return ((::System::Int32(*)(::System::Array*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_INDEXOF_OFFSET))(array, value);
 		}
 
-		static ::System::Int32 IndexOf_1(::System::Array* array, ::System::Object* value, ::System::Int32 startIndex)
+		static ::System::Int32 IndexOf_1(::System::Array* array, ::System::Object* value, ::System::Int32 startIndex, ::System::Int32 count)
 		{
-			return ((::System::Int32(*)(::System::Array*, ::System::Object*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_INDEXOF_1_OFFSET))(array, value, startIndex);
-		}
-
-		static ::System::Int32 IndexOf_2(::System::Array* array, ::System::Object* value, ::System::Int32 startIndex, ::System::Int32 count)
-		{
-			return ((::System::Int32(*)(::System::Array*, ::System::Object*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_INDEXOF_2_OFFSET))(array, value, startIndex, count);
-		}
-
-		static ::System::Int32 LastIndexOf(::System::Array* array, ::System::Object* value)
-		{
-			return ((::System::Int32(*)(::System::Array*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_LASTINDEXOF_OFFSET))(array, value);
-		}
-
-		static ::System::Int32 LastIndexOf_1(::System::Array* array, ::System::Object* value, ::System::Int32 startIndex)
-		{
-			return ((::System::Int32(*)(::System::Array*, ::System::Object*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_LASTINDEXOF_1_OFFSET))(array, value, startIndex);
-		}
-
-		static ::System::Int32 LastIndexOf_2(::System::Array* array, ::System::Object* value, ::System::Int32 startIndex, ::System::Int32 count)
-		{
-			return ((::System::Int32(*)(::System::Array*, ::System::Object*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_LASTINDEXOF_2_OFFSET))(array, value, startIndex, count);
+			return ((::System::Int32(*)(::System::Array*, ::System::Object*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_INDEXOF_1_OFFSET))(array, value, startIndex, count);
 		}
 
 		static ::System::Void Reverse(::System::Array* array)
@@ -346,64 +253,29 @@ namespace System
 			return ((::System::Void(*)(::System::Array*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_REVERSE_1_OFFSET))(array, index, length);
 		}
 
-		::System::Void SetValue(::System::Object* value, ::System::Int64 index)
+		static ::System::Void Sort(::System::Array* array, ::System::Collections::IComparer* comparer)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_OFFSET))(this, value, index);
+			return ((::System::Void(*)(::System::Array*, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_OFFSET))(array, comparer);
 		}
 
-		::System::Void SetValue_1(::System::Object* value, ::System::Int64 index1, ::System::Int64 index2)
+		static ::System::Void Sort_1(::System::Array* array, ::System::Int32 index, ::System::Int32 length, ::System::Collections::IComparer* comparer)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Int64, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_1_OFFSET))(this, value, index1, index2);
+			return ((::System::Void(*)(::System::Array*, ::System::Int32, ::System::Int32, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_1_OFFSET))(array, index, length, comparer);
 		}
 
-		::System::Void SetValue_2(::System::Object* value, ::System::Int64 index1, ::System::Int64 index2, ::System::Int64 index3)
+		static ::System::Void Sort_2(::System::Array* keys, ::System::Array* items)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Int64, ::System::Int64, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_2_OFFSET))(this, value, index1, index2, index3);
+			return ((::System::Void(*)(::System::Array*, ::System::Array*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_2_OFFSET))(keys, items);
 		}
 
-		::System::Void SetValue_3(::System::Object* value, ::Il2CppArray<::System::Int64>* indices)
+		static ::System::Void Sort_3(::System::Array* keys, ::System::Array* items, ::System::Collections::IComparer* comparer)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::Il2CppArray<::System::Int64>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_3_OFFSET))(this, value, indices);
+			return ((::System::Void(*)(::System::Array*, ::System::Array*, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_3_OFFSET))(keys, items, comparer);
 		}
 
-		static ::System::Void Sort(::System::Array* array)
+		static ::System::Void Sort_4(::System::Array* keys, ::System::Array* items, ::System::Int32 index, ::System::Int32 length, ::System::Collections::IComparer* comparer)
 		{
-			return ((::System::Void(*)(::System::Array*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_OFFSET))(array);
-		}
-
-		static ::System::Void Sort_1(::System::Array* array, ::System::Int32 index, ::System::Int32 length)
-		{
-			return ((::System::Void(*)(::System::Array*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_1_OFFSET))(array, index, length);
-		}
-
-		static ::System::Void Sort_2(::System::Array* array, ::System::Collections::IComparer* comparer)
-		{
-			return ((::System::Void(*)(::System::Array*, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_2_OFFSET))(array, comparer);
-		}
-
-		static ::System::Void Sort_3(::System::Array* array, ::System::Int32 index, ::System::Int32 length, ::System::Collections::IComparer* comparer)
-		{
-			return ((::System::Void(*)(::System::Array*, ::System::Int32, ::System::Int32, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_3_OFFSET))(array, index, length, comparer);
-		}
-
-		static ::System::Void Sort_4(::System::Array* keys, ::System::Array* items)
-		{
-			return ((::System::Void(*)(::System::Array*, ::System::Array*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_4_OFFSET))(keys, items);
-		}
-
-		static ::System::Void Sort_5(::System::Array* keys, ::System::Array* items, ::System::Collections::IComparer* comparer)
-		{
-			return ((::System::Void(*)(::System::Array*, ::System::Array*, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_5_OFFSET))(keys, items, comparer);
-		}
-
-		static ::System::Void Sort_6(::System::Array* keys, ::System::Array* items, ::System::Int32 index, ::System::Int32 length)
-		{
-			return ((::System::Void(*)(::System::Array*, ::System::Array*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_6_OFFSET))(keys, items, index, length);
-		}
-
-		static ::System::Void Sort_7(::System::Array* keys, ::System::Array* items, ::System::Int32 index, ::System::Int32 length, ::System::Collections::IComparer* comparer)
-		{
-			return ((::System::Void(*)(::System::Array*, ::System::Array*, ::System::Int32, ::System::Int32, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_7_OFFSET))(keys, items, index, length, comparer);
+			return ((::System::Void(*)(::System::Array*, ::System::Array*, ::System::Int32, ::System::Int32, ::System::Collections::IComparer*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SORT_4_OFFSET))(keys, items, index, length, comparer);
 		}
 
 		::System::Collections::IEnumerator* GetEnumerator()
@@ -461,14 +333,14 @@ namespace System
 			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETLOWERBOUND_OFFSET))(this, dimension);
 		}
 
-		::System::Object* GetValue_4(::Il2CppArray<::System::Int32>* indices)
+		::System::Object* GetValue(::Il2CppArray<::System::Int32>* indices)
 		{
-			return ((::System::Object*(*)(::PVOID, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETVALUE_4_OFFSET))(this, indices);
+			return ((::System::Object*(*)(::PVOID, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETVALUE_OFFSET))(this, indices);
 		}
 
-		::System::Void SetValue_4(::System::Object* value, ::Il2CppArray<::System::Int32>* indices)
+		::System::Void SetValue(::System::Object* value, ::Il2CppArray<::System::Int32>* indices)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_4_OFFSET))(this, value, indices);
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_OFFSET))(this, value, indices);
 		}
 
 		::System::Object* GetValueImpl(::System::Int32 pos)
@@ -496,34 +368,24 @@ namespace System
 			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETUPPERBOUND_OFFSET))(this, dimension);
 		}
 
-		::System::Object* GetValue_5(::System::Int32 index)
+		::System::Object* GetValue_1(::System::Int32 index)
 		{
-			return ((::System::Object*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETVALUE_5_OFFSET))(this, index);
+			return ((::System::Object*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETVALUE_1_OFFSET))(this, index);
 		}
 
-		::System::Object* GetValue_6(::System::Int32 index1, ::System::Int32 index2)
+		::System::Void SetValue_1(::System::Object* value, ::System::Int32 index)
 		{
-			return ((::System::Object*(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETVALUE_6_OFFSET))(this, index1, index2);
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_1_OFFSET))(this, value, index);
 		}
 
-		::System::Object* GetValue_7(::System::Int32 index1, ::System::Int32 index2, ::System::Int32 index3)
+		::System::Void SetValue_2(::System::Object* value, ::System::Int32 index1, ::System::Int32 index2)
 		{
-			return ((::System::Object*(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_GETVALUE_7_OFFSET))(this, index1, index2, index3);
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_2_OFFSET))(this, value, index1, index2);
 		}
 
-		::System::Void SetValue_5(::System::Object* value, ::System::Int32 index)
+		::System::Void SetValue_3(::System::Object* value, ::System::Int32 index1, ::System::Int32 index2, ::System::Int32 index3)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_5_OFFSET))(this, value, index);
-		}
-
-		::System::Void SetValue_6(::System::Object* value, ::System::Int32 index1, ::System::Int32 index2)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_6_OFFSET))(this, value, index1, index2);
-		}
-
-		::System::Void SetValue_7(::System::Object* value, ::System::Int32 index1, ::System::Int32 index2, ::System::Int32 index3)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_7_OFFSET))(this, value, index1, index2, index3);
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_SETVALUE_3_OFFSET))(this, value, index1, index2, index3);
 		}
 
 		static ::System::Array* UnsafeCreateInstance(::System::Type* elementType, ::Il2CppArray<::System::Int32>* lengths, ::Il2CppArray<::System::Int32>* lowerBounds)
@@ -531,39 +393,24 @@ namespace System
 			return ((::System::Array*(*)(::System::Type*, ::Il2CppArray<::System::Int32>*, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_UNSAFECREATEINSTANCE_OFFSET))(elementType, lengths, lowerBounds);
 		}
 
-		static ::System::Array* UnsafeCreateInstance_1(::System::Type* elementType, ::System::Int32 length1, ::System::Int32 length2)
+		static ::System::Array* UnsafeCreateInstance_1(::System::Type* elementType, ::Il2CppArray<::System::Int32>* lengths)
 		{
-			return ((::System::Array*(*)(::System::Type*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_UNSAFECREATEINSTANCE_1_OFFSET))(elementType, length1, length2);
+			return ((::System::Array*(*)(::System::Type*, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_UNSAFECREATEINSTANCE_1_OFFSET))(elementType, lengths);
 		}
 
-		static ::System::Array* UnsafeCreateInstance_2(::System::Type* elementType, ::Il2CppArray<::System::Int32>* lengths)
+		static ::System::Array* CreateInstance(::System::Type* elementType, ::System::Int32 length)
 		{
-			return ((::System::Array*(*)(::System::Type*, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_UNSAFECREATEINSTANCE_2_OFFSET))(elementType, lengths);
+			return ((::System::Array*(*)(::System::Type*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CREATEINSTANCE_OFFSET))(elementType, length);
 		}
 
-		static ::System::Array* CreateInstance_1(::System::Type* elementType, ::System::Int32 length)
+		static ::System::Array* CreateInstance_1(::System::Type* elementType, ::Il2CppArray<::System::Int32>* lengths)
 		{
-			return ((::System::Array*(*)(::System::Type*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CREATEINSTANCE_1_OFFSET))(elementType, length);
+			return ((::System::Array*(*)(::System::Type*, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CREATEINSTANCE_1_OFFSET))(elementType, lengths);
 		}
 
-		static ::System::Array* CreateInstance_2(::System::Type* elementType, ::System::Int32 length1, ::System::Int32 length2)
+		static ::System::Array* CreateInstance_2(::System::Type* elementType, ::Il2CppArray<::System::Int32>* lengths, ::Il2CppArray<::System::Int32>* lowerBounds)
 		{
-			return ((::System::Array*(*)(::System::Type*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CREATEINSTANCE_2_OFFSET))(elementType, length1, length2);
-		}
-
-		static ::System::Array* CreateInstance_3(::System::Type* elementType, ::System::Int32 length1, ::System::Int32 length2, ::System::Int32 length3)
-		{
-			return ((::System::Array*(*)(::System::Type*, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CREATEINSTANCE_3_OFFSET))(elementType, length1, length2, length3);
-		}
-
-		static ::System::Array* CreateInstance_4(::System::Type* elementType, ::Il2CppArray<::System::Int32>* lengths)
-		{
-			return ((::System::Array*(*)(::System::Type*, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CREATEINSTANCE_4_OFFSET))(elementType, lengths);
-		}
-
-		static ::System::Array* CreateInstance_5(::System::Type* elementType, ::Il2CppArray<::System::Int32>* lengths, ::Il2CppArray<::System::Int32>* lowerBounds)
-		{
-			return ((::System::Array*(*)(::System::Type*, ::Il2CppArray<::System::Int32>*, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CREATEINSTANCE_5_OFFSET))(elementType, lengths, lowerBounds);
+			return ((::System::Array*(*)(::System::Type*, ::Il2CppArray<::System::Int32>*, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CREATEINSTANCE_2_OFFSET))(elementType, lengths, lowerBounds);
 		}
 
 		static ::System::Void Clear(::System::Array* array, ::System::Int32 index, ::System::Int32 length)
@@ -576,14 +423,14 @@ namespace System
 			return ((::System::Void(*)(::System::Array*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CLEARINTERNAL_OFFSET))(a, index, count);
 		}
 
-		static ::System::Void Copy_2(::System::Array* sourceArray, ::System::Array* destinationArray, ::System::Int32 length)
+		static ::System::Void Copy_1(::System::Array* sourceArray, ::System::Array* destinationArray, ::System::Int32 length)
 		{
-			return ((::System::Void(*)(::System::Array*, ::System::Array*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_COPY_2_OFFSET))(sourceArray, destinationArray, length);
+			return ((::System::Void(*)(::System::Array*, ::System::Array*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_COPY_1_OFFSET))(sourceArray, destinationArray, length);
 		}
 
-		static ::System::Void Copy_3(::System::Array* sourceArray, ::System::Int32 sourceIndex, ::System::Array* destinationArray, ::System::Int32 destinationIndex, ::System::Int32 length)
+		static ::System::Void Copy_2(::System::Array* sourceArray, ::System::Int32 sourceIndex, ::System::Array* destinationArray, ::System::Int32 destinationIndex, ::System::Int32 length)
 		{
-			return ((::System::Void(*)(::System::Array*, ::System::Int32, ::System::Array*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_COPY_3_OFFSET))(sourceArray, sourceIndex, destinationArray, destinationIndex, length);
+			return ((::System::Void(*)(::System::Array*, ::System::Int32, ::System::Array*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_COPY_2_OFFSET))(sourceArray, sourceIndex, destinationArray, destinationIndex, length);
 		}
 
 		static ::System::Exception* CreateArrayTypeMismatchException()
@@ -594,16 +441,6 @@ namespace System
 		static ::System::Boolean CanAssignArrayElement(::System::Type* source, ::System::Type* target)
 		{
 			return ((::System::Boolean(*)(::System::Type*, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CANASSIGNARRAYELEMENT_OFFSET))(source, target);
-		}
-
-		static ::System::Void ConstrainedCopy(::System::Array* sourceArray, ::System::Int32 sourceIndex, ::System::Array* destinationArray, ::System::Int32 destinationIndex, ::System::Int32 length)
-		{
-			return ((::System::Void(*)(::System::Array*, ::System::Int32, ::System::Array*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_CONSTRAINEDCOPY_OFFSET))(sourceArray, sourceIndex, destinationArray, destinationIndex, length);
-		}
-
-		::System::Void Initialize()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_ARRAY_INITIALIZE_OFFSET))(this);
 		}
 
 		static ::System::Void SortImpl(::System::Array* keys, ::System::Array* items, ::System::Int32 index, ::System::Int32 length, ::System::Collections::IComparer* comparer)

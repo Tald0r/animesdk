@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Runtime/InteropServices/SafeHandle.h"
 
-#define MICROSOFT_WIN32_SAFEHANDLES_SAFEHANDLEZEROORMINUSONEISINVALID_GET_ISINVALID_OFFSET UNITYSDK_OFFSET(0x15AAC690)
-#define MICROSOFT_WIN32_SAFEHANDLES_SAFEHANDLEZEROORMINUSONEISINVALID__CTOR_OFFSET UNITYSDK_OFFSET(0x15AAC520)
+#define MICROSOFT_WIN32_SAFEHANDLES_SAFEHANDLEZEROORMINUSONEISINVALID_GET_ISINVALID_OFFSET UNITYSDK_OFFSET(0x198776B0)
+#define MICROSOFT_WIN32_SAFEHANDLES_SAFEHANDLEZEROORMINUSONEISINVALID__CTOR_OFFSET UNITYSDK_OFFSET(0x19877650)
 
 namespace Microsoft::Win32::SafeHandles
 {
-	inline static constexpr unsigned int SafeHandleZeroOrMinusOneIsInvalid_TypeDefinitionIndex = 118;
+	inline static constexpr unsigned int SafeHandleZeroOrMinusOneIsInvalid_TypeDefinitionIndex = 106;
 
 	class SafeHandleZeroOrMinusOneIsInvalid : public ::System::Runtime::InteropServices::SafeHandle
 	{

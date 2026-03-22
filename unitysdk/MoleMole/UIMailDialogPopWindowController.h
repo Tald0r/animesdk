@@ -1,0 +1,329 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/MonoUITableScrollV2_MoveContext.h"
+
+class Class_1_443BE580FCEE30C4;
+class Class_2_79F6D62CE30E3F8E_91;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralClickToProceed02WidgetController; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine::UI { class Text; }
+
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x9441970)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONCLICKGETBTN_OFFSET UNITYSDK_OFFSET(0x9446B70)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONCLICKSCROLLITEM_OFFSET UNITYSDK_OFFSET(0x9447260)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9441980)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0x9446620)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0x9446900)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x94457B0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONSCROLLMOVE_OFFSET UNITYSDK_OFFSET(0x9447330)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x9446430)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x94464A0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9441A20)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9445700)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_REFRESHALLMAILS_OFFSET UNITYSDK_OFFSET(0x9447890)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_REFRESHCOUNT_OFFSET UNITYSDK_OFFSET(0x9442F60)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_REFRESHRECEIVEALLBTNSTATE_OFFSET UNITYSDK_OFFSET(0x9445E70)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_REFRESHSCROLLVIEWCONFIG_OFFSET UNITYSDK_OFFSET(0x9443150)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_REPLACETEXT_OFFSET UNITYSDK_OFFSET(0x9447F90)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_SETACCESSINFO_OFFSET UNITYSDK_OFFSET(0x9448060)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_SETEMPTYSTATE_OFFSET UNITYSDK_OFFSET(0x9442550)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_SETNEEDUPDATEMAIL_OFFSET UNITYSDK_OFFSET(0x94471F0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_SETREWARDINTERACTABLE_OFFSET UNITYSDK_OFFSET(0x9446890)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_SETREWARDMODULEINTERACTABLE_OFFSET UNITYSDK_OFFSET(0x9447EB0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_TRYGETMAILAWARD_OFFSET UNITYSDK_OFFSET(0x9446ED0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_UPDATEDETAIL_OFFSET UNITYSDK_OFFSET(0x9443450)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_UPDATEMAILDETAILS_OFFSET UNITYSDK_OFFSET(0x94433A0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9448460)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONCLICKGETBTN_B__13_0_OFFSET UNITYSDK_OFFSET(0x9448D00)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONCLICKGETBTN_B__13_1_OFFSET UNITYSDK_OFFSET(0x9448E60)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_0_OFFSET UNITYSDK_OFFSET(0x9448550)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_10_OFFSET UNITYSDK_OFFSET(0x9448BA0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_1_OFFSET UNITYSDK_OFFSET(0x94485B0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_2_OFFSET UNITYSDK_OFFSET(0x9448920)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_3_OFFSET UNITYSDK_OFFSET(0x94489A0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_4_OFFSET UNITYSDK_OFFSET(0x9448A20)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_6_OFFSET UNITYSDK_OFFSET(0x9448CB0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_7_OFFSET UNITYSDK_OFFSET(0x9448CE0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_8_OFFSET UNITYSDK_OFFSET(0x94487D0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_9_OFFSET UNITYSDK_OFFSET(0x94488F0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__SETACCESSINFO_B__24_0_OFFSET UNITYSDK_OFFSET(0x9449130)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__UPDATEDETAIL_B__22_0_OFFSET UNITYSDK_OFFSET(0x9449010)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x94491D0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0x9449240)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0x94492B0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x9449320)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x9449350)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9449360)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9449370)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9449380)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMailDialogPopWindowController_TypeDefinitionIndex = 46585;
+
+	class UIMailDialogPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Int32 MAIL_TOTAL_COUNT = 0x3E8; // 0x0
+		::Class_2_79F6D62CE30E3F8E_91* _view; // 0x2F8
+		::System::Boolean inited; // 0x300
+		::System::Collections::Generic::List_1<::MoleMole::UIGeneralClickToProceed02WidgetController*>* urlCtrls; // 0x308
+		::System::Collections::Generic::List_1<::Class_1_443BE580FCEE30C4*>* _cacheMails; // 0x310
+		::Class_1_443BE580FCEE30C4* _currentMail; // 0x318
+		::UnityEngine::UI::Text* GetText; // 0x320
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnWidgetController*>* itemList; // 0x328
+		::System::Boolean isFocusingReward; // 0x330
+		::System::Boolean showRewardHintKey; // 0x331
+		::System::Boolean isRequestingNew; // 0x332
+		::System::Boolean needUpdateMail; // 0x333
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void UpdateMailDetails(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_UPDATEMAILDETAILS_OFFSET))(this, args);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void RefreshReceiveAllBtnState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_REFRESHRECEIVEALLBTNSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void OnClickGetBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONCLICKGETBTN_OFFSET))(this);
+		}
+
+		::System::Void SetNeedUpdateMail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_SETNEEDUPDATEMAIL_OFFSET))(this);
+		}
+
+		::System::Void OnClickScrollItem(::System::Int32 dataIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONCLICKSCROLLITEM_OFFSET))(this, dataIndex);
+		}
+
+		::System::Void OnScrollMove(::MonoUITableScrollV2_MoveContext context, ::System::Single delta)
+		{
+			return ((::System::Void(*)(::PVOID, ::MonoUITableScrollV2_MoveContext, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_ONSCROLLMOVE_OFFSET))(this, context, delta);
+		}
+
+		::System::Void RefreshScrollViewConfig()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_REFRESHSCROLLVIEWCONFIG_OFFSET))(this);
+		}
+
+		::System::Void RefreshAllMails()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_REFRESHALLMAILS_OFFSET))(this);
+		}
+
+		::System::Void RefreshCount()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_REFRESHCOUNT_OFFSET))(this);
+		}
+
+		::System::Void SetEmptyState(::System::Boolean empty)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_SETEMPTYSTATE_OFFSET))(this, empty);
+		}
+
+		::System::String* ReplaceText(::System::String* content)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_REPLACETEXT_OFFSET))(this, content);
+		}
+
+		::System::Void UpdateDetail(::Class_1_443BE580FCEE30C4* info)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_443BE580FCEE30C4*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_UPDATEDETAIL_OFFSET))(this, info);
+		}
+
+		::System::Void TryGetMailAward(::Class_1_443BE580FCEE30C4* specifiedMail, ::System::Boolean full)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_443BE580FCEE30C4*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_TRYGETMAILAWARD_OFFSET))(this, specifiedMail, full);
+		}
+
+		::System::Void SetAccessInfo(::Class_1_443BE580FCEE30C4* info)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_443BE580FCEE30C4*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_SETACCESSINFO_OFFSET))(this, info);
+		}
+
+		::System::Void SetRewardInteractable(::System::Boolean interactable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_SETREWARDINTERACTABLE_OFFSET))(this, interactable);
+		}
+
+		::System::Void SetRewardModuleInteractable(::System::Boolean interactable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER_SETREWARDMODULEINTERACTABLE_OFFSET))(this, interactable);
+		}
+
+		::System::Void _OnUIInit_b__4_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__4_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_1_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__4_8()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_8_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__4_9()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_9_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__4_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_2_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__4_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_3_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__4_4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_4_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__4_10()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_10_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__4_6()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_6_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__4_7()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONUIINIT_B__4_7_OFFSET))(this);
+		}
+
+		::System::Void _OnClickGetBtn_b__13_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONCLICKGETBTN_B__13_0_OFFSET))(this);
+		}
+
+		::System::Void _OnClickGetBtn_b__13_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__ONCLICKGETBTN_B__13_1_OFFSET))(this);
+		}
+
+		::System::Void _UpdateDetail_b__22_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__UPDATEDETAIL_B__22_0_OFFSET))(this);
+		}
+
+		::System::Void _SetAccessInfo_b__24_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER__SETACCESSINFO_B__24_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

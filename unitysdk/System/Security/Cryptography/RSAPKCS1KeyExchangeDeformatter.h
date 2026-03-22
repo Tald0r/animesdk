@@ -6,13 +6,14 @@
 namespace System::Security::Cryptography { class AsymmetricAlgorithm; }
 namespace System::Security::Cryptography { class RSA; }
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1KEYEXCHANGEDEFORMATTER_DECRYPTKEYEXCHANGE_OFFSET UNITYSDK_OFFSET(0x15D6DEF0)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1KEYEXCHANGEDEFORMATTER_GET_OVERRIDESDECRYPT_OFFSET UNITYSDK_OFFSET(0x15D6E100)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1KEYEXCHANGEDEFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x15D6BD00)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1KEYEXCHANGEDEFORMATTER_DECRYPTKEYEXCHANGE_OFFSET UNITYSDK_OFFSET(0x188B9E20)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1KEYEXCHANGEDEFORMATTER_GET_OVERRIDESDECRYPT_OFFSET UNITYSDK_OFFSET(0x188B9FB0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1KEYEXCHANGEDEFORMATTER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x188B9DA0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1KEYEXCHANGEDEFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x188B9D90)
 
 namespace System::Security::Cryptography
 {
-	inline static constexpr unsigned int RSAPKCS1KeyExchangeDeformatter_TypeDefinitionIndex = 1038;
+	inline static constexpr unsigned int RSAPKCS1KeyExchangeDeformatter_TypeDefinitionIndex = 1093;
 
 	class RSAPKCS1KeyExchangeDeformatter : public ::System::Security::Cryptography::AsymmetricKeyExchangeDeformatter
 	{
@@ -20,9 +21,14 @@ namespace System::Security::Cryptography
 		::System::Security::Cryptography::RSA* _rsaKey; // 0x10
 		::System::Nullable_1<::System::Boolean> _rsaOverridesDecrypt; // 0x18
 
-		::System::Void _ctor(::System::Security::Cryptography::AsymmetricAlgorithm* key)
+		::System::Void _ctor()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::AsymmetricAlgorithm*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1KEYEXCHANGEDEFORMATTER__CTOR_OFFSET))(this, key);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1KEYEXCHANGEDEFORMATTER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::Security::Cryptography::AsymmetricAlgorithm* key)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Security::Cryptography::AsymmetricAlgorithm*))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_RSAPKCS1KEYEXCHANGEDEFORMATTER__CTOR_1_OFFSET))(this, key);
 		}
 
 		::Il2CppArray<::System::Byte>* DecryptKeyExchange(::Il2CppArray<::System::Byte>* rgbIn)

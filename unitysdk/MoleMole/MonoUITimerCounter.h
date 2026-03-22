@@ -1,0 +1,180 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/LoopStyle.h"
+#include "unitysdk/MoleMole/MonoUITimerCounter_RandomConfig.h"
+#include "unitysdk/MoleMole/MonoUITimerCounter_RollConfig.h"
+#include "unitysdk/MoleMole/MonoUITimerCounter_TimePartType.h"
+#include "unitysdk/MoleMole/MonoUITimerCounter_TimePointStyle.h"
+#include "unitysdk/MoleMole/MonoUITimerCounter_TimeRandomType.h"
+#include "unitysdk/Sirenix/OdinInspector/SerializedMonoBehaviour.h"
+
+namespace System { class Action; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class AnimationCurve; }
+namespace UnityEngine { class Sprite; }
+namespace UnityEngine::UI { class Image; }
+
+#define MOLEMOLE_MONOUITIMERCOUNTER_GET_OPENSECONDRANDOM_OFFSET UNITYSDK_OFFSET(0xBD3F7F0)
+#define MOLEMOLE_MONOUITIMERCOUNTER_GET_TIMESHOWINGTYPE_OFFSET UNITYSDK_OFFSET(0xBD3F7D0)
+#define MOLEMOLE_MONOUITIMERCOUNTER_SETCOUNTSECONDS_OFFSET UNITYSDK_OFFSET(0xBD3F810)
+#define MOLEMOLE_MONOUITIMERCOUNTER_SET_OPENSECONDRANDOM_OFFSET UNITYSDK_OFFSET(0xBD3F800)
+#define MOLEMOLE_MONOUITIMERCOUNTER_SET_TIMESHOWINGTYPE_OFFSET UNITYSDK_OFFSET(0xBD3F7E0)
+#define MOLEMOLE_MONOUITIMERCOUNTER_STARTNORMALRANDOM_OFFSET UNITYSDK_OFFSET(0xBD402A0)
+#define MOLEMOLE_MONOUITIMERCOUNTER_STARTROLLTOTARGET_OFFSET UNITYSDK_OFFSET(0xBD40BF0)
+#define MOLEMOLE_MONOUITIMERCOUNTER_UPDATE_OFFSET UNITYSDK_OFFSET(0xBD3FF30)
+#define MOLEMOLE_MONOUITIMERCOUNTER__CTOR_OFFSET UNITYSDK_OFFSET(0xBD40ED0)
+#define MOLEMOLE_MONOUITIMERCOUNTER__FULLANYRANDOM_OFFSET UNITYSDK_OFFSET(0xBD40300)
+#define MOLEMOLE_MONOUITIMERCOUNTER__GETCURVEDURATION_OFFSET UNITYSDK_OFFSET(0xBD40B20)
+#define MOLEMOLE_MONOUITIMERCOUNTER__GETTIMEPARTINTERVAL_OFFSET UNITYSDK_OFFSET(0xBD40A10)
+#define MOLEMOLE_MONOUITIMERCOUNTER__SETBYTIMEPART_OFFSET UNITYSDK_OFFSET(0xBD3FBC0)
+#define MOLEMOLE_MONOUITIMERCOUNTER__TIMEPARTRANDOM_OFFSET UNITYSDK_OFFSET(0xBD40420)
+#define MOLEMOLE_MONOUITIMERCOUNTER__TRYRANDOM_OFFSET UNITYSDK_OFFSET(0xBD40010)
+#define MOLEMOLE_MONOUITIMERCOUNTER__TRYROLLTOTARGET_OFFSET UNITYSDK_OFFSET(0xBD400A0)
+#define MOLEMOLE_MONOUITIMERCOUNTER___FULLANYRANDOM_G____GETCURVALUE_35_0_OFFSET UNITYSDK_OFFSET(0xBD41030)
+#define MOLEMOLE_MONOUITIMERCOUNTER___FULLANYRANDOM_G____GETRANDOMINTERVAL_35_1_OFFSET UNITYSDK_OFFSET(0xBD40900)
+#define MOLEMOLE_MONOUITIMERCOUNTER___FULLANYRANDOM_G____RANDOMSET_35_2_OFFSET UNITYSDK_OFFSET(0xBD40880)
+#define MOLEMOLE_MONOUITIMERCOUNTER___TIMEPARTRANDOM_G___RANDOMPART_39_0_OFFSET UNITYSDK_OFFSET(0xBD40920)
+#define MOLEMOLE_MONOUITIMERCOUNTER___TRYROLLTOTARGET_G___ROOLPART_48_0_OFFSET UNITYSDK_OFFSET(0xBD40CA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int MonoUITimerCounter_TypeDefinitionIndex = 42162;
+
+	class MonoUITimerCounter : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
+	{
+	public:
+		// static const ::MoleMole::MonoUITimerCounter_TimePartType Urgent_NoHour; // 0x0
+		::System::Collections::Generic::List_1<::UnityEngine::Sprite*>* imageNums; // 0x58
+		::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUITimerCounter_TimePartType, ::UnityEngine::UI::Image*>* timePartImages; // 0x60
+		::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUITimerCounter_TimePartType, ::UnityEngine::UI::Image*>* addonTimePartImages; // 0x68
+		::MoleMole::MonoUITimerCounter_TimePartType _timeShowingType_k__BackingField; // 0x70
+		::MoleMole::MonoUITimerCounter_TimePointStyle timePointStyle; // 0x74
+		::System::Single countSeconds; // 0x78
+		::System::Boolean _openSecondRandom_k__BackingField; // 0x7C
+		::MoleMole::MonoUITimerCounter_TimeRandomType randomType; // 0x80
+		::System::Single randomInterval; // 0x84
+		::UnityEngine::AnimationCurve* randomIntervalCurve; // 0x88
+		::System::Int32 min; // 0x90
+		::System::Int32 max; // 0x94
+		::MoleMole::LoopStyle randomLoopStyle; // 0x98
+		::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUITimerCounter_TimePartType, ::MoleMole::MonoUITimerCounter_RandomConfig>* timePartRandoms; // 0xA0
+		::System::Single _dt; // 0xA8
+		::System::Int32 _dtFlag; // 0xAC
+		::System::Single _trigDt; // 0xB0
+		::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUITimerCounter_TimePartType, ::System::Single>* _runningTimePartTriggerDelta; // 0xB8
+		::System::Int32 _lastRandomSeconds; // 0xC0
+		::System::Single _timeSinceRandom; // 0xC4
+		::System::Boolean openSecondRoll; // 0xC8
+		::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUITimerCounter_TimePartType, ::MoleMole::MonoUITimerCounter_RollConfig>* timePartRollConfigs; // 0xD0
+		::System::Action* rollDoneCb; // 0xD8
+		::System::Int32 _rollTargetSeconds; // 0xE0
+		::System::Int32 _beforeRollTargetSeconds; // 0xE4
+		::System::Single _rollDt; // 0xE8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::MonoUITimerCounter_TimePartType get_timeShowingType()
+		{
+			return ((::MoleMole::MonoUITimerCounter_TimePartType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER_GET_TIMESHOWINGTYPE_OFFSET))(this);
+		}
+
+		::System::Void set_timeShowingType(::MoleMole::MonoUITimerCounter_TimePartType value)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoUITimerCounter_TimePartType))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER_SET_TIMESHOWINGTYPE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_openSecondRandom()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER_GET_OPENSECONDRANDOM_OFFSET))(this);
+		}
+
+		::System::Void set_openSecondRandom(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER_SET_OPENSECONDRANDOM_OFFSET))(this, value);
+		}
+
+		::System::Void SetCountSeconds(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER_SETCOUNTSECONDS_OFFSET))(this, value);
+		}
+
+		::System::Void _SetByTimePart(::MoleMole::MonoUITimerCounter_TimePartType tp, ::System::Single val)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoUITimerCounter_TimePartType, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER__SETBYTIMEPART_OFFSET))(this, tp, val);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void StartNormalRandom()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER_STARTNORMALRANDOM_OFFSET))(this);
+		}
+
+		::System::Void _TryRandom()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER__TRYRANDOM_OFFSET))(this);
+		}
+
+		::System::Void _FullAnyRandom()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER__FULLANYRANDOM_OFFSET))(this);
+		}
+
+		::System::Void _TimePartRandom()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER__TIMEPARTRANDOM_OFFSET))(this);
+		}
+
+		static ::System::Single _GetTimePartInterval(::System::Single totalTime, ::MoleMole::MonoUITimerCounter_RandomConfig cfg)
+		{
+			return ((::System::Single(*)(::System::Single, ::MoleMole::MonoUITimerCounter_RandomConfig))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER__GETTIMEPARTINTERVAL_OFFSET))(totalTime, cfg);
+		}
+
+		::System::Void StartRollToTarget(::System::Int32 targetSeconds, ::System::Action* rollDoneCallback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER_STARTROLLTOTARGET_OFFSET))(this, targetSeconds, rollDoneCallback);
+		}
+
+		::System::Void _TryRollToTarget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER__TRYROLLTOTARGET_OFFSET))(this);
+		}
+
+		static ::System::Single _GetCurveDuration(::UnityEngine::AnimationCurve* curve)
+		{
+			return ((::System::Single(*)(::UnityEngine::AnimationCurve*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER__GETCURVEDURATION_OFFSET))(curve);
+		}
+
+		::System::Single __FullAnyRandom_g____GetCurValue_35_0()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER___FULLANYRANDOM_G____GETCURVALUE_35_0_OFFSET))(this);
+		}
+
+		::System::Single __FullAnyRandom_g____GetRandomInterval_35_1()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER___FULLANYRANDOM_G____GETRANDOMINTERVAL_35_1_OFFSET))(this);
+		}
+
+		::System::Void __FullAnyRandom_g____RandomSet_35_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER___FULLANYRANDOM_G____RANDOMSET_35_2_OFFSET))(this);
+		}
+
+		::System::Void __TimePartRandom_g___RandomPart_39_0(::MoleMole::MonoUITimerCounter_TimePartType part)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoUITimerCounter_TimePartType))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER___TIMEPARTRANDOM_G___RANDOMPART_39_0_OFFSET))(this, part);
+		}
+
+		::System::Boolean __TryRollToTarget_g___RoolPart_48_0(::MoleMole::MonoUITimerCounter_TimePartType part, ::MoleMole::MonoUITimerCounter_RollConfig rcfg)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::MonoUITimerCounter_TimePartType, ::MoleMole::MonoUITimerCounter_RollConfig))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUITIMERCOUNTER___TRYROLLTOTARGET_G___ROOLPART_48_0_OFFSET))(this, part, rcfg);
+		}
+	};
+}

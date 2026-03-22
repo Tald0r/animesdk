@@ -1,0 +1,97 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIFriendCardRowWidgetController.h"
+
+namespace MoleMole { class UIInLevelFriendCardContext; }
+namespace MoleMole { class UIOnlinePlayerItemWidgetController; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_FORBIDDENCHAT_OFFSET UNITYSDK_OFFSET(0x8940BF0)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_ISFORBIDDEN_OFFSET UNITYSDK_OFFSET(0x8940900)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_ONBANBTNCALLBACK_OFFSET UNITYSDK_OFFSET(0x8941C10)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_ONREFRESHFORBIDDENCHATCHANGE_OFFSET UNITYSDK_OFFSET(0x8941490)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_ONSELFINFOCALLBACK_OFFSET UNITYSDK_OFFSET(0x8941650)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8941270)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_REFRESHDATA_OFFSET UNITYSDK_OFFSET(0x8940E90)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_REFRESHFORBIDDENUI_OFFSET UNITYSDK_OFFSET(0x8941F90)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_REFRESHFORBIDDEN_OFFSET UNITYSDK_OFFSET(0x8941560)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_REFRESHUI_OFFSET UNITYSDK_OFFSET(0x8940FF0)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8942020)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8942040)
+#define MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER___BASE_REFRESHUI_OFFSET UNITYSDK_OFFSET(0x8942050)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelFriendCardRowWidgetController_TypeDefinitionIndex = 41951;
+
+	class UIInLevelFriendCardRowWidgetController : public ::MoleMole::UIFriendCardRowWidgetController
+	{
+	public:
+		::MoleMole::UIOnlinePlayerItemWidgetController* _onlinePlayerDetailContentWidgetController; // 0x340
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean IsForbidden(::System::UInt32 teamIdx)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_ISFORBIDDEN_OFFSET))(this, teamIdx);
+		}
+
+		::System::Void ForbiddenChat(::System::UInt32 teamIdx, ::System::Boolean isForbidden)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_FORBIDDENCHAT_OFFSET))(this, teamIdx, isForbidden);
+		}
+
+		::System::Void RefreshData(::MoleMole::UIInLevelFriendCardContext* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIInLevelFriendCardContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_REFRESHDATA_OFFSET))(this, data);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnRefreshForbiddenChatChange(::System::Object* evtData)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_ONREFRESHFORBIDDENCHATCHANGE_OFFSET))(this, evtData);
+		}
+
+		::System::Void RefreshUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_REFRESHUI_OFFSET))(this);
+		}
+
+		::System::Void OnSelfInfoCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_ONSELFINFOCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void OnBanBtnCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_ONBANBTNCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void RefreshForbidden(::System::UInt32 teamIdx)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_REFRESHFORBIDDEN_OFFSET))(this, teamIdx);
+		}
+
+		::System::Void RefreshForbiddenUI(::System::Boolean isForbidden)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER_REFRESHFORBIDDENUI_OFFSET))(this, isForbidden);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_RefreshUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELFRIENDCARDROWWIDGETCONTROLLER___BASE_REFRESHUI_OFFSET))(this);
+		}
+	};
+}

@@ -1,12 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_AAD4F4215611A944.h"
+#include "unitysdk/UnityEngine/Quaternion.h"
+#include "unitysdk/UnityEngine/Vector3.h"
 
-class Class_1_090AB0EAA610410E;
-namespace RPG::AvatarSystem { class IAvatar; }
-namespace RPG::Client { class PreviewAvatarProxy; }
+namespace Nap::NapECS { class EcsWorld; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_554_TypeDefinitionIndex = 49800;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_554_TypeDefinitionIndex = 55825;
 
 class Class_0_16E4307DCC419505_554
 {

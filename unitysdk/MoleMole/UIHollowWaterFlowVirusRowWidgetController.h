@@ -1,0 +1,109 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_C71E0650D1A92040;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole::Config { class ConfigHollowHackerGame; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_GET_VIRUSADDANIMCOOLDOWN_OFFSET UNITYSDK_OFFSET(0x7D18F90)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_INIT_OFFSET UNITYSDK_OFFSET(0x7D19090)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x7D19400)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D197B0)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D19850)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7D19660)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7D19700)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_SETNUM_OFFSET UNITYSDK_OFFSET(0x7D19360)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_UPDATEADDANIM_OFFSET UNITYSDK_OFFSET(0x7D19470)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7D19930)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7D19960)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7D199D0)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7D19A50)
+#define MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7D19AB0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowWaterFlowVirusRowWidgetController_TypeDefinitionIndex = 73824;
+
+	class UIHollowWaterFlowVirusRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_C71E0650D1A92040* _view; // 0x2A0
+		::System::Int32 _num; // 0x2A8
+		::System::Int32 _cachedNum; // 0x2AC
+		::System::Single _timer; // 0x2B0
+		::MoleMole::Config::ConfigHollowHackerGame* _config; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Single get_VirusAddAnimCooldown()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_GET_VIRUSADDANIMCOOLDOWN_OFFSET))(this);
+		}
+
+		::System::Void Init(::System::String* type)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_INIT_OFFSET))(this, type);
+		}
+
+		::System::Void SetNum(::System::Int32 num)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_SETNUM_OFFSET))(this, num);
+		}
+
+		::System::Void LateUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_LATEUPDATE_OFFSET))(this);
+		}
+
+		::System::Void UpdateAddAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_UPDATEADDANIM_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWATERFLOWVIRUSROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

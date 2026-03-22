@@ -1,0 +1,55 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_9E50DA0647A3ACF0.h"
+#include "unitysdk/Enum_3_D6C884A69AACE3AE.h"
+
+class Class_0_16E4307DCC419505_132;
+class Class_2_ECD79A325249812D_Class_2_CA2972E772BD42B0;
+namespace MoleMole { class UIBigScenePersonalOutWidgetController; }
+namespace MoleMole { class UIWindowController; }
+
+#define CLASS_2_ECD79A325249812D_METHOD_2_3CDD0248353333ED_OFFSET UNITYSDK_OFFSET(0x6C82DC0)
+#define CLASS_2_ECD79A325249812D_METHOD_2_A96DCA30C6927810_OFFSET UNITYSDK_OFFSET(0x6C82BA0)
+#define CLASS_2_ECD79A325249812D_METHOD_2_AA169839CB93802A_OFFSET UNITYSDK_OFFSET(0x6C82C80)
+#define CLASS_2_ECD79A325249812D_METHOD_2_B74D3688C9F7FE4B_OFFSET UNITYSDK_OFFSET(0x6C82BB0)
+#define CLASS_2_ECD79A325249812D_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x6C82EA0)
+#define CLASS_2_ECD79A325249812D__CTOR_OFFSET UNITYSDK_OFFSET(0x6C82DB0)
+
+inline static constexpr unsigned int Class_2_ECD79A325249812D_TypeDefinitionIndex = 72240;
+
+class Class_2_ECD79A325249812D : public ::Class_1_9E50DA0647A3ACF0
+{
+public:
+	::Class_2_ECD79A325249812D_Class_2_CA2972E772BD42B0* Field_2_0; // 0x28
+	::MoleMole::UIBigScenePersonalOutWidgetController* Field_2_1; // 0x30
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_ECD79A325249812D__CTOR_OFFSET))(this);
+	}
+
+	::Enum_3_D6C884A69AACE3AE Method_2_A96DCA30C6927810()
+	{
+		return ((::Enum_3_D6C884A69AACE3AE(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_ECD79A325249812D_METHOD_2_A96DCA30C6927810_OFFSET))(this);
+	}
+
+	::System::Void Method_2_B74D3688C9F7FE4B(::Class_0_16E4307DCC419505_132* a1, ::MoleMole::UIWindowController* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_132*, ::MoleMole::UIWindowController*))((::PBYTE)hIl2Cpp + CLASS_2_ECD79A325249812D_METHOD_2_B74D3688C9F7FE4B_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_AA169839CB93802A()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_ECD79A325249812D_METHOD_2_AA169839CB93802A_OFFSET))(this);
+	}
+
+	::System::Void Method_2_3CDD0248353333ED(::System::Boolean a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_ECD79A325249812D_METHOD_2_3CDD0248353333ED_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_ECD79A325249812D_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+};

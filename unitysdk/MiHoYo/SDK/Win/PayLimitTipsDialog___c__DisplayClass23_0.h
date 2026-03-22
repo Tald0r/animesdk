@@ -4,18 +4,18 @@
 
 namespace MiHoYo::SDK::Win { class PayLimitTipsDialog; }
 
-#define MIHOYO_SDK_WIN_PAYLIMITTIPSDIALOG___C__DISPLAYCLASS23_0__CTOR_OFFSET UNITYSDK_OFFSET(0x15A6A600)
-#define MIHOYO_SDK_WIN_PAYLIMITTIPSDIALOG___C__DISPLAYCLASS23_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x15A6B3C0)
+#define MIHOYO_SDK_WIN_PAYLIMITTIPSDIALOG___C__DISPLAYCLASS23_0__CTOR_OFFSET UNITYSDK_OFFSET(0x17AFA520)
+#define MIHOYO_SDK_WIN_PAYLIMITTIPSDIALOG___C__DISPLAYCLASS23_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x17AFA530)
 
 namespace MiHoYo::SDK::Win
 {
-	inline static constexpr unsigned int PayLimitTipsDialog___c__DisplayClass23_0_TypeDefinitionIndex = 8032;
+	inline static constexpr unsigned int PayLimitTipsDialog___c__DisplayClass23_0_TypeDefinitionIndex = 19179;
 
 	class PayLimitTipsDialog___c__DisplayClass23_0 : public ::System::Object
 	{
 	public:
-		::System::Int32 noticeAmount; // 0x10
-		::System::Boolean bShowNotTips; // 0x14
+		::System::Boolean bShowNotTips; // 0x10
+		::System::Int32 noticeAmount; // 0x14
 
 		::System::Void _ctor()
 		{

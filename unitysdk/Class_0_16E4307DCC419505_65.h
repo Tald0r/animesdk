@@ -1,15 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-class Class_1_47EE63CB5C4DC8FC_5;
-namespace Entitas { class IContext; }
-namespace Entitas { class IEntity; }
-namespace System { class String; }
-namespace UnityEngine { class GameObject; }
-namespace UnityEngine { class Transform; }
+template <typename T> class Class_3_B60F6C2F126D2E26_2;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_65_TypeDefinitionIndex = 31408;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_65_TypeDefinitionIndex = 24439;
 
+template <typename TVertex, typename TEdge>
 class Class_0_16E4307DCC419505_65
 {
 public:

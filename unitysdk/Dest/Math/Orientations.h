@@ -3,7 +3,7 @@
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int Orientations_TypeDefinitionIndex = 8471;
+	inline static constexpr unsigned int Orientations_TypeDefinitionIndex = 31733;
 
 	enum class Orientations : ::System::Int32
 	{

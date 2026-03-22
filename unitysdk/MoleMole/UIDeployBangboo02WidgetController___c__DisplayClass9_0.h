@@ -1,0 +1,68 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_FF13DDC3E6877E63;
+namespace MoleMole { class UIDeployBangboo02WidgetController; }
+
+#define MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xBB1EA10)
+#define MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__1_OFFSET UNITYSDK_OFFSET(0xBB1EC90)
+#define MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__2_OFFSET UNITYSDK_OFFSET(0xBB1ED80)
+#define MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__3_OFFSET UNITYSDK_OFFSET(0xBB1F000)
+#define MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__4_OFFSET UNITYSDK_OFFSET(0xBB1F280)
+#define MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__5_OFFSET UNITYSDK_OFFSET(0xBB1F480)
+#define MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__6_OFFSET UNITYSDK_OFFSET(0xBB1F610)
+#define MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBB1EA00)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIDeployBangboo02WidgetController___c__DisplayClass9_0_TypeDefinitionIndex = 76517;
+
+	class UIDeployBangboo02WidgetController___c__DisplayClass9_0 : public ::System::Object
+	{
+	public:
+		::Class_1_FF13DDC3E6877E63* data; // 0x10
+		::MoleMole::UIDeployBangboo02WidgetController* __4__this; // 0x18
+		::System::Int32 index; // 0x20
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__0_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__1_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__2_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__3_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__4_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__5()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__5_OFFSET))(this);
+		}
+
+		::System::Void _BindView_b__6()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPLOYBANGBOO02WIDGETCONTROLLER___C__DISPLAYCLASS9_0__BINDVIEW_B__6_OFFSET))(this);
+		}
+	};
+}

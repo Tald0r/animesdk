@@ -3,13 +3,13 @@
 #include "unitysdk/System/DateTimeParse_TM.h"
 #include "unitysdk/System/ValueType.h"
 
-#define SYSTEM_DATETIMERAWINFO_ADDNUMBER_OFFSET UNITYSDK_OFFSET(0x2006250)
-#define SYSTEM_DATETIMERAWINFO_GETNUMBER_OFFSET UNITYSDK_OFFSET(0x1525430)
-#define SYSTEM_DATETIMERAWINFO_INIT_OFFSET UNITYSDK_OFFSET(0x2006220)
+#define SYSTEM_DATETIMERAWINFO_ADDNUMBER_OFFSET UNITYSDK_OFFSET(0x860180)
+#define SYSTEM_DATETIMERAWINFO_GETNUMBER_OFFSET UNITYSDK_OFFSET(0x3C1D20)
+#define SYSTEM_DATETIMERAWINFO_INIT_OFFSET UNITYSDK_OFFSET(0x860150)
 
 namespace System
 {
-	inline static constexpr unsigned int DateTimeRawInfo_TypeDefinitionIndex = 262;
+	inline static constexpr unsigned int DateTimeRawInfo_TypeDefinitionIndex = 249;
 
 	struct alignas(8) DateTimeRawInfo
 	{

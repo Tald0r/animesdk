@@ -1,0 +1,204 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/UnityEngine/Color.h"
+
+class Class_1_D375C91CCE5D3999;
+class Class_2_604149159BD159AA;
+class Class_2_8B36B2DB492DBF9B_6;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class MonoGamepadNavigatableList; }
+namespace MoleMole { class UIActivityAvatarAwakenItemWidgetControllerContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralConsoleExistNormalBtnWidgetController; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_GET_GAMEPADLIST_OFFSET UNITYSDK_OFFSET(0x9AF8920)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_GET_MODEL_OFFSET UNITYSDK_OFFSET(0x9AF7080)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_INITTHEMECOLORS_OFFSET UNITYSDK_OFFSET(0x9AF64E0)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCLICKGOTOAVATAR_OFFSET UNITYSDK_OFFSET(0x9AF7D10)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCLICKGOTOTRAINQUEST_OFFSET UNITYSDK_OFFSET(0x9AF7E80)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCLICKGOTOTUTORIAL_OFFSET UNITYSDK_OFFSET(0x9AF8150)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0x9AF73F0)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCLICKTRAIN_OFFSET UNITYSDK_OFFSET(0x9AF77A0)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9AF85F0)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0x9AF8770)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0x9AF8CF0)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x9AF7150)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0x9AF8EA0)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9AF8690)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9AF8420)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9AF8540)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_REFRESHBTNSTATE_OFFSET UNITYSDK_OFFSET(0x9AF75A0)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_REFRESHSCROLLVIEWONFOCUSCHANGE_OFFSET UNITYSDK_OFFSET(0x9AF8AC0)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_SETROOTACTIVITYDATA_OFFSET UNITYSDK_OFFSET(0x9AF6680)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9AF8F90)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9AF8FC0)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0x9AF9030)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0x9AF90A0)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x9AF9110)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0x9AF9190)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9AF91F0)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9AF9270)
+#define MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9AF92D0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityAvatarAwakenWidgetController_TypeDefinitionIndex = 63961;
+
+	class UIActivityAvatarAwakenWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_8B36B2DB492DBF9B_6* _view; // 0x2A0
+		::Class_1_D375C91CCE5D3999* rootActivityData; // 0x2A8
+		::System::Collections::Generic::List_1<::MoleMole::UIActivityAvatarAwakenItemWidgetControllerContext*>* m_roleContexts; // 0x2B0
+		::System::Collections::Generic::List_1<::UnityEngine::Color>* _themeColors; // 0x2B8
+		::MoleMole::UIActivityAvatarAwakenItemWidgetControllerContext* CurSelectedContext; // 0x2C0
+		::MoleMole::MonoGamepadNavigatableList* _gamePadList; // 0x2C8
+		::MoleMole::UIGeneralConsoleExistNormalBtnWidgetController* btnGotoTrainQuest; // 0x2D0
+		::MoleMole::UIGeneralConsoleExistNormalBtnWidgetController* btnGotoAvatar; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void InitThemeColors()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_INITTHEMECOLORS_OFFSET))(this);
+		}
+
+		::System::Void SetRootActivityData(::Class_1_D375C91CCE5D3999* activityData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_SETROOTACTIVITYDATA_OFFSET))(this, activityData);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void OnClickItem(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this, index);
+		}
+
+		::System::Void OnClickTrain()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCLICKTRAIN_OFFSET))(this);
+		}
+
+		::System::Void OnClickGotoAvatar()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCLICKGOTOAVATAR_OFFSET))(this);
+		}
+
+		::System::Void OnClickGotoTrainQuest()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCLICKGOTOTRAINQUEST_OFFSET))(this);
+		}
+
+		::System::Void OnClickGotoTutorial()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCLICKGOTOTUTORIAL_OFFSET))(this);
+		}
+
+		::Class_2_604149159BD159AA* get_Model()
+		{
+			return ((::Class_2_604149159BD159AA*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_GET_MODEL_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONGAMEPADMODULEFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* gamepadModule)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, gamepadModule);
+		}
+
+		::System::Void RefreshScrollViewOnFocusChange()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_REFRESHSCROLLVIEWONFOCUSCHANGE_OFFSET))(this);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::MoleMole::MonoGamepadNavigatableList* get_GamePadList()
+		{
+			return ((::MoleMole::MonoGamepadNavigatableList*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_GET_GAMEPADLIST_OFFSET))(this);
+		}
+
+		::System::Void RefreshBtnState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER_REFRESHBTNSTATE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONGAMEPADMODULEFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleLostFocus(::MoleMole::MonoGamepadModule* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONGAMEPADMODULELOSTFOCUS_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYAVATARAWAKENWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

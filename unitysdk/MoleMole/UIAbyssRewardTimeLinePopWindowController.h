@@ -1,0 +1,504 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/Enum_3_B90C1A15EA6E3C2B.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/UIAbyssRewardTimeLinePopWindowController_TabType.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_0_16E4307DCC419505_7;
+class Class_2_208CC9941471731A_289;
+class Class_2_79F6D62CE30E3F8E_168;
+class Class_2_DA8BF519212BAE65;
+class Class_3_C248956D95AFBB36;
+class MonoUITableScrollV2;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIAbyssRewardTimeLinePopWindowControllerContext; }
+namespace MoleMole { class UIAbyssRewardWidgetController; }
+namespace MoleMole { class UIAbyssTaskCardWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIItemIconBtnSmallWidgetController; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Animation; }
+namespace UnityEngine { class AnimationCurve; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_CANGETALLREWARD_OFFSET UNITYSDK_OFFSET(0x8F593D0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_CREATREWARDITEM_OFFSET UNITYSDK_OFFSET(0x8F59BC0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_CREATTASKITEM_OFFSET UNITYSDK_OFFSET(0x8F59D10)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GETREWARDSELECTINDEX_OFFSET UNITYSDK_OFFSET(0xC8CC690)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GETSHOWTASKLIST_OFFSET UNITYSDK_OFFSET(0x8F5BE10)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GET_HASSPECIALTASK_OFFSET UNITYSDK_OFFSET(0x8F58530)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0x8F57CB0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GET_NORMALTASKSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x8F585B0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x8F57CC0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_INITCURVES_OFFSET UNITYSDK_OFFSET(0x8F5B500)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_INITTABS_OFFSET UNITYSDK_OFFSET(0xC8CD0B0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ISALLNORMALTASKNOTFINISHED_OFFSET UNITYSDK_OFFSET(0x8F5C900)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_MARKPLAYSPECIALTASKANIM_OFFSET UNITYSDK_OFFSET(0x8F5C240)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONABYSSS1OBSOLETECHANGE_OFFSET UNITYSDK_OFFSET(0x8F5C3A0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONCLICKCHANGEBTN_OFFSET UNITYSDK_OFFSET(0x8F5BE80)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONCLICKGETALLREWARD_OFFSET UNITYSDK_OFFSET(0x8F58D40)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONCLICKGETREWARD_OFFSET UNITYSDK_OFFSET(0xC8CDBB0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONCLOSEPOPUPWINDOW_OFFSET UNITYSDK_OFFSET(0x8F586C0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8F5D010)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xC8CBE40)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONIMPROVEBTNCLICK_OFFSET UNITYSDK_OFFSET(0x8F58980)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONINFOBTNCLICK_OFFSET UNITYSDK_OFFSET(0x8F5D0B0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONITEMCHANGED_OFFSET UNITYSDK_OFFSET(0xC8CAE00)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONREWARDCHANGEHANDLE_OFFSET UNITYSDK_OFFSET(0x8F5D3A0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONREWARDFOCUSCHANGE_OFFSET UNITYSDK_OFFSET(0xC8CC310)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONRSPGETALLTASKREWARD_OFFSET UNITYSDK_OFFSET(0x8F597F0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONTABSELECTHANDLE_OFFSET UNITYSDK_OFFSET(0xC8CD2E0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONTAKEREWARDHANDLE_OFFSET UNITYSDK_OFFSET(0xC8CDEA0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONTASKCHANGEHANDLE_OFFSET UNITYSDK_OFFSET(0x8F5A550)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONTASKFOCUSCHANGE_OFFSET UNITYSDK_OFFSET(0xC8CC540)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8F5ABF0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC8CDFA0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8F57CD0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8F59E60)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_PLAYANIMANDREFRESHSPECIALTASK_OFFSET UNITYSDK_OFFSET(0x8F587E0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_PLAYANIMCURVE_OFFSET UNITYSDK_OFFSET(0x8F5B8B0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_PLAYANIM_OFFSET UNITYSDK_OFFSET(0xC8CD580)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_PLAYEXPANIM_OFFSET UNITYSDK_OFFSET(0x8F5AD60)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHCHANGEBTNSTATE_OFFSET UNITYSDK_OFFSET(0x8F5C780)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHGETALLBTNSTATE_OFFSET UNITYSDK_OFFSET(0x8F5CB80)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHONTASKREFRESH_OFFSET UNITYSDK_OFFSET(0xC8CCBD0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHREQREWARDINDEXLIST_OFFSET UNITYSDK_OFFSET(0x8F594F0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHSPECIALTASK_OFFSET UNITYSDK_OFFSET(0x8F5CC40)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHTASKRSPCALLBACK_OFFSET UNITYSDK_OFFSET(0x8F5C450)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xC8CAEB0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SAVELASTTASKIDANDDELNEW_OFFSET UNITYSDK_OFFSET(0xC8CCD40)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETEXPSTRING_OFFSET UNITYSDK_OFFSET(0x8F5AA60)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETLEVELTEXT_OFFSET UNITYSDK_OFFSET(0xC8CCC40)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETPROGRESSANDEXPNUM_OFFSET UNITYSDK_OFFSET(0x8F5BB00)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETPROGRESSDEC_OFFSET UNITYSDK_OFFSET(0x8F5BC70)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETPROGRESS_OFFSET UNITYSDK_OFFSET(0x8F5BD60)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETSELECTREWARDITEM_OFFSET UNITYSDK_OFFSET(0xC8CCAD0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SWITCHCONSOLEKEYSTATE_OFFSET UNITYSDK_OFFSET(0xC8CC460)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xC8CE480)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC8CE2C0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__INITTABS_B__76_0_OFFSET UNITYSDK_OFFSET(0xC8CE610)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__INITTABS_B__76_1_OFFSET UNITYSDK_OFFSET(0xC8CE620)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__ONTAKEREWARDHANDLE_B__91_0_OFFSET UNITYSDK_OFFSET(0xC8CE6D0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__ONUIOPEN_B__17_0_OFFSET UNITYSDK_OFFSET(0xC8CE4C0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__PLAYANIMANDREFRESHSPECIALTASK_B__46_0_OFFSET UNITYSDK_OFFSET(0xC8CE4D0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__PLAYANIM_B__88_0_OFFSET UNITYSDK_OFFSET(0xC8CE630)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__PLAYANIM_B__88_1_OFFSET UNITYSDK_OFFSET(0xC8CE670)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__PLAYANIM_B__88_2_OFFSET UNITYSDK_OFFSET(0xC8CE6A0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__REFRESHTASKRSPCALLBACK_B__47_0_OFFSET UNITYSDK_OFFSET(0xC8CE4E0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC8CE700)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xC8CE770)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xC8CE7F0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC8CE800)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC8CE810)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC8CE820)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAbyssRewardTimeLinePopWindowController_TypeDefinitionIndex = 78143;
+
+	class UIAbyssRewardTimeLinePopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		static ::System::Single* StaticGet_RefreshAnimLen()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(UIAbyssRewardTimeLinePopWindowController_TypeDefinitionIndex)->GetStaticField(0xDA60);
+		}
+		::Class_2_79F6D62CE30E3F8E_168* _view; // 0x2F8
+		::System::Collections::Generic::List_1<::System::Int32>* reqIndexList; // 0x300
+		::System::Collections::Generic::List_1<::MoleMole::UIAbyssTaskCardWidgetController*>* m_normalTaskList; // 0x308
+		::System::Single m_playExpAnimDelay; // 0x310
+		::System::String* m_animExpPhase1Name; // 0x318
+		::System::String* m_animExpPhase2Name; // 0x320
+		::System::String* m_animExpPhase3Name; // 0x328
+		::System::String* m_animIconAccName; // 0x330
+		::UnityEngine::AnimationCurve* m_animExpPhase1; // 0x338
+		::UnityEngine::AnimationCurve* m_animExpPhase2; // 0x340
+		::UnityEngine::AnimationCurve* m_animExpPhase3; // 0x348
+		::MoleMole::UIAbyssRewardTimeLinePopWindowControllerContext* m_ctx; // 0x350
+		::System::Boolean m_hasFakeData; // 0x358
+		::System::Boolean m_hasUpgrade; // 0x359
+		::System::Single m_coroutineTotalExp; // 0x35C
+		::System::Single m_coroutinePrevExp; // 0x360
+		::Foundation::Coroutine::CoroutineHandle animHandle; // 0x364
+		::System::Int32 _currentAbyssGroup; // 0x368
+		::MoleMole::UIAbyssTaskCardWidgetController* m_specialTask; // 0x370
+		::MoleMole::UIAbyssRewardWidgetController* selectRewardCtrl; // 0x378
+		::MoleMole::UIAbyssTaskCardWidgetController* selectTaskCtrl; // 0x380
+		::MoleMole::UIItemIconBtnSmallWidgetController* m_iconWidget; // 0x388
+		::System::Int32 m_oldLevel; // 0x390
+		::System::Int32 m_oldExp; // 0x394
+		::MoleMole::UIAbyssRewardTimeLinePopWindowController_TabType m_curTabType; // 0x398
+		::UnityEngine::Animation* m_taskAnim; // 0x3A0
+		::UnityEngine::Animation* m_rewardAnim; // 0x3A8
+		::System::Single m_taskAnimFadeoutLen; // 0x3B0
+		::System::Single m_rewardAnimFadeoutLen; // 0x3B4
+		::System::String* m_rewardFadeinAnimName; // 0x3B8
+		::System::String* m_rewardFadeoutAnimName; // 0x3C0
+		::System::String* m_taskFadeinAnimName; // 0x3C8
+		::System::String* m_taskFadeoutAnimName; // 0x3D0
+		::System::Boolean _isStopRefreshData; // 0x3D8
+		::Class_2_DA8BF519212BAE65* _abyssModel; // 0x3E0
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_289*>* rewardList; // 0x3E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnClosePopupWindow(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONCLOSEPOPUPWINDOW_OFFSET))(this, args);
+		}
+
+		::System::Boolean get_HasSpecialTask()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GET_HASSPECIALTASK_OFFSET))(this);
+		}
+
+		::System::Void OnImproveBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONIMPROVEBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnClickGetAllReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONCLICKGETALLREWARD_OFFSET))(this);
+		}
+
+		::System::Void RefreshReqRewardIndexList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHREQREWARDINDEXLIST_OFFSET))(this);
+		}
+
+		::System::Void OnRspGetAllTaskReward(::Class_0_16E4307DCC419505_7* rcvMessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONRSPGETALLTASKREWARD_OFFSET))(this, rcvMessage);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreatRewardItem(::Enum_3_B90C1A15EA6E3C2B arg1, ::System::Func_1<::MoleMole::UIControlReference*>* arg2)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::Enum_3_B90C1A15EA6E3C2B, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_CREATREWARDITEM_OFFSET))(this, arg1, arg2);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreatTaskItem(::Enum_3_B90C1A15EA6E3C2B arg1, ::System::Func_1<::MoleMole::UIControlReference*>* arg2)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::Enum_3_B90C1A15EA6E3C2B, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_CREATTASKITEM_OFFSET))(this, arg1, arg2);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void PlayExpAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_PLAYEXPANIM_OFFSET))(this);
+		}
+
+		::System::Void SetExpString(::System::Int32 level, ::System::Int32 cur, ::System::Int32 total)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETEXPSTRING_OFFSET))(this, level, cur, total);
+		}
+
+		::System::Void SetProgressAndExpNum(::System::Single ratio)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETPROGRESSANDEXPNUM_OFFSET))(this, ratio);
+		}
+
+		::System::Void SetProgressDec(::System::Single ratio)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETPROGRESSDEC_OFFSET))(this, ratio);
+		}
+
+		::System::Void PlayAnimCurve(::UnityEngine::AnimationCurve* curve, ::System::Action_1<::System::Single>* action, ::System::Single start, ::System::Single end, ::System::Action* onDone)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::AnimationCurve*, ::System::Action_1<::System::Single>*, ::System::Single, ::System::Single, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_PLAYANIMCURVE_OFFSET))(this, curve, action, start, end, onDone);
+		}
+
+		::System::Void SetProgress(::System::Single progress)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETPROGRESS_OFFSET))(this, progress);
+		}
+
+		::System::Void InitCurves()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_INITCURVES_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_3_C248956D95AFBB36*>* GetShowTaskList()
+		{
+			return ((::System::Collections::Generic::List_1<::Class_3_C248956D95AFBB36*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GETSHOWTASKLIST_OFFSET))(this);
+		}
+
+		::System::Void OnClickChangeBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONCLICKCHANGEBTN_OFFSET))(this);
+		}
+
+		::System::Void MarkPlaySpecialTaskAnim(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_MARKPLAYSPECIALTASKANIM_OFFSET))(this, args);
+		}
+
+		::System::Void OnAbyssS1ObsoleteChange(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONABYSSS1OBSOLETECHANGE_OFFSET))(this, args);
+		}
+
+		::System::Void PlayAnimAndRefreshSpecialTask(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_PLAYANIMANDREFRESHSPECIALTASK_OFFSET))(this, args);
+		}
+
+		::System::Void RefreshTaskRspCallback(::Class_0_16E4307DCC419505_7* rcvMessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHTASKRSPCALLBACK_OFFSET))(this, rcvMessage);
+		}
+
+		::MonoUITableScrollV2* get_NormalTaskScrollview()
+		{
+			return ((::MonoUITableScrollV2*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GET_NORMALTASKSCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshChangeBtnState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHCHANGEBTNSTATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshGetAllBtnState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHGETALLBTNSTATE_OFFSET))(this);
+		}
+
+		::System::Boolean CanGetAllReward()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_CANGETALLREWARD_OFFSET))(this);
+		}
+
+		::System::Boolean IsAllNormalTaskNotFinished()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ISALLNORMALTASKNOTFINISHED_OFFSET))(this);
+		}
+
+		::System::Void RefreshSpecialTask(::System::Boolean forceRebuild)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHSPECIALTASK_OFFSET))(this, forceRebuild);
+		}
+
+		::System::Void OnTaskChangeHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONTASKCHANGEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnInfoBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONINFOBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnRewardChangeHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONREWARDCHANGEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnItemChanged(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONITEMCHANGED_OFFSET))(this, obj);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void OnRewardFocusChange()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONREWARDFOCUSCHANGE_OFFSET))(this);
+		}
+
+		::System::Void OnTaskFocusChange()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONTASKFOCUSCHANGE_OFFSET))(this);
+		}
+
+		::System::Int32 GetRewardSelectIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_GETREWARDSELECTINDEX_OFFSET))(this);
+		}
+
+		::System::Void SetSelectRewardItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETSELECTREWARDITEM_OFFSET))(this);
+		}
+
+		::System::Void RefreshOnTaskRefresh(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHONTASKREFRESH_OFFSET))(this, args);
+		}
+
+		::System::Void SetLevelText(::System::Int32 level)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SETLEVELTEXT_OFFSET))(this, level);
+		}
+
+		::System::Void RefreshView(::System::Boolean triggerByUIOpen, ::System::Boolean triggerBySelectTab)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this, triggerByUIOpen, triggerBySelectTab);
+		}
+
+		::System::Void SaveLastTaskIDAndDelNew()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SAVELASTTASKIDANDDELNEW_OFFSET))(this);
+		}
+
+		::System::Void InitTabs()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_INITTABS_OFFSET))(this);
+		}
+
+		::System::Void OnTabSelectHandle(::MoleMole::UIAbyssRewardTimeLinePopWindowController_TabType tabType)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIAbyssRewardTimeLinePopWindowController_TabType))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONTABSELECTHANDLE_OFFSET))(this, tabType);
+		}
+
+		::System::Void SwitchConsoleKeyState(::System::Boolean showReward)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_SWITCHCONSOLEKEYSTATE_OFFSET))(this, showReward);
+		}
+
+		::System::Void PlayAnim(::MoleMole::UIAbyssRewardTimeLinePopWindowController_TabType from, ::MoleMole::UIAbyssRewardTimeLinePopWindowController_TabType to)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIAbyssRewardTimeLinePopWindowController_TabType, ::MoleMole::UIAbyssRewardTimeLinePopWindowController_TabType))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_PLAYANIM_OFFSET))(this, from, to);
+		}
+
+		::System::Void OnClickGetReward(::MoleMole::UIAbyssRewardWidgetController* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIAbyssRewardWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONCLICKGETREWARD_OFFSET))(this, obj);
+		}
+
+		::System::Void OnTakeRewardHandle(::Class_0_16E4307DCC419505_7* rcvMessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONTAKEREWARDHANDLE_OFFSET))(this, rcvMessage);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void _OnUIOpen_b__17_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__ONUIOPEN_B__17_0_OFFSET))(this);
+		}
+
+		::System::Void _PlayAnimAndRefreshSpecialTask_b__46_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__PLAYANIMANDREFRESHSPECIALTASK_B__46_0_OFFSET))(this);
+		}
+
+		::System::Void _RefreshTaskRspCallback_b__47_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__REFRESHTASKRSPCALLBACK_B__47_0_OFFSET))(this);
+		}
+
+		::System::Void _InitTabs_b__76_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__INITTABS_B__76_0_OFFSET))(this);
+		}
+
+		::System::Void _InitTabs_b__76_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__INITTABS_B__76_1_OFFSET))(this);
+		}
+
+		::System::Void _PlayAnim_b__88_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__PLAYANIM_B__88_0_OFFSET))(this);
+		}
+
+		::System::Void _PlayAnim_b__88_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__PLAYANIM_B__88_1_OFFSET))(this);
+		}
+
+		::System::Void _PlayAnim_b__88_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__PLAYANIM_B__88_2_OFFSET))(this);
+		}
+
+		::System::Void _OnTakeRewardHandle_b__91_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER__ONTAKEREWARDHANDLE_B__91_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

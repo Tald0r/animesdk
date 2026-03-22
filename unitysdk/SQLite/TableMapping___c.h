@@ -1,0 +1,43 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace SQLite { class TableMapping_Column; }
+namespace System { template <typename T1, typename T2> class Func_2; }
+
+#define SQLITE_TABLEMAPPING___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A076120)
+#define SQLITE_TABLEMAPPING___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A076160)
+#define SQLITE_TABLEMAPPING___C___CTOR_B__35_0_OFFSET UNITYSDK_OFFSET(0x1A076170)
+
+namespace SQLite
+{
+	inline static constexpr unsigned int TableMapping___c_TypeDefinitionIndex = 35240;
+
+	class TableMapping___c : public ::System::Object
+	{
+	public:
+		static ::SQLite::TableMapping___c** StaticGet___9()
+		{
+			return (::SQLite::TableMapping___c**)Il2CppClass::FromTypeDefinitionIndex(TableMapping___c_TypeDefinitionIndex)->GetStaticField(0x24DC0);
+		}
+		static ::System::Func_2<::SQLite::TableMapping_Column*, ::System::Boolean>** StaticGet___9__35_0()
+		{
+			return (::System::Func_2<::SQLite::TableMapping_Column*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(TableMapping___c_TypeDefinitionIndex)->GetStaticField(0x24DC8);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SQLITE_TABLEMAPPING___C__CCTOR_OFFSET))();
+		}
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SQLITE_TABLEMAPPING___C__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean __ctor_b__35_0(::SQLite::TableMapping_Column* c)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::SQLite::TableMapping_Column*))((::PBYTE)hIl2Cpp + SQLITE_TABLEMAPPING___C___CTOR_B__35_0_OFFSET))(this, c);
+		}
+	};
+}

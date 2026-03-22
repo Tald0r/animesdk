@@ -7,7 +7,10 @@
 
 namespace System { class String; }
 namespace System::Collections { class Hashtable; }
+namespace System::Collections { class IDictionary; }
 namespace System::Collections::Generic { template <typename T> class LinkedList_1; }
+namespace System::Reflection { class AssemblyName; }
+namespace System::Reflection::Emit { class CustomAttributeBuilder; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 namespace System::Text::RegularExpressions { class CachedCodeEntry; }
 namespace System::Text::RegularExpressions { class ExclusiveReference; }
@@ -15,103 +18,126 @@ namespace System::Text::RegularExpressions { class Match; }
 namespace System::Text::RegularExpressions { class MatchCollection; }
 namespace System::Text::RegularExpressions { class MatchEvaluator; }
 namespace System::Text::RegularExpressions { class RegexCode; }
+namespace System::Text::RegularExpressions { class RegexCompilationInfo; }
 namespace System::Text::RegularExpressions { class RegexRunnerFactory; }
 namespace System::Text::RegularExpressions { class SharedReference; }
 
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_CACHECODE_OFFSET UNITYSDK_OFFSET(0x17F2B0B0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ESCAPE_OFFSET UNITYSDK_OFFSET(0x17F2BA00)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_MATCHTIMEOUT_OFFSET UNITYSDK_OFFSET(0x17F2BDE0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_OPTIONS_OFFSET UNITYSDK_OFFSET(0x17F2BDD0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_RIGHTTOLEFT_OFFSET UNITYSDK_OFFSET(0x17F2BDF0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GROUPNAMEFROMNUMBER_OFFSET UNITYSDK_OFFSET(0x17F27DC0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GROUPNUMBERFROMNAME_OFFSET UNITYSDK_OFFSET(0x17F27A30)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_INITDEFAULTMATCHTIMEOUT_OFFSET UNITYSDK_OFFSET(0x17F2B7D0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_INITIALIZEREFERENCES_OFFSET UNITYSDK_OFFSET(0x17F2B010)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ISMATCH_1_OFFSET UNITYSDK_OFFSET(0x17F2BF20)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ISMATCH_2_OFFSET UNITYSDK_OFFSET(0x17F2BE60)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ISMATCH_3_OFFSET UNITYSDK_OFFSET(0x17F2BF70)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ISMATCH_4_OFFSET UNITYSDK_OFFSET(0x17F2BFF0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ISMATCH_OFFSET UNITYSDK_OFFSET(0x17F2BE20)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_LOOKUPCACHEDANDUPDATE_OFFSET UNITYSDK_OFFSET(0x17F2AAE0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_1_OFFSET UNITYSDK_OFFSET(0x17F2C280)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_2_OFFSET UNITYSDK_OFFSET(0x17F2C350)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_3_OFFSET UNITYSDK_OFFSET(0x17F2C3E0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_OFFSET UNITYSDK_OFFSET(0x17F2C240)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_1_OFFSET UNITYSDK_OFFSET(0x17F2C0A0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_2_OFFSET UNITYSDK_OFFSET(0x17F2C160)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_3_OFFSET UNITYSDK_OFFSET(0x17F2C1D0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_OFFSET UNITYSDK_OFFSET(0x17F2C060)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_1_OFFSET UNITYSDK_OFFSET(0x17F2C570)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_2_OFFSET UNITYSDK_OFFSET(0x17F2C4B0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_3_OFFSET UNITYSDK_OFFSET(0x17F2C5D0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_4_OFFSET UNITYSDK_OFFSET(0x17F2C810)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_5_OFFSET UNITYSDK_OFFSET(0x17F2C630)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_6_OFFSET UNITYSDK_OFFSET(0x17F2CD40)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_7_OFFSET UNITYSDK_OFFSET(0x17F2CDC0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_8_OFFSET UNITYSDK_OFFSET(0x17F2CE30)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_9_OFFSET UNITYSDK_OFFSET(0x17F2CEE0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_OFFSET UNITYSDK_OFFSET(0x17F2C460)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_RUN_OFFSET UNITYSDK_OFFSET(0x17F283C0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_1_OFFSET UNITYSDK_OFFSET(0x17F2D4C0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_2_OFFSET UNITYSDK_OFFSET(0x17F2D460)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_3_OFFSET UNITYSDK_OFFSET(0x17F2D540)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_4_OFFSET UNITYSDK_OFFSET(0x17F2D5E0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_OFFSET UNITYSDK_OFFSET(0x17F2D3E0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SYSTEM_RUNTIME_SERIALIZATION_ISERIALIZABLE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x17F2B650)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17F2BE10)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_USEOPTIONINVARIANT_OFFSET UNITYSDK_OFFSET(0x17F2DCE0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_USEOPTIONR_OFFSET UNITYSDK_OFFSET(0x17F2BE00)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_VALIDATEMATCHTIMEOUT_OFFSET UNITYSDK_OFFSET(0x17F2AA40)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CCTOR_OFFSET UNITYSDK_OFFSET(0x17F2E0A0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F2A5C0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17F2A9F0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_3_OFFSET UNITYSDK_OFFSET(0x17F2A610)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_4_OFFSET UNITYSDK_OFFSET(0x17F2B500)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_OFFSET UNITYSDK_OFFSET(0x17F2A590)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_CACHECODE_OFFSET UNITYSDK_OFFSET(0x190AFA30)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_COMPILETOASSEMBLY_1_OFFSET UNITYSDK_OFFSET(0x190B38C0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_COMPILETOASSEMBLY_2_OFFSET UNITYSDK_OFFSET(0x190B3900)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_COMPILETOASSEMBLY_OFFSET UNITYSDK_OFFSET(0x190B3880)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ESCAPE_OFFSET UNITYSDK_OFFSET(0x190B0360)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GETGROUPNAMES_OFFSET UNITYSDK_OFFSET(0x190B1B00)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GETGROUPNUMBERS_OFFSET UNITYSDK_OFFSET(0x190B1BE0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_CACHESIZE_OFFSET UNITYSDK_OFFSET(0x190B0460)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_CAPNAMES_OFFSET UNITYSDK_OFFSET(0x190B10D0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_CAPS_OFFSET UNITYSDK_OFFSET(0x190B0690)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_MATCHTIMEOUT_OFFSET UNITYSDK_OFFSET(0x190B1AC0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_OPTIONS_OFFSET UNITYSDK_OFFSET(0x190B1AB0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_RIGHTTOLEFT_OFFSET UNITYSDK_OFFSET(0x190B1AD0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GROUPNAMEFROMNUMBER_OFFSET UNITYSDK_OFFSET(0x190B2010)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GROUPNUMBERFROMNAME_OFFSET UNITYSDK_OFFSET(0x190B2130)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_INITDEFAULTMATCHTIMEOUT_OFFSET UNITYSDK_OFFSET(0x190B0130)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_INITIALIZEREFERENCES_OFFSET UNITYSDK_OFFSET(0x190AF990)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ISMATCH_1_OFFSET UNITYSDK_OFFSET(0x190B2370)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ISMATCH_2_OFFSET UNITYSDK_OFFSET(0x190B22B0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ISMATCH_3_OFFSET UNITYSDK_OFFSET(0x190B23C0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ISMATCH_4_OFFSET UNITYSDK_OFFSET(0x190B2440)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ISMATCH_OFFSET UNITYSDK_OFFSET(0x190B2270)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_LOOKUPCACHEDANDUPDATE_OFFSET UNITYSDK_OFFSET(0x190AF730)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_1_OFFSET UNITYSDK_OFFSET(0x190B2BD0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_2_OFFSET UNITYSDK_OFFSET(0x190B2B00)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_3_OFFSET UNITYSDK_OFFSET(0x190B2C20)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_4_OFFSET UNITYSDK_OFFSET(0x190B2CB0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_OFFSET UNITYSDK_OFFSET(0x190B2AC0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_1_OFFSET UNITYSDK_OFFSET(0x190B28F0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_2_OFFSET UNITYSDK_OFFSET(0x190B2830)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_3_OFFSET UNITYSDK_OFFSET(0x190B2940)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_4_OFFSET UNITYSDK_OFFSET(0x190B29B0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_5_OFFSET UNITYSDK_OFFSET(0x190B2A20)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_OFFSET UNITYSDK_OFFSET(0x190B27F0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_10_OFFSET UNITYSDK_OFFSET(0x190B3410)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_11_OFFSET UNITYSDK_OFFSET(0x190B3390)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_1_OFFSET UNITYSDK_OFFSET(0x190B2E40)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_2_OFFSET UNITYSDK_OFFSET(0x190B2D80)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_3_OFFSET UNITYSDK_OFFSET(0x190B2EA0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_4_OFFSET UNITYSDK_OFFSET(0x190B30E0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_5_OFFSET UNITYSDK_OFFSET(0x190B2F00)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_6_OFFSET UNITYSDK_OFFSET(0x190B3170)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_7_OFFSET UNITYSDK_OFFSET(0x190B3260)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_8_OFFSET UNITYSDK_OFFSET(0x190B31F0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_9_OFFSET UNITYSDK_OFFSET(0x190B32E0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_OFFSET UNITYSDK_OFFSET(0x190B2D30)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_RUN_OFFSET UNITYSDK_OFFSET(0x190B24B0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SET_CACHESIZE_OFFSET UNITYSDK_OFFSET(0x190B0490)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SET_CAPNAMES_OFFSET UNITYSDK_OFFSET(0x190B1560)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SET_CAPS_OFFSET UNITYSDK_OFFSET(0x190B0B30)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_1_OFFSET UNITYSDK_OFFSET(0x190B35A0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_2_OFFSET UNITYSDK_OFFSET(0x190B3540)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_3_OFFSET UNITYSDK_OFFSET(0x190B3620)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_4_OFFSET UNITYSDK_OFFSET(0x190B3740)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_5_OFFSET UNITYSDK_OFFSET(0x190B36C0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_OFFSET UNITYSDK_OFFSET(0x190B34C0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SYSTEM_RUNTIME_SERIALIZATION_ISERIALIZABLE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x190AFFB0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_TOSTRING_OFFSET UNITYSDK_OFFSET(0x190B1AF0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_UNESCAPE_OFFSET UNITYSDK_OFFSET(0x190B03E0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_USEOPTIONC_OFFSET UNITYSDK_OFFSET(0x190B37E0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_USEOPTIONINVARIANT_OFFSET UNITYSDK_OFFSET(0x190B37D0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_USEOPTIONR_OFFSET UNITYSDK_OFFSET(0x190B1AE0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_VALIDATEMATCHTIMEOUT_OFFSET UNITYSDK_OFFSET(0x190AF690)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CCTOR_OFFSET UNITYSDK_OFFSET(0x190B37F0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_1_OFFSET UNITYSDK_OFFSET(0x190AF230)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_2_OFFSET UNITYSDK_OFFSET(0x190AF620)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_3_OFFSET UNITYSDK_OFFSET(0x190AF670)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_4_OFFSET UNITYSDK_OFFSET(0x190AF280)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_5_OFFSET UNITYSDK_OFFSET(0x190AFE90)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_OFFSET UNITYSDK_OFFSET(0x190AF200)
 
 namespace System::Text::RegularExpressions
 {
-	inline static constexpr unsigned int Regex_TypeDefinitionIndex = 2480;
+	inline static constexpr unsigned int Regex_TypeDefinitionIndex = 2718;
 
 	class Regex : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Generic::LinkedList_1<::System::Text::RegularExpressions::CachedCodeEntry*>** StaticGet_livecode()
 		{
-			return (::System::Collections::Generic::LinkedList_1<::System::Text::RegularExpressions::CachedCodeEntry*>**)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0x15620);
-		}
-		static ::System::TimeSpan* StaticGet_InfiniteMatchTimeout()
-		{
-			return (::System::TimeSpan*)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0x5280);
-		}
-		static ::System::TimeSpan* StaticGet_MaximumMatchTimeout()
-		{
-			return (::System::TimeSpan*)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0x5288);
+			return (::System::Collections::Generic::LinkedList_1<::System::Text::RegularExpressions::CachedCodeEntry*>**)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0x2620);
 		}
 		static ::System::Int32* StaticGet_cacheSize()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0x5290);
-		}
-		static ::System::TimeSpan* StaticGet_DefaultMatchTimeout()
-		{
-			return (::System::TimeSpan*)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0x5298);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0xFB0);
 		}
 		static ::System::TimeSpan* StaticGet_FallbackDefaultMatchTimeout()
 		{
-			return (::System::TimeSpan*)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0x52A0);
+			return (::System::TimeSpan*)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0xFB8);
 		}
+		static ::System::TimeSpan* StaticGet_MaximumMatchTimeout()
+		{
+			return (::System::TimeSpan*)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0xFC0);
+		}
+		static ::System::TimeSpan* StaticGet_DefaultMatchTimeout()
+		{
+			return (::System::TimeSpan*)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0xFC8);
+		}
+		static ::System::TimeSpan* StaticGet_InfiniteMatchTimeout()
+		{
+			return (::System::TimeSpan*)Il2CppClass::FromTypeDefinitionIndex(Regex_TypeDefinitionIndex)->GetStaticField(0xFD0);
+		}
+		// static const ::System::String* DefaultMatchTimeout_ConfigKeyName; // 0x0
+		// static const ::System::Int32 MaxOptionShift = 0xA; // 0x0
 		::System::Text::RegularExpressions::SharedReference* replref; // 0x10
-		::System::Collections::Hashtable* capnames; // 0x18
-		::System::String* pattern; // 0x20
-		::Il2CppArray<::System::String*>* capslist; // 0x28
-		::System::Text::RegularExpressions::ExclusiveReference* runnerref; // 0x30
+		::System::Text::RegularExpressions::RegexCode* code; // 0x18
+		::Il2CppArray<::System::String*>* capslist; // 0x20
+		::System::Collections::Hashtable* capnames; // 0x28
+		::System::Collections::Hashtable* caps; // 0x30
 		::System::Text::RegularExpressions::RegexRunnerFactory* factory; // 0x38
-		::System::Collections::Hashtable* caps; // 0x40
-		::System::Text::RegularExpressions::RegexCode* code; // 0x48
-		::System::TimeSpan internalMatchTimeout; // 0x50
-		::System::Boolean refsInitialized; // 0x58
-		::System::Text::RegularExpressions::RegexOptions roptions; // 0x5C
-		::System::Int32 capsize; // 0x60
+		::System::Text::RegularExpressions::ExclusiveReference* runnerref; // 0x40
+		::System::String* pattern; // 0x48
+		::System::Int32 capsize; // 0x50
+		::System::TimeSpan internalMatchTimeout; // 0x58
+		::System::Boolean refsInitialized; // 0x60
+		::System::Text::RegularExpressions::RegexOptions roptions; // 0x64
 
 		::System::Void _ctor()
 		{
@@ -128,14 +154,19 @@ namespace System::Text::RegularExpressions
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Text::RegularExpressions::RegexOptions))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_2_OFFSET))(this, pattern, options);
 		}
 
-		::System::Void _ctor_3(::System::String* pattern, ::System::Text::RegularExpressions::RegexOptions options, ::System::TimeSpan matchTimeout, ::System::Boolean useCache)
+		::System::Void _ctor_3(::System::String* pattern, ::System::Text::RegularExpressions::RegexOptions options, ::System::TimeSpan matchTimeout)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Text::RegularExpressions::RegexOptions, ::System::TimeSpan, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_3_OFFSET))(this, pattern, options, matchTimeout, useCache);
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Text::RegularExpressions::RegexOptions, ::System::TimeSpan))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_3_OFFSET))(this, pattern, options, matchTimeout);
 		}
 
-		::System::Void _ctor_4(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::Void _ctor_4(::System::String* pattern, ::System::Text::RegularExpressions::RegexOptions options, ::System::TimeSpan matchTimeout, ::System::Boolean useCache)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_4_OFFSET))(this, info, context);
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Text::RegularExpressions::RegexOptions, ::System::TimeSpan, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_4_OFFSET))(this, pattern, options, matchTimeout, useCache);
+		}
+
+		::System::Void _ctor_5(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX__CTOR_5_OFFSET))(this, info, context);
 		}
 
 		static ::System::Void _cctor()
@@ -163,6 +194,41 @@ namespace System::Text::RegularExpressions
 			return ((::System::String*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_ESCAPE_OFFSET))(str);
 		}
 
+		static ::System::String* Unescape(::System::String* str)
+		{
+			return ((::System::String*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_UNESCAPE_OFFSET))(str);
+		}
+
+		static ::System::Int32 get_CacheSize()
+		{
+			return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_CACHESIZE_OFFSET))();
+		}
+
+		static ::System::Void set_CacheSize(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SET_CACHESIZE_OFFSET))(value);
+		}
+
+		::System::Collections::IDictionary* get_Caps()
+		{
+			return ((::System::Collections::IDictionary*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_CAPS_OFFSET))(this);
+		}
+
+		::System::Void set_Caps(::System::Collections::IDictionary* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::IDictionary*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SET_CAPS_OFFSET))(this, value);
+		}
+
+		::System::Collections::IDictionary* get_CapNames()
+		{
+			return ((::System::Collections::IDictionary*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_CAPNAMES_OFFSET))(this);
+		}
+
+		::System::Void set_CapNames(::System::Collections::IDictionary* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::IDictionary*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SET_CAPNAMES_OFFSET))(this, value);
+		}
+
 		::System::Text::RegularExpressions::RegexOptions get_Options()
 		{
 			return ((::System::Text::RegularExpressions::RegexOptions(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GET_OPTIONS_OFFSET))(this);
@@ -181,6 +247,16 @@ namespace System::Text::RegularExpressions
 		::System::String* ToString()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_TOSTRING_OFFSET))(this);
+		}
+
+		::Il2CppArray<::System::String*>* GetGroupNames()
+		{
+			return ((::Il2CppArray<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GETGROUPNAMES_OFFSET))(this);
+		}
+
+		::Il2CppArray<::System::Int32>* GetGroupNumbers()
+		{
+			return ((::Il2CppArray<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_GETGROUPNUMBERS_OFFSET))(this);
 		}
 
 		::System::String* GroupNameFromNumber(::System::Int32 i)
@@ -223,19 +299,29 @@ namespace System::Text::RegularExpressions
 			return ((::System::Text::RegularExpressions::Match*(*)(::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_OFFSET))(input, pattern);
 		}
 
-		static ::System::Text::RegularExpressions::Match* Match_1(::System::String* input, ::System::String* pattern, ::System::Text::RegularExpressions::RegexOptions options, ::System::TimeSpan matchTimeout)
+		static ::System::Text::RegularExpressions::Match* Match_1(::System::String* input, ::System::String* pattern, ::System::Text::RegularExpressions::RegexOptions options)
 		{
-			return ((::System::Text::RegularExpressions::Match*(*)(::System::String*, ::System::String*, ::System::Text::RegularExpressions::RegexOptions, ::System::TimeSpan))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_1_OFFSET))(input, pattern, options, matchTimeout);
+			return ((::System::Text::RegularExpressions::Match*(*)(::System::String*, ::System::String*, ::System::Text::RegularExpressions::RegexOptions))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_1_OFFSET))(input, pattern, options);
 		}
 
-		::System::Text::RegularExpressions::Match* Match_2(::System::String* input)
+		static ::System::Text::RegularExpressions::Match* Match_2(::System::String* input, ::System::String* pattern, ::System::Text::RegularExpressions::RegexOptions options, ::System::TimeSpan matchTimeout)
 		{
-			return ((::System::Text::RegularExpressions::Match*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_2_OFFSET))(this, input);
+			return ((::System::Text::RegularExpressions::Match*(*)(::System::String*, ::System::String*, ::System::Text::RegularExpressions::RegexOptions, ::System::TimeSpan))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_2_OFFSET))(input, pattern, options, matchTimeout);
 		}
 
-		::System::Text::RegularExpressions::Match* Match_3(::System::String* input, ::System::Int32 startat)
+		::System::Text::RegularExpressions::Match* Match_3(::System::String* input)
 		{
-			return ((::System::Text::RegularExpressions::Match*(*)(::PVOID, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_3_OFFSET))(this, input, startat);
+			return ((::System::Text::RegularExpressions::Match*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_3_OFFSET))(this, input);
+		}
+
+		::System::Text::RegularExpressions::Match* Match_4(::System::String* input, ::System::Int32 startat)
+		{
+			return ((::System::Text::RegularExpressions::Match*(*)(::PVOID, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_4_OFFSET))(this, input, startat);
+		}
+
+		::System::Text::RegularExpressions::Match* Match_5(::System::String* input, ::System::Int32 beginning, ::System::Int32 length)
+		{
+			return ((::System::Text::RegularExpressions::Match*(*)(::PVOID, ::System::String*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCH_5_OFFSET))(this, input, beginning, length);
 		}
 
 		static ::System::Text::RegularExpressions::MatchCollection* Matches(::System::String* input, ::System::String* pattern)
@@ -243,19 +329,24 @@ namespace System::Text::RegularExpressions
 			return ((::System::Text::RegularExpressions::MatchCollection*(*)(::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_OFFSET))(input, pattern);
 		}
 
-		static ::System::Text::RegularExpressions::MatchCollection* Matches_1(::System::String* input, ::System::String* pattern, ::System::Text::RegularExpressions::RegexOptions options, ::System::TimeSpan matchTimeout)
+		static ::System::Text::RegularExpressions::MatchCollection* Matches_1(::System::String* input, ::System::String* pattern, ::System::Text::RegularExpressions::RegexOptions options)
 		{
-			return ((::System::Text::RegularExpressions::MatchCollection*(*)(::System::String*, ::System::String*, ::System::Text::RegularExpressions::RegexOptions, ::System::TimeSpan))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_1_OFFSET))(input, pattern, options, matchTimeout);
+			return ((::System::Text::RegularExpressions::MatchCollection*(*)(::System::String*, ::System::String*, ::System::Text::RegularExpressions::RegexOptions))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_1_OFFSET))(input, pattern, options);
 		}
 
-		::System::Text::RegularExpressions::MatchCollection* Matches_2(::System::String* input)
+		static ::System::Text::RegularExpressions::MatchCollection* Matches_2(::System::String* input, ::System::String* pattern, ::System::Text::RegularExpressions::RegexOptions options, ::System::TimeSpan matchTimeout)
 		{
-			return ((::System::Text::RegularExpressions::MatchCollection*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_2_OFFSET))(this, input);
+			return ((::System::Text::RegularExpressions::MatchCollection*(*)(::System::String*, ::System::String*, ::System::Text::RegularExpressions::RegexOptions, ::System::TimeSpan))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_2_OFFSET))(input, pattern, options, matchTimeout);
 		}
 
-		::System::Text::RegularExpressions::MatchCollection* Matches_3(::System::String* input, ::System::Int32 startat)
+		::System::Text::RegularExpressions::MatchCollection* Matches_3(::System::String* input)
 		{
-			return ((::System::Text::RegularExpressions::MatchCollection*(*)(::PVOID, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_3_OFFSET))(this, input, startat);
+			return ((::System::Text::RegularExpressions::MatchCollection*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_3_OFFSET))(this, input);
+		}
+
+		::System::Text::RegularExpressions::MatchCollection* Matches_4(::System::String* input, ::System::Int32 startat)
+		{
+			return ((::System::Text::RegularExpressions::MatchCollection*(*)(::PVOID, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_MATCHES_4_OFFSET))(this, input, startat);
 		}
 
 		static ::System::String* Replace(::System::String* input, ::System::String* pattern, ::System::String* replacement)
@@ -293,19 +384,29 @@ namespace System::Text::RegularExpressions
 			return ((::System::String*(*)(::System::String*, ::System::String*, ::System::Text::RegularExpressions::MatchEvaluator*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_6_OFFSET))(input, pattern, evaluator);
 		}
 
-		static ::System::String* Replace_7(::System::String* input, ::System::String* pattern, ::System::Text::RegularExpressions::MatchEvaluator* evaluator, ::System::Text::RegularExpressions::RegexOptions options, ::System::TimeSpan matchTimeout)
+		static ::System::String* Replace_7(::System::String* input, ::System::String* pattern, ::System::Text::RegularExpressions::MatchEvaluator* evaluator, ::System::Text::RegularExpressions::RegexOptions options)
 		{
-			return ((::System::String*(*)(::System::String*, ::System::String*, ::System::Text::RegularExpressions::MatchEvaluator*, ::System::Text::RegularExpressions::RegexOptions, ::System::TimeSpan))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_7_OFFSET))(input, pattern, evaluator, options, matchTimeout);
+			return ((::System::String*(*)(::System::String*, ::System::String*, ::System::Text::RegularExpressions::MatchEvaluator*, ::System::Text::RegularExpressions::RegexOptions))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_7_OFFSET))(input, pattern, evaluator, options);
 		}
 
-		::System::String* Replace_8(::System::String* input, ::System::Text::RegularExpressions::MatchEvaluator* evaluator)
+		static ::System::String* Replace_8(::System::String* input, ::System::String* pattern, ::System::Text::RegularExpressions::MatchEvaluator* evaluator, ::System::Text::RegularExpressions::RegexOptions options, ::System::TimeSpan matchTimeout)
 		{
-			return ((::System::String*(*)(::PVOID, ::System::String*, ::System::Text::RegularExpressions::MatchEvaluator*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_8_OFFSET))(this, input, evaluator);
+			return ((::System::String*(*)(::System::String*, ::System::String*, ::System::Text::RegularExpressions::MatchEvaluator*, ::System::Text::RegularExpressions::RegexOptions, ::System::TimeSpan))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_8_OFFSET))(input, pattern, evaluator, options, matchTimeout);
 		}
 
-		::System::String* Replace_9(::System::String* input, ::System::Text::RegularExpressions::MatchEvaluator* evaluator, ::System::Int32 count, ::System::Int32 startat)
+		::System::String* Replace_9(::System::String* input, ::System::Text::RegularExpressions::MatchEvaluator* evaluator)
 		{
-			return ((::System::String*(*)(::PVOID, ::System::String*, ::System::Text::RegularExpressions::MatchEvaluator*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_9_OFFSET))(this, input, evaluator, count, startat);
+			return ((::System::String*(*)(::PVOID, ::System::String*, ::System::Text::RegularExpressions::MatchEvaluator*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_9_OFFSET))(this, input, evaluator);
+		}
+
+		::System::String* Replace_10(::System::String* input, ::System::Text::RegularExpressions::MatchEvaluator* evaluator, ::System::Int32 count)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::String*, ::System::Text::RegularExpressions::MatchEvaluator*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_10_OFFSET))(this, input, evaluator, count);
+		}
+
+		::System::String* Replace_11(::System::String* input, ::System::Text::RegularExpressions::MatchEvaluator* evaluator, ::System::Int32 count, ::System::Int32 startat)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::String*, ::System::Text::RegularExpressions::MatchEvaluator*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_REPLACE_11_OFFSET))(this, input, evaluator, count, startat);
 		}
 
 		static ::Il2CppArray<::System::String*>* Split(::System::String* input, ::System::String* pattern)
@@ -328,9 +429,14 @@ namespace System::Text::RegularExpressions
 			return ((::Il2CppArray<::System::String*>*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_3_OFFSET))(this, input);
 		}
 
-		::Il2CppArray<::System::String*>* Split_4(::System::String* input, ::System::Int32 count, ::System::Int32 startat)
+		::Il2CppArray<::System::String*>* Split_4(::System::String* input, ::System::Int32 count)
 		{
-			return ((::Il2CppArray<::System::String*>*(*)(::PVOID, ::System::String*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_4_OFFSET))(this, input, count, startat);
+			return ((::Il2CppArray<::System::String*>*(*)(::PVOID, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_4_OFFSET))(this, input, count);
+		}
+
+		::Il2CppArray<::System::String*>* Split_5(::System::String* input, ::System::Int32 count, ::System::Int32 startat)
+		{
+			return ((::Il2CppArray<::System::String*>*(*)(::PVOID, ::System::String*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_SPLIT_5_OFFSET))(this, input, count, startat);
 		}
 
 		::System::Void InitializeReferences()
@@ -353,6 +459,11 @@ namespace System::Text::RegularExpressions
 			return ((::System::Text::RegularExpressions::CachedCodeEntry*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_CACHECODE_OFFSET))(this, key);
 		}
 
+		::System::Boolean UseOptionC()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_USEOPTIONC_OFFSET))(this);
+		}
+
 		::System::Boolean UseOptionR()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_USEOPTIONR_OFFSET))(this);
@@ -361,6 +472,21 @@ namespace System::Text::RegularExpressions
 		::System::Boolean UseOptionInvariant()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_USEOPTIONINVARIANT_OFFSET))(this);
+		}
+
+		static ::System::Void CompileToAssembly(::Il2CppArray<::System::Text::RegularExpressions::RegexCompilationInfo*>* regexinfos, ::System::Reflection::AssemblyName* assemblyname)
+		{
+			return ((::System::Void(*)(::Il2CppArray<::System::Text::RegularExpressions::RegexCompilationInfo*>*, ::System::Reflection::AssemblyName*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_COMPILETOASSEMBLY_OFFSET))(regexinfos, assemblyname);
+		}
+
+		static ::System::Void CompileToAssembly_1(::Il2CppArray<::System::Text::RegularExpressions::RegexCompilationInfo*>* regexinfos, ::System::Reflection::AssemblyName* assemblyname, ::Il2CppArray<::System::Reflection::Emit::CustomAttributeBuilder*>* attributes)
+		{
+			return ((::System::Void(*)(::Il2CppArray<::System::Text::RegularExpressions::RegexCompilationInfo*>*, ::System::Reflection::AssemblyName*, ::Il2CppArray<::System::Reflection::Emit::CustomAttributeBuilder*>*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_COMPILETOASSEMBLY_1_OFFSET))(regexinfos, assemblyname, attributes);
+		}
+
+		static ::System::Void CompileToAssembly_2(::Il2CppArray<::System::Text::RegularExpressions::RegexCompilationInfo*>* regexinfos, ::System::Reflection::AssemblyName* assemblyname, ::Il2CppArray<::System::Reflection::Emit::CustomAttributeBuilder*>* attributes, ::System::String* resourceFile)
+		{
+			return ((::System::Void(*)(::Il2CppArray<::System::Text::RegularExpressions::RegexCompilationInfo*>*, ::System::Reflection::AssemblyName*, ::Il2CppArray<::System::Reflection::Emit::CustomAttributeBuilder*>*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_REGULAREXPRESSIONS_REGEX_COMPILETOASSEMBLY_2_OFFSET))(regexinfos, assemblyname, attributes, resourceFile);
 		}
 	};
 }

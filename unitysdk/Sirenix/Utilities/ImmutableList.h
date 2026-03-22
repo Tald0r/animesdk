@@ -1,0 +1,188 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace System { class Array; }
+namespace System::Collections { class IEnumerator; }
+namespace System::Collections { class IList; }
+namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
+
+#define SIRENIX_UTILITIES_IMMUTABLELIST_CONTAINS_OFFSET UNITYSDK_OFFSET(0x1A8EB660)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_COPYTO_1_OFFSET UNITYSDK_OFFSET(0x1A8EB7D0)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_COPYTO_OFFSET UNITYSDK_OFFSET(0x1A8EB720)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1A8EB880)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x1A8EB180)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_GET_ISFIXEDSIZE_OFFSET UNITYSDK_OFFSET(0x1A8EB230)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x1A8EB240)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x1A8EB250)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x1A8EB5B0)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x1A8EB300)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_INDEXOF_OFFSET UNITYSDK_OFFSET(0x1A8EBBD0)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ICOLLECTION_SYSTEM_OBJECT__ADD_OFFSET UNITYSDK_OFFSET(0x1A8EBD30)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ICOLLECTION_SYSTEM_OBJECT__CLEAR_OFFSET UNITYSDK_OFFSET(0x1A8EBD80)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ICOLLECTION_SYSTEM_OBJECT__REMOVE_OFFSET UNITYSDK_OFFSET(0x1A8EBDD0)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_IENUMERABLE_SYSTEM_OBJECT__GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1A8EB9E0)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ILIST_SYSTEM_OBJECT__GET_ITEM_OFFSET UNITYSDK_OFFSET(0x1A8EB4B0)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ILIST_SYSTEM_OBJECT__INSERT_OFFSET UNITYSDK_OFFSET(0x1A8EBCE0)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ILIST_SYSTEM_OBJECT__REMOVEAT_OFFSET UNITYSDK_OFFSET(0x1A8EBC90)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ILIST_SYSTEM_OBJECT__SET_ITEM_OFFSET UNITYSDK_OFFSET(0x1A8EB560)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_IENUMERABLE_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1A8EB930)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_ADD_OFFSET UNITYSDK_OFFSET(0x1A8EBA40)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_CLEAR_OFFSET UNITYSDK_OFFSET(0x1A8EBA90)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x1A8EB3B0)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_INSERT_OFFSET UNITYSDK_OFFSET(0x1A8EBAE0)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_REMOVEAT_OFFSET UNITYSDK_OFFSET(0x1A8EBB80)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_REMOVE_OFFSET UNITYSDK_OFFSET(0x1A8EBB30)
+#define SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_SET_ITEM_OFFSET UNITYSDK_OFFSET(0x1A8EB460)
+#define SIRENIX_UTILITIES_IMMUTABLELIST__CTOR_OFFSET UNITYSDK_OFFSET(0x1A8EB110)
+
+namespace Sirenix::Utilities
+{
+	inline static constexpr unsigned int ImmutableList_TypeDefinitionIndex = 6445;
+
+	class ImmutableList : public ::System::Object
+	{
+	public:
+		::System::Collections::IList* innerList; // 0x10
+
+		::System::Void _ctor(::System::Collections::IList* innerList)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::IList*))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST__CTOR_OFFSET))(this, innerList);
+		}
+
+		::System::Int32 get_Count()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_GET_COUNT_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsFixedSize()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_GET_ISFIXEDSIZE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsReadOnly()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_GET_ISREADONLY_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsSynchronized()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_GET_ISSYNCHRONIZED_OFFSET))(this);
+		}
+
+		::System::Object* get_SyncRoot()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_GET_SYNCROOT_OFFSET))(this);
+		}
+
+		::System::Object* System_Collections_IList_get_Item(::System::Int32 index)
+		{
+			return ((::System::Object*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_GET_ITEM_OFFSET))(this, index);
+		}
+
+		::System::Void System_Collections_IList_set_Item(::System::Int32 index, ::System::Object* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_SET_ITEM_OFFSET))(this, index, value);
+		}
+
+		::System::Object* System_Collections_Generic_IList_System_Object__get_Item(::System::Int32 index)
+		{
+			return ((::System::Object*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ILIST_SYSTEM_OBJECT__GET_ITEM_OFFSET))(this, index);
+		}
+
+		::System::Void System_Collections_Generic_IList_System_Object__set_Item(::System::Int32 index, ::System::Object* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ILIST_SYSTEM_OBJECT__SET_ITEM_OFFSET))(this, index, value);
+		}
+
+		::System::Object* get_Item(::System::Int32 index)
+		{
+			return ((::System::Object*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_GET_ITEM_OFFSET))(this, index);
+		}
+
+		::System::Boolean Contains(::System::Object* value)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_CONTAINS_OFFSET))(this, value);
+		}
+
+		::System::Void CopyTo(::Il2CppArray<::System::Object*>* array, ::System::Int32 arrayIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Object*>*, ::System::Int32))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_COPYTO_OFFSET))(this, array, arrayIndex);
+		}
+
+		::System::Void CopyTo_1(::System::Array* array, ::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Array*, ::System::Int32))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_COPYTO_1_OFFSET))(this, array, index);
+		}
+
+		::System::Collections::IEnumerator* GetEnumerator()
+		{
+			return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_GETENUMERATOR_OFFSET))(this);
+		}
+
+		::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator()
+		{
+			return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_IENUMERABLE_GETENUMERATOR_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IEnumerator_1<::System::Object*>* System_Collections_Generic_IEnumerable_System_Object__GetEnumerator()
+		{
+			return ((::System::Collections::Generic::IEnumerator_1<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_IENUMERABLE_SYSTEM_OBJECT__GETENUMERATOR_OFFSET))(this);
+		}
+
+		::System::Int32 System_Collections_IList_Add(::System::Object* value)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_ADD_OFFSET))(this, value);
+		}
+
+		::System::Void System_Collections_IList_Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_CLEAR_OFFSET))(this);
+		}
+
+		::System::Void System_Collections_IList_Insert(::System::Int32 index, ::System::Object* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_INSERT_OFFSET))(this, index, value);
+		}
+
+		::System::Void System_Collections_IList_Remove(::System::Object* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_REMOVE_OFFSET))(this, value);
+		}
+
+		::System::Void System_Collections_IList_RemoveAt(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_ILIST_REMOVEAT_OFFSET))(this, index);
+		}
+
+		::System::Int32 IndexOf(::System::Object* value)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_INDEXOF_OFFSET))(this, value);
+		}
+
+		::System::Void System_Collections_Generic_IList_System_Object__RemoveAt(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ILIST_SYSTEM_OBJECT__REMOVEAT_OFFSET))(this, index);
+		}
+
+		::System::Void System_Collections_Generic_IList_System_Object__Insert(::System::Int32 index, ::System::Object* item)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ILIST_SYSTEM_OBJECT__INSERT_OFFSET))(this, index, item);
+		}
+
+		::System::Void System_Collections_Generic_ICollection_System_Object__Add(::System::Object* item)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ICOLLECTION_SYSTEM_OBJECT__ADD_OFFSET))(this, item);
+		}
+
+		::System::Void System_Collections_Generic_ICollection_System_Object__Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ICOLLECTION_SYSTEM_OBJECT__CLEAR_OFFSET))(this);
+		}
+
+		::System::Boolean System_Collections_Generic_ICollection_System_Object__Remove(::System::Object* item)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SIRENIX_UTILITIES_IMMUTABLELIST_SYSTEM_COLLECTIONS_GENERIC_ICOLLECTION_SYSTEM_OBJECT__REMOVE_OFFSET))(this, item);
+		}
+	};
+}

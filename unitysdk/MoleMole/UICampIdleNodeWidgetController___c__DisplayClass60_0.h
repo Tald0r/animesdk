@@ -1,0 +1,37 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_1685EC66FBD28897;
+
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___C__DISPLAYCLASS60_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBF49B50)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___C__DISPLAYCLASS60_0__REFRESHEXPNODE_B__0_OFFSET UNITYSDK_OFFSET(0xBF49B60)
+#define MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___C__DISPLAYCLASS60_0__REFRESHEXPNODE_B__1_OFFSET UNITYSDK_OFFSET(0xBF49CA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICampIdleNodeWidgetController___c__DisplayClass60_0_TypeDefinitionIndex = 68380;
+
+	class UICampIdleNodeWidgetController___c__DisplayClass60_0 : public ::System::Object
+	{
+	public:
+		::System::Boolean normalTaken; // 0x10
+		::System::Boolean upTaken; // 0x11
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___C__DISPLAYCLASS60_0__CTOR_OFFSET))(this);
+		}
+
+		::Class_1_1685EC66FBD28897* _RefreshExpNode_b__0(::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00 x)
+		{
+			return ((::Class_1_1685EC66FBD28897*(*)(::PVOID, ::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___C__DISPLAYCLASS60_0__REFRESHEXPNODE_B__0_OFFSET))(this, x);
+		}
+
+		::Class_1_1685EC66FBD28897* _RefreshExpNode_b__1(::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00 x)
+		{
+			return ((::Class_1_1685EC66FBD28897*(*)(::PVOID, ::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAMPIDLENODEWIDGETCONTROLLER___C__DISPLAYCLASS60_0__REFRESHEXPNODE_B__1_OFFSET))(this, x);
+		}
+	};
+}

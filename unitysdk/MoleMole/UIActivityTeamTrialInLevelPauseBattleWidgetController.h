@@ -1,0 +1,76 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIInLevelPauseBattleInfoWidgetController.h"
+
+class Class_1_1685EC66FBD28897;
+namespace MoleMole { class UIActivityTeamTrialInLevelPauseBuffInfoWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIInLevelPauseAdditionalWidgetController; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD860490)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER_REFRESHACTCHALLENGELIST_OFFSET UNITYSDK_OFFSET(0xC098200)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER_REFRESHACTVIEW_OFFSET UNITYSDK_OFFSET(0xD860680)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER_REFRESHSHOWREWARDLIST_OFFSET UNITYSDK_OFFSET(0xC098910)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC098E40)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC098E50)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER___BASE_REFRESHACTCHALLENGELIST_OFFSET UNITYSDK_OFFSET(0xC098EF0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER___BASE_REFRESHACTVIEW_OFFSET UNITYSDK_OFFSET(0xC098F00)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER___BASE_REFRESHSHOWREWARDLIST_OFFSET UNITYSDK_OFFSET(0xC098F10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityTeamTrialInLevelPauseBattleWidgetController_TypeDefinitionIndex = 66521;
+
+	class UIActivityTeamTrialInLevelPauseBattleWidgetController : public ::MoleMole::UIInLevelPauseBattleInfoWidgetController
+	{
+	public:
+		::MoleMole::UIActivityTeamTrialInLevelPauseBuffInfoWidgetController* _buffInfoWidgetController; // 0x2C8
+		::MoleMole::UIInLevelPauseAdditionalWidgetController* _additionalWidgetController; // 0x2D0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void RefreshACTView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER_REFRESHACTVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshACTChallengeList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER_REFRESHACTCHALLENGELIST_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* RefreshShowRewardList()
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER_REFRESHSHOWREWARDLIST_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_RefreshACTChallengeList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER___BASE_REFRESHACTCHALLENGELIST_OFFSET))(this);
+		}
+
+		::System::Void __base_RefreshACTView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER___BASE_REFRESHACTVIEW_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* __base_RefreshShowRewardList()
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALINLEVELPAUSEBATTLEWIDGETCONTROLLER___BASE_REFRESHSHOWREWARDLIST_OFFSET))(this);
+		}
+	};
+}

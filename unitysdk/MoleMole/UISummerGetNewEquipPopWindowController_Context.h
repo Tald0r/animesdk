@@ -1,0 +1,21 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIControllerContextBase.h"
+
+#define MOLEMOLE_UISUMMERGETNEWEQUIPPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCA78590)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISummerGetNewEquipPopWindowController_Context_TypeDefinitionIndex = 63612;
+
+	class UISummerGetNewEquipPopWindowController_Context : public ::MoleMole::UIControllerContextBase
+	{
+	public:
+		::System::Int32 EquipID; // 0x28
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUMMERGETNEWEQUIPPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET))(this);
+		}
+	};
+}

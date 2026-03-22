@@ -1,0 +1,54 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+class Class_1_13F13E462CA09034;
+namespace MoleMole { class TurnBattleUnitBase; }
+namespace System { class Object; }
+
+#define CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B_DISPOSE_OFFSET UNITYSDK_OFFSET(0x3567B0)
+#define CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x356730)
+#define CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x356710)
+#define CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B_RESET_OFFSET UNITYSDK_OFFSET(0x356720)
+#define CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x356740)
+#define CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B__CTOR_OFFSET UNITYSDK_OFFSET(0x3566E0)
+
+inline static constexpr unsigned int Class_1_13F13E462CA09034_Struct_2_D4A8FEA40B5B5F9B_TypeDefinitionIndex = 57515;
+
+struct alignas(8) Class_1_13F13E462CA09034_Struct_2_D4A8FEA40B5B5F9B
+{
+	::System::Int32 Field_2_0; // 0x10
+	::Class_1_13F13E462CA09034* Field_2_1; // 0x18
+	::MoleMole::TurnBattleUnitBase* Field_2_2; // 0x20
+	::System::Int32 Field_2_3; // 0x28
+
+	::System::Void _ctor(::Class_1_13F13E462CA09034* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_13F13E462CA09034*))((::PBYTE)hIl2Cpp + CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B__CTOR_OFFSET))(this, a1);
+	}
+
+	::System::Boolean MoveNext()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B_MOVENEXT_OFFSET))(this);
+	}
+
+	::System::Void Reset()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B_RESET_OFFSET))(this);
+	}
+
+	::MoleMole::TurnBattleUnitBase* get_Current()
+	{
+		return ((::MoleMole::TurnBattleUnitBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B_GET_CURRENT_OFFSET))(this);
+	}
+
+	::System::Object* System_Collections_IEnumerator_get_Current()
+	{
+		return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET))(this);
+	}
+
+	::System::Void Dispose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_13F13E462CA09034_STRUCT_2_D4A8FEA40B5B5F9B_DISPOSE_OFFSET))(this);
+	}
+};

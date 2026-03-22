@@ -1,0 +1,59 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
+
+#define MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO_ONPOSTGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x8F74220)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x8F740C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x8F743B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0x8F743E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO__REGISTERPORTS_B__3_1_OFFSET UNITYSDK_OFFSET(0x8F743F0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO__REGISTERPORTS_B__3_2_OFFSET UNITYSDK_OFFSET(0x8F74400)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO___BASE_ONPOSTGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x8F74410)
+
+namespace MoleMole::FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int LDQueryLevelTypeInfo_TypeDefinitionIndex = 66142;
+
+	class LDQueryLevelTypeInfo : public ::FlowCanvas::Nodes::FlowControlNode
+	{
+	public:
+		::System::Int32 questSubType; // 0xA8
+		::System::Int32 questType; // 0xAC
+		::System::Int32 sceneType; // 0xB0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO__CTOR_OFFSET))(this);
+		}
+
+		::System::Void RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO_REGISTERPORTS_OFFSET))(this);
+		}
+
+		::System::Void OnPostGraphStarted()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO_ONPOSTGRAPHSTARTED_OFFSET))(this);
+		}
+
+		::System::Int32 _RegisterPorts_b__3_0()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO__REGISTERPORTS_B__3_0_OFFSET))(this);
+		}
+
+		::System::Int32 _RegisterPorts_b__3_1()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO__REGISTERPORTS_B__3_1_OFFSET))(this);
+		}
+
+		::System::Int32 _RegisterPorts_b__3_2()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO__REGISTERPORTS_B__3_2_OFFSET))(this);
+		}
+
+		::System::Void __base_OnPostGraphStarted()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDQUERYLEVELTYPEINFO___BASE_ONPOSTGRAPHSTARTED_OFFSET))(this);
+		}
+	};
+}

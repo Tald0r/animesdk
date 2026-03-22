@@ -1,0 +1,287 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_208CC9941471731A_457;
+class Class_2_79F6D62CE30E3F8E_106;
+class MonoUIVHSDialogParam;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIVHSStoreDialogContext; }
+namespace MoleMole { class UIVHSStoreDialogV2PopWindowController_Logic; }
+namespace MoleMole { class UIVHSStoreDropDownBtnWidgetController; }
+namespace MoleMole { class UIVHSStorePicBtnWidgetController_Data; }
+namespace MoleMole { class UIVHSStoreTypeV2WidgetController; }
+namespace MoleMole { class UIVHSStoreVHSDetailWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class HashSet_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_BINDEVENT_BUTTON_OFFSET UNITYSDK_OFFSET(0x93882E0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_BINDEVENT_NOTIFY_OFFSET UNITYSDK_OFFSET(0x9388A30)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_BINDEVENT_SCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x9388650)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_BUILDUNLOCKEDCOLLECTIONS_OFFSET UNITYSDK_OFFSET(0x938AA00)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_GET_CURRENTFOCUSVHSCOLLECTIONID_OFFSET UNITYSDK_OFFSET(0x938A870)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_GET_TYPESELECTHEIGHT_OFFSET UNITYSDK_OFFSET(0x938B1B0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_GET_TYPESELECTWIDTH_OFFSET UNITYSDK_OFFSET(0x938B110)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x9387F50)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_INITDATA_OFFSET UNITYSDK_OFFSET(0x9388D60)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0x93898B0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ISSELECTEDVHSCOLLECTION_OFFSET UNITYSDK_OFFSET(0x938A170)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ISSELECTFULLVHS_OFFSET UNITYSDK_OFFSET(0x938A2A0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONAFTERCURRENTSELECTCOLLECTIONIDCHANGED_OFFSET UNITYSDK_OFFSET(0x9388BA0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONAFTERVHSSELECTCHANGE_OFFSET UNITYSDK_OFFSET(0x938A430)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONAUTOSELECTBTNCLICK_OFFSET UNITYSDK_OFFSET(0x938AFE0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9387F60)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x9389F50)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x9389D50)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONOKBTNCLICK_OFFSET UNITYSDK_OFFSET(0x938AF60)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x9389C50)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9389CC0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9388000)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9388800)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_REFRESHOKBTN_OFFSET UNITYSDK_OFFSET(0x938A4A0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_REFRESHTAGSPREVIEW_OFFSET UNITYSDK_OFFSET(0x938A980)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_SELECTVHSCOLLECTION_OFFSET UNITYSDK_OFFSET(0x938A800)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_SETOPTIONTEXT_OFFSET UNITYSDK_OFFSET(0x938A0E0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__BINDEVENT_NOTIFY_B__13_0_OFFSET UNITYSDK_OFFSET(0x938B740)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__BINDEVENT_NOTIFY_B__13_1_OFFSET UNITYSDK_OFFSET(0x938B8D0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x938B250)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__INITDATA_G__GETALLLEVELTAG_21_1_OFFSET UNITYSDK_OFFSET(0x938BA60)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__ONUIINIT_B__3_0_OFFSET UNITYSDK_OFFSET(0x938B450)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__ONUIINIT_B__3_1_OFFSET UNITYSDK_OFFSET(0x938B6B0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x938BAE0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x938BB50)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x938BBD0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x938BC00)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x938BC10)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x938BC20)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x938BC30)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVHSStoreDialogV2PopWindowController_TypeDefinitionIndex = 74536;
+
+	class UIVHSStoreDialogV2PopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Int32 TypeSelectOffsetX = 0x9; // 0x0
+		// static const ::System::Int32 TypeSelectOffsetY = 0x8; // 0x0
+		::MoleMole::UIVHSStoreDialogContext* _context; // 0x2F8
+		::System::Collections::Generic::HashSet_1<::System::Int32>* _filterTag; // 0x300
+		::System::Collections::Generic::HashSet_1<::System::Int32>* _filterTagLv; // 0x308
+		::Class_2_79F6D62CE30E3F8E_106* _view; // 0x310
+		::System::Collections::Generic::List_1<::MoleMole::UIVHSStorePicBtnWidgetController_Data*>* _unlockedCollectionsV2; // 0x318
+		::MonoUIVHSDialogParam* _param; // 0x320
+		::System::Collections::Generic::List_1<::MoleMole::UIVHSStoreTypeV2WidgetController*>* _childTypeControllers; // 0x328
+		::MoleMole::UIVHSStoreVHSDetailWidgetController* _vhsDetailWidget; // 0x330
+		::MoleMole::UIVHSStoreDropDownBtnWidgetController* _dropDownBtnWidget; // 0x338
+		::MoleMole::UIVHSStoreDialogV2PopWindowController_Logic* _logic; // 0x340
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void SetOptionText(::System::String* key)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_SETOPTIONTEXT_OFFSET))(this, key);
+		}
+
+		::System::Boolean IsSelectedVHSCollection(::System::Int32 vhsCollectionID)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ISSELECTEDVHSCOLLECTION_OFFSET))(this, vhsCollectionID);
+		}
+
+		::System::Boolean IsSelectFullVHS()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ISSELECTFULLVHS_OFFSET))(this);
+		}
+
+		::System::Void BindEvent_Button()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_BINDEVENT_BUTTON_OFFSET))(this);
+		}
+
+		::System::Void BindEvent_Notify()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_BINDEVENT_NOTIFY_OFFSET))(this);
+		}
+
+		::System::Void OnAfterVhsSelectChange(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONAFTERVHSSELECTCHANGE_OFFSET))(this, obj);
+		}
+
+		::System::Void BindEvent_ScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_BINDEVENT_SCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void SelectVHSCollection(::System::Int32 dataIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_SELECTVHSCOLLECTION_OFFSET))(this, dataIndex);
+		}
+
+		::System::Void OnAfterCurrentSelectCollectionIDChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONAFTERCURRENTSELECTCOLLECTIONIDCHANGED_OFFSET))(this);
+		}
+
+		::System::Void RefreshOkBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_REFRESHOKBTN_OFFSET))(this);
+		}
+
+		::System::Void RefreshTagsPreview()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_REFRESHTAGSPREVIEW_OFFSET))(this);
+		}
+
+		::System::Void BuildUnlockedCollections()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_BUILDUNLOCKEDCOLLECTIONS_OFFSET))(this);
+		}
+
+		::System::Void InitData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_INITDATA_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnOKBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONOKBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnAutoSelectBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_ONAUTOSELECTBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Int32 get_currentFocusVHSCollectionID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_GET_CURRENTFOCUSVHSCOLLECTIONID_OFFSET))(this);
+		}
+
+		::System::Int32 get_TypeSelectWidth()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_GET_TYPESELECTWIDTH_OFFSET))(this);
+		}
+
+		::System::Int32 get_TypeSelectHeight()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER_GET_TYPESELECTHEIGHT_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__3_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__ONUIINIT_B__3_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__3_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__ONUIINIT_B__3_1_OFFSET))(this);
+		}
+
+		::System::Void _BindEvent_Notify_b__13_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__BINDEVENT_NOTIFY_B__13_0_OFFSET))(this, args);
+		}
+
+		::System::Void _BindEvent_Notify_b__13_1(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__BINDEVENT_NOTIFY_B__13_1_OFFSET))(this, args);
+		}
+
+		static ::System::Int32 _InitData_g__GetAllLevelTag_21_1(::Class_2_208CC9941471731A_457* collectionTemplateExt)
+		{
+			return ((::System::Int32(*)(::Class_2_208CC9941471731A_457*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER__INITDATA_G__GETALLLEVELTAG_21_1_OFFSET))(collectionTemplateExt);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

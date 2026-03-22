@@ -1,0 +1,31 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace MoleMole { class UIHadalZone_LayerItemRowV2WidgetController; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___C__DISPLAYCLASS42_0__CTOR_OFFSET UNITYSDK_OFFSET(0x89264D0)
+#define MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___C__DISPLAYCLASS42_0___UNLOCLAYERCOROUTINE_B__0_OFFSET UNITYSDK_OFFSET(0x89264E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHadalZone_LayerItemRowV2WidgetController___c__DisplayClass42_0_TypeDefinitionIndex = 66681;
+
+	class UIHadalZone_LayerItemRowV2WidgetController___c__DisplayClass42_0 : public ::System::Object
+	{
+	public:
+		::UnityEngine::GameObject* lockStObject; // 0x10
+		::MoleMole::UIHadalZone_LayerItemRowV2WidgetController* __4__this; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___C__DISPLAYCLASS42_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void __UnlocLayerCoroutine_b__0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___C__DISPLAYCLASS42_0___UNLOCLAYERCOROUTINE_B__0_OFFSET))(this);
+		}
+	};
+}

@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK::PluginUI
 {
-	inline static constexpr unsigned int PluginUIBridgeNotifyMessageId_TypeDefinitionIndex = 7648;
+	inline static constexpr unsigned int PluginUIBridgeNotifyMessageId_TypeDefinitionIndex = 18789;
 
 	enum class PluginUIBridgeNotifyMessageId : ::System::Int32
 	{

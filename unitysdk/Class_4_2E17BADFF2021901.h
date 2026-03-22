@@ -1,0 +1,76 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_3_95932C222EBC5BA5.h"
+#include "unitysdk/Enum_3_B3B64B0D3B1029C9.h"
+#include "unitysdk/MoleMole/HollowChessboard/HollowCell.h"
+
+#define CLASS_4_2E17BADFF2021901_GETCLASSID_OFFSET UNITYSDK_OFFSET(0x662AD90)
+#define CLASS_4_2E17BADFF2021901_METHOD_4_2038CB603E452C23_OFFSET UNITYSDK_OFFSET(0x662AFD0)
+#define CLASS_4_2E17BADFF2021901_METHOD_4_3DACC45AC8150727_OFFSET UNITYSDK_OFFSET(0x662AF90)
+#define CLASS_4_2E17BADFF2021901_METHOD_4_944725D8BEE125D5_OFFSET UNITYSDK_OFFSET(0x662AFC0)
+#define CLASS_4_2E17BADFF2021901_METHOD_4_A1D8CD775DEC3C21_OFFSET UNITYSDK_OFFSET(0x662B0D0)
+#define CLASS_4_2E17BADFF2021901_METHOD_4_A96DCA30C6927810_OFFSET UNITYSDK_OFFSET(0x662B130)
+#define CLASS_4_2E17BADFF2021901_METHOD_4_AF081070273CE162_OFFSET UNITYSDK_OFFSET(0x662AFA0)
+#define CLASS_4_2E17BADFF2021901_ONCLEAN_OFFSET UNITYSDK_OFFSET(0x662AE70)
+#define CLASS_4_2E17BADFF2021901__CCTOR_OFFSET UNITYSDK_OFFSET(0x662ADF0)
+#define CLASS_4_2E17BADFF2021901__CTOR_OFFSET UNITYSDK_OFFSET(0x662AF20)
+
+inline static constexpr unsigned int Class_4_2E17BADFF2021901_TypeDefinitionIndex = 47884;
+
+class Class_4_2E17BADFF2021901 : public ::Class_3_95932C222EBC5BA5
+{
+public:
+	// static const ::System::Int32 Field_4_0 = 0x101; // 0x0
+	::Enum_3_B3B64B0D3B1029C9 Field_4_1; // 0x50
+	::MoleMole::HollowChessboard::HollowCell Field_4_2; // 0x54
+
+	static ::System::Void _cctor()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_4_2E17BADFF2021901__CCTOR_OFFSET))();
+	}
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_2E17BADFF2021901__CTOR_OFFSET))(this);
+	}
+
+	::System::Int32 GetClassID()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_2E17BADFF2021901_GETCLASSID_OFFSET))(this);
+	}
+
+	::System::Void OnClean()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_2E17BADFF2021901_ONCLEAN_OFFSET))(this);
+	}
+
+	::System::Void Method_4_3DACC45AC8150727(::Enum_3_B3B64B0D3B1029C9 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Enum_3_B3B64B0D3B1029C9))((::PBYTE)hIl2Cpp + CLASS_4_2E17BADFF2021901_METHOD_4_3DACC45AC8150727_OFFSET))(this, a1);
+	}
+
+	::MoleMole::HollowChessboard::HollowCell Method_4_AF081070273CE162()
+	{
+		return ((::MoleMole::HollowChessboard::HollowCell(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_2E17BADFF2021901_METHOD_4_AF081070273CE162_OFFSET))(this);
+	}
+
+	::System::Void Method_4_944725D8BEE125D5(::MoleMole::HollowChessboard::HollowCell a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::HollowChessboard::HollowCell))((::PBYTE)hIl2Cpp + CLASS_4_2E17BADFF2021901_METHOD_4_944725D8BEE125D5_OFFSET))(this, a1);
+	}
+
+	static ::Class_4_2E17BADFF2021901* Method_4_2038CB603E452C23()
+	{
+		return ((::Class_4_2E17BADFF2021901*(*)())((::PBYTE)hIl2Cpp + CLASS_4_2E17BADFF2021901_METHOD_4_2038CB603E452C23_OFFSET))();
+	}
+
+	::System::Int32 Method_4_A1D8CD775DEC3C21()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_2E17BADFF2021901_METHOD_4_A1D8CD775DEC3C21_OFFSET))(this);
+	}
+
+	::Enum_3_B3B64B0D3B1029C9 Method_4_A96DCA30C6927810()
+	{
+		return ((::Enum_3_B3B64B0D3B1029C9(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_2E17BADFF2021901_METHOD_4_A96DCA30C6927810_OFFSET))(this);
+	}
+};

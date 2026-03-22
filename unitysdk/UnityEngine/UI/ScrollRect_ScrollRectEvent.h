@@ -3,11 +3,11 @@
 #include "unitysdk/UnityEngine/Events/UnityEvent_1.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
-#define UNITYENGINE_UI_SCROLLRECT_SCROLLRECTEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x183483B0)
+#define UNITYENGINE_UI_SCROLLRECT_SCROLLRECTEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7F9160)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int ScrollRect_ScrollRectEvent_TypeDefinitionIndex = 5595;
+	inline static constexpr unsigned int ScrollRect_ScrollRectEvent_TypeDefinitionIndex = 8412;
 
 	class ScrollRect_ScrollRectEvent : public ::UnityEngine::Events::UnityEvent_1<::UnityEngine::Vector2>
 	{

@@ -1,0 +1,44 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_C36D127C88299910.h"
+#include "unitysdk/Class_1_C36D127C88299910_Enum_3_267898ADE98304D3.h"
+#include "unitysdk/MoleMole/UICameraAtom.h"
+
+class Class_0_16E4307DCC419505_364;
+
+#define CLASS_2_EB99F1FC97815CFC_1_METHOD_2_1167B82216E9F065_OFFSET UNITYSDK_OFFSET(0x6943990)
+#define CLASS_2_EB99F1FC97815CFC_1_METHOD_2_2ACF2A61FB239D23_OFFSET UNITYSDK_OFFSET(0x6943970)
+#define CLASS_2_EB99F1FC97815CFC_1_METHOD_2_6360EEC7C3F569F5_OFFSET UNITYSDK_OFFSET(0x6943A20)
+#define CLASS_2_EB99F1FC97815CFC_1_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x6943980)
+#define CLASS_2_EB99F1FC97815CFC_1__CTOR_OFFSET UNITYSDK_OFFSET(0x6943C20)
+
+inline static constexpr unsigned int Class_2_EB99F1FC97815CFC_1_TypeDefinitionIndex = 51350;
+
+class Class_2_EB99F1FC97815CFC_1 : public ::Class_1_C36D127C88299910
+{
+public:
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_EB99F1FC97815CFC_1__CTOR_OFFSET))(this);
+	}
+
+	::Class_1_C36D127C88299910_Enum_3_267898ADE98304D3 Method_2_2ACF2A61FB239D23()
+	{
+		return ((::Class_1_C36D127C88299910_Enum_3_267898ADE98304D3(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_EB99F1FC97815CFC_1_METHOD_2_2ACF2A61FB239D23_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_F0088C88851A7DFB()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_EB99F1FC97815CFC_1_METHOD_2_F0088C88851A7DFB_OFFSET))(this);
+	}
+
+	::System::Void Method_2_1167B82216E9F065(::MoleMole::UICameraAtom a1, ::MoleMole::UICameraAtom a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UICameraAtom, ::MoleMole::UICameraAtom))((::PBYTE)hIl2Cpp + CLASS_2_EB99F1FC97815CFC_1_METHOD_2_1167B82216E9F065_OFFSET))(this, a1, a2);
+	}
+
+	::Class_0_16E4307DCC419505_364* Method_2_6360EEC7C3F569F5(::MoleMole::UICameraAtom a1, ::MoleMole::UICameraAtom a2)
+	{
+		return ((::Class_0_16E4307DCC419505_364*(*)(::PVOID, ::MoleMole::UICameraAtom, ::MoleMole::UICameraAtom))((::PBYTE)hIl2Cpp + CLASS_2_EB99F1FC97815CFC_1_METHOD_2_6360EEC7C3F569F5_OFFSET))(this, a1, a2);
+	}
+};

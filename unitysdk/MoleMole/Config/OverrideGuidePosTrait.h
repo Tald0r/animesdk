@@ -1,0 +1,115 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlexBuffers/FlxMap.h"
+#include "unitysdk/FlexBuffers/FlxValue.h"
+#include "unitysdk/MoleMole/Config/ConfigViewObjectTraitBase.h"
+#include "unitysdk/MoleMole/EntityHandle.h"
+
+class Class_0_16E4307DCC419505_134;
+class Class_1_236FD73ABC492E3F;
+class Class_1_9BBA877A0A83A422;
+namespace System { class Object; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_FROMBINARY_OFFSET UNITYSDK_OFFSET(0x13FA1C70)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_FROMFLX_OFFSET UNITYSDK_OFFSET(0x13FA19F0)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_1D2F15E1636AC595_OFFSET UNITYSDK_OFFSET(0x13FA15E0)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_2A6B87C525933554_OFFSET UNITYSDK_OFFSET(0x13FA2020)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_39C75ED00C6629F7_OFFSET UNITYSDK_OFFSET(0x13FA1E60)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_42E1B0366D8D72CF_OFFSET UNITYSDK_OFFSET(0x13FA1CD0)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_494A589F973BB0F3_OFFSET UNITYSDK_OFFSET(0x13FA2240)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_5B0202969299569F_OFFSET UNITYSDK_OFFSET(0x13FA1A70)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_B525722F60E6B94F_OFFSET UNITYSDK_OFFSET(0x13FA16E0)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_B73F62522113F21F_OFFSET UNITYSDK_OFFSET(0x13FA1590)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_B9BDB4313A1FAFEC_OFFSET UNITYSDK_OFFSET(0x13FA1810)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_C50B93169B85DAEA_OFFSET UNITYSDK_OFFSET(0x13FA1FB0)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_CC99AD5E90933ED3_OFFSET UNITYSDK_OFFSET(0x13FA2090)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_POSTPROCESSENTITY_OFFSET UNITYSDK_OFFSET(0x13FA1F30)
+#define MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT__CTOR_OFFSET UNITYSDK_OFFSET(0x13FA1FA0)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int OverrideGuidePosTrait_TypeDefinitionIndex = 73147;
+
+	class OverrideGuidePosTrait : public ::MoleMole::Config::ConfigViewObjectTraitBase
+	{
+	public:
+		::System::String* OverrideGuidePointName; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Method_2_B73F62522113F21F(::System::Action_1<::System::Object*>* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::System::Object*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_B73F62522113F21F_OFFSET))(this, a1);
+		}
+
+		::MoleMole::Config::ConfigViewObjectTraitBase* Method_2_1D2F15E1636AC595()
+		{
+			return ((::MoleMole::Config::ConfigViewObjectTraitBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_1D2F15E1636AC595_OFFSET))(this);
+		}
+
+		::System::Int32 Method_2_B525722F60E6B94F()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_B525722F60E6B94F_OFFSET))(this);
+		}
+
+		::System::Void Method_2_B9BDB4313A1FAFEC(::Class_0_16E4307DCC419505_134* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_134*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_B9BDB4313A1FAFEC_OFFSET))(this, a1);
+		}
+
+		::System::Boolean FromFlx(::FlexBuffers::FlxValue a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::FlexBuffers::FlxValue))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_FROMFLX_OFFSET))(this, a1);
+		}
+
+		::System::Boolean FromBinary(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_FROMBINARY_OFFSET))(this, a1, a2);
+		}
+
+		::System::Boolean Method_2_39C75ED00C6629F7(::Class_1_9BBA877A0A83A422* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_9BBA877A0A83A422*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_39C75ED00C6629F7_OFFSET))(this, a1);
+		}
+
+		::System::Void PostProcessEntity(::MoleMole::EntityHandle a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::EntityHandle))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_POSTPROCESSENTITY_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_2_5B0202969299569F(::FlexBuffers::FlxMap a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::FlexBuffers::FlxMap))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_5B0202969299569F_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_2_C50B93169B85DAEA(::Class_0_16E4307DCC419505_134* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_134*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_C50B93169B85DAEA_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_2_2A6B87C525933554(::Class_1_9BBA877A0A83A422* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_9BBA877A0A83A422*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_2A6B87C525933554_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_2_42E1B0366D8D72CF(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_42E1B0366D8D72CF_OFFSET))(this, a1, a2);
+		}
+
+		static ::MoleMole::Config::OverrideGuidePosTrait* Method_2_CC99AD5E90933ED3(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+		{
+			return ((::MoleMole::Config::OverrideGuidePosTrait*(*)(::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_CC99AD5E90933ED3_OFFSET))(a1, a2);
+		}
+
+		static ::MoleMole::Config::OverrideGuidePosTrait* Method_2_494A589F973BB0F3(::FlexBuffers::FlxValue a1)
+		{
+			return ((::MoleMole::Config::OverrideGuidePosTrait*(*)(::FlexBuffers::FlxValue))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_OVERRIDEGUIDEPOSTRAIT_METHOD_2_494A589F973BB0F3_OFFSET))(a1);
+		}
+	};
+}

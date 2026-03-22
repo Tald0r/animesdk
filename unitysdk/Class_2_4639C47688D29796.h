@@ -1,0 +1,96 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_8E6A60BF56CBA569.h"
+#include "unitysdk/FlexBuffers/FlxMap.h"
+#include "unitysdk/FlexBuffers/FlxValue.h"
+
+class Class_1_236FD73ABC492E3F;
+class Class_1_CC972ED73C1D3B07;
+namespace System { class Object; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+
+#define CLASS_2_4639C47688D29796_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xA429B40)
+#define CLASS_2_4639C47688D29796_FROMFLX_OFFSET UNITYSDK_OFFSET(0xA429260)
+#define CLASS_2_4639C47688D29796_METHOD_2_0B2CB6A77D912E66_OFFSET UNITYSDK_OFFSET(0xA42A230)
+#define CLASS_2_4639C47688D29796_METHOD_2_530A216587216D69_OFFSET UNITYSDK_OFFSET(0xA429BA0)
+#define CLASS_2_4639C47688D29796_METHOD_2_6632971549249DA6_OFFSET UNITYSDK_OFFSET(0xA42A130)
+#define CLASS_2_4639C47688D29796_METHOD_2_8741A88D50268453_OFFSET UNITYSDK_OFFSET(0xA4292E0)
+#define CLASS_2_4639C47688D29796_METHOD_2_B525722F60E6B94F_OFFSET UNITYSDK_OFFSET(0xA429130)
+#define CLASS_2_4639C47688D29796_METHOD_2_D4943D8F67F4699C_OFFSET UNITYSDK_OFFSET(0xA42A3E0)
+#define CLASS_2_4639C47688D29796_METHOD_2_D8A163211C06267F_OFFSET UNITYSDK_OFFSET(0xA429030)
+#define CLASS_2_4639C47688D29796_METHOD_2_D8A375BA431DF6B3_OFFSET UNITYSDK_OFFSET(0xA428F40)
+#define CLASS_2_4639C47688D29796_METHOD_2_F8B73ECE7F883AC1_OFFSET UNITYSDK_OFFSET(0xA42A540)
+#define CLASS_2_4639C47688D29796__CTOR_OFFSET UNITYSDK_OFFSET(0xA42A220)
+
+inline static constexpr unsigned int Class_2_4639C47688D29796_TypeDefinitionIndex = 41684;
+
+class Class_2_4639C47688D29796 : public ::Class_1_8E6A60BF56CBA569
+{
+public:
+	::System::String* Field_2_4; // 0x18
+	::Il2CppArray<::System::String*>* Field_2_2; // 0x20
+	::Il2CppArray<::System::String*>* Field_2_1; // 0x28
+	::Il2CppArray<::System::Int32>* Field_2_3; // 0x30
+	::System::String* Field_2_0; // 0x38
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_D8A375BA431DF6B3(::System::Action_1<::System::Object*>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Action_1<::System::Object*>*))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796_METHOD_2_D8A375BA431DF6B3_OFFSET))(this, a1);
+	}
+
+	::Class_1_8E6A60BF56CBA569* Method_2_D8A163211C06267F()
+	{
+		return ((::Class_1_8E6A60BF56CBA569*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796_METHOD_2_D8A163211C06267F_OFFSET))(this);
+	}
+
+	::System::Int32 Method_2_B525722F60E6B94F()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796_METHOD_2_B525722F60E6B94F_OFFSET))(this);
+	}
+
+	::System::Boolean FromFlx(::FlexBuffers::FlxValue a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::FlexBuffers::FlxValue))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796_FROMFLX_OFFSET))(this, a1);
+	}
+
+	::System::Boolean FromBinary(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796_FROMBINARY_OFFSET))(this, a1, a2);
+	}
+
+	::Class_1_CC972ED73C1D3B07* Method_2_6632971549249DA6()
+	{
+		return ((::Class_1_CC972ED73C1D3B07*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796_METHOD_2_6632971549249DA6_OFFSET))(this);
+	}
+
+	static ::Class_2_4639C47688D29796* Method_2_0B2CB6A77D912E66(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+	{
+		return ((::Class_2_4639C47688D29796*(*)(::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796_METHOD_2_0B2CB6A77D912E66_OFFSET))(a1, a2);
+	}
+
+	::System::Boolean Method_2_530A216587216D69(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796_METHOD_2_530A216587216D69_OFFSET))(this, a1, a2);
+	}
+
+	static ::Class_2_4639C47688D29796* Method_2_D4943D8F67F4699C(::FlexBuffers::FlxValue a1)
+	{
+		return ((::Class_2_4639C47688D29796*(*)(::FlexBuffers::FlxValue))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796_METHOD_2_D4943D8F67F4699C_OFFSET))(a1);
+	}
+
+	::System::Boolean Method_2_8741A88D50268453(::FlexBuffers::FlxMap a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::FlexBuffers::FlxMap))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796_METHOD_2_8741A88D50268453_OFFSET))(this, a1);
+	}
+
+	::Class_1_CC972ED73C1D3B07* Method_2_F8B73ECE7F883AC1()
+	{
+		return ((::Class_1_CC972ED73C1D3B07*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_4639C47688D29796_METHOD_2_F8B73ECE7F883AC1_OFFSET))(this);
+	}
+};

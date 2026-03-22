@@ -6,18 +6,18 @@
 namespace MiHoYo::SDK::Console::UI::OS { class ConsoleAgeGateParentalConsentSentDialog; }
 namespace System { class String; }
 
-#define MIHOYO_SDK_CONSOLE_UI_OS_CONSOLEAGEGATEPARENTALCONSENTSENTDIALOG___C__DISPLAYCLASS44_0__CTOR_OFFSET UNITYSDK_OFFSET(0x157E7800)
-#define MIHOYO_SDK_CONSOLE_UI_OS_CONSOLEAGEGATEPARENTALCONSENTSENTDIALOG___C__DISPLAYCLASS44_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x157E7A70)
+#define MIHOYO_SDK_CONSOLE_UI_OS_CONSOLEAGEGATEPARENTALCONSENTSENTDIALOG___C__DISPLAYCLASS44_0__CTOR_OFFSET UNITYSDK_OFFSET(0x188842C0)
+#define MIHOYO_SDK_CONSOLE_UI_OS_CONSOLEAGEGATEPARENTALCONSENTSENTDIALOG___C__DISPLAYCLASS44_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x188844D0)
 
 namespace MiHoYo::SDK::Console::UI::OS
 {
-	inline static constexpr unsigned int ConsoleAgeGateParentalConsentSentDialog___c__DisplayClass44_0_TypeDefinitionIndex = 7532;
+	inline static constexpr unsigned int ConsoleAgeGateParentalConsentSentDialog___c__DisplayClass44_0_TypeDefinitionIndex = 18675;
 
 	class ConsoleAgeGateParentalConsentSentDialog___c__DisplayClass44_0 : public ::System::Object
 	{
 	public:
-		::System::String* date; // 0x10
-		::System::String* email; // 0x18
+		::System::String* email; // 0x10
+		::System::String* date; // 0x18
 		::MiHoYo::SDK::AgeGateFlowType type; // 0x20
 
 		::System::Void _ctor()

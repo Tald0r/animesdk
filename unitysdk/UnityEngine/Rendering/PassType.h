@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int PassType_TypeDefinitionIndex = 4489;
+	inline static constexpr unsigned int PassType_TypeDefinitionIndex = 6159;
 
 	enum class PassType : ::System::Int32
 	{
@@ -15,12 +15,14 @@ namespace UnityEngine::Rendering
 		ForwardAdd = 5,
 		LightPrePassBase = 6,
 		LightPrePassFinal = 7,
-		ShadowCaster = 8,
-		Deferred = 10,
-		Meta = 11,
-		MotionVectors = 12,
-		ScriptableRenderPipeline = 13,
-		ScriptableRenderPipelineDefaultUnlit = 14,
-		MotionVectorsOutline = 15,
+		LightPrePassBaseMeshlet = 8,
+		LightPrePassFinalMeshlet = 9,
+		ShadowCaster = 10,
+		ShadowCollector = 11,
+		Deferred = 12,
+		Meta = 13,
+		MotionVectors = 14,
+		ScriptableRenderPipeline = 15,
+		ScriptableRenderPipelineDefaultUnlit = 16,
 	};
 }

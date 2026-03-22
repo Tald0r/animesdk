@@ -2,34 +2,41 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/MarshalByRefObject.h"
 
+namespace System { class EventHandler; }
 namespace System { class Object; }
 namespace System { class String; }
 namespace System { class Type; }
 namespace System::ComponentModel { class EventHandlerList; }
+namespace System::ComponentModel { class IContainer; }
 namespace System::ComponentModel { class ISite; }
 
-#define SYSTEM_COMPONENTMODEL_COMPONENT_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x17E6D0D0)
-#define SYSTEM_COMPONENTMODEL_COMPONENT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17E6D080)
-#define SYSTEM_COMPONENTMODEL_COMPONENT_FINALIZE_OFFSET UNITYSDK_OFFSET(0x17E6CFE0)
-#define SYSTEM_COMPONENTMODEL_COMPONENT_GETSERVICE_OFFSET UNITYSDK_OFFSET(0x17E6D3F0)
-#define SYSTEM_COMPONENTMODEL_COMPONENT_GET_CANRAISEEVENTSINTERNAL_OFFSET UNITYSDK_OFFSET(0x17E6D060)
-#define SYSTEM_COMPONENTMODEL_COMPONENT_GET_CANRAISEEVENTS_OFFSET UNITYSDK_OFFSET(0x17E6D050)
-#define SYSTEM_COMPONENTMODEL_COMPONENT_GET_DESIGNMODE_OFFSET UNITYSDK_OFFSET(0x17E6D4D0)
-#define SYSTEM_COMPONENTMODEL_COMPONENT_GET_SITE_OFFSET UNITYSDK_OFFSET(0x17E6D070)
-#define SYSTEM_COMPONENTMODEL_COMPONENT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17E6D570)
-#define SYSTEM_COMPONENTMODEL_COMPONENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x17E6D6D0)
-#define SYSTEM_COMPONENTMODEL_COMPONENT__CTOR_OFFSET UNITYSDK_OFFSET(0x17E6D6C0)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_ADD_DISPOSED_OFFSET UNITYSDK_OFFSET(0x18FDD0C0)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x18FDD420)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18FDD3D0)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_FINALIZE_OFFSET UNITYSDK_OFFSET(0x18FDD030)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_GETSERVICE_OFFSET UNITYSDK_OFFSET(0x18FDD7F0)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_GET_CANRAISEEVENTSINTERNAL_OFFSET UNITYSDK_OFFSET(0x18FDD0B0)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_GET_CANRAISEEVENTS_OFFSET UNITYSDK_OFFSET(0x18FDD0A0)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_GET_CONTAINER_OFFSET UNITYSDK_OFFSET(0x18FDD710)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_GET_DESIGNMODE_OFFSET UNITYSDK_OFFSET(0x18FDD8D0)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_GET_EVENTS_OFFSET UNITYSDK_OFFSET(0x18FDD240)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_GET_SITE_OFFSET UNITYSDK_OFFSET(0x18FDD3B0)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_REMOVE_DISPOSED_OFFSET UNITYSDK_OFFSET(0x18FDD2A0)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_SET_SITE_OFFSET UNITYSDK_OFFSET(0x18FDD3C0)
+#define SYSTEM_COMPONENTMODEL_COMPONENT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x18FDD9B0)
+#define SYSTEM_COMPONENTMODEL_COMPONENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x18FDDB10)
+#define SYSTEM_COMPONENTMODEL_COMPONENT__CTOR_OFFSET UNITYSDK_OFFSET(0x18FDDB00)
 
 namespace System::ComponentModel
 {
-	inline static constexpr unsigned int Component_TypeDefinitionIndex = 2553;
+	inline static constexpr unsigned int Component_TypeDefinitionIndex = 2839;
 
 	class Component : public ::System::MarshalByRefObject
 	{
 	public:
 		static ::System::Object** StaticGet_EventDisposed()
 		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(Component_TypeDefinitionIndex)->GetStaticField(0x15B40);
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(Component_TypeDefinitionIndex)->GetStaticField(0x34B0);
 		}
 		::System::ComponentModel::ISite* site; // 0x18
 		::System::ComponentModel::EventHandlerList* events; // 0x20
@@ -59,9 +66,29 @@ namespace System::ComponentModel
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_COMPONENT_GET_CANRAISEEVENTSINTERNAL_OFFSET))(this);
 		}
 
+		::System::Void add_Disposed(::System::EventHandler* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventHandler*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_COMPONENT_ADD_DISPOSED_OFFSET))(this, value);
+		}
+
+		::System::Void remove_Disposed(::System::EventHandler* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventHandler*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_COMPONENT_REMOVE_DISPOSED_OFFSET))(this, value);
+		}
+
+		::System::ComponentModel::EventHandlerList* get_Events()
+		{
+			return ((::System::ComponentModel::EventHandlerList*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_COMPONENT_GET_EVENTS_OFFSET))(this);
+		}
+
 		::System::ComponentModel::ISite* get_Site()
 		{
 			return ((::System::ComponentModel::ISite*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_COMPONENT_GET_SITE_OFFSET))(this);
+		}
+
+		::System::Void set_Site(::System::ComponentModel::ISite* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::ComponentModel::ISite*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_COMPONENT_SET_SITE_OFFSET))(this, value);
 		}
 
 		::System::Void Dispose()
@@ -72,6 +99,11 @@ namespace System::ComponentModel
 		::System::Void Dispose_1(::System::Boolean disposing)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_COMPONENT_DISPOSE_1_OFFSET))(this, disposing);
+		}
+
+		::System::ComponentModel::IContainer* get_Container()
+		{
+			return ((::System::ComponentModel::IContainer*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_COMPONENT_GET_CONTAINER_OFFSET))(this);
 		}
 
 		::System::Object* GetService(::System::Type* service)

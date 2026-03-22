@@ -6,35 +6,30 @@
 
 namespace System { class Object; }
 
-#define UNITYENGINE_RENDERING_STENCILSTATE_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x204C4A0)
-#define UNITYENGINE_RENDERING_STENCILSTATE_EQUALS_OFFSET UNITYSDK_OFFSET(0x204C430)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x204C4B0)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GET_COMPAREFUNCTIONBACK_OFFSET UNITYSDK_OFFSET(0x13F0000)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GET_COMPAREFUNCTIONFRONT_OFFSET UNITYSDK_OFFSET(0xD7380)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GET_ENABLED_OFFSET UNITYSDK_OFFSET(0x1FFDC00)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GET_FAILOPERATIONBACK_OFFSET UNITYSDK_OFFSET(0x20013D0)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GET_FAILOPERATIONFRONT_OFFSET UNITYSDK_OFFSET(0x200B8C0)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GET_PASSOPERATIONBACK_OFFSET UNITYSDK_OFFSET(0x20013C0)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GET_PASSOPERATIONFRONT_OFFSET UNITYSDK_OFFSET(0x2007360)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GET_READMASK_OFFSET UNITYSDK_OFFSET(0x202CAB0)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GET_WRITEMASK_OFFSET UNITYSDK_OFFSET(0x2007340)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GET_ZFAILOPERATIONBACK_OFFSET UNITYSDK_OFFSET(0x202FCD0)
-#define UNITYENGINE_RENDERING_STENCILSTATE_GET_ZFAILOPERATIONFRONT_OFFSET UNITYSDK_OFFSET(0x2037350)
-#define UNITYENGINE_RENDERING_STENCILSTATE_SET_COMPAREFUNCTIONBACK_OFFSET UNITYSDK_OFFSET(0x2037370)
-#define UNITYENGINE_RENDERING_STENCILSTATE_SET_COMPAREFUNCTIONFRONT_OFFSET UNITYSDK_OFFSET(0xD7390)
-#define UNITYENGINE_RENDERING_STENCILSTATE_SET_ENABLED_OFFSET UNITYSDK_OFFSET(0xCE9D0)
-#define UNITYENGINE_RENDERING_STENCILSTATE_SET_FAILOPERATIONBACK_OFFSET UNITYSDK_OFFSET(0x2037390)
-#define UNITYENGINE_RENDERING_STENCILSTATE_SET_FAILOPERATIONFRONT_OFFSET UNITYSDK_OFFSET(0x2037340)
-#define UNITYENGINE_RENDERING_STENCILSTATE_SET_PASSOPERATIONBACK_OFFSET UNITYSDK_OFFSET(0x2037380)
-#define UNITYENGINE_RENDERING_STENCILSTATE_SET_PASSOPERATIONFRONT_OFFSET UNITYSDK_OFFSET(0x2037330)
-#define UNITYENGINE_RENDERING_STENCILSTATE_SET_READMASK_OFFSET UNITYSDK_OFFSET(0x2037310)
-#define UNITYENGINE_RENDERING_STENCILSTATE_SET_WRITEMASK_OFFSET UNITYSDK_OFFSET(0x2037320)
-#define UNITYENGINE_RENDERING_STENCILSTATE_SET_ZFAILOPERATIONBACK_OFFSET UNITYSDK_OFFSET(0x20373A0)
-#define UNITYENGINE_RENDERING_STENCILSTATE_SET_ZFAILOPERATIONFRONT_OFFSET UNITYSDK_OFFSET(0x2037360)
+#define UNITYENGINE_RENDERING_STENCILSTATE_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x8E9FD0)
+#define UNITYENGINE_RENDERING_STENCILSTATE_EQUALS_OFFSET UNITYSDK_OFFSET(0x8E9F60)
+#define UNITYENGINE_RENDERING_STENCILSTATE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x8E9FE0)
+#define UNITYENGINE_RENDERING_STENCILSTATE_GET_DEFAULTVALUE_OFFSET UNITYSDK_OFFSET(0x19BD2CF0)
+#define UNITYENGINE_RENDERING_STENCILSTATE_GET_ENABLED_OFFSET UNITYSDK_OFFSET(0x2D4920)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SETCOMPAREFUNCTION_OFFSET UNITYSDK_OFFSET(0x8E9EC0)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SETFAILOPERATION_OFFSET UNITYSDK_OFFSET(0x8E9EE0)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SETPASSOPERATION_OFFSET UNITYSDK_OFFSET(0x8E9ED0)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SETZFAILOPERATION_OFFSET UNITYSDK_OFFSET(0x8E9EF0)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SET_COMPAREFUNCTIONBACK_OFFSET UNITYSDK_OFFSET(0x31FDA0)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SET_COMPAREFUNCTIONFRONT_OFFSET UNITYSDK_OFFSET(0x3AC940)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SET_ENABLED_OFFSET UNITYSDK_OFFSET(0x2D4930)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SET_FAILOPERATIONBACK_OFFSET UNITYSDK_OFFSET(0x8E9F40)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SET_FAILOPERATIONFRONT_OFFSET UNITYSDK_OFFSET(0x8E9F10)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SET_PASSOPERATIONBACK_OFFSET UNITYSDK_OFFSET(0x8E9F30)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SET_PASSOPERATIONFRONT_OFFSET UNITYSDK_OFFSET(0x8E9F00)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SET_ZFAILOPERATIONBACK_OFFSET UNITYSDK_OFFSET(0x8E9F50)
+#define UNITYENGINE_RENDERING_STENCILSTATE_SET_ZFAILOPERATIONFRONT_OFFSET UNITYSDK_OFFSET(0x8E9F20)
+#define UNITYENGINE_RENDERING_STENCILSTATE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x8E9E50)
+#define UNITYENGINE_RENDERING_STENCILSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x8E9E00)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int StencilState_TypeDefinitionIndex = 4557;
+	inline static constexpr unsigned int StencilState_TypeDefinitionIndex = 6236;
 
 	struct alignas(1) StencilState
 	{
@@ -51,6 +46,21 @@ namespace UnityEngine::Rendering
 		::System::Byte m_FailOperationBack; // 0x1A
 		::System::Byte m_ZFailOperationBack; // 0x1B
 
+		::System::Void _ctor(::System::Boolean enabled, ::System::Byte readMask, ::System::Byte writeMask, ::UnityEngine::Rendering::CompareFunction compareFunction, ::UnityEngine::Rendering::StencilOp passOperation, ::UnityEngine::Rendering::StencilOp failOperation, ::UnityEngine::Rendering::StencilOp zFailOperation)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Byte, ::System::Byte, ::UnityEngine::Rendering::CompareFunction, ::UnityEngine::Rendering::StencilOp, ::UnityEngine::Rendering::StencilOp, ::UnityEngine::Rendering::StencilOp))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE__CTOR_OFFSET))(this, enabled, readMask, writeMask, compareFunction, passOperation, failOperation, zFailOperation);
+		}
+
+		::System::Void _ctor_1(::System::Boolean enabled, ::System::Byte readMask, ::System::Byte writeMask, ::UnityEngine::Rendering::CompareFunction compareFunctionFront, ::UnityEngine::Rendering::StencilOp passOperationFront, ::UnityEngine::Rendering::StencilOp failOperationFront, ::UnityEngine::Rendering::StencilOp zFailOperationFront, ::UnityEngine::Rendering::CompareFunction compareFunctionBack, ::UnityEngine::Rendering::StencilOp passOperationBack, ::UnityEngine::Rendering::StencilOp failOperationBack, ::UnityEngine::Rendering::StencilOp zFailOperationBack)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Byte, ::System::Byte, ::UnityEngine::Rendering::CompareFunction, ::UnityEngine::Rendering::StencilOp, ::UnityEngine::Rendering::StencilOp, ::UnityEngine::Rendering::StencilOp, ::UnityEngine::Rendering::CompareFunction, ::UnityEngine::Rendering::StencilOp, ::UnityEngine::Rendering::StencilOp, ::UnityEngine::Rendering::StencilOp))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE__CTOR_1_OFFSET))(this, enabled, readMask, writeMask, compareFunctionFront, passOperationFront, failOperationFront, zFailOperationFront, compareFunctionBack, passOperationBack, failOperationBack, zFailOperationBack);
+		}
+
+		static ::UnityEngine::Rendering::StencilState get_defaultValue()
+		{
+			return ((::UnityEngine::Rendering::StencilState(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_DEFAULTVALUE_OFFSET))();
+		}
+
 		::System::Boolean get_enabled()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_ENABLED_OFFSET))(this);
@@ -61,29 +71,24 @@ namespace UnityEngine::Rendering
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SET_ENABLED_OFFSET))(this, value);
 		}
 
-		::System::Byte get_readMask()
+		::System::Void SetCompareFunction(::UnityEngine::Rendering::CompareFunction value)
 		{
-			return ((::System::Byte(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_READMASK_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::CompareFunction))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SETCOMPAREFUNCTION_OFFSET))(this, value);
 		}
 
-		::System::Void set_readMask(::System::Byte value)
+		::System::Void SetPassOperation(::UnityEngine::Rendering::StencilOp value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Byte))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SET_READMASK_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::StencilOp))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SETPASSOPERATION_OFFSET))(this, value);
 		}
 
-		::System::Byte get_writeMask()
+		::System::Void SetFailOperation(::UnityEngine::Rendering::StencilOp value)
 		{
-			return ((::System::Byte(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_WRITEMASK_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::StencilOp))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SETFAILOPERATION_OFFSET))(this, value);
 		}
 
-		::System::Void set_writeMask(::System::Byte value)
+		::System::Void SetZFailOperation(::UnityEngine::Rendering::StencilOp value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Byte))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SET_WRITEMASK_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::CompareFunction get_compareFunctionFront()
-		{
-			return ((::UnityEngine::Rendering::CompareFunction(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_COMPAREFUNCTIONFRONT_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::StencilOp))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SETZFAILOPERATION_OFFSET))(this, value);
 		}
 
 		::System::Void set_compareFunctionFront(::UnityEngine::Rendering::CompareFunction value)
@@ -91,19 +96,9 @@ namespace UnityEngine::Rendering
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::CompareFunction))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SET_COMPAREFUNCTIONFRONT_OFFSET))(this, value);
 		}
 
-		::UnityEngine::Rendering::StencilOp get_passOperationFront()
-		{
-			return ((::UnityEngine::Rendering::StencilOp(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_PASSOPERATIONFRONT_OFFSET))(this);
-		}
-
 		::System::Void set_passOperationFront(::UnityEngine::Rendering::StencilOp value)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::StencilOp))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SET_PASSOPERATIONFRONT_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::StencilOp get_failOperationFront()
-		{
-			return ((::UnityEngine::Rendering::StencilOp(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_FAILOPERATIONFRONT_OFFSET))(this);
 		}
 
 		::System::Void set_failOperationFront(::UnityEngine::Rendering::StencilOp value)
@@ -111,19 +106,9 @@ namespace UnityEngine::Rendering
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::StencilOp))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SET_FAILOPERATIONFRONT_OFFSET))(this, value);
 		}
 
-		::UnityEngine::Rendering::StencilOp get_zFailOperationFront()
-		{
-			return ((::UnityEngine::Rendering::StencilOp(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_ZFAILOPERATIONFRONT_OFFSET))(this);
-		}
-
 		::System::Void set_zFailOperationFront(::UnityEngine::Rendering::StencilOp value)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::StencilOp))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SET_ZFAILOPERATIONFRONT_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::CompareFunction get_compareFunctionBack()
-		{
-			return ((::UnityEngine::Rendering::CompareFunction(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_COMPAREFUNCTIONBACK_OFFSET))(this);
 		}
 
 		::System::Void set_compareFunctionBack(::UnityEngine::Rendering::CompareFunction value)
@@ -131,29 +116,14 @@ namespace UnityEngine::Rendering
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::CompareFunction))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SET_COMPAREFUNCTIONBACK_OFFSET))(this, value);
 		}
 
-		::UnityEngine::Rendering::StencilOp get_passOperationBack()
-		{
-			return ((::UnityEngine::Rendering::StencilOp(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_PASSOPERATIONBACK_OFFSET))(this);
-		}
-
 		::System::Void set_passOperationBack(::UnityEngine::Rendering::StencilOp value)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::StencilOp))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SET_PASSOPERATIONBACK_OFFSET))(this, value);
 		}
 
-		::UnityEngine::Rendering::StencilOp get_failOperationBack()
-		{
-			return ((::UnityEngine::Rendering::StencilOp(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_FAILOPERATIONBACK_OFFSET))(this);
-		}
-
 		::System::Void set_failOperationBack(::UnityEngine::Rendering::StencilOp value)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::StencilOp))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_SET_FAILOPERATIONBACK_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Rendering::StencilOp get_zFailOperationBack()
-		{
-			return ((::UnityEngine::Rendering::StencilOp(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_STENCILSTATE_GET_ZFAILOPERATIONBACK_OFFSET))(this);
 		}
 
 		::System::Void set_zFailOperationBack(::UnityEngine::Rendering::StencilOp value)

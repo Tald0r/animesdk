@@ -7,30 +7,36 @@ namespace System { class String; }
 namespace System::Xml { class XmlDocument; }
 namespace System::Xml { class XmlWriter; }
 
-#define SYSTEM_XML_XMLNOTATION_CLONENODE_OFFSET UNITYSDK_OFFSET(0x17E09C70)
-#define SYSTEM_XML_XMLNOTATION_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x17E09CD0)
-#define SYSTEM_XML_XMLNOTATION_GET_LOCALNAME_OFFSET UNITYSDK_OFFSET(0x17E09C50)
-#define SYSTEM_XML_XMLNOTATION_GET_NAME_OFFSET UNITYSDK_OFFSET(0x17E09C40)
-#define SYSTEM_XML_XMLNOTATION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x17E09C60)
-#define SYSTEM_XML_XMLNOTATION_SET_INNERXML_OFFSET UNITYSDK_OFFSET(0x17E09CE0)
-#define SYSTEM_XML_XMLNOTATION_WRITECONTENTTO_OFFSET UNITYSDK_OFFSET(0x17E09D50)
-#define SYSTEM_XML_XMLNOTATION_WRITETO_OFFSET UNITYSDK_OFFSET(0x17E09D40)
-#define SYSTEM_XML_XMLNOTATION__CTOR_OFFSET UNITYSDK_OFFSET(0x17E03570)
+#define SYSTEM_XML_XMLNOTATION_CLONENODE_OFFSET UNITYSDK_OFFSET(0x1947DA70)
+#define SYSTEM_XML_XMLNOTATION_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x1947DAD0)
+#define SYSTEM_XML_XMLNOTATION_GET_LOCALNAME_OFFSET UNITYSDK_OFFSET(0x1947DA50)
+#define SYSTEM_XML_XMLNOTATION_GET_NAME_OFFSET UNITYSDK_OFFSET(0x1947DA40)
+#define SYSTEM_XML_XMLNOTATION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x1947DA60)
+#define SYSTEM_XML_XMLNOTATION_SET_INNERXML_OFFSET UNITYSDK_OFFSET(0x1947DAE0)
+#define SYSTEM_XML_XMLNOTATION_WRITECONTENTTO_OFFSET UNITYSDK_OFFSET(0x1947DB50)
+#define SYSTEM_XML_XMLNOTATION_WRITETO_OFFSET UNITYSDK_OFFSET(0x1947DB40)
+#define SYSTEM_XML_XMLNOTATION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1947DB60)
+#define SYSTEM_XML_XMLNOTATION__CTOR_OFFSET UNITYSDK_OFFSET(0x1947D980)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int XmlNotation_TypeDefinitionIndex = 1901;
+	inline static constexpr unsigned int XmlNotation_TypeDefinitionIndex = 1785;
 
 	class XmlNotation : public ::System::Xml::XmlNode
 	{
 	public:
 		::System::String* systemId; // 0x18
-		::System::String* name; // 0x20
-		::System::String* publicId; // 0x28
+		::System::String* publicId; // 0x20
+		::System::String* name; // 0x28
 
 		::System::Void _ctor(::System::String* name, ::System::String* publicId, ::System::String* systemId, ::System::Xml::XmlDocument* doc)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::String*, ::System::Xml::XmlDocument*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLNOTATION__CTOR_OFFSET))(this, name, publicId, systemId, doc);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLNOTATION__CTOR_1_OFFSET))(this);
 		}
 
 		::System::String* get_Name()

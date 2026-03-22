@@ -11,42 +11,60 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class Object; }
 namespace UnityEngine::Timeline { class ITimelineEvaluateCallback; }
 namespace UnityEngine::Timeline { class RuntimeElement; }
 namespace UnityEngine::Timeline { class TrackAsset; }
 namespace UnityEngine::Timeline { template <typename T> class IntervalTree_1; }
 
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CACHETRACK_OFFSET UNITYSDK_OFFSET(0x181A7AD0)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_COMPILETRACKLIST_OFFSET UNITYSDK_OFFSET(0x181A5740)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_COMPILE_OFFSET UNITYSDK_OFFSET(0x181A5530)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATEPLAYABLEGRAPH_OFFSET UNITYSDK_OFFSET(0x181A7650)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATETRACKOUTPUT_OFFSET UNITYSDK_OFFSET(0x181A6BD0)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATETRACKPLAYABLE_OFFSET UNITYSDK_OFFSET(0x181A6570)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x181A05E0)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATEANIMATIONPREVIEWUPDATECALLBACK_OFFSET UNITYSDK_OFFSET(0x181A7500)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATEWEIGHTSFORANIMATIONPLAYABLEOUTPUT_OFFSET UNITYSDK_OFFSET(0x181A73F0)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATE_OFFSET UNITYSDK_OFFSET(0x181A7BA0)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_FORAOTCOMPILATIONONLY_OFFSET UNITYSDK_OFFSET(0x181A8390)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_PREPAREFRAME_OFFSET UNITYSDK_OFFSET(0x181A7B50)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x181A84B0)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x181A83D0)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CACHETRACK_OFFSET UNITYSDK_OFFSET(0x1A746C00)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_COMPILETRACKLIST_OFFSET UNITYSDK_OFFSET(0x1A745360)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_COMPILE_OFFSET UNITYSDK_OFFSET(0x1A7450F0)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATEPLAYABLEGRAPH_OFFSET UNITYSDK_OFFSET(0x1A746B90)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATETRACKOUTPUT_OFFSET UNITYSDK_OFFSET(0x1A745F20)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATETRACKPLAYABLE_OFFSET UNITYSDK_OFFSET(0x1A7457D0)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x1A744E20)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATEANIMATIONPREVIEWUPDATECALLBACK_OFFSET UNITYSDK_OFFSET(0x1A746B10)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATEWEIGHTSFORANIMATIONPLAYABLEOUTPUT_OFFSET UNITYSDK_OFFSET(0x1A746950)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATE_OFFSET UNITYSDK_OFFSET(0x1A746CD0)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_FORAOTCOMPILATIONONLY_OFFSET UNITYSDK_OFFSET(0x1A747450)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_GET_JUSTCOMPILECHANGEDASSET_OFFSET UNITYSDK_OFFSET(0x1A7457C0)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_PREPAREFRAME_OFFSET UNITYSDK_OFFSET(0x1A746C80)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A747600)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7474D0)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TimelinePlayable_TypeDefinitionIndex = 29038;
+	inline static constexpr unsigned int TimelinePlayable_TypeDefinitionIndex = 29393;
 
 	class TimelinePlayable : public ::UnityEngine::Playables::PlayableBehaviour
 	{
 	public:
+		static ::UnityEngine::Object** StaticGet_CompileObject()
+		{
+			return (::UnityEngine::Object**)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x228E0);
+		}
+		static ::System::Boolean* StaticGet_justThisTrack()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7610);
+		}
 		static ::System::Boolean* StaticGet_muteAudioScrubbing()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0xECA0);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7611);
 		}
-		::UnityEngine::Timeline::IntervalTree_1<::UnityEngine::Timeline::RuntimeElement*>* m_IntervalTree; // 0x10
+		static ::System::Int32* StaticGet_ControlPlayableIndex()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7614);
+		}
+		static ::System::Int32* StaticGet_CompileTrackInstanceId()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7618);
+		}
+		::System::Collections::Generic::List_1<::UnityEngine::Timeline::RuntimeElement*>* m_ActiveClips; // 0x10
 		::System::Collections::Generic::List_1<::UnityEngine::Timeline::ITimelineEvaluateCallback*>* m_EvaluateCallbacks; // 0x18
-		::System::Collections::Generic::List_1<::UnityEngine::Timeline::RuntimeElement*>* m_ActiveClips; // 0x20
-		::System::Collections::Generic::List_1<::UnityEngine::Timeline::RuntimeElement*>* m_CurrentListOfActiveClips; // 0x28
-		::System::Collections::Generic::Dictionary_2<::UnityEngine::Timeline::TrackAsset*, ::UnityEngine::Playables::Playable>* m_PlayableCache; // 0x30
+		::UnityEngine::Timeline::IntervalTree_1<::UnityEngine::Timeline::RuntimeElement*>* m_IntervalTree; // 0x20
+		::System::Collections::Generic::Dictionary_2<::UnityEngine::Timeline::TrackAsset*, ::UnityEngine::Playables::Playable>* m_PlayableCache; // 0x28
+		::System::Collections::Generic::List_1<::UnityEngine::Timeline::RuntimeElement*>* m_CurrentListOfActiveClips; // 0x30
 		::System::Int32 m_ActiveBit; // 0x38
 
 		::System::Void _ctor()
@@ -67,6 +85,11 @@ namespace UnityEngine::Timeline
 		::System::Void Compile(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::Playables::Playable timelinePlayable, ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Timeline::TrackAsset*>* tracks, ::UnityEngine::GameObject* go, ::System::Boolean autoRebalance, ::System::Boolean createOutputs)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::Playables::Playable, ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Timeline::TrackAsset*>*, ::UnityEngine::GameObject*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_COMPILE_OFFSET))(this, graph, timelinePlayable, tracks, go, autoRebalance, createOutputs);
+		}
+
+		static ::System::Boolean get_JustCompileChangedAsset()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_GET_JUSTCOMPILECHANGEDASSET_OFFSET))();
 		}
 
 		::System::Void CompileTrackList(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::Playables::Playable timelinePlayable, ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Timeline::TrackAsset*>* tracks, ::UnityEngine::GameObject* go, ::System::Boolean createOutputs)

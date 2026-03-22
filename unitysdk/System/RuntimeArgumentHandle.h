@@ -4,7 +4,7 @@
 
 namespace System
 {
-	inline static constexpr unsigned int RuntimeArgumentHandle_TypeDefinitionIndex = 419;
+	inline static constexpr unsigned int RuntimeArgumentHandle_TypeDefinitionIndex = 406;
 
 	struct alignas(8) RuntimeArgumentHandle
 	{

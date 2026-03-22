@@ -3,22 +3,32 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define CINEMACHINE_UTILITY_DAMPER_DAMP_1_OFFSET UNITYSDK_OFFSET(0x1126B700)
-#define CINEMACHINE_UTILITY_DAMPER_DAMP_2_OFFSET UNITYSDK_OFFSET(0x1126B8B0)
-#define CINEMACHINE_UTILITY_DAMPER_DAMP_OFFSET UNITYSDK_OFFSET(0x1126B690)
-#define CINEMACHINE_UTILITY_DAMPER_DECAYCONSTANT_OFFSET UNITYSDK_OFFSET(0x1126B630)
-#define CINEMACHINE_UTILITY_DAMPER_DECAYEDREMAINDER_OFFSET UNITYSDK_OFFSET(0x1126B660)
+#define CINEMACHINE_UTILITY_DAMPER_DAMP_1_OFFSET UNITYSDK_OFFSET(0x1ADA3410)
+#define CINEMACHINE_UTILITY_DAMPER_DAMP_2_OFFSET UNITYSDK_OFFSET(0x1ADA3590)
+#define CINEMACHINE_UTILITY_DAMPER_DAMP_OFFSET UNITYSDK_OFFSET(0x1ADA2070)
+#define CINEMACHINE_UTILITY_DAMPER_DECAYCONSTANT_OFFSET UNITYSDK_OFFSET(0x1ADA33B0)
+#define CINEMACHINE_UTILITY_DAMPER_DECAYEDREMAINDER_OFFSET UNITYSDK_OFFSET(0x1ADA33E0)
+#define CINEMACHINE_UTILITY_DAMPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ADA3710)
 
 namespace Cinemachine::Utility
 {
-	inline static constexpr unsigned int Damper_TypeDefinitionIndex = 30060;
+	inline static constexpr unsigned int Damper_TypeDefinitionIndex = 31165;
 
 	class Damper : public ::System::Object
 	{
 	public:
+		static ::System::Boolean* StaticGet_isNewDamping()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Damper_TypeDefinitionIndex)->GetStaticField(0x7A50);
+		}
 		// static const ::System::Single Epsilon; // 0x0
 		// static const ::System::Single kNegligibleResidual; // 0x0
 		// static const ::System::Single kLogNegligibleResidual; // 0x0
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CINEMACHINE_UTILITY_DAMPER__CCTOR_OFFSET))();
+		}
 
 		static ::System::Single DecayConstant(::System::Single time, ::System::Single residual)
 		{

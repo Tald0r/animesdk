@@ -1,0 +1,130 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_D375C91CCE5D3999;
+class Class_2_1F265C0C485137E3_2;
+class Class_2_1F265C0C485137E3_2_Class_2_D9EA9254F6280D85;
+class Class_3_BE75AAF0F7C40C75_3;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_GETFOCUSREWARD_OFFSET UNITYSDK_OFFSET(0xBD817E0)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_GETPROGRESSPOINTPOSX_OFFSET UNITYSDK_OFFSET(0xBD80C20)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_GETREWARD_OFFSET UNITYSDK_OFFSET(0xBD815C0)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_ONACTIVITYWATERGETREWARD_OFFSET UNITYSDK_OFFSET(0xBD81A00)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBD802F0)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBD80390)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBD80040)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBD80240)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_REFRESHPROGRESSBARVIEW_OFFSET UNITYSDK_OFFSET(0xBD80510)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_REFRESHPROGRESSPOINTVIEW_1_OFFSET UNITYSDK_OFFSET(0xBD80A50)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_REFRESHPROGRESSPOINTVIEW_OFFSET UNITYSDK_OFFSET(0xBD80DA0)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xBD80470)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBD81AE0)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBD81B10)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBD81B80)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBD81C00)
+#define MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBD81C60)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityFishProgressBarWidgetController_TypeDefinitionIndex = 71717;
+
+	class UIActivityFishProgressBarWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_1F265C0C485137E3_2* _view; // 0x2A0
+		::System::Action* _getRewardCallBack; // 0x2A8
+		::Class_1_D375C91CCE5D3999* _rootActivityData; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::Class_1_D375C91CCE5D3999* rootActivityData, ::System::Action* callBack)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_D375C91CCE5D3999*, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, rootActivityData, callBack);
+		}
+
+		::System::Single GetProgressPointPosX(::System::Int32 index)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_GETPROGRESSPOINTPOSX_OFFSET))(this, index);
+		}
+
+		::System::Void RefreshProgressBarView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_REFRESHPROGRESSBARVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshProgressPointView(::Class_2_1F265C0C485137E3_2_Class_2_D9EA9254F6280D85* view, ::Class_3_BE75AAF0F7C40C75_3* task, ::System::Boolean playGetEffect)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_1F265C0C485137E3_2_Class_2_D9EA9254F6280D85*, ::Class_3_BE75AAF0F7C40C75_3*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_REFRESHPROGRESSPOINTVIEW_OFFSET))(this, view, task, playGetEffect);
+		}
+
+		::System::Void RefreshProgressPointView_1(::System::Collections::Generic::List_1<::System::UInt32>* rewardList)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::System::UInt32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_REFRESHPROGRESSPOINTVIEW_1_OFFSET))(this, rewardList);
+		}
+
+		::System::Void GetReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_GETREWARD_OFFSET))(this);
+		}
+
+		::UnityEngine::GameObject* GetFocusReward()
+		{
+			return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_GETFOCUSREWARD_OFFSET))(this);
+		}
+
+		::System::Void OnActivityWaterGetReward(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER_ONACTIVITYWATERGETREWARD_OFFSET))(this, args);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYFISHPROGRESSBARWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,24 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_8695B985D9217C13.h"
+#include "unitysdk/System/Object.h"
+
+namespace System::Collections::Generic { template <typename T> class IComparer_1; }
+
+#define CLASS_1_2AA3CC97676AE2EA__CCTOR_OFFSET UNITYSDK_OFFSET(0x9DFC370)
+
+inline static constexpr unsigned int Class_1_2AA3CC97676AE2EA_TypeDefinitionIndex = 75912;
+
+class Class_1_2AA3CC97676AE2EA : public ::System::Object
+{
+public:
+	static ::System::Collections::Generic::IComparer_1<::Enum_3_8695B985D9217C13>** StaticGet_Field_1_0()
+	{
+		return (::System::Collections::Generic::IComparer_1<::Enum_3_8695B985D9217C13>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_2AA3CC97676AE2EA_TypeDefinitionIndex)->GetStaticField(0x36F20);
+	}
+
+	static ::System::Void _cctor()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_2AA3CC97676AE2EA__CCTOR_OFFSET))();
+	}
+};

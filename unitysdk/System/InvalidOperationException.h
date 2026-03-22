@@ -7,14 +7,14 @@ namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_INVALIDOPERATIONEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C8C530)
-#define SYSTEM_INVALIDOPERATIONEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C9BE20)
-#define SYSTEM_INVALIDOPERATIONEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15C9BE90)
-#define SYSTEM_INVALIDOPERATIONEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C9BD80)
+#define SYSTEM_INVALIDOPERATIONEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19ACF810)
+#define SYSTEM_INVALIDOPERATIONEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x19ACE7B0)
+#define SYSTEM_INVALIDOPERATIONEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x19AD1EC0)
+#define SYSTEM_INVALIDOPERATIONEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x19AD1E20)
 
 namespace System
 {
-	inline static constexpr unsigned int InvalidOperationException_TypeDefinitionIndex = 289;
+	inline static constexpr unsigned int InvalidOperationException_TypeDefinitionIndex = 276;
 
 	class InvalidOperationException : public ::System::SystemException
 	{

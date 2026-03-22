@@ -1,0 +1,389 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIMainCityStorePageController.h"
+#include "unitysdk/MoleMole/UIShoppingMallCasperPageController_TabType.h"
+
+class Class_1_7A0999DD62F5BF03;
+class Class_1_9631DA8CB6F86BD4;
+class Class_1_C8489A0F22314D2F;
+class Class_1_F57D00757009D1EB;
+class Class_2_6D66D882FDCDC0EA;
+class Class_2_6D66D882FDCDC0EA_Class_2_2E787E9E55FB75F3;
+class Class_2_8FC1A7735F246865;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UICasperShopContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+namespace System { template <typename T> class Action_1; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine::UI::Extension { class UITimeWidget; }
+
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_CANCELALLGOODHINT_OFFSET UNITYSDK_OFFSET(0xB278480)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_CHECKGOODHINT_OFFSET UNITYSDK_OFFSET(0xB278240)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_CLICKBACKTOMAINCITY_OFFSET UNITYSDK_OFFSET(0xB277990)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_CLICKTAB_OFFSET UNITYSDK_OFFSET(0xB278020)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_CLOSEALLIMPL_OFFSET UNITYSDK_OFFSET(0xB2787B0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_COUNTDOWN_OFFSET UNITYSDK_OFFSET(0xB279E50)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_DOBUY_OFFSET UNITYSDK_OFFSET(0xB278A00)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xB2759E0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_INITSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0xB2776F0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_INITTABBTNGROUP_OFFSET UNITYSDK_OFFSET(0xB276B50)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xB275BE0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_JUMPTOZEROSHOP_OFFSET UNITYSDK_OFFSET(0xB27A5E0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONCLICKDETAIL_OFFSET UNITYSDK_OFFSET(0xB277B00)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONCLICKGETAWAKENMAT_OFFSET UNITYSDK_OFFSET(0xB277930)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONCLICKTAB_OFFSET UNITYSDK_OFFSET(0xB278C70)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB2759F0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xB277E20)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xB2763C0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONRSPOPENZEROSHOP_OFFSET UNITYSDK_OFFSET(0xB27A410)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xB2768D0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONTABDATAUPDATE_OFFSET UNITYSDK_OFFSET(0xB2790D0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xB2774E0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB279F90)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB275A90)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB276480)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_POPSHOPTABLOCKEDTIPS_OFFSET UNITYSDK_OFFSET(0xB27AA50)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REFRESHAWAKENMATBTN_OFFSET UNITYSDK_OFFSET(0xB276170)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REFRESHBYCACHECONTEXT_OFFSET UNITYSDK_OFFSET(0xB276690)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REFRESHDETAILBTN_OFFSET UNITYSDK_OFFSET(0xB275F20)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REFRESHMAINBTN_OFFSET UNITYSDK_OFFSET(0xB276320)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REFRESHTOKENS_OFFSET UNITYSDK_OFFSET(0xB277140)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REQUESTANDOPENZEROSHOP_OFFSET UNITYSDK_OFFSET(0xB27A270)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REQUESTNEWTIME_OFFSET UNITYSDK_OFFSET(0xB279F00)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SELECTEDGOODS_OFFSET UNITYSDK_OFFSET(0xB278100)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SETCURGOODSLIST_OFFSET UNITYSDK_OFFSET(0xB2794C0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SETSCROLLHINT_OFFSET UNITYSDK_OFFSET(0xB276A10)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWAWAKENMATBTN_OFFSET UNITYSDK_OFFSET(0xB276110)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWCOUNTDOWN_OFFSET UNITYSDK_OFFSET(0xB2799F0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWDETAILBTN_OFFSET UNITYSDK_OFFSET(0xB275E90)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWMAINBTN_OFFSET UNITYSDK_OFFSET(0xB276250)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWTABLOCKTIPS_OFFSET UNITYSDK_OFFSET(0xB279250)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWTAB_OFFSET UNITYSDK_OFFSET(0xB2797D0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_TRYOPENZEROSHOP_OFFSET UNITYSDK_OFFSET(0xB27A020)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB27AD70)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER__INITSCROLLVIEW_B__42_0_OFFSET UNITYSDK_OFFSET(0xB27AF00)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER__INITVIEW_B__37_0_OFFSET UNITYSDK_OFFSET(0xB27ADC0)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER__INITVIEW_B__37_1_OFFSET UNITYSDK_OFFSET(0xB27AE20)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB27AF90)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xB27B000)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xB27B030)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xB27B090)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xB27B100)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB27B110)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB27B120)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB27B130)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIShoppingMallCasperPageController_TypeDefinitionIndex = 38982;
+
+	class UIShoppingMallCasperPageController : public ::MoleMole::UIMainCityStorePageController
+	{
+	public:
+		// static const ::System::Int32 CasperShopId = 0x4; // 0x0
+		// static const ::System::Int32 MiniscapeShop = 0x6; // 0x0
+		// static const ::System::Int32 SocialShopId = 0x9; // 0x0
+		// static const ::System::Int32 ABYSS_SHOP_TAB_ID = 0x191; // 0x0
+		// static const ::System::Int32 HADAL_SHOP_TAB_ID = 0x192; // 0x0
+		// static const ::System::Int32 AWAKEN_SHOP_TAB_ID = 0x193; // 0x0
+		::Class_2_6D66D882FDCDC0EA* _view; // 0x308
+		::MoleMole::UICasperShopContext* context; // 0x310
+		::Class_2_8FC1A7735F246865* _shopModel; // 0x318
+		::Class_1_C8489A0F22314D2F* _shopEntity; // 0x320
+		::System::Collections::Generic::List_1<::Class_1_7A0999DD62F5BF03*>* _shopTabList; // 0x328
+		::System::Collections::Generic::List_1<::Class_1_F57D00757009D1EB*>* _curGoodsList; // 0x330
+		::System::Int32 _curIndex; // 0x338
+		::System::Int32 _curGoodsCount; // 0x33C
+		::System::Int32 _curSelectGoodsIndex; // 0x340
+		::UnityEngine::UI::Extension::UITimeWidget* _timeWidget; // 0x348
+		::Foundation::Coroutine::CoroutineHandle _coroutine; // 0x350
+		::System::Boolean m_hideAllTabHint; // 0x354
+		::System::Boolean m_useTabHintInHadalShop; // 0x355
+		::System::Boolean m_onShowFinished; // 0x356
+		::Class_2_6D66D882FDCDC0EA_Class_2_2E787E9E55FB75F3* _tabBtnView; // 0x358
+		::System::Collections::Generic::List_1<::Class_1_F57D00757009D1EB*>* _toDeleteNewGoods; // 0x360
+		::MoleMole::UIShoppingMallCasperPageController_TabType m_curTabType; // 0x368
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Boolean ShowDetailBtn()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWDETAILBTN_OFFSET))(this);
+		}
+
+		::System::Void RefreshDetailBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REFRESHDETAILBTN_OFFSET))(this);
+		}
+
+		::System::Boolean ShowAwakenMatBtn()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWAWAKENMATBTN_OFFSET))(this);
+		}
+
+		::System::Void RefreshAwakenMatBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REFRESHAWAKENMATBTN_OFFSET))(this);
+		}
+
+		::System::Boolean ShowMainBtn()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWMAINBTN_OFFSET))(this);
+		}
+
+		::System::Void RefreshMainBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REFRESHMAINBTN_OFFSET))(this);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void RefreshByCacheContext()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REFRESHBYCACHECONTEXT_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void SetScrollHint()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SETSCROLLHINT_OFFSET))(this);
+		}
+
+		::System::Void RefreshTokens()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REFRESHTOKENS_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnClickGetAwakenMat()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONCLICKGETAWAKENMAT_OFFSET))(this);
+		}
+
+		::System::Void ClickBackToMainCity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_CLICKBACKTOMAINCITY_OFFSET))(this);
+		}
+
+		::System::Void OnClickDetail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONCLICKDETAIL_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void InitScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_INITSCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void InitTabBtnGroup(::System::Collections::Generic::List_1<::Class_1_7A0999DD62F5BF03*>* tabDataList, ::System::Int32 tabIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_7A0999DD62F5BF03*>*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_INITTABBTNGROUP_OFFSET))(this, tabDataList, tabIndex);
+		}
+
+		::System::Void ClickTab(::System::Int32 tabIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_CLICKTAB_OFFSET))(this, tabIndex);
+		}
+
+		::System::Void SelectedGoods(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SELECTEDGOODS_OFFSET))(this, index);
+		}
+
+		::System::Void CheckGoodHint(::Class_1_F57D00757009D1EB* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_F57D00757009D1EB*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_CHECKGOODHINT_OFFSET))(this, data);
+		}
+
+		::System::Void CancelAllGoodHint()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_CANCELALLGOODHINT_OFFSET))(this);
+		}
+
+		::System::Void CloseAllImpl()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_CLOSEALLIMPL_OFFSET))(this);
+		}
+
+		::System::Void DoBuy(::Class_1_9631DA8CB6F86BD4* param)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9631DA8CB6F86BD4*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_DOBUY_OFFSET))(this, param);
+		}
+
+		::System::Void OnClickTab(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONCLICKTAB_OFFSET))(this, index);
+		}
+
+		::System::Void SetCurGoodsList(::Class_1_7A0999DD62F5BF03* tabData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7A0999DD62F5BF03*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SETCURGOODSLIST_OFFSET))(this, tabData);
+		}
+
+		::System::Void ShowTab(::Class_1_7A0999DD62F5BF03* tabData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7A0999DD62F5BF03*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWTAB_OFFSET))(this, tabData);
+		}
+
+		::System::Void ShowTabLockTips(::Class_1_7A0999DD62F5BF03* tabData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7A0999DD62F5BF03*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWTABLOCKTIPS_OFFSET))(this, tabData);
+		}
+
+		::System::Void ShowCountDown(::Class_1_7A0999DD62F5BF03* tabData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7A0999DD62F5BF03*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_SHOWCOUNTDOWN_OFFSET))(this, tabData);
+		}
+
+		::System::Collections::Generic::IEnumerator_1<::System::Single>* CountDown(::Class_1_7A0999DD62F5BF03* tabData)
+		{
+			return ((::System::Collections::Generic::IEnumerator_1<::System::Single>*(*)(::PVOID, ::Class_1_7A0999DD62F5BF03*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_COUNTDOWN_OFFSET))(this, tabData);
+		}
+
+		::System::Void RequestNewTime(::Class_1_7A0999DD62F5BF03* tabData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7A0999DD62F5BF03*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REQUESTNEWTIME_OFFSET))(this, tabData);
+		}
+
+		::System::Void OnTabDataUpdate(::Class_1_7A0999DD62F5BF03* tabData, ::System::Boolean refreshScrollView)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7A0999DD62F5BF03*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONTABDATAUPDATE_OFFSET))(this, tabData, refreshScrollView);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		static ::System::Void TryOpenZeroShop(::System::Int32 shopTabID, ::System::Action_1<::System::Action*>* openPre)
+		{
+			return ((::System::Void(*)(::System::Int32, ::System::Action_1<::System::Action*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_TRYOPENZEROSHOP_OFFSET))(shopTabID, openPre);
+		}
+
+		static ::System::Void RequestAndOpenZeroShop(::System::Int32 shopTabID)
+		{
+			return ((::System::Void(*)(::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_REQUESTANDOPENZEROSHOP_OFFSET))(shopTabID);
+		}
+
+		static ::System::Void OnRspOpenZeroShop(::System::Int32 shopTabID, ::System::Action* onSuccessJumpPage)
+		{
+			return ((::System::Void(*)(::System::Int32, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_ONRSPOPENZEROSHOP_OFFSET))(shopTabID, onSuccessJumpPage);
+		}
+
+		static ::System::Void JumpToZeroShop(::System::Int32 shopTabID)
+		{
+			return ((::System::Void(*)(::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_JUMPTOZEROSHOP_OFFSET))(shopTabID);
+		}
+
+		static ::System::Void PopShopTabLockedTips(::System::Int32 shopTabID)
+		{
+			return ((::System::Void(*)(::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER_POPSHOPTABLOCKEDTIPS_OFFSET))(shopTabID);
+		}
+
+		::System::Void _InitView_b__37_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER__INITVIEW_B__37_0_OFFSET))(this);
+		}
+
+		::System::Void _InitView_b__37_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER__INITVIEW_B__37_1_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _InitScrollView_b__42_0(::System::Func_1<::MoleMole::UIControlReference*>* reference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER__INITSCROLLVIEW_B__42_0_OFFSET))(this, reference);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define NEWTONSOFT_JSON_UTILITIES_PROPERTYNAMETABLE_ENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x15DEF130)
+#define NEWTONSOFT_JSON_UTILITIES_PROPERTYNAMETABLE_ENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x1A33CE60)
 
 namespace Newtonsoft::Json::Utilities
 {
-	inline static constexpr unsigned int PropertyNameTable_Entry_TypeDefinitionIndex = 8107;
+	inline static constexpr unsigned int PropertyNameTable_Entry_TypeDefinitionIndex = 6937;
 
 	class PropertyNameTable_Entry : public ::System::Object
 	{

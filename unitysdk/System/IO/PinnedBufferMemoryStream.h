@@ -3,13 +3,14 @@
 #include "unitysdk/System/IO/UnmanagedMemoryStream.h"
 #include "unitysdk/System/Runtime/InteropServices/GCHandle.h"
 
-#define SYSTEM_IO_PINNEDBUFFERMEMORYSTREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x15C8C2F0)
-#define SYSTEM_IO_PINNEDBUFFERMEMORYSTREAM_FINALIZE_OFFSET UNITYSDK_OFFSET(0x15C8C230)
-#define SYSTEM_IO_PINNEDBUFFERMEMORYSTREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x15C8BF20)
+#define SYSTEM_IO_PINNEDBUFFERMEMORYSTREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x19886EF0)
+#define SYSTEM_IO_PINNEDBUFFERMEMORYSTREAM_FINALIZE_OFFSET UNITYSDK_OFFSET(0x19886E30)
+#define SYSTEM_IO_PINNEDBUFFERMEMORYSTREAM__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19886D20)
+#define SYSTEM_IO_PINNEDBUFFERMEMORYSTREAM__CTOR_OFFSET UNITYSDK_OFFSET(0x19886CE0)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int PinnedBufferMemoryStream_TypeDefinitionIndex = 681;
+	inline static constexpr unsigned int PinnedBufferMemoryStream_TypeDefinitionIndex = 649;
 
 	class PinnedBufferMemoryStream : public ::System::IO::UnmanagedMemoryStream
 	{
@@ -17,9 +18,14 @@ namespace System::IO
 		::Il2CppArray<::System::Byte>* _array; // 0x68
 		::System::Runtime::InteropServices::GCHandle _pinningHandle; // 0x70
 
-		::System::Void _ctor(::Il2CppArray<::System::Byte>* array)
+		::System::Void _ctor()
 		{
-			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + SYSTEM_IO_PINNEDBUFFERMEMORYSTREAM__CTOR_OFFSET))(this, array);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_IO_PINNEDBUFFERMEMORYSTREAM__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::Il2CppArray<::System::Byte>* array)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + SYSTEM_IO_PINNEDBUFFERMEMORYSTREAM__CTOR_1_OFFSET))(this, array);
 		}
 
 		::System::Void Finalize()

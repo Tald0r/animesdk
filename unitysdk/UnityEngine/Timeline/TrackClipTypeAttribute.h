@@ -1,29 +1,30 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
-#include "unitysdk/UnityEngine/Timeline/CreateClipFlags.h"
 
-namespace System { class String; }
 namespace System { class Type; }
 
-#define UNITYENGINE_TIMELINE_TRACKCLIPTYPEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x181AE950)
+#define UNITYENGINE_TIMELINE_TRACKCLIPTYPEATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A730A40)
+#define UNITYENGINE_TIMELINE_TRACKCLIPTYPEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A730A30)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TrackClipTypeAttribute_TypeDefinitionIndex = 29024;
+	inline static constexpr unsigned int TrackClipTypeAttribute_TypeDefinitionIndex = 29373;
 
 	class TrackClipTypeAttribute : public ::System::Attribute
 	{
 	public:
-		::System::String* showIfMethod; // 0x10
-		::System::Type* inspectedType; // 0x18
-		::System::Boolean isHideSubClass; // 0x20
-		::System::Boolean allowAutoCreate; // 0x21
-		::UnityEngine::Timeline::CreateClipFlags clipFlags; // 0x24
+		::System::Type* inspectedType; // 0x10
+		::System::Boolean allowAutoCreate; // 0x18
 
-		::System::Void _ctor(::System::Type* clipClass, ::System::Boolean autoCreate, ::UnityEngine::Timeline::CreateClipFlags createFlags, ::System::String* showIf, ::System::Boolean hideSubClass)
+		::System::Void _ctor(::System::Type* clipClass)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Type*, ::System::Boolean, ::UnityEngine::Timeline::CreateClipFlags, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TRACKCLIPTYPEATTRIBUTE__CTOR_OFFSET))(this, clipClass, autoCreate, createFlags, showIf, hideSubClass);
+			return ((::System::Void(*)(::PVOID, ::System::Type*))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TRACKCLIPTYPEATTRIBUTE__CTOR_OFFSET))(this, clipClass);
+		}
+
+		::System::Void _ctor_1(::System::Type* clipClass, ::System::Boolean allowAutoCreate)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TRACKCLIPTYPEATTRIBUTE__CTOR_1_OFFSET))(this, clipClass, allowAutoCreate);
 		}
 	};
 }

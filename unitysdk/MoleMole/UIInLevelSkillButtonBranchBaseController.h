@@ -1,0 +1,82 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/LogicButtonInputType.h"
+#include "unitysdk/MoleMole/UISkillButtonBaseController.h"
+
+class Class_1_6A3A26AD0CB7F995;
+namespace System { class Action; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_GET_BUTTONSKILLNAME_OFFSET UNITYSDK_OFFSET(0x8963F20)
+#define MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_GET_KEYBUTTONCODE_OFFSET UNITYSDK_OFFSET(0x8963F30)
+#define MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_ONHIDEBTN_OFFSET UNITYSDK_OFFSET(0x8964250)
+#define MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_ONSHOWBTN_OFFSET UNITYSDK_OFFSET(0x8964160)
+#define MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_SHOULDSKILLBUTTONHANDLEINPUT_OFFSET UNITYSDK_OFFSET(0x8963F40)
+#define MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_STARTBLOCK_OFFSET UNITYSDK_OFFSET(0x8964070)
+#define MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_STOPBLOCK_OFFSET UNITYSDK_OFFSET(0x89640E0)
+#define MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_WAITUNTILNOBLOCK_OFFSET UNITYSDK_OFFSET(0x8963FC0)
+#define MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8964340)
+#define MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER___BASE_SHOULDSKILLBUTTONHANDLEINPUT_OFFSET UNITYSDK_OFFSET(0x8964350)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelSkillButtonBranchBaseController_TypeDefinitionIndex = 56440;
+
+	class UIInLevelSkillButtonBranchBaseController : public ::MoleMole::UISkillButtonBaseController
+	{
+	public:
+		::System::Boolean _isBlocking; // 0x410
+		::System::Action* _afterBlock; // 0x418
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::String* get_ButtonSkillName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_GET_BUTTONSKILLNAME_OFFSET))(this);
+		}
+
+		::MoleMole::LogicButtonInputType get_KeyButtonCode()
+		{
+			return ((::MoleMole::LogicButtonInputType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_GET_KEYBUTTONCODE_OFFSET))(this);
+		}
+
+		::System::Boolean ShouldSkillButtonHandleInput(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_SHOULDSKILLBUTTONHANDLEINPUT_OFFSET))(this, inputAction);
+		}
+
+		::System::Void WaitUntilNoBlock(::System::Action* afterBlock)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_WAITUNTILNOBLOCK_OFFSET))(this, afterBlock);
+		}
+
+		::System::Void StartBlock()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_STARTBLOCK_OFFSET))(this);
+		}
+
+		::System::Void StopBlock()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_STOPBLOCK_OFFSET))(this);
+		}
+
+		::System::Void OnShowBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_ONSHOWBTN_OFFSET))(this);
+		}
+
+		::System::Void OnHideBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER_ONHIDEBTN_OFFSET))(this);
+		}
+
+		::System::Boolean __base_ShouldSkillButtonHandleInput(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELSKILLBUTTONBRANCHBASECONTROLLER___BASE_SHOULDSKILLBUTTONHANDLEINPUT_OFFSET))(this, P0);
+		}
+	};
+}

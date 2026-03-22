@@ -1,0 +1,32 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Config/ConfigUIBaseActionNode.h"
+
+class Class_1_D72537470FC2F779;
+namespace MoleMole::Config { class BoolUISpecialNum; }
+namespace MoleMole::Config { class StringUISpecialNum; }
+
+#define MOLEMOLE_CONFIG_CONFIGSETGAMEOBJECTACTIVECOMMONNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xCDB8750)
+#define MOLEMOLE_CONFIG_CONFIGSETGAMEOBJECTACTIVECOMMONNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xCDB87E0)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int ConfigSetGameObjectActiveCommonNode_TypeDefinitionIndex = 44073;
+
+	class ConfigSetGameObjectActiveCommonNode : public ::MoleMole::Config::ConfigUIBaseActionNode
+	{
+	public:
+		::MoleMole::Config::BoolUISpecialNum* IsActive; // 0x18
+		::MoleMole::Config::StringUISpecialNum* GameObjectKey; // 0x20
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGSETGAMEOBJECTACTIVECOMMONNODE__CTOR_OFFSET))(this);
+		}
+
+		::Class_1_D72537470FC2F779* GetUIAnimationNode()
+		{
+			return ((::Class_1_D72537470FC2F779*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGSETGAMEOBJECTACTIVECOMMONNODE_GETUIANIMATIONNODE_OFFSET))(this);
+		}
+	};
+}

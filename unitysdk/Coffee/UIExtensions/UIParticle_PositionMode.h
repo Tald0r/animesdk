@@ -3,7 +3,7 @@
 
 namespace Coffee::UIExtensions
 {
-	inline static constexpr unsigned int UIParticle_PositionMode_TypeDefinitionIndex = 33900;
+	inline static constexpr unsigned int UIParticle_PositionMode_TypeDefinitionIndex = 31188;
 
 	enum class UIParticle_PositionMode : ::System::Int32
 	{

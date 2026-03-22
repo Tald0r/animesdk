@@ -1,0 +1,100 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_208CC9941471731A_892;
+class Class_2_45E82FF26A2581DE;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace UnityEngine::UI::Extension { class UITabButton; }
+
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_GET_TABBUTTON_OFFSET UNITYSDK_OFFSET(0xC81ECA0)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC81E3D0)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC81E470)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC81E270)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC81E320)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_SETLEVELTEMPLATE_OFFSET UNITYSDK_OFFSET(0xC81E550)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_SETLOCKED_OFFSET UNITYSDK_OFFSET(0xC81EA80)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_SETSELECTED_OFFSET UNITYSDK_OFFSET(0xC81EB50)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC81ECC0)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC81ECF0)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC81ED60)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC81EDE0)
+#define MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC81EE40)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIOverlordFeastMissionTabWidgetController_TypeDefinitionIndex = 69444;
+
+	class UIOverlordFeastMissionTabWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_45E82FF26A2581DE* _view; // 0x2A0
+		::System::Boolean _isLocked; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetLevelTemplate(::Class_2_208CC9941471731A_892* template_)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_892*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_SETLEVELTEMPLATE_OFFSET))(this, template_);
+		}
+
+		::System::Void SetSelected(::System::Boolean select)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_SETSELECTED_OFFSET))(this, select);
+		}
+
+		::UnityEngine::UI::Extension::UITabButton* get_TabButton()
+		{
+			return ((::UnityEngine::UI::Extension::UITabButton*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_GET_TABBUTTON_OFFSET))(this);
+		}
+
+		::System::Void SetLocked(::System::Boolean locked)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER_SETLOCKED_OFFSET))(this, locked);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTMISSIONTABWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

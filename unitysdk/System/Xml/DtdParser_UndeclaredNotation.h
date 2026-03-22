@@ -4,17 +4,17 @@
 
 namespace System { class String; }
 
-#define SYSTEM_XML_DTDPARSER_UNDECLAREDNOTATION__CTOR_OFFSET UNITYSDK_OFFSET(0x17D50350)
+#define SYSTEM_XML_DTDPARSER_UNDECLAREDNOTATION__CTOR_OFFSET UNITYSDK_OFFSET(0x19CA04F0)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int DtdParser_UndeclaredNotation_TypeDefinitionIndex = 1918;
+	inline static constexpr unsigned int DtdParser_UndeclaredNotation_TypeDefinitionIndex = 1805;
 
 	class DtdParser_UndeclaredNotation : public ::System::Object
 	{
 	public:
-		::System::Xml::DtdParser_UndeclaredNotation* next; // 0x10
-		::System::String* name; // 0x18
+		::System::String* name; // 0x10
+		::System::Xml::DtdParser_UndeclaredNotation* next; // 0x18
 		::System::Int32 lineNo; // 0x20
 		::System::Int32 linePos; // 0x24
 

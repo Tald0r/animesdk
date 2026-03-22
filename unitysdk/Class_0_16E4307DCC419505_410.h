@@ -1,12 +1,8 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/UnityEngine/Vector3.h"
+#include "unitysdk/Struct_2_519740F826A15881.h"
 
-namespace RPG::GameCore { class AdventureCharacterController; }
-namespace RPG::GameCore { class GameEntity; }
-namespace System { class Object; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_410_TypeDefinitionIndex = 44895;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_410_TypeDefinitionIndex = 45833;
 
 class Class_0_16E4307DCC419505_410
 {

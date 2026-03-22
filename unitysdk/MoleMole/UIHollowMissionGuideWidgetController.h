@@ -1,0 +1,125 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_60638234271CCDB8_10;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIHollowMissionGuidePointWidgetController; }
+namespace MoleMole::HollowChessboard { class HollowEntity; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class HashSet_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Camera; }
+
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_ADDTARGETENTITY_OFFSET UNITYSDK_OFFSET(0xA388660)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_CREATEMISSIONGUIDEPOINT_OFFSET UNITYSDK_OFFSET(0xA387F20)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_HIDEALL_OFFSET UNITYSDK_OFFSET(0xA388AB0)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_HIDEMISSIONGUIDEPOINT_OFFSET UNITYSDK_OFFSET(0xA388D00)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA388340)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3883E0)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA387DD0)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA388290)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_REMOVETARGETENTITY_OFFSET UNITYSDK_OFFSET(0xA3888D0)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_SHOWMISSIONGUIDEPOINT_OFFSET UNITYSDK_OFFSET(0xA388C20)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_TICK_OFFSET UNITYSDK_OFFSET(0xA3884C0)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA388D80)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA388EB0)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA388F20)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA388FA0)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA389000)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowMissionGuideWidgetController_TypeDefinitionIndex = 62444;
+
+	class UIHollowMissionGuideWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::Int32 Init_SHOW = 0x1; // 0x0
+		// static const ::System::Int32 MAX_SHOW = 0x7FFFFFFF; // 0x0
+		::Class_2_60638234271CCDB8_10* _view; // 0x2A0
+		::System::Collections::Generic::HashSet_1<::System::UInt32>* _targetEntityIDs; // 0x2A8
+		::System::Collections::Generic::List_1<::MoleMole::UIHollowMissionGuidePointWidgetController*>* _guidePointList; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Tick(::UnityEngine::Camera* cam, ::System::Single deltaTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Camera*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_TICK_OFFSET))(this, cam, deltaTime);
+		}
+
+		::System::Boolean AddTargetEntity(::MoleMole::HollowChessboard::HollowEntity* entity)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::HollowChessboard::HollowEntity*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_ADDTARGETENTITY_OFFSET))(this, entity);
+		}
+
+		::System::Void RemoveTargetEntity(::System::UInt32 entityID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_REMOVETARGETENTITY_OFFSET))(this, entityID);
+		}
+
+		::System::Void HideAll()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_HIDEALL_OFFSET))(this);
+		}
+
+		::System::Void ShowMissionGuidePoint(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_SHOWMISSIONGUIDEPOINT_OFFSET))(this, args);
+		}
+
+		::System::Void HideMissionGuidePoint(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_HIDEMISSIONGUIDEPOINT_OFFSET))(this, args);
+		}
+
+		::MoleMole::UIHollowMissionGuidePointWidgetController* CreateMissionGuidePoint()
+		{
+			return ((::MoleMole::UIHollowMissionGuidePointWidgetController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER_CREATEMISSIONGUIDEPOINT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

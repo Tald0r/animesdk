@@ -17,28 +17,28 @@ namespace MiHoYo::SDK { class UICameraConfig; }
 namespace MiHoYo::SDK { class WebViewModel; }
 namespace System { class String; }
 
-#define MIHOYO_SDK_CONFIGMODEL_ISMAINTHREAD_OFFSET UNITYSDK_OFFSET(0x1572EAE0)
-#define MIHOYO_SDK_CONFIGMODEL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1572EB90)
-#define MIHOYO_SDK_CONFIGMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0x1572E600)
+#define MIHOYO_SDK_CONFIGMODEL_ISMAINTHREAD_OFFSET UNITYSDK_OFFSET(0x18A12180)
+#define MIHOYO_SDK_CONFIGMODEL__CCTOR_OFFSET UNITYSDK_OFFSET(0x18A12230)
+#define MIHOYO_SDK_CONFIGMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0x18A11EC0)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int ConfigModel_TypeDefinitionIndex = 6776;
+	inline static constexpr unsigned int ConfigModel_TypeDefinitionIndex = 17906;
 
 	class ConfigModel : public ::System::Object
 	{
 	public:
 		static ::System::String** StaticGet_launcherId()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(ConfigModel_TypeDefinitionIndex)->GetStaticField(0x3AF0);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(ConfigModel_TypeDefinitionIndex)->GetStaticField(0x8F90);
 		}
 		static ::System::String** StaticGet_loginLifecycleId()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(ConfigModel_TypeDefinitionIndex)->GetStaticField(0x3AF8);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(ConfigModel_TypeDefinitionIndex)->GetStaticField(0x8F98);
 		}
 		static ::MiHoYo::SDK::ConfigModel** StaticGet_Instance()
 		{
-			return (::MiHoYo::SDK::ConfigModel**)Il2CppClass::FromTypeDefinitionIndex(ConfigModel_TypeDefinitionIndex)->GetStaticField(0x3B00);
+			return (::MiHoYo::SDK::ConfigModel**)Il2CppClass::FromTypeDefinitionIndex(ConfigModel_TypeDefinitionIndex)->GetStaticField(0x8FA0);
 		}
 		::MiHoYo::SDK::ColorModel* color; // 0x10
 		::MiHoYo::SDK::SkinColorModel* skinColor; // 0x18

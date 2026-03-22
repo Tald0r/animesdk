@@ -1,0 +1,49 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_4;
+class Class_1_D45ADB5492AB938B;
+class Class_2_69FE2A2F26EAE95C;
+namespace Google::Protobuf::Reflection { class ReflectionUtil_IExtensionReflectionHelper; }
+
+#define CLASS_1_04EFAAB050779BED_METHOD_1_43A46E5F9FAC62B8_OFFSET UNITYSDK_OFFSET(0x1ACD8EA0)
+#define CLASS_1_04EFAAB050779BED_METHOD_1_72D0379EC6B2445B_OFFSET UNITYSDK_OFFSET(0x1ACD8F90)
+#define CLASS_1_04EFAAB050779BED_METHOD_1_9AD043FF7578EFB2_OFFSET UNITYSDK_OFFSET(0x1ACD8EB0)
+#define CLASS_1_04EFAAB050779BED_METHOD_1_DE6AC1E177B63F18_OFFSET UNITYSDK_OFFSET(0x1ACD9070)
+#define CLASS_1_04EFAAB050779BED__CTOR_OFFSET UNITYSDK_OFFSET(0x1ACD8E30)
+
+inline static constexpr unsigned int Class_1_04EFAAB050779BED_TypeDefinitionIndex = 9316;
+
+class Class_1_04EFAAB050779BED : public ::System::Object
+{
+public:
+	::Class_2_69FE2A2F26EAE95C* Field_1_2; // 0x10
+	::Class_1_D45ADB5492AB938B* Field_1_0; // 0x18
+	::Google::Protobuf::Reflection::ReflectionUtil_IExtensionReflectionHelper* Field_1_1; // 0x20
+
+	::System::Void _ctor(::Class_2_69FE2A2F26EAE95C* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_69FE2A2F26EAE95C*))((::PBYTE)hIl2Cpp + CLASS_1_04EFAAB050779BED__CTOR_OFFSET))(this, a1);
+	}
+
+	::Class_2_69FE2A2F26EAE95C* Method_1_43A46E5F9FAC62B8()
+	{
+		return ((::Class_2_69FE2A2F26EAE95C*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_04EFAAB050779BED_METHOD_1_43A46E5F9FAC62B8_OFFSET))(this);
+	}
+
+	::System::Void Method_1_9AD043FF7578EFB2(::Class_0_16E4307DCC419505_4* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_4*))((::PBYTE)hIl2Cpp + CLASS_1_04EFAAB050779BED_METHOD_1_9AD043FF7578EFB2_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Method_1_72D0379EC6B2445B(::Class_0_16E4307DCC419505_4* a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Class_0_16E4307DCC419505_4*))((::PBYTE)hIl2Cpp + CLASS_1_04EFAAB050779BED_METHOD_1_72D0379EC6B2445B_OFFSET))(this, a1);
+	}
+
+	::System::Object* Method_1_DE6AC1E177B63F18(::Class_0_16E4307DCC419505_4* a1)
+	{
+		return ((::System::Object*(*)(::PVOID, ::Class_0_16E4307DCC419505_4*))((::PBYTE)hIl2Cpp + CLASS_1_04EFAAB050779BED_METHOD_1_DE6AC1E177B63F18_OFFSET))(this, a1);
+	}
+};

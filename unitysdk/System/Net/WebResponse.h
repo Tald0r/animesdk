@@ -3,32 +3,42 @@
 #include "unitysdk/System/MarshalByRefObject.h"
 #include "unitysdk/System/Runtime/Serialization/StreamingContext.h"
 
+namespace System { class String; }
 namespace System { class Uri; }
 namespace System::IO { class Stream; }
 namespace System::Net { class WebHeaderCollection; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_NET_WEBRESPONSE_CLOSE_OFFSET UNITYSDK_OFFSET(0x17F18670)
-#define SYSTEM_NET_WEBRESPONSE_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x17F186D0)
-#define SYSTEM_NET_WEBRESPONSE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17F18680)
-#define SYSTEM_NET_WEBRESPONSE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x17F18660)
-#define SYSTEM_NET_WEBRESPONSE_GETRESPONSESTREAM_OFFSET UNITYSDK_OFFSET(0x17F18770)
-#define SYSTEM_NET_WEBRESPONSE_GET_CONTENTLENGTH_OFFSET UNITYSDK_OFFSET(0x17F18720)
-#define SYSTEM_NET_WEBRESPONSE_GET_HEADERS_OFFSET UNITYSDK_OFFSET(0x17F18810)
-#define SYSTEM_NET_WEBRESPONSE_GET_RESPONSEURI_OFFSET UNITYSDK_OFFSET(0x17F187C0)
-#define SYSTEM_NET_WEBRESPONSE_SYSTEM_RUNTIME_SERIALIZATION_ISERIALIZABLE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x17F18630)
-#define SYSTEM_NET_WEBRESPONSE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F18620)
-#define SYSTEM_NET_WEBRESPONSE__CTOR_OFFSET UNITYSDK_OFFSET(0x17F18610)
+#define SYSTEM_NET_WEBRESPONSE_CLOSE_OFFSET UNITYSDK_OFFSET(0x19FE2640)
+#define SYSTEM_NET_WEBRESPONSE_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x19FE26A0)
+#define SYSTEM_NET_WEBRESPONSE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x19FE2650)
+#define SYSTEM_NET_WEBRESPONSE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x19FE2630)
+#define SYSTEM_NET_WEBRESPONSE_GETRESPONSESTREAM_OFFSET UNITYSDK_OFFSET(0x19FE2880)
+#define SYSTEM_NET_WEBRESPONSE_GET_CONTENTLENGTH_OFFSET UNITYSDK_OFFSET(0x19FE2740)
+#define SYSTEM_NET_WEBRESPONSE_GET_CONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x19FE27E0)
+#define SYSTEM_NET_WEBRESPONSE_GET_HEADERS_OFFSET UNITYSDK_OFFSET(0x19FE2920)
+#define SYSTEM_NET_WEBRESPONSE_GET_ISCACHEFRESH_OFFSET UNITYSDK_OFFSET(0x19FE2710)
+#define SYSTEM_NET_WEBRESPONSE_GET_ISFROMCACHE_OFFSET UNITYSDK_OFFSET(0x19FE26F0)
+#define SYSTEM_NET_WEBRESPONSE_GET_ISMUTUALLYAUTHENTICATED_OFFSET UNITYSDK_OFFSET(0x19FE2730)
+#define SYSTEM_NET_WEBRESPONSE_GET_RESPONSEURI_OFFSET UNITYSDK_OFFSET(0x19FE28D0)
+#define SYSTEM_NET_WEBRESPONSE_GET_SUPPORTSHEADERS_OFFSET UNITYSDK_OFFSET(0x19FE2970)
+#define SYSTEM_NET_WEBRESPONSE_SET_CONTENTLENGTH_OFFSET UNITYSDK_OFFSET(0x19FE2790)
+#define SYSTEM_NET_WEBRESPONSE_SET_CONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x19FE2830)
+#define SYSTEM_NET_WEBRESPONSE_SET_INTERNALSETFROMCACHE_OFFSET UNITYSDK_OFFSET(0x19FE2700)
+#define SYSTEM_NET_WEBRESPONSE_SET_INTERNALSETISCACHEFRESH_OFFSET UNITYSDK_OFFSET(0x19FE2720)
+#define SYSTEM_NET_WEBRESPONSE_SYSTEM_RUNTIME_SERIALIZATION_ISERIALIZABLE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x19FE2600)
+#define SYSTEM_NET_WEBRESPONSE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19FE25F0)
+#define SYSTEM_NET_WEBRESPONSE__CTOR_OFFSET UNITYSDK_OFFSET(0x19FE25E0)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int WebResponse_TypeDefinitionIndex = 2752;
+	inline static constexpr unsigned int WebResponse_TypeDefinitionIndex = 3360;
 
 	class WebResponse : public ::System::MarshalByRefObject
 	{
 	public:
-		::System::Boolean m_IsFromCache; // 0x18
-		::System::Boolean m_IsCacheFresh; // 0x19
+		::System::Boolean m_IsCacheFresh; // 0x18
+		::System::Boolean m_IsFromCache; // 0x19
 
 		::System::Void _ctor()
 		{
@@ -65,9 +75,49 @@ namespace System::Net
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_DISPOSE_1_OFFSET))(this, disposing);
 		}
 
+		::System::Boolean get_IsFromCache()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_GET_ISFROMCACHE_OFFSET))(this);
+		}
+
+		::System::Void set_InternalSetFromCache(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_SET_INTERNALSETFROMCACHE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsCacheFresh()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_GET_ISCACHEFRESH_OFFSET))(this);
+		}
+
+		::System::Void set_InternalSetIsCacheFresh(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_SET_INTERNALSETISCACHEFRESH_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsMutuallyAuthenticated()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_GET_ISMUTUALLYAUTHENTICATED_OFFSET))(this);
+		}
+
 		::System::Int64 get_ContentLength()
 		{
 			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_GET_CONTENTLENGTH_OFFSET))(this);
+		}
+
+		::System::Void set_ContentLength(::System::Int64 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_SET_CONTENTLENGTH_OFFSET))(this, value);
+		}
+
+		::System::String* get_ContentType()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_GET_CONTENTTYPE_OFFSET))(this);
+		}
+
+		::System::Void set_ContentType(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_SET_CONTENTTYPE_OFFSET))(this, value);
 		}
 
 		::System::IO::Stream* GetResponseStream()
@@ -83,6 +133,11 @@ namespace System::Net
 		::System::Net::WebHeaderCollection* get_Headers()
 		{
 			return ((::System::Net::WebHeaderCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_GET_HEADERS_OFFSET))(this);
+		}
+
+		::System::Boolean get_SupportsHeaders()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_WEBRESPONSE_GET_SUPPORTSHEADERS_OFFSET))(this);
 		}
 	};
 }

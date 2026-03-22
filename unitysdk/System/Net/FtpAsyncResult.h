@@ -9,38 +9,41 @@ namespace System::Net { class FtpWebResponse; }
 namespace System::Threading { class ManualResetEvent; }
 namespace System::Threading { class WaitHandle; }
 
-#define SYSTEM_NET_FTPASYNCRESULT_DOCALLBACK_OFFSET UNITYSDK_OFFSET(0x17EBDC70)
-#define SYSTEM_NET_FTPASYNCRESULT_GET_ASYNCSTATE_OFFSET UNITYSDK_OFFSET(0x17EBD820)
-#define SYSTEM_NET_FTPASYNCRESULT_GET_ASYNCWAITHANDLE_OFFSET UNITYSDK_OFFSET(0x17EBD830)
-#define SYSTEM_NET_FTPASYNCRESULT_GET_COMPLETEDSYNCHRONOUSLY_OFFSET UNITYSDK_OFFSET(0x17EBD920)
-#define SYSTEM_NET_FTPASYNCRESULT_GET_EXCEPTION_OFFSET UNITYSDK_OFFSET(0x17EBD9F0)
-#define SYSTEM_NET_FTPASYNCRESULT_GET_GOTEXCEPTION_OFFSET UNITYSDK_OFFSET(0x17EBD9E0)
-#define SYSTEM_NET_FTPASYNCRESULT_GET_ISCOMPLETED_OFFSET UNITYSDK_OFFSET(0x17EBD930)
-#define SYSTEM_NET_FTPASYNCRESULT_GET_RESPONSE_OFFSET UNITYSDK_OFFSET(0x17EBDA00)
-#define SYSTEM_NET_FTPASYNCRESULT_GET_STREAM_OFFSET UNITYSDK_OFFSET(0x17EBDA10)
-#define SYSTEM_NET_FTPASYNCRESULT_SETCOMPLETED_1_OFFSET UNITYSDK_OFFSET(0x17EBDCC0)
-#define SYSTEM_NET_FTPASYNCRESULT_SETCOMPLETED_2_OFFSET UNITYSDK_OFFSET(0x17EBDCD0)
-#define SYSTEM_NET_FTPASYNCRESULT_SETCOMPLETED_OFFSET UNITYSDK_OFFSET(0x17EBDB20)
-#define SYSTEM_NET_FTPASYNCRESULT_SET_STREAM_OFFSET UNITYSDK_OFFSET(0x17EBDA20)
-#define SYSTEM_NET_FTPASYNCRESULT_WAITUNTILCOMPLETE_OFFSET UNITYSDK_OFFSET(0x17EBDA30)
-#define SYSTEM_NET_FTPASYNCRESULT__CTOR_OFFSET UNITYSDK_OFFSET(0x17EBD7F0)
+#define SYSTEM_NET_FTPASYNCRESULT_DOCALLBACK_OFFSET UNITYSDK_OFFSET(0x18F56500)
+#define SYSTEM_NET_FTPASYNCRESULT_GET_ASYNCSTATE_OFFSET UNITYSDK_OFFSET(0x18F55FE0)
+#define SYSTEM_NET_FTPASYNCRESULT_GET_ASYNCWAITHANDLE_OFFSET UNITYSDK_OFFSET(0x18F55FF0)
+#define SYSTEM_NET_FTPASYNCRESULT_GET_COMPLETEDSYNCHRONOUSLY_OFFSET UNITYSDK_OFFSET(0x18F560E0)
+#define SYSTEM_NET_FTPASYNCRESULT_GET_EXCEPTION_OFFSET UNITYSDK_OFFSET(0x18F561B0)
+#define SYSTEM_NET_FTPASYNCRESULT_GET_GOTEXCEPTION_OFFSET UNITYSDK_OFFSET(0x18F561A0)
+#define SYSTEM_NET_FTPASYNCRESULT_GET_ISCOMPLETED_OFFSET UNITYSDK_OFFSET(0x18F560F0)
+#define SYSTEM_NET_FTPASYNCRESULT_GET_RESPONSE_OFFSET UNITYSDK_OFFSET(0x18F561C0)
+#define SYSTEM_NET_FTPASYNCRESULT_GET_STREAM_OFFSET UNITYSDK_OFFSET(0x18F561E0)
+#define SYSTEM_NET_FTPASYNCRESULT_RESET_OFFSET UNITYSDK_OFFSET(0x18F56570)
+#define SYSTEM_NET_FTPASYNCRESULT_SETCOMPLETED_1_OFFSET UNITYSDK_OFFSET(0x18F56550)
+#define SYSTEM_NET_FTPASYNCRESULT_SETCOMPLETED_2_OFFSET UNITYSDK_OFFSET(0x18F56560)
+#define SYSTEM_NET_FTPASYNCRESULT_SETCOMPLETED_OFFSET UNITYSDK_OFFSET(0x18F563D0)
+#define SYSTEM_NET_FTPASYNCRESULT_SET_RESPONSE_OFFSET UNITYSDK_OFFSET(0x18F561D0)
+#define SYSTEM_NET_FTPASYNCRESULT_SET_STREAM_OFFSET UNITYSDK_OFFSET(0x18F561F0)
+#define SYSTEM_NET_FTPASYNCRESULT_WAITUNTILCOMPLETE_1_OFFSET UNITYSDK_OFFSET(0x18F562E0)
+#define SYSTEM_NET_FTPASYNCRESULT_WAITUNTILCOMPLETE_OFFSET UNITYSDK_OFFSET(0x18F56200)
+#define SYSTEM_NET_FTPASYNCRESULT__CTOR_OFFSET UNITYSDK_OFFSET(0x18F55FB0)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int FtpAsyncResult_TypeDefinitionIndex = 2817;
+	inline static constexpr unsigned int FtpAsyncResult_TypeDefinitionIndex = 3511;
 
 	class FtpAsyncResult : public ::System::Object
 	{
 	public:
-		::System::IO::Stream* stream; // 0x10
-		::System::AsyncCallback* callback; // 0x18
-		::System::Exception* exception; // 0x20
-		::System::Net::FtpWebResponse* response; // 0x28
-		::System::Object* state; // 0x30
-		::System::Threading::ManualResetEvent* waitHandle; // 0x38
-		::System::Object* locker; // 0x40
-		::System::Boolean synch; // 0x48
-		::System::Boolean completed; // 0x49
+		::System::Net::FtpWebResponse* response; // 0x10
+		::System::Object* state; // 0x18
+		::System::Threading::ManualResetEvent* waitHandle; // 0x20
+		::System::Object* locker; // 0x28
+		::System::IO::Stream* stream; // 0x30
+		::System::Exception* exception; // 0x38
+		::System::AsyncCallback* callback; // 0x40
+		::System::Boolean completed; // 0x48
+		::System::Boolean synch; // 0x49
 
 		::System::Void _ctor(::System::AsyncCallback* callback, ::System::Object* state)
 		{
@@ -82,6 +85,11 @@ namespace System::Net
 			return ((::System::Net::FtpWebResponse*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPASYNCRESULT_GET_RESPONSE_OFFSET))(this);
 		}
 
+		::System::Void set_Response(::System::Net::FtpWebResponse* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::FtpWebResponse*))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPASYNCRESULT_SET_RESPONSE_OFFSET))(this, value);
+		}
+
 		::System::IO::Stream* get_Stream()
 		{
 			return ((::System::IO::Stream*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPASYNCRESULT_GET_STREAM_OFFSET))(this);
@@ -92,9 +100,14 @@ namespace System::Net
 			return ((::System::Void(*)(::PVOID, ::System::IO::Stream*))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPASYNCRESULT_SET_STREAM_OFFSET))(this, value);
 		}
 
-		::System::Boolean WaitUntilComplete(::System::Int32 timeout, ::System::Boolean exitContext)
+		::System::Void WaitUntilComplete()
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPASYNCRESULT_WAITUNTILCOMPLETE_OFFSET))(this, timeout, exitContext);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPASYNCRESULT_WAITUNTILCOMPLETE_OFFSET))(this);
+		}
+
+		::System::Boolean WaitUntilComplete_1(::System::Int32 timeout, ::System::Boolean exitContext)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPASYNCRESULT_WAITUNTILCOMPLETE_1_OFFSET))(this, timeout, exitContext);
 		}
 
 		::System::Void SetCompleted(::System::Boolean synch, ::System::Exception* exc, ::System::Net::FtpWebResponse* response)
@@ -115,6 +128,11 @@ namespace System::Net
 		::System::Void DoCallback()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPASYNCRESULT_DOCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FTPASYNCRESULT_RESET_OFFSET))(this);
 		}
 	};
 }

@@ -1,0 +1,225 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_437B985C815BA132;
+class Class_2_60638234271CCDB8_23;
+class Class_2_B640B8B6C20C4AB0;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIFishQuickSelectPopWindowContext; }
+namespace MoleMole { class UIGeneralFilterGroupRowWidgetController; }
+namespace MoleMole { class UIGeneralFilterItemRowWidgetController; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xB2D5420)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ISSELECTCANSHOW_OFFSET UNITYSDK_OFFSET(0xB2D6FE0)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ISSELECTCANTSHOW_OFFSET UNITYSDK_OFFSET(0xB2D7060)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ISSELECTNORMAL_OFFSET UNITYSDK_OFFSET(0xB2D6EE0)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ISSELECTSPECIAL_OFFSET UNITYSDK_OFFSET(0xB2D6F60)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ISSELECT_OFFSET UNITYSDK_OFFSET(0xB2D7290)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB2D6140)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONOKBTNCLICK_OFFSET UNITYSDK_OFFSET(0xB2D7340)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONRESETBTNCLICK_OFFSET UNITYSDK_OFFSET(0xB2D7540)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB2D61E0)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB2D5430)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB2D57C0)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_REFRESHITEMTYPEROW_OFFSET UNITYSDK_OFFSET(0xB2D6270)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_REFRESHNUM_OFFSET UNITYSDK_OFFSET(0xB2D6810)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xB2D5970)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_SETQUICKSELECTDATA_OFFSET UNITYSDK_OFFSET(0xB2D6C30)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_SETSELECTSTARLIST_OFFSET UNITYSDK_OFFSET(0xB2D70E0)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB2D7640)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_0_OFFSET UNITYSDK_OFFSET(0xB2D76D0)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_1_OFFSET UNITYSDK_OFFSET(0xB2D7700)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_2_OFFSET UNITYSDK_OFFSET(0xB2D7730)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_3_OFFSET UNITYSDK_OFFSET(0xB2D7790)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_4_OFFSET UNITYSDK_OFFSET(0xB2D77F0)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_5_OFFSET UNITYSDK_OFFSET(0xB2D7850)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_6_OFFSET UNITYSDK_OFFSET(0xB2D78B0)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_7_OFFSET UNITYSDK_OFFSET(0xB2D78E0)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB2D7910)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB2D7980)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB2D7990)
+#define MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB2D79A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFishQuickSelectPopWindowController_TypeDefinitionIndex = 39626;
+
+	class UIFishQuickSelectPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_60638234271CCDB8_23* _view; // 0x2F8
+		::Class_2_B640B8B6C20C4AB0* _model; // 0x300
+		::MoleMole::UIFishQuickSelectPopWindowContext* _context; // 0x308
+		::MoleMole::UIGeneralFilterGroupRowWidgetController* _itemTypeWidgetColor; // 0x310
+		::MoleMole::UIGeneralFilterItemRowWidgetController* _itemTypeRowWidgetNormal; // 0x318
+		::MoleMole::UIGeneralFilterItemRowWidgetController* _itemTypeRowWidgetSpecial; // 0x320
+		::MoleMole::UIGeneralFilterGroupRowWidgetController* _itemTypeWidgetStar; // 0x328
+		::MoleMole::UIGeneralFilterItemRowWidgetController* _itemTypeRowWidgetStar1; // 0x330
+		::MoleMole::UIGeneralFilterItemRowWidgetController* _itemTypeRowWidgetStar2; // 0x338
+		::MoleMole::UIGeneralFilterItemRowWidgetController* _itemTypeRowWidgetStar3; // 0x340
+		::MoleMole::UIGeneralFilterItemRowWidgetController* _itemTypeRowWidgetStar4; // 0x348
+		::MoleMole::UIGeneralFilterGroupRowWidgetController* _itemTypeWidgetShowType; // 0x350
+		::MoleMole::UIGeneralFilterItemRowWidgetController* _itemTypeRowWidgetCanShow; // 0x358
+		::MoleMole::UIGeneralFilterItemRowWidgetController* _itemTypeRowWidgetCantShow; // 0x360
+		::System::Boolean _isSelectNormal; // 0x368
+		::System::Boolean _isSelectSpecial; // 0x369
+		::System::Collections::Generic::List_1<::System::Boolean>* _isSelectStarList; // 0x370
+		::System::Boolean _isSelectCanShow; // 0x378
+		::System::Boolean _isSelectCantShow; // 0x379
+		::Class_2_437B985C815BA132* _quickSelectData; // 0x380
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshItemTypeRow()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_REFRESHITEMTYPEROW_OFFSET))(this);
+		}
+
+		::System::Void SetQuickSelectData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_SETQUICKSELECTDATA_OFFSET))(this);
+		}
+
+		::System::Void RefreshNum()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_REFRESHNUM_OFFSET))(this);
+		}
+
+		::System::Void OnOkBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONOKBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Boolean IsSelectNormal()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ISSELECTNORMAL_OFFSET))(this);
+		}
+
+		::System::Boolean IsSelectSpecial()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ISSELECTSPECIAL_OFFSET))(this);
+		}
+
+		::System::Void SetSelectStarList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_SETSELECTSTARLIST_OFFSET))(this);
+		}
+
+		::System::Boolean IsSelectCanShow()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ISSELECTCANSHOW_OFFSET))(this);
+		}
+
+		::System::Boolean IsSelectCantShow()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ISSELECTCANTSHOW_OFFSET))(this);
+		}
+
+		::System::Boolean IsSelect()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ISSELECT_OFFSET))(this);
+		}
+
+		::System::Void OnResetBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER_ONRESETBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void _RefreshView_b__7_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_0_OFFSET))(this);
+		}
+
+		::System::Void _RefreshView_b__7_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_1_OFFSET))(this);
+		}
+
+		::System::Void _RefreshView_b__7_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_2_OFFSET))(this);
+		}
+
+		::System::Void _RefreshView_b__7_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_3_OFFSET))(this);
+		}
+
+		::System::Void _RefreshView_b__7_4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_4_OFFSET))(this);
+		}
+
+		::System::Void _RefreshView_b__7_5()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_5_OFFSET))(this);
+		}
+
+		::System::Void _RefreshView_b__7_6()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_6_OFFSET))(this);
+		}
+
+		::System::Void _RefreshView_b__7_7()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER__REFRESHVIEW_B__7_7_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFISHQUICKSELECTPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

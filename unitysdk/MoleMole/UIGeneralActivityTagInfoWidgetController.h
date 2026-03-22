@@ -1,0 +1,120 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_1E06B48836FC79EE;
+class Class_2_02112F4096DC1B39;
+namespace MoleMole { class ActivityWidgetContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_GENACTIVITYBASETAG_OFFSET UNITYSDK_OFFSET(0x7A3BFE0)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_GENACTIVITYSECONDTAG_OFFSET UNITYSDK_OFFSET(0x7A3C5E0)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_GETVIEW_OFFSET UNITYSDK_OFFSET(0x7A3BB50)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A3B9D0)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A3BA70)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A3B840)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A3B920)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_REFRESHTIMEINFO_OFFSET UNITYSDK_OFFSET(0x7A3BD70)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_SETACTIVITYTAGACTIVE_OFFSET UNITYSDK_OFFSET(0x7A3BF50)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_SETACTIVITYWIDGETCONTEXT_OFFSET UNITYSDK_OFFSET(0x7A3BBC0)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_SETTAGCONSOLESETTING_OFFSET UNITYSDK_OFFSET(0x7A3C070)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A3C660)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7A3C690)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7A3C700)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7A3C780)
+#define MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7A3C7E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralActivityTagInfoWidgetController_TypeDefinitionIndex = 36718;
+
+	class UIGeneralActivityTagInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_02112F4096DC1B39* _view; // 0x2A0
+		::MoleMole::ActivityWidgetContext* widgetContext; // 0x2A8
+		::Class_1_1E06B48836FC79EE* tagGenRulehandler; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::Class_2_02112F4096DC1B39* GetView()
+		{
+			return ((::Class_2_02112F4096DC1B39*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_GETVIEW_OFFSET))(this);
+		}
+
+		::System::Void SetActivityWidgetContext(::MoleMole::ActivityWidgetContext* widgetContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ActivityWidgetContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_SETACTIVITYWIDGETCONTEXT_OFFSET))(this, widgetContext);
+		}
+
+		::System::Void RefreshTimeInfo(::System::Action* endCallback, ::System::Int64 overrideTimeStamp)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*, ::System::Int64))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_REFRESHTIMEINFO_OFFSET))(this, endCallback, overrideTimeStamp);
+		}
+
+		::System::Void SetActivityTagActive(::System::Boolean isActive)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_SETACTIVITYTAGACTIVE_OFFSET))(this, isActive);
+		}
+
+		::System::Void GenActivityBaseTag(::System::Action* overrideDetailAction)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_GENACTIVITYBASETAG_OFFSET))(this, overrideDetailAction);
+		}
+
+		::System::Void GenActivitySecondTag()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_GENACTIVITYSECONDTAG_OFFSET))(this);
+		}
+
+		::System::Void SetTagConsoleSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER_SETTAGCONSOLESETTING_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALACTIVITYTAGINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

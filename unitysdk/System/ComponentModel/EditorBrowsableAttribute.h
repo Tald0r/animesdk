@@ -5,13 +5,15 @@
 
 namespace System { class Object; }
 
-#define SYSTEM_COMPONENTMODEL_EDITORBROWSABLEATTRIBUTE_EQUALS_OFFSET UNITYSDK_OFFSET(0x17E70110)
-#define SYSTEM_COMPONENTMODEL_EDITORBROWSABLEATTRIBUTE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x17E70170)
-#define SYSTEM_COMPONENTMODEL_EDITORBROWSABLEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x17E70100)
+#define SYSTEM_COMPONENTMODEL_EDITORBROWSABLEATTRIBUTE_EQUALS_OFFSET UNITYSDK_OFFSET(0x182C1B40)
+#define SYSTEM_COMPONENTMODEL_EDITORBROWSABLEATTRIBUTE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x182C1BA0)
+#define SYSTEM_COMPONENTMODEL_EDITORBROWSABLEATTRIBUTE_GET_STATE_OFFSET UNITYSDK_OFFSET(0x182C1B30)
+#define SYSTEM_COMPONENTMODEL_EDITORBROWSABLEATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x182C1B20)
+#define SYSTEM_COMPONENTMODEL_EDITORBROWSABLEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x182C1B10)
 
 namespace System::ComponentModel
 {
-	inline static constexpr unsigned int EditorBrowsableAttribute_TypeDefinitionIndex = 2572;
+	inline static constexpr unsigned int EditorBrowsableAttribute_TypeDefinitionIndex = 2875;
 
 	class EditorBrowsableAttribute : public ::System::Attribute
 	{
@@ -21,6 +23,16 @@ namespace System::ComponentModel
 		::System::Void _ctor(::System::ComponentModel::EditorBrowsableState state)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::ComponentModel::EditorBrowsableState))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_EDITORBROWSABLEATTRIBUTE__CTOR_OFFSET))(this, state);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_EDITORBROWSABLEATTRIBUTE__CTOR_1_OFFSET))(this);
+		}
+
+		::System::ComponentModel::EditorBrowsableState get_State()
+		{
+			return ((::System::ComponentModel::EditorBrowsableState(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_EDITORBROWSABLEATTRIBUTE_GET_STATE_OFFSET))(this);
 		}
 
 		::System::Boolean Equals(::System::Object* obj)

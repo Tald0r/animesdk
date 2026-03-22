@@ -16,48 +16,49 @@ namespace UnityEngine::UIElements { class IMGUIContainer; }
 namespace UnityEngine::UIElements { class VisualElement; }
 namespace UnityEngine::UIElements { class VisualTreeUpdater; }
 
-#define UNITYENGINE_UIELEMENTS_PANEL_GET_CONTEXTTYPE_OFFSET UNITYSDK_OFFSET(0x182C3960)
-#define UNITYENGINE_UIELEMENTS_PANEL_GET_DISPATCHER_OFFSET UNITYSDK_OFFSET(0x182C3940)
-#define UNITYENGINE_UIELEMENTS_PANEL_GET_FOCUSCONTROLLER_OFFSET UNITYSDK_OFFSET(0x182C3970)
-#define UNITYENGINE_UIELEMENTS_PANEL_GET_IMGUICONTAINERSCOUNT_OFFSET UNITYSDK_OFFSET(0x182C3990)
-#define UNITYENGINE_UIELEMENTS_PANEL_GET_IMGUIEVENTINTERESTS_OFFSET UNITYSDK_OFFSET(0x182C3980)
-#define UNITYENGINE_UIELEMENTS_PANEL_GET_OWNEROBJECT_OFFSET UNITYSDK_OFFSET(0x182C3950)
-#define UNITYENGINE_UIELEMENTS_PANEL_GET_ROOTIMGUICONTAINER_OFFSET UNITYSDK_OFFSET(0x182C39A0)
-#define UNITYENGINE_UIELEMENTS_PANEL_GET_VERSION_OFFSET UNITYSDK_OFFSET(0x182C39B0)
-#define UNITYENGINE_UIELEMENTS_PANEL_GET_VISUALTREE_OFFSET UNITYSDK_OFFSET(0x182B4140)
-#define UNITYENGINE_UIELEMENTS_PANEL_ONVERSIONCHANGED_OFFSET UNITYSDK_OFFSET(0x182C4520)
-#define UNITYENGINE_UIELEMENTS_PANEL_PERFORMPICK_OFFSET UNITYSDK_OFFSET(0x182C3A30)
-#define UNITYENGINE_UIELEMENTS_PANEL_PICKALL_OFFSET UNITYSDK_OFFSET(0x182C39C0)
-#define UNITYENGINE_UIELEMENTS_PANEL_PICK_OFFSET UNITYSDK_OFFSET(0x182C2140)
-#define UNITYENGINE_UIELEMENTS_PANEL_REPAINT_OFFSET UNITYSDK_OFFSET(0x182C4300)
-#define UNITYENGINE_UIELEMENTS_PANEL_UPDATEFORREPAINT_OFFSET UNITYSDK_OFFSET(0x182C4270)
-#define UNITYENGINE_UIELEMENTS_PANEL_VALIDATELAYOUT_OFFSET UNITYSDK_OFFSET(0x182C3FF0)
-#define UNITYENGINE_UIELEMENTS_PANEL__CCTOR_OFFSET UNITYSDK_OFFSET(0x182C46A0)
+#define UNITYENGINE_UIELEMENTS_PANEL_GET_CONTEXTTYPE_OFFSET UNITYSDK_OFFSET(0x189262D0)
+#define UNITYENGINE_UIELEMENTS_PANEL_GET_DISPATCHER_OFFSET UNITYSDK_OFFSET(0x189262B0)
+#define UNITYENGINE_UIELEMENTS_PANEL_GET_FOCUSCONTROLLER_OFFSET UNITYSDK_OFFSET(0x189262E0)
+#define UNITYENGINE_UIELEMENTS_PANEL_GET_IMGUICONTAINERSCOUNT_OFFSET UNITYSDK_OFFSET(0x18926300)
+#define UNITYENGINE_UIELEMENTS_PANEL_GET_IMGUIEVENTINTERESTS_OFFSET UNITYSDK_OFFSET(0x189262F0)
+#define UNITYENGINE_UIELEMENTS_PANEL_GET_OWNEROBJECT_OFFSET UNITYSDK_OFFSET(0x189262C0)
+#define UNITYENGINE_UIELEMENTS_PANEL_GET_ROOTIMGUICONTAINER_OFFSET UNITYSDK_OFFSET(0x18926320)
+#define UNITYENGINE_UIELEMENTS_PANEL_GET_VERSION_OFFSET UNITYSDK_OFFSET(0x18926330)
+#define UNITYENGINE_UIELEMENTS_PANEL_GET_VISUALTREE_OFFSET UNITYSDK_OFFSET(0x18913BA0)
+#define UNITYENGINE_UIELEMENTS_PANEL_ONVERSIONCHANGED_OFFSET UNITYSDK_OFFSET(0x18926EC0)
+#define UNITYENGINE_UIELEMENTS_PANEL_PERFORMPICK_OFFSET UNITYSDK_OFFSET(0x189263B0)
+#define UNITYENGINE_UIELEMENTS_PANEL_PICKALL_OFFSET UNITYSDK_OFFSET(0x18926340)
+#define UNITYENGINE_UIELEMENTS_PANEL_PICK_OFFSET UNITYSDK_OFFSET(0x18924910)
+#define UNITYENGINE_UIELEMENTS_PANEL_REPAINT_OFFSET UNITYSDK_OFFSET(0x18926CA0)
+#define UNITYENGINE_UIELEMENTS_PANEL_SET_IMGUICONTAINERSCOUNT_OFFSET UNITYSDK_OFFSET(0x18926310)
+#define UNITYENGINE_UIELEMENTS_PANEL_UPDATEFORREPAINT_OFFSET UNITYSDK_OFFSET(0x18926C10)
+#define UNITYENGINE_UIELEMENTS_PANEL_VALIDATELAYOUT_OFFSET UNITYSDK_OFFSET(0x18926990)
+#define UNITYENGINE_UIELEMENTS_PANEL__CCTOR_OFFSET UNITYSDK_OFFSET(0x18927040)
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int Panel_TypeDefinitionIndex = 5755;
+	inline static constexpr unsigned int Panel_TypeDefinitionIndex = 23762;
 
 	class Panel : public ::UnityEngine::UIElements::BaseVisualElementPanel
 	{
 	public:
 		static ::Unity::Profiling::ProfilerMarker* StaticGet_s_MarkerPickAll()
 		{
-			return (::Unity::Profiling::ProfilerMarker*)Il2CppClass::FromTypeDefinitionIndex(Panel_TypeDefinitionIndex)->GetStaticField(0x3310);
+			return (::Unity::Profiling::ProfilerMarker*)Il2CppClass::FromTypeDefinitionIndex(Panel_TypeDefinitionIndex)->GetStaticField(0x46C0);
 		}
-		::UnityEngine::UIElements::VisualElement* m_RootContainer; // 0x30
-		::UnityEngine::UIElements::VisualTreeUpdater* m_VisualTreeUpdater; // 0x38
-		::System::UInt32 m_Version; // 0x40
-		::System::UInt32 m_RepaintVersion; // 0x44
-		::Unity::Profiling::ProfilerMarker m_MarkerUpdate; // 0x48
-		::UnityEngine::UIElements::EventDispatcher* _dispatcher_k__BackingField; // 0x50
-		::UnityEngine::ScriptableObject* _ownerObject_k__BackingField; // 0x58
-		::UnityEngine::UIElements::ContextType _contextType_k__BackingField; // 0x60
-		::UnityEngine::UIElements::FocusController* _focusController_k__BackingField; // 0x68
-		::UnityEngine::EventInterests _IMGUIEventInterests_k__BackingField; // 0x70
-		::System::Int32 _IMGUIContainersCount_k__BackingField; // 0x74
-		::UnityEngine::UIElements::IMGUIContainer* _rootIMGUIContainer_k__BackingField; // 0x78
-		::System::Boolean m_ValidatingLayout; // 0x80
+		::UnityEngine::UIElements::VisualElement* m_RootContainer; // 0x40
+		::UnityEngine::UIElements::VisualTreeUpdater* m_VisualTreeUpdater; // 0x48
+		::System::UInt32 m_Version; // 0x50
+		::System::UInt32 m_RepaintVersion; // 0x54
+		::Unity::Profiling::ProfilerMarker m_MarkerUpdate; // 0x58
+		::UnityEngine::UIElements::EventDispatcher* _dispatcher_k__BackingField; // 0x60
+		::UnityEngine::ScriptableObject* _ownerObject_k__BackingField; // 0x68
+		::UnityEngine::UIElements::ContextType _contextType_k__BackingField; // 0x70
+		::UnityEngine::UIElements::FocusController* _focusController_k__BackingField; // 0x78
+		::UnityEngine::EventInterests _IMGUIEventInterests_k__BackingField; // 0x80
+		::System::Int32 _IMGUIContainersCount_k__BackingField; // 0x84
+		::UnityEngine::UIElements::IMGUIContainer* _rootIMGUIContainer_k__BackingField; // 0x88
+		::System::Boolean m_ValidatingLayout; // 0x90
 
 		static ::System::Void _cctor()
 		{
@@ -97,6 +98,11 @@ namespace UnityEngine::UIElements
 		::System::Int32 get_IMGUIContainersCount()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_PANEL_GET_IMGUICONTAINERSCOUNT_OFFSET))(this);
+		}
+
+		::System::Void set_IMGUIContainersCount(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_PANEL_SET_IMGUICONTAINERSCOUNT_OFFSET))(this, value);
 		}
 
 		::UnityEngine::UIElements::IMGUIContainer* get_rootIMGUIContainer()

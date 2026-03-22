@@ -1,0 +1,170 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_7EA3F9477E892234.h"
+#include "unitysdk/MoleMole/UIHandBookZeroWidgetController_HBAbyssEntranceTypeEnum.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_1685EC66FBD28897;
+class Class_2_208CC9941471731A_124;
+class Class_2_208CC9941471731A_187;
+class Class_2_79F6D62CE30E3F8E_12;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_DOJUMP_OFFSET UNITYSDK_OFFSET(0x8A298E0)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_HBTOABYSSENUM_OFFSET UNITYSDK_OFFSET(0x8A288E0)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8A29760)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0x8A29680)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONREWARDBTNCLICK_OFFSET UNITYSDK_OFFSET(0x8A2A620)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONSHOPBTNCLICK_OFFSET UNITYSDK_OFFSET(0x8A2A8C0)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x8A293E0)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8A29800)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8A28960)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8A29220)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_REFRESHBUTTONSTATES_OFFSET UNITYSDK_OFFSET(0x8A2A430)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_REFRESHHIGHLIGHT_OFFSET UNITYSDK_OFFSET(0x8A29BA0)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_REFRESHREDEEM_OFFSET UNITYSDK_OFFSET(0x8A294B0)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x8A29340)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_UILOCKCHANGEDHANDLE_OFFSET UNITYSDK_OFFSET(0x8A2AD10)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8A2AD80)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER__DOJUMP_B__15_0_OFFSET UNITYSDK_OFFSET(0x8A2AE30)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8A2AF80)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0x8A2AFF0)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x8A2B050)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8A2B0C0)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8A2B140)
+#define MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8A2B1A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHandBookZeroWidgetController_TypeDefinitionIndex = 45423;
+
+	class UIHandBookZeroWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_208CC9941471731A_187* _entry; // 0x2A0
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* _rewards; // 0x2A8
+		::Il2CppArray<::Class_2_208CC9941471731A_124*>* _entries; // 0x2B0
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_124*>* _scrollEntries; // 0x2B8
+		::Class_2_79F6D62CE30E3F8E_12* _view; // 0x2C0
+		::MoleMole::UIHandBookZeroWidgetController_HBAbyssEntranceTypeEnum curHighLightEntry; // 0x2C8
+		::System::Int32 targetIdx; // 0x2CC
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::Enum_3_7EA3F9477E892234 HBToAbyssEnum(::MoleMole::UIHandBookZeroWidgetController_HBAbyssEntranceTypeEnum e)
+		{
+			return ((::Enum_3_7EA3F9477E892234(*)(::MoleMole::UIHandBookZeroWidgetController_HBAbyssEntranceTypeEnum))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_HBTOABYSSENUM_OFFSET))(e);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void DoJump()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_DOJUMP_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshHighLight()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_REFRESHHIGHLIGHT_OFFSET))(this);
+		}
+
+		::System::Void RefreshRedeem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_REFRESHREDEEM_OFFSET))(this);
+		}
+
+		::System::Void RefreshButtonStates()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_REFRESHBUTTONSTATES_OFFSET))(this);
+		}
+
+		::System::Void OnRewardBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONREWARDBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnShopBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_ONSHOPBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void UILockChangedHandle(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER_UILOCKCHANGEDHANDLE_OFFSET))(this, args);
+		}
+
+		::System::Void _DoJump_b__15_0(::System::Boolean success)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER__DOJUMP_B__15_0_OFFSET))(this, success);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKZEROWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

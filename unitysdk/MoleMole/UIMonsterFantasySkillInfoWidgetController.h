@@ -1,0 +1,63 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+#include "unitysdk/UnityEngine/Color.h"
+
+class Class_2_208CC9941471731A_867;
+class Class_2_EC28E1D3A39EE7DE_28;
+namespace MoleMole { class UIControlReference; }
+
+#define MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER_GET_CFG_OFFSET UNITYSDK_OFFSET(0xA3D7BF0)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA3D7A80)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA3D7AF0)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xA3D7C10)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER_SET_CFG_OFFSET UNITYSDK_OFFSET(0xA3D7C00)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA3D8780)
+#define MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xA3D87B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMonsterFantasySkillInfoWidgetController_TypeDefinitionIndex = 78036;
+
+	class UIMonsterFantasySkillInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_208CC9941471731A_867* _Cfg_k__BackingField; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_EC28E1D3A39EE7DE_28* get__viewModel()
+		{
+			return ((::Class_2_EC28E1D3A39EE7DE_28*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::Class_2_208CC9941471731A_867* get_Cfg()
+		{
+			return ((::Class_2_208CC9941471731A_867*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER_GET_CFG_OFFSET))(this);
+		}
+
+		::System::Void set_Cfg(::Class_2_208CC9941471731A_867* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_867*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER_SET_CFG_OFFSET))(this, value);
+		}
+
+		::System::Void RefreshView(::Class_2_208CC9941471731A_867* cfg, ::UnityEngine::Color costColor)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_867*, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, cfg, costColor);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYSKILLINFOWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+	};
+}

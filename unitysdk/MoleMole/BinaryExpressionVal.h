@@ -1,0 +1,45 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_CF6069113B9F5B89.h"
+#include "unitysdk/Struct_2_A47ACAABA9AAFE92.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_266;
+class Class_0_16E4307DCC419505_361;
+
+#define MOLEMOLE_BINARYEXPRESSIONVAL_METHOD_1_49AC00594530B714_OFFSET UNITYSDK_OFFSET(0x6292C20)
+#define MOLEMOLE_BINARYEXPRESSIONVAL_METHOD_1_B438BB4175B451ED_OFFSET UNITYSDK_OFFSET(0x6292C80)
+#define MOLEMOLE_BINARYEXPRESSIONVAL_METHOD_1_F78C032061CEA1F7_OFFSET UNITYSDK_OFFSET(0x6292D50)
+#define MOLEMOLE_BINARYEXPRESSIONVAL__CTOR_OFFSET UNITYSDK_OFFSET(0x6292F30)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int BinaryExpressionVal_TypeDefinitionIndex = 44233;
+
+	class BinaryExpressionVal : public ::System::Object
+	{
+	public:
+		::Class_0_16E4307DCC419505_361* Left; // 0x10
+		::Class_0_16E4307DCC419505_361* Right; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BINARYEXPRESSIONVAL__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_CF6069113B9F5B89 Method_1_49AC00594530B714()
+		{
+			return ((::Enum_3_CF6069113B9F5B89(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BINARYEXPRESSIONVAL_METHOD_1_49AC00594530B714_OFFSET))(this);
+		}
+
+		::Struct_2_A47ACAABA9AAFE92 Method_1_B438BB4175B451ED(::Class_0_16E4307DCC419505_266* a1)
+		{
+			return ((::Struct_2_A47ACAABA9AAFE92(*)(::PVOID, ::Class_0_16E4307DCC419505_266*))((::PBYTE)hIl2Cpp + MOLEMOLE_BINARYEXPRESSIONVAL_METHOD_1_B438BB4175B451ED_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_F78C032061CEA1F7()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BINARYEXPRESSIONVAL_METHOD_1_F78C032061CEA1F7_OFFSET))(this);
+		}
+	};
+}

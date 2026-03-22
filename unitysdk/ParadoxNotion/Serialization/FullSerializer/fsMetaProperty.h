@@ -1,0 +1,126 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace System { class String; }
+namespace System { class Type; }
+namespace System::Reflection { class FieldInfo; }
+
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_ASREFERENCE_OFFSET UNITYSDK_OFFSET(0x19C17200)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_AUTOINSTANCE_OFFSET UNITYSDK_OFFSET(0x19C171E0)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_FIELD_OFFSET UNITYSDK_OFFSET(0x19C17100)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_JSONNAME_OFFSET UNITYSDK_OFFSET(0x19C17120)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_MEMBERNAME_OFFSET UNITYSDK_OFFSET(0x19C17170)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_READONLY_OFFSET UNITYSDK_OFFSET(0x19C171A0)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_STORAGETYPE_OFFSET UNITYSDK_OFFSET(0x19C17140)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_WRITEONLY_OFFSET UNITYSDK_OFFSET(0x19C171C0)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_READ_OFFSET UNITYSDK_OFFSET(0x19C173D0)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_ASREFERENCE_OFFSET UNITYSDK_OFFSET(0x19C17210)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_AUTOINSTANCE_OFFSET UNITYSDK_OFFSET(0x19C171F0)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_FIELD_OFFSET UNITYSDK_OFFSET(0x19C17110)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_JSONNAME_OFFSET UNITYSDK_OFFSET(0x19C17130)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_READONLY_OFFSET UNITYSDK_OFFSET(0x19C171B0)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_WRITEONLY_OFFSET UNITYSDK_OFFSET(0x19C171D0)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_WRITE_OFFSET UNITYSDK_OFFSET(0x19C17400)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY__CTOR_OFFSET UNITYSDK_OFFSET(0x19C17220)
+
+namespace ParadoxNotion::Serialization::FullSerializer
+{
+	inline static constexpr unsigned int fsMetaProperty_TypeDefinitionIndex = 26793;
+
+	class fsMetaProperty : public ::System::Object
+	{
+	public:
+		::System::String* _JsonName_k__BackingField; // 0x10
+		::System::Reflection::FieldInfo* _Field_k__BackingField; // 0x18
+		::System::Boolean _AsReference_k__BackingField; // 0x20
+		::System::Boolean _AutoInstance_k__BackingField; // 0x21
+		::System::Boolean _WriteOnly_k__BackingField; // 0x22
+		::System::Boolean _ReadOnly_k__BackingField; // 0x23
+
+		::System::Void _ctor(::System::Reflection::FieldInfo* field)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Reflection::FieldInfo*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY__CTOR_OFFSET))(this, field);
+		}
+
+		::System::Reflection::FieldInfo* get_Field()
+		{
+			return ((::System::Reflection::FieldInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_FIELD_OFFSET))(this);
+		}
+
+		::System::Void set_Field(::System::Reflection::FieldInfo* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Reflection::FieldInfo*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_FIELD_OFFSET))(this, value);
+		}
+
+		::System::String* get_JsonName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_JSONNAME_OFFSET))(this);
+		}
+
+		::System::Void set_JsonName(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_JSONNAME_OFFSET))(this, value);
+		}
+
+		::System::Type* get_StorageType()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_STORAGETYPE_OFFSET))(this);
+		}
+
+		::System::String* get_MemberName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_MEMBERNAME_OFFSET))(this);
+		}
+
+		::System::Boolean get_ReadOnly()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_READONLY_OFFSET))(this);
+		}
+
+		::System::Void set_ReadOnly(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_READONLY_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_WriteOnly()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_WRITEONLY_OFFSET))(this);
+		}
+
+		::System::Void set_WriteOnly(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_WRITEONLY_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_AutoInstance()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_AUTOINSTANCE_OFFSET))(this);
+		}
+
+		::System::Void set_AutoInstance(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_AUTOINSTANCE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_AsReference()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_GET_ASREFERENCE_OFFSET))(this);
+		}
+
+		::System::Void set_AsReference(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_SET_ASREFERENCE_OFFSET))(this, value);
+		}
+
+		::System::Object* Read(::System::Object* context)
+		{
+			return ((::System::Object*(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_READ_OFFSET))(this, context);
+		}
+
+		::System::Void Write(::System::Object* context, ::System::Object* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Object*))((::PBYTE)hIl2Cpp + PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETAPROPERTY_WRITE_OFFSET))(this, context, value);
+		}
+	};
+}

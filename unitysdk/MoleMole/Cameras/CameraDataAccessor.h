@@ -1,0 +1,640 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_1DAC1F9F4B999C38_Struct_2_2673E6B37CEF07BF_1.h"
+#include "unitysdk/Class_1_FF2ECD13EC40B5E1_Struct_2_2673E6B37CEF07BF.h"
+#include "unitysdk/MoleMole/Cameras/CameraControlFlag.h"
+#include "unitysdk/MoleMole/Cameras/CameraFollowCalcData.h"
+#include "unitysdk/MoleMole/Cameras/CameraInfo.h"
+#include "unitysdk/MoleMole/Config/CameraDelayMoveMode.h"
+#include "unitysdk/MoleMole/Config/ConfigDataClearPriority.h"
+#include "unitysdk/MoleMole/Config/ConfigDataPlayStacking.h"
+#include "unitysdk/MoleMole/Config/ConfigDataPriority.h"
+#include "unitysdk/MoleMole/Config/InlevelCameraState.h"
+#include "unitysdk/Struct_2_455336A079B58DD3.h"
+#include "unitysdk/Struct_2_6E1B724B14572104_7.h"
+#include "unitysdk/Struct_2_7E9A981C4706FCC7.h"
+#include "unitysdk/Struct_2_FA5F50563E60AFBA.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_1_0294183E7B0E0003;
+class Class_1_0894D4B5D686C638;
+class Class_1_1310C26C083BD583;
+class Class_1_1DAC1F9F4B999C38;
+class Class_1_2C434B932ED0B61F;
+class Class_1_38E49E58ED6F31CF;
+class Class_1_3B24A12EC7737770;
+class Class_1_48956C855353AC97;
+class Class_1_4A371BC2C987AE88;
+class Class_1_50459AA2C7E65196;
+class Class_1_5251C838C249D21D;
+class Class_1_52BCA1880ED5953B;
+class Class_1_56A600809CA25481;
+class Class_1_6EEA73101131338D;
+class Class_1_6EEA73101131338D_1;
+class Class_1_A967D48B8822B06E;
+class Class_1_BB84B938A7E58DA3;
+class Class_1_BEF5F5E810036AF4;
+class Class_1_BEF5F5E810036AF4_1;
+class Class_1_CB7F0487F7A6164A;
+class Class_1_F2C28752E8780B52;
+class Class_1_FF2ECD13EC40B5E1;
+namespace MoleMole::Battle { class Entity; }
+namespace MoleMole::Cameras { class CameraAvatarPrepareData; }
+namespace MoleMole::Cameras { class CameraMiscSetting; }
+namespace MoleMole::Cameras { class CameraMoveModeData; }
+namespace MoleMole::Cameras { class CameraTrackSetting; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_DISPOSE_OFFSET UNITYSDK_OFFSET(0x6534690)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_AVATARPREPAREDATA_OFFSET UNITYSDK_OFFSET(0x6534170)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_CURRENTCAMSTATE_OFFSET UNITYSDK_OFFSET(0x65341F0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_EXTERNALSTR_OFFSET UNITYSDK_OFFSET(0x6534540)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_LOCKFEATURETARGET_OFFSET UNITYSDK_OFFSET(0x65341E0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_LOCKTARGET_OFFSET UNITYSDK_OFFSET(0x6534190)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_PREAVATARPREPAREDATA_OFFSET UNITYSDK_OFFSET(0x6534150)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_06D2228B483124DF_OFFSET UNITYSDK_OFFSET(0x6537130)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_0C498EE2EA2CF96A_OFFSET UNITYSDK_OFFSET(0x65391E0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_148D7A98EB871977_1_OFFSET UNITYSDK_OFFSET(0x653A150)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_148D7A98EB871977_OFFSET UNITYSDK_OFFSET(0x6535940)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_14992E39298B9D27_OFFSET UNITYSDK_OFFSET(0x653C2F0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_153DB45DA48D91A6_OFFSET UNITYSDK_OFFSET(0x653C400)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_17C2C73EDCBB5629_OFFSET UNITYSDK_OFFSET(0x65350A0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_1D4018D4200358D0_OFFSET UNITYSDK_OFFSET(0x653C560)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_1D75921A1FC4C98D_1_OFFSET UNITYSDK_OFFSET(0x6535AB0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_1D75921A1FC4C98D_OFFSET UNITYSDK_OFFSET(0x6536330)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_245D7FBFF19F784E_OFFSET UNITYSDK_OFFSET(0x6535390)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_2C5D04531262A697_OFFSET UNITYSDK_OFFSET(0x6538240)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_30197B07F99B681E_OFFSET UNITYSDK_OFFSET(0x653BED0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_33ACA6CB2ABC73F7_1_OFFSET UNITYSDK_OFFSET(0x653BB70)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_33ACA6CB2ABC73F7_OFFSET UNITYSDK_OFFSET(0x6536590)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_363148F355523F24_OFFSET UNITYSDK_OFFSET(0x653A970)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_37011B6DDBE4CF26_OFFSET UNITYSDK_OFFSET(0x6536140)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_37BF2F32FDE645A4_OFFSET UNITYSDK_OFFSET(0x65371F0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_39A9FE040505BFA5_1_OFFSET UNITYSDK_OFFSET(0x6539D90)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_39A9FE040505BFA5_OFFSET UNITYSDK_OFFSET(0x65383A0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_3B4AC28BC20E9CD8_OFFSET UNITYSDK_OFFSET(0x653B180)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_3B6DE532CA77D7C1_OFFSET UNITYSDK_OFFSET(0x653B5D0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_43D99DDD80B1E30C_OFFSET UNITYSDK_OFFSET(0x6537B50)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_477268E8180E05C5_OFFSET UNITYSDK_OFFSET(0x653AD00)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_4A7BA141CE4D4AB1_OFFSET UNITYSDK_OFFSET(0x6538900)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_4E84FD21E7EECC5B_OFFSET UNITYSDK_OFFSET(0x65387B0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_5110E061C0DF5692_OFFSET UNITYSDK_OFFSET(0x6536D70)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_522663341B4E5003_1_OFFSET UNITYSDK_OFFSET(0x653AEF0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_522663341B4E5003_OFFSET UNITYSDK_OFFSET(0x6539730)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_534661913E3766CA_OFFSET UNITYSDK_OFFSET(0x65369E0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_538706B04C2A4407_OFFSET UNITYSDK_OFFSET(0x6539280)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_54BDA1C01D683A47_OFFSET UNITYSDK_OFFSET(0x6536940)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_5FB00E6D01902483_1_OFFSET UNITYSDK_OFFSET(0x6537EC0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_5FB00E6D01902483_OFFSET UNITYSDK_OFFSET(0x6535120)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_62131DF2D3A09864_OFFSET UNITYSDK_OFFSET(0x6536730)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_650F473FFDE608B9_1_OFFSET UNITYSDK_OFFSET(0x6539E00)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_650F473FFDE608B9_2_OFFSET UNITYSDK_OFFSET(0x653B380)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_650F473FFDE608B9_OFFSET UNITYSDK_OFFSET(0x6538410)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_6BB86695870EFBD1_OFFSET UNITYSDK_OFFSET(0x6539410)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_7B2BA56C32EAAA23_OFFSET UNITYSDK_OFFSET(0x65381B0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_7E61AB0326C9D6AE_OFFSET UNITYSDK_OFFSET(0x65374F0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_7E832D0C2C340C33_OFFSET UNITYSDK_OFFSET(0x653C9D0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_861970C5F2C21AB2_OFFSET UNITYSDK_OFFSET(0x6534D10)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_92EB806315DCB90E_OFFSET UNITYSDK_OFFSET(0x653C380)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_945C3AC4300E4FA3_1_OFFSET UNITYSDK_OFFSET(0x6538DC0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_945C3AC4300E4FA3_OFFSET UNITYSDK_OFFSET(0x6538320)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_97D83E4CB3B11935_OFFSET UNITYSDK_OFFSET(0x6535D10)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_A5B6063FFC26FC8F_OFFSET UNITYSDK_OFFSET(0x6537800)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_A8F6F688241E6DBC_OFFSET UNITYSDK_OFFSET(0x653AD80)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AA69FB9485F94D4F_OFFSET UNITYSDK_OFFSET(0x653C260)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AE639D8AB1549F54_OFFSET UNITYSDK_OFFSET(0x6538F60)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AECF8BEC293ED42A_1_OFFSET UNITYSDK_OFFSET(0x6538AD0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AECF8BEC293ED42A_2_OFFSET UNITYSDK_OFFSET(0x6538E40)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AECF8BEC293ED42A_3_OFFSET UNITYSDK_OFFSET(0x653BA50)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AECF8BEC293ED42A_4_OFFSET UNITYSDK_OFFSET(0x653C7E0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AECF8BEC293ED42A_OFFSET UNITYSDK_OFFSET(0x65389E0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_B1239B7173FDF4C6_OFFSET UNITYSDK_OFFSET(0x6535580)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_B1936CE4DA97AA45_OFFSET UNITYSDK_OFFSET(0x6537A80)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_B6BB704B01BCC35B_OFFSET UNITYSDK_OFFSET(0x6539110)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_BC745DD3D5619033_OFFSET UNITYSDK_OFFSET(0x6534E40)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_BCB087DFB7399B96_OFFSET UNITYSDK_OFFSET(0x653A720)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_C4C4701D503698C5_OFFSET UNITYSDK_OFFSET(0x653B820)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_C6C6033AD8273C6E_OFFSET UNITYSDK_OFFSET(0x653A2C0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x653C8F0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CBACBF33B55CA258_1_OFFSET UNITYSDK_OFFSET(0x6538BC0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CBACBF33B55CA258_2_OFFSET UNITYSDK_OFFSET(0x653A510)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CBACBF33B55CA258_3_OFFSET UNITYSDK_OFFSET(0x653BCD0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CBACBF33B55CA258_4_OFFSET UNITYSDK_OFFSET(0x653C5E0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CBACBF33B55CA258_OFFSET UNITYSDK_OFFSET(0x6536F30)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CFFAFB6FF11557B5_OFFSET UNITYSDK_OFFSET(0x6535E50)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_DB659701005BBAF8_OFFSET UNITYSDK_OFFSET(0x653A490)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_DF76843B906CABFF_1_OFFSET UNITYSDK_OFFSET(0x653BFB0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_DF76843B906CABFF_OFFSET UNITYSDK_OFFSET(0x6539AD0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_E3D1A129DD9A7B23_OFFSET UNITYSDK_OFFSET(0x6539590)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_E6F4FD7AF7C4C2DC_1_OFFSET UNITYSDK_OFFSET(0x653A050)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_E6F4FD7AF7C4C2DC_OFFSET UNITYSDK_OFFSET(0x65399D0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_EC9C71CF50EEA7C5_OFFSET UNITYSDK_OFFSET(0x653ADF0)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_F7667B5003121159_OFFSET UNITYSDK_OFFSET(0x653A800)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_SET_AVATARPREPAREDATA_OFFSET UNITYSDK_OFFSET(0x6534180)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_SET_CURRENTCAMSTATE_OFFSET UNITYSDK_OFFSET(0x6534530)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_SET_PREAVATARPREPAREDATA_OFFSET UNITYSDK_OFFSET(0x6534160)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR__CCTOR_OFFSET UNITYSDK_OFFSET(0x6534B60)
+#define MOLEMOLE_CAMERAS_CAMERADATAACCESSOR__CTOR_OFFSET UNITYSDK_OFFSET(0x6534890)
+
+namespace MoleMole::Cameras
+{
+	inline static constexpr unsigned int CameraDataAccessor_TypeDefinitionIndex = 64862;
+
+	class CameraDataAccessor : public ::System::Object
+	{
+	public:
+		static ::Il2CppArray<::System::Collections::Generic::List_1<::System::String*>*>** StaticGet__backUpStr()
+		{
+			return (::Il2CppArray<::System::Collections::Generic::List_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(CameraDataAccessor_TypeDefinitionIndex)->GetStaticField(0x43C50);
+		}
+		::MoleMole::Cameras::CameraInfo Prev; // 0x10
+		::MoleMole::Cameras::CameraInfo Current; // 0x90
+		::MoleMole::Cameras::CameraInfo Target; // 0x110
+		::MoleMole::Cameras::CameraAvatarPrepareData* _PreAvatarPrepareData_k__BackingField; // 0x190
+		::Struct_2_7E9A981C4706FCC7 PreAvatarInfoData; // 0x198
+		::MoleMole::Cameras::CameraAvatarPrepareData* _AvatarPrepareData_k__BackingField; // 0x228
+		::Struct_2_7E9A981C4706FCC7 AvatarInfoData; // 0x230
+		::Struct_2_6E1B724B14572104_7 CamGlobalCommonData; // 0x2C0
+		::System::Boolean MovementDirInLockState; // 0x2D4
+		::System::Boolean IsInLockingBossState; // 0x2D5
+		::System::Boolean IsSimpleNormalLock; // 0x2D6
+		::MoleMole::Cameras::CameraFollowCalcData TargetCalcData; // 0x2D8
+		::MoleMole::Cameras::CameraFollowCalcData PrevCalcData; // 0x320
+		::Class_1_FF2ECD13EC40B5E1* _cameraTrackSettingManager; // 0x368
+		::Class_1_1DAC1F9F4B999C38* _cameraMiscSettingManager; // 0x370
+		::System::Int32 lastPolarForceSetFrame; // 0x378
+		::System::Int32 lastElevationForceSetFrame; // 0x37C
+		::Struct_2_FA5F50563E60AFBA lockTargetWrap; // 0x380
+		::MoleMole::Cameras::CameraControlFlag Control; // 0x398
+		::MoleMole::Cameras::CameraControlFlag LastControl; // 0x3AC
+		::MoleMole::Config::InlevelCameraState _currentCamState; // 0x3C0
+		::System::String* InLevelCustomCameraSphereKey; // 0x3C8
+		::Class_1_0894D4B5D686C638* CamMoveMode; // 0x3D0
+		::Class_1_6EEA73101131338D_1* CamFollowTrans; // 0x3D8
+		::Class_1_6EEA73101131338D* CamLookAtTrans; // 0x3E0
+		::Class_1_A967D48B8822B06E* Stretch; // 0x3E8
+		::Class_1_4A371BC2C987AE88* Pitch; // 0x3F0
+		::Class_1_3B24A12EC7737770* Shake; // 0x3F8
+		::Class_1_38E49E58ED6F31CF* Zoom; // 0x400
+		::Class_1_1310C26C083BD583* OffsetLook; // 0x408
+		::Class_1_56A600809CA25481* ScreenOffset; // 0x410
+		::Class_1_5251C838C249D21D* CutsceneShotData; // 0x418
+		::System::Boolean isInLevelCameraStateChanging; // 0x420
+		::System::Boolean IsChangeCameraRotate; // 0x421
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR__CCTOR_OFFSET))();
+		}
+
+		::MoleMole::Cameras::CameraAvatarPrepareData* get_PreAvatarPrepareData()
+		{
+			return ((::MoleMole::Cameras::CameraAvatarPrepareData*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_PREAVATARPREPAREDATA_OFFSET))(this);
+		}
+
+		::System::Void set_PreAvatarPrepareData(::MoleMole::Cameras::CameraAvatarPrepareData* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Cameras::CameraAvatarPrepareData*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_SET_PREAVATARPREPAREDATA_OFFSET))(this, a1);
+		}
+
+		::MoleMole::Cameras::CameraAvatarPrepareData* get_AvatarPrepareData()
+		{
+			return ((::MoleMole::Cameras::CameraAvatarPrepareData*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_AVATARPREPAREDATA_OFFSET))(this);
+		}
+
+		::System::Void set_AvatarPrepareData(::MoleMole::Cameras::CameraAvatarPrepareData* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Cameras::CameraAvatarPrepareData*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_SET_AVATARPREPAREDATA_OFFSET))(this, a1);
+		}
+
+		::MoleMole::Battle::Entity* get_lockTarget()
+		{
+			return ((::MoleMole::Battle::Entity*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_LOCKTARGET_OFFSET))(this);
+		}
+
+		::Class_1_CB7F0487F7A6164A* get_lockFeatureTarget()
+		{
+			return ((::Class_1_CB7F0487F7A6164A*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_LOCKFEATURETARGET_OFFSET))(this);
+		}
+
+		::MoleMole::Config::InlevelCameraState get_CurrentCamState()
+		{
+			return ((::MoleMole::Config::InlevelCameraState(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_CURRENTCAMSTATE_OFFSET))(this);
+		}
+
+		::System::Void set_CurrentCamState(::MoleMole::Config::InlevelCameraState a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::InlevelCameraState))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_SET_CURRENTCAMSTATE_OFFSET))(this, a1);
+		}
+
+		static ::System::Collections::Generic::List_1<::System::String*>* get_ExternalStr()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_GET_EXTERNALSTR_OFFSET))();
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_DISPOSE_OFFSET))(this);
+		}
+
+		::System::Single Method_1_861970C5F2C21AB2()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_861970C5F2C21AB2_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* Method_1_BC745DD3D5619033()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_BC745DD3D5619033_OFFSET))(this);
+		}
+
+		::System::Void Method_1_17C2C73EDCBB5629()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_17C2C73EDCBB5629_OFFSET))(this);
+		}
+
+		::System::Void Method_1_5FB00E6D01902483(::System::String* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_5FB00E6D01902483_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_1_B1239B7173FDF4C6(::MoleMole::Config::ConfigDataPriority a1, ::MoleMole::Config::ConfigDataClearPriority a2, ::System::String* a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigDataPriority, ::MoleMole::Config::ConfigDataClearPriority, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_B1239B7173FDF4C6_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Int32 Method_1_148D7A98EB871977(::Class_1_BEF5F5E810036AF4_1* a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_BEF5F5E810036AF4_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_148D7A98EB871977_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_1_97D83E4CB3B11935()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_97D83E4CB3B11935_OFFSET))(this);
+		}
+
+		::System::Int32 Method_1_CFFAFB6FF11557B5(::Class_1_50459AA2C7E65196* a1, ::System::Boolean a2, ::MoleMole::Battle::Entity* a3)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_50459AA2C7E65196*, ::System::Boolean, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CFFAFB6FF11557B5_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Boolean Method_1_37011B6DDBE4CF26()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_37011B6DDBE4CF26_OFFSET))(this);
+		}
+
+		::System::Void Method_1_1D75921A1FC4C98D(::System::Int32 a1, ::System::Int32 a2, ::MoleMole::Config::ConfigDataClearPriority a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::MoleMole::Config::ConfigDataClearPriority))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_1D75921A1FC4C98D_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Void Method_1_33ACA6CB2ABC73F7()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_33ACA6CB2ABC73F7_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* Method_1_62131DF2D3A09864()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_62131DF2D3A09864_OFFSET))(this);
+		}
+
+		::System::Boolean Method_1_54BDA1C01D683A47(::System::Int32 a1, ::MoleMole::Cameras::CameraMiscSetting* a2, ::Class_1_1DAC1F9F4B999C38_Struct_2_2673E6B37CEF07BF_1& a3)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::MoleMole::Cameras::CameraMiscSetting*, ::Class_1_1DAC1F9F4B999C38_Struct_2_2673E6B37CEF07BF_1&))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_54BDA1C01D683A47_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Int32 Method_1_534661913E3766CA(::Class_1_F2C28752E8780B52* a1, ::MoleMole::Battle::Entity* a2)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_F2C28752E8780B52*, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_534661913E3766CA_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_1_5110E061C0DF5692(::Class_1_48956C855353AC97* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_48956C855353AC97*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_5110E061C0DF5692_OFFSET))(this, a1);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* Method_1_CBACBF33B55CA258()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CBACBF33B55CA258_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 Method_1_06D2228B483124DF(::System::Single a1, ::System::Single a2)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_06D2228B483124DF_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_1_37BF2F32FDE645A4(::MoleMole::Config::ConfigDataPriority a1, ::MoleMole::Config::ConfigDataClearPriority a2, ::System::Int32 a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigDataPriority, ::MoleMole::Config::ConfigDataClearPriority, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_37BF2F32FDE645A4_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* Method_1_7E61AB0326C9D6AE()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_7E61AB0326C9D6AE_OFFSET))(this);
+		}
+
+		::System::Void Method_1_A5B6063FFC26FC8F()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_A5B6063FFC26FC8F_OFFSET))(this);
+		}
+
+		::System::Void Method_1_B1936CE4DA97AA45()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_B1936CE4DA97AA45_OFFSET))(this);
+		}
+
+		::System::Void Method_1_43D99DDD80B1E30C()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_43D99DDD80B1E30C_OFFSET))(this);
+		}
+
+		::System::Void Method_1_5FB00E6D01902483_1(::System::String* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_5FB00E6D01902483_1_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_2C5D04531262A697(::MoleMole::Cameras::CameraMiscSetting* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::Cameras::CameraMiscSetting*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_2C5D04531262A697_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_945C3AC4300E4FA3(::Class_1_FF2ECD13EC40B5E1_Struct_2_2673E6B37CEF07BF a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_FF2ECD13EC40B5E1_Struct_2_2673E6B37CEF07BF))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_945C3AC4300E4FA3_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_39A9FE040505BFA5()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_39A9FE040505BFA5_OFFSET))(this);
+		}
+
+		::System::Void Method_1_650F473FFDE608B9(::MoleMole::Config::ConfigDataPriority a1, ::MoleMole::Config::ConfigDataClearPriority a2, ::System::Int32 a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigDataPriority, ::MoleMole::Config::ConfigDataClearPriority, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_650F473FFDE608B9_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Boolean Method_1_4E84FD21E7EECC5B()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_4E84FD21E7EECC5B_OFFSET))(this);
+		}
+
+		::System::Boolean Method_1_4A7BA141CE4D4AB1(::System::Action* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_4A7BA141CE4D4AB1_OFFSET))(this, a1);
+		}
+
+		::Class_1_52BCA1880ED5953B* Method_1_AECF8BEC293ED42A()
+		{
+			return ((::Class_1_52BCA1880ED5953B*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AECF8BEC293ED42A_OFFSET))(this);
+		}
+
+		::Class_1_0294183E7B0E0003* Method_1_AECF8BEC293ED42A_1()
+		{
+			return ((::Class_1_0294183E7B0E0003*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AECF8BEC293ED42A_1_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* Method_1_CBACBF33B55CA258_1()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CBACBF33B55CA258_1_OFFSET))(this);
+		}
+
+		::System::Boolean Method_1_945C3AC4300E4FA3_1(::Class_1_1DAC1F9F4B999C38_Struct_2_2673E6B37CEF07BF_1 a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_1DAC1F9F4B999C38_Struct_2_2673E6B37CEF07BF_1))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_945C3AC4300E4FA3_1_OFFSET))(this, a1);
+		}
+
+		::Class_1_BB84B938A7E58DA3* Method_1_AECF8BEC293ED42A_2()
+		{
+			return ((::Class_1_BB84B938A7E58DA3*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AECF8BEC293ED42A_2_OFFSET))(this);
+		}
+
+		::System::Boolean Method_1_AE639D8AB1549F54(::Class_1_50459AA2C7E65196*& a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_50459AA2C7E65196*&))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AE639D8AB1549F54_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_1_B6BB704B01BCC35B()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_B6BB704B01BCC35B_OFFSET))(this);
+		}
+
+		::System::Void Method_1_245D7FBFF19F784E(::System::Int32 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_245D7FBFF19F784E_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_0C498EE2EA2CF96A(::System::Int32 a1, ::MoleMole::Cameras::CameraTrackSetting* a2, ::Class_1_FF2ECD13EC40B5E1_Struct_2_2673E6B37CEF07BF& a3)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::MoleMole::Cameras::CameraTrackSetting*, ::Class_1_FF2ECD13EC40B5E1_Struct_2_2673E6B37CEF07BF&))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_0C498EE2EA2CF96A_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Int32 Method_1_538706B04C2A4407(::Class_1_52BCA1880ED5953B* a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_52BCA1880ED5953B*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_538706B04C2A4407_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_1_1D75921A1FC4C98D_1(::System::Int32 a1, ::System::Int32 a2, ::MoleMole::Config::ConfigDataClearPriority a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::MoleMole::Config::ConfigDataClearPriority))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_1D75921A1FC4C98D_1_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Boolean Method_1_E3D1A129DD9A7B23(::MoleMole::Config::ConfigDataPriority a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::Config::ConfigDataPriority))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_E3D1A129DD9A7B23_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_1_522663341B4E5003(::MoleMole::Config::ConfigDataPriority a1, ::MoleMole::Config::ConfigDataClearPriority a2, ::System::String* a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigDataPriority, ::MoleMole::Config::ConfigDataClearPriority, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_522663341B4E5003_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Void Method_1_E6F4FD7AF7C4C2DC(::UnityEngine::Transform* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_E6F4FD7AF7C4C2DC_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_DF76843B906CABFF(::MoleMole::Config::ConfigDataPlayStacking a1, ::MoleMole::Config::ConfigDataPriority a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::Config::ConfigDataPlayStacking, ::MoleMole::Config::ConfigDataPriority))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_DF76843B906CABFF_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_1_7B2BA56C32EAAA23(::System::Int32 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_7B2BA56C32EAAA23_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_39A9FE040505BFA5_1()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_39A9FE040505BFA5_1_OFFSET))(this);
+		}
+
+		::System::Void Method_1_650F473FFDE608B9_1(::MoleMole::Config::ConfigDataPriority a1, ::MoleMole::Config::ConfigDataClearPriority a2, ::System::Int32 a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigDataPriority, ::MoleMole::Config::ConfigDataClearPriority, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_650F473FFDE608B9_1_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Void Method_1_E6F4FD7AF7C4C2DC_1(::UnityEngine::Transform* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_E6F4FD7AF7C4C2DC_1_OFFSET))(this, a1);
+		}
+
+		::System::Int32 Method_1_148D7A98EB871977_1(::Class_1_BEF5F5E810036AF4* a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_BEF5F5E810036AF4*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_148D7A98EB871977_1_OFFSET))(this, a1);
+		}
+
+		::System::Int32 Method_1_C6C6033AD8273C6E(::Class_1_BB84B938A7E58DA3* a1, ::MoleMole::Battle::Entity* a2)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_BB84B938A7E58DA3*, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_C6C6033AD8273C6E_OFFSET))(this, a1, a2);
+		}
+
+		::System::Int32 Method_1_DB659701005BBAF8(::MoleMole::Battle::Entity* a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_DB659701005BBAF8_OFFSET))(this, a1);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* Method_1_CBACBF33B55CA258_2()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CBACBF33B55CA258_2_OFFSET))(this);
+		}
+
+		::System::Void Method_1_BCB087DFB7399B96(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_BCB087DFB7399B96_OFFSET))(this, a1);
+		}
+
+		::System::Int32 Method_1_F7667B5003121159(::MoleMole::Cameras::CameraMoveModeData* a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::MoleMole::Cameras::CameraMoveModeData*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_F7667B5003121159_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_1_477268E8180E05C5(::MoleMole::Config::CameraDelayMoveMode a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::CameraDelayMoveMode))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_477268E8180E05C5_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_A8F6F688241E6DBC()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_A8F6F688241E6DBC_OFFSET))(this);
+		}
+
+		::System::Int32 Method_1_EC9C71CF50EEA7C5(::Class_1_0294183E7B0E0003* a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_0294183E7B0E0003*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_EC9C71CF50EEA7C5_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_1_522663341B4E5003_1(::MoleMole::Config::ConfigDataPriority a1, ::MoleMole::Config::ConfigDataClearPriority a2, ::System::String* a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigDataPriority, ::MoleMole::Config::ConfigDataClearPriority, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_522663341B4E5003_1_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Void Method_1_3B4AC28BC20E9CD8(::System::Boolean a1, ::System::Boolean a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_3B4AC28BC20E9CD8_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_1_650F473FFDE608B9_2(::MoleMole::Config::ConfigDataPriority a1, ::MoleMole::Config::ConfigDataClearPriority a2, ::System::Int32 a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigDataPriority, ::MoleMole::Config::ConfigDataClearPriority, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_650F473FFDE608B9_2_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Void Method_1_3B6DE532CA77D7C1(::Struct_2_455336A079B58DD3& a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_455336A079B58DD3&))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_3B6DE532CA77D7C1_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_1_C4C4701D503698C5(::System::String* a1, ::System::UInt32 a2, ::System::Boolean a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::UInt32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_C4C4701D503698C5_OFFSET))(this, a1, a2, a3);
+		}
+
+		::Class_1_F2C28752E8780B52* Method_1_AECF8BEC293ED42A_3()
+		{
+			return ((::Class_1_F2C28752E8780B52*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AECF8BEC293ED42A_3_OFFSET))(this);
+		}
+
+		::System::Void Method_1_33ACA6CB2ABC73F7_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_33ACA6CB2ABC73F7_1_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* Method_1_CBACBF33B55CA258_3()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CBACBF33B55CA258_3_OFFSET))(this);
+		}
+
+		::System::Boolean Method_1_30197B07F99B681E(::MoleMole::Cameras::CameraTrackSetting* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::Cameras::CameraTrackSetting*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_30197B07F99B681E_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_1_6BB86695870EFBD1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_6BB86695870EFBD1_OFFSET))(this);
+		}
+
+		::System::Void Method_1_363148F355523F24(::System::Int32 a1, ::System::Int32 a2, ::MoleMole::Config::ConfigDataClearPriority a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::MoleMole::Config::ConfigDataClearPriority))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_363148F355523F24_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Boolean Method_1_DF76843B906CABFF_1(::MoleMole::Config::ConfigDataPlayStacking a1, ::MoleMole::Config::ConfigDataPriority a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::Config::ConfigDataPlayStacking, ::MoleMole::Config::ConfigDataPriority))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_DF76843B906CABFF_1_OFFSET))(this, a1, a2);
+		}
+
+		::System::Single Method_1_AA69FB9485F94D4F(::System::Single a1)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AA69FB9485F94D4F_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Vector2 Method_1_14992E39298B9D27(::System::Single a1)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_14992E39298B9D27_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_1_92EB806315DCB90E(::Class_1_2C434B932ED0B61F* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_2C434B932ED0B61F*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_92EB806315DCB90E_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Vector3 Method_1_153DB45DA48D91A6()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_153DB45DA48D91A6_OFFSET))(this);
+		}
+
+		::System::Boolean Method_1_1D4018D4200358D0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_1D4018D4200358D0_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* Method_1_CBACBF33B55CA258_4()
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CBACBF33B55CA258_4_OFFSET))(this);
+		}
+
+		::Class_1_48956C855353AC97* Method_1_AECF8BEC293ED42A_4()
+		{
+			return ((::Class_1_48956C855353AC97*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_AECF8BEC293ED42A_4_OFFSET))(this);
+		}
+
+		::System::Void Method_1_CA373AA1C7054598()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_CA373AA1C7054598_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 Method_1_7E832D0C2C340C33()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_CAMERADATAACCESSOR_METHOD_1_7E832D0C2C340C33_OFFSET))(this);
+		}
+	};
+}

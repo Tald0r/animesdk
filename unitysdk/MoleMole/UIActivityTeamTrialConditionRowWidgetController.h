@@ -1,0 +1,99 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_374D688FD254861E_1;
+namespace MoleMole { class UIActivityTeamTrialConditionRowWidgetController_Context; }
+namespace MoleMole { class UIControlReference; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_ONCLICK_OFFSET UNITYSDK_OFFSET(0xB5E6420)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB5E57F0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB5E59E0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_REFRESHGAMEPADSELECTABLE_OFFSET UNITYSDK_OFFSET(0xB5E5F80)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_REFRESHWIDGET_OFFSET UNITYSDK_OFFSET(0xB5E5AC0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_SETBTNINTERACT_OFFSET UNITYSDK_OFFSET(0xB5E61A0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_SETEMPTY_OFFSET UNITYSDK_OFFSET(0xB5E5C00)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_SETENABLE_OFFSET UNITYSDK_OFFSET(0xB5E5DF0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_SETSELECTSHOW_OFFSET UNITYSDK_OFFSET(0xB5E5CB0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_SETSELECT_OFFSET UNITYSDK_OFFSET(0xB5E60B0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB5E64E0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB5E6550)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB5E65C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityTeamTrialConditionRowWidgetController_TypeDefinitionIndex = 55754;
+
+	class UIActivityTeamTrialConditionRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_374D688FD254861E_1* _view; // 0x2A0
+		::MoleMole::UIActivityTeamTrialConditionRowWidgetController_Context* context; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshWidget(::MoleMole::UIActivityTeamTrialConditionRowWidgetController_Context* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityTeamTrialConditionRowWidgetController_Context*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_REFRESHWIDGET_OFFSET))(this, context);
+		}
+
+		::System::Void SetEmpty(::System::Boolean isEmpty)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_SETEMPTY_OFFSET))(this, isEmpty);
+		}
+
+		::System::Void SetSelectShow(::System::Boolean isShow)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_SETSELECTSHOW_OFFSET))(this, isShow);
+		}
+
+		::System::Void SetSelect(::System::Boolean select)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_SETSELECT_OFFSET))(this, select);
+		}
+
+		::System::Void SetEnable(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_SETENABLE_OFFSET))(this, enable);
+		}
+
+		::System::Void SetBtnInteract(::System::Boolean interact, ::System::String* flag)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_SETBTNINTERACT_OFFSET))(this, interact, flag);
+		}
+
+		::System::Void RefreshGamePadSelectable(::System::Int32 questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_REFRESHGAMEPADSELECTABLE_OFFSET))(this, questID);
+		}
+
+		::System::Void OnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER_ONCLICK_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYTEAMTRIALCONDITIONROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+	};
+}

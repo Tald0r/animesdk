@@ -17,76 +17,81 @@ namespace System { class String; }
 namespace System { class Type; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::IO { class Stream; }
 namespace System::Reflection { class FieldInfo; }
 namespace System::Reflection { class MethodBase; }
 namespace System::Reflection { class MethodInfo; }
 
-#define IFIX_CORE_VIRTUALMACHINE_ARRAYGET_OFFSET UNITYSDK_OFFSET(0x1545F4D0)
-#define IFIX_CORE_VIRTUALMACHINE_ARRAYSET_OFFSET UNITYSDK_OFFSET(0x1545F8C0)
-#define IFIX_CORE_VIRTUALMACHINE_CHECKCCTOREXECUTE_OFFSET UNITYSDK_OFFSET(0x1544AE80)
-#define IFIX_CORE_VIRTUALMACHINE_COPY_OFFSET UNITYSDK_OFFSET(0x1544B2F0)
-#define IFIX_CORE_VIRTUALMACHINE_EXECUTE_1_OFFSET UNITYSDK_OFFSET(0x1544B0B0)
-#define IFIX_CORE_VIRTUALMACHINE_EXECUTE_2_OFFSET UNITYSDK_OFFSET(0x1544B4E0)
-#define IFIX_CORE_VIRTUALMACHINE_EXECUTE_OFFSET UNITYSDK_OFFSET(0x15438AB0)
-#define IFIX_CORE_VIRTUALMACHINE_FINALIZE_OFFSET UNITYSDK_OFFSET(0x1544AD80)
-#define IFIX_CORE_VIRTUALMACHINE_GETEXCEPTIONHANDLER_OFFSET UNITYSDK_OFFSET(0x1545F3E0)
-#define IFIX_CORE_VIRTUALMACHINE_GET_ANONYMOUSSTOREYINFOS_OFFSET UNITYSDK_OFFSET(0x1544AD00)
-#define IFIX_CORE_VIRTUALMACHINE_GET_CCTORS_OFFSET UNITYSDK_OFFSET(0x1544AD30)
-#define IFIX_CORE_VIRTUALMACHINE_GET_EXCEPTIONHANDLERS_OFFSET UNITYSDK_OFFSET(0x1544AC50)
-#define IFIX_CORE_VIRTUALMACHINE_GET_EXTERNMETHODS_OFFSET UNITYSDK_OFFSET(0x1544AC90)
-#define IFIX_CORE_VIRTUALMACHINE_GET_EXTERNTYPES_OFFSET UNITYSDK_OFFSET(0x1544AC70)
-#define IFIX_CORE_VIRTUALMACHINE_GET_FIELDINFOS_OFFSET UNITYSDK_OFFSET(0x1544ACC0)
-#define IFIX_CORE_VIRTUALMACHINE_GET_INTERNSTRINGS_OFFSET UNITYSDK_OFFSET(0x1544ACA0)
-#define IFIX_CORE_VIRTUALMACHINE_GET_NEWFIELDINFOS_OFFSET UNITYSDK_OFFSET(0x1544ACE0)
-#define IFIX_CORE_VIRTUALMACHINE_GET_STATICFIELDTYPES_OFFSET UNITYSDK_OFFSET(0x1544AD20)
-#define IFIX_CORE_VIRTUALMACHINE_GET_UNMANAGEDCODES_OFFSET UNITYSDK_OFFSET(0x1544AD50)
-#define IFIX_CORE_VIRTUALMACHINE_GET_WRAPPERSMANAGER_OFFSET UNITYSDK_OFFSET(0x1544AD60)
-#define IFIX_CORE_VIRTUALMACHINE_SET_ANONYMOUSSTOREYINFOS_OFFSET UNITYSDK_OFFSET(0x1544AD10)
-#define IFIX_CORE_VIRTUALMACHINE_SET_CCTORS_OFFSET UNITYSDK_OFFSET(0x1544AD40)
-#define IFIX_CORE_VIRTUALMACHINE_SET_EXCEPTIONHANDLERS_OFFSET UNITYSDK_OFFSET(0x1544AC60)
-#define IFIX_CORE_VIRTUALMACHINE_SET_EXTERNMETHODS_OFFSET UNITYSDK_OFFSET(0x15443820)
-#define IFIX_CORE_VIRTUALMACHINE_SET_EXTERNTYPES_OFFSET UNITYSDK_OFFSET(0x1544AC80)
-#define IFIX_CORE_VIRTUALMACHINE_SET_FIELDINFOS_OFFSET UNITYSDK_OFFSET(0x1544ACD0)
-#define IFIX_CORE_VIRTUALMACHINE_SET_INTERNSTRINGS_OFFSET UNITYSDK_OFFSET(0x1544ACB0)
-#define IFIX_CORE_VIRTUALMACHINE_SET_NEWFIELDINFOS_OFFSET UNITYSDK_OFFSET(0x1544ACF0)
-#define IFIX_CORE_VIRTUALMACHINE_SET_STATICFIELDTYPES_OFFSET UNITYSDK_OFFSET(0x15443880)
-#define IFIX_CORE_VIRTUALMACHINE_SET_WRAPPERSMANAGER_OFFSET UNITYSDK_OFFSET(0x1544AD70)
-#define IFIX_CORE_VIRTUALMACHINE_STORE_OFFSET UNITYSDK_OFFSET(0x1544B100)
-#define IFIX_CORE_VIRTUALMACHINE_THROWRUNTIMEEXCEPTION_OFFSET UNITYSDK_OFFSET(0x1545F360)
-#define IFIX_CORE_VIRTUALMACHINE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1545FCD0)
-#define IFIX_CORE_VIRTUALMACHINE__CTOR_OFFSET UNITYSDK_OFFSET(0x154435C0)
-#define IFIX_CORE_VIRTUALMACHINE__INFO_OFFSET UNITYSDK_OFFSET(0x1544A4F0)
+#define IFIX_CORE_VIRTUALMACHINE_ARRAYGET_OFFSET UNITYSDK_OFFSET(0x19931670)
+#define IFIX_CORE_VIRTUALMACHINE_ARRAYSET_OFFSET UNITYSDK_OFFSET(0x19931A30)
+#define IFIX_CORE_VIRTUALMACHINE_CHECKCCTOREXECUTE_OFFSET UNITYSDK_OFFSET(0x1991C990)
+#define IFIX_CORE_VIRTUALMACHINE_COPY_OFFSET UNITYSDK_OFFSET(0x1991CE10)
+#define IFIX_CORE_VIRTUALMACHINE_EXECUTE_1_OFFSET UNITYSDK_OFFSET(0x1991CBC0)
+#define IFIX_CORE_VIRTUALMACHINE_EXECUTE_2_OFFSET UNITYSDK_OFFSET(0x1991D0A0)
+#define IFIX_CORE_VIRTUALMACHINE_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19910A70)
+#define IFIX_CORE_VIRTUALMACHINE_FINALIZE_OFFSET UNITYSDK_OFFSET(0x1991C8F0)
+#define IFIX_CORE_VIRTUALMACHINE_GETEXCEPTIONHANDLER_OFFSET UNITYSDK_OFFSET(0x19931580)
+#define IFIX_CORE_VIRTUALMACHINE_GETGLOBAL_OFFSET UNITYSDK_OFFSET(0x19932440)
+#define IFIX_CORE_VIRTUALMACHINE_GET_ANONYMOUSSTOREYINFOS_OFFSET UNITYSDK_OFFSET(0x1991C8B0)
+#define IFIX_CORE_VIRTUALMACHINE_GET_CCTORS_OFFSET UNITYSDK_OFFSET(0x1991C8D0)
+#define IFIX_CORE_VIRTUALMACHINE_GET_EXCEPTIONHANDLERS_OFFSET UNITYSDK_OFFSET(0x1991C860)
+#define IFIX_CORE_VIRTUALMACHINE_GET_EXTERNMETHODS_OFFSET UNITYSDK_OFFSET(0x1991C870)
+#define IFIX_CORE_VIRTUALMACHINE_GET_EXTERNTYPES_OFFSET UNITYSDK_OFFSET(0x1990F760)
+#define IFIX_CORE_VIRTUALMACHINE_GET_FIELDINFOS_OFFSET UNITYSDK_OFFSET(0x1991C890)
+#define IFIX_CORE_VIRTUALMACHINE_GET_INTERNSTRINGS_OFFSET UNITYSDK_OFFSET(0x1991C880)
+#define IFIX_CORE_VIRTUALMACHINE_GET_NEWFIELDINFOS_OFFSET UNITYSDK_OFFSET(0x1991C8A0)
+#define IFIX_CORE_VIRTUALMACHINE_GET_STATICFIELDTYPES_OFFSET UNITYSDK_OFFSET(0x1991C8C0)
+#define IFIX_CORE_VIRTUALMACHINE_GET_WRAPPERSMANAGER_OFFSET UNITYSDK_OFFSET(0x1991C8E0)
+#define IFIX_CORE_VIRTUALMACHINE_INITIALIZEGLOBAL_OFFSET UNITYSDK_OFFSET(0x19932390)
+#define IFIX_CORE_VIRTUALMACHINE_PRINTSTACK_OFFSET UNITYSDK_OFFSET(0x199312E0)
+#define IFIX_CORE_VIRTUALMACHINE_REMOVEGLOBAL_OFFSET UNITYSDK_OFFSET(0x199323F0)
+#define IFIX_CORE_VIRTUALMACHINE_REPLACEGLOBAL_OFFSET UNITYSDK_OFFSET(0x199323C0)
+#define IFIX_CORE_VIRTUALMACHINE_SETGLOBAL_OFFSET UNITYSDK_OFFSET(0x19932340)
+#define IFIX_CORE_VIRTUALMACHINE_SET_ANONYMOUSSTOREYINFOS_OFFSET UNITYSDK_OFFSET(0x19919C10)
+#define IFIX_CORE_VIRTUALMACHINE_SET_CCTORS_OFFSET UNITYSDK_OFFSET(0x19919C70)
+#define IFIX_CORE_VIRTUALMACHINE_SET_EXCEPTIONHANDLERS_OFFSET UNITYSDK_OFFSET(0x19919BD0)
+#define IFIX_CORE_VIRTUALMACHINE_SET_EXTERNMETHODS_OFFSET UNITYSDK_OFFSET(0x19919B70)
+#define IFIX_CORE_VIRTUALMACHINE_SET_EXTERNTYPES_OFFSET UNITYSDK_OFFSET(0x19919B60)
+#define IFIX_CORE_VIRTUALMACHINE_SET_FIELDINFOS_OFFSET UNITYSDK_OFFSET(0x19919BF0)
+#define IFIX_CORE_VIRTUALMACHINE_SET_INTERNSTRINGS_OFFSET UNITYSDK_OFFSET(0x19919BE0)
+#define IFIX_CORE_VIRTUALMACHINE_SET_NEWFIELDINFOS_OFFSET UNITYSDK_OFFSET(0x19919C00)
+#define IFIX_CORE_VIRTUALMACHINE_SET_STATICFIELDTYPES_OFFSET UNITYSDK_OFFSET(0x19919C20)
+#define IFIX_CORE_VIRTUALMACHINE_SET_WRAPPERSMANAGER_OFFSET UNITYSDK_OFFSET(0x19919C80)
+#define IFIX_CORE_VIRTUALMACHINE_STATISTICS_OFFSET UNITYSDK_OFFSET(0x19931E80)
+#define IFIX_CORE_VIRTUALMACHINE_STORE_OFFSET UNITYSDK_OFFSET(0x1991CC10)
+#define IFIX_CORE_VIRTUALMACHINE_SWEEP_OFFSET UNITYSDK_OFFSET(0x19931E20)
+#define IFIX_CORE_VIRTUALMACHINE_THROWRUNTIMEEXCEPTION_OFFSET UNITYSDK_OFFSET(0x19931500)
+#define IFIX_CORE_VIRTUALMACHINE__CCTOR_OFFSET UNITYSDK_OFFSET(0x19932490)
+#define IFIX_CORE_VIRTUALMACHINE__CTOR_OFFSET UNITYSDK_OFFSET(0x199199A0)
+#define IFIX_CORE_VIRTUALMACHINE__INFO_OFFSET UNITYSDK_OFFSET(0x1991B870)
 
 namespace IFix::Core
 {
-	inline static constexpr unsigned int VirtualMachine_TypeDefinitionIndex = 9352;
+	inline static constexpr unsigned int VirtualMachine_TypeDefinitionIndex = 6815;
 
 	class VirtualMachine : public ::System::Object
 	{
 	public:
 		static ::System::Action_1<::System::String*>** StaticGet_Info()
 		{
-			return (::System::Action_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(VirtualMachine_TypeDefinitionIndex)->GetStaticField(0x7B0);
+			return (::System::Action_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(VirtualMachine_TypeDefinitionIndex)->GetStaticField(0x5C90);
 		}
-		static ::System::Action_1<::System::String*>** StaticGet___f__mg_cache0()
-		{
-			return (::System::Action_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(VirtualMachine_TypeDefinitionIndex)->GetStaticField(0x7B8);
-		}
-		::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Collections::Generic::Dictionary_2<::System::Reflection::MethodInfo*, ::System::Reflection::MethodInfo*>*>* overrideCache; // 0x10
-		::Il2CppArray<::System::Reflection::FieldInfo*>* fieldInfos; // 0x18
-		::Il2CppArray<::System::Type*>* staticFieldTypes; // 0x20
-		::System::Action* onDispose; // 0x28
-		::Il2CppArray<::System::Int32>* cctors; // 0x30
-		::Il2CppArray<::System::Object*>* staticFields; // 0x38
-		::Il2CppArray<::Il2CppArray<::IFix::Core::ExceptionHandler*>*>* exceptionHandlers; // 0x40
-		::IFix::Core::ObjectClone* objectClone; // 0x48
+		// static const ::System::Int32 MAX_EVALUATION_STACK_SIZE = 0x2800; // 0x0
+		::Il2CppArray<::System::Reflection::MethodBase*>* externMethods; // 0x10
+		::Il2CppArray<::IFix::Core::AnonymousStoreyInfo*>* anonymousStoreyInfos; // 0x18
+		::IFix::Core::WrappersManager* wrappersManager; // 0x20
+		::Il2CppArray<::System::Int32>* cctors; // 0x28
+		::Il2CppArray<::System::Object*>* staticFields; // 0x30
+		::Il2CppArray<::System::String*>* internStrings; // 0x38
+		::Il2CppArray<::System::Reflection::FieldInfo*>* fieldInfos; // 0x40
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::IFix::Core::NewFieldInfo*>* newFieldInfos; // 0x48
 		::Il2CppArray<::System::Type*>* externTypes; // 0x50
-		::IFix::Core::WrappersManager* wrappersManager; // 0x58
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::IFix::Core::NewFieldInfo*>* newFieldInfos; // 0x60
-		::Il2CppArray<::System::String*>* internStrings; // 0x68
-		::Il2CppArray<::IFix::Core::ExternInvoker*>* externInvokers; // 0x70
-		::Il2CppArray<::IFix::Core::AnonymousStoreyInfo*>* anonymousStoreyInfos; // 0x78
-		::Il2CppArray<::System::Reflection::MethodBase*>* externMethods; // 0x80
+		::System::Action* onDispose; // 0x58
+		::Il2CppArray<::Il2CppArray<::IFix::Core::ExceptionHandler*>*>* exceptionHandlers; // 0x60
+		::Il2CppArray<::IFix::Core::ExternInvoker*>* externInvokers; // 0x68
+		::IFix::Core::ObjectClone* objectClone; // 0x70
+		::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Collections::Generic::Dictionary_2<::System::Reflection::MethodInfo*, ::System::Reflection::MethodInfo*>*>* overrideCache; // 0x78
+		::Il2CppArray<::System::Type*>* staticFieldTypes; // 0x80
 		::IFix::Core::Instruction** unmanagedCodes; // 0x88
 		::System::Int32 PatchedArrayLength; // 0x90
 
@@ -190,11 +195,6 @@ namespace IFix::Core
 			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_SET_CCTORS_OFFSET))(this, value);
 		}
 
-		::IFix::Core::Instruction** get_UnmanagedCodes()
-		{
-			return ((::IFix::Core::Instruction**(*)(::PVOID))((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_GET_UNMANAGEDCODES_OFFSET))(this);
-		}
-
 		::IFix::Core::WrappersManager* get_WrappersManager()
 		{
 			return ((::IFix::Core::WrappersManager*(*)(::PVOID))((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_GET_WRAPPERSMANAGER_OFFSET))(this);
@@ -235,6 +235,11 @@ namespace IFix::Core
 			return ((::IFix::Core::Value*(*)(::PVOID, ::System::Int32, ::IFix::Core::Value*, ::Il2CppArray<::System::Object*>*, ::IFix::Core::Value*, ::System::Int32))((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_EXECUTE_1_OFFSET))(this, methodIndex, argumentBase, managedStack, evaluationStackBase, argsCount);
 		}
 
+		::System::Void printStack(::System::String* title, ::IFix::Core::Value* val)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::IFix::Core::Value*))((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_PRINTSTACK_OFFSET))(this, title, val);
+		}
+
 		::System::Void throwRuntimeException(::System::Exception* e, ::System::Boolean bWrap)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Exception*, ::System::Boolean))((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_THROWRUNTIMEEXCEPTION_OFFSET))(this, e, bWrap);
@@ -263,6 +268,41 @@ namespace IFix::Core
 		::IFix::Core::Value* Execute_2(::IFix::Core::Instruction* pc, ::IFix::Core::Value* argumentBase, ::Il2CppArray<::System::Object*>* managedStack, ::IFix::Core::Value* evaluationStackBase, ::System::Int32 argsCount, ::System::Int32 methodIndex, ::System::Int32 refCount, ::IFix::Core::Value** topWriteBack)
 		{
 			return ((::IFix::Core::Value*(*)(::PVOID, ::IFix::Core::Instruction*, ::IFix::Core::Value*, ::Il2CppArray<::System::Object*>*, ::IFix::Core::Value*, ::System::Int32, ::System::Int32, ::System::Int32, ::IFix::Core::Value**))((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_EXECUTE_2_OFFSET))(this, pc, argumentBase, managedStack, evaluationStackBase, argsCount, methodIndex, refCount, topWriteBack);
+		}
+
+		static ::System::Void Sweep()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_SWEEP_OFFSET))();
+		}
+
+		::System::String* Statistics()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_STATISTICS_OFFSET))(this);
+		}
+
+		static ::System::Void SetGlobal(::IFix::Core::VirtualMachine* virtualMachine, ::System::Boolean throwWhileExisted)
+		{
+			return ((::System::Void(*)(::IFix::Core::VirtualMachine*, ::System::Boolean))((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_SETGLOBAL_OFFSET))(virtualMachine, throwWhileExisted);
+		}
+
+		static ::System::Void InitializeGlobal(::System::IO::Stream* stream)
+		{
+			return ((::System::Void(*)(::System::IO::Stream*))((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_INITIALIZEGLOBAL_OFFSET))(stream);
+		}
+
+		static ::System::Void ReplaceGlobal(::System::IO::Stream* stream)
+		{
+			return ((::System::Void(*)(::System::IO::Stream*))((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_REPLACEGLOBAL_OFFSET))(stream);
+		}
+
+		static ::System::Void RemoveGlobal()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_REMOVEGLOBAL_OFFSET))();
+		}
+
+		static ::IFix::Core::VirtualMachine* GetGlobal()
+		{
+			return ((::IFix::Core::VirtualMachine*(*)())((::PBYTE)hIl2Cpp + IFIX_CORE_VIRTUALMACHINE_GETGLOBAL_OFFSET))();
 		}
 	};
 }

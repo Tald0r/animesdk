@@ -4,29 +4,28 @@
 
 namespace System::Dynamic { class ExpandoClass; }
 
-#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_GETALIGNEDSIZE_OFFSET UNITYSDK_OFFSET(0x17C7DCB0)
-#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x17C7B1A0)
-#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_GET_LENGTH_OFFSET UNITYSDK_OFFSET(0x17C7BFD0)
-#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_GET_VERSION_OFFSET UNITYSDK_OFFSET(0x17C7DC20)
-#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_SET_ITEM_OFFSET UNITYSDK_OFFSET(0x17C7BA60)
-#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_UPDATECLASS_OFFSET UNITYSDK_OFFSET(0x17C7C010)
-#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x17C7DCC0)
-#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17C7DCA0)
-#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA__CTOR_OFFSET UNITYSDK_OFFSET(0x17C7DC30)
+#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_GETALIGNEDSIZE_OFFSET UNITYSDK_OFFSET(0x1ABE58C0)
+#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x1ABE55B0)
+#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_GET_LENGTH_OFFSET UNITYSDK_OFFSET(0x1ABE5680)
+#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_SET_ITEM_OFFSET UNITYSDK_OFFSET(0x1ABE55F0)
+#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_UPDATECLASS_OFFSET UNITYSDK_OFFSET(0x1ABE5720)
+#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ABE58D0)
+#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1ABE5710)
+#define SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABE56A0)
 
 namespace System::Dynamic
 {
-	inline static constexpr unsigned int ExpandoObject_ExpandoData_TypeDefinitionIndex = 3656;
+	inline static constexpr unsigned int ExpandoObject_ExpandoData_TypeDefinitionIndex = 5001;
 
 	class ExpandoObject_ExpandoData : public ::System::Object
 	{
 	public:
 		static ::System::Dynamic::ExpandoObject_ExpandoData** StaticGet_Empty()
 		{
-			return (::System::Dynamic::ExpandoObject_ExpandoData**)Il2CppClass::FromTypeDefinitionIndex(ExpandoObject_ExpandoData_TypeDefinitionIndex)->GetStaticField(0x16A30);
+			return (::System::Dynamic::ExpandoObject_ExpandoData**)Il2CppClass::FromTypeDefinitionIndex(ExpandoObject_ExpandoData_TypeDefinitionIndex)->GetStaticField(0x3B50);
 		}
-		::System::Dynamic::ExpandoClass* Class; // 0x10
-		::Il2CppArray<::System::Object*>* _dataArray; // 0x18
+		::Il2CppArray<::System::Object*>* _dataArray; // 0x10
+		::System::Dynamic::ExpandoClass* Class; // 0x18
 		::System::Int32 _version; // 0x20
 
 		::System::Void _ctor()
@@ -52,11 +51,6 @@ namespace System::Dynamic
 		::System::Void set_Item(::System::Int32 index, ::System::Object* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_SET_ITEM_OFFSET))(this, index, value);
-		}
-
-		::System::Int32 get_Version()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DYNAMIC_EXPANDOOBJECT_EXPANDODATA_GET_VERSION_OFFSET))(this);
 		}
 
 		::System::Int32 get_Length()

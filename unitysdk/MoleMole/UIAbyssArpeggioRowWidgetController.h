@@ -1,0 +1,144 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_208CC9941471731A_117;
+class Class_2_208CC9941471731A_646;
+class Class_2_4050202702C5AF24;
+class Class_2_A5DAC33AF1AA7BC4;
+class Class_2_DBD69E52FAE36934;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIItemIconBtnSmallWidgetController; }
+namespace System { class EventArgs; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_GETCHAPTERUNLOCK_OFFSET UNITYSDK_OFFSET(0x8FB40E0)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONABYSSDUNGEONSWEEPHANDLE_OFFSET UNITYSDK_OFFSET(0x8FB45A0)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0x8FB4180)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8FB3320)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONQUESTCHANGEHANDLE_OFFSET UNITYSDK_OFFSET(0x8FB4530)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8FB33C0)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8FB2F40)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_REFRESHNEWSTATE_OFFSET UNITYSDK_OFFSET(0x8FB2650)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_REFRESHONCEREWARD_OFFSET UNITYSDK_OFFSET(0x8FB3AB0)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_REFRESHSTATE_OFFSET UNITYSDK_OFFSET(0x8FB34A0)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_REFRESHTRACKSTATE_OFFSET UNITYSDK_OFFSET(0x8FB3880)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x8FB2270)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_SETCHAPTERDATA_OFFSET UNITYSDK_OFFSET(0x8FB19E0)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8FB4620)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER__REFRESHONCEREWARD_G__GETISCOMPLETE_16_0_OFFSET UNITYSDK_OFFSET(0x8FB4070)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8FB4730)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8FB47A0)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8FB4820)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAbyssArpeggioRowWidgetController_TypeDefinitionIndex = 69203;
+
+	class UIAbyssArpeggioRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_A5DAC33AF1AA7BC4* _view; // 0x2A0
+		::Class_2_208CC9941471731A_117* _chapterCfg; // 0x2A8
+		::Class_2_4050202702C5AF24* _arpeggioModel; // 0x2B0
+		::Class_2_DBD69E52FAE36934* _yorozuyaModel; // 0x2B8
+		::System::Action_1<::System::Int32>* ClickAction; // 0x2C0
+		::System::Int32 CurIndex; // 0x2C8
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_646*>* _levelList; // 0x2D0
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnSmallWidgetController*>* _rewardList; // 0x2D8
+		::System::Collections::Generic::List_1<::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00>* _totalRewardList; // 0x2E0
+		::System::Collections::Generic::List_1<::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00>* _unGotRewardList; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetChapterData(::Class_2_208CC9941471731A_117* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_117*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_SETCHAPTERDATA_OFFSET))(this, data);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshState(::System::Single delay)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_REFRESHSTATE_OFFSET))(this, delay);
+		}
+
+		::System::Void RefreshOnceReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_REFRESHONCEREWARD_OFFSET))(this);
+		}
+
+		::System::Boolean GetChapterUnlock()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_GETCHAPTERUNLOCK_OFFSET))(this);
+		}
+
+		::System::Void OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void OnQuestChangeHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONQUESTCHANGEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void OnAbyssDungeonSweepHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_ONABYSSDUNGEONSWEEPHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void RefreshNewState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_REFRESHNEWSTATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshTrackState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER_REFRESHTRACKSTATE_OFFSET))(this);
+		}
+
+		::System::Boolean _RefreshOnceReward_g__GetIsComplete_16_0(::System::Int32 id)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER__REFRESHONCEREWARD_G__GETISCOMPLETE_16_0_OFFSET))(this, id);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

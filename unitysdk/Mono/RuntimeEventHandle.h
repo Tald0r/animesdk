@@ -4,28 +4,16 @@
 
 namespace System { class Object; }
 
-#define MONO_RUNTIMEEVENTHANDLE_EQUALS_OFFSET UNITYSDK_OFFSET(0x1FFD500)
-#define MONO_RUNTIMEEVENTHANDLE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x59D0)
-#define MONO_RUNTIMEEVENTHANDLE_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x5580)
-#define MONO_RUNTIMEEVENTHANDLE__CTOR_OFFSET UNITYSDK_OFFSET(0xBDC0)
+#define MONO_RUNTIMEEVENTHANDLE_EQUALS_OFFSET UNITYSDK_OFFSET(0x7B2CC0)
+#define MONO_RUNTIMEEVENTHANDLE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x2C3E30)
 
 namespace Mono
 {
-	inline static constexpr unsigned int RuntimeEventHandle_TypeDefinitionIndex = 8;
+	inline static constexpr unsigned int RuntimeEventHandle_TypeDefinitionIndex = 11;
 
 	struct alignas(8) RuntimeEventHandle
 	{
 		::System::IntPtr value; // 0x10
-
-		::System::Void _ctor(::System::IntPtr v)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::IntPtr))((::PBYTE)hIl2Cpp + MONO_RUNTIMEEVENTHANDLE__CTOR_OFFSET))(this, v);
-		}
-
-		::System::IntPtr get_Value()
-		{
-			return ((::System::IntPtr(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_RUNTIMEEVENTHANDLE_GET_VALUE_OFFSET))(this);
-		}
 
 		::System::Boolean Equals(::System::Object* obj)
 		{

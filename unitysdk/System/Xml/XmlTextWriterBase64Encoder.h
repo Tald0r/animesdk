@@ -4,22 +4,16 @@
 
 namespace System::Xml { class XmlTextEncoder; }
 
-#define SYSTEM_XML_XMLTEXTWRITERBASE64ENCODER_WRITECHARS_OFFSET UNITYSDK_OFFSET(0x17E2C5B0)
-#define SYSTEM_XML_XMLTEXTWRITERBASE64ENCODER__CTOR_OFFSET UNITYSDK_OFFSET(0x17E2AEF0)
+#define SYSTEM_XML_XMLTEXTWRITERBASE64ENCODER_WRITECHARS_OFFSET UNITYSDK_OFFSET(0x199A8560)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int XmlTextWriterBase64Encoder_TypeDefinitionIndex = 1772;
+	inline static constexpr unsigned int XmlTextWriterBase64Encoder_TypeDefinitionIndex = 1664;
 
 	class XmlTextWriterBase64Encoder : public ::System::Xml::Base64Encoder
 	{
 	public:
 		::System::Xml::XmlTextEncoder* xmlTextEncoder; // 0x28
-
-		::System::Void _ctor(::System::Xml::XmlTextEncoder* xmlTextEncoder)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::XmlTextEncoder*))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLTEXTWRITERBASE64ENCODER__CTOR_OFFSET))(this, xmlTextEncoder);
-		}
 
 		::System::Void WriteChars(::Il2CppArray<::System::Char>* chars, ::System::Int32 index, ::System::Int32 count)
 		{

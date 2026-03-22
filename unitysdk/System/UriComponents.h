@@ -3,7 +3,7 @@
 
 namespace System
 {
-	inline static constexpr unsigned int UriComponents_TypeDefinitionIndex = 2453;
+	inline static constexpr unsigned int UriComponents_TypeDefinitionIndex = 2673;
 
 	enum class UriComponents : ::System::Int32
 	{

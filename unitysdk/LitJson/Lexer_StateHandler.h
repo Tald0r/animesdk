@@ -1,0 +1,42 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/MulticastDelegate.h"
+
+namespace LitJson { class FsmContext; }
+namespace System { class AsyncCallback; }
+namespace System { class IAsyncResult; }
+namespace System { class Object; }
+
+#define LITJSON_LEXER_STATEHANDLER_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x1ABC6440)
+#define LITJSON_LEXER_STATEHANDLER_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x1ABC6470)
+#define LITJSON_LEXER_STATEHANDLER_INVOKE_OFFSET UNITYSDK_OFFSET(0x1ABC5F00)
+#define LITJSON_LEXER_STATEHANDLER__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABC5EF0)
+
+namespace LitJson
+{
+	inline static constexpr unsigned int Lexer_StateHandler_TypeDefinitionIndex = 8026;
+
+	class Lexer_StateHandler : public ::System::MulticastDelegate
+	{
+	public:
+		::System::Void _ctor(::System::Object* object, ::System::IntPtr method)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::IntPtr))((::PBYTE)hIl2Cpp + LITJSON_LEXER_STATEHANDLER__CTOR_OFFSET))(this, object, method);
+		}
+
+		::System::Boolean Invoke(::LitJson::FsmContext* ctx)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::LitJson::FsmContext*))((::PBYTE)hIl2Cpp + LITJSON_LEXER_STATEHANDLER_INVOKE_OFFSET))(this, ctx);
+		}
+
+		::System::IAsyncResult* BeginInvoke(::LitJson::FsmContext* ctx, ::System::AsyncCallback* callback, ::System::Object* object)
+		{
+			return ((::System::IAsyncResult*(*)(::PVOID, ::LitJson::FsmContext*, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + LITJSON_LEXER_STATEHANDLER_BEGININVOKE_OFFSET))(this, ctx, callback, object);
+		}
+
+		::System::Boolean EndInvoke(::System::IAsyncResult* result)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::IAsyncResult*))((::PBYTE)hIl2Cpp + LITJSON_LEXER_STATEHANDLER_ENDINVOKE_OFFSET))(this, result);
+		}
+	};
+}

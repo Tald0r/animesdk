@@ -4,28 +4,40 @@
 
 namespace System { class String; }
 
-#define UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE_SET_NATIVEFUNCTION_OFFSET UNITYSDK_OFFSET(0x181D2DE0)
-#define UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE_SET_NATIVEHEADER_OFFSET UNITYSDK_OFFSET(0x181D2DF0)
-#define UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x181D2E00)
+#define UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE_GET_NATIVEFUNCTION_OFFSET UNITYSDK_OFFSET(0x1B14F8D0)
+#define UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE_GET_NATIVEHEADER_OFFSET UNITYSDK_OFFSET(0x1B14F8F0)
+#define UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE_SET_NATIVEFUNCTION_OFFSET UNITYSDK_OFFSET(0x1B14F8E0)
+#define UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE_SET_NATIVEHEADER_OFFSET UNITYSDK_OFFSET(0x1B14F900)
+#define UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B14F910)
 
 namespace Unity::IL2CPP::CompilerServices
 {
-	inline static constexpr unsigned int Il2CppIntrinsicRemapAttribute_TypeDefinitionIndex = 3774;
+	inline static constexpr unsigned int Il2CppIntrinsicRemapAttribute_TypeDefinitionIndex = 6828;
 
 	class Il2CppIntrinsicRemapAttribute : public ::System::Attribute
 	{
 	public:
-		::System::String* _NativeHeader_k__BackingField; // 0x10
-		::System::String* _NativeFunction_k__BackingField; // 0x18
+		::System::String* _NativeFunction_k__BackingField; // 0x10
+		::System::String* _NativeHeader_k__BackingField; // 0x18
 
 		::System::Void _ctor(::System::String* nativeFunction, ::System::String* nativeHeader)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE__CTOR_OFFSET))(this, nativeFunction, nativeHeader);
 		}
 
+		::System::String* get_NativeFunction()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE_GET_NATIVEFUNCTION_OFFSET))(this);
+		}
+
 		::System::Void set_NativeFunction(::System::String* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE_SET_NATIVEFUNCTION_OFFSET))(this, value);
+		}
+
+		::System::String* get_NativeHeader()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITY_IL2CPP_COMPILERSERVICES_IL2CPPINTRINSICREMAPATTRIBUTE_GET_NATIVEHEADER_OFFSET))(this);
 		}
 
 		::System::Void set_NativeHeader(::System::String* value)

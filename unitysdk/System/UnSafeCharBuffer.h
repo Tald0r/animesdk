@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define SYSTEM_UNSAFECHARBUFFER_APPENDSTRING_OFFSET UNITYSDK_OFFSET(0x2002640)
-#define SYSTEM_UNSAFECHARBUFFER__CTOR_OFFSET UNITYSDK_OFFSET(0x2002630)
+#define SYSTEM_UNSAFECHARBUFFER_APPENDSTRING_OFFSET UNITYSDK_OFFSET(0x8E74D0)
+#define SYSTEM_UNSAFECHARBUFFER__CTOR_OFFSET UNITYSDK_OFFSET(0x8E74C0)
 
 namespace System
 {
-	inline static constexpr unsigned int UnSafeCharBuffer_TypeDefinitionIndex = 361;
+	inline static constexpr unsigned int UnSafeCharBuffer_TypeDefinitionIndex = 351;
 
 	struct alignas(8) UnSafeCharBuffer
 	{

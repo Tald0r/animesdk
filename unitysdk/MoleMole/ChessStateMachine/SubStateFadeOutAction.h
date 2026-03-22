@@ -1,0 +1,60 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ChessStateMachine/TextureSheetVEBase.h"
+
+class Class_1_43BD383C98B4C0C5_20;
+
+#define MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION_FORCESTOP_OFFSET UNITYSDK_OFFSET(0x6D3A040)
+#define MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION_RUN_OFFSET UNITYSDK_OFFSET(0x6D39C50)
+#define MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x6D3A230)
+#define MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION__RUN_B__2_0_OFFSET UNITYSDK_OFFSET(0x6D3A240)
+#define MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION__RUN_G____CLOSESUBSTATE_2_1_OFFSET UNITYSDK_OFFSET(0x6D39E30)
+#define MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION___BASE_FORCESTOP_OFFSET UNITYSDK_OFFSET(0x6D3A260)
+#define MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION___BASE_RUN_OFFSET UNITYSDK_OFFSET(0x6D3A2C0)
+
+namespace MoleMole::ChessStateMachine
+{
+	inline static constexpr unsigned int SubStateFadeOutAction_TypeDefinitionIndex = 50978;
+
+	class SubStateFadeOutAction : public ::MoleMole::ChessStateMachine::TextureSheetVEBase
+	{
+	public:
+		::System::Int32 FadeOutConfigID; // 0x28
+		::System::Boolean UseTextureSheetFade; // 0x2C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Run(::Class_1_43BD383C98B4C0C5_20* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_43BD383C98B4C0C5_20*))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION_RUN_OFFSET))(this, context);
+		}
+
+		::System::Void ForceStop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION_FORCESTOP_OFFSET))(this);
+		}
+
+		::System::Void _Run_b__2_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION__RUN_B__2_0_OFFSET))(this);
+		}
+
+		::System::Void _Run_g____closeSubState_2_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION__RUN_G____CLOSESUBSTATE_2_1_OFFSET))(this);
+		}
+
+		::System::Void __base_ForceStop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION___BASE_FORCESTOP_OFFSET))(this);
+		}
+
+		::System::Void __base_Run(::Class_1_43BD383C98B4C0C5_20* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_43BD383C98B4C0C5_20*))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_SUBSTATEFADEOUTACTION___BASE_RUN_OFFSET))(this, P0);
+		}
+	};
+}

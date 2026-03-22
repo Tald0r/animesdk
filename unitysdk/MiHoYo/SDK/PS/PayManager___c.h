@@ -8,29 +8,29 @@ namespace MiHoYo::SDK { class NetworkResponseModel; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_PS_PAYMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x158B4700)
-#define MIHOYO_SDK_PS_PAYMANAGER___C__CHECKPSPAY_B__17_1_OFFSET UNITYSDK_OFFSET(0x158B4770)
-#define MIHOYO_SDK_PS_PAYMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x158B4740)
-#define MIHOYO_SDK_PS_PAYMANAGER___C__REFRESHPRODUCTCACHE_B__16_0_OFFSET UNITYSDK_OFFSET(0x158B4750)
+#define MIHOYO_SDK_PS_PAYMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x187607E0)
+#define MIHOYO_SDK_PS_PAYMANAGER___C__CHECKPSPAY_B__17_1_OFFSET UNITYSDK_OFFSET(0x18760850)
+#define MIHOYO_SDK_PS_PAYMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x18760820)
+#define MIHOYO_SDK_PS_PAYMANAGER___C__REFRESHPRODUCTCACHE_B__16_0_OFFSET UNITYSDK_OFFSET(0x18760830)
 
 namespace MiHoYo::SDK::PS
 {
-	inline static constexpr unsigned int PayManager___c_TypeDefinitionIndex = 7406;
+	inline static constexpr unsigned int PayManager___c_TypeDefinitionIndex = 18549;
 
 	class PayManager___c : public ::System::Object
 	{
 	public:
-		static ::MiHoYo::SDK::PS::PayManager___c** StaticGet___9()
-		{
-			return (::MiHoYo::SDK::PS::PayManager___c**)Il2CppClass::FromTypeDefinitionIndex(PayManager___c_TypeDefinitionIndex)->GetStaticField(0x15930);
-		}
 		static ::System::Action_1<::MiHoYo::SDK::NetworkResponseModel*>** StaticGet___9__17_1()
 		{
-			return (::System::Action_1<::MiHoYo::SDK::NetworkResponseModel*>**)Il2CppClass::FromTypeDefinitionIndex(PayManager___c_TypeDefinitionIndex)->GetStaticField(0x15938);
+			return (::System::Action_1<::MiHoYo::SDK::NetworkResponseModel*>**)Il2CppClass::FromTypeDefinitionIndex(PayManager___c_TypeDefinitionIndex)->GetStaticField(0x99A0);
 		}
 		static ::System::Func_2<::MiHoYo::SDK::PS::PayManager_PSProduct, ::MiHoYo::SDK::Console::ConsoleProduct>** StaticGet___9__16_0()
 		{
-			return (::System::Func_2<::MiHoYo::SDK::PS::PayManager_PSProduct, ::MiHoYo::SDK::Console::ConsoleProduct>**)Il2CppClass::FromTypeDefinitionIndex(PayManager___c_TypeDefinitionIndex)->GetStaticField(0x15940);
+			return (::System::Func_2<::MiHoYo::SDK::PS::PayManager_PSProduct, ::MiHoYo::SDK::Console::ConsoleProduct>**)Il2CppClass::FromTypeDefinitionIndex(PayManager___c_TypeDefinitionIndex)->GetStaticField(0x99A8);
+		}
+		static ::MiHoYo::SDK::PS::PayManager___c** StaticGet___9()
+		{
+			return (::MiHoYo::SDK::PS::PayManager___c**)Il2CppClass::FromTypeDefinitionIndex(PayManager___c_TypeDefinitionIndex)->GetStaticField(0x99B0);
 		}
 
 		static ::System::Void _cctor()

@@ -1,0 +1,156 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_037D21AC29ED1130.h"
+
+class Class_1_8BABEB2BC6365EFE;
+class Class_2_208CC9941471731A_167;
+class Class_2_208CC9941471731A_893;
+class Class_2_3726593DCF5F2145;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_CLEARDROPDOWN_OFFSET UNITYSDK_OFFSET(0x98F3500)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_GETDEFAULTSELECTIDX_OFFSET UNITYSDK_OFFSET(0x98F45F0)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_GETNOAVAILABLESECTIONTEXTKEY_OFFSET UNITYSDK_OFFSET(0x98F4360)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x98F3580)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_INITDROPDOWN_OFFSET UNITYSDK_OFFSET(0x98F3040)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x98F3FB0)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x98F4050)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x98F3590)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x98F38E0)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x98F3A20)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_SHOULDSHOWLIKEICON_OFFSET UNITYSDK_OFFSET(0x98F4150)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x98F49A0)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER__INITDROPDOWN_B__0_0_OFFSET UNITYSDK_OFFSET(0x98F49B0)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER__ONUIINIT_B__8_0_OFFSET UNITYSDK_OFFSET(0x98F4A30)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER__ONUIINIT_B__8_1_OFFSET UNITYSDK_OFFSET(0x98F4AB0)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER__ONUIINIT_B__8_2_OFFSET UNITYSDK_OFFSET(0x98F4C80)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x98F56A0)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x98F5710)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x98F5720)
+#define MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x98F5730)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPartnerDateMapListPopWindowController_TypeDefinitionIndex = 37482;
+
+	class UIPartnerDateMapListPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_1_8BABEB2BC6365EFE* _dropDownViewModel; // 0x2F8
+		::Il2CppArray<::Struct_2_037D21AC29ED1130>* _dropDownParams; // 0x300
+		::Class_2_3726593DCF5F2145* _view; // 0x308
+		::System::Int32 _partnerID; // 0x310
+		::System::Int32 _partnerSectionID; // 0x314
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_893*>* _partnerSections; // 0x318
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_167*>* _freeModeAimList; // 0x320
+		::System::Int32 _curFreeModeAimIdx; // 0x328
+		::Class_2_208CC9941471731A_167* _curFreeModeAim; // 0x330
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void InitDropDown()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_INITDROPDOWN_OFFSET))(this);
+		}
+
+		::System::Void ClearDropDown()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_CLEARDROPDOWN_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean ShouldShowLikeIcon(::System::Int32 partnerSectionID)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_SHOULDSHOWLIKEICON_OFFSET))(this, partnerSectionID);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Int32 GetDefaultSelectIdx()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_GETDEFAULTSELECTIDX_OFFSET))(this);
+		}
+
+		::System::String* GetNoAvailableSectionTextKey()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER_GETNOAVAILABLESECTIONTEXTKEY_OFFSET))(this);
+		}
+
+		::System::Void _InitDropDown_b__0_0(::System::Int32 idx)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER__INITDROPDOWN_B__0_0_OFFSET))(this, idx);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _OnUIInit_b__8_0(::System::Func_1<::MoleMole::UIControlReference*>* reference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER__ONUIINIT_B__8_0_OFFSET))(this, reference);
+		}
+
+		::System::Void _OnUIInit_b__8_1(::System::Int32 idx)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER__ONUIINIT_B__8_1_OFFSET))(this, idx);
+		}
+
+		::System::Void _OnUIInit_b__8_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER__ONUIINIT_B__8_2_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPARTNERDATEMAPLISTPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

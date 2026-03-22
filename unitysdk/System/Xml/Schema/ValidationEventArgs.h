@@ -5,12 +5,13 @@
 
 namespace System::Xml::Schema { class XmlSchemaException; }
 
-#define SYSTEM_XML_SCHEMA_VALIDATIONEVENTARGS_GET_EXCEPTION_OFFSET UNITYSDK_OFFSET(0x17D7B780)
-#define SYSTEM_XML_SCHEMA_VALIDATIONEVENTARGS_GET_SEVERITY_OFFSET UNITYSDK_OFFSET(0x17D7B770)
+#define SYSTEM_XML_SCHEMA_VALIDATIONEVENTARGS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19A1BB70)
+#define SYSTEM_XML_SCHEMA_VALIDATIONEVENTARGS__CTOR_2_OFFSET UNITYSDK_OFFSET(0x19A1BBB0)
+#define SYSTEM_XML_SCHEMA_VALIDATIONEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x19A1BB30)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int ValidationEventArgs_TypeDefinitionIndex = 2161;
+	inline static constexpr unsigned int ValidationEventArgs_TypeDefinitionIndex = 2095;
 
 	class ValidationEventArgs : public ::System::EventArgs
 	{
@@ -18,14 +19,19 @@ namespace System::Xml::Schema
 		::System::Xml::Schema::XmlSchemaException* ex; // 0x10
 		::System::Xml::Schema::XmlSeverityType severity; // 0x18
 
-		::System::Xml::Schema::XmlSeverityType get_Severity()
+		::System::Void _ctor(::System::Xml::Schema::XmlSchemaException* ex)
 		{
-			return ((::System::Xml::Schema::XmlSeverityType(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_VALIDATIONEVENTARGS_GET_SEVERITY_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaException*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_VALIDATIONEVENTARGS__CTOR_OFFSET))(this, ex);
 		}
 
-		::System::Xml::Schema::XmlSchemaException* get_Exception()
+		::System::Void _ctor_1(::System::Xml::Schema::XmlSchemaException* ex, ::System::Xml::Schema::XmlSeverityType severity)
 		{
-			return ((::System::Xml::Schema::XmlSchemaException*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_VALIDATIONEVENTARGS_GET_EXCEPTION_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaException*, ::System::Xml::Schema::XmlSeverityType))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_VALIDATIONEVENTARGS__CTOR_1_OFFSET))(this, ex, severity);
+		}
+
+		::System::Void _ctor_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_VALIDATIONEVENTARGS__CTOR_2_OFFSET))(this);
 		}
 	};
 }

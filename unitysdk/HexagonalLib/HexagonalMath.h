@@ -1,0 +1,38 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/System/ValueTuple_2.h"
+
+#define HEXAGONALLIB_HEXAGONALMATH_NORMALIZE_OFFSET UNITYSDK_OFFSET(0x1B059100)
+#define HEXAGONALLIB_HEXAGONALMATH_ROTATE_OFFSET UNITYSDK_OFFSET(0x1B058FD0)
+#define HEXAGONALLIB_HEXAGONALMATH_SIMILARTO_1_OFFSET UNITYSDK_OFFSET(0x1B0592B0)
+#define HEXAGONALLIB_HEXAGONALMATH_SIMILARTO_OFFSET UNITYSDK_OFFSET(0x1B0591C0)
+
+namespace HexagonalLib
+{
+	inline static constexpr unsigned int HexagonalMath_TypeDefinitionIndex = 24928;
+
+	class HexagonalMath : public ::System::Object
+	{
+	public:
+		static ::System::ValueTuple_2<::System::Single, ::System::Single> Rotate(::System::ValueTuple_2<::System::Single, ::System::Single>& vector, ::System::Single degrees)
+		{
+			return ((::System::ValueTuple_2<::System::Single, ::System::Single>(*)(::System::ValueTuple_2<::System::Single, ::System::Single>&, ::System::Single))((::PBYTE)hIl2Cpp + HEXAGONALLIB_HEXAGONALMATH_ROTATE_OFFSET))(vector, degrees);
+		}
+
+		static ::System::ValueTuple_2<::System::Single, ::System::Single> Normalize(::System::ValueTuple_2<::System::Single, ::System::Single>& vector)
+		{
+			return ((::System::ValueTuple_2<::System::Single, ::System::Single>(*)(::System::ValueTuple_2<::System::Single, ::System::Single>&))((::PBYTE)hIl2Cpp + HEXAGONALLIB_HEXAGONALMATH_NORMALIZE_OFFSET))(vector);
+		}
+
+		static ::System::Boolean SimilarTo(::System::Single& a, ::System::Single& b)
+		{
+			return ((::System::Boolean(*)(::System::Single&, ::System::Single&))((::PBYTE)hIl2Cpp + HEXAGONALLIB_HEXAGONALMATH_SIMILARTO_OFFSET))(a, b);
+		}
+
+		static ::System::Boolean SimilarTo_1(::System::ValueTuple_2<::System::Single, ::System::Single>& a, ::System::ValueTuple_2<::System::Single, ::System::Single>& b)
+		{
+			return ((::System::Boolean(*)(::System::ValueTuple_2<::System::Single, ::System::Single>&, ::System::ValueTuple_2<::System::Single, ::System::Single>&))((::PBYTE)hIl2Cpp + HEXAGONALLIB_HEXAGONALMATH_SIMILARTO_1_OFFSET))(a, b);
+		}
+	};
+}

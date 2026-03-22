@@ -3,25 +3,38 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/UIElements/DisplayStyle.h"
 #include "unitysdk/UnityEngine/UIElements/Overflow.h"
+#include "unitysdk/UnityEngine/UIElements/OverflowClipBox.h"
 #include "unitysdk/UnityEngine/UIElements/Visibility.h"
 
 namespace UnityEngine::UIElements { class VisualElement; }
 namespace UnityEngine::UIElements::StyleSheets { class InheritedStylesData; }
 namespace UnityEngine::UIElements::StyleSheets { class VisualElementStylesData; }
 
-#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_DISPLAY_OFFSET UNITYSDK_OFFSET(0x2059270)
-#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_INHERITEDSTYLESDATA_OFFSET UNITYSDK_OFFSET(0x2059190)
-#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_OVERFLOW_OFFSET UNITYSDK_OFFSET(0x20591B0)
-#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_STYLESDATA_OFFSET UNITYSDK_OFFSET(0x2059170)
-#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_VISIBILITY_OFFSET UNITYSDK_OFFSET(0x2059330)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_BORDERBOTTOMWIDTH_OFFSET UNITYSDK_OFFSET(0x8443D0)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_BORDERLEFTWIDTH_OFFSET UNITYSDK_OFFSET(0x844310)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_BORDERRIGHTWIDTH_OFFSET UNITYSDK_OFFSET(0x844390)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_BORDERTOPWIDTH_OFFSET UNITYSDK_OFFSET(0x844350)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_CURSOR_OFFSET UNITYSDK_OFFSET(0x8444D0)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_DISPLAY_OFFSET UNITYSDK_OFFSET(0x844410)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_INHERITEDSTYLESDATA_OFFSET UNITYSDK_OFFSET(0x844170)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_OVERFLOW_OFFSET UNITYSDK_OFFSET(0x844190)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_STYLESDATA_OFFSET UNITYSDK_OFFSET(0x844150)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_UNITYOVERFLOWCLIPBOX_OFFSET UNITYSDK_OFFSET(0x844250)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_VISIBILITY_OFFSET UNITYSDK_OFFSET(0x844520)
+#define UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE__CTOR_OFFSET UNITYSDK_OFFSET(0x2C3980)
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int ComputedStyle_TypeDefinitionIndex = 5860;
+	inline static constexpr unsigned int ComputedStyle_TypeDefinitionIndex = 23878;
 
 	struct alignas(8) ComputedStyle
 	{
 		::UnityEngine::UIElements::VisualElement* m_Element; // 0x10
+
+		::System::Void _ctor(::UnityEngine::UIElements::VisualElement* element)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UIElements::VisualElement*))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE__CTOR_OFFSET))(this, element);
+		}
 
 		::UnityEngine::UIElements::StyleSheets::VisualElementStylesData* get_stylesData()
 		{
@@ -41,9 +54,51 @@ namespace UnityEngine::UIElements
 		*/
 
 		/*
+		::UnityEngine::UIElements::StyleEnum_1<::UnityEngine::UIElements::OverflowClipBox> get_unityOverflowClipBox()
+		{
+			return ((::UnityEngine::UIElements::StyleEnum_1<::UnityEngine::UIElements::OverflowClipBox>(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_UNITYOVERFLOWCLIPBOX_OFFSET))(this);
+		}
+		*/
+
+		/*
+		::UnityEngine::UIElements::StyleFloat get_borderLeftWidth()
+		{
+			return ((::UnityEngine::UIElements::StyleFloat(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_BORDERLEFTWIDTH_OFFSET))(this);
+		}
+		*/
+
+		/*
+		::UnityEngine::UIElements::StyleFloat get_borderTopWidth()
+		{
+			return ((::UnityEngine::UIElements::StyleFloat(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_BORDERTOPWIDTH_OFFSET))(this);
+		}
+		*/
+
+		/*
+		::UnityEngine::UIElements::StyleFloat get_borderRightWidth()
+		{
+			return ((::UnityEngine::UIElements::StyleFloat(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_BORDERRIGHTWIDTH_OFFSET))(this);
+		}
+		*/
+
+		/*
+		::UnityEngine::UIElements::StyleFloat get_borderBottomWidth()
+		{
+			return ((::UnityEngine::UIElements::StyleFloat(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_BORDERBOTTOMWIDTH_OFFSET))(this);
+		}
+		*/
+
+		/*
 		::UnityEngine::UIElements::StyleEnum_1<::UnityEngine::UIElements::DisplayStyle> get_display()
 		{
 			return ((::UnityEngine::UIElements::StyleEnum_1<::UnityEngine::UIElements::DisplayStyle>(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_DISPLAY_OFFSET))(this);
+		}
+		*/
+
+		/*
+		::UnityEngine::UIElements::StyleCursor get_cursor()
+		{
+			return ((::UnityEngine::UIElements::StyleCursor(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_COMPUTEDSTYLE_GET_CURSOR_OFFSET))(this);
 		}
 		*/
 

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int PerObjectData_TypeDefinitionIndex = 4541;
+	inline static constexpr unsigned int PerObjectData_TypeDefinitionIndex = 6216;
 
 	enum class PerObjectData : ::System::Int32
 	{
@@ -19,5 +19,9 @@ namespace UnityEngine::Rendering
 		OcclusionProbe = 256,
 		OcclusionProbeProxyVolume = 512,
 		ShadowMask = 1024,
+		DynamicShadingRateMsaa = 2048,
+		DynamicShadingRateVrs = 4096,
+		ForceHighShadingRate = 8192,
+		ForceLowShadingRate = 16384,
 	};
 }

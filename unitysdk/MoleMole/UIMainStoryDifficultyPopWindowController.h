@@ -1,0 +1,111 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_D4F7234966C2AB79;
+class Class_2_83FFB84D9500CB3F;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0x92AB070)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x92AB060)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0x92AB1B0)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONBTNCLICKED_OFFSET UNITYSDK_OFFSET(0x92AB870)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONCONFIRMBTNCLICKED_OFFSET UNITYSDK_OFFSET(0x92ABBC0)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x92AB740)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x92AB7E0)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x92AB080)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x92AB0F0)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x92ABC80)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x92ABCA0)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x92ABD10)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x92ABD20)
+#define MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x92ABD30)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMainStoryDifficultyPopWindowController_TypeDefinitionIndex = 38543;
+
+	class UIMainStoryDifficultyPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_83FFB84D9500CB3F* _view; // 0x2F8
+		::System::String* _curImagePath; // 0x300
+		::System::Boolean _isChallengeModeOn; // 0x308
+		::System::Collections::Generic::List_1<::Class_1_D4F7234966C2AB79*>* _mainStoryDifficultyOptions; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnBtnClicked(::System::Boolean isChallengeModeOn, ::System::String* imagePath)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONBTNCLICKED_OFFSET))(this, isChallengeModeOn, imagePath);
+		}
+
+		::System::Void OnConfirmBtnClicked()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER_ONCONFIRMBTNCLICKED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINSTORYDIFFICULTYPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

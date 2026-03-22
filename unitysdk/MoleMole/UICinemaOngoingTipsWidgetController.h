@@ -1,0 +1,164 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UITweenSlotWidgetController.h"
+
+class Class_1_52502E7134136A83;
+class Class_2_208CC9941471731A_664;
+class Class_2_2E4B5538C9AB3846;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace System { template <typename T1, typename T2> class Action_2; }
+
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_CLEARCHAT_OFFSET UNITYSDK_OFFSET(0xDC75360)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_CLOSECHAT_OFFSET UNITYSDK_OFFSET(0xDC75580)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_CONTINUESHOW_OFFSET UNITYSDK_OFFSET(0xDC75470)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_ENDTEXT_OFFSET UNITYSDK_OFFSET(0x8BD94F0)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_FADEOUT_OFFSET UNITYSDK_OFFSET(0xDC758F0)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_FINISHTEXT_OFFSET UNITYSDK_OFFSET(0xDC75F90)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_FIRSTSHOW_OFFSET UNITYSDK_OFFSET(0xDC751F0)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_GETRESIDUETIME_OFFSET UNITYSDK_OFFSET(0x8BD9710)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_HIDECHAT_OFFSET UNITYSDK_OFFSET(0xDC75970)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_INTERRUPT_OFFSET UNITYSDK_OFFSET(0xDC75A90)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xDC75B00)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_ONTEXTFINISHED_OFFSET UNITYSDK_OFFSET(0x8BD95C0)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xDC75BA0)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xDC74E60)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_PAUSETEXT_OFFSET UNITYSDK_OFFSET(0xDC75E30)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_RESUMETEXT_OFFSET UNITYSDK_OFFSET(0xDC75EE0)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_SETCHATTEXT_OFFSET UNITYSDK_OFFSET(0xDC75C30)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_SETNAMETEXT_OFFSET UNITYSDK_OFFSET(0xDC75D00)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_SETTEXTDURATION_OFFSET UNITYSDK_OFFSET(0x8BD9640)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8BD9790)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8BD97C0)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8BD9830)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8BD9840)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICinemaOngoingTipsWidgetController_TypeDefinitionIndex = 47765;
+
+	class UICinemaOngoingTipsWidgetController : public ::MoleMole::UITweenSlotWidgetController
+	{
+	public:
+		::Class_2_2E4B5538C9AB3846* _view; // 0x2A8
+		::System::Action_2<::Class_2_208CC9941471731A_664*, ::System::Single>* onSetChatText; // 0x2B0
+		::System::Action* textFinishCallback; // 0x2B8
+		::Class_1_52502E7134136A83* ongoingTipsHandler; // 0x2C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void FirstShow(::Class_2_208CC9941471731A_664* config, ::System::Action* playSound, ::System::Action* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_664*, ::System::Action*, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_FIRSTSHOW_OFFSET))(this, config, playSound, callback);
+		}
+
+		::System::Void ContinueShow(::Class_2_208CC9941471731A_664* config, ::System::Action* playSound, ::System::Action* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_664*, ::System::Action*, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_CONTINUESHOW_OFFSET))(this, config, playSound, callback);
+		}
+
+		::System::Void CloseChat(::System::Action* onEnd)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_CLOSECHAT_OFFSET))(this, onEnd);
+		}
+
+		::System::Void HideChat()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_HIDECHAT_OFFSET))(this);
+		}
+
+		::System::Void Fadeout(::System::Action* onComplete)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_FADEOUT_OFFSET))(this, onComplete);
+		}
+
+		::System::Void Interrupt()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_INTERRUPT_OFFSET))(this);
+		}
+
+		::System::Void ClearChat()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_CLEARCHAT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetChatText(::Class_2_208CC9941471731A_664* template_, ::System::Single duration)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_664*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_SETCHATTEXT_OFFSET))(this, template_, duration);
+		}
+
+		::System::Void SetNameText(::System::String* nameKey)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_SETNAMETEXT_OFFSET))(this, nameKey);
+		}
+
+		::System::Void PauseText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_PAUSETEXT_OFFSET))(this);
+		}
+
+		::System::Void ResumeText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_RESUMETEXT_OFFSET))(this);
+		}
+
+		::System::Void FinishText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_FINISHTEXT_OFFSET))(this);
+		}
+
+		::System::Void EndText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_ENDTEXT_OFFSET))(this);
+		}
+
+		::System::Void OnTextFinished()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_ONTEXTFINISHED_OFFSET))(this);
+		}
+
+		::System::Void SetTextDuration(::System::Single duration)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_SETTEXTDURATION_OFFSET))(this, duration);
+		}
+
+		::System::Single GetResidueTime()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER_GETRESIDUETIME_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

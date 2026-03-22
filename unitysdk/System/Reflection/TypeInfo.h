@@ -7,67 +7,86 @@ namespace System::Collections::Generic { template <typename T> class IEnumerable
 namespace System::Reflection { class ConstructorInfo; }
 namespace System::Reflection { class FieldInfo; }
 namespace System::Reflection { class MethodInfo; }
+namespace System::Reflection { class PropertyInfo; }
 
-#define SYSTEM_REFLECTION_TYPEINFO_ASTYPE_OFFSET UNITYSDK_OFFSET(0x15CCD540)
-#define SYSTEM_REFLECTION_TYPEINFO_GETDECLAREDMETHODS_OFFSET UNITYSDK_OFFSET(0x15CCD6C0)
-#define SYSTEM_REFLECTION_TYPEINFO_GET_DECLAREDCONSTRUCTORS_OFFSET UNITYSDK_OFFSET(0x15CCD740)
-#define SYSTEM_REFLECTION_TYPEINFO_GET_DECLAREDFIELDS_OFFSET UNITYSDK_OFFSET(0x15CCD760)
-#define SYSTEM_REFLECTION_TYPEINFO_GET_DECLAREDMETHODS_OFFSET UNITYSDK_OFFSET(0x15CCD780)
-#define SYSTEM_REFLECTION_TYPEINFO_GET_IMPLEMENTEDINTERFACES_OFFSET UNITYSDK_OFFSET(0x15CCD7A0)
-#define SYSTEM_REFLECTION_TYPEINFO_ISASSIGNABLEFROM_OFFSET UNITYSDK_OFFSET(0x15CCD550)
-#define SYSTEM_REFLECTION_TYPEINFO_SYSTEM_REFLECTION_IREFLECTABLETYPE_GETTYPEINFO_OFFSET UNITYSDK_OFFSET(0x15CCD530)
-#define SYSTEM_REFLECTION_TYPEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x15CCD520)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_10372C4B716C4BA6_OFFSET UNITYSDK_OFFSET(0x19B77A60)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_24C644C84DB553A1_OFFSET UNITYSDK_OFFSET(0x19B77D10)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_3ED8F01258C5B60B_OFFSET UNITYSDK_OFFSET(0x19B77C10)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_4891E76BC6E5EB52_OFFSET UNITYSDK_OFFSET(0x19B77D30)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_50591BD5CDB69ED6_OFFSET UNITYSDK_OFFSET(0x19B77C70)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_5DE4AAF019DFFDBA_OFFSET UNITYSDK_OFFSET(0x19B77D50)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_70C6F5988FD2CDBA_OFFSET UNITYSDK_OFFSET(0x19B77A80)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_77BB107366234CF5_OFFSET UNITYSDK_OFFSET(0x19B77CF0)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_832295EC279E5994_OFFSET UNITYSDK_OFFSET(0x19B77A50)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_A99467CE9479C990_OFFSET UNITYSDK_OFFSET(0x19B77A70)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_D1BEE4831CE92503_OFFSET UNITYSDK_OFFSET(0x19B77BF0)
+#define SYSTEM_REFLECTION_TYPEINFO_METHOD_3_D4DF6603B24E81E6_OFFSET UNITYSDK_OFFSET(0x19B77CD0)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int TypeInfo_TypeDefinitionIndex = 590;
+	inline static constexpr unsigned int TypeInfo_TypeDefinitionIndex = 564;
 
 	class TypeInfo : public ::System::Type
 	{
 	public:
-		::System::Void _ctor()
+		::System::Void Method_3_832295EC279E5994()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_832295EC279E5994_OFFSET))(this);
 		}
 
-		::System::Reflection::TypeInfo* System_Reflection_IReflectableType_GetTypeInfo()
+		::System::Reflection::TypeInfo* Method_3_10372C4B716C4BA6()
 		{
-			return ((::System::Reflection::TypeInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_SYSTEM_REFLECTION_IREFLECTABLETYPE_GETTYPEINFO_OFFSET))(this);
+			return ((::System::Reflection::TypeInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_10372C4B716C4BA6_OFFSET))(this);
 		}
 
-		::System::Type* AsType()
+		::System::Type* Method_3_A99467CE9479C990()
 		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_ASTYPE_OFFSET))(this);
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_A99467CE9479C990_OFFSET))(this);
 		}
 
-		::System::Boolean IsAssignableFrom(::System::Reflection::TypeInfo* typeInfo)
+		::System::Boolean Method_3_70C6F5988FD2CDBA(::System::Reflection::TypeInfo* typeInfo)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Reflection::TypeInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_ISASSIGNABLEFROM_OFFSET))(this, typeInfo);
+			return ((::System::Boolean(*)(::PVOID, ::System::Reflection::TypeInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_70C6F5988FD2CDBA_OFFSET))(this, typeInfo);
 		}
 
-		::System::Collections::Generic::IEnumerable_1<::System::Reflection::MethodInfo*>* GetDeclaredMethods(::System::String* name)
+		::System::Reflection::FieldInfo* Method_3_D1BEE4831CE92503(::System::String* name)
 		{
-			return ((::System::Collections::Generic::IEnumerable_1<::System::Reflection::MethodInfo*>*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_GETDECLAREDMETHODS_OFFSET))(this, name);
+			return ((::System::Reflection::FieldInfo*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_D1BEE4831CE92503_OFFSET))(this, name);
 		}
 
-		::System::Collections::Generic::IEnumerable_1<::System::Reflection::ConstructorInfo*>* get_DeclaredConstructors()
+		::System::Collections::Generic::IEnumerable_1<::System::Reflection::MethodInfo*>* Method_3_3ED8F01258C5B60B(::System::String* name)
 		{
-			return ((::System::Collections::Generic::IEnumerable_1<::System::Reflection::ConstructorInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_GET_DECLAREDCONSTRUCTORS_OFFSET))(this);
+			return ((::System::Collections::Generic::IEnumerable_1<::System::Reflection::MethodInfo*>*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_3ED8F01258C5B60B_OFFSET))(this, name);
 		}
 
-		::System::Collections::Generic::IEnumerable_1<::System::Reflection::FieldInfo*>* get_DeclaredFields()
+		::System::Reflection::PropertyInfo* Method_3_50591BD5CDB69ED6(::System::String* name)
 		{
-			return ((::System::Collections::Generic::IEnumerable_1<::System::Reflection::FieldInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_GET_DECLAREDFIELDS_OFFSET))(this);
+			return ((::System::Reflection::PropertyInfo*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_50591BD5CDB69ED6_OFFSET))(this, name);
 		}
 
-		::System::Collections::Generic::IEnumerable_1<::System::Reflection::MethodInfo*>* get_DeclaredMethods()
+		::System::Collections::Generic::IEnumerable_1<::System::Reflection::ConstructorInfo*>* Method_3_D4DF6603B24E81E6()
 		{
-			return ((::System::Collections::Generic::IEnumerable_1<::System::Reflection::MethodInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_GET_DECLAREDMETHODS_OFFSET))(this);
+			return ((::System::Collections::Generic::IEnumerable_1<::System::Reflection::ConstructorInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_D4DF6603B24E81E6_OFFSET))(this);
 		}
 
-		::System::Collections::Generic::IEnumerable_1<::System::Type*>* get_ImplementedInterfaces()
+		::System::Collections::Generic::IEnumerable_1<::System::Reflection::FieldInfo*>* Method_3_77BB107366234CF5()
 		{
-			return ((::System::Collections::Generic::IEnumerable_1<::System::Type*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_GET_IMPLEMENTEDINTERFACES_OFFSET))(this);
+			return ((::System::Collections::Generic::IEnumerable_1<::System::Reflection::FieldInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_77BB107366234CF5_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IEnumerable_1<::System::Reflection::MethodInfo*>* Method_3_24C644C84DB553A1()
+		{
+			return ((::System::Collections::Generic::IEnumerable_1<::System::Reflection::MethodInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_24C644C84DB553A1_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IEnumerable_1<::System::Reflection::PropertyInfo*>* Method_3_4891E76BC6E5EB52()
+		{
+			return ((::System::Collections::Generic::IEnumerable_1<::System::Reflection::PropertyInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_4891E76BC6E5EB52_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IEnumerable_1<::System::Type*>* Method_3_5DE4AAF019DFFDBA()
+		{
+			return ((::System::Collections::Generic::IEnumerable_1<::System::Type*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_TYPEINFO_METHOD_3_5DE4AAF019DFFDBA_OFFSET))(this);
 		}
 	};
 }

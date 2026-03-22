@@ -5,14 +5,13 @@
 namespace System::Xml { class XmlDocument; }
 namespace System::Xml { class XmlNameTable; }
 
-#define SYSTEM_XML_XMLIMPLEMENTATION_CREATEDOCUMENT_OFFSET UNITYSDK_OFFSET(0x17DFF5E0)
-#define SYSTEM_XML_XMLIMPLEMENTATION_GET_NAMETABLE_OFFSET UNITYSDK_OFFSET(0x17DFF630)
-#define SYSTEM_XML_XMLIMPLEMENTATION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17DFF5D0)
-#define SYSTEM_XML_XMLIMPLEMENTATION__CTOR_OFFSET UNITYSDK_OFFSET(0x17DFF510)
+#define SYSTEM_XML_XMLIMPLEMENTATION_CREATEDOCUMENT_OFFSET UNITYSDK_OFFSET(0x19125310)
+#define SYSTEM_XML_XMLIMPLEMENTATION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19120360)
+#define SYSTEM_XML_XMLIMPLEMENTATION__CTOR_OFFSET UNITYSDK_OFFSET(0x19120030)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int XmlImplementation_TypeDefinitionIndex = 1889;
+	inline static constexpr unsigned int XmlImplementation_TypeDefinitionIndex = 1770;
 
 	class XmlImplementation : public ::System::Object
 	{
@@ -32,11 +31,6 @@ namespace System::Xml
 		::System::Xml::XmlDocument* CreateDocument()
 		{
 			return ((::System::Xml::XmlDocument*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLIMPLEMENTATION_CREATEDOCUMENT_OFFSET))(this);
-		}
-
-		::System::Xml::XmlNameTable* get_NameTable()
-		{
-			return ((::System::Xml::XmlNameTable*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_XMLIMPLEMENTATION_GET_NAMETABLE_OFFSET))(this);
 		}
 	};
 }

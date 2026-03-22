@@ -9,25 +9,26 @@ namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class IDictionary_2; }
 namespace System::Reflection { class MethodBase; }
 
-#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_CREATE_1_OFFSET UNITYSDK_OFFSET(0x15DEF4E0)
-#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_CREATE_OFFSET UNITYSDK_OFFSET(0x15DE0A40)
-#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_GETTYPE_OFFSET UNITYSDK_OFFSET(0x15DEF3F0)
-#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_GETVALUE_OFFSET UNITYSDK_OFFSET(0x15DE0A50)
-#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_GET_CREATOR_OFFSET UNITYSDK_OFFSET(0x15DEF320)
-#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_GET_MEMBERS_OFFSET UNITYSDK_OFFSET(0x15DEF340)
-#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_SET_CREATOR_OFFSET UNITYSDK_OFFSET(0x15DEF330)
-#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_SET_MEMBERS_OFFSET UNITYSDK_OFFSET(0x15DEF350)
-#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x15DEF360)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_CREATE_1_OFFSET UNITYSDK_OFFSET(0x1A0B8E70)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_CREATE_OFFSET UNITYSDK_OFFSET(0x1A0B8E60)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_GETTYPE_OFFSET UNITYSDK_OFFSET(0x1A0B8D70)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_GETVALUE_OFFSET UNITYSDK_OFFSET(0x1A0B8B40)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_GET_CREATOR_OFFSET UNITYSDK_OFFSET(0x1A0B8A70)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_GET_MEMBERS_OFFSET UNITYSDK_OFFSET(0x1A0B8A90)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_SETVALUE_OFFSET UNITYSDK_OFFSET(0x1A0B8C50)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_SET_CREATOR_OFFSET UNITYSDK_OFFSET(0x1A0B8A80)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_SET_MEMBERS_OFFSET UNITYSDK_OFFSET(0x1A0B8AA0)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A0B8AB0)
 
 namespace Newtonsoft::Json::Utilities
 {
-	inline static constexpr unsigned int ReflectionObject_TypeDefinitionIndex = 8119;
+	inline static constexpr unsigned int ReflectionObject_TypeDefinitionIndex = 6940;
 
 	class ReflectionObject : public ::System::Object
 	{
 	public:
-		::Newtonsoft::Json::Serialization::ObjectConstructor_1<::System::Object*>* _Creator_k__BackingField; // 0x10
-		::System::Collections::Generic::IDictionary_2<::System::String*, ::Newtonsoft::Json::Utilities::ReflectionMember*>* _Members_k__BackingField; // 0x18
+		::System::Collections::Generic::IDictionary_2<::System::String*, ::Newtonsoft::Json::Utilities::ReflectionMember*>* _Members_k__BackingField; // 0x10
+		::Newtonsoft::Json::Serialization::ObjectConstructor_1<::System::Object*>* _Creator_k__BackingField; // 0x18
 
 		::System::Void _ctor()
 		{
@@ -57,6 +58,11 @@ namespace Newtonsoft::Json::Utilities
 		::System::Object* GetValue(::System::Object* target, ::System::String* member)
 		{
 			return ((::System::Object*(*)(::PVOID, ::System::Object*, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_GETVALUE_OFFSET))(this, target, member);
+		}
+
+		::System::Void SetValue(::System::Object* target, ::System::String* member, ::System::Object* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::String*, ::System::Object*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_UTILITIES_REFLECTIONOBJECT_SETVALUE_OFFSET))(this, target, member, value);
 		}
 
 		::System::Type* GetType(::System::String* member)

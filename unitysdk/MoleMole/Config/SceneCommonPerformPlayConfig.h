@@ -1,0 +1,48 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Nullable_1.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_326;
+
+#define MOLEMOLE_CONFIG_SCENECOMMONPERFORMPLAYCONFIG_MOLEMOLE_CONFIG_ISCENEPERFORMCONFIG_GET_FLOWCANVASDELAYTIME_OFFSET UNITYSDK_OFFSET(0xE82A4D0)
+#define MOLEMOLE_CONFIG_SCENECOMMONPERFORMPLAYCONFIG_MOLEMOLE_CONFIG_ISCENEPERFORMCONFIG_GET_INPUTMUTEDELAYTIME_OFFSET UNITYSDK_OFFSET(0xE82A470)
+#define MOLEMOLE_CONFIG_SCENECOMMONPERFORMPLAYCONFIG_MOLEMOLE_CONFIG_ISCENEPERFORMCONFIG_GET_SHOWUIDELAYTIME_OFFSET UNITYSDK_OFFSET(0xE82A530)
+#define MOLEMOLE_CONFIG_SCENECOMMONPERFORMPLAYCONFIG_MOLEMOLE_CONFIG_ISCENEPERFORMCONFIG_SETUP_OFFSET UNITYSDK_OFFSET(0xE82A590)
+#define MOLEMOLE_CONFIG_SCENECOMMONPERFORMPLAYCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xE82AB30)
+
+namespace MoleMole::Config
+{
+	inline static constexpr unsigned int SceneCommonPerformPlayConfig_TypeDefinitionIndex = 53358;
+
+	class SceneCommonPerformPlayConfig : public ::System::Object
+	{
+	public:
+		::System::Int32 PerformId; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SCENECOMMONPERFORMPLAYCONFIG__CTOR_OFFSET))(this);
+		}
+
+		::System::Nullable_1<::System::Single> MoleMole_Config_IScenePerformConfig_get_inputMuteDelayTime()
+		{
+			return ((::System::Nullable_1<::System::Single>(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SCENECOMMONPERFORMPLAYCONFIG_MOLEMOLE_CONFIG_ISCENEPERFORMCONFIG_GET_INPUTMUTEDELAYTIME_OFFSET))(this);
+		}
+
+		::System::Nullable_1<::System::Single> MoleMole_Config_IScenePerformConfig_get_flowCanvasDelayTime()
+		{
+			return ((::System::Nullable_1<::System::Single>(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SCENECOMMONPERFORMPLAYCONFIG_MOLEMOLE_CONFIG_ISCENEPERFORMCONFIG_GET_FLOWCANVASDELAYTIME_OFFSET))(this);
+		}
+
+		::System::Nullable_1<::System::Single> MoleMole_Config_IScenePerformConfig_get_showUIDelayTime()
+		{
+			return ((::System::Nullable_1<::System::Single>(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SCENECOMMONPERFORMPLAYCONFIG_MOLEMOLE_CONFIG_ISCENEPERFORMCONFIG_GET_SHOWUIDELAYTIME_OFFSET))(this);
+		}
+
+		::System::Void MoleMole_Config_IScenePerformConfig_Setup(::Class_0_16E4307DCC419505_326* node)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_326*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SCENECOMMONPERFORMPLAYCONFIG_MOLEMOLE_CONFIG_ISCENEPERFORMCONFIG_SETUP_OFFSET))(this, node);
+		}
+	};
+}

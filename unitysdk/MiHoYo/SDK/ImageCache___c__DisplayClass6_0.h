@@ -5,18 +5,18 @@
 namespace MiHoYo::SDK { class ImageCache; }
 namespace System { class String; }
 
-#define MIHOYO_SDK_IMAGECACHE___C__DISPLAYCLASS6_0__ASYNCDOWNLOADTEXTURE_B__1_OFFSET UNITYSDK_OFFSET(0x15843E10)
-#define MIHOYO_SDK_IMAGECACHE___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x15842F70)
+#define MIHOYO_SDK_IMAGECACHE___C__DISPLAYCLASS6_0__ASYNCDOWNLOADTEXTURE_B__1_OFFSET UNITYSDK_OFFSET(0x17E8AFD0)
+#define MIHOYO_SDK_IMAGECACHE___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x17E8AFC0)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int ImageCache___c__DisplayClass6_0_TypeDefinitionIndex = 6861;
+	inline static constexpr unsigned int ImageCache___c__DisplayClass6_0_TypeDefinitionIndex = 17995;
 
 	class ImageCache___c__DisplayClass6_0 : public ::System::Object
 	{
 	public:
-		::MiHoYo::SDK::ImageCache* __4__this; // 0x10
-		::System::String* url; // 0x18
+		::System::String* url; // 0x10
+		::MiHoYo::SDK::ImageCache* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

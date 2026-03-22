@@ -1,9 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/UnityEngine/Color.h"
+#include "unitysdk/UnityEngine/Vector3.h"
 
-class Class_0_16E4307DCC419505_420;
+class Class_3_6EF456A21AE85EEC_19;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_711_TypeDefinitionIndex = 54480;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_711_TypeDefinitionIndex = 77964;
 
 class Class_0_16E4307DCC419505_711
 {

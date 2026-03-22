@@ -1,0 +1,28 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_41536F26CBEE8D4C.h"
+#include "unitysdk/System/Object.h"
+
+namespace MoleMole { class DownloadFileInfo; }
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
+
+#define CLASS_1_2B72FBE43B450502_CLASS_1_5E05D8E0DE42EE9A_METHOD_1_7A3823965CEA065A_OFFSET UNITYSDK_OFFSET(0x9B993D0)
+#define CLASS_1_2B72FBE43B450502_CLASS_1_5E05D8E0DE42EE9A__CTOR_OFFSET UNITYSDK_OFFSET(0x9B96450)
+
+inline static constexpr unsigned int Class_1_2B72FBE43B450502_Class_1_5E05D8E0DE42EE9A_TypeDefinitionIndex = 42889;
+
+class Class_1_2B72FBE43B450502_Class_1_5E05D8E0DE42EE9A : public ::System::Object
+{
+public:
+	::System::Collections::Generic::IEnumerable_1<::Enum_3_41536F26CBEE8D4C>* Field_1_0; // 0x10
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_2B72FBE43B450502_CLASS_1_5E05D8E0DE42EE9A__CTOR_OFFSET))(this);
+	}
+
+	::System::Boolean Method_1_7A3823965CEA065A(::MoleMole::DownloadFileInfo* a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::MoleMole::DownloadFileInfo*))((::PBYTE)hIl2Cpp + CLASS_1_2B72FBE43B450502_CLASS_1_5E05D8E0DE42EE9A_METHOD_1_7A3823965CEA065A_OFFSET))(this, a1);
+	}
+};

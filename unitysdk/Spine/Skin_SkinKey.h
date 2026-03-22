@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define SPINE_SKIN_SKINKEY__CTOR_OFFSET UNITYSDK_OFFSET(0x202C190)
+#define SPINE_SKIN_SKINKEY__CTOR_OFFSET UNITYSDK_OFFSET(0x96CBA0)
 
 namespace Spine
 {
-	inline static constexpr unsigned int Skin_SkinKey_TypeDefinitionIndex = 29865;
+	inline static constexpr unsigned int Skin_SkinKey_TypeDefinitionIndex = 29870;
 
 	struct alignas(8) Skin_SkinKey
 	{

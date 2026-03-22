@@ -2,26 +2,24 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-namespace MessagePack { class IFormatterResolver; }
+namespace MessagePack::Formatters { class IMessagePackFormatter; }
 namespace MessagePack::Formatters { template <typename T> class IMessagePackFormatter_1; }
+namespace System { class Type; }
 
-#define MESSAGEPACK_UNITY_UNITYRESOLVER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1561EE20)
-#define MESSAGEPACK_UNITY_UNITYRESOLVER__CTOR_OFFSET UNITYSDK_OFFSET(0x1561EE10)
+#define MESSAGEPACK_UNITY_UNITYRESOLVER_GETFORMATTERDYNAMIC_OFFSET UNITYSDK_OFFSET(0x183EF780)
+#define MESSAGEPACK_UNITY_UNITYRESOLVER__CCTOR_OFFSET UNITYSDK_OFFSET(0x183EF950)
+#define MESSAGEPACK_UNITY_UNITYRESOLVER__CTOR_OFFSET UNITYSDK_OFFSET(0x183EF770)
 
 namespace MessagePack::Unity
 {
-	inline static constexpr unsigned int UnityResolver_TypeDefinitionIndex = 33942;
+	inline static constexpr unsigned int UnityResolver_TypeDefinitionIndex = 25277;
 
 	class UnityResolver : public ::System::Object
 	{
 	public:
-		static ::MessagePack::IFormatterResolver** StaticGet_InstanceWithStandardResolver()
+		static ::MessagePack::Unity::UnityResolver** StaticGet_Instance()
 		{
-			return (::MessagePack::IFormatterResolver**)Il2CppClass::FromTypeDefinitionIndex(UnityResolver_TypeDefinitionIndex)->GetStaticField(0x3200);
-		}
-		static ::MessagePack::IFormatterResolver** StaticGet_Instance()
-		{
-			return (::MessagePack::IFormatterResolver**)Il2CppClass::FromTypeDefinitionIndex(UnityResolver_TypeDefinitionIndex)->GetStaticField(0x3208);
+			return (::MessagePack::Unity::UnityResolver**)Il2CppClass::FromTypeDefinitionIndex(UnityResolver_TypeDefinitionIndex)->GetStaticField(0x1E8C0);
 		}
 
 		::System::Void _ctor()
@@ -32,6 +30,11 @@ namespace MessagePack::Unity
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MESSAGEPACK_UNITY_UNITYRESOLVER__CCTOR_OFFSET))();
+		}
+
+		::MessagePack::Formatters::IMessagePackFormatter* GetFormatterDynamic(::System::Type* t)
+		{
+			return ((::MessagePack::Formatters::IMessagePackFormatter*(*)(::PVOID, ::System::Type*))((::PBYTE)hIl2Cpp + MESSAGEPACK_UNITY_UNITYRESOLVER_GETFORMATTERDYNAMIC_OFFSET))(this, t);
 		}
 	};
 }

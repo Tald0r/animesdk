@@ -5,6 +5,8 @@
 #include "unitysdk/UnityEngine/UIElements/ContextType.h"
 #include "unitysdk/UnityEngine/UIElements/IMGUIContainer_GUIGlobals.h"
 #include "unitysdk/UnityEngine/UIElements/VisualElement.h"
+#include "unitysdk/UnityEngine/UIElements/VisualElement_MeasureMode.h"
+#include "unitysdk/UnityEngine/Vector2.h"
 
 namespace System { class Action; }
 namespace System { class String; }
@@ -13,54 +15,76 @@ namespace UnityEngine { class GUILayoutUtility_LayoutCache; }
 namespace UnityEngine { class ObjectGUIState; }
 namespace UnityEngine::UIElements { class EventBase; }
 namespace UnityEngine::UIElements { class FocusChangeDirection; }
+namespace UnityEngine::UIElements { class MeshGenerationContext; }
 
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x182C0E30)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x182C0DE0)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_DOONGUI_OFFSET UNITYSDK_OFFSET(0x182BE430)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GETCURRENTTRANSFORMANDCLIP_OFFSET UNITYSDK_OFFSET(0x182C0290)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_CACHE_OFFSET UNITYSDK_OFFSET(0x182BDE60)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_CONTEXTTYPE_OFFSET UNITYSDK_OFFSET(0x182BDF60)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_FOCUSONLYIFHASFOCUSABLECONTROLS_OFFSET UNITYSDK_OFFSET(0x182BDF70)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_GUISTATE_OFFSET UNITYSDK_OFFSET(0x182BDD40)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_LASTWORLDCLIP_OFFSET UNITYSDK_OFFSET(0x182BDE50)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_LAYOUTMEASUREDHEIGHT_OFFSET UNITYSDK_OFFSET(0x182BDF00)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_LAYOUTMEASUREDWIDTH_OFFSET UNITYSDK_OFFSET(0x182BDEA0)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_ONGUIHANDLER_OFFSET UNITYSDK_OFFSET(0x182BDD30)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_HANDLEIMGUIEVENT_1_OFFSET UNITYSDK_OFFSET(0x182C01A0)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_HANDLEIMGUIEVENT_2_OFFSET UNITYSDK_OFFSET(0x182C0470)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_HANDLEIMGUIEVENT_OFFSET UNITYSDK_OFFSET(0x182C00B0)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_MARKDIRTYLAYOUT_OFFSET UNITYSDK_OFFSET(0x182C0070)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_RESTOREGLOBALS_OFFSET UNITYSDK_OFFSET(0x182BE1F0)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_SAVEGLOBALS_OFFSET UNITYSDK_OFFSET(0x182BDF80)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_SENDEVENTTOIMGUI_OFFSET UNITYSDK_OFFSET(0x182B66F0)
-#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER__CCTOR_OFFSET UNITYSDK_OFFSET(0x182C0EA0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x18923600)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x189235B0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_DOIMGUIREPAINT_OFFSET UNITYSDK_OFFSET(0x18921E80)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_DOMEASURE_OFFSET UNITYSDK_OFFSET(0x18923030)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_DOONGUI_OFFSET UNITYSDK_OFFSET(0x189202E0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_EXECUTEDEFAULTACTION_OFFSET UNITYSDK_OFFSET(0x18922DD0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GETCURRENTTRANSFORMANDCLIP_OFFSET UNITYSDK_OFFSET(0x18922A80)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_CACHE_OFFSET UNITYSDK_OFFSET(0x1891F390)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_CANGRABFOCUS_OFFSET UNITYSDK_OFFSET(0x1891F4C0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_CONTEXTTYPE_OFFSET UNITYSDK_OFFSET(0x1891F490)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_FOCUSONLYIFHASFOCUSABLECONTROLS_OFFSET UNITYSDK_OFFSET(0x1891F4B0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_GUISTATE_OFFSET UNITYSDK_OFFSET(0x1891F260)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_LASTWORLDCLIP_OFFSET UNITYSDK_OFFSET(0x1891F370)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_LAYOUTMEASUREDHEIGHT_OFFSET UNITYSDK_OFFSET(0x1891F430)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_LAYOUTMEASUREDWIDTH_OFFSET UNITYSDK_OFFSET(0x1891F3D0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_ONGUIHANDLER_OFFSET UNITYSDK_OFFSET(0x1891F1A0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_HANDLEEVENT_OFFSET UNITYSDK_OFFSET(0x18921E10)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_HANDLEIMGUIEVENT_1_OFFSET UNITYSDK_OFFSET(0x18922990)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_HANDLEIMGUIEVENT_2_OFFSET UNITYSDK_OFFSET(0x18922370)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_HANDLEIMGUIEVENT_OFFSET UNITYSDK_OFFSET(0x189228A0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_MARKDIRTYLAYOUT_OFFSET UNITYSDK_OFFSET(0x18921DD0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_ONGENERATEVISUALCONTENT_OFFSET UNITYSDK_OFFSET(0x1891FE60)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_RESTOREGLOBALS_OFFSET UNITYSDK_OFFSET(0x18920160)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_SAVEGLOBALS_OFFSET UNITYSDK_OFFSET(0x1891FFB0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_SENDEVENTTOIMGUI_OFFSET UNITYSDK_OFFSET(0x189162C0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_SET_CONTEXTTYPE_OFFSET UNITYSDK_OFFSET(0x1891F4A0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_SET_LASTWORLDCLIP_OFFSET UNITYSDK_OFFSET(0x1891F380)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER_SET_ONGUIHANDLER_OFFSET UNITYSDK_OFFSET(0x1891F1B0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER__CCTOR_OFFSET UNITYSDK_OFFSET(0x18923670)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1891F5C0)
+#define UNITYENGINE_UIELEMENTS_IMGUICONTAINER__CTOR_OFFSET UNITYSDK_OFFSET(0x1891F5B0)
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int IMGUIContainer_TypeDefinitionIndex = 5745;
+	inline static constexpr unsigned int IMGUIContainer_TypeDefinitionIndex = 23750;
 
 	class IMGUIContainer : public ::UnityEngine::UIElements::VisualElement
 	{
 	public:
 		static ::System::String** StaticGet_ussClassName()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(IMGUIContainer_TypeDefinitionIndex)->GetStaticField(0xA2A0);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(IMGUIContainer_TypeDefinitionIndex)->GetStaticField(0x1D610);
 		}
-		::System::Action* m_OnGUIHandler; // 0x160
-		::UnityEngine::ObjectGUIState* m_ObjectGUIState; // 0x168
-		::System::Boolean useOwnerObjectGUIState; // 0x170
-		::UnityEngine::Rect _lastWorldClip_k__BackingField; // 0x174
-		::UnityEngine::GUILayoutUtility_LayoutCache* m_Cache; // 0x188
-		::UnityEngine::Rect m_CachedClippingRect; // 0x190
-		::UnityEngine::Matrix4x4 m_CachedTransform; // 0x1A0
-		::UnityEngine::UIElements::ContextType _contextType_k__BackingField; // 0x1E0
-		::System::Boolean lostFocus; // 0x1E4
-		::System::Boolean receivedFocus; // 0x1E5
-		::UnityEngine::UIElements::FocusChangeDirection* focusChangeDirection; // 0x1E8
-		::System::Boolean hasFocusableControls; // 0x1F0
-		::System::Int32 newKeyboardFocusControlID; // 0x1F4
-		::System::Boolean _focusOnlyIfHasFocusableControls_k__BackingField; // 0x1F8
-		::UnityEngine::UIElements::IMGUIContainer_GUIGlobals m_GUIGlobals; // 0x1FC
+		::System::Action* m_OnGUIHandler; // 0x2F0
+		::UnityEngine::ObjectGUIState* m_ObjectGUIState; // 0x2F8
+		::System::Boolean useOwnerObjectGUIState; // 0x300
+		::UnityEngine::Rect _lastWorldClip_k__BackingField; // 0x304
+		::UnityEngine::GUILayoutUtility_LayoutCache* m_Cache; // 0x318
+		::UnityEngine::Rect m_CachedClippingRect; // 0x320
+		::UnityEngine::Matrix4x4 m_CachedTransform; // 0x330
+		::UnityEngine::UIElements::ContextType _contextType_k__BackingField; // 0x370
+		::System::Boolean lostFocus; // 0x374
+		::System::Boolean receivedFocus; // 0x375
+		::UnityEngine::UIElements::FocusChangeDirection* focusChangeDirection; // 0x378
+		::System::Boolean hasFocusableControls; // 0x380
+		::System::Int32 newKeyboardFocusControlID; // 0x384
+		::System::Boolean _focusOnlyIfHasFocusableControls_k__BackingField; // 0x388
+		::UnityEngine::UIElements::IMGUIContainer_GUIGlobals m_GUIGlobals; // 0x38C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::Action* onGUIHandler)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER__CTOR_1_OFFSET))(this, onGUIHandler);
+		}
 
 		static ::System::Void _cctor()
 		{
@@ -72,6 +96,11 @@ namespace UnityEngine::UIElements
 			return ((::System::Action*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_ONGUIHANDLER_OFFSET))(this);
 		}
 
+		::System::Void set_onGUIHandler(::System::Action* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_SET_ONGUIHANDLER_OFFSET))(this, value);
+		}
+
 		::UnityEngine::ObjectGUIState* get_guiState()
 		{
 			return ((::UnityEngine::ObjectGUIState*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_GUISTATE_OFFSET))(this);
@@ -80,6 +109,11 @@ namespace UnityEngine::UIElements
 		::UnityEngine::Rect get_lastWorldClip()
 		{
 			return ((::UnityEngine::Rect(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_LASTWORLDCLIP_OFFSET))(this);
+		}
+
+		::System::Void set_lastWorldClip(::UnityEngine::Rect value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_SET_LASTWORLDCLIP_OFFSET))(this, value);
 		}
 
 		::UnityEngine::GUILayoutUtility_LayoutCache* get_cache()
@@ -102,9 +136,24 @@ namespace UnityEngine::UIElements
 			return ((::UnityEngine::UIElements::ContextType(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_CONTEXTTYPE_OFFSET))(this);
 		}
 
+		::System::Void set_contextType(::UnityEngine::UIElements::ContextType value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UIElements::ContextType))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_SET_CONTEXTTYPE_OFFSET))(this, value);
+		}
+
 		::System::Boolean get_focusOnlyIfHasFocusableControls()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_FOCUSONLYIFHASFOCUSABLECONTROLS_OFFSET))(this);
+		}
+
+		::System::Boolean get_canGrabFocus()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_GET_CANGRABFOCUS_OFFSET))(this);
+		}
+
+		::System::Void OnGenerateVisualContent(::UnityEngine::UIElements::MeshGenerationContext* mgc)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UIElements::MeshGenerationContext*))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_ONGENERATEVISUALCONTENT_OFFSET))(this, mgc);
 		}
 
 		::System::Void SaveGlobals()
@@ -127,6 +176,16 @@ namespace UnityEngine::UIElements
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_MARKDIRTYLAYOUT_OFFSET))(this);
 		}
 
+		::System::Void HandleEvent(::UnityEngine::UIElements::EventBase* evt)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UIElements::EventBase*))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_HANDLEEVENT_OFFSET))(this, evt);
+		}
+
+		::System::Void DoIMGUIRepaint()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_DOIMGUIREPAINT_OFFSET))(this);
+		}
+
 		::System::Boolean SendEventToIMGUI(::UnityEngine::UIElements::EventBase* evt, ::System::Boolean canAffectFocus)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::UIElements::EventBase*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_SENDEVENTTOIMGUI_OFFSET))(this, evt, canAffectFocus);
@@ -145,6 +204,16 @@ namespace UnityEngine::UIElements
 		::System::Boolean HandleIMGUIEvent_2(::UnityEngine::Event* e, ::UnityEngine::Matrix4x4 worldTransform, ::UnityEngine::Rect clippingRect, ::System::Action* onGUIHandler, ::System::Boolean canAffectFocus)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Event*, ::UnityEngine::Matrix4x4, ::UnityEngine::Rect, ::System::Action*, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_HANDLEIMGUIEVENT_2_OFFSET))(this, e, worldTransform, clippingRect, onGUIHandler, canAffectFocus);
+		}
+
+		::System::Void ExecuteDefaultAction(::UnityEngine::UIElements::EventBase* evt)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UIElements::EventBase*))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_EXECUTEDEFAULTACTION_OFFSET))(this, evt);
+		}
+
+		::UnityEngine::Vector2 DoMeasure(::System::Single desiredWidth, ::UnityEngine::UIElements::VisualElement_MeasureMode widthMode, ::System::Single desiredHeight, ::UnityEngine::UIElements::VisualElement_MeasureMode heightMode)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::UnityEngine::UIElements::VisualElement_MeasureMode, ::System::Single, ::UnityEngine::UIElements::VisualElement_MeasureMode))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_IMGUICONTAINER_DOMEASURE_OFFSET))(this, desiredWidth, widthMode, desiredHeight, heightMode);
 		}
 
 		static ::System::Void GetCurrentTransformAndClip(::UnityEngine::UIElements::IMGUIContainer* container, ::UnityEngine::Event* evt, ::UnityEngine::Matrix4x4& transform, ::UnityEngine::Rect& clipRect)

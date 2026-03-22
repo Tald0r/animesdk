@@ -1,0 +1,15 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int FontThicknessMode_TypeDefinitionIndex = 62825;
+
+	enum class FontThicknessMode : ::System::Int32
+	{
+		Thin = 3,
+		Thick = 2,
+		None = 0,
+		Recommend = 1,
+	};
+}

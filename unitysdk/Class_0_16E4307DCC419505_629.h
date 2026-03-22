@@ -1,10 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace RPG::Client { class IMissionChroniclePathUnlockConditionData; }
-namespace System::Collections::Generic { template <typename T> class ICollection_1; }
+template <typename T> class Class_0_16E4307DCC419505_102;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_629_TypeDefinitionIndex = 52593;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_629_TypeDefinitionIndex = 64260;
 
 class Class_0_16E4307DCC419505_629
 {

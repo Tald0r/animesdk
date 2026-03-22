@@ -4,18 +4,31 @@
 #include "unitysdk/UnityEngine/ContactPoint2D.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
+namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Collider2D; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Rigidbody2D; }
+namespace UnityEngine { class Transform; }
 
-#define UNITYENGINE_COLLISION2D_GET_COLLIDER_OFFSET UNITYSDK_OFFSET(0x18285B50)
-#define UNITYENGINE_COLLISION2D_GET_GAMEOBJECT_OFFSET UNITYSDK_OFFSET(0x18285C30)
-#define UNITYENGINE_COLLISION2D_GET_RELATIVEVELOCITY_OFFSET UNITYSDK_OFFSET(0x18285D60)
-#define UNITYENGINE_COLLISION2D_GET_RIGIDBODY_OFFSET UNITYSDK_OFFSET(0x18285BD0)
+#define UNITYENGINE_COLLISION2D_GETCONTACTS_1_OFFSET UNITYSDK_OFFSET(0x1AA90CE0)
+#define UNITYENGINE_COLLISION2D_GETCONTACTS_INTERNAL_OFFSET UNITYSDK_OFFSET(0x1AA90550)
+#define UNITYENGINE_COLLISION2D_GETCONTACTS_OFFSET UNITYSDK_OFFSET(0x1AA90C50)
+#define UNITYENGINE_COLLISION2D_GETCONTACT_OFFSET UNITYSDK_OFFSET(0x1AA90B40)
+#define UNITYENGINE_COLLISION2D_GET_COLLIDER_OFFSET UNITYSDK_OFFSET(0x1AA90560)
+#define UNITYENGINE_COLLISION2D_GET_CONTACTCOUNT_OFFSET UNITYSDK_OFFSET(0x1AA90B30)
+#define UNITYENGINE_COLLISION2D_GET_CONTACTS_OFFSET UNITYSDK_OFFSET(0x1AA90AC0)
+#define UNITYENGINE_COLLISION2D_GET_ENABLED_OFFSET UNITYSDK_OFFSET(0x1AA90AB0)
+#define UNITYENGINE_COLLISION2D_GET_GAMEOBJECT_OFFSET UNITYSDK_OFFSET(0x1AA90900)
+#define UNITYENGINE_COLLISION2D_GET_OTHERCOLLIDER_OFFSET UNITYSDK_OFFSET(0x1AA90600)
+#define UNITYENGINE_COLLISION2D_GET_OTHERRIGIDBODY_OFFSET UNITYSDK_OFFSET(0x1AA90700)
+#define UNITYENGINE_COLLISION2D_GET_RELATIVEVELOCITY_OFFSET UNITYSDK_OFFSET(0x1AA90AA0)
+#define UNITYENGINE_COLLISION2D_GET_RIGIDBODY_OFFSET UNITYSDK_OFFSET(0x1AA906A0)
+#define UNITYENGINE_COLLISION2D_GET_TRANSFORM_OFFSET UNITYSDK_OFFSET(0x1AA90760)
+#define UNITYENGINE_COLLISION2D__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA90D80)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int Collision2D_TypeDefinitionIndex = 5087;
+	inline static constexpr unsigned int Collision2D_TypeDefinitionIndex = 7626;
 
 	class Collision2D : public ::System::Object
 	{
@@ -30,14 +43,39 @@ namespace UnityEngine
 		::Il2CppArray<::UnityEngine::ContactPoint2D>* m_ReusedContacts; // 0x30
 		::Il2CppArray<::UnityEngine::ContactPoint2D>* m_LegacyContacts; // 0x38
 
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D__CTOR_OFFSET))(this);
+		}
+
+		::Il2CppArray<::UnityEngine::ContactPoint2D>* GetContacts_Internal()
+		{
+			return ((::Il2CppArray<::UnityEngine::ContactPoint2D>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GETCONTACTS_INTERNAL_OFFSET))(this);
+		}
+
 		::UnityEngine::Collider2D* get_collider()
 		{
 			return ((::UnityEngine::Collider2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GET_COLLIDER_OFFSET))(this);
 		}
 
+		::UnityEngine::Collider2D* get_otherCollider()
+		{
+			return ((::UnityEngine::Collider2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GET_OTHERCOLLIDER_OFFSET))(this);
+		}
+
 		::UnityEngine::Rigidbody2D* get_rigidbody()
 		{
 			return ((::UnityEngine::Rigidbody2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GET_RIGIDBODY_OFFSET))(this);
+		}
+
+		::UnityEngine::Rigidbody2D* get_otherRigidbody()
+		{
+			return ((::UnityEngine::Rigidbody2D*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GET_OTHERRIGIDBODY_OFFSET))(this);
+		}
+
+		::UnityEngine::Transform* get_transform()
+		{
+			return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GET_TRANSFORM_OFFSET))(this);
 		}
 
 		::UnityEngine::GameObject* get_gameObject()
@@ -48,6 +86,36 @@ namespace UnityEngine
 		::UnityEngine::Vector2 get_relativeVelocity()
 		{
 			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GET_RELATIVEVELOCITY_OFFSET))(this);
+		}
+
+		::System::Boolean get_enabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GET_ENABLED_OFFSET))(this);
+		}
+
+		::Il2CppArray<::UnityEngine::ContactPoint2D>* get_contacts()
+		{
+			return ((::Il2CppArray<::UnityEngine::ContactPoint2D>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GET_CONTACTS_OFFSET))(this);
+		}
+
+		::System::Int32 get_contactCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GET_CONTACTCOUNT_OFFSET))(this);
+		}
+
+		::UnityEngine::ContactPoint2D GetContact(::System::Int32 index)
+		{
+			return ((::UnityEngine::ContactPoint2D(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GETCONTACT_OFFSET))(this, index);
+		}
+
+		::System::Int32 GetContacts(::Il2CppArray<::UnityEngine::ContactPoint2D>* contacts)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Il2CppArray<::UnityEngine::ContactPoint2D>*))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GETCONTACTS_OFFSET))(this, contacts);
+		}
+
+		::System::Int32 GetContacts_1(::System::Collections::Generic::List_1<::UnityEngine::ContactPoint2D>* contacts)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Collections::Generic::List_1<::UnityEngine::ContactPoint2D>*))((::PBYTE)hIl2Cpp + UNITYENGINE_COLLISION2D_GETCONTACTS_1_OFFSET))(this, contacts);
 		}
 	};
 }

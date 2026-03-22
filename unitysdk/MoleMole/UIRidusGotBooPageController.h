@@ -1,0 +1,1290 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF.h"
+#include "unitysdk/Cysharp/Threading/Tasks/PlayerLoopTiming.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTask.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTaskVoid.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_6689CFCCDBE24211.h"
+#include "unitysdk/Enum_3_A54EADDA5F8725D8.h"
+#include "unitysdk/MoleMole/ButtonPressType.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/LogicButtonInputType.h"
+#include "unitysdk/MoleMole/UIRidusGotBooPageController_ComboShowState.h"
+#include "unitysdk/MoleMole/UIRidusGotBooPageController_InputPeriod.h"
+#include "unitysdk/MoleMole/UIRidusGotBooPageController_KeyPosition.h"
+#include "unitysdk/MoleMole/UIRidusGotBooPageController_PlayerMaskType.h"
+#include "unitysdk/MoleMole/UIRidusGotBooPageController_TimeStage.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/System/Threading/CancellationToken.h"
+#include "unitysdk/System/ValueTuple_2.h"
+#include "unitysdk/UnityEngine/Color.h"
+
+class Class_0_16E4307DCC419505_7;
+class Class_1_15C4412F4F8ACB43;
+class Class_1_5E46A14259E19455;
+class Class_1_84CF6BFB7CE697B4;
+class Class_1_8EECEAD64126B925;
+class Class_1_9AFD40DD7DD8C806;
+class Class_1_B71F67EC084F1F2E;
+class Class_1_E4EFD54D633BB1EB;
+class Class_2_208CC9941471731A_148;
+class Class_2_208CC9941471731A_152;
+class Class_2_208CC9941471731A_343;
+class Class_2_208CC9941471731A_689;
+class Class_2_5EA04932F3E7FC4B;
+class Class_2_787A64751D1D3DEF;
+class Class_2_79F6D62CE30E3F8E_46;
+class Class_2_C23FFBF926EC8C49;
+class Class_3_36FD41B1D5D1EB46_2;
+namespace MoleMole { class CompetitiveScoreFillBarParam; }
+namespace MoleMole { class RidusGotBooSkillEx; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIInLevelPauseDialogPopWindowController; }
+namespace MoleMole { class UIRidusGotBooFeverTipsWidgetController; }
+namespace MoleMole { class UIRidusGotBooResultPageControllerContext; }
+namespace MoleMole { class UIRidusGotBooSkillWidgetController; }
+namespace MoleMole::Battle { class Entity; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System { template <typename T1, typename T2> class Func_2; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace System::Threading { class CancellationTokenSource; }
+namespace UnityEngine { class Camera; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ADDPLAYERSCORE_OFFSET UNITYSDK_OFFSET(0xA71CDA0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_BUBBLEADDSCORE_OFFSET UNITYSDK_OFFSET(0xD015650)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_BUILDCONSOLEICONS_OFFSET UNITYSDK_OFFSET(0xD018270)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_BUILDROUNDINFO_OFFSET UNITYSDK_OFFSET(0xD01D3A0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_CLEARALLSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0xD01C8F0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_CLEARBUDDYENTITY_OFFSET UNITYSDK_OFFSET(0xD018AD0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_CLEARLEVELMEMORY_OFFSET UNITYSDK_OFFSET(0xD01B920)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_CLEARROUNDMEMORY_OFFSET UNITYSDK_OFFSET(0xD01D250)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_COUNTDOWNNEARENDING_OFFSET UNITYSDK_OFFSET(0xD01E170)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_DELAYFADEOUTUIANDPOPRESULTPAGE_OFFSET UNITYSDK_OFFSET(0xA71D5D0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_DELAYREFRESHHISTORYSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0xD015CF0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_DELAYSHOWLOOPFEVER_OFFSET UNITYSDK_OFFSET(0xD0137B0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_DESTORYEFFECTENTITY_OFFSET UNITYSDK_OFFSET(0xD013B80)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_DORESTARTLEVEL_OFFSET UNITYSDK_OFFSET(0xD01A870)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ENTERFEVER_OFFSET UNITYSDK_OFFSET(0xD012F10)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_FADEANDENDTIMELINE_OFFSET UNITYSDK_OFFSET(0xD019150)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_FADECOUNTDOWNANDTIPS_OFFSET UNITYSDK_OFFSET(0xA71C630)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GENERATEHISTORYSIMPLESKILLDATA_OFFSET UNITYSDK_OFFSET(0xD01EA70)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GENERATENPCSIMPLESKILLDATA_OFFSET UNITYSDK_OFFSET(0xD01E890)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GENERATEPLAYERSIMPLESKILLDATA_OFFSET UNITYSDK_OFFSET(0xD01E5F0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GENERATEPLAYERSKILLS_OFFSET UNITYSDK_OFFSET(0xA71A090)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GENERATESIMPLESKILLDATA_OFFSET UNITYSDK_OFFSET(0xD01E4C0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETBUTTONPRESSTYPEBYEVENT_OFFSET UNITYSDK_OFFSET(0xD01ED60)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETCOLORPATHBYSKILLCONFIG_OFFSET UNITYSDK_OFFSET(0xD01E810)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETCOMBOIMGBYINT_OFFSET UNITYSDK_OFFSET(0xD01DF70)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETCURHISTORYSKILL_OFFSET UNITYSDK_OFFSET(0xA71A7C0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETCURLEVELPLAYERLEVELIDS_OFFSET UNITYSDK_OFFSET(0xA719D40)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETHINTINDEXBYSKILLINDEX_OFFSET UNITYSDK_OFFSET(0xD01B0B0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETHITSCORE_OFFSET UNITYSDK_OFFSET(0xA71CE60)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETLEVEL1TIMERANGE_OFFSET UNITYSDK_OFFSET(0xA71C770)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETLEVEL2TIMERANGE_OFFSET UNITYSDK_OFFSET(0xA71C800)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETNPCAUDIOGO_OFFSET UNITYSDK_OFFSET(0xD01D0F0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETPLAYERAUDIOGO_OFFSET UNITYSDK_OFFSET(0xD01CF90)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETSCOREIMGBYINT_OFFSET UNITYSDK_OFFSET(0xD01DD90)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETSINGLECORRECTSCORE_OFFSET UNITYSDK_OFFSET(0xA71D280)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_ANIMAP_OFFSET UNITYSDK_OFFSET(0xA71D3B0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_BEFOREFEVERPLAYEFFECTNUM_OFFSET UNITYSDK_OFFSET(0xD013B60)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_CONSTMAP_OFFSET UNITYSDK_OFFSET(0xA719050)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_CURLEVELKEYMAPFEVERGROUPSTR_OFFSET UNITYSDK_OFFSET(0xD014030)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_CURROUNDCFG_OFFSET UNITYSDK_OFFSET(0xD01ACF0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_ENTERFEVERNEEDCORRECTNUM_OFFSET UNITYSDK_OFFSET(0xD018990)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_EOUSENTITY_OFFSET UNITYSDK_OFFSET(0xD019300)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_FEVERBIGGERSCORE_OFFSET UNITYSDK_OFFSET(0xD015410)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_FEVERSMALLERSCORE_OFFSET UNITYSDK_OFFSET(0xD015430)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_FEVERTIMETHRESHOLD_OFFSET UNITYSDK_OFFSET(0xD015450)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_INMOBILE_OFFSET UNITYSDK_OFFSET(0xA718FF0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_ISTICKING_OFFSET UNITYSDK_OFFSET(0xD01DBB0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_KEYMAP_OFFSET UNITYSDK_OFFSET(0xA719FD0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_MAINCAM_OFFSET UNITYSDK_OFFSET(0xD013AA0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_MODEL_OFFSET UNITYSDK_OFFSET(0xD0188C0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_NPCENTITY_OFFSET UNITYSDK_OFFSET(0xD019330)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_SCORERATIO_OFFSET UNITYSDK_OFFSET(0xD0161F0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_SKILLMAP_OFFSET UNITYSDK_OFFSET(0xA71A540)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_SWITCHFEVERTIME_OFFSET UNITYSDK_OFFSET(0xD015B00)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xD017B80)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_HIDEUNNECESSARYSKILLS_OFFSET UNITYSDK_OFFSET(0xD01AD00)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_INITADDSCORE_OFFSET UNITYSDK_OFFSET(0xD016770)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_INITCURLEVELFEVERKEYINDEXS_OFFSET UNITYSDK_OFFSET(0xD014170)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_INITFEVERTIPSDIALOG_OFFSET UNITYSDK_OFFSET(0xD012FD0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_INITMUSIC_OFFSET UNITYSDK_OFFSET(0xD01CB30)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_INITREDUCESCORE_OFFSET UNITYSDK_OFFSET(0xD0168A0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MARKALLHISTORYSKILLSANIMSAMPLETIME_OFFSET UNITYSDK_OFFSET(0xA71C160)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MODIFYNOHISTORYMASK_OFFSET UNITYSDK_OFFSET(0xA719B30)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MODIFYNPCSCORE_OFFSET UNITYSDK_OFFSET(0xA719830)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MODIFYNPCSPEED_OFFSET UNITYSDK_OFFSET(0xA719A30)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MODIFYPLAYERINTERACTTIME_OFFSET UNITYSDK_OFFSET(0xA719C40)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MODIFYPLAYERSCORE_OFFSET UNITYSDK_OFFSET(0xA719930)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_NEEDTRIGGERMIDDLEBUTTON_OFFSET UNITYSDK_OFFSET(0xD01F0B0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_NORMALPLAYERROUNDEND_OFFSET UNITYSDK_OFFSET(0xD015E40)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_NPCLEVEL_OFFSET UNITYSDK_OFFSET(0xD015B80)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONBEFOREWORLDUPDATE_OFFSET UNITYSDK_OFFSET(0xD01DC60)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONCLICKPLAYERSKILL_OFFSET UNITYSDK_OFFSET(0xA71A720)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONCLICKQUIT_OFFSET UNITYSDK_OFFSET(0xD019FB0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONCLICKSHOWPAUSEPANEL_OFFSET UNITYSDK_OFFSET(0xD0197D0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONCLICKSKIP_OFFSET UNITYSDK_OFFSET(0xD018ED0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD017C60)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONENDFEVERHANDLEEFFECTS_OFFSET UNITYSDK_OFFSET(0xD013900)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONGETREPORTRSP_OFFSET UNITYSDK_OFFSET(0xD01A400)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xD01F420)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONROUNDSTARTPLAYVOICE_OFFSET UNITYSDK_OFFSET(0xD01D550)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONSTARTFEVERHANDLEEFFECTS_OFFSET UNITYSDK_OFFSET(0xD013190)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xD018560)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA71D690)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD017D00)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD01A8F0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYANIFORENTITY_OFFSET UNITYSDK_OFFSET(0xD018E00)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYENVTIMELINE_OFFSET UNITYSDK_OFFSET(0xD0184B0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYERLEVEL_OFFSET UNITYSDK_OFFSET(0xD015D90)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYFEVERANIM_OFFSET UNITYSDK_OFFSET(0xD015A60)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYNPCANIM_OFFSET UNITYSDK_OFFSET(0xD01B7C0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINEENDFAIL_OFFSET UNITYSDK_OFFSET(0xD019630)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINEENDVICTORY_OFFSET UNITYSDK_OFFSET(0xD019570)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINEPLAYERTOSTAGE_OFFSET UNITYSDK_OFFSET(0xD0194C0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINESTAGETOENEMY_OFFSET UNITYSDK_OFFSET(0xD019410)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINESTAGETOPLAYER_OFFSET UNITYSDK_OFFSET(0xD015F00)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINESTARTGAME_OFFSET UNITYSDK_OFFSET(0xD019360)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINE_OFFSET UNITYSDK_OFFSET(0xD0196F0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_POPCURFEVERKEYINDEX_OFFSET UNITYSDK_OFFSET(0xD014300)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_POPRESULTPAGE_OFFSET UNITYSDK_OFFSET(0xA71D520)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PREPARESTAGE_OFFSET UNITYSDK_OFFSET(0xD018A10)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_RECEIVEFEVERINPUT_OFFSET UNITYSDK_OFFSET(0xD014FE0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_REFRESHBTNACC_OFFSET UNITYSDK_OFFSET(0xD019250)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_REFRESHBTNSKIP_OFFSET UNITYSDK_OFFSET(0xD018FC0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_REFRESHCOMBO_OFFSET UNITYSDK_OFFSET(0xD01DD10)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_REFRESHFILLBAR_OFFSET UNITYSDK_OFFSET(0xD016280)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_REFRESHTIMESTAGE_OFFSET UNITYSDK_OFFSET(0xA71C890)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_RESETFEVERTARGETKEY_OFFSET UNITYSDK_OFFSET(0xD014420)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_RESETUIBEFORESTARTLEVEL_OFFSET UNITYSDK_OFFSET(0xD01BB70)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_RESET_OFFSET UNITYSDK_OFFSET(0xA71D8A0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_RESTARTLEVEL_OFFSET UNITYSDK_OFFSET(0xD01A4D0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ROUNDEND_OFFSET UNITYSDK_OFFSET(0xA71D470)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SAMPLECOUNTDOWNANDTIPS_OFFSET UNITYSDK_OFFSET(0xA71C4F0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETALLHISTORYSKILLSMISSING_OFFSET UNITYSDK_OFFSET(0xA71B590)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETFEVERPROGRESS_OFFSET UNITYSDK_OFFSET(0xD015280)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETHISTORYSKILLISNEXT_OFFSET UNITYSDK_OFFSET(0xA71AEA0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETHITSCORE_OFFSET UNITYSDK_OFFSET(0xD01DA00)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETKEYHIGHLIGHT_OFFSET UNITYSDK_OFFSET(0xD0148F0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETMODELPAUSEDATA_OFFSET UNITYSDK_OFFSET(0xD01AC50)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETNICESTATE_OFFSET UNITYSDK_OFFSET(0xD01C7D0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETNPCHITSCORE_OFFSET UNITYSDK_OFFSET(0xD015C40)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETPLAYERCOUNTDOWN_OFFSET UNITYSDK_OFFSET(0xD01E1D0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETPLAYERMASK_OFFSET UNITYSDK_OFFSET(0xA71A600)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETSKIPDONE_OFFSET UNITYSDK_OFFSET(0xD0191E0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETTICKSTATE_OFFSET UNITYSDK_OFFSET(0xD019A60)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETTUTORIALID_OFFSET UNITYSDK_OFFSET(0xD018790)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xD017B90)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETUNLUCKYSTATE_OFFSET UNITYSDK_OFFSET(0xD01C860)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETUPPASSIVESKILLS_OFFSET UNITYSDK_OFFSET(0xA719120)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWBEFOREFEVEREFFECT_OFFSET UNITYSDK_OFFSET(0xD0135C0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWENDFEVEREFFECT_OFFSET UNITYSDK_OFFSET(0xD013E40)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWEOUSALLMISSEFFECT_OFFSET UNITYSDK_OFFSET(0xD016070)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWEOUSFEVEREFFECT_OFFSET UNITYSDK_OFFSET(0xD013840)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWEOUSNOTPERFECTEFFECT_OFFSET UNITYSDK_OFFSET(0xD016130)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWEOUSPERFECTEFFECT_OFFSET UNITYSDK_OFFSET(0xD015FC0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWFEVERTIPSDIALOG_OFFSET UNITYSDK_OFFSET(0xD0130B0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWLOOPFEVEREFFECT_OFFSET UNITYSDK_OFFSET(0xD013C50)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWSTARTFEVEREFFECT_OFFSET UNITYSDK_OFFSET(0xD0133D0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_STARTFEVERTIME_OFFSET UNITYSDK_OFFSET(0xD0159B0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_STARTLEVEL_OFFSET UNITYSDK_OFFSET(0xD01ABC0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_TRIGGERSKILLBYINPUTACTION_OFFSET UNITYSDK_OFFSET(0xD01F150)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_TRYINITSKILLINDEXTOHINTINDEX_OFFSET UNITYSDK_OFFSET(0xD01B1A0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_TRYPOPWINDOW_OFFSET UNITYSDK_OFFSET(0xD01B860)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_UPDATEADDSCORE_OFFSET UNITYSDK_OFFSET(0xD0169D0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_UPDATEFEVERSCORE_OFFSET UNITYSDK_OFFSET(0xD014A50)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_UPDATEREDUCESCORE_OFFSET UNITYSDK_OFFSET(0xD017300)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xD01DBC0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_WAITTIPSCLOSE_OFFSET UNITYSDK_OFFSET(0xD01EC90)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_WAITUNTILTIMECURSOR_OFFSET UNITYSDK_OFFSET(0xD01DAB0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xA71E190)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA71D940)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__FADEANDENDTIMELINE_B__129_0_OFFSET UNITYSDK_OFFSET(0xA71E580)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__FADEANDENDTIMELINE_B__129_1_OFFSET UNITYSDK_OFFSET(0xA71E590)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__FADEANDENDTIMELINE_B__129_2_OFFSET UNITYSDK_OFFSET(0xA71E5A0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__FADEANDENDTIMELINE_B__129_3_OFFSET UNITYSDK_OFFSET(0xA71E5B0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__GENERATEHISTORYSIMPLESKILLDATA_B__245_0_OFFSET UNITYSDK_OFFSET(0xA71E790)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__NPCLEVEL_B__58_0_OFFSET UNITYSDK_OFFSET(0xA71E310)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__ONCLICKQUIT_B__158_0_OFFSET UNITYSDK_OFFSET(0xA71E5D0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__ONCLICKSHOWPAUSEPANEL_B__150_0_OFFSET UNITYSDK_OFFSET(0xA71E5C0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__ONUIINIT_B__111_0_OFFSET UNITYSDK_OFFSET(0xA71E500)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__RESTARTLEVEL_B__160_0_OFFSET UNITYSDK_OFFSET(0xA71E670)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWEOUSALLMISSEFFECT_B__68_0_OFFSET UNITYSDK_OFFSET(0xA71E3C0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWEOUSFEVEREFFECT_B__32_0_OFFSET UNITYSDK_OFFSET(0xA71E260)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWEOUSNOTPERFECTEFFECT_B__69_0_OFFSET UNITYSDK_OFFSET(0xA71E460)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWEOUSPERFECTEFFECT_B__67_0_OFFSET UNITYSDK_OFFSET(0xA71E320)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__STARTFEVERTIME_B__52_0_OFFSET UNITYSDK_OFFSET(0xA71E300)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA71E7E0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xA71E850)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA71E880)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA71E890)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA71E8A0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA71E8B0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET UNITYSDK_OFFSET(0xA71E920)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIRidusGotBooPageController_TypeDefinitionIndex = 66289;
+
+	class UIRidusGotBooPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		static ::System::Int32* StaticGet_RightDamageLength()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController_TypeDefinitionIndex)->GetStaticField(0xB810);
+		}
+		static ::System::Int32* StaticGet_LeftOverrideColor()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController_TypeDefinitionIndex)->GetStaticField(0xB814);
+		}
+		static ::System::Int32* StaticGet_LeftDamageLength()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController_TypeDefinitionIndex)->GetStaticField(0xB818);
+		}
+		static ::System::Int32* StaticGet_RightOverrideColor()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController_TypeDefinitionIndex)->GetStaticField(0xB81C);
+		}
+		static ::UnityEngine::Color* StaticGet_InitOverrideColor()
+		{
+			return (::UnityEngine::Color*)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController_TypeDefinitionIndex)->GetStaticField(0xB820);
+		}
+		static ::System::Int32* StaticGet_LeftDamageColor()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController_TypeDefinitionIndex)->GetStaticField(0xB830);
+		}
+		static ::System::Int32* StaticGet_RightDamageColor()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController_TypeDefinitionIndex)->GetStaticField(0xB834);
+		}
+		static ::System::Int32* StaticGet_TeamARatio()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController_TypeDefinitionIndex)->GetStaticField(0xB838);
+		}
+		static ::UnityEngine::Color* StaticGet_TargetOverrideColor()
+		{
+			return (::UnityEngine::Color*)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController_TypeDefinitionIndex)->GetStaticField(0xB83C);
+		}
+		// static const ::System::String* AnimFeverFull; // 0x0
+		// static const ::System::String* AnimUIFadein; // 0x0
+		// static const ::System::String* AnimUIFadeout; // 0x0
+		// static const ::System::String* AnimCurCountDownBuffed; // 0x0
+		// static const ::System::String* AnimMainUIFadein; // 0x0
+		// static const ::System::String* AnimMainUIFadeout; // 0x0
+		// static const ::System::String* TimeStopStr; // 0x0
+		// static const ::System::Int32 interruptSkillType = 0x4; // 0x0
+		::System::String* BeforeFeverEffect; // 0x2F8
+		::System::String* StartFeverEffect; // 0x300
+		::System::String* LoopFeverEffect; // 0x308
+		::System::String* EndFeverEffect; // 0x310
+		::System::String* LoopEntityFeverEffect; // 0x318
+		::System::String* EntityPerfectEffect; // 0x320
+		::System::String* EntityAllMissEffect; // 0x328
+		::System::String* EntityNotPerfectEffect; // 0x330
+		::MoleMole::Battle::Entity* BeforeFeverEffectEntity; // 0x338
+		::MoleMole::Battle::Entity* StartFeverEffectEntity; // 0x340
+		::MoleMole::Battle::Entity* LoopFeverEffectEntity; // 0x348
+		::MoleMole::Battle::Entity* EndFeverEffectEntity; // 0x350
+		::MoleMole::Battle::Entity* LoopEntityFeverEffectInstance; // 0x358
+		::MoleMole::Battle::Entity* EntityPerfectEffectInstance; // 0x360
+		::MoleMole::Battle::Entity* EntityAllMissEffectInstance; // 0x368
+		::MoleMole::Battle::Entity* EntityNotPerfectEffectInstance; // 0x370
+		::MoleMole::UIRidusGotBooFeverTipsWidgetController* m_feverTipsDialog; // 0x378
+		::System::Collections::Generic::List_1<::Class_1_5E46A14259E19455*>* m_feverKeyPresses; // 0x380
+		::System::Collections::Generic::List_1<::MoleMole::UIRidusGotBooPageController_KeyPosition>* m_feverTargetKeys; // 0x388
+		::System::Collections::Generic::List_1<::System::Int32>* curLevelFeverKeyIndexs; // 0x390
+		::System::Single remainFeverTime; // 0x398
+		::System::Threading::CancellationTokenSource* m_playerAnimSource; // 0x3A0
+		::System::Boolean m_playerFeverAnimDone; // 0x3A8
+		::System::Collections::Generic::List_1<::Class_1_15C4412F4F8ACB43*>* m_historySkills; // 0x3B0
+		::System::Collections::Generic::List_1<::Class_1_E4EFD54D633BB1EB*>* m_historySkillsEx; // 0x3B8
+		::System::Collections::Generic::List_1<::Class_1_15C4412F4F8ACB43*>* m_npcSkills; // 0x3C0
+		::MoleMole::CompetitiveScoreFillBarParam* _scoreFillBarParam; // 0x3C8
+		::System::Single _curRatio; // 0x3D0
+		::System::Single _normalChangeTime; // 0x3D4
+		::System::Single _bigBlinkTime; // 0x3D8
+		::System::Single _blinkSpeed; // 0x3DC
+		::System::Single _bigChangeWitheTime; // 0x3E0
+		::System::Single lerpTime; // 0x3E4
+		::System::Single lerpTimer; // 0x3E8
+		::System::Single _whiteSpace; // 0x3EC
+		::System::Boolean _needChangeScore; // 0x3F0
+		::System::Single _targetRatio; // 0x3F4
+		::System::Single _curDiff; // 0x3F8
+		::System::Boolean _isBigChange; // 0x3FC
+		::System::Boolean _isFirstChange; // 0x3FD
+		::System::Single _bigChangeRatio; // 0x400
+		::System::Single _tempCurRatio; // 0x404
+		::System::Single _tempWithe; // 0x408
+		::System::Boolean _isScoreAdd; // 0x40C
+		::System::Single _isScoreFightingTimer; // 0x410
+		::UnityEngine::Color _overrideColor; // 0x414
+		::Class_2_79F6D62CE30E3F8E_46* _view; // 0x428
+		::System::Boolean m_blackCurtainFadeinEnd; // 0x430
+		::System::Boolean m_blackCurtainFadeoutEnd; // 0x431
+		::System::Int32 m_myBuddyID; // 0x434
+		::System::Int32 m_npcBuddyID; // 0x438
+		::System::Collections::Generic::List_1<::System::Int32>* m_createBuddyIDList; // 0x440
+		::System::String* _soundLastState; // 0x448
+		::System::Boolean _roundVoicePlayed; // 0x450
+		::System::Collections::Generic::List_1<::MoleMole::Battle::Entity*>* m_entityList; // 0x458
+		::System::Boolean m_isSkipping; // 0x460
+		::System::Boolean m_canSkip; // 0x461
+		::System::Boolean m_isPlayingStartGameTimeLine; // 0x462
+		::Class_2_5EA04932F3E7FC4B* _envTask; // 0x468
+		::Class_2_5EA04932F3E7FC4B* _currentTask; // 0x470
+		::MoleMole::UIInLevelPauseDialogPopWindowController* m_pauseWindow; // 0x478
+		::System::Threading::CancellationToken m_cancellationToken; // 0x480
+		::System::Int32 m_levelID; // 0x488
+		::Class_2_208CC9941471731A_689* m_levelCfg; // 0x490
+		::Class_2_787A64751D1D3DEF* model; // 0x498
+		::System::Int32 m_roundIdx; // 0x4A0
+		::System::Collections::Generic::List_1<::System::Int32>* m_rounds; // 0x4A8
+		::Class_2_C23FFBF926EC8C49* m_curRoundCfg; // 0x4B0
+		::System::Int32 m_playerScore; // 0x4B8
+		::System::Int32 m_npcScore; // 0x4BC
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::LogicButtonInputType>* IndexToConsoleIconDict; // 0x4C0
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::List_1<::System::Int32>*>* SkillIndexToHintIndex; // 0x4C8
+		::System::Threading::CancellationToken m_npcAnimToken; // 0x4D0
+		::System::Boolean m_npcAnimDone; // 0x4D8
+		::System::Boolean m_npcSkillEnd; // 0x4D9
+		::System::Int32 m_enterFeverNum; // 0x4DC
+		::System::Collections::Generic::List_1<::Class_3_36FD41B1D5D1EB46_2*>* m_roundInfoList; // 0x4E0
+		::System::Collections::Generic::List_1<::System::Int32>* m_curRoundPlayerSkills; // 0x4E8
+		::System::Collections::Generic::List_1<::System::Int32>* m_curRoundPlayerRemainTime; // 0x4F0
+		::System::Collections::Generic::List_1<::System::Int32>* m_curRoundResultList; // 0x4F8
+		::System::Collections::Generic::List_1<::System::Int32>* m_curRoundScoreList; // 0x500
+		::System::Int32 m_curRoundNPCScore; // 0x508
+		::System::Boolean m_curRoundTriggerFever; // 0x50C
+		::System::Int32 m_curRoundFeverScoreDouble; // 0x510
+		::System::Int32 m_curRoundFeverScoreSingle; // 0x514
+		::System::String* LastRoundAnim; // 0x518
+		::System::Threading::CancellationTokenSource* m_hitScoreSource; // 0x520
+		::System::Threading::CancellationTokenSource* m_originalSource; // 0x528
+		::System::Single m_curTimeCursor; // 0x530
+		::System::Boolean m_isTicking; // 0x534
+		::MoleMole::UIRidusGotBooPageController_ComboShowState m_comboShowState; // 0x538
+		::System::String* animCountProgress; // 0x540
+		::System::String* animComboNumChange; // 0x548
+		::System::String* animGetScoreFadein; // 0x550
+		::System::String* comboImg; // 0x558
+		::System::String* numImg; // 0x560
+		::System::String* m_comboFadeout; // 0x568
+		::System::String* m_comboFadein; // 0x570
+		::System::String* m_niceFadeOut; // 0x578
+		::System::String* m_niceFadeIn; // 0x580
+		::System::String* m_unluckyFadeOut; // 0x588
+		::System::String* m_unluckyFadeIn; // 0x590
+		::System::Boolean m_prevCountdownNearEnding; // 0x598
+		::System::Threading::CancellationTokenSource* m_tipsCloseSource; // 0x5A0
+		::System::Threading::CancellationTokenSource* m_npcAnimSource; // 0x5A8
+		::MoleMole::ButtonPressType cachedConsole1PressType; // 0x5B0
+		::MoleMole::ButtonPressType cachedConsole2PressType; // 0x5B4
+		::System::Boolean _isCurFrameConsole1Pressing; // 0x5B8
+		::System::Boolean _isCurFrameConsole2Pressing; // 0x5B9
+		::System::String* AnimBtnFadein; // 0x5C0
+		::System::String* AnimBtnFadeout; // 0x5C8
+		::System::String* AnimCountFadein; // 0x5D0
+		::System::String* AnimCountFadeout; // 0x5D8
+		::System::String* AnimCountTipsFadein; // 0x5E0
+		::System::String* AnimCountTipsFadeout; // 0x5E8
+		::System::String* AnimPreScoreFadein; // 0x5F0
+		::System::String* AnimPreScoreFadeout; // 0x5F8
+		::System::Boolean resetFlag; // 0x600
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_148*>* m_passiveSkills; // 0x608
+		::System::Boolean m_timeStopThisRound; // 0x610
+		::System::Boolean m_needResetTimeStopAfterFever; // 0x611
+		::System::Int32 m_feverDelta; // 0x614
+		::System::Int32 m_overrideLevel1TimeRange; // 0x618
+		::System::Int32 m_overrideLevel2TimeRange; // 0x61C
+		::System::Collections::Generic::List_1<::Class_1_84CF6BFB7CE697B4*>* SkillList; // 0x620
+		::System::Collections::Generic::List_1<::MoleMole::UIRidusGotBooSkillWidgetController*>* m_playerSkillCtrls; // 0x628
+		::MoleMole::UIRidusGotBooPageController_InputPeriod m_curInputPeriod; // 0x630
+		::System::Int32 m_playerSkillIdx; // 0x634
+		::System::Int32 m_wrongHitCount; // 0x638
+		::System::Int32 m_correctHitCount; // 0x63C
+		::System::String* m_missFadeIn; // 0x640
+		::System::Int32 m_curRoundCorrectCnt; // 0x648
+		::System::Int32 m_curRoundTotalCnt; // 0x64C
+		::MoleMole::UIRidusGotBooPageController_TimeStage m_curTimeStage; // 0x650
+		::UnityEngine::Color m_goldColor; // 0x654
+		::UnityEngine::Color m_purpleColor; // 0x664
+		::UnityEngine::Color m_blueColor; // 0x674
+		::System::Single m_bonusRatio; // 0x684
+		::System::Boolean m_enterFeverBeforeRoundEnd; // 0x688
+		::System::Int32 m_comboNum; // 0x68C
+		::System::Int32 m_enterFeverCorrectNum; // 0x690
+		::System::Int32 m_pendingPlayerScore; // 0x694
+		::System::Int32 m_clothBuffRatio; // 0x698
+		::System::Boolean m_lastSkillHandled; // 0x69C
+		::System::Int32 m_lastSkillID; // 0x6A0
+		::System::Int32 delayPopResultPage; // 0x6A4
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Boolean>* CurLevelTaskFinishedDict; // 0x6A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::Cysharp::Threading::Tasks::UniTask EnterFever()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ENTERFEVER_OFFSET))(this);
+		}
+
+		::System::Void InitFeverTipsDialog()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_INITFEVERTIPSDIALOG_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask ShowFeverTipsDialog(::System::Boolean show, ::System::Single delayTime)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID, ::System::Boolean, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWFEVERTIPSDIALOG_OFFSET))(this, show, delayTime);
+		}
+
+		::System::Void OnStartFeverHandleEffects()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONSTARTFEVERHANDLEEFFECTS_OFFSET))(this);
+		}
+
+		::System::Void OnEndFeverHandleEffects()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONENDFEVERHANDLEEFFECTS_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid DelayShowLoopFever()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_DELAYSHOWLOOPFEVER_OFFSET))(this);
+		}
+
+		::UnityEngine::Camera* get_MainCam()
+		{
+			return ((::UnityEngine::Camera*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_MAINCAM_OFFSET))(this);
+		}
+
+		::System::Int32 get_BeforeFeverPlayEffectNum()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_BEFOREFEVERPLAYEFFECTNUM_OFFSET))(this);
+		}
+
+		::System::Void ShowStartFeverEffect(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWSTARTFEVEREFFECT_OFFSET))(this, state);
+		}
+
+		::System::Void ShowLoopFeverEffect(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWLOOPFEVEREFFECT_OFFSET))(this, state);
+		}
+
+		::System::Void ShowEndFeverEffect(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWENDFEVEREFFECT_OFFSET))(this, state);
+		}
+
+		::System::Void ShowBeforeFeverEffect(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWBEFOREFEVEREFFECT_OFFSET))(this, state);
+		}
+
+		::System::Void DestoryEffectEntity(::MoleMole::Battle::Entity* effectEntity)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_DESTORYEFFECTENTITY_OFFSET))(this, effectEntity);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid ShowEousFeverEffect(::System::Boolean state, ::System::Single delayTime)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::System::Boolean, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWEOUSFEVEREFFECT_OFFSET))(this, state, delayTime);
+		}
+
+		::System::String* get_CurLevelKeymapFeverGroupStr()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_CURLEVELKEYMAPFEVERGROUPSTR_OFFSET))(this);
+		}
+
+		::System::Void InitCurLevelFeverKeyIndexs()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_INITCURLEVELFEVERKEYINDEXS_OFFSET))(this);
+		}
+
+		::System::Int32 PopCurFeverKeyIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_POPCURFEVERKEYINDEX_OFFSET))(this);
+		}
+
+		::System::Void ResetFeverTargetKey()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_RESETFEVERTARGETKEY_OFFSET))(this);
+		}
+
+		::System::Void ReceiveFeverInput(::System::Int32 skillID, ::MoleMole::UIRidusGotBooPageController_KeyPosition keyPos)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::MoleMole::UIRidusGotBooPageController_KeyPosition))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_RECEIVEFEVERINPUT_OFFSET))(this, skillID, keyPos);
+		}
+
+		::System::Void SetKeyHighlight(::System::Boolean showState, ::System::Int32 keyIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETKEYHIGHLIGHT_OFFSET))(this, showState, keyIndex);
+		}
+
+		::System::Void SetFeverProgress(::System::Single progress)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETFEVERPROGRESS_OFFSET))(this, progress);
+		}
+
+		::System::Int32 get_FeverBiggerScore()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_FEVERBIGGERSCORE_OFFSET))(this);
+		}
+
+		::System::Int32 get_FeverSmallerScore()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_FEVERSMALLERSCORE_OFFSET))(this);
+		}
+
+		::System::Single get_FeverTimeThreshold()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_FEVERTIMETHRESHOLD_OFFSET))(this);
+		}
+
+		::System::Void UpdateFeverScore(::System::Boolean forceExpireAll)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_UPDATEFEVERSCORE_OFFSET))(this, forceExpireAll);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask StartFeverTime()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_STARTFEVERTIME_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid PlayFeverAnim(::System::Threading::CancellationToken token)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYFEVERANIM_OFFSET))(this, token);
+		}
+
+		::System::Single get_SwitchFeverTime()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_SWITCHFEVERTIME_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask NPCLevel()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_NPCLEVEL_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid SetNPCHitScore(::System::Boolean showState, ::System::Int32 score)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETNPCHITSCORE_OFFSET))(this, showState, score);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid DelayRefreshHistoryScrollview(::System::Single setHistoryTime)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_DELAYREFRESHHISTORYSCROLLVIEW_OFFSET))(this, setHistoryTime);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PlayerLevel()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYERLEVEL_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask NormalPlayerRoundEnd()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_NORMALPLAYERROUNDEND_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PlayTimelineStageToPlayer()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINESTAGETOPLAYER_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid ShowEousPerfectEffect(::System::Boolean state, ::System::Single delayTime)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::System::Boolean, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWEOUSPERFECTEFFECT_OFFSET))(this, state, delayTime);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid ShowEousAllMissEffect(::System::Boolean state, ::System::Single delayTime)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::System::Boolean, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWEOUSALLMISSEFFECT_OFFSET))(this, state, delayTime);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid ShowEousNotPerfectEffect(::System::Boolean state, ::System::Single delayTime)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::System::Boolean, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SHOWEOUSNOTPERFECTEFFECT_OFFSET))(this, state, delayTime);
+		}
+
+		::System::Single get_ScoreRatio()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_SCORERATIO_OFFSET))(this);
+		}
+
+		::System::Void RefreshFillBar()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_REFRESHFILLBAR_OFFSET))(this);
+		}
+
+		::System::Void InitAddScore(::System::Boolean isBigChange)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_INITADDSCORE_OFFSET))(this, isBigChange);
+		}
+
+		::System::Void UpdateAddScore(::System::Single timer, ::System::Boolean isBigChange, ::System::Single lerpTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Boolean, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_UPDATEADDSCORE_OFFSET))(this, timer, isBigChange, lerpTime);
+		}
+
+		::System::Void InitReduceScore(::System::Boolean isBigChange)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_INITREDUCESCORE_OFFSET))(this, isBigChange);
+		}
+
+		::System::Void UpdateReduceScore(::System::Single timer, ::System::Boolean isBigChange, ::System::Single lerpTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Boolean, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_UPDATEREDUCESCORE_OFFSET))(this, timer, isBigChange, lerpTime);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void SetTutorialID()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETTUTORIALID_OFFSET))(this);
+		}
+
+		::System::Int32 get_EnterFeverNeedCorrectNum()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_ENTERFEVERNEEDCORRECTNUM_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PrepareStage()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PREPARESTAGE_OFFSET))(this);
+		}
+
+		::System::Void ClearBuddyEntity()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_CLEARBUDDYENTITY_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PlayAniForEntity(::MoleMole::Battle::Entity* entity, ::System::Int32 aniID)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID, ::MoleMole::Battle::Entity*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYANIFORENTITY_OFFSET))(this, entity, aniID);
+		}
+
+		::System::Void OnClickSkip()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONCLICKSKIP_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid FadeAndEndTimeline()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_FADEANDENDTIMELINE_OFFSET))(this);
+		}
+
+		::System::Void RefreshBtnSkip()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_REFRESHBTNSKIP_OFFSET))(this);
+		}
+
+		::System::Void SetSkipDone()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETSKIPDONE_OFFSET))(this);
+		}
+
+		::System::Void RefreshBtnAcc()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_REFRESHBTNACC_OFFSET))(this);
+		}
+
+		::MoleMole::Battle::Entity* get_EousEntity()
+		{
+			return ((::MoleMole::Battle::Entity*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_EOUSENTITY_OFFSET))(this);
+		}
+
+		::MoleMole::Battle::Entity* get_NPCEntity()
+		{
+			return ((::MoleMole::Battle::Entity*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_NPCENTITY_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PlayTimelineStartGame()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINESTARTGAME_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PlayTimelineStageToEnemy()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINESTAGETOENEMY_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PlayTimelinePlayerToStage()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINEPLAYERTOSTAGE_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PlayTimelineEndVictory()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINEENDVICTORY_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PlayTimelineEndFail()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINEENDFAIL_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PlayEnvTimeline()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYENVTIMELINE_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PlayTimeline(::System::String* key, ::System::Boolean withInputBlock)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYTIMELINE_OFFSET))(this, key, withInputBlock);
+		}
+
+		::System::Void OnClickShowPausePanel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONCLICKSHOWPAUSEPANEL_OFFSET))(this);
+		}
+
+		::System::Void SetTickState(::System::Boolean isTicking)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETTICKSTATE_OFFSET))(this, isTicking);
+		}
+
+		::System::Void OnClickQuit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONCLICKQUIT_OFFSET))(this);
+		}
+
+		::System::Void OnGetReportRsp(::Class_0_16E4307DCC419505_7* rcvmessage)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONGETREPORTRSP_OFFSET))(this, rcvmessage);
+		}
+
+		::System::Void RestartLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_RESTARTLEVEL_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid DoRestartLevel()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_DORESTARTLEVEL_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::Class_2_787A64751D1D3DEF* get_Model()
+		{
+			return ((::Class_2_787A64751D1D3DEF*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_MODEL_OFFSET))(this);
+		}
+
+		::System::Void SetModelPauseData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETMODELPAUSEDATA_OFFSET))(this);
+		}
+
+		::Class_2_C23FFBF926EC8C49* get_CurRoundCfg()
+		{
+			return ((::Class_2_C23FFBF926EC8C49*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_CURROUNDCFG_OFFSET))(this);
+		}
+
+		::System::Void HideUnnecessarySkills()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_HIDEUNNECESSARYSKILLS_OFFSET))(this);
+		}
+
+		::System::Void BuildConsoleIcons()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_BUILDCONSOLEICONS_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* GetHintIndexBySkillIndex(::System::Int32 index)
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETHINTINDEXBYSKILLINDEX_OFFSET))(this, index);
+		}
+
+		::System::Void TryInitSkillIndexToHintIndex()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_TRYINITSKILLINDEXTOHINTINDEX_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid PlayNPCAnim(::System::Threading::CancellationToken token)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_PLAYNPCANIM_OFFSET))(this, token);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask TryPopWindow(::System::Int32 popID)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_TRYPOPWINDOW_OFFSET))(this, popID);
+		}
+
+		::System::Void ClearLevelMemory()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_CLEARLEVELMEMORY_OFFSET))(this);
+		}
+
+		::System::Void ResetUIBeforeStartLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_RESETUIBEFORESTARTLEVEL_OFFSET))(this);
+		}
+
+		::System::Void InitMusic()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_INITMUSIC_OFFSET))(this);
+		}
+
+		::UnityEngine::GameObject* GetPlayerAudioGO()
+		{
+			return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETPLAYERAUDIOGO_OFFSET))(this);
+		}
+
+		::UnityEngine::GameObject* GetNPCAudioGO()
+		{
+			return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETNPCAUDIOGO_OFFSET))(this);
+		}
+
+		::System::Void ClearRoundMemory()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_CLEARROUNDMEMORY_OFFSET))(this);
+		}
+
+		::System::Void BuildRoundInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_BUILDROUNDINFO_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid StartLevel()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_STARTLEVEL_OFFSET))(this);
+		}
+
+		::System::Void OnRoundStartPlayVoice()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONROUNDSTARTPLAYVOICE_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid SetHitScore(::System::Boolean showState, ::System::Int32 score)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::System::Boolean, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETHITSCORE_OFFSET))(this, showState, score);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask WaitUntilTimeCursor(::System::Single resumeTime, ::System::Threading::CancellationToken token, ::Cysharp::Threading::Tasks::PlayerLoopTiming timing)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID, ::System::Single, ::System::Threading::CancellationToken, ::Cysharp::Threading::Tasks::PlayerLoopTiming))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_WAITUNTILTIMECURSOR_OFFSET))(this, resumeTime, token, timing);
+		}
+
+		::System::Boolean get_IsTicking()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_ISTICKING_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnBeforeWorldUpdate(::System::Single deltaTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONBEFOREWORLDUPDATE_OFFSET))(this, deltaTime);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid RefreshCombo()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_REFRESHCOMBO_OFFSET))(this);
+		}
+
+		::System::Void BubbleAddScore(::System::Int32 score)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_BUBBLEADDSCORE_OFFSET))(this, score);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid SetNiceState(::System::Boolean showNice)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETNICESTATE_OFFSET))(this, showNice);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid SetUnluckyState(::System::Boolean showUnlucky)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETUNLUCKYSTATE_OFFSET))(this, showUnlucky);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* GetComboImgByInt(::System::Int32 number)
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETCOMBOIMGBYINT_OFFSET))(this, number);
+		}
+
+		::System::Collections::Generic::List_1<::System::String*>* GetScoreImgByInt(::System::Int32 number)
+		{
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETSCOREIMGBYINT_OFFSET))(this, number);
+		}
+
+		::System::Boolean CountdownNearEnding()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_COUNTDOWNNEARENDING_OFFSET))(this);
+		}
+
+		::System::Void SetPlayerCountdown(::System::Boolean showState, ::System::Int32 leftTime, ::System::Int32 totalTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETPLAYERCOUNTDOWN_OFFSET))(this, showState, leftTime, totalTime);
+		}
+
+		::System::Collections::Generic::List_1<::MoleMole::RidusGotBooSkillEx*>* GenerateSimpleSkillData(::System::Collections::Generic::List_1<::Class_1_15C4412F4F8ACB43*>* skillConfigs, ::Enum_3_A54EADDA5F8725D8 skillType, ::Enum_3_6689CFCCDBE24211 qteResult, ::System::Func_2<::Class_2_208CC9941471731A_343*, ::System::String*>* getColorFunc)
+		{
+			return ((::System::Collections::Generic::List_1<::MoleMole::RidusGotBooSkillEx*>*(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_15C4412F4F8ACB43*>*, ::Enum_3_A54EADDA5F8725D8, ::Enum_3_6689CFCCDBE24211, ::System::Func_2<::Class_2_208CC9941471731A_343*, ::System::String*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GENERATESIMPLESKILLDATA_OFFSET))(this, skillConfigs, skillType, qteResult, getColorFunc);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_E4EFD54D633BB1EB*>* GeneratePlayerSimpleSkillData(::System::Collections::Generic::List_1<::Class_1_15C4412F4F8ACB43*>* skillConfigs)
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_E4EFD54D633BB1EB*>*(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_15C4412F4F8ACB43*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GENERATEPLAYERSIMPLESKILLDATA_OFFSET))(this, skillConfigs);
+		}
+
+		::System::String* GetColorPathBySkillConfig(::Class_2_208CC9941471731A_343* cfg)
+		{
+			return ((::System::String*(*)(::PVOID, ::Class_2_208CC9941471731A_343*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETCOLORPATHBYSKILLCONFIG_OFFSET))(this, cfg);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_E4EFD54D633BB1EB*>* GenerateNPCSimpleSkillData(::System::Collections::Generic::List_1<::Class_1_15C4412F4F8ACB43*>* skillConfigs)
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_E4EFD54D633BB1EB*>*(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_15C4412F4F8ACB43*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GENERATENPCSIMPLESKILLDATA_OFFSET))(this, skillConfigs);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_E4EFD54D633BB1EB*>* GenerateHistorySimpleSkillData(::System::Collections::Generic::List_1<::Class_1_15C4412F4F8ACB43*>* skillConfigs)
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_E4EFD54D633BB1EB*>*(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_1_15C4412F4F8ACB43*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GENERATEHISTORYSIMPLESKILLDATA_OFFSET))(this, skillConfigs);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask WaitTipsClose(::System::String* msg, ::System::Int32 delayTime)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID, ::System::String*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_WAITTIPSCLOSE_OFFSET))(this, msg, delayTime);
+		}
+
+		::MoleMole::ButtonPressType GetButtonPressTypeByEvent(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::MoleMole::ButtonPressType(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETBUTTONPRESSTYPEBYEVENT_OFFSET))(this, inputAction);
+		}
+
+		::System::Boolean NeedTriggerMiddleButton()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_NEEDTRIGGERMIDDLEBUTTON_OFFSET))(this);
+		}
+
+		::System::Void TriggerSkillByInputAction(::MoleMole::InputActionEvent inputAction, ::MoleMole::UIRidusGotBooPageController_KeyPosition keyPos)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::InputActionEvent, ::MoleMole::UIRidusGotBooPageController_KeyPosition))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_TRIGGERSKILLBYINPUTACTION_OFFSET))(this, inputAction, keyPos);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void ClearAllScrollview()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_CLEARALLSCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Boolean get_InMobile()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_INMOBILE_OFFSET))(this);
+		}
+
+		::Class_2_208CC9941471731A_152* get_ConstMap()
+		{
+			return ((::Class_2_208CC9941471731A_152*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_CONSTMAP_OFFSET))(this);
+		}
+
+		::System::Void SetupPassiveSkills()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETUPPASSIVESKILLS_OFFSET))(this);
+		}
+
+		::System::Int32 ModifyNPCScore(::System::Int32 rawScore)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MODIFYNPCSCORE_OFFSET))(this, rawScore);
+		}
+
+		::System::Int32 ModifyPlayerScore(::System::Int32 rawScore)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MODIFYPLAYERSCORE_OFFSET))(this, rawScore);
+		}
+
+		::System::Int32 ModifyNPCSpeed(::System::Int32 skillInterval)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MODIFYNPCSPEED_OFFSET))(this, skillInterval);
+		}
+
+		::System::Boolean ModifyNoHistoryMask(::System::Boolean noHistoryMask)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MODIFYNOHISTORYMASK_OFFSET))(this, noHistoryMask);
+		}
+
+		::System::Int32 ModifyPlayerInteractTime(::System::Int32 interactTime)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MODIFYPLAYERINTERACTTIME_OFFSET))(this, interactTime);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* GetCurLevelPlayerLevelIDs()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETCURLEVELPLAYERLEVELIDS_OFFSET))(this);
+		}
+
+		::Class_1_8EECEAD64126B925* get_KeyMap()
+		{
+			return ((::Class_1_8EECEAD64126B925*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_KEYMAP_OFFSET))(this);
+		}
+
+		::System::Void GeneratePlayerSkills(::System::Boolean useRandomPos, ::System::Boolean hasDarkMask, ::System::Boolean useRandomColor)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GENERATEPLAYERSKILLS_OFFSET))(this, useRandomPos, hasDarkMask, useRandomColor);
+		}
+
+		::System::Void SetPlayerMask(::MoleMole::UIRidusGotBooPageController_PlayerMaskType maskType)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIRidusGotBooPageController_PlayerMaskType))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETPLAYERMASK_OFFSET))(this, maskType);
+		}
+
+		::System::Void OnClickPlayerSkill(::System::Int32 skillID, ::MoleMole::UIRidusGotBooPageController_KeyPosition keyPos)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::MoleMole::UIRidusGotBooPageController_KeyPosition))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONCLICKPLAYERSKILL_OFFSET))(this, skillID, keyPos);
+		}
+
+		::System::ValueTuple_2<::MoleMole::RidusGotBooSkillEx*, ::System::Boolean> GetCurHistorySkill(::System::Int32 index)
+		{
+			return ((::System::ValueTuple_2<::MoleMole::RidusGotBooSkillEx*, ::System::Boolean>(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETCURHISTORYSKILL_OFFSET))(this, index);
+		}
+
+		::System::Void SetHistorySkillIsNext()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETHISTORYSKILLISNEXT_OFFSET))(this);
+		}
+
+		::System::Void SetAllHistorySkillsMissing()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SETALLHISTORYSKILLSMISSING_OFFSET))(this);
+		}
+
+		::System::Void MarkAllHistorySkillsAnimSampleTime()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_MARKALLHISTORYSKILLSANIMSAMPLETIME_OFFSET))(this);
+		}
+
+		::System::Void SampleCountdownAndTips(::System::Boolean show)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_SAMPLECOUNTDOWNANDTIPS_OFFSET))(this, show);
+		}
+
+		::System::Void FadeCountdownAndTips(::System::Boolean fadeInOrOut)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_FADECOUNTDOWNANDTIPS_OFFSET))(this, fadeInOrOut);
+		}
+
+		::System::Int32 GetLevel1TimeRange()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETLEVEL1TIMERANGE_OFFSET))(this);
+		}
+
+		::System::Int32 GetLevel2TimeRange()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETLEVEL2TIMERANGE_OFFSET))(this);
+		}
+
+		::System::Void RefreshTimeStage(::System::Single curRemain, ::System::Single totalTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_REFRESHTIMESTAGE_OFFSET))(this, curRemain, totalTime);
+		}
+
+		::System::Void AddPlayerScore(::System::Int32 addNum)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ADDPLAYERSCORE_OFFSET))(this, addNum);
+		}
+
+		::System::ValueTuple_2<::System::Int32, ::Enum_3_6689CFCCDBE24211> GetHitScore(::System::Int32 mySkill, ::System::Int32 npcSkill)
+		{
+			return ((::System::ValueTuple_2<::System::Int32, ::Enum_3_6689CFCCDBE24211>(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETHITSCORE_OFFSET))(this, mySkill, npcSkill);
+		}
+
+		::System::Int32 GetSingleCorrectScore(::System::Boolean debugScore)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GETSINGLECORRECTSCORE_OFFSET))(this, debugScore);
+		}
+
+		::Class_1_9AFD40DD7DD8C806* get_SkillMap()
+		{
+			return ((::Class_1_9AFD40DD7DD8C806*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_SKILLMAP_OFFSET))(this);
+		}
+
+		::Class_1_B71F67EC084F1F2E* get_AniMap()
+		{
+			return ((::Class_1_B71F67EC084F1F2E*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_GET_ANIMAP_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask RoundEnd()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ROUNDEND_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PopResultPage()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_POPRESULTPAGE_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid DelayFadeoutUIAndPopResultPage(::MoleMole::UIRidusGotBooResultPageControllerContext* ctx, ::System::Collections::Generic::List_1<::System::Int32>* finishedIDs)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::MoleMole::UIRidusGotBooResultPageControllerContext*, ::System::Collections::Generic::List_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_DELAYFADEOUTUIANDPOPRESULTPAGE_OFFSET))(this, ctx, finishedIDs);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER_RESET_OFFSET))(this);
+		}
+
+		::System::Boolean _ShowEousFeverEffect_b__32_0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWEOUSFEVEREFFECT_B__32_0_OFFSET))(this);
+		}
+
+		::System::Boolean _StartFeverTime_b__52_0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__STARTFEVERTIME_B__52_0_OFFSET))(this);
+		}
+
+		::System::Boolean _NPCLevel_b__58_0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__NPCLEVEL_B__58_0_OFFSET))(this);
+		}
+
+		::System::Boolean _ShowEousPerfectEffect_b__67_0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWEOUSPERFECTEFFECT_B__67_0_OFFSET))(this);
+		}
+
+		::System::Boolean _ShowEousAllMissEffect_b__68_0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWEOUSALLMISSEFFECT_B__68_0_OFFSET))(this);
+		}
+
+		::System::Boolean _ShowEousNotPerfectEffect_b__69_0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWEOUSNOTPERFECTEFFECT_B__69_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__111_0(::System::EventArgs* _)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__ONUIINIT_B__111_0_OFFSET))(this, _);
+		}
+
+		::System::Void _FadeAndEndTimeline_b__129_0(::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF _)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__FADEANDENDTIMELINE_B__129_0_OFFSET))(this, _);
+		}
+
+		::System::Boolean _FadeAndEndTimeline_b__129_1()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__FADEANDENDTIMELINE_B__129_1_OFFSET))(this);
+		}
+
+		::System::Void _FadeAndEndTimeline_b__129_2(::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF _)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__FADEANDENDTIMELINE_B__129_2_OFFSET))(this, _);
+		}
+
+		::System::Boolean _FadeAndEndTimeline_b__129_3()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__FADEANDENDTIMELINE_B__129_3_OFFSET))(this);
+		}
+
+		::System::Void _OnClickShowPausePanel_b__150_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__ONCLICKSHOWPAUSEPANEL_B__150_0_OFFSET))(this);
+		}
+
+		::System::Void _OnClickQuit_b__158_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__ONCLICKQUIT_B__158_0_OFFSET))(this);
+		}
+
+		::System::Void _RestartLevel_b__160_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__RESTARTLEVEL_B__160_0_OFFSET))(this);
+		}
+
+		::MoleMole::RidusGotBooSkillEx* _GenerateHistorySimpleSkillData_b__245_0(::MoleMole::RidusGotBooSkillEx* x)
+		{
+			return ((::MoleMole::RidusGotBooSkillEx*(*)(::PVOID, ::MoleMole::RidusGotBooSkillEx*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__GENERATEHISTORYSIMPLESKILLDATA_B__245_0_OFFSET))(this, x);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetUIWindowSetting()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___BASE_SETUIWINDOWSETTING_OFFSET))(this);
+		}
+	};
+}

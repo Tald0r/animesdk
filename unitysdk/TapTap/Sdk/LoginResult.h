@@ -5,26 +5,27 @@
 namespace System { class Exception; }
 namespace TapTap::Sdk { class AccessToken; }
 
-#define TAPTAP_SDK_LOGINRESULT_GET_ISCANCELED_OFFSET UNITYSDK_OFFSET(0x17F6A900)
-#define TAPTAP_SDK_LOGINRESULT_GET_ISFAULTED_OFFSET UNITYSDK_OFFSET(0x17F6A920)
-#define TAPTAP_SDK_LOGINRESULT_GET_TOKEN_OFFSET UNITYSDK_OFFSET(0x17F6A950)
-#define TAPTAP_SDK_LOGINRESULT_SET_EXCEPTION_OFFSET UNITYSDK_OFFSET(0x17F6A940)
-#define TAPTAP_SDK_LOGINRESULT_SET_ISCANCELED_OFFSET UNITYSDK_OFFSET(0x17F6A910)
-#define TAPTAP_SDK_LOGINRESULT_SET_ISFAULTED_OFFSET UNITYSDK_OFFSET(0x17F6A930)
-#define TAPTAP_SDK_LOGINRESULT_SET_TOKEN_OFFSET UNITYSDK_OFFSET(0x17F6A960)
-#define TAPTAP_SDK_LOGINRESULT__CTOR_OFFSET UNITYSDK_OFFSET(0x17F6A150)
+#define TAPTAP_SDK_LOGINRESULT_GET_EXCEPTION_OFFSET UNITYSDK_OFFSET(0x1A7C23C0)
+#define TAPTAP_SDK_LOGINRESULT_GET_ISCANCELED_OFFSET UNITYSDK_OFFSET(0x1A7C2380)
+#define TAPTAP_SDK_LOGINRESULT_GET_ISFAULTED_OFFSET UNITYSDK_OFFSET(0x1A7C23A0)
+#define TAPTAP_SDK_LOGINRESULT_GET_TOKEN_OFFSET UNITYSDK_OFFSET(0x1A7C23E0)
+#define TAPTAP_SDK_LOGINRESULT_SET_EXCEPTION_OFFSET UNITYSDK_OFFSET(0x1A7C23D0)
+#define TAPTAP_SDK_LOGINRESULT_SET_ISCANCELED_OFFSET UNITYSDK_OFFSET(0x1A7C2390)
+#define TAPTAP_SDK_LOGINRESULT_SET_ISFAULTED_OFFSET UNITYSDK_OFFSET(0x1A7C23B0)
+#define TAPTAP_SDK_LOGINRESULT_SET_TOKEN_OFFSET UNITYSDK_OFFSET(0x1A7C23F0)
+#define TAPTAP_SDK_LOGINRESULT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7C1E20)
 
 namespace TapTap::Sdk
 {
-	inline static constexpr unsigned int LoginResult_TypeDefinitionIndex = 6326;
+	inline static constexpr unsigned int LoginResult_TypeDefinitionIndex = 9466;
 
 	class LoginResult : public ::System::Object
 	{
 	public:
-		::TapTap::Sdk::AccessToken* _Token_k__BackingField; // 0x10
-		::System::Exception* _Exception_k__BackingField; // 0x18
-		::System::Boolean _IsFaulted_k__BackingField; // 0x20
-		::System::Boolean _IsCanceled_k__BackingField; // 0x21
+		::System::Exception* _Exception_k__BackingField; // 0x10
+		::TapTap::Sdk::AccessToken* _Token_k__BackingField; // 0x18
+		::System::Boolean _IsCanceled_k__BackingField; // 0x20
+		::System::Boolean _IsFaulted_k__BackingField; // 0x21
 
 		::System::Void _ctor()
 		{
@@ -49,6 +50,11 @@ namespace TapTap::Sdk
 		::System::Void set_IsFaulted(::System::Boolean value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + TAPTAP_SDK_LOGINRESULT_SET_ISFAULTED_OFFSET))(this, value);
+		}
+
+		::System::Exception* get_Exception()
+		{
+			return ((::System::Exception*(*)(::PVOID))((::PBYTE)hIl2Cpp + TAPTAP_SDK_LOGINRESULT_GET_EXCEPTION_OFFSET))(this);
 		}
 
 		::System::Void set_Exception(::System::Exception* value)

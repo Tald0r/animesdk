@@ -1,11 +1,13 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/FixPoint.h"
+#include "unitysdk/UnityEngine/BoundingSphere.h"
+#include "unitysdk/UnityEngine/Bounds.h"
+#include "unitysdk/UnityEngine/Matrix4x4.h"
+#include "unitysdk/UnityEngine/Vector2.h"
 
-class Class_1_5D31C4140DCE7D34;
-class Class_1_E8C259E730C95D15;
+namespace UnityEngine { class Transform; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_433_TypeDefinitionIndex = 45420;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_433_TypeDefinitionIndex = 47471;
 
 class Class_0_16E4307DCC419505_433
 {

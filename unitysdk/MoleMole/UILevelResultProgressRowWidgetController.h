@@ -1,0 +1,87 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_2A09C8C0CD4D6ED4_1;
+class Class_2_809B068491AD1EEA_9;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x929BED0)
+#define MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_ONPROGRESS_OFFSET UNITYSDK_OFFSET(0x929C480)
+#define MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x929BF70)
+#define MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x929BC30)
+#define MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x929BCD0)
+#define MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x929C140)
+#define MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x929C730)
+#define MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x929C760)
+#define MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x929C7D0)
+#define MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x929C850)
+#define MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x929C8B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UILevelResultProgressRowWidgetController_TypeDefinitionIndex = 67915;
+
+	class UILevelResultProgressRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_809B068491AD1EEA_9* _view; // 0x2A0
+		::System::Single _maxProgressValue; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::Class_1_2A09C8C0CD4D6ED4_1* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_2A09C8C0CD4D6ED4_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, data);
+		}
+
+		::System::Void OnProgress(::System::Single progress)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER_ONPROGRESS_OFFSET))(this, progress);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UILEVELRESULTPROGRESSROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

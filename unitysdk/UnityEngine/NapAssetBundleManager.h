@@ -1,0 +1,127 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/NapResourceFileType.h"
+
+namespace System { class String; }
+namespace UnityEngine { class AssetBundle; }
+namespace UnityEngine { class AssetBundleCreateRequest; }
+namespace UnityEngine { class NapAssetBundleIndexAsset; }
+
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_CLEARALLNAPBLOCKLOCATIONCACHE_OFFSET UNITYSDK_OFFSET(0x1B13B960)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_CLEARNAPBLOCKLOCATIONCACHE_OFFSET UNITYSDK_OFFSET(0x1B13B970)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_GETALLLOADEDBLOCKPATHS_OFFSET UNITYSDK_OFFSET(0x1B13B9E0)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_GETALLLOADEDBUNDLEHASHES_OFFSET UNITYSDK_OFFSET(0x1B13B9F0)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_GETLOADEDBUNDLE_OFFSET UNITYSDK_OFFSET(0x1B13B990)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_GETLOGGINGCOSTTIME_OFFSET UNITYSDK_OFFSET(0x1B13BA50)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_GETLOGGINGSUPPORT_OFFSET UNITYSDK_OFFSET(0x1B13BA30)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_ISASSETLOADDONE_OFFSET UNITYSDK_OFFSET(0x1B13B9B0)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_LOADASSETASYNC_OFFSET UNITYSDK_OFFSET(0x1B13B9A0)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_LOADASSET_OFFSET UNITYSDK_OFFSET(0x1B13B980)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_SETENABLEDELAYUNLOAD_OFFSET UNITYSDK_OFFSET(0x1B13BA10)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_SETLOGGINGCOSTTIME_OFFSET UNITYSDK_OFFSET(0x1B13BA40)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_SETLOGGINGSUPPORT_OFFSET UNITYSDK_OFFSET(0x1B13BA20)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_SETNAPASSETBUNDLEINDEXASSET_OFFSET UNITYSDK_OFFSET(0x1B13B950)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_SYNCLOAD_OFFSET UNITYSDK_OFFSET(0x1B13B9D0)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_UNLOADASSET_OFFSET UNITYSDK_OFFSET(0x1B13B9C0)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER_UPDATE_OFFSET UNITYSDK_OFFSET(0x1B13BA00)
+#define UNITYENGINE_NAPASSETBUNDLEMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B13BA60)
+
+namespace UnityEngine
+{
+	inline static constexpr unsigned int NapAssetBundleManager_TypeDefinitionIndex = 7599;
+
+	class NapAssetBundleManager : public ::System::Object
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void SetNapAssetBundleIndexAsset(::UnityEngine::NapAssetBundleIndexAsset* asset)
+		{
+			return ((::System::Void(*)(::UnityEngine::NapAssetBundleIndexAsset*))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_SETNAPASSETBUNDLEINDEXASSET_OFFSET))(asset);
+		}
+
+		static ::System::Void ClearAllNapBlockLocationCache()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_CLEARALLNAPBLOCKLOCATIONCACHE_OFFSET))();
+		}
+
+		static ::System::Void ClearNapBlockLocationCache(::UnityEngine::NapResourceFileType type)
+		{
+			return ((::System::Void(*)(::UnityEngine::NapResourceFileType))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_CLEARNAPBLOCKLOCATIONCACHE_OFFSET))(type);
+		}
+
+		static ::UnityEngine::AssetBundle* LoadAsset(::System::UInt64 fileHash)
+		{
+			return ((::UnityEngine::AssetBundle*(*)(::System::UInt64))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_LOADASSET_OFFSET))(fileHash);
+		}
+
+		static ::UnityEngine::AssetBundle* GetLoadedBundle(::System::UInt64 fileHash)
+		{
+			return ((::UnityEngine::AssetBundle*(*)(::System::UInt64))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_GETLOADEDBUNDLE_OFFSET))(fileHash);
+		}
+
+		static ::UnityEngine::AssetBundleCreateRequest* LoadAssetAsync(::System::UInt64 fileHash)
+		{
+			return ((::UnityEngine::AssetBundleCreateRequest*(*)(::System::UInt64))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_LOADASSETASYNC_OFFSET))(fileHash);
+		}
+
+		static ::System::Boolean IsAssetLoadDone(::System::UInt64 fileHash)
+		{
+			return ((::System::Boolean(*)(::System::UInt64))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_ISASSETLOADDONE_OFFSET))(fileHash);
+		}
+
+		static ::System::Void UnloadAsset(::System::UInt64 fileHash)
+		{
+			return ((::System::Void(*)(::System::UInt64))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_UNLOADASSET_OFFSET))(fileHash);
+		}
+
+		static ::System::Void SyncLoad(::System::UInt64 fileHash)
+		{
+			return ((::System::Void(*)(::System::UInt64))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_SYNCLOAD_OFFSET))(fileHash);
+		}
+
+		static ::Il2CppArray<::System::String*>* GetAllLoadedBlockPaths()
+		{
+			return ((::Il2CppArray<::System::String*>*(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_GETALLLOADEDBLOCKPATHS_OFFSET))();
+		}
+
+		static ::Il2CppArray<::System::UInt64>* GetAllLoadedBundleHashes()
+		{
+			return ((::Il2CppArray<::System::UInt64>*(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_GETALLLOADEDBUNDLEHASHES_OFFSET))();
+		}
+
+		static ::System::Void Update()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_UPDATE_OFFSET))();
+		}
+
+		static ::System::Void SetEnableDelayUnload(::System::Boolean enable, ::System::Boolean byFrame)
+		{
+			return ((::System::Void(*)(::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_SETENABLEDELAYUNLOAD_OFFSET))(enable, byFrame);
+		}
+
+		static ::System::Void SetLoggingSupport(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_SETLOGGINGSUPPORT_OFFSET))(enable);
+		}
+
+		static ::System::Boolean GetLoggingSupport()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_GETLOGGINGSUPPORT_OFFSET))();
+		}
+
+		static ::System::Void SetLoggingCostTime(::System::UInt64 costTime)
+		{
+			return ((::System::Void(*)(::System::UInt64))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_SETLOGGINGCOSTTIME_OFFSET))(costTime);
+		}
+
+		static ::System::UInt64 GetLoggingCostTime()
+		{
+			return ((::System::UInt64(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_NAPASSETBUNDLEMANAGER_GETLOGGINGCOSTTIME_OFFSET))();
+		}
+	};
+}

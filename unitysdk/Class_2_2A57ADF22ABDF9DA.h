@@ -1,0 +1,405 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_1EB8C469AAE7B7DE.h"
+#include "unitysdk/Enum_3_5474F8DF52FEA038_1.h"
+#include "unitysdk/Enum_3_B69BA0083A3805BA.h"
+#include "unitysdk/Enum_3_F79C6DF0C4626429.h"
+#include "unitysdk/MoleMole/MusicGame/ELiveHouseTrackHeadEmojiType.h"
+#include "unitysdk/MoleMole/MusicGame/FLiveHouseTrackHeadEmojiData.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+#include "unitysdk/Struct_2_78C3A5C6AA4E3DF0.h"
+#include "unitysdk/Struct_2_FFBC003CFBB61A74.h"
+
+class Class_1_68541BF67D60A62B;
+class Class_2_9E3E3CDA608A4F58;
+class Class_2_A8F5ABF31E066ED4;
+class Class_2_E87F1D15F1D4AC72;
+namespace MoleMole { class UIHouseRhythmResultInfoWidgetController; }
+namespace MoleMole { class UILiveHouseInGameTrackResultWidgetController_Context; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class HashSet_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class RectTransform; }
+namespace UnityEngine { class Transform; }
+namespace UnityEngine::UI::Extension { class UILocalizationText; }
+template <typename T> class Class_0_16E4307DCC419505_103;
+
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_00BC2EB3054EA36A_OFFSET UNITYSDK_OFFSET(0x7BC4370)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_021DD58E505A98F1_OFFSET UNITYSDK_OFFSET(0x7BC4270)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_1832E29FF208A65E_OFFSET UNITYSDK_OFFSET(0x7BC3AE0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_1DC66375F15E73A5_OFFSET UNITYSDK_OFFSET(0x7BC4740)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_2F7D79858AF5CD28_OFFSET UNITYSDK_OFFSET(0x7BC4520)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_33ACA6CB2ABC73F7_OFFSET UNITYSDK_OFFSET(0x7BC2F10)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_3CA1FD51FB2197A9_1_OFFSET UNITYSDK_OFFSET(0x7BC5610)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_3CA1FD51FB2197A9_OFFSET UNITYSDK_OFFSET(0x7BC4030)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_3FBBB74904D19DF4_OFFSET UNITYSDK_OFFSET(0x7BC4ED0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_43A46E5F9FAC62B8_1_OFFSET UNITYSDK_OFFSET(0x7BC4350)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_43A46E5F9FAC62B8_2_OFFSET UNITYSDK_OFFSET(0x7BC4510)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_43A46E5F9FAC62B8_3_OFFSET UNITYSDK_OFFSET(0x7BC5430)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_43A46E5F9FAC62B8_OFFSET UNITYSDK_OFFSET(0x7BC38A0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_4D10873DB5CC58E4_OFFSET UNITYSDK_OFFSET(0x7BC5460)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_4D71BCFB74C16073_OFFSET UNITYSDK_OFFSET(0x7BC5420)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_4D817AAC887C5413_OFFSET UNITYSDK_OFFSET(0x7BC3F90)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_5790A55946AA509D_OFFSET UNITYSDK_OFFSET(0x7BC5440)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_58BA0C8308C8127F_1_OFFSET UNITYSDK_OFFSET(0x7BC5130)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_58BA0C8308C8127F_2_OFFSET UNITYSDK_OFFSET(0x7BC5150)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_58BA0C8308C8127F_3_OFFSET UNITYSDK_OFFSET(0x7BC5170)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_58BA0C8308C8127F_OFFSET UNITYSDK_OFFSET(0x7BC4360)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_5F08B426ADF31FF5_OFFSET UNITYSDK_OFFSET(0x7BC52B0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_669CABF5293E2465_OFFSET UNITYSDK_OFFSET(0x7BC20C0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_69FAD2F9E8A43CC3_1_OFFSET UNITYSDK_OFFSET(0x7BC5470)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_69FAD2F9E8A43CC3_OFFSET UNITYSDK_OFFSET(0x7BC5140)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_6A3AD666D3CC56B6_OFFSET UNITYSDK_OFFSET(0x7BC3120)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_6AFEEC31DD72EB43_OFFSET UNITYSDK_OFFSET(0x7BC31A0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_6BCEDD4814D8A8D9_OFFSET UNITYSDK_OFFSET(0x7BC4B50)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_73147E571292E3F1_OFFSET UNITYSDK_OFFSET(0x7BC38B0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_7AB2C887EB34984A_OFFSET UNITYSDK_OFFSET(0x7BC40A0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_8804ACC14C54E5AD_OFFSET UNITYSDK_OFFSET(0x7BC3F80)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_89EF21CA0414B145_OFFSET UNITYSDK_OFFSET(0x7BC50C0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_978DEB991218B150_1_OFFSET UNITYSDK_OFFSET(0x7BC3890)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_978DEB991218B150_OFFSET UNITYSDK_OFFSET(0x7BC3130)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_9CA5A80F6B5B9E01_OFFSET UNITYSDK_OFFSET(0x7BC49A0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_A08DEEEE1A01931E_OFFSET UNITYSDK_OFFSET(0x7BC4190)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_A652AE866D2B96EC_OFFSET UNITYSDK_OFFSET(0x7BC4C90)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_B1936CE4DA97AA45_OFFSET UNITYSDK_OFFSET(0x7BC2E60)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_B26CE4DFFCFFA38A_OFFSET UNITYSDK_OFFSET(0x7BC3D50)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_BF622B900A7F3625_OFFSET UNITYSDK_OFFSET(0x7BC2C10)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_BFB8A9EC107A5B24_OFFSET UNITYSDK_OFFSET(0x7BC5770)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_C47A61DDA4747C86_OFFSET UNITYSDK_OFFSET(0x7BC3A10)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x7BC55B0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_CA373AA1C7054598_2_OFFSET UNITYSDK_OFFSET(0x7BC5680)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x7BC3140)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_D24C4294507BECB4_OFFSET UNITYSDK_OFFSET(0x7BC49B0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_D33F8087E6D98A2B_OFFSET UNITYSDK_OFFSET(0x7BC5160)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_DC715239B8B98D9C_OFFSET UNITYSDK_OFFSET(0x7BC5480)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_DD784213055292FB_OFFSET UNITYSDK_OFFSET(0x7BC3CC0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_DF2D8F3FCA9DFD06_OFFSET UNITYSDK_OFFSET(0x7BC4340)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_E21AC6EE08DC160A_OFFSET UNITYSDK_OFFSET(0x7BC3990)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_E618CAE269035ACD_OFFSET UNITYSDK_OFFSET(0x7BC37A0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_EEA88B9CB62D5FEB_OFFSET UNITYSDK_OFFSET(0x7BC56E0)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_F045B4FBEDB6C4C5_OFFSET UNITYSDK_OFFSET(0x7BC3670)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_F7300E87EC49A206_OFFSET UNITYSDK_OFFSET(0x7BC5180)
+#define CLASS_2_2A57ADF22ABDF9DA_METHOD_2_FE15D675D6BCA32D_OFFSET UNITYSDK_OFFSET(0x7BC4880)
+#define CLASS_2_2A57ADF22ABDF9DA__CTOR_OFFSET UNITYSDK_OFFSET(0x7BC3000)
+
+inline static constexpr unsigned int Class_2_2A57ADF22ABDF9DA_TypeDefinitionIndex = 50875;
+
+class Class_2_2A57ADF22ABDF9DA : public ::Class_1_1EB8C469AAE7B7DE
+{
+public:
+	// static const ::System::String* Field_2_3; // 0x0
+	// static const ::System::String* Field_2_4; // 0x0
+	// static const ::System::String* Field_2_5; // 0x0
+	// static const ::System::String* Field_2_8; // 0x0
+	// static const ::System::String* Field_2_9; // 0x0
+	// static const ::System::String* Field_2_10; // 0x0
+	// static const ::System::String* Field_2_25; // 0x0
+	// static const ::System::String* Field_2_26; // 0x0
+	::UnityEngine::RectTransform* Field_2_15; // 0x50
+	::UnityEngine::Transform* Field_2_14; // 0x58
+	::UnityEngine::GameObject* Field_2_19; // 0x60
+	::Class_1_68541BF67D60A62B* Field_2_21; // 0x68
+	::System::Collections::Generic::HashSet_1<::System::Int32>* Field_2_7; // 0x70
+	::UnityEngine::RectTransform* Field_2_18; // 0x78
+	::Class_2_A8F5ABF31E066ED4* Field_2_13; // 0x80
+	::MoleMole::UIHouseRhythmResultInfoWidgetController* Field_2_22; // 0x88
+	::Class_0_16E4307DCC419505_103<::MoleMole::UILiveHouseInGameTrackResultWidgetController_Context*>* Field_2_24; // 0x90
+	::MoleMole::MusicGame::FLiveHouseTrackHeadEmojiData Field_2_1; // 0x98
+	::System::String* Field_2_11; // 0xB0
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_20; // 0xB8
+	::Class_2_9E3E3CDA608A4F58* Field_2_17; // 0xC0
+	::System::String* Field_2_6; // 0xC8
+	::Class_2_A8F5ABF31E066ED4* Field_2_12; // 0xD0
+	::Class_2_9E3E3CDA608A4F58* Field_2_16; // 0xD8
+	::System::Int32 Field_2_23; // 0xE0
+	::MoleMole::MusicGame::ELiveHouseTrackHeadEmojiType Field_2_0; // 0xE4
+	::System::Int32 Field_2_2; // 0xE8
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_669CABF5293E2465(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_669CABF5293E2465_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_BF622B900A7F3625()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_BF622B900A7F3625_OFFSET))(this);
+	}
+
+	::System::Void Method_2_B1936CE4DA97AA45()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_B1936CE4DA97AA45_OFFSET))(this);
+	}
+
+	::System::Void Method_2_33ACA6CB2ABC73F7()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_33ACA6CB2ABC73F7_OFFSET))(this);
+	}
+
+	::UnityEngine::UI::Extension::UILocalizationText* Method_2_6A3AD666D3CC56B6()
+	{
+		return ((::UnityEngine::UI::Extension::UILocalizationText*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_6A3AD666D3CC56B6_OFFSET))(this);
+	}
+
+	::UnityEngine::RectTransform* Method_2_978DEB991218B150()
+	{
+		return ((::UnityEngine::RectTransform*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_978DEB991218B150_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_2_6AFEEC31DD72EB43(::System::Int32 a1, ::MoleMole::MusicGame::ELiveHouseTrackHeadEmojiType a2, ::System::Boolean a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32, ::MoleMole::MusicGame::ELiveHouseTrackHeadEmojiType, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_6AFEEC31DD72EB43_OFFSET))(this, a1, a2, a3);
+	}
+
+	::UnityEngine::RectTransform* Method_2_978DEB991218B150_1()
+	{
+		return ((::UnityEngine::RectTransform*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_978DEB991218B150_1_OFFSET))(this);
+	}
+
+	::Class_2_9E3E3CDA608A4F58* Method_2_43A46E5F9FAC62B8()
+	{
+		return ((::Class_2_9E3E3CDA608A4F58*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_43A46E5F9FAC62B8_OFFSET))(this);
+	}
+
+	::System::Void Method_2_73147E571292E3F1(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_73147E571292E3F1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_DD784213055292FB()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_DD784213055292FB_OFFSET))(this);
+	}
+
+	::Class_0_16E4307DCC419505_103<::MoleMole::UILiveHouseInGameTrackResultWidgetController_Context*>* Method_2_8804ACC14C54E5AD()
+	{
+		return ((::Class_0_16E4307DCC419505_103<::MoleMole::UILiveHouseInGameTrackResultWidgetController_Context*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_8804ACC14C54E5AD_OFFSET))(this);
+	}
+
+	::System::Void Method_2_B26CE4DFFCFFA38A(::System::String* a1, ::System::Boolean a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_B26CE4DFFCFFA38A_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_4D817AAC887C5413(::System::EventArgs* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_4D817AAC887C5413_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_3CA1FD51FB2197A9(::System::EventArgs* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_3CA1FD51FB2197A9_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_A08DEEEE1A01931E(::Struct_2_78C3A5C6AA4E3DF0 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_78C3A5C6AA4E3DF0))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_A08DEEEE1A01931E_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_DF2D8F3FCA9DFD06(::Class_0_16E4307DCC419505_103<::MoleMole::UILiveHouseInGameTrackResultWidgetController_Context*>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_103<::MoleMole::UILiveHouseInGameTrackResultWidgetController_Context*>*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_DF2D8F3FCA9DFD06_OFFSET))(this, a1);
+	}
+
+	::Class_2_9E3E3CDA608A4F58* Method_2_43A46E5F9FAC62B8_1()
+	{
+		return ((::Class_2_9E3E3CDA608A4F58*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_43A46E5F9FAC62B8_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_58BA0C8308C8127F(::Class_2_A8F5ABF31E066ED4* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_A8F5ABF31E066ED4*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_58BA0C8308C8127F_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Method_2_00BC2EB3054EA36A(::Struct_2_FFBC003CFBB61A74 a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Struct_2_FFBC003CFBB61A74))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_00BC2EB3054EA36A_OFFSET))(this, a1);
+	}
+
+	::Class_2_A8F5ABF31E066ED4* Method_2_43A46E5F9FAC62B8_2()
+	{
+		return ((::Class_2_A8F5ABF31E066ED4*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_43A46E5F9FAC62B8_2_OFFSET))(this);
+	}
+
+	::System::Void Method_2_2F7D79858AF5CD28(::System::EventArgs* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_2F7D79858AF5CD28_OFFSET))(this, a1);
+	}
+
+	::MoleMole::MusicGame::FLiveHouseTrackHeadEmojiData Method_2_FE15D675D6BCA32D(::System::Collections::Generic::List_1<::MoleMole::MusicGame::FLiveHouseTrackHeadEmojiData>* a1)
+	{
+		return ((::MoleMole::MusicGame::FLiveHouseTrackHeadEmojiData(*)(::PVOID, ::System::Collections::Generic::List_1<::MoleMole::MusicGame::FLiveHouseTrackHeadEmojiData>*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_FE15D675D6BCA32D_OFFSET))(this, a1);
+	}
+
+	::UnityEngine::GameObject* Method_2_9CA5A80F6B5B9E01()
+	{
+		return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_9CA5A80F6B5B9E01_OFFSET))(this);
+	}
+
+	::System::Void Method_2_D24C4294507BECB4(::Struct_2_FFBC003CFBB61A74 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_FFBC003CFBB61A74))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_D24C4294507BECB4_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_E618CAE269035ACD(::MoleMole::MusicGame::ELiveHouseTrackHeadEmojiType a1, ::MoleMole::MusicGame::ELiveHouseTrackHeadEmojiType a2, ::System::Boolean a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::MusicGame::ELiveHouseTrackHeadEmojiType, ::MoleMole::MusicGame::ELiveHouseTrackHeadEmojiType, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_E618CAE269035ACD_OFFSET))(this, a1, a2, a3);
+	}
+
+	::System::Void Method_2_7AB2C887EB34984A(::System::Boolean a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_7AB2C887EB34984A_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_3FBBB74904D19DF4(::Enum_3_B69BA0083A3805BA a1, ::System::Int32 a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Enum_3_B69BA0083A3805BA, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_3FBBB74904D19DF4_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_89EF21CA0414B145()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_89EF21CA0414B145_OFFSET))(this);
+	}
+
+	::System::Void Method_2_58BA0C8308C8127F_1(::Class_2_9E3E3CDA608A4F58* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_9E3E3CDA608A4F58*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_58BA0C8308C8127F_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_69FAD2F9E8A43CC3(::UnityEngine::RectTransform* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::RectTransform*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_69FAD2F9E8A43CC3_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_58BA0C8308C8127F_2(::Class_2_A8F5ABF31E066ED4* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_A8F5ABF31E066ED4*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_58BA0C8308C8127F_2_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_D33F8087E6D98A2B(::UnityEngine::UI::Extension::UILocalizationText* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UILocalizationText*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_D33F8087E6D98A2B_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_A652AE866D2B96EC(::System::String* a1, ::System::Action* a2, ::System::Boolean a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Action*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_A652AE866D2B96EC_OFFSET))(this, a1, a2, a3);
+	}
+
+	::System::Void Method_2_E21AC6EE08DC160A()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_E21AC6EE08DC160A_OFFSET))(this);
+	}
+
+	::System::Void Method_2_58BA0C8308C8127F_3(::Class_2_9E3E3CDA608A4F58* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_9E3E3CDA608A4F58*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_58BA0C8308C8127F_3_OFFSET))(this, a1);
+	}
+
+	::MoleMole::MusicGame::FLiveHouseTrackHeadEmojiData Method_2_F045B4FBEDB6C4C5(::System::Int32 a1, ::MoleMole::MusicGame::ELiveHouseTrackHeadEmojiType a2)
+	{
+		return ((::MoleMole::MusicGame::FLiveHouseTrackHeadEmojiData(*)(::PVOID, ::System::Int32, ::MoleMole::MusicGame::ELiveHouseTrackHeadEmojiType))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_F045B4FBEDB6C4C5_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_F7300E87EC49A206()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_F7300E87EC49A206_OFFSET))(this);
+	}
+
+	::System::Void Method_2_1832E29FF208A65E(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_1832E29FF208A65E_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_5F08B426ADF31FF5()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_5F08B426ADF31FF5_OFFSET))(this);
+	}
+
+	::System::Void Method_2_C47A61DDA4747C86(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_C47A61DDA4747C86_OFFSET))(this, a1);
+	}
+
+	::UnityEngine::Transform* Method_2_4D71BCFB74C16073()
+	{
+		return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_4D71BCFB74C16073_OFFSET))(this);
+	}
+
+	::Class_2_A8F5ABF31E066ED4* Method_2_43A46E5F9FAC62B8_3()
+	{
+		return ((::Class_2_A8F5ABF31E066ED4*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_43A46E5F9FAC62B8_3_OFFSET))(this);
+	}
+
+	::System::Void Method_2_5790A55946AA509D()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_5790A55946AA509D_OFFSET))(this);
+	}
+
+	::System::Void Method_2_4D10873DB5CC58E4(::UnityEngine::GameObject* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_4D10873DB5CC58E4_OFFSET))(this, a1);
+	}
+
+	::System::Int32 Method_2_1DC66375F15E73A5()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_1DC66375F15E73A5_OFFSET))(this);
+	}
+
+	::System::Void Method_2_69FAD2F9E8A43CC3_1(::UnityEngine::RectTransform* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::RectTransform*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_69FAD2F9E8A43CC3_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_DC715239B8B98D9C()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_DC715239B8B98D9C_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_3CA1FD51FB2197A9_1(::System::EventArgs* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_3CA1FD51FB2197A9_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_6BCEDD4814D8A8D9(::Struct_2_FFBC003CFBB61A74 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_FFBC003CFBB61A74))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_6BCEDD4814D8A8D9_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_2()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_CA373AA1C7054598_2_OFFSET))(this);
+	}
+
+	::System::Void Method_2_EEA88B9CB62D5FEB(::Enum_3_F79C6DF0C4626429 a1, ::System::Int32 a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Enum_3_F79C6DF0C4626429, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_EEA88B9CB62D5FEB_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_021DD58E505A98F1(::System::Int32 a1, ::Enum_3_5474F8DF52FEA038_1 a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32, ::Enum_3_5474F8DF52FEA038_1))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_021DD58E505A98F1_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_BFB8A9EC107A5B24(::UnityEngine::Transform* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + CLASS_2_2A57ADF22ABDF9DA_METHOD_2_BFB8A9EC107A5B24_OFFSET))(this, a1);
+	}
+};

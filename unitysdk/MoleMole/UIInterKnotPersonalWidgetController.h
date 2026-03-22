@@ -1,0 +1,111 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_7BEEB90214042948_19;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_BINDCALLBACK_OFFSET UNITYSDK_OFFSET(0x80BEAC0)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x80BE450)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x80BE4F0)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x80BE260)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x80BE3A0)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_REFRESHPROFILEIMAGE_OFFSET UNITYSDK_OFFSET(0x80BE640)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x80BE5D0)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_REFRESHWORLDLEVEL_OFFSET UNITYSDK_OFFSET(0x80BE800)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x80BEC50)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET UNITYSDK_OFFSET(0x80BEC80)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER__ONUIINIT_B__1_1_OFFSET UNITYSDK_OFFSET(0x80BEC90)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x80BECA0)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x80BED10)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x80BED90)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x80BEDF0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInterKnotPersonalWidgetController_TypeDefinitionIndex = 77367;
+
+	class UIInterKnotPersonalWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_7BEEB90214042948_19* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void BindCallback(::System::Action* action)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_BINDCALLBACK_OFFSET))(this, action);
+		}
+
+		::System::Void RefreshWorldLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_REFRESHWORLDLEVEL_OFFSET))(this);
+		}
+
+		::System::Void RefreshProfileImage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER_REFRESHPROFILEIMAGE_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__1_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET))(this, args);
+		}
+
+		::System::Void _OnUIInit_b__1_1(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER__ONUIINIT_B__1_1_OFFSET))(this, args);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

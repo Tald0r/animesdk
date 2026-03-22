@@ -8,26 +8,26 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x81E3CE0)
-#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x81E51A0)
-#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x81E5200)
-#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x81E51B0)
-#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x81E3CD0)
-#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106__CTOR_OFFSET UNITYSDK_OFFSET(0x81E1870)
+#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x18E1D870)
+#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x18E1DAD0)
+#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x18E1DB30)
+#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x18E1DAE0)
+#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18E1D860)
+#define MIHOYO_SDK_MIHOYOSDKSERVER__GET_D__106__CTOR_OFFSET UNITYSDK_OFFSET(0x18E1D850)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int MiHoYoSDKServer__Get_d__106_TypeDefinitionIndex = 36158;
+	inline static constexpr unsigned int MiHoYoSDKServer__Get_d__106_TypeDefinitionIndex = 33643;
 
 	class MiHoYoSDKServer__Get_d__106 : public ::System::Object
 	{
 	public:
-		::System::Object* __2__current; // 0x10
-		::MiHoYo::SDK::MiHoYoSDKServer* __4__this; // 0x18
-		::System::String* requestUrl; // 0x20
-		::System::Action* timeoutCallback; // 0x28
-		::MiHoYo::SDK::JSONObject* query; // 0x30
-		::System::Action_1<::System::String*>* callback; // 0x38
+		::System::String* requestUrl; // 0x10
+		::System::Action* timeoutCallback; // 0x18
+		::MiHoYo::SDK::JSONObject* query; // 0x20
+		::MiHoYo::SDK::MiHoYoSDKServer* __4__this; // 0x28
+		::System::Action_1<::System::String*>* callback; // 0x30
+		::System::Object* __2__current; // 0x38
 		::System::Single timeoutSecond; // 0x40
 		::System::Int32 retryTime; // 0x44
 		::System::Int32 __1__state; // 0x48

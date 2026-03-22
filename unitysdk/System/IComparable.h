@@ -5,7 +5,7 @@ namespace System { class Object; }
 
 namespace System
 {
-	inline static constexpr unsigned int IComparable_TypeDefinitionIndex = 275;
+	inline static constexpr unsigned int IComparable_TypeDefinitionIndex = 262;
 
 	class IComparable
 	{

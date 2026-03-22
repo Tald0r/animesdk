@@ -1,0 +1,38 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/NodeCanvas/Framework/ConditionTask.h"
+
+namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
+namespace System { class String; }
+namespace UnityEngine { class Object; }
+
+#define NODECANVAS_TASKS_CONDITIONS_CHECKUNITYOBJECT_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19A0D2B0)
+#define NODECANVAS_TASKS_CONDITIONS_CHECKUNITYOBJECT_ONCHECK_OFFSET UNITYSDK_OFFSET(0x19A0D2F0)
+#define NODECANVAS_TASKS_CONDITIONS_CHECKUNITYOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x19A0D410)
+
+namespace NodeCanvas::Tasks::Conditions
+{
+	inline static constexpr unsigned int CheckUnityObject_TypeDefinitionIndex = 26182;
+
+	class CheckUnityObject : public ::NodeCanvas::Framework::ConditionTask
+	{
+	public:
+		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::Object*>* valueA; // 0x60
+		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::Object*>* valueB; // 0x68
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NODECANVAS_TASKS_CONDITIONS_CHECKUNITYOBJECT__CTOR_OFFSET))(this);
+		}
+
+		::System::String* get_info()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + NODECANVAS_TASKS_CONDITIONS_CHECKUNITYOBJECT_GET_INFO_OFFSET))(this);
+		}
+
+		::System::Boolean OnCheck()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + NODECANVAS_TASKS_CONDITIONS_CHECKUNITYOBJECT_ONCHECK_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,43 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_7ECB9691B142D586;
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIHOLLOWJOYSTICKMODEPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAA2A160)
+#define MOLEMOLE_UIHOLLOWJOYSTICKMODEPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAA2A1A0)
+#define MOLEMOLE_UIHOLLOWJOYSTICKMODEPOPWINDOWCONTROLLER___C__ONBTNCLICKED_B__8_0_OFFSET UNITYSDK_OFFSET(0xAA2A1B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowJoystickModePopWindowController___c_TypeDefinitionIndex = 40508;
+
+	class UIHollowJoystickModePopWindowController___c : public ::System::Object
+	{
+	public:
+		static ::System::Action_1<::Class_1_7ECB9691B142D586*>** StaticGet___9__8_0()
+		{
+			return (::System::Action_1<::Class_1_7ECB9691B142D586*>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowJoystickModePopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34A90);
+		}
+		static ::MoleMole::UIHollowJoystickModePopWindowController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIHollowJoystickModePopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowJoystickModePopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34A98);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWJOYSTICKMODEPOPWINDOWCONTROLLER___C__CCTOR_OFFSET))();
+		}
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWJOYSTICKMODEPOPWINDOWCONTROLLER___C__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _OnBtnClicked_b__8_0(::Class_1_7ECB9691B142D586* vp)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7ECB9691B142D586*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWJOYSTICKMODEPOPWINDOWCONTROLLER___C__ONBTNCLICKED_B__8_0_OFFSET))(this, vp);
+		}
+	};
+}

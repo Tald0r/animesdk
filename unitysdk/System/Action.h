@@ -6,14 +6,14 @@ namespace System { class AsyncCallback; }
 namespace System { class IAsyncResult; }
 namespace System { class Object; }
 
-#define SYSTEM_ACTION_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x15AF2590)
-#define SYSTEM_ACTION_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x15AF25C0)
-#define SYSTEM_ACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x15AF21C0)
-#define SYSTEM_ACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15AF21A0)
+#define SYSTEM_ACTION_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x1912D610)
+#define SYSTEM_ACTION_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x1912D640)
+#define SYSTEM_ACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x1912D370)
+#define SYSTEM_ACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1912D360)
 
 namespace System
 {
-	inline static constexpr unsigned int Action_TypeDefinitionIndex = 170;
+	inline static constexpr unsigned int Action_TypeDefinitionIndex = 158;
 
 	class Action : public ::System::MulticastDelegate
 	{

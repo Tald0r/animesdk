@@ -1,0 +1,75 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/BaseUIFlowerShopTaskPageController.h"
+
+class Class_2_208CC9941471731A_157;
+class Class_2_8FCB22336286BF09;
+namespace System { class Object; }
+
+#define MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_ONCLICKGOTOTASKBUTTON_OFFSET UNITYSDK_OFFSET(0x95E8030)
+#define MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_ONOPENPANEL_OFFSET UNITYSDK_OFFSET(0x95E7D60)
+#define MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_ONSHOWITEM_OFFSET UNITYSDK_OFFSET(0x95E7E10)
+#define MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x95E7CD0)
+#define MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_SETDATALIST_OFFSET UNITYSDK_OFFSET(0x95E82E0)
+#define MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_SETVIEW_OFFSET UNITYSDK_OFFSET(0x95E8590)
+#define MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x95E8660)
+#define MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONCLICKGOTOTASKBUTTON_OFFSET UNITYSDK_OFFSET(0x95E8700)
+#define MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x95E8770)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFlowerShopTaskPageController_TypeDefinitionIndex = 60974;
+
+	class UIFlowerShopTaskPageController : public ::MoleMole::BaseUIFlowerShopTaskPageController
+	{
+	public:
+		::Class_2_8FCB22336286BF09* _view; // 0x320
+		::System::Int32 _firstTabLockId; // 0x328
+		::System::Int32 _firstSelectIdOnOpenPanel; // 0x32C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnOpenPanel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_ONOPENPANEL_OFFSET))(this);
+		}
+
+		::System::Void OnShowItem(::Class_2_208CC9941471731A_157* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_157*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_ONSHOWITEM_OFFSET))(this, data);
+		}
+
+		::System::Void OnClickGotoTaskButton(::Class_2_208CC9941471731A_157* currentData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_157*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_ONCLICKGOTOTASKBUTTON_OFFSET))(this, currentData);
+		}
+
+		::System::Void SetDataList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_SETDATALIST_OFFSET))(this);
+		}
+
+		::System::Void SetView(::System::Object* view)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER_SETVIEW_OFFSET))(this, view);
+		}
+
+		::System::Void __base_OnClickGotoTaskButton(::Class_2_208CC9941471731A_157* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_157*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONCLICKGOTOTASKBUTTON_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+	};
+}

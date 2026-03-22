@@ -5,7 +5,7 @@
 
 namespace Mono
 {
-	inline static constexpr unsigned int MonoAssemblyName_TypeDefinitionIndex = 19;
+	inline static constexpr unsigned int MonoAssemblyName_TypeDefinitionIndex = 22;
 
 	struct alignas(8) MonoAssemblyName
 	{

@@ -5,7 +5,7 @@
 
 namespace Mono
 {
-	inline static constexpr unsigned int RuntimeStructs_GenericParamInfo_TypeDefinitionIndex = 15;
+	inline static constexpr unsigned int RuntimeStructs_GenericParamInfo_TypeDefinitionIndex = 18;
 
 	struct alignas(8) RuntimeStructs_GenericParamInfo
 	{

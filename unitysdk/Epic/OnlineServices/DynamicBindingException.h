@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define EPIC_ONLINESERVICES_DYNAMICBINDINGEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x82F37C0)
+#define EPIC_ONLINESERVICES_DYNAMICBINDINGEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x195F2500)
 
 namespace Epic::OnlineServices
 {
-	inline static constexpr unsigned int DynamicBindingException_TypeDefinitionIndex = 34306;
+	inline static constexpr unsigned int DynamicBindingException_TypeDefinitionIndex = 31795;
 
 	class DynamicBindingException : public ::System::Exception
 	{

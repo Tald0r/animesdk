@@ -1,0 +1,216 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00.h"
+#include "unitysdk/Enum_3_4608E37A1B3D374A_1.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+#include "unitysdk/MoleMole/UIHadalZone_RewardV2_PopWindowController_HadalRewardData.h"
+
+class Class_2_468A4FBF2E9F527C;
+class Class_2_62CB6D0A783AD050;
+class Class_3_025FF4981524A424_518;
+class Class_3_E9FF194CA9EF9D04;
+namespace MoleMole { class MonoGamepadCustomList; }
+namespace MoleMole { class MonoGamepadNestedListDelegate; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace MoleMole { class UIRankingImageConfig; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_GETPREFERREDHEIGHT_OFFSET UNITYSDK_OFFSET(0x8C4C230)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_GET_TAKEREWARDACTION_OFFSET UNITYSDK_OFFSET(0x8C4C210)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C4A730)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONITEMGAMEPADSELECT_OFFSET UNITYSDK_OFFSET(0x8C4C290)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONITEMGAMEPADUISUBMIT_OFFSET UNITYSDK_OFFSET(0x8C4C5F0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0x8C4B760)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x8C4A9F0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8C4A980)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C4A8A0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C4A4B0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_REFRESHREWARDITEMS_OFFSET UNITYSDK_OFFSET(0x8C4ACD0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_SET_TAKEREWARDACTION_OFFSET UNITYSDK_OFFSET(0x8C4C220)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__CHECKCOULDTAKENREWARD_OFFSET UNITYSDK_OFFSET(0x8C4B9F0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__CHECKISRATINGREWARDTAKEN_OFFSET UNITYSDK_OFFSET(0x8C4B970)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__CLEARPREVS_OFFSET UNITYSDK_OFFSET(0x8C4B7D0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__CREATEREWARDITEMSCROLL_OFFSET UNITYSDK_OFFSET(0x8C4BBA0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8C4C9D0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__GAMEPAD_CHECKFIRSTOPEN_OFFSET UNITYSDK_OFFSET(0x8C4B570)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__ONSCROLLITEMUPDATE_B__12_0_OFFSET UNITYSDK_OFFSET(0x8C4C9E0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__SETBTNCLICK_OFFSET UNITYSDK_OFFSET(0x8C4BAD0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__TAKEREWARD_OFFSET UNITYSDK_OFFSET(0x8C4BF40)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C4CC90)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET UNITYSDK_OFFSET(0x8C4CD00)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x8C4CD60)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8C4CDE0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C4CDF0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C4CE70)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___SETBTNCLICK_B__17_0_OFFSET UNITYSDK_OFFSET(0x8C4CAA0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___TAKEREWARD_B__20_0_OFFSET UNITYSDK_OFFSET(0x8C4CB70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHadalZone_RewardRowV2_WidgetController_TypeDefinitionIndex = 41647;
+
+	class UIHadalZone_RewardRowV2_WidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_62CB6D0A783AD050* _view; // 0x2D0
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnWidgetController*>* _itemCachedList; // 0x2D8
+		::Class_2_468A4FBF2E9F527C* _hadalZoneModel; // 0x2E0
+		::MoleMole::MonoGamepadNestedListDelegate* _nestedListDelegate; // 0x2E8
+		::MoleMole::MonoGamepadCustomList* _customList; // 0x2F0
+		::System::Boolean _couldTake; // 0x2F8
+		::MoleMole::UIHadalZone_RewardV2_PopWindowController_HadalRewardData _curRatingRowData; // 0x300
+		::MoleMole::UIRankingImageConfig* _uiConfig; // 0x310
+		::System::Action* _TakeRewardAction_k__BackingField; // 0x318
+		::System::Int32 _customIndex; // 0x320
+		::System::Int32 _nestIndex; // 0x324
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Boolean _CheckIsRatingRewardTaken(::System::UInt32 mask, ::Enum_3_4608E37A1B3D374A_1 checkType)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::UInt32, ::Enum_3_4608E37A1B3D374A_1))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__CHECKISRATINGREWARDTAKEN_OFFSET))(this, mask, checkType);
+		}
+
+		::System::Boolean _CheckCouldTakenReward(::Class_3_E9FF194CA9EF9D04* record, ::Enum_3_4608E37A1B3D374A_1 checkType)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_3_E9FF194CA9EF9D04*, ::Enum_3_4608E37A1B3D374A_1))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__CHECKCOULDTAKENREWARD_OFFSET))(this, record, checkType);
+		}
+
+		::System::Void _ClearPrevs()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__CLEARPREVS_OFFSET))(this);
+		}
+
+		::System::Void _SetBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__SETBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void RefreshRewardItems()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_REFRESHREWARDITEMS_OFFSET))(this);
+		}
+
+		::System::Void _CreateRewardItemScroll(::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00 item, ::System::Boolean takenTag)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__CREATEREWARDITEMSCROLL_OFFSET))(this, item, takenTag);
+		}
+
+		::System::Void _TakeReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__TAKEREWARD_OFFSET))(this);
+		}
+
+		::System::Action* get_TakeRewardAction()
+		{
+			return ((::System::Action*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_GET_TAKEREWARDACTION_OFFSET))(this);
+		}
+
+		::System::Void set_TakeRewardAction(::System::Action* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_SET_TAKEREWARDACTION_OFFSET))(this, value);
+		}
+
+		static ::System::Single GetPreferredHeight()
+		{
+			return ((::System::Single(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_GETPREFERREDHEIGHT_OFFSET))();
+		}
+
+		::System::Void OnItemGamepadSelect(::System::Boolean isRight, ::System::Boolean isInit)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONITEMGAMEPADSELECT_OFFSET))(this, isRight, isInit);
+		}
+
+		::System::Void OnItemGamepadUISubmit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER_ONITEMGAMEPADUISUBMIT_OFFSET))(this);
+		}
+
+		::System::Void _Gamepad_CheckFirstOpen()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__GAMEPAD_CHECKFIRSTOPEN_OFFSET))(this);
+		}
+
+		::System::Void _OnScrollItemUpdate_b__12_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER__ONSCROLLITEMUPDATE_B__12_0_OFFSET))(this, args);
+		}
+
+		::System::Void __SetBtnClick_b__17_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___SETBTNCLICK_B__17_0_OFFSET))(this);
+		}
+
+		::System::Void __TakeReward_b__20_0(::Class_3_025FF4981524A424_518* rsp)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_025FF4981524A424_518*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___TAKEREWARD_B__20_0_OFFSET))(this, rsp);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemRecycle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONSCROLLITEMRECYCLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

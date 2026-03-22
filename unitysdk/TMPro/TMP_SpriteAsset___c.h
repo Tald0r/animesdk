@@ -6,29 +6,29 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace TMPro { class TMP_SpriteCharacter; }
 namespace TMPro { class TMP_SpriteGlyph; }
 
-#define TMPRO_TMP_SPRITEASSET___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1812D900)
-#define TMPRO_TMP_SPRITEASSET___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1812D940)
-#define TMPRO_TMP_SPRITEASSET___C__SORTCHARACTERTABLE_B__40_0_OFFSET UNITYSDK_OFFSET(0x1812D970)
-#define TMPRO_TMP_SPRITEASSET___C__SORTGLYPHTABLE_B__39_0_OFFSET UNITYSDK_OFFSET(0x1812D950)
+#define TMPRO_TMP_SPRITEASSET___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AD2F3C0)
+#define TMPRO_TMP_SPRITEASSET___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD2F400)
+#define TMPRO_TMP_SPRITEASSET___C__SORTCHARACTERTABLE_B__41_0_OFFSET UNITYSDK_OFFSET(0x1AD2F430)
+#define TMPRO_TMP_SPRITEASSET___C__SORTGLYPHTABLE_B__40_0_OFFSET UNITYSDK_OFFSET(0x1AD2F410)
 
 namespace TMPro
 {
-	inline static constexpr unsigned int TMP_SpriteAsset___c_TypeDefinitionIndex = 33383;
+	inline static constexpr unsigned int TMP_SpriteAsset___c_TypeDefinitionIndex = 36004;
 
 	class TMP_SpriteAsset___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::TMPro::TMP_SpriteGlyph*, ::System::UInt32>** StaticGet___9__39_0()
+		static ::System::Func_2<::TMPro::TMP_SpriteGlyph*, ::System::UInt32>** StaticGet___9__40_0()
 		{
-			return (::System::Func_2<::TMPro::TMP_SpriteGlyph*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(TMP_SpriteAsset___c_TypeDefinitionIndex)->GetStaticField(0x30860);
+			return (::System::Func_2<::TMPro::TMP_SpriteGlyph*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(TMP_SpriteAsset___c_TypeDefinitionIndex)->GetStaticField(0x26B00);
 		}
-		static ::System::Func_2<::TMPro::TMP_SpriteCharacter*, ::System::UInt32>** StaticGet___9__40_0()
+		static ::System::Func_2<::TMPro::TMP_SpriteCharacter*, ::System::UInt32>** StaticGet___9__41_0()
 		{
-			return (::System::Func_2<::TMPro::TMP_SpriteCharacter*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(TMP_SpriteAsset___c_TypeDefinitionIndex)->GetStaticField(0x30868);
+			return (::System::Func_2<::TMPro::TMP_SpriteCharacter*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(TMP_SpriteAsset___c_TypeDefinitionIndex)->GetStaticField(0x26B08);
 		}
 		static ::TMPro::TMP_SpriteAsset___c** StaticGet___9()
 		{
-			return (::TMPro::TMP_SpriteAsset___c**)Il2CppClass::FromTypeDefinitionIndex(TMP_SpriteAsset___c_TypeDefinitionIndex)->GetStaticField(0x30870);
+			return (::TMPro::TMP_SpriteAsset___c**)Il2CppClass::FromTypeDefinitionIndex(TMP_SpriteAsset___c_TypeDefinitionIndex)->GetStaticField(0x26B10);
 		}
 
 		static ::System::Void _cctor()
@@ -41,14 +41,14 @@ namespace TMPro
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + TMPRO_TMP_SPRITEASSET___C__CTOR_OFFSET))(this);
 		}
 
-		::System::UInt32 _SortGlyphTable_b__39_0(::TMPro::TMP_SpriteGlyph* item)
+		::System::UInt32 _SortGlyphTable_b__40_0(::TMPro::TMP_SpriteGlyph* item)
 		{
-			return ((::System::UInt32(*)(::PVOID, ::TMPro::TMP_SpriteGlyph*))((::PBYTE)hIl2Cpp + TMPRO_TMP_SPRITEASSET___C__SORTGLYPHTABLE_B__39_0_OFFSET))(this, item);
+			return ((::System::UInt32(*)(::PVOID, ::TMPro::TMP_SpriteGlyph*))((::PBYTE)hIl2Cpp + TMPRO_TMP_SPRITEASSET___C__SORTGLYPHTABLE_B__40_0_OFFSET))(this, item);
 		}
 
-		::System::UInt32 _SortCharacterTable_b__40_0(::TMPro::TMP_SpriteCharacter* c)
+		::System::UInt32 _SortCharacterTable_b__41_0(::TMPro::TMP_SpriteCharacter* c)
 		{
-			return ((::System::UInt32(*)(::PVOID, ::TMPro::TMP_SpriteCharacter*))((::PBYTE)hIl2Cpp + TMPRO_TMP_SPRITEASSET___C__SORTCHARACTERTABLE_B__40_0_OFFSET))(this, c);
+			return ((::System::UInt32(*)(::PVOID, ::TMPro::TMP_SpriteCharacter*))((::PBYTE)hIl2Cpp + TMPRO_TMP_SPRITEASSET___C__SORTCHARACTERTABLE_B__41_0_OFFSET))(this, c);
 		}
 	};
 }

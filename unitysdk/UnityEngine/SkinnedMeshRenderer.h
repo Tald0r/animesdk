@@ -1,72 +1,70 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Bounds.h"
-#include "unitysdk/UnityEngine/GfxBufferTarget.h"
+#include "unitysdk/UnityEngine/LoopSubdivSettings.h"
+#include "unitysdk/UnityEngine/Matrix4x4.h"
 #include "unitysdk/UnityEngine/Renderer.h"
+#include "unitysdk/UnityEngine/Rendering/LightProbeUsage.h"
+#include "unitysdk/UnityEngine/Rendering/ShadowCastingMode.h"
 #include "unitysdk/UnityEngine/SkinQuality.h"
-#include "unitysdk/UnityEngine/Vector3.h"
 
+namespace UnityEngine { class Camera; }
+namespace UnityEngine { class LightProbeProxyVolume; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class MaterialPropertyBlock; }
 namespace UnityEngine { class Mesh; }
 namespace UnityEngine { class Transform; }
 
-#define UNITYENGINE_SKINNEDMESHRENDERER_BAKEMESH_OFFSET UNITYSDK_OFFSET(0x182387D0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GETBLENDSHAPEWEIGHT_OFFSET UNITYSDK_OFFSET(0x182387B0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GETLOCALAABB_INJECTED_OFFSET UNITYSDK_OFFSET(0x18238830)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GETLOCALAABB_OFFSET UNITYSDK_OFFSET(0x182387E0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GETMATERIALENABLED_OFFSET UNITYSDK_OFFSET(0x18238A50)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GETPREVIOUSVERTEXBUFFERIDIMPL_OFFSET UNITYSDK_OFFSET(0x182389D0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GETPREVIOUSVERTEXBUFFERID_OFFSET UNITYSDK_OFFSET(0x18238960)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GETVERTEXBUFFERIDIMPL_OFFSET UNITYSDK_OFFSET(0x18238950)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GETVERTEXBUFFERID_OFFSET UNITYSDK_OFFSET(0x182388E0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_BONES_OFFSET UNITYSDK_OFFSET(0x18238750)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_BOUNDEXPANDINGSCALE_INJECTED_OFFSET UNITYSDK_OFFSET(0x18238B90)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_BOUNDEXPANDINGSCALE_OFFSET UNITYSDK_OFFSET(0x18238B40)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_DISABLEGPUSKIN_OFFSET UNITYSDK_OFFSET(0x18238BC0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_ENABLEGPUSKINNINGMAXCOUNT_OFFSET UNITYSDK_OFFSET(0x18238B00)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_ENABLESKINNING_OFFSET UNITYSDK_OFFSET(0x18238A80)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_FORCEMATRIXRECALCULATIONPERRENDER_OFFSET UNITYSDK_OFFSET(0x18238710)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_GPUSKINNINGMAXCOUNT_OFFSET UNITYSDK_OFFSET(0x18238B20)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_LAZYUPDATE_OFFSET UNITYSDK_OFFSET(0x18238AA0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_LOCALBOUNDS_OFFSET UNITYSDK_OFFSET(0x18238860)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_QUALITY_OFFSET UNITYSDK_OFFSET(0x182386D0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_ROOTBONELOCOPTIMIZETHRESHOLD_OFFSET UNITYSDK_OFFSET(0x18238AC0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_ROOTBONE_OFFSET UNITYSDK_OFFSET(0x18238730)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_SHAREDMESH_OFFSET UNITYSDK_OFFSET(0x18238770)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_SKINNEDMOTIONVECTORS_OFFSET UNITYSDK_OFFSET(0x18238790)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_UPDATEWHENOFFSCREEN_OFFSET UNITYSDK_OFFSET(0x182386F0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_USEOPTIMIZEDANIMATIONSKINNINGROOT_OFFSET UNITYSDK_OFFSET(0x18238AE0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_GET_VERTEXBUFFERTARGET_OFFSET UNITYSDK_OFFSET(0x18238A60)
-#define UNITYENGINE_SKINNEDMESHRENDERER_MARKALLSKINNEDMESHVERTEXDIRTY_OFFSET UNITYSDK_OFFSET(0x182389E0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SETBLENDSHAPEWEIGHT_OFFSET UNITYSDK_OFFSET(0x182387C0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SETLOCALAABB_INJECTED_OFFSET UNITYSDK_OFFSET(0x18238850)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SETLOCALAABB_OFFSET UNITYSDK_OFFSET(0x18238840)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SETMATERIALENABLED_OFFSET UNITYSDK_OFFSET(0x18238A40)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SETOVERRIDEBOUNDS_OFFSET UNITYSDK_OFFSET(0x18238A10)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SETOVERRIDEWORLDAABB_INJECTED_OFFSET UNITYSDK_OFFSET(0x18238A00)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SETOVERRIDEWORLDAABB_OFFSET UNITYSDK_OFFSET(0x182389F0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_BONES_OFFSET UNITYSDK_OFFSET(0x18238760)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_BOUNDEXPANDINGSCALE_INJECTED_OFFSET UNITYSDK_OFFSET(0x18238BB0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_BOUNDEXPANDINGSCALE_OFFSET UNITYSDK_OFFSET(0x18238BA0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_DISABLEGPUSKIN_OFFSET UNITYSDK_OFFSET(0x18238BD0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_ENABLEGPUSKINNINGMAXCOUNT_OFFSET UNITYSDK_OFFSET(0x18238B10)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_ENABLESKINNING_OFFSET UNITYSDK_OFFSET(0x18238A90)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_FORCEMATRIXRECALCULATIONPERRENDER_OFFSET UNITYSDK_OFFSET(0x18238720)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_GPUSKINNINGMAXCOUNT_OFFSET UNITYSDK_OFFSET(0x18238B30)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_LAZYUPDATE_OFFSET UNITYSDK_OFFSET(0x18238AB0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_LOCALBOUNDS_OFFSET UNITYSDK_OFFSET(0x182388B0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_QUALITY_OFFSET UNITYSDK_OFFSET(0x182386E0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_ROOTBONELOCOPTIMIZETHRESHOLD_OFFSET UNITYSDK_OFFSET(0x18238AD0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_ROOTBONE_OFFSET UNITYSDK_OFFSET(0x18238740)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_SHAREDMESH_OFFSET UNITYSDK_OFFSET(0x18238780)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_SKINNEDMOTIONVECTORS_OFFSET UNITYSDK_OFFSET(0x182387A0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_UPDATEWHENOFFSCREEN_OFFSET UNITYSDK_OFFSET(0x18238700)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_USEOPTIMIZEDANIMATIONSKINNINGROOT_OFFSET UNITYSDK_OFFSET(0x18238AF0)
-#define UNITYENGINE_SKINNEDMESHRENDERER_SET_VERTEXBUFFERTARGET_OFFSET UNITYSDK_OFFSET(0x18238A70)
-#define UNITYENGINE_SKINNEDMESHRENDERER__CTOR_OFFSET UNITYSDK_OFFSET(0x18238BE0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_ALIGNLODMESH_OFFSET UNITYSDK_OFFSET(0x1A04DA20)
+#define UNITYENGINE_SKINNEDMESHRENDERER_BAKEMESH_OFFSET UNITYSDK_OFFSET(0x1A04D850)
+#define UNITYENGINE_SKINNEDMESHRENDERER_CLEARCACHEDMESHDATA_OFFSET UNITYSDK_OFFSET(0x1A04DA50)
+#define UNITYENGINE_SKINNEDMESHRENDERER_DRAWCACHEDMESH_1_OFFSET UNITYSDK_OFFSET(0x1A04DB10)
+#define UNITYENGINE_SKINNEDMESHRENDERER_DRAWCACHEDMESH_2_OFFSET UNITYSDK_OFFSET(0x1A04DBA0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_DRAWCACHEDMESH_3_OFFSET UNITYSDK_OFFSET(0x1A04DB00)
+#define UNITYENGINE_SKINNEDMESHRENDERER_DRAWCACHEDMESH_INJECTED_OFFSET UNITYSDK_OFFSET(0x1A04DC70)
+#define UNITYENGINE_SKINNEDMESHRENDERER_DRAWCACHEDMESH_OFFSET UNITYSDK_OFFSET(0x1A04DA70)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GETBLENDSHAPEWEIGHT_OFFSET UNITYSDK_OFFSET(0x1A04D830)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GETCACHEDMESH_OFFSET UNITYSDK_OFFSET(0x1A04DA30)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GETISLOOPSUBDIVISIONALLOWED_OFFSET UNITYSDK_OFFSET(0x1A04D8F0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GETLOCALAABB_INJECTED_OFFSET UNITYSDK_OFFSET(0x1A04D8B0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GETLOCALAABB_OFFSET UNITYSDK_OFFSET(0x1A04D860)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GETLOOPSUBDIVSETTINGS_INJECTED_OFFSET UNITYSDK_OFFSET(0x1A04D980)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GETLOOPSUBDIVSETTINGS_OFFSET UNITYSDK_OFFSET(0x1A04D920)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GET_BONES_OFFSET UNITYSDK_OFFSET(0x1A04D7C0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GET_ENABLECOMPACTCOMPUTESKINNINGOUTPUT_OFFSET UNITYSDK_OFFSET(0x1A04D740)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GET_FORCEMATRIXRECALCULATIONPERRENDER_OFFSET UNITYSDK_OFFSET(0x1A04D760)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GET_LOCALBOUNDS_OFFSET UNITYSDK_OFFSET(0x1A04D990)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GET_QUALITY_OFFSET UNITYSDK_OFFSET(0x1A04D700)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GET_ROOTBONE_OFFSET UNITYSDK_OFFSET(0x1A04D7A0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GET_SHAREDMESH_OFFSET UNITYSDK_OFFSET(0x1A04D7E0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GET_SKINNEDMOTIONVECTORS_OFFSET UNITYSDK_OFFSET(0x1A04D800)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GET_SORTINGFUDGE_OFFSET UNITYSDK_OFFSET(0x1A04D780)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GET_UPDATEWHENOFFSCREEN_OFFSET UNITYSDK_OFFSET(0x1A04D720)
+#define UNITYENGINE_SKINNEDMESHRENDERER_GLOBALOVERRIDEENABLECOMPACTCOMPUTESKINNINGOUTPUT_OFFSET UNITYSDK_OFFSET(0x1A04DA10)
+#define UNITYENGINE_SKINNEDMESHRENDERER_RELEASEALLCACHEDMESH_OFFSET UNITYSDK_OFFSET(0x1A04DA60)
+#define UNITYENGINE_SKINNEDMESHRENDERER_RELEASECACHEDMESH_OFFSET UNITYSDK_OFFSET(0x1A04DA40)
+#define UNITYENGINE_SKINNEDMESHRENDERER_RESETMOTIONVECTORSTATE_OFFSET UNITYSDK_OFFSET(0x1A04D820)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SETBLENDSHAPEWEIGHT_OFFSET UNITYSDK_OFFSET(0x1A04D840)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SETISLOOPSUBDIVISIONALLOWED_OFFSET UNITYSDK_OFFSET(0x1A04D8E0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SETLOCALAABB_INJECTED_OFFSET UNITYSDK_OFFSET(0x1A04D8D0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SETLOCALAABB_OFFSET UNITYSDK_OFFSET(0x1A04D8C0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SETLOOPSUBDIVSETTINGS_INJECTED_OFFSET UNITYSDK_OFFSET(0x1A04D910)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SETLOOPSUBDIVSETTINGS_OFFSET UNITYSDK_OFFSET(0x1A04D900)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SET_BONES_OFFSET UNITYSDK_OFFSET(0x1A04D7D0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SET_ENABLECOMPACTCOMPUTESKINNINGOUTPUT_OFFSET UNITYSDK_OFFSET(0x1A04D750)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SET_FORCEMATRIXRECALCULATIONPERRENDER_OFFSET UNITYSDK_OFFSET(0x1A04D770)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SET_LOCALBOUNDS_OFFSET UNITYSDK_OFFSET(0x1A04D9E0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SET_QUALITY_OFFSET UNITYSDK_OFFSET(0x1A04D710)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SET_ROOTBONE_OFFSET UNITYSDK_OFFSET(0x1A04D7B0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SET_SHAREDMESH_OFFSET UNITYSDK_OFFSET(0x1A04D7F0)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SET_SKINNEDMOTIONVECTORS_OFFSET UNITYSDK_OFFSET(0x1A04D810)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SET_SORTINGFUDGE_OFFSET UNITYSDK_OFFSET(0x1A04D790)
+#define UNITYENGINE_SKINNEDMESHRENDERER_SET_UPDATEWHENOFFSCREEN_OFFSET UNITYSDK_OFFSET(0x1A04D730)
+#define UNITYENGINE_SKINNEDMESHRENDERER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A04DC80)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int SkinnedMeshRenderer_TypeDefinitionIndex = 3971;
+	inline static constexpr unsigned int SkinnedMeshRenderer_TypeDefinitionIndex = 5253;
 
 	class SkinnedMeshRenderer : public ::UnityEngine::Renderer
 	{
@@ -96,6 +94,16 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_UPDATEWHENOFFSCREEN_OFFSET))(this, value);
 		}
 
+		::System::Boolean get_enableCompactComputeSkinningOutput()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_ENABLECOMPACTCOMPUTESKINNINGOUTPUT_OFFSET))(this);
+		}
+
+		::System::Void set_enableCompactComputeSkinningOutput(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_ENABLECOMPACTCOMPUTESKINNINGOUTPUT_OFFSET))(this, value);
+		}
+
 		::System::Boolean get_forceMatrixRecalculationPerRender()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_FORCEMATRIXRECALCULATIONPERRENDER_OFFSET))(this);
@@ -104,6 +112,16 @@ namespace UnityEngine
 		::System::Void set_forceMatrixRecalculationPerRender(::System::Boolean value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_FORCEMATRIXRECALCULATIONPERRENDER_OFFSET))(this, value);
+		}
+
+		::System::Single get_sortingFudge()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_SORTINGFUDGE_OFFSET))(this);
+		}
+
+		::System::Void set_sortingFudge(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_SORTINGFUDGE_OFFSET))(this, value);
 		}
 
 		::UnityEngine::Transform* get_rootBone()
@@ -146,6 +164,11 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_SKINNEDMOTIONVECTORS_OFFSET))(this, value);
 		}
 
+		::System::Void ResetMotionVectorState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_RESETMOTIONVECTORSTATE_OFFSET))(this);
+		}
+
 		::System::Single GetBlendShapeWeight(::System::Int32 index)
 		{
 			return ((::System::Single(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GETBLENDSHAPEWEIGHT_OFFSET))(this, index);
@@ -171,6 +194,26 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Bounds))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SETLOCALAABB_OFFSET))(this, b);
 		}
 
+		::System::Void SetIsLoopSubdivisionAllowed(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SETISLOOPSUBDIVISIONALLOWED_OFFSET))(this, value);
+		}
+
+		::System::Boolean GetIsLoopSubdivisionAllowed()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GETISLOOPSUBDIVISIONALLOWED_OFFSET))(this);
+		}
+
+		::System::Void SetLoopSubdivSettings(::UnityEngine::LoopSubdivSettings settings)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::LoopSubdivSettings))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SETLOOPSUBDIVSETTINGS_OFFSET))(this, settings);
+		}
+
+		::UnityEngine::LoopSubdivSettings GetLoopSubdivSettings()
+		{
+			return ((::UnityEngine::LoopSubdivSettings(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GETLOOPSUBDIVSETTINGS_OFFSET))(this);
+		}
+
 		::UnityEngine::Bounds get_localBounds()
 		{
 			return ((::UnityEngine::Bounds(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_LOCALBOUNDS_OFFSET))(this);
@@ -181,139 +224,54 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Bounds))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_LOCALBOUNDS_OFFSET))(this, value);
 		}
 
-		::System::UInt64 GetVertexBufferID()
+		static ::System::Void GlobalOverrideEnableCompactComputeSkinningOutput(::System::Int32 mode)
 		{
-			return ((::System::UInt64(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GETVERTEXBUFFERID_OFFSET))(this);
+			return ((::System::Void(*)(::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GLOBALOVERRIDEENABLECOMPACTCOMPUTESKINNINGOUTPUT_OFFSET))(mode);
 		}
 
-		::System::UInt64 GetPreviousVertexBufferID()
+		static ::System::Boolean AlignLodMesh(::UnityEngine::SkinnedMeshRenderer* rendererLod0, ::UnityEngine::SkinnedMeshRenderer* rendererLod1, ::UnityEngine::SkinnedMeshRenderer* rendererLod2, ::UnityEngine::SkinnedMeshRenderer* rendererLod3, ::UnityEngine::Transform* modelLod0, ::UnityEngine::Transform* modelLod1, ::UnityEngine::Transform* modelLod2, ::UnityEngine::Transform* modelLod3)
 		{
-			return ((::System::UInt64(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GETPREVIOUSVERTEXBUFFERID_OFFSET))(this);
+			return ((::System::Boolean(*)(::UnityEngine::SkinnedMeshRenderer*, ::UnityEngine::SkinnedMeshRenderer*, ::UnityEngine::SkinnedMeshRenderer*, ::UnityEngine::SkinnedMeshRenderer*, ::UnityEngine::Transform*, ::UnityEngine::Transform*, ::UnityEngine::Transform*, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_ALIGNLODMESH_OFFSET))(rendererLod0, rendererLod1, rendererLod2, rendererLod3, modelLod0, modelLod1, modelLod2, modelLod3);
 		}
 
-		::System::UInt64 GetVertexBufferIDImpl()
+		::System::Int32 GetCachedMesh()
 		{
-			return ((::System::UInt64(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GETVERTEXBUFFERIDIMPL_OFFSET))(this);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GETCACHEDMESH_OFFSET))(this);
 		}
 
-		::System::UInt64 GetPreviousVertexBufferIDImpl()
+		::System::Void ReleaseCachedMesh(::System::Int32 index, ::System::Boolean destroyBuffer)
 		{
-			return ((::System::UInt64(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GETPREVIOUSVERTEXBUFFERIDIMPL_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_RELEASECACHEDMESH_OFFSET))(this, index, destroyBuffer);
 		}
 
-		static ::System::Void MarkAllSkinnedMeshVertexDirty()
+		::System::Void ClearCachedMeshData(::System::Int32 meshInstanceID)
 		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_MARKALLSKINNEDMESHVERTEXDIRTY_OFFSET))();
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_CLEARCACHEDMESHDATA_OFFSET))(this, meshInstanceID);
 		}
 
-		::System::Void SetOverrideWorldAABB(::System::Boolean override, ::UnityEngine::Bounds bounds)
+		::System::Void ReleaseAllCachedMesh()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::UnityEngine::Bounds))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SETOVERRIDEWORLDAABB_OFFSET))(this, override, bounds);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_RELEASEALLCACHEDMESH_OFFSET))(this);
 		}
 
-		::System::Void SetOverrideBounds(::System::Boolean override, ::UnityEngine::Bounds bounds)
+		::System::Void DrawCachedMesh(::System::Int32 index, ::UnityEngine::Material* material, ::UnityEngine::Matrix4x4 matrix)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::UnityEngine::Bounds))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SETOVERRIDEBOUNDS_OFFSET))(this, override, bounds);
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Matrix4x4))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_DRAWCACHEDMESH_OFFSET))(this, index, material, matrix);
 		}
 
-		::System::Void SetMaterialEnabled(::System::Int32 index, ::System::Boolean enabled)
+		::System::Void DrawCachedMesh_1(::System::Int32 index, ::UnityEngine::Material* material, ::UnityEngine::Matrix4x4 matrix, ::System::Int32 layer)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SETMATERIALENABLED_OFFSET))(this, index, enabled);
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Matrix4x4, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_DRAWCACHEDMESH_1_OFFSET))(this, index, material, matrix, layer);
 		}
 
-		::System::Boolean GetMaterialEnabled(::System::Int32 index)
+		::System::Void DrawCachedMesh_2(::System::Int32 index, ::UnityEngine::Material* material, ::UnityEngine::Matrix4x4 matrix, ::System::Int32 layer, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Camera* camera, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::UnityEngine::Transform* probeAnchor, ::UnityEngine::Rendering::LightProbeUsage lightProbeUsage, ::UnityEngine::LightProbeProxyVolume* lightProbeProxyVolume)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GETMATERIALENABLED_OFFSET))(this, index);
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::UnityEngine::Material*, ::UnityEngine::Matrix4x4, ::System::Int32, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Camera*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::UnityEngine::Transform*, ::UnityEngine::Rendering::LightProbeUsage, ::UnityEngine::LightProbeProxyVolume*))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_DRAWCACHEDMESH_2_OFFSET))(this, index, material, matrix, layer, properties, camera, castShadows, receiveShadows, probeAnchor, lightProbeUsage, lightProbeProxyVolume);
 		}
 
-		::UnityEngine::GfxBufferTarget get_vertexBufferTarget()
+		::System::Void DrawCachedMesh_3(::System::Int32 index, ::System::Int32 submeshIndex, ::UnityEngine::Matrix4x4 matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::UnityEngine::Camera* camera, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::UnityEngine::Transform* probeAnchor, ::UnityEngine::Rendering::LightProbeUsage lightProbeUsage, ::UnityEngine::LightProbeProxyVolume* lightProbeProxyVolume)
 		{
-			return ((::UnityEngine::GfxBufferTarget(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_VERTEXBUFFERTARGET_OFFSET))(this);
-		}
-
-		::System::Void set_vertexBufferTarget(::UnityEngine::GfxBufferTarget value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::GfxBufferTarget))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_VERTEXBUFFERTARGET_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_enableSkinning()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_ENABLESKINNING_OFFSET))(this);
-		}
-
-		::System::Void set_enableSkinning(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_ENABLESKINNING_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_lazyUpdate()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_LAZYUPDATE_OFFSET))(this);
-		}
-
-		::System::Void set_lazyUpdate(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_LAZYUPDATE_OFFSET))(this, value);
-		}
-
-		static ::System::Single get_rootBoneLocOptimizeThreshold()
-		{
-			return ((::System::Single(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_ROOTBONELOCOPTIMIZETHRESHOLD_OFFSET))();
-		}
-
-		static ::System::Void set_rootBoneLocOptimizeThreshold(::System::Single value)
-		{
-			return ((::System::Void(*)(::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_ROOTBONELOCOPTIMIZETHRESHOLD_OFFSET))(value);
-		}
-
-		static ::System::Boolean get_useOptimizedAnimationSkinningRoot()
-		{
-			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_USEOPTIMIZEDANIMATIONSKINNINGROOT_OFFSET))();
-		}
-
-		static ::System::Void set_useOptimizedAnimationSkinningRoot(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_USEOPTIMIZEDANIMATIONSKINNINGROOT_OFFSET))(value);
-		}
-
-		static ::System::Boolean get_enableGpuSkinningMaxCount()
-		{
-			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_ENABLEGPUSKINNINGMAXCOUNT_OFFSET))();
-		}
-
-		static ::System::Void set_enableGpuSkinningMaxCount(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_ENABLEGPUSKINNINGMAXCOUNT_OFFSET))(value);
-		}
-
-		static ::System::UInt32 get_gpuSkinningMaxCount()
-		{
-			return ((::System::UInt32(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_GPUSKINNINGMAXCOUNT_OFFSET))();
-		}
-
-		static ::System::Void set_gpuSkinningMaxCount(::System::UInt32 value)
-		{
-			return ((::System::Void(*)(::System::UInt32))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_GPUSKINNINGMAXCOUNT_OFFSET))(value);
-		}
-
-		::UnityEngine::Vector3 get_boundExpandingScale()
-		{
-			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_BOUNDEXPANDINGSCALE_OFFSET))(this);
-		}
-
-		::System::Void set_boundExpandingScale(::UnityEngine::Vector3 value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_BOUNDEXPANDINGSCALE_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_disableGPUSkin()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_DISABLEGPUSKIN_OFFSET))(this);
-		}
-
-		::System::Void set_disableGPUSkin(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_DISABLEGPUSKIN_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::UnityEngine::Matrix4x4, ::UnityEngine::Material*, ::System::Int32, ::UnityEngine::Camera*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::UnityEngine::Transform*, ::UnityEngine::Rendering::LightProbeUsage, ::UnityEngine::LightProbeProxyVolume*))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_DRAWCACHEDMESH_3_OFFSET))(this, index, submeshIndex, matrix, material, layer, camera, properties, castShadows, receiveShadows, probeAnchor, lightProbeUsage, lightProbeProxyVolume);
 		}
 
 		::System::Void GetLocalAABB_Injected(::UnityEngine::Bounds& ret)
@@ -326,19 +284,19 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Bounds&))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SETLOCALAABB_INJECTED_OFFSET))(this, b);
 		}
 
-		::System::Void SetOverrideWorldAABB_Injected(::System::Boolean override, ::UnityEngine::Bounds& bounds)
+		::System::Void SetLoopSubdivSettings_Injected(::UnityEngine::LoopSubdivSettings& settings)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::UnityEngine::Bounds&))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SETOVERRIDEWORLDAABB_INJECTED_OFFSET))(this, override, bounds);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::LoopSubdivSettings&))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SETLOOPSUBDIVSETTINGS_INJECTED_OFFSET))(this, settings);
 		}
 
-		::System::Void get_boundExpandingScale_Injected(::UnityEngine::Vector3& ret)
+		::System::Void GetLoopSubdivSettings_Injected(::UnityEngine::LoopSubdivSettings& ret)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GET_BOUNDEXPANDINGSCALE_INJECTED_OFFSET))(this, ret);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::LoopSubdivSettings&))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_GETLOOPSUBDIVSETTINGS_INJECTED_OFFSET))(this, ret);
 		}
 
-		::System::Void set_boundExpandingScale_Injected(::UnityEngine::Vector3& value)
+		::System::Void DrawCachedMesh_Injected(::System::Int32 index, ::System::Int32 submeshIndex, ::UnityEngine::Matrix4x4& matrix, ::UnityEngine::Material* material, ::System::Int32 layer, ::UnityEngine::Camera* camera, ::UnityEngine::MaterialPropertyBlock* properties, ::UnityEngine::Rendering::ShadowCastingMode castShadows, ::System::Boolean receiveShadows, ::UnityEngine::Transform* probeAnchor, ::UnityEngine::Rendering::LightProbeUsage lightProbeUsage, ::UnityEngine::LightProbeProxyVolume* lightProbeProxyVolume)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_SET_BOUNDEXPANDINGSCALE_INJECTED_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::UnityEngine::Matrix4x4&, ::UnityEngine::Material*, ::System::Int32, ::UnityEngine::Camera*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Rendering::ShadowCastingMode, ::System::Boolean, ::UnityEngine::Transform*, ::UnityEngine::Rendering::LightProbeUsage, ::UnityEngine::LightProbeProxyVolume*))((::PBYTE)hIl2Cpp + UNITYENGINE_SKINNEDMESHRENDERER_DRAWCACHEDMESH_INJECTED_OFFSET))(this, index, submeshIndex, matrix, material, layer, camera, properties, castShadows, receiveShadows, probeAnchor, lightProbeUsage, lightProbeProxyVolume);
 		}
 	};
 }

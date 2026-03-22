@@ -1,0 +1,120 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_6DB015FE22A27672;
+class Class_2_77E5F1B1A12A521E;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole::Battle { class Entity; }
+
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_GETBUFFPANELOWNER_OFFSET UNITYSDK_OFFSET(0x8940320)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x893FFE0)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONBUFFADD_OFFSET UNITYSDK_OFFSET(0x89403A0)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONBUFFCUSTOMNUMCHANGE_OFFSET UNITYSDK_OFFSET(0x8940450)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONBUFFREMOVE_OFFSET UNITYSDK_OFFSET(0x89404F0)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8940620)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x89406C0)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x893FFF0)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8940570)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_SETBUFFHUDMODEL_OFFSET UNITYSDK_OFFSET(0x8940060)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0x89402A0)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8940770)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8940780)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x89407F0)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8940800)
+#define MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8940810)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelBuddyHudChildWindowController_TypeDefinitionIndex = 67031;
+
+	class UIInLevelBuddyHudChildWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_77E5F1B1A12A521E* _view; // 0x2F8
+		::Class_1_6DB015FE22A27672* _buffHudModel; // 0x300
+		::System::UInt32 _ownerEntityId; // 0x308
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void SetBuffHudModel(::System::UInt32 ownerEntityId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_SETBUFFHUDMODEL_OFFSET))(this, ownerEntityId);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::UInt32 GetBuffPanelOwner()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_GETBUFFPANELOWNER_OFFSET))(this);
+		}
+
+		::System::Void OnBuffAdd(::System::Int32 buffID, ::MoleMole::Battle::Entity* owner, ::System::Boolean muteAni, ::System::Boolean replaceBuff)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::MoleMole::Battle::Entity*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONBUFFADD_OFFSET))(this, buffID, owner, muteAni, replaceBuff);
+		}
+
+		::System::Void OnBuffCustomNumChange(::System::Int32 buffID, ::MoleMole::Battle::Entity* owner, ::System::Int32 customNum)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::MoleMole::Battle::Entity*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONBUFFCUSTOMNUMCHANGE_OFFSET))(this, buffID, owner, customNum);
+		}
+
+		::System::Void OnBuffRemove(::System::Int32 buffID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONBUFFREMOVE_OFFSET))(this, buffID);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELBUDDYHUDCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

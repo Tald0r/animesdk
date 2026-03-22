@@ -5,16 +5,14 @@
 
 namespace System { class Object; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT_EQUALS_OFFSET UNITYSDK_OFFSET(0x200C650)
-#define SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0xD240)
-#define SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT_GET_CONTEXT_OFFSET UNITYSDK_OFFSET(0x5580)
-#define SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT_GET_STATE_OFFSET UNITYSDK_OFFSET(0xD240)
-#define SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x150FE40)
-#define SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x200C640)
+#define SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT_EQUALS_OFFSET UNITYSDK_OFFSET(0x8D6C30)
+#define SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x2C6230)
+#define SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x35A280)
+#define SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8D6C20)
 
 namespace System::Runtime::Serialization
 {
-	inline static constexpr unsigned int StreamingContext_TypeDefinitionIndex = 1119;
+	inline static constexpr unsigned int StreamingContext_TypeDefinitionIndex = 1174;
 
 	struct alignas(8) StreamingContext
 	{
@@ -31,11 +29,6 @@ namespace System::Runtime::Serialization
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::StreamingContextStates, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT__CTOR_1_OFFSET))(this, state, additional);
 		}
 
-		::System::Object* get_Context()
-		{
-			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT_GET_CONTEXT_OFFSET))(this);
-		}
-
 		::System::Boolean Equals(::System::Object* obj)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT_EQUALS_OFFSET))(this, obj);
@@ -44,11 +37,6 @@ namespace System::Runtime::Serialization
 		::System::Int32 GetHashCode()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT_GETHASHCODE_OFFSET))(this);
-		}
-
-		::System::Runtime::Serialization::StreamingContextStates get_State()
-		{
-			return ((::System::Runtime::Serialization::StreamingContextStates(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_STREAMINGCONTEXT_GET_STATE_OFFSET))(this);
 		}
 	};
 }

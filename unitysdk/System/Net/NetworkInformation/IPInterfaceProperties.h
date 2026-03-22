@@ -2,11 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_NET_NETWORKINFORMATION_IPINTERFACEPROPERTIES__CTOR_OFFSET UNITYSDK_OFFSET(0x17EE5470)
+namespace System { class String; }
+namespace System::Net::NetworkInformation { class GatewayIPAddressInformationCollection; }
+namespace System::Net::NetworkInformation { class IPAddressCollection; }
+namespace System::Net::NetworkInformation { class IPAddressInformationCollection; }
+namespace System::Net::NetworkInformation { class IPv4InterfaceProperties; }
+namespace System::Net::NetworkInformation { class IPv6InterfaceProperties; }
+namespace System::Net::NetworkInformation { class MulticastIPAddressInformationCollection; }
+namespace System::Net::NetworkInformation { class UnicastIPAddressInformationCollection; }
+
+#define SYSTEM_NET_NETWORKINFORMATION_IPINTERFACEPROPERTIES__CTOR_OFFSET UNITYSDK_OFFSET(0x18F57820)
 
 namespace System::Net::NetworkInformation
 {
-	inline static constexpr unsigned int IPInterfaceProperties_TypeDefinitionIndex = 2908;
+	inline static constexpr unsigned int IPInterfaceProperties_TypeDefinitionIndex = 3712;
 
 	class IPInterfaceProperties : public ::System::Object
 	{

@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace System { class Type; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_OBJECTMAPINFO_ISCOMPATIBLE_OFFSET UNITYSDK_OFFSET(0x15D213A0)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_OBJECTMAPINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x15D21380)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_OBJECTMAPINFO_ISCOMPATIBLE_OFFSET UNITYSDK_OFFSET(0x17FE3710)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_OBJECTMAPINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x17FE36F0)
 
 namespace System::Runtime::Serialization::Formatters::Binary
 {
-	inline static constexpr unsigned int ObjectMapInfo_TypeDefinitionIndex = 1166;
+	inline static constexpr unsigned int ObjectMapInfo_TypeDefinitionIndex = 1218;
 
 	class ObjectMapInfo : public ::System::Object
 	{

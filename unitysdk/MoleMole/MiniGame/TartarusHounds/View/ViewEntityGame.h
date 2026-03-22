@@ -1,0 +1,775 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3A8D4AF679CBDF1E.h"
+#include "unitysdk/Enum_3_4A483BC3F77616F6.h"
+#include "unitysdk/Sirenix/OdinInspector/SerializedMonoBehaviour.h"
+#include "unitysdk/UnityEngine/Color.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_1_09693C98637C85CC;
+class Class_1_0C791B68CB2A5BF5;
+class Class_1_30E2A47ED8C437B2;
+class Class_1_3595ACF2B25A017E;
+class Class_1_61AF8621E96999C8;
+class Class_1_782D7B640E2E81AE;
+class Class_1_9FD5FAEBE7F92666;
+class Class_1_B3810BE455E7DF21;
+class Class_1_D5F08B6364839D11;
+class Class_1_D64959CBBD533335;
+class Class_1_E13183B148E560DC;
+class Class_2_C1302E8F9F6FAC1A;
+namespace Cinemachine { class CinemachineBasicMultiChannelPerlin; }
+namespace Cinemachine { class CinemachineTransposer; }
+namespace Cinemachine { class CinemachineVirtualCamera; }
+namespace MoleMole::MiniGame { class HoundMiniGameWorld; }
+namespace MoleMole::MiniGame::TartarusHounds::View { class SandBlockView; }
+namespace MoleMole::MiniGame::TartarusHounds::View { class ViewEntityBlock; }
+namespace MoleMole::MiniGame::TartarusHounds::View { class ViewEntityGame_GridPage; }
+namespace MoleMole::MiniGame::TartarusHounds::View { class ViewEntityGame_SoundDelayPlayItem; }
+namespace MoleMole::MiniGame::TartarusHounds::View { class ViewEntityPlayer; }
+namespace System { class Action; }
+namespace System { class Object; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace System::Collections::Generic { template <typename T> class Queue_1; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class SpriteRenderer; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_AWAKE_OFFSET UNITYSDK_OFFSET(0xB3923F0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_CACHEORCREATEBLOCK_OFFSET UNITYSDK_OFFSET(0xB3904B0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_CACHEORCREATESANDBLOCK_OFFSET UNITYSDK_OFFSET(0xB390EA0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_CHECKANDPUTBESTSCORELINE_OFFSET UNITYSDK_OFFSET(0xB39D350)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_CHECKPASSBESTSCORELINE_OFFSET UNITYSDK_OFFSET(0xB39EEA0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_COLLECTBLOCKASSET_OFFSET UNITYSDK_OFFSET(0xB395320)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_COLLECTCURRENTPAGE_OFFSET UNITYSDK_OFFSET(0xB394E10)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_COLLECTSANDASSET_OFFSET UNITYSDK_OFFSET(0xB395440)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_COUNTCURRENTLEVELHPPROPITEM_OFFSET UNITYSDK_OFFSET(0xB39CE70)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_CREATEWOOLBLOCK_OFFSET UNITYSDK_OFFSET(0xB39D660)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_DEALGAMESTARTINIT_OFFSET UNITYSDK_OFFSET(0xB398FF0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_DESTROYSAND_OFFSET UNITYSDK_OFFSET(0xB393D40)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_DOUPDATE_OFFSET UNITYSDK_OFFSET(0xB396BE0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_EDITORINIT_OFFSET UNITYSDK_OFFSET(0xB3912F0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ENTERNEWLEVEL_OFFSET UNITYSDK_OFFSET(0xB399090)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_FADEINSANDBACKGROUND_OFFSET UNITYSDK_OFFSET(0xB393560)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_FADEOUTSANDBACKGROUND_OFFSET UNITYSDK_OFFSET(0xB393500)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_FINISHSWITCHLEVEL_OFFSET UNITYSDK_OFFSET(0xB39D080)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_FIXEDUPDATE_OFFSET UNITYSDK_OFFSET(0xB396B40)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GAMEDURATION_OFFSET UNITYSDK_OFFSET(0xB39F2D0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GENERATELEVELGAPBLOCKS_OFFSET UNITYSDK_OFFSET(0xB390710)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GENERATENEXTLEVEL_OFFSET UNITYSDK_OFFSET(0xB39C2B0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GENERATEPVPSCENE_OFFSET UNITYSDK_OFFSET(0xB390CD0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GENERATEVIEWBLOCKS_OFFSET UNITYSDK_OFFSET(0xB38FCA0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETDESTROYBLOCKROWSOUNDBYROWITEMCOUNT_OFFSET UNITYSDK_OFFSET(0xB39E3A0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETGRIDPOS_OFFSET UNITYSDK_OFFSET(0xB39F3D0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETGRIDSTARTPOSITION_OFFSET UNITYSDK_OFFSET(0xB39F340)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETPVPREALTIMERANK_OFFSET UNITYSDK_OFFSET(0xB395E20)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETPVPROOTY_OFFSET UNITYSDK_OFFSET(0xB391070)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETPVPSERVERREMAINTIME_OFFSET UNITYSDK_OFFSET(0xB395230)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GOTOGAMEEND_OFFSET UNITYSDK_OFFSET(0xB394280)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_HIDEPLAYER_OFFSET UNITYSDK_OFFSET(0xB392750)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_HIDEPVPSCENE_OFFSET UNITYSDK_OFFSET(0xB3911E0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_HIDESANDBACKGROUND_OFFSET UNITYSDK_OFFSET(0xB392870)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_HOUNDVIEWGAMEINIT_OFFSET UNITYSDK_OFFSET(0xB392900)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITANIMATIONDATA_OFFSET UNITYSDK_OFFSET(0xB391800)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITANIMATIONSTATEINFO_OFFSET UNITYSDK_OFFSET(0xB391870)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITBLOCKCACHEROOT_OFFSET UNITYSDK_OFFSET(0xB392540)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITMISC_OFFSET UNITYSDK_OFFSET(0xB391350)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITMULTIPLAYERS_OFFSET UNITYSDK_OFFSET(0xB3932A0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITPLAYER_OFFSET UNITYSDK_OFFSET(0xB393120)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITWWISELISTENER_OFFSET UNITYSDK_OFFSET(0xB3969A0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ISGAMEEND_OFFSET UNITYSDK_OFFSET(0xB394550)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ISOUTOFSCREEN_OFFSET UNITYSDK_OFFSET(0xB39E970)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_LEAVEGAME_OFFSET UNITYSDK_OFFSET(0xB3952A0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_LEVELDURATION_OFFSET UNITYSDK_OFFSET(0xB39F260)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONDESTROY_OFFSET UNITYSDK_OFFSET(0xB3988A0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONEVENT_OFFSET UNITYSDK_OFFSET(0xB399460)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONGAMEEND_OFFSET UNITYSDK_OFFSET(0xB394070)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONGAMESTART_OFFSET UNITYSDK_OFFSET(0xB399200)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONPARRYCHANGECOLORSTART_OFFSET UNITYSDK_OFFSET(0xB3985B0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONPARRYFINISH_OFFSET UNITYSDK_OFFSET(0xB3955C0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONPOSTUPDATE_OFFSET UNITYSDK_OFFSET(0xB3981C0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONPVPGAMEFINISH_OFFSET UNITYSDK_OFFSET(0xB393B40)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONPVPGAMESTART_OFFSET UNITYSDK_OFFSET(0xB399330)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONRECVGAMEEND_OFFSET UNITYSDK_OFFSET(0xB3945C0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONRECVSELFFINISHPVPGAME_OFFSET UNITYSDK_OFFSET(0xB393F20)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONRECVWORLDINITSC_OFFSET UNITYSDK_OFFSET(0xB3951B0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONSCOREADDLIFE_OFFSET UNITYSDK_OFFSET(0xB39E1B0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONVIEWUPDATE_OFFSET UNITYSDK_OFFSET(0xB396DD0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PASSLEVELBLOCKPERFORM_OFFSET UNITYSDK_OFFSET(0xB39C740)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PAUSE_OFFSET UNITYSDK_OFFSET(0xB39EAD0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PLAYCOLORBLOCKGROUPDESTROYSOUND_OFFSET UNITYSDK_OFFSET(0xB39DB40)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PLAYERLOWHPSTATE_OFFSET UNITYSDK_OFFSET(0xB395ED0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PLAYPLAYERBACKGROUPANIMATION_OFFSET UNITYSDK_OFFSET(0xB396760)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PLAYPLAYERLOWHPANIMATION_OFFSET UNITYSDK_OFFSET(0xB3963F0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PULLPLAYERUP_OFFSET UNITYSDK_OFFSET(0xB39E7D0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_REALSHOWGAMEEND_OFFSET UNITYSDK_OFFSET(0xB394BB0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RECORDLASTBESTSCORE_OFFSET UNITYSDK_OFFSET(0xB39F1F0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RECORDSPEEDUPFALL_OFFSET UNITYSDK_OFFSET(0xB39E500)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_REMOVEGRIDEPAGE_OFFSET UNITYSDK_OFFSET(0xB39E630)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RESETCAMERAWITHYOFFSET_OFFSET UNITYSDK_OFFSET(0xB398E50)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RESETGAMEORINIT_OFFSET UNITYSDK_OFFSET(0xB3935D0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RESETGAMERECORDMODULEANDTIME_OFFSET UNITYSDK_OFFSET(0xB393A30)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RESETPARAM_OFFSET UNITYSDK_OFFSET(0xB393970)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SETARCADEGAMEID_OFFSET UNITYSDK_OFFSET(0xB39E490)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SETARCADELOGIC_OFFSET UNITYSDK_OFFSET(0xB39E5C0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SETCAMSHAKE_OFFSET UNITYSDK_OFFSET(0xB398F50)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SETDAMPING_OFFSET UNITYSDK_OFFSET(0xB398AC0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SETGRIDEPAGESHOWSTATE_OFFSET UNITYSDK_OFFSET(0xB395040)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SHOWADDLIFEEFFECT_OFFSET UNITYSDK_OFFSET(0xB39EBE0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SHOWPLAYER_OFFSET UNITYSDK_OFFSET(0xB3933E0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SHOWSANDBACKGROUND_OFFSET UNITYSDK_OFFSET(0xB393360)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_STARTCHECKALLPLAYERENTERPVPSCENEBOTTOM_OFFSET UNITYSDK_OFFSET(0xB394AA0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_STOPADDLIFEEFFECT_OFFSET UNITYSDK_OFFSET(0xB39ED40)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_STOPHISTORYBESTLINE_OFFSET UNITYSDK_OFFSET(0xB394C80)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_STOPPLAYERBACKGROUNDANIMATION_OFFSET UNITYSDK_OFFSET(0xB3968A0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_STOPPLAYERLOWHPANIMATION_OFFSET UNITYSDK_OFFSET(0xB396580)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SWITCHNOISECAM_OFFSET UNITYSDK_OFFSET(0xB398B70)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SWITCHTONEWLEVEL_OFFSET UNITYSDK_OFFSET(0xB39BA10)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKDELAYACTION_OFFSET UNITYSDK_OFFSET(0xB3984F0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKHISTORYBESTLINE_OFFSET UNITYSDK_OFFSET(0xB397E60)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKLOWHPSTATEANDCHECK_OFFSET UNITYSDK_OFFSET(0xB395FF0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKPARRY_OFFSET UNITYSDK_OFFSET(0xB398030)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKSELFREACHBOTTOM_OFFSET UNITYSDK_OFFSET(0xB395730)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKSOUND_OFFSET UNITYSDK_OFFSET(0xB397910)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKWAITPVPREACHBOTTOMANDFINISHGAME_OFFSET UNITYSDK_OFFSET(0xB3958E0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TRYSENDGAMEFINISHTOBATTLESERVER_OFFSET UNITYSDK_OFFSET(0xB393CC0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_UNPAUSE_OFFSET UNITYSDK_OFFSET(0xB39EB40)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_UPDATECAMERA_OFFSET UNITYSDK_OFFSET(0xB3974A0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_UPDATECAMSHAKE_OFFSET UNITYSDK_OFFSET(0xB397860)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_UPDATESOUNDPARAM_OFFSET UNITYSDK_OFFSET(0xB397BB0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_UPDATE_OFFSET UNITYSDK_OFFSET(0xB398480)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME__CTOR_OFFSET UNITYSDK_OFFSET(0xB39F5E0)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME__ONEVENT_B__164_0_OFFSET UNITYSDK_OFFSET(0xB39FAF0)
+
+namespace MoleMole::MiniGame::TartarusHounds::View
+{
+	inline static constexpr unsigned int ViewEntityGame_TypeDefinitionIndex = 59449;
+
+	class ViewEntityGame : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
+	{
+	public:
+		::MoleMole::MiniGame::HoundMiniGameWorld* miniGameWorld; // 0x58
+		::Class_1_D5F08B6364839D11* logicGame; // 0x60
+		::MoleMole::MiniGame::TartarusHounds::View::ViewEntityPlayer* curPlayer; // 0x68
+		::Class_1_9FD5FAEBE7F92666* aiAdapter; // 0x70
+		::Class_1_782D7B640E2E81AE* arcadeLogic; // 0x78
+		::Class_2_C1302E8F9F6FAC1A* multiPlayerGameModule; // 0x80
+		::Class_1_09693C98637C85CC* gameOnlineModule; // 0x88
+		::Class_1_3595ACF2B25A017E* entityGameImpl; // 0x90
+		::UnityEngine::GameObject* woolAnimTemplate; // 0x98
+		::Il2CppArray<::MoleMole::MiniGame::TartarusHounds::View::ViewEntityPlayer*>* OtherPlayers; // 0xA0
+		::Il2CppArray<::UnityEngine::Vector2>* PlayersBornPos; // 0xA8
+		::System::Collections::Generic::List_1<::MoleMole::MiniGame::TartarusHounds::View::ViewEntityGame_SoundDelayPlayItem*>* soundPlayList; // 0xB0
+		::UnityEngine::GameObject* BlockTemplate; // 0xB8
+		::UnityEngine::Transform* BlockParent; // 0xC0
+		::UnityEngine::Transform* Player; // 0xC8
+		::UnityEngine::Transform* CameraTrans; // 0xD0
+		::UnityEngine::SpriteRenderer* BestLineSpriteRender; // 0xD8
+		::UnityEngine::Transform* PlayerFollower; // 0xE0
+		::Cinemachine::CinemachineVirtualCamera* VirtualCamera; // 0xE8
+		::Il2CppArray<::Cinemachine::CinemachineVirtualCamera*>* VirtualCameras; // 0xF0
+		::Il2CppArray<::Cinemachine::CinemachineBasicMultiChannelPerlin*>* nosieComps; // 0xF8
+		::Il2CppArray<::System::Single>* nosieCompAmpOri; // 0x100
+		::Class_1_E13183B148E560DC* bestLineTextureSheetUpdater; // 0x108
+		::System::Boolean historyBestLineEnable; // 0x110
+		::System::Boolean historyBestLineWaitHide; // 0x111
+		::System::Single bestLineHideTimer; // 0x114
+		::System::Boolean pauseState; // 0x118
+		::System::Boolean isInLowHpState; // 0x119
+		::System::Single lowHpRatio; // 0x11C
+		::System::Int32 playerLastRecordHp; // 0x120
+		::System::UInt32 lastBestScore; // 0x124
+		::System::Int32 playerLastDepth; // 0x128
+		::System::Int32 currentLevelHpPropCount; // 0x12C
+		::System::Int32 currentLevelGetHpPropCount; // 0x130
+		::System::Int32 playerDieCount; // 0x134
+		::System::Int32 playerLastLifeCount; // 0x138
+		::System::Int32 playerDestroyColorBlockCount; // 0x13C
+		::System::Single pvpServerRemainingTime; // 0x140
+		::UnityEngine::Vector3 cachedFirstGridPos; // 0x144
+		::System::Collections::Generic::List_1<::System::String*>* lowHpAnimStates; // 0x150
+		::UnityEngine::Transform* blockCacheRoot; // 0x158
+		::System::Int32 passLevelBlockPerformCount; // 0x160
+		::System::Single passLevelBlockAnimTimeGap; // 0x164
+		::System::Single passLevelBlockAnimTime; // 0x168
+		::System::Collections::Generic::List_1<::System::String*>* passLevelAnimationList; // 0x170
+		::System::Single flashAnimTime; // 0x178
+		::UnityEngine::Color flashAnimColor; // 0x17C
+		::System::Single blockLinkFlashTime; // 0x18C
+		::UnityEngine::Color blockLinkFlashAnimColor; // 0x190
+		::System::Int32 lastPlayDepth; // 0x1A0
+		::UnityEngine::GameObject* SandBackGroud; // 0x1A8
+		::System::Int32 sandRowCount; // 0x1B0
+		::System::Single pvpDistanceFromSandGap; // 0x1B4
+		::System::Single pvpPlayerTargetBottomY; // 0x1B8
+		::System::Single pvpCameraBottomYOffset; // 0x1BC
+		::UnityEngine::Transform* PvpSceneRoot; // 0x1C0
+		::UnityEngine::GameObject* PvpLightObj; // 0x1C8
+		::System::Single changeColorInterval; // 0x1D0
+		::System::Single sandDestroyInterval; // 0x1D4
+		::System::Single attackBlockDestroyInterval; // 0x1D8
+		::System::Single stableTrapSoundDelay; // 0x1DC
+		::System::Single stableTrapSoundLoopDuration; // 0x1E0
+		::Cinemachine::CinemachineTransposer* cinemachineTransposer; // 0x1E8
+		::System::Collections::Generic::Queue_1<::MoleMole::MiniGame::TartarusHounds::View::ViewEntityBlock*>* blockCacheQueue; // 0x1F0
+		::System::Collections::Generic::Queue_1<::MoleMole::MiniGame::TartarusHounds::View::SandBlockView*>* sandBlockCacheQueue; // 0x1F8
+		::System::Single cameraViewHeight; // 0x200
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::MiniGame::TartarusHounds::View::ViewEntityGame_GridPage*>* pageDic; // 0x208
+		::System::Int32 currentDisplayLevel; // 0x210
+		::Class_1_0C791B68CB2A5BF5* spriteResourceProxy; // 0x218
+		::System::UInt32 _arcadeGameID; // 0x220
+		::System::Boolean gameEnd; // 0x224
+		::System::Collections::Generic::List_1<::MoleMole::MiniGame::TartarusHounds::View::SandBlockView*>* sandCollectList; // 0x228
+		::System::Collections::Generic::List_1<::MoleMole::MiniGame::TartarusHounds::View::ViewEntityBlock*>* blockCollectList; // 0x230
+		::System::Boolean waitForPvpPlayerEnterBottom; // 0x238
+		::System::Boolean waitCheckSelfReachBottom; // 0x239
+		::System::Boolean allPvpPlayerReachBottom; // 0x23A
+		::System::Single pvpFinishDelayTimer; // 0x23C
+		::System::Single pvpFinishTimeOutTimer; // 0x240
+		::System::Boolean pvpServerGameFinish; // 0x244
+		::System::Boolean alreadySendingFinishGame; // 0x245
+		::System::Single levelStartTime; // 0x248
+		::System::Single gameStartTime; // 0x24C
+		::System::Single pauseStartTime; // 0x250
+		::System::Boolean isLeaveGame; // 0x254
+		::System::Collections::Generic::Queue_1<::System::Action*>* delayActionQueue; // 0x258
+		::Class_1_30E2A47ED8C437B2* recordModule; // 0x260
+		::System::Boolean isParryStart; // 0x268
+		::System::Single parryTimer; // 0x26C
+		::System::Collections::Generic::List_1<::MoleMole::MiniGame::TartarusHounds::View::ViewEntityBlock*>* parryChangeColorBlockList; // 0x270
+		::System::UInt32 lowHpPendingId; // 0x278
+		::System::Single lastYDamping; // 0x27C
+		::System::Int32 lastVirtualCameraIndex; // 0x280
+		::System::Int32 curShakeType; // 0x284
+		::System::Single currentShakeCD; // 0x288
+		::System::Single totalShakeCD; // 0x28C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME__CTOR_OFFSET))(this);
+		}
+
+		::System::Void GenerateViewBlocks(::System::Int32 level)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GENERATEVIEWBLOCKS_OFFSET))(this, level);
+		}
+
+		::System::Void GenerateLevelGapBlocks(::System::Int32 level)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GENERATELEVELGAPBLOCKS_OFFSET))(this, level);
+		}
+
+		::System::Void GeneratePVPScene()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GENERATEPVPSCENE_OFFSET))(this);
+		}
+
+		::System::Single GetPvpRootY()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETPVPROOTY_OFFSET))(this);
+		}
+
+		::System::Void HidePvpScene()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_HIDEPVPSCENE_OFFSET))(this);
+		}
+
+		::System::Void EditorInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_EDITORINIT_OFFSET))(this);
+		}
+
+		::System::Void InitMisc()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITMISC_OFFSET))(this);
+		}
+
+		::System::Void InitAnimationData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITANIMATIONDATA_OFFSET))(this);
+		}
+
+		::System::Void Awake()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_AWAKE_OFFSET))(this);
+		}
+
+		::System::Void InitBlockCacheRoot()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITBLOCKCACHEROOT_OFFSET))(this);
+		}
+
+		::System::Void HoundViewGameInit(::Enum_3_3A8D4AF679CBDF1E gameType, ::System::Int32 randomSeed, ::System::Boolean newbieSign, ::System::Boolean isActivity)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_3A8D4AF679CBDF1E, ::System::Int32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_HOUNDVIEWGAMEINIT_OFFSET))(this, gameType, randomSeed, newbieSign, isActivity);
+		}
+
+		::System::Void HidePlayer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_HIDEPLAYER_OFFSET))(this);
+		}
+
+		::System::Void ShowPlayer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SHOWPLAYER_OFFSET))(this);
+		}
+
+		::System::Void HideSandBackGround(::System::Boolean hideObj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_HIDESANDBACKGROUND_OFFSET))(this, hideObj);
+		}
+
+		::System::Void ShowSandBackGround()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SHOWSANDBACKGROUND_OFFSET))(this);
+		}
+
+		::System::Void FadeOutSandBackGround()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_FADEOUTSANDBACKGROUND_OFFSET))(this);
+		}
+
+		::System::Void FadeInSandBackGround()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_FADEINSANDBACKGROUND_OFFSET))(this);
+		}
+
+		::System::Void ResetGameOrInit(::Enum_3_3A8D4AF679CBDF1E gameType, ::System::Int32 randomSeed, ::System::Boolean isNewbie, ::System::Boolean isActivity)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_3A8D4AF679CBDF1E, ::System::Int32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RESETGAMEORINIT_OFFSET))(this, gameType, randomSeed, isNewbie, isActivity);
+		}
+
+		::System::Void ResetGameRecordModuleAndTime(::Enum_3_3A8D4AF679CBDF1E gameType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_3A8D4AF679CBDF1E))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RESETGAMERECORDMODULEANDTIME_OFFSET))(this, gameType);
+		}
+
+		::System::Void ResetParam()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RESETPARAM_OFFSET))(this);
+		}
+
+		::System::Void OnPvpGameFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONPVPGAMEFINISH_OFFSET))(this);
+		}
+
+		::System::Void OnRecvSelfFinishPvpGame()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONRECVSELFFINISHPVPGAME_OFFSET))(this);
+		}
+
+		::System::Void OnGameEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONGAMEEND_OFFSET))(this);
+		}
+
+		::System::Boolean IsGameEnd()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ISGAMEEND_OFFSET))(this);
+		}
+
+		::System::Void TrySendGameFinishToBattleServer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TRYSENDGAMEFINISHTOBATTLESERVER_OFFSET))(this);
+		}
+
+		::System::Void OnRecvGameEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONRECVGAMEEND_OFFSET))(this);
+		}
+
+		::System::Void RealShowGameEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_REALSHOWGAMEEND_OFFSET))(this);
+		}
+
+		::System::Void GoToGameEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GOTOGAMEEND_OFFSET))(this);
+		}
+
+		::System::Void OnRecvWorldInitSc(::System::Single serverRemainTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONRECVWORLDINITSC_OFFSET))(this, serverRemainTime);
+		}
+
+		::System::Single GetPvpServerRemainTime()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETPVPSERVERREMAINTIME_OFFSET))(this);
+		}
+
+		::System::Void LeaveGame()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_LEAVEGAME_OFFSET))(this);
+		}
+
+		::System::Void CollectCurrentPage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_COLLECTCURRENTPAGE_OFFSET))(this);
+		}
+
+		::System::Void StartCheckAllPlayerEnterPvpSceneBottom()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_STARTCHECKALLPLAYERENTERPVPSCENEBOTTOM_OFFSET))(this);
+		}
+
+		::System::Void TickSelfReachBottom()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKSELFREACHBOTTOM_OFFSET))(this);
+		}
+
+		::System::Void TickWaitPvPReachBottomAndFinishGame(::System::Single dt)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKWAITPVPREACHBOTTOMANDFINISHGAME_OFFSET))(this, dt);
+		}
+
+		::System::Int32 GetPVPRealTimeRank()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETPVPREALTIMERANK_OFFSET))(this);
+		}
+
+		::System::Void SetGridePageShowState(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SETGRIDEPAGESHOWSTATE_OFFSET))(this, state);
+		}
+
+		::System::Void InitPlayer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITPLAYER_OFFSET))(this);
+		}
+
+		::System::Void InitMultiPlayers()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITMULTIPLAYERS_OFFSET))(this);
+		}
+
+		::System::Boolean PlayerLowHpState()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PLAYERLOWHPSTATE_OFFSET))(this);
+		}
+
+		::System::Void TickLowHpStateAndCheck()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKLOWHPSTATEANDCHECK_OFFSET))(this);
+		}
+
+		::System::Void PlayPlayerLowHpAnimation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PLAYPLAYERLOWHPANIMATION_OFFSET))(this);
+		}
+
+		::System::Void StopPlayerLowHpAnimation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_STOPPLAYERLOWHPANIMATION_OFFSET))(this);
+		}
+
+		::System::Void PlayPlayerBackGroupAnimation(::System::String* animState)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PLAYPLAYERBACKGROUPANIMATION_OFFSET))(this, animState);
+		}
+
+		::System::Void StopPlayerBackGroundAnimation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_STOPPLAYERBACKGROUNDANIMATION_OFFSET))(this);
+		}
+
+		::System::Void InitWwiseListener()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITWWISELISTENER_OFFSET))(this);
+		}
+
+		::System::Void FixedUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_FIXEDUPDATE_OFFSET))(this);
+		}
+
+		::System::Void DoUpdate(::System::Single dt)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_DOUPDATE_OFFSET))(this, dt);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnPostUpdate(::System::Single dt)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONPOSTUPDATE_OFFSET))(this, dt);
+		}
+
+		::System::Void TickDelayAction()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKDELAYACTION_OFFSET))(this);
+		}
+
+		::System::Void TickParry(::System::Single dt)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKPARRY_OFFSET))(this, dt);
+		}
+
+		::System::Void OnParryFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONPARRYFINISH_OFFSET))(this);
+		}
+
+		::System::Void OnParryChangeColorStart(::Class_1_B3810BE455E7DF21* hitBlock, ::MoleMole::MiniGame::TartarusHounds::View::ViewEntityBlock*& hitViewEntityBlock)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_B3810BE455E7DF21*, ::MoleMole::MiniGame::TartarusHounds::View::ViewEntityBlock*&))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONPARRYCHANGECOLORSTART_OFFSET))(this, hitBlock, hitViewEntityBlock);
+		}
+
+		::System::Void UpdateSoundParam()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_UPDATESOUNDPARAM_OFFSET))(this);
+		}
+
+		::System::Void OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnViewUpdate(::System::Single dt)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONVIEWUPDATE_OFFSET))(this, dt);
+		}
+
+		::System::Void TickSound(::System::Single dt)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKSOUND_OFFSET))(this, dt);
+		}
+
+		::System::Void SetDamping(::System::Single damping)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SETDAMPING_OFFSET))(this, damping);
+		}
+
+		::System::Void UpdateCamera(::System::Single dt)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_UPDATECAMERA_OFFSET))(this, dt);
+		}
+
+		::System::Void UpdateCamShake(::System::Single dt)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_UPDATECAMSHAKE_OFFSET))(this, dt);
+		}
+
+		::System::Void SwitchNoiseCam(::System::Int32 virtualCameraIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SWITCHNOISECAM_OFFSET))(this, virtualCameraIndex);
+		}
+
+		::System::Void ResetCameraWithYOffset(::System::Single yOffset)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RESETCAMERAWITHYOFFSET_OFFSET))(this, yOffset);
+		}
+
+		::System::Void SetCamShake(::System::Int32 type, ::System::Single time)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SETCAMSHAKE_OFFSET))(this, type, time);
+		}
+
+		::System::Void DealGameStartInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_DEALGAMESTARTINIT_OFFSET))(this);
+		}
+
+		::System::Void OnGameStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONGAMESTART_OFFSET))(this);
+		}
+
+		::System::Void OnPvpGameStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONPVPGAMESTART_OFFSET))(this);
+		}
+
+		::System::Void OnEvent(::Enum_3_4A483BC3F77616F6 evt, ::System::Object* param)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_4A483BC3F77616F6, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONEVENT_OFFSET))(this, evt, param);
+		}
+
+		::System::Void PassLevelBlockPerform()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PASSLEVELBLOCKPERFORM_OFFSET))(this);
+		}
+
+		::System::Void OnScoreAddLife()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ONSCOREADDLIFE_OFFSET))(this);
+		}
+
+		::System::Void PlayColorBlockGroupDestroySound(::Class_1_61AF8621E96999C8* group, ::Class_1_D64959CBBD533335* param)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_61AF8621E96999C8*, ::Class_1_D64959CBBD533335*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PLAYCOLORBLOCKGROUPDESTROYSOUND_OFFSET))(this, group, param);
+		}
+
+		::System::Int32 GetDestroyBlockRowSoundByRowItemCount(::System::Int32 num)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETDESTROYBLOCKROWSOUNDBYROWITEMCOUNT_OFFSET))(this, num);
+		}
+
+		::System::Void CreateWoolBlock(::Class_1_B3810BE455E7DF21* woolLogicBlock)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_B3810BE455E7DF21*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_CREATEWOOLBLOCK_OFFSET))(this, woolLogicBlock);
+		}
+
+		::System::Void SetArcadeGameID(::System::UInt32 arcadeGameID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SETARCADEGAMEID_OFFSET))(this, arcadeGameID);
+		}
+
+		::System::Void RecordSpeedUpFall()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RECORDSPEEDUPFALL_OFFSET))(this);
+		}
+
+		::System::Void SetArcadeLogic(::Class_1_782D7B640E2E81AE* arcadeLogicIns)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_782D7B640E2E81AE*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SETARCADELOGIC_OFFSET))(this, arcadeLogicIns);
+		}
+
+		::System::Void SwitchToNewLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SWITCHTONEWLEVEL_OFFSET))(this);
+		}
+
+		::System::Void CountCurrentLevelHpPropItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_COUNTCURRENTLEVELHPPROPITEM_OFFSET))(this);
+		}
+
+		::System::Void GenerateNextLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GENERATENEXTLEVEL_OFFSET))(this);
+		}
+
+		::System::Void DestroySand()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_DESTROYSAND_OFFSET))(this);
+		}
+
+		::System::Void FinishSwitchLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_FINISHSWITCHLEVEL_OFFSET))(this);
+		}
+
+		::System::Void PullPlayerUp(::System::Single moveOffsetY)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PULLPLAYERUP_OFFSET))(this, moveOffsetY);
+		}
+
+		::System::Void EnterNewLevel(::System::Int32 newLevel)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ENTERNEWLEVEL_OFFSET))(this, newLevel);
+		}
+
+		::System::Boolean IsOutOfScreen(::MoleMole::MiniGame::TartarusHounds::View::ViewEntityGame_GridPage* page, ::System::Single posY)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::MiniGame::TartarusHounds::View::ViewEntityGame_GridPage*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_ISOUTOFSCREEN_OFFSET))(this, page, posY);
+		}
+
+		::System::Void RemoveGridePage(::MoleMole::MiniGame::TartarusHounds::View::ViewEntityGame_GridPage* page)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MiniGame::TartarusHounds::View::ViewEntityGame_GridPage*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_REMOVEGRIDEPAGE_OFFSET))(this, page);
+		}
+
+		::System::Void CollectBlockAsset(::MoleMole::MiniGame::TartarusHounds::View::ViewEntityBlock* block)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MiniGame::TartarusHounds::View::ViewEntityBlock*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_COLLECTBLOCKASSET_OFFSET))(this, block);
+		}
+
+		::System::Void CollectSandAsset(::MoleMole::MiniGame::TartarusHounds::View::SandBlockView* sand)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MiniGame::TartarusHounds::View::SandBlockView*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_COLLECTSANDASSET_OFFSET))(this, sand);
+		}
+
+		::MoleMole::MiniGame::TartarusHounds::View::ViewEntityBlock* CacheOrCreateBlock(::Class_1_B3810BE455E7DF21* logicBlock)
+		{
+			return ((::MoleMole::MiniGame::TartarusHounds::View::ViewEntityBlock*(*)(::PVOID, ::Class_1_B3810BE455E7DF21*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_CACHEORCREATEBLOCK_OFFSET))(this, logicBlock);
+		}
+
+		::MoleMole::MiniGame::TartarusHounds::View::SandBlockView* CacheOrCreateSandBlock()
+		{
+			return ((::MoleMole::MiniGame::TartarusHounds::View::SandBlockView*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_CACHEORCREATESANDBLOCK_OFFSET))(this);
+		}
+
+		::System::Void Pause()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_PAUSE_OFFSET))(this);
+		}
+
+		::System::Void UnPause()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_UNPAUSE_OFFSET))(this);
+		}
+
+		::System::Void ShowAddLifeEffect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_SHOWADDLIFEEFFECT_OFFSET))(this);
+		}
+
+		::System::Void StopAddLifeEffect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_STOPADDLIFEEFFECT_OFFSET))(this);
+		}
+
+		::System::Void CheckAndPutBestScoreLine()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_CHECKANDPUTBESTSCORELINE_OFFSET))(this);
+		}
+
+		::System::Void CheckPassBestScoreLine()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_CHECKPASSBESTSCORELINE_OFFSET))(this);
+		}
+
+		::System::Void TickHistoryBestLine(::System::Single dt)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_TICKHISTORYBESTLINE_OFFSET))(this, dt);
+		}
+
+		::System::Void StopHistoryBestLine()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_STOPHISTORYBESTLINE_OFFSET))(this);
+		}
+
+		::System::Void RecordLastBestScore(::System::UInt32 bestScore)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_RECORDLASTBESTSCORE_OFFSET))(this, bestScore);
+		}
+
+		::System::Void InitAnimationStateInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_INITANIMATIONSTATEINFO_OFFSET))(this);
+		}
+
+		::System::Single LevelDuration()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_LEVELDURATION_OFFSET))(this);
+		}
+
+		::System::Single GameDuration()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GAMEDURATION_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 GetGridStartPosition()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETGRIDSTARTPOSITION_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 GetGridPos(::System::Int32 col, ::System::Int32 row, ::System::Boolean alignLeft)
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME_GETGRIDPOS_OFFSET))(this, col, row, alignLeft);
+		}
+
+		::System::Void _OnEvent_b__164_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME__ONEVENT_B__164_0_OFFSET))(this);
+		}
+	};
+}

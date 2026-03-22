@@ -1,0 +1,61 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/ICSharpCode/SharpZipLib/Encryption/PkzipClassicCryptoBase.h"
+
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1B1419D0)
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_GET_CANREUSETRANSFORM_OFFSET UNITYSDK_OFFSET(0x1B141990)
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_GET_CANTRANSFORMMULTIPLEBLOCKS_OFFSET UNITYSDK_OFFSET(0x1B1419C0)
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_GET_INPUTBLOCKSIZE_OFFSET UNITYSDK_OFFSET(0x1B1419A0)
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_GET_OUTPUTBLOCKSIZE_OFFSET UNITYSDK_OFFSET(0x1B1419B0)
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_TRANSFORMBLOCK_OFFSET UNITYSDK_OFFSET(0x1B141880)
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_TRANSFORMFINALBLOCK_OFFSET UNITYSDK_OFFSET(0x1B141820)
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM__CTOR_OFFSET UNITYSDK_OFFSET(0x1B141810)
+
+namespace ICSharpCode::SharpZipLib::Encryption
+{
+	inline static constexpr unsigned int PkzipClassicDecryptCryptoTransform_TypeDefinitionIndex = 6662;
+
+	class PkzipClassicDecryptCryptoTransform : public ::ICSharpCode::SharpZipLib::Encryption::PkzipClassicCryptoBase
+	{
+	public:
+		::System::Void _ctor(::Il2CppArray<::System::Byte>* keyBlock)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM__CTOR_OFFSET))(this, keyBlock);
+		}
+
+		::Il2CppArray<::System::Byte>* TransformFinalBlock(::Il2CppArray<::System::Byte>* inputBuffer, ::System::Int32 inputOffset, ::System::Int32 inputCount)
+		{
+			return ((::Il2CppArray<::System::Byte>*(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_TRANSFORMFINALBLOCK_OFFSET))(this, inputBuffer, inputOffset, inputCount);
+		}
+
+		::System::Int32 TransformBlock(::Il2CppArray<::System::Byte>* inputBuffer, ::System::Int32 inputOffset, ::System::Int32 inputCount, ::Il2CppArray<::System::Byte>* outputBuffer, ::System::Int32 outputOffset)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32, ::Il2CppArray<::System::Byte>*, ::System::Int32))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_TRANSFORMBLOCK_OFFSET))(this, inputBuffer, inputOffset, inputCount, outputBuffer, outputOffset);
+		}
+
+		::System::Boolean get_CanReuseTransform()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_GET_CANREUSETRANSFORM_OFFSET))(this);
+		}
+
+		::System::Int32 get_InputBlockSize()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_GET_INPUTBLOCKSIZE_OFFSET))(this);
+		}
+
+		::System::Int32 get_OutputBlockSize()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_GET_OUTPUTBLOCKSIZE_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanTransformMultipleBlocks()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_GET_CANTRANSFORMMULTIPLEBLOCKS_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICDECRYPTCRYPTOTRANSFORM_DISPOSE_OFFSET))(this);
+		}
+	};
+}

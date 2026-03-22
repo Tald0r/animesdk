@@ -1,0 +1,99 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/LogicButtonInputType.h"
+#include "unitysdk/MoleMole/UIVirtualPlayBtnBaseController.h"
+
+class Class_2_8469E7523673A92C_15;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_GET_VIRTUALLOGICBUTTONINPUTTYPE_OFFSET UNITYSDK_OFFSET(0x9EB0E70)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_INITPLAYBTN_OFFSET UNITYSDK_OFFSET(0x9EB11A0)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9EB1070)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9EB1110)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9EB0E80)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9EB0F40)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_REFRESHBTNINFO_OFFSET UNITYSDK_OFFSET(0x9EB1000)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9EB1220)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER___BASE_INITPLAYBTN_OFFSET UNITYSDK_OFFSET(0x9EB1280)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9EB1290)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9EB1300)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9EB1310)
+#define MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9EB1320)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPushBoxPlayBtnAChildWindowController_TypeDefinitionIndex = 65496;
+
+	class UIPushBoxPlayBtnAChildWindowController : public ::MoleMole::UIVirtualPlayBtnBaseController
+	{
+	public:
+		::Class_2_8469E7523673A92C_15* _view; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::LogicButtonInputType get_VirtualLogicButtonInputType()
+		{
+			return ((::MoleMole::LogicButtonInputType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_GET_VIRTUALLOGICBUTTONINPUTTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void RefreshBtnInfo(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_REFRESHBTNINFO_OFFSET))(this, args);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitPlayBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER_INITPLAYBTN_OFFSET))(this);
+		}
+
+		::System::Void __base_InitPlayBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER___BASE_INITPLAYBTN_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPUSHBOXPLAYBTNACHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

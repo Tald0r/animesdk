@@ -1,0 +1,42 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
+
+namespace FlowCanvas { template <typename T> class ValueOutput_1; }
+namespace MoleMole::Battle { class Entity; }
+
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETTEAMENTITYNODE_GETTEAMENTITY_OFFSET UNITYSDK_OFFSET(0xF1A1430)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETTEAMENTITYNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xF1A1550)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETTEAMENTITYNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xF1A1620)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETTEAMENTITYNODE__REGISTERPORTS_B__2_0_OFFSET UNITYSDK_OFFSET(0xF1A1640)
+
+namespace MoleMole::FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int LDGetTeamEntityNode_TypeDefinitionIndex = 68281;
+
+	class LDGetTeamEntityNode : public ::FlowCanvas::Nodes::FlowControlNode
+	{
+	public:
+		::FlowCanvas::ValueOutput_1<::MoleMole::Battle::Entity*>* outPutValue; // 0xA8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDGETTEAMENTITYNODE__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::Battle::Entity* GetTeamEntity()
+		{
+			return ((::MoleMole::Battle::Entity*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDGETTEAMENTITYNODE_GETTEAMENTITY_OFFSET))(this);
+		}
+
+		::System::Void RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDGETTEAMENTITYNODE_REGISTERPORTS_OFFSET))(this);
+		}
+
+		::MoleMole::Battle::Entity* _RegisterPorts_b__2_0()
+		{
+			return ((::MoleMole::Battle::Entity*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDGETTEAMENTITYNODE__REGISTERPORTS_B__2_0_OFFSET))(this);
+		}
+	};
+}

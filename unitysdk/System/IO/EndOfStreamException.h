@@ -7,14 +7,14 @@ namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_IO_ENDOFSTREAMEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C7A7F0)
-#define SYSTEM_IO_ENDOFSTREAMEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C7A860)
-#define SYSTEM_IO_ENDOFSTREAMEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15C7A8D0)
-#define SYSTEM_IO_ENDOFSTREAMEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C7A750)
+#define SYSTEM_IO_ENDOFSTREAMEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1918E6B0)
+#define SYSTEM_IO_ENDOFSTREAMEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1918E720)
+#define SYSTEM_IO_ENDOFSTREAMEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1918E790)
+#define SYSTEM_IO_ENDOFSTREAMEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1918E610)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int EndOfStreamException_TypeDefinitionIndex = 666;
+	inline static constexpr unsigned int EndOfStreamException_TypeDefinitionIndex = 634;
 
 	class EndOfStreamException : public ::System::IO::IOException
 	{

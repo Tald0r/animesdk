@@ -3,7 +3,7 @@
 
 namespace System::Net::NetworkInformation
 {
-	inline static constexpr unsigned int LinuxArpHardware_TypeDefinitionIndex = 2930;
+	inline static constexpr unsigned int LinuxArpHardware_TypeDefinitionIndex = 3796;
 
 	enum class LinuxArpHardware : ::System::Int32
 	{

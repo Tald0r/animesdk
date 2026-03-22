@@ -5,23 +5,23 @@
 namespace System::Collections { class ListDictionaryInternal; }
 namespace System::Collections { class ListDictionaryInternal_DictionaryNode; }
 
-#define SYSTEM_COLLECTIONS_LISTDICTIONARYINTERNAL_NODEKEYVALUECOLLECTION_NODEKEYVALUEENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x15B19420)
-#define SYSTEM_COLLECTIONS_LISTDICTIONARYINTERNAL_NODEKEYVALUECOLLECTION_NODEKEYVALUEENUMERATOR_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x15B194A0)
-#define SYSTEM_COLLECTIONS_LISTDICTIONARYINTERNAL_NODEKEYVALUECOLLECTION_NODEKEYVALUEENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x15B19550)
-#define SYSTEM_COLLECTIONS_LISTDICTIONARYINTERNAL_NODEKEYVALUECOLLECTION_NODEKEYVALUEENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x15B193F0)
+#define SYSTEM_COLLECTIONS_LISTDICTIONARYINTERNAL_NODEKEYVALUECOLLECTION_NODEKEYVALUEENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x17F4BCF0)
+#define SYSTEM_COLLECTIONS_LISTDICTIONARYINTERNAL_NODEKEYVALUECOLLECTION_NODEKEYVALUEENUMERATOR_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x17F4BD70)
+#define SYSTEM_COLLECTIONS_LISTDICTIONARYINTERNAL_NODEKEYVALUECOLLECTION_NODEKEYVALUEENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x17F4BE20)
+#define SYSTEM_COLLECTIONS_LISTDICTIONARYINTERNAL_NODEKEYVALUECOLLECTION_NODEKEYVALUEENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x17F4BCC0)
 
 namespace System::Collections
 {
-	inline static constexpr unsigned int ListDictionaryInternal_NodeKeyValueCollection_NodeKeyValueEnumerator_TypeDefinitionIndex = 1477;
+	inline static constexpr unsigned int ListDictionaryInternal_NodeKeyValueCollection_NodeKeyValueEnumerator_TypeDefinitionIndex = 1480;
 
 	class ListDictionaryInternal_NodeKeyValueCollection_NodeKeyValueEnumerator : public ::System::Object
 	{
 	public:
-		::System::Collections::ListDictionaryInternal_DictionaryNode* current; // 0x10
-		::System::Collections::ListDictionaryInternal* list; // 0x18
+		::System::Collections::ListDictionaryInternal* list; // 0x10
+		::System::Collections::ListDictionaryInternal_DictionaryNode* current; // 0x18
 		::System::Int32 version; // 0x20
-		::System::Boolean isKeys; // 0x24
-		::System::Boolean start; // 0x25
+		::System::Boolean start; // 0x24
+		::System::Boolean isKeys; // 0x25
 
 		::System::Void _ctor(::System::Collections::ListDictionaryInternal* list, ::System::Boolean isKeys)
 		{

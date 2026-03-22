@@ -1,11 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/FixPoint.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_43BD383C98B4C0C5_104__CTOR_OFFSET UNITYSDK_OFFSET(0xF56E770)
+#define CLASS_1_43BD383C98B4C0C5_104__CTOR_OFFSET UNITYSDK_OFFSET(0xBA09410)
 
-inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_104_TypeDefinitionIndex = 42420;
+inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_104_TypeDefinitionIndex = 77537;
 
 class Class_1_43BD383C98B4C0C5_104 : public ::System::Object
 {

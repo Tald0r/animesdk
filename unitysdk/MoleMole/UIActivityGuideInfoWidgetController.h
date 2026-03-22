@@ -1,0 +1,134 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ActivityGuideUIBaseWidgetController.h"
+
+class Class_2_1B1C05BC0A38A2D5;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_GET_PLAYANIMWITHPARENT_OFFSET UNITYSDK_OFFSET(0xBD81CE0)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBD81FD0)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONGUDIEWIDGETACTIVITYEND_OFFSET UNITYSDK_OFFSET(0xBD82340)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xBD82170)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBD82100)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBD82070)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBD81CF0)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBD81DD0)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_PLAYFADEOUT_OFFSET UNITYSDK_OFFSET(0xBD821E0)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_REFRESHREMAINTIMERTEXT_OFFSET UNITYSDK_OFFSET(0xBD82270)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_REFRESHTITLE_OFFSET UNITYSDK_OFFSET(0xBD81EC0)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBD82420)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBD82450)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0xBD824C0)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBD824D0)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBD824E0)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBD824F0)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBD82550)
+#define MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_PLAYFADEOUT_OFFSET UNITYSDK_OFFSET(0xBD82560)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityGuideInfoWidgetController_TypeDefinitionIndex = 71259;
+
+	class UIActivityGuideInfoWidgetController : public ::MoleMole::ActivityGuideUIBaseWidgetController
+	{
+	public:
+		::Class_2_1B1C05BC0A38A2D5* _view; // 0x2C8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_PlayAnimWithParent()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_GET_PLAYANIMWITHPARENT_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void PlayFadeOut(::System::Action* callback, ::System::Single animSpeed)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_PLAYFADEOUT_OFFSET))(this, callback, animSpeed);
+		}
+
+		::System::Void RefreshRemainTimerText(::System::Int64 overrideTimeStamp)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_REFRESHREMAINTIMERTEXT_OFFSET))(this, overrideTimeStamp);
+		}
+
+		::System::Void OnGudieWidgetActivityEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_ONGUDIEWIDGETACTIVITYEND_OFFSET))(this);
+		}
+
+		::System::Void RefreshTitle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER_REFRESHTITLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_PlayFadeOut(::System::Action* P0, ::System::Single P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGUIDEINFOWIDGETCONTROLLER___BASE_PLAYFADEOUT_OFFSET))(this, P0, P1);
+		}
+	};
+}

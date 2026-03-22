@@ -1,0 +1,158 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_7807B2B04302CD7B_14;
+class Class_1_7807B2B04302CD7B_3;
+class Class_2_680CA39CC66C138B;
+class Class_2_FEED8F28D34F9161;
+namespace MoleMole { class UIAntiqueCollectWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xC09D070)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONANTIQUECOLLECTCHANGE_OFFSET UNITYSDK_OFFSET(0xC09E7C0)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONCLICKGOCOLLECT_OFFSET UNITYSDK_OFFSET(0xC09E710)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONCLICKINFO_OFFSET UNITYSDK_OFFSET(0xC09E6B0)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0xC09E600)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONCLICKTABITEM_OFFSET UNITYSDK_OFFSET(0xC09E2C0)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC09D080)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xC09DFD0)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xC09DF40)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC09D650)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC09D350)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC09D700)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_REFRESHCOLLECTLIST_OFFSET UNITYSDK_OFFSET(0xC09E370)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_REFRESHCOLLECTTAB_OFFSET UNITYSDK_OFFSET(0xC09D800)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC09E830)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC09E920)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xC09E990)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xC09E9F0)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC09EA00)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC09EA10)
+#define MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC09EA20)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIAntiqueCollectPageController_TypeDefinitionIndex = 44108;
+
+	class UIAntiqueCollectPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_FEED8F28D34F9161* _view; // 0x2F8
+		::MoleMole::UIAntiqueCollectWidgetController* _collectWidget; // 0x300
+		::Class_2_680CA39CC66C138B* _antiqueModel; // 0x308
+		::System::Collections::Generic::List_1<::Class_1_7807B2B04302CD7B_14*>* _collectTabItemDataList; // 0x310
+		::System::Int32 _collectTabId; // 0x318
+		::System::Collections::Generic::List_1<::Class_1_7807B2B04302CD7B_3*>* _collectItemDataList; // 0x320
+		::System::Int32 _collectId; // 0x328
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void RefreshCollectTab()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_REFRESHCOLLECTTAB_OFFSET))(this);
+		}
+
+		::System::Void OnClickTabItem(::Class_1_7807B2B04302CD7B_14* tabData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7807B2B04302CD7B_14*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONCLICKTABITEM_OFFSET))(this, tabData);
+		}
+
+		::System::Void RefreshCollectList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_REFRESHCOLLECTLIST_OFFSET))(this);
+		}
+
+		::System::Void OnClickItem(::Class_1_7807B2B04302CD7B_3* rowData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_7807B2B04302CD7B_3*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONCLICKITEM_OFFSET))(this, rowData);
+		}
+
+		::System::Void OnClickInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONCLICKINFO_OFFSET))(this);
+		}
+
+		::System::Boolean OnClickGoCollect(::System::Int32 collectId)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONCLICKGOCOLLECT_OFFSET))(this, collectId);
+		}
+
+		::System::Void OnAntiqueCollectChange(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER_ONANTIQUECOLLECTCHANGE_OFFSET))(this, obj);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIANTIQUECOLLECTPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

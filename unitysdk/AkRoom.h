@@ -3,51 +3,57 @@
 #include "unitysdk/AkTriggerHandler.h"
 
 class AkRoomAwareObject;
+namespace AK::Wwise { class AuxBus; }
 namespace AK::Wwise { class Event; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Collider; }
 namespace UnityEngine { class GameObject; }
 
-#define AKROOM_EXIT_OFFSET UNITYSDK_OFFSET(0x183BF010)
-#define AKROOM_GETAKROOMID_OFFSET UNITYSDK_OFFSET(0x183BECE0)
-#define AKROOM_GETID_OFFSET UNITYSDK_OFFSET(0x183BEDF0)
-#define AKROOM_GET_ROOMCOUNT_OFFSET UNITYSDK_OFFSET(0x183BEEC0)
-#define AKROOM_HANDLEEVENT_OFFSET UNITYSDK_OFFSET(0x183C12B0)
-#define AKROOM_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x183C0810)
-#define AKROOM_ONENABLE_OFFSET UNITYSDK_OFFSET(0x183BF0D0)
-#define AKROOM_ONTRIGGERENTER_OFFSET UNITYSDK_OFFSET(0x183C0EB0)
-#define AKROOM_ONTRIGGEREXIT_OFFSET UNITYSDK_OFFSET(0x183C0FC0)
-#define AKROOM_POSTROOMTONE_OFFSET UNITYSDK_OFFSET(0x183C10D0)
-#define AKROOM_SET_ROOMCOUNT_OFFSET UNITYSDK_OFFSET(0x183BEED0)
-#define AKROOM_TRYENTER_OFFSET UNITYSDK_OFFSET(0x183BEEE0)
-#define AKROOM__CTOR_OFFSET UNITYSDK_OFFSET(0x183C1300)
-#define AKROOM___IFIXBASEPROXY_ONENABLE_OFFSET UNITYSDK_OFFSET(0x183C1410)
+#define AKROOM_EXIT_OFFSET UNITYSDK_OFFSET(0x1ADE2430)
+#define AKROOM_GETAKROOMID_OFFSET UNITYSDK_OFFSET(0x1ADE1EA0)
+#define AKROOM_GETID_OFFSET UNITYSDK_OFFSET(0x1ADE20D0)
+#define AKROOM_GET_ROOMCOUNT_OFFSET UNITYSDK_OFFSET(0x1ADE2230)
+#define AKROOM_HANDLEEVENT_OFFSET UNITYSDK_OFFSET(0x1ADE39A0)
+#define AKROOM_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1ADE3070)
+#define AKROOM_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1ADE2530)
+#define AKROOM_ONTRIGGERENTER_OFFSET UNITYSDK_OFFSET(0x1ADE3620)
+#define AKROOM_ONTRIGGEREXIT_OFFSET UNITYSDK_OFFSET(0x1ADE3660)
+#define AKROOM_POSTROOMTONE_OFFSET UNITYSDK_OFFSET(0x1ADE36A0)
+#define AKROOM_SET_ROOMCOUNT_OFFSET UNITYSDK_OFFSET(0x1ADE2290)
+#define AKROOM_TRYENTER_OFFSET UNITYSDK_OFFSET(0x1ADE22F0)
+#define AKROOM__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ADE3B40)
+#define AKROOM__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADE39B0)
 
-inline static constexpr unsigned int AkRoom_TypeDefinitionIndex = 33690;
+inline static constexpr unsigned int AkRoom_TypeDefinitionIndex = 30132;
 
 class AkRoom : public ::AkTriggerHandler
 {
 public:
 	static ::System::Int32* StaticGet__RoomCount_k__BackingField()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(AkRoom_TypeDefinitionIndex)->GetStaticField(0xCE40);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(AkRoom_TypeDefinitionIndex)->GetStaticField(0x78A0);
 	}
 	static ::System::UInt64* StaticGet_INVALID_ROOM_ID()
 	{
-		return (::System::UInt64*)Il2CppClass::FromTypeDefinitionIndex(AkRoom_TypeDefinitionIndex)->GetStaticField(0xCE48);
+		return (::System::UInt64*)Il2CppClass::FromTypeDefinitionIndex(AkRoom_TypeDefinitionIndex)->GetStaticField(0x78A8);
 	}
 	::System::Int32 priority; // 0x30
-	::System::UInt32 reverbAuxBusID; // 0x34
-	::System::Single reverbLevel; // 0x38
-	::System::Single wallOcclusion; // 0x3C
-	::AK::Wwise::Event* roomToneEvent; // 0x40
-	::System::Single roomToneAuxSend; // 0x48
-	::System::Collections::Generic::List_1<::AkRoomAwareObject*>* roomAwareObjectsEntered; // 0x50
-	::System::Collections::Generic::List_1<::AkRoomAwareObject*>* roomAwareObjectsDetectedWhileDisabled; // 0x58
+	::AK::Wwise::AuxBus* reverbAuxBus; // 0x38
+	::System::Single reverbLevel; // 0x40
+	::System::Single wallOcclusion; // 0x44
+	::AK::Wwise::Event* roomToneEvent; // 0x48
+	::System::Single roomToneAuxSend; // 0x50
+	::System::Collections::Generic::List_1<::AkRoomAwareObject*>* roomAwareObjectsEntered; // 0x58
+	::System::Collections::Generic::List_1<::AkRoomAwareObject*>* roomAwareObjectsDetectedWhileDisabled; // 0x60
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKROOM__CTOR_OFFSET))(this);
+	}
+
+	static ::System::Void _cctor()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + AKROOM__CCTOR_OFFSET))();
 	}
 
 	static ::System::UInt64 GetAkRoomID(::AkRoom* room)
@@ -108,10 +114,5 @@ public:
 	::System::Void HandleEvent(::UnityEngine::GameObject* in_gameObject)
 	{
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + AKROOM_HANDLEEVENT_OFFSET))(this, in_gameObject);
-	}
-
-	::System::Void __iFixBaseProxy_OnEnable()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKROOM___IFIXBASEPROXY_ONENABLE_OFFSET))(this);
 	}
 };

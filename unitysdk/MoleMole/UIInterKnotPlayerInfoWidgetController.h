@@ -1,0 +1,93 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_A8C94EA612F5CBF3_2;
+namespace MoleMole { class UIControlReference; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC87D720)
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_ONITEMGET_OFFSET UNITYSDK_OFFSET(0xC87F110)
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_ONREFRESHHEADPORTRAIT_OFFSET UNITYSDK_OFFSET(0xC87ED00)
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC87D7C0)
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC87D4A0)
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_OPENHEAD_OFFSET UNITYSDK_OFFSET(0xC87EED0)
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_REFRESHPLAYEREXP_OFFSET UNITYSDK_OFFSET(0xC87E0B0)
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xC87D8A0)
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC87F2B0)
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC87F2E0)
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC87F350)
+#define MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC87F3D0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInterKnotPlayerInfoWidgetController_TypeDefinitionIndex = 41982;
+
+	class UIInterKnotPlayerInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_A8C94EA612F5CBF3_2* _view; // 0x2A0
+		::System::Single _progressBarMaxWidth; // 0x2A8
+		::System::Boolean _frameTextureInit; // 0x2AC
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshPlayerExp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_REFRESHPLAYEREXP_OFFSET))(this);
+		}
+
+		::System::Void OnRefreshHeadPortrait(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_ONREFRESHHEADPORTRAIT_OFFSET))(this, args);
+		}
+
+		static ::System::Void OpenHead()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_OPENHEAD_OFFSET))();
+		}
+
+		::System::Void OnItemGet(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER_ONITEMGET_OFFSET))(this, args);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINTERKNOTPLAYERINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

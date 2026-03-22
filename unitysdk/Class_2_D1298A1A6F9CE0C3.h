@@ -1,0 +1,143 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_59919CA8B8CC259B.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_1_1685EC66FBD28897;
+class Class_1_D375C91CCE5D3999;
+class Class_1_EEA0111A28582B57;
+class Class_2_1B1C05BC0A38A2D5;
+class Class_2_1BB071BAE5B88115;
+class Class_2_468A4FBF2E9F527C;
+namespace MoleMole { class UIActivityBuffMemoryBattleFieldCompWidgetController; }
+namespace MoleMole { class UIActivityGuideInfoWidgetController; }
+namespace MoleMole { class UIBaseController; }
+namespace MoleMole { class UIGeneralConsoleExistGoBtnWidgetController; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_076C0B1D57389E7A_OFFSET UNITYSDK_OFFSET(0x907DE40)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_0ECFC40900BF36DA_OFFSET UNITYSDK_OFFSET(0x9080580)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_2097174150E430B8_OFFSET UNITYSDK_OFFSET(0x90805F0)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x90803D0)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_460F8AE6EF9687FD_OFFSET UNITYSDK_OFFSET(0x907EF20)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_4EA6B1791DACA9CC_OFFSET UNITYSDK_OFFSET(0x907EC20)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_5FC177EE4AE7B1D8_OFFSET UNITYSDK_OFFSET(0x9080510)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_78037B64B814568E_OFFSET UNITYSDK_OFFSET(0x907E540)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_821BBDC04720A2EB_OFFSET UNITYSDK_OFFSET(0x907EFA0)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_9681042564541CD6_OFFSET UNITYSDK_OFFSET(0x907EE70)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_99053D1AE5A59190_OFFSET UNITYSDK_OFFSET(0x907E0D0)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_A0BF5729B5768209_OFFSET UNITYSDK_OFFSET(0x907FF30)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x9080370)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_CA373AA1C7054598_2_OFFSET UNITYSDK_OFFSET(0x9080450)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_CA373AA1C7054598_3_OFFSET UNITYSDK_OFFSET(0x90804B0)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x9080310)
+#define CLASS_2_D1298A1A6F9CE0C3_METHOD_2_EDFD49C942C75D6C_OFFSET UNITYSDK_OFFSET(0x9080710)
+#define CLASS_2_D1298A1A6F9CE0C3__CTOR_OFFSET UNITYSDK_OFFSET(0x907DD30)
+
+inline static constexpr unsigned int Class_2_D1298A1A6F9CE0C3_TypeDefinitionIndex = 51347;
+
+class Class_2_D1298A1A6F9CE0C3 : public ::Class_1_59919CA8B8CC259B
+{
+public:
+	::Class_2_1BB071BAE5B88115* Field_2_6; // 0x30
+	::Class_2_1B1C05BC0A38A2D5* Field_2_1; // 0x38
+	::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_1_0D6706375CDAAE8C*>* Field_2_5; // 0x40
+	::Class_2_468A4FBF2E9F527C* Field_2_2; // 0x48
+	::MoleMole::UIActivityGuideInfoWidgetController* Field_2_0; // 0x50
+	::MoleMole::UIGeneralConsoleExistGoBtnWidgetController* Field_2_8; // 0x58
+	::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* Field_2_4; // 0x60
+	::MoleMole::UIActivityBuffMemoryBattleFieldCompWidgetController* Field_2_3; // 0x68
+	::System::Int32 Field_2_7; // 0x70
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_076C0B1D57389E7A(::MoleMole::UIBaseController* a1, ::Class_1_EEA0111A28582B57* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UIBaseController*, ::Class_1_EEA0111A28582B57*))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_076C0B1D57389E7A_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_99053D1AE5A59190()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_99053D1AE5A59190_OFFSET))(this);
+	}
+
+	::System::Void Method_2_4EA6B1791DACA9CC()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_4EA6B1791DACA9CC_OFFSET))(this);
+	}
+
+	::System::Void Method_2_9681042564541CD6()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_9681042564541CD6_OFFSET))(this);
+	}
+
+	::System::Void Method_2_460F8AE6EF9687FD()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_460F8AE6EF9687FD_OFFSET))(this);
+	}
+
+	::System::Void Method_2_821BBDC04720A2EB()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_821BBDC04720A2EB_OFFSET))(this);
+	}
+
+	::System::Void Method_2_A0BF5729B5768209(::Class_1_D375C91CCE5D3999* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_A0BF5729B5768209_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_4343F372F34C05BF()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_4343F372F34C05BF_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_2()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_CA373AA1C7054598_2_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_3()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_CA373AA1C7054598_3_OFFSET))(this);
+	}
+
+	::System::Void Method_2_5FC177EE4AE7B1D8(::System::EventArgs* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_5FC177EE4AE7B1D8_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_0ECFC40900BF36DA(::MoleMole::UIBaseController* a1, ::Class_1_EEA0111A28582B57* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::UIBaseController*, ::Class_1_EEA0111A28582B57*))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_0ECFC40900BF36DA_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_2097174150E430B8(::Class_1_D375C91CCE5D3999* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_2097174150E430B8_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_EDFD49C942C75D6C()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_EDFD49C942C75D6C_OFFSET))(this);
+	}
+
+	::System::Void Method_2_78037B64B814568E()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D1298A1A6F9CE0C3_METHOD_2_78037B64B814568E_OFFSET))(this);
+	}
+};

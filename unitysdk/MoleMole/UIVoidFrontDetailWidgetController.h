@@ -1,0 +1,162 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_214A08D8A91F32A6;
+class Class_2_79AE422BA06F6D26_238;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIVoidFrontDetailBattleWidgetController; }
+namespace MoleMole { class UIVoidFrontDetailStoryWidgetController; }
+namespace System { class Action; }
+
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ISLEFTLIMIT_OFFSET UNITYSDK_OFFSET(0x9A340E0)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ISRIGHTLIMIT_OFFSET UNITYSDK_OFFSET(0x9A34170)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONCLOSEBTNCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0x9A32D50)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9A33F60)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONINFOBTNCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0x9A32E20)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONLEFTARROWBTNCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0x9A32FB0)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONRIGHTARROWBTNCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0x9A33770)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9A34000)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9A327C0)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9A33810)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x9A338C0)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_SETCLOSEACTION_OFFSET UNITYSDK_OFFSET(0x9A32CE0)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_SETNODESTATE_OFFSET UNITYSDK_OFFSET(0x9A33160)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_TRIGGERCLOSEBTN_OFFSET UNITYSDK_OFFSET(0x9A33D90)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_UPDATEARROW_OFFSET UNITYSDK_OFFSET(0x9A33A00)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9A34240)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER__ONUIINIT_B__6_0_OFFSET UNITYSDK_OFFSET(0x9A34270)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER__ONUIINIT_B__6_1_OFFSET UNITYSDK_OFFSET(0x9A34280)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9A34290)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9A34300)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9A34380)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9A343E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVoidFrontDetailWidgetController_TypeDefinitionIndex = 76981;
+
+	class UIVoidFrontDetailWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::Int32 BattleNodeInfoId = 0x1E9422; // 0x0
+		// static const ::System::Int32 StoryNodeInfoId = 0x1E9423; // 0x0
+		::Class_2_79AE422BA06F6D26_238* _view; // 0x2A0
+		::System::Int32 _nodeId; // 0x2A8
+		::Class_2_214A08D8A91F32A6* _frontModel; // 0x2B0
+		::MoleMole::UIVoidFrontDetailBattleWidgetController* _battleWidgetCtrl; // 0x2B8
+		::MoleMole::UIVoidFrontDetailStoryWidgetController* _storyWidgetCtrl; // 0x2C0
+		::System::Action* _onCloseAction; // 0x2C8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void SetCloseAction(::System::Action* onCloseAction)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_SETCLOSEACTION_OFFSET))(this, onCloseAction);
+		}
+
+		::System::Void OnCloseBtnClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONCLOSEBTNCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnInfoBtnClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONINFOBTNCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnLeftArrowBtnClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONLEFTARROWBTNCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnRightArrowBtnClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONRIGHTARROWBTNCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void RefreshView(::System::Int32 nodeId, ::System::Int32 openBattlePrepareId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, nodeId, openBattlePrepareId);
+		}
+
+		::System::Void SetNodeState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_SETNODESTATE_OFFSET))(this);
+		}
+
+		::System::Void TriggerCloseBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_TRIGGERCLOSEBTN_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void UpdateArrow()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_UPDATEARROW_OFFSET))(this);
+		}
+
+		::System::Boolean IsLeftLimit()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ISLEFTLIMIT_OFFSET))(this);
+		}
+
+		::System::Boolean IsRightLimit()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER_ISRIGHTLIMIT_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__6_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER__ONUIINIT_B__6_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__6_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER__ONUIINIT_B__6_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

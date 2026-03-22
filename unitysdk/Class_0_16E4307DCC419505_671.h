@@ -1,9 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace RPG::Client { class RogueMagicScepterInfo; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_671_TypeDefinitionIndex = 53483;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_671_TypeDefinitionIndex = 69942;
 
 class Class_0_16E4307DCC419505_671
 {

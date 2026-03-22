@@ -1,0 +1,76 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_794BA983EDDBCFDE_Class_2_BD4CB46CB1BDBF16;
+class Class_2_AA8A1DE0DBEE1813_Class_2_7E801CC5582EBB05;
+namespace MoleMole { class UIPrivateMessageReplyWidgetController; }
+namespace System { class Action; }
+namespace UnityEngine::Events { class UnityAction; }
+
+#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__CTOR_OFFSET UNITYSDK_OFFSET(0x94688E0)
+#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__0_OFFSET UNITYSDK_OFFSET(0x9468AC0)
+#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__1_OFFSET UNITYSDK_OFFSET(0x94688F0)
+#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__2_OFFSET UNITYSDK_OFFSET(0x94689A0)
+#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__3_OFFSET UNITYSDK_OFFSET(0x9468B50)
+#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__4_OFFSET UNITYSDK_OFFSET(0x9468DB0)
+#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__5_OFFSET UNITYSDK_OFFSET(0x9468EB0)
+#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__7_OFFSET UNITYSDK_OFFSET(0x9469010)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPrivateMessageReplyWidgetController___c__DisplayClass24_0_TypeDefinitionIndex = 48102;
+
+	class UIPrivateMessageReplyWidgetController___c__DisplayClass24_0 : public ::System::Object
+	{
+	public:
+		::System::Action* __9__4; // 0x10
+		::MoleMole::UIPrivateMessageReplyWidgetController* __4__this; // 0x18
+		::System::Action* __9__7; // 0x20
+		::Class_1_794BA983EDDBCFDE_Class_2_BD4CB46CB1BDBF16* singleMessage; // 0x28
+		::Class_2_AA8A1DE0DBEE1813_Class_2_7E801CC5582EBB05* personalView; // 0x30
+		::UnityEngine::Events::UnityAction* __9__2; // 0x38
+		::System::Action* __9__5; // 0x40
+		::UnityEngine::Events::UnityAction* __9__3; // 0x48
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _UpdatePersonalMission_b__1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__1_OFFSET))(this);
+		}
+
+		::System::Void _UpdatePersonalMission_b__2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__2_OFFSET))(this);
+		}
+
+		::System::Void _UpdatePersonalMission_b__0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__0_OFFSET))(this);
+		}
+
+		::System::Void _UpdatePersonalMission_b__3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__3_OFFSET))(this);
+		}
+
+		::System::Void _UpdatePersonalMission_b__4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__4_OFFSET))(this);
+		}
+
+		::System::Void _UpdatePersonalMission_b__5()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__5_OFFSET))(this);
+		}
+
+		::System::Void _UpdatePersonalMission_b__7()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS24_0__UPDATEPERSONALMISSION_B__7_OFFSET))(this);
+		}
+	};
+}

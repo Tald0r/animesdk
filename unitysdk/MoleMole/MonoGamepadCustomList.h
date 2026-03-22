@@ -1,0 +1,619 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_D0F2373931CC685D_1.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/InputLogicEventType.h"
+#include "unitysdk/MoleMole/MonoGamepadBaseList.h"
+#include "unitysdk/MoleMole/MonoGamepadBaseList_Enum_3_DEF326BBD0C22D5B.h"
+#include "unitysdk/MoleMole/MonoGamepadBaseList_Struct_2_1A82DD538E15537D.h"
+#include "unitysdk/MoleMole/MonoGamepadCustomList_Struct_2_050CB677143DAD21.h"
+#include "unitysdk/System/Nullable_1.h"
+#include "unitysdk/UnityEngine/RectTransform_Axis.h"
+
+namespace MoleMole { class MonoGamepadSelectable; }
+namespace MoleMole { class UIOnEnableAndDisableHandler; }
+namespace MoleMole { class UIOnTransformChildrenChangedHandler; }
+namespace System { class Action; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class Transform; }
+namespace UnityEngine::UI { class LayoutGroup; }
+
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_ADD_ONAFTERREBINDDATAINDEXTOGAMEOBJECT_OFFSET UNITYSDK_OFFSET(0x992E0A0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_ADD_ONBEFOREREBINDDATAINDEXTOGAMEOBJECT_OFFSET UNITYSDK_OFFSET(0x992DFC0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_ALLOWLOOP_OFFSET UNITYSDK_OFFSET(0x992DB70)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_CANNAVIGATETO_OFFSET UNITYSDK_OFFSET(0x9927900)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_CHECKNEEDREFRESHORRESELECTCURITEM_OFFSET UNITYSDK_OFFSET(0x992BD90)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_CLICKITEM_OFFSET UNITYSDK_OFFSET(0x992CBD0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_DESELECTALLITEM_OFFSET UNITYSDK_OFFSET(0x992CB00)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_DESELECTINPUTFIELD_OFFSET UNITYSDK_OFFSET(0x992C9C0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_DESELECTITEM_OFFSET UNITYSDK_OFFSET(0x992CA40)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_FINDINDEX_OFFSET UNITYSDK_OFFSET(0x992C130)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETCLICKITEMEVENT_OFFSET UNITYSDK_OFFSET(0x992DD90)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETCOLCOUNT_OFFSET UNITYSDK_OFFSET(0x9927580)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETCURSELECT_OFFSET UNITYSDK_OFFSET(0x992C940)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETDOWNITEMEVENT_OFFSET UNITYSDK_OFFSET(0x992DE00)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETINDEXBYITEMTRANS_OFFSET UNITYSDK_OFFSET(0x992DC50)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETITEMCOUNT_OFFSET UNITYSDK_OFFSET(0x9927280)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETITEMTRANSBYINDEX_OFFSET UNITYSDK_OFFSET(0x9929C90)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETLAYOUTTYPE_OFFSET UNITYSDK_OFFSET(0x9927880)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETLEFTITEMEVENT_OFFSET UNITYSDK_OFFSET(0x992DE70)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETMOVETYPE_OFFSET UNITYSDK_OFFSET(0x9927800)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETRIGHTITEMEVENT_OFFSET UNITYSDK_OFFSET(0x992DEE0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETROWCOUNT_OFFSET UNITYSDK_OFFSET(0x9927300)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETSELECTEDINDEX_OFFSET UNITYSDK_OFFSET(0x992D8D0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETSELECTEDITEMTRANS_OFFSET UNITYSDK_OFFSET(0x992DBE0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETUPITEMEVENT_OFFSET UNITYSDK_OFFSET(0x992DF50)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETVALIDINDEX_OFFSET UNITYSDK_OFFSET(0x992A5F0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_GET_ISNESTEDLISTFOCUS_OFFSET UNITYSDK_OFFSET(0x992C310)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_ISFUNCTIONENABLED_OFFSET UNITYSDK_OFFSET(0x9927A30)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_LISTISEMPTY_OFFSET UNITYSDK_OFFSET(0x9927980)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_0DF420E95D6252BE_OFFSET UNITYSDK_OFFSET(0x992BF20)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_16315571ECE95823_OFFSET UNITYSDK_OFFSET(0x992AD00)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_1808E1CF7A125519_OFFSET UNITYSDK_OFFSET(0x992C3B0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_1D4018D4200358D0_OFFSET UNITYSDK_OFFSET(0x992C330)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_2952376CFC9A242D_OFFSET UNITYSDK_OFFSET(0x9929B00)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0x992BD20)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_399C08F8B0DA6BEB_OFFSET UNITYSDK_OFFSET(0x992A740)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_464B80C09A37526F_OFFSET UNITYSDK_OFFSET(0x992A890)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_4AADAF19CDCB660E_OFFSET UNITYSDK_OFFSET(0x992BE10)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_6B01C4A3CA21A671_OFFSET UNITYSDK_OFFSET(0x9926F80)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_769130112C02B4E7_OFFSET UNITYSDK_OFFSET(0x9929580)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_7AAA6FC0F0F914CF_OFFSET UNITYSDK_OFFSET(0x992E770)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_7B32E6463125895B_OFFSET UNITYSDK_OFFSET(0x9927E10)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_7F29568EA964E563_OFFSET UNITYSDK_OFFSET(0x992A240)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_85B7BB2872D8C45B_OFFSET UNITYSDK_OFFSET(0x992EA90)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_8C704EC832EDEFC8_OFFSET UNITYSDK_OFFSET(0x992B880)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_9AB55F553C4AC6E8_OFFSET UNITYSDK_OFFSET(0x992C030)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_A791C4352965B7A7_OFFSET UNITYSDK_OFFSET(0x992E880)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_B10D028FBFD259C7_OFFSET UNITYSDK_OFFSET(0x992EB00)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_B1936CE4DA97AA45_OFFSET UNITYSDK_OFFSET(0x9927D30)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_B2E0D5A75E5FF2A2_OFFSET UNITYSDK_OFFSET(0x992EC00)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_B70677FD096FA635_OFFSET UNITYSDK_OFFSET(0x99281F0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_C22C2C63EC3727EE_OFFSET UNITYSDK_OFFSET(0x9929310)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x992B7B0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_CB8E229BDF290D41_OFFSET UNITYSDK_OFFSET(0x99282D0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_CD8EB704BDED69B6_OFFSET UNITYSDK_OFFSET(0x9925E80)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_CEF99C34729D7187_OFFSET UNITYSDK_OFFSET(0x992EB70)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_D008B8827E0F3A1B_OFFSET UNITYSDK_OFFSET(0x992CCA0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_DF3C54A5ADEABAF1_1_OFFSET UNITYSDK_OFFSET(0x9929D40)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_DF3C54A5ADEABAF1_OFFSET UNITYSDK_OFFSET(0x9928EE0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_DF9D913546967266_OFFSET UNITYSDK_OFFSET(0x9929230)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_E1D1B0292DAFCA32_OFFSET UNITYSDK_OFFSET(0x992ABC0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_FA58824BA12F6F62_OFFSET UNITYSDK_OFFSET(0x992AFB0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_ONNESTEDFOCUS_OFFSET UNITYSDK_OFFSET(0x992DA90)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_ONNESTEDLOSTFOCUS_OFFSET UNITYSDK_OFFSET(0x992DB10)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_ONOTHERUIENABLEANDDISABLE_OFFSET UNITYSDK_OFFSET(0x992B810)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_ONROOTNESTEDMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0x992D380)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_ONROOTNESTEDMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0x992D940)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_REFRESH_OFFSET UNITYSDK_OFFSET(0x9925E10)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_REMOVE_ONAFTERREBINDDATAINDEXTOGAMEOBJECT_OFFSET UNITYSDK_OFFSET(0x992E110)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_REMOVE_ONBEFOREREBINDDATAINDEXTOGAMEOBJECT_OFFSET UNITYSDK_OFFSET(0x992E030)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_RESETMANAGEITEMLISTBYCOLLECTSELECTABLE_OFFSET UNITYSDK_OFFSET(0x992B530)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_RESETMANAGEITEMS_OFFSET UNITYSDK_OFFSET(0x992B0A0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_SELECTITEMWITHOUTTRIGGERCLICK_OFFSET UNITYSDK_OFFSET(0x992C780)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_SELECTITEM_1_OFFSET UNITYSDK_OFFSET(0x992C8C0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_SELECTITEM_2_OFFSET UNITYSDK_OFFSET(0x992B270)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_SELECTITEM_OFFSET UNITYSDK_OFFSET(0x992C480)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_SETMANAGEALLDIRECTCHILDREN_OFFSET UNITYSDK_OFFSET(0x992B030)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_SETSTATICGRIDLIST_OFFSET UNITYSDK_OFFSET(0x9926D80)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_SET_ISNESTEDLISTFOCUS_OFFSET UNITYSDK_OFFSET(0x992C320)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST_SHOULDIGNOREITEM_OFFSET UNITYSDK_OFFSET(0x9927BE0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x992E180)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_CANNAVIGATETO_OFFSET UNITYSDK_OFFSET(0x992E2F0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_GETLISTMETAINFO_OFFSET UNITYSDK_OFFSET(0x992E300)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ISFUNCTIONENABLED_OFFSET UNITYSDK_OFFSET(0x992E390)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ISLISTFOCUS_OFFSET UNITYSDK_OFFSET(0x992E400)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ISLISTREALFOCUS_OFFSET UNITYSDK_OFFSET(0x992E410)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_LISTISEMPTY_OFFSET UNITYSDK_OFFSET(0x992E480)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x992E4E0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULEAWAKE_OFFSET UNITYSDK_OFFSET(0x992E570)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULECLEAR_OFFSET UNITYSDK_OFFSET(0x992E5D0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULEDESTROY_OFFSET UNITYSDK_OFFSET(0x992E5E0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULEENABLE_OFFSET UNITYSDK_OFFSET(0x992E640)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULEFOCUS_OFFSET UNITYSDK_OFFSET(0x992E6D0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULELATEUPDATE_OFFSET UNITYSDK_OFFSET(0x992E6E0)
+#define MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULELOSTFOCUS_OFFSET UNITYSDK_OFFSET(0x992E760)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int MonoGamepadCustomList_TypeDefinitionIndex = 64084;
+
+	class MonoGamepadCustomList : public ::MoleMole::MonoGamepadBaseList
+	{
+	public:
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* _managedItems; // 0x150
+		::System::Boolean _manageAllDirectChildren; // 0x158
+		::UnityEngine::Transform* _overrideContentRootTrans; // 0x160
+		::System::Boolean _useNewLogicForRefreshGameObject; // 0x168
+		::MoleMole::MonoGamepadBaseList_Enum_3_DEF326BBD0C22D5B _layout; // 0x16C
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* Field_7_5; // 0x170
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* Field_7_6; // 0x178
+		::MoleMole::MonoGamepadCustomList_Struct_2_050CB677143DAD21 Field_7_7; // 0x180
+		::UnityEngine::UI::LayoutGroup* Field_7_8; // 0x190
+		::UnityEngine::RectTransform_Axis Field_7_9; // 0x198
+		::UnityEngine::RectTransform_Axis Field_7_10; // 0x19C
+		::System::Boolean Field_7_11; // 0x1A0
+		::System::Int32 Field_7_12; // 0x1A4
+		::System::Int32 Field_7_13; // 0x1A8
+		::System::Boolean Field_7_14; // 0x1AC
+		::System::Action* Field_7_15; // 0x1B0
+		::System::Action* Field_7_16; // 0x1B8
+		::System::Boolean Field_7_17; // 0x1C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Refresh()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_REFRESH_OFFSET))(this);
+		}
+
+		::System::Void SetStaticGridList(::System::Int32 a1, ::System::Int32 a2, ::UnityEngine::RectTransform_Axis a3, ::UnityEngine::RectTransform_Axis a4, ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* a5)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::UnityEngine::RectTransform_Axis, ::UnityEngine::RectTransform_Axis, ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_SETSTATICGRIDLIST_OFFSET))(this, a1, a2, a3, a4, a5);
+		}
+
+		::MoleMole::MonoGamepadBaseList_Struct_2_1A82DD538E15537D Method_7_6B01C4A3CA21A671()
+		{
+			return ((::MoleMole::MonoGamepadBaseList_Struct_2_1A82DD538E15537D(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_6B01C4A3CA21A671_OFFSET))(this);
+		}
+
+		::System::Boolean CanNavigateTo()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_CANNAVIGATETO_OFFSET))(this);
+		}
+
+		::System::Boolean IsFunctionEnabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_ISFUNCTIONENABLED_OFFSET))(this);
+		}
+
+		::System::Boolean ListIsEmpty()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_LISTISEMPTY_OFFSET))(this);
+		}
+
+		::System::Void Method_7_B1936CE4DA97AA45()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_B1936CE4DA97AA45_OFFSET))(this);
+		}
+
+		::System::Void Method_7_7B32E6463125895B()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_7B32E6463125895B_OFFSET))(this);
+		}
+
+		::System::Void Method_7_DF3C54A5ADEABAF1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_DF3C54A5ADEABAF1_OFFSET))(this);
+		}
+
+		::System::Boolean Method_7_DF9D913546967266(::MoleMole::InputActionEvent a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_DF9D913546967266_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_7_C22C2C63EC3727EE(::MoleMole::InputActionEvent a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_C22C2C63EC3727EE_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_7_DF3C54A5ADEABAF1_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_DF3C54A5ADEABAF1_1_OFFSET))(this);
+		}
+
+		::System::Void Method_7_399C08F8B0DA6BEB(::System::Boolean a1, ::System::Boolean a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_399C08F8B0DA6BEB_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_7_FA58824BA12F6F62()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_FA58824BA12F6F62_OFFSET))(this);
+		}
+
+		::System::Void SetManageAllDirectChildren(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_SETMANAGEALLDIRECTCHILDREN_OFFSET))(this, a1);
+		}
+
+		::System::Void ResetManageItems(::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* a1, ::System::Int32 a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_RESETMANAGEITEMS_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void ResetManageItemListByCollectSelectable(::System::Int32 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_RESETMANAGEITEMLISTBYCOLLECTSELECTABLE_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_7_CA373AA1C7054598()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_CA373AA1C7054598_OFFSET))(this);
+		}
+
+		::System::Void OnOtherUIEnableAndDisable(::MoleMole::UIOnEnableAndDisableHandler* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIOnEnableAndDisableHandler*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_ONOTHERUIENABLEANDDISABLE_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_7_8C704EC832EDEFC8()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_8C704EC832EDEFC8_OFFSET))(this);
+		}
+
+		::System::Void CheckNeedRefreshOrReSelectCurItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_CHECKNEEDREFRESHORRESELECTCURITEM_OFFSET))(this);
+		}
+
+		::System::Int32 FindIndex(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_FINDINDEX_OFFSET))(this, a1);
+		}
+
+		::System::Boolean get_IsNestedListFocus()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GET_ISNESTEDLISTFOCUS_OFFSET))(this);
+		}
+
+		::System::Void set_IsNestedListFocus(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_SET_ISNESTEDLISTFOCUS_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_7_1D4018D4200358D0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_1D4018D4200358D0_OFFSET))(this);
+		}
+
+		::System::Boolean Method_7_1808E1CF7A125519()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_1808E1CF7A125519_OFFSET))(this);
+		}
+
+		::System::Boolean SelectItem(::System::Int32 a1, ::Enum_3_D0F2373931CC685D_1 a2, ::System::Boolean a3)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::Enum_3_D0F2373931CC685D_1, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_SELECTITEM_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Boolean SelectItemWithoutTriggerClick(::System::Int32 a1, ::System::Boolean a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_SELECTITEMWITHOUTTRIGGERCLICK_OFFSET))(this, a1, a2);
+		}
+
+		::System::Boolean SelectItem_1(::System::Int32 a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_SELECTITEM_1_OFFSET))(this, a1);
+		}
+
+		::System::Boolean SelectItem_2(::System::Int32 a1, ::System::Boolean a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_SELECTITEM_2_OFFSET))(this, a1, a2);
+		}
+
+		::MoleMole::MonoGamepadCustomList_Struct_2_050CB677143DAD21 GetCurSelect()
+		{
+			return ((::MoleMole::MonoGamepadCustomList_Struct_2_050CB677143DAD21(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETCURSELECT_OFFSET))(this);
+		}
+
+		::System::Boolean DeselectInputField()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_DESELECTINPUTFIELD_OFFSET))(this);
+		}
+
+		::System::Void DeselectItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_DESELECTITEM_OFFSET))(this);
+		}
+
+		::System::Void DeselectAllItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_DESELECTALLITEM_OFFSET))(this);
+		}
+
+		::System::Void ClickItem(::System::Int32 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_CLICKITEM_OFFSET))(this, a1);
+		}
+
+		::System::Boolean ShouldIgnoreItem(::System::Int32 a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_SHOULDIGNOREITEM_OFFSET))(this, a1);
+		}
+
+		::System::Nullable_1<::System::Int32> GetValidIndex(::System::Int32 a1)
+		{
+			return ((::System::Nullable_1<::System::Int32>(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETVALIDINDEX_OFFSET))(this, a1);
+		}
+
+		::System::Void OnRootNestedModuleFocus()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_ONROOTNESTEDMODULEFOCUS_OFFSET))(this);
+		}
+
+		::System::Void OnRootNestedModuleLostFocus(::System::Boolean a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_ONROOTNESTEDMODULELOSTFOCUS_OFFSET))(this, a1);
+		}
+
+		::System::Void OnNestedFocus()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_ONNESTEDFOCUS_OFFSET))(this);
+		}
+
+		::System::Void OnNestedLostFocus()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_ONNESTEDLOSTFOCUS_OFFSET))(this);
+		}
+
+		::UnityEngine::RectTransform_Axis GetMoveType()
+		{
+			return ((::UnityEngine::RectTransform_Axis(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETMOVETYPE_OFFSET))(this);
+		}
+
+		::UnityEngine::RectTransform_Axis GetLayoutType()
+		{
+			return ((::UnityEngine::RectTransform_Axis(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETLAYOUTTYPE_OFFSET))(this);
+		}
+
+		::System::Int32 GetItemCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETITEMCOUNT_OFFSET))(this);
+		}
+
+		::System::Int32 GetColCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETCOLCOUNT_OFFSET))(this);
+		}
+
+		::System::Int32 GetRowCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETROWCOUNT_OFFSET))(this);
+		}
+
+		::System::Boolean AllowLoop()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_ALLOWLOOP_OFFSET))(this);
+		}
+
+		::System::Int32 GetSelectedIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETSELECTEDINDEX_OFFSET))(this);
+		}
+
+		::UnityEngine::Transform* GetSelectedItemTrans()
+		{
+			return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETSELECTEDITEMTRANS_OFFSET))(this);
+		}
+
+		::UnityEngine::Transform* GetItemTransByIndex(::System::Int32 a1)
+		{
+			return ((::UnityEngine::Transform*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETITEMTRANSBYINDEX_OFFSET))(this, a1);
+		}
+
+		::System::Int32 GetIndexByItemTrans(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETINDEXBYITEMTRANS_OFFSET))(this, a1);
+		}
+
+		::MoleMole::InputLogicEventType GetClickItemEvent()
+		{
+			return ((::MoleMole::InputLogicEventType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETCLICKITEMEVENT_OFFSET))(this);
+		}
+
+		::MoleMole::InputLogicEventType GetDownItemEvent()
+		{
+			return ((::MoleMole::InputLogicEventType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETDOWNITEMEVENT_OFFSET))(this);
+		}
+
+		::MoleMole::InputLogicEventType GetLeftItemEvent()
+		{
+			return ((::MoleMole::InputLogicEventType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETLEFTITEMEVENT_OFFSET))(this);
+		}
+
+		::MoleMole::InputLogicEventType GetRightItemEvent()
+		{
+			return ((::MoleMole::InputLogicEventType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETRIGHTITEMEVENT_OFFSET))(this);
+		}
+
+		::MoleMole::InputLogicEventType GetUpItemEvent()
+		{
+			return ((::MoleMole::InputLogicEventType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_GETUPITEMEVENT_OFFSET))(this);
+		}
+
+		::System::Void add_OnBeforeRebindDataIndexToGameObject(::System::Action* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_ADD_ONBEFOREREBINDDATAINDEXTOGAMEOBJECT_OFFSET))(this, a1);
+		}
+
+		::System::Void remove_OnBeforeRebindDataIndexToGameObject(::System::Action* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_REMOVE_ONBEFOREREBINDDATAINDEXTOGAMEOBJECT_OFFSET))(this, a1);
+		}
+
+		::System::Void add_OnAfterRebindDataIndexToGameObject(::System::Action* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_ADD_ONAFTERREBINDDATAINDEXTOGAMEOBJECT_OFFSET))(this, a1);
+		}
+
+		::System::Void remove_OnAfterRebindDataIndexToGameObject(::System::Action* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_REMOVE_ONAFTERREBINDDATAINDEXTOGAMEOBJECT_OFFSET))(this, a1);
+		}
+
+		::System::Boolean __base_CanNavigateTo()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_CANNAVIGATETO_OFFSET))(this);
+		}
+
+		::MoleMole::MonoGamepadBaseList_Struct_2_1A82DD538E15537D __base_GetListMetaInfo()
+		{
+			return ((::MoleMole::MonoGamepadBaseList_Struct_2_1A82DD538E15537D(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_GETLISTMETAINFO_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsFunctionEnabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ISFUNCTIONENABLED_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsListFocus()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ISLISTFOCUS_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsListRealFocus()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ISLISTREALFOCUS_OFFSET))(this);
+		}
+
+		::System::Boolean __base_ListIsEmpty()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_LISTISEMPTY_OFFSET))(this);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONINPUTACTION_OFFSET))(this, a1);
+		}
+
+		::System::Void __base_OnModuleAwake()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULEAWAKE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnModuleClear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULECLEAR_OFFSET))(this);
+		}
+
+		::System::Void __base_OnModuleDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULEDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnModuleEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULEENABLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnModuleFocus()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULEFOCUS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnModuleLateUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULELATEUPDATE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnModuleLostFocus(::System::Boolean a1, ::System::Boolean a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST___BASE_ONMODULELOSTFOCUS_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_7_7AAA6FC0F0F914CF(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_7AAA6FC0F0F914CF_OFFSET))(this, a1);
+		}
+
+		::UnityEngine::Transform* Method_7_B70677FD096FA635()
+		{
+			return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_B70677FD096FA635_OFFSET))(this);
+		}
+
+		::System::Boolean Method_7_4AADAF19CDCB660E()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_4AADAF19CDCB660E_OFFSET))(this);
+		}
+
+		::System::Void Method_7_7F29568EA964E563()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_7F29568EA964E563_OFFSET))(this);
+		}
+
+		::System::Void Method_7_769130112C02B4E7(::System::Int32 a1, ::System::Boolean a2, ::System::Boolean a3, ::System::Boolean a4)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_769130112C02B4E7_OFFSET))(this, a1, a2, a3, a4);
+		}
+
+		::System::Void Method_7_2952376CFC9A242D(::System::Int32 a1, ::System::Boolean a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_2952376CFC9A242D_OFFSET))(this, a1, a2);
+		}
+
+		static ::System::Boolean Method_7_D008B8827E0F3A1B(::UnityEngine::Transform* a1, ::MoleMole::MonoGamepadSelectable* a2)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Transform*, ::MoleMole::MonoGamepadSelectable*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_D008B8827E0F3A1B_OFFSET))(a1, a2);
+		}
+
+		::System::Void Method_7_85B7BB2872D8C45B(::MoleMole::UIOnTransformChildrenChangedHandler* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIOnTransformChildrenChangedHandler*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_85B7BB2872D8C45B_OFFSET))(this, a1);
+		}
+
+		static ::System::Boolean Method_7_A791C4352965B7A7(::UnityEngine::Transform* a1, ::MoleMole::MonoGamepadSelectable* a2)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Transform*, ::MoleMole::MonoGamepadSelectable*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_A791C4352965B7A7_OFFSET))(a1, a2);
+		}
+
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* Method_7_B10D028FBFD259C7()
+		{
+			return ((::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_B10D028FBFD259C7_OFFSET))(this);
+		}
+
+		::System::Boolean Method_7_391A84BCD9F51317()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_391A84BCD9F51317_OFFSET))(this);
+		}
+
+		::System::Boolean Method_7_0DF420E95D6252BE()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_0DF420E95D6252BE_OFFSET))(this);
+		}
+
+		::System::Void Method_7_CB8E229BDF290D41()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_CB8E229BDF290D41_OFFSET))(this);
+		}
+
+		::System::Void Method_7_464B80C09A37526F()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_464B80C09A37526F_OFFSET))(this);
+		}
+
+		::System::Boolean Method_7_CEF99C34729D7187(::UnityEngine::Transform* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_CEF99C34729D7187_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_7_CD8EB704BDED69B6()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_CD8EB704BDED69B6_OFFSET))(this);
+		}
+
+		::System::Void Method_7_E1D1B0292DAFCA32(::System::Int32 a1, ::System::Boolean a2, ::System::Boolean a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_E1D1B0292DAFCA32_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Void Method_7_9AB55F553C4AC6E8()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_9AB55F553C4AC6E8_OFFSET))(this);
+		}
+
+		::System::Void Method_7_B2E0D5A75E5FF2A2(::System::Int32 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_B2E0D5A75E5FF2A2_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_7_16315571ECE95823(::System::Int32 a1, ::System::Boolean a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOGAMEPADCUSTOMLIST_METHOD_7_16315571ECE95823_OFFSET))(this, a1, a2);
+		}
+	};
+}

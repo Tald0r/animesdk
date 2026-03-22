@@ -1,0 +1,149 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_06EAD40543027897_1;
+class Class_2_208CC9941471731A_308;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8928530)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONGET_OFFSET UNITYSDK_OFFSET(0x8929F10)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONLEVELREWARDCLAIMED_OFFSET UNITYSDK_OFFSET(0x892A160)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONMISSIONMODIFY_OFFSET UNITYSDK_OFFSET(0x8929E40)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x8928360)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8928970)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x89280E0)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8928210)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_REFRESHPROXYLEVEL_OFFSET UNITYSDK_OFFSET(0x8928CD0)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_REFRESHPROXYQUEST_OFFSET UNITYSDK_OFFSET(0x89291E0)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_REFRESHQUESTDATA_OFFSET UNITYSDK_OFFSET(0x8928A50)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_REFRESHSTATE_OFFSET UNITYSDK_OFFSET(0x89293D0)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x89284B0)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x892A270)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER__ONGET_B__12_0_OFFSET UNITYSDK_OFFSET(0x892A2A0)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x892A2B0)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x892A320)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x892A390)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x892A410)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x892A470)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHandBookProxyQuestWidgetController_TypeDefinitionIndex = 62018;
+
+	class UIHandBookProxyQuestWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_06EAD40543027897_1* _view; // 0x2A0
+		::System::Int32 index; // 0x2A8
+		::System::Int32 groupID; // 0x2AC
+		::System::Int32 unlockLevel; // 0x2B0
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_308*>* childQuestTemplates; // 0x2B8
+		::System::Boolean isLock; // 0x2C0
+		::System::Boolean isComplete; // 0x2C1
+		::System::Boolean needAnim; // 0x2C2
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshQuestData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_REFRESHQUESTDATA_OFFSET))(this);
+		}
+
+		::System::Void OnMissionModify(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONMISSIONMODIFY_OFFSET))(this, args);
+		}
+
+		::System::Void RefreshState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_REFRESHSTATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshProxyLevel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_REFRESHPROXYLEVEL_OFFSET))(this);
+		}
+
+		::System::Void RefreshProxyQuest()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_REFRESHPROXYQUEST_OFFSET))(this);
+		}
+
+		::System::Void OnGet()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONGET_OFFSET))(this);
+		}
+
+		::System::Void OnLevelRewardClaimed(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER_ONLEVELREWARDCLAIMED_OFFSET))(this, args);
+		}
+
+		::System::Void _OnGet_b__12_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER__ONGET_B__12_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKPROXYQUESTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

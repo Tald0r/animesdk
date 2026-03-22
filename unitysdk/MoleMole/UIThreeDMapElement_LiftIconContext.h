@@ -1,0 +1,106 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/MoleMole/UIUrbanMapPointWidgetContext.h"
+#include "unitysdk/Struct_2_032E3093F309FC91.h"
+
+class MonoSceneMap3DConfig_LiftPosInfo;
+namespace System { class Object; }
+namespace System { class String; }
+
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_EQUALS_1_OFFSET UNITYSDK_OFFSET(0xA418470)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_EQUALS_OFFSET UNITYSDK_OFFSET(0xA4183C0)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_GETICONWIDGETNAME_OFFSET UNITYSDK_OFFSET(0xA418130)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_GETMAPICON_OFFSET UNITYSDK_OFFSET(0xA4185C0)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_GETWORLDPOSITION_OFFSET UNITYSDK_OFFSET(0xA418280)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_ISENABLE_OFFSET UNITYSDK_OFFSET(0xA4181C0)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_ISUNLOCK_OFFSET UNITYSDK_OFFSET(0xA418220)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA418710)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_EQUALS_OFFSET UNITYSDK_OFFSET(0xA418720)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_GETICONWIDGETNAME_OFFSET UNITYSDK_OFFSET(0xA418730)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_GETMAPICON_OFFSET UNITYSDK_OFFSET(0xA418790)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_GETWORLDPOSITION_OFFSET UNITYSDK_OFFSET(0xA4187C0)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_ISENABLE_OFFSET UNITYSDK_OFFSET(0xA418870)
+#define MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_ISUNLOCK_OFFSET UNITYSDK_OFFSET(0xA418880)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIThreeDMapElement_LiftIconContext_TypeDefinitionIndex = 71843;
+
+	class UIThreeDMapElement_LiftIconContext : public ::MoleMole::UIUrbanMapPointWidgetContext
+	{
+	public:
+		::MonoSceneMap3DConfig_LiftPosInfo* Data; // 0x50
+		::System::Boolean IsStart; // 0x58
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT__CTOR_OFFSET))(this);
+		}
+
+		::System::String* GetIconWidgetName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_GETICONWIDGETNAME_OFFSET))(this);
+		}
+
+		::System::Boolean IsEnable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_ISENABLE_OFFSET))(this);
+		}
+
+		::System::Boolean IsUnlock()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_ISUNLOCK_OFFSET))(this);
+		}
+
+		::Struct_2_032E3093F309FC91 GetWorldPosition()
+		{
+			return ((::Struct_2_032E3093F309FC91(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_GETWORLDPOSITION_OFFSET))(this);
+		}
+
+		::System::Boolean Equals(::MoleMole::UIThreeDMapElement_LiftIconContext* other)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::UIThreeDMapElement_LiftIconContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_EQUALS_OFFSET))(this, other);
+		}
+
+		::System::Boolean Equals_1(::System::Object* obj)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_EQUALS_1_OFFSET))(this, obj);
+		}
+
+		::Foundation::AssetPath GetMapIcon()
+		{
+			return ((::Foundation::AssetPath(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT_GETMAPICON_OFFSET))(this);
+		}
+
+		::System::Boolean __base_Equals(::System::Object* P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_EQUALS_OFFSET))(this, P0);
+		}
+
+		::System::String* __base_GetIconWidgetName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_GETICONWIDGETNAME_OFFSET))(this);
+		}
+
+		::Foundation::AssetPath __base_GetMapIcon()
+		{
+			return ((::Foundation::AssetPath(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_GETMAPICON_OFFSET))(this);
+		}
+
+		::Struct_2_032E3093F309FC91 __base_GetWorldPosition()
+		{
+			return ((::Struct_2_032E3093F309FC91(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_GETWORLDPOSITION_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsEnable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_ISENABLE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsUnlock()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITHREEDMAPELEMENT_LIFTICONCONTEXT___BASE_ISUNLOCK_OFFSET))(this);
+		}
+	};
+}

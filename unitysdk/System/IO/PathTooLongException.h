@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_IO_PATHTOOLONGEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C88660)
-#define SYSTEM_IO_PATHTOOLONGEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C8BED0)
-#define SYSTEM_IO_PATHTOOLONGEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C8BE30)
+#define SYSTEM_IO_PATHTOOLONGEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1918E9F0)
+#define SYSTEM_IO_PATHTOOLONGEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1918EA60)
+#define SYSTEM_IO_PATHTOOLONGEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1918E950)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int PathTooLongException_TypeDefinitionIndex = 680;
+	inline static constexpr unsigned int PathTooLongException_TypeDefinitionIndex = 648;
 
 	class PathTooLongException : public ::System::IO::IOException
 	{

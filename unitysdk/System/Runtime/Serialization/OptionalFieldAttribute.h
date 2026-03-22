@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SYSTEM_RUNTIME_SERIALIZATION_OPTIONALFIELDATTRIBUTE_SET_VERSIONADDED_OFFSET UNITYSDK_OFFSET(0x15D3E920)
-#define SYSTEM_RUNTIME_SERIALIZATION_OPTIONALFIELDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x15D3E910)
+#define SYSTEM_RUNTIME_SERIALIZATION_OPTIONALFIELDATTRIBUTE_SET_VERSIONADDED_OFFSET UNITYSDK_OFFSET(0x1988D2F0)
+#define SYSTEM_RUNTIME_SERIALIZATION_OPTIONALFIELDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1988D2E0)
 
 namespace System::Runtime::Serialization
 {
-	inline static constexpr unsigned int OptionalFieldAttribute_TypeDefinitionIndex = 1105;
+	inline static constexpr unsigned int OptionalFieldAttribute_TypeDefinitionIndex = 1160;
 
 	class OptionalFieldAttribute : public ::System::Attribute
 	{

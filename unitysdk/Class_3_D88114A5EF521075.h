@@ -1,0 +1,112 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_E87F1D15F1D4AC72.h"
+
+class Class_2_777A5D016ADC7368;
+class Class_2_A8F5ABF31E066ED4;
+namespace MoleMole { class NotificationBadgeEx; }
+namespace MoleMole { class UIControlCollection; }
+namespace System { class String; }
+namespace UnityEngine::UI::Extension { class UITabButton; }
+
+#define CLASS_3_D88114A5EF521075_METHOD_3_0076C796B2045359_OFFSET UNITYSDK_OFFSET(0x6D227E0)
+#define CLASS_3_D88114A5EF521075_METHOD_3_164AF3E03C443515_OFFSET UNITYSDK_OFFSET(0x6D22B30)
+#define CLASS_3_D88114A5EF521075_METHOD_3_209E85F2CEAC8DDA_OFFSET UNITYSDK_OFFSET(0x6D22B00)
+#define CLASS_3_D88114A5EF521075_METHOD_3_2467D0FE734D187E_OFFSET UNITYSDK_OFFSET(0x6D22520)
+#define CLASS_3_D88114A5EF521075_METHOD_3_41EE8711A9018A61_OFFSET UNITYSDK_OFFSET(0x6D22B40)
+#define CLASS_3_D88114A5EF521075_METHOD_3_43A46E5F9FAC62B8_1_OFFSET UNITYSDK_OFFSET(0x6D22B70)
+#define CLASS_3_D88114A5EF521075_METHOD_3_43A46E5F9FAC62B8_2_OFFSET UNITYSDK_OFFSET(0x6D22B80)
+#define CLASS_3_D88114A5EF521075_METHOD_3_43A46E5F9FAC62B8_OFFSET UNITYSDK_OFFSET(0x6D22B10)
+#define CLASS_3_D88114A5EF521075_METHOD_3_58BA0C8308C8127F_1_OFFSET UNITYSDK_OFFSET(0x6D22B50)
+#define CLASS_3_D88114A5EF521075_METHOD_3_58BA0C8308C8127F_2_OFFSET UNITYSDK_OFFSET(0x6D22B90)
+#define CLASS_3_D88114A5EF521075_METHOD_3_58BA0C8308C8127F_OFFSET UNITYSDK_OFFSET(0x6D22B20)
+#define CLASS_3_D88114A5EF521075_METHOD_3_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x6D22700)
+#define CLASS_3_D88114A5EF521075_METHOD_3_C0FD85D625CFBBA2_OFFSET UNITYSDK_OFFSET(0x6D22B60)
+#define CLASS_3_D88114A5EF521075__CTOR_OFFSET UNITYSDK_OFFSET(0x6D22A80)
+
+inline static constexpr unsigned int Class_3_D88114A5EF521075_TypeDefinitionIndex = 72374;
+
+class Class_3_D88114A5EF521075 : public ::Class_2_E87F1D15F1D4AC72
+{
+public:
+	// static const ::System::String* Field_3_0; // 0x0
+	// static const ::System::String* Field_3_1; // 0x0
+	// static const ::System::String* Field_3_2; // 0x0
+	// static const ::System::String* Field_3_3; // 0x0
+	// static const ::System::String* Field_3_4; // 0x0
+	::UnityEngine::UI::Extension::UITabButton* Field_3_8; // 0x28
+	::Class_2_A8F5ABF31E066ED4* Field_3_9; // 0x30
+	::MoleMole::NotificationBadgeEx* Field_3_7; // 0x38
+	::Class_2_A8F5ABF31E066ED4* Field_3_6; // 0x40
+	::Class_2_A8F5ABF31E066ED4* Field_3_5; // 0x48
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_3_2467D0FE734D187E(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_2467D0FE734D187E_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_3_209E85F2CEAC8DDA(::MoleMole::NotificationBadgeEx* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::NotificationBadgeEx*))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_209E85F2CEAC8DDA_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_0076C796B2045359()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_0076C796B2045359_OFFSET))(this);
+	}
+
+	::Class_2_A8F5ABF31E066ED4* Method_3_43A46E5F9FAC62B8()
+	{
+		return ((::Class_2_A8F5ABF31E066ED4*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_43A46E5F9FAC62B8_OFFSET))(this);
+	}
+
+	::System::Void Method_3_58BA0C8308C8127F(::Class_2_A8F5ABF31E066ED4* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_A8F5ABF31E066ED4*))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_58BA0C8308C8127F_OFFSET))(this, a1);
+	}
+
+	::UnityEngine::UI::Extension::UITabButton* Method_3_164AF3E03C443515()
+	{
+		return ((::UnityEngine::UI::Extension::UITabButton*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_164AF3E03C443515_OFFSET))(this);
+	}
+
+	::MoleMole::NotificationBadgeEx* Method_3_41EE8711A9018A61()
+	{
+		return ((::MoleMole::NotificationBadgeEx*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_41EE8711A9018A61_OFFSET))(this);
+	}
+
+	::System::Void Method_3_58BA0C8308C8127F_1(::Class_2_A8F5ABF31E066ED4* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_A8F5ABF31E066ED4*))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_58BA0C8308C8127F_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_C0FD85D625CFBBA2(::UnityEngine::UI::Extension::UITabButton* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UITabButton*))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_C0FD85D625CFBBA2_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_9DE87B16AD0A605E()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_9DE87B16AD0A605E_OFFSET))(this);
+	}
+
+	::Class_2_A8F5ABF31E066ED4* Method_3_43A46E5F9FAC62B8_1()
+	{
+		return ((::Class_2_A8F5ABF31E066ED4*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_43A46E5F9FAC62B8_1_OFFSET))(this);
+	}
+
+	::Class_2_A8F5ABF31E066ED4* Method_3_43A46E5F9FAC62B8_2()
+	{
+		return ((::Class_2_A8F5ABF31E066ED4*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_43A46E5F9FAC62B8_2_OFFSET))(this);
+	}
+
+	::System::Void Method_3_58BA0C8308C8127F_2(::Class_2_A8F5ABF31E066ED4* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_A8F5ABF31E066ED4*))((::PBYTE)hIl2Cpp + CLASS_3_D88114A5EF521075_METHOD_3_58BA0C8308C8127F_2_OFFSET))(this, a1);
+	}
+};

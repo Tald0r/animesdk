@@ -1,0 +1,89 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_D8480A60B429B44D_Struct_2_96A72A3FF8741EA0.h"
+#include "unitysdk/Class_3_F3948D237059FA7A.h"
+#include "unitysdk/Foundation/ViewObject/ViewObjectHandle.h"
+#include "unitysdk/Struct_2_A17F88B27FA91D04.h"
+#include "unitysdk/Struct_2_FE667B282E242C72.h"
+
+class Class_1_9465CC52E1CFB15A;
+class Class_1_B7C41BE725AAED79;
+class Class_1_BC1A0944B61E7BEE;
+class Class_1_E4DCFD174698F990;
+class Class_3_B537A0AA78803363;
+namespace FluffyUnderware::Curvy { class CurvySpline; }
+namespace System { class String; }
+template <typename T1, typename T2> class Class_1_57D808FBDC3F6D5A;
+template <typename T> class Class_4_179456445C225AB4;
+
+#define CLASS_4_F615DBC3DB6637C4_METHOD_4_0FD0EC313FAAB75A_OFFSET UNITYSDK_OFFSET(0xB3334D0)
+#define CLASS_4_F615DBC3DB6637C4_METHOD_4_25DEA5C65A602671_OFFSET UNITYSDK_OFFSET(0xB334AD0)
+#define CLASS_4_F615DBC3DB6637C4_METHOD_4_47125C76AFDB961E_OFFSET UNITYSDK_OFFSET(0xB3339C0)
+#define CLASS_4_F615DBC3DB6637C4_METHOD_4_B2E4ED44D097E972_OFFSET UNITYSDK_OFFSET(0xB334570)
+#define CLASS_4_F615DBC3DB6637C4_METHOD_4_C54D93067955897C_OFFSET UNITYSDK_OFFSET(0xB333850)
+#define CLASS_4_F615DBC3DB6637C4_METHOD_4_D7C065E645A7073F_OFFSET UNITYSDK_OFFSET(0xB334A50)
+#define CLASS_4_F615DBC3DB6637C4_METHOD_4_E9A575D18A0748D9_OFFSET UNITYSDK_OFFSET(0xB334AE0)
+#define CLASS_4_F615DBC3DB6637C4_METHOD_4_F890EAECC1AF6123_OFFSET UNITYSDK_OFFSET(0x6F724D0)
+#define CLASS_4_F615DBC3DB6637C4__CTOR_OFFSET UNITYSDK_OFFSET(0xB334340)
+
+inline static constexpr unsigned int Class_4_F615DBC3DB6637C4_TypeDefinitionIndex = 59505;
+
+class Class_4_F615DBC3DB6637C4 : public ::Class_3_F3948D237059FA7A
+{
+public:
+	static ::Class_1_57D808FBDC3F6D5A<::System::Int32, ::Class_1_D8480A60B429B44D_Struct_2_96A72A3FF8741EA0<::Struct_2_A17F88B27FA91D04<::System::UInt32, ::System::String*>, ::FluffyUnderware::Curvy::CurvySpline*>>** StaticGet_Field_4_6()
+	{
+		return (::Class_1_57D808FBDC3F6D5A<::System::Int32, ::Class_1_D8480A60B429B44D_Struct_2_96A72A3FF8741EA0<::Struct_2_A17F88B27FA91D04<::System::UInt32, ::System::String*>, ::FluffyUnderware::Curvy::CurvySpline*>>**)Il2CppClass::FromTypeDefinitionIndex(Class_4_F615DBC3DB6637C4_TypeDefinitionIndex)->GetStaticField(0x42030);
+	}
+	::Class_4_179456445C225AB4<::Foundation::ViewObject::ViewObjectHandle>* Field_4_0; // 0x28
+	::Class_3_B537A0AA78803363* Field_4_5; // 0x30
+	::Class_4_179456445C225AB4<::System::Single>* Field_4_4; // 0x38
+	::Class_4_179456445C225AB4<::System::Single>* Field_4_2; // 0x40
+	::Class_4_179456445C225AB4<::System::String*>* Field_4_1; // 0x48
+	::Class_4_179456445C225AB4<::System::Single>* Field_4_3; // 0x50
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_F615DBC3DB6637C4__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_4_F890EAECC1AF6123(::Class_1_E4DCFD174698F990* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_E4DCFD174698F990*))((::PBYTE)hIl2Cpp + CLASS_4_F615DBC3DB6637C4_METHOD_4_F890EAECC1AF6123_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_4_0FD0EC313FAAB75A()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_F615DBC3DB6637C4_METHOD_4_0FD0EC313FAAB75A_OFFSET))(this);
+	}
+
+	::System::Void Method_4_C54D93067955897C(::Class_1_9465CC52E1CFB15A* a1, ::Class_1_BC1A0944B61E7BEE*& a2, ::Class_1_B7C41BE725AAED79* a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_9465CC52E1CFB15A*, ::Class_1_BC1A0944B61E7BEE*&, ::Class_1_B7C41BE725AAED79*))((::PBYTE)hIl2Cpp + CLASS_4_F615DBC3DB6637C4_METHOD_4_C54D93067955897C_OFFSET))(this, a1, a2, a3);
+	}
+
+	::System::Void Method_4_47125C76AFDB961E(::Struct_2_FE667B282E242C72& a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_FE667B282E242C72&))((::PBYTE)hIl2Cpp + CLASS_4_F615DBC3DB6637C4_METHOD_4_47125C76AFDB961E_OFFSET))(this, a1);
+	}
+
+	static ::System::Void Method_4_B2E4ED44D097E972(::Class_1_9465CC52E1CFB15A* a1)
+	{
+		return ((::System::Void(*)(::Class_1_9465CC52E1CFB15A*))((::PBYTE)hIl2Cpp + CLASS_4_F615DBC3DB6637C4_METHOD_4_B2E4ED44D097E972_OFFSET))(a1);
+	}
+
+	::System::Void Method_4_D7C065E645A7073F(::Class_1_9465CC52E1CFB15A* a1, ::Class_1_BC1A0944B61E7BEE*& a2, ::Class_1_B7C41BE725AAED79* a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_9465CC52E1CFB15A*, ::Class_1_BC1A0944B61E7BEE*&, ::Class_1_B7C41BE725AAED79*))((::PBYTE)hIl2Cpp + CLASS_4_F615DBC3DB6637C4_METHOD_4_D7C065E645A7073F_OFFSET))(this, a1, a2, a3);
+	}
+
+	::System::Void Method_4_25DEA5C65A602671()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_F615DBC3DB6637C4_METHOD_4_25DEA5C65A602671_OFFSET))(this);
+	}
+
+	::System::Void Method_4_E9A575D18A0748D9(::Class_1_E4DCFD174698F990* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_E4DCFD174698F990*))((::PBYTE)hIl2Cpp + CLASS_4_F615DBC3DB6637C4_METHOD_4_E9A575D18A0748D9_OFFSET))(this, a1);
+	}
+};

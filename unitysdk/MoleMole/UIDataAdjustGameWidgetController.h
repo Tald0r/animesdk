@@ -1,0 +1,283 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_70248E32F82D4889_2.h"
+#include "unitysdk/Enum_3_84861DFCE46AC3BE.h"
+#include "unitysdk/MoleMole/UIDataAdjustGameWidgetController_EDataAdjustGamePhase.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+class Class_1_FD161B8AFE00CB2F;
+class Class_2_21A7ACA4473668F9_2;
+class Class_2_60DDD9C206686F44;
+class Class_2_72E2AB5ACACAD004;
+class Class_2_A8F5ABF31E066ED4;
+class Class_3_5F814DBCD2974AFB;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_BINDBTN_OFFSET UNITYSDK_OFFSET(0xA341340)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_BINDOUTERVIEW_OFFSET UNITYSDK_OFFSET(0xA3432E0)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_BINDPROGRESSNUM_OFFSET UNITYSDK_OFFSET(0xA3433F0)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_CLEAR_OFFSET UNITYSDK_OFFSET(0xA344230)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_GETCOUNTDOWNLENGTH_OFFSET UNITYSDK_OFFSET(0xA343480)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_GET_CONTENTROOT_OFFSET UNITYSDK_OFFSET(0xA341000)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_GET_CURPHASE_OFFSET UNITYSDK_OFFSET(0xA340D10)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_INITINGAME_OFFSET UNITYSDK_OFFSET(0xA344C20)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_INITSTART_OFFSET UNITYSDK_OFFSET(0xA3442C0)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xA340DA0)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_INITWINNING_OFFSET UNITYSDK_OFFSET(0xA345100)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_LOADTARGETSPRITE_OFFSET UNITYSDK_OFFSET(0xA342320)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA341D90)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONPOINTDOWNADJUST_OFFSET UNITYSDK_OFFSET(0xA343A60)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONPOINTUPADJUST_OFFSET UNITYSDK_OFFSET(0xA343C60)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA3419A0)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA341E30)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA341030)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA341440)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONWIN_OFFSET UNITYSDK_OFFSET(0xA343140)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_POSTWINSOUND_OFFSET UNITYSDK_OFFSET(0xA3453B0)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_REFRESHWIN_OFFSET UNITYSDK_OFFSET(0xA3452C0)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_RESETVIEW_OFFSET UNITYSDK_OFFSET(0xA341860)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_SETCOUNTDOWN_OFFSET UNITYSDK_OFFSET(0xA342600)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_SET_CURPHASE_OFFSET UNITYSDK_OFFSET(0xA340D20)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_SWITCHRANK_OFFSET UNITYSDK_OFFSET(0xA345760)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_TOGGLEPAUSE_OFFSET UNITYSDK_OFFSET(0xA3435D0)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_UPDATEINGAMEPROGRESS_OFFSET UNITYSDK_OFFSET(0xA342710)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_UPDATEINGAMERATING_OFFSET UNITYSDK_OFFSET(0xA342D80)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_UPDATEPROGRESS_OFFSET UNITYSDK_OFFSET(0xA341F10)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xA345A30)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA345B10)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER__ONUIOPEN_B__24_0_OFFSET UNITYSDK_OFFSET(0xA345CA0)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER__UPDATEINGAMERATING_B__32_0_OFFSET UNITYSDK_OFFSET(0xA345D30)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA345E60)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xA345ED0)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA345EE0)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA345F60)
+#define MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA345FC0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIDataAdjustGameWidgetController_TypeDefinitionIndex = 44361;
+
+	class UIDataAdjustGameWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Il2CppArray<::System::String*>* RATING_ANIM; // 0x2A0
+		::Il2CppArray<::System::String*>* RATING_SOUND; // 0x2A8
+		::MoleMole::UIDataAdjustGameWidgetController_EDataAdjustGamePhase _curPhase; // 0x2B0
+		::Class_2_21A7ACA4473668F9_2* _view; // 0x2B8
+		::Class_3_5F814DBCD2974AFB* _model; // 0x2C0
+		::System::Collections::Generic::List_1<::Class_2_A8F5ABF31E066ED4*>* _ratingNumbers; // 0x2C8
+		::Class_2_72E2AB5ACACAD004* outerView; // 0x2D0
+		::Class_1_FD161B8AFE00CB2F* _storeData; // 0x2D8
+		::System::Boolean _hasTriggered; // 0x2E0
+		::System::Int32 _countdown; // 0x2E4
+		::System::Int32 _cur; // 0x2E8
+		::System::Int32 _total; // 0x2EC
+		::System::String* _soundLastState; // 0x2F0
+		::System::String* _soundInGameState; // 0x2F8
+		::System::String* _soundBeforePauseState; // 0x300
+		::System::String* _soundLastGameState; // 0x308
+		::Enum_3_84861DFCE46AC3BE _finalResult; // 0x310
+		::UnityEngine::Vector2 m_anchor; // 0x314
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::UIDataAdjustGameWidgetController_EDataAdjustGamePhase get_CurPhase()
+		{
+			return ((::MoleMole::UIDataAdjustGameWidgetController_EDataAdjustGamePhase(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_GET_CURPHASE_OFFSET))(this);
+		}
+
+		::System::Void set_CurPhase(::MoleMole::UIDataAdjustGameWidgetController_EDataAdjustGamePhase value)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIDataAdjustGameWidgetController_EDataAdjustGamePhase))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_SET_CURPHASE_OFFSET))(this, value);
+		}
+
+		::UnityEngine::Transform* get_ContentRoot()
+		{
+			return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_GET_CONTENTROOT_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		static ::System::Void UpdateProgress(::System::Collections::Generic::List_1<::Class_2_A8F5ABF31E066ED4*>* ratingNumbers, ::System::Int32 cur, ::System::Int32 target, ::System::Int32 aRank, ::System::Int32 total)
+		{
+			return ((::System::Void(*)(::System::Collections::Generic::List_1<::Class_2_A8F5ABF31E066ED4*>*, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_UPDATEPROGRESS_OFFSET))(ratingNumbers, cur, target, aRank, total);
+		}
+
+		static ::System::Void LoadTargetSprite(::Class_2_A8F5ABF31E066ED4* img, ::System::Int32 index)
+		{
+			return ((::System::Void(*)(::Class_2_A8F5ABF31E066ED4*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_LOADTARGETSPRITE_OFFSET))(img, index);
+		}
+
+		::System::Void SetCountDown(::System::Single remain)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_SETCOUNTDOWN_OFFSET))(this, remain);
+		}
+
+		::System::Void UpdateInGameProgress(::System::Int32 cur, ::System::Int32 total)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_UPDATEINGAMEPROGRESS_OFFSET))(this, cur, total);
+		}
+
+		::System::Void UpdateInGameRating(::Enum_3_70248E32F82D4889_2 res)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_70248E32F82D4889_2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_UPDATEINGAMERATING_OFFSET))(this, res);
+		}
+
+		::System::Void ResetView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_RESETVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnWin(::Enum_3_84861DFCE46AC3BE result)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_84861DFCE46AC3BE))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONWIN_OFFSET))(this, result);
+		}
+
+		::System::Void BindOuterView(::Class_2_72E2AB5ACACAD004* view)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_72E2AB5ACACAD004*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_BINDOUTERVIEW_OFFSET))(this, view);
+		}
+
+		::System::Single GetCountDownLength()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_GETCOUNTDOWNLENGTH_OFFSET))(this);
+		}
+
+		::System::Void TogglePause(::System::Boolean isPause)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_TOGGLEPAUSE_OFFSET))(this, isPause);
+		}
+
+		::System::Void OnPointDownAdjust()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONPOINTDOWNADJUST_OFFSET))(this);
+		}
+
+		::System::Void OnPointUpAdjust()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_ONPOINTUPADJUST_OFFSET))(this);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_CLEAR_OFFSET))(this);
+		}
+
+		::System::Void InitStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_INITSTART_OFFSET))(this);
+		}
+
+		::System::Void InitInGame()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_INITINGAME_OFFSET))(this);
+		}
+
+		::System::Void InitWinning()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_INITWINNING_OFFSET))(this);
+		}
+
+		::System::Void RefreshWin(::Enum_3_84861DFCE46AC3BE result)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_84861DFCE46AC3BE))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_REFRESHWIN_OFFSET))(this, result);
+		}
+
+		::System::Void PostWinSound(::Enum_3_84861DFCE46AC3BE result)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_84861DFCE46AC3BE))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_POSTWINSOUND_OFFSET))(this, result);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void BindBtn(::Class_2_60DDD9C206686F44* btn)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_60DDD9C206686F44*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_BINDBTN_OFFSET))(this, btn);
+		}
+
+		::System::Void BindProgressNum()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_BINDPROGRESSNUM_OFFSET))(this);
+		}
+
+		::System::Void SwitchRank()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_SWITCHRANK_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void _OnUIOpen_b__24_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER__ONUIOPEN_B__24_0_OFFSET))(this, args);
+		}
+
+		::System::Void _UpdateInGameRating_b__32_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER__UPDATEINGAMERATING_B__32_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDATAADJUSTGAMEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

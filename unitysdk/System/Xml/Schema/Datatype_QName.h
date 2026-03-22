@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/Datatype_anySimpleType.h"
+#include "unitysdk/System/Xml/Schema/RestrictionFlags.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaWhiteSpace.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 #include "unitysdk/System/Xml/XmlTokenizedType.h"
@@ -15,31 +16,32 @@ namespace System::Xml::Schema { class FacetsChecker; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D68790)
-#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x17D68920)
-#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x17D687E0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D688C0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_TOKENIZEDTYPE_OFFSET UNITYSDK_OFFSET(0x17D68850)
-#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D68840)
-#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D68860)
-#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x17D68930)
-#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D68B90)
-#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME__CTOR_OFFSET UNITYSDK_OFFSET(0x17D64760)
+#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x19591D60)
+#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x19591F00)
+#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x19591DB0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x19591EA0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_TOKENIZEDTYPE_OFFSET UNITYSDK_OFFSET(0x19591E20)
+#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x19591E10)
+#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_VALIDRESTRICTIONFLAGS_OFFSET UNITYSDK_OFFSET(0x19591E30)
+#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x19591E40)
+#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x19591F10)
+#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME__CCTOR_OFFSET UNITYSDK_OFFSET(0x19592210)
+#define SYSTEM_XML_SCHEMA_DATATYPE_QNAME__CTOR_OFFSET UNITYSDK_OFFSET(0x19592170)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_QName_TypeDefinitionIndex = 2103;
+	inline static constexpr unsigned int Datatype_QName_TypeDefinitionIndex = 2018;
 
 	class Datatype_QName : public ::System::Xml::Schema::Datatype_anySimpleType
 	{
 	public:
-		static ::System::Type** StaticGet_atomicValueType()
-		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_QName_TypeDefinitionIndex)->GetStaticField(0x14080);
-		}
 		static ::System::Type** StaticGet_listValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_QName_TypeDefinitionIndex)->GetStaticField(0x14088);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_QName_TypeDefinitionIndex)->GetStaticField(0x1F80);
+		}
+		static ::System::Type** StaticGet_atomicValueType()
+		{
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_QName_TypeDefinitionIndex)->GetStaticField(0x1F88);
 		}
 
 		::System::Void _ctor()
@@ -70,6 +72,11 @@ namespace System::Xml::Schema
 		::System::Xml::XmlTokenizedType get_TokenizedType()
 		{
 			return ((::System::Xml::XmlTokenizedType(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_TOKENIZEDTYPE_OFFSET))(this);
+		}
+
+		::System::Xml::Schema::RestrictionFlags get_ValidRestrictionFlags()
+		{
+			return ((::System::Xml::Schema::RestrictionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_QNAME_GET_VALIDRESTRICTIONFLAGS_OFFSET))(this);
 		}
 
 		::System::Type* get_ValueType()

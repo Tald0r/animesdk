@@ -1,0 +1,40 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/UnityEngine/NAPRenderPipeline0/PostCullRenderingData.h"
+#include "unitysdk/UnityEngine/NAPRenderPipeline0/RenderPassEvent.h"
+#include "unitysdk/UnityEngine/NAPRenderPipeline0/RenderingData.h"
+#include "unitysdk/UnityEngine/NAPRenderPipeline0/ScriptableRenderPass.h"
+#include "unitysdk/UnityEngine/Rendering/RenderTargetIdentifier.h"
+#include "unitysdk/UnityEngine/Rendering/ScriptableRenderContext.h"
+
+namespace UnityEngine::NAPRenderPipeline0 { class OpaquePostProcessPassNativeState; }
+
+#define UNITYENGINE_NAPRENDERPIPELINE0_OPAQUEPOSTPROCESSPASS_NATIVEIMPL_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19F3A5A0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_OPAQUEPOSTPROCESSPASS_NATIVEIMPL_SETUP_OFFSET UNITYSDK_OFFSET(0x19F3A570)
+#define UNITYENGINE_NAPRENDERPIPELINE0_OPAQUEPOSTPROCESSPASS_NATIVEIMPL__CTOR_OFFSET UNITYSDK_OFFSET(0x19F3A4F0)
+
+namespace UnityEngine::NAPRenderPipeline0
+{
+	inline static constexpr unsigned int OpaquePostProcessPass_NativeImpl_TypeDefinitionIndex = 5747;
+
+	class OpaquePostProcessPass_NativeImpl : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
+	{
+	public:
+		::UnityEngine::NAPRenderPipeline0::OpaquePostProcessPassNativeState* m_NativeState; // 0xA8
+
+		::System::Void _ctor(::UnityEngine::NAPRenderPipeline0::RenderPassEvent evt)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::NAPRenderPipeline0::RenderPassEvent))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_OPAQUEPOSTPROCESSPASS_NATIVEIMPL__CTOR_OFFSET))(this, evt);
+		}
+
+		::System::Void Setup(::UnityEngine::Rendering::RenderTargetIdentifier& colorBuffer, ::UnityEngine::Rendering::RenderTargetIdentifier& depthBuffer)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::RenderTargetIdentifier&, ::UnityEngine::Rendering::RenderTargetIdentifier&))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_OPAQUEPOSTPROCESSPASS_NATIVEIMPL_SETUP_OFFSET))(this, colorBuffer, depthBuffer);
+		}
+
+		::System::Void Execute(::UnityEngine::Rendering::ScriptableRenderContext& context, ::UnityEngine::NAPRenderPipeline0::RenderingData& renderingData, ::UnityEngine::NAPRenderPipeline0::PostCullRenderingData& postCullRenderingData)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::ScriptableRenderContext&, ::UnityEngine::NAPRenderPipeline0::RenderingData&, ::UnityEngine::NAPRenderPipeline0::PostCullRenderingData&))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_OPAQUEPOSTPROCESSPASS_NATIVEIMPL_EXECUTE_OFFSET))(this, context, renderingData, postCullRenderingData);
+		}
+	};
+}

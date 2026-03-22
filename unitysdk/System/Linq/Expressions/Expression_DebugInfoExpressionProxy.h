@@ -1,0 +1,87 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Linq/Expressions/ExpressionType.h"
+#include "unitysdk/System/Object.h"
+
+namespace System { class String; }
+namespace System { class Type; }
+namespace System::Linq::Expressions { class DebugInfoExpression; }
+namespace System::Linq::Expressions { class SymbolDocumentInfo; }
+
+#define SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_CANREDUCE_OFFSET UNITYSDK_OFFSET(0x1AA6F920)
+#define SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_DEBUGVIEW_OFFSET UNITYSDK_OFFSET(0x1AA6F940)
+#define SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_DOCUMENT_OFFSET UNITYSDK_OFFSET(0x1AA6F960)
+#define SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_ENDCOLUMN_OFFSET UNITYSDK_OFFSET(0x1AA6F980)
+#define SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_ENDLINE_OFFSET UNITYSDK_OFFSET(0x1AA6F9B0)
+#define SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_ISCLEAR_OFFSET UNITYSDK_OFFSET(0x1AA6F9E0)
+#define SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x1AA6FA10)
+#define SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_STARTCOLUMN_OFFSET UNITYSDK_OFFSET(0x1AA6FA20)
+#define SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_STARTLINE_OFFSET UNITYSDK_OFFSET(0x1AA6FA50)
+#define SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1AA6FA80)
+#define SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA6F8B0)
+
+namespace System::Linq::Expressions
+{
+	inline static constexpr unsigned int Expression_DebugInfoExpressionProxy_TypeDefinitionIndex = 4407;
+
+	class Expression_DebugInfoExpressionProxy : public ::System::Object
+	{
+	public:
+		::System::Linq::Expressions::DebugInfoExpression* _node; // 0x10
+
+		::System::Void _ctor(::System::Linq::Expressions::DebugInfoExpression* node)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Linq::Expressions::DebugInfoExpression*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY__CTOR_OFFSET))(this, node);
+		}
+
+		::System::Boolean get_CanReduce()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_CANREDUCE_OFFSET))(this);
+		}
+
+		::System::String* get_DebugView()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_DEBUGVIEW_OFFSET))(this);
+		}
+
+		::System::Linq::Expressions::SymbolDocumentInfo* get_Document()
+		{
+			return ((::System::Linq::Expressions::SymbolDocumentInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_DOCUMENT_OFFSET))(this);
+		}
+
+		::System::Int32 get_EndColumn()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_ENDCOLUMN_OFFSET))(this);
+		}
+
+		::System::Int32 get_EndLine()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_ENDLINE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsClear()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_ISCLEAR_OFFSET))(this);
+		}
+
+		::System::Linq::Expressions::ExpressionType get_NodeType()
+		{
+			return ((::System::Linq::Expressions::ExpressionType(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_NODETYPE_OFFSET))(this);
+		}
+
+		::System::Int32 get_StartColumn()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_STARTCOLUMN_OFFSET))(this);
+		}
+
+		::System::Int32 get_StartLine()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_STARTLINE_OFFSET))(this);
+		}
+
+		::System::Type* get_Type()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_EXPRESSION_DEBUGINFOEXPRESSIONPROXY_GET_TYPE_OFFSET))(this);
+		}
+	};
+}

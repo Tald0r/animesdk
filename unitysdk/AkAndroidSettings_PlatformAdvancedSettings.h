@@ -4,31 +4,47 @@
 #include "unitysdk/AkCommonAdvancedSettings.h"
 
 class AkPlatformInitSettings;
+namespace System { class String; }
 
-#define AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS_COPYTO_OFFSET UNITYSDK_OFFSET(0x18379740)
-#define AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x18379790)
-#define AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS___IFIXBASEPROXY_COPYTO_OFFSET UNITYSDK_OFFSET(0x18379810)
+#define AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS_COPYTO_OFFSET UNITYSDK_OFFSET(0x1AD6EBA0)
+#define AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS_GETANDROIDSDKVERSION_OFFSET UNITYSDK_OFFSET(0x1AD6EB80)
+#define AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS_ISCURRENTAPILEVELSUPPPORTAAUDIO_OFFSET UNITYSDK_OFFSET(0x1AD6EB90)
+#define AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS_ISMATCH_OFFSET UNITYSDK_OFFSET(0x1AD6E940)
+#define AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD6EBB0)
 
-inline static constexpr unsigned int AkAndroidSettings_PlatformAdvancedSettings_TypeDefinitionIndex = 33555;
+inline static constexpr unsigned int AkAndroidSettings_PlatformAdvancedSettings_TypeDefinitionIndex = 30001;
 
 class AkAndroidSettings_PlatformAdvancedSettings : public ::AkCommonAdvancedSettings
 {
 public:
 	::AkAndroidSettings_PlatformAdvancedSettings_AudioAPI m_AudioAPI; // 0x58
 	::System::Boolean m_RoundFrameSizeToHardwareSize; // 0x5C
+	::System::String* m_DeviceModels; // 0x60
+	::System::String* m_DeviceNames; // 0x68
+	::System::Int32 aaudioMinApiLevel; // 0x70
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS__CTOR_OFFSET))(this);
 	}
 
+	::System::Boolean IsMatch()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS_ISMATCH_OFFSET))(this);
+	}
+
+	static ::System::Int32 GetAndroidSDKVersion()
+	{
+		return ((::System::Int32(*)())((::PBYTE)hIl2Cpp + AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS_GETANDROIDSDKVERSION_OFFSET))();
+	}
+
+	::System::Boolean IsCurrentApiLevelSuppportAaudio()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS_ISCURRENTAPILEVELSUPPPORTAAUDIO_OFFSET))(this);
+	}
+
 	::System::Void CopyTo(::AkPlatformInitSettings* settings)
 	{
 		return ((::System::Void(*)(::PVOID, ::AkPlatformInitSettings*))((::PBYTE)hIl2Cpp + AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS_COPYTO_OFFSET))(this, settings);
-	}
-
-	::System::Void __iFixBaseProxy_CopyTo(::AkPlatformInitSettings* P0)
-	{
-		return ((::System::Void(*)(::PVOID, ::AkPlatformInitSettings*))((::PBYTE)hIl2Cpp + AKANDROIDSETTINGS_PLATFORMADVANCEDSETTINGS___IFIXBASEPROXY_COPYTO_OFFSET))(this, P0);
 	}
 };

@@ -12,27 +12,24 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 
-#define AKAMBIENT_BUILDAKPOSITIONARRAY_OFFSET UNITYSDK_OFFSET(0x18377B40)
-#define AKAMBIENT_BUILDMULTIDIRECTIONARRAY_OFFSET UNITYSDK_OFFSET(0x18377280)
-#define AKAMBIENT_HANDLEEVENT_OFFSET UNITYSDK_OFFSET(0x18378540)
-#define AKAMBIENT_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x183782A0)
-#define AKAMBIENT_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x18378C80)
-#define AKAMBIENT_ONENABLE_OFFSET UNITYSDK_OFFSET(0x18376DD0)
-#define AKAMBIENT_START_OFFSET UNITYSDK_OFFSET(0x183777F0)
-#define AKAMBIENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x183792D0)
-#define AKAMBIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x18379190)
-#define AKAMBIENT___IFIXBASEPROXY_HANDLEEVENT_OFFSET UNITYSDK_OFFSET(0x18379420)
-#define AKAMBIENT___IFIXBASEPROXY_ONENABLE_OFFSET UNITYSDK_OFFSET(0x18379370)
-#define AKAMBIENT___IFIXBASEPROXY_START_OFFSET UNITYSDK_OFFSET(0x18379410)
+#define AKAMBIENT_BUILDAKPOSITIONARRAY_OFFSET UNITYSDK_OFFSET(0x1ADDECD0)
+#define AKAMBIENT_BUILDMULTIDIRECTIONARRAY_OFFSET UNITYSDK_OFFSET(0x1ADDE630)
+#define AKAMBIENT_HANDLEEVENT_OFFSET UNITYSDK_OFFSET(0x1ADDF2C0)
+#define AKAMBIENT_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1ADDF060)
+#define AKAMBIENT_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x1ADDF4C0)
+#define AKAMBIENT_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1ADDE1A0)
+#define AKAMBIENT_START_OFFSET UNITYSDK_OFFSET(0x1ADDEB00)
+#define AKAMBIENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ADDF590)
+#define AKAMBIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADDF580)
 
-inline static constexpr unsigned int AkAmbient_TypeDefinitionIndex = 33656;
+inline static constexpr unsigned int AkAmbient_TypeDefinitionIndex = 30098;
 
 class AkAmbient : public ::AkEvent
 {
 public:
 	static ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::AkMultiPosEvent*>** StaticGet_multiPosEventTree()
 	{
-		return (::System::Collections::Generic::Dictionary_2<::System::UInt32, ::AkMultiPosEvent*>**)Il2CppClass::FromTypeDefinitionIndex(AkAmbient_TypeDefinitionIndex)->GetStaticField(0x342E0);
+		return (::System::Collections::Generic::Dictionary_2<::System::UInt32, ::AkMultiPosEvent*>**)Il2CppClass::FromTypeDefinitionIndex(AkAmbient_TypeDefinitionIndex)->GetStaticField(0x23430);
 	}
 	::AkMultiPositionType MultiPositionType; // 0x90
 	::MultiPositionTypeLabel multiPositionTypeLabel; // 0x94
@@ -82,20 +79,5 @@ public:
 	::AkPositionArray* BuildAkPositionArray()
 	{
 		return ((::AkPositionArray*(*)(::PVOID))((::PBYTE)hIl2Cpp + AKAMBIENT_BUILDAKPOSITIONARRAY_OFFSET))(this);
-	}
-
-	::System::Void __iFixBaseProxy_OnEnable()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKAMBIENT___IFIXBASEPROXY_ONENABLE_OFFSET))(this);
-	}
-
-	::System::Void __iFixBaseProxy_Start()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + AKAMBIENT___IFIXBASEPROXY_START_OFFSET))(this);
-	}
-
-	::System::Void __iFixBaseProxy_HandleEvent(::UnityEngine::GameObject* P0)
-	{
-		return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + AKAMBIENT___IFIXBASEPROXY_HANDLEEVENT_OFFSET))(this, P0);
 	}
 };

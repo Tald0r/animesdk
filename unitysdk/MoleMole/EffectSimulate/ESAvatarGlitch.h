@@ -1,0 +1,244 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Config/MaterialPropertyType.h"
+#include "unitysdk/MoleMole/EffectSimulate/ESAvatarMatChange.h"
+
+namespace MoleMole { class ConfigAnimationCurveGroup; }
+namespace MoleMole { class ConfigMaterialPropertyModifier; }
+namespace MoleMole::EffectSimulate { class Color01KeyframeCurve; }
+namespace MoleMole::EffectSimulate { class UV01KeyframeCurve; }
+namespace System { class String; }
+namespace System { class Type; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class MaterialPropertyBlock; }
+namespace UnityEngine { class Renderer; }
+namespace UnityEngine { class Texture; }
+
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_03A81715BD2AFEF3_OFFSET UNITYSDK_OFFSET(0x141A30D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_15169B7DEE2D29F3_OFFSET UNITYSDK_OFFSET(0x141A23C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0x141A37E0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0x141A2660)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x141A3230)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_4FB5F56430673EA6_OFFSET UNITYSDK_OFFSET(0x141A2850)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_581A5078A2F29034_OFFSET UNITYSDK_OFFSET(0x141A37D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_681E224EC188A7D5_OFFSET UNITYSDK_OFFSET(0x141A3CC0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_6C19D4BE6FF4BC99_OFFSET UNITYSDK_OFFSET(0x141A3AC0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_6F54E34F52AB60F6_OFFSET UNITYSDK_OFFSET(0x141A21D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_1_OFFSET UNITYSDK_OFFSET(0x141A26C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_2_OFFSET UNITYSDK_OFFSET(0x141A3840)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_3_OFFSET UNITYSDK_OFFSET(0x141A38D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_4_OFFSET UNITYSDK_OFFSET(0x141A3A30)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_5_OFFSET UNITYSDK_OFFSET(0x141A3BA0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_6_OFFSET UNITYSDK_OFFSET(0x141A3C30)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_7_OFFSET UNITYSDK_OFFSET(0x141A3DD0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0x141A25D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_9441529D4B4B549D_OFFSET UNITYSDK_OFFSET(0x141A3680)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_9B724A77835775F4_OFFSET UNITYSDK_OFFSET(0x141A2DA0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_9F8EF6EE79B16064_OFFSET UNITYSDK_OFFSET(0x141A3D40)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_AF829D19116D5A7A_OFFSET UNITYSDK_OFFSET(0x141A2930)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x141A39C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x141A3960)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_D48E59CCA888A92A_OFFSET UNITYSDK_OFFSET(0x141A27C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_DA1BF2C227DC3D86_1_OFFSET UNITYSDK_OFFSET(0x141A3B40)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_DA1BF2C227DC3D86_OFFSET UNITYSDK_OFFSET(0x141A2750)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_EB15466536C39910_OFFSET UNITYSDK_OFFSET(0x141A34D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_EEA73B6010018ADD_1_OFFSET UNITYSDK_OFFSET(0x141A3770)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_EEA73B6010018ADD_OFFSET UNITYSDK_OFFSET(0x141A28D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_F91B8892FC7A8C48_OFFSET UNITYSDK_OFFSET(0x141A36F0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_FCAE2431182375FA_OFFSET UNITYSDK_OFFSET(0x141A3A20)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH__CTOR_OFFSET UNITYSDK_OFFSET(0x141A32D0)
+
+namespace MoleMole::EffectSimulate
+{
+	inline static constexpr unsigned int ESAvatarGlitch_TypeDefinitionIndex = 49393;
+
+	class ESAvatarGlitch : public ::MoleMole::EffectSimulate::ESAvatarMatChange
+	{
+	public:
+		// static const ::System::String* _BLOCKMASKTEX_PROP_NAME; // 0x0
+		// static const ::System::String* _BLOCKMASKTEX_ST_PROP_NAME; // 0x0
+		// static const ::System::String* _SCREENSCALE_PROP_NAME; // 0x0
+		// static const ::System::String* _BLOCKCOLORA_PROP_NAME; // 0x0
+		// static const ::System::String* _BLOCKCOLORB_PROP_NAME; // 0x0
+		// static const ::System::String* _BLOCKCOLORC_PROP_NAME; // 0x0
+		// static const ::System::String* _BLOCKCOLORD_PROP_NAME; // 0x0
+		::System::Boolean use_BlockMaskTex; // 0xB8
+		::UnityEngine::Texture* AMC_BlockMaskTex; // 0xC0
+		::MoleMole::EffectSimulate::UV01KeyframeCurve* AMC_BlockMaskTex_ST; // 0xC8
+		::System::Boolean AMC_ScreenScale; // 0xD0
+		::System::Boolean use_BlockColorA; // 0xD1
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_BlockColorA; // 0xD8
+		::System::Boolean use_BlockColorB; // 0xE0
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_BlockColorB; // 0xE8
+		::System::Boolean use_BlockColorC; // 0xF0
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_BlockColorC; // 0xF8
+		::System::Boolean use_BlockColorD; // 0x100
+		::MoleMole::EffectSimulate::Color01KeyframeCurve* AMC_BlockColorD; // 0x108
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Method_4_6F54E34F52AB60F6(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_6F54E34F52AB60F6_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_4_15169B7DEE2D29F3(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_15169B7DEE2D29F3_OFFSET))(this, a1);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_OFFSET))(this);
+		}
+
+		::System::Boolean Method_4_391A84BCD9F51317()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_391A84BCD9F51317_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_1_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_DA1BF2C227DC3D86_OFFSET))(this);
+		}
+
+		::MoleMole::ConfigMaterialPropertyModifier* Method_4_D48E59CCA888A92A()
+		{
+			return ((::MoleMole::ConfigMaterialPropertyModifier*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_D48E59CCA888A92A_OFFSET))(this);
+		}
+
+		::System::Type* Method_4_4FB5F56430673EA6()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_4FB5F56430673EA6_OFFSET))(this);
+		}
+
+		::MoleMole::Config::MaterialPropertyType Method_4_EEA73B6010018ADD()
+		{
+			return ((::MoleMole::Config::MaterialPropertyType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_EEA73B6010018ADD_OFFSET))(this);
+		}
+
+		::System::Void Method_4_AF829D19116D5A7A(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2, ::System::Single a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_AF829D19116D5A7A_OFFSET))(this, a1, a2, a3);
+		}
+
+		::System::Void Method_4_9B724A77835775F4(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_9B724A77835775F4_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_4_03A81715BD2AFEF3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_03A81715BD2AFEF3_OFFSET))(this);
+		}
+
+		::System::Void Method_4_4343F372F34C05BF()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_4343F372F34C05BF_OFFSET))(this);
+		}
+
+		::System::Void Method_4_EB15466536C39910(::UnityEngine::Renderer* a1, ::UnityEngine::Material* a2, ::UnityEngine::MaterialPropertyBlock* a3, ::UnityEngine::Material* a4)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Renderer*, ::UnityEngine::Material*, ::UnityEngine::MaterialPropertyBlock*, ::UnityEngine::Material*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_EB15466536C39910_OFFSET))(this, a1, a2, a3, a4);
+		}
+
+		::System::Void Method_4_9441529D4B4B549D(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_9441529D4B4B549D_OFFSET))(this, a1, a2);
+		}
+
+		::System::Void Method_4_F91B8892FC7A8C48(::MoleMole::ConfigMaterialPropertyModifier* a1, ::MoleMole::ConfigAnimationCurveGroup* a2, ::System::Single a3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::ConfigMaterialPropertyModifier*, ::MoleMole::ConfigAnimationCurveGroup*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_F91B8892FC7A8C48_OFFSET))(this, a1, a2, a3);
+		}
+
+		::MoleMole::Config::MaterialPropertyType Method_4_EEA73B6010018ADD_1()
+		{
+			return ((::MoleMole::Config::MaterialPropertyType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_EEA73B6010018ADD_1_OFFSET))(this);
+		}
+
+		::System::String* Method_4_581A5078A2F29034()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_581A5078A2F29034_OFFSET))(this);
+		}
+
+		::System::Boolean Method_4_391A84BCD9F51317_1()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_391A84BCD9F51317_1_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_2()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_2_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_3()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_3_OFFSET))(this);
+		}
+
+		::System::Void Method_4_CA373AA1C7054598()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_CA373AA1C7054598_OFFSET))(this);
+		}
+
+		::System::Void Method_4_CA373AA1C7054598_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_CA373AA1C7054598_1_OFFSET))(this);
+		}
+
+		::System::Void Method_4_FCAE2431182375FA(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_FCAE2431182375FA_OFFSET))(this, a1);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_4()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_4_OFFSET))(this);
+		}
+
+		::System::Void Method_4_6C19D4BE6FF4BC99()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_6C19D4BE6FF4BC99_OFFSET))(this);
+		}
+
+		::System::String* Method_4_DA1BF2C227DC3D86_1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_DA1BF2C227DC3D86_1_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_5()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_5_OFFSET))(this);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_6()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_6_OFFSET))(this);
+		}
+
+		::System::Type* Method_4_681E224EC188A7D5()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_681E224EC188A7D5_OFFSET))(this);
+		}
+
+		::System::Void Method_4_9F8EF6EE79B16064(::UnityEngine::GameObject* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_9F8EF6EE79B16064_OFFSET))(this, a1);
+		}
+
+		::System::String* Method_4_88B60F3B95FAA4F1_7()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESAVATARGLITCH_METHOD_4_88B60F3B95FAA4F1_7_OFFSET))(this);
+		}
+	};
+}

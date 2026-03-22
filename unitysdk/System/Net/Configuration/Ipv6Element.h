@@ -4,12 +4,14 @@
 
 namespace System::Configuration { class ConfigurationPropertyCollection; }
 
-#define SYSTEM_NET_CONFIGURATION_IPV6ELEMENT_GET_PROPERTIES_OFFSET UNITYSDK_OFFSET(0x17EA2B90)
-#define SYSTEM_NET_CONFIGURATION_IPV6ELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x17EA2B50)
+#define SYSTEM_NET_CONFIGURATION_IPV6ELEMENT_GET_ENABLED_OFFSET UNITYSDK_OFFSET(0x19685B60)
+#define SYSTEM_NET_CONFIGURATION_IPV6ELEMENT_GET_PROPERTIES_OFFSET UNITYSDK_OFFSET(0x19685BE0)
+#define SYSTEM_NET_CONFIGURATION_IPV6ELEMENT_SET_ENABLED_OFFSET UNITYSDK_OFFSET(0x19685BA0)
+#define SYSTEM_NET_CONFIGURATION_IPV6ELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x19685B20)
 
 namespace System::Net::Configuration
 {
-	inline static constexpr unsigned int Ipv6Element_TypeDefinitionIndex = 3059;
+	inline static constexpr unsigned int Ipv6Element_TypeDefinitionIndex = 4134;
 
 	class Ipv6Element : public ::System::Configuration::ConfigurationElement
 	{
@@ -17,6 +19,16 @@ namespace System::Net::Configuration
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_IPV6ELEMENT__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_Enabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_IPV6ELEMENT_GET_ENABLED_OFFSET))(this);
+		}
+
+		::System::Void set_Enabled(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_IPV6ELEMENT_SET_ENABLED_OFFSET))(this, value);
 		}
 
 		::System::Configuration::ConfigurationPropertyCollection* get_Properties()

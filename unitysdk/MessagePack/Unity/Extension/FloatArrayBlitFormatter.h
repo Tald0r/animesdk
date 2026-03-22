@@ -1,16 +1,15 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MessagePack/Unity/Extension/ReverseEndianessHelperSimpleSingle.h"
-#include "unitysdk/MessagePack/Unity/Extension/UnsafeBlitFormatterBase_2.h"
+#include "unitysdk/MessagePack/Unity/Extension/UnsafeBlitFormatterBase_1.h"
 
-#define MESSAGEPACK_UNITY_EXTENSION_FLOATARRAYBLITFORMATTER_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x1561A590)
-#define MESSAGEPACK_UNITY_EXTENSION_FLOATARRAYBLITFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1561A5A0)
+#define MESSAGEPACK_UNITY_EXTENSION_FLOATARRAYBLITFORMATTER_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x19C821B0)
+#define MESSAGEPACK_UNITY_EXTENSION_FLOATARRAYBLITFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x19C821C0)
 
 namespace MessagePack::Unity::Extension
 {
-	inline static constexpr unsigned int FloatArrayBlitFormatter_TypeDefinitionIndex = 33965;
+	inline static constexpr unsigned int FloatArrayBlitFormatter_TypeDefinitionIndex = 25293;
 
-	class FloatArrayBlitFormatter : public ::MessagePack::Unity::Extension::UnsafeBlitFormatterBase_2<::System::Single, ::MessagePack::Unity::Extension::ReverseEndianessHelperSimpleSingle>
+	class FloatArrayBlitFormatter : public ::MessagePack::Unity::Extension::UnsafeBlitFormatterBase_1<::System::Single>
 	{
 	public:
 		::System::Void _ctor()

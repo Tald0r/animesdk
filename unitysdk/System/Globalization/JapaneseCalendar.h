@@ -3,55 +3,72 @@
 #include "unitysdk/System/DateTime.h"
 #include "unitysdk/System/DayOfWeek.h"
 #include "unitysdk/System/Globalization/Calendar.h"
+#include "unitysdk/System/Globalization/CalendarAlgorithmType.h"
+#include "unitysdk/System/Globalization/CalendarWeekRule.h"
 
 namespace System { class String; }
 namespace System::Globalization { class EraInfo; }
 namespace System::Globalization { class GregorianCalendarHelper; }
 
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ABBREVERANAMES_OFFSET UNITYSDK_OFFSET(0x15C3A780)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ENGLISHERANAMES_OFFSET UNITYSDK_OFFSET(0x15C3A520)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ERANAMES_OFFSET UNITYSDK_OFFSET(0x15C3A650)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYOFMONTH_OFFSET UNITYSDK_OFFSET(0x15C5D3E0)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYOFWEEK_OFFSET UNITYSDK_OFFSET(0x15C5D420)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYSINMONTH_OFFSET UNITYSDK_OFFSET(0x15C5D3C0)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDEFAULTINSTANCE_OFFSET UNITYSDK_OFFSET(0x15C4A2B0)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETERAINFO_OFFSET UNITYSDK_OFFSET(0x15C5CD90)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETERASFROMREGISTRY_OFFSET UNITYSDK_OFFSET(0x15C5D1E0)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETERA_OFFSET UNITYSDK_OFFSET(0x15C5D4C0)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETMONTHSINYEAR_OFFSET UNITYSDK_OFFSET(0x15C5D490)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETMONTH_OFFSET UNITYSDK_OFFSET(0x15C5D4E0)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETYEAR_OFFSET UNITYSDK_OFFSET(0x15C5D520)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_ERAS_OFFSET UNITYSDK_OFFSET(0x15C5D6D0)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_ID_OFFSET UNITYSDK_OFFSET(0x15C5D3B0)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_MAXSUPPORTEDDATETIME_OFFSET UNITYSDK_OFFSET(0x15C5CD80)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_MINSUPPORTEDDATETIME_OFFSET UNITYSDK_OFFSET(0x15C5CD20)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_TWODIGITYEARMAX_OFFSET UNITYSDK_OFFSET(0x15C5D790)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ISLEAPYEAR_OFFSET UNITYSDK_OFFSET(0x15C5D540)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ISVALIDYEAR_OFFSET UNITYSDK_OFFSET(0x15C5D6F0)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_TODATETIME_OFFSET UNITYSDK_OFFSET(0x15C5D590)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_TOFOURDIGITYEAR_OFFSET UNITYSDK_OFFSET(0x15C5D5B0)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR__CCTOR_OFFSET UNITYSDK_OFFSET(0x15C5D7D0)
-#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR__CTOR_OFFSET UNITYSDK_OFFSET(0x15C5D1F0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ABBREVERANAMES_OFFSET UNITYSDK_OFFSET(0x188AA720)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ADDMONTHS_OFFSET UNITYSDK_OFFSET(0x188AA180)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ADDYEARS_OFFSET UNITYSDK_OFFSET(0x188AA1A0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_COMPAREERARANGES_OFFSET UNITYSDK_OFFSET(0x188A9C00)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ENGLISHERANAMES_OFFSET UNITYSDK_OFFSET(0x188AA810)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ERANAMES_OFFSET UNITYSDK_OFFSET(0x188AA630)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYOFMONTH_OFFSET UNITYSDK_OFFSET(0x188AA250)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYOFWEEK_OFFSET UNITYSDK_OFFSET(0x188AA290)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYOFYEAR_OFFSET UNITYSDK_OFFSET(0x188AA300)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYSINMONTH_OFFSET UNITYSDK_OFFSET(0x188AA1D0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYSINYEAR_OFFSET UNITYSDK_OFFSET(0x188AA1F0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDEFAULTINSTANCE_OFFSET UNITYSDK_OFFSET(0x188A9EF0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETERAFROMVALUE_OFFSET UNITYSDK_OFFSET(0x188A9C40)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETERAINFO_OFFSET UNITYSDK_OFFSET(0x188A9790)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETERASFROMREGISTRY_OFFSET UNITYSDK_OFFSET(0x188A9BF0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETERA_OFFSET UNITYSDK_OFFSET(0x188AA3A0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETLEAPMONTH_OFFSET UNITYSDK_OFFSET(0x188AA490)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETMONTHSINYEAR_OFFSET UNITYSDK_OFFSET(0x188AA340)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETMONTH_OFFSET UNITYSDK_OFFSET(0x188AA3C0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETWEEKOFYEAR_OFFSET UNITYSDK_OFFSET(0x188AA370)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETYEAR_OFFSET UNITYSDK_OFFSET(0x188AA400)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_ALGORITHMTYPE_OFFSET UNITYSDK_OFFSET(0x188A9780)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_ERAS_OFFSET UNITYSDK_OFFSET(0x188AA610)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_ID_OFFSET UNITYSDK_OFFSET(0x188AA170)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_MAXSUPPORTEDDATETIME_OFFSET UNITYSDK_OFFSET(0x188A9770)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_MINSUPPORTEDDATETIME_OFFSET UNITYSDK_OFFSET(0x188A9730)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_TWODIGITYEARMAX_OFFSET UNITYSDK_OFFSET(0x188AA9A0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ISLEAPDAY_OFFSET UNITYSDK_OFFSET(0x188AA420)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ISLEAPMONTH_OFFSET UNITYSDK_OFFSET(0x188AA4B0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ISLEAPYEAR_OFFSET UNITYSDK_OFFSET(0x188AA440)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ISVALIDYEAR_OFFSET UNITYSDK_OFFSET(0x188AA900)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_SET_TWODIGITYEARMAX_OFFSET UNITYSDK_OFFSET(0x188AA9E0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_TODATETIME_OFFSET UNITYSDK_OFFSET(0x188AA4D0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR_TOFOURDIGITYEAR_OFFSET UNITYSDK_OFFSET(0x188AA4F0)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR__CCTOR_OFFSET UNITYSDK_OFFSET(0x188AAB30)
+#define SYSTEM_GLOBALIZATION_JAPANESECALENDAR__CTOR_OFFSET UNITYSDK_OFFSET(0x188A9FB0)
 
 namespace System::Globalization
 {
-	inline static constexpr unsigned int JapaneseCalendar_TypeDefinitionIndex = 756;
+	inline static constexpr unsigned int JapaneseCalendar_TypeDefinitionIndex = 737;
 
 	class JapaneseCalendar : public ::System::Globalization::Calendar
 	{
 	public:
 		static ::System::Globalization::Calendar** StaticGet_s_defaultInstance()
 		{
-			return (::System::Globalization::Calendar**)Il2CppClass::FromTypeDefinitionIndex(JapaneseCalendar_TypeDefinitionIndex)->GetStaticField(0x8730);
+			return (::System::Globalization::Calendar**)Il2CppClass::FromTypeDefinitionIndex(JapaneseCalendar_TypeDefinitionIndex)->GetStaticField(0x6B0);
 		}
 		static ::Il2CppArray<::System::Globalization::EraInfo*>** StaticGet_japaneseEraInfo()
 		{
-			return (::Il2CppArray<::System::Globalization::EraInfo*>**)Il2CppClass::FromTypeDefinitionIndex(JapaneseCalendar_TypeDefinitionIndex)->GetStaticField(0x8738);
+			return (::Il2CppArray<::System::Globalization::EraInfo*>**)Il2CppClass::FromTypeDefinitionIndex(JapaneseCalendar_TypeDefinitionIndex)->GetStaticField(0x6B8);
 		}
 		static ::System::DateTime* StaticGet_calendarMinValue()
 		{
-			return (::System::DateTime*)Il2CppClass::FromTypeDefinitionIndex(JapaneseCalendar_TypeDefinitionIndex)->GetStaticField(0x2BF0);
+			return (::System::DateTime*)Il2CppClass::FromTypeDefinitionIndex(JapaneseCalendar_TypeDefinitionIndex)->GetStaticField(0x150);
 		}
+		// static const ::System::String* c_japaneseErasHive; // 0x0
+		// static const ::System::String* c_japaneseErasHivePermissionList; // 0x0
+		// static const ::System::Int32 DEFAULT_TWO_DIGIT_YEAR_MAX = 0x63; // 0x0
 		::System::Globalization::GregorianCalendarHelper* helper; // 0x20
 
 		::System::Void _ctor()
@@ -74,6 +91,11 @@ namespace System::Globalization
 			return ((::System::DateTime(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_MAXSUPPORTEDDATETIME_OFFSET))(this);
 		}
 
+		::System::Globalization::CalendarAlgorithmType get_AlgorithmType()
+		{
+			return ((::System::Globalization::CalendarAlgorithmType(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_ALGORITHMTYPE_OFFSET))(this);
+		}
+
 		static ::Il2CppArray<::System::Globalization::EraInfo*>* GetEraInfo()
 		{
 			return ((::Il2CppArray<::System::Globalization::EraInfo*>*(*)())((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETERAINFO_OFFSET))();
@@ -82,6 +104,16 @@ namespace System::Globalization
 		static ::Il2CppArray<::System::Globalization::EraInfo*>* GetErasFromRegistry()
 		{
 			return ((::Il2CppArray<::System::Globalization::EraInfo*>*(*)())((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETERASFROMREGISTRY_OFFSET))();
+		}
+
+		static ::System::Int32 CompareEraRanges(::System::Globalization::EraInfo* a, ::System::Globalization::EraInfo* b)
+		{
+			return ((::System::Int32(*)(::System::Globalization::EraInfo*, ::System::Globalization::EraInfo*))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_COMPAREERARANGES_OFFSET))(a, b);
+		}
+
+		static ::System::Globalization::EraInfo* GetEraFromValue(::System::String* value, ::System::String* data)
+		{
+			return ((::System::Globalization::EraInfo*(*)(::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETERAFROMVALUE_OFFSET))(value, data);
 		}
 
 		static ::System::Globalization::Calendar* GetDefaultInstance()
@@ -94,9 +126,24 @@ namespace System::Globalization
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_ID_OFFSET))(this);
 		}
 
+		::System::DateTime AddMonths(::System::DateTime time, ::System::Int32 months)
+		{
+			return ((::System::DateTime(*)(::PVOID, ::System::DateTime, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ADDMONTHS_OFFSET))(this, time, months);
+		}
+
+		::System::DateTime AddYears(::System::DateTime time, ::System::Int32 years)
+		{
+			return ((::System::DateTime(*)(::PVOID, ::System::DateTime, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ADDYEARS_OFFSET))(this, time, years);
+		}
+
 		::System::Int32 GetDaysInMonth(::System::Int32 year, ::System::Int32 month, ::System::Int32 era)
 		{
 			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYSINMONTH_OFFSET))(this, year, month, era);
+		}
+
+		::System::Int32 GetDaysInYear(::System::Int32 year, ::System::Int32 era)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYSINYEAR_OFFSET))(this, year, era);
 		}
 
 		::System::Int32 GetDayOfMonth(::System::DateTime time)
@@ -109,9 +156,19 @@ namespace System::Globalization
 			return ((::System::DayOfWeek(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYOFWEEK_OFFSET))(this, time);
 		}
 
+		::System::Int32 GetDayOfYear(::System::DateTime time)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETDAYOFYEAR_OFFSET))(this, time);
+		}
+
 		::System::Int32 GetMonthsInYear(::System::Int32 year, ::System::Int32 era)
 		{
 			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETMONTHSINYEAR_OFFSET))(this, year, era);
+		}
+
+		::System::Int32 GetWeekOfYear(::System::DateTime time, ::System::Globalization::CalendarWeekRule rule, ::System::DayOfWeek firstDayOfWeek)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::DateTime, ::System::Globalization::CalendarWeekRule, ::System::DayOfWeek))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETWEEKOFYEAR_OFFSET))(this, time, rule, firstDayOfWeek);
 		}
 
 		::System::Int32 GetEra(::System::DateTime time)
@@ -129,9 +186,24 @@ namespace System::Globalization
 			return ((::System::Int32(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETYEAR_OFFSET))(this, time);
 		}
 
+		::System::Boolean IsLeapDay(::System::Int32 year, ::System::Int32 month, ::System::Int32 day, ::System::Int32 era)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ISLEAPDAY_OFFSET))(this, year, month, day, era);
+		}
+
 		::System::Boolean IsLeapYear(::System::Int32 year, ::System::Int32 era)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ISLEAPYEAR_OFFSET))(this, year, era);
+		}
+
+		::System::Int32 GetLeapMonth(::System::Int32 year, ::System::Int32 era)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GETLEAPMONTH_OFFSET))(this, year, era);
+		}
+
+		::System::Boolean IsLeapMonth(::System::Int32 year, ::System::Int32 month, ::System::Int32 era)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_ISLEAPMONTH_OFFSET))(this, year, month, era);
 		}
 
 		::System::DateTime ToDateTime(::System::Int32 year, ::System::Int32 month, ::System::Int32 day, ::System::Int32 hour, ::System::Int32 minute, ::System::Int32 second, ::System::Int32 millisecond, ::System::Int32 era)
@@ -172,6 +244,11 @@ namespace System::Globalization
 		::System::Int32 get_TwoDigitYearMax()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_GET_TWODIGITYEARMAX_OFFSET))(this);
+		}
+
+		::System::Void set_TwoDigitYearMax(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_GLOBALIZATION_JAPANESECALENDAR_SET_TWODIGITYEARMAX_OFFSET))(this, value);
 		}
 	};
 }

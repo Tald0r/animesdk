@@ -7,24 +7,22 @@ namespace UnityEngine::EventSystems { class BaseEventData; }
 namespace UnityEngine::EventSystems { class PointerEventData; }
 namespace UnityEngine::UI { class Button_ButtonClickedEvent; }
 
-#define UNITYENGINE_UI_BUTTON_FORBIDCLICK_OFFSET UNITYSDK_OFFSET(0x182E81E0)
-#define UNITYENGINE_UI_BUTTON_GET_ONCLICK_OFFSET UNITYSDK_OFFSET(0x182E7E90)
-#define UNITYENGINE_UI_BUTTON_IGNOREPOINTDISTANCECHECK_OFFSET UNITYSDK_OFFSET(0x182E81D0)
-#define UNITYENGINE_UI_BUTTON_ONFINISHSUBMIT_OFFSET UNITYSDK_OFFSET(0x182E8170)
-#define UNITYENGINE_UI_BUTTON_ONPOINTERCLICK_OFFSET UNITYSDK_OFFSET(0x182E7F30)
-#define UNITYENGINE_UI_BUTTON_ONSUBMIT_OFFSET UNITYSDK_OFFSET(0x182E8060)
-#define UNITYENGINE_UI_BUTTON_PRESS_OFFSET UNITYSDK_OFFSET(0x182E7EB0)
-#define UNITYENGINE_UI_BUTTON_SET_ONCLICK_OFFSET UNITYSDK_OFFSET(0x182E7EA0)
-#define UNITYENGINE_UI_BUTTON__CTOR_OFFSET UNITYSDK_OFFSET(0x182E7D30)
+#define UNITYENGINE_UI_BUTTON_GET_ONCLICK_OFFSET UNITYSDK_OFFSET(0x1ADCDA50)
+#define UNITYENGINE_UI_BUTTON_ONFINISHSUBMIT_OFFSET UNITYSDK_OFFSET(0x1ADCDCE0)
+#define UNITYENGINE_UI_BUTTON_ONPOINTERCLICK_OFFSET UNITYSDK_OFFSET(0x1ADCDB30)
+#define UNITYENGINE_UI_BUTTON_ONSUBMIT_OFFSET UNITYSDK_OFFSET(0x1ADCDBA0)
+#define UNITYENGINE_UI_BUTTON_PRESS_OFFSET UNITYSDK_OFFSET(0x1ADCDA70)
+#define UNITYENGINE_UI_BUTTON_SET_ONCLICK_OFFSET UNITYSDK_OFFSET(0x1ADCDA60)
+#define UNITYENGINE_UI_BUTTON__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADCD9F0)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int Button_TypeDefinitionIndex = 5458;
+	inline static constexpr unsigned int Button_TypeDefinitionIndex = 8317;
 
 	class Button : public ::UnityEngine::UI::Selectable
 	{
 	public:
-		::UnityEngine::UI::Button_ButtonClickedEvent* m_OnClick; // 0x108
+		::UnityEngine::UI::Button_ButtonClickedEvent* m_OnClick; // 0xF8
 
 		::System::Void _ctor()
 		{
@@ -59,16 +57,6 @@ namespace UnityEngine::UI
 		::System::Collections::IEnumerator* OnFinishSubmit()
 		{
 			return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_BUTTON_ONFINISHSUBMIT_OFFSET))(this);
-		}
-
-		::System::Boolean IgnorePointDistanceCheck(::UnityEngine::EventSystems::PointerEventData* pointerEventData)
-		{
-			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_BUTTON_IGNOREPOINTDISTANCECHECK_OFFSET))(this, pointerEventData);
-		}
-
-		::System::Boolean ForbidClick()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_BUTTON_FORBIDCLICK_OFFSET))(this);
 		}
 	};
 }

@@ -1,0 +1,42 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_208CC9941471731A_913;
+class Class_2_BA0E092CFC4D361C;
+namespace MoleMole { class UIMainCitySwitchRoleTimePanelWidgetController; }
+namespace System { class String; }
+namespace UnityEngine { class RectTransform; }
+
+#define MOLEMOLE_UIMAINCITYSWITCHROLETIMEPANELWIDGETCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC04270)
+#define MOLEMOLE_UIMAINCITYSWITCHROLETIMEPANELWIDGETCONTROLLER___C__DISPLAYCLASS26_0__REFRESHDESC_B__1_OFFSET UNITYSDK_OFFSET(0xAC04280)
+#define MOLEMOLE_UIMAINCITYSWITCHROLETIMEPANELWIDGETCONTROLLER___C__DISPLAYCLASS26_0__REFRESHDESC_G__ADDTEXTROW_0_OFFSET UNITYSDK_OFFSET(0xAC043C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMainCitySwitchRoleTimePanelWidgetController___c__DisplayClass26_0_TypeDefinitionIndex = 70186;
+
+	class UIMainCitySwitchRoleTimePanelWidgetController___c__DisplayClass26_0 : public ::System::Object
+	{
+	public:
+		::Class_2_BA0E092CFC4D361C* cfgMgr; // 0x10
+		::MoleMole::UIMainCitySwitchRoleTimePanelWidgetController* __4__this; // 0x18
+		::UnityEngine::RectTransform* content; // 0x20
+		::System::Int32 cnt; // 0x28
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYSWITCHROLETIMEPANELWIDGETCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Int32 _RefreshDesc_b__1(::Class_2_208CC9941471731A_913* a, ::Class_2_208CC9941471731A_913* b)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_913*, ::Class_2_208CC9941471731A_913*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYSWITCHROLETIMEPANELWIDGETCONTROLLER___C__DISPLAYCLASS26_0__REFRESHDESC_B__1_OFFSET))(this, a, b);
+		}
+
+		::System::Void _RefreshDesc_g__AddTextRow_0(::System::String* key)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYSWITCHROLETIMEPANELWIDGETCONTROLLER___C__DISPLAYCLASS26_0__REFRESHDESC_G__ADDTEXTROW_0_OFFSET))(this, key);
+		}
+	};
+}

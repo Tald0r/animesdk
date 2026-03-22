@@ -1,0 +1,70 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UICommonWeekRewardCompRowWidgetController.h"
+
+class Class_1_C6A4DECEE09618C7;
+class Class_2_08E43914789BE5F3;
+class Class_2_208CC9941471731A_215;
+namespace System { class Object; }
+
+#define MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_ONTAKEREWARDHANDLE_OFFSET UNITYSDK_OFFSET(0xBED3CF0)
+#define MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_REFRESHBUTTONSTATUS_OFFSET UNITYSDK_OFFSET(0xBED3520)
+#define MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_REFRESHPROGRESS_OFFSET UNITYSDK_OFFSET(0xBED3830)
+#define MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_REFRESHREWARDINFO_OFFSET UNITYSDK_OFFSET(0xBED3320)
+#define MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_REFRESHROWSTATE_OFFSET UNITYSDK_OFFSET(0xBED3090)
+#define MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_SENDREWARDREQ_OFFSET UNITYSDK_OFFSET(0xBED3B40)
+#define MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBED3E30)
+#define MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER___BASE_REFRESHROWSTATE_OFFSET UNITYSDK_OFFSET(0xBED3E40)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBabelTowerRewardCompRowWidgetController_TypeDefinitionIndex = 51789;
+
+	class UIBabelTowerRewardCompRowWidgetController : public ::MoleMole::UICommonWeekRewardCompRowWidgetController
+	{
+	public:
+		::Class_2_208CC9941471731A_215* rewardCfg; // 0x2D8
+		::Class_2_08E43914789BE5F3* babelTowerModel; // 0x2E0
+		::Class_1_C6A4DECEE09618C7* babelData; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void RefreshRowState(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_REFRESHROWSTATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void RefreshRewardInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_REFRESHREWARDINFO_OFFSET))(this);
+		}
+
+		::System::Void RefreshButtonStatus()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_REFRESHBUTTONSTATUS_OFFSET))(this);
+		}
+
+		::System::Void RefreshProgress()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_REFRESHPROGRESS_OFFSET))(this);
+		}
+
+		::System::Void SendRewardReq()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_SENDREWARDREQ_OFFSET))(this);
+		}
+
+		::System::Void OnTakeRewardHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER_ONTAKEREWARDHANDLE_OFFSET))(this);
+		}
+
+		::System::Void __base_RefreshRowState(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBABELTOWERREWARDCOMPROWWIDGETCONTROLLER___BASE_REFRESHROWSTATE_OFFSET))(this, P0, P1, P2);
+		}
+	};
+}

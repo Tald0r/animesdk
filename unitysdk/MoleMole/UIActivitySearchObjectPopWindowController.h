@@ -1,0 +1,108 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_75FA39A1A1EA67A3;
+namespace MoleMole { class UIActivitySearchObjectContext; }
+namespace MoleMole { class UIActivitySearchObjectWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_CLICKCANCEL_OFFSET UNITYSDK_OFFSET(0x8ABD640)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x8ABCD90)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_INITUI_OFFSET UNITYSDK_OFFSET(0x8ABD270)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8ABD480)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8ABD5B0)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8ABCDA0)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8ABD140)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_UICLOSE_OFFSET UNITYSDK_OFFSET(0x8ABD520)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8ABD6B0)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8ABD6C0)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8ABD730)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8ABD740)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8ABD750)
+#define MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER___BASE_UICLOSE_OFFSET UNITYSDK_OFFSET(0x8ABD7C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivitySearchObjectPopWindowController_TypeDefinitionIndex = 76928;
+
+	class UIActivitySearchObjectPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_75FA39A1A1EA67A3* _view; // 0x2F8
+		::MoleMole::UIActivitySearchObjectWidgetController* searchObjectWidgetController; // 0x300
+		::MoleMole::UIActivitySearchObjectContext* activitySearchObjectContext; // 0x308
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void InitUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_INITUI_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void UIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_UICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void ClickCancel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER_CLICKCANCEL_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_UIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSEARCHOBJECTPOPWINDOWCONTROLLER___BASE_UICLOSE_OFFSET))(this);
+		}
+	};
+}

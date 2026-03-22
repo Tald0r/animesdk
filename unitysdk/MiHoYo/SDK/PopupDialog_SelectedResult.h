@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int PopupDialog_SelectedResult_TypeDefinitionIndex = 6885;
+	inline static constexpr unsigned int PopupDialog_SelectedResult_TypeDefinitionIndex = 18021;
 
 	enum class PopupDialog_SelectedResult : ::System::Int32
 	{

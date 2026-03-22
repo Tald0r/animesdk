@@ -8,31 +8,39 @@
 #include "unitysdk/UnityEngine/Rendering/ReflectionProbeSortingCriteria.h"
 #include "unitysdk/UnityEngine/Rendering/ScriptableCullingParameters__m_CullingPlanes_e__FixedBuffer.h"
 #include "unitysdk/UnityEngine/Rendering/ScriptableCullingParameters__m_LayerFarCullDistances_e__FixedBuffer.h"
+#include "unitysdk/UnityEngine/Rendering/ScriptableCullingParameters__m_ScreenRatioCullingParams_e__FixedBuffer.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
 namespace System { class Object; }
 
-#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x204B6F0)
-#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_EQUALS_OFFSET UNITYSDK_OFFSET(0x204B6B0)
-#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GETCULLINGPLANE_OFFSET UNITYSDK_OFFSET(0x204B690)
-#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x204B770)
-#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GETLAYERCULLINGDISTANCE_OFFSET UNITYSDK_OFFSET(0x204B680)
-#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GET_CULLINGPLANECOUNT_OFFSET UNITYSDK_OFFSET(0x204B670)
-#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS__CCTOR_OFFSET UNITYSDK_OFFSET(0x18232C70)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x8E9BA0)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_EQUALS_OFFSET UNITYSDK_OFFSET(0x8E9B60)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GETCULLINGPLANE_OFFSET UNITYSDK_OFFSET(0x8E9B40)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x8E9C20)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GETLAYERCULLINGDISTANCE_OFFSET UNITYSDK_OFFSET(0x8E9B30)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GET_CULLINGOPTIONS_OFFSET UNITYSDK_OFFSET(0x8E9B10)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GET_CULLINGPLANECOUNT_OFFSET UNITYSDK_OFFSET(0x8E9AE0)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GET_MAXIMUMVISIBLELIGHTS_OFFSET UNITYSDK_OFFSET(0x8E9AC0)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_SETLOCALSHADOWCACHESETTING_OFFSET UNITYSDK_OFFSET(0x8E9A40)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_SET_CULLINGMASK_OFFSET UNITYSDK_OFFSET(0x8E9AF0)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_SET_CULLINGOPTIONS_OFFSET UNITYSDK_OFFSET(0x8E9B20)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_SET_MAXIMUMVISIBLELIGHTS_OFFSET UNITYSDK_OFFSET(0x8E9AD0)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_SET_SHADOWDISTANCE_OFFSET UNITYSDK_OFFSET(0x8E9B00)
+#define UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19BD2210)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int ScriptableCullingParameters_TypeDefinitionIndex = 4529;
+	inline static constexpr unsigned int ScriptableCullingParameters_TypeDefinitionIndex = 6203;
 
 	struct alignas(8) ScriptableCullingParameters
 	{
-		static ::System::Int32* StaticGet_layerCount()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ScriptableCullingParameters_TypeDefinitionIndex)->GetStaticField(0x64F0);
-		}
 		static ::System::Int32* StaticGet_maximumCullingPlaneCount()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ScriptableCullingParameters_TypeDefinitionIndex)->GetStaticField(0x64F4);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ScriptableCullingParameters_TypeDefinitionIndex)->GetStaticField(0x2C90);
+		}
+		static ::System::Int32* StaticGet_layerCount()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ScriptableCullingParameters_TypeDefinitionIndex)->GetStaticField(0x2C94);
 		}
 		::System::Int32 m_IsOrthographic; // 0x10
 		::UnityEngine::Rendering::LODParameters m_LODParameters; // 0x14
@@ -44,29 +52,76 @@ namespace UnityEngine::Rendering
 		::System::Int32 m_LayerCull; // 0x160
 		::UnityEngine::Matrix4x4 m_CullingMatrix; // 0x164
 		::UnityEngine::Vector3 m_Origin; // 0x1A4
-		::System::Single m_ShadowDistance; // 0x1B0
-		::UnityEngine::Rendering::CullingOptions m_CullingOptions; // 0x1B4
-		::UnityEngine::Rendering::ReflectionProbeSortingCriteria m_ReflectionProbeSortingCriteria; // 0x1B8
-		::UnityEngine::Rendering::CameraProperties m_CameraProperties; // 0x1BC
-		::System::Single m_AccurateOcclusionThreshold; // 0x5A0
-		::System::Int32 m_MaximumPortalCullingJobs; // 0x5A4
-		::UnityEngine::Matrix4x4 m_StereoViewMatrix; // 0x5A8
-		::UnityEngine::Matrix4x4 m_StereoProjectionMatrix; // 0x5E8
-		::System::Single m_StereoSeparationDistance; // 0x628
-		::System::Int32 m_maximumVisibleLights; // 0x62C
-		::System::IntPtr m_hizHisBuffer; // 0x630
-		::System::Boolean m_IsOCDebug; // 0x638
-		::System::Int32 m_numOCDelayFrame; // 0x63C
-		::System::Boolean m_enableDeformation; // 0x640
+		::UnityEngine::Rendering::ScriptableCullingParameters__m_ScreenRatioCullingParams_e__FixedBuffer m_ScreenRatioCullingParams; // 0x1B0
+		::System::Single m_ShadowDistance; // 0x230
+		::UnityEngine::Rendering::CullingOptions m_CullingOptions; // 0x234
+		::UnityEngine::Rendering::ReflectionProbeSortingCriteria m_ReflectionProbeSortingCriteria; // 0x238
+		::UnityEngine::Rendering::CameraProperties m_CameraProperties; // 0x23C
+		::System::Single m_AccurateOcclusionThreshold; // 0x61C
+		::System::Int32 m_MaximumPortalCullingJobs; // 0x620
+		::UnityEngine::Matrix4x4 m_StereoViewMatrix; // 0x624
+		::UnityEngine::Matrix4x4 m_StereoProjectionMatrix; // 0x664
+		::System::Single m_StereoSeparationDistance; // 0x6A4
+		::System::Int32 m_maximumVisibleLights; // 0x6A8
+		::UnityEngine::Vector3 m_localLightSortOffset; // 0x6AC
+		::System::Single m_localShadowCacheDynamicUpdateDistance; // 0x6B8
+		::System::Single m_localShadowCacheCastDistance; // 0x6BC
+		::System::Single m_localShadowCacheNoSkipDistance; // 0x6C0
+		::System::UInt32 m_localShadowCacheSkipUpdateFrames; // 0x6C4
+		::System::UInt32 m_localShadowCacheMaxShadowedLightCount; // 0x6C8
+		::System::UInt32 m_localShadowCacheMaxDynamicUpdatesPerFrame; // 0x6CC
+		::System::UInt32 m_localShadowCacheMaxStaticUpdatesPerFrame; // 0x6D0
+		::System::UInt32 m_localShadowCacheStaticCullMask; // 0x6D4
+		::System::UInt32 m_localShadowCacheDynamicCullMask; // 0x6D8
+		::System::UInt32 m_cameraInstanceID; // 0x6DC
+		::System::UInt64 m_sunShadowPVSBits; // 0x6E0
+		::System::UInt32 m_sunShadowPVSByteOffset; // 0x6E8
+		::System::UInt32 m_sunShadowPVSRangeCount; // 0x6EC
+		::System::UInt32 m_sunShadowArrayHandle; // 0x6F0
 
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS__CCTOR_OFFSET))();
 		}
 
+		::System::Void SetLocalShadowCacheSetting(::UnityEngine::Vector3 localLightSortOffset, ::System::Single dynamicUpdateDistance, ::System::Single castDistance, ::System::Single noSkipDistance, ::System::UInt32 skipUpdateFrames, ::System::UInt32 maxShadowedLightCount, ::System::UInt32 maxDynamicUpdatesPerFrame, ::System::UInt32 maxStaticUpdatesPerFrame, ::System::UInt32 staticCullMask, ::System::UInt32 dynamicCullMask)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::System::Single, ::System::Single, ::System::Single, ::System::UInt32, ::System::UInt32, ::System::UInt32, ::System::UInt32, ::System::UInt32, ::System::UInt32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_SETLOCALSHADOWCACHESETTING_OFFSET))(this, localLightSortOffset, dynamicUpdateDistance, castDistance, noSkipDistance, skipUpdateFrames, maxShadowedLightCount, maxDynamicUpdatesPerFrame, maxStaticUpdatesPerFrame, staticCullMask, dynamicCullMask);
+		}
+
+		::System::Int32 get_maximumVisibleLights()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GET_MAXIMUMVISIBLELIGHTS_OFFSET))(this);
+		}
+
+		::System::Void set_maximumVisibleLights(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_SET_MAXIMUMVISIBLELIGHTS_OFFSET))(this, value);
+		}
+
 		::System::Int32 get_cullingPlaneCount()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GET_CULLINGPLANECOUNT_OFFSET))(this);
+		}
+
+		::System::Void set_cullingMask(::System::UInt32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_SET_CULLINGMASK_OFFSET))(this, value);
+		}
+
+		::System::Void set_shadowDistance(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_SET_SHADOWDISTANCE_OFFSET))(this, value);
+		}
+
+		::UnityEngine::Rendering::CullingOptions get_cullingOptions()
+		{
+			return ((::UnityEngine::Rendering::CullingOptions(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_GET_CULLINGOPTIONS_OFFSET))(this);
+		}
+
+		::System::Void set_cullingOptions(::UnityEngine::Rendering::CullingOptions value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::CullingOptions))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_SCRIPTABLECULLINGPARAMETERS_SET_CULLINGOPTIONS_OFFSET))(this, value);
 		}
 
 		::System::Single GetLayerCullingDistance(::System::Int32 layerIndex)

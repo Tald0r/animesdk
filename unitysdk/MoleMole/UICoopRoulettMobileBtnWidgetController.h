@@ -1,0 +1,120 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_61C99D337397632C_1;
+class Class_2_C04F87C132BA9A06;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_ONCLICKBUTTON_OFFSET UNITYSDK_OFFSET(0xC604C30)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC604D90)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC605650)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC6049D0)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC604CE0)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_REFRESHBUTTONVIEW_OFFSET UNITYSDK_OFFSET(0xC6052C0)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_SETCLICKACTION_OFFSET UNITYSDK_OFFSET(0xC604E30)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_SETEMPTY_OFFSET UNITYSDK_OFFSET(0xC605130)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_SETINDEX_OFFSET UNITYSDK_OFFSET(0xC604EA0)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_SETSELECTALPHA_OFFSET UNITYSDK_OFFSET(0xC604FC0)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_SETSELECTSTATE_OFFSET UNITYSDK_OFFSET(0xC604F10)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC605730)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC605760)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC6057D0)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC605850)
+#define MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC6058B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICoopRoulettMobileBtnWidgetController_TypeDefinitionIndex = 73691;
+
+	class UICoopRoulettMobileBtnWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_61C99D337397632C_1* _view; // 0x2A0
+		::Class_2_C04F87C132BA9A06* _coopModel; // 0x2A8
+		::System::Int32 _index; // 0x2B0
+		::System::Action_1<::System::Int32>* _clickAction; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnClickButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_ONCLICKBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void SetClickAction(::System::Action_1<::System::Int32>* action)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_SETCLICKACTION_OFFSET))(this, action);
+		}
+
+		::System::Void SetIndex(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_SETINDEX_OFFSET))(this, index);
+		}
+
+		::System::Void SetSelectState(::System::Int32 selectIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_SETSELECTSTATE_OFFSET))(this, selectIndex);
+		}
+
+		::System::Void SetSelectAlpha(::System::Boolean isFocus)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_SETSELECTALPHA_OFFSET))(this, isFocus);
+		}
+
+		::System::Void SetEmpty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_SETEMPTY_OFFSET))(this);
+		}
+
+		::System::Void RefreshButtonView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_REFRESHBUTTONVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROULETTMOBILEBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,194 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+class Class_1_3056A65E74601914;
+class Class_1_3504BA60F75B631A;
+class Class_2_43C335EE7795076E;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIPhotoWallSwitchContext; }
+namespace System { class EventArgs; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_DATACOMPARISON_OFFSET UNITYSDK_OFFSET(0xD00AAF0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_GETCURRENTDATA_OFFSET UNITYSDK_OFFSET(0xD00B3B0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_GETCURRENTINDEX_OFFSET UNITYSDK_OFFSET(0xD00B200)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_GETORCREATECONTEXT_OFFSET UNITYSDK_OFFSET(0xD00B4B0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xD009600)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONCLICKCONFIRMCALLBACK_OFFSET UNITYSDK_OFFSET(0xD00B720)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONCLICKDELCALLBACK_OFFSET UNITYSDK_OFFSET(0xD00BA60)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONCLICKRENAMECALLBACK_OFFSET UNITYSDK_OFFSET(0xD00BD30)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD00AD60)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xD00AE90)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONGAMEPADMODULETRYOVERRIDENEXTSELECTINDEX_OFFSET UNITYSDK_OFFSET(0xD00AF90)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONSELECTCHILD_OFFSET UNITYSDK_OFFSET(0xD00B2C0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD009C00)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD00AE00)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD009610)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD009B50)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_PHOTOWALLADDNEWSCHEMEHANDLE_OFFSET UNITYSDK_OFFSET(0xD00BEA0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_REFRESHBTN_OFFSET UNITYSDK_OFFSET(0xD00A480)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_REFRESHSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0xD009CE0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD00BF30)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD00BFC0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xD00C030)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULETRYOVERRIDENEXTSELECTINDEX_OFFSET UNITYSDK_OFFSET(0xD00C0B0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD00C170)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD00C180)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD00C190)
+#define MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD00C1A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPhotoWallSwitchPopWindowController_TypeDefinitionIndex = 41537;
+
+	class UIPhotoWallSwitchPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_43C335EE7795076E* _view; // 0x2F8
+		::System::Collections::Generic::List_1<::Class_1_3504BA60F75B631A*>* _datas; // 0x300
+		::MoleMole::UIPhotoWallSwitchContext* _context; // 0x308
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Int32 DataComparison(::Class_1_3504BA60F75B631A* x, ::Class_1_3504BA60F75B631A* y)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_3504BA60F75B631A*, ::Class_1_3504BA60F75B631A*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_DATACOMPARISON_OFFSET))(this, x, y);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Int32 OnGamepadModuleTryOverrideNextSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 curIndex, ::System::Int32 nextIndex, ::MoleMole::InputActionEvent actionEvent, ::UnityEngine::Vector2 moveDir)
+		{
+			return ((::System::Int32(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::System::Int32, ::MoleMole::InputActionEvent, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONGAMEPADMODULETRYOVERRIDENEXTSELECTINDEX_OFFSET))(this, gamepadModule, curIndex, nextIndex, actionEvent, moveDir);
+		}
+
+		::System::Int32 GetCurrentIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_GETCURRENTINDEX_OFFSET))(this);
+		}
+
+		::System::Void OnSelectChild(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONSELECTCHILD_OFFSET))(this, index);
+		}
+
+		::Class_1_3056A65E74601914* GetCurrentData()
+		{
+			return ((::Class_1_3056A65E74601914*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_GETCURRENTDATA_OFFSET))(this);
+		}
+
+		::System::Void RefreshBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_REFRESHBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickConfirmCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONCLICKCONFIRMCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void OnClickDelCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONCLICKDELCALLBACK_OFFSET))(this);
+		}
+
+		::System::Void RefreshScrollView(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_REFRESHSCROLLVIEW_OFFSET))(this, index);
+		}
+
+		::System::Void OnClickRenameCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_ONCLICKRENAMECALLBACK_OFFSET))(this);
+		}
+
+		::Class_1_3504BA60F75B631A* GetOrCreateContext(::System::Int32 index)
+		{
+			return ((::Class_1_3504BA60F75B631A*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_GETORCREATECONTEXT_OFFSET))(this, index);
+		}
+
+		::System::Void PhotoWallAddNewSchemeHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER_PHOTOWALLADDNEWSCHEMEHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Int32 __base_OnGamepadModuleTryOverrideNextSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::System::Int32 P2, ::MoleMole::InputActionEvent P3, ::UnityEngine::Vector2 P4)
+		{
+			return ((::System::Int32(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::System::Int32, ::MoleMole::InputActionEvent, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULETRYOVERRIDENEXTSELECTINDEX_OFFSET))(this, P0, P1, P2, P3, P4);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

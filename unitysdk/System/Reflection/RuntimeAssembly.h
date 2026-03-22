@@ -9,42 +9,42 @@ namespace System::Reflection { class AssemblyName; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 namespace System::Security::Policy { class Evidence; }
 
-#define SYSTEM_REFLECTION_RUNTIMEASSEMBLY_GETNAME_OFFSET UNITYSDK_OFFSET(0x15CCB060)
-#define SYSTEM_REFLECTION_RUNTIMEASSEMBLY_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x15CCADF0)
-#define SYSTEM_REFLECTION_RUNTIMEASSEMBLY_LOADWITHPARTIALNAMEINTERNAL_1_OFFSET UNITYSDK_OFFSET(0x15CCAF40)
-#define SYSTEM_REFLECTION_RUNTIMEASSEMBLY_LOADWITHPARTIALNAMEINTERNAL_OFFSET UNITYSDK_OFFSET(0x15CCAE80)
-#define SYSTEM_REFLECTION_RUNTIMEASSEMBLY__CTOR_OFFSET UNITYSDK_OFFSET(0x15CCB070)
+#define SYSTEM_REFLECTION_RUNTIMEASSEMBLY_METHOD_2_1F4E134B9A31F82F_OFFSET UNITYSDK_OFFSET(0x1943F0F0)
+#define SYSTEM_REFLECTION_RUNTIMEASSEMBLY_METHOD_2_625688E2A5D54CB5_OFFSET UNITYSDK_OFFSET(0x1943F160)
+#define SYSTEM_REFLECTION_RUNTIMEASSEMBLY_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x1943F240)
+#define SYSTEM_REFLECTION_RUNTIMEASSEMBLY_METHOD_2_D0A6EFA850A78196_OFFSET UNITYSDK_OFFSET(0x1943F060)
+#define SYSTEM_REFLECTION_RUNTIMEASSEMBLY_METHOD_2_DFCB104DAC2BD3FA_OFFSET UNITYSDK_OFFSET(0x1943F230)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int RuntimeAssembly_TypeDefinitionIndex = 610;
+	inline static constexpr unsigned int RuntimeAssembly_TypeDefinitionIndex = 583;
 
 	class RuntimeAssembly : public ::System::Reflection::Assembly
 	{
 	public:
-		::System::Void _ctor()
+		::System::Void Method_2_CA373AA1C7054598()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMEASSEMBLY__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMEASSEMBLY_METHOD_2_CA373AA1C7054598_OFFSET))(this);
 		}
 
-		::System::Void GetObjectData(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::Void Method_2_D0A6EFA850A78196(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMEASSEMBLY_GETOBJECTDATA_OFFSET))(this, info, context);
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMEASSEMBLY_METHOD_2_D0A6EFA850A78196_OFFSET))(this, info, context);
 		}
 
-		static ::System::Reflection::RuntimeAssembly* LoadWithPartialNameInternal(::System::String* partialName, ::System::Security::Policy::Evidence* securityEvidence, ::System::Threading::StackCrawlMark& stackMark)
+		static ::System::Reflection::RuntimeAssembly* Method_2_1F4E134B9A31F82F(::System::String* partialName, ::System::Security::Policy::Evidence* securityEvidence, ::System::Threading::StackCrawlMark& stackMark)
 		{
-			return ((::System::Reflection::RuntimeAssembly*(*)(::System::String*, ::System::Security::Policy::Evidence*, ::System::Threading::StackCrawlMark&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMEASSEMBLY_LOADWITHPARTIALNAMEINTERNAL_OFFSET))(partialName, securityEvidence, stackMark);
+			return ((::System::Reflection::RuntimeAssembly*(*)(::System::String*, ::System::Security::Policy::Evidence*, ::System::Threading::StackCrawlMark&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMEASSEMBLY_METHOD_2_1F4E134B9A31F82F_OFFSET))(partialName, securityEvidence, stackMark);
 		}
 
-		static ::System::Reflection::RuntimeAssembly* LoadWithPartialNameInternal_1(::System::Reflection::AssemblyName* an, ::System::Security::Policy::Evidence* securityEvidence, ::System::Threading::StackCrawlMark& stackMark)
+		static ::System::Reflection::RuntimeAssembly* Method_2_625688E2A5D54CB5(::System::Reflection::AssemblyName* an, ::System::Security::Policy::Evidence* securityEvidence, ::System::Threading::StackCrawlMark& stackMark)
 		{
-			return ((::System::Reflection::RuntimeAssembly*(*)(::System::Reflection::AssemblyName*, ::System::Security::Policy::Evidence*, ::System::Threading::StackCrawlMark&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMEASSEMBLY_LOADWITHPARTIALNAMEINTERNAL_1_OFFSET))(an, securityEvidence, stackMark);
+			return ((::System::Reflection::RuntimeAssembly*(*)(::System::Reflection::AssemblyName*, ::System::Security::Policy::Evidence*, ::System::Threading::StackCrawlMark&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMEASSEMBLY_METHOD_2_625688E2A5D54CB5_OFFSET))(an, securityEvidence, stackMark);
 		}
 
-		::System::Reflection::AssemblyName* GetName(::System::Boolean copiedName)
+		::System::Reflection::AssemblyName* Method_2_DFCB104DAC2BD3FA(::System::Boolean copiedName)
 		{
-			return ((::System::Reflection::AssemblyName*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMEASSEMBLY_GETNAME_OFFSET))(this, copiedName);
+			return ((::System::Reflection::AssemblyName*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_RUNTIMEASSEMBLY_METHOD_2_DFCB104DAC2BD3FA_OFFSET))(this, copiedName);
 		}
 	};
 }

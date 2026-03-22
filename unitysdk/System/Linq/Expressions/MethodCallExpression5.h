@@ -3,27 +3,31 @@
 #include "unitysdk/System/Linq/Expressions/MethodCallExpression.h"
 
 namespace System { class Object; }
+namespace System::Collections::Generic { template <typename T> class ICollection_1; }
 namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
+namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 namespace System::Linq::Expressions { class Expression; }
 namespace System::Reflection { class MethodInfo; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x17D00A80)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x17D00B40)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5_REWRITE_OFFSET UNITYSDK_OFFSET(0x17D00B50)
-#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5__CTOR_OFFSET UNITYSDK_OFFSET(0x17D009F0)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x1AD24320)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5_GETORMAKEARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1AD24AD0)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x1AD243E0)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5_REWRITE_OFFSET UNITYSDK_OFFSET(0x1AD24AE0)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5_SAMEARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1AD243F0)
+#define SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD24290)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int MethodCallExpression5_TypeDefinitionIndex = 3234;
+	inline static constexpr unsigned int MethodCallExpression5_TypeDefinitionIndex = 4521;
 
 	class MethodCallExpression5 : public ::System::Linq::Expressions::MethodCallExpression
 	{
 	public:
-		::System::Linq::Expressions::Expression* _arg3; // 0x18
-		::System::Object* _arg0; // 0x20
-		::System::Linq::Expressions::Expression* _arg2; // 0x28
-		::System::Linq::Expressions::Expression* _arg4; // 0x30
-		::System::Linq::Expressions::Expression* _arg1; // 0x38
+		::System::Object* _arg0; // 0x18
+		::System::Linq::Expressions::Expression* _arg1; // 0x20
+		::System::Linq::Expressions::Expression* _arg4; // 0x28
+		::System::Linq::Expressions::Expression* _arg2; // 0x30
+		::System::Linq::Expressions::Expression* _arg3; // 0x38
 
 		::System::Void _ctor(::System::Reflection::MethodInfo* method, ::System::Linq::Expressions::Expression* arg0, ::System::Linq::Expressions::Expression* arg1, ::System::Linq::Expressions::Expression* arg2, ::System::Linq::Expressions::Expression* arg3, ::System::Linq::Expressions::Expression* arg4)
 		{
@@ -38,6 +42,16 @@ namespace System::Linq::Expressions
 		::System::Int32 get_ArgumentCount()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5_GET_ARGUMENTCOUNT_OFFSET))(this);
+		}
+
+		::System::Boolean SameArguments(::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::Expression*>* arguments)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5_SAMEARGUMENTS_OFFSET))(this, arguments);
+		}
+
+		::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>* GetOrMakeArguments()
+		{
+			return ((::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_METHODCALLEXPRESSION5_GETORMAKEARGUMENTS_OFFSET))(this);
 		}
 
 		::System::Linq::Expressions::MethodCallExpression* Rewrite(::System::Linq::Expressions::Expression* instance, ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>* args)

@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace System
 {
-	inline static constexpr unsigned int Nullable_1_TypeDefinitionIndex = 411;
+	inline static constexpr unsigned int Nullable_1_TypeDefinitionIndex = 398;
 
 	template <typename T>
 	struct Nullable_1

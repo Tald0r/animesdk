@@ -1,0 +1,88 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlowCanvas/Flow.h"
+#include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
+
+namespace FlowCanvas { class FlowOutput; }
+namespace FlowCanvas { template <typename T> class ValueInput_1; }
+namespace System { class String; }
+namespace System::Collections { class IEnumerator; }
+namespace UnityEngine { class Coroutine; }
+
+#define FLOWCANVAS_NODES_COOLDOWN_BEGIN_OFFSET UNITYSDK_OFFSET(0x19154F30)
+#define FLOWCANVAS_NODES_COOLDOWN_CANCEL_OFFSET UNITYSDK_OFFSET(0x19155040)
+#define FLOWCANVAS_NODES_COOLDOWN_COUNTDOWN_OFFSET UNITYSDK_OFFSET(0x19154FE0)
+#define FLOWCANVAS_NODES_COOLDOWN_GET_NAME_OFFSET UNITYSDK_OFFSET(0x19154C40)
+#define FLOWCANVAS_NODES_COOLDOWN_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x19154CF0)
+#define FLOWCANVAS_NODES_COOLDOWN_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0x19154D10)
+#define FLOWCANVAS_NODES_COOLDOWN_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x19154D50)
+#define FLOWCANVAS_NODES_COOLDOWN__CTOR_OFFSET UNITYSDK_OFFSET(0x19155080)
+#define FLOWCANVAS_NODES_COOLDOWN__REGISTERPORTS_B__11_0_OFFSET UNITYSDK_OFFSET(0x191550A0)
+#define FLOWCANVAS_NODES_COOLDOWN__REGISTERPORTS_B__11_1_OFFSET UNITYSDK_OFFSET(0x191550B0)
+
+namespace FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int Cooldown_TypeDefinitionIndex = 26324;
+
+	class Cooldown : public ::FlowCanvas::Nodes::FlowControlNode
+	{
+	public:
+		::UnityEngine::Coroutine* coroutine; // 0xA8
+		::FlowCanvas::FlowOutput* start; // 0xB0
+		::FlowCanvas::ValueInput_1<::System::Single>* time; // 0xB8
+		::FlowCanvas::FlowOutput* finish; // 0xC0
+		::FlowCanvas::FlowOutput* update; // 0xC8
+		::System::Single remainingNormalized; // 0xD0
+		::System::Single remaining; // 0xD4
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_COOLDOWN__CTOR_OFFSET))(this);
+		}
+
+		::System::String* get_name()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_COOLDOWN_GET_NAME_OFFSET))(this);
+		}
+
+		::System::Void OnGraphStarted()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_COOLDOWN_ONGRAPHSTARTED_OFFSET))(this);
+		}
+
+		::System::Void OnGraphStoped()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_COOLDOWN_ONGRAPHSTOPED_OFFSET))(this);
+		}
+
+		::System::Void RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_COOLDOWN_REGISTERPORTS_OFFSET))(this);
+		}
+
+		::System::Void Begin(::FlowCanvas::Flow f)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_COOLDOWN_BEGIN_OFFSET))(this, f);
+		}
+
+		::System::Void Cancel(::FlowCanvas::Flow f)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_COOLDOWN_CANCEL_OFFSET))(this, f);
+		}
+
+		::System::Collections::IEnumerator* CountDown(::FlowCanvas::Flow f)
+		{
+			return ((::System::Collections::IEnumerator*(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_COOLDOWN_COUNTDOWN_OFFSET))(this, f);
+		}
+
+		::System::Single _RegisterPorts_b__11_0()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_COOLDOWN__REGISTERPORTS_B__11_0_OFFSET))(this);
+		}
+
+		::System::Single _RegisterPorts_b__11_1()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + FLOWCANVAS_NODES_COOLDOWN__REGISTERPORTS_B__11_1_OFFSET))(this);
+		}
+	};
+}

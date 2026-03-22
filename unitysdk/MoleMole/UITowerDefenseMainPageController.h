@@ -1,0 +1,485 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_205E43D40B9E7AEA.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_438586FE8F69071D.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UITowerDefenseMainPageController___c__DisplayClass39_0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Struct_2_2CC23FE9C9AEC1B7.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_0_16E4307DCC419505_177;
+class Class_1_381D780505B409F3;
+class Class_1_B6E8606211BAB5A3;
+class Class_1_D35B5D4865AF7021;
+class Class_2_79AE422BA06F6D26_56;
+namespace MoleMole { class UIBangbooCardItemChildWindowController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIGeneralNewsBubbleWidgetController; }
+namespace MoleMole { class UITowerDefenseMonsterHudChildWindowController; }
+namespace MoleMole::Battle { class Entity; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T> class HashSet_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace System::Collections::Generic { template <typename T> class Queue_1; }
+namespace UnityEngine { class Canvas; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ADDBANGBOOCARD_OFFSET UNITYSDK_OFFSET(0x8806230)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGECOST_OFFSET UNITYSDK_OFFSET(0x8807B70)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGEENEMYNUMBER_OFFSET UNITYSDK_OFFSET(0x88082C0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGEHP_OFFSET UNITYSDK_OFFSET(0x8807A10)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGEMAXENEMYNUMBER_OFFSET UNITYSDK_OFFSET(0x8808190)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGEMAXHP_OFFSET UNITYSDK_OFFSET(0x88078E0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGETOWERCOUNT_OFFSET UNITYSDK_OFFSET(0x8807F30)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGTOWERMAXCOUNT_OFFSET UNITYSDK_OFFSET(0x8808060)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CLICKDOUBLESPEED_OFFSET UNITYSDK_OFFSET(0x88041A0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CLICKPAUSE_OFFSET UNITYSDK_OFFSET(0x8804210)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CLOSEBANGBOOINFO_OFFSET UNITYSDK_OFFSET(0xAE47260)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_DOUBLESPEED_OFFSET UNITYSDK_OFFSET(0x8804BE0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_FETCHBANGBOOTOWERLIST_OFFSET UNITYSDK_OFFSET(0x8805F70)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_FIXTIMESCALE_OFFSET UNITYSDK_OFFSET(0x8807180)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GETINITIALSTATE_OFFSET UNITYSDK_OFFSET(0xAE49EF0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GETSPEEDUPRATIO_OFFSET UNITYSDK_OFFSET(0x8807710)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_BANGBOOINFOENABLE_OFFSET UNITYSDK_OFFSET(0xAE469C0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0xAE469A0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_IMPORTANTPUSHMESSAGECTRL_OFFSET UNITYSDK_OFFSET(0xAE47F00)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_LOGICMODULE_OFFSET UNITYSDK_OFFSET(0xAE466A0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_MESSAGEMATCHPAGE_OFFSET UNITYSDK_OFFSET(0xAE469B0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_VIEW_OFFSET UNITYSDK_OFFSET(0xAE47EF0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xAE46690)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_HASHOLDER_OFFSET UNITYSDK_OFFSET(0x8806830)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_HIDEHUD_OFFSET UNITYSDK_OFFSET(0xAE496F0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_HIDEPLACEABLE_OFFSET UNITYSDK_OFFSET(0xAE47DE0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONADDBANGBOO_OFFSET UNITYSDK_OFFSET(0x8804E60)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONADDMONEY_OFFSET UNITYSDK_OFFSET(0xAE48FB0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONBANGBOOCARDPOINTERDOWN_OFFSET UNITYSDK_OFFSET(0x8806A90)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAE47E50)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONDYNAMICOBJECTSTATECHANGE_OFFSET UNITYSDK_OFFSET(0xAE49900)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONGAMEEND_OFFSET UNITYSDK_OFFSET(0x8806E40)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONGETFEE_OFFSET UNITYSDK_OFFSET(0xAE49050)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xAE48080)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONHUDCHANGE_OFFSET UNITYSDK_OFFSET(0xAE49DC0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x8803D00)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0x8803AC0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONREMOVEENTITY_OFFSET UNITYSDK_OFFSET(0x8804FD0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8804850)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAE48120)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_OPENBANGBOOINFO_OFFSET UNITYSDK_OFFSET(0xAE469D0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_OPENPOPUP_OFFSET UNITYSDK_OFFSET(0xAE473C0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_POPTIMESCALE_OFFSET UNITYSDK_OFFSET(0x8806FD0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_POPUPFADEIN_OFFSET UNITYSDK_OFFSET(0xAE47B60)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_POPUPFADEOUT_OFFSET UNITYSDK_OFFSET(0xAE47F10)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_PUSHTIMESCALE_OFFSET UNITYSDK_OFFSET(0x8807770)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SHOWBLACKMASK_OFFSET UNITYSDK_OFFSET(0x8808580)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SHOWECSPAGE_OFFSET UNITYSDK_OFFSET(0x8803F70)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SHOWHUD_OFFSET UNITYSDK_OFFSET(0xAE491B0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SHOWPLACEABLE_OFFSET UNITYSDK_OFFSET(0xAE47D00)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SLOWDOWN_OFFSET UNITYSDK_OFFSET(0x8807670)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SPAWNBULLETEFFECT_OFFSET UNITYSDK_OFFSET(0x8805390)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SWITCHSTATE_OFFSET UNITYSDK_OFFSET(0x8803B30)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_TRYCANCELPAUSE_OFFSET UNITYSDK_OFFSET(0x8804AE0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_UPDATEBANGBOOENHANCE_OFFSET UNITYSDK_OFFSET(0xAE47650)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0x8805800)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_WARMUPHUDWIDGET_OFFSET UNITYSDK_OFFSET(0xAE48DD0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x88086C0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__FETCHBANGBOOTOWERLIST_G__COMPARE_75_1_OFFSET UNITYSDK_OFFSET(0x88087D0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__FETCHBANGBOOTOWERLIST_G__ORDEROF_75_0_OFFSET UNITYSDK_OFFSET(0x8808790)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__OPENBANGBOOINFO_G__GETDEPLOYTYPE_39_0_OFFSET UNITYSDK_OFFSET(0x88086D0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__SPAWNBULLETEFFECT_G__ONGETFEE_73_0_OFFSET UNITYSDK_OFFSET(0x8808760)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__UPDATEHOLLOWCOMPLEXTIP_OFFSET UNITYSDK_OFFSET(0x8804B60)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8808850)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0x88088C0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0x8808920)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0x8808950)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x88089B0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x88089C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UITowerDefenseMainPageController_TypeDefinitionIndex = 41840;
+
+	class UITowerDefenseMainPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::Single SlowDownRatio; // 0x0
+		// static const ::System::String* AttackRange; // 0x0
+		// static const ::System::String* Placeable; // 0x0
+		// static const ::System::Int32 HUD_POOL_CAPACITY = 0xA; // 0x0
+		::Class_2_79AE422BA06F6D26_56* _view; // 0x2F8
+		::Class_1_B6E8606211BAB5A3* _logicModule; // 0x300
+		::System::Collections::Generic::Dictionary_2<::System::UInt32, ::MoleMole::UITowerDefenseMonsterHudChildWindowController*>* _hudDictionary; // 0x308
+		::System::Collections::Generic::HashSet_1<::System::UInt32>* _destroyedHud; // 0x310
+		::System::Collections::Generic::Queue_1<::MoleMole::UITowerDefenseMonsterHudChildWindowController*>* _hudPool; // 0x318
+		::System::Collections::Generic::List_1<::Class_1_D35B5D4865AF7021*>* _effectBullets; // 0x320
+		::UnityEngine::GameObject* _placeableInstance; // 0x328
+		::System::Boolean _doubleSpeed; // 0x330
+		::System::Int32 _slowDownCount; // 0x334
+		::System::Boolean _pause; // 0x338
+		::System::Single _lastPauseTime; // 0x33C
+		::System::Single _lastWarningTime; // 0x340
+		::System::Int32 LastBangBooCard; // 0x344
+		::Class_1_381D780505B409F3* _pushMessageTipCtrl; // 0x348
+		::MoleMole::UIGeneralNewsBubbleWidgetController* _bubbleWidgetController; // 0x350
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* _previewObjects; // 0x358
+		::System::Action* OnCancelPause; // 0x360
+		::System::Collections::Generic::List_1<::MoleMole::UIBangbooCardItemChildWindowController*>* BangBooCardList; // 0x368
+		::Class_0_16E4307DCC419505_177* _bangBooUIState; // 0x370
+		::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::Int32>* Tower2CardIndex; // 0x378
+		::UnityEngine::Canvas* _canvas; // 0x380
+		::System::Boolean _popupEnable; // 0x388
+		::System::Boolean _bangBooInfoEnable; // 0x389
+		::System::Boolean _showFirstMonster; // 0x38A
+		::System::Boolean _isGameEnd; // 0x38B
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Class_1_B6E8606211BAB5A3* get_LogicModule()
+		{
+			return ((::Class_1_B6E8606211BAB5A3*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_LOGICMODULE_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::Enum_3_205E43D40B9E7AEA get_MessageMatchPage()
+		{
+			return ((::Enum_3_205E43D40B9E7AEA(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_MESSAGEMATCHPAGE_OFFSET))(this);
+		}
+
+		::System::Boolean get_BangBooInfoEnable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_BANGBOOINFOENABLE_OFFSET))(this);
+		}
+
+		::System::Void OpenBangBooInfo(::System::Int32 templateID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_OPENBANGBOOINFO_OFFSET))(this, templateID);
+		}
+
+		::System::Void CloseBangBooInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CLOSEBANGBOOINFO_OFFSET))(this);
+		}
+
+		::System::Void OpenPopup(::MoleMole::Battle::Entity* entity)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_OPENPOPUP_OFFSET))(this, entity);
+		}
+
+		::System::Void ShowPlaceable(::UnityEngine::Vector3 position)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SHOWPLACEABLE_OFFSET))(this, position);
+		}
+
+		::System::Void HidePlaceable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_HIDEPLACEABLE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::Class_2_79AE422BA06F6D26_56* get_View()
+		{
+			return ((::Class_2_79AE422BA06F6D26_56*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_VIEW_OFFSET))(this);
+		}
+
+		::Class_1_381D780505B409F3* get_ImportantPushMessageCtrl()
+		{
+			return ((::Class_1_381D780505B409F3*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GET_IMPORTANTPUSHMESSAGECTRL_OFFSET))(this);
+		}
+
+		::System::Void UpdateBangBooEnhance(::Enum_3_438586FE8F69071D state, ::MoleMole::Battle::Entity* tower)
+		{
+			return ((::System::Void(*)(::PVOID, ::Enum_3_438586FE8F69071D, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_UPDATEBANGBOOENHANCE_OFFSET))(this, state, tower);
+		}
+
+		::System::Void PopupFadeOut()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_POPUPFADEOUT_OFFSET))(this);
+		}
+
+		::System::Void PopupFadeIn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_POPUPFADEIN_OFFSET))(this);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnAddMoney(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONADDMONEY_OFFSET))(this, args);
+		}
+
+		::System::Void OnGetFee(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONGETFEE_OFFSET))(this, args);
+		}
+
+		::System::Void WarmUpHUDWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_WARMUPHUDWIDGET_OFFSET))(this);
+		}
+
+		::System::Void ShowHUD(::Struct_2_2CC23FE9C9AEC1B7 data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_2CC23FE9C9AEC1B7))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SHOWHUD_OFFSET))(this, data);
+		}
+
+		::System::Void HideHUD(::System::UInt32 entityID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_HIDEHUD_OFFSET))(this, entityID);
+		}
+
+		::System::Void OnDynamicObjectStateChange(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONDYNAMICOBJECTSTATECHANGE_OFFSET))(this, args);
+		}
+
+		::System::Void OnHUDChange(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONHUDCHANGE_OFFSET))(this, args);
+		}
+
+		::Class_0_16E4307DCC419505_177* GetInitialState()
+		{
+			return ((::Class_0_16E4307DCC419505_177*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GETINITIALSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void ShowEcsPage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SHOWECSPAGE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean TryCancelPause()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_TRYCANCELPAUSE_OFFSET))(this);
+		}
+
+		::System::Void SwitchState(::Class_0_16E4307DCC419505_177* newState)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_177*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SWITCHSTATE_OFFSET))(this, newState);
+		}
+
+		::System::Void _UpdateHollowComplexTip()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__UPDATEHOLLOWCOMPLEXTIP_OFFSET))(this);
+		}
+
+		::System::Void ClickPause()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CLICKPAUSE_OFFSET))(this);
+		}
+
+		::System::Void ClickDoubleSpeed()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CLICKDOUBLESPEED_OFFSET))(this);
+		}
+
+		::System::Void OnAddBangBoo(::System::UInt32 entityID, ::System::Int32 cardIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONADDBANGBOO_OFFSET))(this, entityID, cardIndex);
+		}
+
+		::System::Void OnRemoveEntity(::System::UInt32 entityId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONREMOVEENTITY_OFFSET))(this, entityId);
+		}
+
+		::System::Void SpawnBulletEffect(::UnityEngine::Vector3 start)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SPAWNBULLETEFFECT_OFFSET))(this, start);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void FetchBangBooTowerList(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_FETCHBANGBOOTOWERLIST_OFFSET))(this, args);
+		}
+
+		::System::Void AddBangBooCard(::System::Int32 templateID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ADDBANGBOOCARD_OFFSET))(this, templateID);
+		}
+
+		::System::Boolean HasHolder(::System::Int32 templateID)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_HASHOLDER_OFFSET))(this, templateID);
+		}
+
+		::Class_0_16E4307DCC419505_177* OnBangBooCardPointerDown(::UnityEngine::GameObject* previewModel, ::System::Int32 templateID, ::System::Int32 cardIndex)
+		{
+			return ((::Class_0_16E4307DCC419505_177*(*)(::PVOID, ::UnityEngine::GameObject*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONBANGBOOCARDPOINTERDOWN_OFFSET))(this, previewModel, templateID, cardIndex);
+		}
+
+		::System::Void OnGameEnd()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_ONGAMEEND_OFFSET))(this);
+		}
+
+		::System::Void DoubleSpeed(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_DOUBLESPEED_OFFSET))(this, value);
+		}
+
+		::System::Void SlowDown(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SLOWDOWN_OFFSET))(this, value);
+		}
+
+		static ::System::Single GetSpeedUpRatio()
+		{
+			return ((::System::Single(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_GETSPEEDUPRATIO_OFFSET))();
+		}
+
+		::System::Void FixTimeScale()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_FIXTIMESCALE_OFFSET))(this);
+		}
+
+		::System::Void PopTimeScale()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_POPTIMESCALE_OFFSET))(this);
+		}
+
+		::System::Void PushTimeScale(::System::Single x)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_PUSHTIMESCALE_OFFSET))(this, x);
+		}
+
+		::System::Void ChangeMaxHp(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGEMAXHP_OFFSET))(this, args);
+		}
+
+		::System::Void ChangeHp(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGEHP_OFFSET))(this, args);
+		}
+
+		::System::Void ChangeCost(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGECOST_OFFSET))(this, args);
+		}
+
+		::System::Void ChangeTowerCount(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGETOWERCOUNT_OFFSET))(this, args);
+		}
+
+		::System::Void ChangTowerMaxCount(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGTOWERMAXCOUNT_OFFSET))(this, args);
+		}
+
+		::System::Void ChangeMaxEnemyNumber(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGEMAXENEMYNUMBER_OFFSET))(this, args);
+		}
+
+		::System::Void ChangeEnemyNumber(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_CHANGEENEMYNUMBER_OFFSET))(this, args);
+		}
+
+		::System::Void ShowBlackMask()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER_SHOWBLACKMASK_OFFSET))(this);
+		}
+
+		static ::System::String* _OpenBangBooInfo_g__GetDeployType_39_0(::MoleMole::UITowerDefenseMainPageController___c__DisplayClass39_0& a1)
+		{
+			return ((::System::String*(*)(::MoleMole::UITowerDefenseMainPageController___c__DisplayClass39_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__OPENBANGBOOINFO_G__GETDEPLOYTYPE_39_0_OFFSET))(a1);
+		}
+
+		::System::Void _SpawnBulletEffect_g__OnGetFee_73_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__SPAWNBULLETEFFECT_G__ONGETFEE_73_0_OFFSET))(this);
+		}
+
+		::System::Int32 _FetchBangBooTowerList_g__OrderOf_75_0(::System::Int32 templateID)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__FETCHBANGBOOTOWERLIST_G__ORDEROF_75_0_OFFSET))(this, templateID);
+		}
+
+		::System::Int32 _FetchBangBooTowerList_g__Compare_75_1(::System::Int32 left, ::System::Int32 right)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER__FETCHBANGBOOTOWERLIST_G__COMPARE_75_1_OFFSET))(this, left, right);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

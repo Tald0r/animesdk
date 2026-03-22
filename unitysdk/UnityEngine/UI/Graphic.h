@@ -12,6 +12,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Camera; }
 namespace UnityEngine { class Canvas; }
 namespace UnityEngine { class CanvasRenderer; }
+namespace UnityEngine { class ICanvasRaycastFilter; }
 namespace UnityEngine { class Material; }
 namespace UnityEngine { class Mesh; }
 namespace UnityEngine { class RectTransform; }
@@ -19,130 +20,149 @@ namespace UnityEngine { class Texture2D; }
 namespace UnityEngine { class Texture; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::Events { class UnityAction; }
-namespace UnityEngine::Events { template <typename T> class UnityAction_1; }
+namespace UnityEngine::UI { class GraphicRaycaster; }
 namespace UnityEngine::UI { class VertexHelper; }
 namespace UnityEngine::UI::CoroutineTween { template <typename T> class TweenRunner_1; }
 
-#define UNITYENGINE_UI_GRAPHIC_CACHECANVAS_OFFSET UNITYSDK_OFFSET(0x182FD380)
-#define UNITYENGINE_UI_GRAPHIC_CHECKORINITTWEENRUNNER_OFFSET UNITYSDK_OFFSET(0x182FCD70)
-#define UNITYENGINE_UI_GRAPHIC_CREATECOLORFROMALPHA_OFFSET UNITYSDK_OFFSET(0x18300900)
-#define UNITYENGINE_UI_GRAPHIC_CROSSFADEALPHA_OFFSET UNITYSDK_OFFSET(0x18300920)
-#define UNITYENGINE_UI_GRAPHIC_CROSSFADECOLOR_1_OFFSET UNITYSDK_OFFSET(0x183003A0)
-#define UNITYENGINE_UI_GRAPHIC_CROSSFADECOLOR_OFFSET UNITYSDK_OFFSET(0x18300360)
-#define UNITYENGINE_UI_GRAPHIC_DOLEGACYMESHGENERATION_OFFSET UNITYSDK_OFFSET(0x182FE450)
-#define UNITYENGINE_UI_GRAPHIC_DOMESHGENERATION_OFFSET UNITYSDK_OFFSET(0x182FE970)
-#define UNITYENGINE_UI_GRAPHIC_GETPIXELADJUSTEDRECT_OFFSET UNITYSDK_OFFSET(0x182FF930)
-#define UNITYENGINE_UI_GRAPHIC_GET_CANVASRENDERER_OFFSET UNITYSDK_OFFSET(0x182FC6E0)
-#define UNITYENGINE_UI_GRAPHIC_GET_CANVAS_OFFSET UNITYSDK_OFFSET(0x182FD100)
-#define UNITYENGINE_UI_GRAPHIC_GET_COLOR_OFFSET UNITYSDK_OFFSET(0x182FCCA0)
-#define UNITYENGINE_UI_GRAPHIC_GET_DEFAULTGRAPHICMATERIAL_OFFSET UNITYSDK_OFFSET(0x182FCBF0)
-#define UNITYENGINE_UI_GRAPHIC_GET_DEFAULTMATERIAL_OFFSET UNITYSDK_OFFSET(0x182FD820)
-#define UNITYENGINE_UI_GRAPHIC_GET_DEPTH_OFFSET UNITYSDK_OFFSET(0x182FD760)
-#define UNITYENGINE_UI_GRAPHIC_GET_MAINTEXTURE_OFFSET UNITYSDK_OFFSET(0x182FDB70)
-#define UNITYENGINE_UI_GRAPHIC_GET_MATERIALDIRTYWHENLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x182FCD30)
-#define UNITYENGINE_UI_GRAPHIC_GET_MATERIALFORRENDERING_OFFSET UNITYSDK_OFFSET(0x182FD950)
-#define UNITYENGINE_UI_GRAPHIC_GET_MATERIAL_OFFSET UNITYSDK_OFFSET(0x182FD8D0)
-#define UNITYENGINE_UI_GRAPHIC_GET_RAYCASTTARGET_OFFSET UNITYSDK_OFFSET(0x182FCCB0)
-#define UNITYENGINE_UI_GRAPHIC_GET_RECTTRANSFORM_OFFSET UNITYSDK_OFFSET(0x182FCEE0)
-#define UNITYENGINE_UI_GRAPHIC_GET_ROOTCANVASINCLUDEINACTIVE_OFFSET UNITYSDK_OFFSET(0x182FD7F0)
-#define UNITYENGINE_UI_GRAPHIC_GET_USELEGACYMESHGENERATION_OFFSET UNITYSDK_OFFSET(0x182FCCF0)
-#define UNITYENGINE_UI_GRAPHIC_GET_USERENDERERCOLOR_OFFSET UNITYSDK_OFFSET(0x18300110)
-#define UNITYENGINE_UI_GRAPHIC_GET_VERTICESDIRTYWHENLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x182FCD10)
-#define UNITYENGINE_UI_GRAPHIC_GET_WORKERMESH_OFFSET UNITYSDK_OFFSET(0x182FF440)
-#define UNITYENGINE_UI_GRAPHIC_GRAPHICUPDATECOMPLETE_OFFSET UNITYSDK_OFFSET(0x182FE220)
-#define UNITYENGINE_UI_GRAPHIC_INITUIDEFAULTMAT_OFFSET UNITYSDK_OFFSET(0x18300BF0)
-#define UNITYENGINE_UI_GRAPHIC_LAYOUTCOMPLETE_OFFSET UNITYSDK_OFFSET(0x182FE210)
-#define UNITYENGINE_UI_GRAPHIC_LINEARTOGAMMASPACE_1_OFFSET UNITYSDK_OFFSET(0x183002E0)
-#define UNITYENGINE_UI_GRAPHIC_LINEARTOGAMMASPACE_OFFSET UNITYSDK_OFFSET(0x18300140)
-#define UNITYENGINE_UI_GRAPHIC_ONBEFORETRANSFORMPARENTCHANGED_OFFSET UNITYSDK_OFFSET(0x182FD0B0)
-#define UNITYENGINE_UI_GRAPHIC_ONCANVASHIERARCHYCHANGED_OFFSET UNITYSDK_OFFSET(0x182FDF10)
-#define UNITYENGINE_UI_GRAPHIC_ONCULLINGCHANGED_OFFSET UNITYSDK_OFFSET(0x182FDFC0)
-#define UNITYENGINE_UI_GRAPHIC_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x182FDED0)
-#define UNITYENGINE_UI_GRAPHIC_ONDIDAPPLYANIMATIONPROPERTIES_OFFSET UNITYSDK_OFFSET(0x182FFB30)
-#define UNITYENGINE_UI_GRAPHIC_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x182FDC60)
-#define UNITYENGINE_UI_GRAPHIC_ONENABLE_OFFSET UNITYSDK_OFFSET(0x182FDBA0)
-#define UNITYENGINE_UI_GRAPHIC_ONFILLVBO_OFFSET UNITYSDK_OFFSET(0x182FF560)
-#define UNITYENGINE_UI_GRAPHIC_ONLIGHTWEIGHTACTIVATE_OFFSET UNITYSDK_OFFSET(0x182FDDC0)
-#define UNITYENGINE_UI_GRAPHIC_ONLIGHTWEIGHTDEACTIVATE_OFFSET UNITYSDK_OFFSET(0x182FDE20)
-#define UNITYENGINE_UI_GRAPHIC_ONPOPULATEMESH_1_OFFSET UNITYSDK_OFFSET(0x182FF5E0)
-#define UNITYENGINE_UI_GRAPHIC_ONPOPULATEMESH_OFFSET UNITYSDK_OFFSET(0x182FF570)
-#define UNITYENGINE_UI_GRAPHIC_ONRECTTRANSFORMDIMENSIONSCHANGE_OFFSET UNITYSDK_OFFSET(0x182FD000)
-#define UNITYENGINE_UI_GRAPHIC_ONTRANSFORMPARENTCHANGED_OFFSET UNITYSDK_OFFSET(0x182FD310)
-#define UNITYENGINE_UI_GRAPHIC_PIXELADJUSTPOINT_OFFSET UNITYSDK_OFFSET(0x182FFFB0)
-#define UNITYENGINE_UI_GRAPHIC_RAYCAST_OFFSET UNITYSDK_OFFSET(0x182FFB50)
-#define UNITYENGINE_UI_GRAPHIC_REBUILD_OFFSET UNITYSDK_OFFSET(0x182FE070)
-#define UNITYENGINE_UI_GRAPHIC_REGISTERCHANGERAYCASTTARGETCALLBACK_OFFSET UNITYSDK_OFFSET(0x18300B30)
-#define UNITYENGINE_UI_GRAPHIC_REGISTERDIRTYLAYOUTCALLBACK_OFFSET UNITYSDK_OFFSET(0x183009B0)
-#define UNITYENGINE_UI_GRAPHIC_REGISTERDIRTYMATERIALCALLBACK_OFFSET UNITYSDK_OFFSET(0x18300AB0)
-#define UNITYENGINE_UI_GRAPHIC_REGISTERDIRTYVERTICESCALLBACK_OFFSET UNITYSDK_OFFSET(0x18300A30)
-#define UNITYENGINE_UI_GRAPHIC_RESETUIDEFAULTMAT_OFFSET UNITYSDK_OFFSET(0x18300BB0)
-#define UNITYENGINE_UI_GRAPHIC_SETALLDIRTY_OFFSET UNITYSDK_OFFSET(0x182FCDB0)
-#define UNITYENGINE_UI_GRAPHIC_SETLAYOUTDIRTY_OFFSET UNITYSDK_OFFSET(0x182FCE10)
-#define UNITYENGINE_UI_GRAPHIC_SETMATERIALDIRTY_OFFSET UNITYSDK_OFFSET(0x182FCFB0)
-#define UNITYENGINE_UI_GRAPHIC_SETNATIVESIZE_OFFSET UNITYSDK_OFFSET(0x182FFB40)
-#define UNITYENGINE_UI_GRAPHIC_SETVERTICESDIRTY_OFFSET UNITYSDK_OFFSET(0x182FCF60)
-#define UNITYENGINE_UI_GRAPHIC_SET_COLOR_OFFSET UNITYSDK_OFFSET(0x182EFED0)
-#define UNITYENGINE_UI_GRAPHIC_SET_MATERIALDIRTYWHENLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x182FCD40)
-#define UNITYENGINE_UI_GRAPHIC_SET_MATERIAL_OFFSET UNITYSDK_OFFSET(0x182FD8F0)
-#define UNITYENGINE_UI_GRAPHIC_SET_RAYCASTTARGET_OFFSET UNITYSDK_OFFSET(0x182FCCC0)
-#define UNITYENGINE_UI_GRAPHIC_SET_USELEGACYMESHGENERATION_OFFSET UNITYSDK_OFFSET(0x182FCD00)
-#define UNITYENGINE_UI_GRAPHIC_SET_USERENDERERCOLOR_OFFSET UNITYSDK_OFFSET(0x18300120)
-#define UNITYENGINE_UI_GRAPHIC_SET_VERTICESDIRTYWHENLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x182FCD20)
-#define UNITYENGINE_UI_GRAPHIC_UNITYENGINE_UI_ICANVASELEMENT_GET_TRANSFORM_OFFSET UNITYSDK_OFFSET(0x18300C70)
-#define UNITYENGINE_UI_GRAPHIC_UNREGISTERCHANGERAYCASTTARGETCALLBACK_OFFSET UNITYSDK_OFFSET(0x18300B70)
-#define UNITYENGINE_UI_GRAPHIC_UNREGISTERDIRTYLAYOUTCALLBACK_OFFSET UNITYSDK_OFFSET(0x183009F0)
-#define UNITYENGINE_UI_GRAPHIC_UNREGISTERDIRTYMATERIALCALLBACK_OFFSET UNITYSDK_OFFSET(0x18300AF0)
-#define UNITYENGINE_UI_GRAPHIC_UNREGISTERDIRTYVERTICESCALLBACK_OFFSET UNITYSDK_OFFSET(0x18300A70)
-#define UNITYENGINE_UI_GRAPHIC_UPDATEGEOMETRY_OFFSET UNITYSDK_OFFSET(0x182FE430)
-#define UNITYENGINE_UI_GRAPHIC_UPDATEMATERIAL_OFFSET UNITYSDK_OFFSET(0x182FE230)
-#define UNITYENGINE_UI_GRAPHIC__CCTOR_OFFSET UNITYSDK_OFFSET(0x18300C30)
-#define UNITYENGINE_UI_GRAPHIC__CTOR_OFFSET UNITYSDK_OFFSET(0x182FCD50)
+#define UNITYENGINE_UI_GRAPHIC_CACHECANVAS_OFFSET UNITYSDK_OFFSET(0x1AB27580)
+#define UNITYENGINE_UI_GRAPHIC_CACHERAYCASTFILTERS_OFFSET UNITYSDK_OFFSET(0x1AB2BE30)
+#define UNITYENGINE_UI_GRAPHIC_CREATECOLORFROMALPHA_OFFSET UNITYSDK_OFFSET(0x1AB2CE10)
+#define UNITYENGINE_UI_GRAPHIC_CROSSFADEALPHA_OFFSET UNITYSDK_OFFSET(0x1AB2CE80)
+#define UNITYENGINE_UI_GRAPHIC_CROSSFADECOLOR_1_OFFSET UNITYSDK_OFFSET(0x1AB2C6B0)
+#define UNITYENGINE_UI_GRAPHIC_CROSSFADECOLOR_OFFSET UNITYSDK_OFFSET(0x1AB2C600)
+#define UNITYENGINE_UI_GRAPHIC_DOLEGACYMESHGENERATION_OFFSET UNITYSDK_OFFSET(0x1AB296D0)
+#define UNITYENGINE_UI_GRAPHIC_DOMESHGENERATION_OFFSET UNITYSDK_OFFSET(0x1AB29DE0)
+#define UNITYENGINE_UI_GRAPHIC_FASTRAYCASTISBLOCKEDBYPARENTCANVASGROUP_OFFSET UNITYSDK_OFFSET(0x1AB2BBC0)
+#define UNITYENGINE_UI_GRAPHIC_FASTRAYCAST_OFFSET UNITYSDK_OFFSET(0x1AB2B830)
+#define UNITYENGINE_UI_GRAPHIC_GETPIXELADJUSTEDRECT_OFFSET UNITYSDK_OFFSET(0x1AB2AB40)
+#define UNITYENGINE_UI_GRAPHIC_GET_CANVASRENDERER_OFFSET UNITYSDK_OFFSET(0x1AB278F0)
+#define UNITYENGINE_UI_GRAPHIC_GET_CANVAS_OFFSET UNITYSDK_OFFSET(0x1AB27310)
+#define UNITYENGINE_UI_GRAPHIC_GET_COLOR_OFFSET UNITYSDK_OFFSET(0x1AB26600)
+#define UNITYENGINE_UI_GRAPHIC_GET_DEFAULTGRAPHICMATERIAL_OFFSET UNITYSDK_OFFSET(0x1AB26470)
+#define UNITYENGINE_UI_GRAPHIC_GET_DEFAULTMATERIAL_OFFSET UNITYSDK_OFFSET(0x1AB27A50)
+#define UNITYENGINE_UI_GRAPHIC_GET_DEPTH_OFFSET UNITYSDK_OFFSET(0x1AB277E0)
+#define UNITYENGINE_UI_GRAPHIC_GET_ISRAYCASTVALIDBYCANVASGROUP_OFFSET UNITYSDK_OFFSET(0x1AB26A70)
+#define UNITYENGINE_UI_GRAPHIC_GET_MAINTEXTURE_OFFSET UNITYSDK_OFFSET(0x1AB28040)
+#define UNITYENGINE_UI_GRAPHIC_GET_MATERIALDIRTYWHENLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x1AB265E0)
+#define UNITYENGINE_UI_GRAPHIC_GET_MATERIALDIRTY_OFFSET UNITYSDK_OFFSET(0x1AB26A90)
+#define UNITYENGINE_UI_GRAPHIC_GET_MATERIALFORRENDERING_OFFSET UNITYSDK_OFFSET(0x1AB27BB0)
+#define UNITYENGINE_UI_GRAPHIC_GET_MATERIAL_OFFSET UNITYSDK_OFFSET(0x1AB23A50)
+#define UNITYENGINE_UI_GRAPHIC_GET_RAYCASTER_OFFSET UNITYSDK_OFFSET(0x1AB279A0)
+#define UNITYENGINE_UI_GRAPHIC_GET_RAYCASTTARGET_OFFSET UNITYSDK_OFFSET(0x1AB26700)
+#define UNITYENGINE_UI_GRAPHIC_GET_RECTTRANSFORM_OFFSET UNITYSDK_OFFSET(0x1AB26DD0)
+#define UNITYENGINE_UI_GRAPHIC_GET_USELEGACYMESHGENERATION_OFFSET UNITYSDK_OFFSET(0x1AB26AA0)
+#define UNITYENGINE_UI_GRAPHIC_GET_VERTICESDIRTYWHENLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x1AB265C0)
+#define UNITYENGINE_UI_GRAPHIC_GET_VERTSDIRTY_OFFSET UNITYSDK_OFFSET(0x1AB26A80)
+#define UNITYENGINE_UI_GRAPHIC_GET_WORKERMESH_OFFSET UNITYSDK_OFFSET(0x1AB2A870)
+#define UNITYENGINE_UI_GRAPHIC_GRAPHICUPDATECOMPLETE_OFFSET UNITYSDK_OFFSET(0x1AB29310)
+#define UNITYENGINE_UI_GRAPHIC_ISRAYCASTBLOCKEDBYFILTERS_OFFSET UNITYSDK_OFFSET(0x1AB2B8C0)
+#define UNITYENGINE_UI_GRAPHIC_LAYOUTCOMPLETE_OFFSET UNITYSDK_OFFSET(0x1AB292D0)
+#define UNITYENGINE_UI_GRAPHIC_MODIFYMESHOPTIMIZE_OFFSET UNITYSDK_OFFSET(0x1AB2A340)
+#define UNITYENGINE_UI_GRAPHIC_MODIFYMESH_OFFSET UNITYSDK_OFFSET(0x1AB2A600)
+#define UNITYENGINE_UI_GRAPHIC_ONBEFORETRANSFORMPARENTCHANGED_OFFSET UNITYSDK_OFFSET(0x1AB27110)
+#define UNITYENGINE_UI_GRAPHIC_ONCANVASGROUPCHANGED_OFFSET UNITYSDK_OFFSET(0x1AB287E0)
+#define UNITYENGINE_UI_GRAPHIC_ONCANVASHIERARCHYCHANGED_OFFSET UNITYSDK_OFFSET(0x1AB28920)
+#define UNITYENGINE_UI_GRAPHIC_ONCULLINGCHANGED_OFFSET UNITYSDK_OFFSET(0x1AB28C90)
+#define UNITYENGINE_UI_GRAPHIC_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1AB286C0)
+#define UNITYENGINE_UI_GRAPHIC_ONDIDAPPLYANIMATIONPROPERTIES_OFFSET UNITYSDK_OFFSET(0x1AB25D30)
+#define UNITYENGINE_UI_GRAPHIC_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1AB282A0)
+#define UNITYENGINE_UI_GRAPHIC_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1AB28070)
+#define UNITYENGINE_UI_GRAPHIC_ONFILLVBO_OFFSET UNITYSDK_OFFSET(0x1AB2AA50)
+#define UNITYENGINE_UI_GRAPHIC_ONLIGHTWEIGHTACTIVE_OFFSET UNITYSDK_OFFSET(0x1AB26F30)
+#define UNITYENGINE_UI_GRAPHIC_ONLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x1AB26FD0)
+#define UNITYENGINE_UI_GRAPHIC_ONPOPULATEMESH_1_OFFSET UNITYSDK_OFFSET(0x1AB261C0)
+#define UNITYENGINE_UI_GRAPHIC_ONPOPULATEMESH_OFFSET UNITYSDK_OFFSET(0x1AB2AAA0)
+#define UNITYENGINE_UI_GRAPHIC_ONRECTTRANSFORMDIMENSIONSCHANGE_OFFSET UNITYSDK_OFFSET(0x1AB25A00)
+#define UNITYENGINE_UI_GRAPHIC_ONTRANSFORMPARENTCHANGED_OFFSET UNITYSDK_OFFSET(0x1AB273C0)
+#define UNITYENGINE_UI_GRAPHIC_PIXELADJUSTPOINT_OFFSET UNITYSDK_OFFSET(0x1AB2C0B0)
+#define UNITYENGINE_UI_GRAPHIC_RAYCAST_OFFSET UNITYSDK_OFFSET(0x1AB2B1F0)
+#define UNITYENGINE_UI_GRAPHIC_REBUILD_OFFSET UNITYSDK_OFFSET(0x1AB28DB0)
+#define UNITYENGINE_UI_GRAPHIC_REFRESHCACHEDATA_OFFSET UNITYSDK_OFFSET(0x1AB2B7E0)
+#define UNITYENGINE_UI_GRAPHIC_REGISTERDIRTYLAYOUTCALLBACK_OFFSET UNITYSDK_OFFSET(0x1AB2CF90)
+#define UNITYENGINE_UI_GRAPHIC_REGISTERDIRTYMATERIALCALLBACK_OFFSET UNITYSDK_OFFSET(0x1AB2D150)
+#define UNITYENGINE_UI_GRAPHIC_REGISTERDIRTYVERTICESCALLBACK_OFFSET UNITYSDK_OFFSET(0x1AB2D070)
+#define UNITYENGINE_UI_GRAPHIC_SETALLDIRTY_OFFSET UNITYSDK_OFFSET(0x1AB26B40)
+#define UNITYENGINE_UI_GRAPHIC_SETLAYOUTDIRTY_OFFSET UNITYSDK_OFFSET(0x1AB26C40)
+#define UNITYENGINE_UI_GRAPHIC_SETMATERIALDIRTY_OFFSET UNITYSDK_OFFSET(0x1AB26E80)
+#define UNITYENGINE_UI_GRAPHIC_SETNATIVESIZE_OFFSET UNITYSDK_OFFSET(0x1AB2B1B0)
+#define UNITYENGINE_UI_GRAPHIC_SETVERTICESDIRTY_OFFSET UNITYSDK_OFFSET(0x1AB23C40)
+#define UNITYENGINE_UI_GRAPHIC_SET_COLOR_OFFSET UNITYSDK_OFFSET(0x1AB26610)
+#define UNITYENGINE_UI_GRAPHIC_SET_MATERIALDIRTYWHENLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x1AB265F0)
+#define UNITYENGINE_UI_GRAPHIC_SET_MATERIAL_OFFSET UNITYSDK_OFFSET(0x1AB27A80)
+#define UNITYENGINE_UI_GRAPHIC_SET_RAYCASTTARGET_OFFSET UNITYSDK_OFFSET(0x1AB26710)
+#define UNITYENGINE_UI_GRAPHIC_SET_USELEGACYMESHGENERATION_OFFSET UNITYSDK_OFFSET(0x1AB26AB0)
+#define UNITYENGINE_UI_GRAPHIC_SET_VERTICESDIRTYWHENLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x1AB265D0)
+#define UNITYENGINE_UI_GRAPHIC_UNITYENGINE_UI_ICANVASELEMENT_GET_TRANSFORM_OFFSET UNITYSDK_OFFSET(0x1AB2D280)
+#define UNITYENGINE_UI_GRAPHIC_UNREGISTERDIRTYLAYOUTCALLBACK_OFFSET UNITYSDK_OFFSET(0x1AB2D000)
+#define UNITYENGINE_UI_GRAPHIC_UNREGISTERDIRTYMATERIALCALLBACK_OFFSET UNITYSDK_OFFSET(0x1AB2D1C0)
+#define UNITYENGINE_UI_GRAPHIC_UNREGISTERDIRTYVERTICESCALLBACK_OFFSET UNITYSDK_OFFSET(0x1AB2D0E0)
+#define UNITYENGINE_UI_GRAPHIC_UPDATEGEOMETRY_OFFSET UNITYSDK_OFFSET(0x1AB29670)
+#define UNITYENGINE_UI_GRAPHIC_UPDATEMATERIAL_OFFSET UNITYSDK_OFFSET(0x1AB29350)
+#define UNITYENGINE_UI_GRAPHIC_UPDATERAYCASTVALIDBYCANVASGROUP_OFFSET UNITYSDK_OFFSET(0x1AB267D0)
+#define UNITYENGINE_UI_GRAPHIC__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AB2D230)
+#define UNITYENGINE_UI_GRAPHIC__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB26AC0)
+#define UNITYENGINE_UI_GRAPHIC___BASE_ONBEFORETRANSFORMPARENTCHANGED_OFFSET UNITYSDK_OFFSET(0x1AB2D5A0)
+#define UNITYENGINE_UI_GRAPHIC___BASE_ONCANVASGROUPCHANGED_OFFSET UNITYSDK_OFFSET(0x1AB2D630)
+#define UNITYENGINE_UI_GRAPHIC___BASE_ONCANVASHIERARCHYCHANGED_OFFSET UNITYSDK_OFFSET(0x1AB2D2D0)
+#define UNITYENGINE_UI_GRAPHIC___BASE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1AB2D510)
+#define UNITYENGINE_UI_GRAPHIC___BASE_ONDIDAPPLYANIMATIONPROPERTIES_OFFSET UNITYSDK_OFFSET(0x1AB2D360)
+#define UNITYENGINE_UI_GRAPHIC___BASE_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1AB2D6C0)
+#define UNITYENGINE_UI_GRAPHIC___BASE_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1AB2D750)
+#define UNITYENGINE_UI_GRAPHIC___BASE_ONLIGHTWEIGHTACTIVE_OFFSET UNITYSDK_OFFSET(0x1AB2D7E0)
+#define UNITYENGINE_UI_GRAPHIC___BASE_ONLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x1AB2D870)
+#define UNITYENGINE_UI_GRAPHIC___BASE_ONRECTTRANSFORMDIMENSIONSCHANGE_OFFSET UNITYSDK_OFFSET(0x1AB2D3F0)
+#define UNITYENGINE_UI_GRAPHIC___BASE_ONTRANSFORMPARENTCHANGED_OFFSET UNITYSDK_OFFSET(0x1AB2D480)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int Graphic_TypeDefinitionIndex = 5484;
+	inline static constexpr unsigned int Graphic_TypeDefinitionIndex = 8342;
 
 	class Graphic : public ::UnityEngine::EventSystems::UIBehaviour
 	{
 	public:
-		static ::UnityEngine::UI::VertexHelper** StaticGet_s_VertexHelper()
+		static ::UnityEngine::Texture2D** StaticGet_s_WhiteTexture()
 		{
-			return (::UnityEngine::UI::VertexHelper**)Il2CppClass::FromTypeDefinitionIndex(Graphic_TypeDefinitionIndex)->GetStaticField(0x7730);
-		}
-		static ::UnityEngine::Material** StaticGet_s_DefaultUI()
-		{
-			return (::UnityEngine::Material**)Il2CppClass::FromTypeDefinitionIndex(Graphic_TypeDefinitionIndex)->GetStaticField(0x7738);
+			return (::UnityEngine::Texture2D**)Il2CppClass::FromTypeDefinitionIndex(Graphic_TypeDefinitionIndex)->GetStaticField(0x74F0);
 		}
 		static ::UnityEngine::Mesh** StaticGet_s_Mesh()
 		{
-			return (::UnityEngine::Mesh**)Il2CppClass::FromTypeDefinitionIndex(Graphic_TypeDefinitionIndex)->GetStaticField(0x7740);
+			return (::UnityEngine::Mesh**)Il2CppClass::FromTypeDefinitionIndex(Graphic_TypeDefinitionIndex)->GetStaticField(0x74F8);
 		}
-		static ::UnityEngine::Texture2D** StaticGet_s_WhiteTexture()
+		static ::UnityEngine::Material** StaticGet_s_DefaultUI()
 		{
-			return (::UnityEngine::Texture2D**)Il2CppClass::FromTypeDefinitionIndex(Graphic_TypeDefinitionIndex)->GetStaticField(0x7748);
+			return (::UnityEngine::Material**)Il2CppClass::FromTypeDefinitionIndex(Graphic_TypeDefinitionIndex)->GetStaticField(0x7500);
+		}
+		static ::UnityEngine::UI::VertexHelper** StaticGet_s_VertexHelper()
+		{
+			return (::UnityEngine::UI::VertexHelper**)Il2CppClass::FromTypeDefinitionIndex(Graphic_TypeDefinitionIndex)->GetStaticField(0x7508);
+		}
+		static ::System::Boolean* StaticGet_s_UseRegistryForModifier()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Graphic_TypeDefinitionIndex)->GetStaticField(0x3A50);
 		}
 		::UnityEngine::Material* m_Material; // 0x18
-		::UnityEngine::Color m_Color; // 0x20
-		::System::Boolean m_SkipLayoutUpdate; // 0x30
-		::System::Boolean m_SkipMaterialUpdate; // 0x31
-		::System::Boolean m_RaycastTarget; // 0x32
+		::System::Boolean _verticesDirtyWhenLightweightDeactive_k__BackingField; // 0x20
+		::System::Boolean _materialDirtyWhenLightweightDeactive_k__BackingField; // 0x21
+		::UnityEngine::Color m_Color; // 0x24
+		::System::Boolean m_SkipLayoutUpdate; // 0x34
+		::System::Boolean m_SkipMaterialUpdate; // 0x35
+		::System::Boolean m_RaycastTarget; // 0x36
 		::UnityEngine::RectTransform* m_RectTransform; // 0x38
 		::UnityEngine::CanvasRenderer* m_CanvasRenderer; // 0x40
 		::UnityEngine::Canvas* m_Canvas; // 0x48
-		::UnityEngine::Canvas* m_RootCanvasIncludeInactive; // 0x50
+		::UnityEngine::UI::GraphicRaycaster* m_Raycaster; // 0x50
 		::System::Boolean m_VertsDirty; // 0x58
 		::System::Boolean m_MaterialDirty; // 0x59
 		::UnityEngine::Events::UnityAction* m_OnDirtyLayoutCallback; // 0x60
 		::UnityEngine::Events::UnityAction* m_OnDirtyVertsCallback; // 0x68
 		::UnityEngine::Events::UnityAction* m_OnDirtyMaterialCallback; // 0x70
-		::UnityEngine::Events::UnityAction_1<::UnityEngine::UI::Graphic*>* m_OnRaycastTargetChangeCallback; // 0x78
-		::UnityEngine::Mesh* m_CachedMesh; // 0x80
-		::Il2CppArray<::UnityEngine::Vector2>* m_CachedUvs; // 0x88
-		::UnityEngine::UI::CoroutineTween::TweenRunner_1<::UnityEngine::UI::CoroutineTween::ColorTween>* m_ColorTweenRunner; // 0x90
-		::System::Boolean _useLegacyMeshGeneration_k__BackingField; // 0x98
-		::System::Boolean _verticesDirtyWhenLightweightDeactive_k__BackingField; // 0x99
-		::System::Boolean _materialDirtyWhenLightweightDeactive_k__BackingField; // 0x9A
-		::System::Boolean m_UseRendererColor; // 0x9B
+		::UnityEngine::Mesh* m_CachedMesh; // 0x78
+		::Il2CppArray<::UnityEngine::Vector2>* m_CachedUvs; // 0x80
+		::System::Boolean m_ParentCanvasGroupAllowRaycast; // 0x88
+		::System::Boolean m_RaycastFiltersCached; // 0x89
+		::System::Collections::Generic::List_1<::UnityEngine::ICanvasRaycastFilter*>* m_RaycastFiltersCacheList; // 0x90
+		::UnityEngine::UI::CoroutineTween::TweenRunner_1<::UnityEngine::UI::CoroutineTween::ColorTween>* m_ColorTweenRunner; // 0x98
+		::System::Boolean _useLegacyMeshGeneration_k__BackingField; // 0xA0
 
 		::System::Void _ctor()
 		{
@@ -157,36 +177,6 @@ namespace UnityEngine::UI
 		static ::UnityEngine::Material* get_defaultGraphicMaterial()
 		{
 			return ((::UnityEngine::Material*(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_DEFAULTGRAPHICMATERIAL_OFFSET))();
-		}
-
-		::UnityEngine::Color get_color()
-		{
-			return ((::UnityEngine::Color(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_COLOR_OFFSET))(this);
-		}
-
-		::System::Void set_color(::UnityEngine::Color value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_SET_COLOR_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_raycastTarget()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_RAYCASTTARGET_OFFSET))(this);
-		}
-
-		::System::Void set_raycastTarget(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_SET_RAYCASTTARGET_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_useLegacyMeshGeneration()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_USELEGACYMESHGENERATION_OFFSET))(this);
-		}
-
-		::System::Void set_useLegacyMeshGeneration(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_SET_USELEGACYMESHGENERATION_OFFSET))(this, value);
 		}
 
 		::System::Boolean get_verticesDirtyWhenLightweightDeactive()
@@ -209,9 +199,49 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_SET_MATERIALDIRTYWHENLIGHTWEIGHTDEACTIVE_OFFSET))(this, value);
 		}
 
-		::System::Void CheckOrInitTweenRunner()
+		::UnityEngine::Color get_color()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_CHECKORINITTWEENRUNNER_OFFSET))(this);
+			return ((::UnityEngine::Color(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_COLOR_OFFSET))(this);
+		}
+
+		::System::Void set_color(::UnityEngine::Color value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_SET_COLOR_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_raycastTarget()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_RAYCASTTARGET_OFFSET))(this);
+		}
+
+		::System::Void set_raycastTarget(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_SET_RAYCASTTARGET_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsRaycastValidByCanvasGroup()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_ISRAYCASTVALIDBYCANVASGROUP_OFFSET))(this);
+		}
+
+		::System::Boolean get_VertsDirty()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_VERTSDIRTY_OFFSET))(this);
+		}
+
+		::System::Boolean get_MaterialDirty()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_MATERIALDIRTY_OFFSET))(this);
+		}
+
+		::System::Boolean get_useLegacyMeshGeneration()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_USELEGACYMESHGENERATION_OFFSET))(this);
+		}
+
+		::System::Void set_useLegacyMeshGeneration(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_SET_USELEGACYMESHGENERATION_OFFSET))(this, value);
 		}
 
 		::System::Void SetAllDirty()
@@ -232,6 +262,16 @@ namespace UnityEngine::UI
 		::System::Void SetMaterialDirty()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_SETMATERIALDIRTY_OFFSET))(this);
+		}
+
+		::System::Void OnLightweightActive()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_ONLIGHTWEIGHTACTIVE_OFFSET))(this);
+		}
+
+		::System::Void OnLightweightDeactive()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_ONLIGHTWEIGHTDEACTIVE_OFFSET))(this);
 		}
 
 		::System::Void OnRectTransformDimensionsChange()
@@ -264,9 +304,9 @@ namespace UnityEngine::UI
 			return ((::UnityEngine::Canvas*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_CANVAS_OFFSET))(this);
 		}
 
-		::UnityEngine::Canvas* get_rootCanvasIncludeInactive()
+		::UnityEngine::UI::GraphicRaycaster* get_raycaster()
 		{
-			return ((::UnityEngine::Canvas*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_ROOTCANVASINCLUDEINACTIVE_OFFSET))(this);
+			return ((::UnityEngine::UI::GraphicRaycaster*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_RAYCASTER_OFFSET))(this);
 		}
 
 		::System::Void CacheCanvas()
@@ -314,19 +354,14 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_ONDISABLE_OFFSET))(this);
 		}
 
-		::System::Void OnLightweightActivate()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_ONLIGHTWEIGHTACTIVATE_OFFSET))(this);
-		}
-
-		::System::Void OnLightweightDeactivate()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_ONLIGHTWEIGHTDEACTIVATE_OFFSET))(this);
-		}
-
 		::System::Void OnDestroy()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_ONDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnCanvasGroupChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_ONCANVASGROUPCHANGED_OFFSET))(this);
 		}
 
 		::System::Void OnCanvasHierarchyChanged()
@@ -369,6 +404,16 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_DOMESHGENERATION_OFFSET))(this);
 		}
 
+		::System::Void ModifyMesh()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_MODIFYMESH_OFFSET))(this);
+		}
+
+		::System::Void ModifyMeshOptimize()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_MODIFYMESHOPTIMIZE_OFFSET))(this);
+		}
+
 		::System::Void DoLegacyMeshGeneration()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_DOLEGACYMESHGENERATION_OFFSET))(this);
@@ -409,6 +454,36 @@ namespace UnityEngine::UI
 			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Vector2, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_RAYCAST_OFFSET))(this, sp, eventCamera);
 		}
 
+		::System::Void RefreshCacheData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_REFRESHCACHEDATA_OFFSET))(this);
+		}
+
+		::System::Boolean FastRaycast(::UnityEngine::Vector2 sp, ::UnityEngine::Camera* eventCamera)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Vector2, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_FASTRAYCAST_OFFSET))(this, sp, eventCamera);
+		}
+
+		::System::Boolean UpdateRaycastValidByCanvasGroup()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_UPDATERAYCASTVALIDBYCANVASGROUP_OFFSET))(this);
+		}
+
+		static ::System::Boolean FastRaycastIsBlockedByParentCanvasGroup(::UnityEngine::Transform* transform, ::UnityEngine::Canvas* canvas)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Transform*, ::UnityEngine::Canvas*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_FASTRAYCASTISBLOCKEDBYPARENTCANVASGROUP_OFFSET))(transform, canvas);
+		}
+
+		static ::System::Void CacheRaycastFilters(::UnityEngine::Transform* transform, ::UnityEngine::Canvas* canvas, ::System::Collections::Generic::List_1<::UnityEngine::ICanvasRaycastFilter*>*& cacheList)
+		{
+			return ((::System::Void(*)(::UnityEngine::Transform*, ::UnityEngine::Canvas*, ::System::Collections::Generic::List_1<::UnityEngine::ICanvasRaycastFilter*>*&))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_CACHERAYCASTFILTERS_OFFSET))(transform, canvas, cacheList);
+		}
+
+		::System::Boolean IsRaycastBlockedByFilters(::UnityEngine::Vector2 sp, ::UnityEngine::Camera* eventCamera)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Vector2, ::UnityEngine::Camera*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_ISRAYCASTBLOCKEDBYFILTERS_OFFSET))(this, sp, eventCamera);
+		}
+
 		::UnityEngine::Vector2 PixelAdjustPoint(::UnityEngine::Vector2 point)
 		{
 			return ((::UnityEngine::Vector2(*)(::PVOID, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_PIXELADJUSTPOINT_OFFSET))(this, point);
@@ -417,26 +492,6 @@ namespace UnityEngine::UI
 		::UnityEngine::Rect GetPixelAdjustedRect()
 		{
 			return ((::UnityEngine::Rect(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GETPIXELADJUSTEDRECT_OFFSET))(this);
-		}
-
-		::System::Boolean get_useRendererColor()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_GET_USERENDERERCOLOR_OFFSET))(this);
-		}
-
-		::System::Void set_useRendererColor(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_SET_USERENDERERCOLOR_OFFSET))(this, value);
-		}
-
-		::UnityEngine::Color LinearToGammaSpace(::UnityEngine::Color color)
-		{
-			return ((::UnityEngine::Color(*)(::PVOID, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_LINEARTOGAMMASPACE_OFFSET))(this, color);
-		}
-
-		::System::Single LinearToGammaSpace_1(::System::Single value)
-		{
-			return ((::System::Single(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_LINEARTOGAMMASPACE_1_OFFSET))(this, value);
 		}
 
 		::System::Void CrossFadeColor(::UnityEngine::Color targetColor, ::System::Single duration, ::System::Boolean ignoreTimeScale, ::System::Boolean useAlpha)
@@ -489,29 +544,64 @@ namespace UnityEngine::UI
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Events::UnityAction*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_UNREGISTERDIRTYMATERIALCALLBACK_OFFSET))(this, action);
 		}
 
-		::System::Void RegisterChangeRaycastTargetCallback(::UnityEngine::Events::UnityAction_1<::UnityEngine::UI::Graphic*>* action)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Events::UnityAction_1<::UnityEngine::UI::Graphic*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_REGISTERCHANGERAYCASTTARGETCALLBACK_OFFSET))(this, action);
-		}
-
-		::System::Void UnregisterChangeRaycastTargetCallback(::UnityEngine::Events::UnityAction_1<::UnityEngine::UI::Graphic*>* action)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Events::UnityAction_1<::UnityEngine::UI::Graphic*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_UNREGISTERCHANGERAYCASTTARGETCALLBACK_OFFSET))(this, action);
-		}
-
-		static ::System::Void ResetUIDefaultMat()
-		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_RESETUIDEFAULTMAT_OFFSET))();
-		}
-
-		static ::System::Void InitUIDefaultMat()
-		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_INITUIDEFAULTMAT_OFFSET))();
-		}
-
 		::UnityEngine::Transform* UnityEngine_UI_ICanvasElement_get_transform()
 		{
 			return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC_UNITYENGINE_UI_ICANVASELEMENT_GET_TRANSFORM_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCanvasHierarchyChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC___BASE_ONCANVASHIERARCHYCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnDidApplyAnimationProperties()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC___BASE_ONDIDAPPLYANIMATIONPROPERTIES_OFFSET))(this);
+		}
+
+		::System::Void __base_OnRectTransformDimensionsChange()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC___BASE_ONRECTTRANSFORMDIMENSIONSCHANGE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnTransformParentChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC___BASE_ONTRANSFORMPARENTCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC___BASE_ONDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnBeforeTransformParentChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC___BASE_ONBEFORETRANSFORMPARENTCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCanvasGroupChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC___BASE_ONCANVASGROUPCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnDisable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC___BASE_ONDISABLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC___BASE_ONENABLE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnLightweightActive()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC___BASE_ONLIGHTWEIGHTACTIVE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnLightweightDeactive()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_GRAPHIC___BASE_ONLIGHTWEIGHTDEACTIVE_OFFSET))(this);
 		}
 	};
 }

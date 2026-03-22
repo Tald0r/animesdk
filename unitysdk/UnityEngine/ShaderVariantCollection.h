@@ -7,17 +7,23 @@
 namespace System { class String; }
 namespace UnityEngine { class Shader; }
 
-#define UNITYENGINE_SHADERVARIANTCOLLECTION_ADDVARIANT_OFFSET UNITYSDK_OFFSET(0x18238650)
-#define UNITYENGINE_SHADERVARIANTCOLLECTION_ADD_OFFSET UNITYSDK_OFFSET(0x18238690)
-#define UNITYENGINE_SHADERVARIANTCOLLECTION_GETSHADERWITHIDX_OFFSET UNITYSDK_OFFSET(0x182386B0)
-#define UNITYENGINE_SHADERVARIANTCOLLECTION_GETSHADER_OFFSET UNITYSDK_OFFSET(0x18238660)
-#define UNITYENGINE_SHADERVARIANTCOLLECTION_GET_SHADERCOUNT_OFFSET UNITYSDK_OFFSET(0x18238640)
-#define UNITYENGINE_SHADERVARIANTCOLLECTION_INTERNAL_CREATE_OFFSET UNITYSDK_OFFSET(0x18238670)
-#define UNITYENGINE_SHADERVARIANTCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x18238680)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_ADDVARIANT_OFFSET UNITYSDK_OFFSET(0x19E42ED0)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_ADD_OFFSET UNITYSDK_OFFSET(0x19E42F60)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_CLEAR_OFFSET UNITYSDK_OFFSET(0x19E42F00)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_CONTAINSVARIANT_OFFSET UNITYSDK_OFFSET(0x19E42EF0)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_CONTAINS_OFFSET UNITYSDK_OFFSET(0x19E42FC0)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_GET_ISWARMEDUP_OFFSET UNITYSDK_OFFSET(0x19E42EC0)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_GET_SHADERCOUNT_OFFSET UNITYSDK_OFFSET(0x19E42EA0)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_GET_VARIANTCOUNT_OFFSET UNITYSDK_OFFSET(0x19E42EB0)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_INTERNAL_CREATE_OFFSET UNITYSDK_OFFSET(0x19E42F20)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_REMOVEVARIANT_OFFSET UNITYSDK_OFFSET(0x19E42EE0)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_REMOVE_OFFSET UNITYSDK_OFFSET(0x19E42F90)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION_WARMUP_OFFSET UNITYSDK_OFFSET(0x19E42F10)
+#define UNITYENGINE_SHADERVARIANTCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x19E42F30)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ShaderVariantCollection_TypeDefinitionIndex = 4170;
+	inline static constexpr unsigned int ShaderVariantCollection_TypeDefinitionIndex = 5386;
 
 	class ShaderVariantCollection : public ::UnityEngine::Object
 	{
@@ -32,14 +38,39 @@ namespace UnityEngine
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_GET_SHADERCOUNT_OFFSET))(this);
 		}
 
-		::System::Boolean AddVariant(::UnityEngine::Shader* shader, ::UnityEngine::Rendering::PassType passType, ::Il2CppArray<::System::String*>* keywords)
+		::System::Int32 get_variantCount()
 		{
-			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Shader*, ::UnityEngine::Rendering::PassType, ::Il2CppArray<::System::String*>*))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_ADDVARIANT_OFFSET))(this, shader, passType, keywords);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_GET_VARIANTCOUNT_OFFSET))(this);
 		}
 
-		::UnityEngine::Shader* GetShader(::System::Int32 shaderIdx)
+		::System::Boolean get_isWarmedUp()
 		{
-			return ((::UnityEngine::Shader*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_GETSHADER_OFFSET))(this, shaderIdx);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_GET_ISWARMEDUP_OFFSET))(this);
+		}
+
+		::System::Boolean AddVariant(::UnityEngine::Shader* shader, ::UnityEngine::Rendering::PassType passType, ::Il2CppArray<::System::String*>* keywords, ::System::String* pipeline)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Shader*, ::UnityEngine::Rendering::PassType, ::Il2CppArray<::System::String*>*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_ADDVARIANT_OFFSET))(this, shader, passType, keywords, pipeline);
+		}
+
+		::System::Boolean RemoveVariant(::UnityEngine::Shader* shader, ::UnityEngine::Rendering::PassType passType, ::Il2CppArray<::System::String*>* keywords, ::System::String* pipeline)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Shader*, ::UnityEngine::Rendering::PassType, ::Il2CppArray<::System::String*>*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_REMOVEVARIANT_OFFSET))(this, shader, passType, keywords, pipeline);
+		}
+
+		::System::Boolean ContainsVariant(::UnityEngine::Shader* shader, ::UnityEngine::Rendering::PassType passType, ::Il2CppArray<::System::String*>* keywords, ::System::String* pipeline)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Shader*, ::UnityEngine::Rendering::PassType, ::Il2CppArray<::System::String*>*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_CONTAINSVARIANT_OFFSET))(this, shader, passType, keywords, pipeline);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_CLEAR_OFFSET))(this);
+		}
+
+		::System::Void WarmUp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_WARMUP_OFFSET))(this);
 		}
 
 		static ::System::Void Internal_Create(::UnityEngine::ShaderVariantCollection* svc)
@@ -52,9 +83,14 @@ namespace UnityEngine
 			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::ShaderVariantCollection_ShaderVariant))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_ADD_OFFSET))(this, variant);
 		}
 
-		::UnityEngine::Shader* GetShaderWithIdx(::System::Int32 shaderIdx)
+		::System::Boolean Remove(::UnityEngine::ShaderVariantCollection_ShaderVariant variant)
 		{
-			return ((::UnityEngine::Shader*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_GETSHADERWITHIDX_OFFSET))(this, shaderIdx);
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::ShaderVariantCollection_ShaderVariant))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_REMOVE_OFFSET))(this, variant);
+		}
+
+		::System::Boolean Contains(::UnityEngine::ShaderVariantCollection_ShaderVariant variant)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::ShaderVariantCollection_ShaderVariant))((::PBYTE)hIl2Cpp + UNITYENGINE_SHADERVARIANTCOLLECTION_CONTAINS_OFFSET))(this, variant);
 		}
 	};
 }

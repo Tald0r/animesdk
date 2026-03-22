@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_NOTIMPLEMENTEDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15CA2940)
-#define SYSTEM_NOTIMPLEMENTEDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15CA29B0)
-#define SYSTEM_NOTIMPLEMENTEDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15CA28D0)
+#define SYSTEM_NOTIMPLEMENTEDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x198775A0)
+#define SYSTEM_NOTIMPLEMENTEDEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x19888230)
+#define SYSTEM_NOTIMPLEMENTEDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x19888190)
 
 namespace System
 {
-	inline static constexpr unsigned int NotImplementedException_TypeDefinitionIndex = 302;
+	inline static constexpr unsigned int NotImplementedException_TypeDefinitionIndex = 292;
 
 	class NotImplementedException : public ::System::SystemException
 	{

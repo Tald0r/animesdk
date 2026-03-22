@@ -1,10 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/Client/AvatarUpgradePart.h"
 
-namespace RPG::Client { class AvatarData; }
+namespace MoleMole::Timeline::AutoGenerateComps { class CompTimelineBaseConfig; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_557_TypeDefinitionIndex = 49875;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_557_TypeDefinitionIndex = 56066;
 
 class Class_0_16E4307DCC419505_557
 {

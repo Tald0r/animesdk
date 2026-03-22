@@ -1,0 +1,176 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+class Class_2_208CC9941471731A_157;
+class Class_2_8FCB22336286BF09;
+class Class_2_923BB6EA0D9B637B;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_GETCURRENTSHOWDATA_OFFSET UNITYSDK_OFFSET(0x8483FF0)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x8483810)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ISOPENBYTYPE_OFFSET UNITYSDK_OFFSET(0x8484340)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONCLICKGOTOTASKBUTTON_OFFSET UNITYSDK_OFFSET(0x8485020)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8483820)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONFLOWERSHOPDATACHANGEEVENT_OFFSET UNITYSDK_OFFSET(0x8485110)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONFLOWERSHOPTASKCHANGEEVENT_OFFSET UNITYSDK_OFFSET(0x8485090)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONGAMEPADMODULETRYOVERRIDENEXTSELECTINDEX_OFFSET UNITYSDK_OFFSET(0x8484BC0)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONGOTOTASKBUTTON_OFFSET UNITYSDK_OFFSET(0x8484E90)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONSELECTITEM_OFFSET UNITYSDK_OFFSET(0x8484D40)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x84842B0)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x84839A0)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8483D90)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_SELECTITEMBYDATA_OFFSET UNITYSDK_OFFSET(0x8484220)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_SELECTITEMBYID_OFFSET UNITYSDK_OFFSET(0x8484500)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_SHOWALLITEMBYTYPE_OFFSET UNITYSDK_OFFSET(0x8483F30)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_SHOWPANELBYITEMDATA_OFFSET UNITYSDK_OFFSET(0x8484680)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_SORTMETHOD_OFFSET UNITYSDK_OFFSET(0x8484430)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8485180)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8485210)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONGAMEPADMODULETRYOVERRIDENEXTSELECTINDEX_OFFSET UNITYSDK_OFFSET(0x8485280)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8485340)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8485350)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8485360)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int BaseUIFlowerShopTaskPageController_TypeDefinitionIndex = 68274;
+
+	class BaseUIFlowerShopTaskPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_8FCB22336286BF09* _view; // 0x2F8
+		::Class_2_923BB6EA0D9B637B* _model; // 0x300
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_157*>* _dataList; // 0x308
+		::Class_2_208CC9941471731A_157* _currentData; // 0x310
+		::System::Boolean _isNeedShowReadComment; // 0x318
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean IsOpenByType(::System::Int32 type)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ISOPENBYTYPE_OFFSET))(this, type);
+		}
+
+		::Class_2_208CC9941471731A_157* GetCurrentShowData()
+		{
+			return ((::Class_2_208CC9941471731A_157*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_GETCURRENTSHOWDATA_OFFSET))(this);
+		}
+
+		::System::Int32 SortMethod(::Class_2_208CC9941471731A_157* a, ::Class_2_208CC9941471731A_157* b)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_157*, ::Class_2_208CC9941471731A_157*))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_SORTMETHOD_OFFSET))(this, a, b);
+		}
+
+		::System::Void ShowAllItemByType()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_SHOWALLITEMBYTYPE_OFFSET))(this);
+		}
+
+		::System::Void SelectItemByData(::Class_2_208CC9941471731A_157* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_157*))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_SELECTITEMBYDATA_OFFSET))(this, data);
+		}
+
+		::System::Void SelectItemById(::System::Int32 id, ::System::Boolean setIsFirstSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_SELECTITEMBYID_OFFSET))(this, id, setIsFirstSelect);
+		}
+
+		::System::Int32 OnGamepadModuleTryOverrideNextSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 curIndex, ::System::Int32 nextIndex, ::MoleMole::InputActionEvent actionEvent, ::UnityEngine::Vector2 moveDir)
+		{
+			return ((::System::Int32(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::System::Int32, ::MoleMole::InputActionEvent, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONGAMEPADMODULETRYOVERRIDENEXTSELECTINDEX_OFFSET))(this, gamepadModule, curIndex, nextIndex, actionEvent, moveDir);
+		}
+
+		::System::Void OnSelectItem(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONSELECTITEM_OFFSET))(this, index);
+		}
+
+		::System::Void ShowPanelByItemData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_SHOWPANELBYITEMDATA_OFFSET))(this);
+		}
+
+		::System::Void OnGotoTaskButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONGOTOTASKBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnClickGotoTaskButton(::Class_2_208CC9941471731A_157* currentData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_157*))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONCLICKGOTOTASKBUTTON_OFFSET))(this, currentData);
+		}
+
+		::System::Void OnFlowerShopTaskChangeEvent(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONFLOWERSHOPTASKCHANGEEVENT_OFFSET))(this, obj);
+		}
+
+		::System::Void OnFlowerShopDataChangeEvent(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_ONFLOWERSHOPDATACHANGEEVENT_OFFSET))(this, obj);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Int32 __base_OnGamepadModuleTryOverrideNextSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::System::Int32 P2, ::MoleMole::InputActionEvent P3, ::UnityEngine::Vector2 P4)
+		{
+			return ((::System::Int32(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::System::Int32, ::MoleMole::InputActionEvent, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONGAMEPADMODULETRYOVERRIDENEXTSELECTINDEX_OFFSET))(this, P0, P1, P2, P3, P4);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

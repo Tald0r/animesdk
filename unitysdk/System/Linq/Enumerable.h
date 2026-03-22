@@ -14,21 +14,21 @@ namespace System::Linq { template <typename T1, typename T2> class IGrouping_2; 
 namespace System::Linq { template <typename T1, typename T2> class ILookup_2; }
 namespace System::Linq { template <typename T> class IOrderedEnumerable_1; }
 
-#define SYSTEM_LINQ_ENUMERABLE_AVERAGE_OFFSET UNITYSDK_OFFSET(0x17C87E80)
-#define SYSTEM_LINQ_ENUMERABLE_MAX_1_OFFSET UNITYSDK_OFFSET(0x17C87760)
-#define SYSTEM_LINQ_ENUMERABLE_MAX_2_OFFSET UNITYSDK_OFFSET(0x17C87AF0)
-#define SYSTEM_LINQ_ENUMERABLE_MAX_OFFSET UNITYSDK_OFFSET(0x17C87420)
-#define SYSTEM_LINQ_ENUMERABLE_MIN_OFFSET UNITYSDK_OFFSET(0x17C87020)
-#define SYSTEM_LINQ_ENUMERABLE_RANGEITERATOR_OFFSET UNITYSDK_OFFSET(0x17C86210)
-#define SYSTEM_LINQ_ENUMERABLE_RANGE_OFFSET UNITYSDK_OFFSET(0x17C860B0)
-#define SYSTEM_LINQ_ENUMERABLE_SUM_1_OFFSET UNITYSDK_OFFSET(0x17C86680)
-#define SYSTEM_LINQ_ENUMERABLE_SUM_2_OFFSET UNITYSDK_OFFSET(0x17C86A10)
-#define SYSTEM_LINQ_ENUMERABLE_SUM_3_OFFSET UNITYSDK_OFFSET(0x17C86D20)
-#define SYSTEM_LINQ_ENUMERABLE_SUM_OFFSET UNITYSDK_OFFSET(0x17C86270)
+#define SYSTEM_LINQ_ENUMERABLE_AVERAGE_1_OFFSET UNITYSDK_OFFSET(0x1A924500)
+#define SYSTEM_LINQ_ENUMERABLE_AVERAGE_OFFSET UNITYSDK_OFFSET(0x1A9240C0)
+#define SYSTEM_LINQ_ENUMERABLE_MAX_1_OFFSET UNITYSDK_OFFSET(0x1A923D30)
+#define SYSTEM_LINQ_ENUMERABLE_MAX_OFFSET UNITYSDK_OFFSET(0x1A9239F0)
+#define SYSTEM_LINQ_ENUMERABLE_MIN_1_OFFSET UNITYSDK_OFFSET(0x1A923690)
+#define SYSTEM_LINQ_ENUMERABLE_MIN_OFFSET UNITYSDK_OFFSET(0x1A923350)
+#define SYSTEM_LINQ_ENUMERABLE_RANGEITERATOR_OFFSET UNITYSDK_OFFSET(0x1A922900)
+#define SYSTEM_LINQ_ENUMERABLE_RANGE_OFFSET UNITYSDK_OFFSET(0x1A922850)
+#define SYSTEM_LINQ_ENUMERABLE_SUM_1_OFFSET UNITYSDK_OFFSET(0x1A922CB0)
+#define SYSTEM_LINQ_ENUMERABLE_SUM_2_OFFSET UNITYSDK_OFFSET(0x1A923040)
+#define SYSTEM_LINQ_ENUMERABLE_SUM_OFFSET UNITYSDK_OFFSET(0x1A922960)
 
 namespace System::Linq
 {
-	inline static constexpr unsigned int Enumerable_TypeDefinitionIndex = 3111;
+	inline static constexpr unsigned int Enumerable_TypeDefinitionIndex = 4342;
 
 	class Enumerable : public ::System::Object
 	{
@@ -58,14 +58,14 @@ namespace System::Linq
 			return ((::System::Single(*)(::System::Collections::Generic::IEnumerable_1<::System::Single>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_SUM_2_OFFSET))(source);
 		}
 
-		static ::System::Double Sum_3(::System::Collections::Generic::IEnumerable_1<::System::Double>* source)
+		static ::System::Int32 Min(::System::Collections::Generic::IEnumerable_1<::System::Int32>* source)
 		{
-			return ((::System::Double(*)(::System::Collections::Generic::IEnumerable_1<::System::Double>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_SUM_3_OFFSET))(source);
+			return ((::System::Int32(*)(::System::Collections::Generic::IEnumerable_1<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_MIN_OFFSET))(source);
 		}
 
-		static ::System::Single Min(::System::Collections::Generic::IEnumerable_1<::System::Single>* source)
+		static ::System::Single Min_1(::System::Collections::Generic::IEnumerable_1<::System::Single>* source)
 		{
-			return ((::System::Single(*)(::System::Collections::Generic::IEnumerable_1<::System::Single>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_MIN_OFFSET))(source);
+			return ((::System::Single(*)(::System::Collections::Generic::IEnumerable_1<::System::Single>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_MIN_1_OFFSET))(source);
 		}
 
 		static ::System::Int32 Max(::System::Collections::Generic::IEnumerable_1<::System::Int32>* source)
@@ -73,19 +73,19 @@ namespace System::Linq
 			return ((::System::Int32(*)(::System::Collections::Generic::IEnumerable_1<::System::Int32>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_MAX_OFFSET))(source);
 		}
 
-		static ::System::Double Max_1(::System::Collections::Generic::IEnumerable_1<::System::Double>* source)
+		static ::System::Single Max_1(::System::Collections::Generic::IEnumerable_1<::System::Single>* source)
 		{
-			return ((::System::Double(*)(::System::Collections::Generic::IEnumerable_1<::System::Double>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_MAX_1_OFFSET))(source);
+			return ((::System::Single(*)(::System::Collections::Generic::IEnumerable_1<::System::Single>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_MAX_1_OFFSET))(source);
 		}
 
-		static ::System::Single Max_2(::System::Collections::Generic::IEnumerable_1<::System::Single>* source)
+		static ::System::Double Average(::System::Collections::Generic::IEnumerable_1<::System::Int64>* source)
 		{
-			return ((::System::Single(*)(::System::Collections::Generic::IEnumerable_1<::System::Single>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_MAX_2_OFFSET))(source);
+			return ((::System::Double(*)(::System::Collections::Generic::IEnumerable_1<::System::Int64>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_AVERAGE_OFFSET))(source);
 		}
 
-		static ::System::Single Average(::System::Collections::Generic::IEnumerable_1<::System::Single>* source)
+		static ::System::Single Average_1(::System::Collections::Generic::IEnumerable_1<::System::Single>* source)
 		{
-			return ((::System::Single(*)(::System::Collections::Generic::IEnumerable_1<::System::Single>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_AVERAGE_OFFSET))(source);
+			return ((::System::Single(*)(::System::Collections::Generic::IEnumerable_1<::System::Single>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_ENUMERABLE_AVERAGE_1_OFFSET))(source);
 		}
 	};
 }

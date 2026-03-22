@@ -1,7 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
-#include "unitysdk/UnityEngine/Bounds.h"
 #include "unitysdk/UnityEngine/Color.h"
 #include "unitysdk/UnityEngine/LightType.h"
 #include "unitysdk/UnityEngine/Matrix4x4.h"
@@ -9,14 +8,22 @@
 #include "unitysdk/UnityEngine/Rendering/VisibleLightFlags.h"
 
 namespace System { class Object; }
+namespace UnityEngine { class Light; }
 
-#define UNITYENGINE_RENDERING_VISIBLELIGHT_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x204C7E0)
-#define UNITYENGINE_RENDERING_VISIBLELIGHT_EQUALS_OFFSET UNITYSDK_OFFSET(0x204C7A0)
-#define UNITYENGINE_RENDERING_VISIBLELIGHT_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x204C860)
+#define UNITYENGINE_RENDERING_VISIBLELIGHT_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x8B5A40)
+#define UNITYENGINE_RENDERING_VISIBLELIGHT_EQUALS_OFFSET UNITYSDK_OFFSET(0x8B59D0)
+#define UNITYENGINE_RENDERING_VISIBLELIGHT_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x8B5B00)
+#define UNITYENGINE_RENDERING_VISIBLELIGHT_GET_FINALCOLOR_OFFSET UNITYSDK_OFFSET(0x52CFE0)
+#define UNITYENGINE_RENDERING_VISIBLELIGHT_GET_LIGHTTYPE_OFFSET UNITYSDK_OFFSET(0x2C3E30)
+#define UNITYENGINE_RENDERING_VISIBLELIGHT_GET_LIGHT_OFFSET UNITYSDK_OFFSET(0x8B5920)
+#define UNITYENGINE_RENDERING_VISIBLELIGHT_GET_LOCALTOWORLDMATRIX_OFFSET UNITYSDK_OFFSET(0x8B5980)
+#define UNITYENGINE_RENDERING_VISIBLELIGHT_GET_RANGE_OFFSET UNITYSDK_OFFSET(0x8B59B0)
+#define UNITYENGINE_RENDERING_VISIBLELIGHT_GET_SPOTANGLE_OFFSET UNITYSDK_OFFSET(0x362220)
+#define UNITYENGINE_RENDERING_VISIBLELIGHT_SET_RANGE_OFFSET UNITYSDK_OFFSET(0x8B59C0)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int VisibleLight_TypeDefinitionIndex = 4561;
+	inline static constexpr unsigned int VisibleLight_TypeDefinitionIndex = 6240;
 
 	struct alignas(4) VisibleLight
 	{
@@ -28,7 +35,41 @@ namespace UnityEngine::Rendering
 		::System::Single m_SpotAngle; // 0x78
 		::System::Int32 m_InstanceId; // 0x7C
 		::UnityEngine::Rendering::VisibleLightFlags m_Flags; // 0x80
-		::UnityEngine::Bounds m_AABB; // 0x84
+
+		::UnityEngine::Light* get_light()
+		{
+			return ((::UnityEngine::Light*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_VISIBLELIGHT_GET_LIGHT_OFFSET))(this);
+		}
+
+		::UnityEngine::LightType get_lightType()
+		{
+			return ((::UnityEngine::LightType(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_VISIBLELIGHT_GET_LIGHTTYPE_OFFSET))(this);
+		}
+
+		::UnityEngine::Color get_finalColor()
+		{
+			return ((::UnityEngine::Color(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_VISIBLELIGHT_GET_FINALCOLOR_OFFSET))(this);
+		}
+
+		::UnityEngine::Matrix4x4 get_localToWorldMatrix()
+		{
+			return ((::UnityEngine::Matrix4x4(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_VISIBLELIGHT_GET_LOCALTOWORLDMATRIX_OFFSET))(this);
+		}
+
+		::System::Single get_range()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_VISIBLELIGHT_GET_RANGE_OFFSET))(this);
+		}
+
+		::System::Void set_range(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_VISIBLELIGHT_SET_RANGE_OFFSET))(this, value);
+		}
+
+		::System::Single get_spotAngle()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_VISIBLELIGHT_GET_SPOTANGLE_OFFSET))(this);
+		}
 
 		::System::Boolean Equals(::UnityEngine::Rendering::VisibleLight other)
 		{

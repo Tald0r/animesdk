@@ -1,0 +1,68 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/BehaviorDesigner/Runtime/Tasks/Action.h"
+#include "unitysdk/BehaviorDesigner/Runtime/Tasks/TaskStatus.h"
+#include "unitysdk/UnityEngine/Space.h"
+
+namespace BehaviorDesigner::Runtime { class SharedGameObject; }
+namespace BehaviorDesigner::Runtime { class SharedVector3; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class Transform; }
+
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A636EE0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE_ONSTART_OFFSET UNITYSDK_OFFSET(0x1A6369A0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A636BC0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A636F50)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A636FA0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE___BASE_ONSTART_OFFSET UNITYSDK_OFFSET(0x1A637030)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A6370C0)
+
+namespace BehaviorDesigner::Runtime::Tasks::Unity::UnityTransform
+{
+	inline static constexpr unsigned int Translate_TypeDefinitionIndex = 30422;
+
+	class Translate : public ::BehaviorDesigner::Runtime::Tasks::Action
+	{
+	public:
+		::BehaviorDesigner::Runtime::SharedGameObject* targetGameObject; // 0x58
+		::BehaviorDesigner::Runtime::SharedVector3* translation; // 0x60
+		::UnityEngine::GameObject* prevGameObject; // 0x68
+		::UnityEngine::Transform* targetTransform; // 0x70
+		::UnityEngine::Space relativeTo; // 0x78
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE_ONSTART_OFFSET))(this);
+		}
+
+		::BehaviorDesigner::Runtime::Tasks::TaskStatus OnUpdate()
+		{
+			return ((::BehaviorDesigner::Runtime::Tasks::TaskStatus(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE_ONUPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnReset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE_ONRESET_OFFSET))(this);
+		}
+
+		::System::Void __base_OnReset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE___BASE_ONRESET_OFFSET))(this);
+		}
+
+		::System::Void __base_OnStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE___BASE_ONSTART_OFFSET))(this);
+		}
+
+		::BehaviorDesigner::Runtime::Tasks::TaskStatus __base_OnUpdate()
+		{
+			return ((::BehaviorDesigner::Runtime::Tasks::TaskStatus(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYTRANSFORM_TRANSLATE___BASE_ONUPDATE_OFFSET))(this);
+		}
+	};
+}

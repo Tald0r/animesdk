@@ -4,13 +4,15 @@
 #include "unitysdk/Newtonsoft/Json/Linq/LineInfoHandling.h"
 #include "unitysdk/System/Object.h"
 
-#define NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS_GET_COMMENTHANDLING_OFFSET UNITYSDK_OFFSET(0x15DB9370)
-#define NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS_GET_LINEINFOHANDLING_OFFSET UNITYSDK_OFFSET(0x15DB9380)
-#define NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x15DB9390)
+#define NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS_GET_COMMENTHANDLING_OFFSET UNITYSDK_OFFSET(0x1B137D80)
+#define NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS_GET_LINEINFOHANDLING_OFFSET UNITYSDK_OFFSET(0x1B137E00)
+#define NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS_SET_COMMENTHANDLING_OFFSET UNITYSDK_OFFSET(0x1B137D90)
+#define NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS_SET_LINEINFOHANDLING_OFFSET UNITYSDK_OFFSET(0x1B137E10)
+#define NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x1B137E80)
 
 namespace Newtonsoft::Json::Linq
 {
-	inline static constexpr unsigned int JsonLoadSettings_TypeDefinitionIndex = 8227;
+	inline static constexpr unsigned int JsonLoadSettings_TypeDefinitionIndex = 7047;
 
 	class JsonLoadSettings : public ::System::Object
 	{
@@ -28,9 +30,19 @@ namespace Newtonsoft::Json::Linq
 			return ((::Newtonsoft::Json::Linq::CommentHandling(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS_GET_COMMENTHANDLING_OFFSET))(this);
 		}
 
+		::System::Void set_CommentHandling(::Newtonsoft::Json::Linq::CommentHandling value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::Linq::CommentHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS_SET_COMMENTHANDLING_OFFSET))(this, value);
+		}
+
 		::Newtonsoft::Json::Linq::LineInfoHandling get_LineInfoHandling()
 		{
 			return ((::Newtonsoft::Json::Linq::LineInfoHandling(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS_GET_LINEINFOHANDLING_OFFSET))(this);
+		}
+
+		::System::Void set_LineInfoHandling(::Newtonsoft::Json::Linq::LineInfoHandling value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Newtonsoft::Json::Linq::LineInfoHandling))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_LINQ_JSONLOADSETTINGS_SET_LINEINFOHANDLING_OFFSET))(this, value);
 		}
 	};
 }

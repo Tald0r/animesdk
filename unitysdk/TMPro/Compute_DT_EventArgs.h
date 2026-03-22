@@ -4,12 +4,12 @@
 #include "unitysdk/TMPro/Compute_DistanceTransform_EventTypes.h"
 #include "unitysdk/UnityEngine/Color.h"
 
-#define TMPRO_COMPUTE_DT_EVENTARGS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x180ED370)
-#define TMPRO_COMPUTE_DT_EVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x180ED360)
+#define TMPRO_COMPUTE_DT_EVENTARGS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x199325D0)
+#define TMPRO_COMPUTE_DT_EVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x199325C0)
 
 namespace TMPro
 {
-	inline static constexpr unsigned int Compute_DT_EventArgs_TypeDefinitionIndex = 33424;
+	inline static constexpr unsigned int Compute_DT_EventArgs_TypeDefinitionIndex = 36045;
 
 	class Compute_DT_EventArgs : public ::System::Object
 	{

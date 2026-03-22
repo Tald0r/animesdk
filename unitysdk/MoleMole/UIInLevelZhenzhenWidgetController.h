@@ -1,0 +1,161 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIInLevelLightUpPointsItemControllerBase.h"
+
+class Class_2_2155427CF5AF2A4A_2;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace UnityEngine { class Animation; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_DOREFRESHITEMSHOWSTATE_OFFSET UNITYSDK_OFFSET(0xC87CCA0)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ISBREATHING_OFFSET UNITYSDK_OFFSET(0xC87C9C0)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ITEMBREATH_OFFSET UNITYSDK_OFFSET(0xC87C8F0)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ITEMFADEIN_OFFSET UNITYSDK_OFFSET(0xC87C860)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ITEMFADEOUT_OFFSET UNITYSDK_OFFSET(0xC87C8B0)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ITEMLOOP_OFFSET UNITYSDK_OFFSET(0xC87C8A0)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_LIGHTUPANIM_OFFSET UNITYSDK_OFFSET(0xC87C980)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_LIGHTUPGO_OFFSET UNITYSDK_OFFSET(0xC87C950)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_MAXANIM_OFFSET UNITYSDK_OFFSET(0xC87C9B0)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_POINTMAXFADEIN_OFFSET UNITYSDK_OFFSET(0xC87C930)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_POINTMAXFADEOUT_OFFSET UNITYSDK_OFFSET(0xC87C940)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ROOTANIM_OFFSET UNITYSDK_OFFSET(0xC87AB80)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC87CB20)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC87CBC0)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC87C9D0)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC87CA70)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_SET_ISBREATHING_OFFSET UNITYSDK_OFFSET(0xC87BFB0)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC87CDD0)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER___BASE_DOREFRESHITEMSHOWSTATE_OFFSET UNITYSDK_OFFSET(0xC87CF60)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC87CF70)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC87CE10)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC87CE90)
+#define MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC87CEF0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelZhenzhenWidgetController_TypeDefinitionIndex = 77004;
+
+	class UIInLevelZhenzhenWidgetController : public ::MoleMole::UIInLevelLightUpPointsItemControllerBase
+	{
+	public:
+		::Class_2_2155427CF5AF2A4A_2* _view; // 0x2B0
+		::System::Boolean _isBreathing; // 0x2B8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::String* get_ItemFadeIn()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ITEMFADEIN_OFFSET))(this);
+		}
+
+		::System::String* get_ItemLoop()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ITEMLOOP_OFFSET))(this);
+		}
+
+		::System::String* get_ItemFadeOut()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ITEMFADEOUT_OFFSET))(this);
+		}
+
+		::System::String* get_ItemBreath()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ITEMBREATH_OFFSET))(this);
+		}
+
+		::System::String* get_PointMaxFadeIn()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_POINTMAXFADEIN_OFFSET))(this);
+		}
+
+		::System::String* get_PointMaxFadeOut()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_POINTMAXFADEOUT_OFFSET))(this);
+		}
+
+		::UnityEngine::GameObject* get_LightUpGo()
+		{
+			return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_LIGHTUPGO_OFFSET))(this);
+		}
+
+		::UnityEngine::Animation* get_LightUpAnim()
+		{
+			return ((::UnityEngine::Animation*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_LIGHTUPANIM_OFFSET))(this);
+		}
+
+		::UnityEngine::Animation* get_MaxAnim()
+		{
+			return ((::UnityEngine::Animation*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_MAXANIM_OFFSET))(this);
+		}
+
+		::UnityEngine::Animation* get_RootAnim()
+		{
+			return ((::UnityEngine::Animation*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ROOTANIM_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsBreathing()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_GET_ISBREATHING_OFFSET))(this);
+		}
+
+		::System::Void set_IsBreathing(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_SET_ISBREATHING_OFFSET))(this, value);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void DoRefreshItemShowState(::System::Boolean isLightUp, ::System::Boolean forceRefresh)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER_DOREFRESHITEMSHOWSTATE_OFFSET))(this, isLightUp, forceRefresh);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_DoRefreshItemShowState(::System::Boolean P0, ::System::Boolean P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER___BASE_DOREFRESHITEMSHOWSTATE_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELZHENZHENWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+	};
+}

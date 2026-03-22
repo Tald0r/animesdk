@@ -8,16 +8,16 @@
 
 namespace UnityEngine::Timeline { class ITimeControl; }
 
-#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x18192090)
-#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1819BAE0)
-#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_ONBEHAVIOURPAUSE_OFFSET UNITYSDK_OFFSET(0x1819BDE0)
-#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x1819BD20)
-#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_PREPAREFRAME_OFFSET UNITYSDK_OFFSET(0x1819BC40)
-#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1819BEA0)
+#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x1A73F380)
+#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1A73F4D0)
+#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_ONBEHAVIOURPAUSE_OFFSET UNITYSDK_OFFSET(0x1A73F6D0)
+#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x1A73F5F0)
+#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_PREPAREFRAME_OFFSET UNITYSDK_OFFSET(0x1A73F4E0)
+#define UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A73F7B0)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TimeControlPlayable_TypeDefinitionIndex = 29017;
+	inline static constexpr unsigned int TimeControlPlayable_TypeDefinitionIndex = 29366;
 
 	class TimeControlPlayable : public ::UnityEngine::Playables::PlayableBehaviour
 	{
@@ -35,9 +35,9 @@ namespace UnityEngine::Timeline
 			return ((::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::TimeControlPlayable*>(*)(::UnityEngine::Playables::PlayableGraph, ::UnityEngine::Timeline::ITimeControl*))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_CREATE_OFFSET))(graph, timeControl);
 		}
 
-		::System::Void Initialize(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::TimeControlPlayable*> playable, ::UnityEngine::Timeline::ITimeControl* timeControl)
+		::System::Void Initialize(::UnityEngine::Timeline::ITimeControl* timeControl)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::TimeControlPlayable*>, ::UnityEngine::Timeline::ITimeControl*))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_INITIALIZE_OFFSET))(this, graph, playable, timeControl);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Timeline::ITimeControl*))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMECONTROLPLAYABLE_INITIALIZE_OFFSET))(this, timeControl);
 		}
 
 		::System::Void PrepareFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData info)

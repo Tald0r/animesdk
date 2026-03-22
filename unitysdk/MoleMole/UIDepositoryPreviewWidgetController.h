@@ -1,0 +1,326 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/UIDepositoryPageController_FocusChangeType.h"
+#include "unitysdk/MoleMole/UIDepositoryPreviewWidgetController_ButtonState.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_1_320D5F9D31519B3D;
+class Class_1_A7674D82B2D081D4;
+class Class_1_BDEEA5009A8A636E;
+class Class_2_1B1C05BC0A38A2D5_4;
+class Class_2_208CC9941471731A_240;
+class Class_2_208CC9941471731A_911;
+class Class_2_604149159BD159AA;
+class Class_3_1F0B390B50451710;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIDepositoryJumpBtnTextItemWidgetController; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_CANITEMBEUSED_OFFSET UNITYSDK_OFFSET(0xBF5EC90)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_CHECKOUTOFDATE_OFFSET UNITYSDK_OFFSET(0xBF5ED50)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_COLLECTJUMPBTNS_OFFSET UNITYSDK_OFFSET(0xBF63100)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_DOSCROLLEND_OFFSET UNITYSDK_OFFSET(0xBF63540)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_GETEQUIPLEVELINFO_OFFSET UNITYSDK_OFFSET(0xBF5D520)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_GETWEAPONLEVELINFO_OFFSET UNITYSDK_OFFSET(0xBF5E260)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_GET_CURITEMDATA_OFFSET UNITYSDK_OFFSET(0xBF5CE50)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_INITDELANDLOCKBTN_OFFSET UNITYSDK_OFFSET(0xBF62060)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_INITMAINPROPERTY_OFFSET UNITYSDK_OFFSET(0xBF622D0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_INITRANDOMPROPERTY_OFFSET UNITYSDK_OFFSET(0xBF62870)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_INITSTARS_OFFSET UNITYSDK_OFFSET(0xBF62E10)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xBF62240)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_NEEDSHOWITEMLIMIT_OFFSET UNITYSDK_OFFSET(0xBF60300)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONANYITEMCHANGED_OFFSET UNITYSDK_OFFSET(0xBF63830)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONAUTORECOVERYITEMGETHANDLE_OFFSET UNITYSDK_OFFSET(0xBF63960)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBF63690)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONDEPOFOCUSCHANGE_OFFSET UNITYSDK_OFFSET(0xBF633E0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBF63B50)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBF632E0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBF635D0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHAVATAR_OFFSET UNITYSDK_OFFSET(0xBF61540)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHBTNSTATE_OFFSET UNITYSDK_OFFSET(0xBF61350)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHDELANDLOCKBTN_OFFSET UNITYSDK_OFFSET(0xBF5D2F0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHEQUIPMAINPROP_OFFSET UNITYSDK_OFFSET(0xBF617C0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHEQUIPRANDOMPROP_OFFSET UNITYSDK_OFFSET(0xBF619C0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHEQUIPSUITINFO_OFFSET UNITYSDK_OFFSET(0xBF61CA0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHITEMNUM_OFFSET UNITYSDK_OFFSET(0xBF5F7F0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHITEMRARITY_OFFSET UNITYSDK_OFFSET(0xBF5FA90)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHJUMPITEMS_OFFSET UNITYSDK_OFFSET(0xBF5EF90)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHPREVIEW_OFFSET UNITYSDK_OFFSET(0xBF5CF00)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHSPECIALINFO_OFFSET UNITYSDK_OFFSET(0xBF5FB90)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHTIMER_OFFSET UNITYSDK_OFFSET(0xBF5F560)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHVIEWCOMMON_OFFSET UNITYSDK_OFFSET(0xBF5D610)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHVIEWFOREQUIP_OFFSET UNITYSDK_OFFSET(0xBF5DE80)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHVIEWFORITEMDESC_OFFSET UNITYSDK_OFFSET(0xBF5F740)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHVIEWFORITEM_OFFSET UNITYSDK_OFFSET(0xBF5EBF0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHVIEWFORWEAPON_OFFSET UNITYSDK_OFFSET(0xBF5E350)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REGISTEREVENTS_OFFSET UNITYSDK_OFFSET(0xBF63740)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_SETFOCUSENABLE_OFFSET UNITYSDK_OFFSET(0xBF5CE60)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_SETITEMLEFTTIME_OFFSET UNITYSDK_OFFSET(0xBF60E10)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_UNREGISTEREVENTS_OFFSET UNITYSDK_OFFSET(0xBF63AE0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBF63CD0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBF63D30)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBF63DA0)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBF63E20)
+#define MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBF63E80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIDepositoryPreviewWidgetController_TypeDefinitionIndex = 63309;
+
+	class UIDepositoryPreviewWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::Int32 MAX_BASE_PROP_COUNT = 0x1; // 0x0
+		// static const ::System::Int32 MAX_PROPERTY_COUNT = 0x4; // 0x0
+		::Class_1_0D6706375CDAAE8C* m_curItemData; // 0x2A0
+		::System::Boolean m_isPreview; // 0x2A8
+		::System::Boolean m_bShowJump; // 0x2A9
+		::System::Int32 m_jumpItemCount; // 0x2AC
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* m_jumpBtns; // 0x2B0
+		::System::Collections::Generic::List_1<::MoleMole::UIDepositoryJumpBtnTextItemWidgetController*>* m_jumpBtnCtrls; // 0x2B8
+		::MoleMole::UIDepositoryPreviewWidgetController_ButtonState m_buttonState; // 0x2C0
+		::Class_2_604149159BD159AA* activityModel; // 0x2C8
+		::Foundation::Coroutine::CoroutineHandle _coroutine; // 0x2D0
+		::Class_1_A7674D82B2D081D4* _gamepadEquipStateProxy; // 0x2D8
+		::System::Collections::Generic::List_1<::Class_1_BDEEA5009A8A636E*>* _equipBasePropertyItems; // 0x2E0
+		::System::Collections::Generic::List_1<::Class_1_BDEEA5009A8A636E*>* _equipRandomPropertyItems; // 0x2E8
+		::System::Collections::Generic::List_1<::Class_1_320D5F9D31519B3D*>* _equipStar; // 0x2F0
+		::Class_2_1B1C05BC0A38A2D5_4* _view; // 0x2F8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_1_0D6706375CDAAE8C* get_CurItemData()
+		{
+			return ((::Class_1_0D6706375CDAAE8C*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_GET_CURITEMDATA_OFFSET))(this);
+		}
+
+		::System::Void SetFocusEnable(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_SETFOCUSENABLE_OFFSET))(this, state);
+		}
+
+		::System::Void RefreshPreview(::Class_1_0D6706375CDAAE8C* itemData, ::System::Boolean needScrollToTop, ::System::Boolean isPreview, ::System::Boolean bShowJump, ::System::Boolean bHideBtns)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::System::Boolean, ::System::Boolean, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHPREVIEW_OFFSET))(this, itemData, needScrollToTop, isPreview, bShowJump, bHideBtns);
+		}
+
+		::System::Void GetEquipLevelInfo(::Class_1_0D6706375CDAAE8C* itemData, ::System::UInt32& curLevel, ::System::UInt32& maxLevel)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::System::UInt32&, ::System::UInt32&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_GETEQUIPLEVELINFO_OFFSET))(this, itemData, curLevel, maxLevel);
+		}
+
+		::System::Void GetWeaponLevelInfo(::Class_1_0D6706375CDAAE8C* itemData, ::System::UInt32& curLevel, ::System::UInt32& maxLevel)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::System::UInt32&, ::System::UInt32&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_GETWEAPONLEVELINFO_OFFSET))(this, itemData, curLevel, maxLevel);
+		}
+
+		::System::Boolean CanItemBeUsed(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_CANITEMBEUSED_OFFSET))(this, itemData);
+		}
+
+		::System::Void RefreshJumpItems(::Class_1_0D6706375CDAAE8C* itemData, ::MoleMole::UIDepositoryPageController_FocusChangeType focusChangeType)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::MoleMole::UIDepositoryPageController_FocusChangeType))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHJUMPITEMS_OFFSET))(this, itemData, focusChangeType);
+		}
+
+		::System::Void RefreshViewForItem(::Class_1_0D6706375CDAAE8C* itemData, ::Class_2_208CC9941471731A_240* itemConfig)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::Class_2_208CC9941471731A_240*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHVIEWFORITEM_OFFSET))(this, itemData, itemConfig);
+		}
+
+		::System::Void RefreshSpecialInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHSPECIALINFO_OFFSET))(this);
+		}
+
+		::System::Void RefreshItemNum()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHITEMNUM_OFFSET))(this);
+		}
+
+		::System::Boolean CheckOutofDate(::System::Int32 itemID)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_CHECKOUTOFDATE_OFFSET))(this, itemID);
+		}
+
+		::System::Void RefreshItemRarity(::Class_2_208CC9941471731A_240* itemConfig)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_240*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHITEMRARITY_OFFSET))(this, itemConfig);
+		}
+
+		::System::Void RefreshViewForItemDesc(::Class_2_208CC9941471731A_240* itemConfig)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_240*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHVIEWFORITEMDESC_OFFSET))(this, itemConfig);
+		}
+
+		::System::Boolean NeedShowItemLimit(::System::UInt64& endTime, ::System::String*& title)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::UInt64&, ::System::String*&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_NEEDSHOWITEMLIMIT_OFFSET))(this, endTime, title);
+		}
+
+		::System::Void RefreshTimer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHTIMER_OFFSET))(this);
+		}
+
+		::System::Void SetItemLeftTime(::System::UInt64 endTime, ::System::String* title)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt64, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_SETITEMLEFTTIME_OFFSET))(this, endTime, title);
+		}
+
+		::System::Void RefreshBtnState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHBTNSTATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshViewCommon(::Class_1_0D6706375CDAAE8C* itemData, ::Class_2_208CC9941471731A_240* itemConfig, ::System::UInt32 curLevel, ::System::UInt32 maxLevel, ::System::UInt32 avatarUID, ::System::Boolean bShowJump)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::Class_2_208CC9941471731A_240*, ::System::UInt32, ::System::UInt32, ::System::UInt32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHVIEWCOMMON_OFFSET))(this, itemData, itemConfig, curLevel, maxLevel, avatarUID, bShowJump);
+		}
+
+		::System::Void RefreshAvatar(::System::UInt32 avatarUID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHAVATAR_OFFSET))(this, avatarUID);
+		}
+
+		::System::Void RefreshViewForEquip(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHVIEWFOREQUIP_OFFSET))(this, itemData);
+		}
+
+		::System::Void RefreshEquipMainProp(::Class_3_1F0B390B50451710* equipserverinfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_1F0B390B50451710*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHEQUIPMAINPROP_OFFSET))(this, equipserverinfo);
+		}
+
+		::System::Void RefreshEquipRandomProp(::Class_3_1F0B390B50451710* equipserverinfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_1F0B390B50451710*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHEQUIPRANDOMPROP_OFFSET))(this, equipserverinfo);
+		}
+
+		::System::Void RefreshEquipSuitInfo(::Class_2_208CC9941471731A_911* equipConfig)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_911*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHEQUIPSUITINFO_OFFSET))(this, equipConfig);
+		}
+
+		::System::Void InitDelAndLockBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_INITDELANDLOCKBTN_OFFSET))(this);
+		}
+
+		::System::Void RefreshDelAndLockBtn(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHDELANDLOCKBTN_OFFSET))(this, itemData);
+		}
+
+		::System::Void RefreshViewForWeapon(::Class_1_0D6706375CDAAE8C* itemData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REFRESHVIEWFORWEAPON_OFFSET))(this, itemData);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void CollectJumpBtns()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_COLLECTJUMPBTNS_OFFSET))(this);
+		}
+
+		::System::Void InitMainProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_INITMAINPROPERTY_OFFSET))(this);
+		}
+
+		::System::Void InitRandomProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_INITRANDOMPROPERTY_OFFSET))(this);
+		}
+
+		::System::Void InitStars()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_INITSTARS_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnDepoFocusChange(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONDEPOFOCUSCHANGE_OFFSET))(this, args);
+		}
+
+		::System::Void DoScrollEnd(::System::Boolean hasAnim)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_DOSCROLLEND_OFFSET))(this, hasAnim);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void RegisterEvents()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_REGISTEREVENTS_OFFSET))(this);
+		}
+
+		::System::Void OnAnyItemChanged(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONANYITEMCHANGED_OFFSET))(this, args);
+		}
+
+		::System::Void OnAutoRecoveryItemGetHandle(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONAUTORECOVERYITEMGETHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void UnRegisterEvents()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_UNREGISTEREVENTS_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDEPOSITORYPREVIEWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

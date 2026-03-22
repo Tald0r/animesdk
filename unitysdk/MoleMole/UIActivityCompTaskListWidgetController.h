@@ -1,0 +1,118 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_79AE422BA06F6D26;
+namespace MoleMole { class UIActivityCompTaskListContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace UnityEngine::UI::Extension { class UITimeWidget; }
+
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONCLICKSHOWTASKLIST_OFFSET UNITYSDK_OFFSET(0xD3B5F90)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD3B5530)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONDOSHOWTASKLIST_OFFSET UNITYSDK_OFFSET(0xD3B6070)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONOPENTASKLIST_OFFSET UNITYSDK_OFFSET(0xD3B5260)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD3B55D0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD3B5E40)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD3B5090)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD3B5130)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONUNLOCKTIMEEND_OFFSET UNITYSDK_OFFSET(0xD3B5F20)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_REFRESHACTIVITYQUESTSTATE_OFFSET UNITYSDK_OFFSET(0xD3B56A0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD3B61A0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD3B61D0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD3B6240)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD3B62B0)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD3B6330)
+#define MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD3B6390)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityCompTaskListWidgetController_TypeDefinitionIndex = 47129;
+
+	class UIActivityCompTaskListWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26* _view; // 0x2A0
+		::MoleMole::UIActivityCompTaskListContext* compContext; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnOpenTaskList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONOPENTASKLIST_OFFSET))(this);
+		}
+
+		::System::Void RefreshActivityQuestState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_REFRESHACTIVITYQUESTSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnUnlockTimeEnd(::UnityEngine::UI::Extension::UITimeWidget* timeWidget)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UITimeWidget*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONUNLOCKTIMEEND_OFFSET))(this, timeWidget);
+		}
+
+		::System::Void OnClickShowTaskList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONCLICKSHOWTASKLIST_OFFSET))(this);
+		}
+
+		::System::Void OnDoShowTaskList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER_ONDOSHOWTASKLIST_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMPTASKLISTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

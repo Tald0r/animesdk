@@ -1,0 +1,109 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_1685EC66FBD28897;
+class Class_2_BA784AB3E6BD2F2F;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIWishlistTargetAvatarPopupWidgetController; }
+namespace System { class Object; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C59CF0)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0x8C59E70)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x8C5A570)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C59D90)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C59A20)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_REFRESHGAMEPADLIST_OFFSET UNITYSDK_OFFSET(0x8C59F90)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8C5B720)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER__ONSCROLLITEMUPDATE_G__SETEMPTY_8_0_OFFSET UNITYSDK_OFFSET(0x8C5B6C0)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER__ONUIINIT_B__4_0_OFFSET UNITYSDK_OFFSET(0x8C5B730)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C5B8D0)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0x8C5B940)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x8C5B9A0)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C5BA20)
+#define MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C5BAA0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHandBookWeekendBossItemWidgetController_TypeDefinitionIndex = 45273;
+
+	class UIHandBookWeekendBossItemWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* _rewards; // 0x2D0
+		::Class_2_BA784AB3E6BD2F2F* _view; // 0x2D8
+		::MoleMole::UIWishlistTargetAvatarPopupWidgetController* _wishlistTargetAvatarPopupWidgetCtrl; // 0x2E0
+		::System::Int32 targetID; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void RefreshGamepadList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER_REFRESHGAMEPADLIST_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__4_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER__ONUIINIT_B__4_0_OFFSET))(this);
+		}
+
+		::System::Void _OnScrollItemUpdate_g__SetEmpty_8_0(::System::Boolean empty)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER__ONSCROLLITEMUPDATE_G__SETEMPTY_8_0_OFFSET))(this, empty);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKWEEKENDBOSSITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

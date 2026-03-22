@@ -5,10 +5,15 @@
 
 namespace UnityEngine { class CharacterController; }
 namespace UnityEngine { class Collider; }
+namespace UnityEngine { class GameObject; }
+
+#define UNITYENGINE_CONTROLLERCOLLIDERHIT_GET_GAMEOBJECT_OFFSET UNITYSDK_OFFSET(0x1A755C30)
+#define UNITYENGINE_CONTROLLERCOLLIDERHIT_GET_POINT_OFFSET UNITYSDK_OFFSET(0x1A755C50)
+#define UNITYENGINE_CONTROLLERCOLLIDERHIT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A755C70)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ControllerColliderHit_TypeDefinitionIndex = 5105;
+	inline static constexpr unsigned int ControllerColliderHit_TypeDefinitionIndex = 7649;
 
 	class ControllerColliderHit : public ::System::Object
 	{
@@ -20,5 +25,20 @@ namespace UnityEngine
 		::UnityEngine::Vector3 m_MoveDirection; // 0x38
 		::System::Single m_MoveLength; // 0x44
 		::System::Int32 m_Push; // 0x48
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTROLLERCOLLIDERHIT__CTOR_OFFSET))(this);
+		}
+
+		::UnityEngine::GameObject* get_gameObject()
+		{
+			return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTROLLERCOLLIDERHIT_GET_GAMEOBJECT_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 get_point()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_CONTROLLERCOLLIDERHIT_GET_POINT_OFFSET))(this);
+		}
 	};
 }

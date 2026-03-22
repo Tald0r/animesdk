@@ -19,72 +19,79 @@ namespace System::Runtime::Serialization { class SerializationInfo; }
 namespace System::Threading { class ManualResetEvent; }
 namespace System::Threading { class WaitCallback; }
 
-#define SYSTEM_NET_FILEWEBREQUEST_ABORT_OFFSET UNITYSDK_OFFSET(0x17EBC350)
-#define SYSTEM_NET_FILEWEBREQUEST_BEGINGETREQUESTSTREAM_OFFSET UNITYSDK_OFFSET(0x17EBA450)
-#define SYSTEM_NET_FILEWEBREQUEST_BEGINGETRESPONSE_OFFSET UNITYSDK_OFFSET(0x17EBA920)
-#define SYSTEM_NET_FILEWEBREQUEST_CANGETREQUESTSTREAM_OFFSET UNITYSDK_OFFSET(0x17EBA7F0)
-#define SYSTEM_NET_FILEWEBREQUEST_ENDGETREQUESTSTREAM_OFFSET UNITYSDK_OFFSET(0x17EBACA0)
-#define SYSTEM_NET_FILEWEBREQUEST_ENDGETRESPONSE_OFFSET UNITYSDK_OFFSET(0x17EBAEA0)
-#define SYSTEM_NET_FILEWEBREQUEST_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x17EB9E80)
-#define SYSTEM_NET_FILEWEBREQUEST_GETREQUESTSTREAMCALLBACK_OFFSET UNITYSDK_OFFSET(0x17EBB7E0)
-#define SYSTEM_NET_FILEWEBREQUEST_GETREQUESTSTREAM_OFFSET UNITYSDK_OFFSET(0x17EBB090)
-#define SYSTEM_NET_FILEWEBREQUEST_GETRESPONSECALLBACK_OFFSET UNITYSDK_OFFSET(0x17EBBB40)
-#define SYSTEM_NET_FILEWEBREQUEST_GETRESPONSE_OFFSET UNITYSDK_OFFSET(0x17EBB460)
-#define SYSTEM_NET_FILEWEBREQUEST_GET_ABORTED_OFFSET UNITYSDK_OFFSET(0x17EBA1D0)
-#define SYSTEM_NET_FILEWEBREQUEST_GET_CONTENTLENGTH_OFFSET UNITYSDK_OFFSET(0x17EBA1E0)
-#define SYSTEM_NET_FILEWEBREQUEST_GET_CREDENTIALS_OFFSET UNITYSDK_OFFSET(0x17EBA2B0)
-#define SYSTEM_NET_FILEWEBREQUEST_GET_HEADERS_OFFSET UNITYSDK_OFFSET(0x17EBA2D0)
-#define SYSTEM_NET_FILEWEBREQUEST_GET_METHOD_OFFSET UNITYSDK_OFFSET(0x17EBA2E0)
-#define SYSTEM_NET_FILEWEBREQUEST_GET_PROXY_OFFSET UNITYSDK_OFFSET(0x17EBA390)
-#define SYSTEM_NET_FILEWEBREQUEST_GET_REQUESTURI_OFFSET UNITYSDK_OFFSET(0x17EBA440)
-#define SYSTEM_NET_FILEWEBREQUEST_GET_TIMEOUT_OFFSET UNITYSDK_OFFSET(0x17EBA3B0)
-#define SYSTEM_NET_FILEWEBREQUEST_SET_CONTENTLENGTH_OFFSET UNITYSDK_OFFSET(0x17EBA1F0)
-#define SYSTEM_NET_FILEWEBREQUEST_SET_CONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x17EBA270)
-#define SYSTEM_NET_FILEWEBREQUEST_SET_CREDENTIALS_OFFSET UNITYSDK_OFFSET(0x17EBA2C0)
-#define SYSTEM_NET_FILEWEBREQUEST_SET_METHOD_OFFSET UNITYSDK_OFFSET(0x17EBA2F0)
-#define SYSTEM_NET_FILEWEBREQUEST_SET_PROXY_OFFSET UNITYSDK_OFFSET(0x17EBA3A0)
-#define SYSTEM_NET_FILEWEBREQUEST_SET_TIMEOUT_OFFSET UNITYSDK_OFFSET(0x17EBA3C0)
-#define SYSTEM_NET_FILEWEBREQUEST_SYSTEM_RUNTIME_SERIALIZATION_ISERIALIZABLE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x17EB9E60)
-#define SYSTEM_NET_FILEWEBREQUEST_UNBLOCKREADER_OFFSET UNITYSDK_OFFSET(0x17EBC240)
-#define SYSTEM_NET_FILEWEBREQUEST__CCTOR_OFFSET UNITYSDK_OFFSET(0x17EBC7D0)
-#define SYSTEM_NET_FILEWEBREQUEST__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17EB9C30)
-#define SYSTEM_NET_FILEWEBREQUEST__CTOR_OFFSET UNITYSDK_OFFSET(0x17EB9A70)
+#define SYSTEM_NET_FILEWEBREQUEST_ABORT_OFFSET UNITYSDK_OFFSET(0x18D77F40)
+#define SYSTEM_NET_FILEWEBREQUEST_BEGINGETREQUESTSTREAM_OFFSET UNITYSDK_OFFSET(0x18D769B0)
+#define SYSTEM_NET_FILEWEBREQUEST_BEGINGETRESPONSE_OFFSET UNITYSDK_OFFSET(0x18D76D40)
+#define SYSTEM_NET_FILEWEBREQUEST_CANGETREQUESTSTREAM_OFFSET UNITYSDK_OFFSET(0x18D76CC0)
+#define SYSTEM_NET_FILEWEBREQUEST_ENDGETREQUESTSTREAM_OFFSET UNITYSDK_OFFSET(0x18D76F60)
+#define SYSTEM_NET_FILEWEBREQUEST_ENDGETRESPONSE_OFFSET UNITYSDK_OFFSET(0x18D77110)
+#define SYSTEM_NET_FILEWEBREQUEST_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x18D76390)
+#define SYSTEM_NET_FILEWEBREQUEST_GETREQUESTSTREAMCALLBACK_OFFSET UNITYSDK_OFFSET(0x18D77850)
+#define SYSTEM_NET_FILEWEBREQUEST_GETREQUESTSTREAM_OFFSET UNITYSDK_OFFSET(0x18D772C0)
+#define SYSTEM_NET_FILEWEBREQUEST_GETRESPONSECALLBACK_OFFSET UNITYSDK_OFFSET(0x18D77AD0)
+#define SYSTEM_NET_FILEWEBREQUEST_GETRESPONSE_OFFSET UNITYSDK_OFFSET(0x18D77580)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_ABORTED_OFFSET UNITYSDK_OFFSET(0x18D766C0)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_CONNECTIONGROUPNAME_OFFSET UNITYSDK_OFFSET(0x18D766D0)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_CONTENTLENGTH_OFFSET UNITYSDK_OFFSET(0x18D766F0)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_CONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x18D76780)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_CREDENTIALS_OFFSET UNITYSDK_OFFSET(0x18D767F0)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_HEADERS_OFFSET UNITYSDK_OFFSET(0x18D76810)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_METHOD_OFFSET UNITYSDK_OFFSET(0x18D76820)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_PREAUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x18D768D0)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_PROXY_OFFSET UNITYSDK_OFFSET(0x18D768F0)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_REQUESTURI_OFFSET UNITYSDK_OFFSET(0x18D769A0)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_TIMEOUT_OFFSET UNITYSDK_OFFSET(0x18D76910)
+#define SYSTEM_NET_FILEWEBREQUEST_GET_USEDEFAULTCREDENTIALS_OFFSET UNITYSDK_OFFSET(0x18D77EA0)
+#define SYSTEM_NET_FILEWEBREQUEST_SET_CONNECTIONGROUPNAME_OFFSET UNITYSDK_OFFSET(0x18D766E0)
+#define SYSTEM_NET_FILEWEBREQUEST_SET_CONTENTLENGTH_OFFSET UNITYSDK_OFFSET(0x18D76700)
+#define SYSTEM_NET_FILEWEBREQUEST_SET_CONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x18D767B0)
+#define SYSTEM_NET_FILEWEBREQUEST_SET_CREDENTIALS_OFFSET UNITYSDK_OFFSET(0x18D76800)
+#define SYSTEM_NET_FILEWEBREQUEST_SET_METHOD_OFFSET UNITYSDK_OFFSET(0x18D76830)
+#define SYSTEM_NET_FILEWEBREQUEST_SET_PREAUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x18D768E0)
+#define SYSTEM_NET_FILEWEBREQUEST_SET_PROXY_OFFSET UNITYSDK_OFFSET(0x18D76900)
+#define SYSTEM_NET_FILEWEBREQUEST_SET_TIMEOUT_OFFSET UNITYSDK_OFFSET(0x18D76920)
+#define SYSTEM_NET_FILEWEBREQUEST_SET_USEDEFAULTCREDENTIALS_OFFSET UNITYSDK_OFFSET(0x18D77EF0)
+#define SYSTEM_NET_FILEWEBREQUEST_SYSTEM_RUNTIME_SERIALIZATION_ISERIALIZABLE_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x18D76370)
+#define SYSTEM_NET_FILEWEBREQUEST_UNBLOCKREADER_OFFSET UNITYSDK_OFFSET(0x18D77DB0)
+#define SYSTEM_NET_FILEWEBREQUEST__CCTOR_OFFSET UNITYSDK_OFFSET(0x18D78340)
+#define SYSTEM_NET_FILEWEBREQUEST__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18D76140)
+#define SYSTEM_NET_FILEWEBREQUEST__CTOR_OFFSET UNITYSDK_OFFSET(0x18D75F80)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int FileWebRequest_TypeDefinitionIndex = 2788;
+	inline static constexpr unsigned int FileWebRequest_TypeDefinitionIndex = 3428;
 
 	class FileWebRequest : public ::System::Net::WebRequest
 	{
 	public:
-		static ::System::Threading::WaitCallback** StaticGet_s_GetResponseCallback()
-		{
-			return (::System::Threading::WaitCallback**)Il2CppClass::FromTypeDefinitionIndex(FileWebRequest_TypeDefinitionIndex)->GetStaticField(0x17550);
-		}
 		static ::System::Threading::WaitCallback** StaticGet_s_GetRequestStreamCallback()
 		{
-			return (::System::Threading::WaitCallback**)Il2CppClass::FromTypeDefinitionIndex(FileWebRequest_TypeDefinitionIndex)->GetStaticField(0x17558);
+			return (::System::Threading::WaitCallback**)Il2CppClass::FromTypeDefinitionIndex(FileWebRequest_TypeDefinitionIndex)->GetStaticField(0x2E70);
 		}
-		::System::Net::WebHeaderCollection* m_headers; // 0x38
-		::System::Uri* m_uri; // 0x40
-		::System::String* m_method; // 0x48
-		::System::Net::ICredentials* m_credentials; // 0x50
-		::System::String* m_connectionGroupName; // 0x58
-		::System::Threading::ManualResetEvent* m_readerEvent; // 0x60
-		::System::Net::WebResponse* m_response; // 0x68
+		static ::System::Threading::WaitCallback** StaticGet_s_GetResponseCallback()
+		{
+			return (::System::Threading::WaitCallback**)Il2CppClass::FromTypeDefinitionIndex(FileWebRequest_TypeDefinitionIndex)->GetStaticField(0x2E78);
+		}
+		::System::String* m_method; // 0x38
+		::System::Net::WebHeaderCollection* m_headers; // 0x40
+		::System::String* m_connectionGroupName; // 0x48
+		::System::Net::LazyAsyncResult* m_WriteAResult; // 0x50
+		::System::Uri* m_uri; // 0x58
+		::System::Net::IWebProxy* m_proxy; // 0x60
+		::System::Net::LazyAsyncResult* m_ReadAResult; // 0x68
 		::System::IO::Stream* m_stream; // 0x70
-		::System::Net::IWebProxy* m_proxy; // 0x78
-		::System::Net::LazyAsyncResult* m_ReadAResult; // 0x80
-		::System::Net::LazyAsyncResult* m_WriteAResult; // 0x88
-		::System::Int64 m_contentLength; // 0x90
-		::System::Int32 m_timeout; // 0x98
-		::System::Int32 m_Aborted; // 0x9C
-		::System::Boolean m_writing; // 0xA0
-		::System::Boolean m_writePending; // 0xA1
-		::System::Boolean m_preauthenticate; // 0xA2
-		::System::Boolean m_syncHint; // 0xA3
-		::System::Boolean m_readPending; // 0xA4
-		::System::IO::FileAccess m_fileAccess; // 0xA8
+		::System::Threading::ManualResetEvent* m_readerEvent; // 0x78
+		::System::Net::ICredentials* m_credentials; // 0x80
+		::System::Net::WebResponse* m_response; // 0x88
+		::System::Boolean m_readPending; // 0x90
+		::System::Boolean m_writePending; // 0x91
+		::System::Boolean m_writing; // 0x92
+		::System::Int32 m_Aborted; // 0x94
+		::System::Int64 m_contentLength; // 0x98
+		::System::IO::FileAccess m_fileAccess; // 0xA0
+		::System::Int32 m_timeout; // 0xA4
+		::System::Boolean m_preauthenticate; // 0xA8
+		::System::Boolean m_syncHint; // 0xA9
 
 		::System::Void _ctor(::System::Uri* uri)
 		{
@@ -116,6 +123,16 @@ namespace System::Net
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_GET_ABORTED_OFFSET))(this);
 		}
 
+		::System::String* get_ConnectionGroupName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_GET_CONNECTIONGROUPNAME_OFFSET))(this);
+		}
+
+		::System::Void set_ConnectionGroupName(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_SET_CONNECTIONGROUPNAME_OFFSET))(this, value);
+		}
+
 		::System::Int64 get_ContentLength()
 		{
 			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_GET_CONTENTLENGTH_OFFSET))(this);
@@ -124,6 +141,11 @@ namespace System::Net
 		::System::Void set_ContentLength(::System::Int64 value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_SET_CONTENTLENGTH_OFFSET))(this, value);
+		}
+
+		::System::String* get_ContentType()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_GET_CONTENTTYPE_OFFSET))(this);
 		}
 
 		::System::Void set_ContentType(::System::String* value)
@@ -154,6 +176,16 @@ namespace System::Net
 		::System::Void set_Method(::System::String* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_SET_METHOD_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_PreAuthenticate()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_GET_PREAUTHENTICATE_OFFSET))(this);
+		}
+
+		::System::Void set_PreAuthenticate(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_SET_PREAUTHENTICATE_OFFSET))(this, value);
 		}
 
 		::System::Net::IWebProxy* get_Proxy()
@@ -229,6 +261,16 @@ namespace System::Net
 		::System::Void UnblockReader()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_UNBLOCKREADER_OFFSET))(this);
+		}
+
+		::System::Boolean get_UseDefaultCredentials()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_GET_USEDEFAULTCREDENTIALS_OFFSET))(this);
+		}
+
+		::System::Void set_UseDefaultCredentials(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_NET_FILEWEBREQUEST_SET_USEDEFAULTCREDENTIALS_OFFSET))(this, value);
 		}
 
 		::System::Void Abort()

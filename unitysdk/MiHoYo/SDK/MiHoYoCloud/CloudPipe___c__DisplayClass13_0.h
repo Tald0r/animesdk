@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MIHOYO_SDK_MIHOYOCLOUD_CLOUDPIPE___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1585CBB0)
-#define MIHOYO_SDK_MIHOYOCLOUD_CLOUDPIPE___C__DISPLAYCLASS13_0__ONGETPIPEDATA_B__0_OFFSET UNITYSDK_OFFSET(0x1585D680)
+#define MIHOYO_SDK_MIHOYOCLOUD_CLOUDPIPE___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x17AC0A60)
+#define MIHOYO_SDK_MIHOYOCLOUD_CLOUDPIPE___C__DISPLAYCLASS13_0__ONGETPIPEDATA_B__0_OFFSET UNITYSDK_OFFSET(0x17AC0A70)
 
 namespace MiHoYo::SDK::MiHoYoCloud
 {
-	inline static constexpr unsigned int CloudPipe___c__DisplayClass13_0_TypeDefinitionIndex = 7623;
+	inline static constexpr unsigned int CloudPipe___c__DisplayClass13_0_TypeDefinitionIndex = 18764;
 
 	class CloudPipe___c__DisplayClass13_0 : public ::System::Object
 	{

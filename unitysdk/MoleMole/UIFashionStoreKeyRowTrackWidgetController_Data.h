@@ -1,0 +1,65 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_6C100683412065D7_Class_0_16E7307DCC43CB2C;
+class Class_2_6C100683412065D7_Class_2_9092C869224DF735;
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_ADD_OFFSET UNITYSDK_OFFSET(0xBEF9C10)
+#define MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_GET_FASHIONSTOREDATA_OFFSET UNITYSDK_OFFSET(0xBEF97C0)
+#define MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_GET_NOTES_OFFSET UNITYSDK_OFFSET(0xBEF97A0)
+#define MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_RESET_OFFSET UNITYSDK_OFFSET(0xBEF97E0)
+#define MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_SET_FASHIONSTOREDATA_OFFSET UNITYSDK_OFFSET(0xBEF97D0)
+#define MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_SET_NOTES_OFFSET UNITYSDK_OFFSET(0xBEF97B0)
+#define MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0xBEF9ED0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIFashionStoreKeyRowTrackWidgetController_Data_TypeDefinitionIndex = 59719;
+
+	class UIFashionStoreKeyRowTrackWidgetController_Data : public ::System::Object
+	{
+	public:
+		::System::Collections::Generic::List_1<::Class_2_6C100683412065D7_Class_2_9092C869224DF735*>* _Notes_k__BackingField; // 0x10
+		::Class_2_6C100683412065D7_Class_0_16E7307DCC43CB2C* _FashionStoreData_k__BackingField; // 0x18
+		::System::Action_1<::Class_2_6C100683412065D7_Class_2_9092C869224DF735*>* OnTrackItemClick; // 0x20
+		::System::Int32 BarIndex; // 0x28
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA__CTOR_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_2_6C100683412065D7_Class_2_9092C869224DF735*>* get_Notes()
+		{
+			return ((::System::Collections::Generic::List_1<::Class_2_6C100683412065D7_Class_2_9092C869224DF735*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_GET_NOTES_OFFSET))(this);
+		}
+
+		::System::Void set_Notes(::System::Collections::Generic::List_1<::Class_2_6C100683412065D7_Class_2_9092C869224DF735*>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_2_6C100683412065D7_Class_2_9092C869224DF735*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_SET_NOTES_OFFSET))(this, value);
+		}
+
+		::Class_2_6C100683412065D7_Class_0_16E7307DCC43CB2C* get_FashionStoreData()
+		{
+			return ((::Class_2_6C100683412065D7_Class_0_16E7307DCC43CB2C*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_GET_FASHIONSTOREDATA_OFFSET))(this);
+		}
+
+		::System::Void set_FashionStoreData(::Class_2_6C100683412065D7_Class_0_16E7307DCC43CB2C* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_6C100683412065D7_Class_0_16E7307DCC43CB2C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_SET_FASHIONSTOREDATA_OFFSET))(this, value);
+		}
+
+		::System::Void Reset(::System::Int32 barIndex, ::System::Int32 dataCount)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_RESET_OFFSET))(this, barIndex, dataCount);
+		}
+
+		::System::Void Add(::Class_2_6C100683412065D7_Class_2_9092C869224DF735* addData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_6C100683412065D7_Class_2_9092C869224DF735*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIFASHIONSTOREKEYROWTRACKWIDGETCONTROLLER_DATA_ADD_OFFSET))(this, addData);
+		}
+	};
+}

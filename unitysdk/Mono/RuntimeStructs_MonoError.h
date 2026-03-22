@@ -4,7 +4,7 @@
 
 namespace Mono
 {
-	inline static constexpr unsigned int RuntimeStructs_MonoError_TypeDefinitionIndex = 18;
+	inline static constexpr unsigned int RuntimeStructs_MonoError_TypeDefinitionIndex = 21;
 
 	struct alignas(8) RuntimeStructs_MonoError
 	{

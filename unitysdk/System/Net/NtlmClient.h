@@ -8,14 +8,15 @@ namespace System::Net { class IAuthenticationModule; }
 namespace System::Net { class ICredentials; }
 namespace System::Net { class WebRequest; }
 
-#define SYSTEM_NET_NTLMCLIENT_AUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x17EE9A00)
-#define SYSTEM_NET_NTLMCLIENT_GET_AUTHENTICATIONTYPE_OFFSET UNITYSDK_OFFSET(0x17EE9B10)
-#define SYSTEM_NET_NTLMCLIENT_PREAUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x17EE9B00)
-#define SYSTEM_NET_NTLMCLIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x17EE99C0)
+#define SYSTEM_NET_NTLMCLIENT_AUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x19FE0B20)
+#define SYSTEM_NET_NTLMCLIENT_GET_AUTHENTICATIONTYPE_OFFSET UNITYSDK_OFFSET(0x19FE0C30)
+#define SYSTEM_NET_NTLMCLIENT_GET_CANPREAUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x19FE0C70)
+#define SYSTEM_NET_NTLMCLIENT_PREAUTHENTICATE_OFFSET UNITYSDK_OFFSET(0x19FE0C20)
+#define SYSTEM_NET_NTLMCLIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x19FE0AE0)
 
 namespace System::Net
 {
-	inline static constexpr unsigned int NtlmClient_TypeDefinitionIndex = 2850;
+	inline static constexpr unsigned int NtlmClient_TypeDefinitionIndex = 3551;
 
 	class NtlmClient : public ::System::Object
 	{
@@ -40,6 +41,11 @@ namespace System::Net
 		::System::String* get_AuthenticationType()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NTLMCLIENT_GET_AUTHENTICATIONTYPE_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanPreAuthenticate()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NTLMCLIENT_GET_CANPREAUTHENTICATE_OFFSET))(this);
 		}
 	};
 }

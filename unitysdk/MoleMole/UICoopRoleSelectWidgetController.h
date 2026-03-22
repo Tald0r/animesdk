@@ -1,0 +1,118 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_66CC8308C1BCC0BB;
+class Class_3_549D51A42F42A5E7;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xBEEA890)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0xBEEAF80)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONCLOSEPOPUPWINDOW_OFFSET UNITYSDK_OFFSET(0xBEEA9F0)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xBEEA900)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0xBEEAD20)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xBEEB120)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBEEAB60)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBEEAE40)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_PROCESSUIAVATAR_OFFSET UNITYSDK_OFFSET(0xBEEB0B0)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_REFRESHSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0xBEEAC60)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBEEB290)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xBEEB2C0)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0xBEEB330)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0xBEEB390)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xBEEB3F0)
+#define MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBEEB460)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICoopRoleSelectWidgetController_TypeDefinitionIndex = 38610;
+
+	class UICoopRoleSelectWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_3_549D51A42F42A5E7* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_66CC8308C1BCC0BB* get__viewModel()
+		{
+			return ((::Class_2_66CC8308C1BCC0BB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void OnClosePopupWindow(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONCLOSEPOPUPWINDOW_OFFSET))(this, args);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void RefreshScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_REFRESHSCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void LateUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_LATEUPDATE_OFFSET))(this);
+		}
+
+		::System::Void ProcessUIAvatar(::System::Int32 avatarID, ::System::Int32 showTypeIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_PROCESSUIAVATAR_OFFSET))(this, avatarID, showTypeIndex);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICOOPROLESELECTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+	};
+}

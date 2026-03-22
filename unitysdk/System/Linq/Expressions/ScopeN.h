@@ -2,22 +2,24 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Linq/Expressions/ScopeExpression.h"
 
+namespace System::Collections::Generic { template <typename T> class ICollection_1; }
 namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
 namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 namespace System::Linq::Expressions { class BlockExpression; }
 namespace System::Linq::Expressions { class Expression; }
 namespace System::Linq::Expressions { class ParameterExpression; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN_GETEXPRESSION_OFFSET UNITYSDK_OFFSET(0x17D02450)
-#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN_GETORMAKEEXPRESSIONS_OFFSET UNITYSDK_OFFSET(0x17D02610)
-#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN_GET_BODY_OFFSET UNITYSDK_OFFSET(0x17D02440)
-#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN_GET_EXPRESSIONCOUNT_OFFSET UNITYSDK_OFFSET(0x17D02530)
-#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN_REWRITE_OFFSET UNITYSDK_OFFSET(0x17D02650)
-#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN__CTOR_OFFSET UNITYSDK_OFFSET(0x17D023D0)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN_GETEXPRESSION_OFFSET UNITYSDK_OFFSET(0x1AA77A60)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN_GETORMAKEEXPRESSIONS_OFFSET UNITYSDK_OFFSET(0x1AA77C20)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN_GET_BODY_OFFSET UNITYSDK_OFFSET(0x1AA77A50)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN_GET_EXPRESSIONCOUNT_OFFSET UNITYSDK_OFFSET(0x1AA77B40)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN_REWRITE_OFFSET UNITYSDK_OFFSET(0x1AA77C60)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN_SAMEEXPRESSIONS_OFFSET UNITYSDK_OFFSET(0x1AA77A00)
+#define SYSTEM_LINQ_EXPRESSIONS_SCOPEN__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA77990)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int ScopeN_TypeDefinitionIndex = 3176;
+	inline static constexpr unsigned int ScopeN_TypeDefinitionIndex = 4439;
 
 	class ScopeN : public ::System::Linq::Expressions::ScopeExpression
 	{
@@ -27,6 +29,11 @@ namespace System::Linq::Expressions
 		::System::Void _ctor(::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::ParameterExpression*>* variables, ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>* body)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::ParameterExpression*>*, ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_SCOPEN__CTOR_OFFSET))(this, variables, body);
+		}
+
+		::System::Boolean SameExpressions(::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::Expression*>* expressions)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Collections::Generic::ICollection_1<::System::Linq::Expressions::Expression*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_SCOPEN_SAMEEXPRESSIONS_OFFSET))(this, expressions);
 		}
 
 		::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>* get_Body()

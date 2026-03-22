@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Security/Cryptography/HashAlgorithm.h"
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_SHA512_CREATE_OFFSET UNITYSDK_OFFSET(0x15B2B680)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_SHA512__CTOR_OFFSET UNITYSDK_OFFSET(0x15B2B670)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_SHA512_CREATE_OFFSET UNITYSDK_OFFSET(0x19523BF0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_SHA512__CTOR_OFFSET UNITYSDK_OFFSET(0x19523BE0)
 
 namespace System::Security::Cryptography
 {
-	inline static constexpr unsigned int SHA512_TypeDefinitionIndex = 1046;
+	inline static constexpr unsigned int SHA512_TypeDefinitionIndex = 1101;
 
 	class SHA512 : public ::System::Security::Cryptography::HashAlgorithm
 	{

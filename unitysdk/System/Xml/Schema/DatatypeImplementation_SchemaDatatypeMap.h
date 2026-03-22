@@ -5,22 +5,20 @@
 namespace System { class String; }
 namespace System::Xml::Schema { class DatatypeImplementation; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP_COMPARETO_OFFSET UNITYSDK_OFFSET(0x17D67080)
-#define SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP_GET_NAME_OFFSET UNITYSDK_OFFSET(0x17D67060)
-#define SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP_GET_PARENTINDEX_OFFSET UNITYSDK_OFFSET(0x17D67070)
-#define SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP_OP_EXPLICIT_OFFSET UNITYSDK_OFFSET(0x17D67040)
-#define SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17D656F0)
-#define SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x17D656E0)
+#define SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP_COMPARETO_OFFSET UNITYSDK_OFFSET(0x19ED45C0)
+#define SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP_OP_EXPLICIT_OFFSET UNITYSDK_OFFSET(0x19ED45A0)
+#define SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19ED4590)
+#define SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x19ED4580)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int DatatypeImplementation_SchemaDatatypeMap_TypeDefinitionIndex = 2073;
+	inline static constexpr unsigned int DatatypeImplementation_SchemaDatatypeMap_TypeDefinitionIndex = 1988;
 
 	class DatatypeImplementation_SchemaDatatypeMap : public ::System::Object
 	{
 	public:
-		::System::Xml::Schema::DatatypeImplementation* type; // 0x10
-		::System::String* name; // 0x18
+		::System::String* name; // 0x10
+		::System::Xml::Schema::DatatypeImplementation* type; // 0x18
 		::System::Int32 parentIndex; // 0x20
 
 		::System::Void _ctor(::System::String* name, ::System::Xml::Schema::DatatypeImplementation* type)
@@ -36,16 +34,6 @@ namespace System::Xml::Schema
 		static ::System::Xml::Schema::DatatypeImplementation* op_Explicit(::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap* sdm)
 		{
 			return ((::System::Xml::Schema::DatatypeImplementation*(*)(::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP_OP_EXPLICIT_OFFSET))(sdm);
-		}
-
-		::System::String* get_Name()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP_GET_NAME_OFFSET))(this);
-		}
-
-		::System::Int32 get_ParentIndex()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPEIMPLEMENTATION_SCHEMADATATYPEMAP_GET_PARENTINDEX_OFFSET))(this);
 		}
 
 		::System::Int32 CompareTo(::System::Object* obj)

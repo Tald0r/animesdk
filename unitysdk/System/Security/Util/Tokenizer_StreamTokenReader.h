@@ -4,13 +4,12 @@
 
 namespace System::IO { class StreamReader; }
 
-#define SYSTEM_SECURITY_UTIL_TOKENIZER_STREAMTOKENREADER_GET_NUMCHARENCOUNTERED_OFFSET UNITYSDK_OFFSET(0x15B3E160)
-#define SYSTEM_SECURITY_UTIL_TOKENIZER_STREAMTOKENREADER_READ_OFFSET UNITYSDK_OFFSET(0x15B3E010)
-#define SYSTEM_SECURITY_UTIL_TOKENIZER_STREAMTOKENREADER__CTOR_OFFSET UNITYSDK_OFFSET(0x15B3D960)
+#define SYSTEM_SECURITY_UTIL_TOKENIZER_STREAMTOKENREADER_READ_OFFSET UNITYSDK_OFFSET(0x19896380)
+#define SYSTEM_SECURITY_UTIL_TOKENIZER_STREAMTOKENREADER__CTOR_OFFSET UNITYSDK_OFFSET(0x19896370)
 
 namespace System::Security::Util
 {
-	inline static constexpr unsigned int Tokenizer_StreamTokenReader_TypeDefinitionIndex = 967;
+	inline static constexpr unsigned int Tokenizer_StreamTokenReader_TypeDefinitionIndex = 1011;
 
 	class Tokenizer_StreamTokenReader : public ::System::Object
 	{
@@ -26,11 +25,6 @@ namespace System::Security::Util
 		::System::Int32 Read()
 		{
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_UTIL_TOKENIZER_STREAMTOKENREADER_READ_OFFSET))(this);
-		}
-
-		::System::Int32 get_NumCharEncountered()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_UTIL_TOKENIZER_STREAMTOKENREADER_GET_NUMCHARENCOUNTERED_OFFSET))(this);
 		}
 	};
 }

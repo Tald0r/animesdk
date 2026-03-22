@@ -1,29 +1,42 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Mono/Security/Interface/CipherAlgorithmType.h"
 #include "unitysdk/Mono/Security/Interface/CipherSuiteCode.h"
+#include "unitysdk/Mono/Security/Interface/ExchangeAlgorithmType.h"
+#include "unitysdk/Mono/Security/Interface/HashAlgorithmType.h"
 #include "unitysdk/Mono/Security/Interface/TlsProtocols.h"
 #include "unitysdk/System/Object.h"
 
 namespace System { class String; }
 
-#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_CIPHERSUITECODE_OFFSET UNITYSDK_OFFSET(0x15A8DD20)
-#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_PROTOCOLVERSION_OFFSET UNITYSDK_OFFSET(0x15A8DD40)
-#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_CIPHERSUITECODE_OFFSET UNITYSDK_OFFSET(0x15A8DD30)
-#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_PEERDOMAINNAME_OFFSET UNITYSDK_OFFSET(0x15A8DD60)
-#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_PROTOCOLVERSION_OFFSET UNITYSDK_OFFSET(0x15A8DD50)
-#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15A8DD70)
-#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x15A8DE10)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_CIPHERALGORITHMTYPE_OFFSET UNITYSDK_OFFSET(0x1AA9C0F0)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_CIPHERSUITECODE_OFFSET UNITYSDK_OFFSET(0x1AA9C0B0)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_EXCHANGEALGORITHMTYPE_OFFSET UNITYSDK_OFFSET(0x1AA9C130)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_HASHALGORITHMTYPE_OFFSET UNITYSDK_OFFSET(0x1AA9C110)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_PEERDOMAINNAME_OFFSET UNITYSDK_OFFSET(0x1AA9C150)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_PROTOCOLVERSION_OFFSET UNITYSDK_OFFSET(0x1AA9C0D0)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_CIPHERALGORITHMTYPE_OFFSET UNITYSDK_OFFSET(0x1AA9C100)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_CIPHERSUITECODE_OFFSET UNITYSDK_OFFSET(0x1AA9C0C0)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_EXCHANGEALGORITHMTYPE_OFFSET UNITYSDK_OFFSET(0x1AA9C140)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_HASHALGORITHMTYPE_OFFSET UNITYSDK_OFFSET(0x1AA9C120)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_PEERDOMAINNAME_OFFSET UNITYSDK_OFFSET(0x1AA9C160)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_PROTOCOLVERSION_OFFSET UNITYSDK_OFFSET(0x1AA9C0E0)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1AA9C170)
+#define MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA9C210)
 
 namespace Mono::Security::Interface
 {
-	inline static constexpr unsigned int MonoTlsConnectionInfo_TypeDefinitionIndex = 2273;
+	inline static constexpr unsigned int MonoTlsConnectionInfo_TypeDefinitionIndex = 2437;
 
 	class MonoTlsConnectionInfo : public ::System::Object
 	{
 	public:
 		::System::String* _PeerDomainName_k__BackingField; // 0x10
-		::Mono::Security::Interface::CipherSuiteCode _CipherSuiteCode_k__BackingField; // 0x18
-		::Mono::Security::Interface::TlsProtocols _ProtocolVersion_k__BackingField; // 0x1C
+		::Mono::Security::Interface::CipherAlgorithmType _CipherAlgorithmType_k__BackingField; // 0x18
+		::Mono::Security::Interface::HashAlgorithmType _HashAlgorithmType_k__BackingField; // 0x1C
+		::Mono::Security::Interface::ExchangeAlgorithmType _ExchangeAlgorithmType_k__BackingField; // 0x20
+		::Mono::Security::Interface::TlsProtocols _ProtocolVersion_k__BackingField; // 0x24
+		::Mono::Security::Interface::CipherSuiteCode _CipherSuiteCode_k__BackingField; // 0x28
 
 		::System::Void _ctor()
 		{
@@ -48,6 +61,41 @@ namespace Mono::Security::Interface
 		::System::Void set_ProtocolVersion(::Mono::Security::Interface::TlsProtocols value)
 		{
 			return ((::System::Void(*)(::PVOID, ::Mono::Security::Interface::TlsProtocols))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_PROTOCOLVERSION_OFFSET))(this, value);
+		}
+
+		::Mono::Security::Interface::CipherAlgorithmType get_CipherAlgorithmType()
+		{
+			return ((::Mono::Security::Interface::CipherAlgorithmType(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_CIPHERALGORITHMTYPE_OFFSET))(this);
+		}
+
+		::System::Void set_CipherAlgorithmType(::Mono::Security::Interface::CipherAlgorithmType value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Mono::Security::Interface::CipherAlgorithmType))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_CIPHERALGORITHMTYPE_OFFSET))(this, value);
+		}
+
+		::Mono::Security::Interface::HashAlgorithmType get_HashAlgorithmType()
+		{
+			return ((::Mono::Security::Interface::HashAlgorithmType(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_HASHALGORITHMTYPE_OFFSET))(this);
+		}
+
+		::System::Void set_HashAlgorithmType(::Mono::Security::Interface::HashAlgorithmType value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Mono::Security::Interface::HashAlgorithmType))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_HASHALGORITHMTYPE_OFFSET))(this, value);
+		}
+
+		::Mono::Security::Interface::ExchangeAlgorithmType get_ExchangeAlgorithmType()
+		{
+			return ((::Mono::Security::Interface::ExchangeAlgorithmType(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_EXCHANGEALGORITHMTYPE_OFFSET))(this);
+		}
+
+		::System::Void set_ExchangeAlgorithmType(::Mono::Security::Interface::ExchangeAlgorithmType value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Mono::Security::Interface::ExchangeAlgorithmType))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_SET_EXCHANGEALGORITHMTYPE_OFFSET))(this, value);
+		}
+
+		::System::String* get_PeerDomainName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_INTERFACE_MONOTLSCONNECTIONINFO_GET_PEERDOMAINNAME_OFFSET))(this);
 		}
 
 		::System::Void set_PeerDomainName(::System::String* value)

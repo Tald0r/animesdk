@@ -1,0 +1,62 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_5_2169ABC757988FED;
+namespace MoleMole { class UIHollowChessboard3DModelController; }
+namespace MoleMole::HollowChessboard { class HollowEntity; }
+
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_CLEAR_OFFSET UNITYSDK_OFFSET(0x8A32E10)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_GETTARGETCTRL_OFFSET UNITYSDK_OFFSET(0x8A32BF0)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_GET_TARGETENTITYID_OFFSET UNITYSDK_OFFSET(0x8A32DF0)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_GET_TARGETENTITY_OFFSET UNITYSDK_OFFSET(0x8A329F0)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_ISVALID_OFFSET UNITYSDK_OFFSET(0x8A32B80)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_SET_TARGETENTITYID_OFFSET UNITYSDK_OFFSET(0x8A32E00)
+#define MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS__CTOR_OFFSET UNITYSDK_OFFSET(0x8A32E80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowMissionGuidePointWidgetController_TargetParams_TypeDefinitionIndex = 59292;
+
+	class UIHollowMissionGuidePointWidgetController_TargetParams : public ::System::Object
+	{
+	public:
+		// static const ::System::UInt32 InvalidEntityID = 0x0; // 0x0
+		::System::UInt32 _TargetEntityID_k__BackingField; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS__CTOR_OFFSET))(this);
+		}
+
+		::MoleMole::HollowChessboard::HollowEntity* get_TargetEntity()
+		{
+			return ((::MoleMole::HollowChessboard::HollowEntity*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_GET_TARGETENTITY_OFFSET))(this);
+		}
+
+		::Class_5_2169ABC757988FED* GetTargetCtrl(::MoleMole::UIHollowChessboard3DModelController* chessboard3DCtrl)
+		{
+			return ((::Class_5_2169ABC757988FED*(*)(::PVOID, ::MoleMole::UIHollowChessboard3DModelController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_GETTARGETCTRL_OFFSET))(this, chessboard3DCtrl);
+		}
+
+		::System::UInt32 get_TargetEntityID()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_GET_TARGETENTITYID_OFFSET))(this);
+		}
+
+		::System::Void set_TargetEntityID(::System::UInt32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_SET_TARGETENTITYID_OFFSET))(this, value);
+		}
+
+		::System::Boolean IsValid()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_ISVALID_OFFSET))(this);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWMISSIONGUIDEPOINTWIDGETCONTROLLER_TARGETPARAMS_CLEAR_OFFSET))(this);
+		}
+	};
+}

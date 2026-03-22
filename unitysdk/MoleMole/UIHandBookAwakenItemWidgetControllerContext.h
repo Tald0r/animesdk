@@ -1,0 +1,114 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIControllerContextBase.h"
+
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_JUMPID_OFFSET UNITYSDK_OFFSET(0x7A61720)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_NAME_OFFSET UNITYSDK_OFFSET(0x7A61680)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_PICINDEX_OFFSET UNITYSDK_OFFSET(0x7A61740)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_QUESTGROUPID_OFFSET UNITYSDK_OFFSET(0x7A61700)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_QUESTS_OFFSET UNITYSDK_OFFSET(0x7A616A0)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_REFRESHREMAINTIME_OFFSET UNITYSDK_OFFSET(0x7A616C0)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_SHOWREFRESHREMAINTIME_OFFSET UNITYSDK_OFFSET(0x7A616E0)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_JUMPID_OFFSET UNITYSDK_OFFSET(0x7A61730)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_NAME_OFFSET UNITYSDK_OFFSET(0x7A61690)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_PICINDEX_OFFSET UNITYSDK_OFFSET(0x7A61750)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_QUESTGROUPID_OFFSET UNITYSDK_OFFSET(0x7A61710)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_QUESTS_OFFSET UNITYSDK_OFFSET(0x7A616B0)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_REFRESHREMAINTIME_OFFSET UNITYSDK_OFFSET(0x7A616D0)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_SHOWREFRESHREMAINTIME_OFFSET UNITYSDK_OFFSET(0x7A616F0)
+#define MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7A61760)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHandBookAwakenItemWidgetControllerContext_TypeDefinitionIndex = 58821;
+
+	class UIHandBookAwakenItemWidgetControllerContext : public ::MoleMole::UIControllerContextBase
+	{
+	public:
+		::System::String* _Name_k__BackingField; // 0x28
+		::System::Collections::Generic::List_1<::System::Int32>* _Quests_k__BackingField; // 0x30
+		::System::Boolean _ShowRefreshRemainTime_k__BackingField; // 0x38
+		::System::Int32 _QuestGroupID_k__BackingField; // 0x3C
+		::System::Int32 _JumpID_k__BackingField; // 0x40
+		::System::Int32 _PicIndex_k__BackingField; // 0x44
+		::System::Int32 _RefreshRemainTime_k__BackingField; // 0x48
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT__CTOR_OFFSET))(this);
+		}
+
+		::System::String* get_Name()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_NAME_OFFSET))(this);
+		}
+
+		::System::Void set_Name(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_NAME_OFFSET))(this, value);
+		}
+
+		::System::Collections::Generic::List_1<::System::Int32>* get_Quests()
+		{
+			return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_QUESTS_OFFSET))(this);
+		}
+
+		::System::Void set_Quests(::System::Collections::Generic::List_1<::System::Int32>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_QUESTS_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_RefreshRemainTime()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_REFRESHREMAINTIME_OFFSET))(this);
+		}
+
+		::System::Void set_RefreshRemainTime(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_REFRESHREMAINTIME_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_ShowRefreshRemainTime()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_SHOWREFRESHREMAINTIME_OFFSET))(this);
+		}
+
+		::System::Void set_ShowRefreshRemainTime(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_SHOWREFRESHREMAINTIME_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_QuestGroupID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_QUESTGROUPID_OFFSET))(this);
+		}
+
+		::System::Void set_QuestGroupID(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_QUESTGROUPID_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_JumpID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_JUMPID_OFFSET))(this);
+		}
+
+		::System::Void set_JumpID(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_JUMPID_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_PicIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_GET_PICINDEX_OFFSET))(this);
+		}
+
+		::System::Void set_PicIndex(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKAWAKENITEMWIDGETCONTROLLERCONTEXT_SET_PICINDEX_OFFSET))(this, value);
+		}
+	};
+}

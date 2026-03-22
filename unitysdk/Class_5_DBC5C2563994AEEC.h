@@ -1,0 +1,41 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_4_455124A410922D94.h"
+
+class Class_1_11A58A840528E5B2;
+class Class_1_2EF69FD7F867E7F6;
+class Class_3_8CF9FF81AECEC28C_3;
+namespace MoleMole { class UIHollowMainPageController; }
+
+#define CLASS_5_DBC5C2563994AEEC_METHOD_5_47A94975B0610A2C_OFFSET UNITYSDK_OFFSET(0x7363340)
+#define CLASS_5_DBC5C2563994AEEC_METHOD_5_85377D41FEE05B66_OFFSET UNITYSDK_OFFSET(0x73633B0)
+#define CLASS_5_DBC5C2563994AEEC_METHOD_5_E9A575D18A0748D9_OFFSET UNITYSDK_OFFSET(0x7363620)
+#define CLASS_5_DBC5C2563994AEEC__CTOR_OFFSET UNITYSDK_OFFSET(0x73632A0)
+
+inline static constexpr unsigned int Class_5_DBC5C2563994AEEC_TypeDefinitionIndex = 50952;
+
+class Class_5_DBC5C2563994AEEC : public ::Class_4_455124A410922D94<::Class_3_8CF9FF81AECEC28C_3*>
+{
+public:
+	::MoleMole::UIHollowMainPageController* Field_5_0; // 0x30
+
+	::System::Void _ctor(::Class_1_11A58A840528E5B2* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_11A58A840528E5B2*))((::PBYTE)hIl2Cpp + CLASS_5_DBC5C2563994AEEC__CTOR_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_5_47A94975B0610A2C(::Class_1_2EF69FD7F867E7F6* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_2EF69FD7F867E7F6*))((::PBYTE)hIl2Cpp + CLASS_5_DBC5C2563994AEEC_METHOD_5_47A94975B0610A2C_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_5_85377D41FEE05B66()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_DBC5C2563994AEEC_METHOD_5_85377D41FEE05B66_OFFSET))(this);
+	}
+
+	::System::Void Method_5_E9A575D18A0748D9(::Class_1_2EF69FD7F867E7F6* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_2EF69FD7F867E7F6*))((::PBYTE)hIl2Cpp + CLASS_5_DBC5C2563994AEEC_METHOD_5_E9A575D18A0748D9_OFFSET))(this, a1);
+	}
+};

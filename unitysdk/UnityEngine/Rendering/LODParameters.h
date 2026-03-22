@@ -5,13 +5,18 @@
 
 namespace System { class Object; }
 
-#define UNITYENGINE_RENDERING_LODPARAMETERS_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x2049A20)
-#define UNITYENGINE_RENDERING_LODPARAMETERS_EQUALS_OFFSET UNITYSDK_OFFSET(0x2049960)
-#define UNITYENGINE_RENDERING_LODPARAMETERS_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x2049B40)
+#define UNITYENGINE_RENDERING_LODPARAMETERS_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x8FC3C0)
+#define UNITYENGINE_RENDERING_LODPARAMETERS_EQUALS_OFFSET UNITYSDK_OFFSET(0x8FC300)
+#define UNITYENGINE_RENDERING_LODPARAMETERS_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x8FC4E0)
+#define UNITYENGINE_RENDERING_LODPARAMETERS_SET_CAMERAPIXELHEIGHT_OFFSET UNITYSDK_OFFSET(0x379D90)
+#define UNITYENGINE_RENDERING_LODPARAMETERS_SET_CAMERAPOSITION_OFFSET UNITYSDK_OFFSET(0x3101F0)
+#define UNITYENGINE_RENDERING_LODPARAMETERS_SET_FIELDOFVIEW_OFFSET UNITYSDK_OFFSET(0x3084C0)
+#define UNITYENGINE_RENDERING_LODPARAMETERS_SET_ISORTHOGRAPHIC_OFFSET UNITYSDK_OFFSET(0x8FC2F0)
+#define UNITYENGINE_RENDERING_LODPARAMETERS_SET_ORTHOSIZE_OFFSET UNITYSDK_OFFSET(0x35DA40)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int LODParameters_TypeDefinitionIndex = 4540;
+	inline static constexpr unsigned int LODParameters_TypeDefinitionIndex = 6215;
 
 	struct alignas(4) LODParameters
 	{
@@ -20,6 +25,31 @@ namespace UnityEngine::Rendering
 		::System::Single m_FieldOfView; // 0x20
 		::System::Single m_OrthoSize; // 0x24
 		::System::Int32 m_CameraPixelHeight; // 0x28
+
+		::System::Void set_isOrthographic(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LODPARAMETERS_SET_ISORTHOGRAPHIC_OFFSET))(this, value);
+		}
+
+		::System::Void set_cameraPosition(::UnityEngine::Vector3 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LODPARAMETERS_SET_CAMERAPOSITION_OFFSET))(this, value);
+		}
+
+		::System::Void set_fieldOfView(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LODPARAMETERS_SET_FIELDOFVIEW_OFFSET))(this, value);
+		}
+
+		::System::Void set_orthoSize(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LODPARAMETERS_SET_ORTHOSIZE_OFFSET))(this, value);
+		}
+
+		::System::Void set_cameraPixelHeight(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LODPARAMETERS_SET_CAMERAPIXELHEIGHT_OFFSET))(this, value);
+		}
 
 		::System::Boolean Equals(::UnityEngine::Rendering::LODParameters other)
 		{

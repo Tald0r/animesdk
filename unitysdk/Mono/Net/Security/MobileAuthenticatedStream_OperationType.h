@@ -3,7 +3,7 @@
 
 namespace Mono::Net::Security
 {
-	inline static constexpr unsigned int MobileAuthenticatedStream_OperationType_TypeDefinitionIndex = 2420;
+	inline static constexpr unsigned int MobileAuthenticatedStream_OperationType_TypeDefinitionIndex = 2623;
 
 	enum class MobileAuthenticatedStream_OperationType : ::System::Int32
 	{

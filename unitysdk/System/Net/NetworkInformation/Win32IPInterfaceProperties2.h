@@ -4,22 +4,121 @@
 #include "unitysdk/System/Net/NetworkInformation/Win32_IP_ADAPTER_ADDRESSES.h"
 #include "unitysdk/System/Net/NetworkInformation/Win32_MIB_IFROW.h"
 
-#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2__CTOR_OFFSET UNITYSDK_OFFSET(0x17EE95D0)
+namespace System { class String; }
+namespace System::Net::NetworkInformation { class GatewayIPAddressInformationCollection; }
+namespace System::Net::NetworkInformation { class IPAddressCollection; }
+namespace System::Net::NetworkInformation { class IPAddressInformationCollection; }
+namespace System::Net::NetworkInformation { class IPv4InterfaceProperties; }
+namespace System::Net::NetworkInformation { class IPv6InterfaceProperties; }
+namespace System::Net::NetworkInformation { class MulticastIPAddressInformationCollection; }
+namespace System::Net::NetworkInformation { class UnicastIPAddressInformationCollection; }
+
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GETIPV4PROPERTIES_OFFSET UNITYSDK_OFFSET(0x182465B0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GETIPV6PROPERTIES_OFFSET UNITYSDK_OFFSET(0x18246680)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_ANYCASTADDRESSES_OFFSET UNITYSDK_OFFSET(0x18246750)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_DHCPSERVERADDRESSES_OFFSET UNITYSDK_OFFSET(0x18246950)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_DNSADDRESSES_OFFSET UNITYSDK_OFFSET(0x18246A80)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_DNSSUFFIX_OFFSET UNITYSDK_OFFSET(0x18246AF0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_GATEWAYADDRESSES_OFFSET UNITYSDK_OFFSET(0x18246B00)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_ISDNSENABLED_OFFSET UNITYSDK_OFFSET(0x18246D60)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_ISDYNAMICDNSENABLED_OFFSET UNITYSDK_OFFSET(0x18246D80)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_MULTICASTADDRESSES_OFFSET UNITYSDK_OFFSET(0x18246D90)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_UNICASTADDRESSES_OFFSET UNITYSDK_OFFSET(0x18246FB0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_WINSSERVERSADDRESSES_OFFSET UNITYSDK_OFFSET(0x18247240)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_WIN32FROMANYCAST_OFFSET UNITYSDK_OFFSET(0x18246760)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_WIN32FROMMULTICAST_OFFSET UNITYSDK_OFFSET(0x18246DA0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_WIN32FROMUNICAST_OFFSET UNITYSDK_OFFSET(0x18247060)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2__CTOR_OFFSET UNITYSDK_OFFSET(0x182464F0)
 
 namespace System::Net::NetworkInformation
 {
-	inline static constexpr unsigned int Win32IPInterfaceProperties2_TypeDefinitionIndex = 2922;
+	inline static constexpr unsigned int Win32IPInterfaceProperties2_TypeDefinitionIndex = 3771;
 
 	class Win32IPInterfaceProperties2 : public ::System::Net::NetworkInformation::IPInterfaceProperties
 	{
 	public:
 		::System::Net::NetworkInformation::Win32_MIB_IFROW mib6; // 0x10
-		::System::Net::NetworkInformation::Win32_IP_ADAPTER_ADDRESSES addr; // 0x80
-		::System::Net::NetworkInformation::Win32_MIB_IFROW mib4; // 0x188
+		::System::Net::NetworkInformation::Win32_MIB_IFROW mib4; // 0x80
+		::System::Net::NetworkInformation::Win32_IP_ADAPTER_ADDRESSES addr; // 0xF0
 
 		::System::Void _ctor(::System::Net::NetworkInformation::Win32_IP_ADAPTER_ADDRESSES addr, ::System::Net::NetworkInformation::Win32_MIB_IFROW mib4, ::System::Net::NetworkInformation::Win32_MIB_IFROW mib6)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Net::NetworkInformation::Win32_IP_ADAPTER_ADDRESSES, ::System::Net::NetworkInformation::Win32_MIB_IFROW, ::System::Net::NetworkInformation::Win32_MIB_IFROW))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2__CTOR_OFFSET))(this, addr, mib4, mib6);
+		}
+
+		::System::Net::NetworkInformation::IPv4InterfaceProperties* GetIPv4Properties()
+		{
+			return ((::System::Net::NetworkInformation::IPv4InterfaceProperties*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GETIPV4PROPERTIES_OFFSET))(this);
+		}
+
+		::System::Net::NetworkInformation::IPv6InterfaceProperties* GetIPv6Properties()
+		{
+			return ((::System::Net::NetworkInformation::IPv6InterfaceProperties*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GETIPV6PROPERTIES_OFFSET))(this);
+		}
+
+		::System::Net::NetworkInformation::IPAddressInformationCollection* get_AnycastAddresses()
+		{
+			return ((::System::Net::NetworkInformation::IPAddressInformationCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_ANYCASTADDRESSES_OFFSET))(this);
+		}
+
+		static ::System::Net::NetworkInformation::IPAddressInformationCollection* Win32FromAnycast(::System::IntPtr ptr)
+		{
+			return ((::System::Net::NetworkInformation::IPAddressInformationCollection*(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_WIN32FROMANYCAST_OFFSET))(ptr);
+		}
+
+		::System::Net::NetworkInformation::IPAddressCollection* get_DhcpServerAddresses()
+		{
+			return ((::System::Net::NetworkInformation::IPAddressCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_DHCPSERVERADDRESSES_OFFSET))(this);
+		}
+
+		::System::Net::NetworkInformation::IPAddressCollection* get_DnsAddresses()
+		{
+			return ((::System::Net::NetworkInformation::IPAddressCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_DNSADDRESSES_OFFSET))(this);
+		}
+
+		::System::String* get_DnsSuffix()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_DNSSUFFIX_OFFSET))(this);
+		}
+
+		::System::Net::NetworkInformation::GatewayIPAddressInformationCollection* get_GatewayAddresses()
+		{
+			return ((::System::Net::NetworkInformation::GatewayIPAddressInformationCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_GATEWAYADDRESSES_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsDnsEnabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_ISDNSENABLED_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsDynamicDnsEnabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_ISDYNAMICDNSENABLED_OFFSET))(this);
+		}
+
+		::System::Net::NetworkInformation::MulticastIPAddressInformationCollection* get_MulticastAddresses()
+		{
+			return ((::System::Net::NetworkInformation::MulticastIPAddressInformationCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_MULTICASTADDRESSES_OFFSET))(this);
+		}
+
+		static ::System::Net::NetworkInformation::MulticastIPAddressInformationCollection* Win32FromMulticast(::System::IntPtr ptr)
+		{
+			return ((::System::Net::NetworkInformation::MulticastIPAddressInformationCollection*(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_WIN32FROMMULTICAST_OFFSET))(ptr);
+		}
+
+		::System::Net::NetworkInformation::UnicastIPAddressInformationCollection* get_UnicastAddresses()
+		{
+			return ((::System::Net::NetworkInformation::UnicastIPAddressInformationCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_UNICASTADDRESSES_OFFSET))(this);
+		}
+
+		static ::System::Net::NetworkInformation::UnicastIPAddressInformationCollection* Win32FromUnicast(::System::IntPtr ptr)
+		{
+			return ((::System::Net::NetworkInformation::UnicastIPAddressInformationCollection*(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_WIN32FROMUNICAST_OFFSET))(ptr);
+		}
+
+		::System::Net::NetworkInformation::IPAddressCollection* get_WinsServersAddresses()
+		{
+			return ((::System::Net::NetworkInformation::IPAddressCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPINTERFACEPROPERTIES2_GET_WINSSERVERSADDRESSES_OFFSET))(this);
 		}
 	};
 }

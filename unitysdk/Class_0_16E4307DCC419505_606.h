@@ -1,12 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-class Class_0_16E4307DCC419505_600;
-namespace RPG::Client { class GridFightConsumableInfo_GridFightConsumableItemUseParam; }
-namespace RPG::Client { class GridFightConsumableItemData; }
-namespace System { class String; }
+namespace MoleMole { class UIGeneralTokenContext; }
+namespace MoleMole { class UITokenShowConfig; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_606_TypeDefinitionIndex = 51562;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_606_TypeDefinitionIndex = 61902;
 
 class Class_0_16E4307DCC419505_606
 {

@@ -1,0 +1,145 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_049B9A4D827304A8_1;
+class Class_1_8BABEB2BC6365EFE;
+class Class_2_79AE422BA06F6D26_180;
+class Class_2_A8B97606E71328D6;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_CHECKLISTCOMPARISON_OFFSET UNITYSDK_OFFSET(0xAA0A330)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_CREATEITEMROW_OFFSET UNITYSDK_OFFSET(0xAA0A530)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_CREATEITEMTITLE_OFFSET UNITYSDK_OFFSET(0xAA0A610)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_GETTEMPLATEINDEXFROMDATA_OFFSET UNITYSDK_OFFSET(0xAA0A6F0)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xAA08D20)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAA0A3F0)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONFITTERVALUECHANE_OFFSET UNITYSDK_OFFSET(0xAA09D50)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xAA09080)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA0A490)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAA08D30)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAA08FD0)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_PROCESSTEXTITEMDETAIL_OFFSET UNITYSDK_OFFSET(0xAA09DF0)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_REFRESHITEM_OFFSET UNITYSDK_OFFSET(0xAA09640)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAA0A7C0)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAA0A850)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xAA0A8C0)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA0A8D0)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAA0A8E0)
+#define MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAA0A8F0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralTextItemDetailPopWindowController_TypeDefinitionIndex = 54550;
+
+	class UIGeneralTextItemDetailPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_180* _view; // 0x2F8
+		::Class_2_A8B97606E71328D6* graph; // 0x300
+		::System::Int32 _itemConfigId; // 0x308
+		::System::Collections::Generic::List_1<::System::Int32>* _itemList; // 0x310
+		::Class_1_8BABEB2BC6365EFE* _itemDropDown; // 0x318
+		::System::Collections::Generic::List_1<::Class_1_049B9A4D827304A8_1*>* _checkList; // 0x320
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnFitterValueChane(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONFITTERVALUECHANE_OFFSET))(this, index);
+		}
+
+		::System::Void ProcessTextItemDetail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_PROCESSTEXTITEMDETAIL_OFFSET))(this);
+		}
+
+		::System::Void RefreshItem(::System::Int32 itemConfigId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_REFRESHITEM_OFFSET))(this, itemConfigId);
+		}
+
+		::System::Int32 CheckListComparison(::Class_1_049B9A4D827304A8_1* x, ::Class_1_049B9A4D827304A8_1* y)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_049B9A4D827304A8_1*, ::Class_1_049B9A4D827304A8_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_CHECKLISTCOMPARISON_OFFSET))(this, x, y);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateItemRow(::System::Func_1<::MoleMole::UIControlReference*>* arg)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_CREATEITEMROW_OFFSET))(this, arg);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateItemTitle(::System::Func_1<::MoleMole::UIControlReference*>* arg)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_CREATEITEMTITLE_OFFSET))(this, arg);
+		}
+
+		::System::Int32 GetTemplateIndexFromData(::System::Int32 index)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER_GETTEMPLATEINDEXFROMDATA_OFFSET))(this, index);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALTEXTITEMDETAILPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

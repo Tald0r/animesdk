@@ -1,0 +1,238 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_927FD65E44A20102;
+class Class_2_60638234271CCDB8_116;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole::MiniGame { class HoundMiniGameWorld; }
+namespace MoleMole::MiniGame::TartarusHounds { class MonoHoundRankDetail; }
+namespace MoleMole::MiniGame::TartarusHounds { class MonoSoulHoundGameEndConfig; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Material; }
+
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_FORMATGAMETIME_OFFSET UNITYSDK_OFFSET(0xAE6AA70)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_GETNIKENAMEBYPLAYERIDX_OFFSET UNITYSDK_OFFSET(0xAE6ACD0)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xAE66970)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_INITDOGTEXTURESHEET_OFFSET UNITYSDK_OFFSET(0xAE68530)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_INITRANKDETAIL_OFFSET UNITYSDK_OFFSET(0xAE6A850)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONCLICKINFOBTN_OFFSET UNITYSDK_OFFSET(0xAE6AF60)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAE67500)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xAE67B80)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONLOGICINIT_OFFSET UNITYSDK_OFFSET(0xAE68350)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAE675A0)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAE66980)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAE66BB0)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_PLAYDOGANIMSTATE_OFFSET UNITYSDK_OFFSET(0xAE69FD0)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_PLAYFADEIN_OFFSET UNITYSDK_OFFSET(0xAE67300)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_PLAYFADEOUT_OFFSET UNITYSDK_OFFSET(0xAE682A0)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_REFRESHRETURNIMG_OFFSET UNITYSDK_OFFSET(0xAE66D80)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_REFRESHUIBYGAMETYPE_OFFSET UNITYSDK_OFFSET(0xAE683D0)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_SETPVPDETAILINFO_OFFSET UNITYSDK_OFFSET(0xAE68E00)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_SETSCOREINFO_OFFSET UNITYSDK_OFFSET(0xAE69B80)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_SWITCHACCOUNTNAMEINFO_OFFSET UNITYSDK_OFFSET(0xAE6AD60)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_TICKFADEIN_OFFSET UNITYSDK_OFFSET(0xAE67A20)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_TICKFADEOUT_OFFSET UNITYSDK_OFFSET(0xAE67AC0)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_TRYFADEOUT_OFFSET UNITYSDK_OFFSET(0xAE68210)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xAE67800)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAE6B100)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER__SETPVPDETAILINFO_B__15_0_OFFSET UNITYSDK_OFFSET(0xAE6B120)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER__SETPVPDETAILINFO_B__15_1_OFFSET UNITYSDK_OFFSET(0xAE6B130)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAE6B140)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET UNITYSDK_OFFSET(0xAE6B1B0)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAE6B1E0)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAE6B1F0)
+#define MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAE6B200)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISoulHoundsIIIEndingChildWindowController_TypeDefinitionIndex = 58654;
+
+	class UISoulHoundsIIIEndingChildWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::String* fadeInAnim; // 0x0
+		// static const ::System::String* fadeOutAnim; // 0x0
+		// static const ::System::String* noramlGameFinishStateName; // 0x0
+		// static const ::System::String* beyondGameFinishStateName; // 0x0
+		// static const ::System::String* pvpDogAnimState; // 0x0
+		::Class_2_60638234271CCDB8_116* _view; // 0x2F8
+		::MoleMole::MiniGame::HoundMiniGameWorld* gameWorld; // 0x300
+		::System::Boolean isFadeIn; // 0x308
+		::System::Boolean isFadeOut; // 0x309
+		::System::Boolean isContinue; // 0x30A
+		::System::Single fadeOutWaitTime; // 0x30C
+		::System::Single deltaTime; // 0x310
+		::System::String* currentPlayDogStateName; // 0x318
+		::Class_1_927FD65E44A20102* dogTextureSheet; // 0x320
+		::Class_1_927FD65E44A20102* bestDogTextureSheet; // 0x328
+		::UnityEngine::Material* dogImageMat; // 0x330
+		::UnityEngine::Material* bestDogImgMat; // 0x338
+		::MoleMole::MiniGame::TartarusHounds::MonoSoulHoundGameEndConfig* monoConfig; // 0x340
+		::System::Collections::Generic::List_1<::MoleMole::MiniGame::TartarusHounds::MonoHoundRankDetail*>* rankDetailList; // 0x348
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Boolean OnInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void TryFadeOut(::System::Boolean _isContinue)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_TRYFADEOUT_OFFSET))(this, _isContinue);
+		}
+
+		::System::Void RefreshReturnImg()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_REFRESHRETURNIMG_OFFSET))(this);
+		}
+
+		::System::Void OnLogicInit(::MoleMole::MiniGame::HoundMiniGameWorld* miniGameWorld)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MiniGame::HoundMiniGameWorld*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONLOGICINIT_OFFSET))(this, miniGameWorld);
+		}
+
+		::System::Void RefreshUIByGameType()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_REFRESHUIBYGAMETYPE_OFFSET))(this);
+		}
+
+		::System::Void SetScoreInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_SETSCOREINFO_OFFSET))(this);
+		}
+
+		::System::Void SetPVPDetailInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_SETPVPDETAILINFO_OFFSET))(this);
+		}
+
+		::System::Void SwitchAccountNameInfo(::System::Boolean showConsoleAccountInfo)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_SWITCHACCOUNTNAMEINFO_OFFSET))(this, showConsoleAccountInfo);
+		}
+
+		::System::String* FormatGameTime(::System::UInt64 time)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::UInt64))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_FORMATGAMETIME_OFFSET))(this, time);
+		}
+
+		::System::String* GetNikeNameByPlayerIdx(::System::UInt32 playerIdx)
+		{
+			return ((::System::String*(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_GETNIKENAMEBYPLAYERIDX_OFFSET))(this, playerIdx);
+		}
+
+		::System::Void InitRankDetail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_INITRANKDETAIL_OFFSET))(this);
+		}
+
+		::System::Void PlayFadeIn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_PLAYFADEIN_OFFSET))(this);
+		}
+
+		::System::Void PlayFadeOut(::System::Boolean _isContinue)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_PLAYFADEOUT_OFFSET))(this, _isContinue);
+		}
+
+		::System::Void TickFadeIn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_TICKFADEIN_OFFSET))(this);
+		}
+
+		::System::Void TickFadeOut()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_TICKFADEOUT_OFFSET))(this);
+		}
+
+		::System::Void OnClickInfoBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_ONCLICKINFOBTN_OFFSET))(this);
+		}
+
+		::System::Void InitDogTextureSheet()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_INITDOGTEXTURESHEET_OFFSET))(this);
+		}
+
+		::System::Void PlayDogAnimState(::System::String* animState, ::System::Boolean isBestScore)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER_PLAYDOGANIMSTATE_OFFSET))(this, animState, isBestScore);
+		}
+
+		::System::Void _SetPVPDetailInfo_b__15_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER__SETPVPDETAILINFO_B__15_0_OFFSET))(this);
+		}
+
+		::System::Void _SetPVPDetailInfo_b__15_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER__SETPVPDETAILINFO_B__15_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER___BASE_ONINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOULHOUNDSIIIENDINGCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

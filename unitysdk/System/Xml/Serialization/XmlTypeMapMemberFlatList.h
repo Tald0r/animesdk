@@ -4,13 +4,11 @@
 
 namespace System::Xml::Serialization { class ListMap; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERFLATLIST_GET_LISTMAP_OFFSET UNITYSDK_OFFSET(0x17DD7540)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERFLATLIST_SET_LISTMAP_OFFSET UNITYSDK_OFFSET(0x17DD7550)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERFLATLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x17DB73A0)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERFLATLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x19477DA0)
 
 namespace System::Xml::Serialization
 {
-	inline static constexpr unsigned int XmlTypeMapMemberFlatList_TypeDefinitionIndex = 2035;
+	inline static constexpr unsigned int XmlTypeMapMemberFlatList_TypeDefinitionIndex = 1930;
 
 	class XmlTypeMapMemberFlatList : public ::System::Xml::Serialization::XmlTypeMapMemberExpandable
 	{
@@ -20,16 +18,6 @@ namespace System::Xml::Serialization
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERFLATLIST__CTOR_OFFSET))(this);
-		}
-
-		::System::Xml::Serialization::ListMap* get_ListMap()
-		{
-			return ((::System::Xml::Serialization::ListMap*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERFLATLIST_GET_LISTMAP_OFFSET))(this);
-		}
-
-		::System::Void set_ListMap(::System::Xml::Serialization::ListMap* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Serialization::ListMap*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERFLATLIST_SET_LISTMAP_OFFSET))(this, value);
 		}
 	};
 }

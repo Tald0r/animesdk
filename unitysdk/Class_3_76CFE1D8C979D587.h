@@ -1,0 +1,118 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_F3CFF1AFF7EE7DCD.h"
+
+class Class_1_006985662E7E79E1;
+class Class_2_C5D830057BD6D4F5_1;
+class Class_3_F25445702F7D8455;
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2_ValueCollection; }
+
+#define CLASS_3_76CFE1D8C979D587_GETCLASSID_OFFSET UNITYSDK_OFFSET(0x9DE2890)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_035057163F495EDB_OFFSET UNITYSDK_OFFSET(0x9DE2C20)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_3FD99CDF2CD47B06_OFFSET UNITYSDK_OFFSET(0x9DE3070)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_5B0DB0DB54FA9153_OFFSET UNITYSDK_OFFSET(0x9DE2D90)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_7294966BEF6CFED9_OFFSET UNITYSDK_OFFSET(0x9DE3200)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_A1D8CD775DEC3C21_OFFSET UNITYSDK_OFFSET(0x9DE34A0)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_AC982D5110544B70_OFFSET UNITYSDK_OFFSET(0x9DE35A0)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_C5116ABBCB3CCC62_OFFSET UNITYSDK_OFFSET(0x9DE36C0)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_CCBE730AF445BBD4_OFFSET UNITYSDK_OFFSET(0x9DE3400)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_CFAFA36FA0AED9F9_OFFSET UNITYSDK_OFFSET(0x9DE30F0)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_D31158F0CD6D711E_OFFSET UNITYSDK_OFFSET(0x9DE2B00)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_F5508F33BF8DA2EC_OFFSET UNITYSDK_OFFSET(0x9DE3500)
+#define CLASS_3_76CFE1D8C979D587_METHOD_3_F5599B7DA8E7E53C_OFFSET UNITYSDK_OFFSET(0x9DE2D70)
+#define CLASS_3_76CFE1D8C979D587_ONCLEAN_OFFSET UNITYSDK_OFFSET(0x9DE26D0)
+#define CLASS_3_76CFE1D8C979D587__CCTOR_OFFSET UNITYSDK_OFFSET(0x9DE28F0)
+#define CLASS_3_76CFE1D8C979D587__CTOR_OFFSET UNITYSDK_OFFSET(0x9DE2970)
+
+inline static constexpr unsigned int Class_3_76CFE1D8C979D587_TypeDefinitionIndex = 45235;
+
+class Class_3_76CFE1D8C979D587 : public ::Class_2_F3CFF1AFF7EE7DCD
+{
+public:
+	// static const ::System::Int32 Field_3_3 = 0x54; // 0x0
+	::System::Collections::Generic::Dictionary_2<::System::String*, ::Class_3_F25445702F7D8455*>* Field_3_0; // 0x48
+	::System::Collections::Generic::Dictionary_2<::System::String*, ::Class_1_006985662E7E79E1*>* Field_3_2; // 0x50
+	::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_3_F25445702F7D8455*>* Field_3_1; // 0x58
+
+	static ::System::Void _cctor()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587__CCTOR_OFFSET))();
+	}
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587__CTOR_OFFSET))(this);
+	}
+
+	::System::Void OnClean()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_ONCLEAN_OFFSET))(this);
+	}
+
+	::System::Int32 GetClassID()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_GETCLASSID_OFFSET))(this);
+	}
+
+	::Class_1_006985662E7E79E1* Method_3_D31158F0CD6D711E(::System::String* a1)
+	{
+		return ((::Class_1_006985662E7E79E1*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_D31158F0CD6D711E_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_035057163F495EDB(::System::String* a1, ::Class_2_C5D830057BD6D4F5_1* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*, ::Class_2_C5D830057BD6D4F5_1*))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_035057163F495EDB_OFFSET))(this, a1, a2);
+	}
+
+	::System::Int32 Method_3_F5599B7DA8E7E53C()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_F5599B7DA8E7E53C_OFFSET))(this);
+	}
+
+	::System::Void Method_3_5B0DB0DB54FA9153(::Class_3_F25445702F7D8455* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_3_F25445702F7D8455*))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_5B0DB0DB54FA9153_OFFSET))(this, a1);
+	}
+
+	::Class_3_F25445702F7D8455* Method_3_3FD99CDF2CD47B06(::System::String* a1)
+	{
+		return ((::Class_3_F25445702F7D8455*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_3FD99CDF2CD47B06_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_7294966BEF6CFED9(::System::String* a1, ::Class_2_C5D830057BD6D4F5_1* a2, ::System::Single a3, ::System::Single a4)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*, ::Class_2_C5D830057BD6D4F5_1*, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_7294966BEF6CFED9_OFFSET))(this, a1, a2, a3, a4);
+	}
+
+	static ::Class_3_76CFE1D8C979D587* Method_3_CCBE730AF445BBD4()
+	{
+		return ((::Class_3_76CFE1D8C979D587*(*)())((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_CCBE730AF445BBD4_OFFSET))();
+	}
+
+	::System::Int32 Method_3_A1D8CD775DEC3C21()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_A1D8CD775DEC3C21_OFFSET))(this);
+	}
+
+	::System::Collections::Generic::Dictionary_2_ValueCollection<::System::Int32, ::Class_3_F25445702F7D8455*>* Method_3_F5508F33BF8DA2EC()
+	{
+		return ((::System::Collections::Generic::Dictionary_2_ValueCollection<::System::Int32, ::Class_3_F25445702F7D8455*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_F5508F33BF8DA2EC_OFFSET))(this);
+	}
+
+	::Class_3_F25445702F7D8455* Method_3_AC982D5110544B70(::System::String* a1)
+	{
+		return ((::Class_3_F25445702F7D8455*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_AC982D5110544B70_OFFSET))(this, a1);
+	}
+
+	::Class_3_F25445702F7D8455* Method_3_CFAFA36FA0AED9F9(::System::Int32 a1)
+	{
+		return ((::Class_3_F25445702F7D8455*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_CFAFA36FA0AED9F9_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_C5116ABBCB3CCC62(::Class_3_F25445702F7D8455* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_3_F25445702F7D8455*))((::PBYTE)hIl2Cpp + CLASS_3_76CFE1D8C979D587_METHOD_3_C5116ABBCB3CCC62_OFFSET))(this, a1);
+	}
+};

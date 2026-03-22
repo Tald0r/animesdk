@@ -1,8 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_61_TypeDefinitionIndex = 31403;
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
+inline static constexpr unsigned int Class_0_16E4307DCC419505_61_TypeDefinitionIndex = 24407;
+
+template <typename TVertex, typename TEdge>
 class Class_0_16E4307DCC419505_61
 {
 public:

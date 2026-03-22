@@ -8,16 +8,19 @@ namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION_CREATE_1_OFFSET UNITYSDK_OFFSET(0x15DA3800)
-#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION_CREATE_OFFSET UNITYSDK_OFFSET(0x15D79870)
-#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION_SET_PATH_OFFSET UNITYSDK_OFFSET(0x15DA36C0)
-#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15DA3730)
-#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15DA3780)
-#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15DA36D0)
+#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION_CREATE_1_OFFSET UNITYSDK_OFFSET(0x1A2EB5F0)
+#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION_CREATE_OFFSET UNITYSDK_OFFSET(0x1A2EB480)
+#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION_GET_PATH_OFFSET UNITYSDK_OFFSET(0x1A2EB260)
+#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION_SET_PATH_OFFSET UNITYSDK_OFFSET(0x1A2EB270)
+#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A2EB2E0)
+#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1A2EB340)
+#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1A2EB3B0)
+#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_4_OFFSET UNITYSDK_OFFSET(0x1A2EB400)
+#define NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2EB280)
 
 namespace Newtonsoft::Json
 {
-	inline static constexpr unsigned int JsonWriterException_TypeDefinitionIndex = 8085;
+	inline static constexpr unsigned int JsonWriterException_TypeDefinitionIndex = 6882;
 
 	class JsonWriterException : public ::Newtonsoft::Json::JsonException
 	{
@@ -29,14 +32,29 @@ namespace Newtonsoft::Json
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _ctor_1(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::Void _ctor_1(::System::String* message)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_1_OFFSET))(this, info, context);
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_1_OFFSET))(this, message);
 		}
 
-		::System::Void _ctor_2(::System::String* message, ::System::Exception* innerException, ::System::String* path)
+		::System::Void _ctor_2(::System::String* message, ::System::Exception* innerException)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Exception*, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_2_OFFSET))(this, message, innerException, path);
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Exception*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_2_OFFSET))(this, message, innerException);
+		}
+
+		::System::Void _ctor_3(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_3_OFFSET))(this, info, context);
+		}
+
+		::System::Void _ctor_4(::System::String* message, ::System::Exception* innerException, ::System::String* path)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Exception*, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONWRITEREXCEPTION__CTOR_4_OFFSET))(this, message, innerException, path);
+		}
+
+		::System::String* get_Path()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONWRITEREXCEPTION_GET_PATH_OFFSET))(this);
 		}
 
 		::System::Void set_Path(::System::String* value)

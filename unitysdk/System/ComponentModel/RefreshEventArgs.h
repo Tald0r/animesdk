@@ -2,22 +2,42 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/EventArgs.h"
 
+namespace System { class Object; }
 namespace System { class Type; }
 
-#define SYSTEM_COMPONENTMODEL_REFRESHEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x17E7C490)
+#define SYSTEM_COMPONENTMODEL_REFRESHEVENTARGS_GET_COMPONENTCHANGED_OFFSET UNITYSDK_OFFSET(0x18FDE9A0)
+#define SYSTEM_COMPONENTMODEL_REFRESHEVENTARGS_GET_TYPECHANGED_OFFSET UNITYSDK_OFFSET(0x18FDE9B0)
+#define SYSTEM_COMPONENTMODEL_REFRESHEVENTARGS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18FDE970)
+#define SYSTEM_COMPONENTMODEL_REFRESHEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x18FDE920)
 
 namespace System::ComponentModel
 {
-	inline static constexpr unsigned int RefreshEventArgs_TypeDefinitionIndex = 2606;
+	inline static constexpr unsigned int RefreshEventArgs_TypeDefinitionIndex = 2975;
 
 	class RefreshEventArgs : public ::System::EventArgs
 	{
 	public:
-		::System::Type* typeChanged; // 0x10
+		::System::Object* componentChanged; // 0x10
+		::System::Type* typeChanged; // 0x18
 
-		::System::Void _ctor(::System::Type* typeChanged)
+		::System::Void _ctor(::System::Object* componentChanged)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_REFRESHEVENTARGS__CTOR_OFFSET))(this, typeChanged);
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_REFRESHEVENTARGS__CTOR_OFFSET))(this, componentChanged);
+		}
+
+		::System::Void _ctor_1(::System::Type* typeChanged)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_REFRESHEVENTARGS__CTOR_1_OFFSET))(this, typeChanged);
+		}
+
+		::System::Object* get_ComponentChanged()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_REFRESHEVENTARGS_GET_COMPONENTCHANGED_OFFSET))(this);
+		}
+
+		::System::Type* get_TypeChanged()
+		{
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_REFRESHEVENTARGS_GET_TYPECHANGED_OFFSET))(this);
 		}
 	};
 }

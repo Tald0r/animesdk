@@ -9,23 +9,23 @@ namespace System { class String; }
 namespace System { class Type; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_REFLECTION_MEMBERINFOSERIALIZATIONHOLDER_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x15CC1560)
-#define SYSTEM_REFLECTION_MEMBERINFOSERIALIZATIONHOLDER_GETREALOBJECT_OFFSET UNITYSDK_OFFSET(0x15CC15C0)
-#define SYSTEM_REFLECTION_MEMBERINFOSERIALIZATIONHOLDER_GETSERIALIZATIONINFO_1_OFFSET UNITYSDK_OFFSET(0x15CC1000)
-#define SYSTEM_REFLECTION_MEMBERINFOSERIALIZATIONHOLDER_GETSERIALIZATIONINFO_OFFSET UNITYSDK_OFFSET(0x15CC0FD0)
-#define SYSTEM_REFLECTION_MEMBERINFOSERIALIZATIONHOLDER__CTOR_OFFSET UNITYSDK_OFFSET(0x15CC1300)
+#define SYSTEM_REFLECTION_MEMBERINFOSERIALIZATIONHOLDER_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x192BAA70)
+#define SYSTEM_REFLECTION_MEMBERINFOSERIALIZATIONHOLDER_GETREALOBJECT_OFFSET UNITYSDK_OFFSET(0x192BAAD0)
+#define SYSTEM_REFLECTION_MEMBERINFOSERIALIZATIONHOLDER_GETSERIALIZATIONINFO_1_OFFSET UNITYSDK_OFFSET(0x192BA530)
+#define SYSTEM_REFLECTION_MEMBERINFOSERIALIZATIONHOLDER_GETSERIALIZATIONINFO_OFFSET UNITYSDK_OFFSET(0x192BA500)
+#define SYSTEM_REFLECTION_MEMBERINFOSERIALIZATIONHOLDER__CTOR_OFFSET UNITYSDK_OFFSET(0x192BA810)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int MemberInfoSerializationHolder_TypeDefinitionIndex = 572;
+	inline static constexpr unsigned int MemberInfoSerializationHolder_TypeDefinitionIndex = 546;
 
 	class MemberInfoSerializationHolder : public ::System::Object
 	{
 	public:
-		::System::String* m_signature2; // 0x10
-		::System::RuntimeType* m_reflectedType; // 0x18
+		::System::String* m_signature; // 0x10
+		::System::String* m_signature2; // 0x18
 		::System::Runtime::Serialization::SerializationInfo* m_info; // 0x20
-		::System::String* m_signature; // 0x28
+		::System::RuntimeType* m_reflectedType; // 0x28
 		::System::String* m_memberName; // 0x30
 		::System::Reflection::MemberTypes m_memberType; // 0x38
 

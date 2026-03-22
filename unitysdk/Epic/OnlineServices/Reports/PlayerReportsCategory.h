@@ -3,7 +3,7 @@
 
 namespace Epic::OnlineServices::Reports
 {
-	inline static constexpr unsigned int PlayerReportsCategory_TypeDefinitionIndex = 34651;
+	inline static constexpr unsigned int PlayerReportsCategory_TypeDefinitionIndex = 32140;
 
 	enum class PlayerReportsCategory : ::System::Int32
 	{

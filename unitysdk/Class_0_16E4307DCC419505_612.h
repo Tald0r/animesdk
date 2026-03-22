@@ -1,10 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/GameCore/FixPoint.h"
 
-namespace System { class String; }
+class Class_1_0D6706375CDAAE8C;
+namespace MoleMole { class UIWidgetController; }
+namespace System { class Action; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_612_TypeDefinitionIndex = 51890;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_612_TypeDefinitionIndex = 62440;
 
 class Class_0_16E4307DCC419505_612
 {

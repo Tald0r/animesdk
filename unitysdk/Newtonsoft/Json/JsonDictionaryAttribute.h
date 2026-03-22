@@ -2,11 +2,14 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Newtonsoft/Json/JsonContainerAttribute.h"
 
-#define NEWTONSOFT_JSON_JSONDICTIONARYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x15D8D500)
+namespace System { class String; }
+
+#define NEWTONSOFT_JSON_JSONDICTIONARYATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B0BCAA0)
+#define NEWTONSOFT_JSON_JSONDICTIONARYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0BCA90)
 
 namespace Newtonsoft::Json
 {
-	inline static constexpr unsigned int JsonDictionaryAttribute_TypeDefinitionIndex = 8060;
+	inline static constexpr unsigned int JsonDictionaryAttribute_TypeDefinitionIndex = 6860;
 
 	class JsonDictionaryAttribute : public ::Newtonsoft::Json::JsonContainerAttribute
 	{
@@ -14,6 +17,11 @@ namespace Newtonsoft::Json
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONDICTIONARYATTRIBUTE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::String* id)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + NEWTONSOFT_JSON_JSONDICTIONARYATTRIBUTE__CTOR_1_OFFSET))(this, id);
 		}
 	};
 }

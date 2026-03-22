@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_COLLECTIONS_GENERIC_INTROSPECTIVESORTUTILITIES_FLOORLOG2_OFFSET UNITYSDK_OFFSET(0x15AFEA20)
-#define SYSTEM_COLLECTIONS_GENERIC_INTROSPECTIVESORTUTILITIES_THROWORIGNOREBADCOMPARER_OFFSET UNITYSDK_OFFSET(0x15AFEB90)
+#define SYSTEM_COLLECTIONS_GENERIC_INTROSPECTIVESORTUTILITIES_FLOORLOG2_OFFSET UNITYSDK_OFFSET(0x19508890)
+#define SYSTEM_COLLECTIONS_GENERIC_INTROSPECTIVESORTUTILITIES_THROWORIGNOREBADCOMPARER_OFFSET UNITYSDK_OFFSET(0x195088B0)
 
 namespace System::Collections::Generic
 {
-	inline static constexpr unsigned int IntrospectiveSortUtilities_TypeDefinitionIndex = 1515;
+	inline static constexpr unsigned int IntrospectiveSortUtilities_TypeDefinitionIndex = 1517;
 
 	class IntrospectiveSortUtilities : public ::System::Object
 	{

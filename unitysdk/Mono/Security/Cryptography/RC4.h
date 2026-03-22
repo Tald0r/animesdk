@@ -2,28 +2,30 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Security/Cryptography/SymmetricAlgorithm.h"
 
+namespace System { class String; }
 namespace System::Security::Cryptography { class KeySizes; }
 
-#define MONO_SECURITY_CRYPTOGRAPHY_RC4_CREATE_OFFSET UNITYSDK_OFFSET(0x15A84690)
-#define MONO_SECURITY_CRYPTOGRAPHY_RC4_GET_IV_OFFSET UNITYSDK_OFFSET(0x15A8AC10)
-#define MONO_SECURITY_CRYPTOGRAPHY_RC4_SET_IV_OFFSET UNITYSDK_OFFSET(0x15A85700)
-#define MONO_SECURITY_CRYPTOGRAPHY_RC4__CCTOR_OFFSET UNITYSDK_OFFSET(0x15A8AC20)
-#define MONO_SECURITY_CRYPTOGRAPHY_RC4__CTOR_OFFSET UNITYSDK_OFFSET(0x15A85020)
+#define MONO_SECURITY_CRYPTOGRAPHY_RC4_CREATE_1_OFFSET UNITYSDK_OFFSET(0x1A4FC640)
+#define MONO_SECURITY_CRYPTOGRAPHY_RC4_CREATE_OFFSET UNITYSDK_OFFSET(0x1A4FC5F0)
+#define MONO_SECURITY_CRYPTOGRAPHY_RC4_GET_IV_OFFSET UNITYSDK_OFFSET(0x1A4FC5E0)
+#define MONO_SECURITY_CRYPTOGRAPHY_RC4_SET_IV_OFFSET UNITYSDK_OFFSET(0x1A4F5DC0)
+#define MONO_SECURITY_CRYPTOGRAPHY_RC4__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A4FC6D0)
+#define MONO_SECURITY_CRYPTOGRAPHY_RC4__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4F57F0)
 
 namespace Mono::Security::Cryptography
 {
-	inline static constexpr unsigned int RC4_TypeDefinitionIndex = 2293;
+	inline static constexpr unsigned int RC4_TypeDefinitionIndex = 2467;
 
 	class RC4 : public ::System::Security::Cryptography::SymmetricAlgorithm
 	{
 	public:
 		static ::Il2CppArray<::System::Security::Cryptography::KeySizes*>** StaticGet_s_legalBlockSizes()
 		{
-			return (::Il2CppArray<::System::Security::Cryptography::KeySizes*>**)Il2CppClass::FromTypeDefinitionIndex(RC4_TypeDefinitionIndex)->GetStaticField(0x14F60);
+			return (::Il2CppArray<::System::Security::Cryptography::KeySizes*>**)Il2CppClass::FromTypeDefinitionIndex(RC4_TypeDefinitionIndex)->GetStaticField(0x2330);
 		}
 		static ::Il2CppArray<::System::Security::Cryptography::KeySizes*>** StaticGet_s_legalKeySizes()
 		{
-			return (::Il2CppArray<::System::Security::Cryptography::KeySizes*>**)Il2CppClass::FromTypeDefinitionIndex(RC4_TypeDefinitionIndex)->GetStaticField(0x14F68);
+			return (::Il2CppArray<::System::Security::Cryptography::KeySizes*>**)Il2CppClass::FromTypeDefinitionIndex(RC4_TypeDefinitionIndex)->GetStaticField(0x2338);
 		}
 
 		::System::Void _ctor()
@@ -49,6 +51,11 @@ namespace Mono::Security::Cryptography
 		static ::Mono::Security::Cryptography::RC4* Create()
 		{
 			return ((::Mono::Security::Cryptography::RC4*(*)())((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_RC4_CREATE_OFFSET))();
+		}
+
+		static ::Mono::Security::Cryptography::RC4* Create_1(::System::String* algName)
+		{
+			return ((::Mono::Security::Cryptography::RC4*(*)(::System::String*))((::PBYTE)hIl2Cpp + MONO_SECURITY_CRYPTOGRAPHY_RC4_CREATE_1_OFFSET))(algName);
 		}
 	};
 }

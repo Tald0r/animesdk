@@ -1,0 +1,93 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MiHoYo/SDK/PluginUI/MiHoYoSDKUIContainer.h"
+
+class Class_2_BB18B5C1205C80C6_2;
+namespace MoleMole { class UIGeneralGoogleLoginDialogPopWindowController; }
+namespace System { class String; }
+
+#define CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_06330CD58CB602B6_OFFSET UNITYSDK_OFFSET(0x9E1F930)
+#define CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_0845CB1CAB480AE8_OFFSET UNITYSDK_OFFSET(0x9E20200)
+#define CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_596D9113D22B8335_1_OFFSET UNITYSDK_OFFSET(0x9E20030)
+#define CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_596D9113D22B8335_OFFSET UNITYSDK_OFFSET(0x9E1FF90)
+#define CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_80A9DB3F285E392F_OFFSET UNITYSDK_OFFSET(0x9E200D0)
+#define CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_C638E91FC0D3A13A_OFFSET UNITYSDK_OFFSET(0x9E1F750)
+#define CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_C9A3013DD208C696_OFFSET UNITYSDK_OFFSET(0x9E1FCE0)
+#define CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_CB6E47C531A45A1F_1_OFFSET UNITYSDK_OFFSET(0x9E1FF50)
+#define CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_CB6E47C531A45A1F_OFFSET UNITYSDK_OFFSET(0x9E1FF10)
+#define CLASS_2_5AD8D2E9E4CF71D4_ONCLOSE_OFFSET UNITYSDK_OFFSET(0x9E1FE10)
+#define CLASS_2_5AD8D2E9E4CF71D4_ONSHOW_OFFSET UNITYSDK_OFFSET(0x9E1F220)
+#define CLASS_2_5AD8D2E9E4CF71D4__CTOR_OFFSET UNITYSDK_OFFSET(0x9E1FE90)
+
+inline static constexpr unsigned int Class_2_5AD8D2E9E4CF71D4_TypeDefinitionIndex = 37643;
+
+class Class_2_5AD8D2E9E4CF71D4 : public ::MiHoYo::SDK::PluginUI::MiHoYoSDKUIContainer
+{
+public:
+	static ::Class_2_5AD8D2E9E4CF71D4** StaticGet_Field_2_2()
+	{
+		return (::Class_2_5AD8D2E9E4CF71D4**)Il2CppClass::FromTypeDefinitionIndex(Class_2_5AD8D2E9E4CF71D4_TypeDefinitionIndex)->GetStaticField(0x35EC0);
+	}
+	::MoleMole::UIGeneralGoogleLoginDialogPopWindowController* Field_2_0; // 0x18
+	::Class_2_BB18B5C1205C80C6_2* Field_2_1; // 0x20
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4__CTOR_OFFSET))(this);
+	}
+
+	::System::Void OnShow()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4_ONSHOW_OFFSET))(this);
+	}
+
+	::System::Void OnClose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4_ONCLOSE_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CB6E47C531A45A1F(::System::String* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_CB6E47C531A45A1F_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_CB6E47C531A45A1F_1(::System::String* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_CB6E47C531A45A1F_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_596D9113D22B8335()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_596D9113D22B8335_OFFSET))(this);
+	}
+
+	::System::Void Method_2_06330CD58CB602B6()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_06330CD58CB602B6_OFFSET))(this);
+	}
+
+	::System::Void Method_2_C638E91FC0D3A13A()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_C638E91FC0D3A13A_OFFSET))(this);
+	}
+
+	::System::Void Method_2_C9A3013DD208C696()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_C9A3013DD208C696_OFFSET))(this);
+	}
+
+	::System::Void Method_2_596D9113D22B8335_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_596D9113D22B8335_1_OFFSET))(this);
+	}
+
+	static ::Class_2_5AD8D2E9E4CF71D4* Method_2_80A9DB3F285E392F()
+	{
+		return ((::Class_2_5AD8D2E9E4CF71D4*(*)())((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_80A9DB3F285E392F_OFFSET))();
+	}
+
+	::System::Void Method_2_0845CB1CAB480AE8(::System::String* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_2_5AD8D2E9E4CF71D4_METHOD_2_0845CB1CAB480AE8_OFFSET))(this, a1);
+	}
+};

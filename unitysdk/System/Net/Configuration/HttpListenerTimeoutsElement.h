@@ -1,0 +1,64 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Configuration/ConfigurationElement.h"
+#include "unitysdk/System/TimeSpan.h"
+
+namespace System::Configuration { class ConfigurationPropertyCollection; }
+
+#define SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_DRAINENTITYBODY_OFFSET UNITYSDK_OFFSET(0x18D72A20)
+#define SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_ENTITYBODY_OFFSET UNITYSDK_OFFSET(0x18D72A60)
+#define SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_HEADERWAIT_OFFSET UNITYSDK_OFFSET(0x18D72AA0)
+#define SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_IDLECONNECTION_OFFSET UNITYSDK_OFFSET(0x18D72AE0)
+#define SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_MINSENDBYTESPERSECOND_OFFSET UNITYSDK_OFFSET(0x18D72B20)
+#define SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_PROPERTIES_OFFSET UNITYSDK_OFFSET(0x18D72B60)
+#define SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_REQUESTQUEUE_OFFSET UNITYSDK_OFFSET(0x18D72BA0)
+#define SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x18D729E0)
+
+namespace System::Net::Configuration
+{
+	inline static constexpr unsigned int HttpListenerTimeoutsElement_TypeDefinitionIndex = 4132;
+
+	class HttpListenerTimeoutsElement : public ::System::Configuration::ConfigurationElement
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT__CTOR_OFFSET))(this);
+		}
+
+		::System::TimeSpan get_DrainEntityBody()
+		{
+			return ((::System::TimeSpan(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_DRAINENTITYBODY_OFFSET))(this);
+		}
+
+		::System::TimeSpan get_EntityBody()
+		{
+			return ((::System::TimeSpan(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_ENTITYBODY_OFFSET))(this);
+		}
+
+		::System::TimeSpan get_HeaderWait()
+		{
+			return ((::System::TimeSpan(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_HEADERWAIT_OFFSET))(this);
+		}
+
+		::System::TimeSpan get_IdleConnection()
+		{
+			return ((::System::TimeSpan(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_IDLECONNECTION_OFFSET))(this);
+		}
+
+		::System::Int64 get_MinSendBytesPerSecond()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_MINSENDBYTESPERSECOND_OFFSET))(this);
+		}
+
+		::System::Configuration::ConfigurationPropertyCollection* get_Properties()
+		{
+			return ((::System::Configuration::ConfigurationPropertyCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_PROPERTIES_OFFSET))(this);
+		}
+
+		::System::TimeSpan get_RequestQueue()
+		{
+			return ((::System::TimeSpan(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_HTTPLISTENERTIMEOUTSELEMENT_GET_REQUESTQUEUE_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,42 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_F57C3EEEB03201AF.h"
+
+namespace System { class String; }
+template <typename T> class Class_0_16E4307DCC419505_103;
+
+#define MOLEMOLE_UIACTIVITYCOMBATPAUSETARGETROWWIDGETCONTROLLER_VIEWMODEL_GET_CONTENT_OFFSET UNITYSDK_OFFSET(0xD8568B0)
+#define MOLEMOLE_UIACTIVITYCOMBATPAUSETARGETROWWIDGETCONTROLLER_VIEWMODEL_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0xD8568D0)
+#define MOLEMOLE_UIACTIVITYCOMBATPAUSETARGETROWWIDGETCONTROLLER_VIEWMODEL_SET_CONTENT_OFFSET UNITYSDK_OFFSET(0xD8568C0)
+#define MOLEMOLE_UIACTIVITYCOMBATPAUSETARGETROWWIDGETCONTROLLER_VIEWMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0xD856980)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityCombatPauseTargetRowWidgetController_ViewModel_TypeDefinitionIndex = 51596;
+
+	class UIActivityCombatPauseTargetRowWidgetController_ViewModel : public ::Class_1_F57C3EEEB03201AF
+	{
+	public:
+		::Class_0_16E4307DCC419505_103<::System::String*>* _Content_k__BackingField; // 0x60
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMBATPAUSETARGETROWWIDGETCONTROLLER_VIEWMODEL__CTOR_OFFSET))(this);
+		}
+
+		::Class_0_16E4307DCC419505_103<::System::String*>* get_Content()
+		{
+			return ((::Class_0_16E4307DCC419505_103<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMBATPAUSETARGETROWWIDGETCONTROLLER_VIEWMODEL_GET_CONTENT_OFFSET))(this);
+		}
+
+		::System::Void set_Content(::Class_0_16E4307DCC419505_103<::System::String*>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_103<::System::String*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMBATPAUSETARGETROWWIDGETCONTROLLER_VIEWMODEL_SET_CONTENT_OFFSET))(this, value);
+		}
+
+		::System::Void OnCreateProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYCOMBATPAUSETARGETROWWIDGETCONTROLLER_VIEWMODEL_ONCREATEPROPERTY_OFFSET))(this);
+		}
+	};
+}

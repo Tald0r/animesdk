@@ -1,0 +1,58 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_208CC9941471731A_7;
+namespace MoleMole { class UIRoleJoinTipsPopWindowController; }
+namespace System { class Action; }
+
+#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC849500)
+#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__SHOWMULTIFORMSKINPACKAGE_B__0_OFFSET UNITYSDK_OFFSET(0xC849510)
+#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__SHOWMULTIFORMSKINPACKAGE_B__1_OFFSET UNITYSDK_OFFSET(0xC849530)
+#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__SHOWMULTIFORMSKINPACKAGE_B__2_OFFSET UNITYSDK_OFFSET(0xC849550)
+#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__SHOWMULTIFORMSKINPACKAGE_B__3_OFFSET UNITYSDK_OFFSET(0xC849870)
+#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__SHOWMULTIFORMSKINPACKAGE_B__4_OFFSET UNITYSDK_OFFSET(0xC8498E0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIRoleJoinTipsPopWindowController___c__DisplayClass14_0_TypeDefinitionIndex = 41626;
+
+	class UIRoleJoinTipsPopWindowController___c__DisplayClass14_0 : public ::System::Object
+	{
+	public:
+		::Class_2_208CC9941471731A_7* template_; // 0x10
+		::System::Action* __9__4; // 0x18
+		::System::Action* __9__3; // 0x20
+		::MoleMole::UIRoleJoinTipsPopWindowController* __4__this; // 0x28
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ShowMultiFormSkinPackage_b__0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__SHOWMULTIFORMSKINPACKAGE_B__0_OFFSET))(this);
+		}
+
+		::System::Void _ShowMultiFormSkinPackage_b__1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__SHOWMULTIFORMSKINPACKAGE_B__1_OFFSET))(this);
+		}
+
+		::System::Void _ShowMultiFormSkinPackage_b__2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__SHOWMULTIFORMSKINPACKAGE_B__2_OFFSET))(this);
+		}
+
+		::System::Void _ShowMultiFormSkinPackage_b__3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__SHOWMULTIFORMSKINPACKAGE_B__3_OFFSET))(this);
+		}
+
+		::System::Void _ShowMultiFormSkinPackage_b__4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__SHOWMULTIFORMSKINPACKAGE_B__4_OFFSET))(this);
+		}
+	};
+}

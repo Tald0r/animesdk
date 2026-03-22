@@ -1,0 +1,11 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+inline static constexpr unsigned int Enum_3_E9677C2A3C128C85_TypeDefinitionIndex = 63168;
+
+enum class Enum_3_E9677C2A3C128C85 : ::System::Int32
+{
+	Switching = 1,
+	Active = 2,
+	InActive = 0,
+};

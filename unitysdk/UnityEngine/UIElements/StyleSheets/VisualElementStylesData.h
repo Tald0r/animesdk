@@ -2,29 +2,30 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/UIElements/StyleColor.h"
+#include "unitysdk/UnityEngine/UIElements/StyleCursor.h"
 #include "unitysdk/UnityEngine/UIElements/StyleFloat.h"
 #include "unitysdk/UnityEngine/UIElements/StyleInt.h"
 #include "unitysdk/UnityEngine/UIElements/StyleLength.h"
 
 namespace UnityEngine::UIElements::StyleSheets { class StyleValuePropertyReader; }
 
-#define UNITYENGINE_UIELEMENTS_STYLESHEETS_VISUALELEMENTSTYLESDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x182CCBE0)
-#define UNITYENGINE_UIELEMENTS_STYLESHEETS_VISUALELEMENTSTYLESDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x182CC730)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_VISUALELEMENTSTYLESDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x189325C0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_VISUALELEMENTSTYLESDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x18932110)
 
 namespace UnityEngine::UIElements::StyleSheets
 {
-	inline static constexpr unsigned int VisualElementStylesData_TypeDefinitionIndex = 5882;
+	inline static constexpr unsigned int VisualElementStylesData_TypeDefinitionIndex = 23931;
 
 	class VisualElementStylesData : public ::System::Object
 	{
 	public:
-		static ::UnityEngine::UIElements::StyleSheets::VisualElementStylesData** StaticGet_none()
-		{
-			return (::UnityEngine::UIElements::StyleSheets::VisualElementStylesData**)Il2CppClass::FromTypeDefinitionIndex(VisualElementStylesData_TypeDefinitionIndex)->GetStaticField(0xA340);
-		}
 		static ::UnityEngine::UIElements::StyleSheets::StyleValuePropertyReader** StaticGet_s_StyleValuePropertyReader()
 		{
-			return (::UnityEngine::UIElements::StyleSheets::StyleValuePropertyReader**)Il2CppClass::FromTypeDefinitionIndex(VisualElementStylesData_TypeDefinitionIndex)->GetStaticField(0xA348);
+			return (::UnityEngine::UIElements::StyleSheets::StyleValuePropertyReader**)Il2CppClass::FromTypeDefinitionIndex(VisualElementStylesData_TypeDefinitionIndex)->GetStaticField(0x1D720);
+		}
+		static ::UnityEngine::UIElements::StyleSheets::VisualElementStylesData** StaticGet_none()
+		{
+			return (::UnityEngine::UIElements::StyleSheets::VisualElementStylesData**)Il2CppClass::FromTypeDefinitionIndex(VisualElementStylesData_TypeDefinitionIndex)->GetStaticField(0x1D728);
 		}
 		::System::Boolean isShared; // 0x10
 		::UnityEngine::UIElements::StyleLength width; // 0x14
@@ -37,23 +38,29 @@ namespace UnityEngine::UIElements::StyleSheets
 		::UnityEngine::UIElements::StyleFloat flexShrink; // 0x84
 		::UnityEngine::UIElements::StyleFloat flexGrow; // 0x90
 		::UnityEngine::UIElements::StyleInt overflow; // 0x9C
-		::UnityEngine::UIElements::StyleLength left; // 0xA8
-		::UnityEngine::UIElements::StyleLength top; // 0xB8
-		::UnityEngine::UIElements::StyleLength right; // 0xC8
-		::UnityEngine::UIElements::StyleLength bottom; // 0xD8
-		::UnityEngine::UIElements::StyleInt alignSelf; // 0xE8
-		::UnityEngine::UIElements::StyleColor color; // 0xF4
-		::UnityEngine::UIElements::StyleColor unityBackgroundImageTintColor; // 0x10C
-		::UnityEngine::UIElements::StyleInt alignItems; // 0x124
-		::UnityEngine::UIElements::StyleInt alignContent; // 0x130
-		::UnityEngine::UIElements::StyleColor borderLeftColor; // 0x13C
-		::UnityEngine::UIElements::StyleColor borderTopColor; // 0x154
-		::UnityEngine::UIElements::StyleColor borderRightColor; // 0x16C
-		::UnityEngine::UIElements::StyleColor borderBottomColor; // 0x184
-		::UnityEngine::UIElements::StyleFloat opacity; // 0x19C
-		::UnityEngine::UIElements::StyleInt visibility; // 0x1A8
-		::UnityEngine::UIElements::StyleInt display; // 0x1B4
-		::System::Single dpiScaling; // 0x1C0
+		::UnityEngine::UIElements::StyleInt unityOverflowClipBox; // 0xA8
+		::UnityEngine::UIElements::StyleLength left; // 0xB4
+		::UnityEngine::UIElements::StyleLength top; // 0xC4
+		::UnityEngine::UIElements::StyleLength right; // 0xD4
+		::UnityEngine::UIElements::StyleLength bottom; // 0xE4
+		::UnityEngine::UIElements::StyleInt alignSelf; // 0xF4
+		::UnityEngine::UIElements::StyleColor color; // 0x100
+		::UnityEngine::UIElements::StyleColor unityBackgroundImageTintColor; // 0x118
+		::UnityEngine::UIElements::StyleInt alignItems; // 0x130
+		::UnityEngine::UIElements::StyleInt alignContent; // 0x13C
+		::UnityEngine::UIElements::StyleColor borderLeftColor; // 0x148
+		::UnityEngine::UIElements::StyleColor borderTopColor; // 0x160
+		::UnityEngine::UIElements::StyleColor borderRightColor; // 0x178
+		::UnityEngine::UIElements::StyleColor borderBottomColor; // 0x190
+		::UnityEngine::UIElements::StyleFloat borderLeftWidth; // 0x1A8
+		::UnityEngine::UIElements::StyleFloat borderTopWidth; // 0x1B4
+		::UnityEngine::UIElements::StyleFloat borderRightWidth; // 0x1C0
+		::UnityEngine::UIElements::StyleFloat borderBottomWidth; // 0x1CC
+		::UnityEngine::UIElements::StyleFloat opacity; // 0x1D8
+		::UnityEngine::UIElements::StyleCursor cursor; // 0x1E8
+		::UnityEngine::UIElements::StyleInt visibility; // 0x210
+		::UnityEngine::UIElements::StyleInt display; // 0x21C
+		::System::Single dpiScaling; // 0x228
 
 		::System::Void _ctor(::System::Boolean isShared)
 		{

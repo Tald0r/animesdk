@@ -1,0 +1,175 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlowCanvas/Flow.h"
+#include "unitysdk/MoleMole/FlowCanvas/Nodes/LDWaveMonsterPosRandom.h"
+#include "unitysdk/MoleMole/FlowCanvas/Nodes/MonsterIDType.h"
+#include "unitysdk/MoleMole/Project/Config/MonsterGroupTemplateExt_MonsterTypeEnum.h"
+
+namespace FlowCanvas { template <typename T> class ValueInput_1; }
+namespace MoleMole::Battle { class Entity; }
+namespace MoleMole::FlowCanvas { class LevelZeroRandomPosMonsterCreateData; }
+namespace MoleMole::FlowCanvas::Nodes { class MonsterCreateData; }
+namespace MoleMole::FlowCanvas::Nodes { class MonsterCreateDataBase; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_BEGIN_OFFSET UNITYSDK_OFFSET(0xEC786D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_DOPRELOAD_OFFSET UNITYSDK_OFFSET(0xEC79E90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_EXPENDCREATEDLIST_OFFSET UNITYSDK_OFFSET(0xEC79190)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_FULLCREATEDLIST_OFFSET UNITYSDK_OFFSET(0xEC788C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_GETCREATELISTCOUNT_OFFSET UNITYSDK_OFFSET(0xEC79E10)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_GETCREATELISTDATABYINDEX_OFFSET UNITYSDK_OFFSET(0xEC79CF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_GETCURRENTMONSTERIDTYPE_OFFSET UNITYSDK_OFFSET(0xEC78660)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_GETCURRENTTAG_OFFSET UNITYSDK_OFFSET(0xEC7A0C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_GETMONSTERTYPE_OFFSET UNITYSDK_OFFSET(0xEC7A190)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_PREPROCESSMONSTERCREATELIST_OFFSET UNITYSDK_OFFSET(0xEC78B30)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xEC78180)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__CTOR_OFFSET UNITYSDK_OFFSET(0xEC7A2C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_0_OFFSET UNITYSDK_OFFSET(0xEC7A350)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_1_OFFSET UNITYSDK_OFFSET(0xEC7A380)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_2_OFFSET UNITYSDK_OFFSET(0xEC7A470)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_3_OFFSET UNITYSDK_OFFSET(0xEC7A4A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_4_OFFSET UNITYSDK_OFFSET(0xEC7A4B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_5_OFFSET UNITYSDK_OFFSET(0xEC7A4C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_BEGIN_OFFSET UNITYSDK_OFFSET(0xEC7A4D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_DOPRELOAD_OFFSET UNITYSDK_OFFSET(0xEC7A500)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_GETCREATELISTCOUNT_OFFSET UNITYSDK_OFFSET(0xEC7A510)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_GETCREATELISTDATABYINDEX_OFFSET UNITYSDK_OFFSET(0xEC7A520)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_GETCURRENTMONSTERIDTYPE_OFFSET UNITYSDK_OFFSET(0xEC7A530)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xEC7A540)
+
+namespace MoleMole::FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int LDLevelZeroRandomPosWaveMonster_TypeDefinitionIndex = 53576;
+
+	class LDLevelZeroRandomPosWaveMonster : public ::MoleMole::FlowCanvas::Nodes::LDWaveMonsterPosRandom
+	{
+	public:
+		::FlowCanvas::ValueInput_1<::System::Int32>* tagInput; // 0x1F0
+		::System::Collections::Generic::List_1<::MoleMole::FlowCanvas::Nodes::MonsterCreateData*>* extendCreateData; // 0x1F8
+		::FlowCanvas::ValueInput_1<::MoleMole::Project::Config::MonsterGroupTemplateExt_MonsterTypeEnum>* typeInput; // 0x200
+		::FlowCanvas::ValueInput_1<::System::Collections::Generic::List_1<::MoleMole::FlowCanvas::LevelZeroRandomPosMonsterCreateData*>*>* levelZeroCreateInput; // 0x208
+		::System::Collections::Generic::List_1<::MoleMole::FlowCanvas::LevelZeroRandomPosMonsterCreateData*>* PostCreateData; // 0x210
+		::MoleMole::FlowCanvas::Nodes::MonsterIDType _monsterIDType; // 0x218
+		::System::Boolean inited; // 0x21C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_REGISTERPORTS_OFFSET))(this);
+		}
+
+		::MoleMole::FlowCanvas::Nodes::MonsterIDType GetCurrentMonsterIdType()
+		{
+			return ((::MoleMole::FlowCanvas::Nodes::MonsterIDType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_GETCURRENTMONSTERIDTYPE_OFFSET))(this);
+		}
+
+		::System::Void Begin(::FlowCanvas::Flow f)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_BEGIN_OFFSET))(this, f);
+		}
+
+		::System::Void FullCreatedList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_FULLCREATEDLIST_OFFSET))(this);
+		}
+
+		::System::Void PreProcessMonsterCreateList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_PREPROCESSMONSTERCREATELIST_OFFSET))(this);
+		}
+
+		::System::Void ExpendCreatedList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_EXPENDCREATEDLIST_OFFSET))(this);
+		}
+
+		::MoleMole::FlowCanvas::Nodes::MonsterCreateDataBase* GetCreateListDataByIndex(::System::Int32 index)
+		{
+			return ((::MoleMole::FlowCanvas::Nodes::MonsterCreateDataBase*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_GETCREATELISTDATABYINDEX_OFFSET))(this, index);
+		}
+
+		::System::Int32 GetCreateListCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_GETCREATELISTCOUNT_OFFSET))(this);
+		}
+
+		::System::Void DoPreload()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_DOPRELOAD_OFFSET))(this);
+		}
+
+		::System::Int32 GetCurrentTag()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_GETCURRENTTAG_OFFSET))(this);
+		}
+
+		::MoleMole::Project::Config::MonsterGroupTemplateExt_MonsterTypeEnum GetMonsterType()
+		{
+			return ((::MoleMole::Project::Config::MonsterGroupTemplateExt_MonsterTypeEnum(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER_GETMONSTERTYPE_OFFSET))(this);
+		}
+
+		::System::Void _RegisterPorts_b__7_0(::FlowCanvas::Flow f)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_0_OFFSET))(this, f);
+		}
+
+		::System::Void _RegisterPorts_b__7_1(::FlowCanvas::Flow f)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_1_OFFSET))(this, f);
+		}
+
+		::System::Void _RegisterPorts_b__7_2(::FlowCanvas::Flow f)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_2_OFFSET))(this, f);
+		}
+
+		::System::Int32 _RegisterPorts_b__7_3()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_3_OFFSET))(this);
+		}
+
+		::MoleMole::Battle::Entity* _RegisterPorts_b__7_4()
+		{
+			return ((::MoleMole::Battle::Entity*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_4_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::MoleMole::Battle::Entity*>* _RegisterPorts_b__7_5()
+		{
+			return ((::System::Collections::Generic::List_1<::MoleMole::Battle::Entity*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER__REGISTERPORTS_B__7_5_OFFSET))(this);
+		}
+
+		::System::Void __base_Begin(::FlowCanvas::Flow P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_BEGIN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_DoPreload()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_DOPRELOAD_OFFSET))(this);
+		}
+
+		::System::Int32 __base_GetCreateListCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_GETCREATELISTCOUNT_OFFSET))(this);
+		}
+
+		::MoleMole::FlowCanvas::Nodes::MonsterCreateDataBase* __base_GetCreateListDataByIndex(::System::Int32 P0)
+		{
+			return ((::MoleMole::FlowCanvas::Nodes::MonsterCreateDataBase*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_GETCREATELISTDATABYINDEX_OFFSET))(this, P0);
+		}
+
+		::MoleMole::FlowCanvas::Nodes::MonsterIDType __base_GetCurrentMonsterIdType()
+		{
+			return ((::MoleMole::FlowCanvas::Nodes::MonsterIDType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_GETCURRENTMONSTERIDTYPE_OFFSET))(this);
+		}
+
+		::System::Void __base_RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZERORANDOMPOSWAVEMONSTER___BASE_REGISTERPORTS_OFFSET))(this);
+		}
+	};
+}

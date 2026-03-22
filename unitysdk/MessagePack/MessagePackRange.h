@@ -4,7 +4,7 @@
 
 namespace MessagePack
 {
-	inline static constexpr unsigned int MessagePackRange_TypeDefinitionIndex = 9406;
+	inline static constexpr unsigned int MessagePackRange_TypeDefinitionIndex = 26532;
 
 	class MessagePackRange : public ::System::Object
 	{

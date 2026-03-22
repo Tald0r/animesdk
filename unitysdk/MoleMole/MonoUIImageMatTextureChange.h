@@ -1,0 +1,66 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_73A07ADA64B8C00F.h"
+#include "unitysdk/UnityEngine/MonoBehaviour.h"
+
+namespace System { class String; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class Texture2D; }
+namespace UnityEngine::UI { class Image; }
+
+#define MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_APPLY_OFFSET UNITYSDK_OFFSET(0x8F3A6C0)
+#define MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_GET_CHANGETAG_OFFSET UNITYSDK_OFFSET(0x8F3A6B0)
+#define MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_GET_CHANGETYPE_OFFSET UNITYSDK_OFFSET(0x8F3A980)
+#define MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_METHOD_5_73EC6127976493E2_OFFSET UNITYSDK_OFFSET(0x8F3A7F0)
+#define MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x8F3AA30)
+#define MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_ONENABLE_OFFSET UNITYSDK_OFFSET(0x8F3A990)
+#define MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE__CTOR_OFFSET UNITYSDK_OFFSET(0x8F3AAD0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int MonoUIImageMatTextureChange_TypeDefinitionIndex = 40178;
+
+	class MonoUIImageMatTextureChange : public ::UnityEngine::MonoBehaviour
+	{
+	public:
+		::System::String* matTag; // 0x18
+		::Il2CppArray<::UnityEngine::UI::Image*>* uImages; // 0x20
+		::System::String* texName; // 0x28
+		::UnityEngine::Texture2D* tex; // 0x30
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE__CTOR_OFFSET))(this);
+		}
+
+		::System::String* get_ChangeTag()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_GET_CHANGETAG_OFFSET))(this);
+		}
+
+		::System::Void Apply()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_APPLY_OFFSET))(this);
+		}
+
+		::Enum_3_73A07ADA64B8C00F get_ChangeType()
+		{
+			return ((::Enum_3_73A07ADA64B8C00F(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_GET_CHANGETYPE_OFFSET))(this);
+		}
+
+		::System::Void OnEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_ONENABLE_OFFSET))(this);
+		}
+
+		::System::Void OnDisable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_ONDISABLE_OFFSET))(this);
+		}
+
+		::System::Void Method_5_73EC6127976493E2(::UnityEngine::Material* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Material*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOUIIMAGEMATTEXTURECHANGE_METHOD_5_73EC6127976493E2_OFFSET))(this, a1);
+		}
+	};
+}

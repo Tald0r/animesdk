@@ -1,0 +1,701 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
+#include "unitysdk/MoleMole/UIVHSStoreWidgetWidgetController_CollectPanelState.h"
+#include "unitysdk/MoleMole/UIVHSStoreWidgetWidgetController_VhsPanelState.h"
+#include "unitysdk/MoleMole/UIVHSStoreWidgetWidgetController___c__DisplayClass44_0.h"
+#include "unitysdk/MoleMole/UIVHSStoreWidgetWidgetController___c__DisplayClass44_1.h"
+#include "unitysdk/MoleMole/UIVHSStoreWidgetWidgetController___c__DisplayClass53_0.h"
+#include "unitysdk/MoleMole/UIVHSStoreWidgetWidgetController___c__DisplayClass53_1.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/System/Nullable_1.h"
+#include "unitysdk/System/ValueTuple_2.h"
+
+class Class_0_16E4307DCC419505_7;
+class Class_1_451601B8BB62C38C_4;
+class Class_2_208CC9941471731A_457;
+class Class_2_79F6D62CE30E3F8E_85;
+class Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIVHSPromoterWidgetController; }
+namespace MoleMole { class UIVHSStoreCollectionInfoWidgetController; }
+namespace MoleMole { class UIVHSStoreGuestInfoWidgetController; }
+namespace MoleMole { class UIVHSStoreLimitScoreInfoWidgetController; }
+namespace MoleMole { class UIVHSStoreLimitWidgetController; }
+namespace MoleMole { class UIVHSStorePageController_Context; }
+namespace MoleMole { class UIVHSStorePicBtnWidgetController; }
+namespace MoleMole { class UIVHSStorePromoterInfoWidgetController; }
+namespace MoleMole { class UIVHSStoreTagWidgetController_Data; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Animation; }
+
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_AUTOSELECTINNER_OFFSET UNITYSDK_OFFSET(0xACE24F0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_BEGINSALE_OFFSET UNITYSDK_OFFSET(0xACE8010)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_BINDEVENT_NOTIFY_OFFSET UNITYSDK_OFFSET(0xACDF170)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_BINDEVENT_SCROLLVIEW_OFFSET UNITYSDK_OFFSET(0xACDF3F0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CALCURRENTFLOW_OFFSET UNITYSDK_OFFSET(0xACE04A0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CANBEGINSALE_OFFSET UNITYSDK_OFFSET(0xACE84E0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CHANGEMODEBYCONTEXT_OFFSET UNITYSDK_OFFSET(0xACE3E00)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CHECKNEEDPLAYFLOWANIM_OFFSET UNITYSDK_OFFSET(0xACE3620)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CLEARCACHESTATE_OFFSET UNITYSDK_OFFSET(0xACEBD10)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CREATEWIDGET_OFFSET UNITYSDK_OFFSET(0xACDF4D0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_DOLIMIT_OFFSET UNITYSDK_OFFSET(0xACED7C0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHCACHESTATETOLOCALSTATE_OFFSET UNITYSDK_OFFSET(0xACE45D0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHFLOWTOVIEW_OFFSET UNITYSDK_OFFSET(0xACEB030)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHLOCALSTATETOPROMOTER_OFFSET UNITYSDK_OFFSET(0xACE60D0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHLOCALSTATETOSLOT_OFFSET UNITYSDK_OFFSET(0xACE13B0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHPROMOTERTOCACHESTATE_OFFSET UNITYSDK_OFFSET(0xACEBB20)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHSLOTSERVERSTATETOLOCALSTATE_OFFSET UNITYSDK_OFFSET(0xACE5230)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHSLOTTOCACHESTATE_OFFSET UNITYSDK_OFFSET(0xACE1470)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_GETCOLLECTPANELSTATE_OFFSET UNITYSDK_OFFSET(0xACE9860)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_GET_VHSPANELSTATE_OFFSET UNITYSDK_OFFSET(0xACEE320)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_GET_VHSPROMOTERID_OFFSET UNITYSDK_OFFSET(0xACE8A80)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_GET__SELECTEDVHSFORINFORMATION_OFFSET UNITYSDK_OFFSET(0xACE8FB0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_GOTOMAIN_OFFSET UNITYSDK_OFFSET(0xACE6D80)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_HANDLEVHSMODULECURRENTTAGLISTUPDATE_OFFSET UNITYSDK_OFFSET(0xACDFD50)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_HANDLEVHSMODULEUPDATE_OFFSET UNITYSDK_OFFSET(0xACDFB60)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_INITSLOT_OFFSET UNITYSDK_OFFSET(0xACDF710)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_INITTABBUTTONGROUP_OFFSET UNITYSDK_OFFSET(0xACDF7F0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONAFTERCURRENTTAGLISTCHANGED_OFFSET UNITYSDK_OFFSET(0xACEC550)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONAFTERVHSPANELSTATECHANGED_OFFSET UNITYSDK_OFFSET(0xACE7000)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONAFTERVHSPROMOTERIDCHANGED_OFFSET UNITYSDK_OFFSET(0xACEBFE0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONAFTERVHSSELECTCHANGE_OFFSET UNITYSDK_OFFSET(0xACE02D0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xACE2F10)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONSTORESTATEUPDATE_OFFSET UNITYSDK_OFFSET(0xACE6CB0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xACE2FB0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xACDE8F0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSAUTOSELECT_OFFSET UNITYSDK_OFFSET(0xACE2480)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSMODULECURRENTTAGLISTUPDATE_OFFSET UNITYSDK_OFFSET(0xACE6740)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSMODULESTORELEVELUPDATE_OFFSET UNITYSDK_OFFSET(0xACE0140)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSMODULEUPDATE_OFFSET UNITYSDK_OFFSET(0xACE4560)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSSELECTINNER_OFFSET UNITYSDK_OFFSET(0xACE1BC0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSSELECT_OFFSET UNITYSDK_OFFSET(0xACE19E0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_OPENINFORMATION_OFFSET UNITYSDK_OFFSET(0xACE7310)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_OPENLIMIT_OFFSET UNITYSDK_OFFSET(0xACE4120)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_OPENMESSAGE_OFFSET UNITYSDK_OFFSET(0xACE71A0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_OPENPROMOTERSELECTDIALOG_OFFSET UNITYSDK_OFFSET(0xACEB980)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_RECALCURRENTPROMOTERSKILLSTATE_OFFSET UNITYSDK_OFFSET(0xACE1060)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_RECOMMAND_OFFSET UNITYSDK_OFFSET(0xACE7E60)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHCOLLECTPANELBUTTONSTATE_OFFSET UNITYSDK_OFFSET(0xACE64B0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHCOLLECTPANELWITHANIM_OFFSET UNITYSDK_OFFSET(0xACE7480)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHCURRENTFLOW_OFFSET UNITYSDK_OFFSET(0xACE35A0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHGUESTHEADINFOWIDGET_OFFSET UNITYSDK_OFFSET(0xACEC7B0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHSPECIALGUEST_OFFSET UNITYSDK_OFFSET(0xACDFE10)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHTAGLAYER_OFFSET UNITYSDK_OFFSET(0xACE3900)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHTAGLIST_OFFSET UNITYSDK_OFFSET(0xACE67B0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SET_VHSPANELSTATE_OFFSET UNITYSDK_OFFSET(0xACDF780)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SET_VHSPROMOTERID_OFFSET UNITYSDK_OFFSET(0xACE9B50)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SHOWLVDIALOG_OFFSET UNITYSDK_OFFSET(0xACEC640)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SHOWRULEDIALOG_OFFSET UNITYSDK_OFFSET(0xACEE120)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SWITCHANIM_1_OFFSET UNITYSDK_OFFSET(0xACE7AB0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SWITCHANIM_OFFSET UNITYSDK_OFFSET(0xACE74F0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xACE3090)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__AUTOSELECTINNER_G__FINDFIRSTCANSELECTVHSID_29_0_OFFSET UNITYSDK_OFFSET(0xACE93D0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__AUTOSELECTINNER_G__GETALLUNLOCKVHSWITHTAG_29_1_OFFSET UNITYSDK_OFFSET(0xACE9030)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__AUTOSELECTINNER_G__GETALLUNLOCKVHS_29_2_OFFSET UNITYSDK_OFFSET(0xACE94A0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__AUTOSELECTINNER_G__GETTAGLEVEL_29_5_OFFSET UNITYSDK_OFFSET(0xACEF580)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__AUTOSELECTINNER_G__SELECTEDCONTAIN_29_3_OFFSET UNITYSDK_OFFSET(0xACEF180)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BEGINSALE_B__28_3_OFFSET UNITYSDK_OFFSET(0xACEED70)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BEGINSALE_B__28_4_OFFSET UNITYSDK_OFFSET(0xACEF100)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BEGINSALE_G__HASATLEASTONECANUSEPROMOTER_28_2_OFFSET UNITYSDK_OFFSET(0xACE8B50)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BEGINSALE_G__REALSALE_28_0_OFFSET UNITYSDK_OFFSET(0xACEE7D0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BEGINSALE_G__SELECTATLEASTONECOLLECTION_28_1_OFFSET UNITYSDK_OFFSET(0xACE8680)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BINDEVENT_NOTIFY_B__10_0_OFFSET UNITYSDK_OFFSET(0xACEE680)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BINDEVENT_NOTIFY_B__10_1_OFFSET UNITYSDK_OFFSET(0xACEE690)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BINDEVENT_NOTIFY_B__10_2_OFFSET UNITYSDK_OFFSET(0xACEE740)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__GETBUFFFLOW_53_2_OFFSET UNITYSDK_OFFSET(0xACED470)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__GETCOLLECTIONFLOW_53_0_OFFSET UNITYSDK_OFFSET(0xACECC50)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__GETPROMOTERFLOW_53_1_OFFSET UNITYSDK_OFFSET(0xACED000)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__GETTAGLVADDFACTOR_53_3_OFFSET UNITYSDK_OFFSET(0xACF0300)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__GETTAGMATCHADDFACTOR_53_4_OFFSET UNITYSDK_OFFSET(0xACF0270)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__MATCHATLEASTONETAG_53_6_OFFSET UNITYSDK_OFFSET(0xACF05C0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__MATCH_53_5_OFFSET UNITYSDK_OFFSET(0xACF0480)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xACEE5F0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xACEE330)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__DOLIMIT_B__55_0_OFFSET UNITYSDK_OFFSET(0xACF0750)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__FLUSHLOCALSTATETOSLOT_G__REFRESHSLOTFORINFORMATION_36_0_OFFSET UNITYSDK_OFFSET(0xACEA740)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__FLUSHLOCALSTATETOSLOT_G__REFRESHSLOTFORMESSAGE_36_1_OFFSET UNITYSDK_OFFSET(0xACEACC0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__FLUSHSLOTSERVERSTATETOLOCALSTATE_G__NEEDSETTLE_32_0_OFFSET UNITYSDK_OFFSET(0xACE9A20)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__INITSLOT_G__INITSLOTFORINFORMATION_35_0_OFFSET UNITYSDK_OFFSET(0xACE9D00)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__INITSLOT_G__INITSLOTFORMESSAGE_35_1_OFFSET UNITYSDK_OFFSET(0xACEA2F0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__ONAFTERCURRENTTAGLISTCHANGED_G__INITTAGSCROLLVIEW_47_0_OFFSET UNITYSDK_OFFSET(0xACEC600)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__ONUIINIT_G__BINDEVENT_BUTTON_1_0_OFFSET UNITYSDK_OFFSET(0xACDEB60)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__ONVHSSELECTINNER_G__GETCURRENTSELECTEDVHS_4_0_OFFSET UNITYSDK_OFFSET(0xACE23E0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__CALFLOWSKILLLEVEL_44_1_OFFSET UNITYSDK_OFFSET(0xACEC1C0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__CALPASSIVESKILLLEVEL_44_0_OFFSET UNITYSDK_OFFSET(0xACEC050)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__CURRENTCOLLECTIONCONTAINSPREFERTAG_44_5_OFFSET UNITYSDK_OFFSET(0xACEFD20)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__CURRENTTAGCONTAINSTAG_44_4_OFFSET UNITYSDK_OFFSET(0xACEFBE0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__ISMATCHTAG_44_2_OFFSET UNITYSDK_OFFSET(0xACEF650)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__ISMATCHVHS_44_3_OFFSET UNITYSDK_OFFSET(0xACEF690)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECOMMAND_B__27_0_OFFSET UNITYSDK_OFFSET(0xACEE750)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__REFRESHTAGLAYER_G__GETCURRENTSELECTEDVHS_45_0_OFFSET UNITYSDK_OFFSET(0xACEC4B0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xACF0770)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xACF07E0)
+#define MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xACF0860)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIVHSStoreWidgetWidgetController_TypeDefinitionIndex = 46248;
+
+	class UIVHSStoreWidgetWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		static ::System::Func_1<::System::Collections::Generic::IReadOnlyList_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>*>** StaticGet__selectedVhsForInformationGetter()
+		{
+			return (::System::Func_1<::System::Collections::Generic::IReadOnlyList_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>*>**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreWidgetWidgetController_TypeDefinitionIndex)->GetStaticField(0x34EF0);
+		}
+		::Class_2_79F6D62CE30E3F8E_85* _view; // 0x2A0
+		::MoleMole::UIVHSStoreWidgetWidgetController_VhsPanelState _vhsPanelState; // 0x2A8
+		::System::Single _lastAnimTIme; // 0x2AC
+		::System::String* _messageFadeIn; // 0x2B0
+		::System::String* _messageFadeOut; // 0x2B8
+		::System::String* _informationFadeIn; // 0x2C0
+		::System::String* _informationFadeOut; // 0x2C8
+		::System::String* _collectFadeIn; // 0x2D0
+		::System::String* _collectFadeOut; // 0x2D8
+		::System::String* _startDataFadeIn; // 0x2E0
+		::System::String* _startDataFadeOut; // 0x2E8
+		::Foundation::Coroutine::CoroutineHandle _switchHandleForWidget; // 0x2F0
+		::Foundation::Coroutine::CoroutineHandle _switchHandleForCollect; // 0x2F4
+		::System::Boolean _firstTimeForSwitchTab; // 0x2F8
+		::System::Collections::Generic::List_1<::MoleMole::UIVHSStorePicBtnWidgetController*>* _informationCtrls; // 0x300
+		::System::Collections::Generic::List_1<::MoleMole::UIVHSStorePicBtnWidgetController*>* _messageCtrls; // 0x308
+		::System::Collections::Generic::List_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>* _selectedVhsForMessage; // 0x310
+		::MoleMole::UIVHSPromoterWidgetController* _vhsPromoterWidgetController; // 0x318
+		::MoleMole::UIVHSStorePromoterInfoWidgetController* _vhsPromoterInfoWidgetController; // 0x320
+		::System::Single lastFrameFlow; // 0x328
+		::System::Boolean _firstTimeUpdateLastFrameFlow; // 0x32C
+		::System::Collections::Generic::List_1<::MoleMole::UIVHSStoreTagWidgetController_Data*>* _currentTagListV2; // 0x330
+		::System::Boolean _tagListNeedRefreshAnim; // 0x338
+		::System::Single _timer; // 0x33C
+		::MoleMole::UIVHSStoreWidgetWidgetController_CollectPanelState _collectPanelState; // 0x340
+		::MoleMole::UIVHSStoreGuestInfoWidgetController* _guestTextInfoWidget; // 0x348
+		::MoleMole::UIVHSStoreCollectionInfoWidgetController* _collectionTextInfoWidget; // 0x350
+		::System::Nullable_1<::System::Int64> _lastMinute; // 0x358
+		::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::Class_2_208CC9941471731A_457*>>* _tempVhsList; // 0x368
+		::MoleMole::UIVHSStoreLimitWidgetController* _limitWidget; // 0x370
+		::MoleMole::UIVHSStoreLimitScoreInfoWidgetController* _limitScoreWidget; // 0x378
+		::MoleMole::UIVHSStorePageController_Context* _context; // 0x380
+		::System::Boolean _submitting; // 0x388
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnAfterVhsSelectChange(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONAFTERVHSSELECTCHANGE_OFFSET))(this, args);
+		}
+
+		::System::Void OnVhsSelect(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSSELECT_OFFSET))(this, args);
+		}
+
+		::System::Void OnVhsSelectInner(::Class_1_451601B8BB62C38C_4* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_451601B8BB62C38C_4*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSSELECTINNER_OFFSET))(this, data);
+		}
+
+		::System::Void OnVhsAutoSelect(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSAUTOSELECT_OFFSET))(this, args);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void ChangeModeByContext(::MoleMole::UIVHSStorePageController_Context* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIVHSStorePageController_Context*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CHANGEMODEBYCONTEXT_OFFSET))(this, context);
+		}
+
+		::System::Void BindEvent_Notify()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_BINDEVENT_NOTIFY_OFFSET))(this);
+		}
+
+		::System::Void OnVHSModuleUpdate(::System::EventArgs* evtArgs)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSMODULEUPDATE_OFFSET))(this, evtArgs);
+		}
+
+		::System::Void HandleVHSModuleUpdate(::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_HANDLEVHSMODULEUPDATE_OFFSET))(this, init);
+		}
+
+		::System::Void OnVHSModuleCurrentTagListUpdate(::System::EventArgs* evtArgs)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSMODULECURRENTTAGLISTUPDATE_OFFSET))(this, evtArgs);
+		}
+
+		::System::Void HandleVHSModuleCurrentTagListUpdate(::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_HANDLEVHSMODULECURRENTTAGLISTUPDATE_OFFSET))(this, init);
+		}
+
+		::System::Void OnVHSModuleStoreLevelUpdate(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONVHSMODULESTORELEVELUPDATE_OFFSET))(this, args);
+		}
+
+		::System::Void OnStoreStateUpdate(::System::EventArgs* evtArgs)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONSTORESTATEUPDATE_OFFSET))(this, evtArgs);
+		}
+
+		::System::Void BindEvent_ScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_BINDEVENT_SCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Void CreateWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CREATEWIDGET_OFFSET))(this);
+		}
+
+		::System::Void GotoMain()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_GOTOMAIN_OFFSET))(this);
+		}
+
+		::System::Void InitTabButtonGroup()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_INITTABBUTTONGROUP_OFFSET))(this);
+		}
+
+		::System::Void OpenMessage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_OPENMESSAGE_OFFSET))(this);
+		}
+
+		::System::Void OpenInformation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_OPENINFORMATION_OFFSET))(this);
+		}
+
+		::System::Void OpenLimit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_OPENLIMIT_OFFSET))(this);
+		}
+
+		::System::Void OnAfterVhsPanelStateChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONAFTERVHSPANELSTATECHANGED_OFFSET))(this);
+		}
+
+		::System::Void SwitchAnim(::Foundation::Coroutine::CoroutineHandle& switchHandle, ::System::String* oldInAnim, ::System::String* oldOutAnim, ::System::String* newInAnim, ::System::String* newOutAnim, ::UnityEngine::Animation* oldAnim, ::UnityEngine::Animation* newAnim, ::System::Action* onSwitch, ::System::Boolean skipFadeOut)
+		{
+			return ((::System::Void(*)(::PVOID, ::Foundation::Coroutine::CoroutineHandle&, ::System::String*, ::System::String*, ::System::String*, ::System::String*, ::UnityEngine::Animation*, ::UnityEngine::Animation*, ::System::Action*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SWITCHANIM_OFFSET))(this, switchHandle, oldInAnim, oldOutAnim, newInAnim, newOutAnim, oldAnim, newAnim, onSwitch, skipFadeOut);
+		}
+
+		::System::Void SwitchAnim_1(::Foundation::Coroutine::CoroutineHandle& switchHandle, ::System::String* inAnim, ::System::String* outAnim, ::UnityEngine::Animation* anim, ::System::Action* onSwitch, ::System::Boolean skipFadeOut)
+		{
+			return ((::System::Void(*)(::PVOID, ::Foundation::Coroutine::CoroutineHandle&, ::System::String*, ::System::String*, ::UnityEngine::Animation*, ::System::Action*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SWITCHANIM_1_OFFSET))(this, switchHandle, inAnim, outAnim, anim, onSwitch, skipFadeOut);
+		}
+
+		::System::Void Recommand()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_RECOMMAND_OFFSET))(this);
+		}
+
+		::System::Void BeginSale()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_BEGINSALE_OFFSET))(this);
+		}
+
+		::System::Void AutoSelectInner()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_AUTOSELECTINNER_OFFSET))(this);
+		}
+
+		::System::Void RefreshCollectPanelWithAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHCOLLECTPANELWITHANIM_OFFSET))(this);
+		}
+
+		::System::Void RefreshCollectPanelButtonState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHCOLLECTPANELBUTTONSTATE_OFFSET))(this);
+		}
+
+		::System::Void FlushSlotServerStateToLocalState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHSLOTSERVERSTATETOLOCALSTATE_OFFSET))(this);
+		}
+
+		::System::Void FlushCacheStateToLocalState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHCACHESTATETOLOCALSTATE_OFFSET))(this);
+		}
+
+		::MoleMole::UIVHSStoreWidgetWidgetController_CollectPanelState GetCollectPanelState()
+		{
+			return ((::MoleMole::UIVHSStoreWidgetWidgetController_CollectPanelState(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_GETCOLLECTPANELSTATE_OFFSET))(this);
+		}
+
+		::System::Void InitSlot()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_INITSLOT_OFFSET))(this);
+		}
+
+		::System::Void FlushLocalStateToSlot(::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHLOCALSTATETOSLOT_OFFSET))(this, init);
+		}
+
+		::System::Void FlushSlotToCacheState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHSLOTTOCACHESTATE_OFFSET))(this);
+		}
+
+		::System::Boolean CanBeginSale()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CANBEGINSALE_OFFSET))(this);
+		}
+
+		::System::Void OpenPromoterSelectDialog(::MoleMole::UIVHSPromoterWidgetController* item)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIVHSPromoterWidgetController*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_OPENPROMOTERSELECTDIALOG_OFFSET))(this, item);
+		}
+
+		::System::Void FlushLocalStateToPromoter(::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHLOCALSTATETOPROMOTER_OFFSET))(this, init);
+		}
+
+		::System::Void FlushPromoterToCacheState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHPROMOTERTOCACHESTATE_OFFSET))(this);
+		}
+
+		::System::Void ClearCacheState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CLEARCACHESTATE_OFFSET))(this);
+		}
+
+		::System::Void OnAfterVHSPromoterIDChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONAFTERVHSPROMOTERIDCHANGED_OFFSET))(this);
+		}
+
+		::System::Void RecalCurrentPromoterSkillState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_RECALCURRENTPROMOTERSKILLSTATE_OFFSET))(this);
+		}
+
+		::System::Void RefreshTagLayer(::System::Single animDelayTime, ::System::Boolean skipAnim)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHTAGLAYER_OFFSET))(this, animDelayTime, skipAnim);
+		}
+
+		::System::Void RefreshTagList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHTAGLIST_OFFSET))(this);
+		}
+
+		::System::Void OnAfterCurrentTagListChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_ONAFTERCURRENTTAGLISTCHANGED_OFFSET))(this);
+		}
+
+		::System::Void ShowLvDialog()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SHOWLVDIALOG_OFFSET))(this);
+		}
+
+		::System::Void RefreshSpecialGuest()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHSPECIALGUEST_OFFSET))(this);
+		}
+
+		::System::Void RefreshGuestHeadInfoWidget()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHGUESTHEADINFOWIDGET_OFFSET))(this);
+		}
+
+		::System::Void RefreshCurrentFlow(::System::Boolean playFlowAnim)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_REFRESHCURRENTFLOW_OFFSET))(this, playFlowAnim);
+		}
+
+		::System::Void CheckNeedPlayFlowAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CHECKNEEDPLAYFLOWANIM_OFFSET))(this);
+		}
+
+		::System::Void CalCurrentFlow()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_CALCURRENTFLOW_OFFSET))(this);
+		}
+
+		::System::Void FlushFlowToView(::System::Boolean playFlowAnim)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_FLUSHFLOWTOVIEW_OFFSET))(this, playFlowAnim);
+		}
+
+		::System::Void DoLimit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_DOLIMIT_OFFSET))(this);
+		}
+
+		static ::System::Void ShowRuleDialog()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SHOWRULEDIALOG_OFFSET))();
+		}
+
+		::MoleMole::UIVHSStoreWidgetWidgetController_VhsPanelState get_vhsPanelState()
+		{
+			return ((::MoleMole::UIVHSStoreWidgetWidgetController_VhsPanelState(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_GET_VHSPANELSTATE_OFFSET))(this);
+		}
+
+		::System::Void set_vhsPanelState(::MoleMole::UIVHSStoreWidgetWidgetController_VhsPanelState value)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIVHSStoreWidgetWidgetController_VhsPanelState))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SET_VHSPANELSTATE_OFFSET))(this, value);
+		}
+
+		::System::Collections::Generic::IReadOnlyList_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>* get__selectedVhsForInformation()
+		{
+			return ((::System::Collections::Generic::IReadOnlyList_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_GET__SELECTEDVHSFORINFORMATION_OFFSET))(this);
+		}
+
+		::System::UInt32 get_vhsPromoterID()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_GET_VHSPROMOTERID_OFFSET))(this);
+		}
+
+		::System::Void set_vhsPromoterID(::System::UInt32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER_SET_VHSPROMOTERID_OFFSET))(this, value);
+		}
+
+		::System::Void _OnUIInit_g__BindEvent_Button_1_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__ONUIINIT_G__BINDEVENT_BUTTON_1_0_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::IReadOnlyList_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>* _OnVhsSelectInner_g__GetCurrentSelectedVhs_4_0()
+		{
+			return ((::System::Collections::Generic::IReadOnlyList_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__ONVHSSELECTINNER_G__GETCURRENTSELECTEDVHS_4_0_OFFSET))(this);
+		}
+
+		::System::Void _BindEvent_Notify_b__10_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BINDEVENT_NOTIFY_B__10_0_OFFSET))(this, args);
+		}
+
+		::System::Void _BindEvent_Notify_b__10_1(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BINDEVENT_NOTIFY_B__10_1_OFFSET))(this, args);
+		}
+
+		::System::Void _BindEvent_Notify_b__10_2(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BINDEVENT_NOTIFY_B__10_2_OFFSET))(this, args);
+		}
+
+		::System::Void _Recommand_b__27_0(::Class_0_16E4307DCC419505_7* message)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECOMMAND_B__27_0_OFFSET))(this, message);
+		}
+
+		::System::Void _BeginSale_g__RealSale_28_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BEGINSALE_G__REALSALE_28_0_OFFSET))(this);
+		}
+
+		::System::Void _BeginSale_b__28_3(::Class_0_16E4307DCC419505_7* message)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BEGINSALE_B__28_3_OFFSET))(this, message);
+		}
+
+		::System::Void _BeginSale_b__28_4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BEGINSALE_B__28_4_OFFSET))(this);
+		}
+
+		::System::Boolean _BeginSale_g__SelectAtLeastOneCollection_28_1()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BEGINSALE_G__SELECTATLEASTONECOLLECTION_28_1_OFFSET))(this);
+		}
+
+		static ::System::Boolean _BeginSale_g__HasAtLeastOneCanUsePromoter_28_2()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__BEGINSALE_G__HASATLEASTONECANUSEPROMOTER_28_2_OFFSET))();
+		}
+
+		::System::Int32 _AutoSelectInner_g__FindFirstCanSelectVhsID_29_0(::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::Class_2_208CC9941471731A_457*>>* vhsList_inner)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::Class_2_208CC9941471731A_457*>>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__AUTOSELECTINNER_G__FINDFIRSTCANSELECTVHSID_29_0_OFFSET))(this, vhsList_inner);
+		}
+
+		::System::Boolean _AutoSelectInner_g__SelectedContain_29_3(::System::Int32 vhsID_inner)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__AUTOSELECTINNER_G__SELECTEDCONTAIN_29_3_OFFSET))(this, vhsID_inner);
+		}
+
+		::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::Class_2_208CC9941471731A_457*>>* _AutoSelectInner_g__GetAllUnlockVhsWithTag_29_1(::System::Int32 tag)
+		{
+			return ((::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::Class_2_208CC9941471731A_457*>>*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__AUTOSELECTINNER_G__GETALLUNLOCKVHSWITHTAG_29_1_OFFSET))(this, tag);
+		}
+
+		static ::System::Int32 _AutoSelectInner_g__GetTagLevel_29_5(::Class_2_208CC9941471731A_457* template_inner, ::System::Int32 tag_inner)
+		{
+			return ((::System::Int32(*)(::Class_2_208CC9941471731A_457*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__AUTOSELECTINNER_G__GETTAGLEVEL_29_5_OFFSET))(template_inner, tag_inner);
+		}
+
+		::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::Class_2_208CC9941471731A_457*>>* _AutoSelectInner_g__GetAllUnlockVhs_29_2()
+		{
+			return ((::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::Class_2_208CC9941471731A_457*>>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__AUTOSELECTINNER_G__GETALLUNLOCKVHS_29_2_OFFSET))(this);
+		}
+
+		static ::System::Boolean _FlushSlotServerStateToLocalState_g__NeedSettle_32_0()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__FLUSHSLOTSERVERSTATETOLOCALSTATE_G__NEEDSETTLE_32_0_OFFSET))();
+		}
+
+		::System::Void _InitSlot_g__InitSlotForInformation_35_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__INITSLOT_G__INITSLOTFORINFORMATION_35_0_OFFSET))(this);
+		}
+
+		::System::Void _InitSlot_g__InitSlotForMessage_35_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__INITSLOT_G__INITSLOTFORMESSAGE_35_1_OFFSET))(this);
+		}
+
+		::System::Void _FlushLocalStateToSlot_g__RefreshSlotForInformation_36_0(::System::Int32 slotIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__FLUSHLOCALSTATETOSLOT_G__REFRESHSLOTFORINFORMATION_36_0_OFFSET))(this, slotIndex);
+		}
+
+		::System::Void _FlushLocalStateToSlot_g__RefreshSlotForMessage_36_1(::System::Int32 slotIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__FLUSHLOCALSTATETOSLOT_G__REFRESHSLOTFORMESSAGE_36_1_OFFSET))(this, slotIndex);
+		}
+
+		::System::Int32 _RecalCurrentPromoterSkillState_g__CalPassiveSkillLevel_44_0(::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0& a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__CALPASSIVESKILLLEVEL_44_0_OFFSET))(this, a1);
+		}
+
+		::System::Boolean _RecalCurrentPromoterSkillState_g__IsMatchTag_44_2(::System::Int32 preferTagID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0& a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__ISMATCHTAG_44_2_OFFSET))(this, preferTagID, a2);
+		}
+
+		::System::Boolean _RecalCurrentPromoterSkillState_g__CurrentCollectionContainsPreferTag_44_5(::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0& a1, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_1& a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0&, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_1&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__CURRENTCOLLECTIONCONTAINSPREFERTAG_44_5_OFFSET))(this, a1, a2);
+		}
+
+		::System::Boolean _RecalCurrentPromoterSkillState_g__IsMatchVHS_44_3(::System::Int32 vhsID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0& a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__ISMATCHVHS_44_3_OFFSET))(this, vhsID, a2);
+		}
+
+		::System::Boolean _RecalCurrentPromoterSkillState_g__CurrentTagContainsTag_44_4(::System::Int32 tagID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0& a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__CURRENTTAGCONTAINSTAG_44_4_OFFSET))(this, tagID, a2);
+		}
+
+		::System::Int32 _RecalCurrentPromoterSkillState_g__CalFlowSkillLevel_44_1(::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0& a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass44_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__RECALCURRENTPROMOTERSKILLSTATE_G__CALFLOWSKILLLEVEL_44_1_OFFSET))(this, a1);
+		}
+
+		::System::Collections::Generic::IReadOnlyList_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>* _RefreshTagLayer_g__GetCurrentSelectedVhs_45_0()
+		{
+			return ((::System::Collections::Generic::IReadOnlyList_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__REFRESHTAGLAYER_G__GETCURRENTSELECTEDVHS_45_0_OFFSET))(this);
+		}
+
+		::System::Void _OnAfterCurrentTagListChanged_g__InitTagScrollView_47_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__ONAFTERCURRENTTAGLISTCHANGED_G__INITTAGSCROLLVIEW_47_0_OFFSET))(this);
+		}
+
+		::System::Single _CalCurrentFlow_g__GetCollectionFlow_53_0(::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0& a1)
+		{
+			return ((::System::Single(*)(::PVOID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__GETCOLLECTIONFLOW_53_0_OFFSET))(this, a1);
+		}
+
+		::System::Single _CalCurrentFlow_g__GetTagLvAddFactor_53_3(::System::Int32 vhsCollectionID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0& a2)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Int32, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__GETTAGLVADDFACTOR_53_3_OFFSET))(this, vhsCollectionID, a2);
+		}
+
+		::System::Boolean _CalCurrentFlow_g__Match_53_5(::System::Int32 vhsTagID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0& a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__MATCH_53_5_OFFSET))(this, vhsTagID, a2);
+		}
+
+		::System::Single _CalCurrentFlow_g__GetTagMatchAddFactor_53_4(::System::Int32 vhsCollectionID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0& a2)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Int32, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__GETTAGMATCHADDFACTOR_53_4_OFFSET))(this, vhsCollectionID, a2);
+		}
+
+		::System::Boolean _CalCurrentFlow_g__MatchAtLeastOneTag_53_6(::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0& a1, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_1& a2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0&, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_1&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__MATCHATLEASTONETAG_53_6_OFFSET))(this, a1, a2);
+		}
+
+		::System::ValueTuple_2<::System::Int32, ::System::Single> _CalCurrentFlow_g__GetPromoterFlow_53_1(::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0& a1)
+		{
+			return ((::System::ValueTuple_2<::System::Int32, ::System::Single>(*)(::PVOID, ::MoleMole::UIVHSStoreWidgetWidgetController___c__DisplayClass53_0&))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__GETPROMOTERFLOW_53_1_OFFSET))(this, a1);
+		}
+
+		static ::System::ValueTuple_2<::System::Int32, ::System::Single> _CalCurrentFlow_g__GetBuffFlow_53_2()
+		{
+			return ((::System::ValueTuple_2<::System::Int32, ::System::Single>(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__CALCURRENTFLOW_G__GETBUFFFLOW_53_2_OFFSET))();
+		}
+
+		::System::Void _DoLimit_b__55_0(::Class_0_16E4307DCC419505_7* message)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER__DOLIMIT_B__55_0_OFFSET))(this, message);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREWIDGETWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

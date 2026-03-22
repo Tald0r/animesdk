@@ -1,0 +1,45 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ChessStateMachine/StateMachineAction.h"
+
+class Class_1_43BD383C98B4C0C5_20;
+
+#define MOLEMOLE_CHESSSTATEMACHINE_CLEANSCREENCOLORCORRECTIONACTION_FORCESTOP_OFFSET UNITYSDK_OFFSET(0x6D380F0)
+#define MOLEMOLE_CHESSSTATEMACHINE_CLEANSCREENCOLORCORRECTIONACTION_GET_ISINSTANT_OFFSET UNITYSDK_OFFSET(0x6D381B0)
+#define MOLEMOLE_CHESSSTATEMACHINE_CLEANSCREENCOLORCORRECTIONACTION_RUN_OFFSET UNITYSDK_OFFSET(0x6D37FC0)
+#define MOLEMOLE_CHESSSTATEMACHINE_CLEANSCREENCOLORCORRECTIONACTION_STOP_OFFSET UNITYSDK_OFFSET(0x6D38150)
+#define MOLEMOLE_CHESSSTATEMACHINE_CLEANSCREENCOLORCORRECTIONACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x6D381C0)
+
+namespace MoleMole::ChessStateMachine
+{
+	inline static constexpr unsigned int CleanScreenColorCorrectionAction_TypeDefinitionIndex = 36679;
+
+	class CleanScreenColorCorrectionAction : public ::MoleMole::ChessStateMachine::StateMachineAction
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_CLEANSCREENCOLORCORRECTIONACTION__CTOR_OFFSET))(this);
+		}
+
+		::System::Void Run(::Class_1_43BD383C98B4C0C5_20* context)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_43BD383C98B4C0C5_20*))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_CLEANSCREENCOLORCORRECTIONACTION_RUN_OFFSET))(this, context);
+		}
+
+		::System::Void ForceStop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_CLEANSCREENCOLORCORRECTIONACTION_FORCESTOP_OFFSET))(this);
+		}
+
+		::System::Void Stop()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_CLEANSCREENCOLORCORRECTIONACTION_STOP_OFFSET))(this);
+		}
+
+		::System::Boolean get_isInstant()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CHESSSTATEMACHINE_CLEANSCREENCOLORCORRECTIONACTION_GET_ISINSTANT_OFFSET))(this);
+		}
+	};
+}

@@ -6,25 +6,25 @@
 #include "unitysdk/UnityEngine/Vector3.h"
 #include "unitysdk/UnityEngine/Vector4.h"
 
-#define UNITYENGINE_UIVERTEX__CCTOR_OFFSET UNITYSDK_OFFSET(0x182B37B0)
+#define UNITYENGINE_UIVERTEX__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B039660)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int UIVertex_TypeDefinitionIndex = 4846;
+	inline static constexpr unsigned int UIVertex_TypeDefinitionIndex = 6341;
 
 	struct alignas(4) UIVertex
 	{
-		static ::UnityEngine::Color32* StaticGet_s_DefaultColor()
+		static ::UnityEngine::UIVertex* StaticGet_simpleVert()
 		{
-			return (::UnityEngine::Color32*)Il2CppClass::FromTypeDefinitionIndex(UIVertex_TypeDefinitionIndex)->GetStaticField(0x180);
+			return (::UnityEngine::UIVertex*)Il2CppClass::FromTypeDefinitionIndex(UIVertex_TypeDefinitionIndex)->GetStaticField(0x2EC0);
 		}
 		static ::UnityEngine::Vector4* StaticGet_s_DefaultTangent()
 		{
-			return (::UnityEngine::Vector4*)Il2CppClass::FromTypeDefinitionIndex(UIVertex_TypeDefinitionIndex)->GetStaticField(0x184);
+			return (::UnityEngine::Vector4*)Il2CppClass::FromTypeDefinitionIndex(UIVertex_TypeDefinitionIndex)->GetStaticField(0x2F0C);
 		}
-		static ::UnityEngine::UIVertex* StaticGet_simpleVert()
+		static ::UnityEngine::Color32* StaticGet_s_DefaultColor()
 		{
-			return (::UnityEngine::UIVertex*)Il2CppClass::FromTypeDefinitionIndex(UIVertex_TypeDefinitionIndex)->GetStaticField(0x194);
+			return (::UnityEngine::Color32*)Il2CppClass::FromTypeDefinitionIndex(UIVertex_TypeDefinitionIndex)->GetStaticField(0x2F1C);
 		}
 		::UnityEngine::Vector3 position; // 0x10
 		::UnityEngine::Vector3 normal; // 0x1C

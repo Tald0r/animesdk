@@ -4,18 +4,18 @@
 
 namespace System { class String; }
 
-#define SYSTEM_REFLECTION_EMIT_OPCODENAMES__CCTOR_OFFSET UNITYSDK_OFFSET(0x15CBAE50)
+#define SYSTEM_REFLECTION_EMIT_OPCODENAMES__CCTOR_OFFSET UNITYSDK_OFFSET(0x1898ACF0)
 
 namespace System::Reflection::Emit
 {
-	inline static constexpr unsigned int OpCodeNames_TypeDefinitionIndex = 651;
+	inline static constexpr unsigned int OpCodeNames_TypeDefinitionIndex = 622;
 
 	class OpCodeNames : public ::System::Object
 	{
 	public:
 		static ::Il2CppArray<::System::String*>** StaticGet_names()
 		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(OpCodeNames_TypeDefinitionIndex)->GetStaticField(0xA5F0);
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(OpCodeNames_TypeDefinitionIndex)->GetStaticField(0xB30);
 		}
 
 		static ::System::Void _cctor()

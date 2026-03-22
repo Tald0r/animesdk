@@ -4,25 +4,35 @@
 #include "unitysdk/System/Xml/Schema/XmlSchemaAnnotated.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaParticle_Occurs.h"
 
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_SET_MAXOCCURS_OFFSET UNITYSDK_OFFSET(0x17D93260)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_SET_MINOCCURS_OFFSET UNITYSDK_OFFSET(0x17D930A0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D94AE0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE__CTOR_OFFSET UNITYSDK_OFFSET(0x17D92520)
+namespace System { class String; }
+namespace System::Xml { class XmlQualifiedName; }
+
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_GETQUALIFIEDNAME_OFFSET UNITYSDK_OFFSET(0x1A108690)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_GET_ISEMPTY_OFFSET UNITYSDK_OFFSET(0x1A1085F0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_GET_MAXOCCURSSTRING_OFFSET UNITYSDK_OFFSET(0x1A107E50)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_GET_MINOCCURSSTRING_OFFSET UNITYSDK_OFFSET(0x1A107C20)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_GET_NAMESTRING_OFFSET UNITYSDK_OFFSET(0x1A108680)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_SET_MAXOCCURSSTRING_OFFSET UNITYSDK_OFFSET(0x1A107F60)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_SET_MAXOCCURS_OFFSET UNITYSDK_OFFSET(0x1A108390)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_SET_MINOCCURSSTRING_OFFSET UNITYSDK_OFFSET(0x1A107CB0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_SET_MINOCCURS_OFFSET UNITYSDK_OFFSET(0x1A1081D0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A108820)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1087E0)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int XmlSchemaParticle_TypeDefinitionIndex = 2189;
+	inline static constexpr unsigned int XmlSchemaParticle_TypeDefinitionIndex = 2180;
 
 	class XmlSchemaParticle : public ::System::Xml::Schema::XmlSchemaAnnotated
 	{
 	public:
 		static ::System::Xml::Schema::XmlSchemaParticle** StaticGet_Empty()
 		{
-			return (::System::Xml::Schema::XmlSchemaParticle**)Il2CppClass::FromTypeDefinitionIndex(XmlSchemaParticle_TypeDefinitionIndex)->GetStaticField(0xFA90);
+			return (::System::Xml::Schema::XmlSchemaParticle**)Il2CppClass::FromTypeDefinitionIndex(XmlSchemaParticle_TypeDefinitionIndex)->GetStaticField(0x1870);
 		}
-		::System::Decimal minOccurs; // 0x10
-		::System::Xml::Schema::XmlSchemaParticle_Occurs flags; // 0x20
-		::System::Decimal maxOccurs; // 0x24
+		::System::Xml::Schema::XmlSchemaParticle_Occurs flags; // 0x50
+		::System::Decimal minOccurs; // 0x54
+		::System::Decimal maxOccurs; // 0x64
 
 		::System::Void _ctor()
 		{
@@ -34,6 +44,26 @@ namespace System::Xml::Schema
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE__CCTOR_OFFSET))();
 		}
 
+		::System::String* get_MinOccursString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_GET_MINOCCURSSTRING_OFFSET))(this);
+		}
+
+		::System::Void set_MinOccursString(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_SET_MINOCCURSSTRING_OFFSET))(this, value);
+		}
+
+		::System::String* get_MaxOccursString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_GET_MAXOCCURSSTRING_OFFSET))(this);
+		}
+
+		::System::Void set_MaxOccursString(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_SET_MAXOCCURSSTRING_OFFSET))(this, value);
+		}
+
 		::System::Void set_MinOccurs(::System::Decimal value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_SET_MINOCCURS_OFFSET))(this, value);
@@ -42,6 +72,21 @@ namespace System::Xml::Schema
 		::System::Void set_MaxOccurs(::System::Decimal value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_SET_MAXOCCURS_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_IsEmpty()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_GET_ISEMPTY_OFFSET))(this);
+		}
+
+		::System::String* get_NameString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_GET_NAMESTRING_OFFSET))(this);
+		}
+
+		::System::Xml::XmlQualifiedName* GetQualifiedName()
+		{
+			return ((::System::Xml::XmlQualifiedName*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAPARTICLE_GETQUALIFIEDNAME_OFFSET))(this);
 		}
 	};
 }

@@ -1,0 +1,48 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_1_D0B0F27C7E97572F;
+class Class_2_1C97EB19EBCD7CE1;
+namespace MoleMole { class UIControlReference; }
+
+#define MOLEMOLE_UINEOGOLDENMECHALEVELTABWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xCFFF140)
+#define MOLEMOLE_UINEOGOLDENMECHALEVELTABWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xCFFF1B0)
+#define MOLEMOLE_UINEOGOLDENMECHALEVELTABWIDGETCONTROLLER_SETLEVEL_OFFSET UNITYSDK_OFFSET(0xCFFF2B0)
+#define MOLEMOLE_UINEOGOLDENMECHALEVELTABWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xCFFF380)
+#define MOLEMOLE_UINEOGOLDENMECHALEVELTABWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xCFFF3B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UINeoGoldenMechaLevelTabWidgetController_TypeDefinitionIndex = 39615;
+
+	class UINeoGoldenMechaLevelTabWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHALEVELTABWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_1C97EB19EBCD7CE1* get__viewModel()
+		{
+			return ((::Class_2_1C97EB19EBCD7CE1*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHALEVELTABWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHALEVELTABWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void SetLevel(::Class_1_D0B0F27C7E97572F* generalLevel)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_D0B0F27C7E97572F*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHALEVELTABWIDGETCONTROLLER_SETLEVEL_OFFSET))(this, generalLevel);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UINEOGOLDENMECHALEVELTABWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+	};
+}

@@ -1,34 +1,53 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/System/Reflection/CallingConventions.h"
+#include "unitysdk/System/Reflection/BindingFlags.h"
 #include "unitysdk/System/Reflection/MethodAttributes.h"
+#include "unitysdk/System/Reflection/MethodImplAttributes.h"
 #include "unitysdk/System/Reflection/MethodInfo.h"
+#include "unitysdk/System/RuntimeMethodHandle.h"
 
+namespace System { class Object; }
 namespace System { class String; }
 namespace System { class Type; }
+namespace System::Globalization { class CultureInfo; }
+namespace System::Reflection { class Binder; }
+namespace System::Reflection { class ICustomAttributeProvider; }
+namespace System::Reflection { class Module; }
 namespace System::Reflection { class ParameterInfo; }
 namespace System::Reflection::Emit { class ILGenerator; }
 
-#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETILGENERATOR_OFFSET UNITYSDK_OFFSET(0x17D36FE0)
-#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETPARAMETERS_OFFSET UNITYSDK_OFFSET(0x17D37030)
-#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_ATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x17D36E00)
-#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_CALLINGCONVENTION_OFFSET UNITYSDK_OFFSET(0x17D36E50)
-#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_DECLARINGTYPE_OFFSET UNITYSDK_OFFSET(0x17D36EA0)
-#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_NAME_OFFSET UNITYSDK_OFFSET(0x17D36EF0)
-#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_RETURNPARAMETER_OFFSET UNITYSDK_OFFSET(0x17D36F40)
-#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_RETURNTYPE_OFFSET UNITYSDK_OFFSET(0x17D36F90)
-#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD__CTOR_OFFSET UNITYSDK_OFFSET(0x17D36DB0)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETBASEDEFINITION_OFFSET UNITYSDK_OFFSET(0x19AD28C0)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETCUSTOMATTRIBUTES_1_OFFSET UNITYSDK_OFFSET(0x19AD2940)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETCUSTOMATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x19AD2900)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETILGENERATOR_OFFSET UNITYSDK_OFFSET(0x19AD2980)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETMETHODIMPLEMENTATIONFLAGS_OFFSET UNITYSDK_OFFSET(0x19AD29C0)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETPARAMETERS_OFFSET UNITYSDK_OFFSET(0x19AD2A00)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_ATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x19AD2740)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_DECLARINGTYPE_OFFSET UNITYSDK_OFFSET(0x19AD2780)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_METHODHANDLE_OFFSET UNITYSDK_OFFSET(0x19AD27C0)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_NAME_OFFSET UNITYSDK_OFFSET(0x19AD2800)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_REFLECTEDTYPE_OFFSET UNITYSDK_OFFSET(0x19AD2840)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_RETURNTYPECUSTOMATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x19AD2880)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_INVOKE_OFFSET UNITYSDK_OFFSET(0x19AD2A40)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_ISDEFINED_OFFSET UNITYSDK_OFFSET(0x19AD2A80)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19AD2700)
+#define SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD__CTOR_OFFSET UNITYSDK_OFFSET(0x19AD26C0)
 
 namespace System::Reflection::Emit
 {
-	inline static constexpr unsigned int DynamicMethod_TypeDefinitionIndex = 9197;
+	inline static constexpr unsigned int DynamicMethod_TypeDefinitionIndex = 1629;
 
 	class DynamicMethod : public ::System::Reflection::MethodInfo
 	{
 	public:
-		::System::Void _ctor(::System::String* name, ::System::Type* returnType, ::Il2CppArray<::System::Type*>* parameterTypes)
+		::System::Void _ctor(::System::String* name, ::System::Type* returnType, ::Il2CppArray<::System::Type*>* parameterTypes, ::System::Reflection::Module* m, ::System::Boolean skipVisibility)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Type*, ::Il2CppArray<::System::Type*>*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD__CTOR_OFFSET))(this, name, returnType, parameterTypes);
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Type*, ::Il2CppArray<::System::Type*>*, ::System::Reflection::Module*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD__CTOR_OFFSET))(this, name, returnType, parameterTypes, m, skipVisibility);
+		}
+
+		::System::Void _ctor_1(::System::String* name, ::System::Type* returnType, ::Il2CppArray<::System::Type*>* parameterTypes, ::System::Type* owner, ::System::Boolean skipVisibility)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Type*, ::Il2CppArray<::System::Type*>*, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD__CTOR_1_OFFSET))(this, name, returnType, parameterTypes, owner, skipVisibility);
 		}
 
 		::System::Reflection::MethodAttributes get_Attributes()
@@ -36,14 +55,14 @@ namespace System::Reflection::Emit
 			return ((::System::Reflection::MethodAttributes(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_ATTRIBUTES_OFFSET))(this);
 		}
 
-		::System::Reflection::CallingConventions get_CallingConvention()
-		{
-			return ((::System::Reflection::CallingConventions(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_CALLINGCONVENTION_OFFSET))(this);
-		}
-
 		::System::Type* get_DeclaringType()
 		{
 			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_DECLARINGTYPE_OFFSET))(this);
+		}
+
+		::System::RuntimeMethodHandle get_MethodHandle()
+		{
+			return ((::System::RuntimeMethodHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_METHODHANDLE_OFFSET))(this);
 		}
 
 		::System::String* get_Name()
@@ -51,14 +70,29 @@ namespace System::Reflection::Emit
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_NAME_OFFSET))(this);
 		}
 
-		::System::Reflection::ParameterInfo* get_ReturnParameter()
+		::System::Type* get_ReflectedType()
 		{
-			return ((::System::Reflection::ParameterInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_RETURNPARAMETER_OFFSET))(this);
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_REFLECTEDTYPE_OFFSET))(this);
 		}
 
-		::System::Type* get_ReturnType()
+		::System::Reflection::ICustomAttributeProvider* get_ReturnTypeCustomAttributes()
 		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_RETURNTYPE_OFFSET))(this);
+			return ((::System::Reflection::ICustomAttributeProvider*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GET_RETURNTYPECUSTOMATTRIBUTES_OFFSET))(this);
+		}
+
+		::System::Reflection::MethodInfo* GetBaseDefinition()
+		{
+			return ((::System::Reflection::MethodInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETBASEDEFINITION_OFFSET))(this);
+		}
+
+		::Il2CppArray<::System::Object*>* GetCustomAttributes(::System::Boolean inherit)
+		{
+			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETCUSTOMATTRIBUTES_OFFSET))(this, inherit);
+		}
+
+		::Il2CppArray<::System::Object*>* GetCustomAttributes_1(::System::Type* attributeType, ::System::Boolean inherit)
+		{
+			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETCUSTOMATTRIBUTES_1_OFFSET))(this, attributeType, inherit);
 		}
 
 		::System::Reflection::Emit::ILGenerator* GetILGenerator()
@@ -66,9 +100,24 @@ namespace System::Reflection::Emit
 			return ((::System::Reflection::Emit::ILGenerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETILGENERATOR_OFFSET))(this);
 		}
 
+		::System::Reflection::MethodImplAttributes GetMethodImplementationFlags()
+		{
+			return ((::System::Reflection::MethodImplAttributes(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETMETHODIMPLEMENTATIONFLAGS_OFFSET))(this);
+		}
+
 		::Il2CppArray<::System::Reflection::ParameterInfo*>* GetParameters()
 		{
 			return ((::Il2CppArray<::System::Reflection::ParameterInfo*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_GETPARAMETERS_OFFSET))(this);
+		}
+
+		::System::Object* Invoke(::System::Object* obj, ::System::Reflection::BindingFlags invokeAttr, ::System::Reflection::Binder* binder, ::Il2CppArray<::System::Object*>* parameters, ::System::Globalization::CultureInfo* culture)
+		{
+			return ((::System::Object*(*)(::PVOID, ::System::Object*, ::System::Reflection::BindingFlags, ::System::Reflection::Binder*, ::Il2CppArray<::System::Object*>*, ::System::Globalization::CultureInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_INVOKE_OFFSET))(this, obj, invokeAttr, binder, parameters, culture);
+		}
+
+		::System::Boolean IsDefined(::System::Type* attributeType, ::System::Boolean inherit)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_EMIT_DYNAMICMETHOD_ISDEFINED_OFFSET))(this, attributeType, inherit);
 		}
 	};
 }

@@ -11,31 +11,37 @@ namespace System::Linq::Expressions { class ExpressionVisitor; }
 namespace System::Reflection { class ConstructorInfo; }
 namespace System::Reflection { class MemberInfo; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x17D01860)
-#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x17D01690)
-#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x17D01770)
-#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_ARGUMENTS_OFFSET UNITYSDK_OFFSET(0x17D01650)
-#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_CONSTRUCTOR_OFFSET UNITYSDK_OFFSET(0x17D01640)
-#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_MEMBERS_OFFSET UNITYSDK_OFFSET(0x17D01850)
-#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x17D01630)
-#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x17D01600)
-#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_UPDATE_OFFSET UNITYSDK_OFFSET(0x17D01890)
-#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17D01590)
+#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x1AA77180)
+#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x1AA725B0)
+#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x1AA71910)
+#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_ARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1AA77130)
+#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_CONSTRUCTOR_OFFSET UNITYSDK_OFFSET(0x1AA77120)
+#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_MEMBERS_OFFSET UNITYSDK_OFFSET(0x1AA77170)
+#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x1AA77110)
+#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1AA770E0)
+#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION_UPDATE_OFFSET UNITYSDK_OFFSET(0x1AA771B0)
+#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AA772A0)
+#define SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA77070)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int NewExpression_TypeDefinitionIndex = 3242;
+	inline static constexpr unsigned int NewExpression_TypeDefinitionIndex = 4529;
 
 	class NewExpression : public ::System::Linq::Expressions::Expression
 	{
 	public:
-		::System::Reflection::ConstructorInfo* _Constructor_k__BackingField; // 0x10
-		::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>* _arguments; // 0x18
+		::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>* _arguments; // 0x10
+		::System::Reflection::ConstructorInfo* _Constructor_k__BackingField; // 0x18
 		::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Reflection::MemberInfo*>* _Members_k__BackingField; // 0x20
 
 		::System::Void _ctor(::System::Reflection::ConstructorInfo* constructor, ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>* arguments, ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Reflection::MemberInfo*>* members)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Reflection::ConstructorInfo*, ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*, ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Reflection::MemberInfo*>*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION__CTOR_OFFSET))(this, constructor, arguments, members);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_NEWEXPRESSION__CTOR_1_OFFSET))(this);
 		}
 
 		::System::Type* get_Type()

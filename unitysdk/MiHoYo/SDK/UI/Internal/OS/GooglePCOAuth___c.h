@@ -5,24 +5,24 @@
 namespace MiHoYo::SDK::UI::Internal::OS { class GooglePCOAuth; }
 namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_UI_INTERNAL_OS_GOOGLEPCOAUTH___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x159529D0)
-#define MIHOYO_SDK_UI_INTERNAL_OS_GOOGLEPCOAUTH___C__CTOR_OFFSET UNITYSDK_OFFSET(0x15952A10)
-#define MIHOYO_SDK_UI_INTERNAL_OS_GOOGLEPCOAUTH___C__SHOW_B__29_0_OFFSET UNITYSDK_OFFSET(0x15952A20)
+#define MIHOYO_SDK_UI_INTERNAL_OS_GOOGLEPCOAUTH___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x180ECDB0)
+#define MIHOYO_SDK_UI_INTERNAL_OS_GOOGLEPCOAUTH___C__CTOR_OFFSET UNITYSDK_OFFSET(0x180ECDF0)
+#define MIHOYO_SDK_UI_INTERNAL_OS_GOOGLEPCOAUTH___C__SHOW_B__29_0_OFFSET UNITYSDK_OFFSET(0x180ECE00)
 
 namespace MiHoYo::SDK::UI::Internal::OS
 {
-	inline static constexpr unsigned int GooglePCOAuth___c_TypeDefinitionIndex = 7256;
+	inline static constexpr unsigned int GooglePCOAuth___c_TypeDefinitionIndex = 18399;
 
 	class GooglePCOAuth___c : public ::System::Object
 	{
 	public:
 		static ::System::Action_1<::MiHoYo::SDK::UI::Internal::OS::GooglePCOAuth*>** StaticGet___9__29_0()
 		{
-			return (::System::Action_1<::MiHoYo::SDK::UI::Internal::OS::GooglePCOAuth*>**)Il2CppClass::FromTypeDefinitionIndex(GooglePCOAuth___c_TypeDefinitionIndex)->GetStaticField(0x199D0);
+			return (::System::Action_1<::MiHoYo::SDK::UI::Internal::OS::GooglePCOAuth*>**)Il2CppClass::FromTypeDefinitionIndex(GooglePCOAuth___c_TypeDefinitionIndex)->GetStaticField(0xAB80);
 		}
 		static ::MiHoYo::SDK::UI::Internal::OS::GooglePCOAuth___c** StaticGet___9()
 		{
-			return (::MiHoYo::SDK::UI::Internal::OS::GooglePCOAuth___c**)Il2CppClass::FromTypeDefinitionIndex(GooglePCOAuth___c_TypeDefinitionIndex)->GetStaticField(0x199D8);
+			return (::MiHoYo::SDK::UI::Internal::OS::GooglePCOAuth___c**)Il2CppClass::FromTypeDefinitionIndex(GooglePCOAuth___c_TypeDefinitionIndex)->GetStaticField(0xAB88);
 		}
 
 		static ::System::Void _cctor()

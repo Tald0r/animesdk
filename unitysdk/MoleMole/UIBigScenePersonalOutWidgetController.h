@@ -1,0 +1,93 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_2427A3A85F3C7D26;
+class Class_2_C66DEC328A595BAB_1;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD031290)
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_ONPERSONALOUTCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xD031040)
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD031330)
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD030C00)
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD030F90)
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_UPDATEINTERACTABLE_1_OFFSET UNITYSDK_OFFSET(0xD030EF0)
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_UPDATEINTERACTABLE_OFFSET UNITYSDK_OFFSET(0xD030E70)
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD031410)
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD031440)
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD0314B0)
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD031530)
+#define MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD031590)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBigScenePersonalOutWidgetController_TypeDefinitionIndex = 77562;
+
+	class UIBigScenePersonalOutWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_C66DEC328A595BAB_1* _view; // 0x2A0
+		::Class_1_2427A3A85F3C7D26* _interactableAdvanced; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void UpdateInteractable(::System::Boolean v)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_UPDATEINTERACTABLE_OFFSET))(this, v);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnPersonalOutClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_ONPERSONALOUTCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void UpdateInteractable_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER_UPDATEINTERACTABLE_1_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBIGSCENEPERSONALOUTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

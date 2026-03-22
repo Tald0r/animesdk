@@ -1,0 +1,86 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_F533EF94ACB3DAAD.h"
+#include "unitysdk/Enum_3_1811A2FF39BB6575.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_1_264E9A426D3F1E89;
+class Class_1_79526D80B8F6897C;
+namespace UnityEngine { class Transform; }
+
+#define CLASS_2_7808BF09EBF8C35A_METHOD_2_2BEB3887295B939A_OFFSET UNITYSDK_OFFSET(0x9106980)
+#define CLASS_2_7808BF09EBF8C35A_METHOD_2_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x91069F0)
+#define CLASS_2_7808BF09EBF8C35A_METHOD_2_5A94436233800AC6_OFFSET UNITYSDK_OFFSET(0x9106B00)
+#define CLASS_2_7808BF09EBF8C35A_METHOD_2_5D3D37F2BAE9FB65_OFFSET UNITYSDK_OFFSET(0x9106900)
+#define CLASS_2_7808BF09EBF8C35A_METHOD_2_633D6F640D0066DA_OFFSET UNITYSDK_OFFSET(0x9106A70)
+#define CLASS_2_7808BF09EBF8C35A_METHOD_2_77E3CF907BA6F8B7_OFFSET UNITYSDK_OFFSET(0x9106A80)
+#define CLASS_2_7808BF09EBF8C35A_METHOD_2_871AC6DBEB0AF4F3_OFFSET UNITYSDK_OFFSET(0x9106B70)
+#define CLASS_2_7808BF09EBF8C35A_METHOD_2_B799DB9989A18F1D_1_OFFSET UNITYSDK_OFFSET(0x9106CC0)
+#define CLASS_2_7808BF09EBF8C35A_METHOD_2_B799DB9989A18F1D_OFFSET UNITYSDK_OFFSET(0x9106C40)
+#define CLASS_2_7808BF09EBF8C35A_METHOD_2_C6857D90E42A43EB_OFFSET UNITYSDK_OFFSET(0x91067E0)
+#define CLASS_2_7808BF09EBF8C35A__CTOR_OFFSET UNITYSDK_OFFSET(0x9106790)
+
+inline static constexpr unsigned int Class_2_7808BF09EBF8C35A_TypeDefinitionIndex = 74163;
+
+class Class_2_7808BF09EBF8C35A : public ::Class_1_F533EF94ACB3DAAD
+{
+public:
+	::Class_1_264E9A426D3F1E89* Field_2_2; // 0x18
+	::UnityEngine::Transform* Field_2_0; // 0x20
+	::UnityEngine::Transform* Field_2_1; // 0x28
+
+	::System::Void _ctor(::UnityEngine::Transform* a1, ::UnityEngine::Transform* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Transform*, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + CLASS_2_7808BF09EBF8C35A__CTOR_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_C6857D90E42A43EB(::Class_1_79526D80B8F6897C* a1, ::System::Boolean a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_79526D80B8F6897C*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_7808BF09EBF8C35A_METHOD_2_C6857D90E42A43EB_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_2BEB3887295B939A()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7808BF09EBF8C35A_METHOD_2_2BEB3887295B939A_OFFSET))(this);
+	}
+
+	::System::Void Method_2_5D3D37F2BAE9FB65()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7808BF09EBF8C35A_METHOD_2_5D3D37F2BAE9FB65_OFFSET))(this);
+	}
+
+	::System::Void Method_2_4343F372F34C05BF()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7808BF09EBF8C35A_METHOD_2_4343F372F34C05BF_OFFSET))(this);
+	}
+
+	::System::Void Method_2_633D6F640D0066DA(::Class_1_79526D80B8F6897C* a1, ::System::Boolean a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_1_79526D80B8F6897C*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_7808BF09EBF8C35A_METHOD_2_633D6F640D0066DA_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_77E3CF907BA6F8B7(::Enum_3_1811A2FF39BB6575 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Enum_3_1811A2FF39BB6575))((::PBYTE)hIl2Cpp + CLASS_2_7808BF09EBF8C35A_METHOD_2_77E3CF907BA6F8B7_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_5A94436233800AC6()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7808BF09EBF8C35A_METHOD_2_5A94436233800AC6_OFFSET))(this);
+	}
+
+	::System::Void Method_2_871AC6DBEB0AF4F3(::UnityEngine::Vector3 a1, ::UnityEngine::Vector3 a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + CLASS_2_7808BF09EBF8C35A_METHOD_2_871AC6DBEB0AF4F3_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_B799DB9989A18F1D()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7808BF09EBF8C35A_METHOD_2_B799DB9989A18F1D_OFFSET))(this);
+	}
+
+	::System::Void Method_2_B799DB9989A18F1D_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7808BF09EBF8C35A_METHOD_2_B799DB9989A18F1D_1_OFFSET))(this);
+	}
+};

@@ -3,15 +3,13 @@
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int CinemachineVirtualCameraBase_BlendHint_TypeDefinitionIndex = 30003;
+	inline static constexpr unsigned int CinemachineVirtualCameraBase_BlendHint_TypeDefinitionIndex = 31098;
 
 	enum class CinemachineVirtualCameraBase_BlendHint : ::System::Int32
 	{
 		None = 0,
 		SphericalPosition = 1,
 		CylindricalPosition = 2,
-		ScreenSpaceAimWhenTargetsDiffer = 4,
-		RadialAimAndLinearDistance = 8,
-		BlockFovAdjustT = 16,
+		ScreenSpaceAimWhenTargetsDiffer = 3,
 	};
 }

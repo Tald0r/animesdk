@@ -5,24 +5,19 @@
 
 namespace System { class String; }
 
-#define CLASS_1_E5DFDD7C057D0C86_CLEAR_OFFSET UNITYSDK_OFFSET(0x162BCC60)
-#define CLASS_1_E5DFDD7C057D0C86__CTOR_OFFSET UNITYSDK_OFFSET(0x162BCCC0)
+#define CLASS_1_E5DFDD7C057D0C86__CTOR_OFFSET UNITYSDK_OFFSET(0x63F5060)
 
-inline static constexpr unsigned int Class_1_E5DFDD7C057D0C86_TypeDefinitionIndex = 32410;
+inline static constexpr unsigned int Class_1_E5DFDD7C057D0C86_TypeDefinitionIndex = 53547;
 
 class Class_1_E5DFDD7C057D0C86 : public ::System::Object
 {
 public:
-	::System::String* Field_1_1; // 0x10
-	::UnityEngine::Vector3 Field_1_0; // 0x18
+	::System::String* Field_1_0; // 0x10
+	::UnityEngine::Vector3 Field_1_2; // 0x18
+	::UnityEngine::Vector3 Field_1_1; // 0x24
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_E5DFDD7C057D0C86__CTOR_OFFSET))(this);
-	}
-
-	::System::Void Clear()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_E5DFDD7C057D0C86_CLEAR_OFFSET))(this);
 	}
 };

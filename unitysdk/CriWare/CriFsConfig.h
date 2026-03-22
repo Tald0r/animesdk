@@ -4,16 +4,15 @@
 
 namespace System { class String; }
 
-#define CRIWARE_CRIFSCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x112C5D30)
+#define CRIWARE_CRIFSCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD83870)
 
 namespace CriWare
 {
-	inline static constexpr unsigned int CriFsConfig_TypeDefinitionIndex = 30295;
+	inline static constexpr unsigned int CriFsConfig_TypeDefinitionIndex = 31314;
 
 	class CriFsConfig : public ::System::Object
 	{
 	public:
-		// static const ::System::Int32 defaultAndroidDeviceReadBitrate = 0x2FAF080; // 0x0
 		::System::Int32 numberOfLoaders; // 0x10
 		::System::Int32 numberOfBinders; // 0x14
 		::System::Int32 numberOfInstallers; // 0x18

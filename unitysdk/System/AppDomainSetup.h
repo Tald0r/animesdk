@@ -4,11 +4,14 @@
 
 namespace System { class String; }
 
-#define SYSTEM_APPDOMAINSETUP__CTOR_OFFSET UNITYSDK_OFFSET(0x15AF64C0)
+#define SYSTEM_APPDOMAINSETUP_GETAPPBASE_OFFSET UNITYSDK_OFFSET(0x17F4A480)
+#define SYSTEM_APPDOMAINSETUP_GET_APPLICATIONBASE_OFFSET UNITYSDK_OFFSET(0x17F4AC90)
+#define SYSTEM_APPDOMAINSETUP__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F48ED0)
+#define SYSTEM_APPDOMAINSETUP__CTOR_OFFSET UNITYSDK_OFFSET(0x17F4A470)
 
 namespace System
 {
-	inline static constexpr unsigned int AppDomainSetup_TypeDefinitionIndex = 376;
+	inline static constexpr unsigned int AppDomainSetup_TypeDefinitionIndex = 364;
 
 	class AppDomainSetup : public ::System::Object
 	{
@@ -40,6 +43,21 @@ namespace System
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_APPDOMAINSETUP__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::System::AppDomainSetup* setup)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::AppDomainSetup*))((::PBYTE)hIl2Cpp + SYSTEM_APPDOMAINSETUP__CTOR_1_OFFSET))(this, setup);
+		}
+
+		static ::System::String* GetAppBase(::System::String* appBase)
+		{
+			return ((::System::String*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_APPDOMAINSETUP_GETAPPBASE_OFFSET))(appBase);
+		}
+
+		::System::String* get_ApplicationBase()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_APPDOMAINSETUP_GET_APPLICATIONBASE_OFFSET))(this);
 		}
 	};
 }

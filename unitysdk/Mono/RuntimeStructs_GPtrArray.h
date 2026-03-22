@@ -4,7 +4,7 @@
 
 namespace Mono
 {
-	inline static constexpr unsigned int RuntimeStructs_GPtrArray_TypeDefinitionIndex = 16;
+	inline static constexpr unsigned int RuntimeStructs_GPtrArray_TypeDefinitionIndex = 19;
 
 	struct alignas(8) RuntimeStructs_GPtrArray
 	{

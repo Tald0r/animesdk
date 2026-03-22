@@ -1,0 +1,188 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIInLevelPauseBattleInfoWidgetController_EShowType.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_1_1685EC66FBD28897;
+class Class_2_79F6D62CE30E3F8E_27;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIInLevelPauseBattleInfoWidgetController_ChallengeRowWidgetItem; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_GETBINDMODULES_OFFSET UNITYSDK_OFFSET(0x8A3F9A0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_GETNESTEDLISTDELEGATEGOLIST_OFFSET UNITYSDK_OFFSET(0x8A3FA00)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_GETSHOWREWARDLIST_OFFSET UNITYSDK_OFFSET(0x8A41A00)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0x8A3D5B0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8A3D460)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONCREATREWARDITEM_OFFSET UNITYSDK_OFFSET(0x8A3F740)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8A3DB20)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8A3DB90)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8A3D500)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8A3DA70)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHACTCHALLENGELIST_OFFSET UNITYSDK_OFFSET(0x8A3FF20)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHACTVIEW_OFFSET UNITYSDK_OFFSET(0x8A3F820)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHCHESSBOARDVIEW_OFFSET UNITYSDK_OFFSET(0x8A3DC70)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHCONSOLE_OFFSET UNITYSDK_OFFSET(0x8A3FA60)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHDETAIL_OFFSET UNITYSDK_OFFSET(0x8A3FEC0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHLEVELQUESTSVIEW_OFFSET UNITYSDK_OFFSET(0x8A42550)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHREWARDVIEW_OFFSET UNITYSDK_OFFSET(0x8A3FDC0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHSHOWREWARDLIST_OFFSET UNITYSDK_OFFSET(0x8A41230)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHTITLEAREA_OFFSET UNITYSDK_OFFSET(0x8A41D10)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_UPDATEREWARDITEM_OFFSET UNITYSDK_OFFSET(0x8A41EC0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8A42880)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8A42930)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8A42A00)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8A42A10)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8A429A0)
+#define MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8A42A90)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelPauseBattleInfoWidgetController_TypeDefinitionIndex = 56580;
+
+	class UIInLevelPauseBattleInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* showList; // 0x2A0
+		::Class_2_79F6D62CE30E3F8E_27* _view; // 0x2A8
+		::System::Collections::Generic::List_1<::MoleMole::UIInLevelPauseBattleInfoWidgetController_ChallengeRowWidgetItem*>* _challengeItemList; // 0x2B0
+		::MoleMole::UIInLevelPauseBattleInfoWidgetController_EShowType _showType; // 0x2B8
+		::System::Int32 _battleID; // 0x2BC
+		::System::Collections::Generic::List_1<::System::Int32>* _rewardItemIDList; // 0x2C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* OnCreatRewardItem(::Struct_2_575273D27F02957E binderInfo)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::Struct_2_575273D27F02957E))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_ONCREATREWARDITEM_OFFSET))(this, binderInfo);
+		}
+
+		::System::Void RefreshACTView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHACTVIEW_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::MoleMole::MonoGamepadModule*>* GetBindModules()
+		{
+			return ((::System::Collections::Generic::List_1<::MoleMole::MonoGamepadModule*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_GETBINDMODULES_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* GetNestedListDelegateGoList()
+		{
+			return ((::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_GETNESTEDLISTDELEGATEGOLIST_OFFSET))(this);
+		}
+
+		::System::Void RefreshConsole()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHCONSOLE_OFFSET))(this);
+		}
+
+		::System::Void RefreshRewardView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHREWARDVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshDetail()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHDETAIL_OFFSET))(this);
+		}
+
+		::System::Void RefreshACTChallengeList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHACTCHALLENGELIST_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* RefreshShowRewardList()
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHSHOWREWARDLIST_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>* GetShowRewardList(::System::Collections::Generic::List_1<::System::Int32>* dataList)
+		{
+			return ((::System::Collections::Generic::List_1<::Class_1_1685EC66FBD28897*>*(*)(::PVOID, ::System::Collections::Generic::List_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_GETSHOWREWARDLIST_OFFSET))(this, dataList);
+		}
+
+		::System::Void RefreshChessboardView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHCHESSBOARDVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshTitleArea()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHTITLEAREA_OFFSET))(this);
+		}
+
+		::System::Void UpdateRewardItem(::UnityEngine::GameObject* go, ::System::Int32 dataIndex, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_UPDATEREWARDITEM_OFFSET))(this, go, dataIndex, init);
+		}
+
+		::System::Void RefreshLevelQuestsView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER_REFRESHLEVELQUESTSVIEW_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELPAUSEBATTLEINFOWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

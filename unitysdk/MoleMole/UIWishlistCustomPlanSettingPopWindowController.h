@@ -1,0 +1,228 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+#include "unitysdk/Share/EAvatarSkillType.h"
+
+class Class_2_21A7ACA4473668F9_1;
+class Class_2_D89CCC627A66D0AD;
+class Class_3_36FF8167703D4259;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralToggleWidgetController; }
+namespace MoleMole { class UIWishlistCustomPlanSettingPopWindowContext; }
+namespace MoleMole { class UIWishlistCustomSettingSliderItemWidgetController; }
+namespace MoleMole { class UIWishlistCustomSettingSuitSelectWidgetController; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+namespace UnityEngine::UI::Extension { class UITabButtonGroup; }
+
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_CHECKEQUIPSAVE_OFFSET UNITYSDK_OFFSET(0x7C62F50)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_GETMAXSKILLLEVEL_OFFSET UNITYSDK_OFFSET(0x7C61FE0)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_GETSKILLLEVEL_OFFSET UNITYSDK_OFFSET(0x7C61F30)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x7C5CEA0)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONCLICKPROPERTYTABBTN_OFFSET UNITYSDK_OFFSET(0x7C63560)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONCLICKSUITTABBTN_OFFSET UNITYSDK_OFFSET(0x7C634C0)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7C5D460)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x7C5D500)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONROLETOGGLEVALUE_OFFSET UNITYSDK_OFFSET(0x7C61A30)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7C5DB30)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7C5CEB0)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7C5D180)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONWEAPONTOGGLEVALUE_OFFSET UNITYSDK_OFFSET(0x7C61CB0)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHAVATARTYPEVIEW_OFFSET UNITYSDK_OFFSET(0x7C5DBC0)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHPROPERTYINFOVIEW_OFFSET UNITYSDK_OFFSET(0x7C62600)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHSKILLTYPEVIEW_OFFSET UNITYSDK_OFFSET(0x7C5F2C0)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHSLOTPROPERTYINFO_OFFSET UNITYSDK_OFFSET(0x7C62A00)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHSUITINFOVIEW_OFFSET UNITYSDK_OFFSET(0x7C62360)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHSUITTYPEVIEW_OFFSET UNITYSDK_OFFSET(0x7C608B0)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x7C5D2B0)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_SAVECUSTOMPLAN_OFFSET UNITYSDK_OFFSET(0x7C62D20)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7C63600)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER__SAVECUSTOMPLAN_B__29_0_OFFSET UNITYSDK_OFFSET(0x7C63610)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER__SAVECUSTOMPLAN_B__29_1_OFFSET UNITYSDK_OFFSET(0x7C63D40)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER__SAVECUSTOMPLAN_B__29_2_OFFSET UNITYSDK_OFFSET(0x7C63D50)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER__SAVECUSTOMPLAN_B__29_3_OFFSET UNITYSDK_OFFSET(0x7C63D60)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x7C63D70)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x7C63DE0)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x7C63E60)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x7C63E70)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x7C63E80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIWishlistCustomPlanSettingPopWindowController_TypeDefinitionIndex = 76450;
+
+	class UIWishlistCustomPlanSettingPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_21A7ACA4473668F9_1* _view; // 0x2F8
+		::MoleMole::UIWishlistCustomPlanSettingPopWindowContext* _context; // 0x300
+		::Class_2_D89CCC627A66D0AD* _avatarData; // 0x308
+		::Class_3_36FF8167703D4259* _wishlistCustomPlan; // 0x310
+		::UnityEngine::UI::Extension::UITabButtonGroup* _tabButtonGroup; // 0x318
+		::MoleMole::UIGeneralToggleWidgetController* _Roletoggle; // 0x320
+		::MoleMole::UIGeneralToggleWidgetController* _Weapontoggle; // 0x328
+		::MoleMole::UIWishlistCustomSettingSuitSelectWidgetController* _suitSelectWidget; // 0x330
+		::MoleMole::UIWishlistCustomSettingSliderItemWidgetController* _avatarSliderItem; // 0x338
+		::MoleMole::UIWishlistCustomSettingSliderItemWidgetController* _weaponSliderItem; // 0x340
+		::System::Collections::Generic::List_1<::System::UInt32>* _propertyIds; // 0x348
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshAvatarTypeView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHAVATARTYPEVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnRoleToggleValue(::System::Boolean value, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONROLETOGGLEVALUE_OFFSET))(this, value, init);
+		}
+
+		::System::Void OnWeaponToggleValue(::System::Boolean value, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONWEAPONTOGGLEVALUE_OFFSET))(this, value, init);
+		}
+
+		::System::Void RefreshSkillTypeView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHSKILLTYPEVIEW_OFFSET))(this);
+		}
+
+		::System::UInt32 GetSKillLevel(::Share::EAvatarSkillType skillType)
+		{
+			return ((::System::UInt32(*)(::PVOID, ::Share::EAvatarSkillType))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_GETSKILLLEVEL_OFFSET))(this, skillType);
+		}
+
+		::System::UInt32 GetMaxSkillLevel(::Share::EAvatarSkillType skillType)
+		{
+			return ((::System::UInt32(*)(::PVOID, ::Share::EAvatarSkillType))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_GETMAXSKILLLEVEL_OFFSET))(this, skillType);
+		}
+
+		::System::Void RefreshSuitTypeView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHSUITTYPEVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshSuitInfoView(::System::Collections::Generic::List_1<::System::UInt32>* suitIds)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::System::UInt32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHSUITINFOVIEW_OFFSET))(this, suitIds);
+		}
+
+		::System::Void RefreshSlotPropertyInfo(::System::Int32 slotIndex, ::System::UInt32 propertyId)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHSLOTPROPERTYINFO_OFFSET))(this, slotIndex, propertyId);
+		}
+
+		::System::Void RefreshPropertyInfoView(::System::Collections::Generic::List_1<::System::UInt32>* propertyIds)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::System::UInt32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_REFRESHPROPERTYINFOVIEW_OFFSET))(this, propertyIds);
+		}
+
+		::System::Void SaveCustomPlan()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_SAVECUSTOMPLAN_OFFSET))(this);
+		}
+
+		::System::Boolean CheckEquipSave()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_CHECKEQUIPSAVE_OFFSET))(this);
+		}
+
+		::System::Void OnClickSuitTabBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONCLICKSUITTABBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickPropertyTabBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER_ONCLICKPROPERTYTABBTN_OFFSET))(this);
+		}
+
+		::System::Void _SaveCustomPlan_b__29_0(::System::Int32 ret)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER__SAVECUSTOMPLAN_B__29_0_OFFSET))(this, ret);
+		}
+
+		::System::Void _SaveCustomPlan_b__29_1(::System::Int32 retCod)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER__SAVECUSTOMPLAN_B__29_1_OFFSET))(this, retCod);
+		}
+
+		::System::Void _SaveCustomPlan_b__29_2(::System::Int32 retCod)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER__SAVECUSTOMPLAN_B__29_2_OFFSET))(this, retCod);
+		}
+
+		::System::Void _SaveCustomPlan_b__29_3(::System::Int32 retCod)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER__SAVECUSTOMPLAN_B__29_3_OFFSET))(this, retCod);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

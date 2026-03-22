@@ -1,0 +1,118 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_4014D77EE8944482;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_GET_ISUNLOCK_OFFSET UNITYSDK_OFFSET(0x8829720)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0x8829540)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8828CF0)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONISUNLOCKCHANGED_OFFSET UNITYSDK_OFFSET(0x88296B0)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x8828E70)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8828D90)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8828AD0)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_SETEMPTY_OFFSET UNITYSDK_OFFSET(0x8829390)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_SETLOCK_OFFSET UNITYSDK_OFFSET(0x88295C0)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_SET_ISUNLOCK_OFFSET UNITYSDK_OFFSET(0x88292C0)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8829730)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET UNITYSDK_OFFSET(0x8829740)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8829750)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x88297C0)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8829840)
+#define MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x88298C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIWorkBenchMemoryItemV2WidgetController_TypeDefinitionIndex = 77471;
+
+	class UIWorkBenchMemoryItemV2WidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		// static const ::System::String* portraitKey; // 0x0
+		::Class_2_4014D77EE8944482* _view; // 0x2D0
+		::System::Boolean _isUnlock; // 0x2D8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void SetLock(::System::Boolean lockState)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_SETLOCK_OFFSET))(this, lockState);
+		}
+
+		::System::Void SetEmpty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_SETEMPTY_OFFSET))(this);
+		}
+
+		::System::Void OnIsUnlockChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_ONISUNLOCKCHANGED_OFFSET))(this);
+		}
+
+		::System::Boolean get_isUnlock()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_GET_ISUNLOCK_OFFSET))(this);
+		}
+
+		::System::Void set_isUnlock(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER_SET_ISUNLOCK_OFFSET))(this, value);
+		}
+
+		::System::Void __base_OnClickItem()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER___BASE_ONCLICKITEM_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYITEMV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

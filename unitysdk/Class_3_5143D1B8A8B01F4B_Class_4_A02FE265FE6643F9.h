@@ -1,0 +1,48 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_3_F39AA09F6254945B.h"
+
+class Class_2_777A5D016ADC7368;
+namespace MoleMole { class UIControlCollection; }
+namespace System { class String; }
+namespace UnityEngine { class GameObject; }
+
+#define CLASS_3_5143D1B8A8B01F4B_CLASS_4_A02FE265FE6643F9_METHOD_4_0865E94460F11643_OFFSET UNITYSDK_OFFSET(0xBA912D0)
+#define CLASS_3_5143D1B8A8B01F4B_CLASS_4_A02FE265FE6643F9_METHOD_4_0E09E70D88F8EDD3_OFFSET UNITYSDK_OFFSET(0xBA91230)
+#define CLASS_3_5143D1B8A8B01F4B_CLASS_4_A02FE265FE6643F9_METHOD_4_4D10873DB5CC58E4_OFFSET UNITYSDK_OFFSET(0xBA91450)
+#define CLASS_3_5143D1B8A8B01F4B_CLASS_4_A02FE265FE6643F9_METHOD_4_9CA5A80F6B5B9E01_OFFSET UNITYSDK_OFFSET(0xBA91440)
+#define CLASS_3_5143D1B8A8B01F4B_CLASS_4_A02FE265FE6643F9__CTOR_OFFSET UNITYSDK_OFFSET(0xBA913C0)
+
+inline static constexpr unsigned int Class_3_5143D1B8A8B01F4B_Class_4_A02FE265FE6643F9_TypeDefinitionIndex = 70271;
+
+class Class_3_5143D1B8A8B01F4B_Class_4_A02FE265FE6643F9 : public ::Class_3_F39AA09F6254945B
+{
+public:
+	// static const ::System::String* Field_4_0; // 0x0
+	::UnityEngine::GameObject* Field_4_1; // 0x28
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_5143D1B8A8B01F4B_CLASS_4_A02FE265FE6643F9__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_4_0E09E70D88F8EDD3(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_3_5143D1B8A8B01F4B_CLASS_4_A02FE265FE6643F9_METHOD_4_0E09E70D88F8EDD3_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_4_0865E94460F11643()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_5143D1B8A8B01F4B_CLASS_4_A02FE265FE6643F9_METHOD_4_0865E94460F11643_OFFSET))(this);
+	}
+
+	::UnityEngine::GameObject* Method_4_9CA5A80F6B5B9E01()
+	{
+		return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_5143D1B8A8B01F4B_CLASS_4_A02FE265FE6643F9_METHOD_4_9CA5A80F6B5B9E01_OFFSET))(this);
+	}
+
+	::System::Void Method_4_4D10873DB5CC58E4(::UnityEngine::GameObject* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + CLASS_3_5143D1B8A8B01F4B_CLASS_4_A02FE265FE6643F9_METHOD_4_4D10873DB5CC58E4_OFFSET))(this, a1);
+	}
+};

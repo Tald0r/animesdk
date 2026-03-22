@@ -6,52 +6,36 @@ namespace IFix::Core { class VirtualMachine; }
 namespace System { class Action; }
 namespace System { class String; }
 namespace System { class Type; }
-namespace System { template <typename T1, typename T2> class Func_2; }
-namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::IO { class BinaryReader; }
 namespace System::IO { class Stream; }
 namespace System::Reflection { class Assembly; }
+namespace System::Reflection { class FieldInfo; }
 namespace System::Reflection { class MethodBase; }
 namespace System::Reflection { class MethodInfo; }
-namespace System::Reflection { class ParameterInfo; }
 
-#define IFIX_CORE_PATCHMANAGER_APPENDPATCH_OFFSET UNITYSDK_OFFSET(0x15445720)
-#define IFIX_CORE_PATCHMANAGER_GETMAPID_1_OFFSET UNITYSDK_OFFSET(0x1543EB10)
-#define IFIX_CORE_PATCHMANAGER_GETMAPID_OFFSET UNITYSDK_OFFSET(0x1543E830)
-#define IFIX_CORE_PATCHMANAGER_LOADMANIFEST_OFFSET UNITYSDK_OFFSET(0x154438E0)
-#define IFIX_CORE_PATCHMANAGER_LOAD_OFFSET UNITYSDK_OFFSET(0x1543F330)
-#define IFIX_CORE_PATCHMANAGER_LOGFORMAT_OFFSET UNITYSDK_OFFSET(0x1543F1F0)
-#define IFIX_CORE_PATCHMANAGER_LOG_OFFSET UNITYSDK_OFFSET(0x1543F160)
-#define IFIX_CORE_PATCHMANAGER_MERGEWRAPPER_OFFSET UNITYSDK_OFFSET(0x15448340)
-#define IFIX_CORE_PATCHMANAGER_READMETHOD_OFFSET UNITYSDK_OFFSET(0x1543DA70)
-#define IFIX_CORE_PATCHMANAGER_READSLOTINFO_OFFSET UNITYSDK_OFFSET(0x1543ED70)
-#define IFIX_CORE_PATCHMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15448D80)
-#define IFIX_CORE_PATCHMANAGER__READMETHOD_M__0_OFFSET UNITYSDK_OFFSET(0x15448E90)
+#define IFIX_CORE_PATCHMANAGER_GETMAPID_1_OFFSET UNITYSDK_OFFSET(0x199192F0)
+#define IFIX_CORE_PATCHMANAGER_GETMAPID_OFFSET UNITYSDK_OFFSET(0x199191F0)
+#define IFIX_CORE_PATCHMANAGER_GETREDIRECTFIELD_OFFSET UNITYSDK_OFFSET(0x19918F70)
+#define IFIX_CORE_PATCHMANAGER_LOAD_1_OFFSET UNITYSDK_OFFSET(0x199158B0)
+#define IFIX_CORE_PATCHMANAGER_LOAD_OFFSET UNITYSDK_OFFSET(0x199157C0)
+#define IFIX_CORE_PATCHMANAGER_READMETHOD_OFFSET UNITYSDK_OFFSET(0x19918210)
+#define IFIX_CORE_PATCHMANAGER_READSLOTINFO_OFFSET UNITYSDK_OFFSET(0x199195D0)
+#define IFIX_CORE_PATCHMANAGER_UNLOADALL_OFFSET UNITYSDK_OFFSET(0x19919ED0)
+#define IFIX_CORE_PATCHMANAGER_UNLOAD_OFFSET UNITYSDK_OFFSET(0x19919CA0)
+#define IFIX_CORE_PATCHMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1991A1D0)
 
 namespace IFix::Core
 {
-	inline static constexpr unsigned int PatchManager_TypeDefinitionIndex = 9313;
+	inline static constexpr unsigned int PatchManager_TypeDefinitionIndex = 6781;
 
 	class PatchManager : public ::System::Object
 	{
 	public:
-		static ::System::Action_1<::System::String*>** StaticGet_DLog()
-		{
-			return (::System::Action_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(PatchManager_TypeDefinitionIndex)->GetStaticField(0x770);
-		}
-		static ::System::Collections::Generic::List_1<::System::Int32>** StaticGet_PatchedMethodIDs()
-		{
-			return (::System::Collections::Generic::List_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(PatchManager_TypeDefinitionIndex)->GetStaticField(0x778);
-		}
 		static ::System::Collections::Generic::Dictionary_2<::System::Reflection::Assembly*, ::System::Action*>** StaticGet_removers()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Reflection::Assembly*, ::System::Action*>**)Il2CppClass::FromTypeDefinitionIndex(PatchManager_TypeDefinitionIndex)->GetStaticField(0x780);
-		}
-		static ::System::Func_2<::System::Reflection::ParameterInfo*, ::System::Type*>** StaticGet___f__am_cache0()
-		{
-			return (::System::Func_2<::System::Reflection::ParameterInfo*, ::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(PatchManager_TypeDefinitionIndex)->GetStaticField(0x788);
+			return (::System::Collections::Generic::Dictionary_2<::System::Reflection::Assembly*, ::System::Action*>**)Il2CppClass::FromTypeDefinitionIndex(PatchManager_TypeDefinitionIndex)->GetStaticField(0x5C70);
 		}
 
 		static ::System::Void _cctor()
@@ -59,19 +43,29 @@ namespace IFix::Core
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER__CCTOR_OFFSET))();
 		}
 
+		static ::IFix::Core::VirtualMachine* Load(::System::String* filepath, ::System::Boolean checkNew)
+		{
+			return ((::IFix::Core::VirtualMachine*(*)(::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_LOAD_OFFSET))(filepath, checkNew);
+		}
+
 		static ::System::Reflection::MethodBase* readMethod(::System::IO::BinaryReader* reader, ::Il2CppArray<::System::Type*>* externTypes)
 		{
 			return ((::System::Reflection::MethodBase*(*)(::System::IO::BinaryReader*, ::Il2CppArray<::System::Type*>*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_READMETHOD_OFFSET))(reader, externTypes);
 		}
 
-		static ::System::Int32 getMapId(::System::Collections::Generic::List_1<::System::Type*>* idMapArray, ::System::Reflection::MethodBase* method)
+		static ::System::Reflection::FieldInfo* getRedirectField(::System::Reflection::MethodBase* method)
 		{
-			return ((::System::Int32(*)(::System::Collections::Generic::List_1<::System::Type*>*, ::System::Reflection::MethodBase*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_GETMAPID_OFFSET))(idMapArray, method);
+			return ((::System::Reflection::FieldInfo*(*)(::System::Reflection::MethodBase*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_GETREDIRECTFIELD_OFFSET))(method);
 		}
 
-		static ::System::Int32 getMapId_1(::System::Reflection::MethodBase* method)
+		static ::System::Int32 getMapId(::System::Reflection::MethodBase* method)
 		{
-			return ((::System::Int32(*)(::System::Reflection::MethodBase*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_GETMAPID_1_OFFSET))(method);
+			return ((::System::Int32(*)(::System::Reflection::MethodBase*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_GETMAPID_OFFSET))(method);
+		}
+
+		static ::System::Int32 getMapId_1(::System::Collections::Generic::List_1<::System::Type*>* idMapArray, ::System::Reflection::MethodBase* method)
+		{
+			return ((::System::Int32(*)(::System::Collections::Generic::List_1<::System::Type*>*, ::System::Reflection::MethodBase*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_GETMAPID_1_OFFSET))(idMapArray, method);
 		}
 
 		static ::Il2CppArray<::System::Int32>* readSlotInfo(::System::IO::BinaryReader* reader, ::System::Collections::Generic::Dictionary_2<::System::Reflection::MethodInfo*, ::System::Int32>* itfMethodToId, ::Il2CppArray<::System::Type*>* externTypes, ::System::Int32 maxId)
@@ -79,39 +73,19 @@ namespace IFix::Core
 			return ((::Il2CppArray<::System::Int32>*(*)(::System::IO::BinaryReader*, ::System::Collections::Generic::Dictionary_2<::System::Reflection::MethodInfo*, ::System::Int32>*, ::Il2CppArray<::System::Type*>*, ::System::Int32))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_READSLOTINFO_OFFSET))(reader, itfMethodToId, externTypes, maxId);
 		}
 
-		static ::System::Void Log(::System::String* content)
+		static ::IFix::Core::VirtualMachine* Load_1(::System::IO::Stream* stream, ::System::Boolean checkNew)
 		{
-			return ((::System::Void(*)(::System::String*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_LOG_OFFSET))(content);
+			return ((::IFix::Core::VirtualMachine*(*)(::System::IO::Stream*, ::System::Boolean))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_LOAD_1_OFFSET))(stream, checkNew);
 		}
 
-		static ::System::Void LogFormat(::System::String* format, ::Il2CppArray<::System::Object*>* args)
+		static ::System::Void Unload(::System::Reflection::Assembly* assembly)
 		{
-			return ((::System::Void(*)(::System::String*, ::Il2CppArray<::System::Object*>*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_LOGFORMAT_OFFSET))(format, args);
+			return ((::System::Void(*)(::System::Reflection::Assembly*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_UNLOAD_OFFSET))(assembly);
 		}
 
-		static ::IFix::Core::VirtualMachine* Load(::System::IO::Stream* stream, ::System::Boolean checkNew, ::System::Action_1<::System::String*>* dLog)
+		static ::System::Void UnloadAll()
 		{
-			return ((::IFix::Core::VirtualMachine*(*)(::System::IO::Stream*, ::System::Boolean, ::System::Action_1<::System::String*>*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_LOAD_OFFSET))(stream, checkNew, dLog);
-		}
-
-		static ::IFix::Core::VirtualMachine* LoadManifest(::System::IO::Stream* stream, ::System::Collections::Generic::List_1<::System::String*>*& patches, ::System::Collections::Generic::List_1<::System::Int32>*& ignoreList, ::System::Action_1<::System::String*>* dLog)
-		{
-			return ((::IFix::Core::VirtualMachine*(*)(::System::IO::Stream*, ::System::Collections::Generic::List_1<::System::String*>*&, ::System::Collections::Generic::List_1<::System::Int32>*&, ::System::Action_1<::System::String*>*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_LOADMANIFEST_OFFSET))(stream, patches, ignoreList, dLog);
-		}
-
-		static ::System::Void AppendPatch(::IFix::Core::VirtualMachine* vm, ::System::IO::Stream* stream, ::System::Collections::Generic::List_1<::System::Reflection::MethodBase*>* methods, ::System::Collections::Generic::List_1<::System::Int32>* methodIds, ::System::String*& assemblyStr)
-		{
-			return ((::System::Void(*)(::IFix::Core::VirtualMachine*, ::System::IO::Stream*, ::System::Collections::Generic::List_1<::System::Reflection::MethodBase*>*, ::System::Collections::Generic::List_1<::System::Int32>*, ::System::String*&))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_APPENDPATCH_OFFSET))(vm, stream, methods, methodIds, assemblyStr);
-		}
-
-		static ::System::Void MergeWrapper(::IFix::Core::VirtualMachine* vm, ::System::String* assemblyStr, ::System::Collections::Generic::List_1<::System::Reflection::MethodBase*>* methods, ::System::Collections::Generic::List_1<::System::Int32>* methodIds, ::System::Collections::Generic::List_1<::System::Int32>* ignoreIds)
-		{
-			return ((::System::Void(*)(::IFix::Core::VirtualMachine*, ::System::String*, ::System::Collections::Generic::List_1<::System::Reflection::MethodBase*>*, ::System::Collections::Generic::List_1<::System::Int32>*, ::System::Collections::Generic::List_1<::System::Int32>*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_MERGEWRAPPER_OFFSET))(vm, assemblyStr, methods, methodIds, ignoreIds);
-		}
-
-		static ::System::Type* _readMethod_m__0(::System::Reflection::ParameterInfo* p)
-		{
-			return ((::System::Type*(*)(::System::Reflection::ParameterInfo*))((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER__READMETHOD_M__0_OFFSET))(p);
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + IFIX_CORE_PATCHMANAGER_UNLOADALL_OFFSET))();
 		}
 	};
 }

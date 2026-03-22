@@ -3,7 +3,7 @@
 
 namespace TMPro
 {
-	inline static constexpr unsigned int TextAlignmentOptions_TypeDefinitionIndex = 33391;
+	inline static constexpr unsigned int TextAlignmentOptions_TypeDefinitionIndex = 36012;
 
 	enum class TextAlignmentOptions : ::System::Int32
 	{

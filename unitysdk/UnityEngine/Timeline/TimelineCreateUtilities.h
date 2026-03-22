@@ -10,21 +10,21 @@ namespace UnityEngine { class Object; }
 namespace UnityEngine { class ScriptableObject; }
 namespace UnityEngine::Timeline { class TrackAsset; }
 
-#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES_CREATEANIMATIONCLIPFORTRACK_OFFSET UNITYSDK_OFFSET(0x18188D50)
-#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES_GENERATEUNIQUEACTORNAME_OFFSET UNITYSDK_OFFSET(0x181A1400)
-#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES_SAVEASSETINTOOBJECT_OFFSET UNITYSDK_OFFSET(0x18197060)
-#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES_VALIDATEPARENTTRACK_OFFSET UNITYSDK_OFFSET(0x181A1140)
+#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES_CREATEANIMATIONCLIPFORTRACK_OFFSET UNITYSDK_OFFSET(0x1AF89310)
+#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES_GENERATEUNIQUEACTORNAME_OFFSET UNITYSDK_OFFSET(0x1AF88E50)
+#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES_SAVEASSETINTOOBJECT_OFFSET UNITYSDK_OFFSET(0x1AF891E0)
+#define UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES_VALIDATEPARENTTRACK_OFFSET UNITYSDK_OFFSET(0x1AF895B0)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TimelineCreateUtilities_TypeDefinitionIndex = 29047;
+	inline static constexpr unsigned int TimelineCreateUtilities_TypeDefinitionIndex = 29406;
 
 	class TimelineCreateUtilities : public ::System::Object
 	{
 	public:
-		static ::System::String* GenerateUniqueActorName(::System::Collections::Generic::List_1<::UnityEngine::ScriptableObject*>* tracks, ::System::String* name)
+		static ::System::String* GenerateUniqueActorName(::System::Collections::Generic::List_1<::UnityEngine::ScriptableObject*>* tracks, ::System::String* name, ::System::Type* trackType)
 		{
-			return ((::System::String*(*)(::System::Collections::Generic::List_1<::UnityEngine::ScriptableObject*>*, ::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES_GENERATEUNIQUEACTORNAME_OFFSET))(tracks, name);
+			return ((::System::String*(*)(::System::Collections::Generic::List_1<::UnityEngine::ScriptableObject*>*, ::System::String*, ::System::Type*))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_TIMELINECREATEUTILITIES_GENERATEUNIQUEACTORNAME_OFFSET))(tracks, name, trackType);
 		}
 
 		static ::System::Void SaveAssetIntoObject(::UnityEngine::Object* childAsset, ::UnityEngine::Object* masterAsset)

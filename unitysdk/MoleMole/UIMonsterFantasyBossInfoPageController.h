@@ -1,0 +1,390 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/MonoGamepadRegion_ManagedModuleConfig.h"
+#include "unitysdk/MoleMole/UIMonsterFantasyBossInfoPageController_PageType.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_5DA2E7556103D5A3_349;
+class Class_1_757827E019DC7C45;
+class Class_2_208CC9941471731A_962;
+class Class_2_626C89348D48CC2F;
+class Class_2_79AE422BA06F6D26_61;
+class Class_2_84CEDCEF739506C1_2;
+class Class_3_F41D242A20F8FE06;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIMonsterFantasyBossCardRowWidgetController; }
+namespace MoleMole::Project::Config { class TurnBasedEntityTemplateExt; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_BUILDCLIENTMONSTERINFO_OFFSET UNITYSDK_OFFSET(0x6CD8F70)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_CLOSE_OFFSET UNITYSDK_OFFSET(0x6CDCDC0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_DOLINEUPINDEX_OFFSET UNITYSDK_OFFSET(0x6CE2480)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_ALLMONSTERTURNBASEDTEMPLATES_OFFSET UNITYSDK_OFFSET(0x6CD7BE0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_CURSELECTMONSTERCARDTEMPLATE_OFFSET UNITYSDK_OFFSET(0x6CD7A70)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_CURSELECTMONSTERTEMPLATE_OFFSET UNITYSDK_OFFSET(0x6CD7770)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_CURTURNBASEDENTITYTEMPLATE_OFFSET UNITYSDK_OFFSET(0x6CD78E0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_IGNOREFADING_OFFSET UNITYSDK_OFFSET(0x6CD7CF0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_ISENABLEFADEINPUTBLOCKING_OFFSET UNITYSDK_OFFSET(0x6CD7CE0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x6CD7760)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONBACKBTNCLICK_OFFSET UNITYSDK_OFFSET(0x6CE1930)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONCHECKBTNCLICK_OFFSET UNITYSDK_OFFSET(0x6CE1C30)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONCOMPLETEBTNCLICK_OFFSET UNITYSDK_OFFSET(0x6CE1BC0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x6CD7D00)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONCREATFRIENDCARDITEM_OFFSET UNITYSDK_OFFSET(0x6CE1F60)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x6CDD9D0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONINFOBTNCLICK_OFFSET UNITYSDK_OFFSET(0x6CE1D80)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0x6CDD7F0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONLINEUPINDEX_OFFSET UNITYSDK_OFFSET(0x6CE2160)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONRECEIVENEWBIE_OFFSET UNITYSDK_OFFSET(0x6CE25E0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONSELECTINDEX_OFFSET UNITYSDK_OFFSET(0x6CE21F0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONTABCLICK_OFFSET UNITYSDK_OFFSET(0x6CE2080)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x6CDD500)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x6CDD760)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x6CD7DA0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x6CD8540)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHBTNVIEW_OFFSET UNITYSDK_OFFSET(0x6CDEAA0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHBUFFVIEW_OFFSET UNITYSDK_OFFSET(0x6CE07A0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHRIGHTVIEW_OFFSET UNITYSDK_OFFSET(0x6CDE7C0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHSKILLVIEW_OFFSET UNITYSDK_OFFSET(0x6CDEF20)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHTAGVIEW_OFFSET UNITYSDK_OFFSET(0x6CDDD20)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHTITLEANDBG_OFFSET UNITYSDK_OFFSET(0x6CDE650)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x6CDBDD0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_SHOULDSHOWBUFFNUMBER_OFFSET UNITYSDK_OFFSET(0x6CDEDC0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_TRYOVERRIDESHOULDIGNOREITEM_OFFSET UNITYSDK_OFFSET(0x6CDDBD0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__CLOSE_B__46_0_OFFSET UNITYSDK_OFFSET(0x6CE2AC0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x6CE2650)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIINIT_B__44_0_OFFSET UNITYSDK_OFFSET(0x6CE2670)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_0_OFFSET UNITYSDK_OFFSET(0x6CE2680)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_1_OFFSET UNITYSDK_OFFSET(0x6CE26A0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_3_OFFSET UNITYSDK_OFFSET(0x6CE26F0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_4_OFFSET UNITYSDK_OFFSET(0x6CE2770)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_5_OFFSET UNITYSDK_OFFSET(0x6CE28E0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_6_OFFSET UNITYSDK_OFFSET(0x6CE2960)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__REFRESHVIEW_B__52_0_OFFSET UNITYSDK_OFFSET(0x6CE2AD0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_CLOSE_OFFSET UNITYSDK_OFFSET(0x6CE2B20)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x6CE2B30)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0x6CE2BA0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET UNITYSDK_OFFSET(0x6CE2C20)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x6CE2C80)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x6CE2C90)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x6CE2CA0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x6CE2CB0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_TRYOVERRIDESHOULDIGNOREITEM_OFFSET UNITYSDK_OFFSET(0x6CE2D20)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMonsterFantasyBossInfoPageController_TypeDefinitionIndex = 63378;
+
+	class UIMonsterFantasyBossInfoPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		// static const ::System::String* SWITCH_IN_L; // 0x0
+		// static const ::System::String* SWITCH_OUT_L; // 0x0
+		// static const ::System::String* SWITCH_IN_R; // 0x0
+		// static const ::System::String* SWITCH_OUT_R; // 0x0
+		::Class_2_79AE422BA06F6D26_61* _view; // 0x2F8
+		::MoleMole::UIMonsterFantasyBossInfoPageController_PageType _pageType; // 0x300
+		::Class_2_626C89348D48CC2F* _model; // 0x308
+		::System::Int32 _levelID; // 0x310
+		::System::Collections::Generic::List_1<::Class_1_757827E019DC7C45*>* _tabDatas; // 0x318
+		::System::Int32 _curSelectIndex; // 0x320
+		::System::Int32 _curSelectSkillIndex; // 0x324
+		::System::Int32 _curSelectBuffIndex; // 0x328
+		::MoleMole::UIMonsterFantasyBossCardRowWidgetController* _monsterCard; // 0x330
+		::Il2CppArray<::System::Int32>* _teamInfo; // 0x338
+		::System::Boolean _isFirst; // 0x340
+		::System::Boolean _isSwitching; // 0x341
+		::System::Boolean _saveTeamInfo; // 0x342
+		::System::String* _switchingAnimName; // 0x348
+		::System::Action_1<::System::Collections::Generic::List_1<::System::Int32>*>* _onClose; // 0x350
+		::System::Collections::Generic::List_1<::System::Int32>* _inTeamMonster; // 0x358
+		::System::Int32 _sourceIndex; // 0x360
+		::System::Int32 _sourceEntityID; // 0x364
+		::System::Collections::Generic::List_1<::UnityEngine::Material*>* _colorMats; // 0x368
+		::MoleMole::MonoGamepadRegion_ManagedModuleConfig _skillGamePadConfig; // 0x370
+		::MoleMole::MonoGamepadRegion_ManagedModuleConfig _buffGamePadConfig; // 0x380
+		::MoleMole::MonoGamepadRegion_ManagedModuleConfig _skillGamePadDescConfig; // 0x390
+		::MoleMole::MonoGamepadRegion_ManagedModuleConfig _buffGamePadDescConfig; // 0x3A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::Class_2_84CEDCEF739506C1_2* get_CurSelectMonsterTemplate()
+		{
+			return ((::Class_2_84CEDCEF739506C1_2*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_CURSELECTMONSTERTEMPLATE_OFFSET))(this);
+		}
+
+		::Class_1_5DA2E7556103D5A3_349* get_CurSelectMonsterCardTemplate()
+		{
+			return ((::Class_1_5DA2E7556103D5A3_349*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_CURSELECTMONSTERCARDTEMPLATE_OFFSET))(this);
+		}
+
+		::MoleMole::Project::Config::TurnBasedEntityTemplateExt* get_CurTurnBasedEntityTemplate()
+		{
+			return ((::MoleMole::Project::Config::TurnBasedEntityTemplateExt*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_CURTURNBASEDENTITYTEMPLATE_OFFSET))(this);
+		}
+
+		::System::Collections::Generic::List_1<::MoleMole::Project::Config::TurnBasedEntityTemplateExt*>* get_AllMonsterTurnBasedTemplates()
+		{
+			return ((::System::Collections::Generic::List_1<::MoleMole::Project::Config::TurnBasedEntityTemplateExt*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_ALLMONSTERTURNBASEDTEMPLATES_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsEnableFadeInputBlocking()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_ISENABLEFADEINPUTBLOCKING_OFFSET))(this);
+		}
+
+		::System::Boolean get_IgnoreFading()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_GET_IGNOREFADING_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void Close()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_CLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Boolean TryOverrideShouldIgnoreItem(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 selectIndex)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_TRYOVERRIDESHOULDIGNOREITEM_OFFSET))(this, gamepadModule, selectIndex);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void BuildClientMonsterInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_BUILDCLIENTMONSTERINFO_OFFSET))(this);
+		}
+
+		::System::Boolean ShouldShowBuffNumber(::Class_3_F41D242A20F8FE06* abilityComponent, ::System::Int32 BuffID, ::System::Int32 ShowBuffNumber)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_3_F41D242A20F8FE06*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_SHOULDSHOWBUFFNUMBER_OFFSET))(this, abilityComponent, BuffID, ShowBuffNumber);
+		}
+
+		::System::Void RefreshTitleAndBg()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHTITLEANDBG_OFFSET))(this);
+		}
+
+		::System::Void RefreshRightView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHRIGHTVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshSkillView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHSKILLVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshBuffView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHBUFFVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshTagView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHTAGVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshBtnView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_REFRESHBTNVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnBackBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONBACKBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnCompleteBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONCOMPLETEBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnCheckBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONCHECKBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnInfoBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONINFOBTNCLICK_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* OnCreatFriendCardItem(::System::Func_1<::MoleMole::UIControlReference*>* arg)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONCREATFRIENDCARDITEM_OFFSET))(this, arg);
+		}
+
+		::System::Void OnTabClick(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONTABCLICK_OFFSET))(this, index);
+		}
+
+		::System::Void OnSelectIndex(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONSELECTINDEX_OFFSET))(this, index);
+		}
+
+		::System::Void OnLineUpIndex(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONLINEUPINDEX_OFFSET))(this, index);
+		}
+
+		::System::Void DoLineUpIndex(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_DOLINEUPINDEX_OFFSET))(this, index);
+		}
+
+		::System::Void OnReceiveNewbie(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER_ONRECEIVENEWBIE_OFFSET))(this, args);
+		}
+
+		::System::Void _OnUIInit_b__44_0(::System::Int32 x)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIINIT_B__44_0_OFFSET))(this, x);
+		}
+
+		::System::Boolean _OnUIOpen_b__45_0(::Class_1_757827E019DC7C45* x)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_757827E019DC7C45*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_0_OFFSET))(this, x);
+		}
+
+		::System::Boolean _OnUIOpen_b__45_1(::Class_1_757827E019DC7C45* x)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_757827E019DC7C45*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_1_OFFSET))(this, x);
+		}
+
+		::System::Void _OnUIOpen_b__45_3(::System::Boolean focus)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_3_OFFSET))(this, focus);
+		}
+
+		::System::Void _OnUIOpen_b__45_4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_4_OFFSET))(this);
+		}
+
+		::System::Void _OnUIOpen_b__45_5(::System::Boolean focus)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_5_OFFSET))(this, focus);
+		}
+
+		::System::Void _OnUIOpen_b__45_6()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__ONUIOPEN_B__45_6_OFFSET))(this);
+		}
+
+		::System::Void _Close_b__46_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__CLOSE_B__46_0_OFFSET))(this);
+		}
+
+		::System::Boolean _RefreshView_b__52_0(::Class_2_208CC9941471731A_962* x)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_962*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER__REFRESHVIEW_B__52_0_OFFSET))(this, x);
+		}
+
+		::System::Void __base_Close()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_CLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Void __base_OnLayoutPlatformChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONLAYOUTPLATFORMCHANGED_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_TryOverrideShouldIgnoreItem(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___BASE_TRYOVERRIDESHOULDIGNOREITEM_OFFSET))(this, P0, P1);
+		}
+	};
+}

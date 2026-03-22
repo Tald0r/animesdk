@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_COLLECTIONS_SPECIALIZED_LISTDICTIONARY_DICTIONARYNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x17E62310)
+#define SYSTEM_COLLECTIONS_SPECIALIZED_LISTDICTIONARY_DICTIONARYNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x18FDC5C0)
 
 namespace System::Collections::Specialized
 {
-	inline static constexpr unsigned int ListDictionary_DictionaryNode_TypeDefinitionIndex = 2972;
+	inline static constexpr unsigned int ListDictionary_DictionaryNode_TypeDefinitionIndex = 3918;
 
 	class ListDictionary_DictionaryNode : public ::System::Object
 	{

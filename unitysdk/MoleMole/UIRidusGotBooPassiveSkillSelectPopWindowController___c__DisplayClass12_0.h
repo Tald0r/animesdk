@@ -1,0 +1,35 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_208CC9941471731A_148;
+
+#define MOLEMOLE_UIRIDUSGOTBOOPASSIVESKILLSELECTPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9EB9AD0)
+#define MOLEMOLE_UIRIDUSGOTBOOPASSIVESKILLSELECTPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__ONCLICKPASSIVESKILL_B__0_OFFSET UNITYSDK_OFFSET(0x9EB9AE0)
+#define MOLEMOLE_UIRIDUSGOTBOOPASSIVESKILLSELECTPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__ONCLICKPASSIVESKILL_B__1_OFFSET UNITYSDK_OFFSET(0x9EB9B10)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIRidusGotBooPassiveSkillSelectPopWindowController___c__DisplayClass12_0_TypeDefinitionIndex = 56361;
+
+	class UIRidusGotBooPassiveSkillSelectPopWindowController___c__DisplayClass12_0 : public ::System::Object
+	{
+	public:
+		::System::Int32 targetSkillID; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPASSIVESKILLSELECTPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean _OnClickPassiveSkill_b__0(::Class_2_208CC9941471731A_148* x)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_148*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPASSIVESKILLSELECTPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__ONCLICKPASSIVESKILL_B__0_OFFSET))(this, x);
+		}
+
+		::System::Boolean _OnClickPassiveSkill_b__1(::Class_2_208CC9941471731A_148* x)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_148*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPASSIVESKILLSELECTPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__ONCLICKPASSIVESKILL_B__1_OFFSET))(this, x);
+		}
+	};
+}

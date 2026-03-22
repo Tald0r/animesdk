@@ -3,21 +3,13 @@
 #include "unitysdk/Mono/RuntimeRemoteClassHandle.h"
 #include "unitysdk/System/Object.h"
 
-namespace System { class RuntimeType; }
-namespace System::Runtime::Remoting::Contexts { class Context; }
 namespace System::Runtime::Remoting::Proxies { class RealProxy; }
 
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_GETPROXYTYPE_OFFSET UNITYSDK_OFFSET(0x15D0BE60)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_GET_ISCONTEXTBOUNDOBJECT_OFFSET UNITYSDK_OFFSET(0x15D0BED0)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_GET_TARGETCONTEXT_OFFSET UNITYSDK_OFFSET(0x15D0BF50)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_INCURRENTCONTEXT_OFFSET UNITYSDK_OFFSET(0x15D0BF70)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_LOADREMOTEFIELDNEW_OFFSET UNITYSDK_OFFSET(0x15D0C040)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_STOREREMOTEFIELD_OFFSET UNITYSDK_OFFSET(0x15D0C520)
-#define SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x15D0CA40)
+#define SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x1988CD70)
 
 namespace System::Runtime::Remoting::Proxies
 {
-	inline static constexpr unsigned int TransparentProxy_TypeDefinitionIndex = 1220;
+	inline static constexpr unsigned int TransparentProxy_TypeDefinitionIndex = 1271;
 
 	class TransparentProxy : public ::System::Object
 	{
@@ -29,36 +21,6 @@ namespace System::Runtime::Remoting::Proxies
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY__CTOR_OFFSET))(this);
-		}
-
-		::System::RuntimeType* GetProxyType()
-		{
-			return ((::System::RuntimeType*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_GETPROXYTYPE_OFFSET))(this);
-		}
-
-		::System::Boolean get_IsContextBoundObject()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_GET_ISCONTEXTBOUNDOBJECT_OFFSET))(this);
-		}
-
-		::System::Runtime::Remoting::Contexts::Context* get_TargetContext()
-		{
-			return ((::System::Runtime::Remoting::Contexts::Context*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_GET_TARGETCONTEXT_OFFSET))(this);
-		}
-
-		::System::Boolean InCurrentContext()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_INCURRENTCONTEXT_OFFSET))(this);
-		}
-
-		::System::Object* LoadRemoteFieldNew(::System::IntPtr classPtr, ::System::IntPtr fieldPtr)
-		{
-			return ((::System::Object*(*)(::PVOID, ::System::IntPtr, ::System::IntPtr))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_LOADREMOTEFIELDNEW_OFFSET))(this, classPtr, fieldPtr);
-		}
-
-		::System::Void StoreRemoteField(::System::IntPtr classPtr, ::System::IntPtr fieldPtr, ::System::Object* arg)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::IntPtr, ::System::IntPtr, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_PROXIES_TRANSPARENTPROXY_STOREREMOTEFIELD_OFFSET))(this, classPtr, fieldPtr, arg);
 		}
 	};
 }

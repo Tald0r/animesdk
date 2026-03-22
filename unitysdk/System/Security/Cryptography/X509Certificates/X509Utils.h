@@ -5,16 +5,22 @@
 
 namespace System { class String; }
 
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509UTILS_FINDOIDINFOWITHFALLBACK_OFFSET UNITYSDK_OFFSET(0x17F26CF0)
-#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509UTILS_FINDOIDINFO_OFFSET UNITYSDK_OFFSET(0x17F26C10)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509UTILS_FINDOIDINFOWITHFALLBACK_OFFSET UNITYSDK_OFFSET(0x18E4F830)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509UTILS_FINDOIDINFO_OFFSET UNITYSDK_OFFSET(0x18E4F750)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509UTILS__CTOR_OFFSET UNITYSDK_OFFSET(0x18E4F740)
 
 namespace System::Security::Cryptography::X509Certificates
 {
-	inline static constexpr unsigned int X509Utils_TypeDefinitionIndex = 2671;
+	inline static constexpr unsigned int X509Utils_TypeDefinitionIndex = 3182;
 
 	class X509Utils : public ::System::Object
 	{
 	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509UTILS__CTOR_OFFSET))(this);
+		}
+
 		static ::System::String* FindOidInfo(::System::UInt32 keyType, ::System::String* keyValue, ::System::Security::Cryptography::OidGroup oidGroup)
 		{
 			return ((::System::String*(*)(::System::UInt32, ::System::String*, ::System::Security::Cryptography::OidGroup))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509UTILS_FINDOIDINFO_OFFSET))(keyType, keyValue, oidGroup);

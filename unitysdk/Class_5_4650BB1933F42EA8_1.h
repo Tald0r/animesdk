@@ -1,0 +1,32 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_4_EDAF922741458586.h"
+
+class Class_1_6AFAE3D46C1B4159;
+class Class_3_D11B47081CD802C8;
+namespace MoleMole { class Note; }
+
+#define CLASS_5_4650BB1933F42EA8_1_METHOD_5_2E6E47131CDCB0DF_OFFSET UNITYSDK_OFFSET(0x6D5FC70)
+#define CLASS_5_4650BB1933F42EA8_1_METHOD_5_BEEF04ED8FA59326_OFFSET UNITYSDK_OFFSET(0x6D5FD30)
+#define CLASS_5_4650BB1933F42EA8_1__CTOR_OFFSET UNITYSDK_OFFSET(0x6D5FC60)
+
+inline static constexpr unsigned int Class_5_4650BB1933F42EA8_1_TypeDefinitionIndex = 40454;
+
+class Class_5_4650BB1933F42EA8_1 : public ::Class_4_EDAF922741458586
+{
+public:
+	::System::Void _ctor(::MoleMole::Note* a1, ::System::Double a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Note*, ::System::Double))((::PBYTE)hIl2Cpp + CLASS_5_4650BB1933F42EA8_1__CTOR_OFFSET))(this, a1, a2);
+	}
+
+	::Class_3_D11B47081CD802C8* Method_5_2E6E47131CDCB0DF(::Class_1_6AFAE3D46C1B4159* a1)
+	{
+		return ((::Class_3_D11B47081CD802C8*(*)(::PVOID, ::Class_1_6AFAE3D46C1B4159*))((::PBYTE)hIl2Cpp + CLASS_5_4650BB1933F42EA8_1_METHOD_5_2E6E47131CDCB0DF_OFFSET))(this, a1);
+	}
+
+	::Class_3_D11B47081CD802C8* Method_5_BEEF04ED8FA59326(::Class_1_6AFAE3D46C1B4159* a1)
+	{
+		return ((::Class_3_D11B47081CD802C8*(*)(::PVOID, ::Class_1_6AFAE3D46C1B4159*))((::PBYTE)hIl2Cpp + CLASS_5_4650BB1933F42EA8_1_METHOD_5_BEEF04ED8FA59326_OFFSET))(this, a1);
+	}
+};

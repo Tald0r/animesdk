@@ -1,0 +1,34 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/EMaterialModifierPerformanceLevel.h"
+#include "unitysdk/MoleMole/GraphicSettingProfileContextBase.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/GraphicSettings_EDamageDecalQuality.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/GraphicSettings_EParticleLightLevel.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/GraphicSettings_EParticleLodLevel.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/GraphicSettings_EParticleResolutionLevel.h"
+
+#define MOLEMOLE_PARTICLEQUALITYPROFILECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8F3B9D0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int ParticleQualityProfileContext_TypeDefinitionIndex = 73090;
+
+	class ParticleQualityProfileContext : public ::MoleMole::GraphicSettingProfileContextBase
+	{
+	public:
+		::System::Boolean DisableGhostEffect; // 0x18
+		::System::Boolean DisableCutMarks; // 0x19
+		::System::Boolean DisableAbilityActionEffect; // 0x1A
+		::System::Boolean DisableDropItemBornIdleEffect; // 0x1B
+		::UnityEngine::Rendering::Universal::GraphicSettings_EParticleLodLevel ParticleLodLevel; // 0x1C
+		::UnityEngine::Rendering::Universal::GraphicSettings_EDamageDecalQuality DamageDecalQuality; // 0x20
+		::UnityEngine::Rendering::Universal::GraphicSettings_EParticleLightLevel ParticleLightLevel; // 0x24
+		::MoleMole::EMaterialModifierPerformanceLevel MaterialModifierPerformanceLevel; // 0x28
+		::UnityEngine::Rendering::Universal::GraphicSettings_EParticleResolutionLevel ParticleResolutionLevel; // 0x2C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_PARTICLEQUALITYPROFILECONTEXT__CTOR_OFFSET))(this);
+		}
+	};
+}

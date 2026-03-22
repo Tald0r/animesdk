@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/Datatype_anySimpleType.h"
+#include "unitysdk/System/Xml/Schema/RestrictionFlags.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaWhiteSpace.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 
@@ -14,31 +15,32 @@ namespace System::Xml::Schema { class FacetsChecker; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_COMPARE_OFFSET UNITYSDK_OFFSET(0x17D6C140)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D6BFB0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x17D6C130)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x17D6C000)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D6C0D0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D6C060)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D6C070)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x17D6C240)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D6C460)
-#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION__CTOR_OFFSET UNITYSDK_OFFSET(0x17D63710)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_COMPARE_OFFSET UNITYSDK_OFFSET(0x1A681700)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x1A681560)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x1A6816E0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x1A6815B0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x1A681680)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x1A681610)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_VALIDRESTRICTIONFLAGS_OFFSET UNITYSDK_OFFSET(0x1A6816F0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x1A681620)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x1A681800)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A681AC0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_DURATION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A681A20)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_duration_TypeDefinitionIndex = 2084;
+	inline static constexpr unsigned int Datatype_duration_TypeDefinitionIndex = 1999;
 
 	class Datatype_duration : public ::System::Xml::Schema::Datatype_anySimpleType
 	{
 	public:
-		static ::System::Type** StaticGet_listValueType()
-		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_duration_TypeDefinitionIndex)->GetStaticField(0x14180);
-		}
 		static ::System::Type** StaticGet_atomicValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_duration_TypeDefinitionIndex)->GetStaticField(0x14188);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_duration_TypeDefinitionIndex)->GetStaticField(0x2280);
+		}
+		static ::System::Type** StaticGet_listValueType()
+		{
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_duration_TypeDefinitionIndex)->GetStaticField(0x2288);
 		}
 
 		::System::Void _ctor()
@@ -79,6 +81,11 @@ namespace System::Xml::Schema
 		::System::Xml::Schema::XmlSchemaWhiteSpace get_BuiltInWhitespaceFacet()
 		{
 			return ((::System::Xml::Schema::XmlSchemaWhiteSpace(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_BUILTINWHITESPACEFACET_OFFSET))(this);
+		}
+
+		::System::Xml::Schema::RestrictionFlags get_ValidRestrictionFlags()
+		{
+			return ((::System::Xml::Schema::RestrictionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_DURATION_GET_VALIDRESTRICTIONFLAGS_OFFSET))(this);
 		}
 
 		::System::Int32 Compare(::System::Object* value1, ::System::Object* value2)

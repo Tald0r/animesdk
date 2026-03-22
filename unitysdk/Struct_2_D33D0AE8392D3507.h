@@ -1,0 +1,39 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Foundation/ViewObject/GroupMemberIdentifier.h"
+#include "unitysdk/Struct_2_2C5A03A90BB5E900_Enum_3_AE03BCBCA4B6F27A.h"
+#include "unitysdk/System/ValueType.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+#define STRUCT_2_D33D0AE8392D3507_EQUALS_OFFSET UNITYSDK_OFFSET(0x2D25B0)
+#define STRUCT_2_D33D0AE8392D3507_METHOD_2_7DFB4B9C80198D98_OFFSET UNITYSDK_OFFSET(0x2D25F0)
+#define STRUCT_2_D33D0AE8392D3507_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x2D2610)
+
+inline static constexpr unsigned int Struct_2_D33D0AE8392D3507_TypeDefinitionIndex = 41708;
+
+struct alignas(8) Struct_2_D33D0AE8392D3507
+{
+	::System::Int32 Field_2_0; // 0x10
+	::System::UInt64 Field_2_1; // 0x18
+	::System::Int32 Field_2_2; // 0x20
+	::Foundation::ViewObject::GroupMemberIdentifier Field_2_3; // 0x24
+	::Struct_2_2C5A03A90BB5E900_Enum_3_AE03BCBCA4B6F27A Field_2_4; // 0x2C
+	::System::Int32 Field_2_5; // 0x30
+	::System::Int32 Field_2_6; // 0x34
+	::UnityEngine::Vector3 Field_2_7; // 0x38
+
+	::System::Boolean Equals(::Struct_2_D33D0AE8392D3507 a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Struct_2_D33D0AE8392D3507))((::PBYTE)hIl2Cpp + STRUCT_2_D33D0AE8392D3507_EQUALS_OFFSET))(this, a1);
+	}
+
+	::UnityEngine::Vector3 Method_2_7DFB4B9C80198D98()
+	{
+		return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_D33D0AE8392D3507_METHOD_2_7DFB4B9C80198D98_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_F0088C88851A7DFB()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_D33D0AE8392D3507_METHOD_2_F0088C88851A7DFB_OFFSET))(this);
+	}
+};

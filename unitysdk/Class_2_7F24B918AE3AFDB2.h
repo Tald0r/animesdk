@@ -1,0 +1,37 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_39C1B49A45624839.h"
+
+class Class_2_60DDD9C206686F44;
+namespace UnityEngine { class Animation; }
+
+#define CLASS_2_7F24B918AE3AFDB2_METHOD_2_43A46E5F9FAC62B8_OFFSET UNITYSDK_OFFSET(0xBBA4F80)
+#define CLASS_2_7F24B918AE3AFDB2_METHOD_2_8652DE0774915A40_1_OFFSET UNITYSDK_OFFSET(0xBBA4FA0)
+#define CLASS_2_7F24B918AE3AFDB2_METHOD_2_8652DE0774915A40_OFFSET UNITYSDK_OFFSET(0xBBA4F90)
+#define CLASS_2_7F24B918AE3AFDB2__CTOR_OFFSET UNITYSDK_OFFSET(0xBBA4FB0)
+
+inline static constexpr unsigned int Class_2_7F24B918AE3AFDB2_TypeDefinitionIndex = 39926;
+
+class Class_2_7F24B918AE3AFDB2 : public ::Class_1_39C1B49A45624839
+{
+public:
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7F24B918AE3AFDB2__CTOR_OFFSET))(this);
+	}
+
+	::Class_2_60DDD9C206686F44* Method_2_43A46E5F9FAC62B8()
+	{
+		return ((::Class_2_60DDD9C206686F44*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7F24B918AE3AFDB2_METHOD_2_43A46E5F9FAC62B8_OFFSET))(this);
+	}
+
+	::UnityEngine::Animation* Method_2_8652DE0774915A40()
+	{
+		return ((::UnityEngine::Animation*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7F24B918AE3AFDB2_METHOD_2_8652DE0774915A40_OFFSET))(this);
+	}
+
+	::UnityEngine::Animation* Method_2_8652DE0774915A40_1()
+	{
+		return ((::UnityEngine::Animation*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_7F24B918AE3AFDB2_METHOD_2_8652DE0774915A40_1_OFFSET))(this);
+	}
+};

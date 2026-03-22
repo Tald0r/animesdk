@@ -1,0 +1,97 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTask.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTaskStatus.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/System/Threading/CancellationToken.h"
+#include "unitysdk/System/ValueTuple_2.h"
+
+namespace Cysharp::Threading::Tasks { class ExceptionHolder; }
+namespace System { class Exception; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_GETRESULT_OFFSET UNITYSDK_OFFSET(0x1AFA4B30)
+#define CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_GETSTATUS_OFFSET UNITYSDK_OFFSET(0x1AFA4BE0)
+#define CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_GET_TASK_OFFSET UNITYSDK_OFFSET(0x1AFA4790)
+#define CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_MARKHANDLED_OFFSET UNITYSDK_OFFSET(0x1AFA4780)
+#define CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_ONCOMPLETED_OFFSET UNITYSDK_OFFSET(0x1AFA4C00)
+#define CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_TRYSETCANCELED_OFFSET UNITYSDK_OFFSET(0x1AFA4A80)
+#define CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_TRYSETEXCEPTION_OFFSET UNITYSDK_OFFSET(0x1AFA4AA0)
+#define CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_TRYSETRESULT_OFFSET UNITYSDK_OFFSET(0x1AFA30C0)
+#define CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_TRYSIGNALCOMPLETION_OFFSET UNITYSDK_OFFSET(0x1AFA47A0)
+#define CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_UNSAFEGETSTATUS_OFFSET UNITYSDK_OFFSET(0x1AFA4BF0)
+#define CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFA4770)
+
+namespace Cysharp::Threading::Tasks
+{
+	inline static constexpr unsigned int UniTaskCompletionSource_TypeDefinitionIndex = 27174;
+
+	class UniTaskCompletionSource : public ::System::Object
+	{
+	public:
+		::System::Object* singleState; // 0x10
+		::System::Object* gate; // 0x18
+		::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Action_1<::System::Object*>*, ::System::Object*>>* secondaryContinuationList; // 0x20
+		::System::Threading::CancellationToken cancellationToken; // 0x28
+		::System::Action_1<::System::Object*>* singleContinuation; // 0x30
+		::Cysharp::Threading::Tasks::ExceptionHolder* exception; // 0x38
+		::System::Int32 intStatus; // 0x40
+		::System::Boolean handled; // 0x44
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void MarkHandled()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_MARKHANDLED_OFFSET))(this);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask get_Task()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_GET_TASK_OFFSET))(this);
+		}
+
+		::System::Boolean TrySetResult()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_TRYSETRESULT_OFFSET))(this);
+		}
+
+		::System::Boolean TrySetCanceled(::System::Threading::CancellationToken cancellationToken)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Threading::CancellationToken))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_TRYSETCANCELED_OFFSET))(this, cancellationToken);
+		}
+
+		::System::Boolean TrySetException(::System::Exception* exception)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Exception*))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_TRYSETEXCEPTION_OFFSET))(this, exception);
+		}
+
+		::System::Void GetResult(::System::Int16 token)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int16))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_GETRESULT_OFFSET))(this, token);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskStatus GetStatus(::System::Int16 token)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskStatus(*)(::PVOID, ::System::Int16))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_GETSTATUS_OFFSET))(this, token);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskStatus UnsafeGetStatus()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskStatus(*)(::PVOID))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_UNSAFEGETSTATUS_OFFSET))(this);
+		}
+
+		::System::Void OnCompleted(::System::Action_1<::System::Object*>* continuation, ::System::Object* state, ::System::Int16 token)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::System::Object*>*, ::System::Object*, ::System::Int16))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_ONCOMPLETED_OFFSET))(this, continuation, state, token);
+		}
+
+		::System::Boolean TrySignalCompletion(::Cysharp::Threading::Tasks::UniTaskStatus status)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Cysharp::Threading::Tasks::UniTaskStatus))((::PBYTE)hIl2Cpp + CYSHARP_THREADING_TASKS_UNITASKCOMPLETIONSOURCE_TRYSIGNALCOMPLETION_OFFSET))(this, status);
+		}
+	};
+}

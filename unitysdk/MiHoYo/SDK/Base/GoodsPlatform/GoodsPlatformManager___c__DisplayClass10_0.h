@@ -7,18 +7,18 @@ namespace MiHoYo::SDK { class JSONObject; }
 namespace System { class String; }
 namespace System { template <typename T1, typename T2, typename T3> class Action_3; }
 
-#define MIHOYO_SDK_BASE_GOODSPLATFORM_GOODSPLATFORMMANAGER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0x15704340)
-#define MIHOYO_SDK_BASE_GOODSPLATFORM_GOODSPLATFORMMANAGER___C__DISPLAYCLASS10_0__REQUESTLISTGOODSAPIWITHCDNFALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0x15704480)
+#define MIHOYO_SDK_BASE_GOODSPLATFORM_GOODSPLATFORMMANAGER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1893AF50)
+#define MIHOYO_SDK_BASE_GOODSPLATFORM_GOODSPLATFORMMANAGER___C__DISPLAYCLASS10_0__REQUESTLISTGOODSAPIWITHCDNFALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0x1893AF60)
 
 namespace MiHoYo::SDK::Base::GoodsPlatform
 {
-	inline static constexpr unsigned int GoodsPlatformManager___c__DisplayClass10_0_TypeDefinitionIndex = 7337;
+	inline static constexpr unsigned int GoodsPlatformManager___c__DisplayClass10_0_TypeDefinitionIndex = 18480;
 
 	class GoodsPlatformManager___c__DisplayClass10_0 : public ::System::Object
 	{
 	public:
-		::MiHoYo::SDK::JSONObject* queries; // 0x10
-		::System::Action_3<::System::Int32, ::System::String*, ::MiHoYo::SDK::JSONArray*>* callback; // 0x18
+		::System::Action_3<::System::Int32, ::System::String*, ::MiHoYo::SDK::JSONArray*>* callback; // 0x10
+		::MiHoYo::SDK::JSONObject* queries; // 0x18
 
 		::System::Void _ctor()
 		{

@@ -1,0 +1,40 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_3D46C5D064952E16_1.h"
+#include "unitysdk/Enum_3_0F5D0B7399907DA1.h"
+
+class Class_2_1B1C05BC0A38A2D5_1;
+namespace UnityEngine { class RectTransform; }
+
+#define CLASS_2_A2C95BEE51D13F24_METHOD_2_6C0EF70757F959B0_OFFSET UNITYSDK_OFFSET(0xB95CED0)
+#define CLASS_2_A2C95BEE51D13F24_METHOD_2_735EE20B25F86BF4_1_OFFSET UNITYSDK_OFFSET(0xB95CFC0)
+#define CLASS_2_A2C95BEE51D13F24_METHOD_2_735EE20B25F86BF4_OFFSET UNITYSDK_OFFSET(0xB95CE60)
+#define CLASS_2_A2C95BEE51D13F24__CTOR_OFFSET UNITYSDK_OFFSET(0xB95CE50)
+
+inline static constexpr unsigned int Class_2_A2C95BEE51D13F24_TypeDefinitionIndex = 63782;
+
+class Class_2_A2C95BEE51D13F24 : public ::Class_1_3D46C5D064952E16_1
+{
+public:
+	::Enum_3_0F5D0B7399907DA1 Field_2_0; // 0x18
+
+	::System::Void _ctor(::Class_2_1B1C05BC0A38A2D5_1* a1, ::Enum_3_0F5D0B7399907DA1 a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_2_1B1C05BC0A38A2D5_1*, ::Enum_3_0F5D0B7399907DA1))((::PBYTE)hIl2Cpp + CLASS_2_A2C95BEE51D13F24__CTOR_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_735EE20B25F86BF4()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_A2C95BEE51D13F24_METHOD_2_735EE20B25F86BF4_OFFSET))(this);
+	}
+
+	::System::Void Method_2_735EE20B25F86BF4_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_A2C95BEE51D13F24_METHOD_2_735EE20B25F86BF4_1_OFFSET))(this);
+	}
+
+	::UnityEngine::RectTransform* Method_2_6C0EF70757F959B0()
+	{
+		return ((::UnityEngine::RectTransform*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_A2C95BEE51D13F24_METHOD_2_6C0EF70757F959B0_OFFSET))(this);
+	}
+};

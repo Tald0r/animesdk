@@ -6,7 +6,7 @@ namespace MessagePack::Formatters { template <typename T> class IMessagePackForm
 
 namespace MessagePack::Resolvers
 {
-	inline static constexpr unsigned int NativeDateTimeResolver_FormatterCache_1_TypeDefinitionIndex = 9541;
+	inline static constexpr unsigned int NativeDateTimeResolver_FormatterCache_1_TypeDefinitionIndex = 26612;
 
 	template <typename T>
 	class NativeDateTimeResolver_FormatterCache_1 : public ::System::Object

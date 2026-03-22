@@ -1,0 +1,88 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/BehaviorDesigner/Runtime/Behavior_EventTypes.h"
+#include "unitysdk/BehaviorDesigner/Runtime/Tasks/Action.h"
+#include "unitysdk/BehaviorDesigner/Runtime/Tasks/TaskStatus.h"
+
+namespace BehaviorDesigner::Runtime { class SharedVector3; }
+namespace UnityEngine { class Animator; }
+
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION_ONANIMATORIK_OFFSET UNITYSDK_OFFSET(0x1AA64800)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AA64980)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION_ONSTART_OFFSET UNITYSDK_OFFSET(0x1AA64650)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AA646D0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION_SELFCONTAINSMETHOD_OFFSET UNITYSDK_OFFSET(0x1AA645E0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA649E0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION___BASE_ONANIMATORIK_OFFSET UNITYSDK_OFFSET(0x1AA64A20)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AA64A60)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION___BASE_ONSTART_OFFSET UNITYSDK_OFFSET(0x1AA64AA0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AA64AE0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION___BASE_SELFCONTAINSMETHOD_OFFSET UNITYSDK_OFFSET(0x1AA64B30)
+
+namespace BehaviorDesigner::Runtime::Tasks::Unity::UnityAnimator
+{
+	inline static constexpr unsigned int SetLookAtPosition_TypeDefinitionIndex = 30768;
+
+	class SetLookAtPosition : public ::BehaviorDesigner::Runtime::Tasks::Action
+	{
+	public:
+		::BehaviorDesigner::Runtime::SharedVector3* position; // 0x58
+		::UnityEngine::Animator* animator; // 0x60
+		::System::Boolean positionSet; // 0x68
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean SelfContainsMethod(::BehaviorDesigner::Runtime::Behavior_EventTypes evt)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::BehaviorDesigner::Runtime::Behavior_EventTypes))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION_SELFCONTAINSMETHOD_OFFSET))(this, evt);
+		}
+
+		::System::Void OnStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION_ONSTART_OFFSET))(this);
+		}
+
+		::BehaviorDesigner::Runtime::Tasks::TaskStatus OnUpdate()
+		{
+			return ((::BehaviorDesigner::Runtime::Tasks::TaskStatus(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION_ONUPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnAnimatorIK()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION_ONANIMATORIK_OFFSET))(this);
+		}
+
+		::System::Void OnReset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION_ONRESET_OFFSET))(this);
+		}
+
+		::System::Void __base_OnAnimatorIK()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION___BASE_ONANIMATORIK_OFFSET))(this);
+		}
+
+		::System::Void __base_OnReset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION___BASE_ONRESET_OFFSET))(this);
+		}
+
+		::System::Void __base_OnStart()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION___BASE_ONSTART_OFFSET))(this);
+		}
+
+		::BehaviorDesigner::Runtime::Tasks::TaskStatus __base_OnUpdate()
+		{
+			return ((::BehaviorDesigner::Runtime::Tasks::TaskStatus(*)(::PVOID))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION___BASE_ONUPDATE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_SelfContainsMethod(::BehaviorDesigner::Runtime::Behavior_EventTypes P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::BehaviorDesigner::Runtime::Behavior_EventTypes))((::PBYTE)hIl2Cpp + BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYANIMATOR_SETLOOKATPOSITION___BASE_SELFCONTAINSMETHOD_OFFSET))(this, P0);
+		}
+	};
+}

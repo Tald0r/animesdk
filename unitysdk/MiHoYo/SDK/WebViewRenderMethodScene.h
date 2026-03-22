@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MIHOYO_SDK_WEBVIEWRENDERMETHODSCENE__CTOR_OFFSET UNITYSDK_OFFSET(0x159891E0)
+#define MIHOYO_SDK_WEBVIEWRENDERMETHODSCENE__CTOR_OFFSET UNITYSDK_OFFSET(0x18797200)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int WebViewRenderMethodScene_TypeDefinitionIndex = 6788;
+	inline static constexpr unsigned int WebViewRenderMethodScene_TypeDefinitionIndex = 17918;
 
 	class WebViewRenderMethodScene : public ::System::Object
 	{

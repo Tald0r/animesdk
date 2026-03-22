@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/Datatype_anySimpleType.h"
+#include "unitysdk/System/Xml/Schema/RestrictionFlags.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaWhiteSpace.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 
@@ -14,31 +15,32 @@ namespace System::Xml::Schema { class FacetsChecker; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_COMPARE_OFFSET UNITYSDK_OFFSET(0x17D69E40)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D69CB0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x17D69E30)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x17D69D00)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D69DD0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D69D60)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D69D70)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x17D69F40)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D6A040)
-#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN__CTOR_OFFSET UNITYSDK_OFFSET(0x17D62DA0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_COMPARE_OFFSET UNITYSDK_OFFSET(0x19107730)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x19107590)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x19107710)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x191075E0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x191076B0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x19107640)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_VALIDRESTRICTIONFLAGS_OFFSET UNITYSDK_OFFSET(0x19107720)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x19107650)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x19107830)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN__CCTOR_OFFSET UNITYSDK_OFFSET(0x191079D0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN__CTOR_OFFSET UNITYSDK_OFFSET(0x19107930)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_boolean_TypeDefinitionIndex = 2080;
+	inline static constexpr unsigned int Datatype_boolean_TypeDefinitionIndex = 1995;
 
 	class Datatype_boolean : public ::System::Xml::Schema::Datatype_anySimpleType
 	{
 	public:
 		static ::System::Type** StaticGet_atomicValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_boolean_TypeDefinitionIndex)->GetStaticField(0x140E0);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_boolean_TypeDefinitionIndex)->GetStaticField(0x1E90);
 		}
 		static ::System::Type** StaticGet_listValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_boolean_TypeDefinitionIndex)->GetStaticField(0x140E8);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_boolean_TypeDefinitionIndex)->GetStaticField(0x1E98);
 		}
 
 		::System::Void _ctor()
@@ -79,6 +81,11 @@ namespace System::Xml::Schema
 		::System::Xml::Schema::XmlSchemaWhiteSpace get_BuiltInWhitespaceFacet()
 		{
 			return ((::System::Xml::Schema::XmlSchemaWhiteSpace(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_BUILTINWHITESPACEFACET_OFFSET))(this);
+		}
+
+		::System::Xml::Schema::RestrictionFlags get_ValidRestrictionFlags()
+		{
+			return ((::System::Xml::Schema::RestrictionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_BOOLEAN_GET_VALIDRESTRICTIONFLAGS_OFFSET))(this);
 		}
 
 		::System::Int32 Compare(::System::Object* value1, ::System::Object* value2)

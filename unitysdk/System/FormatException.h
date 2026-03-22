@@ -7,14 +7,14 @@ namespace System { class Exception; }
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_FORMATEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C308E0)
-#define SYSTEM_FORMATEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C372D0)
-#define SYSTEM_FORMATEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15C37340)
-#define SYSTEM_FORMATEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15C37230)
+#define SYSTEM_FORMATEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1965AC70)
+#define SYSTEM_FORMATEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1965ACE0)
+#define SYSTEM_FORMATEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1965AD50)
+#define SYSTEM_FORMATEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1965ABD0)
 
 namespace System
 {
-	inline static constexpr unsigned int FormatException_TypeDefinitionIndex = 250;
+	inline static constexpr unsigned int FormatException_TypeDefinitionIndex = 236;
 
 	class FormatException : public ::System::SystemException
 	{

@@ -6,14 +6,15 @@
 namespace System { class Type; }
 namespace System::Linq::Expressions { class ExpressionVisitor; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_DEFAULTEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x17C900C0)
-#define SYSTEM_LINQ_EXPRESSIONS_DEFAULTEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x17C900B0)
-#define SYSTEM_LINQ_EXPRESSIONS_DEFAULTEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x17C900A0)
-#define SYSTEM_LINQ_EXPRESSIONS_DEFAULTEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17C90040)
+#define SYSTEM_LINQ_EXPRESSIONS_DEFAULTEXPRESSION_ACCEPT_OFFSET UNITYSDK_OFFSET(0x1A5BA120)
+#define SYSTEM_LINQ_EXPRESSIONS_DEFAULTEXPRESSION_GET_NODETYPE_OFFSET UNITYSDK_OFFSET(0x1A5BA110)
+#define SYSTEM_LINQ_EXPRESSIONS_DEFAULTEXPRESSION_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1A5BA100)
+#define SYSTEM_LINQ_EXPRESSIONS_DEFAULTEXPRESSION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A5BA150)
+#define SYSTEM_LINQ_EXPRESSIONS_DEFAULTEXPRESSION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A5BA0A0)
 
 namespace System::Linq::Expressions
 {
-	inline static constexpr unsigned int DefaultExpression_TypeDefinitionIndex = 3190;
+	inline static constexpr unsigned int DefaultExpression_TypeDefinitionIndex = 4457;
 
 	class DefaultExpression : public ::System::Linq::Expressions::Expression
 	{
@@ -23,6 +24,11 @@ namespace System::Linq::Expressions
 		::System::Void _ctor(::System::Type* type)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_DEFAULTEXPRESSION__CTOR_OFFSET))(this, type);
+		}
+
+		::System::Void _ctor_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_DEFAULTEXPRESSION__CTOR_1_OFFSET))(this);
 		}
 
 		::System::Type* get_Type()

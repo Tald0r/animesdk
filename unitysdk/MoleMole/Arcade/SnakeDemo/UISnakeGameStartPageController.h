@@ -1,0 +1,82 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_60638234271CCDB8_146;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole::Arcade::SnakeDemo { class UISnakeDuelStartChildWindowController; }
+
+#define MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x1AAD1930)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x1AAD1BF0)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER_ONHIDE_OFFSET UNITYSDK_OFFSET(0x1AAD1B50)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x1AAD1940)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x1AAD1C80)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAD1CF0)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x1AAD1D00)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER___BASE_ONHIDE_OFFSET UNITYSDK_OFFSET(0x1AAD1D70)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x1AAD1DD0)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x1AAD1DE0)
+
+namespace MoleMole::Arcade::SnakeDemo
+{
+	inline static constexpr unsigned int UISnakeGameStartPageController_TypeDefinitionIndex = 81634;
+
+	class UISnakeGameStartPageController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_60638234271CCDB8_146* _view; // 0x2F8
+		::MoleMole::Arcade::SnakeDemo::UISnakeDuelStartChildWindowController* startCtrl; // 0x300
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showContextBase)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER_ONSHOW_OFFSET))(this, showContextBase);
+		}
+
+		::System::Void OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnHide()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER___BASE_ONHIDE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_ARCADE_SNAKEDEMO_UISNAKEGAMESTARTPAGECONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+	};
+}

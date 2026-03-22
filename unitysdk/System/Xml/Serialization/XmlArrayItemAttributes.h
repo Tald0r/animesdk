@@ -2,14 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Collections/CollectionBase.h"
 
+namespace System::Text { class StringBuilder; }
 namespace System::Xml::Serialization { class XmlArrayItemAttribute; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTES_ADD_OFFSET UNITYSDK_OFFSET(0x17DAB5A0)
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTES__CTOR_OFFSET UNITYSDK_OFFSET(0x17DAB660)
+#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTES_ADDKEYHASH_OFFSET UNITYSDK_OFFSET(0x1A6888B0)
+#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTES_ADD_OFFSET UNITYSDK_OFFSET(0x1A6887F0)
+#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTES_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x1A6886E0)
+#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTES__CTOR_OFFSET UNITYSDK_OFFSET(0x1A6889A0)
 
 namespace System::Xml::Serialization
 {
-	inline static constexpr unsigned int XmlArrayItemAttributes_TypeDefinitionIndex = 1984;
+	inline static constexpr unsigned int XmlArrayItemAttributes_TypeDefinitionIndex = 1878;
 
 	class XmlArrayItemAttributes : public ::System::Collections::CollectionBase
 	{
@@ -19,9 +22,19 @@ namespace System::Xml::Serialization
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTES__CTOR_OFFSET))(this);
 		}
 
+		::System::Xml::Serialization::XmlArrayItemAttribute* get_Item(::System::Int32 index)
+		{
+			return ((::System::Xml::Serialization::XmlArrayItemAttribute*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTES_GET_ITEM_OFFSET))(this, index);
+		}
+
 		::System::Int32 Add(::System::Xml::Serialization::XmlArrayItemAttribute* attribute)
 		{
 			return ((::System::Int32(*)(::PVOID, ::System::Xml::Serialization::XmlArrayItemAttribute*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTES_ADD_OFFSET))(this, attribute);
+		}
+
+		::System::Void AddKeyHash(::System::Text::StringBuilder* sb)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Text::StringBuilder*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTES_ADDKEYHASH_OFFSET))(this, sb);
 		}
 	};
 }

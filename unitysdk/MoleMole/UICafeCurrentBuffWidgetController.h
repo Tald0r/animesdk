@@ -1,0 +1,112 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_7BEEB90214042948_17;
+class Class_2_82E692415C3A4E10;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONCLICKBUFF_OFFSET UNITYSDK_OFFSET(0xB91F060)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONCLOSEPOPUPWINDOW_OFFSET UNITYSDK_OFFSET(0xB91FAC0)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB91E9E0)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB91EC10)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB91E610)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB91EA80)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_REFRESHBUFFCOUNT_OFFSET UNITYSDK_OFFSET(0xB91EE60)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_SHOWBUFFDESC_OFFSET UNITYSDK_OFFSET(0xB91F1E0)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_SHOWUPDIALOG_OFFSET UNITYSDK_OFFSET(0xB91F440)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_UPDATEDATA_OFFSET UNITYSDK_OFFSET(0xB91EBA0)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB91FCA0)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB91FCD0)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB91FD40)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB91FDC0)
+#define MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB91FE20)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UICafeCurrentBuffWidgetController_TypeDefinitionIndex = 60378;
+
+	class UICafeCurrentBuffWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_7BEEB90214042948_17* _view; // 0x2A0
+		::Class_2_82E692415C3A4E10* _cafeModel; // 0x2A8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void UpdateData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_UPDATEDATA_OFFSET))(this);
+		}
+
+		::System::Void OnClickBuff()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONCLICKBUFF_OFFSET))(this);
+		}
+
+		::System::Void ShowBuffDesc()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_SHOWBUFFDESC_OFFSET))(this);
+		}
+
+		::System::Void ShowUpDialog()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_SHOWUPDIALOG_OFFSET))(this);
+		}
+
+		::System::Void OnClosePopupWindow(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_ONCLOSEPOPUPWINDOW_OFFSET))(this, args);
+		}
+
+		::System::Void RefreshBuffCount()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER_REFRESHBUFFCOUNT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UICAFECURRENTBUFFWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -6,7 +6,7 @@ namespace System { template <typename T> class Array_EmptyInternalEnumerator_1; 
 
 namespace System
 {
-	inline static constexpr unsigned int Array_EmptyInternalEnumerator_1_TypeDefinitionIndex = 139;
+	inline static constexpr unsigned int Array_EmptyInternalEnumerator_1_TypeDefinitionIndex = 129;
 
 	template <typename T>
 	class Array_EmptyInternalEnumerator_1 : public ::System::Object

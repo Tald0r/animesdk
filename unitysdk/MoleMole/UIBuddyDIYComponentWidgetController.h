@@ -1,0 +1,359 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+class Class_1_A59025D696FD25CD;
+class Class_2_2CD888E1E8CCAB0A;
+class Class_2_60DDD9C206686F44;
+namespace MoleMole { class MonoDragUIObject; }
+namespace MoleMole { class UIControlReference; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Animation; }
+namespace UnityEngine { class RectTransform; }
+namespace UnityEngine::EventSystems { class PointerEventData; }
+
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ADSORBEDCONFRIMPOS_OFFSET UNITYSDK_OFFSET(0xBB0C010)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ASYNCPOS_OFFSET UNITYSDK_OFFSET(0xBB0CFF0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_CHANGESELF_OFFSET UNITYSDK_OFFSET(0xBB0DE20)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_CLICKDELETEBTN_OFFSET UNITYSDK_OFFSET(0xBB0B300)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_CLICKOKBTN_OFFSET UNITYSDK_OFFSET(0xBB0AD90)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_CLICKROTATEBTN_OFFSET UNITYSDK_OFFSET(0xBB0B570)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_CONFRIMPOSITIONANDROTATION_OFFSET UNITYSDK_OFFSET(0xBB0AE00)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_GETDIYCOMPONENT_OFFSET UNITYSDK_OFFSET(0xBB087A0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_GET_COMPONENT_OFFSET UNITYSDK_OFFSET(0xBB0F530)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_GET_DELETEBTN_OFFSET UNITYSDK_OFFSET(0xBB0F540)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_GET_OKBTN_OFFSET UNITYSDK_OFFSET(0xBB0EE60)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_GET_ROTATEBTN_OFFSET UNITYSDK_OFFSET(0xBB0F570)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_HIDEBTNS_OFFSET UNITYSDK_OFFSET(0xBB0AC10)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_INVOKECOLLIDERBTN_OFFSET UNITYSDK_OFFSET(0xBB0C6C0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ISINCOMPONENTAREA_OFFSET UNITYSDK_OFFSET(0xBB0BB70)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_MOVEPOSITION_OFFSET UNITYSDK_OFFSET(0xBB0CD10)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_MOVETOMAPGRID_OFFSET UNITYSDK_OFFSET(0xBB0EE80)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBB09D90)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONDRAGSTART_OFFSET UNITYSDK_OFFSET(0xBB0BA40)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONDRAG_OFFSET UNITYSDK_OFFSET(0xBB0C3B0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONENDDRAG_OFFSET UNITYSDK_OFFSET(0xBB0BF00)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONGAMEPADEDITOR_OFFSET UNITYSDK_OFFSET(0xBB0E780)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONLONGPRESS_OFFSET UNITYSDK_OFFSET(0xBB0CB50)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONPOINTCLICKDOWN_OFFSET UNITYSDK_OFFSET(0xBB0C640)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONPOINTCLICKUP_OFFSET UNITYSDK_OFFSET(0xBB0C9F0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBB09E30)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBB096B0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_RESETBUTTONSTATE_OFFSET UNITYSDK_OFFSET(0xBB0BDE0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_RESETGAMEPADMOVE_OFFSET UNITYSDK_OFFSET(0xBB0E950)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETBG_OFFSET UNITYSDK_OFFSET(0xBB0A830)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETCOMPONENT_OFFSET UNITYSDK_OFFSET(0xBB09F10)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETFOCUS_OFFSET UNITYSDK_OFFSET(0xBB0E640)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETICONPOSITION_OFFSET UNITYSDK_OFFSET(0xBB0A2A0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETICONROTATE_OFFSET UNITYSDK_OFFSET(0xBB0A030)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETPOSITIONBYGRIDS_OFFSET UNITYSDK_OFFSET(0xBB0D0F0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETSCREENPOS_OFFSET UNITYSDK_OFFSET(0xBB0C350)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETTRANSFORMPOSITION_OFFSET UNITYSDK_OFFSET(0xBB0CEB0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SHOWBTNS_OFFSET UNITYSDK_OFFSET(0xBB0AA60)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SWITCHNORMALMODE_OFFSET UNITYSDK_OFFSET(0xBB0DB10)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SWITCHTOEDITORMODE_OFFSET UNITYSDK_OFFSET(0xBB0D700)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_TRYCREATEEDITORCOMPONENT_OFFSET UNITYSDK_OFFSET(0xBB0E4B0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_UNINSTALLCOMMPONENT_OFFSET UNITYSDK_OFFSET(0xBB0D2B0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_UPDATECONTAINER_OFFSET UNITYSDK_OFFSET(0xBB0B6F0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xBB0CA80)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER__ADSORBEDCONFRIMPOS_B__37_0_OFFSET UNITYSDK_OFFSET(0xBB0F6C0)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xBB0F650)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBB0F590)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBB0F890)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBB0F900)
+#define MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBB0F980)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBuddyDIYComponentWidgetController_TypeDefinitionIndex = 70132;
+
+	class UIBuddyDIYComponentWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		static ::System::String** StaticGet_Rotate_Btn_Name()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIBuddyDIYComponentWidgetController_TypeDefinitionIndex)->GetStaticField(0x3D6E0);
+		}
+		static ::System::String** StaticGet_Confrim_Btn_Name()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIBuddyDIYComponentWidgetController_TypeDefinitionIndex)->GetStaticField(0x3D6E8);
+		}
+		static ::System::String** StaticGet_IconGridPrefabPath()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIBuddyDIYComponentWidgetController_TypeDefinitionIndex)->GetStaticField(0x3D6F0);
+		}
+		static ::System::String** StaticGet_Delete_Btn_Name()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIBuddyDIYComponentWidgetController_TypeDefinitionIndex)->GetStaticField(0x3D6F8);
+		}
+		::Class_2_2CD888E1E8CCAB0A* _view; // 0x2A0
+		::System::Collections::Generic::List_1<::UnityEngine::Vector2>* currentRects; // 0x2A8
+		::UnityEngine::Vector2 gamePadCacheList; // 0x2B0
+		::Class_1_A59025D696FD25CD* component; // 0x2B8
+		::MoleMole::MonoDragUIObject* _drag; // 0x2C0
+		::System::Collections::Generic::List_1<::UnityEngine::RectTransform*>* icons; // 0x2C8
+		::System::Boolean IsShowedIconsFrame; // 0x2D0
+		::System::Boolean IsFromeBag; // 0x2D1
+		::UnityEngine::Vector2 _lastPosition; // 0x2D4
+		::UnityEngine::Animation* operationBtnAni; // 0x2E0
+		::System::Boolean _editiorMode; // 0x2E8
+		::System::Boolean _isClick; // 0x2E9
+		::System::Single longPressTimeInteval; // 0x2EC
+		::System::Single longPressTimeCount; // 0x2F0
+		::UnityEngine::EventSystems::PointerEventData* longPressCache; // 0x2F8
+		::System::String* ShakeAni; // 0x300
+		::UnityEngine::Animation* animation; // 0x308
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetComponent(::Class_1_A59025D696FD25CD* component)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_A59025D696FD25CD*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETCOMPONENT_OFFSET))(this, component);
+		}
+
+		::System::Void SetIconRotate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETICONROTATE_OFFSET))(this);
+		}
+
+		::System::Void SetBG()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETBG_OFFSET))(this);
+		}
+
+		::System::Void SetIconPosition()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETICONPOSITION_OFFSET))(this);
+		}
+
+		::System::Void ShowBtns()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SHOWBTNS_OFFSET))(this);
+		}
+
+		::System::Void HideBtns()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_HIDEBTNS_OFFSET))(this);
+		}
+
+		::System::Void ClickOkBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_CLICKOKBTN_OFFSET))(this);
+		}
+
+		::System::Void ClickDeleteBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_CLICKDELETEBTN_OFFSET))(this);
+		}
+
+		::System::Void ClickRotateBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_CLICKROTATEBTN_OFFSET))(this);
+		}
+
+		::System::Void OnDragStart(::UnityEngine::EventSystems::PointerEventData* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONDRAGSTART_OFFSET))(this, data);
+		}
+
+		::System::Void OnEndDrag(::UnityEngine::EventSystems::PointerEventData* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONENDDRAG_OFFSET))(this, data);
+		}
+
+		::System::Void SetScreenpos()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETSCREENPOS_OFFSET))(this);
+		}
+
+		::System::Void OnDrag(::MoleMole::MonoDragUIObject* callbackObj, ::UnityEngine::EventSystems::PointerEventData* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoDragUIObject*, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONDRAG_OFFSET))(this, callbackObj, data);
+		}
+
+		::System::Boolean IsInComponentArea(::UnityEngine::Vector2 screenPos)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ISINCOMPONENTAREA_OFFSET))(this, screenPos);
+		}
+
+		::System::Void OnPointClickDown(::UnityEngine::EventSystems::PointerEventData* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONPOINTCLICKDOWN_OFFSET))(this, data);
+		}
+
+		::System::Void OnPointClickUp(::UnityEngine::EventSystems::PointerEventData* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONPOINTCLICKUP_OFFSET))(this, data);
+		}
+
+		::System::Void ResetButtonState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_RESETBUTTONSTATE_OFFSET))(this);
+		}
+
+		::System::Boolean InvokeColliderBtn(::UnityEngine::EventSystems::PointerEventData* data, ::System::Boolean isHold)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::EventSystems::PointerEventData*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_INVOKECOLLIDERBTN_OFFSET))(this, data, isHold);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void MovePosition(::UnityEngine::Vector2 uiPosition)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_MOVEPOSITION_OFFSET))(this, uiPosition);
+		}
+
+		::System::Void AsyncPos()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ASYNCPOS_OFFSET))(this);
+		}
+
+		::System::Void SetPositionByGrids(::System::Collections::Generic::List_1<::UnityEngine::Vector2>* grids)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::UnityEngine::Vector2>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETPOSITIONBYGRIDS_OFFSET))(this, grids);
+		}
+
+		::System::Void OnLongPress()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONLONGPRESS_OFFSET))(this);
+		}
+
+		::System::Void SwitchNormalMode()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SWITCHNORMALMODE_OFFSET))(this);
+		}
+
+		::System::Void SwitchToEditorMode()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SWITCHTOEDITORMODE_OFFSET))(this);
+		}
+
+		::System::Void ConfrimPositionAndRotation()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_CONFRIMPOSITIONANDROTATION_OFFSET))(this);
+		}
+
+		::System::Void UnInstallCommponent()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_UNINSTALLCOMMPONENT_OFFSET))(this);
+		}
+
+		::System::Void ChangeSelf()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_CHANGESELF_OFFSET))(this);
+		}
+
+		::System::Void SetTransformPosition(::UnityEngine::Vector2 uiPosition)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETTRANSFORMPOSITION_OFFSET))(this, uiPosition);
+		}
+
+		::System::Boolean TryCreateEditorComponent()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_TRYCREATEEDITORCOMPONENT_OFFSET))(this);
+		}
+
+		::Class_1_A59025D696FD25CD* GetDIYComponent()
+		{
+			return ((::Class_1_A59025D696FD25CD*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_GETDIYCOMPONENT_OFFSET))(this);
+		}
+
+		::System::Void UpdateContainer()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_UPDATECONTAINER_OFFSET))(this);
+		}
+
+		::System::Void AdsorbedConfrimPos()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ADSORBEDCONFRIMPOS_OFFSET))(this);
+		}
+
+		::System::Void SetFocus(::System::Boolean isFoucs)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_SETFOCUS_OFFSET))(this, isFoucs);
+		}
+
+		::System::Void OnGamePadEditor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_ONGAMEPADEDITOR_OFFSET))(this);
+		}
+
+		::System::Void ResetGamePadMove()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_RESETGAMEPADMOVE_OFFSET))(this);
+		}
+
+		::System::Void MoveToMapGrid(::UnityEngine::Vector2 gridPos)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_MOVETOMAPGRID_OFFSET))(this, gridPos);
+		}
+
+		::Class_1_A59025D696FD25CD* get_Component()
+		{
+			return ((::Class_1_A59025D696FD25CD*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_GET_COMPONENT_OFFSET))(this);
+		}
+
+		::Class_2_60DDD9C206686F44* get_DeleteBtn()
+		{
+			return ((::Class_2_60DDD9C206686F44*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_GET_DELETEBTN_OFFSET))(this);
+		}
+
+		::Class_2_60DDD9C206686F44* get_RotateBtn()
+		{
+			return ((::Class_2_60DDD9C206686F44*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_GET_ROTATEBTN_OFFSET))(this);
+		}
+
+		::Class_2_60DDD9C206686F44* get_OkBtn()
+		{
+			return ((::Class_2_60DDD9C206686F44*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER_GET_OKBTN_OFFSET))(this);
+		}
+
+		::System::Void _AdsorbedConfrimPos_b__37_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER__ADSORBEDCONFRIMPOS_B__37_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYDIYCOMPONENTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

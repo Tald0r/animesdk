@@ -6,18 +6,16 @@
 namespace CriWare { class CriFsBinder; }
 namespace System { class String; }
 
-#define CRIWARE_CRIFSBINDREQUEST_DISPOSE_OFFSET UNITYSDK_OFFSET(0x112C3EC0)
-#define CRIWARE_CRIFSBINDREQUEST_GET_BINDID_OFFSET UNITYSDK_OFFSET(0x112C3610)
-#define CRIWARE_CRIFSBINDREQUEST_GET_PATH_OFFSET UNITYSDK_OFFSET(0x112C35F0)
-#define CRIWARE_CRIFSBINDREQUEST_SET_BINDID_OFFSET UNITYSDK_OFFSET(0x112C3620)
-#define CRIWARE_CRIFSBINDREQUEST_SET_PATH_OFFSET UNITYSDK_OFFSET(0x112C3600)
-#define CRIWARE_CRIFSBINDREQUEST_STOP_OFFSET UNITYSDK_OFFSET(0x112C3CD0)
-#define CRIWARE_CRIFSBINDREQUEST_UPDATE_OFFSET UNITYSDK_OFFSET(0x112C3CE0)
-#define CRIWARE_CRIFSBINDREQUEST__CTOR_OFFSET UNITYSDK_OFFSET(0x112C3630)
+#define CRIWARE_CRIFSBINDREQUEST_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1B0DA350)
+#define CRIWARE_CRIFSBINDREQUEST_GET_BINDID_OFFSET UNITYSDK_OFFSET(0x1B0D9F20)
+#define CRIWARE_CRIFSBINDREQUEST_SET_BINDID_OFFSET UNITYSDK_OFFSET(0x1B0D9F30)
+#define CRIWARE_CRIFSBINDREQUEST_SET_PATH_OFFSET UNITYSDK_OFFSET(0x1B0D9F10)
+#define CRIWARE_CRIFSBINDREQUEST_UPDATE_OFFSET UNITYSDK_OFFSET(0x1B0DA2E0)
+#define CRIWARE_CRIFSBINDREQUEST__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0D9F40)
 
 namespace CriWare
 {
-	inline static constexpr unsigned int CriFsBindRequest_TypeDefinitionIndex = 30261;
+	inline static constexpr unsigned int CriFsBindRequest_TypeDefinitionIndex = 31285;
 
 	class CriFsBindRequest : public ::CriWare::CriFsRequest
 	{
@@ -28,11 +26,6 @@ namespace CriWare
 		::System::Void _ctor(::CriWare::CriFsBindRequest_BindType type, ::CriWare::CriFsBinder* targetBinder, ::CriWare::CriFsBinder* srcBinder, ::System::String* path)
 		{
 			return ((::System::Void(*)(::PVOID, ::CriWare::CriFsBindRequest_BindType, ::CriWare::CriFsBinder*, ::CriWare::CriFsBinder*, ::System::String*))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSBINDREQUEST__CTOR_OFFSET))(this, type, targetBinder, srcBinder, path);
-		}
-
-		::System::String* get_path()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSBINDREQUEST_GET_PATH_OFFSET))(this);
 		}
 
 		::System::Void set_path(::System::String* value)
@@ -48,11 +41,6 @@ namespace CriWare
 		::System::Void set_bindId(::System::UInt32 value)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSBINDREQUEST_SET_BINDID_OFFSET))(this, value);
-		}
-
-		::System::Void Stop()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CRIWARE_CRIFSBINDREQUEST_STOP_OFFSET))(this);
 		}
 
 		::System::Void Update()

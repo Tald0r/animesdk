@@ -1,0 +1,50 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_2_208CC9941471731A_317;
+class Class_2_B1555FA59A3F87CE;
+namespace MoleMole { class UIOverlordFeastIntroduceTipsPopWindowController; }
+
+#define MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC18490)
+#define MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__JUMPTODEVITEM_3_OFFSET UNITYSDK_OFFSET(0xAC18D10)
+#define MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__JUMPTOTODOQUEST_2_OFFSET UNITYSDK_OFFSET(0xAC18C60)
+#define MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__SHOULDHIDEDISHJUMP_0_OFFSET UNITYSDK_OFFSET(0xAC184A0)
+#define MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__SHOULDHIDEGUESTJUMP_1_OFFSET UNITYSDK_OFFSET(0xAC18970)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIOverlordFeastIntroduceTipsPopWindowController___c__DisplayClass9_0_TypeDefinitionIndex = 52323;
+
+	class UIOverlordFeastIntroduceTipsPopWindowController___c__DisplayClass9_0 : public ::System::Object
+	{
+	public:
+		::Class_2_B1555FA59A3F87CE* overlordFeastModel; // 0x10
+		::MoleMole::UIOverlordFeastIntroduceTipsPopWindowController* __4__this; // 0x18
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean _RefreshView_g__ShouldHideDishJump_0(::System::Int32 dishID, ::Class_2_208CC9941471731A_317* gameConfig)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::Class_2_208CC9941471731A_317*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__SHOULDHIDEDISHJUMP_0_OFFSET))(this, dishID, gameConfig);
+		}
+
+		::System::Boolean _RefreshView_g__ShouldHideGuestJump_1(::System::Int32 guestID, ::Class_2_208CC9941471731A_317* gameConfig)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::Class_2_208CC9941471731A_317*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__SHOULDHIDEGUESTJUMP_1_OFFSET))(this, guestID, gameConfig);
+		}
+
+		::System::Void _RefreshView_g__JumpToTodoQuest_2(::System::Int32 questID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__JUMPTOTODOQUEST_2_OFFSET))(this, questID);
+		}
+
+		::System::Void _RefreshView_g__JumpToDevItem_3(::System::Int32 devID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__JUMPTODEVITEM_3_OFFSET))(this, devID);
+		}
+	};
+}

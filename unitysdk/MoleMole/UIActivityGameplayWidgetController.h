@@ -1,0 +1,223 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_D375C91CCE5D3999;
+class Class_1_EE462DDB9EDFAFDA;
+class Class_2_208CC9941471731A_97;
+class Class_2_79F6D62CE30E3F8E_142;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIActivityCompWeekRewardBtnWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_CLOSEOVERHANDLE_OFFSET UNITYSDK_OFFSET(0xD3BDBC0)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_GETDEFAULTSELECT_OFFSET UNITYSDK_OFFSET(0xD3BCB20)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_GETHASDIFFICUTYUNLOCK_OFFSET UNITYSDK_OFFSET(0xD3BC200)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_GETTEMPLATEINDEX_OFFSET UNITYSDK_OFFSET(0xD3BB4A0)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_GOTOPLAY_OFFSET UNITYSDK_OFFSET(0xD3BE090)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_LOADBACKGROUND_OFFSET UNITYSDK_OFFSET(0xD3BB800)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONBACKCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xD3BCE10)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONCLICKDIFFICUTYBTN_OFFSET UNITYSDK_OFFSET(0xD3BD460)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONCLICKNORMALBTN_OFFSET UNITYSDK_OFFSET(0xD3BDB00)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD3BC520)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONMAINCLICKHANDLE_OFFSET UNITYSDK_OFFSET(0xD3BDC60)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONQUESTROWSELECTHANDLE_OFFSET UNITYSDK_OFFSET(0xD3BDFD0)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONTOGGLEHANDLE_OFFSET UNITYSDK_OFFSET(0xD3BD710)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD3BE340)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD3BAB20)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD3BB510)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_OPENHISTORYVIEW_OFFSET UNITYSDK_OFFSET(0xD3BDD50)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_RECORDTABCLICK_OFFSET UNITYSDK_OFFSET(0xD3BD520)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_RECORDTABSHOW_OFFSET UNITYSDK_OFFSET(0xD3BC5C0)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xD3BBBD0)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_SETBACKGROUND_OFFSET UNITYSDK_OFFSET(0xD3BC8F0)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_SETISREAD_OFFSET UNITYSDK_OFFSET(0xD3BCEE0)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_SETQUESTROWLIST_OFFSET UNITYSDK_OFFSET(0xD3BCA20)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_SETTOGGLEANISTATE_OFFSET UNITYSDK_OFFSET(0xD3BC7B0)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER__CREATEDIFFICUTYROW_OFFSET UNITYSDK_OFFSET(0xD3BB3C0)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER__CREATEROW_OFFSET UNITYSDK_OFFSET(0xD3BB2E0)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD3BE420)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xD3BE450)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xD3BE4C0)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xD3BE540)
+#define MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xD3BE5A0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityGameplayWidgetController_TypeDefinitionIndex = 64229;
+
+	class UIActivityGameplayWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_142* _view; // 0x2A0
+		::Class_1_D375C91CCE5D3999* _activityBaseData; // 0x2A8
+		::System::Int32 _activityID; // 0x2B0
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_97*>* _showQuestList; // 0x2B8
+		::Class_2_208CC9941471731A_97* selectHollowEntranceCfg; // 0x2C0
+		::System::Boolean _hasDifficuty; // 0x2C8
+		::System::Boolean isDifficuty; // 0x2C9
+		::UnityEngine::GameObject* _normalBg; // 0x2D0
+		::UnityEngine::GameObject* _difficutyBg; // 0x2D8
+		::MoleMole::UIActivityCompWeekRewardBtnWidgetController* activityRewardBtn; // 0x2E0
+		::Class_1_EE462DDB9EDFAFDA* _yorozuyaData; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _CreateRow(::System::Func_1<::MoleMole::UIControlReference*>* controlReference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER__CREATEROW_OFFSET))(this, controlReference);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* _CreateDifficutyRow(::System::Func_1<::MoleMole::UIControlReference*>* controlReference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER__CREATEDIFFICUTYROW_OFFSET))(this, controlReference);
+		}
+
+		::System::Int32 GetTemplateIndex(::System::Int32 arg)
+		{
+			return ((::System::Int32(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_GETTEMPLATEINDEX_OFFSET))(this, arg);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void LoadBackground()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_LOADBACKGROUND_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void RecordTabShow(::System::Boolean isDifficuty)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_RECORDTABSHOW_OFFSET))(this, isDifficuty);
+		}
+
+		::System::Void SetQuestRowList()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_SETQUESTROWLIST_OFFSET))(this);
+		}
+
+		::System::Boolean GetHasDifficutyUnLock()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_GETHASDIFFICUTYUNLOCK_OFFSET))(this);
+		}
+
+		::System::Void OnBackClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONBACKCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void SetIsRead()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_SETISREAD_OFFSET))(this);
+		}
+
+		::System::Void OnClickDifficutyBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONCLICKDIFFICUTYBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickNormalBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONCLICKNORMALBTN_OFFSET))(this);
+		}
+
+		::System::Void RecordTabClick(::System::Boolean isDifficuty)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_RECORDTABCLICK_OFFSET))(this, isDifficuty);
+		}
+
+		::System::Void OnToggleHandle(::System::Boolean arg1, ::System::Boolean isInit)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONTOGGLEHANDLE_OFFSET))(this, arg1, isInit);
+		}
+
+		::System::Void SetBackground()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_SETBACKGROUND_OFFSET))(this);
+		}
+
+		::System::Void SetToggleAniState(::System::Boolean isDifficuty, ::System::Boolean withAni)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_SETTOGGLEANISTATE_OFFSET))(this, isDifficuty, withAni);
+		}
+
+		::System::Int32 GetDefaultSelect()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_GETDEFAULTSELECT_OFFSET))(this);
+		}
+
+		::System::Void CloseOverHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_CLOSEOVERHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OnMainClickHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONMAINCLICKHANDLE_OFFSET))(this);
+		}
+
+		::System::Void OpenHistoryView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_OPENHISTORYVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnQuestRowSelectHandle(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONQUESTROWSELECTHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Void GoToPlay()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_GOTOPLAY_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYGAMEPLAYWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

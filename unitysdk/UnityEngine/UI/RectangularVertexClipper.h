@@ -7,13 +7,12 @@
 namespace UnityEngine { class Canvas; }
 namespace UnityEngine { class RectTransform; }
 
-#define UNITYENGINE_UI_RECTANGULARVERTEXCLIPPER_GETCANVASRECT_OFFSET UNITYSDK_OFFSET(0x18339320)
-#define UNITYENGINE_UI_RECTANGULARVERTEXCLIPPER_GETWORLDCORNERSWITHOUTROTATIONZ_OFFSET UNITYSDK_OFFSET(0x1833C8E0)
-#define UNITYENGINE_UI_RECTANGULARVERTEXCLIPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x18339BE0)
+#define UNITYENGINE_UI_RECTANGULARVERTEXCLIPPER_GETCANVASRECT_OFFSET UNITYSDK_OFFSET(0x1AFD7310)
+#define UNITYENGINE_UI_RECTANGULARVERTEXCLIPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFD7740)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int RectangularVertexClipper_TypeDefinitionIndex = 5469;
+	inline static constexpr unsigned int RectangularVertexClipper_TypeDefinitionIndex = 8328;
 
 	class RectangularVertexClipper : public ::System::Object
 	{
@@ -24,11 +23,6 @@ namespace UnityEngine::UI
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_RECTANGULARVERTEXCLIPPER__CTOR_OFFSET))(this);
-		}
-
-		::System::Void GetWorldCornersWithoutRotationZ(::UnityEngine::RectTransform* t, ::Il2CppArray<::UnityEngine::Vector3>* fourCornersArray)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::RectTransform*, ::Il2CppArray<::UnityEngine::Vector3>*))((::PBYTE)hIl2Cpp + UNITYENGINE_UI_RECTANGULARVERTEXCLIPPER_GETWORLDCORNERSWITHOUTROTATIONZ_OFFSET))(this, t, fourCornersArray);
 		}
 
 		::UnityEngine::Rect GetCanvasRect(::UnityEngine::RectTransform* t, ::UnityEngine::Canvas* c)

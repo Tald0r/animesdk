@@ -3,7 +3,7 @@
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int CinemachineImpulseDefinition_RepeatMode_TypeDefinitionIndex = 30034;
+	inline static constexpr unsigned int CinemachineImpulseDefinition_RepeatMode_TypeDefinitionIndex = 31144;
 
 	enum class CinemachineImpulseDefinition_RepeatMode : ::System::Int32
 	{

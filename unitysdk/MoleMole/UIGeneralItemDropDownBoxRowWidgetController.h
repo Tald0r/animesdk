@@ -1,0 +1,121 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/DropDownItemWidgetController.h"
+
+class Class_2_7ED281AD5D73014D;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIGeneralNewHintWidgetController; }
+namespace MoleMole { class UIGeneralPopUpHintWidgetController; }
+namespace UnityEngine::UI::Extension { class UITabButton; }
+
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_ENABLENEWWIDGET_OFFSET UNITYSDK_OFFSET(0xAA04C10)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_GETUITABBUTTON_OFFSET UNITYSDK_OFFSET(0xAA03E90)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_INITNORMALVIEW_OFFSET UNITYSDK_OFFSET(0xAA04020)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAA04A30)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA04B30)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAA04AD0)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAA03F00)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_SHOWNOTIFICATION_OFFSET UNITYSDK_OFFSET(0xAA04DD0)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAA05060)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER__INITNORMALVIEW_B__11_0_OFFSET UNITYSDK_OFFSET(0xAA05260)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER__ONUIOPEN_B__5_0_OFFSET UNITYSDK_OFFSET(0xAA05090)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER___BASE_GETUITABBUTTON_OFFSET UNITYSDK_OFFSET(0xAA05320)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xAA05380)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xAA053F0)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xAA05470)
+#define MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xAA054D0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIGeneralItemDropDownBoxRowWidgetController_TypeDefinitionIndex = 44484;
+
+	class UIGeneralItemDropDownBoxRowWidgetController : public ::MoleMole::DropDownItemWidgetController
+	{
+	public:
+		// static const ::System::Single LOCKED_ALPHA; // 0x0
+		::Class_2_7ED281AD5D73014D* _view; // 0x2B0
+		::MoleMole::UIGeneralPopUpHintWidgetController* _popUpHintController; // 0x2B8
+		::MoleMole::UIGeneralNewHintWidgetController* _newHintWidgetController; // 0x2C0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::UnityEngine::UI::Extension::UITabButton* GetUITabButton()
+		{
+			return ((::UnityEngine::UI::Extension::UITabButton*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_GETUITABBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void EnableNewWidget(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_ENABLENEWWIDGET_OFFSET))(this, enable);
+		}
+
+		::System::Void ShowNotification(::System::Boolean show)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_SHOWNOTIFICATION_OFFSET))(this, show);
+		}
+
+		::System::Void InitNormalView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER_INITNORMALVIEW_OFFSET))(this);
+		}
+
+		::System::Void _OnUIOpen_b__5_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER__ONUIOPEN_B__5_0_OFFSET))(this);
+		}
+
+		::System::Void _InitNormalView_b__11_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER__INITNORMALVIEW_B__11_0_OFFSET))(this);
+		}
+
+		::UnityEngine::UI::Extension::UITabButton* __base_GetUITabButton()
+		{
+			return ((::UnityEngine::UI::Extension::UITabButton*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER___BASE_GETUITABBUTTON_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGENERALITEMDROPDOWNBOXROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

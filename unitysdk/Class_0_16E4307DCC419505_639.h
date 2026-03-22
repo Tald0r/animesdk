@@ -1,9 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_4E0DC74A4F62966B.h"
+#include "unitysdk/Struct_2_17E0E0442218CD79.h"
 
-namespace RPG::Client { class IPlanetFesBuff; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_639_TypeDefinitionIndex = 52989;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_639_TypeDefinitionIndex = 65701;
 
 class Class_0_16E4307DCC419505_639
 {

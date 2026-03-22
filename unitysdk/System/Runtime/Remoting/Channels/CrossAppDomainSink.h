@@ -10,30 +10,29 @@ namespace System::Runtime::Remoting::Messaging { class IMessage; }
 namespace System::Runtime::Remoting::Messaging { class IMessageCtrl; }
 namespace System::Runtime::Remoting::Messaging { class IMessageSink; }
 
-#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_ASYNCPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x15CE9870)
-#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_GETSINK_OFFSET UNITYSDK_OFFSET(0x15CE8F80)
-#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_GET_TARGETDOMAINID_OFFSET UNITYSDK_OFFSET(0x15CE92D0)
-#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_PROCESSMESSAGEINDOMAIN_OFFSET UNITYSDK_OFFSET(0x15CE92E0)
-#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_SENDASYNCMESSAGE_OFFSET UNITYSDK_OFFSET(0x15CE98F0)
-#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_SYNCPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x15CE9440)
-#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK__ASYNCPROCESSMESSAGE_B__10_0_OFFSET UNITYSDK_OFFSET(0x15CE9B50)
-#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK__CCTOR_OFFSET UNITYSDK_OFFSET(0x15CE9A20)
-#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK__CTOR_OFFSET UNITYSDK_OFFSET(0x15CE92C0)
+#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_ASYNCPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x17FD8AE0)
+#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_GETSINK_OFFSET UNITYSDK_OFFSET(0x17FD8240)
+#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_PROCESSMESSAGEINDOMAIN_OFFSET UNITYSDK_OFFSET(0x17FD8520)
+#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_SENDASYNCMESSAGE_OFFSET UNITYSDK_OFFSET(0x17FD8B60)
+#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_SYNCPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x17FD86A0)
+#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK__ASYNCPROCESSMESSAGE_B__10_0_OFFSET UNITYSDK_OFFSET(0x17FD8DC0)
+#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK__CCTOR_OFFSET UNITYSDK_OFFSET(0x17FD8C90)
+#define SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK__CTOR_OFFSET UNITYSDK_OFFSET(0x17FD8230)
 
 namespace System::Runtime::Remoting::Channels
 {
-	inline static constexpr unsigned int CrossAppDomainSink_TypeDefinitionIndex = 1250;
+	inline static constexpr unsigned int CrossAppDomainSink_TypeDefinitionIndex = 1298;
 
 	class CrossAppDomainSink : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Hashtable** StaticGet_s_sinks()
 		{
-			return (::System::Collections::Hashtable**)Il2CppClass::FromTypeDefinitionIndex(CrossAppDomainSink_TypeDefinitionIndex)->GetStaticField(0xB7A0);
+			return (::System::Collections::Hashtable**)Il2CppClass::FromTypeDefinitionIndex(CrossAppDomainSink_TypeDefinitionIndex)->GetStaticField(0x1500);
 		}
 		static ::System::Reflection::MethodInfo** StaticGet_processMessageMethod()
 		{
-			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(CrossAppDomainSink_TypeDefinitionIndex)->GetStaticField(0xB7A8);
+			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(CrossAppDomainSink_TypeDefinitionIndex)->GetStaticField(0x1508);
 		}
 		::System::Int32 _domainID; // 0x10
 
@@ -50,11 +49,6 @@ namespace System::Runtime::Remoting::Channels
 		static ::System::Runtime::Remoting::Channels::CrossAppDomainSink* GetSink(::System::Int32 domainID)
 		{
 			return ((::System::Runtime::Remoting::Channels::CrossAppDomainSink*(*)(::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_GETSINK_OFFSET))(domainID);
-		}
-
-		::System::Int32 get_TargetDomainId()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_CHANNELS_CROSSAPPDOMAINSINK_GET_TARGETDOMAINID_OFFSET))(this);
 		}
 
 		static ::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes ProcessMessageInDomain(::Il2CppArray<::System::Byte>* arrRequest, ::System::Runtime::Remoting::Messaging::CADMethodCallMessage* cadMsg)

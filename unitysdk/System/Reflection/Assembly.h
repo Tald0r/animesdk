@@ -1,6 +1,5 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Mono/MonoAssemblyName.h"
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/Reflection/AssemblyNameFlags.h"
 #include "unitysdk/System/Runtime/Serialization/StreamingContext.h"
@@ -20,377 +19,371 @@ namespace System::Reflection { class RuntimeAssembly; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 namespace System::Security::Policy { class Evidence; }
 
-#define SYSTEM_REFLECTION_ASSEMBLY_CREATENIE_OFFSET UNITYSDK_OFFSET(0x15CB3BF0)
-#define SYSTEM_REFLECTION_ASSEMBLY_EQUALS_OFFSET UNITYSDK_OFFSET(0x15CB3B90)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETAOTID_OFFSET UNITYSDK_OFFSET(0x15CB2820)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETASSEMBLY_OFFSET UNITYSDK_OFFSET(0x15CB3140)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETCALLINGASSEMBLY_OFFSET UNITYSDK_OFFSET(0x15CB3A50)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETCODEBASE_OFFSET UNITYSDK_OFFSET(0x15CB2830)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETCUSTOMATTRIBUTES_1_OFFSET UNITYSDK_OFFSET(0x15CB2940)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETCUSTOMATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x15CB2930)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETEXECUTINGASSEMBLY_OFFSET UNITYSDK_OFFSET(0x15CB3A00)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETEXPORTEDTYPES_OFFSET UNITYSDK_OFFSET(0x15CB3040)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETFLAGS_OFFSET UNITYSDK_OFFSET(0x15CB2FC0)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x15CB3B80)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCEINFOINTERNAL_OFFSET UNITYSDK_OFFSET(0x15CB3A70)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCEINFO_OFFSET UNITYSDK_OFFSET(0x15CB3A80)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCEINTERNAL_OFFSET UNITYSDK_OFFSET(0x15CB2950)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCENAMES_OFFSET UNITYSDK_OFFSET(0x15CB39F0)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCESTREAM_1_OFFSET UNITYSDK_OFFSET(0x15CB2DC0)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCESTREAM_2_OFFSET UNITYSDK_OFFSET(0x15CB2F10)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCESTREAM_OFFSET UNITYSDK_OFFSET(0x15CB2960)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETMODULESINTERNAL_OFFSET UNITYSDK_OFFSET(0x15CB3980)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETMODULES_OFFSET UNITYSDK_OFFSET(0x15CB3D40)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETMODULE_OFFSET UNITYSDK_OFFSET(0x15CB3CF0)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETNAME_1_OFFSET UNITYSDK_OFFSET(0x15CB3120)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETNAME_OFFSET UNITYSDK_OFFSET(0x15CB30D0)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x15CB28D0)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETPUBLICKEY_OFFSET UNITYSDK_OFFSET(0x15CB2F60)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETSIMPLENAME_OFFSET UNITYSDK_OFFSET(0x15CB2F30)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETTYPES_1_OFFSET UNITYSDK_OFFSET(0x15CB3020)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETTYPES_OFFSET UNITYSDK_OFFSET(0x15CB2FF0)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETTYPE_1_OFFSET UNITYSDK_OFFSET(0x15CB3080)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETTYPE_2_OFFSET UNITYSDK_OFFSET(0x15CB3CA0)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETTYPE_OFFSET UNITYSDK_OFFSET(0x15CB3060)
-#define SYSTEM_REFLECTION_ASSEMBLY_GETVERSION_OFFSET UNITYSDK_OFFSET(0x15CB2F90)
-#define SYSTEM_REFLECTION_ASSEMBLY_GET_CODEBASE_OFFSET UNITYSDK_OFFSET(0x15CB2840)
-#define SYSTEM_REFLECTION_ASSEMBLY_GET_CODE_BASE_OFFSET UNITYSDK_OFFSET(0x15CB27F0)
-#define SYSTEM_REFLECTION_ASSEMBLY_GET_FULLNAME_1_OFFSET UNITYSDK_OFFSET(0x15CB2850)
-#define SYSTEM_REFLECTION_ASSEMBLY_GET_FULLNAME_OFFSET UNITYSDK_OFFSET(0x15CB2800)
-#define SYSTEM_REFLECTION_ASSEMBLY_GET_ISFULLYTRUSTED_OFFSET UNITYSDK_OFFSET(0x15CB3C90)
-#define SYSTEM_REFLECTION_ASSEMBLY_GET_LOCATION_1_OFFSET UNITYSDK_OFFSET(0x15CB28B0)
-#define SYSTEM_REFLECTION_ASSEMBLY_GET_LOCATION_OFFSET UNITYSDK_OFFSET(0x15CB2810)
-#define SYSTEM_REFLECTION_ASSEMBLY_GET_REFLECTIONONLY_OFFSET UNITYSDK_OFFSET(0x15CB3B70)
-#define SYSTEM_REFLECTION_ASSEMBLY_INTERNALGETASSEMBLYNAME_OFFSET UNITYSDK_OFFSET(0x15CB30C0)
-#define SYSTEM_REFLECTION_ASSEMBLY_INTERNALGETSATELLITEASSEMBLY_OFFSET UNITYSDK_OFFSET(0x15CB31C0)
-#define SYSTEM_REFLECTION_ASSEMBLY_INTERNALGETTYPE_OFFSET UNITYSDK_OFFSET(0x15CB30B0)
-#define SYSTEM_REFLECTION_ASSEMBLY_ISDEFINED_OFFSET UNITYSDK_OFFSET(0x15CB2920)
-#define SYSTEM_REFLECTION_ASSEMBLY_LOADFROM_1_OFFSET UNITYSDK_OFFSET(0x15CB36B0)
-#define SYSTEM_REFLECTION_ASSEMBLY_LOADFROM_2_OFFSET UNITYSDK_OFFSET(0x15CB36D0)
-#define SYSTEM_REFLECTION_ASSEMBLY_LOADFROM_OFFSET UNITYSDK_OFFSET(0x15CB36C0)
-#define SYSTEM_REFLECTION_ASSEMBLY_LOADWITHPARTIALNAME_1_OFFSET UNITYSDK_OFFSET(0x15CB38E0)
-#define SYSTEM_REFLECTION_ASSEMBLY_LOADWITHPARTIALNAME_OFFSET UNITYSDK_OFFSET(0x15CB3870)
-#define SYSTEM_REFLECTION_ASSEMBLY_LOAD_1_OFFSET UNITYSDK_OFFSET(0x15CB3770)
-#define SYSTEM_REFLECTION_ASSEMBLY_LOAD_OFFSET UNITYSDK_OFFSET(0x15CB36F0)
-#define SYSTEM_REFLECTION_ASSEMBLY_LOAD_WITH_PARTIAL_NAME_OFFSET UNITYSDK_OFFSET(0x15CB3860)
-#define SYSTEM_REFLECTION_ASSEMBLY_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x15CB3D90)
-#define SYSTEM_REFLECTION_ASSEMBLY_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x15CB2CE0)
-#define SYSTEM_REFLECTION_ASSEMBLY_REFLECTIONONLYLOAD_OFFSET UNITYSDK_OFFSET(0x15CB37E0)
-#define SYSTEM_REFLECTION_ASSEMBLY_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15CB2880)
-#define SYSTEM_REFLECTION_ASSEMBLY_UNSAFELOADFROM_OFFSET UNITYSDK_OFFSET(0x15CB36E0)
-#define SYSTEM_REFLECTION_ASSEMBLY__CTOR_OFFSET UNITYSDK_OFFSET(0x15CB27A0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_0B60253B859A1F3E_OFFSET UNITYSDK_OFFSET(0x192B9780)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_0EFBF2C08DDE6EB9_OFFSET UNITYSDK_OFFSET(0x192B9FD0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_0F5FDD675C611E10_OFFSET UNITYSDK_OFFSET(0x192B96C0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0x192B8F80)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_128774387667156B_1_OFFSET UNITYSDK_OFFSET(0x192B9600)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_128774387667156B_OFFSET UNITYSDK_OFFSET(0x192B9020)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_1CAC6375102A9718_OFFSET UNITYSDK_OFFSET(0x192B9C90)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_1E00A6E91FB23975_OFFSET UNITYSDK_OFFSET(0x192B97E0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_27F7B55D2DEA317A_OFFSET UNITYSDK_OFFSET(0x192B9040)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_2DCCA555E7940EF7_OFFSET UNITYSDK_OFFSET(0x192B9E30)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_3401F238AE952A98_OFFSET UNITYSDK_OFFSET(0x192BA130)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_3EACA5870CDCB012_1_OFFSET UNITYSDK_OFFSET(0x192B9710)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_3EACA5870CDCB012_OFFSET UNITYSDK_OFFSET(0x192B96F0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_407BD41CCD67351F_1_OFFSET UNITYSDK_OFFSET(0x192B8F90)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_407BD41CCD67351F_OFFSET UNITYSDK_OFFSET(0x192B8F50)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_415F06FCB1F70AEA_OFFSET UNITYSDK_OFFSET(0x192B90C0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_418002EA287B9CBA_OFFSET UNITYSDK_OFFSET(0x192B9790)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_49B6D54F51237F98_1_OFFSET UNITYSDK_OFFSET(0x192B9D30)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_49B6D54F51237F98_OFFSET UNITYSDK_OFFSET(0x192B9CB0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_4BB172234891928C_OFFSET UNITYSDK_OFFSET(0x192B9DF0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_4E92FFC4D97FB6CF_OFFSET UNITYSDK_OFFSET(0x192BA270)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_50BE66A0991E3BDC_OFFSET UNITYSDK_OFFSET(0x192B9DB0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_5644E5BC4897AB8D_OFFSET UNITYSDK_OFFSET(0x192B9800)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_5ABFCEEAFBE96FAF_OFFSET UNITYSDK_OFFSET(0x192B9CA0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_5EC5C449A551E563_OFFSET UNITYSDK_OFFSET(0x192B9EB0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_6148F4753B6872B6_OFFSET UNITYSDK_OFFSET(0x192B90B0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_688C7CAB7C69FBA3_OFFSET UNITYSDK_OFFSET(0x192B95E0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_698C1EC8AAD23858_OFFSET UNITYSDK_OFFSET(0x192B9690)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_6C34CCA2890F606D_OFFSET UNITYSDK_OFFSET(0x192B9630)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_6C97DFC69C3B5DCA_OFFSET UNITYSDK_OFFSET(0x192B9660)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_75C9B71D82816CB9_OFFSET UNITYSDK_OFFSET(0x192B9FC0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_81F74904ECB949D7_OFFSET UNITYSDK_OFFSET(0x192BA0D0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_84976E6BC2BECBFA_OFFSET UNITYSDK_OFFSET(0x192B9F50)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_8EC1DA007282B63B_OFFSET UNITYSDK_OFFSET(0x192BA220)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_941062E508F0BE9E_1_OFFSET UNITYSDK_OFFSET(0x192B9410)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_941062E508F0BE9E_OFFSET UNITYSDK_OFFSET(0x192BA2C0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_9A49CA8E83901574_1_OFFSET UNITYSDK_OFFSET(0x192B8FB0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_9A49CA8E83901574_OFFSET UNITYSDK_OFFSET(0x192B8FA0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_AB23E9AA42AAD23B_OFFSET UNITYSDK_OFFSET(0x192B9F40)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_AF5907C1B7B1B7AF_OFFSET UNITYSDK_OFFSET(0x192B9730)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_B12B136156DD1036_OFFSET UNITYSDK_OFFSET(0x192B8F70)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_B4C5A97F5D5A4EBC_OFFSET UNITYSDK_OFFSET(0x192B9750)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_B9AAF51E74E5A9B8_OFFSET UNITYSDK_OFFSET(0x192B9ED0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_C0B669C1C81DA065_OFFSET UNITYSDK_OFFSET(0x192B90A0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_C4956DB9C5EDE438_OFFSET UNITYSDK_OFFSET(0x192B9850)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_C74CF020AA42ED85_OFFSET UNITYSDK_OFFSET(0x192BA0C0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x192B8F10)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_CD3D584AB8895C79_OFFSET UNITYSDK_OFFSET(0x192B90D0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_D2D7B48E5CB284C7_OFFSET UNITYSDK_OFFSET(0x192B9090)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_DA1BF2C227DC3D86_1_OFFSET UNITYSDK_OFFSET(0x192B8FF0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_DA1BF2C227DC3D86_OFFSET UNITYSDK_OFFSET(0x192B8FC0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_DC5EDEC1A4CAE943_OFFSET UNITYSDK_OFFSET(0x192B9FA0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x192BA0B0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_F3DA7B1D8559FF40_OFFSET UNITYSDK_OFFSET(0x192B9E40)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_F67A3F86868DE8FE_OFFSET UNITYSDK_OFFSET(0x192BA1D0)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_F6875811E5227469_OFFSET UNITYSDK_OFFSET(0x192B8F60)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_FB0B10AC01759A95_OFFSET UNITYSDK_OFFSET(0x192B9860)
+#define SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_FE34BD117ADE5F23_OFFSET UNITYSDK_OFFSET(0x192B9490)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int Assembly_TypeDefinitionIndex = 592;
+	inline static constexpr unsigned int Assembly_TypeDefinitionIndex = 566;
 
 	class Assembly : public ::System::Object
 	{
 	public:
-		::System::IntPtr _mono_assembly; // 0x10
-		::System::Reflection::Assembly_ResolveEventHolder* resolve_event_holder; // 0x18
-		::System::Object* _evidence; // 0x20
-		::System::Object* _minimum; // 0x28
-		::System::Object* _optional; // 0x30
-		::System::Object* _refuse; // 0x38
-		::System::Object* _granted; // 0x40
-		::System::Object* _denied; // 0x48
-		::System::Boolean fromByteArray; // 0x50
-		::System::String* assemblyName; // 0x58
+		::System::IntPtr Field_1_0; // 0x10
+		::System::Reflection::Assembly_ResolveEventHolder* Field_1_1; // 0x18
+		::System::Object* Field_1_2; // 0x20
+		::System::Object* Field_1_3; // 0x28
+		::System::Object* Field_1_4; // 0x30
+		::System::Object* Field_1_5; // 0x38
+		::System::Object* Field_1_6; // 0x40
+		::System::Object* Field_1_7; // 0x48
+		::System::Boolean Field_1_8; // 0x50
+		::System::String* Field_1_9; // 0x58
 
-		::System::Void _ctor()
+		::System::Void Method_1_CA373AA1C7054598()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY__CTOR_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_CA373AA1C7054598_OFFSET))(this);
 		}
 
-		::System::String* get_code_base(::System::Boolean escaped)
+		::System::String* Method_1_407BD41CCD67351F(::System::Boolean escaped)
 		{
-			return ((::System::String*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GET_CODE_BASE_OFFSET))(this, escaped);
+			return ((::System::String*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_407BD41CCD67351F_OFFSET))(this, escaped);
 		}
 
-		::System::String* get_fullname()
+		::System::String* Method_1_F6875811E5227469()
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GET_FULLNAME_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_F6875811E5227469_OFFSET))(this);
 		}
 
-		::System::String* get_location()
+		::System::String* Method_1_B12B136156DD1036()
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GET_LOCATION_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_B12B136156DD1036_OFFSET))(this);
 		}
 
-		static ::System::String* GetAotId()
+		static ::System::String* Method_1_126AB3935214AA22()
 		{
-			return ((::System::String*(*)())((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETAOTID_OFFSET))();
+			return ((::System::String*(*)())((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_126AB3935214AA22_OFFSET))();
 		}
 
-		::System::String* GetCodeBase(::System::Boolean escaped)
+		::System::String* Method_1_407BD41CCD67351F_1(::System::Boolean escaped)
 		{
-			return ((::System::String*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETCODEBASE_OFFSET))(this, escaped);
+			return ((::System::String*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_407BD41CCD67351F_1_OFFSET))(this, escaped);
 		}
 
-		::System::String* get_CodeBase()
+		::System::String* Method_1_9A49CA8E83901574()
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GET_CODEBASE_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_9A49CA8E83901574_OFFSET))(this);
 		}
 
-		::System::String* get_FullName_1()
+		::System::String* Method_1_9A49CA8E83901574_1()
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GET_FULLNAME_1_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_9A49CA8E83901574_1_OFFSET))(this);
 		}
 
-		::System::String* get_Location_1()
+		::System::String* Method_1_DA1BF2C227DC3D86()
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GET_LOCATION_1_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_DA1BF2C227DC3D86_OFFSET))(this);
 		}
 
-		::System::Void GetObjectData(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
+		::System::String* Method_1_128774387667156B()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETOBJECTDATA_OFFSET))(this, info, context);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_128774387667156B_OFFSET))(this);
 		}
 
-		::System::Boolean IsDefined(::System::Type* attributeType, ::System::Boolean inherit)
+		::System::Void Method_1_27F7B55D2DEA317A(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_ISDEFINED_OFFSET))(this, attributeType, inherit);
+			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::SerializationInfo*, ::System::Runtime::Serialization::StreamingContext))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_27F7B55D2DEA317A_OFFSET))(this, info, context);
 		}
 
-		::Il2CppArray<::System::Object*>* GetCustomAttributes(::System::Boolean inherit)
+		::System::Boolean Method_1_D2D7B48E5CB284C7(::System::Type* attributeType, ::System::Boolean inherit)
 		{
-			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETCUSTOMATTRIBUTES_OFFSET))(this, inherit);
+			return ((::System::Boolean(*)(::PVOID, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_D2D7B48E5CB284C7_OFFSET))(this, attributeType, inherit);
 		}
 
-		::Il2CppArray<::System::Object*>* GetCustomAttributes_1(::System::Type* attributeType, ::System::Boolean inherit)
+		::Il2CppArray<::System::Object*>* Method_1_C0B669C1C81DA065(::System::Boolean inherit)
 		{
-			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETCUSTOMATTRIBUTES_1_OFFSET))(this, attributeType, inherit);
+			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_C0B669C1C81DA065_OFFSET))(this, inherit);
 		}
 
-		::System::IntPtr GetManifestResourceInternal(::System::String* name, ::System::Int32& size, ::System::Reflection::Module*& module)
+		::Il2CppArray<::System::Object*>* Method_1_6148F4753B6872B6(::System::Type* attributeType, ::System::Boolean inherit)
 		{
-			return ((::System::IntPtr(*)(::PVOID, ::System::String*, ::System::Int32&, ::System::Reflection::Module*&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCEINTERNAL_OFFSET))(this, name, size, module);
+			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID, ::System::Type*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_6148F4753B6872B6_OFFSET))(this, attributeType, inherit);
 		}
 
-		::System::IO::Stream* GetManifestResourceStream(::System::String* name)
+		::System::IntPtr Method_1_415F06FCB1F70AEA(::System::String* name, ::System::Int32& size, ::System::Reflection::Module*& module)
 		{
-			return ((::System::IO::Stream*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCESTREAM_OFFSET))(this, name);
+			return ((::System::IntPtr(*)(::PVOID, ::System::String*, ::System::Int32&, ::System::Reflection::Module*&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_415F06FCB1F70AEA_OFFSET))(this, name, size, module);
 		}
 
-		::System::IO::Stream* GetManifestResourceStream_1(::System::Type* type, ::System::String* name, ::System::Boolean skipSecurityCheck, ::System::Threading::StackCrawlMark& stackMark)
+		::System::IO::Stream* Method_1_CD3D584AB8895C79(::System::String* name)
 		{
-			return ((::System::IO::Stream*(*)(::PVOID, ::System::Type*, ::System::String*, ::System::Boolean, ::System::Threading::StackCrawlMark&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCESTREAM_1_OFFSET))(this, type, name, skipSecurityCheck, stackMark);
+			return ((::System::IO::Stream*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_CD3D584AB8895C79_OFFSET))(this, name);
 		}
 
-		::System::IO::Stream* GetManifestResourceStream_2(::System::String* name, ::System::Threading::StackCrawlMark& stackMark, ::System::Boolean skipSecurityCheck)
+		::System::IO::Stream* Method_1_FE34BD117ADE5F23(::System::Type* type, ::System::String* name, ::System::Boolean skipSecurityCheck, ::System::Threading::StackCrawlMark& stackMark)
 		{
-			return ((::System::IO::Stream*(*)(::PVOID, ::System::String*, ::System::Threading::StackCrawlMark&, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCESTREAM_2_OFFSET))(this, name, stackMark, skipSecurityCheck);
+			return ((::System::IO::Stream*(*)(::PVOID, ::System::Type*, ::System::String*, ::System::Boolean, ::System::Threading::StackCrawlMark&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_FE34BD117ADE5F23_OFFSET))(this, type, name, skipSecurityCheck, stackMark);
 		}
 
-		::System::String* GetSimpleName()
+		::System::IO::Stream* Method_1_688C7CAB7C69FBA3(::System::String* name, ::System::Threading::StackCrawlMark& stackMark, ::System::Boolean skipSecurityCheck)
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETSIMPLENAME_OFFSET))(this);
+			return ((::System::IO::Stream*(*)(::PVOID, ::System::String*, ::System::Threading::StackCrawlMark&, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_688C7CAB7C69FBA3_OFFSET))(this, name, stackMark, skipSecurityCheck);
 		}
 
-		::Il2CppArray<::System::Byte>* GetPublicKey()
+		::System::String* Method_1_128774387667156B_1()
 		{
-			return ((::Il2CppArray<::System::Byte>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETPUBLICKEY_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_128774387667156B_1_OFFSET))(this);
 		}
 
-		::System::Version* GetVersion()
+		::Il2CppArray<::System::Byte>* Method_1_6C34CCA2890F606D()
 		{
-			return ((::System::Version*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETVERSION_OFFSET))(this);
+			return ((::Il2CppArray<::System::Byte>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_6C34CCA2890F606D_OFFSET))(this);
 		}
 
-		::System::Reflection::AssemblyNameFlags GetFlags()
+		::System::Version* Method_1_6C97DFC69C3B5DCA()
 		{
-			return ((::System::Reflection::AssemblyNameFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETFLAGS_OFFSET))(this);
+			return ((::System::Version*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_6C97DFC69C3B5DCA_OFFSET))(this);
 		}
 
-		::Il2CppArray<::System::Type*>* GetTypes(::System::Boolean exportedOnly)
+		::System::Reflection::AssemblyNameFlags Method_1_698C1EC8AAD23858()
 		{
-			return ((::Il2CppArray<::System::Type*>*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETTYPES_OFFSET))(this, exportedOnly);
+			return ((::System::Reflection::AssemblyNameFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_698C1EC8AAD23858_OFFSET))(this);
 		}
 
-		::Il2CppArray<::System::Type*>* GetTypes_1()
+		::Il2CppArray<::System::Type*>* Method_1_0F5FDD675C611E10(::System::Boolean exportedOnly)
 		{
-			return ((::Il2CppArray<::System::Type*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETTYPES_1_OFFSET))(this);
+			return ((::Il2CppArray<::System::Type*>*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_0F5FDD675C611E10_OFFSET))(this, exportedOnly);
 		}
 
-		::Il2CppArray<::System::Type*>* GetExportedTypes()
+		::Il2CppArray<::System::Type*>* Method_1_3EACA5870CDCB012()
 		{
-			return ((::Il2CppArray<::System::Type*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETEXPORTEDTYPES_OFFSET))(this);
+			return ((::Il2CppArray<::System::Type*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_3EACA5870CDCB012_OFFSET))(this);
 		}
 
-		::System::Type* GetType(::System::String* name, ::System::Boolean throwOnError)
+		::Il2CppArray<::System::Type*>* Method_1_3EACA5870CDCB012_1()
 		{
-			return ((::System::Type*(*)(::PVOID, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETTYPE_OFFSET))(this, name, throwOnError);
+			return ((::Il2CppArray<::System::Type*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_3EACA5870CDCB012_1_OFFSET))(this);
 		}
 
-		::System::Type* GetType_1(::System::String* name)
+		::System::Type* Method_1_AF5907C1B7B1B7AF(::System::String* name, ::System::Boolean throwOnError)
 		{
-			return ((::System::Type*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETTYPE_1_OFFSET))(this, name);
+			return ((::System::Type*(*)(::PVOID, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_AF5907C1B7B1B7AF_OFFSET))(this, name, throwOnError);
 		}
 
-		::System::Type* InternalGetType(::System::Reflection::Module* module, ::System::String* name, ::System::Boolean throwOnError, ::System::Boolean ignoreCase)
+		::System::Type* Method_1_B4C5A97F5D5A4EBC(::System::String* name)
 		{
-			return ((::System::Type*(*)(::PVOID, ::System::Reflection::Module*, ::System::String*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_INTERNALGETTYPE_OFFSET))(this, module, name, throwOnError, ignoreCase);
+			return ((::System::Type*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_B4C5A97F5D5A4EBC_OFFSET))(this, name);
 		}
 
-		static ::System::Void InternalGetAssemblyName(::System::String* assemblyFile, ::Mono::MonoAssemblyName& aname, ::System::String*& codebase)
+		::System::Type* Method_1_0B60253B859A1F3E(::System::Reflection::Module* module, ::System::String* name, ::System::Boolean throwOnError, ::System::Boolean ignoreCase)
 		{
-			return ((::System::Void(*)(::System::String*, ::Mono::MonoAssemblyName&, ::System::String*&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_INTERNALGETASSEMBLYNAME_OFFSET))(assemblyFile, aname, codebase);
+			return ((::System::Type*(*)(::PVOID, ::System::Reflection::Module*, ::System::String*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_0B60253B859A1F3E_OFFSET))(this, module, name, throwOnError, ignoreCase);
 		}
 
-		::System::Reflection::AssemblyName* GetName(::System::Boolean copiedName)
+		::System::Reflection::AssemblyName* Method_1_418002EA287B9CBA(::System::Boolean copiedName)
 		{
-			return ((::System::Reflection::AssemblyName*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETNAME_OFFSET))(this, copiedName);
+			return ((::System::Reflection::AssemblyName*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_418002EA287B9CBA_OFFSET))(this, copiedName);
 		}
 
-		::System::Reflection::AssemblyName* GetName_1()
+		::System::Reflection::AssemblyName* Method_1_1E00A6E91FB23975()
 		{
-			return ((::System::Reflection::AssemblyName*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETNAME_1_OFFSET))(this);
+			return ((::System::Reflection::AssemblyName*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_1E00A6E91FB23975_OFFSET))(this);
 		}
 
-		::System::String* ToString()
+		::System::String* Method_1_DA1BF2C227DC3D86_1()
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_TOSTRING_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_DA1BF2C227DC3D86_1_OFFSET))(this);
 		}
 
-		static ::System::Reflection::Assembly* GetAssembly(::System::Type* type)
+		static ::System::Reflection::Assembly* Method_1_5644E5BC4897AB8D(::System::Type* type)
 		{
-			return ((::System::Reflection::Assembly*(*)(::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETASSEMBLY_OFFSET))(type);
+			return ((::System::Reflection::Assembly*(*)(::System::Type*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_5644E5BC4897AB8D_OFFSET))(type);
 		}
 
-		::System::Reflection::RuntimeAssembly* InternalGetSatelliteAssembly(::System::String* name, ::System::Globalization::CultureInfo* culture, ::System::Version* version, ::System::Boolean throwOnFileNotFound, ::System::Threading::StackCrawlMark& stackMark)
+		static ::System::Reflection::Assembly* Method_1_C4956DB9C5EDE438()
 		{
-			return ((::System::Reflection::RuntimeAssembly*(*)(::PVOID, ::System::String*, ::System::Globalization::CultureInfo*, ::System::Version*, ::System::Boolean, ::System::Threading::StackCrawlMark&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_INTERNALGETSATELLITEASSEMBLY_OFFSET))(this, name, culture, version, throwOnFileNotFound, stackMark);
+			return ((::System::Reflection::Assembly*(*)())((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_C4956DB9C5EDE438_OFFSET))();
 		}
 
-		static ::System::Reflection::Assembly* LoadFrom(::System::String* assemblyFile, ::System::Boolean refonly)
+		::System::Reflection::RuntimeAssembly* Method_1_FB0B10AC01759A95(::System::String* name, ::System::Globalization::CultureInfo* culture, ::System::Version* version, ::System::Boolean throwOnFileNotFound, ::System::Threading::StackCrawlMark& stackMark)
 		{
-			return ((::System::Reflection::Assembly*(*)(::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_LOADFROM_OFFSET))(assemblyFile, refonly);
+			return ((::System::Reflection::RuntimeAssembly*(*)(::PVOID, ::System::String*, ::System::Globalization::CultureInfo*, ::System::Version*, ::System::Boolean, ::System::Threading::StackCrawlMark&))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_FB0B10AC01759A95_OFFSET))(this, name, culture, version, throwOnFileNotFound, stackMark);
 		}
 
-		static ::System::Reflection::Assembly* LoadFrom_1(::System::String* assemblyFile)
+		static ::System::Reflection::Assembly* Method_1_5ABFCEEAFBE96FAF(::System::String* assemblyFile, ::System::Boolean refonly)
 		{
-			return ((::System::Reflection::Assembly*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_LOADFROM_1_OFFSET))(assemblyFile);
+			return ((::System::Reflection::Assembly*(*)(::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_5ABFCEEAFBE96FAF_OFFSET))(assemblyFile, refonly);
 		}
 
-		static ::System::Reflection::Assembly* LoadFrom_2(::System::String* assemblyFile, ::System::Security::Policy::Evidence* securityEvidence)
+		static ::System::Reflection::Assembly* Method_1_1CAC6375102A9718(::System::String* assemblyFile)
 		{
-			return ((::System::Reflection::Assembly*(*)(::System::String*, ::System::Security::Policy::Evidence*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_LOADFROM_2_OFFSET))(assemblyFile, securityEvidence);
+			return ((::System::Reflection::Assembly*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_1CAC6375102A9718_OFFSET))(assemblyFile);
 		}
 
-		static ::System::Reflection::Assembly* UnsafeLoadFrom(::System::String* assemblyFile)
+		static ::System::Reflection::Assembly* Method_1_49B6D54F51237F98(::System::String* assemblyString)
 		{
-			return ((::System::Reflection::Assembly*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_UNSAFELOADFROM_OFFSET))(assemblyFile);
+			return ((::System::Reflection::Assembly*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_49B6D54F51237F98_OFFSET))(assemblyString);
 		}
 
-		static ::System::Reflection::Assembly* Load(::System::String* assemblyString)
+		static ::System::Reflection::Assembly* Method_1_49B6D54F51237F98_1(::System::String* assemblyString)
 		{
-			return ((::System::Reflection::Assembly*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_LOAD_OFFSET))(assemblyString);
+			return ((::System::Reflection::Assembly*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_49B6D54F51237F98_1_OFFSET))(assemblyString);
 		}
 
-		static ::System::Reflection::Assembly* Load_1(::System::Reflection::AssemblyName* assemblyRef)
+		static ::System::Reflection::Assembly* Method_1_50BE66A0991E3BDC(::System::String* partialName)
 		{
-			return ((::System::Reflection::Assembly*(*)(::System::Reflection::AssemblyName*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_LOAD_1_OFFSET))(assemblyRef);
+			return ((::System::Reflection::Assembly*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_50BE66A0991E3BDC_OFFSET))(partialName);
 		}
 
-		static ::System::Reflection::Assembly* ReflectionOnlyLoad(::System::String* assemblyString)
+		static ::System::Reflection::Assembly* Method_1_2DCCA555E7940EF7(::System::String* name, ::System::Security::Policy::Evidence* e)
 		{
-			return ((::System::Reflection::Assembly*(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_REFLECTIONONLYLOAD_OFFSET))(assemblyString);
+			return ((::System::Reflection::Assembly*(*)(::System::String*, ::System::Security::Policy::Evidence*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_2DCCA555E7940EF7_OFFSET))(name, e);
 		}
 
-		static ::System::Reflection::Assembly* load_with_partial_name(::System::String* name, ::System::Security::Policy::Evidence* e)
+		static ::System::Reflection::Assembly* Method_1_4BB172234891928C(::System::String* partialName, ::System::Security::Policy::Evidence* securityEvidence)
 		{
-			return ((::System::Reflection::Assembly*(*)(::System::String*, ::System::Security::Policy::Evidence*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_LOAD_WITH_PARTIAL_NAME_OFFSET))(name, e);
+			return ((::System::Reflection::Assembly*(*)(::System::String*, ::System::Security::Policy::Evidence*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_4BB172234891928C_OFFSET))(partialName, securityEvidence);
 		}
 
-		static ::System::Reflection::Assembly* LoadWithPartialName(::System::String* partialName, ::System::Security::Policy::Evidence* securityEvidence)
+		static ::System::Reflection::Assembly* Method_1_F3DA7B1D8559FF40(::System::String* partialName, ::System::Security::Policy::Evidence* securityEvidence, ::System::Boolean oldBehavior)
 		{
-			return ((::System::Reflection::Assembly*(*)(::System::String*, ::System::Security::Policy::Evidence*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_LOADWITHPARTIALNAME_OFFSET))(partialName, securityEvidence);
+			return ((::System::Reflection::Assembly*(*)(::System::String*, ::System::Security::Policy::Evidence*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_F3DA7B1D8559FF40_OFFSET))(partialName, securityEvidence, oldBehavior);
 		}
 
-		static ::System::Reflection::Assembly* LoadWithPartialName_1(::System::String* partialName, ::System::Security::Policy::Evidence* securityEvidence, ::System::Boolean oldBehavior)
+		::Il2CppArray<::System::Reflection::Module*>* Method_1_5EC5C449A551E563()
 		{
-			return ((::System::Reflection::Assembly*(*)(::System::String*, ::System::Security::Policy::Evidence*, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_LOADWITHPARTIALNAME_1_OFFSET))(partialName, securityEvidence, oldBehavior);
+			return ((::Il2CppArray<::System::Reflection::Module*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_5EC5C449A551E563_OFFSET))(this);
 		}
 
-		::Il2CppArray<::System::Reflection::Module*>* GetModulesInternal()
+		::Il2CppArray<::System::Reflection::Module*>* Method_1_B9AAF51E74E5A9B8()
 		{
-			return ((::Il2CppArray<::System::Reflection::Module*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETMODULESINTERNAL_OFFSET))(this);
+			return ((::Il2CppArray<::System::Reflection::Module*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_B9AAF51E74E5A9B8_OFFSET))(this);
 		}
 
-		::Il2CppArray<::System::String*>* GetManifestResourceNames()
+		::Il2CppArray<::System::String*>* Method_1_AB23E9AA42AAD23B()
 		{
-			return ((::Il2CppArray<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCENAMES_OFFSET))(this);
+			return ((::Il2CppArray<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_AB23E9AA42AAD23B_OFFSET))(this);
 		}
 
-		static ::System::Reflection::Assembly* GetExecutingAssembly()
+		static ::System::Reflection::Assembly* Method_1_84976E6BC2BECBFA()
 		{
-			return ((::System::Reflection::Assembly*(*)())((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETEXECUTINGASSEMBLY_OFFSET))();
+			return ((::System::Reflection::Assembly*(*)())((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_84976E6BC2BECBFA_OFFSET))();
 		}
 
-		static ::System::Reflection::Assembly* GetCallingAssembly()
+		static ::System::Reflection::Assembly* Method_1_DC5EDEC1A4CAE943()
 		{
-			return ((::System::Reflection::Assembly*(*)())((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETCALLINGASSEMBLY_OFFSET))();
+			return ((::System::Reflection::Assembly*(*)())((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_DC5EDEC1A4CAE943_OFFSET))();
 		}
 
-		::System::Boolean GetManifestResourceInfoInternal(::System::String* name, ::System::Reflection::ManifestResourceInfo* info)
+		::System::Boolean Method_1_75C9B71D82816CB9(::System::String* name, ::System::Reflection::ManifestResourceInfo* info)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::String*, ::System::Reflection::ManifestResourceInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCEINFOINTERNAL_OFFSET))(this, name, info);
+			return ((::System::Boolean(*)(::PVOID, ::System::String*, ::System::Reflection::ManifestResourceInfo*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_75C9B71D82816CB9_OFFSET))(this, name, info);
 		}
 
-		::System::Reflection::ManifestResourceInfo* GetManifestResourceInfo(::System::String* resourceName)
+		::System::Reflection::ManifestResourceInfo* Method_1_0EFBF2C08DDE6EB9(::System::String* resourceName)
 		{
-			return ((::System::Reflection::ManifestResourceInfo*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETMANIFESTRESOURCEINFO_OFFSET))(this, resourceName);
+			return ((::System::Reflection::ManifestResourceInfo*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_0EFBF2C08DDE6EB9_OFFSET))(this, resourceName);
 		}
 
-		::System::Boolean get_ReflectionOnly()
+		::System::Boolean Method_1_F0088C88851A7DFB()
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GET_REFLECTIONONLY_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_F0088C88851A7DFB_OFFSET))(this);
 		}
 
-		::System::Int32 GetHashCode()
+		::System::Int32 Method_1_C74CF020AA42ED85()
 		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETHASHCODE_OFFSET))(this);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_C74CF020AA42ED85_OFFSET))(this);
 		}
 
-		::System::Boolean Equals(::System::Object* o)
+		::System::Boolean Method_1_81F74904ECB949D7(::System::Object* o)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_EQUALS_OFFSET))(this, o);
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_81F74904ECB949D7_OFFSET))(this, o);
 		}
 
-		static ::System::Exception* CreateNIE()
+		static ::System::Exception* Method_1_3401F238AE952A98()
 		{
-			return ((::System::Exception*(*)())((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_CREATENIE_OFFSET))();
+			return ((::System::Exception*(*)())((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_3401F238AE952A98_OFFSET))();
 		}
 
-		::System::Boolean get_IsFullyTrusted()
+		::System::Type* Method_1_F67A3F86868DE8FE(::System::String* name, ::System::Boolean throwOnError, ::System::Boolean ignoreCase)
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GET_ISFULLYTRUSTED_OFFSET))(this);
+			return ((::System::Type*(*)(::PVOID, ::System::String*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_F67A3F86868DE8FE_OFFSET))(this, name, throwOnError, ignoreCase);
 		}
 
-		::System::Type* GetType_2(::System::String* name, ::System::Boolean throwOnError, ::System::Boolean ignoreCase)
+		::System::Reflection::Module* Method_1_8EC1DA007282B63B(::System::String* name)
 		{
-			return ((::System::Type*(*)(::PVOID, ::System::String*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETTYPE_2_OFFSET))(this, name, throwOnError, ignoreCase);
+			return ((::System::Reflection::Module*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_8EC1DA007282B63B_OFFSET))(this, name);
 		}
 
-		::System::Reflection::Module* GetModule(::System::String* name)
+		::Il2CppArray<::System::Reflection::Module*>* Method_1_4E92FFC4D97FB6CF(::System::Boolean getResourceModules)
 		{
-			return ((::System::Reflection::Module*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETMODULE_OFFSET))(this, name);
+			return ((::Il2CppArray<::System::Reflection::Module*>*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_4E92FFC4D97FB6CF_OFFSET))(this, getResourceModules);
 		}
 
-		::Il2CppArray<::System::Reflection::Module*>* GetModules(::System::Boolean getResourceModules)
+		static ::System::Boolean Method_1_941062E508F0BE9E(::System::Reflection::Assembly* left, ::System::Reflection::Assembly* right)
 		{
-			return ((::Il2CppArray<::System::Reflection::Module*>*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_GETMODULES_OFFSET))(this, getResourceModules);
+			return ((::System::Boolean(*)(::System::Reflection::Assembly*, ::System::Reflection::Assembly*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_941062E508F0BE9E_OFFSET))(left, right);
 		}
 
-		static ::System::Boolean op_Equality(::System::Reflection::Assembly* left, ::System::Reflection::Assembly* right)
+		static ::System::Boolean Method_1_941062E508F0BE9E_1(::System::Reflection::Assembly* left, ::System::Reflection::Assembly* right)
 		{
-			return ((::System::Boolean(*)(::System::Reflection::Assembly*, ::System::Reflection::Assembly*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_OP_EQUALITY_OFFSET))(left, right);
-		}
-
-		static ::System::Boolean op_Inequality(::System::Reflection::Assembly* left, ::System::Reflection::Assembly* right)
-		{
-			return ((::System::Boolean(*)(::System::Reflection::Assembly*, ::System::Reflection::Assembly*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_OP_INEQUALITY_OFFSET))(left, right);
+			return ((::System::Boolean(*)(::System::Reflection::Assembly*, ::System::Reflection::Assembly*))((::PBYTE)hIl2Cpp + SYSTEM_REFLECTION_ASSEMBLY_METHOD_1_941062E508F0BE9E_1_OFFSET))(left, right);
 		}
 	};
 }

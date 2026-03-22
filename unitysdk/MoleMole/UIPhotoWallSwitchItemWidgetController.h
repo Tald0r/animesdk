@@ -1,0 +1,116 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_3056A65E74601914;
+class Class_1_7AD143A329DB3CBB;
+class Class_2_57821D84473AF5D0;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UICreateRoleNameDialogPopWindowController; }
+namespace System { class Object; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_ONCLICKEDITNAMECALLBACK_OFFSET UNITYSDK_OFFSET(0xB25CE50)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB25C2C0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB25C460)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB25C360)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB25BF10)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_REFRESHINFO_OFFSET UNITYSDK_OFFSET(0xB25C690)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_REFRESHPHOTOIMAGE_OFFSET UNITYSDK_OFFSET(0xB25CC60)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_TRIGGERRENAME_OFFSET UNITYSDK_OFFSET(0xB25CCE0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB25CFD0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER__ONCLICKEDITNAMECALLBACK_B__10_0_OFFSET UNITYSDK_OFFSET(0xB25CFE0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER__ONCLICKEDITNAMECALLBACK_B__10_2_OFFSET UNITYSDK_OFFSET(0xB25D1B0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB25D2D0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB25D340)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB25D3C0)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB25D440)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIPhotoWallSwitchItemWidgetController_TypeDefinitionIndex = 52035;
+
+	class UIPhotoWallSwitchItemWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_57821D84473AF5D0* _view; // 0x2D0
+		::MoleMole::UICreateRoleNameDialogPopWindowController* _pop; // 0x2D8
+		::Class_1_7AD143A329DB3CBB* _imageViewModel; // 0x2E0
+		::Class_1_3056A65E74601914* _photoWallData; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void TriggerRename()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_TRIGGERRENAME_OFFSET))(this);
+		}
+
+		::System::Void RefreshInfo(::Class_1_3056A65E74601914* photoWallData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_3056A65E74601914*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_REFRESHINFO_OFFSET))(this, photoWallData);
+		}
+
+		::System::Void OnClickEditNameCallback()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_ONCLICKEDITNAMECALLBACK_OFFSET))(this);
+		}
+
+		::System::Void RefreshPhotoImage()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER_REFRESHPHOTOIMAGE_OFFSET))(this);
+		}
+
+		::System::Void _OnClickEditNameCallback_b__10_0(::System::String* newName)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER__ONCLICKEDITNAMECALLBACK_B__10_0_OFFSET))(this, newName);
+		}
+
+		::System::Void _OnClickEditNameCallback_b__10_2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER__ONCLICKEDITNAMECALLBACK_B__10_2_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -4,7 +4,7 @@
 
 namespace UnityEngine::PlayerLoop
 {
-	inline static constexpr unsigned int FixedUpdate_ScriptRunDelayedFixedFrameRate_TypeDefinitionIndex = 4378;
+	inline static constexpr unsigned int FixedUpdate_ScriptRunDelayedFixedFrameRate_TypeDefinitionIndex = 5576;
 
 	struct alignas(1) FixedUpdate_ScriptRunDelayedFixedFrameRate
 	{

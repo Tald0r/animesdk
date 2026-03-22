@@ -1,20 +1,18 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_0A3761FE34514D6C_33.h"
-#include "unitysdk/Enum_3_F80BFD5B986D5503_4.h"
-#include "unitysdk/RPG/Client/LittleGame/Marble/MarbleEventType.h"
-#include "unitysdk/RPG/Client/LittleGame/Marble/MarbleNetWorkMsg.h"
-#include "unitysdk/RPG/Client/LittleGame/MarbleEmojiReason.h"
-#include "unitysdk/System/Nullable_1.h"
-#include "unitysdk/UnityEngine/Quaternion.h"
-#include "unitysdk/UnityEngine/Vector3.h"
+#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/MoleMole/EUILayoutPlatform.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
 
-namespace System { class Action; }
-namespace System { class Random; }
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class UIBaseController; }
+namespace MoleMole { class UIWidgetController; }
 namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class IList_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_162_TypeDefinitionIndex = 31734;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_162_TypeDefinitionIndex = 51277;
 
 class Class_0_16E4307DCC419505_162
 {

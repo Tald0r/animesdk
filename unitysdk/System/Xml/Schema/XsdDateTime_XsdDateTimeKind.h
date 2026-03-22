@@ -3,7 +3,7 @@
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int XsdDateTime_XsdDateTimeKind_TypeDefinitionIndex = 2219;
+	inline static constexpr unsigned int XsdDateTime_XsdDateTimeKind_TypeDefinitionIndex = 2231;
 
 	enum class XsdDateTime_XsdDateTimeKind : ::System::Int32
 	{

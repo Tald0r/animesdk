@@ -4,13 +4,12 @@
 
 namespace System { class LocalDataStore; }
 
-#define SYSTEM_LOCALDATASTOREHOLDER_FINALIZE_OFFSET UNITYSDK_OFFSET(0x15C9CB70)
-#define SYSTEM_LOCALDATASTOREHOLDER_GET_STORE_OFFSET UNITYSDK_OFFSET(0x15C9CBF0)
-#define SYSTEM_LOCALDATASTOREHOLDER__CTOR_OFFSET UNITYSDK_OFFSET(0x15C9CB60)
+#define SYSTEM_LOCALDATASTOREHOLDER_FINALIZE_OFFSET UNITYSDK_OFFSET(0x195109E0)
+#define SYSTEM_LOCALDATASTOREHOLDER__CTOR_OFFSET UNITYSDK_OFFSET(0x195109D0)
 
 namespace System
 {
-	inline static constexpr unsigned int LocalDataStoreHolder_TypeDefinitionIndex = 164;
+	inline static constexpr unsigned int LocalDataStoreHolder_TypeDefinitionIndex = 151;
 
 	class LocalDataStoreHolder : public ::System::Object
 	{
@@ -25,11 +24,6 @@ namespace System
 		::System::Void Finalize()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LOCALDATASTOREHOLDER_FINALIZE_OFFSET))(this);
-		}
-
-		::System::LocalDataStore* get_Store()
-		{
-			return ((::System::LocalDataStore*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LOCALDATASTOREHOLDER_GET_STORE_OFFSET))(this);
 		}
 	};
 }

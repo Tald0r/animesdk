@@ -1,0 +1,176 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIBuddyBagDragWidgetController_DragState.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_143B7A497B890286.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+class Class_1_A59025D696FD25CD;
+class Class_2_BFE1A5062E431B57_4;
+namespace MoleMole { class MonoDragUIObject; }
+namespace MoleMole { class UIBuddyDIYComponentWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIItemIconBtnWidgetController; }
+namespace System { class EventArgs; }
+namespace UnityEngine { class Transform; }
+namespace UnityEngine::EventSystems { class PointerEventData; }
+
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_CHANGETOCOMPONENTVIEW_OFFSET UNITYSDK_OFFSET(0xA524940)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_COMPONENTSTATEDRAG_OFFSET UNITYSDK_OFFSET(0xA525750)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ENABLEDRAG_OFFSET UNITYSDK_OFFSET(0xA524590)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_GETTOUCHPOSITION_OFFSET UNITYSDK_OFFSET(0xA524F50)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ISCLICK_OFFSET UNITYSDK_OFFSET(0xA524DE0)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ISMOVE_OFFSET UNITYSDK_OFFSET(0xA524E80)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONBAGITEMSELECT_OFFSET UNITYSDK_OFFSET(0xA525DF0)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONBEFOREUPDATE_OFFSET UNITYSDK_OFFSET(0xA524FF0)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONCLEARITEMSELECT_OFFSET UNITYSDK_OFFSET(0xA526460)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA524210)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONDRAGEND_OFFSET UNITYSDK_OFFSET(0xA5259E0)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONDRAGING_OFFSET UNITYSDK_OFFSET(0xA525D80)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONDRAGSTART_OFFSET UNITYSDK_OFFSET(0xA524C80)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA5242B0)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA523850)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA5240A0)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_REGISTERDRAG_OFFSET UNITYSDK_OFFSET(0xA523D10)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_UPDATEDRAGUI_OFFSET UNITYSDK_OFFSET(0xA524860)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA5264D0)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA526500)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA526570)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA5265F0)
+#define MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA526650)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIBuddyBagDragWidgetController_TypeDefinitionIndex = 72073;
+
+	class UIBuddyBagDragWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_BFE1A5062E431B57_4* _view; // 0x2A0
+		::MoleMole::UIBuddyBagDragWidgetController_DragState _dragState; // 0x2A8
+		::UnityEngine::Transform* selectParent; // 0x2B0
+		::UnityEngine::Transform* tvParent; // 0x2B8
+		::MoleMole::UIItemIconBtnWidgetController* _item; // 0x2C0
+		::MoleMole::MonoDragUIObject* _drag; // 0x2C8
+		::System::Boolean isChanged; // 0x2D0
+		::MoleMole::UIBuddyDIYComponentWidgetController* dragComponentWidget; // 0x2D8
+		::Class_1_A59025D696FD25CD* _buddyDIYComponent; // 0x2E0
+		::Struct_2_143B7A497B890286 DragCollider; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void EnableDrag(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ENABLEDRAG_OFFSET))(this, enable);
+		}
+
+		::System::Void ChangeToComponentView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_CHANGETOCOMPONENTVIEW_OFFSET))(this);
+		}
+
+		::System::Void RegisterDrag()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_REGISTERDRAG_OFFSET))(this);
+		}
+
+		::System::Void OnDragStart(::MoleMole::MonoDragUIObject* callbackObj, ::UnityEngine::EventSystems::PointerEventData* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoDragUIObject*, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONDRAGSTART_OFFSET))(this, callbackObj, data);
+		}
+
+		::System::Boolean IsClick()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ISCLICK_OFFSET))(this);
+		}
+
+		::System::Boolean IsMove()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ISMOVE_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector2 GetTouchPosition()
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_GETTOUCHPOSITION_OFFSET))(this);
+		}
+
+		::System::Void OnBeforeUpdate(::System::Single deltaTime)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONBEFOREUPDATE_OFFSET))(this, deltaTime);
+		}
+
+		::System::Void OnDraging(::MoleMole::MonoDragUIObject* callbackObj, ::UnityEngine::EventSystems::PointerEventData* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoDragUIObject*, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONDRAGING_OFFSET))(this, callbackObj, data);
+		}
+
+		::System::Void ComponentStateDrag(::UnityEngine::Vector2 screenPosition)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_COMPONENTSTATEDRAG_OFFSET))(this, screenPosition);
+		}
+
+		::System::Void OnDragEnd(::MoleMole::MonoDragUIObject* callbackObj, ::UnityEngine::EventSystems::PointerEventData* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoDragUIObject*, ::UnityEngine::EventSystems::PointerEventData*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONDRAGEND_OFFSET))(this, callbackObj, data);
+		}
+
+		::System::Void UpdateDragUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_UPDATEDRAGUI_OFFSET))(this);
+		}
+
+		::System::Void OnBagItemSelect(::System::EventArgs* arg)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONBAGITEMSELECT_OFFSET))(this, arg);
+		}
+
+		::System::Void OnClearItemSelect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER_ONCLEARITEMSELECT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBUDDYBAGDRAGWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,14 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityWaterRewardWidgetController_ERewardType_TypeDefinitionIndex = 44388;
+
+	enum class UIActivityWaterRewardWidgetController_ERewardType : ::System::Int32
+	{
+		Accessory = 1,
+		Item = 0,
+		Skin = 2,
+	};
+}

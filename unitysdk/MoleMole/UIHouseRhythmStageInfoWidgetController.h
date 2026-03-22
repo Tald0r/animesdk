@@ -1,0 +1,85 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_5552224DB705CA0D;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Action; }
+
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_BINDSCOREMODELDATA_OFFSET UNITYSDK_OFFSET(0xC07F290)
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET UNITYSDK_OFFSET(0xC07F160)
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xC07F1D0)
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC07F4F0)
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xC07F560)
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_PLAYFEVEREXPRESSIONANIMATION_OFFSET UNITYSDK_OFFSET(0xC07F420)
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_PLAYFULLCOMBOANIMATION_OFFSET UNITYSDK_OFFSET(0xC07F350)
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC07F630)
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET UNITYSDK_OFFSET(0xC07F660)
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC07F6D0)
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0xC07F740)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHouseRhythmStageInfoWidgetController_TypeDefinitionIndex = 38064;
+
+	class UIHouseRhythmStageInfoWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_5552224DB705CA0D* get__viewModel()
+		{
+			return ((::Class_2_5552224DB705CA0D*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_GET__VIEWMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnCreateViewModel(::Struct_2_575273D27F02957E& binderInfo, ::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_ONCREATEVIEWMODEL_OFFSET))(this, binderInfo, controlReference);
+		}
+
+		::System::Void BindScoreModelData()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_BINDSCOREMODELDATA_OFFSET))(this);
+		}
+
+		::System::Void PlayFullComboAnimation(::System::Action* onFinish)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_PLAYFULLCOMBOANIMATION_OFFSET))(this, onFinish);
+		}
+
+		::System::Void PlayFeverExpressionAnimation(::System::Action* onFinish)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_PLAYFEVEREXPRESSIONANIMATION_OFFSET))(this, onFinish);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateViewModel(::Struct_2_575273D27F02957E& P0, ::MoleMole::UIControlReference* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER___BASE_ONCREATEVIEWMODEL_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+	};
+}

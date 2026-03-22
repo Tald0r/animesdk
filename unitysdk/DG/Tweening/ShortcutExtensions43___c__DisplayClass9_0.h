@@ -1,0 +1,60 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+
+namespace DG::Tweening { class Sequence; }
+namespace UnityEngine { class Rigidbody2D; }
+
+#define DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B11FB20)
+#define DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__DOJUMP_B__0_OFFSET UNITYSDK_OFFSET(0x1B11FF40)
+#define DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__DOJUMP_B__1_OFFSET UNITYSDK_OFFSET(0x1B11FF80)
+#define DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__DOJUMP_B__2_OFFSET UNITYSDK_OFFSET(0x1B11FFB0)
+#define DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__DOJUMP_B__3_OFFSET UNITYSDK_OFFSET(0x1B120150)
+#define DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__DOJUMP_B__4_OFFSET UNITYSDK_OFFSET(0x1B120190)
+
+namespace DG::Tweening
+{
+	inline static constexpr unsigned int ShortcutExtensions43___c__DisplayClass9_0_TypeDefinitionIndex = 31398;
+
+	class ShortcutExtensions43___c__DisplayClass9_0 : public ::System::Object
+	{
+	public:
+		::DG::Tweening::Sequence* s; // 0x10
+		::UnityEngine::Rigidbody2D* target; // 0x18
+		::System::Single startPosY; // 0x20
+		::System::Single offsetY; // 0x24
+		::System::Boolean offsetYSet; // 0x28
+		::UnityEngine::Vector2 endValue; // 0x2C
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__CTOR_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector2 _DOJump_b__0()
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__DOJUMP_B__0_OFFSET))(this);
+		}
+
+		::System::Void _DOJump_b__1(::UnityEngine::Vector2 x)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__DOJUMP_B__1_OFFSET))(this, x);
+		}
+
+		::System::Void _DOJump_b__2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__DOJUMP_B__2_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector2 _DOJump_b__3()
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__DOJUMP_B__3_OFFSET))(this);
+		}
+
+		::System::Void _DOJump_b__4(::UnityEngine::Vector2 x)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + DG_TWEENING_SHORTCUTEXTENSIONS43___C__DISPLAYCLASS9_0__DOJUMP_B__4_OFFSET))(this, x);
+		}
+	};
+}

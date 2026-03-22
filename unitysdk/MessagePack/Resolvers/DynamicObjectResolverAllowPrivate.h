@@ -3,28 +3,21 @@
 #include "unitysdk/System/Object.h"
 
 namespace MessagePack::Formatters { template <typename T> class IMessagePackFormatter_1; }
-namespace MessagePack::Internal { class DynamicAssemblyFactory; }
-namespace System { class String; }
 
-#define MESSAGEPACK_RESOLVERS_DYNAMICOBJECTRESOLVERALLOWPRIVATE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1569E0E0)
-#define MESSAGEPACK_RESOLVERS_DYNAMICOBJECTRESOLVERALLOWPRIVATE__CTOR_OFFSET UNITYSDK_OFFSET(0x1569E0D0)
+#define MESSAGEPACK_RESOLVERS_DYNAMICOBJECTRESOLVERALLOWPRIVATE__CCTOR_OFFSET UNITYSDK_OFFSET(0x19DB4F00)
+#define MESSAGEPACK_RESOLVERS_DYNAMICOBJECTRESOLVERALLOWPRIVATE__CTOR_OFFSET UNITYSDK_OFFSET(0x19DB4EF0)
 
 namespace MessagePack::Resolvers
 {
-	inline static constexpr unsigned int DynamicObjectResolverAllowPrivate_TypeDefinitionIndex = 9523;
+	inline static constexpr unsigned int DynamicObjectResolverAllowPrivate_TypeDefinitionIndex = 25723;
 
 	class DynamicObjectResolverAllowPrivate : public ::System::Object
 	{
 	public:
 		static ::MessagePack::Resolvers::DynamicObjectResolverAllowPrivate** StaticGet_Instance()
 		{
-			return (::MessagePack::Resolvers::DynamicObjectResolverAllowPrivate**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectResolverAllowPrivate_TypeDefinitionIndex)->GetStaticField(0x27570);
+			return (::MessagePack::Resolvers::DynamicObjectResolverAllowPrivate**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectResolverAllowPrivate_TypeDefinitionIndex)->GetStaticField(0x1F280);
 		}
-		static ::MessagePack::Internal::DynamicAssemblyFactory** StaticGet_DynamicAssemblyFactory()
-		{
-			return (::MessagePack::Internal::DynamicAssemblyFactory**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectResolverAllowPrivate_TypeDefinitionIndex)->GetStaticField(0x27578);
-		}
-		// static const ::System::String* ModuleName; // 0x0
 
 		::System::Void _ctor()
 		{

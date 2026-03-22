@@ -1,15 +1,14 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_16CA124888A687A8.h"
-#include "unitysdk/RPG/Client/Prop/DestroyRootPuzzleChessType.h"
+#include "unitysdk/Class_1_6BBC39C048E3B73A.h"
 
-#define CLASS_2_A48F3719AA1CF200_37_METHOD_2_978520BE6FC682A9_OFFSET UNITYSDK_OFFSET(0x103B1670)
-#define CLASS_2_A48F3719AA1CF200_37_METHOD_2_AD91E5F8037967A4_OFFSET UNITYSDK_OFFSET(0x103B1610)
-#define CLASS_2_A48F3719AA1CF200_37__CTOR_OFFSET UNITYSDK_OFFSET(0x103B1660)
+#define CLASS_2_A48F3719AA1CF200_37_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x682FC20)
+#define CLASS_2_A48F3719AA1CF200_37_METHOD_2_E3DE31A03057E055_OFFSET UNITYSDK_OFFSET(0x682FA50)
+#define CLASS_2_A48F3719AA1CF200_37__CTOR_OFFSET UNITYSDK_OFFSET(0x682FC10)
 
-inline static constexpr unsigned int Class_2_A48F3719AA1CF200_37_TypeDefinitionIndex = 61819;
+inline static constexpr unsigned int Class_2_A48F3719AA1CF200_37_TypeDefinitionIndex = 72448;
 
-class Class_2_A48F3719AA1CF200_37 : public ::Class_1_16CA124888A687A8
+class Class_2_A48F3719AA1CF200_37 : public ::Class_1_6BBC39C048E3B73A
 {
 public:
 	::System::Void _ctor()
@@ -17,13 +16,13 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_A48F3719AA1CF200_37__CTOR_OFFSET))(this);
 	}
 
-	::RPG::Client::Prop::DestroyRootPuzzleChessType Method_2_AD91E5F8037967A4()
+	::System::Void Method_2_E3DE31A03057E055()
 	{
-		return ((::RPG::Client::Prop::DestroyRootPuzzleChessType(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_A48F3719AA1CF200_37_METHOD_2_AD91E5F8037967A4_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_A48F3719AA1CF200_37_METHOD_2_E3DE31A03057E055_OFFSET))(this);
 	}
 
-	::RPG::Client::Prop::DestroyRootPuzzleChessType Method_2_978520BE6FC682A9()
+	::System::Void Method_2_CA373AA1C7054598()
 	{
-		return ((::RPG::Client::Prop::DestroyRootPuzzleChessType(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_A48F3719AA1CF200_37_METHOD_2_978520BE6FC682A9_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_A48F3719AA1CF200_37_METHOD_2_CA373AA1C7054598_OFFSET))(this);
 	}
 };

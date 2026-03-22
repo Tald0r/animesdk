@@ -1,0 +1,31 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Data/ForeignKeyConstraintEnumerator.h"
+
+namespace System::Data { class Constraint; }
+namespace System::Data { class DataSet; }
+namespace System::Data { class DataTable; }
+
+#define SYSTEM_DATA_CHILDFOREIGNKEYCONSTRAINTENUMERATOR_ISVALIDCANDIDATE_OFFSET UNITYSDK_OFFSET(0x1AAD7FE0)
+#define SYSTEM_DATA_CHILDFOREIGNKEYCONSTRAINTENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAD7F70)
+
+namespace System::Data
+{
+	inline static constexpr unsigned int ChildForeignKeyConstraintEnumerator_TypeDefinitionIndex = 35381;
+
+	class ChildForeignKeyConstraintEnumerator : public ::System::Data::ForeignKeyConstraintEnumerator
+	{
+	public:
+		::System::Data::DataTable* _table; // 0x28
+
+		::System::Void _ctor(::System::Data::DataSet* dataSet, ::System::Data::DataTable* inTable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Data::DataSet*, ::System::Data::DataTable*))((::PBYTE)hIl2Cpp + SYSTEM_DATA_CHILDFOREIGNKEYCONSTRAINTENUMERATOR__CTOR_OFFSET))(this, dataSet, inTable);
+		}
+
+		::System::Boolean IsValidCandidate(::System::Data::Constraint* constraint)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Data::Constraint*))((::PBYTE)hIl2Cpp + SYSTEM_DATA_CHILDFOREIGNKEYCONSTRAINTENUMERATOR_ISVALIDCANDIDATE_OFFSET))(this, constraint);
+		}
+	};
+}

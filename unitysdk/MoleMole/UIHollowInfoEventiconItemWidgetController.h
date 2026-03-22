@@ -1,0 +1,151 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_6F190B9DE00C6A02;
+class Class_2_208CC9941471731A_281;
+class Class_2_8DAF7F768CC9112A;
+namespace MoleMole { class UIControlReference; }
+namespace System { class Object; }
+namespace System { class String; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine { class Material; }
+
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_GETSELECT_OFFSET UNITYSDK_OFFSET(0xA19C1E0)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0xA19B6D0)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA19B440)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONGAMEPADDESELECT_OFFSET UNITYSDK_OFFSET(0xA19B3B0)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONGAMEPADSELECT_OFFSET UNITYSDK_OFFSET(0xA19C150)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xA19B7A0)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA19B910)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA19B4E0)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA19AFB0)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_SETEMPTY_OFFSET UNITYSDK_OFFSET(0xA19C020)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_SETEVENT_OFFSET UNITYSDK_OFFSET(0xA19BB10)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_SETNEWTAGENABLE_OFFSET UNITYSDK_OFFSET(0xA19BFA0)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_SETSELECTVIEW_OFFSET UNITYSDK_OFFSET(0xA19B880)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xA19C270)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA19C260)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA19C2B0)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xA19C320)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xA19C390)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA19C410)
+#define MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA19C490)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowInfoEventiconItemWidgetController_TypeDefinitionIndex = 50173;
+
+	class UIHollowInfoEventiconItemWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		static ::System::String** StaticGet_TvIconTextureSheetRoot()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIHollowInfoEventiconItemWidgetController_TypeDefinitionIndex)->GetStaticField(0x38C70);
+		}
+		::UnityEngine::Material* _material; // 0x2D0
+		::Class_1_6F190B9DE00C6A02* _texture; // 0x2D8
+		::Class_2_8DAF7F768CC9112A* _view; // 0x2E0
+		::Class_2_208CC9941471731A_281* _textureSheetTemplate; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void LateUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_LATEUPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void SetSelectView(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_SETSELECTVIEW_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void OnGamePadSelect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONGAMEPADSELECT_OFFSET))(this);
+		}
+
+		::System::Void OnGamePadDeSelect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_ONGAMEPADDESELECT_OFFSET))(this);
+		}
+
+		::System::Void SetEmpty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_SETEMPTY_OFFSET))(this);
+		}
+
+		::UnityEngine::GameObject* GetSelect()
+		{
+			return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_GETSELECT_OFFSET))(this);
+		}
+
+		::System::Void SetEvent(::System::Int32 templateID)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_SETEVENT_OFFSET))(this, templateID);
+		}
+
+		::System::Void SetNewTagEnable(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER_SETNEWTAGENABLE_OFFSET))(this, enable);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWINFOEVENTICONITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

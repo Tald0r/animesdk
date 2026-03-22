@@ -2,21 +2,21 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Text/Decoder.h"
 
-#define SYSTEM_XML_UTF16DECODER_CONVERT_OFFSET UNITYSDK_OFFSET(0x17DD83B0)
-#define SYSTEM_XML_UTF16DECODER_GETCHARCOUNT_1_OFFSET UNITYSDK_OFFSET(0x17DD7FB0)
-#define SYSTEM_XML_UTF16DECODER_GETCHARCOUNT_OFFSET UNITYSDK_OFFSET(0x17DD7F60)
-#define SYSTEM_XML_UTF16DECODER_GETCHARS_OFFSET UNITYSDK_OFFSET(0x17DD8090)
-#define SYSTEM_XML_UTF16DECODER__CTOR_OFFSET UNITYSDK_OFFSET(0x17DD7F50)
+#define SYSTEM_XML_UTF16DECODER_CONVERT_OFFSET UNITYSDK_OFFSET(0x18C7F280)
+#define SYSTEM_XML_UTF16DECODER_GETCHARCOUNT_1_OFFSET UNITYSDK_OFFSET(0x18C7EE80)
+#define SYSTEM_XML_UTF16DECODER_GETCHARCOUNT_OFFSET UNITYSDK_OFFSET(0x18C7EE30)
+#define SYSTEM_XML_UTF16DECODER_GETCHARS_OFFSET UNITYSDK_OFFSET(0x18C7EF60)
+#define SYSTEM_XML_UTF16DECODER__CTOR_OFFSET UNITYSDK_OFFSET(0x18C7EE20)
 
 namespace System::Xml
 {
-	inline static constexpr unsigned int UTF16Decoder_TypeDefinitionIndex = 1933;
+	inline static constexpr unsigned int UTF16Decoder_TypeDefinitionIndex = 1820;
 
 	class UTF16Decoder : public ::System::Text::Decoder
 	{
 	public:
-		::System::Int32 lastByte; // 0x20
-		::System::Boolean bigEndian; // 0x24
+		::System::Boolean bigEndian; // 0x20
+		::System::Int32 lastByte; // 0x24
 
 		::System::Void _ctor(::System::Boolean bigEndian)
 		{

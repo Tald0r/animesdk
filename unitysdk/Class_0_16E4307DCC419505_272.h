@@ -1,8 +1,13 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/ScenenLightManager/FadingState.h"
+#include "unitysdk/MessagePack/MessagePackReader.h"
+#include "unitysdk/MessagePack/MessagePackWriter.h"
+#include "unitysdk/Struct_2_E147DFD2A4EE8B0B.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_272_TypeDefinitionIndex = 38788;
+class Class_0_16E4307DCC419505_191;
+namespace MessagePack { class MessagePackSerializerOptions; }
+
+inline static constexpr unsigned int Class_0_16E4307DCC419505_272_TypeDefinitionIndex = 40515;
 
 class Class_0_16E4307DCC419505_272
 {

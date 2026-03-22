@@ -3,7 +3,7 @@
 
 namespace System::Net
 {
-	inline static constexpr unsigned int FtpWebRequest_RequestState_TypeDefinitionIndex = 2824;
+	inline static constexpr unsigned int FtpWebRequest_RequestState_TypeDefinitionIndex = 3518;
 
 	enum class FtpWebRequest_RequestState : ::System::Int32
 	{

@@ -1,0 +1,75 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Net/NetworkInformation/IPv4InterfaceProperties.h"
+#include "unitysdk/System/Net/NetworkInformation/Win32_IP_ADAPTER_ADDRESSES.h"
+#include "unitysdk/System/Net/NetworkInformation/Win32_MIB_IFROW.h"
+
+namespace System::Net::NetworkInformation { class Win32_IP_PER_ADAPTER_INFO; }
+
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GETPERADAPTERINFO_OFFSET UNITYSDK_OFFSET(0x185A3F60)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_INDEX_OFFSET UNITYSDK_OFFSET(0x185A42A0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_ISAUTOMATICPRIVATEADDRESSINGACTIVE_OFFSET UNITYSDK_OFFSET(0x185A42B0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_ISAUTOMATICPRIVATEADDRESSINGENABLED_OFFSET UNITYSDK_OFFSET(0x185A42E0)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_ISDHCPENABLED_OFFSET UNITYSDK_OFFSET(0x185A4310)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_ISFORWARDINGENABLED_OFFSET UNITYSDK_OFFSET(0x185A4320)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_MTU_OFFSET UNITYSDK_OFFSET(0x185A4340)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_USESWINS_OFFSET UNITYSDK_OFFSET(0x185A4350)
+#define SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES__CTOR_OFFSET UNITYSDK_OFFSET(0x185A4060)
+
+namespace System::Net::NetworkInformation
+{
+	inline static constexpr unsigned int Win32IPv4InterfaceProperties_TypeDefinitionIndex = 3775;
+
+	class Win32IPv4InterfaceProperties : public ::System::Net::NetworkInformation::IPv4InterfaceProperties
+	{
+	public:
+		::System::Net::NetworkInformation::Win32_MIB_IFROW mib; // 0x10
+		::System::Net::NetworkInformation::Win32_IP_PER_ADAPTER_INFO* painfo; // 0x80
+		::System::Net::NetworkInformation::Win32_IP_ADAPTER_ADDRESSES addr; // 0x88
+
+		::System::Void _ctor(::System::Net::NetworkInformation::Win32_IP_ADAPTER_ADDRESSES addr, ::System::Net::NetworkInformation::Win32_MIB_IFROW mib)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::NetworkInformation::Win32_IP_ADAPTER_ADDRESSES, ::System::Net::NetworkInformation::Win32_MIB_IFROW))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES__CTOR_OFFSET))(this, addr, mib);
+		}
+
+		static ::System::Int32 GetPerAdapterInfo(::System::Int32 IfIndex, ::System::Net::NetworkInformation::Win32_IP_PER_ADAPTER_INFO* pPerAdapterInfo, ::System::Int32& pOutBufLen)
+		{
+			return ((::System::Int32(*)(::System::Int32, ::System::Net::NetworkInformation::Win32_IP_PER_ADAPTER_INFO*, ::System::Int32&))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GETPERADAPTERINFO_OFFSET))(IfIndex, pPerAdapterInfo, pOutBufLen);
+		}
+
+		::System::Int32 get_Index()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_INDEX_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsAutomaticPrivateAddressingActive()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_ISAUTOMATICPRIVATEADDRESSINGACTIVE_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsAutomaticPrivateAddressingEnabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_ISAUTOMATICPRIVATEADDRESSINGENABLED_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsDhcpEnabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_ISDHCPENABLED_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsForwardingEnabled()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_ISFORWARDINGENABLED_OFFSET))(this);
+		}
+
+		::System::Int32 get_Mtu()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_MTU_OFFSET))(this);
+		}
+
+		::System::Boolean get_UsesWins()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_NETWORKINFORMATION_WIN32IPV4INTERFACEPROPERTIES_GET_USESWINS_OFFSET))(this);
+		}
+	};
+}

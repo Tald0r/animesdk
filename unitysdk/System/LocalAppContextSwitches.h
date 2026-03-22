@@ -2,16 +2,23 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
+#define SYSTEM_LOCALAPPCONTEXTSWITCHES__CCTOR_OFFSET UNITYSDK_OFFSET(0x182DB630)
+
 namespace System
 {
-	inline static constexpr unsigned int LocalAppContextSwitches_TypeDefinitionIndex = 2468;
+	inline static constexpr unsigned int LocalAppContextSwitches_TypeDefinitionIndex = 2697;
 
 	class LocalAppContextSwitches : public ::System::Object
 	{
 	public:
 		static ::System::Boolean* StaticGet_MemberDescriptorEqualsReturnsFalseIfEquivalent()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(LocalAppContextSwitches_TypeDefinitionIndex)->GetStaticField(0x5610);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(LocalAppContextSwitches_TypeDefinitionIndex)->GetStaticField(0x1400);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_LOCALAPPCONTEXTSWITCHES__CCTOR_OFFSET))();
 		}
 	};
 }

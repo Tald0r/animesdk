@@ -1,0 +1,165 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_79F6D62CE30E3F8E_114;
+class Class_2_90BFB73CDDF1447B;
+class UIWidgetGroup;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UISuibianDrinkTeaRowWidgetController_ItemData; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_CLICKITEMBUTTON_OFFSET UNITYSDK_OFFSET(0xACBB480)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xACB9E80)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONITEMCHANGED_OFFSET UNITYSDK_OFFSET(0xACBBAB0)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xACBB4F0)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xACBA0C0)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONSUIBIANDRINKINGTEAADDTASKEVENT_OFFSET UNITYSDK_OFFSET(0xACBB900)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONSUIBIANDRINKINGTEACHANGEORDERDATATOREFRESHITEMEVENT_OFFSET UNITYSDK_OFFSET(0xACBBA40)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONSUIBIANDRINKINGTEATRACKORDERCHANGEEVENT_OFFSET UNITYSDK_OFFSET(0xACBB650)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONTRACKQUESTUPDATEEVENT_OFFSET UNITYSDK_OFFSET(0xACBB890)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xACB9FE0)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xACB9A60)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xACB9DD0)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_REFRESHPANEL_OFFSET UNITYSDK_OFFSET(0xACBA2B0)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_SHOWPROGRESSSTATUS_OFFSET UNITYSDK_OFFSET(0xACBACF0)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_SHOWSUBMITSTATUS_OFFSET UNITYSDK_OFFSET(0xACBB1F0)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_SHOWTASKTRACK_OFFSET UNITYSDK_OFFSET(0xACBAFE0)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xACBBB20)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xACBBB30)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET UNITYSDK_OFFSET(0xACBBBA0)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xACBBC10)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xACBBC90)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xACBBD10)
+#define MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xACBBD70)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UISuibianDrinkTeaRowWidgetController_TypeDefinitionIndex = 49729;
+
+	class UISuibianDrinkTeaRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_79F6D62CE30E3F8E_114* _view; // 0x2D0
+		::MoleMole::UISuibianDrinkTeaRowWidgetController_ItemData* _data; // 0x2D8
+		::Class_2_90BFB73CDDF1447B* _model; // 0x2E0
+		::UIWidgetGroup* _itemGroup; // 0x2E8
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void RefreshPanel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_REFRESHPANEL_OFFSET))(this);
+		}
+
+		::System::Void ShowSubmitStatus()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_SHOWSUBMITSTATUS_OFFSET))(this);
+		}
+
+		::System::Void ClickItemButton()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_CLICKITEMBUTTON_OFFSET))(this);
+		}
+
+		::System::Void OnItemSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONITEMSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void OnSuibianDrinkingTeaTrackOrderChangeEvent(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONSUIBIANDRINKINGTEATRACKORDERCHANGEEVENT_OFFSET))(this, obj);
+		}
+
+		::System::Void OnTrackQuestUpdateEvent(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONTRACKQUESTUPDATEEVENT_OFFSET))(this, obj);
+		}
+
+		::System::Void OnSuibianDrinkingTeaAddTaskEvent(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONSUIBIANDRINKINGTEAADDTASKEVENT_OFFSET))(this, obj);
+		}
+
+		::System::Void ShowProgressStatus(::System::Boolean isShowAnimation)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_SHOWPROGRESSSTATUS_OFFSET))(this, isShowAnimation);
+		}
+
+		::System::Void ShowTaskTrack()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_SHOWTASKTRACK_OFFSET))(this);
+		}
+
+		::System::Void OnSuibianDrinkingTeaChangeOrderDataToRefreshItemEvent(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONSUIBIANDRINKINGTEACHANGEORDERDATATOREFRESHITEMEVENT_OFFSET))(this, obj);
+		}
+
+		::System::Void OnItemChanged(::System::EventArgs* obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER_ONITEMCHANGED_OFFSET))(this, obj);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnItemSelect(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONITEMSELECT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UISUIBIANDRINKTEAROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

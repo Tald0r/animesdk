@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MICROSOFT_CSHARP_CODEDOMPROVIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x17D45C50)
+#define MICROSOFT_CSHARP_CODEDOMPROVIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A680A70)
 
 namespace Microsoft::CSharp
 {
-	inline static constexpr unsigned int CodeDomProvider_TypeDefinitionIndex = 1760;
+	inline static constexpr unsigned int CodeDomProvider_TypeDefinitionIndex = 1636;
 
 	class CodeDomProvider : public ::System::Object
 	{

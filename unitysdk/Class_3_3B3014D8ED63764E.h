@@ -1,0 +1,72 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_2_1D144748B0C0612C_2.h"
+#include "unitysdk/MoleMole/EntityHandle.h"
+#include "unitysdk/Struct_2_D7E802D2192B688B.h"
+
+namespace MoleMole::Battle { class Entity; }
+
+#define CLASS_3_3B3014D8ED63764E_DISPOSE_OFFSET UNITYSDK_OFFSET(0x87DC480)
+#define CLASS_3_3B3014D8ED63764E_METHOD_3_206BA0116141E9F5_OFFSET UNITYSDK_OFFSET(0x87DCFA0)
+#define CLASS_3_3B3014D8ED63764E_METHOD_3_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x87DCF40)
+#define CLASS_3_3B3014D8ED63764E_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x87DC410)
+#define CLASS_3_3B3014D8ED63764E_METHOD_3_CCBE730AF445BBD4_OFFSET UNITYSDK_OFFSET(0x87DD200)
+#define CLASS_3_3B3014D8ED63764E_METHOD_3_D0633581C8506D66_OFFSET UNITYSDK_OFFSET(0x87DD2A0)
+#define CLASS_3_3B3014D8ED63764E_METHOD_3_FAF8E3FC18DC9C2D_OFFSET UNITYSDK_OFFSET(0x87DCE70)
+#define CLASS_3_3B3014D8ED63764E_METHOD_3_FBE078CB4257F92A_OFFSET UNITYSDK_OFFSET(0x87DCBE0)
+#define CLASS_3_3B3014D8ED63764E__CTOR_OFFSET UNITYSDK_OFFSET(0x87DC570)
+
+inline static constexpr unsigned int Class_3_3B3014D8ED63764E_TypeDefinitionIndex = 61984;
+
+class Class_3_3B3014D8ED63764E : public ::Class_2_1D144748B0C0612C_2
+{
+public:
+	::Struct_2_D7E802D2192B688B Field_3_2; // 0x18
+	::System::Boolean Field_3_0; // 0x1C
+	::System::UInt32 Field_3_1; // 0x20
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_3B3014D8ED63764E__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_3_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_3B3014D8ED63764E_METHOD_3_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Dispose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_3B3014D8ED63764E_DISPOSE_OFFSET))(this);
+	}
+
+	::System::Boolean Method_3_FBE078CB4257F92A(::MoleMole::Battle::Entity*& a1, ::Struct_2_D7E802D2192B688B& a2)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::MoleMole::Battle::Entity*&, ::Struct_2_D7E802D2192B688B&))((::PBYTE)hIl2Cpp + CLASS_3_3B3014D8ED63764E_METHOD_3_FBE078CB4257F92A_OFFSET))(this, a1, a2);
+	}
+
+	static ::Class_3_3B3014D8ED63764E* Method_3_CCBE730AF445BBD4()
+	{
+		return ((::Class_3_3B3014D8ED63764E*(*)())((::PBYTE)hIl2Cpp + CLASS_3_3B3014D8ED63764E_METHOD_3_CCBE730AF445BBD4_OFFSET))();
+	}
+
+	::System::Void Method_3_206BA0116141E9F5(::System::UInt32& a1, ::Struct_2_D7E802D2192B688B& a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::UInt32&, ::Struct_2_D7E802D2192B688B&))((::PBYTE)hIl2Cpp + CLASS_3_3B3014D8ED63764E_METHOD_3_206BA0116141E9F5_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_3_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_3B3014D8ED63764E_METHOD_3_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::MoleMole::EntityHandle Method_3_D0633581C8506D66()
+	{
+		return ((::MoleMole::EntityHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_3B3014D8ED63764E_METHOD_3_D0633581C8506D66_OFFSET))(this);
+	}
+
+	::System::Boolean Method_3_FAF8E3FC18DC9C2D(::System::UInt32& a1, ::Struct_2_D7E802D2192B688B& a2)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::System::UInt32&, ::Struct_2_D7E802D2192B688B&))((::PBYTE)hIl2Cpp + CLASS_3_3B3014D8ED63764E_METHOD_3_FAF8E3FC18DC9C2D_OFFSET))(this, a1, a2);
+	}
+};

@@ -1,0 +1,155 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_AAB024DAC549A2AF_Enum_3_0A4196FE0F38039F.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_5F9785D214EE06C6;
+class Class_1_A76F1E7974674667;
+class Class_2_79AE422BA06F6D26_4;
+class MonoUISubItemParamDict_SubItemParam;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System { template <typename T> class Action_1; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine::UI { class Image; }
+
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_ISNEW_OFFSET UNITYSDK_OFFSET(0x6445D90)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x6445700)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x64457A0)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x64449D0)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x6444DF0)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_READNEW_OFFSET UNITYSDK_OFFSET(0x6445E30)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_REFRESHNEW_OFFSET UNITYSDK_OFFSET(0x6446680)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x6445120)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_REGISTERCLICKCB_OFFSET UNITYSDK_OFFSET(0x6445950)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_RESELECT_OFFSET UNITYSDK_OFFSET(0x64463E0)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_SETNAME_OFFSET UNITYSDK_OFFSET(0x6445EC0)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_SETSELECT_OFFSET UNITYSDK_OFFSET(0x64459C0)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_TRIGGERBUTTONCLICK_OFFSET UNITYSDK_OFFSET(0x64464B0)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x6446710)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET UNITYSDK_OFFSET(0x6446740)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER__ONUIINIT_B__1_1_OFFSET UNITYSDK_OFFSET(0x64467A0)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x6446830)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x64468A0)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x6446920)
+#define MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x6446980)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIYorozuyaRallyQuestItemWidgetController_TypeDefinitionIndex = 36668;
+
+	class UIYorozuyaRallyQuestItemWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_79AE422BA06F6D26_4* _view; // 0x2A0
+		::Class_1_5F9785D214EE06C6* _rallyData; // 0x2A8
+		::Class_1_A76F1E7974674667* _rallyQuest; // 0x2B0
+		::Class_1_AAB024DAC549A2AF_Enum_3_0A4196FE0F38039F _subQuestType; // 0x2B8
+		::System::Action_1<::System::Int32>* _onClick; // 0x2C0
+		::System::Int32 _index; // 0x2C8
+		::UnityEngine::UI::Image* _img; // 0x2D0
+		::MonoUISubItemParamDict_SubItemParam* _param; // 0x2D8
+		::UnityEngine::Material* _allocMaterial; // 0x2E0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RegisterClickCb(::System::Action_1<::System::Int32>* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_REGISTERCLICKCB_OFFSET))(this, callback);
+		}
+
+		::System::Void SetSelect(::System::Boolean select, ::System::Boolean playAnim, ::System::Boolean isDefaultSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_SETSELECT_OFFSET))(this, select, playAnim, isDefaultSelect);
+		}
+
+		::System::Void ReSelect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_RESELECT_OFFSET))(this);
+		}
+
+		::System::Void TriggerButtonClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_TRIGGERBUTTONCLICK_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Boolean IsNew()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_ISNEW_OFFSET))(this);
+		}
+
+		::System::Void ReadNew()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_READNEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshNew()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_REFRESHNEW_OFFSET))(this);
+		}
+
+		::System::Void SetName(::System::Boolean select)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER_SETNAME_OFFSET))(this, select);
+		}
+
+		::System::Void _OnUIInit_b__1_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__1_1(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER__ONUIINIT_B__1_1_OFFSET))(this, args);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIYOROZUYARALLYQUESTITEMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

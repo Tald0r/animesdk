@@ -1,0 +1,161 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/MiniGame/MiniGameWorldBase.h"
+
+namespace MoleMole { class UISnakeGame3DModelController; }
+namespace MoleMole { class UISnakeGamePageController; }
+namespace System { class Action; }
+namespace UnityEngine { class RenderTexture; }
+
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ISGAMEENDSTATE_OFFSET UNITYSDK_OFFSET(0xB38F780)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONCREATE_OFFSET UNITYSDK_OFFSET(0xE48A4E0)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONEXIT_OFFSET UNITYSDK_OFFSET(0xB38E8D0)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONLOADFINISH_OFFSET UNITYSDK_OFFSET(0xB38EB60)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONUFIGHTCONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xB38EE60)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONUFIGHTDISCONNECT_OFFSET UNITYSDK_OFFSET(0xB38EFE0)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONUFIGHTRECONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xB38F2E0)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONUFIGHTSTARTRECONNECT_OFFSET UNITYSDK_OFFSET(0xB38F160)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONWILLEXIT_OFFSET UNITYSDK_OFFSET(0xB38F460)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_PAUSE_OFFSET UNITYSDK_OFFSET(0xB38F5E0)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_REGISTERLOADFINISHCALLBACK_OFFSET UNITYSDK_OFFSET(0xB38E830)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD__CTOR_OFFSET UNITYSDK_OFFSET(0xB38F8B0)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ISGAMEENDSTATE_OFFSET UNITYSDK_OFFSET(0xB38F900)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONCREATE_OFFSET UNITYSDK_OFFSET(0xB38F960)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONEXIT_OFFSET UNITYSDK_OFFSET(0xB38F970)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONLOADFINISH_OFFSET UNITYSDK_OFFSET(0xB38F980)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONUFIGHTCONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xB38F9E0)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONUFIGHTDISCONNECT_OFFSET UNITYSDK_OFFSET(0xB38FA40)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONUFIGHTRECONNECTSUCCESS_OFFSET UNITYSDK_OFFSET(0xB38FAA0)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONUFIGHTSTARTRECONNECT_OFFSET UNITYSDK_OFFSET(0xB38FB00)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONWILLEXIT_OFFSET UNITYSDK_OFFSET(0xB38FB60)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_PAUSE_OFFSET UNITYSDK_OFFSET(0xB38FBC0)
+#define MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_REGISTERLOADFINISHCALLBACK_OFFSET UNITYSDK_OFFSET(0xB38FC30)
+
+namespace MoleMole::MiniGame
+{
+	inline static constexpr unsigned int SnakeMiniGameWorld_TypeDefinitionIndex = 64030;
+
+	class SnakeMiniGameWorld : public ::MoleMole::MiniGame::MiniGameWorldBase
+	{
+	public:
+		::UnityEngine::RenderTexture* gameRt; // 0x88
+		::System::Action* loadFinishCb; // 0x90
+		::MoleMole::UISnakeGamePageController* snakeGamePageCtrl; // 0x98
+		::MoleMole::UISnakeGame3DModelController* snakeGame3dCtrl; // 0xA0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnCreate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONCREATE_OFFSET))(this);
+		}
+
+		::System::Void RegisterLoadFinishCallback(::System::Action* cb)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_REGISTERLOADFINISHCALLBACK_OFFSET))(this, cb);
+		}
+
+		::System::Void OnExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONEXIT_OFFSET))(this);
+		}
+
+		::System::Void OnLoadFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONLOADFINISH_OFFSET))(this);
+		}
+
+		::System::Void OnUFightConnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONUFIGHTCONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void OnUFightDisconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONUFIGHTDISCONNECT_OFFSET))(this);
+		}
+
+		::System::Void OnUFightStartReconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONUFIGHTSTARTRECONNECT_OFFSET))(this);
+		}
+
+		::System::Void OnUFightReconnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONUFIGHTRECONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void OnWillExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ONWILLEXIT_OFFSET))(this);
+		}
+
+		::System::Void Pause(::System::Boolean pauseState)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_PAUSE_OFFSET))(this, pauseState);
+		}
+
+		::System::Boolean IsGameEndState()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD_ISGAMEENDSTATE_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsGameEndState()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ISGAMEENDSTATE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONCREATE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONEXIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnLoadFinish()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONLOADFINISH_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightConnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONUFIGHTCONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightDisconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONUFIGHTDISCONNECT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightReconnectSuccess()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONUFIGHTRECONNECTSUCCESS_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUFightStartReconnect()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONUFIGHTSTARTRECONNECT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnWillExit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_ONWILLEXIT_OFFSET))(this);
+		}
+
+		::System::Void __base_Pause(::System::Boolean P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_PAUSE_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_RegisterLoadFinishCallback(::System::Action* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_MINIGAME_SNAKEMINIGAMEWORLD___BASE_REGISTERLOADFINISHCALLBACK_OFFSET))(this, P0);
+		}
+	};
+}

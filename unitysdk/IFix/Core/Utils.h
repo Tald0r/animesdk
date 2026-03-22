@@ -8,20 +8,28 @@ namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Reflection { class MethodInfo; }
 
-#define IFIX_CORE_UTILS_ISASSIGNABLE_OFFSET UNITYSDK_OFFSET(0x1544A660)
-#define IFIX_CORE_UTILS_TRYADAPTERTODELEGATE_OFFSET UNITYSDK_OFFSET(0x1544A830)
-#define IFIX_CORE_UTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1544ABB0)
+#define IFIX_CORE_UTILS_ISASSIGNABLE_OFFSET UNITYSDK_OFFSET(0x1991C120)
+#define IFIX_CORE_UTILS_TRYADAPTERTODELEGATE_OFFSET UNITYSDK_OFFSET(0x1991C2E0)
+#define IFIX_CORE_UTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1991C7C0)
 
 namespace IFix::Core
 {
-	inline static constexpr unsigned int Utils_TypeDefinitionIndex = 9346;
+	inline static constexpr unsigned int Utils_TypeDefinitionIndex = 6809;
 
 	class Utils : public ::System::Object
 	{
 	public:
-		static ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Reflection::MethodInfo*>** StaticGet_delegateAdptCache()
+		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Reflection::MethodInfo*>*>** StaticGet_DelegateAdaptCache()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Reflection::MethodInfo*>**)Il2CppClass::FromTypeDefinitionIndex(Utils_TypeDefinitionIndex)->GetStaticField(0x7A0);
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Reflection::MethodInfo*>*>**)Il2CppClass::FromTypeDefinitionIndex(Utils_TypeDefinitionIndex)->GetStaticField(0x5C60);
+		}
+		static ::System::Boolean* StaticGet_DisableValueTypeFieldFix()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Utils_TypeDefinitionIndex)->GetStaticField(0x3180);
+		}
+		static ::System::Boolean* StaticGet_CheckNewFieldTypeFix()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Utils_TypeDefinitionIndex)->GetStaticField(0x3181);
 		}
 
 		static ::System::Void _cctor()
@@ -34,9 +42,9 @@ namespace IFix::Core
 			return ((::System::Boolean(*)(::System::Reflection::MethodInfo*, ::System::Reflection::MethodInfo*))((::PBYTE)hIl2Cpp + IFIX_CORE_UTILS_ISASSIGNABLE_OFFSET))(delegateMethod, method);
 		}
 
-		static ::System::Delegate* TryAdapterToDelegate(::System::Object* obj, ::System::Type* delegateType, ::System::String* perfix)
+		static ::System::Delegate* TryAdapterToDelegate(::System::Object* obj, ::System::Type* delegateType, ::System::String* prefix, ::System::String* assemblyName)
 		{
-			return ((::System::Delegate*(*)(::System::Object*, ::System::Type*, ::System::String*))((::PBYTE)hIl2Cpp + IFIX_CORE_UTILS_TRYADAPTERTODELEGATE_OFFSET))(obj, delegateType, perfix);
+			return ((::System::Delegate*(*)(::System::Object*, ::System::Type*, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + IFIX_CORE_UTILS_TRYADAPTERTODELEGATE_OFFSET))(obj, delegateType, prefix, assemblyName);
 		}
 	};
 }

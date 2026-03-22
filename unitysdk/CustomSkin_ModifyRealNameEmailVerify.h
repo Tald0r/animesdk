@@ -1,0 +1,117 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MiHoYo/SDK/PluginUI/MiHoYoSDKUIContainer.h"
+
+class Class_2_79F6D62CE30E3F8E_48;
+namespace MoleMole { class UIGeneralLoginCheckDialogPopWindowController; }
+namespace System { class String; }
+
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_CLICKBACKBTN_OFFSET UNITYSDK_OFFSET(0x6E59CE0)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_CLICKCLOSEBTN_OFFSET UNITYSDK_OFFSET(0x6E59D80)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_CLICKVERIFY_OFFSET UNITYSDK_OFFSET(0x6E59B00)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_INSTANCE_OFFSET UNITYSDK_OFFSET(0xA6BB8D0)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONCLICKGETCAPTCHA_OFFSET UNITYSDK_OFFSET(0x6E59F60)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONCLOSE_OFFSET UNITYSDK_OFFSET(0xA6BB9D0)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONCONSOLECANCEL_OFFSET UNITYSDK_OFFSET(0x6E5A2C0)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONGETCAPTCHACALLBACK_OFFSET UNITYSDK_OFFSET(0x6E5A020)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONOTHERVERIFYCLICKED_OFFSET UNITYSDK_OFFSET(0x6E59EC0)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONREDIRECTCLICKED_OFFSET UNITYSDK_OFFSET(0x6E59E20)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONSHOW_OFFSET UNITYSDK_OFFSET(0xA6BBA40)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_SETMAILINPUT_OFFSET UNITYSDK_OFFSET(0x6E59480)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_SETNOTICE_OFFSET UNITYSDK_OFFSET(0x6E592C0)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_SETOTHERVERIFYTEXT_OFFSET UNITYSDK_OFFSET(0x6E59740)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY__CTOR_OFFSET UNITYSDK_OFFSET(0x6E5A4F0)
+#define CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY__ONGETCAPTCHACALLBACK_B__15_0_OFFSET UNITYSDK_OFFSET(0x6E5A570)
+
+inline static constexpr unsigned int CustomSkin_ModifyRealNameEmailVerify_TypeDefinitionIndex = 45494;
+
+class CustomSkin_ModifyRealNameEmailVerify : public ::MiHoYo::SDK::PluginUI::MiHoYoSDKUIContainer
+{
+public:
+	static ::CustomSkin_ModifyRealNameEmailVerify** StaticGet__instance()
+	{
+		return (::CustomSkin_ModifyRealNameEmailVerify**)Il2CppClass::FromTypeDefinitionIndex(CustomSkin_ModifyRealNameEmailVerify_TypeDefinitionIndex)->GetStaticField(0x2E4A0);
+	}
+	::Class_2_79F6D62CE30E3F8E_48* _view; // 0x18
+	::MoleMole::UIGeneralLoginCheckDialogPopWindowController* popWidget; // 0x20
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY__CTOR_OFFSET))(this);
+	}
+
+	static ::CustomSkin_ModifyRealNameEmailVerify* Instance()
+	{
+		return ((::CustomSkin_ModifyRealNameEmailVerify*(*)())((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_INSTANCE_OFFSET))();
+	}
+
+	::System::Void OnClose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONCLOSE_OFFSET))(this);
+	}
+
+	::System::Void OnShow()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONSHOW_OFFSET))(this);
+	}
+
+	::System::Void SetNotice()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_SETNOTICE_OFFSET))(this);
+	}
+
+	::System::Void SetMailInput()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_SETMAILINPUT_OFFSET))(this);
+	}
+
+	::System::Void SetOtherVerifyText()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_SETOTHERVERIFYTEXT_OFFSET))(this);
+	}
+
+	::System::Void ClickVerify()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_CLICKVERIFY_OFFSET))(this);
+	}
+
+	::System::Void ClickBackBtn()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_CLICKBACKBTN_OFFSET))(this);
+	}
+
+	::System::Void ClickCloseBtn()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_CLICKCLOSEBTN_OFFSET))(this);
+	}
+
+	::System::Void OnRedirectClicked()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONREDIRECTCLICKED_OFFSET))(this);
+	}
+
+	::System::Void OnOtherVerifyClicked()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONOTHERVERIFYCLICKED_OFFSET))(this);
+	}
+
+	::System::Void OnClickGetCaptcha()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONCLICKGETCAPTCHA_OFFSET))(this);
+	}
+
+	::System::Void OnGetCaptchaCallback(::System::String* strArgs)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONGETCAPTCHACALLBACK_OFFSET))(this, strArgs);
+	}
+
+	::System::Void OnConsoleCancel()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY_ONCONSOLECANCEL_OFFSET))(this);
+	}
+
+	::System::Void _OnGetCaptchaCallback_b__15_0()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CUSTOMSKIN_MODIFYREALNAMEEMAILVERIFY__ONGETCAPTCHACALLBACK_B__15_0_OFFSET))(this);
+	}
+};

@@ -1,0 +1,132 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_1_48D56DACBE4271BC;
+class Class_2_881BD952C8250061;
+class Class_2_BE618499B8831B81;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIHandBookSuibianItemRowWidgetController_ViewModel; }
+namespace MoleMole { class UIHandBookSuibianItemWidgetController; }
+namespace MoleMole { class UIHandBookSuibianWidgetController_ItemRowData; }
+namespace System { class EventArgs; }
+namespace System { class Object; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_GET_HANDBOOKMODEL_OFFSET UNITYSDK_OFFSET(0x809AC80)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_GET_UIMODEL_OFFSET UNITYSDK_OFFSET(0x809AD50)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0x809ABD0)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8099BA0)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_ONEXPEDITIONDDATASYNC_OFFSET UNITYSDK_OFFSET(0x809AE20)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x8099E90)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8099C40)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8099660)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x8099F70)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x809AF10)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET UNITYSDK_OFFSET(0x809B030)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER__REFRESHVIEW_B__6_0_OFFSET UNITYSDK_OFFSET(0x809B210)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET UNITYSDK_OFFSET(0x809B360)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x809B3C0)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0x809B430)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x809B4B0)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x809B530)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHandBookSuibianItemRowWidgetController_TypeDefinitionIndex = 47193;
+
+	class UIHandBookSuibianItemRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_881BD952C8250061* _view; // 0x2D0
+		::MoleMole::UIHandBookSuibianWidgetController_ItemRowData* _rowData; // 0x2D8
+		::System::Collections::Generic::List_1<::MoleMole::UIHandBookSuibianItemWidgetController*>* _itemWidgetList; // 0x2E0
+		::Class_1_48D56DACBE4271BC* _propertySyncHelper; // 0x2E8
+		::MoleMole::UIHandBookSuibianItemRowWidgetController_ViewModel* _viewModel; // 0x2F0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::Class_2_BE618499B8831B81* get_UIModel()
+		{
+			return ((::Class_2_BE618499B8831B81*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_GET_UIMODEL_OFFSET))(this);
+		}
+
+		::Class_2_BE618499B8831B81* get_HandBookModel()
+		{
+			return ((::Class_2_BE618499B8831B81*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_GET_HANDBOOKMODEL_OFFSET))(this);
+		}
+
+		::System::Void OnExpeditiondDataSync(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER_ONEXPEDITIONDDATASYNC_OFFSET))(this, args);
+		}
+
+		::System::Void _OnUIInit_b__1_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET))(this);
+		}
+
+		::System::Void _RefreshView_b__6_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER__REFRESHVIEW_B__6_0_OFFSET))(this);
+		}
+
+		::System::Void __base_InitAutoDisposeDataBind()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___BASE_INITAUTODISPOSEDATABIND_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+	};
+}

@@ -1,0 +1,118 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/UnityEngine/MonoBehaviour.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/DeferredReflectionProbeResolution.h"
+
+namespace UnityEngine { class CubemapArray; }
+namespace UnityEngine { class ReflectionProbe; }
+
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_GETINDEXINCACHEARRAY_OFFSET UNITYSDK_OFFSET(0x17951880)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_GET_BLENDDISTANCE_OFFSET UNITYSDK_OFFSET(0x179515E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_GET_CUBEMAPARRAYIMPORTANCE_OFFSET UNITYSDK_OFFSET(0x179517D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_GET_CUBEMAPARRAY_OFFSET UNITYSDK_OFFSET(0x17951010)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_GET_INDEXINARRAY_OFFSET UNITYSDK_OFFSET(0x17951720)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x17951CC0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x17951C30)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_ONENABLE_OFFSET UNITYSDK_OFFSET(0x17951930)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_REGISTERTOENGINE_OFFSET UNITYSDK_OFFSET(0x17951070)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_SETOLDINDEX_OFFSET UNITYSDK_OFFSET(0x17951650)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_SET_BLENDDISTANCE_OFFSET UNITYSDK_OFFSET(0x179515F0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_SET_CUBEMAPARRAYIMPORTANCE_OFFSET UNITYSDK_OFFSET(0x179517E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_SET_CUBEMAPARRAY_OFFSET UNITYSDK_OFFSET(0x17951020)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_SET_INDEXINARRAY_OFFSET UNITYSDK_OFFSET(0x17951770)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE__CTOR_OFFSET UNITYSDK_OFFSET(0x17951D40)
+
+namespace UnityEngine::Rendering::Universal
+{
+	inline static constexpr unsigned int DeferredReflectionProbe_TypeDefinitionIndex = 28378;
+
+	class DeferredReflectionProbe : public ::UnityEngine::MonoBehaviour
+	{
+	public:
+		::System::Single m_BlendDistance; // 0x18
+		::UnityEngine::CubemapArray* m_CubemapArray; // 0x20
+		::UnityEngine::Rendering::Universal::DeferredReflectionProbeResolution m_Resolution; // 0x28
+		::System::Int32 m_Index; // 0x2C
+		::System::Boolean useAsFallBackReflectionCube; // 0x30
+		::System::Int32 m_NewVersionIndex; // 0x34
+		::System::Boolean isCustomCubeArray; // 0x38
+		::System::Int32 _CubeMapArrayImportance; // 0x3C
+		::System::Int32 m_ProbeImportance; // 0x40
+		::UnityEngine::ReflectionProbe* m_Probe; // 0x48
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE__CTOR_OFFSET))(this);
+		}
+
+		::UnityEngine::CubemapArray* get_cubemapArray()
+		{
+			return ((::UnityEngine::CubemapArray*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_GET_CUBEMAPARRAY_OFFSET))(this);
+		}
+
+		::System::Void set_cubemapArray(::UnityEngine::CubemapArray* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::CubemapArray*))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_SET_CUBEMAPARRAY_OFFSET))(this, value);
+		}
+
+		::System::Single get_BlendDistance()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_GET_BLENDDISTANCE_OFFSET))(this);
+		}
+
+		::System::Void set_BlendDistance(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_SET_BLENDDISTANCE_OFFSET))(this, value);
+		}
+
+		::System::Void SetOldIndex(::System::Int32 indexValue)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_SETOLDINDEX_OFFSET))(this, indexValue);
+		}
+
+		::System::Int32 get_IndexInArray()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_GET_INDEXINARRAY_OFFSET))(this);
+		}
+
+		::System::Void set_IndexInArray(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_SET_INDEXINARRAY_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_cubeMapArrayImportance()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_GET_CUBEMAPARRAYIMPORTANCE_OFFSET))(this);
+		}
+
+		::System::Void set_cubeMapArrayImportance(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_SET_CUBEMAPARRAYIMPORTANCE_OFFSET))(this, value);
+		}
+
+		::System::Int32 GetIndexInCacheArray()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_GETINDEXINCACHEARRAY_OFFSET))(this);
+		}
+
+		::System::Void OnEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_ONENABLE_OFFSET))(this);
+		}
+
+		::System::Void OnDisable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_ONDISABLE_OFFSET))(this);
+		}
+
+		::System::Void OnDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_ONDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RegisterToEngine()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEFERREDREFLECTIONPROBE_REGISTERTOENGINE_OFFSET))(this);
+		}
+	};
+}

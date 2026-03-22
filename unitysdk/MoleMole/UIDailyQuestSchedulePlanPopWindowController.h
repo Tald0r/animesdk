@@ -1,0 +1,159 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/Enum_3_8E90989A26BC6232.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_208CC9941471731A_168;
+class Class_2_5B7DC87762D4C299;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIDailyQuestSchedulePlanListRowWidgetController; }
+namespace System { class EventArgs; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class HashSet_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_CANADDNEWPLAN_OFFSET UNITYSDK_OFFSET(0x8BEAA90)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_CREATEITEMWIDGET_OFFSET UNITYSDK_OFFSET(0x8BEA020)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_GETCURSELECTWIDGET_OFFSET UNITYSDK_OFFSET(0x8BEA8E0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET UNITYSDK_OFFSET(0x8BE9CB0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x8BE9550)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0x8BE97C0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ISCHECKED_OFFSET UNITYSDK_OFFSET(0x8BE9CC0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONCONFIRM_OFFSET UNITYSDK_OFFSET(0x8BE9E00)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8BE9B80)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONITEMCLICKED_OFFSET UNITYSDK_OFFSET(0x8BEA1A0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8BE9C20)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8BE9560)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8BE9890)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_REFRESHBTN_OFFSET UNITYSDK_OFFSET(0x8BE9D40)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0x8BE9AD0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8BEAB20)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER__ONUIINIT_B__3_0_OFFSET UNITYSDK_OFFSET(0x8BEAC90)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8BEAD20)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8BEAD90)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8BEADA0)
+#define MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8BEADB0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIDailyQuestSchedulePlanPopWindowController_TypeDefinitionIndex = 61233;
+
+	class UIDailyQuestSchedulePlanPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_5B7DC87762D4C299* _view; // 0x2F8
+		::System::Collections::Generic::List_1<::System::Int32>* _scheduleQuestIDList; // 0x300
+		::System::Collections::Generic::HashSet_1<::System::Int32>* _selectedScheduleQuestIDSet; // 0x308
+		::System::Collections::Generic::HashSet_1<::System::Int32>* _checkedSet; // 0x310
+		::Class_2_208CC9941471731A_168* _poolConfig; // 0x318
+		::System::Int32 _curSelectIndex; // 0x320
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::Enum_3_8E90989A26BC6232 get_HotSwitchRootLayerState()
+		{
+			return ((::Enum_3_8E90989A26BC6232(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_GET_HOTSWITCHROOTLAYERSTATE_OFFSET))(this);
+		}
+
+		::System::Boolean IsChecked(::System::Int32 questID)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ISCHECKED_OFFSET))(this, questID);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnConfirm()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONCONFIRM_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateItemWidget(::System::Func_1<::MoleMole::UIControlReference*>* reference)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_CREATEITEMWIDGET_OFFSET))(this, reference);
+		}
+
+		::System::Void OnItemClicked(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_ONITEMCLICKED_OFFSET))(this, index);
+		}
+
+		::System::Boolean CanAddNewPlan()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_CANADDNEWPLAN_OFFSET))(this);
+		}
+
+		::MoleMole::UIDailyQuestSchedulePlanListRowWidgetController* GetCurSelectWidget()
+		{
+			return ((::MoleMole::UIDailyQuestSchedulePlanListRowWidgetController*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_GETCURSELECTWIDGET_OFFSET))(this);
+		}
+
+		::System::Void RefreshBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER_REFRESHBTN_OFFSET))(this);
+		}
+
+		::System::Void _OnUIInit_b__3_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER__ONUIINIT_B__3_0_OFFSET))(this, args);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDAILYQUESTSCHEDULEPLANPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

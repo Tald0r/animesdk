@@ -2,38 +2,78 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-namespace System::Xml::Schema { class XmlSchemaObjectCollection; }
+namespace System { class String; }
+namespace System::Xml { class XmlAttribute; }
+namespace System::Xml::Schema { class XmlSchemaAnnotation; }
+namespace System::Xml::Serialization { class XmlSerializerNamespaces; }
 
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_ONADD_OFFSET UNITYSDK_OFFSET(0x17D949A0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_ONCLEAR_OFFSET UNITYSDK_OFFSET(0x17D949C0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_ONREMOVE_OFFSET UNITYSDK_OFFSET(0x17D949B0)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x17D92400)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_ADDANNOTATION_OFFSET UNITYSDK_OFFSET(0x18C7DC90)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_CLONE_OFFSET UNITYSDK_OFFSET(0x18C7DCC0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_GET_IDATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x18C7DC60)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_GET_NAMEATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x18C7DCA0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_GET_NAMESPACES_OFFSET UNITYSDK_OFFSET(0x18C7DC10)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_SETUNHANDLEDATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x18C7DC80)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_SET_IDATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x18C7DC70)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_SET_NAMEATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x18C7DCB0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x18C7D610)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int XmlSchemaObject_TypeDefinitionIndex = 2187;
+	inline static constexpr unsigned int XmlSchemaObject_TypeDefinitionIndex = 2171;
 
 	class XmlSchemaObject : public ::System::Object
 	{
 	public:
+		::System::String* sourceUri; // 0x10
+		::System::Xml::Serialization::XmlSerializerNamespaces* namespaces; // 0x18
+		::System::Xml::Schema::XmlSchemaObject* parent; // 0x20
+		::System::Boolean isProcessing; // 0x28
+		::System::Int32 linePos; // 0x2C
+		::System::Int32 lineNum; // 0x30
+
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT__CTOR_OFFSET))(this);
 		}
 
-		::System::Void OnAdd(::System::Xml::Schema::XmlSchemaObjectCollection* container, ::System::Object* item)
+		::System::Xml::Serialization::XmlSerializerNamespaces* get_Namespaces()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaObjectCollection*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_ONADD_OFFSET))(this, container, item);
+			return ((::System::Xml::Serialization::XmlSerializerNamespaces*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_GET_NAMESPACES_OFFSET))(this);
 		}
 
-		::System::Void OnRemove(::System::Xml::Schema::XmlSchemaObjectCollection* container, ::System::Object* item)
+		::System::String* get_IdAttribute()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaObjectCollection*, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_ONREMOVE_OFFSET))(this, container, item);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_GET_IDATTRIBUTE_OFFSET))(this);
 		}
 
-		::System::Void OnClear(::System::Xml::Schema::XmlSchemaObjectCollection* container)
+		::System::Void set_IdAttribute(::System::String* value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaObjectCollection*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_ONCLEAR_OFFSET))(this, container);
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_SET_IDATTRIBUTE_OFFSET))(this, value);
+		}
+
+		::System::Void SetUnhandledAttributes(::Il2CppArray<::System::Xml::XmlAttribute*>* moreAttributes)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Xml::XmlAttribute*>*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_SETUNHANDLEDATTRIBUTES_OFFSET))(this, moreAttributes);
+		}
+
+		::System::Void AddAnnotation(::System::Xml::Schema::XmlSchemaAnnotation* annotation)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Xml::Schema::XmlSchemaAnnotation*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_ADDANNOTATION_OFFSET))(this, annotation);
+		}
+
+		::System::String* get_NameAttribute()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_GET_NAMEATTRIBUTE_OFFSET))(this);
+		}
+
+		::System::Void set_NameAttribute(::System::String* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_SET_NAMEATTRIBUTE_OFFSET))(this, value);
+		}
+
+		::System::Xml::Schema::XmlSchemaObject* Clone()
+		{
+			return ((::System::Xml::Schema::XmlSchemaObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_XMLSCHEMAOBJECT_CLONE_OFFSET))(this);
 		}
 	};
 }

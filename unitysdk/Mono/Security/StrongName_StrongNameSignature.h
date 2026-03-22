@@ -1,0 +1,124 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_CLIFLAGPOSITION_OFFSET UNITYSDK_OFFSET(0x1AE52B00)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_CLIFLAG_OFFSET UNITYSDK_OFFSET(0x1AE52AE0)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_HASH_OFFSET UNITYSDK_OFFSET(0x1AE52A20)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_METADATALENGTH_OFFSET UNITYSDK_OFFSET(0x1AE52A80)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_METADATAPOSITION_OFFSET UNITYSDK_OFFSET(0x1AE52A60)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_SIGNATURELENGTH_OFFSET UNITYSDK_OFFSET(0x1AE52AC0)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_SIGNATUREPOSITION_OFFSET UNITYSDK_OFFSET(0x1AE52AA0)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_SIGNATURE_OFFSET UNITYSDK_OFFSET(0x1AE52A40)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_CLIFLAGPOSITION_OFFSET UNITYSDK_OFFSET(0x1AE52B10)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_CLIFLAG_OFFSET UNITYSDK_OFFSET(0x1AE52AF0)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_HASH_OFFSET UNITYSDK_OFFSET(0x1AE52A30)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_METADATALENGTH_OFFSET UNITYSDK_OFFSET(0x1AE52A90)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_METADATAPOSITION_OFFSET UNITYSDK_OFFSET(0x1AE52A70)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_SIGNATURELENGTH_OFFSET UNITYSDK_OFFSET(0x1AE52AD0)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_SIGNATUREPOSITION_OFFSET UNITYSDK_OFFSET(0x1AE52AB0)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_SIGNATURE_OFFSET UNITYSDK_OFFSET(0x1AE52A50)
+#define MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE52B20)
+
+namespace Mono::Security
+{
+	inline static constexpr unsigned int StrongName_StrongNameSignature_TypeDefinitionIndex = 2285;
+
+	class StrongName_StrongNameSignature : public ::System::Object
+	{
+	public:
+		::Il2CppArray<::System::Byte>* hash; // 0x10
+		::Il2CppArray<::System::Byte>* signature; // 0x18
+		::System::UInt32 signatureLength; // 0x20
+		::System::UInt32 metadataLength; // 0x24
+		::System::UInt32 metadataPosition; // 0x28
+		::System::UInt32 signaturePosition; // 0x2C
+		::System::Byte cliFlag; // 0x30
+		::System::UInt32 cliFlagPosition; // 0x34
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE__CTOR_OFFSET))(this);
+		}
+
+		::Il2CppArray<::System::Byte>* get_Hash()
+		{
+			return ((::Il2CppArray<::System::Byte>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_HASH_OFFSET))(this);
+		}
+
+		::System::Void set_Hash(::Il2CppArray<::System::Byte>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_HASH_OFFSET))(this, value);
+		}
+
+		::Il2CppArray<::System::Byte>* get_Signature()
+		{
+			return ((::Il2CppArray<::System::Byte>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_SIGNATURE_OFFSET))(this);
+		}
+
+		::System::Void set_Signature(::Il2CppArray<::System::Byte>* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Byte>*))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_SIGNATURE_OFFSET))(this, value);
+		}
+
+		::System::UInt32 get_MetadataPosition()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_METADATAPOSITION_OFFSET))(this);
+		}
+
+		::System::Void set_MetadataPosition(::System::UInt32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_METADATAPOSITION_OFFSET))(this, value);
+		}
+
+		::System::UInt32 get_MetadataLength()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_METADATALENGTH_OFFSET))(this);
+		}
+
+		::System::Void set_MetadataLength(::System::UInt32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_METADATALENGTH_OFFSET))(this, value);
+		}
+
+		::System::UInt32 get_SignaturePosition()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_SIGNATUREPOSITION_OFFSET))(this);
+		}
+
+		::System::Void set_SignaturePosition(::System::UInt32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_SIGNATUREPOSITION_OFFSET))(this, value);
+		}
+
+		::System::UInt32 get_SignatureLength()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_SIGNATURELENGTH_OFFSET))(this);
+		}
+
+		::System::Void set_SignatureLength(::System::UInt32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_SIGNATURELENGTH_OFFSET))(this, value);
+		}
+
+		::System::Byte get_CliFlag()
+		{
+			return ((::System::Byte(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_CLIFLAG_OFFSET))(this);
+		}
+
+		::System::Void set_CliFlag(::System::Byte value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Byte))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_CLIFLAG_OFFSET))(this, value);
+		}
+
+		::System::UInt32 get_CliFlagPosition()
+		{
+			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_GET_CLIFLAGPOSITION_OFFSET))(this);
+		}
+
+		::System::Void set_CliFlagPosition(::System::UInt32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MONO_SECURITY_STRONGNAME_STRONGNAMESIGNATURE_SET_CLIFLAGPOSITION_OFFSET))(this, value);
+		}
+	};
+}

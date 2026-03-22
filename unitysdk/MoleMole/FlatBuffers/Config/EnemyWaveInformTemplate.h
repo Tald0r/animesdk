@@ -1,0 +1,90 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_58DF5669875F2C66_143.h"
+#include "unitysdk/System/Object.h"
+
+class Class_0_16E4307DCC419505_13;
+namespace System { class String; }
+
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_CLEAR_OFFSET UNITYSDK_OFFSET(0x182FF500)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_ENEMYPOSITION_OFFSET UNITYSDK_OFFSET(0x182FEF10)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_ENTITYID_OFFSET UNITYSDK_OFFSET(0x182FF020)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_ISLOADALL_OFFSET UNITYSDK_OFFSET(0x182FED90)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_LEVELCOUNTID_OFFSET UNITYSDK_OFFSET(0x182FEDC0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_LEVELID_OFFSET UNITYSDK_OFFSET(0x182FF170)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_LEVELWAVE_OFFSET UNITYSDK_OFFSET(0x182FF2C0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_LOADANDCHECK_OFFSET UNITYSDK_OFFSET(0x182FF410)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_SET_ISLOADALL_OFFSET UNITYSDK_OFFSET(0x182FEDA0)
+#define MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE__CTOR_OFFSET UNITYSDK_OFFSET(0x182FEDB0)
+
+namespace MoleMole::FlatBuffers::Config
+{
+	inline static constexpr unsigned int EnemyWaveInformTemplate_TypeDefinitionIndex = 10908;
+
+	class EnemyWaveInformTemplate : public ::System::Object
+	{
+	public:
+		// static const ::System::String* Hash; // 0x0
+		// static const ::System::Byte VAR_MAX_COUNT = 0x5; // 0x0
+		::System::String* m_EnemyPosition; // 0x10
+		::Struct_2_58DF5669875F2C66_143 m_Data; // 0x18
+		::Class_0_16E4307DCC419505_13* m_Notify; // 0x28
+		::System::Int32 m_LevelWave; // 0x30
+		::System::Byte m_Mask0; // 0x34
+		::System::Byte m_VarLoadedCount; // 0x35
+		::System::Boolean _IsLoadAll_k__BackingField; // 0x36
+		::System::Int32 m_EntityID; // 0x38
+		::System::Int32 m_LevelCountID; // 0x3C
+		::System::Int32 m_LevelID; // 0x40
+
+		::System::Void _ctor(::Struct_2_58DF5669875F2C66_143 data, ::Class_0_16E4307DCC419505_13* notify)
+		{
+			return ((::System::Void(*)(::PVOID, ::Struct_2_58DF5669875F2C66_143, ::Class_0_16E4307DCC419505_13*))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE__CTOR_OFFSET))(this, data, notify);
+		}
+
+		::System::Boolean get_IsLoadAll()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_ISLOADALL_OFFSET))(this);
+		}
+
+		::System::Void set_IsLoadAll(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_SET_ISLOADALL_OFFSET))(this, value);
+		}
+
+		::System::Int32 get_LevelCountID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_LEVELCOUNTID_OFFSET))(this);
+		}
+
+		::System::String* get_EnemyPosition()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_ENEMYPOSITION_OFFSET))(this);
+		}
+
+		::System::Int32 get_EntityID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_ENTITYID_OFFSET))(this);
+		}
+
+		::System::Int32 get_LevelID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_LEVELID_OFFSET))(this);
+		}
+
+		::System::Int32 get_LevelWave()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_GET_LEVELWAVE_OFFSET))(this);
+		}
+
+		::System::Void LoadAndCheck()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_LOADANDCHECK_OFFSET))(this);
+		}
+
+		::System::Void Clear()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLATBUFFERS_CONFIG_ENEMYWAVEINFORMTEMPLATE_CLEAR_OFFSET))(this);
+		}
+	};
+}

@@ -9,36 +9,38 @@
 namespace System { class Object; }
 namespace UnityEngine { class Material; }
 
-#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x2048EF0)
-#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_EQUALS_OFFSET UNITYSDK_OFFSET(0x2048EB0)
-#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x2048F70)
-#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_GETSHADERPASSNAME_OFFSET UNITYSDK_OFFSET(0x2048E90)
-#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_SETSHADERPASSNAME_OFFSET UNITYSDK_OFFSET(0x2048EA0)
-#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_SET_OVERRIDEMATERIALPASSINDEX_OFFSET UNITYSDK_OFFSET(0x2048E80)
-#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_SET_OVERRIDEMATERIAL_OFFSET UNITYSDK_OFFSET(0x2048E30)
-#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_SET_PEROBJECTDATA_OFFSET UNITYSDK_OFFSET(0x2048E20)
-#define UNITYENGINE_RENDERING_DRAWINGSETTINGS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1822F2B0)
-#define UNITYENGINE_RENDERING_DRAWINGSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x2048CD0)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x8F58A0)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_EQUALS_OFFSET UNITYSDK_OFFSET(0x8F5860)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x8F5900)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_GETSHADERPASSNAME_OFFSET UNITYSDK_OFFSET(0x8F5840)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_GET_PEROBJECTDATA_OFFSET UNITYSDK_OFFSET(0x8F5720)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_SETSHADERPASSNAME_OFFSET UNITYSDK_OFFSET(0x8F5850)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_SET_ENABLEDYNAMICBATCHING_OFFSET UNITYSDK_OFFSET(0x8F5740)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_SET_ENABLEINSTANCING_OFFSET UNITYSDK_OFFSET(0x8F5760)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_SET_OVERRIDEMATERIALPASSINDEX_OFFSET UNITYSDK_OFFSET(0x8F5830)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_SET_OVERRIDEMATERIAL_OFFSET UNITYSDK_OFFSET(0x8F5780)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS_SET_PEROBJECTDATA_OFFSET UNITYSDK_OFFSET(0x8F5730)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19D20960)
+#define UNITYENGINE_RENDERING_DRAWINGSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x8F5620)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int DrawingSettings_TypeDefinitionIndex = 4536;
+	inline static constexpr unsigned int DrawingSettings_TypeDefinitionIndex = 6210;
 
 	struct alignas(4) DrawingSettings
 	{
 		static ::System::Int32* StaticGet_maxShaderPasses()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(DrawingSettings_TypeDefinitionIndex)->GetStaticField(0x6490);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(DrawingSettings_TypeDefinitionIndex)->GetStaticField(0x2A10);
 		}
 		::UnityEngine::Rendering::SortingSettings m_SortingSettings; // 0x10
-		::UnityEngine::Rendering::DrawingSettings__shaderPassNames_e__FixedBuffer shaderPassNames; // 0x130
-		::UnityEngine::Rendering::PerObjectData m_PerObjectData; // 0x170
-		::UnityEngine::Rendering::DrawRendererFlags m_Flags; // 0x174
-		::System::Int32 m_OverrideMaterialInstanceId; // 0x178
-		::System::Int32 m_OverrideMaterialPassIndex; // 0x17C
-		::System::Int32 m_MainLightIndex; // 0x180
-		::System::Int32 m_UseSrpBatcher; // 0x184
-		::System::Int32 m_OverrideMaterialUseOriginalProperty; // 0x188
+		::UnityEngine::Rendering::DrawingSettings__shaderPassNames_e__FixedBuffer shaderPassNames; // 0xF0
+		::UnityEngine::Rendering::PerObjectData m_PerObjectData; // 0x130
+		::UnityEngine::Rendering::DrawRendererFlags m_Flags; // 0x134
+		::System::Int32 m_OverrideMaterialInstanceId; // 0x138
+		::System::Int32 m_OverrideMaterialPassIndex; // 0x13C
+		::System::Int32 m_MainLightIndex; // 0x140
+		::System::Int32 m_UseSrpBatcher; // 0x144
 
 		/*
 		::System::Void _ctor(::UnityEngine::Rendering::ShaderTagId shaderPassName, ::UnityEngine::Rendering::SortingSettings sortingSettings)
@@ -52,9 +54,24 @@ namespace UnityEngine::Rendering
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DRAWINGSETTINGS__CCTOR_OFFSET))();
 		}
 
+		::UnityEngine::Rendering::PerObjectData get_perObjectData()
+		{
+			return ((::UnityEngine::Rendering::PerObjectData(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DRAWINGSETTINGS_GET_PEROBJECTDATA_OFFSET))(this);
+		}
+
 		::System::Void set_perObjectData(::UnityEngine::Rendering::PerObjectData value)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::PerObjectData))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DRAWINGSETTINGS_SET_PEROBJECTDATA_OFFSET))(this, value);
+		}
+
+		::System::Void set_enableDynamicBatching(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DRAWINGSETTINGS_SET_ENABLEDYNAMICBATCHING_OFFSET))(this, value);
+		}
+
+		::System::Void set_enableInstancing(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DRAWINGSETTINGS_SET_ENABLEINSTANCING_OFFSET))(this, value);
 		}
 
 		::System::Void set_overrideMaterial(::UnityEngine::Material* value)

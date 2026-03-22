@@ -8,10 +8,13 @@ namespace System { class String; }
 
 namespace System::Net::NetworkInformation
 {
-	inline static constexpr unsigned int Win32_FIXED_INFO_TypeDefinitionIndex = 2943;
+	inline static constexpr unsigned int Win32_FIXED_INFO_TypeDefinitionIndex = 3836;
 
 	struct alignas(8) Win32_FIXED_INFO
 	{
+		// static const ::System::Int32 MAX_HOSTNAME_LEN = 0x80; // 0x0
+		// static const ::System::Int32 MAX_DOMAIN_NAME_LEN = 0x80; // 0x0
+		// static const ::System::Int32 MAX_SCOPE_ID_LEN = 0x100; // 0x0
 		::System::String* HostName; // 0x10
 		::System::String* DomainName; // 0x18
 		::System::IntPtr CurrentDnsServer; // 0x20

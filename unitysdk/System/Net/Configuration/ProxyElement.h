@@ -1,15 +1,29 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Configuration/ConfigurationElement.h"
+#include "unitysdk/System/Net/Configuration/ProxyElement_AutoDetectValues.h"
+#include "unitysdk/System/Net/Configuration/ProxyElement_BypassOnLocalValues.h"
+#include "unitysdk/System/Net/Configuration/ProxyElement_UseSystemDefaultValues.h"
 
+namespace System { class Uri; }
 namespace System::Configuration { class ConfigurationPropertyCollection; }
 
-#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_PROPERTIES_OFFSET UNITYSDK_OFFSET(0x17EA2CD0)
-#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x17EA2C90)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_AUTODETECT_OFFSET UNITYSDK_OFFSET(0x18E3AB00)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_BYPASSONLOCAL_OFFSET UNITYSDK_OFFSET(0x18E3AB80)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_PROPERTIES_OFFSET UNITYSDK_OFFSET(0x18E3AC00)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_PROXYADDRESS_OFFSET UNITYSDK_OFFSET(0x18E3AC40)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_SCRIPTLOCATION_OFFSET UNITYSDK_OFFSET(0x18E3ACC0)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_USESYSTEMDEFAULT_OFFSET UNITYSDK_OFFSET(0x18E3AD40)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_SET_AUTODETECT_OFFSET UNITYSDK_OFFSET(0x18E3AB40)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_SET_BYPASSONLOCAL_OFFSET UNITYSDK_OFFSET(0x18E3ABC0)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_SET_PROXYADDRESS_OFFSET UNITYSDK_OFFSET(0x18E3AC80)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_SET_SCRIPTLOCATION_OFFSET UNITYSDK_OFFSET(0x18E3AD00)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT_SET_USESYSTEMDEFAULT_OFFSET UNITYSDK_OFFSET(0x18E3AD80)
+#define SYSTEM_NET_CONFIGURATION_PROXYELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x18E3AAC0)
 
 namespace System::Net::Configuration
 {
-	inline static constexpr unsigned int ProxyElement_TypeDefinitionIndex = 3057;
+	inline static constexpr unsigned int ProxyElement_TypeDefinitionIndex = 4125;
 
 	class ProxyElement : public ::System::Configuration::ConfigurationElement
 	{
@@ -19,9 +33,59 @@ namespace System::Net::Configuration
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT__CTOR_OFFSET))(this);
 		}
 
+		::System::Net::Configuration::ProxyElement_AutoDetectValues get_AutoDetect()
+		{
+			return ((::System::Net::Configuration::ProxyElement_AutoDetectValues(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_AUTODETECT_OFFSET))(this);
+		}
+
+		::System::Void set_AutoDetect(::System::Net::Configuration::ProxyElement_AutoDetectValues value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::Configuration::ProxyElement_AutoDetectValues))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT_SET_AUTODETECT_OFFSET))(this, value);
+		}
+
+		::System::Net::Configuration::ProxyElement_BypassOnLocalValues get_BypassOnLocal()
+		{
+			return ((::System::Net::Configuration::ProxyElement_BypassOnLocalValues(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_BYPASSONLOCAL_OFFSET))(this);
+		}
+
+		::System::Void set_BypassOnLocal(::System::Net::Configuration::ProxyElement_BypassOnLocalValues value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::Configuration::ProxyElement_BypassOnLocalValues))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT_SET_BYPASSONLOCAL_OFFSET))(this, value);
+		}
+
 		::System::Configuration::ConfigurationPropertyCollection* get_Properties()
 		{
 			return ((::System::Configuration::ConfigurationPropertyCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_PROPERTIES_OFFSET))(this);
+		}
+
+		::System::Uri* get_ProxyAddress()
+		{
+			return ((::System::Uri*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_PROXYADDRESS_OFFSET))(this);
+		}
+
+		::System::Void set_ProxyAddress(::System::Uri* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Uri*))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT_SET_PROXYADDRESS_OFFSET))(this, value);
+		}
+
+		::System::Uri* get_ScriptLocation()
+		{
+			return ((::System::Uri*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_SCRIPTLOCATION_OFFSET))(this);
+		}
+
+		::System::Void set_ScriptLocation(::System::Uri* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Uri*))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT_SET_SCRIPTLOCATION_OFFSET))(this, value);
+		}
+
+		::System::Net::Configuration::ProxyElement_UseSystemDefaultValues get_UseSystemDefault()
+		{
+			return ((::System::Net::Configuration::ProxyElement_UseSystemDefaultValues(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT_GET_USESYSTEMDEFAULT_OFFSET))(this);
+		}
+
+		::System::Void set_UseSystemDefault(::System::Net::Configuration::ProxyElement_UseSystemDefaultValues value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Net::Configuration::ProxyElement_UseSystemDefaultValues))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_PROXYELEMENT_SET_USESYSTEMDEFAULT_OFFSET))(this, value);
 		}
 	};
 }

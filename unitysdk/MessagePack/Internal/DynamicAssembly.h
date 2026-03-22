@@ -5,40 +5,28 @@
 
 namespace System { class String; }
 namespace System { class Type; }
-namespace System::Collections::Immutable { template <typename T> class ImmutableHashSet_1; }
-namespace System::Reflection { class AssemblyName; }
 namespace System::Reflection::Emit { class AssemblyBuilder; }
 namespace System::Reflection::Emit { class ModuleBuilder; }
 namespace System::Reflection::Emit { class TypeBuilder; }
 
-#define MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY_DEFINETYPE_1_OFFSET UNITYSDK_OFFSET(0x1564C6A0)
-#define MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY_DEFINETYPE_2_OFFSET UNITYSDK_OFFSET(0x1564C6C0)
-#define MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY_DEFINETYPE_OFFSET UNITYSDK_OFFSET(0x1564C680)
-#define MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY__CCTOR_OFFSET UNITYSDK_OFFSET(0x1564C6F0)
-#define MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY__CTOR_OFFSET UNITYSDK_OFFSET(0x1564C630)
+#define MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY_DEFINETYPE_1_OFFSET UNITYSDK_OFFSET(0x1915C110)
+#define MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY_DEFINETYPE_2_OFFSET UNITYSDK_OFFSET(0x1915C130)
+#define MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY_DEFINETYPE_OFFSET UNITYSDK_OFFSET(0x1915C0F0)
+#define MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY__CTOR_OFFSET UNITYSDK_OFFSET(0x1915C0B0)
 
 namespace MessagePack::Internal
 {
-	inline static constexpr unsigned int DynamicAssembly_TypeDefinitionIndex = 9587;
+	inline static constexpr unsigned int DynamicAssembly_TypeDefinitionIndex = 25464;
 
 	class DynamicAssembly : public ::System::Object
 	{
 	public:
-		static ::System::Boolean* StaticGet_AvoidDynamicCode()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(DynamicAssembly_TypeDefinitionIndex)->GetStaticField(0x7880);
-		}
-		::System::Reflection::Emit::ModuleBuilder* moduleBuilder; // 0x10
-		::System::Reflection::Emit::AssemblyBuilder* assemblyBuilder; // 0x18
+		::System::Reflection::Emit::AssemblyBuilder* assemblyBuilder; // 0x10
+		::System::Reflection::Emit::ModuleBuilder* moduleBuilder; // 0x18
 
-		::System::Void _ctor(::System::String* moduleName, ::System::Collections::Immutable::ImmutableHashSet_1<::System::Reflection::AssemblyName*>* skipVisibilityChecksTo)
+		::System::Void _ctor(::System::String* moduleName)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Collections::Immutable::ImmutableHashSet_1<::System::Reflection::AssemblyName*>*))((::PBYTE)hIl2Cpp + MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY__CTOR_OFFSET))(this, moduleName, skipVisibilityChecksTo);
-		}
-
-		static ::System::Void _cctor()
-		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY__CCTOR_OFFSET))();
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MESSAGEPACK_INTERNAL_DYNAMICASSEMBLY__CTOR_OFFSET))(this, moduleName);
 		}
 
 		::System::Reflection::Emit::TypeBuilder* DefineType(::System::String* name, ::System::Reflection::TypeAttributes attr)

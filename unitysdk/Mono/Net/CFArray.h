@@ -2,23 +2,32 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Mono/Net/CFObject.h"
 
-#define MONO_NET_CFARRAY_CFARRAYGETCOUNT_OFFSET UNITYSDK_OFFSET(0x17E3CCE0)
-#define MONO_NET_CFARRAY_CFARRAYGETVALUEATINDEX_OFFSET UNITYSDK_OFFSET(0x17E3CE40)
-#define MONO_NET_CFARRAY_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x17E3CD60)
-#define MONO_NET_CFARRAY_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x17E3CED0)
-#define MONO_NET_CFARRAY__CCTOR_OFFSET UNITYSDK_OFFSET(0x17E3C8F0)
-#define MONO_NET_CFARRAY__CTOR_OFFSET UNITYSDK_OFFSET(0x17E3C7D0)
+namespace ObjCRuntimeInternal { class INativeObject; }
+namespace System { template <typename T1, typename T2> class Func_2; }
+
+#define MONO_NET_CFARRAY_CFARRAYCREATE_OFFSET UNITYSDK_OFFSET(0x19673D10)
+#define MONO_NET_CFARRAY_CFARRAYGETCOUNT_OFFSET UNITYSDK_OFFSET(0x19674680)
+#define MONO_NET_CFARRAY_CFARRAYGETVALUEATINDEX_OFFSET UNITYSDK_OFFSET(0x196747E0)
+#define MONO_NET_CFARRAY_CREATEARRAY_1_OFFSET UNITYSDK_OFFSET(0x19674610)
+#define MONO_NET_CFARRAY_CREATEARRAY_OFFSET UNITYSDK_OFFSET(0x19674450)
+#define MONO_NET_CFARRAY_CREATE_1_OFFSET UNITYSDK_OFFSET(0x19674050)
+#define MONO_NET_CFARRAY_CREATE_OFFSET UNITYSDK_OFFSET(0x19674310)
+#define MONO_NET_CFARRAY_FROMNATIVEOBJECTS_OFFSET UNITYSDK_OFFSET(0x19673FE0)
+#define MONO_NET_CFARRAY_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x19674700)
+#define MONO_NET_CFARRAY_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x19674870)
+#define MONO_NET_CFARRAY__CCTOR_OFFSET UNITYSDK_OFFSET(0x19673DB0)
+#define MONO_NET_CFARRAY__CTOR_OFFSET UNITYSDK_OFFSET(0x19673C80)
 
 namespace Mono::Net
 {
-	inline static constexpr unsigned int CFArray_TypeDefinitionIndex = 2389;
+	inline static constexpr unsigned int CFArray_TypeDefinitionIndex = 2586;
 
 	class CFArray : public ::Mono::Net::CFObject
 	{
 	public:
 		static ::System::IntPtr* StaticGet_kCFTypeArrayCallbacks()
 		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFArray_TypeDefinitionIndex)->GetStaticField(0x5120);
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(CFArray_TypeDefinitionIndex)->GetStaticField(0xFE0);
 		}
 
 		::System::Void _ctor(::System::IntPtr handle, ::System::Boolean own)
@@ -29,6 +38,36 @@ namespace Mono::Net
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MONO_NET_CFARRAY__CCTOR_OFFSET))();
+		}
+
+		static ::System::IntPtr CFArrayCreate(::System::IntPtr allocator, ::System::IntPtr values, ::System::IntPtr numValues, ::System::IntPtr callbacks)
+		{
+			return ((::System::IntPtr(*)(::System::IntPtr, ::System::IntPtr, ::System::IntPtr, ::System::IntPtr))((::PBYTE)hIl2Cpp + MONO_NET_CFARRAY_CFARRAYCREATE_OFFSET))(allocator, values, numValues, callbacks);
+		}
+
+		static ::Mono::Net::CFArray* FromNativeObjects(::Il2CppArray<::ObjCRuntimeInternal::INativeObject*>* values)
+		{
+			return ((::Mono::Net::CFArray*(*)(::Il2CppArray<::ObjCRuntimeInternal::INativeObject*>*))((::PBYTE)hIl2Cpp + MONO_NET_CFARRAY_FROMNATIVEOBJECTS_OFFSET))(values);
+		}
+
+		static ::System::IntPtr Create(::Il2CppArray<::System::IntPtr>* values)
+		{
+			return ((::System::IntPtr(*)(::Il2CppArray<::System::IntPtr>*))((::PBYTE)hIl2Cpp + MONO_NET_CFARRAY_CREATE_OFFSET))(values);
+		}
+
+		static ::Mono::Net::CFArray* CreateArray(::Il2CppArray<::System::IntPtr>* values)
+		{
+			return ((::Mono::Net::CFArray*(*)(::Il2CppArray<::System::IntPtr>*))((::PBYTE)hIl2Cpp + MONO_NET_CFARRAY_CREATEARRAY_OFFSET))(values);
+		}
+
+		static ::Mono::Net::CFArray* CreateArray_1(::Il2CppArray<::ObjCRuntimeInternal::INativeObject*>* values)
+		{
+			return ((::Mono::Net::CFArray*(*)(::Il2CppArray<::ObjCRuntimeInternal::INativeObject*>*))((::PBYTE)hIl2Cpp + MONO_NET_CFARRAY_CREATEARRAY_1_OFFSET))(values);
+		}
+
+		static ::System::IntPtr Create_1(::Il2CppArray<::ObjCRuntimeInternal::INativeObject*>* values)
+		{
+			return ((::System::IntPtr(*)(::Il2CppArray<::ObjCRuntimeInternal::INativeObject*>*))((::PBYTE)hIl2Cpp + MONO_NET_CFARRAY_CREATE_1_OFFSET))(values);
 		}
 
 		static ::System::IntPtr CFArrayGetCount(::System::IntPtr handle)

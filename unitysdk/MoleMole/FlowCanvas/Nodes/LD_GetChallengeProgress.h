@@ -1,0 +1,62 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FlowCanvas/Flow.h"
+#include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
+
+class Class_1_A26009A270D71B3D;
+namespace FlowCanvas { class FlowInput; }
+namespace FlowCanvas { class FlowOutput; }
+namespace FlowCanvas { template <typename T> class ValueInput_1; }
+namespace FlowCanvas { template <typename T> class ValueOutput_1; }
+namespace MoleMole::Battle { class ChallengeSubTypeItem; }
+namespace System { class String; }
+
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x990C740)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__CTOR_OFFSET UNITYSDK_OFFSET(0x990C900)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_0_OFFSET UNITYSDK_OFFSET(0x990C930)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_1_OFFSET UNITYSDK_OFFSET(0x990C940)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_2_OFFSET UNITYSDK_OFFSET(0x990C950)
+
+namespace MoleMole::FlowCanvas::Nodes
+{
+	inline static constexpr unsigned int LD_GetChallengeProgress_TypeDefinitionIndex = 59635;
+
+	class LD_GetChallengeProgress : public ::FlowCanvas::Nodes::FlowControlNode
+	{
+	public:
+		::FlowCanvas::FlowOutput* onChangeProgress; // 0xA8
+		::FlowCanvas::FlowInput* updateProgress; // 0xB0
+		::FlowCanvas::ValueInput_1<::MoleMole::Battle::ChallengeSubTypeItem*>* challengeSubTypeItem; // 0xB8
+		::FlowCanvas::ValueInput_1<::Class_1_A26009A270D71B3D*>* challengeItem; // 0xC0
+		::FlowCanvas::ValueOutput_1<::System::String*>* stringProgressOutput; // 0xC8
+		::System::String* _cacheStrProg; // 0xD0
+		::System::Single _preProg; // 0xD8
+		::System::Boolean _hasFirstCall; // 0xDC
+		::System::Single _cacheProg; // 0xE0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__CTOR_OFFSET))(this);
+		}
+
+		::System::Void RegisterPorts()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS_REGISTERPORTS_OFFSET))(this);
+		}
+
+		::System::Single _RegisterPorts_b__9_0()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_0_OFFSET))(this);
+		}
+
+		::System::String* _RegisterPorts_b__9_1()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_1_OFFSET))(this);
+		}
+
+		::System::Void _RegisterPorts_b__9_2(::FlowCanvas::Flow flow)
+		{
+			return ((::System::Void(*)(::PVOID, ::FlowCanvas::Flow))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_2_OFFSET))(this, flow);
+		}
+	};
+}

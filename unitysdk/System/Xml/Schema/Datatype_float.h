@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Xml/Schema/Datatype_anySimpleType.h"
+#include "unitysdk/System/Xml/Schema/RestrictionFlags.h"
 #include "unitysdk/System/Xml/Schema/XmlSchemaWhiteSpace.h"
 #include "unitysdk/System/Xml/Schema/XmlTypeCode.h"
 
@@ -14,31 +15,32 @@ namespace System::Xml::Schema { class FacetsChecker; }
 namespace System::Xml::Schema { class XmlSchemaType; }
 namespace System::Xml::Schema { class XmlValueConverter; }
 
-#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_COMPARE_OFFSET UNITYSDK_OFFSET(0x17D6CEC0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x17D6CD30)
-#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x17D6CEB0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x17D6CD80)
-#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D6CE50)
-#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x17D6CDE0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x17D6CDF0)
-#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x17D6D010)
-#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D6D190)
-#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT__CTOR_OFFSET UNITYSDK_OFFSET(0x17D63BF0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_COMPARE_OFFSET UNITYSDK_OFFSET(0x1A681CF0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_CREATEVALUECONVERTER_OFFSET UNITYSDK_OFFSET(0x1A681B50)
+#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_BUILTINWHITESPACEFACET_OFFSET UNITYSDK_OFFSET(0x1A681CD0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_FACETSCHECKER_OFFSET UNITYSDK_OFFSET(0x1A681BA0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_LISTVALUETYPE_OFFSET UNITYSDK_OFFSET(0x1A681C70)
+#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_TYPECODE_OFFSET UNITYSDK_OFFSET(0x1A681C00)
+#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_VALIDRESTRICTIONFLAGS_OFFSET UNITYSDK_OFFSET(0x1A681CE0)
+#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_VALUETYPE_OFFSET UNITYSDK_OFFSET(0x1A681C10)
+#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_TRYPARSEVALUE_OFFSET UNITYSDK_OFFSET(0x1A681E40)
+#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A682060)
+#define SYSTEM_XML_SCHEMA_DATATYPE_FLOAT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A681FC0)
 
 namespace System::Xml::Schema
 {
-	inline static constexpr unsigned int Datatype_float_TypeDefinitionIndex = 2081;
+	inline static constexpr unsigned int Datatype_float_TypeDefinitionIndex = 1996;
 
 	class Datatype_float : public ::System::Xml::Schema::Datatype_anySimpleType
 	{
 	public:
 		static ::System::Type** StaticGet_listValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_float_TypeDefinitionIndex)->GetStaticField(0x141A0);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_float_TypeDefinitionIndex)->GetStaticField(0x2290);
 		}
 		static ::System::Type** StaticGet_atomicValueType()
 		{
-			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_float_TypeDefinitionIndex)->GetStaticField(0x141A8);
+			return (::System::Type**)Il2CppClass::FromTypeDefinitionIndex(Datatype_float_TypeDefinitionIndex)->GetStaticField(0x2298);
 		}
 
 		::System::Void _ctor()
@@ -79,6 +81,11 @@ namespace System::Xml::Schema
 		::System::Xml::Schema::XmlSchemaWhiteSpace get_BuiltInWhitespaceFacet()
 		{
 			return ((::System::Xml::Schema::XmlSchemaWhiteSpace(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_BUILTINWHITESPACEFACET_OFFSET))(this);
+		}
+
+		::System::Xml::Schema::RestrictionFlags get_ValidRestrictionFlags()
+		{
+			return ((::System::Xml::Schema::RestrictionFlags(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SCHEMA_DATATYPE_FLOAT_GET_VALIDRESTRICTIONFLAGS_OFFSET))(this);
 		}
 
 		::System::Int32 Compare(::System::Object* value1, ::System::Object* value2)

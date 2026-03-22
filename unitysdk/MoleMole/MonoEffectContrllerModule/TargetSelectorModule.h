@@ -1,0 +1,64 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/MonoEffectContrllerModule/EndShape.h"
+#include "unitysdk/System/ValueType.h"
+
+class Class_0_16E4307DCC419505_322;
+class Class_1_2DDAC2F6C97EB8AD;
+namespace MoleMole::MonoEffectContrllerModule { class MonoEffectPluginController_Class_1_E5308BE9EEBA8B55; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_METHOD_2_5C3FF0B49C55F5F0_OFFSET UNITYSDK_OFFSET(0x3B7AD0)
+#define MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_METHOD_2_5DB6065F6B429689_OFFSET UNITYSDK_OFFSET(0x3B7AF0)
+#define MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x3B7A70)
+#define MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_ONCREATECONTROLLER_OFFSET UNITYSDK_OFFSET(0x3B7870)
+#define MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_ONDESTROYCONTROLLER_OFFSET UNITYSDK_OFFSET(0x3B7920)
+#define MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_ONUPDATECONTROLLER_OFFSET UNITYSDK_OFFSET(0x3B7A00)
+
+namespace MoleMole::MonoEffectContrllerModule
+{
+	inline static constexpr unsigned int TargetSelectorModule_TypeDefinitionIndex = 73454;
+
+	struct alignas(8) TargetSelectorModule
+	{
+		::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_322*>* FeatureTargets; // 0x10
+		::Class_0_16E4307DCC419505_322* MainTarget; // 0x18
+		::System::Collections::Generic::List_1<::UnityEngine::Transform*>* EndPoint; // 0x20
+		::System::Boolean EnableEndShape; // 0x28
+		::MoleMole::MonoEffectContrllerModule::EndShape EndShape; // 0x2C
+		::System::Int32 _targetIndex; // 0x48
+
+		::System::Void OnCreateController(::MoleMole::MonoEffectContrllerModule::MonoEffectPluginController_Class_1_E5308BE9EEBA8B55* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoEffectContrllerModule::MonoEffectPluginController_Class_1_E5308BE9EEBA8B55*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_ONCREATECONTROLLER_OFFSET))(this, a1);
+		}
+
+		::System::Void OnDestroyController(::MoleMole::MonoEffectContrllerModule::MonoEffectPluginController_Class_1_E5308BE9EEBA8B55* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoEffectContrllerModule::MonoEffectPluginController_Class_1_E5308BE9EEBA8B55*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_ONDESTROYCONTROLLER_OFFSET))(this, a1);
+		}
+
+		::System::Void OnUpdateController(::MoleMole::MonoEffectContrllerModule::MonoEffectPluginController_Class_1_E5308BE9EEBA8B55* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoEffectContrllerModule::MonoEffectPluginController_Class_1_E5308BE9EEBA8B55*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_ONUPDATECONTROLLER_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_2_CA373AA1C7054598()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+		}
+
+		/*
+		::Struct_2_F4BEA7B577DD61FE Method_2_5C3FF0B49C55F5F0(::Class_1_2DDAC2F6C97EB8AD* a1)
+		{
+			return ((::Struct_2_F4BEA7B577DD61FE(*)(::PVOID, ::Class_1_2DDAC2F6C97EB8AD*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_METHOD_2_5C3FF0B49C55F5F0_OFFSET))(this, a1);
+		}
+		*/
+
+		::Class_0_16E4307DCC419505_322* Method_2_5DB6065F6B429689()
+		{
+			return ((::Class_0_16E4307DCC419505_322*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTCONTRLLERMODULE_TARGETSELECTORMODULE_METHOD_2_5DB6065F6B429689_OFFSET))(this);
+		}
+	};
+}

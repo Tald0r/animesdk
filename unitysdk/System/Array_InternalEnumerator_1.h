@@ -7,7 +7,7 @@ namespace System { class Object; }
 
 namespace System
 {
-	inline static constexpr unsigned int Array_InternalEnumerator_1_TypeDefinitionIndex = 138;
+	inline static constexpr unsigned int Array_InternalEnumerator_1_TypeDefinitionIndex = 128;
 
 	template <typename T>
 	struct Array_InternalEnumerator_1

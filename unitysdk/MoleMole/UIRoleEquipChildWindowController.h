@@ -1,0 +1,376 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_03024D6472FC8F3A.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_2_055450060950DB07_3;
+class Class_2_44CD689CB0C62F50;
+class Class_2_888829D5F4E4EBE0;
+class Class_2_D89CCC627A66D0AD;
+class Class_2_EDF489C81E88278A;
+class Class_2_EFE73415D96E8105;
+namespace MoleMole { class MonoGamepadModule; }
+namespace MoleMole { class MonoGamepadNestedListDelegate; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIRoleInfoPageController_AnimationFadeOutFadeInGroup; }
+namespace System { class Action; }
+namespace System { class EventArgs; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_CHANGEMATERIAL_OFFSET UNITYSDK_OFFSET(0xA3F5620)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_CHANGESIGNATUREHANDLE_OFFSET UNITYSDK_OFFSET(0xA3F7FF0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_GETROLEINFOEQUIPWIDGETGAMEPADNESTLIST_OFFSET UNITYSDK_OFFSET(0xA3F4150)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_GETWEAPONTOGGLEUNLOCK_OFFSET UNITYSDK_OFFSET(0xA3F5850)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_GET_TRIGGERNEWBIEONSHOW_OFFSET UNITYSDK_OFFSET(0xA3F2970)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xA3F2960)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_HIDETOGGLECONSOLEKEY_OFFSET UNITYSDK_OFFSET(0xA3F7990)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_INITANIMGROUP_OFFSET UNITYSDK_OFFSET(0xA3F29F0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_INITVIEW_OFFSET UNITYSDK_OFFSET(0xA3F2ED0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_INITWEAPONVIDEOSCREEN_OFFSET UNITYSDK_OFFSET(0xA3F57D0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ISTRAININGROOM_OFFSET UNITYSDK_OFFSET(0xA3F7E10)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_NESTEDLISTSELECTITEMRECURSIVELY_OFFSET UNITYSDK_OFFSET(0xA3F44E0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONCLICKEQUIPSLOTBTN_OFFSET UNITYSDK_OFFSET(0xA3F8880)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONCLICKWEAPONBTN_OFFSET UNITYSDK_OFFSET(0xA3F86F0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3F3340)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONEQUIPCHANGED_OFFSET UNITYSDK_OFFSET(0xA3F3C90)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xA3F3D70)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3F3AC0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3F2E50)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3F33E0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONWEAPONTOGGLEHANDLE_OFFSET UNITYSDK_OFFSET(0xA3F7AB0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_PLAYAUTODRESSANIM_OFFSET UNITYSDK_OFFSET(0xA3F8500)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_PROCESSUIAVATAR_OFFSET UNITYSDK_OFFSET(0xA3F3D00)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_REFRESHICONVIEW_OFFSET UNITYSDK_OFFSET(0xA3F5B20)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_REFRESHROLEINFOEQUIPWIDGETWITHWEAPONGAMEPADSELECTINFO_OFFSET UNITYSDK_OFFSET(0xA3F46C0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xA3F36E0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_RESETALLSLOTSELECTEDSTATE_OFFSET UNITYSDK_OFFSET(0xA3F8340)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_RESETROLEINFOEQUIPWIDGETWITHWEAPONGAMEPADENABLED_OFFSET UNITYSDK_OFFSET(0xA3F4300)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETAUTODRESSMODE_OFFSET UNITYSDK_OFFSET(0xA3F5350)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETAVATARDATA_OFFSET UNITYSDK_OFFSET(0xA3F4D10)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETBLOCKSELECTEDANIM_OFFSET UNITYSDK_OFFSET(0xA3F4E20)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETBLOCKWEAPON_OFFSET UNITYSDK_OFFSET(0xA3F4FD0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETCLICKEQUIPCALLBACK_OFFSET UNITYSDK_OFFSET(0xA3F82D0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETCLICKWEAPONCALLBACK_OFFSET UNITYSDK_OFFSET(0xA3F8260)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETEQUIPSLOTSELECTED_OFFSET UNITYSDK_OFFSET(0xA3F4920)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETFORGEVIEW_OFFSET UNITYSDK_OFFSET(0xA3F5110)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETGAMEPADSELECTEQUIPCALLBACK_OFFSET UNITYSDK_OFFSET(0xA3F81F0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETGAMEPADSELECTWEAPONCALLBACK_OFFSET UNITYSDK_OFFSET(0xA3F8180)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETLVINFOVISIBLITY_OFFSET UNITYSDK_OFFSET(0xA3F53C0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETROLEINFOEQUIPWIDGETGAMEPADENABLED_OFFSET UNITYSDK_OFFSET(0xA3F40C0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETROLEINFOEQUIPWIDGETWITHWEAPONGAMEPADENABLED_OFFSET UNITYSDK_OFFSET(0xA3F4270)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETTOGGLESTATE_OFFSET UNITYSDK_OFFSET(0xA3F59F0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETWEAPONSLOTSELECTED_OFFSET UNITYSDK_OFFSET(0xA3F4880)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SHOWTOGGLECONSOLEKEY_OFFSET UNITYSDK_OFFSET(0xA3F7A20)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA3F8E00)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER__ONUIOPEN_B__8_0_OFFSET UNITYSDK_OFFSET(0xA3F8E80)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER__ONUIOPEN_B__8_1_OFFSET UNITYSDK_OFFSET(0xA3F8E90)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER__PLAYAUTODRESSANIM_B__41_0_OFFSET UNITYSDK_OFFSET(0xA3F8EA0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_GET_TRIGGERNEWBIEONSHOW_OFFSET UNITYSDK_OFFSET(0xA3F8FA0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xA3F8FB0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET UNITYSDK_OFFSET(0xA3F9020)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xA3F90A0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xA3F90B0)
+#define MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xA3F90C0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIRoleEquipChildWindowController_TypeDefinitionIndex = 63631;
+
+	class UIRoleEquipChildWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::MoleMole::UIRoleInfoPageController_AnimationFadeOutFadeInGroup* m_animGroup; // 0x2F8
+		::Class_2_055450060950DB07_3* _view; // 0x300
+		::Class_2_D89CCC627A66D0AD* _avatarData; // 0x308
+		::Class_2_888829D5F4E4EBE0* _equipmentDataProxy; // 0x310
+		::Class_2_44CD689CB0C62F50* _robotDataProxy; // 0x318
+		::System::Collections::Generic::List_1<::Class_2_EDF489C81E88278A*>* _equipSlotItems; // 0x320
+		::Class_2_EFE73415D96E8105* _weaponSlotItem; // 0x328
+		::Il2CppArray<::System::Int32>* _defalutGamepadInitPosition; // 0x330
+		::System::Int32 _curSelectedEquipOrWeaponSlotIndex; // 0x338
+		::System::Action_1<::System::Int32>* _clickEquipAction; // 0x340
+		::System::Action* _clickWeaponAction; // 0x348
+		::System::Action_1<::System::Int32>* _gamepadSelectEquipAction; // 0x350
+		::System::Action* _gamepadSelectWeaponAction; // 0x358
+		::System::Boolean _isForgeView; // 0x360
+		::System::Boolean _isAutoDressMode; // 0x361
+		::System::Boolean _previewMode; // 0x362
+		::System::Boolean _friendPreviewMode; // 0x363
+		::System::Boolean isWeaponToggleOpen; // 0x364
+		::System::Boolean _isInBattle; // 0x365
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Boolean get_TriggerNewbieOnShow()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_GET_TRIGGERNEWBIEONSHOW_OFFSET))(this);
+		}
+
+		::System::Void InitAnimGroup()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_INITANIMGROUP_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnEquipChanged(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONEQUIPCHANGED_OFFSET))(this, args);
+		}
+
+		::System::Void ProcessUIAvatar(::System::Int32 avatarConfig, ::System::Int32 showTypeIndex)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_PROCESSUIAVATAR_OFFSET))(this, avatarConfig, showTypeIndex);
+		}
+
+		::System::Void OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* gamepadModule, ::System::Int32 index, ::UnityEngine::Transform* trans, ::Enum_3_03024D6472FC8F3A result)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, gamepadModule, index, trans, result);
+		}
+
+		::System::Void SetRoleInfoEquipWidgetGamepadEnabled(::System::Boolean isEnabled)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETROLEINFOEQUIPWIDGETGAMEPADENABLED_OFFSET))(this, isEnabled);
+		}
+
+		::MoleMole::MonoGamepadNestedListDelegate* GetRoleInfoEquipWidgetGamepadNestList()
+		{
+			return ((::MoleMole::MonoGamepadNestedListDelegate*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_GETROLEINFOEQUIPWIDGETGAMEPADNESTLIST_OFFSET))(this);
+		}
+
+		::System::Void SetRoleInfoEquipWidgetWithWeaponGamepadEnabled(::System::Boolean isEnabled)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETROLEINFOEQUIPWIDGETWITHWEAPONGAMEPADENABLED_OFFSET))(this, isEnabled);
+		}
+
+		::System::Void ResetRoleInfoEquipWidgetWithWeaponGamepadEnabled()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_RESETROLEINFOEQUIPWIDGETWITHWEAPONGAMEPADENABLED_OFFSET))(this);
+		}
+
+		::System::Void NestedListSelectItemRecursively(::Il2CppArray<::System::Int32>* position)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_NESTEDLISTSELECTITEMRECURSIVELY_OFFSET))(this, position);
+		}
+
+		::System::Void RefreshRoleInfoEquipWidgetWithWeaponGamepadSelectInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_REFRESHROLEINFOEQUIPWIDGETWITHWEAPONGAMEPADSELECTINFO_OFFSET))(this);
+		}
+
+		::System::Void SetAvatarData(::Class_2_D89CCC627A66D0AD* avatarData, ::System::Boolean previewMode, ::System::Boolean friendPreviewMode)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_D89CCC627A66D0AD*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETAVATARDATA_OFFSET))(this, avatarData, previewMode, friendPreviewMode);
+		}
+
+		::System::Void SetBlockSelectedAnim(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETBLOCKSELECTEDANIM_OFFSET))(this, state);
+		}
+
+		::System::Void SetBlockWeapon(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETBLOCKWEAPON_OFFSET))(this, state);
+		}
+
+		::System::Void SetForgeView(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETFORGEVIEW_OFFSET))(this, state);
+		}
+
+		::System::Void SetAutoDressMode(::System::Boolean autoDressMode)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETAUTODRESSMODE_OFFSET))(this, autoDressMode);
+		}
+
+		::System::Void SetLvInfoVisiblity(::System::Boolean visible)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETLVINFOVISIBLITY_OFFSET))(this, visible);
+		}
+
+		::System::Void ChangeMaterial(::System::Boolean isHighLight)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_CHANGEMATERIAL_OFFSET))(this, isHighLight);
+		}
+
+		::System::Void InitWeaponVideoScreen()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_INITWEAPONVIDEOSCREEN_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this, init);
+		}
+
+		::System::Void HideToggleConsoleKey()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_HIDETOGGLECONSOLEKEY_OFFSET))(this);
+		}
+
+		::System::Void ShowToggleConsoleKey()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SHOWTOGGLECONSOLEKEY_OFFSET))(this);
+		}
+
+		::System::Boolean GetWeaponToggleUnlock()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_GETWEAPONTOGGLEUNLOCK_OFFSET))(this);
+		}
+
+		::System::Void OnWeaponToggleHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONWEAPONTOGGLEHANDLE_OFFSET))(this);
+		}
+
+		::System::Boolean IsTrainingRoom()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ISTRAININGROOM_OFFSET))(this);
+		}
+
+		::System::Void ChangeSignatureHandle()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_CHANGESIGNATUREHANDLE_OFFSET))(this);
+		}
+
+		::System::Void SetToggleState(::System::Boolean isOpen, ::System::Boolean withAni)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETTOGGLESTATE_OFFSET))(this, isOpen, withAni);
+		}
+
+		::System::Void SetGamepadSelectWeaponCallback(::System::Action* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETGAMEPADSELECTWEAPONCALLBACK_OFFSET))(this, callback);
+		}
+
+		::System::Void SetGamepadSelectEquipCallback(::System::Action_1<::System::Int32>* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETGAMEPADSELECTEQUIPCALLBACK_OFFSET))(this, callback);
+		}
+
+		::System::Void SetClickWeaponCallback(::System::Action* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETCLICKWEAPONCALLBACK_OFFSET))(this, callback);
+		}
+
+		::System::Void SetClickEquipCallback(::System::Action_1<::System::Int32>* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETCLICKEQUIPCALLBACK_OFFSET))(this, callback);
+		}
+
+		::System::Void SetWeaponSlotSelected(::System::Boolean state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETWEAPONSLOTSELECTED_OFFSET))(this, state);
+		}
+
+		::System::Void SetEquipSlotSelected(::System::Boolean state, ::System::Int32 index, ::System::Boolean triggerConsole, ::System::Boolean bForce)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Int32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_SETEQUIPSLOTSELECTED_OFFSET))(this, state, index, triggerConsole, bForce);
+		}
+
+		::System::Void PlayAutoDressAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_PLAYAUTODRESSANIM_OFFSET))(this);
+		}
+
+		::System::Void InitView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_INITVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnClickWeaponBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONCLICKWEAPONBTN_OFFSET))(this);
+		}
+
+		::System::Void OnClickEquipSlotBtn(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_ONCLICKEQUIPSLOTBTN_OFFSET))(this, index);
+		}
+
+		::System::Void ResetAllSlotSelectedState(::System::Boolean playAnim)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_RESETALLSLOTSELECTEDSTATE_OFFSET))(this, playAnim);
+		}
+
+		::System::Void RefreshIconView(::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER_REFRESHICONVIEW_OFFSET))(this, init);
+		}
+
+		::System::Void _OnUIOpen_b__8_0(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER__ONUIOPEN_B__8_0_OFFSET))(this, args);
+		}
+
+		::System::Void _OnUIOpen_b__8_1(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER__ONUIOPEN_B__8_1_OFFSET))(this, args);
+		}
+
+		::System::Void _PlayAutoDressAnim_b__41_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER__PLAYAUTODRESSANIM_B__41_0_OFFSET))(this);
+		}
+
+		::System::Boolean __base_get_TriggerNewbieOnShow()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_GET_TRIGGERNEWBIEONSHOW_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnGamepadModuleSelectIndex(::MoleMole::MonoGamepadModule* P0, ::System::Int32 P1, ::UnityEngine::Transform* P2, ::Enum_3_03024D6472FC8F3A P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoGamepadModule*, ::System::Int32, ::UnityEngine::Transform*, ::Enum_3_03024D6472FC8F3A))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_ONGAMEPADMODULESELECTINDEX_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEEQUIPCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

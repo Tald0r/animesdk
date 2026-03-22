@@ -1,9 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
-#include "unitysdk/UnityEngine/Color.h"
+#include "unitysdk/UnityEngine/FontStyle.h"
 #include "unitysdk/UnityEngine/ImagePosition.h"
 #include "unitysdk/UnityEngine/Rect.h"
+#include "unitysdk/UnityEngine/TextAnchor.h"
+#include "unitysdk/UnityEngine/TextClipping.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
 namespace System { class String; }
@@ -12,96 +14,115 @@ namespace UnityEngine { class GUIContent; }
 namespace UnityEngine { class GUIStyleState; }
 namespace UnityEngine { class RectOffset; }
 
-#define UNITYENGINE_GUISTYLE_CALCHEIGHT_OFFSET UNITYSDK_OFFSET(0x1826A540)
-#define UNITYENGINE_GUISTYLE_CALCMINMAXWIDTH_OFFSET UNITYSDK_OFFSET(0x1826A550)
-#define UNITYENGINE_GUISTYLE_CALCSIZEWITHCONSTRAINTS_OFFSET UNITYSDK_OFFSET(0x182654A0)
-#define UNITYENGINE_GUISTYLE_CALCSIZE_OFFSET UNITYSDK_OFFSET(0x1826A510)
-#define UNITYENGINE_GUISTYLE_DRAWCURSOR_OFFSET UNITYSDK_OFFSET(0x18269EA0)
-#define UNITYENGINE_GUISTYLE_DRAWWITHTEXTSELECTION_1_OFFSET UNITYSDK_OFFSET(0x1826A310)
-#define UNITYENGINE_GUISTYLE_DRAWWITHTEXTSELECTION_2_OFFSET UNITYSDK_OFFSET(0x1826A460)
-#define UNITYENGINE_GUISTYLE_DRAWWITHTEXTSELECTION_OFFSET UNITYSDK_OFFSET(0x1826A070)
-#define UNITYENGINE_GUISTYLE_DRAW_1_OFFSET UNITYSDK_OFFSET(0x182589B0)
-#define UNITYENGINE_GUISTYLE_DRAW_2_OFFSET UNITYSDK_OFFSET(0x1825A4B0)
-#define UNITYENGINE_GUISTYLE_DRAW_3_OFFSET UNITYSDK_OFFSET(0x182574B0)
-#define UNITYENGINE_GUISTYLE_DRAW_4_OFFSET UNITYSDK_OFFSET(0x18254F10)
-#define UNITYENGINE_GUISTYLE_DRAW_5_OFFSET UNITYSDK_OFFSET(0x18269DB0)
-#define UNITYENGINE_GUISTYLE_DRAW_OFFSET UNITYSDK_OFFSET(0x1825B990)
-#define UNITYENGINE_GUISTYLE_FINALIZE_OFFSET UNITYSDK_OFFSET(0x18269BE0)
-#define UNITYENGINE_GUISTYLE_GETCURSORPIXELPOSITION_OFFSET UNITYSDK_OFFSET(0x1826A4A0)
-#define UNITYENGINE_GUISTYLE_GETCURSORSTRINGINDEX_OFFSET UNITYSDK_OFFSET(0x1826A4E0)
-#define UNITYENGINE_GUISTYLE_GETRECTOFFSETPTR_OFFSET UNITYSDK_OFFSET(0x182699C0)
-#define UNITYENGINE_GUISTYLE_GETSTYLESTATEPTR_OFFSET UNITYSDK_OFFSET(0x182699B0)
-#define UNITYENGINE_GUISTYLE_GET_CONTENTOFFSET_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269920)
-#define UNITYENGINE_GUISTYLE_GET_CONTENTOFFSET_OFFSET UNITYSDK_OFFSET(0x182698F0)
-#define UNITYENGINE_GUISTYLE_GET_FIXEDHEIGHT_OFFSET UNITYSDK_OFFSET(0x1825A040)
-#define UNITYENGINE_GUISTYLE_GET_FIXEDWIDTH_OFFSET UNITYSDK_OFFSET(0x1825A030)
-#define UNITYENGINE_GUISTYLE_GET_FONT_OFFSET UNITYSDK_OFFSET(0x18257BC0)
-#define UNITYENGINE_GUISTYLE_GET_IMAGEPOSITION_OFFSET UNITYSDK_OFFSET(0x182698D0)
-#define UNITYENGINE_GUISTYLE_GET_ISHEIGHTDEPENDANTONWIDTH_OFFSET UNITYSDK_OFFSET(0x18265360)
-#define UNITYENGINE_GUISTYLE_GET_LINEHEIGHT_OFFSET UNITYSDK_OFFSET(0x18269CD0)
-#define UNITYENGINE_GUISTYLE_GET_MARGIN_OFFSET UNITYSDK_OFFSET(0x1825B950)
-#define UNITYENGINE_GUISTYLE_GET_NAME_OFFSET UNITYSDK_OFFSET(0x18259050)
-#define UNITYENGINE_GUISTYLE_GET_NONE_OFFSET UNITYSDK_OFFSET(0x1825A400)
-#define UNITYENGINE_GUISTYLE_GET_NORMAL_OFFSET UNITYSDK_OFFSET(0x18268FD0)
-#define UNITYENGINE_GUISTYLE_GET_PADDING_OFFSET UNITYSDK_OFFSET(0x18261D50)
-#define UNITYENGINE_GUISTYLE_GET_RAWNAME_OFFSET UNITYSDK_OFFSET(0x182698B0)
-#define UNITYENGINE_GUISTYLE_GET_STRETCHHEIGHT_OFFSET UNITYSDK_OFFSET(0x18260460)
-#define UNITYENGINE_GUISTYLE_GET_STRETCHWIDTH_OFFSET UNITYSDK_OFFSET(0x18260450)
-#define UNITYENGINE_GUISTYLE_GET_WORDWRAP_OFFSET UNITYSDK_OFFSET(0x182698E0)
-#define UNITYENGINE_GUISTYLE_INTERNAL_CALCHEIGHT_OFFSET UNITYSDK_OFFSET(0x18269B70)
-#define UNITYENGINE_GUISTYLE_INTERNAL_CALCMINMAXWIDTH_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269BB0)
-#define UNITYENGINE_GUISTYLE_INTERNAL_CALCMINMAXWIDTH_OFFSET UNITYSDK_OFFSET(0x18269B80)
-#define UNITYENGINE_GUISTYLE_INTERNAL_CALCSIZEWITHCONSTRAINTS_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269B60)
-#define UNITYENGINE_GUISTYLE_INTERNAL_CALCSIZEWITHCONSTRAINTS_OFFSET UNITYSDK_OFFSET(0x18269B30)
-#define UNITYENGINE_GUISTYLE_INTERNAL_CALCSIZE_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269B20)
-#define UNITYENGINE_GUISTYLE_INTERNAL_CALCSIZE_OFFSET UNITYSDK_OFFSET(0x18269AF0)
-#define UNITYENGINE_GUISTYLE_INTERNAL_CREATE_OFFSET UNITYSDK_OFFSET(0x18269990)
-#define UNITYENGINE_GUISTYLE_INTERNAL_DESTROY_OFFSET UNITYSDK_OFFSET(0x182699A0)
-#define UNITYENGINE_GUISTYLE_INTERNAL_DRAW2_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269A10)
-#define UNITYENGINE_GUISTYLE_INTERNAL_DRAW2_OFFSET UNITYSDK_OFFSET(0x18269A00)
-#define UNITYENGINE_GUISTYLE_INTERNAL_DRAWCURSOR_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269A30)
-#define UNITYENGINE_GUISTYLE_INTERNAL_DRAWCURSOR_OFFSET UNITYSDK_OFFSET(0x18269A20)
-#define UNITYENGINE_GUISTYLE_INTERNAL_DRAWWITHTEXTSELECTION_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269A50)
-#define UNITYENGINE_GUISTYLE_INTERNAL_DRAWWITHTEXTSELECTION_OFFSET UNITYSDK_OFFSET(0x18269A40)
-#define UNITYENGINE_GUISTYLE_INTERNAL_DRAW_INJECTED_OFFSET UNITYSDK_OFFSET(0x182699F0)
-#define UNITYENGINE_GUISTYLE_INTERNAL_DRAW_OFFSET UNITYSDK_OFFSET(0x182699E0)
-#define UNITYENGINE_GUISTYLE_INTERNAL_GETCURSORFLASHOFFSET_OFFSET UNITYSDK_OFFSET(0x18269BD0)
-#define UNITYENGINE_GUISTYLE_INTERNAL_GETCURSORPIXELPOSITION_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269A90)
-#define UNITYENGINE_GUISTYLE_INTERNAL_GETCURSORPIXELPOSITION_OFFSET UNITYSDK_OFFSET(0x18269A60)
-#define UNITYENGINE_GUISTYLE_INTERNAL_GETCURSORSTRINGINDEX_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269AC0)
-#define UNITYENGINE_GUISTYLE_INTERNAL_GETCURSORSTRINGINDEX_OFFSET UNITYSDK_OFFSET(0x18269AA0)
-#define UNITYENGINE_GUISTYLE_INTERNAL_GETLINEHEIGHT_OFFSET UNITYSDK_OFFSET(0x182699D0)
-#define UNITYENGINE_GUISTYLE_INTERNAL_GETSELECTEDRENDEREDTEXT_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269AE0)
-#define UNITYENGINE_GUISTYLE_INTERNAL_GETSELECTEDRENDEREDTEXT_OFFSET UNITYSDK_OFFSET(0x18269AD0)
-#define UNITYENGINE_GUISTYLE_SETDEFAULTFONT_OFFSET UNITYSDK_OFFSET(0x182662D0)
-#define UNITYENGINE_GUISTYLE_SETMOUSETOOLTIP_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269BC0)
-#define UNITYENGINE_GUISTYLE_SETMOUSETOOLTIP_OFFSET UNITYSDK_OFFSET(0x18258A40)
-#define UNITYENGINE_GUISTYLE_SET_CONTENTOFFSET_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269950)
-#define UNITYENGINE_GUISTYLE_SET_CONTENTOFFSET_OFFSET UNITYSDK_OFFSET(0x18269930)
-#define UNITYENGINE_GUISTYLE_SET_INTERNAL_CLIPOFFSET_INJECTED_OFFSET UNITYSDK_OFFSET(0x18269980)
-#define UNITYENGINE_GUISTYLE_SET_INTERNAL_CLIPOFFSET_OFFSET UNITYSDK_OFFSET(0x18269960)
-#define UNITYENGINE_GUISTYLE_SET_NAME_OFFSET UNITYSDK_OFFSET(0x18267720)
-#define UNITYENGINE_GUISTYLE_SET_RAWNAME_OFFSET UNITYSDK_OFFSET(0x182698C0)
-#define UNITYENGINE_GUISTYLE_SET_STRETCHHEIGHT_OFFSET UNITYSDK_OFFSET(0x18268FC0)
-#define UNITYENGINE_GUISTYLE_SET_STRETCHWIDTH_OFFSET UNITYSDK_OFFSET(0x18265790)
-#define UNITYENGINE_GUISTYLE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1826A590)
-#define UNITYENGINE_GUISTYLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1826A700)
-#define UNITYENGINE_GUISTYLE__CTOR_OFFSET UNITYSDK_OFFSET(0x18265750)
+#define UNITYENGINE_GUISTYLE_ASSIGNRECTOFFSET_OFFSET UNITYSDK_OFFSET(0x19C44A20)
+#define UNITYENGINE_GUISTYLE_ASSIGNSTYLESTATE_OFFSET UNITYSDK_OFFSET(0x19C44A00)
+#define UNITYENGINE_GUISTYLE_CALCHEIGHT_OFFSET UNITYSDK_OFFSET(0x19C454F0)
+#define UNITYENGINE_GUISTYLE_CALCMINMAXWIDTH_OFFSET UNITYSDK_OFFSET(0x19C45500)
+#define UNITYENGINE_GUISTYLE_CALCSIZEWITHCONSTRAINTS_OFFSET UNITYSDK_OFFSET(0x19C40A70)
+#define UNITYENGINE_GUISTYLE_CALCSIZE_OFFSET UNITYSDK_OFFSET(0x19C454C0)
+#define UNITYENGINE_GUISTYLE_DRAW_1_OFFSET UNITYSDK_OFFSET(0x19C32840)
+#define UNITYENGINE_GUISTYLE_DRAW_2_OFFSET UNITYSDK_OFFSET(0x19C34880)
+#define UNITYENGINE_GUISTYLE_DRAW_3_OFFSET UNITYSDK_OFFSET(0x19C315E0)
+#define UNITYENGINE_GUISTYLE_DRAW_4_OFFSET UNITYSDK_OFFSET(0x19C45210)
+#define UNITYENGINE_GUISTYLE_DRAW_OFFSET UNITYSDK_OFFSET(0x19C35EC0)
+#define UNITYENGINE_GUISTYLE_FINALIZE_OFFSET UNITYSDK_OFFSET(0x19C44CC0)
+#define UNITYENGINE_GUISTYLE_GETRECTOFFSETPTR_OFFSET UNITYSDK_OFFSET(0x19C44A10)
+#define UNITYENGINE_GUISTYLE_GETSTYLESTATEPTR_OFFSET UNITYSDK_OFFSET(0x19C449F0)
+#define UNITYENGINE_GUISTYLE_GET_ACTIVE_OFFSET UNITYSDK_OFFSET(0x19C44E30)
+#define UNITYENGINE_GUISTYLE_GET_ALIGNMENT_OFFSET UNITYSDK_OFFSET(0x19C44870)
+#define UNITYENGINE_GUISTYLE_GET_BORDER_OFFSET UNITYSDK_OFFSET(0x19C450D0)
+#define UNITYENGINE_GUISTYLE_GET_CLIPPING_OFFSET UNITYSDK_OFFSET(0x19C448B0)
+#define UNITYENGINE_GUISTYLE_GET_CONTENTOFFSET_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C44900)
+#define UNITYENGINE_GUISTYLE_GET_CONTENTOFFSET_OFFSET UNITYSDK_OFFSET(0x19C448D0)
+#define UNITYENGINE_GUISTYLE_GET_FIXEDHEIGHT_OFFSET UNITYSDK_OFFSET(0x19C34310)
+#define UNITYENGINE_GUISTYLE_GET_FIXEDWIDTH_OFFSET UNITYSDK_OFFSET(0x19C34300)
+#define UNITYENGINE_GUISTYLE_GET_FOCUSED_OFFSET UNITYSDK_OFFSET(0x19C44FF0)
+#define UNITYENGINE_GUISTYLE_GET_FONTSIZE_OFFSET UNITYSDK_OFFSET(0x19C44960)
+#define UNITYENGINE_GUISTYLE_GET_FONTSTYLE_OFFSET UNITYSDK_OFFSET(0x19C44980)
+#define UNITYENGINE_GUISTYLE_GET_FONT_OFFSET UNITYSDK_OFFSET(0x19C44830)
+#define UNITYENGINE_GUISTYLE_GET_HOVER_OFFSET UNITYSDK_OFFSET(0x19C44DC0)
+#define UNITYENGINE_GUISTYLE_GET_IMAGEPOSITION_OFFSET UNITYSDK_OFFSET(0x19C44850)
+#define UNITYENGINE_GUISTYLE_GET_ISHEIGHTDEPENDANTONWIDTH_OFFSET UNITYSDK_OFFSET(0x19C40970)
+#define UNITYENGINE_GUISTYLE_GET_MARGIN_OFFSET UNITYSDK_OFFSET(0x19C35E80)
+#define UNITYENGINE_GUISTYLE_GET_NAME_OFFSET UNITYSDK_OFFSET(0x19C33280)
+#define UNITYENGINE_GUISTYLE_GET_NONE_OFFSET UNITYSDK_OFFSET(0x19C34470)
+#define UNITYENGINE_GUISTYLE_GET_NORMAL_OFFSET UNITYSDK_OFFSET(0x19C44080)
+#define UNITYENGINE_GUISTYLE_GET_ONACTIVE_OFFSET UNITYSDK_OFFSET(0x19C44F80)
+#define UNITYENGINE_GUISTYLE_GET_ONFOCUSED_OFFSET UNITYSDK_OFFSET(0x19C45060)
+#define UNITYENGINE_GUISTYLE_GET_ONHOVER_OFFSET UNITYSDK_OFFSET(0x19C44F10)
+#define UNITYENGINE_GUISTYLE_GET_ONNORMAL_OFFSET UNITYSDK_OFFSET(0x19C44EA0)
+#define UNITYENGINE_GUISTYLE_GET_OVERFLOW_OFFSET UNITYSDK_OFFSET(0x19C451A0)
+#define UNITYENGINE_GUISTYLE_GET_PADDING_OFFSET UNITYSDK_OFFSET(0x19C3D1B0)
+#define UNITYENGINE_GUISTYLE_GET_RAWNAME_OFFSET UNITYSDK_OFFSET(0x19C44810)
+#define UNITYENGINE_GUISTYLE_GET_RICHTEXT_OFFSET UNITYSDK_OFFSET(0x19C449A0)
+#define UNITYENGINE_GUISTYLE_GET_STRETCHHEIGHT_OFFSET UNITYSDK_OFFSET(0x19C3B3D0)
+#define UNITYENGINE_GUISTYLE_GET_STRETCHWIDTH_OFFSET UNITYSDK_OFFSET(0x19C3B3C0)
+#define UNITYENGINE_GUISTYLE_GET_WORDWRAP_OFFSET UNITYSDK_OFFSET(0x19C44890)
+#define UNITYENGINE_GUISTYLE_INTERNAL_CALCHEIGHT_OFFSET UNITYSDK_OFFSET(0x19C44AF0)
+#define UNITYENGINE_GUISTYLE_INTERNAL_CALCMINMAXWIDTH_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C44B30)
+#define UNITYENGINE_GUISTYLE_INTERNAL_CALCMINMAXWIDTH_OFFSET UNITYSDK_OFFSET(0x19C44B00)
+#define UNITYENGINE_GUISTYLE_INTERNAL_CALCSIZEWITHCONSTRAINTS_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C44AE0)
+#define UNITYENGINE_GUISTYLE_INTERNAL_CALCSIZEWITHCONSTRAINTS_OFFSET UNITYSDK_OFFSET(0x19C44AB0)
+#define UNITYENGINE_GUISTYLE_INTERNAL_CALCSIZE_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C44AA0)
+#define UNITYENGINE_GUISTYLE_INTERNAL_CALCSIZE_OFFSET UNITYSDK_OFFSET(0x19C44A70)
+#define UNITYENGINE_GUISTYLE_INTERNAL_COPY_OFFSET UNITYSDK_OFFSET(0x19C449D0)
+#define UNITYENGINE_GUISTYLE_INTERNAL_CREATE_OFFSET UNITYSDK_OFFSET(0x19C449C0)
+#define UNITYENGINE_GUISTYLE_INTERNAL_DESTROY_OFFSET UNITYSDK_OFFSET(0x19C449E0)
+#define UNITYENGINE_GUISTYLE_INTERNAL_DRAW2_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C44A60)
+#define UNITYENGINE_GUISTYLE_INTERNAL_DRAW2_OFFSET UNITYSDK_OFFSET(0x19C44A50)
+#define UNITYENGINE_GUISTYLE_INTERNAL_DRAW_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C44A40)
+#define UNITYENGINE_GUISTYLE_INTERNAL_DRAW_OFFSET UNITYSDK_OFFSET(0x19C44A30)
+#define UNITYENGINE_GUISTYLE_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x19C45300)
+#define UNITYENGINE_GUISTYLE_SETDEFAULTFONT_OFFSET UNITYSDK_OFFSET(0x19C41860)
+#define UNITYENGINE_GUISTYLE_SETMOUSETOOLTIP_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C44B40)
+#define UNITYENGINE_GUISTYLE_SETMOUSETOOLTIP_OFFSET UNITYSDK_OFFSET(0x19C328D0)
+#define UNITYENGINE_GUISTYLE_SET_ACTIVE_OFFSET UNITYSDK_OFFSET(0x19C44E70)
+#define UNITYENGINE_GUISTYLE_SET_ALIGNMENT_OFFSET UNITYSDK_OFFSET(0x19C44880)
+#define UNITYENGINE_GUISTYLE_SET_BORDER_OFFSET UNITYSDK_OFFSET(0x19C45110)
+#define UNITYENGINE_GUISTYLE_SET_CLIPPING_OFFSET UNITYSDK_OFFSET(0x19C448C0)
+#define UNITYENGINE_GUISTYLE_SET_CONTENTOFFSET_INJECTED_OFFSET UNITYSDK_OFFSET(0x19C44930)
+#define UNITYENGINE_GUISTYLE_SET_CONTENTOFFSET_OFFSET UNITYSDK_OFFSET(0x19C44910)
+#define UNITYENGINE_GUISTYLE_SET_FIXEDHEIGHT_OFFSET UNITYSDK_OFFSET(0x19C44950)
+#define UNITYENGINE_GUISTYLE_SET_FIXEDWIDTH_OFFSET UNITYSDK_OFFSET(0x19C44940)
+#define UNITYENGINE_GUISTYLE_SET_FOCUSED_OFFSET UNITYSDK_OFFSET(0x19C45030)
+#define UNITYENGINE_GUISTYLE_SET_FONTSIZE_OFFSET UNITYSDK_OFFSET(0x19C44970)
+#define UNITYENGINE_GUISTYLE_SET_FONTSTYLE_OFFSET UNITYSDK_OFFSET(0x19C44990)
+#define UNITYENGINE_GUISTYLE_SET_FONT_OFFSET UNITYSDK_OFFSET(0x19C44840)
+#define UNITYENGINE_GUISTYLE_SET_HOVER_OFFSET UNITYSDK_OFFSET(0x19C44E00)
+#define UNITYENGINE_GUISTYLE_SET_IMAGEPOSITION_OFFSET UNITYSDK_OFFSET(0x19C44860)
+#define UNITYENGINE_GUISTYLE_SET_MARGIN_OFFSET UNITYSDK_OFFSET(0x19C45140)
+#define UNITYENGINE_GUISTYLE_SET_NAME_OFFSET UNITYSDK_OFFSET(0x19C42840)
+#define UNITYENGINE_GUISTYLE_SET_NORMAL_OFFSET UNITYSDK_OFFSET(0x19C44D90)
+#define UNITYENGINE_GUISTYLE_SET_ONACTIVE_OFFSET UNITYSDK_OFFSET(0x19C44FC0)
+#define UNITYENGINE_GUISTYLE_SET_ONFOCUSED_OFFSET UNITYSDK_OFFSET(0x19C450A0)
+#define UNITYENGINE_GUISTYLE_SET_ONHOVER_OFFSET UNITYSDK_OFFSET(0x19C44F50)
+#define UNITYENGINE_GUISTYLE_SET_ONNORMAL_OFFSET UNITYSDK_OFFSET(0x19C44EE0)
+#define UNITYENGINE_GUISTYLE_SET_OVERFLOW_OFFSET UNITYSDK_OFFSET(0x19C451E0)
+#define UNITYENGINE_GUISTYLE_SET_PADDING_OFFSET UNITYSDK_OFFSET(0x19C45170)
+#define UNITYENGINE_GUISTYLE_SET_RAWNAME_OFFSET UNITYSDK_OFFSET(0x19C44820)
+#define UNITYENGINE_GUISTYLE_SET_RICHTEXT_OFFSET UNITYSDK_OFFSET(0x19C449B0)
+#define UNITYENGINE_GUISTYLE_SET_STRETCHHEIGHT_OFFSET UNITYSDK_OFFSET(0x19C44070)
+#define UNITYENGINE_GUISTYLE_SET_STRETCHWIDTH_OFFSET UNITYSDK_OFFSET(0x19C40D60)
+#define UNITYENGINE_GUISTYLE_SET_WORDWRAP_OFFSET UNITYSDK_OFFSET(0x19C448A0)
+#define UNITYENGINE_GUISTYLE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x19C45540)
+#define UNITYENGINE_GUISTYLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x19C456B0)
+#define UNITYENGINE_GUISTYLE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19C44B50)
+#define UNITYENGINE_GUISTYLE__CTOR_OFFSET UNITYSDK_OFFSET(0x19C40D20)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int GUIStyle_TypeDefinitionIndex = 5023;
+	inline static constexpr unsigned int GUIStyle_TypeDefinitionIndex = 6370;
 
 	class GUIStyle : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::GUIStyle** StaticGet_s_None()
 		{
-			return (::UnityEngine::GUIStyle**)Il2CppClass::FromTypeDefinitionIndex(GUIStyle_TypeDefinitionIndex)->GetStaticField(0x1C840);
+			return (::UnityEngine::GUIStyle**)Il2CppClass::FromTypeDefinitionIndex(GUIStyle_TypeDefinitionIndex)->GetStaticField(0x58E0);
 		}
 		static ::System::Boolean* StaticGet_showKeyboardFocus()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(GUIStyle_TypeDefinitionIndex)->GetStaticField(0x6F50);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(GUIStyle_TypeDefinitionIndex)->GetStaticField(0x2FA0);
 		}
 		::System::IntPtr m_Ptr; // 0x10
 		::UnityEngine::GUIStyleState* m_Normal; // 0x18
@@ -121,6 +142,11 @@ namespace UnityEngine
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ctor_1(::UnityEngine::GUIStyle* other)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE__CTOR_1_OFFSET))(this, other);
 		}
 
 		static ::System::Void _cctor()
@@ -143,14 +169,49 @@ namespace UnityEngine
 			return ((::UnityEngine::Font*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_FONT_OFFSET))(this);
 		}
 
+		::System::Void set_font(::UnityEngine::Font* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Font*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_FONT_OFFSET))(this, value);
+		}
+
 		::UnityEngine::ImagePosition get_imagePosition()
 		{
 			return ((::UnityEngine::ImagePosition(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_IMAGEPOSITION_OFFSET))(this);
 		}
 
+		::System::Void set_imagePosition(::UnityEngine::ImagePosition value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::ImagePosition))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_IMAGEPOSITION_OFFSET))(this, value);
+		}
+
+		::UnityEngine::TextAnchor get_alignment()
+		{
+			return ((::UnityEngine::TextAnchor(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_ALIGNMENT_OFFSET))(this);
+		}
+
+		::System::Void set_alignment(::UnityEngine::TextAnchor value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::TextAnchor))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_ALIGNMENT_OFFSET))(this, value);
+		}
+
 		::System::Boolean get_wordWrap()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_WORDWRAP_OFFSET))(this);
+		}
+
+		::System::Void set_wordWrap(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_WORDWRAP_OFFSET))(this, value);
+		}
+
+		::UnityEngine::TextClipping get_clipping()
+		{
+			return ((::UnityEngine::TextClipping(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_CLIPPING_OFFSET))(this);
+		}
+
+		::System::Void set_clipping(::UnityEngine::TextClipping value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::TextClipping))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_CLIPPING_OFFSET))(this, value);
 		}
 
 		::UnityEngine::Vector2 get_contentOffset()
@@ -168,9 +229,19 @@ namespace UnityEngine
 			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_FIXEDWIDTH_OFFSET))(this);
 		}
 
+		::System::Void set_fixedWidth(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_FIXEDWIDTH_OFFSET))(this, value);
+		}
+
 		::System::Single get_fixedHeight()
 		{
 			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_FIXEDHEIGHT_OFFSET))(this);
+		}
+
+		::System::Void set_fixedHeight(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_FIXEDHEIGHT_OFFSET))(this, value);
 		}
 
 		::System::Boolean get_stretchWidth()
@@ -193,14 +264,44 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_STRETCHHEIGHT_OFFSET))(this, value);
 		}
 
-		::System::Void set_Internal_clipOffset(::UnityEngine::Vector2 value)
+		::System::Int32 get_fontSize()
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_INTERNAL_CLIPOFFSET_OFFSET))(this, value);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_FONTSIZE_OFFSET))(this);
+		}
+
+		::System::Void set_fontSize(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_FONTSIZE_OFFSET))(this, value);
+		}
+
+		::UnityEngine::FontStyle get_fontStyle()
+		{
+			return ((::UnityEngine::FontStyle(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_FONTSTYLE_OFFSET))(this);
+		}
+
+		::System::Void set_fontStyle(::UnityEngine::FontStyle value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::FontStyle))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_FONTSTYLE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_richText()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_RICHTEXT_OFFSET))(this);
+		}
+
+		::System::Void set_richText(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_RICHTEXT_OFFSET))(this, value);
 		}
 
 		static ::System::IntPtr Internal_Create(::UnityEngine::GUIStyle* self)
 		{
 			return ((::System::IntPtr(*)(::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_CREATE_OFFSET))(self);
+		}
+
+		static ::System::IntPtr Internal_Copy(::UnityEngine::GUIStyle* self, ::UnityEngine::GUIStyle* other)
+		{
+			return ((::System::IntPtr(*)(::UnityEngine::GUIStyle*, ::UnityEngine::GUIStyle*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_COPY_OFFSET))(self, other);
 		}
 
 		static ::System::Void Internal_Destroy(::System::IntPtr self)
@@ -213,14 +314,19 @@ namespace UnityEngine
 			return ((::System::IntPtr(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GETSTYLESTATEPTR_OFFSET))(this, idx);
 		}
 
+		::System::Void AssignStyleState(::System::Int32 idx, ::System::IntPtr srcStyleState)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::IntPtr))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_ASSIGNSTYLESTATE_OFFSET))(this, idx, srcStyleState);
+		}
+
 		::System::IntPtr GetRectOffsetPtr(::System::Int32 idx)
 		{
 			return ((::System::IntPtr(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GETRECTOFFSETPTR_OFFSET))(this, idx);
 		}
 
-		static ::System::Single Internal_GetLineHeight(::System::IntPtr target)
+		::System::Void AssignRectOffset(::System::Int32 idx, ::System::IntPtr srcRectOffset)
 		{
-			return ((::System::Single(*)(::System::IntPtr))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_GETLINEHEIGHT_OFFSET))(target);
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::IntPtr))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_ASSIGNRECTOFFSET_OFFSET))(this, idx, srcRectOffset);
 		}
 
 		::System::Void Internal_Draw(::UnityEngine::Rect screenRect, ::UnityEngine::GUIContent* content, ::System::Boolean isHover, ::System::Boolean isActive, ::System::Boolean on, ::System::Boolean hasKeyboardFocus)
@@ -231,31 +337,6 @@ namespace UnityEngine
 		::System::Void Internal_Draw2(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 controlID, ::System::Boolean on)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_DRAW2_OFFSET))(this, position, content, controlID, on);
-		}
-
-		::System::Void Internal_DrawCursor(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 pos, ::UnityEngine::Color cursorColor)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_DRAWCURSOR_OFFSET))(this, position, content, pos, cursorColor);
-		}
-
-		::System::Void Internal_DrawWithTextSelection(::UnityEngine::Rect screenRect, ::UnityEngine::GUIContent* content, ::System::Boolean isHover, ::System::Boolean isActive, ::System::Boolean on, ::System::Boolean hasKeyboardFocus, ::System::Boolean drawSelectionAsComposition, ::System::Int32 cursorFirst, ::System::Int32 cursorLast, ::UnityEngine::Color cursorColor, ::UnityEngine::Color selectionColor)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Boolean, ::System::Boolean, ::System::Boolean, ::System::Boolean, ::System::Boolean, ::System::Int32, ::System::Int32, ::UnityEngine::Color, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_DRAWWITHTEXTSELECTION_OFFSET))(this, screenRect, content, isHover, isActive, on, hasKeyboardFocus, drawSelectionAsComposition, cursorFirst, cursorLast, cursorColor, selectionColor);
-		}
-
-		::UnityEngine::Vector2 Internal_GetCursorPixelPosition(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 cursorStringIndex)
-		{
-			return ((::UnityEngine::Vector2(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_GETCURSORPIXELPOSITION_OFFSET))(this, position, content, cursorStringIndex);
-		}
-
-		::System::Int32 Internal_GetCursorStringIndex(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::Vector2 cursorPixelPosition)
-		{
-			return ((::System::Int32(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_GETCURSORSTRINGINDEX_OFFSET))(this, position, content, cursorPixelPosition);
-		}
-
-		::System::String* Internal_GetSelectedRenderedText(::UnityEngine::Rect localPosition, ::UnityEngine::GUIContent* mContent, ::System::Int32 selectIndex, ::System::Int32 cursorIndex)
-		{
-			return ((::System::String*(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_GETSELECTEDRENDEREDTEXT_OFFSET))(this, localPosition, mContent, selectIndex, cursorIndex);
 		}
 
 		::UnityEngine::Vector2 Internal_CalcSize(::UnityEngine::GUIContent* content)
@@ -283,11 +364,6 @@ namespace UnityEngine
 			return ((::System::Void(*)(::System::String*, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SETMOUSETOOLTIP_OFFSET))(tooltip, screenRect);
 		}
 
-		static ::System::Single Internal_GetCursorFlashOffset()
-		{
-			return ((::System::Single(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_GETCURSORFLASHOFFSET_OFFSET))();
-		}
-
 		static ::System::Void SetDefaultFont(::UnityEngine::Font* font)
 		{
 			return ((::System::Void(*)(::UnityEngine::Font*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SETDEFAULTFONT_OFFSET))(font);
@@ -313,9 +389,99 @@ namespace UnityEngine
 			return ((::UnityEngine::GUIStyleState*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_NORMAL_OFFSET))(this);
 		}
 
+		::System::Void set_normal(::UnityEngine::GUIStyleState* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GUIStyleState*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_NORMAL_OFFSET))(this, value);
+		}
+
+		::UnityEngine::GUIStyleState* get_hover()
+		{
+			return ((::UnityEngine::GUIStyleState*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_HOVER_OFFSET))(this);
+		}
+
+		::System::Void set_hover(::UnityEngine::GUIStyleState* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GUIStyleState*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_HOVER_OFFSET))(this, value);
+		}
+
+		::UnityEngine::GUIStyleState* get_active()
+		{
+			return ((::UnityEngine::GUIStyleState*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_ACTIVE_OFFSET))(this);
+		}
+
+		::System::Void set_active(::UnityEngine::GUIStyleState* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GUIStyleState*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_ACTIVE_OFFSET))(this, value);
+		}
+
+		::UnityEngine::GUIStyleState* get_onNormal()
+		{
+			return ((::UnityEngine::GUIStyleState*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_ONNORMAL_OFFSET))(this);
+		}
+
+		::System::Void set_onNormal(::UnityEngine::GUIStyleState* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GUIStyleState*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_ONNORMAL_OFFSET))(this, value);
+		}
+
+		::UnityEngine::GUIStyleState* get_onHover()
+		{
+			return ((::UnityEngine::GUIStyleState*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_ONHOVER_OFFSET))(this);
+		}
+
+		::System::Void set_onHover(::UnityEngine::GUIStyleState* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GUIStyleState*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_ONHOVER_OFFSET))(this, value);
+		}
+
+		::UnityEngine::GUIStyleState* get_onActive()
+		{
+			return ((::UnityEngine::GUIStyleState*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_ONACTIVE_OFFSET))(this);
+		}
+
+		::System::Void set_onActive(::UnityEngine::GUIStyleState* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GUIStyleState*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_ONACTIVE_OFFSET))(this, value);
+		}
+
+		::UnityEngine::GUIStyleState* get_focused()
+		{
+			return ((::UnityEngine::GUIStyleState*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_FOCUSED_OFFSET))(this);
+		}
+
+		::System::Void set_focused(::UnityEngine::GUIStyleState* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GUIStyleState*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_FOCUSED_OFFSET))(this, value);
+		}
+
+		::UnityEngine::GUIStyleState* get_onFocused()
+		{
+			return ((::UnityEngine::GUIStyleState*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_ONFOCUSED_OFFSET))(this);
+		}
+
+		::System::Void set_onFocused(::UnityEngine::GUIStyleState* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GUIStyleState*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_ONFOCUSED_OFFSET))(this, value);
+		}
+
+		::UnityEngine::RectOffset* get_border()
+		{
+			return ((::UnityEngine::RectOffset*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_BORDER_OFFSET))(this);
+		}
+
+		::System::Void set_border(::UnityEngine::RectOffset* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::RectOffset*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_BORDER_OFFSET))(this, value);
+		}
+
 		::UnityEngine::RectOffset* get_margin()
 		{
 			return ((::UnityEngine::RectOffset*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_MARGIN_OFFSET))(this);
+		}
+
+		::System::Void set_margin(::UnityEngine::RectOffset* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::RectOffset*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_MARGIN_OFFSET))(this, value);
 		}
 
 		::UnityEngine::RectOffset* get_padding()
@@ -323,9 +489,19 @@ namespace UnityEngine
 			return ((::UnityEngine::RectOffset*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_PADDING_OFFSET))(this);
 		}
 
-		::System::Single get_lineHeight()
+		::System::Void set_padding(::UnityEngine::RectOffset* value)
 		{
-			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_LINEHEIGHT_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::RectOffset*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_PADDING_OFFSET))(this, value);
+		}
+
+		::UnityEngine::RectOffset* get_overflow()
+		{
+			return ((::UnityEngine::RectOffset*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_OVERFLOW_OFFSET))(this);
+		}
+
+		::System::Void set_overflow(::UnityEngine::RectOffset* value)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::RectOffset*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_OVERFLOW_OFFSET))(this, value);
 		}
 
 		::System::Void Draw(::UnityEngine::Rect position, ::System::Boolean isHover, ::System::Boolean isActive, ::System::Boolean on, ::System::Boolean hasKeyboardFocus)
@@ -343,54 +519,24 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_DRAW_2_OFFSET))(this, position, content, controlID);
 		}
 
-		::System::Void Draw_3(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 controlID, ::System::Boolean on)
+		::System::Void Draw_3(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 controlID, ::System::Boolean on, ::System::Boolean hover)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_DRAW_3_OFFSET))(this, position, content, controlID, on);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_DRAW_3_OFFSET))(this, position, content, controlID, on, hover);
 		}
 
-		::System::Void Draw_4(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 controlID, ::System::Boolean on, ::System::Boolean hover)
+		::System::Void Draw_4(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 controlId, ::System::Boolean isHover, ::System::Boolean isActive, ::System::Boolean on, ::System::Boolean hasKeyboardFocus)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_DRAW_4_OFFSET))(this, position, content, controlID, on, hover);
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Boolean, ::System::Boolean, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_DRAW_4_OFFSET))(this, position, content, controlId, isHover, isActive, on, hasKeyboardFocus);
 		}
 
-		::System::Void Draw_5(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 controlId, ::System::Boolean isHover, ::System::Boolean isActive, ::System::Boolean on, ::System::Boolean hasKeyboardFocus)
+		static ::UnityEngine::GUIStyle* op_Implicit(::System::String* str)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Boolean, ::System::Boolean, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_DRAW_5_OFFSET))(this, position, content, controlId, isHover, isActive, on, hasKeyboardFocus);
-		}
-
-		::System::Void DrawCursor(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 controlID, ::System::Int32 character)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_DRAWCURSOR_OFFSET))(this, position, content, controlID, character);
-		}
-
-		::System::Void DrawWithTextSelection(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Boolean isActive, ::System::Boolean hasKeyboardFocus, ::System::Int32 firstSelectedCharacter, ::System::Int32 lastSelectedCharacter, ::System::Boolean drawSelectionAsComposition, ::UnityEngine::Color selectionColor)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Boolean, ::System::Boolean, ::System::Int32, ::System::Int32, ::System::Boolean, ::UnityEngine::Color))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_DRAWWITHTEXTSELECTION_OFFSET))(this, position, content, isActive, hasKeyboardFocus, firstSelectedCharacter, lastSelectedCharacter, drawSelectionAsComposition, selectionColor);
-		}
-
-		::System::Void DrawWithTextSelection_1(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 controlID, ::System::Int32 firstSelectedCharacter, ::System::Int32 lastSelectedCharacter, ::System::Boolean drawSelectionAsComposition)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Int32, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_DRAWWITHTEXTSELECTION_1_OFFSET))(this, position, content, controlID, firstSelectedCharacter, lastSelectedCharacter, drawSelectionAsComposition);
-		}
-
-		::System::Void DrawWithTextSelection_2(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 controlID, ::System::Int32 firstSelectedCharacter, ::System::Int32 lastSelectedCharacter)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_DRAWWITHTEXTSELECTION_2_OFFSET))(this, position, content, controlID, firstSelectedCharacter, lastSelectedCharacter);
+			return ((::UnityEngine::GUIStyle*(*)(::System::String*))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_OP_IMPLICIT_OFFSET))(str);
 		}
 
 		static ::UnityEngine::GUIStyle* get_none()
 		{
 			return ((::UnityEngine::GUIStyle*(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GET_NONE_OFFSET))();
-		}
-
-		::UnityEngine::Vector2 GetCursorPixelPosition(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::System::Int32 cursorStringIndex)
-		{
-			return ((::UnityEngine::Vector2(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GETCURSORPIXELPOSITION_OFFSET))(this, position, content, cursorStringIndex);
-		}
-
-		::System::Int32 GetCursorStringIndex(::UnityEngine::Rect position, ::UnityEngine::GUIContent* content, ::UnityEngine::Vector2 cursorPixelPosition)
-		{
-			return ((::System::Int32(*)(::PVOID, ::UnityEngine::Rect, ::UnityEngine::GUIContent*, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_GETCURSORSTRINGINDEX_OFFSET))(this, position, content, cursorPixelPosition);
 		}
 
 		::UnityEngine::Vector2 CalcSize(::UnityEngine::GUIContent* content)
@@ -433,11 +579,6 @@ namespace UnityEngine
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2&))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_CONTENTOFFSET_INJECTED_OFFSET))(this, value);
 		}
 
-		::System::Void set_Internal_clipOffset_Injected(::UnityEngine::Vector2& value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector2&))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_SET_INTERNAL_CLIPOFFSET_INJECTED_OFFSET))(this, value);
-		}
-
 		::System::Void Internal_Draw_Injected(::UnityEngine::Rect& screenRect, ::UnityEngine::GUIContent* content, ::System::Boolean isHover, ::System::Boolean isActive, ::System::Boolean on, ::System::Boolean hasKeyboardFocus)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect&, ::UnityEngine::GUIContent*, ::System::Boolean, ::System::Boolean, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_DRAW_INJECTED_OFFSET))(this, screenRect, content, isHover, isActive, on, hasKeyboardFocus);
@@ -446,31 +587,6 @@ namespace UnityEngine
 		::System::Void Internal_Draw2_Injected(::UnityEngine::Rect& position, ::UnityEngine::GUIContent* content, ::System::Int32 controlID, ::System::Boolean on)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect&, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_DRAW2_INJECTED_OFFSET))(this, position, content, controlID, on);
-		}
-
-		::System::Void Internal_DrawCursor_Injected(::UnityEngine::Rect& position, ::UnityEngine::GUIContent* content, ::System::Int32 pos, ::UnityEngine::Color& cursorColor)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect&, ::UnityEngine::GUIContent*, ::System::Int32, ::UnityEngine::Color&))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_DRAWCURSOR_INJECTED_OFFSET))(this, position, content, pos, cursorColor);
-		}
-
-		::System::Void Internal_DrawWithTextSelection_Injected(::UnityEngine::Rect& screenRect, ::UnityEngine::GUIContent* content, ::System::Boolean isHover, ::System::Boolean isActive, ::System::Boolean on, ::System::Boolean hasKeyboardFocus, ::System::Boolean drawSelectionAsComposition, ::System::Int32 cursorFirst, ::System::Int32 cursorLast, ::UnityEngine::Color& cursorColor, ::UnityEngine::Color& selectionColor)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect&, ::UnityEngine::GUIContent*, ::System::Boolean, ::System::Boolean, ::System::Boolean, ::System::Boolean, ::System::Boolean, ::System::Int32, ::System::Int32, ::UnityEngine::Color&, ::UnityEngine::Color&))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_DRAWWITHTEXTSELECTION_INJECTED_OFFSET))(this, screenRect, content, isHover, isActive, on, hasKeyboardFocus, drawSelectionAsComposition, cursorFirst, cursorLast, cursorColor, selectionColor);
-		}
-
-		::System::Void Internal_GetCursorPixelPosition_Injected(::UnityEngine::Rect& position, ::UnityEngine::GUIContent* content, ::System::Int32 cursorStringIndex, ::UnityEngine::Vector2& ret)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect&, ::UnityEngine::GUIContent*, ::System::Int32, ::UnityEngine::Vector2&))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_GETCURSORPIXELPOSITION_INJECTED_OFFSET))(this, position, content, cursorStringIndex, ret);
-		}
-
-		::System::Int32 Internal_GetCursorStringIndex_Injected(::UnityEngine::Rect& position, ::UnityEngine::GUIContent* content, ::UnityEngine::Vector2& cursorPixelPosition)
-		{
-			return ((::System::Int32(*)(::PVOID, ::UnityEngine::Rect&, ::UnityEngine::GUIContent*, ::UnityEngine::Vector2&))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_GETCURSORSTRINGINDEX_INJECTED_OFFSET))(this, position, content, cursorPixelPosition);
-		}
-
-		::System::String* Internal_GetSelectedRenderedText_Injected(::UnityEngine::Rect& localPosition, ::UnityEngine::GUIContent* mContent, ::System::Int32 selectIndex, ::System::Int32 cursorIndex)
-		{
-			return ((::System::String*(*)(::PVOID, ::UnityEngine::Rect&, ::UnityEngine::GUIContent*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_GUISTYLE_INTERNAL_GETSELECTEDRENDEREDTEXT_INJECTED_OFFSET))(this, localPosition, mContent, selectIndex, cursorIndex);
 		}
 
 		::System::Void Internal_CalcSize_Injected(::UnityEngine::GUIContent* content, ::UnityEngine::Vector2& ret)

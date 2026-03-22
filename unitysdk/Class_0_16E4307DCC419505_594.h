@@ -1,10 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/RPG/Client/GridFightPlayerOp.h"
 
-namespace System { class String; }
+namespace MoleMole::HollowChessboard { class RenderSequenceBase; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_594_TypeDefinitionIndex = 51134;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_594_TypeDefinitionIndex = 60361;
 
 class Class_0_16E4307DCC419505_594
 {

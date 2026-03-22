@@ -1,0 +1,35 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_ECCA5279390647E2.h"
+#include "unitysdk/System/ValueType.h"
+
+namespace System { class String; }
+
+#define CLASS_3_EA02B975BED3466B_STRUCT_2_B69C0DBD20A3CE66_METHOD_2_35EA095E1AFDD9C8_OFFSET UNITYSDK_OFFSET(0x386FF0)
+#define CLASS_3_EA02B975BED3466B_STRUCT_2_B69C0DBD20A3CE66_METHOD_2_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0x387070)
+#define CLASS_3_EA02B975BED3466B_STRUCT_2_B69C0DBD20A3CE66_TOSTRING_OFFSET UNITYSDK_OFFSET(0x386FE0)
+
+inline static constexpr unsigned int Class_3_EA02B975BED3466B_Struct_2_B69C0DBD20A3CE66_TypeDefinitionIndex = 66616;
+
+struct alignas(8) Class_3_EA02B975BED3466B_Struct_2_B69C0DBD20A3CE66
+{
+	::System::UInt32 Field_2_0; // 0x10
+	::System::UInt32 Field_2_1; // 0x14
+	::System::String* Field_2_2; // 0x18
+	::Enum_3_ECCA5279390647E2 Field_2_3; // 0x20
+
+	::System::String* ToString()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_EA02B975BED3466B_STRUCT_2_B69C0DBD20A3CE66_TOSTRING_OFFSET))(this);
+	}
+
+	::System::String* Method_2_35EA095E1AFDD9C8()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_EA02B975BED3466B_STRUCT_2_B69C0DBD20A3CE66_METHOD_2_35EA095E1AFDD9C8_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_391A84BCD9F51317()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_EA02B975BED3466B_STRUCT_2_B69C0DBD20A3CE66_METHOD_2_391A84BCD9F51317_OFFSET))(this);
+	}
+};

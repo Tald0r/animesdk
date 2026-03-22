@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int GraphicsDeviceType_TypeDefinitionIndex = 4492;
+	inline static constexpr unsigned int GraphicsDeviceType_TypeDefinitionIndex = 6162;
 
 	enum class GraphicsDeviceType : ::System::Int32
 	{
@@ -22,7 +22,7 @@ namespace UnityEngine::Rendering
 		Metal = 16,
 		OpenGLCore = 17,
 		Direct3D12 = 18,
-		N3DS = 19,
+		Direct3D12_NvApi = 19,
 		Vulkan = 21,
 		Switch = 22,
 		XboxOneD3D12 = 23,
@@ -30,5 +30,6 @@ namespace UnityEngine::Rendering
 		GameCoreScarlett = 25,
 		GameCoreXboxSeries = 25,
 		PlayStation5 = 26,
+		XboxScarlett = 27,
 	};
 }

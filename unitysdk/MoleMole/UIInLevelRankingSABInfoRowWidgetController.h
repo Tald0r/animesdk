@@ -1,0 +1,116 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_C7232E5855DD3CA6_2;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIInLevelRankingSABInfoRowConfig; }
+namespace System { class Action; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_GET_ISBUSYING_OFFSET UNITYSDK_OFFSET(0x8A47480)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8A46E40)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8A46EE0)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8A46F50)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8A46CF0)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8A46D90)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_REPLAY_OFFSET UNITYSDK_OFFSET(0x8A47320)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_SETTEXT_OFFSET UNITYSDK_OFFSET(0x8A47030)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8A47520)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER__GETSTAYDURATION_OFFSET UNITYSDK_OFFSET(0x8A47180)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8A47550)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET UNITYSDK_OFFSET(0x8A475C0)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8A475D0)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8A47650)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8A476B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelRankingSABInfoRowWidgetController_TypeDefinitionIndex = 65733;
+
+	class UIInLevelRankingSABInfoRowWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* FADE_IN; // 0x0
+		// static const ::System::String* FADE_OUT; // 0x0
+		::Class_2_C7232E5855DD3CA6_2* _view; // 0x2A0
+		::MoleMole::UIInLevelRankingSABInfoRowConfig* _config; // 0x2A8
+		::System::Boolean isInReplay; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::MoleMole::UIInLevelRankingSABInfoRowWidgetController* SetText(::System::String* text)
+		{
+			return ((::MoleMole::UIInLevelRankingSABInfoRowWidgetController*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_SETTEXT_OFFSET))(this, text);
+		}
+
+		::System::Single _GetStayDuration()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER__GETSTAYDURATION_OFFSET))(this);
+		}
+
+		::System::Void Replay(::System::Action* finish)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_REPLAY_OFFSET))(this, finish);
+		}
+
+		::System::Boolean get_IsBusying()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER_GET_ISBUSYING_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIClose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER___BASE_ONUICLOSE_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELRANKINGSABINFOROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

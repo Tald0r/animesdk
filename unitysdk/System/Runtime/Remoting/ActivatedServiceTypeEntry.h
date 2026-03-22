@@ -5,13 +5,12 @@
 namespace System { class String; }
 namespace System { class Type; }
 
-#define SYSTEM_RUNTIME_REMOTING_ACTIVATEDSERVICETYPEENTRY_GET_OBJECTTYPE_OFFSET UNITYSDK_OFFSET(0x15CE1B70)
-#define SYSTEM_RUNTIME_REMOTING_ACTIVATEDSERVICETYPEENTRY_TOSTRING_OFFSET UNITYSDK_OFFSET(0x15CE1B80)
-#define SYSTEM_RUNTIME_REMOTING_ACTIVATEDSERVICETYPEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x15CE1A50)
+#define SYSTEM_RUNTIME_REMOTING_ACTIVATEDSERVICETYPEENTRY_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17FD7E10)
+#define SYSTEM_RUNTIME_REMOTING_ACTIVATEDSERVICETYPEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x17FD7CF0)
 
 namespace System::Runtime::Remoting
 {
-	inline static constexpr unsigned int ActivatedServiceTypeEntry_TypeDefinitionIndex = 1188;
+	inline static constexpr unsigned int ActivatedServiceTypeEntry_TypeDefinitionIndex = 1240;
 
 	class ActivatedServiceTypeEntry : public ::System::Runtime::Remoting::TypeEntry
 	{
@@ -21,11 +20,6 @@ namespace System::Runtime::Remoting
 		::System::Void _ctor(::System::String* typeName, ::System::String* assemblyName)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_ACTIVATEDSERVICETYPEENTRY__CTOR_OFFSET))(this, typeName, assemblyName);
-		}
-
-		::System::Type* get_ObjectType()
-		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_REMOTING_ACTIVATEDSERVICETYPEENTRY_GET_OBJECTTYPE_OFFSET))(this);
 		}
 
 		::System::String* ToString()

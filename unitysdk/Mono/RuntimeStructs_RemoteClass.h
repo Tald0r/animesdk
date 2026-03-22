@@ -5,7 +5,7 @@
 
 namespace Mono
 {
-	inline static constexpr unsigned int RuntimeStructs_RemoteClass_TypeDefinitionIndex = 13;
+	inline static constexpr unsigned int RuntimeStructs_RemoteClass_TypeDefinitionIndex = 16;
 
 	struct alignas(8) RuntimeStructs_RemoteClass
 	{

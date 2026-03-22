@@ -1,0 +1,168 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Config/DamageElementType.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_5DA2E7556103D5A3_173;
+class Class_1_5DA2E7556103D5A3_349;
+class Class_2_468A4FBF2E9F527C;
+class Class_2_79AE422BA06F6D26_13;
+class Class_2_D89CCC627A66D0AD;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIHadalZone_Common_HadalRoomSelectContext; }
+namespace MoleMole { class UIRankingImageConfig; }
+namespace System { class EventArgs; }
+namespace System { template <typename T> class Action_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONBOSSINFOBTN_OFFSET UNITYSDK_OFFSET(0x96084F0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9606790)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONHADALROOMSELECTEDROLESCHANGED_OFFSET UNITYSDK_OFFSET(0x9608830)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9606830)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9605ED0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x96061C0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_REGISTERONCLICK_OFFSET UNITYSDK_OFFSET(0x9606910)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_SETSELECT_OFFSET UNITYSDK_OFFSET(0x9606980)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9608A10)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET UNITYSDK_OFFSET(0x9608AC0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__SETBATTLEINFO_OFFSET UNITYSDK_OFFSET(0x96062F0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__SETROOMSTATE_OFFSET UNITYSDK_OFFSET(0x96064F0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEBOSSIMAGE_OFFSET UNITYSDK_OFFSET(0x9608450)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEROLES_OFFSET UNITYSDK_OFFSET(0x9606A10)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEROOMBUFF_OFFSET UNITYSDK_OFFSET(0x9607820)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEROOMINFO_OFFSET UNITYSDK_OFFSET(0x9606E90)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEROOMRESISTBYINDEX_OFFSET UNITYSDK_OFFSET(0x9607BE0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEROOMRESIST_OFFSET UNITYSDK_OFFSET(0x9607EE0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x9608B30)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x9608BA0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x9608C20)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x9608C80)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHadalZone_ImpactBattle_SubLayer_WidgetController_TypeDefinitionIndex = 37405;
+
+	class UIHadalZone_ImpactBattle_SubLayer_WidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::Int32 MaxRoleCount = 0x3; // 0x0
+		::Class_2_79AE422BA06F6D26_13* _view; // 0x2A0
+		::System::Collections::Generic::List_1<::Class_2_D89CCC627A66D0AD*>* _avatars; // 0x2A8
+		::System::Int32 _buddyID; // 0x2B0
+		::MoleMole::UIHadalZone_Common_HadalRoomSelectContext* _roomSelectContext; // 0x2B8
+		::Class_2_468A4FBF2E9F527C* _hadalZoneModel; // 0x2C0
+		::MoleMole::UIRankingImageConfig* _rankingImgConfig; // 0x2C8
+		::System::Action_1<::System::Int32>* _onClick; // 0x2D0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RegisterOnClick(::System::Action_1<::System::Int32>* onClick)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_REGISTERONCLICK_OFFSET))(this, onClick);
+		}
+
+		::System::Void SetSelect(::System::Boolean isSelect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_SETSELECT_OFFSET))(this, isSelect);
+		}
+
+		::System::Void _SetRoomState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__SETROOMSTATE_OFFSET))(this);
+		}
+
+		::System::Void _UpdateRoles()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEROLES_OFFSET))(this);
+		}
+
+		::System::Void _UpdateRoomBuff(::System::Int32 index, ::Class_1_5DA2E7556103D5A3_173* roomInfoTemplate)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::Class_1_5DA2E7556103D5A3_173*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEROOMBUFF_OFFSET))(this, index, roomInfoTemplate);
+		}
+
+		::System::Void _UpdateRoomResistByIndex(::System::Int32 index, ::System::Collections::Generic::List_1<::MoleMole::Config::DamageElementType>* resists)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Collections::Generic::List_1<::MoleMole::Config::DamageElementType>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEROOMRESISTBYINDEX_OFFSET))(this, index, resists);
+		}
+
+		::System::Void _UpdateRoomResist(::Class_1_5DA2E7556103D5A3_173* roomInfoTemplate)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_5DA2E7556103D5A3_173*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEROOMRESIST_OFFSET))(this, roomInfoTemplate);
+		}
+
+		::System::Void _UpdateRoomInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEROOMINFO_OFFSET))(this);
+		}
+
+		::System::Void _UpdateBossImage(::Class_1_5DA2E7556103D5A3_349* cardConfigTemplate)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_5DA2E7556103D5A3_349*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__UPDATEBOSSIMAGE_OFFSET))(this, cardConfigTemplate);
+		}
+
+		::System::Void OnBossInfoBtn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONBOSSINFOBTN_OFFSET))(this);
+		}
+
+		::System::Void _SetBattleInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__SETBATTLEINFO_OFFSET))(this);
+		}
+
+		::System::Void OnHadalRoomSelectedRolesChanged(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER_ONHADALROOMSELECTEDROLESCHANGED_OFFSET))(this, args);
+		}
+
+		::System::Void _OnUIInit_b__1_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER__ONUIINIT_B__1_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_SUBLAYER_WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

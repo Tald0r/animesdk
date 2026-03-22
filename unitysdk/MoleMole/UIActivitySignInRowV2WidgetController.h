@@ -1,0 +1,163 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/InputActionEvent.h"
+#include "unitysdk/MoleMole/UIActivitySignInWidgetBase.h"
+
+class Class_0_16E4307DCC419505_7;
+class Class_1_D375C91CCE5D3999;
+class Class_2_646FB0F105728460;
+class Class_3_BE75AAF0F7C40C75_3;
+namespace MoleMole { class UIActivityLambGiftItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Object; }
+
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_CANTAKETASKREWARD_OFFSET UNITYSDK_OFFSET(0xBD8FE00)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ISCANGETREWARD_OFFSET UNITYSDK_OFFSET(0xBD90DE0)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBD8F5E0)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONPREINPUTACTION_OFFSET UNITYSDK_OFFSET(0xBD8FB30)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xBD8F910)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBD8F680)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBD8F280)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBD8F760)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_SETDAYDATA_OFFSET UNITYSDK_OFFSET(0xBD8F9F0)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_SETREWARDSTATE_OFFSET UNITYSDK_OFFSET(0xBD90380)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_TAKEREWARD_OFFSET UNITYSDK_OFFSET(0xBD8FED0)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_UPDATEUI_OFFSET UNITYSDK_OFFSET(0xBD8FAC0)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xBD90EB0)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER__TAKEREWARD_B__12_0_OFFSET UNITYSDK_OFFSET(0xBD90ED0)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER__TAKEREWARD_B__12_1_OFFSET UNITYSDK_OFFSET(0xBD90EE0)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xBD90FB0)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONPREINPUTACTION_OFFSET UNITYSDK_OFFSET(0xBD91020)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xBD910B0)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xBD91130)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xBD911B0)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xBD91210)
+#define MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_SETDAYDATA_OFFSET UNITYSDK_OFFSET(0xBD91280)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivitySignInRowV2WidgetController_TypeDefinitionIndex = 57635;
+
+	class UIActivitySignInRowV2WidgetController : public ::MoleMole::UIActivitySignInWidgetBase
+	{
+	public:
+		// static const ::System::Int32 maxRewardCount = 0x2; // 0x0
+		::Class_2_646FB0F105728460* _view; // 0x2D0
+		::Class_3_BE75AAF0F7C40C75_3* _task; // 0x2D8
+		::Class_1_D375C91CCE5D3999* _activityData; // 0x2E0
+		::Il2CppArray<::MoleMole::UIActivityLambGiftItemWidgetController*>* rewardIconArray; // 0x2E8
+		::System::Boolean isTakingReward; // 0x2F0
+		::System::Boolean useConsoleSettingV2; // 0x2F1
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::System::Void SetDayData(::Class_3_BE75AAF0F7C40C75_3* task, ::Class_1_D375C91CCE5D3999* activityData)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_BE75AAF0F7C40C75_3*, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_SETDAYDATA_OFFSET))(this, task, activityData);
+		}
+
+		::System::Boolean OnPreInputAction(::MoleMole::InputActionEvent inputAction)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ONPREINPUTACTION_OFFSET))(this, inputAction);
+		}
+
+		::System::Void UpdateUI()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_UPDATEUI_OFFSET))(this);
+		}
+
+		::System::Void SetRewardState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_SETREWARDSTATE_OFFSET))(this);
+		}
+
+		::System::Boolean IsCanGetReward()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_ISCANGETREWARD_OFFSET))(this);
+		}
+
+		::System::Void TakeReward()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_TAKEREWARD_OFFSET))(this);
+		}
+
+		::System::Boolean CanTakeTaskReward()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER_CANTAKETASKREWARD_OFFSET))(this);
+		}
+
+		::System::Void _TakeReward_b__12_0(::Class_0_16E4307DCC419505_7* rspMsg)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER__TAKEREWARD_B__12_0_OFFSET))(this, rspMsg);
+		}
+
+		::System::Void _TakeReward_b__12_1(::Class_0_16E4307DCC419505_7* errorMsg)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER__TAKEREWARD_B__12_1_OFFSET))(this, errorMsg);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Boolean __base_OnPreInputAction(::MoleMole::InputActionEvent P0)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::InputActionEvent))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONPREINPUTACTION_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_SetDayData(::Class_3_BE75AAF0F7C40C75_3* P0, ::Class_1_D375C91CCE5D3999* P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_3_BE75AAF0F7C40C75_3*, ::Class_1_D375C91CCE5D3999*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYSIGNINROWV2WIDGETCONTROLLER___BASE_SETDAYDATA_OFFSET))(this, P0, P1);
+		}
+	};
+}

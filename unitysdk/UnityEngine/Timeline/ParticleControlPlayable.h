@@ -8,38 +8,46 @@
 
 namespace UnityEngine { class ParticleSystem; }
 
-#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x18191DE0)
-#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_GET_PARTICLESYSTEM_OFFSET UNITYSDK_OFFSET(0x18198220)
-#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x18198200)
-#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_ONBEHAVIOURPAUSE_OFFSET UNITYSDK_OFFSET(0x18198620)
-#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x18198610)
-#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_PREPAREFRAME_OFFSET UNITYSDK_OFFSET(0x18198360)
-#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SETRANDOMSEED_OFFSET UNITYSDK_OFFSET(0x18198240)
-#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SET_PARTICLESYSTEM_OFFSET UNITYSDK_OFFSET(0x18198230)
-#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SIMULATE_OFFSET UNITYSDK_OFFSET(0x18198530)
-#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x18198630)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x1AC956C0)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_GET_NEWUPDATEMODE_OFFSET UNITYSDK_OFFSET(0x1AC95920)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_GET_PARTICLESYSTEM_OFFSET UNITYSDK_OFFSET(0x1AC95900)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_GET_UNFIXUPDATEMODE_OFFSET UNITYSDK_OFFSET(0x1AC95940)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1AC958C0)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_ONBEHAVIOURPAUSE_OFFSET UNITYSDK_OFFSET(0x1AC961B0)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x1AC961A0)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_PREPAREFRAME_OFFSET UNITYSDK_OFFSET(0x1AC95A70)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SETRANDOMSEED_OFFSET UNITYSDK_OFFSET(0x1AC95960)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SET_NEWUPDATEMODE_OFFSET UNITYSDK_OFFSET(0x1AC95930)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SET_PARTICLESYSTEM_OFFSET UNITYSDK_OFFSET(0x1AC95910)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SET_UNFIXUPDATEMODE_OFFSET UNITYSDK_OFFSET(0x1AC95950)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SIMULATE_OFFSET UNITYSDK_OFFSET(0x1AC960D0)
+#define UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC961C0)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int ParticleControlPlayable_TypeDefinitionIndex = 29015;
+	inline static constexpr unsigned int ParticleControlPlayable_TypeDefinitionIndex = 29364;
 
 	class ParticleControlPlayable : public ::UnityEngine::Playables::PlayableBehaviour
 	{
 	public:
 		// static const ::System::Single kUnsetTime; // 0x0
+		// static const ::System::Boolean EnableParticleSimulationProfile; // 0x0
 		::UnityEngine::ParticleSystem* _particleSystem_k__BackingField; // 0x10
 		::System::Single m_LastPlayableTime; // 0x18
 		::System::Single m_LastParticleTime; // 0x1C
 		::System::UInt32 m_RandomSeed; // 0x20
+		::System::Single m_SystemTime; // 0x24
+		::System::Boolean _unFixUpdateMode_k__BackingField; // 0x28
+		::System::Boolean _newUpdateMode_k__BackingField; // 0x29
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE__CTOR_OFFSET))(this);
 		}
 
-		static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::ParticleControlPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::ParticleSystem* component, ::System::UInt32 randomSeed)
+		static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::ParticleControlPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::ParticleSystem* component, ::System::UInt32 randomSeed, ::System::Boolean newUpdateMode, ::System::Boolean unFixUpdateMode)
 		{
-			return ((::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::ParticleControlPlayable*>(*)(::UnityEngine::Playables::PlayableGraph, ::UnityEngine::ParticleSystem*, ::System::UInt32))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_CREATE_OFFSET))(graph, component, randomSeed);
+			return ((::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::ParticleControlPlayable*>(*)(::UnityEngine::Playables::PlayableGraph, ::UnityEngine::ParticleSystem*, ::System::UInt32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_CREATE_OFFSET))(graph, component, randomSeed, newUpdateMode, unFixUpdateMode);
 		}
 
 		::UnityEngine::ParticleSystem* get_particleSystem()
@@ -52,14 +60,34 @@ namespace UnityEngine::Timeline
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::ParticleSystem*))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SET_PARTICLESYSTEM_OFFSET))(this, value);
 		}
 
-		::System::Void Initialize(::UnityEngine::ParticleSystem* ps, ::System::UInt32 randomSeed)
+		::System::Boolean get_newUpdateMode()
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::ParticleSystem*, ::System::UInt32))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_INITIALIZE_OFFSET))(this, ps, randomSeed);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_GET_NEWUPDATEMODE_OFFSET))(this);
 		}
 
-		::System::Void SetRandomSeed()
+		::System::Void set_newUpdateMode(::System::Boolean value)
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SETRANDOMSEED_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SET_NEWUPDATEMODE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_unFixUpdateMode()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_GET_UNFIXUPDATEMODE_OFFSET))(this);
+		}
+
+		::System::Void set_unFixUpdateMode(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SET_UNFIXUPDATEMODE_OFFSET))(this, value);
+		}
+
+		::System::Void Initialize(::UnityEngine::ParticleSystem* ps, ::System::UInt32 randomSeed, ::System::Boolean updateMode, ::System::Boolean unFixUpdateMode)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::ParticleSystem*, ::System::UInt32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_INITIALIZE_OFFSET))(this, ps, randomSeed, updateMode, unFixUpdateMode);
+		}
+
+		static ::System::Void SetRandomSeed(::UnityEngine::ParticleSystem* particleSystem, ::System::UInt32 randomSeed)
+		{
+			return ((::System::Void(*)(::UnityEngine::ParticleSystem*, ::System::UInt32))((::PBYTE)hIl2Cpp + UNITYENGINE_TIMELINE_PARTICLECONTROLPLAYABLE_SETRANDOMSEED_OFFSET))(particleSystem, randomSeed);
 		}
 
 		::System::Void PrepareFrame(::UnityEngine::Playables::Playable playable, ::UnityEngine::Playables::FrameData data)

@@ -1,0 +1,222 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIHollowMainBottomWidgetController.h"
+
+class Class_1_2EF69FD7F867E7F6;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIHollowMainBottomWidgetController_BuffSlot; }
+namespace System { class Action; }
+namespace System { class String; }
+
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_CREATEBUFFSLOT_OFFSET UNITYSDK_OFFSET(0x8C5FED0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_GET__CURSERANDOMSTATE_OFFSET UNITYSDK_OFFSET(0x8C5F7C0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_HANDLENORMALITEM_OFFSET UNITYSDK_OFFSET(0x8C60AC0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_INITBAGMODEL_OFFSET UNITYSDK_OFFSET(0x8C5F710)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_INITITEMENTRY_OFFSET UNITYSDK_OFFSET(0x8C604E0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_INITPLAYERPROPERTY_OFFSET UNITYSDK_OFFSET(0x8C60FC0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_ISMAXCURSESLOT_OFFSET UNITYSDK_OFFSET(0x8C60F60)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C5F5C0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C5F6A0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C5F450)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8C5F500)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_OPENDAMNATIONELIMINATE_OFFSET UNITYSDK_OFFSET(0x8C5F7E0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_SETSTANIMACOLOR_OFFSET UNITYSDK_OFFSET(0x8C61C90)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_SET__CURSERANDOMSTATE_OFFSET UNITYSDK_OFFSET(0x8C5F7D0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_UPDATEAVATAR_OFFSET UNITYSDK_OFFSET(0x8C61C20)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_UPDATEITEMENTRY_OFFSET UNITYSDK_OFFSET(0x8C60330)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_UPDATENORMALITEM_OFFSET UNITYSDK_OFFSET(0x8C608C0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_UPDATESCENEPROPERTY_OFFSET UNITYSDK_OFFSET(0x8C61BB0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8C61CF0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_CREATEBUFFSLOT_OFFSET UNITYSDK_OFFSET(0x8C61D00)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_INITBAGMODEL_OFFSET UNITYSDK_OFFSET(0x8C61D10)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_INITITEMENTRY_OFFSET UNITYSDK_OFFSET(0x8C61D20)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_INITPLAYERPROPERTY_OFFSET UNITYSDK_OFFSET(0x8C61D30)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_ISMAXCURSESLOT_OFFSET UNITYSDK_OFFSET(0x8C61D40)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8C61D50)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8C61DF0)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8C61E00)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8C61E10)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_OPENDAMNATIONELIMINATE_OFFSET UNITYSDK_OFFSET(0x8C61E20)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_SETSTANIMACOLOR_OFFSET UNITYSDK_OFFSET(0x8C61E30)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_UPDATEAVATAR_OFFSET UNITYSDK_OFFSET(0x8C61E40)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_UPDATEITEMENTRY_OFFSET UNITYSDK_OFFSET(0x8C61E50)
+#define MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_UPDATESCENEPROPERTY_OFFSET UNITYSDK_OFFSET(0x8C61ED0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowArpeggioBottomWidgetController_TypeDefinitionIndex = 61426;
+
+	class UIHollowArpeggioBottomWidgetController : public ::MoleMole::UIHollowMainBottomWidgetController
+	{
+	public:
+		// static const ::System::String* blessTitle; // 0x0
+		// static const ::System::Int32 Item1ID = 0x2; // 0x0
+		// static const ::System::Int32 Item2ID = 0x24AB9; // 0x0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void InitBagModel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_INITBAGMODEL_OFFSET))(this);
+		}
+
+		::System::Boolean get__curseRandomState()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_GET__CURSERANDOMSTATE_OFFSET))(this);
+		}
+
+		::System::Void set__curseRandomState(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_SET__CURSERANDOMSTATE_OFFSET))(this, value);
+		}
+
+		::System::Void OpenDamnationEliminate(::System::Boolean showRemove, ::Class_1_2EF69FD7F867E7F6* eventContext, ::System::Action* callback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Class_1_2EF69FD7F867E7F6*, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_OPENDAMNATIONELIMINATE_OFFSET))(this, showRemove, eventContext, callback);
+		}
+
+		::System::Void CreateBuffSlot(::Il2CppArray<::MoleMole::UIHollowMainBottomWidgetController_BuffSlot*>* slots)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::MoleMole::UIHollowMainBottomWidgetController_BuffSlot*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_CREATEBUFFSLOT_OFFSET))(this, slots);
+		}
+
+		::System::Void UpdateItemEntry()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_UPDATEITEMENTRY_OFFSET))(this);
+		}
+
+		::System::Void InitItemEntry()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_INITITEMENTRY_OFFSET))(this);
+		}
+
+		::System::Void UpdateNormalItem(::System::Boolean anim, ::System::Int32 targetvalue, ::System::Boolean playParticle)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_UPDATENORMALITEM_OFFSET))(this, anim, targetvalue, playParticle);
+		}
+
+		::System::Void HandleNormalItem(::System::Int32 count, ::System::Boolean add, ::System::Action* doneCb)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Boolean, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_HANDLENORMALITEM_OFFSET))(this, count, add, doneCb);
+		}
+
+		::System::Boolean IsMaxCurseSlot()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_ISMAXCURSESLOT_OFFSET))(this);
+		}
+
+		::System::Void InitPlayerProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_INITPLAYERPROPERTY_OFFSET))(this);
+		}
+
+		::System::Void UpdateSceneProperty(::System::Boolean anim, ::System::Boolean isInit)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_UPDATESCENEPROPERTY_OFFSET))(this, anim, isInit);
+		}
+
+		::System::Void UpdateAvatar(::System::UInt32 avatarid, ::System::Boolean anim, ::System::Boolean showEffect)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_UPDATEAVATAR_OFFSET))(this, avatarid, anim, showEffect);
+		}
+
+		::System::Void SetStanimaColor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER_SETSTANIMACOLOR_OFFSET))(this);
+		}
+
+		::System::Void __base_CreateBuffSlot(::Il2CppArray<::MoleMole::UIHollowMainBottomWidgetController_BuffSlot*>* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::Il2CppArray<::MoleMole::UIHollowMainBottomWidgetController_BuffSlot*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_CREATEBUFFSLOT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_InitBagModel()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_INITBAGMODEL_OFFSET))(this);
+		}
+
+		::System::Void __base_InitItemEntry()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_INITITEMENTRY_OFFSET))(this);
+		}
+
+		::System::Void __base_InitPlayerProperty()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_INITPLAYERPROPERTY_OFFSET))(this);
+		}
+
+		::System::Boolean __base_IsMaxCurseSlot()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_ISMAXCURSESLOT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OpenDamnationEliminate(::System::Boolean P0, ::Class_1_2EF69FD7F867E7F6* P1, ::System::Action* P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Class_1_2EF69FD7F867E7F6*, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_OPENDAMNATIONELIMINATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_SetStanimaColor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_SETSTANIMACOLOR_OFFSET))(this);
+		}
+
+		::System::Void __base_UpdateAvatar(::System::UInt32 P0, ::System::Boolean P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_UPDATEAVATAR_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_UpdateItemEntry()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_UPDATEITEMENTRY_OFFSET))(this);
+		}
+
+		::System::Void __base_UpdateSceneProperty(::System::Boolean P0, ::System::Boolean P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWARPEGGIOBOTTOMWIDGETCONTROLLER___BASE_UPDATESCENEPROPERTY_OFFSET))(this, P0, P1);
+		}
+	};
+}

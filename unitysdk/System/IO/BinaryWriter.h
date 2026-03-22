@@ -1,6 +1,5 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/System/Decimal.h"
 #include "unitysdk/System/IO/SeekOrigin.h"
 #include "unitysdk/System/Object.h"
 
@@ -9,52 +8,51 @@ namespace System::IO { class Stream; }
 namespace System::Text { class Encoder; }
 namespace System::Text { class Encoding; }
 
-#define SYSTEM_IO_BINARYWRITER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x15C736D0)
-#define SYSTEM_IO_BINARYWRITER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x15C73680)
-#define SYSTEM_IO_BINARYWRITER_FLUSH_OFFSET UNITYSDK_OFFSET(0x15C73710)
-#define SYSTEM_IO_BINARYWRITER_GET_BASESTREAM_OFFSET UNITYSDK_OFFSET(0x15C736F0)
-#define SYSTEM_IO_BINARYWRITER_SEEK_OFFSET UNITYSDK_OFFSET(0x15C73740)
-#define SYSTEM_IO_BINARYWRITER_WRITE7BITENCODEDINT_OFFSET UNITYSDK_OFFSET(0x15C745E0)
-#define SYSTEM_IO_BINARYWRITER_WRITE_10_OFFSET UNITYSDK_OFFSET(0x15C73C10)
-#define SYSTEM_IO_BINARYWRITER_WRITE_11_OFFSET UNITYSDK_OFFSET(0x15C73CA0)
-#define SYSTEM_IO_BINARYWRITER_WRITE_12_OFFSET UNITYSDK_OFFSET(0x15C73DA0)
-#define SYSTEM_IO_BINARYWRITER_WRITE_13_OFFSET UNITYSDK_OFFSET(0x15C73EA0)
-#define SYSTEM_IO_BINARYWRITER_WRITE_14_OFFSET UNITYSDK_OFFSET(0x15C74090)
-#define SYSTEM_IO_BINARYWRITER_WRITE_15_OFFSET UNITYSDK_OFFSET(0x15C74280)
-#define SYSTEM_IO_BINARYWRITER_WRITE_16_OFFSET UNITYSDK_OFFSET(0x15C742D0)
-#define SYSTEM_IO_BINARYWRITER_WRITE_1_OFFSET UNITYSDK_OFFSET(0x15C737E0)
-#define SYSTEM_IO_BINARYWRITER_WRITE_2_OFFSET UNITYSDK_OFFSET(0x15C73810)
-#define SYSTEM_IO_BINARYWRITER_WRITE_3_OFFSET UNITYSDK_OFFSET(0x15C73840)
-#define SYSTEM_IO_BINARYWRITER_WRITE_4_OFFSET UNITYSDK_OFFSET(0x15C738D0)
-#define SYSTEM_IO_BINARYWRITER_WRITE_5_OFFSET UNITYSDK_OFFSET(0x15C73900)
-#define SYSTEM_IO_BINARYWRITER_WRITE_6_OFFSET UNITYSDK_OFFSET(0x15C739E0)
-#define SYSTEM_IO_BINARYWRITER_WRITE_7_OFFSET UNITYSDK_OFFSET(0x15C73AB0)
-#define SYSTEM_IO_BINARYWRITER_WRITE_8_OFFSET UNITYSDK_OFFSET(0x15C73B00)
-#define SYSTEM_IO_BINARYWRITER_WRITE_9_OFFSET UNITYSDK_OFFSET(0x15C73B80)
-#define SYSTEM_IO_BINARYWRITER_WRITE_OFFSET UNITYSDK_OFFSET(0x15C73770)
-#define SYSTEM_IO_BINARYWRITER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15C74640)
-#define SYSTEM_IO_BINARYWRITER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15C73500)
-#define SYSTEM_IO_BINARYWRITER__CTOR_2_OFFSET UNITYSDK_OFFSET(0x15C73670)
-#define SYSTEM_IO_BINARYWRITER__CTOR_3_OFFSET UNITYSDK_OFFSET(0x15C73570)
-#define SYSTEM_IO_BINARYWRITER__CTOR_OFFSET UNITYSDK_OFFSET(0x15C73450)
+#define SYSTEM_IO_BINARYWRITER_CLOSE_OFFSET UNITYSDK_OFFSET(0x17F58040)
+#define SYSTEM_IO_BINARYWRITER_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x17F580B0)
+#define SYSTEM_IO_BINARYWRITER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x17F58060)
+#define SYSTEM_IO_BINARYWRITER_FLUSH_OFFSET UNITYSDK_OFFSET(0x17F580D0)
+#define SYSTEM_IO_BINARYWRITER_SEEK_OFFSET UNITYSDK_OFFSET(0x17F58100)
+#define SYSTEM_IO_BINARYWRITER_WRITE7BITENCODEDINT_OFFSET UNITYSDK_OFFSET(0x17F58F20)
+#define SYSTEM_IO_BINARYWRITER_WRITE_10_OFFSET UNITYSDK_OFFSET(0x17F58610)
+#define SYSTEM_IO_BINARYWRITER_WRITE_11_OFFSET UNITYSDK_OFFSET(0x17F58710)
+#define SYSTEM_IO_BINARYWRITER_WRITE_12_OFFSET UNITYSDK_OFFSET(0x17F58810)
+#define SYSTEM_IO_BINARYWRITER_WRITE_13_OFFSET UNITYSDK_OFFSET(0x17F58A00)
+#define SYSTEM_IO_BINARYWRITER_WRITE_14_OFFSET UNITYSDK_OFFSET(0x17F58BF0)
+#define SYSTEM_IO_BINARYWRITER_WRITE_15_OFFSET UNITYSDK_OFFSET(0x17F58C40)
+#define SYSTEM_IO_BINARYWRITER_WRITE_1_OFFSET UNITYSDK_OFFSET(0x17F581A0)
+#define SYSTEM_IO_BINARYWRITER_WRITE_2_OFFSET UNITYSDK_OFFSET(0x17F581D0)
+#define SYSTEM_IO_BINARYWRITER_WRITE_3_OFFSET UNITYSDK_OFFSET(0x17F58200)
+#define SYSTEM_IO_BINARYWRITER_WRITE_4_OFFSET UNITYSDK_OFFSET(0x17F58290)
+#define SYSTEM_IO_BINARYWRITER_WRITE_5_OFFSET UNITYSDK_OFFSET(0x17F582C0)
+#define SYSTEM_IO_BINARYWRITER_WRITE_6_OFFSET UNITYSDK_OFFSET(0x17F583D0)
+#define SYSTEM_IO_BINARYWRITER_WRITE_7_OFFSET UNITYSDK_OFFSET(0x17F584A0)
+#define SYSTEM_IO_BINARYWRITER_WRITE_8_OFFSET UNITYSDK_OFFSET(0x17F584F0)
+#define SYSTEM_IO_BINARYWRITER_WRITE_9_OFFSET UNITYSDK_OFFSET(0x17F58580)
+#define SYSTEM_IO_BINARYWRITER_WRITE_OFFSET UNITYSDK_OFFSET(0x17F58130)
+#define SYSTEM_IO_BINARYWRITER__CCTOR_OFFSET UNITYSDK_OFFSET(0x17F58F80)
+#define SYSTEM_IO_BINARYWRITER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F57EC0)
+#define SYSTEM_IO_BINARYWRITER__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17F58030)
+#define SYSTEM_IO_BINARYWRITER__CTOR_3_OFFSET UNITYSDK_OFFSET(0x17F57F30)
+#define SYSTEM_IO_BINARYWRITER__CTOR_OFFSET UNITYSDK_OFFSET(0x17F57E10)
 
 namespace System::IO
 {
-	inline static constexpr unsigned int BinaryWriter_TypeDefinitionIndex = 661;
+	inline static constexpr unsigned int BinaryWriter_TypeDefinitionIndex = 629;
 
 	class BinaryWriter : public ::System::Object
 	{
 	public:
 		static ::System::IO::BinaryWriter** StaticGet_Null()
 		{
-			return (::System::IO::BinaryWriter**)Il2CppClass::FromTypeDefinitionIndex(BinaryWriter_TypeDefinitionIndex)->GetStaticField(0x89B0);
+			return (::System::IO::BinaryWriter**)Il2CppClass::FromTypeDefinitionIndex(BinaryWriter_TypeDefinitionIndex)->GetStaticField(0x1070);
 		}
-		::System::Text::Encoder* _encoder; // 0x10
-		::System::Text::Encoding* _encoding; // 0x18
+		::Il2CppArray<::System::Byte>* _largeByteBuffer; // 0x10
+		::System::Text::Encoder* _encoder; // 0x18
 		::Il2CppArray<::System::Char>* _tmpOneCharBuffer; // 0x20
 		::System::IO::Stream* OutStream; // 0x28
-		::Il2CppArray<::System::Byte>* _largeByteBuffer; // 0x30
-		::Il2CppArray<::System::Byte>* _buffer; // 0x38
+		::Il2CppArray<::System::Byte>* _buffer; // 0x30
+		::System::Text::Encoding* _encoding; // 0x38
 		::System::Int32 _maxChars; // 0x40
 		::System::Boolean _leaveOpen; // 0x44
 
@@ -83,6 +81,11 @@ namespace System::IO
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER__CCTOR_OFFSET))();
 		}
 
+		::System::Void Close()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_CLOSE_OFFSET))(this);
+		}
+
 		::System::Void Dispose(::System::Boolean disposing)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_DISPOSE_OFFSET))(this, disposing);
@@ -91,11 +94,6 @@ namespace System::IO
 		::System::Void Dispose_1()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_DISPOSE_1_OFFSET))(this);
-		}
-
-		::System::IO::Stream* get_BaseStream()
-		{
-			return ((::System::IO::Stream*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_GET_BASESTREAM_OFFSET))(this);
 		}
 
 		::System::Void Flush()
@@ -148,49 +146,44 @@ namespace System::IO
 			return ((::System::Void(*)(::PVOID, ::System::Double))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_7_OFFSET))(this, value);
 		}
 
-		::System::Void Write_8(::System::Decimal value)
+		::System::Void Write_8(::System::Int16 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Decimal))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_8_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Int16))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_8_OFFSET))(this, value);
 		}
 
-		::System::Void Write_9(::System::Int16 value)
+		::System::Void Write_9(::System::UInt16 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int16))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_9_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::UInt16))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_9_OFFSET))(this, value);
 		}
 
-		::System::Void Write_10(::System::UInt16 value)
+		::System::Void Write_10(::System::Int32 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::UInt16))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_10_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_10_OFFSET))(this, value);
 		}
 
-		::System::Void Write_11(::System::Int32 value)
+		::System::Void Write_11(::System::UInt32 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_11_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_11_OFFSET))(this, value);
 		}
 
-		::System::Void Write_12(::System::UInt32 value)
+		::System::Void Write_12(::System::Int64 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_12_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_12_OFFSET))(this, value);
 		}
 
-		::System::Void Write_13(::System::Int64 value)
+		::System::Void Write_13(::System::UInt64 value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_13_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::UInt64))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_13_OFFSET))(this, value);
 		}
 
-		::System::Void Write_14(::System::UInt64 value)
+		::System::Void Write_14(::System::Single value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::UInt64))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_14_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_14_OFFSET))(this, value);
 		}
 
-		::System::Void Write_15(::System::Single value)
+		::System::Void Write_15(::System::String* value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_15_OFFSET))(this, value);
-		}
-
-		::System::Void Write_16(::System::String* value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_16_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_IO_BINARYWRITER_WRITE_15_OFFSET))(this, value);
 		}
 
 		::System::Void Write7BitEncodedInt(::System::Int32 value)

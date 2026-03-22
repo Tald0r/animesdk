@@ -5,12 +5,12 @@
 
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_APPDOMAINUNLOADEDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15AF6570)
-#define SYSTEM_APPDOMAINUNLOADEDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x15AF64D0)
+#define SYSTEM_APPDOMAINUNLOADEDEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1917A430)
+#define SYSTEM_APPDOMAINUNLOADEDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1917A390)
 
 namespace System
 {
-	inline static constexpr unsigned int AppDomainUnloadedException_TypeDefinitionIndex = 191;
+	inline static constexpr unsigned int AppDomainUnloadedException_TypeDefinitionIndex = 179;
 
 	class AppDomainUnloadedException : public ::System::SystemException
 	{

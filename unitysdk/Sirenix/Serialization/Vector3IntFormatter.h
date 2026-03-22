@@ -1,0 +1,47 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Sirenix/Serialization/MinimalBaseFormatter_1.h"
+#include "unitysdk/UnityEngine/Vector3Int.h"
+
+namespace Sirenix::Serialization { class IDataReader; }
+namespace Sirenix::Serialization { class IDataWriter; }
+namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
+
+#define SIRENIX_SERIALIZATION_VECTOR3INTFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1B155740)
+#define SIRENIX_SERIALIZATION_VECTOR3INTFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B155860)
+#define SIRENIX_SERIALIZATION_VECTOR3INTFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B155A00)
+#define SIRENIX_SERIALIZATION_VECTOR3INTFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1559A0)
+
+namespace Sirenix::Serialization
+{
+	inline static constexpr unsigned int Vector3IntFormatter_TypeDefinitionIndex = 80435;
+
+	class Vector3IntFormatter : public ::Sirenix::Serialization::MinimalBaseFormatter_1<::UnityEngine::Vector3Int>
+	{
+	public:
+		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_Serializer()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(Vector3IntFormatter_TypeDefinitionIndex)->GetStaticField(0x45100);
+		}
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_SERIALIZATION_VECTOR3INTFORMATTER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + SIRENIX_SERIALIZATION_VECTOR3INTFORMATTER__CCTOR_OFFSET))();
+		}
+
+		::System::Void Read(::UnityEngine::Vector3Int& value, ::Sirenix::Serialization::IDataReader* reader)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3Int&, ::Sirenix::Serialization::IDataReader*))((::PBYTE)hIl2Cpp + SIRENIX_SERIALIZATION_VECTOR3INTFORMATTER_READ_OFFSET))(this, value, reader);
+		}
+
+		::System::Void Write(::UnityEngine::Vector3Int& value, ::Sirenix::Serialization::IDataWriter* writer)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3Int&, ::Sirenix::Serialization::IDataWriter*))((::PBYTE)hIl2Cpp + SIRENIX_SERIALIZATION_VECTOR3INTFORMATTER_WRITE_OFFSET))(this, value, writer);
+		}
+	};
+}

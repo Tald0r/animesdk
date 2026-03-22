@@ -5,28 +5,29 @@
 namespace System { class String; }
 namespace System::IO { class BinaryWriter; }
 
-#define SIMPLEJSON_JSONDATA_CLONE_OFFSET UNITYSDK_OFFSET(0x17B53950)
-#define SIMPLEJSON_JSONDATA_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x17B52A30)
-#define SIMPLEJSON_JSONDATA_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x17B53190)
-#define SIMPLEJSON_JSONDATA_SET_VALUE_OFFSET UNITYSDK_OFFSET(0x17B52A40)
-#define SIMPLEJSON_JSONDATA_TOSTRINGWITHCOMMENT_OFFSET UNITYSDK_OFFSET(0x17B52D00)
-#define SIMPLEJSON_JSONDATA_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x17B52CD0)
-#define SIMPLEJSON_JSONDATA_TOSTRING_2_OFFSET UNITYSDK_OFFSET(0x17B53160)
-#define SIMPLEJSON_JSONDATA_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17B52CA0)
-#define SIMPLEJSON_JSONDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17B52A60)
-#define SIMPLEJSON_JSONDATA__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17B52B00)
-#define SIMPLEJSON_JSONDATA__CTOR_3_OFFSET UNITYSDK_OFFSET(0x17B52BA0)
-#define SIMPLEJSON_JSONDATA__CTOR_4_OFFSET UNITYSDK_OFFSET(0x17B52C20)
-#define SIMPLEJSON_JSONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x17B52A50)
+#define SIMPLEJSON_JSONDATA_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x1ABCBB30)
+#define SIMPLEJSON_JSONDATA_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1ABCC0E0)
+#define SIMPLEJSON_JSONDATA_SET_VALUE_OFFSET UNITYSDK_OFFSET(0x1ABCBB40)
+#define SIMPLEJSON_JSONDATA_TOSTRING_1_OFFSET UNITYSDK_OFFSET(0x1ABCBEF0)
+#define SIMPLEJSON_JSONDATA_TOSTRING_2_OFFSET UNITYSDK_OFFSET(0x1ABCC000)
+#define SIMPLEJSON_JSONDATA_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1ABCBE30)
+#define SIMPLEJSON_JSONDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1ABCBB90)
+#define SIMPLEJSON_JSONDATA__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1ABCBBF0)
+#define SIMPLEJSON_JSONDATA__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1ABCBC50)
+#define SIMPLEJSON_JSONDATA__CTOR_4_OFFSET UNITYSDK_OFFSET(0x1ABCBCB0)
+#define SIMPLEJSON_JSONDATA__CTOR_5_OFFSET UNITYSDK_OFFSET(0x1ABCBD10)
+#define SIMPLEJSON_JSONDATA__CTOR_6_OFFSET UNITYSDK_OFFSET(0x1ABCBD70)
+#define SIMPLEJSON_JSONDATA__CTOR_7_OFFSET UNITYSDK_OFFSET(0x1ABCBDD0)
+#define SIMPLEJSON_JSONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABCBB50)
 
 namespace SimpleJSON
 {
-	inline static constexpr unsigned int JSONData_TypeDefinitionIndex = 9083;
+	inline static constexpr unsigned int JSONData_TypeDefinitionIndex = 8022;
 
 	class JSONData : public ::SimpleJSON::JSONNode
 	{
 	public:
-		::System::String* m_Data; // 0x28
+		::System::String* m_Data; // 0x18
 
 		::System::Void _ctor(::System::String* aData)
 		{
@@ -53,6 +54,21 @@ namespace SimpleJSON
 			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + SIMPLEJSON_JSONDATA__CTOR_4_OFFSET))(this, aData);
 		}
 
+		::System::Void _ctor_5(::System::UInt32 aData)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + SIMPLEJSON_JSONDATA__CTOR_5_OFFSET))(this, aData);
+		}
+
+		::System::Void _ctor_6(::System::Int64 aData)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int64))((::PBYTE)hIl2Cpp + SIMPLEJSON_JSONDATA__CTOR_6_OFFSET))(this, aData);
+		}
+
+		::System::Void _ctor_7(::System::UInt64 aData)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt64))((::PBYTE)hIl2Cpp + SIMPLEJSON_JSONDATA__CTOR_7_OFFSET))(this, aData);
+		}
+
 		::System::String* get_Value()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SIMPLEJSON_JSONDATA_GET_VALUE_OFFSET))(this);
@@ -73,11 +89,6 @@ namespace SimpleJSON
 			return ((::System::String*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SIMPLEJSON_JSONDATA_TOSTRING_1_OFFSET))(this, aPrefix);
 		}
 
-		::System::String* ToStringWithComment(::System::String* aPrefix)
-		{
-			return ((::System::String*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + SIMPLEJSON_JSONDATA_TOSTRINGWITHCOMMENT_OFFSET))(this, aPrefix);
-		}
-
 		::System::String* ToString_2(::System::Boolean escape)
 		{
 			return ((::System::String*(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + SIMPLEJSON_JSONDATA_TOSTRING_2_OFFSET))(this, escape);
@@ -86,11 +97,6 @@ namespace SimpleJSON
 		::System::Void Serialize(::System::IO::BinaryWriter* aWriter)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::IO::BinaryWriter*))((::PBYTE)hIl2Cpp + SIMPLEJSON_JSONDATA_SERIALIZE_OFFSET))(this, aWriter);
-		}
-
-		::SimpleJSON::JSONNode* Clone()
-		{
-			return ((::SimpleJSON::JSONNode*(*)(::PVOID))((::PBYTE)hIl2Cpp + SIMPLEJSON_JSONDATA_CLONE_OFFSET))(this);
 		}
 	};
 }

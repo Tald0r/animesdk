@@ -1,0 +1,106 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_BCB661674264F407;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { template <typename T> class Action_1; }
+
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_GET_GETVIEW_OFFSET UNITYSDK_OFFSET(0xDC32910)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xDC32D10)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_ONPREVIEWBTNCLICK_OFFSET UNITYSDK_OFFSET(0xDC33710)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xDC32DB0)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xDC32920)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xDC32C60)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_SETDEMOTRIALPREVIEWBTN_OFFSET UNITYSDK_OFFSET(0xDC32E90)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_SETPREVIEWBANGBOO_OFFSET UNITYSDK_OFFSET(0xDC332C0)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_SETPREVIEWWEAPON_OFFSET UNITYSDK_OFFSET(0xDC33490)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xDC337C0)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xDC337F0)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xDC33860)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xDC338E0)
+#define MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xDC33940)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityDemoTrialPreviewBtnWidgetController_TypeDefinitionIndex = 46497;
+
+	class UIActivityDemoTrialPreviewBtnWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_BCB661674264F407* _view; // 0x2A0
+		::System::Int32 previewID; // 0x2A8
+		::System::Action_1<::System::Int32>* previewCallback; // 0x2B0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Class_2_BCB661674264F407* get_GetView()
+		{
+			return ((::Class_2_BCB661674264F407*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_GET_GETVIEW_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void SetDemoTrialPreviewBtn(::System::Int32 roleID, ::System::Action_1<::System::Int32>* previewCallback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_SETDEMOTRIALPREVIEWBTN_OFFSET))(this, roleID, previewCallback);
+		}
+
+		::System::Void SetPreviewBangboo(::System::Int32 bangbooID, ::System::Action_1<::System::Int32>* previewCallback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_SETPREVIEWBANGBOO_OFFSET))(this, bangbooID, previewCallback);
+		}
+
+		::System::Void SetPreviewWeapon(::System::Int32 weaponID, ::System::Action_1<::System::Int32>* previewCallback)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_SETPREVIEWWEAPON_OFFSET))(this, weaponID, previewCallback);
+		}
+
+		::System::Void OnPreviewBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER_ONPREVIEWBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYDEMOTRIALPREVIEWBTNWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

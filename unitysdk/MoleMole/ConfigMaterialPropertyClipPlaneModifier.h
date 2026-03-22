@@ -1,0 +1,137 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ConfigMaterialPropertyModifier.h"
+#include "unitysdk/MoleMole/MaterialPropertyModifierValueBool.h"
+#include "unitysdk/MoleMole/MaterialPropertyModifierValueColor.h"
+#include "unitysdk/MoleMole/MaterialPropertyModifierValueFloat.h"
+
+class Class_1_9610394F487FC231;
+
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_DOAFTERONENTER_OFFSET UNITYSDK_OFFSET(0x8064AB0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_DOONENTER_OFFSET UNITYSDK_OFFSET(0x8064A00)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_DOWARMUP_OFFSET UNITYSDK_OFFSET(0x16BAC020)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_PREPAREONENTER_OFFSET UNITYSDK_OFFSET(0x8064850)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_PREPAREONEXIT_OFFSET UNITYSDK_OFFSET(0x8064C60)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_PROCESSENTER_OFFSET UNITYSDK_OFFSET(0x8064B70)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_PROCESSEXIT_OFFSET UNITYSDK_OFFSET(0x8064D00)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_PROCESSKEEP_OFFSET UNITYSDK_OFFSET(0x16BAB450)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_SYNCENABLES_OFFSET UNITYSDK_OFFSET(0x16BAADB0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_SYNCVALUES_OFFSET UNITYSDK_OFFSET(0x16BAA7B0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0x16BAC0C0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_DOAFTERONENTER_OFFSET UNITYSDK_OFFSET(0x16BAC0D0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_DOONENTER_OFFSET UNITYSDK_OFFSET(0x16BAC0E0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_DOWARMUP_OFFSET UNITYSDK_OFFSET(0x16BAC0F0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_PREPAREONENTER_OFFSET UNITYSDK_OFFSET(0x16BAC150)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_PREPAREONEXIT_OFFSET UNITYSDK_OFFSET(0x16BAC1B0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_PROCESSENTER_OFFSET UNITYSDK_OFFSET(0x16BAC220)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_PROCESSEXIT_OFFSET UNITYSDK_OFFSET(0x16BAC2D0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int ConfigMaterialPropertyClipPlaneModifier_TypeDefinitionIndex = 52044;
+
+	class ConfigMaterialPropertyClipPlaneModifier : public ::MoleMole::ConfigMaterialPropertyModifier
+	{
+	public:
+		::MoleMole::MaterialPropertyModifierValueFloat _SoftLightWidth; // 0x48
+		::MoleMole::MaterialPropertyModifierValueColor _SoftLightColor; // 0x50
+		::MoleMole::MaterialPropertyModifierValueBool _ClipPlaneXZ; // 0x64
+		::MoleMole::MaterialPropertyModifierValueBool _SoftLight; // 0x67
+		::MoleMole::MaterialPropertyModifierValueBool _HardLight; // 0x6A
+		::MoleMole::MaterialPropertyModifierValueBool _ReversePlaneXZ; // 0x6D
+		::MoleMole::MaterialPropertyModifierValueBool _PlaneClipReverse; // 0x70
+		::MoleMole::MaterialPropertyModifierValueBool _ClipPlane; // 0x73
+		::MoleMole::MaterialPropertyModifierValueFloat _HardLightWidth; // 0x78
+		::MoleMole::MaterialPropertyModifierValueColor _HardLightColor; // 0x80
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void PrepareOnEnter()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_PREPAREONENTER_OFFSET))(this);
+		}
+
+		::System::Void DoOnEnter(::Class_1_9610394F487FC231* instance)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_DOONENTER_OFFSET))(this, instance);
+		}
+
+		::System::Void DoAfterOnEnter(::Class_1_9610394F487FC231* instance)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_DOAFTERONENTER_OFFSET))(this, instance);
+		}
+
+		::System::Void ProcessEnter(::Class_1_9610394F487FC231* instance, ::System::Single timer)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_PROCESSENTER_OFFSET))(this, instance, timer);
+		}
+
+		::System::Void PrepareOnExit(::Class_1_9610394F487FC231* instance)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_PREPAREONEXIT_OFFSET))(this, instance);
+		}
+
+		::System::Void ProcessExit(::Class_1_9610394F487FC231* instance, ::System::Single timer)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_PROCESSEXIT_OFFSET))(this, instance, timer);
+		}
+
+		::System::Void SyncValues(::Class_1_9610394F487FC231* instance)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_SYNCVALUES_OFFSET))(this, instance);
+		}
+
+		::System::Void SyncEnables(::Class_1_9610394F487FC231* instance, ::System::Boolean stop)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_SYNCENABLES_OFFSET))(this, instance, stop);
+		}
+
+		::System::Void ProcessKeep(::Class_1_9610394F487FC231* instance, ::System::Single timer)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_PROCESSKEEP_OFFSET))(this, instance, timer);
+		}
+
+		::System::Void DoWarmUp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_DOWARMUP_OFFSET))(this);
+		}
+
+		::System::Void __base_DoAfterOnEnter(::Class_1_9610394F487FC231* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_DOAFTERONENTER_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_DoOnEnter(::Class_1_9610394F487FC231* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_DOONENTER_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_DoWarmUp()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_DOWARMUP_OFFSET))(this);
+		}
+
+		::System::Void __base_PrepareOnEnter()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_PREPAREONENTER_OFFSET))(this);
+		}
+
+		::System::Void __base_PrepareOnExit(::Class_1_9610394F487FC231* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_PREPAREONEXIT_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_ProcessEnter(::Class_1_9610394F487FC231* P0, ::System::Single P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_PROCESSENTER_OFFSET))(this, P0, P1);
+		}
+
+		::System::Void __base_ProcessExit(::Class_1_9610394F487FC231* P0, ::System::Single P1)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_1_9610394F487FC231*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER___BASE_PROCESSEXIT_OFFSET))(this, P0, P1);
+		}
+	};
+}

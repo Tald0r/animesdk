@@ -6,16 +6,14 @@
 namespace System::Runtime::Serialization::Formatters::Binary { class __BinaryParser; }
 namespace System::Runtime::Serialization::Formatters::Binary { class __BinaryWriter; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_DUMP_OFFSET UNITYSDK_OFFSET(0x15D1FBD0)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_READ_OFFSET UNITYSDK_OFFSET(0x15D1FBA0)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_SET_1_OFFSET UNITYSDK_OFFSET(0x15D1FB60)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_SET_OFFSET UNITYSDK_OFFSET(0x15D1FB50)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_WRITE_OFFSET UNITYSDK_OFFSET(0x15D1FB70)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED__CTOR_OFFSET UNITYSDK_OFFSET(0x15D1FB40)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_READ_OFFSET UNITYSDK_OFFSET(0x1951DD10)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_SET_OFFSET UNITYSDK_OFFSET(0x1951DCD0)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_WRITE_OFFSET UNITYSDK_OFFSET(0x1951DCE0)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED__CTOR_OFFSET UNITYSDK_OFFSET(0x1951DCC0)
 
 namespace System::Runtime::Serialization::Formatters::Binary
 {
-	inline static constexpr unsigned int MemberPrimitiveUnTyped_TypeDefinitionIndex = 1144;
+	inline static constexpr unsigned int MemberPrimitiveUnTyped_TypeDefinitionIndex = 1196;
 
 	class MemberPrimitiveUnTyped : public ::System::Object
 	{
@@ -33,11 +31,6 @@ namespace System::Runtime::Serialization::Formatters::Binary
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE, ::System::Object*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_SET_OFFSET))(this, typeInformation, value);
 		}
 
-		::System::Void Set_1(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE typeInformation)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_SET_1_OFFSET))(this, typeInformation);
-		}
-
 		::System::Void Write(::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter* sout)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_WRITE_OFFSET))(this, sout);
@@ -46,11 +39,6 @@ namespace System::Runtime::Serialization::Formatters::Binary
 		::System::Void Read(::System::Runtime::Serialization::Formatters::Binary::__BinaryParser* input)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Runtime::Serialization::Formatters::Binary::__BinaryParser*))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_READ_OFFSET))(this, input);
-		}
-
-		::System::Void Dump()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_MEMBERPRIMITIVEUNTYPED_DUMP_OFFSET))(this);
 		}
 	};
 }

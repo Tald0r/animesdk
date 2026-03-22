@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MONO_GLOBALIZATION_UNICODE_CODEPOINTINDEXER_TABLERANGE__CTOR_OFFSET UNITYSDK_OFFSET(0x1FFD480)
+#define MONO_GLOBALIZATION_UNICODE_CODEPOINTINDEXER_TABLERANGE__CTOR_OFFSET UNITYSDK_OFFSET(0x8D6930)
 
 namespace Mono::Globalization::Unicode
 {
-	inline static constexpr unsigned int CodePointIndexer_TableRange_TypeDefinitionIndex = 30;
+	inline static constexpr unsigned int CodePointIndexer_TableRange_TypeDefinitionIndex = 33;
 
 	struct alignas(4) CodePointIndexer_TableRange
 	{

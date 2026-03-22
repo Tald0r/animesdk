@@ -5,17 +5,19 @@
 namespace System { class Object; }
 namespace System { class String; }
 namespace System { class Type; }
+namespace System::Globalization { class CultureInfo; }
 namespace System::Globalization { class NumberFormatInfo; }
 
-#define SYSTEM_COMPONENTMODEL_INT32CONVERTER_FROMSTRING_1_OFFSET UNITYSDK_OFFSET(0x17E73D90)
-#define SYSTEM_COMPONENTMODEL_INT32CONVERTER_FROMSTRING_OFFSET UNITYSDK_OFFSET(0x17E73CE0)
-#define SYSTEM_COMPONENTMODEL_INT32CONVERTER_GET_TARGETTYPE_OFFSET UNITYSDK_OFFSET(0x17E73CB0)
-#define SYSTEM_COMPONENTMODEL_INT32CONVERTER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17E73DD0)
-#define SYSTEM_COMPONENTMODEL_INT32CONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x17E73E60)
+#define SYSTEM_COMPONENTMODEL_INT32CONVERTER_FROMSTRING_1_OFFSET UNITYSDK_OFFSET(0x197E3440)
+#define SYSTEM_COMPONENTMODEL_INT32CONVERTER_FROMSTRING_2_OFFSET UNITYSDK_OFFSET(0x197E3480)
+#define SYSTEM_COMPONENTMODEL_INT32CONVERTER_FROMSTRING_OFFSET UNITYSDK_OFFSET(0x197E3390)
+#define SYSTEM_COMPONENTMODEL_INT32CONVERTER_GET_TARGETTYPE_OFFSET UNITYSDK_OFFSET(0x197E3360)
+#define SYSTEM_COMPONENTMODEL_INT32CONVERTER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x197E34C0)
+#define SYSTEM_COMPONENTMODEL_INT32CONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x197E3550)
 
 namespace System::ComponentModel
 {
-	inline static constexpr unsigned int Int32Converter_TypeDefinitionIndex = 2591;
+	inline static constexpr unsigned int Int32Converter_TypeDefinitionIndex = 2919;
 
 	class Int32Converter : public ::System::ComponentModel::BaseNumberConverter
 	{
@@ -38,6 +40,11 @@ namespace System::ComponentModel
 		::System::Object* FromString_1(::System::String* value, ::System::Globalization::NumberFormatInfo* formatInfo)
 		{
 			return ((::System::Object*(*)(::PVOID, ::System::String*, ::System::Globalization::NumberFormatInfo*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_INT32CONVERTER_FROMSTRING_1_OFFSET))(this, value, formatInfo);
+		}
+
+		::System::Object* FromString_2(::System::String* value, ::System::Globalization::CultureInfo* culture)
+		{
+			return ((::System::Object*(*)(::PVOID, ::System::String*, ::System::Globalization::CultureInfo*))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_INT32CONVERTER_FROMSTRING_2_OFFSET))(this, value, culture);
 		}
 
 		::System::String* ToString(::System::Object* value, ::System::Globalization::NumberFormatInfo* formatInfo)

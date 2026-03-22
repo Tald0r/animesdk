@@ -5,19 +5,16 @@
 
 namespace System { class String; }
 namespace System { class Type; }
+namespace System::Text { class StringBuilder; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_DATATYPE_OFFSET UNITYSDK_OFFSET(0x17DAB500)
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_ELEMENTNAME_OFFSET UNITYSDK_OFFSET(0x17DAB520)
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_FORM_OFFSET UNITYSDK_OFFSET(0x17DAB540)
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_ISNULLABLESPECIFIED_OFFSET UNITYSDK_OFFSET(0x17DAB570)
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_ISNULLABLE_OFFSET UNITYSDK_OFFSET(0x17DAB560)
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_NAMESPACE_OFFSET UNITYSDK_OFFSET(0x17DAB550)
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_NESTINGLEVEL_OFFSET UNITYSDK_OFFSET(0x17DAB590)
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x17DAB580)
+#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_ADDKEYHASH_OFFSET UNITYSDK_OFFSET(0x1910EE90)
+#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_DATATYPE_OFFSET UNITYSDK_OFFSET(0x1910EE50)
+#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_ELEMENTNAME_OFFSET UNITYSDK_OFFSET(0x1910EE70)
+#define SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1910EE40)
 
 namespace System::Xml::Serialization
 {
-	inline static constexpr unsigned int XmlArrayItemAttribute_TypeDefinitionIndex = 1983;
+	inline static constexpr unsigned int XmlArrayItemAttribute_TypeDefinitionIndex = 1877;
 
 	class XmlArrayItemAttribute : public ::System::Attribute
 	{
@@ -26,10 +23,15 @@ namespace System::Xml::Serialization
 		::System::String* elementName; // 0x18
 		::System::String* ns; // 0x20
 		::System::String* dataType; // 0x28
-		::System::Boolean isNullable; // 0x30
-		::System::Boolean isNullableSpecified; // 0x31
+		::System::Boolean isNullableSpecified; // 0x30
+		::System::Boolean isNullable; // 0x31
 		::System::Int32 nestingLevel; // 0x34
 		::System::Xml::Schema::XmlSchemaForm form; // 0x38
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE__CTOR_OFFSET))(this);
+		}
 
 		::System::String* get_DataType()
 		{
@@ -41,34 +43,9 @@ namespace System::Xml::Serialization
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_ELEMENTNAME_OFFSET))(this);
 		}
 
-		::System::Xml::Schema::XmlSchemaForm get_Form()
+		::System::Void AddKeyHash(::System::Text::StringBuilder* sb)
 		{
-			return ((::System::Xml::Schema::XmlSchemaForm(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_FORM_OFFSET))(this);
-		}
-
-		::System::String* get_Namespace()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_NAMESPACE_OFFSET))(this);
-		}
-
-		::System::Boolean get_IsNullable()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_ISNULLABLE_OFFSET))(this);
-		}
-
-		::System::Boolean get_IsNullableSpecified()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_ISNULLABLESPECIFIED_OFFSET))(this);
-		}
-
-		::System::Type* get_Type()
-		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_TYPE_OFFSET))(this);
-		}
-
-		::System::Int32 get_NestingLevel()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_GET_NESTINGLEVEL_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Text::StringBuilder*))((::PBYTE)hIl2Cpp + SYSTEM_XML_SERIALIZATION_XMLARRAYITEMATTRIBUTE_ADDKEYHASH_OFFSET))(this, sb);
 		}
 	};
 }

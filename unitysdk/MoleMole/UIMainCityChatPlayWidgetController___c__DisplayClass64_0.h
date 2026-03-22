@@ -1,0 +1,104 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace MoleMole { class UIMainCityChatPlayWidgetController; }
+namespace System { class Action; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine::Events { class UnityAction; }
+
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__CTOR_OFFSET UNITYSDK_OFFSET(0xABFDDE0)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__10_OFFSET UNITYSDK_OFFSET(0xABFECB0)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__11_OFFSET UNITYSDK_OFFSET(0xABFED10)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__1_OFFSET UNITYSDK_OFFSET(0xABFE740)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__2_OFFSET UNITYSDK_OFFSET(0xABFE7A0)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__3_OFFSET UNITYSDK_OFFSET(0xABFEA50)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__6_OFFSET UNITYSDK_OFFSET(0xABFEE80)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__7_OFFSET UNITYSDK_OFFSET(0xABFE8E0)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__8_OFFSET UNITYSDK_OFFSET(0xABFE9F0)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__9_OFFSET UNITYSDK_OFFSET(0xABFEB60)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_G__ONFINISH_4_OFFSET UNITYSDK_OFFSET(0xABFEBC0)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_G__OPENNARRATORSCREEN_0_OFFSET UNITYSDK_OFFSET(0xABFDDF0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIMainCityChatPlayWidgetController___c__DisplayClass64_0_TypeDefinitionIndex = 53848;
+
+	class UIMainCityChatPlayWidgetController___c__DisplayClass64_0 : public ::System::Object
+	{
+	public:
+		::System::Action* onFadeInFinished; // 0x10
+		::System::Action* onFinished; // 0x18
+		::System::String* soundEvent; // 0x20
+		::System::Action* __9__7; // 0x28
+		::UnityEngine::Events::UnityAction* __9__9; // 0x30
+		::System::Collections::Generic::List_1<::System::String*>* textKeys; // 0x38
+		::UnityEngine::Events::UnityAction* __9__8; // 0x40
+		::MoleMole::UIMainCityChatPlayWidgetController* __4__this; // 0x48
+		::System::Boolean anim; // 0x50
+		::System::Boolean isSkip; // 0x51
+		::System::Single speakSpeed; // 0x54
+		::System::Single delay; // 0x58
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Void _ShowNarratorScreen_g__OpenNarratorScreen_0()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_G__OPENNARRATORSCREEN_0_OFFSET))(this);
+		}
+
+		::System::Void _ShowNarratorScreen_b__1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__1_OFFSET))(this);
+		}
+
+		::System::Void _ShowNarratorScreen_b__2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__2_OFFSET))(this);
+		}
+
+		::System::Void _ShowNarratorScreen_b__7()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__7_OFFSET))(this);
+		}
+
+		::System::Void _ShowNarratorScreen_b__8()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__8_OFFSET))(this);
+		}
+
+		::System::Void _ShowNarratorScreen_b__3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__3_OFFSET))(this);
+		}
+
+		::System::Void _ShowNarratorScreen_b__9()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__9_OFFSET))(this);
+		}
+
+		::System::Void _ShowNarratorScreen_g__OnFinish_4()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_G__ONFINISH_4_OFFSET))(this);
+		}
+
+		::System::Void _ShowNarratorScreen_b__10()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__10_OFFSET))(this);
+		}
+
+		::System::Void _ShowNarratorScreen_b__11()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__11_OFFSET))(this);
+		}
+
+		::System::Void _ShowNarratorScreen_b__6()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS64_0__SHOWNARRATORSCREEN_B__6_OFFSET))(this);
+		}
+	};
+}

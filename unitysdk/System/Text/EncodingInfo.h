@@ -4,15 +4,14 @@
 
 namespace System { class String; }
 
-#define SYSTEM_TEXT_ENCODINGINFO_EQUALS_OFFSET UNITYSDK_OFFSET(0x15B5F750)
-#define SYSTEM_TEXT_ENCODINGINFO_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x15B5F7B0)
-#define SYSTEM_TEXT_ENCODINGINFO_GET_CODEPAGE_OFFSET UNITYSDK_OFFSET(0x15B5F740)
-#define SYSTEM_TEXT_ENCODINGINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0x15B5F7C0)
-#define SYSTEM_TEXT_ENCODINGINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x15B5F730)
+#define SYSTEM_TEXT_ENCODINGINFO_EQUALS_OFFSET UNITYSDK_OFFSET(0x17F7B1F0)
+#define SYSTEM_TEXT_ENCODINGINFO_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x17F7B250)
+#define SYSTEM_TEXT_ENCODINGINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F7B260)
+#define SYSTEM_TEXT_ENCODINGINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x17F7B1E0)
 
 namespace System::Text
 {
-	inline static constexpr unsigned int EncodingInfo_TypeDefinitionIndex = 492;
+	inline static constexpr unsigned int EncodingInfo_TypeDefinitionIndex = 478;
 
 	class EncodingInfo : public ::System::Object
 	{
@@ -29,11 +28,6 @@ namespace System::Text
 		::System::Void _ctor_1()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODINGINFO__CTOR_1_OFFSET))(this);
-		}
-
-		::System::Int32 get_CodePage()
-		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODINGINFO_GET_CODEPAGE_OFFSET))(this);
 		}
 
 		::System::Boolean Equals(::System::Object* value)

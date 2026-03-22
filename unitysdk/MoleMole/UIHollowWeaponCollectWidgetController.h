@@ -1,0 +1,200 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_1_0D6706375CDAAE8C;
+class Class_2_79F6D62CE30E3F8E_156;
+class Class_2_DA8BF519212BAE65;
+class Class_3_8073069F10AF85F5;
+namespace MoleMole { class MonoGamepadNavigatableList; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class EventArgs; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+namespace UnityEngine::UI::Extension { class UILocalizationText; }
+template <typename T> class Class_2_7AE1A22930C1CD01;
+
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_CUSTOMSORTACTION_OFFSET UNITYSDK_OFFSET(0x8A39C00)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_FETCHCFGS_OFFSET UNITYSDK_OFFSET(0x8A373D0)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_GET_CURFOCUSED_OFFSET UNITYSDK_OFFSET(0x8A391C0)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_INITSORT_OFFSET UNITYSDK_OFFSET(0x8A38200)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_MATCHFUNCCOLLECTED_OFFSET UNITYSDK_OFFSET(0x8A387C0)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8A38CA0)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONSCROLLVIEWSELECTHANDLE_OFFSET UNITYSDK_OFFSET(0x8A39020)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0x8A39B20)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONSORTORFILTERCHANGED_OFFSET UNITYSDK_OFFSET(0x8A389B0)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8A39A40)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8A36E30)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8A38130)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_OPENINFO_OFFSET UNITYSDK_OFFSET(0x8A3A0A0)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_REFRESHPROGRESSTITLETEXT_OFFSET UNITYSDK_OFFSET(0x8A38D40)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_REFRESHSCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x8A38A20)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_REFRESHSELECTVIEW_OFFSET UNITYSDK_OFFSET(0x8A377D0)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_REFRESHVIEWONFOCUSCHANGE_OFFSET UNITYSDK_OFFSET(0x8A37760)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_SETLEVELDESCTEXT_OFFSET UNITYSDK_OFFSET(0x8A39300)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_SETSIMPLEDESC_OFFSET UNITYSDK_OFFSET(0x8A39690)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_TRYCANCELSELECTONLAYOUTCHANGETOCONSOLE_OFFSET UNITYSDK_OFFSET(0x8A39FC0)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_TRYSELECTFIRSTITEMEXCEPTCONSOLELAYOUT_OFFSET UNITYSDK_OFFSET(0x8A39EE0)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8A3A190)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x8A3A290)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0x8A3A300)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x8A3A370)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x8A3A3F0)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x8A3A450)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHollowWeaponCollectWidgetController_TypeDefinitionIndex = 60435;
+
+	class UIHollowWeaponCollectWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		// static const ::System::String* AbyssS2ClueSystemRelicFilterTag01_001_TextMap; // 0x0
+		// static const ::System::String* AbyssS2ClueSystemRelicFilterTag01_002_TextMap; // 0x0
+		// static const ::System::String* RelicCurLevelLevelColor; // 0x0
+		::Class_2_79F6D62CE30E3F8E_156* _view; // 0x2A0
+		::Class_2_7AE1A22930C1CD01<::Class_1_0D6706375CDAAE8C*>* _sorter; // 0x2A8
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* outSortList; // 0x2B0
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* _allItemList; // 0x2B8
+		::Class_2_DA8BF519212BAE65* _abyssModel; // 0x2C0
+		::Class_3_8073069F10AF85F5* showData; // 0x2C8
+		::MoleMole::MonoGamepadNavigatableList* m_naviList; // 0x2D0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void RefreshViewOnFocusChange(::System::EventArgs* args)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::EventArgs*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_REFRESHVIEWONFOCUSCHANGE_OFFSET))(this, args);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void InitSort(::MoleMole::UIControllerContextBase* ctx)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_INITSORT_OFFSET))(this, ctx);
+		}
+
+		::System::Boolean MatchFuncCollected(::Class_1_0D6706375CDAAE8C* arg1, ::System::String* arg2)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_MATCHFUNCCOLLECTED_OFFSET))(this, arg1, arg2);
+		}
+
+		::System::Void OnSortOrFilterChanged()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONSORTORFILTERCHANGED_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void RefreshProgressTitleText()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_REFRESHPROGRESSTITLETEXT_OFFSET))(this);
+		}
+
+		::System::Void OnScrollViewSelectHandle(::System::Int32 obj)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONSCROLLVIEWSELECTHANDLE_OFFSET))(this, obj);
+		}
+
+		::System::Boolean get_CurFocused()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_GET_CURFOCUSED_OFFSET))(this);
+		}
+
+		::System::Void RefreshSelectView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_REFRESHSELECTVIEW_OFFSET))(this);
+		}
+
+		::System::Void SetSimpleDesc(::System::String* title)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_SETSIMPLEDESC_OFFSET))(this, title);
+		}
+
+		::System::Void SetLevelDescText(::UnityEngine::UI::Extension::UILocalizationText* textCom, ::UnityEngine::GameObject* spaceUpGo, ::System::Int32 configLevel, ::System::Int32 curLevel)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::Extension::UILocalizationText*, ::UnityEngine::GameObject*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_SETLEVELDESCTEXT_OFFSET))(this, textCom, spaceUpGo, configLevel, curLevel);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void RefreshScrollView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_REFRESHSCROLLVIEW_OFFSET))(this);
+		}
+
+		::System::Int32 CustomSortAction(::Class_1_0D6706375CDAAE8C* arg1, ::Class_1_0D6706375CDAAE8C* arg2)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_0D6706375CDAAE8C*, ::Class_1_0D6706375CDAAE8C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_CUSTOMSORTACTION_OFFSET))(this, arg1, arg2);
+		}
+
+		::System::Void TrySelectFirstItemExceptConsoleLayout()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_TRYSELECTFIRSTITEMEXCEPTCONSOLELAYOUT_OFFSET))(this);
+		}
+
+		::System::Void TryCancelSelectOnLayoutChangeToConsole()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_TRYCANCELSELECTONLAYOUTCHANGETOCONSOLE_OFFSET))(this);
+		}
+
+		::System::Void FetchCfgs()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_FETCHCFGS_OFFSET))(this);
+		}
+
+		::System::Void OpenInfo()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER_OPENINFO_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -1,0 +1,209 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/FluffyUnderware/Curvy/CurvyMetadataBase.h"
+
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_AWAKE_OFFSET UNITYSDK_OFFSET(0x1A31E050)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_CANHAVEUVEDGEORHADRDEDGE_OFFSET UNITYSDK_OFFSET(0x1A31D8F0)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_ENSUREUVEDGEUPDATE_OFFSET UNITYSDK_OFFSET(0x1A31E070)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GETDEFINEDFIRSTU_OFFSET UNITYSDK_OFFSET(0x1A31E290)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GETDEFINEDSECONDU_OFFSET UNITYSDK_OFFSET(0x1A31E2D0)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_CORRECTEDHARDEDGE_OFFSET UNITYSDK_OFFSET(0x1A31D8C0)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_CORRECTEDUVEDGE_OFFSET UNITYSDK_OFFSET(0x1A31DCD0)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_EXPLICITU_OFFSET UNITYSDK_OFFSET(0x1A31DD00)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_FIRSTU_OFFSET UNITYSDK_OFFSET(0x1A31DD30)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_HARDEDGE_OFFSET UNITYSDK_OFFSET(0x1A31D890)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_HASDIFFERENTMATERIAL_OFFSET UNITYSDK_OFFSET(0x1A31DDD0)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_MATERIALID_OFFSET UNITYSDK_OFFSET(0x1A31D860)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_MAXSTEPDISTANCE_OFFSET UNITYSDK_OFFSET(0x1A31DD90)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_SECONDU_OFFSET UNITYSDK_OFFSET(0x1A31DD60)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_SHOWEXPLICITU_OFFSET UNITYSDK_OFFSET(0x1A31DF00)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_SHOWFIRSTU_OFFSET UNITYSDK_OFFSET(0x1A31DFC0)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_SHOWSECONDU_OFFSET UNITYSDK_OFFSET(0x1A31DF90)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_SHOWUVEDGEORHARDEDGE_OFFSET UNITYSDK_OFFSET(0x1A31DE80)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_UVEDGE_OFFSET UNITYSDK_OFFSET(0x1A31DCA0)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1A31E010)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x1A31E000)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_RESETPROPERTIES_OFFSET UNITYSDK_OFFSET(0x1A31E1A0)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_RESET_OFFSET UNITYSDK_OFFSET(0x1A31E170)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_EXPLICITU_OFFSET UNITYSDK_OFFSET(0x1A31DD10)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_FIRSTU_OFFSET UNITYSDK_OFFSET(0x1A31DD40)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_HARDEDGE_OFFSET UNITYSDK_OFFSET(0x1A31D8A0)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_MATERIALID_OFFSET UNITYSDK_OFFSET(0x1A31D870)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_MAXSTEPDISTANCE_OFFSET UNITYSDK_OFFSET(0x1A31DDA0)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_SECONDU_OFFSET UNITYSDK_OFFSET(0x1A31DD70)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_UVEDGE_OFFSET UNITYSDK_OFFSET(0x1A31DCB0)
+#define FLUFFYUNDERWARE_CURVY_METACGOPTIONS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A31E330)
+
+namespace FluffyUnderware::Curvy
+{
+	inline static constexpr unsigned int MetaCGOptions_TypeDefinitionIndex = 35610;
+
+	class MetaCGOptions : public ::FluffyUnderware::Curvy::CurvyMetadataBase
+	{
+	public:
+		// static const ::System::Int32 DefaultMaterialId = 0x0; // 0x0
+		::System::Int32 m_MaterialID; // 0x30
+		::System::Boolean m_HardEdge; // 0x34
+		::System::Single m_MaxStepDistance; // 0x38
+		::System::Boolean m_UVEdge; // 0x3C
+		::System::Boolean m_ExplicitU; // 0x3D
+		::System::Single m_FirstU; // 0x40
+		::System::Single m_SecondU; // 0x44
+		::System::Boolean uVEdgeUpdated; // 0x48
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS__CTOR_OFFSET))(this);
+		}
+
+		::System::Int32 get_MaterialID()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_MATERIALID_OFFSET))(this);
+		}
+
+		::System::Void set_MaterialID(::System::Int32 value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_MATERIALID_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_HardEdge()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_HARDEDGE_OFFSET))(this);
+		}
+
+		::System::Void set_HardEdge(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_HARDEDGE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_CorrectedHardEdge()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_CORRECTEDHARDEDGE_OFFSET))(this);
+		}
+
+		::System::Boolean get_UVEdge()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_UVEDGE_OFFSET))(this);
+		}
+
+		::System::Void set_UVEdge(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_UVEDGE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_CorrectedUVEdge()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_CORRECTEDUVEDGE_OFFSET))(this);
+		}
+
+		::System::Boolean get_ExplicitU()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_EXPLICITU_OFFSET))(this);
+		}
+
+		::System::Void set_ExplicitU(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_EXPLICITU_OFFSET))(this, value);
+		}
+
+		::System::Single get_FirstU()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_FIRSTU_OFFSET))(this);
+		}
+
+		::System::Void set_FirstU(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_FIRSTU_OFFSET))(this, value);
+		}
+
+		::System::Single get_SecondU()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_SECONDU_OFFSET))(this);
+		}
+
+		::System::Void set_SecondU(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_SECONDU_OFFSET))(this, value);
+		}
+
+		::System::Single get_MaxStepDistance()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_MAXSTEPDISTANCE_OFFSET))(this);
+		}
+
+		::System::Void set_MaxStepDistance(::System::Single value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_SET_MAXSTEPDISTANCE_OFFSET))(this, value);
+		}
+
+		::System::Boolean get_HasDifferentMaterial()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_HASDIFFERENTMATERIAL_OFFSET))(this);
+		}
+
+		::System::Boolean get_ShowUvEdgeOrHardEdge()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_SHOWUVEDGEORHARDEDGE_OFFSET))(this);
+		}
+
+		::System::Boolean get_showExplicitU()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_SHOWEXPLICITU_OFFSET))(this);
+		}
+
+		::System::Boolean get_showFirstU()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_SHOWFIRSTU_OFFSET))(this);
+		}
+
+		::System::Boolean get_showSecondU()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GET_SHOWSECONDU_OFFSET))(this);
+		}
+
+		::System::Void OnValidate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_ONVALIDATE_OFFSET))(this);
+		}
+
+		::System::Void OnEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_ONENABLE_OFFSET))(this);
+		}
+
+		::System::Void Awake()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_AWAKE_OFFSET))(this);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_RESET_OFFSET))(this);
+		}
+
+		::System::Single GetDefinedFirstU(::System::Single defaultValue)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GETDEFINEDFIRSTU_OFFSET))(this, defaultValue);
+		}
+
+		::System::Single GetDefinedSecondU(::System::Single defaultValue)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_GETDEFINEDSECONDU_OFFSET))(this, defaultValue);
+		}
+
+		::System::Void ResetProperties()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_RESETPROPERTIES_OFFSET))(this);
+		}
+
+		::System::Void EnsureUVEdgeUpdate()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_ENSUREUVEDGEUPDATE_OFFSET))(this);
+		}
+
+		::System::Boolean CanHaveUvEdgeOrHadrdEdge()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + FLUFFYUNDERWARE_CURVY_METACGOPTIONS_CANHAVEUVEDGEORHADRDEDGE_OFFSET))(this);
+		}
+	};
+}

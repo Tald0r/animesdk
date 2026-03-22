@@ -7,29 +7,34 @@ namespace System::Text { class DecoderFallback; }
 namespace System::Text { class EncoderFallback; }
 namespace System::Text { class Encoding; }
 
-#define SYSTEM_TEXT_ENCODINGPROVIDER_ADDPROVIDER_OFFSET UNITYSDK_OFFSET(0x15B5A430)
-#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODINGFROMPROVIDER_1_OFFSET UNITYSDK_OFFSET(0x15B5C430)
-#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODINGFROMPROVIDER_2_OFFSET UNITYSDK_OFFSET(0x15B5C160)
-#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODINGFROMPROVIDER_3_OFFSET UNITYSDK_OFFSET(0x15B5C5C0)
-#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODINGFROMPROVIDER_OFFSET UNITYSDK_OFFSET(0x15B5B2D0)
-#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODING_1_OFFSET UNITYSDK_OFFSET(0x15B609C0)
-#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODING_OFFSET UNITYSDK_OFFSET(0x15B60900)
-#define SYSTEM_TEXT_ENCODINGPROVIDER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15B60A70)
+#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODINGFROMPROVIDER_1_OFFSET UNITYSDK_OFFSET(0x17F7B530)
+#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODINGFROMPROVIDER_2_OFFSET UNITYSDK_OFFSET(0x17F7B640)
+#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODINGFROMPROVIDER_3_OFFSET UNITYSDK_OFFSET(0x17F7B760)
+#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODINGFROMPROVIDER_OFFSET UNITYSDK_OFFSET(0x17F7B420)
+#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODING_1_OFFSET UNITYSDK_OFFSET(0x17F7B370)
+#define SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODING_OFFSET UNITYSDK_OFFSET(0x17F7B2B0)
+#define SYSTEM_TEXT_ENCODINGPROVIDER__CCTOR_OFFSET UNITYSDK_OFFSET(0x17F7B880)
+#define SYSTEM_TEXT_ENCODINGPROVIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x17F7B2A0)
 
 namespace System::Text
 {
-	inline static constexpr unsigned int EncodingProvider_TypeDefinitionIndex = 494;
+	inline static constexpr unsigned int EncodingProvider_TypeDefinitionIndex = 480;
 
 	class EncodingProvider : public ::System::Object
 	{
 	public:
-		static ::Il2CppArray<::System::Text::EncodingProvider*>** StaticGet_s_providers()
-		{
-			return (::Il2CppArray<::System::Text::EncodingProvider*>**)Il2CppClass::FromTypeDefinitionIndex(EncodingProvider_TypeDefinitionIndex)->GetStaticField(0x10180);
-		}
 		static ::System::Object** StaticGet_s_InternalSyncObject()
 		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(EncodingProvider_TypeDefinitionIndex)->GetStaticField(0x10188);
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(EncodingProvider_TypeDefinitionIndex)->GetStaticField(0x10F0);
+		}
+		static ::Il2CppArray<::System::Text::EncodingProvider*>** StaticGet_s_providers()
+		{
+			return (::Il2CppArray<::System::Text::EncodingProvider*>**)Il2CppClass::FromTypeDefinitionIndex(EncodingProvider_TypeDefinitionIndex)->GetStaticField(0x10F8);
+		}
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODINGPROVIDER__CTOR_OFFSET))(this);
 		}
 
 		static ::System::Void _cctor()
@@ -45,11 +50,6 @@ namespace System::Text
 		::System::Text::Encoding* GetEncoding_1(::System::Int32 codepage, ::System::Text::EncoderFallback* encoderFallback, ::System::Text::DecoderFallback* decoderFallback)
 		{
 			return ((::System::Text::Encoding*(*)(::PVOID, ::System::Int32, ::System::Text::EncoderFallback*, ::System::Text::DecoderFallback*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODINGPROVIDER_GETENCODING_1_OFFSET))(this, codepage, encoderFallback, decoderFallback);
-		}
-
-		static ::System::Void AddProvider(::System::Text::EncodingProvider* provider)
-		{
-			return ((::System::Void(*)(::System::Text::EncodingProvider*))((::PBYTE)hIl2Cpp + SYSTEM_TEXT_ENCODINGPROVIDER_ADDPROVIDER_OFFSET))(provider);
 		}
 
 		static ::System::Text::Encoding* GetEncodingFromProvider(::System::Int32 codepage)

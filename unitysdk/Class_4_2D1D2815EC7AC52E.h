@@ -1,0 +1,58 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_3_5B4415A775BC0DFF.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_E87F1D15F1D4AC72;
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIThreeDMapElement_ViewPointContext; }
+namespace System { class String; }
+
+#define CLASS_4_2D1D2815EC7AC52E_METHOD_4_0792BEB328BE33AC_OFFSET UNITYSDK_OFFSET(0x664C4A0)
+#define CLASS_4_2D1D2815EC7AC52E_METHOD_4_46A98066CC5E6CFD_OFFSET UNITYSDK_OFFSET(0x664D190)
+#define CLASS_4_2D1D2815EC7AC52E_METHOD_4_4DA6D4A624E42CAB_OFFSET UNITYSDK_OFFSET(0x664D1E0)
+#define CLASS_4_2D1D2815EC7AC52E_METHOD_4_902ACD3F158466B5_OFFSET UNITYSDK_OFFSET(0x664CD80)
+#define CLASS_4_2D1D2815EC7AC52E_METHOD_4_D0BD1377F2594D33_OFFSET UNITYSDK_OFFSET(0x664D090)
+#define CLASS_4_2D1D2815EC7AC52E_METHOD_4_D21E56C0632AA01A_OFFSET UNITYSDK_OFFSET(0x664D270)
+#define CLASS_4_2D1D2815EC7AC52E__CTOR_OFFSET UNITYSDK_OFFSET(0x664CD20)
+
+inline static constexpr unsigned int Class_4_2D1D2815EC7AC52E_TypeDefinitionIndex = 75480;
+
+class Class_4_2D1D2815EC7AC52E : public ::Class_3_5B4415A775BC0DFF<::MoleMole::UIThreeDMapElement_ViewPointContext*>
+{
+public:
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_2D1D2815EC7AC52E__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_4_0792BEB328BE33AC(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_4_2D1D2815EC7AC52E_METHOD_4_0792BEB328BE33AC_OFFSET))(this, a1, a2);
+	}
+
+	::System::String* Method_4_902ACD3F158466B5()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_2D1D2815EC7AC52E_METHOD_4_902ACD3F158466B5_OFFSET))(this);
+	}
+
+	::System::Void Method_4_D0BD1377F2594D33()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_2D1D2815EC7AC52E_METHOD_4_D0BD1377F2594D33_OFFSET))(this);
+	}
+
+	::System::Void Method_4_46A98066CC5E6CFD(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_4_2D1D2815EC7AC52E_METHOD_4_46A98066CC5E6CFD_OFFSET))(this, a1, a2);
+	}
+
+	::System::Boolean Method_4_4DA6D4A624E42CAB()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_2D1D2815EC7AC52E_METHOD_4_4DA6D4A624E42CAB_OFFSET))(this);
+	}
+
+	::MoleMole::UIControllerContextBase* Method_4_D21E56C0632AA01A()
+	{
+		return ((::MoleMole::UIControllerContextBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_2D1D2815EC7AC52E_METHOD_4_D21E56C0632AA01A_OFFSET))(this);
+	}
+};

@@ -5,12 +5,12 @@
 namespace MiHoYo::SDK { class SecurityTunnel_Packet; }
 namespace MiHoYo::SDK { class SecurityTunnel_ResponseCallbackAction; }
 
-#define MIHOYO_SDK_SECURITYTUNNEL_DATAWRAPPER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x8247D10)
-#define MIHOYO_SDK_SECURITYTUNNEL_DATAWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x8247D00)
+#define MIHOYO_SDK_SECURITYTUNNEL_DATAWRAPPER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19A95640)
+#define MIHOYO_SDK_SECURITYTUNNEL_DATAWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x19A95630)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int SecurityTunnel_DataWrapper_TypeDefinitionIndex = 36216;
+	inline static constexpr unsigned int SecurityTunnel_DataWrapper_TypeDefinitionIndex = 33702;
 
 	class SecurityTunnel_DataWrapper : public ::System::Object
 	{

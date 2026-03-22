@@ -3,7 +3,7 @@
 
 namespace System::Net::Sockets
 {
-	inline static constexpr unsigned int AddressFamily_TypeDefinitionIndex = 2873;
+	inline static constexpr unsigned int AddressFamily_TypeDefinitionIndex = 3642;
 
 	enum class AddressFamily : ::System::Int32
 	{
